@@ -18,6 +18,7 @@ err_set = set(err_idx)
 
 iface_needed = set()   # простые имена стабов, требуемые как interface
 extends_seen = set()   # имена, используемые как superclass — НЕ трогаем
+revert = set()         # имена, ошибочно сконвертированные в interface
 for i in err_idx:
     m = ERR.match(lines[i])
     msg = m.group(3)
@@ -37,9 +38,14 @@ for i in err_idx:
             t = tok.strip().split("<")[0].strip().split(".")[-1]
             if re.fullmatch(r"[A-Za-z_]\w*", t):
                 extends_seen.add(t)
+    if "no interface expected here" in msg:
+        # стаб ошибочно стал интерфейсом — вернуть в class
+        for tok in re.findall(r"[A-Za-z_]\w*", code):
+            revert.add(tok)
 
 convert = iface_needed - extends_seen
 converted = 0
+reverted = 0
 skipped_ext = iface_needed & extends_seen
 
 for dirpath, dirs, files in os.walk(root):
@@ -64,5 +70,26 @@ for dirpath, dirs, files in os.walk(root):
                 f.write(src2)
             converted += 1
 
-print(f"Конвертировано стабов в interface: {converted}; требуется interface: {len(iface_needed)}; "
+# откат: интерфейс -> класс (если встретилось "no interface expected here")
+for dirpath, dirs, files in os.walk(root):
+    for fn in files:
+        name, ext = os.path.splitext(fn)
+        if ext != ".java" or name not in revert:
+            continue
+        p = os.path.join(dirpath, fn)
+        try:
+            src = open(p, encoding="utf-8", errors="ignore").read()
+        except OSError:
+            continue
+        if "СТАБ" not in src or "public interface" not in src:
+            continue
+        src2 = re.sub(r"public interface %s(<[^>]*>)?\s*\{" % re.escape(name),
+                      lambda mm: "public class %s%s {\n    public %s() {}" % (name, mm.group(1) or "", name),
+                      src, count=1)
+        if src2 != src:
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(src2)
+            reverted += 1
+
+print(f"Конвертировано в interface: {converted}; откат в class: {reverted}; "
       f"не тронуто (extends): {len(skipped_ext)}")

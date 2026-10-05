@@ -26,6 +26,13 @@ JAVA_LANG_NAMES = {"Object", "String", "Integer", "Long", "Boolean", "Character"
                    "Runnable", "Exception", "Error", "Throwable", "Thread", "Number", "Record",
                    "CharSequence", "Cloneable", "AutoCloseable", "System", "Math"}
 
+def pkg_of(path):
+    i = path.find(SRC_MARK)
+    if i < 0:
+        return None
+    d = os.path.dirname(path[i + len(SRC_MARK):])
+    return d.replace("/", ".") if d else ""
+
 # ---------- индекс всех классов дерева ----------
 print("Индексация дерева...")
 class_index = collections.defaultdict(list)  # имя -> [полные пути .java]
@@ -90,6 +97,18 @@ for i in err_idx:
             sym = lines[j].strip()
         if "location:" in lines[j]:
             loc = lines[j].strip()
+    if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
+        dm = re.search(r"package ([\w.]+) does not exist", msg)
+        if dm:
+            pkg = dm.group(1)
+            # класс ищем в ближайших строках (import P.C;)
+            for j in range(i + 1, min(i + 4, len(lines))):
+                im = re.search(r"import\s+([\w.]+)\.(\w+)\s*;", lines[j])
+                if im and im.group(1) == pkg:
+                    if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), im.group(2) + ".java")):
+                        flat.add((pkg, im.group(2)))
+                    break
+        continue
     nmc = re.search(r"symbol:\s+class\s+(\S+)", sym)
     if not nmc:
         continue
@@ -103,30 +122,22 @@ for i in err_idx:
         if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), cls + ".java")):
             flat.add((pkg, cls))
         continue
-    dm = re.search(r"package ([\w.]+) does not exist", msg)
-    if dm:
-        pkg = dm.group(1)
-        # класс ищем в ближайших строках (import P.C;)
-        for j in range(i + 1, min(i + 4, len(lines))):
-            im = re.search(r"import\s+([\w.]+)\.(\w+)\s*;", lines[j])
-            if im and im.group(1) == pkg:
-                if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), im.group(2) + ".java")):
-                    flat.add((pkg, im.group(2)))
-                break
-        continue
     lm = re.search(r"location:\s+(?:class|interface)\s+([\w.$]+)", loc)
     if lm:
         host_name = lm.group(1).split(".")[0]
-        # jadx выносит вложенные классы в файлы Outer$Inner.java:
-        # если такой файл есть — ссылка уже резолвится, стаб не нужен
         if class_index.get(host_name + "$" + cls):
             skipped += 1
             continue
-        # или файл уже существует в этом же пакете (не nested-имя)
         host = resolve_host(host_name, path)
         if host:
             nested[host].add(cls)
         continue
+    # location пустой: Hilt/Dagger-генераты (Hilt_X, DaggerX, X_MembersInjector...)
+    if re.match(r"^(Hilt_|Dagger|.*_MembersInjector$|.*_Factory$|.*_Impl$)", cls):
+        pkg = pkg_of(path)
+        if pkg is not None:
+            flat.add((pkg, cls))
+            continue
     skipped += 1
 
 # ---------- генерация плоских стабов ----------
