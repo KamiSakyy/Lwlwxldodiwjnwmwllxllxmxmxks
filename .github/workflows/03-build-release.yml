@@ -65,6 +65,12 @@ jobs:
           echo "=== Проверка манифеста (флаги) ==="
           grep -n "firebase_messaging_auto_init_enabled\|firebase_analytics_collection_deactivated" "$PROJ/app/src/main/AndroidManifest.xml"
 
+      - name: "Автофикс ??-типов (артефакты jadx)"
+        run: |
+          python3 tools/fix_compile.py "$PROJ"
+          LEFT=$(grep -rlE '^\s+\?\? ' "$PROJ/app/src/main/java" 2>/dev/null | wc -l)
+          echo "Файлов с оставшимися '??'-объявлениями: $LEFT"
+
       - name: "Генерация документации структуры (10 документов)"
         run: |
           python3 tools/gen_docs.py "$PROJ" "$PROJ/docs"
