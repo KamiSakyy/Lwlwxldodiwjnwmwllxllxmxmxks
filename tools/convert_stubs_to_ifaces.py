@@ -29,14 +29,20 @@ for i in err_idx:
         caret = lines[i + 2] if i + 2 < len(lines) else ""
         col = caret.find("^")
         if col >= 0:
-            for mtok in re.finditer(r"[A-Za-z_$][\w$]*", codeline):
+            tok = None
+            for mtok in re.finditer(r"[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)*", codeline):
                 if mtok.start() <= col < mtok.end():
                     tok = mtok.group(0).split(".")[-1]
-                    if "interface expected here" in msg:
-                        iface_needed.add(tok)
-                    else:
-                        revert.add(tok)
                     break
+            if tok is None:
+                for mtok in reversed(list(re.finditer(r"[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)*", codeline[:col + 1]))):
+                    tok = mtok.group(0).split(".")[-1]
+                    break
+            if tok:
+                if "interface expected here" in msg:
+                    iface_needed.add(tok)
+                else:
+                    revert.add(tok)
     em = re.search(r"\bextends\s+([\w.\s,<>\[\]]+?)(?:\s+implements|\s*\{|$)", code)
     if em:
         for tok in em.group(1).split(","):
@@ -45,7 +51,7 @@ for i in err_idx:
                 extends_seen.add(t)
 
 
-convert = iface_needed - extends_seen
+convert = set(iface_needed)
 converted = 0
 reverted = 0
 skipped_ext = iface_needed & extends_seen
