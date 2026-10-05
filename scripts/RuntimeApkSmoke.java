@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 import java.util.zip.CRC32;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -55,6 +56,9 @@ public final class RuntimeApkSmoke {
                 input.closeEntry();
             }
             if (!manifestFound || !resourcesFound) throw new IOException("Template is missing Android resources");
+            byte[] multiMegabytePayload = new byte[3 * 1024 * 1024 + 137];
+            new Random(20261005L).nextBytes(multiMegabytePayload);
+            put(output, "assets/site/large-offline-smoke-test.bin", multiMegabytePayload, true);
         }
 
         JarV1Signer.sign(unsigned, signed, new File(signed.getParentFile(), "smoke-signing"));

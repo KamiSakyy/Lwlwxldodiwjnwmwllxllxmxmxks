@@ -58,7 +58,7 @@ jobs:
           APK_BYTES=$(stat -c '%s' dist/WebAPK-Studio.apk)
           echo "APK size: ${APK_BYTES} bytes"
           if [ "$APK_BYTES" -ge 1000000 ]; then
-            echo "Release APK exceeds the required 1,000,000-byte limit." >&2
+            echo "Web APK Studio exceeds its 1,000,000-byte app-size budget." >&2
             exit 1
           fi
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs dist/WebAPK-Studio.apk

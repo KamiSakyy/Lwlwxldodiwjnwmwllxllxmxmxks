@@ -2,63 +2,68 @@ package ru.webapk.studio;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.RandomAccessFile;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.PrivateKey;
 import java.security.Signature;
 import java.security.cert.X509Certificate;
-import java.util.Arrays;
 
-/** Minimal APK Signature Scheme v2 signer (RSA PKCS#1 v1.5 / SHA-256). */
+/** Streaming APK Signature Scheme v2 signer (RSA PKCS#1 v1.5 / SHA-256). */
 final class ApkV2Signer {
     private static final int V2_BLOCK_ID = 0x7109871a;
     private static final int RSA_PKCS1_SHA256_ID = 0x0103;
     private static final int CHUNK_SIZE = 1024 * 1024;
-    private static final int MAX_SIGNED_INPUT = 2 * 1024 * 1024;
     private static final byte[] MAGIC = "APK Sig Block 42".getBytes(StandardCharsets.US_ASCII);
 
     private ApkV2Signer() { }
 
     static void signInPlace(File apk, PrivateKey privateKey, X509Certificate certificate) throws Exception {
-        byte[] original = readAll(apk, MAX_SIGNED_INPUT);
-        Eocd eocd = findEocd(original);
-        if (eocd.cdOffset < 0 || eocd.cdSize < 0
-                || (long) eocd.cdOffset + eocd.cdSize != eocd.offset) {
-            throw new IOException("APK имеет неподдерживаемую ZIP-структуру.");
-        }
-        if (eocd.cdOffset > original.length || eocd.offset + 22 > original.length) {
-            throw new IOException("Повреждённый ZIP End of Central Directory.");
-        }
-
-        byte[] contentDigest = computeContentDigest(original, eocd);
-        byte[] signedData = encodeSignedData(contentDigest, certificate);
-        Signature signer = Signature.getInstance("SHA256withRSA");
-        signer.initSign(privateKey);
-        signer.update(signedData);
-        byte[] signature = signer.sign();
-        byte[] signerBlock = encodeSignerBlock(signedData, signature, certificate.getPublicKey().getEncoded());
-        byte[] schemeValue = lengthPrefixed(lengthPrefixed(signerBlock));
-        byte[] signingBlock = encodeApkSigningBlock(schemeValue);
-
-        long newCdOffset = (long) eocd.cdOffset + signingBlock.length;
-        if (newCdOffset > 0xffffffffL) throw new IOException("ZIP слишком велик для обычного APK.");
-        byte[] result = new byte[original.length + signingBlock.length];
-        System.arraycopy(original, 0, result, 0, eocd.cdOffset);
-        System.arraycopy(signingBlock, 0, result, eocd.cdOffset, signingBlock.length);
-        System.arraycopy(original, eocd.cdOffset, result, eocd.cdOffset + signingBlock.length,
-                original.length - eocd.cdOffset);
-        int newEocdOffset = eocd.offset + signingBlock.length;
-        putIntLe(result, newEocdOffset + 16, (int) newCdOffset);
-
         File temp = new File(apk.getParentFile(), apk.getName() + ".v2.tmp");
-        try (FileOutputStream out = new FileOutputStream(temp)) {
-            out.write(result);
-            out.getFD().sync();
+        if (temp.exists()) temp.delete();
+        try (RandomAccessFile input = new RandomAccessFile(apk, "r")) {
+            long inputLength = input.length();
+            Eocd eocd = findEocd(input, inputLength);
+            if (eocd.cdOffset < 0 || eocd.cdSize < 0 || eocd.cdOffset + eocd.cdSize != eocd.offset) {
+                throw new IOException("APK имеет неподдерживаемую ZIP-структуру.");
+            }
+
+            byte[] contentDigest = computeContentDigest(input, inputLength, eocd);
+            byte[] signedData = encodeSignedData(contentDigest, certificate);
+            Signature signer = Signature.getInstance("SHA256withRSA");
+            signer.initSign(privateKey);
+            signer.update(signedData);
+            byte[] signature = signer.sign();
+            byte[] signerBlock = encodeSignerBlock(signedData, signature,
+                    certificate.getPublicKey().getEncoded());
+            byte[] schemeValue = lengthPrefixed(lengthPrefixed(signerBlock));
+            byte[] signingBlock = encodeApkSigningBlock(schemeValue);
+
+            long newCdOffset = eocd.cdOffset + signingBlock.length;
+            if (newCdOffset >= 0xffffffffL) {
+                throw new IOException("Размер APK превысил предел ZIP32; устройство или Android не поддержит такой APK.");
+            }
+            long newEocdOffset = eocd.offset + signingBlock.length;
+            try (FileOutputStream output = new FileOutputStream(temp)) {
+                copyRange(input, output, 0, eocd.cdOffset);
+                output.write(signingBlock);
+                copyRange(input, output, eocd.cdOffset, inputLength - eocd.cdOffset);
+                output.flush();
+                output.getFD().sync();
+            }
+            try (RandomAccessFile patched = new RandomAccessFile(temp, "rw")) {
+                patched.seek(newEocdOffset + 16);
+                writeIntLe(patched, (int) newCdOffset);
+                patched.getFD().sync();
+            }
+        } catch (Exception error) {
+            temp.delete();
+            throw error;
         }
+
         if (apk.exists() && !apk.delete()) {
             temp.delete();
             throw new IOException("Не удалось обновить APK после подписи v2.");
@@ -75,12 +80,12 @@ final class ApkV2Signer {
         digestRecord.write(lengthPrefixed(digest));
         byte[] digestSequence = lengthPrefixed(digestRecord.toByteArray());
 
-        byte[] certSequence = lengthPrefixed(certificate.getEncoded());
-        byte[] attributesSequence = new byte[0];
+        byte[] certificateSequence = lengthPrefixed(certificate.getEncoded());
+        byte[] additionalAttributes = new byte[0];
         ByteArrayOutputStream signedData = new ByteArrayOutputStream();
         signedData.write(lengthPrefixed(digestSequence));
-        signedData.write(lengthPrefixed(certSequence));
-        signedData.write(lengthPrefixed(attributesSequence));
+        signedData.write(lengthPrefixed(certificateSequence));
+        signedData.write(lengthPrefixed(additionalAttributes));
         return signedData.toByteArray();
     }
 
@@ -111,63 +116,88 @@ final class ApkV2Signer {
         return out.toByteArray();
     }
 
-    private static byte[] computeContentDigest(byte[] apk, Eocd eocd) throws Exception {
+    private static byte[] computeContentDigest(RandomAccessFile apk, long fileLength, Eocd eocd)
+            throws Exception {
+        long firstLength = eocd.cdOffset;
+        long directoryLength = eocd.cdSize;
+        long eocdLength = fileLength - eocd.offset;
+        int chunkCount = countChunks(firstLength) + countChunks(directoryLength) + countChunks(eocdLength);
+
         MessageDigest chunkDigest = MessageDigest.getInstance("SHA-256");
         MessageDigest topDigest = MessageDigest.getInstance("SHA-256");
-        ByteArrayOutputStream hashes = new ByteArrayOutputStream();
-        int chunkCount = 0;
-
-        // Section 1: ZIP entry data before the signing block (not yet inserted).
-        chunkCount += updateSection(apk, 0, eocd.cdOffset, chunkDigest, hashes);
-        // Section 3: ZIP Central Directory.
-        chunkCount += updateSection(apk, eocd.cdOffset, eocd.cdSize, chunkDigest, hashes);
-        // Section 4: ZIP End of Central Directory. Its CD offset is currently the signing-block offset.
-        chunkCount += updateSection(apk, eocd.offset, apk.length - eocd.offset, chunkDigest, hashes);
-
         topDigest.update((byte) 0x5a);
         updateIntLe(topDigest, chunkCount);
-        topDigest.update(hashes.toByteArray());
+        updateSection(apk, 0, firstLength, chunkDigest, topDigest);
+        updateSection(apk, eocd.cdOffset, directoryLength, chunkDigest, topDigest);
+        // Before insertion, EOCD's central-directory offset equals the future signing-block offset.
+        updateSection(apk, eocd.offset, eocdLength, chunkDigest, topDigest);
         return topDigest.digest();
     }
 
-    private static int updateSection(byte[] data, int offset, int length, MessageDigest chunkDigest,
-                                     ByteArrayOutputStream hashes) throws Exception {
-        int chunks = 0;
-        int position = 0;
+    private static int countChunks(long length) {
+        return length == 0 ? 0 : (int) ((length + CHUNK_SIZE - 1) / CHUNK_SIZE);
+    }
+
+    private static void updateSection(RandomAccessFile input, long offset, long length,
+                                      MessageDigest chunkDigest, MessageDigest topDigest) throws Exception {
+        byte[] buffer = new byte[64 * 1024];
+        long position = 0;
         while (position < length) {
-            int chunkLength = Math.min(CHUNK_SIZE, length - position);
+            int chunkLength = (int) Math.min((long) CHUNK_SIZE, length - position);
             chunkDigest.reset();
             chunkDigest.update((byte) 0xa5);
             updateIntLe(chunkDigest, chunkLength);
-            chunkDigest.update(data, offset + position, chunkLength);
-            hashes.write(chunkDigest.digest());
+            input.seek(offset + position);
+            int remaining = chunkLength;
+            while (remaining > 0) {
+                int read = input.read(buffer, 0, Math.min(buffer.length, remaining));
+                if (read < 0) throw new IOException("APK неожиданно закончился при расчёте подписи.");
+                chunkDigest.update(buffer, 0, read);
+                remaining -= read;
+            }
+            topDigest.update(chunkDigest.digest());
             position += chunkLength;
-            chunks++;
         }
-        return chunks;
     }
 
-    private static Eocd findEocd(byte[] apk) throws IOException {
-        int minimum = Math.max(0, apk.length - 22 - 65535);
-        for (int offset = apk.length - 22; offset >= minimum; offset--) {
-            if (u32(apk, offset) != 0x06054b50L) continue;
-            int commentLength = u16(apk, offset + 20);
-            if (offset + 22 + commentLength != apk.length) continue;
-            long cdSize = u32(apk, offset + 12);
-            long cdOffset = u32(apk, offset + 16);
+    private static Eocd findEocd(RandomAccessFile input, long fileLength) throws IOException {
+        if (fileLength < 22) throw new IOException("APK слишком короткий для ZIP.");
+        int tailLength = (int) Math.min(fileLength, 22L + 65535L);
+        byte[] tail = new byte[tailLength];
+        input.seek(fileLength - tailLength);
+        input.readFully(tail);
+        int minimum = Math.max(0, tail.length - 22 - 65535);
+        for (int position = tail.length - 22; position >= minimum; position--) {
+            if (u32(tail, position) != 0x06054b50L) continue;
+            int commentLength = u16(tail, position + 20);
+            if (position + 22 + commentLength != tail.length) continue;
+            long cdSize = u32(tail, position + 12);
+            long cdOffset = u32(tail, position + 16);
             if (cdSize == 0xffffffffL || cdOffset == 0xffffffffL) {
-                throw new IOException("ZIP64 не поддерживается в APK размером до 1 МБ.");
+                throw new IOException("ZIP64 пока не поддерживается; используйте APK в пределах ZIP32 (до 4 ГБ).");
             }
-            if (u16(apk, offset + 4) != 0 || u16(apk, offset + 6) != 0) {
+            if (u16(tail, position + 4) != 0 || u16(tail, position + 6) != 0) {
                 throw new IOException("Многотомный ZIP не поддерживается.");
             }
-            return new Eocd(offset, (int) cdOffset, (int) cdSize);
+            return new Eocd(fileLength - tailLength + position, cdOffset, cdSize);
         }
         throw new IOException("В APK не найден ZIP End of Central Directory.");
     }
 
+    private static void copyRange(RandomAccessFile input, OutputStream output, long offset, long length)
+            throws IOException {
+        input.seek(offset);
+        byte[] buffer = new byte[64 * 1024];
+        long remaining = length;
+        while (remaining > 0) {
+            int read = input.read(buffer, 0, (int) Math.min(buffer.length, remaining));
+            if (read < 0) throw new IOException("Не удалось скопировать ZIP-секцию APK.");
+            output.write(buffer, 0, read);
+            remaining -= read;
+        }
+    }
+
     private static byte[] lengthPrefixed(byte[] value) throws IOException {
-        if (value.length < 0) throw new IOException("Поле APK слишком большое.");
         ByteArrayOutputStream out = new ByteArrayOutputStream(value.length + 4);
         writeIntLe(out, value.length);
         out.write(value);
@@ -182,6 +212,13 @@ final class ApkV2Signer {
     }
 
     private static void writeIntLe(ByteArrayOutputStream out, int value) {
+        out.write(value & 0xff);
+        out.write((value >>> 8) & 0xff);
+        out.write((value >>> 16) & 0xff);
+        out.write((value >>> 24) & 0xff);
+    }
+
+    private static void writeIntLe(RandomAccessFile out, int value) throws IOException {
         out.write(value & 0xff);
         out.write((value >>> 8) & 0xff);
         out.write((value >>> 16) & 0xff);
@@ -203,34 +240,12 @@ final class ApkV2Signer {
                 | ((bytes[offset + 3] & 0xffL) << 24);
     }
 
-    private static void putIntLe(byte[] bytes, int offset, int value) {
-        bytes[offset] = (byte) value;
-        bytes[offset + 1] = (byte) (value >>> 8);
-        bytes[offset + 2] = (byte) (value >>> 16);
-        bytes[offset + 3] = (byte) (value >>> 24);
-    }
-
-    private static byte[] readAll(File file, int maxBytes) throws IOException {
-        try (InputStream input = new FileInputStream(file);
-             ByteArrayOutputStream output = new ByteArrayOutputStream()) {
-            byte[] buffer = new byte[8192];
-            int read;
-            int total = 0;
-            while ((read = input.read(buffer)) != -1) {
-                total += read;
-                if (total > maxBytes) throw new IOException("APK превышает допустимый размер для локальной подписи.");
-                output.write(buffer, 0, read);
-            }
-            return output.toByteArray();
-        }
-    }
-
     private static final class Eocd {
-        final int offset;
-        final int cdOffset;
-        final int cdSize;
+        final long offset;
+        final long cdOffset;
+        final long cdSize;
 
-        Eocd(int offset, int cdOffset, int cdSize) {
+        Eocd(long offset, long cdOffset, long cdSize) {
             this.offset = offset;
             this.cdOffset = cdOffset;
             this.cdSize = cdSize;

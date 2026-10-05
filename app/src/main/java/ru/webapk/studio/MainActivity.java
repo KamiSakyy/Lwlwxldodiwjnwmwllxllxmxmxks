@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.ImageDecoder;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -50,7 +51,6 @@ public final class MainActivity extends Activity {
     private static final int PICK_ZIP = 11;
     private static final int PICK_ICON = 12;
     private static final int SAVE_APK = 13;
-    private static final long MAX_IMPORT_BYTES = 50L * 1024L * 1024L;
     private static final int MAX_IMPORT_FILES = 10000;
     private static final ExecutorService IO = Executors.newSingleThreadExecutor();
     private static final int BG = Color.rgb(244, 246, 251);
@@ -199,7 +199,7 @@ public final class MainActivity extends Activity {
 
         LinearLayout noteCard = card(page);
         addCardHeading(noteCard, "Полностью офлайн", "HTML, CSS, JavaScript и локальные файлы сайта попадут в APK.");
-        TextView note = text("Приложение использует системный WebView Android; SDK и интернет для сборки на телефоне не нужны. Сайт открывается локально. Внешние URL и CDN без сети работать не будут. Готовый APK ограничен размером 1 000 000 байт.",
+        TextView note = text("Приложение использует системный WebView Android; SDK и интернет для сборки на телефоне не нужны. Сайт открывается локально. Внешние URL и CDN без сети работать не будут. Для сайта и создаваемого сайт-APK нет искусственного лимита размера: предел зависит от свободного места и ZIP32 (до ~4 ГБ).",
                 12, MUTED, false);
         note.setLineSpacing(dp(3), 1f);
         noteCard.addView(note);
@@ -358,18 +358,30 @@ public final class MainActivity extends Activity {
     }
 
     private void openIconPicker() {
-        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("image/*");
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        startActivityForResult(intent, PICK_ICON);
+        try {
+            startActivityForResult(Intent.createChooser(intent, "Выберите фото из галереи"), PICK_ICON);
+        } catch (Exception unavailable) {
+            Intent fallback = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            fallback.addCategory(Intent.CATEGORY_OPENABLE);
+            fallback.setType("image/*");
+            fallback.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            startActivityForResult(fallback, PICK_ICON);
+        }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != RESULT_OK || data == null || data.getData() == null) return;
+        if (resultCode != RESULT_OK || data == null) return;
         Uri uri = data.getData();
+        if (uri == null && data.getClipData() != null && data.getClipData().getItemCount() > 0) {
+            uri = data.getClipData().getItemAt(0).getUri();
+        }
+        if (uri == null) return;
         if (requestCode == PICK_HTML) importHtml(uri);
         else if (requestCode == PICK_ZIP) importZip(uri);
         else if (requestCode == PICK_ICON) importIcon(uri);
@@ -390,7 +402,7 @@ public final class MainActivity extends Activity {
                 if (opened == null) throw new IOException("Не удалось открыть выбранный HTML-файл.");
                 try (InputStream input = new BufferedInputStream(opened);
                      OutputStream output = new BufferedOutputStream(new FileOutputStream(target))) {
-                    size = copyLimited(input, output, MAX_IMPORT_BYTES);
+                    size = copyStream(input, output);
                 }
                 if (size == 0) throw new IOException("Выбранный HTML-файл пуст.");
                 siteRoot = root;
@@ -442,15 +454,10 @@ public final class MainActivity extends Activity {
                                 throw new IOException("Не удалось распаковать папку сайта.");
                             }
                             if (target.exists()) throw new IOException("В ZIP повторяется файл: " + relative);
-                            long fileSize = 0;
                             try (OutputStream output = new BufferedOutputStream(new FileOutputStream(target))) {
                                 int read;
                                 while ((read = zip.read(buffer)) != -1) {
-                                    fileSize += read;
                                     total += read;
-                                    if (fileSize > MAX_IMPORT_BYTES || total > MAX_IMPORT_BYTES) {
-                                        throw new IOException("Распакованный ZIP больше 50 МБ.");
-                                    }
                                     output.write(buffer, 0, read);
                                 }
                             }
@@ -506,24 +513,7 @@ public final class MainActivity extends Activity {
         setStatus("Подготавливаю иконку…", true);
         IO.execute(() -> {
             try {
-                BitmapFactory.Options bounds = new BitmapFactory.Options();
-                bounds.inJustDecodeBounds = true;
-                try (InputStream input = getContentResolver().openInputStream(uri)) {
-                    if (input == null) throw new IOException("Не удалось открыть изображение.");
-                    BitmapFactory.decodeStream(input, null, bounds);
-                }
-                if (bounds.outWidth < 1 || bounds.outHeight < 1 || bounds.outWidth > 30000 || bounds.outHeight > 30000) {
-                    throw new IOException("Формат или размеры изображения не поддерживаются.");
-                }
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                int largest = Math.max(bounds.outWidth, bounds.outHeight);
-                while (largest / options.inSampleSize > 1024) options.inSampleSize *= 2;
-                Bitmap decoded;
-                try (InputStream input = getContentResolver().openInputStream(uri)) {
-                    if (input == null) throw new IOException("Не удалось повторно открыть изображение.");
-                    decoded = BitmapFactory.decodeStream(input, null, options);
-                }
-                if (decoded == null) throw new IOException("Не удалось прочитать изображение.");
+                Bitmap decoded = decodeIconImage(uri);
                 int side = Math.min(decoded.getWidth(), decoded.getHeight());
                 Bitmap square = Bitmap.createBitmap(decoded, (decoded.getWidth() - side) / 2,
                         (decoded.getHeight() - side) / 2, side, side);
@@ -551,9 +541,63 @@ public final class MainActivity extends Activity {
                     saveButton.setVisibility(View.GONE);
                 });
             } catch (Exception error) {
-                showFailure("Не удалось загрузить иконку: " + error.getMessage());
+                String reason = error.getMessage();
+                if (reason == null || reason.trim().isEmpty()) reason = error.getClass().getSimpleName();
+                showFailure("Не удалось загрузить иконку: " + reason);
             }
         });
+    }
+
+    private Bitmap decodeIconImage(Uri uri) throws IOException {
+        Exception decoderError = null;
+        if (android.os.Build.VERSION.SDK_INT >= 28) {
+            try {
+                ImageDecoder.Source source = ImageDecoder.createSource(getContentResolver(), uri);
+                return ImageDecoder.decodeBitmap(source, (decoder, info, sourceInfo) -> {
+                    decoder.setAllocator(ImageDecoder.ALLOCATOR_SOFTWARE);
+                    int width = info.getSize().getWidth();
+                    int height = info.getSize().getHeight();
+                    int longest = Math.max(width, height);
+                    if (longest > 1024) {
+                        float scale = 1024f / longest;
+                        decoder.setTargetSize(Math.max(1, Math.round(width * scale)),
+                                Math.max(1, Math.round(height * scale)));
+                    }
+                });
+            } catch (Exception error) {
+                decoderError = error;
+            }
+        }
+
+        BitmapFactory.Options bounds = new BitmapFactory.Options();
+        bounds.inJustDecodeBounds = true;
+        try (InputStream input = getContentResolver().openInputStream(uri)) {
+            if (input == null) throw new IOException("Галерея не дала доступ к выбранному фото.");
+            BitmapFactory.decodeStream(input, null, bounds);
+        } catch (Exception error) {
+            if (decoderError != null) error.addSuppressed(decoderError);
+            throw new IOException("Не удалось открыть фото из галереи: " + error.getMessage(), error);
+        }
+        if (bounds.outWidth <= 0 || bounds.outHeight <= 0) {
+            throw new IOException("Не удалось определить формат этого фото. Попробуйте сохранить его как PNG или JPEG.",
+                    decoderError);
+        }
+
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inSampleSize = 1;
+        int longest = Math.max(bounds.outWidth, bounds.outHeight);
+        while (longest / options.inSampleSize > 1024 && options.inSampleSize < (1 << 30)) {
+            options.inSampleSize *= 2;
+        }
+        try (InputStream input = getContentResolver().openInputStream(uri)) {
+            if (input == null) throw new IOException("Галерея не дала доступ к фото при чтении.");
+            Bitmap bitmap = BitmapFactory.decodeStream(input, null, options);
+            if (bitmap == null) {
+                throw new IOException("Android не смог декодировать это фото. Попробуйте PNG, JPEG или WebP.",
+                        decoderError);
+            }
+            return bitmap;
+        }
     }
 
     private void buildApk() {
@@ -621,7 +665,7 @@ public final class MainActivity extends Activity {
                 if (opened == null) throw new IOException("Не удалось открыть место сохранения.");
                 try (InputStream input = new BufferedInputStream(new FileInputStream(apk));
                      OutputStream output = new BufferedOutputStream(opened)) {
-                    copyLimited(input, output, ApkBuilder.MAX_APK_BYTES);
+                    copyStream(input, output);
                 }
                 runOnUiThread(() -> {
                     setStatus("APK сохранён · можно установить на Android", false);
@@ -697,13 +741,12 @@ public final class MainActivity extends Activity {
         return normalized.toString();
     }
 
-    private long copyLimited(InputStream input, OutputStream output, long maxBytes) throws IOException {
-        byte[] buffer = new byte[8192];
+    private long copyStream(InputStream input, OutputStream output) throws IOException {
+        byte[] buffer = new byte[64 * 1024];
         int read;
         long total = 0;
         while ((read = input.read(buffer)) != -1) {
             total += read;
-            if (total > maxBytes) throw new IOException("Файл больше допустимых 50 МБ.");
             output.write(buffer, 0, read);
         }
         return total;

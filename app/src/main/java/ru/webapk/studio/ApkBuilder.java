@@ -32,10 +32,8 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-/** Builds a small WebView APK by patching the bundled Android template; no network or SDK is used. */
+/** Builds a WebView APK by patching the bundled Android template; no network or SDK is used. */
 final class ApkBuilder {
-    static final long MAX_APK_BYTES = 1_000_000L;
-    static final long MAX_SITE_BYTES = 50L * 1024L * 1024L;
     private static final String TEMPLATE_PACKAGE = "com.webapk.hosttemplate";
     private static final String TEMPLATE_ASSET = "host-template.apk";
     private static final Pattern ICON_PATH = Pattern.compile(
@@ -145,7 +143,7 @@ final class ApkBuilder {
                         ZipEntry copied = new ZipEntry(name);
                         copied.setTime(entry.getTime());
                         apk.putNextEntry(copied);
-                        copy(source, apk, 32L * 1024L * 1024L);
+                        copy(source, apk);
                         apk.closeEntry();
                     }
                 }
@@ -171,7 +169,7 @@ final class ApkBuilder {
                 siteEntry.setTime(0L);
                 apk.putNextEntry(siteEntry);
                 try (InputStream input = new BufferedInputStream(new FileInputStream(file))) {
-                    copy(input, apk, MAX_SITE_BYTES);
+                    copy(input, apk);
                 }
                 apk.closeEntry();
             }
@@ -182,21 +180,10 @@ final class ApkBuilder {
             throw error;
         }
 
-        if (unsigned.length() >= MAX_APK_BYTES) {
-            unsigned.delete();
-            throw new IOException("Исходный сайт уже превышает лимит APK 1 000 000 байт после упаковки. Уменьшите ресурсы.");
-        }
-
         try {
             JarV1Signer.sign(unsigned, signed, context.getFilesDir());
             if (!signed.isFile() || signed.length() == 0) {
                 throw new IOException("Не удалось подписать APK.");
-            }
-            if (signed.length() > MAX_APK_BYTES) {
-                long bytes = signed.length();
-                signed.delete();
-                throw new IOException("APK получился размером " + formatBytes(bytes)
-                        + ". Лимит — 1 000 000 байт; уменьшите сайт или изображения.");
             }
             return signed;
         } finally {
@@ -209,7 +196,6 @@ final class ApkBuilder {
         List<File> files = new ArrayList<>();
         List<File> pending = new ArrayList<>();
         pending.add(root);
-        long total = 0;
         while (!pending.isEmpty()) {
             File current = pending.remove(pending.size() - 1);
             File[] children = current.listFiles();
@@ -223,10 +209,6 @@ final class ApkBuilder {
                     pending.add(child);
                 } else if (child.isFile()) {
                     files.add(child);
-                    total += child.length();
-                    if (total > MAX_SITE_BYTES) {
-                        throw new IOException("Распакованный сайт превышает лимит 50 МБ.");
-                    }
                     if (files.size() > 10000) throw new IOException("В ZIP слишком много файлов (больше 10 000).");
                 }
             }
@@ -370,13 +352,12 @@ final class ApkBuilder {
         return out.toByteArray();
     }
 
-    private static long copy(InputStream input, OutputStream output, long maxBytes) throws IOException {
-        byte[] buffer = new byte[8192];
+    private static long copy(InputStream input, OutputStream output) throws IOException {
+        byte[] buffer = new byte[64 * 1024];
         int count;
         long total = 0;
         while ((count = input.read(buffer)) != -1) {
             total += count;
-            if (total > maxBytes) throw new IOException("Файл сайта превышает допустимый размер.");
             output.write(buffer, 0, count);
         }
         return total;
@@ -400,7 +381,13 @@ final class ApkBuilder {
 
     static String formatBytes(long bytes) {
         if (bytes < 1024) return bytes + " Б";
-        return String.format(Locale.getDefault(), "%.1f КБ", bytes / 1024.0);
+        if (bytes < 1024L * 1024L) {
+            return String.format(Locale.getDefault(), "%.1f КБ", bytes / 1024.0);
+        }
+        if (bytes < 1024L * 1024L * 1024L) {
+            return String.format(Locale.getDefault(), "%.1f МБ", bytes / (1024.0 * 1024.0));
+        }
+        return String.format(Locale.getDefault(), "%.2f ГБ", bytes / (1024.0 * 1024.0 * 1024.0));
     }
 
     private static final class CountingOutputStream extends FilterOutputStream {
