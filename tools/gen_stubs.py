@@ -92,12 +92,22 @@ for i in err_idx:
     if dm:
         pkg = dm.group(1)
         # класс ищем в ближайших строках (import P.C;)
+        found = False
         for j in range(i + 1, min(i + 4, len(lines))):
             im = re.search(r"import\s+([\w.]+)\.(\w+)\s*;", lines[j])
             if im and im.group(1) == pkg:
                 if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), im.group(2) + ".java")):
                     flat.add((pkg, im.group(2)))
+                found = True
                 break
+        if not found:
+            # fallback: ссылки вида P.C прямо в коде (без import)
+            codeline = lines[i + 1] if i + 1 < len(lines) else ""
+            for cm2 in re.finditer(r"\b%s\.([A-Za-z_$][\w$]*)" % re.escape(pkg), codeline):
+                cls2 = cm2.group(1)
+                if cls2 not in ("class", "new", "this"):
+                    if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), cls2 + ".java")):
+                        flat.add((pkg, cls2))
         continue
     if "cannot find symbol" not in msg:
         continue
@@ -164,10 +174,13 @@ for host, names in nested.items():
         src = open(host, encoding="utf-8", errors="ignore").read()
     except OSError:
         continue
+    # начало тела хозяина — чтобы не считать его собственное объявление "вложенным"
+    hm = re.search(r"\b(?:class|interface|enum)\s+%s\b[^{;]*\{" % re.escape(os.path.basename(host)[:-5]), src)
+    body_start = hm.end() if hm else 0
     added = False
     for cls in sorted(names):
-        # уже есть вложенный/плоский класс с этим именем?
-        if re.search(r"\b(class|interface|enum)\s+%s\b" % re.escape(cls), src):
+        # уже есть вложенный тип с этим именем ВНУТРИ тела хозяина?
+        if body_start > 0 and re.search(r"\b(class|interface|enum)\s+%s\b" % re.escape(cls), src[body_start:]):
             continue
         anchor = src.rstrip().rfind("}")
         if anchor <= 0:
