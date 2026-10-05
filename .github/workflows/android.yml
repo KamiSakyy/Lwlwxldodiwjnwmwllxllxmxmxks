@@ -55,8 +55,33 @@ jobs:
             exit "$build_status"
           fi
 
-      - name: Smoke test encrypted sites, icons, native runtimes, and signatures
-        run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke"
+      - name: Verify R8 minification and smoke-test encrypted ARM APKs
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s app/build/outputs/mapping/release/mapping.txt
+          test -s template/build/outputs/mapping/release/mapping.txt
+          bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke" app/build/outputs/apk/release/app-release.apk
+
+      - name: Verify stripped single-library JNI payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          LLVM_READELF="$ANDROID_HOME/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
+          NATIVE="$RUNNER_TEMP/libcxx-runtime-arm64.so"
+          unzip -p template/build/outputs/apk/release/template-release-unsigned.apk lib/arm64-v8a/libc++_shared.so > "$NATIVE"
+          DYNAMIC_SYMBOLS="$("$LLVM_READELF" --dyn-syms --wide "$NATIVE")"
+          grep -F "JNI_OnLoad" <<< "$DYNAMIC_SYMBOLS"
+          if grep -Eq "Java_com_webapk|NativeKey|sitekey" <<< "$DYNAMIC_SYMBOLS"; then
+            echo "Descriptive JNI symbols leaked into the stripped shared object" >&2
+            exit 1
+          fi
+          DYNAMIC_INFO="$("$LLVM_READELF" -d "$NATIVE")"
+          RUNTIME_DEPENDENCY="$(grep -F "NEEDED" <<< "$DYNAMIC_INFO" | grep -F "libc++_shared.so" || true)"
+          if [ -n "$RUNTIME_DEPENDENCY" ]; then
+            echo "The combined libc++_shared.so has an invalid self-dependency" >&2
+            exit 1
+          fi
 
       - name: Verify converter installation permission and FileProvider
         shell: bash

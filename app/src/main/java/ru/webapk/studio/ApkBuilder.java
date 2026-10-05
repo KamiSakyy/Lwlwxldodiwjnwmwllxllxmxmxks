@@ -9,7 +9,7 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 
 import com.webapk.security.EncryptedSiteArchive;
-import com.webapk.security.NativeKey;
+import com.webapk.security.N;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -173,7 +173,7 @@ final class ApkBuilder {
                 throw new IOException("Не удалось заменить все размеры иконки приложения.");
             }
             File encryptedArchive = new File(cache, "website-assets-a.c.tmp");
-            byte[] masterKey = NativeKey.getMasterKey();
+            byte[] masterKey = N.k();
             try {
                 EncryptedSiteArchive.create(siteRoot, siteFiles, encryptedArchive, masterKey);
                 ZipEntry archiveEntry = new ZipEntry("assets/" + EncryptedSiteArchive.ASSET_NAME);

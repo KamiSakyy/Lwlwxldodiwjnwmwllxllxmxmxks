@@ -1,10 +1,10 @@
-# R8 full mode: optimize and repackage application classes; keep only the JNI bridge contract.
+# R8 full mode for the generated site's embedded Android host.
 -allowaccessmodification
 -repackageclasses obf
 -renamesourcefileattribute SourceFile
 -keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
 
-# The bridge class and native method names are looked up by JNI_OnLoad/RegisterNatives.
+# JNI_OnLoad/RegisterNatives requires this exact class and method name.
 -keep class com.webapk.security.N {
     public static byte[] k();
     private static native byte[] n();

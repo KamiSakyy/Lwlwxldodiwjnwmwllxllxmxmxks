@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [ "$#" -ne 3 ]; then
-  echo "usage: test-runtime-apk.sh BUILD_TOOLS_DIR TEMPLATE_APK TEMP_DIR" >&2
+if [ "$#" -ne 4 ]; then
+  echo "usage: test-runtime-apk.sh BUILD_TOOLS_DIR TEMPLATE_APK TEMP_DIR CONVERTER_APK" >&2
   exit 2
 fi
 BUILD_TOOLS="$1"
 TEMPLATE_APK="$2"
 TEMP_DIR="$3"
+APP_APK="$4"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 CLASSES="$TEMP_DIR/jvm-smoke-classes"
 UNSIGNED="$TEMP_DIR/runtime-smoke-unsigned.apk"
@@ -30,11 +31,34 @@ javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
 java -cp "$CLASSES" ru.webapk.studio.RuntimeApkSmoke "$TEMPLATE_APK" "$UNSIGNED" "$SIGNED" "$SIGNING_KEY" "$SIGNING_PASSWORD" "$SIGNING_ALIAS"
 TEMPLATE_ENTRIES="$(unzip -Z1 "$TEMPLATE_APK")"
 SIGNED_ENTRIES="$(unzip -Z1 "$SIGNED")"
-for ABI in armeabi-v7a arm64-v8a x86 x86_64; do
-  grep -Fx "lib/$ABI/libsitekey.so" <<< "$TEMPLATE_ENTRIES"
-  grep -Fx "lib/$ABI/libc++_shared.so" <<< "$TEMPLATE_ENTRIES"
-  grep -Fx "lib/$ABI/libsitekey.so" <<< "$SIGNED_ENTRIES"
-  grep -Fx "lib/$ABI/libc++_shared.so" <<< "$SIGNED_ENTRIES"
+APP_ENTRIES="$(unzip -Z1 "$APP_APK")"
+check_native_libraries() {
+  local label="$1"
+  local entries="$2"
+  local libraries
+  local count
+  libraries="$(grep -E '^lib/[^/]+/[^/]+\.so$' <<< "$entries" || true)"
+  count="$(printf '%s\n' "$libraries" | sed '/^$/d' | wc -l | tr -d '[:space:]')"
+  if [ "$count" -ne 2 ]; then
+    echo "$label must contain exactly one native library for each ARM ABI; found $count" >&2
+    printf '%s\n' "$libraries" >&2
+    exit 1
+  fi
+  if grep -Eq '^lib/(x86|x86_64)/' <<< "$entries"; then
+    echo "$label unexpectedly contains an x86 ABI" >&2
+    exit 1
+  fi
+  if grep -Ev '^lib/(armeabi-v7a|arm64-v8a)/libc\+\+_shared\.so$' <<< "$libraries"; then
+    echo "$label contains an unexpected native library or ABI" >&2
+    exit 1
+  fi
+  grep -Fx 'lib/armeabi-v7a/libc++_shared.so' <<< "$libraries"
+  grep -Fx 'lib/arm64-v8a/libc++_shared.so' <<< "$libraries"
+}
+check_native_libraries "Host template APK" "$TEMPLATE_ENTRIES"
+check_native_libraries "Generated site APK" "$SIGNED_ENTRIES"
+check_native_libraries "Converter APK" "$APP_ENTRIES"
+for ABI in armeabi-v7a arm64-v8a; do
   cmp <(unzip -p "$TEMPLATE_APK" "lib/$ABI/libc++_shared.so") \
       <(unzip -p "$SIGNED" "lib/$ABI/libc++_shared.so")
 done

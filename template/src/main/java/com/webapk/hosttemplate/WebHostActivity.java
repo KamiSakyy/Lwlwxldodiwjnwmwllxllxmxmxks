@@ -18,7 +18,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.webapk.security.EncryptedSiteArchive;
-import com.webapk.security.NativeKey;
+import com.webapk.security.N;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
@@ -91,7 +91,7 @@ public final class WebHostActivity extends Activity {
                      OutputStream output = new BufferedOutputStream(new FileOutputStream(encryptedFile))) {
                     copy(asset, output);
                 }
-                byte[] masterKey = NativeKey.getMasterKey();
+                byte[] masterKey = N.k();
                 try {
                     opened = EncryptedSiteArchive.open(encryptedFile, masterKey);
                 } finally {
