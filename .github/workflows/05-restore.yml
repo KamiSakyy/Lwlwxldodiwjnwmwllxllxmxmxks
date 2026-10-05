@@ -79,9 +79,6 @@ jobs:
                 -bootclasspath "$ANDROID_JAR" -sourcepath "$SRC" \
                 "$SRC/i80/c.java" 2>&1 | head -25 | tee -a "$CYCLE" || true
             fi
-            python3 tools/cleanup_nested_stubs.py "$SRC" 2>&1 | tee -a "$CYCLE" || true
-            python3 tools/fix_nested_duplicates.py "$SRC" 2>&1 | tee -a "$CYCLE" || true
-            python3 tools/fix_nested_duplicates.py "$SRC" || true
             rm -rf /tmp/classes
             javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 \
               -source 8 -target 8 -encoding UTF-8 \
@@ -119,6 +116,7 @@ jobs:
               done < /tmp/stub-interfaces.txt
               python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt 2>&1 | tee -a "$CYCLE" || true
             fi
+            python3 tools/convert_stubs_to_ifaces.py /tmp/javac-iter.log "$SRC" 2>&1 | tee -a "$CYCLE" || true
             find "$SRC" -name "*.java" | sort > /tmp/sources.txt
             echo "Файлов теперь: $(wc -l < /tmp/sources.txt)" | tee -a "$CYCLE"
           done
