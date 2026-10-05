@@ -1,15 +1,15 @@
 # ОТЧЁТ О ВОССТАНОВЛЕНИИ ИСХОДНИКА (Этап 5 v3, итеративный цикл)
 
-_Сгенерировано: 2026-10-05T19:23:53.260785Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
+_Сгенерировано: 2026-10-05T19:50:02.941824Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
 
-**Осталось ошибок: 64533** в 28102 файлах.
+**Осталось ошибок: 64497** в 28083 файлах.
 
 - Стабов-заглушек в дереве: 1171
 
 ## Типы ошибок (топ-20)
-- 55230 × `cannot find symbol`
+- 55229 × `cannot find symbol`
 - 6532 × `interface expected here`
-- 604 × `incompatible types`
+- 614 × `incompatible types`
 - 132 × `method valueOf in class Enum<E> cannot be applied to given t`
 - 105 × `int cannot be dereferenced`
 - 85 × `boolean cannot be dereferenced`
@@ -17,7 +17,6 @@ _Сгенерировано: 2026-10-05T19:23:53.260785Z, проверка javac
 - 61 × `constructor a0 in class a0<T1,T2,T3,T4> cannot be applied to`
 - 58 × `package m71 does not exist`
 - 53 × `constructor e in class e<T1,T2,T3,T4> cannot be applied to g`
-- 52 × `no interface expected here`
 - 47 × `constructor zzmr in class zzmr cannot be applied to given ty`
 - 46 × `constructor l in class l cannot be applied to given types;`
 - 45 × `package androidx.recyclerview.widget does not exist`
@@ -27,18 +26,19 @@ _Сгенерировано: 2026-10-05T19:23:53.260785Z, проверка javac
 - 32 × `wrong number of type arguments; required 4`
 - 30 × `package y9 does not exist`
 - 30 × `non-static variable c cannot be referenced from a static con`
+- 29 × `constructor d in class d<T1,T2,T3,T4> cannot be applied to g`
 
 ## Файлы с ошибками (топ-30)
 - `com/github/rudroid/settings/codeoptions/g.java` — 533
 - `com/google/android/gms/internal/measurement/d5.java` — 416
-- `aa1/b.java` — 332
+- `aa1/b.java` — 333
 - `com/google/android/gms/internal/measurement/z5.java` — 290
 - `com/google/android/gms/measurement/internal/o4.java` — 284
 - `w51/r.java` — 242
 - `com/github/rudroid/utilities/ui/emojipicker/d.java` — 223
 - `com/google/common/util/concurrent/a.java` — 203
 - `com/google/android/gms/measurement/internal/o.java` — 198
-- `l51/h.java` — 186
+- `l51/h.java` — 187
 - `com/google/android/gms/measurement/internal/p3.java` — 159
 - `k41/b.java` — 158
 - `a61/n0.java` — 156
@@ -61,11 +61,11 @@ _Сгенерировано: 2026-10-05T19:23:53.260785Z, проверка javac
 - `a61/o.java` — 59
 
 ## Ход цикла (ошибок по раундам)
-- javac-round1.log: 209
+- javac-round1.log: 64520
 - javac-round10.log: 64533
-- javac-round2.log: 64533
-- javac-round3.log: 64520
-- javac-round4.log: 64533
+- javac-round2.log: 64497
+- javac-round3.log: 64497
+- javac-round4.log: 64497
 - javac-round5.log: 64520
 - javac-round6.log: 64533
 - javac-round7.log: 64520

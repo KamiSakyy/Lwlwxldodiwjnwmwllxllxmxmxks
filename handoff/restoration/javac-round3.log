@@ -27,16 +27,10 @@ public final class c implements i0, t6.b, bm.k, com.google.android.gms.measureme
                                                                                                 ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
 public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
-                             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
-public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
                                                      ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
 public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
                                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
-public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
-                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
 public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
                                                 ^
@@ -46,9 +40,6 @@ public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
 public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
                                                                                 ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w80/w3.java:16: error: interface expected here
-public final class w3 implements aa.i0, bm.k, com.google.android.gms.measurement.internal.x, e7.m, l7.s1 {
-                                                                                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/t4.java:49: error: package h7 does not exist
     public h7.a x;
              ^
@@ -90,9 +81,6 @@ public final class a extends a.a {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:21: error: package androidx.coordinatorlayout.widget does not exist
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
                                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:69: error: interface expected here
-public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
-                          ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:69: error: interface expected here
 public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
                                         ^
@@ -3093,9 +3081,6 @@ import androidx.compose.ui.platform.ComposeView;
                            ^
   symbol:   class Object
   location: class f
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b6/c.java:4: error: interface expected here
-public final class c implements z5.k {
-                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k21/f.java:1144: error: cannot find symbol
     public abstract Object k();
                     ^
@@ -4932,6 +4917,11 @@ public final class c implements g {
   location: class q0<T>
   where T is a type-variable:
     T extends Object declared in class q0
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/g.java:7: error: cannot find symbol
+    Object c(z zVar);
+    ^
+  symbol:   class Object
+  location: interface g
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:10: error: cannot find symbol
     public final Object s;
                  ^
@@ -5007,11 +4997,6 @@ public final class c implements g {
                                 ^
   symbol:   class Object
   location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/g.java:7: error: cannot find symbol
-    Object c(z zVar);
-    ^
-  symbol:   class Object
-  location: interface g
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/n.java:5: error: cannot find symbol
     Object d(Object obj);
              ^
@@ -11967,9 +11952,6 @@ public class MultiSelectListPreferenceDialogFragmentCompat extends PreferenceDia
                         ^
   symbol:   class Object
   location: class SeekBarPreference
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/profileinstaller/ProfileInstallerInitializer.java:12: error: interface expected here
-public class ProfileInstallerInitializer implements b {
-                                                    ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/profileinstaller/ProfileInstallerInitializer.java:19: error: cannot find symbol
     public final Object b(Context context) {
                  ^
@@ -15790,9 +15772,6 @@ public final class a extends Binder implements b.a {
                                 ^
   symbol:   class Object
   location: class p
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/datepicker/l.java:11: error: interface expected here
-public final class l implements z {
-                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/datepicker/l.java:17: error: cannot find symbol
     public final Object w;
                  ^
@@ -17209,9 +17188,6 @@ public abstract class z3 implements a5.m1 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/behavior/SwipeDismissBehavior.java:6: error: package androidx.coordinatorlayout.widget does not exist
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
                                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w31/e.java:8: error: interface expected here
-public final class e implements z {
-                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/o6.java:3: error: package sun.misc does not exist
 import sun.misc.Unsafe;
                ^
@@ -26163,9 +26139,6 @@ public final class z implements aa.a {
                                 ^
   symbol:   class Object
   location: class Purchase
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/apollographql/apollo/cache/normalized/sql/ApolloInitializer.java:11: error: interface expected here
-public final class ApolloInitializer implements b {
-                                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/apollographql/apollo/cache/normalized/sql/ApolloInitializer.java:18: error: cannot find symbol
     public final Object b(Context context) {
                  ^
@@ -26742,9 +26715,6 @@ public final class t implements aa.i0, bm.k, com.google.android.gms.measurement.
                                 ^
   symbol:   class Object
   location: class AgentAssignment
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y60/b.java:31: error: interface expected here
-public class b implements i0, k, g, x, m {
-                                       ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/domain/searchandfilter/filters/data/DiscussionCategoryFilter.java:64: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -52043,9 +52013,6 @@ class d implements g.b {
   location: class c0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/c2.java:11: error: interface expected here
 public final /* synthetic */ class c2 implements androidx.fragment.app.f1, e7.k, h.b {
-                                                                             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/c2.java:11: error: interface expected here
-public final /* synthetic */ class c2 implements androidx.fragment.app.f1, e7.k, h.b {
                                                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/c2.java:20: error: cannot find symbol
     public void d(Object obj) {
@@ -52215,6 +52182,9 @@ class g0 implements g.b {
                                 ^
   symbol:   class Object
   location: class v
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/x.java:11: error: no interface expected here
+public final class x extends xa.k {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/x.java:8: error: a type with the same simple name is already defined by the single-type-import of n
 import le.n;
 ^
@@ -54402,9 +54372,6 @@ import androidx.recyclerview.widget.RecyclerView;
   location: class n1<T>
   where T is a type-variable:
     T extends Object declared in class n1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/n2.java:7: error: interface expected here
-public final /* synthetic */ class n2 implements e7.k, u11.a {
-                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/n2.java:9: error: cannot find symbol
     public final /* synthetic */ Object s;
                                  ^
@@ -54445,9 +54412,6 @@ public final /* synthetic */ class n2 implements e7.k, u11.a {
                  ^
   symbol:   class Object
   location: class f
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/o.java:10: error: interface expected here
-public final /* synthetic */ class o implements e7.k, b5.o {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/o.java:12: error: cannot find symbol
     public final /* synthetic */ Object s;
                                  ^
@@ -54742,9 +54706,6 @@ class a implements g.b {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/privacy/d.java:14: error: interface expected here
 public final /* synthetic */ class d implements e7.j, e7.k {
                                                   ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/privacy/d.java:14: error: interface expected here
-public final /* synthetic */ class d implements e7.j, e7.k {
-                                                        ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/privacy/d.java:23: error: cannot find symbol
     public void h(Preference preference, Object obj) {
                                          ^
@@ -54863,9 +54824,6 @@ public final /* synthetic */ class d implements e7.j, e7.k {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/r.java:22: error: interface expected here
 public final /* synthetic */ class r implements h.b, e7.k, androidx.fragment.app.f1 {
                                                  ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/r.java:22: error: interface expected here
-public final /* synthetic */ class r implements h.b, e7.k, androidx.fragment.app.f1 {
-                                                       ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/r.java:31: error: cannot find symbol
     public void d(Object obj) {
                   ^
@@ -54925,9 +54883,6 @@ public final /* synthetic */ class r implements h.b, e7.k, androidx.fragment.app
                                      ^
   symbol:   class Object
   location: class r3
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/s.java:8: error: interface expected here
-public final /* synthetic */ class s implements e7.k {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/s0.java:19: error: cannot find symbol
     public final a71.c r(a71.c cVar, Object obj) {
                                      ^
@@ -63904,6 +63859,9 @@ class a implements g.b {
                  ^
   symbol:   class Object
   location: class s
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/a.java:7: error: no interface expected here
+public final class a extends a5.b {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/a3.java:15: error: cannot find symbol
     public final a71.c r(a71.c cVar, Object obj) {
                                      ^
@@ -76119,6 +76077,9 @@ import zd.b;
                                     ^
   symbol:   class Object
   location: class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/views/BottomSheetViewPager.java:12: error: no interface expected here
+public final class BottomSheetViewPager extends androidx.viewpager.widget.k {
+                                                                         ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/views/LoadingViewFlipper.java:20: error: package androidx.compose.ui.platform does not exist
 import androidx.compose.ui.platform.ComposeView;
                                    ^
@@ -78207,9 +78168,6 @@ import androidx.compose.ui.platform.ComposeView;
                  ^
   symbol:   class Object
   location: class v
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/widget/shortcuts/viewmodel/a.java:4: error: interface expected here
-public final class a implements z5.k {
-                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/widget/shortcuts/viewmodel/b.java:49: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -80921,6 +80879,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/appbar/b.java:6: error: package androidx.coordinatorlayout.widget does not exist
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
                                         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/appbar/b.java:11: error: no interface expected here
+public final class b extends a5.b {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/appbar/c.java:9: error: cannot find symbol
     public final Object createFromParcel(Parcel parcel, ClassLoader classLoader) {
                  ^
@@ -81001,6 +80962,9 @@ public final class o40 implements aa.m0 {
                  ^
   symbol:   class Object
   location: class c
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y31/v.java:12: error: no interface expected here
+public final class v extends a5.b {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i3/e.java:28: error: cannot find symbol
     public Object f25777d;
            ^
@@ -81255,6 +81219,9 @@ public final class c40 implements aa.m0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/carousel/CarouselLayoutManager.java:13: error: package androidx.recyclerview.widget does not exist
 import androidx.recyclerview.widget.RecyclerView;
                                    ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i31/d.java:12: error: no interface expected here
+public final class d extends j5.b {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y21/b.java:62: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -81291,6 +81258,9 @@ import androidx.recyclerview.widget.RecyclerView;
                  ^
   symbol:   class Object
   location: class e
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/datepicker/g.java:12: error: no interface expected here
+public final class g extends a5.b {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/datepicker/h.java:3: error: package androidx.recyclerview.widget does not exist
 import androidx.recyclerview.widget.LinearLayoutManager;
                                    ^
@@ -81357,6 +81327,9 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
                                     ^
   symbol:   class Object
   location: class ChipTextInputComboView
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/timepicker/c.java:10: error: no interface expected here
+public final class c extends a5.b {
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/transformation/ExpandableBehavior.java:6: error: package androidx.coordinatorlayout.widget does not exist
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
                                         ^
@@ -179062,9 +179035,6 @@ public final class c implements aa.a {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ok0/d.java:13: error: interface expected here
 public abstract class d implements aa.a {
                                      ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/okhttp3/internal/platform/PlatformInitializer.java:12: error: interface expected here
-public final class PlatformInitializer implements b {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/okhttp3/internal/platform/PlatformInitializer.java:17: error: cannot find symbol
     public final Object b(Context context) {
                  ^
@@ -191064,6 +191034,9 @@ public final class c implements aa.a {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q30/d.java:13: error: interface expected here
 public abstract class d implements aa.a {
                                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q31/a.java:8: error: no interface expected here
+public final class a extends z {
+                             ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q4/b.java:43: error: cannot find symbol
     public static final Object f30938e = new Object();
                         ^
@@ -191280,6 +191253,9 @@ public abstract class g implements aa.a {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q60/h.java:9: error: interface expected here
 public abstract class h implements aa.a {
                                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q61/a.java:7: error: no interface expected here
+public final class a extends k {
+                             ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q71/b.java:39: error: cannot find symbol
     public final Object next() {
                  ^
@@ -260595,7 +260571,7 @@ public final class t implements aa.a {
                     Method method = (Method) androidx.sqlite.db.framework.b.f3103u.getValue();
                                                                            ^
   symbol:   variable f3103u
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:85: error: cannot find symbol
             case e6.w.HAS_IMAGE_COLOR_FILTER_FIELD_NUMBER /* 11 */:
                      ^
@@ -260616,7 +260592,7 @@ public final class t implements aa.a {
             case androidx.compose.foundation.layout.b.f1079h /* 15 */:
                                                      ^
   symbol:   variable f1079h
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:98: error: incompatible types: a[] cannot be converted to Enum[]
                 return k81.c1.f("com.github.domain.searchandfilter.filters.data.agent.AgentTaskStatus", cm.a.values());
                                                                                                                    ^
@@ -261003,17 +260979,9 @@ public final class g2 implements z {
                                    ^
   symbol:   class Object
   location: class b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z11/b.java:117: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z11/b.java:117: error: m is abstract; cannot be instantiated
         b1.m mVar = new b1.m(this);
                     ^
-  required: no arguments
-  found:    b
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z11/b.java:118: error: cannot find symbol
         mVar.a(j(this.s), "statusCode");
             ^
@@ -261118,17 +261086,9 @@ public final class g2 implements z {
                              ^
   symbol:   variable c
   location: class f
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b5/f.java:369: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b5/f.java:369: error: b is abstract; cannot be instantiated
             arrayList.add(new b(actionList.get(i10), 0, null, null, null));
                           ^
-  required: no arguments
-  found:    AccessibilityAction,int,<null>,<null>,<null>
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b5/f.java:373: error: cannot find symbol
             int a10 = bVar.a();
                           ^
@@ -261244,17 +261204,9 @@ public final class g2 implements z {
                                    ^
   symbol:   class Object
   location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z11/d.java:45: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z11/d.java:45: error: m is abstract; cannot be instantiated
         b1.m mVar = new b1.m(this);
                     ^
-  required: no arguments
-  found:    d
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z11/d.java:46: error: cannot find symbol
         mVar.a(this.r, "name");
             ^
@@ -263522,17 +263474,9 @@ public final class z extends m1 implements w1 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c30/o0.java:70: error: incompatible types: hc0.aa.q0 cannot be converted to aa.q0
         aa.q0 q0Var = kz.O;
                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c30/o0.java:76: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c30/o0.java:76: error: m is abstract; cannot be instantiated
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
                ^
-  required: no arguments
-  found:    String,q0,String,r,r,List
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c30/o0.java:89: error: cannot find symbol
         return aa.c.c(p0.a, false);
                    ^
@@ -267198,17 +267142,9 @@ public final class n extends c {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/d.java:63: error: incompatible types: d cannot be converted to int
         h0 h0Var = new h0(looper, this);
                                   ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/d.java:67: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/d.java:67: error: m is abstract; cannot be instantiated
         this.x = new b1.m(18);
                  ^
-  required: no arguments
-  found:    int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/d.java:79: error: cannot find symbol
         return new Status(17, s0.k("API: ", (String) aVar.b.t, " is not available on this device. Connection failed with: ", String.valueOf(bVar)), bVar.t, bVar);
                                                            ^
@@ -267351,17 +267287,9 @@ public final class n extends c {
                                    ^
   symbol:   class Object
   location: class Status
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/common/api/Status.java:43: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/common/api/Status.java:43: error: m is abstract; cannot be instantiated
         m mVar = new m(this);
                  ^
-  required: no arguments
-  found:    Status
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/common/api/Status.java:120: error: cannot find symbol
         mVar.a(str, "statusCode");
             ^
@@ -267519,17 +267447,9 @@ public final class c extends a21.c {
   required: Context,b1.m,c21.m,b
   found:    no arguments
   reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e21/c.java:16: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e21/c.java:16: error: m is abstract; cannot be instantiated
     public static final m i = new m(new b(), new j(1));
                               ^
-  required: no arguments
-  found:    b,j
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e21/c.java:22: error: no suitable constructor found for h4(no arguments)
         h4 h4Var = new h4();
                    ^
@@ -267719,17 +267639,9 @@ public final class c extends a21.c {
             ^
   symbol:   method getClass()
   location: variable bVar of type b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/j.java:59: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/j.java:59: error: m is abstract; cannot be instantiated
         this.i = new b1.m(11);
                  ^
-  required: no arguments
-  found:    int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/j.java:136: error: constructor o in class o<T1,T2,T3,T4> cannot be applied to given types;
             h0Var.post(new androidx.fragment.app.o(4, this));
                        ^
@@ -268327,6 +268239,9 @@ public final class l3 extends f5 {
                                                 ^
   symbol:   class Object
   location: class n
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/n.java:265: error: b is abstract; cannot be instantiated
+            l7.b bVar2 = new l7.b();
+                         ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/n.java:266: error: cannot find symbol
             bVar2.b = eVar;
                  ^
@@ -268629,17 +268544,9 @@ public final class l3 extends f5 {
                      ^
   symbol:   method w(String,String)
   location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/o.java:334: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/o.java:334: error: b is abstract; cannot be instantiated
                 bVar = new androidx.lifecycle.b(l1Var);
                        ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/o.java:336: error: constructor d in class d<T1,T2,T3,T4> cannot be applied to given types;
                 ia.d dVar = new ia.d(4);
                             ^
@@ -269644,11 +269551,14 @@ public final class l3 extends f5 {
                                ^
   symbol:   method g()
   location: class x0
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:57: error: b is abstract; cannot be instantiated
+            w1.q bVar = new v2.b();
+                        ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:59: error: cannot find symbol
             ((v2.b) bVar).F = pVar;
                          ^
   symbol:   variable F
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:80: error: cannot find symbol
             c0 c0Var = e1.a;
                          ^
@@ -269847,17 +269757,9 @@ public final class l3 extends f5 {
                                       ^
   symbol:   variable a
   location: variable z0Var of type z0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:611: error: constructor z in class z<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:611: error: z is abstract; cannot be instantiated
                         z zVar = new z((g0) hVar.b, f);
                                  ^
-  required: no arguments
-  found:    g0,x
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class z
-    T2 extends Object declared in class z
-    T3 extends Object declared in class z
-    T4 extends Object declared in class z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:612: error: cannot find symbol
                         z0Var.a.N0(zVar);
                              ^
@@ -269868,17 +269770,21 @@ public final class l3 extends f5 {
                                      ^
   symbol:   variable a
   location: variable z0Var of type z0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:614: error: incompatible types: z cannot be converted to d1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:614: error: cannot find symbol
                         ((d1) zVar).H = d1Var4.H;
-                              ^
+                                   ^
+  symbol:   variable H
+  location: class d1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:614: error: cannot find symbol
                         ((d1) zVar).H = d1Var4.H;
                                               ^
   symbol:   variable H
   location: variable d1Var4 of type d1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:615: error: incompatible types: z cannot be converted to d1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:615: error: cannot find symbol
                         ((d1) zVar).G = d1Var4;
-                              ^
+                                   ^
+  symbol:   variable G
+  location: class d1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:616: error: cannot find symbol
                         d1Var4.H = zVar;
                               ^
@@ -269965,36 +269871,34 @@ public final class l3 extends f5 {
                         ^
   symbol:   method y1(x)
   location: variable zVar of type z
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:672: error: incompatible types: z cannot be converted to d1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:672: error: cannot find symbol
                     if (xVar2 != xVar && (m1Var = ((d1) zVar).c0) != null) {
-                                                        ^
+                                                             ^
+  symbol:   variable c0
+  location: class d1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:673: error: cannot find symbol
                         m1Var.invalidate();
                              ^
   symbol:   method invalidate()
   location: variable m1Var of type m1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:676: error: constructor z in class z<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:676: error: z is abstract; cannot be instantiated
                     zVar = new z(g0Var, f);
                            ^
-  required: no arguments
-  found:    g0,x
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class z
-    T2 extends Object declared in class z
-    T3 extends Object declared in class z
-    T4 extends Object declared in class z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:677: error: cannot find symbol
                     xVar.N0(zVar);
                         ^
   symbol:   method N0(z)
   location: variable xVar of type x
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:679: error: incompatible types: z cannot be converted to d1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:679: error: cannot find symbol
                 ((d1) zVar2).H = zVar;
-                      ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:680: error: incompatible types: z cannot be converted to d1
+                            ^
+  symbol:   variable H
+  location: class d1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:680: error: cannot find symbol
                 ((d1) zVar).G = zVar2;
-                      ^
+                           ^
+  symbol:   variable G
+  location: class d1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:683: error: cannot find symbol
                 xVar.N0(zVar2);
                     ^
@@ -270005,9 +269909,11 @@ public final class l3 extends f5 {
                     ^
   symbol:   method w()
   location: variable g0Var of type g0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:687: error: incompatible types: z cannot be converted to d1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:687: error: cannot find symbol
         ((d1) zVar2).H = w != null ? (v2.s) w.X.d : null;
-              ^
+                    ^
+  symbol:   variable H
+  location: class d1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:687: error: cannot find symbol
         ((d1) zVar2).H = w != null ? (v2.s) w.X.d : null;
                                              ^
@@ -270062,17 +269968,9 @@ public final class l3 extends f5 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l1/e.java:120: error: incompatible types: b cannot be converted to List
             return bVar;
                    ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l1/e.java:122: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l1/e.java:122: error: b is abstract; cannot be instantiated
         b bVar2 = new b(0, this);
                   ^
-  required: no arguments
-  found:    int,e
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l1/e.java:124: error: incompatible types: b cannot be converted to List
         return bVar2;
                ^
@@ -270189,17 +270087,9 @@ public final class l3 extends f5 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/c.java:54: error: incompatible types: hc0.aa.q0 cannot be converted to com.google.android.gms.measurement.internal.x.q0
         q0 q0Var = w8.c;
                      ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/c.java:60: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/c.java:60: error: m is abstract; cannot be instantiated
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
                ^
-  required: no arguments
-  found:    String,q0,String,r,r,List
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/c.java:80: error: cannot find symbol
         return aa.c.c(e.a, false);
                        ^
@@ -270415,6 +270305,9 @@ public final class l3 extends f5 {
                                                  ^
   symbol:   method hashCode()
   location: variable i2Var of type i2
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: a is not abstract and does not override abstract method c(z) in g
+public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
+       ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:108: error: cannot find symbol
         ((s91.a) this.t).getClass();
                         ^
@@ -270527,6 +270420,9 @@ public final class l3 extends f5 {
                              ^
   symbol:   method b(b,MenuItem)
   location: class a
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:232: error: incompatible types: z cannot be converted to e
+        return executor == null ? zVar : new o(executor, zVar);
+                                                         ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:255: error: cannot find symbol
                 l h = ((s) this.s).h();
                                   ^
@@ -270546,7 +270442,7 @@ public final class l3 extends f5 {
                         i += ((m) it.next()).p;
                                             ^
   symbol:   variable p
-  location: class m
+  location: interface m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:273: error: cannot find symbol
                 int n = xVar.n();
                             ^
@@ -270670,12 +270566,12 @@ public final class l3 extends f5 {
                         int i4 = ((m) r0Var).p;
                                             ^
   symbol:   variable p
-  location: class m
+  location: interface m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:350: error: cannot find symbol
                         int i5 = ((m) r0Var).o;
                                             ^
   symbol:   variable o
-  location: class m
+  location: interface m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:351: error: cannot find symbol
                         int i6 = sVar.h().n;
                                      ^
@@ -270776,11 +270672,19 @@ public final class l3 extends f5 {
                              ^
   symbol:   method o(b,Menu)
   location: class a
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:519: error: cannot find symbol
+                        hVar.i(zVar, zVar.c(a0Var));
+                                         ^
+  symbol:   method c(a0)
+  location: variable zVar of type z
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:529: error: incompatible types: z cannot be converted to e
+                        hVar.s(zVar, th2);
+                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:661: error: cannot find symbol
                     String str2 = r81.g.b + " WebSocket " + ((q81.o) ((androidx.lifecycle.b) this.t).b).g();
                                                                                                     ^
   symbol:   variable b
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:678: error: constructor b3 in class b3<T1,T2,T3,T4> cannot be applied to given types;
                                 b3 b3Var = new b3(1, nanos, fVar2);
                                            ^
@@ -270879,6 +270783,9 @@ public final class l3 extends f5 {
             ^
   symbol:   method N()
   location: variable zVar of type z
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:751: error: incompatible types: z cannot be converted to e
+                    ((h) this.s).s((z) this.t, iOException);
+                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:765: error: constructor e in class e<T1,T2,T3,T4> cannot be applied to given types;
         ((o) this.t).r.execute(new androidx.fragment.app.e(this, (h) this.s, th, 2));
                                ^
@@ -271488,7 +271395,7 @@ public final class o implements e {
         int i = com.github.rudroid.deploymentreview.m.f10894x;
                                                      ^
   symbol:   variable f10894x
-  location: class m
+  location: interface m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/i.java:51: error: cannot find symbol
                 return FirebaseSessionsRegistrar.b(bVar);
                                                 ^
@@ -273859,7 +273766,7 @@ public class k implements Serializable, Comparable {
             this.E = new PriorityQueue(Comparator.comparing(r2.a, androidx.viewpager.widget.b.b));
                                                                                              ^
   symbol:   variable b
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/t2.java:1428: error: cannot find symbol
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
                                                                            ^
@@ -274331,17 +274238,9 @@ public final class y2 extends e0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w80/w3.java:75: error: incompatible types: hc0.aa.q0 cannot be converted to aa.q0
         aa.q0 q0Var = ap.k0;
                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w80/w3.java:81: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w80/w3.java:81: error: m is abstract; cannot be instantiated
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
                ^
-  required: no arguments
-  found:    String,q0,String,r,r,List
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w80/w3.java:94: error: cannot find symbol
         return aa.c.c(z3.a, false);
                    ^
@@ -280743,7 +280642,7 @@ public final class u1 extends f5 {
                 bVar = r9.b.u;
                            ^
   symbol:   variable u
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l51/h.java:495: error: cannot find symbol
                 return !z3 ? new n(nVar.a, config2, nVar.c, nVar.d, nVar.e, nVar.f, nVar.g, nVar.h, nVar.i, nVar.j, nVar.k, nVar.l, nVar.m, nVar.n, bVar) : nVar;
                                        ^
@@ -281014,17 +280913,9 @@ public final class u1 extends f5 {
                                                                  ^
   symbol:   variable v
   location: variable pVar of type p
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l51/h.java:1177: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l51/h.java:1177: error: m is abstract; cannot be instantiated
                                         m mVar = new m(6, false);
                                                  ^
-  required: no arguments
-  found:    int,boolean
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l51/h.java:1184: error: cannot find symbol
                                             iconCompat.b = bitmap;
                                                       ^
@@ -281735,17 +281626,9 @@ public final class u1 extends f5 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e50/y.java:47: error: incompatible types: hc0.aa.q0 cannot be converted to aa.q0
         aa.q0 q0Var = o8.l;
                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e50/y.java:53: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e50/y.java:53: error: m is abstract; cannot be instantiated
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
                ^
-  required: no arguments
-  found:    String,q0,String,r,r,List
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e50/y.java:66: error: cannot find symbol
         return aa.c.c(z.a, true);
                    ^
@@ -282203,33 +282086,17 @@ public final class u1 extends f5 {
                           ^
   symbol:   variable u
   location: variable viewPager2 of type ViewPager2
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:594: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:594: error: b is abstract; cannot be instantiated
                 c1.n(viewPager2, new b5.b(R.id.accessibilityActionPageDown, (CharSequence) null), (String) null, jVar2);
                                  ^
-  required: no arguments
-  found:    int,CharSequence
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:596: error: cannot find symbol
             if (viewPager2.u > 0) {
                           ^
   symbol:   variable u
   location: variable viewPager2 of type ViewPager2
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:597: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:597: error: b is abstract; cannot be instantiated
                 c1.n(viewPager2, new b5.b(R.id.accessibilityActionPageUp, (CharSequence) null), (String) null, jVar);
                                  ^
-  required: no arguments
-  found:    int,CharSequence
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:602: error: cannot find symbol
         boolean z = ((w0) viewPager2.x).b.getLayoutDirection() == 1;
                                     ^
@@ -282245,33 +282112,17 @@ public final class u1 extends f5 {
                       ^
   symbol:   variable u
   location: variable viewPager2 of type ViewPager2
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:608: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:608: error: b is abstract; cannot be instantiated
             c1.n(viewPager2, new b5.b(i2, (CharSequence) null), (String) null, jVar2);
                              ^
-  required: no arguments
-  found:    int,CharSequence
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:610: error: cannot find symbol
         if (viewPager2.u > 0) {
                       ^
   symbol:   variable u
   location: variable viewPager2 of type ViewPager2
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:611: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:611: error: b is abstract; cannot be instantiated
             c1.n(viewPager2, new b5.b(i, (CharSequence) null), (String) null, jVar);
                              ^
-  required: no arguments
-  found:    int,CharSequence
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:624: error: cannot find symbol
             com.google.android.gms.measurement.internal.o1 o1Var = (com.google.android.gms.measurement.internal.o1) ((s0) c1Var).s;
                                                                                                                                 ^
@@ -282578,17 +282429,9 @@ public final class u1 extends f5 {
                                    ^
   symbol:   method h()
   location: variable xVar of type x
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:1085: error: constructor k in class k<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:1085: error: k is abstract; cannot be instantiated
                         n5.k kVar = new n5.k(xVar, this, (a71.c) null);
                                     ^
-  required: no arguments
-  found:    x,r,c
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class k
-    T2 extends Object declared in class k
-    T3 extends Object declared in class k
-    T4 extends Object declared in class k
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:1086: error: cannot find symbol
                         hVar.w = 2;
                             ^
@@ -283168,17 +283011,9 @@ public final class u1 extends f5 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/w.java:86: error: incompatible types: hc0.aa.q0 cannot be converted to aa.q0
         aa.q0 q0Var = lk.J;
                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/w.java:92: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/w.java:92: error: m is abstract; cannot be instantiated
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
                ^
-  required: no arguments
-  found:    String,q0,String,r,r,List
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/w.java:105: error: cannot find symbol
         return aa.c.c(y.a, false);
                    ^
@@ -283720,17 +283555,9 @@ public final class u1 extends f5 {
                       ^
   symbol:   variable a
   location: variable m0Var3 of type m0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:458: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:458: error: b is abstract; cannot be instantiated
                     ef.b bVar3 = new ef.b(13);
                                  ^
-  required: no arguments
-  found:    int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:462: error: constructor x0 in class x0<T1,T2,T3,T4> cannot be applied to given types;
                     if (androidx.compose.runtime.t.v(hVar2).t(new androidx.compose.runtime.x0(0, bVar3), this) == aVar8) {
                                                               ^
@@ -284338,17 +284165,9 @@ public final class u1 extends f5 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:1132: error: incompatible types: s cannot be converted to e
                     a12.d(h2Var, sVar);
                                  ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:1134: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:1134: error: b is abstract; cannot be instantiated
                     a2.b bVar4 = new a2.b(3, eVar5, eVar6);
                                  ^
-  required: no arguments
-  found:    int,b41.e,f41.e
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n0.java:1153: error: cannot find symbol
         j1 j1Var = j1.r;
                      ^
@@ -284698,7 +284517,7 @@ public final class u1 extends f5 {
                     r9.i a = r9.k.a(kVar);
                                  ^
   symbol:   method a(k)
-  location: class k
+  location: interface k
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/gi/b.java:479: error: cannot find symbol
                     a.d = new h9.g(iVar);
                      ^
@@ -284845,22 +284664,9 @@ public final class u1 extends f5 {
                                         ^
   symbol:   variable a
   location: variable fVar of type f
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/gi/b.java:520: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/gi/b.java:520: error: b is abstract; cannot be instantiated
                 return new h9.b(drawable != null ? iVar.j(drawable) : null, fVar);
                        ^
-  required: no arguments
-  found:    drawable ![...] null,f
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/gi/b.java:520: error: cannot find symbol
-                return new h9.b(drawable != null ? iVar.j(drawable) : null, fVar);
-                                                       ^
-  symbol:   method j(Drawable)
-  location: variable iVar of type i
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/gi/b.java:578: error: cannot find symbol
                 k6.l lVar2 = ((SessionWorker) this.x).h;
                                                      ^
@@ -284928,7 +284734,7 @@ public final class u1 extends f5 {
                 x71.h hVar3 = ((k) this.x).g;
                                           ^
   symbol:   variable g
-  location: class k
+  location: interface k
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/gi/b.java:704: error: cannot find symbol
                 n5.f0 b2 = xVar.h.b();
                                ^
@@ -285157,17 +284963,12 @@ public final class u1 extends f5 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:74: error: incompatible types: AccessibilityDelegate cannot be converted to a
             b bVar = e5 == null ? null : e5 instanceof a ? ((a) e5).f361a : new b(e5);
                                                                 ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:74: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:74: error: b is abstract; cannot be instantiated
             b bVar = e5 == null ? null : e5 instanceof a ? ((a) e5).f361a : new b(e5);
                                                                             ^
-  required: no arguments
-  found:    AccessibilityDelegate
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:76: error: b is abstract; cannot be instantiated
+                bVar = new b();
+                       ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:78: error: cannot find symbol
             c1.p(view, bVar);
               ^
@@ -285583,17 +285384,9 @@ public final class b extends q0 {
                                          ^
   symbol:   method I(String)
   location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:299: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:299: error: b is abstract; cannot be instantiated
                                     this.A = this.t.c(new androidx.lifecycle.b(l1Var), this.D);
                                                       ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:310: error: cannot find symbol
                                         aVar2.f((Object) null);
                                                  ^
@@ -285660,17 +285453,9 @@ public final class b extends q0 {
                                          ^
   symbol:   method I(String)
   location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:414: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:414: error: b is abstract; cannot be instantiated
                                     this.A = this.t.c(new androidx.lifecycle.b(l1Var), this.D);
                                                       ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:425: error: cannot find symbol
                                         aVar2.f((Object) null);
                                                  ^
@@ -285737,17 +285522,9 @@ public final class b extends q0 {
                                          ^
   symbol:   method I(String)
   location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:530: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:530: error: b is abstract; cannot be instantiated
                                     this.A = this.t.c(new androidx.lifecycle.b(l1Var), this.D);
                                                       ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:541: error: cannot find symbol
                                         aVar2.f((Object) null);
                                                  ^
@@ -285814,17 +285591,9 @@ public final class b extends q0 {
                                          ^
   symbol:   method I(String)
   location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:645: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:645: error: b is abstract; cannot be instantiated
                                     this.A = this.t.c(new androidx.lifecycle.b(l1Var), this.D);
                                                       ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/go0/z.java:662: error: cannot find symbol
                                         aVar2.f((Object) null);
                                                  ^
@@ -286071,7 +285840,7 @@ public final class b extends q0 {
                     ub.b(i4.p0(u.a(yVar), sVar), androidx.compose.foundation.layout.b.x(oVar, ih.a.l), 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar).y, sVar, 0, 0, 131068);
                                                                                      ^
   symbol:   method x(o,float)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:81: error: cannot find symbol
                 if (!sVar2.S(intValue2 & 1, (intValue2 & 17) != 16)) {
                           ^
@@ -286343,7 +286112,7 @@ public final class b extends q0 {
                     w1.r A = androidx.compose.foundation.layout.b.A(oVar, f3, f3, f3, ih.a.k);
                                                                  ^
   symbol:   method A(o,float,float,float,float)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:178: error: cannot find symbol
                     e0 a3 = c0.a(androidx.compose.foundation.layout.l.c, w1.c.D, sVar6, 0);
                                                                      ^
@@ -286493,7 +286262,7 @@ public final class b extends q0 {
                 ((k0) obj4).s.a(((q2.u) obj2).c, z.d);
                                                   ^
   symbol:   variable d
-  location: class z
+  location: interface z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:248: error: cannot find symbol
                 ((k0) obj4).s.a(((q2.u) obj2).c, z.d);
                            ^
@@ -286603,7 +286372,7 @@ public final class b extends q0 {
                     ub.b(fVar2.t.b, androidx.compose.foundation.layout.b.B(oVar2, 0.0f, 0.0f, 0.0f, ih.a.k, 7), 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar9).l, sVar9, 0, 0, 131068);
                                                                         ^
   symbol:   method B(o,float,float,float,float,int)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:278: error: cannot find symbol
                     w0.a(null, p2.o(oVar2, ih.a.L), new com.github.rudroid.uitoolkit.p2(fVar2.t.c, 2131231271, null, new d2.t(ih.d.b(sVar9).v), null, null, null, null, 244), sVar9, 0, 1);
                                  ^
@@ -287022,7 +286791,7 @@ public final class b extends q0 {
                 w1.r l3 = androidx.compose.ui.layout.z.l(oVar, (j71.f) obj16);
                                                       ^
   symbol:   method l(o,f)
-  location: class z
+  location: interface z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:402: error: cannot find symbol
                 sVar13.q(false);
                       ^
@@ -287102,7 +286871,7 @@ public final class b extends q0 {
                     f2 f7 = androidx.compose.foundation.layout.b.f(ih.a.k, 0.0f, 0.0f, 0.0f, 14);
                                                                 ^
   symbol:   method f(float,float,float,float,int)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:448: error: incompatible types: f2 cannot be converted to d2
                     com.github.rudroid.uitoolkit.text.k.c(null, b2, f7, new d2.t(j), null, null, upperCase, null, ih.d.b(sVar17).t, 0, 0, ih.d.f(sVar17).h, false, sVar17, 0, 0, 14001);
                                                                     ^
@@ -287145,7 +286914,7 @@ public final class b extends q0 {
                     f2 f8 = androidx.compose.foundation.layout.b.f(ih.a.k, 0.0f, 0.0f, 0.0f, 14);
                                                                 ^
   symbol:   method f(float,float,float,float,int)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:474: error: incompatible types: f2 cannot be converted to d2
                     com.github.rudroid.uitoolkit.text.k.c(null, b3, f8, new d2.t(j2), null, null, upperCase2, null, ih.d.b(sVar18).t, 0, 0, ih.d.f(sVar18).h, false, sVar18, 0, 0, 14001);
                                                                     ^
@@ -287683,17 +287452,9 @@ public final class b extends q0 {
                             ^
   symbol:   class Object
   location: class a
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/a.java:721: error: constructor z in class z<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/a.java:721: error: z is abstract; cannot be instantiated
                             Object zVar = new z(a2);
                                           ^
-  required: no arguments
-  found:    y
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class z
-    T2 extends Object declared in class z
-    T3 extends Object declared in class z
-    T4 extends Object declared in class z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/a.java:725: error: incompatible types: z cannot be converted to h1
                             h1Var2 = (z) obj;
                                      ^
@@ -287867,17 +287628,9 @@ public final class b extends q0 {
                             ^
   symbol:   class Object
   location: class a
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/a.java:1019: error: constructor z in class z<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/a.java:1019: error: z is abstract; cannot be instantiated
                             Object zVar = new z(a2);
                                           ^
-  required: no arguments
-  found:    y
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class z
-    T2 extends Object declared in class z
-    T3 extends Object declared in class z
-    T4 extends Object declared in class z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/a.java:1023: error: incompatible types: z cannot be converted to h1
                             h1Var2 = (z) obj;
                                      ^
@@ -288429,17 +288182,9 @@ public final class b extends com.google.common.util.concurrent.a {
          ^
   symbol:   method w(String,String)
   location: variable s of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q81/u.java:290: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q81/u.java:290: error: b is abstract; cannot be instantiated
         androidx.lifecycle.b bVar2 = new androidx.lifecycle.b(s);
                                      ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/e.java:98: error: cannot find symbol
                     name = cause2 != null ? cause2.getClass().getName() : "unknown";
                                                   ^
@@ -289035,18 +288780,10 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
                     l1Var.t = ka.b.b(list).d();
                                   ^
   symbol:   method b(List)
-  location: class b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:511: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+  location: interface b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:511: error: b is abstract; cannot be instantiated
                     androidx.lifecycle.b bVar2 = new androidx.lifecycle.b(l1Var);
                                                  ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:512: error: cannot find symbol
                     c = ((g0) ((p) this.s).getValue()).c(bVar2, new ma.d(b, a));
                                                       ^
@@ -289292,7 +289029,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
                     x1 x1Var = n0.z.w;
                                    ^
   symbol:   variable w
-  location: class z
+  location: interface z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:609: error: constructor a in class a<T1,T2,T3,T4> cannot be applied to given types;
                     arrayList.add(a1Var.a(intValue, j, false, new a0.a((ArrayList) null, uVar, list, i, pVar)));
                                                               ^
@@ -291960,17 +291697,9 @@ public final class p0 extends q0 {
                  ^
   symbol:   variable d
   location: variable t of type b2
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1234: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1234: error: b is abstract; cannot be instantiated
                 t.d = new com.github.rudroid.fileschanged.ui.b(cVar, rVar3, zVar, d2Var2, kVar3, iVar3, h1Var2, z2, jVar2, cVar2, i, i2);
                       ^
-  required: no arguments
-  found:    n0.c,r,z,d2,k,i,h1,boolean,j,j71.c,int,int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1241: error: cannot find symbol
         if (!sVar.h(cVar2)) {
                  ^
@@ -292083,7 +291812,7 @@ public final class p0 extends q0 {
                     s3.k J = l0.J(androidx.compose.ui.layout.z.g(d, true));
                                                               ^
   symbol:   method g(d1,boolean)
-  location: class z
+  location: interface z
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1315: error: cannot find symbol
                     if (J.a < J.c && J.b < J.d) {
                          ^
@@ -292376,17 +292105,9 @@ public final class p0 extends q0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1611: error: package a3 does not exist
             a3.a aVar2 = (a3.a) qVar;
                             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1612: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1612: error: b is abstract; cannot be instantiated
             if (aVar2 != null && (m0 = aVar2.m0((u = v2.l.u(jVar)), new a2.b(1, aVar, u), cVar)) == b71.a.r) {
                                                                     ^
-  required: no arguments
-  found:    int,a,d1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/aa1/b.java:1612: error: cannot find symbol
             if (aVar2 != null && (m0 = aVar2.m0((u = v2.l.u(jVar)), new a2.b(1, aVar, u), cVar)) == b71.a.r) {
                                                          ^
@@ -295925,17 +295646,9 @@ public final class m1 extends d5 {
                                    ^
   symbol:   class Object
   location: class k
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/k.java:30: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/k.java:30: error: m is abstract; cannot be instantiated
         b1.m mVar = new b1.m(this);
                     ^
-  required: no arguments
-  found:    k
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b21/k.java:31: error: cannot find symbol
         mVar.a(this.a, "key");
             ^
@@ -301016,7 +300729,7 @@ public final class m1 extends d5 {
             case androidx.compose.foundation.layout.b.f1079h /* 15 */:
                                                      ^
   symbol:   variable f1079h
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/d8/m.java:73: error: cannot find symbol
                 return TransportRegistrar.c(bVar);
                                          ^
@@ -302187,17 +301900,9 @@ public final class r0 extends q0 {
             ^
   symbol:   variable c
   location: variable hVar of type h
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/firebase/messaging/FirebaseMessaging.java:69: error: constructor b in class androidx.lifecycle.b<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/firebase/messaging/FirebaseMessaging.java:69: error: b is abstract; cannot be instantiated
         final b bVar4 = new b(gVar, hVar, bVar, bVar2, dVar);
                         ^
-  required: no arguments
-  found:    g,h,p51.b,p51.b,d
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class androidx.lifecycle.b
-    T2 extends Object declared in class androidx.lifecycle.b
-    T3 extends Object declared in class androidx.lifecycle.b
-    T4 extends Object declared in class androidx.lifecycle.b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/firebase/messaging/FirebaseMessaging.java:78: error: cannot find symbol
         t1Var.d = this;
              ^
@@ -302487,17 +302192,9 @@ public final class r0 extends q0 {
                                                ^
   symbol:   variable b
   location: variable f of type AtomicBoolean
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/g.java:255: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/g.java:255: error: m is abstract; cannot be instantiated
         m mVar = new m(this);
                  ^
-  required: no arguments
-  found:    g
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/g.java:256: error: cannot find symbol
         mVar.a(this.b, "name");
             ^
@@ -302700,17 +302397,9 @@ public final class r0 extends q0 {
                                  ^
   symbol:   variable a
   location: variable x of type n
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/j.java:172: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/j.java:172: error: m is abstract; cannot be instantiated
                         m71.a.L(x.a, false, true, new d9.m(str3, 0));
                                                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/j.java:172: error: package m71 does not exist
                         m71.a.L(x.a, false, true, new d9.m(str3, 0));
                            ^
@@ -303096,17 +302785,9 @@ public final class r0 extends q0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/x/e.java:69: error: incompatible types: Object cannot be converted to Entry
         for (Map.Entry entry : map.entrySet()) {
                                            ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/i.java:32: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/i.java:32: error: m is abstract; cannot be instantiated
         m mVar = new m(context);
                  ^
-  required: no arguments
-  found:    Context
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/i.java:33: error: cannot find symbol
         String z = mVar.z("google_app_id");
                        ^
@@ -303147,17 +302828,9 @@ public final class r0 extends q0 {
                                    ^
   symbol:   class Object
   location: class i
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/i.java:53: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/i.java:53: error: m is abstract; cannot be instantiated
         m mVar = new m(this);
                  ^
-  required: no arguments
-  found:    i
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k41/i.java:54: error: cannot find symbol
         mVar.a(this.b, "applicationId");
             ^
@@ -303388,17 +303061,9 @@ public final class r0 extends q0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/y1.java:61: error: incompatible types: hc0.aa.q0 cannot be converted to aa.q0
         aa.q0 q0Var = lk.J;
                         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/y1.java:67: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/y1.java:67: error: m is abstract; cannot be instantiated
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
                ^
-  required: no arguments
-  found:    String,q0,String,r,r,List
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/z70/y1.java:80: error: cannot find symbol
         return aa.c.c(z1.a, false);
                    ^
@@ -305410,7 +305075,7 @@ public final class d implements Collection {
             i += ((m0.m) r0.get(i2)).p;
                                     ^
   symbol:   variable p
-  location: class m
+  location: interface m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k21/f.java:422: error: cannot find symbol
         return (i / r0.size()) + lVar.q;
                                      ^
@@ -308607,7 +308272,7 @@ public final class o0 extends c21.e {
                 w8.c cVar = ((c9.b) this.t).r.f;
                                            ^
   symbol:   variable r
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/b.java:585: error: cannot find symbol
                 synchronized (cVar.k) {
                                   ^
@@ -308637,17 +308302,17 @@ public final class o0 extends c21.e {
                 synchronized (((c9.b) this.t).t) {
                                              ^
   symbol:   variable t
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/b.java:596: error: cannot find symbol
                     ((c9.b) this.t).w.put(aa1.b.B(qVar), qVar);
                                    ^
   symbol:   variable w
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/b.java:598: error: cannot find symbol
                     ((c9.b) this.t).x.put(aa1.b.B(qVar), z8.h.a(bVar2.y, qVar, bVar2.s.b, bVar2));
                                    ^
   symbol:   variable x
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/b.java:598: error: cannot find symbol
                     ((c9.b) this.t).x.put(aa1.b.B(qVar), z8.h.a(bVar2.y, qVar, bVar2.s.b, bVar2));
                                                                      ^
@@ -309198,118 +308863,6 @@ public final class o0 extends c21.e {
     T2 extends Object declared in class a
     T3 extends Object declared in class a
     T4 extends Object declared in class a
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:8: error: z is not abstract and does not override abstract method clone() in e
-public final class z implements e {
-             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:31: error: cannot find symbol
-        Object[] objArr = this.t;
-        ^
-  symbol:   class Object
-  location: class z
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:34: error: cannot find symbol
-            throw new IllegalArgumentException(a0.s0.l(x.i.o("Argument count (", length, ") doesn't match expected count ("), x0VarArr.length, ")"));
-                                                 ^
-  symbol:   variable s0
-  location: class a0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:34: error: cannot find symbol
-            throw new IllegalArgumentException(a0.s0.l(x.i.o("Argument count (", length, ") doesn't match expected count ("), x0VarArr.length, ")"));
-                                                        ^
-  symbol:   variable i
-  location: variable x of type m
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:47: error: cannot find symbol
-            c = eVar.c();
-                    ^
-  symbol:   method c()
-  location: variable eVar of type e
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:51: error: cannot find symbol
-            oVar.getClass();
-                ^
-  symbol:   method getClass()
-  location: variable oVar of type o
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:54: error: cannot find symbol
-            c = f != null ? f.c() : null;
-                             ^
-  symbol:   method c()
-  location: variable f of type e
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:73: error: cannot find symbol
-                    q81.y.Companion.getClass();
-                                   ^
-  symbol:   method getClass()
-  location: variable Companion of type x
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:86: error: cannot find symbol
-                dVar.a("Content-Type", qVar.a);
-                    ^
-  symbol:   method a(String,String)
-  location: variable dVar of type d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:90: error: cannot find symbol
-        l1Var.getClass();
-             ^
-  symbol:   method getClass()
-  location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:91: error: cannot find symbol
-        l1Var.r = c;
-             ^
-  symbol:   variable r
-  location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:92: error: cannot find symbol
-        l1Var.t = dVar.e().d();
-             ^
-  symbol:   variable t
-  location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:92: error: cannot find symbol
-        l1Var.t = dVar.e().d();
-                      ^
-  symbol:   method e()
-  location: variable dVar of type d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:93: error: cannot find symbol
-        l1Var.z(n0Var.a, yVar);
-             ^
-  symbol:   method z(String,y)
-  location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:94: error: cannot find symbol
-        l1Var.G(t.class, new t(p0Var.a, this.s, p0Var.b, arrayList));
-             ^
-  symbol:   method G(Class<t>,t)
-  location: variable l1Var of type l1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:95: error: constructor b in class b<T1,T2,T3,T4> cannot be applied to given types;
-        return ((q81.u) this.u).b(new androidx.lifecycle.b(l1Var));
-                                  ^
-  required: no arguments
-  found:    l1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b
-    T2 extends Object declared in class b
-    T3 extends Object declared in class b
-    T4 extends Object declared in class b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:117: error: incompatible types: INT#1 cannot be converted to Throwable
-        } catch (IOException | Error | RuntimeException e) {
-                 ^
-  where INT#1 is an intersection type:
-    INT#1 extends Object,Throwable
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:118: error: incompatible types: INT#1 cannot be converted to Throwable
-            x0.r(e);
-                 ^
-  where INT#1 is an intersection type:
-    INT#1 extends Object,Throwable
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:119: error: incompatible types: INT#1 cannot be converted to Throwable
-            this.y = e;
-                     ^
-  where INT#1 is an intersection type:
-    INT#1 extends Object,Throwable
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:120: error: incompatible types: INT#1 cannot be converted to Throwable
-            throw e;
-            ^
-  where INT#1 is an intersection type:
-    INT#1 extends Object,Throwable
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:155: error: cannot find symbol
-            Object d = this.v.d(xVar);
-            ^
-  symbol:   class Object
-  location: class z
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fa1/z.java:181: error: method does not override or implement a method from a supertype
-    @Override // fa1.e
-    ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/h0/y0.java:32: error: cannot find symbol
             case k5.f.J:
                      ^
@@ -309440,17 +308993,9 @@ public final class z implements e {
                     ^
   symbol:   method c0(int)
   location: variable sVar of type s
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:84: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:84: error: m is abstract; cannot be instantiated
                 d = r1.i.d(-940010913, new bd.m(str, 11), sVar);
                                        ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:85: error: cannot find symbol
                 sVar.q(false);
                     ^
@@ -309637,17 +309182,9 @@ public final class z implements e {
                             ^
   symbol:   method N()
   location: variable sVar of type s
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:140: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:140: error: m is abstract; cannot be instantiated
                 N2 = new d9.m(p0, 20);
                      ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:143: error: cannot find symbol
             w1.r x = androidx.compose.foundation.layout.b.x(p2.e(d3.q.b(m, z, (j71.c) N2), 1.0f), ih.a.n);
                                                                      ^
@@ -309668,7 +309205,7 @@ public final class z implements e {
             com.github.rudroid.uitoolkit.text.k.c(x, com.github.rudroid.uitoolkit.text.m.b(2131231463, null, null, 14), androidx.compose.foundation.layout.b.f(0.0f, 0.0f, ih.a.m, 0.0f, 11), new d2.t(ih.d.b(sVar).z), null, null, str2, null, 0L, 0, 0, q0Var, false, sVar2, 0, 0, 14256);
                                                                                                                                                             ^
   symbol:   method f(float,float,float,float,int)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:156: error: cannot find symbol
         sVar.q(z);
             ^
@@ -310206,17 +309743,9 @@ public final class z implements e {
             ^
   symbol:   class Object
   location: class g
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:398: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:398: error: m is abstract; cannot be instantiated
                 zc.m mVar = new zc.m(g0Var, sVar, 1);
                             ^
-  required: no arguments
-  found:    g0,s,int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:399: error: cannot find symbol
                 sVar2.n0(mVar);
                      ^
@@ -310252,17 +309781,9 @@ public final class z implements e {
             ^
   symbol:   class Object
   location: class g
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:408: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:408: error: m is abstract; cannot be instantiated
                 zc.m mVar2 = new zc.m(g0Var, sVar, 2);
                              ^
-  required: no arguments
-  found:    g0,s,int
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class m
-    T2 extends Object declared in class m
-    T3 extends Object declared in class m
-    T4 extends Object declared in class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:409: error: cannot find symbol
                 sVar2.n0(mVar2);
                      ^
@@ -310323,7 +309844,7 @@ public final class z implements e {
                     w1.r w = androidx.compose.foundation.layout.b.w(oVar, d2Var);
                                                                  ^
   symbol:   method w(o,d2)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:464: error: cannot find symbol
                     boolean h = sVar.h(codeOptionsActivity);
                                     ^
@@ -311758,7 +311279,7 @@ public final class z implements e {
                     ub.b(i4.q0(2131952487, new Object[]{fg.h.a(e1Var, (Context) sVar14.j(w2.j0.b)), str5}, sVar14), androidx.compose.foundation.layout.b.z(oVar, ih.a.n, 0.0f, 2), 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, q0.a(ih.d.f(sVar14).d, ih.d.b(sVar14).s, 0L, (k3.s) null, (k3.o) null, (k3.i) null, 0L, 0, 0L, (g3.z) null, (r3.i) null, 16777214), sVar14, 0, 0, 131068);
                                                                                                                                                         ^
   symbol:   method z(o,float,float,int)
-  location: class b
+  location: interface b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:1039: error: cannot find symbol
                     ub.b(i4.q0(2131952487, new Object[]{fg.h.a(e1Var, (Context) sVar14.j(w2.j0.b)), str5}, sVar14), androidx.compose.foundation.layout.b.z(oVar, ih.a.n, 0.0f, 2), 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, q0.a(ih.d.f(sVar14).d, ih.d.b(sVar14).s, 0L, (k3.s) null, (k3.o) null, (k3.i) null, 0L, 0, 0L, (g3.z) null, (r3.i) null, 16777214), sVar14, 0, 0, 131068);
                                                                                                                                                                                                                                                              ^
@@ -313528,5 +313049,5 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-64520 errors
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_192211.args
+64497 errors
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_194937.args
