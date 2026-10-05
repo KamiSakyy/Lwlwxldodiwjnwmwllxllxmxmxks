@@ -19,7 +19,9 @@ SIGNING_PROPERTIES="$ROOT/handoff/signing.properties"
 SIGNING_PASSWORD="$(sed -n 's/^storePassword=//p' "$SIGNING_PROPERTIES")"
 SIGNING_ALIAS="$(sed -n 's/^keyAlias=//p' "$SIGNING_PROPERTIES")"
 STAGE_FILE="$TEMP_DIR/smoke-stage.txt"
+DIAGNOSTICS_FILE="$TEMP_DIR/runtime-smoke-diagnostics.txt"
 mkdir -p "$CLASSES" "$TEMP_DIR"
+: > "$DIAGNOSTICS_FILE"
 stage() {
   printf '%s\n' "$1" > "$STAGE_FILE"
   echo "Smoke stage: $1"
@@ -28,9 +30,13 @@ report_failure() {
   local status=$?
   if [ "$status" -ne 0 ]; then
     local failed_stage="$(cat "$STAGE_FILE" 2>/dev/null || echo 'before first smoke stage')"
-    echo "::error title=Runtime APK smoke failed::${failed_stage} (exit ${status})"
+    local diagnostic_details=""
+    if [ -s "$DIAGNOSTICS_FILE" ]; then
+      diagnostic_details="; $(tr '\n' ';' < "$DIAGNOSTICS_FILE")"
+    fi
+    echo "::error title=Runtime APK smoke failed::${failed_stage} (exit ${status})${diagnostic_details}"
     if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
-      echo "Runtime APK smoke stopped at: ${failed_stage} (exit ${status})" >> "$GITHUB_STEP_SUMMARY"
+      echo "Runtime APK smoke stopped at: ${failed_stage} (exit ${status})${diagnostic_details}" >> "$GITHUB_STEP_SUMMARY"
     fi
   fi
   return "$status"
@@ -48,7 +54,7 @@ javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
   "$ROOT/scripts/RuntimeApkSmoke.java"
 stage "encrypt/decrypt round-trip, integrity and APK rewrite"
 java -cp "$CLASSES" ru.webapk.studio.RuntimeApkSmoke "$TEMPLATE_APK" "$UNSIGNED" "$SIGNED" "$SIGNING_KEY" "$SIGNING_PASSWORD" "$SIGNING_ALIAS"
-stage "verify sole native library and ARM-only ABI filters"
+stage "read native-library entries from built APKs"
 TEMPLATE_ENTRIES="$(unzip -Z1 "$TEMPLATE_APK")"
 SIGNED_ENTRIES="$(unzip -Z1 "$SIGNED")"
 APP_ENTRIES="$(unzip -Z1 "$APP_APK")"
@@ -57,30 +63,53 @@ check_native_libraries() {
   local entries="$2"
   local libraries
   local count
+  local compact
+  local unexpected
   libraries="$(grep -E '^lib/[^/]+/[^/]+\.so$' <<< "$entries" || true)"
   count="$(printf '%s\n' "$libraries" | sed '/^$/d' | wc -l | tr -d '[:space:]')"
+  compact="$(printf '%s' "$libraries" | tr '\n' ',')"
+  printf '%s native libraries: [%s]\n' "$label" "$compact" >> "$DIAGNOSTICS_FILE"
   if [ "$count" -ne 2 ]; then
-    echo "$label must contain exactly one native library for each ARM ABI; found $count" >&2
-    printf '%s\n' "$libraries" >&2
+    printf 'ERROR %s expected exactly 2 ARM native libraries, found %s: [%s]\n' "$label" "$count" "$compact" >> "$DIAGNOSTICS_FILE"
+    echo "$label must contain exactly one native library for each ARM ABI; found $count: [$compact]" >&2
     exit 1
   fi
   if grep -Eq '^lib/(x86|x86_64)/' <<< "$entries"; then
-    echo "$label unexpectedly contains an x86 ABI" >&2
+    local x86_libraries
+    x86_libraries="$(grep -E '^lib/(x86|x86_64)/' <<< "$entries" | tr '\n' ',')"
+    printf 'ERROR %s unexpectedly contains x86 entries: %s\n' "$label" "$x86_libraries" >> "$DIAGNOSTICS_FILE"
+    echo "$label unexpectedly contains an x86 ABI: $x86_libraries" >&2
     exit 1
   fi
-  if grep -Ev '^lib/(armeabi-v7a|arm64-v8a)/libc\+\+_shared\.so$' <<< "$libraries"; then
-    echo "$label contains an unexpected native library or ABI" >&2
+  unexpected="$(grep -Ev '^lib/(armeabi-v7a|arm64-v8a)/libc\+\+_shared\.so$' <<< "$libraries" || true)"
+  if [ -n "$unexpected" ]; then
+    unexpected="$(printf '%s' "$unexpected" | tr '\n' ',')"
+    printf 'ERROR %s contains unexpected native libraries: %s\n' "$label" "$unexpected" >> "$DIAGNOSTICS_FILE"
+    echo "$label contains an unexpected native library or ABI: $unexpected" >&2
     exit 1
   fi
-  grep -Fx 'lib/armeabi-v7a/libc++_shared.so' <<< "$libraries"
-  grep -Fx 'lib/arm64-v8a/libc++_shared.so' <<< "$libraries"
+  for expected in 'lib/armeabi-v7a/libc++_shared.so' 'lib/arm64-v8a/libc++_shared.so'; do
+    if ! grep -Fxq "$expected" <<< "$libraries"; then
+      printf 'ERROR %s is missing required entry %s; found [%s]\n' "$label" "$expected" "$compact" >> "$DIAGNOSTICS_FILE"
+      echo "$label is missing required native library $expected" >&2
+      exit 1
+    fi
+  done
 }
+stage "verify native libraries in host template APK"
 check_native_libraries "Host template APK" "$TEMPLATE_ENTRIES"
+stage "verify native libraries in generated site APK"
 check_native_libraries "Generated site APK" "$SIGNED_ENTRIES"
+stage "verify native libraries in converter APK"
 check_native_libraries "Converter APK" "$APP_ENTRIES"
+stage "compare libc++_shared.so bytes between template and generated site APK"
 for ABI in armeabi-v7a arm64-v8a; do
-  cmp <(unzip -p "$TEMPLATE_APK" "lib/$ABI/libc++_shared.so") \
-      <(unzip -p "$SIGNED" "lib/$ABI/libc++_shared.so")
+  if ! cmp -s <(unzip -p "$TEMPLATE_APK" "lib/$ABI/libc++_shared.so") \
+             <(unzip -p "$SIGNED" "lib/$ABI/libc++_shared.so"); then
+    printf 'ERROR libc++_shared.so mismatch for ABI %s between template and generated site APK\n' "$ABI" >> "$DIAGNOSTICS_FILE"
+    echo "Generated site APK changed libc++_shared.so for $ABI" >&2
+    exit 1
+  fi
 done
 grep -Fx "assets/a.c" <<< "$SIGNED_ENTRIES"
 if grep -Eq '^assets/site/' <<< "$SIGNED_ENTRIES"; then
