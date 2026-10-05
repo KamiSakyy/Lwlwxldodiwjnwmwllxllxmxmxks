@@ -12,6 +12,7 @@ dist/
 *.keystore
 *.jks
 *.p12
+!handoff/WebAPK-Studio-signing.p12
 
 # Local project payloads and device-specific imports
 *.zip

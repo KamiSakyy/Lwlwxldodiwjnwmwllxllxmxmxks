@@ -36,6 +36,9 @@ import java.util.zip.ZipOutputStream;
 final class ApkBuilder {
     private static final String TEMPLATE_PACKAGE = "com.webapk.hosttemplate";
     private static final String TEMPLATE_ASSET = "host-template.apk";
+    private static final String SITE_SIGNING_ASSET = "site-signing-key.p12";
+    private static final String SITE_SIGNING_ALIAS = "webapkstudio";
+    private static final String SITE_SIGNING_PASSWORD = "webapk-studio-public-handoff";
     private static final Pattern ICON_PATH = Pattern.compile(
             "^res/mipmap-(mdpi|hdpi|xhdpi|xxhdpi|xxxhdpi)(?:-[^/]*)?/ic_launcher\\.png$");
     private static final int[] ICON_SIZES = {48, 72, 96, 144, 192};
@@ -181,8 +184,10 @@ final class ApkBuilder {
             throw error;
         }
 
-        try {
-            JarV1Signer.sign(unsigned, signed, context.getFilesDir());
+        try (InputStream signingKey = new BufferedInputStream(
+                context.getAssets().open(SITE_SIGNING_ASSET))) {
+            JarV1Signer.signWithKeyStore(unsigned, signed, signingKey,
+                    SITE_SIGNING_PASSWORD.toCharArray(), SITE_SIGNING_ALIAS);
             if (!signed.isFile() || signed.length() == 0) {
                 throw new IOException("Не удалось подписать APK.");
             }

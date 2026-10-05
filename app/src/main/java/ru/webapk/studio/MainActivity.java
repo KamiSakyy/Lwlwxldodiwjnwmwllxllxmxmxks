@@ -48,8 +48,6 @@ public final class MainActivity extends Activity {
     private static final int PICK_ZIP = 11;
     private static final int PICK_ICON = 12;
     private static final int SAVE_APK = 13;
-    private static final int SAVE_SIGNING_KEY = 14;
-    private static final int OPEN_SIGNING_KEY = 15;
     private static final int MAX_IMPORT_FILES = 10000;
     private static final ExecutorService IO = Executors.newSingleThreadExecutor();
     private static final int BG = Color.rgb(9, 10, 11);
@@ -62,7 +60,6 @@ public final class MainActivity extends Activity {
     private EditText appNameField;
     private EditText packageField;
     private EditText versionCodeField;
-    private EditText signingPasswordField;
     private Switch autoRotateSwitch;
     private TextView siteSummary;
     private TextView iconSummary;
@@ -73,7 +70,6 @@ public final class MainActivity extends Activity {
     private volatile File siteRoot;
     private volatile File iconFile;
     private volatile File generatedApk;
-    private char[] pendingSigningPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -208,27 +204,6 @@ public final class MainActivity extends Activity {
         iconDetails.addView(iconButton, iconButtonParams);
         iconCard.addView(iconRow);
         iconButton.setOnClickListener(v -> openIconPicker());
-
-        LinearLayout signingCard = card(page);
-        addCardHeading(signingCard, "ПОДПИСЬ", null);
-        signingPasswordField = editField("", 128, false);
-        signingPasswordField.setHint("Пароль резервной копии");
-        signingPasswordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        LinearLayout.LayoutParams passwordParams = fieldMargins();
-        passwordParams.bottomMargin = dp(9);
-        signingCard.addView(signingPasswordField, passwordParams);
-        LinearLayout signingActions = new LinearLayout(this);
-        signingActions.setOrientation(LinearLayout.HORIZONTAL);
-        Button exportKeyButton = button("Экспорт ключа", true);
-        Button importKeyButton = button("Импорт ключа", true);
-        LinearLayout.LayoutParams keyAction = new LinearLayout.LayoutParams(0, dp(44), 1f);
-        signingActions.addView(exportKeyButton, keyAction);
-        LinearLayout.LayoutParams importAction = new LinearLayout.LayoutParams(0, dp(44), 1f);
-        importAction.leftMargin = dp(9);
-        signingActions.addView(importKeyButton, importAction);
-        signingCard.addView(signingActions);
-        exportKeyButton.setOnClickListener(v -> chooseSigningKeyExport());
-        importKeyButton.setOnClickListener(v -> chooseSigningKeyImport());
 
         buildButton = button("СОБРАТЬ APK", false);
         buildButton.setTextSize(15);
@@ -397,26 +372,6 @@ public final class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == SAVE_SIGNING_KEY || requestCode == OPEN_SIGNING_KEY) {
-            char[] password = pendingSigningPassword;
-            pendingSigningPassword = null;
-            if (resultCode != RESULT_OK || data == null) {
-                if (password != null) java.util.Arrays.fill(password, Character.MIN_VALUE);
-                return;
-            }
-            Uri keyUri = data.getData();
-            if (keyUri == null && data.getClipData() != null && data.getClipData().getItemCount() > 0) {
-                keyUri = data.getClipData().getItemAt(0).getUri();
-            }
-            if (keyUri == null || password == null) {
-                if (password != null) java.util.Arrays.fill(password, Character.MIN_VALUE);
-                showFailure("Не удалось получить файл ключа.");
-                return;
-            }
-            if (requestCode == SAVE_SIGNING_KEY) exportSigningKey(keyUri, password);
-            else importSigningKey(keyUri, password);
-            return;
-        }
         if (resultCode != RESULT_OK || data == null) return;
         Uri uri = data.getData();
         if (uri == null && data.getClipData() != null && data.getClipData().getItemCount() > 0) {
@@ -739,99 +694,6 @@ public final class MainActivity extends Activity {
                 showFailure("Не удалось сохранить APK: " + error.getMessage());
             }
         });
-    }
-
-    private char[] readSigningBackupPassword() {
-        char[] password = signingPasswordField.getText().toString().toCharArray();
-        signingPasswordField.setText("");
-        if (password.length < 8 || password.length > 128) {
-            java.util.Arrays.fill(password, Character.MIN_VALUE);
-            signingPasswordField.setError("Введите пароль длиной 8–128 символов");
-            signingPasswordField.requestFocus();
-            return null;
-        }
-        hideKeyboard();
-        return password;
-    }
-
-    private void chooseSigningKeyExport() {
-        char[] password = readSigningBackupPassword();
-        if (password == null) return;
-        pendingSigningPassword = password;
-        Intent intent = new Intent(Intent.ACTION_CREATE_DOCUMENT);
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
-        intent.setType("application/octet-stream");
-        intent.putExtra(Intent.EXTRA_TITLE, "WebAPK-signing-key.wapkkey");
-        try {
-            startActivityForResult(intent, SAVE_SIGNING_KEY);
-        } catch (Exception error) {
-            clearPendingSigningPassword();
-            showFailure("Не удалось открыть выбор места сохранения ключа.");
-        }
-    }
-
-    private void chooseSigningKeyImport() {
-        char[] password = readSigningBackupPassword();
-        if (password == null) return;
-        pendingSigningPassword = password;
-        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
-        intent.setType("*/*");
-        intent.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"application/octet-stream", "application/x-webapk-key"});
-        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        try {
-            startActivityForResult(intent, OPEN_SIGNING_KEY);
-        } catch (Exception error) {
-            clearPendingSigningPassword();
-            showFailure("Не удалось открыть выбор файла ключа.");
-        }
-    }
-
-    private void exportSigningKey(Uri destination, char[] password) {
-        setStatus("Экспортирую ключ…", true);
-        IO.execute(() -> {
-            try {
-                OutputStream opened = getContentResolver().openOutputStream(destination, "wt");
-                if (opened == null) throw new IOException("Не удалось открыть файл для сохранения.");
-                try (OutputStream output = new BufferedOutputStream(opened)) {
-                    JarV1Signer.exportSigningIdentity(getFilesDir(), output, password);
-                }
-                runOnUiThread(() -> setStatus("Ключ подписи сохранён", false));
-            } catch (Exception error) {
-                showFailure("Не удалось экспортировать ключ: " + error.getMessage());
-            } finally {
-                java.util.Arrays.fill(password, Character.MIN_VALUE);
-            }
-        });
-    }
-
-    private void importSigningKey(Uri source, char[] password) {
-        setStatus("Восстанавливаю ключ…", true);
-        IO.execute(() -> {
-            try {
-                InputStream opened = getContentResolver().openInputStream(source);
-                if (opened == null) throw new IOException("Не удалось открыть файл ключа.");
-                try (InputStream input = new BufferedInputStream(opened)) {
-                    JarV1Signer.importSigningIdentity(getFilesDir(), input, password);
-                }
-                generatedApk = null;
-                runOnUiThread(() -> {
-                    saveButton.setVisibility(View.GONE);
-                    setStatus("Ключ восстановлен", false);
-                });
-            } catch (Exception error) {
-                showFailure("Не удалось восстановить ключ: " + error.getMessage());
-            } finally {
-                java.util.Arrays.fill(password, Character.MIN_VALUE);
-            }
-        });
-    }
-
-    private void clearPendingSigningPassword() {
-        if (pendingSigningPassword != null) {
-            java.util.Arrays.fill(pendingSigningPassword, Character.MIN_VALUE);
-            pendingSigningPassword = null;
-        }
     }
 
     private void refreshImportedFiles() {

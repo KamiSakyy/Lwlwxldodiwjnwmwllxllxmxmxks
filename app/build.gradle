@@ -2,12 +2,19 @@ plugins {
     id 'com.android.application'
 }
 
-def signingStorePath = System.getenv('WEBAPK_SIGNING_KEYSTORE_FILE')
-def signingStorePassword = System.getenv('WEBAPK_SIGNING_STORE_PASSWORD')
-def signingKeyAlias = System.getenv('WEBAPK_SIGNING_KEY_ALIAS')
-def signingKeyPassword = System.getenv('WEBAPK_SIGNING_KEY_PASSWORD')
-def hasPermanentReleaseKey = signingStorePath != null && signingStorePassword != null
-        && signingKeyAlias != null && signingKeyPassword != null
+def signingPropertiesFile = rootProject.file('handoff/signing.properties')
+def signingProperties = new Properties()
+if (!signingPropertiesFile.isFile()) {
+    throw new GradleException('Missing handoff/signing.properties and permanent APK signing key')
+}
+signingPropertiesFile.withInputStream { signingProperties.load(it) }
+def signingStoreFile = rootProject.file(signingProperties.getProperty('storeFile'))
+def signingStorePassword = signingProperties.getProperty('storePassword')
+def signingKeyAlias = signingProperties.getProperty('keyAlias')
+def signingKeyPassword = signingProperties.getProperty('keyPassword')
+if (!signingStoreFile.isFile() || !signingStorePassword || !signingKeyAlias || !signingKeyPassword) {
+    throw new GradleException('Invalid permanent APK signing key in handoff/')
+}
 def actionsRunNumber = System.getenv('GITHUB_RUN_NUMBER')
 def converterVersionCode = actionsRunNumber == null ? 1 : 1000 + actionsRunNumber.toInteger()
 def converterVersionName = actionsRunNumber == null ? '1.0' : "1.0.${actionsRunNumber}"
@@ -26,21 +33,18 @@ android {
 
     signingConfigs {
         permanentRelease {
-            if (hasPermanentReleaseKey) {
-                storeFile file(signingStorePath)
-                storePassword signingStorePassword
-                keyAlias signingKeyAlias
-                keyPassword signingKeyPassword
-                storeType 'PKCS12'
-            }
+            storeFile signingStoreFile
+            storePassword signingStorePassword
+            keyAlias signingKeyAlias
+            keyPassword signingKeyPassword
+            storeType signingProperties.getProperty('storeType', 'PKCS12')
         }
     }
 
     buildTypes {
         release {
-            // Locally falls back to the debug identity. GitHub uploads only when the private
-            // permanent keystore has been supplied through Actions secrets.
-            signingConfig hasPermanentReleaseKey ? signingConfigs.permanentRelease : signingConfigs.debug
+            // The same ordinary handoff key signs every converter build so updates install in place.
+            signingConfig signingConfigs.permanentRelease
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -63,9 +67,13 @@ def embeddedTemplateDir = layout.buildDirectory.dir('generated/template-assets')
 
 tasks.register('prepareEmbeddedTemplate', Copy) {
     dependsOn(':template:assembleRelease')
-    from(project(':template').layout.buildDirectory.file('outputs/apk/release/template-release-unsigned.apk'))
+    from(project(':template').layout.buildDirectory.file('outputs/apk/release/template-release-unsigned.apk')) {
+        rename { 'host-template.apk' }
+    }
+    from(signingStoreFile) {
+        rename { 'site-signing-key.p12' }
+    }
     into(embeddedTemplateDir)
-    rename { 'host-template.apk' }
 }
 
 tasks.named('preBuild').configure {

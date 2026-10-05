@@ -7,7 +7,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -24,10 +23,14 @@ public final class RuntimeApkSmoke {
     private RuntimeApkSmoke() { }
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 3) throw new IllegalArgumentException("template.apk unsigned.apk signed.apk");
+        if (args.length != 6) throw new IllegalArgumentException(
+                "template.apk unsigned.apk signed.apk signing-key.p12 password alias");
         File template = new File(args[0]);
         File unsigned = new File(args[1]);
         File signed = new File(args[2]);
+        File signingKeyStore = new File(args[3]);
+        char[] signingPassword = args[4].toCharArray();
+        String signingAlias = args[5];
         if (!template.isFile()) throw new IOException("Missing Android host template: " + template);
 
         try (InputStream file = new FileInputStream(template);
@@ -71,27 +74,17 @@ public final class RuntimeApkSmoke {
             put(output, "assets/site/large-offline-smoke-test.bin", multiMegabytePayload, true);
         }
 
-        File originalIdentity = new File(signed.getParentFile(), "smoke-signing");
-        File restoredIdentity = new File(signed.getParentFile(), "smoke-signing-restored");
-        File backup = new File(signed.getParentFile(), "smoke-signing.wapkkey");
-        File restoredSigned = new File(signed.getParentFile(), "runtime-smoke-restored.apk");
-        char[] password = "ci-test-backup-passphrase".toCharArray();
-        JarV1Signer.sign(unsigned, signed, originalIdentity);
-        try (FileOutputStream output = new FileOutputStream(backup)) {
-            JarV1Signer.exportSigningIdentity(originalIdentity, output, password);
+        File secondSigned = new File(signed.getParentFile(), "runtime-smoke-second.apk");
+        try (InputStream key = new FileInputStream(signingKeyStore)) {
+            JarV1Signer.signWithKeyStore(unsigned, signed, key, signingPassword, signingAlias);
         }
-        try (InputStream input = new FileInputStream(backup)) {
-            JarV1Signer.importSigningIdentity(restoredIdentity, input, password);
+        try (InputStream key = new FileInputStream(signingKeyStore)) {
+            JarV1Signer.signWithKeyStore(unsigned, secondSigned, key, signingPassword, signingAlias);
         }
-        JarV1Signer.sign(unsigned, restoredSigned, restoredIdentity);
-        if (!Arrays.equals(readFile(new File(originalIdentity, "webapk-signing-cert.der")),
-                readFile(new File(restoredIdentity, "webapk-signing-cert.der")))) {
-            throw new IOException("Restored signing identity does not match the original certificate");
-        }
-        Arrays.fill(password, Character.MIN_VALUE);
+        java.util.Arrays.fill(signingPassword, Character.MIN_VALUE);
         if (unsigned.exists() && !unsigned.delete()) throw new IOException("Cannot remove unsigned test APK");
         System.out.println("Runtime APK smoke test passed: " + signed.length()
-                + " bytes; permanent key backup restored and reused");
+                + " bytes; stable handoff key reused for successive APKs");
     }
 
     private static void put(ZipOutputStream zip, String name, byte[] contents, boolean stored) throws IOException {
@@ -119,12 +112,6 @@ public final class RuntimeApkSmoke {
             if (out.size() > 64 * 1024 * 1024) throw new IOException("Template entry unexpectedly large");
         }
         return out.toByteArray();
-    }
-
-    private static byte[] readFile(File file) throws IOException {
-        try (InputStream input = new FileInputStream(file)) {
-            return readAll(input);
-        }
     }
 
     private static void patchPackageName(byte[] table, String oldName, String newName) throws IOException {

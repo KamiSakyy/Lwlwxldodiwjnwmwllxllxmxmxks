@@ -14,7 +14,7 @@ TOP_LEVEL_FILES = {
     "build.gradle",
     "gradle.properties",
 }
-SOURCE_DIRS = {".github", "app", "template", "scripts"}
+SOURCE_DIRS = {".github", "app", "template", "scripts", "handoff"}
 EXCLUDED_PARTS = {".git", ".gradle", "build", "dist", "__pycache__", ".idea"}
 EXCLUDED_SUFFIXES = {".apk", ".aab", ".keystore", ".jks", ".p12", ".pyc"}
 
@@ -23,7 +23,9 @@ def included(path: Path) -> bool:
     rel = path.relative_to(ROOT)
     if any(part in EXCLUDED_PARTS for part in rel.parts):
         return False
-    if path.suffix.lower() in EXCLUDED_SUFFIXES or path.name.endswith(".tmp"):
+    if path.suffix.lower() in EXCLUDED_SUFFIXES and rel.as_posix() != "handoff/WebAPK-Studio-signing.p12":
+        return False
+    if path.name.endswith(".tmp"):
         return False
     if len(rel.parts) == 1:
         return rel.name in TOP_LEVEL_FILES
