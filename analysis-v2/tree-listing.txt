@@ -2,7 +2,7 @@
 
        397	FIXES-APPLIED.txt
       3680	README.md
-      1159	app/build.gradle
+      1205	app/build.gradle
       2702	app/github-ru.jks
        460	app/proguard-rules.pro
      49991	app/src/main/AndroidManifest.xml
