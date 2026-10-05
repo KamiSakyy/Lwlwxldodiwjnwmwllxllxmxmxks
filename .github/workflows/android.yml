@@ -1,4 +1,4 @@
-name: Android APK build
+name: Сборка Android APK
 
 on:
   push:
@@ -9,40 +9,44 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: webapk-apk-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   JAVA_VERSION: '17'
   GRADLE_VERSION: '8.13'
 
 jobs:
   build-apk:
-    name: Build signed Android APK
+    name: Сборка подписанного Android APK
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout session branch
+      - name: Получить исходный код сессионной ветки
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      - name: Настроить Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: ${{ env.JAVA_VERSION }}
 
-      - name: Set up Gradle
+      - name: Настроить Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: ${{ env.GRADLE_VERSION }}
 
-      - name: Set up Android SDK
+      - name: Настроить Android SDK
         uses: android-actions/setup-android@v4
         with:
           packages: ''
 
-      - name: Install Android SDK packages
+      - name: Установить пакеты Android SDK
         run: |
           yes | sdkmanager --licenses >/dev/null || true
           sdkmanager "platforms;android-36" "build-tools;36.0.0" "platform-tools" "ndk;27.2.12479018" "cmake;3.22.1"
 
-      - name: Assemble release APK with Android SDK and Gradle
+      - name: Собрать APK конвертера (release)
         shell: bash
         run: |
           set +e
@@ -55,18 +59,18 @@ jobs:
             exit "$build_status"
           fi
 
-      - name: Verify R8 full-mode mapping outputs
+      - name: Проверить результаты минификации R8
         shell: bash
         run: |
           set -euo pipefail
           test -s app/build/outputs/mapping/release/mapping.txt
           test -s template/build/outputs/mapping/release/mapping.txt
 
-      - name: Smoke-test encrypted site APK and ARM-only native packaging
+      - name: Проверить шифрование сайта и ARM APK
         shell: bash
         run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke" app/build/outputs/apk/release/app-release.apk
 
-      - name: Report smoke-test stage on failure
+      - name: Показать этап сбоя smoke-теста
         if: failure()
         shell: bash
         run: |
@@ -76,7 +80,7 @@ jobs:
             echo "No runtime smoke stage was reached; check the R8 mapping-output step." | tee -a "$GITHUB_STEP_SUMMARY"
           fi
 
-      - name: Verify stripped single-library JNI payload
+      - name: Проверить stripped JNI-библиотеку
         shell: bash
         run: |
           set -euo pipefail
@@ -96,7 +100,7 @@ jobs:
             exit 1
           fi
 
-      - name: Verify converter installation permission and FileProvider
+      - name: Проверить разрешение установки и FileProvider
         shell: bash
         run: |
           set -euo pipefail
@@ -107,7 +111,7 @@ jobs:
           grep -F "androidx.core.content.FileProvider" <<< "$APP_MANIFEST_TREE"
           grep -F "android.support.FILE_PROVIDER_PATHS" <<< "$APP_MANIFEST_TREE"
 
-      - name: Package source and verify APK
+      - name: Упаковать исходники и проверить APK
         shell: bash
         run: |
           set -euo pipefail
@@ -128,7 +132,7 @@ jobs:
           unzip -p dist/WebAPK-Studio.apk assets/site-signing-key.p12 | cmp - handoff/WebAPK-Studio-signing.p12
           unzip -t dist/WebAPK-Studio-source.zip >/dev/null
 
-      - name: Save the Actions build on the session branch
+      - name: Опубликовать сборку в сессионной ветке
         shell: bash
         run: |
           set -euo pipefail
@@ -140,7 +144,7 @@ jobs:
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
-      - name: Upload APK and source ZIP
+      - name: Загрузить APK и ZIP исходников
         uses: actions/upload-artifact@v4
         with:
           name: WebAPK-Studio-Android
