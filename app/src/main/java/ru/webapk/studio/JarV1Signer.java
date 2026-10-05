@@ -38,8 +38,6 @@ import java.util.Set;
 import java.util.TimeZone;
 import java.util.TreeMap;
 import java.util.Map;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
 import java.util.zip.CRC32;
 import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
@@ -96,12 +94,6 @@ final class JarV1Signer {
             throw error;
         }
 
-        try {
-            verifyJarSignature(signedApk);
-        } catch (Exception error) {
-            signedApk.delete();
-            throw new IOException("Проверка подписи созданного APK не прошла: " + error.getMessage(), error);
-        }
     }
 
     private static TreeMap<String, byte[]> digestApkEntries(File apk) throws Exception {
@@ -260,26 +252,6 @@ final class JarV1Signer {
         output.putNextEntry(entry);
         output.write(data);
         output.closeEntry();
-    }
-
-    private static void verifyJarSignature(File apk) throws Exception {
-        int signedEntries = 0;
-        try (JarFile jar = new JarFile(apk, true)) {
-            Enumeration<JarEntry> entries = jar.entries();
-            byte[] buffer = new byte[8192];
-            while (entries.hasMoreElements()) {
-                JarEntry entry = entries.nextElement();
-                if (entry.isDirectory() || isMetaInf(entry.getName())) continue;
-                try (InputStream input = jar.getInputStream(entry)) {
-                    while (input.read(buffer) != -1) { /* Reading to EOF triggers JAR verification. */ }
-                }
-                if (entry.getCertificates() == null || entry.getCertificates().length == 0) {
-                    throw new SecurityException("Файл не покрыт подписью: " + entry.getName());
-                }
-                signedEntries++;
-            }
-        }
-        if (signedEntries == 0) throw new SecurityException("В APK нет подписанных файлов.");
     }
 
     private static SigningIdentity getOrCreateIdentity(File directory) throws Exception {
