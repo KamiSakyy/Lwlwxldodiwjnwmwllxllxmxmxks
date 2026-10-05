@@ -1,0 +1,87 @@
+name: "Этап 2 — Извлечение образцов для диагноза нагрева"
+
+on:
+  push:
+    branches:
+      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+    paths:
+      - ".github/workflows/02-samples.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: "Checkout рабочей ветки"
+        uses: actions/checkout@v4
+        with:
+          ref: "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          persist-credentials: true
+
+      - name: "Распаковка"
+        run: |
+          set -e
+          sudo apt-get install -y -qq p7zip-full >/dev/null 2>&1 || true
+          mkdir -p extracted stage1 analysis/samples
+          7z x -y -ostage1 "GitHub-RU-Source legal.zip.zip" >/dev/null
+          find stage1 -type f -name "*.zip" -print0 | while IFS= read -r -d '' z; do
+            unzip -q -o "$z" -d extracted/ || true
+          done
+          if [ -z "$(find extracted -type f | head -1)" ]; then cp -a stage1/. extracted/; fi
+          PROJ=$(find extracted -type d -name "GitHub-RU-Source" | head -1)
+          echo "PROJ=$PROJ" >> "$GITHUB_ENV"
+          echo "Проект: $PROJ"
+
+      - name: "Сбор образцов"
+        run: |
+          set -e
+          P="$PROJ"
+          S=analysis/samples
+          cp -f "$P/app/build.gradle"                 "$S/app.build.gradle" 2>/dev/null || true
+          cp -f "$P/build.gradle"                     "$S/root.build.gradle" 2>/dev/null || true
+          cp -f "$P/settings.gradle"                  "$S/settings.gradle" 2>/dev/null || true
+          cp -f "$P/gradle.properties"                "$S/gradle.properties" 2>/dev/null || true
+          cp -f "$P/gradle/wrapper/gradle-wrapper.properties" "$S/gradle-wrapper.properties" 2>/dev/null || true
+          cp -f "$P/app/src/main/AndroidManifest.xml" "$S/AndroidManifest.xml" 2>/dev/null || true
+          cp -f "$P/README.md"                        "$S/README.md" 2>/dev/null || true
+          cp -f "$P/app/src/main/java/com/github/rudroid/settings/preferences/RadioPreferenceGroup.java" "$S/RadioPreferenceGroup.java" 2>/dev/null || true
+          cp -f "$P/app/src/main/java/com/github/rudroid/achievements/ui/w.java" "$S/achievements_w.java" 2>/dev/null || true
+          cp -f "$P/app/src/main/java/se0/e.java"     "$S/loop_se0_e.java" 2>/dev/null || true
+          cp -f "$P/app/src/main/java/mg0/u.java"     "$S/loop_mg0_u.java" 2>/dev/null || true
+          cp -f "$P/app/src/main/java/ui0/e.java"     "$S/loop_ui0_e.java" 2>/dev/null || true
+          cp -f "$P/app/src/main/java/b21/j.java"     "$S/loop_b21_j.java" 2>/dev/null || true
+          {
+            echo "=== gradle/wrapper ==="; ls -la "$P/gradle/wrapper" 2>/dev/null || echo "нет папки wrapper"
+            echo "=== корень проекта ==="; ls -la "$P" | head -30
+            echo "=== app/ ==="; ls -la "$P/app" | head -30
+            echo "=== кастомные пакеты com/github ==="
+            find "$P/app/src/main/java/com/github" -maxdepth 3 -type d 2>/dev/null | head -60
+            echo "=== кол-во файлов в кастомных пакетах ==="
+            for d in "$P"/app/src/main/java/com/github/*/; do
+              echo "$(find "$d" -name '*.java' | wc -l)  $d"
+            done
+            echo "=== поиск паролей keystore ==="
+            grep -rn "storePassword\|keyPassword\|keyAlias\|github-ru.jks\|signingConfig" "$P/app/build.gradle" 2>/dev/null || echo "нет упоминаний"
+            echo "=== debuggable/minify ==="
+            grep -n "debuggable\|minifyEnabled\|shrinkResources\|proguard" "$P/app/build.gradle" 2>/dev/null || echo "не найдено"
+            echo "=== Application class из манифеста ==="
+            grep -o 'android:name="[^"]*"' "$P/app/src/main/AndroidManifest.xml" | head -12
+          } > "$S/project-facts.txt" 2>&1
+          echo "=== Готово ==="; ls -la $S
+
+      - name: "Коммит образцов"
+        run: |
+          set -e
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          git add analysis/samples/
+          if git diff --cached --quiet; then
+            echo "Нет изменений"
+          else
+            git commit -m "Этап 2: образцы ключевых файлов для диагноза нагрева [skip ci]"
+            git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          fi
