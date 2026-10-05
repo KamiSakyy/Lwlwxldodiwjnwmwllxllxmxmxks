@@ -9,6 +9,4 @@ public @interface q {
     String[] names();
 
 
-    public q(Object... a) {
-    }
 }
