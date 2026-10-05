@@ -465,7 +465,7 @@ public final class l {
                 }
             })) != null) {
                 int length = list.length;
-                for (int r12 = 0; z4; r12 < length; r12++) {
+                for (int r12 = 0; r12 < length; r12++) {
                     dVar8.c(list[r12]);
                 }
             }
