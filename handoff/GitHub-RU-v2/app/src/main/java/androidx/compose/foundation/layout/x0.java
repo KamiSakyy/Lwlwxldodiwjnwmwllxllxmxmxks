@@ -5,4 +5,5 @@ package androidx.compose.foundation.layout;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface x0<T1,T2,T3,T4> {
+    public x0() {}
 }

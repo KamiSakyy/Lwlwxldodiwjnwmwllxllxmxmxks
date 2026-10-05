@@ -1,59 +1,75 @@
-Цикл восстановления Mon Oct  5 18:50:32 UTC 2026
+Цикл восстановления Mon Oct  5 19:09:22 UTC 2026
 =========== РАУНД 1 ===========
 --- ДИАГНОСТИКА: bootclasspath ---
 -rwxrwxrwx 1 root root 27768026 Sep 27 21:31 /usr/local/lib/android/sdk/platforms/android-36/android.jar
 BOOTCLASSPATH OK
 --- ДИАГНОСТИКА: i80/c.java изолированно ---
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/copilot/h1.java:854: error: cannot find symbol
-    public static void z(a5.s sVar, long j10) {
-                           ^
-  symbol:   class s
-  location: interface a5
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/copilot/CopilotWebSearchReferenceBottomSheet.java:9: error: cannot find symbol
 public final class CopilotWebSearchReferenceBottomSheet extends Hilt_CopilotWebSearchReferenceBottomSheet {
                                                                 ^
   symbol: class Hilt_CopilotWebSearchReferenceBottomSheet
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/d1.java:7: error: cannot find symbol
-    n0 E(boolean z, boolean z2, f0.c cVar);
-                                  ^
-  symbol:   class c
-  location: class f0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/j1.java:143: error: cannot find symbol
-    public final n0 E(boolean z, boolean z2, f0.c cVar) {
-                                               ^
-  symbol:   class c
-  location: class f0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kotlinx/serialization/descriptors/SerialDescriptor.java:5: error: package y9 does not exist
 import y9.a;
          ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kotlinx/serialization/descriptors/SerialDescriptor.java:17: error: cannot find symbol
-    a e();
-    ^
-Раунд 1: ошибок 78834
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/hz/k.java:29: error: package i1 does not exist
+import i1.p;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/h4.java:15: error: interface expected here
+public final class h4 implements d1.k {
+                                   ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v2/w1.java:4: error: cyclic inheritance involving w1
+public final class w1 extends w1.q {
+             ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v2/w1.java:5: error: modifier public not allowed here
+    public boolean F;
+                   ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/p.java:6: error: interface expected here
+public final class p implements aa.a {
+                                  ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/c.java:14: error: interface expected here
+public final class c implements i0, t6.b, bm.k, com.google.android.gms.measurement.internal.x, p.w, x41.d {
+                                                                                                ^
+Раунд 1: ошибок 64538
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 1 (уникальных отсутствующих: 1); вложенных добавлено: 882 в 530 файлах; пропущено java.lang/прочее: 48665
+Плоских стабов создано: 6 (уникальных отсутствующих: 6); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48658
 Стабов, требующих interface: 0
-Конвертировано стабов в interface: 177; требуется interface: 36; не тронуто (extends): 17
-Файлов теперь: 44470
+Конвертировано в interface: 0; откат в class: 213; не тронуто (extends): 27
+Файлов теперь: 44475
 =========== РАУНД 2 ===========
-Раунд 2: ошибок 64522
+Раунд 2: ошибок 64520
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 1 в 18 файлах; пропущено java.lang/прочее: 48663
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48660
 Стабов, требующих interface: 0
-Конвертировано стабов в interface: 106; требуется interface: 41; не тронуто (extends): 21
-Файлов теперь: 44470
+Конвертировано в interface: 209; откат в class: 0; не тронуто (extends): 15
+Файлов теперь: 44475
 =========== РАУНД 3 ===========
-Раунд 3: ошибок 64538
-Нет прогресса (1 из 2)
+Раунд 3: ошибок 209
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48663
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 0 файлах; пропущено java.lang/прочее: 0
 Стабов, требующих interface: 0
-Конвертировано стабов в interface: 4; требуется interface: 42; не тронуто (extends): 27
-Файлов теперь: 44470
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 0
+Файлов теперь: 44475
 =========== РАУНД 4 ===========
-Раунд 4: ошибок 64538
+Раунд 4: ошибок 209
+Нет прогресса (1 из 2)
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
+Индексация дерева...
+Парс лога...
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 0 файлах; пропущено java.lang/прочее: 0
+Стабов, требующих interface: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 0
+Файлов теперь: 44475
+=========== РАУНД 5 ===========
+Раунд 5: ошибок 209
 Нет прогресса (2 из 2)
 === Прогресс остановился ===

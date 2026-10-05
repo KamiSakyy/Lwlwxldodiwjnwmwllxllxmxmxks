@@ -5,4 +5,5 @@ package com.github.rudroid.copilot.inapppurchase;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b<T1,T2,T3,T4> {
+    public b() {}
 }

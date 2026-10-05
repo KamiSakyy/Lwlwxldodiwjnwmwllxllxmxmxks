@@ -5,4 +5,5 @@ package t71;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface o<T1,T2,T3,T4> {
+    public o() {}
 }

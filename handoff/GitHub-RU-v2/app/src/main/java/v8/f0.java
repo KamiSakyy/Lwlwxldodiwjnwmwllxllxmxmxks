@@ -5,6 +5,7 @@ package v8;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f0<T1,T2,T3,T4> {
+    public f0() {}
 
 
 

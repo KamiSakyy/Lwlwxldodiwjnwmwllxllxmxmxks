@@ -5,4 +5,5 @@ package androidx.compose.ui.layout;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface z<T1,T2,T3,T4> {
+    public z() {}
 }

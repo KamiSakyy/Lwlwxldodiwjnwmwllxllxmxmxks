@@ -5,4 +5,5 @@ package d9;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m<T1,T2,T3,T4> {
+    public m() {}
 }

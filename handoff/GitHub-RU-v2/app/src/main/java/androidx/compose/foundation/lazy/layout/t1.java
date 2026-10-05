@@ -5,4 +5,5 @@ package androidx.compose.foundation.lazy.layout;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface t1<T1,T2,T3,T4> {
+    public t1() {}
 }

@@ -5,4 +5,5 @@ package com.github.rudroid.common;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface j0<T1,T2,T3,T4> {
+    public j0() {}
 }

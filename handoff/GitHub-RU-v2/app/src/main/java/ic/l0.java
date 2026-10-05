@@ -5,4 +5,5 @@ package ic;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface l0<T1,T2,T3,T4> {
+    public l0() {}
 }

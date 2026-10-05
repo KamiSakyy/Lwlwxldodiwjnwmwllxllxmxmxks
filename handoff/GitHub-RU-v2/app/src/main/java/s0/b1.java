@@ -5,4 +5,5 @@ package s0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b1<T1,T2,T3,T4> {
+    public b1() {}
 }
