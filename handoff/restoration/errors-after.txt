@@ -1,0 +1,386 @@
+app/src/main/java/android/graphics/ImageDecoder$OnHeaderDecodedListener.java: initializers not allowed in interfaces
+app/src/main/java/android/os/OutcomeReceiver.java: initializers not allowed in interfaces
+app/src/main/java/android/view/ScrollCaptureCallback.java: initializers not allowed in interfaces
+app/src/main/java/android/view/accessibility/AccessibilityManager$AccessibilityServicesStateChangeListener.java: initializers not allowed in interfaces
+app/src/main/java/android/view/translation/ViewTranslationCallback.java: initializers not allowed in interfaces
+app/src/main/java/android/window/OnBackAnimationCallback.java: initializers not allowed in interfaces
+app/src/main/java/android/window/OnBackInvokedCallback.java: initializers not allowed in interfaces
+app/src/main/java/androidx/datastore/preferences/protobuf/j1.java: '{' expected
+app/src/main/java/androidx/datastore/preferences/protobuf/j1.java: enum constant expected here
+app/src/main/java/androidx/datastore/preferences/protobuf/j1.java: reached end of file while parsing
+app/src/main/java/androidx/datastore/preferences/protobuf/k1.java: '{' expected
+app/src/main/java/androidx/datastore/preferences/protobuf/k1.java: enum constant expected here
+app/src/main/java/androidx/datastore/preferences/protobuf/k1.java: reached end of file while parsing
+app/src/main/java/androidx/datastore/preferences/protobuf/l1.java: '{' expected
+app/src/main/java/androidx/datastore/preferences/protobuf/l1.java: enum constant expected here
+app/src/main/java/androidx/datastore/preferences/protobuf/l1.java: reached end of file while parsing
+app/src/main/java/androidx/datastore/preferences/protobuf/m1.java: '{' expected
+app/src/main/java/androidx/datastore/preferences/protobuf/m1.java: enum constant expected here
+app/src/main/java/androidx/datastore/preferences/protobuf/m1.java: reached end of file while parsing
+app/src/main/java/da1/a1.java: '{' expected
+app/src/main/java/da1/a1.java: enum constant expected here
+app/src/main/java/da1/a1.java: invalid method declaration; return type required
+app/src/main/java/da1/a1.java: reached end of file while parsing
+app/src/main/java/da1/a2.java: '{' expected
+app/src/main/java/da1/a2.java: enum constant expected here
+app/src/main/java/da1/a2.java: invalid method declaration; return type required
+app/src/main/java/da1/a2.java: reached end of file while parsing
+app/src/main/java/da1/a3.java: '{' expected
+app/src/main/java/da1/a3.java: enum constant expected here
+app/src/main/java/da1/a3.java: invalid method declaration; return type required
+app/src/main/java/da1/a3.java: reached end of file while parsing
+app/src/main/java/da1/b1.java: '{' expected
+app/src/main/java/da1/b1.java: enum constant expected here
+app/src/main/java/da1/b1.java: invalid method declaration; return type required
+app/src/main/java/da1/b1.java: reached end of file while parsing
+app/src/main/java/da1/b2.java: '{' expected
+app/src/main/java/da1/b2.java: enum constant expected here
+app/src/main/java/da1/b2.java: invalid method declaration; return type required
+app/src/main/java/da1/b2.java: reached end of file while parsing
+app/src/main/java/da1/b3.java: '{' expected
+app/src/main/java/da1/b3.java: enum constant expected here
+app/src/main/java/da1/b3.java: invalid method declaration; return type required
+app/src/main/java/da1/b3.java: reached end of file while parsing
+app/src/main/java/da1/c.java: '{' expected
+app/src/main/java/da1/c.java: enum constant expected here
+app/src/main/java/da1/c.java: invalid method declaration; return type required
+app/src/main/java/da1/c.java: reached end of file while parsing
+app/src/main/java/da1/c1.java: '{' expected
+app/src/main/java/da1/c1.java: enum constant expected here
+app/src/main/java/da1/c1.java: invalid method declaration; return type required
+app/src/main/java/da1/c1.java: reached end of file while parsing
+app/src/main/java/da1/c2.java: '{' expected
+app/src/main/java/da1/c2.java: enum constant expected here
+app/src/main/java/da1/c2.java: invalid method declaration; return type required
+app/src/main/java/da1/c2.java: reached end of file while parsing
+app/src/main/java/da1/c3.java: '{' expected
+app/src/main/java/da1/c3.java: enum constant expected here
+app/src/main/java/da1/c3.java: invalid method declaration; return type required
+app/src/main/java/da1/c3.java: reached end of file while parsing
+app/src/main/java/da1/d.java: '{' expected
+app/src/main/java/da1/d.java: enum constant expected here
+app/src/main/java/da1/d.java: invalid method declaration; return type required
+app/src/main/java/da1/d.java: reached end of file while parsing
+app/src/main/java/da1/d1.java: '{' expected
+app/src/main/java/da1/d1.java: enum constant expected here
+app/src/main/java/da1/d1.java: invalid method declaration; return type required
+app/src/main/java/da1/d1.java: reached end of file while parsing
+app/src/main/java/da1/d2.java: '{' expected
+app/src/main/java/da1/d2.java: enum constant expected here
+app/src/main/java/da1/d2.java: invalid method declaration; return type required
+app/src/main/java/da1/d2.java: reached end of file while parsing
+app/src/main/java/da1/d3.java: '{' expected
+app/src/main/java/da1/d3.java: enum constant expected here
+app/src/main/java/da1/d3.java: invalid method declaration; return type required
+app/src/main/java/da1/d3.java: reached end of file while parsing
+app/src/main/java/da1/e.java: '{' expected
+app/src/main/java/da1/e.java: enum constant expected here
+app/src/main/java/da1/e.java: invalid method declaration; return type required
+app/src/main/java/da1/e.java: reached end of file while parsing
+app/src/main/java/da1/e1.java: '{' expected
+app/src/main/java/da1/e1.java: enum constant expected here
+app/src/main/java/da1/e1.java: invalid method declaration; return type required
+app/src/main/java/da1/e1.java: reached end of file while parsing
+app/src/main/java/da1/e2.java: '{' expected
+app/src/main/java/da1/e2.java: enum constant expected here
+app/src/main/java/da1/e2.java: invalid method declaration; return type required
+app/src/main/java/da1/e2.java: reached end of file while parsing
+app/src/main/java/da1/e3.java: '{' expected
+app/src/main/java/da1/e3.java: enum constant expected here
+app/src/main/java/da1/e3.java: invalid method declaration; return type required
+app/src/main/java/da1/e3.java: reached end of file while parsing
+app/src/main/java/da1/f.java: '{' expected
+app/src/main/java/da1/f.java: enum constant expected here
+app/src/main/java/da1/f.java: invalid method declaration; return type required
+app/src/main/java/da1/f.java: reached end of file while parsing
+app/src/main/java/da1/f1.java: '{' expected
+app/src/main/java/da1/f1.java: enum constant expected here
+app/src/main/java/da1/f1.java: invalid method declaration; return type required
+app/src/main/java/da1/f1.java: reached end of file while parsing
+app/src/main/java/da1/f2.java: '{' expected
+app/src/main/java/da1/f2.java: enum constant expected here
+app/src/main/java/da1/f2.java: invalid method declaration; return type required
+app/src/main/java/da1/f2.java: reached end of file while parsing
+app/src/main/java/da1/f3.java: '{' expected
+app/src/main/java/da1/f3.java: enum constant expected here
+app/src/main/java/da1/f3.java: invalid method declaration; return type required
+app/src/main/java/da1/f3.java: reached end of file while parsing
+app/src/main/java/da1/g.java: '{' expected
+app/src/main/java/da1/g.java: enum constant expected here
+app/src/main/java/da1/g.java: invalid method declaration; return type required
+app/src/main/java/da1/g.java: reached end of file while parsing
+app/src/main/java/da1/g1.java: '{' expected
+app/src/main/java/da1/g1.java: enum constant expected here
+app/src/main/java/da1/g1.java: invalid method declaration; return type required
+app/src/main/java/da1/g1.java: reached end of file while parsing
+app/src/main/java/da1/g2.java: '{' expected
+app/src/main/java/da1/g2.java: enum constant expected here
+app/src/main/java/da1/g2.java: invalid method declaration; return type required
+app/src/main/java/da1/g2.java: reached end of file while parsing
+app/src/main/java/da1/g3.java: '{' expected
+app/src/main/java/da1/g3.java: enum constant expected here
+app/src/main/java/da1/g3.java: invalid method declaration; return type required
+app/src/main/java/da1/g3.java: reached end of file while parsing
+app/src/main/java/da1/h.java: '{' expected
+app/src/main/java/da1/h.java: enum constant expected here
+app/src/main/java/da1/h.java: invalid method declaration; return type required
+app/src/main/java/da1/h.java: reached end of file while parsing
+app/src/main/java/da1/h1.java: '{' expected
+app/src/main/java/da1/h1.java: enum constant expected here
+app/src/main/java/da1/h1.java: invalid method declaration; return type required
+app/src/main/java/da1/h1.java: reached end of file while parsing
+app/src/main/java/da1/h2.java: '{' expected
+app/src/main/java/da1/h2.java: enum constant expected here
+app/src/main/java/da1/h2.java: invalid method declaration; return type required
+app/src/main/java/da1/h2.java: reached end of file while parsing
+app/src/main/java/da1/h3.java: '{' expected
+app/src/main/java/da1/h3.java: enum constant expected here
+app/src/main/java/da1/h3.java: invalid method declaration; return type required
+app/src/main/java/da1/h3.java: reached end of file while parsing
+app/src/main/java/da1/i.java: '{' expected
+app/src/main/java/da1/i.java: enum constant expected here
+app/src/main/java/da1/i.java: invalid method declaration; return type required
+app/src/main/java/da1/i.java: reached end of file while parsing
+app/src/main/java/da1/i1.java: '{' expected
+app/src/main/java/da1/i1.java: enum constant expected here
+app/src/main/java/da1/i1.java: invalid method declaration; return type required
+app/src/main/java/da1/i1.java: reached end of file while parsing
+app/src/main/java/da1/i2.java: '{' expected
+app/src/main/java/da1/i2.java: enum constant expected here
+app/src/main/java/da1/i2.java: invalid method declaration; return type required
+app/src/main/java/da1/i2.java: reached end of file while parsing
+app/src/main/java/da1/i3.java: '{' expected
+app/src/main/java/da1/i3.java: enum constant expected here
+app/src/main/java/da1/i3.java: invalid method declaration; return type required
+app/src/main/java/da1/i3.java: reached end of file while parsing
+app/src/main/java/da1/j.java: '{' expected
+app/src/main/java/da1/j.java: enum constant expected here
+app/src/main/java/da1/j.java: invalid method declaration; return type required
+app/src/main/java/da1/j.java: reached end of file while parsing
+app/src/main/java/da1/j1.java: '{' expected
+app/src/main/java/da1/j1.java: enum constant expected here
+app/src/main/java/da1/j1.java: invalid method declaration; return type required
+app/src/main/java/da1/j1.java: reached end of file while parsing
+app/src/main/java/da1/j2.java: '{' expected
+app/src/main/java/da1/j2.java: enum constant expected here
+app/src/main/java/da1/j2.java: invalid method declaration; return type required
+app/src/main/java/da1/j2.java: reached end of file while parsing
+app/src/main/java/da1/j3.java: '{' expected
+app/src/main/java/da1/j3.java: enum constant expected here
+app/src/main/java/da1/j3.java: invalid method declaration; return type required
+app/src/main/java/da1/j3.java: reached end of file while parsing
+app/src/main/java/da1/k.java: '{' expected
+app/src/main/java/da1/k.java: enum constant expected here
+app/src/main/java/da1/k.java: invalid method declaration; return type required
+app/src/main/java/da1/k.java: reached end of file while parsing
+app/src/main/java/da1/k1.java: '{' expected
+app/src/main/java/da1/k1.java: enum constant expected here
+app/src/main/java/da1/k1.java: invalid method declaration; return type required
+app/src/main/java/da1/k1.java: reached end of file while parsing
+app/src/main/java/da1/k2.java: '{' expected
+app/src/main/java/da1/k2.java: enum constant expected here
+app/src/main/java/da1/k2.java: invalid method declaration; return type required
+app/src/main/java/da1/k2.java: reached end of file while parsing
+app/src/main/java/da1/k3.java: '{' expected
+app/src/main/java/da1/k3.java: enum constant expected here
+app/src/main/java/da1/k3.java: invalid method declaration; return type required
+app/src/main/java/da1/k3.java: reached end of file while parsing
+app/src/main/java/da1/l.java: '{' expected
+app/src/main/java/da1/l.java: enum constant expected here
+app/src/main/java/da1/l.java: invalid method declaration; return type required
+app/src/main/java/da1/l.java: reached end of file while parsing
+app/src/main/java/da1/l1.java: '{' expected
+app/src/main/java/da1/l1.java: enum constant expected here
+app/src/main/java/da1/l1.java: invalid method declaration; return type required
+app/src/main/java/da1/l1.java: reached end of file while parsing
+app/src/main/java/da1/l2.java: '{' expected
+app/src/main/java/da1/l2.java: enum constant expected here
+app/src/main/java/da1/l2.java: invalid method declaration; return type required
+app/src/main/java/da1/l2.java: reached end of file while parsing
+app/src/main/java/da1/m1.java: '{' expected
+app/src/main/java/da1/m1.java: enum constant expected here
+app/src/main/java/da1/m1.java: invalid method declaration; return type required
+app/src/main/java/da1/m1.java: reached end of file while parsing
+app/src/main/java/da1/m2.java: '{' expected
+app/src/main/java/da1/m2.java: enum constant expected here
+app/src/main/java/da1/m2.java: invalid method declaration; return type required
+app/src/main/java/da1/m2.java: reached end of file while parsing
+app/src/main/java/da1/n.java: '{' expected
+app/src/main/java/da1/n.java: enum constant expected here
+app/src/main/java/da1/n.java: invalid method declaration; return type required
+app/src/main/java/da1/n.java: reached end of file while parsing
+app/src/main/java/da1/n1.java: '{' expected
+app/src/main/java/da1/n1.java: enum constant expected here
+app/src/main/java/da1/n1.java: invalid method declaration; return type required
+app/src/main/java/da1/n1.java: reached end of file while parsing
+app/src/main/java/da1/n2.java: '{' expected
+app/src/main/java/da1/n2.java: enum constant expected here
+app/src/main/java/da1/n2.java: invalid method declaration; return type required
+app/src/main/java/da1/n2.java: reached end of file while parsing
+app/src/main/java/da1/o.java: '{' expected
+app/src/main/java/da1/o.java: enum constant expected here
+app/src/main/java/da1/o.java: invalid method declaration; return type required
+app/src/main/java/da1/o.java: reached end of file while parsing
+app/src/main/java/da1/o1.java: '{' expected
+app/src/main/java/da1/o1.java: enum constant expected here
+app/src/main/java/da1/o1.java: invalid method declaration; return type required
+app/src/main/java/da1/o1.java: reached end of file while parsing
+app/src/main/java/da1/o2.java: '{' expected
+app/src/main/java/da1/o2.java: enum constant expected here
+app/src/main/java/da1/o2.java: invalid method declaration; return type required
+app/src/main/java/da1/o2.java: reached end of file while parsing
+app/src/main/java/da1/p.java: '{' expected
+app/src/main/java/da1/p.java: enum constant expected here
+app/src/main/java/da1/p.java: invalid method declaration; return type required
+app/src/main/java/da1/p.java: reached end of file while parsing
+app/src/main/java/da1/p1.java: '{' expected
+app/src/main/java/da1/p1.java: enum constant expected here
+app/src/main/java/da1/p1.java: invalid method declaration; return type required
+app/src/main/java/da1/p1.java: reached end of file while parsing
+app/src/main/java/da1/p2.java: '{' expected
+app/src/main/java/da1/p2.java: enum constant expected here
+app/src/main/java/da1/p2.java: invalid method declaration; return type required
+app/src/main/java/da1/p2.java: reached end of file while parsing
+app/src/main/java/da1/q.java: '{' expected
+app/src/main/java/da1/q.java: enum constant expected here
+app/src/main/java/da1/q.java: invalid method declaration; return type required
+app/src/main/java/da1/q.java: reached end of file while parsing
+app/src/main/java/da1/q1.java: '{' expected
+app/src/main/java/da1/q1.java: enum constant expected here
+app/src/main/java/da1/q1.java: invalid method declaration; return type required
+app/src/main/java/da1/q1.java: reached end of file while parsing
+app/src/main/java/da1/q2.java: '{' expected
+app/src/main/java/da1/q2.java: enum constant expected here
+app/src/main/java/da1/q2.java: invalid method declaration; return type required
+app/src/main/java/da1/q2.java: reached end of file while parsing
+app/src/main/java/da1/r.java: '{' expected
+app/src/main/java/da1/r.java: enum constant expected here
+app/src/main/java/da1/r.java: invalid method declaration; return type required
+app/src/main/java/da1/r.java: reached end of file while parsing
+app/src/main/java/da1/r1.java: '{' expected
+app/src/main/java/da1/r1.java: enum constant expected here
+app/src/main/java/da1/r1.java: invalid method declaration; return type required
+app/src/main/java/da1/r1.java: reached end of file while parsing
+app/src/main/java/da1/r2.java: '{' expected
+app/src/main/java/da1/r2.java: enum constant expected here
+app/src/main/java/da1/r2.java: invalid method declaration; return type required
+app/src/main/java/da1/r2.java: reached end of file while parsing
+app/src/main/java/da1/s.java: '{' expected
+app/src/main/java/da1/s.java: enum constant expected here
+app/src/main/java/da1/s.java: invalid method declaration; return type required
+app/src/main/java/da1/s.java: reached end of file while parsing
+app/src/main/java/da1/s1.java: '{' expected
+app/src/main/java/da1/s1.java: enum constant expected here
+app/src/main/java/da1/s1.java: invalid method declaration; return type required
+app/src/main/java/da1/s1.java: reached end of file while parsing
+app/src/main/java/da1/s2.java: '{' expected
+app/src/main/java/da1/s2.java: enum constant expected here
+app/src/main/java/da1/s2.java: invalid method declaration; return type required
+app/src/main/java/da1/s2.java: reached end of file while parsing
+app/src/main/java/da1/t.java: '{' expected
+app/src/main/java/da1/t.java: enum constant expected here
+app/src/main/java/da1/t.java: invalid method declaration; return type required
+app/src/main/java/da1/t.java: reached end of file while parsing
+app/src/main/java/da1/t1.java: '{' expected
+app/src/main/java/da1/t1.java: enum constant expected here
+app/src/main/java/da1/t1.java: invalid method declaration; return type required
+app/src/main/java/da1/t1.java: reached end of file while parsing
+app/src/main/java/da1/t2.java: '{' expected
+app/src/main/java/da1/t2.java: enum constant expected here
+app/src/main/java/da1/t2.java: invalid method declaration; return type required
+app/src/main/java/da1/t2.java: reached end of file while parsing
+app/src/main/java/da1/u.java: '{' expected
+app/src/main/java/da1/u.java: enum constant expected here
+app/src/main/java/da1/u.java: invalid method declaration; return type required
+app/src/main/java/da1/u.java: reached end of file while parsing
+app/src/main/java/da1/u1.java: '{' expected
+app/src/main/java/da1/u1.java: enum constant expected here
+app/src/main/java/da1/u1.java: invalid method declaration; return type required
+app/src/main/java/da1/u1.java: reached end of file while parsing
+app/src/main/java/da1/u2.java: '{' expected
+app/src/main/java/da1/u2.java: enum constant expected here
+app/src/main/java/da1/u2.java: invalid method declaration; return type required
+app/src/main/java/da1/u2.java: reached end of file while parsing
+app/src/main/java/da1/v.java: '{' expected
+app/src/main/java/da1/v.java: enum constant expected here
+app/src/main/java/da1/v.java: invalid method declaration; return type required
+app/src/main/java/da1/v.java: reached end of file while parsing
+app/src/main/java/da1/v0.java: '{' expected
+app/src/main/java/da1/v0.java: enum constant expected here
+app/src/main/java/da1/v0.java: invalid method declaration; return type required
+app/src/main/java/da1/v0.java: reached end of file while parsing
+app/src/main/java/da1/v1.java: '{' expected
+app/src/main/java/da1/v1.java: enum constant expected here
+app/src/main/java/da1/v1.java: invalid method declaration; return type required
+app/src/main/java/da1/v1.java: reached end of file while parsing
+app/src/main/java/da1/v2.java: '{' expected
+app/src/main/java/da1/v2.java: enum constant expected here
+app/src/main/java/da1/v2.java: invalid method declaration; return type required
+app/src/main/java/da1/v2.java: reached end of file while parsing
+app/src/main/java/da1/w.java: '{' expected
+app/src/main/java/da1/w.java: enum constant expected here
+app/src/main/java/da1/w.java: invalid method declaration; return type required
+app/src/main/java/da1/w.java: reached end of file while parsing
+app/src/main/java/da1/w0.java: '{' expected
+app/src/main/java/da1/w0.java: enum constant expected here
+app/src/main/java/da1/w0.java: invalid method declaration; return type required
+app/src/main/java/da1/w0.java: reached end of file while parsing
+app/src/main/java/da1/w1.java: '{' expected
+app/src/main/java/da1/w1.java: enum constant expected here
+app/src/main/java/da1/w1.java: invalid method declaration; return type required
+app/src/main/java/da1/w1.java: reached end of file while parsing
+app/src/main/java/da1/w2.java: '{' expected
+app/src/main/java/da1/w2.java: enum constant expected here
+app/src/main/java/da1/w2.java: invalid method declaration; return type required
+app/src/main/java/da1/w2.java: reached end of file while parsing
+app/src/main/java/da1/x.java: '{' expected
+app/src/main/java/da1/x.java: enum constant expected here
+app/src/main/java/da1/x.java: invalid method declaration; return type required
+app/src/main/java/da1/x.java: reached end of file while parsing
+app/src/main/java/da1/x0.java: '{' expected
+app/src/main/java/da1/x0.java: enum constant expected here
+app/src/main/java/da1/x0.java: invalid method declaration; return type required
+app/src/main/java/da1/x0.java: reached end of file while parsing
+app/src/main/java/da1/x1.java: '{' expected
+app/src/main/java/da1/x1.java: enum constant expected here
+app/src/main/java/da1/x1.java: invalid method declaration; return type required
+app/src/main/java/da1/x1.java: reached end of file while parsing
+app/src/main/java/da1/x2.java: '{' expected
+app/src/main/java/da1/x2.java: enum constant expected here
+app/src/main/java/da1/x2.java: invalid method declaration; return type required
+app/src/main/java/da1/x2.java: reached end of file while parsing
+app/src/main/java/da1/y.java: '{' expected
+app/src/main/java/da1/y.java: enum constant expected here
+app/src/main/java/da1/y.java: invalid method declaration; return type required
+app/src/main/java/da1/y.java: reached end of file while parsing
+app/src/main/java/da1/y0.java: '{' expected
+app/src/main/java/da1/y0.java: enum constant expected here
+app/src/main/java/da1/y0.java: invalid method declaration; return type required
+app/src/main/java/da1/y0.java: reached end of file while parsing
+app/src/main/java/da1/y1.java: '{' expected
+app/src/main/java/da1/y1.java: enum constant expected here
+app/src/main/java/da1/y1.java: invalid method declaration; return type required
+app/src/main/java/da1/y1.java: reached end of file while parsing
+app/src/main/java/da1/y2.java: '{' expected
+app/src/main/java/da1/y2.java: enum constant expected here
+app/src/main/java/da1/y2.java: invalid method declaration; return type required
+app/src/main/java/da1/y2.java: reached end of file while parsing
+app/src/main/java/da1/z.java: '{' expected
+app/src/main/java/da1/z.java: enum constant expected here
+app/src/main/java/da1/z.java: invalid method declaration; return type required
+app/src/main/java/da1/z.java: reached end of file while parsing
+app/src/main/java/da1/z0.java: '{' expected
+app/src/main/java/da1/z0.java: enum constant expected here
+app/src/main/java/da1/z0.java: invalid method declaration; return type required
+app/src/main/java/da1/z0.java: reached end of file while parsing
+app/src/main/java/da1/z1.java: '{' expected
+app/src/main/java/da1/z1.java: enum constant expected here
+app/src/main/java/da1/z1.java: invalid method declaration; return type required
+app/src/main/java/da1/z1.java: reached end of file while parsing
+app/src/main/java/da1/z2.java: '{' expected
+app/src/main/java/da1/z2.java: enum constant expected here
+app/src/main/java/da1/z2.java: invalid method declaration; return type required
+app/src/main/java/da1/z2.java: reached end of file while parsing
+app/src/main/java/v41/l.java: : expected
+app/src/main/java/v41/l.java: illegal start of expression
+app/src/main/java/x9/y.java: initializers not allowed in interfaces

@@ -843,7 +843,7 @@ public final class w implements y71.j {
         cq0.b0 b0Var2;
         j0 j0Var;
         int i12;
-        Object arrayList;
+        ArrayList arrayList;
         jn0.g6 g6Var;
         jn0.f6 f6Var;
         x01.i iVar;

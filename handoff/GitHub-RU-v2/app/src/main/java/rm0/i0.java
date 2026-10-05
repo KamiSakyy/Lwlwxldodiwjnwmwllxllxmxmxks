@@ -849,7 +849,7 @@ public final class i0 implements y71.j {
         we0.b0 b0Var2;
         p0 p0Var;
         int i7;
-        Object arrayList;
+        ArrayList arrayList;
         kc0.a6 a6Var;
         kc0.z5 z5Var;
         x01.i iVar;

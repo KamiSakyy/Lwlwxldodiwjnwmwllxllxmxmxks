@@ -53,7 +53,9 @@ public final class b {
         	at jadx.core.dex.visitors.MoveInlineVisitor.moveInline(MoveInlineVisitor.java:41)
         	at jadx.core.dex.visitors.ConstructorVisitor.visit(ConstructorVisitor.java:43)
         */
-    public final ek.e b(
+    public final ek.e b() {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
     /*  JADX ERROR: Method generation error
         jadx.core.utils.exceptions.JadxRuntimeException: Code variable not set in r21v0 ??
         	at jadx.core.dex.instructions.args.SSAVar.getCodeVar(SSAVar.java:238)

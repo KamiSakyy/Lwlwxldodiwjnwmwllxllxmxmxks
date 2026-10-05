@@ -185,7 +185,7 @@ public class e1 implements SerialDescriptor, l {
                 int f = serialDescriptor.f();
                 int i2 = this.c;
                 if (i2 == f) {
-                    for (0; i < i2; i + 1) {
+                    for (i = 0; i < i2; i++) {
                         i = (k71.k.b(j(i).a(), serialDescriptor.j(i).a()) && k71.k.b(j(i).e(), serialDescriptor.j(i).e())) ? i + 1 : 0;
                     }
                     return true;

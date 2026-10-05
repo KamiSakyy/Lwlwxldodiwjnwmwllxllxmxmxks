@@ -48,7 +48,7 @@ public final class r<T> implements y71.j {
         q qVar;
         int i;
         int i10;
-        Object arrayList;
+        ArrayList arrayList;
         ArrayList a10;
         Object arrayList2;
         List list;

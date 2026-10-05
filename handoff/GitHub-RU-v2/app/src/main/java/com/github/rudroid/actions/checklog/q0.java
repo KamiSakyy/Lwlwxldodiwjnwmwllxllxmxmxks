@@ -18,13 +18,6 @@ public interface q0 extends zh.b, n.c {
 
         /* renamed from: c, reason: collision with root package name */
         public static final int f4866c;
-
-        static {
-            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.RFC_1123_DATE_TIME;
-            k71.k.f(dateTimeFormatter, "RFC_1123_DATE_TIME");
-            f4865b = dateTimeFormatter;
-            f4866c = y2.a(16);
-        }
     }
 
     public static final class b {

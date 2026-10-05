@@ -39,3 +39,7 @@ android {
     packagingOptions { jniLibs.useLegacyPackaging = false }
     lint { abortOnError false; checkReleaseBuilds false }
 }
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xmaxerrs', '50000', '-Xmaxwarns', '1000']
+}

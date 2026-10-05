@@ -103,7 +103,7 @@ public abstract class k {
         double[] dArr = new double[i24];
         double[][] dArr2 = (double[][]) Array.newInstance((Class<?>) Double.TYPE, i24, 1);
         int i26 = 0;
-        for (0; i10 < this.f25508d; i10 + 1) {
+        for (i10 = 0; i10 < this.f25508d; i10++) {
             if (i10 > 0) {
                 int[] iArr4 = this.f25506b;
                 i10 = iArr4[i10] == iArr4[i10 - 1] ? i10 + 1 : 0;

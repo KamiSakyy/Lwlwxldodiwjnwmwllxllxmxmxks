@@ -229,7 +229,7 @@ public final class AutoCompleteView extends LinearLayout {
         super(context, attributeSet, 0);
         k71.k.g(context, "context");
         View nestedScrollView = new NestedScrollView(context, (AttributeSet) null);
-        final ?? cVar = new c(context, null);
+        final c cVar = new c(context, null);
         cVar.setThreshold(1);
         com.github.rudroid.views.a aVar = new com.github.rudroid.views.a();
         cVar.w = aVar;

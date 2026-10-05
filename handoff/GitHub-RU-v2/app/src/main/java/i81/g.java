@@ -102,7 +102,7 @@ public final class g implements SerialDescriptor, k81.l {
                 int f = serialDescriptor.f();
                 int i2 = this.c;
                 if (i2 == f) {
-                    for (0; i < i2; i + 1) {
+                    for (i = 0; i < i2; i++) {
                         SerialDescriptor[] serialDescriptorArr = this.g;
                         i = (k71.k.b(serialDescriptorArr[i].a(), serialDescriptor.j(i).a()) && k71.k.b(serialDescriptorArr[i].e(), serialDescriptor.j(i).e())) ? i + 1 : 0;
                     }

@@ -1261,7 +1261,9 @@ public abstract class b4 implements i3.d {
         	at jadx.core.dex.visitors.MoveInlineVisitor.moveInline(MoveInlineVisitor.java:41)
         	at jadx.core.dex.visitors.ConstructorVisitor.visit(ConstructorVisitor.java:43)
         */
-    public static final q01.r r0(
+    public static final q01.r r0() {
+        throw new UnsupportedOperationException("Method not decompiled");
+    }
     /*  JADX ERROR: Method generation error
         jadx.core.utils.exceptions.JadxRuntimeException: Code variable not set in r27v0 ??
         	at jadx.core.dex.instructions.args.SSAVar.getCodeVar(SSAVar.java:238)

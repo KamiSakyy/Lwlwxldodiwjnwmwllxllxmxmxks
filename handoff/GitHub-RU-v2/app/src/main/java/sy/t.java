@@ -413,7 +413,7 @@ public abstract class t {
         int i = 0;
         if (b == 8) {
             int readInt = dataInputStream.readInt();
-            java.lang.Boolean[ r0 = (java.lang.Boolean[) (new Boolean[readInt]);
+            java.lang.Boolean[] r0 = new Boolean[readInt];
             while (i < readInt) {
                 r0[i] = Boolean.valueOf(dataInputStream.readBoolean());
                 i++;
@@ -469,7 +469,7 @@ public abstract class t {
             throw new IllegalStateException(no.a.k("Unsupported type ", b));
         }
         int readInt7 = dataInputStream.readInt();
-        java.lang.String[ r1 = (java.lang.String[) (new String[readInt7]);
+        java.lang.String[] r1 = new String[readInt7];
         while (i < readInt7) {
             String readUTF = dataInputStream.readUTF();
             if (k71.k.b(readUTF, "androidx.work.Data-95ed6082-b8e9-46e8-a73f-ff56f00f5d9d")) {

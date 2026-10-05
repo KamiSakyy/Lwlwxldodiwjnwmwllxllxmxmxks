@@ -28,7 +28,7 @@ public final class b extends com.google.common.util.concurrent.a {
         double[] dArr3;
         double d12;
         double[] dArr4 = dArr;
-        b obj = this;
+        Object obj = new Object();
         obj.f3402a = dArr4;
         int i10 = 1;
         obj.f3403b = new a[dArr4.length - 1];

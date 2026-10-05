@@ -488,7 +488,7 @@ public abstract class l extends c0 {
                     }
                 } else if ((obj instanceof w61.z) && (obj2 instanceof w61.z)) {
                     short[] sArr = ((w61.z) obj).r;
-                    short[ r5 = (short[) (((w61.z) obj2).r);
+                    short[] r5 = (short[]) (((w61.z) obj2).r);
                     if (sArr == null) {
                         sArr = null;
                     }

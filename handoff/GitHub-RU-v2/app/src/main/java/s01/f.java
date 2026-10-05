@@ -755,7 +755,7 @@ public final class f implements y71.j {
         b0 b0Var2;
         p0 p0Var;
         int i25;
-        Object arrayList;
+        ArrayList arrayList;
         q6 q6Var;
         p6 p6Var;
         x01.i iVar;

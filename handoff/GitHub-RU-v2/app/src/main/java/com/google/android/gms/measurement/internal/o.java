@@ -1432,7 +1432,7 @@ public final class o extends i4 {
         c21.u.g(str);
         z();
         A();
-        android.database.Cursor r5 = (android.database.Cursor) ({str});
+        android.database.Cursor r5 = (android.database.Cursor) ((Object) str);
         Cursor cursor = null;
         r2 = null;
         r2 = null;
