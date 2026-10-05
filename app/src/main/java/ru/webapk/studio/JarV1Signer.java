@@ -63,8 +63,8 @@ final class JarV1Signer {
     static void sign(File unsignedApk, File signedApk, File privateDataDirectory) throws Exception {
         SigningIdentity identity = getOrCreateIdentity(privateDataDirectory);
         TreeMap<String, byte[]> entryDigests = digestApkEntries(unsignedApk);
-        byte[] manifestBytes = createManifest(entryDigests);
-        byte[] signatureFile = createSignatureFile(manifestBytes);
+        ManifestContent manifest = createManifest(entryDigests);
+        byte[] signatureFile = createSignatureFile(manifest);
         byte[] signatureBlock = createPkcs7Block(signatureFile, identity);
 
         if (signedApk.exists() && !signedApk.delete()) {
@@ -85,7 +85,7 @@ final class JarV1Signer {
                     copyEntry(entry, input, output, countingOut);
                 }
             }
-            putDeflated(output, "META-INF/MANIFEST.MF", manifestBytes);
+            putDeflated(output, "META-INF/MANIFEST.MF", manifest.bytes);
             putDeflated(output, "META-INF/WEBAPK.SF", signatureFile);
             putDeflated(output, "META-INF/WEBAPK.RSA", signatureBlock);
             output.finish();
@@ -117,25 +117,37 @@ final class JarV1Signer {
         return result;
     }
 
-    private static byte[] createManifest(TreeMap<String, byte[]> digests) throws IOException {
+    private static ManifestContent createManifest(TreeMap<String, byte[]> digests) throws Exception {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
+        TreeMap<String, byte[]> sectionDigests = new TreeMap<>();
         writeHeader(out, "Manifest-Version", "1.0");
         writeHeader(out, "Created-By", "Offline Web APK Studio");
         out.write(CRLF);
+        MessageDigest sha256 = MessageDigest.getInstance(SHA256);
         for (Map.Entry<String, byte[]> entry : digests.entrySet()) {
+            ByteArrayOutputStream section = new ByteArrayOutputStream();
+            writeHeader(section, "Name", entry.getKey());
+            writeHeader(section, "SHA-256-Digest", base64(entry.getValue()));
+            section.write(CRLF);
+            byte[] sectionBytes = section.toByteArray();
+            out.write(sectionBytes);
+            sectionDigests.put(entry.getKey(), sha256.digest(sectionBytes));
+        }
+        return new ManifestContent(out.toByteArray(), sectionDigests);
+    }
+
+    private static byte[] createSignatureFile(ManifestContent manifest) throws Exception {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        writeHeader(out, "Signature-Version", "1.0");
+        writeHeader(out, "Created-By", "Offline Web APK Studio");
+        writeHeader(out, "SHA-256-Digest-Manifest",
+                base64(MessageDigest.getInstance(SHA256).digest(manifest.bytes)));
+        out.write(CRLF);
+        for (Map.Entry<String, byte[]> entry : manifest.sectionDigests.entrySet()) {
             writeHeader(out, "Name", entry.getKey());
             writeHeader(out, "SHA-256-Digest", base64(entry.getValue()));
             out.write(CRLF);
         }
-        return out.toByteArray();
-    }
-
-    private static byte[] createSignatureFile(byte[] manifest) throws Exception {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        writeHeader(out, "Signature-Version", "1.0");
-        writeHeader(out, "Created-By", "Offline Web APK Studio");
-        writeHeader(out, "SHA-256-Digest-Manifest", base64(MessageDigest.getInstance(SHA256).digest(manifest)));
-        out.write(CRLF);
         return out.toByteArray();
     }
 
@@ -357,6 +369,16 @@ final class JarV1Signer {
                 output.write(buffer, 0, read);
             }
             return output.toByteArray();
+        }
+    }
+
+    private static final class ManifestContent {
+        final byte[] bytes;
+        final TreeMap<String, byte[]> sectionDigests;
+
+        ManifestContent(byte[] bytes, TreeMap<String, byte[]> sectionDigests) {
+            this.bytes = bytes;
+            this.sectionDigests = sectionDigests;
         }
     }
 

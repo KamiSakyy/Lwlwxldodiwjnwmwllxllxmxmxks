@@ -20,7 +20,13 @@ javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
   "$ROOT/app/src/main/java/ru/webapk/studio/JarV1Signer.java" \
   "$ROOT/scripts/RuntimeApkSmoke.java"
 java -cp "$CLASSES" ru.webapk.studio.RuntimeApkSmoke "$TEMPLATE_APK" "$UNSIGNED" "$SIGNED"
-"$BUILD_TOOLS/apksigner" verify --verbose "$SIGNED"
+if ! "$BUILD_TOOLS/apksigner" verify --verbose "$SIGNED" >"$TEMP_DIR/apksigner.log" 2>&1; then
+  cat "$TEMP_DIR/apksigner.log"
+  DIAGNOSTIC="$(tr '\n' ' ' < "$TEMP_DIR/apksigner.log" | sed 's/::/%3A%3A/g')"
+  echo "::error title=Generated APK signature verification::$DIAGNOSTIC"
+  exit 1
+fi
+cat "$TEMP_DIR/apksigner.log"
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"
 grep -F "application-label:'Offline smoke test'" <<< "$BADGING"
