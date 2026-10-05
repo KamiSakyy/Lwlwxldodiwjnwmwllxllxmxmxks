@@ -67,6 +67,7 @@ jobs:
           python3 scripts/create_source_zip.py dist/WebAPK-Studio-source.zip
           APK_BYTES=$(stat -c '%s' dist/WebAPK-Studio.apk)
           echo "APK size: ${APK_BYTES} bytes"
+          echo "::notice title=WebAPK Studio APK size::${APK_BYTES} bytes"
           if [ "$APK_BYTES" -ge 1000000 ]; then
             echo "Web APK Studio exceeds its 1,000,000-byte app-size budget." >&2
             exit 1
