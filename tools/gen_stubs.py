@@ -15,6 +15,13 @@
 import os, re, sys, collections
 
 log_path, java_root = sys.argv[1], sys.argv[2]
+iface_file = sys.argv[3] if len(sys.argv) > 3 else None
+AS_INTERFACE = set()
+if iface_file and os.path.isfile(iface_file):
+    for ln in open(iface_file, encoding="utf-8", errors="ignore"):
+        ln = ln.strip()
+        if "." in ln:
+            AS_INTERFACE.add(tuple(ln.rsplit(".", 1)))
 SRC_MARK = "app/src/main/java/"
 
 ERR = re.compile(r"^(.+?):(\d+): error: (.*)$")
@@ -33,6 +40,10 @@ err_set = set(err_idx)
 
 missing = {}      # (package, class) -> путь файла-стаба, который создать
 skip = 0
+JAVA_LANG_NAMES = {"Object", "String", "Integer", "Long", "Boolean", "Character", "Float",
+                   "Double", "Short", "Byte", "Void", "Class", "Enum", "Iterable", "Comparable",
+                   "Runnable", "Exception", "Error", "Throwable", "Thread", "Number", "Record",
+                   "CharSequence", "Cloneable", "AutoCloseable", "System", "Math"}
 for i in err_idx:
     m = ERR.match(lines[i])
     path, msg = m.group(1), m.group(3)
@@ -61,6 +72,9 @@ for i in err_idx:
             else:
                 continue
         key = (pkg, cls)
+        if cls in JAVA_LANG_NAMES:
+            skip += 1
+            continue
         if key in missing:
             continue
         # если файл уже существует — не стабим
@@ -89,16 +103,21 @@ for (pkg, cls) in sorted(missing):
     try:
         os.makedirs(d, exist_ok=True)
         fp = os.path.join(d, cls + ".java")
+        if (pkg, cls) in AS_INTERFACE:
+            kind = "interface"
+            inner = ""
+        else:
+            kind = "class"
+            inner = f"    public {cls}() {{\n    }}\n"
         body = (
             f"package {pkg};\n\n"
             f"/**\n"
-            f" * СТАБ-КЛАСС: сгенерирован автоматически (tools/gen_stubs.py).\n"
+            f" * СТАБ-{kind.upper()}: сгенерирован автоматически (tools/gen_stubs.py).\n"
             f" * Оригинал был потерян при декомпиляции APK (не попал в выгрузку).\n"
             f" * Заглушка восстанавливает компиляцию проекта.\n"
             f" */\n"
-            f"public class {cls}<T1,T2,T3,T4> {{\n"
-            f"    public {cls}() {{\n"
-            f"    }}\n"
+            f"public {kind} {cls}<T1,T2,T3,T4> {{\n"
+            f"{inner}"
             f"}}\n"
         )
         with open(fp, "w", encoding="utf-8") as f:

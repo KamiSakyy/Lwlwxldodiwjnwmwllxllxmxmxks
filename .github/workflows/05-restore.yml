@@ -113,6 +113,30 @@ jobs:
             > /tmp/javac-after2.log 2>&1 || true
           grep -c "error:" /tmp/javac-after2.log || echo "0 ошибок ПОСЛЕ стабов"
 
+      - name: "Перегенерация стабов-интерфейсов (по ошибкам interface expected)"
+        run: |
+          set -e
+          python3 tools/make_iface_list.py /tmp/javac-after2.log /tmp/stub-interfaces.txt "$PROJ/app/src/main/java"
+          IFN=$(wc -l < /tmp/stub-interfaces.txt)
+          if [ "$IFN" -gt 0 ]; then
+            # удаляем старые class-стабы и создаём заново как interface
+            while IFS= read -r line; do
+              P="${line%.*}"; C="${line##*.}"
+              FP="$PROJ/app/src/main/java/$(echo "$P" | tr '.' '/')/$C.java"
+              [ -f "$FP" ] && rm -f "$FP"
+            done < /tmp/stub-interfaces.txt
+            python3 tools/gen_stubs.py /tmp/javac-after2.log "$PROJ/app/src/main/java" /tmp/stub-interfaces.txt
+            find "$PROJ/app/src/main/java" -name "*.java" | sort > /tmp/sources-after3.txt
+            mkdir -p /tmp/classes-after3
+            javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
+              -source 8 -target 8 -encoding UTF-8 \
+              -bootclasspath "$ANDROID_JAR" \
+              -d /tmp/classes-after3 @/tmp/sources-after3.txt \
+              > /tmp/javac-after3.log 2>&1 || true
+            echo "Ошибок после интерфейс-стабов: $(grep -c 'error:' /tmp/javac-after3.log || true)"
+            cp -f /tmp/javac-after3.log /tmp/javac-after2.log
+          fi
+
       - name: "Отчёт о восстановлении"
         run: |
           set -e
