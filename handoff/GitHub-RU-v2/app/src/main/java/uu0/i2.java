@@ -1,0 +1,220 @@
+package uu0;
+
+import pz0.py;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class i2 implements aa.h0 {
+    public final String A;
+    public final String B;
+    public final boolean C;
+    public final boolean D;
+    public final boolean E;
+    public final py F;
+    public final h2 G;
+    public final t1 H;
+    public final boolean I;
+    public final int J;
+    public final z1 K;
+    public final e2 L;
+    public final s1 M;
+    public final boolean N;
+    public final boolean O;
+    public final boolean P;
+    public final u1 Q;
+    public final a2 R;
+    public final q1 S;
+    public final o T;
+    public final nv0.b U;
+    public final fw0.u0 V;
+    public final o6 W;
+    public final u4 X;
+    public final String a;
+    public final String b;
+    public final Integer c;
+    public final int d;
+    public final p1 e;
+    public final o1 f;
+    public final int g;
+    public final boolean h;
+    public final boolean i;
+    public final String j;
+    public final boolean k;
+    public final boolean l;
+    public final boolean m;
+    public final boolean n;
+    public final boolean o;
+    public final boolean p;
+    public final boolean q;
+    public final r1 r;
+    public final String s;
+    public final y1 t;
+    public final b2 u;
+    public final d2 v;
+    public final c2 w;
+    public final f2 x;
+    public final String y;
+    public final String z;
+
+    public i2(String str, String str2, Integer num, int i, p1 p1Var, o1 o1Var, int i2, boolean z, boolean z2, String str3, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9, r1 r1Var, String str4, y1 y1Var, b2 b2Var, d2 d2Var, c2 c2Var, f2 f2Var, String str5, String str6, String str7, String str8, boolean z10, boolean z12, boolean z13, py pyVar, h2 h2Var, t1 t1Var, boolean z14, int i3, z1 z1Var, e2 e2Var, s1 s1Var, boolean z15, boolean z16, boolean z17, u1 u1Var, a2 a2Var, q1 q1Var, o oVar, nv0.b bVar, fw0.u0 u0Var, o6 o6Var, u4 u4Var) {
+        this.a = str;
+        this.b = str2;
+        this.c = num;
+        this.d = i;
+        this.e = p1Var;
+        this.f = o1Var;
+        this.g = i2;
+        this.h = z;
+        this.i = z2;
+        this.j = str3;
+        this.k = z3;
+        this.l = z4;
+        this.m = z5;
+        this.n = z6;
+        this.o = z7;
+        this.p = z8;
+        this.q = z9;
+        this.r = r1Var;
+        this.s = str4;
+        this.t = y1Var;
+        this.u = b2Var;
+        this.v = d2Var;
+        this.w = c2Var;
+        this.x = f2Var;
+        this.y = str5;
+        this.z = str6;
+        this.A = str7;
+        this.B = str8;
+        this.C = z10;
+        this.D = z12;
+        this.E = z13;
+        this.F = pyVar;
+        this.G = h2Var;
+        this.H = t1Var;
+        this.I = z14;
+        this.J = i3;
+        this.K = z1Var;
+        this.L = e2Var;
+        this.M = s1Var;
+        this.N = z15;
+        this.O = z16;
+        this.P = z17;
+        this.Q = u1Var;
+        this.R = a2Var;
+        this.S = q1Var;
+        this.T = oVar;
+        this.U = bVar;
+        this.V = u0Var;
+        this.W = o6Var;
+        this.X = u4Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof i2)) {
+            return false;
+        }
+        i2 i2Var = (i2) obj;
+        return k71.k.b(this.a, i2Var.a) && k71.k.b(this.b, i2Var.b) && k71.k.b(this.c, i2Var.c) && this.d == i2Var.d && k71.k.b(this.e, i2Var.e) && k71.k.b(this.f, i2Var.f) && this.g == i2Var.g && this.h == i2Var.h && this.i == i2Var.i && k71.k.b(this.j, i2Var.j) && this.k == i2Var.k && this.l == i2Var.l && this.m == i2Var.m && this.n == i2Var.n && this.o == i2Var.o && this.p == i2Var.p && this.q == i2Var.q && k71.k.b(this.r, i2Var.r) && k71.k.b(this.s, i2Var.s) && k71.k.b(this.t, i2Var.t) && k71.k.b(this.u, i2Var.u) && k71.k.b(this.v, i2Var.v) && k71.k.b(this.w, i2Var.w) && k71.k.b(this.x, i2Var.x) && k71.k.b(this.y, i2Var.y) && k71.k.b(this.z, i2Var.z) && k71.k.b(this.A, i2Var.A) && k71.k.b(this.B, i2Var.B) && this.C == i2Var.C && this.D == i2Var.D && this.E == i2Var.E && this.F == i2Var.F && k71.k.b(this.G, i2Var.G) && k71.k.b(this.H, i2Var.H) && this.I == i2Var.I && this.J == i2Var.J && k71.k.b(this.K, i2Var.K) && k71.k.b(this.L, i2Var.L) && k71.k.b(this.M, i2Var.M) && this.N == i2Var.N && this.O == i2Var.O && this.P == i2Var.P && k71.k.b(this.Q, i2Var.Q) && k71.k.b(this.R, i2Var.R) && k71.k.b(this.S, i2Var.S) && k71.k.b(this.T, i2Var.T) && k71.k.b(this.U, i2Var.U) && k71.k.b(this.V, i2Var.V) && k71.k.b(this.W, i2Var.W) && k71.k.b(this.X, i2Var.X);
+    }
+
+    public final int hashCode() {
+        int i = com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31);
+        Integer num = this.c;
+        int b = a0.s0.b(this.d, (i + (num == null ? 0 : num.hashCode())) * 31, 31);
+        p1 p1Var = this.e;
+        int hashCode = (b + (p1Var == null ? 0 : p1Var.hashCode())) * 31;
+        o1 o1Var = this.f;
+        int e = x.i.e(x.i.e(a0.s0.b(this.g, (hashCode + (o1Var == null ? 0 : o1Var.hashCode())) * 31, 31), 31, this.h), 31, this.i);
+        String str = this.j;
+        int b2 = a0.s0.b(this.u.a, (this.t.hashCode() + com.github.rudroid.copilot.h1.i(a0.s0.b(this.r.a, x.i.e(x.i.e(x.i.e(x.i.e(x.i.e(x.i.e(x.i.e((e + (str == null ? 0 : str.hashCode())) * 31, 31, this.k), 31, this.l), 31, this.m), 31, this.n), 31, this.o), 31, this.p), 31, this.q), 31), this.s, 31)) * 31, 31);
+        d2 d2Var = this.v;
+        int hashCode2 = (b2 + (d2Var == null ? 0 : Integer.hashCode(d2Var.a))) * 31;
+        c2 c2Var = this.w;
+        int i2 = com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i((this.x.hashCode() + ((hashCode2 + (c2Var == null ? 0 : c2Var.hashCode())) * 31)) * 31, this.y, 31), this.z, 31), this.A, 31);
+        String str2 = this.B;
+        int e2 = x.i.e(x.i.e(x.i.e((i2 + (str2 == null ? 0 : str2.hashCode())) * 31, 31, this.C), 31, this.D), 31, this.E);
+        py pyVar = this.F;
+        int b3 = a0.s0.b(this.G.a, (e2 + (pyVar == null ? 0 : pyVar.hashCode())) * 31, 31);
+        t1 t1Var = this.H;
+        int b4 = a0.s0.b(this.J, x.i.e((b3 + (t1Var == null ? 0 : t1Var.hashCode())) * 31, 31, this.I), 31);
+        z1 z1Var = this.K;
+        int b5 = a0.s0.b(this.L.a, (b4 + (z1Var == null ? 0 : z1Var.hashCode())) * 31, 31);
+        s1 s1Var = this.M;
+        int e3 = x.i.e(x.i.e(x.i.e((b5 + (s1Var == null ? 0 : s1Var.hashCode())) * 31, 31, this.N), 31, this.O), 31, this.P);
+        u1 u1Var = this.Q;
+        return this.X.hashCode() + ((this.W.hashCode() + ((this.V.hashCode() + ((this.U.hashCode() + ((this.T.hashCode() + ((this.S.hashCode() + a0.s0.b(this.R.a, (e3 + (u1Var != null ? u1Var.hashCode() : 0)) * 31, 31)) * 31)) * 31)) * 31)) * 31)) * 31);
+    }
+
+    public final String toString() {
+        StringBuilder o = a0.s0.o("RepositoryDetailsFragment(__typename=", this.a, ", id=", this.b, ", databaseId=");
+        o.append(this.c);
+        o.append(", contributorsCount=");
+        o.append(this.d);
+        o.append(", defaultBranchRef=");
+        o.append(this.e);
+        o.append(", branchInfo=");
+        o.append(this.f);
+        o.append(", forkCount=");
+        com.github.rudroid.m0.w(o, this.g, ", hasIssuesEnabled=", this.h, ", showActions=");
+        com.github.rudroid.m0.z(o, this.i, ", homepageUrl=", this.j, ", isPrivate=");
+        com.github.rudroid.m0.A(o, this.k, ", isArchived=", this.l, ", isTemplate=");
+        com.github.rudroid.m0.A(o, this.m, ", isFork=", this.n, ", forkingAllowed=");
+        com.github.rudroid.m0.A(o, this.o, ", isEmpty=", this.p, ", isInOrganization=");
+        o.append(this.q);
+        o.append(", issues=");
+        o.append(this.r);
+        o.append(", name=");
+        o.append(this.s);
+        o.append(", owner=");
+        o.append(this.t);
+        o.append(", pullRequests=");
+        o.append(this.u);
+        o.append(", refs=");
+        o.append(this.v);
+        o.append(", readme=");
+        o.append(this.w);
+        o.append(", repositoryTopics=");
+        o.append(this.x);
+        o.append(", url=");
+        f1.e.x(o, this.y, ", shortDescriptionHTML=", this.z, ", descriptionHTML=");
+        f1.e.x(o, this.A, ", description=", this.B, ", viewerCanAdminister=");
+        com.github.rudroid.m0.A(o, this.C, ", viewerCanPush=", this.D, ", viewerCanSubscribe=");
+        o.append(this.E);
+        o.append(", viewerPermission=");
+        o.append(this.F);
+        o.append(", watchers=");
+        o.append(this.G);
+        o.append(", licenseInfo=");
+        o.append(this.H);
+        o.append(", isDiscussionsEnabled=");
+        com.github.rudroid.m0.y(o, this.I, ", discussionsCount=", this.J, ", parent=");
+        o.append(this.K);
+        o.append(", releases=");
+        o.append(this.L);
+        o.append(", latestRelease=");
+        o.append(this.M);
+        o.append(", isViewersFavorite=");
+        o.append(this.N);
+        o.append(", viewerHasBlockedContributors=");
+        com.github.rudroid.m0.A(o, this.O, ", viewerBlockedByOwner=", this.P, ", mergeQueue=");
+        o.append(this.Q);
+        o.append(", projectsV2=");
+        o.append(this.R);
+        o.append(", forks=");
+        o.append(this.S);
+        o.append(", issueTemplateFragment=");
+        o.append(this.T);
+        o.append(", subscribableFragment=");
+        o.append(this.U);
+        o.append(", topContributorsFragment=");
+        o.append(this.V);
+        o.append(", userListMetadataForRepositoryFragment=");
+        o.append(this.W);
+        o.append(", repositoryStarsFragment=");
+        o.append(this.X);
+        o.append(")");
+        return o.toString();
+    }
+}

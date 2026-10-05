@@ -1,0 +1,81 @@
+package jo;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class hq implements aa.w0 {
+    public static final bq Companion = new bq();
+    public final String r;
+    public final aa1.b s;
+    public final aa1.b t;
+
+    public hq(String str, aa1.b bVar, aa1.b bVar2) {
+        k71.k.g(str, "login");
+        this.r = str;
+        this.s = bVar;
+        this.t = bVar2;
+    }
+
+    public final aa.m d() {
+        m10.p00.Companion.getClass();
+        aa.q0 q0Var = m10.p00.F;
+        k71.k.g(q0Var, "type");
+        List list = h10.f3.a;
+        List list2 = h10.f3.a;
+        k71.k.g(list2, "selections");
+        x61.r rVar = x61.r.r;
+        return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof hq)) {
+            return false;
+        }
+        hq hqVar = (hq) obj;
+        return k71.k.b(this.r, hqVar.r) && k71.k.b(this.s, hqVar.s) && k71.k.b(this.t, hqVar.t);
+    }
+
+    public final aa.p0 g() {
+        return aa.c.c(ep.ph.a, false);
+    }
+
+    public final int hashCode() {
+        return this.t.hashCode() + f1.e.a(this.s, this.r.hashCode() * 31, 31);
+    }
+
+    public final String i() {
+        return "1951104ec45309ee0cb2653ee67c6e0fa4b0840c5a4aac3b0b5f9fe0ca92e506";
+    }
+
+    public final String j() {
+        Companion.getClass();
+        return "query OrganizationTeams($login: String!, $query: String, $after: String) { organization(login: $login) { teams(first: 50, query: $query, orderBy: { field: NAME direction: ASC } , after: $after) { pageInfo { hasNextPage endCursor } nodes { __typename id name avatarUrl } } id __typename } id __typename }";
+    }
+
+    public final String name() {
+        return "OrganizationTeams";
+    }
+
+    public final void o(ea.f fVar, aa.w wVar, boolean z) {
+        k71.k.g(wVar, "customScalarAdapters");
+        fVar.z0("login");
+        aa.c.a.b(fVar, wVar, this.r);
+        aa.u0 u0Var = this.s;
+        if (u0Var instanceof aa.u0) {
+            fVar.z0("query");
+            aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
+        }
+        aa.u0 u0Var2 = this.t;
+        if (u0Var2 instanceof aa.u0) {
+            fVar.z0("after");
+            aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
+        }
+    }
+
+    public final String toString() {
+        return f1.e.k(f1.e.o(this.s, "OrganizationTeamsQuery(login=", this.r, ", query=", ", after="), this.t, ")");
+    }
+}

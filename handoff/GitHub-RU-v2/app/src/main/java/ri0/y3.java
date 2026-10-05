@@ -1,0 +1,210 @@
+package ri0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class y3 {
+    public final wd0.c A;
+    public final uh0.c B;
+    public final gj0.c C;
+    public final kf0.d D;
+    public final ue0.c E;
+    public final ig0.e F;
+    public final ik0.c G;
+    public final me0.b H;
+    public final eh0.e I;
+    public final mf0.e J;
+    public final ee0.b K;
+    public final ie0.b L;
+    public final ge0.b M;
+    public final ce0.b N;
+    public final zk0.c O;
+    public final ih0.b P;
+    public final ih0.r Q;
+    public final ye0.e R;
+    public final sf0.e S;
+    public final ke0.a T;
+    public final String a;
+    public final bl0.a b;
+    public final og0.a c;
+    public final ij0.b d;
+    public final ae0.c e;
+    public final kk0.c f;
+    public final qe0.m g;
+    public final kj0.b h;
+    public final ug0.c i;
+    public final mk0.c j;
+    public final ch0.b k;
+    public final ok0.b l;
+    public final oh0.b m;
+    public final if0.b n;
+    public final ef0.i o;
+    public final ej0.f p;
+    public final kh0.c q;
+    public final ui0.d r;
+    public final gg0.b s;
+    public final kg0.c t;
+    public final yj0.c u;
+    public final wj0.c v;
+    public final sj0.d w;
+    public final wi0.c x;
+    public final cj0.b y;
+    public final af0.b z;
+
+    public y3(String str, bl0.a aVar, og0.a aVar2, ij0.b bVar, ae0.c cVar, kk0.c cVar2, qe0.m mVar, kj0.b bVar2, ug0.c cVar3, mk0.c cVar4, ch0.b bVar3, ok0.b bVar4, oh0.b bVar5, if0.b bVar6, ef0.i iVar, ej0.f fVar, kh0.c cVar5, ui0.d dVar, gg0.b bVar7, kg0.c cVar6, yj0.c cVar7, wj0.c cVar8, sj0.d dVar2, wi0.c cVar9, cj0.b bVar8, af0.b bVar9, wd0.c cVar10, uh0.c cVar11, gj0.c cVar12, kf0.d dVar3, ue0.c cVar13, ig0.e eVar, ik0.c cVar14, me0.b bVar10, eh0.e eVar2, mf0.e eVar3, ee0.b bVar11, ie0.b bVar12, ge0.b bVar13, ce0.b bVar14, zk0.c cVar15, ih0.b bVar15, ih0.r rVar, ye0.e eVar4, sf0.e eVar5, ke0.a aVar3) {
+        k71.k.g(str, "__typename");
+        this.a = str;
+        this.b = aVar;
+        this.c = aVar2;
+        this.d = bVar;
+        this.e = cVar;
+        this.f = cVar2;
+        this.g = mVar;
+        this.h = bVar2;
+        this.i = cVar3;
+        this.j = cVar4;
+        this.k = bVar3;
+        this.l = bVar4;
+        this.m = bVar5;
+        this.n = bVar6;
+        this.o = iVar;
+        this.p = fVar;
+        this.q = cVar5;
+        this.r = dVar;
+        this.s = bVar7;
+        this.t = cVar6;
+        this.u = cVar7;
+        this.v = cVar8;
+        this.w = dVar2;
+        this.x = cVar9;
+        this.y = bVar8;
+        this.z = bVar9;
+        this.A = cVar10;
+        this.B = cVar11;
+        this.C = cVar12;
+        this.D = dVar3;
+        this.E = cVar13;
+        this.F = eVar;
+        this.G = cVar14;
+        this.H = bVar10;
+        this.I = eVar2;
+        this.J = eVar3;
+        this.K = bVar11;
+        this.L = bVar12;
+        this.M = bVar13;
+        this.N = bVar14;
+        this.O = cVar15;
+        this.P = bVar15;
+        this.Q = rVar;
+        this.R = eVar4;
+        this.S = eVar5;
+        this.T = aVar3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof y3)) {
+            return false;
+        }
+        y3 y3Var = (y3) obj;
+        return k71.k.b(this.a, y3Var.a) && k71.k.b(this.b, y3Var.b) && k71.k.b(this.c, y3Var.c) && k71.k.b(this.d, y3Var.d) && k71.k.b(this.e, y3Var.e) && k71.k.b(this.f, y3Var.f) && k71.k.b(this.g, y3Var.g) && k71.k.b(this.h, y3Var.h) && k71.k.b(this.i, y3Var.i) && k71.k.b(this.j, y3Var.j) && k71.k.b(this.k, y3Var.k) && k71.k.b(this.l, y3Var.l) && k71.k.b(this.m, y3Var.m) && k71.k.b(this.n, y3Var.n) && k71.k.b(this.o, y3Var.o) && k71.k.b(this.p, y3Var.p) && k71.k.b(this.q, y3Var.q) && k71.k.b(this.r, y3Var.r) && k71.k.b(this.s, y3Var.s) && k71.k.b(this.t, y3Var.t) && k71.k.b(this.u, y3Var.u) && k71.k.b(this.v, y3Var.v) && k71.k.b(this.w, y3Var.w) && k71.k.b(this.x, y3Var.x) && k71.k.b(this.y, y3Var.y) && k71.k.b(this.z, y3Var.z) && k71.k.b(this.A, y3Var.A) && k71.k.b(this.B, y3Var.B) && k71.k.b(this.C, y3Var.C) && k71.k.b(this.D, y3Var.D) && k71.k.b(this.E, y3Var.E) && k71.k.b(this.F, y3Var.F) && k71.k.b(this.G, y3Var.G) && k71.k.b(this.H, y3Var.H) && k71.k.b(this.I, y3Var.I) && k71.k.b(this.J, y3Var.J) && k71.k.b(this.K, y3Var.K) && k71.k.b(this.L, y3Var.L) && k71.k.b(this.M, y3Var.M) && k71.k.b(this.N, y3Var.N) && k71.k.b(this.O, y3Var.O) && k71.k.b(this.P, y3Var.P) && k71.k.b(this.Q, y3Var.Q) && k71.k.b(this.R, y3Var.R) && k71.k.b(this.S, y3Var.S) && k71.k.b(this.T, y3Var.T);
+    }
+
+    public final int hashCode() {
+        int hashCode = this.a.hashCode() * 31;
+        bl0.a aVar = this.b;
+        int hashCode2 = (hashCode + (aVar == null ? 0 : aVar.hashCode())) * 31;
+        og0.a aVar2 = this.c;
+        int hashCode3 = (hashCode2 + (aVar2 == null ? 0 : aVar2.hashCode())) * 31;
+        ij0.b bVar = this.d;
+        int hashCode4 = (hashCode3 + (bVar == null ? 0 : bVar.hashCode())) * 31;
+        ae0.c cVar = this.e;
+        int hashCode5 = (hashCode4 + (cVar == null ? 0 : cVar.hashCode())) * 31;
+        kk0.c cVar2 = this.f;
+        int hashCode6 = (hashCode5 + (cVar2 == null ? 0 : cVar2.hashCode())) * 31;
+        qe0.m mVar = this.g;
+        int hashCode7 = (hashCode6 + (mVar == null ? 0 : mVar.hashCode())) * 31;
+        kj0.b bVar2 = this.h;
+        int hashCode8 = (hashCode7 + (bVar2 == null ? 0 : bVar2.hashCode())) * 31;
+        ug0.c cVar3 = this.i;
+        int hashCode9 = (hashCode8 + (cVar3 == null ? 0 : cVar3.hashCode())) * 31;
+        mk0.c cVar4 = this.j;
+        int hashCode10 = (hashCode9 + (cVar4 == null ? 0 : cVar4.hashCode())) * 31;
+        ch0.b bVar3 = this.k;
+        int hashCode11 = (hashCode10 + (bVar3 == null ? 0 : bVar3.hashCode())) * 31;
+        ok0.b bVar4 = this.l;
+        int hashCode12 = (hashCode11 + (bVar4 == null ? 0 : bVar4.hashCode())) * 31;
+        oh0.b bVar5 = this.m;
+        int hashCode13 = (hashCode12 + (bVar5 == null ? 0 : bVar5.hashCode())) * 31;
+        if0.b bVar6 = this.n;
+        int hashCode14 = (hashCode13 + (bVar6 == null ? 0 : bVar6.hashCode())) * 31;
+        ef0.i iVar = this.o;
+        int hashCode15 = (hashCode14 + (iVar == null ? 0 : iVar.hashCode())) * 31;
+        ej0.f fVar = this.p;
+        int hashCode16 = (hashCode15 + (fVar == null ? 0 : fVar.hashCode())) * 31;
+        kh0.c cVar5 = this.q;
+        int hashCode17 = (hashCode16 + (cVar5 == null ? 0 : cVar5.hashCode())) * 31;
+        ui0.d dVar = this.r;
+        int hashCode18 = (hashCode17 + (dVar == null ? 0 : dVar.hashCode())) * 31;
+        gg0.b bVar7 = this.s;
+        int hashCode19 = (hashCode18 + (bVar7 == null ? 0 : bVar7.hashCode())) * 31;
+        kg0.c cVar6 = this.t;
+        int hashCode20 = (hashCode19 + (cVar6 == null ? 0 : cVar6.hashCode())) * 31;
+        yj0.c cVar7 = this.u;
+        int hashCode21 = (hashCode20 + (cVar7 == null ? 0 : cVar7.hashCode())) * 31;
+        wj0.c cVar8 = this.v;
+        int hashCode22 = (hashCode21 + (cVar8 == null ? 0 : cVar8.hashCode())) * 31;
+        sj0.d dVar2 = this.w;
+        int hashCode23 = (hashCode22 + (dVar2 == null ? 0 : dVar2.hashCode())) * 31;
+        wi0.c cVar9 = this.x;
+        int hashCode24 = (hashCode23 + (cVar9 == null ? 0 : cVar9.hashCode())) * 31;
+        cj0.b bVar8 = this.y;
+        int hashCode25 = (hashCode24 + (bVar8 == null ? 0 : bVar8.hashCode())) * 31;
+        af0.b bVar9 = this.z;
+        int hashCode26 = (hashCode25 + (bVar9 == null ? 0 : bVar9.hashCode())) * 31;
+        wd0.c cVar10 = this.A;
+        int hashCode27 = (hashCode26 + (cVar10 == null ? 0 : cVar10.hashCode())) * 31;
+        uh0.c cVar11 = this.B;
+        int hashCode28 = (hashCode27 + (cVar11 == null ? 0 : cVar11.hashCode())) * 31;
+        gj0.c cVar12 = this.C;
+        int hashCode29 = (hashCode28 + (cVar12 == null ? 0 : cVar12.hashCode())) * 31;
+        kf0.d dVar3 = this.D;
+        int hashCode30 = (hashCode29 + (dVar3 == null ? 0 : dVar3.hashCode())) * 31;
+        ue0.c cVar13 = this.E;
+        int hashCode31 = (hashCode30 + (cVar13 == null ? 0 : cVar13.hashCode())) * 31;
+        ig0.e eVar = this.F;
+        int hashCode32 = (hashCode31 + (eVar == null ? 0 : eVar.hashCode())) * 31;
+        ik0.c cVar14 = this.G;
+        int hashCode33 = (hashCode32 + (cVar14 == null ? 0 : cVar14.hashCode())) * 31;
+        me0.b bVar10 = this.H;
+        int hashCode34 = (hashCode33 + (bVar10 == null ? 0 : bVar10.hashCode())) * 31;
+        eh0.e eVar2 = this.I;
+        int hashCode35 = (hashCode34 + (eVar2 == null ? 0 : eVar2.hashCode())) * 31;
+        mf0.e eVar3 = this.J;
+        int hashCode36 = (hashCode35 + (eVar3 == null ? 0 : eVar3.hashCode())) * 31;
+        ee0.b bVar11 = this.K;
+        int hashCode37 = (hashCode36 + (bVar11 == null ? 0 : bVar11.hashCode())) * 31;
+        ie0.b bVar12 = this.L;
+        int hashCode38 = (hashCode37 + (bVar12 == null ? 0 : bVar12.hashCode())) * 31;
+        ge0.b bVar13 = this.M;
+        int hashCode39 = (hashCode38 + (bVar13 == null ? 0 : bVar13.hashCode())) * 31;
+        ce0.b bVar14 = this.N;
+        int hashCode40 = (hashCode39 + (bVar14 == null ? 0 : bVar14.hashCode())) * 31;
+        zk0.c cVar15 = this.O;
+        int hashCode41 = (hashCode40 + (cVar15 == null ? 0 : cVar15.hashCode())) * 31;
+        ih0.b bVar15 = this.P;
+        int hashCode42 = (hashCode41 + (bVar15 == null ? 0 : bVar15.hashCode())) * 31;
+        ih0.r rVar = this.Q;
+        int hashCode43 = (hashCode42 + (rVar == null ? 0 : rVar.hashCode())) * 31;
+        ye0.e eVar4 = this.R;
+        int hashCode44 = (hashCode43 + (eVar4 == null ? 0 : eVar4.hashCode())) * 31;
+        sf0.e eVar5 = this.S;
+        int hashCode45 = (hashCode44 + (eVar5 == null ? 0 : eVar5.hashCode())) * 31;
+        ke0.a aVar3 = this.T;
+        return hashCode45 + (aVar3 != null ? aVar3.hashCode() : 0);
+    }
+
+    public final String toString() {
+        return "Node(__typename=" + this.a + ", nodeIdFragment=" + this.b + ", issueCommentFields=" + this.c + ", renamedTitleFields=" + this.d + ", assignedFields=" + this.e + ", unassignedFields=" + this.f + ", closedEventFields=" + this.g + ", reopenedEventFields=" + this.h + ", labeledEventFields=" + this.i + ", unlabeledEventFields=" + this.j + ", lockedEventFields=" + this.k + ", unlockedEventFields=" + this.l + ", milestonedEventFields=" + this.m + ", demilestonedEventFields=" + this.n + ", crossReferencedEventFields=" + this.o + ", referencedEventFields=" + this.p + ", mergedEventFields=" + this.q + ", pullRequestCommitFields=" + this.r + ", headRefDeletedEventFields=" + this.s + ", headRefRestoredEventFields=" + this.t + ", reviewRequestedEventFields=" + this.u + ", reviewRequestRemovedEventFields=" + this.v + ", reviewDismissedEventFields=" + this.w + ", pullRequestReviewFields=" + this.x + ", readyForReviewEventFields=" + this.y + ", convertToDraftEventFields=" + this.z + ", addedToProjectEventFields=" + this.A + ", movedColumnsInProjectEventFields=" + this.B + ", removedFromProjectEventFields=" + this.C + ", deployedEventFields=" + this.D + ", commentDeletedEventFields=" + this.E + ", forcePushEventFields=" + this.F + ", transferredEventFields=" + this.G + ", baseRefChangedEventFields=" + this.H + ", markedAsDuplicateEventFields=" + this.I + ", deployEnvChangedEventFields=" + this.J + ", autoMergeEnabledEventFields=" + this.K + ", autoSquashEnabledEventFields=" + this.L + ", autoRebaseEnabledEventFields=" + this.M + ", autoMergeDisabledEventFields=" + this.N + ", userBlockedEventFields=" + this.O + ", addedToMergeQueueEventFields=" + this.P + ", removedFromMergeQueueFields=" + this.Q + ", connectedEventFields=" + this.R + ", disconnectedEventFields=" + this.S + ", automaticBaseChangedEventFields=" + this.T + ")";
+    }
+}

@@ -1,0 +1,14 @@
+package ak;
+
+import m7.w;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class d {
+    public static final c Companion = new c();
+    public final w a;
+    public final b b = new b(0);
+
+    public d(w wVar) {
+        this.a = wVar;
+    }
+}

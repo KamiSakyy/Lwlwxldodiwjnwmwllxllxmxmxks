@@ -1,0 +1,63 @@
+package fd0;
+
+import java.util.List;
+import kc0.sz;
+import kc0.tz;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class qo implements aa.a {
+    public static final qo a = new qo();
+    public static final List b = sy.d0.o(new String[]{"userCount", "pageInfo", "nodes"});
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        Integer num = null;
+        sz szVar = null;
+        List list = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                long nextLong = eVar.nextLong();
+                if (nextLong > 2147483647L) {
+                    while (nextLong > 2147483647L) {
+                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                    }
+                    num = Integer.valueOf((int) nextLong);
+                } else {
+                    num = Integer.valueOf((int) nextLong);
+                }
+            } else if (r0 == 1) {
+                szVar = (sz) aa.c.c(po.a, false).a(eVar, wVar);
+            } else {
+                if (r0 != 2) {
+                    break;
+                }
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(no.a, true)))).a(eVar, wVar);
+            }
+        }
+        if (num == null) {
+            k41.b.B(eVar, "userCount");
+            throw null;
+        }
+        int intValue = num.intValue();
+        if (szVar != null) {
+            return new tz(intValue, szVar, list);
+        }
+        k41.b.B(eVar, "pageInfo");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        tz tzVar = (tz) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(tzVar, "value");
+        fVar.z0("userCount");
+        fVar.z(tzVar.a);
+        fVar.z0("pageInfo");
+        aa.c.c(po.a, false).b(fVar, wVar, tzVar.b);
+        fVar.z0("nodes");
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(no.a, true)))).b(fVar, wVar, tzVar.c);
+    }
+}

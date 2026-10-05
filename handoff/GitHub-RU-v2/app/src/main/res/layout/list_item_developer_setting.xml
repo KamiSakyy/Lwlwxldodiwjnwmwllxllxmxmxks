@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomPreference"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/default_margin">
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Primary.Medium" />
+        <Space android:layout_width="fill_parent" android:layout_height="@dimen/default_margin_quarter" />
+        <TextView android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Secondary.Small" />
+    </LinearLayout>
+    <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/pref_switch" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

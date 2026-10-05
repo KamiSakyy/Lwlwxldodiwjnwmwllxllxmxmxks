@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/context_container" android:tag="layout/list_item_file_rich_image_diff_0" android:background="@color/collapsedDiffBackground" android:padding="@dimen/default_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/load_rich_diff" android:padding="@dimen/default_margin_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/files_context_load_rich_image_diff" style="@style/TextButton" />
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" />
+    <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

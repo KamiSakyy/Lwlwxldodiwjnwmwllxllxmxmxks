@@ -1,0 +1,33 @@
+package ga0;
+
+import aa.m;
+import aa.r;
+import hc0.bb;
+import hc0.db;
+import hc0.fb;
+import hc0.iu;
+import hc0.kz;
+import java.util.List;
+import sy.d0;
+import v8.l0;
+import x61.l;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class b {
+    public static final List a;
+
+    static {
+        db.Companion.getClass();
+        r b = l0.b(db.a);
+        x61.r rVar = x61.r.r;
+        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        bb.Companion.getClass();
+        m mVar = new m("id", l0.b(bb.a), (String) null, rVar, rVar, rVar);
+        iu.Companion.getClass();
+        m mVar2 = new m("starredRepositories", l0.b(iu.a), (String) null, rVar, rVar, n);
+        fb.Companion.getClass();
+        List r = l.r(new m[]{mVar, mVar2, new m("__typename", l0.b(fb.a), (String) null, rVar, rVar, rVar)});
+        kz.Companion.getClass();
+        a = d0.n(new m("viewer", l0.b(kz.O), (String) null, rVar, rVar, r));
+    }
+}

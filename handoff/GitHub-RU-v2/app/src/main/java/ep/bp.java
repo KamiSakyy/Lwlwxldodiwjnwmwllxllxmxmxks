@@ -1,0 +1,58 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class bp implements aa.a {
+    public static final bp a = new bp();
+    public static final List b = sy.d0.o("defaultBranchRef", "refs", "id", "__typename");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jo.vz vzVar = null;
+        jo.yz yzVar = null;
+        String str = null;
+        String str2 = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                vzVar = (jo.vz) aa.c.b(aa.c.c(xo.a, false)).a(eVar, wVar);
+            } else if (r0 == 1) {
+                yzVar = (jo.yz) aa.c.b(aa.c.c(ap.a, false)).a(eVar, wVar);
+            } else if (r0 == 2) {
+                str = (String) aa.c.a.a(eVar, wVar);
+            } else {
+                if (r0 != 3) {
+                    break;
+                }
+                str2 = (String) aa.c.a.a(eVar, wVar);
+            }
+        }
+        if (str == null) {
+            k41.b.B(eVar, "id");
+            throw null;
+        }
+        if (str2 != null) {
+            return new jo.zz(vzVar, yzVar, str, str2);
+        }
+        k41.b.B(eVar, "__typename");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.zz zzVar = (jo.zz) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(zzVar, "value");
+        fVar.z0("defaultBranchRef");
+        aa.c.b(aa.c.c(xo.a, false)).b(fVar, wVar, zzVar.a);
+        fVar.z0("refs");
+        aa.c.b(aa.c.c(ap.a, false)).b(fVar, wVar, zzVar.b);
+        fVar.z0("id");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, zzVar.c);
+        fVar.z0("__typename");
+        bVar.b(fVar, wVar, zzVar.d);
+    }
+}

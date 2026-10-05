@@ -1,0 +1,92 @@
+package n20;
+
+import a81.t;
+import aa.a0;
+import aa.j0;
+import aa.m;
+import aa.n;
+import aa.q0;
+import aa.r;
+import aa.s;
+import aa.u0;
+import aa.x;
+import hc0.bb;
+import hc0.db;
+import hc0.fb;
+import hc0.j2;
+import hc0.l2;
+import hc0.n2;
+import hc0.p2;
+import hc0.pm;
+import hc0.q00;
+import hc0.t0;
+import hc0.v2;
+import hc0.xa;
+import hc0.yg;
+import java.util.List;
+import sy.d0;
+import v8.l0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class f {
+    public static final List a;
+
+    static {
+        db.Companion.getClass();
+        x xVar = db.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        fb.Companion.getClass();
+        x xVar2 = fb.a;
+        s mVar = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        bb.Companion.getClass();
+        x xVar3 = bb.a;
+        s mVar2 = new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        List n2 = d0.n("WorkflowRun");
+        List list = h20.c.a;
+        List r = x61.l.r(new s[]{mVar, mVar2, no.a.c(list, "selections", "WorkflowRun", n2, list)});
+        s mVar3 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        List n3 = d0.n("CheckRun");
+        List list2 = h20.f.a;
+        List r2 = x61.l.r(new s[]{mVar3, no.a.c(list2, "selections", "CheckRun", n3, list2), new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+        m mVar4 = new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        l2.Companion.getClass();
+        List r3 = x61.l.r(new m[]{mVar4, new m("nodes", l0.a(l2.f), (String) null, rVar, rVar, r2)});
+        List n4 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n5 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n6 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n7 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        m mVar5 = new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        p2.Companion.getClass();
+        m mVar6 = new m("status", l0.b(p2.s), (String) null, rVar, rVar, rVar);
+        j2.Companion.getClass();
+        a0 a0Var = j2.s;
+        k71.k.g(a0Var, "type");
+        m mVar7 = new m("conclusion", a0Var, (String) null, rVar, rVar, rVar);
+        m mVar8 = new m("duration", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        xa.Companion.getClass();
+        m mVar9 = new m("rerunnable", l0.b(xa.a), (String) null, rVar, rVar, rVar);
+        t0.Companion.getClass();
+        q0 q0Var = t0.a;
+        k71.k.g(q0Var, "type");
+        m mVar10 = new m("artifacts", q0Var, (String) null, rVar, rVar, n);
+        q00.Companion.getClass();
+        q0 q0Var2 = q00.b;
+        k71.k.g(q0Var2, "type");
+        m mVar11 = new m("workflowRun", q0Var2, (String) null, rVar, rVar, r);
+        n2.Companion.getClass();
+        q0 q0Var3 = n2.a;
+        k71.k.g(q0Var3, "type");
+        v2.Companion.getClass();
+        t tVar = v2.b;
+        aa.k kVar = new aa.k(tVar, new u0(no.a.u("conclusions", x61.l.r(new String[]{"CANCELLED", "FAILURE", "TIMED_OUT", "ACTION_REQUIRED", "STALE", "STARTUP_FAILURE"}))));
+        t tVar2 = v2.c;
+        List r4 = x61.l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("CheckSuite", d0.n("CheckSuite"), x61.l.r(new m[]{mVar5, mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, new m("checkRuns", q0Var3, "failedCheckRuns", rVar, x61.l.r(new aa.k[]{kVar, new aa.k(tVar2, new u0(5))}), r3), new m("checkRuns", q0Var3, "runningCheckRuns", rVar, x61.l.r(new aa.k[]{new aa.k(tVar, new u0(no.a.u("statuses", x61.l.r(new String[]{"IN_PROGRESS", "PENDING", "QUEUED", "REQUESTED", "WAITING"})))), new aa.k(tVar2, new u0(1))}), n4), new m("checkRuns", q0Var3, "skippedCheckRuns", rVar, x61.l.r(new aa.k[]{new aa.k(tVar, new u0(no.a.u("conclusions", d0.n("SKIPPED")))), new aa.k(tVar2, new u0(1))}), n5), new m("checkRuns", q0Var3, "neutralCheckRuns", rVar, x61.l.r(new aa.k[]{new aa.k(tVar, new u0(no.a.u("conclusions", d0.n("NEUTRAL")))), new aa.k(tVar2, new u0(1))}), n6), new m("checkRuns", q0Var3, "successfulCheckRuns", rVar, x61.l.r(new aa.k[]{new aa.k(tVar, new u0(no.a.u("conclusions", d0.n("SUCCESS")))), new aa.k(tVar2, new u0(1))}), n7)}))});
+        yg.Companion.getClass();
+        j0 j0Var = yg.a;
+        k71.k.g(j0Var, "type");
+        pm.Companion.getClass();
+        a = d0.n(new m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new u0(new aa.t("id"))), r4));
+    }
+}

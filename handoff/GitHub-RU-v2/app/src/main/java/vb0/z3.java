@@ -1,0 +1,23 @@
+package vb0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class z3 extends c71.c {
+    public /* synthetic */ Object u;
+    public int v;
+    public final /* synthetic */ c00.f w;
+    public y71.j x;
+    public int y;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public z3(c00.f fVar, a71.c cVar) {
+        super(cVar);
+        this.w = fVar;
+    }
+
+    @Override // c71.a
+    public final Object v(Object obj) {
+        this.u = obj;
+        this.v |= Integer.MIN_VALUE;
+        return this.w.c((Object) null, this);
+    }
+}

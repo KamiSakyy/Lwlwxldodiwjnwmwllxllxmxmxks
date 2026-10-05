@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/container" android:tag="layout/list_item_project_field_single_select_option_0" android:background="@drawable/list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="start|center" android:id="@id/options_name" android:padding="@dimen/default_margin" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/selected_indicator" android:padding="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_check_24" android:contentDescription="@string/label_selected" app:tint="@color/link" />
+</LinearLayout>

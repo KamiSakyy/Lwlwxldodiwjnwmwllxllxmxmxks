@@ -1,0 +1,30 @@
+package p20;
+
+import java.util.List;
+import u10.c00;
+import u10.f00;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class to implements aa.a {
+    public static final to a = new to();
+    public static final List b = sy.d0.n("submitPullRequestReview");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        f00 f00Var = null;
+        while (eVar.r0(b) == 0) {
+            f00Var = (f00) aa.c.b(aa.c.c(wo.a, false)).a(eVar, wVar);
+        }
+        return new c00(f00Var);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        c00 c00Var = (c00) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(c00Var, "value");
+        fVar.z0("submitPullRequestReview");
+        aa.c.b(aa.c.c(wo.a, false)).b(fVar, wVar, c00Var.a);
+    }
+}

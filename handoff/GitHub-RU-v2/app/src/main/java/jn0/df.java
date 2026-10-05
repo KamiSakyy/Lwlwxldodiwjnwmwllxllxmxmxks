@@ -1,0 +1,83 @@
+package jn0;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class df implements aa.w0 {
+    public static final ue Companion = new ue();
+    public final String r;
+    public final String s;
+    public final String t;
+    public final String u;
+
+    public df(String str, String str2, String str3, String str4) {
+        k71.k.g(str, "owner");
+        k71.k.g(str2, "name");
+        k71.k.g(str3, "oid");
+        k71.k.g(str4, "path");
+        this.r = str;
+        this.s = str2;
+        this.t = str3;
+        this.u = str4;
+    }
+
+    public final aa.m d() {
+        pz0.su.Companion.getClass();
+        aa.q0 q0Var = pz0.su.z;
+        k71.k.g(q0Var, "type");
+        List list = kz0.l1.a;
+        List list2 = kz0.l1.a;
+        k71.k.g(list2, "selections");
+        x61.r rVar = x61.r.r;
+        return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof df)) {
+            return false;
+        }
+        df dfVar = (df) obj;
+        return k71.k.b(this.r, dfVar.r) && k71.k.b(this.s, dfVar.s) && k71.k.b(this.t, dfVar.t) && k71.k.b(this.u, dfVar.u);
+    }
+
+    public final aa.p0 g() {
+        return aa.c.c(eo0.y9.a, false);
+    }
+
+    public final int hashCode() {
+        return this.u.hashCode() + com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.r.hashCode() * 31, this.s, 31), this.t, 31);
+    }
+
+    public final String i() {
+        return "73c7a9f3050b016bb99e66e12c73d49fb090d5b212179caebf24f001af3dbf4c";
+    }
+
+    public final String j() {
+        Companion.getClass();
+        return "query FetchFileContents($owner: String!, $name: String!, $oid: String!, $path: String!) { repository(owner: $owner, name: $name) { id repoObject: object(expression: $oid) { __typename ...NodeIdFragment oid ... on Commit { id file(path: $path) { extension fileType { __typename ... on MarkdownFileType { contentRaw } ... on TextFileType { contentRaw } } } } } __typename } id __typename }  fragment NodeIdFragment on Node { id __typename }";
+    }
+
+    public final String name() {
+        return "FetchFileContents";
+    }
+
+    public final void o(ea.f fVar, aa.w wVar, boolean z) {
+        k71.k.g(wVar, "customScalarAdapters");
+        fVar.z0("owner");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, this.r);
+        fVar.z0("name");
+        bVar.b(fVar, wVar, this.s);
+        fVar.z0("oid");
+        bVar.b(fVar, wVar, this.t);
+        fVar.z0("path");
+        bVar.b(fVar, wVar, this.u);
+    }
+
+    public final String toString() {
+        return x.i.k(a0.s0.o("FetchFileContentsQuery(owner=", this.r, ", name=", this.s, ", oid="), this.t, ", path=", this.u, ")");
+    }
+}

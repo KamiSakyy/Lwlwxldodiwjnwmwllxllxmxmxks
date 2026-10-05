@@ -1,0 +1,97 @@
+package h20;
+
+import aa.a0;
+import aa.m;
+import aa.q0;
+import aa.r;
+import aa.u0;
+import aa.x;
+import hc0.ap;
+import hc0.bb;
+import hc0.db;
+import hc0.dq;
+import hc0.fb;
+import hc0.fq;
+import hc0.h6;
+import hc0.j2;
+import hc0.jn;
+import hc0.kz;
+import hc0.lk;
+import hc0.m00;
+import hc0.p2;
+import hc0.u00;
+import hc0.v2;
+import hc0.xk;
+import java.util.List;
+import k71.k;
+import sy.d0;
+import v8.l0;
+import x61.l;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class j {
+    public static final List a;
+
+    static {
+        bb.Companion.getClass();
+        x xVar = bb.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
+        fb.Companion.getClass();
+        x xVar2 = fb.a;
+        List r = l.r(new m[]{mVar, new m("name", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r2 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r3 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        m mVar2 = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        m mVar3 = new m("name", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        dq.Companion.getClass();
+        m mVar4 = new m("owner", l0.b(dq.a), (String) null, rVar, rVar, r2);
+        fq.Companion.getClass();
+        a0 a0Var = fq.s;
+        k.g(a0Var, "type");
+        m mVar5 = new m("viewerPermission", a0Var, (String) null, rVar, rVar, rVar);
+        jn.Companion.getClass();
+        q0 q0Var = jn.b;
+        k.g(q0Var, "type");
+        List r4 = l.r(new m[]{mVar2, mVar3, mVar4, mVar5, new m("defaultBranchRef", q0Var, (String) null, rVar, rVar, r3), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        m mVar6 = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        db.Companion.getClass();
+        x xVar3 = db.a;
+        List r5 = l.r(new m[]{mVar6, new m("number", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        lk.Companion.getClass();
+        List n = d0.n(new m("nodes", l0.a(lk.J), (String) null, rVar, rVar, r5));
+        List r6 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r7 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        m mVar7 = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        p2.Companion.getClass();
+        m mVar8 = new m("status", l0.b(p2.s), (String) null, rVar, rVar, rVar);
+        j2.Companion.getClass();
+        a0 a0Var2 = j2.s;
+        k.g(a0Var2, "type");
+        m mVar9 = new m("conclusion", a0Var2, (String) null, rVar, rVar, rVar);
+        m mVar10 = new m("workflowFilePath", xVar2, (String) null, rVar, rVar, rVar);
+        ap.Companion.getClass();
+        m mVar11 = new m("repository", l0.b(ap.k0), (String) null, rVar, rVar, r4);
+        xk.Companion.getClass();
+        q0 q0Var2 = xk.a;
+        k.g(q0Var2, "type");
+        v2.Companion.getClass();
+        m mVar12 = new m("matchingPullRequests", q0Var2, (String) null, rVar, no.a.s(v2.e, new u0(1)), n);
+        m mVar13 = new m("duration", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        m mVar14 = new m("branch", q0Var, (String) null, rVar, rVar, r6);
+        kz.Companion.getClass();
+        q0 q0Var3 = kz.O;
+        k.g(q0Var3, "type");
+        List r8 = l.r(new m[]{mVar7, mVar8, mVar9, mVar10, mVar11, mVar12, mVar13, mVar14, new m("creator", q0Var3, (String) null, rVar, rVar, r7), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        m mVar15 = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        m mVar16 = new m("title", xVar2, (String) null, rVar, rVar, rVar);
+        m mVar17 = new m("runNumber", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        u00.Companion.getClass();
+        m mVar18 = new m("eventType", l0.b(u00.s), (String) null, rVar, rVar, rVar);
+        h6.Companion.getClass();
+        m mVar19 = new m("createdAt", l0.b(h6.a), (String) null, rVar, rVar, rVar);
+        m00.Companion.getClass();
+        a = l.r(new m[]{mVar15, mVar16, mVar17, mVar18, mVar19, new m("workflow", l0.b(m00.c), (String) null, rVar, rVar, r), new m("checkSuite", l0.b(v2.f), (String) null, rVar, rVar, r8), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/block_switch_item" android:tag="layout/list_item_block_switch_0" android:background="@color/listItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginBottom="@dimen/default_margin" layout="@layout/list_item_divider" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/switch_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/block_from_org_hide_comments_switch" android:layout_weight="1.0" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/switch_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

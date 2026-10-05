@@ -1,0 +1,28 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class sl implements aa.a {
+    public static final sl a = new sl();
+    public static final List b = sy.d0.n("removeReaction");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jo.nv nvVar = null;
+        while (eVar.r0(b) == 0) {
+            nvVar = (jo.nv) aa.c.b(aa.c.c(vl.a, false)).a(eVar, wVar);
+        }
+        return new jo.kv(nvVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.kv kvVar = (jo.kv) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(kvVar, "value");
+        fVar.z0("removeReaction");
+        aa.c.b(aa.c.c(vl.a, false)).b(fVar, wVar, kvVar.a);
+    }
+}

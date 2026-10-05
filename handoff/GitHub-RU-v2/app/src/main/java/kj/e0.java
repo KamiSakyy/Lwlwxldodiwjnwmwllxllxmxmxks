@@ -1,0 +1,20 @@
+package kj;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class e0 extends c71.c {
+    public /* synthetic */ Object u;
+    public int v;
+    public final /* synthetic */ c w;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public e0(c cVar, a71.c cVar2) {
+        super(cVar2);
+        this.w = cVar;
+    }
+
+    public final Object v(Object obj) {
+        this.u = obj;
+        this.v |= Integer.MIN_VALUE;
+        return this.w.c(null, this);
+    }
+}

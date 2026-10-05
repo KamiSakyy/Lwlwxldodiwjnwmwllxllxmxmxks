@@ -1,0 +1,36 @@
+package u10;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class pr {
+    public final String a;
+    public final String b;
+    public final c30.y c;
+
+    public pr(String str, String str2, c30.y yVar) {
+        this.a = str;
+        this.b = str2;
+        this.c = yVar;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof pr)) {
+            return false;
+        }
+        pr prVar = (pr) obj;
+        return k71.k.b(this.a, prVar.a) && k71.k.b(this.b, prVar.b) && k71.k.b(this.c, prVar.c);
+    }
+
+    public final int hashCode() {
+        return this.c.hashCode() + com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31);
+    }
+
+    public final String toString() {
+        StringBuilder o = a0.s0.o("Repository(__typename=", this.a, ", id=", this.b, ", repoFileFragment=");
+        o.append(this.c);
+        o.append(")");
+        return o.toString();
+    }
+}

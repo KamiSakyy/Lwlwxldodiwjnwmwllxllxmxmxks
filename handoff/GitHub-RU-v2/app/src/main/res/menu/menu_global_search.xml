@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_24" android:id="@id/search_item" android:title="@string/menu_search" app:actionViewClass="com.github.rudroid.views.FullWidthSearchView" app:iconTint="@color/colorAccent" app:showAsAction="always|collapseActionView" />
+    <item android:id="@id/search_refresh" android:title="@string/menu_refresh" app:showAsAction="collapseActionView" />
+</menu>

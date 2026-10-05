@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:tag="layout/fragment_merge_message_0" android:background="@color/backgroundSecondary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="top" android:id="@id/commit_headline" android:background="@android:color/transparent" android:paddingTop="@dimen/default_margin_1_5x" android:paddingBottom="@dimen/default_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/triage_merge_commit_message_headline_hint" android:inputType="textAutoComplete|textAutoCorrect|textCapSentences|textMultiLine" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:importantForAutofill="no" style="@style/EditText.Title" />
+            <com.github.rudroid.views.AutoCompleteView android:id="@id/commit_body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/app_bar_layout" layout="@layout/flat_app_bar_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

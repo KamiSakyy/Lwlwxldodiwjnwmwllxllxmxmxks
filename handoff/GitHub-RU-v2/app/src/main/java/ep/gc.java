@@ -1,0 +1,57 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class gc implements aa.a {
+    public static final gc a = new gc();
+    public static final List b = sy.d0.o("codeSearch", "id", "__typename");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jo.bi biVar = null;
+        String str = null;
+        String str2 = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                biVar = (jo.bi) aa.c.c(fc.a, false).a(eVar, wVar);
+            } else if (r0 == 1) {
+                str = (String) aa.c.a.a(eVar, wVar);
+            } else {
+                if (r0 != 2) {
+                    break;
+                }
+                str2 = (String) aa.c.a.a(eVar, wVar);
+            }
+        }
+        if (biVar == null) {
+            k41.b.B(eVar, "codeSearch");
+            throw null;
+        }
+        if (str == null) {
+            k41.b.B(eVar, "id");
+            throw null;
+        }
+        if (str2 != null) {
+            return new jo.di(biVar, str, str2);
+        }
+        k41.b.B(eVar, "__typename");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.di diVar = (jo.di) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(diVar, "value");
+        fVar.z0("codeSearch");
+        aa.c.c(fc.a, false).b(fVar, wVar, diVar.a);
+        fVar.z0("id");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, diVar.b);
+        fVar.z0("__typename");
+        bVar.b(fVar, wVar, diVar.c);
+    }
+}

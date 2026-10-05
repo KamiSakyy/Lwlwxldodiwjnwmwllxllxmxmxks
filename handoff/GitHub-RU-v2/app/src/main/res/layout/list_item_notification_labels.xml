@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notification_labels_container" android:tag="layout/list_item_notification_labels_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:tag="binding_1" android:layout_width="@dimen/labels_margin_start" android:layout_height="@dimen/notification_icon_size" />
+    <com.github.rudroid.spans.RoundedBgTextView android:ellipsize="end" android:id="@id/labels_text_view" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Secondary.MediumSmall" />
+</LinearLayout>

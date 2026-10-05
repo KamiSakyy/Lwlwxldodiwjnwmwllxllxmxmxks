@@ -1,0 +1,29 @@
+package eo0;
+
+import java.util.List;
+import jn0.ea0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class aw implements aa.a {
+    public static final aw a = new aw();
+    public static final List b = sy.d0.n("filters");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        List list = null;
+        while (eVar.r0(b) == 0) {
+            list = (List) aa.c.b(aa.c.a(aa.c.c(zv.a, true))).a(eVar, wVar);
+        }
+        return new ea0(list);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        ea0 ea0Var = (ea0) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(ea0Var, "value");
+        fVar.z0("filters");
+        aa.c.b(aa.c.a(aa.c.c(zv.a, true))).b(fVar, wVar, ea0Var.a);
+    }
+}

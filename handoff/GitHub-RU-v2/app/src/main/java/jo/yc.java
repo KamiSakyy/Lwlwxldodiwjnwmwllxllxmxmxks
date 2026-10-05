@@ -1,0 +1,63 @@
+package jo;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class yc implements aa.w0 {
+    public static final uc Companion = new uc();
+    public final String r;
+
+    public yc(String str) {
+        k71.k.g(str, "nodeId");
+        this.r = str;
+    }
+
+    public final aa.m d() {
+        m10.p00.Companion.getClass();
+        aa.q0 q0Var = m10.p00.F;
+        k71.k.g(q0Var, "type");
+        List list = h10.c1.a;
+        List list2 = h10.c1.a;
+        k71.k.g(list2, "selections");
+        x61.r rVar = x61.r.r;
+        return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof yc) && k71.k.b(this.r, ((yc) obj).r);
+    }
+
+    public final aa.p0 g() {
+        return aa.c.c(ep.p8.a, false);
+    }
+
+    public final int hashCode() {
+        return this.r.hashCode();
+    }
+
+    public final String i() {
+        return "518f507c7492577cde560d7edd555e4323a2fffc0132dfba47bd57c0d3ea74ce";
+    }
+
+    public final String j() {
+        Companion.getClass();
+        return "query DiscussionQuery($nodeId: ID!) { node(id: $nodeId) { __typename ... on Discussion { __typename ...DiscussionFragment } id } id __typename }  fragment NodeIdFragment on Node { id __typename }  fragment avatarFragment on Actor { __typename ...NodeIdFragment avatarUrl }  fragment actorFields on Actor { __typename login url ...avatarFragment ...NodeIdFragment ... on Bot { id displayName isCopilot isAgent } ... on User { id name } }  fragment updatableFields on Updatable { __typename ...NodeIdFragment viewerCanUpdate }  fragment CommentFragment on Comment { __typename id author { __typename ...actorFields } editor { __typename ...actorFields } lastEditedAt includesCreatedEdit bodyHTML(hideCodeBlobs: true, renderSuggestedChangesAsText: false, includeSuggestedChangesId: true, unfurlReferences: true, scrubVideo: false) body createdAt viewerDidAuthor authorAssociation ...updatableFields }  fragment OrgBlockableFragment on OrgBlockable { __typename ...NodeIdFragment viewerCanBlockFromOrg viewerCanUnblockFromOrg }  fragment MinimizableCommentFragment on Minimizable { __typename ...NodeIdFragment isMinimized minimizedReason viewerCanMinimize }  fragment UpvoteFragment on Votable { __typename ...NodeIdFragment viewerCanUpvote viewerHasUpvoted upvoteCount }  fragment ReactionFragment on Reactable { __typename id viewerCanReact reactionGroups { __typename viewerHasReacted reactors(first: 1) { __typename totalCount } content } }  fragment DiscussionCommentFragment on DiscussionComment { __typename id ...CommentFragment ...OrgBlockableFragment ...MinimizableCommentFragment url viewerCanUpdate viewerCanMarkAsAnswer viewerCanUnmarkAsAnswer isAnswer deletedAt discussion { id viewerCanUpvote answerChosenBy { __typename ...NodeIdFragment login } __typename } ...UpvoteFragment ...ReactionFragment }  fragment DiscussionCategoryFragment on DiscussionCategory { id name emojiHTML isAnswerable isPollable description template { url } __typename }  fragment DiscussionPollOptionFragment on DiscussionPollOption { id option viewerHasVoted totalVoteCount __typename }  fragment DiscussionPollFragment on DiscussionPoll { id question viewerHasVoted totalVoteCount viewerCanVote options(first: 8) { nodes { __typename ...DiscussionPollOptionFragment id } } __typename }  fragment labelFields on Label { __typename id name color }  fragment LabelsFragment on Labelable { __typename ... on Issue { id labels(first: 25) { __typename nodes { __typename ...labelFields id } } } ... on Discussion { id labels(first: 25) { __typename nodes { __typename ...labelFields id } } } ... on PullRequest { id labels(first: 25) { __typename nodes { __typename ...labelFields id } } } }  fragment DiscussionClosedStateFragment on Discussion { id closed viewerCanClose viewerCanReopen closedAt stateReason __typename }  fragment DiscussionFragment on Discussion { __typename id title updatedAt createdAt lastEditedAt number viewerDidAuthor viewerCanUpdate viewerCanUpvote authorAssociation url repository { id name owner { id login } viewerPermission isOrganizationDiscussionRepository __typename } answerChosenAt answer { __typename id replyTo { id __typename } ...DiscussionCommentFragment } category { __typename ...DiscussionCategoryFragment id } author { __typename ...actorFields ... on Node { id } } comments { totalCount } poll { __typename ...DiscussionPollFragment id } ...LabelsFragment ...UpvoteFragment ...DiscussionClosedStateFragment }";
+    }
+
+    public final String name() {
+        return "DiscussionQuery";
+    }
+
+    public final void o(ea.f fVar, aa.w wVar, boolean z) {
+        k71.k.g(wVar, "customScalarAdapters");
+        fVar.z0("nodeId");
+        aa.c.a.b(fVar, wVar, this.r);
+    }
+
+    public final String toString() {
+        return f1.e.z("DiscussionQuery(nodeId=", this.r, ")");
+    }
+}

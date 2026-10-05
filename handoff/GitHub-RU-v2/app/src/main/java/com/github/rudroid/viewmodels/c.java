@@ -1,0 +1,17 @@
+package com.github.rudroid.viewmodels;
+
+import android.app.Application;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class c implements b {
+    public final Application r;
+    public final y71.y1 s;
+    public final y71.y1 t;
+
+    public c(Application application) {
+        this.r = application;
+        y71.y1 c = y71.n1.c(a.u);
+        this.s = c;
+        this.t = c;
+    }
+}

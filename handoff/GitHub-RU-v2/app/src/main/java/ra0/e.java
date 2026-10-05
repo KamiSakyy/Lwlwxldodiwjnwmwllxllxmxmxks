@@ -1,0 +1,67 @@
+package ra0;
+
+import aa.n0;
+import aa.p0;
+import aa.q0;
+import hc0.t5;
+import hc0.wg;
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class e implements n0 {
+    public static final a Companion = new a();
+    public final t5 r;
+
+    public e(t5 t5Var) {
+        this.r = t5Var;
+    }
+
+    public final aa.m d() {
+        wg.Companion.getClass();
+        q0 q0Var = wg.c1;
+        k71.k.g(q0Var, "type");
+        List list = ta0.a.a;
+        List list2 = ta0.a.a;
+        k71.k.g(list2, "selections");
+        x61.r rVar = x61.r.r;
+        return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof e) && k71.k.b(this.r, ((e) obj).r);
+    }
+
+    public final p0 g() {
+        return aa.c.c(sa0.b.a, false);
+    }
+
+    public final int hashCode() {
+        return this.r.hashCode();
+    }
+
+    public final String i() {
+        return "ac115ea13a8a61332e2ab9ca27a2f29e2632082e0ab1f14d40188db4003936a9";
+    }
+
+    public final String j() {
+        Companion.getClass();
+        return "mutation CreateNewList($input: CreateUserListInput!) { createUserList(input: $input) { list { __typename ...UserListFragment id } } }  fragment UserListFragment on UserList { id name isPrivate description items { totalCount } slug __typename }";
+    }
+
+    public final String name() {
+        return "CreateNewList";
+    }
+
+    public final void o(ea.f fVar, aa.w wVar, boolean z) {
+        k71.k.g(wVar, "customScalarAdapters");
+        fVar.z0("input");
+        aa.c.c(ic0.a.h, false).b(fVar, wVar, this.r);
+    }
+
+    public final String toString() {
+        return "CreateNewListMutation(input=" + this.r + ")";
+    }
+}

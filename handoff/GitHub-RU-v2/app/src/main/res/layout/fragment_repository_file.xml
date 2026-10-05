@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:tag="layout/fragment_repository_file_0" android:background="@color/backgroundPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rudroid.views.LoadingViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentView="@layout/content_view_container" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/app_bar_layout" layout="@layout/app_bar_layout" />
+    <LinearLayout android:gravity="end" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:paddingBottom="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/compose_copilot_boa" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/compose_show_file_navigator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_half" />
+    </LinearLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_bottom_sheet_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

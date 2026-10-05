@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/empty_swipe_container" android:tag="layout-land/default_empty_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/empty_state_image" android:layout_width="0.0dip" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingStart="@dimen/default_margin_1_5x" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/actionable_contet" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/actionable_contet" android:paddingTop="@dimen/default_margin_1_5x" android:paddingBottom="@dimen/default_margin_1_5x" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin_1_5x" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/empty_state_image" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.6">
+                <TextView android:gravity="center_horizontal" android:id="@id/empty_state_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_1_5x" android:layout_marginEnd="@dimen/default_margin_1_5x" style="@style/Header" />
+                <TextView android:gravity="center_horizontal" android:id="@id/empty_state_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" style="@style/Secondary" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/empty_button" android:layout_width="wrap_content" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/default_margin" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/ButtonPrimary" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

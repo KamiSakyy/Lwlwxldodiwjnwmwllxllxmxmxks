@@ -1,0 +1,63 @@
+package cu0;
+
+import a0.s0;
+import aa.h0;
+import com.github.rudroid.copilot.h1;
+import pz0.wt;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class l implements h0 {
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final g d;
+    public final wt e;
+    public final j f;
+    public final String g;
+    public final h h;
+
+    public l(String str, String str2, boolean z, g gVar, wt wtVar, j jVar, String str3, h hVar) {
+        this.a = str;
+        this.b = str2;
+        this.c = z;
+        this.d = gVar;
+        this.e = wtVar;
+        this.f = jVar;
+        this.g = str3;
+        this.h = hVar;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof l)) {
+            return false;
+        }
+        l lVar = (l) obj;
+        return k71.k.b(this.a, lVar.a) && k71.k.b(this.b, lVar.b) && this.c == lVar.c && k71.k.b(this.d, lVar.d) && this.e == lVar.e && k71.k.b(this.f, lVar.f) && k71.k.b(this.g, lVar.g) && k71.k.b(this.h, lVar.h);
+    }
+
+    public final int hashCode() {
+        int e = x.i.e(h1.i(this.a.hashCode() * 31, this.b, 31), 31, this.c);
+        g gVar = this.d;
+        return Integer.hashCode(this.h.a) + h1.i((this.f.hashCode() + ((this.e.hashCode() + ((e + (gVar == null ? 0 : gVar.hashCode())) * 31)) * 31)) * 31, this.g, 31);
+    }
+
+    public final String toString() {
+        StringBuilder o = s0.o("ReviewFields(__typename=", this.a, ", id=", this.b, ", authorCanPushToRepository=");
+        o.append(this.c);
+        o.append(", author=");
+        o.append(this.d);
+        o.append(", state=");
+        o.append(this.e);
+        o.append(", onBehalfOf=");
+        o.append(this.f);
+        o.append(", body=");
+        o.append(this.g);
+        o.append(", comments=");
+        o.append(this.h);
+        o.append(")");
+        return o.toString();
+    }
+}

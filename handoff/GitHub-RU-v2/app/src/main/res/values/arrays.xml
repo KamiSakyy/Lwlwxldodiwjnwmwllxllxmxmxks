@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SwipeActionName">
+        <item>\@string/settings_swipe_actions_save</item>
+        <item>\@string/settings_swipe_actions_mark_as_read</item>
+        <item>\@string/settings_swipe_actions_mark_as_done</item>
+        <item>\@string/settings_swipe_actions_unsubscribe</item>
+    </string-array>
+    <string-array name="SwipeActionsValue">
+        <item>1</item>
+        <item>3</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="copilot_paywall_license_free_features">
+        <item>\@string/copilot_paywall_license_free_included_features_item_1</item>
+        <item>\@string/copilot_paywall_license_free_included_features_item_2</item>
+        <item>\@string/copilot_paywall_license_free_included_features_item_3</item>
+    </string-array>
+    <string-array name="copilot_paywall_license_max_features">
+        <item>\@string/copilot_paywall_license_individual_max_included_features_item_1</item>
+        <item>\@string/copilot_paywall_license_individual_max_included_features_item_2</item>
+    </string-array>
+    <string-array name="copilot_paywall_license_pro_features">
+        <item>\@string/copilot_paywall_license_individual_included_features_item_1</item>
+        <item>\@string/copilot_paywall_license_individual_included_features_item_2</item>
+        <item>\@string/copilot_paywall_license_individual_included_features_item_3</item>
+    </string-array>
+    <string-array name="copilot_paywall_license_pro_plus_features">
+        <item>\@string/copilot_paywall_license_individual_pro_plus_included_features_item_1</item>
+        <item>\@string/copilot_paywall_license_individual_pro_plus_included_features_item_2</item>
+    </string-array>
+    <string-array name="copilot_suggestion_OS">
+        <item>\@string/copilot_suggestion_OS_1</item>
+        <item>\@string/copilot_suggestion_OS_2</item>
+        <item>\@string/copilot_suggestion_OS_3</item>
+        <item>\@string/copilot_suggestion_OS_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_algorithms">
+        <item>\@string/copilot_suggestion_algorithms_1</item>
+        <item>\@string/copilot_suggestion_algorithms_2</item>
+        <item>\@string/copilot_suggestion_algorithms_3</item>
+        <item>\@string/copilot_suggestion_algorithms_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_cloud">
+        <item>\@string/copilot_suggestion_cloud_1</item>
+        <item>\@string/copilot_suggestion_cloud_2</item>
+        <item>\@string/copilot_suggestion_cloud_3</item>
+        <item>\@string/copilot_suggestion_cloud_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_data">
+        <item>\@string/copilot_suggestion_data_1</item>
+        <item>\@string/copilot_suggestion_data_2</item>
+        <item>\@string/copilot_suggestion_data_3</item>
+        <item>\@string/copilot_suggestion_data_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_frameworks">
+        <item>\@string/copilot_suggestion_frameworks_1</item>
+        <item>\@string/copilot_suggestion_frameworks_2</item>
+        <item>\@string/copilot_suggestion_frameworks_3</item>
+        <item>\@string/copilot_suggestion_frameworks_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_headings">
+        <item>\@string/copilot_suggestion_heading_languages</item>
+        <item>\@string/copilot_suggestion_heading_tools</item>
+        <item>\@string/copilot_suggestion_heading_OS</item>
+        <item>\@string/copilot_suggestion_heading_practices</item>
+        <item>\@string/copilot_suggestion_heading_web</item>
+        <item>\@string/copilot_suggestion_heading_data</item>
+        <item>\@string/copilot_suggestion_heading_algorithms</item>
+        <item>\@string/copilot_suggestion_heading_security</item>
+        <item>\@string/copilot_suggestion_heading_mobile</item>
+        <item>\@string/copilot_suggestion_heading_cloud</item>
+        <item>\@string/copilot_suggestion_heading_frameworks</item>
+        <item>\@string/copilot_suggestion_heading_perf</item>
+    </string-array>
+    <string-array name="copilot_suggestion_languages">
+        <item>\@string/copilot_suggestion_languages_1</item>
+        <item>\@string/copilot_suggestion_languages_2</item>
+        <item>\@string/copilot_suggestion_languages_3</item>
+        <item>\@string/copilot_suggestion_languages_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_mobile">
+        <item>\@string/copilot_suggestion_mobile_1</item>
+        <item>\@string/copilot_suggestion_mobile_2</item>
+        <item>\@string/copilot_suggestion_mobile_3</item>
+        <item>\@string/copilot_suggestion_mobile_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_perf">
+        <item>\@string/copilot_suggestion_perf_1</item>
+        <item>\@string/copilot_suggestion_perf_2</item>
+        <item>\@string/copilot_suggestion_perf_3</item>
+        <item>\@string/copilot_suggestion_perf_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_practices">
+        <item>\@string/copilot_suggestion_practices_1</item>
+        <item>\@string/copilot_suggestion_practices_2</item>
+        <item>\@string/copilot_suggestion_practices_3</item>
+        <item>\@string/copilot_suggestion_practices_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_security">
+        <item>\@string/copilot_suggestion_security_1</item>
+        <item>\@string/copilot_suggestion_security_2</item>
+        <item>\@string/copilot_suggestion_security_3</item>
+        <item>\@string/copilot_suggestion_security_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_tools">
+        <item>\@string/copilot_suggestion_tools_1</item>
+        <item>\@string/copilot_suggestion_tools_2</item>
+        <item>\@string/copilot_suggestion_tools_3</item>
+        <item>\@string/copilot_suggestion_tools_4</item>
+    </string-array>
+    <string-array name="copilot_suggestion_web">
+        <item>\@string/copilot_suggestion_web_1</item>
+        <item>\@string/copilot_suggestion_web_2</item>
+        <item>\@string/copilot_suggestion_web_3</item>
+        <item>\@string/copilot_suggestion_web_4</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="language_codes">
+        <item></item>
+        <item>ru</item>
+        <item>en</item>
+        <item>es</item>
+        <item>pt-BR</item>
+        <item>ja</item>
+        <item>zh-CN</item>
+        <item>de-DE</item>
+        <item>ko-KR</item>
+    </string-array>
+    <string-array name="languages">
+        <item>\@string/settings_language_follow_system</item>
+        <item>Русский</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Português (Brasil)</item>
+        <item>日本語</item>
+        <item>简体中文</item>
+        <item>Deutsch</item>
+        <item>한국어</item>
+    </string-array>
+    <string-array name="loading_progress">
+        <item>\@string/loading_progress_text_one_moment</item>
+        <item>\@string/loading_progress_text_almost_there</item>
+        <item>\@string/loading_progress_text_longer_than_expected</item>
+        <item>\@string/loading_progress_text_almost_there</item>
+    </string-array>
+</resources>

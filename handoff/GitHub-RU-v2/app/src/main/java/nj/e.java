@@ -1,0 +1,22 @@
+package nj;
+
+import y71.i1;
+import y71.n1;
+import y71.y1;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class e {
+    public final y1 a;
+    public final i1 b;
+    public final y1 c;
+    public final i1 d;
+
+    public e() {
+        y1 c = n1.c(Boolean.FALSE);
+        this.a = c;
+        this.b = new i1(c);
+        y1 c2 = n1.c(new d(null, 31));
+        this.c = c2;
+        this.d = new i1(c2);
+    }
+}

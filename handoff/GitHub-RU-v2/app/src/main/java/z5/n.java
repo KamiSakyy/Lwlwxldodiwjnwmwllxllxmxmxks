@@ -1,0 +1,14 @@
+package z5;
+
+/* loaded from: /home/user/work/p/classes.dex */
+public interface n {
+    Object a(j71.e eVar, Object obj);
+
+    boolean b(a7.i iVar);
+
+    boolean c(j71.c cVar);
+
+    default n d(n nVar) {
+        return nVar == l.f34585a ? this : new e(this, nVar);
+    }
+}

@@ -1,0 +1,90 @@
+package m10;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class ux {
+    public static final aa.q0 T;
+    public static final tx Companion = new tx();
+    public static final a81.t a = new a81.t(1, "first", false);
+    public static final a81.t b = new a81.t(1, "hideCodeBlobs", false);
+    public static final a81.t c = new a81.t(1, "includeSuggestedChangesId", false);
+    public static final a81.t d = new a81.t(1, "renderMobileTasklistBlocks", false);
+    public static final a81.t e = new a81.t(1, "renderSuggestedChangesAsText", false);
+    public static final a81.t f = new a81.t(1, "scrubVideo", false);
+    public static final a81.t g = new a81.t(1, "unfurlReferences", false);
+    public static final a81.t h = new a81.t(1, "first", false);
+    public static final a81.t i = new a81.t(1, "userLinkedOnly", false);
+    public static final a81.t j = new a81.t(1, "after", false);
+    public static final a81.t k = new a81.t(1, "first", false);
+    public static final a81.t l = new a81.t(1, "last", false);
+    public static final a81.t m = new a81.t(1, "injectCommentContexts", false);
+    public static final a81.t n = new a81.t(1, "after", false);
+    public static final a81.t o = new a81.t(1, "first", false);
+    public static final a81.t p = new a81.t(1, "first", false);
+    public static final a81.t q = new a81.t(1, "first", false);
+    public static final a81.t r = new a81.t(1, "writersOnly", false);
+    public static final a81.t s = new a81.t(1, "first", false);
+    public static final a81.t t = new a81.t(1, "first", false);
+    public static final a81.t u = new a81.t(1, "query", false);
+    public static final a81.t v = new a81.t(1, "bypassRequirements", false);
+    public static final a81.t w = new a81.t(1, "mergeAction", false);
+    public static final a81.t x = new a81.t(1, "mergeMethod", false);
+    public static final a81.t y = new a81.t(1, "first", false);
+    public static final a81.t z = new a81.t(1, "after", false);
+    public static final a81.t A = new a81.t(1, "first", false);
+    public static final a81.t B = new a81.t(1, "includeMergeCommit", false);
+    public static final a81.t C = new a81.t(1, "first", false);
+    public static final a81.t D = new a81.t(1, "first", false);
+    public static final a81.t E = new a81.t(1, "first", false);
+    public static final a81.t F = new a81.t(1, "first", false);
+    public static final a81.t G = new a81.t(1, "states", false);
+    public static final a81.t H = new a81.t(1, "first", false);
+    public static final a81.t I = new a81.t(1, "statuses", false);
+    public static final a81.t J = new a81.t(1, "url", false);
+    public static final a81.t K = new a81.t(1, "after", false);
+    public static final a81.t L = new a81.t(1, "before", false);
+    public static final a81.t M = new a81.t(1, "first", false);
+    public static final a81.t N = new a81.t(1, "focus", false);
+    public static final a81.t O = new a81.t(1, "itemTypes", false);
+    public static final a81.t P = new a81.t(1, "last", false);
+    public static final a81.t Q = new a81.t(1, "name", false);
+    public static final a81.t R = new a81.t(1, "mergeType", false);
+    public static final a81.t S = new a81.t(1, "mergeType", false);
+
+    static {
+        List n2 = sy.d0.n("id");
+        t1.Companion.getClass();
+        aa.j0 j0Var = t1.e;
+        p4.Companion.getClass();
+        aa.j0 j0Var2 = p4.a;
+        n5.Companion.getClass();
+        aa.j0 j0Var3 = n5.f;
+        wj.Companion.getClass();
+        aa.j0 j0Var4 = wj.a;
+        mk.Companion.getClass();
+        aa.j0 j0Var5 = mk.a;
+        sl.Companion.getClass();
+        aa.j0 j0Var6 = sl.a;
+        em.Companion.getClass();
+        aa.j0 j0Var7 = em.a;
+        zp.Companion.getClass();
+        aa.j0 j0Var8 = zp.a;
+        er.Companion.getClass();
+        aa.j0 j0Var9 = er.a;
+        ow.Companion.getClass();
+        aa.j0 j0Var10 = ow.g;
+        t00.Companion.getClass();
+        aa.j0 j0Var11 = t00.d;
+        h40.Companion.getClass();
+        aa.j0 j0Var12 = h40.a;
+        pa0.Companion.getClass();
+        aa.j0 j0Var13 = pa0.a;
+        qc0.Companion.getClass();
+        aa.j0 j0Var14 = qc0.a;
+        qd0.Companion.getClass();
+        aa.j0 j0Var15 = qd0.a;
+        sd0.Companion.getClass();
+        T = new aa.q0("PullRequest", n2, x61.l.r(new aa.j0[]{j0Var, j0Var2, j0Var3, j0Var4, j0Var5, j0Var6, j0Var7, j0Var8, j0Var9, j0Var10, j0Var11, j0Var12, j0Var13, j0Var14, j0Var15, sd0.a}));
+    }
+}

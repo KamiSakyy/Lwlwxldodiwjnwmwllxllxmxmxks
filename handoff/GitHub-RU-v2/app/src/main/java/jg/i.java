@@ -1,0 +1,5 @@
+package jg;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class i extends f {
+}

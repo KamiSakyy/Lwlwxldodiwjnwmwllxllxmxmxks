@@ -1,0 +1,30 @@
+package qy;
+
+import aa.w;
+import java.util.List;
+import sy.d0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class g implements aa.a {
+    public static final g a = new g();
+    public static final List b = d0.n("enqueuePullRequest");
+
+    public final Object a(ea.e eVar, w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        py.k kVar = null;
+        while (eVar.r0(b) == 0) {
+            kVar = (py.k) aa.c.b(aa.c.c(h.a, false)).a(eVar, wVar);
+        }
+        return new py.j(kVar);
+    }
+
+    public final void b(ea.f fVar, w wVar, Object obj) {
+        py.j jVar = (py.j) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(jVar, "value");
+        fVar.z0("enqueuePullRequest");
+        aa.c.b(aa.c.c(h.a, false)).b(fVar, wVar, jVar.a);
+    }
+}

@@ -1,0 +1,30 @@
+package ep;
+
+import java.util.List;
+import jo.xb0;
+import jo.yb0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class jx implements aa.a {
+    public static final jx a = new jx();
+    public static final List b = sy.d0.n("discussion");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        xb0 xb0Var = null;
+        while (eVar.r0(b) == 0) {
+            xb0Var = (xb0) aa.c.b(aa.c.c(ix.a, true)).a(eVar, wVar);
+        }
+        return new yb0(xb0Var);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        yb0 yb0Var = (yb0) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(yb0Var, "value");
+        fVar.z0("discussion");
+        aa.c.b(aa.c.c(ix.a, true)).b(fVar, wVar, yb0Var.a);
+    }
+}

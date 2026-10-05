@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rudroid.settings.preferences.SwipeActionPreference android:entries="@array/SwipeActionName" android:layout="@layout/preference_swipe" android:title="@string/settings_swipe_actions_left" android:key="left_swipe" android:entryValues="@array/SwipeActionsValue" />
+    <com.github.rudroid.settings.preferences.SwipeActionPreference android:entries="@array/SwipeActionName" android:layout="@layout/preference_swipe" android:title="@string/settings_swipe_actions_right" android:key="right_swipe" android:entryValues="@array/SwipeActionsValue" />
+    <Preference android:key="footer" android:summary="@string/settings_swipe_actions_footer" app:iconSpaceReserved="false" />
+</PreferenceScreen>

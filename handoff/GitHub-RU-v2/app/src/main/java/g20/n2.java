@@ -1,0 +1,57 @@
+package g20;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class n2 {
+    public final String a;
+    public final hc0.p2 b;
+    public final hc0.j2 c;
+    public final String d;
+    public final t2 e;
+    public final q2 f;
+    public final int g;
+    public final m2 h;
+    public final o2 i;
+    public final String j;
+
+    public n2(String str, hc0.p2 p2Var, hc0.j2 j2Var, String str2, t2 t2Var, q2 q2Var, int i, m2 m2Var, o2 o2Var, String str3) {
+        this.a = str;
+        this.b = p2Var;
+        this.c = j2Var;
+        this.d = str2;
+        this.e = t2Var;
+        this.f = q2Var;
+        this.g = i;
+        this.h = m2Var;
+        this.i = o2Var;
+        this.j = str3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof n2)) {
+            return false;
+        }
+        n2 n2Var = (n2) obj;
+        return k71.k.b(this.a, n2Var.a) && this.b == n2Var.b && this.c == n2Var.c && k71.k.b(this.d, n2Var.d) && k71.k.b(this.e, n2Var.e) && k71.k.b(this.f, n2Var.f) && this.g == n2Var.g && k71.k.b(this.h, n2Var.h) && k71.k.b(this.i, n2Var.i) && k71.k.b(this.j, n2Var.j);
+    }
+
+    public final int hashCode() {
+        int hashCode = (this.b.hashCode() + (this.a.hashCode() * 31)) * 31;
+        hc0.j2 j2Var = this.c;
+        int hashCode2 = (hashCode + (j2Var == null ? 0 : j2Var.hashCode())) * 31;
+        String str = this.d;
+        int hashCode3 = (this.e.hashCode() + ((hashCode2 + (str == null ? 0 : str.hashCode())) * 31)) * 31;
+        q2 q2Var = this.f;
+        int b = a0.s0.b(this.g, (hashCode3 + (q2Var == null ? 0 : q2Var.hashCode())) * 31, 31);
+        m2 m2Var = this.h;
+        int hashCode4 = (b + (m2Var == null ? 0 : m2Var.hashCode())) * 31;
+        o2 o2Var = this.i;
+        return this.j.hashCode() + ((hashCode4 + (o2Var != null ? o2Var.hashCode() : 0)) * 31);
+    }
+
+    public final String toString() {
+        return "CheckSuite(id=" + this.a + ", status=" + this.b + ", conclusion=" + this.c + ", workflowFilePath=" + this.d + ", repository=" + this.e + ", matchingPullRequests=" + this.f + ", duration=" + this.g + ", branch=" + this.h + ", creator=" + this.i + ", __typename=" + this.j + ")";
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_share_24" android:id="@id/share_item" android:title="@string/menu_option_share" app:iconTint="@color/colorAccent" app:showAsAction="ifRoom" />
+    <item android:id="@id/code_options" android:title="@string/menu_option_code_options" app:showAsAction="never" />
+    <item android:id="@id/toggle_time_stamps" android:visible="false" app:showAsAction="never" />
+    <item android:id="@id/toggle_render_mode" android:visible="false" app:showAsAction="never" />
+</menu>

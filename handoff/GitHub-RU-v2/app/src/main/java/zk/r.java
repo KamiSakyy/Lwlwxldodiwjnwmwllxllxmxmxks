@@ -1,0 +1,14 @@
+package zk;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class r {
+    public final oa.g a;
+    public final cn.a b;
+
+    public r(oa.g gVar, cn.a aVar) {
+        k71.k.g(gVar, "service");
+        k71.k.g(aVar, "forUserTimelineStoreFactory");
+        this.a = gVar;
+        this.b = aVar;
+    }
+}

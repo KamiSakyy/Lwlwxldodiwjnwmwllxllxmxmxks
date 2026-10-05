@@ -1,0 +1,56 @@
+package uq0;
+
+import aa.w;
+import java.util.List;
+import java.util.Set;
+import sy.d0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class i implements aa.a {
+    public static final i a = new i();
+    public static final List b = d0.n("__typename");
+
+    public final Object a(ea.e eVar, w wVar) {
+        d dVar;
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        Set set = wVar.b;
+        Set set2 = wVar.a;
+        c cVar = null;
+        String str = null;
+        while (eVar.r0(b) == 0) {
+            str = (String) aa.c.a.a(eVar, wVar);
+        }
+        if (str == null) {
+            throw new IllegalStateException("__typename was not found");
+        }
+        if (m71.a.v(m71.a.O(new String[]{"User"}), set2, str, set)) {
+            eVar.s0();
+            dVar = k.c(eVar, wVar);
+        } else {
+            dVar = null;
+        }
+        if (m71.a.v(m71.a.O(new String[]{"Team"}), set2, str, set)) {
+            eVar.s0();
+            cVar = j.c(eVar, wVar);
+        }
+        return new b(str, dVar, cVar);
+    }
+
+    public final void b(ea.f fVar, w wVar, Object obj) {
+        b bVar = (b) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(bVar, "value");
+        fVar.z0("__typename");
+        aa.c.a.b(fVar, wVar, bVar.a);
+        d dVar = bVar.b;
+        if (dVar != null) {
+            k.d(fVar, wVar, dVar);
+        }
+        c cVar = bVar.c;
+        if (cVar != null) {
+            j.d(fVar, wVar, cVar);
+        }
+    }
+}

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="action_bar_lines_selected_announcement">
+        <item quantity="other">Linhas %1$d até %2$d selecionadas</item>
+        <item quantity="one">Linha %1d selecionada</item>
+        <item quantity="many">Linhas %1$d até %2$d selecionadas</item>
+    </plurals>
+    <plurals name="action_bar_title_lines_selected">
+        <item quantity="other">Linhas %1$d a %2$d</item>
+        <item quantity="one">Linha %1d</item>
+        <item quantity="many">Linhas %1$d a %2$d</item>
+    </plurals>
+    <plurals name="actions_rerun_only_failed_jobs">
+        <item quantity="other">Executar novamente %d trabalhos com falha</item>
+        <item quantity="one">Executar novamente %d trabalho com falha</item>
+        <item quantity="many">Executar novamente %d trabalhos com falha</item>
+    </plurals>
+    <plurals name="actions_workflow_jobs_overflow">
+        <item quantity="other">e %d outros jobs</item>
+        <item quantity="one">e %d outro job</item>
+        <item quantity="many">e %d outros jobs</item>
+    </plurals>
+    <plurals name="agent_picker_selected_agents_count">
+        <item quantity="other">%d Agentes</item>
+        <item quantity="one">%d Agente</item>
+        <item quantity="many">%d Agentes</item>
+    </plurals>
+    <plurals name="app_lock_automatic_lock_duration">
+        <item quantity="other">Após %d minutos</item>
+        <item quantity="one">Após %d minuto</item>
+        <item quantity="many">Após %d minutos</item>
+    </plurals>
+    <plurals name="check_status_with_count">
+        <item quantity="other">%1$d %2$s</item>
+        <item quantity="one">%1$d %2$s</item>
+        <item quantity="many">%1$d %2$s</item>
+    </plurals>
+    <plurals name="checks_failed">
+        <item quantity="other">%d falharam</item>
+        <item quantity="one">%d falhou</item>
+        <item quantity="many">%d falharam</item>
+    </plurals>
+    <plurals name="checks_neutral">
+        <item quantity="other">%d neutros</item>
+        <item quantity="one">%d neutro</item>
+        <item quantity="many">%d neutros</item>
+    </plurals>
+    <plurals name="checks_other">
+        <item quantity="other">%d outros</item>
+        <item quantity="one">%d outro</item>
+        <item quantity="many">%d outros</item>
+    </plurals>
+    <plurals name="checks_passed">
+        <item quantity="other">%d passaram</item>
+        <item quantity="one">%d passou</item>
+        <item quantity="many">%d passaram</item>
+    </plurals>
+    <plurals name="checks_running">
+        <item quantity="other">%d em execução</item>
+        <item quantity="one">%d em execução</item>
+        <item quantity="many">%d em execução</item>
+    </plurals>
+    <plurals name="checks_skipped">
+        <item quantity="other">%d ignorados</item>
+        <item quantity="one">%d ignorado</item>
+        <item quantity="many">%d ignorados</item>
+    </plurals>
+    <plurals name="checks_status_summary">
+        <item quantity="other">%s verificações</item>
+        <item quantity="one">%s verificação</item>
+        <item quantity="many">%s verificações</item>
+    </plurals>
+    <plurals name="copilot_bing_references_count">
+        <item quantity="other">%1$d referências”</item>
+        <item quantity="one">%1$d referência”</item>
+        <item quantity="many">%1$d referências”</item>
+    </plurals>
+    <plurals name="copilot_bing_search_results_count_with_query">
+        <item quantity="other">%1$d resultados da pesquisa do Bing para \"%2$s\"</item>
+        <item quantity="one">%1$d resultado da pesquisa do Bing para \"%2$s\"</item>
+        <item quantity="many">%1$d resultados da pesquisa do Bing para \"%2$s\"</item>
+    </plurals>
+    <plurals name="copilot_code_vulnerability_warning">
+        <item quantity="other">%d vulnerabilidades detectadas</item>
+        <item quantity="one">%d vulnerabilidade detectada</item>
+        <item quantity="many">%d vulnerabilidades detectadas</item>
+    </plurals>
+    <plurals name="copilot_review_feedback_text_remaining_characters">
+        <item quantity="other">%d caracteres restantes</item>
+        <item quantity="one">%d caractere restante</item>
+        <item quantity="many">%d caracteres restantes</item>
+    </plurals>
+    <plurals name="create_repository_character_count">
+        <item quantity="other">%1$d/%2$d caracteres</item>
+        <item quantity="one">%1$d/%2$d caractere</item>
+        <item quantity="many">%1$d/%2$d caracteres</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days">
+        <item quantity="other">%d dias</item>
+        <item quantity="one">%d dia</item>
+        <item quantity="many">%d dias</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days_ago">
+        <item quantity="other">%d dias atrás</item>
+        <item quantity="one">Há %d dia</item>
+        <item quantity="many">%d dias atrás</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">%d hora</item>
+        <item quantity="many">%d horas</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours_ago">
+        <item quantity="other">%d horas atrás</item>
+        <item quantity="one">Há %d hora</item>
+        <item quantity="many">%d horas atrás</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes">
+        <item quantity="other">%d minutos</item>
+        <item quantity="one">%d minuto</item>
+        <item quantity="many">%d minutos</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes_ago">
+        <item quantity="other">%d minutos atrás</item>
+        <item quantity="one">Há %d minuto</item>
+        <item quantity="many">%d minutos atrás</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months">
+        <item quantity="other">%d meses</item>
+        <item quantity="one">%d mês</item>
+        <item quantity="many">%d meses</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months_ago">
+        <item quantity="other">%d meses atrás</item>
+        <item quantity="one">Há %d mês</item>
+        <item quantity="many">%d meses atrás</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds">
+        <item quantity="other">%d segundos</item>
+        <item quantity="one">%d segundo</item>
+        <item quantity="many">%d segundos</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds_ago">
+        <item quantity="other">%d segundos atrás</item>
+        <item quantity="one">%d segundo atrás</item>
+        <item quantity="many">%d segundos atrás</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years">
+        <item quantity="other">%d anos</item>
+        <item quantity="one">%d ano</item>
+        <item quantity="many">%d anos</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years_ago">
+        <item quantity="other">%d anos atrás</item>
+        <item quantity="one">Há %d ano</item>
+        <item quantity="many">%d anos atrás</item>
+    </plurals>
+    <plurals name="deployment_approval_request_summary">
+        <item quantity="other">Sua revisão é necessária ou a de %1$s ou de %2$s outros</item>
+        <item quantity="one">Sua revisão é necessária ou a de %s</item>
+        <item quantity="many">Sua revisão é necessária ou a de %1$s ou de %2$s outros</item>
+    </plurals>
+    <plurals name="dialog_sign_out_of_all_accounts">
+        <item quantity="other">Sair de todas as contas %d?</item>
+        <item quantity="one">Sair da conta de %d?</item>
+        <item quantity="many">Sair de todas as contas %d?</item>
+    </plurals>
+    <plurals name="discussions_inline_replies_preview_metadata_label">
+        <item quantity="other">%d respostas anteriores</item>
+        <item quantity="one">%d resposta anterior</item>
+        <item quantity="many">%d respostas anteriores</item>
+    </plurals>
+    <plurals name="explore_contributors_count">
+        <item quantity="other">%d Contribuidores</item>
+        <item quantity="one">%d Contribuidor</item>
+        <item quantity="many">%d Contribuidores</item>
+    </plurals>
+    <plurals name="feed_header_starred_repository">
+        <item quantity="other">%1$s Classificou %2$d repositórios com estrela</item>
+        <item quantity="one">%1$s classificou um repositório com estrela</item>
+        <item quantity="many">%1$s Classificou %2$d repositórios com estrela</item>
+    </plurals>
+    <plurals name="files_number_of_additions">
+        <item quantity="other">%,d adições</item>
+        <item quantity="one">%,d adição</item>
+        <item quantity="many">%,d adições</item>
+    </plurals>
+    <plurals name="files_number_of_deletions">
+        <item quantity="other">%,d exclusões</item>
+        <item quantity="one">%,d exclusão</item>
+        <item quantity="many">%,d exclusões</item>
+    </plurals>
+    <plurals name="files_number_of_files_changed">
+        <item quantity="other">%,d arquivos alterados</item>
+        <item quantity="one">%,d arquivo alterado</item>
+        <item quantity="many">%,d arquivos alterados</item>
+    </plurals>
+    <plurals name="fork_repository_edit_text_remaining_characters">
+        <item quantity="other">%d caracteres restantes.</item>
+        <item quantity="one">%d caractere restante.</item>
+        <item quantity="many">%d caracteres restantes.</item>
+    </plurals>
+    <plurals name="issue_pr_failing_checks_number">
+        <item quantity="other">· %d falharam</item>
+        <item quantity="one">· %d falhou</item>
+        <item quantity="many">· %d falharam</item>
+    </plurals>
+    <plurals name="issue_pr_list_pending_review_comments">
+        <item quantity="other">%d comentários de revisão pendentes</item>
+        <item quantity="one">%d comentário de revisão pendente</item>
+        <item quantity="many">%d comentários de revisão pendentes</item>
+    </plurals>
+    <plurals name="issue_pr_number_of_commits">
+        <item quantity="other">%,d commits</item>
+        <item quantity="one">%,d commit</item>
+        <item quantity="many">%,d commits</item>
+    </plurals>
+    <plurals name="issue_pr_pending_review_comments">
+        <item quantity="other">Você tem %d comentários de revisão pendentes</item>
+        <item quantity="one">Você tem %d comentário de revisão pendente</item>
+        <item quantity="many">Você tem %d comentários de revisão pendentes</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novas notificações</item>
+        <item quantity="one">%d nova notificação</item>
+    </plurals>
+    <plurals name="notification_item_label">
+        <item quantity="other">%d notificações</item>
+        <item quantity="one">%d notificação</item>
+        <item quantity="many">%d notificações</item>
+    </plurals>
+    <plurals name="notification_unread_item_label">
+        <item quantity="other">%s itens não lidos</item>
+        <item quantity="one">%s item não lido</item>
+        <item quantity="many">%s itens não lidos</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_confirmation">
+        <item quantity="other">Marcar %d notificações como concluídas</item>
+        <item quantity="one">Marcar %d notificação como concluída</item>
+        <item quantity="many">Marcar %d notificações como concluídas</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_notice">
+        <item quantity="other">%d notificações marcadas como concluídas</item>
+        <item quantity="one">%d notificação marcada como concluída</item>
+        <item quantity="many">%d notificações marcadas como concluídas</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_confirmation">
+        <item quantity="other">Marcar %d notificações como lidas</item>
+        <item quantity="one">Marcar %d notificação como lida</item>
+        <item quantity="many">Marcar %d notificações como lidas</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_notice">
+        <item quantity="other">%d notificações marcadas como lidas</item>
+        <item quantity="one">%d notificação marcada como lida</item>
+        <item quantity="many">%d notificações marcadas como lidas</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_confirmation">
+        <item quantity="other">Marcar %d notificações como não lidas</item>
+        <item quantity="one">Marcar %d notificação como não lida</item>
+        <item quantity="many">Marcar %d notificações como não lidas</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_notice">
+        <item quantity="other">%d notificações marcadas como não lida</item>
+        <item quantity="one">%d notificação marcada como não lida</item>
+        <item quantity="many">%d notificações marcadas como não lida</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_confirmation">
+        <item quantity="other">Mover %d notificações para a caixa de entrada</item>
+        <item quantity="one">Mover %d notificação para caixa de entrada</item>
+        <item quantity="many">Mover %d notificações para a caixa de entrada</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_notice">
+        <item quantity="other">%d notificações movidas para a caixa de entrada</item>
+        <item quantity="one">%d notificação movida para caixa de entrada</item>
+        <item quantity="many">%d notificações movidas para a caixa de entrada</item>
+    </plurals>
+    <plurals name="notifications_n_selected">
+        <item quantity="other">%d selecionados</item>
+        <item quantity="one">%d selecionado</item>
+        <item quantity="many">%d selecionados</item>
+    </plurals>
+    <plurals name="open_pr_dialog_commits_summary">
+        <item quantity="other">%s confirmações</item>
+        <item quantity="one">confirmar %s</item>
+        <item quantity="many">%s confirmações</item>
+    </plurals>
+    <plurals name="organizations_followers_label">
+        <item quantity="other">%s seguidores</item>
+        <item quantity="one">%s seguidor</item>
+        <item quantity="many">%s seguidores</item>
+    </plurals>
+    <plurals name="organizations_following_label">
+        <item quantity="other">%s seguindo</item>
+        <item quantity="one">%s seguindo</item>
+        <item quantity="many">%s seguindo</item>
+    </plurals>
+    <plurals name="polls_number_of_votes">
+        <item quantity="other">%d votos</item>
+        <item quantity="one">%d voto</item>
+        <item quantity="many">%d votos</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_assigned_subtitle">
+        <item quantity="other">%d atribuídos</item>
+        <item quantity="one">%d atribuído</item>
+        <item quantity="many">%d atribuídos</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_created_subtitle">
+        <item quantity="other">%d criados</item>
+        <item quantity="one">%d criado</item>
+        <item quantity="many">%d criados</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_mentioned_subtitle">
+        <item quantity="other">%d mencionados</item>
+        <item quantity="one">%d mencionado</item>
+        <item quantity="many">%d mencionados</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_review_requested_subtitle">
+        <item quantity="other">%d revisões solicitadas</item>
+        <item quantity="one">%d revisão solicitada</item>
+        <item quantity="many">%d revisões solicitadas</item>
+    </plurals>
+    <plurals name="release_detail_contributors_view_all_subtitle">
+        <item quantity="other">%d contribuidores</item>
+        <item quantity="one">%d contribuidor</item>
+        <item quantity="many">%d contribuidores</item>
+    </plurals>
+    <plurals name="release_discussion_comments_preview_metadata_label">
+        <item quantity="other">%d comentários anteriores</item>
+        <item quantity="one">%d comentário anterior</item>
+        <item quantity="many">%d comentários anteriores</item>
+    </plurals>
+    <plurals name="repository_forks_label">
+        <item quantity="other">%s bifurcações</item>
+        <item quantity="one">%s bifurcação</item>
+        <item quantity="many">%s bifurcações</item>
+    </plurals>
+    <plurals name="repository_stars_label">
+        <item quantity="other">%s estrelas</item>
+        <item quantity="one">%s estrela</item>
+        <item quantity="many">%s estrelas</item>
+    </plurals>
+    <plurals name="repository_stars_label_month">
+        <item quantity="other">%s estrelas este mês</item>
+        <item quantity="one">%s estrela este mês</item>
+        <item quantity="many">%s estrelas este mês</item>
+    </plurals>
+    <plurals name="repository_stars_label_today">
+        <item quantity="other">%s estrelas hoje</item>
+        <item quantity="one">%s estrela hoje</item>
+        <item quantity="many">%s estrelas hoje</item>
+    </plurals>
+    <plurals name="repository_stars_label_week">
+        <item quantity="other">%s estrelas esta semana</item>
+        <item quantity="one">%s estrela esta semana</item>
+        <item quantity="many">%s estrelas esta semana</item>
+    </plurals>
+    <plurals name="review_number_of_comments">
+        <item quantity="other">%,d comentários</item>
+        <item quantity="one">%,d comentário</item>
+        <item quantity="many">%,d comentários</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_all_jobs">
+        <item quantity="other">Execute novamente todos os trabalhos, %d trabalhos</item>
+        <item quantity="one">Execute novamente todos os trabalhos, %d trabalho</item>
+        <item quantity="many">Execute novamente todos os trabalhos, %d trabalhos</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_only_failed_jobs">
+        <item quantity="other">Execute novamente apenas trabalhos com falha, %d trabalhos com falha</item>
+        <item quantity="one">Executar novamente apenas trabalhos com falha, %d trabalho com falha</item>
+        <item quantity="many">Execute novamente apenas trabalhos com falha, %d trabalhos com falha</item>
+    </plurals>
+    <plurals name="screenreader_actions_workflows_number_of_runs">
+        <item quantity="other">%d execuções no total</item>
+        <item quantity="one">%d execução no total</item>
+        <item quantity="many">%d execuções no total</item>
+    </plurals>
+    <plurals name="screenreader_added_to_many_lists_content_description">
+        <item quantity="other">Adicionado a %1$s e %2$s mais listas</item>
+        <item quantity="one">Adicionado à lista %1$s, e %2$s mais</item>
+        <item quantity="many">Adicionado a %1$s e %2$s mais listas</item>
+    </plurals>
+    <plurals name="screenreader_displaying_results">
+        <item quantity="other">Exibindo %d resultados</item>
+        <item quantity="one">Exibindo %d resultado</item>
+        <item quantity="many">Exibindo %d resultados</item>
+    </plurals>
+    <plurals name="screenreader_expandable_number_of_items">
+        <item quantity="other">%d itens</item>
+        <item quantity="one">%d item</item>
+        <item quantity="many">%d itens</item>
+    </plurals>
+    <plurals name="screenreader_favorites_search_results">
+        <item quantity="other">%d resultados foram encontrados</item>
+        <item quantity="one">%d resultado foi encontrado</item>
+        <item quantity="many">%d resultados foram encontrados</item>
+    </plurals>
+    <plurals name="screenreader_issue_related_pull_requests">
+        <item quantity="other">%,d pull requests</item>
+        <item quantity="one">%,d pull request</item>
+        <item quantity="many">%,d pull requests</item>
+    </plurals>
+    <plurals name="screenreader_lists_list_number_of_repos_count">
+        <item quantity="other">%d repositórios adicionados</item>
+        <item quantity="one">%d repositório adicionado</item>
+        <item quantity="many">%d repositórios adicionados</item>
+    </plurals>
+    <plurals name="screenreader_number_of_assignees">
+        <item quantity="other">%d responsáveis</item>
+        <item quantity="one">%d responsável</item>
+        <item quantity="many">%d responsáveis</item>
+    </plurals>
+    <plurals name="screenreader_number_of_contributors">
+        <item quantity="other">%d contribuidores</item>
+        <item quantity="one">%d contribuidor</item>
+        <item quantity="many">%d contribuidores</item>
+    </plurals>
+    <plurals name="screenreader_pull_request_related_issues">
+        <item quantity="other">%,d issues vinculados</item>
+        <item quantity="one">%,d issue vinculada</item>
+        <item quantity="many">%,d issues vinculados</item>
+    </plurals>
+    <plurals name="screenreader_reaction_type_and_quantity">
+        <item quantity="other">%1$s %2$s reações</item>
+        <item quantity="one">%1$s %2$s reação</item>
+        <item quantity="many">%1$s %2$s reações</item>
+    </plurals>
+    <plurals name="screenreader_search_and_filter_x_results">
+        <item quantity="other">%d resultados</item>
+        <item quantity="one">%d resultado</item>
+        <item quantity="many">%d resultados</item>
+    </plurals>
+    <plurals name="screenreader_search_results">
+        <item quantity="other">%d resultados foram encontrados</item>
+        <item quantity="one">%d resultado foi encontrado</item>
+        <item quantity="many">%d resultados foram encontrados</item>
+    </plurals>
+    <plurals name="screenreader_sub_issues_progress_description">
+        <item quantity="other">Subproblemas; %1$d de %2$d concluídas</item>
+        <item quantity="one">Subproblemas; %1$d de %2$d concluídas</item>
+        <item quantity="many">Subproblemas; %1$d de %2$d concluídas</item>
+    </plurals>
+    <plurals name="screenreader_unread_notifications_metadata">
+        <item quantity="other">%d notificações não lidas</item>
+        <item quantity="one">%d notificação não lida</item>
+        <item quantity="many">%d notificações não lidas</item>
+    </plurals>
+    <plurals name="screenreader_user_discussions_counter_description">
+        <item quantity="other">%d discussões</item>
+        <item quantity="one">%d discussão</item>
+        <item quantity="many">%d discussões</item>
+    </plurals>
+    <plurals name="screenreader_user_organizations_counter_description">
+        <item quantity="other">%d organizações</item>
+        <item quantity="one">%d organização</item>
+        <item quantity="many">%d organizações</item>
+    </plurals>
+    <plurals name="screenreader_user_projects_counter_description">
+        <item quantity="other">%d projetos</item>
+        <item quantity="one">%d projeto</item>
+        <item quantity="many">%d projetos</item>
+    </plurals>
+    <plurals name="screenreader_user_repo_counter_description">
+        <item quantity="other">%d repositórios</item>
+        <item quantity="one">%d repositório</item>
+        <item quantity="many">%d repositórios</item>
+    </plurals>
+    <plurals name="screenreader_user_sponsoring_counter_description">
+        <item quantity="other">%d usuários patrocinadores</item>
+        <item quantity="one">%d usuário patrocinador</item>
+        <item quantity="many">%d usuários patrocinadores</item>
+    </plurals>
+    <plurals name="screenreader_user_starred_repos_counter_description">
+        <item quantity="other">%d repositórios estrelados</item>
+        <item quantity="one">%d repositório estrelado</item>
+        <item quantity="many">%d repositórios estrelados</item>
+    </plurals>
+    <plurals name="search_and_filter_filter_bar_context_button_filter_count_description">
+        <item quantity="other">%d filtros aplicados</item>
+        <item quantity="one">%d filtro aplicado</item>
+        <item quantity="many">%d filtros aplicados</item>
+    </plurals>
+    <plurals name="search_results_number_of_issues">
+        <item quantity="other">Ver %s issues a mais</item>
+        <item quantity="one">Ver %s issue a mais</item>
+        <item quantity="many">Ver %s issues a mais</item>
+    </plurals>
+    <plurals name="search_results_number_of_orgs">
+        <item quantity="other">Ver %s organizações a mais</item>
+        <item quantity="one">Ver %s organização a mais</item>
+        <item quantity="many">Ver %s organizações a mais</item>
+    </plurals>
+    <plurals name="search_results_number_of_pull_requests">
+        <item quantity="other">Ver %s pull requests a mais</item>
+        <item quantity="one">Ver %s pull request a mais</item>
+        <item quantity="many">Ver %s pull requests a mais</item>
+    </plurals>
+    <plurals name="search_results_number_of_repos">
+        <item quantity="other">Ver %s repositórios a mais</item>
+        <item quantity="one">Ver %s repositório a mais</item>
+        <item quantity="many">Ver %s repositórios a mais</item>
+    </plurals>
+    <plurals name="search_results_number_of_users">
+        <item quantity="other">Ver %s pessoas a mais</item>
+        <item quantity="one">Ver %s pessoa a mais</item>
+        <item quantity="many">Ver %s pessoas a mais</item>
+    </plurals>
+    <plurals name="session_event_files_changed">
+        <item quantity="other">%d arquivos alterados</item>
+        <item quantity="one">%d arquivo alterado</item>
+        <item quantity="many">%d arquivos alterados</item>
+    </plurals>
+    <plurals name="session_event_task_summary_actions">
+        <item quantity="other">%d ações</item>
+        <item quantity="one">%d ação</item>
+        <item quantity="many">%d ações</item>
+    </plurals>
+    <plurals name="session_event_tool_calls">
+        <item quantity="other">%d chamadas de ferramenta</item>
+        <item quantity="one">%d chamada de ferramenta</item>
+        <item quantity="many">%d chamadas de ferramenta</item>
+    </plurals>
+    <plurals name="session_event_tool_group_bash">
+        <item quantity="other">%d comandos de terminal</item>
+        <item quantity="one">%d comando de terminal</item>
+        <item quantity="many">%d comandos de terminal</item>
+    </plurals>
+    <plurals name="session_event_tool_group_create">
+        <item quantity="other">Criar %d arquivos</item>
+        <item quantity="one">Criar %d arquivo</item>
+        <item quantity="many">Criar %d arquivos</item>
+    </plurals>
+    <plurals name="session_event_tool_group_default">
+        <item quantity="other">%2$s %1$d chamadas</item>
+        <item quantity="one">%2$s %1$d chamada</item>
+        <item quantity="many">%2$s %1$d chamadas</item>
+    </plurals>
+    <plurals name="session_event_tool_group_edit">
+        <item quantity="other">Editar %d arquivos</item>
+        <item quantity="one">Editar %d arquivo</item>
+        <item quantity="many">Editar %d arquivos</item>
+    </plurals>
+    <plurals name="session_event_tool_group_view">
+        <item quantity="other">Visualizar %d arquivos</item>
+        <item quantity="one">Visualizar %d arquivo</item>
+        <item quantity="many">Visualizar %d arquivos</item>
+    </plurals>
+    <plurals name="session_metadata_premium_requests">
+        <item quantity="other">%1$s solicitações premium</item>
+        <item quantity="one">%1$s solicitação premium</item>
+        <item quantity="many">%1$s solicitações premium</item>
+    </plurals>
+    <plurals name="session_metadata_sessions">
+        <item quantity="other">%d sessões</item>
+        <item quantity="one">%d sessão</item>
+        <item quantity="many">%d sessões</item>
+    </plurals>
+    <plurals name="show_more_code_search_matches">
+        <item quantity="other">Mostrar mais %d correspondências</item>
+        <item quantity="one">Mostrar mais %d correspondência</item>
+        <item quantity="many">Mostrar mais %d correspondências</item>
+    </plurals>
+    <plurals name="status_characters_remaining_label">
+        <item quantity="other">%d caracteres restantes</item>
+        <item quantity="one">%d caractere restante</item>
+        <item quantity="many">%d caracteres restantes</item>
+    </plurals>
+    <plurals name="status_check_group_header">
+        <item quantity="other">%1$d verificações: %2$s</item>
+        <item quantity="one">%1$d verificação: %2$s</item>
+        <item quantity="many">%1$d verificações: %2$s</item>
+    </plurals>
+    <plurals name="task_list_progress_label_all_complete">
+        <item quantity="other">%1$d concluídos</item>
+        <item quantity="one">%1$d concluído</item>
+        <item quantity="many">%1$d concluídos</item>
+    </plurals>
+    <plurals name="task_list_progress_label_not_started">
+        <item quantity="other">%1$d tarefas</item>
+        <item quantity="one">%1$d tarefa</item>
+        <item quantity="many">%1$d tarefas</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_rebase_description">
+        <item quantity="other">Quando os requisitos forem atendidos, os commits %d deste branch serão feitos rebase e adicionados ao branch base.</item>
+        <item quantity="one">Quando os requisitos forem atendidos, o commit %d deste branch será feito rebase e adicionado ao branch base.</item>
+        <item quantity="many">Quando os requisitos forem atendidos, os commits %d deste branch serão feitos rebase e adicionados ao branch base.</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_squash_description">
+        <item quantity="other">Quando os requisitos são atendidos, os %d commits desse branch serão combinados em um commit no branch base.</item>
+        <item quantity="one">Quando os requisitos forem atendidos, o commit %d deste branch será adicionado ao branch base.</item>
+        <item quantity="many">Quando os requisitos são atendidos, os %d commits desse branch serão combinados em um commit no branch base.</item>
+    </plurals>
+    <plurals name="triage_linked_items_max_reached">
+        <item quantity="other">Apenas %d itens podem ser vinculados</item>
+        <item quantity="one">Somente %d item pode ser vinculado</item>
+        <item quantity="many">Apenas %d itens podem ser vinculados</item>
+    </plurals>
+    <plurals name="triage_merge_method_rebase_description">
+        <item quantity="other">Os %d commits deste branch serão rebaseados e adicionados ao branch base.</item>
+        <item quantity="one">O %d commit deste branch será rebaseado e adicionado ao branch base.</item>
+        <item quantity="many">Os %d commits deste branch serão rebaseados e adicionados ao branch base.</item>
+    </plurals>
+    <plurals name="triage_merge_method_squash_description">
+        <item quantity="other">Os %d commits desse branch serão combinados em um commit no branch base.</item>
+        <item quantity="one">O %d commit deste branch será adicionado ao branch base.</item>
+        <item quantity="many">Os %d commits desse branch serão combinados em um commit no branch base.</item>
+    </plurals>
+    <plurals name="triage_review_multiline_placeholder">
+        <item quantity="other">Linhas recolhidas de %1$d até %2$d</item>
+        <item quantity="one">Linha %1d recolhida</item>
+        <item quantity="many">Linhas recolhidas de %1$d até %2$d</item>
+    </plurals>
+    <plurals name="users_repositories_label">
+        <item quantity="other">%s repositórios</item>
+        <item quantity="one">%s repositório</item>
+        <item quantity="many">%s repositórios</item>
+    </plurals>
+    <plurals name="view_more_code_search_matches">
+        <item quantity="other">Exibir mais %d correspondências</item>
+        <item quantity="one">Exibir %d mais correspondência</item>
+        <item quantity="many">Exibir mais %d correspondências</item>
+    </plurals>
+</resources>

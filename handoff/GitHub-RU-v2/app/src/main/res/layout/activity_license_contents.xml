@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:tag="layout/activity_license_contents_0" android:background="@color/backgroundSecondary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rudroid.views.LoadingViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentView="@layout/license_contents" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/app_bar_layout" layout="@layout/app_bar_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

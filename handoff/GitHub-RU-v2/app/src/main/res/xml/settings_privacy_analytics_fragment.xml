@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rudroid.settings.preferences.StyledPreferenceCategory android:title="@string/settings_category_optional_activity_tracking" android:key="analytics" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat android:title="@string/settings_send_crash_data" android:key="switch_enable_crash_reporting" android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat android:title="@string/settings_send_analytics_data" android:key="switch_enable_analytics" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </com.github.rudroid.settings.preferences.StyledPreferenceCategory>
+    <com.github.rudroid.settings.preferences.InformationPreference android:selectable="false" android:key="stuff" android:summary="@string/settings_category_optional_activity_tracking_subtitle" app:iconSpaceReserved="false" />
+    <PreferenceCategory android:layout="@layout/settings_category_divider" android:key="divider_privacy_settings" app:iconSpaceReserved="false" />
+    <Preference android:title="@string/settings_privacy_policy_title" android:selectable="true" android:key="privacy_statement" app:iconSpaceReserved="false" />
+</PreferenceScreen>

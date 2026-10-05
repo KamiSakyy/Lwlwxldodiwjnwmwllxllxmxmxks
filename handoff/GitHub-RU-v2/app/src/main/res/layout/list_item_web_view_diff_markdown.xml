@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:tag="layout/list_item_web_view_diff_markdown_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line_number_background" android:layout_width="@dimen/default_margin_half" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/diff_line_group" />
+    <FrameLayout android:id="@id/diff_line_group" android:background="@color/backgroundElevatedSecondary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.github.rudroid.webview.viewholders.GitHubWebView android:id="@id/web_view" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/default_margin" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

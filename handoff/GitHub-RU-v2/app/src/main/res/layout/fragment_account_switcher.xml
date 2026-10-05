@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:tag="layout/fragment_account_switcher_0" android:background="@color/backgroundElevatedPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bottom_sheet_default_peek_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/header_shadow" android:background="@drawable/default_shadow_horizontal" android:layout_width="fill_parent" android:layout_height="3.0dip" android:alpha="0.0" android:elevation="1.0dip" android:stateListAnimator="@animator/shadow_alpha_animator" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/accounts_list" android:background="@color/backgroundElevatedPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin_4x" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

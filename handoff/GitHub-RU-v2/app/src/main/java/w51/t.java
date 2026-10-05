@@ -1,0 +1,34 @@
+package w51;
+
+import java.util.Arrays;
+import java.util.regex.Pattern;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class t {
+    public static final Pattern d = Pattern.compile("[a-zA-Z0-9-_.~%]{1,900}");
+    public final String a;
+    public final String b;
+    public final String c;
+
+    public t(String str, String str2) {
+        String substring = (str2 == null || !str2.startsWith("/topics/")) ? str2 : str2.substring(8);
+        if (substring == null || !d.matcher(substring).matches()) {
+            throw new IllegalArgumentException(f1.e.z("Invalid topic name: ", substring, " does not match the allowed format [a-zA-Z0-9-_.~%]{1,900}."));
+        }
+        this.a = substring;
+        this.b = str;
+        this.c = f1.e.h(str, "!", str2);
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof t)) {
+            return false;
+        }
+        t tVar = (t) obj;
+        return this.a.equals(tVar.a) && this.b.equals(tVar.b);
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(new Object[]{this.b, this.a});
+    }
+}

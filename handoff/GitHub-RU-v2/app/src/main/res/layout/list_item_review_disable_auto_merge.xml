@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:tag="layout/list_item_review_disable_auto_merge_0" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rudroid.views.ProgressButton android:id="@id/disable_auto_merge_button" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginStart="60.0dip" android:layout_marginEnd="@dimen/default_margin" app:buttonText="@string/issue_pr_disable_auto_merge_button" style="@style/ButtonPrimary" />
+    <include android:layout_width="@dimen/divider_height" android:layout_height="fill_parent" android:layout_marginStart="@dimen/default_margin_2x" layout="@layout/list_item_issue_pr_spacer" />
+</FrameLayout>

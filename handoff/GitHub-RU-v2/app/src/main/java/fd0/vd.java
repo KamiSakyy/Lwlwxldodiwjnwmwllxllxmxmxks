@@ -1,0 +1,28 @@
+package fd0;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class vd implements aa.a {
+    public static final vd a = new vd();
+    public static final List b = sy.d0.n("mergePullRequest");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        kc0.vk vkVar = null;
+        while (eVar.r0(b) == 0) {
+            vkVar = (kc0.vk) aa.c.b(aa.c.c(xd.a, false)).a(eVar, wVar);
+        }
+        return new kc0.tk(vkVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        kc0.tk tkVar = (kc0.tk) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(tkVar, "value");
+        fVar.z0("mergePullRequest");
+        aa.c.b(aa.c.c(xd.a, false)).b(fVar, wVar, tkVar.a);
+    }
+}

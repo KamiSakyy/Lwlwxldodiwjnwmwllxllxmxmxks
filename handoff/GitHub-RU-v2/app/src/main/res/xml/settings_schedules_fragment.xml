@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat android:title="@string/setting_working_hours_toggle_title" android:key="preference_global_toggle" android:summary="@string/setting_working_hours_toggle_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceCategory android:layout="@layout/settings_category_divider" android:key="schedules_settings_category" app:iconSpaceReserved="false" app:isPreferenceVisible="false">
+        <com.github.rudroid.settings.preferences.ActionPreference android:layout="@layout/preference_action" android:title="@string/setting_push_notification_from" android:key="preference_from" app:singleLineTitle="true" />
+        <com.github.rudroid.settings.preferences.ActionPreference android:layout="@layout/preference_action" android:title="@string/setting_push_notification_to" android:key="preference_to" app:iconSpaceReserved="false" app:singleLineTitle="true" />
+        <PreferenceCategory android:layout="@layout/settings_category_divider" app:iconSpaceReserved="false" />
+        <com.github.rudroid.settings.preferences.RadioPreferenceGroup android:layout="@layout/preference_radio_group" android:key="radio_group" />
+        <PreferenceCategory android:layout="@layout/settings_category_divider" app:iconSpaceReserved="false" />
+        <com.github.rudroid.settings.preferences.DaysOfWeekPickerPreference android:layout="@layout/preference_day_of_week_picker" android:key="preference_day_picker" app:allowDividerAbove="false" app:allowDividerBelow="false" app:iconSpaceReserved="false" app:isPreferenceVisible="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

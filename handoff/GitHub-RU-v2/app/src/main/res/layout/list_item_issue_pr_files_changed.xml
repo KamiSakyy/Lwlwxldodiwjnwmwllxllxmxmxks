@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:tag="layout/list_item_issue_pr_files_changed_0" android:background="@color/listItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_item_divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/files_changed_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:paddingTop="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_file_diff_16" android:layout_marginEnd="@dimen/default_margin" app:tint="@color/textPrimary" />
+            <TextView android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Medium" />
+            <TextView android:textColor="@color/diffLineNumberAdditionText" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin_quarter" />
+            <TextView android:textColor="@color/diffLineNumberDeletionText" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/review_context" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_3x" android:layout_marginEnd="@dimen/default_margin" style="@style/Tertiary.Small" />
+        <TextView android:textSize="@dimen/body_text_size_small" android:textColor="@color/systemOrange" android:id="@id/review_pending_comments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_3x" android:layout_marginEnd="@dimen/default_margin" />
+        <TextView android:textColor="@color/colorAccent" android:id="@id/review_cta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_3x" android:layout_marginEnd="@dimen/default_margin" />
+        <Space android:layout_width="1.0dip" android:layout_height="@dimen/default_margin" />
+    </LinearLayout>
+    <include layout="@layout/list_item_divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/commit_number" android:tag="binding_5" android:background="?selectableItemBackground" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_git_commit_16" android:layout_marginEnd="@dimen/default_margin" app:tint="@color/textPrimary" />
+        <TextView android:layout_gravity="center_vertical" android:tag="binding_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Medium" />
+        <TextView android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary" />
+    </LinearLayout>
+    <include layout="@layout/list_item_divider" />
+</LinearLayout>

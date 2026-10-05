@@ -1,0 +1,63 @@
+package i90;
+
+import aa.h0;
+import com.github.rudroid.copilot.h1;
+import com.github.rudroid.m0;
+import hc0.bm;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class f implements h0 {
+    public final boolean a;
+    public final d b;
+    public final String c;
+    public final String d;
+    public final boolean e;
+    public final boolean f;
+    public final bm g;
+    public final a h;
+    public final String i;
+
+    public f(boolean z, d dVar, String str, String str2, boolean z2, boolean z3, bm bmVar, a aVar, String str3) {
+        this.a = z;
+        this.b = dVar;
+        this.c = str;
+        this.d = str2;
+        this.e = z2;
+        this.f = z3;
+        this.g = bmVar;
+        this.h = aVar;
+        this.i = str3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof f)) {
+            return false;
+        }
+        f fVar = (f) obj;
+        return this.a == fVar.a && k71.k.b(this.b, fVar.b) && k71.k.b(this.c, fVar.c) && k71.k.b(this.d, fVar.d) && this.e == fVar.e && this.f == fVar.f && this.g == fVar.g && k71.k.b(this.h, fVar.h) && k71.k.b(this.i, fVar.i);
+    }
+
+    public final int hashCode() {
+        int hashCode = Boolean.hashCode(this.a) * 31;
+        d dVar = this.b;
+        return this.i.hashCode() + ((this.h.hashCode() + ((this.g.hashCode() + x.i.e(x.i.e(h1.i(h1.i((hashCode + (dVar == null ? 0 : dVar.hashCode())) * 31, this.c, 31), this.d, 31), 31, this.e), 31, this.f)) * 31)) * 31);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("ReviewThreadFragment(isResolved=");
+        sb.append(this.a);
+        sb.append(", resolvedBy=");
+        sb.append(this.b);
+        sb.append(", path=");
+        f1.e.x(sb, this.c, ", id=", this.d, ", viewerCanResolve=");
+        m0.A(sb, this.e, ", viewerCanUnresolve=", this.f, ", subjectType=");
+        sb.append(this.g);
+        sb.append(", comments=");
+        sb.append(this.h);
+        sb.append(", __typename=");
+        return h1.p(sb, this.i, ")");
+    }
+}

@@ -1,0 +1,89 @@
+package ox0;
+
+import java.time.ZonedDateTime;
+import pz0.gl;
+import pz0.rl;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class f {
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final int e;
+    public final ZonedDateTime f;
+    public final rl g;
+    public final o0 h;
+    public final String i;
+    public final boolean j;
+    public final boolean k;
+    public final String l;
+    public final e m;
+    public final gl n;
+    public final n0 o;
+    public final String p;
+
+    public f(String str, String str2, String str3, boolean z, int i, ZonedDateTime zonedDateTime, rl rlVar, o0 o0Var, String str4, boolean z2, boolean z3, String str5, e eVar, gl glVar, n0 n0Var, String str6) {
+        this.a = str;
+        this.b = str2;
+        this.c = str3;
+        this.d = z;
+        this.e = i;
+        this.f = zonedDateTime;
+        this.g = rlVar;
+        this.h = o0Var;
+        this.i = str4;
+        this.j = z2;
+        this.k = z3;
+        this.l = str5;
+        this.m = eVar;
+        this.n = glVar;
+        this.o = n0Var;
+        this.p = str6;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof f)) {
+            return false;
+        }
+        f fVar = (f) obj;
+        return k71.k.b(this.a, fVar.a) && k71.k.b(this.b, fVar.b) && k71.k.b(this.c, fVar.c) && this.d == fVar.d && this.e == fVar.e && k71.k.b(this.f, fVar.f) && this.g == fVar.g && k71.k.b(this.h, fVar.h) && k71.k.b(this.i, fVar.i) && this.j == fVar.j && this.k == fVar.k && k71.k.b(this.l, fVar.l) && k71.k.b(this.m, fVar.m) && this.n == fVar.n && k71.k.b(this.o, fVar.o) && k71.k.b(this.p, fVar.p);
+    }
+
+    public final int hashCode() {
+        int hashCode = (this.g.hashCode() + com.github.rudroid.m0.a(this.f, a0.s0.b(this.e, x.i.e(com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31, this.d), 31), 31)) * 31;
+        o0 o0Var = this.h;
+        int hashCode2 = (hashCode + (o0Var == null ? 0 : o0Var.hashCode())) * 31;
+        String str = this.i;
+        int hashCode3 = (this.m.hashCode() + com.github.rudroid.copilot.h1.i(x.i.e(x.i.e((hashCode2 + (str == null ? 0 : str.hashCode())) * 31, 31, this.j), 31, this.k), this.l, 31)) * 31;
+        gl glVar = this.n;
+        return this.p.hashCode() + ((this.o.hashCode() + ((hashCode3 + (glVar != null ? glVar.hashCode() : 0)) * 31)) * 31);
+    }
+
+    public final String toString() {
+        StringBuilder o = a0.s0.o("Node(id=", this.a, ", threadType=", this.b, ", title=");
+        com.github.rudroid.m0.x(o, this.c, ", isUnread=", this.d, ", unreadItemsCount=");
+        o.append(this.e);
+        o.append(", lastUpdatedAt=");
+        o.append(this.f);
+        o.append(", subscriptionStatus=");
+        o.append(this.g);
+        o.append(", summaryItemAuthor=");
+        o.append(this.h);
+        o.append(", summaryItemBody=");
+        com.github.rudroid.m0.x(o, this.i, ", isArchived=", this.j, ", isSaved=");
+        com.github.rudroid.m0.z(o, this.k, ", url=", this.l, ", list=");
+        o.append(this.m);
+        o.append(", reason=");
+        o.append(this.n);
+        o.append(", subject=");
+        o.append(this.o);
+        o.append(", __typename=");
+        o.append(this.p);
+        o.append(")");
+        return o.toString();
+    }
+}

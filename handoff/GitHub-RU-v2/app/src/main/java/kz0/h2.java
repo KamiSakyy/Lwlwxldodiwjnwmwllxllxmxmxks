@@ -1,0 +1,24 @@
+package kz0;
+
+import java.util.List;
+import pz0.k8;
+import pz0.pd;
+import pz0.sk;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class h2 {
+    public static final List a;
+
+    static {
+        pd.Companion.getClass();
+        aa.x xVar = pd.a;
+        k71.k.g(xVar, "type");
+        x61.r rVar = x61.r.r;
+        List n = sy.d0.n(new aa.m("success", xVar, (String) null, rVar, rVar, rVar));
+        k8.Companion.getClass();
+        aa.q0 q0Var = k8.a;
+        k71.k.g(q0Var, "type");
+        sk.Companion.getClass();
+        a = sy.d0.n(new aa.m("deleteSavedNotificationThread", q0Var, (String) null, rVar, no.a.s(sk.T, new aa.u0(a0.s0.p("id", new aa.t("id")))), n));
+    }
+}

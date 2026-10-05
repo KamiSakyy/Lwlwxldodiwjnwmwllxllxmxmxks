@@ -1,0 +1,31 @@
+package ra0;
+
+import aa.m0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class c implements m0 {
+    public final b a;
+
+    public c(b bVar) {
+        this.a = bVar;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof c) && k71.k.b(this.a, ((c) obj).a);
+    }
+
+    public final int hashCode() {
+        b bVar = this.a;
+        if (bVar == null) {
+            return 0;
+        }
+        return bVar.hashCode();
+    }
+
+    public final String toString() {
+        return "Data(createUserList=" + this.a + ")";
+    }
+}

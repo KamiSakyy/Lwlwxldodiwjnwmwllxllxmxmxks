@@ -1,0 +1,29 @@
+package xk0;
+
+import aa.m;
+import aa.r;
+import aa.s;
+import aa.x;
+import gn0.pb;
+import gn0.tb;
+import java.util.List;
+import v8.l0;
+import x61.l;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class e {
+    public static final List a;
+
+    static {
+        tb.Companion.getClass();
+        x xVar = tb.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
+        pb.Companion.getClass();
+        s mVar2 = new m("id", l0.b(pb.a), (String) null, rVar, rVar, rVar);
+        List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
+        List list = vd0.b.a;
+        a = l.r(new s[]{mVar, mVar2, no.a.c(list, "selections", "Actor", r, list), new m("name", xVar, (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+    }
+}

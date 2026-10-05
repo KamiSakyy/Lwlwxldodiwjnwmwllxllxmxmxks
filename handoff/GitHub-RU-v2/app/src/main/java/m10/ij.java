@@ -1,0 +1,14 @@
+package m10;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class ij {
+    public static final hj Companion = new hj();
+
+    static {
+        List n = sy.d0.n("id");
+        zp.Companion.getClass();
+        new aa.q0("IssueTypeAddedEvent", n, sy.d0.n(zp.a));
+    }
+}

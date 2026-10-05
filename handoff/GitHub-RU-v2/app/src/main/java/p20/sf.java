@@ -1,0 +1,265 @@
+package p20;
+
+import java.util.Iterator;
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class sf implements aa.a {
+    public static final List a = x61.l.r(new String[]{"__typename", "id", "path", "subjectType", "isResolved", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "diffLines", "comments"});
+
+    /* JADX WARN: Code restructure failed: missing block: B:10:0x0036, code lost:
+    
+        if (r12 == null) goto L29;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:11:0x0038, code lost:
+    
+        r16 = r8;
+        r8 = r12.booleanValue();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:12:0x003e, code lost:
+    
+        if (r16 == null) goto L27;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:13:0x0040, code lost:
+    
+        r17 = r9;
+        r9 = r16.booleanValue();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:14:0x0046, code lost:
+    
+        if (r17 == null) goto L25;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x0048, code lost:
+    
+        r18 = r10;
+        r10 = r17.booleanValue();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:16:0x004e, code lost:
+    
+        if (r18 == null) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x0050, code lost:
+    
+        r12 = r18.booleanValue();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x0054, code lost:
+    
+        if (r14 == null) goto L21;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0059, code lost:
+    
+        return new u10.hn(r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:22:0x005a, code lost:
+    
+        k41.b.B(r19, "comments");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:23:0x005f, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x0060, code lost:
+    
+        k41.b.B(r19, "viewerCanReply");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:25:0x0065, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0066, code lost:
+    
+        k41.b.B(r19, "viewerCanUnresolve");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:27:0x006b, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:28:0x006c, code lost:
+    
+        k41.b.B(r19, "viewerCanResolve");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:29:0x0071, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:30:0x0072, code lost:
+    
+        k41.b.B(r19, "isResolved");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:31:0x0077, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:32:0x0078, code lost:
+    
+        k41.b.B(r19, "subjectType");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:33:0x007d, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:34:0x007e, code lost:
+    
+        k41.b.B(r19, "path");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:35:0x0083, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:36:0x0084, code lost:
+    
+        k41.b.B(r19, "id");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:37:0x0089, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:38:0x008a, code lost:
+    
+        k41.b.B(r19, "__typename");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:39:0x008f, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:5:0x0024, code lost:
+    
+        r19.s0();
+        r15 = g80.b.c(r19, r20);
+        r12 = r3;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
+    
+        if (r4 == null) goto L37;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:7:0x0030, code lost:
+    
+        if (r5 == null) goto L35;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:8:0x0032, code lost:
+    
+        if (r6 == null) goto L33;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:9:0x0034, code lost:
+    
+        if (r7 == null) goto L31;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static u10.hn c(ea.e eVar, aa.w wVar) {
+        Boolean bool;
+        Object obj;
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        Boolean bool2 = null;
+        String str = null;
+        String str2 = null;
+        String str3 = null;
+        hc0.bm bmVar = null;
+        Boolean bool3 = null;
+        Boolean bool4 = null;
+        Boolean bool5 = null;
+        u10.ln lnVar = null;
+        List list = null;
+        u10.xm xmVar = null;
+        while (true) {
+            switch (eVar.r0(a)) {
+                case 0:
+                    bool = bool2;
+                    str = (String) aa.c.a.a(eVar, wVar);
+                    break;
+                case 1:
+                    bool = bool2;
+                    str2 = (String) aa.c.a.a(eVar, wVar);
+                    break;
+                case 2:
+                    bool = bool2;
+                    str3 = (String) aa.c.a.a(eVar, wVar);
+                    break;
+                case 3:
+                    Boolean bool6 = bool2;
+                    Boolean bool7 = bool3;
+                    Boolean bool8 = bool4;
+                    Boolean bool9 = bool5;
+                    String u = eVar.u();
+                    k71.k.d(u);
+                    hc0.bm.Companion.getClass();
+                    Iterator it = hc0.bm.x.iterator();
+                    while (true) {
+                        if (it.hasNext()) {
+                            obj = it.next();
+                            if (((hc0.bm) obj).r.equals(u)) {
+                            }
+                        } else {
+                            obj = null;
+                        }
+                    }
+                    hc0.bm bmVar2 = (hc0.bm) obj;
+                    bmVar = bmVar2 == null ? hc0.bm.v : bmVar2;
+                    bool2 = bool6;
+                    bool3 = bool7;
+                    bool4 = bool8;
+                    bool5 = bool9;
+                    continue;
+                case 4:
+                    bool2 = (Boolean) aa.c.f.a(eVar, wVar);
+                    continue;
+                case 5:
+                    bool = bool2;
+                    bool3 = (Boolean) aa.c.f.a(eVar, wVar);
+                    break;
+                case 6:
+                    bool = bool2;
+                    bool4 = (Boolean) aa.c.f.a(eVar, wVar);
+                    break;
+                case 7:
+                    bool = bool2;
+                    lnVar = (u10.ln) aa.c.b(aa.c.c(wf.a, false)).a(eVar, wVar);
+                    break;
+                case 8:
+                    bool = bool2;
+                    bool5 = (Boolean) aa.c.f.a(eVar, wVar);
+                    break;
+                case 9:
+                    list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(mf.a, true)))).a(eVar, wVar);
+                    bool2 = bool2;
+                    bool3 = bool3;
+                    continue;
+                case 10:
+                    bool = bool2;
+                    xmVar = (u10.xm) aa.c.c(jf.a, false).a(eVar, wVar);
+                    break;
+            }
+            bool2 = bool;
+        }
+    }
+
+    public static void d(ea.f fVar, aa.w wVar, u10.hn hnVar) {
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(hnVar, "value");
+        fVar.z0("__typename");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, hnVar.a);
+        fVar.z0("id");
+        bVar.b(fVar, wVar, hnVar.b);
+        fVar.z0("path");
+        bVar.b(fVar, wVar, hnVar.c);
+        fVar.z0("subjectType");
+        fVar.I(hnVar.d.r);
+        fVar.z0("isResolved");
+        aa.b bVar2 = aa.c.f;
+        jo.f4.C(hnVar.e, bVar2, fVar, wVar, "viewerCanResolve");
+        jo.f4.C(hnVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4.C(hnVar.g, bVar2, fVar, wVar, "resolvedBy");
+        aa.c.b(aa.c.c(wf.a, false)).b(fVar, wVar, hnVar.h);
+        fVar.z0("viewerCanReply");
+        jo.f4.C(hnVar.i, bVar2, fVar, wVar, "diffLines");
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(mf.a, true)))).b(fVar, wVar, hnVar.j);
+        fVar.z0("comments");
+        aa.c.c(jf.a, false).b(fVar, wVar, hnVar.k);
+        List list = g80.b.a;
+        g80.b.d(fVar, wVar, hnVar.l);
+    }
+}

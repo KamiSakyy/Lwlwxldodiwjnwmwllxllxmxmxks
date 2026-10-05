@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="action_bar_lines_selected_announcement">
+        <item quantity="other">%1$d から %2$d 行めが選択されました</item>
+    </plurals>
+    <plurals name="action_bar_title_lines_selected">
+        <item quantity="other">%1$d 行めから %2$d 行め</item>
+    </plurals>
+    <plurals name="actions_rerun_only_failed_jobs">
+        <item quantity="other">%d 個の失敗したジョブを再実行</item>
+    </plurals>
+    <plurals name="actions_workflow_jobs_overflow">
+        <item quantity="other">及び %d 件のその他のジョブ</item>
+    </plurals>
+    <plurals name="agent_picker_selected_agents_count">
+        <item quantity="other">%d エージェント</item>
+    </plurals>
+    <plurals name="app_lock_automatic_lock_duration">
+        <item quantity="other">%d 分後</item>
+    </plurals>
+    <plurals name="check_status_with_count">
+        <item quantity="other">%1$d 件の%2$s</item>
+    </plurals>
+    <plurals name="checks_failed">
+        <item quantity="other">%d 回失敗しました</item>
+    </plurals>
+    <plurals name="checks_neutral">
+        <item quantity="other">%d 回ニュートラルでした</item>
+    </plurals>
+    <plurals name="checks_other">
+        <item quantity="other">その他 %d 回</item>
+    </plurals>
+    <plurals name="checks_passed">
+        <item quantity="other">%d 回パスしました</item>
+    </plurals>
+    <plurals name="checks_running">
+        <item quantity="other">%d 回実行中</item>
+    </plurals>
+    <plurals name="checks_skipped">
+        <item quantity="other">%d 回スキップされました</item>
+    </plurals>
+    <plurals name="checks_status_summary">
+        <item quantity="other">%sチェック</item>
+    </plurals>
+    <plurals name="copilot_bing_references_count">
+        <item quantity="other">%1$d 個の参照</item>
+    </plurals>
+    <plurals name="copilot_bing_search_results_count_with_query">
+        <item quantity="other">\"%2$s\" の Bing 検索からの結果が%1$d 件です</item>
+    </plurals>
+    <plurals name="copilot_code_vulnerability_warning">
+        <item quantity="other">%d 個の脆弱性が検出されました</item>
+    </plurals>
+    <plurals name="copilot_review_feedback_text_remaining_characters">
+        <item quantity="other">残り %d 文字</item>
+    </plurals>
+    <plurals name="create_repository_character_count">
+        <item quantity="other">%1$d / %2$d 文字</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days">
+        <item quantity="other">%d 日</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days_ago">
+        <item quantity="other">%d 日前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours">
+        <item quantity="other">%d 時間</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours_ago">
+        <item quantity="other">%d 時間前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes_ago">
+        <item quantity="other">%d 分前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months">
+        <item quantity="other">%d ヶ月</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months_ago">
+        <item quantity="other">%d ヶ月前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds_ago">
+        <item quantity="other">%d 秒前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years">
+        <item quantity="other">%d 年</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years_ago">
+        <item quantity="other">%d 年前</item>
+    </plurals>
+    <plurals name="deployment_approval_request_summary">
+        <item quantity="other">あなた、 %1$s、あるいは%2$sからのレビューが必要です</item>
+    </plurals>
+    <plurals name="dialog_sign_out_of_all_accounts">
+        <item quantity="other">すべての %d アカウントからサインアウトしますか?</item>
+    </plurals>
+    <plurals name="discussions_inline_replies_preview_metadata_label">
+        <item quantity="other">%d件の以前の返信</item>
+    </plurals>
+    <plurals name="explore_contributors_count">
+        <item quantity="other">%d 人のコントリビューター</item>
+    </plurals>
+    <plurals name="feed_header_starred_repository">
+        <item quantity="other">%1$s が %2$d このリポジトリにStarを付けました</item>
+    </plurals>
+    <plurals name="files_number_of_additions">
+        <item quantity="other">%,d 件の追加</item>
+    </plurals>
+    <plurals name="files_number_of_deletions">
+        <item quantity="other">%,d 件の削除</item>
+    </plurals>
+    <plurals name="files_number_of_files_changed">
+        <item quantity="other">%,d 個のファイルが変更されました</item>
+    </plurals>
+    <plurals name="fork_repository_edit_text_remaining_characters">
+        <item quantity="other">残り %d 文字です。</item>
+    </plurals>
+    <plurals name="issue_pr_failing_checks_number">
+        <item quantity="other">· %d 件失敗</item>
+    </plurals>
+    <plurals name="issue_pr_list_pending_review_comments">
+        <item quantity="other">保留中の %d 件のレビュー コメント</item>
+    </plurals>
+    <plurals name="issue_pr_number_of_commits">
+        <item quantity="other">%,d 件のコミット</item>
+    </plurals>
+    <plurals name="issue_pr_pending_review_comments">
+        <item quantity="other">保留中の %d 件のレビュー コメントがあります</item>
+    </plurals>
+    <plurals name="notification_item_label">
+        <item quantity="other">%d 件の通知</item>
+    </plurals>
+    <plurals name="notification_unread_item_label">
+        <item quantity="other">%s 件の未読アイテム</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_confirmation">
+        <item quantity="other">%d 件の通知を完了としてマーク</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_notice">
+        <item quantity="other">%d 件の通知を完了としてマーク</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_confirmation">
+        <item quantity="other">%d 件の通知を既読としてマーク</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_notice">
+        <item quantity="other">%d 件の通知を既読としてマーク</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_confirmation">
+        <item quantity="other">%d 件の通知を未読としてマーク</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_notice">
+        <item quantity="other">%d 件の通知を未読としてマーク</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_confirmation">
+        <item quantity="other">%d 件の通知をインボックスへ移動</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_notice">
+        <item quantity="other">%d 件の通知をインボックスへ移動</item>
+    </plurals>
+    <plurals name="notifications_n_selected">
+        <item quantity="other">%d 選択済</item>
+    </plurals>
+    <plurals name="open_pr_dialog_commits_summary">
+        <item quantity="other">%s 件のコミット</item>
+    </plurals>
+    <plurals name="organizations_followers_label">
+        <item quantity="other">%s 人のフォロワー</item>
+    </plurals>
+    <plurals name="organizations_following_label">
+        <item quantity="other">%s 人をフォロー中</item>
+    </plurals>
+    <plurals name="polls_number_of_votes">
+        <item quantity="other">%d 票</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_assigned_subtitle">
+        <item quantity="other">%d 件割り当て済み</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_created_subtitle">
+        <item quantity="other">%d 件作成済み</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_mentioned_subtitle">
+        <item quantity="other">%d 件メンション済み</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_review_requested_subtitle">
+        <item quantity="other">%d 件のレビュー要求済み</item>
+    </plurals>
+    <plurals name="release_detail_contributors_view_all_subtitle">
+        <item quantity="other">%d 人のコントリビューター</item>
+    </plurals>
+    <plurals name="release_discussion_comments_preview_metadata_label">
+        <item quantity="other">%d 件前のコメント</item>
+    </plurals>
+    <plurals name="repository_forks_label">
+        <item quantity="other">%s フォーク</item>
+    </plurals>
+    <plurals name="repository_stars_label">
+        <item quantity="other">%s Star</item>
+    </plurals>
+    <plurals name="repository_stars_label_month">
+        <item quantity="other">今月の星の数: %s</item>
+    </plurals>
+    <plurals name="repository_stars_label_today">
+        <item quantity="other">今日の星の数: %s</item>
+    </plurals>
+    <plurals name="repository_stars_label_week">
+        <item quantity="other">今週の星の数: %s</item>
+    </plurals>
+    <plurals name="review_number_of_comments">
+        <item quantity="other">%,d 件のコメント</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_all_jobs">
+        <item quantity="other">%d 個のすべてのジョブを再実行してください</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_only_failed_jobs">
+        <item quantity="other">失敗したジョブのみを再実行してください。%d 個のジョブが失敗しました</item>
+    </plurals>
+    <plurals name="screenreader_actions_workflows_number_of_runs">
+        <item quantity="other">合計実行数 %d</item>
+    </plurals>
+    <plurals name="screenreader_added_to_many_lists_content_description">
+        <item quantity="other">%1$s と他の %2$s 個のリストに追加されました</item>
+    </plurals>
+    <plurals name="screenreader_displaying_results">
+        <item quantity="other">%d 結果を表示しています</item>
+    </plurals>
+    <plurals name="screenreader_expandable_number_of_items">
+        <item quantity="other">%d アイテム</item>
+    </plurals>
+    <plurals name="screenreader_favorites_search_results">
+        <item quantity="other">%d 件の結果が見つかりました</item>
+    </plurals>
+    <plurals name="screenreader_issue_related_pull_requests">
+        <item quantity="other">%,d pull requests</item>
+    </plurals>
+    <plurals name="screenreader_lists_list_number_of_repos_count">
+        <item quantity="other">%d 個のリポジトリが追加されました</item>
+    </plurals>
+    <plurals name="screenreader_number_of_assignees">
+        <item quantity="other">%d 人に割り当て</item>
+    </plurals>
+    <plurals name="screenreader_number_of_contributors">
+        <item quantity="other">%d 人のコントリビューター</item>
+    </plurals>
+    <plurals name="screenreader_pull_request_related_issues">
+        <item quantity="other">%,d 件のリンクされたIssue</item>
+    </plurals>
+    <plurals name="screenreader_reaction_type_and_quantity">
+        <item quantity="other">%1$s %2$s リアクション</item>
+    </plurals>
+    <plurals name="screenreader_search_and_filter_x_results">
+        <item quantity="other">%d 件の結果</item>
+    </plurals>
+    <plurals name="screenreader_search_results">
+        <item quantity="other">%d 件の結果が見つかりました</item>
+    </plurals>
+    <plurals name="screenreader_sub_issues_progress_description">
+        <item quantity="other">サブイシュー、%2$d 件中 %1$d 件が完了</item>
+    </plurals>
+    <plurals name="screenreader_unread_notifications_metadata">
+        <item quantity="other">%d 件の未読の通知</item>
+    </plurals>
+    <plurals name="screenreader_user_discussions_counter_description">
+        <item quantity="other">%d 件のディスカッション</item>
+    </plurals>
+    <plurals name="screenreader_user_organizations_counter_description">
+        <item quantity="other">%d 個の組織</item>
+    </plurals>
+    <plurals name="screenreader_user_projects_counter_description">
+        <item quantity="other">%d 個のプロジェクト</item>
+    </plurals>
+    <plurals name="screenreader_user_repo_counter_description">
+        <item quantity="other">%d 個のリポジトリ</item>
+    </plurals>
+    <plurals name="screenreader_user_sponsoring_counter_description">
+        <item quantity="other">%d 人のスポンサー ユーザー</item>
+    </plurals>
+    <plurals name="screenreader_user_starred_repos_counter_description">
+        <item quantity="other">%d 個の星付きリポジトリ</item>
+    </plurals>
+    <plurals name="search_and_filter_filter_bar_context_button_filter_count_description">
+        <item quantity="other">%d 個のフィルターが適用されました</item>
+    </plurals>
+    <plurals name="search_results_number_of_issues">
+        <item quantity="other">%s Issueをさらに表示</item>
+    </plurals>
+    <plurals name="search_results_number_of_orgs">
+        <item quantity="other">%s 組織をさらに表示</item>
+    </plurals>
+    <plurals name="search_results_number_of_pull_requests">
+        <item quantity="other">%s Pull Requestをさらに表示</item>
+    </plurals>
+    <plurals name="search_results_number_of_repos">
+        <item quantity="other">%s リポジトリをさらに表示</item>
+    </plurals>
+    <plurals name="search_results_number_of_users">
+        <item quantity="other">%s 人をさらに表示</item>
+    </plurals>
+    <plurals name="session_event_files_changed">
+        <item quantity="other">%d ファイルが変更済み</item>
+    </plurals>
+    <plurals name="session_event_task_summary_actions">
+        <item quantity="other">%d アクション</item>
+    </plurals>
+    <plurals name="session_event_tool_calls">
+        <item quantity="other">%d 件のツール呼び出し</item>
+    </plurals>
+    <plurals name="session_event_tool_group_bash">
+        <item quantity="other">%d 個のターミナル コマンド</item>
+    </plurals>
+    <plurals name="session_event_tool_group_create">
+        <item quantity="other">%d 個のファイルを作成</item>
+    </plurals>
+    <plurals name="session_event_tool_group_default">
+        <item quantity="other">%2$s: %1$d 件の呼び出し</item>
+    </plurals>
+    <plurals name="session_event_tool_group_edit">
+        <item quantity="other">%d 個のファイルを編集</item>
+    </plurals>
+    <plurals name="session_event_tool_group_view">
+        <item quantity="other">%d 個のファイルを表示</item>
+    </plurals>
+    <plurals name="session_metadata_premium_requests">
+        <item quantity="other">%1$s 個のプレミアム要求</item>
+    </plurals>
+    <plurals name="session_metadata_sessions">
+        <item quantity="other">%d 個のセッション</item>
+    </plurals>
+    <plurals name="show_more_code_search_matches">
+        <item quantity="other">さらに %d 件の一致を表示する</item>
+    </plurals>
+    <plurals name="status_characters_remaining_label">
+        <item quantity="other">残り %d 文字</item>
+    </plurals>
+    <plurals name="status_check_group_header">
+        <item quantity="other">%1$d 件の%2$s チェック</item>
+    </plurals>
+    <plurals name="task_list_progress_label_all_complete">
+        <item quantity="other">%1$d 件完了</item>
+    </plurals>
+    <plurals name="task_list_progress_label_not_started">
+        <item quantity="other">%1$d件のタスク</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_rebase_description">
+        <item quantity="other">すべての要件が満たされると、このブランチからの%d件のコミットはリベースされベースブランチにマージされます。</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_squash_description">
+        <item quantity="other">すべての要件が満たされると、このブランチからの %d 件のコミットが、ベース ブランチの 1 つのコミットにまとめられます。</item>
+    </plurals>
+    <plurals name="triage_linked_items_max_reached">
+        <item quantity="other">%d 個のアイテムだけがリンクできます</item>
+    </plurals>
+    <plurals name="triage_merge_method_rebase_description">
+        <item quantity="other">このブランチからの %d 件のコミットがリベースされ、ベースブランチに追加されます。</item>
+    </plurals>
+    <plurals name="triage_merge_method_squash_description">
+        <item quantity="other">このブランチからの %d 件のコミットが、ベース ブランチの 1 つのコミットにまとめられます。</item>
+    </plurals>
+    <plurals name="triage_review_multiline_placeholder">
+        <item quantity="other">折りたたまれた行 %1$d から %2$d</item>
+    </plurals>
+    <plurals name="users_repositories_label">
+        <item quantity="other">%s 個のリポジトリ</item>
+    </plurals>
+    <plurals name="view_more_code_search_matches">
+        <item quantity="other">さらに %d 件の一致を表示する</item>
+    </plurals>
+</resources>

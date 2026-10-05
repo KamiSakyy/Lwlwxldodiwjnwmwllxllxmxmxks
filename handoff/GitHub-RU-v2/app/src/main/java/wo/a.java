@@ -1,0 +1,43 @@
+package wo;
+
+import aa.a0;
+import aa.m;
+import aa.x;
+import java.util.List;
+import m10.b4;
+import m10.ch;
+import m10.eh;
+import m10.sa;
+import m10.t3;
+import v8.l0;
+import x61.l;
+import x61.r;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class a {
+    public static final List a;
+
+    static {
+        eh.Companion.getClass();
+        x xVar = eh.a;
+        k71.k.g(xVar, "type");
+        r rVar = r.r;
+        m mVar = new m("externalId", xVar, (String) null, rVar, rVar, rVar);
+        m mVar2 = new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        t3.Companion.getClass();
+        a0 a0Var = t3.s;
+        k71.k.g(a0Var, "type");
+        m mVar3 = new m("conclusion", a0Var, (String) null, rVar, rVar, rVar);
+        b4.Companion.getClass();
+        m mVar4 = new m("status", l0.b(b4.s), (String) null, rVar, rVar, rVar);
+        sa.Companion.getClass();
+        x xVar2 = sa.a;
+        k71.k.g(xVar2, "type");
+        m mVar5 = new m("startedAt", xVar2, (String) null, rVar, rVar, rVar);
+        m mVar6 = new m("completedAt", xVar2, (String) null, rVar, rVar, rVar);
+        ch.Companion.getClass();
+        x xVar3 = ch.a;
+        k71.k.g(xVar3, "type");
+        a = l.r(new m[]{mVar, mVar2, mVar3, mVar4, mVar5, mVar6, new m("secondsToCompletion", xVar3, (String) null, rVar, rVar, rVar), new m("number", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+    }
+}

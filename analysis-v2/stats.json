@@ -1,0 +1,406 @@
+{
+  "total_files": 46359,
+  "total_bytes": 87774405,
+  "java_files": 43317,
+  "kotlin_files": 0,
+  "java_lines": 2167532,
+  "single_letter_classes": 17182,
+  "duplicate_files": 0,
+  "duplicate_groups": 0,
+  "top_packages": [
+    [
+      "app.src.main.java.jo",
+      1485
+    ],
+    [
+      "app.src.main.java.m10",
+      1408
+    ],
+    [
+      "app.src.main.java.jn0",
+      1399
+    ],
+    [
+      "app.src.main.java.kc0",
+      1295
+    ],
+    [
+      "app.src.main.java.u10",
+      1243
+    ],
+    [
+      "app.src.main.java.pz0",
+      1232
+    ],
+    [
+      "app.src.main.java.ep",
+      1031
+    ],
+    [
+      "app.src.main.java.gn0",
+      1015
+    ],
+    [
+      "app.src.main.java.hc0",
+      981
+    ],
+    [
+      "app.src.main.java.eo0",
+      970
+    ],
+    [
+      "app.src.main.java.fd0",
+      894
+    ],
+    [
+      "app.src.main.java.p20",
+      856
+    ],
+    [
+      "app.src.main.java.com.github.rudroid.viewmodels",
+      318
+    ],
+    [
+      "app.src.main.java.t00",
+      310
+    ],
+    [
+      "app.src.main.java.rm0",
+      310
+    ],
+    [
+      "app.src.main.java.com.google.android.gms.internal.measurement",
+      283
+    ],
+    [
+      "app.src.main.java.wy0",
+      276
+    ],
+    [
+      "app.src.main.java.gv",
+      266
+    ],
+    [
+      "app.src.main.java.ri0",
+      258
+    ],
+    [
+      "app.src.main.java.yz0",
+      253
+    ],
+    [
+      "app.src.main.java.xt0",
+      250
+    ],
+    [
+      "app.src.main.java.z70",
+      243
+    ],
+    [
+      "app.src.main.java.vb0",
+      240
+    ],
+    [
+      "app.src.main.java.cq",
+      228
+    ],
+    [
+      "app.src.main.java.h10",
+      226
+    ],
+    [
+      "app.src.main.java.dw",
+      224
+    ],
+    [
+      "app.src.main.java.kz0",
+      214
+    ],
+    [
+      "app.src.main.java.ap0",
+      206
+    ],
+    [
+      "app.src.main.java.uu0",
+      202
+    ],
+    [
+      "app.src.main.java.en0",
+      200
+    ],
+    [
+      "app.src.main.java.fc0",
+      193
+    ],
+    [
+      "app.src.main.java.com.github.rudroid.viewmodels.issuesorpullrequests",
+      184
+    ],
+    [
+      "app.src.main.java.wx0",
+      166
+    ],
+    [
+      "app.src.main.java.tz",
+      166
+    ],
+    [
+      "app.src.main.java.com.google.android.gms.measurement.internal",
+      151
+    ],
+    [
+      "app.src.main.java.com.google.android.gms.internal.play_billing",
+      140
+    ],
+    [
+      "app.src.main.java.xn",
+      138
+    ],
+    [
+      "app.src.main.java.oj0",
+      136
+    ],
+    [
+      "app.src.main.java.w80",
+      130
+    ],
+    [
+      "app.src.main.java.com.github.rudroid.discussions",
+      125
+    ]
+  ],
+  "red_flags_count": 7547,
+  "heat_counts": {
+    "WAKELOCK": 12,
+    "Бесконечный цикл while(true)/for(;;)": 7554,
+    "Thread.sleep в коде": 1,
+    "Timer / scheduleAtFixedRate": 2,
+    "Handler.postDelayed (циклы повторов)": 16,
+    "Handler(Looper.getMainLooper)": 18,
+    "AlarmManager (будильники)": 8,
+    "Сенсоры registerListener": 1,
+    "SENSOR_DELAY_FASTEST/GAME": 0,
+    "Запросы геолокации": 0,
+    "Вибрация": 2,
+    "Медиа-плеер": 1,
+    "Бесконечные анимации": 0,
+    "Choreographer (покадровый цикл)": 22,
+    "Потоки/пулы потоков": 72,
+    "Постоянный сервис/foreground": 2,
+    "Показ/удержание экрана": 0,
+    "Плотные циклы по UI (invalidate/postInvalidate)": 64,
+    "Радио/сканирование (Wifi/Bluetooth LE)": 0,
+    "Опрос батареи/температуры": 0
+  },
+  "manifests": [
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "package": null,
+      "versionName": null,
+      "versionCode": null,
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.POST_PROMOTED_NOTIFICATIONS",
+        "android.permission.INTERNET",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "com.android.vending.BILLING",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.WAKE_LOCK",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+        "com.google.android.gms.permission.AD_ID",
+        "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+        "android.permission.ACCESS_ADSERVICES_AD_ID",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "com.github.rudroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "activities": [
+        "com.github.rudroid.main.MainActivity",
+        "net.openid.appauth.RedirectUriReceiverActivity",
+        "com.github.rudroid.activities.DeepLinkActivity",
+        "com.github.rudroid.auth.SimplifiedLoginActivity",
+        "com.github.rudroid.auth.ReLoginActivity",
+        "com.github.rudroid.issueorpullrequest.LegacyIssueOrPullRequestActivity",
+        "com.github.rudroid.issueorpullrequest.IssueOrPullRequestActivity",
+        "com.github.rudroid.fileschanged.FilesChangedActivity",
+        "com.github.rudroid.fileschanged.delete.DeleteFileActivity",
+        "com.github.rudroid.fileschanged.RefComparisonFilesChangedActivity",
+        "com.github.rudroid.activities.PullRequestsActivity",
+        "com.github.rudroid.activities.IssuesActivity",
+        "com.github.rudroid.fileeditor.FileEditorActivity",
+        "com.github.rudroid.organizations.OrganizationsActivity",
+        "com.github.rudroid.repositories.TopRepositoriesActivity",
+        "com.github.rudroid.repositories.RepositoriesActivity",
+        "com.github.rudroid.profile.UserOrOrganizationComposeActivity",
+        "com.github.rudroid.users.UsersActivity",
+        "com.github.rudroid.settings.SettingsActivity",
+        "com.github.rudroid.settings.SettingsNotificationsActivity",
+        "com.github.rudroid.settings.SettingsNotificationSchedulesActivity",
+        "com.github.rudroid.settings.featurepreview.SettingsFeaturePreviewActivity",
+        "com.github.rudroid.settings.privacy.PrivacyAnalyticsActivity",
+        "com.github.rudroid.activities.SearchResultsActivity",
+        "com.github.rudroid.createissue.CreateIssueComposeActivity",
+        "com.github.rudroid.activities.PullRequestReviewActivity",
+        "com.github.rudroid.favorites.FavoritesActivity",
+        "com.github.rudroid.feed.TrendingActivity",
+        "com.github.rudroid.feed.awesometopics.AwesomeListsActivity",
+        "com.github.rudroid.feed.filter.FeedFilterActivity",
+        "com.github.rudroid.shortcuts.activities.ShortcutsOverviewActivity",
+        "com.github.rudroid.favorites.activities.EditMyWorkActivity",
+        "com.github.rudroid.shortcuts.activities.ConfigureShortcutActivity",
+        "com.github.rudroid.shortcuts.activities.ShortcutViewActivity",
+        "com.github.rudroid.shortcuts.activities.ChooseShortcutRepositoryActivity",
+        "com.github.rudroid.activities.WebViewActivity",
+        "com.github.rudroid.repository.file.RepositoryFileActivity",
+        "com.github.rudroid.repository.files.RepositoryFilesActivity",
+        "com.github.rudroid.repository.gitobject.RepositoryGitObjectRouterActivity",
+        "com.github.rudroid.checks.ChecksActivity",
+        "com.github.rudroid.commit.CommitActivity",
+        "com.github.rudroid.commits.CommitsActivity",
+        "com.github.rudroid.activities.CreateIssueRepoSearchActivity",
+        "com.github.rudroid.templates.IssueTemplatesActivity",
+        "com.github.rudroid.activities.EditIssueOrPullTitleActivity",
+        "com.github.rudroid.settings.codeoptions.CodeOptionsActivity",
+        "com.github.rudroid.settings.copilot.CopilotChatSettingsActivity",
+        "com.github.rudroid.settings.copilot.debug.CopilotPermissionsOverrideActivity",
+        "com.github.rudroid.discussions.DiscussionDetailActivity",
+        "com.github.rudroid.discussions.EditDiscussionTitleActivity",
+        "com.github.rudroid.accounts.UserAccountsActivity",
+        "com.github.rudroid.discussions.RepositoryDiscussionsActivity",
+        "com.github.rudroid.discussions.DiscussionCategoryChooserActivity",
+        "com.github.rudroid.discussions.replythread.DiscussionCommentReplyThreadActivity",
+        "com.github.rudroid.repository.LicenseContentsActivity",
+        "com.github.rudroid.deploymentreview.DeploymentReviewActivity",
+        "com.github.rudroid.releases.ReleasesActivity",
+        "com.github.rudroid.releases.ReleaseActivity",
+        "com.github.rudroid.projects.RepositoryProjectsActivity",
+        "com.github.rudroid.projects.table.ProjectSimplifiedTableActivity",
+        "com.github.rudroid.projects.OwnerProjectsActivity",
+        "com.github.rudroid.projects.UserProjectsActivity",
+        "com.github.rudroid.mergequeue.list.MergeQueueEntriesActivity",
+        "com.github.rudroid.starredreposandlists.StarredRepositoriesAndListsActivity",
+        "com.github.rudroid.starredreposandlists.createoreditlist.EditListActivity",
+        "com.github.rudroid.starredreposandlists.createoreditlist.CreateNewListActivity",
+        "com.github.rudroid.starredreposandlists.listdetails.ListDetailActivity",
+        "com.github.rudroid.actions.workflowsummary.WorkflowSummaryActivity",
+        "com.github.rudroid.actions.checksoverview.ChecksOverviewActivity",
+        "com.github.rudroid.actions.checkdetail.CheckDetailActivity",
+        "com.github.rudroid.actions.checklog.CheckLogActivity",
+        "com.github.rudroid.actions.routing.ActionsRouterActivity",
+        "com.github.rudroid.actions.repositoryworkflows.RepositoryWorkflowsActivity",
+        "com.github.rudroid.actions.workflowruns.WorkflowRunsActivity",
+        "com.github.rudroid.codesearch.GlobalCodeSearchResultsActivity",
+        "com.github.rudroid.widget.contribution.ContributionWidgetSettingsActivity",
+        "com.github.rudroid.widget.pullrequests.PullRequestsWidgetSettingsActivity",
+        "com.github.rudroid.widget.agenttasks.AgentTasksWidgetSettingsActivity",
+        "com.github.rudroid.widget.shortcuts.ShortcutWidgetSettingsActivity",
+        "com.github.rudroid.draft.DraftIssueActivity",
+        "com.github.rudroid.discussions.CreateDiscussionComposeActivity",
+        "com.github.rudroid.discussions.CreateDiscussionRepositorySearchActivity",
+        "com.github.rudroid.discussions.HomeDiscussionsActivity",
+        "com.github.rudroid.activities.ShareImageActivity",
+        "com.github.rudroid.twofactor.TwoFactorActivity",
+        "com.github.rudroid.achievements.UserAchievementsActivity",
+        "com.github.rudroid.copilot.CopilotChatActivity",
+        "com.github.rudroid.agents.copilothome.CopilotHomeActivity",
+        "com.github.rudroid.agents.sessionevents.SessionEventsActivity",
+        "com.github.rudroid.settings.copilot.paywall.CopilotChatProPaywallActivity",
+        "com.github.rudroid.settings.applock.settings.AppLockSettingsActivity",
+        "com.github.rudroid.settings.applock.AppLockActivity",
+        "com.github.rudroid.repository.RepositoryDetailActivity",
+        "com.github.rudroid.repository.issues.RepositoryIssuesActivity",
+        "com.github.rudroid.repository.pullrequests.RepositoryPullRequestsActivity",
+        "com.github.rudroid.settings.copilot.managesubscription.CopilotManageSubscriptionActivity",
+        "com.github.rudroid.agents.AgentPullRequestsActivity",
+        "com.github.rudroid.agents.AgentTaskActivity",
+        "com.github.rudroid.home.search.GlobalSearchActivity",
+        "com.github.developersettings.DeveloperSettingsActivity",
+        "com.github.testingsettings.TestingSettingsActivity",
+        "net.openid.appauth.AuthorizationManagementActivity",
+        "com.android.billingclient.api.ProxyBillingActivity",
+        "com.android.billingclient.api.ProxyBillingActivityV2",
+        "com.google.android.gms.common.api.GoogleApiActivity",
+        "androidx.glance.appwidget.action.ActionTrampolineActivity",
+        "androidx.glance.appwidget.action.InvisibleActionTrampolineActivity",
+        "com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+      ],
+      "services": [
+        "com.github.service.auth.AuthenticatorService",
+        "com.github.rudroid.pushnotifications.PushNotificationsService",
+        "androidx.appcompat.app.AppLocalesMetadataHolderService",
+        "com.google.firebase.components.ComponentDiscoveryService",
+        "com.google.firebase.messaging.FirebaseMessagingService",
+        "com.google.android.gms.measurement.AppMeasurementService",
+        "com.google.android.gms.measurement.AppMeasurementJobService",
+        "com.google.firebase.sessions.SessionLifecycleService",
+        "androidx.glance.appwidget.GlanceRemoteViewsService",
+        "androidx.work.impl.background.systemjob.SystemJobService",
+        "androidx.work.impl.foreground.SystemForegroundService",
+        "androidx.core.widget.RemoteViewsCompatService",
+        "androidx.room.MultiInstanceInvalidationService",
+        "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+        "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+        "es.voghdev.pdfviewpager.library.service.CopyAssetService"
+      ],
+      "receivers": [
+        "com.github.rudroid.pushnotifications.DisableLiveUpdatesReceiver",
+        "com.github.rudroid.widget.contribution.ContributionGlanceWidgetReceiver",
+        "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+        "com.google.android.gms.measurement.AppMeasurementReceiver",
+        "androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver",
+        "androidx.glance.appwidget.UnmanagedSessionReceiver",
+        "androidx.glance.appwidget.MyPackageReplacedReceiver",
+        "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+        "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+        "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+        "androidx.profileinstaller.ProfileInstallReceiver",
+        "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+      ],
+      "fgs_types": null,
+      "raw_len": 49991
+    }
+  ],
+  "app_names": [
+    [
+      "app/src/main/res/values-ru/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values-ko-rKR/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values-zh-rCN/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values-pt-rBR/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values-es-rES/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values-de-rDE/strings.xml",
+      "GitHub"
+    ],
+    [
+      "app/src/main/res/values-ja-rJP/strings.xml",
+      "GitHub"
+    ]
+  ],
+  "gradle_keys": {
+    "applicationId": "com.github.rudroid",
+    "namespace": "com.github.rudroid",
+    "minSdk": "26",
+    "targetSdk": "36",
+    "compileSdk": "36"
+  }
+}

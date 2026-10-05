@@ -1,0 +1,28 @@
+package p20;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class df implements aa.a {
+    public static final df a = new df();
+    public static final List b = sy.d0.n("repository");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        u10.um umVar = null;
+        while (eVar.r0(b) == 0) {
+            umVar = (u10.um) aa.c.b(aa.c.c(gf.a, false)).a(eVar, wVar);
+        }
+        return new u10.rm(umVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        u10.rm rmVar = (u10.rm) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(rmVar, "value");
+        fVar.z0("repository");
+        aa.c.b(aa.c.c(gf.a, false)).b(fVar, wVar, rmVar.a);
+    }
+}

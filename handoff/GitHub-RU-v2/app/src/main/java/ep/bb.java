@@ -1,0 +1,32 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class bb implements aa.a {
+    public static final bb a = new bb();
+    public static final List b = sy.d0.n("name");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        String str = null;
+        while (eVar.r0(b) == 0) {
+            str = (String) aa.c.a.a(eVar, wVar);
+        }
+        if (str != null) {
+            return new jo.mg(str);
+        }
+        k41.b.B(eVar, "name");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.mg mgVar = (jo.mg) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(mgVar, "value");
+        fVar.z0("name");
+        aa.c.a.b(fVar, wVar, mgVar.a);
+    }
+}

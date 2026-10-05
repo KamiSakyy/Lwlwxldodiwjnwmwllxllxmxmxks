@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/label_item" android:tag="layout/list_item_label_0" android:background="@color/backgroundElevatedSecondary" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.rudroid.spans.RoundedBgTextView android:id="@id/label_span" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/default_margin" style="@style/BodyText" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/add_or_remove_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus_16" />
+</LinearLayout>

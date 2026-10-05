@@ -1,0 +1,44 @@
+package aj0;
+
+import aa.i0;
+import aa.j0;
+import aa.m;
+import aa.p0;
+import aa.w;
+import gn0.vn;
+import java.util.List;
+import k71.k;
+import k71.x;
+import x61.r;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class e implements i0 {
+    public static final d Companion = new d();
+
+    public final m d() {
+        vn.Companion.getClass();
+        j0 j0Var = vn.d;
+        k.g(j0Var, "type");
+        List list = bj0.a.a;
+        List list2 = bj0.a.a;
+        k.g(list2, "selections");
+        r rVar = r.r;
+        return new m("data", j0Var, (String) null, rVar, rVar, list2);
+    }
+
+    public final boolean equals(Object obj) {
+        return obj != null && obj.getClass() == e.class;
+    }
+
+    public final p0 g() {
+        return aa.c.c(f.a, false);
+    }
+
+    public final int hashCode() {
+        return x.a(e.class).hashCode();
+    }
+
+    public final void o(ea.f fVar, w wVar, boolean z) {
+        k.g(wVar, "customScalarAdapters");
+    }
+}

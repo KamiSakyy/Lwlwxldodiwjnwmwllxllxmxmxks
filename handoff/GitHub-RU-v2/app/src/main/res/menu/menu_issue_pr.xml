@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_share_24" android:id="@id/share_item" android:title="@string/menu_option_share" app:iconTint="@color/colorAccent" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_pencil_16_padded" android:id="@id/issue_pr_option_edit" android:title="@string/button_edit" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_branch_16_padded" android:id="@id/pr_change_base_branch" android:visible="false" android:title="@string/menu_option_change_base_branch" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_bell_slash_16_padded" android:id="@id/issue_pr_option_mute" android:title="@string/menu_option_subscribe" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_lock_16_padded" android:id="@id/issue_pr_option_lock" android:title="@string/menu_option_lock" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_pin_slash_16_padded" android:id="@id/issue_pr_option_unpin" android:visible="false" android:title="@string/menu_option_unpin_issue" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_agent_16_padded" android:id="@id/new_agent_task" android:visible="false" android:title="@string/menu_option_create_agent_session" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_agent_16_padded" android:id="@id/assign_agent" android:visible="false" android:title="@string/menu_option_assign_agent" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_issue_closed_16_padded" android:id="@id/issue_pr_option_close" android:visible="false" android:title="@string/menu_option_close_issue" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_issue_closed_16_padded" android:id="@id/issue_pr_option_close_nested" android:visible="false" android:title="@string/menu_option_close_issue" app:iconTint="@color/iconPrimary" app:showAsAction="never">
+        <menu>
+            <item android:icon="@drawable/ic_issue_closed_16_padded" android:id="@id/issue_pr_close_as_completed" android:title="@string/menu_option_completed" app:iconTint="@color/systemPurple" />
+            <item android:icon="@drawable/ic_issue_skip_16_padded" android:id="@id/issue_pr_close_as_not_planned" android:title="@string/menu_option_not_planned" app:iconTint="@color/iconPrimary" />
+            <item android:icon="@drawable/ic_issue_skip_16_padded" android:id="@id/issue_pr_close_as_duplicate" android:visible="false" android:title="@string/menu_option_close_issue_duplicate" app:iconTint="@color/iconPrimary" />
+        </menu>
+    </item>
+</menu>

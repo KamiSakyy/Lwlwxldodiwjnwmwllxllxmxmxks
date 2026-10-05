@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:layout_gravity="center_vertical" android:id="@id/textview" android:tag="layout/list_item_commit_parent_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/default_margin" android:fontFamily="monospace" app:drawableStartCompat="@drawable/ic_git_commit_16" app:drawableTint="@color/iconPrimary" style="@style/ListItemCommit"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

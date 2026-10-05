@@ -1,0 +1,57 @@
+package o40;
+
+import a0.s0;
+import com.github.rudroid.copilot.h1;
+import hc0.jc;
+import hc0.lc;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class b {
+    public final String a;
+    public final int b;
+    public final String c;
+    public final jc d;
+    public final g e;
+    public final lc f;
+    public final String g;
+
+    public b(String str, int i, String str2, jc jcVar, g gVar, lc lcVar, String str3) {
+        this.a = str;
+        this.b = i;
+        this.c = str2;
+        this.d = jcVar;
+        this.e = gVar;
+        this.f = lcVar;
+        this.g = str3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof b)) {
+            return false;
+        }
+        b bVar = (b) obj;
+        return k71.k.b(this.a, bVar.a) && this.b == bVar.b && k71.k.b(this.c, bVar.c) && this.d == bVar.d && k71.k.b(this.e, bVar.e) && this.f == bVar.f && k71.k.b(this.g, bVar.g);
+    }
+
+    public final int hashCode() {
+        int hashCode = (this.e.hashCode() + ((this.d.hashCode() + h1.i(s0.b(this.b, this.a.hashCode() * 31, 31), this.c, 31)) * 31)) * 31;
+        lc lcVar = this.f;
+        return this.g.hashCode() + ((hashCode + (lcVar == null ? 0 : lcVar.hashCode())) * 31);
+    }
+
+    public final String toString() {
+        StringBuilder n = s0.n(this.b, "OnIssue(__typename=", this.a, ", number=", ", title=");
+        n.append(this.c);
+        n.append(", issueState=");
+        n.append(this.d);
+        n.append(", repository=");
+        n.append(this.e);
+        n.append(", stateReason=");
+        n.append(this.f);
+        n.append(", id=");
+        return h1.p(n, this.g, ")");
+    }
+}

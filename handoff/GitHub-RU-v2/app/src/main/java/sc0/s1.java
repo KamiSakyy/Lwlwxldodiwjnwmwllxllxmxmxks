@@ -1,0 +1,59 @@
+package sc0;
+
+import java.util.List;
+import rc0.p2;
+import rc0.q2;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class s1 implements aa.a {
+    public static final s1 a = new s1();
+    public static final List b = sy.d0.o(new String[]{"id", "workflows", "__typename"});
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        String str = null;
+        q2 q2Var = null;
+        String str2 = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                str = (String) aa.c.a.a(eVar, wVar);
+            } else if (r0 == 1) {
+                q2Var = (q2) aa.c.c(t1.a, true).a(eVar, wVar);
+            } else {
+                if (r0 != 2) {
+                    break;
+                }
+                str2 = (String) aa.c.a.a(eVar, wVar);
+            }
+        }
+        if (str == null) {
+            k41.b.B(eVar, "id");
+            throw null;
+        }
+        if (q2Var == null) {
+            k41.b.B(eVar, "workflows");
+            throw null;
+        }
+        if (str2 != null) {
+            return new p2(str, q2Var, str2);
+        }
+        k41.b.B(eVar, "__typename");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        p2 p2Var = (p2) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(p2Var, "value");
+        fVar.z0("id");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, p2Var.a);
+        fVar.z0("workflows");
+        aa.c.c(t1.a, true).b(fVar, wVar, p2Var.b);
+        fVar.z0("__typename");
+        bVar.b(fVar, wVar, p2Var.c);
+    }
+}

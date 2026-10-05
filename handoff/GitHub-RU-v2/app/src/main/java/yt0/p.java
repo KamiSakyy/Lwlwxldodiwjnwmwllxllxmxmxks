@@ -1,0 +1,92 @@
+package yt0;
+
+import aa.q0;
+import aa.u0;
+import aa.x;
+import java.util.List;
+import pz0.dt;
+import pz0.h50;
+import pz0.kt;
+import pz0.pd;
+import pz0.q9;
+import pz0.td;
+import pz0.vd;
+import pz0.w80;
+import pz0.xd;
+import pz0.yt;
+import sy.d0;
+import v8.l0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class p {
+    public static final List a;
+
+    static {
+        td.Companion.getClass();
+        x xVar = td.a;
+        aa.r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
+        xd.Companion.getClass();
+        x xVar2 = xd.a;
+        List r = x61.l.r(new aa.m[]{mVar, new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r2 = x61.l.r(new aa.m[]{new aa.m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        aa.s mVar2 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        List n = d0.n("DiffLine");
+        List list = xq0.a.a;
+        List r3 = x61.l.r(new aa.s[]{mVar2, no.a.c(list, "selections", "DiffLine", n, list)});
+        aa.s mVar3 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        aa.s mVar4 = new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        pd.Companion.getClass();
+        x xVar3 = pd.a;
+        aa.s mVar5 = new aa.m("isResolved", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        w80.Companion.getClass();
+        q0 q0Var = w80.W;
+        k71.k.g(q0Var, "type");
+        aa.s mVar6 = new aa.m("resolvedBy", q0Var, (String) null, rVar, rVar, r2);
+        aa.s mVar7 = new aa.m("viewerCanResolve", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        aa.s mVar8 = new aa.m("viewerCanUnresolve", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        q9.Companion.getClass();
+        aa.p a2 = l0.a(q9.a);
+        yt.Companion.getClass();
+        aa.s mVar9 = new aa.m("diffLines", a2, (String) null, rVar, no.a.s(yt.c, new u0(1)), r3);
+        List n2 = d0.n("PullRequestReviewThread");
+        List list2 = fu0.a.a;
+        List r4 = x61.l.r(new aa.s[]{mVar3, mVar4, mVar5, mVar6, mVar7, mVar8, mVar9, no.a.c(list2, "selections", "PullRequestReviewThread", n2, list2)});
+        aa.s mVar10 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        aa.s mVar11 = new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        vd.Companion.getClass();
+        x xVar4 = vd.a;
+        k71.k.g(xVar4, "type");
+        aa.s mVar12 = new aa.m("position", xVar4, (String) null, rVar, rVar, rVar);
+        aa.s mVar13 = new aa.m("startLine", xVar4, (String) null, rVar, rVar, rVar);
+        aa.s mVar14 = new aa.m("line", xVar4, (String) null, rVar, rVar, rVar);
+        dt.Companion.getClass();
+        q0 q0Var2 = dt.d;
+        k71.k.g(q0Var2, "type");
+        aa.s mVar15 = new aa.m("pullRequestReview", q0Var2, (String) null, rVar, rVar, r);
+        q0 q0Var3 = yt.d;
+        k71.k.g(q0Var3, "type");
+        aa.s mVar16 = new aa.m("thread", q0Var3, (String) null, rVar, rVar, r4);
+        aa.s mVar17 = new aa.m("path", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        kt.Companion.getClass();
+        aa.s mVar18 = new aa.m("state", l0.b(kt.s), (String) null, rVar, rVar, rVar);
+        h50.Companion.getClass();
+        aa.s mVar19 = new aa.m("url", l0.b(h50.a), (String) null, rVar, rVar, rVar);
+        List r5 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "GistComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"});
+        List list3 = zp0.a.a;
+        aa.s c = no.a.c(list3, "selections", "Comment", r5, list3);
+        List r6 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "Release", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"});
+        List list4 = hu0.a.a;
+        aa.s c2 = no.a.c(list4, "selections", "Reactable", r6, list4);
+        List r7 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "GistComment", "Issue", "IssueComment", "Project", "ProjectNext", "ProjectV2", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"});
+        List list5 = cw0.b.a;
+        aa.s c3 = no.a.c(list5, "selections", "Updatable", r7, list5);
+        List r8 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "RepositoryAdvisoryComment"});
+        List list6 = ht0.a.a;
+        aa.s c4 = no.a.c(list6, "selections", "OrgBlockable", r8, list6);
+        List r9 = x61.l.r(new String[]{"CommitComment", "DiscussionComment", "GistComment", "IssueComment", "PullRequestReview", "PullRequestReviewComment"});
+        List list7 = bt0.a.a;
+        a = x61.l.r(new aa.s[]{mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, mVar18, mVar19, c, c2, c3, c4, no.a.c(list7, "selections", "Minimizable", r9, list7)});
+    }
+}

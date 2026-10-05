@@ -1,0 +1,29 @@
+package jo;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class n0 {
+    public final o0 a;
+
+    public n0(o0 o0Var) {
+        this.a = o0Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof n0) && k71.k.b(this.a, ((n0) obj).a);
+    }
+
+    public final int hashCode() {
+        o0 o0Var = this.a;
+        if (o0Var == null) {
+            return 0;
+        }
+        return o0Var.hashCode();
+    }
+
+    public final String toString() {
+        return "AddDiscussionComment(comment=" + this.a + ")";
+    }
+}

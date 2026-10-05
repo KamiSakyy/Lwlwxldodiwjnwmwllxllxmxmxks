@@ -1,0 +1,43 @@
+package ea0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class t {
+    public final String a;
+    public final String b;
+    public final String c;
+    public final e30.c d;
+
+    public t(String str, String str2, String str3, e30.c cVar) {
+        k71.k.g(str, "__typename");
+        this.a = str;
+        this.b = str2;
+        this.c = str3;
+        this.d = cVar;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof t)) {
+            return false;
+        }
+        t tVar = (t) obj;
+        return k71.k.b(this.a, tVar.a) && k71.k.b(this.b, tVar.b) && k71.k.b(this.c, tVar.c) && k71.k.b(this.d, tVar.d);
+    }
+
+    public final int hashCode() {
+        int i = com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31);
+        e30.c cVar = this.d;
+        return i + (cVar == null ? 0 : cVar.hashCode());
+    }
+
+    public final String toString() {
+        StringBuilder o = a0.s0.o("Owner1(__typename=", this.a, ", id=", this.b, ", login=");
+        o.append(this.c);
+        o.append(", avatarFragment=");
+        o.append(this.d);
+        o.append(")");
+        return o.toString();
+    }
+}

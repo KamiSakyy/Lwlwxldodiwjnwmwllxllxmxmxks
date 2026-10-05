@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progress_indicator" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:indeterminateOnly="false" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="@id/text_label_view" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/text_label_view" style="@style/ProgressIndicatorBlue" />
+    <TextView android:gravity="center" android:id="@id/text_label_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_quarter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/progress_indicator" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="0.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

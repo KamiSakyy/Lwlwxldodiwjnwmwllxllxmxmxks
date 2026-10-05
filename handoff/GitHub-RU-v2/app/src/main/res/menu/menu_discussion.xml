@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_share_24" android:id="@id/share_item" android:title="@string/menu_option_share" app:iconTint="@color/colorAccent" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_pencil_16_padded" android:id="@id/discussion_option_edit" android:title="@string/button_edit" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_bell_16_padded" android:id="@id/discussion_option_mute" android:title="@string/menu_option_subscribe" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_lock_16_padded" android:id="@id/discussion_option_lock" android:visible="false" android:title="@string/menu_option_lock" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_trash_16_padded" android:id="@id/discussion_option_delete" android:visible="false" android:title="@string/button_delete" app:iconTint="@color/systemRed" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_comment_discussion_16_padded" android:id="@id/discussion_option_reopen" android:visible="false" android:title="@string/menu_option_reopen_discussion" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_discussion_closed_16_padded" android:id="@id/discussion_option_close_nested" android:visible="false" android:title="@string/menu_option_close_discussion" app:iconTint="@color/iconPrimary" app:showAsAction="never">
+        <menu>
+            <item android:icon="@drawable/ic_discussion_closed_16_padded" android:id="@id/discussion_close_as_resolved" android:title="@string/menu_option_close_discussion_resolved" app:iconTint="@color/systemPurple" />
+            <item android:icon="@drawable/ic_discussion_outdated_16_padded" android:id="@id/discussion_close_as_outdated" android:title="@string/menu_option_close_discussion_outdated" app:iconTint="@color/iconPrimary" />
+            <item android:icon="@drawable/ic_discussion_duplicate_16_padded" android:id="@id/discussion_close_as_duplicate" android:title="@string/menu_option_close_discussion_duplicate" app:iconTint="@color/iconPrimary" />
+        </menu>
+    </item>
+</menu>

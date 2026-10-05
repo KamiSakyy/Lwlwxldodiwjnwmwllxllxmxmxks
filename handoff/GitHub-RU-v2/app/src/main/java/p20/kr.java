@@ -1,0 +1,30 @@
+package p20;
+
+import java.util.List;
+import u10.y30;
+import u10.z30;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class kr implements aa.a {
+    public static final kr a = new kr();
+    public static final List b = sy.d0.n("discussion");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        y30 y30Var = null;
+        while (eVar.r0(b) == 0) {
+            y30Var = (y30) aa.c.b(aa.c.c(jr.a, true)).a(eVar, wVar);
+        }
+        return new z30(y30Var);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        z30 z30Var = (z30) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(z30Var, "value");
+        fVar.z0("discussion");
+        aa.c.b(aa.c.c(jr.a, true)).b(fVar, wVar, z30Var.a);
+    }
+}

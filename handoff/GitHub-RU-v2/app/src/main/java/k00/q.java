@@ -1,0 +1,38 @@
+package k00;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class q implements aa.a {
+    public static final q a = new q();
+    public static final List b = sy.d0.o("clientMutationId", "user");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        String str = null;
+        j00.a0 a0Var = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                str = (String) aa.c.i.a(eVar, wVar);
+            } else {
+                if (r0 != 1) {
+                    return new j00.z(str, a0Var);
+                }
+                a0Var = (j00.a0) aa.c.b(aa.c.c(r.a, false)).a(eVar, wVar);
+            }
+        }
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        j00.z zVar = (j00.z) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(zVar, "value");
+        fVar.z0("clientMutationId");
+        aa.c.i.b(fVar, wVar, zVar.a);
+        fVar.z0("user");
+        aa.c.b(aa.c.c(r.a, false)).b(fVar, wVar, zVar.b);
+    }
+}

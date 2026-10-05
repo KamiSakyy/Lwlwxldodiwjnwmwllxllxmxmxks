@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="action_bar_lines_selected_announcement">
+        <item quantity="other">%1$d~%2$d 줄 선택됨</item>
+    </plurals>
+    <plurals name="action_bar_title_lines_selected">
+        <item quantity="other">줄 %1$d ~%2$d</item>
+    </plurals>
+    <plurals name="actions_rerun_only_failed_jobs">
+        <item quantity="other">%d개의 실패한 작업을 다시 실행</item>
+    </plurals>
+    <plurals name="actions_workflow_jobs_overflow">
+        <item quantity="other">및 %d개의 다른 작업</item>
+    </plurals>
+    <plurals name="agent_picker_selected_agents_count">
+        <item quantity="other">에이전트 %d개</item>
+    </plurals>
+    <plurals name="app_lock_automatic_lock_duration">
+        <item quantity="other">%d 분 후</item>
+    </plurals>
+    <plurals name="check_status_with_count">
+        <item quantity="other">%1$d %2$s</item>
+    </plurals>
+    <plurals name="checks_failed">
+        <item quantity="other">%d 실패</item>
+    </plurals>
+    <plurals name="checks_neutral">
+        <item quantity="other">중립 %d</item>
+    </plurals>
+    <plurals name="checks_other">
+        <item quantity="other">기타 %d개</item>
+    </plurals>
+    <plurals name="checks_passed">
+        <item quantity="other">%d 통과됨</item>
+    </plurals>
+    <plurals name="checks_running">
+        <item quantity="other">%d 실행 중</item>
+    </plurals>
+    <plurals name="checks_skipped">
+        <item quantity="other">%d 건너뜀</item>
+    </plurals>
+    <plurals name="checks_status_summary">
+        <item quantity="other">%s 검사</item>
+    </plurals>
+    <plurals name="copilot_bing_references_count">
+        <item quantity="other">참조 %1$d개</item>
+    </plurals>
+    <plurals name="copilot_bing_search_results_count_with_query">
+        <item quantity="other">\"%2$s\"에 대한 Bing 검색 결과 %1$d개</item>
+    </plurals>
+    <plurals name="copilot_code_vulnerability_warning">
+        <item quantity="other">%d개의 취약성이 검색됨</item>
+    </plurals>
+    <plurals name="copilot_review_feedback_text_remaining_characters">
+        <item quantity="other">%d자 남음</item>
+    </plurals>
+    <plurals name="create_repository_character_count">
+        <item quantity="other">%1$d/%2$d자</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days">
+        <item quantity="other">%d일</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days_ago">
+        <item quantity="other">%d일 전</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours">
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours_ago">
+        <item quantity="other">%d시간 전</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes">
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes_ago">
+        <item quantity="other">%d분 전</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months">
+        <item quantity="other">%d개월</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months_ago">
+        <item quantity="other">%d개월 전</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds">
+        <item quantity="other">%d초</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds_ago">
+        <item quantity="other">%d초 전</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years">
+        <item quantity="other">%d년</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years_ago">
+        <item quantity="other">%d년 전</item>
+    </plurals>
+    <plurals name="deployment_approval_request_summary">
+        <item quantity="other">사용자, %1$s 님 또는 %2$s명이 검토해야 합니다.</item>
+    </plurals>
+    <plurals name="dialog_sign_out_of_all_accounts">
+        <item quantity="other">모든 %d개 계정에서 로그아웃하시겠습니까?</item>
+    </plurals>
+    <plurals name="discussions_inline_replies_preview_metadata_label">
+        <item quantity="other">이전 회신 %d개</item>
+    </plurals>
+    <plurals name="explore_contributors_count">
+        <item quantity="other">기여자 %d명</item>
+    </plurals>
+    <plurals name="feed_header_starred_repository">
+        <item quantity="other">%1$s 님이 %2$d개의 리포지토리에 별표 표시함</item>
+    </plurals>
+    <plurals name="files_number_of_additions">
+        <item quantity="other">%,d개 추가</item>
+    </plurals>
+    <plurals name="files_number_of_deletions">
+        <item quantity="other">%,d 삭제</item>
+    </plurals>
+    <plurals name="files_number_of_files_changed">
+        <item quantity="other">%,d개 파일이 변경됨</item>
+    </plurals>
+    <plurals name="fork_repository_edit_text_remaining_characters">
+        <item quantity="other">%d자 남음.</item>
+    </plurals>
+    <plurals name="issue_pr_failing_checks_number">
+        <item quantity="other">· %d 실패</item>
+    </plurals>
+    <plurals name="issue_pr_list_pending_review_comments">
+        <item quantity="other">보류 중인 검토 코멘트 %d개</item>
+    </plurals>
+    <plurals name="issue_pr_number_of_commits">
+        <item quantity="other">커밋 %,d개</item>
+    </plurals>
+    <plurals name="issue_pr_pending_review_comments">
+        <item quantity="other">보류 중인 검토 코멘트가 %d개 있습니다.</item>
+    </plurals>
+    <plurals name="notification_item_label">
+        <item quantity="other">알림 %d개</item>
+    </plurals>
+    <plurals name="notification_unread_item_label">
+        <item quantity="other">%s개 읽지 않은 항목</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_confirmation">
+        <item quantity="other">%d개 알림을 완료로 표시</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_notice">
+        <item quantity="other">%d개 알림을 완료로 표시했습니다.</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_confirmation">
+        <item quantity="other">%d개 알림을 읽은 것으로 표시</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_notice">
+        <item quantity="other">%d개 알림을 읽은 상태로 표시했습니다.</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_confirmation">
+        <item quantity="other">%d개 알림을 읽지 않은 상태로 표시</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_notice">
+        <item quantity="other">%d개 알림을 읽지 않음으로 표시</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_confirmation">
+        <item quantity="other">받은 편지함으로 %d개 알림 이동</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_notice">
+        <item quantity="other">%d개 알림을 받은 편지함으로 이동함</item>
+    </plurals>
+    <plurals name="notifications_n_selected">
+        <item quantity="other">%d개 선택됨</item>
+    </plurals>
+    <plurals name="open_pr_dialog_commits_summary">
+        <item quantity="other">%s 커밋</item>
+    </plurals>
+    <plurals name="organizations_followers_label">
+        <item quantity="other">팔로워 %s명</item>
+    </plurals>
+    <plurals name="organizations_following_label">
+        <item quantity="other">%s명 팔로우 중</item>
+    </plurals>
+    <plurals name="polls_number_of_votes">
+        <item quantity="other">%d표</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_assigned_subtitle">
+        <item quantity="other">%d개가 할당됨</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_created_subtitle">
+        <item quantity="other">%d개가 생성됨</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_mentioned_subtitle">
+        <item quantity="other">%d명이 멘션함</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_review_requested_subtitle">
+        <item quantity="other">%d개 검토가 요청됨</item>
+    </plurals>
+    <plurals name="release_detail_contributors_view_all_subtitle">
+        <item quantity="other">기여자 %d명</item>
+    </plurals>
+    <plurals name="release_discussion_comments_preview_metadata_label">
+        <item quantity="other">이전 코멘트 %d개</item>
+    </plurals>
+    <plurals name="repository_forks_label">
+        <item quantity="other">%s번 포크됨</item>
+    </plurals>
+    <plurals name="repository_stars_label">
+        <item quantity="other">별 %s개</item>
+    </plurals>
+    <plurals name="repository_stars_label_month">
+        <item quantity="other">이번 달 %s 별</item>
+    </plurals>
+    <plurals name="repository_stars_label_today">
+        <item quantity="other">오늘 %s 별</item>
+    </plurals>
+    <plurals name="repository_stars_label_week">
+        <item quantity="other">이번 주 %s 별</item>
+    </plurals>
+    <plurals name="review_number_of_comments">
+        <item quantity="other">코멘트 %,d개</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_all_jobs">
+        <item quantity="other">모든 작업 다시 실행, 작업 %d개</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_only_failed_jobs">
+        <item quantity="other">실패한 작업만 다시 실행했습니다. 작업 %d 실패</item>
+    </plurals>
+    <plurals name="screenreader_actions_workflows_number_of_runs">
+        <item quantity="other">총 실행 %d개</item>
+    </plurals>
+    <plurals name="screenreader_added_to_many_lists_content_description">
+        <item quantity="other">%1$s 외 %2$s개의 추가 목록에 추가됨</item>
+    </plurals>
+    <plurals name="screenreader_displaying_results">
+        <item quantity="other">%d 결과 표시</item>
+    </plurals>
+    <plurals name="screenreader_expandable_number_of_items">
+        <item quantity="other">항목 %d개</item>
+    </plurals>
+    <plurals name="screenreader_favorites_search_results">
+        <item quantity="other">결과 %d개를 찾았습니다.</item>
+    </plurals>
+    <plurals name="screenreader_issue_related_pull_requests">
+        <item quantity="other">연결된 Pull Request %,d개</item>
+    </plurals>
+    <plurals name="screenreader_lists_list_number_of_repos_count">
+        <item quantity="other">리포지토리 %d개 추가됨</item>
+    </plurals>
+    <plurals name="screenreader_number_of_assignees">
+        <item quantity="other">담당자 %d명</item>
+    </plurals>
+    <plurals name="screenreader_number_of_contributors">
+        <item quantity="other">기여자 %d명</item>
+    </plurals>
+    <plurals name="screenreader_pull_request_related_issues">
+        <item quantity="other">%,d개 연결된 이슈</item>
+    </plurals>
+    <plurals name="screenreader_reaction_type_and_quantity">
+        <item quantity="other">%1$s 반응 %2$s개</item>
+    </plurals>
+    <plurals name="screenreader_search_and_filter_x_results">
+        <item quantity="other">결과 %d</item>
+    </plurals>
+    <plurals name="screenreader_search_results">
+        <item quantity="other">%d개의 결과를 찾음</item>
+    </plurals>
+    <plurals name="screenreader_sub_issues_progress_description">
+        <item quantity="other">하위 문제; %1$d/%2$d 완료됨</item>
+    </plurals>
+    <plurals name="screenreader_unread_notifications_metadata">
+        <item quantity="other">읽지 않은 알림 %d개</item>
+    </plurals>
+    <plurals name="screenreader_user_discussions_counter_description">
+        <item quantity="other">토론 %d개</item>
+    </plurals>
+    <plurals name="screenreader_user_organizations_counter_description">
+        <item quantity="other">조직 %d개</item>
+    </plurals>
+    <plurals name="screenreader_user_projects_counter_description">
+        <item quantity="other">프로젝트 %d개</item>
+    </plurals>
+    <plurals name="screenreader_user_repo_counter_description">
+        <item quantity="other">리포지토리 %d개</item>
+    </plurals>
+    <plurals name="screenreader_user_sponsoring_counter_description">
+        <item quantity="other">스폰서 사용자 %d명</item>
+    </plurals>
+    <plurals name="screenreader_user_starred_repos_counter_description">
+        <item quantity="other">별표가 %d개 표시된 리포지토리</item>
+    </plurals>
+    <plurals name="search_and_filter_filter_bar_context_button_filter_count_description">
+        <item quantity="other">필터 %d개 적용됨</item>
+    </plurals>
+    <plurals name="search_results_number_of_issues">
+        <item quantity="other">%s개의 이슈 더 보기</item>
+    </plurals>
+    <plurals name="search_results_number_of_orgs">
+        <item quantity="other">%s개 조직 더 보기</item>
+    </plurals>
+    <plurals name="search_results_number_of_pull_requests">
+        <item quantity="other">%s개의 Pull Request 더 보기</item>
+    </plurals>
+    <plurals name="search_results_number_of_repos">
+        <item quantity="other">%s개의 리포지토리 더 보기</item>
+    </plurals>
+    <plurals name="search_results_number_of_users">
+        <item quantity="other">%s명 더 보기</item>
+    </plurals>
+    <plurals name="session_event_files_changed">
+        <item quantity="other">%d개 파일이 변경됨</item>
+    </plurals>
+    <plurals name="session_event_task_summary_actions">
+        <item quantity="other">작업 %d개</item>
+    </plurals>
+    <plurals name="session_event_tool_calls">
+        <item quantity="other">%d개 도구 호출</item>
+    </plurals>
+    <plurals name="session_event_tool_group_bash">
+        <item quantity="other">터미널 명령 %d개</item>
+    </plurals>
+    <plurals name="session_event_tool_group_create">
+        <item quantity="other">%d개 파일 만들기</item>
+    </plurals>
+    <plurals name="session_event_tool_group_default">
+        <item quantity="other">%2$s: 호출 %1$d회</item>
+    </plurals>
+    <plurals name="session_event_tool_group_edit">
+        <item quantity="other">%d개 파일 편집</item>
+    </plurals>
+    <plurals name="session_event_tool_group_view">
+        <item quantity="other">파일 %d개 보기</item>
+    </plurals>
+    <plurals name="session_metadata_premium_requests">
+        <item quantity="other">%1$s개 프리미엄 요청</item>
+    </plurals>
+    <plurals name="session_metadata_sessions">
+        <item quantity="other">%d개 세션</item>
+    </plurals>
+    <plurals name="show_more_code_search_matches">
+        <item quantity="other">%d개 더 많은 일치 항목 표시</item>
+    </plurals>
+    <plurals name="status_characters_remaining_label">
+        <item quantity="other">%d자 남음</item>
+    </plurals>
+    <plurals name="status_check_group_header">
+        <item quantity="other">%2$s 검사 %1$d개</item>
+    </plurals>
+    <plurals name="task_list_progress_label_all_complete">
+        <item quantity="other">%1$d 완료</item>
+    </plurals>
+    <plurals name="task_list_progress_label_not_started">
+        <item quantity="other">%1$d 작업</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_rebase_description">
+        <item quantity="other">요구 사항이 충족되면 이 분기의 커밋 %d개가 다시 지정되고 기본 분기에 추가됩니다.</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_squash_description">
+        <item quantity="other">요구 사항이 충족되면 이 분기의 커밋 %d개는 기본 분기의 한 커밋으로 결합됩니다.</item>
+    </plurals>
+    <plurals name="triage_linked_items_max_reached">
+        <item quantity="other">%d개 항목만 연결할 수 있습니다.</item>
+    </plurals>
+    <plurals name="triage_merge_method_rebase_description">
+        <item quantity="other">이 분기의 커밋 %d개는 기본 분기에 다시 지정되고 추가됩니다.</item>
+    </plurals>
+    <plurals name="triage_merge_method_squash_description">
+        <item quantity="other">이 분기의 커밋 %d개는 기본 분기의 한 커밋으로 결합됩니다.</item>
+    </plurals>
+    <plurals name="triage_review_multiline_placeholder">
+        <item quantity="other">줄 %1$d을(를) %2$d(으)로 축소했습니다.</item>
+    </plurals>
+    <plurals name="users_repositories_label">
+        <item quantity="other">%s 리포지토리</item>
+    </plurals>
+    <plurals name="view_more_code_search_matches">
+        <item quantity="other">일치 항목 %d개 더 보기</item>
+    </plurals>
+</resources>

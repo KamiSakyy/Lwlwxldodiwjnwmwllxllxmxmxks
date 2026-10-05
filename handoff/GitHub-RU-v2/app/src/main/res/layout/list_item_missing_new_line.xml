@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/line_background" android:tag="layout/list_item_missing_new_line_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/textTertiary" android:id="@id/line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/missing_new_line_at_the_end" android:drawablePadding="@dimen/default_margin_quarter" android:lineSpacingExtra="5.0sp" android:paddingStart="@dimen/default_margin_half" android:paddingVertical="@dimen/default_margin_eighth" app:drawableStartCompat="@drawable/ic_no_entry" app:drawableTint="@color/red_600" style="@style/Monospace.Small" />
+</FrameLayout>

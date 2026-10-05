@@ -1,0 +1,61 @@
+package ab0;
+
+import com.github.service.models.response.type.PullRequestReviewEvent;
+import hc0.ol;
+import hc0.pl;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract /* synthetic */ class h {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[PullRequestReviewEvent.values().length];
+        try {
+            iArr[PullRequestReviewEvent.UNKNOWN__.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[PullRequestReviewEvent.COMMENT.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            iArr[PullRequestReviewEvent.APPROVE.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            iArr[PullRequestReviewEvent.REQUEST_CHANGES.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            iArr[PullRequestReviewEvent.DISMISS.ordinal()] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+        a = iArr;
+        int[] iArr2 = new int[pl.values().length];
+        try {
+            ol olVar = pl.Companion;
+            iArr2[4] = 1;
+        } catch (NoSuchFieldError unused6) {
+        }
+        try {
+            ol olVar2 = pl.Companion;
+            iArr2[1] = 2;
+        } catch (NoSuchFieldError unused7) {
+        }
+        try {
+            ol olVar3 = pl.Companion;
+            iArr2[0] = 3;
+        } catch (NoSuchFieldError unused8) {
+        }
+        try {
+            ol olVar4 = pl.Companion;
+            iArr2[3] = 4;
+        } catch (NoSuchFieldError unused9) {
+        }
+        try {
+            ol olVar5 = pl.Companion;
+            iArr2[2] = 5;
+        } catch (NoSuchFieldError unused10) {
+        }
+    }
+}

@@ -1,0 +1,12 @@
+package com.github.rudroid.settings.copilot;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class i0 implements p61.d {
+
+    public static final class a {
+    }
+
+    public final /* bridge */ /* synthetic */ Object get() {
+        return Boolean.TRUE;
+    }
+}

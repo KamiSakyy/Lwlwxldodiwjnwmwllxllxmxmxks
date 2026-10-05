@@ -1,0 +1,46 @@
+package h4;
+
+import android.view.View;
+
+/* loaded from: /home/user/work/p/classes.dex */
+public final class b extends f {
+
+    /* renamed from: g, reason: collision with root package name */
+    public final /* synthetic */ int f25491g;
+
+    @Override // h4.f
+    public final void d(View view, float f6) {
+        switch (this.f25491g) {
+            case k5.f.J /* 0 */:
+                view.setAlpha(a(f6));
+                break;
+            case 1:
+                view.setElevation(a(f6));
+                break;
+            case 2:
+                view.setRotation(a(f6));
+                break;
+            case 3:
+                view.setRotationX(a(f6));
+                break;
+            case 4:
+                view.setRotationY(a(f6));
+                break;
+            case 5:
+                view.setScaleX(a(f6));
+                break;
+            case 6:
+                view.setScaleY(a(f6));
+                break;
+            case 7:
+                view.setTranslationX(a(f6));
+                break;
+            case 8:
+                view.setTranslationY(a(f6));
+                break;
+            default:
+                view.setTranslationZ(a(f6));
+                break;
+        }
+    }
+}

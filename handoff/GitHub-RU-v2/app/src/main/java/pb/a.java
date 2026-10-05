@@ -1,0 +1,12 @@
+package pb;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR})
+@Retention(RetentionPolicy.CLASS)
+/* loaded from: /home/user/work/p/classes.dex */
+public @interface a {
+}

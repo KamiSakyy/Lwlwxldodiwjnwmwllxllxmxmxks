@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:tag="layout/list_item_repository_readme_header_0" android:background="@drawable/list_item_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/list_item_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/default_margin_0_75x">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_16" android:paddingStart="@dimen/default_margin_1_5x" android:paddingEnd="20.0dip" app:tint="@color/iconPrimary" />
+        <TextView android:textColor="@color/textTertiary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/readme_path" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/Monospace" />
+        <com.google.android.material.button.MaterialButton android:textColor="@color/colorAccent" android:gravity="end|center" android:id="@id/edit_button" android:paddingRight="@dimen/default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_edit" android:contentDescription="@string/screenreader_repository_edit_readme_button" style="@style/TextButtonPrimaryMaterial" />
+    </LinearLayout>
+</LinearLayout>

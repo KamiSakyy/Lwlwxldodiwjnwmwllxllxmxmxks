@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="action_bar_lines_selected_announcement">
+        <item quantity="other">行 %1$d 至 %2$d 已选中</item>
+    </plurals>
+    <plurals name="action_bar_title_lines_selected">
+        <item quantity="other">第 %1$d 至 %2$d 行</item>
+    </plurals>
+    <plurals name="actions_rerun_only_failed_jobs">
+        <item quantity="other">重新运行 %d 个失败的作业</item>
+    </plurals>
+    <plurals name="actions_workflow_jobs_overflow">
+        <item quantity="other">和其他 %d 个作业</item>
+    </plurals>
+    <plurals name="agent_picker_selected_agents_count">
+        <item quantity="other">%d 个智能体</item>
+    </plurals>
+    <plurals name="app_lock_automatic_lock_duration">
+        <item quantity="other">%d 分钟后</item>
+    </plurals>
+    <plurals name="check_status_with_count">
+        <item quantity="other">%1$d 次 %2$s</item>
+    </plurals>
+    <plurals name="checks_failed">
+        <item quantity="other">%d 个失败</item>
+    </plurals>
+    <plurals name="checks_neutral">
+        <item quantity="other">%d 个中立</item>
+    </plurals>
+    <plurals name="checks_other">
+        <item quantity="other">%d 个其他</item>
+    </plurals>
+    <plurals name="checks_passed">
+        <item quantity="other">%d 个通过</item>
+    </plurals>
+    <plurals name="checks_running">
+        <item quantity="other">%d 个运行中</item>
+    </plurals>
+    <plurals name="checks_skipped">
+        <item quantity="other">%d 个已跳过</item>
+    </plurals>
+    <plurals name="checks_status_summary">
+        <item quantity="other">%s 检查</item>
+    </plurals>
+    <plurals name="copilot_bing_references_count">
+        <item quantity="other">%1$d 个引用”</item>
+    </plurals>
+    <plurals name="copilot_bing_search_results_count_with_query">
+        <item quantity="other">Bing 搜索 \"%2$s\" 的 %1$d 结果</item>
+    </plurals>
+    <plurals name="copilot_code_vulnerability_warning">
+        <item quantity="other">检测到 %d 个漏洞</item>
+    </plurals>
+    <plurals name="copilot_review_feedback_text_remaining_characters">
+        <item quantity="other">剩余 %d 个字符</item>
+    </plurals>
+    <plurals name="create_repository_character_count">
+        <item quantity="other">%1$d/%2$d 个字符</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days_ago">
+        <item quantity="other">%d 天前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours">
+        <item quantity="other">%d 小时</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours_ago">
+        <item quantity="other">%d 小时前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes">
+        <item quantity="other">%d 分钟</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes_ago">
+        <item quantity="other">%d 分钟前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months">
+        <item quantity="other">%d 个月</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months_ago">
+        <item quantity="other">%d 个月前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds">
+        <item quantity="other">%d 秒</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_seconds_ago">
+        <item quantity="other">%d 秒前</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years">
+        <item quantity="other">%d 年</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years_ago">
+        <item quantity="other">%d 年前</item>
+    </plurals>
+    <plurals name="deployment_approval_request_summary">
+        <item quantity="other">需要您、%1$s 或 %2$s 其他人的审查</item>
+    </plurals>
+    <plurals name="dialog_sign_out_of_all_accounts">
+        <item quantity="other">注销所有的 %d 个帐户?</item>
+    </plurals>
+    <plurals name="discussions_inline_replies_preview_metadata_label">
+        <item quantity="other">%d 条之前的回复</item>
+    </plurals>
+    <plurals name="explore_contributors_count">
+        <item quantity="other">%d个贡献者</item>
+    </plurals>
+    <plurals name="feed_header_starred_repository">
+        <item quantity="other">%1$s 已向 %2$d 个仓库添加星标</item>
+    </plurals>
+    <plurals name="files_number_of_additions">
+        <item quantity="other">%,d 个添加</item>
+    </plurals>
+    <plurals name="files_number_of_deletions">
+        <item quantity="other">%,d 个刪除</item>
+    </plurals>
+    <plurals name="files_number_of_files_changed">
+        <item quantity="other">%,d 个文件已更改</item>
+    </plurals>
+    <plurals name="fork_repository_edit_text_remaining_characters">
+        <item quantity="other">剩余 %d 个字符。</item>
+    </plurals>
+    <plurals name="issue_pr_failing_checks_number">
+        <item quantity="other">· %d 失败</item>
+    </plurals>
+    <plurals name="issue_pr_list_pending_review_comments">
+        <item quantity="other">%d 个待审注释</item>
+    </plurals>
+    <plurals name="issue_pr_number_of_commits">
+        <item quantity="other">%,d 个提交</item>
+    </plurals>
+    <plurals name="issue_pr_pending_review_comments">
+        <item quantity="other">你有 %d 个待审注释</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d 条新通知</item>
+        <item quantity="one">%d 条新通知</item>
+    </plurals>
+    <plurals name="notification_item_label">
+        <item quantity="other">%d 个通知</item>
+    </plurals>
+    <plurals name="notification_unread_item_label">
+        <item quantity="other">%s 个未读项目</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_confirmation">
+        <item quantity="other">将 %d 条通知标记为完成</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_notice">
+        <item quantity="other">已将 %d 条通知标记为完成</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_confirmation">
+        <item quantity="other">将 %d 条通知标记为已读</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_notice">
+        <item quantity="other">已将 %d 条通知标记为已读</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_confirmation">
+        <item quantity="other">将 %d 条通知标记为未读</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_notice">
+        <item quantity="other">已将 %d 条通知标记为未读</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_confirmation">
+        <item quantity="other">将 %d 条通知移动到收件箱</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_notice">
+        <item quantity="other">已将 %d 条通知移动到收件箱</item>
+    </plurals>
+    <plurals name="notifications_n_selected">
+        <item quantity="other">%d 个已选择</item>
+    </plurals>
+    <plurals name="open_pr_dialog_commits_summary">
+        <item quantity="other">%s 个提交</item>
+    </plurals>
+    <plurals name="organizations_followers_label">
+        <item quantity="other">%s 个关注者</item>
+    </plurals>
+    <plurals name="organizations_following_label">
+        <item quantity="other">%s 关注</item>
+    </plurals>
+    <plurals name="polls_number_of_votes">
+        <item quantity="other">%d 票</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_assigned_subtitle">
+        <item quantity="other">已分配 %d 个</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_created_subtitle">
+        <item quantity="other">已创建 %d 个</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_mentioned_subtitle">
+        <item quantity="other">已提及 %d 个</item>
+    </plurals>
+    <plurals name="pulls_widget_filter_review_requested_subtitle">
+        <item quantity="other">已请求评审 %d 个</item>
+    </plurals>
+    <plurals name="release_detail_contributors_view_all_subtitle">
+        <item quantity="other">%d个贡献者</item>
+    </plurals>
+    <plurals name="release_discussion_comments_preview_metadata_label">
+        <item quantity="other">%d 条以前的评论</item>
+    </plurals>
+    <plurals name="repository_forks_label">
+        <item quantity="other">%s 个复刻</item>
+    </plurals>
+    <plurals name="repository_stars_label">
+        <item quantity="other">%s 个星标</item>
+    </plurals>
+    <plurals name="repository_stars_label_month">
+        <item quantity="other">本月 %s 标星</item>
+    </plurals>
+    <plurals name="repository_stars_label_today">
+        <item quantity="other">今天 %s 标星</item>
+    </plurals>
+    <plurals name="repository_stars_label_week">
+        <item quantity="other">本周 %s 标星</item>
+    </plurals>
+    <plurals name="review_number_of_comments">
+        <item quantity="other">%,d 条评论</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_all_jobs">
+        <item quantity="other">重新运行所有作业，%d 个作业</item>
+    </plurals>
+    <plurals name="screenreader_actions_rerun_only_failed_jobs">
+        <item quantity="other">仅重新运行失败的作业，%d 个作业失败</item>
+    </plurals>
+    <plurals name="screenreader_actions_workflows_number_of_runs">
+        <item quantity="other">总运行数 %d</item>
+    </plurals>
+    <plurals name="screenreader_added_to_many_lists_content_description">
+        <item quantity="other">已添加到 %1$s 列表，以及其他 %2$s 个列表</item>
+    </plurals>
+    <plurals name="screenreader_displaying_results">
+        <item quantity="other">正在显示 %d 结果</item>
+    </plurals>
+    <plurals name="screenreader_expandable_number_of_items">
+        <item quantity="other">%d 项</item>
+    </plurals>
+    <plurals name="screenreader_favorites_search_results">
+        <item quantity="other">找到 %d 个结果</item>
+    </plurals>
+    <plurals name="screenreader_issue_related_pull_requests">
+        <item quantity="other">%,d 个拉取请求</item>
+    </plurals>
+    <plurals name="screenreader_lists_list_number_of_repos_count">
+        <item quantity="other">已添加 %d 存储库</item>
+    </plurals>
+    <plurals name="screenreader_number_of_assignees">
+        <item quantity="other">%d个代理人</item>
+    </plurals>
+    <plurals name="screenreader_number_of_contributors">
+        <item quantity="other">%d个贡献者</item>
+    </plurals>
+    <plurals name="screenreader_pull_request_related_issues">
+        <item quantity="other">%,d 个链接问题</item>
+    </plurals>
+    <plurals name="screenreader_reaction_type_and_quantity">
+        <item quantity="other">%2$s 个%1$s表情符号</item>
+    </plurals>
+    <plurals name="screenreader_search_and_filter_x_results">
+        <item quantity="other">%d 个结果</item>
+    </plurals>
+    <plurals name="screenreader_search_results">
+        <item quantity="other">找到 %d 个结果</item>
+    </plurals>
+    <plurals name="screenreader_sub_issues_progress_description">
+        <item quantity="other">子问题；已完成 %1$d 个(共 %2$d 个)</item>
+    </plurals>
+    <plurals name="screenreader_unread_notifications_metadata">
+        <item quantity="other">%d 个未读通知</item>
+    </plurals>
+    <plurals name="screenreader_user_discussions_counter_description">
+        <item quantity="other">%d 次讨论</item>
+    </plurals>
+    <plurals name="screenreader_user_organizations_counter_description">
+        <item quantity="other">%d 个组织</item>
+    </plurals>
+    <plurals name="screenreader_user_projects_counter_description">
+        <item quantity="other">%d 个项目</item>
+    </plurals>
+    <plurals name="screenreader_user_repo_counter_description">
+        <item quantity="other">%d 个存储库</item>
+    </plurals>
+    <plurals name="screenreader_user_sponsoring_counter_description">
+        <item quantity="other">%d 名发起用户</item>
+    </plurals>
+    <plurals name="screenreader_user_starred_repos_counter_description">
+        <item quantity="other">%d 个带星标的仓库</item>
+    </plurals>
+    <plurals name="search_and_filter_filter_bar_context_button_filter_count_description">
+        <item quantity="other">已应用 %d 个筛选器</item>
+    </plurals>
+    <plurals name="search_results_number_of_issues">
+        <item quantity="other">查看另外 %s 个议题</item>
+    </plurals>
+    <plurals name="search_results_number_of_orgs">
+        <item quantity="other">查看另外 %s 个组织</item>
+    </plurals>
+    <plurals name="search_results_number_of_pull_requests">
+        <item quantity="other">查看另外 %s 个拉取请求</item>
+    </plurals>
+    <plurals name="search_results_number_of_repos">
+        <item quantity="other">查看另外 %s 个仓库</item>
+    </plurals>
+    <plurals name="search_results_number_of_users">
+        <item quantity="other">查看另外 %s 个人</item>
+    </plurals>
+    <plurals name="session_event_files_changed">
+        <item quantity="other">已更改 %d 个文件</item>
+    </plurals>
+    <plurals name="session_event_task_summary_actions">
+        <item quantity="other">%d 个操作</item>
+    </plurals>
+    <plurals name="session_event_tool_calls">
+        <item quantity="other">%d 次工具调用</item>
+    </plurals>
+    <plurals name="session_event_tool_group_bash">
+        <item quantity="other">%d 个终端命令</item>
+    </plurals>
+    <plurals name="session_event_tool_group_create">
+        <item quantity="other">创建 %d 个文件</item>
+    </plurals>
+    <plurals name="session_event_tool_group_default">
+        <item quantity="other">%2$s: %1$d 个调用</item>
+    </plurals>
+    <plurals name="session_event_tool_group_edit">
+        <item quantity="other">编辑 %d 个文件</item>
+    </plurals>
+    <plurals name="session_event_tool_group_view">
+        <item quantity="other">查看 %d 个文件</item>
+    </plurals>
+    <plurals name="session_metadata_premium_requests">
+        <item quantity="other">%1$s 个高级请求</item>
+    </plurals>
+    <plurals name="session_metadata_sessions">
+        <item quantity="other">%d 个会话</item>
+    </plurals>
+    <plurals name="show_more_code_search_matches">
+        <item quantity="other">显示另外 %d 个匹配项</item>
+    </plurals>
+    <plurals name="status_characters_remaining_label">
+        <item quantity="other">剩余 %d 个字符</item>
+    </plurals>
+    <plurals name="status_check_group_header">
+        <item quantity="other">%1$d 个%2$s检查</item>
+    </plurals>
+    <plurals name="task_list_progress_label_all_complete">
+        <item quantity="other">%1$d 完成</item>
+    </plurals>
+    <plurals name="task_list_progress_label_not_started">
+        <item quantity="other">%1$d 个任务</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_rebase_description">
+        <item quantity="other">满足要求时，此分支的 %d 条提交将变基并添加到基础分支。</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_squash_description">
+        <item quantity="other">满足要求时，来自此分支的 %d 个提交将在基础分支中合并为一个提交。</item>
+    </plurals>
+    <plurals name="triage_linked_items_max_reached">
+        <item quantity="other">只能选择 %d 项</item>
+    </plurals>
+    <plurals name="triage_merge_method_rebase_description">
+        <item quantity="other">来自此分支的 %d 提交将变基并添加到基础分支。</item>
+    </plurals>
+    <plurals name="triage_merge_method_squash_description">
+        <item quantity="other">来自此分支的 %d 个提交将在基础分支中合并为一个提交。</item>
+    </plurals>
+    <plurals name="triage_review_multiline_placeholder">
+        <item quantity="other">折叠了第 %1$d 到 %2$d 行</item>
+    </plurals>
+    <plurals name="users_repositories_label">
+        <item quantity="other">%s 个仓库</item>
+    </plurals>
+    <plurals name="view_more_code_search_matches">
+        <item quantity="other">查看另外 %d 个匹配项</item>
+    </plurals>
+</resources>

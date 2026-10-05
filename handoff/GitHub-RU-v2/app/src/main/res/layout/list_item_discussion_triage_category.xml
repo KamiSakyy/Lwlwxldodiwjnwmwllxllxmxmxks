@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/discussion_category_item" android:tag="layout/list_item_discussion_triage_category_0" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/body_text_size" android:id="@id/discussion_category_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Tertiary" />
+    <TextView android:id="@id/discussion_category_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/default_margin_0_75x" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/discussion_category_emoji" app:layout_constraintTop_toTopOf="parent" style="@style/BodyTextMedium" />
+</androidx.constraintlayout.widget.ConstraintLayout>

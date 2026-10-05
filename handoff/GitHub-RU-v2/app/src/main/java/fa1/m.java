@@ -1,0 +1,14 @@
+package fa1;
+
+import androidx.lifecycle.l1;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Type;
+
+/* loaded from: /home/user/work/p/classes5.dex */
+public abstract class m {
+    public n a(Type type, Annotation[] annotationArr, Annotation[] annotationArr2, l1 l1Var) {
+        return null;
+    }
+
+    public abstract n b(Type type, Annotation[] annotationArr, l1 l1Var);
+}

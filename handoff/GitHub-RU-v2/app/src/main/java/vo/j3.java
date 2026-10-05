@@ -1,0 +1,191 @@
+package vo;
+
+import java.time.ZonedDateTime;
+import java.util.Iterator;
+import java.util.List;
+import jo.f4;
+import m10.gh0;
+import m10.sa;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class j3 implements aa.a {
+    public static final List a = x61.l.r(new String[]{"id", "title", "runNumber", "eventType", "createdAt", "workflow", "checkSuite", "__typename"});
+
+    /* JADX WARN: Code restructure failed: missing block: B:10:0x002a, code lost:
+    
+        if (r6 == null) goto L22;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:11:0x002c, code lost:
+    
+        if (r7 == null) goto L20;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:12:0x002e, code lost:
+    
+        if (r8 == null) goto L18;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:13:0x0030, code lost:
+    
+        if (r9 == null) goto L16;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:15:0x0035, code lost:
+    
+        return new vo.z2(r2, r3, r4, r5, r6, r7, r8, r9);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x0036, code lost:
+    
+        k41.b.B(r14, "__typename");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:18:0x003b, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:19:0x003c, code lost:
+    
+        k41.b.B(r14, "checkSuite");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0041, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:21:0x0042, code lost:
+    
+        k41.b.B(r14, "workflow");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:22:0x0047, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:23:0x0048, code lost:
+    
+        k41.b.B(r14, "createdAt");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x004d, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:25:0x004e, code lost:
+    
+        k41.b.B(r14, "eventType");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0053, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:27:0x0054, code lost:
+    
+        k41.b.B(r14, "runNumber");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:28:0x0059, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:29:0x005a, code lost:
+    
+        k41.b.B(r14, "id");
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:30:0x005f, code lost:
+    
+        throw null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:5:0x001d, code lost:
+    
+        r4 = r1;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:6:0x0020, code lost:
+    
+        if (r2 == null) goto L28;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:7:0x0022, code lost:
+    
+        if (r4 == null) goto L26;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:8:0x0024, code lost:
+    
+        r4 = r4.intValue();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:9:0x0028, code lost:
+    
+        if (r5 == null) goto L24;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static z2 c(ea.e eVar, aa.w wVar) {
+        Integer num;
+        Object obj;
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        Integer num2 = null;
+        String str = null;
+        String str2 = null;
+        gh0 gh0Var = null;
+        ZonedDateTime zonedDateTime = null;
+        y2 y2Var = null;
+        r2 r2Var = null;
+        String str3 = null;
+        while (true) {
+            switch (eVar.r0(a)) {
+                case 0:
+                    num = num2;
+                    str = (String) aa.c.a.a(eVar, wVar);
+                    break;
+                case 1:
+                    num = num2;
+                    str2 = (String) aa.c.i.a(eVar, wVar);
+                    break;
+                case 2:
+                    long nextLong = eVar.nextLong();
+                    if (nextLong > 2147483647L) {
+                        while (nextLong > 2147483647L) {
+                            nextLong = f4.c(1, nextLong, "substring(...)");
+                        }
+                        num2 = Integer.valueOf((int) nextLong);
+                    } else {
+                        num2 = Integer.valueOf((int) nextLong);
+                        continue;
+                    }
+                case 3:
+                    num = num2;
+                    String u = eVar.u();
+                    k71.k.d(u);
+                    gh0.Companion.getClass();
+                    Iterator it = gh0.v.iterator();
+                    while (true) {
+                        if (it.hasNext()) {
+                            obj = it.next();
+                            if (((gh0) obj).r.equals(u)) {
+                            }
+                        } else {
+                            obj = null;
+                        }
+                    }
+                    gh0 gh0Var2 = (gh0) obj;
+                    if (gh0Var2 != null) {
+                        gh0Var = gh0Var2;
+                        break;
+                    } else {
+                        gh0Var = gh0.t;
+                        break;
+                    }
+                case 4:
+                    num = num2;
+                    sa.Companion.getClass();
+                    zonedDateTime = (ZonedDateTime) wVar.e(sa.a).a(eVar, wVar);
+                    break;
+                case 5:
+                    num = num2;
+                    y2Var = (y2) aa.c.c(i3.a, false).a(eVar, wVar);
+                    break;
+                case 6:
+                    num = num2;
+                    r2Var = (r2) aa.c.c(b3.a, false).a(eVar, wVar);
+                    break;
+                case 7:
+                    num = num2;
+                    str3 = (String) aa.c.a.a(eVar, wVar);
+                    break;
+            }
+            num2 = num;
+        }
+    }
+}

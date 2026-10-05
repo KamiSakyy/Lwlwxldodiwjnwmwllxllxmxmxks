@@ -1,0 +1,28 @@
+package p20;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class nb implements aa.a {
+    public static final nb a = new nb();
+    public static final List b = sy.d0.n("createSavedNotificationThread");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        u10.ch chVar = null;
+        while (eVar.r0(b) == 0) {
+            chVar = (u10.ch) aa.c.b(aa.c.c(mb.a, false)).a(eVar, wVar);
+        }
+        return new u10.dh(chVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        u10.dh dhVar = (u10.dh) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(dhVar, "value");
+        fVar.z0("createSavedNotificationThread");
+        aa.c.b(aa.c.c(mb.a, false)).b(fVar, wVar, dhVar.a);
+    }
+}

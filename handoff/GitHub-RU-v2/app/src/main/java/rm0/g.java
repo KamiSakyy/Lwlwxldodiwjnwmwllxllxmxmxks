@@ -1,0 +1,134 @@
+package rm0;
+
+import com.github.service.models.HideCommentReason;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class g extends c71.j implements j71.e {
+    public final /* synthetic */ HideCommentReason A;
+    public final /* synthetic */ int v;
+    public int w;
+    public final /* synthetic */ o x;
+    public final /* synthetic */ String y;
+    public final /* synthetic */ String z;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ g(o oVar, String str, String str2, HideCommentReason hideCommentReason, a71.c cVar, int i) {
+        super(2, cVar);
+        this.v = i;
+        this.x = oVar;
+        this.y = str;
+        this.z = str2;
+        this.A = hideCommentReason;
+    }
+
+    @Override // c71.a
+    public final a71.c r(a71.c cVar, Object obj) {
+        switch (this.v) {
+            case 0:
+                return new g(this.x, this.y, this.z, this.A, cVar, 0);
+            case 1:
+                return new g(this.x, this.y, this.z, this.A, cVar, 1);
+            default:
+                return new g(this.x, this.y, this.z, this.A, cVar, 2);
+        }
+    }
+
+    @Override // j71.e
+    public final Object s(Object obj, Object obj2) {
+        w61.a0 a0Var = (w61.a0) obj;
+        a71.c cVar = (a71.c) obj2;
+        switch (this.v) {
+        }
+        return ((g) r(cVar, a0Var)).v(w61.a0.a);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:28:? A[RETURN, SYNTHETIC] */
+    @Override // c71.a
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object v(Object obj) {
+        switch (this.v) {
+            case 0:
+                b71.a aVar = b71.a.r;
+                int i = this.w;
+                String str = this.z;
+                o oVar = this.x;
+                if (i == 0) {
+                    sy.y.j(obj);
+                    this.w = 1;
+                    if (o.g(oVar, this.y, str, true, this) == aVar) {
+                        return aVar;
+                    }
+                } else {
+                    if (i != 1) {
+                        if (i != 2) {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                        sy.y.j(obj);
+                        return w61.a0.a;
+                    }
+                    sy.y.j(obj);
+                }
+                this.w = 2;
+                if (oVar.C(this.y, str, true, this.A, this) == aVar) {
+                    return aVar;
+                }
+                return w61.a0.a;
+            case 1:
+                b71.a aVar2 = b71.a.r;
+                int i2 = this.w;
+                String str2 = this.z;
+                String str3 = this.y;
+                o oVar2 = this.x;
+                if (i2 == 0) {
+                    sy.y.j(obj);
+                    this.w = 1;
+                    if (o.l(oVar2, str3, str2, true, this) == aVar2) {
+                        return aVar2;
+                    }
+                } else {
+                    if (i2 != 1) {
+                        if (i2 != 2) {
+                            if (i2 != 3) {
+                                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                            }
+                            sy.y.j(obj);
+                            return w61.a0.a;
+                        }
+                        sy.y.j(obj);
+                        this.w = 3;
+                        if (oVar2.G(this.y, str2, true, this.A, this) == aVar2) {
+                            return aVar2;
+                        }
+                        return w61.a0.a;
+                    }
+                    sy.y.j(obj);
+                }
+                this.w = 2;
+                if (o.p(oVar2, str3, str2, true, this) == aVar2) {
+                    return aVar2;
+                }
+                this.w = 3;
+                if (oVar2.G(this.y, str2, true, this.A, this) == aVar2) {
+                }
+                return w61.a0.a;
+            default:
+                b71.a aVar3 = b71.a.r;
+                int i3 = this.w;
+                if (i3 == 0) {
+                    sy.y.j(obj);
+                    this.w = 1;
+                    if (this.x.K(this.y, this.z, true, this.A, this) == aVar3) {
+                        return aVar3;
+                    }
+                } else {
+                    if (i3 != 1) {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    sy.y.j(obj);
+                }
+                return w61.a0.a;
+        }
+    }
+}

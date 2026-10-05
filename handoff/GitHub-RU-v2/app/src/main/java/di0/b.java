@@ -1,0 +1,93 @@
+package di0;
+
+import aa.m;
+import aa.q0;
+import aa.r;
+import aa.s;
+import aa.u0;
+import aa.x;
+import gn0.dj;
+import gn0.eq;
+import gn0.fl;
+import gn0.jk;
+import gn0.lb;
+import gn0.lr;
+import gn0.m9;
+import gn0.mq;
+import gn0.mx;
+import gn0.pb;
+import gn0.rb;
+import gn0.tb;
+import java.util.List;
+import k71.k;
+import pj0.j;
+import sy.d0;
+import v8.l0;
+import x61.l;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class b {
+    public static final List a;
+
+    static {
+        tb.Companion.getClass();
+        x xVar = tb.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
+        List n = d0.n("ProfileItemShowcase");
+        List list = ki0.a.a;
+        List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProfileItemShowcase", n, list)});
+        rb.Companion.getClass();
+        x xVar2 = rb.a;
+        List n2 = d0.n(new m("totalCount", l0.b(xVar2), (String) null, rVar, rVar, rVar));
+        s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List n3 = d0.n("RepositoryReadme");
+        List list2 = j.a;
+        List r2 = l.r(new s[]{mVar2, no.a.c(list2, "selections", "RepositoryReadme", n3, list2)});
+        List n4 = d0.n(new m("totalCount", l0.b(xVar2), (String) null, rVar, rVar, rVar));
+        List n5 = d0.n(new m("totalCount", l0.b(xVar2), (String) null, rVar, rVar, rVar));
+        m mVar3 = new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        m9.Companion.getClass();
+        r b2 = l0.b(m9.a);
+        eq.Companion.getClass();
+        m mVar4 = new m("discussions", b2, (String) null, rVar, no.a.s(eq.m, new u0(0)), n5);
+        pb.Companion.getClass();
+        x xVar3 = pb.a;
+        List r3 = l.r(new m[]{mVar3, mVar4, new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        s mVar5 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        s mVar6 = new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        mx.Companion.getClass();
+        x xVar4 = mx.a;
+        s mVar7 = new m("url", l0.b(xVar4), (String) null, rVar, rVar, rVar);
+        List r4 = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
+        List list3 = vd0.b.a;
+        s c = no.a.c(list3, "selections", "Actor", r4, list3);
+        s mVar8 = new m("descriptionHTML", xVar, (String) null, rVar, rVar, rVar);
+        s mVar9 = new m("email", xVar, "organizationEmail", rVar, rVar, rVar);
+        lb.Companion.getClass();
+        x xVar5 = lb.a;
+        s mVar10 = new m("isVerified", l0.b(xVar5), (String) null, rVar, rVar, rVar);
+        jk.Companion.getClass();
+        s mVar11 = new m("itemShowcase", l0.b(jk.b), "organizationItemShowcase", rVar, rVar, r);
+        s mVar12 = new m("location", xVar, (String) null, rVar, rVar, rVar);
+        s mVar13 = new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        s mVar14 = new m("name", xVar, (String) null, rVar, rVar, rVar);
+        s mVar15 = new m("viewerIsFollowing", l0.b(xVar5), (String) null, rVar, rVar, rVar);
+        mq.Companion.getClass();
+        r b3 = l0.b(mq.a);
+        dj.Companion.getClass();
+        s mVar16 = new m("repositories", b3, "organizationRepositories", rVar, no.a.s(dj.f, new u0(d0.n("OWNER"))), n2);
+        lr.Companion.getClass();
+        q0 q0Var = lr.a;
+        k.g(q0Var, "type");
+        s mVar17 = new m("readme", q0Var, (String) null, rVar, rVar, r2);
+        s mVar18 = new m("websiteUrl", xVar4, (String) null, rVar, rVar, rVar);
+        s mVar19 = new m("twitterUsername", xVar, (String) null, rVar, rVar, rVar);
+        fl.Companion.getClass();
+        s mVar20 = new m("projectsV2", l0.b(fl.a), (String) null, rVar, no.a.s(dj.a, new u0(0)), n4);
+        q0 q0Var2 = eq.m0;
+        k.g(q0Var2, "type");
+        a = l.r(new s[]{mVar5, mVar6, mVar7, c, mVar8, mVar9, mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, new m("organizationDiscussionsRepository", q0Var2, (String) null, rVar, rVar, r3), new m("viewerIsFollowing", l0.b(xVar5), (String) null, rVar, rVar, rVar)});
+    }
+}

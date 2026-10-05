@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/backgroundElevatedPrimary" />
+        </shape>
+    </item>
+    <item android:width="10.0dip" android:top="18.0dip" android:bottom="44.0dip" android:start="16.0dip" android:end="251.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="10.0dip" />
+            <solid android:color="@color/backgroundElevatedTertiary" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+    <item android:top="18.0dip" android:bottom="44.0dip" android:start="38.0dip" android:end="56.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="10.0dip" />
+            <solid android:color="@color/backgroundElevatedTertiary" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+    <item android:width="20.0dip" android:top="18.0dip" android:bottom="44.0dip" android:start="280.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="10.0dip" />
+            <solid android:color="@color/backgroundElevatedTertiary" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+    <item android:width="89.0dip" android:top="44.0dip" android:bottom="18.0dip" android:start="16.0dip" android:end="172.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="10.0dip" />
+            <solid android:color="@color/backgroundElevatedTertiary" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+    <item android:top="44.0dip" android:bottom="18.0dip" android:start="117.0dip" android:end="118.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="10.0dip" />
+            <solid android:color="@color/backgroundElevatedTertiary" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+</layer-list>

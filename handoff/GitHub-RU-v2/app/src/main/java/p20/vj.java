@@ -1,0 +1,43 @@
+package p20;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class vj implements aa.a {
+    public static final vj a = new vj();
+    public static final List b = sy.d0.o("pageInfo", "nodes");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        u10.us usVar = null;
+        List list = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                usVar = (u10.us) aa.c.c(uj.a, false).a(eVar, wVar);
+            } else {
+                if (r0 != 1) {
+                    break;
+                }
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(rj.a, true)))).a(eVar, wVar);
+            }
+        }
+        if (usVar != null) {
+            return new u10.vs(usVar, list);
+        }
+        k41.b.B(eVar, "pageInfo");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        u10.vs vsVar = (u10.vs) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(vsVar, "value");
+        fVar.z0("pageInfo");
+        aa.c.c(uj.a, false).b(fVar, wVar, vsVar.a);
+        fVar.z0("nodes");
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(rj.a, true)))).b(fVar, wVar, vsVar.b);
+    }
+}

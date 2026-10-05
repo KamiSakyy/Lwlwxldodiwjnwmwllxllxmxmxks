@@ -1,0 +1,123 @@
+package vr0;
+
+import aa.a0;
+import aa.m;
+import aa.q0;
+import aa.r;
+import aa.s;
+import aa.u0;
+import aa.x;
+import java.util.List;
+import k71.k;
+import pz0.bf;
+import pz0.c90;
+import pz0.df;
+import pz0.e7;
+import pz0.f40;
+import pz0.h50;
+import pz0.jx;
+import pz0.le;
+import pz0.mf;
+import pz0.ny;
+import pz0.o7;
+import pz0.pd;
+import pz0.re;
+import pz0.td;
+import pz0.vd;
+import pz0.w80;
+import pz0.xd;
+import pz0.xs;
+import sy.d0;
+import v8.l0;
+import x61.l;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class b {
+    public static final List a;
+
+    static {
+        vd.Companion.getClass();
+        x xVar = vd.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        td.Companion.getClass();
+        x xVar2 = td.a;
+        m mVar = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        xd.Companion.getClass();
+        x xVar3 = xd.a;
+        List r = l.r(new m[]{mVar, new m("login", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+        m mVar2 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        m mVar3 = new m("name", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        pd.Companion.getClass();
+        x xVar4 = pd.a;
+        m mVar4 = new m("isPrivate", l0.b(xVar4), (String) null, rVar, rVar, rVar);
+        f40.Companion.getClass();
+        a0 a0Var = f40.s;
+        k.g(a0Var, "type");
+        m mVar5 = new m("viewerSubscription", a0Var, (String) null, rVar, rVar, rVar);
+        e7.Companion.getClass();
+        m mVar6 = new m("viewerSubscriptionTypes", l0.a(l0.b(e7.s)), (String) null, rVar, rVar, rVar);
+        ny.Companion.getClass();
+        List r2 = l.r(new m[]{mVar2, mVar3, mVar4, mVar5, mVar6, new m("owner", l0.b(ny.e), (String) null, rVar, rVar, r), new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+        s mVar7 = new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        List r3 = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
+        List list = dp0.a.a;
+        List r4 = l.r(new s[]{mVar7, no.a.c(list, "selections", "Actor", r3, list), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        m mVar8 = new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        w80.Companion.getClass();
+        List r5 = l.r(new m[]{mVar8, new m("nodes", l0.a(w80.W), (String) null, rVar, rVar, r4)});
+        List n2 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        s mVar9 = new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        List n3 = d0.n("IssueType");
+        List list2 = zr0.a.a;
+        List r6 = l.r(new s[]{mVar9, no.a.c(list2, "selections", "IssueType", n3, list2), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r7 = l.r(new m[]{new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+        s mVar10 = new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        s mVar11 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        s mVar12 = new m("title", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        s mVar13 = new m("titleHTML", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        s mVar14 = new m("number", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        o7.Companion.getClass();
+        s mVar15 = new m("createdAt", l0.b(o7.a), (String) null, rVar, rVar, rVar);
+        s mVar16 = new m("isReadByViewer", xVar4, (String) null, rVar, rVar, rVar);
+        re.Companion.getClass();
+        s mVar17 = new m("comments", l0.b(re.a), (String) null, rVar, rVar, n);
+        List r8 = l.r(new String[]{"Discussion", "Issue", "PullRequest"});
+        List list3 = ds0.a.a;
+        s c = no.a.c(list3, "selections", "Labelable", r8, list3);
+        bf.Companion.getClass();
+        s mVar18 = new m("state", l0.b(bf.s), "issueState", rVar, rVar, rVar);
+        jx.Companion.getClass();
+        s mVar19 = new m("repository", l0.b(jx.t0), (String) null, rVar, rVar, r2);
+        s mVar20 = new m("viewerSubscription", a0Var, (String) null, rVar, rVar, rVar);
+        h50.Companion.getClass();
+        s mVar21 = new m("url", l0.b(h50.a), (String) null, rVar, rVar, rVar);
+        c90.Companion.getClass();
+        r b2 = l0.b(c90.a);
+        le.Companion.getClass();
+        s mVar22 = new m("assignees", b2, (String) null, rVar, no.a.s(le.a, new u0(25)), r5);
+        xs.Companion.getClass();
+        q0 q0Var = xs.a;
+        k.g(q0Var, "type");
+        s mVar23 = new m("closedByPullRequestsReferences", q0Var, (String) null, rVar, rVar, n2);
+        df.Companion.getClass();
+        a0 a0Var2 = df.s;
+        k.g(a0Var2, "type");
+        s mVar24 = new m("stateReason", a0Var2, (String) null, rVar, rVar, rVar);
+        mf.Companion.getClass();
+        q0 q0Var2 = mf.a;
+        k.g(q0Var2, "type");
+        s mVar25 = new m("issueType", q0Var2, (String) null, rVar, rVar, r6);
+        List n4 = d0.n("Issue");
+        List list4 = vu0.s.a;
+        s c2 = no.a.c(list4, "selections", "Issue", n4, list4);
+        q0 q0Var3 = le.A;
+        k.g(q0Var3, "type");
+        a = l.r(new s[]{mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, c, mVar18, mVar19, mVar20, mVar21, mVar22, mVar23, mVar24, mVar25, c2, new m("parent", q0Var3, (String) null, rVar, rVar, r7)});
+    }
+
+    public static List a() {
+        return a;
+    }
+}

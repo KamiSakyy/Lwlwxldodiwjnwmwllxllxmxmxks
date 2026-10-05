@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:tag="layout/activity_fragment_container_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/app_bar_layout" layout="@layout/app_bar_layout" />
+    <FrameLayout android:id="@id/fragment_container" android:background="@color/backgroundElevatedPrimary" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

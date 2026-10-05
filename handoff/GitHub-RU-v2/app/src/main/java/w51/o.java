@@ -1,0 +1,20 @@
+package w51;
+
+import java.util.HashMap;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class o {
+    public static final l51.h a;
+
+    static {
+        HashMap hashMap = new HashMap();
+        HashMap hashMap2 = new HashMap();
+        hashMap.put(o.class, c.a);
+        hashMap2.remove(o.class);
+        hashMap.put(x51.e.class, b.a);
+        hashMap2.remove(x51.e.class);
+        hashMap.put(x51.d.class, a.a);
+        hashMap2.remove(x51.d.class);
+        a = new l51.h(new HashMap(hashMap), new HashMap(hashMap2), l51.g.a, 0);
+    }
+}

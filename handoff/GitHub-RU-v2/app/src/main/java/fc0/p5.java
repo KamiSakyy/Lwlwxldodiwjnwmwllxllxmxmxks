@@ -1,0 +1,91 @@
+package fc0;
+
+import hc0.bb;
+import hc0.dk;
+import hc0.ew;
+import hc0.fb;
+import hc0.fm;
+import hc0.kf;
+import hc0.lk;
+import hc0.nj;
+import hc0.oy;
+import hc0.pj;
+import hc0.rj;
+import hc0.tj;
+import hc0.wg;
+import hc0.xa;
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class p5 {
+    public static final List a;
+
+    static {
+        fb.Companion.getClass();
+        aa.x xVar = fb.a;
+        aa.r b = v8.l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
+        List r = x61.l.r(new String[]{"Achievement", "AchievementTier", "AddedToProjectEvent", "App", "AssignedEvent", "AutoMergeDisabledEvent", "AutoMergeEnabledEvent", "AutoRebaseEnabledEvent", "AutoSquashEnabledEvent", "AutomaticBaseChangeFailedEvent", "AutomaticBaseChangeSucceededEvent", "BaseRefChangedEvent", "BaseRefDeletedEvent", "BaseRefForcePushedEvent", "Blob", "Bot", "BranchProtectionRule", "BypassForcePushAllowance", "BypassPullRequestAllowance", "CWE", "CheckRun", "CheckSuite", "ClosedEvent", "CodeOfConduct", "CommentDeletedEvent", "Commit", "CommitComment", "CommitCommentThread", "Comparison", "ConnectedEvent", "ConvertToDraftEvent", "ConvertedNoteToIssueEvent", "ConvertedToDiscussionEvent", "CrossReferencedEvent", "DemilestonedEvent", "DeployKey", "DeployedEvent", "Deployment", "DeploymentEnvironmentChangedEvent", "DeploymentReview", "DeploymentStatus", "DisconnectedEvent", "Discussion", "DiscussionCategory", "DiscussionComment", "DiscussionPoll", "DiscussionPollOption", "DraftIssue", "Enterprise", "EnterpriseAdministratorInvitation", "EnterpriseIdentityProvider", "EnterpriseRepositoryInfo", "EnterpriseServerInstallation", "EnterpriseServerUserAccount", "EnterpriseServerUserAccountEmail", "EnterpriseServerUserAccountsUpload", "EnterpriseUserAccount", "Environment", "ExternalIdentity", "Gist", "GistComment", "HeadRefDeletedEvent", "HeadRefForcePushedEvent", "HeadRefRestoredEvent", "IpAllowListEntry", "Issue", "IssueComment", "Label", "LabeledEvent", "Language", "License", "LinkedBranch", "LockedEvent", "Mannequin", "MarkedAsDuplicateEvent", "MembersCanDeleteReposClearAuditEntry", "MembersCanDeleteReposDisableAuditEntry", "MembersCanDeleteReposEnableAuditEntry", "MentionedEvent", "MergedEvent", "MigrationSource", "Milestone", "MilestonedEvent", "MobilePushNotificationSchedule", "MovedColumnsInProjectEvent", "NotificationFilter", "NotificationThread", "OauthApplicationCreateAuditEntry", "OrgAddBillingManagerAuditEntry", "OrgAddMemberAuditEntry", "OrgBlockUserAuditEntry", "OrgConfigDisableCollaboratorsOnlyAuditEntry", "OrgConfigEnableCollaboratorsOnlyAuditEntry", "OrgCreateAuditEntry", "OrgDisableOauthAppRestrictionsAuditEntry", "OrgDisableSamlAuditEntry", "OrgDisableTwoFactorRequirementAuditEntry", "OrgEnableOauthAppRestrictionsAuditEntry", "OrgEnableSamlAuditEntry", "OrgEnableTwoFactorRequirementAuditEntry", "OrgInviteMemberAuditEntry", "OrgInviteToBusinessAuditEntry", "OrgOauthAppAccessApprovedAuditEntry", "OrgOauthAppAccessDeniedAuditEntry", "OrgOauthAppAccessRequestedAuditEntry", "OrgRemoveBillingManagerAuditEntry", "OrgRemoveMemberAuditEntry", "OrgRemoveOutsideCollaboratorAuditEntry", "OrgRestoreMemberAuditEntry", "OrgUnblockUserAuditEntry", "OrgUpdateDefaultRepositoryPermissionAuditEntry", "OrgUpdateMemberAuditEntry", "OrgUpdateMemberRepositoryCreationPermissionAuditEntry", "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry", "Organization", "OrganizationIdentityProvider", "OrganizationInvitation", "OrganizationMigration", "Package", "PackageFile", "PackageTag", "PackageVersion", "Patch", "PinnedDiscussion", "PinnedEvent", "PinnedIssue", "PrivateRepositoryForkingDisableAuditEntry", "PrivateRepositoryForkingEnableAuditEntry", "Project", "ProjectCard", "ProjectColumn", "ProjectNext", "ProjectNextField", "ProjectNextItem", "ProjectNextItemFieldValue", "ProjectNextIterationField", "ProjectNextSingleSelectField", "ProjectV2", "ProjectV2Field", "ProjectV2Item", "ProjectV2ItemFieldDateValue", "ProjectV2ItemFieldIterationValue", "ProjectV2ItemFieldNumberValue", "ProjectV2ItemFieldSingleSelectValue", "ProjectV2ItemFieldTextValue", "ProjectV2IterationField", "ProjectV2SingleSelectField", "ProjectV2View", "ProjectV2Workflow", "ProjectView", "PublicKey", "PullRequest", "PullRequestCommit", "PullRequestCommitCommentThread", "PullRequestReview", "PullRequestReviewComment", "PullRequestReviewThread", "PullRequestThread", "Push", "PushAllowance", "Reaction", "ReadyForReviewEvent", "Ref", "ReferencedEvent", "Release", "ReleaseAsset", "RemovedFromProjectEvent", "RenamedTitleEvent", "ReopenedEvent", "RepoAccessAuditEntry", "RepoAddMemberAuditEntry", "RepoAddTopicAuditEntry", "RepoArchivedAuditEntry", "RepoChangeMergeSettingAuditEntry", "RepoConfigDisableAnonymousGitAccessAuditEntry", "RepoConfigDisableCollaboratorsOnlyAuditEntry", "RepoConfigDisableContributorsOnlyAuditEntry", "RepoConfigDisableSockpuppetDisallowedAuditEntry", "RepoConfigEnableAnonymousGitAccessAuditEntry", "RepoConfigEnableCollaboratorsOnlyAuditEntry", "RepoConfigEnableContributorsOnlyAuditEntry", "RepoConfigEnableSockpuppetDisallowedAuditEntry", "RepoConfigLockAnonymousGitAccessAuditEntry", "RepoConfigUnlockAnonymousGitAccessAuditEntry", "RepoCreateAuditEntry", "RepoDestroyAuditEntry", "RepoRemoveMemberAuditEntry", "RepoRemoveTopicAuditEntry", "Repository", "RepositoryAdvisory", "RepositoryAdvisoryComment", "RepositoryDependabotAlertsThread", "RepositoryInvitation", "RepositoryMigration", "RepositoryRule", "RepositoryTopic", "RepositoryVisibilityChangeDisableAuditEntry", "RepositoryVisibilityChangeEnableAuditEntry", "RepositoryVulnerabilityAlert", "RequiredStatusCheck", "ReviewDismissalAllowance", "ReviewDismissedEvent", "ReviewRequest", "ReviewRequestRemovedEvent", "ReviewRequestedEvent", "SavedReply", "SearchShortcut", "SecurityAdvisory", "Status", "StatusCheckRollup", "StatusContext", "SubscribedEvent", "Tag", "Team", "TeamAddMemberAuditEntry", "TeamAddRepositoryAuditEntry", "TeamChangeParentTeamAuditEntry", "TeamDashboard", "TeamDiscussion", "TeamDiscussionComment", "TeamRemoveMemberAuditEntry", "TeamRemoveRepositoryAuditEntry", "TeamSearchShortcut", "Topic", "TransferredEvent", "Tree", "UnassignedEvent", "UnlabeledEvent", "UnlockedEvent", "UnmarkedAsDuplicateEvent", "UnpinnedEvent", "UnsubscribedEvent", "User", "UserBlockedEvent", "UserContentEdit", "UserDashboard", "UserList", "UserStatus", "VerifiableDomain", "Workflow", "WorkflowRun", "WorkflowRunFile"});
+        List list = ka0.a.a;
+        List r2 = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "Node", r, list), new aa.m("login", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List n = sy.d0.n("Milestone");
+        List list2 = v60.a.a;
+        aa.s c = no.a.c(list2, "selections", "Milestone", n, list2);
+        bb.Companion.getClass();
+        aa.x xVar2 = bb.a;
+        List r3 = x61.l.r(new aa.s[]{mVar2, c, new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r4 = x61.l.r(new aa.m[]{new aa.m("name", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        aa.m mVar3 = new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        aa.m mVar4 = new aa.m("name", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
+        dk.Companion.getClass();
+        List r5 = x61.l.r(new aa.m[]{mVar3, mVar4, new aa.m("state", v8.l0.b(dk.s), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        tj.Companion.getClass();
+        aa.q0 q0Var = tj.a;
+        k71.k.g(q0Var, "type");
+        aa.m mVar5 = new aa.m("column", q0Var, (String) null, rVar, rVar, r4);
+        nj.Companion.getClass();
+        List r6 = x61.l.r(new aa.m[]{mVar5, new aa.m("project", v8.l0.b(nj.a), (String) null, rVar, rVar, r5), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        pj.Companion.getClass();
+        List n2 = sy.d0.n(new aa.m("nodes", v8.l0.a(pj.a), (String) null, rVar, rVar, r6));
+        aa.s mVar6 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
+        aa.s mVar7 = new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        ew.Companion.getClass();
+        aa.s mVar8 = new aa.m("url", v8.l0.b(ew.a), (String) null, rVar, rVar, rVar);
+        fm.Companion.getClass();
+        aa.s mVar9 = new aa.m("state", v8.l0.b(fm.s), (String) null, rVar, rVar, rVar);
+        List r7 = x61.l.r(new String[]{"Issue", "PullRequest"});
+        List list3 = j30.b.a;
+        aa.s c2 = no.a.c(list3, "selections", "Assignable", r7, list3);
+        List r8 = x61.l.r(new String[]{"Discussion", "Issue", "PullRequest"});
+        List list4 = d60.a.a;
+        aa.s c3 = no.a.c(list4, "selections", "Labelable", r8, list4);
+        List r9 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "GistComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"});
+        List list5 = d40.a.a;
+        aa.s c4 = no.a.c(list5, "selections", "Comment", r9, list5);
+        kf.Companion.getClass();
+        aa.q0 q0Var2 = kf.a;
+        k71.k.g(q0Var2, "type");
+        aa.s mVar10 = new aa.m("milestone", q0Var2, (String) null, rVar, rVar, r3);
+        rj.Companion.getClass();
+        aa.r b2 = v8.l0.b(rj.a);
+        lk.Companion.getClass();
+        aa.s mVar11 = new aa.m("projectCards", b2, (String) null, rVar, no.a.s(lk.t, new aa.u0(25)), n2);
+        xa.Companion.getClass();
+        aa.x xVar3 = xa.a;
+        List r10 = x61.l.r(new aa.s[]{mVar6, mVar7, mVar8, mVar9, c2, c3, c4, mVar10, mVar11, new aa.m("viewerCanDeleteHeadRef", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("viewerCanReopen", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+        hc0.l.Companion.getClass();
+        aa.j0 j0Var = hc0.l.a;
+        k71.k.g(j0Var, "type");
+        aa.m mVar12 = new aa.m("actor", j0Var, (String) null, rVar, rVar, r2);
+        aa.q0 q0Var3 = lk.J;
+        k71.k.g(q0Var3, "type");
+        List r12 = x61.l.r(new aa.m[]{mVar12, new aa.m("pullRequest", q0Var3, (String) null, rVar, rVar, r10)});
+        oy.Companion.getClass();
+        aa.q0 q0Var4 = oy.a;
+        k71.k.g(q0Var4, "type");
+        wg.Companion.getClass();
+        a = sy.d0.n(new aa.m("updatePullRequest", q0Var4, (String) null, rVar, no.a.s(wg.R0, new aa.u0(x61.x.u(new w61.k("assigneeIds", new aa.t("assigneeIds")), new w61.k("body", new aa.t("body")), new w61.k("labelIds", new aa.t("labelIds")), new w61.k("milestoneId", new aa.t("milestoneId")), new w61.k("projectIds", new aa.t("projectIds")), new w61.k("pullRequestId", new aa.t("id")), new w61.k("state", new aa.t("state"))))), r12));
+    }
+}

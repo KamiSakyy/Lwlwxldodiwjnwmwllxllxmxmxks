@@ -1,0 +1,60 @@
+package co0;
+
+import aa.j0;
+import aa.q0;
+import aa.r;
+import aa.s;
+import aa.t;
+import aa.u0;
+import aa.x;
+import java.util.List;
+import pz0.h50;
+import pz0.ha0;
+import pz0.su;
+import pz0.td;
+import pz0.w0;
+import pz0.wk;
+import pz0.xd;
+import pz0.y90;
+import sy.d0;
+import v8.l0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class d {
+    public static final List a;
+
+    static {
+        xd.Companion.getClass();
+        x xVar = xd.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        aa.m mVar = new aa.m("name", b, (String) null, rVar, rVar, rVar);
+        td.Companion.getClass();
+        x xVar2 = td.a;
+        List r = x61.l.r(new aa.m[]{mVar, new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        aa.m mVar2 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        y90.Companion.getClass();
+        List r2 = x61.l.r(new aa.m[]{mVar2, new aa.m("workflow", l0.b(y90.e), (String) null, rVar, rVar, r), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        aa.m mVar3 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        aa.m mVar4 = new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        h50.Companion.getClass();
+        List r3 = x61.l.r(new aa.m[]{mVar3, mVar4, new aa.m("logoUrl", l0.b(h50.a), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List n = d0.n("CheckSuite");
+        List list = wn0.b.a;
+        s c = no.a.c(list, "selections", "CheckSuite", n, list);
+        ha0.Companion.getClass();
+        q0 q0Var = ha0.b;
+        k71.k.g(q0Var, "type");
+        s mVar6 = new aa.m("workflowRun", q0Var, (String) null, rVar, rVar, r2);
+        w0.Companion.getClass();
+        q0 q0Var2 = w0.a;
+        k71.k.g(q0Var2, "type");
+        List r4 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("CheckSuite", d0.n("CheckSuite"), x61.l.r(new s[]{mVar5, c, mVar6, new aa.m("app", q0Var2, (String) null, rVar, rVar, r3)}))});
+        wk.Companion.getClass();
+        j0 j0Var = wk.a;
+        k71.k.g(j0Var, "type");
+        su.Companion.getClass();
+        a = x61.l.r(new aa.m[]{new aa.m("node", j0Var, (String) null, rVar, no.a.s(su.i, new u0(new t("id"))), r4), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+    }
+}

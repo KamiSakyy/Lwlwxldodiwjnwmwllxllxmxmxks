@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.commonandroid.views.ScrollableTitleToolbar android:gravity="center_vertical" android:id="@id/toolbar" android:tag="layout/toolbar_multi_line_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/toolbar_height" android:touchscreenBlocksFocus="false" app:contentInsetStart="@dimen/toolbar_inset_start" app:contentInsetStartWithNavigation="@dimen/toolbar_inset_start" app:popupTheme="@style/ToolbarPopupMenu"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/toolbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin_half">
+        <TextView android:id="@id/toolbar_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary.Small" />
+        <TextView android:textSize="@dimen/toolbar_title_text_size" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/inter_bold" />
+        <TextView android:id="@id/toolbar_subtitle_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary.Small" />
+    </LinearLayout>
+</com.github.commonandroid.views.ScrollableTitleToolbar>

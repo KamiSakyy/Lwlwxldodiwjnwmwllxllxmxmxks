@@ -1,0 +1,61 @@
+package wc0;
+
+import gn0.c20;
+import java.time.ZonedDateTime;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class v2 implements aa.h0 {
+    public final String a;
+    public final String b;
+    public final int c;
+    public final c20 d;
+    public final ZonedDateTime e;
+    public final u2 f;
+    public final n2 g;
+    public final String h;
+
+    public v2(String str, String str2, int i, c20 c20Var, ZonedDateTime zonedDateTime, u2 u2Var, n2 n2Var, String str3) {
+        this.a = str;
+        this.b = str2;
+        this.c = i;
+        this.d = c20Var;
+        this.e = zonedDateTime;
+        this.f = u2Var;
+        this.g = n2Var;
+        this.h = str3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof v2)) {
+            return false;
+        }
+        v2 v2Var = (v2) obj;
+        return k71.k.b(this.a, v2Var.a) && k71.k.b(this.b, v2Var.b) && this.c == v2Var.c && this.d == v2Var.d && k71.k.b(this.e, v2Var.e) && k71.k.b(this.f, v2Var.f) && k71.k.b(this.g, v2Var.g) && k71.k.b(this.h, v2Var.h);
+    }
+
+    public final int hashCode() {
+        int hashCode = this.a.hashCode() * 31;
+        String str = this.b;
+        return this.h.hashCode() + ((this.g.hashCode() + ((this.f.hashCode() + com.github.rudroid.m0.a(this.e, (this.d.hashCode() + a0.s0.b(this.c, (hashCode + (str == null ? 0 : str.hashCode())) * 31, 31)) * 31, 31)) * 31)) * 31);
+    }
+
+    public final String toString() {
+        StringBuilder o = a0.s0.o("WorkflowRunFragment(id=", this.a, ", title=", this.b, ", runNumber=");
+        o.append(this.c);
+        o.append(", eventType=");
+        o.append(this.d);
+        o.append(", createdAt=");
+        o.append(this.e);
+        o.append(", workflow=");
+        o.append(this.f);
+        o.append(", checkSuite=");
+        o.append(this.g);
+        o.append(", __typename=");
+        o.append(this.h);
+        o.append(")");
+        return o.toString();
+    }
+}

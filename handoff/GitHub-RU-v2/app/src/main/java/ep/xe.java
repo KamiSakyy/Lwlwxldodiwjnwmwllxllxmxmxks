@@ -1,0 +1,28 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class xe implements aa.a {
+    public static final xe a = new xe();
+    public static final List b = sy.d0.n("markNotificationsAsUnread");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jo.hm hmVar = null;
+        while (eVar.r0(b) == 0) {
+            hmVar = (jo.hm) aa.c.b(aa.c.c(ye.a, false)).a(eVar, wVar);
+        }
+        return new jo.gm(hmVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.gm gmVar = (jo.gm) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(gmVar, "value");
+        fVar.z0("markNotificationsAsUnread");
+        aa.c.b(aa.c.c(ye.a, false)).b(fVar, wVar, gmVar.a);
+    }
+}

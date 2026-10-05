@@ -1,0 +1,17 @@
+package hj;
+
+import k71.k;
+import v71.v;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class f {
+    public final cn.a a;
+    public final v b;
+
+    public f(cn.a aVar, v vVar) {
+        k.g(aVar, "forUserTimelineStoreFactory");
+        k.g(vVar, "dispatcher");
+        this.a = aVar;
+        this.b = vVar;
+    }
+}

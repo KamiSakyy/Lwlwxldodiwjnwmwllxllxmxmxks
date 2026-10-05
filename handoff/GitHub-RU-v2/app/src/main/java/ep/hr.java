@@ -1,0 +1,53 @@
+package ep;
+
+import java.util.List;
+import jo.d30;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class hr implements aa.a {
+    public static final hr a = new hr();
+    public static final List b = sy.d0.o("__typename", "id");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        String str = null;
+        String str2 = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                str = (String) aa.c.a.a(eVar, wVar);
+            } else {
+                if (r0 != 1) {
+                    break;
+                }
+                str2 = (String) aa.c.a.a(eVar, wVar);
+            }
+        }
+        eVar.s0();
+        bu.m c = bu.p.c(eVar, wVar);
+        if (str == null) {
+            k41.b.B(eVar, "__typename");
+            throw null;
+        }
+        if (str2 != null) {
+            return new d30(str, str2, c);
+        }
+        k41.b.B(eVar, "id");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        d30 d30Var = (d30) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(d30Var, "value");
+        fVar.z0("__typename");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, d30Var.a);
+        fVar.z0("id");
+        bVar.b(fVar, wVar, d30Var.b);
+        List list = bu.p.a;
+        bu.p.d(fVar, wVar, d30Var.c);
+    }
+}

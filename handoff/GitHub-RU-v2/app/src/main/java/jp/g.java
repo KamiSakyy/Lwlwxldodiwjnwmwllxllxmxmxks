@@ -1,0 +1,94 @@
+package jp;
+
+import aa.m;
+import aa.q0;
+import aa.r;
+import aa.s;
+import aa.t;
+import aa.u0;
+import aa.x;
+import java.util.List;
+import k71.k;
+import m10.ah;
+import m10.ch;
+import m10.eh;
+import m10.g8;
+import m10.i30;
+import m10.i8;
+import m10.j10;
+import m10.j5;
+import m10.l40;
+import m10.l5;
+import m10.mr;
+import m10.p00;
+import m10.rf0;
+import m10.wg;
+import sy.d0;
+import v8.l0;
+import x61.l;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class g {
+    public static final List a;
+
+    static {
+        eh.Companion.getClass();
+        x xVar = eh.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
+        List n = d0.n("Ref");
+        List list = aw.a.a;
+        s c = no.a.c(list, "selections", "Ref", n, list);
+        ah.Companion.getClass();
+        x xVar2 = ah.a;
+        List r = l.r(new s[]{mVar, c, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List r2 = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
+        List list2 = fq.b.a;
+        List r3 = l.r(new s[]{mVar2, no.a.c(list2, "selections", "Actor", r2, list2)});
+        s mVar3 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List n2 = d0.n("CodingAgent");
+        List list3 = ip.b.a;
+        List r4 = l.r(new s[]{mVar3, no.a.c(list3, "selections", "CodingAgent", n2, list3)});
+        ch.Companion.getClass();
+        x xVar3 = ch.a;
+        m mVar4 = new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        j5.Companion.getClass();
+        List r5 = l.r(new m[]{mVar4, new m("nodes", l0.a(j5.a), (String) null, rVar, rVar, r4)});
+        m mVar5 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        j10.Companion.getClass();
+        q0 q0Var = j10.e;
+        k.g(q0Var, "type");
+        m mVar6 = new m("defaultBranchRef", q0Var, (String) null, rVar, rVar, r);
+        wg.Companion.getClass();
+        x xVar4 = wg.a;
+        k.g(xVar4, "type");
+        m mVar7 = new m("isCopilotAgentEnabled", xVar4, (String) null, rVar, rVar, rVar);
+        l40.Companion.getClass();
+        m mVar8 = new m("owner", l0.b(l40.e), (String) null, rVar, rVar, r3);
+        l5.Companion.getClass();
+        q0 q0Var2 = l5.a;
+        k.g(q0Var2, "type");
+        i30.Companion.getClass();
+        List r6 = l.r(new m[]{mVar5, mVar6, mVar7, mVar8, new m("viewerCodingAgents", q0Var2, (String) null, rVar, no.a.s(i30.q0, new u0(1)), r5), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        s mVar9 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List n3 = d0.n("CopilotCustomAgent");
+        List list4 = ip.d.a;
+        List r7 = l.r(new s[]{mVar9, no.a.c(list4, "selections", "CopilotCustomAgent", n3, list4)});
+        List r8 = l.r(new m[]{new m("hasNextPage", l0.b(xVar4), (String) null, rVar, rVar, rVar), new m("hasPreviousPage", l0.b(xVar4), (String) null, rVar, rVar, rVar), new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
+        m mVar10 = new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        g8.Companion.getClass();
+        m mVar11 = new m("nodes", l0.a(g8.a), (String) null, rVar, rVar, r7);
+        mr.Companion.getClass();
+        List r9 = l.r(new m[]{mVar10, mVar11, new m("pageInfo", l0.b(mr.a), (String) null, rVar, rVar, r8)});
+        i8.Companion.getClass();
+        r b2 = l0.b(i8.a);
+        rf0.Companion.getClass();
+        List r11 = l.r(new m[]{new m("repositoryCustomAgents", b2, (String) null, rVar, l.r(new aa.k[]{new aa.k(rf0.L, new u0(new t("after"))), new aa.k(rf0.M, new u0(new t("first"))), new aa.k(rf0.N, new u0(new t("repoName"))), new aa.k(rf0.O, new u0(new t("repoOwner")))}), r9), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        q0 q0Var3 = i30.w0;
+        k.g(q0Var3, "type");
+        p00.Companion.getClass();
+        a = l.r(new m[]{new m("repository", q0Var3, (String) null, rVar, l.r(new aa.k[]{new aa.k(p00.l, new u0(new t("repoName"))), new aa.k(p00.m, new u0(new t("repoOwner")))}), r6), new m("viewer", l0.b(rf0.g0), (String) null, rVar, rVar, r11), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+    }
+}

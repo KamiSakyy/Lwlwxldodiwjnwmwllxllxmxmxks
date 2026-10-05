@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:tag="layout/list_item_selectable_notification_filter_0" android:background="@drawable/list_item_background" android:paddingTop="@dimen/default_margin_half" android:paddingBottom="@dimen/default_margin_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:minHeight="64.0dip" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/textPrimary" android:ellipsize="end" android:id="@id/filter_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" app:layout_constrainedWidth="true" />
+    <TextView android:textColor="@color/textTertiary" android:id="@id/count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" />
+    <ImageView android:id="@id/selected" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_check_24" android:importantForAccessibility="no" android:layout_marginStart="@dimen/default_margin_0_75x" app:tint="@color/link" />
+</LinearLayout>

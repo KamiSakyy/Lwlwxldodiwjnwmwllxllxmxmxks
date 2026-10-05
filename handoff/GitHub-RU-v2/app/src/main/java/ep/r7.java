@@ -1,0 +1,43 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class r7 implements aa.a {
+    public static final r7 a = new r7();
+    public static final List b = sy.d0.o("pageInfo", "nodes");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jo.nb nbVar = null;
+        List list = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                nbVar = (jo.nb) aa.c.c(t7.a, false).a(eVar, wVar);
+            } else {
+                if (r0 != 1) {
+                    break;
+                }
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(s7.a, true)))).a(eVar, wVar);
+            }
+        }
+        if (nbVar != null) {
+            return new jo.lb(nbVar, list);
+        }
+        k41.b.B(eVar, "pageInfo");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.lb lbVar = (jo.lb) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(lbVar, "value");
+        fVar.z0("pageInfo");
+        aa.c.c(t7.a, false).b(fVar, wVar, lbVar.a);
+        fVar.z0("nodes");
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(s7.a, true)))).b(fVar, wVar, lbVar.b);
+    }
+}

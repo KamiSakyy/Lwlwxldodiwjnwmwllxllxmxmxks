@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.compose.ui.platform.ComposeView android:id="@id/container" android:tag="layout/list_item_compose_view_container_0" android:background="@color/listItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

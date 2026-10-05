@@ -1,0 +1,28 @@
+package nb0;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class p implements aa.a {
+    public static final p a = new p();
+    public static final List b = sy.d0.n("updateMobilePushNotificationSettings");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        mb0.a0 a0Var = null;
+        while (eVar.r0(b) == 0) {
+            a0Var = (mb0.a0) aa.c.b(aa.c.c(r.a, false)).a(eVar, wVar);
+        }
+        return new mb0.y(a0Var);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        mb0.y yVar = (mb0.y) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(yVar, "value");
+        fVar.z0("updateMobilePushNotificationSettings");
+        aa.c.b(aa.c.c(r.a, false)).b(fVar, wVar, yVar.a);
+    }
+}

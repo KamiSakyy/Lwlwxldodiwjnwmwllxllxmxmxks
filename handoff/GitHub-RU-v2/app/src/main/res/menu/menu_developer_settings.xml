@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_dev" android:title="@string/developer_settings_menu_dev" app:showAsAction="never" />
+    <item android:id="@id/menu_staff" android:title="@string/developer_settings_menu_staff" app:showAsAction="never" />
+    <item android:id="@id/menu_beta" android:title="@string/developer_settings_menu_beta" app:showAsAction="never" />
+    <item android:id="@id/menu_production" android:title="@string/developer_settings_menu_production" app:showAsAction="never" />
+    <item android:id="@id/menu_clear" android:title="@string/developer_settings_menu_clear" app:showAsAction="never" />
+</menu>

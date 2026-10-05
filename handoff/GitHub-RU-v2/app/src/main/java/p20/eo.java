@@ -1,0 +1,29 @@
+package p20;
+
+import java.util.List;
+import u10.fz;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class eo implements aa.a {
+    public static final eo a = new eo();
+    public static final List b = sy.d0.n("edges");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        List list = null;
+        while (eVar.r0(b) == 0) {
+            list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(bo.a, false)))).a(eVar, wVar);
+        }
+        return new fz(list);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        fz fzVar = (fz) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(fzVar, "value");
+        fVar.z0("edges");
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(bo.a, false)))).b(fVar, wVar, fzVar.a);
+    }
+}

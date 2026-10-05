@@ -1,0 +1,52 @@
+package lz;
+
+import com.github.rudroid.copilot.h1;
+import m10.b00;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class o {
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final int d;
+    public final b00 e;
+    public final j0 f;
+    public final boolean g;
+    public final String h;
+
+    public o(String str, String str2, boolean z, int i, b00 b00Var, j0 j0Var, boolean z2, String str3) {
+        this.a = str;
+        this.b = str2;
+        this.c = z;
+        this.d = i;
+        this.e = b00Var;
+        this.f = j0Var;
+        this.g = z2;
+        this.h = str3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof o)) {
+            return false;
+        }
+        o oVar = (o) obj;
+        return k71.k.b(this.a, oVar.a) && k71.k.b(this.b, oVar.b) && this.c == oVar.c && this.d == oVar.d && this.e == oVar.e && k71.k.b(this.f, oVar.f) && this.g == oVar.g && k71.k.b(this.h, oVar.h);
+    }
+
+    public final int hashCode() {
+        return this.h.hashCode() + x.i.e((this.f.hashCode() + ((this.e.hashCode() + a0.s0.b(this.d, x.i.e(h1.i(this.a.hashCode() * 31, this.b, 31), 31, this.c), 31)) * 31)) * 31, 31, this.g);
+    }
+
+    public final String toString() {
+        StringBuilder o = a0.s0.o("OnPullRequest(id=", this.a, ", url=", this.b, ", isDraft=");
+        com.github.rudroid.m0.y(o, this.c, ", number=", this.d, ", pullRequestState=");
+        o.append(this.e);
+        o.append(", repository=");
+        o.append(this.f);
+        o.append(", isInMergeQueue=");
+        return com.github.rudroid.m0.l(o, this.g, ", titleHTML=", this.h, ")");
+    }
+}

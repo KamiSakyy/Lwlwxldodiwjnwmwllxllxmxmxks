@@ -1,0 +1,33 @@
+package jo;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class xj0 {
+    public final boolean a;
+    public final String b;
+
+    public xj0(String str, boolean z) {
+        this.a = z;
+        this.b = str;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof xj0)) {
+            return false;
+        }
+        xj0 xj0Var = (xj0) obj;
+        return this.a == xj0Var.a && k71.k.b(this.b, xj0Var.b);
+    }
+
+    public final int hashCode() {
+        int hashCode = Boolean.hashCode(this.a) * 31;
+        String str = this.b;
+        return hashCode + (str == null ? 0 : str.hashCode());
+    }
+
+    public final String toString() {
+        return com.github.rudroid.m0.f("PageInfo(hasNextPage=", ", endCursor=", this.b, ")", this.a);
+    }
+}

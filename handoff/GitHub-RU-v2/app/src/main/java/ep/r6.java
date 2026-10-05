@@ -1,0 +1,28 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class r6 implements aa.a {
+    public static final r6 a = new r6();
+    public static final List b = sy.d0.n("deleteRef");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jo.ea eaVar = null;
+        while (eVar.r0(b) == 0) {
+            eaVar = (jo.ea) aa.c.b(aa.c.c(s6.a, false)).a(eVar, wVar);
+        }
+        return new jo.da(eaVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.da daVar = (jo.da) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(daVar, "value");
+        fVar.z0("deleteRef");
+        aa.c.b(aa.c.c(s6.a, false)).b(fVar, wVar, daVar.a);
+    }
+}

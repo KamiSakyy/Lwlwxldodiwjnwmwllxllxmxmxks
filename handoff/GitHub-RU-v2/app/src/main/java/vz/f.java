@@ -1,0 +1,37 @@
+package vz;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class f {
+    public final String a;
+    public final c b;
+
+    public f(String str, c cVar) {
+        this.a = str;
+        this.b = cVar;
+    }
+
+    public static f a(f fVar, c cVar) {
+        String str = fVar.a;
+        fVar.getClass();
+        return new f(str, cVar);
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof f)) {
+            return false;
+        }
+        f fVar = (f) obj;
+        return k71.k.b(this.a, fVar.a) && k71.k.b(this.b, fVar.b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + (this.a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return "OnProjectV2View(id=" + this.a + ", groups=" + this.b + ")";
+    }
+}

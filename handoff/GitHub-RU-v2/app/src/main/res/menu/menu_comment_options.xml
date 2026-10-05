@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/comment_menu_items">
+        <item android:icon="@drawable/ic_copilot_16_padded" android:id="@id/comment_option_copilot_review_feedback" android:visible="false" android:title="@string/menu_option_copilot_code_review_feedback" app:iconTint="@color/iconPrimary">
+            <menu android:id="@id/menu_copilot_code_review_feedback_type">
+                <item android:icon="@drawable/ic_thumbs_up_16_padded" android:id="@id/comment_option_positive_feedback" android:title="@string/menu_option_positive_feedback" app:iconTint="@color/iconPrimary" />
+                <item android:icon="@drawable/ic_thumbs_down_16_padded" android:id="@id/comment_option_negative_feedback" android:title="@string/menu_option_negative_feedback" app:iconTint="@color/iconPrimary" />
+            </menu>
+        </item>
+        <item android:icon="@drawable/ic_share_16_padded" android:id="@id/comment_option_share" android:title="@string/menu_option_share" app:iconTint="@color/iconPrimary" />
+        <item android:icon="@drawable/ic_comment_16_padded" android:id="@id/comment_option_quote" android:title="@string/menu_option_quote_reply" app:iconTint="@color/iconPrimary" />
+        <item android:icon="@drawable/ic_cross_reference_16_padded" android:id="@id/comment_option_reference" android:visible="false" android:title="@string/menu_option_reference_in_new_issue" app:iconTint="@color/iconPrimary" />
+        <item android:icon="@drawable/ic_pencil_16_padded" android:id="@id/comment_option_edit" android:visible="false" android:title="@string/button_edit" app:iconTint="@color/iconPrimary" />
+        <item android:icon="@drawable/ic_eye_closed_16_padded" android:id="@id/comment_option_unminimize" android:visible="false" android:title="@string/menu_option_unminimize_comment" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+        <item android:icon="@drawable/ic_eye_closed_16_padded" android:id="@id/comment_option_minimize_nested" android:visible="false" android:title="@string/menu_option_minimize_comment" app:iconTint="@color/iconPrimary" app:showAsAction="never">
+            <menu>
+                <item android:id="@id/comment_option_minimize_spam" android:title="@string/menu_option_minimize_comment_spam" />
+                <item android:id="@id/comment_option_minimize_abuse" android:title="@string/menu_option_minimize_comment_abuse" />
+                <item android:id="@id/comment_option_minimize_off_topic" android:title="@string/menu_option_minimize_comment_off_topic" />
+                <item android:id="@id/comment_option_minimize_outdated" android:title="@string/menu_option_minimize_comment_outdated" />
+                <item android:id="@id/comment_option_minimize_duplicate" android:title="@string/menu_option_minimize_comment_duplicate" />
+                <item android:id="@id/comment_option_minimize_resolved" android:title="@string/menu_option_minimize_comment_resolved" />
+            </menu>
+        </item>
+        <item android:icon="@drawable/ic_trash_16_padded" android:id="@id/comment_option_delete" android:visible="false" android:title="@string/button_delete" app:iconTint="@color/systemRed" />
+    </group>
+    <group android:id="@id/user_menu_items">
+        <item android:icon="@drawable/ic_alert_16_padded" android:id="@id/comment_option_report" android:visible="false" android:title="@string/menu_option_report" app:iconTint="@color/systemOrange" />
+        <item android:icon="@drawable/ic_circle_slash_16_padded" android:id="@id/block_user" android:visible="false" android:title="@string/menu_option_block" app:iconTint="@color/systemRed" />
+        <item android:icon="@drawable/ic_circle_slash_16_padded" android:id="@id/comment_option_block_user" android:visible="false" android:title="@string/menu_option_block_from_organization" app:iconTint="@color/systemRed" />
+        <item android:icon="@drawable/ic_circle_slash_16_padded" android:id="@id/comment_option_unblock_user" android:visible="false" android:title="@string/menu_option_unblock_from_organization" app:iconTint="@color/iconPrimary" />
+    </group>
+</menu>

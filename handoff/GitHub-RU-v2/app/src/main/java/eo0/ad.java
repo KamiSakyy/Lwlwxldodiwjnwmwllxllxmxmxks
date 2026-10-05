@@ -1,0 +1,28 @@
+package eo0;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class ad implements aa.a {
+    public static final ad a = new ad();
+    public static final List b = sy.d0.n("discussion");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        jn0.bj bjVar = null;
+        while (eVar.r0(b) == 0) {
+            bjVar = (jn0.bj) aa.c.b(aa.c.c(zc.a, false)).a(eVar, wVar);
+        }
+        return new jn0.cj(bjVar);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jn0.cj cjVar = (jn0.cj) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(cjVar, "value");
+        fVar.z0("discussion");
+        aa.c.b(aa.c.c(zc.a, false)).b(fVar, wVar, cjVar.a);
+    }
+}

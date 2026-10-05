@@ -1,0 +1,29 @@
+package kc0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class ja0 implements aa.m0 {
+    public final la0 a;
+
+    public ja0(la0 la0Var) {
+        this.a = la0Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof ja0) && k71.k.b(this.a, ((ja0) obj).a);
+    }
+
+    public final int hashCode() {
+        la0 la0Var = this.a;
+        if (la0Var == null) {
+            return 0;
+        }
+        return la0Var.hashCode();
+    }
+
+    public final String toString() {
+        return "Data(updateUserDashboardNavLinks=" + this.a + ")";
+    }
+}

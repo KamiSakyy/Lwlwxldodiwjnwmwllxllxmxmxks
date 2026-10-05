@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:tag="layout/pr_coordinator_recycler_view_0" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.rudroid.views.LoadingViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentView="@layout/content_view_files" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <include android:id="@id/app_bar_layout" layout="@layout/app_bar_layout" />
+    <com.github.rudroid.views.MarkdownBarView android:layout_gravity="bottom" android:id="@id/markdown_bar_layout" android:visibility="gone" android:fadingEdgeLength="@dimen/default_margin_4x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:requiresFadingEdge="horizontal" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

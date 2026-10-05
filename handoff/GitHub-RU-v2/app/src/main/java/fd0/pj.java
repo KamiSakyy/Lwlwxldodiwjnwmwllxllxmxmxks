@@ -1,0 +1,58 @@
+package fd0;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class pj implements aa.a {
+    public static final pj a = new pj();
+    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        kc0.os osVar;
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        String str = null;
+        String str2 = null;
+        while (true) {
+            int r0 = eVar.r0(b);
+            if (r0 == 0) {
+                str = (String) aa.c.a.a(eVar, wVar);
+            } else {
+                if (r0 != 1) {
+                    break;
+                }
+                str2 = (String) aa.c.a.a(eVar, wVar);
+            }
+        }
+        if (str == null) {
+            throw new IllegalStateException("__typename was not found");
+        }
+        if (m71.a.v(m71.a.O(new String[]{"Repository"}), wVar.a, str, wVar.b)) {
+            eVar.s0();
+            osVar = qj.c(eVar, wVar);
+        } else {
+            osVar = null;
+        }
+        if (str2 != null) {
+            return new kc0.ns(str, str2, osVar);
+        }
+        k41.b.B(eVar, "id");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        kc0.ns nsVar = (kc0.ns) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(nsVar, "value");
+        fVar.z0("__typename");
+        aa.b bVar = aa.c.a;
+        bVar.b(fVar, wVar, nsVar.a);
+        fVar.z0("id");
+        bVar.b(fVar, wVar, nsVar.b);
+        kc0.os osVar = nsVar.c;
+        if (osVar != null) {
+            qj.d(fVar, wVar, osVar);
+        }
+    }
+}

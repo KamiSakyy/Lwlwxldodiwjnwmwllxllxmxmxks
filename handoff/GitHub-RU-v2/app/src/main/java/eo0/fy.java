@@ -1,0 +1,29 @@
+package eo0;
+
+import java.util.List;
+import jn0.gd0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class fy implements aa.a {
+    public static final fy a = new fy();
+    public static final List b = sy.d0.n("mobilePushNotificationSchedules");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        List list = null;
+        while (eVar.r0(b) == 0) {
+            list = (List) aa.c.b(aa.c.a(aa.c.c(ey.a, true))).a(eVar, wVar);
+        }
+        return new gd0(list);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        gd0 gd0Var = (gd0) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(gd0Var, "value");
+        fVar.z0("mobilePushNotificationSchedules");
+        aa.c.b(aa.c.a(aa.c.c(ey.a, true))).b(fVar, wVar, gd0Var.a);
+    }
+}

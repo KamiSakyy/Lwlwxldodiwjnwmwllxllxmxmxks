@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/reaction_background_fill_focusable" />
+    <item android:drawable="@drawable/reaction_background_stroke" />
+</layer-list>

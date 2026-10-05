@@ -1,0 +1,48 @@
+package com.github.rudroid.uitoolkit.utils.lists;
+
+import y71.n1;
+
+@c71.e(c = "com.github.rudroid.uitoolkit.utils.lists.PagerStateExtensionsKt$ObservePaging$1$1", f = "PagerStateExtensions.kt", l = {31}, m = "invokeSuspend", v = 1)
+/* loaded from: /home/user/work/p/classes3.dex */
+final class h0 extends c71.j implements j71.e {
+    public int v;
+    public final /* synthetic */ o0.b w;
+    public final /* synthetic */ j71.a x;
+    public final /* synthetic */ j71.a y;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public h0(o0.b bVar, j71.a aVar, j71.a aVar2, a71.c cVar) {
+        super(2, cVar);
+        this.w = bVar;
+        this.x = aVar;
+        this.y = aVar2;
+    }
+
+    public final a71.c r(a71.c cVar, Object obj) {
+        return new h0(this.w, this.x, this.y, cVar);
+    }
+
+    public final Object s(Object obj, Object obj2) {
+        return r((a71.c) obj2, (v71.z) obj).v(w61.a0.a);
+    }
+
+    public final Object v(Object obj) {
+        b71.a aVar = b71.a.r;
+        int i = this.v;
+        if (i == 0) {
+            sy.y.j(obj);
+            d0 d0Var = new d0(n1.p(new g0(new a0(new x(androidx.compose.runtime.t.J(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(22, this.w)))), this.x)));
+            u uVar = new u(this.y);
+            this.v = 1;
+            if (d0Var.b(uVar, this) == aVar) {
+                return aVar;
+            }
+        } else {
+            if (i != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            sy.y.j(obj);
+        }
+        return w61.a0.a;
+    }
+}

@@ -1,0 +1,27 @@
+package yi;
+
+import a0.s0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class m {
+    public final int a;
+
+    public m(int i) {
+        this.a = i;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof m) && this.a == ((m) obj).a;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.a);
+    }
+
+    public final String toString() {
+        return s0.i("ViewUpdate(viewId=", this.a, ")");
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:key="feature_feature_preview_category" app:iconSpaceReserved="false">
+        <Preference android:title="@string/setting_feature_empty_disclaimer" android:selectable="false" android:key="feature_preview_disclaimer" app:iconSpaceReserved="false" app:isPreferenceVisible="false" />
+        <SwitchPreferenceCompat android:title="Display Staff banner" android:key="switch_display_staff_banner" android:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

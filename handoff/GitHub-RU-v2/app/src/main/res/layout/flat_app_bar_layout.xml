@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:gravity="center_vertical" android:id="@id/app_bar_layout_root_view" android:tag="layout/flat_app_bar_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:touchscreenBlocksFocus="false" app:elevation="@dimen/app_bar_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" layout="@layout/toolbar_multi_line" />
+</com.google.android.material.appbar.AppBarLayout>

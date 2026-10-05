@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_plus_circle_24" android:id="@id/menu_create" android:visible="false" android:title="@string/menu_option_create" app:iconTint="@color/colorAccent" app:showAsAction="ifRoom">
+        <menu>
+            <item android:icon="@drawable/ic_issue_opened_16_padded" android:id="@id/menu_option_create_issue" android:visible="false" android:title="@string/menu_sub_option_create_issue" app:iconTint="@color/iconPrimary" />
+            <item android:icon="@drawable/ic_git_pull_request_16_padded" android:id="@id/menu_option_create_pr" android:visible="false" android:title="@string/menu_option_create_pr" app:iconTint="@color/iconPrimary" />
+            <item android:icon="@drawable/ic_copilot_16_padded" android:id="@id/menu_option_create_task" android:visible="false" android:title="@string/menu_option_create_agent_session" app:iconTint="@color/iconPrimary" />
+        </menu>
+    </item>
+    <group android:id="@id/action_group_1">
+        <item android:icon="@drawable/ic_share_16_padded" android:id="@id/share_item" android:visible="false" android:title="@string/menu_option_share" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+        <item android:icon="@drawable/ic_pin_16_padded" android:id="@id/pin_app_shortcut" android:visible="false" android:title="@string/menu_add_repo_app_shortcut" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/action_group_2">
+        <item android:icon="@drawable/ic_pencil_16_padded" android:id="@id/edit_description" android:visible="false" android:title="@string/menu_option_edit_description" app:iconTint="@color/iconPrimary" app:showAsAction="never" />
+    </group>
+    <item android:icon="@drawable/ic_report_16_padded" android:id="@id/report" android:visible="false" android:title="@string/menu_option_report" app:iconTint="@color/badge_orange_label" app:showAsAction="never" />
+    <item android:id="@id/favorite" android:visible="false" android:title="@string/menu_option_add_favorite" app:showAsAction="never" />
+</menu>

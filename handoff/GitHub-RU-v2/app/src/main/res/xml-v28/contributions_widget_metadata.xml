@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:description="@string/contribution_widget_title" android:minWidth="120.0dip" android:minHeight="40.0dip" android:updatePeriodMillis="14400000" android:initialLayout="@layout/contributions_initial_state" android:configure="com.github.rudroid.widget.contribution.ContributionWidgetSettingsActivity" android:previewImage="@drawable/contribution_image" android:resizeMode="none" android:widgetCategory="home_screen" android:widgetFeatures="reconfigurable"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

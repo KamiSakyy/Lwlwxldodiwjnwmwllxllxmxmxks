@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:tag="layout/list_item_discussion_answer_header_0" android:layout_width="fill_parent" android:layout_height="48.0dip" android:elevation="@dimen/default_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/answer_header_gradient_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/watermark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:layout_gravity="bottom|center" android:id="@id/label" android:tag="binding_1" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" style="@style/Secondary.Small" />
+    <include android:layout_width="fill_parent" android:layout_height="0.5dip" layout="@layout/list_item_divider" />
+</FrameLayout>

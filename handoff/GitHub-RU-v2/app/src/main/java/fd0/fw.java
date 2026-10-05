@@ -1,0 +1,34 @@
+package fd0;
+
+import java.util.List;
+import kc0.va0;
+import kc0.wa0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public final class fw implements aa.a {
+    public static final fw a = new fw();
+    public static final List b = sy.d0.n("viewer");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        wa0 wa0Var = null;
+        while (eVar.r0(b) == 0) {
+            wa0Var = (wa0) aa.c.c(gw.a, false).a(eVar, wVar);
+        }
+        if (wa0Var != null) {
+            return new va0(wa0Var);
+        }
+        k41.b.B(eVar, "viewer");
+        throw null;
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        va0 va0Var = (va0) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(va0Var, "value");
+        fVar.z0("viewer");
+        aa.c.c(gw.a, false).b(fVar, wVar, va0Var.a);
+    }
+}

@@ -1,0 +1,69 @@
+package x80;
+
+import aa.a0;
+import aa.q0;
+import aa.r;
+import aa.s;
+import aa.u0;
+import aa.x;
+import hc0.ap;
+import hc0.bb;
+import hc0.dq;
+import hc0.ew;
+import hc0.fb;
+import hc0.fq;
+import hc0.jn;
+import hc0.xa;
+import hc0.zk;
+import java.util.List;
+import v8.l0;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public abstract class g {
+    public static final List a;
+
+    static {
+        fb.Companion.getClass();
+        x xVar = fb.a;
+        r b = l0.b(xVar);
+        x61.r rVar = x61.r.r;
+        s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
+        bb.Companion.getClass();
+        x xVar2 = bb.a;
+        s mVar2 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        s mVar3 = new aa.m("login", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
+        List list = f30.b.a;
+        List r2 = x61.l.r(new s[]{mVar, mVar2, mVar3, no.a.c(list, "selections", "Actor", r, list)});
+        List r3 = x61.l.r(new aa.m[]{new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        aa.m mVar4 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        aa.m mVar5 = new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
+        ew.Companion.getClass();
+        aa.m mVar6 = new aa.m("url", l0.b(ew.a), (String) null, rVar, rVar, rVar);
+        xa.Companion.getClass();
+        x xVar3 = xa.a;
+        aa.m mVar7 = new aa.m("isInOrganization", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        dq.Companion.getClass();
+        aa.m mVar8 = new aa.m("owner", l0.b(dq.a), (String) null, rVar, rVar, r2);
+        aa.m mVar9 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
+        fq.Companion.getClass();
+        a0 a0Var = fq.s;
+        k71.k.g(a0Var, "type");
+        aa.m mVar10 = new aa.m("viewerPermission", a0Var, (String) null, rVar, rVar, rVar);
+        aa.m mVar11 = new aa.m("squashMergeAllowed", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        aa.m mVar12 = new aa.m("rebaseMergeAllowed", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        aa.m mVar13 = new aa.m("mergeCommitAllowed", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        aa.m mVar14 = new aa.m("viewerDefaultCommitEmail", xVar, (String) null, rVar, rVar, rVar);
+        zk.Companion.getClass();
+        aa.m mVar15 = new aa.m("viewerDefaultMergeMethod", l0.b(zk.s), (String) null, rVar, rVar, rVar);
+        aa.m mVar16 = new aa.m("viewerPossibleCommitEmails", l0.a(l0.b(xVar)), (String) null, rVar, rVar, rVar);
+        r b2 = l0.b(xVar3);
+        ap.Companion.getClass();
+        aa.m mVar17 = new aa.m("planSupports", b2, (String) null, rVar, no.a.s(ap.J, new u0("TEAM_REVIEW_REQUESTS")), rVar);
+        aa.m mVar18 = new aa.m("allowUpdateBranch", l0.b(xVar3), (String) null, rVar, rVar, rVar);
+        jn.Companion.getClass();
+        q0 q0Var = jn.b;
+        k71.k.g(q0Var, "type");
+        a = x61.l.r(new aa.m[]{mVar4, mVar5, mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, mVar18, new aa.m("defaultBranchRef", q0Var, (String) null, rVar, rVar, r3)});
+    }
+}

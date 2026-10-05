@@ -1,0 +1,41 @@
+package k81;
+
+import java.util.Iterator;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.encoding.Decoder;
+
+/* loaded from: /home/user/work/p/classes5.dex */
+public abstract class a implements KSerializer {
+    public abstract Object a();
+
+    public abstract int b(Object obj);
+
+    public abstract Iterator c(Object obj);
+
+    public abstract int d(Object obj);
+
+    @Override // kotlinx.serialization.KSerializer
+    public Object deserialize(Decoder decoder) {
+        return e(decoder);
+    }
+
+    public final Object e(Decoder decoder) {
+        Object a = a();
+        int b = b(a);
+        j81.a b2 = decoder.b(getDescriptor());
+        while (true) {
+            int t = b2.t(getDescriptor());
+            if (t == -1) {
+                b2.g(getDescriptor());
+                return h(a);
+            }
+            f(b2, t + b, a);
+        }
+    }
+
+    public abstract void f(j81.a aVar, int i, Object obj);
+
+    public abstract Object g(Object obj);
+
+    public abstract Object h(Object obj);
+}

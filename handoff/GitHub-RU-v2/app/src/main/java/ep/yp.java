@@ -1,0 +1,28 @@
+package ep;
+
+import java.util.List;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class yp implements aa.a {
+    public static final yp a = new yp();
+    public static final List b = sy.d0.n("nodes");
+
+    public final Object a(ea.e eVar, aa.w wVar) {
+        k71.k.g(eVar, "reader");
+        k71.k.g(wVar, "customScalarAdapters");
+        List list = null;
+        while (eVar.r0(b) == 0) {
+            list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(eq.a, true)))).a(eVar, wVar);
+        }
+        return new jo.d10(list);
+    }
+
+    public final void b(ea.f fVar, aa.w wVar, Object obj) {
+        jo.d10 d10Var = (jo.d10) obj;
+        k71.k.g(fVar, "writer");
+        k71.k.g(wVar, "customScalarAdapters");
+        k71.k.g(d10Var, "value");
+        fVar.z0("nodes");
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(eq.a, true)))).b(fVar, wVar, d10Var.a);
+    }
+}

@@ -1,0 +1,114 @@
+package com.github.rudroid.searchandfilter.complexfilter.project;
+
+import androidx.lifecycle.l1;
+import androidx.lifecycle.o1;
+import androidx.lifecycle.u1;
+
+/* loaded from: /home/user/work/p/classes3.dex */
+public final class SelectableOwnerLegacyProjectsFragment extends Hilt_SelectableOwnerLegacyProjectsFragment<o> {
+    public static final a Companion = new a();
+    public final l1 H0;
+    public final com.github.rudroid.searchandfilter.complexfilter.project.b I0;
+
+    public static final class a {
+    }
+
+    public static final class b extends k71.l implements j71.a {
+        public final Object a() {
+            throw null;
+        }
+    }
+
+    public static final class c extends k71.l implements j71.a {
+        public final Object a() {
+            throw null;
+        }
+    }
+
+    public static final class d extends k71.l implements j71.a {
+        public final Object a() {
+            throw null;
+        }
+    }
+
+    public static final class e extends k71.l implements j71.a {
+        public final /* synthetic */ com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j s;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public e(com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j jVar) {
+            super(0);
+            this.s = jVar;
+        }
+
+        public final Object a() {
+            return ((SelectableOwnerLegacyProjectsFragment) this.s.s).j4();
+        }
+    }
+
+    public static final class f extends k71.l implements j71.a {
+        public final /* synthetic */ Object s;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public f(w61.h hVar) {
+            super(0);
+            this.s = hVar;
+        }
+
+        /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, w61.h] */
+        public final Object a() {
+            return ((u1) this.s.getValue()).K0();
+        }
+    }
+
+    public static final class g extends k71.l implements j71.a {
+        public final /* synthetic */ Object s;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public g(w61.h hVar) {
+            super(0);
+            this.s = hVar;
+        }
+
+        /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, w61.h] */
+        public final Object a() {
+            androidx.lifecycle.r rVar = (u1) this.s.getValue();
+            androidx.lifecycle.r rVar2 = rVar instanceof androidx.lifecycle.r ? rVar : null;
+            return rVar2 != null ? rVar2.g0() : t6.a.b;
+        }
+    }
+
+    public static final class h extends k71.l implements j71.a {
+        public final /* synthetic */ Object t;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public h(w61.h hVar) {
+            super(0);
+            this.t = hVar;
+        }
+
+        /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, w61.h] */
+        public final Object a() {
+            o1 f0;
+            androidx.lifecycle.r rVar = (u1) this.t.getValue();
+            androidx.lifecycle.r rVar2 = rVar instanceof androidx.lifecycle.r ? rVar : null;
+            return (rVar2 == null || (f0 = rVar2.f0()) == null) ? SelectableOwnerLegacyProjectsFragment.this.f0() : f0;
+        }
+    }
+
+    public SelectableOwnerLegacyProjectsFragment() {
+        k71.x.a(com.github.rudroid.searchandfilter.q.class);
+        w61.h s = sy.w.s(w61.i.s, new e(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(7, this)));
+        this.H0 = new l1(k71.x.a(i.class), new f(s), new h(s), new g(s));
+        this.I0 = new com.github.rudroid.searchandfilter.complexfilter.project.b(this);
+    }
+
+    @Override // com.github.rudroid.searchandfilter.complexfilter.SearchAndFilterBaseFragment
+    public final com.github.rudroid.searchandfilter.complexfilter.e0 H4() {
+        return this.I0;
+    }
+
+    @Override // com.github.rudroid.searchandfilter.complexfilter.SearchAndFilterBaseFragment
+    public final com.github.rudroid.searchandfilter.complexfilter.d0 I4() {
+        return (i) this.H0.getValue();
+    }
+}

@@ -1,0 +1,81 @@
+package pz0;
+
+/* loaded from: /home/user/work/p/classes4.dex */
+public abstract class hf {
+    public static final gf Companion = new gf();
+    public static final aa.x0 a;
+
+    static {
+        s0.Companion.getClass();
+        r0 r0Var = s0.Companion;
+        k1.Companion.getClass();
+        j1 j1Var = k1.Companion;
+        a4.Companion.getClass();
+        z3 z3Var = a4.Companion;
+        q4.Companion.getClass();
+        p4 p4Var = q4.Companion;
+        g5.Companion.getClass();
+        f5 f5Var = g5.Companion;
+        u5.Companion.getClass();
+        t5 t5Var = u5.Companion;
+        w5.Companion.getClass();
+        v5 v5Var = w5.Companion;
+        c7.Companion.getClass();
+        b7 b7Var = c7.Companion;
+        q8.Companion.getClass();
+        p8 p8Var = q8.Companion;
+        z9.Companion.getClass();
+        y9 y9Var = z9.Companion;
+        pe.Companion.getClass();
+        oe oeVar = pe.Companion;
+        yf.Companion.getClass();
+        xf xfVar = yf.Companion;
+        mg.Companion.getClass();
+        lg lgVar = mg.Companion;
+        sh.Companion.getClass();
+        rh rhVar = sh.Companion;
+        gi.Companion.getClass();
+        fi fiVar = gi.Companion;
+        ej.Companion.getClass();
+        dj djVar = ej.Companion;
+        qk.Companion.getClass();
+        pk pkVar = qk.Companion;
+        jm.Companion.getClass();
+        im imVar = jm.Companion;
+        lm.Companion.getClass();
+        km kmVar = lm.Companion;
+        fn.Companion.getClass();
+        en enVar = fn.Companion;
+        sv.Companion.getClass();
+        rv rvVar = sv.Companion;
+        vw.Companion.getClass();
+        uw uwVar = vw.Companion;
+        xw.Companion.getClass();
+        ww wwVar = xw.Companion;
+        dx.Companion.getClass();
+        cx cxVar = dx.Companion;
+        p30.Companion.getClass();
+        o30 o30Var = p30.Companion;
+        r30.Companion.getClass();
+        q30 q30Var = r30.Companion;
+        d40.Companion.getClass();
+        c40 c40Var = d40.Companion;
+        b50.Companion.getClass();
+        a50 a50Var = b50.Companion;
+        j50.Companion.getClass();
+        i50 i50Var = j50.Companion;
+        x50.Companion.getClass();
+        w50 w50Var = x50.Companion;
+        b60.Companion.getClass();
+        a60 a60Var = b60.Companion;
+        j60.Companion.getClass();
+        i60 i60Var = j60.Companion;
+        p60.Companion.getClass();
+        o60 o60Var = p60.Companion;
+        t60.Companion.getClass();
+        s60 s60Var = t60.Companion;
+        a90.Companion.getClass();
+        z80 z80Var = a90.Companion;
+        a = new aa.x0("IssueTimelineItems");
+    }
+}
