@@ -1,0 +1,93 @@
+name: "Этап 1 — Полный анализ исходников"
+
+on:
+  push:
+    branches:
+      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+    paths:
+      - ".github/workflows/01-analysis.yml"
+      - "tools/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    name: "Распаковка и анализ исходников"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: "Checkout рабочей ветки"
+        uses: actions/checkout@v4
+        with:
+          ref: "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: "Установка 7-Zip"
+        run: |
+          if ! command -v 7z >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq p7zip-full
+          fi
+          7z | head -3
+
+      - name: "Распаковка архивов (7z -> zip -> файлы)"
+        run: |
+          set -e
+          mkdir -p extracted stage1 analysis
+          echo "=== Внешний 7z-архив ==="
+          7z x -y -ostage1 "GitHub-RU-Source legal.zip.zip" | tail -5
+          echo "=== Что внутри ==="
+          find stage1 -maxdepth 2 -type f -printf "%s\t%p\n" | sort -rn | head -20
+          # Распаковываем все zip, найденные внутри
+          find stage1 -type f -name "*.zip" -print0 | while IFS= read -r -d '' z; do
+            name="$(basename "$z" .zip)"
+            echo "=== Распаковка вложенного zip: $z ==="
+            mkdir -p "extracted/$name"
+            unzip -q -o "$z" -d "extracted/$name/" || true
+          done
+          # Если после 7z сразу лежали файлы без zip — переносим их тоже
+          if [ -z "$(find extracted -type f | head -1)" ]; then
+            cp -a stage1/. extracted/
+          fi
+          echo "=== Итог распаковки ==="
+          find extracted -type f | wc -l
+          du -sh extracted
+
+      - name: "Полный анализ исходников (Python)"
+        run: |
+          python3 tools/analyze_sources.py extracted analysis
+          echo "=== Отчёт готов ==="
+          ls -la analysis/
+
+      - name: "Загрузка извлечённых исходников как артефакта"
+        uses: actions/upload-artifact@v4
+        with:
+          name: extracted-source
+          path: extracted/
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: "Загрузка отчёта как артефакта"
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-report
+          path: analysis/
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: "Коммит отчёта в рабочую ветку"
+        run: |
+          set -e
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          git add analysis/
+          if git diff --cached --quiet; then
+            echo "Нет изменений для коммита"
+          else
+            git commit -m "Этап 1: полный анализ исходников + поиск причин нагрева [skip ci]"
+            git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          fi
