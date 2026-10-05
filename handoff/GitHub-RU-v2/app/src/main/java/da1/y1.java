@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum y1 extends l3 {
+final class y1 extends l3 {
     public y1() {
         super("BeforeAttributeValue", 36);
     }

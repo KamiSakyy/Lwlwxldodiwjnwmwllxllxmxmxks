@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum l extends b0 {
+final class l extends b0 {
     public l() {
         super("AfterBody", 18);
     }

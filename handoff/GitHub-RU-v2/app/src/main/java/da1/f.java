@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum f extends b0 {
+final class f extends b0 {
     public f() {
         super("InTableBody", 12);
     }

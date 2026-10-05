@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum n extends b0 {
+final class n extends b0 {
     public n() {
         super("InFrameset", 19);
     }

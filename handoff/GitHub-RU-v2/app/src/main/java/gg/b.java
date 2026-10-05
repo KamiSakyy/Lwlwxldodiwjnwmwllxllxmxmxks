@@ -25,12 +25,6 @@ public final class b extends n1 {
         void a(int i);
     }
 
-    static {
-        e mVar = new m(b.class, "dayName", "getDayName()Ljava/lang/String;", 0);
-        x.a.getClass();
-        y = new e[]{mVar};
-    }
-
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

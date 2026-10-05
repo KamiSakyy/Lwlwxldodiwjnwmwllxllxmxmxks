@@ -1,55 +1,21 @@
 # ОТЧЁТ О ВОССТАНОВЛЕНИИ ИСХОДНИКА (Этап 5)
 
-_Сгенерировано: 2026-10-05T13:48:43.947865Z, проверка настоящим javac (JDK 17)._
+_Сгенерировано: 2026-10-05T14:09:40.392943Z, проверка настоящим javac (JDK 17)._
 
 ## Итог
-**Осталось ошибок: 381** (уникальных файл+ошибка) в 98 файлах.
+**Осталось ошибок: 3** (уникальных файл+ошибка) в 1 файлах.
 
 - Ошибок ДО восстановления: **959**
-- Ошибок ПОСЛЕ восстановления: **381**
-- Исправлено: **578**
+- Ошибок ПОСЛЕ восстановления: **3**
+- Исправлено: **956**
 
 ## Остаточные ошибки по типам (топ-30)
-- 95 × `'{' expected`
-- 95 × `enum constant expected here`
-- 95 × `reached end of file while parsing`
-- 91 × `invalid method declaration; return type required`
-- 2 × `initializers not allowed in interfaces`
 - 1 × `')' expected`
 - 1 × `';' expected`
 - 1 × `not a statement`
 
 ## Файлы с остаточными ошибками (топ-30)
-- `app/src/main/java/da1/a1.java` — 4
-- `app/src/main/java/da1/a2.java` — 4
-- `app/src/main/java/da1/a3.java` — 4
-- `app/src/main/java/da1/b1.java` — 4
-- `app/src/main/java/da1/b2.java` — 4
-- `app/src/main/java/da1/b3.java` — 4
-- `app/src/main/java/da1/c.java` — 4
-- `app/src/main/java/da1/c1.java` — 4
-- `app/src/main/java/da1/c2.java` — 4
-- `app/src/main/java/da1/c3.java` — 4
-- `app/src/main/java/da1/d.java` — 4
-- `app/src/main/java/da1/d1.java` — 4
-- `app/src/main/java/da1/d2.java` — 4
-- `app/src/main/java/da1/d3.java` — 4
-- `app/src/main/java/da1/e.java` — 4
-- `app/src/main/java/da1/e1.java` — 4
-- `app/src/main/java/da1/e2.java` — 4
-- `app/src/main/java/da1/e3.java` — 4
-- `app/src/main/java/da1/f.java` — 4
-- `app/src/main/java/da1/f1.java` — 4
-- `app/src/main/java/da1/f2.java` — 4
-- `app/src/main/java/da1/f3.java` — 4
-- `app/src/main/java/da1/g.java` — 4
-- `app/src/main/java/da1/g1.java` — 4
-- `app/src/main/java/da1/g2.java` — 4
-- `app/src/main/java/da1/g3.java` — 4
-- `app/src/main/java/da1/h.java` — 4
-- `app/src/main/java/da1/h1.java` — 4
-- `app/src/main/java/da1/h2.java` — 4
-- `app/src/main/java/da1/h3.java` — 4
+- `app/src/main/java/v41/l.java` — 3
 
 ## Как проверялось
 1. Распаковка исходника из архива.

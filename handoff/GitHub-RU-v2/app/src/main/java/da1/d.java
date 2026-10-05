@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum d extends b0 {
+final class d extends b0 {
     public d() {
         super("InCaption", 10);
     }

@@ -720,16 +720,6 @@ public interface v {
             /* renamed from: t, reason: collision with root package name */
             public static final /* synthetic */ a[] f28759t;
 
-            static {
-                a aVar = new a("RECENT_SEARCH", 0);
-                f28757r = aVar;
-                a aVar2 = new a("UNKNOWN", 1);
-                f28758s = aVar2;
-                a[] aVarArr = {aVar, aVar2};
-                f28759t = aVarArr;
-                l0.t(aVarArr);
-            }
-
             public static a valueOf(String str) {
                 return (a) Enum.valueOf(a.class, str);
             }

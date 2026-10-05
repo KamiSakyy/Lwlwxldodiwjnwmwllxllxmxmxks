@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum f2 extends l3 {
+final class f2 extends l3 {
     public f2() {
         super("BogusComment", 42);
     }

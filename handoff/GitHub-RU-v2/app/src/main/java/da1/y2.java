@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum y2 extends l3 {
+final class y2 extends l3 {
     public y2() {
         super("AfterDoctypePublicIdentifier", 59);
     }

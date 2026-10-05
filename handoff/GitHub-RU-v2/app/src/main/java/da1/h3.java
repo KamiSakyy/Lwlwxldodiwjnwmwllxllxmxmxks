@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum h3 extends l3 {
+final class h3 extends l3 {
     public h3() {
         super("ScriptData", 5);
     }

@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum i extends b0 {
+final class i extends b0 {
     public i() {
         super("InSelect", 15);
     }

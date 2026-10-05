@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum h extends b0 {
+final class h extends b0 {
     public h() {
         super("InCell", 14);
     }

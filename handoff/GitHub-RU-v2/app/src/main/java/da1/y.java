@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum y extends b0 {
+final class y extends b0 {
     public y() {
         super("Text", 7);
     }

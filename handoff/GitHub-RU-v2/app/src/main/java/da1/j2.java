@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum j2 extends l3 {
+final class j2 extends l3 {
     public j2() {
         super("CommentStartDash", 46);
     }

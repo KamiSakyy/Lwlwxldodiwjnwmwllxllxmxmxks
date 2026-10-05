@@ -215,13 +215,6 @@ public class GitHubWebView extends j {
         }
     }
 
-    static {
-        r71.e mVar = new k71.m(GitHubWebView.class, "scrollToAnchor", "getScrollToAnchor()Ljava/lang/String;", 0);
-        x.a.getClass();
-        G = new r71.e[]{mVar};
-        Companion = new b();
-    }
-
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public GitHubWebView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 4);

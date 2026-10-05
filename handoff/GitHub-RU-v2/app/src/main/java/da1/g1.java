@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum g1 extends l3 {
+final class g1 extends l3 {
     public g1() {
         super("ScriptDataEscapeStart", 19);
     }

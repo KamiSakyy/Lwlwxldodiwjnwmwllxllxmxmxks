@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum f3 extends l3 {
+final class f3 extends l3 {
     public f3() {
         super("BogusDoctype", 66);
     }

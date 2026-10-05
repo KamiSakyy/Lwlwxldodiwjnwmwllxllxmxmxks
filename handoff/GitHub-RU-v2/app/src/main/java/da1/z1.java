@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum z1 extends l3 {
+final class z1 extends l3 {
     public z1() {
         super("AttributeValue_doubleQuoted", 37);
     }

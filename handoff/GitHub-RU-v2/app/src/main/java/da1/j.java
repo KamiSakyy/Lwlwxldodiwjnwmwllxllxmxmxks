@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum j extends b0 {
+final class j extends b0 {
     public j() {
         super("InSelectInTable", 16);
     }

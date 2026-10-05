@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum e1 extends l3 {
+final class e1 extends l3 {
     public e1() {
         super("ScriptDataEndTagName", 18);
     }

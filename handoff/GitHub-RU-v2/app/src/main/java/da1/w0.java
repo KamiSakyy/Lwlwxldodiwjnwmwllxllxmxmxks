@@ -3,7 +3,7 @@ package da1;
 import java.util.Locale;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum w0 extends l3 {
+final class w0 extends l3 {
     public w0() {
         super("RcdataLessthanSign", 10);
     }

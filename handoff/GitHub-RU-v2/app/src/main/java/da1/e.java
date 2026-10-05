@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum e extends b0 {
+final class e extends b0 {
     public e() {
         super("InColumnGroup", 11);
     }

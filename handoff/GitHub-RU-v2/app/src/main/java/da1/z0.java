@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum z0 extends l3 {
+final class z0 extends l3 {
     public z0() {
         super("RawtextLessthanSign", 13);
     }

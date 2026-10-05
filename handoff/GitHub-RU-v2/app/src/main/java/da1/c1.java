@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum c1 extends l3 {
+final class c1 extends l3 {
     public c1() {
         super("ScriptDataLessthanSign", 16);
     }

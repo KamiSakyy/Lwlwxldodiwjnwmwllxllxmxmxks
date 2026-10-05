@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum a3 extends l3 {
+final class a3 extends l3 {
     public a3() {
         super("AfterDoctypeSystemKeyword", 61);
     }

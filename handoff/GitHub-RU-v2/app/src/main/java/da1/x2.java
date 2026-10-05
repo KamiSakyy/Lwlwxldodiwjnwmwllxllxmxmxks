@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum x2 extends l3 {
+final class x2 extends l3 {
     public x2() {
         super("Rawtext", 4);
     }

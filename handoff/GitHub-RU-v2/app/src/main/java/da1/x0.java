@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum x0 extends l3 {
+final class x0 extends l3 {
     public x0() {
         super("RCDATAEndTagOpen", 11);
     }

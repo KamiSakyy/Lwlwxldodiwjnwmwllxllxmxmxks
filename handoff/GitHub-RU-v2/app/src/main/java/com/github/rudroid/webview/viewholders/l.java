@@ -20,12 +20,6 @@ public final class l extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
     public interface a {
     }
 
-    static {
-        r71.e mVar = new k71.m(l.class, "webViewLoadedListener", "getWebViewLoadedListener()Lcom/github/rudroid/webview/viewholders/GitHubWebView$OnWebViewLoadedListener;", 0);
-        x.a.getClass();
-        y = new r71.e[]{mVar};
-    }
-
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public l(xg xgVar, com.github.rudroid.webview.adapters.i iVar, u0 u0Var) {
         super(xgVar);

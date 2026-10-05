@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum j1 extends l3 {
+final class j1 extends l3 {
     public j1() {
         super("ScriptDataEscapedDash", 22);
     }

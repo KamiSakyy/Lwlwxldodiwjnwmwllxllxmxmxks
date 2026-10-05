@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum w1 extends l3 {
+final class w1 extends l3 {
     public w1() {
         super("AttributeName", 34);
     }

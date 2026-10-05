@@ -3,7 +3,7 @@ package da1;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum c extends b0 {
+final class c extends b0 {
     public c() {
         super("InTableText", 9);
     }

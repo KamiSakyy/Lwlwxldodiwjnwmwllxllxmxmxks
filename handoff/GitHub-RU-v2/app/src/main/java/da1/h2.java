@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum h2 extends l3 {
+final class h2 extends l3 {
     public h2() {
         super("MarkupProcessingOpen", 44);
     }

@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum j3 extends l3 {
+final class j3 extends l3 {
     public j3() {
         super("TagOpen", 7);
     }

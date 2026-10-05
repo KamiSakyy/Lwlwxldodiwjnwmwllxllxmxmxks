@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum k extends b0 {
+final class k extends b0 {
     public k() {
         super("InTemplate", 17);
     }

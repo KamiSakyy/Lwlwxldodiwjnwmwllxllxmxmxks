@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum q extends b0 {
+final class q extends b0 {
     public q() {
         super("AfterAfterFrameset", 22);
     }

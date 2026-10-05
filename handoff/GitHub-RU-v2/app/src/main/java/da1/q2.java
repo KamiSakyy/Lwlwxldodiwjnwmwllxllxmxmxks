@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum q2 extends l3 {
+final class q2 extends l3 {
     public q2() {
         super("BeforeDoctypeName", 52);
     }

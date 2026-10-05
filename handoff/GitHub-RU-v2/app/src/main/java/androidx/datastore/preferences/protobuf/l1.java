@@ -1,5 +1,5 @@
 package androidx.datastore.preferences.protobuf;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public enum l1 extends n1 {
+final class l1 extends n1 {
 }

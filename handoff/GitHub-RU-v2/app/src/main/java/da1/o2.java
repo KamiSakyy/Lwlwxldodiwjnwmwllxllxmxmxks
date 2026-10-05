@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum o2 extends l3 {
+final class o2 extends l3 {
     public o2() {
         super("CommentEndBang", 50);
     }

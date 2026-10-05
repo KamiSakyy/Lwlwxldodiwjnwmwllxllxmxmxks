@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum m2 extends l3 {
+final class m2 extends l3 {
     public m2() {
         super("CharacterReferenceInRcdata", 3);
     }

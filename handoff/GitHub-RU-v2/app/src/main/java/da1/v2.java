@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum v2 extends l3 {
+final class v2 extends l3 {
     public v2() {
         super("DoctypePublicIdentifier_doubleQuoted", 57);
     }

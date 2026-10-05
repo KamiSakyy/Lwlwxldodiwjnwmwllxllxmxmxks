@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum x extends b0 {
+final class x extends b0 {
     public x() {
         super("InBody", 6);
     }

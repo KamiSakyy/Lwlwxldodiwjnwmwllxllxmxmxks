@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum e2 extends l3 {
+final class e2 extends l3 {
     public e2() {
         super("SelfClosingStartTag", 41);
     }

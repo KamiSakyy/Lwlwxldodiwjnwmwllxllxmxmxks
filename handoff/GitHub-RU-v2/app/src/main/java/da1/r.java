@@ -3,7 +3,7 @@ package da1;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public enum r extends b0 {
+final class r extends b0 {
     public r() {
         super("ForeignContent", 23);
     }
