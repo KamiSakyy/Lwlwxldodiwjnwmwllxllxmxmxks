@@ -38,7 +38,7 @@ report_failure() {
 trap report_failure EXIT
 stage "compile JVM crypto and APK smoke harness"
 
-javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \\
+javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
   "$ROOT/scripts/jvm-stubs/android/util/Base64.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/BinaryXmlPatcher.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/IconResourceLocator.java" \
