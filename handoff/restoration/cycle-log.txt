@@ -1,4 +1,6 @@
-Цикл восстановления Mon Oct  5 19:48:20 UTC 2026
+Цикл восстановления Mon Oct  5 20:53:36 UTC 2026
+=== ОПРЕДЕЛЕНИЕ ТИПОВ СТАБОВ ПО ДЕРЕВУ ===
+Стабов переведено в interface: 39; конфликтов (оба вида): 836
 =========== РАУНД 1 ===========
 --- ДИАГНОСТИКА: bootclasspath ---
 -rwxrwxrwx 1 root root 27768026 Sep 27 21:31 /usr/local/lib/android/sdk/platforms/android-36/android.jar
@@ -27,19 +29,20 @@ public final class c implements i0, t6.b, bm.k, com.google.android.gms.measureme
                                                                                                 ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
 public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
-                             ^
+                                                     ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
-Раунд 1: ошибок 64520
+Раунд 1: ошибок 64497
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 1 (уникальных отсутствующих: 1); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48660
+Плоских стабов создано: 1 (уникальных отсутствующих: 1); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48658
 Стабов, требующих interface: 0
-Конвертировано в interface: 84; откат в class: 0; не тронуто (extends): 5; интерфейсов очищено от конструкторов: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 7; интерфейсов очищено от конструкторов: 0
 Файлов теперь: 44475
 =========== РАУНД 2 ===========
 Раунд 2: ошибок 64497
+Нет прогресса (1 из 2)
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
@@ -50,16 +53,5 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
 Файлов теперь: 44475
 =========== РАУНД 3 ===========
 Раунд 3: ошибок 64497
-Нет прогресса (1 из 2)
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
-  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
-Индексация дерева...
-Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48658
-Стабов, требующих interface: 0
-Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 7; интерфейсов очищено от конструкторов: 0
-Файлов теперь: 44475
-=========== РАУНД 4 ===========
-Раунд 4: ошибок 64497
 Нет прогресса (2 из 2)
 === Прогресс остановился ===

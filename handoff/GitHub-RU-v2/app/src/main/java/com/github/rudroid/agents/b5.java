@@ -4,7 +4,5 @@ package com.github.rudroid.agents;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class b5<T1,T2,T3,T4> {
-    public b5() {
-    }
+public interface b5<T1,T2,T3,T4> {
 }

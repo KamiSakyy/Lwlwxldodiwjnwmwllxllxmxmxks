@@ -260822,7 +260822,7 @@ public final class g2 implements z {
         WeakHashMap weakHashMap = c1.a;
                                     ^
   symbol:   variable a
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y51/c.java:83: error: cannot find symbol
         return ((a7.d) this.s).a;
                               ^
@@ -270507,7 +270507,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
         WeakHashMap weakHashMap = c1.a;
                                     ^
   symbol:   variable a
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:307: error: cannot find symbol
         return ((o.a) this.s).g(bVar, menu);
                              ^
@@ -270685,17 +270685,9 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
                                                                                                     ^
   symbol:   variable b
   location: interface b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:678: error: constructor b3 in class b3<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:678: error: b3 is abstract; cannot be instantiated
                                 b3 b3Var = new b3(1, nanos, fVar2);
                                            ^
-  required: no arguments
-  found:    int,long,f
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class b3
-    T2 extends Object declared in class b3
-    T3 extends Object declared in class b3
-    T4 extends Object declared in class b3
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:679: error: cannot find symbol
                                 cVar.getClass();
                                     ^
@@ -270777,7 +270769,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
         WeakHashMap weakHashMap = c1.a;
                                     ^
   symbol:   variable a
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:744: error: cannot find symbol
         zVar.N();
             ^
@@ -282025,42 +282017,42 @@ public final class u1 extends f5 {
         c1.m(viewPager2, R.id.accessibilityActionPageLeft);
           ^
   symbol:   method m(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:582: error: cannot find symbol
         c1.i(viewPager2, 0);
           ^
   symbol:   method i(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:583: error: cannot find symbol
         c1.m(viewPager2, R.id.accessibilityActionPageRight);
           ^
   symbol:   method m(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:584: error: cannot find symbol
         c1.i(viewPager2, 0);
           ^
   symbol:   method i(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:585: error: cannot find symbol
         c1.m(viewPager2, R.id.accessibilityActionPageUp);
           ^
   symbol:   method m(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:586: error: cannot find symbol
         c1.i(viewPager2, 0);
           ^
   symbol:   method i(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:587: error: cannot find symbol
         c1.m(viewPager2, R.id.accessibilityActionPageDown);
           ^
   symbol:   method m(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:588: error: cannot find symbol
         c1.i(viewPager2, 0);
           ^
   symbol:   method i(ViewPager2,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/r.java:589: error: cannot find symbol
         if (viewPager2.getAdapter() == null || (k = viewPager2.getAdapter().k()) == 0 || !viewPager2.I) {
                       ^
@@ -284956,7 +284948,7 @@ public final class u1 extends f5 {
             View.AccessibilityDelegate e5 = c1.e(view);
                                               ^
   symbol:   method e(View)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:74: error: incompatible types: AccessibilityDelegate cannot be converted to a
             b bVar = e5 == null ? null : e5 instanceof a ? ((a) e5).f361a : new b(e5);
                                          ^
@@ -284973,12 +284965,12 @@ public final class u1 extends f5 {
             c1.p(view, bVar);
               ^
   symbol:   method p(View,b)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a5/q0.java:80: error: cannot find symbol
             c1.i(view, this.f468t);
               ^
   symbol:   method i(View,int)
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/emoji2/text/flatbuffer/b.java:6: error: b is not abstract and does not override abstract method g(Object,Object) in q0
 public final class b extends q0 {
              ^
@@ -285925,17 +285917,9 @@ public final class b extends q0 {
                 ^
   symbol:   class Object
   location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:114: error: constructor i1 in class i1<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:114: error: i1 is abstract; cannot be instantiated
                     i1 i1Var = new i1(0, f1Var, f1Var2);
                                ^
-  required: no arguments
-  found:    int,d1.f1,androidx.compose.runtime.f1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class i1
-    T2 extends Object declared in class i1
-    T3 extends Object declared in class i1
-    T4 extends Object declared in class i1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:115: error: cannot find symbol
                     sVar4.n0(i1Var);
                          ^
@@ -286042,17 +286026,9 @@ public final class b extends q0 {
                 ^
   symbol:   class Object
   location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:150: error: constructor i1 in class i1<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:150: error: i1 is abstract; cannot be instantiated
                     i1 i1Var2 = new i1(2, z1Var, f1Var3);
                                 ^
-  required: no arguments
-  found:    int,z1,f1
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class i1
-    T2 extends Object declared in class i1
-    T3 extends Object declared in class i1
-    T4 extends Object declared in class i1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/utilities/ui/emojipicker/d.java:151: error: cannot find symbol
                     sVar5.n0(i1Var2);
                          ^
@@ -288497,7 +288473,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
                     WeakHashMap weakHashMap = c1.a;
                                                 ^
   symbol:   variable a
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kk/a.java:199: error: cannot find symbol
                     if (childAt.getFitsSystemWindows() && childAt.getLayoutParams().a != null && m2Var.o()) {
                                                                                    ^
@@ -294799,7 +294775,7 @@ public final class m1 extends d5 {
         WeakHashMap weakHashMap = c1.a;
                                     ^
   symbol:   variable a
-  location: class c1
+  location: interface c1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w31/i.java:90: error: cannot find symbol
         t0.m(hVar, eVar);
           ^
@@ -309146,17 +309122,9 @@ public final class o0 extends c21.e {
             ^
   symbol:   class Object
   location: class g
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:131: error: constructor i1 in class i1<T1,T2,T3,T4> cannot be applied to given types;
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:131: error: i1 is abstract; cannot be instantiated
                 i1 i1Var = new i1(7, cVar, w0Var);
                            ^
-  required: no arguments
-  found:    int,c,w0
-  reason: actual and formal argument lists differ in length
-  where T1,T2,T3,T4 are type-variables:
-    T1 extends Object declared in class i1
-    T2 extends Object declared in class i1
-    T3 extends Object declared in class i1
-    T4 extends Object declared in class i1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/codeoptions/g.java:132: error: cannot find symbol
                 sVar.n0(i1Var);
                     ^
@@ -313050,4 +313018,4 @@ Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 64497 errors
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_195001.args
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_205449.args
