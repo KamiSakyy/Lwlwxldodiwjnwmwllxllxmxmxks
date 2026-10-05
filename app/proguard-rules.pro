@@ -5,3 +5,4 @@
 -keep class ru.webapk.studio.ApkBuilder { *; }
 -keep class ru.webapk.studio.BinaryXmlPatcher { *; }
 -keep class ru.webapk.studio.JarV1Signer { *; }
+-keep class ru.webapk.studio.ApkV2Signer { *; }

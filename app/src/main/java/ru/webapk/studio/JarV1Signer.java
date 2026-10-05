@@ -93,7 +93,12 @@ final class JarV1Signer {
             signedApk.delete();
             throw error;
         }
-
+        try {
+            ApkV2Signer.signInPlace(signedApk, identity.privateKey, identity.certificate);
+        } catch (Exception error) {
+            signedApk.delete();
+            throw error;
+        }
     }
 
     private static TreeMap<String, byte[]> digestApkEntries(File apk) throws Exception {
@@ -140,6 +145,7 @@ final class JarV1Signer {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         writeHeader(out, "Signature-Version", "1.0");
         writeHeader(out, "Created-By", "Offline Web APK Studio");
+        writeHeader(out, "X-Android-APK-Signed", "2");
         writeHeader(out, "SHA-256-Digest-Manifest",
                 base64(MessageDigest.getInstance(SHA256).digest(manifest.bytes)));
         out.write(CRLF);

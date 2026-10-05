@@ -182,6 +182,11 @@ final class ApkBuilder {
             throw error;
         }
 
+        if (unsigned.length() >= MAX_APK_BYTES) {
+            unsigned.delete();
+            throw new IOException("Исходный сайт уже превышает лимит APK 1 000 000 байт после упаковки. Уменьшите ресурсы.");
+        }
+
         try {
             JarV1Signer.sign(unsigned, signed, context.getFilesDir());
             if (!signed.isFile() || signed.length() == 0) {
