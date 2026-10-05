@@ -1,5 +1,5 @@
 GitHub-RU v2 — фикс нагрева применён
-Дата: 2026-10-05T12:08:47.299761Z
+Дата: 2026-10-05T12:41:51.050606Z
 
 Изменения:
   meta-data firebase_messaging_auto_init_enabled = false
