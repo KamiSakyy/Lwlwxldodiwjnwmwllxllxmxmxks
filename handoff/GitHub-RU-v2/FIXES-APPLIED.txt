@@ -1,5 +1,5 @@
 GitHub-RU v2 — фикс нагрева применён
-Дата: 2026-10-05T16:22:20.368266Z
+Дата: 2026-10-05T16:41:47.240908Z
 
 Изменения:
   meta-data firebase_messaging_auto_init_enabled = false
@@ -7,4 +7,4 @@ GitHub-RU v2 — фикс нагрева применён
   meta-data firebase_analytics_collection_enabled = false
   meta-data google_analytics_adid_collection_enabled = false
   versionCode 926, versionName 1.257.0-ru2
-  res-файлов с '$' переименовано: 194 (ссылки переписаны)
+  res-файлов с '$' переименовано: 0 (ссылки переписаны)

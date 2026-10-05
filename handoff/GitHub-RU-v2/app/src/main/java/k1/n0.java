@@ -119,4 +119,10 @@ public final class n0 extends t1 {
         this.f27623f += k0Var.f27610a;
         this.f27625h += i12;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k0<T1,T2,T3,T4> {
+        public k0() {
+        }
+    }
 }

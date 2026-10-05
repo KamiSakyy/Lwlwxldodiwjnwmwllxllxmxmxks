@@ -32,4 +32,10 @@ public final class o0 {
         }
         throw new IllegalStateException(no.a.n("Missing required properties:", sb));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
 }

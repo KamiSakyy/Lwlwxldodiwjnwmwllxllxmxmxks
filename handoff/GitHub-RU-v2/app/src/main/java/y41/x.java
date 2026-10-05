@@ -9,4 +9,10 @@ public final class x implements i51.c {
     public final void a(Object obj, Object obj2) {
         ((i51.d) obj2).a(b, ((g1) ((i2) obj)).a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h0<T1,T2,T3,T4> {
+        public h0() {
+        }
+    }
 }

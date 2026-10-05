@@ -74,4 +74,10 @@ public final class ss implements aa.w0 {
     public final String toString() {
         return com.github.rudroid.m0.m(com.github.rudroid.copilot.h1.u("PullsWidgetQuery(includeCreated=", this.r, ", includeAssigned=", this.s, ", includeMentioned="), this.t, ", includeRequested=", this.u, ", first=30)");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

@@ -72,4 +72,10 @@ public final class b implements g {
         this.f30419b = 4;
         this.f30420c = aVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
 }

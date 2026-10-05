@@ -164,4 +164,10 @@ public abstract /* synthetic */ class f4 {
         k71.k.l(nullPointerException, k71.k.class.getName());
         throw nullPointerException;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
 }

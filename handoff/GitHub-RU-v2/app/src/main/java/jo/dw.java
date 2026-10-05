@@ -57,4 +57,46 @@ public final class dw {
         public z6() {
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e6<T1,T2,T3,T4> {
+        public e6() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k2<T1,T2,T3,T4> {
+        public k2() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k7<T1,T2,T3,T4> {
+        public k7() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o5<T1,T2,T3,T4> {
+        public o5() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r6<T1,T2,T3,T4> {
+        public r6() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s0<T1,T2,T3,T4> {
+        public s0() {
+        }
+    }
 }

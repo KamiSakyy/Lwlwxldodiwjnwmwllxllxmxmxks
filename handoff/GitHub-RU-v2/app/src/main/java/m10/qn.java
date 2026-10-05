@@ -259,4 +259,10 @@ public final class qn {
     public static qn[] values() {
         return (qn[]) J3.clone();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class pn<T1,T2,T3,T4> {
+        public pn() {
+        }
+    }
 }

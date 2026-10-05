@@ -395,4 +395,10 @@ public final class f extends h0 {
         super("3d8461625f025fb48126796fa3125bd4", 18, "c3a7dcb98b57baa921834fd1e79bd210");
         this.e = gitHubDatabase_Impl;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class WorkDatabase_Impl<T1,T2,T3,T4> {
+        public WorkDatabase_Impl() {
+        }
+    }
 }

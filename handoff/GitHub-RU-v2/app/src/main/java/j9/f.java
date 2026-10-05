@@ -17,4 +17,10 @@ public final class f {
         this.f27318a = oVar;
         this.f27319b = new d(j10, oVar, a0Var, vVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

@@ -32,4 +32,28 @@ public final class ms {
     public final String toString() {
         return f4.i(this.a, "Mentioned(issueCount=", ", nodes=", ")", this.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d0<T1,T2,T3,T4> {
+        public d0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o<T1,T2,T3,T4> {
+        public o() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v<T1,T2,T3,T4> {
+        public v() {
+        }
+    }
 }

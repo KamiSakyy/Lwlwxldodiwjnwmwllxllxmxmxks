@@ -36,4 +36,10 @@ public abstract class k {
     public static void g(BiometricPrompt.Builder builder, CharSequence charSequence) {
         builder.setTitle(charSequence);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class BiometricPrompt$AuthenticationCallback<T1,T2,T3,T4> {
+        public BiometricPrompt$AuthenticationCallback() {
+        }
+    }
 }

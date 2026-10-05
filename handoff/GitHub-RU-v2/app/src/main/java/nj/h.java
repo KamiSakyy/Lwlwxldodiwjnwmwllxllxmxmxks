@@ -45,4 +45,10 @@ public final class h extends c71.j implements j71.e {
         h2 h2Var = this.C;
         return new a61.l0(new y71.y(new cn.e(2, null, 3), j0Var.a(this.x, str, this.y, this.z, x61.r.r, this.A, this.B, h2Var)), s0Var, 26);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h2<T1,T2,T3,T4> {
+        public h2() {
+        }
+    }
 }

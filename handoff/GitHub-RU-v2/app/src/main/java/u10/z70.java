@@ -26,4 +26,16 @@ public final class z70 implements aa.m0 {
     public final String toString() {
         return "Data(updateSubscription=" + this.a + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l2<T1,T2,T3,T4> {
+        public l2() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w0<T1,T2,T3,T4> {
+        public w0() {
+        }
+    }
 }

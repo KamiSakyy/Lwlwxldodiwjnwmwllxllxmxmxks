@@ -26,4 +26,10 @@ public final class aa0 implements aa.v0 {
     public final String toString() {
         return "Data(repository=" + this.a + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c<T1,T2,T3,T4> {
+        public c() {
+        }
+    }
 }

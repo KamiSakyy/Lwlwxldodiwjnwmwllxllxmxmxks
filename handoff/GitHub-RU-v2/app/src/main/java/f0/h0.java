@@ -7,4 +7,10 @@ package f0;
 public class h0<T1,T2,T3,T4> {
     public h0() {
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b2<T1,T2,T3,T4> {
+        public b2() {
+        }
+    }
 }

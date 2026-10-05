@@ -196,4 +196,10 @@ public abstract class k {
     public abstract String e();
 
     public abstract Intent s();
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
 }

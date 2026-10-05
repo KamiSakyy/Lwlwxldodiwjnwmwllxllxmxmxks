@@ -76,4 +76,10 @@ public final class a extends androidx.viewpager.widget.a {
         }
         return context.getContentResolver().openFileDescriptor(Uri.parse(URI.create("file://".concat(str)).toString()), "rw");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y3<T1,T2,T3,T4> {
+        public y3() {
+        }
+    }
 }

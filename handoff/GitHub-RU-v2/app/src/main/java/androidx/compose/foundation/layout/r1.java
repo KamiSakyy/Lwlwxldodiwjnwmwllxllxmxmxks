@@ -7,4 +7,10 @@ package androidx.compose.foundation.layout;
 public class r1<T1,T2,T3,T4> {
     public r1() {
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

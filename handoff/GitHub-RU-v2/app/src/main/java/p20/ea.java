@@ -48,4 +48,16 @@ public abstract class ea implements aa.a {
         w50.q qVar = w50.q.a;
         w50.q.d(fVar, wVar, bfVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
 }

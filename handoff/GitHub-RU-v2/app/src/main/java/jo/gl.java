@@ -60,4 +60,10 @@ public final class gl implements aa.n0 {
     public final String toString() {
         return f1.e.z("MarkNotificationAsUndoneMutation(id=", this.r, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
 }

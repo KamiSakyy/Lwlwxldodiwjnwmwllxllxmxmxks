@@ -31,4 +31,10 @@ public final class os {
     public final String toString() {
         return "Node2(__typename=" + this.a + ", widgetPullRequestRowFragment=" + this.b + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
 }

@@ -209,4 +209,10 @@ public final class h0 {
                 return g0Var2 == null ? ((h0) aVar.s).a(keyEvent) : g0Var2;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g0<T1,T2,T3,T4> {
+        public g0() {
+        }
+    }
 }

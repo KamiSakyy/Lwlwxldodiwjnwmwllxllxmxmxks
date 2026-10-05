@@ -120,4 +120,10 @@ public final class j0 extends m2 {
         sb.append(", generatorType=");
         return a0.s0.l(sb, this.l, "}");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
 }

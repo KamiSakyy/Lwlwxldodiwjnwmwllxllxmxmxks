@@ -67,4 +67,10 @@ public final class d implements j51.a {
         this.b.remove(cls);
         return this;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

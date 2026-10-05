@@ -30,4 +30,16 @@ public final class k70 {
     public final String toString() {
         return com.github.rudroid.copilot.h1.p(a0.s0.o("PullRequest(id=", this.a, ", headRefOid=", this.b, ", __typename="), this.c, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
 }

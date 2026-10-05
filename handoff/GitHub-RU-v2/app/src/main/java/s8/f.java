@@ -59,4 +59,16 @@ public abstract class f {
             SidecarDeviceState.class.getMethod("setPosture", Integer.TYPE).invoke(sidecarDeviceState, Integer.valueOf(i));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class SidecarDeviceState<T1,T2,T3,T4> {
+        public SidecarDeviceState() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class SidecarWindowLayoutInfo<T1,T2,T3,T4> {
+        public SidecarWindowLayoutInfo() {
+        }
+    }
 }

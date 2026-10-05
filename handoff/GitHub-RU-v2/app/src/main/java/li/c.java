@@ -21,4 +21,10 @@ public final class c {
         k.g(vVar, "onError");
         return b31.b.J(((kn.b) this.a.a(jVar)).y(str), jVar, vVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v<T1,T2,T3,T4> {
+        public v() {
+        }
+    }
 }

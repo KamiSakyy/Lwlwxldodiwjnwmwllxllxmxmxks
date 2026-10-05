@@ -28,4 +28,10 @@ public final class g70 {
     public final String toString() {
         return com.github.rudroid.m0.h("UpdateMobilePushNotificationSchedules(mobilePushNotificationSchedules=", ")", this.a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

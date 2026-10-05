@@ -32,4 +32,10 @@ public final class ks {
     public final String toString() {
         return f4.i(this.a, "Created(issueCount=", ", nodes=", ")", this.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

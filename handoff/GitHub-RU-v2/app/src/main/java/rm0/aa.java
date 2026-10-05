@@ -63,4 +63,10 @@ public final class aa implements z01.l1, yb0, mi0, y90, yf0 {
         int i = this.r;
         return this;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w0<T1,T2,T3,T4> {
+        public w0() {
+        }
+    }
 }

@@ -22,4 +22,10 @@ public final class w50 {
     public final String toString() {
         return com.github.rudroid.m0.i("RefUpdateRule(viewerCanPush=", ")", this.a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
 }

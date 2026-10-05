@@ -80,4 +80,10 @@ public final class ud0 implements aa.n0 {
     public final String toString() {
         return f1.e.k(f4.u("UpdateNotificationSettingsMutation(getsDirectMentionMobilePush=", this.r, ", getsParticipatingWeb=", this.s, ", getsWatchingWeb="), this.t, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }
