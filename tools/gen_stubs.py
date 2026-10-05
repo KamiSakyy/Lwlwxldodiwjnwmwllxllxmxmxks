@@ -103,6 +103,17 @@ for i in err_idx:
         if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), cls + ".java")):
             flat.add((pkg, cls))
         continue
+    dm = re.search(r"package ([\w.]+) does not exist", msg)
+    if dm:
+        pkg = dm.group(1)
+        # класс ищем в ближайших строках (import P.C;)
+        for j in range(i + 1, min(i + 4, len(lines))):
+            im = re.search(r"import\s+([\w.]+)\.(\w+)\s*;", lines[j])
+            if im and im.group(1) == pkg:
+                if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), im.group(2) + ".java")):
+                    flat.add((pkg, im.group(2)))
+                break
+        continue
     lm = re.search(r"location:\s+(?:class|interface)\s+([\w.$]+)", loc)
     if lm:
         host_name = lm.group(1).split(".")[0]

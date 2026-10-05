@@ -1,4 +1,4 @@
-name: "Этап 5 — ВОССТАНОВЛЕНИЕ исходника: фиксы + проверка javac (БЕЗ APK)"
+name: "Этап 5 — ВОССТАНОВЛЕНИЕ исходника v3: итеративный цикл javac+стабы"
 
 on:
   push:
@@ -13,10 +13,10 @@ permissions:
   contents: write
 
 jobs:
-  restore:
-    name: "Восстановление дерева и проверка компиляции"
+  restore-loop:
+    name: "Цикл восстановления: javac -> стабы (до 6 итераций за прогон)"
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
 
     steps:
       - name: "Checkout"
@@ -31,127 +31,78 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: "android.jar (API 36) для компиляции"
+      - name: "android.jar (API 36)"
         shell: bash
         run: |
           SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
           "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" | tail -1
           echo "ANDROID_JAR=$SDK/platforms/android-36/android.jar" >> "$GITHUB_ENV"
-          ls -la "$SDK/platforms/android-36/android.jar"
 
-      - name: "7-Zip"
-        run: |
-          if ! command -v 7z >/dev/null 2>&1; then
-            sudo apt-get update -qq && sudo apt-get install -y -qq p7zip-full
-          fi
-
-      - name: "Распаковка исходника"
+      - name: "Подготовка дерева из репозитория"
         run: |
           set -e
-          mkdir -p extracted stage1
-          7z x -y -ostage1 "GitHub-RU-Source legal.zip.zip" >/dev/null
-          find stage1 -type f -name "*.zip" -print0 | while IFS= read -r -d '' z; do
-            unzip -q -o "$z" -d extracted/ || true
-          done
-          if [ -z "$(find extracted -type f | head -1)" ]; then cp -a stage1/. extracted/; fi
-          PROJ=$(find "$PWD/extracted" -type d -name "GitHub-RU-Source" | head -1)
+          PROJ="$PWD/handoff/GitHub-RU-v2"
           echo "PROJ=$PROJ" >> "$GITHUB_ENV"
-          find "$PROJ/app/src/main/java" -name "*.java" | wc -l
-
-      - name: "Компиляция ДО восстановления (javac, только проверка)"
-        run: |
-          set -e
+          # идемпотентные фиксы (безопасно повторить)
+          python3 tools/fix_heat.py "$PROJ" || true
+          python3 tools/fix_compile.py "$PROJ" || true
           SRC="$PROJ/app/src/main/java"
           find "$SRC" -name "*.java" | sort > /tmp/sources.txt
-          echo "Файлов на компиляцию: $(wc -l < /tmp/sources.txt)"
-          mkdir -p /tmp/classes-before
-          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
-            -source 8 -target 8 -encoding UTF-8 \
-            -bootclasspath "$ANDROID_JAR" \
-            -d /tmp/classes-before @/tmp/sources.txt \
-            > /tmp/javac-before.log 2>&1 || true
-          grep -c "error:" /tmp/javac-before.log || echo "0 ошибок ДО"
+          echo "Файлов: $(wc -l < /tmp/sources.txt)"
 
-      - name: "Применение всех реставрационных фиксов"
+      - name: "ИТЕРАТИВНЫЙ ЦИКЛ: javac + стабы (6 раундов)"
+        shell: bash
         run: |
           set -e
-          python3 tools/fix_heat.py "$PROJ"
-          python3 tools/fix_compile.py "$PROJ"
-          python3 tools/fix_compile.py "$PROJ"
-          echo "=== осталось '??'-объявлений ==="
-          grep -rlE '^\s*(final )?\?\? ' "$PROJ/app/src/main/java" 2>/dev/null | wc -l || echo 0
-
-      - name: "Компиляция ПОСЛЕ восстановления (javac, только проверка)"
-        run: |
-          set -e
+          PROJ="${{ env.PROJ }}"
           SRC="$PROJ/app/src/main/java"
-          find "$SRC" -name "*.java" | sort > /tmp/sources-after.txt
-          mkdir -p /tmp/classes-after
-          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
-            -source 8 -target 8 -encoding UTF-8 \
-            -bootclasspath "$ANDROID_JAR" \
-            -d /tmp/classes-after @/tmp/sources-after.txt \
-            > /tmp/javac-after.log 2>&1 || true
-          grep -c "error:" /tmp/javac-after.log || echo "0 ошибок ПОСЛЕ"
-
-      - name: "Генерация стабов потерянных классов (по логу javac)"
-        run: |
-          set -e
-          python3 tools/gen_stubs.py /tmp/javac-after.log "$PROJ/app/src/main/java"
-          echo "=== стабов создано: $(find "$PROJ/app/src/main/java" -path '*/stubs/*' -name '*.java' 2>/dev/null | wc -l) ==="
-
-      - name: "Повторная компиляция после стабов (javac)"
-        run: |
-          set -e
-          SRC="$PROJ/app/src/main/java"
-          find "$SRC" -name "*.java" | sort > /tmp/sources-after2.txt
-          mkdir -p /tmp/classes-after2
-          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
-            -source 8 -target 8 -encoding UTF-8 \
-            -bootclasspath "$ANDROID_JAR" \
-            -d /tmp/classes-after2 @/tmp/sources-after2.txt \
-            > /tmp/javac-after2.log 2>&1 || true
-          grep -c "error:" /tmp/javac-after2.log || echo "0 ошибок ПОСЛЕ стабов"
-
-      - name: "Перегенерация стабов-интерфейсов (по ошибкам interface expected)"
-        run: |
-          set -e
-          python3 tools/make_iface_list.py /tmp/javac-after2.log /tmp/stub-interfaces.txt "$PROJ/app/src/main/java"
-          IFN=$(wc -l < /tmp/stub-interfaces.txt)
-          if [ "$IFN" -gt 0 ]; then
-            # удаляем старые class-стабы и создаём заново как interface
-            while IFS= read -r line; do
-              P="${line%.*}"; C="${line##*.}"
-              FP="$PROJ/app/src/main/java/$(echo "$P" | tr '.' '/')/$C.java"
-              [ -f "$FP" ] && rm -f "$FP"
-            done < /tmp/stub-interfaces.txt
-            python3 tools/gen_stubs.py /tmp/javac-after2.log "$PROJ/app/src/main/java" /tmp/stub-interfaces.txt
-            find "$PROJ/app/src/main/java" -name "*.java" | sort > /tmp/sources-after3.txt
-            mkdir -p /tmp/classes-after3
+          mkdir -p handoff/restoration
+          PREV=999999999
+          for R in 1 2 3 4 5 6; do
+            echo "=========== РАУНД $R ==========="
+            rm -rf /tmp/classes
             javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
               -source 8 -target 8 -encoding UTF-8 \
               -bootclasspath "$ANDROID_JAR" \
-              -d /tmp/classes-after3 @/tmp/sources-after3.txt \
-              > /tmp/javac-after3.log 2>&1 || true
-            echo "Ошибок после интерфейс-стабов: $(grep -c 'error:' /tmp/javac-after3.log || true)"
-            cp -f /tmp/javac-after3.log /tmp/javac-after2.log
-          fi
+              -d /tmp/classes @/tmp/sources.txt \
+              > /tmp/javac-iter.log 2>&1 || true
+            ERRS=$(grep -c "error:" /tmp/javac-iter.log || echo 0)
+            echo "Раунд $R: ошибок $ERRS"
+            cp -f /tmp/javac-iter.log "handoff/restoration/javac-round$R.log"
+            if [ "$ERRS" -eq 0 ]; then
+              echo "=== ИСХОДНИК ПОЛНОСТЬЮ КОМПИЛИРУЕТСЯ ==="
+              break
+            fi
+            if [ "$ERRS" -ge "$PREV" ] && [ "$R" -gt 1 ]; then
+              echo "=== Прогресс остановился, останавливаюсь для анализа ==="
+              break
+            fi
+            PREV=$ERRS
+            # стабы по текущим ошибкам
+            python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt || true
+            # стабы-интерфейсы
+            python3 tools/make_iface_list.py /tmp/javac-iter.log /tmp/stub-interfaces.txt "$SRC" || true
+            IFN=$(wc -l < /tmp/stub-interfaces.txt || echo 0)
+            if [ "$IFN" -gt 0 ]; then
+              while IFS= read -r line; do
+                P="${line%.*}"; C="${line##*.}"
+                FP="$SRC/$(echo "$P" | tr '.' '/')/$C.java"
+                [ -f "$FP" ] && rm -f "$FP"
+              done < /tmp/stub-interfaces.txt
+              python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt || true
+            fi
+            find "$SRC" -name "*.java" | sort > /tmp/sources.txt
+            echo "Файлов теперь: $(wc -l < /tmp/sources.txt)"
+          done
+          cp -f /tmp/javac-iter.log handoff/restoration/javac-final.log
+          ERRS=$(grep -c "error:" /tmp/javac-iter.log || echo 0)
+          echo "ИТОГО ошибок: $ERRS"
 
       - name: "Отчёт о восстановлении"
         run: |
           set -e
-          mkdir -p handoff/restoration
-          python3 tools/restore_report.py /tmp/javac-before.log /tmp/javac-after2.log handoff/restoration
-          head -40 handoff/restoration/RESTORATION-REPORT.md
-
-      - name: "Восстановленное дерево -> handoff/GitHub-RU-v2"
-        if: always()
-        run: |
-          set -e
-          mkdir -p handoff
-          rsync -a --delete --exclude 'app/build' --exclude '.gradle' --exclude 'build' --exclude '.kotlin' \
-            "$PROJ/" handoff/GitHub-RU-v2/
-          du -sh handoff/GitHub-RU-v2 || true
+          python3 tools/restore_report_simple.py "$PROJ" handoff/restoration
+          head -30 handoff/restoration/RESTORATION-REPORT.md
 
       - name: "Коммит: восстановленный исходник + отчёт"
         if: always()
@@ -163,6 +114,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Нет изменений"
           else
-            git commit -m "Этап 5: восстановление исходника (фиксы + javac-проверка) [skip ci]"
+            git commit -m "Этап 5 v3: итеративное восстановление (javac+стабы) [skip ci]"
             git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
           fi
