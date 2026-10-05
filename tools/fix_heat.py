@@ -74,6 +74,15 @@ if "apply plugin" not in g and not g.lstrip().startswith("plugins"):
     g = "plugins {\n    id 'com.android.application'\n}\n\n" + g
     print("+ Добавлен блок plugins { id 'com.android.application' } в app/build.gradle")
 
+# Показывать ВСЕ ошибки javac, а не первые 100
+if "Xmaxerrs" not in g:
+    g += """
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xmaxerrs', '50000', '-Xmaxwarns', '1000']
+}
+"""
+    print("+ Добавлен -Xmaxerrs 50000 (видны все ошибки компиляции)")
+
 g2 = g.replace("versionCode 925", "versionCode 926")
 g2 = g2.replace("versionName '1.257.0'", "versionName '1.257.0-ru2'")
 if g2 != g:

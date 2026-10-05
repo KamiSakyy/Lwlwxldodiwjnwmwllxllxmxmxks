@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Этап 3.5 — Автофикс артефактов декомпиляции: строки вида "?? var = ...;"
-jadx вставляет '??' там, где не смог вывести тип. Подсказки типов лежат
-в комментариях "JADX WARN: Type inference failed for: rNvX, types: [...]".
-Стратегии (по приоритету):
-  1) тип из инициализатора new T(...);
-  2) тип из WARN-подсказки этой переменной (последняя подсказка, последний тип);
-  3) тип поля: this.f -> объявление поля в этом же файле; P.C.f -> чужой класс
-     (тип квалифицируется пакетом целевого класса);
-  4) тип по имени переменной (arrayList -> ArrayList и т.п.);
-  5) fallback: Object.
-Спец-правило: "?? v = new Object();" с обращениями v.<поле класса> в следующих
-строках -> "<Класс> v = this;" (jadx перемудрил с this в конструкторе).
-Идемпотентен: после прогона '??' не остаётся, повторный прогон — no-op.
+Этап 3.5 — Автофикс артефактов декомпиляции jadx (идемпотентный).
+
+Классы фиксов:
+  A. Обрезанный заголовок метода: "public static final q01.r v(" — строка
+     кончается '(' и далее идёт '/*'-комментарий. Заменяем на заглушку.
+  B. static {} блок внутри interface — запрещён; удаляем (только интерфейсы).
+  C. Уродливый цикл: for (0; i < i2; i + 1) -> for (i = 0; i < i2; i++).
+  D. '?? var' от неудачного вывода типов (в т.ч. 'final ?? var'):
+     тип из new X()/поля/WARN-подсказки/имени переменной, иначе Object.
+  E. Битые массивы: Boolean[ var -> Boolean[] var; (Type[) -> (Type[]).
+  F. Странный каст: ({var}) -> ((Object) var).
 """
 import os, re, sys
 
@@ -21,7 +19,7 @@ proj = sys.argv[1]
 JAVA = os.path.join(proj, "app", "src", "main", "java")
 
 WARN_RX = re.compile(r"Type inference failed for:\s*(\S+?),\s*types:\s*\[([^\]]+)\]")
-Q_RX = re.compile(r"^(\s*)\?\?\s*(\w+)\s*(=|;)(.*)$")   # ?? var = expr;  /  ?? var;
+Q_RX = re.compile(r"^(\s*)((?:(?:final|abstract|static|private|public|protected|synchronized)\s+)*)(\?\?)\s*(\w+)\s*(=|;)(.*)$")
 FIELD_RX_TPL = r"([\w$.]+(?:\s*<[^=;]*?>)?(?:\s*\[\])*)\s+%s\s*(?:=|;)"
 NEW_RX = re.compile(r"new\s+([A-Za-z_][\w$.]*)\s*\(")
 STATIC_FIELD_RX = re.compile(r"^([a-z][a-z0-9_]*(?:\.[a-z][a-z0-9_]*)*)\.([A-Za-z_]\w*)\.(\w+)$")
@@ -30,55 +28,60 @@ NAME_HINTS = {
     "set": "java.util.Set", "hashmap": "java.util.HashMap", "linkedhashmap": "java.util.LinkedHashMap",
     "linkedhashset": "java.util.LinkedHashSet", "iter": "java.util.Iterator", "it": "java.util.Iterator",
 }
-
-# ---- индекс: файлы классов для поиска статических полей ----
-class_cache = {}
-def class_file_path(pkg, cls):
-    key = pkg + "." + cls
-    if key in class_cache:
-        return class_cache[key]
-    p = os.path.join(JAVA, pkg.replace(".", os.sep), cls + ".java")
-    class_cache[key] = p if os.path.isfile(p) else None
-    return class_cache[key]
-
-def find_field_type(text, fname):
-    m = re.search(FIELD_RX_TPL % re.escape(fname), text)
-    if m:
-        return m.group(1).strip()
-    return None
-
 GENERIC_IFACE = {"List": "java.util.List", "Map": "java.util.Map", "Set": "java.util.Set",
                  "Collection": "java.util.Collection", "Iterable": "java.lang.Iterable"}
 
-def resolve_static(pkg_expr, cls, fname):
-    """P.C.f -> (тип для объявления, исходный квалификатор класса)"""
-    cf = class_file_path(pkg_expr, cls)
-    if not cf:
-        return None
-    try:
-        with open(cf, "r", encoding="utf-8", errors="ignore") as f:
-            t = f.read(300_000)
-    except OSError:
-        return None
-    ft = find_field_type(t, fname)
-    if ft is None:
-        return None
-    # Если тип — простой класс того же пакета, смотрим его интерфейсы:
-    # List/Map/Set/Collection безопаснее (переменную могут класть в ArrayList и т.п.)
-    ft2 = ft
-    if re.match(r"^[A-Za-z_]\w*$", ft):
-        header = re.search(r"(?:class|interface|enum)\s+%s\b[^{;]*" % re.escape(ft), t)
-        seg = header.group(0) if header else ""
-        for name, generic in GENERIC_IFACE.items():
-            if re.search(r"\bimplements\b[^{;]*\b%s\b" % name, seg):
-                ft2 = generic
-                break
-        else:
-            ft2 = pkg_expr + "." + ft   # квалифицируем простое имя пакетом
-    return ft2, pkg_expr + "." + cls
+# D — тип для '?? var'
+def infer_q_type(var, expr, text, warns, lines, idx):
+    if expr is not None:
+        mn = NEW_RX.match(expr)
+        if mn:
+            return mn.group(1), False
+    sm = STATIC_FIELD_RX.match(expr) if expr else None
+    if sm:
+        cf = os.path.join(JAVA, sm.group(1).replace(".", os.sep), sm.group(2) + ".java")
+        if os.path.isfile(cf):
+            try:
+                t = open(cf, "r", encoding="utf-8", errors="ignore").read(300_000)
+            except OSError:
+                t = ""
+            fm = re.search(FIELD_RX_TPL % re.escape(sm.group(3)), t)
+            if fm:
+                ft = fm.group(1).strip()
+                if re.match(r"^[A-Za-z_]\w*$", ft):
+                    header = re.search(r"(?:class|interface|enum)\s+%s\b[^{;]*" % re.escape(ft), t)
+                    seg = header.group(0) if header else ""
+                    for name, generic in GENERIC_IFACE.items():
+                        if re.search(r"\bimplements\b[^{;]*\b%s\b" % name, seg):
+                            return generic, True
+                    return sm.group(1) + "." + ft, True
+                return ft, True
+    if expr:
+        fm = re.match(r"^(?:this\.)?(\w+)$", expr)
+        if fm:
+            ftm = re.search(FIELD_RX_TPL % re.escape(fm.group(1)), text)
+            if ftm:
+                ft = ftm.group(1).strip()
+                if ft not in ("Object", "java.lang.Object"):
+                    return ft, False
+    base = re.sub(r"v\d+$", "", var)
+    if base in warns:
+        return warns[base], True
+    if var in warns:
+        return warns[var], True
+    hint = NAME_HINTS.get(var.lower())
+    if hint:
+        return hint, True
+    if expr is None:
+        nxt = "".join(lines[idx + 1: idx + 80])
+        am = re.search(r"\b" + re.escape(var) + r"\s*=\s*([^;]+);", nxt)
+        if am:
+            mn = NEW_RX.match(am.group(1).strip())
+            if mn:
+                return mn.group(1), False
+    return "Object", False
 
-total_files = 0
-total_fixed = 0
+stats = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0}
 unresolved = []
 
 for root, dirs, files in os.walk(JAVA):
@@ -88,98 +91,101 @@ for root, dirs, files in os.walk(JAVA):
         p = os.path.join(root, fn)
         try:
             with open(p, "r", encoding="utf-8", errors="ignore") as f:
-                lines = f.readlines()
+                src = f.read()
         except OSError:
             continue
-        if not any("?? " in ln for ln in lines):
-            continue
-        total_files += 1
-        text = "".join(lines)
+        orig = src
+        lines = src.split("\n")
+
+        # ---------- B: static{} в интерфейсе ----------
+        first_type = re.search(r"^\s*(?:[\w-]+\s+)*(class|interface|enum)\s+\w+", src, re.M)
+        if first_type and first_type.group(1) == "interface" and re.search(r"^\s*static\s*\{", src, re.M):
+            new_src = re.sub(r"\n\s*static\s*\{\n[^{}]*\}\n", "\n", src)
+            if new_src != src:
+                stats["B"] += 1
+                src = new_src
+                lines = src.split("\n")
+
+        # ---------- A: обрезанный заголовок метода ----------
+        out = []
+        i = 0
+        while i < len(lines):
+            ln = lines[i]
+            m = re.match(r"^(\s*)((?:public|protected|private|static|final|abstract|synchronized|native|strictfp|\s)*)([\w$.<>\[\],\s?]+?)\s*(\w+)\($", ln)
+            if m:
+                nxt = lines[i + 1].strip() if i + 1 < len(lines) else ""
+                if nxt.startswith("/*"):
+                    header = (m.group(2) + m.group(3) + " " + m.group(4)).strip()
+                    indent = m.group(1)
+                    stub = (f"{indent}{header}() {{\n"
+                            f"{indent}    throw new UnsupportedOperationException(\"Method not decompiled\");\n"
+                            f"{indent}}}")
+                    out.extend(stub.split("\n"))
+                    stats["A"] += 1
+                    i += 1
+                    continue
+            out.append(ln)
+            i += 1
+        lines = out
+
+        # ---------- D: подготовка WARN ----------
+        text = "\n".join(lines)
         warns = {}
         for m in WARN_RX.finditer(text):
-            var = re.sub(r"v\d+$", "", m.group(1))
-            types = [t.strip() for t in m.group(2).split(",")]
-            warns[var] = types[-1]
-        cls_name = os.path.splitext(fn)[0]
-        rel_pkg = os.path.relpath(root, JAVA).replace(os.sep, ".")
-        fixed_lines = []
-        n_fixed_file = 0
-        for idx, ln in enumerate(lines):
-            m = Q_RX.match(ln)
-            if not m:
-                fixed_lines.append(ln)
-                continue
-            indent, var, sep, tail = m.group(1), m.group(2), m.group(3), m.group(4)
-            vartype = None
-            cast = None
-            if sep == "=":
-                expr = tail.strip().rstrip(";").strip()
-                mn = NEW_RX.match(expr)
-                if mn:
-                    vartype = mn.group(1)
-                    # new Object() + обращение к полям ниже -> это this
-                    nxt = "".join(lines[idx + 1: idx + 6])
-                    if vartype == "Object" and re.search(r"\b" + re.escape(var) + r"\.(\w+)\s*=", nxt):
-                        flds = re.findall(r"\b" + re.escape(var) + r"\.(\w+)\s*=", nxt)
-                        if all(find_field_type(text, fl) for fl in flds):
-                            vartype = cls_name
-                            expr = "this"
-                            line = f"{indent}{vartype} {var} = {expr};\n"
-                            fixed_lines.append(line); n_fixed_file += 1
-                            continue
-                    line = f"{indent}{vartype} {var} = {expr};\n"
-                    fixed_lines.append(line); n_fixed_file += 1
-                    continue
-                sm = STATIC_FIELD_RX.match(expr)
-                if sm:
-                    res = resolve_static(sm.group(1), sm.group(2), sm.group(3))
-                    if res:
-                        vartype = res[0]
-                        cast = vartype
-                if vartype is None:
-                    fm = re.match(r"^(?:this\.)?(\w+)$", expr)
-                    if fm:
-                        ftype = find_field_type(text, fm.group(1))
-                        # Object не даёт usable-типа (реально там List и т.п.) — тогда WARN
-                        if ftype and ftype not in ("Object", "java.lang.Object"):
-                            vartype = ftype
-                if vartype is None and var in warns:
-                    vartype = warns[var]
-                    cast = vartype
-                if vartype is None:
-                    vartype = NAME_HINTS.get(var.lower())
-                    cast = vartype
-                if vartype is None:
-                    vartype = "Object"
-                if cast and cast != "Object":
-                    line = f"{indent}{vartype} {var} = ({cast}) ({expr});\n"
-                else:
-                    line = f"{indent}{vartype} {var} = {expr};\n"
-                fixed_lines.append(line); n_fixed_file += 1
-            else:
-                # голое объявление: ?? var;
-                if var in warns:
-                    vartype = warns[var]
-                else:
-                    nxt = "".join(lines[idx + 1: idx + 80])
-                    am = re.search(r"\b" + re.escape(var) + r"\s*=\s*([^;]+);", nxt)
-                    if am:
-                        expr = am.group(1).strip()
-                        mn = NEW_RX.match(expr)
-                        if mn:
-                            vartype = mn.group(1)
-                        elif var in warns:
-                            vartype = warns[var]
-                    if vartype is None:
-                        vartype = "Object"
-                        unresolved.append((os.path.relpath(p, proj), idx + 1, ln.strip()[:80]))
-                line = f"{indent}{vartype} {var};\n"
-                fixed_lines.append(line); n_fixed_file += 1
-        if n_fixed_file:
-            with open(p, "w", encoding="utf-8") as f:
-                f.writelines(fixed_lines)
-            total_fixed += n_fixed_file
+            key = re.sub(r"v\d+$", "", m.group(1))
+            warns[key] = [t.strip() for t in m.group(2).split(",")][-1]
 
-print(f"Файлов с '??': {total_files}; заменено выражений: {total_fixed}; неразрешённых голых объявлений: {len(unresolved)}")
-for u in unresolved[:25]:
-    print("  UNRESOLVED:", u[0], "строка", u[1], "-", u[2])
+        # ---------- построчные C, D, E, F ----------
+        cls_name = os.path.splitext(fn)[0]
+        changed = False
+        for idx, ln in enumerate(lines):
+            orig_ln = ln
+            # C: for (0; a < b; i + 1)
+            ln = re.sub(r"for\s*\(\s*0\s*;\s*(\w+)\s*([<>]=?)\s*([^;]+?);\s*(\w+)\s*\+\s*1\s*\)",
+                        r"for (\1 = 0; \1 \2 \3; \4++)", ln)
+            # E: битые массивы
+            ln = re.sub(r"\b([\w.$]+)\[ (\w+)", r"\1[] \2", ln)
+            ln = re.sub(r"\b([\w.$]+)\[\)", r"\1[])", ln)
+            # F: ({var})
+            ln = re.sub(r"\(\{(\w+)\}\)", r"((Object) \1)", ln)
+            if ln != orig_ln:
+                stats["E"] += len(re.findall(r"\[\s\]?\s?\(", orig_ln))  # грубо, для статистики не критично
+                stats["C"] += 1 if "for (" in ln and "for (0;" in orig_ln else 0
+                changed = True
+            # D: '??'
+            m = Q_RX.match(ln)
+            if m:
+                indent, mods, var, sep, tail = m.group(1), m.group(2), m.group(4), m.group(5), m.group(6)
+                if sep == "=":
+                    expr = tail.strip().rstrip(";").strip()
+                    vartype, need_cast = infer_q_type(var, expr, text, warns, lines, idx)
+                    if vartype == "Object" and need_cast is False:
+                        unresolved.append((os.path.relpath(p, proj), idx + 1, ln.strip()[:70]))
+                    if need_cast and not expr.startswith("new ") and vartype != "Object":
+                        line = f"{indent}{mods}{vartype} {var} = ({vartype}) ({expr});"
+                    else:
+                        line = f"{indent}{mods}{vartype} {var} = {expr};"
+                else:
+                    vartype, _ = infer_q_type(var, None, text, warns, lines, idx)
+                    if vartype == "Object":
+                        unresolved.append((os.path.relpath(p, proj), idx + 1, ln.strip()[:70]))
+                    line = f"{indent}{mods}{vartype} {var};"
+                lines[idx] = line
+                stats["D"] += 1
+                changed = True
+            elif ln != lines[idx]:
+                lines[idx] = ln
+                changed = True
+            elif ln != orig_ln:
+                lines[idx] = ln
+                changed = True
+
+        new_src = "\n".join(lines)
+        if new_src != orig:
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(new_src)
+
+print("Статистика фиксов:", stats)
+print(f"Неразрешённых '??' (поставлен Object): {len(unresolved)}")
+for u in unresolved[:20]:
+    print("  ", u[0], u[1], u[2])
