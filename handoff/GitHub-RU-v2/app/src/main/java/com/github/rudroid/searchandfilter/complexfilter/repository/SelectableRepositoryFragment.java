@@ -94,4 +94,10 @@ public final class SelectableRepositoryFragment extends Hilt_SelectableRepositor
     public final d0 I4() {
         return (com.github.rudroid.searchandfilter.complexfilter.repository.a) this.H0.getValue();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

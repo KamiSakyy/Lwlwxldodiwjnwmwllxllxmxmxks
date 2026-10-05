@@ -79,4 +79,10 @@ public final class aj0 {
         sb.append(", id=");
         return x.i.k(sb, this.k, ", __typename=", this.l, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c<T1,T2,T3,T4> {
+        public c() {
+        }
+    }
 }

@@ -97,4 +97,10 @@ public final class BadgeSwitchPreference extends SwitchPreference {
         this.n0 = new a();
         this.o0 = new b(this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s0<T1,T2,T3,T4> {
+        public s0() {
+        }
+    }
 }

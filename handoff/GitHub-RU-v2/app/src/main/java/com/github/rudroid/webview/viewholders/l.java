@@ -73,4 +73,10 @@ public final class l extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
             gitHubWebView.setCheckboxCheckedListener(new com.github.rudroid.interfaces.d(str, u0Var));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class xg<T1,T2,T3,T4> {
+        public xg() {
+        }
+    }
 }

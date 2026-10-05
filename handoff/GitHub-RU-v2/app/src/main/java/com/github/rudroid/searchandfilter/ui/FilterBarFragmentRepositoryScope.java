@@ -190,4 +190,10 @@ public final class FilterBarFragmentRepositoryScope extends Hilt_FilterBarFragme
         super.c4(view, bundle);
         w0.a(((q0) this.M0.getValue()).x, F3(), androidx.lifecycle.w.u, new com.github.rudroid.searchandfilter.ui.i(this, null));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

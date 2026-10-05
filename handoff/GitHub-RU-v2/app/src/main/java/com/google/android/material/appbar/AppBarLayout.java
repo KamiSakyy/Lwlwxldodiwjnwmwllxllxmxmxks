@@ -1418,4 +1418,10 @@ public class AppBarLayout extends LinearLayout implements l4.a {
     public final /* bridge */ /* synthetic */ LinearLayout.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         return b(layoutParams);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p2<T1,T2,T3,T4> {
+        public p2() {
+        }
+    }
 }

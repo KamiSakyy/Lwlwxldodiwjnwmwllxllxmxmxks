@@ -39,4 +39,10 @@ public final class p implements h, Serializable {
     public final String toString() {
         return this.s != x.a ? String.valueOf(getValue()) : "Lazy value not initialized yet.";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
 }

@@ -263,4 +263,10 @@ public final class a0 implements aa.a {
         List list = g80.b.a;
         g80.b.d(fVar, wVar, sVar.k);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f0<T1,T2,T3,T4> {
+        public f0() {
+        }
+    }
 }

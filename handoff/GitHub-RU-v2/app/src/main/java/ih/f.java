@@ -24,4 +24,16 @@ public final class f {
             t.d = new f4(hVar, dVar, i, 4);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

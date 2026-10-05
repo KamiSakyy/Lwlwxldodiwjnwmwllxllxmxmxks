@@ -976,4 +976,22 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
         this.r = 2;
         this.s = hVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Preference<T1,T2,T3,T4> {
+        public Preference() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v<T1,T2,T3,T4> {
+        public v() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x<T1,T2,T3,T4> {
+        public x() {
+        }
+    }
 }

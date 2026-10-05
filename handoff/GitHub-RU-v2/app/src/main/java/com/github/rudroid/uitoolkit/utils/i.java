@@ -55,4 +55,10 @@ public final /* synthetic */ class i implements j71.e {
         this.w = i3;
         this.x = i4;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
 }

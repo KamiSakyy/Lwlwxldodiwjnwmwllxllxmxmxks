@@ -230,4 +230,10 @@ public final class ConfigureShortcutFragment extends Hilt_ConfigureShortcutFragm
         x3().i0("RepositoryIssueTypesBottomSheet_KEY_SELECTED_ISSUE_TYPE_RESULT", F3(), new m(this));
         com.github.rudroid.utilities.w0.a(D4().G, F3(), androidx.lifecycle.w.u, new z(this, null));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

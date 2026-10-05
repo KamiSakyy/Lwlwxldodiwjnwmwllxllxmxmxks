@@ -28,4 +28,16 @@ public final class w0 extends com.github.rudroid.adapters.viewholders.e<k5.f> im
     @Override // com.github.rudroid.adapters.viewholders.o3
     public final void d(int i) {
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CheckLogFragment<T1,T2,T3,T4> {
+        public CheckLogFragment() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class qc<T1,T2,T3,T4> {
+        public qc() {
+        }
+    }
 }

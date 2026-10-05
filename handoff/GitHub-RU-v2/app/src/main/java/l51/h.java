@@ -1917,4 +1917,34 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         this.t = new ReentrantLock();
         this.u = new WeakHashMap();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g0<T1,T2,T3,T4> {
+        public g0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p0<T1,T2,T3,T4> {
+        public p0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t1<T1,T2,T3,T4> {
+        public t1() {
+        }
+    }
 }

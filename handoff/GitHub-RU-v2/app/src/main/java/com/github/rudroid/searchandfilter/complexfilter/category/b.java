@@ -61,4 +61,10 @@ public final class b extends e0<a> {
         k71.k.f(b, "inflate(...)");
         return new w(b, this.f, this.g);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
 }

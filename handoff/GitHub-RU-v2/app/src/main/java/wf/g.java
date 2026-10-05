@@ -80,4 +80,10 @@ public abstract class g<T> extends m0 {
     public final int m(int i) {
         return ((h) getData().get(i)).a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class BindingFragment<T1,T2,T3,T4> {
+        public BindingFragment() {
+        }
+    }
 }

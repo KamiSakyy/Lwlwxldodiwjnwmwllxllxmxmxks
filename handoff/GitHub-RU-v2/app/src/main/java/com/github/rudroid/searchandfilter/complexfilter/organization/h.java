@@ -18,4 +18,10 @@ public final class h extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
 }

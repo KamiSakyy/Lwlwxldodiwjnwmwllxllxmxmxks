@@ -60,4 +60,10 @@ public final class b extends e0<com.github.rudroid.searchandfilter.complexfilter
         k71.k.f(b2, "inflate(...)");
         return new q(b2, selectableMilestoneFragment);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
 }

@@ -21,4 +21,10 @@ public abstract class p implements l {
     @Override // d8.l
     public void f(o oVar) {
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o<T1,T2,T3,T4> {
+        public o() {
+        }
+    }
 }

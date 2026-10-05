@@ -276,4 +276,10 @@ public final class d {
         }
         return aVar2;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

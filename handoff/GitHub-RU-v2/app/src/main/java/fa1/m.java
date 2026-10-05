@@ -11,4 +11,10 @@ public abstract class m {
     }
 
     public abstract n b(Type type, Annotation[] annotationArr, l1 l1Var);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

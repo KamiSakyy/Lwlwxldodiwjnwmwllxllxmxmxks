@@ -52,4 +52,22 @@ public final class f extends oa.c {
         a.y = r81.g.b("timeout", 30L, timeUnit);
         return new u(a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

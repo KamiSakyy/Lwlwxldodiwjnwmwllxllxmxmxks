@@ -71,4 +71,10 @@ public final class w {
         this.f26001c = -1;
         this.f26002d = -1;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class MotionLayout<T1,T2,T3,T4> {
+        public MotionLayout() {
+        }
+    }
 }

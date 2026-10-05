@@ -445,4 +445,10 @@ public final class g {
             t.d = new com.github.rudroid.actions.checkdetail.j(aVar, str, e1Var2, aVar2, bVar, i, 21);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

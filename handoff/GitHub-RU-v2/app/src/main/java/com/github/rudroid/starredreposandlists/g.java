@@ -14,4 +14,10 @@ public abstract class g<T extends k5.f> extends d3<T> {
         this.u0 = true;
         ((n0) w()).B0((StarredRepositoriesAndListsActivity) this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

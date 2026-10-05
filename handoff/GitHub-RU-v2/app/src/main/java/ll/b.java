@@ -19,4 +19,10 @@ public final class b {
         k.g(str2, "slug");
         return b31.b.J(((j0) this.a.a(jVar)).f(str, str2, str3), jVar, cVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

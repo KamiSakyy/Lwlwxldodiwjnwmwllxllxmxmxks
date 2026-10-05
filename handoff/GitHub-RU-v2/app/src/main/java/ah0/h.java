@@ -90,4 +90,10 @@ public final class h implements aa.a {
     public final /* bridge */ /* synthetic */ void b(ea.f fVar, w wVar, Object obj) {
         d(fVar, wVar, (e) obj);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

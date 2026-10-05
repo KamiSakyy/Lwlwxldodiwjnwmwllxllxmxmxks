@@ -829,4 +829,10 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
     public final void u4() {
         s4(2132148238);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Preference<T1,T2,T3,T4> {
+        public Preference() {
+        }
+    }
 }

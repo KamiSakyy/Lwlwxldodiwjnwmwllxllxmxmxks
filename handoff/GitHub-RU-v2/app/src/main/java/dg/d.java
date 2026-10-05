@@ -96,4 +96,10 @@ public final class d {
             t.d = new d1(rVar2, aVar, aVar2, aVar3, e1Var3, e1Var4, str, i, i2);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

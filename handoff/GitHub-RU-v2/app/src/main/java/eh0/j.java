@@ -145,4 +145,10 @@ public abstract class j implements aa.a {
         f4.C(dVar.f, bVar2, fVar, wVar, "isDraft");
         bVar2.b(fVar, wVar, Boolean.valueOf(dVar.g));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

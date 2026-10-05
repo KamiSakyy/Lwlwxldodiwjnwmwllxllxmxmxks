@@ -14,4 +14,10 @@ public abstract class b {
     public abstract void d(p pVar, d dVar);
 
     public abstract void e(com.github.rudroid.copilot.inapppurchase.billingclient.e eVar);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t1<T1,T2,T3,T4> {
+        public t1() {
+        }
+    }
 }

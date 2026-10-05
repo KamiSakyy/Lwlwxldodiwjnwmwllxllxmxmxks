@@ -51,4 +51,10 @@ public final class h0 {
             t.d = new com.github.rudroid.uitoolkit.markdown.components.v(rVar3, str, q0Var2, i, i2, 1);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
 }

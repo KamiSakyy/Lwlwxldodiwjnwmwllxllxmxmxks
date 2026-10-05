@@ -579,4 +579,10 @@ public final class p {
             t.d = new com.github.rudroid.issueorpullrequest.ui.copilot.codereview.r(rVar2, eVar, i, 25);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

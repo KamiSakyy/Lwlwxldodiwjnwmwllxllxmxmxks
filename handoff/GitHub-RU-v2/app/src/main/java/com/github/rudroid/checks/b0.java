@@ -64,4 +64,10 @@ public final class b0 extends k1 implements v3, com.github.rudroid.utilities.vie
     public final boolean a() {
         return h1.g((g1) this.f8755v.getValue()) && this.f8757x.a();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
 }

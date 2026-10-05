@@ -48,4 +48,10 @@ public final /* synthetic */ class c2 implements androidx.fragment.app.f1, e7.k,
             settingsNotificationsFragment.E(new Intent("android.settings.APPLICATION_DETAILS_SETTINGS", Uri.parse("package:com.github.rudroid")), (Bundle) null);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Preference<T1,T2,T3,T4> {
+        public Preference() {
+        }
+    }
 }

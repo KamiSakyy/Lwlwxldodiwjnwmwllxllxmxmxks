@@ -73,4 +73,10 @@ public abstract class g implements aa.a {
         h6.Companion.getClass();
         wVar.e(h6.a).b(fVar, wVar, eVar.e);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

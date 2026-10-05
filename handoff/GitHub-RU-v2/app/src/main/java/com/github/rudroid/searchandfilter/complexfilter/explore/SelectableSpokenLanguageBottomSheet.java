@@ -207,4 +207,10 @@ public final class SelectableSpokenLanguageBottomSheet extends Hilt_SelectableSp
         super.c4(view, bundle);
         w0.a(new h0(new y00.l(((i0) this.Y0.getValue()).t.b, 10)), F3(), androidx.lifecycle.w.u, new x(this, view, null));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

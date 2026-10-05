@@ -110,4 +110,10 @@ public final class v implements a71.g {
         LinkedHashMap C2 = x61.x.C(linkedHashMap2);
         return new e1(context22, C2, q102.s(), i122, x61.m.J0(C2.values()));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x0<T1,T2,T3,T4> {
+        public x0() {
+        }
+    }
 }

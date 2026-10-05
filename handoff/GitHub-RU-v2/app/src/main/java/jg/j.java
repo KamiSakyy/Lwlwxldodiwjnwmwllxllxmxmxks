@@ -18,4 +18,10 @@ public final class j extends f {
         k.g(shortcutsOverviewFragment, "callback");
         this.v = shortcutsOverviewFragment;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class jg<T1,T2,T3,T4> {
+        public jg() {
+        }
+    }
 }

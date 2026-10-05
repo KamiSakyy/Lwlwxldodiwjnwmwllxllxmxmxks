@@ -64,4 +64,10 @@ public abstract class h implements aa.a {
         List list = ud0.d.a;
         ud0.d.d(fVar, wVar, cVar.e);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

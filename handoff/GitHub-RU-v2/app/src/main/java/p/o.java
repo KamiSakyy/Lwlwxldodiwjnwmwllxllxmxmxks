@@ -24,4 +24,10 @@ public final class o implements ActionProvider.VisibilityListener {
             lVar.p(true);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

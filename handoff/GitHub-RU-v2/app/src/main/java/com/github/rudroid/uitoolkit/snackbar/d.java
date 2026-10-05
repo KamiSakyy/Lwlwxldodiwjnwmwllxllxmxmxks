@@ -78,4 +78,10 @@ public final class d {
             t.d = new com.github.rudroid.actions.checkdetail.ui.c(obj2, caVar, cVar, cVar2, cVar6, cVar7, cVar8, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

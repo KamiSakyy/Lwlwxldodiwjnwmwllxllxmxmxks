@@ -52,4 +52,16 @@ public abstract class d<T extends f> extends SwipeRefreshLayout {
         k.g(t, "<set-?>");
         this.j0 = t;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
 }

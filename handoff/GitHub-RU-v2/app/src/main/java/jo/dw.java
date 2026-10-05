@@ -33,4 +33,28 @@ public final class dw {
         o.append(")");
         return o.toString();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m3<T1,T2,T3,T4> {
+        public m3() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o<T1,T2,T3,T4> {
+        public o() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t5<T1,T2,T3,T4> {
+        public t5() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z6<T1,T2,T3,T4> {
+        public z6() {
+        }
+    }
 }

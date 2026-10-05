@@ -37,4 +37,10 @@ public final class d {
         s1 s1Var = new s1();
         return rVar.f(s1Var).f(b).f(s1Var.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g8<T1,T2,T3,T4> {
+        public g8() {
+        }
+    }
 }

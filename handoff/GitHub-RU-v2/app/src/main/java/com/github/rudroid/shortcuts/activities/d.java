@@ -11,4 +11,10 @@ final /* synthetic */ class d extends k71.i implements j71.c {
         w6Var.R(e0.a.a((String) obj));
         return w61.a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

@@ -17,4 +17,10 @@ public final class e {
         k.g(str, "commentId");
         return b31.b.J(((z01.f) this.a.a(jVar)).g(str), jVar, cVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

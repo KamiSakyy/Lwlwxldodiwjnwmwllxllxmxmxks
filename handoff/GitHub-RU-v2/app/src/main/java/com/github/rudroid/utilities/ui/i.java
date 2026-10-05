@@ -130,4 +130,10 @@ public final class i {
             t.d = new com.github.rudroid.fragments.ui.t(rVar2, w1Var, z, f2Var, aVar, str, str2, dVar2, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f2<T1,T2,T3,T4> {
+        public f2() {
+        }
+    }
 }

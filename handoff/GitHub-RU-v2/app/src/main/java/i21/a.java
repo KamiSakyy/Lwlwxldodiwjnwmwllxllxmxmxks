@@ -1374,4 +1374,10 @@ public abstract class a {
     public abstract String o(byte[] bArr, int i, int i2);
 
     public abstract int r(String str, byte[] bArr, int i, int i2);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

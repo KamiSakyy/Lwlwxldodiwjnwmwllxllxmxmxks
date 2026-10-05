@@ -290,4 +290,16 @@ public final class n {
         }
         return null;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class qc<T1,T2,T3,T4> {
+        public qc() {
+        }
+    }
 }

@@ -39,4 +39,10 @@ public final class h {
     public final String toString() {
         return "ShortcutWidgetModel(user=" + this.a + ", shortcut=" + this.b + ", items=" + this.c + ", opacity=" + this.d + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

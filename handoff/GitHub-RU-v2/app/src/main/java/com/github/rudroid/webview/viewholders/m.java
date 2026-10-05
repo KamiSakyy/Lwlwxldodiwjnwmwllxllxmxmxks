@@ -18,4 +18,10 @@ public final class m extends s0 {
         k71.k.g(eVar, "property");
         this.t.N.setWebViewLoadedListener((GitHubWebView.c) obj2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class xg<T1,T2,T3,T4> {
+        public xg() {
+        }
+    }
 }

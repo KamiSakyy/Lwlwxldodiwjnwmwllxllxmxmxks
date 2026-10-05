@@ -38,4 +38,10 @@ public final class c implements aa.a {
         List list = ud0.b.a;
         ud0.b.d(fVar, wVar, aVar.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

@@ -63,4 +63,10 @@ public abstract class i implements aa.a {
         f4.C(aVar.c, bVar, fVar, wVar, "viewerCanUpvote");
         bVar.b(fVar, wVar, Boolean.valueOf(aVar.d));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

@@ -1231,4 +1231,10 @@ public class CollapsingToolbarLayout extends FrameLayout {
         dVar.b = 0.5f;
         return dVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p2<T1,T2,T3,T4> {
+        public p2() {
+        }
+    }
 }

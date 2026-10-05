@@ -60,4 +60,10 @@ public final class v {
         v71.b0.y(i, hVar, s1Var2.equals(s1Var) ? v71.a0.r : v71.a0.u, new m7.x(s1Var2, iVar2, a2, tVar, (a71.c) null));
         return new h1(a2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x1<T1,T2,T3,T4> {
+        public x1() {
+        }
+    }
 }

@@ -26,4 +26,10 @@ public final class n implements g {
         k71.k.f(sharedPreferences, "getSharedPreferences(...)");
         return sharedPreferences;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

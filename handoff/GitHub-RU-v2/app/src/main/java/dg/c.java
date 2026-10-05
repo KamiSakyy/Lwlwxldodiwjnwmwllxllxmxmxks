@@ -56,4 +56,10 @@ public final class c {
             t.d = new s3(rVar, aVar, z, e1Var, str, z2, zonedDateTime, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

@@ -291,4 +291,16 @@ public final class SelectableDiscussionCategoryBottomSheet extends Hilt_Selectab
         com.github.rudroid.searchandfilter.complexfilter.category.i iVar = (com.github.rudroid.searchandfilter.complexfilter.category.i) this.Y0.getValue();
         d1.a(n1.y(new q(new y00.l(iVar.t.b, 10)), iVar.D)).e(F3(), new i(new z(17, this)));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

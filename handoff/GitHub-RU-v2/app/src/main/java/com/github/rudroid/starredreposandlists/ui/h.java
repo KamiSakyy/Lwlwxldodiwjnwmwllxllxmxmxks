@@ -42,4 +42,10 @@ public final class h {
             t.d = new com.github.rudroid.discussions.ui.b(rVar, g1Var, sVar, z, dVar, aVar, eVar, aVar2, eVar2, cVar, bVar, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

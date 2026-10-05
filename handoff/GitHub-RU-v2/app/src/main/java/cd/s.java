@@ -57,4 +57,10 @@ public final class s extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
         k71.k.e(fVar2, "null cannot be cast to non-null type com.github.rudroid.databinding.ListItemComposeViewContainerBinding");
         ((w5) fVar2).N.setContent(new r1.d(new r(this, gVar, fVar, 0), true, 1042615786));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w5<T1,T2,T3,T4> {
+        public w5() {
+        }
+    }
 }

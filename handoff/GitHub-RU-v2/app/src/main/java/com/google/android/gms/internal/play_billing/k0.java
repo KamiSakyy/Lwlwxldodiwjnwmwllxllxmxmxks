@@ -79,4 +79,10 @@ public final class k0 extends b91.g {
     public final boolean j0(m0 m0Var, l0 l0Var, l0 l0Var2) {
         return o0.a(a, m0Var, c, l0Var, l0Var2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Unsafe<T1,T2,T3,T4> {
+        public Unsafe() {
+        }
+    }
 }

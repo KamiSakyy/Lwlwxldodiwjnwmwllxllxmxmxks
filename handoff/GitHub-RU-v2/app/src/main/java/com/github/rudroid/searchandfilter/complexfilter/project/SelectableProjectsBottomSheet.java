@@ -438,4 +438,10 @@ public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjects
         }));
         o0Var.e(F3(), new i(new com.github.rudroid.fragments.onboarding.notifications.viewmodel.z(21, this)));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

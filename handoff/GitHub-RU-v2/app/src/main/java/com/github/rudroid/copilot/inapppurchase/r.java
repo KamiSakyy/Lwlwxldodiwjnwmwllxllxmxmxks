@@ -84,4 +84,10 @@ final class r<T> implements y71.j {
         y1Var32.k((Object) null, bVar22);
         return w61.a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

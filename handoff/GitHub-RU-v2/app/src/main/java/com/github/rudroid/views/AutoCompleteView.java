@@ -375,4 +375,10 @@ public final class AutoCompleteView extends LinearLayout {
     public final void setVerticalOffset(int i) {
         this.w = i;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

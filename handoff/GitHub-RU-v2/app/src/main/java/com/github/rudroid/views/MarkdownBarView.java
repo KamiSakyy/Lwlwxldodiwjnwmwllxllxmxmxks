@@ -45,4 +45,16 @@ public final class MarkdownBarView extends HorizontalScrollView {
         k71.k.g(d0Var, "listener");
         this.r.P0(d0Var);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d0<T1,T2,T3,T4> {
+        public d0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class dh<T1,T2,T3,T4> {
+        public dh() {
+        }
+    }
 }

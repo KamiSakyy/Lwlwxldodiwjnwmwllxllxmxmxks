@@ -17,4 +17,10 @@ public final class d extends com.github.rudroid.adapters.viewholders.e<k5.f> {
         k71.k.g(supportFragment, "callback");
         this.v = supportFragment;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class qe<T1,T2,T3,T4> {
+        public qe() {
+        }
+    }
 }

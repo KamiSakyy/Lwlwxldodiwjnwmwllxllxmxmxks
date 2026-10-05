@@ -40,4 +40,10 @@ public final class i {
         b = new h(q0Var4, q0Var5, a8, a9, a11, a12, a13, a14, q0.a(q0Var6, j2, 0L, (s) null, (o) null, (k3.i) null, 0L, 0, 0L, (z) null, (r3.i) null, 16777214), q0.a(cVar2.E, j2, 0L, (s) null, (o) null, (k3.i) null, 0L, 0, 0L, (z) null, (r3.i) null, 16777214));
         c = new j3(new cb.b(11));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j3<T1,T2,T3,T4> {
+        public j3() {
+        }
+    }
 }

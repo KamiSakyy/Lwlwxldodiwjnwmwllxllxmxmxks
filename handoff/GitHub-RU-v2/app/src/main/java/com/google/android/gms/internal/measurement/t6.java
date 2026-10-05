@@ -9,4 +9,10 @@ public final class t6 implements j41.d {
     public final Object get() {
         return (u6) this.r.r;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

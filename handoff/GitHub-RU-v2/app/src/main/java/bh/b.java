@@ -169,4 +169,10 @@ public final /* synthetic */ class b implements e {
         this.y = hVar2;
         this.t = i;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c1<T1,T2,T3,T4> {
+        public c1() {
+        }
+    }
 }

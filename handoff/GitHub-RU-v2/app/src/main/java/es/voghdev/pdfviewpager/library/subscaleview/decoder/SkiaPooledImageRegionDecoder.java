@@ -222,4 +222,10 @@ public class SkiaPooledImageRegionDecoder implements c {
             this.b.writeLock().unlock();
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x1<T1,T2,T3,T4> {
+        public x1() {
+        }
+    }
 }

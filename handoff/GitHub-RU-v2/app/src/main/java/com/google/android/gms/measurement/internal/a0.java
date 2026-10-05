@@ -7,4 +7,10 @@ public abstract class a0 extends androidx.compose.foundation.lazy.layout.s0 {
         o1.m(m1Var);
         m1Var.z();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o2<T1,T2,T3,T4> {
+        public o2() {
+        }
+    }
 }

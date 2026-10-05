@@ -30,4 +30,10 @@ final class f0 extends c71.j implements j71.e {
         v71.b0.z(this.v, (a71.h) null, (v71.a0) null, new e0(this.w, null), 3);
         return w61.a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v<T1,T2,T3,T4> {
+        public v() {
+        }
+    }
 }

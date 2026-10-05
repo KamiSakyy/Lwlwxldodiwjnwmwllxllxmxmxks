@@ -103,4 +103,10 @@ public final class h {
             t.d = new x0(rVar2, i, str, c0009d, cVar, list, i2, 7);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

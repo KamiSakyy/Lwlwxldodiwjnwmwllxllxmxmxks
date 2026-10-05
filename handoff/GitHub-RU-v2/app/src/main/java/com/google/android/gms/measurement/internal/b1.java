@@ -109,4 +109,10 @@ public final class b1 {
     public /* synthetic */ b1(o4 o4Var) {
         this.e = o4Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

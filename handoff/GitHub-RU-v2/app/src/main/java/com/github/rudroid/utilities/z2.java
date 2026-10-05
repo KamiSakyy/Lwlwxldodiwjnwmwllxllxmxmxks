@@ -15,4 +15,10 @@ public final class z2 extends l7.t0 {
             rect.top = 0;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
 }

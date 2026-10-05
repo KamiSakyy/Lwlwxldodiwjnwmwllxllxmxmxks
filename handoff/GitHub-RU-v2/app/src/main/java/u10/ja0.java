@@ -30,4 +30,10 @@ public final class ja0 {
     public final String toString() {
         return com.github.rudroid.copilot.h1.p(com.github.rudroid.copilot.h1.t("Viewer(isEmployee=", ", id=", this.b, ", __typename=", this.a), this.c, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

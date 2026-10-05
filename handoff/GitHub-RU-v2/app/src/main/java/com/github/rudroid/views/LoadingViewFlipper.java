@@ -547,4 +547,22 @@ public final class LoadingViewFlipper extends ViewAnimator {
             this(str, (i & 2) != 0 ? null : str2, (i & 8) != 0 ? null : 2131953542, (i & 16) != 0 ? new com.github.rudroid.widget.p(15) : aVar);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ComposeView<T1,T2,T3,T4> {
+        public ComposeView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class SwipeRefreshLayout<T1,T2,T3,T4> {
+        public SwipeRefreshLayout() {
+        }
+    }
 }

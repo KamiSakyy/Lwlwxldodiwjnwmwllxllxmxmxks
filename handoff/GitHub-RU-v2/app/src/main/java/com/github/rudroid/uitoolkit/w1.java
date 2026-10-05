@@ -223,4 +223,10 @@ public final class w1 {
     public static final float d(androidx.compose.runtime.s sVar) {
         return f0.o.u(sVar) ? 0.32f : 0.16f;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r<T1,T2,T3,T4> {
+        public r() {
+        }
+    }
 }

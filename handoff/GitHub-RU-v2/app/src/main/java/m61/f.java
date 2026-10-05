@@ -109,4 +109,16 @@ public final class f implements o61.b {
     public f(com.github.rudroid.webview.viewholders.j jVar) {
         this.u = jVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

@@ -186,4 +186,10 @@ public final class ChooseShortcutRepositoryFragment extends Hilt_ChooseShortcutR
         B4().Q.q(new com.github.rudroid.shortcuts.activities.c(this, 1));
         com.github.rudroid.utilities.w0.a(((w6) l1Var.getValue()).F, F3(), androidx.lifecycle.w.u, new com.github.rudroid.shortcuts.activities.f(this, null));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

@@ -36,4 +36,10 @@ public abstract class c {
         h0 h0Var = d.D;
         h0Var.sendMessage(h0Var.obtainMessage(7, this));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

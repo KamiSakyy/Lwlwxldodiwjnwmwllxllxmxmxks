@@ -25,4 +25,10 @@ public final class p extends k71.l implements j71.c {
                 return Double.valueOf(aa1.b.t(this.f21899t.f21907k.c(((Number) obj).doubleValue()), r10.f21902e, r10.f21903f));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
 }

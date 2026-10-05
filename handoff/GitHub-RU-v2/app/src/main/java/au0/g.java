@@ -55,4 +55,10 @@ public abstract class g implements aa.a {
         fVar.z0("pullRequestCommit");
         aa.c.c(f.a, false).b(fVar, wVar, dVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

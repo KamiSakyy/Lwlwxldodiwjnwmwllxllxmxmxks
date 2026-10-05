@@ -1170,4 +1170,22 @@ public class BottomSheetBehavior<V extends View> extends b implements p31.b {
         }
         throw new IllegalArgumentException("ratio must be a float value between 0 and 1");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CoordinatorLayout<T1,T2,T3,T4> {
+        public CoordinatorLayout() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
 }

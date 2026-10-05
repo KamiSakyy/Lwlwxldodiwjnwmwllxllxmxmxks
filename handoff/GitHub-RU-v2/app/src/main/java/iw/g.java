@@ -63,4 +63,10 @@ public final class g implements aa.a {
         f4.C(cVar.c, aa.c.f, fVar, wVar, "id");
         bVar.b(fVar, wVar, cVar.d);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

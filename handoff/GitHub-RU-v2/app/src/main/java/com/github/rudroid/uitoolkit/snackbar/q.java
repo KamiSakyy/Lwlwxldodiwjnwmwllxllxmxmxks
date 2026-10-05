@@ -69,4 +69,10 @@ public final class q {
             t2.d = new e(rVar2, aVar, str, str2, str3, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

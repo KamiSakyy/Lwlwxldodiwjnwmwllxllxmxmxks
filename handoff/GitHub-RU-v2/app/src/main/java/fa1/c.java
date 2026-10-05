@@ -49,4 +49,10 @@ public final class c extends m {
                 return new x3(14, l1Var.C(x0.g(0, (ParameterizedType) type), annotationArr));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

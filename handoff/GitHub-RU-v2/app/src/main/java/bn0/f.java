@@ -93,4 +93,10 @@ public abstract class f implements aa.a {
         fVar.z0("snippets");
         aa.c.a(aa.c.c(j.a, false)).e(fVar, wVar, eVar.f);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

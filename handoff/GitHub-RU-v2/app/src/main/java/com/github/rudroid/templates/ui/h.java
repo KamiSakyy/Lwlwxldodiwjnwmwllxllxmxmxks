@@ -288,4 +288,10 @@ public final class h {
             t.d = new q(rVar2, k5Var, i, 6);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

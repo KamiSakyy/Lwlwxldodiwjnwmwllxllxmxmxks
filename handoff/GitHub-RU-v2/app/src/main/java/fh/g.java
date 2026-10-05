@@ -84,4 +84,16 @@ public final /* synthetic */ class g implements j71.e {
         this.G = i2;
         this.H = i3;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e0<T1,T2,T3,T4> {
+        public e0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v<T1,T2,T3,T4> {
+        public v() {
+        }
+    }
 }

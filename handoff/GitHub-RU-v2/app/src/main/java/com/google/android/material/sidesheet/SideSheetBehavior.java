@@ -568,4 +568,22 @@ public class SideSheetBehavior<V extends View> extends b implements p31.b {
         obtainStyledAttributes.recycle();
         ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CoordinatorLayout<T1,T2,T3,T4> {
+        public CoordinatorLayout() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
 }

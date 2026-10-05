@@ -159,4 +159,10 @@ public abstract class g extends i {
     public abstract int y();
 
     public abstract int z(CoordinatorLayout coordinatorLayout, View view, int i, int i2, int i3);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CoordinatorLayout<T1,T2,T3,T4> {
+        public CoordinatorLayout() {
+        }
+    }
 }

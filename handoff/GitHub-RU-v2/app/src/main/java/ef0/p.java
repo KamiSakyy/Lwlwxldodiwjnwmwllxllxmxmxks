@@ -81,4 +81,10 @@ public final class p implements aa.a {
         fVar.z0("isPrivate");
         aa.c.f.b(fVar, wVar, Boolean.valueOf(fVar2.e));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

@@ -53,4 +53,10 @@ public final class l {
             t.d = new com.github.rudroid.actions.shared.ui.c(rVar2, list, cVar, z2, i, i2);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

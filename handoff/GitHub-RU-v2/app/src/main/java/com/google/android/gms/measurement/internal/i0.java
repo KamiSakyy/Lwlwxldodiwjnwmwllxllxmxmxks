@@ -10,4 +10,10 @@ public final class i0 extends com.google.android.gms.internal.measurement.x impl
         com.google.android.gms.internal.measurement.z.b(g, h4Var);
         M(g);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
 }

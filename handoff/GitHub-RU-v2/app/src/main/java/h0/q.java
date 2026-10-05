@@ -15,4 +15,10 @@ public interface q {
         float f13 = f12 - f11;
         return Math.abs(f6) < Math.abs(f13) ? f6 : f13;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p<T1,T2,T3,T4> {
+        public p() {
+        }
+    }
 }

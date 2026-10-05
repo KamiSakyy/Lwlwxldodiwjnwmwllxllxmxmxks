@@ -87,4 +87,16 @@ public final class e {
             t.d = new x0(rVar2, str, q0Var2, d2Var2, dVar, i, i2, 6);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

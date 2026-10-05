@@ -145,4 +145,10 @@ public abstract class a extends BaseAdapter implements Filterable {
         a(view, this.f24771t);
         return view;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

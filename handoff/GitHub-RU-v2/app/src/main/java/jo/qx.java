@@ -22,4 +22,16 @@ public final class qx {
     public final String toString() {
         return "OnRepository(forks=" + this.a + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c1<T1,T2,T3,T4> {
+        public c1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

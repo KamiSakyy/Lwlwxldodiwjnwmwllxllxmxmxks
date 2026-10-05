@@ -491,4 +491,16 @@ public final class c extends i {
         recycledViewPool.b(10);
         recycledViewPool.b(17);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w0<T1,T2,T3,T4> {
+        public w0() {
+        }
+    }
 }

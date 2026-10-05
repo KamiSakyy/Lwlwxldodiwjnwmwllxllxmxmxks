@@ -42,4 +42,16 @@ public final class c4 {
         sb.append("}");
         return sb.toString();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g<T1,T2,T3,T4> {
+        public g() {
+        }
+    }
 }

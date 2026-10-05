@@ -44,4 +44,10 @@ public final class d implements aa.a {
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(b.a, true)))).b(fVar, wVar, eVar.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

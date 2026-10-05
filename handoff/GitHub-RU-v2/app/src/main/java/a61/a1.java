@@ -73,4 +73,10 @@ public final class a1 extends Handler {
         super(looper);
         this.b = preferenceFragmentCompat;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class PreferenceFragmentCompat<T1,T2,T3,T4> {
+        public PreferenceFragmentCompat() {
+        }
+    }
 }

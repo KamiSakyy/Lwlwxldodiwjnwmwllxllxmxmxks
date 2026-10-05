@@ -669,4 +669,28 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
                 break;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p2<T1,T2,T3,T4> {
+        public p2() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x1<T1,T2,T3,T4> {
+        public x1() {
+        }
+    }
 }

@@ -28,4 +28,10 @@ public final class c implements aa.a {
         fVar.z0("downloadUrl");
         aa.c.i.b(fVar, wVar, fVar2.a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

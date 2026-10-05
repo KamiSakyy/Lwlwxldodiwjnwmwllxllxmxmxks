@@ -9,4 +9,10 @@ public final class w1 implements x1 {
     public final String toString() {
         return "SizeMode.Single";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r<T1,T2,T3,T4> {
+        public r() {
+        }
+    }
 }

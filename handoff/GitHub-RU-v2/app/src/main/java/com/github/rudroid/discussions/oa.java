@@ -21,4 +21,10 @@ final class oa<T> implements y71.j {
         com.github.rudroid.utilities.w0.p(y1Var, rVar);
         return w61.a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

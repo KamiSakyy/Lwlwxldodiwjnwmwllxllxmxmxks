@@ -60,4 +60,10 @@ public final class m {
     public static final d.C0009d b(s sVar) {
         return new d.C0009d("overflow_menu_refresh_id", i4.p0(2131953223, sVar), (String) null, (com.github.rudroid.uitoolkit.text.o) null, (String) null, ih.d.b(sVar).s, 0L, ih.d.b(sVar).z, false, false, 0, 3932);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

@@ -708,4 +708,10 @@ public final /* synthetic */ class d implements j71.c {
         this.s = w1Var;
         this.t = f1Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w1<T1,T2,T3,T4> {
+        public w1() {
+        }
+    }
 }

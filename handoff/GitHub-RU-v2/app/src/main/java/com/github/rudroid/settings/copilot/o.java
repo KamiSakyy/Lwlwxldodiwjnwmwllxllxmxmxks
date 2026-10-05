@@ -85,4 +85,10 @@ public final class o extends k1 {
             this.H = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new a0(this, jVar, null), 3);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r0<T1,T2,T3,T4> {
+        public r0() {
+        }
+    }
 }

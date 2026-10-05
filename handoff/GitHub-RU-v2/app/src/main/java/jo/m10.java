@@ -35,4 +35,22 @@ public final class m10 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b00<T1,T2,T3,T4> {
+        public b00() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m8<T1,T2,T3,T4> {
+        public m8() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q8<T1,T2,T3,T4> {
+        public q8() {
+        }
+    }
 }

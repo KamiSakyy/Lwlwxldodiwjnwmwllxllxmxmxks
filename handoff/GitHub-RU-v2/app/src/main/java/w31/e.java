@@ -24,4 +24,10 @@ public final class e implements z {
         iVar.j();
         return p2Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p2<T1,T2,T3,T4> {
+        public p2() {
+        }
+    }
 }

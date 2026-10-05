@@ -22,4 +22,16 @@ public final class d2 implements androidx.compose.ui.layout.v0 {
         this.d.getValue();
         return x0Var.h0((int) (f >> 32), (int) (f & 4294967295L), x61.s.r, new c2(this.b, list));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p0<T1,T2,T3,T4> {
+        public p0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t<T1,T2,T3,T4> {
+        public t() {
+        }
+    }
 }

@@ -123,4 +123,10 @@ public final class n0 {
         k71.k.d(arrayList4);
         arrayList4.add(str2 != null ? f91.a.a(str2, 0, 0, " !\"#$&'(),/:;<=>?@[]\\^`{|}~", 91) : null);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

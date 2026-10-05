@@ -528,4 +528,10 @@ public final class d {
         this.g = applicationContext;
         new x();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t<T1,T2,T3,T4> {
+        public t() {
+        }
+    }
 }

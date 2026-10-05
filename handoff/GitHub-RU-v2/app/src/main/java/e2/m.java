@@ -23,4 +23,10 @@ public final /* synthetic */ class m implements i {
                 return this.f21893s.f21908n.c(aa1.b.t(d10, r0.f21902e, r0.f21903f));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
 }

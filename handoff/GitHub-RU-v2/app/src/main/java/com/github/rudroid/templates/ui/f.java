@@ -65,4 +65,10 @@ public final class f {
             t.d = new bd.d(rVar2, cVar, g1Var, sVar3, i, 28);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

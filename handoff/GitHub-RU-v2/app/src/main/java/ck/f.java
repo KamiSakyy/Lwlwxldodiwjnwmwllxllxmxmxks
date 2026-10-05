@@ -16,4 +16,10 @@ public final class f implements b {
     public final Object a(c71.c cVar) {
         return m71.a.M(cVar, this.a, true, false, new cd0.a(21));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

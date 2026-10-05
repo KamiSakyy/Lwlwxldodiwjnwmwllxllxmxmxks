@@ -84,4 +84,10 @@ public final class r0 implements InvocationHandler {
         s sVar2 = sVar;
         return sVar2.a(new z(sVar2.a, obj, objArr2, sVar2.b, sVar2.c), objArr2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

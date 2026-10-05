@@ -84,4 +84,10 @@ public final class RegisterTwoFactorWorker extends CoroutineWorker {
         b71.a aVar22 = b71.a.r;
         i = aVar.w;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e0<T1,T2,T3,T4> {
+        public e0() {
+        }
+    }
 }

@@ -38,4 +38,16 @@ public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T
         obtainStyledAttributes.getBoolean(1, true);
         obtainStyledAttributes.recycle();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CoordinatorLayout<T1,T2,T3,T4> {
+        public CoordinatorLayout() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
 }

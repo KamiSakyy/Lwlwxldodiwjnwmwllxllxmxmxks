@@ -24,4 +24,46 @@ public abstract class WorkDatabase extends w {
     public abstract t y();
 
     public abstract v z();
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class n<T1,T2,T3,T4> {
+        public n() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t<T1,T2,T3,T4> {
+        public t() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v<T1,T2,T3,T4> {
+        public v() {
+        }
+    }
 }

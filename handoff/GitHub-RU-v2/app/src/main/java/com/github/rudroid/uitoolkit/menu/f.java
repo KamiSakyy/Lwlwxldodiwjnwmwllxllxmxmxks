@@ -45,4 +45,10 @@ public final /* synthetic */ class f implements j71.e {
         this.w = uaVar;
         this.v = i;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ua<T1,T2,T3,T4> {
+        public ua() {
+        }
+    }
 }

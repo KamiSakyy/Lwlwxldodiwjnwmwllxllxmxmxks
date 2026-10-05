@@ -355,4 +355,10 @@ public final class m implements Cloneable {
         }
         return nVar.e;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t1<T1,T2,T3,T4> {
+        public t1() {
+        }
+    }
 }

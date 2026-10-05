@@ -65,4 +65,10 @@ public final class g implements aa.a {
         fVar.z0("summary");
         aa.c.a(aa.c.c(h.a, false)).e(fVar, wVar, hVar.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

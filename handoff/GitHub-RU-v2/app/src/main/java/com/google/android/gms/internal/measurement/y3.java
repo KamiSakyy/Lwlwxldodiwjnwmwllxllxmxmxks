@@ -14,4 +14,10 @@ public abstract class y3 {
         b = Pattern.compile("^(1|true|t|on|yes|y)$", 2);
         c = Pattern.compile("^(0|false|f|off|no|n)$", 2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p<T1,T2,T3,T4> {
+        public p() {
+        }
+    }
 }

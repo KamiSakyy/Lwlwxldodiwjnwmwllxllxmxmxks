@@ -216,4 +216,10 @@ public final class ListDetailFragment extends Hilt_ListDetailFragment implements
             com.github.rudroid.main.navigation.f.a(sy.s.i(this), "EXTRA_USER_LIST_METADATA", F3(), new g(0, this));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

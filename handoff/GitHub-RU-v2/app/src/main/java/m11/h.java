@@ -730,4 +730,16 @@ public final class h {
         this.g = w1Var;
         this.j = new l1.e(new w1.r[16]);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d1<T1,T2,T3,T4> {
+        public d1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g0<T1,T2,T3,T4> {
+        public g0() {
+        }
+    }
 }

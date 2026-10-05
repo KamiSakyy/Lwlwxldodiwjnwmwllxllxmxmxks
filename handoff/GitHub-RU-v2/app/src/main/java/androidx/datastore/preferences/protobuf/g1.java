@@ -186,4 +186,10 @@ public abstract class g1 {
     public static void o(long j10, Object obj, Object obj2) {
         f2286c.p(j10, obj, obj2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Unsafe<T1,T2,T3,T4> {
+        public Unsafe() {
+        }
+    }
 }

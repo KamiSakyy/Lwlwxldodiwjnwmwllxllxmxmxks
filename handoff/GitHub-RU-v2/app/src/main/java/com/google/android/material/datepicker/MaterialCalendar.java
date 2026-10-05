@@ -183,4 +183,10 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         this.C0.setEnabled(i + 1 < this.A0.getAdapter().k());
         this.B0.setEnabled(i - 1 >= 0);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
 }

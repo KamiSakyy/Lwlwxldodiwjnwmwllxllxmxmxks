@@ -162,4 +162,10 @@ public final /* synthetic */ class i implements j71.f {
         this.u = i2;
         this.s = q0Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
 }

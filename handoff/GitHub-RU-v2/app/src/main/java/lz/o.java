@@ -49,4 +49,10 @@ public final class o {
         o.append(", isInMergeQueue=");
         return com.github.rudroid.m0.l(o, this.g, ", titleHTML=", this.h, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

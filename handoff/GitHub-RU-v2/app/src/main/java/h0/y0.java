@@ -309,4 +309,10 @@ public final class y0 extends c71.j implements j71.e {
         this.f25245x = wVar;
         this.A = z0Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z0<T1,T2,T3,T4> {
+        public z0() {
+        }
+    }
 }

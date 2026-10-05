@@ -220,4 +220,10 @@ public abstract class l implements aa.a {
             bool2 = bool;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

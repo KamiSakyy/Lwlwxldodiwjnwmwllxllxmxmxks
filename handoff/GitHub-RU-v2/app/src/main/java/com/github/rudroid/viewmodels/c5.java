@@ -164,4 +164,10 @@ public final class c5 extends androidx.lifecycle.a implements com.github.rudroid
         c.k((Object) null, g1.a.b(new fl.b(fl.c.D, (String) null, (Integer) 0, (Map) null, this.D.d(), (ApiFailure) null, 104), a0Var));
         return c;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class PullRequestReviewRoute<T1,T2,T3,T4> {
+        public PullRequestReviewRoute() {
+        }
+    }
 }

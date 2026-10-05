@@ -83,4 +83,16 @@ public final class h {
         if (v22 != aVar2) {
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x1<T1,T2,T3,T4> {
+        public x1() {
+        }
+    }
 }

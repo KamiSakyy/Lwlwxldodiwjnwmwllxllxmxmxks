@@ -83,4 +83,10 @@ public final class o0 {
             throw x0.n(this.c, i, "Parameter type must not include a type variable or wildcard: %s", type);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

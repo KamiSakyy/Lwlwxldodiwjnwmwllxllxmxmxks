@@ -54,4 +54,10 @@ public final class aa implements aa.a {
         fVar.z0("__typename");
         bVar.b(fVar, wVar, yeVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

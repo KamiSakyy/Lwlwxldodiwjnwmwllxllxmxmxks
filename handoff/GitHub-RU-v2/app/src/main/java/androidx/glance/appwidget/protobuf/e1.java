@@ -21,4 +21,10 @@ public final class e1 implements PrivilegedExceptionAction {
     public final /* bridge */ /* synthetic */ Object run() {
         return a();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Unsafe<T1,T2,T3,T4> {
+        public Unsafe() {
+        }
+    }
 }

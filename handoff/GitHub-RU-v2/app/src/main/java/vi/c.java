@@ -18,4 +18,16 @@ public final class c {
         k.g(jVar, "user");
         return b31.b.J(((pn.a) this.a.a(jVar)).f(), jVar, cVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g<T1,T2,T3,T4> {
+        public g() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

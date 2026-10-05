@@ -22,4 +22,22 @@ public final class ea0 implements aa.v0 {
     public final String toString() {
         return "Data(viewer=" + this.a + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c1<T1,T2,T3,T4> {
+        public c1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z<T1,T2,T3,T4> {
+        public z() {
+        }
+    }
 }

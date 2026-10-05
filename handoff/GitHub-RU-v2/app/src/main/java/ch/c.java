@@ -17,4 +17,10 @@ public final class c {
         b = new b(j2, j2, dVar2.w0);
         c = new j3(new cb.b(9));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j3<T1,T2,T3,T4> {
+        public j3() {
+        }
+    }
 }

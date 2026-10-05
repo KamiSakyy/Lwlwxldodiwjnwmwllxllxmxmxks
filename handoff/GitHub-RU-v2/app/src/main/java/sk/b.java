@@ -38,4 +38,10 @@ public final class b {
         }
         return b31.b.J(in.r.l(n1.I(b31.b.J(((s) cVar2.a.a(jVar)).b(str, str2, str3, str4, str5, str6, new e01.a(n, list)), jVar, cVar), new a(null, this, jVar, str, str2, str9, str3, cVar))), jVar, cVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

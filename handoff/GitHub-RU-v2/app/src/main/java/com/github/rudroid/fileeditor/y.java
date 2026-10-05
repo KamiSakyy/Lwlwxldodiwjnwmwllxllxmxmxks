@@ -75,4 +75,10 @@ public final /* synthetic */ class y implements j71.c {
                 return x.a(xVar3, null, !k71.k.b(xVar3.f12991a, this.f13000s.I), false, null, null, null, null, null, 253);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b0<T1,T2,T3,T4> {
+        public b0() {
+        }
+    }
 }

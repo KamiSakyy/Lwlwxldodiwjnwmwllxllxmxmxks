@@ -22,4 +22,10 @@ public final class r1 implements j71.g {
         sVar.V();
         return w61.a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

@@ -161,4 +161,10 @@ public final class a extends e implements d {
         StrictMode.noteSlowCall("newSSLContext");
         return super.l();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y<T1,T2,T3,T4> {
+        public y() {
+        }
+    }
 }

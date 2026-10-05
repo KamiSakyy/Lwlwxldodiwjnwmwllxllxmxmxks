@@ -21,4 +21,10 @@ public final class q extends c71.c {
         this.y |= Integer.MIN_VALUE;
         return this.x.a(null, null, null, this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ac<T1,T2,T3,T4> {
+        public ac() {
+        }
+    }
 }

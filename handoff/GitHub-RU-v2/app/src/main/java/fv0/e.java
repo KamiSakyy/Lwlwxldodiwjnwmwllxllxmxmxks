@@ -54,4 +54,10 @@ public final class e implements aa.a {
             pv0.d.d(fVar, wVar, bVar2);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

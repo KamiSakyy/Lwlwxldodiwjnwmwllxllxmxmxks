@@ -44,4 +44,10 @@ public final class n implements aa.a {
         fVar.z0("statusChecks");
         aa.c.b(aa.c.c(o.a, false)).b(fVar, wVar, qVar.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

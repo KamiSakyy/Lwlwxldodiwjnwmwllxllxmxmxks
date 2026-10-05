@@ -36,4 +36,10 @@ public final class ct {
         o.append(")");
         return o.toString();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class u<T1,T2,T3,T4> {
+        public u() {
+        }
+    }
 }

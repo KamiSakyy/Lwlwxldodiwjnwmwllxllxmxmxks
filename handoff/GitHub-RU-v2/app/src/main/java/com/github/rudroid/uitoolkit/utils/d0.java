@@ -28,4 +28,10 @@ public final class d0 {
         dVar.d(g3.h.a(string, new h0(j, 0L, (k3.s) null, (k3.o) null, (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65534)));
         return dVar.k();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
 }

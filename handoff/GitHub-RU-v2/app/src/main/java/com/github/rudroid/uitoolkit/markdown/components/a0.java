@@ -405,4 +405,10 @@ public final class a0 {
             t.d = new com.github.rudroid.uitoolkit.g(rVar, gVar, q0Var, arrayList, j, bVar, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
 }

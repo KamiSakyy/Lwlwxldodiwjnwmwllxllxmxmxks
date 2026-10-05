@@ -52,4 +52,10 @@ public final class c implements aa.a {
         List list = ci0.b.a;
         ci0.b.d(fVar, wVar, dVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

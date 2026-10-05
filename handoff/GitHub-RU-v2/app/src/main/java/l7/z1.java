@@ -306,4 +306,10 @@ public class z1 {
         this.f28381d = 0;
         this.f28382e = i;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class StaggeredGridLayoutManager<T1,T2,T3,T4> {
+        public StaggeredGridLayoutManager() {
+        }
+    }
 }

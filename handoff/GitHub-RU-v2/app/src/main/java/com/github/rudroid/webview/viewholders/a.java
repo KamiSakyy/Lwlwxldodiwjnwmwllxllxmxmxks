@@ -103,4 +103,16 @@ public final class a extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
         view2.setLayoutParams(layoutParams3);
         view2.setBackgroundResource(b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class vg<T1,T2,T3,T4> {
+        public vg() {
+        }
+    }
 }

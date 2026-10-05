@@ -19,4 +19,22 @@ public abstract class j0 {
         f22306b = log;
         f22307c = log - 1.0d;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
 }

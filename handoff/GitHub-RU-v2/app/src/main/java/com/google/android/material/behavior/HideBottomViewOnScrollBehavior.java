@@ -105,4 +105,10 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends b {
 
     public HideBottomViewOnScrollBehavior(Context context, AttributeSet attributeSet) {
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CoordinatorLayout<T1,T2,T3,T4> {
+        public CoordinatorLayout() {
+        }
+    }
 }

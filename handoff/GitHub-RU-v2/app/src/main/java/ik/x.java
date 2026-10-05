@@ -58,4 +58,10 @@ public final class x {
         }
         return b31.b.J(new a61.l0((y71.i) obj2, this, 13), jVar, q5Var);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q5<T1,T2,T3,T4> {
+        public q5() {
+        }
+    }
 }

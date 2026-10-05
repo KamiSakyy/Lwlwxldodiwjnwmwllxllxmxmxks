@@ -1445,4 +1445,10 @@ public final class t2 extends e0 {
             }
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s2<T1,T2,T3,T4> {
+        public s2() {
+        }
+    }
 }

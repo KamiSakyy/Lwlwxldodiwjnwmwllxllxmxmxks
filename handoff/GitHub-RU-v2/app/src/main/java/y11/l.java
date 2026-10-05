@@ -188,4 +188,10 @@ public final class l {
         this.c = aVar;
         this.d = hVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

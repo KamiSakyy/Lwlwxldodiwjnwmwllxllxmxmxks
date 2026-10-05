@@ -55,4 +55,10 @@ public final class b extends j implements j71.e {
         }
         return a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
 }

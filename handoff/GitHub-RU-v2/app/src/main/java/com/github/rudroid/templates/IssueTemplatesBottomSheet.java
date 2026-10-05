@@ -121,4 +121,10 @@ public final class IssueTemplatesBottomSheet extends Hilt_IssueTemplatesBottomSh
     public final l I4() {
         return (l) this.S0.getValue();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

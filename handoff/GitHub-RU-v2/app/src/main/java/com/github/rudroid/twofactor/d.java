@@ -13,4 +13,10 @@ public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t<
         this.j0 = true;
         ((f) w()).s0((TwoFactorActivity) this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

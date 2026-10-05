@@ -25,4 +25,10 @@ public abstract class b implements d {
     public abstract int c();
 
     public abstract boolean d(Object obj);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g<T1,T2,T3,T4> {
+        public g() {
+        }
+    }
 }

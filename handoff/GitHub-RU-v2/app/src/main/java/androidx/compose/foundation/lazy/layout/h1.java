@@ -13,4 +13,10 @@ public interface h1 {
     Object e(int i, l1 l1Var);
 
     d3.d f();
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

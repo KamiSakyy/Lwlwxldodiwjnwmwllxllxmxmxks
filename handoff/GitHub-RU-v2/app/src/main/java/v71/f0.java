@@ -8,4 +8,16 @@ public class f0 extends a implements e0 {
         b71.a aVar = b71.a.r;
         return s;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c<T1,T2,T3,T4> {
+        public c() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

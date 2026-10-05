@@ -5982,4 +5982,28 @@ public final class z5 implements g6 {
         int i2 = i / 3;
         return (j5) this.b[i2 + i2 + 1];
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Unsafe<T1,T2,T3,T4> {
+        public Unsafe() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class n<T1,T2,T3,T4> {
+        public n() {
+        }
+    }
 }

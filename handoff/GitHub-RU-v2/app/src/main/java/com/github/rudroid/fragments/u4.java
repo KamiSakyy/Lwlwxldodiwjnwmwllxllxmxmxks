@@ -15,4 +15,10 @@ public final class u4 extends k71.l implements j71.a {
     public final Object a() {
         return this.f14419s;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class PullRequestReviewFragment<T1,T2,T3,T4> {
+        public PullRequestReviewFragment() {
+        }
+    }
 }

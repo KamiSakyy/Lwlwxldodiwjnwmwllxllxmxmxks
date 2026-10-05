@@ -15,4 +15,10 @@ public final class j {
         }
         return b31.b.L(c.a(k41.b.t(z5.l.a).d(new i6.m(n6.d.a)).d(b6.b.a).d(new z5.c(k.b))), i21.a.e((j71.a) N, sVar));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

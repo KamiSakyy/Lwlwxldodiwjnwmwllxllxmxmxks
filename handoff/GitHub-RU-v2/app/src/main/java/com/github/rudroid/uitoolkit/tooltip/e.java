@@ -373,4 +373,16 @@ public final class e {
             t.d = new r6(rVar, aVar, c8Var, p0Var, zVar, dVar, dVar2, eVar, dVar3, i);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c8<T1,T2,T3,T4> {
+        public c8() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

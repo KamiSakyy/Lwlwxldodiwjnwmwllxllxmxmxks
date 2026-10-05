@@ -93,4 +93,10 @@ public final class j implements aa.a {
         f4.C(rVar.c, aa.c.f, fVar, wVar, "type");
         fVar.I(rVar.d.r);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

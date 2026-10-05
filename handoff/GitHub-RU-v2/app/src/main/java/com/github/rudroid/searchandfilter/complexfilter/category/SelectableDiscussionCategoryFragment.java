@@ -96,4 +96,10 @@ public final class SelectableDiscussionCategoryFragment extends Hilt_SelectableD
     public final d0 I4() {
         return (i) this.I0.getValue();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

@@ -88,4 +88,10 @@ public final class i extends d {
             this.d = (i >= 35 ? new t2(window, cVar) : i >= 30 ? new r2(window, cVar) : new q2(window, cVar)).P();
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p2<T1,T2,T3,T4> {
+        public p2() {
+        }
+    }
 }

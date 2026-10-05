@@ -48,4 +48,10 @@ public final class j implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, dVar.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

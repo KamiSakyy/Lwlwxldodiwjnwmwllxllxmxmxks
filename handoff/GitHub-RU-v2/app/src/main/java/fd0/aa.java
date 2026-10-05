@@ -49,4 +49,10 @@ public final class aa implements aa.a {
         List list = wk0.d1.a;
         wk0.d1.d(fVar, wVar, xeVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

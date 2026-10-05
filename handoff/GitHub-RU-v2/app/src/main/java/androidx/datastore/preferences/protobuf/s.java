@@ -56,4 +56,10 @@ public abstract class s implements Cloneable {
         sVar.f2375s = b();
         return sVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class u<T1,T2,T3,T4> {
+        public u() {
+        }
+    }
 }

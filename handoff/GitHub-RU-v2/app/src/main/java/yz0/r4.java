@@ -59,4 +59,10 @@ public final class r4 extends o.b {
         o.append(", repoName=");
         return com.github.rudroid.m0.k(o, this.z, ", isInMergeQueue=", this.A, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

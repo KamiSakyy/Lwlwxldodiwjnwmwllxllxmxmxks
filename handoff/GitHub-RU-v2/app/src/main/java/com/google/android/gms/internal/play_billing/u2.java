@@ -23,4 +23,10 @@ public abstract class u2 {
     public abstract void f(Object obj, long j, float f);
 
     public abstract boolean g(long j, Object obj);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Unsafe<T1,T2,T3,T4> {
+        public Unsafe() {
+        }
+    }
 }

@@ -14,4 +14,10 @@ public final class r extends n1 {
         this.u = lfVar;
         lfVar.P0(selectableLabelFragment);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class lf<T1,T2,T3,T4> {
+        public lf() {
+        }
+    }
 }

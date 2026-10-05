@@ -152,4 +152,10 @@ public abstract class i implements aa.a {
         f4.C(cVar.f, bVar, fVar, wVar, "id");
         bVar2.b(fVar, wVar, cVar.g);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

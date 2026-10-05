@@ -17,4 +17,10 @@ public abstract class a {
         }
         return new com.github.service.models.response.a(str, avatar, (String) null, false, (String) null, 60);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

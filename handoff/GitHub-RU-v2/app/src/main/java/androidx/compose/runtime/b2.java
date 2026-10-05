@@ -68,4 +68,10 @@ public final class b2 {
         int i = this.f1572b;
         this.f1572b = z10 ? i | 32 : i & (-33);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g0<T1,T2,T3,T4> {
+        public g0() {
+        }
+    }
 }

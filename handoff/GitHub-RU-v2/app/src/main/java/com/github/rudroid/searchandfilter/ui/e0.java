@@ -2461,4 +2461,22 @@ public final class e0 {
         }
         throw new IllegalStateException(("Unknown filter encountered: " + dVar).toString());
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a1<T1,T2,T3,T4> {
+        public a1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j0<T1,T2,T3,T4> {
+        public j0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k0<T1,T2,T3,T4> {
+        public k0() {
+        }
+    }
 }

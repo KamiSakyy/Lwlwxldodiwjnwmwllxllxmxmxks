@@ -834,4 +834,10 @@ public class l implements Menu {
     public final SubMenu addSubMenu(int i, int i10, int i11, int i12) {
         return addSubMenu(i, i10, i11, this.f30251b.getString(i12));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x<T1,T2,T3,T4> {
+        public x() {
+        }
+    }
 }

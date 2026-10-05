@@ -80,4 +80,10 @@ public final class f implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, bVar.f);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

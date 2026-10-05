@@ -34,4 +34,10 @@ public final class a extends m {
         x3 x3Var = this.b;
         return new e51.a(g.I(((c) ((l81.n) x3Var.s)).b, type), x3Var, false, 7);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

@@ -437,4 +437,16 @@ public class FirebaseMessaging {
         }
         return true;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t1<T1,T2,T3,T4> {
+        public t1() {
+        }
+    }
 }

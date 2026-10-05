@@ -54,4 +54,10 @@ public abstract class b implements aa.a {
         f4.C(aVar.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, aVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

@@ -272,4 +272,22 @@ public class e0 {
             this.f28098b = null;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h1<T1,T2,T3,T4> {
+        public h1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w0<T1,T2,T3,T4> {
+        public w0() {
+        }
+    }
 }

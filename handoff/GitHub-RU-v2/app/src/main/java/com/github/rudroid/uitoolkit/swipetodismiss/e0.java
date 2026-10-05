@@ -183,4 +183,16 @@ public final /* synthetic */ class e0 implements j71.e {
         this.w = e1Var;
         this.x = str;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class gb<T1,T2,T3,T4> {
+        public gb() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class jb<T1,T2,T3,T4> {
+        public jb() {
+        }
+    }
 }

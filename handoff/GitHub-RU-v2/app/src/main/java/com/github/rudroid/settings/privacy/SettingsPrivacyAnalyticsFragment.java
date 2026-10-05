@@ -144,4 +144,10 @@ public final class SettingsPrivacyAnalyticsFragment extends Hilt_SettingsPrivacy
     public final void u4() {
         s4(2132148240);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

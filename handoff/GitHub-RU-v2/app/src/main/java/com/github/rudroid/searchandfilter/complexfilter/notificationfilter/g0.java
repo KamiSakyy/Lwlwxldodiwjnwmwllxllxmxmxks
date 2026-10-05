@@ -16,4 +16,10 @@ public final class g0 extends n1 {
         this.u = pfVar;
         this.v = searchAndFilterBaseFragment;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class pf<T1,T2,T3,T4> {
+        public pf() {
+        }
+    }
 }

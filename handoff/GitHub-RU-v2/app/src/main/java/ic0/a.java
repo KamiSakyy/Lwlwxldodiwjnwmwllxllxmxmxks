@@ -788,4 +788,10 @@ public final class a implements aa.a {
                 break;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

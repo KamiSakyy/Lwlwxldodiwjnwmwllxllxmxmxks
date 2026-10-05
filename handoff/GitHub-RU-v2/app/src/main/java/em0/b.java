@@ -29,4 +29,10 @@ public final class b implements aa.a {
         fVar.z0("changeUserStatus");
         aa.c.b(aa.c.c(a.a, false)).b(fVar, wVar, cVar.a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

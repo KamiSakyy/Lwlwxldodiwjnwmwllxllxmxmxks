@@ -200,4 +200,10 @@ public final class c implements aa.i0, bm.k, com.google.android.gms.measurement.
     public void o(ea.f fVar, aa.w wVar, boolean z) {
         k71.k.g(wVar, "customScalarAdapters");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p0<T1,T2,T3,T4> {
+        public p0() {
+        }
+    }
 }

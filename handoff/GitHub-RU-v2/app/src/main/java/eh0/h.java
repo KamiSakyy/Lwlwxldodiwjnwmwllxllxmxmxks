@@ -86,4 +86,10 @@ public abstract class h implements aa.a {
         f4.C(eVar.e, aa.c.f, fVar, wVar, "canonical");
         aa.c.b(aa.c.c(g.a, true)).b(fVar, wVar, eVar.f);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

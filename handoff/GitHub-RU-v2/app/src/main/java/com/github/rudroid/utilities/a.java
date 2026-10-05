@@ -20,4 +20,10 @@ public final class a extends a5.b {
             fVar.b(new b5.b(sparseArray.keyAt(i), (CharSequence) sparseArray.valueAt(i)));
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
 }

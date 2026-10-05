@@ -103,4 +103,10 @@ public final class d extends e implements a21.a {
     public final boolean x() {
         return true;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

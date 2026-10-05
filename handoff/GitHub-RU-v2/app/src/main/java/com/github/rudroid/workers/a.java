@@ -28,4 +28,10 @@ final class a extends c71.c {
         this.C |= Integer.MIN_VALUE;
         return this.B.c(this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

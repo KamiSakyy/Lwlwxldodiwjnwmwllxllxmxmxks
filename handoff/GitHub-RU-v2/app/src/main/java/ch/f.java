@@ -20,4 +20,10 @@ public final class f {
         b = new e(j, j2, j3, new g(j4, dVar2.c, j4), new d(lh.a.a.q, dVar2.F0, new a.b()));
         c = new j3(new cb.b(10));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j3<T1,T2,T3,T4> {
+        public j3() {
+        }
+    }
 }

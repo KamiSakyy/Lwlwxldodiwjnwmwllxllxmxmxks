@@ -26,4 +26,16 @@ public final class aa {
     public final String toString() {
         return com.github.rudroid.m0.e(this.a, "DeleteMobileDeviceToken(success=", ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m0<T1,T2,T3,T4> {
+        public m0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v0<T1,T2,T3,T4> {
+        public v0() {
+        }
+    }
 }

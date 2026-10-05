@@ -64,4 +64,10 @@ public final class CreateNewListActivity extends b1 {
         k71.k.f(string, "getString(...)");
         ((com.github.rudroid.utilities.b) this.u0.getValue()).b(string);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

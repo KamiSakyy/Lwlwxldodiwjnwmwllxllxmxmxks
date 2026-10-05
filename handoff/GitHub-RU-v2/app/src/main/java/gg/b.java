@@ -84,4 +84,10 @@ public final class b extends n1 {
         this.w = w.t(new b2(10, this));
         this.x = new b5.e();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class fh<T1,T2,T3,T4> {
+        public fh() {
+        }
+    }
 }

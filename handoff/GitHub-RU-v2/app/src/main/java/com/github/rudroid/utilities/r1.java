@@ -29,4 +29,10 @@ final class r1 extends c71.j implements j71.e {
         b.o0(new com.github.rudroid.starredreposandlists.u0(25, new q1(b)));
         throw null;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

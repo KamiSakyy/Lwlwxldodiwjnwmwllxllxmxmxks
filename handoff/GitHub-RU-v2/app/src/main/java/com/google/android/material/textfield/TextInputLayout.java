@@ -2926,4 +2926,16 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             sy.n.y(textInputLayout, checkableImageButton, lVar.B);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class AppCompatTextView<T1,T2,T3,T4> {
+        public AppCompatTextView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
 }

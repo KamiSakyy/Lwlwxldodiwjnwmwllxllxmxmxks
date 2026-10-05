@@ -128,4 +128,10 @@ public final class e extends f {
         });
         imageButton.setOnKeyListener(onKeyListener);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class me<T1,T2,T3,T4> {
+        public me() {
+        }
+    }
 }

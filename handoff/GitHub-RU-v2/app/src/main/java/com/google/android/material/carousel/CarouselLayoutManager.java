@@ -321,4 +321,16 @@ public class CarouselLayoutManager extends w0 implements i1 {
             obtainStyledAttributes.recycle();
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e1<T1,T2,T3,T4> {
+        public e1() {
+        }
+    }
 }

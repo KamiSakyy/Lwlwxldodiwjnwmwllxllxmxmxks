@@ -24,4 +24,16 @@ public final class g implements oa.g {
         k.g(jVar, "user");
         return new a1((u) this.a.a(jVar), jVar, this.c, this.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

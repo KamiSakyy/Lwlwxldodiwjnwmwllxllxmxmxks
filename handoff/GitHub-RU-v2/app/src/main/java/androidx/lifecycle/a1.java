@@ -96,4 +96,10 @@ public final class a1 {
         this.f2820a = new LinkedHashMap();
         this.f2821b = new l1((Map) x61.s.r);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

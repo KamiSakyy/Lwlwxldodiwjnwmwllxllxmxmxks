@@ -48,4 +48,10 @@ public final class i6 extends s7 {
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c<T1,T2,T3,T4> {
+        public c() {
+        }
+    }
 }

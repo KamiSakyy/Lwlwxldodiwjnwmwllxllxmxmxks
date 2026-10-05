@@ -12,4 +12,10 @@ final /* synthetic */ class g extends k71.i implements j71.e {
         v71.b0.z(androidx.lifecycle.d1.k(rVar), (a71.h) null, (v71.a0) null, new p(rVar, str, str2, null), 3);
         return w61.a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

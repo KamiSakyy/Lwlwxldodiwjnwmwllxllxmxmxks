@@ -75,4 +75,10 @@ public final class LocalNotificationsWorker extends CoroutineWorker {
         k71.k.f(obj2, "coroutineScope(...)");
         return obj2;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
 }

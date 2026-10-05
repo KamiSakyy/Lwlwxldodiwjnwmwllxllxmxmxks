@@ -135,4 +135,10 @@ public final class RepositoriesFilter extends d {
         this.v = list;
         this.w = i0Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i0<T1,T2,T3,T4> {
+        public i0() {
+        }
+    }
 }

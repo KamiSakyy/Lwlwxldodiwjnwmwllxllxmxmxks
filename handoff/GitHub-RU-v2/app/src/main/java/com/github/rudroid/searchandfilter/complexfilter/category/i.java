@@ -103,4 +103,16 @@ public final class i extends com.github.rudroid.searchandfilter.complexfilter.b<
         k71.k.g(aVar, "item");
         W(aVar.a, aVar.b);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o0<T1,T2,T3,T4> {
+        public o0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z<T1,T2,T3,T4> {
+        public z() {
+        }
+    }
 }

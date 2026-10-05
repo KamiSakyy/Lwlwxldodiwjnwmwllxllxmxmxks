@@ -14,4 +14,10 @@ public final class q extends n1 {
         this.u = gfVar;
         gfVar.P0(selectableMilestoneFragment);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class gf<T1,T2,T3,T4> {
+        public gf() {
+        }
+    }
 }

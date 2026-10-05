@@ -111,4 +111,28 @@ public final class e6 extends t4 implements RandomAccess {
         ((AbstractList) this).modCount++;
         return true;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p<T1,T2,T3,T4> {
+        public p() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y<T1,T2,T3,T4> {
+        public y() {
+        }
+    }
 }

@@ -40,4 +40,10 @@ public final class s0 {
     public final String toString() {
         return "SelectionHandleInfo(handle=" + this.f21216a + ", position=" + ((Object) c2.b.h(this.f21217b)) + ", anchor=" + this.f21218c + ", visible=" + this.f21219d + ')';
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c0<T1,T2,T3,T4> {
+        public c0() {
+        }
+    }
 }

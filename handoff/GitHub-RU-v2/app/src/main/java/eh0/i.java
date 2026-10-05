@@ -115,4 +115,10 @@ public abstract class i implements aa.a {
         fVar.z0("stateReason");
         aa.c.b(hn0.a.t).b(fVar, wVar, cVar.f);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

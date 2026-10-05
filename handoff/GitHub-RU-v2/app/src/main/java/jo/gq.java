@@ -32,4 +32,10 @@ public final class gq {
     public final String toString() {
         return "Teams(pageInfo=" + this.a + ", nodes=" + this.b + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
 }

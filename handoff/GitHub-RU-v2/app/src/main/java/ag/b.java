@@ -115,4 +115,10 @@ public final class b {
             t.d = new a(rVar3, z, z2, cVar, aVar, cVar3, i, i2);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s<T1,T2,T3,T4> {
+        public s() {
+        }
+    }
 }

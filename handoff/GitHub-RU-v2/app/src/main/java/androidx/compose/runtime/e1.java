@@ -40,4 +40,22 @@ public final class e1 {
         this.f1605g = v1Var;
         this.f1606h = arrayList;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s2<T1,T2,T3,T4> {
+        public s2() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y0<T1,T2,T3,T4> {
+        public y0() {
+        }
+    }
 }

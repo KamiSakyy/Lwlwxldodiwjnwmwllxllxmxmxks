@@ -37,4 +37,10 @@ public final /* synthetic */ class m implements DialogInterface.OnClickListener 
                 break;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class LegacyIssueOrPullRequestActivity<T1,T2,T3,T4> {
+        public LegacyIssueOrPullRequestActivity() {
+        }
+    }
 }

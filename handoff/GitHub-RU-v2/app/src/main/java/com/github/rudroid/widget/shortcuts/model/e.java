@@ -24,4 +24,10 @@ public final class e implements i {
         Object b = this.r.b(new d(jVar, this.s, this.t, this.u), cVar);
         return b == b71.a.r ? b : a0.a;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

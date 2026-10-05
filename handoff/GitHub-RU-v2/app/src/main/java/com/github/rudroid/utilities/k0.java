@@ -56,4 +56,10 @@ public final class k0 extends HorizontalScrollView {
     public final void setScrollStateCallback(j71.c cVar) {
         this.r = cVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
 }

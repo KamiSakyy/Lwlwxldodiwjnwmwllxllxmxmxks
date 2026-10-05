@@ -1353,4 +1353,16 @@ public abstract class b {
         }
         throw new NoWhenBranchMatchedException();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class s0<T1,T2,T3,T4> {
+        public s0() {
+        }
+    }
 }

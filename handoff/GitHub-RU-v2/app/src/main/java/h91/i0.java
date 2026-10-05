@@ -13,4 +13,10 @@ public interface i0 extends Closeable, Flushable {
     void close();
 
     void flush();
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
 }

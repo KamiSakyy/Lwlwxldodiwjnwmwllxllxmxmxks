@@ -53,4 +53,10 @@ public final class h implements aa.a {
         List list = l0.a;
         l0.d(fVar, wVar, bVar.c);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

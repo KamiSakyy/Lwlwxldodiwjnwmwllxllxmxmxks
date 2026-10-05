@@ -29,4 +29,10 @@ public final class f implements o1 {
     public final k1 c(Class cls, t6.c cVar) {
         return this.a.containsKey(cls) ? this.c.c(cls, cVar) : this.b.c(cls, cVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

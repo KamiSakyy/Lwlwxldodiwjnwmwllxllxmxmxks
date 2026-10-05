@@ -99,4 +99,10 @@ public final class AppLockSettingsActivity extends w {
         H().i0("request_key_automatic_lock_option", this, new com.github.rudroid.settings.applock.settings.a(this));
         e.c.a(this, new r1.d(new com.github.rudroid.settings.applock.settings.b(this, 0), true, -730549251));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

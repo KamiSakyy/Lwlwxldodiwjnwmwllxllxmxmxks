@@ -292,4 +292,16 @@ public final class SelectableOrganizationBottomSheet extends Hilt_SelectableOrga
         o oVar = (o) this.Y0.getValue();
         d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.organization.n(new y00.l(oVar.t.b, 10)), oVar.D)).e(F3(), new i(new z(20, this)));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

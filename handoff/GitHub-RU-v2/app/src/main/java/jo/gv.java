@@ -26,4 +26,10 @@ public final class gv implements aa.m0 {
     public final String toString() {
         return "Data(deleteUserDashboardPin=" + this.a + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z2<T1,T2,T3,T4> {
+        public z2() {
+        }
+    }
 }

@@ -655,4 +655,10 @@ public final class h0 {
     public /* synthetic */ h0() {
         this(6);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h1<T1,T2,T3,T4> {
+        public h1() {
+        }
+    }
 }

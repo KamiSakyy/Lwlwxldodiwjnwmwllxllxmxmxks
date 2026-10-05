@@ -1461,4 +1461,10 @@ public abstract class z3 implements a5.m1 {
     }
 
     public abstract void z(int i);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class AppCompatTextView<T1,T2,T3,T4> {
+        public AppCompatTextView() {
+        }
+    }
 }

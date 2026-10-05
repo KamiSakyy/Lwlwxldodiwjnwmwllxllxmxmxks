@@ -19,4 +19,10 @@ public abstract class j {
     public static void d(RenderNode renderNode, int i) {
         renderNode.setSpotShadowColor(i);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RenderNode<T1,T2,T3,T4> {
+        public RenderNode() {
+        }
+    }
 }

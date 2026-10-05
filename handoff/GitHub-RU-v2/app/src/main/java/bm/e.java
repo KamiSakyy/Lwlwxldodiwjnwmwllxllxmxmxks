@@ -178,4 +178,16 @@ public final class e {
         x61.m.J(J0, arrayList4);
         return (ArrayList) x61.m.r0(J0);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h0<T1,T2,T3,T4> {
+        public h0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x<T1,T2,T3,T4> {
+        public x() {
+        }
+    }
 }

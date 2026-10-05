@@ -69,4 +69,10 @@ public final class b2 extends androidx.lifecycle.k1 implements com.github.rudroi
     public final boolean a() {
         return com.github.rudroid.utilities.ui.h1.g((com.github.rudroid.utilities.ui.g1) this.f6602w.getValue()) && this.f6604y.a();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
 }

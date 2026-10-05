@@ -218,4 +218,10 @@ public final class d extends c71.j implements j71.f {
         this.A = str2;
         this.C = e0Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e0<T1,T2,T3,T4> {
+        public e0() {
+        }
+    }
 }

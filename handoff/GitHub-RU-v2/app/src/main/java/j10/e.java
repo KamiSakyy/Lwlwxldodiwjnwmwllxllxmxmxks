@@ -27,4 +27,10 @@ public final class e implements aa.a {
         fVar.z0("deleteMobileDevicePublicKey");
         aa.c.b(aa.c.c(f.a, false)).b(fVar, wVar, jVar.a);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

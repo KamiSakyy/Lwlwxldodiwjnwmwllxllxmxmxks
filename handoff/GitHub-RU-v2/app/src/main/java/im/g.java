@@ -20,4 +20,10 @@ public final class g {
         k.g(str2, "repoName");
         return b31.b.J(((o1) this.a.a(jVar)).c(str, str2, str3, str4), jVar, cVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

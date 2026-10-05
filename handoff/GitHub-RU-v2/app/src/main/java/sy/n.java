@@ -777,4 +777,10 @@ public abstract class n {
     public abstract void x(x91.c cVar, x91.g gVar, ArrayList arrayList, q81.k kVar);
 
     public abstract int z(x91.c cVar, b21.v vVar, ArrayList arrayList);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class CoordinatorLayout<T1,T2,T3,T4> {
+        public CoordinatorLayout() {
+        }
+    }
 }

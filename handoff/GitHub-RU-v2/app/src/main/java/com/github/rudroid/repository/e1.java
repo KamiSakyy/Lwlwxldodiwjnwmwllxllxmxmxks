@@ -15,4 +15,10 @@ public final class e1 extends k71.l implements j71.a {
     public final Object a() {
         return this.f19294s;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RepositoryDetailFragment<T1,T2,T3,T4> {
+        public RepositoryDetailFragment() {
+        }
+    }
 }

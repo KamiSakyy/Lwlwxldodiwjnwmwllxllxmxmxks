@@ -12,4 +12,10 @@ public interface d0<T> extends x3 {
     o0 getData();
 
     void i(Object obj);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o0<T1,T2,T3,T4> {
+        public o0() {
+        }
+    }
 }

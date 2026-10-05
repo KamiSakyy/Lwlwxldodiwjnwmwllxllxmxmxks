@@ -56,4 +56,22 @@ public final /* synthetic */ class d implements e7.j, e7.k {
         this.r = settingsPrivacyAnalyticsFragment;
         this.s = preference;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Preference<T1,T2,T3,T4> {
+        public Preference() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class SwitchPreferenceCompat<T1,T2,T3,T4> {
+        public SwitchPreferenceCompat() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
 }

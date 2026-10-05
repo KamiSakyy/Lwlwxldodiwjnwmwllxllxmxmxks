@@ -5,4 +5,10 @@ public abstract class h0 {
 
     /* renamed from: a, reason: collision with root package name */
     public static final g3.z f25335a = new g3.z(false);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
 }

@@ -82,4 +82,16 @@ public final class n implements w0 {
     public final String toString() {
         return h1.p(s0.o("ResolveResourceQuery(url=", this.r, ", owner=", this.s, ", name="), this.t, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p0<T1,T2,T3,T4> {
+        public p0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

@@ -12,4 +12,10 @@ public final class c {
     public c(w wVar) {
         this.a = wVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w<T1,T2,T3,T4> {
+        public w() {
+        }
+    }
 }

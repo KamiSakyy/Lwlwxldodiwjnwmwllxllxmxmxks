@@ -292,4 +292,16 @@ public final class SelectableLabelBottomSheet extends Hilt_SelectableLabelBottom
         com.github.rudroid.searchandfilter.complexfilter.label.g gVar = (com.github.rudroid.searchandfilter.complexfilter.label.g) this.Y0.getValue();
         d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.label.k(new y00.l(gVar.t.b, 10)), gVar.F)).e(F3(), new i(new z(18, this)));
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a0<T1,T2,T3,T4> {
+        public a0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l1<T1,T2,T3,T4> {
+        public l1() {
+        }
+    }
 }

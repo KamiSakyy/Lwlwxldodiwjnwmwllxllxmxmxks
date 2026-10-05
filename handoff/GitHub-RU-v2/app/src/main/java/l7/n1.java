@@ -244,4 +244,22 @@ public abstract class n1 {
     public final boolean x() {
         return (this.f28217j & 32) != 0;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecyclerView<T1,T2,T3,T4> {
+        public RecyclerView() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e1<T1,T2,T3,T4> {
+        public e1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m0<T1,T2,T3,T4> {
+        public m0() {
+        }
+    }
 }

@@ -14,4 +14,10 @@ public final class o0 extends n1 {
         this.u = zfVar;
         zfVar.P0(selectableSpokenLanguageFragment);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class zf<T1,T2,T3,T4> {
+        public zf() {
+        }
+    }
 }

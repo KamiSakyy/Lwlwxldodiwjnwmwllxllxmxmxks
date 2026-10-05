@@ -898,4 +898,16 @@ public final class k {
         sVar.q(false);
         return !z ? d2.t.b(0.38f, j) : j;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f2<T1,T2,T3,T4> {
+        public f2() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q0<T1,T2,T3,T4> {
+        public q0() {
+        }
+    }
 }

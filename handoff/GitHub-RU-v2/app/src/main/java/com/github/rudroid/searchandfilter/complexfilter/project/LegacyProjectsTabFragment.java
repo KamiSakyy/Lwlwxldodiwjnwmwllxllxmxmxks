@@ -107,4 +107,10 @@ public final class LegacyProjectsTabFragment extends Hilt_LegacyProjectsTabFragm
         B4().P.setOffscreenPageLimit(2);
         B4().O.setupWithViewPager(B4().P);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j1<T1,T2,T3,T4> {
+        public j1() {
+        }
+    }
 }

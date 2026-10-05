@@ -18,4 +18,10 @@ final class i extends c71.c {
         this.w |= Integer.MIN_VALUE;
         return this.v.Q(null, null, null, null, this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z<T1,T2,T3,T4> {
+        public z() {
+        }
+    }
 }

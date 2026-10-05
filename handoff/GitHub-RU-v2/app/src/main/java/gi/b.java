@@ -911,4 +911,10 @@ public final class b extends j implements j71.e {
         this.x = obj;
         this.y = obj2;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

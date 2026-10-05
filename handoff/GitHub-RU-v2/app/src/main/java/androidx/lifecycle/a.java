@@ -18,4 +18,10 @@ public abstract class a extends k1 {
         k71.k.e(application, "null cannot be cast to non-null type T of androidx.lifecycle.AndroidViewModel.getApplication");
         return application;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class u0<T1,T2,T3,T4> {
+        public u0() {
+        }
+    }
 }

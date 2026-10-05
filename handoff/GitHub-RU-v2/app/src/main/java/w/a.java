@@ -196,4 +196,10 @@ public abstract class a extends FrameLayout {
         bVar.f32908b.setColor(colorStateList.getColorForState(bVar.getState(), bVar.f32914h.getDefaultColor()));
         bVar.invalidateSelf();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t<T1,T2,T3,T4> {
+        public t() {
+        }
+    }
 }
