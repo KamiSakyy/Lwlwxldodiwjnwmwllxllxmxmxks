@@ -1,9 +1,11 @@
 name: "Этап 3 — Фикс нагрева + структура + сборка APK v2"
 
 on:
+  workflow_dispatch:
+  # push-триггер отключён: ручной запуск только
   push:
     branches:
-      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks-disabled"
     paths:
       - ".github/workflows/03-build-release.yml"
       - "tools/**"

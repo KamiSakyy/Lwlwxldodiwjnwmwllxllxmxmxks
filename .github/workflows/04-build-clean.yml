@@ -1,9 +1,11 @@
 name: "Этап 4 — ЧИСТЫЙ исходник (github/mobile) + RU-перевод + сборка APK v3"
 
 on:
+  workflow_dispatch:
+  # push-триггер отключён: ручной запуск только
   push:
     branches:
-      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks-disabled"
     paths:
       - ".github/workflows/04-build-clean.yml"
       - "tools/clean_adapt.py"

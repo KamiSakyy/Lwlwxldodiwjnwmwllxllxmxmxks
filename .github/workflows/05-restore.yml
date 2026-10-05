@@ -1,0 +1,125 @@
+name: "Этап 5 — ВОССТАНОВЛЕНИЕ исходника: фиксы + проверка javac (БЕЗ APK)"
+
+on:
+  push:
+    branches:
+      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+    paths:
+      - ".github/workflows/05-restore.yml"
+      - "tools/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    name: "Восстановление дерева и проверка компиляции"
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+        with:
+          ref: "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          persist-credentials: true
+
+      - name: "JDK 17 (javac)"
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: "android.jar (API 36) для компиляции"
+        shell: bash
+        run: |
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" | tail -1
+          echo "ANDROID_JAR=$SDK/platforms/android-36/android.jar" >> "$GITHUB_ENV"
+          ls -la "$SDK/platforms/android-36/android.jar"
+
+      - name: "7-Zip"
+        run: |
+          if ! command -v 7z >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq p7zip-full
+          fi
+
+      - name: "Распаковка исходника"
+        run: |
+          set -e
+          mkdir -p extracted stage1
+          7z x -y -ostage1 "GitHub-RU-Source legal.zip.zip" >/dev/null
+          find stage1 -type f -name "*.zip" -print0 | while IFS= read -r -d '' z; do
+            unzip -q -o "$z" -d extracted/ || true
+          done
+          if [ -z "$(find extracted -type f | head -1)" ]; then cp -a stage1/. extracted/; fi
+          PROJ=$(find "$PWD/extracted" -type d -name "GitHub-RU-Source" | head -1)
+          echo "PROJ=$PROJ" >> "$GITHUB_ENV"
+          find "$PROJ/app/src/main/java" -name "*.java" | wc -l
+
+      - name: "Компиляция ДО восстановления (javac, только проверка)"
+        run: |
+          set -e
+          SRC="$PROJ/app/src/main/java"
+          find "$SRC" -name "*.java" | sort > /tmp/sources.txt
+          echo "Файлов на компиляцию: $(wc -l < /tmp/sources.txt)"
+          mkdir -p /tmp/classes-before
+          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
+            -source 8 -target 8 -encoding UTF-8 \
+            -bootclasspath "$ANDROID_JAR" \
+            -d /tmp/classes-before @/tmp/sources.txt \
+            > /tmp/javac-before.log 2>&1 || true
+          grep -c "error:" /tmp/javac-before.log || echo "0 ошибок ДО"
+
+      - name: "Применение всех реставрационных фиксов"
+        run: |
+          set -e
+          python3 tools/fix_heat.py "$PROJ"
+          python3 tools/fix_compile.py "$PROJ"
+          python3 tools/fix_compile.py "$PROJ"
+          echo "=== осталось '??'-объявлений ==="
+          grep -rlE '^\s*(final )?\?\? ' "$PROJ/app/src/main/java" 2>/dev/null | wc -l || echo 0
+
+      - name: "Компиляция ПОСЛЕ восстановления (javac, только проверка)"
+        run: |
+          set -e
+          SRC="$PROJ/app/src/main/java"
+          find "$SRC" -name "*.java" | sort > /tmp/sources-after.txt
+          mkdir -p /tmp/classes-after
+          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
+            -source 8 -target 8 -encoding UTF-8 \
+            -bootclasspath "$ANDROID_JAR" \
+            -d /tmp/classes-after @/tmp/sources-after.txt \
+            > /tmp/javac-after.log 2>&1 || true
+          grep -c "error:" /tmp/javac-after.log || echo "0 ошибок ПОСЛЕ"
+
+      - name: "Отчёт о восстановлении"
+        run: |
+          set -e
+          mkdir -p handoff/restoration
+          python3 tools/restore_report.py /tmp/javac-before.log /tmp/javac-after.log handoff/restoration
+          head -40 handoff/restoration/RESTORATION-REPORT.md
+
+      - name: "Восстановленное дерево -> handoff/GitHub-RU-v2"
+        if: always()
+        run: |
+          set -e
+          mkdir -p handoff
+          rsync -a --delete --exclude 'app/build' --exclude '.gradle' --exclude 'build' --exclude '.kotlin' \
+            "$PROJ/" handoff/GitHub-RU-v2/
+          du -sh handoff/GitHub-RU-v2 || true
+
+      - name: "Коммит: восстановленный исходник + отчёт"
+        if: always()
+        run: |
+          set -e
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          git add handoff/ || true
+          if git diff --cached --quiet; then
+            echo "Нет изменений"
+          else
+            git commit -m "Этап 5: восстановление исходника (фиксы + javac-проверка) [skip ci]"
+            git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          fi
