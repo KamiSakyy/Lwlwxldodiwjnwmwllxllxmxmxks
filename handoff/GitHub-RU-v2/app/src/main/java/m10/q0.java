@@ -9,4 +9,7 @@ public abstract class q0 {
         x61.r rVar = x61.r.r;
         a = new aa.q0("AddUpvotePayload", rVar, rVar);
     }
+
+    public q0(Object... a) {
+    }
 }

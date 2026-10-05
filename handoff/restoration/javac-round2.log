@@ -732,6 +732,11 @@ public final class cq implements aa.v0 {
                                 ^
   symbol:   class Object
   location: class f1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:29: error: cannot find symbol
+    public d(Object... a) {
+             ^
+  symbol:   class Object
+  location: class d
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q71/g.java:14: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -740,6 +745,11 @@ public final class cq implements aa.v0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q71/e.java:29: error: cannot find symbol
     public boolean equals(Object obj) {
                           ^
+  symbol:   class Object
+  location: class e
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q71/e.java:82: error: cannot find symbol
+    public e(Object... a) {
+             ^
   symbol:   class Object
   location: class e
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/b6/c1.java:23: error: cannot find symbol
@@ -1353,9 +1363,19 @@ public final class cq implements aa.v0 {
                                 ^
   symbol:   class Object
   location: class d
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/d.java:792: error: cannot find symbol
+    public d(Object... a) {
+             ^
+  symbol:   class Object
+  location: class d
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/q.java:44: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
+  symbol:   class Object
+  location: class q
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/q.java:313: error: cannot find symbol
+    public q(Object... a) {
+             ^
   symbol:   class Object
   location: class q
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/w3.java:23: error: cannot find symbol
@@ -1376,6 +1396,11 @@ public final class cq implements aa.v0 {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/f.java:31: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
+  symbol:   class Object
+  location: class f
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/f.java:66: error: cannot find symbol
+    public f(Object... a) {
+             ^
   symbol:   class Object
   location: class f
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/l.java:23: error: cannot find symbol
@@ -1409,6 +1434,11 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u31/a.java:19: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
+  symbol:   class Object
+  location: class a
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u31/a.java:34: error: cannot find symbol
+    public a(Object... a) {
+             ^
   symbol:   class Object
   location: class a
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u31/f.java:67: error: cannot find symbol
@@ -2442,6 +2472,11 @@ public final /* synthetic */ class m implements n, e2.i, p41.d, e0 {
               ^
   symbol:   class Object
   location: class p0
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/q0.java:107: error: cannot find symbol
+    public q0(Object... a) {
+              ^
+  symbol:   class Object
+  location: class q0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ca1/b.java:15: error: cannot find symbol
     public Object[] t = new Object[3];
            ^
@@ -2452,6 +2487,11 @@ public final /* synthetic */ class m implements n, e2.i, p41.d, e0 {
                                 ^
   symbol:   class Object
   location: class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/s0.java:35: error: cannot find symbol
+    public s0(Object... a) {
+              ^
+  symbol:   class Object
+  location: class s0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/d0.java:69: error: cannot find symbol
     public Object clone() {
            ^
@@ -2497,11 +2537,21 @@ public final /* synthetic */ class m implements n, e2.i, p41.d, e0 {
              ^
   symbol:   class Object
   location: class h
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/g.java:80: error: cannot find symbol
+    public g(Object... a) {
+             ^
+  symbol:   class Object
+  location: class g
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/f.java:63: error: cannot find symbol
     public f(Object... a) {
              ^
   symbol:   class Object
   location: class f
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/e.java:107: error: cannot find symbol
+    public e(Object... a) {
+             ^
+  symbol:   class Object
+  location: class e
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/c.java:54: error: cannot find symbol
     public c(Object... a) {
              ^
@@ -3005,6 +3055,11 @@ public final class a extends oa.c {
                                 ^
   symbol:   class Object
   location: class q
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/t71/l.java:60: error: cannot find symbol
+    public l(Object... a) {
+             ^
+  symbol:   class Object
+  location: class l
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/t71/k.java:16: error: cannot find symbol
     public final Object f32135s;
                  ^
@@ -3363,6 +3418,11 @@ import androidx.compose.ui.platform.ComposeView;
               ^
   symbol:   class Object
   location: class p3
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:93: error: cannot find symbol
+    public f(Object... a) {
+             ^
+  symbol:   class Object
+  location: class f
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ct0/a.java:25: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -3558,6 +3618,11 @@ import androidx.compose.ui.platform.ComposeView;
                                 ^
   symbol:   class Object
   location: class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xn/f.java:35: error: cannot find symbol
+    public f(Object... a) {
+             ^
+  symbol:   class Object
+  location: class f
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/hp/o.java:32: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -4286,6 +4351,11 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
               ^
   symbol:   class Object
   location: class e0
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/a0.java:24: error: cannot find symbol
+    public a0(Object... a) {
+              ^
+  symbol:   class Object
+  location: class a0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/common/util/concurrent/b.java:24: error: package androidx.biometric does not exist
 import androidx.biometric.BiometricFragment;
                          ^
@@ -4863,6 +4933,11 @@ public final class TwoFactorDialog extends w2.a {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/b.java:18: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
+  symbol:   class Object
+  location: class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/b.java:43: error: cannot find symbol
+    public b(Object... a) {
+             ^
   symbol:   class Object
   location: class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/fn/a.java:19: error: cannot find symbol
@@ -5567,6 +5642,16 @@ public final class TwoFactorDialog extends w2.a {
                                                    ^
   symbol:   class Object
   location: class c
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l81/c.java:58: error: cannot find symbol
+    public c(Object... a) {
+             ^
+  symbol:   class Object
+  location: class c
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l81/b.java:6: error: cannot find symbol
+    public b(Object... a) {
+             ^
+  symbol:   class Object
+  location: class b
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/yz0/x7.java:16: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -5712,6 +5797,11 @@ public final class TwoFactorDialog extends w2.a {
                                             ^
   symbol:   class Object
   location: interface Encoder
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:151: error: cannot find symbol
+    public l(Object... a) {
+             ^
+  symbol:   class Object
+  location: class l
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w61/h.java:5: error: cannot find symbol
     Object getValue();
     ^
@@ -7173,6 +7263,11 @@ import androidx.recyclerview.widget.RecyclerView;
                  ^
   symbol:   class Object
   location: class m
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/m.java:45: error: cannot find symbol
+    public m(Object... a) {
+             ^
+  symbol:   class Object
+  location: class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/m0.java:11: error: cannot find symbol
     public /* synthetic */ Object w;
                            ^
@@ -7208,12 +7303,9 @@ import androidx.recyclerview.widget.RecyclerView;
                  ^
   symbol:   class Object
   location: class m0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n.java:20: error: modifier public not allowed here
-    public n(Object... a) {
-           ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a61/n.java:20: error: cannot find symbol
-    public n(Object... a) {
-             ^
+    n(Object... a) {
+      ^
   symbol:   class Object
   location: class n
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e61/g.java:46: error: cannot find symbol
@@ -21703,6 +21795,11 @@ import com.github.rudroid.searchandfilter.complexfilter.milestone.g;
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c00/i.java:17: error: cannot find symbol
     public final Object v(Object obj) {
                  ^
+  symbol:   class Object
+  location: class i
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c00/i.java:23: error: cannot find symbol
+    public i(Object... a) {
+             ^
   symbol:   class Object
   location: class i
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/c00/j.java:7: error: cannot find symbol
@@ -84937,6 +85034,11 @@ public class x extends y9.a {
                  ^
   symbol:   class Object
   location: class n
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/dn/n.java:152: error: cannot find symbol
+    public n(Object... a) {
+             ^
+  symbol:   class Object
+  location: class n
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/dn/o.java:15: error: cannot find symbol
     public final Object b(y71.j jVar, a71.c cVar) {
                  ^
@@ -129041,6 +129143,11 @@ public final class b extends f {
                                            ^
   symbol:   class Object
   location: class f
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/hc0/a0.java:6: error: cannot find symbol
+    public a0(Object... a) {
+              ^
+  symbol:   class Object
+  location: class a0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/hc0/a4.java:13: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -130478,6 +130585,11 @@ import androidx.constraintlayout.motion.widget.MotionLayout;
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/l.java:18: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
+  symbol:   class Object
+  location: class l
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/l.java:40: error: cannot find symbol
+    public l(Object... a) {
+             ^
   symbol:   class Object
   location: class l
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/u.java:61: error: cannot find symbol
@@ -162774,6 +162886,11 @@ import com.github.rudroid.utilities.n;
                  ^
   symbol:   class Object
   location: class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m10/a0.java:6: error: cannot find symbol
+    public a0(Object... a) {
+              ^
+  symbol:   class Object
+  location: class a0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m10/d80.java:14: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -162849,6 +162966,11 @@ import com.github.rudroid.utilities.n;
                                 ^
   symbol:   class Object
   location: class pp
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m10/q0.java:13: error: cannot find symbol
+    public q0(Object... a) {
+              ^
+  symbol:   class Object
+  location: class q0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m10/q60.java:22: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -206093,6 +206215,11 @@ public abstract class b extends a.a {
                  ^
   symbol:   class Object
   location: class b
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/t71/g.java:46: error: cannot find symbol
+    public g(Object... a) {
+             ^
+  symbol:   class Object
+  location: class g
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/t71/i.java:63: error: cannot find symbol
     public final Object next() {
                  ^
@@ -210909,6 +211036,11 @@ public final class m implements aa.n0 {
                                 ^
   symbol:   class Object
   location: class m
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u10/m.java:74: error: cannot find symbol
+    public m(Object... a) {
+             ^
+  symbol:   class Object
+  location: class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u10/m00.java:6: error: interface expected here
 public final class m00 implements aa.n0 {
                                     ^
@@ -213850,6 +213982,11 @@ public final class zy implements aa.n0 {
                                            ^
   symbol:   class Object
   location: class f
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/i.java:36: error: cannot find symbol
+    public i(Object... a) {
+             ^
+  symbol:   class Object
+  location: class i
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/u81/k.java:7: error: cannot find symbol
     public final Object a;
                  ^
@@ -217626,11 +217763,21 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
                         ^
   symbol:   class Object
   location: class i0
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/m.java:10: error: cannot find symbol
+    public m(Object... a) {
+             ^
+  symbol:   class Object
+  location: class m
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/m1.java:25: error: cannot find symbol
     public final Object O(c71.c cVar) {
                  ^
   symbol:   class Object
   location: class m1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/n.java:68: error: cannot find symbol
+    public n(Object... a) {
+             ^
+  symbol:   class Object
+  location: class n
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/o0.java:6: error: cannot find symbol
     public final Object w;
                  ^
@@ -225140,6 +225287,16 @@ public final class r1 implements w1.p {
                                     ^
   symbol:   class Object
   location: class c
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/c.java:18: error: cannot find symbol
+    public c(Object... a) {
+             ^
+  symbol:   class Object
+  location: class c
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/e.java:24: error: cannot find symbol
+    public e(Object... a) {
+             ^
+  symbol:   class Object
+  location: class e
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/f.java:9: error: cannot find symbol
     public f(Object... a) {
              ^
@@ -225150,6 +225307,11 @@ public final class r1 implements w1.p {
                         ^
   symbol:   class Object
   location: class m
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/n.java:72: error: cannot find symbol
+    public n(Object... a) {
+             ^
+  symbol:   class Object
+  location: class n
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/w51/z.java:11: error: cannot find symbol
     public static final Object b = new Object();
                         ^
@@ -238542,6 +238704,11 @@ import com.github.rudroid.profile.navigation.fragments.UserOrOrganizationProfile
                                  ^
   symbol:   class Object
   location: class c
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y11/c.java:42: error: cannot find symbol
+    public c(Object... a) {
+             ^
+  symbol:   class Object
+  location: class c
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y11/d.java:22: error: cannot find symbol
     public Object c(o oVar) {
            ^
@@ -247095,12 +247262,6 @@ public final class g2 implements z {
                ^
   symbol:   method getClass()
   location: class a
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/a.java:114: error: constructor j1 in class j1 cannot be applied to given types;
-    public a(Object... a) {
-                          ^
-  required: boolean
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/f0.java:7: error: cannot find symbol
         Object s = s(cVar);
         ^
@@ -248080,24 +248241,6 @@ public final class b extends p {
   where T,E are type-variables:
     T extends Enum<T> declared in method <T>valueOf(Class<T>,String)
     E extends Enum<E> declared in class Enum
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/x71/a.java:15: error: constructor a in class a cannot be applied to given types;
-        a aVar = new a("SUSPEND", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/x71/a.java:17: error: constructor a in class a cannot be applied to given types;
-        a aVar2 = new a("DROP_OLDEST", 1);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/x71/a.java:19: error: constructor a in class a cannot be applied to given types;
-        a aVar3 = new a("DROP_LATEST", 2);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/x71/a.java:23: error: cannot find symbol
         l0.t(aVarArr);
           ^
@@ -248374,12 +248517,6 @@ public final class b extends p {
             ^
   symbol:   class Object
   location: class l
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v71/l.java:536: error: constructor m in class m cannot be applied to given types;
-            m mVar = new m(th2, z);
-                     ^
-  required: no arguments
-  found:    Throwable,boolean
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a81/t.java:22: error: cannot find symbol
             sVar.v("X-CRASHLYTICS-GOOGLE-APP-ID", str);
                 ^
@@ -248630,258 +248767,6 @@ public final class b extends p {
                                                          ^
   symbol:   method name()
   location: variable r of type l
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:54: error: constructor l in class l cannot be applied to given types;
-        l lVar = new l("FILTER_ASSIGNEE", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:56: error: constructor l in class l cannot be applied to given types;
-        l lVar2 = new l("FILTER_SORT", 1);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:58: error: constructor l in class l cannot be applied to given types;
-        l lVar3 = new l("FILTER_PR_STATUS", 2);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:60: error: constructor l in class l cannot be applied to given types;
-        l lVar4 = new l("FILTER_DISCUSSION_IS_UNANSWERED", 3);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:62: error: constructor l in class l cannot be applied to given types;
-        l lVar5 = new l("FILTER_PROJECT", 4);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:64: error: constructor l in class l cannot be applied to given types;
-        l lVar6 = new l("FILTER_PROJECT_V2", 5);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:66: error: constructor l in class l cannot be applied to given types;
-        l lVar7 = new l("FILTER_LABEL", 6);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:68: error: constructor l in class l cannot be applied to given types;
-        l lVar8 = new l("FILTER_MILESTONE", 7);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:70: error: constructor l in class l cannot be applied to given types;
-        l lVar9 = new l("SEPARATOR", 8);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:72: error: constructor l in class l cannot be applied to given types;
-        l lVar10 = new l("FILTER_ISSUE_STATUS", 9);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:74: error: constructor l in class l cannot be applied to given types;
-        l lVar11 = new l("FILTER_ISSUE_TYPE", 10);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:76: error: constructor l in class l cannot be applied to given types;
-        l lVar12 = new l("FILTER_PULL_REQUEST_USER_RELATIONSHIP", 11);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:78: error: constructor l in class l cannot be applied to given types;
-        l lVar13 = new l("FILTER_REVIEW_REQUESTED", 12);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:80: error: constructor l in class l cannot be applied to given types;
-        l lVar14 = new l("FILTER_ISSUE_USER_RELATIONSHIP", 13);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:82: error: constructor l in class l cannot be applied to given types;
-        l lVar15 = new l("FILTER_REPOSITORY", 14);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:84: error: constructor l in class l cannot be applied to given types;
-        l lVar16 = new l("FILTER_REPOSITORY_OWNER_REPOSITORY", 15);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:86: error: constructor l in class l cannot be applied to given types;
-        l lVar17 = new l("FILTER_REPOSITORY_VISIBILITY", 16);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:88: error: constructor l in class l cannot be applied to given types;
-        l lVar18 = new l("FILTER_AUTHOR", 17);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:90: error: constructor l in class l cannot be applied to given types;
-        l lVar19 = new l("FILTER_ORGANIZATION", 18);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:92: error: constructor l in class l cannot be applied to given types;
-        l lVar20 = new l("FILTER_REVIEW_STATUS", 19);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:94: error: constructor l in class l cannot be applied to given types;
-        l lVar21 = new l("FILTER_DISCUSSION_CATEGORY", 20);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:96: error: constructor l in class l cannot be applied to given types;
-        l lVar22 = new l("FILTER_DISCUSSION_USER_RELATIONSHIP", 21);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:98: error: constructor l in class l cannot be applied to given types;
-        l lVar23 = new l("FILTER_DISCUSSION_TOP", 22);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:100: error: constructor l in class l cannot be applied to given types;
-        l lVar24 = new l("FILTER_NOTIFICATION_STATUS", 23);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:102: error: constructor l in class l cannot be applied to given types;
-        l lVar25 = new l("FILTER_NOTIFICATION_IS_UNREAD", 24);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:104: error: constructor l in class l cannot be applied to given types;
-        l lVar26 = new l("FILTER_NOTIFICATION_IS_IMPORTANT", 25);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:106: error: constructor l in class l cannot be applied to given types;
-        l lVar27 = new l("FILTER_NOTIFICATION_FILTER", 26);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:108: error: constructor l in class l cannot be applied to given types;
-        l lVar28 = new l("FILTER_NOTIFICATION_REPOSITORY", 27);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:110: error: constructor l in class l cannot be applied to given types;
-        l lVar29 = new l("FILTER_CUSTOM", 28);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:112: error: constructor l in class l cannot be applied to given types;
-        l lVar30 = new l("FILTER_LANGUAGE", 29);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:114: error: constructor l in class l cannot be applied to given types;
-        l lVar31 = new l("FILTER_SPOKEN_LANGUAGE", 30);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:116: error: constructor l in class l cannot be applied to given types;
-        l lVar32 = new l("FILTER_TRENDING_PERIOD", 31);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:118: error: constructor l in class l cannot be applied to given types;
-        l lVar33 = new l("FILTER_REPOSITORY_SORT", 32);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:120: error: constructor l in class l cannot be applied to given types;
-        l lVar34 = new l("FILTER_REPOSITORY_TYPE", 33);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:122: error: constructor l in class l cannot be applied to given types;
-        l lVar35 = new l("FILTER_DISCUSSION_STATUS", 34);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:124: error: constructor l in class l cannot be applied to given types;
-        l lVar36 = new l("FILTER_PROJECT_SCOPE", 35);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:126: error: constructor l in class l cannot be applied to given types;
-        l lVar37 = new l("FILTER_PROJECT_STATUS", 36);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:128: error: constructor l in class l cannot be applied to given types;
-        l lVar38 = new l("FILTER_PROJECT_ORDER", 37);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:130: error: constructor l in class l cannot be applied to given types;
-        l lVar39 = new l("FILTER_IS_DRAFT", 38);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:132: error: constructor l in class l cannot be applied to given types;
-        l lVar40 = new l("FILTER_AGENT_TASK_STATE_COMBINED", 39);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:134: error: constructor l in class l cannot be applied to given types;
-        l lVar41 = new l("FILTER_AGENT_TASK_SORT", 40);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:136: error: constructor l in class l cannot be applied to given types;
-        l lVar42 = new l("FILTER_CUSTOM_INSTRUCTIONS", 41);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/bm/l.java:140: error: cannot find symbol
         l0.t(lVarArr);
           ^
@@ -251889,12 +251774,6 @@ public final class b extends p {
                                                                                                    ^
   symbol:   variable s
   location: variable a of type h
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l81/c.java:10: error: constructor b in class b cannot be applied to given types;
-    public static final b d = new b(new h(false, false, false, true, "    ", false, "type", true, a.s), kotlinx.serialization.modules.e.a);
-                              ^
-  required: no arguments
-  found:    h,l
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l81/c.java:23: error: constructor q in class q<T1,T2,T3,T4> cannot be applied to given types;
         a7.q qVar = new a7.q(str);
                     ^
@@ -251940,12 +251819,6 @@ public final class b extends p {
                            ^
   symbol:   variable r
   location: class n1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l81/n.java:4: error: constructor c in class c cannot be applied to given types;
-public final class n extends c {
-             ^
-  required: h,l
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/k6.java:7: error: cannot find symbol
     public static final k6 f = new k6(0, new int[0], new Object[0], false);
                                                          ^
@@ -255412,78 +255285,6 @@ public final class c extends a21.c {
                  ^
   symbol:   method l(StringBuilder,int,String)
   location: class s0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:42: error: constructor d in class d cannot be applied to given types;
-        d dVar = new d("BEGIN_ARRAY", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:44: error: constructor d in class d cannot be applied to given types;
-        d dVar2 = new d("END_ARRAY", 1);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:46: error: constructor d in class d cannot be applied to given types;
-        d dVar3 = new d("BEGIN_OBJECT", 2);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:48: error: constructor d in class d cannot be applied to given types;
-        d dVar4 = new d("END_OBJECT", 3);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:50: error: constructor d in class d cannot be applied to given types;
-        d dVar5 = new d("NAME", 4);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:52: error: constructor d in class d cannot be applied to given types;
-        d dVar6 = new d("STRING", 5);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:54: error: constructor d in class d cannot be applied to given types;
-        d dVar7 = new d("NUMBER", 6);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:56: error: constructor d in class d cannot be applied to given types;
-        d dVar8 = new d("LONG", 7);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:58: error: constructor d in class d cannot be applied to given types;
-        d dVar9 = new d("BOOLEAN", 8);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:60: error: constructor d in class d cannot be applied to given types;
-        d dVar10 = new d("NULL", 9);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:62: error: constructor d in class d cannot be applied to given types;
-        d dVar11 = new d("END_DOCUMENT", 10);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:64: error: constructor d in class d cannot be applied to given types;
-        d dVar12 = new d("ANY", 11);
-                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ea/d.java:68: error: cannot find symbol
         l0.t(dVarArr);
           ^
@@ -257245,12 +257046,6 @@ public class k implements Serializable, Comparable {
                                                                             ^
   symbol:   variable s
   location: class s0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/e0.java:8: error: constructor a0 in class a0 cannot be applied to given types;
-        super(o1Var);
-        ^
-  required: no arguments
-  found:    o1
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/e0.java:9: error: cannot find symbol
         ((o1) ((androidx.compose.foundation.lazy.layout.s0) this).s).R++;
                                                                  ^
@@ -258919,12 +258714,6 @@ public class k implements Serializable, Comparable {
     T2 extends Object declared in class m
     T3 extends Object declared in class m
     T4 extends Object declared in class m
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/z.java:13: error: constructor a0 in class a0 cannot be applied to given types;
-        super(o1Var);
-        ^
-  required: no arguments
-  found:    o1
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/z.java:14: error: constructor e in class e<T1,T2,T3,T4> cannot be applied to given types;
         this.u = new x.e(0);
                  ^
@@ -273704,18 +273493,6 @@ public final class n implements u4.a {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/p/n.java:563: error: method does not override or implement a method from a supertype
     @Override // u4.a, android.view.MenuItem
     ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/s9/g.java:20: error: constructor g in class g cannot be applied to given types;
-        g gVar = new g("FILL", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/s9/g.java:22: error: constructor g in class g cannot be applied to given types;
-        g gVar2 = new g("FIT", 1);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/s9/g.java:26: error: cannot find symbol
         l0.t(gVarArr);
           ^
@@ -274086,12 +273863,6 @@ public final class n implements u4.a {
                             ^
   symbol:   method getClass()
   location: variable Companion of type Companion
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/yz0/p0.java:22: error: constructor q0 in class q0 cannot be applied to given types;
-    public p0(Object... a) {
-                           ^
-  required: String
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/p/l.java:119: error: cannot find symbol
                 z10 = a5.l.D(viewConfiguration);
                           ^
@@ -276739,12 +276510,6 @@ public final class n implements u4.a {
                                           ^
   symbol:   variable s0
   location: class a0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q71/g.java:4: error: constructor e in class e cannot be applied to given types;
-public final class g extends e {
-             ^
-  required: int,int,int
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/q71/g.java:7: error: constructor g in class g cannot be applied to given types;
     public static final g f31003u = new g(1, 0, 1);
                                     ^
@@ -276778,54 +276543,6 @@ public final class g extends e {
   where T,E are type-variables:
     T extends Enum<T> declared in method <T>valueOf(Class<T>,String)
     E extends Enum<E> declared in class Enum
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:14: error: constructor d in class d cannot be applied to given types;
-        d dVar = new d("ALL", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                             ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                                                   ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                                                                     ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                                                                                         ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                                                                                                              ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                                                                                                                                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:16: error: constructor d in class d cannot be applied to given types;
-        d[] dVarArr = {dVar, new d("ARCHIVED", 1), new d("FORK", 2), new d("MIRROR", 3), new d("PRIVATE", 4), new d("PUBLIC", 5), new d("SOURCE", 6), new d("TEMPLATE", 7)};
-                                                                                                                                                      ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/v01/d.java:18: error: cannot find symbol
         t = l0.t(dVarArr);
               ^
@@ -283826,12 +283543,6 @@ public final class m1 extends d5 {
                     public final Object get() {
                                  ^
   symbol: class Object
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/d0.java:187: error: constructor g in class g cannot be applied to given types;
-                        return new g(str);
-                               ^
-  required: no arguments
-  found:    String
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/d0.java:189: error: constructor f in class f cannot be applied to given types;
                 }, new ba1.d(), new ba1.e(), new ba1.f(0), new Collector.Characteristics[0]));
                                              ^
@@ -284588,21 +284299,9 @@ public final class p0 extends q0 {
     public final q0 f() {
                     ^
   return type q0 is not compatible with void
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/p0.java:22: error: constructor q0 in class q0 cannot be applied to given types;
-    public p0(Object... a) {
-                           ^
-  required: int,b
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/o0.java:4: error: o0 is not abstract and does not override abstract method f() in s0
 public final class o0 extends q0 {
              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/o0.java:9: error: constructor q0 in class q0 cannot be applied to given types;
-    public o0(Object... a) {
-                           ^
-  required: int,b
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/r0.java:4: error: r0 is not abstract and does not override abstract method f() in s0
 public final class r0 extends q0 {
              ^
@@ -284623,12 +284322,6 @@ public final class r0 extends q0 {
                              ^
   symbol:   variable e
   location: class f1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/r0.java:40: error: constructor q0 in class q0 cannot be applied to given types;
-    public r0(Object... a) {
-                           ^
-  required: int,b
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/da1/k0.java:9: error: constructor m in class m<T1,T2,T3,T4> cannot be applied to given types;
         this.d = new b1.m(28);
                  ^
@@ -286658,12 +286351,6 @@ public final class d implements Collection {
                       ^
   symbol:   class Object
   location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y11/g.java:10: error: constructor c in class c cannot be applied to given types;
-    public static final Parcelable.Creator<g> CREATOR = new c(1);
-                                                        ^
-  required: no arguments
-  found:    int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/y11/g.java:28: error: cannot find symbol
             messenger.getClass();
                      ^
@@ -289118,48 +288805,6 @@ public final class d implements Collection {
                 ^
   symbol:   variable i
   location: class x
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:63: error: constructor f in class f cannot be applied to given types;
-        f fVar = new f("Sunday", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:65: error: constructor f in class f cannot be applied to given types;
-        f fVar2 = new f("Monday", 1);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:67: error: constructor f in class f cannot be applied to given types;
-        f fVar3 = new f("Tuesday", 2);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:69: error: constructor f in class f cannot be applied to given types;
-        f fVar4 = new f("Wednesday", 3);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:71: error: constructor f in class f cannot be applied to given types;
-        f fVar5 = new f("Thursday", 4);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:73: error: constructor f in class f cannot be applied to given types;
-        f fVar6 = new f("Friday", 5);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:75: error: constructor f in class f cannot be applied to given types;
-        f fVar7 = new f("Saturday", 6);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/common/f.java:79: error: cannot find symbol
         v8.l0.t(fVarArr);
              ^
@@ -289464,30 +289109,6 @@ public final class d implements Collection {
   where T,E are type-variables:
     T extends Enum<T> declared in method <T>valueOf(Class<T>,String)
     E extends Enum<E> declared in class Enum
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xn/f.java:14: error: constructor f in class f cannot be applied to given types;
-        f fVar = new f("CLI", 0);
-                 ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xn/f.java:16: error: constructor f in class f cannot be applied to given types;
-        f fVar2 = new f("CCA", 1);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xn/f.java:18: error: constructor f in class f cannot be applied to given types;
-        f fVar3 = new f("VS_CODE", 2);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xn/f.java:20: error: constructor f in class f cannot be applied to given types;
-        f fVar4 = new f("UNKNOWN", 3);
-                  ^
-  required: no arguments
-  found:    String,int
-  reason: actual and formal argument lists differ in length
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xn/f.java:24: error: cannot find symbol
         v8.l0.t(fVarArr);
              ^
@@ -295917,5 +295538,5 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-59267 errors
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_223750.args
+59209 errors
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_225323.args

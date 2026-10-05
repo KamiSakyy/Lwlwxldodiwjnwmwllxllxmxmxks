@@ -10,4 +10,7 @@ public abstract /* synthetic */ class a {
 
     public static /* synthetic */ void b() {
     }
+
+    public a(Object... a) {
+    }
 }

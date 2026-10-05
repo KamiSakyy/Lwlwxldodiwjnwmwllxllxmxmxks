@@ -31,4 +31,7 @@ public final class a0 {
     public static a0[] values() {
         return (a0[]) v.clone();
     }
+
+    public a0(Object... a) {
+    }
 }

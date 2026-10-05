@@ -95,4 +95,7 @@ public final class g {
         */
         throw new UnsupportedOperationException("Method not decompiled: kk.g.a(b01.b):jk.f");
     }
+
+    public g(Object... a) {
+    }
 }

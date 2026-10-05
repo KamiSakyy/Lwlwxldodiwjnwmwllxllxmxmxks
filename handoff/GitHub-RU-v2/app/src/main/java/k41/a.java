@@ -43,4 +43,7 @@ public final class a {
         sb.append(", uptimeMillis=");
         return s0.f(this.c, "}", sb);
     }
+
+    public a(Object... a) {
+    }
 }

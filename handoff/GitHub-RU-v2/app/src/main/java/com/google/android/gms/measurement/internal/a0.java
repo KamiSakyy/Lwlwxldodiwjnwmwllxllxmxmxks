@@ -20,4 +20,7 @@ public abstract class a0 extends androidx.compose.foundation.lazy.layout.s0 {
         public o2() {
         }
     }
+
+    public a0(Object... a) {
+    }
 }

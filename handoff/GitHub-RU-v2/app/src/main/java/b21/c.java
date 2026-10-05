@@ -101,4 +101,7 @@ public final class c implements Application.ActivityLifecycleCallbacks, Componen
             b(true);
         }
     }
+
+    public c(Object... a) {
+    }
 }

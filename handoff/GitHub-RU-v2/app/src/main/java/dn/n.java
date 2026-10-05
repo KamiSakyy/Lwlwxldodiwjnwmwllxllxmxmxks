@@ -148,4 +148,7 @@ public final class n implements y71.j {
                 return w61.a0.a;
         }
     }
+
+    public n(Object... a) {
+    }
 }

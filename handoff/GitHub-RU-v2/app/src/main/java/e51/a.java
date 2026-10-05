@@ -979,4 +979,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
 
 
 
+
+    public a(Object... a) {
+    }
 }

@@ -20,4 +20,7 @@ public final /* synthetic */ class a implements FilenameFilter {
                 return str.startsWith(".ae");
         }
     }
+
+    public a(Object... a) {
+    }
 }

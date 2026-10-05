@@ -1,4 +1,4 @@
-Цикл восстановления Mon Oct  5 22:37:11 UTC 2026
+Цикл восстановления Mon Oct  5 22:52:39 UTC 2026
 === ОПРЕДЕЛЕНИЕ ТИПОВ СТАБОВ ПО ДЕРЕВУ ===
 Стабов переведено в interface: 0; конфликтов (оба вида): 836
 Хозяев с каталог-дубликатами: 0; вложенных объявлений удалено: 0
@@ -16,83 +16,119 @@ import i1.p;
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/h4.java:15: error: interface expected here
 public final class h4 implements d1.k {
                                    ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:51: error: cannot find symbol
-    public static w1.q d(w1.p pVar, w1.q qVar) {
-                           ^
-  symbol:   class p
-  location: class w1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:102: error: cannot find symbol
-    public static void j(w1.p pVar, w1.p pVar2, w1.q qVar) {
-                           ^
-  symbol:   class p
-  location: class w1
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/m11/h.java:102: error: cannot find symbol
-    public static void j(w1.p pVar, w1.p pVar2, w1.q qVar) {
-                                      ^
-  symbol:   class p
-  location: class w1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/i50/c.java:14: error: interface expected here
-Раунд 1: ошибок 59269
+public final class c implements i0, t6.b, bm.k, com.google.android.gms.measurement.internal.x, p.w, x41.d {
+                                                                                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
+public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/e51/a.java:79: error: interface expected here
+public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
+                                                             ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/work/impl/WorkDatabase.java:13: error: no interface expected here
+public abstract class WorkDatabase extends w {
+                                           ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
+public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
+                                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
+Раунд 1: ошибок 59223
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 1 (уникальных отсутствующих: 1); вложенных добавлено: 2 в 19 файлах; пропущено java.lang/прочее: 48794
+Плоских стабов создано: 1 (уникальных отсутствующих: 1); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48836
 Стабов, требующих interface: 0
 Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
 Индексация...
-переименований методов: 4; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 27; values/valueOf: 0
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 13; values/valueOf: 0
 Файлов теперь: 44475
 =========== РАУНД 2 ===========
-Раунд 2: ошибок 59267
+Раунд 2: ошибок 59209
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48813
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48847
 Стабов, требующих interface: 0
 Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
 Индексация...
-переименований методов: 0; extends убрано: 0; модификаторов снято: 1; varargs-конструкторов: 16; values/valueOf: 0
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 9; values/valueOf: 0
 Файлов теперь: 44475
 =========== РАУНД 3 ===========
-Раунд 3: ошибок 59230
+Раунд 3: ошибок 59204
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48825
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48855
 Стабов, требующих interface: 0
 Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
 Индексация...
-переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 15; values/valueOf: 0
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 6; values/valueOf: 0
 Файлов теперь: 44475
 =========== РАУНД 4 ===========
-Раунд 4: ошибок 1
+Раунд 4: ошибок 59202
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 0 файлах; пропущено java.lang/прочее: 0
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48859
 Стабов, требующих interface: 0
-Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 0; интерфейсов очищено от конструкторов: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
 Индексация...
-переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 3; values/valueOf: 0
 Файлов теперь: 44475
 =========== РАУНД 5 ===========
-Раунд 5: ошибок 1
+Раунд 5: ошибок 59201
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
+Индексация дерева...
+Парс лога...
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48861
+Стабов, требующих interface: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
+Индексация...
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 3; values/valueOf: 0
+Файлов теперь: 44475
+=========== РАУНД 6 ===========
+Раунд 6: ошибок 59181
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
+Индексация дерева...
+Парс лога...
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48864
+Стабов, требующих interface: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
+Индексация...
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 3; values/valueOf: 0
+Файлов теперь: 44475
+=========== РАУНД 7 ===========
+Раунд 7: ошибок 59178
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
+  if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
+Индексация дерева...
+Парс лога...
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48866
+Стабов, требующих interface: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
+Индексация...
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 2; values/valueOf: 0
+Файлов теперь: 44475
+=========== РАУНД 8 ===========
+Раунд 8: ошибок 59180
 Нет прогресса (1 из 2)
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/tools/gen_stubs.py:100: SyntaxWarning: invalid escape sequence '\w'
   if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 0 файлах; пропущено java.lang/прочее: 0
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48868
 Стабов, требующих interface: 0
-Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 0; интерфейсов очищено от конструкторов: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
 Индексация...
 переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
 Файлов теперь: 44475
-=========== РАУНД 6 ===========
-Раунд 6: ошибок 1
+=========== РАУНД 9 ===========
+Раунд 9: ошибок 59180
 Нет прогресса (2 из 2)
 === Прогресс остановился ===

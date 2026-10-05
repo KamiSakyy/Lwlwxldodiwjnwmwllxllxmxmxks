@@ -31,4 +31,7 @@ public abstract class s0 {
     }
 
     public abstract void f();
+
+    public s0(Object... a) {
+    }
 }

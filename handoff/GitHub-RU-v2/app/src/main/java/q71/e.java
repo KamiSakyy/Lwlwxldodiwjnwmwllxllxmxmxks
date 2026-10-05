@@ -78,4 +78,7 @@ public class e implements Iterable, l71.a {
         }
         return sb2.toString();
     }
+
+    public e(Object... a) {
+    }
 }

@@ -18,4 +18,7 @@ public abstract class n {
         b91.g.d0(6, objArr2);
         c = new o21.f(6, objArr2);
     }
+
+    public n(Object... a) {
+    }
 }

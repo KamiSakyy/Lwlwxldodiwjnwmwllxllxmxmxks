@@ -84,4 +84,7 @@ public final class c {
     public static c[] values() {
         return (c[]) M.clone();
     }
+
+    public c(Object... a) {
+    }
 }

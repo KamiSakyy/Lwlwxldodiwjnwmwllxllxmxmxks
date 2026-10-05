@@ -26,4 +26,7 @@ public abstract class c {
         k.f(jSONObject, "toString(...)");
         return jSONObject;
     }
+
+    public c(Object... a) {
+    }
 }

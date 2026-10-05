@@ -50,4 +50,7 @@ public final class c extends f1 {
             lVar.i(arrayList);
         }
     }
+
+    public c(Object... a) {
+    }
 }

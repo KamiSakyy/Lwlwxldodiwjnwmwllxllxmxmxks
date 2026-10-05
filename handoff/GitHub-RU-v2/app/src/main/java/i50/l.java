@@ -36,4 +36,7 @@ public final class l {
         o.append(")");
         return o.toString();
     }
+
+    public l(Object... a) {
+    }
 }

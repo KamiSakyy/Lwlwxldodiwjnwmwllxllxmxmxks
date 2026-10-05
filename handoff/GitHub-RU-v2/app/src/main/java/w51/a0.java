@@ -39,4 +39,7 @@ public final /* synthetic */ class a0 implements w21.c, w7.b, o31.k {
                 break;
         }
     }
+
+    public a0(Object... a) {
+    }
 }

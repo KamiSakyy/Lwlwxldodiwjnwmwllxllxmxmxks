@@ -25,4 +25,7 @@ public final class e implements z {
         return p2Var;
     }
 
+
+    public e(Object... a) {
+    }
 }

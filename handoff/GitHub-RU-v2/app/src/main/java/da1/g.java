@@ -76,4 +76,7 @@ final class g extends b0 {
         bVar.l = fVar;
         return bVar.H(s0Var);
     }
+
+    public g(Object... a) {
+    }
 }

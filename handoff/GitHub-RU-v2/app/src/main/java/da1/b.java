@@ -738,4 +738,7 @@ public final class b {
         }
         E();
     }
+
+    public b(Object... a) {
+    }
 }

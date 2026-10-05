@@ -32,4 +32,7 @@ public final class c extends a21.c {
         return gVar.a;
     }
 
+
+    public c(Object... a) {
+    }
 }

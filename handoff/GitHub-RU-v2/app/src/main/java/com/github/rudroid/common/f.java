@@ -89,4 +89,7 @@ public final class f {
     public static f[] values() {
         return (f[]) A.clone();
     }
+
+    public f(Object... a) {
+    }
 }

@@ -28,4 +28,7 @@ public abstract class c {
     public static boolean a() {
         return (f2261a == null || f2262b) ? false : true;
     }
+
+    public c(Object... a) {
+    }
 }

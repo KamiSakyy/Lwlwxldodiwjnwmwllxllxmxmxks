@@ -54,4 +54,7 @@ public abstract class c {
             vVar.s();
         }
     }
+
+    public c(Object... a) {
+    }
 }

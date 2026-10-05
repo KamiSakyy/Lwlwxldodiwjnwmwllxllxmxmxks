@@ -36,4 +36,7 @@ public final class b {
     public final String toString() {
         return "CrashlyticsReportWithSessionId{report=" + this.a + ", sessionId=" + this.b + ", reportFile=" + this.c + "}";
     }
+
+    public b(Object... a) {
+    }
 }

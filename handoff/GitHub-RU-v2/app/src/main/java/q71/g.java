@@ -39,4 +39,7 @@ public final class g extends e {
     public final String toString() {
         return this.f30996r + ".." + this.f30997s;
     }
+
+    public g(Object... a) {
+    }
 }

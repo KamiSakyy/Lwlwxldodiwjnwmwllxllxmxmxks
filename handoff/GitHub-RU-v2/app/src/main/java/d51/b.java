@@ -17,4 +17,7 @@ public final class b {
         this.e = d2;
         this.f = i;
     }
+
+    public b(Object... a) {
+    }
 }
