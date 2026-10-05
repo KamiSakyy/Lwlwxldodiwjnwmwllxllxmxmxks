@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ru.webapk.studio'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'ru.webapk.studio'
+        minSdk 23
+        targetSdk 28
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            // The Actions artifact is a signed, installable APK. For a personal store release,
+            // replace this CI debug key with your own private signing configuration.
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            assets.srcDir(layout.buildDirectory.dir('generated/template-assets'))
+        }
+    }
+}
+
+def embeddedTemplateDir = layout.buildDirectory.dir('generated/template-assets')
+
+tasks.register('prepareEmbeddedTemplate', Copy) {
+    dependsOn(':template:assembleRelease')
+    from(project(':template').layout.buildDirectory.file('outputs/apk/release/template-release-unsigned.apk'))
+    into(embeddedTemplateDir)
+    rename { 'host-template.apk' }
+}
+
+tasks.named('preBuild').configure {
+    dependsOn(tasks.named('prepareEmbeddedTemplate'))
+}

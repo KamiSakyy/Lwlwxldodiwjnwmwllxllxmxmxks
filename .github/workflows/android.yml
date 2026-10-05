@@ -1,0 +1,71 @@
+name: Android APK build
+
+on:
+  push:
+    branches:
+      - "arena/01a10cb3-lwlwxldodiwjnwmwllxllxmxmxks"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  JAVA_VERSION: '17'
+  GRADLE_VERSION: '8.9'
+
+jobs:
+  build-apk:
+    name: Build signed Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout session branch
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: ${{ env.GRADLE_VERSION }}
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager "platforms;android-35" "build-tools;35.0.0" "platform-tools"
+
+      - name: Assemble release APK with Android SDK and Gradle
+        run: gradle --no-daemon clean :app:assembleRelease
+
+      - name: Package source and verify APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cp app/build/outputs/apk/release/app-release.apk dist/WebAPK-Studio.apk
+          python3 scripts/create_source_zip.py dist/WebAPK-Studio-source.zip
+          APK_BYTES=$(stat -c '%s' dist/WebAPK-Studio.apk)
+          echo "APK size: ${APK_BYTES} bytes"
+          if [ "$APK_BYTES" -ge 1000000 ]; then
+            echo "Release APK exceeds the required 1,000,000-byte limit." >&2
+            exit 1
+          fi
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs dist/WebAPK-Studio.apk
+          unzip -t dist/WebAPK-Studio.apk >/dev/null
+          unzip -t dist/WebAPK-Studio-source.zip >/dev/null
+
+      - name: Upload APK and source ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: WebAPK-Studio-Android
+          path: |
+            dist/WebAPK-Studio.apk
+            dist/WebAPK-Studio-source.zip
+          if-no-files-found: error
+          retention-days: 30
