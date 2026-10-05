@@ -81,7 +81,50 @@ def infer_q_type(var, expr, text, warns, lines, idx):
                 return mn.group(1), False
     return "Object", False
 
-stats = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0}
+def remove_static_block_braces(src):
+    """H: удалить все static{...} блоки верхнего уровня (скобочный парсер)."""
+    out = []
+    i = 0
+    n = len(src)
+    while True:
+        m = re.compile(r"(?:^|\n)(\s*)static\s*\{").search(src, i)
+        if not m:
+            out.append(src[i:])
+            break
+        start = m.start()
+        brace = src.index("{", m.end() - 1)
+        depth = 0
+        j = brace
+        instr = inlc = inbc = inch = False
+        while j < n:
+            c = src[j]
+            if inbc:
+                if src[j:j+2] == "*/": inbc = False; j += 2; continue
+            elif inlc:
+                if c == "\n": inlc = False
+            elif instr:
+                if c == "\\": j += 2; continue
+                if c == '"': instr = False
+            elif inch:
+                if c == "\\": j += 2; continue
+                if c == "'": inch = False
+            else:
+                if src[j:j+2] == "//": inlc = True
+                elif src[j:j+2] == "/*": inbc = True; j += 1
+                elif c == '"': instr = True
+                elif c == "'": inch = True
+                elif c == "{": depth += 1
+                elif c == "}":
+                    depth -= 1
+                    if depth == 0:
+                        break
+            j += 1
+        end = j + 1
+        out.append(src[i:start])
+        i = end
+    return "".join(out)
+
+stats = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0, "G": 0, "H": 0, "I": 0, "J": 0}
 unresolved = []
 
 for root, dirs, files in os.walk(JAVA):
@@ -97,14 +140,19 @@ for root, dirs, files in os.walk(JAVA):
         orig = src
         lines = src.split("\n")
 
-        # ---------- B: static{} в интерфейсе ----------
-        first_type = re.search(r"^\s*(?:[\w-]+\s+)*(class|interface|enum)\s+\w+", src, re.M)
-        if first_type and first_type.group(1) == "interface" and re.search(r"^\s*static\s*\{", src, re.M):
-            new_src = re.sub(r"\n\s*static\s*\{\n[^{}]*\}\n", "\n", src)
-            if new_src != src:
-                stats["B"] += 1
-                src = new_src
-                lines = src.split("\n")
+        # ---------- G: enum X extends Y -> final class X extends Y ----------
+        def enum_fix(m2):
+            stats["G"] += 1
+            return f"{m2.group(1)}final class {m2.group(2)} extends {m2.group(3)} {{"
+        src = re.sub(r"^(\s*)(?:public\s+|final\s+)*enum\s+(\w+)\s+extends\s+([\w.]+)\s*(implements\s+[\w.,\s]+)?\{",
+                     enum_fix, src, flags=re.M)
+
+        # ---------- H: static{} в интерфейсе (скобочный парсер) ----------
+        if re.search(r"(?:^|\n)\s*static\s*\{", src) and re.search(r"^\s*(?:public\s+)?(?:abstract\s+)?interface\s+\w+", src, re.M):
+            ns = remove_static_block_braces(src)
+            if ns != src:
+                stats["H"] += 1
+                src = ns
 
         # ---------- A: обрезанный заголовок метода ----------
         out = []
@@ -143,6 +191,15 @@ for root, dirs, files in os.walk(JAVA):
             # C: for (0; a < b; i + 1)
             ln = re.sub(r"for\s*\(\s*0\s*;\s*(\w+)\s*([<>]=?)\s*([^;]+?);\s*(\w+)\s*\+\s*1\s*\)",
                         r"for (\1 = 0; \1 \2 \3; \4++)", ln)
+            # J: for (?? x = ...; x < len; ...)
+            fm = re.search(r"for\s*\(\s*\?\?\s*(\w+)\s*=\s*([^;]+);([^;]*);", ln)
+            if fm:
+                v, expr2, cond = fm.group(1), fm.group(2).strip(), fm.group(3)
+                if re.fullmatch(r"\d+", expr2):
+                    ln = ln.replace("?? " + v + " =", "int " + v + " =", 1)
+                elif re.search(r"\b" + re.escape(v) + r"\s*[<>]", cond):
+                    ln = ln.replace("?? " + v + " =", "int " + v + " = 0;", 1) if "= " in ln else ln
+                stats["J"] += 1
             # E: битые массивы
             ln = re.sub(r"\b([\w.$]+)\[ (\w+)", r"\1[] \2", ln)
             ln = re.sub(r"\b([\w.$]+)\[\)", r"\1[])", ln)

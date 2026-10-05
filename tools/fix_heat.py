@@ -134,6 +134,38 @@ if os.path.isdir(res_dir):
                 fixed_refs += 1
 print(f"Переименовано res-файлов с '$' в имени: {renamed_cnt}; XML со исправленными ссылками: {fixed_refs}")
 
+# ---------- 3.5 Удаление системных стабов (android/**), уже существующих в android.jar ----------
+import zipfile as _zf
+_jar = os.environ.get("ANDROID_JAR", "")
+_jar_candidates = [_jar,
+    os.path.join(os.environ.get("ANDROID_HOME", "/usr/local/lib/android/sdk"), "platforms", "android-36", "android.jar"),
+    os.path.join("/usr/local/lib/android/sdk", "platforms", "android-35", "android.jar"),
+    os.path.join("/usr/local/lib/android/sdk", "platforms", "android-34", "android.jar")]
+jar_path = next((j for j in _jar_candidates if j and os.path.isfile(j)), None)
+if jar_path:
+    src_java = os.path.join(proj, "app", "src", "main", "java")
+    removed_stubs = 0
+    with _zf.ZipFile(jar_path) as z:
+        jarnames = set(z.namelist())
+    android_dir = os.path.join(src_java, "android")
+    if os.path.isdir(android_dir):
+        for root, dirs, files in os.walk(android_dir):
+            for fn in files:
+                if not fn.endswith(".java"):
+                    continue
+                fp = os.path.join(root, fn)
+                rel = os.path.relpath(fp, src_java)[:-5].replace(os.sep, "/") + ".class"
+                if rel in jarnames:
+                    os.remove(fp)
+                    removed_stubs += 1
+        # чистим пустые папки
+        for root, dirs, files in os.walk(android_dir, topdown=False):
+            if not os.listdir(root):
+                os.rmdir(root)
+    print(f"Удалено системных стабов android/**: {removed_stubs} (есть в android.jar)")
+else:
+    print("android.jar не найден — стабы не удалялись")
+
 # ---------- 4. Маркер ----------
 marker = os.path.join(proj, "FIXES-APPLIED.txt")
 with open(marker, "w", encoding="utf-8") as f:

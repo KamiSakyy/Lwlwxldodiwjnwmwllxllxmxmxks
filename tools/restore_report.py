@@ -28,19 +28,19 @@ before = parse(before_log)
 after = parse(after_log)
 
 def uniq(errs):
-    return sorted(set((p, msg) for p, _, msg in errs))
+    return sorted(set((p, ln, msg) for p, ln, msg in errs))
 
 ub, ua = uniq(before), uniq(after)
 
 with open(os.path.join(out, "errors-before.txt"), "w", encoding="utf-8") as f:
-    for p, msg in ub:
-        f.write(f"{p}: {msg}\n")
+    for p, ln2, msg in ub:
+        f.write(f"{p}:{ln2}: {msg}\n")
 with open(os.path.join(out, "errors-after.txt"), "w", encoding="utf-8") as f:
-    for p, msg in ua:
-        f.write(f"{p}: {msg}\n")
+    for p, ln2, msg in ua:
+        f.write(f"{p}:{ln2}: {msg}\n")
 
-by_type = collections.Counter(msg[:80] for _, msg in ua)
-by_file = collections.Counter(p for p, _ in ua)
+by_type = collections.Counter(msg[:80] for _, _, msg in ua)
+by_file = collections.Counter(p for p, _, _ in ua)
 restored = len(ua) == 0
 
 L = []
