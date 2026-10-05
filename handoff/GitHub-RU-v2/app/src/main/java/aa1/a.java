@@ -16,4 +16,10 @@ public abstract class a {
         "-_1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
         s.N("meta[http-equiv=content-type], meta[charset]");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

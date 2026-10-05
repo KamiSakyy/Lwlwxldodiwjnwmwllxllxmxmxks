@@ -111,4 +111,10 @@ public final class a extends com.google.android.gms.internal.measurement.x imple
         O.recycle();
         return bundle3;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

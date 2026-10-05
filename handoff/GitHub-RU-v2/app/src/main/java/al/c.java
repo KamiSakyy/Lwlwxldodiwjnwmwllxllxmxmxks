@@ -22,4 +22,28 @@ public final class c {
     }
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g<T1,T2,T3,T4> {
+        public g() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h0<T1,T2,T3,T4> {
+        public h0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class j<T1,T2,T3,T4> {
+        public j() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y<T1,T2,T3,T4> {
+        public y() {
+        }
+    }
 }

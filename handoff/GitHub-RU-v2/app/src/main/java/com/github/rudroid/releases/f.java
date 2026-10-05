@@ -5,4 +5,10 @@ package com.github.rudroid.releases;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f<T1,T2,T3,T4> {
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
 }

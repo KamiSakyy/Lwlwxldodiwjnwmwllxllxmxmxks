@@ -1,18 +1,12 @@
-Цикл восстановления Mon Oct  5 23:09:48 UTC 2026
+Цикл восстановления Mon Oct  5 23:24:46 UTC 2026
 === ОПРЕДЕЛЕНИЕ ТИПОВ СТАБОВ ПО ДЕРЕВУ ===
-Стабов переведено в interface: 0; конфликтов (оба вида): 836
+Стабов переведено в interface: 0; конфликтов (оба вида): 849
 Хозяев с каталог-дубликатами: 0; вложенных объявлений удалено: 0
 =========== РАУНД 1 ===========
 --- ДИАГНОСТИКА: bootclasspath ---
 -rwxrwxrwx 1 root root 27768026 Sep 27 21:31 /usr/local/lib/android/sdk/platforms/android-36/android.jar
 BOOTCLASSPATH OK
 --- ДИАГНОСТИКА: i80/c.java изолированно ---
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/kotlinx/serialization/descriptors/SerialDescriptor.java:5: error: package y9 does not exist
-import y9.a;
-         ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/hz/k.java:29: error: package i1 does not exist
-import i1.p;
-         ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/internal/measurement/h4.java:15: error: interface expected here
 public final class h4 implements d1.k {
                                    ^
@@ -32,47 +26,54 @@ public abstract class WorkDatabase extends w {
 public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
                                                 ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
-Раунд 1: ошибок 59180
+public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
+                                                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/x3.java:28: error: interface expected here
+public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3.z, j7.b {
+                                                                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/t4.java:49: error: package h7 does not exist
+Раунд 1: ошибок 58940
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 47 (уникальных отсутствующих: 47); вложенных добавлено: 0 в 18 файлах; пропущено java.lang/прочее: 48868
+Плоских стабов создано: 11 (уникальных отсутствующих: 11); вложенных добавлено: 10 в 15 файлах; пропущено java.lang/прочее: 48859
 Стабов, требующих interface: 0
-Конвертировано в interface: 7; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
+Конвертировано в interface: 10; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
 Индексация...
 переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
-Файлов теперь: 44521
+Файлов теперь: 44532
 =========== РАУНД 2 ===========
-Раунд 2: ошибок 58943
-Индексация дерева...
-Парс лога...
-Плоских стабов создано: 1 (уникальных отсутствующих: 1); вложенных добавлено: 0 в 15 файлах; пропущено java.lang/прочее: 48859
-Стабов, требующих interface: 0
-Конвертировано в interface: 4; откат в class: 0; не тронуто (extends): 19; интерфейсов очищено от конструкторов: 0
-Индексация...
-переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
-Файлов теперь: 44522
-=========== РАУНД 3 ===========
-Раунд 3: ошибок 58940
-Индексация дерева...
-Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 15 файлах; пропущено java.lang/прочее: 48859
-Стабов, требующих interface: 0
-Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
-Индексация...
-переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
-Файлов теперь: 44522
-=========== РАУНД 4 ===========
-Раунд 4: ошибок 58940
+Раунд 2: ошибок 58953
 Нет прогресса (1 из 2)
 Индексация дерева...
 Парс лога...
-Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 15 файлах; пропущено java.lang/прочее: 48859
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 9 в 8 файлах; пропущено java.lang/прочее: 48836
 Стабов, требующих interface: 0
-Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 16; интерфейсов очищено от конструкторов: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 17; интерфейсов очищено от конструкторов: 0
 Индексация...
 переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
-Файлов теперь: 44522
+Файлов теперь: 44532
+=========== РАУНД 3 ===========
+Раунд 3: ошибок 58948
+Индексация дерева...
+Парс лога...
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 6 файлах; пропущено java.lang/прочее: 48836
+Стабов, требующих interface: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 17; интерфейсов очищено от конструкторов: 0
+Индексация...
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
+Файлов теперь: 44532
+=========== РАУНД 4 ===========
+Раунд 4: ошибок 58948
+Нет прогресса (1 из 2)
+Индексация дерева...
+Парс лога...
+Плоских стабов создано: 0 (уникальных отсутствующих: 0); вложенных добавлено: 0 в 6 файлах; пропущено java.lang/прочее: 48836
+Стабов, требующих interface: 0
+Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 17; интерфейсов очищено от конструкторов: 0
+Индексация...
+переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
+Файлов теперь: 44532
 =========== РАУНД 5 ===========
-Раунд 5: ошибок 58940
+Раунд 5: ошибок 58948
 Нет прогресса (2 из 2)
 === Прогресс остановился ===

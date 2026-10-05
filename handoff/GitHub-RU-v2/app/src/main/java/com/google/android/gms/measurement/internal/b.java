@@ -509,4 +509,16 @@ public final class b extends c {
         public d() {
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t<T1,T2,T3,T4> {
+        public t() {
+        }
+    }
 }
