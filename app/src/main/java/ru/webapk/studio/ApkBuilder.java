@@ -125,8 +125,8 @@ final class ApkBuilder {
                     putStoredAligned(apk, countingOut, name, table);
                     resourcesSeen = true;
                 } else if (iconFile != null && IconResourceLocator.isIconCandidate(name)) {
-                    byte[] originalIcon = readAll(source, 4 * 1024 * 1024);
-                    String density = IconResourceLocator.densityFor(name, originalIcon);
+                    byte[] originalIconHeader = readPrefix(source, 24);
+                    String density = IconResourceLocator.densityFor(name, originalIconHeader);
                     byte[] replacement = density == null ? null : iconBytes.get(density);
                     if (replacement != null) {
                         putStoredAligned(apk, countingOut, name, replacement);
@@ -136,7 +136,8 @@ final class ApkBuilder {
                         ZipEntry copied = new ZipEntry(name);
                         copied.setTime(entry.getTime());
                         apk.putNextEntry(copied);
-                        apk.write(originalIcon);
+                        apk.write(originalIconHeader);
+                        copy(source, apk);
                         apk.closeEntry();
                     }
                 } else if (name.equals("classes.dex")) {
@@ -343,6 +344,17 @@ final class ApkBuilder {
         zip.putNextEntry(entry);
         zip.write(data);
         zip.closeEntry();
+    }
+
+    private static byte[] readPrefix(InputStream input, int maxBytes) throws IOException {
+        ByteArrayOutputStream out = new ByteArrayOutputStream(maxBytes);
+        byte[] buffer = new byte[Math.min(maxBytes, 1024)];
+        while (out.size() < maxBytes) {
+            int count = input.read(buffer, 0, Math.min(buffer.length, maxBytes - out.size()));
+            if (count == -1) break;
+            if (count > 0) out.write(buffer, 0, count);
+        }
+        return out.toByteArray();
     }
 
     private static byte[] readAll(InputStream input, int maxBytes) throws IOException {
