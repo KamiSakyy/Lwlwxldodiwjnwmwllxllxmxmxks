@@ -61,6 +61,7 @@ jobs:
           for R in 1 2 3 4 5 6 7 8; do
             echo "=========== РАУНД $R ==========="
             python3 tools/cleanup_nested_stubs.py "$SRC" || true
+            python3 tools/fix_nested_duplicates.py "$SRC" || true
             rm -rf /tmp/classes
             javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 \
               -source 8 -target 8 -encoding UTF-8 \
