@@ -1,0 +1,120 @@
+=== gradle/wrapper ===
+total 56
+drwxr-xr-x 2 runner runner  4096 Oct  5 11:43 .
+drwxr-xr-x 3 runner runner  4096 Oct  5 11:43 ..
+-rw-r--r-- 1 runner runner 43504 Oct  5 11:10 gradle-wrapper.jar
+-rw-r--r-- 1 runner runner   250 Oct  5 11:10 gradle-wrapper.properties
+=== корень проекта ===
+total 48
+drwxr-xr-x 4 runner runner 4096 Oct  5 11:43 .
+drwxr-xr-x 3 runner runner 4096 Oct  5 11:43 ..
+-rw-r--r-- 1 runner runner 3680 Oct  5 11:10 README.md
+drwxr-xr-x 3 runner runner 4096 Oct  5 11:43 app
+-rw-r--r-- 1 runner runner  137 Oct  5 11:10 build.gradle
+drwxr-xr-x 3 runner runner 4096 Oct  5 11:43 gradle
+-rw-r--r-- 1 runner runner  243 Oct  5 11:10 gradle.properties
+-rw-r--r-- 1 runner runner 8784 Oct  5 11:10 gradlew
+-rw-r--r-- 1 runner runner 2894 Oct  5 11:10 gradlew.bat
+-rw-r--r-- 1 runner runner  277 Oct  5 11:10 settings.gradle
+=== app/ ===
+total 24
+drwxr-xr-x 3 runner runner 4096 Oct  5 11:43 .
+drwxr-xr-x 4 runner runner 4096 Oct  5 11:43 ..
+-rw-r--r-- 1 runner runner 1155 Oct  5 11:10 build.gradle
+-rw-r--r-- 1 runner runner 2702 Oct  5 11:10 github-ru.jks
+-rw-r--r-- 1 runner runner  460 Oct  5 11:10 proguard-rules.pro
+drwxr-xr-x 3 runner runner 4096 Oct  5 11:43 src
+=== кастомные пакеты com/github ===
+extracted/GitHub-RU-Source/app/src/main/java/com/github
+extracted/GitHub-RU-Source/app/src/main/java/com/github/centrallogger
+extracted/GitHub-RU-Source/app/src/main/java/com/github/commonandroid
+extracted/GitHub-RU-Source/app/src/main/java/com/github/commonandroid/featureflag
+extracted/GitHub-RU-Source/app/src/main/java/com/github/commonandroid/views
+extracted/GitHub-RU-Source/app/src/main/java/com/github/developersettings
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/repositorycreation
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/repositorycreation/gitignore
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/repositorycreation/templaterepository
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/repositorycreation/licensetemplate
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/checks
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/support
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/navigation
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/ui
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/bottomsheet
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/listdetails
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/createoreditlist
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/html
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/activities
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/activities/util
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/templates
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/templates/ui
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/accounts
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/accounts/domain
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/featureflags
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/featureflags/preferences
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/shared
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/checkdetail
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/checkssummary
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/repositoryworkflows
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/checklog
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/navigation
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/workflowruns
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/routing
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/checksoverview
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/workflowsummary
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/users
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/factories
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/factories/actions
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/utilities
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/utilities/ui
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/utilities/viewmodel
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/createissue
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/createissue/propertybar
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/adapters
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/adapters/viewholders
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/featurepreview
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/applock
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/preferences
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/privacy
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/codeoptions
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/notifications
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/settings/copilot
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/profile
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/profile/navigation
+extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/profile/ui
+=== кол-во файлов в кастомных пакетах ===
+1  extracted/GitHub-RU-Source/app/src/main/java/com/github/centrallogger/
+3  extracted/GitHub-RU-Source/app/src/main/java/com/github/commonandroid/
+3  extracted/GitHub-RU-Source/app/src/main/java/com/github/developersettings/
+198  extracted/GitHub-RU-Source/app/src/main/java/com/github/domain/
+5613  extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/
+256  extracted/GitHub-RU-Source/app/src/main/java/com/github/service/
+3  extracted/GitHub-RU-Source/app/src/main/java/com/github/testingsettings/
+=== поиск паролей keystore ===
+18:    signingConfigs {
+20:            storeFile file('github-ru.jks')   // пароль: android, алиас: github-ru
+21:            storePassword 'android'
+22:            keyAlias 'github-ru'
+23:            keyPassword 'android'
+29:            signingConfig signingConfigs.release
+=== debuggable/minify ===
+30:            minifyEnabled true            // R8: минификация кода
+31:            shrinkResources true          // выброс неиспользуемых ресурсов
+32:            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+=== Application class из манифеста ===
+android:name="android.intent.action.VIEW"
+android:name="android.intent.category.BROWSABLE"
+android:name="android.intent.action.VIEW"
+android:name="android.intent.category.APP_BROWSER"
+android:name="android.support.customtabs.action.CustomTabsService"
+android:name="com.android.vending.billing.InAppBillingService.BIND"
+android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"
+android:name="android.permission.POST_NOTIFICATIONS"
+android:name="android.permission.POST_PROMOTED_NOTIFICATIONS"
+android:name="android.permission.INTERNET"
+android:name="android.permission.USE_BIOMETRIC"
+android:name="android.permission.USE_FINGERPRINT"
+grep: write error: Broken pipe

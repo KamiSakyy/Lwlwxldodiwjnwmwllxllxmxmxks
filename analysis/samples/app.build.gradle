@@ -1,0 +1,37 @@
+android {
+    namespace 'com.github.rudroid'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.github.rudroid'
+        minSdk 26
+        targetSdk 36
+        versionCode 925
+        versionName '1.257.0'
+        multiDexEnabled true
+        resourceConfigurations += ['ru']
+    }
+
+    // только arm64-v8a
+    splits { abi { enable true; reset(); include 'arm64-v8a' } }
+
+    signingConfigs {
+        release {
+            storeFile file('github-ru.jks')   // пароль: android, алиас: github-ru
+            storePassword 'android'
+            keyAlias 'github-ru'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true            // R8: минификация кода
+            shrinkResources true          // выброс неиспользуемых ресурсов
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions { jniLibs.useLegacyPackaging = false }
+    lint { abortOnError false; checkReleaseBuilds false }
+}
