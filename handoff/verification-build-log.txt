@@ -34,8 +34,8 @@ to this project's gradle.properties.
 > Task :app:checkReleaseDuplicateClasses
 > Task :app:mergeReleaseNativeLibs
 > Task :app:javaPreCompileRelease
-> Task :app:checkReleaseAarMetadata
 > Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
 
 > Task :app:stripReleaseDebugSymbols
 Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
@@ -43,15 +43,84 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:mapReleaseSourceSetPaths
 > Task :app:generateReleaseResources
 > Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:packageReleaseResources
+> Task :app:mergeReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
 
-> Task :app:mergeReleaseResources FAILED
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/$ic_notification_bell_ringing__37.xml: Resource and asset merger: '$' is not a valid file-based resource name character: File-based resource names must contain only lowercase a-z, 0-9, or underscore
+> Task :app:processReleaseMainManifest
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/AndroidManifest.xml:41:144-177 Warning:
+	android:extractNativeLibs should not be specified in this source AndroidManifest.xml file. See https://d.android.com/guide/topics/manifest/application-element#extractNativeLibs for more information.
+The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml file and update the build file accordingly. See https://d.android.com/studio/build/agp-upgrade-assistant for more information.
+
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseManifest
+> Task :app:mergeReleaseArtProfile
+> Task :app:extractProguardFiles
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseStartupProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:mergeReleaseJavaResource
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:processReleaseManifestForPackage
+> Task :app:processReleaseResources FAILED
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:mergeReleaseResources'.
-> /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/$ic_notification_bell_ringing__37.xml: Error: '$' is not a valid file-based resource name character: File-based resource names must contain only lowercase a-z, 0-9, or underscore
+Execution failed for task ':app:processReleaseResources'.
+> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+   > Android resource linking failed
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:3: AAPT: error: resource drawable/$avd_hide_password__0 (aka com.github.rudroid:drawable/$avd_hide_password__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:4: AAPT: error: resource drawable/$avd_hide_password__1 (aka com.github.rudroid:drawable/$avd_hide_password__1) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:5: AAPT: error: resource drawable/$avd_hide_password__2 (aka com.github.rudroid:drawable/$avd_hide_password__2) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:3: AAPT: error: resource drawable/$avd_show_password__0 (aka com.github.rudroid:drawable/$avd_show_password__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:4: AAPT: error: resource drawable/$avd_show_password__1 (aka com.github.rudroid:drawable/$avd_show_password__1) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:5: AAPT: error: resource drawable/$avd_show_password__2 (aka com.github.rudroid:drawable/$avd_show_password__2) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_off_to_on.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_off_to_on__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_off_to_on__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_on_to_off.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_on_to_off__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_on_to_off__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_gemini_16.xml:5: AAPT: error: resource drawable/$ic_gemini_16__0 (aka com.github.rudroid:drawable/$ic_gemini_16__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:3: AAPT: error: resource drawable/$ic_notification_bell_ringing__0 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:4: AAPT: error: resource drawable/$ic_notification_bell_ringing__1 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__1) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:5: AAPT: error: resource drawable/$ic_notification_bell_ringing__9 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__9) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:6: AAPT: error: resource drawable/$ic_notification_bell_ringing__17 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__17) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:7: AAPT: error: resource drawable/$ic_notification_bell_ringing__25 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__25) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:8: AAPT: error: resource drawable/$ic_notification_bell_ringing__33 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__33) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:9: AAPT: error: resource drawable/$ic_notification_bell_ringing__42 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__42) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:10: AAPT: error: resource drawable/$ic_notification_bell_ringing__50 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__50) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:11: AAPT: error: resource drawable/$ic_notification_bell_ringing__58 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__58) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:3: AAPT: error: resource drawable/$ic_notification_setting_banner__0 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__0) not found.
+         
+     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:4: AAPT: error: resource drawable/$ic_notification_setting_banner__1 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__1) not found.
+         
 
 * Try:
 > Run with --info or --debug option to get more log output.
@@ -59,7 +128,7 @@ Execution failed for task ':app:mergeReleaseResources'.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mergeReleaseResources'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:processReleaseResources'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
@@ -89,52 +158,20 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mer
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
-	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
-	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
-	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
-	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
-	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:267)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:131)
-	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
-	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
-	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
-	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: com.android.build.gradle.tasks.ResourceException: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/$ic_notification_bell_ringing__37.xml: Error: '$' is not a valid file-based resource name character: File-based resource names must contain only lowercase a-z, 0-9, or underscore
-	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.kt:328)
-	at com.android.build.gradle.tasks.MergeResources.doTaskAction(MergeResources.kt:357)
-	at com.android.build.gradle.internal.tasks.NewIncrementalTask$taskAction$$inlined$recordTaskAction$1.invoke(BaseTask.kt:82)
-	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
-	at com.android.build.gradle.internal.tasks.NewIncrementalTask.taskAction(NewIncrementalTask.kt:46)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
-	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
-	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:339)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:322)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:327)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
@@ -250,13 +287,65 @@ Caused by: com.android.build.gradle.tasks.ResourceException: /home/runner/work/L
 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
-	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
-	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
-	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
-	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: com.android.builder.internal.aapt.v2.Aapt2Exception: Android resource linking failed
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:3: AAPT: error: resource drawable/$avd_hide_password__0 (aka com.github.rudroid:drawable/$avd_hide_password__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:4: AAPT: error: resource drawable/$avd_hide_password__1 (aka com.github.rudroid:drawable/$avd_hide_password__1) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:5: AAPT: error: resource drawable/$avd_hide_password__2 (aka com.github.rudroid:drawable/$avd_hide_password__2) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:3: AAPT: error: resource drawable/$avd_show_password__0 (aka com.github.rudroid:drawable/$avd_show_password__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:4: AAPT: error: resource drawable/$avd_show_password__1 (aka com.github.rudroid:drawable/$avd_show_password__1) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:5: AAPT: error: resource drawable/$avd_show_password__2 (aka com.github.rudroid:drawable/$avd_show_password__2) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_off_to_on.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_off_to_on__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_off_to_on__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_on_to_off.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_on_to_off__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_on_to_off__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_gemini_16.xml:5: AAPT: error: resource drawable/$ic_gemini_16__0 (aka com.github.rudroid:drawable/$ic_gemini_16__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:3: AAPT: error: resource drawable/$ic_notification_bell_ringing__0 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:4: AAPT: error: resource drawable/$ic_notification_bell_ringing__1 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__1) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:5: AAPT: error: resource drawable/$ic_notification_bell_ringing__9 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__9) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:6: AAPT: error: resource drawable/$ic_notification_bell_ringing__17 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__17) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:7: AAPT: error: resource drawable/$ic_notification_bell_ringing__25 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__25) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:8: AAPT: error: resource drawable/$ic_notification_bell_ringing__33 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__33) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:9: AAPT: error: resource drawable/$ic_notification_bell_ringing__42 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__42) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:10: AAPT: error: resource drawable/$ic_notification_bell_ringing__50 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__50) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:11: AAPT: error: resource drawable/$ic_notification_bell_ringing__58 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__58) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:3: AAPT: error: resource drawable/$ic_notification_setting_banner__0 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__0) not found.
+    
+ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:4: AAPT: error: resource drawable/$ic_notification_setting_banner__1 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__1) not found.
+    
+	at com.android.builder.internal.aapt.v2.Aapt2Exception$Companion.create(Aapt2Exception.kt:45)
+	at com.android.builder.internal.aapt.v2.Aapt2Exception$Companion.create$default(Aapt2Exception.kt:33)
+	at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:262)
+	at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
+	at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
+	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:945)
+	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:799)
+	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:432)
+	at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
@@ -264,32 +353,20 @@ Caused by: com.android.build.gradle.tasks.ResourceException: /home/runner/work/L
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
-	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
-	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
-	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
-	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
-	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
-	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
-	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:195)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:128)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:170)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:267)
 	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:131)
-	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
-	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
-	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
-	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
-	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/$ic_notification_bell_ringing__37.xml: Error: '$' is not a valid file-based resource name character: File-based resource names must contain only lowercase a-z, 0-9, or underscore
-	at com.android.ide.common.resources.MergingException.throwIfNonEmpty(MergingException.java:170)
-	at com.android.ide.common.resources.DataSet.loadFromFiles(DataSet.java:272)
-	at com.android.ide.common.resources.DataSet.loadFromFiles(DataSet.java:243)
-	at com.android.build.gradle.tasks.MergeResources$doFullTaskAction$1$1$1.invoke(MergeResources.kt:278)
-	at com.android.build.gradle.internal.tasks.Blocks.recordSpan(Blocks.java:51)
-	at com.android.build.gradle.tasks.MergeResources.doFullTaskAction(MergeResources.kt:272)
-	... 159 more
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:136)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:165)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:134)
+	... 2 more
 
 
-BUILD FAILED in 32s
-11 actionable tasks: 11 executed
+BUILD FAILED in 38s
+32 actionable tasks: 32 executed

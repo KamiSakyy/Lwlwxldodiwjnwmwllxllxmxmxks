@@ -1,6 +1,6 @@
 # Полный список файлов (первые 6000)
 
-       397	FIXES-APPLIED.txt
+       460	FIXES-APPLIED.txt
       3680	README.md
       1205	app/build.gradle
       2702	app/github-ru.jks
