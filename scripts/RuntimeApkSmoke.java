@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.Random;
 import java.util.zip.CRC32;
 import java.util.zip.ZipEntry;
@@ -33,6 +35,7 @@ public final class RuntimeApkSmoke {
         String signingAlias = args[5];
         if (!template.isFile()) throw new IOException("Missing Android host template: " + template);
 
+        Set<String> iconDensities = new HashSet<>();
         try (InputStream file = new FileInputStream(template);
              ZipInputStream input = new ZipInputStream(file);
              ZipOutputStream output = new ZipOutputStream(new FileOutputStream(unsigned))) {
@@ -46,6 +49,12 @@ public final class RuntimeApkSmoke {
                     continue;
                 }
                 byte[] contents = readAll(input);
+                if (IconResourceLocator.isIconCandidate(name)) {
+                    String density = IconResourceLocator.densityFor(name, contents);
+                    if (density != null && !iconDensities.add(density)) {
+                        throw new IOException("Template contains more than one launcher icon for " + density);
+                    }
+                }
                 if (name.equals("AndroidManifest.xml")) {
                     Map<String, String> replacements = new HashMap<>();
                     replacements.put(OLD_PACKAGE, NEW_PACKAGE);
@@ -69,6 +78,10 @@ public final class RuntimeApkSmoke {
                 input.closeEntry();
             }
             if (!manifestFound || !resourcesFound) throw new IOException("Template is missing Android resources");
+            if (iconDensities.size() != 5) {
+                throw new IOException("Template launcher icon smoke check found " + iconDensities.size()
+                        + " densities instead of all five: " + iconDensities);
+            }
             byte[] multiMegabytePayload = new byte[3 * 1024 * 1024 + 137];
             new Random(20261005L).nextBytes(multiMegabytePayload);
             put(output, "assets/site/large-offline-smoke-test.bin", multiMegabytePayload, true);

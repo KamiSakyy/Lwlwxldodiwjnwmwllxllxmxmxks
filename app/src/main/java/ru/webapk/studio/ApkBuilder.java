@@ -24,8 +24,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.zip.CRC32;
 import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
@@ -39,8 +37,6 @@ final class ApkBuilder {
     private static final String SITE_SIGNING_ASSET = "site-signing-key.p12";
     private static final String SITE_SIGNING_ALIAS = "webapkstudio";
     private static final String SITE_SIGNING_PASSWORD = "webapk-studio-public-handoff";
-    private static final Pattern ICON_PATH = Pattern.compile(
-            "^res/mipmap-(mdpi|hdpi|xhdpi|xxhdpi|xxxhdpi)(?:-[^/]*)?/ic_launcher\\.png$");
     private static final int[] ICON_SIZES = {48, 72, 96, 144, 192};
 
     private ApkBuilder() { }
@@ -128,28 +124,32 @@ final class ApkBuilder {
                     patchResourcePackageName(table, TEMPLATE_PACKAGE, packageName);
                     putStoredAligned(apk, countingOut, name, table);
                     resourcesSeen = true;
-                } else {
-                    Matcher iconMatcher = ICON_PATH.matcher(name);
-                    if (iconFile != null && iconMatcher.matches()) {
-                        String density = iconMatcher.group(1);
-                        byte[] replacement = iconBytes.get(density);
-                        if (replacement != null) {
-                            putStoredAligned(apk, countingOut, name, replacement);
-                            usedIconDensities.add(density);
-                            replacedIcons++;
-                        }
-                    } else if (name.equals("classes.dex")) {
-                        byte[] dex = readAll(source, 32 * 1024 * 1024);
-                        putStoredAligned(apk, countingOut, name, dex);
-                    } else if (name.startsWith("assets/site/")) {
-                        // The template's sample page is always replaced with the selected project.
+                } else if (iconFile != null && IconResourceLocator.isIconCandidate(name)) {
+                    byte[] originalIcon = readAll(source, 4 * 1024 * 1024);
+                    String density = IconResourceLocator.densityFor(name, originalIcon);
+                    byte[] replacement = density == null ? null : iconBytes.get(density);
+                    if (replacement != null) {
+                        putStoredAligned(apk, countingOut, name, replacement);
+                        usedIconDensities.add(density);
+                        replacedIcons++;
                     } else {
                         ZipEntry copied = new ZipEntry(name);
                         copied.setTime(entry.getTime());
                         apk.putNextEntry(copied);
-                        copy(source, apk);
+                        apk.write(originalIcon);
                         apk.closeEntry();
                     }
+                } else if (name.equals("classes.dex")) {
+                    byte[] dex = readAll(source, 32 * 1024 * 1024);
+                    putStoredAligned(apk, countingOut, name, dex);
+                } else if (name.startsWith("assets/site/")) {
+                    // The template's sample page is always replaced with the selected project.
+                } else {
+                    ZipEntry copied = new ZipEntry(name);
+                    copied.setTime(entry.getTime());
+                    apk.putNextEntry(copied);
+                    copy(source, apk);
+                    apk.closeEntry();
                 }
                 source.closeEntry();
             }
