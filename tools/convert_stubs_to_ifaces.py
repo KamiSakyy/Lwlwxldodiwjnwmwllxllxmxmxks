@@ -23,25 +23,27 @@ for i in err_idx:
     m = ERR.match(lines[i])
     msg = m.group(3)
     code = lines[i + 1].strip() if i + 1 < len(lines) else ""
-    if "interface expected here" in msg:
-        im = re.search(r"\bimplements\s+([^{}]*)\{", code + " {")
-        if not im:
-            im = re.search(r"\bimplements\s+([^\{]+)", code)
-        if im:
-            for tok in im.group(1).split(","):
-                t = tok.strip().split("<")[0].strip().split(".")[-1]
-                if re.fullmatch(r"[A-Za-z_]\w*", t):
-                    iface_needed.add(t)
+    if "interface expected here" in msg or "no interface expected here" in msg:
+        # точное извлечение токена по позиции каретки (строка i+2)
+        codeline = lines[i + 1] if i + 1 < len(lines) else ""
+        caret = lines[i + 2] if i + 2 < len(lines) else ""
+        col = caret.find("^")
+        if col >= 0:
+            for mtok in re.finditer(r"[A-Za-z_$][\w$]*", codeline):
+                if mtok.start() <= col < mtok.end():
+                    tok = mtok.group(0).split(".")[-1]
+                    if "interface expected here" in msg:
+                        iface_needed.add(tok)
+                    else:
+                        revert.add(tok)
+                    break
     em = re.search(r"\bextends\s+([\w.\s,<>\[\]]+?)(?:\s+implements|\s*\{|$)", code)
     if em:
         for tok in em.group(1).split(","):
             t = tok.strip().split("<")[0].strip().split(".")[-1]
             if re.fullmatch(r"[A-Za-z_]\w*", t):
                 extends_seen.add(t)
-    if "no interface expected here" in msg:
-        # стаб ошибочно стал интерфейсом — вернуть в class
-        for tok in re.findall(r"[A-Za-z_]\w*", code):
-            revert.add(tok)
+
 
 convert = iface_needed - extends_seen
 converted = 0
