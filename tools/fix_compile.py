@@ -153,6 +153,10 @@ for root, dirs, files in os.walk(JAVA):
             if ns != src:
                 stats["H"] += 1
                 src = ns
+                lines = src.split("\n")
+        # безусловная ресинхронизация lines после G/H
+        if src != "\n".join(lines):
+            lines = src.split("\n")
 
         # ---------- A: обрезанный заголовок метода ----------
         out = []
