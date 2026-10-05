@@ -16,7 +16,7 @@ jobs:
   restore-loop:
     name: "Цикл восстановления: javac -> стабы (до 6 итераций за прогон)"
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 300
 
     steps:
       - name: "Checkout"
@@ -58,10 +58,10 @@ jobs:
           SRC="$PROJ/app/src/main/java"
           mkdir -p handoff/restoration
           PREV=999999999
-          for R in 1 2 3 4 5 6; do
+          for R in 1 2 3 4 5 6 7 8; do
             echo "=========== РАУНД $R ==========="
             rm -rf /tmp/classes
-            javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
+            javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 \
               -source 8 -target 8 -encoding UTF-8 \
               -bootclasspath "$ANDROID_JAR" \
               -d /tmp/classes @/tmp/sources.txt \
