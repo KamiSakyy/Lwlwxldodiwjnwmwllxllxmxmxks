@@ -32,6 +32,9 @@ android {
         targetSdk 36
         versionCode converterVersionCode
         versionName converterVersionName
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
         externalNativeBuild {
             cmake {
                 arguments '-DANDROID_STL=c++_static'
@@ -85,6 +88,13 @@ android {
         main {
             assets.srcDir(layout.buildDirectory.dir('generated/template-assets'))
             java.srcDir(rootProject.file('shared/src/main/java'))
+        }
+    }
+
+    packaging {
+        jniLibs {
+            // The converter UI does not use Compose's optional native PathIterator backend.
+            excludes += ['**/libandroidx.graphics.path.so']
         }
     }
 }
