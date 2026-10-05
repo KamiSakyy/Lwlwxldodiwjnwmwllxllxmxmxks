@@ -4,7 +4,5 @@ package e8;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class f<T1,T2,T3,T4> {
-    public f() {
-    }
+public interface f<T1,T2,T3,T4> {
 }

@@ -4,7 +4,5 @@ package com.github.rudroid.actions.checkssummary.ui;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class p<T1,T2,T3,T4> {
-    public p() {
-    }
+public interface p<T1,T2,T3,T4> {
 }
