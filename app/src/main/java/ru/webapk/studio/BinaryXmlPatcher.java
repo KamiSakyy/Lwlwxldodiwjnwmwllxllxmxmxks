@@ -155,8 +155,11 @@ final class BinaryXmlPatcher {
             if (size < 8 || offset + size > xml.length) throw new IOException("Повреждённый XML-чанк");
             if (type == 0x0102) { // RES_XML_START_ELEMENT_TYPE
                 int headerSize = u16(xml, offset + 2);
-                int extension = offset + 16;
-                if (headerSize < 36 || size < headerSize || extension + 20 > offset + size) {
+                if (headerSize < 16 || size < headerSize) {
+                    throw new IOException("Повреждённый XML-элемент AndroidManifest.xml");
+                }
+                int extension = offset + headerSize;
+                if (extension + 20 > offset + size) {
                     throw new IOException("Повреждённый XML-элемент AndroidManifest.xml");
                 }
                 int attributeStart = u16(xml, extension + 8);
