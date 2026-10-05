@@ -117,6 +117,12 @@ for i in err_idx:
     lm = re.search(r"location:\s+(?:class|interface)\s+([\w.$]+)", loc)
     if lm:
         host_name = lm.group(1).split(".")[0]
+        # jadx выносит вложенные классы в файлы Outer$Inner.java:
+        # если такой файл есть — ссылка уже резолвится, стаб не нужен
+        if class_index.get(host_name + "$" + cls):
+            skipped += 1
+            continue
+        # или файл уже существует в этом же пакете (не nested-имя)
         host = resolve_host(host_name, path)
         if host:
             nested[host].add(cls)
