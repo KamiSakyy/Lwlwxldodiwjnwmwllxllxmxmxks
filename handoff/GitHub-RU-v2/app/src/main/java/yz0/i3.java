@@ -6,6 +6,4 @@ public interface i3 {
 
     String getName();
 
-    public i3(Object... a) {
-    }
 }

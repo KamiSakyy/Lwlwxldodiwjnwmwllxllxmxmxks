@@ -60,8 +60,8 @@ for name in ctor_classes:
     if not cf:
         continue
     src = open(cf, encoding="utf-8", errors="ignore").read()
-    if "СТАБ" not in src and not re.search(r"\bpublic\s+%s\s*\(" % re.escape(name), src):
-        pass  # реальный класс — всё равно добавляем, вызов super существует
+    if re.search(r"public\s+interface\s+%s\b" % re.escape(name), src):
+        continue  # интерфейсам конструкторы не добавляем
     if re.search(r"%s\s*\(\s*Object\.\.\.\s*\w*\s*\)" % re.escape(name), src):
         continue
     anchor = src.rstrip().rfind("}")
