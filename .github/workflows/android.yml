@@ -43,7 +43,17 @@ jobs:
           sdkmanager "platforms;android-36" "build-tools;36.0.0" "platform-tools"
 
       - name: Assemble release APK with Android SDK and Gradle
-        run: gradle --no-daemon clean :app:assembleRelease
+        shell: bash
+        run: |
+          set +e
+          gradle --no-daemon clean :app:assembleRelease >"$RUNNER_TEMP/gradle-build.log" 2>&1
+          build_status=$?
+          tail -n 30 "$RUNNER_TEMP/gradle-build.log"
+          if [ "$build_status" -ne 0 ]; then
+            details="$(tail -n 45 "$RUNNER_TEMP/gradle-build.log" | tr '\n' ' ' | sed 's/%/%25/g; s/\r/%0D/g')"
+            echo "::error title=Gradle build failed::$details"
+            exit "$build_status"
+          fi
 
       - name: Smoke test stable signatures, version updates, and rotation
         run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke"
