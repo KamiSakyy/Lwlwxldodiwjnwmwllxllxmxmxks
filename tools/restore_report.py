@@ -8,6 +8,13 @@ import re, sys, os, collections, datetime
 
 before_log, after_log, out = sys.argv[1], sys.argv[2], sys.argv[3]
 os.makedirs(out, exist_ok=True)
+import shutil, gzip
+for src, dstname in ((before_log, "javac-before.log.gz"), (after_log, "javac-after.log.gz")):
+    try:
+        with open(src, "rb") as fi, gzip.open(os.path.join(out, dstname), "wb") as fo:
+            shutil.copyfileobj(fi, fo)
+    except OSError:
+        pass
 
 ERR_RX = re.compile(r"^(.+?):(\d+):\s+error:\s+(.*)$")
 
@@ -15,11 +22,23 @@ def parse(path):
     errs = []
     try:
         with open(path, encoding="utf-8", errors="ignore") as f:
-            for ln in f:
-                m = ERR_RX.match(ln.strip())
-                if m:
-                    fpath = re.sub(r"^/home/runner/work/[^/]+/[^/]+/extracted/GitHub-RU-Source/", "", m.group(1))
-                    errs.append((fpath, int(m.group(2)), m.group(3).strip()))
+            lines = f.readlines()
+        i = 0
+        while i < len(lines):
+            m = ERR_RX.match(lines[i].strip())
+            if m:
+                fpath = re.sub(r"^/home/runner/work/[^/]+/[^/]+/extracted/GitHub-RU-Source/", "", m.group(1))
+                extra = ""
+                # следующие строки могут содержать symbol:/location:
+                for j in (i + 1, i + 2):
+                    if j < len(lines):
+                        lm = re.match(r"\s+(symbol|location):\s+(.*)$", lines[j])
+                        if lm:
+                            extra += " | " + lm.group(1) + "=" + lm.group(2).strip()
+                errs.append((fpath, int(m.group(2)), m.group(3).strip() + extra))
+                i += 3
+            else:
+                i += 1
     except OSError:
         pass
     return errs
