@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 env:
   JAVA_VERSION: '17'
@@ -45,6 +45,9 @@ jobs:
       - name: Assemble release APK with Android SDK and Gradle
         run: gradle --no-daemon clean :app:assembleRelease
 
+      - name: Smoke test offline APK repackaging and JAR signature
+        run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/35.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke"
+
       - name: Package source and verify APK
         shell: bash
         run: |
@@ -61,6 +64,18 @@ jobs:
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs dist/WebAPK-Studio.apk
           unzip -t dist/WebAPK-Studio.apk >/dev/null
           unzip -t dist/WebAPK-Studio-source.zip >/dev/null
+
+      - name: Save the Actions build on the session branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f dist/WebAPK-Studio.apk dist/WebAPK-Studio-source.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Web APK Studio build from Actions [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
 
       - name: Upload APK and source ZIP
         uses: actions/upload-artifact@v4

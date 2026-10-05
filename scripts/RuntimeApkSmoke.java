@@ -1,0 +1,125 @@
+package ru.webapk.studio;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.zip.CRC32;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+import java.util.zip.ZipOutputStream;
+
+/** JVM smoke test of the same binary-manifest patcher and signer used on the device. */
+public final class RuntimeApkSmoke {
+    private static final String OLD_PACKAGE = "com.webapk.hosttemplate";
+    private static final String NEW_PACKAGE = "com.smoke.offline";
+
+    private RuntimeApkSmoke() { }
+
+    public static void main(String[] args) throws Exception {
+        if (args.length != 3) throw new IllegalArgumentException("template.apk unsigned.apk signed.apk");
+        File template = new File(args[0]);
+        File unsigned = new File(args[1]);
+        File signed = new File(args[2]);
+        if (!template.isFile()) throw new IOException("Missing Android host template: " + template);
+
+        try (InputStream file = new FileInputStream(template);
+             ZipInputStream input = new ZipInputStream(file);
+             ZipOutputStream output = new ZipOutputStream(new FileOutputStream(unsigned))) {
+            ZipEntry entry;
+            boolean manifestFound = false;
+            boolean resourcesFound = false;
+            while ((entry = input.getNextEntry()) != null) {
+                String name = entry.getName();
+                if (entry.isDirectory() || name.startsWith("META-INF/")) {
+                    input.closeEntry();
+                    continue;
+                }
+                byte[] contents = readAll(input);
+                if (name.equals("AndroidManifest.xml")) {
+                    Map<String, String> replacements = new HashMap<>();
+                    replacements.put(OLD_PACKAGE, NEW_PACKAGE);
+                    replacements.put("__WEBAPK_LABEL__", "Offline smoke test");
+                    contents = BinaryXmlPatcher.patch(contents, replacements);
+                    manifestFound = true;
+                } else if (name.equals("resources.arsc")) {
+                    patchPackageName(contents, OLD_PACKAGE, NEW_PACKAGE);
+                    resourcesFound = true;
+                }
+                put(output, name, contents, entry.getMethod() == ZipEntry.STORED);
+                input.closeEntry();
+            }
+            if (!manifestFound || !resourcesFound) throw new IOException("Template is missing Android resources");
+        }
+
+        JarV1Signer.sign(unsigned, signed, new File(signed.getParentFile(), "smoke-signing"));
+        if (unsigned.exists() && !unsigned.delete()) throw new IOException("Cannot remove unsigned test APK");
+        System.out.println("Runtime APK smoke test passed: " + signed.length() + " bytes");
+    }
+
+    private static void put(ZipOutputStream zip, String name, byte[] contents, boolean stored) throws IOException {
+        ZipEntry out = new ZipEntry(name);
+        out.setTime(0L);
+        if (stored) {
+            CRC32 crc = new CRC32();
+            crc.update(contents);
+            out.setMethod(ZipEntry.STORED);
+            out.setSize(contents.length);
+            out.setCompressedSize(contents.length);
+            out.setCrc(crc.getValue());
+        }
+        zip.putNextEntry(out);
+        zip.write(contents);
+        zip.closeEntry();
+    }
+
+    private static byte[] readAll(InputStream input) throws IOException {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        byte[] buffer = new byte[8192];
+        int count;
+        while ((count = input.read(buffer)) != -1) {
+            out.write(buffer, 0, count);
+            if (out.size() > 64 * 1024 * 1024) throw new IOException("Template entry unexpectedly large");
+        }
+        return out.toByteArray();
+    }
+
+    private static void patchPackageName(byte[] table, String oldName, String newName) throws IOException {
+        if (table.length < 12 || u16(table, 0) != 0x0002) throw new IOException("Invalid resources.arsc");
+        int offset = u16(table, 2);
+        while (offset + 8 <= table.length) {
+            int type = u16(table, offset);
+            int headerSize = u16(table, offset + 2);
+            int size = (int) u32(table, offset + 4);
+            if (size < 8 || offset + size > table.length) throw new IOException("Invalid resource chunk");
+            if (type == 0x0200 && headerSize >= 268) {
+                int nameOffset = offset + 12;
+                int end = nameOffset;
+                while (end + 1 < nameOffset + 256 && (table[end] != 0 || table[end + 1] != 0)) end += 2;
+                String packageName = new String(table, nameOffset, end - nameOffset, StandardCharsets.UTF_16LE);
+                if (packageName.equals(oldName)) {
+                    byte[] replacement = newName.getBytes(StandardCharsets.UTF_16LE);
+                    for (int i = 0; i < 256; i++) table[nameOffset + i] = 0;
+                    System.arraycopy(replacement, 0, table, nameOffset, replacement.length);
+                }
+            }
+            offset += size;
+        }
+    }
+
+    private static int u16(byte[] bytes, int offset) {
+        return (bytes[offset] & 0xff) | ((bytes[offset + 1] & 0xff) << 8);
+    }
+
+    private static long u32(byte[] bytes, int offset) {
+        return (bytes[offset] & 0xffL)
+                | ((bytes[offset + 1] & 0xffL) << 8)
+                | ((bytes[offset + 2] & 0xffL) << 16)
+                | ((bytes[offset + 3] & 0xffL) << 24);
+    }
+}

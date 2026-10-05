@@ -36,6 +36,6 @@ APK самого Web APK Studio в Actions подписывается време
 2. собирает `:app:assembleRelease`, включая Android-шаблон для будущих офлайн-сборок;
 3. создаёт чистый архив исходников;
 4. проверяет ограничение 1 000 000 байт и подпись APK через `apksigner`;
-5. публикует `WebAPK-Studio.apk` и `WebAPK-Studio-source.zip` как артефакты запуска Actions.
+5. сохраняет `dist/WebAPK-Studio.apk` и `dist/WebAPK-Studio-source.zip` в ветке и публикует их как артефакты запуска Actions.
 
 Исходный проект также можно собрать из Android Studio с Android SDK 35 и Gradle 8.9.
