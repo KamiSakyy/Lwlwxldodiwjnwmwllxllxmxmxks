@@ -14,4 +14,7 @@ public final class c implements i51.c {
     public final void a(Object obj, Object obj2) {
         throw s0.d(obj);
     }
+
+    public c(Object... a) {
+    }
 }

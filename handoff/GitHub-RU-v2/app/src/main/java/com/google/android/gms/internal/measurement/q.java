@@ -309,4 +309,7 @@ public final class q implements Iterable, n {
         public t2() {
         }
     }
+
+    public q(Object... a) {
+    }
 }

@@ -27,4 +27,7 @@ public final class q0 extends x implements r0 {
         g.writeLong(j);
         L(g, 1);
     }
+
+    public q0(Object... a) {
+    }
 }

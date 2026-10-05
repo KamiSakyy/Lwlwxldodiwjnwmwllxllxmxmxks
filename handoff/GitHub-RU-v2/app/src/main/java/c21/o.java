@@ -50,4 +50,7 @@ public final class o implements DialogInterface.OnClickListener {
             dialogInterface.dismiss();
         }
     }
+
+    public o(Object... a) {
+    }
 }

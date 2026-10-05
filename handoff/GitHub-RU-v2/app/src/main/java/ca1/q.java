@@ -160,4 +160,7 @@ public class q extends a5.s {
         }
         super.l(uVar, i3, i2);
     }
+
+    public q(Object... a) {
+    }
 }

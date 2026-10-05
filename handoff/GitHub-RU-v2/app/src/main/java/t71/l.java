@@ -56,4 +56,7 @@ public final class l {
         k71.k.f(matcher2, "matcher(...)");
         return sy.t.a(matcher2, end, charSequence);
     }
+
+    public l(Object... a) {
+    }
 }

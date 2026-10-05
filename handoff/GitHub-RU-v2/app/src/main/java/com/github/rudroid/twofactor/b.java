@@ -39,4 +39,7 @@ public final class b {
         sb.append(", currentValue=");
         return h1.p(sb, this.c, ")");
     }
+
+    public b(Object... a) {
+    }
 }

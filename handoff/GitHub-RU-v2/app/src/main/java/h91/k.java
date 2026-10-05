@@ -468,4 +468,7 @@ public class k implements Serializable, Comparable {
         sb.append("…]");
         return sb.toString();
     }
+
+    public k(Object... a) {
+    }
 }

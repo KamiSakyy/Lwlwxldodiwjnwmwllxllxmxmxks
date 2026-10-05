@@ -26,4 +26,7 @@ public abstract class o {
     public abstract void e(j jVar);
 
     public abstract void f(b1.m mVar, boolean z);
+
+    public o(Object... a) {
+    }
 }

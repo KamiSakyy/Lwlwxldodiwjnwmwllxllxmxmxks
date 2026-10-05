@@ -70,4 +70,7 @@ public final class m implements aa.n0 {
     public final String toString() {
         return x.i.g("AddDiscussionCommentMutation(discussionId=", this.r, ", body=", this.s, ")");
     }
+
+    public m(Object... a) {
+    }
 }

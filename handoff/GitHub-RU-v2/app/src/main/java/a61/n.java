@@ -16,4 +16,7 @@ public enum n implements k51.f {
     public final int b() {
         return this.r;
     }
+
+    n(Object... a) {
+    }
 }

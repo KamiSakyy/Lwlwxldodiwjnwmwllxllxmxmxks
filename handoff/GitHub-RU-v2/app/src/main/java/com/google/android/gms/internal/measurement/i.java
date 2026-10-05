@@ -19,4 +19,7 @@ public final class i implements Iterator {
     public final /* bridge */ /* synthetic */ Object next() {
         return new q((String) this.r.next());
     }
+
+    public i(Object... a) {
+    }
 }

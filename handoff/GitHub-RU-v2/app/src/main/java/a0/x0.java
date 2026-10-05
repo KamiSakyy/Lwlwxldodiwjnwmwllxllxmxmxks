@@ -26,4 +26,7 @@ public final class x0 {
     public static x0[] values() {
         return (x0[]) f308s.clone();
     }
+
+    public x0(Object... a) {
+    }
 }

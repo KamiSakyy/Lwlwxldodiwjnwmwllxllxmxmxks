@@ -75,4 +75,7 @@ public final class d {
     public static d[] values() {
         return (d[]) D.clone();
     }
+
+    public d(Object... a) {
+    }
 }

@@ -9,4 +9,7 @@ public abstract class q0 implements Parcelable {
     public q0(String str) {
         this.r = str;
     }
+
+    public q0(Object... a) {
+    }
 }

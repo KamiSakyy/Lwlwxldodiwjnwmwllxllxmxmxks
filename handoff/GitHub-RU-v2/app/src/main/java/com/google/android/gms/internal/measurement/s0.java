@@ -15,4 +15,7 @@ public final class s0 extends x implements t0 {
         public o0() {
         }
     }
+
+    public s0(Object... a) {
+    }
 }

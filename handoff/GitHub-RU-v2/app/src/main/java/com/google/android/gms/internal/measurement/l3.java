@@ -34,4 +34,7 @@ public final class l3 extends f5 {
         public v() {
         }
     }
+
+    public l3(Object... a) {
+    }
 }

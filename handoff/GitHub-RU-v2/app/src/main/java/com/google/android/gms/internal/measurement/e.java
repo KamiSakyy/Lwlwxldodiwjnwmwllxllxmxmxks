@@ -60,4 +60,7 @@ public final class e implements n {
     public final String toString() {
         return String.valueOf(this.r);
     }
+
+    public e(Object... a) {
+    }
 }

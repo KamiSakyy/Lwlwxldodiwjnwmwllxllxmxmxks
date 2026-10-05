@@ -2769,4 +2769,7 @@ public final class o extends i4 {
         }
         return A0(sb.toString(), (String[]) arrayList.toArray(new String[arrayList.size()]));
     }
+
+    public o(Object... a) {
+    }
 }

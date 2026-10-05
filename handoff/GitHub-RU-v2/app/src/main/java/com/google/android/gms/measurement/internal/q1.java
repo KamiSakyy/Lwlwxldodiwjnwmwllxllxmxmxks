@@ -143,4 +143,7 @@ public final class q1 implements Runnable {
                 break;
         }
     }
+
+    public q1(Object... a) {
+    }
 }

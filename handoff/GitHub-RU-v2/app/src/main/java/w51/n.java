@@ -68,4 +68,7 @@ public final class n implements Closeable {
             throw th;
         }
     }
+
+    public n(Object... a) {
+    }
 }

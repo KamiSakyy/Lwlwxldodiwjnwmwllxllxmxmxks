@@ -103,4 +103,7 @@ public abstract class q0 extends s0 {
         String G = this.d.G();
         return G.isEmpty() ? "[unset]" : G;
     }
+
+    public q0(Object... a) {
+    }
 }

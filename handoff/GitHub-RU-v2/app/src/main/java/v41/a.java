@@ -40,4 +40,7 @@ public final class a {
         return new a(str, str2, arrayList, d, packageName, l, str3, x1Var);
     }
 
+
+    public a(Object... a) {
+    }
 }

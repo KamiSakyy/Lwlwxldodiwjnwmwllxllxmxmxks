@@ -147,4 +147,7 @@ public final class l {
     public static l[] values() {
         return (l[]) h0.clone();
     }
+
+    public l(Object... a) {
+    }
 }

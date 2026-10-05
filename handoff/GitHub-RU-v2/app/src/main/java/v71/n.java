@@ -64,4 +64,7 @@ public final class n extends f1 {
                 break;
         }
     }
+
+    public n(Object... a) {
+    }
 }

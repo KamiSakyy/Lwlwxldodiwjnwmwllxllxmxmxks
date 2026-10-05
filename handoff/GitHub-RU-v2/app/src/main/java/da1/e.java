@@ -103,4 +103,7 @@ final class e extends b0 {
         bVar.H(s0Var);
         return true;
     }
+
+    public e(Object... a) {
+    }
 }

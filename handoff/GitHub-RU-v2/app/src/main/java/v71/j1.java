@@ -879,4 +879,7 @@ public class j1 implements d1, p1 {
     public String z() {
         return "Job was cancelled";
     }
+
+    public j1(Object... a) {
+    }
 }

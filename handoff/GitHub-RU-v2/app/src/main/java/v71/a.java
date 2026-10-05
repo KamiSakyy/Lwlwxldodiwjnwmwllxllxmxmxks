@@ -110,4 +110,7 @@ public abstract class a extends j1 implements a71.c, z {
     public final String z() {
         return getClass().getSimpleName().concat(" was cancelled");
     }
+
+    public a(Object... a) {
+    }
 }

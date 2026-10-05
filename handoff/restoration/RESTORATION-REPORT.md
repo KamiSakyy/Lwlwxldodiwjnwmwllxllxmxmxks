@@ -1,6 +1,6 @@
 # ОТЧЁТ О ВОССТАНОВЛЕНИИ ИСХОДНИКА (Этап 5 v3, итеративный цикл)
 
-_Сгенерировано: 2026-10-05T22:25:28.199376Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
+_Сгенерировано: 2026-10-05T22:38:24.040545Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
 
 **Осталось ошибок: 1** в 1 файлах.
 
@@ -13,13 +13,13 @@ _Сгенерировано: 2026-10-05T22:25:28.199376Z, проверка javac
 - `l81/q.java` — 1
 
 ## Ход цикла (ошибок по раундам)
-- javac-round1.log: 59350
+- javac-round1.log: 59269
 - javac-round10.log: 64533
-- javac-round2.log: 1
-- javac-round3.log: 1
+- javac-round2.log: 59267
+- javac-round3.log: 59230
 - javac-round4.log: 1
-- javac-round5.log: 64520
-- javac-round6.log: 64533
+- javac-round5.log: 1
+- javac-round6.log: 1
 - javac-round7.log: 64520
 - javac-round8.log: 64533
 - javac-round9.log: 64520

@@ -50,4 +50,7 @@ final class c extends b0 {
         bVar.l = bVar.m;
         return bVar.H(s0Var);
     }
+
+    public c(Object... a) {
+    }
 }

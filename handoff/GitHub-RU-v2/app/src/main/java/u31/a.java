@@ -30,4 +30,7 @@ public final class a implements d {
     public final String toString() {
         return this.a + "px";
     }
+
+    public a(Object... a) {
+    }
 }

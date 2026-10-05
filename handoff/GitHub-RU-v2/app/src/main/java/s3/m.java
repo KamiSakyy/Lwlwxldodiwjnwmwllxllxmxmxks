@@ -33,4 +33,7 @@ public final class m {
     public static m[] values() {
         return (m[]) f31706t.clone();
     }
+
+    public m(Object... a) {
+    }
 }

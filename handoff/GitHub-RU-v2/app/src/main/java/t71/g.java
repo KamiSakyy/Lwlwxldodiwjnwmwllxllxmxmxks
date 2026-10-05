@@ -42,4 +42,7 @@ public final class g {
         sb2.append(")");
         return sb2.toString();
     }
+
+    public g(Object... a) {
+    }
 }

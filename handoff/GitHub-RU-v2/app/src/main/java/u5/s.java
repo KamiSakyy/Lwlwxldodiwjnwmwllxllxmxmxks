@@ -209,7 +209,7 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final Appendable append_dup(CharSequence charSequence) {
+    public final Appendable append_dup_dup(CharSequence charSequence) {
         super.append(charSequence);
         return this;
     }
@@ -254,7 +254,7 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final Appendable append_dup(char c10) {
+    public final Appendable append_dup_dup(char c10) {
         super.append(c10);
         return this;
     }
@@ -280,7 +280,7 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final Appendable append_dup(CharSequence charSequence, int i, int i10) {
+    public final Appendable append_dup_dup(CharSequence charSequence, int i, int i10) {
         super.append(charSequence, i, i10);
         return this;
     }

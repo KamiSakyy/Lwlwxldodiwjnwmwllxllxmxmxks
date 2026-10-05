@@ -61,4 +61,7 @@ final class h extends b0 {
         bVar.l = gVar;
         return true;
     }
+
+    public h(Object... a) {
+    }
 }

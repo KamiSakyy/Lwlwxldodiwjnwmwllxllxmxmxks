@@ -788,4 +788,7 @@ public final class d implements Iterable, n, j {
             }
         }
     }
+
+    public d(Object... a) {
+    }
 }

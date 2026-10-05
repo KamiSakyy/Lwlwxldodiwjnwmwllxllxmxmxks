@@ -38,4 +38,7 @@ public final class c implements Parcelable.Creator {
                 return new g[i];
         }
     }
+
+    public c(Object... a) {
+    }
 }

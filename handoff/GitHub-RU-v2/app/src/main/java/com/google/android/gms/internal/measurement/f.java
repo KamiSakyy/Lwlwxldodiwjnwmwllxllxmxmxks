@@ -62,4 +62,7 @@ public final class f implements n {
         this.r = nVar;
         this.s = str;
     }
+
+    public f(Object... a) {
+    }
 }

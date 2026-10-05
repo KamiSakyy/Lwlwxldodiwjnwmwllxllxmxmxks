@@ -1661,4 +1661,7 @@ public final class b implements Runnable {
         public BiometricFragment() {
         }
     }
+
+    public b(Object... a) {
+    }
 }

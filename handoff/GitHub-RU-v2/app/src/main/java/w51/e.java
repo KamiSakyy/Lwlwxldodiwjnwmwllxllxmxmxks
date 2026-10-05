@@ -20,4 +20,7 @@ public abstract class e {
             return false;
         }
     }
+
+    public e(Object... a) {
+    }
 }

@@ -20,4 +20,7 @@ public final /* synthetic */ class b0 implements a0 {
                 return 1.0f - (f10 * f10);
         }
     }
+
+    public b0(Object... a) {
+    }
 }

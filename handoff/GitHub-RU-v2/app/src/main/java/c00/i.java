@@ -19,4 +19,7 @@ public final class i extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c((Object) null, this);
     }
+
+    public i(Object... a) {
+    }
 }

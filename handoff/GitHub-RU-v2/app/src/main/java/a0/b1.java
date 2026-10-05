@@ -31,4 +31,7 @@ public final class b1 {
     public static b1[] values() {
         return (b1[]) f23t.clone();
     }
+
+    public b1(Object... a) {
+    }
 }

@@ -41,4 +41,7 @@ public final class m implements d61.b {
                 return new e61.i((n5.f) aVar.get());
         }
     }
+
+    public m(Object... a) {
+    }
 }

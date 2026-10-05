@@ -32,4 +32,7 @@ public final class i extends t81.a {
         ((LinkedBlockingDeque) sVar.x).put(qVar);
         return -1L;
     }
+
+    public i(Object... a) {
+    }
 }

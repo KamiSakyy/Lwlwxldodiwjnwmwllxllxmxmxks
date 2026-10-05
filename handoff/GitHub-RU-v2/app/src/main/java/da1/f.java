@@ -59,4 +59,7 @@ final class f extends b0 {
         bVar.I(bVar.h().u.t);
         return bVar.H(s0Var);
     }
+
+    public f(Object... a) {
+    }
 }

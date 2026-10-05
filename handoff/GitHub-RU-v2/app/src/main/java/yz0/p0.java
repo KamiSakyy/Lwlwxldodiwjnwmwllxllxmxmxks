@@ -18,4 +18,7 @@ public final class p0 extends q0 {
         k71.k.g(parcel, "dest");
         parcel.writeInt(1);
     }
+
+    public p0(Object... a) {
+    }
 }
