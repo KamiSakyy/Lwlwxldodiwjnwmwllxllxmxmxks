@@ -1,0 +1,8 @@
+package com.github.rudroid.repositories.o;
+
+/**
+ * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
+ * Оригинал потерян при декомпиляции APK.
+ */
+public interface b<T1,T2,T3,T4> {
+}
