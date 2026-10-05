@@ -6,7 +6,7 @@ on:
       - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
     paths:
       - ".github/workflows/01-analysis.yml"
-      - "tools/**"
+      - "tools/analyze_sources.py"
   workflow_dispatch:
 
 permissions:

@@ -64,9 +64,16 @@ if insert_lines:
 else:
     print("Манифест уже содержит все флаги.")
 
-# ---------- 2. Версия v2 ----------
+# ---------- 2. Версия v2 + подключение Android-плагина ----------
 with open(gradle_path, "r", encoding="utf-8") as f:
     g = f.read()
+
+# ФИКС СБОРКИ: в app/build.gradle нет подключения плагина — отсюда
+# "Could not find method android()". Добавляем plugins-блок в начало файла.
+if "apply plugin" not in g and not g.lstrip().startswith("plugins"):
+    g = "plugins {\n    id 'com.android.application'\n}\n\n" + g
+    print("+ Добавлен блок plugins { id 'com.android.application' } в app/build.gradle")
+
 g2 = g.replace("versionCode 925", "versionCode 926")
 g2 = g2.replace("versionName '1.257.0'", "versionName '1.257.0-ru2'")
 if g2 != g:
