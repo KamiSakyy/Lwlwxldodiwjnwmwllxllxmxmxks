@@ -1,0 +1,145 @@
+name: "Этап 3 — Фикс нагрева + структура + сборка APK v2"
+
+on:
+  push:
+    branches:
+      - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+    paths:
+      - ".github/workflows/03-build-release.yml"
+      - "tools/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    name: "Фикс, документация, сборка release APK"
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+
+    steps:
+      - name: "Checkout рабочей ветки"
+        uses: actions/checkout@v4
+        with:
+          ref: "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          persist-credentials: true
+
+      - name: "JDK 17"
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: "Android SDK (platforms;android-36, build-tools)"
+        run: |
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          echo "SDK: $SDK"
+          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "platforms;android-35" "build-tools;34.0.0" "platform-tools" | tail -3
+
+      - name: "Установка 7-Zip и распаковка исходников"
+        run: |
+          set -e
+          if ! command -v 7z >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq p7zip-full
+          fi
+          mkdir -p extracted stage1 handoff analysis-v2
+          7z x -y -ostage1 "GitHub-RU-Source legal.zip.zip" >/dev/null
+          find stage1 -type f -name "*.zip" -print0 | while IFS= read -r -d '' z; do
+            unzip -q -o "$z" -d extracted/ || true
+          done
+          if [ -z "$(find extracted -type f | head -1)" ]; then cp -a stage1/. extracted/; fi
+          PROJ=$(find "$PWD/extracted" -type d -name "GitHub-RU-Source" | head -1)
+          echo "PROJ=$PROJ" >> "$GITHUB_ENV"
+          echo "Проект: $PROJ"
+          [ -f "$PROJ/gradlew" ] && echo "gradlew на месте" || (echo "НЕТ gradlew!"; exit 1)
+
+      - name: "Применение фикса нагрева"
+        run: |
+          python3 tools/fix_heat.py "$PROJ"
+          echo "=== FIXES-APPLIED.txt ==="
+          cat "$PROJ/FIXES-APPLIED.txt"
+          echo "=== proguard-rules.pro ==="
+          cat "$PROJ/app/proguard-rules.pro"
+          echo "=== Проверка манифеста (флаги) ==="
+          grep -n "firebase_messaging_auto_init_enabled\|firebase_analytics_collection_deactivated" "$PROJ/app/src/main/AndroidManifest.xml"
+
+      - name: "Генерация документации структуры (10 документов)"
+        run: |
+          python3 tools/gen_docs.py "$PROJ" "$PROJ/docs"
+          ls -la "$PROJ/docs"
+
+      - name: "Повторный анализ фиксированного дерева (верификация)"
+        run: |
+          python3 tools/analyze_sources.py "$PROJ" analysis-v2 || true
+          cp analysis-v2/ANALYSIS.md handoff/verification-ANALYSIS-v2.md 2>/dev/null || true
+          cp "$PROJ/FIXES-APPLIED.txt" handoff/verification-FIXES-APPLIED.txt 2>/dev/null || true
+
+      - name: "Сборка: ./gradlew assembleRelease"
+        id: gradle
+        continue-on-error: false
+        run: |
+          set -e
+          cd "$PROJ"
+          chmod +x gradlew
+          # больше памяти под R8 на раннере (16 ГБ)
+          sed -i 's/-Xmx4096m/-Xmx6g/; s/MaxMetaspaceSize=1024m/MaxMetaspaceSize=2048m/' gradle.properties
+          cat gradle.properties
+          echo "=== СТАРТ СБОРКИ $(date -u +%H:%M:%S) ==="
+          ./gradlew assembleRelease --no-daemon --stacktrace 2>&1 | tee /tmp/build-log.txt | tail -40
+          echo "=== СБОРКА ЗАВЕРШЕНА $(date -u +%H:%M:%S) ==="
+          echo "=== APK ==="
+          find app/build/outputs -name "*.apk" -exec ls -la {} \;
+
+      - name: "Упаковка handoff: APK + новый исходник + верификация"
+        if: always()
+        run: |
+          set -e
+          cd "$PROJ"
+          APK=$(find app/build/outputs -name "*release*.apk" | head -1)
+          if [ -n "$APK" ]; then
+            cp -f "$APK" "$GITHUB_WORKSPACE/handoff/GitHub-RU-v2-926-release.apk"
+            sha256sum "$GITHUB_WORKSPACE/handoff/GitHub-RU-v2-926-release.apk" > "$GITHUB_WORKSPACE/handoff/APK-SHA256.txt"
+            cat "$GITHUB_WORKSPACE/handoff/APK-SHA256.txt"
+            "${ANDROID_HOME:-$ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" verify --print-certs "$APK" | head -8 || true
+            MAP=$(find app/build/outputs -name "mapping.txt" | head -1)
+            [ -n "$MAP" ] && gzip -c "$MAP" > "$GITHUB_WORKSPACE/handoff/R8-mapping.txt.gz" || true
+          else
+            echo "APK НЕ НАЙДЕН — сборка не удалась"
+          fi
+          cp -f /tmp/build-log.txt "$GITHUB_WORKSPACE/handoff/verification-build-log.txt" 2>/dev/null || true
+
+      - name: "Копирование полного нового исходника в handoff"
+        if: always()
+        run: |
+          set -e
+          mkdir -p handoff/GitHub-RU-v2
+          rsync -a --exclude 'app/build' --exclude '.gradle' --exclude 'build' --exclude '.kotlin' "$PROJ/" handoff/GitHub-RU-v2/
+          echo "=== handoff ==="
+          du -sh handoff/*
+          find handoff -type f | wc -l
+
+      - name: "Артефакт: APK v2"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: GitHub-RU-v2-926-apk
+          path: handoff/GitHub-RU-v2-926-release.apk
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: "Коммит handoff в рабочую ветку"
+        if: always()
+        run: |
+          set -e
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          git config http.postBuffer 524288000
+          git add handoff/ analysis-v2/ 2>/dev/null || git add handoff/
+          if git diff --cached --quiet; then
+            echo "Нет изменений для коммита"
+          else
+            git commit -m "Этап 3: v2 (фикс нагрева + структура) — APK 926 и новый исходник в handoff [skip ci]"
+            git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+          fi
