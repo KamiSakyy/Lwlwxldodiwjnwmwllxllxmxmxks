@@ -94,11 +94,30 @@ jobs:
             > /tmp/javac-after.log 2>&1 || true
           grep -c "error:" /tmp/javac-after.log || echo "0 ошибок ПОСЛЕ"
 
+      - name: "Генерация стабов потерянных классов (по логу javac)"
+        run: |
+          set -e
+          python3 tools/gen_stubs.py /tmp/javac-after.log "$PROJ/app/src/main/java"
+          echo "=== стабов создано: $(find "$PROJ/app/src/main/java" -path '*/stubs/*' -name '*.java' 2>/dev/null | wc -l) ==="
+
+      - name: "Повторная компиляция после стабов (javac)"
+        run: |
+          set -e
+          SRC="$PROJ/app/src/main/java"
+          find "$SRC" -name "*.java" | sort > /tmp/sources-after2.txt
+          mkdir -p /tmp/classes-after2
+          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 50000 \
+            -source 8 -target 8 -encoding UTF-8 \
+            -bootclasspath "$ANDROID_JAR" \
+            -d /tmp/classes-after2 @/tmp/sources-after2.txt \
+            > /tmp/javac-after2.log 2>&1 || true
+          grep -c "error:" /tmp/javac-after2.log || echo "0 ошибок ПОСЛЕ стабов"
+
       - name: "Отчёт о восстановлении"
         run: |
           set -e
           mkdir -p handoff/restoration
-          python3 tools/restore_report.py /tmp/javac-before.log /tmp/javac-after.log handoff/restoration
+          python3 tools/restore_report.py /tmp/javac-before.log /tmp/javac-after2.log handoff/restoration
           head -40 handoff/restoration/RESTORATION-REPORT.md
 
       - name: "Восстановленное дерево -> handoff/GitHub-RU-v2"
