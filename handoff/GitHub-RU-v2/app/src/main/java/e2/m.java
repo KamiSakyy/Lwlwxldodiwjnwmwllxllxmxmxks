@@ -30,4 +30,10 @@ public final /* synthetic */ class m implements i {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
 }

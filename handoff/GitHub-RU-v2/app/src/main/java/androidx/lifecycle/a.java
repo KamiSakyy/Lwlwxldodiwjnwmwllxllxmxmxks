@@ -25,4 +25,10 @@ public abstract class a extends k1 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class u0<T1,T2,T3,T4> {
+        public u0() {
+        }
+    }
 }

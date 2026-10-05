@@ -353,4 +353,10 @@ public interface d {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ReRunJobBottomSheet<T1,T2,T3,T4> {
+        public ReRunJobBottomSheet() {
+        }
+    }
 }

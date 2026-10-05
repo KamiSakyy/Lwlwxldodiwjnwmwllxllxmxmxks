@@ -33,4 +33,10 @@ public final class aa0 implements aa.v0 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c<T1,T2,T3,T4> {
+        public c() {
+        }
+    }
 }

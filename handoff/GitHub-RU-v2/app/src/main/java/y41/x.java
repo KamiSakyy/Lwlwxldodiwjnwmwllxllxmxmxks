@@ -16,4 +16,10 @@ public final class x implements i51.c {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h0<T1,T2,T3,T4> {
+        public h0() {
+        }
+    }
 }

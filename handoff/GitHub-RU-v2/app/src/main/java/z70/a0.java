@@ -270,4 +270,10 @@ public final class a0 implements aa.a {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f0<T1,T2,T3,T4> {
+        public f0() {
+        }
+    }
 }

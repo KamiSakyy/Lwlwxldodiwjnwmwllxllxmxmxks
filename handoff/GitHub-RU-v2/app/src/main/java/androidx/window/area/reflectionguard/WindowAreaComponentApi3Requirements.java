@@ -48,4 +48,22 @@ public interface WindowAreaComponentApi3Requirements {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Consumer<T1,T2,T3,T4> {
+        public Consumer() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ExtensionWindowAreaPresentation<T1,T2,T3,T4> {
+        public ExtensionWindowAreaPresentation() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ExtensionWindowAreaStatus<T1,T2,T3,T4> {
+        public ExtensionWindowAreaStatus() {
+        }
+    }
 }

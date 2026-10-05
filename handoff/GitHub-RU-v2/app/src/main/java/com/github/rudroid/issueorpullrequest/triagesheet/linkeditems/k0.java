@@ -82,4 +82,10 @@ public final class k0<T> implements y71.j {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r<T1,T2,T3,T4> {
+        public r() {
+        }
+    }
 }

@@ -21,4 +21,16 @@ public final class a0 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i<T1,T2,T3,T4> {
+        public i() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r<T1,T2,T3,T4> {
+        public r() {
+        }
+    }
 }

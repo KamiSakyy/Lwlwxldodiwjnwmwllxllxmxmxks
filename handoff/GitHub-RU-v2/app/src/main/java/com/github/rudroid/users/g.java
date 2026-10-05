@@ -52,4 +52,10 @@ public final /* synthetic */ class g implements j71.a {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

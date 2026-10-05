@@ -303,4 +303,10 @@ public final class q implements Iterable, n {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class t2<T1,T2,T3,T4> {
+        public t2() {
+        }
+    }
 }

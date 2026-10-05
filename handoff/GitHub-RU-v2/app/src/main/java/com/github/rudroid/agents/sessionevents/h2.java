@@ -62,4 +62,10 @@ public final class h2<T> implements y71.j {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f1<T1,T2,T3,T4> {
+        public f1() {
+        }
+    }
 }

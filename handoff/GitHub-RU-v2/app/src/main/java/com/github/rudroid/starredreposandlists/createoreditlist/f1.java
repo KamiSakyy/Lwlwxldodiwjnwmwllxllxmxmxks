@@ -48,4 +48,16 @@ public final class f1 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class g1<T1,T2,T3,T4> {
+        public g1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i1<T1,T2,T3,T4> {
+        public i1() {
+        }
+    }
 }

@@ -96,4 +96,64 @@ public final class gv implements aa.m0 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a4<T1,T2,T3,T4> {
+        public a4() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e4<T1,T2,T3,T4> {
+        public e4() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f0<T1,T2,T3,T4> {
+        public f0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h1<T1,T2,T3,T4> {
+        public h1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l8<T1,T2,T3,T4> {
+        public l8() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o<T1,T2,T3,T4> {
+        public o() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class w3<T1,T2,T3,T4> {
+        public w3() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y7<T1,T2,T3,T4> {
+        public y7() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z2<T1,T2,T3,T4> {
+        public z2() {
+        }
+    }
 }

@@ -27,4 +27,10 @@ public final class w1 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p<T1,T2,T3,T4> {
+        public p() {
+        }
+    }
 }

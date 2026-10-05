@@ -92,4 +92,16 @@ public final /* synthetic */ class m implements n, e2.i, p41.d, e0 {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class o<T1,T2,T3,T4> {
+        public o() {
+        }
+    }
 }

@@ -82,4 +82,10 @@ public final class LocalNotificationsWorker extends CoroutineWorker {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class k<T1,T2,T3,T4> {
+        public k() {
+        }
+    }
 }

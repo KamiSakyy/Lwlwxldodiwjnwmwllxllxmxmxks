@@ -39,4 +39,10 @@ public final /* synthetic */ class h1 implements j71.c {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i1<T1,T2,T3,T4> {
+        public i1() {
+        }
+    }
 }

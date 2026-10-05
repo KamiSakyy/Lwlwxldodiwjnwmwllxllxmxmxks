@@ -53,4 +53,10 @@ final class z extends c71.j implements j71.e {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y<T1,T2,T3,T4> {
+        public y() {
+        }
+    }
 }

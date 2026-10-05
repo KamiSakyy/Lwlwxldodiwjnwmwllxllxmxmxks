@@ -21,4 +21,16 @@ public class w3<T1,T2,T3,T4> {
 
 
 
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b0<T1,T2,T3,T4> {
+        public b0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class z<T1,T2,T3,T4> {
+        public z() {
+        }
+    }
 }
