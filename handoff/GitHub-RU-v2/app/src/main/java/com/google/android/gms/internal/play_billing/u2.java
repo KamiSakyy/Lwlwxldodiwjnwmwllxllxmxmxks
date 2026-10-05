@@ -25,4 +25,5 @@ public abstract class u2 {
     public abstract boolean g(long j, Object obj);
 
 
+
 }

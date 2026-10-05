@@ -4,4 +4,5 @@ package com.github.rudroid.shortcuts.activities;
 public final class h {
 
 
+
 }

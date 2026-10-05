@@ -25,4 +25,5 @@ public abstract class o6 {
     public abstract void g(Object obj, long j, double d);
 
 
+
 }

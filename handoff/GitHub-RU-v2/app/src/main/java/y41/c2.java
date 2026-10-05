@@ -4,4 +4,5 @@ package y41;
 public abstract class c2 {
 
 
+
 }
