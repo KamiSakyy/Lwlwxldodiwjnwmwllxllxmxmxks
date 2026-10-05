@@ -195,14 +195,15 @@ for root, dirs, files in os.walk(JAVA):
             # C: for (0; a < b; i + 1)
             ln = re.sub(r"for\s*\(\s*0\s*;\s*(\w+)\s*([<>]=?)\s*([^;]+?);\s*(\w+)\s*\+\s*1\s*\)",
                         r"for (\1 = 0; \1 \2 \3; \4++)", ln)
-            # J: for (?? x = ...; x < len; ...)
+            # J: for (?? x = expr; ...) -> int (точечная замена всего '?? v = expr')
             fm = re.search(r"for\s*\(\s*\?\?\s*(\w+)\s*=\s*([^;]+);([^;]*);", ln)
             if fm:
                 v, expr2, cond = fm.group(1), fm.group(2).strip(), fm.group(3)
+                whole = "?? " + v + " = " + expr2
                 if re.fullmatch(r"\d+", expr2):
-                    ln = ln.replace("?? " + v + " =", "int " + v + " =", 1)
+                    ln = ln.replace(whole, "int " + v + " = " + expr2, 1)
                 elif re.search(r"\b" + re.escape(v) + r"\s*[<>]", cond):
-                    ln = ln.replace("?? " + v + " =", "int " + v + " = 0;", 1) if "= " in ln else ln
+                    ln = ln.replace(whole, "int " + v + " = 0", 1)
                 stats["J"] += 1
             # E: битые массивы
             ln = re.sub(r"\b([\w.$]+)\[ (\w+)", r"\1[] \2", ln)
