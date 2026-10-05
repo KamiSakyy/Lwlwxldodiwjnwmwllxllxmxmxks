@@ -23,6 +23,11 @@ public interface a1 {
 
         public static final class c extends a {
             public static final c b;
+
+            static {
+                pm.c.Companion.getClass();
+                b = new c(pm.c.g);
+            }
         }
 
         public a(pm.c cVar) {

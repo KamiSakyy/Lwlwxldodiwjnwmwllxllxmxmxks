@@ -1,22 +1,23 @@
 # ОТЧЁТ О ВОССТАНОВЛЕНИИ ИСХОДНИКА (Этап 5)
 
-_Сгенерировано: 2026-10-05T13:22:14.532043Z, проверка настоящим javac (JDK 17)._
+_Сгенерировано: 2026-10-05T13:48:43.947865Z, проверка настоящим javac (JDK 17)._
 
 ## Итог
-**Осталось ошибок: 386** (уникальных файл+ошибка) в 104 файлах.
+**Осталось ошибок: 381** (уникальных файл+ошибка) в 98 файлах.
 
-- Ошибок ДО восстановления: **708**
-- Ошибок ПОСЛЕ восстановления: **386**
-- Исправлено: **322**
+- Ошибок ДО восстановления: **959**
+- Ошибок ПОСЛЕ восстановления: **381**
+- Исправлено: **578**
 
 ## Остаточные ошибки по типам (топ-30)
 - 95 × `'{' expected`
 - 95 × `enum constant expected here`
 - 95 × `reached end of file while parsing`
 - 91 × `invalid method declaration; return type required`
-- 8 × `initializers not allowed in interfaces`
-- 1 × `: expected`
-- 1 × `illegal start of expression`
+- 2 × `initializers not allowed in interfaces`
+- 1 × `')' expected`
+- 1 × `';' expected`
+- 1 × `not a statement`
 
 ## Файлы с остаточными ошибками (топ-30)
 - `app/src/main/java/da1/a1.java` — 4
