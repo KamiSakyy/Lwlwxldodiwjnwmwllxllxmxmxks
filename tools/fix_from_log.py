@@ -147,7 +147,7 @@ for (name, rel) in ctor_classes:
     if not cf:
         continue
     src = open(cf, encoding="utf-8", errors="ignore").read()
-    if re.search(r"public\s+interface\s+%s\b" % re.escape(name), src):
+    if re.search(r"public\s+(?:@interface|interface)\s+%s\b" % re.escape(name), src):
         continue
     if re.search(r"%s\s*\(\s*Object\.\.\.\s*\w*\s*\)" % re.escape(name), src):
         continue
