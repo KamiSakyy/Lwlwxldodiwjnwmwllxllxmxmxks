@@ -93,7 +93,9 @@ tasks.named('preBuild').configure {
 dependencies {
     // Keep API 22 support: Activity 1.12+ and Compose Foundation 1.10+ raise minSdk to 23.
     implementation 'androidx.activity:activity-compose:1.11.0'
-    implementation 'androidx.core:core:1.19.1'
+    // Core 1.17 matches compileSdk 36; 1.18+ requires API 36.1 and 1.19+ requires compileSdk 37.
+    implementation 'androidx.core:core:1.17.0'
+    implementation 'androidx.core:core-ktx:1.17.0'
     implementation 'androidx.compose.runtime:runtime:1.9.0'
     implementation 'androidx.compose.runtime:runtime-saveable:1.9.0'
     implementation 'androidx.compose.foundation:foundation:1.8.1'
