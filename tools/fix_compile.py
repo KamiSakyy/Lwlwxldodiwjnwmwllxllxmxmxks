@@ -143,7 +143,17 @@ for root, dirs, files in os.walk(JAVA):
         # ---------- G: enum X extends Y -> final class X extends Y ----------
         def enum_fix(m2):
             stats["G"] += 1
-            return f"{m2.group(1)}final class {m2.group(2)} extends {m2.group(3)} {{"
+            cls = m2.group(2)
+            return (f"{m2.group(1)}final class {cls} extends {m2.group(3)} {{\n"
+                    f"    public static {cls}[] values() {{\n"
+                    f"        throw new UnsupportedOperationException(\"enum values()\");\n"
+                    f"    }}\n"
+                    f"    public static {cls} valueOf(String name) {{\n"
+                    f"        throw new UnsupportedOperationException(\"enum valueOf\");\n"
+                    f"    }}\n"
+                    f"    public {cls}(String name, int ordinal) {{\n"
+                    f"        super(name, ordinal);\n"
+                    f"    }}")
         src = re.sub(r"^(\s*)(?:public\s+|final\s+)*enum\s+(\w+)\s+extends\s+([\w.]+)\s*(implements\s+[\w.,\s]+)?\{",
                      enum_fix, src, flags=re.M)
 

@@ -63,6 +63,7 @@ jobs:
           NOSPIN=0
           echo "=== ОПРЕДЕЛЕНИЕ ТИПОВ СТАБОВ ПО ДЕРЕВУ ===" | tee -a "$CYCLE"
           python3 tools/kind_stubs.py "$SRC" 2>&1 | tee -a "$CYCLE" || true
+          python3 tools/fix_nested_duplicates.py "$SRC" 2>&1 | tee -a "$CYCLE" || true
           find "$SRC" -name "*.java" | sort > /tmp/sources.txt
           for R in 1 2 3 4 5 6 7 8 9 10; do
             echo "=========== РАУНД $R ===========" | tee -a "$CYCLE"
@@ -120,6 +121,7 @@ jobs:
               python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt 2>&1 | tee -a "$CYCLE" || true
             fi
             python3 tools/convert_stubs_to_ifaces.py /tmp/javac-iter.log "$SRC" 2>&1 | tee -a "$CYCLE" || true
+            python3 tools/fix_from_log.py /tmp/javac-iter.log "$SRC" 2>&1 | tee -a "$CYCLE" || true
             find "$SRC" -name "*.java" | sort > /tmp/sources.txt
             echo "Файлов теперь: $(wc -l < /tmp/sources.txt)" | tee -a "$CYCLE"
           done
