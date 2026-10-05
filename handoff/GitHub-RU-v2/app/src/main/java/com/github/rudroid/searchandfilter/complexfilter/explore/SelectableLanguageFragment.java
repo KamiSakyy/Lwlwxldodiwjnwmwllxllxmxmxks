@@ -93,9 +93,4 @@ public final class SelectableLanguageFragment extends Hilt_SelectableLanguageFra
         return (n) this.H0.getValue();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

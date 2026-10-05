@@ -124,9 +124,4 @@ public final class EditListFragment extends Hilt_EditListFragment implements com
         com.github.rudroid.utilities.w0.a(new y00.l(((u0) this.E0.getValue()).B, 10), F3(), androidx.lifecycle.w.u, new k0(this, view, null));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

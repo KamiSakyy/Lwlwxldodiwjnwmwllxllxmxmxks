@@ -79,9 +79,4 @@ public final class f extends m0 {
         this.e = ei.g.J;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o0<T1,T2,T3,T4> {
-        public o0() {
-        }
-    }
 }

@@ -158,15 +158,5 @@ public final class e {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f2<T1,T2,T3,T4> {
-        public f2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
 }

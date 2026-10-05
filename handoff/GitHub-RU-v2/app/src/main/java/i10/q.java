@@ -50,9 +50,4 @@ public final class q implements w0 {
         k71.k.g(wVar, "customScalarAdapters");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
-        public p0() {
-        }
-    }
 }

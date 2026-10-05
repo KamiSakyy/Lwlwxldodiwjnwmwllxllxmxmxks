@@ -19,9 +19,4 @@ public final class q {
         return jb.c(j13, j13, 0L, 0L, j6, j6, 0L, 0L, j7, 0L, (f2) null, j8, j8, 0L, 0L, j11, j11, 0L, 0L, j14, j14, 0L, 0L, j9, j9, 0L, 0L, j12, j12, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, sVar, 1717987020, 4095);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class gb<T1,T2,T3,T4> {
-        public gb() {
-        }
-    }
 }

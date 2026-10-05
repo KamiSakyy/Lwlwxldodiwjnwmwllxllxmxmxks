@@ -117,15 +117,6 @@ public final class g {
         this.f4097a = -1;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
-        public c() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q<T1,T2,T3,T4> {
-        public q() {
-        }
-    }
+
 }

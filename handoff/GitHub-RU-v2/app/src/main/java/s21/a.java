@@ -454,9 +454,4 @@ public final class a implements b, u41.a, t41.a, g, f, d, e, v7.b {
         this.s = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, (BlockingQueue<Runnable>) new SynchronousQueue(), (ThreadFactory) fVar);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g0<T1,T2,T3,T4> {
-        public g0() {
-        }
-    }
 }

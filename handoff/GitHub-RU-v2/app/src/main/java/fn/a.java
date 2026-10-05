@@ -35,9 +35,4 @@ public final class a {
         return "UserScopedAuthRequest(user=" + this.a + ", authRequest=" + this.b + ")";
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

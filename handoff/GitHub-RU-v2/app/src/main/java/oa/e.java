@@ -19,9 +19,4 @@ public final class e extends c {
         return s5.d.d(new a2.j(new np.h(13)), d0.n(r5.h.a(this.f30103b, jVar.f30107a, x61.l.j0(new String[]{"is_copilot_enabled_by_user", "last_active_thread_id"}))), new nf.j(3, this, jVar), 4);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

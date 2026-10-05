@@ -13,9 +13,4 @@ public abstract class c extends k5.f {
         this.N = scrollableTitleToolbar;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i4<T1,T2,T3,T4> {
-        public i4() {
-        }
-    }
 }

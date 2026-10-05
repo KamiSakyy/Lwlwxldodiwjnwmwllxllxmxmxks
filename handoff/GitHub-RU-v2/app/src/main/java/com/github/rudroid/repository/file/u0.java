@@ -88,9 +88,5 @@ public final class u0 extends androidx.lifecycle.a implements com.github.rudroid
         return t0.a(this.f19481w.d(), this.C, this.D, Q(), this.E);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c1<T1,T2,T3,T4> {
-        public c1() {
-        }
-    }
+
 }

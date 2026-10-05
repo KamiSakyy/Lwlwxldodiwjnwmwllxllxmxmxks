@@ -4,9 +4,5 @@ package com.github.rudroid.starredreposandlists;
 public final class m0 {
     public static final /* synthetic */ int a = 0;
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
+
 }

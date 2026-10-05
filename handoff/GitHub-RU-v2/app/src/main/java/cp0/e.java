@@ -46,9 +46,4 @@ public abstract class e implements aa.a {
         aa.c.f.b(fVar, wVar, Boolean.valueOf(aVar.b));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

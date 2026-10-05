@@ -94,9 +94,5 @@ public final /* synthetic */ class f0 implements j71.e {
         this.t = aVar2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v<T1,T2,T3,T4> {
-        public v() {
-        }
-    }
+
 }

@@ -15,9 +15,4 @@ public final class f extends n1 {
         tfVar.Q0(selectableOrganizationFragment);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class tf<T1,T2,T3,T4> {
-        public tf() {
-        }
-    }
 }

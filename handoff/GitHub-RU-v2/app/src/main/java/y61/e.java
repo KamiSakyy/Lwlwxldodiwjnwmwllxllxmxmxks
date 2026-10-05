@@ -598,9 +598,4 @@ public final class e implements Map, Serializable, l71.e {
         this.x = Integer.numberOfLeadingZeros(highestOneBit) + 1;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i<T1,T2,T3,T4> {
-        public i() {
-        }
-    }
 }

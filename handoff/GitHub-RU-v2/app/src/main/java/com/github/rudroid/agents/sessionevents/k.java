@@ -82,15 +82,5 @@ public interface k {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t4<T1,T2,T3,T4> {
-        public t4() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w4<T1,T2,T3,T4> {
-        public w4() {
-        }
-    }
 }

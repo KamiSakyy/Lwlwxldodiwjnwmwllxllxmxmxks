@@ -84,9 +84,4 @@ public final class a0 implements Closeable {
         return "Response{protocol=" + this.s + ", code=" + this.u + ", message=" + this.t + ", url=" + ((o) this.r.b) + '}';
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t1<T1,T2,T3,T4> {
-        public t1() {
-        }
-    }
 }

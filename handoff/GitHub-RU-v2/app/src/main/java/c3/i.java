@@ -30,15 +30,5 @@ public final class i {
         return "ScrollCaptureCandidate(node=" + this.f4100a + ", depth=" + this.f4101b + ", viewportBoundsInWindow=" + this.f4102c + ", coordinates=" + this.f4103d + ')';
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d1<T1,T2,T3,T4> {
-        public d1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t<T1,T2,T3,T4> {
-        public t() {
-        }
-    }
 }

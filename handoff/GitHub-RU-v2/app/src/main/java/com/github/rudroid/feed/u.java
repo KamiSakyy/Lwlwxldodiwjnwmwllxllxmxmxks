@@ -35,9 +35,5 @@ public final /* synthetic */ class u implements j71.c {
         return w61.a0.a;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r0<T1,T2,T3,T4> {
-        public r0() {
-        }
-    }
+
 }

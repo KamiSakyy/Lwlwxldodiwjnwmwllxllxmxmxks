@@ -101,9 +101,5 @@ public abstract class e extends a implements List {
         return new c(this, i);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class E<T1,T2,T3,T4> {
-        public E() {
-        }
-    }
+
 }

@@ -125,15 +125,5 @@ public final class q extends r1 implements o1 {
         throw new NoWhenBranchMatchedException();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s0<T1,T2,T3,T4> {
-        public s0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x1<T1,T2,T3,T4> {
-        public x1() {
-        }
-    }
 }

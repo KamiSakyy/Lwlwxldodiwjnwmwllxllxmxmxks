@@ -396,9 +396,4 @@ public final class f extends h0 {
         this.e = gitHubDatabase_Impl;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class WorkDatabase_Impl<T1,T2,T3,T4> {
-        public WorkDatabase_Impl() {
-        }
-    }
 }

@@ -23,9 +23,4 @@ public final class f {
         return b31.b.J(new y(((z01.d) this.a.a(jVar)).c(str, str2, str3), new an.g(this, jVar, str3, str, (a71.c) null, 1), 6), jVar, cVar);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

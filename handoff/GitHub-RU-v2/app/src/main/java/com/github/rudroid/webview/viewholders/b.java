@@ -47,9 +47,4 @@ public final class b extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
         b3.c(constraintLayout, bVar.v ? 2131099708 : 2131099994);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class ea<T1,T2,T3,T4> {
-        public ea() {
-        }
-    }
 }

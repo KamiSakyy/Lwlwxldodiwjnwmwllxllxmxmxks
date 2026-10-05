@@ -119,9 +119,4 @@ public final class n implements Serializable {
         this.f32141r = compile;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o<T1,T2,T3,T4> {
-        public o() {
-        }
-    }
 }

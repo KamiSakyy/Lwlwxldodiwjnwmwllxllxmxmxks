@@ -40,9 +40,4 @@ public final class a {
         return i.j(sb2, this.f3381b, ')');
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
-        public f() {
-        }
-    }
 }

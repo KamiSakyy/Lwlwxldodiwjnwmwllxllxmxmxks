@@ -92,9 +92,5 @@ public abstract class a implements Collection, l71.a {
         return k71.j.b(this, objArr);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class E<T1,T2,T3,T4> {
-        public E() {
-        }
-    }
+
 }

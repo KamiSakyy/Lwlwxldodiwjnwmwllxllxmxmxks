@@ -112,9 +112,4 @@ public final class SelectableOwnerLegacyProjectsFragment extends Hilt_Selectable
         return (i) this.H0.getValue();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

@@ -547,15 +547,6 @@ public final class f extends i {
         recycledViewPool.b(17);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class LegacyIssueOrPullRequestActivity<T1,T2,T3,T4> {
-        public LegacyIssueOrPullRequestActivity() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RecyclerView<T1,T2,T3,T4> {
-        public RecyclerView() {
-        }
-    }
+
 }

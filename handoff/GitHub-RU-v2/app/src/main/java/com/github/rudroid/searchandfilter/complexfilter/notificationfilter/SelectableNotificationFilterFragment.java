@@ -161,9 +161,4 @@ public final class SelectableNotificationFilterFragment extends Hilt_SelectableN
         d1.a(new z(new y00.l(((a0) this.I0.getValue()).t.b, 10))).e(F3(), new b(new n(this, 0)));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

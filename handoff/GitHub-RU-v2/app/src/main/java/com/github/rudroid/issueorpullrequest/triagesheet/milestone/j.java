@@ -119,9 +119,4 @@ public final class j extends k1 implements v3 {
         return i21.a.y((fl.f) this.E.getValue()) && this.G.a();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x1<T1,T2,T3,T4> {
-        public x1() {
-        }
-    }
 }

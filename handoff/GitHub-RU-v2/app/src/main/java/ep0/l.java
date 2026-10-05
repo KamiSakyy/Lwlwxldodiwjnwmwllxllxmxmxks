@@ -66,9 +66,4 @@ public final class l implements aa.a {
         cp0.h.d(fVar, wVar, hVar.e);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

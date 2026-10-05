@@ -54,9 +54,4 @@ public final class FocusedFilterExplainerBottomSheet extends Hilt_FocusedFilterE
         v71.b0.z(d1.i(this), (a71.h) null, (v71.a0) null, new e(this, null), 3);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

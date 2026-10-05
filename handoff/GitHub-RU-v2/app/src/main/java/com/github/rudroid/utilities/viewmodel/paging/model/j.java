@@ -29,9 +29,4 @@ public final class j<T, R> implements r<T>, com.github.rudroid.utilities.viewmod
         this.x = new com.github.rudroid.support.u(6, this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q0<T1,T2,T3,T4> {
-        public q0() {
-        }
-    }
 }

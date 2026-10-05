@@ -99,9 +99,5 @@ public abstract class q0 {
         this.f468t = eVar.y;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

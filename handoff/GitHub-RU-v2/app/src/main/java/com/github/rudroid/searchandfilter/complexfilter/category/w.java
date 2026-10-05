@@ -19,9 +19,4 @@ public final class w extends n1 {
         this.w = bVar;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class af<T1,T2,T3,T4> {
-        public af() {
-        }
-    }
 }

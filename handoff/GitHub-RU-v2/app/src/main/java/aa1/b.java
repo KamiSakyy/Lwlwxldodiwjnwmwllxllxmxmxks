@@ -1841,27 +1841,7 @@ public abstract class b {
         return linkedHashMap;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
-        public l() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q<T1,T2,T3,T4> {
-        public q() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v<T1,T2,T3,T4> {
-        public v() {
-        }
-    }
 }

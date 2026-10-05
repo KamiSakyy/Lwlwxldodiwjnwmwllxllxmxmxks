@@ -47,9 +47,5 @@ public final class g2 implements z {
         return new u2(this.f89a, this.f90b, this.f91c);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u2<T1,T2,T3,T4> {
-        public u2() {
-        }
-    }
+
 }

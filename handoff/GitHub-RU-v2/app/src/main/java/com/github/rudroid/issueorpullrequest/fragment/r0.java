@@ -32,9 +32,4 @@ public final /* synthetic */ class r0 implements DialogInterface.OnClickListener
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class IssueOrPullRequestFragment<T1,T2,T3,T4> {
-        public IssueOrPullRequestFragment() {
-        }
-    }
 }

@@ -78,9 +78,4 @@ public final class ActionPreferenceIcon extends Preference {
         this.f0 = new a();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s0<T1,T2,T3,T4> {
-        public s0() {
-        }
-    }
 }

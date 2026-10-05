@@ -6,9 +6,5 @@ import java.util.Map;
 public interface v2 {
     void b(String str, int i, Throwable th, byte[] bArr, Map map);
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t<T1,T2,T3,T4> {
-        public t() {
-        }
-    }
+
 }

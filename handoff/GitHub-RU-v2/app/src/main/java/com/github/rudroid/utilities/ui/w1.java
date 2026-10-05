@@ -11,15 +11,7 @@ public final class w1 {
         this.a = androidx.compose.runtime.t.B(c0033c);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d<T1,T2,T3,T4> {
-        public d() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r<T1,T2,T3,T4> {
-        public r() {
-        }
-    }
+
+
 }

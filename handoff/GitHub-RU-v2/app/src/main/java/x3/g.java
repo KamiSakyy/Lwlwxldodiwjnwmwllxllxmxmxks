@@ -394,9 +394,5 @@ public abstract class g implements com.google.common.util.concurrent.c {
         throw new InterruptedException();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
-        public f() {
-        }
-    }
+
 }

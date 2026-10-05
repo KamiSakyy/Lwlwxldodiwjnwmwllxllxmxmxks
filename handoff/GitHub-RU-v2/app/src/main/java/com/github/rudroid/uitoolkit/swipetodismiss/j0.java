@@ -48,9 +48,5 @@ final class j0 extends x0 {
         return Boolean.hashCode(this.c) + x.i.e(this.a.hashCode() * 31, 31, this.b);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i<T1,T2,T3,T4> {
-        public i() {
-        }
-    }
+
 }

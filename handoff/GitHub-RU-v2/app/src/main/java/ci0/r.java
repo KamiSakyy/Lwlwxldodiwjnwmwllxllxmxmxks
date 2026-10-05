@@ -87,9 +87,4 @@ public abstract class r implements aa.a {
         ud0.d.d(fVar, wVar, qVar.g);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

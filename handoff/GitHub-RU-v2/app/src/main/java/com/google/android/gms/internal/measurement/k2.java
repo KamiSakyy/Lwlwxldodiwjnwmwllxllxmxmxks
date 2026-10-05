@@ -49,9 +49,5 @@ public final class k2 extends g5 {
         return this.zzh;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

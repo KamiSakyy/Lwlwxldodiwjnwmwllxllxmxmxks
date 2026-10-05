@@ -140,15 +140,5 @@ public abstract class q implements v2.j {
         this.f32954y = d1Var;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d1<T1,T2,T3,T4> {
-        public d1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i1<T1,T2,T3,T4> {
-        public i1() {
-        }
-    }
 }

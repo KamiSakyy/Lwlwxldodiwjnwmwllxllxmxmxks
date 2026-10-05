@@ -26,9 +26,4 @@ public final /* synthetic */ class o0 implements j71.a {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Worker<T1,T2,T3,T4> {
-        public Worker() {
-        }
-    }
 }

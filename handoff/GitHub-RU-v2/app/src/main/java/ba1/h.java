@@ -133,9 +133,4 @@ public abstract class h {
         return new URL(url2.getProtocol(), url2.getHost(), url2.getPort(), replaceFirst);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
-        public m() {
-        }
-    }
 }

@@ -231,9 +231,4 @@ public final class d implements View.OnTouchListener {
         return false;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o<T1,T2,T3,T4> {
-        public o() {
-        }
-    }
 }

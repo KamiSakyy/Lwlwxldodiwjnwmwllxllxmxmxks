@@ -70,15 +70,5 @@ public final class CopilotManageSubscriptionActivity extends i0 {
         e.c.a(this, new r1.d(new com.github.rudroid.settings.copilot.managesubscription.b(this, 0), true, 210718814));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x0<T1,T2,T3,T4> {
-        public x0() {
-        }
-    }
 }

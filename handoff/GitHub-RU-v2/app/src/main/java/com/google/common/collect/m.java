@@ -470,9 +470,4 @@ public final class m implements Map, Serializable {
         return lVar2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o1<T1,T2,T3,T4> {
-        public o1() {
-        }
-    }
 }

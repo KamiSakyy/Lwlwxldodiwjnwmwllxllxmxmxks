@@ -98,9 +98,4 @@ public final class u implements w0 {
         return f1.e.l(s0.o("FetchListQuery(login=", this.r, ", slug=", this.s, ", first=30, after="), this.t, ", includeIssueTemplateProperties=", this.u, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
-        public p0() {
-        }
-    }
 }

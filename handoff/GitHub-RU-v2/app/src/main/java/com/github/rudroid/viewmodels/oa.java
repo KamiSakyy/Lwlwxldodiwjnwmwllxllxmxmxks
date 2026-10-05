@@ -31,27 +31,11 @@ final class oa<T> implements y71.j {
         return w61.a0.a;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
-        public h() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
-        public m() {
-        }
-    }
+
+
+
+
 }

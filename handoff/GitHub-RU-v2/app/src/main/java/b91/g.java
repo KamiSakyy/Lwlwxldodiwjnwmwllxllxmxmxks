@@ -1761,21 +1761,6 @@ public abstract class g {
 
     public abstract boolean j0(com.google.android.gms.internal.play_billing.m0 m0Var, com.google.android.gms.internal.play_billing.l0 l0Var, com.google.android.gms.internal.play_billing.l0 l0Var2);
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r2<T1,T2,T3,T4> {
-        public r2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v2<T1,T2,T3,T4> {
-        public v2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

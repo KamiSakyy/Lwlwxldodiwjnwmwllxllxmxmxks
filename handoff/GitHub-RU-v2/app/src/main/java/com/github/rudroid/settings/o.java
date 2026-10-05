@@ -32,9 +32,4 @@ public final /* synthetic */ class o implements e7.k, b5.o {
         SingleChoiceBottomSheet.a.a(C3, valueOf, arrayList, "key_single_choice_dialog_theme").z4(settingsFragment.x3(), "SingeChoiceBottomSheet");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Preference<T1,T2,T3,T4> {
-        public Preference() {
-        }
-    }
 }

@@ -81,21 +81,9 @@ public final class e50 implements aa.n0 {
         return f1.e.k(jo.f4.u("UpdateNotificationSettingsMutation(getsDirectMentionMobilePush=", this.r, ", getsParticipatingWeb=", this.s, ", getsWatchingWeb="), this.t, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p<T1,T2,T3,T4> {
-        public p() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l0<T1,T2,T3,T4> {
-        public l0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x<T1,T2,T3,T4> {
-        public x() {
-        }
-    }
+
+
+
 }

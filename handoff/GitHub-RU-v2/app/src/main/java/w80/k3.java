@@ -32,21 +32,9 @@ public final class k3 implements aa.h0 {
         return x.i.g("RepositoryReadmeFragment(contentHTML=", this.a, ", path=", this.b, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u<T1,T2,T3,T4> {
-        public u() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x<T1,T2,T3,T4> {
-        public x() {
-        }
-    }
+
+
+
 }

@@ -170,9 +170,4 @@ public final class SingleChoiceBottomSheet extends BaseComposeBottomSheetDialog 
         return new r1.d(new h(this, 0), true, -992792757);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
 }

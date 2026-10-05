@@ -59,9 +59,4 @@ public final class h {
         return b31.b.J((y71.i) obj2, jVar, nVar);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class n<T1,T2,T3,T4> {
-        public n() {
-        }
-    }
 }

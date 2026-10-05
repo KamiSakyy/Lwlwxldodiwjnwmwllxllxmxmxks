@@ -179,15 +179,5 @@ public final class e {
         return (ArrayList) x61.m.r0(J0);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h0<T1,T2,T3,T4> {
-        public h0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x<T1,T2,T3,T4> {
-        public x() {
-        }
-    }
 }

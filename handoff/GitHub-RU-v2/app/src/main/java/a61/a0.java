@@ -11,39 +11,15 @@ public final class a0 {
         this.b = str2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d0<T1,T2,T3,T4> {
-        public d0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class e<T1,T2,T3,T4> {
-        public e() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
-        public h() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m0<T1,T2,T3,T4> {
-        public m0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o<T1,T2,T3,T4> {
-        public o() {
-        }
-    }
+
+
+
+
+
+
 }

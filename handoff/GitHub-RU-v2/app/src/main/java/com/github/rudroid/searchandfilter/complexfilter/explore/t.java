@@ -15,9 +15,4 @@ public final class t extends n1 {
         efVar.P0(selectableLanguageFragment);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class ef<T1,T2,T3,T4> {
-        public ef() {
-        }
-    }
 }

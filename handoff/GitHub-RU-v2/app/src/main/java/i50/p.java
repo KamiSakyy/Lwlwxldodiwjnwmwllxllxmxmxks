@@ -50,15 +50,7 @@ public final class p implements aa.a {
         y.d(fVar, wVar, lVar.c);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
-        public l() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
+
+
 }

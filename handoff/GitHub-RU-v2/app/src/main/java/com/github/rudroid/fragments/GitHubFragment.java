@@ -156,9 +156,5 @@ public abstract class GitHubFragment extends Hilt_GitHubFragment {
         return false;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class ComposeView<T1,T2,T3,T4> {
-        public ComposeView() {
-        }
-    }
+
 }

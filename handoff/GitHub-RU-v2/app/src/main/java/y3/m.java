@@ -50,15 +50,5 @@ public final class m implements l2 {
         this.f34223t.f();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k<T1,T2,T3,T4> {
-        public k() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t<T1,T2,T3,T4> {
-        public t() {
-        }
-    }
 }

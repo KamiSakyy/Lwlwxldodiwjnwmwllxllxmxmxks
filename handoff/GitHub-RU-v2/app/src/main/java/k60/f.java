@@ -131,27 +131,7 @@ public final class f implements i0, bm.k, x, j7.b, j11.e {
         k71.k.g(wVar, "customScalarAdapters");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
-        public m() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
-        public p0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s1<T1,T2,T3,T4> {
-        public s1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

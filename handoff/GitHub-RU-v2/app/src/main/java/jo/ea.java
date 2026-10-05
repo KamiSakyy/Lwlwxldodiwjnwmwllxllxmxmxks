@@ -27,9 +27,5 @@ public final class ea {
         return f1.e.z("DeleteRef(clientMutationId=", this.a, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
-        public f() {
-        }
-    }
+
 }

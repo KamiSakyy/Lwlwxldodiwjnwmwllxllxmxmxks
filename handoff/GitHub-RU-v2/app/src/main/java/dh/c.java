@@ -58,15 +58,5 @@ public final class c {
         return new l2(j15, j16, j17, j18, j19, j21, j22, j23, j24, j25, j26, j27, j28, j29, j31, j32, j33, j34, j35, j36, j37, j38, j39, j14, c);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l2<T1,T2,T3,T4> {
-        public l2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
 }

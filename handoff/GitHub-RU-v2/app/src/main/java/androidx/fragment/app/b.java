@@ -175,9 +175,5 @@ public final class b implements Parcelable {
         this.E = parcel.readInt() != 0;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

@@ -37,123 +37,43 @@ public final class cq implements aa.v0 {
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
-        public m() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o<T1,T2,T3,T4> {
-        public o() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b0<T1,T2,T3,T4> {
-        public b0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b6<T1,T2,T3,T4> {
-        public b6() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d2<T1,T2,T3,T4> {
-        public d2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d3<T1,T2,T3,T4> {
-        public d3() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g1<T1,T2,T3,T4> {
-        public g1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j1<T1,T2,T3,T4> {
-        public j1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j6<T1,T2,T3,T4> {
-        public j6() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l5<T1,T2,T3,T4> {
-        public l5() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l7<T1,T2,T3,T4> {
-        public l7() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class n2<T1,T2,T3,T4> {
-        public n2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q0<T1,T2,T3,T4> {
-        public q0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r<T1,T2,T3,T4> {
-        public r() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r2<T1,T2,T3,T4> {
-        public r2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t1<T1,T2,T3,T4> {
-        public t1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u2<T1,T2,T3,T4> {
-        public u2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v4<T1,T2,T3,T4> {
-        public v4() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x2<T1,T2,T3,T4> {
-        public x2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z0<T1,T2,T3,T4> {
-        public z0() {
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

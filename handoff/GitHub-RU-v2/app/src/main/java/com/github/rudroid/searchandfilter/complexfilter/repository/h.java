@@ -15,9 +15,4 @@ public final class h implements y71.i {
         return b == b71.a.r ? b : a0.a;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
-        public a0() {
-        }
-    }
 }

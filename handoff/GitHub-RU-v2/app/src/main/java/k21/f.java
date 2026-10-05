@@ -1162,27 +1162,7 @@ public abstract class f {
         return true;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
-        public l() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u<T1,T2,T3,T4> {
-        public u() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class y<T1,T2,T3,T4> {
-        public y() {
-        }
-    }
 }

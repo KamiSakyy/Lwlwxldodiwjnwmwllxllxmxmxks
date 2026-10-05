@@ -22,9 +22,4 @@ public final class c extends c71.c {
         return this.x.a(null, null, this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

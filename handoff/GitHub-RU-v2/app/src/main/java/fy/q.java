@@ -76,9 +76,4 @@ public final class q implements aa.a {
         fVar.I(tVar.b.r);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

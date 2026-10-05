@@ -19,9 +19,4 @@ public final class i extends c71.c {
         return this.w.c(null, this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z<T1,T2,T3,T4> {
-        public z() {
-        }
-    }
 }

@@ -1692,21 +1692,7 @@ public final class r implements j0, o.a {
         this.t = new j8.j(this, 1);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class ViewPager2<T1,T2,T3,T4> {
-        public ViewPager2() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i1<T1,T2,T3,T4> {
-        public i1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
+
 }

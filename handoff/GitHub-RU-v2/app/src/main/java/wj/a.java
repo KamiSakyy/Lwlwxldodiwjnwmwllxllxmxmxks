@@ -19,9 +19,4 @@ public final class a implements g {
         return ((GitHubDatabase) this.a.a(jVar)).y();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

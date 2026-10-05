@@ -29,9 +29,5 @@ public final class n0 {
         return x.i.g("ReplyTo(id=", this.a, ", __typename=", this.b, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p<T1,T2,T3,T4> {
-        public p() {
-        }
-    }
+
 }

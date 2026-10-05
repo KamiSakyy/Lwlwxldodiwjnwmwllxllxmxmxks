@@ -55,9 +55,5 @@ public final class j0<T> implements y71.j {
         return w61.a0.a;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c0<T1,T2,T3,T4> {
-        public c0() {
-        }
-    }
+
 }

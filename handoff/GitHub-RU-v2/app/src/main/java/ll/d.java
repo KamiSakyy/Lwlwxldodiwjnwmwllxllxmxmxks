@@ -20,9 +20,4 @@ public final class d {
         return b31.b.J(((g1) this.a.a(jVar)).K(str, str2, str3), jVar, cVar);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

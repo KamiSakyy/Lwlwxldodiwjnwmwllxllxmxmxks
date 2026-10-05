@@ -152,9 +152,4 @@ public abstract class k implements aa.a {
         wVar.e(r6.a).b(fVar, wVar, fVar2.g);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

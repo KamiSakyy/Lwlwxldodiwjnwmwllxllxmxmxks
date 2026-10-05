@@ -188,15 +188,6 @@ public class i extends m0 implements l.a, GitHubWebView.e {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RecyclerView<T1,T2,T3,T4> {
-        public RecyclerView() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RepositoryDetailFragment<T1,T2,T3,T4> {
-        public RepositoryDetailFragment() {
-        }
-    }
+
 }

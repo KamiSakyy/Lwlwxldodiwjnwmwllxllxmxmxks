@@ -110,15 +110,7 @@ public final class b1 {
         return sb2.toString();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r4<T1,T2,T3,T4> {
-        public r4() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v<T1,T2,T3,T4> {
-        public v() {
-        }
-    }
+
+
 }

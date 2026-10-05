@@ -259,9 +259,4 @@ public final class SelectableLanguageBottomSheet extends Hilt_SelectableLanguage
         w0.a(new com.github.rudroid.searchandfilter.complexfilter.explore.m(new y00.l(((n) this.Y0.getValue()).t.b, 10)), F3(), androidx.lifecycle.w.u, new com.github.rudroid.searchandfilter.complexfilter.explore.d(this, view, null));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

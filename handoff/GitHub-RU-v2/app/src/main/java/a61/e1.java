@@ -11,15 +11,7 @@ public final class e1 {
         this.a = context;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
+
+
 }

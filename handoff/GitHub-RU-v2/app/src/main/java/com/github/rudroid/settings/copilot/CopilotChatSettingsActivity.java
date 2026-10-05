@@ -85,9 +85,4 @@ public final class CopilotChatSettingsActivity extends l0 {
         e.c.a(this, new r1.d(new e(1, this), true, 1969642282));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

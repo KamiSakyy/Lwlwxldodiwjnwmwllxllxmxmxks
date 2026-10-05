@@ -34,9 +34,5 @@ public interface SerialDescriptor {
 
     boolean k(int i);
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

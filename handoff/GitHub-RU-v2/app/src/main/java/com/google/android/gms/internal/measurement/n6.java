@@ -45,9 +45,5 @@ public final class n6 extends o6 {
         this.a.putLong(obj, j, Double.doubleToLongBits(d));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
+
 }

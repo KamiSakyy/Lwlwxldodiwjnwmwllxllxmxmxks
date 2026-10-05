@@ -54,21 +54,9 @@ public final class v2 {
         return "PagedSessionEvents(events=" + this.a + ", page=" + this.b + ", perPage=" + this.c + ", total=" + this.d + ", links=" + this.e + ")";
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d<T1,T2,T3,T4> {
-        public d() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class e<T1,T2,T3,T4> {
-        public e() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
-        public f() {
-        }
-    }
+
+
+
 }

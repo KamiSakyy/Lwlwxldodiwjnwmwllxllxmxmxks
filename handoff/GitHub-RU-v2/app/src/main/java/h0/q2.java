@@ -82,15 +82,6 @@ public final class q2 implements p2.a {
         return c3Var.h(c3Var.d(c3Var.f24934a.e(c3Var.d(c3Var.g(j11)))));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c3<T1,T2,T3,T4> {
-        public c3() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u<T1,T2,T3,T4> {
-        public u() {
-        }
-    }
+
 }

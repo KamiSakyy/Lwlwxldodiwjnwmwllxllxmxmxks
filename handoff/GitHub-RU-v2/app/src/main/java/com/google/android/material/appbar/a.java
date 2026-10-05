@@ -21,9 +21,5 @@ public final class a implements ValueAnimator.AnimatorUpdateListener {
         this.c.A(this.a, this.b, ((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class CoordinatorLayout<T1,T2,T3,T4> {
-        public CoordinatorLayout() {
-        }
-    }
+
 }

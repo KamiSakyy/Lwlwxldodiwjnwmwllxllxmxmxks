@@ -28,9 +28,4 @@ public final class i implements aa.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(l.a, true)))).b(fVar, wVar, bVar.a);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

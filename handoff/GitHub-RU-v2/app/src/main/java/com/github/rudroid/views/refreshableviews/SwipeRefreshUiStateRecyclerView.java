@@ -289,15 +289,5 @@ public final class SwipeRefreshUiStateRecyclerView extends d<bh> {
         this.l0 = uiStateRecyclerView;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class NestedScrollView<T1,T2,T3,T4> {
-        public NestedScrollView() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p2<T1,T2,T3,T4> {
-        public p2() {
-        }
-    }
 }

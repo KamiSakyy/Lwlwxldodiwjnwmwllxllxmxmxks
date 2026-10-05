@@ -44,9 +44,4 @@ public final /* synthetic */ class e1 implements j71.e {
         this.w = i2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j4<T1,T2,T3,T4> {
-        public j4() {
-        }
-    }
 }

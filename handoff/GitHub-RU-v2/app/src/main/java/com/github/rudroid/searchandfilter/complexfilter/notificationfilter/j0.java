@@ -17,9 +17,4 @@ public final class j0 extends n1 {
         this.v = searchAndFilterBaseFragment;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class mc<T1,T2,T3,T4> {
-        public mc() {
-        }
-    }
 }

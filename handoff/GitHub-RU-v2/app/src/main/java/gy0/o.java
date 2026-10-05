@@ -64,9 +64,4 @@ public final class o implements w0 {
         return f1.e.z("FetchProjectV2ContentRelatedProjectsQuery(contentId=", this.r, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
-        public p0() {
-        }
-    }
 }

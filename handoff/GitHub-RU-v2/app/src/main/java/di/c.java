@@ -56,21 +56,6 @@ public abstract class c {
         b0.z(d1.i(iVar), (h) null, (a0) null, new b(i4, i5, null, iVar), 3);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i<T1,T2,T3,T4> {
-        public i() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m0<T1,T2,T3,T4> {
-        public m0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p2<T1,T2,T3,T4> {
-        public p2() {
-        }
-    }
 }

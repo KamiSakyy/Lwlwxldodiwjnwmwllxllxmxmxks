@@ -15,9 +15,4 @@ public final class q extends n1 {
         cfVar.P0(selectableLabelFragment);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class cf<T1,T2,T3,T4> {
-        public cf() {
-        }
-    }
 }

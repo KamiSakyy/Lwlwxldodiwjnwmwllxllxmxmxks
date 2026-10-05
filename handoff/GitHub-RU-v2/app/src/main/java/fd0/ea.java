@@ -40,15 +40,7 @@ public final class ea implements aa.a {
         aa.c.i.b(fVar, wVar, bfVar.b);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class e<T1,T2,T3,T4> {
-        public e() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
-        public f() {
-        }
-    }
+
+
 }

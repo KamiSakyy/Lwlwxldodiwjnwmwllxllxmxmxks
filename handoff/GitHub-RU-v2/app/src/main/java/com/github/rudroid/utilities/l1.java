@@ -91,15 +91,5 @@ public final /* synthetic */ class l1 implements j71.e {
         this.w = i2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a6<T1,T2,T3,T4> {
-        public a6() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o5<T1,T2,T3,T4> {
-        public o5() {
-        }
-    }
 }

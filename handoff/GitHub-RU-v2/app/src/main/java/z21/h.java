@@ -108,9 +108,5 @@ public abstract class h extends i {
         this.e = 0;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class CoordinatorLayout<T1,T2,T3,T4> {
-        public CoordinatorLayout() {
-        }
-    }
+
 }

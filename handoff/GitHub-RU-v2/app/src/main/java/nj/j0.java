@@ -20,9 +20,4 @@ public final class j0 {
         return b31.b.J(((z01.i) this.a.a(jVar)).f(str, str2, str3, str4, list, list2), jVar, h2Var);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h2<T1,T2,T3,T4> {
-        public h2() {
-        }
-    }
 }

@@ -8,9 +8,4 @@ public abstract class i {
         renderNode.discardDisplayList();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RenderNode<T1,T2,T3,T4> {
-        public RenderNode() {
-        }
-    }
 }

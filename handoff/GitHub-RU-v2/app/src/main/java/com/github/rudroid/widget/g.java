@@ -4,9 +4,5 @@ package com.github.rudroid.widget;
 public interface g {
     void Z(f fVar);
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b<T1,T2,T3,T4> {
-        public b() {
-        }
-    }
+
 }

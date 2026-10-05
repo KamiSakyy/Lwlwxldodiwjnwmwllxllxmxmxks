@@ -158,21 +158,6 @@ public final class CopilotChatProPaywallActivity extends o {
         di.c.c(this, 2130772037, 2130772016);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m0<T1,T2,T3,T4> {
-        public m0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x0<T1,T2,T3,T4> {
-        public x0() {
-        }
-    }
 }

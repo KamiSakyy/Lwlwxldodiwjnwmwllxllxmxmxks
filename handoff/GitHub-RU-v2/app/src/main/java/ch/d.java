@@ -37,9 +37,4 @@ public final class d {
         return "MarkdownBacktickStyle(textStyle=" + this.a + ", backgroundColor=" + t.i(this.b) + ", background=" + this.c + ")";
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q0<T1,T2,T3,T4> {
-        public q0() {
-        }
-    }
 }

@@ -4,9 +4,4 @@ package com.github.rudroid.searchandfilter.complexfilter.organization;
 public interface d {
     void s0(SelectableOrganizationBottomSheet selectableOrganizationBottomSheet);
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
-        public a0() {
-        }
-    }
 }

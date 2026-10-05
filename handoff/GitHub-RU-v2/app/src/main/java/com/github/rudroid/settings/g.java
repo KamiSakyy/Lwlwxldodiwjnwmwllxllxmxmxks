@@ -14,9 +14,5 @@ public abstract class g<T extends k5.f> extends com.github.rudroid.activities.z1
         ((a2) w()).r0((SettingsNotificationsActivity) this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b<T1,T2,T3,T4> {
-        public b() {
-        }
-    }
+
 }

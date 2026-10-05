@@ -23,9 +23,4 @@ public final class b {
         return e8.t(j2, j3, t.b(0.38f, j2), t.b(0.38f, j3), sVar, 0);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x0<T1,T2,T3,T4> {
-        public x0() {
-        }
-    }
 }

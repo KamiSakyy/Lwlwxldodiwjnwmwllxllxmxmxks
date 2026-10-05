@@ -44,9 +44,5 @@ public final class m extends RecyclerView {
         return this.f27291c1.I && super.onTouchEvent(motionEvent);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class ViewPager2<T1,T2,T3,T4> {
-        public ViewPager2() {
-        }
-    }
+
 }

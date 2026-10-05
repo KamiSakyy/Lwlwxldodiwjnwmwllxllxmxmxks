@@ -21,9 +21,4 @@ public abstract class a9 extends k5.f {
         this.Q = progressBar;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i4<T1,T2,T3,T4> {
-        public i4() {
-        }
-    }
 }

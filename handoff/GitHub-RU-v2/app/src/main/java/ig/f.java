@@ -20,9 +20,4 @@ public final class f {
         com.github.rudroid.main.navigation.f.c(a0Var, new ConfigureShortcutRoute(new ShortcutConfigurationModel(list, shortcutConfigurationModel.t, shortcutConfigurationModel.u, aVar, shortcutType, shortcutConfigurationModel.x), false, true, true, false), (d0) null, 6);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
-        public a0() {
-        }
-    }
 }

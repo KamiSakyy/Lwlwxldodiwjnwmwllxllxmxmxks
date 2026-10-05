@@ -84,9 +84,4 @@ public final class a implements com.github.service.wrapper.a, b, j {
         throw new IllegalStateException("storeInCache should never be called on this adapter");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
-        public h() {
-        }
-    }
 }

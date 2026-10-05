@@ -8,21 +8,9 @@ public abstract class b6 {
         d6 d6Var = d6.c;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
-        public m() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
-        public c() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p1<T1,T2,T3,T4> {
-        public p1() {
-        }
-    }
+
+
+
 }

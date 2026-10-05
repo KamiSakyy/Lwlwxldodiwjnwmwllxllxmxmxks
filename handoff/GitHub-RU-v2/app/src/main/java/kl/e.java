@@ -63,21 +63,6 @@ public final class e {
         return b31.b.J((i) obj2, jVar, w0Var);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w0<T1,T2,T3,T4> {
-        public w0() {
-        }
-    }
 }

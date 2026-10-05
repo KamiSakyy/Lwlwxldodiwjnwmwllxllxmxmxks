@@ -85,9 +85,4 @@ public final class j extends z3 {
         this.f29772c = false;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i3<T1,T2,T3,T4> {
-        public i3() {
-        }
-    }
 }

@@ -41,9 +41,4 @@ public final /* synthetic */ class s implements e7.k {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Preference<T1,T2,T3,T4> {
-        public Preference() {
-        }
-    }
 }

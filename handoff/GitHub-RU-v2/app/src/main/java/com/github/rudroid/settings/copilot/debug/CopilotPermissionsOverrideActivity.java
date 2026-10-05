@@ -53,9 +53,4 @@ public final class CopilotPermissionsOverrideActivity extends c0 {
         e.c.a(this, new r1.d(new com.github.rudroid.settings.copilot.debug.b(this, 0), true, 428578399));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

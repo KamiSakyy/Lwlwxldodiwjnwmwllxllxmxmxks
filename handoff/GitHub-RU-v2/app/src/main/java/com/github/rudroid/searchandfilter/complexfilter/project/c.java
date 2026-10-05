@@ -16,9 +16,4 @@ public final class c extends n1 {
         vfVar.P0(searchAndFilterBaseFragment);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class vf<T1,T2,T3,T4> {
-        public vf() {
-        }
-    }
 }

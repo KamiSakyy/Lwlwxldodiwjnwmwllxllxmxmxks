@@ -27,9 +27,5 @@ public final class p2 extends c71.c {
         return this.f25143w.I(0L, 0L, this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

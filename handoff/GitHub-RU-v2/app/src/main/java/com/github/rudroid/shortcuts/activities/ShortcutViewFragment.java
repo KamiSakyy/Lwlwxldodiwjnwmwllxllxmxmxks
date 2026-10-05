@@ -367,15 +367,5 @@ public final class ShortcutViewFragment extends Hilt_ShortcutViewFragment<th> im
         com.github.rudroid.utilities.w0.a(((com.github.rudroid.shortcuts.w) this.H0.getValue()).w, F3(), androidx.lifecycle.w.u, new r0(this, null));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class SearchView<T1,T2,T3,T4> {
-        public SearchView() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

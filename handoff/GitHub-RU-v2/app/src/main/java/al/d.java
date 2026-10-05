@@ -16,15 +16,5 @@ public final class d {
         return b31.b.J(((h0) this.a.a(jVar)).e(str), jVar, cVar);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

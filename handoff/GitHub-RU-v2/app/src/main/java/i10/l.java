@@ -66,9 +66,4 @@ public final class l implements n0 {
         return "DeleteMobileDevicePublicKeyMutation(type=" + xo.s + ")";
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
-        public p0() {
-        }
-    }
 }

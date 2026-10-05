@@ -155,9 +155,4 @@ public final class RepositoryVisibilityFilter extends d {
         this.v = j0Var;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j0<T1,T2,T3,T4> {
-        public j0() {
-        }
-    }
 }

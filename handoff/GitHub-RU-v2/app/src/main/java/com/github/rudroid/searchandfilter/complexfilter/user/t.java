@@ -16,9 +16,4 @@ public final class t extends n1 {
         jfVar.P0(searchAndFilterBaseFragment);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class jf<T1,T2,T3,T4> {
-        public jf() {
-        }
-    }
 }

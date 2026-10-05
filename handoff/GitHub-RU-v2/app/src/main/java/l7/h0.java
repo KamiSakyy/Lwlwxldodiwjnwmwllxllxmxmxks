@@ -85,9 +85,4 @@ public abstract class h0 {
         this.f28140b = hVar;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w0<T1,T2,T3,T4> {
-        public w0() {
-        }
-    }
 }

@@ -81,9 +81,4 @@ public final class h1<T> implements y71.j {
         g1Var.f5557v = 2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z<T1,T2,T3,T4> {
-        public z() {
-        }
-    }
 }

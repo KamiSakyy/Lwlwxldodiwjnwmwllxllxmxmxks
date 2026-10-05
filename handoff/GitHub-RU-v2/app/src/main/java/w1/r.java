@@ -10,9 +10,5 @@ public interface r {
         return rVar == o.f32946a ? this : new l(this, rVar);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
-        public l() {
-        }
-    }
+
 }

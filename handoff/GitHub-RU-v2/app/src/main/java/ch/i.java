@@ -41,9 +41,4 @@ public final class i {
         c = new j3(new cb.b(11));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j3<T1,T2,T3,T4> {
-        public j3() {
-        }
-    }
 }

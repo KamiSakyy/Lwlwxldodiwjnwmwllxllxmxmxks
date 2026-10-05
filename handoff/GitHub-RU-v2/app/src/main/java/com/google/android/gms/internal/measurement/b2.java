@@ -39,9 +39,5 @@ public final class b2 extends g5 {
         return this.zzd;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
-        public a0() {
-        }
-    }
+
 }

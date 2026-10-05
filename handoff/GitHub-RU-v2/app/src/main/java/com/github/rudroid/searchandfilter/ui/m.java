@@ -204,9 +204,4 @@ public final /* synthetic */ class m implements j71.a {
         this.v = a1Var;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a1<T1,T2,T3,T4> {
-        public a1() {
-        }
-    }
 }

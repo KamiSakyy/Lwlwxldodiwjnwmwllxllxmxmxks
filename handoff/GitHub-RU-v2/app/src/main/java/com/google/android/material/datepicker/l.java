@@ -190,9 +190,4 @@ public final class l implements z {
         this.v = i4;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p2<T1,T2,T3,T4> {
-        public p2() {
-        }
-    }
 }

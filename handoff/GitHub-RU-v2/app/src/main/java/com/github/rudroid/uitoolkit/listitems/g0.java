@@ -14,9 +14,4 @@ public final class g0 implements j71.a {
         return this.r.f();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a2<T1,T2,T3,T4> {
-        public a2() {
-        }
-    }
 }

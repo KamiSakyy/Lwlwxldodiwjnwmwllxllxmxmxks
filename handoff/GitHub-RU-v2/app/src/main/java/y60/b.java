@@ -161,21 +161,6 @@ public class b implements i0, k, g, x, m {
         k71.k.g(wVar, "customScalarAdapters");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Preference<T1,T2,T3,T4> {
-        public Preference() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
-        public p0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

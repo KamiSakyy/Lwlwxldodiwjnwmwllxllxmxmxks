@@ -10,9 +10,4 @@ public final class c extends LinearLayout.LayoutParams {
     public t b;
     public Interpolator c;
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t<T1,T2,T3,T4> {
-        public t() {
-        }
-    }
 }

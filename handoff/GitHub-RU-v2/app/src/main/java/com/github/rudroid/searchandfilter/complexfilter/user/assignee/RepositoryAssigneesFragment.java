@@ -98,9 +98,4 @@ public final class RepositoryAssigneesFragment extends Hilt_RepositoryAssigneesF
         return (f) this.H0.getValue();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

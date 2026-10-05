@@ -66,9 +66,4 @@ public final class k implements aa.a {
         bVar2.b(fVar, wVar, aVar.e);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w<T1,T2,T3,T4> {
-        public w() {
-        }
-    }
 }

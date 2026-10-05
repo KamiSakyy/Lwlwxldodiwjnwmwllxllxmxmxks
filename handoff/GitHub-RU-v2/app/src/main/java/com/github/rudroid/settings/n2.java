@@ -28,9 +28,4 @@ public final /* synthetic */ class n2 implements e7.k, u11.a {
         settingsSwipeFragment.E4(preference, str, this.r);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Preference<T1,T2,T3,T4> {
-        public Preference() {
-        }
-    }
 }

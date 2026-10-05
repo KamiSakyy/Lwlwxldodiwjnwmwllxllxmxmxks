@@ -40,9 +40,4 @@ public final class a {
         return new a(str, str2, arrayList, d, packageName, l, str3, x1Var);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x1<T1,T2,T3,T4> {
-        public x1() {
-        }
-    }
 }

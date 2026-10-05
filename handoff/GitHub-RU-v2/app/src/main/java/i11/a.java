@@ -115,21 +115,6 @@ public final class a extends i2.b implements l2 {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i0<T1,T2,T3,T4> {
-        public i0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
-        public l() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p1<T1,T2,T3,T4> {
-        public p1() {
-        }
-    }
 }

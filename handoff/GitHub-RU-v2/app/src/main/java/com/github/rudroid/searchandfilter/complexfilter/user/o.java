@@ -127,9 +127,4 @@ public abstract class o extends com.github.rudroid.searchandfilter.complexfilter
         return d1.l(this.y, new com.github.rudroid.searchandfilter.complexfilter.explore.a0(13));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o0<T1,T2,T3,T4> {
-        public o0() {
-        }
-    }
 }

@@ -78,9 +78,5 @@ public final class ea implements aa.w0 {
         return jo.f4.k(this.s, "DeploymentReviewQuery(nodeId=", this.r, ", numberOfCheckRuns=30, numberOfPullRequests=30, numberOfDeploymentRequests=30, numberOfSteps=30, cursor=", ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
-        public f() {
-        }
-    }
+
 }

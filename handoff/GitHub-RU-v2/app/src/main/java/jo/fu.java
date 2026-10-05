@@ -39,9 +39,5 @@ public final class fu {
         return x.i.k(o, this.e, ", __typename=", this.f, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

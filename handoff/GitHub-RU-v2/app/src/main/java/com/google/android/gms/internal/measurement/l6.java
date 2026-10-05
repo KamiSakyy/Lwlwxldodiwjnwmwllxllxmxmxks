@@ -18,15 +18,7 @@ public final class l6 implements PrivilegedExceptionAction {
         return null;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Unsafe<T1,T2,T3,T4> {
-        public Unsafe() {
-        }
-    }
+
+
 }

@@ -91,9 +91,5 @@ public abstract class h1 {
 
     public abstract boolean s();
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Unsafe<T1,T2,T3,T4> {
-        public Unsafe() {
-        }
-    }
+
 }

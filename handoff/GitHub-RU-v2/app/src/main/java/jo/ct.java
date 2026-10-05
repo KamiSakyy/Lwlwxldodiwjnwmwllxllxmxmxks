@@ -37,21 +37,9 @@ public final class ct {
         return o.toString();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u<T1,T2,T3,T4> {
-        public u() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
-        public c() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class w0<T1,T2,T3,T4> {
-        public w0() {
-        }
-    }
+
+
+
 }

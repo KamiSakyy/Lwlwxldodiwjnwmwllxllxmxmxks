@@ -16,9 +16,4 @@ public final class z extends k71.l implements j71.a {
         return this.f19504s;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RepositoryFileFragment<T1,T2,T3,T4> {
-        public RepositoryFileFragment() {
-        }
-    }
 }

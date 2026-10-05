@@ -60,9 +60,4 @@ public final class h extends o1.c implements v1 {
         return !(obj instanceof y1) ? obj2 : (m3) super.getOrDefault((y1) obj, (m3) obj2);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class y1<T1,T2,T3,T4> {
-        public y1() {
-        }
-    }
 }

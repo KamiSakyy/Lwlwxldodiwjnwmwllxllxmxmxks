@@ -33,9 +33,5 @@ public final class pu {
         return x.i.k(a0.s0.o("TagCommit(id=", this.a, ", oid=", this.b, ", abbreviatedOid="), this.c, ", __typename=", this.d, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
-        public a() {
-        }
-    }
+
 }

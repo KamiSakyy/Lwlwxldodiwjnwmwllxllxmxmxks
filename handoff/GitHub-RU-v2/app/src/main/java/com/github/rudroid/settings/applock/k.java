@@ -31,9 +31,5 @@ public final class k {
         v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new h(this, null), 3);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i<T1,T2,T3,T4> {
-        public i() {
-        }
-    }
+
 }

@@ -36,15 +36,7 @@ public final class eq {
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
-        public c() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
+
+
 }

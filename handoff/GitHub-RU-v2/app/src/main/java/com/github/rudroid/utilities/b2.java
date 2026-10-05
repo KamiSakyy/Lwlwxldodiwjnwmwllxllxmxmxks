@@ -32,9 +32,5 @@ public final class b2 extends l7.p1 {
         return new a2(this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RecyclerView<T1,T2,T3,T4> {
-        public RecyclerView() {
-        }
-    }
+
 }

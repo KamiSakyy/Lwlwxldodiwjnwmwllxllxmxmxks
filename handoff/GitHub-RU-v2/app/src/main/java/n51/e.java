@@ -98,9 +98,4 @@ public final class e implements w7.b, k, x, k21.b {
         this.r = 9;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o0<T1,T2,T3,T4> {
-        public o0() {
-        }
-    }
 }

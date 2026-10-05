@@ -18,9 +18,5 @@ public final class w1 extends w1.q {
         return "<tail>";
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q<T1,T2,T3,T4> {
-        public q() {
-        }
-    }
+
 }

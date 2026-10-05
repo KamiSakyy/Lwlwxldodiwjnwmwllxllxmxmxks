@@ -56,9 +56,4 @@ public final class CodeOptionsActivity extends h0 {
         e.c.a(this, new r1.d(new h(this, 2), true, 2101953583));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

@@ -66,9 +66,4 @@ public abstract class k0 {
 
     public abstract boolean d();
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l0<T1,T2,T3,T4> {
-        public l0() {
-        }
-    }
 }

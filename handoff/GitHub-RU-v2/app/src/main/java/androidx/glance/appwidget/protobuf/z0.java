@@ -22,21 +22,9 @@ public interface z0 {
 
     boolean j(z zVar, z zVar2);
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k0<T1,T2,T3,T4> {
-        public k0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
-        public l() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z<T1,T2,T3,T4> {
-        public z() {
-        }
-    }
+
+
+
 }

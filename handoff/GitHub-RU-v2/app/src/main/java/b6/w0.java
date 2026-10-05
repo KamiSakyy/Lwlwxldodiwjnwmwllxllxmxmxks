@@ -90,9 +90,4 @@ public final class w0 extends c71.j implements j71.e {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x0<T1,T2,T3,T4> {
-        public x0() {
-        }
-    }
 }

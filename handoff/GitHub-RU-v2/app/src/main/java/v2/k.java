@@ -181,9 +181,4 @@ public abstract class k extends w1.q {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d1<T1,T2,T3,T4> {
-        public d1() {
-        }
-    }
 }

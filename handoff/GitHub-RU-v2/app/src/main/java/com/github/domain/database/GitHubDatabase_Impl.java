@@ -690,9 +690,4 @@ public final class GitHubDatabase_Impl extends GitHubDatabase {
         return (xj.c) this.v.getValue();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
-        public g() {
-        }
-    }
 }

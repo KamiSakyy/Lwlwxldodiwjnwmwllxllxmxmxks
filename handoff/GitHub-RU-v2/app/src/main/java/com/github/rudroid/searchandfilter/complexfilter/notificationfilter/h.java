@@ -435,9 +435,4 @@ public final class h {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z1<T1,T2,T3,T4> {
-        public z1() {
-        }
-    }
 }

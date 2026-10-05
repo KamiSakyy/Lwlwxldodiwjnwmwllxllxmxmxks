@@ -19,9 +19,4 @@ public final class a extends com.github.rudroid.adapters.viewholders.e<k5.f> {
         oeVar.N.setOnClickListener(new com.github.rudroid.actions.checklog.c(5, this));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class oe<T1,T2,T3,T4> {
-        public oe() {
-        }
-    }
 }

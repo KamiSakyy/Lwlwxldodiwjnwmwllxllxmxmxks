@@ -46,9 +46,5 @@ public final class c90 implements aa.w0 {
         k71.k.g(wVar, "customScalarAdapters");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d<T1,T2,T3,T4> {
-        public d() {
-        }
-    }
+
 }

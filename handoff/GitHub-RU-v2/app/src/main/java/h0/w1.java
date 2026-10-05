@@ -41,9 +41,5 @@ public final class w1 {
         return "MouseWheelScrollDelta(value=" + ((Object) c2.b.h(this.f25211a)) + ", timeMillis=" + this.f25212b + ", shouldApplyImmediately=" + this.f25213c + ')';
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
-        public s() {
-        }
-    }
+
 }

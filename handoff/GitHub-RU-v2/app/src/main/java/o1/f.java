@@ -93,9 +93,5 @@ public class f extends d {
         this.f29921x = eVar.f29916v;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
-        public m() {
-        }
-    }
+
 }

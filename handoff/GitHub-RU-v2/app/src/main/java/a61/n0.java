@@ -1170,21 +1170,8 @@ public final class n0 extends c71.j implements j71.e {
         this.y = obj2;
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u9<T1,T2,T3,T4> {
-        public u9() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x<T1,T2,T3,T4> {
-        public x() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z<T1,T2,T3,T4> {
-        public z() {
-        }
-    }
+
+
 }

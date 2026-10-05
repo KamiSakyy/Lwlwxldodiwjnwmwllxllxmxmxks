@@ -163,9 +163,4 @@ public final class t extends LinearLayout {
         d();
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class AppCompatTextView<T1,T2,T3,T4> {
-        public AppCompatTextView() {
-        }
-    }
 }

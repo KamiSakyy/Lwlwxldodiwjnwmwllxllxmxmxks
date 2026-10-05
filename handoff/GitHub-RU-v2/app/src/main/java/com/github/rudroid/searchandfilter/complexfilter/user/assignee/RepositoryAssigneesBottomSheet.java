@@ -293,15 +293,5 @@ public final class RepositoryAssigneesBottomSheet extends Hilt_RepositoryAssigne
         d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.e(new y00.l(fVar.t.b, 10), fVar), fVar.I)).e(F3(), new i(new z(23, this)));
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
-        public a0() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l1<T1,T2,T3,T4> {
-        public l1() {
-        }
-    }
 }

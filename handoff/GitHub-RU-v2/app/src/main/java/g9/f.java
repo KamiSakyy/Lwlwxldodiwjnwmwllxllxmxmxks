@@ -39,15 +39,5 @@ public final class f extends c71.c {
         return h.a(this.A, null, 0, this);
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
-        public h() {
-        }
-    }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k<T1,T2,T3,T4> {
-        public k() {
-        }
-    }
 }

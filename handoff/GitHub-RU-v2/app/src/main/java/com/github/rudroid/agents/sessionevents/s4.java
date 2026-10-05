@@ -67,9 +67,4 @@ public final class s4 {
         return com.github.rudroid.copilot.h1.p(o5, this.f7825e, ")");
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t4<T1,T2,T3,T4> {
-        public t4() {
-        }
-    }
 }

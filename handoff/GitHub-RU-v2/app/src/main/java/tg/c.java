@@ -138,9 +138,4 @@ public final class c {
         }
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x0<T1,T2,T3,T4> {
-        public x0() {
-        }
-    }
 }

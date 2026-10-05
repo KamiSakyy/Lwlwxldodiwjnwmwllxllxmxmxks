@@ -86,9 +86,4 @@ public final class b {
         this(cVar, str, num, (i & 8) != 0 ? s.r : map, jVar, (Throwable) ((i & 32) != 0 ? new Throwable(str) : apiFailure), System.currentTimeMillis());
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
-        public j() {
-        }
-    }
 }

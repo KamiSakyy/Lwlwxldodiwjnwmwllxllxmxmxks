@@ -69,9 +69,5 @@ public final class pv implements aa.n0 {
         return "RemoveReactionMutation(subject_id=" + this.r + ", content=" + this.s + ")";
     }
 
-    // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
-        public c() {
-        }
-    }
+
 }
