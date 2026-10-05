@@ -50,6 +50,8 @@ if [ -z "$CERT1" ] || [ "$CERT1" != "$CERT2" ]; then
   exit 1
 fi
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
+TEMPLATE_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$TEMPLATE_APK" AndroidManifest.xml)"
+grep -F "android:roundIcon" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"
 grep -F "versionCode='42'" <<< "$BADGING"
 grep -F "application-label:'Offline smoke test'" <<< "$BADGING"

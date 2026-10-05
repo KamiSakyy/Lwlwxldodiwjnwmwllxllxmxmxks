@@ -3,6 +3,10 @@ package ru.webapk.studio;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.BitmapShader;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Shader;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -66,7 +70,7 @@ final class ApkBuilder {
     }
 
     static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
-                      boolean autoRotate, int versionCode) throws Exception {
+                      boolean autoRotate, boolean fullscreen, int versionCode) throws Exception {
         if (!isValidPackageName(packageName)) {
             throw new IOException("Пакет должен выглядеть как com.example.app (строчные латинские буквы).");
         }
@@ -116,6 +120,7 @@ final class ApkBuilder {
                     Map<String, String> replacements = new HashMap<>();
                     replacements.put(TEMPLATE_PACKAGE, packageName);
                     replacements.put("__WEBAPK_LABEL__", sanitizeLabel(appLabel));
+                    replacements.put("__WEBAPK_FULLSCREEN__", Boolean.toString(fullscreen));
                     byte[] patched = BinaryXmlPatcher.patch(original, replacements, autoRotate, versionCode);
                     putStoredAligned(apk, countingOut, name, patched);
                     manifestSeen = true;
@@ -268,13 +273,25 @@ final class ApkBuilder {
         Map<String, byte[]> result = new HashMap<>();
         try {
             for (int i = 0; i < names.length; i++) {
-                Bitmap scaled = Bitmap.createScaledBitmap(square, ICON_SIZES[i], ICON_SIZES[i], true);
-                ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-                if (!scaled.compress(Bitmap.CompressFormat.PNG, 100, bytes)) {
-                    throw new IOException("Не удалось создать PNG-иконку.");
+                int size = ICON_SIZES[i];
+                Bitmap scaled = Bitmap.createScaledBitmap(square, size, size, true);
+                Bitmap circular = null;
+                try {
+                    circular = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
+                    Canvas canvas = new Canvas(circular);
+                    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
+                    paint.setShader(new BitmapShader(scaled, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
+                    canvas.drawCircle(size / 2f, size / 2f, size / 2f, paint);
+
+                    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+                    if (!circular.compress(Bitmap.CompressFormat.PNG, 100, bytes)) {
+                        throw new IOException("Не удалось создать PNG-иконку.");
+                    }
+                    result.put(names[i], bytes.toByteArray());
+                } finally {
+                    if (circular != null) circular.recycle();
+                    if (scaled != square) scaled.recycle();
                 }
-                result.put(names[i], bytes.toByteArray());
-                if (scaled != square) scaled.recycle();
             }
         } finally {
             square.recycle();

@@ -145,6 +145,83 @@ final class BinaryXmlPatcher {
         throw new IOException("В манифесте не найдена таблица строк");
     }
 
+    static String readMetaDataString(byte[] xml, String targetName) throws IOException {
+        if (xml == null || xml.length < 8 || u16(xml, 0) != RES_XML_TYPE) {
+            throw new IOException("Некорректный бинарный AndroidManifest.xml");
+        }
+        final String androidNamespace = "http://schemas.android.com/apk/res/android";
+        int offset = u16(xml, 2);
+        while (offset + 8 <= xml.length) {
+            int type = u16(xml, offset);
+            int size = checkedInt(u32(xml, offset + 4), "размер XML-чанка");
+            if (size < 8 || offset + size > xml.length) throw new IOException("Повреждённый XML-чанк");
+            if (type == RES_STRING_POOL_TYPE) {
+                List<String> strings = readStringPool(xml, offset, size);
+                int chunkOffset = offset + size;
+                while (chunkOffset + 8 <= xml.length) {
+                    int chunkType = u16(xml, chunkOffset);
+                    int chunkSize = checkedInt(u32(xml, chunkOffset + 4), "размер XML-чанка");
+                    if (chunkSize < 8 || chunkOffset + chunkSize > xml.length) {
+                        throw new IOException("Повреждённый XML-чанк");
+                    }
+                    if (chunkType == 0x0102) {
+                        int headerSize = u16(xml, chunkOffset + 2);
+                        int extension = chunkOffset + headerSize;
+                        if (headerSize < 16 || extension + 20 > chunkOffset + chunkSize) {
+                            throw new IOException("Повреждённый XML-элемент AndroidManifest.xml");
+                        }
+                        int elementNameIndex = (int) u32(xml, extension + 4);
+                        if (elementNameIndex >= 0 && elementNameIndex < strings.size()
+                                && "meta-data".equals(strings.get(elementNameIndex))) {
+                            int attributeStart = u16(xml, extension + 8);
+                            int attributeSize = u16(xml, extension + 10);
+                            int attributeCount = u16(xml, extension + 12);
+                            long attributes = (long) extension + attributeStart;
+                            if (attributeStart < 20 || attributeSize < 20
+                                    || attributes + (long) attributeCount * attributeSize > chunkOffset + chunkSize) {
+                                throw new IOException("Повреждённый список атрибутов AndroidManifest.xml");
+                            }
+                            String metadataName = null;
+                            String metadataValue = null;
+                            for (int index = 0; index < attributeCount; index++) {
+                                int attribute = (int) (attributes + (long) index * attributeSize);
+                                int namespaceIndex = (int) u32(xml, attribute);
+                                int nameIndex = (int) u32(xml, attribute + 4);
+                                if (namespaceIndex < 0 || namespaceIndex >= strings.size()
+                                        || nameIndex < 0 || nameIndex >= strings.size()
+                                        || !androidNamespace.equals(strings.get(namespaceIndex))) continue;
+                                String attributeName = strings.get(nameIndex);
+                                if ("name".equals(attributeName)) {
+                                    metadataName = readStringAttribute(xml, strings, attribute);
+                                } else if ("value".equals(attributeName)) {
+                                    metadataValue = readStringAttribute(xml, strings, attribute);
+                                }
+                            }
+                            if (targetName.equals(metadataName)) return metadataValue;
+                        }
+                    }
+                    chunkOffset += chunkSize;
+                }
+                break;
+            }
+            offset += size;
+        }
+        throw new IOException("Не найдены строковые meta-data для " + targetName);
+    }
+
+    private static String readStringAttribute(byte[] xml, List<String> strings, int attribute)
+            throws IOException {
+        int rawIndex = (int) u32(xml, attribute + 8);
+        if (rawIndex >= 0) {
+            if (rawIndex >= strings.size()) throw new IOException("Некорректная строка атрибута");
+            return strings.get(rawIndex);
+        }
+        if ((xml[attribute + 15] & 0xff) != 0x03) return null;
+        int valueIndex = checkedInt(u32(xml, attribute + 16), "индекс строки атрибута");
+        if (valueIndex < 0 || valueIndex >= strings.size()) throw new IOException("Некорректная строка атрибута");
+        return strings.get(valueIndex);
+    }
+
     private static int findAndroidAttribute(byte[] xml, List<String> strings, String targetName)
             throws IOException {
         final String androidNamespace = "http://schemas.android.com/apk/res/android";

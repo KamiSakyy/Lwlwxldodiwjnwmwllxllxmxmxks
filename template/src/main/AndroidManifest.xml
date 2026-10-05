@@ -2,10 +2,14 @@
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:label="__WEBAPK_LABEL__"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
         android:usesCleartextTraffic="false">
+        <meta-data
+            android:name="com.webapk.studio.FULLSCREEN"
+            android:value="__WEBAPK_FULLSCREEN__" />
         <activity
             android:name="com.webapk.hosttemplate.WebHostActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"

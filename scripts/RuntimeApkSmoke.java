@@ -59,15 +59,21 @@ public final class RuntimeApkSmoke {
                     Map<String, String> replacements = new HashMap<>();
                     replacements.put(OLD_PACKAGE, NEW_PACKAGE);
                     replacements.put("__WEBAPK_LABEL__", "Offline smoke test");
+                    replacements.put("__WEBAPK_FULLSCREEN__", "false");
                     byte[] portraitManifest = BinaryXmlPatcher.patch(contents, replacements, false, 41);
                     if (BinaryXmlPatcher.readScreenOrientation(portraitManifest) != 1
-                            || BinaryXmlPatcher.readVersionCode(portraitManifest) != 41) {
-                        throw new IOException("Portrait orientation/version manifest smoke check failed");
+                            || BinaryXmlPatcher.readVersionCode(portraitManifest) != 41
+                            || !"false".equals(BinaryXmlPatcher.readMetaDataString(
+                                    portraitManifest, "com.webapk.studio.FULLSCREEN"))) {
+                        throw new IOException("Portrait/version/non-fullscreen manifest smoke check failed");
                     }
+                    replacements.put("__WEBAPK_FULLSCREEN__", "true");
                     contents = BinaryXmlPatcher.patch(contents, replacements, true, 42);
                     if (BinaryXmlPatcher.readScreenOrientation(contents) != 4
-                            || BinaryXmlPatcher.readVersionCode(contents) != 42) {
-                        throw new IOException("Auto-rotation/version manifest smoke check failed");
+                            || BinaryXmlPatcher.readVersionCode(contents) != 42
+                            || !"true".equals(BinaryXmlPatcher.readMetaDataString(
+                                    contents, "com.webapk.studio.FULLSCREEN"))) {
+                        throw new IOException("Auto-rotation/version/fullscreen manifest smoke check failed");
                     }
                     manifestFound = true;
                 } else if (name.equals("resources.arsc")) {
@@ -97,7 +103,8 @@ public final class RuntimeApkSmoke {
         java.util.Arrays.fill(signingPassword, Character.MIN_VALUE);
         if (unsigned.exists() && !unsigned.delete()) throw new IOException("Cannot remove unsigned test APK");
         System.out.println("Runtime APK smoke test passed: " + signed.length()
-                + " bytes; stable handoff key reused for successive APKs");
+                + " bytes; five icon densities and both fullscreen settings verified; "
+                + "stable handoff key reused for successive APKs");
     }
 
     private static void put(ZipOutputStream zip, String name, byte[] contents, boolean stored) throws IOException {

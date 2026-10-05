@@ -63,6 +63,7 @@ public final class MainActivity extends ComponentActivity {
             composeUi.setPackageIdValue(savedInstanceState.getString("packageId", composeUi.getPackageIdValue()));
             composeUi.setVersionCodeValue(savedInstanceState.getString("versionCode", composeUi.getVersionCodeValue()));
             composeUi.setAutoRotateValue(savedInstanceState.getBoolean("autoRotate", composeUi.getAutoRotateValue()));
+            composeUi.setFullscreenValue(savedInstanceState.getBoolean("fullscreen", composeUi.getFullscreenValue()));
         }
 
         ComposeView composeView = new ComposeView(this);
@@ -87,6 +88,7 @@ public final class MainActivity extends ComponentActivity {
             outState.putString("packageId", composeUi.getPackageIdValue());
             outState.putString("versionCode", composeUi.getVersionCodeValue());
             outState.putBoolean("autoRotate", composeUi.getAutoRotateValue());
+            outState.putBoolean("fullscreen", composeUi.getFullscreenValue());
         }
     }
 
@@ -390,13 +392,14 @@ public final class MainActivity extends ComponentActivity {
         composeUi.setVersionError(null);
         File selectedIcon = iconFile;
         boolean autoRotate = composeUi.getAutoRotateValue();
+        boolean fullscreen = composeUi.getFullscreenValue();
         generatedApk = null;
         composeUi.setSaveAvailable(false);
         setStatus("Создаю и подписываю APK…", true);
         IO.execute(() -> {
             try {
                 File apk = ApkBuilder.build(this, selectedSite, packageName, appName, selectedIcon,
-                        autoRotate, versionCode);
+                        autoRotate, fullscreen, versionCode);
                 generatedApk = apk;
                 runOnUiThread(() -> {
                     getPreferences(MODE_PRIVATE).edit().putInt(versionPreference, versionCode).apply();

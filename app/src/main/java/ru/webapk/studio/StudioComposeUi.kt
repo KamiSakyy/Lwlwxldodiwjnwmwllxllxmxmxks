@@ -27,6 +27,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
@@ -75,6 +76,9 @@ class StudioComposeUi(private val activity: MainActivity) {
     private var autoRotate by mutableStateOf(
         activity.getPreferences(Context.MODE_PRIVATE).getBoolean("auto_rotate", false)
     )
+    private var fullscreen by mutableStateOf(
+        activity.getPreferences(Context.MODE_PRIVATE).getBoolean("fullscreen", false)
+    )
     private var projectSummaryState by mutableStateOf("Файл ещё не выбран")
     private var iconSummary by mutableStateOf("Иконка по умолчанию")
     private var iconBitmap by mutableStateOf<Bitmap?>(
@@ -99,6 +103,7 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun getPackageIdValue(): String = packageId
     fun getVersionCodeValue(): String = versionCode
     fun getAutoRotateValue(): Boolean = autoRotate
+    fun getFullscreenValue(): Boolean = fullscreen
 
     fun setAppNameValue(value: String) {
         appName = value.take(40)
@@ -115,6 +120,11 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun setAutoRotateValue(value: Boolean) {
         autoRotate = value
         activity.getPreferences(Context.MODE_PRIVATE).edit().putBoolean("auto_rotate", value).apply()
+    }
+
+    fun setFullscreenValue(value: Boolean) {
+        fullscreen = value
+        activity.getPreferences(Context.MODE_PRIVATE).edit().putBoolean("fullscreen", value).apply()
     }
 
     fun setProjectSummary(value: String) {
@@ -265,6 +275,36 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 }
                             }
                         }
+                        Surface(
+                            modifier = Modifier.fillMaxWidth().padding(top = 8.dp).height(62.dp),
+                            shape = RoundedCornerShape(13.dp),
+                            color = Field,
+                            border = BorderStroke(1.dp, Outline)
+                        ) {
+                            Row(
+                                modifier = Modifier.padding(start = 10.dp, end = 6.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Column(modifier = Modifier.weight(1f)) {
+                                    androidx.compose.material3.Text(
+                                        text = "Полный экран",
+                                        color = Ink,
+                                        fontSize = 12.sp,
+                                        fontWeight = FontWeight.Medium
+                                    )
+                                    androidx.compose.material3.Text(
+                                        text = "Скрыть системные панели в APK",
+                                        color = Muted,
+                                        fontSize = 10.sp,
+                                        lineHeight = 13.sp
+                                    )
+                                }
+                                Switch(
+                                    checked = fullscreen,
+                                    onCheckedChange = { setFullscreenValue(it) }
+                                )
+                            }
+                        }
                         if (versionErrorState != null) {
                             androidx.compose.material3.Text(
                                 text = versionErrorState.orEmpty(),
@@ -283,16 +323,16 @@ class StudioComposeUi(private val activity: MainActivity) {
                             Box(
                                 modifier = Modifier
                                     .size(52.dp)
-                                    .clip(RoundedCornerShape(13.dp))
+                                    .clip(CircleShape)
                                     .background(Raised)
-                                    .border(1.dp, Outline, RoundedCornerShape(13.dp)),
+                                    .border(1.dp, Outline, CircleShape),
                                 contentAlignment = Alignment.Center
                             ) {
                                 iconBitmap?.let { bitmap ->
                                     Image(
                                         bitmap = bitmap.asImageBitmap(),
                                         contentDescription = "Иконка приложения",
-                                        modifier = Modifier.fillMaxSize().padding(1.dp),
+                                        modifier = Modifier.fillMaxSize().padding(1.dp).clip(CircleShape),
                                         contentScale = ContentScale.Crop
                                     )
                                 }
