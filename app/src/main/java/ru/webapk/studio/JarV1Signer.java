@@ -4,7 +4,10 @@ import android.util.Base64;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -26,6 +29,7 @@ import java.security.cert.X509Certificate;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
@@ -40,6 +44,11 @@ import java.util.TreeMap;
 import java.util.Map;
 import java.util.zip.CRC32;
 import java.util.zip.Deflater;
+
+import javax.crypto.Cipher;
+import javax.crypto.Mac;
+import javax.crypto.spec.GCMParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
@@ -56,6 +65,9 @@ final class JarV1Signer {
     private static final String OID_MESSAGE_DIGEST = "1.2.840.113549.1.9.4";
     private static final String OID_SIGNING_TIME = "1.2.840.113549.1.9.5";
     private static final byte[] CRLF = new byte[]{'\r', '\n'};
+    private static final byte[] BACKUP_MAGIC = "WAPKKEY1".getBytes(StandardCharsets.US_ASCII);
+    private static final int BACKUP_KDF_ITERATIONS = 240000;
+    private static final int MAX_KEY_BACKUP_BYTES = 512 * 1024;
     private static final Object IDENTITY_LOCK = new Object();
 
     private JarV1Signer() { }
@@ -98,6 +110,131 @@ final class JarV1Signer {
         } catch (Exception error) {
             signedApk.delete();
             throw error;
+        }
+    }
+
+    static void exportSigningIdentity(File privateDataDirectory, OutputStream destination, char[] password)
+            throws Exception {
+        validateBackupPassword(password);
+        SigningIdentity identity = getOrCreateIdentity(privateDataDirectory);
+        byte[] privateKey = identity.privateKey.getEncoded();
+        byte[] certificate = identity.certificate.getEncoded();
+        ByteArrayOutputStream clearBytes = new ByteArrayOutputStream();
+        try (DataOutputStream clear = new DataOutputStream(clearBytes)) {
+            clear.writeInt(privateKey.length);
+            clear.write(privateKey);
+            clear.writeInt(certificate.length);
+            clear.write(certificate);
+        }
+
+        byte[] salt = new byte[16];
+        byte[] nonce = new byte[12];
+        SecureRandom random = new SecureRandom();
+        random.nextBytes(salt);
+        random.nextBytes(nonce);
+        byte[] kdfCount = int32(BACKUP_KDF_ITERATIONS);
+        byte[] plaintext = clearBytes.toByteArray();
+        byte[] derivedKey = deriveBackupKey(password, salt, BACKUP_KDF_ITERATIONS);
+        byte[] encrypted;
+        try {
+            Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+            cipher.init(Cipher.ENCRYPT_MODE, new SecretKeySpec(derivedKey, "AES"),
+                    new GCMParameterSpec(128, nonce));
+            cipher.updateAAD(BACKUP_MAGIC);
+            cipher.updateAAD(kdfCount);
+            encrypted = cipher.doFinal(plaintext);
+        } finally {
+            Arrays.fill(derivedKey, (byte) 0);
+            Arrays.fill(plaintext, (byte) 0);
+            Arrays.fill(privateKey, (byte) 0);
+            Arrays.fill(certificate, (byte) 0);
+        }
+
+        DataOutputStream output = new DataOutputStream(destination);
+        output.write(BACKUP_MAGIC);
+        output.writeInt(BACKUP_KDF_ITERATIONS);
+        output.write(salt);
+        output.write(nonce);
+        output.writeInt(encrypted.length);
+        output.write(encrypted);
+        output.flush();
+        Arrays.fill(encrypted, (byte) 0);
+        clearBytes.reset();
+    }
+
+    static void importSigningIdentity(File privateDataDirectory, InputStream source, char[] password)
+            throws Exception {
+        validateBackupPassword(password);
+        byte[] backup = readBounded(source, MAX_KEY_BACKUP_BYTES);
+        byte[] privateKeyBytes = null;
+        byte[] certificateBytes = null;
+        byte[] derivedKey = null;
+        byte[] clear = null;
+        try (DataInputStream input = new DataInputStream(new ByteArrayInputStream(backup))) {
+            byte[] magic = new byte[BACKUP_MAGIC.length];
+            input.readFully(magic);
+            if (!Arrays.equals(magic, BACKUP_MAGIC)) throw new IOException("Файл не является резервной копией ключа Web APK Studio.");
+            int iterations = input.readInt();
+            if (iterations < 100000 || iterations > 500000) throw new IOException("Неподдерживаемый формат резервной копии ключа.");
+            byte[] salt = new byte[16];
+            byte[] nonce = new byte[12];
+            input.readFully(salt);
+            input.readFully(nonce);
+            int encryptedLength = input.readInt();
+            if (encryptedLength < 17 || encryptedLength > MAX_KEY_BACKUP_BYTES
+                    || encryptedLength != input.available()) {
+                throw new IOException("Файл резервной копии ключа повреждён.");
+            }
+            byte[] encrypted = new byte[encryptedLength];
+            input.readFully(encrypted);
+            derivedKey = deriveBackupKey(password, salt, iterations);
+            Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
+            cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(derivedKey, "AES"),
+                    new GCMParameterSpec(128, nonce));
+            cipher.updateAAD(BACKUP_MAGIC);
+            cipher.updateAAD(int32(iterations));
+            clear = cipher.doFinal(encrypted);
+            Arrays.fill(encrypted, (byte) 0);
+            Arrays.fill(salt, (byte) 0);
+            Arrays.fill(nonce, (byte) 0);
+        } catch (Exception error) {
+            if (error instanceof IOException) throw error;
+            throw new IOException("Не удалось открыть ключ: проверьте пароль и файл резервной копии.", error);
+        }
+
+        try (DataInputStream clearInput = new DataInputStream(new ByteArrayInputStream(clear))) {
+            int privateKeyLength = clearInput.readInt();
+            if (privateKeyLength < 64 || privateKeyLength > 64 * 1024
+                    || privateKeyLength > clearInput.available() - 4) {
+                throw new IOException("Некорректный закрытый ключ в резервной копии.");
+            }
+            privateKeyBytes = new byte[privateKeyLength];
+            clearInput.readFully(privateKeyBytes);
+            int certificateLength = clearInput.readInt();
+            if (certificateLength < 64 || certificateLength > 64 * 1024
+                    || certificateLength != clearInput.available()) {
+                throw new IOException("Некорректный сертификат в резервной копии.");
+            }
+            certificateBytes = new byte[certificateLength];
+            clearInput.readFully(certificateBytes);
+        } finally {
+            if (derivedKey != null) Arrays.fill(derivedKey, (byte) 0);
+            if (clear != null) Arrays.fill(clear, (byte) 0);
+            Arrays.fill(backup, (byte) 0);
+        }
+
+        try {
+            PrivateKey privateKey = KeyFactory.getInstance("RSA")
+                    .generatePrivate(new PKCS8EncodedKeySpec(privateKeyBytes));
+            X509Certificate certificate = (X509Certificate) CertificateFactory.getInstance("X.509")
+                    .generateCertificate(new ByteArrayInputStream(certificateBytes));
+            verifyIdentity(privateKey, certificate);
+            synchronized (IDENTITY_LOCK) {
+                saveIdentity(privateDataDirectory, privateKeyBytes, certificateBytes);
+            }
+        } finally {
+            if (privateKeyBytes != null) Arrays.fill(privateKeyBytes, (byte) 0);
+            if (certificateBytes != null) Arrays.fill(certificateBytes, (byte) 0);
         }
     }
 
@@ -296,17 +433,7 @@ final class JarV1Signer {
                     .generateCertificate(new java.io.ByteArrayInputStream(certificateBytes));
             certificate.verify(pair.getPublic());
 
-            File tempKey = new File(directory, privateKeyFile.getName() + ".tmp");
-            File tempCert = new File(directory, certificateFile.getName() + ".tmp");
-            writeFile(tempKey, pair.getPrivate().getEncoded());
-            writeFile(tempCert, certificateBytes);
-            if (privateKeyFile.exists()) privateKeyFile.delete();
-            if (certificateFile.exists()) certificateFile.delete();
-            if (!tempKey.renameTo(privateKeyFile) || !tempCert.renameTo(certificateFile)) {
-                tempKey.delete();
-                tempCert.delete();
-                throw new IOException("Не удалось сохранить ключ подписи в памяти приложения.");
-            }
+            saveIdentity(directory, pair.getPrivate().getEncoded(), certificateBytes);
             return new SigningIdentity(pair.getPrivate(), certificate);
         }
     }
@@ -318,14 +445,137 @@ final class JarV1Signer {
                 .generatePrivate(new PKCS8EncodedKeySpec(keyBytes));
         X509Certificate certificate = (X509Certificate) CertificateFactory.getInstance("X.509")
                 .generateCertificate(new java.io.ByteArrayInputStream(certBytes));
+        verifyIdentity(privateKey, certificate);
+        return new SigningIdentity(privateKey, certificate);
+    }
+
+    private static void verifyIdentity(PrivateKey privateKey, X509Certificate certificate) throws Exception {
+        if (!"RSA".equalsIgnoreCase(privateKey.getAlgorithm())
+                || !"RSA".equalsIgnoreCase(certificate.getPublicKey().getAlgorithm())) {
+            throw new IOException("Формат ключа подписи не поддерживается.");
+        }
         Signature check = Signature.getInstance(RSA_SIGNATURE);
+        byte[] challengeText = "Web APK Studio signing key check".getBytes(StandardCharsets.UTF_8);
         check.initSign(privateKey);
-        check.update("Web APK Studio signing key check".getBytes(StandardCharsets.UTF_8));
+        check.update(challengeText);
         byte[] challenge = check.sign();
         check.initVerify(certificate.getPublicKey());
-        check.update("Web APK Studio signing key check".getBytes(StandardCharsets.UTF_8));
+        check.update(challengeText);
         if (!check.verify(challenge)) throw new IOException("Ключ подписи и сертификат не совпадают.");
-        return new SigningIdentity(privateKey, certificate);
+    }
+
+    private static void validateBackupPassword(char[] password) throws IOException {
+        if (password == null || password.length < 8 || password.length > 128) {
+            throw new IOException("Пароль резервной копии должен содержать от 8 до 128 символов.");
+        }
+    }
+
+    private static byte[] deriveBackupKey(char[] password, byte[] salt, int iterations) throws Exception {
+        byte[] passwordBytes = new String(password).getBytes(StandardCharsets.UTF_8);
+        try {
+            Mac mac = Mac.getInstance("HmacSHA256");
+            mac.init(new SecretKeySpec(passwordBytes, "HmacSHA256"));
+            int keyLength = 32;
+            int hashLength = mac.getMacLength();
+            byte[] derived = new byte[keyLength];
+            byte[] blockInput = new byte[salt.length + 4];
+            System.arraycopy(salt, 0, blockInput, 0, salt.length);
+            int position = 0;
+            for (int blockIndex = 1; position < keyLength; blockIndex++) {
+                int end = blockInput.length;
+                blockInput[end - 4] = (byte) (blockIndex >>> 24);
+                blockInput[end - 3] = (byte) (blockIndex >>> 16);
+                blockInput[end - 2] = (byte) (blockIndex >>> 8);
+                blockInput[end - 1] = (byte) blockIndex;
+                byte[] u = mac.doFinal(blockInput);
+                byte[] aggregate = u.clone();
+                for (int iteration = 1; iteration < iterations; iteration++) {
+                    u = mac.doFinal(u);
+                    for (int i = 0; i < hashLength; i++) aggregate[i] ^= u[i];
+                }
+                int copy = Math.min(hashLength, keyLength - position);
+                System.arraycopy(aggregate, 0, derived, position, copy);
+                position += copy;
+                Arrays.fill(u, (byte) 0);
+                Arrays.fill(aggregate, (byte) 0);
+            }
+            Arrays.fill(blockInput, (byte) 0);
+            return derived;
+        } finally {
+            Arrays.fill(passwordBytes, (byte) 0);
+        }
+    }
+
+    private static byte[] int32(int value) {
+        return new byte[]{(byte) (value >>> 24), (byte) (value >>> 16),
+                (byte) (value >>> 8), (byte) value};
+    }
+
+    private static byte[] readBounded(InputStream input, int maximum) throws IOException {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        byte[] buffer = new byte[4096];
+        int read;
+        while ((read = input.read(buffer)) != -1) {
+            if (output.size() > maximum - read) throw new IOException("Файл резервной копии слишком большой.");
+            output.write(buffer, 0, read);
+        }
+        return output.toByteArray();
+    }
+
+    private static void saveIdentity(File directory, byte[] privateKey, byte[] certificate) throws IOException {
+        if (!directory.exists() && !directory.mkdirs()) {
+            throw new IOException("Не удалось создать папку постоянного ключа подписи.");
+        }
+        File keyFile = new File(directory, "webapk-signing-key.pk8");
+        File certificateFile = new File(directory, "webapk-signing-cert.der");
+        String suffix = "." + System.currentTimeMillis() + ".tmp";
+        File tempKey = new File(directory, keyFile.getName() + suffix);
+        File tempCertificate = new File(directory, certificateFile.getName() + suffix);
+        File backupKey = new File(directory, keyFile.getName() + suffix + ".backup");
+        File backupCertificate = new File(directory, certificateFile.getName() + suffix + ".backup");
+        writeFile(tempKey, privateKey);
+        writeFile(tempCertificate, certificate);
+        boolean oldKeyMoved = false;
+        boolean oldCertificateMoved = false;
+        boolean newKeyMoved = false;
+        boolean newCertificateMoved = false;
+        boolean success = false;
+        try {
+            if (keyFile.exists()) {
+                if (!keyFile.renameTo(backupKey)) throw new IOException("Не удалось сохранить прежний ключ подписи.");
+                oldKeyMoved = true;
+            }
+            if (certificateFile.exists()) {
+                if (!certificateFile.renameTo(backupCertificate)) {
+                    throw new IOException("Не удалось сохранить прежний сертификат подписи.");
+                }
+                oldCertificateMoved = true;
+            }
+            if (!tempKey.renameTo(keyFile)) throw new IOException("Не удалось установить новый ключ подписи.");
+            newKeyMoved = true;
+            if (!tempCertificate.renameTo(certificateFile)) {
+                throw new IOException("Не удалось установить новый сертификат подписи.");
+            }
+            newCertificateMoved = true;
+            success = true;
+        } catch (IOException error) {
+            if (newKeyMoved) keyFile.delete();
+            if (newCertificateMoved) certificateFile.delete();
+            if (oldKeyMoved && backupKey.exists() && !backupKey.renameTo(keyFile)) {
+                error.addSuppressed(new IOException("Не удалось восстановить прежний ключ подписи."));
+            }
+            if (oldCertificateMoved && backupCertificate.exists() && !backupCertificate.renameTo(certificateFile)) {
+                error.addSuppressed(new IOException("Не удалось восстановить прежний сертификат подписи."));
+            }
+            throw error;
+        } finally {
+            tempKey.delete();
+            tempCertificate.delete();
+            if (success) {
+                backupKey.delete();
+                backupCertificate.delete();
+            }
+        }
     }
 
     private static byte[] createSelfSignedCertificate(KeyPair pair) throws Exception {

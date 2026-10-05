@@ -42,13 +42,40 @@ jobs:
           yes | sdkmanager --licenses >/dev/null || true
           sdkmanager "platforms;android-35" "build-tools;35.0.0" "platform-tools"
 
+      - name: Load permanent converter signing key
+        env:
+          WEBAPK_SIGNING_KEYSTORE_B64: ${{ secrets.WEBAPK_SIGNING_KEYSTORE_B64 }}
+          WEBAPK_SIGNING_STORE_PASSWORD: ${{ secrets.WEBAPK_SIGNING_STORE_PASSWORD }}
+          WEBAPK_SIGNING_KEY_ALIAS: ${{ secrets.WEBAPK_SIGNING_KEY_ALIAS }}
+          WEBAPK_SIGNING_KEY_PASSWORD: ${{ secrets.WEBAPK_SIGNING_KEY_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${WEBAPK_SIGNING_KEYSTORE_B64:-}" ] || [ -z "${WEBAPK_SIGNING_STORE_PASSWORD:-}" ] \
+             || [ -z "${WEBAPK_SIGNING_KEY_ALIAS:-}" ] || [ -z "${WEBAPK_SIGNING_KEY_PASSWORD:-}" ]; then
+            echo "WEBAPK_SIGNING_READY=false" >> "$GITHUB_ENV"
+            echo "::warning title=Permanent signing key missing::Build/tests will run, but no converter APK will be published until the Actions signing secrets are configured."
+            exit 0
+          fi
+          KEYSTORE_FILE="$RUNNER_TEMP/webapk-studio-release.p12"
+          printf '%s' "$WEBAPK_SIGNING_KEYSTORE_B64" | base64 --decode > "$KEYSTORE_FILE"
+          test -s "$KEYSTORE_FILE"
+          {
+            echo "WEBAPK_SIGNING_READY=true"
+            echo "WEBAPK_SIGNING_KEYSTORE_FILE=$KEYSTORE_FILE"
+            echo "WEBAPK_SIGNING_STORE_PASSWORD=$WEBAPK_SIGNING_STORE_PASSWORD"
+            echo "WEBAPK_SIGNING_KEY_ALIAS=$WEBAPK_SIGNING_KEY_ALIAS"
+            echo "WEBAPK_SIGNING_KEY_PASSWORD=$WEBAPK_SIGNING_KEY_PASSWORD"
+          } >> "$GITHUB_ENV"
+
       - name: Assemble release APK with Android SDK and Gradle
         run: gradle --no-daemon clean :app:assembleRelease
 
-      - name: Smoke test offline APK repackaging and JAR signature
+      - name: Smoke test updates, key backup, rotation, and APK signatures
         run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/35.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke"
 
       - name: Package source and verify APK
+        if: env.WEBAPK_SIGNING_READY == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -66,6 +93,7 @@ jobs:
           unzip -t dist/WebAPK-Studio-source.zip >/dev/null
 
       - name: Save the Actions build on the session branch
+        if: env.WEBAPK_SIGNING_READY == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -78,6 +106,7 @@ jobs:
           fi
 
       - name: Upload APK and source ZIP
+        if: env.WEBAPK_SIGNING_READY == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: WebAPK-Studio-Android

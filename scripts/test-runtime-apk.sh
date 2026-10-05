@@ -12,6 +12,7 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 CLASSES="$TEMP_DIR/jvm-smoke-classes"
 UNSIGNED="$TEMP_DIR/runtime-smoke-unsigned.apk"
 SIGNED="$TEMP_DIR/runtime-smoke.apk"
+RESTORED_SIGNED="$TEMP_DIR/runtime-smoke-restored.apk"
 mkdir -p "$CLASSES" "$TEMP_DIR"
 
 javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
@@ -30,6 +31,20 @@ fi
 cat "$TEMP_DIR/apksigner.log"
 grep -F "Verified using v1 scheme (JAR signing): true" "$TEMP_DIR/apksigner.log"
 grep -F "Verified using v2 scheme (APK Signature Scheme v2): true" "$TEMP_DIR/apksigner.log"
+if ! "$BUILD_TOOLS/apksigner" verify --verbose "$RESTORED_SIGNED" >"$TEMP_DIR/apksigner-restored.log" 2>&1; then
+  cat "$TEMP_DIR/apksigner-restored.log"
+  echo "Restored signing identity produced an invalid APK" >&2
+  exit 1
+fi
+grep -F "Verified using v1 scheme (JAR signing): true" "$TEMP_DIR/apksigner-restored.log"
+grep -F "Verified using v2 scheme (APK Signature Scheme v2): true" "$TEMP_DIR/apksigner-restored.log"
+CERT1="$("$BUILD_TOOLS/apksigner" verify --print-certs "$SIGNED" | grep -F "Signer #1 certificate SHA-256 digest" | head -n 1)"
+CERT2="$("$BUILD_TOOLS/apksigner" verify --print-certs "$RESTORED_SIGNED" | grep -F "Signer #1 certificate SHA-256 digest" | head -n 1)"
+if [ -z "$CERT1" ] || [ "$CERT1" != "$CERT2" ]; then
+  echo "APK signatures did not preserve the same certificate after key restoration" >&2
+  exit 1
+fi
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"
+grep -F "versionCode='42'" <<< "$BADGING"
 grep -F "application-label:'Offline smoke test'" <<< "$BADGING"

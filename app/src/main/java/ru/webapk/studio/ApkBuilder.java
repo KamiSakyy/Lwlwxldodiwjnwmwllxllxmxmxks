@@ -66,11 +66,12 @@ final class ApkBuilder {
         return result.isEmpty() ? "Мой сайт" : result;
     }
 
-    static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile)
-            throws Exception {
+    static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
+                      boolean autoRotate, int versionCode) throws Exception {
         if (!isValidPackageName(packageName)) {
             throw new IOException("Пакет должен выглядеть как com.example.app (строчные латинские буквы).");
         }
+        if (versionCode < 1) throw new IOException("Номер версии приложения должен быть положительным.");
         if (siteRoot == null || !siteRoot.isDirectory()) {
             throw new IOException("Сначала выберите index.html или ZIP сайта.");
         }
@@ -116,7 +117,7 @@ final class ApkBuilder {
                     Map<String, String> replacements = new HashMap<>();
                     replacements.put(TEMPLATE_PACKAGE, packageName);
                     replacements.put("__WEBAPK_LABEL__", sanitizeLabel(appLabel));
-                    byte[] patched = BinaryXmlPatcher.patch(original, replacements);
+                    byte[] patched = BinaryXmlPatcher.patch(original, replacements, autoRotate, versionCode);
                     putStoredAligned(apk, countingOut, name, patched);
                     manifestSeen = true;
                 } else if (name.equals("resources.arsc")) {

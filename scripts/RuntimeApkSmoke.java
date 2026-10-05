@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -46,7 +47,16 @@ public final class RuntimeApkSmoke {
                     Map<String, String> replacements = new HashMap<>();
                     replacements.put(OLD_PACKAGE, NEW_PACKAGE);
                     replacements.put("__WEBAPK_LABEL__", "Offline smoke test");
-                    contents = BinaryXmlPatcher.patch(contents, replacements);
+                    byte[] portraitManifest = BinaryXmlPatcher.patch(contents, replacements, false, 41);
+                    if (BinaryXmlPatcher.readScreenOrientation(portraitManifest) != 1
+                            || BinaryXmlPatcher.readVersionCode(portraitManifest) != 41) {
+                        throw new IOException("Portrait orientation/version manifest smoke check failed");
+                    }
+                    contents = BinaryXmlPatcher.patch(contents, replacements, true, 42);
+                    if (BinaryXmlPatcher.readScreenOrientation(contents) != 4
+                            || BinaryXmlPatcher.readVersionCode(contents) != 42) {
+                        throw new IOException("Auto-rotation/version manifest smoke check failed");
+                    }
                     manifestFound = true;
                 } else if (name.equals("resources.arsc")) {
                     patchPackageName(contents, OLD_PACKAGE, NEW_PACKAGE);
@@ -61,9 +71,27 @@ public final class RuntimeApkSmoke {
             put(output, "assets/site/large-offline-smoke-test.bin", multiMegabytePayload, true);
         }
 
-        JarV1Signer.sign(unsigned, signed, new File(signed.getParentFile(), "smoke-signing"));
+        File originalIdentity = new File(signed.getParentFile(), "smoke-signing");
+        File restoredIdentity = new File(signed.getParentFile(), "smoke-signing-restored");
+        File backup = new File(signed.getParentFile(), "smoke-signing.wapkkey");
+        File restoredSigned = new File(signed.getParentFile(), "runtime-smoke-restored.apk");
+        char[] password = "ci-test-backup-passphrase".toCharArray();
+        JarV1Signer.sign(unsigned, signed, originalIdentity);
+        try (FileOutputStream output = new FileOutputStream(backup)) {
+            JarV1Signer.exportSigningIdentity(originalIdentity, output, password);
+        }
+        try (InputStream input = new FileInputStream(backup)) {
+            JarV1Signer.importSigningIdentity(restoredIdentity, input, password);
+        }
+        JarV1Signer.sign(unsigned, restoredSigned, restoredIdentity);
+        if (!Arrays.equals(readFile(new File(originalIdentity, "webapk-signing-cert.der")),
+                readFile(new File(restoredIdentity, "webapk-signing-cert.der")))) {
+            throw new IOException("Restored signing identity does not match the original certificate");
+        }
+        Arrays.fill(password, Character.MIN_VALUE);
         if (unsigned.exists() && !unsigned.delete()) throw new IOException("Cannot remove unsigned test APK");
-        System.out.println("Runtime APK smoke test passed: " + signed.length() + " bytes");
+        System.out.println("Runtime APK smoke test passed: " + signed.length()
+                + " bytes; permanent key backup restored and reused");
     }
 
     private static void put(ZipOutputStream zip, String name, byte[] contents, boolean stored) throws IOException {
@@ -91,6 +119,12 @@ public final class RuntimeApkSmoke {
             if (out.size() > 64 * 1024 * 1024) throw new IOException("Template entry unexpectedly large");
         }
         return out.toByteArray();
+    }
+
+    private static byte[] readFile(File file) throws IOException {
+        try (InputStream input = new FileInputStream(file)) {
+            return readAll(input);
+        }
     }
 
     private static void patchPackageName(byte[] table, String oldName, String newName) throws IOException {

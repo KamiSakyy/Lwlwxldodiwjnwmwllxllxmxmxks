@@ -17,6 +17,20 @@ final class BinaryXmlPatcher {
     private BinaryXmlPatcher() { }
 
     static byte[] patch(byte[] xml, Map<String, String> replacements) throws IOException {
+        return patch(xml, replacements, null, null);
+    }
+
+    static byte[] patch(byte[] xml, Map<String, String> replacements, boolean autoRotate) throws IOException {
+        return patch(xml, replacements, Boolean.valueOf(autoRotate), null);
+    }
+
+    static byte[] patch(byte[] xml, Map<String, String> replacements, boolean autoRotate,
+                        int versionCode) throws IOException {
+        return patch(xml, replacements, Boolean.valueOf(autoRotate), Integer.valueOf(versionCode));
+    }
+
+    private static byte[] patch(byte[] xml, Map<String, String> replacements, Boolean autoRotate,
+                                Integer versionCode) throws IOException {
         if (xml == null || xml.length < 8 || u16(xml, 0) != RES_XML_TYPE) {
             throw new IOException("Шаблон APK не содержит бинарный AndroidManifest.xml");
         }
@@ -57,6 +71,8 @@ final class BinaryXmlPatcher {
         if (changed == 0) {
             throw new IOException("Не удалось изменить имя приложения в шаблоне APK");
         }
+        if (autoRotate != null) patchScreenOrientation(xml, strings, autoRotate.booleanValue());
+        if (versionCode != null) patchIntegerAttribute(xml, strings, "versionCode", versionCode.intValue());
 
         byte[] newPool = writeUtf8StringPool(strings);
         ByteArrayOutputStream out = new ByteArrayOutputStream(xml.length + newPool.length - poolSize);
@@ -66,6 +82,109 @@ final class BinaryXmlPatcher {
         byte[] patched = out.toByteArray();
         put32(patched, 4, patched.length);
         return patched;
+    }
+
+    private static void patchScreenOrientation(byte[] xml, List<String> strings, boolean autoRotate)
+            throws IOException {
+        int attribute = findAndroidAttribute(xml, strings, "screenOrientation");
+        // SCREEN_ORIENTATION_SENSOR allows the generated app to follow device rotation; portrait stays the default.
+        setIntegerValue(xml, attribute, autoRotate ? 4 : 1);
+    }
+
+    private static void patchIntegerAttribute(byte[] xml, List<String> strings, String name, int value)
+            throws IOException {
+        if (value < 1) throw new IOException("Номер версии приложения должен быть положительным.");
+        int attribute = findAndroidAttribute(xml, strings, name);
+        setIntegerValue(xml, attribute, value);
+    }
+
+    private static void setIntegerValue(byte[] xml, int attribute, int value) {
+        xml[attribute + 8] = (byte) 0xff;
+        xml[attribute + 9] = (byte) 0xff;
+        xml[attribute + 10] = (byte) 0xff;
+        xml[attribute + 11] = (byte) 0xff;
+        xml[attribute + 12] = 8;
+        xml[attribute + 13] = 0;
+        xml[attribute + 14] = 0;
+        xml[attribute + 15] = 0x10;
+        put32(xml, attribute + 16, value);
+    }
+
+    static int readScreenOrientation(byte[] xml) throws IOException {
+        if (xml == null || xml.length < 8 || u16(xml, 0) != RES_XML_TYPE) {
+            throw new IOException("Некорректный бинарный AndroidManifest.xml");
+        }
+        int offset = u16(xml, 2);
+        while (offset + 8 <= xml.length) {
+            int type = u16(xml, offset);
+            int size = checkedInt(u32(xml, offset + 4), "размер XML-чанка");
+            if (size < 8 || offset + size > xml.length) throw new IOException("Повреждённый XML-чанк");
+            if (type == RES_STRING_POOL_TYPE) {
+                List<String> strings = readStringPool(xml, offset, size);
+                int attribute = findAndroidAttribute(xml, strings, "screenOrientation");
+                return checkedInt(u32(xml, attribute + 16), "screenOrientation");
+            }
+            offset += size;
+        }
+        throw new IOException("В манифесте не найдена таблица строк");
+    }
+
+    static int readVersionCode(byte[] xml) throws IOException {
+        int offset = u16(xml, 2);
+        while (offset + 8 <= xml.length) {
+            int type = u16(xml, offset);
+            int size = checkedInt(u32(xml, offset + 4), "размер XML-чанка");
+            if (size < 8 || offset + size > xml.length) throw new IOException("Повреждённый XML-чанк");
+            if (type == RES_STRING_POOL_TYPE) {
+                List<String> strings = readStringPool(xml, offset, size);
+                int attribute = findAndroidAttribute(xml, strings, "versionCode");
+                return checkedInt(u32(xml, attribute + 16), "versionCode");
+            }
+            offset += size;
+        }
+        throw new IOException("В манифесте не найдена таблица строк");
+    }
+
+    private static int findAndroidAttribute(byte[] xml, List<String> strings, String targetName)
+            throws IOException {
+        final String androidNamespace = "http://schemas.android.com/apk/res/android";
+        int offset = u16(xml, 2);
+        while (offset + 8 <= xml.length) {
+            int type = u16(xml, offset);
+            int size = checkedInt(u32(xml, offset + 4), "размер XML-чанка");
+            if (size < 8 || offset + size > xml.length) throw new IOException("Повреждённый XML-чанк");
+            if (type == 0x0102) { // RES_XML_START_ELEMENT_TYPE
+                int headerSize = u16(xml, offset + 2);
+                int extension = offset + 16;
+                if (headerSize < 36 || size < headerSize || extension + 20 > offset + size) {
+                    throw new IOException("Повреждённый XML-элемент AndroidManifest.xml");
+                }
+                int attributeStart = u16(xml, extension + 8);
+                int attributeSize = u16(xml, extension + 10);
+                int attributeCount = u16(xml, extension + 12);
+                long attributes = (long) extension + attributeStart;
+                if (attributeStart < 20 || attributeSize < 20
+                        || attributes + (long) attributeCount * attributeSize > offset + size) {
+                    throw new IOException("Повреждённый список атрибутов AndroidManifest.xml");
+                }
+                for (int index = 0; index < attributeCount; index++) {
+                    int attribute = (int) (attributes + (long) index * attributeSize);
+                    int namespaceIndex = (int) u32(xml, attribute);
+                    int nameIndex = (int) u32(xml, attribute + 4);
+                    if (namespaceIndex < 0 || namespaceIndex >= strings.size()
+                            || nameIndex < 0 || nameIndex >= strings.size()) continue;
+                    if (androidNamespace.equals(strings.get(namespaceIndex))
+                            && targetName.equals(strings.get(nameIndex))) {
+                        if (u16(xml, attribute + 12) < 8) {
+                            throw new IOException("Некорректное значение " + targetName);
+                        }
+                        return attribute;
+                    }
+                }
+            }
+            offset += size;
+        }
+        throw new IOException("В манифесте отсутствует android:" + targetName);
     }
 
     private static List<String> readStringPool(byte[] xml, int offset, int size) throws IOException {

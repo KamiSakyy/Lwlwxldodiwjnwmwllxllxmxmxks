@@ -2,6 +2,16 @@ plugins {
     id 'com.android.application'
 }
 
+def signingStorePath = System.getenv('WEBAPK_SIGNING_KEYSTORE_FILE')
+def signingStorePassword = System.getenv('WEBAPK_SIGNING_STORE_PASSWORD')
+def signingKeyAlias = System.getenv('WEBAPK_SIGNING_KEY_ALIAS')
+def signingKeyPassword = System.getenv('WEBAPK_SIGNING_KEY_PASSWORD')
+def hasPermanentReleaseKey = signingStorePath != null && signingStorePassword != null
+        && signingKeyAlias != null && signingKeyPassword != null
+def actionsRunNumber = System.getenv('GITHUB_RUN_NUMBER')
+def converterVersionCode = actionsRunNumber == null ? 1 : 1000 + actionsRunNumber.toInteger()
+def converterVersionName = actionsRunNumber == null ? '1.0' : "1.0.${actionsRunNumber}"
+
 android {
     namespace 'ru.webapk.studio'
     compileSdk 35
@@ -10,15 +20,27 @@ android {
         applicationId 'ru.webapk.studio'
         minSdk 23
         targetSdk 35
-        versionCode 1
-        versionName '1.0'
+        versionCode converterVersionCode
+        versionName converterVersionName
+    }
+
+    signingConfigs {
+        permanentRelease {
+            if (hasPermanentReleaseKey) {
+                storeFile file(signingStorePath)
+                storePassword signingStorePassword
+                keyAlias signingKeyAlias
+                keyPassword signingKeyPassword
+                storeType 'PKCS12'
+            }
+        }
     }
 
     buildTypes {
         release {
-            // The Actions artifact is a signed, installable APK. For a personal store release,
-            // replace this CI debug key with your own private signing configuration.
-            signingConfig signingConfigs.debug
+            // Locally falls back to the debug identity. GitHub uploads only when the private
+            // permanent keystore has been supplied through Actions secrets.
+            signingConfig hasPermanentReleaseKey ? signingConfigs.permanentRelease : signingConfigs.debug
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'

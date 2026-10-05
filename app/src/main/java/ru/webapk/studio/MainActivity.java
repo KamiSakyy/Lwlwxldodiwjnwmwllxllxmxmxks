@@ -5,10 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageDecoder;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,6 +23,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +37,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.zip.ZipEntry;
@@ -51,15 +48,22 @@ public final class MainActivity extends Activity {
     private static final int PICK_ZIP = 11;
     private static final int PICK_ICON = 12;
     private static final int SAVE_APK = 13;
+    private static final int SAVE_SIGNING_KEY = 14;
+    private static final int OPEN_SIGNING_KEY = 15;
     private static final int MAX_IMPORT_FILES = 10000;
     private static final ExecutorService IO = Executors.newSingleThreadExecutor();
-    private static final int BG = Color.rgb(244, 246, 251);
-    private static final int INK = Color.rgb(28, 35, 53);
-    private static final int MUTED = Color.rgb(106, 116, 137);
-    private static final int ACCENT = Color.rgb(88, 88, 225);
+    private static final int BG = Color.rgb(9, 10, 11);
+    private static final int SURFACE = Color.rgb(20, 21, 23);
+    private static final int OUTLINE = Color.rgb(45, 47, 51);
+    private static final int INK = Color.rgb(244, 245, 247);
+    private static final int MUTED = Color.rgb(139, 142, 149);
+    private static final int ACCENT = Color.rgb(212, 251, 88);
 
     private EditText appNameField;
     private EditText packageField;
+    private EditText versionCodeField;
+    private EditText signingPasswordField;
+    private Switch autoRotateSwitch;
     private TextView siteSummary;
     private TextView iconSummary;
     private TextView statusView;
@@ -69,6 +73,7 @@ public final class MainActivity extends Activity {
     private volatile File siteRoot;
     private volatile File iconFile;
     private volatile File generatedApk;
+    private char[] pendingSigningPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,12 +81,7 @@ public final class MainActivity extends Activity {
         Window window = getWindow();
         window.setStatusBarColor(BG);
         window.setNavigationBarColor(BG);
-        if (android.os.Build.VERSION.SDK_INT >= 26) {
-            window.getDecorView().setSystemUiVisibility(
-                    View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
-        } else {
-            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        }
+        window.getDecorView().setSystemUiVisibility(0);
         if (android.os.Build.VERSION.SDK_INT >= 30) window.setDecorFitsSystemWindows(false);
 
         if (savedInstanceState != null) {
@@ -109,6 +109,7 @@ public final class MainActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         scroll.setFillViewport(true);
         scroll.setBackgroundColor(BG);
+        scroll.setClipToPadding(false);
         scroll.setOnApplyWindowInsetsListener((view, insets) -> {
             view.setPadding(0, insets.getSystemWindowInsetTop(), 0, insets.getSystemWindowInsetBottom());
             return insets;
@@ -116,41 +117,33 @@ public final class MainActivity extends Activity {
 
         LinearLayout page = new LinearLayout(this);
         page.setOrientation(LinearLayout.VERTICAL);
-        page.setPadding(dp(18), dp(18), dp(18), dp(28));
+        page.setPadding(dp(18), dp(20), dp(18), dp(28));
         scroll.addView(page, new ScrollView.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         LinearLayout hero = new LinearLayout(this);
-        hero.setOrientation(LinearLayout.VERTICAL);
-        hero.setPadding(dp(22), dp(22), dp(22), dp(22));
-        hero.setBackground(roundDrawable(Color.rgb(39, 43, 105), 24, 0, Color.TRANSPARENT));
-        TextView tag = text("ОФЛАЙН · ANDROID", 11, Color.rgb(192, 196, 255), true);
-        tag.setLetterSpacing(0.12f);
-        hero.addView(tag);
-        TextView title = text("WEB  →  APK", 29, Color.WHITE, true);
-        LinearLayout.LayoutParams titleParams = paramsWrap();
-        titleParams.topMargin = dp(8);
-        hero.addView(title, titleParams);
-        TextView subtitle = text("Упакуйте сайт в настоящее устанавливаемое приложение", 14,
-                Color.rgb(224, 226, 255), false);
-        LinearLayout.LayoutParams subtitleParams = paramsWrap();
-        subtitleParams.topMargin = dp(6);
-        hero.addView(subtitle, subtitleParams);
+        hero.setGravity(Gravity.CENTER_VERTICAL);
+        hero.setPadding(dp(4), dp(8), dp(4), dp(14));
+        TextView monogram = text("W", 28, ACCENT, true);
+        hero.addView(monogram, new LinearLayout.LayoutParams(dp(42), ViewGroup.LayoutParams.WRAP_CONTENT));
+        TextView title = text("WEB  /  APK", 23, INK, true);
+        title.setLetterSpacing(0.04f);
+        hero.addView(title);
         page.addView(hero, matchWrap());
 
         LinearLayout sourceCard = card(page);
-        addCardHeading(sourceCard, "1. Исходники сайта", "Выберите один HTML-файл или ZIP с сайтом.");
+        addCardHeading(sourceCard, "ПРОЕКТ", null);
         LinearLayout choices = new LinearLayout(this);
         choices.setOrientation(LinearLayout.HORIZONTAL);
-        Button htmlButton = button("Выбрать HTML", false);
-        Button zipButton = button("Выбрать ZIP", true);
-        LinearLayout.LayoutParams half = new LinearLayout.LayoutParams(0, dp(50), 1f);
+        Button htmlButton = button("HTML", false);
+        Button zipButton = button("ZIP", true);
+        LinearLayout.LayoutParams half = new LinearLayout.LayoutParams(0, dp(48), 1f);
         choices.addView(htmlButton, half);
-        LinearLayout.LayoutParams halfRight = new LinearLayout.LayoutParams(0, dp(50), 1f);
-        halfRight.leftMargin = dp(10);
+        LinearLayout.LayoutParams halfRight = new LinearLayout.LayoutParams(0, dp(48), 1f);
+        halfRight.leftMargin = dp(9);
         choices.addView(zipButton, halfRight);
         sourceCard.addView(choices);
-        siteSummary = text("Файл ещё не выбран", 13, MUTED, false);
+        siteSummary = text("Нет проекта", 12, MUTED, false);
         LinearLayout.LayoutParams summaryParams = paramsWrap();
         summaryParams.topMargin = dp(11);
         sourceCard.addView(siteSummary, summaryParams);
@@ -158,92 +151,116 @@ public final class MainActivity extends Activity {
         zipButton.setOnClickListener(v -> openZipPicker());
 
         LinearLayout settingsCard = card(page);
-        addCardHeading(settingsCard, "2. Настройки приложения", "Название и уникальный идентификатор Android.");
-        addFieldLabel(settingsCard, "Название приложения");
+        addCardHeading(settingsCard, "ПРИЛОЖЕНИЕ", null);
         appNameField = editField("Мой сайт", 40, false);
+        appNameField.setHint("Название");
         settingsCard.addView(appNameField, fieldMargins());
-        addFieldLabel(settingsCard, "Идентификатор пакета");
         packageField = editField("com.example.mysite", 127, true);
+        packageField.setHint("com.example.mysite");
         packageField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
                 | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
         settingsCard.addView(packageField, fieldMargins());
-        TextView packageHint = text("Например: com.company.mysite · только строчные латинские буквы", 12, MUTED, false);
-        LinearLayout.LayoutParams hintParams = paramsWrap();
-        hintParams.topMargin = dp(7);
-        settingsCard.addView(packageHint, hintParams);
+        versionCodeField = editField("1", 10, false);
+        versionCodeField.setHint("Номер версии");
+        versionCodeField.setInputType(InputType.TYPE_CLASS_NUMBER);
+        int previousVersion = getPreferences(MODE_PRIVATE)
+                .getInt("target_version_" + packageField.getText().toString(), 0);
+        versionCodeField.setText(Integer.toString(previousVersion == Integer.MAX_VALUE
+                ? Integer.MAX_VALUE : Math.max(1, previousVersion + 1)));
+        settingsCard.addView(versionCodeField, fieldMargins());
+
+        autoRotateSwitch = new Switch(this);
+        autoRotateSwitch.setText("Автоповорот");
+        autoRotateSwitch.setTextSize(14);
+        autoRotateSwitch.setTextColor(INK);
+        autoRotateSwitch.setPadding(0, dp(4), 0, dp(4));
+        autoRotateSwitch.setChecked(getPreferences(MODE_PRIVATE).getBoolean("auto_rotate", false));
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            autoRotateSwitch.setThumbTintList(android.content.res.ColorStateList.valueOf(ACCENT));
+            autoRotateSwitch.setTrackTintList(android.content.res.ColorStateList.valueOf(Color.rgb(70, 73, 76)));
+        }
+        autoRotateSwitch.setOnCheckedChangeListener((button, checked) ->
+                getPreferences(MODE_PRIVATE).edit().putBoolean("auto_rotate", checked).apply());
+        settingsCard.addView(autoRotateSwitch, new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, dp(48)));
 
         LinearLayout iconCard = card(page);
-        addCardHeading(iconCard, "3. Иконка", "Своя картинка появится в списке приложений.");
+        addCardHeading(iconCard, "ИКОНКА", null);
         LinearLayout iconRow = new LinearLayout(this);
         iconRow.setGravity(Gravity.CENTER_VERTICAL);
         iconPreview = new ImageView(this);
         iconPreview.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        iconPreview.setBackground(roundDrawable(Color.rgb(237, 239, 249), 15, 1, Color.rgb(226, 229, 239)));
+        iconPreview.setBackground(roundDrawable(Color.rgb(29, 30, 33), 14, 1, OUTLINE));
         iconPreview.setPadding(dp(5), dp(5), dp(5), dp(5));
-        iconRow.addView(iconPreview, new LinearLayout.LayoutParams(dp(62), dp(62)));
+        iconRow.addView(iconPreview, new LinearLayout.LayoutParams(dp(58), dp(58)));
         LinearLayout iconDetails = new LinearLayout(this);
         iconDetails.setOrientation(LinearLayout.VERTICAL);
         LinearLayout.LayoutParams detailsParams = new LinearLayout.LayoutParams(0,
                 ViewGroup.LayoutParams.WRAP_CONTENT, 1f);
-        detailsParams.leftMargin = dp(13);
+        detailsParams.leftMargin = dp(12);
         iconRow.addView(iconDetails, detailsParams);
-        iconSummary = text("Стандартная иконка", 13, INK, true);
+        iconSummary = text("По умолчанию", 12, MUTED, false);
         iconDetails.addView(iconSummary);
-        Button iconButton = button("Выбрать изображение", true);
+        Button iconButton = button("Выбрать фото", true);
         LinearLayout.LayoutParams iconButtonParams = new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, dp(43));
-        iconButtonParams.topMargin = dp(8);
+                ViewGroup.LayoutParams.MATCH_PARENT, dp(40));
+        iconButtonParams.topMargin = dp(7);
         iconDetails.addView(iconButton, iconButtonParams);
         iconCard.addView(iconRow);
         iconButton.setOnClickListener(v -> openIconPicker());
 
-        LinearLayout noteCard = card(page);
-        addCardHeading(noteCard, "Полностью офлайн", "HTML, CSS, JavaScript и локальные файлы сайта попадут в APK.");
-        TextView note = text("Приложение использует системный WebView Android; SDK и интернет для сборки на телефоне не нужны. Сайт открывается локально. Внешние URL и CDN без сети работать не будут. Для сайта и создаваемого сайт-APK нет искусственного лимита размера: предел зависит от свободного места и ZIP32 (до ~4 ГБ).",
-                12, MUTED, false);
-        note.setLineSpacing(dp(3), 1f);
-        noteCard.addView(note);
+        LinearLayout signingCard = card(page);
+        addCardHeading(signingCard, "ПОДПИСЬ", null);
+        signingPasswordField = editField("", 128, false);
+        signingPasswordField.setHint("Пароль резервной копии");
+        signingPasswordField.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        LinearLayout.LayoutParams passwordParams = fieldMargins();
+        passwordParams.bottomMargin = dp(9);
+        signingCard.addView(signingPasswordField, passwordParams);
+        LinearLayout signingActions = new LinearLayout(this);
+        signingActions.setOrientation(LinearLayout.HORIZONTAL);
+        Button exportKeyButton = button("Экспорт ключа", true);
+        Button importKeyButton = button("Импорт ключа", true);
+        LinearLayout.LayoutParams keyAction = new LinearLayout.LayoutParams(0, dp(44), 1f);
+        signingActions.addView(exportKeyButton, keyAction);
+        LinearLayout.LayoutParams importAction = new LinearLayout.LayoutParams(0, dp(44), 1f);
+        importAction.leftMargin = dp(9);
+        signingActions.addView(importKeyButton, importAction);
+        signingCard.addView(signingActions);
+        exportKeyButton.setOnClickListener(v -> chooseSigningKeyExport());
+        importKeyButton.setOnClickListener(v -> chooseSigningKeyImport());
 
-        buildButton = button("СОБРАТЬ APK ОФЛАЙН", false);
+        buildButton = button("СОБРАТЬ APK", false);
         buildButton.setTextSize(15);
         buildButton.setTypeface(android.graphics.Typeface.DEFAULT, android.graphics.Typeface.BOLD);
         LinearLayout.LayoutParams buildParams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, dp(56));
-        buildParams.topMargin = dp(2);
+        buildParams.topMargin = dp(14);
         page.addView(buildButton, buildParams);
         buildButton.setOnClickListener(v -> buildApk());
 
-        saveButton = button("СОХРАНИТЬ APK…", true);
+        saveButton = button("СОХРАНИТЬ APK", true);
         LinearLayout.LayoutParams saveParams = new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, dp(52));
-        saveParams.topMargin = dp(10);
+                ViewGroup.LayoutParams.MATCH_PARENT, dp(50));
+        saveParams.topMargin = dp(9);
         page.addView(saveButton, saveParams);
         saveButton.setVisibility(View.GONE);
         saveButton.setOnClickListener(v -> chooseSaveLocation());
 
-        statusView = text("Готово к работе · интернет не требуется", 13, MUTED, false);
+        statusView = text("Готово", 12, MUTED, false);
         statusView.setGravity(Gravity.CENTER);
         LinearLayout.LayoutParams statusParams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        statusParams.topMargin = dp(14);
+        statusParams.topMargin = dp(15);
         page.addView(statusView, statusParams);
-
-        TextView footer = text("Локальная упаковка сайта · WebView · Android APK", 11,
-                Color.rgb(151, 158, 176), false);
-        footer.setGravity(Gravity.CENTER);
-        LinearLayout.LayoutParams footerParams = paramsWrap();
-        footerParams.topMargin = dp(14);
-        page.addView(footer, footerParams);
-
         return scroll;
     }
 
     private LinearLayout card(LinearLayout parent) {
         LinearLayout view = new LinearLayout(this);
         view.setOrientation(LinearLayout.VERTICAL);
-        view.setPadding(dp(17), dp(17), dp(17), dp(17));
-        view.setBackground(roundDrawable(Color.WHITE, 20, 1, Color.rgb(231, 234, 242)));
-        view.setElevation(dp(1));
+        view.setPadding(dp(16), dp(16), dp(16), dp(16));
+        view.setBackground(roundDrawable(SURFACE, 19, 1, OUTLINE));
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.topMargin = dp(13);
@@ -252,13 +269,17 @@ public final class MainActivity extends Activity {
     }
 
     private void addCardHeading(LinearLayout card, String heading, String helper) {
-        TextView title = text(heading, 16, INK, true);
-        card.addView(title, paramsWrap());
-        TextView subtitle = text(helper, 12, MUTED, false);
-        LinearLayout.LayoutParams params = paramsWrap();
-        params.topMargin = dp(5);
-        params.bottomMargin = dp(13);
-        card.addView(subtitle, params);
+        TextView title = text(heading, 11, MUTED, true);
+        title.setLetterSpacing(0.12f);
+        LinearLayout.LayoutParams titleParams = paramsWrap();
+        titleParams.bottomMargin = dp(helper == null || helper.isEmpty() ? 12 : 5);
+        card.addView(title, titleParams);
+        if (helper != null && !helper.isEmpty()) {
+            TextView subtitle = text(helper, 12, MUTED, false);
+            LinearLayout.LayoutParams params = paramsWrap();
+            params.bottomMargin = dp(13);
+            card.addView(subtitle, params);
+        }
     }
 
     private void addFieldLabel(LinearLayout parent, String label) {
@@ -275,9 +296,9 @@ public final class MainActivity extends Activity {
         edit.setText(value);
         edit.setTextSize(15);
         edit.setTextColor(INK);
-        edit.setHintTextColor(Color.rgb(159, 166, 181));
+        edit.setHintTextColor(Color.rgb(111, 114, 121));
         edit.setPadding(dp(13), dp(10), dp(13), dp(10));
-        edit.setBackground(roundDrawable(Color.rgb(249, 250, 253), 12, 1, Color.rgb(229, 232, 241)));
+        edit.setBackground(roundDrawable(Color.rgb(28, 29, 32), 12, 1, OUTLINE));
         edit.setFilters(new InputFilter[]{new InputFilter.LengthFilter(maxLength)});
         if (packageInput) {
             edit.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
@@ -299,12 +320,12 @@ public final class MainActivity extends Activity {
         button.setAllCaps(false);
         button.setTextSize(13);
         button.setTypeface(android.graphics.Typeface.DEFAULT, android.graphics.Typeface.BOLD);
-        button.setTextColor(secondary ? ACCENT : Color.WHITE);
+        button.setTextColor(secondary ? INK : BG);
         button.setPadding(dp(10), 0, dp(10), 0);
         button.setMinHeight(0);
         button.setMinimumHeight(0);
-        button.setBackground(roundDrawable(secondary ? Color.WHITE : ACCENT, 14,
-                secondary ? 1 : 0, secondary ? Color.rgb(218, 220, 250) : ACCENT));
+        button.setBackground(roundDrawable(secondary ? Color.rgb(29, 30, 33) : ACCENT, 14,
+                secondary ? 1 : 0, secondary ? OUTLINE : ACCENT));
         return button;
     }
 
@@ -376,6 +397,26 @@ public final class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == SAVE_SIGNING_KEY || requestCode == OPEN_SIGNING_KEY) {
+            char[] password = pendingSigningPassword;
+            pendingSigningPassword = null;
+            if (resultCode != RESULT_OK || data == null) {
+                if (password != null) java.util.Arrays.fill(password, Character.MIN_VALUE);
+                return;
+            }
+            Uri keyUri = data.getData();
+            if (keyUri == null && data.getClipData() != null && data.getClipData().getItemCount() > 0) {
+                keyUri = data.getClipData().getItemAt(0).getUri();
+            }
+            if (keyUri == null || password == null) {
+                if (password != null) java.util.Arrays.fill(password, Character.MIN_VALUE);
+                showFailure("Не удалось получить файл ключа.");
+                return;
+            }
+            if (requestCode == SAVE_SIGNING_KEY) exportSigningKey(keyUri, password);
+            else importSigningKey(keyUri, password);
+            return;
+        }
         if (resultCode != RESULT_OK || data == null) return;
         Uri uri = data.getData();
         if (uri == null && data.getClipData() != null && data.getClipData().getItemCount() > 0) {
@@ -614,20 +655,43 @@ public final class MainActivity extends Activity {
             packageField.requestFocus();
             return;
         }
+        int requestedVersion;
+        try {
+            requestedVersion = Integer.parseInt(versionCodeField.getText().toString().trim());
+            if (requestedVersion < 1) throw new NumberFormatException();
+        } catch (NumberFormatException invalidVersion) {
+            versionCodeField.setError("Укажите положительный номер версии");
+            versionCodeField.requestFocus();
+            return;
+        }
+        String versionPreference = "target_version_" + packageName;
+        int previousVersion = getPreferences(MODE_PRIVATE).getInt(versionPreference, 0);
+        if (previousVersion == Integer.MAX_VALUE) {
+            versionCodeField.setError("Достигнут предел номера версии");
+            return;
+        }
+        final int versionCode = Math.max(requestedVersion, previousVersion + 1);
+        versionCodeField.setText(Integer.toString(versionCode));
         File selectedIcon = iconFile;
+        boolean autoRotate = autoRotateSwitch != null && autoRotateSwitch.isChecked();
         generatedApk = null;
         saveButton.setVisibility(View.GONE);
         setStatus("Создаю и подписываю APK…", true);
         buildButton.setEnabled(false);
         IO.execute(() -> {
             try {
-                File apk = ApkBuilder.build(this, selectedSite, packageName, appName, selectedIcon);
+                File apk = ApkBuilder.build(this, selectedSite, packageName, appName, selectedIcon,
+                        autoRotate, versionCode);
                 generatedApk = apk;
                 runOnUiThread(() -> {
+                    getPreferences(MODE_PRIVATE).edit().putInt(versionPreference, versionCode).apply();
+                    if (versionCode < Integer.MAX_VALUE) {
+                        versionCodeField.setText(Integer.toString(versionCode + 1));
+                    }
                     buildButton.setEnabled(true);
                     saveButton.setVisibility(View.VISIBLE);
                     setStatus("APK готов · " + ApkBuilder.formatBytes(apk.length())
-                            + " · подписан локальным ключом", false);
+                            + " · постоянная подпись", false);
                     Toast.makeText(this, "Настоящий APK создан офлайн", Toast.LENGTH_SHORT).show();
                 });
             } catch (Exception error) {
@@ -675,6 +739,99 @@ public final class MainActivity extends Activity {
                 showFailure("Не удалось сохранить APK: " + error.getMessage());
             }
         });
+    }
+
+    private char[] readSigningBackupPassword() {
+        char[] password = signingPasswordField.getText().toString().toCharArray();
+        signingPasswordField.setText("");
+        if (password.length < 8 || password.length > 128) {
+            java.util.Arrays.fill(password, Character.MIN_VALUE);
+            signingPasswordField.setError("Введите пароль длиной 8–128 символов");
+            signingPasswordField.requestFocus();
+            return null;
+        }
+        hideKeyboard();
+        return password;
+    }
+
+    private void chooseSigningKeyExport() {
+        char[] password = readSigningBackupPassword();
+        if (password == null) return;
+        pendingSigningPassword = password;
+        Intent intent = new Intent(Intent.ACTION_CREATE_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("application/octet-stream");
+        intent.putExtra(Intent.EXTRA_TITLE, "WebAPK-signing-key.wapkkey");
+        try {
+            startActivityForResult(intent, SAVE_SIGNING_KEY);
+        } catch (Exception error) {
+            clearPendingSigningPassword();
+            showFailure("Не удалось открыть выбор места сохранения ключа.");
+        }
+    }
+
+    private void chooseSigningKeyImport() {
+        char[] password = readSigningBackupPassword();
+        if (password == null) return;
+        pendingSigningPassword = password;
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        intent.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"application/octet-stream", "application/x-webapk-key"});
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        try {
+            startActivityForResult(intent, OPEN_SIGNING_KEY);
+        } catch (Exception error) {
+            clearPendingSigningPassword();
+            showFailure("Не удалось открыть выбор файла ключа.");
+        }
+    }
+
+    private void exportSigningKey(Uri destination, char[] password) {
+        setStatus("Экспортирую ключ…", true);
+        IO.execute(() -> {
+            try {
+                OutputStream opened = getContentResolver().openOutputStream(destination, "wt");
+                if (opened == null) throw new IOException("Не удалось открыть файл для сохранения.");
+                try (OutputStream output = new BufferedOutputStream(opened)) {
+                    JarV1Signer.exportSigningIdentity(getFilesDir(), output, password);
+                }
+                runOnUiThread(() -> setStatus("Ключ подписи сохранён", false));
+            } catch (Exception error) {
+                showFailure("Не удалось экспортировать ключ: " + error.getMessage());
+            } finally {
+                java.util.Arrays.fill(password, Character.MIN_VALUE);
+            }
+        });
+    }
+
+    private void importSigningKey(Uri source, char[] password) {
+        setStatus("Восстанавливаю ключ…", true);
+        IO.execute(() -> {
+            try {
+                InputStream opened = getContentResolver().openInputStream(source);
+                if (opened == null) throw new IOException("Не удалось открыть файл ключа.");
+                try (InputStream input = new BufferedInputStream(opened)) {
+                    JarV1Signer.importSigningIdentity(getFilesDir(), input, password);
+                }
+                generatedApk = null;
+                runOnUiThread(() -> {
+                    saveButton.setVisibility(View.GONE);
+                    setStatus("Ключ восстановлен", false);
+                });
+            } catch (Exception error) {
+                showFailure("Не удалось восстановить ключ: " + error.getMessage());
+            } finally {
+                java.util.Arrays.fill(password, Character.MIN_VALUE);
+            }
+        });
+    }
+
+    private void clearPendingSigningPassword() {
+        if (pendingSigningPassword != null) {
+            java.util.Arrays.fill(pendingSigningPassword, Character.MIN_VALUE);
+            pendingSigningPassword = null;
+        }
     }
 
     private void refreshImportedFiles() {
