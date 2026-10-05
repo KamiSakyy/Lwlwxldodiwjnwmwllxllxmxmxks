@@ -83,7 +83,22 @@ if g2 != g:
 else:
     print("Версия уже обновлена или не найдена — проверьте вручную.")
 
-# ---------- 3. Маркер ----------
+# ---------- 3. Санитизация ресурсов: удаляем мусорные имена с '$' ----------
+import glob
+res_dir = os.path.join(proj, "app", "src", "main", "res")
+removed = 0
+if os.path.isdir(res_dir):
+    for root, dirs, files in os.walk(res_dir):
+        for fn in files:
+            if "$" in fn:
+                try:
+                    os.remove(os.path.join(root, fn))
+                    removed += 1
+                except OSError:
+                    pass
+print(f"Удалено мусорных ресурсных файлов с '$' в имени: {removed}")
+
+# ---------- 4. Маркер ----------
 marker = os.path.join(proj, "FIXES-APPLIED.txt")
 with open(marker, "w", encoding="utf-8") as f:
     f.write("GitHub-RU v2 — фикс нагрева применён\n")
@@ -92,4 +107,5 @@ with open(marker, "w", encoding="utf-8") as f:
     for name, val in FLAGS:
         f.write(f"  meta-data {name} = {val}\n")
     f.write("  versionCode 926, versionName 1.257.0-ru2\n")
+    f.write(f"  удалено мусорных res-файлов с '$': {removed}\n")
 print("Готово: fix_heat применён.")
