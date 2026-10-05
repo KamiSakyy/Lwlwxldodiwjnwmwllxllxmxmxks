@@ -15,4 +15,7 @@ public final class h1 {
         k71.k.g(str2, "subIssueId");
         return b31.b.J(((z01.h0) this.a.a(jVar)).n(str, str2), jVar, cVar);
     }
+
+    public h1(Object... a) {
+    }
 }

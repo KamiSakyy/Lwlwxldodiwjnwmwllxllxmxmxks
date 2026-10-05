@@ -47,4 +47,7 @@ public final class d2 {
         public IssueOrPullRequest$ReviewerReviewState() {
         }
     }
+
+    public d2(Object... a) {
+    }
 }

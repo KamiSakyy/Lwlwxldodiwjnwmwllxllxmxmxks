@@ -8,4 +8,7 @@ public final class u {
         k71.k.g(gVar, "capabilityService");
         this.a = gVar;
     }
+
+    public u(Object... a) {
+    }
 }

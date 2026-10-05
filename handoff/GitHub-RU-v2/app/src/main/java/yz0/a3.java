@@ -30,4 +30,7 @@ public final class a3 {
     public final String toString() {
         return "NotificationFilters(inboxCount=" + this.a + ", customFilters=" + this.b + ")";
     }
+
+    public a3(Object... a) {
+    }
 }

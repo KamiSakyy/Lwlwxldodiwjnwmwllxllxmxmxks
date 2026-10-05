@@ -30,4 +30,7 @@ public final class i4 {
     public final String toString() {
         return "SavedReplyPaged(replies=" + this.a + ", page=" + this.b + ")";
     }
+
+    public i4(Object... a) {
+    }
 }

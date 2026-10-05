@@ -13,4 +13,7 @@ public final class r0 {
         k71.k.g(str, "pullRequestId");
         return b31.b.J(((z01.t0) this.a.a(jVar)).n(str), jVar, cVar);
     }
+
+    public r0(Object... a) {
+    }
 }

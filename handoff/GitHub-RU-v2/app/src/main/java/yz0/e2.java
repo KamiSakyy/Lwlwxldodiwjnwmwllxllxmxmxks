@@ -66,4 +66,7 @@ public final class e2 {
         public IssueOrPullRequest$ReviewerReviewState() {
         }
     }
+
+    public e2(Object... a) {
+    }
 }

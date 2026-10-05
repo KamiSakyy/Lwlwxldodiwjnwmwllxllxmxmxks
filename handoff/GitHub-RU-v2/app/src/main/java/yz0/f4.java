@@ -28,4 +28,7 @@ public final class f4 {
     public final String toString() {
         return com.github.rudroid.m0.f("ReversedPage(hasPreviousPage=", ", startCursor=", this.b, ")", this.a);
     }
+
+    public f4(Object... a) {
+    }
 }

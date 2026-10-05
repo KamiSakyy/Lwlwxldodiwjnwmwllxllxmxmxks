@@ -13,4 +13,7 @@ public final class g0 {
         k71.k.g(str, "query");
         return b31.b.J(((z01.h0) this.a.a(jVar)).i(str, str2, str3), jVar, cVar);
     }
+
+    public g0(Object... a) {
+    }
 }

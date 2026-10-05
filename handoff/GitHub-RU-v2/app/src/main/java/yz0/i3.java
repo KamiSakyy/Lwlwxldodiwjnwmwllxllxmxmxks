@@ -5,4 +5,7 @@ public interface i3 {
     String d();
 
     String getName();
+
+    public i3(Object... a) {
+    }
 }

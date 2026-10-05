@@ -48,4 +48,7 @@ public final class r3 implements q3 {
     public final String toString() {
         return "Reaction(content=" + this.a + ", subjectId=" + this.b + ", usersTotalCount=" + this.c + ", viewerHasReacted=" + this.d + ")";
     }
+
+    public r3(Object... a) {
+    }
 }

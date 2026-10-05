@@ -14,4 +14,7 @@ public final class z {
         k71.k.g(str2, "repo");
         return b31.b.J(((z01.d1) this.a.a(jVar)).b(i, str, str2, str3, str4), jVar, cVar);
     }
+
+    public z(Object... a) {
+    }
 }

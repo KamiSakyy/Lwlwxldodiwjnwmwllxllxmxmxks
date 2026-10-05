@@ -23,4 +23,7 @@ public final class b2 {
         k71.k.g(str, "id");
         return b31.b.J(((z01.t0) b2Var.a.a(jVar)).k(str, pullRequestUpdateState, str2, (ArrayList) null), jVar, cVar);
     }
+
+    public b2(Object... a) {
+    }
 }

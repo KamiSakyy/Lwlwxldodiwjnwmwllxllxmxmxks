@@ -36,4 +36,7 @@ public final class f implements aa.a {
         List list = ud0.b.a;
         ud0.b.d(fVar, wVar, bVar.b);
     }
+
+    public f(Object... a) {
+    }
 }

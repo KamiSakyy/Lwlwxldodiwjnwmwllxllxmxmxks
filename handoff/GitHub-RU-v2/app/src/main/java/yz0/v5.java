@@ -47,4 +47,7 @@ public final class v5 extends s7 {
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
     }
+
+    public v5(Object... a) {
+    }
 }

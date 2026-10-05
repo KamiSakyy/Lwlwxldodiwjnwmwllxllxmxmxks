@@ -20,4 +20,7 @@ public final class r1 extends c71.c {
         this.z |= Integer.MIN_VALUE;
         return this.y.a(null, null, null, null, null, this);
     }
+
+    public r1(Object... a) {
+    }
 }

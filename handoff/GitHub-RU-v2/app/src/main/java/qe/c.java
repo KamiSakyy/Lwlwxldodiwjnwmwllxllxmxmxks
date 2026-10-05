@@ -6,4 +6,7 @@ public final class c implements p61.d {
         new a(null);
         throw null;
     }
+
+    public c(Object... a) {
+    }
 }

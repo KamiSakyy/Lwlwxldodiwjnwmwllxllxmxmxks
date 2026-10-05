@@ -14,4 +14,7 @@ public final class g3 implements i3 {
     public final String getName() {
         return null;
     }
+
+    public g3(Object... a) {
+    }
 }

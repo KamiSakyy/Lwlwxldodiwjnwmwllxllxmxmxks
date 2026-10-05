@@ -93,4 +93,7 @@ public abstract class k {
         tg0.Companion.getClass();
         a = l.r(new m[]{mVar15, mVar16, mVar17, mVar18, mVar19, new m("workflow", l0.b(tg0.e), (String) null, rVar, rVar, r), new m("checkSuite", l0.b(h4.f), (String) null, rVar, rVar, r8), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
     }
+
+    public k(Object... a) {
+    }
 }

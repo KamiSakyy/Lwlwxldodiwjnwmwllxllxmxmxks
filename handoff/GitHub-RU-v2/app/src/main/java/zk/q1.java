@@ -56,4 +56,7 @@ public final class q1 {
         }
         return b31.b.J((y71.i) obj2, jVar, cVar);
     }
+
+    public q1(Object... a) {
+    }
 }

@@ -83,4 +83,7 @@ public final class a implements com.github.rudroid.common.e {
         k.g(iVar, "message");
         this.f31048a.add(iVar.a());
     }
+
+    public a(Object... a) {
+    }
 }

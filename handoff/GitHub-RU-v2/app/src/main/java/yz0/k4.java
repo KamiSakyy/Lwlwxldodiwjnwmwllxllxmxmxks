@@ -30,4 +30,7 @@ public final class k4 {
     public final String toString() {
         return "SimpleRepositoriesPaged(repositories=" + this.a + ", page=" + this.b + ")";
     }
+
+    public k4(Object... a) {
+    }
 }

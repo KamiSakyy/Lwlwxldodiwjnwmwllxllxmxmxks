@@ -322,4 +322,7 @@ public final class i2 {
         o.append(", copilotSuggestedAsAssignee=");
         return jo.f4.s(o, this.u0, ")");
     }
+
+    public i2(Object... a) {
+    }
 }

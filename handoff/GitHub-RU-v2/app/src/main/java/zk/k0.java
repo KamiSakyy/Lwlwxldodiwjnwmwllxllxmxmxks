@@ -8,4 +8,7 @@ public final class k0 {
         k71.k.g(gVar, "issueOrPullRequestService");
         this.a = gVar;
     }
+
+    public k0(Object... a) {
+    }
 }

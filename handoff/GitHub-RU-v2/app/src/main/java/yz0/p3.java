@@ -35,4 +35,7 @@ public final class p3 {
     public final String toString() {
         return "PushNotificationSchedules(day=" + this.a + ", startTime=" + this.b + ", endTime=" + this.c + ", id=" + this.d + ")";
     }
+
+    public p3(Object... a) {
+    }
 }

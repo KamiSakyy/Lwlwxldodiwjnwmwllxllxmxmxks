@@ -30,4 +30,7 @@ public final class f5 extends k5 {
         k71.k.g(parcel, "dest");
         parcel.writeInt(1);
     }
+
+    public f5(Object... a) {
+    }
 }

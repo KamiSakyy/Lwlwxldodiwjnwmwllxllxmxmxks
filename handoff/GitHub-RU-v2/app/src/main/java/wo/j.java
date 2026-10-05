@@ -39,4 +39,7 @@ public abstract class j {
         ch0.Companion.getClass();
         a = l.r(new m[]{mVar3, new m("nodes", l0.a(ch0.b), (String) null, rVar, rVar, r2)});
     }
+
+    public j(Object... a) {
+    }
 }

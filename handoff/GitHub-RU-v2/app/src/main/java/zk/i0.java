@@ -14,4 +14,7 @@ public final class i0 {
         gVar.getClass();
         return b31.b.J(in.r.l(new y71.y(((z01.f0) gVar.a.a(jVar)).m(str, str2, i, str3, b0Var), new a0.i(b0Var, gVar, jVar, str, str2, i, (a71.c) null), 6)), jVar, cVar);
     }
+
+    public i0(Object... a) {
+    }
 }

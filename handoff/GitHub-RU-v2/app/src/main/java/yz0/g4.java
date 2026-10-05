@@ -48,4 +48,7 @@ public final class g4 {
         t.append(")");
         return t.toString();
     }
+
+    public g4(Object... a) {
+    }
 }

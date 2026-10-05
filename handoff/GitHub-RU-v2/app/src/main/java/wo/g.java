@@ -37,4 +37,7 @@ public abstract class g {
         mr.Companion.getClass();
         a = l.r(new m[]{mVar2, new m("pageInfo", l0.b(mr.a), (String) null, rVar, rVar, r2)});
     }
+
+    public g(Object... a) {
+    }
 }

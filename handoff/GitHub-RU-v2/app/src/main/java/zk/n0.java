@@ -11,4 +11,7 @@ public final class n0 {
         this.a = gVar;
         this.b = aVar;
     }
+
+    public n0(Object... a) {
+    }
 }

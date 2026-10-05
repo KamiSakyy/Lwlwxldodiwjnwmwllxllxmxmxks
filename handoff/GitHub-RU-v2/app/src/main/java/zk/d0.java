@@ -15,4 +15,7 @@ public final class d0 {
         k71.k.g(str3, "url");
         return b31.b.J(((z01.f0) this.a.a(jVar)).o(i, str, str2, str3), jVar, cVar);
     }
+
+    public d0(Object... a) {
+    }
 }

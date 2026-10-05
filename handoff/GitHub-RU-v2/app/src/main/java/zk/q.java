@@ -14,4 +14,7 @@ public final class q {
         k71.k.g(str2, "title");
         return b31.b.J(((z01.t0) this.a.a(jVar)).a(str, str2), jVar, cVar);
     }
+
+    public q(Object... a) {
+    }
 }

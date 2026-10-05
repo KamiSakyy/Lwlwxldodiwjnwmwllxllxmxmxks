@@ -6,4 +6,7 @@ public final class f2 extends sy.e0 {
     public static final f2 b = new f2();
     public static final f2 c = new f2();
     public static final f2 d = new f2();
+
+    public f2(Object... a) {
+    }
 }

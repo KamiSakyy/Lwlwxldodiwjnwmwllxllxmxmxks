@@ -42,4 +42,7 @@ public final class c2 {
     public final String toString() {
         return x.i.g("RefNames(baseRefName=", this.a, ", headRefName=", this.b, ")");
     }
+
+    public c2(Object... a) {
+    }
 }

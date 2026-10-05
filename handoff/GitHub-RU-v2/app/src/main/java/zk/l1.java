@@ -13,4 +13,7 @@ public final class l1 {
         k71.k.g(str, "threadId");
         return b31.b.J(((z01.f) this.a.a(jVar)).a(str), jVar, cVar);
     }
+
+    public l1(Object... a) {
+    }
 }

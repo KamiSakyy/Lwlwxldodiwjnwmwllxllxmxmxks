@@ -46,4 +46,7 @@ public final class s2 implements Parcelable {
         parcel.writeString(this.r);
         parcel.writeString(this.s);
     }
+
+    public s2(Object... a) {
+    }
 }

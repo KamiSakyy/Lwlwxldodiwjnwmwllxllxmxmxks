@@ -40,4 +40,7 @@ public final class d3 implements i3 {
     public final String toString() {
         return x.i.g("Repository(login=", this.a, ", name=", this.b, ")");
     }
+
+    public d3(Object... a) {
+    }
 }

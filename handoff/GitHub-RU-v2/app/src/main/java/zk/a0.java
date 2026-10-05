@@ -13,4 +13,7 @@ public final class a0 {
         k71.k.g(str, "login");
         return b31.b.J(((z01.d1) this.a.a(jVar)).a(str, str2, str3), jVar, cVar);
     }
+
+    public a0(Object... a) {
+    }
 }

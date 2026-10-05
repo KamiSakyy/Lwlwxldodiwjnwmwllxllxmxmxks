@@ -83,4 +83,7 @@ public final class l3 {
         public IssueOrPullRequest$ReviewerReviewState() {
         }
     }
+
+    public l3(Object... a) {
+    }
 }

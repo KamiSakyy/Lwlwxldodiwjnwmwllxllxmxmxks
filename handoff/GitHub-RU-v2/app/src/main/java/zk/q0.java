@@ -8,4 +8,7 @@ public final class q0 {
         k71.k.g(gVar, "reviewService");
         this.a = gVar;
     }
+
+    public q0(Object... a) {
+    }
 }

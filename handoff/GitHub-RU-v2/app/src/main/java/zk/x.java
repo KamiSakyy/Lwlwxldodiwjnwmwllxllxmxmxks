@@ -8,4 +8,7 @@ public final class x {
         k71.k.g(gVar, "mergeService");
         this.a = gVar;
     }
+
+    public x(Object... a) {
+    }
 }

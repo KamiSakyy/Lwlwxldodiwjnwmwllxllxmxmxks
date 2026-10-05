@@ -15,4 +15,7 @@ public interface o2 extends Parcelable {
     String getTitle();
 
     String m();
+
+    public o2(Object... a) {
+    }
 }

@@ -69,4 +69,7 @@ public final class s6 extends s7 {
         public TimelineItem$LinkedItemConnectorType() {
         }
     }
+
+    public s6(Object... a) {
+    }
 }

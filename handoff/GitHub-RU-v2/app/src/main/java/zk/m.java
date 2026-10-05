@@ -63,4 +63,7 @@ public final class m {
         oa.j jVar22 = jVar;
         return b31.b.J(new y71.y((y71.i) obj2, new an.g(this, jVar22, str, str3, (a71.c) null, 14), 6), jVar22, cVar);
     }
+
+    public m(Object... a) {
+    }
 }

@@ -38,4 +38,7 @@ public final class u2 {
     public final String toString() {
         return "MergePullRequest(state=" + this.a + ", mergeEvent=" + this.b + ", viewerCanDeleteHeadRef=" + this.c + ", committedDate=" + this.d + ")";
     }
+
+    public u2(Object... a) {
+    }
 }

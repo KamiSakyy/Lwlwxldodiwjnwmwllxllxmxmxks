@@ -38,4 +38,7 @@ public final class l2 implements Parcelable {
         k71.k.g(parcel, "dest");
         parcel.writeString(this.r);
     }
+
+    public l2(Object... a) {
+    }
 }

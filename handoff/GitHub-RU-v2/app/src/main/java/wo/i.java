@@ -38,4 +38,7 @@ public abstract class i {
         ah.Companion.getClass();
         a = l.r(new m[]{mVar4, new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
     }
+
+    public i(Object... a) {
+    }
 }

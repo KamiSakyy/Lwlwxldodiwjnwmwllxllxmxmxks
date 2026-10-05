@@ -15,4 +15,7 @@ public final class v {
         k71.k.g(str2, "repoName");
         return b31.b.J(((z01.t0) this.a.a(jVar)).g(str, i, str2), jVar, cVar);
     }
+
+    public v(Object... a) {
+    }
 }

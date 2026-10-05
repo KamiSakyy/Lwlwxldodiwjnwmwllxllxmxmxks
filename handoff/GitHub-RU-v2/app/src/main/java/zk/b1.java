@@ -18,4 +18,7 @@ public final class b1 {
         k71.k.g(str, "id");
         return new y71.y(b31.b.J(this.a.a(jVar, str, list, x61.r.r, list2, true, cVar), jVar, cVar), new an.d(this, jVar, str, list, null, 13), 6);
     }
+
+    public b1(Object... a) {
+    }
 }

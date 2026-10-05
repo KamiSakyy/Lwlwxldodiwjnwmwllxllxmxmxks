@@ -44,4 +44,7 @@ public final class y2 {
         sb.append(", startLineType=");
         return x.i.k(sb, this.c, ", endLineType=", this.d, ")");
     }
+
+    public y2(Object... a) {
+    }
 }

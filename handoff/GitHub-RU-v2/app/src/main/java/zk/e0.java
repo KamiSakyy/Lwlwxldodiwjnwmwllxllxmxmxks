@@ -8,4 +8,7 @@ public final class e0 {
         k71.k.g(cVar, "dashboardNavLinksRepository");
         this.a = cVar;
     }
+
+    public e0(Object... a) {
+    }
 }

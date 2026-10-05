@@ -44,4 +44,7 @@ public abstract class h {
         tg0.Companion.getClass();
         a = l.r(new m[]{mVar4, mVar5, mVar6, new m("runs", b2, (String) null, rVar, no.a.s(tg0.d, new u0(1)), r2), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
     }
+
+    public h(Object... a) {
+    }
 }

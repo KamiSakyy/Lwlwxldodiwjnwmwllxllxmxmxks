@@ -30,4 +30,7 @@ public final class q2 implements q3 {
     public final String toString() {
         return f1.e.z("MarkAsAnswer(commentId=", this.a, ")");
     }
+
+    public q2(Object... a) {
+    }
 }

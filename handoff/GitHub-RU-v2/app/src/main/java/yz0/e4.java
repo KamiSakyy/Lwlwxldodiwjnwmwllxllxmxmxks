@@ -31,4 +31,7 @@ public final class e4 {
     public final String toString() {
         return "RepositoryIssuesPaged(repositoryName=" + this.a + ", repositoryIssues=" + this.b + ", page=" + this.c + ")";
     }
+
+    public e4(Object... a) {
+    }
 }

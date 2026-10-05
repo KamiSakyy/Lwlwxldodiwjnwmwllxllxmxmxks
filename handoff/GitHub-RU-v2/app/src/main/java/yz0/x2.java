@@ -51,4 +51,7 @@ public final class x2 {
         u.append(")");
         return u.toString();
     }
+
+    public x2(Object... a) {
+    }
 }

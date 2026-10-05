@@ -24,4 +24,7 @@ public class ValidationException extends IllegalArgumentException {
         }
         return this;
     }
+
+    public ValidationException(Object... a) {
+    }
 }
