@@ -75,7 +75,7 @@ class StudioComposeUi(private val activity: MainActivity) {
     private var autoRotate by mutableStateOf(
         activity.getPreferences(Context.MODE_PRIVATE).getBoolean("auto_rotate", false)
     )
-    private var projectSummary by mutableStateOf("Файл ещё не выбран")
+    private var projectSummaryState by mutableStateOf("Файл ещё не выбран")
     private var iconSummary by mutableStateOf("Иконка по умолчанию")
     private var iconBitmap by mutableStateOf<Bitmap?>(
         BitmapFactory.decodeResource(activity.resources, R.mipmap.ic_launcher)
@@ -83,8 +83,8 @@ class StudioComposeUi(private val activity: MainActivity) {
     private var statusMessage by mutableStateOf("")
     private var isBusy by mutableStateOf(false)
     private var canSave by mutableStateOf(false)
-    private var packageError by mutableStateOf<String?>(null)
-    private var versionError by mutableStateOf<String?>(null)
+    private var packageErrorState by mutableStateOf<String?>(null)
+    private var versionErrorState by mutableStateOf<String?>(null)
 
     fun install(view: ComposeView) {
         view.setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
@@ -118,7 +118,7 @@ class StudioComposeUi(private val activity: MainActivity) {
     }
 
     fun setProjectSummary(value: String) {
-        projectSummary = value
+        projectSummaryState = value
     }
 
     fun setIcon(bitmap: Bitmap?, summary: String) {
@@ -136,11 +136,11 @@ class StudioComposeUi(private val activity: MainActivity) {
     }
 
     fun setPackageError(message: String?) {
-        packageError = message
+        packageErrorState = message
     }
 
     fun setVersionError(message: String?) {
-        versionError = message
+        versionErrorState = message
     }
 
     @Composable
@@ -162,7 +162,7 @@ class StudioComposeUi(private val activity: MainActivity) {
                 ) {
                     SectionCard(title = "Проект", subtitle = "Выберите HTML-файл или ZIP-архив сайта.") {
                         androidx.compose.material3.Text(
-                            text = projectSummary,
+                            text = projectSummaryState,
                             color = Muted,
                             fontSize = 13.sp,
                             lineHeight = 18.sp
@@ -209,16 +209,16 @@ class StudioComposeUi(private val activity: MainActivity) {
                             value = packageId,
                             onValueChange = {
                                 packageId = it.take(127)
-                                packageError = null
+                                packageErrorState = null
                             },
                             placeholder = "com.company.mysite",
                             keyboardType = KeyboardType.Ascii,
-                            isError = packageError != null,
+                            isError = packageErrorState != null,
                             monospace = true
                         )
-                        if (packageError != null) {
+                        if (packageErrorState != null) {
                             androidx.compose.material3.Text(
-                                text = packageError.orEmpty(),
+                                text = packageErrorState.orEmpty(),
                                 color = Error,
                                 fontSize = 12.sp,
                                 modifier = Modifier.padding(start = 12.dp, top = 4.dp)
@@ -233,10 +233,10 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 FieldLabel("Версия")
                                 CompactVersionField(
                                     value = versionCode,
-                                    isError = versionError != null,
+                                    isError = versionErrorState != null,
                                     onValueChange = {
                                         versionCode = it.take(10).filter(Char::isDigit)
-                                        versionError = null
+                                        versionErrorState = null
                                     }
                                 )
                             }
@@ -265,9 +265,9 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 }
                             }
                         }
-                        if (versionError != null) {
+                        if (versionErrorState != null) {
                             androidx.compose.material3.Text(
-                                text = versionError.orEmpty(),
+                                text = versionErrorState.orEmpty(),
                                 color = Error,
                                 fontSize = 12.sp,
                                 modifier = Modifier.padding(start = 4.dp, top = 3.dp)
