@@ -57,10 +57,14 @@ jobs:
           PROJ="${{ env.PROJ }}"
           SRC="$PROJ/app/src/main/java"
           mkdir -p handoff/restoration
+          CYCLE=handoff/restoration/cycle-log.txt
+          echo "Цикл восстановления $(date -u)" > "$CYCLE"
           PREV=999999999
-          for R in 1 2 3 4 5 6 7 8; do
-            echo "=========== РАУНД $R ==========="
-            python3 tools/cleanup_nested_stubs.py "$SRC" || true
+          NOSPIN=0
+          for R in 1 2 3 4 5 6 7 8 9 10; do
+            echo "=========== РАУНД $R ===========" | tee -a "$CYCLE"
+            python3 tools/cleanup_nested_stubs.py "$SRC" 2>&1 | tee -a "$CYCLE" || true
+            python3 tools/fix_nested_duplicates.py "$SRC" 2>&1 | tee -a "$CYCLE" || true
             python3 tools/fix_nested_duplicates.py "$SRC" || true
             rm -rf /tmp/classes
             javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 \
@@ -69,21 +73,27 @@ jobs:
               -d /tmp/classes @/tmp/sources.txt \
               > /tmp/javac-iter.log 2>&1 || true
             ERRS=$(grep -c "error:" /tmp/javac-iter.log || echo 0)
-            echo "Раунд $R: ошибок $ERRS"
+            echo "Раунд $R: ошибок $ERRS" | tee -a "$CYCLE"
             cp -f /tmp/javac-iter.log "handoff/restoration/javac-round$R.log"
             if [ "$ERRS" -eq 0 ]; then
               echo "=== ИСХОДНИК ПОЛНОСТЬЮ КОМПИЛИРУЕТСЯ ==="
               break
             fi
             if [ "$ERRS" -ge "$PREV" ] && [ "$R" -gt 1 ]; then
-              echo "=== Прогресс остановился, останавливаюсь для анализа ==="
-              break
+              NOSPIN=$((NOSPIN+1))
+              echo "Нет прогресса ($NOSPIN из 2)" | tee -a "$CYCLE"
+              if [ "$NOSPIN" -ge 2 ]; then
+                echo "=== Прогресс остановился ===" | tee -a "$CYCLE"
+                break
+              fi
+            else
+              NOSPIN=0
             fi
             PREV=$ERRS
             # стабы по текущим ошибкам
-            python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt || true
+            python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt 2>&1 | tee -a "$CYCLE" || true
             # стабы-интерфейсы
-            python3 tools/make_iface_list.py /tmp/javac-iter.log /tmp/stub-interfaces.txt "$SRC" || true
+            python3 tools/make_iface_list.py /tmp/javac-iter.log /tmp/stub-interfaces.txt "$SRC" 2>&1 | tee -a "$CYCLE" || true
             IFN=$(wc -l < /tmp/stub-interfaces.txt || echo 0)
             if [ "$IFN" -gt 0 ]; then
               while IFS= read -r line; do
@@ -91,10 +101,10 @@ jobs:
                 FP="$SRC/$(echo "$P" | tr '.' '/')/$C.java"
                 [ -f "$FP" ] && rm -f "$FP"
               done < /tmp/stub-interfaces.txt
-              python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt || true
+              python3 tools/gen_stubs.py /tmp/javac-iter.log "$SRC" /tmp/stub-interfaces.txt 2>&1 | tee -a "$CYCLE" || true
             fi
             find "$SRC" -name "*.java" | sort > /tmp/sources.txt
-            echo "Файлов теперь: $(wc -l < /tmp/sources.txt)"
+            echo "Файлов теперь: $(wc -l < /tmp/sources.txt)" | tee -a "$CYCLE"
           done
           cp -f /tmp/javac-iter.log handoff/restoration/javac-final.log
           ERRS=$(grep -c "error:" /tmp/javac-iter.log || echo 0)
