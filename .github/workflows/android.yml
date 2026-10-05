@@ -46,7 +46,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          gradle --no-daemon clean :app:assembleRelease >"$RUNNER_TEMP/gradle-build.log" 2>&1
+          gradle --no-daemon :app:assembleRelease >"$RUNNER_TEMP/gradle-build.log" 2>&1
           build_status=$?
           tail -n 30 "$RUNNER_TEMP/gradle-build.log"
           if [ "$build_status" -ne 0 ]; then
