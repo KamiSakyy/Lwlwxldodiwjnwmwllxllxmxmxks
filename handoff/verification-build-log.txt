@@ -34,18 +34,17 @@ to this project's gradle.properties.
 > Task :app:checkReleaseDuplicateClasses
 > Task :app:mergeReleaseNativeLibs
 > Task :app:javaPreCompileRelease
-> Task :app:generateReleaseResValues
 > Task :app:checkReleaseAarMetadata
+> Task :app:generateReleaseResValues
 
 > Task :app:stripReleaseDebugSymbols
 Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
 
 > Task :app:mapReleaseSourceSetPaths
-> Task :app:generateReleaseResources
 > Task :app:extractReleaseNativeSymbolTables
+> Task :app:generateReleaseResources
 > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
 > Task :app:packageReleaseResources
-> Task :app:mergeReleaseResources
 > Task :app:createReleaseCompatibleScreenManifests
 > Task :app:extractDeepLinksRelease
 
@@ -58,6 +57,7 @@ The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml 
 > Task :app:processReleaseManifest
 > Task :app:mergeReleaseArtProfile
 > Task :app:extractProguardFiles
+> Task :app:processReleaseManifestForPackage
 > Task :app:processReleaseJavaRes NO-SOURCE
 > Task :app:mergeReleaseStartupProfile
 > Task :app:mergeReleaseShaders
@@ -72,63 +72,326 @@ The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml 
 > Task :app:validateSigningRelease
 > Task :app:writeReleaseAppMetadata
 > Task :app:writeReleaseSigningConfigVersions
-> Task :app:processReleaseManifestForPackage
-> Task :app:processReleaseResources FAILED
+> Task :app:mergeReleaseResources
+> Task :app:processReleaseResources
+
+> Task :app:compileReleaseJavaWithJavac
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/kx0/m.java:29: error: illegal start of expression
+        ?? r1;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/kx0/m.java:29: error: illegal start of expression
+        ?? r1;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/kx0/m.java:29: error: : expected
+        ?? r1;
+             ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/kx0/j.java:164: error: illegal start of expression
+        ?? r14;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/kx0/j.java:164: error: illegal start of expression
+        ?? r14;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/kx0/j.java:164: error: : expected
+        ?? r14;
+              ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/t0.java:53: error: illegal start of expression
+        ?? r0 = this.w;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/t0.java:53: error: illegal start of expression
+        ?? r0 = this.w;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/t0.java:53: error: : expected
+        ?? r0 = this.w;
+                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/l0.java:93: error: illegal start of expression
+        ?? r0 = this.w;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/l0.java:93: error: illegal start of expression
+        ?? r0 = this.w;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/l0.java:93: error: : expected
+        ?? r0 = this.w;
+                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/l.java:49: error: illegal start of expression
+        ?? r0 = this.s;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/l.java:49: error: illegal start of expression
+        ?? r0 = this.s;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/l.java:49: error: : expected
+        ?? r0 = this.s;
+                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/q.java:49: error: illegal start of expression
+        ?? r0 = this.s;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/q.java:49: error: illegal start of expression
+        ?? r0 = this.s;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/q.java:49: error: : expected
+        ?? r0 = this.s;
+                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/j.java:50: error: illegal start of expression
+        ?? r0 = this.s;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/j.java:50: error: illegal start of expression
+        ?? r0 = this.s;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/l01/j.java:50: error: : expected
+        ?? r0 = this.s;
+                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/yz0/j5.java:89: error: illegal start of expression
+        ?? r0 = this.x;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/yz0/j5.java:89: error: illegal start of expression
+        ?? r0 = this.x;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/yz0/j5.java:89: error: : expected
+        ?? r0 = this.x;
+                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/yz0/j5.java:95: error: illegal start of expression
+        ?? r02 = this.y;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/yz0/j5.java:95: error: illegal start of expression
+        ?? r02 = this.y;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/yz0/j5.java:95: error: : expected
+        ?? r02 = this.y;
+                       ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b21/v.java:214: error: illegal start of expression
+        ?? r2;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b21/v.java:214: error: illegal start of expression
+        ?? r2;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b21/v.java:214: error: : expected
+        ?? r2;
+             ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/q4/b.java:148: error: illegal start of expression
+        ?? r42;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/q4/b.java:148: error: illegal start of expression
+        ?? r42;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/q4/b.java:148: error: : expected
+        ?? r42;
+              ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wl0/j.java:163: error: illegal start of expression
+        ?? r14;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wl0/j.java:163: error: illegal start of expression
+        ?? r14;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wl0/j.java:163: error: : expected
+        ?? r14;
+              ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k41/g.java:51: error: illegal start of expression
+        ?? arrayList;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k41/g.java:51: error: illegal start of expression
+        ?? arrayList;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k41/g.java:51: error: : expected
+        ?? arrayList;
+                    ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k3/w.java:5: error: initializers not allowed in interfaces
+    static {
+           ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/v00/n.java:58: error: illegal start of expression
+                    ?? r1 = v1.m.i;
+                    ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/v00/n.java:58: error: illegal start of expression
+                    ?? r1 = v1.m.i;
+                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/v00/n.java:58: error: : expected
+                    ?? r1 = v1.m.i;
+                                  ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b4/b.java:31: error: illegal start of expression
+        ?? obj = new Object();
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b4/b.java:31: error: illegal start of expression
+        ?? obj = new Object();
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b4/b.java:31: error: : expected
+        ?? obj = new Object();
+                             ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k81/g0.java:31: error: not a statement
+                        for (0; i < i2; i + 1) {
+                             ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k81/g0.java:31: error: not a statement
+                        for (0; i < i2; i + 1) {
+                                          ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k81/e1.java:188: error: not a statement
+                    for (0; i < i2; i + 1) {
+                         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/k81/e1.java:188: error: not a statement
+                    for (0; i < i2; i + 1) {
+                                      ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/ic/vh.java:122: error: illegal start of expression
+        ?? withZoneSameInstant = zonedDateTime.withZoneSameInstant(ZoneId.systemDefault());
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/ic/vh.java:122: error: illegal start of expression
+        ?? withZoneSameInstant = zonedDateTime.withZoneSameInstant(ZoneId.systemDefault());
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/ic/vh.java:122: error: : expected
+        ?? withZoneSameInstant = zonedDateTime.withZoneSameInstant(ZoneId.systemDefault());
+                                                                                          ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b31/b.java:276: error: illegal start of expression
+        ?? s6Var;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b31/b.java:276: error: illegal start of expression
+        ?? s6Var;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b31/b.java:276: error: : expected
+        ?? s6Var;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b31/b.java:1661: error: illegal start of expression
+        ?? r6Var;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b31/b.java:1661: error: illegal start of expression
+        ?? r6Var;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/b31/b.java:1661: error: : expected
+        ?? r6Var;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/i21/a.java:1218: error: illegal start of expression
+                ?? r1 = 0;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/i21/a.java:1218: error: illegal start of expression
+                ?? r1 = 0;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/i21/a.java:1218: error: : expected
+                ?? r1 = 0;
+                         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:99: error: illegal start of expression
+                ?? r2 = j2Var.w;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:99: error: illegal start of expression
+                ?? r2 = j2Var.w;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:99: error: : expected
+                ?? r2 = j2Var.w;
+                               ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:100: error: illegal start of expression
+                ?? r22 = j2Var.x;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:100: error: illegal start of expression
+                ?? r22 = j2Var.x;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:100: error: : expected
+                ?? r22 = j2Var.x;
+                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:101: error: illegal start of expression
+                ?? r23 = j2Var.y;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:101: error: illegal start of expression
+                ?? r23 = j2Var.y;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:101: error: : expected
+                ?? r23 = j2Var.y;
+                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:102: error: illegal start of expression
+                ?? r24 = j2Var.z;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:102: error: illegal start of expression
+                ?? r24 = j2Var.z;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:102: error: : expected
+                ?? r24 = j2Var.z;
+                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:114: error: illegal start of expression
+                ?? r25 = j2Var.J;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:114: error: illegal start of expression
+                ?? r25 = j2Var.J;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:114: error: : expected
+                ?? r25 = j2Var.J;
+                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:122: error: illegal start of expression
+                ?? r26 = j2Var.X;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:122: error: illegal start of expression
+                ?? r26 = j2Var.X;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:122: error: : expected
+                ?? r26 = j2Var.X;
+                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:123: error: illegal start of expression
+                ?? r27 = j2Var.Y;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:123: error: illegal start of expression
+                ?? r27 = j2Var.Y;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/wk/b.java:123: error: : expected
+                ?? r27 = j2Var.Y;
+                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/bo0/a.java:208: error: illegal start of expression
+                ?? r9 = r.r;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/bo0/a.java:208: error: illegal start of expression
+                ?? r9 = r.r;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/bo0/a.java:208: error: : expected
+                ?? r9 = r.r;
+                           ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/bo0/a.java:340: error: illegal start of expression
+                ?? r5 = r.r;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/bo0/a.java:340: error: illegal start of expression
+                ?? r5 = r.r;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/bo0/a.java:340: error: : expected
+                ?? r5 = r.r;
+                           ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/b0.java:26: error: illegal start of expression
+        ?? r5 = ((f8) kVar.s).c;
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/b0.java:26: error: illegal start of expression
+        ?? r5 = ((f8) kVar.s).c;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/b0.java:26: error: : expected
+        ?? r5 = ((f8) kVar.s).c;
+                               ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/bottomsheet/w.java:75: error: illegal start of expression
+                ?? r0 = f8Var.c;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/bottomsheet/w.java:75: error: illegal start of expression
+                ?? r0 = f8Var.c;
+                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/starredreposandlists/bottomsheet/w.java:75: error: : expected
+                ?? r0 = f8Var.c;
+                               ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/templates/IssueTemplatesActivity.java:212: error: illegal start of expression
+        ?? recyclerView = J0().P.getRecyclerView();
+        ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/templates/IssueTemplatesActivity.java:212: error: illegal start of expression
+        ?? recyclerView = J0().P.getRecyclerView();
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/templates/IssueTemplatesActivity.java:212: error: : expected
+        ?? recyclerView = J0().P.getRecyclerView();
+                                                  ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/checklog/t.java:49: error: illegal start of expression
+                ?? r92 = iVar.d;
+                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/java/com/github/rudroid/actions/checklog/t.java:49: error: illegal start of expression
+                ?? r92 = iVar.d;
+                 ^
+100 errors
+
+> Task :app:compileReleaseJavaWithJavac FAILED
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':app:processReleaseResources'.
-> A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
-   > Android resource linking failed
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:3: AAPT: error: resource drawable/$avd_hide_password__0 (aka com.github.rudroid:drawable/$avd_hide_password__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:4: AAPT: error: resource drawable/$avd_hide_password__1 (aka com.github.rudroid:drawable/$avd_hide_password__1) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:5: AAPT: error: resource drawable/$avd_hide_password__2 (aka com.github.rudroid:drawable/$avd_hide_password__2) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:3: AAPT: error: resource drawable/$avd_show_password__0 (aka com.github.rudroid:drawable/$avd_show_password__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:4: AAPT: error: resource drawable/$avd_show_password__1 (aka com.github.rudroid:drawable/$avd_show_password__1) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:5: AAPT: error: resource drawable/$avd_show_password__2 (aka com.github.rudroid:drawable/$avd_show_password__2) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_off_to_on.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_off_to_on__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_off_to_on__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_on_to_off.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_on_to_off__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_on_to_off__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_gemini_16.xml:5: AAPT: error: resource drawable/$ic_gemini_16__0 (aka com.github.rudroid:drawable/$ic_gemini_16__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:3: AAPT: error: resource drawable/$ic_notification_bell_ringing__0 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:4: AAPT: error: resource drawable/$ic_notification_bell_ringing__1 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__1) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:5: AAPT: error: resource drawable/$ic_notification_bell_ringing__9 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__9) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:6: AAPT: error: resource drawable/$ic_notification_bell_ringing__17 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__17) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:7: AAPT: error: resource drawable/$ic_notification_bell_ringing__25 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__25) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:8: AAPT: error: resource drawable/$ic_notification_bell_ringing__33 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__33) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:9: AAPT: error: resource drawable/$ic_notification_bell_ringing__42 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__42) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:10: AAPT: error: resource drawable/$ic_notification_bell_ringing__50 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__50) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:11: AAPT: error: resource drawable/$ic_notification_bell_ringing__58 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__58) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:3: AAPT: error: resource drawable/$ic_notification_setting_banner__0 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__0) not found.
-         
-     ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:4: AAPT: error: resource drawable/$ic_notification_setting_banner__1 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__1) not found.
-         
+Execution failed for task ':app:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
 
 * Try:
-> Run with --info or --debug option to get more log output.
+> Run with --info option to get more log output.
 > Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:processReleaseResources'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileReleaseJavaWithJavac'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
@@ -160,18 +423,46 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:pro
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
-	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
-	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:339)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:322)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:327)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
-	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
-	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:79)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:202)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:52)
+	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
+	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:220)
+	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:161)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
@@ -239,7 +530,7 @@ Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionExcept
 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
-	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
@@ -289,84 +580,7 @@ Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionExcept
 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
-Caused by: com.android.builder.internal.aapt.v2.Aapt2Exception: Android resource linking failed
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:3: AAPT: error: resource drawable/$avd_hide_password__0 (aka com.github.rudroid:drawable/$avd_hide_password__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:4: AAPT: error: resource drawable/$avd_hide_password__1 (aka com.github.rudroid:drawable/$avd_hide_password__1) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_hide_password.xml:5: AAPT: error: resource drawable/$avd_hide_password__2 (aka com.github.rudroid:drawable/$avd_hide_password__2) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:3: AAPT: error: resource drawable/$avd_show_password__0 (aka com.github.rudroid:drawable/$avd_show_password__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:4: AAPT: error: resource drawable/$avd_show_password__1 (aka com.github.rudroid:drawable/$avd_show_password__1) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/avd_show_password.xml:5: AAPT: error: resource drawable/$avd_show_password__2 (aka com.github.rudroid:drawable/$avd_show_password__2) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_off_to_on.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_off_to_on__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_off_to_on__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/glance_switch_thumb_on_to_off.xml:4: AAPT: error: resource drawable/$glance_switch_thumb_on_to_off__0 (aka com.github.rudroid:drawable/$glance_switch_thumb_on_to_off__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_gemini_16.xml:5: AAPT: error: resource drawable/$ic_gemini_16__0 (aka com.github.rudroid:drawable/$ic_gemini_16__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:3: AAPT: error: resource drawable/$ic_notification_bell_ringing__0 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:4: AAPT: error: resource drawable/$ic_notification_bell_ringing__1 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__1) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:5: AAPT: error: resource drawable/$ic_notification_bell_ringing__9 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__9) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:6: AAPT: error: resource drawable/$ic_notification_bell_ringing__17 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__17) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:7: AAPT: error: resource drawable/$ic_notification_bell_ringing__25 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__25) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:8: AAPT: error: resource drawable/$ic_notification_bell_ringing__33 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__33) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:9: AAPT: error: resource drawable/$ic_notification_bell_ringing__42 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__42) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:10: AAPT: error: resource drawable/$ic_notification_bell_ringing__50 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__50) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_bell_ringing.xml:11: AAPT: error: resource drawable/$ic_notification_bell_ringing__58 (aka com.github.rudroid:drawable/$ic_notification_bell_ringing__58) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:3: AAPT: error: resource drawable/$ic_notification_setting_banner__0 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__0) not found.
-    
-ERROR: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/extracted/GitHub-RU-Source/app/src/main/res/drawable/ic_notification_setting_banner.xml:4: AAPT: error: resource drawable/$ic_notification_setting_banner__1 (aka com.github.rudroid:drawable/$ic_notification_setting_banner__1) not found.
-    
-	at com.android.builder.internal.aapt.v2.Aapt2Exception$Companion.create(Aapt2Exception.kt:45)
-	at com.android.builder.internal.aapt.v2.Aapt2Exception$Companion.create$default(Aapt2Exception.kt:33)
-	at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteException(Aapt2ErrorUtils.kt:262)
-	at com.android.build.gradle.internal.res.Aapt2ErrorUtils.rewriteLinkException(Aapt2ErrorUtils.kt:133)
-	at com.android.build.gradle.internal.res.Aapt2ProcessResourcesRunnableKt.processResources(Aapt2ProcessResourcesRunnable.kt:76)
-	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:945)
-	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$Companion.access$invokeAaptForSplit(LinkApplicationAndroidResourcesTask.kt:799)
-	at com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction.run(LinkApplicationAndroidResourcesTask.kt:432)
-	at com.android.build.gradle.internal.profile.ProfileAwareWorkAction.execute(ProfileAwareWorkAction.kt:74)
-	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
-	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
-	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
-	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
-	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
-	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
-	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
-	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:195)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:128)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:170)
-	at org.gradle.internal.Factories$1.create(Factories.java:31)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:267)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:131)
-	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:136)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:165)
-	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:134)
-	... 2 more
 
 
-BUILD FAILED in 38s
-32 actionable tasks: 32 executed
+BUILD FAILED in 1m
+33 actionable tasks: 33 executed
