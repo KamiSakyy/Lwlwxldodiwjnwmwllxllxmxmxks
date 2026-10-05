@@ -45,4 +45,16 @@ public final class p implements h, Serializable {
         public l() {
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
 }

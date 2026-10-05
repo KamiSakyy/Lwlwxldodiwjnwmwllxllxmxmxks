@@ -41,4 +41,10 @@ public final class h2 {
         sb.append(", didCommitsChangeSinceLatestReview=");
         return jo.f4.s(sb, this.c, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class IssueOrPullRequest$ReviewerReviewState<T1,T2,T3,T4> {
+        public IssueOrPullRequest$ReviewerReviewState() {
+        }
+    }
 }

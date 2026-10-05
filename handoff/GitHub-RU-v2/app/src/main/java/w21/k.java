@@ -42,4 +42,10 @@ public final class k implements n, e, d, b {
     public void h(Exception exc) {
         this.u.l(exc);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m<T1,T2,T3,T4> {
+        public m() {
+        }
+    }
 }

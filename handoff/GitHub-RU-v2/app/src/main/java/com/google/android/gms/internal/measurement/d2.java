@@ -69,4 +69,22 @@ public final class d2 extends g5 {
         this.zzb |= 1;
         this.zzd = str;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class p<T1,T2,T3,T4> {
+        public p() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r0<T1,T2,T3,T4> {
+        public r0() {
+        }
+    }
 }

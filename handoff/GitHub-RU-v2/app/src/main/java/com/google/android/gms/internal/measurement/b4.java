@@ -1495,4 +1495,10 @@ public abstract class b4 implements i3.d {
     public abstract void y0(com.google.android.gms.internal.play_billing.y3 y3Var, Thread thread);
 
     public abstract boolean z0(com.google.android.gms.internal.play_billing.z3 z3Var, com.google.android.gms.internal.play_billing.g2 g2Var, com.google.android.gms.internal.play_billing.g2 g2Var2);
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ShortcutScope$SpecificRepository<T1,T2,T3,T4> {
+        public ShortcutScope$SpecificRepository() {
+        }
+    }
 }

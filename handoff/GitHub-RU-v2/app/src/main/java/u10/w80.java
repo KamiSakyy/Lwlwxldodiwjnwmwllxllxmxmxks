@@ -53,4 +53,28 @@ public final class w80 {
         public q3() {
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class c1<T1,T2,T3,T4> {
+        public c1() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h0<T1,T2,T3,T4> {
+        public h0() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class m3<T1,T2,T3,T4> {
+        public m3() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class v3<T1,T2,T3,T4> {
+        public v3() {
+        }
+    }
 }

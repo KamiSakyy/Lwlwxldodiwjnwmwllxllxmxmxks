@@ -9,4 +9,10 @@ public abstract class f0 {
     static {
         a = Build.VERSION.SDK_INT >= 31 ? 33554432 : 0;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b2<T1,T2,T3,T4> {
+        public b2() {
+        }
+    }
 }

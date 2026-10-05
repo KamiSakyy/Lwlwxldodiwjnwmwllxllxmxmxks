@@ -84,4 +84,10 @@ public final class c80 implements aa.n0 {
         sb.append(", types=");
         return f1.e.k(sb, this.t, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
 }

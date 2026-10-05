@@ -77,4 +77,10 @@ public final class l3 {
         com.github.rudroid.m0.z(p, this.k, ", url=", this.l, ", viewerCanBlockFromOrg=");
         return com.github.rudroid.m0.m(p, this.m, ", viewerCanUnblockFromOrg=", this.n, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class IssueOrPullRequest$ReviewerReviewState<T1,T2,T3,T4> {
+        public IssueOrPullRequest$ReviewerReviewState() {
+        }
+    }
 }

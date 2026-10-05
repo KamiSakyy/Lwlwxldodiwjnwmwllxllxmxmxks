@@ -26,4 +26,10 @@ public final class g50 implements aa.m0 {
     public final String toString() {
         return "Data(updateUserDashboardPins=" + this.a + ")";
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class b<T1,T2,T3,T4> {
+        public b() {
+        }
+    }
 }

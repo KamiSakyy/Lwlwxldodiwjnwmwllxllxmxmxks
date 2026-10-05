@@ -63,4 +63,10 @@ public final class s6 extends s7 {
         sb.append(", isInMergeQueue=");
         return jo.f4.s(sb, this.i, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class TimelineItem$LinkedItemConnectorType<T1,T2,T3,T4> {
+        public TimelineItem$LinkedItemConnectorType() {
+        }
+    }
 }

@@ -38,4 +38,10 @@ public abstract class m extends f {
             this.f4157f = false;
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class l<T1,T2,T3,T4> {
+        public l() {
+        }
+    }
 }

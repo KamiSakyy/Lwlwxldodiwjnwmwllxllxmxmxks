@@ -1648,4 +1648,10 @@ public final class b implements Runnable {
         this.r = 23;
         this.t = jVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class BiometricFragment<T1,T2,T3,T4> {
+        public BiometricFragment() {
+        }
+    }
 }

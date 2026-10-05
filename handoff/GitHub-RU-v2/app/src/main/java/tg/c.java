@@ -137,4 +137,10 @@ public final class c {
             t.d = new f1.z0(rVar2, p0Var2, x0Var2, vVar2, y0Var2, dVar, i, i2);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class x0<T1,T2,T3,T4> {
+        public x0() {
+        }
+    }
 }

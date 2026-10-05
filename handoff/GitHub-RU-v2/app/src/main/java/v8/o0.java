@@ -25,4 +25,10 @@ public final /* synthetic */ class o0 implements j71.a {
                 throw new IllegalStateException("Expedited WorkRequests require a Worker to provide an implementation for `getForegroundInfo()`");
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class Worker<T1,T2,T3,T4> {
+        public Worker() {
+        }
+    }
 }

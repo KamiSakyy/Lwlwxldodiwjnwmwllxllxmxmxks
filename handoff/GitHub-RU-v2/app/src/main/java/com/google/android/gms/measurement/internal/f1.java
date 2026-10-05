@@ -95,4 +95,10 @@ public final class f1 extends l7.z1 {
         super(25);
         this.i = gVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class y3<T1,T2,T3,T4> {
+        public y3() {
+        }
+    }
 }

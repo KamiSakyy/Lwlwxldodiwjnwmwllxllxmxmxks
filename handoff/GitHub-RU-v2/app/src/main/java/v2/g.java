@@ -26,4 +26,16 @@ public final class g {
 
     /* renamed from: h, reason: collision with root package name */
     public static final d f32491h = d.f32449t;
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class d<T1,T2,T3,T4> {
+        public d() {
+        }
+    }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
 }

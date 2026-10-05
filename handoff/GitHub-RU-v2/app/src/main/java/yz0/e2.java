@@ -60,4 +60,10 @@ public final class e2 {
         this.f = z2;
         this.g = d2Var;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class IssueOrPullRequest$ReviewerReviewState<T1,T2,T3,T4> {
+        public IssueOrPullRequest$ReviewerReviewState() {
+        }
+    }
 }

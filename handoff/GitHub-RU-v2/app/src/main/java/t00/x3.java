@@ -21,4 +21,10 @@ public final class x3 extends c71.c {
         this.y |= Integer.MIN_VALUE;
         return rm0.j4.n(this.x, (String) null, (String) null, this);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class h<T1,T2,T3,T4> {
+        public h() {
+        }
+    }
 }

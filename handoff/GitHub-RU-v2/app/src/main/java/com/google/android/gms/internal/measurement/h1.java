@@ -42,4 +42,10 @@ public final class h1 extends y implements r0 {
     public final void m(long j, Bundle bundle, String str, String str2) {
         this.f.a(j, bundle, str, str2);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class r<T1,T2,T3,T4> {
+        public r() {
+        }
+    }
 }

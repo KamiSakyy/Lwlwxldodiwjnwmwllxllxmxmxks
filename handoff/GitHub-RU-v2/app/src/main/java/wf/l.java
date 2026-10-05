@@ -12,4 +12,10 @@ public final class l extends com.github.rudroid.adapters.viewholders.e<k5.f> {
         k71.k.g(sVar, "callback");
         this.v = sVar;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class i9<T1,T2,T3,T4> {
+        public i9() {
+        }
+    }
 }

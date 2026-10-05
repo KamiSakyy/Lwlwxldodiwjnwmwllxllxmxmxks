@@ -70,4 +70,10 @@ public final class a50 implements aa.n0 {
     public final String toString() {
         return x.i.g("UpdateIssueTitleMutation(id=", this.r, ", title=", this.s, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class a<T1,T2,T3,T4> {
+        public a() {
+        }
+    }
 }

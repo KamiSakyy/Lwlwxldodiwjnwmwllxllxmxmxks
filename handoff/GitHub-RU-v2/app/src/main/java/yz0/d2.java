@@ -41,4 +41,10 @@ public final class d2 {
         p.append(")");
         return p.toString();
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class IssueOrPullRequest$ReviewerReviewState<T1,T2,T3,T4> {
+        public IssueOrPullRequest$ReviewerReviewState() {
+        }
+    }
 }

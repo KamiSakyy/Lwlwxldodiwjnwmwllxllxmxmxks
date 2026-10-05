@@ -11,4 +11,10 @@ public interface n {
     default n d(n nVar) {
         return nVar == l.f34585a ? this : new e(this, nVar);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class e<T1,T2,T3,T4> {
+        public e() {
+        }
+    }
 }

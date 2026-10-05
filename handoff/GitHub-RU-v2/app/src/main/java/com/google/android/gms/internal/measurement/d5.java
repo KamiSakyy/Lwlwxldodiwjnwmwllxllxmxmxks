@@ -2003,4 +2003,10 @@ public abstract class d5 implements Encoder {
         k71.k.g(str, "value");
         K(str);
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class TimelineItem$LinkedItemConnectorType<T1,T2,T3,T4> {
+        public TimelineItem$LinkedItemConnectorType() {
+        }
+    }
 }

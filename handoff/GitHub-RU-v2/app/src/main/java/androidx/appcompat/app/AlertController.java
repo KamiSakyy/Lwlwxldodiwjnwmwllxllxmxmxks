@@ -7,4 +7,10 @@ package androidx.appcompat.app;
 public class AlertController<T1,T2,T3,T4> {
     public AlertController() {
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class RecycleListView<T1,T2,T3,T4> {
+        public RecycleListView() {
+        }
+    }
 }

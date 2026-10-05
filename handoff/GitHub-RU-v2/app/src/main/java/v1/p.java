@@ -146,4 +146,10 @@ public final class p implements Parcelable.ClassLoaderCreator {
                 return new y31.x(parcel, (ClassLoader) null);
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class q<T1,T2,T3,T4> {
+        public q() {
+        }
+    }
 }

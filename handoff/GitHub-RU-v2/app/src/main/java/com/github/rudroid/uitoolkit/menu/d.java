@@ -346,4 +346,10 @@ public interface d {
             throw new UnsupportedOperationException("Method not decompiled: com.github.rudroid.uitoolkit.menu.d.C0009d.<init>(java.lang.String, java.lang.String, java.lang.String, com.github.rudroid.uitoolkit.text.o, java.lang.String, long, long, long, boolean, boolean, int, int):void");
         }
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class ReRunJobBottomSheet<T1,T2,T3,T4> {
+        public ReRunJobBottomSheet() {
+        }
+    }
 }

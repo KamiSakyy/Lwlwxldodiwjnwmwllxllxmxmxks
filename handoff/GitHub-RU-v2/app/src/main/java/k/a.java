@@ -32,4 +32,10 @@ public final class a extends ArrayAdapter {
         }
         return view2;
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class AlertController$RecycleListView<T1,T2,T3,T4> {
+        public AlertController$RecycleListView() {
+        }
+    }
 }

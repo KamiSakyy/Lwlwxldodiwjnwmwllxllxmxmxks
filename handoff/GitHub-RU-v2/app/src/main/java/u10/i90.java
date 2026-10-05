@@ -50,4 +50,10 @@ public final class i90 {
         o.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(o, this.e, ")");
     }
+
+    // [restore] вложенный стаб: оригинал потерян при декомпиляции
+    public static class f<T1,T2,T3,T4> {
+        public f() {
+        }
+    }
 }
