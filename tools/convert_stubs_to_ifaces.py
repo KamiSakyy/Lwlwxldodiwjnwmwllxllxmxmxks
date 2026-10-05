@@ -64,7 +64,7 @@ for dirpath, dirs, files in os.walk(root):
         body_has_methods = re.search(r"\n    public (?!%s\()" % re.escape(name), src)
         src2 = re.sub(r"public class %s(<[^>]*>)?\s*\{" % re.escape(name),
                       lambda mm: "public interface %s%s {" % (name, mm.group(1) or ""), src, count=1)
-        src2 = re.sub(r"\n    public %s\(\) \{\n    \}\n" % re.escape(name), "\n", src2, count=1)
+        src2 = re.sub(r"\n    public %s\(\) \{[^}]*\}" % re.escape(name), "", src2, count=1)
         if src2 != src:
             with open(p, "w", encoding="utf-8") as f:
                 f.write(src2)
@@ -91,5 +91,25 @@ for dirpath, dirs, files in os.walk(root):
                 f.write(src2)
             reverted += 1
 
+# санитарный проход: interface-стабы не могут иметь конструкторов
+sanitized = 0
+for dirpath, dirs, files in os.walk(root):
+    for fn in files:
+        if not fn.endswith(".java"):
+            continue
+        p = os.path.join(dirpath, fn)
+        try:
+            src = open(p, encoding="utf-8", errors="ignore").read()
+        except OSError:
+            continue
+        if "СТАБ" not in src or "public interface" not in src:
+            continue
+        name2 = fn[:-5]
+        src2 = re.sub(r"\n    public %s\(\) \{[^}]*\}" % re.escape(name2), "", src)
+        if src2 != src:
+            with open(p, "w", encoding="utf-8") as f:
+                f.write(src2)
+            sanitized += 1
+
 print(f"Конвертировано в interface: {converted}; откат в class: {reverted}; "
-      f"не тронуто (extends): {len(skipped_ext)}")
+      f"не тронуто (extends): {len(skipped_ext)}; интерфейсов очищено от конструкторов: {sanitized}")
