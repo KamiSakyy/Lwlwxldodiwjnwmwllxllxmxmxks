@@ -268,7 +268,7 @@ public final class p {
                             /* JADX WARN: Type inference failed for: r1v8, types: [boolean, int] */
                             public final Object f(Object obj3, Object obj4, Object obj5) {
                                 long j7;
-                                ?? r1;
+                                int r1;
                                 Object obj6;
                                 int i18;
                                 long j8;
@@ -399,7 +399,7 @@ public final class p {
                     /* JADX WARN: Type inference failed for: r1v8, types: [boolean, int] */
                     public final Object f(Object obj3, Object obj4, Object obj5) {
                         long j72;
-                        ?? r1;
+                        int r1;
                         Object obj6;
                         int i18;
                         long j8;

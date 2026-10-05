@@ -47,7 +47,7 @@ public class UsersFragment extends Hilt_UsersFragment implements com.github.rudr
     /* JADX WARN: Type inference failed for: r0v0, types: [com.github.rudroid.users.d] */
     public UsersFragment() {
         final int i = 0;
-        ?? r0 = new j71.c(this) { // from class: com.github.rudroid.users.d
+        j71.c r0 = new j71.c(this) { // from class: com.github.rudroid.users.d;
             public final /* synthetic */ UsersFragment s;
 
             {

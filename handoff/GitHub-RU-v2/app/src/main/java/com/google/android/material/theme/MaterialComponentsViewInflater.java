@@ -34,7 +34,7 @@ public class MaterialComponentsViewInflater extends d0 {
 
     /* JADX WARN: Type inference failed for: r0v0, types: [android.view.View, android.widget.CompoundButton, q.z, q31.a] */
     public final z d(Context context, AttributeSet attributeSet) {
-        ?? aVar = new a(a41.a.a(context, attributeSet, 2130969679, 2132018481), attributeSet);
+        a aVar = new a(a41.a.a(context, attributeSet, 2130969679, 2132018481), attributeSet);
         Context context2 = aVar.getContext();
         TypedArray f = o31.o.f(context2, attributeSet, x21.a.y, 2130969679, 2132018481, new int[0]);
         if (f.hasValue(0)) {

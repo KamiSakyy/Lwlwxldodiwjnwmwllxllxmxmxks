@@ -718,7 +718,7 @@ public class MaterialButton extends o implements Checkable, y {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v0, types: [android.os.Parcelable, e31.c, i5.b] */
     public final Parcelable onSaveInstanceState() {
-        ?? cVar = new c(super/*android.view.View*/.onSaveInstanceState());
+        c cVar = new c(super/*android.view.View*/.onSaveInstanceState());
         cVar.t = this.F;
         return cVar;
     }

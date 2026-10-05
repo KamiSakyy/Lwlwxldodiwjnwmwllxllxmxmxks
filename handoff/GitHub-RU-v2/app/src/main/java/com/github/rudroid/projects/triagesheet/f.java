@@ -23,7 +23,7 @@ public final class f {
     /* JADX WARN: Type inference failed for: r1v3, types: [java.lang.Iterable] */
     /* JADX WARN: Type inference failed for: r1v4, types: [java.util.ArrayList] */
     public static ArrayList b(List list) {
-        ?? n10;
+        Object n10;
         k71.k.g(list, "selectableItems");
         m.d dVar = new m.d(2131952995);
         if (list.isEmpty()) {

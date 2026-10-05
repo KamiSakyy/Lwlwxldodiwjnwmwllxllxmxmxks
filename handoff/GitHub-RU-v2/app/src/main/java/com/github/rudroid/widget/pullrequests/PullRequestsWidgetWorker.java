@@ -117,7 +117,7 @@ public final class PullRequestsWidgetWorker extends CoroutineWorker {
     */
     public final Object c(a71.c cVar) {
         k kVar;
-        ?? r4;
+        java.util.List r4;
         SharedPreferences b;
         List<z5.k> list;
         LinkedHashSet linkedHashSet;

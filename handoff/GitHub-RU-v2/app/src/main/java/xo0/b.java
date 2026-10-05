@@ -179,7 +179,7 @@ public final class b implements j {
     private final Object d(a71.c cVar, Object obj) {
         v vVar;
         int i;
-        ?? r4;
+        java.util.ArrayList r4;
         if (cVar instanceof v) {
             vVar = (v) cVar;
             int i2 = vVar.v;
@@ -578,7 +578,7 @@ public final class b implements j {
                                 if (optString.equals("memex_item_denormalized_to_elasticsearch")) {
                                     yi.e.Companion.getClass();
                                     JSONArray optJSONArray = jSONObject.optJSONArray("items");
-                                    ?? r8 = r.r;
+                                    java.util.ArrayList r8 = (java.util.ArrayList) (r.r);
                                     if (optJSONArray != null) {
                                         q71.g b0 = aa1.b.b0(0, optJSONArray.length());
                                         arrayList = new ArrayList();
@@ -772,7 +772,7 @@ public final class b implements j {
         List list;
         c cVar2;
         int i2;
-        ?? r15;
+        java.util.ArrayList r15;
         d dVar;
         int i3;
         y00.b bVar;
@@ -842,7 +842,7 @@ public final class b implements j {
         int i23;
         Object obj2;
         zm0.k kVar7;
-        ?? r6;
+        java.util.ArrayList r6;
         List<zm0.h> list2;
         zm0.i iVar2;
         zm0.g gVar2;

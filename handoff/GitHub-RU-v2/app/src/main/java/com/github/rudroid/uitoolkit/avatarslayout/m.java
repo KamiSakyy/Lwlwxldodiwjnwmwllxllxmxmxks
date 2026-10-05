@@ -52,7 +52,7 @@ public final class m {
                     int i5 = 1;
                     if (sVar2.S(intValue & 1, (intValue & 3) != 2)) {
                         sVar2.c0(1112264357);
-                        ?? r1 = list;
+                        java.util.List r1 = (java.util.List) (list);
                         int i6 = i;
                         Iterator it = x61.m.x0((Iterable) r1, i6).iterator();
                         List list2 = r1;

@@ -77,7 +77,7 @@ public final /* synthetic */ class q implements j71.e {
         boolean z;
         float f;
         String str;
-        ?? r1;
+        int r1;
         boolean z2;
         int i;
         int i2 = this.r;

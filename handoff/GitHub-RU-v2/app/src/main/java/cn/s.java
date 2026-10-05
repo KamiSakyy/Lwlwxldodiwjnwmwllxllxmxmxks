@@ -144,7 +144,7 @@ public final class s {
         h hVar = (h) concurrentHashMap.get(str);
         if (hVar != null) {
             h01.q qVar = hVar.a;
-            ?? r1 = hVar.b;
+            java.util.List r1 = (java.util.List) (hVar.b);
             List list = qVar.c;
             ArrayList arrayList = new ArrayList();
             Iterator it = list.iterator();

@@ -12,7 +12,7 @@ public final class e0 {
         le.v vVar;
         k71.k.g(gVar, "searchIssueOrPullRequestsPaged");
         k71.k.g(str, "query");
-        ?? r72 = gVar.a;
+        Object r72 = gVar.a;
         ArrayList arrayList = new ArrayList();
         for (y1 y1Var : r72) {
             if (y1Var instanceof y1) {

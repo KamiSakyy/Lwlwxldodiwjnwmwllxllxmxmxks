@@ -48,7 +48,7 @@ public final class g {
     /* JADX WARN: Type inference failed for: r0v7, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r0v8, types: [java.util.List] */
     public g(Context context, String str, i iVar) {
-        ?? arrayList;
+        Object arrayList;
         int i = 0;
         this.a = context;
         u.d(str);

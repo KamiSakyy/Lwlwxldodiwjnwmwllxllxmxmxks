@@ -40,7 +40,7 @@ public final class t extends LinearLayout {
         setVisibility(8);
         setOrientation(0);
         setLayoutParams(new FrameLayout.LayoutParams(-2, -1, 8388611));
-        ?? r1 = (CheckableImageButton) LayoutInflater.from(getContext()).inflate(2131558774, (ViewGroup) this, false);
+        com.google.android.material.internal.CheckableImageButton r1 = (com.google.android.material.internal.CheckableImageButton) ((CheckableImageButton) LayoutInflater.from(getContext()).inflate(2131558774, (ViewGroup) this, false));
         this.u = r1;
         AppCompatTextView appCompatTextView = new AppCompatTextView(getContext(), (AttributeSet) null);
         this.s = appCompatTextView;
@@ -110,7 +110,7 @@ public final class t extends LinearLayout {
 
     /* JADX WARN: Type inference failed for: r0v0, types: [android.view.View, com.google.android.material.internal.CheckableImageButton, q.u] */
     public final void b(Drawable drawable) {
-        ?? r0 = this.u;
+        CheckableImageButton r0 = this.u;
         r0.setImageDrawable(drawable);
         if (drawable != null) {
             ColorStateList colorStateList = this.v;

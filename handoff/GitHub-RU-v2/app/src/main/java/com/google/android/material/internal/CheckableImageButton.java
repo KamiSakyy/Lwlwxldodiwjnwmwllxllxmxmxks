@@ -50,7 +50,7 @@ public class CheckableImageButton extends u implements Checkable {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r1v0, types: [android.os.Parcelable, i5.b, o31.b] */
     public final Parcelable onSaveInstanceState() {
-        ?? bVar = new b(super/*android.view.View*/.onSaveInstanceState());
+        b bVar = new b(super/*android.view.View*/.onSaveInstanceState());
         bVar.t = this.u;
         return bVar;
     }

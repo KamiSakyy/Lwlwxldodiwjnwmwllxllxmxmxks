@@ -488,7 +488,7 @@ public abstract class l extends c0 {
                     }
                 } else if ((obj instanceof w61.z) && (obj2 instanceof w61.z)) {
                     short[] sArr = ((w61.z) obj).r;
-                    ?? r5 = ((w61.z) obj2).r;
+                    short[ r5 = (short[) (((w61.z) obj2).r);
                     if (sArr == null) {
                         sArr = null;
                     }
@@ -497,7 +497,7 @@ public abstract class l extends c0 {
                     }
                 } else if ((obj instanceof w61.u) && (obj2 instanceof w61.u)) {
                     int[] iArr = ((w61.u) obj).r;
-                    ?? r52 = ((w61.u) obj2).r;
+                    Object r52 = ((w61.u) obj2).r;
                     if (iArr == null) {
                         iArr = null;
                     }
@@ -506,7 +506,7 @@ public abstract class l extends c0 {
                     }
                 } else if ((obj instanceof w61.w) && (obj2 instanceof w61.w)) {
                     long[] jArr = ((w61.w) obj).r;
-                    ?? r53 = ((w61.w) obj2).r;
+                    Object r53 = ((w61.w) obj2).r;
                     if (jArr == null) {
                         jArr = null;
                     }

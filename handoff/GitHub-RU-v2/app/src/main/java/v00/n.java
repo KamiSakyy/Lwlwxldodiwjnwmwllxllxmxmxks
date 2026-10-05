@@ -55,7 +55,7 @@ public final /* synthetic */ class n implements j71.c {
                 return w61.a0.a;
             case 2:
                 synchronized (v1.m.c) {
-                    ?? r1 = v1.m.i;
+                    java.util.List r1 = (java.util.List) (v1.m.i);
                     int size = r1.size();
                     for (int i = 0; i < size; i++) {
                         ((j71.c) r1.get(i)).k(obj);

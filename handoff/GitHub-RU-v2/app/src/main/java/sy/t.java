@@ -413,7 +413,7 @@ public abstract class t {
         int i = 0;
         if (b == 8) {
             int readInt = dataInputStream.readInt();
-            ?? r0 = new Boolean[readInt];
+            java.lang.Boolean[ r0 = (java.lang.Boolean[) (new Boolean[readInt]);
             while (i < readInt) {
                 r0[i] = Boolean.valueOf(dataInputStream.readBoolean());
                 i++;
@@ -422,7 +422,7 @@ public abstract class t {
         }
         if (b == 9) {
             int readInt2 = dataInputStream.readInt();
-            ?? r02 = new Byte[readInt2];
+            Object r02 = new Byte[readInt2];
             while (i < readInt2) {
                 r02[i] = Byte.valueOf(dataInputStream.readByte());
                 i++;
@@ -431,7 +431,7 @@ public abstract class t {
         }
         if (b == 10) {
             int readInt3 = dataInputStream.readInt();
-            ?? r03 = new Integer[readInt3];
+            Object r03 = new Integer[readInt3];
             while (i < readInt3) {
                 r03[i] = Integer.valueOf(dataInputStream.readInt());
                 i++;
@@ -440,7 +440,7 @@ public abstract class t {
         }
         if (b == 11) {
             int readInt4 = dataInputStream.readInt();
-            ?? r04 = new Long[readInt4];
+            Object r04 = new Long[readInt4];
             while (i < readInt4) {
                 r04[i] = Long.valueOf(dataInputStream.readLong());
                 i++;
@@ -449,7 +449,7 @@ public abstract class t {
         }
         if (b == 12) {
             int readInt5 = dataInputStream.readInt();
-            ?? r05 = new Float[readInt5];
+            Object r05 = new Float[readInt5];
             while (i < readInt5) {
                 r05[i] = Float.valueOf(dataInputStream.readFloat());
                 i++;
@@ -458,7 +458,7 @@ public abstract class t {
         }
         if (b == 13) {
             int readInt6 = dataInputStream.readInt();
-            ?? r06 = new Double[readInt6];
+            Object r06 = new Double[readInt6];
             while (i < readInt6) {
                 r06[i] = Double.valueOf(dataInputStream.readDouble());
                 i++;
@@ -469,7 +469,7 @@ public abstract class t {
             throw new IllegalStateException(no.a.k("Unsupported type ", b));
         }
         int readInt7 = dataInputStream.readInt();
-        ?? r1 = new String[readInt7];
+        java.lang.String[ r1 = (java.lang.String[) (new String[readInt7]);
         while (i < readInt7) {
             String readUTF = dataInputStream.readUTF();
             if (k71.k.b(readUTF, "androidx.work.Data-95ed6082-b8e9-46e8-a73f-ff56f00f5d9d")) {

@@ -13,7 +13,7 @@ public final class b implements ViewTreeObserver.OnPreDrawListener {
     /* JADX WARN: Type inference failed for: r0v0, types: [android.view.View, com.google.android.material.timepicker.ClockFaceView, com.google.android.material.timepicker.h] */
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public final boolean onPreDraw() {
-        ?? r0 = this.r;
+        ClockFaceView r0 = this.r;
         if (!r0.isShown()) {
             return true;
         }

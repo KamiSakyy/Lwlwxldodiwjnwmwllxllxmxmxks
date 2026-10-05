@@ -61,7 +61,7 @@ public final /* synthetic */ class s implements j71.c {
         String str4;
         String str5;
         l01.n0 n0Var;
-        ?? r4;
+        java.util.List r4;
         xz.m mVar;
         xz.e eVar;
         String l;

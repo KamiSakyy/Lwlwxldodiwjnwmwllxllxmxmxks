@@ -71,7 +71,7 @@ public final class m implements y71.j {
         List<rq> list;
         List<qq> list2;
         List<sq> list3;
-        ?? r1;
+        java.util.ArrayList r1;
         PullsWidgetPullRow pullsWidgetPullRow;
         CheckStatusState checkStatusState;
         k6 k6Var;
@@ -86,7 +86,7 @@ public final class m implements y71.j {
         List<os> list5;
         List<ns> list6;
         List<ps> list7;
-        ?? r12;
+        Object r12;
         PullsWidgetPullRow pullsWidgetPullRow2;
         CheckStatusState checkStatusState2;
         g7 g7Var;

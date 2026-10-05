@@ -160,7 +160,7 @@ public final class j implements n5 {
     public j(oj0.h hVar) {
         this(r5, r6, r2, r8, r9, r10, r11);
         Boolean bool;
-        ?? r14;
+        java.util.ArrayList r14;
         ArrayList arrayList;
         List<oj0.f> list;
         List<oj0.g> list2;

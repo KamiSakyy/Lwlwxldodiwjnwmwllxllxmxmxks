@@ -96,7 +96,7 @@ public final class n extends c71.j implements j71.e {
             return a0.a;
         }
         if (i == 1) {
-            ?? r3 = this.y;
+            int r3 = this.y;
             length = this.x;
             byte[] bArr2 = this.w;
             lVar = this.v;
@@ -152,7 +152,7 @@ public final class n extends c71.j implements j71.e {
         if (i != 2 && i != 3) {
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
-        ?? r32 = this.y;
+        int r32 = this.y;
         length = this.x;
         byte[] bArr3 = this.w;
         lVar = this.v;

@@ -25,7 +25,7 @@ class ChipTextInputComboView extends FrameLayout implements Checkable {
     public ChipTextInputComboView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
         LayoutInflater from = LayoutInflater.from(context);
-        ?? r5 = (Chip) from.inflate(2131559304, (ViewGroup) this, false);
+        com.google.android.material.chip.Chip r5 = (com.google.android.material.chip.Chip) ((Chip) from.inflate(2131559304, (ViewGroup) this, false));
         this.r = r5;
         r5.setAccessibilityClassName("android.view.View");
         TextInputLayout textInputLayout = (TextInputLayout) from.inflate(2131559305, (ViewGroup) this, false);

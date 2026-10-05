@@ -114,7 +114,7 @@ public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3
 
     /* JADX WARN: Type inference failed for: r3v2, types: [android.app.Dialog, d31.j] */
     public a5.p2 l(View view, a5.p2 p2Var) {
-        ?? r3 = (d31.j) this.s;
+        d31.j r3 = (d31.j) ((d31.j) this.s);
         d31.i iVar = r3.E;
         if (iVar != null) {
             r3.x.Z.remove(iVar);

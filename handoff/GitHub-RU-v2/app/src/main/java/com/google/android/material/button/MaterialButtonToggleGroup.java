@@ -80,7 +80,7 @@ public class MaterialButtonToggleGroup extends d {
     public final void addView(View view, int i, ViewGroup.LayoutParams layoutParams) {
         if (view instanceof MaterialButton) {
             super.addView(view, i, layoutParams);
-            ?? r2 = (MaterialButton) view;
+            com.google.android.material.button.MaterialButton r2 = (com.google.android.material.button.MaterialButton) ((MaterialButton) view);
             setupButtonChild(r2);
             f(r2.getId(), r2.F);
             c1.p((View) r2, new f(3, this));

@@ -255,7 +255,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
                 l h = ((s) this.s).h();
                 int i = 0;
                 if (!h.k.isEmpty()) {
-                    ?? r0 = h.k;
+                    java.util.List r0 = (java.util.List) (h.k);
                     int size = r0.size();
                     Iterator it = r0.iterator();
                     while (it.hasNext()) {
@@ -334,7 +334,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
         switch (this.r) {
             case 13:
                 s sVar = (s) this.s;
-                ?? r3 = sVar.h().k;
+                java.util.List r3 = (java.util.List) (sVar.h().k);
                 i0.m mVar = (i0.m) this.t;
                 int size = r3.size();
                 float f2 = Float.NEGATIVE_INFINITY;

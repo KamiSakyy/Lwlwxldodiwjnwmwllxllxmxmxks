@@ -34,7 +34,7 @@ final class q extends c71.j implements j71.e {
         int i = this.v;
         if (i == 0) {
             sy.y.j(obj);
-            ?? r2 = this.w;
+            CopilotManageSubscriptionActivity r2 = this.w;
             x0 x0Var = r2.t0;
             if (x0Var == null) {
                 k71.k.m("purchaseCopilotLicenseUseCase");

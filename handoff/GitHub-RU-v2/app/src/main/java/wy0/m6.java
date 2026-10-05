@@ -386,7 +386,7 @@ public final class m6 implements y71.j {
         int i8;
         x6 x6Var;
         int i9;
-        ?? r5;
+        java.util.ArrayList r5;
         List<bw> list;
         dw dwVar;
         a7 a7Var;
@@ -419,7 +419,7 @@ public final class m6 implements y71.j {
         int i19;
         j7 j7Var;
         int i20;
-        ?? r2;
+        java.util.ArrayList r2;
         List<py0.z> list2;
         k7 k7Var;
         int i22;
@@ -889,7 +889,7 @@ public final class m6 implements y71.j {
                             gx gxVar = xwVar.a;
                             String str7 = null;
                             bx bxVar3 = gxVar != null ? gxVar.b : null;
-                            ?? r6 = x61.r.r;
+                            java.util.List r6 = (java.util.List) (x61.r.r);
                             if (bxVar3 != null) {
                                 List list4 = gxVar.b.a.b;
                                 List list5 = r6;

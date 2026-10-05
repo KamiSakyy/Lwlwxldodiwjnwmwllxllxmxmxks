@@ -89,7 +89,7 @@ public final class k0 implements y71.j {
     private final Object a(a71.c cVar, Object obj) {
         bz0.v vVar;
         int i;
-        ?? r4;
+        java.util.ArrayList r4;
         if (cVar instanceof bz0.v) {
             vVar = (bz0.v) cVar;
             int i2 = vVar.v;
@@ -230,12 +230,12 @@ public final class k0 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     d00.n nVar = ((d00.m) obj).a;
-                    ?? r8 = x61.r.r;
+                    java.util.List r8 = (java.util.List) (x61.r.r);
                     l01.w wVar = null;
                     if (nVar != null && (g0Var = nVar.c) != null) {
                         List<f00.e0> list = g0Var.c.a;
                         if (list != null) {
-                            ?? arrayList = new ArrayList();
+                            ArrayList arrayList = new ArrayList();
                             for (f00.e0 e0Var : list) {
                                 l01.w0 S = e0Var != null ? i21.a.S(e0Var.c) : null;
                                 if (S != null) {
@@ -244,7 +244,7 @@ public final class k0 implements y71.j {
                             }
                             wVar = arrayList;
                         }
-                        ?? r82 = r8;
+                        Object r82 = r8;
                         if (wVar != null) {
                             r82 = wVar;
                         }
@@ -612,7 +612,7 @@ public final class k0 implements y71.j {
         int i7;
         Object obj2;
         c10.k kVar;
-        ?? r6;
+        java.util.ArrayList r6;
         List<c10.h> list;
         c10.i iVar;
         c10.g gVar;
@@ -621,7 +621,7 @@ public final class k0 implements y71.j {
         int i8;
         Object obj3;
         cc0.k kVar2;
-        ?? r62;
+        Object r62;
         List<cc0.h> list2;
         cc0.i iVar2;
         cc0.g gVar2;

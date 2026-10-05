@@ -43,7 +43,7 @@ public final class j0 extends l0 {
     /* JADX WARN: Type inference failed for: r4v1, types: [java.io.Serializable, java.io.Serializable[], java.lang.Object] */
     @Override // x6.l0
     public final void e(Bundle bundle, String str, Object obj) {
-        ?? r42 = (Serializable[]) obj;
+        Object r42 = (Serializable[]) obj;
         k71.k.g(str, "key");
         this.f33844r.cast(r42);
         bundle.putSerializable(str, r42);

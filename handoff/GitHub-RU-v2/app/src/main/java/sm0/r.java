@@ -1322,7 +1322,7 @@ public final class r {
                         }
                         break;
                     case 5:
-                        ?? r1 = lVar2.D;
+                        j71.c r1 = (j71.c) (lVar2.D);
                         cVar2 = lVar2.C;
                         str14 = lVar2.B;
                         str15 = lVar2.A;

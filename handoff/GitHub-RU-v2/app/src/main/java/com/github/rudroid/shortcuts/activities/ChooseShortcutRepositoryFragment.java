@@ -171,7 +171,7 @@ public final class ChooseShortcutRepositoryFragment extends Hilt_ChooseShortcutR
         BindingFragment.D4(this, this.J0, C3(2131952351), C3(2131954622), 8);
         ((TextView) ((k5.f) B4()).A.findViewById(2131363450)).setSingleLine(false);
         this.H0 = new xa.a(i4(), this);
-        ?? recyclerView = B4().Q.getRecyclerView();
+        Object recyclerView = B4().Q.getRecyclerView();
         recyclerView.getContext();
         recyclerView.setLayoutManager(new LinearLayoutManager(1));
         l1 l1Var = this.I0;

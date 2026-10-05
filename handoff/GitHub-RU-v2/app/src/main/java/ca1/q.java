@@ -25,7 +25,7 @@ public class q extends a5.s {
             if ((i & 1) == 0) {
                 if (!(jVar2.r instanceof g)) {
                     int i2 = 0;
-                    ?? r6 = jVar2.H();
+                    ca1.o r6 = (ca1.o) (jVar2.H());
                     while (i2 < 5 && r6 != 0) {
                         int i3 = r6.u.u;
                         if ((i3 & 4) == 0 && (i3 & 1) != 0) {

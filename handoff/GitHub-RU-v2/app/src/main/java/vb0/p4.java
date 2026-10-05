@@ -898,7 +898,7 @@ public final class p4 implements y71.j {
         int i16;
         o01.c cVar2;
         o01.a aVar;
-        ?? r5;
+        java.util.ArrayList r5;
         yo yoVar;
         yo yoVar2;
         List list;
@@ -907,7 +907,7 @@ public final class p4 implements y71.j {
         pp ppVar;
         pp ppVar2;
         o01.a aVar2;
-        ?? r52;
+        Object r52;
         yo yoVar3;
         yo yoVar4;
         List list2;
@@ -1780,7 +1780,7 @@ public final class p4 implements y71.j {
                             ht htVar = ysVar.a;
                             String str21 = null;
                             ct ctVar3 = htVar != null ? htVar.b : null;
-                            ?? r9 = x61.r.r;
+                            java.util.List r9 = (java.util.List) (x61.r.r);
                             if (ctVar3 != null) {
                                 List list6 = htVar.b.a.b;
                                 List list7 = r9;

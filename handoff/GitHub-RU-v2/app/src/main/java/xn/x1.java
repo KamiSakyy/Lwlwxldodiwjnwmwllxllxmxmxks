@@ -87,7 +87,7 @@ public final class x1 implements KSerializer {
                 if (!(w1Var instanceof u1)) {
                     throw new NoWhenBranchMatchedException();
                 }
-                ?? r6 = ((u1) w1Var).a;
+                java.lang.Object r6 = (java.lang.Object) (((u1) w1Var).a);
                 ArrayList arrayList = new ArrayList(x61.n.F((Iterable) r6, 10));
                 for (String str2 : r6) {
                     k81.g0 g0Var5 = l81.j.a;

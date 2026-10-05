@@ -211,7 +211,7 @@ public final class r6 implements y71.j {
     private final Object d(a71.c cVar, Object obj) {
         s7 s7Var;
         int i;
-        ?? r5;
+        java.util.ArrayList r5;
         List<rt> list;
         tt ttVar;
         if (cVar instanceof s7) {
@@ -407,7 +407,7 @@ public final class r6 implements y71.j {
                     wu wuVar = nuVar.a;
                     String str2 = null;
                     ru ruVar3 = wuVar != null ? wuVar.b : null;
-                    ?? r6 = x61.r.r;
+                    java.util.List r6 = (java.util.List) (x61.r.r);
                     if (ruVar3 != null) {
                         List list = wuVar.b.a.b;
                         List list2 = r6;
@@ -920,7 +920,7 @@ public final class r6 implements y71.j {
         int i3;
         o01.c cVar2;
         o01.a aVar;
-        ?? r5;
+        java.util.ArrayList r5;
         cq cqVar;
         cq cqVar2;
         List list;
@@ -929,7 +929,7 @@ public final class r6 implements y71.j {
         tq tqVar;
         tq tqVar2;
         o01.a aVar2;
-        ?? r52;
+        Object r52;
         cq cqVar3;
         cq cqVar4;
         List list2;

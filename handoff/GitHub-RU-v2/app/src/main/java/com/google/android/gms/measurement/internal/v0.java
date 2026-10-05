@@ -96,11 +96,11 @@ public final class v0 implements Runnable {
         Throwable th2;
         Map map10;
         IOException iOException2;
-        ?? r8;
-        ?? r82;
+        boolean r8;
+        Object r82;
         Map map11;
         InputStream inputStream2;
-        ?? hasNext;
+        Object hasNext;
         switch (this.r) {
             case 0:
                 String str = this.u;
@@ -357,7 +357,7 @@ public final class v0 implements Runnable {
                                     httpURLConnection2.addRequestProperty("Content-Encoding", "gzip");
                                     httpURLConnection2.setFixedLengthStreamingMode(length2);
                                     httpURLConnection2.connect();
-                                    ?? outputStream3 = httpURLConnection2.getOutputStream();
+                                    Object outputStream3 = httpURLConnection2.getOutputStream();
                                     try {
                                         outputStream3.write(byteArray2);
                                         outputStream3.close();

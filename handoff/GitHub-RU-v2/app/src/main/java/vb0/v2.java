@@ -1733,7 +1733,7 @@ public final class v2 implements y71.j {
         SubscriptionState subscriptionState5;
         z2 z2Var;
         int i8;
-        ?? r13;
+        java.util.ArrayList r13;
         List<ra0.r> list8;
         w80.a2 a2Var;
         String str7;
@@ -1742,7 +1742,7 @@ public final class v2 implements y71.j {
         String str8;
         b3 b3Var;
         int i10;
-        ?? r2;
+        java.util.ArrayList r2;
         List<w80.u3> list9;
         d3 d3Var;
         int i12;
@@ -1907,7 +1907,7 @@ public final class v2 implements y71.j {
                                                 arrayList4 = arrayList3;
                                                 rVar2 = null;
                                             } else {
-                                                ?? arrayList6 = new ArrayList();
+                                                ArrayList arrayList6 = new ArrayList();
                                                 for (i60.m mVar : list7) {
                                                     ArrayList arrayList7 = arrayList3;
                                                     String str22 = mVar != null ? mVar.a : null;
@@ -1927,7 +1927,7 @@ public final class v2 implements y71.j {
                                                 z16 = z15;
                                                 rVar3 = null;
                                             } else {
-                                                ?? arrayList8 = new ArrayList();
+                                                ArrayList arrayList8 = new ArrayList();
                                                 Iterator it2 = list6.iterator();
                                                 while (it2.hasNext()) {
                                                     Iterator it3 = it2;
@@ -2232,7 +2232,7 @@ public final class v2 implements y71.j {
                                                     z4 = z3;
                                                     rVar = null;
                                                 } else {
-                                                    ?? arrayList11 = new ArrayList();
+                                                    ArrayList arrayList11 = new ArrayList();
                                                     for (i60.c cVar4 : list4) {
                                                         boolean z48 = z3;
                                                         String str30 = cVar4 != null ? cVar4.a : null;

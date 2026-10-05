@@ -232,7 +232,7 @@ public final class ShortcutsOverviewFragment extends Hilt_ShortcutsOverviewFragm
         com.github.rudroid.shortcuts.d0 d0Var = new com.github.rudroid.shortcuts.d0(this, this, new x0(this), this, i4());
         this.I0 = d0Var;
         this.J0 = new l7.x(new jf.a(d0Var));
-        ?? recyclerView = B4().Q.getRecyclerView();
+        Object recyclerView = B4().Q.getRecyclerView();
         recyclerView.getContext();
         recyclerView.setLayoutManager(new LinearLayoutManager(1));
         com.github.rudroid.shortcuts.d0 d0Var2 = this.I0;

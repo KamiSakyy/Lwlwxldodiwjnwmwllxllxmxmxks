@@ -39,7 +39,7 @@ public final /* synthetic */ class k4 implements j71.c {
                 for (Object obj2 : list) {
                     ZonedDateTime parse = ZonedDateTime.parse(((xn.s0) obj2).c);
                     k71.k.f(parse, "parse(...)");
-                    ?? withZoneSameInstant = ZonedDateTime.now().withZoneSameInstant(ZoneId.systemDefault());
+                    Object withZoneSameInstant = ZonedDateTime.now().withZoneSameInstant(ZoneId.systemDefault());
                     ChronoZonedDateTime<LocalDate> withZoneSameInstant2 = parse.withZoneSameInstant(ZoneId.systemDefault());
                     l.a aVar = withZoneSameInstant2.isAfter(withZoneSameInstant.minusDays(1L)) ? l.a.f10034r : withZoneSameInstant2.isAfter(withZoneSameInstant.minusDays(2L)) ? l.a.f10035s : withZoneSameInstant2.isAfter(withZoneSameInstant.minusWeeks(1L)) ? l.a.f10036t : withZoneSameInstant2.isAfter(withZoneSameInstant.minusMonths(1L)) ? l.a.f10037u : l.a.f10038v;
                     Object obj3 = linkedHashMap.get(aVar);

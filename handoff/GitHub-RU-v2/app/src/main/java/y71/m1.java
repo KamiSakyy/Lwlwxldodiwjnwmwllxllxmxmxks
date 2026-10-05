@@ -378,7 +378,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
                     int length3 = cVarArr.length;
                     cVarArr = cVarArr;
                     if (length >= length3) {
-                        ?? copyOf = Arrays.copyOf(cVarArr, Math.max(2, cVarArr.length * 2));
+                        Object copyOf = Arrays.copyOf(cVarArr, Math.max(2, cVarArr.length * 2));
                         k71.k.f((Object) copyOf, "copyOf(...)");
                         cVarArr = copyOf;
                     }

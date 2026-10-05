@@ -37,7 +37,7 @@ public abstract class b0 {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r0v0, types: [da1.m] */
     static {
-        ?? r0 = new b0() { // from class: da1.m
+        b0 r0 = new b0() { // from class: da1.m;
             @Override // da1.b0
             public final boolean d(s0 s0Var, b bVar) {
                 if (b0.a(s0Var)) {

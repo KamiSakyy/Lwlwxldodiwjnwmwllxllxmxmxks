@@ -160,7 +160,7 @@ public final class f1 implements y71.j {
                                     }
                                     arrayList3 = arrayList4;
                                 }
-                                ?? x0 = x61.m.x0(arrayList3, 4);
+                                Object x0 = x61.m.x0(arrayList3, 4);
                                 if (x0.isEmpty()) {
                                     List x02 = x61.m.x0(arrayList2, 4);
                                     x0 = new ArrayList(x61.n.F(x02, 10));

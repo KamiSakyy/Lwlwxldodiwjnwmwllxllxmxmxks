@@ -60,7 +60,7 @@ public abstract class a {
     /* JADX WARN: Type inference failed for: r4v1 */
     /* JADX WARN: Type inference failed for: r4v7, types: [java.util.ArrayList] */
     public static final d d(h hVar, String str) {
-        ?? r4;
+        java.util.ArrayList r4;
         String str2;
         rc0.k kVar;
         List<f> list;

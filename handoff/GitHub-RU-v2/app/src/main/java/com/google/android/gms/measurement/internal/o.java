@@ -81,7 +81,7 @@ public final class o extends i4 {
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         z();
         A();
-        ?? arrayList = new ArrayList();
+        ArrayList arrayList = new ArrayList();
         Cursor cursor = null;
         try {
             try {
@@ -882,7 +882,7 @@ public final class o extends i4 {
         SQLiteException e;
         Cursor cursor;
         SQLiteDatabase o0 = o0();
-        ?? r1 = 0;
+        android.database.Cursor r1 = (android.database.Cursor) (0);
         try {
             try {
                 cursor = o0.rawQuery("select app_id from queue order by has_realtime desc, rowid asc limit 1;", null);
@@ -1432,7 +1432,7 @@ public final class o extends i4 {
         c21.u.g(str);
         z();
         A();
-        ?? r5 = {str};
+        android.database.Cursor r5 = (android.database.Cursor) ({str});
         Cursor cursor = null;
         r2 = null;
         r2 = null;
@@ -1829,7 +1829,7 @@ public final class o extends i4 {
         String str3;
         Cursor cursor;
         SQLiteDatabase o0;
-        ?? isEmpty;
+        Object isEmpty;
         String[] strArr;
         String str4;
         String string;
@@ -2394,7 +2394,7 @@ public final class o extends i4 {
         c21.u.d(str);
         z();
         A();
-        ?? arrayList = new ArrayList();
+        ArrayList arrayList = new ArrayList();
         Cursor cursor = null;
         try {
             try {
@@ -2476,7 +2476,7 @@ public final class o extends i4 {
         c21.u.d(str);
         z();
         A();
-        ?? arrayList = new ArrayList();
+        ArrayList arrayList = new ArrayList();
         try {
             ArrayList arrayList2 = new ArrayList(3);
             String str6 = str;

@@ -50,7 +50,7 @@ public final class t0 implements Parcelable {
         parcel.writeSerializable(this.t);
         parcel.writeString(this.u);
         parcel.writeInt(this.v ? 1 : 0);
-        ?? r0 = this.w;
+        java.util.Map r0 = (java.util.Map) (this.w);
         parcel.writeInt(r0.size());
         for (Map.Entry entry : r0.entrySet()) {
             parcel.writeString(((y) entry.getKey()).r);

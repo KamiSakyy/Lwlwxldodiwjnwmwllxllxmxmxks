@@ -440,7 +440,7 @@ public final class t2 implements y71.j {
                                         z15 = z14;
                                         rVar2 = null;
                                     } else {
-                                        ?? arrayList7 = new ArrayList();
+                                        ArrayList arrayList7 = new ArrayList();
                                         for (yg0.m mVar : list9) {
                                             boolean z30 = z14;
                                             String str18 = mVar != null ? mVar.a : null;
@@ -460,7 +460,7 @@ public final class t2 implements y71.j {
                                         arrayList4 = arrayList3;
                                         rVar3 = null;
                                     } else {
-                                        ?? arrayList8 = new ArrayList();
+                                        ArrayList arrayList8 = new ArrayList();
                                         Iterator it2 = list8.iterator();
                                         while (it2.hasNext()) {
                                             Iterator it3 = it2;
@@ -767,7 +767,7 @@ public final class t2 implements y71.j {
                                             z4 = z3;
                                             rVar = null;
                                         } else {
-                                            ?? arrayList11 = new ArrayList();
+                                            ArrayList arrayList11 = new ArrayList();
                                             for (yg0.c cVar4 : list6) {
                                                 boolean z52 = z3;
                                                 String str28 = cVar4 != null ? cVar4.a : null;
@@ -1911,7 +1911,7 @@ public final class t2 implements y71.j {
         int i10;
         n3 n3Var;
         int i12;
-        ?? r1;
+        java.util.ArrayList r1;
         List<ka0> list;
         q3 q3Var;
         int i13;
@@ -1950,7 +1950,7 @@ public final class t2 implements y71.j {
         dl0.l0 l0Var4;
         e4 e4Var;
         int i18;
-        ?? r13;
+        java.util.ArrayList r13;
         List<il0.r> list3;
         oj0.e2 e2Var;
         String str;
@@ -1959,7 +1959,7 @@ public final class t2 implements y71.j {
         String str2;
         g4 g4Var;
         int i20;
-        ?? r2;
+        java.util.ArrayList r2;
         List<oj0.z3> list4;
         s4 s4Var;
         int i22;
@@ -2101,7 +2101,7 @@ public final class t2 implements y71.j {
                                             arrayList11 = arrayList12;
                                         }
                                         arrayList = arrayList11;
-                                        ?? x0 = x61.m.x0(arrayList10, 4);
+                                        Object x0 = x61.m.x0(arrayList10, 4);
                                         if (x0.isEmpty()) {
                                             List x02 = x61.m.x0(arrayList9, 4);
                                             x0 = new ArrayList(x61.n.F(x02, 10));
@@ -2256,7 +2256,7 @@ public final class t2 implements y71.j {
                             List<qf> list7 = nfVar.b;
                             x61.r rVar = null;
                             if (list7 != null) {
-                                ?? arrayList15 = new ArrayList();
+                                ArrayList arrayList15 = new ArrayList();
                                 for (qf qfVar : list7) {
                                     yz0.t1 N = qfVar != null ? com.google.android.gms.internal.measurement.i4.N(qfVar.b) : null;
                                     if (N != null) {

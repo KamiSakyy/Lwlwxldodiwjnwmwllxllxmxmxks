@@ -327,7 +327,7 @@ public final class r7 implements y71.j {
     private final Object g(a71.c cVar, Object obj) {
         vm0.p pVar;
         int i;
-        ?? r4;
+        java.util.ArrayList r4;
         if (cVar instanceof vm0.p) {
             pVar = (vm0.p) cVar;
             int i2 = pVar.v;
@@ -822,10 +822,10 @@ public final class r7 implements y71.j {
         o8 o8Var;
         boolean z3;
         ArrayList arrayList;
-        ?? r5;
+        java.util.ArrayList r5;
         boolean z4;
         int i8;
-        ?? r7;
+        java.util.ArrayList r7;
         ea0.l1 l1Var;
         ZonedDateTime zonedDateTime;
         OrganizationNameAndAvatarUrl organizationNameAndAvatarUrl;

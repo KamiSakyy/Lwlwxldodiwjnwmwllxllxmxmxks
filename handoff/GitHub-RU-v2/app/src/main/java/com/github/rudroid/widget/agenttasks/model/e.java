@@ -37,7 +37,7 @@ public final class e<T> implements y71.j {
                 i = dVar.v;
                 if (i != 0) {
                     y.j(obj2);
-                    ?? r1 = ((xz0.g) obj).a;
+                    java.lang.Object r1 = (java.lang.Object) (((xz0.g) obj).a);
                     ArrayList arrayList = new ArrayList();
                     for (Object obj3 : r1) {
                         if (obj3 instanceof j3) {

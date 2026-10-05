@@ -48,9 +48,9 @@ public final class r<T> implements y71.j {
         q qVar;
         int i;
         int i10;
-        ?? arrayList;
+        Object arrayList;
         ArrayList a10;
-        ?? arrayList2;
+        Object arrayList2;
         List list;
         t tVar = this.f16678s;
         com.github.rudroid.activities.util.c cVar2 = tVar.f16681t;
@@ -67,16 +67,16 @@ public final class r<T> implements y71.j {
                     i2 i2Var = (i2) obj;
                     x61.r rVar = x61.r.r;
                     if (i2Var != null) {
-                        ?? r22 = tVar.f16682u;
+                        Object r22 = tVar.f16682u;
                         boolean f6 = cVar2.d().f(com.github.rudroid.common.a.D);
                         boolean f10 = cVar2.d().f(com.github.rudroid.common.a.P);
                         boolean f11 = cVar2.d().f(com.github.rudroid.common.a.S);
                         r22.getClass();
-                        ?? r10 = i2Var.A;
+                        java.util.List r10 = (java.util.List) (i2Var.A);
                         boolean z10 = i2Var.g;
                         ArrayList arrayList3 = new ArrayList();
                         boolean z11 = i2Var.M;
-                        ?? r14 = i2Var.x;
+                        java.util.List r14 = (java.util.List) (i2Var.x);
                         b.i iVar = new b.i(2131954781, z11, p.f16514r);
                         if (r14.isEmpty()) {
                             arrayList = d0.n(new b.h(2131954848));
@@ -89,7 +89,7 @@ public final class r<T> implements y71.j {
                         }
                         arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(iVar), (Iterable) arrayList), d0.n(new b.l(2131954781))));
                         boolean z12 = i2Var.N;
-                        ?? r72 = i2Var.y;
+                        Object r72 = i2Var.y;
                         arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(new b.i(2131954789, z12, p.f16515s)), r72.isEmpty() ? d0.n(new b.h(2131954850)) : d0.n(new b.j(r72))), d0.n(new b.l(2131954789))));
                         if (i2Var.r0) {
                             IssueType issueType = i2Var.q0;
@@ -98,7 +98,7 @@ public final class r<T> implements y71.j {
                         if (f6 || !f10) {
                             a10 = (!f6 || f10) ? r22.a(r10, z10) : r22.a(r10, z10);
                         } else {
-                            ?? r23 = i2Var.z;
+                            Object r23 = i2Var.z;
                             b.i iVar2 = new b.i(2131954875, z10, p.f16516t);
                             if (r23.isEmpty()) {
                                 list = d0.n(new b.h(2131954854));
@@ -118,7 +118,7 @@ public final class r<T> implements y71.j {
                         v2 v2Var = i2Var.w;
                         arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(new b.i(2131954847, z10, p.f16518v)), v2Var == null ? d0.n(new b.h(2131954852)) : d0.n(new b.d(v2Var))), d0.n(new b.l(2131954847))));
                         boolean z13 = i2Var.F;
-                        ?? r73 = i2Var.K;
+                        Object r73 = i2Var.K;
                         b.i iVar3 = new b.i(r73.isEmpty() ? 2131954792 : x61.m.U((List) r73) instanceof m2 ? 2131954790 : 2131954793, z13, p.f16519w);
                         if (r73.isEmpty()) {
                             arrayList2 = d0.n(new b.h(2131954851));

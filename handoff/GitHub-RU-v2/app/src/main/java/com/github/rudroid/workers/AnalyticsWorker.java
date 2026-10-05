@@ -97,7 +97,7 @@ public final class AnalyticsWorker extends CoroutineWorker {
                 Context context = ((w) this).a;
                 char c3 = 3;
                 char c4 = 2;
-                ?? r102 = 0;
+                Object r102 = 0;
                 boolean z3 = true;
                 z3 = true;
                 List list4 = null;
@@ -319,7 +319,7 @@ public final class AnalyticsWorker extends CoroutineWorker {
         Context context2 = ((w) this).a;
         char c32 = 3;
         char c42 = 2;
-        ?? r1022 = 0;
+        Object r1022 = 0;
         boolean z32 = true;
         z32 = true;
         List list42 = null;

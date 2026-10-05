@@ -36,7 +36,7 @@ public final class g extends j {
     /* JADX WARN: Type inference failed for: r2v8, types: [ca1.o] */
     /* JADX WARN: Type inference failed for: r2v9 */
     public final j K() {
-        ?? H = H();
+        Object H = H();
         while (true) {
             if (H == 0) {
                 String str = this.u.r;
@@ -64,7 +64,7 @@ public final class g extends j {
                 break;
             }
         }
-        ?? H2 = H.H();
+        Object H2 = H.H();
         while (H2 != 0) {
             if (!H2.p("body") && !H2.p("frameset")) {
                 while (true) {

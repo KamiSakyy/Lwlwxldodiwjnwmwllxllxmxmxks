@@ -22,7 +22,7 @@ public final class b2 implements j {
     */
     public final Object a(c71.c cVar) {
         a2 a2Var;
-        ?? r2;
+        boolean r2;
         z71.u uVar;
         b2 b2Var;
         try {

@@ -169,7 +169,7 @@ public abstract class d extends LinearLayout {
             return;
         }
         for (int i2 = firstVisibleChildIndex + 1; i2 < getChildCount(); i2++) {
-            ?? r3 = (MaterialButton) getChildAt(i2);
+            com.google.android.material.button.MaterialButton r3 = (com.google.android.material.button.MaterialButton) ((MaterialButton) getChildAt(i2));
             MaterialButton materialButton = (MaterialButton) getChildAt(i2 - 1);
             if (this.y <= 0) {
                 i = Math.min(r3.getStrokeWidth(), materialButton.getStrokeWidth());
@@ -216,7 +216,7 @@ public abstract class d extends LinearLayout {
             d();
             this.A = true;
             super.addView(view, i, layoutParams);
-            ?? r2 = (MaterialButton) view;
+            com.google.android.material.button.MaterialButton r2 = (com.google.android.material.button.MaterialButton) ((MaterialButton) view);
             setGeneratedIdIfNeeded(r2);
             r2.setOnPressedChangeListenerInternal(this.t);
             this.r.add(r2.getShapeAppearanceModel());
@@ -306,7 +306,7 @@ public abstract class d extends LinearLayout {
     /* JADX WARN: Type inference failed for: r1v2, types: [android.view.View, com.google.android.material.button.MaterialButton] */
     public final void d() {
         for (int i = 0; i < getChildCount(); i++) {
-            ?? r1 = (MaterialButton) getChildAt(i);
+            com.google.android.material.button.MaterialButton r1 = (com.google.android.material.button.MaterialButton) ((MaterialButton) getChildAt(i));
             LinearLayout.LayoutParams layoutParams = r1.M;
             if (layoutParams != null) {
                 r1.setLayoutParams(layoutParams);
@@ -338,7 +338,7 @@ public abstract class d extends LinearLayout {
             int lastVisibleChildIndex = getLastVisibleChildIndex();
             int i2 = 0;
             while (i2 < childCount) {
-                ?? r6 = (MaterialButton) getChildAt(i2);
+                com.google.android.material.button.MaterialButton r6 = (com.google.android.material.button.MaterialButton) ((MaterialButton) getChildAt(i2));
                 if (r6.getVisibility() != 8) {
                     boolean z = i2 == firstVisibleChildIndex;
                     boolean z2 = i2 == lastVisibleChildIndex;

@@ -362,7 +362,7 @@ public final class q extends i4 implements l81.i {
         boolean z;
         boolean z2;
         char c;
-        ?? r13;
+        Object r13;
         String H;
         a7.q qVar = this.d;
         o1 o1Var = (o1) qVar.c;
@@ -545,7 +545,7 @@ public final class q extends i4 implements l81.i {
             }
         } else {
             int i11 = this.f;
-            ?? r4 = i11 % 2 != 0;
+            Object r4 = i11 % 2 != 0;
             if (r4 != true) {
                 qVar.k(':');
             } else if (i11 != -1) {

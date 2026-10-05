@@ -41,7 +41,7 @@ public final class k implements View.OnClickListener {
                 }
                 break;
             case 1:
-                ?? r4 = (d31.j) this.s;
+                d31.j r4 = (d31.j) ((d31.j) this.s);
                 if (r4.B && r4.isShowing()) {
                     if (!r4.D) {
                         TypedArray obtainStyledAttributes = r4.getContext().obtainStyledAttributes(new int[]{R.attr.windowCloseOnTouchOutside});

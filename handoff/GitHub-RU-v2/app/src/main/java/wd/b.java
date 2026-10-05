@@ -14,7 +14,7 @@ public final class b {
         if (d6Var.i || !i2Var.a0 || !i2Var.E || !i2Var.g) {
             return false;
         }
-        ?? r12 = i2Var.Z;
+        Object r12 = i2Var.Z;
         if (r12.isEmpty()) {
             return false;
         }

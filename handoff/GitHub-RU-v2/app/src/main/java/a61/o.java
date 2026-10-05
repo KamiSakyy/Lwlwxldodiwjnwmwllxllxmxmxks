@@ -850,7 +850,7 @@ public final class o extends c71.j implements j71.e {
                 }
                 sy.y.j(obj);
                 h0.x xVar3 = (h0.x) this.x;
-                ?? r2 = (c71.j) this.y;
+                j71.f r2 = (j71.f) ((c71.j) this.y);
                 h0.n nVar = (h0.n) ((d51.d) obj3).i;
                 this.w = 1;
                 return r2.f(nVar, xVar3, this) == aVar22 ? aVar22 : a0Var;
@@ -976,7 +976,7 @@ public final class o extends c71.j implements j71.e {
                     return a0Var;
                 }
                 sy.y.j(obj);
-                ?? r1 = (c71.j) this.x;
+                j71.f r1 = (j71.f) ((c71.j) this.x);
                 e2 e2Var = (e2) this.y;
                 c2.b bVar4 = new c2.b(((q2.u) obj3).c);
                 this.w = 1;

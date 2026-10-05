@@ -35,7 +35,7 @@ public class BottomSheetDialogFragment extends AppCompatDialogFragment {
             TypedValue typedValue = new TypedValue();
             i = y3.getTheme().resolveAttribute(2130968713, typedValue, true) ? typedValue.resourceId : 2132017932;
         }
-        ?? jVar = new j(y3, i);
+        j jVar = new j(y3, i);
         jVar.B = true;
         jVar.C = true;
         jVar.H = new h(jVar);

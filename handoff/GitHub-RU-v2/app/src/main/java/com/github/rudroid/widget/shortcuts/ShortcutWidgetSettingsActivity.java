@@ -156,7 +156,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                                         if (sVar4.S(intValue3 & 1, (intValue3 & 19) != 18)) {
                                             List list4 = list2;
                                             boolean isEmpty = list4.isEmpty();
-                                            ?? r4 = shortcutWidgetSettingsActivity2;
+                                            ShortcutWidgetSettingsActivity r4 = shortcutWidgetSettingsActivity2;
                                             if (isEmpty) {
                                                 sVar4.c0(1964911212);
                                                 sVar4.q(false);

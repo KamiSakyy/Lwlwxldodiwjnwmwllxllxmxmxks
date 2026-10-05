@@ -161,7 +161,7 @@ public final class f extends u31.j implements Drawable.Callback, l {
     public final void F() {
         e eVar = (e) this.b1.get();
         if (eVar != null) {
-            ?? r0 = (Chip) eVar;
+            com.google.android.material.chip.Chip r0 = (com.google.android.material.chip.Chip) ((Chip) eVar);
             r0.b(r0.H);
             r0.requestLayout();
             r0.invalidateOutline();

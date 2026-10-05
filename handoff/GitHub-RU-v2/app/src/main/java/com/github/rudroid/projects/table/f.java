@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class f {
     /* JADX WARN: Type inference failed for: r8v1, types: [java.lang.Iterable, java.lang.Object] */
     public static com.github.rudroid.common.y a(l01.n0 n0Var, l01.l0 l0Var, int i, boolean z10) {
-        ?? r82 = n0Var.b;
+        Object r82 = n0Var.b;
         ArrayList arrayList = new ArrayList(x61.n.F((Iterable) r82, 10));
         for (l01.v vVar : r82) {
             l01.p0 p0Var = vVar.a;

@@ -70,7 +70,7 @@ public abstract class c {
                 }
             }
         }
-        ?? r0 = r.r;
+        x61.r r0 = (x61.r) (r.r);
         if (arrayList == null) {
             arrayList = r0;
         }

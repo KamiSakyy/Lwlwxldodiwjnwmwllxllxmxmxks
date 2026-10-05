@@ -270,7 +270,7 @@ public final class c implements List, l71.c {
             case k5.f.J:
                 int i = this.f27897u;
                 for (int i10 = this.f27896t; i10 < i; i10++) {
-                    ?? r22 = this.f27895s;
+                    Object r22 = this.f27895s;
                     if (k.b(r22.get(i10), obj)) {
                         r22.remove(i10);
                         this.f27897u--;
@@ -281,7 +281,7 @@ public final class c implements List, l71.c {
             default:
                 int i11 = this.f27897u;
                 for (int i12 = this.f27896t; i12 < i11; i12++) {
-                    ?? r23 = this.f27895s;
+                    Object r23 = this.f27895s;
                     if (k.b(r23.get(i12), obj)) {
                         r23.remove(i12);
                         this.f27897u--;
@@ -330,7 +330,7 @@ public final class c implements List, l71.c {
                 int i11 = this.f27896t;
                 if (i11 <= i10) {
                     while (true) {
-                        ?? r32 = this.f27895s;
+                        Object r32 = this.f27895s;
                         if (!collection.contains(r32.get(i10))) {
                             r32.remove(i10);
                             this.f27897u--;
@@ -350,7 +350,7 @@ public final class c implements List, l71.c {
                 int i14 = this.f27896t;
                 if (i14 <= i13) {
                     while (true) {
-                        ?? r33 = this.f27895s;
+                        Object r33 = this.f27895s;
                         if (!collection.contains(r33.get(i13))) {
                             r33.remove(i13);
                             this.f27897u--;

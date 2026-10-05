@@ -88,7 +88,7 @@ public abstract class b4 implements i3.d {
     /* JADX WARN: Type inference failed for: r11v2, types: [java.util.ArrayList] */
     public static final LinkedHashMap C(ri0.v vVar, dn dnVar) {
         x61.r rVar;
-        ?? r112;
+        ArrayList r112;
         DiffLineType diffLineType;
         List list;
         ri0.o7 o7Var;
@@ -454,13 +454,13 @@ public abstract class b4 implements i3.d {
         x61.r rVar;
         int intValue;
         String str2;
-        ?? r0;
+        java.util.List r0;
         gn0.s8 s8Var;
         String str3;
-        ?? r15;
+        java.util.List r15;
         int intValue2;
         String str4;
-        ?? r2;
+        java.util.List r2;
         w61.p pVar = wz0.d.a;
         wz0.e b = wz0.d.b(aVar.b, wz0.d.a(sy.w.z(aVar.a)), true);
         k71.k.g(aVar, "<this>");

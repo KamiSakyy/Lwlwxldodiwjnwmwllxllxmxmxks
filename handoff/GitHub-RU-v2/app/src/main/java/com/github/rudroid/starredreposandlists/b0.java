@@ -23,7 +23,7 @@ final class b0<T> implements y71.j {
         h0 h0Var = this.r;
         h0Var.x = iVar;
         y1 y1Var = h0Var.A;
-        ?? r5 = ((f8) kVar.s).c;
+        java.util.List r5 = (java.util.List) (((f8) kVar.s).c);
         if (r5.isEmpty() && c4Var.a.isEmpty()) {
             com.github.rudroid.utilities.ui.g1.Companion.getClass();
             com.github.rudroid.utilities.ui.h0 h0Var2 = new com.github.rudroid.utilities.ui.h0(null);

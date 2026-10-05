@@ -849,7 +849,7 @@ public final class i0 implements y71.j {
         we0.b0 b0Var2;
         p0 p0Var;
         int i7;
-        ?? arrayList;
+        Object arrayList;
         kc0.a6 a6Var;
         kc0.z5 z5Var;
         x01.i iVar;
@@ -1147,7 +1147,7 @@ public final class i0 implements y71.j {
                             kc0.b6 b6Var = z5Var2 != null ? z5Var2.c : null;
                             x61.r<kc0.y5> rVar2 = x61.r.r;
                             if (b6Var != null) {
-                                ?? r2 = z5Var2.c.a.b;
+                                java.util.ArrayList r2 = (java.util.ArrayList) (z5Var2.c.a.b);
                                 if (r2 != 0) {
                                     rVar2 = r2;
                                 }
@@ -1427,7 +1427,7 @@ public final class i0 implements y71.j {
                                     } else {
                                         i12 = i43;
                                         str = str22;
-                                        ?? arrayList9 = new ArrayList(x61.n.F(list, 10));
+                                        ArrayList arrayList9 = new ArrayList(x61.n.F(list, 10));
                                         for (oe0.c cVar5 : list) {
                                             oe0.d dVar4 = cVar5 != null ? cVar5.b : null;
                                             if (dVar4 == null || (checkStatusState = sy.u.n(dVar4.a)) == null) {

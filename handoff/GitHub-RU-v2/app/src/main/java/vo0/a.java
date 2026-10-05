@@ -111,7 +111,7 @@ public abstract class a {
     /* JADX WARN: Type inference failed for: r12v1 */
     /* JADX WARN: Type inference failed for: r12v3, types: [java.util.ArrayList] */
     public static final j f(g3 g3Var) {
-        ?? r12;
+        java.util.ArrayList r12;
         List<e3> list;
         c cVar = g3Var.j;
         d3 d3Var = g3Var.g;

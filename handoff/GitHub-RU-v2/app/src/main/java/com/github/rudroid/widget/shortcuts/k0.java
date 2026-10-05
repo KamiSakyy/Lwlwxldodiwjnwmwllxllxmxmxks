@@ -43,7 +43,7 @@ final class k0 extends c71.j implements j71.e {
         b71.a aVar = b71.a.r;
         int i = this.v;
         w61.a0 a0Var = w61.a0.a;
-        ?? r3 = this.w;
+        ShortcutWidgetSettingsActivity r3 = this.w;
         if (i == 0) {
             sy.y.j(obj);
             ShortcutWidgetSettingsActivity.a aVar2 = ShortcutWidgetSettingsActivity.Companion;

@@ -1328,7 +1328,7 @@ public final class q {
                         break;
                     case 5:
                         e50.d dVar3 = kVar2.E;
-                        ?? r1 = kVar2.D;
+                        j71.c r1 = (j71.c) (kVar2.D);
                         cVar2 = kVar2.C;
                         str16 = kVar2.B;
                         str17 = kVar2.A;

@@ -209,7 +209,7 @@ public final class IssueTemplatesActivity extends com.github.rudroid.templates.b
         super.onCreate(bundle);
         M0(getString(2131952352), getString(2131954768, P0(), O0()));
         this.w0 = new g(this);
-        ?? recyclerView = J0().P.getRecyclerView();
+        Object recyclerView = J0().P.getRecyclerView();
         recyclerView.getContext();
         recyclerView.setLayoutManager(new LinearLayoutManager(1));
         g gVar = this.w0;

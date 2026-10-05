@@ -99,10 +99,10 @@ public final class e8 implements y71.j {
         boolean z2;
         ArrayList arrayList;
         boolean z3;
-        ?? r6;
+        java.util.ArrayList r6;
         boolean z4;
         int i2;
-        ?? r7;
+        java.util.ArrayList r7;
         fw0.l1 l1Var;
         if (cVar instanceof l9) {
             l9Var = (l9) cVar;

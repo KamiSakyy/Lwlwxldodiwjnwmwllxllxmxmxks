@@ -41,7 +41,7 @@ public final class b extends d5 {
     public final void T(Typeface typeface, boolean z) {
         switch (this.a) {
             case 0:
-                ?? r2 = (Chip) this.b;
+                com.google.android.material.chip.Chip r2 = (com.google.android.material.chip.Chip) ((Chip) this.b);
                 f fVar = r2.v;
                 r2.setText(fVar.d1 ? fVar.f0 : r2.getText());
                 r2.requestLayout();

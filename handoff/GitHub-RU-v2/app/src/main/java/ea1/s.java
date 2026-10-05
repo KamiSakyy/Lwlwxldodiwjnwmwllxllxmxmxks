@@ -165,7 +165,7 @@ public final class s implements AutoCloseable {
         t0Var.t();
         da1.a aVar = t0Var.r;
         char[] cArr = u;
-        ?? eVar = aVar.x0(cArr) ? new e(8) : b0();
+        Object eVar = aVar.x0(cArr) ? new e(8) : b0();
         while (true) {
             char c = t0Var.t() ? ' ' : (char) 0;
             if (!aVar.x0(cArr)) {

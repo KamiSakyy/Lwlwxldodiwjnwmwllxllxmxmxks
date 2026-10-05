@@ -272,7 +272,7 @@ public final class c {
     /* JADX WARN: Type inference failed for: r1v0, types: [android.view.View, com.google.android.material.card.MaterialCardView] */
     public final void m() {
         boolean z2 = this.r;
-        ?? r1 = this.a;
+        MaterialCardView r1 = this.a;
         if (!z2) {
             r1.setBackgroundInternal(d(this.c));
         }

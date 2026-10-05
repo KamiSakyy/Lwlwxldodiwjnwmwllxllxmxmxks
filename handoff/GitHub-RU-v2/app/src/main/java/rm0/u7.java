@@ -202,7 +202,7 @@ public final class u7 implements y71.j {
                             ut utVar = null;
                             qt qtVar3 = null;
                             ArrayList S = (qtVar2 == null || (otVar2 = qtVar2.c) == null || (list2 = otVar2.c) == null) ? null : x61.m.S(list2);
-                            ?? r8 = x61.r.r;
+                            java.util.List r8 = (java.util.List) (x61.r.r);
                             if (S == null) {
                                 S = r8;
                             }
@@ -392,7 +392,7 @@ public final class u7 implements y71.j {
                             y71.j jVar5 = (y71.j) this.s;
                             ux uxVar = (ux) obj;
                             ArrayList S3 = (xxVar3 == null || (vxVar2 = xxVar3.d) == null || (list6 = vxVar2.c) == null) ? null : x61.m.S(list6);
-                            ?? r9 = x61.r.r;
+                            java.util.List r9 = (java.util.List) (x61.r.r);
                             if (S3 == null) {
                                 S3 = r9;
                             }
@@ -838,7 +838,7 @@ public final class u7 implements y71.j {
                             ew ewVar = null;
                             aw awVar3 = null;
                             ArrayList S7 = (awVar2 == null || (yvVar2 = awVar2.c) == null || (list9 = yvVar2.c) == null) ? null : x61.m.S(list9);
-                            ?? r82 = x61.r.r;
+                            java.util.List r82 = (java.util.List) (x61.r.r);
                             if (S7 == null) {
                                 S7 = r82;
                             }

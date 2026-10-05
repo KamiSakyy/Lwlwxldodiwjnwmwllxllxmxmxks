@@ -494,7 +494,7 @@ public class Chip extends p implements e, y, i {
                 if (keyEvent.hasNoModifiers() && keyEvent.getRepeatCount() == 0) {
                     int i3 = ((j5.b) dVar).C;
                     if (i3 != Integer.MIN_VALUE) {
-                        ?? r5 = dVar.H;
+                        com.google.android.material.chip.Chip r5 = (com.google.android.material.chip.Chip) (dVar.H);
                         if (i3 == 0) {
                             r5.performClick();
                         } else if (i3 == 1) {
@@ -532,7 +532,7 @@ public class Chip extends p implements e, y, i {
         z = false;
         if (fVar != null && f.E(fVar.m0)) {
             f fVar2 = this.v;
-            ?? isEnabled = isEnabled();
+            Object isEnabled = isEnabled();
             int i2 = isEnabled;
             if (this.E) {
                 i2 = isEnabled + 1;

@@ -42,7 +42,7 @@ public abstract class g {
     /* JADX WARN: Type inference failed for: r0v6 */
     public static int c() {
         boolean f = f();
-        ?? r0 = f;
+        boolean r0 = f;
         if (g()) {
             r0 = (f ? 1 : 0) | 2;
         }

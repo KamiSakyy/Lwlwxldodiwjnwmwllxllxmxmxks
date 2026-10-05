@@ -1514,7 +1514,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     /* JADX WARN: Type inference failed for: r1v0, types: [android.os.Parcelable, i5.b, y31.x] */
     @Override // android.view.View
     public final Parcelable onSaveInstanceState() {
-        ?? xVar = new x(super.onSaveInstanceState());
+        x xVar = new x(super.onSaveInstanceState());
         if (o()) {
             xVar.t = getError();
         }
@@ -2005,7 +2005,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     /* JADX WARN: Type inference failed for: r1v0, types: [android.view.View, com.google.android.material.internal.CheckableImageButton] */
     public void setEndIconOnClickListener(View.OnClickListener onClickListener) {
         l lVar = this.t;
-        ?? r1 = lVar.x;
+        com.google.android.material.internal.CheckableImageButton r1 = (com.google.android.material.internal.CheckableImageButton) (lVar.x);
         View.OnLongClickListener onLongClickListener = lVar.F;
         r1.setOnClickListener(onClickListener);
         sy.n.A((CheckableImageButton) r1, onLongClickListener);
@@ -2015,7 +2015,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public void setEndIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
         l lVar = this.t;
         lVar.F = onLongClickListener;
-        ?? r0 = lVar.x;
+        com.google.android.material.internal.CheckableImageButton r0 = (com.google.android.material.internal.CheckableImageButton) (lVar.x);
         r0.setOnLongClickListener(onLongClickListener);
         sy.n.A((CheckableImageButton) r0, onLongClickListener);
     }
@@ -2149,7 +2149,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     /* JADX WARN: Type inference failed for: r1v0, types: [android.view.View, com.google.android.material.internal.CheckableImageButton] */
     public void setErrorIconOnClickListener(View.OnClickListener onClickListener) {
         l lVar = this.t;
-        ?? r1 = lVar.t;
+        com.google.android.material.internal.CheckableImageButton r1 = (com.google.android.material.internal.CheckableImageButton) (lVar.t);
         View.OnLongClickListener onLongClickListener = lVar.w;
         r1.setOnClickListener(onClickListener);
         sy.n.A((CheckableImageButton) r1, onLongClickListener);
@@ -2159,7 +2159,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public void setErrorIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
         l lVar = this.t;
         lVar.w = onLongClickListener;
-        ?? r0 = lVar.t;
+        com.google.android.material.internal.CheckableImageButton r0 = (com.google.android.material.internal.CheckableImageButton) (lVar.t);
         r0.setOnLongClickListener(onLongClickListener);
         sy.n.A((CheckableImageButton) r0, onLongClickListener);
     }
@@ -2549,7 +2549,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     /* JADX WARN: Type inference failed for: r1v0, types: [android.view.View, com.google.android.material.internal.CheckableImageButton] */
     public void setStartIconOnClickListener(View.OnClickListener onClickListener) {
         t tVar = this.s;
-        ?? r1 = tVar.u;
+        com.google.android.material.internal.CheckableImageButton r1 = (com.google.android.material.internal.CheckableImageButton) (tVar.u);
         View.OnLongClickListener onLongClickListener = tVar.z;
         r1.setOnClickListener(onClickListener);
         sy.n.A((CheckableImageButton) r1, onLongClickListener);
@@ -2559,7 +2559,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     public void setStartIconOnLongClickListener(View.OnLongClickListener onLongClickListener) {
         t tVar = this.s;
         tVar.z = onLongClickListener;
-        ?? r0 = tVar.u;
+        com.google.android.material.internal.CheckableImageButton r0 = (com.google.android.material.internal.CheckableImageButton) (tVar.u);
         r0.setOnLongClickListener(onLongClickListener);
         sy.n.A((CheckableImageButton) r0, onLongClickListener);
     }
@@ -2836,7 +2836,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
         l lVar = this.t;
         TextInputLayout textInputLayout = lVar.r;
-        ?? r5 = lVar.x;
+        q.u r5 = (q.u) (lVar.x);
         TextInputLayout textInputLayout2 = lVar.r;
         lVar.l();
         sy.n.y(textInputLayout2, lVar.t, lVar.u);

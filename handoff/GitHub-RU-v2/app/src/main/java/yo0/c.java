@@ -200,14 +200,14 @@ public final class c implements j {
         int i15;
         o oVar;
         int i16;
-        ?? r4;
+        java.util.ArrayList r4;
         zp.a aVar;
         int i17;
         Set set;
         List list;
         zp.b bVar3;
         int i18;
-        ?? r15;
+        java.util.ArrayList r15;
         zp.c cVar3;
         int i19;
         zy0.a aVar2;

@@ -256,7 +256,7 @@ public final class z1 extends c71.j implements j71.e {
         w61.m d;
         j71.c cVar2;
         int i = 4;
-        ?? r3 = 14;
+        x71.v r3 = (x71.v) (14);
         int i2 = 0;
         a71.c cVar3 = null;
         final int i3 = 1;
@@ -743,7 +743,7 @@ public final class z1 extends c71.j implements j71.e {
                     if (qVar2.q && Build.VERSION.SDK_INT < 31) {
                         com.google.android.gms.measurement.internal.h2 h2Var = aVar17.d;
                         k71.k.f(h2Var, "getMainThreadExecutor(...)");
-                        ?? L = v71.b0.L(v71.b0.o(h2Var), new a0.h(wVar, qVar2, rVar2, context, (a71.c) null, 15), this);
+                        Object L = v71.b0.L(v71.b0.o(h2Var), new a0.h(wVar, qVar2, rVar2, context, (a71.c) null, 15), this);
                         if (L == a0Var2) {
                             a0Var3 = L;
                             break;

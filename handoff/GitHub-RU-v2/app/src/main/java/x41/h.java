@@ -115,7 +115,7 @@ public final class h {
         File f = this.a.f(str, "user-data");
         Closeable closeable = null;
         if (f.exists()) {
-            ?? r0 = (f.length() > 0L ? 1 : (f.length() == 0L ? 0 : -1));
+            int r0 = (int) ((f.length() > 0L ? 1 : (f.length() == 0L ? 0 : -1)));
             try {
                 if (r0 != 0) {
                     try {

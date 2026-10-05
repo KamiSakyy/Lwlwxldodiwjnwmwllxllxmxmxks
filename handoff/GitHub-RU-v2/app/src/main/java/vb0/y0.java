@@ -640,7 +640,7 @@ public final class y0 implements y71.j {
         int i25;
         g2 g2Var;
         int i26;
-        ?? r1;
+        java.util.ArrayList r1;
         List<k80> list;
         t2 t2Var;
         int i27;

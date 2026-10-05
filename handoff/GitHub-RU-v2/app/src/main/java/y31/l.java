@@ -69,9 +69,9 @@ public final class l extends LinearLayout {
         frameLayout.setVisibility(8);
         frameLayout.setLayoutParams(new LinearLayout.LayoutParams(-2, -1));
         LayoutInflater from = LayoutInflater.from(getContext());
-        ?? a = a(this, from, 2131363420);
+        Object a = a(this, from, 2131363420);
         this.t = a;
-        ?? a2 = a(frameLayout, from, 2131363419);
+        Object a2 = a(frameLayout, from, 2131363419);
         this.x = a2;
         this.y = new i3.e(this, hVar);
         AppCompatTextView appCompatTextView = new AppCompatTextView(getContext(), (AttributeSet) null);
@@ -161,7 +161,7 @@ public final class l extends LinearLayout {
 
     /* JADX WARN: Type inference failed for: r3v2, types: [android.view.View, com.google.android.material.internal.CheckableImageButton] */
     public final CheckableImageButton a(ViewGroup viewGroup, LayoutInflater layoutInflater, int i) {
-        ?? r3 = (CheckableImageButton) layoutInflater.inflate(2131558773, viewGroup, false);
+        com.google.android.material.internal.CheckableImageButton r3 = (com.google.android.material.internal.CheckableImageButton) ((CheckableImageButton) layoutInflater.inflate(2131558773, viewGroup, false));
         r3.setId(i);
         if (i4.d0(getContext())) {
             ((ViewGroup.MarginLayoutParams) r3.getLayoutParams()).setMarginStart(0);
@@ -223,7 +223,7 @@ public final class l extends LinearLayout {
         boolean z3;
         m b = b();
         boolean j = b.j();
-        ?? r2 = this.x;
+        CheckableImageButton r2 = this.x;
         boolean z4 = true;
         if (!j || (z3 = r2.u) == b.k()) {
             z2 = false;
@@ -266,7 +266,7 @@ public final class l extends LinearLayout {
             i2 = b2.d();
         }
         Drawable o = i2 != 0 ? w8.s.o(getContext(), i2) : null;
-        ?? r5 = this.x;
+        CheckableImageButton r5 = this.x;
         r5.setImageDrawable(o);
         TextInputLayout textInputLayout = this.r;
         if (o != null) {

@@ -43,7 +43,7 @@ public final class d<T> implements j {
                 i = cVar2.v;
                 if (i != 0) {
                     y.j(obj2);
-                    ?? r8 = ((xz0.g) obj).a;
+                    java.lang.Object r8 = (java.lang.Object) (((xz0.g) obj).a);
                     ArrayList arrayList = new ArrayList(n.F((Iterable) r8, 10));
                     Iterator it = r8.iterator();
                     while (it.hasNext()) {

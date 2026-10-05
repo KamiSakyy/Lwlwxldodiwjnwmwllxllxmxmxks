@@ -1021,7 +1021,7 @@ public final class r implements j0, o.a {
     /* JADX WARN: Type inference failed for: r1v0, types: [java.lang.Object, java.util.Collection, java.util.List] */
     public void s(q2.m mVar, boolean z) {
         q2.z zVar = (q2.z) this.v;
-        ?? r1 = mVar.a;
+        java.util.List r1 = (java.util.List) (mVar.a);
         int size = r1.size();
         for (int i = 0; i < size; i++) {
             if (((q2.u) r1.get(i)).b()) {
@@ -1310,8 +1310,8 @@ public final class r implements j0, o.a {
         Bundle[] bundleArr;
         int i;
         ArrayList arrayList;
-        ?? r16;
-        ?? r15;
+        java.lang.Throwable r16;
+        android.graphics.drawable.Icon r15;
         ArrayList arrayList2;
         Bundle bundle2;
         int i2;
@@ -1399,7 +1399,7 @@ public final class r implements j0, o.a {
             i3 = 0;
         }
         ArrayList arrayList8 = arrayList4;
-        ?? r162 = context2;
+        Context r162 = context2;
         Bundle bundle4 = pVar.q;
         if (bundle4 != null) {
             ((Bundle) this.v).putAll(bundle4);

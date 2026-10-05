@@ -115,7 +115,7 @@ public final class c5 implements y71.j {
         int i;
         o01.c cVar2;
         o01.a aVar;
-        ?? r5;
+        java.util.List r5;
         es esVar;
         es esVar2;
         List list;
@@ -124,7 +124,7 @@ public final class c5 implements y71.j {
         vs vsVar;
         vs vsVar2;
         o01.a aVar2;
-        ?? r52;
+        Object r52;
         es esVar3;
         es esVar4;
         List list2;

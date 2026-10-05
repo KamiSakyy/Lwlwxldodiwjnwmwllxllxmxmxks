@@ -353,7 +353,7 @@ public final /* synthetic */ class b implements u11.a, g, i, w21.a, f {
             case 4:
                 h hVar2 = (h) this.u;
                 a0 a0Var = (a0) this.t;
-                ?? r2 = (j) this.s;
+                j71.e r2 = (j71.e) ((j) this.s);
                 androidx.fragment.app.s sVar = new androidx.fragment.app.s(24, hVar2.w0(w.s));
                 l lVar = l.r;
                 x3.m mVar = hVar.c;

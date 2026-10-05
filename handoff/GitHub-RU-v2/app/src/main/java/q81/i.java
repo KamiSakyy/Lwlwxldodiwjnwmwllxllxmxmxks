@@ -67,7 +67,7 @@ public final class i {
         if (strArr != null) {
             enabledCipherSuites = r81.e.j(strArr, enabledCipherSuites, h.c);
         }
-        ?? r2 = this.d;
+        String[] r2 = this.d;
         if (r2 != 0) {
             String[] enabledProtocols2 = sSLSocket.getEnabledProtocols();
             k71.k.f(enabledProtocols2, "getEnabledProtocols(...)");

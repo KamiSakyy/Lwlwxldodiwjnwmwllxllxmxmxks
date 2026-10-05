@@ -96,10 +96,10 @@ public final class b extends c71.j implements j71.g {
                 ArrayList arrayList = j2Var.t;
                 boolean z6 = j2Var.u;
                 v2 v2Var = j2Var.v;
-                ?? r2 = j2Var.w;
-                ?? r22 = j2Var.x;
-                ?? r23 = j2Var.y;
-                ?? r24 = j2Var.z;
+                java.util.List r2 = (java.util.List) (j2Var.w);
+                Object r22 = j2Var.x;
+                Object r23 = j2Var.y;
+                Object r24 = j2Var.z;
                 boolean z7 = j2Var.A;
                 boolean z8 = j2Var.B;
                 String str9 = j2Var.C;
@@ -111,7 +111,7 @@ public final class b extends c71.j implements j71.g {
                 int i3 = j2Var.G;
                 boolean z14 = j2Var.H;
                 boolean z15 = j2Var.I;
-                ?? r25 = j2Var.J;
+                Object r25 = j2Var.J;
                 boolean z16 = j2Var.K;
                 boolean z17 = j2Var.R;
                 boolean z18 = j2Var.S;
@@ -119,8 +119,8 @@ public final class b extends c71.j implements j71.g {
                 z1 z1Var = j2Var.U;
                 String str10 = j2Var.V;
                 c2 c2Var = j2Var.W;
-                ?? r26 = j2Var.X;
-                ?? r27 = j2Var.Y;
+                Object r26 = j2Var.X;
+                Object r27 = j2Var.Y;
                 boolean z19 = j2Var.Z;
                 PullRequestReviewDecision pullRequestReviewDecision = j2Var.a0;
                 h01.h hVar = j2Var.b0;

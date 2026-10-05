@@ -223,7 +223,7 @@ public abstract class f {
         String str;
         boolean z2;
         boolean z3;
-        ?? r3;
+        java.util.List r3;
         ReviewDecision reviewDecision;
         List list;
         x7 x7Var;
@@ -410,7 +410,7 @@ public abstract class f {
 
     /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, java.util.Collection, java.util.List] */
     public static final int N(l lVar) {
-        ?? r0 = lVar.k;
+        java.util.List r0 = (java.util.List) (lVar.k);
         if (r0.isEmpty()) {
             return 0;
         }

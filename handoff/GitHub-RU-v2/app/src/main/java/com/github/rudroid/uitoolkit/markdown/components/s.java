@@ -212,7 +212,7 @@ public final class s {
                                                 throw null;
                                             }
                                             k91.a aVar4 = (k91.a) obj12;
-                                            ?? r2 = kVar4.b;
+                                            java.util.List r2 = (java.util.List) (kVar4.b);
                                             s.b(null, str3, aVar4, ((r3.k) ((i13 < 0 || i13 >= r2.size()) ? new r3.k(5) : r2.get(i13))).a, uVar.a, map3, sVar3, 0);
                                             i14 = i15;
                                             i13 = i16;

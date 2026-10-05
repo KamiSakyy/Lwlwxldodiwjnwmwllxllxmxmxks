@@ -21,7 +21,7 @@ final class n<T> implements y71.j {
 
     /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Iterable, java.lang.Object] */
     public final Object c(Object obj, a71.c cVar) {
-        ?? r1 = ((xz0.g) obj).a;
+        java.lang.Object r1 = (java.lang.Object) (((xz0.g) obj).a);
         ArrayList arrayList = new ArrayList();
         for (Object obj2 : r1) {
             if (obj2 instanceof j3) {

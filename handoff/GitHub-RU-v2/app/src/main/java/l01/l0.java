@@ -90,7 +90,7 @@ public final class l0 implements Parcelable {
         parcel.writeString(this.t);
         parcel.writeString(this.u.name());
         parcel.writeInt(this.v);
-        ?? r0 = this.w;
+        java.util.List r0 = (java.util.List) (this.w);
         parcel.writeInt(r0.size());
         Iterator it = r0.iterator();
         while (it.hasNext()) {

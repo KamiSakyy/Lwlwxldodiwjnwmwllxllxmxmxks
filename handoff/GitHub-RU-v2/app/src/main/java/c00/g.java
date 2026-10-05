@@ -41,7 +41,7 @@ public final class g implements y71.i {
         int i5 = 0;
         y71.i iVar = this.s;
         a0 a0Var = a0.a;
-        ?? r6 = this.u;
+        java.lang.Object r6 = (java.lang.Object) (this.u);
         Object obj = this.t;
         switch (i) {
             case 0:

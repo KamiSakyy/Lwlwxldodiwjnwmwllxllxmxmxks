@@ -50,7 +50,7 @@ public final class q extends ArrayAdapter {
         View view2 = super.getView(i, view, viewGroup);
         if (view2 instanceof TextView) {
             TextView textView = (TextView) view2;
-            ?? r6 = this.t;
+            r r6 = this.t;
             Drawable drawable = null;
             if (r6.getText().toString().contentEquals(textView.getText()) && r6.B != 0) {
                 ColorDrawable colorDrawable = new ColorDrawable(r6.B);

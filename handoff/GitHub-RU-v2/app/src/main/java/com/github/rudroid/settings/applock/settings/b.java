@@ -76,7 +76,7 @@ public final /* synthetic */ class b implements j71.e {
                             Intent intent;
                             int i5 = i4;
                             a0 a0Var2 = a0.a;
-                            ?? r2 = appLockSettingsActivity;
+                            AppLockSettingsActivity r2 = appLockSettingsActivity;
                             switch (i5) {
                                 case 0:
                                     AppLockSettingsActivity.a aVar5 = AppLockSettingsActivity.Companion;

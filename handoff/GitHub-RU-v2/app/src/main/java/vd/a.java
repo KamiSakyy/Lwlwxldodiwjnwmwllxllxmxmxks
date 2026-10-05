@@ -16,7 +16,7 @@ public final class a {
         if (i2Var.a0 || d6Var.j || !i2Var.u0 || !i2Var.M || i2Var.p != IssueOrPullRequestState.ISSUE_OPEN) {
             return false;
         }
-        ?? r12 = i2Var.x;
+        Object r12 = i2Var.x;
         if (r12.isEmpty()) {
             return true;
         }

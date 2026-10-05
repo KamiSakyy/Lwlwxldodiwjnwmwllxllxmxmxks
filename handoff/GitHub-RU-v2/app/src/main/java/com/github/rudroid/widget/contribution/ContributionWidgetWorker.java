@@ -107,7 +107,7 @@ public final class ContributionWidgetWorker extends CoroutineWorker {
     */
     public final Object c(a71.c cVar) {
         s sVar;
-        ?? r4;
+        java.util.List r4;
         List<z5.k> list;
         LinkedHashSet linkedHashSet;
         List list2;

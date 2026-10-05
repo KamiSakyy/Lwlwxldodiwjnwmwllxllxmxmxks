@@ -53,7 +53,7 @@ public final class c {
                 }
                 final b bVar = this.f32070h;
                 if (bVar.f32061a == null) {
-                    ?? r22 = new ValueAnimator.DurationScaleChangeListener() { // from class: t5.a
+                    ValueAnimator.DurationScaleChangeListener r22 = new ValueAnimator.DurationScaleChangeListener() { // from class: t5.a;
                         @Override // android.animation.ValueAnimator.DurationScaleChangeListener
                         public final void onChanged(float f6) {
                             b.this.f32062b.f32069g = f6;

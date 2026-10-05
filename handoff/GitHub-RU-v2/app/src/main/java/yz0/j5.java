@@ -86,13 +86,13 @@ public final class j5 extends k5 {
         parcel.writeString(this.u);
         parcel.writeString(this.v);
         parcel.writeString(this.w);
-        ?? r0 = this.x;
+        java.util.List r0 = (java.util.List) (this.x);
         parcel.writeInt(r0.size());
         Iterator it = r0.iterator();
         while (it.hasNext()) {
             parcel.writeParcelable((Parcelable) it.next(), i);
         }
-        ?? r02 = this.y;
+        Object r02 = this.y;
         parcel.writeInt(r02.size());
         Iterator it2 = r02.iterator();
         while (it2.hasNext()) {

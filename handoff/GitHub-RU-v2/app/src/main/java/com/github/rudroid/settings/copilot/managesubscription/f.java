@@ -16,7 +16,7 @@ public final /* synthetic */ class f implements j71.a {
     public final Object a() {
         int i = this.r;
         w61.a0 a0Var = w61.a0.a;
-        ?? r2 = this.s;
+        CopilotManageSubscriptionActivity r2 = this.s;
         switch (i) {
             case 0:
                 CopilotManageSubscriptionActivity.a aVar = CopilotManageSubscriptionActivity.Companion;

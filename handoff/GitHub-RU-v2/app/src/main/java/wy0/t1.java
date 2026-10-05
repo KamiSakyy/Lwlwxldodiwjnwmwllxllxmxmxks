@@ -1464,7 +1464,7 @@ public final class t1 implements y71.j {
     private final Object g(a71.c cVar, Object obj) {
         e3 e3Var;
         int i;
-        ?? r13;
+        java.util.ArrayList r13;
         List<uw0.r> list;
         uu0.k3 k3Var;
         String str;
@@ -1874,7 +1874,7 @@ public final class t1 implements y71.j {
         int i16;
         n2 n2Var;
         int i17;
-        ?? r1;
+        java.util.ArrayList r1;
         List<ke0> list;
         o2 o2Var;
         int i18;
@@ -2223,7 +2223,7 @@ public final class t1 implements y71.j {
                                             arrayList12 = arrayList13;
                                         }
                                         arrayList = arrayList12;
-                                        ?? x0 = x61.m.x0(arrayList11, 4);
+                                        Object x0 = x61.m.x0(arrayList11, 4);
                                         if (x0.isEmpty()) {
                                             List x02 = x61.m.x0(arrayList10, 4);
                                             x0 = new ArrayList(x61.n.F(x02, 10));
@@ -2378,7 +2378,7 @@ public final class t1 implements y71.j {
                             List<hh> list6 = ehVar.b;
                             x61.r rVar = null;
                             if (list6 != null) {
-                                ?? arrayList16 = new ArrayList();
+                                ArrayList arrayList16 = new ArrayList();
                                 for (hh hhVar : list6) {
                                     yz0.t1 f = hhVar != null ? y9.a.f(hhVar.b) : null;
                                     if (f != null) {

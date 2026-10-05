@@ -119,7 +119,7 @@ public final class vh {
     /* JADX WARN: Type inference failed for: r8v1, types: [java.lang.Object, java.time.ZonedDateTime, java.time.temporal.Temporal] */
     public static String d(Context context, ZonedDateTime zonedDateTime) {
         k71.k.g(context, "context");
-        ?? withZoneSameInstant = zonedDateTime.withZoneSameInstant(ZoneId.systemDefault());
+        Object withZoneSameInstant = zonedDateTime.withZoneSameInstant(ZoneId.systemDefault());
         ZonedDateTime now = ZonedDateTime.now(ZoneId.systemDefault());
         k71.k.d((Object) withZoneSameInstant);
         k71.k.d(now);

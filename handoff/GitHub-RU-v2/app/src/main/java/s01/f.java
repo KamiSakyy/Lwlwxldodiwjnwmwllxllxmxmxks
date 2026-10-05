@@ -755,7 +755,7 @@ public final class f implements y71.j {
         b0 b0Var2;
         p0 p0Var;
         int i25;
-        ?? arrayList;
+        Object arrayList;
         q6 q6Var;
         p6 p6Var;
         x01.i iVar;
@@ -1621,7 +1621,7 @@ public final class f implements y71.j {
                             r6 r6Var = p6Var2 != null ? p6Var2.c : null;
                             r<jo.o6> rVar = r.r;
                             if (r6Var != null) {
-                                ?? r2 = p6Var2.c.a.b;
+                                java.util.ArrayList r2 = (java.util.ArrayList) (p6Var2.c.a.b);
                                 if (r2 != 0) {
                                     rVar = r2;
                                 }

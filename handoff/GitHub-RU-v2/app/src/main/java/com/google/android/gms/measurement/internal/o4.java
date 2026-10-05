@@ -3052,7 +3052,7 @@ public final class o4 implements x1 {
         c21.u.d(str2);
         oVar2.z();
         oVar2.A();
-        ?? arrayList = new ArrayList();
+        ArrayList arrayList = new ArrayList();
         Cursor cursor = null;
         try {
             try {
@@ -5124,7 +5124,7 @@ public final class o4 implements x1 {
                     U(w0Var);
                     if (w0Var.T()) {
                         f().getClass();
-                        ?? currentTimeMillis = System.currentTimeMillis();
+                        Object currentTimeMillis = System.currentTimeMillis();
                         Cursor cursor = null;
                         r7 = null;
                         Cursor cursor2 = null;
@@ -5396,7 +5396,7 @@ public final class o4 implements x1 {
         g0.A();
         int i9 = 1;
         c21.u.b(H > 0);
-        ?? r112 = max > 0 ? 1 : 0;
+        Object r112 = max > 0 ? 1 : 0;
         c21.u.b(r112);
         c21.u.d(str4);
         try {

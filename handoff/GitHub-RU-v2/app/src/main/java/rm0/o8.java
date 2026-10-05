@@ -409,10 +409,10 @@ public final class o8 implements y71.j {
         yz0.o8 o8Var;
         boolean z3;
         ArrayList arrayList;
-        ?? r5;
+        java.util.ArrayList r5;
         boolean z4;
         int i2;
-        ?? r7;
+        java.util.ArrayList r7;
         wk0.l1 l1Var;
         ZonedDateTime zonedDateTime;
         OrganizationNameAndAvatarUrl organizationNameAndAvatarUrl;

@@ -26,7 +26,7 @@ public final class m implements yz0.e {
     /* JADX WARN: Type inference failed for: r1v4, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r1v5, types: [java.util.ArrayList] */
     public m(v2 v2Var, b3 b3Var, c3 c3Var, boolean z) {
-        ?? r1;
+        java.util.ArrayList r1;
         k71.k.g(v2Var, "data");
         int i = b3Var.b;
         Companion.getClass();

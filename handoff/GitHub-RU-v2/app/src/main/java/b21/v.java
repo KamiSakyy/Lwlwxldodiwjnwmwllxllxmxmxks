@@ -211,7 +211,7 @@ public class v implements b5.o {
     /* JADX WARN: Type inference failed for: r2v15 */
     /* JADX WARN: Type inference failed for: r2v7, types: [android.widget.ListAdapter] */
     public k.g h() {
-        ?? r2;
+        android.widget.ListAdapter r2;
         k.d dVar = (k.d) this.t;
         ContextThemeWrapper contextThemeWrapper = dVar.a;
         ContextThemeWrapper contextThemeWrapper2 = dVar.a;

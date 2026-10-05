@@ -208,7 +208,7 @@ public final class l {
                 q1 q1Var = (q1) dVar4.f;
                 File f = dVar3.f(str3, "rollouts-state");
                 if (f.exists()) {
-                    ?? r14 = (f.length() > 0L ? 1 : (f.length() == 0L ? 0 : -1));
+                    int r14 = (int) ((f.length() > 0L ? 1 : (f.length() == 0L ? 0 : -1)));
                     try {
                         if (r14 != 0) {
                             try {

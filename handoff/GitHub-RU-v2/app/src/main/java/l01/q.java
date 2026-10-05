@@ -46,7 +46,7 @@ public final class q implements d0, Parcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         k71.k.g(parcel, "dest");
         parcel.writeString(this.r);
-        ?? r0 = this.s;
+        java.util.List r0 = (java.util.List) (this.s);
         parcel.writeInt(r0.size());
         Iterator it = r0.iterator();
         while (it.hasNext()) {

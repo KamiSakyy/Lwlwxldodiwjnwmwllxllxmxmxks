@@ -38,7 +38,7 @@ public final class d extends j5.b {
             accessibilityNodeInfo.setBoundsInParent(Chip.O);
             return;
         }
-        ?? r6 = this.H;
+        Chip r6 = this.H;
         CharSequence closeIconContentDescription = r6.getCloseIconContentDescription();
         if (closeIconContentDescription != null) {
             accessibilityNodeInfo.setContentDescription(closeIconContentDescription);
@@ -55,7 +55,7 @@ public final class d extends j5.b {
 
     /* JADX WARN: Type inference failed for: r0v0, types: [android.view.View, com.google.android.material.chip.Chip] */
     public final void p(int i, boolean z) {
-        ?? r0 = this.H;
+        Chip r0 = this.H;
         if (i == 1) {
             r0.E = z;
         }

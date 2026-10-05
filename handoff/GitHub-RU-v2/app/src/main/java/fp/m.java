@@ -493,7 +493,7 @@ public final class m implements y71.j {
                             return a0Var;
                         }
                         sy.y.j(obj8);
-                        ?? r1 = ((p8.h) obj).a;
+                        java.lang.Object r1 = (java.lang.Object) (((p8.h) obj).a);
                         ArrayList arrayList3 = new ArrayList();
                         for (Object obj9 : r1) {
                             if (obj9 instanceof p8.c) {

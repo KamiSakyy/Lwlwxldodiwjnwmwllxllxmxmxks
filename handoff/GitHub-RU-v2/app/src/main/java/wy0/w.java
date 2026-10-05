@@ -843,7 +843,7 @@ public final class w implements y71.j {
         cq0.b0 b0Var2;
         j0 j0Var;
         int i12;
-        ?? arrayList;
+        Object arrayList;
         jn0.g6 g6Var;
         jn0.f6 f6Var;
         x01.i iVar;
@@ -1264,7 +1264,7 @@ public final class w implements y71.j {
                             jn0.h6 h6Var = f6Var2 != null ? f6Var2.c : null;
                             x61.r<jn0.e6> rVar3 = x61.r.r;
                             if (h6Var != null) {
-                                ?? r2 = f6Var2.c.a.b;
+                                java.util.ArrayList r2 = (java.util.ArrayList) (f6Var2.c.a.b);
                                 if (r2 != 0) {
                                     rVar3 = r2;
                                 }
@@ -1544,7 +1544,7 @@ public final class w implements y71.j {
                                     } else {
                                         i16 = i47;
                                         str = str23;
-                                        ?? arrayList9 = new ArrayList(x61.n.F(list, 10));
+                                        ArrayList arrayList9 = new ArrayList(x61.n.F(list, 10));
                                         for (up0.c cVar5 : list) {
                                             up0.d dVar4 = cVar5 != null ? cVar5.b : null;
                                             if (dVar4 == null || (checkStatusState = k21.f.K(dVar4.a)) == null) {
@@ -1875,7 +1875,7 @@ public final class w implements y71.j {
                                 String str35 = k3Var.e;
                                 List<uu0.f3> list9 = k3Var.q.a;
                                 if (list9 != null) {
-                                    ?? arrayList16 = new ArrayList();
+                                    ArrayList arrayList16 = new ArrayList();
                                     for (uu0.f3 f3Var : list9) {
                                         String str36 = str33;
                                         String str37 = f3Var != null ? f3Var.b : null;

@@ -24,7 +24,7 @@ public final class j extends a {
         this.f29395t = i11;
         Object[] objArr2 = new Object[i11];
         this.f29396u = objArr2;
-        ?? r52 = i == i10 ? 1 : 0;
+        Object r52 = i == i10 ? 1 : 0;
         this.f29397v = r52;
         objArr2[0] = objArr;
         b(i - r52, 1);

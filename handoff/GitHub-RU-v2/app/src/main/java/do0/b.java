@@ -268,12 +268,12 @@ public final class b implements y71.j {
         int i3;
         i iVar;
         int i4;
-        ?? r14;
+        java.util.ArrayList r14;
         e2 e2Var;
         List list;
         j jVar;
         int i5;
-        ?? r2;
+        java.util.ArrayList r2;
         List list2;
         l lVar;
         int i6;
@@ -299,12 +299,12 @@ public final class b implements y71.j {
         int i13;
         dp.e eVar2;
         int i14;
-        ?? r142;
+        Object r142;
         qo.e2 e2Var2;
         List list3;
         dp.f fVar;
         int i15;
-        ?? r22;
+        Object r22;
         List list4;
         dp.h hVar2;
         int i16;
@@ -348,7 +348,7 @@ public final class b implements y71.j {
         int i28;
         Object obj2;
         fz0.k kVar;
-        ?? r6;
+        java.util.ArrayList r6;
         List<fz0.h> list5;
         fz0.i iVar9;
         fz0.g gVar11;

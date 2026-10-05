@@ -24,8 +24,8 @@ class TimePickerView extends ConstraintLayout {
         LayoutInflater.from(context).inflate(2131559306, (ViewGroup) this);
         MaterialButtonToggleGroup materialButtonToggleGroup = (MaterialButtonToggleGroup) findViewById(2131363002);
         materialButtonToggleGroup.B.add(new i());
-        ?? r5 = (Chip) findViewById(2131363007);
-        ?? r0 = (Chip) findViewById(2131363004);
+        com.google.android.material.chip.Chip r5 = (com.google.android.material.chip.Chip) ((Chip) findViewById(2131363007));
+        com.google.android.material.chip.Chip r0 = (com.google.android.material.chip.Chip) ((Chip) findViewById(2131363004));
         this.H = r0;
         l lVar = new l(new GestureDetector(getContext(), new k(this)));
         r5.setOnTouchListener(lVar);

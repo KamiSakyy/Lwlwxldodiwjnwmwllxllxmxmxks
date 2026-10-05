@@ -606,7 +606,7 @@ public abstract class d5 implements Encoder {
         String str;
         int i;
         String str2;
-        ?? r2;
+        java.util.List r2;
         SubscriptionState subscriptionState;
         k71.k.g(mVar, "<this>");
         mg0.g gVar = mVar.m;

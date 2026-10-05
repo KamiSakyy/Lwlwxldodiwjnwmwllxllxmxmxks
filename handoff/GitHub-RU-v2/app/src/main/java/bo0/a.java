@@ -205,7 +205,7 @@ public final /* synthetic */ class a implements j71.c {
                 vn0.i iVar3 = vVar4.o;
                 vn0.r rVar = vVar4.h;
                 vn0.h hVar6 = vVar4.k;
-                ?? r9 = r.r;
+                java.util.ArrayList r9 = (java.util.ArrayList) (r.r);
                 if (gVar4 == null || (list4 = gVar4.c) == null) {
                     arrayList = r9;
                 } else {
@@ -337,7 +337,7 @@ public final /* synthetic */ class a implements j71.c {
                     statusState = StatusState.UNKNOWN__;
                 }
                 StatusState statusState2 = statusState;
-                ?? r5 = r.r;
+                java.util.ArrayList r5 = (java.util.ArrayList) (r.r);
                 if (z1Var != null) {
                     ArrayList arrayList3 = z1Var.b;
                     ArrayList arrayList4 = new ArrayList(n.F(arrayList3, 10));

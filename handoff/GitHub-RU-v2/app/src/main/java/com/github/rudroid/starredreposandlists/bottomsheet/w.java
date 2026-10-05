@@ -72,7 +72,7 @@ public final class w extends k1 {
             boolean z = f8Var.a;
             i.a aVar = i.a.a;
             if (z) {
-                ?? r0 = f8Var.c;
+                java.lang.Object r0 = (java.lang.Object) (f8Var.c);
                 y61.b i = sy.d0.i();
                 ArrayList arrayList = new ArrayList(x61.n.F((Iterable) r0, 10));
                 for (e8 e8Var : r0) {
