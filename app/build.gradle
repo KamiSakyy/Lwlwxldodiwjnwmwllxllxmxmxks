@@ -24,6 +24,7 @@ def converterVersionName = actionsRunNumber == null ? '1.0' : "1.0.${actionsRunN
 android {
     namespace 'ru.webapk.studio'
     compileSdk 36
+    ndkVersion '27.2.12479018'
 
     defaultConfig {
         applicationId 'ru.webapk.studio'
@@ -31,6 +32,20 @@ android {
         targetSdk 36
         versionCode converterVersionCode
         versionName converterVersionName
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_shared'
+                cppFlags '-std=c++17'
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('../native/CMakeLists.txt')
+            version '3.22.1'
+        }
     }
 
     signingConfigs {
@@ -69,6 +84,7 @@ android {
     sourceSets {
         main {
             assets.srcDir(layout.buildDirectory.dir('generated/template-assets'))
+            java.srcDir(rootProject.file('shared/src/main/java'))
         }
     }
 }

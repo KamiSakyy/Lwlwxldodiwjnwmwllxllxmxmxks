@@ -1,5 +1,7 @@
 package ru.webapk.studio;
 
+import com.webapk.security.EncryptedSiteArchive;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,11 +9,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.Random;
+import java.util.Set;
 import java.util.zip.CRC32;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -44,7 +48,7 @@ public final class RuntimeApkSmoke {
             boolean resourcesFound = false;
             while ((entry = input.getNextEntry()) != null) {
                 String name = entry.getName();
-                if (entry.isDirectory() || name.startsWith("META-INF/")) {
+                if (entry.isDirectory() || name.startsWith("META-INF/") || name.startsWith("assets/site/")) {
                     input.closeEntry();
                     continue;
                 }
@@ -90,7 +94,55 @@ public final class RuntimeApkSmoke {
             }
             byte[] multiMegabytePayload = new byte[3 * 1024 * 1024 + 137];
             new Random(20261005L).nextBytes(multiMegabytePayload);
-            put(output, "assets/site/large-offline-smoke-test.bin", multiMegabytePayload, true);
+            File smokeSite = new File(unsigned.getParentFile(), "runtime-smoke-site");
+            if (!smokeSite.isDirectory() && !smokeSite.mkdirs()) throw new IOException("Cannot create smoke site");
+            byte[] indexContents = "<!doctype html><title>TOP_SECRET_SOURCE_MARKER</title>"
+                    .getBytes(StandardCharsets.UTF_8);
+            File indexFile = new File(smokeSite, "index.html");
+            File largeFile = new File(smokeSite, "large.bin");
+            writeFile(indexFile, indexContents);
+            writeFile(largeFile, multiMegabytePayload);
+            List<File> siteFiles = new ArrayList<>();
+            siteFiles.add(indexFile);
+            siteFiles.add(largeFile);
+            byte[] testMasterKey = new byte[32];
+            for (int i = 0; i < testMasterKey.length; i++) testMasterKey[i] = (byte) (i * 17 + 3);
+            File encryptedSite = new File(unsigned.getParentFile(), "runtime-smoke-a.c");
+            EncryptedSiteArchive.create(smokeSite, siteFiles, encryptedSite, testMasterKey);
+            byte[] encryptedContainer;
+            try (InputStream archiveInput = new FileInputStream(encryptedSite)) {
+                encryptedContainer = readAll(archiveInput);
+            }
+            if (containsBytes(encryptedContainer, indexContents)) {
+                throw new IOException("Encrypted APK container exposes website source in plaintext");
+            }
+            try (EncryptedSiteArchive archive = EncryptedSiteArchive.open(encryptedSite, testMasterKey)) {
+                try (InputStream indexInput = archive.openResource("index.html")) {
+                    if (indexInput == null || !java.util.Arrays.equals(indexContents, readAll(indexInput))) {
+                        throw new IOException("Encrypted index.html round-trip failed");
+                    }
+                }
+                try (InputStream largeInput = archive.openResource("large.bin")) {
+                    if (largeInput == null || !java.util.Arrays.equals(multiMegabytePayload, readAll(largeInput))) {
+                        throw new IOException("Encrypted multi-megabyte site resource round-trip failed");
+                    }
+                }
+                if (archive.openResource("../escape.txt") != null) {
+                    throw new IOException("Encrypted site reader accepted a path traversal");
+                }
+            }
+            byte[] wrongKey = new byte[32];
+            java.util.Arrays.fill(wrongKey, (byte) 0x55);
+            boolean wrongKeyRejected = false;
+            try (EncryptedSiteArchive ignored = EncryptedSiteArchive.open(encryptedSite, wrongKey)) {
+                // The authenticated manifest must not open with an unrelated key.
+            } catch (IOException expected) {
+                wrongKeyRejected = true;
+            }
+            if (!wrongKeyRejected) throw new IOException("Encrypted site archive accepted the wrong key");
+            java.util.Arrays.fill(testMasterKey, (byte) 0);
+            java.util.Arrays.fill(wrongKey, (byte) 0);
+            put(output, "assets/a.c", encryptedContainer, false);
         }
 
         File secondSigned = new File(signed.getParentFile(), "runtime-smoke-second.apk");
@@ -103,8 +155,25 @@ public final class RuntimeApkSmoke {
         java.util.Arrays.fill(signingPassword, Character.MIN_VALUE);
         if (unsigned.exists() && !unsigned.delete()) throw new IOException("Cannot remove unsigned test APK");
         System.out.println("Runtime APK smoke test passed: " + signed.length()
-                + " bytes; five icon densities and both fullscreen settings verified; "
+                + " bytes; encrypted site round-trip, wrong-key rejection, path traversal, "
+                + "five icon densities and both fullscreen settings verified; "
                 + "stable handoff key reused for successive APKs");
+    }
+
+    private static void writeFile(File file, byte[] contents) throws IOException {
+        try (FileOutputStream output = new FileOutputStream(file)) {
+            output.write(contents);
+        }
+    }
+
+    private static boolean containsBytes(byte[] contents, byte[] needle) {
+        if (needle.length == 0) return true;
+        for (int start = 0; start <= contents.length - needle.length; start++) {
+            int index = 0;
+            while (index < needle.length && contents[start + index] == needle[index]) index++;
+            if (index == needle.length) return true;
+        }
+        return false;
     }
 
     private static void put(ZipOutputStream zip, String name, byte[] contents, boolean stored) throws IOException {

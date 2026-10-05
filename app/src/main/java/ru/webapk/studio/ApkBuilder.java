@@ -8,6 +8,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Shader;
 
+import com.webapk.security.EncryptedSiteArchive;
+import com.webapk.security.NativeKey;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
@@ -169,19 +172,20 @@ final class ApkBuilder {
             if (iconFile != null && usedIconDensities.size() < 5) {
                 throw new IOException("Не удалось заменить все размеры иконки приложения.");
             }
-            for (File file : siteFiles) {
-                String relative = relativePath(siteRoot, file);
-                String zipName = "assets/site/" + relative;
-                if (zipName.indexOf('\n') >= 0 || zipName.indexOf('\r') >= 0) {
-                    throw new IOException("В имени файла сайта есть недопустимый перенос строки.");
-                }
-                ZipEntry siteEntry = new ZipEntry(zipName);
-                siteEntry.setTime(0L);
-                apk.putNextEntry(siteEntry);
-                try (InputStream input = new BufferedInputStream(new FileInputStream(file))) {
+            File encryptedArchive = new File(cache, "website-assets-a.c.tmp");
+            byte[] masterKey = NativeKey.getMasterKey();
+            try {
+                EncryptedSiteArchive.create(siteRoot, siteFiles, encryptedArchive, masterKey);
+                ZipEntry archiveEntry = new ZipEntry("assets/" + EncryptedSiteArchive.ASSET_NAME);
+                archiveEntry.setTime(0L);
+                apk.putNextEntry(archiveEntry);
+                try (InputStream input = new BufferedInputStream(new FileInputStream(encryptedArchive))) {
                     copy(input, apk);
                 }
                 apk.closeEntry();
+            } finally {
+                java.util.Arrays.fill(masterKey, (byte) 0);
+                if (encryptedArchive.exists()) encryptedArchive.delete();
             }
             apk.finish();
         } catch (Exception error) {

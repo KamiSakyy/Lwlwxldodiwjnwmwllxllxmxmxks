@@ -23,10 +23,30 @@ javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
   "$ROOT/scripts/jvm-stubs/android/util/Base64.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/BinaryXmlPatcher.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/IconResourceLocator.java" \
+  "$ROOT/shared/src/main/java/com/webapk/security/EncryptedSiteArchive.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/ApkV2Signer.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/JarV1Signer.java" \
   "$ROOT/scripts/RuntimeApkSmoke.java"
 java -cp "$CLASSES" ru.webapk.studio.RuntimeApkSmoke "$TEMPLATE_APK" "$UNSIGNED" "$SIGNED" "$SIGNING_KEY" "$SIGNING_PASSWORD" "$SIGNING_ALIAS"
+TEMPLATE_ENTRIES="$(unzip -Z1 "$TEMPLATE_APK")"
+SIGNED_ENTRIES="$(unzip -Z1 "$SIGNED")"
+for ABI in armeabi-v7a arm64-v8a x86 x86_64; do
+  grep -Fx "lib/$ABI/libsitekey.so" <<< "$TEMPLATE_ENTRIES"
+  grep -Fx "lib/$ABI/libc++_shared.so" <<< "$TEMPLATE_ENTRIES"
+  grep -Fx "lib/$ABI/libsitekey.so" <<< "$SIGNED_ENTRIES"
+  grep -Fx "lib/$ABI/libc++_shared.so" <<< "$SIGNED_ENTRIES"
+  cmp <(unzip -p "$TEMPLATE_APK" "lib/$ABI/libc++_shared.so") \
+      <(unzip -p "$SIGNED" "lib/$ABI/libc++_shared.so")
+done
+grep -Fx "assets/a.c" <<< "$SIGNED_ENTRIES"
+if grep -Eq '^assets/site/' <<< "$SIGNED_ENTRIES"; then
+  echo "Plaintext website files were left in the generated APK" >&2
+  exit 1
+fi
+if unzip -p "$SIGNED" assets/a.c | grep -aF "TOP_SECRET_SOURCE_MARKER" >/dev/null; then
+  echo "Encrypted website archive contains a plaintext source marker" >&2
+  exit 1
+fi
 if ! "$BUILD_TOOLS/apksigner" verify --verbose "$SIGNED" >"$TEMP_DIR/apksigner.log" 2>&1; then
   cat "$TEMP_DIR/apksigner.log"
   DIAGNOSTIC="$(tr '\n' ' ' < "$TEMP_DIR/apksigner.log" | sed 's/::/%3A%3A/g')"
@@ -52,6 +72,7 @@ fi
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
 TEMPLATE_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$TEMPLATE_APK" AndroidManifest.xml)"
 grep -F "android:roundIcon" <<< "$TEMPLATE_MANIFEST_TREE"
+grep -F "android:extractNativeLibs" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"
 grep -F "versionCode='42'" <<< "$BADGING"
 grep -F "application-label:'Offline smoke test'" <<< "$BADGING"

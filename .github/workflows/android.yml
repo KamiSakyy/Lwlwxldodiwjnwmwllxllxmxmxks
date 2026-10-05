@@ -40,7 +40,7 @@ jobs:
       - name: Install Android SDK packages
         run: |
           yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager "platforms;android-36" "build-tools;36.0.0" "platform-tools"
+          sdkmanager "platforms;android-36" "build-tools;36.0.0" "platform-tools" "ndk;27.2.12479018" "cmake;3.22.1"
 
       - name: Assemble release APK with Android SDK and Gradle
         shell: bash
@@ -55,8 +55,19 @@ jobs:
             exit "$build_status"
           fi
 
-      - name: Smoke test stable signatures, version updates, and rotation
+      - name: Smoke test encrypted sites, icons, native runtimes, and signatures
         run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke"
+
+      - name: Verify converter installation permission and FileProvider
+        shell: bash
+        run: |
+          set -euo pipefail
+          AAPT="$ANDROID_HOME/build-tools/36.0.0/aapt"
+          APP_APK="app/build/outputs/apk/release/app-release.apk"
+          "$AAPT" dump permissions "$APP_APK" | grep -F "android.permission.REQUEST_INSTALL_PACKAGES"
+          APP_MANIFEST_TREE="$("$AAPT" dump xmltree "$APP_APK" AndroidManifest.xml)"
+          grep -F "androidx.core.content.FileProvider" <<< "$APP_MANIFEST_TREE"
+          grep -F "android.support.FILE_PROVIDER_PATHS" <<< "$APP_MANIFEST_TREE"
 
       - name: Package source and verify APK
         shell: bash

@@ -399,6 +399,24 @@ class StudioComposeUi(private val activity: MainActivity) {
             } else {
                 Spacer(Modifier.height(7.dp))
             }
+            if (canSave) {
+                OutlinedButton(
+                    onClick = { activity.installGeneratedApk() },
+                    enabled = !isBusy,
+                    modifier = Modifier.fillMaxWidth().height(44.dp),
+                    shape = RoundedCornerShape(14.dp),
+                    border = BorderStroke(1.dp, Primary),
+                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Primary),
+                    contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 12.dp)
+                ) {
+                    androidx.compose.material3.Text(
+                        text = "Установить собранный APK",
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+                Spacer(Modifier.height(7.dp))
+            }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Button(
                     onClick = { activity.buildApk() },

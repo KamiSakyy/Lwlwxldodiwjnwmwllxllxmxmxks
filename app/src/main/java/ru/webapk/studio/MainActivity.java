@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,6 +17,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import androidx.compose.ui.platform.ComposeView;
+import androidx.core.content.FileProvider;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
@@ -42,12 +44,15 @@ public final class MainActivity extends ComponentActivity {
     private static final int PICK_ZIP = 11;
     private static final int PICK_ICON = 12;
     private static final int SAVE_APK = 13;
+    private static final int REQUEST_INSTALL_SOURCE = 14;
+    private static final int INSTALL_APK = 15;
     private static final int MAX_IMPORT_FILES = 10000;
     private static final ExecutorService IO = Executors.newSingleThreadExecutor();
     private StudioComposeUi composeUi;
     private volatile File siteRoot;
     private volatile File iconFile;
     private volatile File generatedApk;
+    private boolean pendingInstallAfterSourceAccess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +61,7 @@ public final class MainActivity extends ComponentActivity {
         composeUi = new StudioComposeUi(this);
 
         if (savedInstanceState != null) {
+            pendingInstallAfterSourceAccess = savedInstanceState.getBoolean("pendingInstallAfterSourceAccess", false);
             siteRoot = existing(savedInstanceState.getString("siteRoot"));
             iconFile = existing(savedInstanceState.getString("iconFile"));
             generatedApk = existing(savedInstanceState.getString("generatedApk"));
@@ -83,6 +89,7 @@ public final class MainActivity extends ComponentActivity {
         outState.putString("siteRoot", siteRoot == null ? null : siteRoot.getAbsolutePath());
         outState.putString("iconFile", iconFile == null ? null : iconFile.getAbsolutePath());
         outState.putString("generatedApk", generatedApk == null ? null : generatedApk.getAbsolutePath());
+        outState.putBoolean("pendingInstallAfterSourceAccess", pendingInstallAfterSourceAccess);
         if (composeUi != null) {
             outState.putString("appName", composeUi.getAppNameValue());
             outState.putString("packageId", composeUi.getPackageIdValue());
@@ -140,6 +147,25 @@ public final class MainActivity extends ComponentActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_INSTALL_SOURCE) {
+            boolean retry = pendingInstallAfterSourceAccess;
+            pendingInstallAfterSourceAccess = false;
+            if (retry && Build.VERSION.SDK_INT >= 26 && getPackageManager().canRequestPackageInstalls()) {
+                installGeneratedApk();
+            } else if (retry) {
+                setStatus("Разрешите установку приложений для Web APK Studio в настройках Android.", false);
+            }
+            return;
+        }
+        if (requestCode == INSTALL_APK) {
+            if (resultCode == RESULT_OK) {
+                setStatus("Установка приложения завершена", false);
+                Toast.makeText(this, "APK установлен", Toast.LENGTH_LONG).show();
+            } else {
+                setStatus("Установка отменена или отклонена Android", false);
+            }
+            return;
+        }
         if (resultCode != RESULT_OK || data == null) return;
         Uri uri = data.getData();
         if (uri == null && data.getClipData() != null && data.getClipData().getItemCount() > 0) {
@@ -415,6 +441,38 @@ public final class MainActivity extends ComponentActivity {
                 showFailure(error.getMessage() == null ? "Ошибка сборки APK" : error.getMessage());
             }
         });
+    }
+
+    void installGeneratedApk() {
+        File apk = generatedApk;
+        if (apk == null || !apk.isFile()) {
+            Toast.makeText(this, "Сначала соберите APK", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= 26 && !getPackageManager().canRequestPackageInstalls()) {
+            pendingInstallAfterSourceAccess = true;
+            try {
+                Intent settings = new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
+                        Uri.parse("package:" + getPackageName()));
+                startActivityForResult(settings, REQUEST_INSTALL_SOURCE);
+            } catch (Exception error) {
+                pendingInstallAfterSourceAccess = false;
+                showFailure("Не удалось открыть разрешение на установку APK: " + error.getMessage());
+            }
+            return;
+        }
+
+        try {
+            Uri apkUri = FileProvider.getUriForFile(this, getPackageName() + ".fileprovider", apk);
+            Intent install = new Intent(Intent.ACTION_INSTALL_PACKAGE);
+            install.setDataAndType(apkUri, "application/vnd.android.package-archive");
+            install.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            install.putExtra(Intent.EXTRA_RETURN_RESULT, true);
+            startActivityForResult(install, INSTALL_APK);
+            setStatus("Откройте системный установщик и подтвердите установку", false);
+        } catch (Exception error) {
+            showFailure("Не удалось запустить установку: " + error.getMessage());
+        }
     }
 
     void chooseSaveLocation() {
