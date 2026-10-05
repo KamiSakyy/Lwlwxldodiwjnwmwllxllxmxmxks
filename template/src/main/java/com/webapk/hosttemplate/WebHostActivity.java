@@ -20,6 +20,7 @@ public final class WebHostActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Window window = getWindow();
+        if (Build.VERSION.SDK_INT >= 30) window.setDecorFitsSystemWindows(false);
         window.setStatusBarColor(Color.rgb(245, 247, 251));
         window.setNavigationBarColor(Color.rgb(245, 247, 251));
         if (Build.VERSION.SDK_INT >= 26) {
@@ -33,6 +34,10 @@ public final class WebHostActivity extends Activity {
         webView = new WebView(this);
         webView.setBackgroundColor(Color.WHITE);
         webView.setOverScrollMode(View.OVER_SCROLL_IF_CONTENT_SCROLLS);
+        webView.setOnApplyWindowInsetsListener((view, insets) -> {
+            view.setPadding(0, insets.getSystemWindowInsetTop(), 0, insets.getSystemWindowInsetBottom());
+            return insets;
+        });
         webView.setWebViewClient(new WebViewClient());
         webView.setWebChromeClient(new WebChromeClient());
 

@@ -82,6 +82,7 @@ public final class MainActivity extends Activity {
         } else {
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
+        if (android.os.Build.VERSION.SDK_INT >= 30) window.setDecorFitsSystemWindows(false);
 
         if (savedInstanceState != null) {
             siteRoot = existing(savedInstanceState.getString("siteRoot"));
@@ -108,6 +109,10 @@ public final class MainActivity extends Activity {
         ScrollView scroll = new ScrollView(this);
         scroll.setFillViewport(true);
         scroll.setBackgroundColor(BG);
+        scroll.setOnApplyWindowInsetsListener((view, insets) -> {
+            view.setPadding(0, insets.getSystemWindowInsetTop(), 0, insets.getSystemWindowInsetBottom());
+            return insets;
+        });
 
         LinearLayout page = new LinearLayout(this);
         page.setOrientation(LinearLayout.VERTICAL);
