@@ -83,20 +83,47 @@ if g2 != g:
 else:
     print("Версия уже обновлена или не найдена — проверьте вручную.")
 
-# ---------- 3. Санитизация ресурсов: удаляем мусорные имена с '$' ----------
+# ---------- 3. Санитизация ресурсов: '$' в именах запрещён AAPT2 ----------
+# Файлы вида "$ic_x__0.xml" — части анимированных drawable (AVD), на них ссылаются
+# родительские XML через @drawable/$ic_x__0. Удалить нельзя — ПЕРЕИМЕНОВЫВАЕМ
+# (убираем '$') и переписываем все ссылки в res/**/*.xml.
 import glob
 res_dir = os.path.join(proj, "app", "src", "main", "res")
-removed = 0
+renamed_bases = []
+renamed_cnt = 0
 if os.path.isdir(res_dir):
     for root, dirs, files in os.walk(res_dir):
         for fn in files:
             if "$" in fn:
+                old = os.path.join(root, fn)
+                new_fn = fn.replace("$", "")
+                new = os.path.join(root, new_fn)
                 try:
-                    os.remove(os.path.join(root, fn))
-                    removed += 1
+                    os.rename(old, new)
+                    renamed_cnt += 1
+                    renamed_bases.append(os.path.splitext(new_fn)[0])
                 except OSError:
                     pass
-print(f"Удалено мусорных ресурсных файлов с '$' в имени: {removed}")
+    # Переписываем ссылки на переименованные ресурсы во всех XML
+    fixed_refs = 0
+    for root, dirs, files in os.walk(res_dir):
+        for fn in files:
+            if not fn.lower().endswith(".xml"):
+                continue
+            p = os.path.join(root, fn)
+            try:
+                with open(p, "r", encoding="utf-8", errors="ignore") as f:
+                    c = f.read()
+            except OSError:
+                continue
+            c2 = c
+            for base in renamed_bases:
+                c2 = c2.replace("$" + base, base)
+            if c2 != c:
+                with open(p, "w", encoding="utf-8") as f:
+                    f.write(c2)
+                fixed_refs += 1
+print(f"Переименовано res-файлов с '$' в имени: {renamed_cnt}; XML со исправленными ссылками: {fixed_refs}")
 
 # ---------- 4. Маркер ----------
 marker = os.path.join(proj, "FIXES-APPLIED.txt")
@@ -107,5 +134,5 @@ with open(marker, "w", encoding="utf-8") as f:
     for name, val in FLAGS:
         f.write(f"  meta-data {name} = {val}\n")
     f.write("  versionCode 926, versionName 1.257.0-ru2\n")
-    f.write(f"  удалено мусорных res-файлов с '$': {removed}\n")
+    f.write(f"  res-файлов с '$' переименовано: {renamed_cnt} (ссылки переписаны)\n")
 print("Готово: fix_heat применён.")

@@ -81,6 +81,7 @@ jobs:
         continue-on-error: false
         run: |
           set -e
+          set -o pipefail
           cd "$PROJ"
           chmod +x gradlew
           # больше памяти под R8 на раннере (16 ГБ)
