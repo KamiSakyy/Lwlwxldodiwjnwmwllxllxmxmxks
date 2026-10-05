@@ -1,5 +1,7 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
 }
 
 def signingPropertiesFile = rootProject.file('handoff/signing.properties')
@@ -21,12 +23,12 @@ def converterVersionName = actionsRunNumber == null ? '1.0' : "1.0.${actionsRunN
 
 android {
     namespace 'ru.webapk.studio'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId 'ru.webapk.studio'
-        minSdk 23
-        targetSdk 35
+        minSdk 22
+        targetSdk 36
         versionCode converterVersionCode
         versionName converterVersionName
     }
@@ -56,6 +58,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    buildFeatures {
+        compose true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
     sourceSets {
         main {
             assets.srcDir(layout.buildDirectory.dir('generated/template-assets'))
@@ -78,4 +88,19 @@ tasks.register('prepareEmbeddedTemplate', Copy) {
 
 tasks.named('preBuild').configure {
     dependsOn(tasks.named('prepareEmbeddedTemplate'))
+}
+
+dependencies {
+    // Keep API 22 support: Activity 1.12+ and Compose Foundation 1.10+ raise minSdk to 23.
+    implementation 'androidx.activity:activity-compose:1.11.0'
+    implementation 'androidx.core:core:1.19.1'
+    implementation 'androidx.compose.runtime:runtime:1.9.0'
+    implementation 'androidx.compose.runtime:runtime-saveable:1.9.0'
+    implementation 'androidx.compose.foundation:foundation:1.8.1'
+    implementation 'androidx.compose.foundation:foundation-layout:1.8.1'
+    implementation 'androidx.compose.ui:ui:1.8.2'
+    implementation 'androidx.compose.ui:ui-text:1.8.1'
+    implementation 'androidx.compose.ui:ui-tooling-preview:1.8.2'
+    implementation 'androidx.compose.material:material-ripple:1.8.1'
+    implementation 'androidx.compose.material3:material3:1.4.0'
 }
