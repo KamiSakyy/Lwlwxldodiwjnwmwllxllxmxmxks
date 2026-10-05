@@ -87,6 +87,18 @@ def resolve_host(name, err_file):
 for i in err_idx:
     m = ERR.match(lines[i])
     path, msg = m.group(1), m.group(3)
+    # --- потерянные пакеты (ДО guard'а cannot find symbol: у этих ошибок другой текст) ---
+    dm = re.search(r"package ([\w.]+) does not exist", msg)
+    if dm:
+        pkg = dm.group(1)
+        # класс ищем в ближайших строках (import P.C;)
+        for j in range(i + 1, min(i + 4, len(lines))):
+            im = re.search(r"import\s+([\w.]+)\.(\w+)\s*;", lines[j])
+            if im and im.group(1) == pkg:
+                if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), im.group(2) + ".java")):
+                    flat.add((pkg, im.group(2)))
+                break
+        continue
     if "cannot find symbol" not in msg:
         continue
     sym = loc = ""
@@ -97,18 +109,6 @@ for i in err_idx:
             sym = lines[j].strip()
         if "location:" in lines[j]:
             loc = lines[j].strip()
-    if "package ([\w.]+) does not exist" in msg or re.search(r"package [\w.]+ does not exist", msg):
-        dm = re.search(r"package ([\w.]+) does not exist", msg)
-        if dm:
-            pkg = dm.group(1)
-            # класс ищем в ближайших строках (import P.C;)
-            for j in range(i + 1, min(i + 4, len(lines))):
-                im = re.search(r"import\s+([\w.]+)\.(\w+)\s*;", lines[j])
-                if im and im.group(1) == pkg:
-                    if not os.path.isfile(os.path.join(ROOT, pkg.replace(".", os.sep), im.group(2) + ".java")):
-                        flat.add((pkg, im.group(2)))
-                    break
-        continue
     nmc = re.search(r"symbol:\s+class\s+(\S+)", sym)
     if not nmc:
         continue
