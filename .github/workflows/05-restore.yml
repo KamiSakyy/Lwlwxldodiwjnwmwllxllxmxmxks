@@ -82,6 +82,16 @@ jobs:
                 -source 8 -target 8 -encoding UTF-8 \
                 -bootclasspath "$ANDROID_JAR" -sourcepath "$SRC" \
                 "$SRC/i80/c.java" 2>&1 | head -25 | tee -a "$CYCLE" || true
+              echo "--- ДИАГНОСТИКА: полная компиляция (память/краш javac) ---" | tee -a "$CYCLE"
+              rm -rf /tmp/diagfull
+              ( javac -J-Xmx12g -J-XX:+ExitOnOutOfMemoryError -nowarn -proc:none -Xmaxerrs 100 \
+                  -source 8 -target 8 -encoding UTF-8 \
+                  -bootclasspath "$ANDROID_JAR" -d /tmp/diagfull @/tmp/sources.txt \
+                  > /tmp/javac-full-diag.log 2>&1; echo "JAVAC_EXIT=$?" >> /tmp/javac-full-diag.log )
+              grep -c "error:" /tmp/javac-full-diag.log | tee -a "$CYCLE" || true
+              tail -5 /tmp/javac-full-diag.log | tee -a "$CYCLE" || true
+              ls javac.*.args 2>/dev/null | head -2 | tee -a "$CYCLE" || true
+              for AF in $(ls javac.*.args 2>/dev/null | head -1); do echo "ARGS-файл: $AF" | tee -a "$CYCLE"; done
             fi
             rm -rf /tmp/classes
             javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 \
