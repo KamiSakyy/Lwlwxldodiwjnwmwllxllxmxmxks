@@ -115,4 +115,7 @@ public final class m {
         this.a = readString;
         this.b = parcel.readLong();
     }
+
+    public m(Object... a) {
+    }
 }

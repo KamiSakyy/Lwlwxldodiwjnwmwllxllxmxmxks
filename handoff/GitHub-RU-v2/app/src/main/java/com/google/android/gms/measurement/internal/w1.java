@@ -27,4 +27,7 @@ public abstract class w1 extends androidx.compose.foundation.lazy.layout.s0 {
         ((o1) ((androidx.compose.foundation.lazy.layout.s0) this).s).T.incrementAndGet();
         this.t = true;
     }
+
+    public w1(Object... a) {
+    }
 }

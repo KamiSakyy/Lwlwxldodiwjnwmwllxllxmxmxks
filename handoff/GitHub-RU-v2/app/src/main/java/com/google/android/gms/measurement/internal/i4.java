@@ -25,4 +25,7 @@ public abstract class i4 extends e4 {
     }
 
     public abstract void C();
+
+    public i4(Object... a) {
+    }
 }

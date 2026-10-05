@@ -110,4 +110,7 @@ public final class d2 extends LinkedHashMap {
         b();
         return super.remove(obj);
     }
+
+    public d2(Object... a) {
+    }
 }

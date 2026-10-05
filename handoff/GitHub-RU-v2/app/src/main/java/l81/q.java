@@ -7,4 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 /* loaded from: /home/user/work/p/classes5.dex */
 public @interface q {
     String[] names();
+
+    public q(Object... a) {
+    }
 }

@@ -30,4 +30,7 @@ public final class t1 implements Callable {
                 return v1Var2.f.d0(this.c, this.b);
         }
     }
+
+    public t1(Object... a) {
+    }
 }

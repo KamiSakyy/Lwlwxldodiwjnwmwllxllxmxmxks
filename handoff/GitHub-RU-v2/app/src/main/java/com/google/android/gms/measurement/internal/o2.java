@@ -33,4 +33,7 @@ public final class o2 implements Runnable {
                 break;
         }
     }
+
+    public o2(Object... a) {
+    }
 }

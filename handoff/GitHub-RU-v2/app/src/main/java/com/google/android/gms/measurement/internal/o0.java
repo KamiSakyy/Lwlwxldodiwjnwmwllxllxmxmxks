@@ -28,4 +28,7 @@ public final class o0 extends c21.e {
     public final String w() {
         return "com.google.android.gms.measurement.START";
     }
+
+    public o0(Object... a) {
+    }
 }

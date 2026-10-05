@@ -70,4 +70,7 @@ public final class v0 implements Parcelable.Creator {
                 return new w0[i];
         }
     }
+
+    public v0(Object... a) {
+    }
 }

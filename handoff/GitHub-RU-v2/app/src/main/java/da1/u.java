@@ -113,4 +113,7 @@ final class u extends b0 {
         bVar.K(kVar);
         return true;
     }
+
+    public u(Object... a) {
+    }
 }

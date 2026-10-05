@@ -226,4 +226,7 @@ public abstract class b0 {
         public m() {
         }
     }
+
+    public b0(Object... a) {
+    }
 }

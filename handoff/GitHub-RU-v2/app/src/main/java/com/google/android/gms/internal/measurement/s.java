@@ -762,4 +762,7 @@ public final class s {
         }
         throw new UnsupportedOperationException("Command not implemented: ".concat(String.valueOf(str)));
     }
+
+    public s(Object... a) {
+    }
 }

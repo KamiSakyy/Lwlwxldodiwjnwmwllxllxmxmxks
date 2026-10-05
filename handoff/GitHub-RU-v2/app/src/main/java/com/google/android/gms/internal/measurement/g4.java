@@ -8,4 +8,7 @@ public final class g4 extends ContentObserver {
     public final void onChange(boolean z) {
         m4.i.incrementAndGet();
     }
+
+    public g4(Object... a) {
+    }
 }

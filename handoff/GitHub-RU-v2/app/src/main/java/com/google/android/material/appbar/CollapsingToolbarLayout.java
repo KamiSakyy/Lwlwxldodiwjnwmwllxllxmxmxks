@@ -1217,7 +1217,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup
-    public final FrameLayout.LayoutParams generateDefaultLayoutParams() {
+    public final FrameLayout.LayoutParams generateDefaultLayoutParams_dup() {
         z21.d dVar = new z21.d(-1, -1);
         dVar.a = 0;
         dVar.b = 0.5f;

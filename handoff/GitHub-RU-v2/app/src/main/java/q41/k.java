@@ -31,4 +31,7 @@ public final class k implements Executor {
     public final void execute(Runnable runnable) {
         s.post(runnable);
     }
+
+    public k(Object... a) {
+    }
 }

@@ -51,4 +51,7 @@ public final class b2 extends g5 {
         public a0() {
         }
     }
+
+    public b2(Object... a) {
+    }
 }

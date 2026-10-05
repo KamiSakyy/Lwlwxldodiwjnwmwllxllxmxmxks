@@ -29,4 +29,7 @@ public final class q1 implements aa.a {
         fVar.z0("gitUrl");
         aa.c.a.b(fVar, wVar, v0Var.a);
     }
+
+    public q1(Object... a) {
+    }
 }

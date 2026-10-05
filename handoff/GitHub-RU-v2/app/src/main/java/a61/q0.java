@@ -34,4 +34,7 @@ public final class q0 {
     public final String toString() {
         return "SessionDetails(sessionId=" + this.a + ", firstSessionId=" + this.b + ", sessionIndex=" + this.c + ", sessionStartTimestampUs=" + this.d + ')';
     }
+
+    public q0(Object... a) {
+    }
 }

@@ -48,4 +48,7 @@ public final class a3 extends f5 {
         b();
         ((b3) this.s).I(j);
     }
+
+    public a3(Object... a) {
+    }
 }

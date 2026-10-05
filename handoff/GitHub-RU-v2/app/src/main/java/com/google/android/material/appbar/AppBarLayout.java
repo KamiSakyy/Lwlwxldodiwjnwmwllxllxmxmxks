@@ -1408,14 +1408,14 @@ public class AppBarLayout extends LinearLayout implements l4.a {
     }
 
     @Override // android.widget.LinearLayout, android.view.ViewGroup
-    public final LinearLayout.LayoutParams generateDefaultLayoutParams() {
+    public final LinearLayout.LayoutParams generateDefaultLayoutParams_dup() {
         z21.c cVar = new z21.c(-1, -2);
         cVar.a = 1;
         return cVar;
     }
 
     @Override // android.widget.LinearLayout, android.view.ViewGroup
-    public final /* bridge */ /* synthetic */ LinearLayout.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+    public final /* bridge */ /* synthetic */ LinearLayout.LayoutParams generateLayoutParams_dup(ViewGroup.LayoutParams layoutParams) {
         return b(layoutParams);
     }
 

@@ -48,4 +48,7 @@ public final class c {
     public static c[] values() {
         return (c[]) A.clone();
     }
+
+    public c(Object... a) {
+    }
 }

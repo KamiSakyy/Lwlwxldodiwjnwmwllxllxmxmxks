@@ -122,4 +122,7 @@ public final class b1 {
         public m() {
         }
     }
+
+    public b1(Object... a) {
+    }
 }

@@ -27,4 +27,7 @@ public abstract class e0 extends a0 {
     }
 
     public abstract boolean C();
+
+    public e0(Object... a) {
+    }
 }

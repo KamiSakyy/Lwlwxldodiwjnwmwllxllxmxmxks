@@ -8,4 +8,7 @@ public final class u2 extends f5 {
         b();
         ((x2) this.s).s(arrayList);
     }
+
+    public u2(Object... a) {
+    }
 }

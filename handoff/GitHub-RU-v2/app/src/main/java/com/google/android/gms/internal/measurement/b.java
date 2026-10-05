@@ -78,4 +78,7 @@ public final class b {
         sb.append("}");
         return sb.toString();
     }
+
+    public b(Object... a) {
+    }
 }

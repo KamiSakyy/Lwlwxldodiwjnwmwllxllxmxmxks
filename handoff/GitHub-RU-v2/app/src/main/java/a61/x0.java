@@ -41,4 +41,7 @@ public final class x0 implements d61.b {
         this.e = aVar4;
         this.f = aVar5;
     }
+
+    public x0(Object... a) {
+    }
 }

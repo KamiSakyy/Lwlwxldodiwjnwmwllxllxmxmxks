@@ -41,4 +41,7 @@ public final class s6 {
     public static s6[] values() {
         return (s6[]) A.clone();
     }
+
+    public s6(Object... a) {
+    }
 }

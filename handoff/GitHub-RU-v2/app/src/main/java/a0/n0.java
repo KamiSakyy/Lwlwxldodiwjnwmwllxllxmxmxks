@@ -21,4 +21,7 @@ public final class n0 extends c71.j implements j71.e {
         sy.y.j(obj);
         return Boolean.valueOf(this.f166v > 0.0f);
     }
+
+    public n0(Object... a) {
+    }
 }

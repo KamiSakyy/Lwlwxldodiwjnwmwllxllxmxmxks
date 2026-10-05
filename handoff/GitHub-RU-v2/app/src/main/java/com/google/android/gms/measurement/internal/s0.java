@@ -194,4 +194,7 @@ public final class s0 extends w1 {
         }
         return str;
     }
+
+    public s0(Object... a) {
+    }
 }

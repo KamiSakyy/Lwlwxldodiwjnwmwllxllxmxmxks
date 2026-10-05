@@ -13,7 +13,7 @@ public final class r0 extends q0 {
 
     @Override // da1.q0, da1.s0
     /* renamed from: o, reason: merged with bridge method [inline-methods] */
-    public final void f() {
+    public final void f_dup() {
         super.f();
         this.k = true;
     }
@@ -35,5 +35,8 @@ public final class r0 extends q0 {
         p2.append(this.g.toString());
         p2.append(str2);
         return p2.toString();
+    }
+
+    public r0(Object... a) {
     }
 }

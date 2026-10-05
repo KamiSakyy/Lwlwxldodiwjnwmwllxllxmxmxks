@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class aa implements aa.a {
-    public static final aa a = new aa();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    static final aa a = new aa();
+    static final List b = sy.d0.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -23,4 +23,7 @@ public final class g3 extends f5 {
         public p0() {
         }
     }
+
+    public g3(Object... a) {
+    }
 }

@@ -185,19 +185,19 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final SpannableStringBuilder append(CharSequence charSequence) {
+    public final SpannableStringBuilder append_dup(CharSequence charSequence) {
         super.append(charSequence);
         return this;
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable
-    public final SpannableStringBuilder delete(int i, int i10) {
+    public final SpannableStringBuilder delete_dup(int i, int i10) {
         super.delete(i, i10);
         return this;
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable
-    public final SpannableStringBuilder insert(int i, CharSequence charSequence) {
+    public final SpannableStringBuilder insert_dup(int i, CharSequence charSequence) {
         super.insert(i, charSequence);
         return this;
     }
@@ -209,7 +209,7 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final Appendable append(CharSequence charSequence) {
+    public final Appendable append_dup(CharSequence charSequence) {
         super.append(charSequence);
         return this;
     }
@@ -221,7 +221,7 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable
-    public final SpannableStringBuilder replace(int i, int i10, CharSequence charSequence) {
+    public final SpannableStringBuilder replace_dup(int i, int i10, CharSequence charSequence) {
         a();
         super.replace(i, i10, charSequence);
         e();
@@ -235,7 +235,7 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable
-    public final SpannableStringBuilder insert(int i, CharSequence charSequence, int i10, int i11) {
+    public final SpannableStringBuilder insert_dup(int i, CharSequence charSequence, int i10, int i11) {
         super.insert(i, charSequence, i10, i11);
         return this;
     }
@@ -248,19 +248,19 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final SpannableStringBuilder append(char c10) {
+    public final SpannableStringBuilder append_dup(char c10) {
         super.append(c10);
         return this;
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final Appendable append(char c10) {
+    public final Appendable append_dup(char c10) {
         super.append(c10);
         return this;
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable
-    public final SpannableStringBuilder replace(int i, int i10, CharSequence charSequence, int i11, int i12) {
+    public final SpannableStringBuilder replace_dup(int i, int i10, CharSequence charSequence, int i11, int i12) {
         a();
         super.replace(i, i10, charSequence, i11, i12);
         e();
@@ -274,13 +274,13 @@ public final class s extends SpannableStringBuilder {
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final SpannableStringBuilder append(CharSequence charSequence, int i, int i10) {
+    public final SpannableStringBuilder append_dup(CharSequence charSequence, int i, int i10) {
         super.append(charSequence, i, i10);
         return this;
     }
 
     @Override // android.text.SpannableStringBuilder, android.text.Editable, java.lang.Appendable
-    public final Appendable append(CharSequence charSequence, int i, int i10) {
+    public final Appendable append_dup(CharSequence charSequence, int i, int i10) {
         super.append(charSequence, i, i10);
         return this;
     }

@@ -38,12 +38,12 @@ public final class g2 implements z {
     }
 
     @Override // a0.z, a0.d0, a0.o
-    public final k2 a(h2 h2Var) {
+    public final k2 a_dup(h2 h2Var) {
         return new u2(this.f89a, this.f90b, this.f91c);
     }
 
     @Override // a0.d0, a0.o
-    public final l2 a(h2 h2Var) {
+    public final l2 a_dup(h2 h2Var) {
         return new u2(this.f89a, this.f90b, this.f91c);
     }
 

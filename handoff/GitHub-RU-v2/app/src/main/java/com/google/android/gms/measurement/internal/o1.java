@@ -451,4 +451,7 @@ public final class o1 implements x1 {
         l(this.K);
         return this.K;
     }
+
+    public o1(Object... a) {
+    }
 }

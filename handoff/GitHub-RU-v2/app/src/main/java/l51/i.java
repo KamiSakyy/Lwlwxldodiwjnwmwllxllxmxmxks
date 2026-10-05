@@ -32,4 +32,7 @@ public final class i implements i51.f {
         this.d.c(this.c, z ? 1 : 0, this.b);
         return this;
     }
+
+    public i(Object... a) {
+    }
 }

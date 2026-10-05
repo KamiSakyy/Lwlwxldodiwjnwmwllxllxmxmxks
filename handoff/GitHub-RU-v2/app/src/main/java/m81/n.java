@@ -46,7 +46,7 @@ public final class n extends l {
 
     @Override // m81.l
     /* renamed from: Y */
-    public final kotlinx.serialization.json.c T() {
+    public final kotlinx.serialization.json.c T_dup() {
         return this.j;
     }
 

@@ -77,4 +77,7 @@ public final class p implements Iterator {
         public w() {
         }
     }
+
+    public p(Object... a) {
+    }
 }

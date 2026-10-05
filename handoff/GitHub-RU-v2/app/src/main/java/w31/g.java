@@ -56,4 +56,7 @@ public final class g implements View.OnAttachStateChangeListener, ViewTreeObserv
             view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
         }
     }
+
+    public g(Object... a) {
+    }
 }

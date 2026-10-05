@@ -206,4 +206,7 @@ public final class h extends androidx.compose.foundation.lazy.layout.s0 {
         s0Var2.A.b(str, "Invalid manifest metadata for");
         return y1Var;
     }
+
+    public h(Object... a) {
+    }
 }

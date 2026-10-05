@@ -41,4 +41,7 @@ public final class r implements n {
     public final n l() {
         return n.b;
     }
+
+    public r(Object... a) {
+    }
 }

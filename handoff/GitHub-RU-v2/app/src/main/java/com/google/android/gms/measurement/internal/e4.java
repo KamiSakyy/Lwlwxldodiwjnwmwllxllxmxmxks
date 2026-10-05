@@ -8,4 +8,7 @@ public abstract class e4 extends androidx.compose.foundation.lazy.layout.s0 {
         super(o4Var.C);
         this.t = o4Var;
     }
+
+    public e4(Object... a) {
+    }
 }

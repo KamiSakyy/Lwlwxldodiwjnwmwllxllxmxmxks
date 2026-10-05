@@ -23,4 +23,7 @@ public final class z extends m1 implements w1 {
             m(Integer.valueOf(((Number) objArr[((int) ((this.z + ((int) ((q() + this.B) - this.z))) - 1)) & (objArr.length - 1)]).intValue() + i));
         }
     }
+
+    public z(Object... a) {
+    }
 }

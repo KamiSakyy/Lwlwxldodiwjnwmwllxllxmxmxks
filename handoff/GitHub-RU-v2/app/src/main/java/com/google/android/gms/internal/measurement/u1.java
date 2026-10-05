@@ -2,4 +2,7 @@ package com.google.android.gms.internal.measurement;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u1 extends f5 {
+
+    public u1(Object... a) {
+    }
 }

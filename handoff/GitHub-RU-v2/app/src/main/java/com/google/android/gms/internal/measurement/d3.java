@@ -16,4 +16,7 @@ public final class d3 extends f5 {
         b();
         ((e3) this.s).F(j);
     }
+
+    public d3(Object... a) {
+    }
 }

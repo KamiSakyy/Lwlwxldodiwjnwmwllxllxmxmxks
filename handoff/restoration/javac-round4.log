@@ -1,7 +1,4 @@
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/yz0/i3.java:9: error: <identifier> expected
-    public i3(Object... a) {
-             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/yz0/o2.java:19: error: <identifier> expected
-    public o2(Object... a) {
-             ^
-2 errors
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/l81/q.java:11: error: <identifier> expected
+    public q(Object... a) {
+            ^
+1 error

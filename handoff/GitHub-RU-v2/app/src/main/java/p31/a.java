@@ -20,4 +20,7 @@ public abstract class a {
         this.d = k41.b.J(2130969543, 150, context);
         this.e = k41.b.J(2130969542, 100, context);
     }
+
+    public a(Object... a) {
+    }
 }

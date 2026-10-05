@@ -5,8 +5,8 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class aa implements aa.a {
-    public static final aa a = new aa();
-    public static final List b = sy.d0.n("__typename");
+    static final aa a = new aa();
+    static final List b = sy.d0.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         jn0.ze zeVar;

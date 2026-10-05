@@ -18,4 +18,7 @@ public final class p0 extends q0 {
         }
         return "<" + n() + " " + this.g.toString() + str;
     }
+
+    public p0(Object... a) {
+    }
 }

@@ -359,7 +359,7 @@ public final class a implements u4.a {
     }
 
     @Override // u4.a, android.view.MenuItem
-    public final u4.a setContentDescription(CharSequence charSequence) {
+    public final u4.a setContentDescription_dup(CharSequence charSequence) {
         this.f30208j = charSequence;
         return this;
     }
@@ -378,7 +378,7 @@ public final class a implements u4.a {
     }
 
     @Override // u4.a, android.view.MenuItem
-    public final u4.a setTooltipText(CharSequence charSequence) {
+    public final u4.a setTooltipText_dup(CharSequence charSequence) {
         this.f30209k = charSequence;
         return this;
     }

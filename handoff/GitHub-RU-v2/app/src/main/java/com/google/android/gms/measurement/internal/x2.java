@@ -6,4 +6,7 @@ public final class x2 extends w1 {
     public final boolean A() {
         return false;
     }
+
+    public x2(Object... a) {
+    }
 }

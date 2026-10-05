@@ -31,4 +31,7 @@ public final class l {
     public static l[] values() {
         return (l[]) f135t.clone();
     }
+
+    public l(Object... a) {
+    }
 }

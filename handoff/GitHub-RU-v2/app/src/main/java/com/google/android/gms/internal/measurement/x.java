@@ -134,4 +134,7 @@ public abstract class x implements IInterface {
         public q0() {
         }
     }
+
+    public x(Object... a) {
+    }
 }

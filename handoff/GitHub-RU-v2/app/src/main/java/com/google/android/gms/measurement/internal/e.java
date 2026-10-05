@@ -27,4 +27,7 @@ public final class e extends d21.a {
         parcel.writeLong(this.t);
         m7.y.a0(parcel, Z);
     }
+
+    public e(Object... a) {
+    }
 }

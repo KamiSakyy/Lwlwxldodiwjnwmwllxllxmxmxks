@@ -49,4 +49,7 @@ public final class q2 extends f5 {
         public w() {
         }
     }
+
+    public q2(Object... a) {
+    }
 }

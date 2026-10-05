@@ -1018,7 +1018,7 @@ public class TabLayout extends HorizontalScrollView {
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup
-    public final FrameLayout.LayoutParams generateLayoutParams(AttributeSet attributeSet) {
+    public final FrameLayout.LayoutParams generateLayoutParams_dup(AttributeSet attributeSet) {
         return generateDefaultLayoutParams();
     }
 

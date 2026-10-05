@@ -6,4 +6,7 @@ public final class p3 extends f5 {
         b();
         ((q3) this.s).s(i);
     }
+
+    public p3(Object... a) {
+    }
 }

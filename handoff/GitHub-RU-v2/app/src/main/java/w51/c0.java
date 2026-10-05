@@ -10,4 +10,7 @@ public final class c0 {
     public c0(Intent intent) {
         this.a = intent;
     }
+
+    public c0(Object... a) {
+    }
 }

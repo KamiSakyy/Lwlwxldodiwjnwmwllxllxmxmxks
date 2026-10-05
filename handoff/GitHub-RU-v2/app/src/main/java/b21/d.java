@@ -480,4 +480,7 @@ public final class d implements Handler.Callback {
                 return false;
         }
     }
+
+    public d(Object... a) {
+    }
 }

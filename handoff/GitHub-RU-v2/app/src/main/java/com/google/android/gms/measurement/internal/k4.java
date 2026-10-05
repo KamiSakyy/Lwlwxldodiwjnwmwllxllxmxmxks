@@ -140,4 +140,7 @@ public final class k4 extends e4 {
         buildUpon.authority(sb.toString());
         return buildUpon.build().toString();
     }
+
+    public k4(Object... a) {
+    }
 }

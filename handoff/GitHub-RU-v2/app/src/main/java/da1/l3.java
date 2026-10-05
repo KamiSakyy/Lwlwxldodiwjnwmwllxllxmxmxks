@@ -315,4 +315,7 @@ public abstract class l3 {
     }
 
     public abstract void d(u0 u0Var, a aVar);
+
+    public l3(Object... a) {
+    }
 }

@@ -21,4 +21,7 @@ public abstract class n extends d0 {
         }
         return arrayList;
     }
+
+    public n(Object... a) {
+    }
 }

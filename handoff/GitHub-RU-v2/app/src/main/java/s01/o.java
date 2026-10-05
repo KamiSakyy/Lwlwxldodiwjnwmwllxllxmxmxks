@@ -27,4 +27,7 @@ public final class o {
     public static o[] values() {
         return (o[]) t.clone();
     }
+
+    public o(Object... a) {
+    }
 }

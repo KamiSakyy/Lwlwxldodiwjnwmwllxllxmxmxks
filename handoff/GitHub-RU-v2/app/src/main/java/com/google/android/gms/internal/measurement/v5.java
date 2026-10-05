@@ -123,4 +123,7 @@ public final class v5 extends LinkedHashMap {
         c();
         return super.remove(obj);
     }
+
+    public v5(Object... a) {
+    }
 }

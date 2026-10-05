@@ -7,4 +7,7 @@ package p;
 public class d0<T1,T2,T3,T4> {
     public d0() {
     }
+
+    public d0(Object... a) {
+    }
 }

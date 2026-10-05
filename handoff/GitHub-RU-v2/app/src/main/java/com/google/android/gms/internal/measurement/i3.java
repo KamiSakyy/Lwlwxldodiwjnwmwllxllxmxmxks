@@ -257,4 +257,7 @@ public final class i3 extends f5 {
         public d() {
         }
     }
+
+    public i3(Object... a) {
+    }
 }
