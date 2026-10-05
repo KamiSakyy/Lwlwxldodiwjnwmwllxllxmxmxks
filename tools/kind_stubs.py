@@ -71,3 +71,5 @@ for dirpath, dirs, files in os.walk(root):
 print(f"Стабов переведено в interface: {changed_i}; конфликтов (оба вида): {conflicts}")
 
 # retry после сбоя раннера GitHub
+
+# retry 3 — после восстановления песочницы
