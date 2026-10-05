@@ -6,6 +6,7 @@ on:
       - "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
     paths:
       - ".github/workflows/04-build-clean.yml"
+      - "tools/clean_adapt.py"
   workflow_dispatch:
 
 permissions:
@@ -13,12 +14,12 @@ permissions:
 
 jobs:
   build-clean:
-    name: "Клон github/mobile → адаптация (rudroid + RU + подписание) → assembleRelease"
+    name: "github/mobile -> rudroid + RU + assembleRelease"
     runs-on: ubuntu-latest
     timeout-minutes: 150
 
     steps:
-      - name: "Checkout нашего репозитория (ключ подписи, перевод, инструменты)"
+      - name: "Checkout нашего репозитория (ключ, перевод, скрипты)"
         uses: actions/checkout@v4
         with:
           ref: "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
@@ -31,150 +32,51 @@ jobs:
           java-version: "17"
 
       - name: "Android SDK"
+        shell: bash
         run: |
           SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
           yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
           "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "platforms;android-35" "platforms;android-34" "build-tools;34.0.0" "platform-tools" | tail -2
 
-      - name: "Клонирование ЧИСТОГО исходника github/mobile (без истории)"
-        run: |
-          set -e
-          git clone --depth 1 https://github.com/github/mobile.git /tmp/mobile
-          echo "=== Структура репозитория (Android) ==="
-          ls /tmp/mobile
-          find /tmp/mobile -maxdepth 2 -type d | head -40
+      - name: "Клонирование чистого исходника github/mobile"
+        run: git clone --depth 1 https://github.com/github/mobile.git /tmp/mobile
 
-      - name: "РЕКОН: gradle-модули, applicationId, google-services, res"
+      - name: "Рекон: модули, applicationId, google-services"
         run: |
-          set -e
-          R=/tmp/recon.txt
+          ls /tmp/mobile > /tmp/recon.txt 2>&1
           {
-            echo "=== settings.gradle* ==="; cat /tmp/mobile/settings.gradle* 2>/dev/null | head -60
-            echo; echo "=== корневой build.gradle* ==="; cat /tmp/mobile/build.gradle* 2>/dev/null | head -40
-            echo; echo "=== все build.gradle (модули) ==="; find /tmp/mobile -name "build.gradle*" -not -path "*/.git/*" | head -30
-            echo; echo "=== applicationId / namespace ==="
-            grep -rn "applicationId\|namespace " /tmp/mobile --include="build.gradle*" | head -20
-            echo; echo "=== google-services / firebase / crashlytics упоминания ==="
-            grep -rn "google.services\|googleServices\|crashlytics\|firebase" /tmp/mobile --include="build.gradle*" --include="*.properties" | head -20
-            echo; echo "=== gradle-wrapper ==="; cat /tmp/mobile/gradle/wrapper/gradle-wrapper.properties 2>/dev/null
-            echo; echo "=== где res/strings.xml (модули) ==="; find /tmp/mobile -name "strings.xml" -path "*res*": 2>/dev/null | head -10
-            find /tmp/mobile -name "strings.xml" -path "*res*" | head -10
-            echo; echo "=== AndroidManifest файлы ==="; find /tmp/mobile -name "AndroidManifest.xml" | head -10
-            echo; echo "=== размер без .git ==="; du -sh --exclude=.git /tmp/mobile
-            echo; echo "=== gradle.properties ==="; cat /tmp/mobile/gradle.properties 2>/dev/null | head -20
-            echo; echo "=== ищем OAuth deep link ==="; grep -rn "com.github.android/oauth\|github://com.github" /tmp/mobile --include="*.xml" --include="*.kt" --include="*.java" -l | head -10
-          } > "$R" 2>&1
-          cat "$R"
+            echo "=== settings.gradle ==="; head -60 /tmp/mobile/settings.gradle* 2>/dev/null
+            echo "=== корневой build.gradle ==="; head -40 /tmp/mobile/build.gradle* 2>/dev/null
+            echo "=== build.gradle модулей ==="; find /tmp/mobile -name "build.gradle*" -not -path "*/.git/*" | head -30
+            echo "=== applicationId / namespace ==="; grep -rn "applicationId\|namespace " /tmp/mobile --include="build.gradle*" | head -20
+            echo "=== google-services/firebase/crashlytics ==="; grep -rln "google.services\|crashlytics\|firebase" /tmp/mobile --include="build.gradle*" | head -10
+            echo "=== wrapper ==="; cat /tmp/mobile/gradle/wrapper/gradle-wrapper.properties 2>/dev/null
+            echo "=== strings.xml ==="; find /tmp/mobile -name "strings.xml" -path "*res*" -not -path "*/.git/*" | head -10
+            echo "=== манифесты ==="; find /tmp/mobile -name "AndroidManifest.xml" -not -path "*/.git/*" | head -10
+            echo "=== gradle.properties ==="; head -20 /tmp/mobile/gradle.properties 2>/dev/null
+            echo "=== размер без .git ==="; du -sh --exclude=.git /tmp/mobile
+            echo "=== deep link OAuth ==="; grep -rln "github://com.github.android" /tmp/mobile --include="*.xml" --include="*.kt" | head -5
+          } >> /tmp/recon.txt 2>&1
+          cat /tmp/recon.txt
 
-      - name: "АДАПТАЦИЯ: пакет rudroid, версия 930, подпись, RU-перевод, Firebase-флаги"
+      - name: "Извлечение RU-перевода из архива v1"
         run: |
           set -e
-          # Достаём русский перевод из архива v1
           sudo apt-get install -y -qq p7zip-full >/dev/null 2>&1 || true
-          mkdir -p /tmp/ru /tmp/stage1 /tmp/ext
+          mkdir -p /tmp/stage1 /tmp/ext
           7z x -y -o/tmp/stage1 "GitHub-RU-Source legal.zip.zip" >/dev/null
           unzip -q -o /tmp/stage1/*.zip -d /tmp/ext/ || true
-          RU=$(find /tmp/ext -path "*values-ru/strings.xml" | head -1)
-          echo "RU-strings: $RU ($(wc -l < "$RU") строк)"
+          find /tmp/ext -path "*values-ru/strings.xml" | head -1 > /tmp/ru-path.txt
+          cat /tmp/ru-path.txt
+          wc -l "$(cat /tmp/ru-path.txt)"
 
-          # Главный модуль ищем по AndroidManifest с application/MainActivity
-          MAINMOD=$(grep -rln "android.intent.category.LAUNCHER" /tmp/mobile --include="AndroidManifest.xml" | head -1 | xargs dirname | xargs dirname | xargs dirname)
-          echo "Главный модуль: $MAINMOD"
-          echo "MAINMOD=$MAINMOD" >> "$GITHUB_ENV"
+      - name: "Адаптация: rudroid + v930 + подпись + RU + Firebase-флаги"
+        run: |
+          set -e
+          RU=$(cat /tmp/ru-path.txt)
+          python3 tools/clean_adapt.py /tmp/mobile "$RU" handoff/GitHub-RU-v2/app/github-ru.jks
 
-          # 1) applicationId/namespace -> com.github.rudroid (deep-link host НЕ трогаем!)
-          find /tmp/mobile -name "build.gradle*" -not -path "*/.git/*" -exec sed -i \
-            -e "s/applicationId ['\"]com.github.android['\"]/applicationId 'com.github.rudroid'/g" \
-            -e "s/namespace ['\"]com.github.android['\"]/namespace 'com.github.rudroid'/g" {} +
-          grep -rn "applicationId" /tmp/mobile --include="build.gradle*" | head -5
-
-          # 2) версия: versionCode 930, versionName с суффиксом -ru3
-          python3 - << 'PYEOF'
-import re, os, glob
-mainmod = os.environ.get("MAINMOD", "")
-g = os.path.join(mainmod, "build.gradle")
-if os.path.isfile(g):
-    t = open(g).read()
-    if re.search(r"versionCode\s+", t):
-        t = re.sub(r"versionCode\s+\d+", "versionCode 930", t)
-    else:
-        t = t.replace("defaultConfig {", "defaultConfig {\n        versionCode 930", 1)
-    if re.search(r"versionName\s+", t):
-        t = re.sub(r"versionName\s+['\"][^'\"]*['\"]", "versionName 'ru3-clean'", t)
-    else:
-        t = t.replace("defaultConfig {", "defaultConfig {\n        versionName 'ru3-clean'", 1)
-    # подпись
-    if "signingConfigs" not in t:
-        t = t.replace("android {", """android {
-    signingConfigs {
-        release {
-            storeFile file('github-ru.jks')
-            storePassword 'android'
-            keyAlias 'github-ru'
-            keyPassword 'android'
-        }
-    }""", 1)
-        t = t.replace("buildTypes {", "buildTypes {\n        release {\n            signingConfig signingConfigs.release\n        }", 1)
-    else:
-        print("signingConfigs уже есть — проверьте вручную")
-    open(g, "w").write(t)
-    print("gradle главного модуля обновлён")
-PYEOF
-          cp -f handoff/GitHub-RU-v2/app/github-ru.jks "$MAINMOD/github-ru.jks"
-
-          # 3) RU-перевод в res главного модуля
-          mkdir -p "$MAINMOD/src/main/res/values-ru"
-          cp -f "$RU" "$MAINMOD/src/main/res/values-ru/strings.xml"
-
-          # 4) Firebase-флаги (фикс нагрева) в манифест главного модуля
-          python3 - << 'PYEOF'
-import os, re
-mainmod = os.environ.get("MAINMOD", "")
-mp = os.path.join(mainmod, "src", "main", "AndroidManifest.xml")
-t = open(mp, encoding="utf-8").read()
-FLAGS = [
-    ("firebase_messaging_auto_init_enabled", "false"),
-    ("firebase_analytics_collection_deactivated", "true"),
-    ("firebase_analytics_collection_enabled", "false"),
-    ("google_analytics_adid_collection_enabled", "false"),
-    ("firebase_crashlytics_collection_enabled", "false"),
-]
-ins = "".join(f'        <meta-data android:name="{n}" android:value="{v}"/>\n' for n, v in FLAGS)
-m = re.search(r"(<application[^>]*>)", t)
-if m and "firebase_messaging_auto_init_enabled" not in t:
-    t = t.replace(m.group(1), m.group(1) + "\n" + ins, 1)
-    open(mp, "w", encoding="utf-8").write(t)
-    print("Firebase-флаги добавлены в манифест")
-PYEOF
-
-          # 5) Если применяется плагин google-services, а json нет — кладём заглушку
-          python3 - << 'PYEOF'
-import os, re, glob, json
-found_gs = False
-for g in glob.glob("/tmp/mobile/**/build.gradle*", recursive=True):
-    t = open(g, encoding="utf-8", errors="ignore").read()
-    if "com.google.gms.google-services" in t:
-        found_gs = True
-        gsdir = os.path.dirname(g)
-        js = os.path.join(gsdir, "google-services.json")
-        if not os.path.isfile(js):
-            stub = {
-              "project_info": {"project_number": "0", "project_id": "github-ru-stub", "storage_bucket": "github-ru-stub.appspot.com"},
-              "client": [{
-                 "client_info": {"mobilesdk_app_id": "1:0:android:0000000000000000",
-                                 "android_client_info": {"package_name": "com.github.rudroid"}},
-                 "oauth_client": [],
-                 "api_key": [{"current_key": "AIzaSyA000000000000000000000000000000000"}],
-                 "services": {"appinvite_service": {"other_platform_oauth_client": []}}
-              }],
-              "configuration_version": "1"
-            }
-            json.dump(stub, open(js, "w"), indent=2)
-            print("Заглушка google-services.json ->", js)
-print("google-services найден" if found_gs else "google-services не используется")
-PYEOF
-
-      - name: "СБОРКА ЧИСТОГО ПРОЕКТА: ./gradlew assembleRelease"
+      - name: "Сборка: ./gradlew assembleRelease"
         run: |
           set -e
           set -o pipefail
@@ -182,7 +84,7 @@ PYEOF
           chmod +x gradlew
           ./gradlew assembleRelease --no-daemon --stacktrace 2>&1 | tee /tmp/clean-build.log | tail -50
 
-      - name: "Результат: APK v3 + подпись + исходник в handoff"
+      - name: "Результаты: APK v3 + логи"
         if: always()
         run: |
           set -e
@@ -192,22 +94,22 @@ PYEOF
           if [ -n "$APK" ]; then
             cp -f "$APK" "$GITHUB_WORKSPACE/handoff/GitHub-RU-Clean-v3-930-release.apk"
             sha256sum "$GITHUB_WORKSPACE/handoff/GitHub-RU-Clean-v3-930-release.apk" > "$GITHUB_WORKSPACE/handoff/APK-Clean-v3-SHA256.txt"
+            cat "$GITHUB_WORKSPACE/handoff/APK-Clean-v3-SHA256.txt"
             "${ANDROID_HOME:-$ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" verify --print-certs "$APK" | head -6 || true
           else
-            echo "APK не собран — см. лог"
+            echo "APK не собран — смотреть clean-build-log.txt"
           fi
           cp -f /tmp/clean-build.log "$GITHUB_WORKSPACE/handoff/clean-build-log.txt" 2>/dev/null || true
           cp -f /tmp/recon.txt "$GITHUB_WORKSPACE/handoff/clean-recon.txt" 2>/dev/null || true
 
-      - name: "Копия чистого исходника (Android-часть) в handoff/GitHub-RU-Clean"
+      - name: "Чистый исходник -> handoff/GitHub-RU-Clean (Android-часть)"
         if: always()
         run: |
           set -e
           mkdir -p handoff/GitHub-RU-Clean
-          rsync -a --exclude '.git' --exclude 'build' --exclude '.gradle' \
-            --exclude '.idea' --exclude '.kotlin' --exclude '*.apk' /tmp/mobile/ handoff/GitHub-RU-Clean/
-          du -sh handoff/GitHub-RU-Clean
-          find handoff/GitHub-RU-Clean -type f | wc -l
+          rsync -a --exclude '.git' --exclude 'build' --exclude '.gradle' --exclude '.idea' --exclude '.kotlin' /tmp/mobile/ handoff/GitHub-RU-Clean/
+          du -sh handoff/GitHub-RU-Clean || true
+          find handoff/GitHub-RU-Clean -type f | wc -l || true
 
       - name: "Артефакт: APK v3"
         if: always()
@@ -224,10 +126,10 @@ PYEOF
           set -e
           git config user.name "kami-bot"
           git config user.email "kami-bot@users.noreply.github.com"
-          git add handoff/ 2>/dev/null || true
+          git add handoff/ || true
           if git diff --cached --quiet; then
             echo "Нет изменений"
           else
-            git commit -m "Этап 4: чистый исходник github/mobile + RU + APK v3 (если собрался) [skip ci]"
+            git commit -m "Этап 4: чистый github/mobile + RU -> APK v3 [skip ci]"
             git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
           fi
