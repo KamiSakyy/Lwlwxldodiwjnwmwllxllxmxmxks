@@ -18,9 +18,27 @@ SIGNING_KEY="$ROOT/handoff/WebAPK-Studio-signing.p12"
 SIGNING_PROPERTIES="$ROOT/handoff/signing.properties"
 SIGNING_PASSWORD="$(sed -n 's/^storePassword=//p' "$SIGNING_PROPERTIES")"
 SIGNING_ALIAS="$(sed -n 's/^keyAlias=//p' "$SIGNING_PROPERTIES")"
+STAGE_FILE="$TEMP_DIR/smoke-stage.txt"
 mkdir -p "$CLASSES" "$TEMP_DIR"
+stage() {
+  printf '%s\n' "$1" > "$STAGE_FILE"
+  echo "Smoke stage: $1"
+}
+report_failure() {
+  local status=$?
+  if [ "$status" -ne 0 ]; then
+    local failed_stage="$(cat "$STAGE_FILE" 2>/dev/null || echo 'before first smoke stage')"
+    echo "::error title=Runtime APK smoke failed::${failed_stage} (exit ${status})"
+    if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
+      echo "Runtime APK smoke stopped at: ${failed_stage} (exit ${status})" >> "$GITHUB_STEP_SUMMARY"
+    fi
+  fi
+  return "$status"
+}
+trap report_failure EXIT
+stage "compile JVM crypto and APK smoke harness"
 
-javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
+javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \\
   "$ROOT/scripts/jvm-stubs/android/util/Base64.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/BinaryXmlPatcher.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/IconResourceLocator.java" \
@@ -28,7 +46,9 @@ javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
   "$ROOT/app/src/main/java/ru/webapk/studio/ApkV2Signer.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/JarV1Signer.java" \
   "$ROOT/scripts/RuntimeApkSmoke.java"
+stage "encrypt/decrypt round-trip, integrity and APK rewrite"
 java -cp "$CLASSES" ru.webapk.studio.RuntimeApkSmoke "$TEMPLATE_APK" "$UNSIGNED" "$SIGNED" "$SIGNING_KEY" "$SIGNING_PASSWORD" "$SIGNING_ALIAS"
+stage "verify sole native library and ARM-only ABI filters"
 TEMPLATE_ENTRIES="$(unzip -Z1 "$TEMPLATE_APK")"
 SIGNED_ENTRIES="$(unzip -Z1 "$SIGNED")"
 APP_ENTRIES="$(unzip -Z1 "$APP_APK")"
@@ -71,6 +91,7 @@ if unzip -p "$SIGNED" assets/a.c | grep -aF "TOP_SECRET_SOURCE_MARKER" >/dev/nul
   echo "Encrypted website archive contains a plaintext source marker" >&2
   exit 1
 fi
+stage "verify APK signatures and stable signing key"
 if ! "$BUILD_TOOLS/apksigner" verify --verbose "$SIGNED" >"$TEMP_DIR/apksigner.log" 2>&1; then
   cat "$TEMP_DIR/apksigner.log"
   DIAGNOSTIC="$(tr '\n' ' ' < "$TEMP_DIR/apksigner.log" | sed 's/::/%3A%3A/g')"
@@ -93,6 +114,7 @@ if [ -z "$CERT1" ] || [ "$CERT1" != "$CERT2" ]; then
   echo "Repeated APK signing did not preserve the handoff certificate" >&2
   exit 1
 fi
+stage "verify final manifest and launcher metadata"
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
 TEMPLATE_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$TEMPLATE_APK" AndroidManifest.xml)"
 grep -F "android:roundIcon" <<< "$TEMPLATE_MANIFEST_TREE"

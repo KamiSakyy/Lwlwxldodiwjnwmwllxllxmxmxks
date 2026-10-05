@@ -55,13 +55,26 @@ jobs:
             exit "$build_status"
           fi
 
-      - name: Verify R8 minification and smoke-test encrypted ARM APKs
+      - name: Verify R8 full-mode mapping outputs
         shell: bash
         run: |
           set -euo pipefail
           test -s app/build/outputs/mapping/release/mapping.txt
           test -s template/build/outputs/mapping/release/mapping.txt
-          bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke" app/build/outputs/apk/release/app-release.apk
+
+      - name: Smoke-test encrypted site APK and ARM-only native packaging
+        shell: bash
+        run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke" app/build/outputs/apk/release/app-release.apk
+
+      - name: Report smoke-test stage on failure
+        if: failure()
+        shell: bash
+        run: |
+          if [ -s "$RUNNER_TEMP/webapk-runtime-smoke/smoke-stage.txt" ]; then
+            echo "Last smoke stage: $(cat "$RUNNER_TEMP/webapk-runtime-smoke/smoke-stage.txt")" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No runtime smoke stage was reached; check the R8 mapping-output step." | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Verify stripped single-library JNI payload
         shell: bash
