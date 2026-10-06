@@ -12,8 +12,8 @@ import z01.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final c a;
-    public final g b;
+    public c a;
+    public g b;
 
     public b(c cVar, g gVar) {
         k.g(cVar, "createCommitOnBranchUseCase");

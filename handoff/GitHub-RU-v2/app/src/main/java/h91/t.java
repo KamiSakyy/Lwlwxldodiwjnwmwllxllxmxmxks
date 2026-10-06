@@ -8,8 +8,8 @@ import java.util.zip.Inflater;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class t implements k0 {
-    public final e0 r;
-    public final Inflater s;
+    public e0 r;
+    public Inflater s;
     public int t;
     public boolean u;
 

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fw {
-    public final String a;
-    public final cw b;
-    public final String c;
+    public String a;
+    public cw b;
+    public String c;
 
     public fw(String str, cw cwVar, String str2) {
         this.a = str;

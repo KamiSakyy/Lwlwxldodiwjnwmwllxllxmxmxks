@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o0 {
-    public final String a;
-    public final r0 b;
-    public final String c;
-    public final ms.v d;
+    public String a;
+    public r0 b;
+    public String c;
+    public ms.v d;
 
     public o0(String str, r0 r0Var, String str2, ms.v vVar) {
         this.a = str;

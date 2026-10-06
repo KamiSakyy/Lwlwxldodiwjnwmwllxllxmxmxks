@@ -4,8 +4,8 @@ import w80.v3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c0 {
-    public final String a;
-    public final v3 b;
+    public String a;
+    public v3 b;
 
     public c0(String str, v3 v3Var) {
         k71.k.g(str, "__typename");

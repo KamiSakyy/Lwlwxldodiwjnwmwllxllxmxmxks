@@ -2,7 +2,7 @@ package yn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public final i a;
+    public i a;
 
     public l(i iVar) {
         this.a = iVar;

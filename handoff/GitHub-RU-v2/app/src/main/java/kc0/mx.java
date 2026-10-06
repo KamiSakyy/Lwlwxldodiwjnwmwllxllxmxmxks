@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mx implements aaShadow.v0 {
-    public final ox a;
+    public ox a;
 
     public mx(ox oxVar) {
         this.a = oxVar;

@@ -5,18 +5,18 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b1 {
-    public final String a;
-    public final b4 b;
-    public final t3 c;
-    public final int d;
-    public final boolean e;
-    public final u0 f;
-    public final f1 g;
-    public final x0 h;
-    public final c1 i;
-    public final d1 j;
-    public final y0 k;
-    public final e1 l;
+    public String a;
+    public b4 b;
+    public t3 c;
+    public int d;
+    public boolean e;
+    public u0 f;
+    public f1 g;
+    public x0 h;
+    public c1 i;
+    public d1 j;
+    public y0 k;
+    public e1 l;
 
     public b1(String str, b4 b4Var, t3 t3Var, int i, boolean z, u0 u0Var, f1 f1Var, x0 x0Var, c1 c1Var, d1 d1Var, y0 y0Var, e1 e1Var) {
         this.a = str;

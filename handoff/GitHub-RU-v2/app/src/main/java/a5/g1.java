@@ -15,7 +15,7 @@ public class g1 implements Iterator, l71.a {
     public int f407s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final Object f408t;
+    public Object f408t;
 
     public /* synthetic */ g1(int i, Object obj) {
         this.f406r = i;

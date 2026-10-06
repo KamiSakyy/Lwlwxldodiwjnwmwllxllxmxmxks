@@ -5,16 +5,16 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b1 {
-    public final String a;
-    public final int b;
-    public final DiffLineType c;
-    public final String d;
-    public final int e;
-    public final int f;
-    public final String g;
-    public final List h;
-    public final String i;
-    public final boolean j;
+    public String a;
+    public int b;
+    public DiffLineType c;
+    public String d;
+    public int e;
+    public int f;
+    public String g;
+    public List h;
+    public String i;
+    public boolean j;
 
     public b1(String str, int i, DiffLineType diffLineType, String str2, int i2, int i3, String str3, List list, String str4, boolean z) {
         k71.k.g(str, "html");

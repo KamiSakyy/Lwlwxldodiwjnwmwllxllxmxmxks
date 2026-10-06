@@ -6,13 +6,13 @@ import java.util.Map;
 public final class c1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f3509a;
+    public int f3509a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f3510b;
+    public int f3510b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Map f3511c;
+    public Map f3511c;
 
     public c1(int i, int i10, Map map) {
         this.f3509a = i;

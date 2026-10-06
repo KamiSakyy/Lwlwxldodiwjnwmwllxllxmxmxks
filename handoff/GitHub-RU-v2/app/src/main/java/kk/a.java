@@ -114,7 +114,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
         }
     }
 
-    public void b(p.l lVar, boolean z) {
+    public static void b(p.l lVar, boolean z) {
         if (lVar instanceof d0) {
             ((d0) lVar).A.k().c(false);
         }

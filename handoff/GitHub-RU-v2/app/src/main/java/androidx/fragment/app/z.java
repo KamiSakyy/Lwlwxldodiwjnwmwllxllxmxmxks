@@ -9,7 +9,7 @@ public final class z implements Parcelable {
     public static final Parcelable.Creator<z> CREATOR = new v1.p(1);
 
     /* renamed from: r, reason: collision with root package name */
-    public final Bundle f2674r;
+    public Bundle f2674r;
 
     public z(Bundle bundle) {
         this.f2674r = bundle;

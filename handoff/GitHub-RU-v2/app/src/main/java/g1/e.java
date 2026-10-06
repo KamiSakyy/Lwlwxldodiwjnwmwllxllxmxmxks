@@ -8,10 +8,10 @@ import x61.m;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f24454a;
+    public boolean f24454a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f24455b;
+    public ArrayList f24455b;
 
     public e(ArrayList arrayList, boolean z10) {
         this.f24454a = z10;

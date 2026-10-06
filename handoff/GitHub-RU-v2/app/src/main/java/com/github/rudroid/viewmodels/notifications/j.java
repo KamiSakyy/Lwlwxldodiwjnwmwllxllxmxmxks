@@ -38,4 +38,5 @@ public final /* synthetic */ class j implements j71.c {
     public Object f(Object p1) { return null; }
     public Object f(Object p1, Object p2, Object p3) { return null; }
     public Object ordinal() { return null; }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

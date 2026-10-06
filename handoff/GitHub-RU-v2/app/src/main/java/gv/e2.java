@@ -4,15 +4,15 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e2 implements aa.h0 {
-    public final String a;
-    public final b00 b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final boolean f;
-    public final d2 g;
-    public final boolean h;
-    public final String i;
+    public String a;
+    public b00 b;
+    public String c;
+    public String d;
+    public int e;
+    public boolean f;
+    public d2 g;
+    public boolean h;
+    public String i;
 
     public e2(String str, b00 b00Var, String str2, String str3, int i, boolean z, d2 d2Var, boolean z2, String str4) {
         this.a = str;

@@ -2,8 +2,8 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final hp.c b;
+    public String a;
+    public hp.c b;
 
     public e(String str, hp.c cVar) {
         this.a = str;
@@ -30,4 +30,5 @@ public final class e {
     }
     public Object c(Object p1) { return null; }
     public Object e(Object p1) { return null; }
+    public Object e(long p1) { return null; }
 }

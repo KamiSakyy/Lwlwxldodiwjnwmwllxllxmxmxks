@@ -8,28 +8,28 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements x {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final ZonedDateTime e;
-    public final int f;
-    public final int g;
-    public final int h;
-    public final boolean i;
-    public final boolean j;
-    public final boolean k;
-    public final boolean l;
-    public final boolean m;
-    public final boolean n;
-    public final IssueState o;
-    public final CloseReason p;
-    public final IssueType q;
-    public final h01.p r;
-    public final h01.j s;
-    public final String t;
-    public final String u;
-    public final z01.p v;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public ZonedDateTime e;
+    public int f;
+    public int g;
+    public int h;
+    public boolean i;
+    public boolean j;
+    public boolean k;
+    public boolean l;
+    public boolean m;
+    public boolean n;
+    public IssueState o;
+    public CloseReason p;
+    public IssueType q;
+    public h01.p r;
+    public h01.j s;
+    public String t;
+    public String u;
+    public z01.p v;
 
     public r(String str, String str2, String str3, int i, ZonedDateTime zonedDateTime, int i2, int i3, int i4, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, IssueState issueState, CloseReason closeReason, IssueType issueType, h01.p pVar, h01.j jVar, String str4, String str5, z01.p pVar2) {
         k71.k.g(issueState, "state");

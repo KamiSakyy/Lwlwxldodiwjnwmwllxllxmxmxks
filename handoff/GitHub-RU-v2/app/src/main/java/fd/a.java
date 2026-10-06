@@ -10,7 +10,7 @@ public interface a {
     public static final class C0068a implements a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final c f24396a;
+        public c f24396a;
 
         public C0068a(c cVar) {
             this.f24396a = cVar;
@@ -35,7 +35,7 @@ public interface a {
     public static final class b implements a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final r2 f24397a;
+        public r2 f24397a;
 
         public b(r2 r2Var) {
             k.g(r2Var, "mentionableItem");

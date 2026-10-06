@@ -9,7 +9,7 @@ import java.io.File;
 public final class a0 extends y {
 
     /* renamed from: r, reason: collision with root package name */
-    public final aa1.b f26079r;
+    public aa1.b f26079r;
 
     /* renamed from: s, reason: collision with root package name */
     public boolean f26080s;

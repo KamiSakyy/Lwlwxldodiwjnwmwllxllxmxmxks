@@ -2,8 +2,8 @@ package fa1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class r extends s {
-    public final g d;
-    public final boolean e;
+    public g d;
+    public boolean e;
 
     public r(p0 p0Var, q81.d dVar, n nVar, g gVar, boolean z) {
         super(p0Var, dVar, nVar);

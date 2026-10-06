@@ -5,9 +5,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public final ArrayList a;
-    public final ArrayList b;
-    public final boolean c;
+    public ArrayList a;
+    public ArrayList b;
+    public boolean c;
 
     public m(ArrayList arrayList, ArrayList arrayList2, boolean z) {
         this.a = arrayList;

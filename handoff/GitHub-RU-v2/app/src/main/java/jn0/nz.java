@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nz {
-    public final String a;
-    public final mz b;
-    public final gz c;
-    public final List d;
-    public final String e;
+    public String a;
+    public mz b;
+    public gz c;
+    public List d;
+    public String e;
 
     public nz(String str, mz mzVar, gz gzVar, List list, String str2) {
         this.a = str;

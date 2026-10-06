@@ -8,7 +8,7 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z3 {
-    public final HashMap a;
+    public HashMap a;
 
     public z3(Map map) {
         HashMap hashMap = new HashMap();

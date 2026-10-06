@@ -6,7 +6,7 @@ import sy.w;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class l implements SerialDescriptor {
-    public final w61.p a;
+    public w61.p a;
 
     public l(j71.a aVar) {
         this.a = w.t(aVar);

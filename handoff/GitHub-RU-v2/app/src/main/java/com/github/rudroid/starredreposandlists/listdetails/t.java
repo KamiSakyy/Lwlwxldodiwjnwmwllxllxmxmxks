@@ -6,8 +6,8 @@ public final class t implements j71.c {
         ((Number) obj).intValue();
         throw null;
     }
-    public Object B(Object p1) { return null; }
-    public Object E(Object p1, Object p2) { return null; }
-    public Object I(Object p1, Object p2, Object p3) { return null; }
-    public Object w(Object p1, Object p2, Object p3) { return null; }
+    public static Object B(Object p1) { return null; }
+    public static Object E(Object p1, Object p2) { return null; }
+    public static Object I(Object p1, Object p2, Object p3) { return null; }
+    public static Object w(Object p1, Object p2, Object p3) { return null; }
 }

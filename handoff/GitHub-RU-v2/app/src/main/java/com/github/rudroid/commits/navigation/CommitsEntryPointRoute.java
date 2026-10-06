@@ -17,7 +17,7 @@ import w61.i;
 public final class CommitsEntryPointRoute implements Parcelable, c {
 
     /* renamed from: r, reason: collision with root package name */
-    public final CommitsType f9212r;
+    public CommitsType f9212r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<CommitsEntryPointRoute> CREATOR = new a();
 

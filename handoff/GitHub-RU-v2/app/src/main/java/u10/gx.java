@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gx {
-    public final int a;
-    public final dx b;
-    public final List c;
+    public int a;
+    public dx b;
+    public List c;
 
     public gx(int i, dx dxVar, List list) {
         this.a = i;

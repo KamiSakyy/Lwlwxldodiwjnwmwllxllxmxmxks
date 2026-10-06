@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lc implements aaShadow.v0 {
-    public final sc a;
+    public sc a;
 
     public lc(sc scVar) {
         this.a = scVar;

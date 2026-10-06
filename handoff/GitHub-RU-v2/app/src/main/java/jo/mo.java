@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mo {
-    public final no a;
+    public no a;
 
     public mo(no noVar) {
         this.a = noVar;

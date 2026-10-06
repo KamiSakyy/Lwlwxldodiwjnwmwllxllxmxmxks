@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a60 {
-    public final Boolean a;
+    public Boolean a;
 
     public a60(Boolean bool) {
         this.a = bool;

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m extends n {
     public final /* synthetic */ int a;
-    public final Pattern b;
+    public Pattern b;
 
     public /* synthetic */ m(Pattern pattern, int i) {
         this.a = i;

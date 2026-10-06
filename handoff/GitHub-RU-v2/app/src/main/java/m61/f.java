@@ -16,7 +16,7 @@ public final class f implements o61.b {
     public final /* synthetic */ int r = 1;
     public final Object s = new Object();
     public volatile o61.a t;
-    public final Object u;
+    public Object u;
 
     public f(y51.c cVar) {
         this.u = cVar;

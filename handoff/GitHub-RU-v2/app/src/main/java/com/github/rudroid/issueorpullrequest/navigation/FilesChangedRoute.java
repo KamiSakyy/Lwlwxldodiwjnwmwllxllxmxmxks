@@ -17,19 +17,19 @@ import x.i;
 public final class FilesChangedRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f15769r;
+    public String f15769r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f15770s;
+    public String f15770s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final int f15771t;
+    public int f15771t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final boolean f15772u;
+    public boolean f15772u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean f15773v;
+    public boolean f15773v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<FilesChangedRoute> CREATOR = new a();
 

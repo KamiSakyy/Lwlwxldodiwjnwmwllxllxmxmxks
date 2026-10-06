@@ -6,10 +6,10 @@ import java.util.List;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f4340a;
+    public List f4340a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f4341b;
+    public boolean f4341b;
 
     public b(List list, boolean z10) {
         k71.k.g(list, "listItems");

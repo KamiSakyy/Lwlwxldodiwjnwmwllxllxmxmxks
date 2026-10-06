@@ -2,10 +2,10 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u5 {
-    public final aa1.b a;
-    public final String b;
-    public final aa1.b c;
-    public final String d;
+    public aa1.b a;
+    public String b;
+    public aa1.b c;
+    public String d;
 
     public u5(aa1.b bVar, aa1.b bVar2, String str, String str2) {
         this.a = bVar;

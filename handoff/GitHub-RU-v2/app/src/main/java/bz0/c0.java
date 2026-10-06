@@ -55,7 +55,7 @@ import uu0.x5;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c0 {
     public final /* synthetic */ int a;
-    public final com.github.service.wrapper.b b;
+    public com.github.service.wrapper.b b;
 
     public c0(com.github.service.wrapper.b bVar, int i) {
         this.a = i;

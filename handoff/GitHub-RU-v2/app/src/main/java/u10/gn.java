@@ -2,18 +2,18 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gn {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final hc0.bm d;
-    public final mn e;
-    public final String f;
-    public final hc0.jl g;
-    public final c40.c h;
-    public final i80.c i;
-    public final aa0.c j;
-    public final g70.a k;
-    public final y60.a l;
+    public String a;
+    public String b;
+    public String c;
+    public hc0.bm d;
+    public mn e;
+    public String f;
+    public hc0.jl g;
+    public c40.c h;
+    public i80.c i;
+    public aa0.c j;
+    public g70.a k;
+    public y60.a l;
 
     public gn(String str, String str2, String str3, hc0.bm bmVar, mn mnVar, String str4, hc0.jl jlVar, c40.c cVar, i80.c cVar2, aa0.c cVar3, g70.a aVar, y60.a aVar2) {
         this.a = str;

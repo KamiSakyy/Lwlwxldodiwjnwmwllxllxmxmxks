@@ -9,7 +9,7 @@ public final class c8 {
     public static final c8 t;
     public static final c8 u;
     public static final /* synthetic */ c8[] v;
-    public final String r;
+    public String r;
 
     static {
         c8 c8Var = new c8("NEGATIVE", 0, "NEGATIVE");

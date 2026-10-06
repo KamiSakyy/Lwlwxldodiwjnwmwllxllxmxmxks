@@ -9,7 +9,7 @@ public final class yv {
     public static final yv t;
     public static final /* synthetic */ yv[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         yv yvVar = new yv("ERROR", 0, "ERROR");

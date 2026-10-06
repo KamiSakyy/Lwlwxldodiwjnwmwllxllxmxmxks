@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class im {
-    public final String a;
-    public final hm b;
-    public final String c;
+    public String a;
+    public hm b;
+    public String c;
 
     public im(String str, hm hmVar, String str2) {
         this.a = str;

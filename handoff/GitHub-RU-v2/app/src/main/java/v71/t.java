@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 public class t {
     public static final /* synthetic */ AtomicIntegerFieldUpdater b = AtomicIntegerFieldUpdater.newUpdater(t.class, "_handled$volatile");
     private volatile /* synthetic */ int _handled$volatile;
-    public final Throwable a;
+    public Throwable a;
 
     public t(Throwable th, boolean z) {
         this.a = th;

@@ -7,16 +7,16 @@ import com.github.service.models.response.Avatar;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final Avatar f;
-    public final String g;
-    public final boolean h;
-    public final String i;
-    public final boolean j;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public Avatar f;
+    public String g;
+    public boolean h;
+    public String i;
+    public boolean j;
 
     public l(String str, String str2, String str3, String str4, String str5, Avatar avatar, String str6, boolean z, String str7, boolean z2) {
         k71.k.g(avatar, "ownerAvatar");

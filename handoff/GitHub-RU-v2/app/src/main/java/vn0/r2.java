@@ -2,16 +2,16 @@ package vn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r2 {
-    public final String a;
-    public final pz0.e3 b;
-    public final pz0.y2 c;
-    public final String d;
-    public final x2 e;
-    public final u2 f;
-    public final int g;
-    public final q2 h;
-    public final s2 i;
-    public final String j;
+    public String a;
+    public pz0.e3 b;
+    public pz0.y2 c;
+    public String d;
+    public x2 e;
+    public u2 f;
+    public int g;
+    public q2 h;
+    public s2 i;
+    public String j;
 
     public r2(String str, pz0.e3 e3Var, pz0.y2 y2Var, String str2, x2 x2Var, u2 u2Var, int i, q2 q2Var, s2 s2Var, String str3) {
         this.a = str;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ub {
-    public final String a;
-    public final yb b;
-    public final String c;
+    public String a;
+    public yb b;
+    public String c;
 
     public ub(String str, yb ybVar, String str2) {
         this.a = str;

@@ -11,13 +11,13 @@ public final class z4 {
     public static final z4 f13641d;
 
     /* renamed from: a, reason: collision with root package name */
-    public final com.github.rudroid.utilities.ui.g1 f13642a;
+    public com.github.rudroid.utilities.ui.g1 f13642a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final PullRequestReviewEvent f13643b;
+    public PullRequestReviewEvent f13643b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f13644c;
+    public String f13644c;
 
     public static final class a {
     }

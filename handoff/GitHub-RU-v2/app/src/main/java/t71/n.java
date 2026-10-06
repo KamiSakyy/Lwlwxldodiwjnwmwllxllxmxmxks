@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public final class n implements Serializable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Pattern f32141r;
+    public Pattern f32141r;
 
     public n(String str, o oVar) {
         k71.k.g(str, "pattern");

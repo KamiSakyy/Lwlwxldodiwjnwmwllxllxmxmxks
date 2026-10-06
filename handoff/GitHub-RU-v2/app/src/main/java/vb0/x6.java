@@ -7,8 +7,8 @@ import u10.y90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x6 implements z01.d1, y90 {
-    public final com.github.service.wrapper.j r;
-    public final v71.v s;
+    public com.github.service.wrapper.j r;
+    public v71.v s;
     public v71.d1 t;
 
     public x6(com.github.service.wrapper.j jVar, v71.v vVar) {

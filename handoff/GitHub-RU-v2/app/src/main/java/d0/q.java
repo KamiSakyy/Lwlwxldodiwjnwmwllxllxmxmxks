@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public final class q extends n {
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f20964b;
+    public ArrayList f20964b;
 
     public q(String str, ArrayList arrayList) {
         super(str);

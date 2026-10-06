@@ -4,7 +4,7 @@ package s3;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f31696a;
+    public long f31696a;
 
     public static final float a(long j10) {
         return Float.intBitsToFloat((int) (j10 & 4294967295L));

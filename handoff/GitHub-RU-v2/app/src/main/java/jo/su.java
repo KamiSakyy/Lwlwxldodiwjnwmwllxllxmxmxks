@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class su {
-    public final String a;
-    public final String b;
-    public final hu c;
+    public String a;
+    public String b;
+    public hu c;
 
     public su(String str, String str2, hu huVar) {
         k71.k.g(str, "__typename");

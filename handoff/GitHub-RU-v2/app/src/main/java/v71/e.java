@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e {
     public static final /* synthetic */ AtomicIntegerFieldUpdater b = AtomicIntegerFieldUpdater.newUpdater(e.class, "notCompletedCount$volatile");
-    public final e0[] a;
+    public e0[] a;
     private volatile /* synthetic */ int notCompletedCount$volatile;
 
     public e(e0[] e0VarArr) {

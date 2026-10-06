@@ -43,4 +43,5 @@ public final class c {
     public static c[] values() {
         return (c[]) x.clone();
     }
+    public Object s(Object p1, Object p2) { return null; }
 }

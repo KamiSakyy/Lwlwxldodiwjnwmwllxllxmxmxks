@@ -14,13 +14,13 @@ public abstract class m0 {
     public static final class b extends m0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final k0 f4834a;
+        public k0 f4834a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final pi.i f4835b;
+        public pi.i f4835b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f4836c;
+        public boolean f4836c;
 
         public b(k0 k0Var, pi.i iVar, boolean z10) {
             this.f4834a = k0Var;
@@ -56,16 +56,16 @@ public abstract class m0 {
     public static final class c extends m0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final k0 f4837a;
+        public k0 f4837a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final byte f4838b;
+        public byte f4838b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final byte f4839c;
+        public byte f4839c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final byte f4840d;
+        public byte f4840d;
 
         public c(k0 k0Var, byte b10, byte b11, byte b12) {
             this.f4837a = k0Var;

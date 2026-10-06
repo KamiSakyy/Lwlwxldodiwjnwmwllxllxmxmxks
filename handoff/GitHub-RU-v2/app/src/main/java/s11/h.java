@@ -6,10 +6,10 @@ import w51.r;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements o11.b {
-    public final v61.a a;
-    public final v61.a b;
-    public final t c;
-    public final v61.a d;
+    public v61.a a;
+    public v61.a b;
+    public t c;
+    public v61.a d;
 
     public h(v61.a aVar, v61.a aVar2, t tVar, v61.a aVar3) {
         this.a = aVar;

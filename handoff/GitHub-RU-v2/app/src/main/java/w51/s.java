@@ -9,9 +9,9 @@ import org.json.JSONObject;
 public final class s {
     public static final long d = TimeUnit.DAYS.toMillis(7);
     public static final /* synthetic */ int e = 0;
-    public final String a;
-    public final String b;
-    public final long c;
+    public String a;
+    public String b;
+    public long c;
 
     public s(long j, String str, String str2) {
         this.a = str;

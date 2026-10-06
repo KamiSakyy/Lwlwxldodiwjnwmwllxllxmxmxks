@@ -9,14 +9,14 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements k {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final ArrayList d;
-    public final com.github.service.models.response.shortcuts.a e;
-    public final ShortcutType f;
-    public final ShortcutColor g;
-    public final ShortcutIcon h;
+    public String a;
+    public String b;
+    public String c;
+    public ArrayList d;
+    public com.github.service.models.response.shortcuts.a e;
+    public ShortcutType f;
+    public ShortcutColor g;
+    public ShortcutIcon h;
 
     public r(String str, String str2, String str3, ArrayList arrayList, com.github.service.models.response.shortcuts.a aVar, ShortcutType shortcutType, ShortcutColor shortcutColor, ShortcutIcon shortcutIcon) {
         k71.k.g(shortcutType, "type");

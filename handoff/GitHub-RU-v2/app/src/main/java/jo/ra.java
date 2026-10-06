@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ra {
-    public final String a;
-    public final cs.f b;
+    public String a;
+    public cs.f b;
 
     public ra(String str, cs.f fVar) {
         this.a = str;

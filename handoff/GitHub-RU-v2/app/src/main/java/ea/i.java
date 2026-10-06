@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 public final class i extends j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f22200a;
+    public LinkedHashMap f22200a;
 
     /* renamed from: b, reason: collision with root package name */
     public String f22201b = null;

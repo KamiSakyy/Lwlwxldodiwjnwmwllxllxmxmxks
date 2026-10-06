@@ -2,8 +2,8 @@ package p41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public final o a;
-    public final boolean b;
+    public o a;
+    public boolean b;
 
     public h(o oVar, boolean z) {
         this.a = oVar;

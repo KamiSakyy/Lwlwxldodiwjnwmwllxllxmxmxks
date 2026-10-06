@@ -5,9 +5,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements SerialDescriptor {
-    public final g a;
-    public final r71.b b;
-    public final String c;
+    public g a;
+    public r71.b b;
+    public String c;
 
     public b(g gVar, r71.b bVar) {
         k71.k.g(bVar, "kClass");

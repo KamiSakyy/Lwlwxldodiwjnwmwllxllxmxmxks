@@ -10,7 +10,7 @@ public final class t9 {
     public static final t9 u;
     public static final /* synthetic */ t9[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         t9 t9Var = new t9("ADDITION", 0, "ADDITION");

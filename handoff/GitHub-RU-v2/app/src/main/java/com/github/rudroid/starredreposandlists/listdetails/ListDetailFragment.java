@@ -26,9 +26,9 @@ public final class ListDetailFragment extends Hilt_ListDetailFragment implements
     public com.github.rudroid.activities.util.c D0;
     public com.github.rudroid.html.b E0;
     public com.github.rudroid.utilities.e F0;
-    public final l1 G0;
+    public l1 G0;
     public androidx.fragment.app.t H0;
-    public final w61.p I0;
+    public w61.p I0;
 
     public static final class a extends k71.l implements j71.a {
         public a() {

@@ -7,9 +7,9 @@ import jo.f4;
 public final class i {
     public static final h Companion = new h();
     public static final i d = new i(null, false, true);
-    public final boolean a;
-    public final String b;
-    public final boolean c;
+    public boolean a;
+    public String b;
+    public boolean c;
 
     public i(String str, boolean z, boolean z2) {
         this.a = z;

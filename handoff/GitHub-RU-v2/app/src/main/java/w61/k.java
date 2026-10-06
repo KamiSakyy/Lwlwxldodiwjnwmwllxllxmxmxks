@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements Serializable {
-    public final Object r;
-    public final Object s;
+    public Object r;
+    public Object s;
 
     public k(Object obj, Object obj2) {
         this.r = obj;

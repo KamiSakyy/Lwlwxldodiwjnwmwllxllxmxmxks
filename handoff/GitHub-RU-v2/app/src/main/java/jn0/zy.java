@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zy {
-    public final String a;
-    public final boolean b;
+    public String a;
+    public boolean b;
 
     public zy(String str, boolean z) {
         this.a = str;

@@ -11,8 +11,8 @@ import x61.p;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements s71.h {
     public final /* synthetic */ int a;
-    public final Object b;
-    public final Object c;
+    public Object b;
+    public Object c;
 
     public /* synthetic */ g(int i, Object obj, Object obj2) {
         this.a = i;

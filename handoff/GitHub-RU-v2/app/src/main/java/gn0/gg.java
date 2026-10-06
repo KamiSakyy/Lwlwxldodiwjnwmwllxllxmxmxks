@@ -9,7 +9,7 @@ public final class gg {
     public static final gg t;
     public static final /* synthetic */ gg[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         gg ggVar = new gg("BEHIND", 0, "BEHIND");

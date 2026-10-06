@@ -50,4 +50,15 @@ public final class n extends AnimatorListenerAdapter {
             textView.setAlpha(0.0f);
         }
     }
+    public Object dismissDropDown() { return null; }
+    public Object getHint() { return null; }
+    public Object onAttachedToWindow() { return null; }
+    public Object onDetachedFromWindow() { return null; }
+    public Object onMeasure(int p1, int p2) { return null; }
+    public Object onWindowFocusChanged(boolean p1) { return null; }
+    public Object setAdapter(Object p1) { return null; }
+    public Object setDropDownBackgroundDrawable(Object p1) { return null; }
+    public Object setOnItemSelectedListener(Object p1) { return null; }
+    public Object setRawInputType(int p1) { return null; }
+    public Object showDropDown() { return null; }
 }

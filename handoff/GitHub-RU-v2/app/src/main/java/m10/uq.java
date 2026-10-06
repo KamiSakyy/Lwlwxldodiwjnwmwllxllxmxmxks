@@ -9,7 +9,7 @@ public final class uq {
     public static final uq t;
     public static final /* synthetic */ uq[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         uq uqVar = new uq("LIST_IGNORED", 0, "LIST_IGNORED");

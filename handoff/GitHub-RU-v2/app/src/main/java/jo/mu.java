@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mu {
-    public final ju a;
-    public final List b;
+    public ju a;
+    public List b;
 
     public mu(ju juVar, List list) {
         this.a = juVar;

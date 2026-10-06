@@ -2,10 +2,10 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 implements aa.h0 {
-    public final String a;
-    public final y0 b;
-    public final String c;
-    public final f00.g1 d;
+    public String a;
+    public y0 b;
+    public String c;
+    public f00.g1 d;
 
     public z0(String str, y0 y0Var, String str2, f00.g1 g1Var) {
         this.a = str;

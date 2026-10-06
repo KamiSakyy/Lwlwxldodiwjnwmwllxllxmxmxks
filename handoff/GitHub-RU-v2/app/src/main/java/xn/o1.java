@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o1 extends sy.r {
-    public final ArrayList a;
-    public final String b;
+    public ArrayList a;
+    public String b;
 
     public o1(String str, ArrayList arrayList) {
         this.a = arrayList;

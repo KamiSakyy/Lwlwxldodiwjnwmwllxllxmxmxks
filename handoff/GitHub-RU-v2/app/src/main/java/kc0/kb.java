@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kb {
-    public final lb a;
-    public final String b;
-    public final String c;
+    public lb a;
+    public String b;
+    public String c;
 
     public kb(lb lbVar, String str, String str2) {
         this.a = lbVar;

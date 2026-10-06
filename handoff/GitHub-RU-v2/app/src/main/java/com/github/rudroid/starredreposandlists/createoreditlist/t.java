@@ -8,7 +8,7 @@ public final class t {
 
     public static final class b {
     }
-    public Object B(Object p1) { return null; }
-    public Object L(Object p1) { return null; }
-    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object B(Object p1) { return null; }
+    public static Object L(Object p1) { return null; }
+    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

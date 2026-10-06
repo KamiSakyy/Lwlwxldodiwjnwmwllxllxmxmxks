@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yp {
-    public final xp a;
-    public final List b;
+    public xp a;
+    public List b;
 
     public yp(xp xpVar, List list) {
         this.a = xpVar;

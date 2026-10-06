@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements h, Serializable {
-    public final Object r;
+    public Object r;
 
     public f(q81.u uVar) {
         this.r = uVar;

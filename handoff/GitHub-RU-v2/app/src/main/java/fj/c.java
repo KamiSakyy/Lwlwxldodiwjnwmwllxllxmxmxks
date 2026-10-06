@@ -11,7 +11,7 @@ import y71.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final d a;
+    public d a;
 
     public c(d dVar) {
         k.g(dVar, "store");

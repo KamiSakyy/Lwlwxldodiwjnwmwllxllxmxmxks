@@ -6,7 +6,7 @@ import android.app.Activity;
 public final class g<T> extends h<T> {
 
     /* renamed from: b, reason: collision with root package name */
-    public final j71.a f5922b;
+    public j71.a f5922b;
 
     public g(String str, j71.a aVar) {
         super(str);

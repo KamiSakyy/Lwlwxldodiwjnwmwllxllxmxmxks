@@ -4,19 +4,19 @@ package a0;
 public final class r2 implements l2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f234a;
+    public int f234a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final k2 f235b;
+    public k2 f235b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final b1 f236c;
+    public b1 f236c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f237d;
+    public long f237d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f238e;
+    public long f238e;
 
     public r2(int i, k2 k2Var, b1 b1Var, long j10) {
         this.f234a = i;

@@ -2,9 +2,9 @@ package yq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final vx.a b;
-    public final ct.c c;
+    public String a;
+    public vx.a b;
+    public ct.c c;
 
     public e(String str, vx.a aVar, ct.c cVar) {
         k71.k.g(str, "__typename");

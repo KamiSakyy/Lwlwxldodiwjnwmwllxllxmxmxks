@@ -4,7 +4,7 @@ package g3;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f24642a;
+    public int f24642a;
 
     public static String a(int i) {
         return i == 0 ? "EmojiSupportMatch.Default" : i == 1 ? "EmojiSupportMatch.None" : i == 2 ? "EmojiSupportMatch.All" : no.a.l("Invalid(value=", i, ')');

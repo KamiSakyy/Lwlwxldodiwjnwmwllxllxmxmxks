@@ -13,14 +13,14 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements on.e, mi0 {
-    public final com.github.service.wrapper.j r;
-    public final com.github.service.wrapper.b s;
-    public final v71.v t;
-    public final com.github.rudroid.common.k u;
-    public final w61.p v;
-    public final w61.p w;
-    public final w61.p x;
-    public final w61.p y;
+    public com.github.service.wrapper.j r;
+    public com.github.service.wrapper.b s;
+    public v71.v t;
+    public com.github.rudroid.common.k u;
+    public w61.p v;
+    public w61.p w;
+    public w61.p x;
+    public w61.p y;
 
     public o(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, com.github.rudroid.common.k kVar) {
         k71.k.g(jVar, "client");

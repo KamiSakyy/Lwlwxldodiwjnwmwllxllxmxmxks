@@ -5,10 +5,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class k {
-    public final int a;
-    public final Object b;
-    public final List c;
-    public final int d;
+    public int a;
+    public Object b;
+    public List c;
+    public int d;
 
     public k(int i, List list, y61.b bVar) {
         k71.k.g(bVar, "rows");

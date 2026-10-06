@@ -32,12 +32,12 @@ import java.util.WeakHashMap;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class t2 extends g5.a implements View.OnClickListener {
     public static final /* synthetic */ int O = 0;
-    public final LayoutInflater A;
-    public final SearchView B;
-    public final SearchableInfo C;
-    public final Context D;
-    public final WeakHashMap E;
-    public final int F;
+    public LayoutInflater A;
+    public SearchView B;
+    public SearchableInfo C;
+    public Context D;
+    public WeakHashMap E;
+    public int F;
     public int G;
     public ColorStateList H;
     public int I;
@@ -48,10 +48,10 @@ public final class t2 extends g5.a implements View.OnClickListener {
     public int N;
 
     /* renamed from: y, reason: collision with root package name */
-    public final int f30732y;
+    public int f30732y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final int f30733z;
+    public int f30733z;
 
     public t2(Context context, SearchView searchView, SearchableInfo searchableInfo, WeakHashMap weakHashMap) {
         int suggestionRowLayout = searchView.getSuggestionRowLayout();

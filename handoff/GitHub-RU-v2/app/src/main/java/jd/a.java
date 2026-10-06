@@ -12,13 +12,13 @@ public final class a {
     public static final a f27392d = new a(k.f14288s, false, false);
 
     /* renamed from: a, reason: collision with root package name */
-    public final k f27393a;
+    public k f27393a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f27394b;
+    public boolean f27394b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f27395c;
+    public boolean f27395c;
 
     /* renamed from: jd.a$a, reason: collision with other inner class name */
     public static final class C0075a {

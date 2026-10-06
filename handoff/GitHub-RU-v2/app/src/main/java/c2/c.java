@@ -10,16 +10,16 @@ public final class c {
     public static final c f4059e = new c(0.0f, 0.0f, 0.0f, 0.0f);
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f4060a;
+    public float f4060a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f4061b;
+    public float f4061b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f4062c;
+    public float f4062c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f4063d;
+    public float f4063d;
 
     public c(float f6, float f10, float f11, float f12) {
         this.f4060a = f6;

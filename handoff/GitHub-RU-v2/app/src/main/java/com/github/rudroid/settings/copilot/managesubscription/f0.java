@@ -10,4 +10,5 @@ public final class f0 implements p61.d {
         return Boolean.TRUE;
     }
     public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
 }

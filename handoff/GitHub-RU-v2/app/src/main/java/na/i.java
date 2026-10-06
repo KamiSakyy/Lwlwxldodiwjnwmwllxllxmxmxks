@@ -6,7 +6,7 @@ import java.util.Map;
 public final class i implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f29678a;
+    public String f29678a;
 
     public i(String str, Map map) {
         this.f29678a = str;

@@ -425,4 +425,15 @@ public final class d {
     public Object i(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object j(Object p1) { return null; }
     public Object w(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object W(float p1) { return null; }
+    public Object W(int p1) { return null; }
+    public Object a(int p1, int p2, Object p3, Object p4) { return null; }
+    public Object b(Object p1, int p2, int p3) { return null; }
+    public Object c(char p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
+    public Object i(Object p1, Object p2, Object p3, int p4) { return null; }
+    public Object i(int p1) { return null; }
+    public Object j(Object p1) { return null; }
+    public Object w(long p1, long p2, long p3, float p4) { return null; }
 }

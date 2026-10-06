@@ -9,7 +9,7 @@ public final class ks {
     public static final ks t;
     public static final /* synthetic */ ks[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         ks ksVar = new ks("CHEVRON_UP", 0, "CHEVRON_UP");

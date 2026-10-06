@@ -9,7 +9,7 @@ import java.util.List;
 public final class g extends AccessibilityNodeProvider {
 
     /* renamed from: a, reason: collision with root package name */
-    public final y51.c f3487a;
+    public y51.c f3487a;
 
     public g(y51.c cVar) {
         this.f3487a = cVar;

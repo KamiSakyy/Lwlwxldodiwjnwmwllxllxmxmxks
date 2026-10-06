@@ -2,12 +2,12 @@ package hc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cs {
-    public final es a;
-    public final ks b;
-    public final String c;
-    public final aa1.b d;
-    public final aa1.b e;
-    public final lt f;
+    public es a;
+    public ks b;
+    public String c;
+    public aa1.b d;
+    public aa1.b e;
+    public lt f;
 
     public cs(es esVar, ks ksVar, String str, aa1.b bVar, aa1.b bVar2, lt ltVar) {
         k71.k.g(str, "name");

@@ -3,9 +3,9 @@ package com.google.android.gms.measurement.internal;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 {
     public static final Object f = new Object();
-    public final String a;
-    public final x b;
-    public final Object c;
+    public String a;
+    public x b;
+    public Object c;
     public final Object d = new Object();
     public volatile Object e = null;
 

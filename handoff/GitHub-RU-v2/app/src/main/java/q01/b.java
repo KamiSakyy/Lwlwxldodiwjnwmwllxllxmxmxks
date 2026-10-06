@@ -6,11 +6,11 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements a {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final String d;
-    public final b01.e e;
+    public String a;
+    public String b;
+    public boolean c;
+    public String d;
+    public b01.e e;
 
     public b(String str, String str2, boolean z, String str3, b01.e eVar) {
         k71.k.g(str, "term");

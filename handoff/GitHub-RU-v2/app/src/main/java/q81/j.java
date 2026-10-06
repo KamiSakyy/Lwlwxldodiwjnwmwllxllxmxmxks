@@ -11,16 +11,16 @@ public final class j {
     public static final Pattern l = Pattern.compile("(?i)(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec).*");
     public static final Pattern m = Pattern.compile("(\\d{1,2})[^\\d]*");
     public static final Pattern n = Pattern.compile("(\\d{1,2}):(\\d{1,2}):(\\d{1,2})[^\\d]*");
-    public final String a;
-    public final String b;
-    public final long c;
-    public final String d;
-    public final String e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final boolean i;
-    public final String j;
+    public String a;
+    public String b;
+    public long c;
+    public String d;
+    public String e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public boolean i;
+    public String j;
 
     public j(String str, String str2, long j, String str3, String str4, boolean z, boolean z2, boolean z3, boolean z4, String str5) {
         this.a = str;

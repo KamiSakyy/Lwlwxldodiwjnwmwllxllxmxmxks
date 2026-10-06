@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t50 {
-    public final String a;
-    public final u50 b;
-    public final vx.a c;
+    public String a;
+    public u50 b;
+    public vx.a c;
 
     public t50(String str, u50 u50Var, vx.a aVar) {
         k71.k.g(str, "__typename");

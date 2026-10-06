@@ -24,8 +24,8 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o extends i4 {
-    public final n v;
-    public final ba.c w;
+    public n v;
+    public ba.c w;
     public static final String[] x = {"last_bundled_timestamp", "ALTER TABLE events ADD COLUMN last_bundled_timestamp INTEGER;", "last_bundled_day", "ALTER TABLE events ADD COLUMN last_bundled_day INTEGER;", "last_sampled_complex_event_id", "ALTER TABLE events ADD COLUMN last_sampled_complex_event_id INTEGER;", "last_sampling_rate", "ALTER TABLE events ADD COLUMN last_sampling_rate INTEGER;", "last_exempt_from_sampling", "ALTER TABLE events ADD COLUMN last_exempt_from_sampling INTEGER;", "current_session_count", "ALTER TABLE events ADD COLUMN current_session_count INTEGER;"};
     public static final String[] y = {"associated_row_id", "ALTER TABLE upload_queue ADD COLUMN associated_row_id INTEGER;", "last_upload_timestamp", "ALTER TABLE upload_queue ADD COLUMN last_upload_timestamp INTEGER;"};
     public static final String[] z = {"origin", "ALTER TABLE user_attributes ADD COLUMN origin TEXT;"};
@@ -2772,4 +2772,5 @@ public final class o extends i4 {
 
     public o(Object... a) {
     }
+    public Object a(Object p1, Object p2) { return null; }
 }

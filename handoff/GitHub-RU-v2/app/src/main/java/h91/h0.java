@@ -6,8 +6,8 @@ import java.security.MessageDigest;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h0 extends k {
-    public final transient byte[][] v;
-    public final transient int[] w;
+    public transient byte[][] v;
+    public transient int[] w;
 
     public h0(byte[][] bArr, int[] iArr) {
         super(k.u.r);

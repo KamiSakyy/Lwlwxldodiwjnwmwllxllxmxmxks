@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y implements aa.h0 {
-    public final w a;
-    public final ZonedDateTime b;
-    public final boolean c;
-    public final String d;
-    public final x e;
+    public w a;
+    public ZonedDateTime b;
+    public boolean c;
+    public String d;
+    public x e;
 
     public y(w wVar, ZonedDateTime zonedDateTime, boolean z, String str, x xVar) {
         this.a = wVar;

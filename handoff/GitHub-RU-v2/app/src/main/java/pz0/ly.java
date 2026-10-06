@@ -13,7 +13,7 @@ public final class ly {
     public static final ly x;
     public static final /* synthetic */ ly[] y;
     public static final /* synthetic */ d71.b z;
-    public final String r;
+    public String r;
 
     static {
         ly lyVar = new ly("CREATED_AT", 0, "CREATED_AT");

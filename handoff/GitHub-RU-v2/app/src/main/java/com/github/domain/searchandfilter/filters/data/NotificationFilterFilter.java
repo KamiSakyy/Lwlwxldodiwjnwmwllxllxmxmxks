@@ -17,7 +17,7 @@ import sy.w;
 public final class NotificationFilterFilter extends d {
     public static final w61.h[] w;
     public static final o0 x;
-    public final com.github.domain.searchandfilter.filters.data.notification.a v;
+    public com.github.domain.searchandfilter.filters.data.notification.a v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<NotificationFilterFilter> CREATOR = new o(0);
 

@@ -8,7 +8,7 @@ import wf.h;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n extends g<v01.c> {
-    public final List g;
+    public List g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(RepositoryFilterSortFragment repositoryFilterSortFragment) {
@@ -38,4 +38,5 @@ public final class n extends g<v01.c> {
         return this.g;
     }
     public Object n() { return null; }
+    public Object D(boolean p1) { return null; }
 }

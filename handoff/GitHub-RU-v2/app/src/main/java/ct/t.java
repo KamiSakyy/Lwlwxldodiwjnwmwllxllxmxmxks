@@ -6,13 +6,13 @@ import m10.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final ya0 d;
-    public final List e;
-    public final r f;
-    public final String g;
+    public String a;
+    public String b;
+    public boolean c;
+    public ya0 d;
+    public List e;
+    public r f;
+    public String g;
 
     public t(String str, String str2, boolean z, ya0 ya0Var, List list, r rVar, String str3) {
         this.a = str;

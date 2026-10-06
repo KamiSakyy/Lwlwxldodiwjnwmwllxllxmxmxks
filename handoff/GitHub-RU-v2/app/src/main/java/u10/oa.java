@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class oa {
-    public final String a;
-    public final na b;
-    public final String c;
+    public String a;
+    public na b;
+    public String c;
 
     public oa(String str, na naVar, String str2) {
         this.a = str;

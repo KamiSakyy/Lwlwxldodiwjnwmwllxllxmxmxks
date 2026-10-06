@@ -23,5 +23,6 @@ public final class a extends l7.m0 {
     }
     public Object name() { return null; }
     public Object ordinal() { return null; }
-    public Object q(Object p1) { return null; }
+    public static Object q(Object p1) { return null; }
+    public Object y(Object p1, Object p2) { return null; }
 }

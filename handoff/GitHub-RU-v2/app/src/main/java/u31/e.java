@@ -12,4 +12,5 @@ public final class e extends sy.u {
     public Object b(Object p1, Object p2) { return null; }
     public Object d() { return null; }
     public Object j() { return null; }
+    public Object b(Object p1, Object p2) { return null; }
 }

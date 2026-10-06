@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ob {
-    public final String a;
-    public final lb b;
-    public final String c;
+    public String a;
+    public lb b;
+    public String c;
 
     public ob(String str, lb lbVar, String str2) {
         this.a = str;

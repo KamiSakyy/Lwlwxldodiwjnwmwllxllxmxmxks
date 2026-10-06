@@ -6,7 +6,7 @@ import v71.l;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class c extends a {
-    public final a71.h s;
+    public a71.h s;
     public transient a71.c t;
 
     public c(a71.c cVar, a71.h hVar) {

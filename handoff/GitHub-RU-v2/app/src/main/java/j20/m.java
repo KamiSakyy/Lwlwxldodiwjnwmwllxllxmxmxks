@@ -12,8 +12,8 @@ import jo.f4;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements n0 {
     public static final j Companion = new j();
-    public final String r;
-    public final u0 s;
+    public String r;
+    public u0 s;
 
     public m(u0 u0Var, String str) {
         this.r = str;

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class er {
-    public final jr a;
-    public final String b;
-    public final String c;
+    public jr a;
+    public String b;
+    public String c;
 
     public er(jr jrVar, String str, String str2) {
         this.a = jrVar;

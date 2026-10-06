@@ -2,7 +2,7 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public final p51.b a;
+    public p51.b a;
 
     public l(p51.b bVar) {
         k71.k.g(bVar, "transportFactoryProvider");

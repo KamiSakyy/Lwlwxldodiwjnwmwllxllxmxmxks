@@ -6,13 +6,13 @@ import i9.y;
 public final class n extends f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final y f28417a;
+    public y f28417a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f28418b;
+    public String f28418b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final i9.f f28419c;
+    public i9.f f28419c;
 
     public n(y yVar, String str, i9.f fVar) {
         this.f28417a = yVar;

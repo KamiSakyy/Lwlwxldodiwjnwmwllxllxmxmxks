@@ -8,7 +8,7 @@ public final class on {
     public static final on s;
     public static final /* synthetic */ on[] t;
     public static final /* synthetic */ d71.b u;
-    public final String r;
+    public String r;
 
     static {
         on onVar = new on("GESTURE", 0, "GESTURE");

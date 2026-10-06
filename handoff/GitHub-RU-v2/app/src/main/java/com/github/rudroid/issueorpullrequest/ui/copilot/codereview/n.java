@@ -7,10 +7,10 @@ import java.util.List;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f16731a;
+    public List f16731a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f16732b;
+    public String f16732b;
 
     public n(List list, String str) {
         this.f16731a = list;

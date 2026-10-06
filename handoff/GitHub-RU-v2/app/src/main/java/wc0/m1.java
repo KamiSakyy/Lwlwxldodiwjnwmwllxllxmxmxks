@@ -4,16 +4,16 @@ import gn0.yv;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m1 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final i1 e;
-    public final String f;
-    public final j1 g;
-    public final yv h;
-    public final Boolean i;
-    public final String j;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public i1 e;
+    public String f;
+    public j1 g;
+    public yv h;
+    public Boolean i;
+    public String j;
 
     public m1(String str, String str2, String str3, String str4, i1 i1Var, String str5, j1 j1Var, yv yvVar, Boolean bool, String str6) {
         this.a = str;

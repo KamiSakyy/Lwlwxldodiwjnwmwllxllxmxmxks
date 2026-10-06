@@ -12,7 +12,7 @@ public final class g implements Set, l71.a {
     public final /* synthetic */ int f33564r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final h0 f33565s;
+    public h0 f33565s;
 
     public g(h0 h0Var, int i) {
         this.f33564r = i;

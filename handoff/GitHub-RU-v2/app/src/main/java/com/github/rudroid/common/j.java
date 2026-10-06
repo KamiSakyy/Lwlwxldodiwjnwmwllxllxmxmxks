@@ -4,7 +4,7 @@ package com.github.rudroid.common;
 final class j<T> implements o0<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Throwable f9334a;
+    public Throwable f9334a;
 
     public j(Throwable th) {
         k71.k.g(th, "throwable");

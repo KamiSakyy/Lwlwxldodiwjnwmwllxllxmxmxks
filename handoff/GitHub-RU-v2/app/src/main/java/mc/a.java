@@ -10,10 +10,10 @@ import t6.c;
 public final class a implements o1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Map f29202a;
+    public Map f29202a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final o1 f29203b;
+    public o1 f29203b;
 
     public a(Map map, o1 o1Var) {
         k.g(o1Var, "superFactory");

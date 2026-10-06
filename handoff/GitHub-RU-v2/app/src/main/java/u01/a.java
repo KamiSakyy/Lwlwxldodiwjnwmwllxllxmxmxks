@@ -5,8 +5,8 @@ import x01.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final i a;
-    public final Object b;
+    public i a;
+    public Object b;
 
     public a(List list, i iVar) {
         this.a = iVar;

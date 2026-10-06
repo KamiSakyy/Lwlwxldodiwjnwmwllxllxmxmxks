@@ -7,8 +7,8 @@ public abstract class p {
     public Boolean a;
     public boolean b;
     public final /* synthetic */ e c;
-    public final int d;
-    public final Bundle e;
+    public int d;
+    public Bundle e;
     public final /* synthetic */ e f;
 
     public p(e eVar, int i, Bundle bundle) {

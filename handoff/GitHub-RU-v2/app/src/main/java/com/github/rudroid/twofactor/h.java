@@ -11,14 +11,14 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h extends k1 {
     public static final a Companion = new a();
-    public final dn.e s;
-    public final dn.g t;
-    public final dn.j0 u;
-    public final dn.p v;
-    public final oa.m w;
-    public final y1 x;
+    public dn.e s;
+    public dn.g t;
+    public dn.j0 u;
+    public dn.p v;
+    public oa.m w;
+    public y1 x;
     public q1 y;
-    public final i1 z;
+    public i1 z;
 
     public static final class a {
     }

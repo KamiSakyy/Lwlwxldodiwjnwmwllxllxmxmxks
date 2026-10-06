@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i5 implements aaShadow.v0 {
-    public final g5 a;
-    public final String b;
-    public final String c;
+    public g5 a;
+    public String b;
+    public String c;
 
     public i5(g5 g5Var, String str, String str2) {
         this.a = g5Var;

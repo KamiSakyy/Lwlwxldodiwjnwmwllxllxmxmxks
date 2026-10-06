@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g1 extends l {
-    public final j1 z;
+    public j1 z;
 
     public g1(a71.c cVar, j1 j1Var) {
         super(1, cVar);

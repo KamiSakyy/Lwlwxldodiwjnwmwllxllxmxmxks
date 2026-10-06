@@ -2,10 +2,10 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b2 {
-    public final String a;
-    public final String b;
-    public final z1 c;
-    public final String d;
+    public String a;
+    public String b;
+    public z1 c;
+    public String d;
 
     public b2(String str, String str2, z1 z1Var, String str3) {
         this.a = str;

@@ -9,7 +9,7 @@ public final class pi {
     public static final pi t;
     public static final /* synthetic */ pi[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         pi piVar = new pi("ADDED", 0, "ADDED");

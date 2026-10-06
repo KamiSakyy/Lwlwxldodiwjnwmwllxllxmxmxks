@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w8 {
-    public final a9 a;
-    public final String b;
-    public final String c;
+    public a9 a;
+    public String b;
+    public String c;
 
     public w8(a9 a9Var, String str, String str2) {
         this.a = a9Var;

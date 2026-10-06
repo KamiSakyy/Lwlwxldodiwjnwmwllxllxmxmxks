@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qn {
-    public final nnShadow a;
-    public final String b;
-    public final String c;
+    public nnShadow a;
+    public String b;
+    public String c;
 
     public qn(nnShadow nnVar, String str, String str2) {
         this.a = nnVar;

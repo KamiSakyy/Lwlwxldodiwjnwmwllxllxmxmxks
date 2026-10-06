@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iz implements aaShadow.v0 {
-    public final mz a;
+    public mz a;
 
     public iz(mz mzVar) {
         this.a = mzVar;

@@ -7,9 +7,9 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class v0 implements ParameterizedType {
-    public final Type r;
-    public final Type s;
-    public final Type[] t;
+    public Type r;
+    public Type s;
+    public Type[] t;
 
     public v0(Type type, Type type2, Type... typeArr) {
         if (type2 instanceof Class) {

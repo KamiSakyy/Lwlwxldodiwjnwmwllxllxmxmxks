@@ -42,4 +42,6 @@ public final class x extends xa.k {
     }
 
     public Object g;
+    public Object N(int p1, int p2) { return null; }
+    public Object l() { return null; }
 }

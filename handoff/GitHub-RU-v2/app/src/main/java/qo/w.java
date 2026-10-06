@@ -7,9 +7,9 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w implements aa.w0 {
     public static final r Companion = new r();
-    public final String r;
-    public final aa.u0 s;
-    public final aa.u0 t;
+    public String r;
+    public aa.u0 s;
+    public aa.u0 t;
 
     public w(aa.u0 u0Var, aa.u0 u0Var2, String str) {
         k71.k.g(str, "checkSuiteId");

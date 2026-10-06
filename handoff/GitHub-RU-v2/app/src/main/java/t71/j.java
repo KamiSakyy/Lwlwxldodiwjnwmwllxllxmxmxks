@@ -4,10 +4,10 @@ package t71;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f32132a;
+    public String f32132a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final q71.g f32133b;
+    public q71.g f32133b;
 
     public j(String str, q71.g gVar) {
         this.f32132a = str;
@@ -33,7 +33,7 @@ public final class j {
         return "MatchGroup(value=" + this.f32132a + ", range=" + this.f32133b + ')';
     }
     public Object i0(Object p1, Object p2) { return null; }
-    public Object l0(Object p1) { return null; }
+    public static Object l0(Object p1) { return null; }
     public Object a = null;
     public Object b = null;
 }

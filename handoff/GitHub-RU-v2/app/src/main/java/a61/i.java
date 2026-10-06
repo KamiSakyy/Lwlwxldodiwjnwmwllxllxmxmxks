@@ -20,4 +20,5 @@ public final class i implements s {
     public Object r() { return null; }
     public Object size() { return null; }
     public Object t() { return null; }
+    public Object e(int p1, Object p2) { return null; }
 }

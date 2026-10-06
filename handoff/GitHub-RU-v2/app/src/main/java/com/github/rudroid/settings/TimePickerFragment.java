@@ -75,4 +75,5 @@ public final class TimePickerFragment extends DialogFragment implements TimePick
     public static Object y3(Object... a) {
         return null;
     }
+    public Object z4(Object p1, Object p2) { return null; }
 }

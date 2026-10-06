@@ -5,13 +5,13 @@ import hc0.fm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final int d;
-    public final fm e;
-    public final h0 f;
-    public final String g;
+    public String a;
+    public String b;
+    public boolean c;
+    public int d;
+    public fm e;
+    public h0 f;
+    public String g;
 
     public n(String str, String str2, boolean z, int i, fm fmVar, h0 h0Var, String str3) {
         this.a = str;

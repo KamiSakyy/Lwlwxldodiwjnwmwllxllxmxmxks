@@ -11,7 +11,7 @@ public final class wi {
     public static final wi v;
     public static final /* synthetic */ wi[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         wi wiVar = new wi("CLOSED", 0, "CLOSED");

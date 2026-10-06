@@ -17,8 +17,8 @@ import y41.t1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends u91.b {
-    public final q1 e;
-    public final int f;
+    public q1 e;
+    public int f;
     public int g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -108,5 +108,5 @@ public final class a extends u91.b {
         }
         return arrayList;
     }
-    public Object z(Object p1, Object p2) { return null; }
+    public static Object z(Object p1, Object p2) { return null; }
 }

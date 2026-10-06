@@ -8,7 +8,7 @@ import java.util.Iterator;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v extends d21.a implements Iterable {
     public static final Parcelable.Creator<v> CREATOR = new c21.c0(5);
-    public final Bundle r;
+    public Bundle r;
 
     public v(Bundle bundle) {
         this.r = bundle;

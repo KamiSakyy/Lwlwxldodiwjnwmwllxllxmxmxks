@@ -40,4 +40,5 @@ final class k extends c71.j implements j71.e {
         }
         return w61.a0.a;
     }
+    public Object a(Object p1, Object p2, Object p3, Object p4, boolean p5, Object p6, Object p7, Object p8, Object p9, Object p10) { return null; }
 }

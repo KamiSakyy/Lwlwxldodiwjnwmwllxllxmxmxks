@@ -7,13 +7,13 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
     public static final n Companion = new n();
-    public final String a;
-    public final Language b;
-    public final int c;
-    public final int d;
-    public final List e;
-    public final ArrayList f;
-    public final Integer g;
+    public String a;
+    public Language b;
+    public int c;
+    public int d;
+    public List e;
+    public ArrayList f;
+    public Integer g;
 
     public o(String str, Language language, int i, int i2, List list, ArrayList arrayList) {
         Integer valueOf;

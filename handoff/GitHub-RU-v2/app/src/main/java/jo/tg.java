@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tg {
-    public final String a;
-    public final wg b;
-    public final vx.a c;
+    public String a;
+    public wg b;
+    public vx.a c;
 
     public tg(String str, wg wgVar, vx.a aVar) {
         k71.k.g(str, "__typename");

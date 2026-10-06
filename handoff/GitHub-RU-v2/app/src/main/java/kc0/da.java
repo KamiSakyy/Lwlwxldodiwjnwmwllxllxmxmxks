@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class da {
-    public final String a;
-    public final ha b;
-    public final String c;
+    public String a;
+    public ha b;
+    public String c;
 
     public da(String str, ha haVar, String str2) {
         this.a = str;

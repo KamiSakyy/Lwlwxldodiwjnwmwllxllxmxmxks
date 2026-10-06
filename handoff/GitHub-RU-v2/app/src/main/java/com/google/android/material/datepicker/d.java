@@ -8,7 +8,7 @@ import java.util.Arrays;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements Parcelable {
     public static final Parcelable.Creator<d> CREATOR = new c0(14);
-    public final long r;
+    public long r;
 
     public d(long j) {
         this.r = j;

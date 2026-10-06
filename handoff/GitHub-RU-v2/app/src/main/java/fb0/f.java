@@ -7,22 +7,22 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final int e;
-    public final ZonedDateTime f;
-    public final th g;
-    public final m0 h;
-    public final String i;
-    public final boolean j;
-    public final boolean k;
-    public final String l;
-    public final e m;
-    public final ih n;
-    public final l0 o;
-    public final String p;
+    public String a;
+    public String b;
+    public String c;
+    public boolean d;
+    public int e;
+    public ZonedDateTime f;
+    public th g;
+    public m0 h;
+    public String i;
+    public boolean j;
+    public boolean k;
+    public String l;
+    public e m;
+    public ih n;
+    public l0 o;
+    public String p;
 
     public f(String str, String str2, String str3, boolean z, int i, ZonedDateTime zonedDateTime, th thVar, m0 m0Var, String str4, boolean z2, boolean z3, String str5, e eVar, ih ihVar, l0 l0Var, String str6) {
         this.a = str;

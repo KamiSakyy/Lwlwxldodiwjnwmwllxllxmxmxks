@@ -191,4 +191,5 @@ public final /* synthetic */ class z implements j71.c {
                 }
         }
     }
+    public Object a(Object p1, Object p2, Object p3, Object p4, int p5) { return null; }
 }

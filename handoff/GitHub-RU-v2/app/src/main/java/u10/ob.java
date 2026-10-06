@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ob {
-    public final qb a;
+    public qb a;
 
     public ob(qb qbVar) {
         this.a = qbVar;

@@ -2,8 +2,8 @@ package c30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x {
-    public final String a;
-    public final o50.a b;
+    public String a;
+    public o50.a b;
 
     public x(String str, o50.a aVar) {
         this.a = str;

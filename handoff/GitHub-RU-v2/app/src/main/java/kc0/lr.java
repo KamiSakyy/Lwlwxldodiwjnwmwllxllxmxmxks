@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lr {
-    public final String a;
-    public final aj0.c b;
+    public String a;
+    public aj0.c b;
 
     public lr(aj0.c cVar, String str) {
         k71.k.g(cVar, "reactionFragment");

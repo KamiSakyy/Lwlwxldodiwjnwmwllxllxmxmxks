@@ -7,7 +7,7 @@ public final class qn {
     public static final pn Companion;
     public static final /* synthetic */ qn[] J3;
     public static final /* synthetic */ d71.b K3;
-    public final String r;
+    public String r;
     public static final qn s = new qn("ACCOUNT_SWITCHER_ADD", 0, "ACCOUNT_SWITCHER_ADD");
     public static final qn t = new qn("ACCOUNT_SWITCHER_ITEM", 1, "ACCOUNT_SWITCHER_ITEM");
     public static final qn u = new qn("ACCOUNT_SWITCHER_REMOVE", 2, "ACCOUNT_SWITCHER_REMOVE");

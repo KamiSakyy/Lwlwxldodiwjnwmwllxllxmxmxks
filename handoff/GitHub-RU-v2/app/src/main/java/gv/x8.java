@@ -2,11 +2,11 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x8 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final w8 c;
-    public final u8 d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public w8 c;
+    public u8 d;
+    public String e;
 
     public x8(String str, boolean z, w8 w8Var, u8 u8Var, String str2) {
         this.a = str;

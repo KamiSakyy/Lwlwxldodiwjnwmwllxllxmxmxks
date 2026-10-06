@@ -4,9 +4,9 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w6 extends s7 {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final ZonedDateTime c;
+    public com.github.service.models.response.a a;
+    public String b;
+    public ZonedDateTime c;
 
     public w6(com.github.service.models.response.a aVar, String str, ZonedDateTime zonedDateTime) {
         k71.k.g(str, "milestoneTitle");

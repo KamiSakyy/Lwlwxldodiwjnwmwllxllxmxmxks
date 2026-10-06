@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tv {
-    public final qv a;
+    public qv a;
 
     public tv(qv qvVar) {
         this.a = qvVar;

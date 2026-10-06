@@ -15,32 +15,32 @@ import k.h0;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o implements Closeable {
     public static final a0 R;
-    public final t81.c A;
-    public final z B;
+    public t81.c A;
+    public z B;
     public long C;
     public long D;
     public long E;
     public long F;
     public long G;
-    public final b H;
-    public final a0 I;
+    public b H;
+    public a0 I;
     public a0 J;
-    public final h0 K;
+    public h0 K;
     public long L;
     public long M;
-    public final l51.h N;
-    public final x O;
-    public final n P;
-    public final LinkedHashSet Q;
-    public final l r;
+    public l51.h N;
+    public x O;
+    public n P;
+    public LinkedHashSet Q;
+    public l r;
     public final LinkedHashMap s = new LinkedHashMap();
-    public final String t;
+    public String t;
     public int u;
     public int v;
     public boolean w;
-    public final t81.e x;
-    public final t81.c y;
-    public final t81.c z;
+    public t81.e x;
+    public t81.c y;
+    public t81.c z;
 
     static {
         a0 a0Var = new a0();

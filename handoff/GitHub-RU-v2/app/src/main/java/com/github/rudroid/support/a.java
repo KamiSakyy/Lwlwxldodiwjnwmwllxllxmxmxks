@@ -4,7 +4,7 @@ import ic.oe;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends com.github.rudroid.adapters.viewholders.e<k5.f> {
-    public final InterfaceC0007a v;
+    public InterfaceC0007a v;
 
     /* renamed from: com.github.rudroid.support.a$a, reason: collision with other inner class name */
     public interface InterfaceC0007a {

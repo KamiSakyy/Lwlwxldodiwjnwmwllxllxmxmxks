@@ -2,7 +2,7 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c2 {
-    public final b2 a;
+    public b2 a;
 
     public c2(b2 b2Var) {
         this.a = b2Var;

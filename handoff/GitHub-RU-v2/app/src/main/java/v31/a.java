@@ -9,7 +9,7 @@ import sy.n;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends n {
     public final /* synthetic */ int a;
-    public final SideSheetBehavior b;
+    public SideSheetBehavior b;
 
     public /* synthetic */ a(SideSheetBehavior sideSheetBehavior, int i) {
         this.a = i;

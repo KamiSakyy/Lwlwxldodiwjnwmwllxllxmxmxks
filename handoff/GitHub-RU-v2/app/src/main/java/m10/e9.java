@@ -2,14 +2,14 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e9 {
-    public final aa1.b a;
-    public final s60 b;
-    public final aa1.b c;
-    public final y60 d;
-    public final String e;
-    public final aa1.b f;
-    public final aa1.b g;
-    public final y70 h;
+    public aa1.b a;
+    public s60 b;
+    public aa1.b c;
+    public y60 d;
+    public String e;
+    public aa1.b f;
+    public aa1.b g;
+    public y70 h;
 
     public e9(s60 s60Var, y60 y60Var, String str, aa1.b bVar, aa1.b bVar2, y70 y70Var) {
         k71.k.g(str, "name");

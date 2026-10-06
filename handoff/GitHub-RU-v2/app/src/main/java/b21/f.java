@@ -18,4 +18,5 @@ public abstract class f {
     public Object w = null;
     public Object x = null;
     public Object y = null;
+    public Object k(Object p1, int p2, int p3) { return null; }
 }

@@ -8,7 +8,7 @@ public final class xo {
     public static final xo s;
     public static final xo t;
     public static final /* synthetic */ xo[] u;
-    public final String r;
+    public String r;
 
     static {
         xo xoVar = new xo("AUTH", 0, "AUTH");

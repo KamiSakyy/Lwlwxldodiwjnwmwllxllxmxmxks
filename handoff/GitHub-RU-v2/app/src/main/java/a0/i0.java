@@ -4,16 +4,16 @@ package a0;
 public final class i0 implements e0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f108a;
+    public int f108a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final a0 f109b;
+    public a0 f109b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f110c;
+    public long f110c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f111d;
+    public long f111d;
 
     public i0(int i, int i10, a0 a0Var) {
         this.f108a = i;

@@ -9,7 +9,7 @@ public final class v90 {
     public static final v90 t;
     public static final /* synthetic */ v90[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         v90 v90Var = new v90("ACTION_REQUIRED", 0, "ACTION_REQUIRED");

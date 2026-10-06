@@ -4,10 +4,10 @@ package d9;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f21675a;
+    public String f21675a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f21676b;
+    public String f21676b;
 
     public a(String str, String str2) {
         k71.k.g(str2, "prerequisiteId");

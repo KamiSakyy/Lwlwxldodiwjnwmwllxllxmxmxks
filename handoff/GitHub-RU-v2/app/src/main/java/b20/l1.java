@@ -2,9 +2,9 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 {
-    public final String a;
-    public final String b;
-    public final m1 c;
+    public String a;
+    public String b;
+    public m1 c;
 
     public l1(String str, String str2, m1 m1Var) {
         k71.k.g(str, "__typename");

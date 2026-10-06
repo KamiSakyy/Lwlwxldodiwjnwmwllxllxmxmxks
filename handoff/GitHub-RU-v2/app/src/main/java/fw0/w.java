@@ -5,10 +5,10 @@ import pz0.je;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w {
-    public final je a;
-    public final ZonedDateTime b;
-    public final o c;
-    public final p d;
+    public je a;
+    public ZonedDateTime b;
+    public o c;
+    public p d;
 
     public w(je jeVar, ZonedDateTime zonedDateTime, o oVar, p pVar) {
         this.a = jeVar;

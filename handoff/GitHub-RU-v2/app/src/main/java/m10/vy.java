@@ -9,7 +9,7 @@ public final class vy {
     public static final vy t;
     public static final /* synthetic */ vy[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         vy vyVar = new vy("MERGEABLE", 0, "MERGEABLE");

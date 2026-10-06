@@ -32,13 +32,13 @@ public class ActionBarContainer extends FrameLayout {
     public Drawable f919w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final boolean f920x;
+    public boolean f920x;
 
     /* renamed from: y, reason: collision with root package name */
     public boolean f921y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final int f922z;
+    public int f922z;
 
     public ActionBarContainer(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);

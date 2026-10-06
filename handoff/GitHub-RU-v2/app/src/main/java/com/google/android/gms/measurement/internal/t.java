@@ -2,17 +2,17 @@ package com.google.android.gms.measurement.internal;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
-    public final String a;
-    public final String b;
-    public final long c;
-    public final long d;
-    public final long e;
-    public final long f;
-    public final long g;
-    public final Long h;
-    public final Long i;
-    public final Long j;
-    public final Boolean k;
+    public String a;
+    public String b;
+    public long c;
+    public long d;
+    public long e;
+    public long f;
+    public long g;
+    public Long h;
+    public Long i;
+    public Long j;
+    public Boolean k;
 
     public t(String str, String str2, long j, long j2, long j3, long j4, long j5, Long l, Long l2, Long l3, Boolean bool) {
         c21.u.d(str);
@@ -42,4 +42,7 @@ public final class t {
         return new t(this.a, this.b, this.c, this.d, this.e, this.f, this.g, this.h, l, l2, bool);
     }
     public Object e = null;
+    public Object q(Object p1) { return null; }
+    public Object s(Object p1, long p2, boolean p3) { return null; }
+    public Object w(Object p1, Object p2) { return null; }
 }

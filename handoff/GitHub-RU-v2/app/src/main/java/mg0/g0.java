@@ -7,14 +7,14 @@ import gn0.zc;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 implements aa.h0 {
-    public final String a;
-    public final xc b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final f0 f;
-    public final zc g;
-    public final String h;
+    public String a;
+    public xc b;
+    public String c;
+    public String d;
+    public int e;
+    public f0 f;
+    public zc g;
+    public String h;
 
     public g0(String str, xc xcVar, String str2, String str3, int i, f0 f0Var, zc zcVar, String str4) {
         this.a = str;

@@ -4,18 +4,18 @@ import java.lang.reflect.Method;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p0 {
-    public final Class a;
-    public final Method b;
-    public final q81.o c;
-    public final String d;
-    public final String e;
-    public final q81.n f;
-    public final q81.q g;
-    public final boolean h;
-    public final boolean i;
-    public final boolean j;
-    public final x0[] k;
-    public final boolean l;
+    public Class a;
+    public Method b;
+    public q81.o c;
+    public String d;
+    public String e;
+    public q81.n f;
+    public q81.q g;
+    public boolean h;
+    public boolean i;
+    public boolean j;
+    public x0[] k;
+    public boolean l;
 
     public p0(o0 o0Var) {
         this.a = o0Var.b;

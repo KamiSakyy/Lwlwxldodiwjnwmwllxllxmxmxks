@@ -11,7 +11,7 @@ public final class kx {
     public static final kx v;
     public static final /* synthetic */ kx[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         kx kxVar = new kx("DAILY", 0, "DAILY");

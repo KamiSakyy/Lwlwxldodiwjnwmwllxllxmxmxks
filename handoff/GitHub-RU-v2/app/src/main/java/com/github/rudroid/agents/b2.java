@@ -8,28 +8,28 @@ public final class b2 extends androidx.lifecycle.k1 implements com.github.rudroi
     public v71.q1 A;
 
     /* renamed from: s, reason: collision with root package name */
-    public final ui.l f6598s;
+    public ui.l f6598s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final ui.h f6599t;
+    public ui.h f6599t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final androidx.lifecycle.a1 f6600u;
+    public androidx.lifecycle.a1 f6600u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f6601v;
+    public com.github.rudroid.activities.util.c f6601v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y71.y1 f6602w;
+    public y71.y1 f6602w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y71.i1 f6603x;
+    public y71.i1 f6603x;
 
     /* renamed from: y, reason: collision with root package name */
     public x01.i f6604y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final v71.q1 f6605z;
+    public v71.q1 f6605z;
 
     public static final class a {
     }

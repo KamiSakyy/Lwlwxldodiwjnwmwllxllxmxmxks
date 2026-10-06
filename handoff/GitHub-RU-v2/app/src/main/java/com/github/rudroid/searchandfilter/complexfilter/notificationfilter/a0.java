@@ -11,7 +11,7 @@ import kotlin.NoWhenBranchMatchedException;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 extends com.github.rudroid.searchandfilter.complexfilter.b<com.github.domain.searchandfilter.filters.data.notification.a> implements com.github.rudroid.searchandfilter.complexfilter.d0<k> {
     public static final /* synthetic */ int D = 0;
-    public final jm.a C;
+    public jm.a C;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a0(jm.a aVar, com.github.rudroid.activities.util.c cVar, a1 a1Var) {

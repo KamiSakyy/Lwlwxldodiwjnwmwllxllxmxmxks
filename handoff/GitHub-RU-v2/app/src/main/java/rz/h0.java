@@ -2,8 +2,8 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 {
-    public final String a;
-    public final c0 b;
+    public String a;
+    public c0 b;
 
     public h0(String str, c0 c0Var) {
         this.a = str;

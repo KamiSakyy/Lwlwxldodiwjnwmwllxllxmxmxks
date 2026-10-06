@@ -2,18 +2,18 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 extends b1 {
-    public final boolean A;
-    public final boolean B;
-    public final boolean C;
-    public final String r;
-    public final String s;
-    public final v t;
-    public final boolean u;
-    public final j v;
-    public final h w;
-    public final m x;
-    public final k y;
-    public final g z;
+    public boolean A;
+    public boolean B;
+    public boolean C;
+    public String r;
+    public String s;
+    public v t;
+    public boolean u;
+    public j v;
+    public h w;
+    public m x;
+    public k y;
+    public g z;
 
     public c1(String str, String str2, g gVar, h hVar, j jVar, k kVar, m mVar, v vVar, boolean z, boolean z2, boolean z3, boolean z4) {
         k71.k.g(str, "name");

@@ -2,7 +2,7 @@ package u81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h implements r {
-    public final q a;
+    public q a;
 
     public h(Throwable th) {
         this.a = new q(this, th, 2);

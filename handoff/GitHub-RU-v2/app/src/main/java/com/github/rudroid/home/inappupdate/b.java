@@ -5,10 +5,10 @@ public final class b {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final oa.n f14959a;
+    public oa.n f14959a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f14960b;
+    public com.github.rudroid.activities.util.c f14960b;
 
     public static final class a {
     }

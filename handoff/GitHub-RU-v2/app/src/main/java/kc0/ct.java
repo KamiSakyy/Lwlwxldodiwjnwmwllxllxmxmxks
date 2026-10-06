@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ct implements aaShadow.w0 {
     public static final vs Companion = new vs();
-    public final String r;
-    public final String s;
-    public final String t;
+    public String r;
+    public String s;
+    public String t;
 
     public ct(String str, String str2, String str3) {
         k71.k.g(str, "owner");

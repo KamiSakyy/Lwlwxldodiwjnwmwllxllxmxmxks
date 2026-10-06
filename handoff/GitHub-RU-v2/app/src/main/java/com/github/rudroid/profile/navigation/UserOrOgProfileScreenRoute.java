@@ -14,10 +14,10 @@ import ze.d;
 public final class UserOrOgProfileScreenRoute implements Parcelable, d {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f17332r;
+    public String f17332r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final boolean f17333s;
+    public boolean f17333s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<UserOrOgProfileScreenRoute> CREATOR = new a();
 

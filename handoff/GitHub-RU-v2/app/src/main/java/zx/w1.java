@@ -4,9 +4,9 @@ import gv.l4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w1 {
-    public final String a;
-    public final String b;
-    public final l4 c;
+    public String a;
+    public String b;
+    public l4 c;
 
     public w1(String str, String str2, l4 l4Var) {
         this.a = str;

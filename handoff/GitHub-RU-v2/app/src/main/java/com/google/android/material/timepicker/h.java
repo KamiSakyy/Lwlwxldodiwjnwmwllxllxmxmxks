@@ -13,9 +13,9 @@ import u31.m;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class h extends ConstraintLayout {
-    public final g H;
+    public g H;
     public int I;
-    public final u31.j J;
+    public u31.j J;
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r6v2, types: [com.google.android.material.timepicker.g] */
@@ -96,4 +96,5 @@ public abstract class h extends ConstraintLayout {
     public Object onInitializeAccessibilityNodeInfo(Object p1) { return null; }
     public Object onLayout(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object onMeasure(Object p1, Object p2) { return null; }
+    public Object setBackground(Object p1) { return null; }
 }

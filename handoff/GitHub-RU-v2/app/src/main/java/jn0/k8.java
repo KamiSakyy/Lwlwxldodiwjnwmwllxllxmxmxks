@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k8 {
-    public final String a;
-    public final r8 b;
-    public final p8 c;
-    public final String d;
+    public String a;
+    public r8 b;
+    public p8 c;
+    public String d;
 
     public k8(String str, r8 r8Var, p8 p8Var, String str2) {
         this.a = str;

@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class np implements aaShadow.w0 {
     public static final hp Companion = new hp();
-    public final String r;
-    public final int s;
-    public final String t;
+    public String r;
+    public int s;
+    public String t;
 
     public np(String str, int i, String str2) {
         k71.k.g(str, "repositoryOwner");

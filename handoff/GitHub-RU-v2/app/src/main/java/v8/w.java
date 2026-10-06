@@ -8,10 +8,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class w {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f32842a;
+    public Context f32842a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final WorkerParameters f32843b;
+    public WorkerParameters f32843b;
 
     /* renamed from: c, reason: collision with root package name */
     public final AtomicInteger f32844c = new AtomicInteger(-256);

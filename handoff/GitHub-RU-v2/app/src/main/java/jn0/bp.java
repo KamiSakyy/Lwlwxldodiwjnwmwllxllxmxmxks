@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bp {
-    public final int a;
-    public final String b;
-    public final xo c;
-    public final yo d;
-    public final String e;
-    public final String f;
+    public int a;
+    public String b;
+    public xo c;
+    public yo d;
+    public String e;
+    public String f;
 
     public bp(int i, String str, xo xoVar, yo yoVar, String str2, String str3) {
         this.a = i;

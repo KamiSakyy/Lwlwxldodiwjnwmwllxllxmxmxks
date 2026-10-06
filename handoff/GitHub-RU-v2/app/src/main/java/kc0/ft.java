@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ft {
-    public final kt a;
-    public final List b;
+    public kt a;
+    public List b;
 
     public ft(kt ktVar, List list) {
         this.a = ktVar;

@@ -5,14 +5,14 @@ import com.github.service.models.response.type.IssueState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final IssueState f;
-    public final CloseReason g;
-    public final boolean h;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public int e;
+    public IssueState f;
+    public CloseReason g;
+    public boolean h;
 
     public p(String str, String str2, String str3, String str4, int i, IssueState issueState, CloseReason closeReason, boolean z) {
         k71.k.g(str, "id");

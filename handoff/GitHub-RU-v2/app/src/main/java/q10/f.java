@@ -13,10 +13,10 @@ import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f extends oa.c {
-    public final u b;
-    public final m c;
-    public final h d;
-    public final vz0.c e;
+    public u b;
+    public m c;
+    public h d;
+    public vz0.c e;
 
     public f(u uVar, m mVar, h hVar, vz0.c cVar) {
         k.g(uVar, "unauthenticatedClient");

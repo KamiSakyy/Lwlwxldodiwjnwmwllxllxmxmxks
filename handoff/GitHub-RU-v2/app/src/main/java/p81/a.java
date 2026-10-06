@@ -7,7 +7,7 @@ import k21.b;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a implements b {
     public static a s;
-    public final int r;
+    public int r;
 
     public static void c(String str, Object... objArr) {
         d().e(3, str, objArr);

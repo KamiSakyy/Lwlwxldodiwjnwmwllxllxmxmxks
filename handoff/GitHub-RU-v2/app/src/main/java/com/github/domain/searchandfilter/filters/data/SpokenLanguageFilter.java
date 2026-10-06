@@ -16,7 +16,7 @@ import w80.a0;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SpokenLanguageFilter extends d {
-    public final SpokenLanguage v;
+    public SpokenLanguage v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SpokenLanguageFilter> CREATOR = new o(21);
     public static final w61.h[] w = {w.s(w61.i.r, new p(22)), null, null};

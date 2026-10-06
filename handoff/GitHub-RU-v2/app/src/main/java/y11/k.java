@@ -6,10 +6,10 @@ import com.google.android.gms.cloudmessaging.zzt;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k {
-    public final int a;
+    public int a;
     public final w21.g b = new w21.g();
-    public final int c;
-    public final Bundle d;
+    public int c;
+    public Bundle d;
     public final /* synthetic */ int e;
 
     public k(int i, int i2, Bundle bundle, int i3) {

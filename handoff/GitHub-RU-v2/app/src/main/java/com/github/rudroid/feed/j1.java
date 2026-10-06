@@ -9,13 +9,13 @@ public final class j1 extends androidx.lifecycle.k1 implements com.github.rudroi
     public final /* synthetic */ d.a f12655s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final gn.r f12656t;
+    public gn.r f12656t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final gn.t f12657u;
+    public gn.t f12657u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f12658v;
+    public com.github.rudroid.activities.util.c f12658v;
 
     public j1(gn.r rVar, gn.t tVar, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(rVar, "followUserLegacyUseCase");

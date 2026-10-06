@@ -7,11 +7,11 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q {
     public static final q f = new q((Boolean) null, 100, (Boolean) null, (String) null);
-    public final int a;
-    public final String b;
-    public final Boolean c;
-    public final String d;
-    public final EnumMap e;
+    public int a;
+    public String b;
+    public Boolean c;
+    public String d;
+    public EnumMap e;
 
     public q(Boolean bool, int i, Boolean bool2, String str) {
         EnumMap enumMap = new EnumMap(a2.class);

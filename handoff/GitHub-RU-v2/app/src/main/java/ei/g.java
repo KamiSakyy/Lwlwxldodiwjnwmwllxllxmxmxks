@@ -23,8 +23,8 @@ public final class g implements a {
     public static final g x;
     public static final g y;
     public static final g z;
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     static {
         d dVar = d.s;

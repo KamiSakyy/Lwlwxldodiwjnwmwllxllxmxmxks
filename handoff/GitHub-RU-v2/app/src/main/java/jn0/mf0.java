@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mf0 {
-    public final String a;
-    public final String b;
-    public final kt0.i c;
+    public String a;
+    public String b;
+    public kt0.i c;
 
     public mf0(String str, String str2, kt0.i iVar) {
         this.a = str;

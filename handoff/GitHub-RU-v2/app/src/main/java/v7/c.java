@@ -31,4 +31,5 @@ public interface c extends AutoCloseable {
     String l0(int i);
 
     void reset();
+    public Object v(Object p1) { return null; }
 }

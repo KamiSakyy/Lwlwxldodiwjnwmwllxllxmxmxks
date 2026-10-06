@@ -15,5 +15,5 @@ public abstract class m0 implements aa.a {
         }
         return new d0(str);
     }
-    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public static Object h(Object p1, Object p2, Object p3) { return null; }
 }

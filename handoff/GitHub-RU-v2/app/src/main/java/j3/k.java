@@ -7,10 +7,10 @@ import android.text.style.CharacterStyle;
 public final class k extends CharacterStyle {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f27001a;
+    public boolean f27001a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f27002b;
+    public boolean f27002b;
 
     public k(boolean z10, boolean z11) {
         this.f27001a = z10;

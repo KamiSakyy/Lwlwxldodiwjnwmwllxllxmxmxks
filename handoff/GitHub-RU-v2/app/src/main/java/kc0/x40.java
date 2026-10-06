@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x40 implements aaShadow.n0 {
     public static final r40 Companion = new r40();
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     public x40(String str, String str2) {
         k71.k.g(str, "pullId");

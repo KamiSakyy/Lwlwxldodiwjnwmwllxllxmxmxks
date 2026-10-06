@@ -4,16 +4,16 @@ package androidx.compose.foundation.layout;
 public final class o1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f1207a;
+    public int f1207a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f1208b;
+    public int f1208b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f1209c;
+    public int f1209c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f1210d;
+    public int f1210d;
 
     public o1(int i, int i10, int i11, int i12) {
         this.f1207a = i;

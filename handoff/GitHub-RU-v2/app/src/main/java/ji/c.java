@@ -11,8 +11,8 @@ import y71.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final m a;
-    public final oa.g b;
+    public m a;
+    public oa.g b;
 
     public c(m mVar, oa.g gVar) {
         k.g(mVar, "userManager");

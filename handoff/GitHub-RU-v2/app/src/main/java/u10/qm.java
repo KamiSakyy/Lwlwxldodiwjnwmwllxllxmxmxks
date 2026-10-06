@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qm {
-    public final int a;
-    public final int b;
-    public final om c;
-    public final String d;
-    public final String e;
+    public int a;
+    public int b;
+    public om c;
+    public String d;
+    public String e;
 
     public qm(int i, int i2, om omVar, String str, String str2) {
         this.a = i;

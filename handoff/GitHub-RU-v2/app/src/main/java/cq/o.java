@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements aa.h0 {
-    public final LocalDate a;
-    public final Boolean b;
-    public final Double c;
+    public LocalDate a;
+    public Boolean b;
+    public Double c;
 
     public o(LocalDate localDate, Boolean bool, Double d) {
         this.a = localDate;

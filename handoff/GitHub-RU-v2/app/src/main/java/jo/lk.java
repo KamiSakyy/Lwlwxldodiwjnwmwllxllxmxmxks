@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lk implements aaShadow.m0 {
-    public final mk a;
+    public mk a;
 
     public lk(mk mkVar) {
         this.a = mkVar;

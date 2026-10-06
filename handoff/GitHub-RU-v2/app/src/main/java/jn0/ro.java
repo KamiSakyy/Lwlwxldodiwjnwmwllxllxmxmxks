@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ro implements aaShadow.v0 {
-    public final vo a;
-    public final String b;
-    public final String c;
+    public vo a;
+    public String b;
+    public String c;
 
     public ro(vo voVar, String str, String str2) {
         this.a = voVar;

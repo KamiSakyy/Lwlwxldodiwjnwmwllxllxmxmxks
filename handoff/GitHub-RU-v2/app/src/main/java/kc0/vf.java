@@ -2,12 +2,12 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vf implements aaShadow.v0 {
-    public final wf a;
-    public final kg b;
-    public final lg c;
-    public final mg d;
-    public final ig e;
-    public final tf f;
+    public wf a;
+    public kg b;
+    public lg c;
+    public mg d;
+    public ig e;
+    public tf f;
 
     public vf(wf wfVar, kg kgVar, lg lgVar, mg mgVar, ig igVar, tf tfVar) {
         this.a = wfVar;

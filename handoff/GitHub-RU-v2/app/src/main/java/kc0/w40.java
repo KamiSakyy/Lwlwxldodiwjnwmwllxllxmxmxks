@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w40 {
-    public final String a;
-    public final u40 b;
+    public String a;
+    public u40 b;
 
     public w40(String str, u40 u40Var) {
         this.a = str;

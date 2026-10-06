@@ -2,8 +2,8 @@ package ra0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f0 {
-    public final c0 a;
-    public final g0 b;
+    public c0 a;
+    public g0 b;
 
     public f0(c0 c0Var, g0 g0Var) {
         this.a = c0Var;

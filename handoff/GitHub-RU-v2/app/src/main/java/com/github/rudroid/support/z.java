@@ -9,5 +9,5 @@ public final class z implements p61.d {
     public final /* bridge */ /* synthetic */ Object get() {
         return Boolean.TRUE;
     }
-    public Object g(Object p1, Object p2) { return null; }
+    public static Object g(Object p1, Object p2) { return null; }
 }

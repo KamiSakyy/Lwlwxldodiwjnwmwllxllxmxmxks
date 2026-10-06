@@ -5,12 +5,12 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 {
-    public final String a;
-    public final String b;
-    public final kw c;
-    public final List d;
-    public final m2 e;
-    public final String f;
+    public String a;
+    public String b;
+    public kw c;
+    public List d;
+    public m2 e;
+    public String f;
 
     public n2(String str, String str2, kw kwVar, List list, m2 m2Var, String str3) {
         this.a = str;

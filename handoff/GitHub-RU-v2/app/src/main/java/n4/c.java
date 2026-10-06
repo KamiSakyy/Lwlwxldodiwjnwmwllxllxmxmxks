@@ -14,7 +14,7 @@ public final class cShadow implements Application.ActivityLifecycleCallbacks {
     public Activity f29424s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final int f29425t;
+    public int f29425t;
 
     /* renamed from: u, reason: collision with root package name */
     public boolean f29426u = false;

@@ -6,17 +6,17 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final Boolean g;
-    public final int h;
-    public final c i;
-    public final int j;
-    public final o.b k;
+    public com.github.service.models.response.a a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public Boolean g;
+    public int h;
+    public c i;
+    public int j;
+    public o.b k;
 
     public f(com.github.service.models.response.a aVar, String str, String str2, String str3, String str4, String str5, Boolean bool, int i, c cVar, int i2, o.b bVar) {
         k.g(str, "id");

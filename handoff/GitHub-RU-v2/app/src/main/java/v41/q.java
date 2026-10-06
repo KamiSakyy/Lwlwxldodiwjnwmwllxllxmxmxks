@@ -23,11 +23,11 @@ import y41.w0;
 public final class q {
     public static final HashMap f;
     public static final String g;
-    public final Context a;
-    public final v b;
-    public final a c;
-    public final e51.a d;
-    public final d51.d e;
+    public Context a;
+    public v b;
+    public a c;
+    public e51.a d;
+    public d51.d e;
 
     static {
         HashMap hashMap = new HashMap();

@@ -4,8 +4,8 @@ import x10.g0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final String a;
-    public final g0 b;
+    public String a;
+    public g0 b;
 
     public j(String str, g0 g0Var) {
         this.a = str;

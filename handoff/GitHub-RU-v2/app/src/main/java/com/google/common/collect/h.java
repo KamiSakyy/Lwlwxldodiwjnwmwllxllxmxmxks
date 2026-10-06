@@ -5,8 +5,8 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h extends d {
     public static final h v = new h(0, new Object[0]);
-    public final transient Object[] t;
-    public final transient int u;
+    public transient Object[] t;
+    public transient int u;
 
     public h(int i, Object[] objArr) {
         this.t = objArr;

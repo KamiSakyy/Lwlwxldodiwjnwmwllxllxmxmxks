@@ -4,7 +4,7 @@ import pz0.zs;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final zs a;
+    public zs a;
 
     public a(zs zsVar) {
         this.a = zsVar;

@@ -9,21 +9,21 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b6 {
-    public final List a;
-    public final ae.d b;
-    public final PullRequestMergeAction c;
-    public final PullRequestMergeMethod d;
-    public final PullRequestUpdateBranchMethod e;
-    public final PullRequestMergeRequirementsState f;
-    public final String g;
-    public final yz0.s2 h;
-    public final yz0.s2 i;
-    public final List j;
-    public final int k;
-    public final boolean l;
-    public final boolean m;
-    public final String n;
-    public final yz0.s2 o;
+    public List a;
+    public ae.d b;
+    public PullRequestMergeAction c;
+    public PullRequestMergeMethod d;
+    public PullRequestUpdateBranchMethod e;
+    public PullRequestMergeRequirementsState f;
+    public String g;
+    public yz0.s2 h;
+    public yz0.s2 i;
+    public List j;
+    public int k;
+    public boolean l;
+    public boolean m;
+    public String n;
+    public yz0.s2 o;
 
     public b6(List list, ae.d dVar, PullRequestMergeAction pullRequestMergeAction, PullRequestMergeMethod pullRequestMergeMethod, PullRequestUpdateBranchMethod pullRequestUpdateBranchMethod, PullRequestMergeRequirementsState pullRequestMergeRequirementsState, String str, yz0.s2 s2Var, yz0.s2 s2Var2, List list2, int i) {
         k71.k.g(list, "availableMergeMethods");

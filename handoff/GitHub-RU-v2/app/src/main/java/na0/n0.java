@@ -5,9 +5,9 @@ import z70.r3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0 {
-    public final String a;
-    public final String b;
-    public final r3 c;
+    public String a;
+    public String b;
+    public r3 c;
 
     public n0(String str, String str2, r3 r3Var) {
         this.a = str;

@@ -6,7 +6,7 @@ import java.util.concurrent.CancellationException;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final l1.e f1440a;
+    public l1.e f1440a;
 
     public n(int i) {
         switch (i) {

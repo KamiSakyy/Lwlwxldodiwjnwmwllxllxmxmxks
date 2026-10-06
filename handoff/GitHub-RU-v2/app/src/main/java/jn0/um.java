@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class um {
-    public final String a;
-    public final String b;
-    public final ss0.g c;
+    public String a;
+    public String b;
+    public ss0.g c;
 
     public um(String str, String str2, ss0.g gVar) {
         this.a = str;

@@ -7,11 +7,11 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final boolean a;
-    public final boolean b;
-    public final boolean c;
-    public final ZonedDateTime d;
-    public final DiscussionStateReason e;
+    public boolean a;
+    public boolean b;
+    public boolean c;
+    public ZonedDateTime d;
+    public DiscussionStateReason e;
 
     public f(boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, DiscussionStateReason discussionStateReason) {
         this.a = z;

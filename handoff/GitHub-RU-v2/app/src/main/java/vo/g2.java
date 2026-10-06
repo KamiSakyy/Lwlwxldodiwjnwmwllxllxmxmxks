@@ -5,12 +5,12 @@ import m10.ah0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g2 {
-    public final List a;
-    public final String b;
-    public final boolean c;
-    public final ah0 d;
-    public final String e;
-    public final String f;
+    public List a;
+    public String b;
+    public boolean c;
+    public ah0 d;
+    public String e;
+    public String f;
 
     public g2(List list, String str, boolean z, ah0 ah0Var, String str2, String str3) {
         this.a = list;

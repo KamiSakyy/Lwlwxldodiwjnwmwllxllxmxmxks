@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wo implements aaShadow.v0 {
-    public final jp a;
+    public jp a;
 
     public wo(jp jpVar) {
         this.a = jpVar;

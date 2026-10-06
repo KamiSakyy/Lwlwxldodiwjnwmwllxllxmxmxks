@@ -6,9 +6,9 @@ import d2.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final long a;
-    public final long b;
-    public final long c;
+    public long a;
+    public long b;
+    public long c;
 
     public g(long j, long j2, long j3) {
         this.a = j;

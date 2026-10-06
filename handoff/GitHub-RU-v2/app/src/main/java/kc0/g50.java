@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g50 {
-    public final String a;
-    public final Boolean b;
+    public String a;
+    public Boolean b;
 
     public g50(String str, Boolean bool) {
         this.a = str;

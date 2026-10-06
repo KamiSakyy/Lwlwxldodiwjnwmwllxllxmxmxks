@@ -6,10 +6,10 @@ import java.util.List;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final h f34025a;
+    public h f34025a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f34026b;
+    public List f34026b;
 
     public n(h hVar, List list) {
         k71.k.g(hVar, "billingResult");

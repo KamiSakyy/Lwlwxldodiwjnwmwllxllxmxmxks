@@ -2,8 +2,8 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k2 extends sy.s {
-    public final String a;
-    public final f4 b;
+    public String a;
+    public f4 b;
 
     public k2(String str, f4 f4Var) {
         this.a = str;

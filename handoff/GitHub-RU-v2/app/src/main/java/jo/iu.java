@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class iu {
-    public final String a;
-    public final String b;
-    public final eq.g c;
+    public String a;
+    public String b;
+    public eq.g c;
 
     public iu(String str, String str2, eq.g gVar) {
         k71.k.g(str, "__typename");

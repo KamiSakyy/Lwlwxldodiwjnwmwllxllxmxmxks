@@ -7,8 +7,8 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i3 extends androidx.lifecycle.l0 implements SharedPreferences.OnSharedPreferenceChangeListener {
-    public final Context l;
-    public final Set m;
+    public Context l;
+    public Set m;
 
     public i3(Application application) {
         k71.k.g(application, "context");
@@ -37,4 +37,7 @@ public final class i3 extends androidx.lifecycle.l0 implements SharedPreferences
             j(new h3(this.l));
         }
     }
+    public Object e(Object p1, Object p2) { return null; }
+    public Object e(Object p1, Object p2) { return null; }
+    public Object j(Object p1) { return null; }
 }

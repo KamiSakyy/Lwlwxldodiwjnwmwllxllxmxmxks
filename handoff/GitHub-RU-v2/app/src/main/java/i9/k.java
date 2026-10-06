@@ -6,7 +6,7 @@ import java.io.InputStream;
 public final class k extends InputStream {
 
     /* renamed from: r, reason: collision with root package name */
-    public final InputStream f26106r;
+    public InputStream f26106r;
 
     /* renamed from: s, reason: collision with root package name */
     public int f26107s = 1073741824;

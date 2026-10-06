@@ -8,7 +8,7 @@ import k71.z;
 public class f extends d {
 
     /* renamed from: u, reason: collision with root package name */
-    public final e f29918u;
+    public e f29918u;
 
     /* renamed from: v, reason: collision with root package name */
     public Object f29919v;

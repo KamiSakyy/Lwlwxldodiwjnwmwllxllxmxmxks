@@ -13,8 +13,8 @@ import q81.u;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class a implements k0 {
-    public final o r;
-    public final r s;
+    public o r;
+    public r s;
     public boolean t;
     public final /* synthetic */ f u;
 

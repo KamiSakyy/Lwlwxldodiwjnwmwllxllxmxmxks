@@ -11,8 +11,8 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 implements n0 {
     public static final c0 Companion = new c0();
-    public final String r;
-    public final u0 s;
+    public String r;
+    public u0 s;
 
     public g0(u0 u0Var, String str) {
         k71.k.g(str, "repositoryId");

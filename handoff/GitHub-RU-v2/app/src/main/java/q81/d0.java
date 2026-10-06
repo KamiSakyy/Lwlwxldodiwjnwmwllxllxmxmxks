@@ -6,9 +6,9 @@ import java.net.Proxy;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d0 {
-    public final a a;
-    public final Proxy b;
-    public final InetSocketAddress c;
+    public a a;
+    public Proxy b;
+    public InetSocketAddress c;
 
     public d0(a aVar, Proxy proxy, InetSocketAddress inetSocketAddress) {
         k71.k.g(inetSocketAddress, "socketAddress");

@@ -7,8 +7,8 @@ import jo.f4;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g2 implements aa.w0 {
     public static final b2 Companion = new b2();
-    public final String r;
-    public final aa1.b s;
+    public String r;
+    public aa1.b s;
 
     public g2(String str, aa1.b bVar) {
         k71.k.g(str, "workflowId");

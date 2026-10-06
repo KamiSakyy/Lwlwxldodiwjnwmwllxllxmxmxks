@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ru {
-    public final String a;
-    public final String b;
-    public final gu c;
+    public String a;
+    public String b;
+    public gu c;
 
     public ru(String str, String str2, gu guVar) {
         k71.k.g(str, "__typename");

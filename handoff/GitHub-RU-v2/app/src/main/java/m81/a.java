@@ -18,9 +18,9 @@ import t71.w;
 public abstract class a implements l81.i, Decoder, j81.a {
     public final ArrayList a = new ArrayList();
     public boolean b;
-    public final l81.c c;
-    public final String d;
-    public final l81.h e;
+    public l81.c c;
+    public String d;
+    public l81.h e;
 
     public a(l81.c cVar, String str) {
         this.c = cVar;

@@ -6,8 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends Thread {
-    public final WeakReference r;
-    public final long s;
+    public WeakReference r;
+    public long s;
     public final CountDownLatch t = new CountDownLatch(1);
     public boolean u = false;
 

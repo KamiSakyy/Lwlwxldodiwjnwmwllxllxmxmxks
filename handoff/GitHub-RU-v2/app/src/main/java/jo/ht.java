@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ht implements aaShadow.w0 {
     public static final zs Companion = new zs();
-    public final String r;
-    public final m10.z00 s;
-    public final aa.u0 t;
+    public String r;
+    public m10.z00 s;
+    public aa.u0 t;
 
     public ht(String str, m10.z00 z00Var, aa.u0 u0Var) {
         k71.k.g(str, "id");

@@ -6,36 +6,36 @@ import java.util.ArrayList;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f30890a;
+    public long f30890a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f30891b;
+    public long f30891b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f30892c;
+    public long f30892c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f30893d;
+    public boolean f30893d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final float f30894e;
+    public float f30894e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final long f30895f;
+    public long f30895f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f30896g;
+    public long f30896g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final boolean f30897h;
-    public final int i;
+    public boolean f30897h;
+    public int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final long f30898j;
+    public long f30898j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final ArrayList f30899k;
-    public final long l;
+    public ArrayList f30899k;
+    public long l;
     public boolean m;
 
     /* renamed from: n, reason: collision with root package name */

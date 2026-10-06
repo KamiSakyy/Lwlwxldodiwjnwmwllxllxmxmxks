@@ -8,7 +8,7 @@ public enum a implements l51.c {
     /* JADX INFO: Fake field, exist only in values array */
     EF23(2);
 
-    public final int r;
+    public int r;
 
     a(int i) {
         this.r = i;

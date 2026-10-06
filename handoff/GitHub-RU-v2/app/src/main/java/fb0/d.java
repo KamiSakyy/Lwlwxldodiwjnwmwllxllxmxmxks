@@ -2,7 +2,7 @@ package fb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements aa.v0 {
-    public final n0 a;
+    public n0 a;
 
     public d(n0 n0Var) {
         this.a = n0Var;

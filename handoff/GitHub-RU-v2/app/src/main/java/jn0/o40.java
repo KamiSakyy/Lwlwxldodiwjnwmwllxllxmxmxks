@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o40 {
-    public final s40 a;
-    public final String b;
-    public final String c;
+    public s40 a;
+    public String b;
+    public String c;
 
     public o40(s40 s40Var, String str, String str2) {
         this.a = s40Var;

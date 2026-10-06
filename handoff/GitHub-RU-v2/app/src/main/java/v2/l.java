@@ -29,5 +29,5 @@ public class l {
     }
 
     public static Object a;
-    public Object v(Object p1) { return null; }
+    public static Object v(Object p1) { return null; }
 }

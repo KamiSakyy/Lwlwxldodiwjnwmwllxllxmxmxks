@@ -7,9 +7,9 @@ import k71.k;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
     public static final b Companion = new b();
-    public final ApiRequestStatus a;
-    public final Object b;
-    public final ApiFailure c;
+    public ApiRequestStatus a;
+    public Object b;
+    public ApiFailure c;
 
     public c(ApiRequestStatus apiRequestStatus, Object obj, ApiFailure apiFailure) {
         k.g(apiRequestStatus, "status");

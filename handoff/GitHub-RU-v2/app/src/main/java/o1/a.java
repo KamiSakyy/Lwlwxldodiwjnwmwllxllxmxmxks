@@ -9,10 +9,10 @@ public class a implements Map.Entry, l71.a {
     public final /* synthetic */ int f29901r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Object f29902s;
+    public Object f29902s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final Object f29903t;
+    public Object f29903t;
 
     public /* synthetic */ a(int i, Object obj, Object obj2) {
         this.f29901r = i;

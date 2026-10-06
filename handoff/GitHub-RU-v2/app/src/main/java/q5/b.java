@@ -19,22 +19,22 @@ import x61.m;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final n0 f30976a;
+    public n0 f30976a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final r f30977b;
+    public r f30977b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Context f30978c;
+    public Context f30978c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f30979d;
+    public String f30979d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final p f30980e;
+    public p f30980e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Set f30981f;
+    public Set f30981f;
 
     public b(Context context, String str, Set set, n0 n0Var, r rVar) {
         k.g(context, "context");

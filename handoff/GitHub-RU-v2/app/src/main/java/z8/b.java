@@ -6,7 +6,7 @@ import x.i;
 public final class b extends c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f34621a;
+    public int f34621a;
 
     public b(int i) {
         this.f34621a = i;

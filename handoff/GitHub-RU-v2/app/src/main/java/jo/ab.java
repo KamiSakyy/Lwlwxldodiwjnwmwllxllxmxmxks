@@ -2,12 +2,12 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ab {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final za d;
-    public final xa e;
-    public final String f;
+    public String a;
+    public String b;
+    public int c;
+    public za d;
+    public xa e;
+    public String f;
 
     public ab(String str, String str2, int i, za zaVar, xa xaVar, String str3) {
         this.a = str;

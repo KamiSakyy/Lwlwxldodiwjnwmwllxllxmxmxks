@@ -15,4 +15,5 @@ public class c3 {
     public Object i = null;
     public Object k = null;
     public Object l = null;
+    public Object d(Object p1) { return null; }
 }

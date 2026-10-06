@@ -6,28 +6,28 @@ import y71.y1;
 public final class k1 extends androidx.lifecycle.k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final hk.b f10882s;
+    public hk.b f10882s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final hk.f f10883t;
+    public hk.f f10883t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f10884u;
+    public com.github.rudroid.activities.util.c f10884u;
 
     /* renamed from: v, reason: collision with root package name */
     public String f10885v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y1 f10886w;
+    public y1 f10886w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y71.i1 f10887x;
+    public y71.i1 f10887x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final y1 f10888y;
+    public y1 f10888y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final y71.i1 f10889z;
+    public y71.i1 f10889z;
 
     public k1(hk.b bVar, hk.f fVar, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(bVar, "approveDeploymentRequestsUseCase");

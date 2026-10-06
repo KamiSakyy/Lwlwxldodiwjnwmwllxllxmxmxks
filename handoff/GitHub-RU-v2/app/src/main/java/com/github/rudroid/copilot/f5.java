@@ -4,10 +4,10 @@ package com.github.rudroid.copilot;
 public final class f5 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f9557a;
+    public String f9557a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final k91.a f9558b;
+    public k91.a f9558b;
 
     public f5(String str, k91.a aVar) {
         k71.k.g(str, "content");

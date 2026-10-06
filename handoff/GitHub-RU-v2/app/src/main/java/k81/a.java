@@ -8,7 +8,7 @@ import kotlinx.serialization.encoding.Decoder;
 public abstract class a implements KSerializer {
     public abstract Object a();
 
-    public abstract int b(Object obj);
+    public static abstract int b(Object obj);
 
     public abstract Iterator c(Object obj);
 
@@ -19,7 +19,7 @@ public abstract class a implements KSerializer {
         return e(decoder);
     }
 
-    public final Object e(Decoder decoder) {
+    public static final Object e(Decoder decoder) {
         Object a = a();
         int b = b(a);
         j81.a b2 = decoder.b(getDescriptor());
@@ -33,13 +33,13 @@ public abstract class a implements KSerializer {
         }
     }
 
-    public abstract void f(j81.a aVar, int i, Object obj);
+    public static abstract void f(j81.a aVar, int i, Object obj);
 
     public abstract Object g(Object obj);
 
     public abstract Object h(Object obj);
     public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public Object f(Object p1) { return null; }
-    public Object j(Object p1) { return null; }
+    public boolean f(Object p1) { return null; }
+    public static Object j(Object p1) { return null; }
     public static final Object u = null;
 }

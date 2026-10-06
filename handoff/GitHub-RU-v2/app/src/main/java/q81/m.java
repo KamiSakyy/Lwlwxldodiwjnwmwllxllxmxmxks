@@ -7,10 +7,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m {
-    public final e0 a;
-    public final h b;
-    public final List c;
-    public final w61.p d;
+    public e0 a;
+    public h b;
+    public List c;
+    public w61.p d;
 
     public m(e0 e0Var, h hVar, List list, j71.a aVar) {
         this.a = e0Var;

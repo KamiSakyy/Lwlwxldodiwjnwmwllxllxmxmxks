@@ -15,8 +15,8 @@ public final class s implements AutoCloseable {
     public static final char[] w = {',', ')'};
     public static final Pattern x = Pattern.compile("(([+-])?(\\d+)?)n(\\s*([+-])?\\s*\\d+)?", 2);
     public static final Pattern y = Pattern.compile("([+-])?(\\d+)");
-    public final t0 r;
-    public final String s;
+    public t0 r;
+    public String s;
     public boolean t;
 
     public s(String str) {

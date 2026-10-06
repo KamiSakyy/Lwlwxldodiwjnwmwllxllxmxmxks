@@ -4,7 +4,7 @@ import aa.v0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 implements v0 {
-    public final o0 a;
+    public o0 a;
 
     public k0(o0 o0Var) {
         this.a = o0Var;

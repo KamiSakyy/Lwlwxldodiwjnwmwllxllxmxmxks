@@ -2,9 +2,9 @@ package dl0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z {
-    public final String a;
-    public final d0 b;
-    public final b0 c;
+    public String a;
+    public d0 b;
+    public b0 c;
 
     public z(String str, d0 d0Var, b0 b0Var) {
         k71.k.g(str, "__typename");

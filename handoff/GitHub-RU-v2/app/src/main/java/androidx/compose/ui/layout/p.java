@@ -9,19 +9,19 @@ public final class p {
     public final /* synthetic */ int f2023a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final o f2024b;
+    public o f2024b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final o f2025c;
+    public o f2025c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final o f2026d;
+    public o f2026d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final o f2027e;
+    public o f2027e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Serializable f2028f;
+    public Serializable f2028f;
 
     public p(String str) {
         this.f2023a = 1;

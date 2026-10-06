@@ -10,16 +10,16 @@ import javax.net.ssl.SSLSocketFactory;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
-    public final b a;
-    public final SocketFactory b;
-    public final SSLSocketFactory c;
-    public final HostnameVerifier d;
-    public final f e;
-    public final b f;
-    public final ProxySelector g;
-    public final o h;
-    public final List i;
-    public final List j;
+    public b a;
+    public SocketFactory b;
+    public SSLSocketFactory c;
+    public HostnameVerifier d;
+    public f e;
+    public b f;
+    public ProxySelector g;
+    public o h;
+    public List i;
+    public List j;
 
     public a(String str, int i, b bVar, SocketFactory socketFactory, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, f fVar, b bVar2, List list, List list2, ProxySelector proxySelector) {
         k71.k.g(str, "uriHost");

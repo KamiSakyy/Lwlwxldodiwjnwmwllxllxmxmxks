@@ -4,7 +4,7 @@ package w1;
 public final class h implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f32937a;
+    public float f32937a;
 
     public h(float f6) {
         this.f32937a = f6;

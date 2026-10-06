@@ -2,8 +2,8 @@ package e50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public final String a;
-    public final n70.a b;
+    public String a;
+    public n70.a b;
 
     public o(String str, n70.a aVar) {
         this.a = str;

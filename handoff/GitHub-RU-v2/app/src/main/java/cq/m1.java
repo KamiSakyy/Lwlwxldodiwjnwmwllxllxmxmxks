@@ -2,9 +2,9 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m1 {
-    public final String a;
-    public final u3 b;
-    public final q3 c;
+    public String a;
+    public u3 b;
+    public q3 c;
 
     public m1(String str, u3 u3Var, q3 q3Var) {
         k71.k.g(str, "__typename");

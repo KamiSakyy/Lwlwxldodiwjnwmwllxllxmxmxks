@@ -49,4 +49,5 @@ public final class i {
     public static i[] values() {
         return (i[]) z.clone();
     }
+    public Object s(Object p1, Object p2) { return null; }
 }

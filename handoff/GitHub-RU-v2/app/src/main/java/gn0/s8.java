@@ -10,7 +10,7 @@ public final class s8 {
     public static final s8 u;
     public static final /* synthetic */ s8[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         s8 s8Var = new s8("ADDITION", 0, "ADDITION");

@@ -14,8 +14,8 @@ import sy.c0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m extends c0 implements g {
     public static final l Companion = new l();
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     public m(String str, String str2) {
         k71.k.g(str, "token");

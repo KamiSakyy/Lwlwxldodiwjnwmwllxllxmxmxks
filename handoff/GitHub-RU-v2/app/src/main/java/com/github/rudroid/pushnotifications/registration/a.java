@@ -7,10 +7,10 @@ public final class a {
     public static final C0059a Companion = new C0059a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final l f18650a;
+    public l f18650a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final qe.a f18651b;
+    public qe.a f18651b;
 
     /* renamed from: com.github.rudroid.pushnotifications.registration.a$a, reason: collision with other inner class name */
     public static final class C0059a {

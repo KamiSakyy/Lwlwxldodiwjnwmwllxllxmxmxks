@@ -24,8 +24,8 @@ public final class d {
     }
 
     public static final class b implements d {
-        public final String a;
-        public final long b;
+        public String a;
+        public long b;
 
         public b(String str, long j) {
             k71.k.g(str, "title");
@@ -56,16 +56,16 @@ public final class d {
     }
 
     public static final class c implements d {
-        public final String a;
-        public final String b;
-        public final String c;
-        public final com.github.rudroid.uitoolkit.text.l d;
-        public final long e;
-        public final long f;
-        public final long g;
-        public final int h;
-        public final float i;
-        public final String j;
+        public String a;
+        public String b;
+        public String c;
+        public com.github.rudroid.uitoolkit.text.l d;
+        public long e;
+        public long f;
+        public long g;
+        public int h;
+        public float i;
+        public String j;
 
         public c(String str, String str2, String str3, o oVar, long j, long j2, int i) {
             float f = ih.a.l;
@@ -170,18 +170,18 @@ public final class d {
 
     /* renamed from: com.github.rudroid.uitoolkit.menu.d$d, reason: collision with other inner class name */
     public static final class C0009d implements d {
-        public final String a;
-        public final String b;
-        public final String c;
-        public final com.github.rudroid.uitoolkit.text.l d;
-        public final String e;
-        public final long f;
-        public final long g;
-        public final long h;
-        public final boolean i;
-        public final boolean j;
-        public final String k;
-        public final int l;
+        public String a;
+        public String b;
+        public String c;
+        public com.github.rudroid.uitoolkit.text.l d;
+        public String e;
+        public long f;
+        public long g;
+        public long h;
+        public boolean i;
+        public boolean j;
+        public String k;
+        public int l;
 
         public C0009d(String str, String str2, String str3, com.github.rudroid.uitoolkit.text.l lVar, String str4, long j, long j2, long j3, boolean z, boolean z2, String str5, int i) {
             k71.k.g(str, "id");

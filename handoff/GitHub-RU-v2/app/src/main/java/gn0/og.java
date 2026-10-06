@@ -9,7 +9,7 @@ public final class og {
     public static final og t;
     public static final /* synthetic */ og[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         og ogVar = new og("CLOSED", 0, "CLOSED");

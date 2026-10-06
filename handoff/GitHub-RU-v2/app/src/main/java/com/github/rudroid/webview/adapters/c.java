@@ -74,9 +74,9 @@ import le.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends i {
-    public final w0 j;
-    public final com.github.rudroid.issueorpullrequest.fragment.a k;
-    public final com.github.rudroid.activities.util.c l;
+    public w0 j;
+    public com.github.rudroid.issueorpullrequest.fragment.a k;
+    public com.github.rudroid.activities.util.c l;
 
     public c(Context context, w0 w0Var, com.github.rudroid.issueorpullrequest.fragment.a aVar, com.github.rudroid.activities.util.c cVar) {
         super(context, null, w0Var.k, 2);

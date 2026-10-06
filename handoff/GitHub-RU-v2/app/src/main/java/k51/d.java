@@ -7,9 +7,9 @@ import java.util.HashMap;
 public final class d implements j51.a {
     public static final b f;
     public static final b g;
-    public final HashMap a;
-    public final HashMap b;
-    public final a c;
+    public HashMap a;
+    public HashMap b;
+    public a c;
     public boolean d;
     public static final a e = new a(0);
     public static final c h = new c();

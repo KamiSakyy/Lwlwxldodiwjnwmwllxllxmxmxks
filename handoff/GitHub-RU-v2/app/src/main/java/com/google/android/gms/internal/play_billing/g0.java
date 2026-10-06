@@ -5,8 +5,8 @@ import java.util.concurrent.Executor;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 {
     public static final g0 d = new g0();
-    public final Runnable a;
-    public final Executor b;
+    public Runnable a;
+    public Executor b;
     public g0 c;
 
     public g0() {

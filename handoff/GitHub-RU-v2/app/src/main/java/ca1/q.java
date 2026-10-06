@@ -163,4 +163,5 @@ public class q extends a5.s {
 
     public q(Object... a) {
     }
+    public Object w(int p1) { return null; }
 }

@@ -40,5 +40,5 @@ public final /* synthetic */ class v implements j71.c {
     }
 
     public Object s;
-    public Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

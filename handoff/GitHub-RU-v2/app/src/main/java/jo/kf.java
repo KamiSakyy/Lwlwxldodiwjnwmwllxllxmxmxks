@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kf implements aaShadow.v0 {
-    public final qf a;
-    public final String b;
-    public final String c;
+    public qf a;
+    public String b;
+    public String c;
 
     public kf(qf qfVar, String str, String str2) {
         this.a = qfVar;

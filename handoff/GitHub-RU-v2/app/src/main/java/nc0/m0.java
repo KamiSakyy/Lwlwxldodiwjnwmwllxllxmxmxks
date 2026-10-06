@@ -71,5 +71,5 @@ public abstract class m0 implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, fVar2.d);
     }
-    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

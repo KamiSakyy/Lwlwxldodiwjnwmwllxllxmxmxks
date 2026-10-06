@@ -11,10 +11,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m extends AsyncTask {
-    public final WeakReference a;
-    public final WeakReference b;
-    public final WeakReference c;
-    public final Uri d;
+    public WeakReference a;
+    public WeakReference b;
+    public WeakReference c;
+    public Uri d;
     public t61.c e;
     public Exception f;
 

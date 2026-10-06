@@ -7,10 +7,10 @@ import java.util.List;
 public final class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final x0 f15204a;
+    public x0 f15204a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f15205b;
+    public List f15205b;
 
     public b0(x0 x0Var, List list) {
         k71.k.g(x0Var, "base");

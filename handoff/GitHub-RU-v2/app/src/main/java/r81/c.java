@@ -10,8 +10,8 @@ import q81.q;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c extends c0 implements k0 {
-    public final q s;
-    public final long t;
+    public q s;
+    public long t;
 
     public c(q qVar, long j) {
         this.s = qVar;

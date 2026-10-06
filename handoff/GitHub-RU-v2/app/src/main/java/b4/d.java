@@ -4,16 +4,16 @@ package b4;
 public final class d extends e {
 
     /* renamed from: e, reason: collision with root package name */
-    public final double f3406e;
+    public double f3406e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final double f3407f;
+    public double f3407f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final double f3408g;
+    public double f3408g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final double f3409h;
+    public double f3409h;
 
     public d(String str) {
         super(0);

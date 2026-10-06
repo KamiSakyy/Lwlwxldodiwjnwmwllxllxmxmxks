@@ -5,14 +5,14 @@ import pz0.la0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final la0 d;
-    public final ZonedDateTime e;
-    public final y2 f;
-    public final r2 g;
-    public final String h;
+    public String a;
+    public String b;
+    public int c;
+    public la0 d;
+    public ZonedDateTime e;
+    public y2 f;
+    public r2 g;
+    public String h;
 
     public z2(String str, String str2, int i, la0 la0Var, ZonedDateTime zonedDateTime, y2 y2Var, r2 r2Var, String str3) {
         this.a = str;

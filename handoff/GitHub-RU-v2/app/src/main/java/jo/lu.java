@@ -4,23 +4,23 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lu {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final pu f;
-    public final xt g;
-    public final String h;
-    public final boolean i;
-    public final boolean j;
-    public final boolean k;
-    public final ZonedDateTime l;
-    public final ZonedDateTime m;
-    public final mu n;
-    public final bu o;
-    public final cu p;
-    public final pv.c q;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public pu f;
+    public xt g;
+    public String h;
+    public boolean i;
+    public boolean j;
+    public boolean k;
+    public ZonedDateTime l;
+    public ZonedDateTime m;
+    public mu n;
+    public bu o;
+    public cu p;
+    public pv.c q;
 
     public lu(String str, String str2, String str3, String str4, String str5, pu puVar, xt xtVar, String str6, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, mu muVar, bu buVar, cu cuVar, pv.c cVar) {
         this.a = str;

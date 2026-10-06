@@ -4,7 +4,7 @@ package s3;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f31712a;
+    public long f31712a;
 
     public static long a(long j10, float f6, float f10, int i) {
         if ((i & 1) != 0) {

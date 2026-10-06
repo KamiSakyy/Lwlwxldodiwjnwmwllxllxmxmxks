@@ -8,13 +8,13 @@ import android.content.res.Resources;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ColorStateList f30955a;
+    public ColorStateList f30955a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Configuration f30956b;
+    public Configuration f30956b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f30957c;
+    public int f30957c;
 
     public i(ColorStateList colorStateList, Configuration configuration, Resources.Theme theme) {
         this.f30955a = colorStateList;

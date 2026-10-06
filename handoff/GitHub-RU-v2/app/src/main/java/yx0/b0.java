@@ -11,9 +11,9 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 implements w0 {
     public static final u Companion = new u();
-    public final String r;
-    public final u0 s;
-    public final aa1.b t;
+    public String r;
+    public u0 s;
+    public aa1.b t;
 
     public b0(u0 u0Var, aa1.b bVar, String str) {
         k71.k.g(str, "viewId");

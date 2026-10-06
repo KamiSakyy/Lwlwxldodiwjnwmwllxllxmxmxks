@@ -31,4 +31,6 @@ public class o {
     public Object setTextAlignment(Object p1) { return null; }
     public Object setWidth(Object p1) { return null; }
     public Object f2617s = null;
+    public Object performClick() { return null; }
+    public Object setPressed(boolean p1) { return null; }
 }

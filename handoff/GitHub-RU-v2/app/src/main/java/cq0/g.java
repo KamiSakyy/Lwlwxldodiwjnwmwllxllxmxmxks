@@ -2,8 +2,8 @@ package cq0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
-    public final String a;
-    public final o b;
+    public String a;
+    public o b;
 
     public g(String str, o oVar) {
         k71.k.g(str, "__typename");

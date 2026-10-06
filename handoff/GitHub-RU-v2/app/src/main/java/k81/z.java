@@ -11,9 +11,9 @@ import kotlinx.serialization.encoding.Encoder;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class z implements KSerializer {
     public final /* synthetic */ int a = 1;
-    public final Object b;
+    public Object b;
     public Object c;
-    public final Object d;
+    public Object d;
 
     public z(Object obj, String str) {
         k71.k.g(obj, "objectInstance");

@@ -4,10 +4,10 @@ import pz0.n30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j0 {
-    public final String a;
-    public final n30 b;
-    public final z c;
-    public final String d;
+    public String a;
+    public n30 b;
+    public z c;
+    public String d;
 
     public j0(String str, n30 n30Var, z zVar, String str2) {
         this.a = str;

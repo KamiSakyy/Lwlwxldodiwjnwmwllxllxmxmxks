@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final z70.s7 d;
-    public final z70.v e;
+    public String a;
+    public String b;
+    public String c;
+    public z70.s7 d;
+    public z70.v e;
 
     public t0(String str, String str2, String str3, z70.s7 s7Var, z70.v vVar) {
         this.a = str;

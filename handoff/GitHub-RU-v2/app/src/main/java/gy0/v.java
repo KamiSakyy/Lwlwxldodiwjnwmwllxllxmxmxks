@@ -6,10 +6,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v {
-    public final String a;
-    public final String b;
-    public final t c;
-    public final e2 d;
+    public String a;
+    public String b;
+    public t c;
+    public e2 d;
 
     public v(String str, String str2, t tVar, e2 e2Var) {
         k71.k.g(str, "__typename");

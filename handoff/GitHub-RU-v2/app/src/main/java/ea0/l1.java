@@ -4,8 +4,8 @@ import w80.k3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 {
-    public final String a;
-    public final k3 b;
+    public String a;
+    public k3 b;
 
     public l1(String str, k3 k3Var) {
         this.a = str;

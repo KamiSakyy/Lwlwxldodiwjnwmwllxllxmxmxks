@@ -9,7 +9,7 @@ import sy.c0;
 public final class h extends c0 implements Runnable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final WeakReference f32732r;
+    public WeakReference f32732r;
 
     public h(EditText editText) {
         this.f32732r = new WeakReference(editText);

@@ -42,10 +42,10 @@ public final class c implements a {
     public static final c x;
     public static final c y;
     public static final c z;
-    public final String r;
-    public final String s;
-    public final d t;
-    public final String u;
+    public String r;
+    public String s;
+    public d t;
+    public String u;
 
     static {
         d dVar = d.w;

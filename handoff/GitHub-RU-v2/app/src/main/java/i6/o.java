@@ -4,22 +4,22 @@ package i6;
 public final class o implements z5.m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final n f26048a;
+    public n f26048a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final n f26049b;
+    public n f26049b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final n f26050c;
+    public n f26050c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final n f26051d;
+    public n f26051d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final n f26052e;
+    public n f26052e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final n f26053f;
+    public n f26053f;
 
     public o(n nVar, n nVar2, n nVar3, n nVar4, n nVar5, n nVar6) {
         this.f26048a = nVar;

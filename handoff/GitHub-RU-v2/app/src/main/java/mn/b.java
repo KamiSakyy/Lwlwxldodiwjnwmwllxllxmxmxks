@@ -7,14 +7,14 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final String a;
-    public final CheckConclusionState b;
-    public final CheckStatusState c;
-    public final ZonedDateTime d;
-    public final ZonedDateTime e;
-    public final Integer f;
-    public final int g;
-    public final int h;
+    public String a;
+    public CheckConclusionState b;
+    public CheckStatusState c;
+    public ZonedDateTime d;
+    public ZonedDateTime e;
+    public Integer f;
+    public int g;
+    public int h;
 
     public b(String str, CheckConclusionState checkConclusionState, CheckStatusState checkStatusState, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, Integer num, int i, int i2) {
         k71.k.g(checkStatusState, "status");

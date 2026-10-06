@@ -18,5 +18,5 @@ final class b implements j71.a {
         this.r.s(dVar.v, dVar.t);
         return a0.a;
     }
-    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

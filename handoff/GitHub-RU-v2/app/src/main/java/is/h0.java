@@ -2,9 +2,9 @@ package is;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 {
-    public final String a;
-    public final k0 b;
-    public final eq.c c;
+    public String a;
+    public k0 b;
+    public eq.c c;
 
     public h0(String str, k0 k0Var, eq.c cVar) {
         k71.k.g(str, "__typename");

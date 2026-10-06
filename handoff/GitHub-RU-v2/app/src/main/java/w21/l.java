@@ -5,9 +5,9 @@ import java.util.concurrent.Executor;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements n, e, d, b {
     public final /* synthetic */ int r;
-    public final Executor s;
-    public final Object t;
-    public final Object u;
+    public Executor s;
+    public Object t;
+    public Object u;
 
     public l(Executor executor, b bVar) {
         this.r = 0;

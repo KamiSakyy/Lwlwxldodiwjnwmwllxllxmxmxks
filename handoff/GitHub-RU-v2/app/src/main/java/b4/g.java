@@ -4,19 +4,19 @@ package b4;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f3422a;
+    public int f3422a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f3423b;
+    public float f3423b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f3424c;
+    public float f3424c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f3425d;
+    public float f3425d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final float f3426e;
+    public float f3426e;
 
     public g(float f6, float f10, float f11, float f12, int i) {
         this.f3422a = i;

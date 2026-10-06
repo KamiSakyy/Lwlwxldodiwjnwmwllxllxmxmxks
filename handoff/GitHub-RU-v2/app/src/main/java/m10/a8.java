@@ -17,7 +17,7 @@ public final class a8 {
     public static final a8 x;
     public static final a8 y;
     public static final a8 z;
-    public final String r;
+    public String r;
 
     static {
         a8 a8Var = new a8("DUPLICATE", 0, "DUPLICATE");

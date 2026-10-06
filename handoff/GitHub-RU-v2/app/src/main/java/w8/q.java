@@ -8,9 +8,10 @@ public class q {
     public q() {
     }
 
-    public static Object Z(Object... a) {
+    public static q Z(Object... a) {
         return null;
     }
     public Object W(Object p1) { return null; }
     public Object s = null;
+    public Object s(Object p1, Object p2, Object p3) { return null; }
 }

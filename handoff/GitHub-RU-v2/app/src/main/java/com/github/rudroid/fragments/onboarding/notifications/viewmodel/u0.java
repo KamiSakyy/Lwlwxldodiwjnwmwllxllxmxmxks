@@ -11,22 +11,22 @@ import y71.y1;
 public final class u0 extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final gi.c f14340s;
+    public gi.c f14340s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final kj.j f14341t;
+    public kj.j f14341t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.github.rudroid.fragments.onboarding.notifications.usecase.d0 f14342u;
+    public com.github.rudroid.fragments.onboarding.notifications.usecase.d0 f14342u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.fragments.onboarding.notifications.usecase.u f14343v;
+    public com.github.rudroid.fragments.onboarding.notifications.usecase.u f14343v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f14344w;
+    public com.github.rudroid.activities.util.c f14344w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y1 f14345x;
+    public y1 f14345x;
 
     public u0(gi.c cVar, kj.j jVar, com.github.rudroid.fragments.onboarding.notifications.usecase.d0 d0Var, com.github.rudroid.fragments.onboarding.notifications.usecase.u uVar, com.github.rudroid.activities.util.c cVar2) {
         k71.k.g(cVar, "systemPreferences");

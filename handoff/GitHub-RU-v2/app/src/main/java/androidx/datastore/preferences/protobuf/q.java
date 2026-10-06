@@ -26,7 +26,7 @@ public final class q {
     public static final /* synthetic */ q[] f2364v;
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f2365r;
+    public int f2365r;
 
     /* JADX INFO: Fake field, exist only in values array */
     q EF0;

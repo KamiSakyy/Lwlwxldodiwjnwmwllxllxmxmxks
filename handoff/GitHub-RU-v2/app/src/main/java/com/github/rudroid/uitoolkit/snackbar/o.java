@@ -17,8 +17,10 @@ public final class o extends k71.l implements j71.c {
         y3.q.a((c0) obj, this.s);
         return a0.a;
     }
-    public Object a(Object p1, Object p2) { return null; }
+    public static Object a(Object p1, Object p2) { return null; }
     public Object e(Object p1, Object p2) { return null; }
     public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object e(Object p1, Object p2) { return null; }
+    public Object f(long p1, Object p2, Object p3, Object p4, int p5) { return null; }
 }

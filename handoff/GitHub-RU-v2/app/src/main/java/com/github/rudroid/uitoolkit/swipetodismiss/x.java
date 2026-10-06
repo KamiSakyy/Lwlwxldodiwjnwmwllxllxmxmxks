@@ -6,7 +6,7 @@ import h0.y0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x implements g1 {
-    public final w r;
+    public w r;
     public final /* synthetic */ n s;
 
     public x(n nVar) {

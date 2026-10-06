@@ -21,7 +21,7 @@ public final class a extends c71.j implements j71.f {
         this.A = kVar;
     }
 
-    public final Object f(Object obj, Object obj2, Object obj3) {
+    public static final Object f(Object obj, Object obj2, Object obj3) {
         y71.j jVar = (y71.j) obj;
         a71.c cVar = (a71.c) obj3;
         switch (this.v) {
@@ -158,8 +158,9 @@ public final class a extends c71.j implements j71.f {
     }
     public Object a(Object p1) { return null; }
     public Object f(Object p1) { return null; }
-    public Object f0(Object p1) { return null; }
-    public Object h0(Object p1) { return null; }
-    public Object ordinal() { return null; }
+    public static Object f0(Object p1) { return null; }
+    public static Object h0(Object p1) { return null; }
+    public int ordinal() { return null; }
     public static final Object r = null;
+    public Object a(Object p1) { return null; }
 }

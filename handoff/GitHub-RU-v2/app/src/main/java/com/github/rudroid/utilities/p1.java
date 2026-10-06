@@ -47,4 +47,5 @@ final class p1 extends c71.c {
         }
     }
     public Object d(Object p1, Object p2) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
 }

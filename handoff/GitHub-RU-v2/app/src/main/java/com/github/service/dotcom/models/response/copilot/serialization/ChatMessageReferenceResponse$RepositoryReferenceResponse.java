@@ -15,17 +15,17 @@ import w61.i;
 public final class ChatMessageReferenceResponse$RepositoryReferenceResponse extends a {
     public static final Companion Companion = new Companion();
     public static final h[] l;
-    public final int a;
-    public final String b;
-    public final String c;
-    public final hz.d d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final String h;
-    public final ChatMessageReferenceInfoResponse i;
-    public final g j;
-    public final f k;
+    public int a;
+    public String b;
+    public String c;
+    public hz.d d;
+    public String e;
+    public String f;
+    public String g;
+    public String h;
+    public ChatMessageReferenceInfoResponse i;
+    public g j;
+    public f k;
 
     public static final class Companion {
         public final KSerializer serializer() {

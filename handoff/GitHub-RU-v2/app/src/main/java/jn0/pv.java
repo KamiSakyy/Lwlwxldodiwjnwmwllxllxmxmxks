@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pv implements aaShadow.v0 {
-    public final sv a;
-    public final String b;
-    public final String c;
+    public sv a;
+    public String b;
+    public String c;
 
     public pv(sv svVar, String str, String str2) {
         this.a = svVar;

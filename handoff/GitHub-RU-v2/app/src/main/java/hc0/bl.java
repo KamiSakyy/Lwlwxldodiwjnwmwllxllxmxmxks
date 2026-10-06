@@ -7,7 +7,7 @@ public final class bl {
     public static final al Companion;
     public static final bl s;
     public static final /* synthetic */ bl[] t;
-    public final String r;
+    public String r;
 
     static {
         bl blVar = new bl("DEPLOYED", 0, "DEPLOYED");

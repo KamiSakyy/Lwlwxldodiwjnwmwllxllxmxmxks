@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mf {
-    public final boolean a;
-    public final m10.ka b;
+    public boolean a;
+    public m10.ka b;
 
     public mf(boolean z, m10.ka kaVar) {
         this.a = z;

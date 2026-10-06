@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ju {
-    public final int a;
-    public final iu b;
-    public final du c;
-    public final String d;
-    public final String e;
+    public int a;
+    public iu b;
+    public du c;
+    public String d;
+    public String e;
 
     public ju(int i, iu iuVar, du duVar, String str, String str2) {
         this.a = i;

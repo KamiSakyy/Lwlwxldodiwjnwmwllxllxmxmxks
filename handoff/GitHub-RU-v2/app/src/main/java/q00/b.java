@@ -5,8 +5,8 @@ import x01.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final ArrayList a;
-    public final i b;
+    public ArrayList a;
+    public i b;
 
     public b(ArrayList arrayList, i iVar) {
         this.a = arrayList;

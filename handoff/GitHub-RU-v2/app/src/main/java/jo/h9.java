@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h9 {
-    public final String a;
-    public final o9 b;
-    public final m9 c;
-    public final String d;
+    public String a;
+    public o9 b;
+    public m9 c;
+    public String d;
 
     public h9(String str, o9 o9Var, m9 m9Var, String str2) {
         this.a = str;

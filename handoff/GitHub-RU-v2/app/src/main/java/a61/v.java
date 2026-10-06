@@ -2,7 +2,7 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v {
-    public final String a;
+    public String a;
 
     public v(String str) {
         this.a = str;

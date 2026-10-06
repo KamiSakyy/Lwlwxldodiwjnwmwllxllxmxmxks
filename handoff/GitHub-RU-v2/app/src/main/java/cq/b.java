@@ -2,7 +2,7 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final int a;
+    public int a;
 
     public b(int i) {
         this.a = i;
@@ -23,4 +23,6 @@ public final class b {
         return a0.s0.i("Following(totalCount=", this.a, ")");
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

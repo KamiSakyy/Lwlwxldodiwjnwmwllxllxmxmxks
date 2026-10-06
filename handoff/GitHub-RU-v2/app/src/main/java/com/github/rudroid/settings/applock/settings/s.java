@@ -14,4 +14,7 @@ public final class s implements p61.d {
     public Object V() { return null; }
     public Object h(Object p1) { return null; }
     public Object n0(Object p1) { return null; }
+    public Object S(int p1, boolean p2) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
 }

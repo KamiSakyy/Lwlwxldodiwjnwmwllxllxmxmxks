@@ -9,7 +9,7 @@ public final class wx {
     public static final wx t;
     public static final wx u;
     public static final /* synthetic */ wx[] v;
-    public final String r;
+    public String r;
 
     static {
         wx wxVar = new wx("MERGE", 0, "MERGE");

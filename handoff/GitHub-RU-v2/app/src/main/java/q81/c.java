@@ -6,18 +6,18 @@ import com.github.rudroid.copilot.h1;
 public final class c {
     public static final c n = new c(true, false, -1, -1, false, false, false, -1, -1, false, false, false, null);
     public static final c o;
-    public final boolean a;
-    public final boolean b;
-    public final int c;
-    public final int d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final int h;
-    public final int i;
-    public final boolean j;
-    public final boolean k;
-    public final boolean l;
+    public boolean a;
+    public boolean b;
+    public int c;
+    public int d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public int h;
+    public int i;
+    public boolean j;
+    public boolean k;
+    public boolean l;
     public String m;
 
     static {

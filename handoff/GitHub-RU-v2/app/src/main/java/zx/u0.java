@@ -4,14 +4,14 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u0 {
-    public final String a;
-    public final t3 b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final k0 g;
-    public final boolean h;
+    public String a;
+    public t3 b;
+    public String c;
+    public int d;
+    public String e;
+    public String f;
+    public k0 g;
+    public boolean h;
 
     public u0(String str, t3 t3Var, String str2, int i, String str3, String str4, k0 k0Var, boolean z) {
         this.a = str;

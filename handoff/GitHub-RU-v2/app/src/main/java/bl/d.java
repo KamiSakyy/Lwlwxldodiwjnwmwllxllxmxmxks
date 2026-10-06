@@ -5,9 +5,9 @@ import oa.g;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final g a;
-    public final cn.a b;
-    public final w50.c c;
+    public g a;
+    public cn.a b;
+    public w50.c c;
 
     public d(g gVar, cn.a aVar, w50.c cVar) {
         k.g(gVar, "service");

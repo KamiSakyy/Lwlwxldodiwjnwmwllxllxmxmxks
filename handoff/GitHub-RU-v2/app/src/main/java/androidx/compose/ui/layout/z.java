@@ -9,5 +9,5 @@ public interface z {
     default <T0> T0 c(Object... a) {
         return null;
     }
-    public Object d(Object p1, Object p2) { return null; }
+    public static float d(Object p1, Object p2) { return null; }
 }

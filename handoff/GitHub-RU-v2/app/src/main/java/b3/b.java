@@ -8,10 +8,10 @@ import x.i;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Resources.Theme f3382a;
+    public Resources.Theme f3382a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f3383b;
+    public int f3383b;
 
     public b(Resources.Theme theme, int i) {
         this.f3382a = theme;

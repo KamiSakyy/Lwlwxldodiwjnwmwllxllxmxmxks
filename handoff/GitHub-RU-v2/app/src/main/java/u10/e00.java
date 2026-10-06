@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e00 {
-    public final String a;
-    public final d00 b;
-    public final String c;
-    public final e80.c d;
+    public String a;
+    public d00 b;
+    public String c;
+    public e80.c d;
 
     public e00(String str, d00 d00Var, String str2, e80.c cVar) {
         this.a = str;

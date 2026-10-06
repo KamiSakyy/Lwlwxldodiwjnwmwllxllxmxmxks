@@ -2,10 +2,10 @@ package qo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 {
-    public final String a;
-    public final n0 b;
-    public final h0 c;
-    public final vo.v d;
+    public String a;
+    public n0 b;
+    public h0 c;
+    public vo.v d;
 
     public l0(String str, n0 n0Var, h0 h0Var, vo.v vVar) {
         this.a = str;
@@ -36,5 +36,5 @@ public final class l0 {
     public final String toString() {
         return "OnCheckSuite(__typename=" + this.a + ", workflowRun=" + this.b + ", app=" + this.c + ", checkSuiteFragment=" + this.d + ")";
     }
-    public Object e(Object p1) { return null; }
+    public a e(Object p1) { return null; }
 }

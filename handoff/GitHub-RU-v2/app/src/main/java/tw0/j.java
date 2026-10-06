@@ -22,4 +22,5 @@ public final class j extends c71.c {
     }
     public Object d(Object p1) { return null; }
     public static final Object a = null;
+    public Object d(Object p1) { return null; }
 }

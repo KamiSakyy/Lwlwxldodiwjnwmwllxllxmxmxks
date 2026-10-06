@@ -10,12 +10,12 @@ import vb.f;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements f {
-    public final List a;
-    public final l0 b;
-    public final List c;
-    public final t0 d;
-    public final String e;
-    public final boolean f;
+    public List a;
+    public l0 b;
+    public List c;
+    public t0 d;
+    public String e;
+    public boolean f;
 
     public a(List list, l0 l0Var, List list2, t0 t0Var, String str, boolean z) {
         k.g(l0Var, "selectedView");

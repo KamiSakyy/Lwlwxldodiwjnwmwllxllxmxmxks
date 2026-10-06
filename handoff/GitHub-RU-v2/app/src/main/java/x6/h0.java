@@ -7,7 +7,7 @@ import android.os.Parcelable;
 public final class h0 extends l0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Class f33834r;
+    public Class f33834r;
 
     public h0(Class cls) {
         super(true);

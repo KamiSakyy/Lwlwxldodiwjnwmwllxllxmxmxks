@@ -6,20 +6,20 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final b c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final ArrayList g;
-    public final boolean h;
-    public final boolean i;
-    public final boolean j;
-    public final boolean k;
-    public final boolean l;
-    public final boolean m;
-    public final boolean n;
+    public com.github.service.models.response.a a;
+    public String b;
+    public b c;
+    public String d;
+    public String e;
+    public String f;
+    public ArrayList g;
+    public boolean h;
+    public boolean i;
+    public boolean j;
+    public boolean k;
+    public boolean l;
+    public boolean m;
+    public boolean n;
 
     public j(com.github.service.models.response.a aVar, String str, b bVar, String str2, String str3, String str4, ArrayList arrayList, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7) {
         this.a = aVar;

@@ -4,8 +4,8 @@ import com.github.service.models.response.Language;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final Language a;
-    public final boolean b;
+    public Language a;
+    public boolean b;
 
     public a(Language language, boolean z) {
         k71.k.g(language, "language");

@@ -20,7 +20,7 @@ import r21.c;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class AppMeasurement {
     public static volatile AppMeasurement b;
-    public final c a;
+    public c a;
 
     public static class ConditionalUserProperty {
 

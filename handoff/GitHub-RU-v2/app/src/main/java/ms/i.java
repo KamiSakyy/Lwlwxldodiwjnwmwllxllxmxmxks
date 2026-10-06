@@ -9,20 +9,20 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final ZonedDateTime h;
-    public final h i;
-    public final ar.c j;
-    public final pu.a k;
-    public final ju.a l;
-    public final i1 m;
-    public final pv.c n;
+    public String a;
+    public String b;
+    public String c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public ZonedDateTime h;
+    public h i;
+    public ar.c j;
+    public pu.a k;
+    public ju.a l;
+    public i1 m;
+    public pv.c n;
 
     public i(String str, String str2, String str3, boolean z, boolean z2, boolean z3, boolean z4, ZonedDateTime zonedDateTime, h hVar, ar.c cVar, pu.a aVar, ju.a aVar2, i1 i1Var, pv.c cVar2) {
         this.a = str;

@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w4 {
-    public final x5 a;
-    public final String b;
-    public final String c;
+    public x5 a;
+    public String b;
+    public String c;
 
     public w4(x5 x5Var, String str, String str2) {
         this.a = x5Var;

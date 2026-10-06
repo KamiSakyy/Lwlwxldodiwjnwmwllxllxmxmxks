@@ -6,11 +6,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements h0 {
-    public final ZonedDateTime a;
-    public final q b;
-    public final String c;
-    public final String d;
-    public final String e;
+    public ZonedDateTime a;
+    public q b;
+    public String c;
+    public String d;
+    public String e;
 
     public r(ZonedDateTime zonedDateTime, q qVar, String str, String str2, String str3) {
         this.a = zonedDateTime;

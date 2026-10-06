@@ -2,11 +2,11 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w0 {
-    public final String a;
-    public final boolean b;
-    public final g1 c;
-    public final Integer d;
-    public final r0 e;
+    public String a;
+    public boolean b;
+    public g1 c;
+    public Integer d;
+    public r0 e;
 
     public w0(String str, boolean z, g1 g1Var, Integer num, r0 r0Var) {
         this.a = str;

@@ -16,8 +16,8 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e extends m0 {
-    public final SupportFragment d;
-    public final SupportFragment e;
+    public SupportFragment d;
+    public SupportFragment e;
     public final m2 f = new m2();
     public final ArrayList g = new ArrayList();
 
@@ -108,4 +108,5 @@ public final class e extends m0 {
     }
     public Object n() { return null; }
     public Object u = null;
+    public Object D(boolean p1) { return null; }
 }

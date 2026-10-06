@@ -5,9 +5,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public final String a;
-    public final e b;
-    public final vx.a c;
+    public String a;
+    public e b;
+    public vx.a c;
 
     public f(String str, e eVar, vx.a aVar) {
         k.g(str, "__typename");

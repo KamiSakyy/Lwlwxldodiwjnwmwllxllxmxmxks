@@ -91,9 +91,11 @@ public final class b extends c71.j implements j71.f {
                 return w61.a0.a;
         }
     }
-    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
     public Object p(Object p1, Object p2) { return null; }
     public static final Object c = null;
     public static final Object d = null;
     public static final Object r = null;
+    public Object ordinal() { return null; }
+    public Object p(Object p1, Object p2) { return null; }
 }

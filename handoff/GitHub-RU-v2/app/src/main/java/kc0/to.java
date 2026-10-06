@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class to implements aaShadow.w0 {
     public static final co Companion = new co();
-    public final String r;
-    public final aa1.b s;
+    public String r;
+    public aa1.b s;
 
     public to(String str) {
         k71.k.g(str, "id");

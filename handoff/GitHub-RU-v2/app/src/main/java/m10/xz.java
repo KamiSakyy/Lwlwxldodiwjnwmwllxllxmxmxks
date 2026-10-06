@@ -11,7 +11,7 @@ public final class xz {
     public static final xz v;
     public static final /* synthetic */ xz[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         xz xzVar = new xz("FILE", 0, "FILE");

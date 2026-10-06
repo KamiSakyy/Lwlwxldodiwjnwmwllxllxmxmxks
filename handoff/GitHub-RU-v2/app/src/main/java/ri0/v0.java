@@ -2,10 +2,10 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v0 {
-    public final String a;
-    public final String b;
-    public final oj0.e2 c;
-    public final oj0.h d;
+    public String a;
+    public String b;
+    public oj0.e2 c;
+    public oj0.h d;
 
     public v0(String str, String str2, oj0.e2 e2Var, oj0.h hVar) {
         this.a = str;

@@ -4,19 +4,19 @@ import gn0.kw;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a0 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final z c;
-    public final String d;
-    public final String e;
-    public final kw f;
-    public final boolean g;
-    public final boolean h;
-    public final boolean i;
-    public final boolean j;
-    public final p0 k;
-    public final aj0.c l;
-    public final yh0.a m;
+    public String a;
+    public String b;
+    public z c;
+    public String d;
+    public String e;
+    public kw f;
+    public boolean g;
+    public boolean h;
+    public boolean i;
+    public boolean j;
+    public p0 k;
+    public aj0.c l;
+    public yh0.a m;
 
     public a0(String str, String str2, z zVar, String str3, String str4, kw kwVar, boolean z, boolean z2, boolean z3, boolean z4, p0 p0Var, aj0.c cVar, yh0.a aVar) {
         this.a = str;

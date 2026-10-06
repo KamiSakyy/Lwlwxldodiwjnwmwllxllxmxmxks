@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jg {
-    public final ig a;
+    public ig a;
 
     public jg(ig igVar) {
         this.a = igVar;

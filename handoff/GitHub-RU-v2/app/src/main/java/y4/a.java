@@ -7,10 +7,10 @@ public final class a {
     public static final byte[] f34252e = new byte[1792];
 
     /* renamed from: a, reason: collision with root package name */
-    public final CharSequence f34253a;
+    public CharSequence f34253a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f34254b;
+    public int f34254b;
 
     /* renamed from: c, reason: collision with root package name */
     public int f34255c;

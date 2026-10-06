@@ -11,8 +11,8 @@ import sy.d0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j extends m0 {
-    public final s d;
-    public final List e;
+    public s d;
+    public List e;
     public com.github.rudroid.common.m0 f;
 
     public j(s sVar) {
@@ -54,4 +54,5 @@ public final class j extends m0 {
         return new l(b, this.d);
     }
     public Object n() { return null; }
+    public Object D(boolean p1) { return null; }
 }

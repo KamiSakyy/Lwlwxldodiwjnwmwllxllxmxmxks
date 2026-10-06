@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o2 {
-    public final String a;
-    public final y2 b;
-    public final String c;
+    public String a;
+    public y2 b;
+    public String c;
 
     public o2(String str, y2 y2Var, String str2) {
         this.a = str;

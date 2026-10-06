@@ -4,15 +4,15 @@ import gn0.hn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u1 implements aa.h0 {
-    public final String a;
-    public final hn b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final boolean f;
-    public final t1 g;
-    public final boolean h;
-    public final String i;
+    public String a;
+    public hn b;
+    public String c;
+    public String d;
+    public int e;
+    public boolean f;
+    public t1 g;
+    public boolean h;
+    public String i;
 
     public u1(String str, hn hnVar, String str2, String str3, int i, boolean z, t1 t1Var, boolean z2, String str4) {
         this.a = str;

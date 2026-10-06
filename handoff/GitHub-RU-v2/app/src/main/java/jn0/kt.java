@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kt {
-    public final String a;
+    public String a;
 
     public kt(String str) {
         this.a = str;

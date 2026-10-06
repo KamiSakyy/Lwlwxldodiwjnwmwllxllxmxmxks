@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class va {
-    public final String a;
-    public final String b;
-    public final uf0.r c;
+    public String a;
+    public String b;
+    public uf0.r c;
 
     public va(String str, String str2, uf0.r rVar) {
         this.a = str;

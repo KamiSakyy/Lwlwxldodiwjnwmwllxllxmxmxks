@@ -10,7 +10,7 @@ public final class a {
     public static final a f25573b = new a(s.r);
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f25574a;
+    public Object f25574a;
 
     public a(Map map) {
         this.f25574a = map;

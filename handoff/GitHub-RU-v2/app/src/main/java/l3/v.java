@@ -8,10 +8,10 @@ public class v {
     public v() {
     }
 
-    public static Object b(Object... a) {
+    public static v b(Object... a) {
         return null;
     }
-    public Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object a = null;
     public Object b = null;
 }

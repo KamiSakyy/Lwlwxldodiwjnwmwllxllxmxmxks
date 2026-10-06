@@ -9,7 +9,7 @@ public final class uh {
     public static final uh t;
     public static final /* synthetic */ uh[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         uh uhVar = new uh("ASSIGNED", 0, "ASSIGNED");

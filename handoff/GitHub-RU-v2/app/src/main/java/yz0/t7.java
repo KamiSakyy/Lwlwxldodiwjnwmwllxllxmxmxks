@@ -7,13 +7,13 @@ import com.github.service.models.response.Avatar;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t7 implements Parcelable {
     public static final Parcelable.Creator<t7> CREATOR = new e5(6);
-    public final String r;
-    public final String s;
-    public final String t;
-    public final Avatar u;
-    public final n5 v;
-    public final String w;
-    public final String x;
+    public String r;
+    public String s;
+    public String t;
+    public Avatar u;
+    public n5 v;
+    public String w;
+    public String x;
 
     public t7(String str, String str2, String str3, Avatar avatar, n5 n5Var, String str4, String str5) {
         k71.k.g(str, "name");

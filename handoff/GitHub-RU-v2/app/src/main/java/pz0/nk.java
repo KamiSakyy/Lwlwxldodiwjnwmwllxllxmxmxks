@@ -93,7 +93,7 @@ public final class nk {
     public static final nk y0;
     public static final nk z;
     public static final nk z0;
-    public final String r;
+    public String r;
 
     static {
         nk nkVar = new nk("BRANCHES", 0, "BRANCHES");

@@ -4,8 +4,8 @@ import java.io.FileOutputStream;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class z implements i0Shadow {
-    public final FileOutputStream r;
-    public final m0 s;
+    public FileOutputStream r;
+    public m0 s;
 
     public z(FileOutputStream fileOutputStream, m0 m0Var) {
         this.r = fileOutputStream;

@@ -13,7 +13,7 @@ public final class ReportedContentClassifier {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ ReportedContentClassifier[] $VALUES;
     public static final u Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final ReportedContentClassifier SPAM = new ReportedContentClassifier("SPAM", 0, "SPAM");
     public static final ReportedContentClassifier ABUSE = new ReportedContentClassifier("ABUSE", 1, "ABUSE");
     public static final ReportedContentClassifier OFF_TOPIC = new ReportedContentClassifier("OFF_TOPIC", 2, "OFF_TOPIC");

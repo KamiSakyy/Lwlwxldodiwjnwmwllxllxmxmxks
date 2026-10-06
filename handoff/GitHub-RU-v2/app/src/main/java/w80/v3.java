@@ -2,9 +2,9 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v3 implements aa.h0 {
-    public final String a;
-    public final t3 b;
-    public final String c;
+    public String a;
+    public t3 b;
+    public String c;
 
     public v3(String str, t3 t3Var, String str2) {
         this.a = str;

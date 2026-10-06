@@ -25,5 +25,5 @@ public interface j {
     default <T0> T0 i0(Object... a) {
         return null;
     }
-    public Object h0(Object p1, Object p2) { return null; }
+    public static Object h0(Object p1, Object p2) { return null; }
 }

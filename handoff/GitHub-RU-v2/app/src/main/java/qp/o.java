@@ -13,8 +13,8 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements n0 {
     public static final k Companion = new k();
-    public final String r;
-    public final u0 s;
+    public String r;
+    public u0 s;
 
     public o(u0 u0Var, String str) {
         this.r = str;

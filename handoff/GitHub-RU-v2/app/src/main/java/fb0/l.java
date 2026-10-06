@@ -6,13 +6,13 @@ import hc0.lc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final jc d;
-    public final k0 e;
-    public final lc f;
-    public final String g;
+    public String a;
+    public String b;
+    public int c;
+    public jc d;
+    public k0 e;
+    public lc f;
+    public String g;
 
     public l(String str, String str2, int i, jc jcVar, k0 k0Var, lc lcVar, String str3) {
         this.a = str;

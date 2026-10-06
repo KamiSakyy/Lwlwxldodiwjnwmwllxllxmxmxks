@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pg implements aaShadow.v0 {
-    public final qg a;
+    public qg a;
 
     public pg(qg qgVar) {
         this.a = qgVar;

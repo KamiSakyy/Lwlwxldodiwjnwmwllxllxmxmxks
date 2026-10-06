@@ -7,8 +7,8 @@ import androidx.lifecycle.u1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableOwnerLegacyProjectsFragment extends Hilt_SelectableOwnerLegacyProjectsFragment<o> {
     public static final a Companion = new a();
-    public final l1 H0;
-    public final com.github.rudroid.searchandfilter.complexfilter.project.b I0;
+    public l1 H0;
+    public com.github.rudroid.searchandfilter.complexfilter.project.b I0;
 
     public static final class a {
     }

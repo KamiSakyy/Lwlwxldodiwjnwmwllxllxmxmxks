@@ -8,13 +8,13 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements h0 {
-    public final String a;
-    public final String b;
-    public final df c;
-    public final a d;
-    public final c e;
-    public final d f;
-    public final ZonedDateTime g;
+    public String a;
+    public String b;
+    public df c;
+    public a d;
+    public c e;
+    public d f;
+    public ZonedDateTime g;
 
     public m(String str, String str2, df dfVar, a aVar, c cVar, d dVar, ZonedDateTime zonedDateTime) {
         this.a = str;

@@ -5,8 +5,8 @@ import y71.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public final ml.j a;
-    public final oa.g b;
+    public ml.j a;
+    public oa.g b;
 
     public f(ml.j jVar, oa.g gVar) {
         k71.k.g(jVar, "fetchRepositoryIdUseCase");

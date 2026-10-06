@@ -26,4 +26,6 @@ public final class h extends c71.c {
     }
     public Object b(Object p1) { return null; }
     public Object e(Object p1, Object p2) { return null; }
+    public Object b(Object p1) { return null; }
+    public Object e(Object p1, boolean p2) { return null; }
 }

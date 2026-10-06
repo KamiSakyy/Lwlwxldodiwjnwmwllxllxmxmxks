@@ -25,7 +25,7 @@ public final class ih {
     public static final ih x;
     public static final ih y;
     public static final ih z;
-    public final String r;
+    public String r;
 
     static {
         ih ihVar = new ih("APPROVAL_REQUESTED", 0, "APPROVAL_REQUESTED");

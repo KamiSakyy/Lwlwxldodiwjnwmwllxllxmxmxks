@@ -15,6 +15,6 @@ public interface t {
     }
 
     void o2(Menu menu, MenuInflater menuInflater);
-    public Object B(Object p1) { return null; }
+    public static Object B(Object p1) { return null; }
     public Object a() { return null; }
 }

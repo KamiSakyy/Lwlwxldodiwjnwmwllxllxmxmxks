@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nt implements aaShadow.v0 {
-    public final ut a;
+    public ut a;
 
     public nt(ut utVar) {
         this.a = utVar;

@@ -8,10 +8,10 @@ import com.github.service.models.response.Avatar;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e0 implements Parcelable {
     public static final Parcelable.Creator<e0> CREATOR = new c(16);
-    public final String r;
-    public final String s;
-    public final Avatar t;
-    public final boolean u;
+    public String r;
+    public String s;
+    public Avatar t;
+    public boolean u;
 
     public e0(String str, String str2, Avatar avatar, boolean z) {
         k71.k.g(str, "ownerLogin");

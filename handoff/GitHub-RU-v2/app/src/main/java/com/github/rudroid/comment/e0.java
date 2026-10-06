@@ -8,16 +8,16 @@ import y71.y1;
 public final class e0 extends b {
 
     /* renamed from: s, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f8909s;
+    public com.github.rudroid.activities.util.c f8909s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final zk.o f8910t;
+    public zk.o f8910t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final y1 f8911u;
+    public y1 f8911u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final y71.i1 f8912v;
+    public y71.i1 f8912v;
 
     public e0(com.github.rudroid.activities.util.c cVar, zk.o oVar) {
         k71.k.g(cVar, "accountHolder");

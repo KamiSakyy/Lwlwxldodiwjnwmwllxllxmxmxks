@@ -2,9 +2,9 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c1 implements aa.h0 {
-    public final String a;
-    public final b1 b;
-    public final String c;
+    public String a;
+    public b1 b;
+    public String c;
 
     public c1(String str, b1 b1Var, String str2) {
         this.a = str;

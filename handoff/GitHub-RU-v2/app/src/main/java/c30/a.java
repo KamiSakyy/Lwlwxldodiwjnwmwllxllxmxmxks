@@ -2,7 +2,7 @@ package c30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final int a;
+    public int a;
 
     public a(int i) {
         this.a = i;
@@ -23,5 +23,5 @@ public final class a {
         return a0.s0.i("Followers(totalCount=", this.a, ")");
     }
     public Object O(Object p1) { return null; }
-    public Object z(Object p1) { return null; }
+    public static Object z(Object p1) { return null; }
 }

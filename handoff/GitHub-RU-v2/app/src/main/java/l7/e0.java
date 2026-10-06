@@ -31,17 +31,17 @@ public class e0 {
     public View f28102f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final h1 f28103g;
+    public h1 f28103g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final LinearInterpolator f28104h;
-    public final DecelerateInterpolator i;
+    public LinearInterpolator f28104h;
+    public DecelerateInterpolator i;
 
     /* renamed from: j, reason: collision with root package name */
     public PointF f28105j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final DisplayMetrics f28106k;
+    public DisplayMetrics f28106k;
     public boolean l;
     public float m;
 

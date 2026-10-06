@@ -10,10 +10,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k extends n1 {
-    public final View t;
+    public View t;
     public int u;
     public int v;
-    public final int[] w;
+    public int[] w;
 
     public k(View view) {
         super(0);

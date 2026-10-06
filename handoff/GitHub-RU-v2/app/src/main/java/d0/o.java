@@ -8,16 +8,16 @@ import java.util.List;
 public final class o extends p {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f20960a;
+    public String f20960a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f20961b;
+    public String f20961b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f20962c;
+    public Object f20962c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final a0 f20963d;
+    public a0 f20963d;
 
     public o(String str, String str2, List list, a0 a0Var) {
         this.f20960a = str;

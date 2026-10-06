@@ -2,9 +2,9 @@ package qo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 {
-    public final String a;
-    public final String b;
-    public final b1 c;
+    public String a;
+    public String b;
+    public b1 c;
 
     public a1(String str, String str2, b1 b1Var) {
         k71.k.g(str, "__typename");

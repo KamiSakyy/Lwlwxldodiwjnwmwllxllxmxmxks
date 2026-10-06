@@ -19,10 +19,10 @@ import java.util.Map;
 public final class k {
     public static final t e = new t("AppUpdateService", 3);
     public static final Intent f = new Intent("com.google.android.play.core.install.BIND_UPDATE_SERVICE").setPackage("com.android.vending");
-    public final o a;
-    public final String b;
-    public final Context c;
-    public final l d;
+    public o a;
+    public String b;
+    public Context c;
+    public l d;
 
     public k(Context context, l lVar) {
         String str;

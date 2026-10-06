@@ -9,11 +9,11 @@ import gn.n;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class za<T extends gn.n> extends androidx.lifecycle.k1 implements v3 {
     public static final a Companion = new a();
-    public final UsersRoute s;
-    public final String t;
-    public final gn.n u;
-    public final y71.y1 v;
-    public final y71.i1 w;
+    public UsersRoute s;
+    public String t;
+    public gn.n u;
+    public y71.y1 v;
+    public y71.i1 w;
     public x01.i x;
 
     public static final class a {
@@ -26,8 +26,8 @@ public abstract class za<T extends gn.n> extends androidx.lifecycle.k1 implement
     }
 
     public static final class b implements oe.g {
-        public final yz0.l4 r;
-        public final CharSequence s;
+        public yz0.l4 r;
+        public CharSequence s;
 
         public b(yz0.l4 l4Var, CharSequence charSequence) {
             k71.k.g(charSequence, "htmlText");

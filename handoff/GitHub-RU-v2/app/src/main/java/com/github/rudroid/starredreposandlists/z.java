@@ -23,7 +23,8 @@ final class z extends c71.j implements j71.f {
         sy.y.j(obj);
         return new w61.k(c4Var, f8Var);
     }
-    public Object b(Object p1) { return null; }
-    public Object g(Object p1, Object p2) { return null; }
-    public Object i(Object p1, Object p2) { return null; }
+    public static Object b(Object p1) { return null; }
+    public static Object g(Object p1, Object p2) { return null; }
+    public static Object i(Object p1, Object p2) { return null; }
+    public Object a(Object p1, Object p2, Object p3, Object p4, int p5) { return null; }
 }

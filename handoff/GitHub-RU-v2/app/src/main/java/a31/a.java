@@ -27,14 +27,14 @@ public final class a extends Drawable implements l {
     public float B;
     public WeakReference C;
     public WeakReference D;
-    public final WeakReference r;
-    public final j s;
-    public final m t;
-    public final Rect u;
-    public final c v;
+    public WeakReference r;
+    public j s;
+    public m t;
+    public Rect u;
+    public c v;
     public float w;
     public float x;
-    public final int y;
+    public int y;
     public float z;
 
     public a(Context context) {

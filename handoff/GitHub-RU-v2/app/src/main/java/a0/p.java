@@ -6,10 +6,10 @@ import androidx.compose.runtime.i3;
 public final class p implements i3 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final h2 f188r;
+    public h2 f188r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final androidx.compose.runtime.p1 f189s;
+    public androidx.compose.runtime.p1 f189s;
 
     /* renamed from: t, reason: collision with root package name */
     public u f190t;

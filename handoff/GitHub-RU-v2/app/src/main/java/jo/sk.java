@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sk implements aaShadow.m0 {
-    public final tk a;
+    public tk a;
 
     public sk(tk tkVar) {
         this.a = tkVar;

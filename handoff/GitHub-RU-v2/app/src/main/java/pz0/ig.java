@@ -9,7 +9,7 @@ public final class ig {
     public static final ig t;
     public static final /* synthetic */ ig[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         ig igVar = new ig("OFF_TOPIC", 0, "OFF_TOPIC");

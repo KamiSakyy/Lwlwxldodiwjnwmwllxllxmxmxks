@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c3 {
-    public final String a;
-    public final String b;
-    public final h3 c;
-    public final d3 d;
+    public String a;
+    public String b;
+    public h3 c;
+    public d3 d;
 
     public c3(String str, String str2, h3 h3Var, d3 d3Var) {
         k71.k.g(str, "__typename");

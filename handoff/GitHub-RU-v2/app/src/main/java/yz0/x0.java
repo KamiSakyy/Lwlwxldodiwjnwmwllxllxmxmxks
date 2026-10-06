@@ -4,13 +4,13 @@ import com.github.service.models.response.Avatar;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final Avatar e;
-    public final boolean f;
-    public final boolean g;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public Avatar e;
+    public boolean f;
+    public boolean g;
 
     public x0(String str, String str2, String str3, String str4, Avatar avatar, boolean z, boolean z2) {
         k71.k.g(str, "id");

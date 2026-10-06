@@ -4,8 +4,8 @@ import com.github.domain.users.FetchUsersParams$FetchFollowingParams;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w0 extends za<FetchUsersParams$FetchFollowingParams> {
-    public final gn.f y;
-    public final com.github.rudroid.activities.util.c z;
+    public gn.f y;
+    public com.github.rudroid.activities.util.c z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public w0(gn.f fVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {

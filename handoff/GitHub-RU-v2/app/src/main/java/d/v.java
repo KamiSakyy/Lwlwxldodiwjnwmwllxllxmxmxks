@@ -6,10 +6,10 @@ import androidx.lifecycle.c0;
 public final class v extends b91.g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final u f20928a;
+    public u f20928a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final c0 f20929b;
+    public c0 f20929b;
 
     public v(c0 c0Var, u uVar) {
         k71.k.g(uVar, "callback");

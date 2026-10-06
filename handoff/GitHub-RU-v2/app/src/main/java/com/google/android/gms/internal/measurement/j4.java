@@ -9,7 +9,7 @@ import java.util.TreeMap;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j4 extends h {
     public final /* synthetic */ int t = 0;
-    public final Object u;
+    public Object u;
 
     public j4(a5.s sVar) {
         super("internal.eventLogger");

@@ -2,7 +2,7 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r0 {
-    public final String a;
+    public String a;
 
     public r0(String str) {
         this.a = str;
@@ -26,5 +26,5 @@ public final class r0 {
     public final String toString() {
         return f1.e.z("OnImageFileType(url=", this.a, ")");
     }
-    public Object isEmpty() { return null; }
+    public static Object isEmpty() { return null; }
 }

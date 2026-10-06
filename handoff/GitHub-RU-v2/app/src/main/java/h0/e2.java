@@ -184,4 +184,5 @@ public final class e2 implements s3.c {
     public final long z(float f6) {
         return this.f24972r.z(f6);
     }
+    public Object compareTo(Object p1) { return null; }
 }

@@ -2,12 +2,12 @@ package com.github.rudroid.settings.copilot.paywall.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 {
-    public final h0 a;
-    public final h0 b;
-    public final boolean c;
-    public final int d;
-    public final Integer e;
-    public final l f;
+    public h0 a;
+    public h0 b;
+    public boolean c;
+    public int d;
+    public Integer e;
+    public l f;
 
     public i0(h0 h0Var, h0 h0Var2, int i, Integer num, l lVar, int i2) {
         boolean z = (i2 & 4) == 0;

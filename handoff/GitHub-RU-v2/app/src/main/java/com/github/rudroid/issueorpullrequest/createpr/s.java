@@ -8,22 +8,22 @@ import yz0.z1;
 public final class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public final c2 f15376a;
+    public c2 f15376a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final a2 f15377b;
+    public a2 f15377b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final z1 f15378c;
+    public z1 f15378c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f15379d;
+    public String f15379d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final oe.c f15380e;
+    public oe.c f15380e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final boolean f15381f;
+    public boolean f15381f;
 
     public s(c2 c2Var, a2 a2Var, z1 z1Var, String str, oe.c cVar, boolean z10) {
         this.f15376a = c2Var;

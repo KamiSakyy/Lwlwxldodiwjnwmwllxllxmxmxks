@@ -6,8 +6,8 @@ import java.lang.ref.WeakReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements View.OnAttachStateChangeListener, ViewTreeObserver.OnGlobalLayoutListener {
-    public final WeakReference r;
-    public final WeakReference s;
+    public WeakReference r;
+    public WeakReference s;
 
     public g(l lVar, View view) {
         this.r = new WeakReference(lVar);

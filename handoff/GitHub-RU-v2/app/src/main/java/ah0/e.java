@@ -5,11 +5,11 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements h0 {
-    public final String a;
-    public final boolean b;
-    public final c c;
-    public final b d;
-    public final a e;
+    public String a;
+    public boolean b;
+    public c c;
+    public b d;
+    public a e;
 
     public e(String str, boolean z, c cVar, b bVar, a aVar) {
         k71.k.g(str, "__typename");

@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zl {
-    public final wl a;
-    public final String b;
-    public final String c;
+    public wl a;
+    public String b;
+    public String c;
 
     public zl(wl wlVar, String str, String str2) {
         this.a = wlVar;

@@ -16,18 +16,18 @@ import w61.i;
 public final class AgentAiModelResponse {
     public static final Companion Companion = new Companion();
     public static final h[] m = {null, null, null, null, null, w.s(i.r, new u5(29)), null, null, null, null, null, null};
-    public final boolean a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final boolean e;
-    public final gz.e f;
-    public final AiModelCapabilitiesResponse g;
-    public final AiModelSupportsResponse h;
-    public final AiModelPolicyResponse i;
-    public final AiModelBillingResponse j;
-    public final boolean k;
-    public final boolean l;
+    public boolean a;
+    public String b;
+    public String c;
+    public String d;
+    public boolean e;
+    public gz.e f;
+    public AiModelCapabilitiesResponse g;
+    public AiModelSupportsResponse h;
+    public AiModelPolicyResponse i;
+    public AiModelBillingResponse j;
+    public boolean k;
+    public boolean l;
 
     public static final class Companion {
         public final KSerializer serializer() {

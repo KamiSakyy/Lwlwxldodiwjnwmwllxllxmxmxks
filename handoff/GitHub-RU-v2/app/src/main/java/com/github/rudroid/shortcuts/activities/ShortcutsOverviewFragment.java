@@ -38,7 +38,7 @@ public final class ShortcutsOverviewFragment extends Hilt_ShortcutsOverviewFragm
     public final int E0 = 2131558447;
     public com.github.rudroid.activities.util.c F0;
     public com.github.rudroid.utilities.e G0;
-    public final l1 H0;
+    public l1 H0;
     public com.github.rudroid.shortcuts.d0 I0;
     public l7.x J0;
     public MenuItem K0;

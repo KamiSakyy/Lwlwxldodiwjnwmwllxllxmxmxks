@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cf {
-    public final String a;
-    public final bf b;
-    public final String c;
+    public String a;
+    public bf b;
+    public String c;
 
     public cf(String str, bf bfVar, String str2) {
         this.a = str;

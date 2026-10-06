@@ -7,14 +7,14 @@ import java.time.ZonedDateTime;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s6 extends s7 {
     public final TimelineItem$LinkedItemConnectorType a;
-    public final String b;
-    public final int c;
-    public final String d;
-    public final String e;
-    public final ZonedDateTime f;
-    public final PullRequestState g;
-    public final boolean h;
-    public final boolean i;
+    public String b;
+    public int c;
+    public String d;
+    public String e;
+    public ZonedDateTime f;
+    public PullRequestState g;
+    public boolean h;
+    public boolean i;
 
     public s6(TimelineItem$LinkedItemConnectorType timelineItem$LinkedItemConnectorType, String str, int i, String str2, String str3, ZonedDateTime zonedDateTime, PullRequestState pullRequestState, boolean z, boolean z2) {
         k71.k.g(timelineItem$LinkedItemConnectorType, "connectorType");

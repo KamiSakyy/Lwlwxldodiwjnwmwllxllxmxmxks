@@ -207,6 +207,6 @@ public final class l0 {
             t.d = new b5(rVar, bVar, z, i, 4);
         }
     }
-    public Object F(Object p1, Object p2) { return null; }
-    public Object S(Object p1, Object p2, Object p3) { return null; }
+    public static Object F(Object p1, Object p2) { return null; }
+    public static Object S(Object p1, Object p2, Object p3) { return null; }
 }

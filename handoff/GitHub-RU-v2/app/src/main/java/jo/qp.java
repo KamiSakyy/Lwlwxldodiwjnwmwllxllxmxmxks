@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qp {
-    public final String a;
-    public final String b;
-    public final rp c;
+    public String a;
+    public String b;
+    public rp c;
 
     public qp(String str, String str2, rp rpVar) {
         this.a = str;

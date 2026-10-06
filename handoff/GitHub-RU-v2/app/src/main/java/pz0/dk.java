@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dk {
-    public final kj a;
-    public final mj b;
-    public final aa1.b c;
-    public final ZonedDateTime d;
-    public final aa1.b e;
+    public kj a;
+    public mj b;
+    public aa1.b c;
+    public ZonedDateTime d;
+    public aa1.b e;
 
     public dk(kj kjVar, mj mjVar, aa1.b bVar, ZonedDateTime zonedDateTime, aa1.b bVar2) {
         nj njVar = oj.Companion;

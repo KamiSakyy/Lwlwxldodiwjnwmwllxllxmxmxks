@@ -2,10 +2,10 @@ package ar0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final o c;
-    public final gu0.c d;
+    public String a;
+    public String b;
+    public o c;
+    public gu0.c d;
 
     public r(String str, String str2, o oVar, gu0.c cVar) {
         this.a = str;

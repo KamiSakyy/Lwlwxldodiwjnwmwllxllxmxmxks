@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements Map.Entry, l71.d {
-    public final e r;
-    public final int s;
-    public final int t;
+    public e r;
+    public int s;
+    public int t;
 
     public d(e eVar, int i) {
         k.g(eVar, "map");

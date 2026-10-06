@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mi implements aaShadow.m0 {
-    public final ni a;
+    public ni a;
 
     public mi(ni niVar) {
         this.a = niVar;

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y5 {
-    public final String a;
-    public final String b;
-    public final g40.e1 c;
+    public String a;
+    public String b;
+    public g40.e1 c;
 
     public y5(String str, String str2, g40.e1 e1Var) {
         this.a = str;

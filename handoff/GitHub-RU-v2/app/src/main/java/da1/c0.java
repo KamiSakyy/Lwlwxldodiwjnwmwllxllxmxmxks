@@ -8,8 +8,8 @@ import java.io.InputStream;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c0 {
     public final /* synthetic */ int a = 0;
-    public final String b;
-    public final String c;
+    public String b;
+    public String c;
 
     public c0(a aVar, String str) {
         aVar.getClass();

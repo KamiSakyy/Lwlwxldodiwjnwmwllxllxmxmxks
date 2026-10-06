@@ -8,13 +8,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements h0 {
-    public final String a;
-    public final String b;
-    public final a c;
-    public final ZonedDateTime d;
-    public final boolean e;
-    public final b f;
-    public final c g;
+    public String a;
+    public String b;
+    public a c;
+    public ZonedDateTime d;
+    public boolean e;
+    public b f;
+    public c g;
 
     public k(String str, String str2, a aVar, ZonedDateTime zonedDateTime, boolean z, b bVar, c cVar) {
         this.a = str;

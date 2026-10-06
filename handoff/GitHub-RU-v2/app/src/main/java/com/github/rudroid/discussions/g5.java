@@ -4,10 +4,10 @@ package com.github.rudroid.discussions;
 public final class g5 extends za {
 
     /* renamed from: t, reason: collision with root package name */
-    public final b01.k f11330t;
+    public b01.k f11330t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final boolean f11331u;
+    public boolean f11331u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g5(b01.k kVar, boolean z10) {

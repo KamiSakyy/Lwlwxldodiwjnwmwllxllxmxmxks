@@ -4,18 +4,18 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final gu h;
-    public final boolean i;
-    public final int j;
-    public final q2 k;
-    public final gu0.c l;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public String g;
+    public gu h;
+    public boolean i;
+    public int j;
+    public q2 k;
+    public gu0.c l;
 
     public r2(String str, String str2, String str3, String str4, String str5, String str6, String str7, gu guVar, boolean z, int i, q2 q2Var, gu0.c cVar) {
         this.a = str;

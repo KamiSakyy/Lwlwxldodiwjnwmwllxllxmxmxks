@@ -12,12 +12,12 @@ import java.util.concurrent.TimeUnit;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s implements u81.g {
     public final /* synthetic */ int r = 0;
-    public final long s;
+    public long s;
     public long t;
-    public final Object u;
-    public final Object v;
-    public final Serializable w;
-    public final Iterable x;
+    public Object u;
+    public Object v;
+    public Serializable w;
+    public Iterable x;
 
     public s(o1 o1Var, String str, String str2, String str3, long j, long j2, Bundle bundle) {
         v vVar;
@@ -248,8 +248,8 @@ public final class s implements u81.g {
         this.x = new LinkedBlockingDeque();
     }
     public Object F(Object p1) { return null; }
-    public Object i(Object p1, Object p2) { return null; }
-    public Object n(Object p1) { return null; }
+    public static Object i(Object p1, Object p2) { return null; }
+    public static Object n(Object p1) { return null; }
     public Object t() { return null; }
     public Object u() { return null; }
 }

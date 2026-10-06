@@ -133,10 +133,10 @@ public final class h {
     public static final class b {
 
         /* renamed from: a, reason: collision with root package name */
-        public final f01.f f13312a;
+        public f01.f f13312a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final f01.f f13313b;
+        public f01.f f13313b;
 
         public b(f01.f fVar) {
             this.f13312a = fVar;

@@ -8,12 +8,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final xc a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final zc e;
-    public final String f;
+    public xc a;
+    public String b;
+    public String c;
+    public int d;
+    public zc e;
+    public String f;
 
     public b(int i, xc xcVar, zc zcVar, String str, String str2, String str3) {
         this.a = xcVar;

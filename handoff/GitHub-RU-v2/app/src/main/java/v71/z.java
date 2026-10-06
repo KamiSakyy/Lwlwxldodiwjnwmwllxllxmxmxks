@@ -21,6 +21,7 @@ public final class z {
     public z(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12, Object p13) {
     }
     public Object a(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object g(Object p1, Object p2) { return null; }
-    public Object n(Object p1, Object p2) { return null; }
+    public static Object g(Object p1, Object p2) { return null; }
+    public static Object n(Object p1, Object p2) { return null; }
+    public Object a(Object p1, boolean p2, Object p3, Object p4, int p5) { return null; }
 }

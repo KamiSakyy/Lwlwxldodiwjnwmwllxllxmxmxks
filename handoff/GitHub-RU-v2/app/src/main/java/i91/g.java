@@ -6,8 +6,8 @@ import java.io.IOException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends q {
-    public final long s;
-    public final boolean t;
+    public long s;
+    public boolean t;
     public long u;
 
     public g(k0 k0Var, long j, boolean z) {

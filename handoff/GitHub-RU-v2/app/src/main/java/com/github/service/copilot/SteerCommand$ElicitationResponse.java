@@ -17,9 +17,9 @@ import xn.g1;
 public final class SteerCommand$ElicitationResponse implements c4 {
     public static final Companion Companion = new Companion();
     public static final h[] d;
-    public final String a;
-    public final g1 b;
-    public final Map c;
+    public String a;
+    public g1 b;
+    public Map c;
 
     public static final class Companion {
         public final KSerializer serializer() {

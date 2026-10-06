@@ -2,9 +2,9 @@ package qo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q2 implements aa.v0 {
-    public final r2 a;
-    public final String b;
-    public final String c;
+    public r2 a;
+    public String b;
+    public String c;
 
     public q2(r2 r2Var, String str, String str2) {
         this.a = r2Var;

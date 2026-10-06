@@ -11,7 +11,7 @@ public final class jc {
     public static final jc v;
     public static final /* synthetic */ jc[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         jc jcVar = new jc("DISMISSED", 0, "DISMISSED");

@@ -47,4 +47,5 @@ public abstract class e {
         a = l.r(new m[]{mVar2, mVar3, mVar4, mVar5, mVar6, mVar7, new m("resource", x0Var, (String) null, rVar, rVar, r), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
     }
     public Object e(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
 }

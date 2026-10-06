@@ -8,11 +8,11 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class AuthorizationException extends Exception {
     public static final /* synthetic */ int w = 0;
-    public final int r;
-    public final int s;
-    public final String t;
-    public final String u;
-    public final Uri v;
+    public int r;
+    public int s;
+    public String t;
+    public String u;
+    public Uri v;
 
     public AuthorizationException(int i, int i2, String str, String str2, Uri uri) {
         super(str2, null);

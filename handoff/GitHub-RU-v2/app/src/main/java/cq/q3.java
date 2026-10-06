@@ -2,14 +2,14 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q3 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final boolean g;
-    public final eq.g h;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public boolean g;
+    public eq.g h;
 
     public q3(String str, String str2, String str3, String str4, String str5, String str6, boolean z, eq.g gVar) {
         this.a = str;

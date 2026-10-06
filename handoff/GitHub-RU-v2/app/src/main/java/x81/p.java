@@ -19,11 +19,11 @@ import sy.e0;
 public final class p implements v81.e {
     public static final List g = r81.g.k(new String[]{"connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade", ":method", ":path", ":scheme", ":authority"});
     public static final List h = r81.g.k(new String[]{"connection", "host", "keep-alive", "proxy-connection", "te", "transfer-encoding", "encoding", "upgrade"});
-    public final u81.n a;
-    public final n0.w b;
-    public final o c;
+    public u81.n a;
+    public n0.w b;
+    public o c;
     public volatile w d;
-    public final q81.v e;
+    public q81.v e;
     public volatile boolean f;
 
     public p(q81.u uVar, u81.n nVar, n0.w wVar, o oVar) {

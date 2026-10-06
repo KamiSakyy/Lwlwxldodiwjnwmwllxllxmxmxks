@@ -12,11 +12,11 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements i51.d, i51.f {
     public final boolean a = true;
-    public final JsonWriter b;
-    public final Map c;
-    public final Map d;
-    public final i51.c e;
-    public final boolean f;
+    public JsonWriter b;
+    public Map c;
+    public Map d;
+    public i51.c e;
+    public boolean f;
 
     public e(Writer writer, HashMap hashMap, HashMap hashMap2, a aVar, boolean z) {
         this.b = new JsonWriter(writer);

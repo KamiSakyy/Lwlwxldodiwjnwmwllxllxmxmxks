@@ -2,10 +2,10 @@ package nc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public final String a;
-    public final y b;
-    public final b c;
-    public final String d;
+    public String a;
+    public y b;
+    public b c;
+    public String d;
 
     public i(String str, y yVar, b bVar, String str2) {
         this.a = str;

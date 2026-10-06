@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a2 {
-    public final c2 a;
-    public final b2 b;
-    public final String c;
-    public final ArrayList d;
+    public c2 a;
+    public b2 b;
+    public String c;
+    public ArrayList d;
 
     public a2(c2 c2Var, b2 b2Var, String str, ArrayList arrayList) {
         this.a = c2Var;

@@ -2,7 +2,7 @@ package a81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class w implements a71.g {
-    public final ThreadLocal r;
+    public ThreadLocal r;
 
     public w(ThreadLocal threadLocal) {
         this.r = threadLocal;

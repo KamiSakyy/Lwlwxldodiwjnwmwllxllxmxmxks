@@ -2,10 +2,10 @@ package is;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 implements aa.h0 {
-    public final String a;
-    public final int b;
-    public final b1 c;
-    public final String d;
+    public String a;
+    public int b;
+    public b1 c;
+    public String d;
 
     public c1(String str, int i, b1 b1Var, String str2) {
         this.a = str;

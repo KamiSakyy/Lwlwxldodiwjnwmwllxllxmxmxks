@@ -29,21 +29,21 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 class ClockFaceView extends h implements f {
-    public final ClockHandView K;
-    public final Rect L;
-    public final RectF M;
-    public final Rect N;
-    public final SparseArray O;
-    public final c P;
-    public final int[] Q;
-    public final float[] R;
-    public final int S;
-    public final int T;
-    public final int U;
-    public final int V;
-    public final String[] W;
+    public ClockHandView K;
+    public Rect L;
+    public RectF M;
+    public Rect N;
+    public SparseArray O;
+    public c P;
+    public int[] Q;
+    public float[] R;
+    public int S;
+    public int T;
+    public int U;
+    public int V;
+    public String[] W;
     public float a0;
-    public final ColorStateList b0;
+    public ColorStateList b0;
 
     /* JADX WARN: Multi-variable type inference failed */
     public ClockFaceView(Context context, AttributeSet attributeSet) {

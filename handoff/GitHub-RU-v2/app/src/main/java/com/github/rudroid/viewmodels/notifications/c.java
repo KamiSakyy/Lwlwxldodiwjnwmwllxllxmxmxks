@@ -2,7 +2,7 @@ package com.github.rudroid.viewmodels.notifications;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends f {
-    public final int a;
+    public int a;
 
     public c(int i) {
         h hVar = h.r;
@@ -33,5 +33,6 @@ public final class c extends f {
     public final String toString() {
         return a0.s0.i("MultiSelectMarkAsReadSnackBarEvent(count=", this.a, ", undoAction=null)");
     }
+    public Object v(Object p1) { return null; }
     public Object v(Object p1) { return null; }
 }

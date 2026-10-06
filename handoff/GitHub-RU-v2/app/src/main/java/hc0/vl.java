@@ -9,7 +9,7 @@ public final class vl {
     public static final vl t;
     public static final /* synthetic */ vl[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         vl vlVar = new vl("APPROVED", 0, "APPROVED");

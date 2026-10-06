@@ -10,7 +10,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements v71.k, a2 {
-    public final l r;
+    public l r;
     public final /* synthetic */ c s;
 
     public b(c cVar, l lVar) {

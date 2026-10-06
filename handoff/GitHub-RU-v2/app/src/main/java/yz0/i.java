@@ -4,7 +4,7 @@ import com.github.service.models.response.type.PullRequestMergeMethod;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public final PullRequestMergeMethod a;
+    public PullRequestMergeMethod a;
 
     public i(PullRequestMergeMethod pullRequestMergeMethod) {
         k71.k.g(pullRequestMergeMethod, "pullRequestMergeMethod");

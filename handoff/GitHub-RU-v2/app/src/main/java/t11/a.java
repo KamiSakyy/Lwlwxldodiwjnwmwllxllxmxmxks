@@ -5,11 +5,11 @@ import a0.s0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
     public static final a f = new a(10485760, 200, 10000, 604800000, 81920);
-    public final long a;
-    public final int b;
-    public final int c;
-    public final long d;
-    public final int e;
+    public long a;
+    public int b;
+    public int c;
+    public long d;
+    public int e;
 
     public a(long j, int i, int i2, long j2, int i3) {
         this.a = j;

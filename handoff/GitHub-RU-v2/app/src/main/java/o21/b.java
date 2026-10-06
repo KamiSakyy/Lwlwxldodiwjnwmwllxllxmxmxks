@@ -7,9 +7,9 @@ import java.util.NoSuchElementException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends b0 implements ListIterator {
-    public final int s;
+    public int s;
     public int t;
-    public final e u;
+    public e u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b(e eVar, int i) {

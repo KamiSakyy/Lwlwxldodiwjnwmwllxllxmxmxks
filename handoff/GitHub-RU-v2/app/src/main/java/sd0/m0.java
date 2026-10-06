@@ -38,8 +38,8 @@ public abstract class m0 implements aa.a {
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, yVar.b);
     }
-    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public static Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

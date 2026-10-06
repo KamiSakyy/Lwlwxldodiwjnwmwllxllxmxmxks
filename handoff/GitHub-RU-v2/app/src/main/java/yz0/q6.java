@@ -4,10 +4,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q6 extends s7 {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final int c;
-    public final ZonedDateTime d;
+    public com.github.service.models.response.a a;
+    public String b;
+    public int c;
+    public ZonedDateTime d;
 
     public q6(com.github.service.models.response.a aVar, String str, int i, ZonedDateTime zonedDateTime) {
         this.a = aVar;

@@ -7,16 +7,16 @@ import x.i;
 public final class h extends e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f24214a;
+    public float f24214a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f24215b;
+    public float f24215b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f24216c;
+    public int f24216c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f24217d;
+    public int f24217d;
 
     public h(float f6, float f10, int i, int i10, int i11) {
         f10 = (i11 & 2) != 0 ? 4.0f : f10;

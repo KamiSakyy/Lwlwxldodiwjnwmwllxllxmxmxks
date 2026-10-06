@@ -10,7 +10,7 @@ public final class ProjectFieldType {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ ProjectFieldType[] $VALUES;
     public static final a0 Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final ProjectFieldType ASSIGNEES = new ProjectFieldType("ASSIGNEES", 0, "ASSIGNEES");
     public static final ProjectFieldType LINKED_PULL_REQUESTS = new ProjectFieldType("LINKED_PULL_REQUESTS", 1, "LINKED_PULL_REQUESTS");
     public static final ProjectFieldType REVIEWERS = new ProjectFieldType("REVIEWERS", 2, "REVIEWERS");

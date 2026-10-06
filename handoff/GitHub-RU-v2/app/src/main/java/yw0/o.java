@@ -5,11 +5,11 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
-    public final String a;
-    public final boolean b;
-    public final l c;
-    public final m d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public l c;
+    public m d;
+    public String e;
 
     public o(String str, boolean z, l lVar, m mVar, String str2) {
         this.a = str;

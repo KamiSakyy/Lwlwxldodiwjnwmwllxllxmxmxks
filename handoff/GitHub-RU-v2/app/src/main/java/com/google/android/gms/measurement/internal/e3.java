@@ -14,9 +14,9 @@ import java.util.concurrent.TimeUnit;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e3 implements Runnable {
     public final /* synthetic */ int r = 0;
-    public final long s;
-    public final Object t;
-    public final Object u;
+    public long s;
+    public Object t;
+    public Object u;
 
     public e3(f3 f3Var, b3 b3Var, long j) {
         this.t = b3Var;

@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xo {
-    public final String a;
-    public final int b;
-    public final uo c;
-    public final String d;
+    public String a;
+    public int b;
+    public uo c;
+    public String d;
 
     public xo(String str, int i, uo uoVar, String str2) {
         this.a = str;

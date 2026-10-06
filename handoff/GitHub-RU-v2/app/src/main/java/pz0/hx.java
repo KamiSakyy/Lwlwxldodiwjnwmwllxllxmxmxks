@@ -12,7 +12,7 @@ public final class hx {
     public static final hx w;
     public static final /* synthetic */ hx[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         hx hxVar = new hx("DUPLICATE", 0, "DUPLICATE");

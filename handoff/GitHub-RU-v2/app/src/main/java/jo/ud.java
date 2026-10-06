@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ud {
-    public final rd a;
-    public final vd b;
+    public rd a;
+    public vd b;
 
     public ud(rd rdVar, vd vdVar) {
         this.a = rdVar;

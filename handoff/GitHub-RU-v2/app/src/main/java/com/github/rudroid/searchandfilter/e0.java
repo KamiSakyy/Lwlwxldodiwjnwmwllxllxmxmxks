@@ -4,8 +4,8 @@ package com.github.rudroid.searchandfilter;
 public final class e0 {
     public static final a Companion = new a();
     public static final e0 c = new e0("", b.u);
-    public final String a;
-    public final b b;
+    public String a;
+    public b b;
 
     public static final class a {
         public static e0 a(String str) {

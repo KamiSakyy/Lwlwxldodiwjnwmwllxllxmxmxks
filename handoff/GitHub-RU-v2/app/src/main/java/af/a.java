@@ -10,22 +10,22 @@ import l01.t0;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f880a;
+    public List f880a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final l0 f881b;
+    public l0 f881b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f882c;
+    public List f882c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final t0 f883d;
+    public t0 f883d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Set f884e;
+    public Set f884e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final vb.e f885f;
+    public vb.e f885f;
 
     public a(List list, l0 l0Var, List list2, t0 t0Var, Set set, vb.e eVar) {
         k.g(l0Var, "selectedView");

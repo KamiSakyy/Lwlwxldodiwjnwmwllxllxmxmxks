@@ -2,8 +2,8 @@ package com.github.rudroid.searchandfilter.complexfilter.notificationfilter;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public final com.github.domain.searchandfilter.filters.data.notification.a a;
-    public final boolean b;
+    public com.github.domain.searchandfilter.filters.data.notification.a a;
+    public boolean b;
 
     public k(com.github.domain.searchandfilter.filters.data.notification.a aVar, boolean z) {
         k71.k.g(aVar, "filter");

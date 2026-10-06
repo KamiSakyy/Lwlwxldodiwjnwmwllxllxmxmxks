@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mz {
-    public final String a;
-    public final dz b;
-    public final String c;
+    public String a;
+    public dz b;
+    public String c;
 
     public mz(String str, dz dzVar, String str2) {
         this.a = str;

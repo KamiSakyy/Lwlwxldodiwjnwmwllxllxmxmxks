@@ -4,9 +4,9 @@ import gn0.yv;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 {
-    public final yv a;
-    public final String b;
-    public final String c;
+    public yv a;
+    public String b;
+    public String c;
 
     public h0(yv yvVar, String str, String str2) {
         this.a = yvVar;

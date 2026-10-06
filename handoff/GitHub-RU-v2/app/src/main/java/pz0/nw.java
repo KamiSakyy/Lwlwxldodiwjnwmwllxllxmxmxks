@@ -2,9 +2,9 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nw {
-    public final aa1.b a;
-    public final String b;
-    public final String c;
+    public aa1.b a;
+    public String b;
+    public String c;
 
     public nw(String str, String str2) {
         k71.k.g(str, "issueId");

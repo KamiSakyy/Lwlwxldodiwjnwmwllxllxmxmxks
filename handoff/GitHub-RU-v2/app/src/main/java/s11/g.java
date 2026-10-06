@@ -8,13 +8,13 @@ import z70.m3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements o11.b {
-    public final v61.a a;
-    public final v61.a b;
-    public final v61.a c;
-    public final t d;
-    public final v61.a e;
-    public final v61.a f;
-    public final v61.a g;
+    public v61.a a;
+    public v61.a b;
+    public v61.a c;
+    public t d;
+    public v61.a e;
+    public v61.a f;
+    public v61.a g;
 
     public g(v61.a aVar, v61.a aVar2, v61.a aVar3, t tVar, v61.a aVar4, v61.a aVar5, v61.a aVar6) {
         this.a = aVar;

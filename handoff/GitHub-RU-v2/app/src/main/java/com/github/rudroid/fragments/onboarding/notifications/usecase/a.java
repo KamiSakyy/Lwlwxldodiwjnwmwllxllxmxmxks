@@ -7,19 +7,19 @@ import java.time.ZonedDateTime;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f14189a;
+    public boolean f14189a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f14190b;
+    public boolean f14190b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final ZonedDateTime f14191c;
+    public ZonedDateTime f14191c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ZonedDateTime f14192d;
+    public ZonedDateTime f14192d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final com.github.rudroid.settings.notifications.b f14193e;
+    public com.github.rudroid.settings.notifications.b f14193e;
 
     public a(boolean z10, boolean z11, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, com.github.rudroid.settings.notifications.b bVar) {
         k71.k.g(bVar, "userSettings");

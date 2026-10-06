@@ -13,10 +13,10 @@ public final class UserOrOgProfileScreenEntryPointRoute implements d {
     public static final Companion Companion = new Companion();
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f17330r;
+    public String f17330r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final boolean f17331s;
+    public boolean f17331s;
 
     public static final class Companion {
         public final KSerializer serializer() {

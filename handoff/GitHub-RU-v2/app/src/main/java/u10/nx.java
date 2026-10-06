@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nx {
-    public final int a;
-    public final mx b;
-    public final List c;
+    public int a;
+    public mx b;
+    public List c;
 
     public nx(int i, mx mxVar, List list) {
         this.a = i;

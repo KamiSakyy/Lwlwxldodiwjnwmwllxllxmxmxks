@@ -8,10 +8,10 @@ import x61.r;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f4134a;
+    public List f4134a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f4135b;
+    public int f4135b;
 
     public e(int i, List list) {
         this.f4134a = list;

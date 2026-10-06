@@ -2,7 +2,7 @@ package w61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y implements Comparable {
-    public final short r;
+    public short r;
 
     @Override // java.lang.Comparable
     public final /* synthetic */ int compareTo(Object obj) {

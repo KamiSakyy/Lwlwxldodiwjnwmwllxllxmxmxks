@@ -10,8 +10,8 @@ import jo.mi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q2 implements z01.z, mi0 {
     public static final n2 Companion = new n2();
-    public final com.github.service.wrapper.j r;
-    public final v71.v s;
+    public com.github.service.wrapper.j r;
+    public v71.v s;
     public v71.d1 t;
 
     public q2(com.github.service.wrapper.j jVar, v71.v vVar) {

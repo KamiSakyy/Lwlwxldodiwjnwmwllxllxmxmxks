@@ -6,8 +6,8 @@ import java.io.InputStream;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u implements k0 {
-    public final InputStream r;
-    public final m0 s;
+    public InputStream r;
+    public m0 s;
 
     public u(InputStream inputStream, m0 m0Var) {
         k71.k.g(inputStream, "input");

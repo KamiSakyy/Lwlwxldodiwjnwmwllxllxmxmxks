@@ -2,7 +2,7 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d1 implements aa.m0 {
-    public final f1 a;
+    public f1 a;
 
     public d1(f1 f1Var) {
         this.a = f1Var;

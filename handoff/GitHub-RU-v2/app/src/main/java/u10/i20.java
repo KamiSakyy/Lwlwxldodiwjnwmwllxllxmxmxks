@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i20 {
-    public final f20 a;
-    public final j20 b;
+    public f20 a;
+    public j20 b;
 
     public i20(f20 f20Var, j20 j20Var) {
         this.a = f20Var;

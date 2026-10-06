@@ -6,10 +6,10 @@ import jo.f4;
 public final class g extends d {
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f34078s;
+    public int f34078s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final int f34079t;
+    public int f34079t;
 
     public g(int i, int i10) {
         super(2);

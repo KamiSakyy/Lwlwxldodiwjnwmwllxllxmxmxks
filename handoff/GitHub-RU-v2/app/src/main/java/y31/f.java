@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f extends u31.h {
-    public final RectF r;
+    public RectF r;
 
     public f(u31.n nVar, RectF rectF) {
         super(nVar);

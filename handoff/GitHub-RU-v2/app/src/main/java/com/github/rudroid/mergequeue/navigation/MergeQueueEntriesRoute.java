@@ -14,13 +14,13 @@ import kotlinx.serialization.KSerializer;
 public final class MergeQueueEntriesRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f17096r;
+    public String f17096r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f17097s;
+    public String f17097s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f17098t;
+    public String f17098t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<MergeQueueEntriesRoute> CREATOR = new a();
 

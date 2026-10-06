@@ -19,51 +19,51 @@ public abstract class d {
     }
 
     public static final class b extends d {
-        public final int A;
-        public final int B;
-        public final boolean C;
-        public final boolean D;
-        public final boolean E;
-        public final boolean F;
-        public final String G;
-        public final boolean H;
-        public final boolean I;
-        public final boolean J;
-        public final boolean K;
-        public final String L;
-        public final List M;
-        public final List N;
-        public final String O;
-        public final boolean P;
-        public final boolean Q;
-        public final boolean R;
+        public int A;
+        public int B;
+        public boolean C;
+        public boolean D;
+        public boolean E;
+        public boolean F;
+        public String G;
+        public boolean H;
+        public boolean I;
+        public boolean J;
+        public boolean K;
+        public String L;
+        public List M;
+        public List N;
+        public String O;
+        public boolean P;
+        public boolean Q;
+        public boolean R;
 
         /* renamed from: r, reason: collision with root package name */
-        public final Avatar f17256r;
+        public Avatar f17256r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f17257s;
+        public String f17257s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f17258t;
+        public String f17258t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final String f17259u;
+        public String f17259u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f17260v;
+        public String f17260v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final String f17261w;
+        public String f17261w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final String f17262x;
+        public String f17262x;
 
         /* renamed from: y, reason: collision with root package name */
-        public final o8 f17263y;
+        public o8 f17263y;
 
         /* renamed from: z, reason: collision with root package name */
-        public final String f17264z;
+        public String f17264z;
 
         public b(Avatar avatar, String str, String str2, String str3, String str4, String str5, String str6, o8 o8Var, String str7, int i, int i10, boolean z10, boolean z11, boolean z12, boolean z13, String str8, boolean z14, boolean z15, boolean z16, boolean z17, String str9, List list, List list2, String str10, boolean z18, boolean z19, boolean z20) {
             k71.k.g(str2, "login");
@@ -156,28 +156,28 @@ public abstract class d {
     public static final class C0052d extends d {
 
         /* renamed from: r, reason: collision with root package name */
-        public final p8 f17265r;
+        public p8 f17265r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f17266s;
+        public int f17266s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final int f17267t;
+        public int f17267t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final a f17268u;
+        public a f17268u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final int f17269v;
+        public int f17269v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final int f17270w;
+        public int f17270w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final int f17271x;
+        public int f17271x;
 
         /* renamed from: y, reason: collision with root package name */
-        public final int f17272y;
+        public int f17272y;
 
         /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
         /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -340,13 +340,13 @@ public abstract class d {
     public static final class e extends d {
 
         /* renamed from: r, reason: collision with root package name */
-        public final ArrayList f17280r;
+        public ArrayList f17280r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f17281s;
+        public int f17281s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final int f17282t;
+        public int f17282t;
 
         public e(ArrayList arrayList, int i, int i10) {
             this.f17280r = arrayList;
@@ -382,19 +382,19 @@ public abstract class d {
     public static final class f extends d implements w.a {
 
         /* renamed from: r, reason: collision with root package name */
-        public final zh.c f17283r;
+        public zh.c f17283r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f17284s;
+        public String f17284s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f17285t;
+        public String f17285t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final boolean f17286u;
+        public boolean f17286u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final boolean f17287v;
+        public boolean f17287v;
 
         public f(zh.c cVar, String str, String str2, boolean z10, boolean z11) {
             k71.k.g(str, "login");

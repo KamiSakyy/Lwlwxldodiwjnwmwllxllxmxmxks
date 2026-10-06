@@ -15,6 +15,6 @@ public final class a implements i51.c {
         dVar.a(c, e0Var.b);
         dVar.a(d, e0Var.c);
     }
-    public Object P(Object p1, Object p2) { return null; }
+    public static Object P(Object p1, Object p2) { return null; }
     public Object ordinal() { return null; }
 }

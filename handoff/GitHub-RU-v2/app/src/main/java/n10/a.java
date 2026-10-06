@@ -841,4 +841,13 @@ public final class a implements aa.a {
                 break;
         }
     }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

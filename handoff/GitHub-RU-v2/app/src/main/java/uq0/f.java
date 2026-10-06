@@ -4,9 +4,9 @@ import aa.h0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements h0 {
-    public final boolean a;
-    public final a b;
-    public final e c;
+    public boolean a;
+    public a b;
+    public e c;
 
     public f(boolean z, a aVar, e eVar) {
         this.a = z;

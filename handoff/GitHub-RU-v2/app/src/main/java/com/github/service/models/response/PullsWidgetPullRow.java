@@ -15,12 +15,12 @@ import w61.i;
 public final class PullsWidgetPullRow {
     public static final Companion Companion = new Companion();
     public static final h[] g = {null, null, null, null, null, w.s(i.r, new wm.a(24))};
-    public final String a;
-    public final int b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final CheckStatusState f;
+    public String a;
+    public int b;
+    public String c;
+    public String d;
+    public String e;
+    public CheckStatusState f;
 
     public static final class Companion {
         public final KSerializer serializer() {

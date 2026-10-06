@@ -2,9 +2,9 @@ package xz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public final String a;
-    public final m b;
-    public final f00.b0 c;
+    public String a;
+    public m b;
+    public f00.b0 c;
 
     public n(String str, m mVar, f00.b0 b0Var) {
         this.a = str;

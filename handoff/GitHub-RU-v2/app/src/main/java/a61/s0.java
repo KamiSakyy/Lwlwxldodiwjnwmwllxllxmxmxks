@@ -66,7 +66,7 @@ public final class s0 {
         gVar.a();
         return new b(str, new a(packageName, str2, valueOf, c0Var, d0.a(context)));
     }
-    public Object b(Object p1, Object p2, Object p3) { return null; }
-    public Object m(Object p1, Object p2, Object p3) { return null; }
+    public static Object b(Object p1, Object p2, Object p3) { return null; }
+    public static Object m(Object p1, Object p2, Object p3) { return null; }
     public Object y(Object p1) { return null; }
 }

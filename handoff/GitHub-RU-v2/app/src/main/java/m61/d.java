@@ -5,8 +5,8 @@ import com.google.android.gms.internal.measurement.n4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends k1 {
-    public final com.github.rudroid.c s;
-    public final n4 t;
+    public com.github.rudroid.c s;
+    public n4 t;
 
     public d(com.github.rudroid.c cVar, n4 n4Var) {
         this.s = cVar;

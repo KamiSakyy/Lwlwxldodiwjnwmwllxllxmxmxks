@@ -9,7 +9,7 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t implements w0 {
     public static final p Companion = new p();
-    public final String r;
+    public String r;
 
     public t(String str) {
         k71.k.g(str, "itemId");
@@ -65,5 +65,5 @@ public final class t implements w0 {
         return f1.e.z("FetchProjectV2ItemQuery(itemId=", this.r, ")");
     }
     public Object I(Object p1, Object p2, Object p3) { return null; }
-    public Object x() { return null; }
+    public static Object x() { return null; }
 }

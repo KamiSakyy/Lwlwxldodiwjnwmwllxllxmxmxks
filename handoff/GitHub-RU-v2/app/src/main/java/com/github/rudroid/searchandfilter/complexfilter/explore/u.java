@@ -4,8 +4,8 @@ import com.github.service.models.response.SpokenLanguage;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public final SpokenLanguage a;
-    public final boolean b;
+    public SpokenLanguage a;
+    public boolean b;
 
     public u(SpokenLanguage spokenLanguage, boolean z) {
         k71.k.g(spokenLanguage, "spokenLanguage");

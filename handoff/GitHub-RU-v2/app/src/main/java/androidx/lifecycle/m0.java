@@ -4,10 +4,10 @@ package androidx.lifecycle;
 public final class m0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final h f2905a;
+    public h f2905a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final a71.h f2906b;
+    public a71.h f2906b;
 
     public m0(h hVar, a71.h hVar2) {
         k71.k.g(hVar2, "context");

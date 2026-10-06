@@ -2,10 +2,10 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ee {
-    public final String a;
-    public final aa1.b b;
-    public final aa1.b c;
-    public final String d;
+    public String a;
+    public aa1.b b;
+    public aa1.b c;
+    public String d;
 
     public ee(aa1.b bVar, String str, String str2) {
         k71.k.g(str2, "workflowId");

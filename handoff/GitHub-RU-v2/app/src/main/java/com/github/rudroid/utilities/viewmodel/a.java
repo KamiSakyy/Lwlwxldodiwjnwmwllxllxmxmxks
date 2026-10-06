@@ -5,8 +5,8 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a<T> {
     public static final C0012a Companion = new C0012a();
-    public final boolean a;
-    public final Set b;
+    public boolean a;
+    public Set b;
 
     /* renamed from: com.github.rudroid.utilities.viewmodel.a$a, reason: collision with other inner class name */
     public static final class C0012a {

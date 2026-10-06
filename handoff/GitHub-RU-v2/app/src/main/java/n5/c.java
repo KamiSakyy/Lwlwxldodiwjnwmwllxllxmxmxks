@@ -4,10 +4,10 @@ package n5;
 public final class c extends p0 {
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f29503b;
+    public Object f29503b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f29504c;
+    public int f29504c;
 
     public c(Object obj, int i, int i10) {
         super(i10);
@@ -16,4 +16,5 @@ public final class c extends p0 {
     }
     public Object v(Object p1) { return null; }
     public Object b = null;
+    public Object v(Object p1) { return null; }
 }

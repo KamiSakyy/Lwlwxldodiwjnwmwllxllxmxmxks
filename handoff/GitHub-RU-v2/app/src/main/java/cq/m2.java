@@ -2,8 +2,8 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m2 {
-    public final String a;
-    public final a3 b;
+    public String a;
+    public a3 b;
 
     public m2(String str, a3 a3Var) {
         this.a = str;

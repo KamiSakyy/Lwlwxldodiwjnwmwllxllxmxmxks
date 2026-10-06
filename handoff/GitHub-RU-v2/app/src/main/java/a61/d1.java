@@ -13,7 +13,7 @@ import java.util.Objects;
 public final class d1Shadow extends Handler {
     public boolean a;
     public long b;
-    public final ArrayList c;
+    public ArrayList c;
 
     public d1(Looper looper) {
         super(looper);

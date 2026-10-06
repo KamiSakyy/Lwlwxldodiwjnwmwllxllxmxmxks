@@ -8,14 +8,14 @@ import yp0.c;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final c d;
-    public final gu0.c e;
-    public final gt0.a f;
-    public final mq0.a g;
-    public final at0.a h;
+    public String a;
+    public String b;
+    public String c;
+    public c d;
+    public gu0.c e;
+    public gt0.a f;
+    public mq0.a g;
+    public at0.a h;
 
     public a(String str, String str2, String str3, c cVar, gu0.c cVar2, gt0.a aVar, mq0.a aVar2, at0.a aVar3) {
         this.a = str;

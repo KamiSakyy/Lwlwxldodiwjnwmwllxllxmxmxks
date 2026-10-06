@@ -4,18 +4,18 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j0 extends m2 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final long d;
-    public final Long e;
-    public final boolean f;
-    public final u1 g;
-    public final l2 h;
-    public final k2 i;
-    public final v1 j;
-    public final List k;
-    public final int l;
+    public String a;
+    public String b;
+    public String c;
+    public long d;
+    public Long e;
+    public boolean f;
+    public u1 g;
+    public l2 h;
+    public k2 i;
+    public v1 j;
+    public List k;
+    public int l;
 
     public j0(String str, String str2, String str3, long j, Long l, boolean z, u1 u1Var, l2 l2Var, k2 k2Var, v1 v1Var, List list, int i) {
         this.a = str;

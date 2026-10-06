@@ -2,8 +2,8 @@ package gk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public final Long a;
-    public final Long b;
+    public Long a;
+    public Long b;
 
     public k(Long l, Long l2) {
         this.a = l;

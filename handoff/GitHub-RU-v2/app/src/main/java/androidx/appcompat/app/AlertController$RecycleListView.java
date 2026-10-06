@@ -10,10 +10,10 @@ import j.a;
 public class AlertController$RecycleListView extends ListView {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f898r;
+    public int f898r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f899s;
+    public int f899s;
 
     public AlertController$RecycleListView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);

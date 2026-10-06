@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zp {
-    public final String a;
-    public final vp b;
-    public final yp c;
-    public final String d;
+    public String a;
+    public vp b;
+    public yp c;
+    public String d;
 
     public zp(String str, vp vpVar, yp ypVar, String str2) {
         this.a = str;

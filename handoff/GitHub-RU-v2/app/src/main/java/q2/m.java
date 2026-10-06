@@ -10,19 +10,19 @@ import l7.x1;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f30873a;
+    public Object f30873a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final h4 f30874b;
+    public h4 f30874b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f30875c;
+    public int f30875c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f30876d;
+    public int f30876d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f30877e;
+    public int f30877e;
 
     /* renamed from: f, reason: collision with root package name */
     public int f30878f;

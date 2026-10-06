@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a00 implements aaShadow.w0 {
     public static final tz Companion = new tz();
-    public final String r;
-    public final aa1.b s;
-    public final aa1.b t;
+    public String r;
+    public aa1.b s;
+    public aa1.b t;
 
     public a00(String str, aa1.b bVar) {
         k71.k.g(str, "login");

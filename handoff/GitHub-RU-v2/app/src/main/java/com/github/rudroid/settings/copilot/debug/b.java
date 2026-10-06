@@ -79,7 +79,7 @@ public final /* synthetic */ class b implements j71.e {
         }
         return a0Var;
     }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object w(Object p1, Object p2) { return null; }
-    public Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object w(Object p1, Object p2) { return null; }
+    public static Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

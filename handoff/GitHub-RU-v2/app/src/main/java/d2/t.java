@@ -33,7 +33,7 @@ public final class t {
     public static final /* synthetic */ int l = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f21390a;
+    public long f21390a;
 
     static {
         a0.d(4282664004L);
@@ -262,9 +262,9 @@ public final class t {
     }
 
     public static Object i;
-    public Object E(Object p1, Object p2) { return null; }
-    public Object I(Object p1, Object p2, Object p3) { return null; }
-    public Object L(Object p1) { return null; }
-    public Object w(Object p1, Object p2, Object p3) { return null; }
+    public static Object E(Object p1, Object p2) { return null; }
+    public static Object I(Object p1, Object p2, Object p3) { return null; }
+    public static Object L(Object p1) { return null; }
+    public static Object w(Object p1, Object p2, Object p3) { return null; }
     public Object a = null;
 }

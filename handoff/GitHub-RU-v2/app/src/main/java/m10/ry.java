@@ -9,7 +9,7 @@ public final class ry {
     public static final ry t;
     public static final /* synthetic */ ry[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         ry ryVar = new ry("ALLOWED", 0, "ALLOWED");

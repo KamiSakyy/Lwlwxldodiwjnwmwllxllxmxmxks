@@ -106,4 +106,5 @@ public final class c implements Application.ActivityLifecycleCallbacks, Componen
     }
     public Object u(Object p1, Object p2) { return null; }
     public static final Object s = null;
+    public Object u(Object p1, int p2) { return null; }
 }

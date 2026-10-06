@@ -4,7 +4,7 @@ package androidx.compose.ui.layout;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j71.e f2017a;
+    public j71.e f2017a;
 
     /* renamed from: b, reason: collision with root package name */
     public final /* synthetic */ int f2018b;

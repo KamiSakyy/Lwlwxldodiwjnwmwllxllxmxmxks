@@ -13,10 +13,10 @@ import x61.v;
 /* loaded from: /home/user/work/p/classes5.dex */
 public class c implements d {
     public static final c e = new c(new int[0], new char[0], new boolean[0], 0);
-    public final int[] a;
-    public final char[] b;
-    public final boolean[] c;
-    public final int d;
+    public int[] a;
+    public char[] b;
+    public boolean[] c;
+    public int d;
 
     public c(int[] iArr, char[] cArr, boolean[] zArr, int i) {
         this.a = iArr;

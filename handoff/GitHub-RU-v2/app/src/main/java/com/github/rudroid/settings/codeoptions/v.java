@@ -6,12 +6,12 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements f {
-    public final boolean a;
-    public final boolean b;
-    public final int c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
+    public boolean a;
+    public boolean b;
+    public int c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
 
     public v(boolean z, boolean z2, int i, boolean z3, boolean z4, boolean z5) {
         this.a = z;

@@ -10,7 +10,7 @@ public final class d {
     public static final d s;
     public static final d t;
     public static final /* synthetic */ d[] u;
-    public final int r;
+    public int r;
 
     static {
         d dVar = new d(0, "RESET", 0);

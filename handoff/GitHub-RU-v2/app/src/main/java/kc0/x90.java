@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x90 implements aaShadow.n0 {
     public static final t90 Companion = new t90();
-    public final gn0.cz r;
+    public gn0.cz r;
 
     public x90(gn0.cz czVar) {
         this.r = czVar;

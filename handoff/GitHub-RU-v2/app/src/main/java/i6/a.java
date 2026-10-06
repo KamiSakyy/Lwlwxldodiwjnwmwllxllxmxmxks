@@ -4,7 +4,7 @@ package i6;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f26020a;
+    public int f26020a;
 
     public /* synthetic */ a(int i) {
         this.f26020a = i;

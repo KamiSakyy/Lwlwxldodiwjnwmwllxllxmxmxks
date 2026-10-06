@@ -5,17 +5,17 @@ import pz0.rm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 {
-    public final int a;
-    public final int b;
-    public final q0 c;
-    public final m0 d;
-    public final List e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final rm i;
-    public final String j;
-    public final String k;
+    public int a;
+    public int b;
+    public q0 c;
+    public m0 d;
+    public List e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public rm i;
+    public String j;
+    public String k;
 
     public p0(int i, int i2, q0 q0Var, m0 m0Var, List list, boolean z, boolean z2, boolean z3, rm rmVar, String str, String str2) {
         this.a = i;

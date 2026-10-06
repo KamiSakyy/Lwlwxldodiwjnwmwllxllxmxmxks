@@ -6,10 +6,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rShadow implements Thread.UncaughtExceptionHandler {
-    public final s21.a a;
-    public final d51.d b;
-    public final Thread.UncaughtExceptionHandler c;
-    public final s41.b d;
+    public s21.a a;
+    public d51.d b;
+    public Thread.UncaughtExceptionHandler c;
+    public s41.b d;
     public final AtomicBoolean e = new AtomicBoolean(false);
 
     public r(s21.a aVar, d51.d dVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, s41.b bVar) {

@@ -2,10 +2,10 @@ package er0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u {
-    public final String a;
-    public final s b;
-    public final t c;
-    public final String d;
+    public String a;
+    public s b;
+    public t c;
+    public String d;
 
     public u(String str, s sVar, t tVar, String str2) {
         this.a = str;

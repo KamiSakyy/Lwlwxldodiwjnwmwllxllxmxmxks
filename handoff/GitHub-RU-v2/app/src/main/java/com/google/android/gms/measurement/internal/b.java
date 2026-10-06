@@ -11,7 +11,7 @@ import java.util.Iterator;
 public final class b extends c {
     public final /* synthetic */ int g;
     public final /* synthetic */ d h;
-    public final g5 i;
+    public g5 i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ b(d dVar, String str, int i, g5 g5Var, int i2) {

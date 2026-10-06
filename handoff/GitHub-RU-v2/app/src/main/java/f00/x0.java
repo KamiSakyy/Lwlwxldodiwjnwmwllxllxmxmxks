@@ -4,15 +4,15 @@ import m10.ox;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x0 implements aa.h0 {
-    public final String a;
-    public final Integer b;
-    public final String c;
-    public final ox d;
-    public final int e;
-    public final s0 f;
-    public final w0 g;
-    public final r0 h;
-    public final String i;
+    public String a;
+    public Integer b;
+    public String c;
+    public ox d;
+    public int e;
+    public s0 f;
+    public w0 g;
+    public r0 h;
+    public String i;
 
     public x0(String str, Integer num, String str2, ox oxVar, int i, s0 s0Var, w0 w0Var, r0 r0Var, String str3) {
         this.a = str;

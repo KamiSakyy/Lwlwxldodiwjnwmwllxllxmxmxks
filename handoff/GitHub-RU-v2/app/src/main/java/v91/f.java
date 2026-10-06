@@ -6,7 +6,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends u91.b {
-    public final int e;
+    public int e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(t91.d dVar, v vVar, int i) {

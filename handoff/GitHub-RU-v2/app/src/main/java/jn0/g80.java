@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g80 {
-    public final String a;
-    public final String b;
-    public final l80 c;
-    public final er0.i d;
+    public String a;
+    public String b;
+    public l80 c;
+    public er0.i d;
 
     public g80(String str, String str2, l80 l80Var, er0.i iVar) {
         this.a = str;

@@ -14,7 +14,7 @@ public final class c {
     public static final ThreadLocal i = new ThreadLocal();
 
     /* renamed from: e, reason: collision with root package name */
-    public final x1 f32067e;
+    public x1 f32067e;
 
     /* renamed from: h, reason: collision with root package name */
     public b f32070h;

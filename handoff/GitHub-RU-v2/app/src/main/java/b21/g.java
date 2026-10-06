@@ -10,4 +10,11 @@ public abstract class g implements DialogInterface.OnCancelListener {
     public g(Object... a) {
     }
     public Object x = null;
+    public Object g(Object p1, int p2) { return null; }
+    public Object setCancelable(boolean p1) { return null; }
+    public Object setCanceledOnTouchOutside(boolean p1) { return null; }
+    public Object setOnCancelListener(Object p1) { return null; }
+    public Object setOnDismissListener(Object p1) { return null; }
+    public Object setOnKeyListener(Object p1) { return null; }
+    public Object show() { return null; }
 }

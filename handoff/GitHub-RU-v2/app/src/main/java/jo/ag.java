@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ag {
-    public final String a;
-    public final zf b;
-    public final String c;
+    public String a;
+    public zf b;
+    public String c;
 
     public ag(String str, zf zfVar, String str2) {
         this.a = str;

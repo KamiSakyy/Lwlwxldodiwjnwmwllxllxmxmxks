@@ -6,7 +6,7 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final oa.e f12402a;
+    public oa.e f12402a;
 
     public a(oa.e eVar, com.github.rudroid.featureflags.preferences.b bVar) {
         k.g(eVar, "cachedUserDataStorePreferencesFactory");

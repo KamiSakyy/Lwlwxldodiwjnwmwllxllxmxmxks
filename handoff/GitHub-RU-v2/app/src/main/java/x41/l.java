@@ -13,12 +13,12 @@ import java.util.logging.Logger;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements Closeable {
     public static final Logger x = Logger.getLogger(l.class.getName());
-    public final RandomAccessFile r;
+    public RandomAccessFile r;
     public int s;
     public int t;
     public i u;
     public i v;
-    public final byte[] w;
+    public byte[] w;
 
     public l(File file) {
         byte[] bArr = new byte[16];

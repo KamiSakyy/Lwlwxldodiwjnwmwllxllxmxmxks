@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y20 {
-    public final String a;
-    public final s20 b;
+    public String a;
+    public s20 b;
 
     public y20(String str, s20 s20Var) {
         k71.k.g(str, "__typename");

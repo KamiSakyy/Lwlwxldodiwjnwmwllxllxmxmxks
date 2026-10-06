@@ -4,5 +4,5 @@ package d2;
 public interface p0 {
     a0 a(long j10, s3.m mVar, s3.c cVar);
 
-    public Object b(Object p1, Object p2) { return null; }
+    public s0 b(Object p1, Object p2) { return null; }
 }

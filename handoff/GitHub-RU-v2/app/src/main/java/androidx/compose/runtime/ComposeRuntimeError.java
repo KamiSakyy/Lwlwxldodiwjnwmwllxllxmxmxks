@@ -4,7 +4,7 @@ package androidx.compose.runtime;
 public final class ComposeRuntimeError extends IllegalStateException {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f1547r;
+    public String f1547r;
 
     public ComposeRuntimeError(String str) {
         this.f1547r = str;

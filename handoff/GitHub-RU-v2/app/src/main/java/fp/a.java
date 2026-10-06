@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final List a;
-    public final on.g b;
-    public final int c;
+    public List a;
+    public on.g b;
+    public int c;
 
     public a(List list, on.g gVar, int i) {
         k71.k.g(gVar, "order");
@@ -39,5 +39,5 @@ public final class a {
         sb.append(", pageSize=");
         return a0.s0.l(sb, this.c, ")");
     }
-    public Object m(Object p1) { return null; }
+    public static Object m(Object p1) { return null; }
 }

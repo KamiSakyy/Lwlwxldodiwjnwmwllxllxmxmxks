@@ -4,4 +4,5 @@ package com.github.rudroid.settings.privacy;
 public interface c {
     void P(PrivacyAnalyticsActivity privacyAnalyticsActivity);
     public Object v(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

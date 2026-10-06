@@ -19,14 +19,14 @@ public abstract class b<T> extends k1 implements f0, x3 {
     public static final /* synthetic */ r71.e[] B;
     public static final a Companion;
     public q1 A;
-    public final com.github.rudroid.activities.util.a s;
-    public final h0 t;
-    public final Object u;
-    public final p0 v;
+    public com.github.rudroid.activities.util.a s;
+    public h0 t;
+    public Object u;
+    public p0 v;
     public x01.i w;
-    public final ArrayList x;
-    public final j y;
-    public final y1 z;
+    public ArrayList x;
+    public j y;
+    public y1 z;
 
     public static final class a {
         public static Bundle a(Parcelable[] parcelableArr) {

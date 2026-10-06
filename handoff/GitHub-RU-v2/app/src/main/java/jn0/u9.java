@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u9 {
-    public final String a;
-    public final uq0.f b;
+    public String a;
+    public uq0.f b;
 
     public u9(String str, uq0.f fVar) {
         this.a = str;

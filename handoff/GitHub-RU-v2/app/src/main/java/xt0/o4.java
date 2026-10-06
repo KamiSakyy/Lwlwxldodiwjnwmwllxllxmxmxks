@@ -2,10 +2,10 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o4 {
-    public final t5 a;
-    public final k4 b;
-    public final String c;
-    public final String d;
+    public t5 a;
+    public k4 b;
+    public String c;
+    public String d;
 
     public o4(t5 t5Var, k4 k4Var, String str, String str2) {
         this.a = t5Var;

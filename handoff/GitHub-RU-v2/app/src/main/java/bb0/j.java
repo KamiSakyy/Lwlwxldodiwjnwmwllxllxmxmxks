@@ -23,13 +23,13 @@ import yz0.n5;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements n5 {
     public static final Parcelable.Creator<j> CREATOR = new a21.g(11);
-    public final ArrayList r;
-    public final ArrayList s;
-    public final i5 t;
-    public final boolean u;
-    public final boolean v;
-    public final String w;
-    public final ArrayList x;
+    public ArrayList r;
+    public ArrayList s;
+    public i5 t;
+    public boolean u;
+    public boolean v;
+    public String w;
+    public ArrayList x;
 
     public j(ArrayList arrayList, ArrayList arrayList2, i5 i5Var, boolean z, boolean z2, String str, ArrayList arrayList3) {
         k71.k.g(str, "repoId");

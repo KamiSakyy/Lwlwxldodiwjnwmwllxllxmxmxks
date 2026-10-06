@@ -2,8 +2,8 @@ package c60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final String a;
-    public final c b;
+    public String a;
+    public c b;
 
     public h(String str, c cVar) {
         this.a = str;

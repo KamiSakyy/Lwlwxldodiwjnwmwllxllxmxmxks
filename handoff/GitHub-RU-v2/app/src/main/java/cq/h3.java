@@ -2,9 +2,9 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h3 {
-    public final String a;
-    public final String b;
-    public final c4 c;
+    public String a;
+    public String b;
+    public c4 c;
 
     public h3(String str, String str2, c4 c4Var) {
         this.a = str;

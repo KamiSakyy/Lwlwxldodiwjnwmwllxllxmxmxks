@@ -6,10 +6,10 @@ import android.graphics.Rect;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final n8.b f30434a;
+    public n8.b f30434a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f30435b;
+    public float f30435b;
 
     public i(n8.b bVar, float f6) {
         this.f30434a = bVar;

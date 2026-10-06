@@ -4,9 +4,9 @@ import com.github.domain.shortcuts.model.StoredShortcutModel;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public final oa.j a;
-    public final StoredShortcutModel b;
-    public final float c;
+    public oa.j a;
+    public StoredShortcutModel b;
+    public float c;
 
     public r(oa.j jVar, StoredShortcutModel storedShortcutModel, float f) {
         k71.k.g(jVar, "user");
@@ -35,4 +35,5 @@ public final class r {
     public final String toString() {
         return "ShortcutWidgetConfiguration(user=" + this.a + ", shortcut=" + this.b + ", opacity=" + this.c + ")";
     }
+    public Object b(Object p1, Object p2) { return null; }
 }

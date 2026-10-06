@@ -38,4 +38,5 @@ public final class b1 extends y implements p0 {
         public m() {
         }
     }
+    public Object b(Object p1, Object p2) { return null; }
 }

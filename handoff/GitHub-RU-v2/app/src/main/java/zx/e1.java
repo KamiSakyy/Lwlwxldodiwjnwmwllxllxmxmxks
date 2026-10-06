@@ -2,12 +2,12 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e1 {
-    public final String a;
-    public final f1 b;
-    public final h1 c;
-    public final i1 d;
-    public final g1 e;
-    public final qx.c1 f;
+    public String a;
+    public f1 b;
+    public h1 c;
+    public i1 d;
+    public g1 e;
+    public qx.c1 f;
 
     public e1(String str, f1 f1Var, h1 h1Var, i1 i1Var, g1 g1Var, qx.c1 c1Var) {
         k71.k.g(str, "__typename");

@@ -2,10 +2,10 @@ package com.github.rudroid.viewmodels.issuesorpullrequests;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c6 {
-    public final boolean a;
-    public final he.q b;
-    public final String c;
-    public final String d;
+    public boolean a;
+    public he.q b;
+    public String c;
+    public String d;
 
     public c6(boolean z, he.q qVar, String str, String str2) {
         this.a = z;

@@ -12,8 +12,8 @@ public final class a extends Thread {
     public static final /* synthetic */ AtomicIntegerFieldUpdater z = AtomicIntegerFieldUpdater.newUpdater(a.class, "workerCtl$volatile");
     private volatile int indexInArray;
     private volatile Object nextParkedWorker;
-    public final m r;
-    public final w s;
+    public m r;
+    public w s;
     public b t;
     public long u;
     public long v;

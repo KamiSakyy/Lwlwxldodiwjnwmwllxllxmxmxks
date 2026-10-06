@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t20 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final m20 d;
-    public final s20 e;
+    public String a;
+    public String b;
+    public String c;
+    public m20 d;
+    public s20 e;
 
     public t20(String str, String str2, String str3, m20 m20Var, s20 s20Var) {
         this.a = str;

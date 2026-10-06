@@ -5,12 +5,12 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 implements aa.h0 {
-    public final String a;
-    public final bf b;
-    public final df c;
-    public final boolean d;
-    public final o0 e;
-    public final String f;
+    public String a;
+    public bf b;
+    public df c;
+    public boolean d;
+    public o0 e;
+    public String f;
 
     public p0(String str, bf bfVar, df dfVar, boolean z, o0 o0Var, String str2) {
         this.a = str;

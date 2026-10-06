@@ -8,10 +8,10 @@ import s3.q;
 public final class f implements p2.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public final f1 f34301r;
+    public f1 f34301r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f34302s;
+    public int f34302s;
 
     public f(f1 f1Var, int i) {
         k.g(f1Var, "inFling");

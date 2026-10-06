@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class of implements aaShadow.v0 {
-    public final sf a;
-    public final String b;
-    public final String c;
+    public sf a;
+    public String b;
+    public String c;
 
     public of(sf sfVar, String str, String str2) {
         this.a = sfVar;

@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f40 {
-    public final String a;
-    public final cs0.j b;
+    public String a;
+    public cs0.j b;
 
     public f40(String str, cs0.j jVar) {
         this.a = str;

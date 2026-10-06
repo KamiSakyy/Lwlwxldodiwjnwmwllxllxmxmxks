@@ -7,10 +7,10 @@ import x61.v;
 public final class f extends v {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f30999r;
+    public int f30999r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f31000s;
+    public int f31000s;
 
     /* renamed from: t, reason: collision with root package name */
     public boolean f31001t;

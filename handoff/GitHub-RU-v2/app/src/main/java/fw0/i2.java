@@ -2,8 +2,8 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i2 {
-    public final boolean a;
-    public final boolean b;
+    public boolean a;
+    public boolean b;
 
     public i2(boolean z, boolean z2) {
         this.a = z;

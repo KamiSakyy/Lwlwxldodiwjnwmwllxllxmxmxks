@@ -2,8 +2,8 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 {
-    public final v1 a;
-    public final q b;
+    public v1 a;
+    public q b;
 
     public k1(v1 v1Var, q qVar) {
         this.a = v1Var;

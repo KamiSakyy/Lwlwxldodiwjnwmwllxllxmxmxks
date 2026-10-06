@@ -10,11 +10,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public final String a;
-    public final String b;
-    public final ZonedDateTime c;
-    public final String d;
-    public final String e;
+    public String a;
+    public String b;
+    public ZonedDateTime c;
+    public String d;
+    public String e;
 
     public a(String str, String str2, String str3, String str4, ZonedDateTime zonedDateTime) {
         this.a = str;

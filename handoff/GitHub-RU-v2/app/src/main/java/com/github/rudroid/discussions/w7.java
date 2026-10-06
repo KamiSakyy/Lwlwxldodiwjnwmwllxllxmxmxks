@@ -9,43 +9,43 @@ public final class w7 {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f11984a;
+    public String f11984a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f11985b;
+    public int f11985b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f11986c;
+    public String f11986c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f11987d;
+    public String f11987d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final String f11988e;
+    public String f11988e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final String f11989f;
+    public String f11989f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final String f11990g;
+    public String f11990g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final int f11991h;
-    public final ZonedDateTime i;
+    public int f11991h;
+    public ZonedDateTime i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final boolean f11992j;
+    public boolean f11992j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final jk.b f11993k;
-    public final yz0.b8 l;
-    public final Object m;
+    public jk.b f11993k;
+    public yz0.b8 l;
+    public Object m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final boolean f11994n;
+    public boolean f11994n;
 
     /* renamed from: o, reason: collision with root package name */
-    public final b01.f f11995o;
+    public b01.f f11995o;
 
     public static final class a {
         /* JADX WARN: Type inference failed for: r15v0, types: [java.lang.Object, java.util.List] */

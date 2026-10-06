@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vd {
-    public final String a;
-    public final int b;
-    public final int c;
-    public final String d;
-    public final uu0.k3 e;
+    public String a;
+    public int b;
+    public int c;
+    public String d;
+    public uu0.k3 e;
 
     public vd(String str, int i, int i2, String str2, uu0.k3 k3Var) {
         this.a = str;

@@ -13,9 +13,9 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class s {
-    public final p0 a;
-    public final q81.d b;
-    public final n c;
+    public p0 a;
+    public q81.d b;
+    public n c;
 
     public s(p0 p0Var, q81.d dVar, n nVar) {
         this.a = p0Var;

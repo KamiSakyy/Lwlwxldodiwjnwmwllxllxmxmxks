@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i9 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final e9 d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public e9 d;
+    public String e;
 
     public i9(String str, boolean z, boolean z2, e9 e9Var, String str2) {
         this.a = str;

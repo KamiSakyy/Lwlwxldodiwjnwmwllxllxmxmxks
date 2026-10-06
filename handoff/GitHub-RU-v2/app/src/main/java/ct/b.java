@@ -4,11 +4,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final a a;
-    public final String b;
-    public final boolean c;
-    public final String d;
-    public final String e;
+    public a a;
+    public String b;
+    public boolean c;
+    public String d;
+    public String e;
 
     public b(a aVar, String str, boolean z, String str2, String str3) {
         this.a = aVar;

@@ -6,8 +6,8 @@ import java.util.RandomAccess;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z extends e implements RandomAccess {
-    public final Object[] r;
-    public final int s;
+    public Object[] r;
+    public int s;
     public int t;
     public int u;
 

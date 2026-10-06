@@ -459,4 +459,35 @@ public final class s {
     public Object r() { return null; }
     public Object S = null;
     public Object T = null;
+    public Object S(int p1, boolean p2) { return null; }
+    public Object c(float p1) { return null; }
+    public Object c0(int p1) { return null; }
+    public Object d(int p1) { return null; }
+    public Object e(long p1) { return null; }
+    public Object e0(int p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object g(boolean p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object j(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(boolean p1) { return null; }
 }

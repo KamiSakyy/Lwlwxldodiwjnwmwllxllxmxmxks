@@ -11,7 +11,7 @@ public final class m2 {
     public static final m2 v;
     public static final m2 w;
     public static final /* synthetic */ m2[] x;
-    public final String r;
+    public String r;
 
     static {
         m2 m2Var = new m2("INDEFINITE", 0, "INDEFINITE");

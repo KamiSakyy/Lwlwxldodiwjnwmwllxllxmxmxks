@@ -6,10 +6,10 @@ import java.util.NoSuchElementException;
 public final class g extends a {
 
     /* renamed from: t, reason: collision with root package name */
-    public final Object[] f29387t;
+    public Object[] f29387t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final j f29388u;
+    public j f29388u;
 
     public g(int i, int i10, int i11, Object[] objArr, Object[] objArr2) {
         super(i, i10);

@@ -4,7 +4,7 @@ package aa;
 public final class u0 extends aa1.b {
 
     /* renamed from: d, reason: collision with root package name */
-    public final Object f683d;
+    public Object f683d;
 
     public u0(Object obj) {
         this.f683d = obj;

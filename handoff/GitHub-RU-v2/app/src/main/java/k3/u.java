@@ -4,10 +4,10 @@ package k3;
 public final class u extends a0 {
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f27700u;
+    public String f27700u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f27701v;
+    public String f27701v;
 
     public u(String str, String str2) {
         this.f27700u = str;

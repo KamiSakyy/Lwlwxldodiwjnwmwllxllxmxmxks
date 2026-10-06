@@ -4,7 +4,7 @@ package v0;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f32321a;
+    public int f32321a;
 
     public a(int i) {
         this.f32321a = i;

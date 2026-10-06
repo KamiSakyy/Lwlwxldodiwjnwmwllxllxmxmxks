@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e80 {
-    public final String a;
-    public final pz0.ig b;
-    public final ks0.e c;
+    public String a;
+    public pz0.ig b;
+    public ks0.e c;
 
     public e80(String str, pz0.ig igVar, ks0.e eVar) {
         this.a = str;

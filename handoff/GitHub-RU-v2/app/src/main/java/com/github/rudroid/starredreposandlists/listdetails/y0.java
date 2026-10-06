@@ -4,10 +4,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y0 {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final String c;
-    public final int d;
+    public com.github.service.models.response.a a;
+    public String b;
+    public String c;
+    public int d;
 
     public y0(com.github.service.models.response.a aVar, String str, String str2, int i) {
         k71.k.g(str, "listName");

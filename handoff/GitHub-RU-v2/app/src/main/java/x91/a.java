@@ -7,12 +7,12 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
-    public final h0 a;
-    public final int b;
-    public final int c;
+    public h0 a;
+    public int b;
+    public int c;
     public boolean d;
     public boolean e;
-    public final char f;
+    public char f;
     public int g;
 
     public a(h0 h0Var, int i, int i2, boolean z, boolean z2, char c) {

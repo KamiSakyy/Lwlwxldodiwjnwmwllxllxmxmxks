@@ -12,12 +12,12 @@ import java.util.regex.Pattern;
 public final class o0 {
     public static final Pattern y = Pattern.compile("\\{([a-zA-Z][a-zA-Z0-9_-]*)\\}");
     public static final Pattern z = Pattern.compile("[a-zA-Z][a-zA-Z0-9_-]*");
-    public final l1 a;
-    public final Class b;
-    public final Method c;
-    public final Annotation[] d;
-    public final Annotation[][] e;
-    public final Type[] f;
+    public l1 a;
+    public Class b;
+    public Method c;
+    public Annotation[] d;
+    public Annotation[][] e;
+    public Type[] f;
     public boolean g;
     public boolean h;
     public boolean i;

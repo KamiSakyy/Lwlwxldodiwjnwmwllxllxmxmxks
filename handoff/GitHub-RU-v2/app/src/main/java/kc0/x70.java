@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x70 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final gn0.bm e;
-    public final String f;
-    public final List g;
-    public final gn0.jr h;
-    public final String i;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public gn0.bm e;
+    public String f;
+    public List g;
+    public gn0.jr h;
+    public String i;
 
     public x70(String str, boolean z, boolean z2, boolean z3, gn0.bm bmVar, String str2, List list, gn0.jr jrVar, String str3) {
         this.a = str;

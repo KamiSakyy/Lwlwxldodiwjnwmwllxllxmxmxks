@@ -790,4 +790,12 @@ public final class a implements aa.a {
                 break;
         }
     }
+    public Object d(Object p1) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

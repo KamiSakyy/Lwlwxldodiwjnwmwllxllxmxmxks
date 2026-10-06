@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class eg {
-    public final String a;
-    public final String b;
-    public final kg c;
-    public final i50.h d;
+    public String a;
+    public String b;
+    public kg c;
+    public i50.h d;
 
     public eg(String str, String str2, kg kgVar, i50.h hVar) {
         this.a = str;

@@ -2,7 +2,7 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final i a;
+    public i a;
 
     public f(i iVar) {
         this.a = iVar;

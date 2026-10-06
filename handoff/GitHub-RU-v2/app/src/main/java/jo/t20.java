@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t20 implements aaShadow.v0 {
-    public final u20 a;
-    public final String b;
-    public final String c;
+    public u20 a;
+    public String b;
+    public String c;
 
     public t20(u20 u20Var, String str, String str2) {
         this.a = u20Var;

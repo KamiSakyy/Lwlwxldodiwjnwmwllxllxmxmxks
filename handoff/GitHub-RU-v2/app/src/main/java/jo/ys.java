@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ys implements aaShadow.w0 {
     public static final ts Companion = new ts();
-    public final aa1.b r;
-    public final aa1.b s;
-    public final aa1.b t;
+    public aa1.b r;
+    public aa1.b s;
+    public aa1.b t;
 
     public ys(aa1.b bVar) {
         aa.t0 t0Var = aa.t0.d;

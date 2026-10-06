@@ -13,10 +13,10 @@ import android.graphics.drawable.GradientDrawable;
 public final class k5 extends GradientDrawable {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f11443a;
+    public float f11443a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Paint f11444b;
+    public Paint f11444b;
 
     public k5(Bitmap bitmap, int i, int i10, float f6) {
         super(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{i, i10});

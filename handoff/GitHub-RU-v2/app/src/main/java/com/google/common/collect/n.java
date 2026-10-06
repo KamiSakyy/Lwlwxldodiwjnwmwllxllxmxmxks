@@ -6,11 +6,11 @@ import com.google.android.gms.internal.play_billing.b0;
 public final class n extends f {
     public static final n A;
     public static final Object[] z;
-    public final transient Object[] u;
-    public final transient int v;
-    public final transient Object[] w;
-    public final transient int x;
-    public final transient int y;
+    public transient Object[] u;
+    public transient int v;
+    public transient Object[] w;
+    public transient int x;
+    public transient int y;
 
     static {
         Object[] objArr = new Object[0];

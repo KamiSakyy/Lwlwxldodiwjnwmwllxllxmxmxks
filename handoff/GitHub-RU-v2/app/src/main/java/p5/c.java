@@ -16,16 +16,16 @@ import sy.y;
 public class c implements j0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final o f30367a;
+    public o f30367a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final a0 f30368b;
+    public a0 f30368b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final kk.a f30369c;
+    public kk.a f30369c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final a f30370d;
+    public a f30370d;
 
     public c(o oVar, a0 a0Var, kk.a aVar) {
         k.g(oVar, "fileSystem");

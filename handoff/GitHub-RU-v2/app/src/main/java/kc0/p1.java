@@ -4,16 +4,16 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p1 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final o1 d;
-    public final boolean e;
-    public final boolean f;
-    public final m1 g;
-    public final List h;
-    public final e1 i;
-    public final yi0.a j;
+    public String a;
+    public String b;
+    public boolean c;
+    public o1 d;
+    public boolean e;
+    public boolean f;
+    public m1 g;
+    public List h;
+    public e1 i;
+    public yi0.a j;
 
     public p1(String str, String str2, boolean z, o1 o1Var, boolean z2, boolean z3, m1 m1Var, List list, e1 e1Var, yi0.a aVar) {
         this.a = str;

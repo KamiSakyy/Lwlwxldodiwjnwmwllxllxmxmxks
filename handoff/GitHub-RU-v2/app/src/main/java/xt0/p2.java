@@ -7,30 +7,30 @@ import pz0.ot;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final String d;
-    public final String e;
-    public final int f;
-    public final ZonedDateTime g;
-    public final g2 h;
-    public final h2 i;
-    public final Boolean j;
-    public final Integer k;
-    public final gu l;
-    public final n2 m;
-    public final String n;
-    public final f40 o;
-    public final ot p;
-    public final c2 q;
-    public final f2 r;
-    public final d2 s;
-    public final boolean t;
-    public final j2 u;
-    public final i2 v;
-    public final cs0.j w;
-    public final z7 x;
+    public String a;
+    public String b;
+    public boolean c;
+    public String d;
+    public String e;
+    public int f;
+    public ZonedDateTime g;
+    public g2 h;
+    public h2 i;
+    public Boolean j;
+    public Integer k;
+    public gu l;
+    public n2 m;
+    public String n;
+    public f40 o;
+    public ot p;
+    public c2 q;
+    public f2 r;
+    public d2 s;
+    public boolean t;
+    public j2 u;
+    public i2 v;
+    public cs0.j w;
+    public z7 x;
 
     public p2(String str, String str2, boolean z, String str3, String str4, int i, ZonedDateTime zonedDateTime, g2 g2Var, h2 h2Var, Boolean bool, Integer num, gu guVar, n2 n2Var, String str5, f40 f40Var, ot otVar, c2 c2Var, f2 f2Var, d2 d2Var, boolean z2, j2 j2Var, i2 i2Var, cs0.j jVar, z7 z7Var) {
         this.a = str;

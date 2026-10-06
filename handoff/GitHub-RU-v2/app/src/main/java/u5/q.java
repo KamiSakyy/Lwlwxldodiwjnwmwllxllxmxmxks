@@ -6,7 +6,7 @@ import android.util.SparseArray;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public final SparseArray f32240a;
+    public SparseArray f32240a;
 
     /* renamed from: b, reason: collision with root package name */
     public t f32241b;

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lx {
-    public final String a;
-    public final ix b;
-    public final String c;
+    public String a;
+    public ix b;
+    public String c;
 
     public lx(String str, ix ixVar, String str2) {
         this.a = str;

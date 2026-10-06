@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yn {
-    public final String a;
-    public final ar0.r b;
+    public String a;
+    public ar0.r b;
 
     public yn(String str, ar0.r rVar) {
         this.a = str;

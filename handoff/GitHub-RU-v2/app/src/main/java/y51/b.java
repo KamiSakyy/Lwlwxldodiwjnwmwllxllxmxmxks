@@ -7,8 +7,8 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final String a;
-    public final c b;
+    public String a;
+    public c b;
 
     public b(Set set, c cVar) {
         this.a = b(set);

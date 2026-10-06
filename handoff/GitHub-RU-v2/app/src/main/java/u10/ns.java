@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ns {
-    public final ms a;
-    public final List b;
+    public ms a;
+    public List b;
 
     public ns(ms msVar, List list) {
         this.a = msVar;

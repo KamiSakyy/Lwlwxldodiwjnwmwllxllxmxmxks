@@ -76,7 +76,7 @@ public enum w {
     B0(42);
 
     public static final HashMap C0 = new HashMap();
-    public final int r;
+    public int r;
 
     static {
         for (w wVar : values()) {
@@ -92,4 +92,6 @@ public enum w {
     public final String toString() {
         return Integer.valueOf(this.r).toString();
     }
+    public Object A() { return null; }
+    public Object i() { return null; }
 }

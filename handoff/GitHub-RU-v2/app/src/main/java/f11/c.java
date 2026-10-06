@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final boolean a;
-    public final b b;
+    public boolean a;
+    public b b;
 
     public c(boolean z, b bVar) {
         this.a = z;

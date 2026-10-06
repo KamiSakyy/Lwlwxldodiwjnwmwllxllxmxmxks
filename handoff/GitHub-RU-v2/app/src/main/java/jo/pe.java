@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pe implements aaShadow.w0 {
     public static final je Companion = new je();
-    public final aa.u0 r;
-    public final aa1.b s;
+    public aa.u0 r;
+    public aa1.b s;
 
     public /* synthetic */ pe(aa.u0 u0Var) {
         this(u0Var, aa.t0.d);

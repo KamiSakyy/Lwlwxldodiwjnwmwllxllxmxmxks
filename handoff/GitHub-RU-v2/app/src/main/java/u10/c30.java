@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c30 {
-    public final String a;
+    public String a;
 
     public c30(String str) {
         k71.k.g(str, "id");

@@ -6,13 +6,13 @@ import java.util.List;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f20080a;
+    public String f20080a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f20081b;
+    public List f20081b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final p01.b f20082c;
+    public p01.b f20082c;
 
     public a(String str, List list, p01.b bVar, int i) {
         str = (i & 1) != 0 ? null : str;

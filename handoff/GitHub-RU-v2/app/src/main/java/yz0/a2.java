@@ -2,11 +2,11 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a2 {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final boolean d;
-    public final h2 e;
+    public int a;
+    public int b;
+    public int c;
+    public boolean d;
+    public h2 e;
 
     public a2(int i, int i2, int i3, boolean z, h2 h2Var) {
         this.a = i;

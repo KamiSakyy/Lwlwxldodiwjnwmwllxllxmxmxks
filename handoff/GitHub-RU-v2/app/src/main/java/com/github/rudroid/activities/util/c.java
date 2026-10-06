@@ -7,10 +7,10 @@ import y71.y1;
 public final class c implements a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final y1 f5918a;
+    public y1 f5918a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final y00.l f5919b;
+    public y00.l f5919b;
 
     public c() {
         y1 c10 = n1.c((Object) null);

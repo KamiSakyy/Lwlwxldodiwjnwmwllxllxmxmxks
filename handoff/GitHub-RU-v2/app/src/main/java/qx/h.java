@@ -4,9 +4,9 @@ import dw.t5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final String a;
-    public final i b;
-    public final t5 c;
+    public String a;
+    public i b;
+    public t5 c;
 
     public h(String str, i iVar, t5 t5Var) {
         k71.k.g(str, "__typename");

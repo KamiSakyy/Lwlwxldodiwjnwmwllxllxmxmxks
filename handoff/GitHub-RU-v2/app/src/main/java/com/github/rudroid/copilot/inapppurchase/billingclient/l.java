@@ -8,10 +8,10 @@ import x9.w;
 public final class l extends oa.c {
 
     /* renamed from: b, reason: collision with root package name */
-    public final Context f9673b;
+    public Context f9673b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final g f9674c;
+    public g f9674c;
 
     public l(Context context, g gVar) {
         k71.k.g(gVar, "billingClientPurchaseUpdateStore");

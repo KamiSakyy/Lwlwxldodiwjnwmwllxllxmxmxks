@@ -2,9 +2,9 @@ package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public final Object a;
-    public final Object b;
-    public final Object c;
+    public Object a;
+    public Object b;
+    public Object c;
 
     public s(Object obj, Object obj2, Object obj3) {
         this.a = obj;

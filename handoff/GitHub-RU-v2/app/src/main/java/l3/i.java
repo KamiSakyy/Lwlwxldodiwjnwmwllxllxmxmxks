@@ -4,7 +4,7 @@ package l3;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f27949a;
+    public int f27949a;
 
     public static String a(int i) {
         return i == -1 ? "Unspecified" : i == 0 ? "None" : i == 1 ? "Default" : i == 2 ? "Go" : i == 3 ? "Search" : i == 4 ? "Send" : i == 5 ? "Previous" : i == 6 ? "Next" : i == 7 ? "Done" : "Invalid";

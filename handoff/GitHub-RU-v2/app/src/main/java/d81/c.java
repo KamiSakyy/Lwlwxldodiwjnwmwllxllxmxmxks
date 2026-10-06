@@ -7,12 +7,12 @@ import v71.n0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c {
-    public final Object a;
-    public final j71.f b;
-    public final j71.f c;
-    public final Object d;
-    public final j e;
-    public final j71.f f;
+    public Object a;
+    public j71.f b;
+    public j71.f c;
+    public Object d;
+    public j e;
+    public j71.f f;
     public Object g;
     public int h = -1;
     public final /* synthetic */ e i;

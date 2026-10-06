@@ -7,10 +7,10 @@ public final class j {
     public static final j f26103c = new j(false, 0);
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f26104a;
+    public boolean f26104a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f26105b;
+    public int f26105b;
 
     public j(boolean z10, int i) {
         this.f26104a = z10;

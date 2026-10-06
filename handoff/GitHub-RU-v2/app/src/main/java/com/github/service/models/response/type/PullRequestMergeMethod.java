@@ -11,7 +11,7 @@ public final class PullRequestMergeMethod {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PullRequestMergeMethod[] $VALUES;
     public static final n Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PullRequestMergeMethod MERGE = new PullRequestMergeMethod("MERGE", 0, "MERGE");
     public static final PullRequestMergeMethod SQUASH = new PullRequestMergeMethod("SQUASH", 1, "SQUASH");
     public static final PullRequestMergeMethod REBASE = new PullRequestMergeMethod("REBASE", 2, "REBASE");

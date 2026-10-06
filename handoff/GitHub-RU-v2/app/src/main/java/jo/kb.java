@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kb implements aaShadow.v0 {
-    public final ob a;
-    public final String b;
-    public final String c;
+    public ob a;
+    public String b;
+    public String c;
 
     public kb(ob obVar, String str, String str2) {
         this.a = obVar;

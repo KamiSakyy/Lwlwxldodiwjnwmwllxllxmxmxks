@@ -9,7 +9,7 @@ public enum a3 {
     w(4),
     x(99);
 
-    public final int r;
+    public int r;
 
     a3(int i) {
         this.r = i;

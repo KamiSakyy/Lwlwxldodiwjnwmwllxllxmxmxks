@@ -8,7 +8,7 @@ import android.view.View;
 public final class j implements TransformationMethod {
 
     /* renamed from: r, reason: collision with root package name */
-    public final TransformationMethod f32738r;
+    public TransformationMethod f32738r;
 
     public j(TransformationMethod transformationMethod) {
         this.f32738r = transformationMethod;

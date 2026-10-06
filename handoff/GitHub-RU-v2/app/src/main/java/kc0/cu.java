@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cu {
-    public final bu a;
-    public final List b;
+    public bu a;
+    public List b;
 
     public cu(bu buVar, List list) {
         this.a = buVar;

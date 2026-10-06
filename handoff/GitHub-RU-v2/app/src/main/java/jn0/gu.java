@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gu {
-    public final String a;
-    public final String b;
-    public final uu0.d6 c;
+    public String a;
+    public String b;
+    public uu0.d6 c;
 
     public gu(String str, String str2, uu0.d6 d6Var) {
         this.a = str;

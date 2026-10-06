@@ -2,9 +2,9 @@ package cv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final d b;
-    public final c c;
+    public String a;
+    public d b;
+    public c c;
 
     public e(String str, d dVar, c cVar) {
         k71.k.g(str, "__typename");

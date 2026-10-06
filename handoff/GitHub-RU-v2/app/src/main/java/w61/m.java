@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements Serializable {
-    public final Throwable r;
+    public Throwable r;
 
     public m(Throwable th) {
         k71.k.g(th, "exception");

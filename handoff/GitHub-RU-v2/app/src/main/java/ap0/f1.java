@@ -2,9 +2,9 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f1 {
-    public final String a;
-    public final String b;
-    public final a6 c;
+    public String a;
+    public String b;
+    public a6 c;
 
     public f1(String str, String str2, a6 a6Var) {
         this.a = str;

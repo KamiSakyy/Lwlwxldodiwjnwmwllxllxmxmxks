@@ -4,7 +4,7 @@ import z01.p1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public final oa.g a;
+    public oa.g a;
 
     public s(oa.g gVar) {
         k71.k.g(gVar, "userAccountInfoService");

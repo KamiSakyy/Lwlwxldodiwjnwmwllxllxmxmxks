@@ -17,8 +17,8 @@ import k71.x;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class BadgeSwitchPreference extends SwitchPreference {
     public static final /* synthetic */ r71.e[] p0;
-    public final a n0;
-    public final b o0;
+    public a n0;
+    public b o0;
 
     public final class a implements CompoundButton.OnCheckedChangeListener {
         public a() {

@@ -28,7 +28,7 @@ public final class s implements Comparable {
     public static final s f27697z;
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f27698r;
+    public int f27698r;
 
     static {
         s sVar = new s(100);

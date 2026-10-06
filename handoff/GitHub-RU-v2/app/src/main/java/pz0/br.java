@@ -12,7 +12,7 @@ public final class br {
     public static final br w;
     public static final br x;
     public static final /* synthetic */ br[] y;
-    public final String r;
+    public String r;
 
     static {
         br brVar = new br("CREATED_AT", 0, "CREATED_AT");

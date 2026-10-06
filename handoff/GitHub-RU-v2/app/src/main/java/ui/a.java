@@ -2,8 +2,8 @@ package ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final on.f a;
-    public final on.m b;
+    public on.f a;
+    public on.m b;
 
     public a(on.f fVar, on.m mVar) {
         k71.k.g(fVar, "codingAgentsPaged");

@@ -6,7 +6,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t extends n1 {
-    public final jf u;
+    public jf u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public t(jf jfVar, SearchAndFilterBaseFragment searchAndFilterBaseFragment) {

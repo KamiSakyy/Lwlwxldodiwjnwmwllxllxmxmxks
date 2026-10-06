@@ -13,11 +13,11 @@ import yz0.h;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class SimpleRepository implements Parcelable {
-    public final String r;
-    public final String s;
-    public final String t;
-    public final Avatar u;
-    public final String v;
+    public String r;
+    public String s;
+    public String t;
+    public Avatar u;
+    public String v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SimpleRepository> CREATOR = new h(28);
 

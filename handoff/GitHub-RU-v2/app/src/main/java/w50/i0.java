@@ -6,11 +6,11 @@ import hc0.lc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 implements aa.h0 {
-    public final String a;
-    public final jc b;
-    public final lc c;
-    public final boolean d;
-    public final String e;
+    public String a;
+    public jc b;
+    public lc c;
+    public boolean d;
+    public String e;
 
     public i0(String str, jc jcVar, lc lcVar, boolean z, String str2) {
         k71.k.g(str, "id");

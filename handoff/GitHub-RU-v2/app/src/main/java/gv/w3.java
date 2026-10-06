@@ -2,10 +2,10 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w3 implements aa.h0 {
-    public final String a;
-    public final int b;
-    public final v3 c;
-    public final String d;
+    public String a;
+    public int b;
+    public v3 c;
+    public String d;
 
     public w3(String str, int i, v3 v3Var, String str2) {
         this.a = str;

@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rd implements aaShadow.w0 {
     public static final jd Companion = new jd();
-    public final String r;
-    public final String s;
-    public final String t;
-    public final String u;
-    public final aa.u0 v;
+    public String r;
+    public String s;
+    public String t;
+    public String u;
+    public aa.u0 v;
 
     public rd(aa.u0 u0Var, String str, String str2, String str3, String str4) {
         k71.k.g(str, "owner");

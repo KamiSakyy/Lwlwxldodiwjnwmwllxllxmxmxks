@@ -9,10 +9,10 @@ public abstract class k {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f28681a;
+    public int f28681a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f28682b;
+    public long f28682b;
 
     public static final class a {
     }
@@ -51,7 +51,7 @@ public abstract class k {
     public static final class e extends k {
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f28683c;
+        public int f28683c;
 
         public e(int i) {
             super(3, i);
@@ -77,10 +77,10 @@ public abstract class k {
     public static final class f extends k implements c {
 
         /* renamed from: c, reason: collision with root package name */
-        public final k2 f28684c;
+        public k2 f28684c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final SpannableStringBuilder f28685d;
+        public SpannableStringBuilder f28685d;
 
         public f(k2 k2Var, SpannableStringBuilder spannableStringBuilder) {
             super(2, k2Var.getId().hashCode());
@@ -111,10 +111,10 @@ public abstract class k {
     public static final class g extends k implements c {
 
         /* renamed from: c, reason: collision with root package name */
-        public final k2 f28686c;
+        public k2 f28686c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final SpannableStringBuilder f28687d;
+        public SpannableStringBuilder f28687d;
 
         public g(k2 k2Var, SpannableStringBuilder spannableStringBuilder) {
             super(1, k2Var.getId().hashCode());

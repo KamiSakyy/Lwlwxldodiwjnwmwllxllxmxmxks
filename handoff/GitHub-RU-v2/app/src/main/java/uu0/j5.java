@@ -5,18 +5,18 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j5 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final bf e;
-    public final c5 f;
-    public final d5 g;
-    public final df h;
-    public final e5 i;
-    public final i5 j;
-    public final h5 k;
-    public final d6 l;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public bf e;
+    public c5 f;
+    public d5 g;
+    public df h;
+    public e5 i;
+    public i5 j;
+    public h5 k;
+    public d6 l;
 
     public j5(String str, String str2, String str3, int i, bf bfVar, c5 c5Var, d5 d5Var, df dfVar, e5 e5Var, i5 i5Var, h5 h5Var, d6 d6Var) {
         this.a = str;

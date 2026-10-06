@@ -47,4 +47,5 @@ public final class i extends m0 {
     }
     public Object d(Object p1, Object p2, Object p3) { return null; }
     public Object t(Object p1) { return null; }
+    public Object D(boolean p1) { return null; }
 }

@@ -6,8 +6,8 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t2 implements Parcelable {
     public static final Parcelable.Creator<t2> CREATOR = new h(26);
-    public final s2 r;
-    public final s2 s;
+    public s2 r;
+    public s2 s;
 
     public t2(s2 s2Var, s2 s2Var2) {
         k71.k.g(s2Var, "mergeCommitMessage");

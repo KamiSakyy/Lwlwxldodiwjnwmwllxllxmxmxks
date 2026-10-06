@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class w {
 
     /* renamed from: a, reason: collision with root package name */
-    public final q f27980a;
+    public q f27980a;
 
     /* renamed from: b, reason: collision with root package name */
     public final AtomicReference f27981b = new AtomicReference(null);

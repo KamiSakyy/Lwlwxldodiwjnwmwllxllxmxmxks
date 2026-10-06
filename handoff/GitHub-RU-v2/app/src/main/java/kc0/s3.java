@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s3 {
-    public final j4 a;
-    public final r3 b;
-    public final String c;
-    public final String d;
+    public j4 a;
+    public r3 b;
+    public String c;
+    public String d;
 
     public s3(j4 j4Var, r3 r3Var, String str, String str2) {
         this.a = j4Var;

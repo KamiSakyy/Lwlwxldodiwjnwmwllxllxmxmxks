@@ -4,11 +4,11 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i1 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final int d;
-    public final vx.a e;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public int d;
+    public vx.a e;
 
     public i1(String str, boolean z, boolean z2, int i, vx.a aVar) {
         k71.k.g(str, "__typename");

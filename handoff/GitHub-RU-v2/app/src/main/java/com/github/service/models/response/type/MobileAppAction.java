@@ -11,7 +11,7 @@ public final class MobileAppAction {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MobileAppAction[] $VALUES;
     public static final i Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final MobileAppAction PRESS = new MobileAppAction("PRESS", 0, "PRESS");
     public static final MobileAppAction SWIPE = new MobileAppAction("SWIPE", 1, "SWIPE");
     public static final MobileAppAction LEFT_SWIPE = new MobileAppAction("LEFT_SWIPE", 2, "LEFT_SWIPE");

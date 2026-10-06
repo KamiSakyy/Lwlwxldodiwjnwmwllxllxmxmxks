@@ -2,9 +2,9 @@ package f00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public final String a;
-    public final String b;
-    public final ct.c c;
+    public String a;
+    public String b;
+    public ct.c c;
 
     public m(String str, String str2, ct.c cVar) {
         this.a = str;

@@ -8,7 +8,7 @@ import androidx.compose.ui.layout.x0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class e implements e0 {
-    public final float a;
+    public float a;
 
     public e(float f) {
         this.a = f;
@@ -19,4 +19,5 @@ final class e implements e0 {
         l1 F = u0Var.F(s3.a.b(j, 0, (int) (s3.a.i(j) * this.a), 0, 0, 13));
         return x0Var.h0(s3.b.g(F.r, j), s3.b.f(F.s, j), x61.s.r, new androidx.compose.foundation.layout.n(F, 9));
     }
+    public Object f(long p1, Object p2) { return null; }
 }

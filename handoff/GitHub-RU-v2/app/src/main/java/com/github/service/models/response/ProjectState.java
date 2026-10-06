@@ -8,7 +8,7 @@ import v8.l0;
 public final class ProjectState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ ProjectState[] $VALUES;
-    private final String rawValue;
+    private String rawValue;
     public static final ProjectState OPEN = new ProjectState("OPEN", 0, "OPEN");
     public static final ProjectState CLOSED = new ProjectState("CLOSED", 1, "CLOSED");
     public static final ProjectState UNKNOWN__ = new ProjectState("UNKNOWN__", 2, "UNKNOWN__");

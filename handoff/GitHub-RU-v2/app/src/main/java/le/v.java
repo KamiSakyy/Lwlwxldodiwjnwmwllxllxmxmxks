@@ -19,7 +19,7 @@ public interface v {
     public static final class a implements v {
 
         /* renamed from: r, reason: collision with root package name */
-        public final t1 f28748r;
+        public t1 f28748r;
 
         public a(t1 t1Var) {
             k71.k.g(t1Var, "codeSearchResult");
@@ -56,13 +56,13 @@ public interface v {
     public static final class c implements v, x {
 
         /* renamed from: r, reason: collision with root package name */
-        public final int f28750r;
+        public int f28750r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final Integer f28751s;
+        public Integer f28751s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final u f28752t;
+        public u f28752t;
 
         public c(int i, Integer num, u uVar) {
             this.f28750r = i;
@@ -100,7 +100,7 @@ public interface v {
     public static final class e implements v {
 
         /* renamed from: r, reason: collision with root package name */
-        public final String f28760r;
+        public String f28760r;
 
         public e(String str) {
             k71.k.g(str, "query");
@@ -129,35 +129,35 @@ public interface v {
     }
 
     public static final class f implements v, com.github.rudroid.repositories.k {
-        public final String A;
-        public final int B;
+        public String A;
+        public int B;
 
         /* renamed from: r, reason: collision with root package name */
-        public final String f28761r;
+        public String f28761r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f28762s;
+        public String f28762s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final boolean f28763t;
+        public boolean f28763t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final com.github.service.models.response.a f28764u;
+        public com.github.service.models.response.a f28764u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f28765v;
+        public String f28765v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final String f28766w;
+        public String f28766w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final int f28767x;
+        public int f28767x;
 
         /* renamed from: y, reason: collision with root package name */
-        public final int f28768y;
+        public int f28768y;
 
         /* renamed from: z, reason: collision with root package name */
-        public final boolean f28769z;
+        public boolean f28769z;
 
         public f(u1 u1Var) {
             k71.k.g(u1Var, "repository");
@@ -282,7 +282,7 @@ public interface v {
         public static final class a extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final String f28770r;
+            public String f28770r;
 
             public a(String str) {
                 k71.k.g(str, "query");
@@ -323,7 +323,7 @@ public interface v {
         public static final class b extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final String f28771r;
+            public String f28771r;
 
             public b(String str) {
                 k71.k.g(str, "query");
@@ -364,10 +364,10 @@ public interface v {
         public static final class c extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final j2.a f28772r;
+            public j2.a f28772r;
 
             /* renamed from: s, reason: collision with root package name */
-            public final String f28773s;
+            public String f28773s;
 
             public c(j2.a aVar, String str) {
                 k71.k.g(str, "query");
@@ -413,7 +413,7 @@ public interface v {
         public static final class d extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final String f28774r;
+            public String f28774r;
 
             public d(String str) {
                 k71.k.g(str, "query");
@@ -454,7 +454,7 @@ public interface v {
         public static final class e extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final String f28775r;
+            public String f28775r;
 
             public e(String str) {
                 k71.k.g(str, "query");
@@ -495,7 +495,7 @@ public interface v {
         public static final class f extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final String f28776r;
+            public String f28776r;
 
             public f(String str) {
                 k71.k.g(str, "query");
@@ -537,7 +537,7 @@ public interface v {
         public static final class C0083g extends g {
 
             /* renamed from: r, reason: collision with root package name */
-            public final String f28777r;
+            public String f28777r;
 
             public C0083g(String str) {
                 k71.k.g(str, "query");
@@ -602,22 +602,22 @@ public interface v {
     public static final class i implements v, oe.g {
 
         /* renamed from: r, reason: collision with root package name */
-        public final String f28778r;
+        public String f28778r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f28779s;
+        public String f28779s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f28780t;
+        public String f28780t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final String f28781u;
+        public String f28781u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final Avatar f28782v;
+        public Avatar f28782v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final int f28783w;
+        public int f28783w;
 
         public i(v1 v1Var) {
             k71.k.g(v1Var, "user");
@@ -696,16 +696,16 @@ public interface v {
     public static final class d implements v, le.g {
 
         /* renamed from: r, reason: collision with root package name */
-        public final int f28753r;
+        public int f28753r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final Integer f28754s;
+        public Integer f28754s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final a f28755t;
+        public a f28755t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final int f28756u;
+        public int f28756u;
 
         /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
         /* JADX WARN: Unknown enum class pattern. Please report as an issue! */

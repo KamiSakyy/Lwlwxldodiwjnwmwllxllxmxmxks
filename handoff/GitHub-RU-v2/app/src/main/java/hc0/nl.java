@@ -9,7 +9,7 @@ public final class nl {
     public static final nl t;
     public static final /* synthetic */ nl[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         nl nlVar = new nl("APPROVED", 0, "APPROVED");

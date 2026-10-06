@@ -34,4 +34,5 @@ final class a0 extends c71.j implements j71.e {
         y1Var.k((Object) null, this.w);
         return w61.a0.a;
     }
+    public Object g(Object p1) { return null; }
 }

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ng {
-    public final String a;
-    public final String b;
-    public final og c;
+    public String a;
+    public String b;
+    public og c;
 
     public ng(String str, String str2, og ogVar) {
         k71.k.g(str, "__typename");

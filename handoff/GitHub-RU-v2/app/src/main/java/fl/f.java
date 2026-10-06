@@ -5,9 +5,9 @@ import k71.k;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
     public static final e Companion = new e();
-    public final g a;
-    public final Object b;
-    public final b c;
+    public g a;
+    public Object b;
+    public b c;
 
     public f(g gVar, Object obj, b bVar) {
         k.g(gVar, "status");

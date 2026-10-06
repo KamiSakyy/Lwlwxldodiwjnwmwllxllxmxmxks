@@ -16,11 +16,11 @@ import l01.z;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ProjectFieldOption$Iteration implements z {
     public static final ProjectFieldOption$Iteration w;
-    public final String r;
-    public final String s;
-    public final String t;
-    public final int u;
-    public final LocalDate v;
+    public String r;
+    public String s;
+    public String t;
+    public int u;
+    public LocalDate v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectFieldOption$Iteration> CREATOR = new c(14);
 

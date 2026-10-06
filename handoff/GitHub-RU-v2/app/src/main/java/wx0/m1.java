@@ -2,9 +2,9 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m1 {
-    public final String a;
-    public final String b;
-    public final s c;
+    public String a;
+    public String b;
+    public s c;
 
     public m1(String str, String str2, s sVar) {
         this.a = str;

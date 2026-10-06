@@ -13,7 +13,7 @@ public final class MobileSubjectType {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MobileSubjectType[] $VALUES;
     public static final l Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final MobileSubjectType CHECK_SUITE = new MobileSubjectType("CHECK_SUITE", 0, "CHECK_SUITE");
     public static final MobileSubjectType COMMIT = new MobileSubjectType("COMMIT", 1, "COMMIT");
     public static final MobileSubjectType COMMITS = new MobileSubjectType("COMMITS", 2, "COMMITS");

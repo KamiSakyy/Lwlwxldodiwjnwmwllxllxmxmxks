@@ -12,10 +12,10 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i extends com.github.rudroid.searchandfilter.complexfilter.k<LegacyProjectWithNumber> implements com.github.rudroid.searchandfilter.complexfilter.d0<o> {
     public static final /* synthetic */ int I = 0;
-    public final km.b E;
-    public final v71.v F;
-    public final String G;
-    public final String H;
+    public km.b E;
+    public v71.v F;
+    public String G;
+    public String H;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(km.b bVar, com.github.rudroid.activities.util.c cVar, a1 a1Var, v71.v vVar) {

@@ -16,4 +16,5 @@ public interface g {
         public b() {
         }
     }
+    public Object a(Object p1) { return null; }
 }

@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v8 {
-    public final String a;
-    public final t8 b;
-    public final s8 c;
+    public String a;
+    public t8 b;
+    public s8 c;
 
     public v8(String str, t8 t8Var, s8 s8Var) {
         k71.k.g(str, "__typename");

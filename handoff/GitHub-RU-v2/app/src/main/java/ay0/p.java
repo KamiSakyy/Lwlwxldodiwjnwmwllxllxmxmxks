@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements aa.h0 {
-    public final int a;
-    public final o b;
-    public final List c;
+    public int a;
+    public o b;
+    public List c;
 
     public p(int i, o oVar, List list) {
         k71.k.g(oVar, "pageInfo");

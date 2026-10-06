@@ -9,8 +9,8 @@ import java.util.concurrent.CancellationException;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class q2 extends androidx.lifecycle.a implements com.github.rudroid.utilities.viewmodel.d {
-    public final y71.i1 A;
-    public final p2 B;
+    public y71.i1 A;
+    public p2 B;
     public v71.q1 C;
     public v71.q1 D;
     public String E;
@@ -21,22 +21,22 @@ public final class q2 extends androidx.lifecycle.a implements com.github.rudroid
     public final /* synthetic */ d.a f17786t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final il.r f17787u;
+    public il.r f17787u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final il.j f17788v;
+    public il.j f17788v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final il.w f17789w;
+    public il.w f17789w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f17790x;
+    public com.github.rudroid.activities.util.c f17790x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final l0 f17791y;
+    public l0 f17791y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final y71.y1 f17792z;
+    public y71.y1 f17792z;
 
     public static final /* synthetic */ class a {
         static {

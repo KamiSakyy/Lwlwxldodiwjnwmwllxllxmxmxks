@@ -7,7 +7,7 @@ import java.util.TimeZone;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class t implements i0 {
-    public final boolean r;
+    public boolean r;
     public final h91.h s = new h91.h();
     public boolean t;
     public final /* synthetic */ w u;

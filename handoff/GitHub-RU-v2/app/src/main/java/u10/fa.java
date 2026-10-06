@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fa {
-    public final String a;
-    public final boolean b;
-    public final ca c;
-    public final ja d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public ca c;
+    public ja d;
+    public String e;
 
     public fa(String str, boolean z, ca caVar, ja jaVar, String str2) {
         this.a = str;

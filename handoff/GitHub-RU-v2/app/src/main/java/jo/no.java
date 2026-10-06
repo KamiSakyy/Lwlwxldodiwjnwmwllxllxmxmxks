@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class no {
-    public final String a;
-    public final oo b;
-    public final ju.a c;
+    public String a;
+    public oo b;
+    public ju.a c;
 
     public no(String str, oo ooVar, ju.a aVar) {
         k71.k.g(str, "__typename");

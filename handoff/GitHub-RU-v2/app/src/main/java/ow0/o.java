@@ -7,10 +7,10 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements aa.w0 {
     public static final k Companion = new k();
-    public final String r;
-    public final String s;
-    public final int t;
-    public final aa.u0 u;
+    public String r;
+    public String s;
+    public int t;
+    public aa.u0 u;
 
     public o(String str, String str2, int i, aa.u0 u0Var) {
         this.r = str;

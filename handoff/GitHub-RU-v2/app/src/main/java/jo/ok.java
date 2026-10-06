@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ok {
-    public final int a;
-    public final pk b;
-    public final String c;
-    public final String d;
+    public int a;
+    public pk b;
+    public String c;
+    public String d;
 
     public ok(int i, pk pkVar, String str, String str2) {
         this.a = i;

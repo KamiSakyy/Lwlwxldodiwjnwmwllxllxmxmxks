@@ -13,10 +13,10 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d0 implements ServiceConnection {
-    public final Context r;
-    public final Intent s;
-    public final ScheduledThreadPoolExecutor t;
-    public final ArrayDeque u;
+    public Context r;
+    public Intent s;
+    public ScheduledThreadPoolExecutor t;
+    public ArrayDeque u;
     public b0 v;
     public boolean w;
 

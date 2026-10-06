@@ -20,13 +20,13 @@ import x61.x;
 public final class f implements Map, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f25581r;
+    public String f25581r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Map f25582s;
+    public Map f25582s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final UUID f25583t;
+    public UUID f25583t;
 
     /* renamed from: u, reason: collision with root package name */
     public LinkedHashMap f25584u;

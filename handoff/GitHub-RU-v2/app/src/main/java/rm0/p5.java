@@ -18,5 +18,5 @@ public final class p5 extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
-    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
+    public static Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
 }

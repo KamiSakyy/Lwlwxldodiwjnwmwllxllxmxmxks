@@ -8,7 +8,7 @@ import android.graphics.RectF;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Path f21346a;
+    public Path f21346a;
 
     /* renamed from: b, reason: collision with root package name */
     public RectF f21347b;

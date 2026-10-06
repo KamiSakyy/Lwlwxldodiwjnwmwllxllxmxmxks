@@ -29,9 +29,9 @@ import yz0.v7;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RadioPreferenceGroup extends Preference {
     public static final /* synthetic */ r71.e[] i0 = {new m(RadioPreferenceGroup.class, "radioTitles", "getRadioTitles()Ljava/util/List;", 0), h1.w(x.a, RadioPreferenceGroup.class, "checkedId", "getCheckedId()I", 0), new m(RadioPreferenceGroup.class, "onValueChangedListener", "getOnValueChangedListener()Lcom/github/rudroid/settings/preferences/RadioPreferenceGroup$OnValueChangedListener;", 0)};
-    public final b f0;
-    public final c g0;
-    public final d h0;
+    public b f0;
+    public c g0;
+    public d h0;
 
     public interface a {
         void a(int i);

@@ -10,7 +10,7 @@ public final class c {
     public static final c f32323b = new c(r.r);
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f32324a;
+    public Object f32324a;
 
     public c(List list) {
         this.f32324a = list;

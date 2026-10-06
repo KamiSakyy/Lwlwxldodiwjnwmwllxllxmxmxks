@@ -6,13 +6,13 @@ import gn0.zc;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final xc d;
-    public final l0 e;
-    public final zc f;
-    public final String g;
+    public String a;
+    public String b;
+    public int c;
+    public xc d;
+    public l0 e;
+    public zc f;
+    public String g;
 
     public l(String str, String str2, int i, xc xcVar, l0 l0Var, zc zcVar, String str3) {
         this.a = str;

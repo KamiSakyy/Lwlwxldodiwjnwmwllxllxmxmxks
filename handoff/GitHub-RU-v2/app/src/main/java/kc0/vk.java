@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vk {
-    public final rk a;
-    public final xk b;
+    public rk a;
+    public xk b;
 
     public vk(rk rkVar, xk xkVar) {
         this.a = rkVar;

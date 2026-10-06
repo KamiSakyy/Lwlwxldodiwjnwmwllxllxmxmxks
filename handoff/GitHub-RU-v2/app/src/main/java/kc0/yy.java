@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yy {
-    public final String a;
-    public final az b;
-    public final bz c;
-    public final bl0.a d;
+    public String a;
+    public az b;
+    public bz c;
+    public bl0.a d;
 
     public yy(String str, az azVar, bz bzVar, bl0.a aVar) {
         k71.k.g(str, "__typename");

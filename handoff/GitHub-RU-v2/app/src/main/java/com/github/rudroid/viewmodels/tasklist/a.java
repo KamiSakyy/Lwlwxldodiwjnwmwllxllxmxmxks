@@ -6,10 +6,10 @@ import yz0.q0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final String a;
-    public final q0 b;
-    public final String c;
-    public final boolean d;
+    public String a;
+    public q0 b;
+    public String c;
+    public boolean d;
 
     public a(String str, String str2, q0 q0Var, boolean z) {
         k71.k.g(str, "id");

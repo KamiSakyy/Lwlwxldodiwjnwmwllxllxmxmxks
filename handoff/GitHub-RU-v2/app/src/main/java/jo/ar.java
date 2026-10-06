@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ar {
-    public final String a;
-    public final String b;
-    public final qx.j c;
+    public String a;
+    public String b;
+    public qx.j c;
 
     public ar(String str, String str2, qx.j jVar) {
         this.a = str;

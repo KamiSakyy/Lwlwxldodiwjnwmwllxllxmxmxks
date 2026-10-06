@@ -2,8 +2,8 @@ package j00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public final String a;
-    public final u b;
+    public String a;
+    public u b;
 
     public t(String str, u uVar) {
         this.a = str;

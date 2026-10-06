@@ -4,10 +4,10 @@ package androidx.sqlite.db.framework;
 final class FrameworkSQLiteOpenHelper$OpenHelper$CallbackException extends RuntimeException {
 
     /* renamed from: r, reason: collision with root package name */
-    public final d f3098r;
+    public d f3098r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Throwable f3099s;
+    public Throwable f3099s;
 
     public FrameworkSQLiteOpenHelper$OpenHelper$CallbackException(d dVar, Throwable th) {
         super(th);

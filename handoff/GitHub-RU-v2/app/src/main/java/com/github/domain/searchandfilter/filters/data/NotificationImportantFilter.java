@@ -14,8 +14,8 @@ import sy.w;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class NotificationImportantFilter extends d {
-    public final boolean v;
-    public final boolean w;
+    public boolean v;
+    public boolean w;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<NotificationImportantFilter> CREATOR = new o(1);
     public static final w61.h[] x = {w.s(w61.i.r, new bm.i(17)), null, null, null};

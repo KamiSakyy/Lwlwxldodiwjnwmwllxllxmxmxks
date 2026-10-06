@@ -6,7 +6,7 @@ import com.github.rudroid.pushnotifications.decryption.l;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final l f18653a;
+    public l f18653a;
 
     public e(l lVar) {
         k71.k.g(lVar, "keyStoreFactory");

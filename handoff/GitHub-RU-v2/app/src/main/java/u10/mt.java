@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mt implements aaShadow.v0 {
-    public final nt a;
+    public nt a;
 
     public mt(nt ntVar) {
         this.a = ntVar;

@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zw {
-    public final String a;
-    public final bx b;
-    public final cx c;
-    public final ja0.a d;
+    public String a;
+    public bx b;
+    public cx c;
+    public ja0.a d;
 
     public zw(String str, bx bxVar, cx cxVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

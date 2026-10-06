@@ -4,7 +4,7 @@ package l3;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f27958a;
+    public int f27958a;
 
     public static String a(int i) {
         return i == 0 ? "Unspecified" : i == 1 ? "Text" : i == 2 ? "Ascii" : i == 3 ? "Number" : i == 4 ? "Phone" : i == 5 ? "Uri" : i == 6 ? "Email" : i == 7 ? "Password" : i == 8 ? "NumberPassword" : i == 9 ? "Decimal" : "Invalid";

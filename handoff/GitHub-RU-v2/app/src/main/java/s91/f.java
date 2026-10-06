@@ -5,9 +5,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f {
-    public final t91.d a;
-    public final t91.d b;
-    public final List c;
+    public t91.d a;
+    public t91.d b;
+    public List c;
 
     public f(t91.d dVar, t91.d dVar2, List list) {
         k.g(dVar, "currentConstraints");

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class us implements aaShadow.v0 {
-    public final xs a;
-    public final String b;
-    public final String c;
+    public xs a;
+    public String b;
+    public String c;
 
     public us(xs xsVar, String str, String str2) {
         this.a = xsVar;

@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bq {
-    public final String a;
-    public final int b;
-    public final yp c;
-    public final String d;
+    public String a;
+    public int b;
+    public yp c;
+    public String d;
 
     public bq(String str, int i, yp ypVar, String str2) {
         this.a = str;

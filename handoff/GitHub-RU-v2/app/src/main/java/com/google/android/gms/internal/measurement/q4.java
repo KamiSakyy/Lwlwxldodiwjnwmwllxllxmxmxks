@@ -21,7 +21,7 @@ public enum q4 implements i5 {
     EF11(11),
     z(-1);
 
-    public final int r;
+    public int r;
 
     q4(int i) {
         this.r = i;

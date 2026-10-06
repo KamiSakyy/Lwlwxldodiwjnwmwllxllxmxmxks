@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ex {
-    public final cx a;
-    public final List b;
+    public cx a;
+    public List b;
 
     public ex(cx cxVar, List list) {
         this.a = cxVar;

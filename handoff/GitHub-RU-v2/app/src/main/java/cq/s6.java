@@ -2,12 +2,12 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s6 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final boolean e;
-    public final String f;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public boolean e;
+    public String f;
 
     public s6(String str, boolean z, boolean z2, boolean z3, boolean z4, String str2) {
         this.a = str;

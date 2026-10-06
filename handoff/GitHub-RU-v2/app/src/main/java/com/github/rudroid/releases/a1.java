@@ -9,22 +9,22 @@ import y71.y1;
 public final class a1 extends k1 implements x3 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final kl.e f18836s;
+    public kl.e f18836s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f18837t;
+    public com.github.rudroid.activities.util.c f18837t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final y1 f18838u;
+    public y1 f18838u;
 
     /* renamed from: v, reason: collision with root package name */
     public x01.i f18839v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final String f18840w;
+    public String f18840w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f18841x;
+    public String f18841x;
 
     public a1(kl.e eVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {
         k71.k.g(eVar, "fetchReleasesUseCase");

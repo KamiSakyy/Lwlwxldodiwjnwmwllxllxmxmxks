@@ -7,8 +7,8 @@ import com.github.domain.searchandfilter.filters.data.notification.RepositoryNot
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s0 extends com.github.rudroid.searchandfilter.complexfilter.b<com.github.domain.searchandfilter.filters.data.notification.a> implements com.github.rudroid.searchandfilter.complexfilter.d0<k> {
     public static final /* synthetic */ int F = 0;
-    public final jm.b C;
-    public final v71.v D;
+    public jm.b C;
+    public v71.v D;
     public boolean E;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

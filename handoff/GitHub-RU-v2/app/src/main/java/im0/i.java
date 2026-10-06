@@ -2,8 +2,8 @@ package im0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public final String a;
-    public final j b;
+    public String a;
+    public j b;
 
     public i(String str, j jVar) {
         this.a = str;

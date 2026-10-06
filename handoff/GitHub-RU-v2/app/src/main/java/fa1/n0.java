@@ -9,16 +9,16 @@ import java.util.regex.Pattern;
 public final class n0 {
     public static final char[] l = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
     public static final Pattern m = Pattern.compile("(.*/)?(\\.|%2e|%2E){1,2}(/.*)?");
-    public final String a;
-    public final q81.o b;
+    public String a;
+    public q81.o b;
     public String c;
     public l7.e d;
     public final l1 e = new l1(11);
-    public final ia.d f;
+    public ia.d f;
     public q81.q g;
-    public final boolean h;
-    public final l51.h i;
-    public final q81.k j;
+    public boolean h;
+    public l51.h i;
+    public q81.k j;
     public q81.y k;
 
     public n0(String str, q81.o oVar, String str2, q81.n nVar, q81.q qVar, boolean z, boolean z2, boolean z3) {

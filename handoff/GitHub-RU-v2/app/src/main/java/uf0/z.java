@@ -2,9 +2,9 @@ package uf0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z {
-    public final String a;
-    public final y b;
-    public final String c;
+    public String a;
+    public y b;
+    public String c;
 
     public z(String str, y yVar, String str2) {
         this.a = str;

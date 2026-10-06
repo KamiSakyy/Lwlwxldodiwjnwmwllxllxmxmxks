@@ -7,7 +7,7 @@ import x61.l;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends e implements a, Serializable {
-    public final Enum[] r;
+    public Enum[] r;
 
     public b(Enum[] enumArr) {
         k.g(enumArr, "entries");

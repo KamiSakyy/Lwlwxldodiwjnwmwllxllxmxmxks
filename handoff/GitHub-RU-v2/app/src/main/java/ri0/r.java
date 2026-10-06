@@ -2,9 +2,9 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public final String a;
-    public final String b;
-    public final s7 c;
+    public String a;
+    public String b;
+    public s7 c;
 
     public r(String str, String str2, s7 s7Var) {
         this.a = str;

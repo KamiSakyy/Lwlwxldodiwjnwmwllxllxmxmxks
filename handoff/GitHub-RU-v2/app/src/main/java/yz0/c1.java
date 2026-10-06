@@ -2,9 +2,9 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c1 {
-    public final v5 a;
-    public final boolean b;
-    public final boolean c;
+    public v5 a;
+    public boolean b;
+    public boolean c;
 
     public c1(v5 v5Var, boolean z, boolean z2) {
         this.a = v5Var;

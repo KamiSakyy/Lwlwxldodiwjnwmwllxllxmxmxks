@@ -7,16 +7,16 @@ import k71.k;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final fc.a f22208a;
+    public fc.a f22208a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Boolean f22209b;
+    public Boolean f22209b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final MobileSubjectType f22210c;
+    public MobileSubjectType f22210c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f22211d;
+    public boolean f22211d;
 
     public /* synthetic */ c(fc.a aVar, MobileSubjectType mobileSubjectType, boolean z10, int i) {
         this(aVar, (Boolean) null, (i & 4) != 0 ? null : mobileSubjectType, z10);

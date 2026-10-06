@@ -11,7 +11,7 @@ public final class yh {
     public static final yh v;
     public static final /* synthetic */ yh[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         yh yhVar = new yh("COMPLETED", 0, "COMPLETED");

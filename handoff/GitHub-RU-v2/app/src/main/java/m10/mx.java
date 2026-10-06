@@ -13,7 +13,7 @@ public final class mx {
     public static final mx x;
     public static final /* synthetic */ mx[] y;
     public static final /* synthetic */ d71.b z;
-    public final String r;
+    public String r;
 
     static {
         mx mxVar = new mx("FLOAT", 0, "FLOAT");

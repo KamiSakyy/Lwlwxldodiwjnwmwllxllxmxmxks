@@ -5,10 +5,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements v0 {
-    public final l a;
-    public final m b;
-    public final String c;
-    public final String d;
+    public l a;
+    public m b;
+    public String c;
+    public String d;
 
     public e(l lVar, m mVar, String str, String str2) {
         this.a = lVar;
@@ -43,5 +43,5 @@ public final class e implements v0 {
         sb.append(", id=");
         return x.i.k(sb, this.c, ", __typename=", this.d, ")");
     }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

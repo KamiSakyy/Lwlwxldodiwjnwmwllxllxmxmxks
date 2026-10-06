@@ -2,9 +2,9 @@ package qe0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public final String a;
-    public final e b;
-    public final f c;
+    public String a;
+    public e b;
+    public f c;
 
     public d(String str, e eVar, f fVar) {
         k71.k.g(str, "__typename");

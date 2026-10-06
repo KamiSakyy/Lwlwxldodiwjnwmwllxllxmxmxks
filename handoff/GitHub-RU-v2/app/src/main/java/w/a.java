@@ -28,13 +28,13 @@ public abstract class a extends FrameLayout {
     public boolean f32903s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final Rect f32904t;
+    public Rect f32904t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Rect f32905u;
+    public Rect f32905u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final t f32906v;
+    public t f32906v;
 
     public a(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 2130969471);

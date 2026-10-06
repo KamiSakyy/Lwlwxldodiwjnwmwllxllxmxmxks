@@ -29,8 +29,8 @@ public final class CopilotChatProPaywallActivity extends o {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] w0;
     public x0 t0;
-    public final l1 u0;
-    public final com.github.rudroid.activities.util.g v0;
+    public l1 u0;
+    public com.github.rudroid.activities.util.g v0;
 
     public static final class a {
     }

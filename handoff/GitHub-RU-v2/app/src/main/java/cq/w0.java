@@ -2,16 +2,16 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w0 implements aa.h0 {
-    public final String a;
-    public final w b;
-    public final g0 c;
-    public final d1 d;
-    public final o1 e;
-    public final y1 f;
-    public final i2 g;
-    public final i3 h;
-    public final f6 i;
-    public final o6 j;
+    public String a;
+    public w b;
+    public g0 c;
+    public d1 d;
+    public o1 e;
+    public y1 f;
+    public i2 g;
+    public i3 h;
+    public f6 i;
+    public o6 j;
 
     public w0(String str, w wVar, g0 g0Var, d1 d1Var, o1 o1Var, y1 y1Var, i2 i2Var, i3 i3Var, f6 f6Var, o6 o6Var) {
         k71.k.g(str, "__typename");

@@ -35,12 +35,12 @@ public class GitHubWebView extends j {
     public d A;
     public zh.h B;
     public a C;
-    public final com.github.rudroid.webview.viewholders.g D;
+    public com.github.rudroid.webview.viewholders.g D;
     public w E;
     public zh.g F;
     public com.github.rudroid.activities.util.c t;
-    public final ia.d u;
-    public final a81.d v;
+    public ia.d u;
+    public a81.d v;
     public boolean w;
     public boolean x;
     public boolean y;
@@ -69,8 +69,8 @@ public class GitHubWebView extends j {
     }
 
     public static final class f {
-        public final int a;
-        public final boolean b;
+        public int a;
+        public boolean b;
 
         public f(int i, boolean z) {
             this.a = i;

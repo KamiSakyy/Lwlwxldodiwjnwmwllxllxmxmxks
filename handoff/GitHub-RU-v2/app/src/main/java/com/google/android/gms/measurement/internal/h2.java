@@ -6,7 +6,7 @@ import java.util.concurrent.Executor;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h2 implements Executor {
     public final /* synthetic */ int r;
-    public final Object s;
+    public Object s;
 
     public /* synthetic */ h2(int i, Object obj) {
         this.r = i;

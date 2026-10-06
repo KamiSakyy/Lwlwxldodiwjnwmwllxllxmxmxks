@@ -2,10 +2,10 @@ package is;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 {
-    public final String a;
-    public final String b;
-    public final n0 c;
-    public final ms.i d;
+    public String a;
+    public String b;
+    public n0 c;
+    public ms.i d;
 
     public g0(String str, String str2, n0 n0Var, ms.i iVar) {
         this.a = str;

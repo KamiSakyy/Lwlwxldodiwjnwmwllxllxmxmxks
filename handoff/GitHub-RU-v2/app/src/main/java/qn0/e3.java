@@ -2,8 +2,8 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e3 {
-    public final String a;
-    public final vn0.w1 b;
+    public String a;
+    public vn0.w1 b;
 
     public e3(String str, vn0.w1 w1Var) {
         this.a = str;

@@ -4,16 +4,16 @@ package g3;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f24575a;
+    public Object f24575a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f24576b;
+    public int f24576b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f24577c;
+    public int f24577c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f24578d;
+    public String f24578d;
 
     public e(Object obj, int i, int i10, String str) {
         this.f24575a = obj;

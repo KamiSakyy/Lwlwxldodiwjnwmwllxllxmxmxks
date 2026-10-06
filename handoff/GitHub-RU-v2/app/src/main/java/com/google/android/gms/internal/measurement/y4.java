@@ -9,8 +9,8 @@ public final class y4 extends m7.y {
     public static final Logger e = Logger.getLogger(y4.class.getName());
     public static final boolean f = p6.e;
     public t5 a;
-    public final byte[] b;
-    public final int c;
+    public byte[] b;
+    public int c;
     public int d;
 
     public y4(int i, byte[] bArr) {

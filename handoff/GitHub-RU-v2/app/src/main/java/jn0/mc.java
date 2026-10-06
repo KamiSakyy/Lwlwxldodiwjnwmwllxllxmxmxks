@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mc {
-    public final int a;
-    public final kc b;
-    public final List c;
+    public int a;
+    public kc b;
+    public List c;
 
     public mc(int i, kc kcVar, List list) {
         this.a = i;

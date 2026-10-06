@@ -2,9 +2,9 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k20 {
-    public final aa1.b a;
-    public final String b;
-    public final String c;
+    public aa1.b a;
+    public String b;
+    public String c;
 
     public k20(String str, String str2) {
         k71.k.g(str, "issueId");

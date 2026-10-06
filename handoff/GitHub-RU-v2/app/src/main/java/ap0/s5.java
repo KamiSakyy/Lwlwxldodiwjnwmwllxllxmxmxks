@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s5 implements aa.h0 {
-    public final q5 a;
-    public final ZonedDateTime b;
-    public final boolean c;
-    public final String d;
-    public final r5 e;
+    public q5 a;
+    public ZonedDateTime b;
+    public boolean c;
+    public String d;
+    public r5 e;
 
     public s5(q5 q5Var, ZonedDateTime zonedDateTime, boolean z, String str, r5 r5Var) {
         this.a = q5Var;

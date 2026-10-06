@@ -7,10 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f30099a;
+    public String f30099a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ConcurrentHashMap f30100b;
+    public ConcurrentHashMap f30100b;
 
     public a(String str) {
         k71.k.g(str, "accountType");

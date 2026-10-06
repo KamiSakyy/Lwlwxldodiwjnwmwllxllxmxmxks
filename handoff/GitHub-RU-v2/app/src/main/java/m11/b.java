@@ -13,4 +13,6 @@ public final class b implements i51.c {
     }
     public Object O0(Object p1) { return null; }
     public Object g(Object p1) { return null; }
+    public Object O0(boolean p1) { return null; }
+    public Object g(Object p1) { return null; }
 }

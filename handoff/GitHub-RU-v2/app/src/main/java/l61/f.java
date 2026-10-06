@@ -8,9 +8,9 @@ import w80.a0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements o1 {
     public static final a0 d = new a0(7);
-    public final p61.c a;
-    public final o1 b;
-    public final d c;
+    public p61.c a;
+    public o1 b;
+    public d c;
 
     public f(p61.c cVar, o1 o1Var, m mVar) {
         this.a = cVar;

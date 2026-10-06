@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kz {
-    public final String a;
-    public final boolean b;
-    public final String c;
-    public final w80.q3 d;
+    public String a;
+    public boolean b;
+    public String c;
+    public w80.q3 d;
 
     public kz(String str, boolean z, String str2, w80.q3 q3Var) {
         this.a = str;

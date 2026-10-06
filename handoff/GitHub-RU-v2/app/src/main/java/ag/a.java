@@ -114,5 +114,5 @@ public final /* synthetic */ class a implements e {
         this.w = i;
         this.x = i2;
     }
-    public Object c(Object p1, Object p2) { return null; }
+    public static Object c(Object p1, Object p2) { return null; }
 }

@@ -4,14 +4,14 @@ import com.github.service.models.response.Avatar;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l8 implements k8 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final String d;
-    public final String e;
-    public final Avatar f;
-    public final String g;
-    public final int h;
+    public String a;
+    public String b;
+    public int c;
+    public String d;
+    public String e;
+    public Avatar f;
+    public String g;
+    public int h;
 
     public l8(String str, String str2, int i, String str3, String str4, Avatar avatar, String str5, int i2) {
         this.a = str;

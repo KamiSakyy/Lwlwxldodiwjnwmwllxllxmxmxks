@@ -7,7 +7,7 @@ import oa.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements g {
-    public final qj.a a;
+    public qj.a a;
 
     public a(qj.a aVar) {
         k.g(aVar, "databaseFactory");
@@ -19,4 +19,5 @@ public final class a implements g {
         return ((GitHubDatabase) this.a.a(jVar)).y();
     }
 
+    public Object a(Object p1) { return null; }
 }

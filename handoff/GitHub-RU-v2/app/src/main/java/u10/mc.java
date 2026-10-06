@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mc {
-    public final String a;
-    public final nc b;
+    public String a;
+    public nc b;
 
     public mc(String str, nc ncVar) {
         this.a = str;

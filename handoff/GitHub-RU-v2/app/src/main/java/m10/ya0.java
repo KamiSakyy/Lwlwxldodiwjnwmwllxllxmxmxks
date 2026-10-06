@@ -14,7 +14,7 @@ public final class ya0 {
     public static final ya0 x;
     public static final ya0 y;
     public static final /* synthetic */ ya0[] z;
-    public final String r;
+    public String r;
 
     static {
         ya0 ya0Var = new ya0("CUSTOM", 0, "CUSTOM");

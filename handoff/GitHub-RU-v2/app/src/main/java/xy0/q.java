@@ -23,11 +23,11 @@ import xn.q1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q {
     public static final a Companion = new a();
-    public final com.github.service.wrapper.b a;
-    public final String b;
-    public final a00.b c;
-    public final a00.b d;
-    public final a00.b e;
+    public com.github.service.wrapper.b a;
+    public String b;
+    public a00.b c;
+    public a00.b d;
+    public a00.b e;
 
     public q(com.github.service.wrapper.b bVar, String str, a00.b bVar2, a00.b bVar3, a00.b bVar4) {
         k71.k.g(bVar, "cachedClient");

@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mm {
-    public final im a;
-    public final om b;
+    public im a;
+    public om b;
 
     public mm(im imVar, om omVar) {
         this.a = imVar;

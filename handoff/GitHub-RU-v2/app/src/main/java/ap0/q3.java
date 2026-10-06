@@ -2,8 +2,8 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q3 {
-    public final m3 a;
-    public final String b;
+    public m3 a;
+    public String b;
 
     public q3(m3 m3Var, String str) {
         this.a = m3Var;

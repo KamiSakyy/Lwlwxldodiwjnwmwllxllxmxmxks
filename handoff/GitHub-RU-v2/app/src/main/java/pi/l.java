@@ -11,7 +11,7 @@ public final class l {
     public static final l t;
     public static final l u;
     public static final /* synthetic */ l[] v;
-    public final String r;
+    public String r;
 
     static {
         l lVar = new l("COMMAND", 0, "command");

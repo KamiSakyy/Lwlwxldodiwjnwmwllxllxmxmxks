@@ -14,7 +14,7 @@ public final class i {
     public static final i w;
     public static final i x;
     public static final /* synthetic */ i[] y;
-    public final int r;
+    public int r;
 
     static {
         i iVar = new i(0, "BLACK", 0);

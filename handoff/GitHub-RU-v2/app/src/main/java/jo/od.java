@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class od {
-    public final String a;
-    public final String b;
-    public final gv.w3 c;
-    public final gv.a4 d;
+    public String a;
+    public String b;
+    public gv.w3 c;
+    public gv.a4 d;
 
     public od(String str, String str2, gv.w3 w3Var, gv.a4 a4Var) {
         this.a = str;

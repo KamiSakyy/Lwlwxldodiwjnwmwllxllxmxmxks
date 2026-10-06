@@ -16,7 +16,7 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public final SharedPreferences a;
+    public SharedPreferences a;
 
     public h(Context context) {
         boolean isEmpty;
@@ -72,7 +72,7 @@ public final class h {
         }
     }
 
-    public synchronized void c() {
+    public static synchronized void c() {
         try {
             SharedPreferences.Editor edit = this.a.edit();
             int i = 0;
@@ -211,4 +211,5 @@ public final class h {
     }
     public Object b() { return null; }
     public Object c(Object p1) { return null; }
+    public Object b(Object p1, Object p2) { return null; }
 }

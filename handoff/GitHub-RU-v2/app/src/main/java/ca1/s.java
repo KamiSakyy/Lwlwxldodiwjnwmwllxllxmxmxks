@@ -4,9 +4,9 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class s {
-    public final int a;
-    public final int b;
-    public final int c;
+    public int a;
+    public int b;
+    public int c;
 
     public s(int i, int i2, int i3) {
         this.a = i;
@@ -34,5 +34,5 @@ public final class s {
     public final String toString() {
         return this.b + "," + this.c + ":" + this.a;
     }
-    public Object K(Object p1, Object p2) { return null; }
+    public static Object K(Object p1, Object p2) { return null; }
 }

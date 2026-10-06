@@ -2,15 +2,15 @@ package com.github.rudroid.users;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public final com.github.rudroid.activities.util.c a;
-    public final gn.d b;
-    public final gn.f c;
-    public final gn.b d;
-    public final gn.j e;
-    public final gn.l f;
-    public final gn.p g;
-    public final kl.c h;
-    public final gn.h i;
+    public com.github.rudroid.activities.util.c a;
+    public gn.d b;
+    public gn.f c;
+    public gn.b d;
+    public gn.j e;
+    public gn.l f;
+    public gn.p g;
+    public kl.c h;
+    public gn.h i;
 
     public r(com.github.rudroid.activities.util.c cVar, gn.d dVar, gn.f fVar, gn.b bVar, gn.j jVar, gn.l lVar, gn.p pVar, kl.c cVar2, gn.h hVar) {
         k71.k.g(cVar, "accountHolder");

@@ -16,7 +16,7 @@ public final class wz {
     public static final wz x;
     public static final wz y;
     public static final wz z;
-    public final String r;
+    public String r;
 
     static {
         wz wzVar = new wz("DISCUSSIONS", 0, "DISCUSSIONS");

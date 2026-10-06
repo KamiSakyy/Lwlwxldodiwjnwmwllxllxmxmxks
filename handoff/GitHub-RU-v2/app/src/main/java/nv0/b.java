@@ -9,11 +9,11 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements h0 {
-    public final String a;
-    public final String b;
-    public final f40 c;
-    public final boolean d;
-    public final a e;
+    public String a;
+    public String b;
+    public f40 c;
+    public boolean d;
+    public a e;
 
     public b(String str, String str2, f40 f40Var, boolean z, a aVar) {
         k.g(str, "__typename");

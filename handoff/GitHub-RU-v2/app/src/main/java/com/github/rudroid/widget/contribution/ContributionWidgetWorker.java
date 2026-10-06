@@ -24,9 +24,9 @@ import z01.r1;
 public final class ContributionWidgetWorker extends CoroutineWorker {
     public static final a Companion = new a();
     public static final v8.f j;
-    public final Context g;
-    public final oa.m h;
-    public final hl.c i;
+    public Context g;
+    public oa.m h;
+    public hl.c i;
 
     public static final class a {
         public static void a(Context context) {

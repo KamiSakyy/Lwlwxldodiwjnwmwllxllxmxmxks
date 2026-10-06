@@ -21,4 +21,5 @@ public final class c extends c71.c {
     public static final Object d = null;
     public static final Object j = null;
     public static final Object r = null;
+    public Object v(Object p1) { return null; }
 }

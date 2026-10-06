@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xn {
-    public final String a;
-    public final String b;
-    public final yn c;
+    public String a;
+    public String b;
+    public yn c;
 
     public xn(String str, String str2, yn ynVar) {
         this.a = str;

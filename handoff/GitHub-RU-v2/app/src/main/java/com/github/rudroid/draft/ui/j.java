@@ -6,10 +6,10 @@ import com.github.rudroid.issueorpullrequest.triagesheet.b;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final c01.b f12148a;
+    public c01.b f12148a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final b.f f12149b;
+    public b.f f12149b;
 
     public j(c01.b bVar, b.f fVar) {
         k71.k.g(bVar, "draftIssue");

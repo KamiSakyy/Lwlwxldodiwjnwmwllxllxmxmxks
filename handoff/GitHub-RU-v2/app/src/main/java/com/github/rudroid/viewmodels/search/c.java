@@ -10,9 +10,9 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends k1 {
-    public final y1 s;
-    public final y1 t;
-    public final i1 u;
+    public y1 s;
+    public y1 t;
+    public i1 u;
 
     public c() {
         y1 c = n1.c(new a("", false));

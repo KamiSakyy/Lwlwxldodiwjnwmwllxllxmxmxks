@@ -21,7 +21,7 @@ final class m0 extends c71.j implements j71.e {
         return new m0(this.w, this.x, cVar);
     }
 
-    public final Object s(Object obj, Object obj2) {
+    public static final Object s(Object obj, Object obj2) {
         return r((a71.c) obj2, (v71.z) obj).v(w61.a0.a);
     }
 

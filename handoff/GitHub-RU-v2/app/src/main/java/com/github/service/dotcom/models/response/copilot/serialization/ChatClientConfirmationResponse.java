@@ -13,8 +13,8 @@ import x61.s;
 public final class ChatClientConfirmationResponse {
     public static final Companion Companion = new Companion();
     public static final h[] c = {w.s(i.r, new gz.a(24)), null};
-    public final hz.a a;
-    public final kotlinx.serialization.json.c b;
+    public hz.a a;
+    public kotlinx.serialization.json.c b;
 
     public static final class Companion {
         public final KSerializer serializer() {

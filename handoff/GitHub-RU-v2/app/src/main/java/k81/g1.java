@@ -4,7 +4,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g1 extends o0 {
-    public final String b;
+    public String b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g1(SerialDescriptor serialDescriptor) {

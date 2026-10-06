@@ -14,7 +14,7 @@ public final class ev {
     public static final ev x;
     public static final ev y;
     public static final /* synthetic */ ev[] z;
-    public final String r;
+    public String r;
 
     static {
         ev evVar = new ev("CUSTOM", 0, "CUSTOM");

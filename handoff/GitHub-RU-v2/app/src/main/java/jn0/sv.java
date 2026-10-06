@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sv {
-    public final String a;
-    public final String b;
-    public final tv c;
+    public String a;
+    public String b;
+    public tv c;
 
     public sv(String str, String str2, tv tvVar) {
         k71.k.g(str, "__typename");

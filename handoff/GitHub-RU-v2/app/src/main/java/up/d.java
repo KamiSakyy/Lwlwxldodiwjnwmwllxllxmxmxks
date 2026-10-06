@@ -7,9 +7,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final List a;
-    public final String b;
-    public final String c;
+    public List a;
+    public String b;
+    public String c;
 
     public d(String str, String str2, List list) {
         this.a = list;

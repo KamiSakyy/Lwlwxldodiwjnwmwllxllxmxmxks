@@ -7,9 +7,9 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v extends k1 {
-    public final nj.e s;
-    public final i1 t;
-    public final i1 u;
+    public nj.e s;
+    public i1 t;
+    public i1 u;
 
     public v(nj.e eVar) {
         k71.k.g(eVar, "overrideStore");

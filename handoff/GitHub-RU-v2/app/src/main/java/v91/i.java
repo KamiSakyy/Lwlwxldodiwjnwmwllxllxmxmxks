@@ -8,8 +8,8 @@ import sy.d0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i extends u91.b {
-    public final q1 e;
-    public final v f;
+    public q1 e;
+    public v f;
     public h0 g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

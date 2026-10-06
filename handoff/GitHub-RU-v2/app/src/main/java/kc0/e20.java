@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e20 implements aaShadow.n0 {
     public static final z10 Companion = new z10();
-    public final String r;
-    public final gn0.rm s;
-    public final aa1.b t;
+    public String r;
+    public gn0.rm s;
+    public aa1.b t;
 
     public e20(String str, gn0.rm rmVar, aa1.b bVar) {
         k71.k.g(str, "id");

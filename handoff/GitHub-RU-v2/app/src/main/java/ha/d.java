@@ -8,10 +8,10 @@ import k71.k;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final f f25577a;
+    public f f25577a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f25578b;
+    public int f25578b;
 
     public d(f fVar) {
         k.g(fVar, "record");

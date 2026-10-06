@@ -2,11 +2,11 @@ package h91;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f0 {
-    public final byte[] a;
+    public byte[] a;
     public int b;
     public int c;
     public boolean d;
-    public final boolean e;
+    public boolean e;
     public f0 f;
     public f0 g;
 

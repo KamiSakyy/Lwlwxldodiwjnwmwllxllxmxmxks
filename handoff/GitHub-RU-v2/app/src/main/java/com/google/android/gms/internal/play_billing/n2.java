@@ -2,10 +2,10 @@ package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 {
-    public final g1 a;
-    public final String b;
-    public final Object[] c;
-    public final int d;
+    public g1 a;
+    public String b;
+    public Object[] c;
+    public int d;
 
     public n2(g1 g1Var, String str, Object[] objArr) {
         this.a = g1Var;

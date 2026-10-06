@@ -5,10 +5,10 @@ import m10.da0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z1 {
-    public final da0 a;
-    public final ArrayList b;
-    public final String c;
-    public final String d;
+    public da0 a;
+    public ArrayList b;
+    public String c;
+    public String d;
 
     public z1(da0 da0Var, ArrayList arrayList, String str, String str2) {
         this.a = da0Var;

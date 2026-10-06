@@ -7,9 +7,9 @@ import z01.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final l a;
-    public final oa.g b;
-    public final oa.g c;
+    public l a;
+    public oa.g b;
+    public oa.g c;
 
     public j(l lVar, oa.g gVar, oa.g gVar2) {
         k71.k.g(lVar, "pinnedItemsStore");

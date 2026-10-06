@@ -8,7 +8,7 @@ import t.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends u91.b {
-    public final char e;
+    public char e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g(t91.d dVar, v vVar, char c) {

@@ -2,14 +2,14 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c6 {
-    public final aa1.b a;
-    public final s00 b;
-    public final aa1.b c;
-    public final y00 d;
-    public final String e;
-    public final aa1.b f;
-    public final aa1.b g;
-    public final y10 h;
+    public aa1.b a;
+    public s00 b;
+    public aa1.b c;
+    public y00 d;
+    public String e;
+    public aa1.b f;
+    public aa1.b g;
+    public y10 h;
 
     public c6(s00 s00Var, y00 y00Var, String str, aa1.b bVar, aa1.b bVar2, y10 y10Var) {
         k71.k.g(str, "name");

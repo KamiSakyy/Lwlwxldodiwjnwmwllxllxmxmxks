@@ -4,12 +4,12 @@ import pz0.va;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final va d;
-    public final a e;
-    public final l0 f;
+    public String a;
+    public String b;
+    public int c;
+    public va d;
+    public a e;
+    public l0 f;
 
     public j(String str, String str2, int i, va vaVar, a aVar, l0 l0Var) {
         this.a = str;

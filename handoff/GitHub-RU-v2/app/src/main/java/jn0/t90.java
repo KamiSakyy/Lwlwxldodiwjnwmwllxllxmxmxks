@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t90 {
-    public final String a;
-    public final String b;
-    public final ar0.a0 c;
+    public String a;
+    public String b;
+    public ar0.a0 c;
 
     public t90(String str, String str2, ar0.a0 a0Var) {
         this.a = str;

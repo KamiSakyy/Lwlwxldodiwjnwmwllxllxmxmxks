@@ -26,17 +26,17 @@ import z70.l2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements w1 {
-    public final ue a;
-    public final ArrayList b;
-    public final int c;
-    public final ArrayList d;
-    public final int e;
-    public final ArrayList f;
-    public final int g;
-    public final ArrayList h;
-    public final int i;
-    public final ArrayList j;
-    public final int k;
+    public ue a;
+    public ArrayList b;
+    public int c;
+    public ArrayList d;
+    public int e;
+    public ArrayList f;
+    public int g;
+    public ArrayList h;
+    public int i;
+    public ArrayList j;
+    public int k;
 
     public e(ue ueVar) {
         ef efVar;
@@ -164,7 +164,7 @@ public final class e implements w1 {
         return this.b;
     }
 
-    public final ArrayList c() {
+    public static final ArrayList c() {
         return this.j;
     }
 
@@ -219,5 +219,5 @@ public final class e implements w1 {
         return "ApolloGlobalSearch(data=" + this.a + ")";
     }
     public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

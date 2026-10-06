@@ -4,13 +4,13 @@ import com.github.service.models.response.IssueOrPullRequest$ReviewerReviewState
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e2 {
-    public final com.github.service.models.response.a a;
+    public com.github.service.models.response.a a;
     public final IssueOrPullRequest$ReviewerReviewState b;
-    public final boolean c;
-    public final String d;
-    public final sy.e0 e;
-    public final boolean f;
-    public final d2 g;
+    public boolean c;
+    public String d;
+    public sy.e0 e;
+    public boolean f;
+    public d2 g;
 
     public /* synthetic */ e2(com.github.service.models.response.a aVar, IssueOrPullRequest$ReviewerReviewState issueOrPullRequest$ReviewerReviewState, String str, sy.e0 e0Var, boolean z, int i) {
         this(aVar, issueOrPullRequest$ReviewerReviewState, true, str, e0Var, (i & 32) != 0 ? false : z, null);

@@ -6,10 +6,10 @@ import com.github.rudroid.utilities.ui.g1;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final g1 f6959a;
+    public g1 f6959a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f6960b;
+    public boolean f6960b;
 
     public a(g1 g1Var, boolean z10) {
         this.f6959a = g1Var;

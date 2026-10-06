@@ -12,7 +12,7 @@ public final class lc {
     public static final lc w;
     public static final /* synthetic */ lc[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         lc lcVar = new lc("COMPLETED", 0, "COMPLETED");

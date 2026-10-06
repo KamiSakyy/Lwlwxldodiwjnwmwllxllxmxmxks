@@ -9,7 +9,7 @@ public final class fa0 {
     public static final fa0 t;
     public static final /* synthetic */ fa0[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         fa0 fa0Var = new fa0("BOOLEAN", 0, "BOOLEAN");

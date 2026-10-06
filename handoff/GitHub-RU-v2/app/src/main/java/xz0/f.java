@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final SimpleLegacyProject a;
-    public final String b;
+    public SimpleLegacyProject a;
+    public String b;
 
     public f(SimpleLegacyProject simpleLegacyProject, String str) {
         this.a = simpleLegacyProject;

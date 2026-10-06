@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements v0 {
-    public final d a;
-    public final String b;
-    public final String c;
+    public d a;
+    public String b;
+    public String c;
 
     public b(d dVar, String str, String str2) {
         this.a = dVar;
@@ -39,4 +39,5 @@ public final class b implements v0 {
         sb.append(", __typename=");
         return h1.p(sb, this.c, ")");
     }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

@@ -9,9 +9,9 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w0 extends d21.a {
     public static final Parcelable.Creator<w0> CREATOR = new v0(1);
-    public final int r;
-    public final String s;
-    public final Intent t;
+    public int r;
+    public String s;
+    public Intent t;
 
     public w0(int i, Intent intent, String str) {
         this.r = i;
@@ -47,4 +47,6 @@ public final class w0 extends d21.a {
         m7.y.U(parcel, 3, this.t, i);
         m7.y.a0(parcel, Z);
     }
+    public Object K(Object p1) { return null; }
+    public Object v() { return null; }
 }

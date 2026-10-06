@@ -21,7 +21,7 @@ import t.q;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class FirebaseAnalytics {
     public static volatile FirebaseAnalytics b;
-    public final k1 a;
+    public k1 a;
 
     public FirebaseAnalytics(k1 k1Var) {
         u.g(k1Var);

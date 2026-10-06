@@ -2,11 +2,11 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements aa.h0 {
-    public final String a;
-    public final g b;
-    public final i c;
-    public final h d;
-    public final j e;
+    public String a;
+    public g b;
+    public i c;
+    public h d;
+    public j e;
 
     public k(String str, g gVar, i iVar, h hVar, j jVar) {
         k71.k.g(str, "__typename");

@@ -18,7 +18,9 @@ public final class l0 extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
-    public Object K(Object p1) { return null; }
+    public es K(Object p1) { return null; }
     public Object T(Object p1) { return null; }
     public Object j(Object p1) { return null; }
+    public Object g(Object p1, Object p2, Object p3, Object p4, Object p5, boolean p6, boolean p7, boolean p8, boolean p9, Object p10, boolean p11, Object p12, boolean p13, boolean p14, Object p15) { return null; }
+    public Object i(Object p1, Object p2, Object p3, Object p4, boolean p5, boolean p6, boolean p7, boolean p8, Object p9, Object p10, boolean p11, boolean p12, Object p13, int p14) { return null; }
 }

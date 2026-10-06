@@ -25,11 +25,11 @@ import r81.g;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f implements v81.e {
     public static final n f;
-    public final u a;
-    public final v81.d b;
-    public final h c;
+    public u a;
+    public v81.d b;
+    public h c;
     public int d;
-    public final ba.c e;
+    public ba.c e;
 
     static {
         n nVar = n.s;

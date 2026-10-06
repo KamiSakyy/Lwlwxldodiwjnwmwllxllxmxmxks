@@ -2,20 +2,20 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l9 {
-    public final aa1.b a;
-    public final aa1.b b;
-    public final aa1.b c;
-    public final aa1.b d;
-    public final aa1.b e;
-    public final aa1.b f;
-    public final aa1.b g;
-    public final aa1.b h;
-    public final aa1.b i;
-    public final aa1.b j;
-    public final aa1.b k;
-    public final aa1.b l;
-    public final String m;
-    public final String n;
+    public aa1.b a;
+    public aa1.b b;
+    public aa1.b c;
+    public aa1.b d;
+    public aa1.b e;
+    public aa1.b f;
+    public aa1.b g;
+    public aa1.b h;
+    public aa1.b i;
+    public aa1.b j;
+    public aa1.b k;
+    public aa1.b l;
+    public String m;
+    public String n;
 
     public l9(aa1.b bVar, aa1.b bVar2, aa1.b bVar3, aa1.b bVar4, aa1.b bVar5, aa1.b bVar6, aa1.b bVar7, aa1.b bVar8, aa1.b bVar9, String str, String str2) {
         k71.k.g(str, "repositoryId");

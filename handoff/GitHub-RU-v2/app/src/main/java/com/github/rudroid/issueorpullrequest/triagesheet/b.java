@@ -17,7 +17,7 @@ public abstract class b implements z {
     public static final a Companion = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f16239r;
+    public String f16239r;
 
     public static final class a {
     }
@@ -26,7 +26,7 @@ public abstract class b implements z {
     public static final class C0045b extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final IssueType f16240s;
+        public IssueType f16240s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public C0045b(IssueType issueType) {
@@ -54,7 +54,7 @@ public abstract class b implements z {
     public static final class c extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final xz0.f f16241s;
+        public xz0.f f16241s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(xz0.f fVar) {
@@ -82,7 +82,7 @@ public abstract class b implements z {
     public static final class d extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final v2 f16242s;
+        public v2 f16242s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(v2 v2Var) {
@@ -110,7 +110,7 @@ public abstract class b implements z {
     public static final class e extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final h01.j f16243s;
+        public h01.j f16243s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(h01.j jVar) {
@@ -138,10 +138,10 @@ public abstract class b implements z {
     public static final class f extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final l01.s f16244s;
+        public l01.s f16244s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final List f16245t;
+        public List f16245t;
 
         public interface a {
 
@@ -149,28 +149,28 @@ public abstract class b implements z {
             public static final class C0046a implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16246a;
+                public String f16246a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16247b;
+                public String f16247b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16248c;
+                public ProjectFieldType f16248c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final List f16249d;
+                public List f16249d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final String f16250e;
+                public String f16250e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final boolean f16251f;
+                public boolean f16251f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final l01.x f16252g;
+                public l01.x f16252g;
 
                 /* renamed from: h, reason: collision with root package name */
-                public final l01.q f16253h;
+                public l01.q f16253h;
 
                 public C0046a(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.q qVar) {
                     k71.k.g(str, "fieldId");
@@ -256,25 +256,25 @@ public abstract class b implements z {
             public static final class C0047b implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16254a;
+                public String f16254a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16255b;
+                public String f16255b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16256c;
+                public ProjectFieldType f16256c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final l01.d f16257d;
+                public l01.d f16257d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final List f16258e;
+                public List f16258e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final String f16259f;
+                public String f16259f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final boolean f16260g;
+                public boolean f16260g;
 
                 public C0047b(String str, String str2, ProjectFieldType projectFieldType, l01.d dVar, List list, String str3, boolean z10) {
                     k71.k.g(str, "fieldId");
@@ -356,28 +356,28 @@ public abstract class b implements z {
             public static final class c implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16261a;
+                public String f16261a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16262b;
+                public String f16262b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16263c;
+                public ProjectFieldType f16263c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final com.github.service.models.response.projects.a f16264d;
+                public com.github.service.models.response.projects.a f16264d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final ArrayList f16265e;
+                public ArrayList f16265e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final List f16266f;
+                public List f16266f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final String f16267g;
+                public String f16267g;
 
                 /* renamed from: h, reason: collision with root package name */
-                public final boolean f16268h;
+                public boolean f16268h;
 
                 public c(String str, String str2, ProjectFieldType projectFieldType, com.github.service.models.response.projects.a aVar, ArrayList arrayList, List list, String str3, boolean z10) {
                     k71.k.g(str, "fieldId");
@@ -460,28 +460,28 @@ public abstract class b implements z {
             public static final class d implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16269a;
+                public String f16269a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16270b;
+                public String f16270b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16271c;
+                public ProjectFieldType f16271c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final List f16272d;
+                public List f16272d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final String f16273e;
+                public String f16273e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final boolean f16274f;
+                public boolean f16274f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final l01.x f16275g;
+                public l01.x f16275g;
 
                 /* renamed from: h, reason: collision with root package name */
-                public final l01.f f16276h;
+                public l01.f f16276h;
 
                 public d(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.f fVar) {
                     k71.k.g(str, "fieldId");
@@ -566,28 +566,28 @@ public abstract class b implements z {
             public static final class e implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16277a;
+                public String f16277a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16278b;
+                public String f16278b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16279c;
+                public ProjectFieldType f16279c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final List f16280d;
+                public List f16280d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final String f16281e;
+                public String f16281e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final boolean f16282f;
+                public boolean f16282f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final l01.x f16283g;
+                public l01.x f16283g;
 
                 /* renamed from: h, reason: collision with root package name */
-                public final l01.j f16284h;
+                public l01.j f16284h;
 
                 public e(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.j jVar) {
                     k71.k.g(str, "fieldId");
@@ -673,28 +673,28 @@ public abstract class b implements z {
             public static final class C0048f implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16285a;
+                public String f16285a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16286b;
+                public String f16286b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16287c;
+                public ProjectFieldType f16287c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final List f16288d;
+                public List f16288d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final String f16289e;
+                public String f16289e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final boolean f16290f;
+                public boolean f16290f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final l01.x f16291g;
+                public l01.x f16291g;
 
                 /* renamed from: h, reason: collision with root package name */
-                public final l01.g f16292h;
+                public l01.g f16292h;
 
                 public C0048f(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.g gVar) {
                     k71.k.g(str, "fieldId");
@@ -779,25 +779,25 @@ public abstract class b implements z {
             public static final class g implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16293a;
+                public String f16293a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16294b;
+                public String f16294b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16295c;
+                public ProjectFieldType f16295c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final l01.i f16296d;
+                public l01.i f16296d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final List f16297e;
+                public List f16297e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final String f16298f;
+                public String f16298f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final boolean f16299g;
+                public boolean f16299g;
 
                 public g(String str, String str2, ProjectFieldType projectFieldType, l01.i iVar, List list, String str3, boolean z10) {
                     k71.k.g(str, "fieldId");
@@ -879,28 +879,28 @@ public abstract class b implements z {
             public static final class h implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16300a;
+                public String f16300a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16301b;
+                public String f16301b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16302c;
+                public ProjectFieldType f16302c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final com.github.service.models.response.projects.b f16303d;
+                public com.github.service.models.response.projects.b f16303d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final List f16304e;
+                public List f16304e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final List f16305f;
+                public List f16305f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final String f16306g;
+                public String f16306g;
 
                 /* renamed from: h, reason: collision with root package name */
-                public final boolean f16307h;
+                public boolean f16307h;
 
                 public h(String str, String str2, ProjectFieldType projectFieldType, com.github.service.models.response.projects.b bVar, List list, List list2, String str3, boolean z10) {
                     k71.k.g(str, "fieldId");
@@ -984,25 +984,25 @@ public abstract class b implements z {
             public static final class i implements a {
 
                 /* renamed from: a, reason: collision with root package name */
-                public final String f16308a;
+                public String f16308a;
 
                 /* renamed from: b, reason: collision with root package name */
-                public final String f16309b;
+                public String f16309b;
 
                 /* renamed from: c, reason: collision with root package name */
-                public final ProjectFieldType f16310c;
+                public ProjectFieldType f16310c;
 
                 /* renamed from: d, reason: collision with root package name */
-                public final l01.o f16311d;
+                public l01.o f16311d;
 
                 /* renamed from: e, reason: collision with root package name */
-                public final List f16312e;
+                public List f16312e;
 
                 /* renamed from: f, reason: collision with root package name */
-                public final String f16313f;
+                public String f16313f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public final boolean f16314g;
+                public boolean f16314g;
 
                 public i(String str, String str2, ProjectFieldType projectFieldType, l01.o oVar, List list, String str3, boolean z10) {
                     k71.k.g(str, "fieldId");
@@ -1165,7 +1165,7 @@ public abstract class b implements z {
     public static final class g extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final yz0.f f16318s;
+        public yz0.f f16318s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public g(yz0.f fVar) {
@@ -1193,7 +1193,7 @@ public abstract class b implements z {
     public static final class h extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f16319s;
+        public int f16319s;
 
         public h(int i) {
             super(no.a.k("ITEM_TYPE_SECTION_EMPTY", i));
@@ -1219,13 +1219,13 @@ public abstract class b implements z {
     public static final class i extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f16320s;
+        public int f16320s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final boolean f16321t;
+        public boolean f16321t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final p f16322u;
+        public p f16322u;
 
         public i(int i, boolean z10, p pVar) {
             super(no.a.k("ITEM_TYPE_SECTION_HEADER", i));
@@ -1257,7 +1257,7 @@ public abstract class b implements z {
     public static final class j extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final Object f16323s;
+        public Object f16323s;
 
         public j(List list) {
             super("ITEM_TYPE_LABELS");
@@ -1283,7 +1283,7 @@ public abstract class b implements z {
     public static final class k extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final o2 f16324s;
+        public o2 f16324s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public k(o2 o2Var) {
@@ -1311,7 +1311,7 @@ public abstract class b implements z {
     public static final class l extends b {
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f16325s;
+        public int f16325s;
 
         public l(int i) {
             super(no.a.k("ITEM_TYPE_SEPARATOR", i));

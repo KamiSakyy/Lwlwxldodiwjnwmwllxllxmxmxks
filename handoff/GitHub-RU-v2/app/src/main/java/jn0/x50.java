@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x50 implements aaShadow.n0 {
     public static final s50 Companion = new s50();
-    public final String r;
-    public final pz0.qt s;
-    public final aa1.b t;
+    public String r;
+    public pz0.qt s;
+    public aa1.b t;
 
     public x50(String str, pz0.qt qtVar, aa1.b bVar) {
         k71.k.g(str, "id");

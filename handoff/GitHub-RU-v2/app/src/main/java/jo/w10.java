@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w10 {
-    public final String a;
-    public final vx.a b;
+    public String a;
+    public vx.a b;
 
     public w10(String str, vx.a aVar) {
         k71.k.g(str, "__typename");

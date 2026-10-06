@@ -21,7 +21,7 @@ import x61.m;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e implements j, f, a2 {
     public static final /* synthetic */ AtomicReferenceFieldUpdater w = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "state$volatile");
-    public final a71.h r;
+    public a71.h r;
     public Object t;
     private volatile /* synthetic */ Object state$volatile = h.a;
     public ArrayList s = new ArrayList(2);

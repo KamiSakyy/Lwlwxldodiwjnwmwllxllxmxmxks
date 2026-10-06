@@ -2,9 +2,9 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e1 {
-    public final String a;
-    public final String b;
-    public final et0.a c;
+    public String a;
+    public String b;
+    public et0.a c;
 
     public e1(String str, String str2, et0.a aVar) {
         this.a = str;

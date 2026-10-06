@@ -10,7 +10,7 @@ public final class zi {
     public static final zi u;
     public static final /* synthetic */ zi[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         zi ziVar = new zi("ASC", 0, "ASC");

@@ -21,19 +21,19 @@ public final class RepositoriesEntryPointRoute implements d {
     public static final h[] f20016f = {w.s(i.r, new p(3)), null, null, null, null};
 
     /* renamed from: a, reason: collision with root package name */
-    public final RepositoriesViewType f20017a;
+    public RepositoriesViewType f20017a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f20018b;
+    public String f20018b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f20019c;
+    public String f20019c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Boolean f20020d;
+    public Boolean f20020d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Boolean f20021e;
+    public Boolean f20021e;
 
     public static final class Companion {
         public final KSerializer serializer() {

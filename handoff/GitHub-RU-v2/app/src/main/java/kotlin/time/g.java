@@ -4,10 +4,10 @@ package kotlin.time;
 public final class g implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f27887a;
+    public long f27887a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f27888b;
+    public int f27888b;
 
     public g(int i, long j10) {
         this.f27887a = j10;

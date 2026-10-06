@@ -31,4 +31,6 @@ public abstract class f extends e {
     public abstract int t0();
 
     public abstract void u0(Context context, oa.j jVar, b6.c cVar);
+    public Object C(Object p1) { return null; }
+    public Object setResult(int p1) { return null; }
 }

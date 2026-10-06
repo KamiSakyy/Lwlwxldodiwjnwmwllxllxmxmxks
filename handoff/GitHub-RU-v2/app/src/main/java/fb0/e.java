@@ -2,12 +2,12 @@ package fb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final v b;
-    public final p c;
-    public final y d;
-    public final w e;
-    public final m f;
+    public String a;
+    public v b;
+    public p c;
+    public y d;
+    public w e;
+    public m f;
 
     public e(String str, v vVar, p pVar, y yVar, w wVar, m mVar) {
         k71.k.g(str, "__typename");

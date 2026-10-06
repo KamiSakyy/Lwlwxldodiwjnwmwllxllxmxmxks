@@ -4,13 +4,13 @@ import hc0.uu;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x4 {
-    public final String a;
-    public final String b;
-    public final uu c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final boolean g;
+    public String a;
+    public String b;
+    public uu c;
+    public String d;
+    public String e;
+    public String f;
+    public boolean g;
 
     public x4(String str, String str2, uu uuVar, String str3, String str4, String str5, boolean z) {
         this.a = str;

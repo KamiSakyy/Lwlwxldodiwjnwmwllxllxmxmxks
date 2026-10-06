@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f extends BroadcastReceiver {
     public static final AtomicReference b = new AtomicReference();
-    public final Context a;
+    public Context a;
 
     public f(Context context) {
         this.a = context;
@@ -40,4 +40,6 @@ public final class f extends BroadcastReceiver {
     public static final Object x = null;
     public static final Object y = null;
     public static final Object z = null;
+    public Object a(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
 }

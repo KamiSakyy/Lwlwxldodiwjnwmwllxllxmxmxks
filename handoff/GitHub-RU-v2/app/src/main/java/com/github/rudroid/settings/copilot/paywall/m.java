@@ -5,8 +5,8 @@ import xn.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public final e1 a;
-    public final MobileEventContext b;
+    public e1 a;
+    public MobileEventContext b;
 
     public m(e1 e1Var) {
         this.a = e1Var;

@@ -56,10 +56,10 @@ public abstract class b implements Parcelable {
         public static final Parcelable.Creator<C0062b> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public final String f19535r;
+        public String f19535r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f19536s;
+        public String f19536s;
 
         /* renamed from: com.github.rudroid.repository.files.b$b$a */
         public static final class a implements Parcelable.Creator<C0062b> {

@@ -5,11 +5,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final ArrayList a;
-    public final int b;
-    public final int c;
-    public final int d;
-    public final double e;
+    public ArrayList a;
+    public int b;
+    public int c;
+    public int d;
+    public double e;
 
     public d(double d, int i, int i2, int i3, ArrayList arrayList) {
         this.a = arrayList;

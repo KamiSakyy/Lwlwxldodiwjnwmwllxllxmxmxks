@@ -10,7 +10,7 @@ public final class l40 {
     public static final l40 u;
     public static final /* synthetic */ l40[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         l40 l40Var = new l40("EMAIL", 0, "EMAIL");

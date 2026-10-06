@@ -7,7 +7,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class h implements n, j {
-    public final String r;
+    public String r;
     public final HashMap s = new HashMap();
 
     public h(String str) {

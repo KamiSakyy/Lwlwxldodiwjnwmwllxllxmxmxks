@@ -767,4 +767,10 @@ public final class s {
     }
     public Object N() { return null; }
     public Object n0(Object p1) { return null; }
+    public Object c0(int p1) { return null; }
+    public Object d(int p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(boolean p1) { return null; }
 }

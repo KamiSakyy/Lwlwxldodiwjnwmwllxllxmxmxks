@@ -2,14 +2,14 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j5 {
-    public final String a;
-    public final gn0.l2 b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final o4 g;
-    public final boolean h;
+    public String a;
+    public gn0.l2 b;
+    public String c;
+    public int d;
+    public String e;
+    public String f;
+    public o4 g;
+    public boolean h;
 
     public j5(String str, gn0.l2 l2Var, String str2, int i, String str3, String str4, o4 o4Var, boolean z) {
         this.a = str;

@@ -7,7 +7,7 @@ import com.github.service.models.response.SpokenLanguage;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 extends com.github.rudroid.searchandfilter.complexfilter.b<SpokenLanguage> implements com.github.rudroid.searchandfilter.complexfilter.d0<u> {
     public static final /* synthetic */ int D = 0;
-    public final am.d C;
+    public am.d C;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i0(am.d dVar, com.github.rudroid.activities.util.c cVar, a1 a1Var) {

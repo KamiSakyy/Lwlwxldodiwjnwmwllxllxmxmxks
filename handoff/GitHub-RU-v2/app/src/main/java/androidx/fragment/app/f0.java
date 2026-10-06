@@ -10,10 +10,10 @@ import android.view.animation.Transformation;
 public final class f0 extends AnimationSet implements Runnable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final ViewGroup f2541r;
+    public ViewGroup f2541r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final View f2542s;
+    public View f2542s;
 
     /* renamed from: t, reason: collision with root package name */
     public boolean f2543t;

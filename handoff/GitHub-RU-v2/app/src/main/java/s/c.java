@@ -6,10 +6,10 @@ import java.util.Map;
 public final class c implements Map.Entry {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Object f31374r;
+    public Object f31374r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Object f31375s;
+    public Object f31375s;
 
     /* renamed from: t, reason: collision with root package name */
     public c f31376t;

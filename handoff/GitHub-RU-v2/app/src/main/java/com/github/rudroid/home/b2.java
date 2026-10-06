@@ -12,10 +12,10 @@ public abstract class b2 implements le.z {
     public static final b Companion = new b();
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f14886r;
+    public int f14886r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f14887s;
+    public String f14887s;
 
     public static final class a extends b2 {
 
@@ -41,7 +41,7 @@ public abstract class b2 implements le.z {
     public static final class e extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final xk.g f14891t;
+        public xk.g f14891t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(xk.g gVar) {
@@ -69,7 +69,7 @@ public abstract class b2 implements le.z {
     public static final class f extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final boolean f14892t;
+        public boolean f14892t;
 
         public f(boolean z10) {
             super("MissedTwoFactor", 13);
@@ -95,7 +95,7 @@ public abstract class b2 implements le.z {
     public static abstract class g extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final vc.a f14893t;
+        public vc.a f14893t;
 
         public static final class a extends g {
 
@@ -163,19 +163,19 @@ public abstract class b2 implements le.z {
     public static final class i extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final SimpleRepository f14901t;
+        public SimpleRepository f14901t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final String f14902u;
+        public String f14902u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f14903v;
+        public String f14903v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final String f14904w;
+        public String f14904w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final Avatar f14905x;
+        public Avatar f14905x;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -232,13 +232,13 @@ public abstract class b2 implements le.z {
     public static final class j extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final g01.f f14906t;
+        public g01.f f14906t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final i3 f14907u;
+        public i3 f14907u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final boolean f14908v;
+        public boolean f14908v;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public j(g01.f fVar) {
@@ -279,7 +279,7 @@ public abstract class b2 implements le.z {
     public static final class k extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f14909t;
+        public String f14909t;
 
         public k(String str) {
             super(str, 8);
@@ -305,13 +305,13 @@ public abstract class b2 implements le.z {
     public static final class l extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final int f14910t;
+        public int f14910t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final vc.c f14911u;
+        public vc.c f14911u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final boolean f14912v;
+        public boolean f14912v;
 
         public l(int i, vc.c cVar, boolean z10) {
             super(cVar.name(), 1);
@@ -348,10 +348,10 @@ public abstract class b2 implements le.z {
     public static final class m extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f14913t;
+        public String f14913t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final StoredShortcutModel f14914u;
+        public StoredShortcutModel f14914u;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -403,7 +403,7 @@ public abstract class b2 implements le.z {
     public static final class o extends b2 {
 
         /* renamed from: t, reason: collision with root package name */
-        public final hd.a f14915t;
+        public hd.a f14915t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public o(hd.a aVar) {

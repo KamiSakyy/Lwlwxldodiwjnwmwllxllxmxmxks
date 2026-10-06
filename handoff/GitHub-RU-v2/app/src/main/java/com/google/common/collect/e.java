@@ -2,9 +2,9 @@ package com.google.common.collect;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final Object a;
-    public final Object b;
-    public final Object c;
+    public Object a;
+    public Object b;
+    public Object c;
 
     public e(Object obj, Object obj2, Object obj3) {
         this.a = obj;

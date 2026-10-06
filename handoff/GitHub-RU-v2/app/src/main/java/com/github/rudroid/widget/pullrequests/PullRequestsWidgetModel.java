@@ -11,8 +11,8 @@ import sy.w;
 public final class PullRequestsWidgetModel {
     public static final Companion Companion = new Companion();
     public static final w61.h[] c;
-    public final Map a;
-    public final WidgetUIState b;
+    public Map a;
+    public WidgetUIState b;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -8,11 +8,11 @@ import xn.i0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p extends d21.a {
     public static final Parcelable.Creator<p> CREATOR = new i0(8);
-    public final boolean r;
-    public final String s;
-    public final int t;
-    public final int u;
-    public final long v;
+    public boolean r;
+    public String s;
+    public int t;
+    public int u;
+    public long v;
 
     public p(boolean z, String str, int i, int i2, long j) {
         this.r = z;

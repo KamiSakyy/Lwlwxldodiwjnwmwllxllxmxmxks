@@ -5,7 +5,7 @@ import java.nio.charset.Charset;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c2 implements f2 {
     public static final r1 b = new r1(4);
-    public final Object a;
+    public Object a;
 
     public c2(f2... f2VarArr) {
         this.a = f2VarArr;

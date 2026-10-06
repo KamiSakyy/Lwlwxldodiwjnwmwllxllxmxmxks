@@ -2,8 +2,8 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h1 {
-    public final e0 a;
-    public final x b;
+    public e0 a;
+    public x b;
 
     public h1(e0 e0Var, x xVar) {
         this.a = e0Var;

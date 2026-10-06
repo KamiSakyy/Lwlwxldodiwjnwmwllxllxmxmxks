@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jq implements aaShadow.v0 {
-    public final nq a;
-    public final String b;
-    public final String c;
+    public nq a;
+    public String b;
+    public String c;
 
     public jq(nq nqVar, String str, String str2) {
         this.a = nqVar;

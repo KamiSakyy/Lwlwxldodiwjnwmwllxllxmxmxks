@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f5 implements aa.h0 {
-    public final String a;
-    public final ArrayList b;
-    public final j5 c;
+    public String a;
+    public ArrayList b;
+    public j5 c;
 
     public f5(String str, ArrayList arrayList, j5 j5Var) {
         this.a = str;

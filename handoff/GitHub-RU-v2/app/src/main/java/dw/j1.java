@@ -4,9 +4,9 @@ import m10.da0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j1 {
-    public final da0 a;
-    public final String b;
-    public final String c;
+    public da0 a;
+    public String b;
+    public String c;
 
     public j1(String str, String str2, da0 da0Var) {
         this.a = da0Var;

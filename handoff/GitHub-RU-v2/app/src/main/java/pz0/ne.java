@@ -10,7 +10,7 @@ public final class ne {
     public static final ne u;
     public static final /* synthetic */ ne[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         ne neVar = new ne("COMPLETED", 0, "COMPLETED");

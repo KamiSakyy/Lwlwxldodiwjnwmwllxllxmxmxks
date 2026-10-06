@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class BottomSheetViewPager extends androidx.viewpager.widget.k {
-    public final Field t0;
+    public Field t0;
 
     public static final class a extends androidx.viewpager.widget.j {
         public a() {

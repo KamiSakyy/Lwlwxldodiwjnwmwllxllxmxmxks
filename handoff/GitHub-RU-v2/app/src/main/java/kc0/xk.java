@@ -2,15 +2,15 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xk {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final uk d;
-    public final wk e;
-    public final gn0.gg f;
-    public final boolean g;
-    public final boolean h;
-    public final ri0.u3 i;
+    public String a;
+    public String b;
+    public String c;
+    public uk d;
+    public wk e;
+    public gn0.gg f;
+    public boolean g;
+    public boolean h;
+    public ri0.u3 i;
 
     public xk(String str, String str2, String str3, uk ukVar, wk wkVar, gn0.gg ggVar, boolean z, boolean z2, ri0.u3 u3Var) {
         this.a = str;

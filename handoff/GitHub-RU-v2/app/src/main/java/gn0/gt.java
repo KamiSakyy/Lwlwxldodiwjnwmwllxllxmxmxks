@@ -2,12 +2,12 @@ package gn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gt {
-    public final jt a;
-    public final pt b;
-    public final String c;
-    public final aa1.b d;
-    public final aa1.b e;
-    public final pu f;
+    public jt a;
+    public pt b;
+    public String c;
+    public aa1.b d;
+    public aa1.b e;
+    public pu f;
 
     public gt(jt jtVar, pt ptVar, String str, aa1.b bVar, aa1.b bVar2, pu puVar) {
         k71.k.g(str, "name");

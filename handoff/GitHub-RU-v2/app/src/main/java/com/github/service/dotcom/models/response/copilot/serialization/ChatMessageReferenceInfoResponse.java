@@ -10,8 +10,8 @@ import x.i;
 public final class ChatMessageReferenceInfoResponse {
     public static final Companion Companion = new Companion();
     public static final ChatMessageReferenceInfoResponse c = new ChatMessageReferenceInfoResponse("", "");
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public static final class Companion {
         public final KSerializer serializer() {

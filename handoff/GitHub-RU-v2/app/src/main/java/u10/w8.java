@@ -2,14 +2,14 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w8 {
-    public final String a;
-    public final String b;
-    public final hc0.p2 c;
-    public final z8 d;
-    public final p8 e;
-    public final b9 f;
-    public final n8 g;
-    public final r8 h;
+    public String a;
+    public String b;
+    public hc0.p2 c;
+    public z8 d;
+    public p8 e;
+    public b9 f;
+    public n8 g;
+    public r8 h;
 
     public w8(String str, String str2, hc0.p2 p2Var, z8 z8Var, p8 p8Var, b9 b9Var, n8 n8Var, r8 r8Var) {
         this.a = str;

@@ -6,19 +6,19 @@ import java.util.List;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f24782a;
+    public List f24782a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f24783b;
+    public List f24783b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f24784c;
+    public List f24784c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final List f24785d;
+    public List f24785d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final List f24786e;
+    public List f24786e;
 
     public b(List list, List list2, List list3, List list4, List list5) {
         this.f24782a = list;

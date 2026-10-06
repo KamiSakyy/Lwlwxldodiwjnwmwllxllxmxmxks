@@ -7,12 +7,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final String a;
-    public final String b;
-    public final c c;
-    public final String d;
-    public final a e;
-    public final ZonedDateTime f;
+    public String a;
+    public String b;
+    public c c;
+    public String d;
+    public a e;
+    public ZonedDateTime f;
 
     public b(String str, String str2, c cVar, String str3, a aVar, ZonedDateTime zonedDateTime) {
         this.a = str;

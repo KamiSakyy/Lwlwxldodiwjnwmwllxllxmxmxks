@@ -6,13 +6,13 @@ import android.app.Notification;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f32827a;
+    public int f32827a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f32828b;
+    public int f32828b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Notification f32829c;
+    public Notification f32829c;
 
     public o(int i, Notification notification, int i10) {
         this.f32827a = i;

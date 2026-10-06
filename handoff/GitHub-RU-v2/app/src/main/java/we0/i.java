@@ -2,10 +2,10 @@ package we0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public final String a;
-    public final boolean b;
-    public final x c;
-    public final g d;
+    public String a;
+    public boolean b;
+    public x c;
+    public g d;
 
     public i(String str, boolean z, x xVar, g gVar) {
         this.a = str;

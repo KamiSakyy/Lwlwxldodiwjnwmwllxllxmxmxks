@@ -5,8 +5,8 @@ import com.github.rudroid.settings.g3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h3 {
-    public final g3 a;
-    public final g3 b;
+    public g3 a;
+    public g3 b;
 
     public h3(Context context) {
         k71.k.g(context, "context");

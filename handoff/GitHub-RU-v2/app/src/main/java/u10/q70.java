@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q70 {
-    public final String a;
-    public final String b;
-    public final e80.c c;
+    public String a;
+    public String b;
+    public e80.c c;
 
     public q70(String str, String str2, e80.c cVar) {
         this.a = str;

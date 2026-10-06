@@ -2,7 +2,7 @@ package com.github.rudroid.utilities.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y0<T> extends s0<T> {
-    public final Object a;
+    public Object a;
 
     public y0(Object obj) {
         this.a = obj;

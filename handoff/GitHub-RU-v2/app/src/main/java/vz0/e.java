@@ -16,10 +16,10 @@ import x61.r;
 public final class e {
     public static final d Companion = new d();
     public static final Set e = f0.r("MobileAuthRequests");
-    public final String a;
-    public final long b;
-    public final c c;
-    public final ConcurrentHashMap d;
+    public String a;
+    public long b;
+    public c c;
+    public ConcurrentHashMap d;
 
     public e(String str, long j, c cVar) {
         k.g(cVar, "loopAction");

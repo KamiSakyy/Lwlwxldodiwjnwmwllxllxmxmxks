@@ -8,34 +8,34 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class s0 extends androidx.lifecycle.k1 {
     public static final a Companion = new a();
-    public final y1 A;
-    public final y71.i1 B;
-    public final y1 C;
-    public final y71.i1 D;
+    public y1 A;
+    public y71.i1 B;
+    public y1 C;
+    public y71.i1 D;
 
     /* renamed from: s, reason: collision with root package name */
-    public final com.github.rudroid.projects.domain.a f18084s;
+    public com.github.rudroid.projects.domain.a f18084s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f18085t;
+    public com.github.rudroid.activities.util.c f18085t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.github.rudroid.projects.triagesheet.a f18086u;
+    public com.github.rudroid.projects.triagesheet.a f18086u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f18087v;
+    public String f18087v;
 
     /* renamed from: w, reason: collision with root package name */
     public int f18088w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final List f18089x;
+    public List f18089x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final x71.h f18090y;
+    public x71.h f18090y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final y71.d f18091z;
+    public y71.d f18091z;
 
     public static final class a {
     }

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bx {
-    public final String a;
-    public final String b;
-    public final cq.v4 c;
+    public String a;
+    public String b;
+    public cq.v4 c;
 
     public bx(String str, String str2, cq.v4 v4Var) {
         this.a = str;

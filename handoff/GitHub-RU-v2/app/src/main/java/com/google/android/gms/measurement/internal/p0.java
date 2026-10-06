@@ -9,12 +9,12 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 implements Runnable {
     public final /* synthetic */ int r = 0;
-    public final int s;
-    public final String t;
-    public final Object u;
-    public final Object v;
-    public final Object w;
-    public final Object x;
+    public int s;
+    public String t;
+    public Object u;
+    public Object v;
+    public Object w;
+    public Object x;
 
     public p0(s0 s0Var, int i, String str, Object obj, Object obj2, Object obj3) {
         this.s = i;

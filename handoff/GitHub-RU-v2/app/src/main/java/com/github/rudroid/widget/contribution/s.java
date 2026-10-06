@@ -42,4 +42,15 @@ final class s extends c71.c {
     public Object n0(Object p1) { return null; }
     public Object q(Object p1) { return null; }
     public Object t() { return null; }
+    public Object S(int p1, boolean p2) { return null; }
+    public Object c(float p1) { return null; }
+    public Object c0(int p1) { return null; }
+    public Object d0(int p1) { return null; }
+    public Object e0(int p1) { return null; }
+    public Object g(boolean p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(boolean p1) { return null; }
 }

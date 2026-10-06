@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j40 {
-    public final String a;
-    public final String b;
-    public final o40 c;
-    public final yf0.i d;
+    public String a;
+    public String b;
+    public o40 c;
+    public yf0.i d;
 
     public j40(String str, String str2, o40 o40Var, yf0.i iVar) {
         this.a = str;

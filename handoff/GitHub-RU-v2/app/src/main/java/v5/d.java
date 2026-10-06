@@ -8,7 +8,7 @@ import android.widget.TextView;
 public final class d implements InputFilter {
 
     /* renamed from: a, reason: collision with root package name */
-    public final TextView f32724a;
+    public TextView f32724a;
 
     /* renamed from: b, reason: collision with root package name */
     public c f32725b;

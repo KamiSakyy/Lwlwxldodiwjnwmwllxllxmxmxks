@@ -4,8 +4,8 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v3 implements Runnable {
-    public final long r;
-    public final long s;
+    public long r;
+    public long s;
     public final /* synthetic */ b1.m t;
 
     public v3(b1.m mVar, long j, long j2) {

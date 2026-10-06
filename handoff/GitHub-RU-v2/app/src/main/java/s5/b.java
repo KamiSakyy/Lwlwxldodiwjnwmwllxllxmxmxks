@@ -15,10 +15,10 @@ import x61.x;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f31714a;
+    public LinkedHashMap f31714a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final p5.a f31715b;
+    public p5.a f31715b;
 
     public b(LinkedHashMap linkedHashMap, boolean z10) {
         this.f31714a = linkedHashMap;

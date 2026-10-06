@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p extends q {
     public final /* synthetic */ int a;
-    public final Serializable b;
+    public Serializable b;
 
     public p(String str, int i) {
         this.a = i;

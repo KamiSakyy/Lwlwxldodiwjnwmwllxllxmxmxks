@@ -6,20 +6,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h6 extends s7 implements r5 {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final boolean c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final String h;
-    public final IssueOrPullRequestState i;
-    public final CloseReason j;
-    public final boolean k;
-    public final boolean l;
-    public final boolean m;
-    public final ZonedDateTime n;
+    public com.github.service.models.response.a a;
+    public String b;
+    public boolean c;
+    public int d;
+    public String e;
+    public String f;
+    public String g;
+    public String h;
+    public IssueOrPullRequestState i;
+    public CloseReason j;
+    public boolean k;
+    public boolean l;
+    public boolean m;
+    public ZonedDateTime n;
 
     public h6(com.github.service.models.response.a aVar, String str, boolean z, int i, String str2, String str3, String str4, String str5, IssueOrPullRequestState issueOrPullRequestState, CloseReason closeReason, boolean z2, boolean z3, boolean z4, ZonedDateTime zonedDateTime) {
         k71.k.g(str2, "title");

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a0 implements Comparable {
     public static final String s;
-    public final k r;
+    public k r;
 
     static {
         String str = File.separator;

@@ -22,4 +22,5 @@ public abstract class a {
         public a() {
         }
     }
+    public Object a(Object p1) { return null; }
 }

@@ -8,10 +8,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements w0 {
     public static final g Companion = new g();
-    public final String r;
-    public final String s;
-    public final int t;
-    public final aa.u0 u;
+    public String r;
+    public String s;
+    public int t;
+    public aa.u0 u;
 
     public k(String str, String str2, int i, aa.u0 u0Var) {
         this.r = str;

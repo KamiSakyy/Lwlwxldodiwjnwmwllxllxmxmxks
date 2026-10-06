@@ -17,7 +17,7 @@ public final class g7 {
     public static final g7 x;
     public static final g7 y;
     public static final g7 z;
-    public final String r;
+    public String r;
 
     static {
         g7 g7Var = new g7("ANNOUNCEMENTS", 0, "ANNOUNCEMENTS");

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cg {
-    public final String a;
-    public final hc0.jd b;
-    public final k60.e c;
+    public String a;
+    public hc0.jd b;
+    public k60.e c;
 
     public cg(String str, hc0.jd jdVar, k60.e eVar) {
         this.a = str;

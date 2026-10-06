@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k80 {
-    public final b80 a;
-    public final j80 b;
+    public b80 a;
+    public j80 b;
 
     public k80(b80 b80Var, j80 j80Var) {
         this.a = b80Var;

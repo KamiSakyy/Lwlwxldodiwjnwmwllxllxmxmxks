@@ -6,10 +6,10 @@ import android.net.Uri;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Uri f32765a;
+    public Uri f32765a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f32766b;
+    public boolean f32766b;
 
     public e(boolean z10, Uri uri) {
         this.f32765a = uri;

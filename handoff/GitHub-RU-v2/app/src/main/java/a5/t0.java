@@ -7,6 +7,6 @@ package a5;
 public class t0 {
     public t0() {
     }
-    public Object i(Object p1, Object p2) { return null; }
-    public Object m(Object p1, Object p2) { return null; }
+    public static Object i(Object p1, Object p2) { return null; }
+    public static Object m(Object p1, Object p2) { return null; }
 }

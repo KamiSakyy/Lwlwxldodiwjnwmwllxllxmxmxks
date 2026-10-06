@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vq implements aaShadow.w0 {
     public static final mq Companion = new mq();
-    public final boolean r;
-    public final boolean s;
-    public final boolean t;
-    public final boolean u;
+    public boolean r;
+    public boolean s;
+    public boolean t;
+    public boolean u;
 
     public vq(boolean z, boolean z2, boolean z3, boolean z4) {
         this.r = z;

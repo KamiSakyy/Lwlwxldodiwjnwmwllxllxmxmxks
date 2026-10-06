@@ -29,13 +29,13 @@ import y71.y1;
 public final class a extends k1 {
     public static final C0014a Companion;
     public static final /* synthetic */ r71.e[] z;
-    public final v s;
-    public final q10.c t;
-    public final com.github.rudroid.activities.util.c u;
-    public final g2 v;
-    public final AtomicInteger w;
-    public final y1 x;
-    public final i1 y;
+    public v s;
+    public q10.c t;
+    public com.github.rudroid.activities.util.c u;
+    public g2 v;
+    public AtomicInteger w;
+    public y1 x;
+    public i1 y;
 
     /* renamed from: com.github.rudroid.viewmodels.image.a$a, reason: collision with other inner class name */
     public static final class C0014a {

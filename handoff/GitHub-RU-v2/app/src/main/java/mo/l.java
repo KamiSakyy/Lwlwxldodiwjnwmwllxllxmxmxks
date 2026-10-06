@@ -2,9 +2,9 @@ package mo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l {
-    public final String a;
-    public final u b;
-    public final String c;
+    public String a;
+    public u b;
+    public String c;
 
     public l(String str, u uVar, String str2) {
         this.a = str;

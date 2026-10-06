@@ -34,8 +34,8 @@ public class MaterialCardView extends a implements Checkable, y {
     public static final int[] E = {2130969812};
     public boolean A;
     public boolean B;
-    public final c y;
-    public final boolean z;
+    public c y;
+    public boolean z;
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r2v3, types: [android.view.View, com.google.android.material.card.MaterialCardView, w.a] */

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class aa0 {
-    public final String a;
-    public final ek0.b b;
+    public String a;
+    public ek0.b b;
 
     public aa0(String str, ek0.b bVar) {
         k71.k.g(str, "__typename");

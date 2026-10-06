@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oe {
-    public final boolean a;
-    public final pz0.g7 b;
+    public boolean a;
+    public pz0.g7 b;
 
     public oe(boolean z, pz0.g7 g7Var) {
         this.a = z;

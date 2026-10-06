@@ -9,7 +9,7 @@ public final class dl {
     public static final dl t;
     public static final /* synthetic */ dl[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         dl dlVar = new dl("CLOSED", 0, "CLOSED");

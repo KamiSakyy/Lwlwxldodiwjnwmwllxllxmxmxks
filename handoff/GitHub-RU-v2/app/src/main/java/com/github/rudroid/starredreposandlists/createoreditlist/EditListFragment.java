@@ -13,8 +13,8 @@ import androidx.lifecycle.u1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class EditListFragment extends Hilt_EditListFragment implements com.github.rudroid.fragments.util.f {
     public com.github.rudroid.activities.util.c D0;
-    public final l1 E0;
-    public final w61.p F0;
+    public l1 E0;
+    public w61.p F0;
 
     public static final class a extends k71.l implements j71.a {
         public a() {

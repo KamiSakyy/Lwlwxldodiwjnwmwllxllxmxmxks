@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xy {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final az d;
+    public int a;
+    public int b;
+    public int c;
+    public az d;
 
     public xy(int i, int i2, int i3, az azVar) {
         this.a = i;

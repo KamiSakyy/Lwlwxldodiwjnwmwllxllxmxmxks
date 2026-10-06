@@ -13,7 +13,7 @@ public abstract class e implements z {
     public static final a Companion = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f28470r;
+    public String f28470r;
 
     public static final class a {
     }
@@ -22,37 +22,37 @@ public abstract class e implements z {
     }
 
     public static final class c extends e {
-        public final int A;
-        public final TrendingPeriod B;
-        public final String C;
-        public final int D;
-        public final RepositoryRecommendationReason E;
-        public final String F;
-        public final List G;
+        public int A;
+        public TrendingPeriod B;
+        public String C;
+        public int D;
+        public RepositoryRecommendationReason E;
+        public String F;
+        public List G;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f28471s;
+        public String f28471s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f28472t;
+        public String f28472t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final com.github.service.models.response.a f28473u;
+        public com.github.service.models.response.a f28473u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final int f28474v;
+        public int f28474v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final String f28475w;
+        public String f28475w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final String f28476x;
+        public String f28476x;
 
         /* renamed from: y, reason: collision with root package name */
-        public final boolean f28477y;
+        public boolean f28477y;
 
         /* renamed from: z, reason: collision with root package name */
-        public final int f28478z;
+        public int f28478z;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(String str, String str2, com.github.service.models.response.a aVar, int i, String str3, String str4, boolean z10, int i10, int i11, TrendingPeriod trendingPeriod, String str5, int i12, RepositoryRecommendationReason repositoryRecommendationReason, String str6, List list) {
@@ -160,6 +160,6 @@ public abstract class e implements z {
     public final String E() {
         return this.f28470r;
     }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

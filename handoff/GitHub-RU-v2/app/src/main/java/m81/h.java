@@ -6,7 +6,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h {
-    public final x a;
+    public x a;
     public boolean b;
 
     public h(SerialDescriptor serialDescriptor) {
@@ -17,4 +17,7 @@ public final class h {
     public Object l(Object p1, Object p2) { return null; }
     public Object p(Object p1, Object p2) { return null; }
     public Object q(Object p1, Object p2) { return null; }
+    public Object d(int p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

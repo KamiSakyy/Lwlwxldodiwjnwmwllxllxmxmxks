@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final NavLinkIdentifier a;
-    public final boolean b;
+    public NavLinkIdentifier a;
+    public boolean b;
 
     public c(NavLinkIdentifier navLinkIdentifier, boolean z) {
         k.g(navLinkIdentifier, "identifier");

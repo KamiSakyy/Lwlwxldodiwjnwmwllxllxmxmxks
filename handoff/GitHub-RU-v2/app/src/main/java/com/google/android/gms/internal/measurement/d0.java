@@ -3,7 +3,7 @@ package com.google.android.gms.internal.measurement;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d0 {
     public static final /* synthetic */ int b = 0;
-    public final int a;
+    public int a;
 
     public d0(int i) {
         this.a = i;

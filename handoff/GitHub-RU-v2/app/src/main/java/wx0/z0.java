@@ -2,8 +2,8 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z0 {
-    public final String a;
-    public final q0 b;
+    public String a;
+    public q0 b;
 
     public z0(String str, q0 q0Var) {
         k71.k.g(str, "__typename");

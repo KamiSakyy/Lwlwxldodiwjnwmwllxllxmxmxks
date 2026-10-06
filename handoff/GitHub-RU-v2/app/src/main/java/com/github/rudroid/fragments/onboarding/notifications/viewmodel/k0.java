@@ -14,13 +14,13 @@ import y71.y1;
 public final class k0 extends androidx.lifecycle.a implements l0 {
 
     /* renamed from: t, reason: collision with root package name */
-    public final Set f14293t;
+    public Set f14293t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final y1 f14294u;
+    public y1 f14294u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final i1 f14295v;
+    public i1 f14295v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k0(Application application) {

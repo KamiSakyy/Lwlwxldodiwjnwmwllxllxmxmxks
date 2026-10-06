@@ -42,6 +42,7 @@ public final /* synthetic */ class a implements j71.e {
         return a0.a;
     }
     public Object L(Object p1) { return null; }
-    public Object d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
-    public Object z(Object p1) { return null; }
+    public static Object d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
+    public static Object z(Object p1) { return null; }
+    public Object L(int p1) { return null; }
 }

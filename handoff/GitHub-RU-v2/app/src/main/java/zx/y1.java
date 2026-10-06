@@ -6,14 +6,14 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y1 implements aa.w0 {
     public static final s1 Companion = new s1();
-    public final String r;
-    public final String s;
-    public final int t;
-    public final aa1.b u;
-    public final aa1.b v;
-    public final aa1.b w;
-    public final aa1.b x;
-    public final aa1.b y;
+    public String r;
+    public String s;
+    public int t;
+    public aa1.b u;
+    public aa1.b v;
+    public aa1.b w;
+    public aa1.b x;
+    public aa1.b y;
 
     /* JADX WARN: Multi-variable type inference failed */
     public y1(String str, String str2, int i, aa1.b bVar, aa.u0 u0Var, aa1.b bVar2, aa.u0 u0Var2, aa.u0 u0Var3, int i2) {

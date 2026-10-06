@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements c, c71.d {
     public static final AtomicReferenceFieldUpdater s = AtomicReferenceFieldUpdater.newUpdater(j.class, Object.class, "result");
-    public final c r;
+    public c r;
     private volatile Object result;
 
     public j(c cVar) {

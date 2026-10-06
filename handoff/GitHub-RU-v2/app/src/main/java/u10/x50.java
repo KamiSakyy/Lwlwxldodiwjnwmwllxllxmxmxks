@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x50 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final hc0.zk e;
-    public final String f;
-    public final List g;
-    public final hc0.fq h;
-    public final String i;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public hc0.zk e;
+    public String f;
+    public List g;
+    public hc0.fq h;
+    public String i;
 
     public x50(String str, boolean z, boolean z2, boolean z3, hc0.zk zkVar, String str2, List list, hc0.fq fqVar, String str3) {
         this.a = str;

@@ -2,9 +2,9 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l2 implements aa.v0 {
-    public final m2 a;
-    public final String b;
-    public final String c;
+    public m2 a;
+    public String b;
+    public String c;
 
     public l2(m2 m2Var, String str, String str2) {
         this.a = m2Var;

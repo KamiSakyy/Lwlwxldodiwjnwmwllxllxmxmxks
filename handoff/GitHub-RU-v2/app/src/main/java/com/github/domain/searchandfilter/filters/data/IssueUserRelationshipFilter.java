@@ -22,7 +22,7 @@ public final class IssueUserRelationshipFilter extends d {
     public static final w61.h[] w;
     public static final x x;
     public static final m3 y;
-    public final x v;
+    public x v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<IssueUserRelationshipFilter> CREATOR = new a21.g(26);
 

@@ -17,11 +17,11 @@ import x61.r;
 public final class ChatServerSentEventDataResponse$FunctionCall extends c {
     public static final Companion Companion = new Companion();
     public static final h[] f;
-    public final i a;
-    public final m b;
-    public final l c;
-    public final String d;
-    public final List e;
+    public i a;
+    public m b;
+    public l c;
+    public String d;
+    public List e;
 
     public static final class Companion {
         public final KSerializer serializer() {

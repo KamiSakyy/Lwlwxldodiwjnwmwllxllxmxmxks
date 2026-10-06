@@ -6,7 +6,7 @@ import java.util.concurrent.CancellationException;
 public final class c1 {
     public static final c1 b;
     public static final c1 c;
-    public final Throwable a;
+    public Throwable a;
 
     static {
         if (z3.u) {

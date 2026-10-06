@@ -5,7 +5,7 @@ import java.lang.ref.WeakReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements androidx.viewpager.widget.g {
-    public final WeakReference a;
+    public WeakReference a;
     public int b;
     public int c;
 

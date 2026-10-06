@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vy {
-    public final String a;
-    public final uy b;
-    public final String c;
+    public String a;
+    public uy b;
+    public String c;
 
     public vy(String str, uy uyVar, String str2) {
         this.a = str;

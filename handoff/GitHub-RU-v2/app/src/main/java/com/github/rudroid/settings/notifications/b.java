@@ -8,13 +8,13 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final boolean a;
-    public final j b;
-    public final ZonedDateTime c;
-    public final ZonedDateTime d;
-    public final ZonedDateTime e;
-    public final int f;
-    public final ZonedDateTime g;
+    public boolean a;
+    public j b;
+    public ZonedDateTime c;
+    public ZonedDateTime d;
+    public ZonedDateTime e;
+    public int f;
+    public ZonedDateTime g;
 
     public b(boolean z, j jVar, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, int i, ZonedDateTime zonedDateTime4) {
         this.a = z;

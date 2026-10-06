@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wz {
-    public final zz a;
-    public final String b;
+    public zz a;
+    public String b;
 
     public wz(zz zzVar, String str) {
         this.a = zzVar;

@@ -7,8 +7,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
     public static final /* synthetic */ int c = 0;
-    public final String a;
-    public final List b;
+    public String a;
+    public List b;
 
     static {
         Collections.unmodifiableList(new ArrayList());

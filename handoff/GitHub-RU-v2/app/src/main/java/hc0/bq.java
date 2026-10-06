@@ -13,7 +13,7 @@ public final class bq {
     public static final bq x;
     public static final /* synthetic */ bq[] y;
     public static final /* synthetic */ d71.b z;
-    public final String r;
+    public String r;
 
     static {
         bq bqVar = new bq("CREATED_AT", 0, "CREATED_AT");

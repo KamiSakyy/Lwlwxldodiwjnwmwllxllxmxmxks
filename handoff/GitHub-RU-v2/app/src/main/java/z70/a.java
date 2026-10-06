@@ -4,7 +4,7 @@ import hc0.zk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final zk a;
+    public zk a;
 
     public a(zk zkVar) {
         this.a = zkVar;
@@ -25,6 +25,6 @@ public final class a {
         return "AutoMergeRequest(mergeMethod=" + this.a + ")";
     }
     public Object O(Object p1) { return null; }
-    public Object z(Object p1) { return null; }
+    public static Object z(Object p1) { return null; }
     public static final Object y = null;
 }

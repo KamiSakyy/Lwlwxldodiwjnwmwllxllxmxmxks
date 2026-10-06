@@ -9,20 +9,20 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final boolean a;
-    public final int b;
-    public final String c;
-    public final boolean d;
-    public final ZonedDateTime e;
-    public final ZonedDateTime f;
-    public final ZonedDateTime g;
-    public final ZonedDateTime h;
-    public final ZonedDateTime i;
-    public final ZonedDateTime j;
-    public final ZonedDateTime k;
-    public final ZonedDateTime l;
-    public final ZonedDateTime m;
-    public final ZonedDateTime n;
+    public boolean a;
+    public int b;
+    public String c;
+    public boolean d;
+    public ZonedDateTime e;
+    public ZonedDateTime f;
+    public ZonedDateTime g;
+    public ZonedDateTime h;
+    public ZonedDateTime i;
+    public ZonedDateTime j;
+    public ZonedDateTime k;
+    public ZonedDateTime l;
+    public ZonedDateTime m;
+    public ZonedDateTime n;
 
     public e(boolean z, int i, String str, boolean z2, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, ZonedDateTime zonedDateTime4, ZonedDateTime zonedDateTime5, ZonedDateTime zonedDateTime6, ZonedDateTime zonedDateTime7, ZonedDateTime zonedDateTime8, ZonedDateTime zonedDateTime9, ZonedDateTime zonedDateTime10) {
         this.a = z;
@@ -95,6 +95,10 @@ public final class e {
     }
     public Object Q(Object p1) { return null; }
     public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object j(Object p1) { return null; }
+    public Object u(Object p1) { return null; }
+    public Object z(Object p1) { return null; }
+    public Object Q(Object p1) { return null; }
     public Object j(Object p1) { return null; }
     public Object u(Object p1) { return null; }
     public Object z(Object p1) { return null; }

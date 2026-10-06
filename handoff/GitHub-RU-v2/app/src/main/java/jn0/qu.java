@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qu implements aaShadow.m0 {
-    public final su a;
+    public su a;
 
     public qu(su suVar) {
         this.a = suVar;

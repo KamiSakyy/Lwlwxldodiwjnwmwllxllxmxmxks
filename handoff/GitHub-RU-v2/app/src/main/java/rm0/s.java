@@ -361,4 +361,6 @@ public final /* synthetic */ class s implements j71.c {
     public Object V() { return null; }
     public Object n0(Object p1) { return null; }
     public static final Object d = null;
+    public Object S(int p1, boolean p2) { return null; }
+    public Object n0(Object p1) { return null; }
 }

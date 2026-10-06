@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qj {
-    public final String a;
-    public final gn0.hn b;
-    public final boolean c;
-    public final String d;
+    public String a;
+    public gn0.hn b;
+    public boolean c;
+    public String d;
 
     public qj(String str, gn0.hn hnVar, boolean z, String str2) {
         this.a = str;

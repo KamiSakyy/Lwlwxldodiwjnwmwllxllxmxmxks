@@ -19,8 +19,8 @@ import v8.j0;
 public final class j {
     public static final Object c = new Object();
     public static d0 d;
-    public final Object a;
-    public final Object b;
+    public Object a;
+    public Object b;
 
     public j(ExecutorService executorService) {
         this.b = new x.e(0);

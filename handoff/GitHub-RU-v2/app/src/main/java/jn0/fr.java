@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fr {
-    public final String a;
-    public final String b;
-    public final gr c;
+    public String a;
+    public String b;
+    public gr c;
 
     public fr(String str, String str2, gr grVar) {
         k71.k.g(str, "__typename");

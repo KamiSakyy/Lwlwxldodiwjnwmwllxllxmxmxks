@@ -7,7 +7,7 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Locale f29407a;
+    public Locale f29407a;
 
     public a(Locale locale) {
         this.f29407a = locale;

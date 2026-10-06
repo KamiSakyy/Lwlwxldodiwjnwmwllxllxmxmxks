@@ -17,8 +17,8 @@ import t71.p;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k extends c0 implements g {
     public static final j Companion = new j();
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     public k(String str, String str2) {
         k71.k.g(str, "token");

@@ -2,11 +2,11 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c8 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final b8 c;
-    public final z7 d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public b8 c;
+    public z7 d;
+    public String e;
 
     public c8(String str, boolean z, b8 b8Var, z7 z7Var, String str2) {
         this.a = str;

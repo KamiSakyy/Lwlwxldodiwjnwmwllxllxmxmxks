@@ -16,7 +16,7 @@ public final class y0 extends BroadcastReceiver {
     public final /* synthetic */ int a = 1;
     public boolean b;
     public boolean c;
-    public final Object d;
+    public Object d;
 
     public y0(b21.l lVar, boolean z) {
         this.d = lVar;

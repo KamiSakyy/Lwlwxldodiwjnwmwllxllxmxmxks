@@ -4,8 +4,8 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b0 implements k0 {
-    public final j r;
-    public final h s;
+    public j r;
+    public h s;
     public f0 t;
     public int u;
     public boolean v;

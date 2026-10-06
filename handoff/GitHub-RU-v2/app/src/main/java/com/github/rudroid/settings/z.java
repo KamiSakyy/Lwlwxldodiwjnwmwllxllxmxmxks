@@ -22,4 +22,5 @@ public final class z {
     }
     public Object e(Object p1) { return null; }
     public Object g(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
 }

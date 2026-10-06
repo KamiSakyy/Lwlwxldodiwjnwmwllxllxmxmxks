@@ -7,7 +7,7 @@ import k71.k;
 public abstract class Violation extends RuntimeException {
 
     /* renamed from: r, reason: collision with root package name */
-    public final a0 f2644r;
+    public a0 f2644r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public Violation(a0 a0Var, String str) {

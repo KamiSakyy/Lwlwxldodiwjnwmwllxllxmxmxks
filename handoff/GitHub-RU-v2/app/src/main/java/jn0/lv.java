@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lv {
-    public final jv a;
-    public final String b;
-    public final String c;
+    public jv a;
+    public String b;
+    public String c;
 
     public lv(jv jvVar, String str, String str2) {
         this.a = jvVar;

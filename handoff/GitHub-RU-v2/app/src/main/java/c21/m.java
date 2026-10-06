@@ -5,7 +5,7 @@ import java.util.Arrays;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
     public static final m b = new m(null);
-    public final String a;
+    public String a;
 
     public /* synthetic */ m(String str) {
         this.a = str;

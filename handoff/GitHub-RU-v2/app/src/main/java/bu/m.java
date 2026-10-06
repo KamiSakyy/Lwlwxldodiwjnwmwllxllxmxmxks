@@ -5,11 +5,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements h0 {
-    public final String a;
-    public final l b;
-    public final k c;
-    public final Integer d;
-    public final String e;
+    public String a;
+    public l b;
+    public k c;
+    public Integer d;
+    public String e;
 
     public m(String str, l lVar, k kVar, Integer num, String str2) {
         this.a = str;

@@ -2,10 +2,10 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z6 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final y6 c;
-    public final String d;
+    public String a;
+    public boolean b;
+    public y6 c;
+    public String d;
 
     public z6(String str, boolean z, y6 y6Var, String str2) {
         this.a = str;

@@ -5,7 +5,7 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f3 {
     public static final e3 Companion = new e3();
-    public final Map a;
+    public Map a;
 
     public f3(Map map) {
         this.a = map;

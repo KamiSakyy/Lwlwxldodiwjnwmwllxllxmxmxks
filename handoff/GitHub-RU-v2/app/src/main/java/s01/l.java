@@ -20,24 +20,24 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class l {
-    public final com.github.service.wrapper.j a;
-    public final com.github.service.wrapper.b b;
-    public final v c;
-    public final j71.c d;
-    public final j71.c e;
-    public final j71.e f;
-    public final j71.e g;
-    public final j71.c h;
-    public final j71.c i;
-    public final j71.c j;
-    public final j71.c k;
-    public final boolean l;
-    public final j71.e m;
-    public final j71.e n;
-    public final Set o;
-    public final j71.f p;
-    public final ga.h q;
-    public final j71.e r;
+    public com.github.service.wrapper.j a;
+    public com.github.service.wrapper.b b;
+    public v c;
+    public j71.c d;
+    public j71.c e;
+    public j71.e f;
+    public j71.e g;
+    public j71.c h;
+    public j71.c i;
+    public j71.c j;
+    public j71.c k;
+    public boolean l;
+    public j71.e m;
+    public j71.e n;
+    public Set o;
+    public j71.f p;
+    public ga.h q;
+    public j71.e r;
 
     public l(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v vVar, j71.c cVar, j71.c cVar2, j71.e eVar, o oVar, j71.e eVar2, j71.c cVar3, j71.c cVar4, j71.c cVar5, j71.c cVar6, boolean z, j71.e eVar3, j71.e eVar4, Set set, j71.f fVar, ga.h hVar) {
         ya yaVar;

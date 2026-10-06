@@ -7,7 +7,7 @@ import com.google.android.gms.internal.measurement.d5;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f33835a;
+    public int f33835a;
 
     /* renamed from: b, reason: collision with root package name */
     public d0 f33836b = null;

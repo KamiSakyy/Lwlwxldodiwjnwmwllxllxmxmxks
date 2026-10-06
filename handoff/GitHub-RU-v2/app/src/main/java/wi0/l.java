@@ -7,14 +7,14 @@ import gn0.xm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements h0 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final g d;
-    public final xm e;
-    public final j f;
-    public final String g;
-    public final h h;
+    public String a;
+    public String b;
+    public boolean c;
+    public g d;
+    public xm e;
+    public j f;
+    public String g;
+    public h h;
 
     public l(String str, String str2, boolean z, g gVar, xm xmVar, j jVar, String str3, h hVar) {
         this.a = str;

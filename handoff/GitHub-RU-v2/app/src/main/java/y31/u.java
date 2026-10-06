@@ -58,4 +58,10 @@ public final class u implements TextWatcher {
     public Object setScaleX(Object p1) { return null; }
     public Object setScaleY(Object p1) { return null; }
     public Object setVisibility(Object p1) { return null; }
+    public Object setContentDescription(Object p1) { return null; }
+    public Object setMinimumHeight(int p1) { return null; }
+    public Object setMinimumWidth(int p1) { return null; }
+    public Object setScaleX(float p1) { return null; }
+    public Object setScaleY(float p1) { return null; }
+    public Object setVisibility(int p1) { return null; }
 }

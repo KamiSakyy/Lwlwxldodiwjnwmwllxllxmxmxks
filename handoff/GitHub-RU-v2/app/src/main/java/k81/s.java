@@ -8,7 +8,7 @@ import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class s extends a {
-    public final KSerializer a;
+    public KSerializer a;
 
     public s(KSerializer kSerializer) {
         this.a = kSerializer;

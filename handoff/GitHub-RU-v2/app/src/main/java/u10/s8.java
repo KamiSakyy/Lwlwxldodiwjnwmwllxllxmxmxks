@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s8 {
-    public final String a;
-    public final y40.f b;
+    public String a;
+    public y40.f b;
 
     public s8(String str, y40.f fVar) {
         this.a = str;

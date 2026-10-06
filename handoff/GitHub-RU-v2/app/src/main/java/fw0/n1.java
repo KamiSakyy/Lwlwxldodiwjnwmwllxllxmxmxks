@@ -2,7 +2,7 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 {
-    public final int a;
+    public int a;
 
     public n1(int i) {
         this.a = i;

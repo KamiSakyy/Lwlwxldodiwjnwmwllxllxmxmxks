@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tc0 {
-    public final String a;
-    public final uc0 b;
-    public final wc0 c;
-    public final pc0 d;
-    public final String e;
+    public String a;
+    public uc0 b;
+    public wc0 c;
+    public pc0 d;
+    public String e;
 
     public tc0(String str, uc0 uc0Var, wc0 wc0Var, pc0 pc0Var, String str2) {
         this.a = str;

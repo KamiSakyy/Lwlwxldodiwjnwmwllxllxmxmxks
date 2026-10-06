@@ -6,10 +6,10 @@ import android.graphics.Typeface;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Typeface f33769a;
+    public Typeface f33769a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f33770b;
+    public int f33770b;
 
     public f(int i) {
         this.f33769a = null;

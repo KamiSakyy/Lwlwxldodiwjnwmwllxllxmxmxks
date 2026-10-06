@@ -5,10 +5,10 @@ import m10.uh;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w {
-    public final uh a;
-    public final ZonedDateTime b;
-    public final o c;
-    public final p d;
+    public uh a;
+    public ZonedDateTime b;
+    public o c;
+    public p d;
 
     public w(uh uhVar, ZonedDateTime zonedDateTime, o oVar, p pVar) {
         this.a = uhVar;

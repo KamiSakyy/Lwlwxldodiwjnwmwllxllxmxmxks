@@ -24,5 +24,7 @@ public abstract class e {
     public e(Object... a) {
     }
     public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object c() { return null; }
+    public Object k(Object p1, Object p2) { return null; }
 }

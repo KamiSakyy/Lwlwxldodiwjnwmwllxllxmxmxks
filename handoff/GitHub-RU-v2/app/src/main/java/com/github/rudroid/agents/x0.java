@@ -11,37 +11,37 @@ public final class x0 {
     public static final x0 f8449n;
 
     /* renamed from: a, reason: collision with root package name */
-    public final com.github.rudroid.utilities.ui.g1 f8450a;
+    public com.github.rudroid.utilities.ui.g1 f8450a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f8451b;
+    public String f8451b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f8452c;
+    public String f8452c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f8453d;
+    public String f8453d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final com.github.rudroid.agents.a f8454e;
+    public com.github.rudroid.agents.a f8454e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final com.github.rudroid.utilities.ui.g1 f8455f;
+    public com.github.rudroid.utilities.ui.g1 f8455f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final String f8456g;
+    public String f8456g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final boolean f8457h;
-    public final int i;
+    public boolean f8457h;
+    public int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final xn.v0 f8458j;
+    public xn.v0 f8458j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final List f8459k;
-    public final com.github.rudroid.utilities.ui.g1 l;
-    public final boolean m;
+    public List f8459k;
+    public com.github.rudroid.utilities.ui.g1 l;
+    public boolean m;
 
     public static final class a {
     }

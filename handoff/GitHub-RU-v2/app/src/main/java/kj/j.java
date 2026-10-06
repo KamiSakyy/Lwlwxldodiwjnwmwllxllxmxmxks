@@ -6,8 +6,8 @@ import s0.z0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final wj.a a;
-    public final Context b;
+    public wj.a a;
+    public Context b;
 
     public j(wj.a aVar, Context context) {
         k71.k.g(aVar, "eventDao");

@@ -14,8 +14,8 @@ import wf.h;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class g<T> extends m0 {
-    public final BindingFragment d;
-    public final Object e;
+    public BindingFragment d;
+    public Object e;
     public Object f;
 
     public g(s sVar, Object obj) {

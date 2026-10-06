@@ -4,12 +4,12 @@ import m10.ih0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y2 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final ih0 d;
-    public final boolean e;
-    public final z2 f;
+    public String a;
+    public String b;
+    public String c;
+    public ih0 d;
+    public boolean e;
+    public z2 f;
 
     public y2(String str, String str2, String str3, ih0 ih0Var, boolean z, z2 z2Var) {
         this.a = str;

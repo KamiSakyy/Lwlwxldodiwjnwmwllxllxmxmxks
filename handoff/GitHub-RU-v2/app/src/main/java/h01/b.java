@@ -6,9 +6,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final PullRequestMergeMethod a;
-    public final PullRequestMergeMethodStatus b;
-    public final boolean c;
+    public PullRequestMergeMethod a;
+    public PullRequestMergeMethodStatus b;
+    public boolean c;
 
     public b(PullRequestMergeMethod pullRequestMergeMethod, PullRequestMergeMethodStatus pullRequestMergeMethodStatus, boolean z) {
         k71.k.g(pullRequestMergeMethod, "mergeMethod");

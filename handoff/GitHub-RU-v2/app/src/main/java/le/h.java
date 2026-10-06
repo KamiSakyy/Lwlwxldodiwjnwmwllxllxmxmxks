@@ -10,35 +10,35 @@ import jo.f4;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Avatar f28491a;
+    public Avatar f28491a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f28492b;
+    public String f28492b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f28493c;
+    public String f28493c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f28494d;
+    public String f28494d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final String f28495e;
+    public String f28495e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final boolean f28496f;
+    public boolean f28496f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final boolean f28497g;
+    public boolean f28497g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final String f28498h;
-    public final int i;
+    public String f28498h;
+    public int i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final boolean f28499j;
+    public boolean f28499j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final boolean f28500k;
+    public boolean f28500k;
 
     public /* synthetic */ h(Avatar avatar, String str, String str2, String str3, String str4, boolean z10, boolean z11, String str5, int i, int i10) {
         this(avatar, str, str2, str3, str4, z10, z11, str5, i, (i10 & 512) == 0, false);

@@ -11,7 +11,7 @@ public final class f50 {
     public static final f50 v;
     public static final /* synthetic */ f50[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         f50 f50Var = new f50("DAILY", 0, "DAILY");

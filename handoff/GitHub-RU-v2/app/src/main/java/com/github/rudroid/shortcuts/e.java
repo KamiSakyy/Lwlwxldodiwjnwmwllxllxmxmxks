@@ -22,19 +22,19 @@ import y71.y1;
 public final class e extends k1 {
     public static final a Companion = new a();
     public static final ShortcutConfigurationModel F = new ShortcutConfigurationModel(x61.r.r, ShortcutColor.GRAY, ShortcutIcon.ZAP, ShortcutScope.AllRepositories.INSTANCE, ShortcutType.ISSUE, "");
-    public final y1 A;
-    public final y1 B;
+    public y1 A;
+    public y1 B;
     public q1 C;
-    public final y1 D;
-    public final y1 E;
-    public final tm.a s;
-    public final tm.m t;
-    public final dl.a u;
-    public final com.github.rudroid.activities.util.c v;
-    public final wm.b w;
-    public final boolean x;
-    public final boolean y;
-    public final boolean z;
+    public y1 D;
+    public y1 E;
+    public tm.a s;
+    public tm.m t;
+    public dl.a u;
+    public com.github.rudroid.activities.util.c v;
+    public wm.b w;
+    public boolean x;
+    public boolean y;
+    public boolean z;
 
     public static final class a {
     }

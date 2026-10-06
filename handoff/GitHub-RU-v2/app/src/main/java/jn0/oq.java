@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oq implements aaShadow.v0 {
-    public final nq a;
-    public final lq b;
-    public final pq c;
-    public final uq d;
-    public final String e;
-    public final String f;
+    public nq a;
+    public lq b;
+    public pq c;
+    public uq d;
+    public String e;
+    public String f;
 
     public oq(nq nqVar, lq lqVar, pq pqVar, uq uqVar, String str, String str2) {
         this.a = nqVar;

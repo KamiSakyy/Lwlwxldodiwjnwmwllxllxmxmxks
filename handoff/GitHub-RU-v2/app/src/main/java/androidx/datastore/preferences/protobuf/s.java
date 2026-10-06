@@ -4,7 +4,7 @@ package androidx.datastore.preferences.protobuf;
 public abstract class s implements Cloneable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final u f2374r;
+    public u f2374r;
 
     /* renamed from: s, reason: collision with root package name */
     public u f2375s;

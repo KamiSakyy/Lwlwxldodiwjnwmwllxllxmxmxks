@@ -6,9 +6,9 @@ import uu0.z4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public final String a;
-    public final String b;
-    public final z4 c;
+    public String a;
+    public String b;
+    public z4 c;
 
     public r(String str, String str2, z4 z4Var) {
         this.a = str;

@@ -18,11 +18,11 @@ import w61.i;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class IssueType implements Parcelable {
-    public final String r;
-    public final String s;
-    public final String t;
-    public final boolean u;
-    public final IssueTypeColor v;
+    public String r;
+    public String s;
+    public String t;
+    public boolean u;
+    public IssueTypeColor v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<IssueType> CREATOR = new m(16);
     public static final h[] w = {null, null, null, null, w.s(i.r, new a(22))};

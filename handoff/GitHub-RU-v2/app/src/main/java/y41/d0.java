@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d0 extends p1 {
-    public final int a;
-    public final String b;
-    public final int c;
-    public final int d;
-    public final long e;
-    public final long f;
-    public final long g;
-    public final String h;
-    public final List i;
+    public int a;
+    public String b;
+    public int c;
+    public int d;
+    public long e;
+    public long f;
+    public long g;
+    public String h;
+    public List i;
 
     public d0(int i, String str, int i2, int i3, long j, long j2, long j3, String str2, List list) {
         this.a = i;

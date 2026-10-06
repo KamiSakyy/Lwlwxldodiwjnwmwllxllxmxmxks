@@ -8,13 +8,13 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final a d;
-    public final b e;
-    public final g f;
-    public final vx.a g;
+    public String a;
+    public String b;
+    public String c;
+    public a d;
+    public b e;
+    public g f;
+    public vx.a g;
 
     public c(String str, String str2, String str3, a aVar, b bVar, g gVar, vx.a aVar2) {
         k.g(str, "__typename");

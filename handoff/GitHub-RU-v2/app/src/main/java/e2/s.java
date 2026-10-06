@@ -4,10 +4,10 @@ package e2;
 public final class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f21919a;
+    public float f21919a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f21920b;
+    public float f21920b;
 
     public s(float f6, float f10) {
         this.f21919a = f6;

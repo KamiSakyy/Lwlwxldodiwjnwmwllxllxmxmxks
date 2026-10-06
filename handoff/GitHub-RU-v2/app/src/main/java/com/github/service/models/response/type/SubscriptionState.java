@@ -11,7 +11,7 @@ public final class SubscriptionState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ SubscriptionState[] $VALUES;
     public static final y Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final SubscriptionState UNSUBSCRIBED = new SubscriptionState("UNSUBSCRIBED", 0, "UNSUBSCRIBED");
     public static final SubscriptionState RELEASES_ONLY = new SubscriptionState("RELEASES_ONLY", 1, "RELEASES_ONLY");
     public static final SubscriptionState SUBSCRIBED = new SubscriptionState("SUBSCRIBED", 2, "SUBSCRIBED");

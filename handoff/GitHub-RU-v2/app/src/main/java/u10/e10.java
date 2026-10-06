@@ -2,13 +2,13 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e10 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final String e;
-    public final w80.q3 f;
-    public final w80.h g;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public String e;
+    public w80.q3 f;
+    public w80.h g;
 
     public e10(String str, boolean z, boolean z2, boolean z3, String str2, w80.q3 q3Var, w80.h hVar) {
         this.a = str;

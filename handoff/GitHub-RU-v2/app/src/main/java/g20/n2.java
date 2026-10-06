@@ -2,16 +2,16 @@ package g20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n2 {
-    public final String a;
-    public final hc0.p2 b;
-    public final hc0.j2 c;
-    public final String d;
-    public final t2 e;
-    public final q2 f;
-    public final int g;
-    public final m2 h;
-    public final o2 i;
-    public final String j;
+    public String a;
+    public hc0.p2 b;
+    public hc0.j2 c;
+    public String d;
+    public t2 e;
+    public q2 f;
+    public int g;
+    public m2 h;
+    public o2 i;
+    public String j;
 
     public n2(String str, hc0.p2 p2Var, hc0.j2 j2Var, String str2, t2 t2Var, q2 q2Var, int i, m2 m2Var, o2 o2Var, String str3) {
         this.a = str;

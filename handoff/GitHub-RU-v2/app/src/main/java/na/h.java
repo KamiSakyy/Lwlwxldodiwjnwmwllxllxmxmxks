@@ -4,7 +4,7 @@ package na;
 public final class h implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f29677a;
+    public String f29677a;
 
     public h(String str) {
         this.f29677a = str;

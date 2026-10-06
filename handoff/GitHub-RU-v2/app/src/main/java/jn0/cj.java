@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cj {
-    public final bj a;
+    public bj a;
 
     public cj(bj bjVar) {
         this.a = bjVar;

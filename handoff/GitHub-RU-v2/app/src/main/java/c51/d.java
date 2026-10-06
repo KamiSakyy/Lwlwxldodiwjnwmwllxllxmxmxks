@@ -15,15 +15,15 @@ import w21.g;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public final double a;
-    public final double b;
-    public final long c;
-    public final long d;
-    public final int e;
-    public final ArrayBlockingQueue f;
-    public final ThreadPoolExecutor g;
-    public final l1 h;
-    public final t i;
+    public double a;
+    public double b;
+    public long c;
+    public long d;
+    public int e;
+    public ArrayBlockingQueue f;
+    public ThreadPoolExecutor g;
+    public l1 h;
+    public t i;
     public int j;
     public long k;
 

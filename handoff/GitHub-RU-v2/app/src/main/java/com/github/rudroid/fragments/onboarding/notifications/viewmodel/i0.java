@@ -9,10 +9,10 @@ public final class i0 {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final g3 f14278a;
+    public g3 f14278a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final g3 f14279b;
+    public g3 f14279b;
 
     public static final class a {
         public static i0 a(Context context) {

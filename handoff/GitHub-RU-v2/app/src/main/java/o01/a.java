@@ -11,21 +11,21 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final com.github.service.models.response.a d;
-    public final ZonedDateTime e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final String i;
-    public final String j;
-    public final String k;
-    public final String l;
-    public final d m;
-    public final List n;
-    public final boolean o;
+    public String a;
+    public String b;
+    public String c;
+    public com.github.service.models.response.a d;
+    public ZonedDateTime e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public String i;
+    public String j;
+    public String k;
+    public String l;
+    public d m;
+    public List n;
+    public boolean o;
 
     public a(String str, String str2, String str3, com.github.service.models.response.a aVar, ZonedDateTime zonedDateTime, boolean z, boolean z2, boolean z3, String str4, String str5, String str6, String str7, d dVar, List list, boolean z4) {
         k.g(str, "id");

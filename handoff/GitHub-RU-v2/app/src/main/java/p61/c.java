@@ -8,7 +8,7 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements Map {
-    public final m r;
+    public m r;
 
     public c(m mVar) {
         this.r = mVar;

@@ -25,4 +25,7 @@ public final class b implements aaShadow.a {
         fVar.z0("node");
         aa.c.b(aa.c.c(d.a, true)).b(fVar, wVar, bVar.a);
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

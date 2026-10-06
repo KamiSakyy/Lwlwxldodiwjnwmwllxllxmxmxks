@@ -26,16 +26,16 @@ import w51.r;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class i {
-    public final int a;
-    public final int b;
-    public final int c;
-    public final TimeInterpolator d;
-    public final TimeInterpolator e;
-    public final TimeInterpolator f;
-    public final ViewGroup g;
-    public final Context h;
-    public final h i;
-    public final j j;
+    public int a;
+    public int b;
+    public int c;
+    public TimeInterpolator d;
+    public TimeInterpolator e;
+    public TimeInterpolator f;
+    public ViewGroup g;
+    public Context h;
+    public h i;
+    public j j;
     public int k;
     public boolean l;
     public g m;
@@ -46,7 +46,7 @@ public abstract class i {
     public int s;
     public int t;
     public boolean u;
-    public final AccessibilityManager v;
+    public AccessibilityManager v;
     public static final p6.a x = y21.a.b;
     public static final LinearInterpolator y = y21.a.a;
     public static final p6.a z = y21.a.d;

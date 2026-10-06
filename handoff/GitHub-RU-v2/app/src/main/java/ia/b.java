@@ -7,16 +7,16 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f26147a;
+    public String f26147a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f26148b;
+    public Object f26148b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f26149c;
+    public List f26149c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f26150d;
+    public String f26150d;
 
     public b(String str, List list, List list2, String str2) {
         k.g(str, "key");

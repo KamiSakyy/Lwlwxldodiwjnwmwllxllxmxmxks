@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sh {
-    public final int a;
-    public final th b;
-    public final String c;
-    public final String d;
+    public int a;
+    public th b;
+    public String c;
+    public String d;
 
     public sh(int i, th thVar, String str, String str2) {
         this.a = i;

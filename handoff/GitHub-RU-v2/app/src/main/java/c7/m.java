@@ -8,13 +8,13 @@ import android.window.OnBackInvokedDispatcher;
 public abstract class m extends f {
 
     /* renamed from: c, reason: collision with root package name */
-    public final OnBackInvokedDispatcher f4154c;
+    public OnBackInvokedDispatcher f4154c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f4155d;
+    public int f4155d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final OnBackInvokedCallback f4156e;
+    public OnBackInvokedCallback f4156e;
 
     /* renamed from: f, reason: collision with root package name */
     public boolean f4157f;

@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g80 {
-    public final c80 a;
-    public final h80 b;
-    public final String c;
-    public final String d;
+    public c80 a;
+    public h80 b;
+    public String c;
+    public String d;
 
     public g80(c80 c80Var, h80 h80Var, String str, String str2) {
         this.a = c80Var;

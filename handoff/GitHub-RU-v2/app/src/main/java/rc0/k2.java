@@ -4,11 +4,11 @@ import gn0.e20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k2 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final e20 d;
-    public final l2 e;
+    public String a;
+    public String b;
+    public String c;
+    public e20 d;
+    public l2 e;
 
     public k2(String str, String str2, String str3, e20 e20Var, l2 l2Var) {
         this.a = str;

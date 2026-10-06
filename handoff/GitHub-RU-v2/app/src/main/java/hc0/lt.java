@@ -12,7 +12,7 @@ public final class lt {
     public static final lt w;
     public static final /* synthetic */ lt[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         lt ltVar = new lt("DISCUSSIONS", 0, "DISCUSSIONS");

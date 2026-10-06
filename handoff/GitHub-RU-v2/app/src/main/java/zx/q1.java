@@ -4,8 +4,8 @@ import dw.e7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q1 {
-    public final String a;
-    public final e7 b;
+    public String a;
+    public e7 b;
 
     public q1(String str, e7 e7Var) {
         this.a = str;

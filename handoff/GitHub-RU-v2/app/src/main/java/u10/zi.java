@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zi {
-    public final ti a;
+    public ti a;
 
     public zi(ti tiVar) {
         this.a = tiVar;

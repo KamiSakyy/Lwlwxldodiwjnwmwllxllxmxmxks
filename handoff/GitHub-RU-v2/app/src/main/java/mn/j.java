@@ -7,14 +7,14 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final String a;
-    public final String b;
-    public final ZonedDateTime c;
-    public final ZonedDateTime d;
-    public final int e;
-    public final Integer f;
-    public final String g;
-    public final String h;
+    public String a;
+    public String b;
+    public ZonedDateTime c;
+    public ZonedDateTime d;
+    public int e;
+    public Integer f;
+    public String g;
+    public String h;
 
     public j(String str, String str2, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, int i, Integer num, String str3, String str4) {
         k71.k.g(str, "workflowRunId");

@@ -22,7 +22,7 @@ public final class ShortcutIcon {
     public static final ShortcutIcon REPO_TEMPLATE;
     public static final ShortcutIcon STAR;
     private static final Set<ShortcutIcon> repoEntries;
-    private final String value;
+    private String value;
     public static final ShortcutIcon ZAP = new ShortcutIcon("ZAP", 0, "ZAP");
     public static final ShortcutIcon ISSUEOPENED = new ShortcutIcon("ISSUEOPENED", 1, "ISSUEOPENED");
     public static final ShortcutIcon GITPULLREQUEST = new ShortcutIcon("GITPULLREQUEST", 2, "GITPULLREQUEST");

@@ -14,7 +14,7 @@ public final class e7 {
     public static final e7 x;
     public static final e7 y;
     public static final /* synthetic */ e7[] z;
-    public final String r;
+    public String r;
 
     static {
         e7 e7Var = new e7("DISCUSSION", 0, "DISCUSSION");

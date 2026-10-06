@@ -6,13 +6,13 @@ import android.view.textclassifier.TextClassification;
 public final class o1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final CharSequence f21166a;
+    public CharSequence f21166a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f21167b;
+    public long f21167b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final TextClassification f21168c;
+    public TextClassification f21168c;
 
     public o1(CharSequence charSequence, long j10, TextClassification textClassification) {
         this.f21166a = charSequence;

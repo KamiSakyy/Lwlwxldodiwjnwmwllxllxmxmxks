@@ -9,7 +9,7 @@ public final class mh {
     public static final mh t;
     public static final /* synthetic */ mh[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         mh mhVar = new mh("ARCHIVED", 0, "ARCHIVED");

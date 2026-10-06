@@ -21,13 +21,13 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o1 implements x1 {
     public static volatile o1 V;
-    public final n0 A;
-    public final g21.a B;
-    public final f3 C;
-    public final t2 D;
-    public final z E;
-    public final x2 F;
-    public final String G;
+    public n0 A;
+    public g21.a B;
+    public f3 C;
+    public t2 D;
+    public z E;
+    public x2 F;
+    public String G;
     public m0 H;
     public p3 I;
     public r J;
@@ -39,16 +39,16 @@ public final class o1 implements x1 {
     public volatile boolean Q;
     public int R;
     public int S;
-    public final long U;
-    public final Context r;
-    public final boolean s;
-    public final w80.w3 t;
-    public final h u;
-    public final c1 v;
-    public final s0 w;
-    public final m1 x;
-    public final y3 y;
-    public final t4 z;
+    public long U;
+    public Context r;
+    public boolean s;
+    public w80.w3 t;
+    public h u;
+    public c1 v;
+    public s0 w;
+    public m1 x;
+    public y3 y;
+    public t4 z;
     public boolean M = false;
     public final AtomicInteger T = new AtomicInteger(0);
 
@@ -455,5 +455,9 @@ public final class o1 implements x1 {
     public o1(Object... a) {
     }
     public Object n(Object p1, Object p2) { return null; }
+    public Object o(Object p1) { return null; }
+    public Object n(Object p1, Object p2) { return null; }
+    public Object n(Object p1, Object p2) { return null; }
+    public Object o(Object p1) { return null; }
     public Object o(Object p1) { return null; }
 }

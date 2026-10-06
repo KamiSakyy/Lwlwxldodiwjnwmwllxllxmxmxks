@@ -63,4 +63,5 @@ public final class a implements MultiAutoCompleteTextView.Tokenizer {
         TextUtils.copySpansFrom((Spanned) charSequence, 0, charSequence.length(), Object.class, spannableString, 0);
         return spannableString;
     }
+    public Object ordinal() { return null; }
 }

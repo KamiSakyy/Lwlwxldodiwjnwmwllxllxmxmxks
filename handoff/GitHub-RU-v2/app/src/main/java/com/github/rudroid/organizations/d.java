@@ -6,10 +6,10 @@ import com.github.service.models.response.organizations.Organization;
 public final class d implements c {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Organization f17171r;
+    public Organization f17171r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f17172s;
+    public String f17172s;
 
     public d(Organization organization) {
         k71.k.g(organization, "organization");

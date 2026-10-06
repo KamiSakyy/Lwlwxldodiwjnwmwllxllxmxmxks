@@ -11,15 +11,15 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class j implements Closeable {
-    public final byte[] A;
-    public final h91.f B;
-    public final h91.i r;
-    public final Random s;
-    public final boolean t;
-    public final boolean u;
-    public final long v;
-    public final h91.h w;
-    public final h91.h x;
+    public byte[] A;
+    public h91.f B;
+    public h91.i r;
+    public Random s;
+    public boolean t;
+    public boolean u;
+    public long v;
+    public h91.h w;
+    public h91.h x;
     public boolean y;
     public a z;
 
@@ -166,4 +166,8 @@ public final class j implements Closeable {
         this.r.flush();
     }
     public Object b(Object p1, Object p2) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

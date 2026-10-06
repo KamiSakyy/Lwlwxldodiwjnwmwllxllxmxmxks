@@ -7,7 +7,7 @@ import android.view.ViewConfiguration;
 public final class r0 implements q2Shadow {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ViewConfiguration f33134a;
+    public ViewConfiguration f33134a;
 
     public r0(ViewConfiguration viewConfiguration) {
         this.f33134a = viewConfiguration;

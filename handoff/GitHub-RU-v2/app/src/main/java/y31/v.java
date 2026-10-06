@@ -10,7 +10,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v extends a5.b {
-    public final TextInputLayout u;
+    public TextInputLayout u;
 
     public v(TextInputLayout textInputLayout) {
         this.u = textInputLayout;

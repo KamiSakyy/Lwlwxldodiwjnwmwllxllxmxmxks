@@ -12,34 +12,34 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class i0 extends k1 implements com.github.rudroid.utilities.viewmodel.b {
-    public final String A;
-    public final y1 B;
-    public final i1 C;
+    public String A;
+    public y1 B;
+    public i1 C;
     public q1 D;
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f5369s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final si.b f5370t;
+    public si.b f5370t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final nl.j f5371u;
+    public nl.j f5371u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final si.a f5372v;
+    public si.a f5372v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final si.c f5373w;
+    public si.c f5373w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f5374x;
+    public com.github.rudroid.activities.util.c f5374x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f5375y;
+    public String f5375y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final String f5376z;
+    public String f5376z;
 
     public i0(si.b bVar, nl.j jVar, si.a aVar, si.c cVar, com.github.rudroid.activities.util.c cVar2, oa.m mVar, a1 a1Var) {
         k71.k.g(bVar, "fetchDefaultWorkflowInputsUseCase");

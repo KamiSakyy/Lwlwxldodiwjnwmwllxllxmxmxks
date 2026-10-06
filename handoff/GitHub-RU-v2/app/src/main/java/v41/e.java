@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class e {
     public static final String b = g.h(UUID.randomUUID().toString() + System.currentTimeMillis());
     public static final AtomicLong c = new AtomicLong(0);
-    public final String a;
+    public String a;
 
     public e() {
         long time = new Date().getTime();

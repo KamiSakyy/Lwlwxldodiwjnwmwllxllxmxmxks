@@ -5,19 +5,19 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a6 {
-    public final List a;
-    public final PullRequestMergeMethod b;
-    public final String c;
-    public final yz0.s2 d;
-    public final yz0.s2 e;
-    public final yz0.s2 f;
-    public final List g;
-    public final int h;
-    public final boolean i;
-    public final boolean j;
-    public final yz0.s2 k;
-    public final yz0.s2 l;
-    public final String m;
+    public List a;
+    public PullRequestMergeMethod b;
+    public String c;
+    public yz0.s2 d;
+    public yz0.s2 e;
+    public yz0.s2 f;
+    public List g;
+    public int h;
+    public boolean i;
+    public boolean j;
+    public yz0.s2 k;
+    public yz0.s2 l;
+    public String m;
 
     public static final /* synthetic */ class a {
         public static final /* synthetic */ int[] a;

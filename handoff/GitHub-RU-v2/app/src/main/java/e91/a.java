@@ -12,7 +12,7 @@ import m7.y;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends y {
-    public final d a;
+    public d a;
 
     public a(d dVar) {
         k.g(dVar, "trustRootIndex");

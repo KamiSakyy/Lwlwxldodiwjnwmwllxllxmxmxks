@@ -8,9 +8,9 @@ import w51.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements o61.b {
     public final /* synthetic */ int r;
-    public final k.i s;
-    public final Object t;
-    public final Object u;
+    public k.i s;
+    public Object t;
+    public Object u;
     public volatile Object v;
 
     public b(k.i iVar, int i) {

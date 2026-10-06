@@ -34,7 +34,7 @@ public final class a implements l6.g {
             }
         }
 
-        public final void c(Object obj, OutputStream outputStream) {
+        public static final void c(Object obj, OutputStream outputStream) {
             try {
                 outputStream.write(w.w(l81.c.d.b(PullRequestsWidgetModel.Companion.serializer(), (PullRequestsWidgetModel) obj)));
                 outputStream.close();
@@ -60,5 +60,6 @@ public final class a implements l6.g {
     public final Object b(Context context, String str) {
         return (n5.f) c.a(context, b[0]);
     }
-    public Object z(Object p1) { return null; }
+    public static Object z(Object p1) { return null; }
+    public Object a(Object p1, Object p2) { return null; }
 }

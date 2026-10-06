@@ -2,21 +2,21 @@ package fb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 {
-    public final String a;
-    public final i b;
-    public final k c;
-    public final x d;
-    public final h e;
-    public final z f;
-    public final l g;
-    public final n h;
-    public final o i;
-    public final s j;
-    public final t k;
-    public final q l;
-    public final j m;
-    public final r n;
-    public final u o;
+    public String a;
+    public i b;
+    public k c;
+    public x d;
+    public h e;
+    public z f;
+    public l g;
+    public n h;
+    public o i;
+    public s j;
+    public t k;
+    public q l;
+    public j m;
+    public r n;
+    public u o;
 
     public l0(String str, i iVar, k kVar, x xVar, h hVar, z zVar, l lVar, n nVar, o oVar, s sVar, t tVar, q qVar, j jVar, r rVar, u uVar) {
         k71.k.g(str, "__typename");

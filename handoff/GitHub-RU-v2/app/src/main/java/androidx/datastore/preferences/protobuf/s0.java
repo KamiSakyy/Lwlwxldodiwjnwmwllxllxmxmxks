@@ -4,16 +4,16 @@ package androidx.datastore.preferences.protobuf;
 public final class s0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final a f2376a;
+    public a f2376a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f2377b;
+    public String f2377b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object[] f2378c;
+    public Object[] f2378c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f2379d;
+    public int f2379d;
 
     public s0(u uVar, String str, Object[] objArr) {
         this.f2376a = uVar;
@@ -74,6 +74,6 @@ public final class s0 {
         public u() {
         }
     }
-    public Object i(Object p1, Object p2, Object p3) { return null; }
-    public Object n(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object i(Object p1, Object p2, Object p3) { return null; }
+    public static Object n(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -10,10 +10,10 @@ import xn.i0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends d21.a {
     public static final Parcelable.Creator<d> CREATOR = new i0(7);
-    public final String r;
-    public final int s;
-    public final long t;
-    public final boolean u;
+    public String r;
+    public int s;
+    public long t;
+    public boolean u;
 
     public d(String str, int i, long j, boolean z) {
         this.r = str;
@@ -64,4 +64,6 @@ public final class d extends d21.a {
     }
     public Object d(Object p1, Object p2) { return null; }
     public Object f(Object p1, Object p2) { return null; }
+    public Object d(Object p1, int p2) { return null; }
+    public Object f(Object p1, int p2) { return null; }
 }

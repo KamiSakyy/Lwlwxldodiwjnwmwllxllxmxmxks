@@ -12,15 +12,15 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends k {
     public static final Set j = Collections.unmodifiableSet(new HashSet(Arrays.asList("token_type", "state", "code", "access_token", "expires_in", "id_token", "scope")));
-    public final e a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final Long f;
-    public final String g;
-    public final String h;
-    public final Map i;
+    public e a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public Long f;
+    public String g;
+    public String h;
+    public Map i;
 
     public f(e eVar, String str, String str2, String str3, String str4, Long l, String str5, String str6, Map map) {
         this.a = eVar;

@@ -2,7 +2,7 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h3 implements i3 {
-    public final String a;
+    public String a;
 
     public h3(String str) {
         this.a = str;

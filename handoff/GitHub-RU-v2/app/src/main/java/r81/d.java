@@ -800,4 +800,5 @@ public abstract class d {
         }
     }
     public Object e() { return null; }
+    public Object b(Object p1, Object p2) { return null; }
 }

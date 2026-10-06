@@ -2,10 +2,10 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y1 {
-    public final String a;
-    public final String b;
-    public final z1 c;
-    public final g20.a1 d;
+    public String a;
+    public String b;
+    public z1 c;
+    public g20.a1 d;
 
     public y1(String str, String str2, z1 z1Var, g20.a1 a1Var) {
         this.a = str;

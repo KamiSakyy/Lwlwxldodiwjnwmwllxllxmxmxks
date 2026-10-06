@@ -2,7 +2,7 @@ package ct;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final int a;
+    public int a;
 
     public g(int i) {
         this.a = i;

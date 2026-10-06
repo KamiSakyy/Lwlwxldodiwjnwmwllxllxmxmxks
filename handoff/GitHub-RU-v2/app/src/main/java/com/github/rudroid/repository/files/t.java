@@ -7,13 +7,13 @@ import y71.y1;
 public final class t extends androidx.lifecycle.k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final ql.a f19679s;
+    public ql.a f19679s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f19680t;
+    public com.github.rudroid.activities.util.c f19680t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final y1 f19681u;
+    public y1 f19681u;
 
     public t(ql.a aVar, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(aVar, "fetchRepositoryFileExistsUseCase");

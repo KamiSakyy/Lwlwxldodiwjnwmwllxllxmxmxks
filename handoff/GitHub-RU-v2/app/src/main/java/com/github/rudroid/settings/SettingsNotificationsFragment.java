@@ -26,9 +26,9 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
     public static final /* synthetic */ r71.e[] L0;
     public final com.github.rudroid.fragments.util.c G0 = new com.github.rudroid.fragments.util.c("EXTRA_SHOW_TOOLBAR", new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(2));
     public com.github.rudroid.activities.util.c H0;
-    public final androidx.lifecycle.l1 I0;
-    public final androidx.lifecycle.l1 J0;
-    public final androidx.lifecycle.l1 K0;
+    public androidx.lifecycle.l1 I0;
+    public androidx.lifecycle.l1 J0;
+    public androidx.lifecycle.l1 K0;
 
     public static final class a {
     }

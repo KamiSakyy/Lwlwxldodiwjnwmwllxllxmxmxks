@@ -5,11 +5,11 @@ import tz.u4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public final String a;
-    public final r b;
-    public final w c;
-    public final String d;
-    public final u4 e;
+    public String a;
+    public r b;
+    public w c;
+    public String d;
+    public u4 e;
 
     public u(String str, r rVar, w wVar, String str2, u4 u4Var) {
         this.a = str;

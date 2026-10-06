@@ -12,7 +12,7 @@ import w61.i;
 public final class ChatMessageReferenceResponse$UnknownReferenceResponse extends a {
     public static final Companion Companion = new Companion();
     public static final h[] b = {w.s(i.r, new hz.e(4))};
-    public final f a;
+    public f a;
 
     public static final class Companion {
         public final KSerializer serializer() {

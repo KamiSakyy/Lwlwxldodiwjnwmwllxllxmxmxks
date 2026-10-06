@@ -10,7 +10,7 @@ public final class ProjectViewLayoutType {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ ProjectViewLayoutType[] $VALUES;
     public static final r0 Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final ProjectViewLayoutType BOARD = new ProjectViewLayoutType("BOARD", 0, "BOARD_LAYOUT");
     public static final ProjectViewLayoutType TABLE = new ProjectViewLayoutType("TABLE", 1, "TABLE_LAYOUT");
     public static final ProjectViewLayoutType ROADMAP = new ProjectViewLayoutType("ROADMAP", 2, "ROADMAP_LAYOUT");

@@ -4,8 +4,8 @@ import com.github.domain.users.FetchUsersParams$FetchContributorsParams;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m extends za<FetchUsersParams$FetchContributorsParams> {
-    public final gn.b y;
-    public final com.github.rudroid.activities.util.c z;
+    public gn.b y;
+    public com.github.rudroid.activities.util.c z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public m(gn.b bVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {
@@ -22,4 +22,8 @@ public final class m extends za<FetchUsersParams$FetchContributorsParams> {
     public final Object P(gn.n nVar, String str, j71.c cVar, c71.j jVar) {
         return this.y.a(this.z.d(), ((FetchUsersParams$FetchContributorsParams) nVar).r, str, cVar, jVar);
     }
+    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object e() { return null; }
+    public Object k(Object p1) { return null; }
 }

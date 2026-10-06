@@ -18,7 +18,7 @@ public final class e0 implements ServiceConnection {
     public int s = 2;
     public boolean t;
     public IBinder u;
-    public final d0 v;
+    public d0 v;
     public ComponentName w;
     public final /* synthetic */ g0 x;
 

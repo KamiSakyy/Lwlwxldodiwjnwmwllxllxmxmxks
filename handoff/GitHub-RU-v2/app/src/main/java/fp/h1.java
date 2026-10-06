@@ -2,12 +2,12 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h1 {
-    public final String a;
-    public final c1 b;
-    public final Boolean c;
-    public final f1 d;
-    public final k1 e;
-    public final String f;
+    public String a;
+    public c1 b;
+    public Boolean c;
+    public f1 d;
+    public k1 e;
+    public String f;
 
     public h1(String str, c1 c1Var, Boolean bool, f1 f1Var, k1 k1Var, String str2) {
         this.a = str;

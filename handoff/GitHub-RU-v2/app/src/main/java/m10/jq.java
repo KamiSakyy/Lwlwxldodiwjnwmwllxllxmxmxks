@@ -25,7 +25,7 @@ public final class jq {
     public static final jq x;
     public static final jq y;
     public static final jq z;
-    public final String r;
+    public String r;
 
     static {
         jq jqVar = new jq("AGENT_SESSION_FINISHED", 0, "AGENT_SESSION_FINISHED");

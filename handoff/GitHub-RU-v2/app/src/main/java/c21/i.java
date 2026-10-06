@@ -6,15 +6,15 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i extends d21.a {
     public static final Parcelable.Creator<i> CREATOR = new bm.o(27);
-    public final int r;
-    public final int s;
-    public final int t;
-    public final long u;
-    public final long v;
-    public final String w;
-    public final String x;
-    public final int y;
-    public final int z;
+    public int r;
+    public int s;
+    public int t;
+    public long u;
+    public long v;
+    public String w;
+    public String x;
+    public int y;
+    public int z;
 
     public i(int i, int i2, int i3, long j, long j2, String str, String str2, int i4, int i5) {
         this.r = i;

@@ -6,7 +6,7 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d2 implements aa.n0 {
     public static final z1 Companion = new z1();
-    public final String r;
+    public String r;
 
     public d2(String str) {
         k71.k.g(str, "issueId");

@@ -15,8 +15,8 @@ public final class c {
     public static final c x;
     public static final c y;
     public static final c z;
-    public final b r;
-    public final a s;
+    public b r;
+    public a s;
 
     static {
         b bVar = b.t;

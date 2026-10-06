@@ -8,11 +8,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements h0 {
-    public final String a;
-    public final String b;
-    public final a c;
-    public final b d;
-    public final ZonedDateTime e;
+    public String a;
+    public String b;
+    public a c;
+    public b d;
+    public ZonedDateTime e;
 
     public d(String str, String str2, a aVar, b bVar, ZonedDateTime zonedDateTime) {
         this.a = str;

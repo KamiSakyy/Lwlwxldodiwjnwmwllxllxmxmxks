@@ -2,7 +2,7 @@ package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class l0 extends s0 {
-    public final b1.m d;
+    public b1.m d;
 
     public l0() {
         super(4);

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ze {
-    public final ve a;
-    public final ue b;
+    public ve a;
+    public ue b;
 
     public ze(ve veVar, ue ueVar) {
         this.a = veVar;

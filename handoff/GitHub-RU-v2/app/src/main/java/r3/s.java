@@ -10,10 +10,10 @@ public final class s {
     public static final s f31143d = new s(1, true);
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f31144a;
+    public int f31144a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f31145b;
+    public boolean f31145b;
 
     public s(int i, boolean z10) {
         this.f31144a = i;

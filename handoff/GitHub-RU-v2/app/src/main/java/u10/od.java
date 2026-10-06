@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class od {
-    public final String a;
-    public final md b;
+    public String a;
+    public md b;
 
     public od(String str, md mdVar) {
         this.a = str;

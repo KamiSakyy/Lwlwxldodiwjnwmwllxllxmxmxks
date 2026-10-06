@@ -4,7 +4,7 @@ package b6;
 public final class c implements z5.k {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f3507a;
+    public int f3507a;
 
     public c(int i) {
         this.f3507a = i;
@@ -24,5 +24,6 @@ public final class c implements z5.k {
     public final String toString() {
         return x.i.j(new StringBuilder("AppWidgetId(appWidgetId="), this.f3507a, ')');
     }
+    public Object v(Object p1) { return null; }
     public Object v(Object p1) { return null; }
 }

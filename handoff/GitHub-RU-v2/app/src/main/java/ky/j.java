@@ -81,13 +81,13 @@ import zx.d2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements h0, mi0, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
-    public final com.github.service.wrapper.j t;
-    public final v u;
-    public final p v;
-    public final p w;
-    public final Object x;
-    public final Object y;
+    public com.github.service.wrapper.b s;
+    public com.github.service.wrapper.j t;
+    public v u;
+    public p v;
+    public p w;
+    public Object x;
+    public Object y;
 
     public j(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, com.github.service.wrapper.j jVar2, v vVar, int i) {
         this.r = i;

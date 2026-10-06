@@ -4,13 +4,13 @@ package i9;
 public final class z extends aa1.b {
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f26143d;
+    public String f26143d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f26144e;
+    public int f26144e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f26145f;
+    public int f26145f;
 
     public z(int i, String str, int i10) {
         this.f26143d = str;

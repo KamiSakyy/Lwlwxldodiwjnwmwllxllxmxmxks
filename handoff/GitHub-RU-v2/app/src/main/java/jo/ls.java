@@ -2,12 +2,12 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ls implements aaShadow.v0 {
-    public final ks a;
-    public final is b;
-    public final ms c;
-    public final rs d;
-    public final String e;
-    public final String f;
+    public ks a;
+    public is b;
+    public ms c;
+    public rs d;
+    public String e;
+    public String f;
 
     public ls(ks ksVar, is isVar, ms msVar, rs rsVar, String str, String str2) {
         this.a = ksVar;

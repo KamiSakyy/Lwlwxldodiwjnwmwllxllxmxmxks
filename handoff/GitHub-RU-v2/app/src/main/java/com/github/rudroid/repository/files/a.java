@@ -4,10 +4,10 @@ package com.github.rudroid.repository.files;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f19531a;
+    public String f19531a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f19532b;
+    public String f19532b;
 
     public a(String str, String str2) {
         k71.k.g(str, "baseBranch");

@@ -4,8 +4,8 @@ import com.github.rudroid.discussions.q5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public final oa.g a;
-    public final kk.g b;
+    public oa.g a;
+    public kk.g b;
 
     public u(oa.g gVar, kk.g gVar2) {
         k71.k.g(gVar, "discussionsService");

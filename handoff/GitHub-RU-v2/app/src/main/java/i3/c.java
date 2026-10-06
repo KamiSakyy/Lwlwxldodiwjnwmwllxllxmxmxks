@@ -7,7 +7,7 @@ import java.text.BreakIterator;
 public final class c extends b4 {
 
     /* renamed from: x, reason: collision with root package name */
-    public final BreakIterator f25773x;
+    public BreakIterator f25773x;
 
     public c(CharSequence charSequence) {
         BreakIterator characterInstance = BreakIterator.getCharacterInstance();

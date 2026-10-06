@@ -6,11 +6,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements h0 {
-    public final String a;
-    public final c b;
-    public final b c;
-    public final a d;
-    public final vx.a e;
+    public String a;
+    public c b;
+    public b c;
+    public a d;
+    public vx.a e;
 
     public d(String str, c cVar, b bVar, a aVar, vx.a aVar2) {
         k.g(str, "__typename");

@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ml implements aaShadow.n0 {
     public static final hl Companion = new hl();
-    public final String r;
-    public final gn0.cq s;
+    public String r;
+    public gn0.cq s;
 
     public ml(String str, gn0.cq cqVar) {
         k71.k.g(str, "subjectId");

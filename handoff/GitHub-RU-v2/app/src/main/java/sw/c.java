@@ -2,11 +2,11 @@ package sw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final String a;
-    public final f b;
-    public final e c;
-    public final o d;
-    public final g e;
+    public String a;
+    public f b;
+    public e c;
+    public o d;
+    public g e;
 
     public c(String str, f fVar, e eVar, o oVar, g gVar) {
         k71.k.g(str, "__typename");

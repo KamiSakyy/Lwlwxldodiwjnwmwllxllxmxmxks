@@ -19,10 +19,10 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d extends v implements g0 {
-    public final Handler t;
-    public final String u;
-    public final boolean v;
-    public final d w;
+    public Handler t;
+    public String u;
+    public boolean v;
+    public d w;
 
     public d(Handler handler, String str, boolean z) {
         this.t = handler;

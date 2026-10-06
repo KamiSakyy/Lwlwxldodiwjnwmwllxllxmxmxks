@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w implements aaShadow.n0 {
     public static final u Companion = new u();
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     public w(String str, String str2) {
         k71.k.g(str, "deviceToken");

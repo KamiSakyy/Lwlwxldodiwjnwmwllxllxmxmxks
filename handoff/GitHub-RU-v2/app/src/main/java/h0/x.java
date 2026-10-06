@@ -7,13 +7,13 @@ import java.util.List;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f25225a;
+    public List f25225a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float[] f25226b;
+    public float[] f25226b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f25227c;
+    public int f25227c;
 
     public x(List list, float[] fArr) {
         this.f25225a = list;

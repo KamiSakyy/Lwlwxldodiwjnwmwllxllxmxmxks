@@ -29,4 +29,5 @@ public interface e {
     i0 i(androidx.lifecycle.b bVar, long j);
 
     void j(androidx.lifecycle.b bVar);
+    public Object i(Object p1, long p2) { return null; }
 }

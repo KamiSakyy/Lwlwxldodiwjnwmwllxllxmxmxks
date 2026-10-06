@@ -7,14 +7,14 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements h0 {
-    public final String a;
-    public final b4 b;
-    public final String c;
-    public final t3 d;
-    public final String e;
-    public final a f;
-    public final e g;
-    public final String h;
+    public String a;
+    public b4 b;
+    public String c;
+    public t3 d;
+    public String e;
+    public a f;
+    public e g;
+    public String h;
 
     public f(String str, b4 b4Var, String str2, t3 t3Var, String str3, a aVar, e eVar, String str4) {
         this.a = str;

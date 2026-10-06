@@ -2,9 +2,9 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e1 {
-    public final String a;
-    public final String b;
-    public final iy0.e1 c;
+    public String a;
+    public String b;
+    public iy0.e1 c;
 
     public e1(String str, String str2, iy0.e1 e1Var) {
         this.a = str;

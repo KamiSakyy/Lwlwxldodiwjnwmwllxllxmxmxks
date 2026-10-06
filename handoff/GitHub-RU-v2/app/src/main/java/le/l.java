@@ -8,10 +8,10 @@ public abstract class l {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f28688a;
+    public int f28688a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f28689b;
+    public long f28689b;
 
     public static final class a {
     }
@@ -19,7 +19,7 @@ public abstract class l {
     public static final class b extends l {
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f28690c;
+        public int f28690c;
 
         public b(int i) {
             super(4, i);
@@ -59,7 +59,7 @@ public abstract class l {
     public static final class d extends l {
 
         /* renamed from: c, reason: collision with root package name */
-        public final int f28691c;
+        public int f28691c;
 
         public d(int i) {
             super(3, i);
@@ -85,7 +85,7 @@ public abstract class l {
     public static final class e extends l {
 
         /* renamed from: c, reason: collision with root package name */
-        public final v2 f28692c;
+        public v2 f28692c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(v2 v2Var) {
@@ -113,7 +113,7 @@ public abstract class l {
     public static final class f extends l {
 
         /* renamed from: c, reason: collision with root package name */
-        public final v2 f28693c;
+        public v2 f28693c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public f(v2 v2Var) {

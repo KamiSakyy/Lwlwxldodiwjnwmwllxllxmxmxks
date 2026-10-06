@@ -24,7 +24,7 @@ public final class RepositoryTypeFilter extends d {
     public static final w61.h[] w;
     public static final v01.d x;
     public static final g y;
-    public final v01.d v;
+    public v01.d v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryTypeFilter> CREATOR = new o(15);
 

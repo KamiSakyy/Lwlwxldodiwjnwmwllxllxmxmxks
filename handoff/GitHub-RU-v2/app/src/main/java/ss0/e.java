@@ -2,8 +2,8 @@ package ss0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final String a;
-    public final cp0.c b;
+    public String a;
+    public cp0.c b;
 
     public e(String str, cp0.c cVar) {
         this.a = str;
@@ -28,7 +28,7 @@ public final class e {
     public final String toString() {
         return f1.e.i("Enqueuer(__typename=", this.a, ", actorFields=", this.b, ")");
     }
-    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object v(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

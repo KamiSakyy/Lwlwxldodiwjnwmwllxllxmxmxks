@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ft {
-    public final String a;
-    public final bt b;
-    public final et c;
-    public final String d;
+    public String a;
+    public bt b;
+    public et c;
+    public String d;
 
     public ft(String str, bt btVar, et etVar, String str2) {
         this.a = str;

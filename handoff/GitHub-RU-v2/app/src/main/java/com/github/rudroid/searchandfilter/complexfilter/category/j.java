@@ -10,4 +10,5 @@ public final class j<T> implements Comparator {
         return sy.t.g(((DiscussionCategoryData) obj).s, ((DiscussionCategoryData) obj2).s);
     }
     public Object j(Object p1) { return null; }
+    public Object j(Object p1) { return null; }
 }

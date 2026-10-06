@@ -14,19 +14,19 @@ public abstract class n implements zh.b {
     public static final class b extends n implements n.c {
 
         /* renamed from: r, reason: collision with root package name */
-        public final String f28703r;
+        public String f28703r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f28704s;
+        public int f28704s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final int f28705t;
+        public int f28705t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final Integer f28706u;
+        public Integer f28706u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f28707v;
+        public String f28707v;
 
         public b(m1 m1Var, Integer num) {
             k71.k.g(m1Var, "fileLine");

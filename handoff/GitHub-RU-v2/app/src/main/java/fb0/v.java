@@ -4,9 +4,9 @@ import hc0.ev;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v {
-    public final String a;
-    public final ev b;
-    public final ja0.a c;
+    public String a;
+    public ev b;
+    public ja0.a c;
 
     public v(String str, ev evVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

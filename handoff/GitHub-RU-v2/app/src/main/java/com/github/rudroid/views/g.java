@@ -29,4 +29,5 @@ public final class g extends s0 {
     }
     public Object ordinal() { return null; }
     public Object t(Object p1, Object p2) { return null; }
+    public Object getWindow() { return null; }
 }

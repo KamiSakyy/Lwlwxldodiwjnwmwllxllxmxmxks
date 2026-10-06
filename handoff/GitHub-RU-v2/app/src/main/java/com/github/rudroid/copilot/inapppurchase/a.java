@@ -4,10 +4,10 @@ package com.github.rudroid.copilot.inapppurchase;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final x9.l f9632a;
+    public x9.l f9632a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final l0 f9633b;
+    public l0 f9633b;
 
     public a(x9.l lVar, l0 l0Var) {
         k71.k.g(l0Var, "subscriptionStatus");

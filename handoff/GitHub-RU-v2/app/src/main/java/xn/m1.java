@@ -2,9 +2,9 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m1 extends sy.r {
-    public final Double a;
-    public final Double b;
-    public final Double c;
+    public Double a;
+    public Double b;
+    public Double c;
 
     public m1(Double d, Double d2, Double d3) {
         this.a = d;

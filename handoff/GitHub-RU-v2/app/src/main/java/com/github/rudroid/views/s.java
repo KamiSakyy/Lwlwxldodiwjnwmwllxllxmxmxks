@@ -13,4 +13,5 @@ public final class s extends s0 {
     }
     public Object S(Object p1, Object p2) { return null; }
     public Object V() { return null; }
+    public Object S(int p1, boolean p2) { return null; }
 }

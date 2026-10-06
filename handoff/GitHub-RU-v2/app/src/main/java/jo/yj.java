@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yj {
-    public final vj a;
-    public final zj b;
+    public vj a;
+    public zj b;
 
     public yj(vj vjVar, zj zjVar) {
         this.a = vjVar;

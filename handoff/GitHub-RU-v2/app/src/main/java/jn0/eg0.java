@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class eg0 implements aaShadow.v0 {
-    public final fg0 a;
-    public final String b;
-    public final String c;
+    public fg0 a;
+    public String b;
+    public String c;
 
     public eg0(fg0 fg0Var, String str, String str2) {
         this.a = fg0Var;

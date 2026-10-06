@@ -8,7 +8,7 @@ import z70.m3;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements o11.b {
     public final /* synthetic */ int a;
-    public final Object b;
+    public Object b;
 
     public /* synthetic */ d(int i, Object obj) {
         this.a = i;

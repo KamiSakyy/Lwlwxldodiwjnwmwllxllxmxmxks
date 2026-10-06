@@ -4,7 +4,7 @@ package gb;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final gi.c f24868a;
+    public gi.c f24868a;
 
     public m(gi.c cVar) {
         k71.k.g(cVar, "systemPreferences");

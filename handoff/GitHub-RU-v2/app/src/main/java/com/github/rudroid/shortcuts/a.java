@@ -4,9 +4,9 @@ import com.github.rudroid.utilities.ui.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final wm.b a;
-    public final boolean b;
-    public final g1 c;
+    public wm.b a;
+    public boolean b;
+    public g1 c;
 
     public a(wm.b bVar, boolean z, g1 g1Var) {
         k71.k.g(bVar, "shortcutModel");
@@ -34,5 +34,6 @@ public final class a {
     public final String toString() {
         return "ConfigureShortcutUIState(shortcutModel=" + this.a + ", mergeQueueEnabled=" + this.b + ", savingState=" + this.c + ")";
     }
+    public Object a(Object p1) { return null; }
     public Object a(Object p1) { return null; }
 }

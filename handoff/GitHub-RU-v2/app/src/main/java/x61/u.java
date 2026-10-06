@@ -2,8 +2,8 @@ package x61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u {
-    public final int a;
-    public final Object b;
+    public int a;
+    public Object b;
 
     public u(int i, Object obj) {
         this.a = i;

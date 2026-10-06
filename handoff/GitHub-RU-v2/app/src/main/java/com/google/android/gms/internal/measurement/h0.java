@@ -36,4 +36,8 @@ public class h0 extends Handler {
         public b1() {
         }
     }
+    public Object d(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
+    public Object m() { return null; }
+    public Object n() { return null; }
 }

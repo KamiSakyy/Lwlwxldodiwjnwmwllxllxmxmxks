@@ -5,14 +5,14 @@ import hc0.j2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 {
-    public final String a;
-    public final j2 b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final r g;
-    public final boolean h;
+    public String a;
+    public j2 b;
+    public String c;
+    public int d;
+    public String e;
+    public String f;
+    public r g;
+    public boolean h;
 
     public b0(String str, j2 j2Var, String str2, int i, String str3, String str4, r rVar, boolean z) {
         this.a = str;

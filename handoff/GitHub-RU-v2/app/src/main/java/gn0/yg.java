@@ -8,7 +8,7 @@ public final class yg {
     public static final yg s;
     public static final /* synthetic */ yg[] t;
     public static final /* synthetic */ d71.b u;
-    public final String r;
+    public String r;
 
     static {
         yg ygVar = new yg("ACCOUNT_SWITCHER_ADD", 0, "ACCOUNT_SWITCHER_ADD");

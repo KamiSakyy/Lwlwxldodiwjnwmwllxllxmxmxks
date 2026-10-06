@@ -2,10 +2,10 @@ package x10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public final a0 a;
-    public final int b;
-    public final String c;
-    public final String d;
+    public a0 a;
+    public int b;
+    public String c;
+    public String d;
 
     public t(a0 a0Var, int i, String str, String str2) {
         this.a = a0Var;

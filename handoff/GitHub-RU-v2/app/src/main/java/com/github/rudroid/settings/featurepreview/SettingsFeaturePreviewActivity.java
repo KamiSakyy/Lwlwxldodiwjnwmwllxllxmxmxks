@@ -6,7 +6,7 @@ import ic.j0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SettingsFeaturePreviewActivity extends e<j0> {
-    public final int v0;
+    public int v0;
 
     public SettingsFeaturePreviewActivity() {
         this.u0 = false;
@@ -28,4 +28,5 @@ public final class SettingsFeaturePreviewActivity extends e<j0> {
             aVar.g();
         }
     }
+    public Object C(Object p1) { return null; }
 }

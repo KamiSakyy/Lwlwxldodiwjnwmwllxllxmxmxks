@@ -2,11 +2,11 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g2 {
-    public final boolean a;
-    public final boolean b;
-    public final String c;
-    public final sy.e0 d;
-    public final com.github.service.models.response.a e;
+    public boolean a;
+    public boolean b;
+    public String c;
+    public sy.e0 d;
+    public com.github.service.models.response.a e;
 
     public g2(boolean z, boolean z2, String str, sy.e0 e0Var, com.github.service.models.response.a aVar) {
         k71.k.g(str, "id");

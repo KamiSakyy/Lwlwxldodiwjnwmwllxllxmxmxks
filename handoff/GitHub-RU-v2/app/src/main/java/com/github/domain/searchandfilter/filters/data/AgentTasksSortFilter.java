@@ -16,7 +16,7 @@ public final class AgentTasksSortFilter extends d {
     public static final w61.h[] w;
     public static final on.g x;
     public static final a y;
-    public final on.g v;
+    public on.g v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<AgentTasksSortFilter> CREATOR = new a21.g(12);
 

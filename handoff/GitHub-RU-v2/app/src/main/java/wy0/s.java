@@ -20,4 +20,5 @@ public final class s extends c71.c {
     }
     public Object S(Object p1, Object p2) { return null; }
     public Object V() { return null; }
+    public Object S(int p1, boolean p2) { return null; }
 }

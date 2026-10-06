@@ -5,5 +5,5 @@ package g9;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface h {
-    public Object a(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object a(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

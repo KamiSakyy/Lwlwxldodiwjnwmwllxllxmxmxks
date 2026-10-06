@@ -2,7 +2,7 @@ package ml0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k {
-    public final n a;
+    public n a;
 
     public k(n nVar) {
         this.a = nVar;

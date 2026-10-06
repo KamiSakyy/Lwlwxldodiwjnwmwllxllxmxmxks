@@ -2,12 +2,12 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l1 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final l7.x1 f;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public int e;
+    public l7.x1 f;
 
     public l1(String str, String str2, String str3, String str4, int i, l7.x1 x1Var) {
         if (str == null) {

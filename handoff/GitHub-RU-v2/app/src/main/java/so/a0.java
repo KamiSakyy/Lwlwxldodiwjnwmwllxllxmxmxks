@@ -10,8 +10,8 @@ import m10.xy;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 implements w0 {
     public static final w Companion = new w();
-    public final String r;
-    public final xy s;
+    public String r;
+    public xy s;
 
     public a0(String str, xy xyVar) {
         k71.k.g(str, "id");

@@ -6,7 +6,7 @@ import org.json.JSONObject;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f34012a;
+    public String f34012a;
 
     public j(JSONObject jSONObject) {
         jSONObject.optString("billingPeriod");

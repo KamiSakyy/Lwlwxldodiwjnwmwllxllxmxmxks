@@ -10,9 +10,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public final Object a;
+    public Object a;
     public long b;
-    public final Object c;
+    public Object c;
 
     public m(o oVar, String str) {
         this.c = oVar;

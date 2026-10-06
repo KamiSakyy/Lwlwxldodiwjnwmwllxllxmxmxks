@@ -25,9 +25,9 @@ import xt0.u5;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements h01.c {
     public static final a Companion = new a();
-    public final int a;
-    public final List b;
-    public final ChecksOverviewState c;
+    public int a;
+    public List b;
+    public ChecksOverviewState c;
 
     /* JADX WARN: Code restructure failed: missing block: B:124:0x01e7, code lost:
     

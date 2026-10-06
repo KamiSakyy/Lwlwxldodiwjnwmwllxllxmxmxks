@@ -2,8 +2,8 @@ package lm0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public final String a;
-    public final nm0.a b;
+    public String a;
+    public nm0.a b;
 
     public d(String str, nm0.a aVar) {
         this.a = str;

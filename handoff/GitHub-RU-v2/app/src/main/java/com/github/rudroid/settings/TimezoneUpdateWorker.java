@@ -16,10 +16,10 @@ import java.util.concurrent.TimeUnit;
 public final class TimezoneUpdateWorker extends CoroutineWorker {
     public static final a Companion = new a();
     public static final v8.f k;
-    public final mm.w g;
-    public final oa.m h;
-    public final com.github.rudroid.utilities.v2 i;
-    public final SharedPreferences j;
+    public mm.w g;
+    public oa.m h;
+    public com.github.rudroid.utilities.v2 i;
+    public SharedPreferences j;
 
     public static final class a {
         public static void a(Context context, boolean z) {

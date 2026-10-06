@@ -9,13 +9,13 @@ public final class o0 extends v71.v {
     public static final w61.p D = sy.w.t(g0.f33018y);
     public static final k21.h E = new k21.h(3);
     public boolean A;
-    public final androidx.compose.runtime.h C;
+    public androidx.compose.runtime.h C;
 
     /* renamed from: t, reason: collision with root package name */
-    public final Choreographer f33106t;
+    public Choreographer f33106t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Handler f33107u;
+    public Handler f33107u;
 
     /* renamed from: z, reason: collision with root package name */
     public boolean f33112z;

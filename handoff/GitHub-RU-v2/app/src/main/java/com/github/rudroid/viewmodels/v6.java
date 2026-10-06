@@ -3,9 +3,9 @@ package com.github.rudroid.viewmodels;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v6 extends w3 {
     public static final a Companion = new a();
-    public final kj.n u;
-    public final com.github.rudroid.activities.util.c v;
-    public final androidx.lifecycle.p0 w;
+    public kj.n u;
+    public com.github.rudroid.activities.util.c v;
+    public androidx.lifecycle.p0 w;
     public x01.i x;
 
     public static final class a {

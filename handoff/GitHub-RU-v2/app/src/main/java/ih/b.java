@@ -4,14 +4,14 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final r0.d a;
-    public final r0.d b;
-    public final r0.d c;
-    public final r0.d d;
-    public final r0.d e;
-    public final r0.d f;
-    public final r0.d g;
-    public final r0.d h;
+    public r0.d a;
+    public r0.d b;
+    public r0.d c;
+    public r0.d d;
+    public r0.d e;
+    public r0.d f;
+    public r0.d g;
+    public r0.d h;
 
     public b(r0.d dVar, r0.d dVar2, r0.d dVar3, r0.d dVar4, r0.d dVar5, r0.d dVar6, r0.d dVar7, r0.d dVar8) {
         k.g(dVar8, "circle");

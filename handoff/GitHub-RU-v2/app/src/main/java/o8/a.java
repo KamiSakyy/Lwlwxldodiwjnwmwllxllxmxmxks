@@ -14,10 +14,10 @@ public final class a {
     public static final /* synthetic */ int f30095c = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f30096a;
+    public int f30096a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f30097b;
+    public int f30097b;
 
     static {
         e eVar = new e(8);

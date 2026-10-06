@@ -2,14 +2,14 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x4 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final w4 d;
-    public final boolean e;
-    public final String f;
-    public final s4 g;
-    public final String h;
+    public String a;
+    public String b;
+    public String c;
+    public w4 d;
+    public boolean e;
+    public String f;
+    public s4 g;
+    public String h;
 
     public x4(String str, String str2, String str3, w4 w4Var, boolean z, String str4, s4 s4Var, String str5) {
         this.a = str;

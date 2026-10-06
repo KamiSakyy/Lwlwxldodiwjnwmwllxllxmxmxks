@@ -5,11 +5,11 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements aa.h0 {
-    public final String a;
-    public final ZonedDateTime b;
-    public final gu c;
-    public final String d;
-    public final p2 e;
+    public String a;
+    public ZonedDateTime b;
+    public gu c;
+    public String d;
+    public p2 e;
 
     public e(String str, ZonedDateTime zonedDateTime, gu guVar, String str2, p2 p2Var) {
         this.a = str;

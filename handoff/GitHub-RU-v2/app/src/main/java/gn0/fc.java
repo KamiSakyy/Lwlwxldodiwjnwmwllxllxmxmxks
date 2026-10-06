@@ -9,7 +9,7 @@ public final class fc {
     public static final fc t;
     public static final /* synthetic */ fc[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         fc fcVar = new fc("ASSIGNED", 0, "ASSIGNED");

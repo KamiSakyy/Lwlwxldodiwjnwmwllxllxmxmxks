@@ -2,16 +2,16 @@ package wc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 {
-    public final String a;
-    public final gn0.r2 b;
-    public final gn0.l2 c;
-    public final String d;
-    public final t2 e;
-    public final q2 f;
-    public final int g;
-    public final m2 h;
-    public final o2 i;
-    public final String j;
+    public String a;
+    public gn0.r2 b;
+    public gn0.l2 c;
+    public String d;
+    public t2 e;
+    public q2 f;
+    public int g;
+    public m2 h;
+    public o2 i;
+    public String j;
 
     public n2(String str, gn0.r2 r2Var, gn0.l2 l2Var, String str2, t2 t2Var, q2 q2Var, int i, m2 m2Var, o2 o2Var, String str3) {
         this.a = str;

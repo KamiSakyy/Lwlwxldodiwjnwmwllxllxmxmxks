@@ -6,10 +6,10 @@ import java.util.Map;
 public final class j implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f29679a;
+    public String f29679a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Map f29680b;
+    public Map f29680b;
 
     public j(String str, Map map) {
         this.f29679a = str;

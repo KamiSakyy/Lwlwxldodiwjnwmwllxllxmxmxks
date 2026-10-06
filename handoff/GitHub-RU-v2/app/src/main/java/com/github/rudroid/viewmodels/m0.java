@@ -15,7 +15,7 @@ final class m0 extends c71.j implements j71.e {
         return new m0(this.v, cVar);
     }
 
-    public final Object s(Object obj, Object obj2) {
+    public static final Object s(Object obj, Object obj2) {
         m0 r = r((a71.c) obj2, (y71.j) obj);
         w61.a0 a0Var = w61.a0.a;
         r.v(a0Var);
@@ -28,8 +28,8 @@ final class m0 extends c71.j implements j71.e {
         com.github.rudroid.utilities.w0.i(this.v.y);
         return w61.a0.a;
     }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object t(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object u(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object t(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object u(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

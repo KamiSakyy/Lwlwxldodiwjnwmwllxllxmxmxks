@@ -4,8 +4,8 @@ import zk.b2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kShadow {
-    public final b2 a;
-    public final m b;
+    public b2 a;
+    public m b;
 
     public k(b2 b2Var, m mVar) {
         k71.k.g(b2Var, "updatePullRequestUseCase");

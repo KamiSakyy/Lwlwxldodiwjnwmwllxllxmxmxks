@@ -5,10 +5,10 @@ import tz.r4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 {
-    public final String a;
-    public final tz.o b;
-    public final r4 c;
-    public final j4 d;
+    public String a;
+    public tz.o b;
+    public r4 c;
+    public j4 d;
 
     public q0(String str, tz.o oVar, r4 r4Var, j4 j4Var) {
         k71.k.g(str, "__typename");

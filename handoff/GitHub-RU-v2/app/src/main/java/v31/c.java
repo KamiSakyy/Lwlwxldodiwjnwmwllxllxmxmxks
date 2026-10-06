@@ -9,7 +9,7 @@ import v1.p;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c extends i5.b {
     public static final Parcelable.Creator<c> CREATOR = new p(12);
-    public final int t;
+    public int t;
 
     public c(Parcel parcel, ClassLoader classLoader) {
         super(parcel, classLoader);

@@ -19,5 +19,5 @@ public final class e {
         this.f29656b = obj;
         this.f29657c = obj2;
     }
-    public Object g(Object p1, Object p2) { return null; }
+    public static Object g(Object p1, Object p2) { return null; }
 }

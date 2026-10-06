@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class jp implements aaShadow.w0 {
     public static final gp Companion = new gp();
-    public final aa.u0 r;
+    public aa.u0 r;
 
     public jp(aa.u0 u0Var) {
         this.r = u0Var;

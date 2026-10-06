@@ -2,21 +2,21 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x0 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final String e;
-    public final String f;
-    public final int g;
-    public final int h;
-    public final k0 i;
-    public final l0 j;
-    public final v0 k;
-    public final f0 l;
-    public final u0 m;
-    public final j0 n;
-    public final v o;
+    public String a;
+    public String b;
+    public String c;
+    public boolean d;
+    public String e;
+    public String f;
+    public int g;
+    public int h;
+    public k0 i;
+    public l0 j;
+    public v0 k;
+    public f0 l;
+    public u0 m;
+    public j0 n;
+    public v o;
 
     public x0(String str, String str2, String str3, boolean z, String str4, String str5, int i, int i2, k0 k0Var, l0 l0Var, v0 v0Var, f0 f0Var, u0 u0Var, j0 j0Var, v vVar) {
         this.a = str;

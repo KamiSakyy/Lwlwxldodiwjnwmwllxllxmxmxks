@@ -2,7 +2,7 @@ package a40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final l a;
+    public l a;
 
     public g(l lVar) {
         this.a = lVar;

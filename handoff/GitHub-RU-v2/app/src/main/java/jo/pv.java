@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pv implements aaShadow.n0 {
     public static final jv Companion = new jv();
-    public final String r;
-    public final m10.z00 s;
+    public String r;
+    public m10.z00 s;
 
     public pv(String str, m10.z00 z00Var) {
         k71.k.g(str, "subject_id");

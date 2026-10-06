@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jp {
-    public final gp a;
-    public final String b;
-    public final String c;
+    public gp a;
+    public String b;
+    public String c;
 
     public jp(gp gpVar, String str, String str2) {
         this.a = gpVar;

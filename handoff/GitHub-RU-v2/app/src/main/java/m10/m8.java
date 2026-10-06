@@ -9,7 +9,7 @@ public final class m8 {
     public static final m8 t;
     public static final /* synthetic */ m8[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         m8 m8Var = new m8("COPILOT_BUSINESS", 0, "COPILOT_BUSINESS");

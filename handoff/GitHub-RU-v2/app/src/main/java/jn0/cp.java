@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cp {
-    public final String a;
-    public final bp b;
-    public final pz0.dn c;
-    public final ArrayList d;
-    public final String e;
+    public String a;
+    public bp b;
+    public pz0.dn c;
+    public ArrayList d;
+    public String e;
 
     public cp(String str, bp bpVar, pz0.dn dnVar, ArrayList arrayList, String str2) {
         this.a = str;

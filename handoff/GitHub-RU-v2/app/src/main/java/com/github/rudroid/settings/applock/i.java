@@ -57,4 +57,11 @@ final class i extends c71.j implements j71.e {
         this.v = 2;
     }
     public Object d(Object p1, Object p2, Object p3) { return null; }
+    public Object H() { return null; }
+    public Object K0() { return null; }
+    public Object f0() { return null; }
+    public Object g0() { return null; }
+    public Object getMainLooper() { return null; }
+    public Object onCreate(Object p1) { return null; }
+    public Object onDestroy() { return null; }
 }

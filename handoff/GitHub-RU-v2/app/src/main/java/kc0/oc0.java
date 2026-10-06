@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oc0 {
-    public final pc0 a;
-    public final List b;
+    public pc0 a;
+    public List b;
 
     public oc0(pc0 pc0Var, List list) {
         this.a = pc0Var;

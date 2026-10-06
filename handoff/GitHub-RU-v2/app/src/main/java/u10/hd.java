@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hd {
-    public final String a;
-    public final fd b;
-    public final String c;
+    public String a;
+    public fd b;
+    public String c;
 
     public hd(String str, fd fdVar, String str2) {
         this.a = str;

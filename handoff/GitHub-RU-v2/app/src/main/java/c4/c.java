@@ -8,7 +8,7 @@ import java.util.Objects;
 public abstract class c implements Cloneable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final char[] f4105r;
+    public char[] f4105r;
 
     /* renamed from: s, reason: collision with root package name */
     public long f4106s = -1;

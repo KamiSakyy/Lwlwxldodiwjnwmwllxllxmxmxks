@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ia implements aaShadow.m0 {
-    public final ja a;
+    public ja a;
 
     public ia(ja jaVar) {
         this.a = jaVar;

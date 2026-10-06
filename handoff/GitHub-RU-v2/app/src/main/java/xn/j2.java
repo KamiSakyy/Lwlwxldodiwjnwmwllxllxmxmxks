@@ -2,9 +2,9 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j2 extends sy.s {
-    public final String a;
-    public final String b;
-    public final Boolean c;
+    public String a;
+    public String b;
+    public Boolean c;
 
     public j2(Boolean bool, String str, String str2) {
         this.a = str;

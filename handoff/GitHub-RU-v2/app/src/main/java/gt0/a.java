@@ -7,10 +7,10 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final kw0.a d;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public kw0.a d;
 
     public a(String str, boolean z, boolean z2, kw0.a aVar) {
         k.g(str, "__typename");

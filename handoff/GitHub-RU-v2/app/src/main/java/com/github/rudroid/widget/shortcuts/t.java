@@ -38,8 +38,8 @@ public final class t extends x0 {
         ShortcutWidgetWorker.Companion.getClass();
         ShortcutWidgetWorker.a.a(context);
     }
-    public Object I(Object p1, Object p2, Object p3) { return null; }
-    public Object L(Object p1) { return null; }
-    public Object n(Object p1, Object p2) { return null; }
-    public Object w(Object p1, Object p2, Object p3) { return null; }
+    public static Object I(Object p1, Object p2, Object p3) { return null; }
+    public static Object L(Object p1) { return null; }
+    public static Object n(Object p1, Object p2) { return null; }
+    public static Object w(Object p1, Object p2, Object p3) { return null; }
 }

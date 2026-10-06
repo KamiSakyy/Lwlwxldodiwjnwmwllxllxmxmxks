@@ -7,7 +7,7 @@ import zh.h;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements h.a {
-    public final u a;
+    public u a;
 
     public d(u uVar) {
         this.a = uVar;

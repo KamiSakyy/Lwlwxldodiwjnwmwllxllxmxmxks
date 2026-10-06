@@ -2,8 +2,8 @@ package yu;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final String a;
-    public final es.a b;
+    public String a;
+    public es.a b;
 
     public a(String str, es.a aVar) {
         k71.k.g(str, "__typename");

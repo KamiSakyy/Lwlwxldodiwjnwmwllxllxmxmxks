@@ -20,4 +20,7 @@ public final class j extends c71.c {
         return this.w.c((Object) null, this);
     }
     public Object s(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
 }

@@ -2,8 +2,8 @@ package dn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public final en.c a;
-    public final oa.g b;
+    public en.c a;
+    public oa.g b;
 
     public k(en.c cVar, oa.g gVar) {
         k71.k.g(cVar, "factory");

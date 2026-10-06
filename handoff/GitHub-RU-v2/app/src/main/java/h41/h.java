@@ -19,10 +19,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
     public static final HashMap n = new HashMap();
-    public final Context a;
-    public final t b;
+    public Context a;
+    public t b;
     public boolean g;
-    public final Intent h;
+    public Intent h;
     public c1 l;
     public d m;
     public final ArrayList d = new ArrayList();

@@ -12,13 +12,13 @@ public final class c {
     public static final c f6964d = new c(new com.github.rudroid.agents.copilothome.viewmodel.a(g1.a.c(g1.Companion), false), new b(new u0((Object) null), false), null);
 
     /* renamed from: a, reason: collision with root package name */
-    public final com.github.rudroid.agents.copilothome.viewmodel.a f6965a;
+    public com.github.rudroid.agents.copilothome.viewmodel.a f6965a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final b f6966b;
+    public b f6966b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final g4 f6967c;
+    public g4 f6967c;
 
     public static final class a {
     }

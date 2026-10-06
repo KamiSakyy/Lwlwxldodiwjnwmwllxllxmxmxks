@@ -2,10 +2,10 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d4 {
-    public final k5 a;
-    public final z3 b;
-    public final String c;
-    public final String d;
+    public k5 a;
+    public z3 b;
+    public String c;
+    public String d;
 
     public d4(k5 k5Var, z3 z3Var, String str, String str2) {
         this.a = k5Var;

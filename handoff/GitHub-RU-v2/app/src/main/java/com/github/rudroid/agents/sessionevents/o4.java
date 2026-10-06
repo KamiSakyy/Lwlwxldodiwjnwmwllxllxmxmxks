@@ -62,7 +62,7 @@ public interface o4 {
     public static final class d implements o4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final l.e f7761a;
+        public l.e f7761a;
 
         public d(l.e eVar) {
             k71.k.g(eVar, "response");
@@ -88,7 +88,7 @@ public interface o4 {
     public static final class e implements o4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final com.github.rudroid.agents.sessionevents.g f7762a;
+        public com.github.rudroid.agents.sessionevents.g f7762a;
 
         public e(com.github.rudroid.agents.sessionevents.g gVar) {
             k71.k.g(gVar, "freeform");
@@ -168,7 +168,7 @@ public interface o4 {
     public static final class i implements o4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final l.i f7766a;
+        public l.i f7766a;
 
         public i(l.i iVar) {
             k71.k.g(iVar, "response");

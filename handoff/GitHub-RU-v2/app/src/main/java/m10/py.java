@@ -12,7 +12,7 @@ public final class py {
     public static final py w;
     public static final /* synthetic */ py[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         py pyVar = new py("MERGE", 0, "MERGE");

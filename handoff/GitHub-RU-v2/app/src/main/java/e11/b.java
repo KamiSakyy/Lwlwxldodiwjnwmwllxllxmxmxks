@@ -5,8 +5,8 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public b(String str, String str2) {
         k.g(str, "base64Signature");

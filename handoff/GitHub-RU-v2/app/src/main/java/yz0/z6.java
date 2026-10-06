@@ -5,10 +5,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z6 extends s7 {
-    public final String a;
-    public final String b;
-    public final Avatar c;
-    public final ZonedDateTime d;
+    public String a;
+    public String b;
+    public Avatar c;
+    public ZonedDateTime d;
 
     public z6(String str, String str2, Avatar avatar, ZonedDateTime zonedDateTime) {
         this.a = str;

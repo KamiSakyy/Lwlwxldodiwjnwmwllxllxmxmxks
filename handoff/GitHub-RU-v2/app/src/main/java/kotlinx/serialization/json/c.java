@@ -14,7 +14,7 @@ import x61.m;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c extends b implements Map<String, b>, l71.a {
     public static final JsonObject$Companion Companion = new JsonObject$Companion();
-    public final Map r;
+    public Map r;
 
     public c(Map map) {
         k.g(map, "content");

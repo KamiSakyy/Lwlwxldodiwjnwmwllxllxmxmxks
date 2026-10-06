@@ -17,7 +17,7 @@ import w61.i;
 public final class SerializableFilterList implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final ArrayList f20040r;
+    public ArrayList f20040r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SerializableFilterList> CREATOR = new a();
 

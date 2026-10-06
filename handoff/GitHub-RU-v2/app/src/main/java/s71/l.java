@@ -10,10 +10,10 @@ public final class l implements h {
     public final /* synthetic */ int f31746a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final h f31747b;
+    public h f31747b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final j71.c f31748c;
+    public j71.c f31748c;
 
     public /* synthetic */ l(h hVar, j71.c cVar, int i) {
         this.f31746a = i;

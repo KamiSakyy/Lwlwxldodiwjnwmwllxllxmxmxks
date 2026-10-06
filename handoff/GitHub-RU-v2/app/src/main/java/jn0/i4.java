@@ -2,14 +2,14 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i4 {
-    public final String a;
-    public final pz0.y2 b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final int f;
-    public final y3 g;
-    public final boolean h;
+    public String a;
+    public pz0.y2 b;
+    public String c;
+    public String d;
+    public String e;
+    public int f;
+    public y3 g;
+    public boolean h;
 
     public i4(String str, pz0.y2 y2Var, String str2, String str3, String str4, int i, y3 y3Var, boolean z) {
         this.a = str;

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gf {
-    public final String a;
-    public final String b;
-    public final ap0.e2 c;
+    public String a;
+    public String b;
+    public ap0.e2 c;
 
     public gf(String str, String str2, ap0.e2 e2Var) {
         this.a = str;

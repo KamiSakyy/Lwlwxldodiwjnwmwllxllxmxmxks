@@ -4,10 +4,10 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public final a71.h a;
-    public final n5.f b;
-    public final AtomicReference c;
-    public final l0 d;
+    public a71.h a;
+    public n5.f b;
+    public AtomicReference c;
+    public l0 d;
 
     public o0(a71.h hVar, n5.f fVar) {
         k71.k.g(hVar, "backgroundDispatcher");

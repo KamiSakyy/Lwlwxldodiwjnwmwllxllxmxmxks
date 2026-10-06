@@ -2,8 +2,8 @@ package com.google.android.gms.internal.measurement;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a6 implements g6 {
-    public final s4 a;
-    public final e5 b;
+    public s4 a;
+    public e5 b;
 
     public a6(e5 e5Var, s4 s4Var) {
         e5 e5Var2 = a5.a;

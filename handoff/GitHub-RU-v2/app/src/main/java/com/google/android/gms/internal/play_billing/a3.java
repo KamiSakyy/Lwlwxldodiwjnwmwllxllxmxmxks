@@ -4,11 +4,11 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a3 extends com.google.android.gms.internal.measurement.b4 {
-    public final AtomicReferenceFieldUpdater A;
-    public final AtomicReferenceFieldUpdater B;
-    public final AtomicReferenceFieldUpdater x;
-    public final AtomicReferenceFieldUpdater y;
-    public final AtomicReferenceFieldUpdater z;
+    public AtomicReferenceFieldUpdater A;
+    public AtomicReferenceFieldUpdater B;
+    public AtomicReferenceFieldUpdater x;
+    public AtomicReferenceFieldUpdater y;
+    public AtomicReferenceFieldUpdater z;
 
     public a3(AtomicReferenceFieldUpdater atomicReferenceFieldUpdater, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater3, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater4, AtomicReferenceFieldUpdater atomicReferenceFieldUpdater5) {
         this.x = atomicReferenceFieldUpdater;

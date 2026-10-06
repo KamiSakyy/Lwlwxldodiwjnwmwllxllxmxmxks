@@ -4,8 +4,8 @@ import com.google.android.play.core.install.zza;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements d41.a {
-    public final b a;
-    public final a2.d b;
+    public b a;
+    public a2.d b;
 
     public e(b bVar, a2.d dVar) {
         this.a = bVar;

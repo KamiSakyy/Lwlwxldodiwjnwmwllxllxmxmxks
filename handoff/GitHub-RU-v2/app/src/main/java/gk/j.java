@@ -5,7 +5,7 @@ import sy.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final d a;
+    public d a;
 
     public j(d dVar) {
         k71.k.g(dVar, "store");

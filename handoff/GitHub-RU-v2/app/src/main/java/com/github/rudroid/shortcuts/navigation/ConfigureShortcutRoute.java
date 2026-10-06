@@ -16,11 +16,11 @@ import wm.b;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ConfigureShortcutRoute implements Parcelable {
-    public final b r;
-    public final boolean s;
-    public final boolean t;
-    public final boolean u;
-    public final boolean v;
+    public b r;
+    public boolean s;
+    public boolean t;
+    public boolean u;
+    public boolean v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ConfigureShortcutRoute> CREATOR = new a();
     public static final h[] w = {w.s(i.r, new k(18)), null, null, null, null};

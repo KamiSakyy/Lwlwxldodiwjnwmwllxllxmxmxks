@@ -5,10 +5,10 @@ import yz0.t7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final t7 a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
+    public t7 a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
 
     public h(t7 t7Var, boolean z, boolean z2, boolean z3) {
         this.a = t7Var;

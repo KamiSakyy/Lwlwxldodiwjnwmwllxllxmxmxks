@@ -9,10 +9,10 @@ public final class c implements Parcelable {
     public static final Parcelable.Creator<c> CREATOR = new a21.g(4);
 
     /* renamed from: r, reason: collision with root package name */
-    public final ArrayList f2511r;
+    public ArrayList f2511r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final ArrayList f2512s;
+    public ArrayList f2512s;
 
     public c(ArrayList arrayList, ArrayList arrayList2) {
         this.f2511r = arrayList;

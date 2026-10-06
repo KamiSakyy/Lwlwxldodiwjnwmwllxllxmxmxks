@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qh {
-    public final String a;
-    public final sh b;
+    public String a;
+    public sh b;
 
     public qh(String str, sh shVar) {
         this.a = str;

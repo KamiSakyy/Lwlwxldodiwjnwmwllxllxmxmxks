@@ -4,20 +4,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fn {
-    public final String a;
-    public final String b;
-    public final hc0.vl c;
-    public final String d;
-    public final boolean e;
-    public final ZonedDateTime f;
-    public final in g;
-    public final wm h;
-    public final jn i;
-    public final nnShadow j;
-    public final c40.c k;
-    public final i80.c l;
-    public final aa0.c m;
-    public final g70.a n;
+    public String a;
+    public String b;
+    public hc0.vl c;
+    public String d;
+    public boolean e;
+    public ZonedDateTime f;
+    public in g;
+    public wm h;
+    public jn i;
+    public nnShadow j;
+    public c40.c k;
+    public i80.c l;
+    public aa0.c m;
+    public g70.a n;
 
     public fn(String str, String str2, hc0.vl vlVar, String str3, boolean z, ZonedDateTime zonedDateTime, in inVar, wm wmVar, jn jnVar, nnShadow nnVar, c40.c cVar, i80.c cVar2, aa0.c cVar3, g70.a aVar) {
         this.a = str;

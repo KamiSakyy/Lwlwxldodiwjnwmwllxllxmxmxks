@@ -2,7 +2,7 @@ package lc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final b a;
+    public b a;
 
     public f(b bVar) {
         this.a = bVar;

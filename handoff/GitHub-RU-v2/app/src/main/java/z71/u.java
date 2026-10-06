@@ -6,9 +6,9 @@ import wy0.n6;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u extends c71.c implements y71.j {
-    public final y71.j u;
-    public final a71.h v;
-    public final int w;
+    public y71.j u;
+    public a71.h v;
+    public int w;
     public a71.h x;
     public a71.c y;
 

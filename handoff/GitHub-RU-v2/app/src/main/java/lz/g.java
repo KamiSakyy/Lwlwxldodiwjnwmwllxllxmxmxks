@@ -6,10 +6,10 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
-    public final String b;
-    public final t3 c;
-    public final b4 d;
+    public String a;
+    public String b;
+    public t3 c;
+    public b4 d;
 
     public g(String str, String str2, t3 t3Var, b4 b4Var) {
         this.a = str;

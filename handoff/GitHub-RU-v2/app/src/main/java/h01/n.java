@@ -9,18 +9,18 @@ import com.github.service.models.response.type.IssueState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final IssueType d;
-    public final CloseReason e;
-    public final b0 f;
-    public final int g;
-    public final IssueState h;
-    public final String i;
-    public final String j;
-    public final p k;
-    public final String l;
+    public String a;
+    public String b;
+    public int c;
+    public IssueType d;
+    public CloseReason e;
+    public b0 f;
+    public int g;
+    public IssueState h;
+    public String i;
+    public String j;
+    public p k;
+    public String l;
 
     public n(String str, String str2, int i, IssueType issueType, CloseReason closeReason, b0 b0Var, int i2, IssueState issueState, String str3, String str4, p pVar, String str5) {
         k71.k.g(str, "id");

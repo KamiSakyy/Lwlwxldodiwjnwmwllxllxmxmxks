@@ -4,10 +4,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k4 {
-    public final String a;
-    public final int b;
-    public final j4 c;
-    public final List d;
+    public String a;
+    public int b;
+    public j4 c;
+    public List d;
 
     public k4(String str, int i, j4 j4Var, List list) {
         this.a = str;

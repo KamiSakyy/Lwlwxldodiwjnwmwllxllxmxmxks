@@ -11,7 +11,7 @@ public final class na {
     public static final na v;
     public static final /* synthetic */ na[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         na naVar = new na("DISMISSED", 0, "DISMISSED");

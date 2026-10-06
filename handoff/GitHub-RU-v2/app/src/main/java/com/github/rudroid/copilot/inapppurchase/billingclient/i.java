@@ -8,7 +8,7 @@ public interface i<T> {
     public static final class a<T> implements i<T> {
 
         /* renamed from: a, reason: collision with root package name */
-        public final Object f9666a;
+        public Object f9666a;
 
         public a(Object obj) {
             this.f9666a = obj;

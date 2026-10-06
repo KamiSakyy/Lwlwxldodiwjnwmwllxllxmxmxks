@@ -17,8 +17,8 @@ public abstract class d implements Parcelable {
     public static final Filter$Companion Companion = new Filter$Companion();
     public static final w61.h[] t;
     public static final Object u;
-    public final l r;
-    public final String s;
+    public l r;
+    public String s;
 
     static {
         w61.i iVar = w61.i.r;
@@ -66,4 +66,5 @@ public abstract class d implements Parcelable {
         this.s = str;
     }
     public Object s(Object p1) { return null; }
+    public Object s(int p1) { return null; }
 }

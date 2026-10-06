@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ip {
-    public final fp a;
-    public final List b;
+    public fp a;
+    public List b;
 
     public ip(fp fpVar, List list) {
         this.a = fpVar;

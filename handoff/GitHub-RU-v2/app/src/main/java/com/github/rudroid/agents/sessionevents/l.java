@@ -8,13 +8,13 @@ public interface l {
     public static final class a implements l {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7688a;
+        public String f7688a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final xn.g1 f7689b;
+        public xn.g1 f7689b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final Map f7690c;
+        public Map f7690c;
 
         public a(String str, xn.g1 g1Var, Map map) {
             this.f7688a = str;
@@ -52,13 +52,13 @@ public interface l {
     public static final class b implements l {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7691a;
+        public String f7691a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f7692b;
+        public boolean f7692b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final xn.z2 f7693c;
+        public xn.z2 f7693c;
 
         public b(String str, boolean z10, xn.z2 z2Var) {
             this.f7691a = str;
@@ -100,10 +100,10 @@ public interface l {
     public static final class d implements c, com.github.rudroid.agents.sessionevents.g {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7694a;
+        public String f7694a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final String f7695b;
+        public String f7695b;
 
         public d(String str, String str2) {
             this.f7694a = str;
@@ -150,22 +150,22 @@ public interface l {
         public static final a Companion = new a();
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7696a;
+        public String f7696a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f7697b;
+        public boolean f7697b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f7698c;
+        public boolean f7698c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final String f7699d;
+        public String f7699d;
 
         /* renamed from: e, reason: collision with root package name */
-        public final Boolean f7700e;
+        public Boolean f7700e;
 
         /* renamed from: f, reason: collision with root package name */
-        public final String f7701f;
+        public String f7701f;
 
         public static final class a {
         }
@@ -223,16 +223,16 @@ public interface l {
     public static final class f implements c {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7702a;
+        public String f7702a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final String f7703b;
+        public String f7703b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f7704c;
+        public boolean f7704c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final String f7705d;
+        public String f7705d;
 
         public f(String str, String str2, boolean z10) {
             k71.k.g(str, "messageId");
@@ -273,10 +273,10 @@ public interface l {
     public static final class h implements g, com.github.rudroid.agents.sessionevents.g {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7706a;
+        public String f7706a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final String f7707b;
+        public String f7707b;
 
         public h(String str, String str2) {
             this.f7706a = str;
@@ -322,13 +322,13 @@ public interface l {
     public static final class i implements g {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f7708a;
+        public String f7708a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final String f7709b;
+        public String f7709b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f7710c;
+        public boolean f7710c;
 
         public i(String str, String str2, boolean z10) {
             k71.k.g(str2, "answer");

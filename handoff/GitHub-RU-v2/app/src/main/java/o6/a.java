@@ -10,7 +10,7 @@ import v8.w;
 public final class a extends c0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final m f29992r;
+    public m f29992r;
 
     public a(m mVar) {
         this.f29992r = mVar;

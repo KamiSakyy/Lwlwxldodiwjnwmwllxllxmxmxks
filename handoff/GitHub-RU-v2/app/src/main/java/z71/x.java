@@ -4,7 +4,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class x implements y71.j {
-    public final x71.w r;
+    public x71.w r;
 
     public x(x71.t tVar) {
         this.r = tVar;

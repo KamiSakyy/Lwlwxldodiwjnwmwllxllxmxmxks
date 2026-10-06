@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final List a;
+    public List a;
 
     public b(List list) {
         this.a = list;
@@ -29,4 +29,5 @@ public final class b {
         return com.github.rudroid.m0.h("ProjectItems(nodes=", ")", this.a);
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

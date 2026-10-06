@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public final j11.c a;
-    public final byte[] b;
+    public j11.c a;
+    public byte[] b;
 
     public m(j11.c cVar, byte[] bArr) {
         if (cVar == null) {

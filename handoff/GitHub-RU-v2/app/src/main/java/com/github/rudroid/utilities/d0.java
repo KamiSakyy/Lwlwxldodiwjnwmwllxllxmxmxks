@@ -4,8 +4,8 @@ import java.util.LinkedHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 {
-    public final g3.g a;
-    public final LinkedHashMap b;
+    public g3.g a;
+    public LinkedHashMap b;
 
     public d0(g3.g gVar, LinkedHashMap linkedHashMap) {
         this.a = gVar;

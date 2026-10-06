@@ -9,19 +9,19 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u2 extends androidx.lifecycle.a {
     public static final a Companion = new a();
-    public final com.github.rudroid.auth.saml.usecases.a A;
-    public final com.github.rudroid.featureflags.f B;
-    public final v71.v C;
-    public final String D;
-    public final String E;
-    public final y71.y1 F;
-    public final z01.x t;
-    public final zk.u u;
-    public final kj.s v;
-    public final oa.m w;
-    public final dn.z x;
-    public final qe.a y;
-    public final oa.h z;
+    public com.github.rudroid.auth.saml.usecases.a A;
+    public com.github.rudroid.featureflags.f B;
+    public v71.v C;
+    public String D;
+    public String E;
+    public y71.y1 F;
+    public z01.x t;
+    public zk.u u;
+    public kj.s v;
+    public oa.m w;
+    public dn.z x;
+    public qe.a y;
+    public oa.h z;
 
     public static final class a {
     }

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u10 {
-    public final x10 a;
-    public final String b;
+    public x10 a;
+    public String b;
 
     public u10(x10 x10Var, String str) {
         this.a = x10Var;

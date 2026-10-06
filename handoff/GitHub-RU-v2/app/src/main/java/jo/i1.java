@@ -2,19 +2,19 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i1 {
-    public final String a;
-    public final s1 b;
-    public final m10.xz c;
-    public final Integer d;
-    public final u1 e;
-    public final String f;
-    public final m10.fz g;
-    public final String h;
-    public final String i;
-    public final pv.c j;
-    public final ar.c k;
-    public final mx.c l;
-    public final ju.a m;
+    public String a;
+    public s1 b;
+    public m10.xz c;
+    public Integer d;
+    public u1 e;
+    public String f;
+    public m10.fz g;
+    public String h;
+    public String i;
+    public pv.c j;
+    public ar.c k;
+    public mx.c l;
+    public ju.a m;
 
     public i1(String str, s1 s1Var, m10.xz xzVar, Integer num, u1 u1Var, String str2, m10.fz fzVar, String str3, String str4, pv.c cVar, ar.c cVar2, mx.c cVar3, ju.a aVar) {
         this.a = str;

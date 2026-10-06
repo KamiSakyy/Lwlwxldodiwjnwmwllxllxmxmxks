@@ -4,10 +4,10 @@ import ap0.e2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x {
-    public final String a;
-    public final String b;
-    public final v c;
-    public final e2 d;
+    public String a;
+    public String b;
+    public v c;
+    public e2 d;
 
     public x(String str, String str2, v vVar, e2 e2Var) {
         k71.k.g(str, "__typename");

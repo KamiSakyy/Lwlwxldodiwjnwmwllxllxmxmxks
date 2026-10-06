@@ -2,9 +2,9 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b4 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final a4 c;
+    public String a;
+    public String b;
+    public a4 c;
 
     public b4(String str, String str2, a4 a4Var) {
         this.a = str;

@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class z implements e {
-    public final p0 r;
-    public final Object s;
-    public final Object[] t;
-    public final q81.d u;
-    public final n v;
+    public p0 r;
+    public Object s;
+    public Object[] t;
+    public q81.d u;
+    public n v;
     public volatile boolean w;
     public u81.m x;
     public Throwable y;
@@ -259,4 +259,6 @@ public final class z implements e {
     public Object O = null;
     public Object P = null;
     public Object R = null;
+    public Object N() { return null; }
+    public Object c(Object p1) { return null; }
 }

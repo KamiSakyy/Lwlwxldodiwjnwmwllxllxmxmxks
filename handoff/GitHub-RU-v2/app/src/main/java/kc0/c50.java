@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c50 {
-    public final String a;
-    public final a50 b;
-    public final qh0.a c;
+    public String a;
+    public a50 b;
+    public qh0.a c;
 
     public c50(String str, a50 a50Var, qh0.a aVar) {
         k71.k.g(str, "__typename");

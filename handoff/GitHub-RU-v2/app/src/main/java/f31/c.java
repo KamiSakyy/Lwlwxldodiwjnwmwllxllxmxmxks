@@ -27,9 +27,9 @@ import v2.t;
 public final class c {
     public static final double y = Math.cos(Math.toRadians(45.0d));
     public static final ColorDrawable z;
-    public final MaterialCardView a;
-    public final j c;
-    public final j d;
+    public MaterialCardView a;
+    public j c;
+    public j d;
     public int e;
     public int f;
     public int g;
@@ -45,9 +45,9 @@ public final class c {
     public j q;
     public boolean s;
     public ValueAnimator t;
-    public final TimeInterpolator u;
-    public final int v;
-    public final int w;
+    public TimeInterpolator u;
+    public int v;
+    public int w;
     public final Rect b = new Rect();
     public boolean r = false;
     public float x = 0.0f;

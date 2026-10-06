@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 public final class AgentTasksWidgetWorker extends CoroutineWorker {
     public static final a Companion = new a();
     public static final v8.f h;
-    public final Context g;
+    public Context g;
 
     public static final class a {
         public static void a(Context context) {

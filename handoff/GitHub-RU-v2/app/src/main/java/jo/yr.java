@@ -4,20 +4,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yr {
-    public final String a;
-    public final String b;
-    public final m10.rz c;
-    public final String d;
-    public final boolean e;
-    public final ZonedDateTime f;
-    public final bs g;
-    public final pr h;
-    public final cs i;
-    public final gs j;
-    public final ar.c k;
-    public final pv.c l;
-    public final mx.c m;
-    public final pu.a n;
+    public String a;
+    public String b;
+    public m10.rz c;
+    public String d;
+    public boolean e;
+    public ZonedDateTime f;
+    public bs g;
+    public pr h;
+    public cs i;
+    public gs j;
+    public ar.c k;
+    public pv.c l;
+    public mx.c m;
+    public pu.a n;
 
     public yr(String str, String str2, m10.rz rzVar, String str3, boolean z, ZonedDateTime zonedDateTime, bs bsVar, pr prVar, cs csVar, gs gsVar, ar.c cVar, pv.c cVar2, mx.c cVar3, pu.a aVar) {
         this.a = str;

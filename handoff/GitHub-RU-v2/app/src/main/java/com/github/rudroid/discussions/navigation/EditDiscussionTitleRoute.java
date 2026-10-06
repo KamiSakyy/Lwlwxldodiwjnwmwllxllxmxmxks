@@ -13,10 +13,10 @@ import x.i;
 public final class EditDiscussionTitleRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f11577r;
+    public String f11577r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f11578s;
+    public String f11578s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<EditDiscussionTitleRoute> CREATOR = new a();
 

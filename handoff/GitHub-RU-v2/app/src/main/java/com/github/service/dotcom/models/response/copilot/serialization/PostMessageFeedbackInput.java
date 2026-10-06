@@ -16,11 +16,11 @@ import x61.r;
 public final class PostMessageFeedbackInput {
     public static final Companion Companion = new Companion();
     public static final h[] f;
-    public final hz.b a;
-    public final List b;
-    public final String c;
-    public final String d;
-    public final String e;
+    public hz.b a;
+    public List b;
+    public String c;
+    public String d;
+    public String e;
 
     public static final class Companion {
         public final KSerializer serializer() {

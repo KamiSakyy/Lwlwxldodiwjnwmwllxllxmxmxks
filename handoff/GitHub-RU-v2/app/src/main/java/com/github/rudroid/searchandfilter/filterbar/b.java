@@ -46,4 +46,5 @@ public final /* synthetic */ class b implements j71.e {
         this.t = aVar;
         this.u = i;
     }
+    public Object a(Object p1, Object p2, Object p3, int p4) { return null; }
 }

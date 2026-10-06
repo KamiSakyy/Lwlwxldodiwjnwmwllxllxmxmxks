@@ -6,10 +6,10 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public final String a;
-    public final int b;
-    public final ArrayList c;
-    public final int d;
+    public String a;
+    public int b;
+    public ArrayList c;
+    public int d;
 
     public d(int i, int i2, String str, ArrayList arrayList) {
         k.g(str, "id");

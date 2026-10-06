@@ -2,9 +2,9 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h8 {
-    public final String a;
-    public final String b;
-    public final String c;
+    public String a;
+    public String b;
+    public String c;
 
     public h8(String str, String str2, String str3) {
         k71.k.g(str, "achievableSlug");

@@ -4,10 +4,10 @@ package w1;
 public final class j implements e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f32939a;
+    public float f32939a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f32940b;
+    public float f32940b;
 
     public j(float f6, float f10) {
         this.f32939a = f6;

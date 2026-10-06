@@ -9,13 +9,13 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v extends androidx.lifecycle.k1 implements com.github.rudroid.utilities.viewmodel.d {
     public final /* synthetic */ d.a s;
-    public final oj.a t;
-    public final com.github.rudroid.activities.util.c u;
-    public final com.github.rudroid.issueorpullrequest.ui.copilot.codereview.l v;
-    public final y71.y1 w;
-    public final y71.i1 x;
-    public final y71.y1 y;
-    public final y71.i1 z;
+    public oj.a t;
+    public com.github.rudroid.activities.util.c u;
+    public com.github.rudroid.issueorpullrequest.ui.copilot.codereview.l v;
+    public y71.y1 w;
+    public y71.i1 x;
+    public y71.y1 y;
+    public y71.i1 z;
 
     public v(oj.a aVar, com.github.rudroid.activities.util.c cVar, com.github.rudroid.issueorpullrequest.ui.copilot.codereview.l lVar) {
         k71.k.g(aVar, "submitCopilotReviewFeedbackUseCase");

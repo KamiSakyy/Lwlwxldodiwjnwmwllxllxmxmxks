@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b50 {
-    public final c50 a;
+    public c50 a;
 
     public b50(c50 c50Var) {
         this.a = c50Var;

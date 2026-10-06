@@ -7,10 +7,10 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f1847a;
+    public int f1847a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Integer f1848b;
+    public Integer f1848b;
 
     public b(int i, b4 b4Var, Integer num) {
         this.f1847a = i;

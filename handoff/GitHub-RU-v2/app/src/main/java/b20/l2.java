@@ -2,9 +2,9 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 {
-    public final String a;
-    public final int b;
-    public final g20.i2 c;
+    public String a;
+    public int b;
+    public g20.i2 c;
 
     public l2(String str, int i, g20.i2 i2Var) {
         this.a = str;

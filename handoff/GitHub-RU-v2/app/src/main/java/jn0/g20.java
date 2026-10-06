@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g20 {
-    public final boolean a;
-    public final String b;
+    public boolean a;
+    public String b;
 
     public g20(String str, boolean z) {
         this.a = z;

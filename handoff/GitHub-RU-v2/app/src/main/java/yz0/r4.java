@@ -4,14 +4,14 @@ import com.github.service.models.response.PullRequestState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r4 extends o.b {
-    public final boolean A;
-    public final String t;
-    public final String u;
-    public final boolean v;
-    public final int w;
-    public final PullRequestState x;
-    public final String y;
-    public final String z;
+    public boolean A;
+    public String t;
+    public String u;
+    public boolean v;
+    public int w;
+    public PullRequestState x;
+    public String y;
+    public String z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r4(String str, String str2, boolean z, int i, PullRequestState pullRequestState, String str3, String str4, boolean z2) {

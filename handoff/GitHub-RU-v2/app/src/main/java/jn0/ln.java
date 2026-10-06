@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ln {
-    public final kn a;
-    public final String b;
-    public final String c;
+    public kn a;
+    public String b;
+    public String c;
 
     public ln(kn knVar, String str, String str2) {
         this.a = knVar;

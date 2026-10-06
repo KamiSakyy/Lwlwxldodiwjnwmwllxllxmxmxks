@@ -11,7 +11,7 @@ public final class ld {
     public static final ld v;
     public static final /* synthetic */ ld[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         ld ldVar = new ld("DUPLICATE", 0, "DUPLICATE");

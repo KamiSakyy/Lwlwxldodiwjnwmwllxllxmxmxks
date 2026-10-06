@@ -4,9 +4,9 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g0 implements Cloneable {
-    public final String r;
+    public String r;
     public String s;
-    public final String t;
+    public String t;
     public int u = 0;
 
     public g0(String str, String str2, String str3) {

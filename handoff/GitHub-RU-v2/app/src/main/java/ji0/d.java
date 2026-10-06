@@ -6,9 +6,9 @@ import oj0.e2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public final String a;
-    public final String b;
-    public final e2 c;
+    public String a;
+    public String b;
+    public e2 c;
 
     public d(String str, String str2, e2 e2Var) {
         this.a = str;

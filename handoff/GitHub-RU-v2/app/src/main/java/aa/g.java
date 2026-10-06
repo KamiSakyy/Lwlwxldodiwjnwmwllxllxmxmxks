@@ -6,7 +6,7 @@ import java.util.Set;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Set f651a;
+    public Set f651a;
 
     public g(Set set) {
         this.f651a = set;

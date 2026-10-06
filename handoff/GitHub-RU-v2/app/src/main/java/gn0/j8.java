@@ -9,7 +9,7 @@ public final class j8 {
     public static final j8 t;
     public static final /* synthetic */ j8[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         j8 j8Var = new j8("ERROR", 0, "ERROR");

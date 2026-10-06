@@ -5,14 +5,14 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final int d;
-    public final b00 e;
-    public final j0 f;
-    public final boolean g;
-    public final String h;
+    public String a;
+    public String b;
+    public boolean c;
+    public int d;
+    public b00 e;
+    public j0 f;
+    public boolean g;
+    public String h;
 
     public o(String str, String str2, boolean z, int i, b00 b00Var, j0 j0Var, boolean z2, String str3) {
         this.a = str;

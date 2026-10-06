@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends d implements a {
-    public final Object g;
+    public Object g;
 
     public b(Object obj) {
         super("com.google.android.gms.dynamic.IObjectWrapper");

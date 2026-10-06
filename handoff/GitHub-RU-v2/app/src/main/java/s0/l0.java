@@ -7,13 +7,13 @@ public final class l0 {
     public static final l0 f31521d = new l0(null, null, null, 63);
 
     /* renamed from: a, reason: collision with root package name */
-    public final j71.c f31522a;
+    public j71.c f31522a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j71.c f31523b;
+    public j71.c f31523b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final j71.c f31524c;
+    public j71.c f31524c;
 
     public l0(j71.c cVar, j71.c cVar2, j71.c cVar3, int i) {
         cVar = (i & 1) != 0 ? null : cVar;

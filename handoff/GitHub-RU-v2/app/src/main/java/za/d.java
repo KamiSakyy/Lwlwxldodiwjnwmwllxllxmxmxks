@@ -7,7 +7,7 @@ import q71.g;
 public final class d implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f34651a;
+    public String f34651a;
 
     /* renamed from: b, reason: collision with root package name */
     public g f34652b;

@@ -7,7 +7,7 @@ public final class o implements r {
     public static final /* synthetic */ o f32946a = new o();
 
     @Override // w1.r
-    public final Object a(j71.e eVar, Object obj) {
+    public static final Object a(j71.e eVar, Object obj) {
         return obj;
     }
 
@@ -30,9 +30,10 @@ public final class o implements r {
     public static w1.r a;
 
     public static w1.o a;
-    public Object f(Object p1, Object p2, Object p3) { return null; }
-    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public r f(Object p1, Object p2, Object p3) { return null; }
+    public static r m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
     public Object r(Object p1, Object p2, Object p3) { return null; }
     public Object u(Object p1) { return null; }
     public Object v(Object p1) { return null; }
+    public Object n(Object p1, Object p2, Object p3, boolean p4, Object p5, Object p6, Object p7, Object p8, Object p9, int p10) { return null; }
 }

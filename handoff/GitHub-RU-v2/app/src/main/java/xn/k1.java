@@ -2,7 +2,7 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k1 extends sy.r {
-    public final Boolean a;
+    public Boolean a;
 
     public k1(Boolean bool) {
         this.a = bool;

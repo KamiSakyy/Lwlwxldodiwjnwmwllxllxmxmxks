@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x60 {
-    public final w60 a;
-    public final List b;
+    public w60 a;
+    public List b;
 
     public x60(w60 w60Var, List list) {
         this.a = w60Var;

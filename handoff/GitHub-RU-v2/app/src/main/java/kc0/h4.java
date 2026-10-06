@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h4 {
-    public final String a;
-    public final w3 b;
-    public final String c;
+    public String a;
+    public w3 b;
+    public String c;
 
     public h4(String str, w3 w3Var, String str2) {
         this.a = str;

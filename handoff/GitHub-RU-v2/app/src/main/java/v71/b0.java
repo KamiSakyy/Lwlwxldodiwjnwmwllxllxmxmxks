@@ -714,4 +714,5 @@ public abstract class b0 {
     public static Object E(Object... a) {
         return null;
     }
+    public Object e(Object p1) { return null; }
 }

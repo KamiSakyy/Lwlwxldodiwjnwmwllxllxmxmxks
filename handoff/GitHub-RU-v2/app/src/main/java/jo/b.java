@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final String a;
-    public final gq.c b;
+    public String a;
+    public gq.c b;
 
     public b(String str, gq.c cVar) {
         this.a = str;
@@ -29,4 +29,6 @@ public final class b {
         return "Assignable(__typename=" + this.a + ", assignableFragment=" + this.b + ")";
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

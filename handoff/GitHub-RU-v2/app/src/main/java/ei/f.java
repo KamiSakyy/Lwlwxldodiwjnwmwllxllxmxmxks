@@ -6,7 +6,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public final SharedPreferences a;
+    public SharedPreferences a;
 
     public f(Context context) {
         this.a = context.getSharedPreferences("SharedPreferenceTestingFlagProvider", 0);

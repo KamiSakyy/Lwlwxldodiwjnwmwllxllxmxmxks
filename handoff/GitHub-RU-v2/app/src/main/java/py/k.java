@@ -2,7 +2,7 @@ package py;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public final n a;
+    public n a;
 
     public k(n nVar) {
         this.a = nVar;

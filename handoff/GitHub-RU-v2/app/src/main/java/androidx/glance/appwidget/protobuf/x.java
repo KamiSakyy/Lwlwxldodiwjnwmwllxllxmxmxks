@@ -4,7 +4,7 @@ package androidx.glance.appwidget.protobuf;
 public abstract class x implements Cloneable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final z f2804r;
+    public z f2804r;
 
     /* renamed from: s, reason: collision with root package name */
     public z f2805s;

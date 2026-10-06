@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u50 {
-    public final String a;
-    public final String b;
-    public final xt0.q3 c;
+    public String a;
+    public String b;
+    public xt0.q3 c;
 
     public u50(String str, String str2, xt0.q3 q3Var) {
         this.a = str;

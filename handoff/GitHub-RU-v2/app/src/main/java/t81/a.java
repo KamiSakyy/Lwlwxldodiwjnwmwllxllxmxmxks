@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class a {
-    public final String a;
-    public final boolean b;
+    public String a;
+    public boolean b;
     public c c;
     public long d;
 

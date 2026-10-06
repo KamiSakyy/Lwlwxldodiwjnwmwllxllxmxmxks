@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c40 implements aaShadow.m0 {
-    public final e40 a;
+    public e40 a;
 
     public c40(e40 e40Var) {
         this.a = e40Var;

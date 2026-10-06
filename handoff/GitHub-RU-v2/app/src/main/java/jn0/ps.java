@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ps {
-    public final String a;
-    public final ks b;
-    public final ms c;
-    public final ns d;
-    public final String e;
+    public String a;
+    public ks b;
+    public ms c;
+    public ns d;
+    public String e;
 
     public ps(String str, ks ksVar, ms msVar, ns nsVar, String str2) {
         this.a = str;

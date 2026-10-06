@@ -8,11 +8,11 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 implements Parcelable {
     public static final Parcelable.Creator<p0> CREATOR = new c(23);
-    public final String r;
-    public final String s;
-    public final boolean t;
-    public final e0 u;
-    public final Map v;
+    public String r;
+    public String s;
+    public boolean t;
+    public e0 u;
+    public Map v;
 
     public p0(String str, String str2, boolean z, e0 e0Var, Map map) {
         k71.k.g(str, "id");

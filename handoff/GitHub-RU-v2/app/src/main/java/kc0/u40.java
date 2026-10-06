@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u40 {
-    public final int a;
-    public final v40 b;
-    public final String c;
-    public final String d;
+    public int a;
+    public v40 b;
+    public String c;
+    public String d;
 
     public u40(int i, v40 v40Var, String str, String str2) {
         this.a = i;

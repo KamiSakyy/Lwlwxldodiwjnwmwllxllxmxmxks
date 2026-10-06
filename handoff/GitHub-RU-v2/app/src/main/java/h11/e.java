@@ -7,8 +7,8 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e extends n1 {
-    public final TextView u;
-    public final SwitchMaterial v;
+    public TextView u;
+    public SwitchMaterial v;
 
     public e(View view) {
         super(view);
@@ -19,5 +19,6 @@ public final class e extends n1 {
         k71.k.f(findViewById2, "findViewById(...)");
         this.v = (SwitchMaterial) findViewById2;
     }
+    public Object a(Object p1) { return null; }
     public Object a(Object p1) { return null; }
 }

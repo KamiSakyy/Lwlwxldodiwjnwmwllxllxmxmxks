@@ -2,7 +2,7 @@ package im0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements aa.v0 {
-    public final d a;
+    public d a;
 
     public b(d dVar) {
         this.a = dVar;

@@ -6,9 +6,9 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements aa.n0 {
     public static final g Companion = new g();
-    public final String r;
-    public final String s;
-    public final String t;
+    public String r;
+    public String s;
+    public String t;
 
     public j(String str, String str2, String str3) {
         k71.k.g(str, "projectId");

@@ -9,7 +9,7 @@ public final class nl {
     public static final nl t;
     public static final nl u;
     public static final /* synthetic */ nl[] v;
-    public final String r;
+    public String r;
 
     static {
         nl nlVar = new nl("MERGE", 0, "MERGE");

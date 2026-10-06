@@ -4,10 +4,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final m c;
-    public final i80.c d;
+    public String a;
+    public String b;
+    public m c;
+    public i80.c d;
 
     public p(String str, String str2, m mVar, i80.c cVar) {
         this.a = str;

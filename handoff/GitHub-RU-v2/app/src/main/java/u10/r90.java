@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r90 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final e30.c e;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public e30.c e;
 
     public r90(String str, String str2, String str3, String str4, e30.c cVar) {
         this.a = str;

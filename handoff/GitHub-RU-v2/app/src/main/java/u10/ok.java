@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ok implements aaShadow.v0 {
-    public final qk a;
+    public qk a;
 
     public ok(qk qkVar) {
         this.a = qkVar;

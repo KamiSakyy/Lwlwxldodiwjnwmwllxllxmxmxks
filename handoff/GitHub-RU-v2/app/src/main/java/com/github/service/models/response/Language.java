@@ -12,8 +12,8 @@ import yz0.h;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class Language implements Parcelable {
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<Language> CREATOR = new h(20);
 

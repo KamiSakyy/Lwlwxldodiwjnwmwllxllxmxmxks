@@ -10,21 +10,21 @@ import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
-    public final s a;
-    public final ArrayList b;
-    public final boolean c;
-    public final Integer d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final String i;
-    public final boolean j;
-    public final x2 k;
-    public final List l;
-    public final b8 m;
-    public final boolean n;
-    public final boolean o;
+    public s a;
+    public ArrayList b;
+    public boolean c;
+    public Integer d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public String i;
+    public boolean j;
+    public x2 k;
+    public List l;
+    public b8 m;
+    public boolean n;
+    public boolean o;
 
     public g(s sVar, ArrayList arrayList, boolean z, Integer num, boolean z2, boolean z3, boolean z4, boolean z5, String str, boolean z6, x2 x2Var, List list, b8 b8Var, boolean z7, boolean z8) {
         this.a = sVar;

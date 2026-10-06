@@ -9,7 +9,7 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e1 implements v2 {
     public final /* synthetic */ int r;
-    public final o1 s;
+    public o1 s;
 
     public /* synthetic */ e1(o1 o1Var, int i) {
         this.r = i;

@@ -4,10 +4,10 @@ package com.github.rudroid.fileschanged;
 public final class o4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f13421a;
+    public boolean f13421a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f13422b;
+    public boolean f13422b;
 
     public o4(boolean z10, boolean z11) {
         this.f13421a = z10;

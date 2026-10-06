@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class er implements aaShadow.w0 {
     public static final xq Companion = new xq();
-    public final String r;
-    public final String s;
-    public final aa.u0 t;
+    public String r;
+    public String s;
+    public aa.u0 t;
 
     public er(aa.u0 u0Var, String str, String str2) {
         k71.k.g(str, "repositoryOwner");

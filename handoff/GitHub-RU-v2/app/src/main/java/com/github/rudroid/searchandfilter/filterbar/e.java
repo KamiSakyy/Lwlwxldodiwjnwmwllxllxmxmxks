@@ -2,8 +2,8 @@ package com.github.rudroid.searchandfilter.filterbar;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final j71.a b;
+    public String a;
+    public j71.a b;
 
     public e(String str, j71.a aVar) {
         k71.k.g(str, "label");
@@ -31,5 +31,5 @@ public final class e {
     public final String toString() {
         return "FilterBarContextMenuItem(label=" + this.a + ", action=" + this.b + ")";
     }
-    public Object r(Object p1, Object p2, Object p3) { return null; }
+    public static Object r(Object p1, Object p2, Object p3) { return null; }
 }

@@ -2,10 +2,10 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h1 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final sy.r d;
+    public String a;
+    public String b;
+    public String c;
+    public sy.r d;
 
     public h1(String str, String str2, String str3, sy.r rVar) {
         k71.k.g(str, "key");

@@ -8,7 +8,7 @@ import w8.p;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h implements Iterable, l71.a {
     public final /* synthetic */ int r;
-    public final Object s;
+    public Object s;
 
     public /* synthetic */ h(int i, Object obj) {
         this.r = i;

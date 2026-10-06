@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public abstract class a implements d {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Object f1548r;
+    public Object f1548r;
 
     /* renamed from: s, reason: collision with root package name */
     public final ArrayList f1549s = new ArrayList();

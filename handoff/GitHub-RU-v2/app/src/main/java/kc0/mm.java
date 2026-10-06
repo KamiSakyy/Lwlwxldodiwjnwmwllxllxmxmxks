@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mm implements aaShadow.v0 {
-    public final om a;
+    public om a;
 
     public mm(om omVar) {
         this.a = omVar;

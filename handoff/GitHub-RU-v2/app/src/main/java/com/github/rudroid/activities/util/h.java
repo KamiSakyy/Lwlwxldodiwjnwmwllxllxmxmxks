@@ -11,7 +11,7 @@ import java.io.Serializable;
 public abstract class h<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f5923a;
+    public String f5923a;
 
     public h(String str) {
         this.f5923a = str;

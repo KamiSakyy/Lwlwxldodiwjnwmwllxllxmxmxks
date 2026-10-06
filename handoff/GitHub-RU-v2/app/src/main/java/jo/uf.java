@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uf {
-    public final String a;
-    public final vf b;
+    public String a;
+    public vf b;
 
     public uf(String str, vf vfVar) {
         this.a = str;

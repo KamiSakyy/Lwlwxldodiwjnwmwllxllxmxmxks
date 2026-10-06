@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sc {
-    public final String a;
-    public final rc b;
-    public final String c;
+    public String a;
+    public rc b;
+    public String c;
 
     public sc(String str, rc rcVar, String str2) {
         this.a = str;

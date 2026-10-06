@@ -7,10 +7,10 @@ import v71.z;
 public final class j extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final com.github.rudroid.copilot.preferences.p f10194s;
+    public com.github.rudroid.copilot.preferences.p f10194s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final z f10195t;
+    public z f10195t;
 
     public j(com.github.rudroid.copilot.preferences.p pVar, z zVar) {
         k71.k.g(pVar, "setIsCopilotUpsellBannerDismissedUseCase");

@@ -5,10 +5,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 implements vb.a {
-    public final m0 a;
-    public final Object b;
-    public final boolean c;
-    public final int d;
+    public m0 a;
+    public Object b;
+    public boolean c;
+    public int d;
 
     public n0(m0 m0Var, List list, boolean z, int i) {
         this.a = m0Var;

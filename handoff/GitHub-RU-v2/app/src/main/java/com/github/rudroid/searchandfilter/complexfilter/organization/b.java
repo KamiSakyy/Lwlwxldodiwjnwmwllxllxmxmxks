@@ -8,7 +8,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends e0<a> {
-    public final SelectableOrganizationFragment f;
+    public SelectableOrganizationFragment f;
 
     public b(SelectableOrganizationFragment selectableOrganizationFragment) {
         this.f = selectableOrganizationFragment;

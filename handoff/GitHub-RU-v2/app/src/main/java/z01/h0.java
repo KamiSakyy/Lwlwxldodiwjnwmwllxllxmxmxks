@@ -38,4 +38,6 @@ public interface h0 {
     y71.i q(String str);
 
     y71.i r(String str, String str2);
+    public Object e(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
 }

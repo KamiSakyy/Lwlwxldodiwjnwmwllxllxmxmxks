@@ -5,9 +5,9 @@ import v71.v;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final fk.c a;
-    public final zl.b b;
-    public final v c;
+    public fk.c a;
+    public zl.b b;
+    public v c;
 
     public c(fk.c cVar, zl.b bVar, v vVar) {
         k.g(cVar, "deSerializer");
@@ -17,5 +17,6 @@ public final class c {
         this.b = bVar;
         this.c = vVar;
     }
+    public Object v(Object p1) { return null; }
     public Object v(Object p1) { return null; }
 }

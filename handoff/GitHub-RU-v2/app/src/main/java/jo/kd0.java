@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kd0 {
-    public final fd0 a;
-    public final id0 b;
+    public fd0 a;
+    public id0 b;
 
     public kd0(fd0 fd0Var, id0 id0Var) {
         this.a = fd0Var;

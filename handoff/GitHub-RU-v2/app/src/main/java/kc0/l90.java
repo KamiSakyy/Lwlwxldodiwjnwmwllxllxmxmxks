@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l90 {
-    public final String a;
-    public final gn0.dn b;
-    public final k90 c;
-    public final String d;
-    public final ri0.s7 e;
+    public String a;
+    public gn0.dn b;
+    public k90 c;
+    public String d;
+    public ri0.s7 e;
 
     public l90(String str, gn0.dn dnVar, k90 k90Var, String str2, ri0.s7 s7Var) {
         this.a = str;

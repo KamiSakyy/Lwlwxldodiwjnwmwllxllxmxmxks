@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f6 {
-    public final e6 a;
-    public final String b;
-    public final String c;
+    public e6 a;
+    public String b;
+    public String c;
 
     public f6(e6 e6Var, String str, String str2) {
         this.a = e6Var;

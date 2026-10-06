@@ -9,17 +9,17 @@ import m10.wr;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements h0 {
-    public final String a;
-    public final int b;
-    public final int c;
-    public final e d;
-    public final d e;
-    public final List f;
-    public final boolean g;
-    public final boolean h;
-    public final boolean i;
-    public final wr j;
-    public final String k;
+    public String a;
+    public int b;
+    public int c;
+    public e d;
+    public d e;
+    public List f;
+    public boolean g;
+    public boolean h;
+    public boolean i;
+    public wr j;
+    public String k;
 
     public h(String str, int i, int i2, e eVar, d dVar, List list, boolean z, boolean z2, boolean z3, wr wrVar, String str2) {
         this.a = str;

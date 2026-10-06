@@ -6,7 +6,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class g extends d {
-    public final y71.i u;
+    public y71.i u;
 
     public g(int i, a71.h hVar, x71.a aVar, y71.i iVar) {
         super(hVar, i, aVar);

@@ -17,7 +17,7 @@ import k71.x;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ActionPreferenceIcon extends Preference {
     public static final /* synthetic */ r71.e[] g0;
-    public final a f0;
+    public a f0;
 
     public static final class a extends s0 {
         public a() {

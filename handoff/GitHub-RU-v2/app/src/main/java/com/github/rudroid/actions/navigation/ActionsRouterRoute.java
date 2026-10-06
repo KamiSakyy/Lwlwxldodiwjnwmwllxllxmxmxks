@@ -14,13 +14,13 @@ import kotlinx.serialization.KSerializer;
 public final class ActionsRouterRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f5103r;
+    public String f5103r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f5104s;
+    public String f5104s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f5105t;
+    public String f5105t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ActionsRouterRoute> CREATOR = new a();
 

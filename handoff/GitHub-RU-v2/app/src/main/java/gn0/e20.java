@@ -9,7 +9,7 @@ public final class e20 {
     public static final e20 t;
     public static final /* synthetic */ e20[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         e20 e20Var = new e20("ACTIVE", 0, "ACTIVE");

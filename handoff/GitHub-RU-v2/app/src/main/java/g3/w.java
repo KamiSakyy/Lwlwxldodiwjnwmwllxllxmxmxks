@@ -4,10 +4,10 @@ package g3;
 public final class w {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f24713a;
+    public long f24713a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f24714b;
+    public long f24714b;
 
     public w(long j10, long j11) {
         this.f24713a = j10;

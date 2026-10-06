@@ -17,10 +17,10 @@ import java.util.UUID;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 {
-    public final en.c a;
-    public final oa.g b;
-    public final k0 c;
-    public final qe.a d;
+    public en.c a;
+    public oa.g b;
+    public k0 c;
+    public qe.a d;
 
     public e0(en.c cVar, oa.g gVar, k0 k0Var, qe.a aVar) {
         k71.k.g(cVar, "factory");

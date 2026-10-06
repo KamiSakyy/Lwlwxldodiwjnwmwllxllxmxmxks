@@ -8,13 +8,13 @@ import com.google.android.gms.internal.measurement.z3;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f14200a;
+    public Context f14200a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final gi.c f14201b;
+    public gi.c f14201b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final com.github.rudroid.settings.notifications.e f14202c;
+    public com.github.rudroid.settings.notifications.e f14202c;
 
     public c(Context context, gi.c cVar, com.github.rudroid.settings.notifications.e eVar) {
         k71.k.g(cVar, "systemPreferences");

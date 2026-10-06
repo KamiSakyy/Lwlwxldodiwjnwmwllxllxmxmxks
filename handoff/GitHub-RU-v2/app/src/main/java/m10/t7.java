@@ -3,8 +3,8 @@ package m10;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t7 {
     public final aa1.b a = aa.t0.d;
-    public final aa1.b b;
-    public final aa1.b c;
+    public aa1.b b;
+    public aa1.b c;
 
     public t7(aa1.b bVar, aa1.b bVar2) {
         this.b = bVar;

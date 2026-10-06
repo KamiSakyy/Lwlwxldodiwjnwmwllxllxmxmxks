@@ -7,7 +7,7 @@ import com.google.android.gms.common.api.Status;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u extends o {
-    public final w21.g b;
+    public w21.g b;
 
     public u(w21.g gVar) {
         super(4);

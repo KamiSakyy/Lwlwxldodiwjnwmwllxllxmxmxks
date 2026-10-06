@@ -4,7 +4,7 @@ import aa.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements m0 {
-    public final m a;
+    public m a;
 
     public k(m mVar) {
         this.a = mVar;

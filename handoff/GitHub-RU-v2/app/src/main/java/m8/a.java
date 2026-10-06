@@ -11,7 +11,7 @@ import r8.b;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ClassLoader f29082a;
+    public ClassLoader f29082a;
 
     public a(ClassLoader classLoader, int i) {
         switch (i) {

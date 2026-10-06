@@ -2,8 +2,8 @@ package gn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ha {
-    public final Object a;
-    public final String b;
+    public Object a;
+    public String b;
 
     public ha(String str, String str2) {
         k71.k.g(str, "contents");

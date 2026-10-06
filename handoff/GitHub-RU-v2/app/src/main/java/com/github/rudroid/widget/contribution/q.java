@@ -26,5 +26,6 @@ final class q extends c71.c {
         return ContributionWidgetSettingsActivity.v0(this.z, null, this);
     }
     public Object X(Object p1) { return null; }
-    public Object Z(Object p1) { return null; }
+    public q Z(Object p1) { return null; }
+    public Object X(Object p1) { return null; }
 }

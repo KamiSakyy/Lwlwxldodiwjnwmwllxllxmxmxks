@@ -10,7 +10,7 @@ public final class u00 {
     public static final u00 u;
     public static final /* synthetic */ u00[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         u00 u00Var = new u00("ONE_DAY", 0, "ONE_DAY");

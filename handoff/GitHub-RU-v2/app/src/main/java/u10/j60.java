@@ -2,17 +2,17 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j60 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final hc0.fm d;
-    public final f60 e;
-    public final i60 f;
-    public final boolean g;
-    public final boolean h;
-    public final i30.i i;
-    public final c60.j j;
-    public final c40.c k;
+    public String a;
+    public String b;
+    public String c;
+    public hc0.fm d;
+    public f60 e;
+    public i60 f;
+    public boolean g;
+    public boolean h;
+    public i30.i i;
+    public c60.j j;
+    public c40.c k;
 
     public j60(String str, String str2, String str3, hc0.fm fmVar, f60 f60Var, i60 i60Var, boolean z, boolean z2, i30.i iVar, c60.j jVar, c40.c cVar) {
         this.a = str;

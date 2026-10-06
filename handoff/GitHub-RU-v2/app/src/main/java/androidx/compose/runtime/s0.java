@@ -4,16 +4,16 @@ package androidx.compose.runtime;
 public final class s0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f1813a;
+    public int f1813a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f1814b;
+    public Object f1814b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f1815c;
+    public int f1815c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f1816d;
+    public int f1816d;
 
     public s0(Object obj, int i, int i10, int i11) {
         this.f1813a = i;

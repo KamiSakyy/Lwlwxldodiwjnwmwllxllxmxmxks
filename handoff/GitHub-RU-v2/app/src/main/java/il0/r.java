@@ -4,9 +4,9 @@ import oj0.e2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public final String a;
-    public final e2 b;
-    public final oj0.h c;
+    public String a;
+    public e2 b;
+    public oj0.h c;
 
     public r(String str, e2 e2Var, oj0.h hVar) {
         k71.k.g(str, "__typename");

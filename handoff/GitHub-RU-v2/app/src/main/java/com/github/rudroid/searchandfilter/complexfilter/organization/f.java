@@ -5,7 +5,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f extends n1 {
-    public final tf u;
+    public tf u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(tf tfVar, SelectableOrganizationFragment selectableOrganizationFragment) {

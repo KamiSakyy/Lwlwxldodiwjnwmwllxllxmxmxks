@@ -6,7 +6,7 @@ import java.util.List;
 public final class j0 extends q {
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f657b;
+    public List f657b;
 
     public j0(String str, List list) {
         super(str);

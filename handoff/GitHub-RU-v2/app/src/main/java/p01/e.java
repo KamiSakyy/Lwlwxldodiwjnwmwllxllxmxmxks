@@ -2,8 +2,8 @@ package p01;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public e(String str, String str2) {
         this.a = str;
@@ -28,6 +28,6 @@ public final class e {
     public final String toString() {
         return x.i.g("ParentRepo(owner=", this.a, ", name=", this.b, ")");
     }
-    public Object c(Object p1, Object p2, Object p3) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object c(Object p1, Object p2, Object p3) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

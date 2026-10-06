@@ -15,7 +15,7 @@ public final class v {
     public static final v x;
     public static final v y;
     public static final v z;
-    public final String r;
+    public String r;
 
     static {
         v vVar = new v("HTTP_1_0", 0, "http/1.0");

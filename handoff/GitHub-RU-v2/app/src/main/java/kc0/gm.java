@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gm {
-    public final String a;
-    public final String b;
-    public final hm c;
+    public String a;
+    public String b;
+    public hm c;
 
     public gm(String str, String str2, hm hmVar) {
         this.a = str;

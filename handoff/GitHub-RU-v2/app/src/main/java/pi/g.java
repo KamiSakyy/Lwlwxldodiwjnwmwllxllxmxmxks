@@ -4,10 +4,10 @@ import w61.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements e {
-    public final d a;
-    public final byte b;
-    public final byte c;
-    public final byte d;
+    public d a;
+    public byte b;
+    public byte c;
+    public byte d;
 
     public g(d dVar, byte b, byte b2, byte b3) {
         this.a = dVar;

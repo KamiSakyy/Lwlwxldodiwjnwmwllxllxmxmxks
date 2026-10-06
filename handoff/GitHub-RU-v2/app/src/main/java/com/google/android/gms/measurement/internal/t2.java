@@ -37,20 +37,20 @@ public final class t2 extends e0 {
     public PriorityQueue E;
     public boolean F;
     public b2 G;
-    public final AtomicLong H;
+    public AtomicLong H;
     public long I;
-    public final e1 J;
+    public e1 J;
     public boolean K;
     public g2 L;
     public s2 M;
     public g2 N;
-    public final y51.c O;
+    public y51.c O;
     public p2 u;
     public b1.m v;
-    public final CopyOnWriteArraySet w;
+    public CopyOnWriteArraySet w;
     public boolean x;
-    public final AtomicReference y;
-    public final Object z;
+    public AtomicReference y;
+    public Object z;
 
     public t2(o1 o1Var) {
         super(o1Var);

@@ -7,7 +7,7 @@ public final class xy {
     public static final wy Companion;
     public static final xy s;
     public static final /* synthetic */ xy[] t;
-    public final String r;
+    public String r;
 
     static {
         xy xyVar = new xy("BASE_REF", 0, "BASE_REF");

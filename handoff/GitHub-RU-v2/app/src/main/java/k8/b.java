@@ -4,13 +4,13 @@ package k8;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f27811a;
+    public String f27811a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f27812b;
+    public String f27812b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final a f27813c;
+    public a f27813c;
 
     public b(String str, a aVar) {
         if (str.isEmpty() || str.charAt(0) != '/') {

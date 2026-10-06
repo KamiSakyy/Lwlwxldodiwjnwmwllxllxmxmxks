@@ -5,7 +5,7 @@ import v71.b0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public class q extends v71.a implements c71.d {
-    public final a71.c u;
+    public a71.c u;
 
     public q(a71.c cVar, a71.h hVar) {
         super(hVar, true);

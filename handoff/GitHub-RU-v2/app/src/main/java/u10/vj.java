@@ -2,15 +2,15 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vj {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final sj d;
-    public final uj e;
-    public final hc0.ff f;
-    public final boolean g;
-    public final boolean h;
-    public final z70.l3 i;
+    public String a;
+    public String b;
+    public String c;
+    public sj d;
+    public uj e;
+    public hc0.ff f;
+    public boolean g;
+    public boolean h;
+    public z70.l3 i;
 
     public vj(String str, String str2, String str3, sj sjVar, uj ujVar, hc0.ff ffVar, boolean z, boolean z2, z70.l3 l3Var) {
         this.a = str;

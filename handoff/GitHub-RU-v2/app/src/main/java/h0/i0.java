@@ -4,10 +4,10 @@ package h0;
 public final class i0 extends l0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f25020a;
+    public long f25020a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f25021b;
+    public boolean f25021b;
 
     public i0(boolean z10, long j10) {
         this.f25020a = j10;

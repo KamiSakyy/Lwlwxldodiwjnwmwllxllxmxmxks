@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r2 {
-    public final List a;
-    public final List b;
-    public final List c;
+    public List a;
+    public List b;
+    public List c;
 
     public r2(List list, List list2, List list3) {
         this.a = list;

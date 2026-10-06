@@ -6,28 +6,28 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final boolean f;
-    public final b00 g;
-    public final boolean h;
-    public final boolean i;
-    public final ZonedDateTime j;
-    public final ZonedDateTime k;
-    public final Integer l;
-    public final int m;
-    public final int n;
-    public final String o;
-    public final String p;
-    public final boolean q;
-    public final boolean r;
-    public final boolean s;
-    public final boolean t;
-    public final boolean u;
-    public final rt.e v;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public String e;
+    public boolean f;
+    public b00 g;
+    public boolean h;
+    public boolean i;
+    public ZonedDateTime j;
+    public ZonedDateTime k;
+    public Integer l;
+    public int m;
+    public int n;
+    public String o;
+    public String p;
+    public boolean q;
+    public boolean r;
+    public boolean s;
+    public boolean t;
+    public boolean u;
+    public rt.e v;
 
     public w(String str, String str2, String str3, int i, String str4, boolean z, b00 b00Var, boolean z2, boolean z3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, Integer num, int i2, int i3, String str5, String str6, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, rt.e eVar) {
         this.a = str;

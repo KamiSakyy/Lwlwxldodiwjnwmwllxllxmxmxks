@@ -39,9 +39,10 @@ public final class d {
             a[c] = (char) i;
         }
     }
-    public Object d(Object p1, Object p2, Object p3) { return null; }
+    public static Object d(Object p1, Object p2, Object p3) { return null; }
     public Object e() { return null; }
     public Object f() { return null; }
     public Object g(Object p1) { return null; }
     public static final Object c = null;
+    public Object g(boolean p1) { return null; }
 }

@@ -19,6 +19,6 @@ final class b implements j71.c {
         y3.e.c(cVar.g, dVar.f, 0.0f, 0.0f, 6);
         return w61.a0.a;
     }
-    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public Object d(Object p1, Object p2) { return null; }
+    public static Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object d(Object p1, Object p2) { return null; }
 }

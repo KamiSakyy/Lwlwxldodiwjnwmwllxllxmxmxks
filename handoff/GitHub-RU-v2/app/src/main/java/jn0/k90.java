@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k90 {
-    public final j90 a;
+    public j90 a;
 
     public k90(j90 j90Var) {
         this.a = j90Var;

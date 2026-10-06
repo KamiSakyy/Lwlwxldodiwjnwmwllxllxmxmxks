@@ -7,15 +7,15 @@ import gn0.dn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements h0 {
-    public final boolean a;
-    public final d b;
-    public final String c;
-    public final String d;
-    public final boolean e;
-    public final boolean f;
-    public final dn g;
-    public final a h;
-    public final String i;
+    public boolean a;
+    public d b;
+    public String c;
+    public String d;
+    public boolean e;
+    public boolean f;
+    public dn g;
+    public a h;
+    public String i;
 
     public f(boolean z, d dVar, String str, String str2, boolean z2, boolean z3, dn dnVar, a aVar, String str3) {
         this.a = z;

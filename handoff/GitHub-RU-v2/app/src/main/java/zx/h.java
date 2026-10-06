@@ -2,10 +2,10 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements aa.v0 {
-    public final j a;
-    public final i b;
-    public final String c;
-    public final String d;
+    public j a;
+    public i b;
+    public String c;
+    public String d;
 
     public h(j jVar, i iVar, String str, String str2) {
         this.a = jVar;

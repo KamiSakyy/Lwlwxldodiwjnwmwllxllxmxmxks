@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class co {
-    public final String a;
-    public final String b;
-    public final ea0.q0 c;
+    public String a;
+    public String b;
+    public ea0.q0 c;
 
     public co(String str, String str2, ea0.q0 q0Var) {
         this.a = str;

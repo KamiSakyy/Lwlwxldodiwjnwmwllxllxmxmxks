@@ -11,7 +11,7 @@ public final class gu {
     public static final gu v;
     public static final /* synthetic */ gu[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         gu guVar = new gu("CLOSED", 0, "CLOSED");

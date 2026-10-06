@@ -2,8 +2,8 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f4 {
-    public final boolean a;
-    public final String b;
+    public boolean a;
+    public String b;
 
     public f4(String str, boolean z) {
         this.a = z;

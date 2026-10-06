@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements n {
-    public final Double r;
+    public Double r;
 
     public g(Double d) {
         if (d == null) {
@@ -92,4 +92,8 @@ public final class g implements n {
     public final String toString() {
         return k();
     }
+    public Object A() { return null; }
+    public Object n(Object p1) { return null; }
+    public Object u(Object p1) { return null; }
+    public Object w(Object p1) { return null; }
 }

@@ -12,19 +12,19 @@ public final class ta extends androidx.lifecycle.k1 implements com.github.rudroi
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f11829s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f11830t;
+    public com.github.rudroid.activities.util.c f11830t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final ik.g0 f11831u;
+    public ik.g0 f11831u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final ik.z f11832v;
+    public ik.z f11832v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final ik.i0 f11833w;
+    public ik.i0 f11833w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y71.y1 f11834x;
+    public y71.y1 f11834x;
 
     /* renamed from: y, reason: collision with root package name */
     public x01.i f11835y;

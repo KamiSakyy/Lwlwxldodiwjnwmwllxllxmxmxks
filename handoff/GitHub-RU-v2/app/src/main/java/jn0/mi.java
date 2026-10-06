@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mi implements aaShadow.w0 {
     public static final ji Companion = new ji();
-    public final String r;
-    public final String s;
-    public final aa1.b t;
+    public String r;
+    public String s;
+    public aa1.b t;
 
     public mi(String str, String str2) {
         k71.k.g(str, "owner");

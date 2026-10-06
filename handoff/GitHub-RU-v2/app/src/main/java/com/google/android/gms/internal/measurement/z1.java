@@ -37,4 +37,9 @@ public final class z1 extends g5 {
     public final String p() {
         return this.zzd;
     }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2, long p3, boolean p4, boolean p5, Object p6, boolean p7) { return null; }
+    public Object h(boolean p1) { return null; }
+    public Object k() { return null; }
+    public Object n() { return null; }
 }

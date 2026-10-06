@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qa0 implements aaShadow.n0 {
     public static final la0 Companion = new la0();
-    public final String r;
-    public final aa1.b s;
+    public String r;
+    public aa1.b s;
 
     public qa0(String str, aa1.b bVar) {
         k71.k.g(str, "issueId");

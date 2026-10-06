@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u0 {
-    public final hc0.bm a;
-    public final t0 b;
-    public final p0 c;
-    public final String d;
-    public final String e;
+    public hc0.bm a;
+    public t0 b;
+    public p0 c;
+    public String d;
+    public String e;
 
     public u0(hc0.bm bmVar, t0 t0Var, p0 p0Var, String str, String str2) {
         this.a = bmVar;

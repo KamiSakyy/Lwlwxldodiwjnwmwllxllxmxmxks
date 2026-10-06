@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ts {
-    public final String a;
-    public final String b;
-    public final sd0.h0 c;
+    public String a;
+    public String b;
+    public sd0.h0 c;
 
     public ts(String str, String str2, sd0.h0 h0Var) {
         this.a = str;

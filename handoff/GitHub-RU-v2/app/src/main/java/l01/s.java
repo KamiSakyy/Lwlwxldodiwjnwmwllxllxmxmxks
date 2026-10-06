@@ -6,8 +6,8 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s implements Parcelable {
     public static final Parcelable.Creator<s> CREATOR = new c(12);
-    public final p0 r;
-    public final t0 s;
+    public p0 r;
+    public t0 s;
 
     public s(p0 p0Var, t0 t0Var) {
         k71.k.g(p0Var, "projectItem");

@@ -9,10 +9,10 @@ public final class q {
     public static final q f31138c = new q(t1.C(0), t1.C(0));
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f31139a;
+    public long f31139a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f31140b;
+    public long f31140b;
 
     public q(long j10, long j11) {
         this.f31139a = j10;

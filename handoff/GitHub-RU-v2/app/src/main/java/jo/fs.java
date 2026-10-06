@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fs {
-    public final String a;
-    public final boolean b;
-    public final ds c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
-    public final List g;
-    public final String h;
-    public final nv.a i;
+    public String a;
+    public boolean b;
+    public ds c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
+    public List g;
+    public String h;
+    public nv.a i;
 
     public fs(String str, boolean z, ds dsVar, boolean z2, boolean z3, boolean z4, List list, String str2, nv.a aVar) {
         this.a = str;

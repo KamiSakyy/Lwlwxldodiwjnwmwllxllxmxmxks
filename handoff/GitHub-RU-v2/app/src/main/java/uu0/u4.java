@@ -2,10 +2,10 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u4 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final boolean d;
+    public String a;
+    public String b;
+    public int c;
+    public boolean d;
 
     public u4(int i, String str, String str2, boolean z) {
         this.a = str;

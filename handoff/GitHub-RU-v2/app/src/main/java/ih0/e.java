@@ -4,8 +4,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final String a;
-    public final ud0.a b;
+    public String a;
+    public ud0.a b;
 
     public e(String str, ud0.a aVar) {
         this.a = str;
@@ -30,5 +30,5 @@ public final class e {
     public final String toString() {
         return f4.p("Enqueuer(__typename=", this.a, ", actorFields=", this.b, ")");
     }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

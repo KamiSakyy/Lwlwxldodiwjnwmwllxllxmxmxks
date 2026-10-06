@@ -6,10 +6,10 @@ import java.io.InputStream;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 extends q81.y {
-    public final ContentResolver a;
-    public final q81.q b;
-    public final long c;
-    public final Uri d;
+    public ContentResolver a;
+    public q81.q b;
+    public long c;
+    public Uri d;
 
     public c1(ContentResolver contentResolver, q81.q qVar, long j, Uri uri) {
         k71.k.g(uri, "uri");

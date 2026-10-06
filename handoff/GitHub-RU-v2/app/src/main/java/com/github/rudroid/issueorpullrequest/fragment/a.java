@@ -4,46 +4,46 @@ package com.github.rudroid.issueorpullrequest.fragment;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j71.c f15484a;
+    public j71.c f15484a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j71.e f15485b;
+    public j71.e f15485b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final j71.a f15486c;
+    public j71.a f15486c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final j71.a f15487d;
+    public j71.a f15487d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final j71.a f15488e;
+    public j71.a f15488e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final j71.f f15489f;
+    public j71.f f15489f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final j71.f f15490g;
+    public j71.f f15490g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final j71.c f15491h;
-    public final j71.a i;
+    public j71.c f15491h;
+    public j71.a i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final j71.c f15492j;
+    public j71.c f15492j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final j71.a f15493k;
-    public final j71.a l;
-    public final j71.a m;
+    public j71.a f15493k;
+    public j71.a l;
+    public j71.a m;
 
     /* renamed from: n, reason: collision with root package name */
-    public final j71.a f15494n;
+    public j71.a f15494n;
 
     /* renamed from: o, reason: collision with root package name */
-    public final j71.c f15495o;
+    public j71.c f15495o;
 
     /* renamed from: p, reason: collision with root package name */
-    public final j71.e f15496p;
+    public j71.e f15496p;
 
     public a(j71.c cVar, j71.e eVar, j71.a aVar, j71.a aVar2, j71.a aVar3, j71.f fVar, j71.f fVar2, j71.c cVar2, j71.a aVar4, j71.c cVar3, j71.a aVar5, j71.a aVar6, j71.a aVar7, j71.a aVar8, j71.c cVar4, j71.e eVar2) {
         this.f15484a = cVar;

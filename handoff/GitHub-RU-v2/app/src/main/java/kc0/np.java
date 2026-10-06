@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class np implements aaShadow.n0 {
     public static final jp Companion = new jp();
-    public final String r;
-    public final List s;
-    public final aa1.b t;
+    public String r;
+    public List s;
+    public aa1.b t;
 
     public np(String str, List list, aa1.b bVar) {
         k71.k.g(str, "checkSuiteId");

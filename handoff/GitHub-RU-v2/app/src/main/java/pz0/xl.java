@@ -11,7 +11,7 @@ public final class xl {
     public static final xl v;
     public static final /* synthetic */ xl[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         xl xlVar = new xl("ASC", 0, "ASC");

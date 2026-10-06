@@ -2,14 +2,14 @@ package com.github.rudroid.uitoolkit;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p2 {
-    public final String a;
-    public final Integer b;
-    public final i2.b c;
-    public final d2.t d;
-    public final String e;
-    public final d2.t f;
-    public final d2.t g;
-    public final g3.q0 h;
+    public String a;
+    public Integer b;
+    public i2.b c;
+    public d2.t d;
+    public String e;
+    public d2.t f;
+    public d2.t g;
+    public g3.q0 h;
 
     public p2(String str, Integer num, i2.b bVar, d2.t tVar, String str2, d2.t tVar2, d2.t tVar3, g3.q0 q0Var, int i) {
         num = (i & 2) != 0 ? null : num;
@@ -76,7 +76,7 @@ public final class p2 {
         return r.toString();
     }
     public Object d(Object p1, Object p2) { return null; }
-    public Object e(Object p1, Object p2) { return null; }
+    public w1 e(Object p1, Object p2) { return null; }
     public Object f(Object p1, Object p2) { return null; }
     public Object o(Object p1, Object p2) { return null; }
     public Object p(Object p1, Object p2, Object p3) { return null; }

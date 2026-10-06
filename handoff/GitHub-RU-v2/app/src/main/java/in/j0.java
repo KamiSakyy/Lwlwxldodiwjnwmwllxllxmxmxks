@@ -2,8 +2,8 @@ package in;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j0 {
-    public final boolean a;
-    public final boolean b;
+    public boolean a;
+    public boolean b;
 
     public /* synthetic */ j0() {
         this(true, false);

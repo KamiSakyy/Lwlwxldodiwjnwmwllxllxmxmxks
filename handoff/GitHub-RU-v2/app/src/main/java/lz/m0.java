@@ -4,10 +4,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public final String a;
-    public final d0 b;
-    public final String c;
-    public final String d;
+    public String a;
+    public d0 b;
+    public String c;
+    public String d;
 
     public m0(String str, d0 d0Var, String str2, String str3) {
         this.a = str;
@@ -39,10 +39,10 @@ public final class m0 {
         sb.append(", id=");
         return x.i.k(sb, this.c, ", __typename=", this.d, ")");
     }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public static Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

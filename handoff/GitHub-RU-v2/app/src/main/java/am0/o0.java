@@ -5,10 +5,10 @@ import wk0.j2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public final String a;
-    public final g b;
-    public final String c;
-    public final j2 d;
+    public String a;
+    public g b;
+    public String c;
+    public j2 d;
 
     public o0(String str, g gVar, String str2, j2 j2Var) {
         this.a = str;

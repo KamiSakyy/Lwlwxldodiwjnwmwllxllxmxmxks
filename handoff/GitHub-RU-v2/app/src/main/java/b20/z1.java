@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z1 {
-    public final uu a;
-    public final ArrayList b;
-    public final String c;
-    public final String d;
+    public uu a;
+    public ArrayList b;
+    public String c;
+    public String d;
 
     public z1(uu uuVar, ArrayList arrayList, String str, String str2) {
         this.a = uuVar;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qc implements aaShadow.v0 {
-    public final sc a;
-    public final String b;
-    public final String c;
+    public sc a;
+    public String b;
+    public String c;
 
     public qc(sc scVar, String str, String str2) {
         this.a = scVar;

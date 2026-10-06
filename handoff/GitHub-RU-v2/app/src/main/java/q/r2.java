@@ -10,19 +10,19 @@ import android.view.ViewConfiguration;
 public final class r2 extends TouchDelegate {
 
     /* renamed from: a, reason: collision with root package name */
-    public final View f30708a;
+    public View f30708a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Rect f30709b;
+    public Rect f30709b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Rect f30710c;
+    public Rect f30710c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Rect f30711d;
+    public Rect f30711d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f30712e;
+    public int f30712e;
 
     /* renamed from: f, reason: collision with root package name */
     public boolean f30713f;

@@ -9,7 +9,7 @@ public final class jz {
     public static final jz t;
     public static final /* synthetic */ jz[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         jz jzVar = new jz("APPROVED", 0, "APPROVED");

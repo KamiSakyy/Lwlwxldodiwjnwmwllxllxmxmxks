@@ -4,13 +4,13 @@ package com.github.rudroid.home;
 final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final xk.g f14916a;
+    public xk.g f14916a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final jd.a f14917b;
+    public jd.a f14917b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final hd.b f14918c;
+    public hd.b f14918c;
 
     public c(xk.g gVar, jd.a aVar, hd.b bVar) {
         k71.k.g(aVar, "notificationsBannerData");
@@ -40,5 +40,6 @@ final class c {
         return "HomeBanners(ghesDeprecationData=" + this.f14916a + ", notificationsBannerData=" + this.f14917b + ", inAppUpdateStateData=" + this.f14918c + ")";
     }
     public Object name() { return null; }
+    public Object v(Object p1) { return null; }
     public Object v(Object p1) { return null; }
 }

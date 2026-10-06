@@ -9,7 +9,7 @@ import w80.a0;
 public final class d {
     public static final long d = TimeUnit.HOURS.toMillis(24);
     public static final long e = TimeUnit.MINUTES.toMillis(30);
-    public final i a;
+    public i a;
     public long b;
     public int c;
 
@@ -57,4 +57,5 @@ public final class d {
         return;
     }
     public Object f(Object p1, Object p2) { return null; }
+    public Object f(Object p1, int p2) { return null; }
 }

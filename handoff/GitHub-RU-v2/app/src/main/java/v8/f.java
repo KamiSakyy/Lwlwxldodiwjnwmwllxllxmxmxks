@@ -10,29 +10,29 @@ public final class f {
     public static final f f32772j = new f();
 
     /* renamed from: a, reason: collision with root package name */
-    public final y f32773a;
+    public y f32773a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final e9.i f32774b;
+    public e9.i f32774b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f32775c;
+    public boolean f32775c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f32776d;
+    public boolean f32776d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f32777e;
+    public boolean f32777e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final boolean f32778f;
+    public boolean f32778f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final long f32779g;
+    public long f32779g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final long f32780h;
-    public final Set i;
+    public long f32780h;
+    public Set i;
 
     public f() {
         y yVar = y.f32849r;

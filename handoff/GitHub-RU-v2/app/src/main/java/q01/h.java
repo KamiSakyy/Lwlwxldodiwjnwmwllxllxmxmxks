@@ -6,10 +6,10 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements a {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final String d;
+    public String a;
+    public String b;
+    public boolean c;
+    public String d;
 
     public h(String str, String str2, String str3, boolean z) {
         k71.k.g(str, "term");

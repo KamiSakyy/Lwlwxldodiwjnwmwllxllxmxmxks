@@ -6,10 +6,10 @@ import java.util.Arrays;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f32021a;
+    public int f32021a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final CharSequence f32022b;
+    public CharSequence f32022b;
 
     public f(int i, CharSequence charSequence) {
         this.f32021a = i;

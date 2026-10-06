@@ -9,11 +9,11 @@ import m10.kk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements h0 {
-    public final String a;
-    public final String b;
-    public final a c;
-    public final kk d;
-    public final ZonedDateTime e;
+    public String a;
+    public String b;
+    public a c;
+    public kk d;
+    public ZonedDateTime e;
 
     public b(String str, String str2, a aVar, kk kkVar, ZonedDateTime zonedDateTime) {
         this.a = str;

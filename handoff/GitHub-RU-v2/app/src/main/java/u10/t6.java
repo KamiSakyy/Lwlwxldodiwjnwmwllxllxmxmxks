@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t6 implements aaShadow.n0 {
     public static final n6 Companion = new n6();
-    public final String r;
-    public final String s;
-    public final String t;
-    public final String u;
-    public final aa.u0 v;
+    public String r;
+    public String s;
+    public String t;
+    public String u;
+    public aa.u0 v;
 
     public t6(aa.u0 u0Var, String str, String str2, String str3, String str4) {
         k71.k.g(str, "repositoryId");

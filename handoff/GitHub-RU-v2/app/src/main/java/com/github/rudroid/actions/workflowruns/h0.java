@@ -13,12 +13,12 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class h0 extends k1 implements com.github.rudroid.utilities.viewmodel.b {
-    public final String A;
-    public final String B;
-    public final y1 C;
+    public String A;
+    public String B;
+    public y1 C;
     public Object D;
     public boolean E;
-    public final w61.p F;
+    public w61.p F;
     public q1 G;
     public q1 H;
 
@@ -26,25 +26,25 @@ public final class h0 extends k1 implements com.github.rudroid.utilities.viewmod
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f5433s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final si.g f5434t;
+    public si.g f5434t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final ml.m f5435u;
+    public ml.m f5435u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final si.e f5436v;
+    public si.e f5436v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final si.i f5437w;
+    public si.i f5437w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final ri.a f5438x;
+    public ri.a f5438x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f5439y;
+    public com.github.rudroid.activities.util.c f5439y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final String f5440z;
+    public String f5440z;
 
     public h0(si.g gVar, ml.m mVar, si.e eVar, si.i iVar, ri.a aVar, com.github.rudroid.activities.util.c cVar, oa.m mVar2, a1 a1Var) {
         k71.k.g(gVar, "observeWorkflowRunsUseCase");

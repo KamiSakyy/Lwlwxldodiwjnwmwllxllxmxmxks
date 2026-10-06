@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nz implements aaShadow.w0 {
     public static final hz Companion = new hz();
-    public final String r;
-    public final aa.u0 s;
+    public String r;
+    public aa.u0 s;
 
     public nz(aa.u0 u0Var, String str) {
         k71.k.g(str, "query");

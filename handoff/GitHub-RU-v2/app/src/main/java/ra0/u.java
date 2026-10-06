@@ -13,10 +13,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements w0 {
     public static final n Companion = new n();
-    public final String r;
-    public final String s;
-    public final aa1.b t;
-    public final aa1.b u;
+    public String r;
+    public String s;
+    public aa1.b t;
+    public aa1.b u;
 
     public u(u0 u0Var, String str, String str2) {
         k71.k.g(str, "login");

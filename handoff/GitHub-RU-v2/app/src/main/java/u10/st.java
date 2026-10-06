@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class st {
-    public final String a;
-    public final boolean b;
-    public final pt c;
-    public final String d;
+    public String a;
+    public boolean b;
+    public pt c;
+    public String d;
 
     public st(String str, boolean z, pt ptVar, String str2) {
         this.a = str;

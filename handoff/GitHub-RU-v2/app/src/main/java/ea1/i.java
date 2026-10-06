@@ -2,7 +2,7 @@ package ea1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i extends n {
-    public final int a;
+    public int a;
     public final /* synthetic */ int b;
 
     public i(int i, int i2) {

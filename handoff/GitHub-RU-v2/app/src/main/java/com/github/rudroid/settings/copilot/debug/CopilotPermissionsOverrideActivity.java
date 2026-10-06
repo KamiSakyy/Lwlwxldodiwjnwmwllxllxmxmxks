@@ -6,7 +6,7 @@ import androidx.lifecycle.l1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CopilotPermissionsOverrideActivity extends c0 {
     public static final a Companion = new a();
-    public final l1 t0;
+    public l1 t0;
 
     public static final class a {
     }

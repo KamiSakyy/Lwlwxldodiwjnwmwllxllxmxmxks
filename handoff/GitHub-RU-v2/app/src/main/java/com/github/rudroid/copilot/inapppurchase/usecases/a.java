@@ -4,7 +4,7 @@ package com.github.rudroid.copilot.inapppurchase.usecases;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final com.github.rudroid.copilot.inapppurchase.billingclient.l f9745a;
+    public com.github.rudroid.copilot.inapppurchase.billingclient.l f9745a;
 
     public a(com.github.rudroid.copilot.inapppurchase.billingclient.l lVar) {
         k71.k.g(lVar, "cachedForUserBillingClientFactory");

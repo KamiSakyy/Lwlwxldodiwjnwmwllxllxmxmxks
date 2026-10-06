@@ -6,11 +6,11 @@ import m10.oc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final String a;
-    public final oc b;
-    public final String c;
-    public final b d;
-    public final String e;
+    public String a;
+    public oc b;
+    public String c;
+    public b d;
+    public String e;
 
     public c(String str, oc ocVar, String str2, b bVar, String str3) {
         this.a = str;

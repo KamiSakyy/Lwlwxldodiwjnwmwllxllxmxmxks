@@ -2,8 +2,8 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h1 {
-    public final String a;
-    public final tt0.f b;
+    public String a;
+    public tt0.f b;
 
     public h1(String str, tt0.f fVar) {
         this.a = str;

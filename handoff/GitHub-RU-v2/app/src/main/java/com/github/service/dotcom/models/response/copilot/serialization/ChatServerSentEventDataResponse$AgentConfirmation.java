@@ -14,10 +14,10 @@ import x61.s;
 public final class ChatServerSentEventDataResponse$AgentConfirmation extends c {
     public static final Companion Companion = new Companion();
     public static final h[] e = {w.s(i.r, new hz.e(15)), null, null, null};
-    public final hz.i a;
-    public final String b;
-    public final String c;
-    public final kotlinx.serialization.json.c d;
+    public hz.i a;
+    public String b;
+    public String c;
+    public kotlinx.serialization.json.c d;
 
     public static final class Companion {
         public final KSerializer serializer() {

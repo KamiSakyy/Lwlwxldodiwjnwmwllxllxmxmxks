@@ -7,22 +7,22 @@ import java.util.List;
 public final class j0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f18379a;
+    public String f18379a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final il.s f18380b;
+    public il.s f18380b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final b.f f18381c;
+    public b.f f18381c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final k0 f18382d;
+    public k0 f18382d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f18383e;
+    public boolean f18383e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final List f18384f;
+    public List f18384f;
 
     public j0(String str, il.s sVar, b.f fVar, k0 k0Var, boolean z10, List list) {
         this.f18379a = str;

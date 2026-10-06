@@ -2,14 +2,14 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w4 {
-    public final String a;
-    public final hc0.j2 b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final d4 g;
-    public final boolean h;
+    public String a;
+    public hc0.j2 b;
+    public String c;
+    public int d;
+    public String e;
+    public String f;
+    public d4 g;
+    public boolean h;
 
     public w4(String str, hc0.j2 j2Var, String str2, int i, String str3, String str4, d4 d4Var, boolean z) {
         this.a = str;

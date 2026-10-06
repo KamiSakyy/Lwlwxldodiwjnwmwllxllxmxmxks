@@ -1,5 +1,6 @@
 package aa;
 
+import a0.s0;
 import com.apollographql.apollo.exception.ApolloException;
 import java.util.List;
 import java.util.Map;
@@ -9,28 +10,28 @@ import java.util.UUID;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final UUID f643a;
+    public UUID f643a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final s0 f644b;
+    public s0 f644b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final r0 f645c;
+    public r0 f645c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final List f646d;
+    public List f646d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final ApolloException f647e;
+    public ApolloException f647e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Map f648f;
+    public Map f648f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final g0 f649g;
+    public g0 f649g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final boolean f650h;
+    public boolean f650h;
 
     public f(UUID uuid, s0 s0Var, r0 r0Var, List list, ApolloException apolloException, Map map, g0 g0Var, boolean z10) {
         this.f643a = uuid;

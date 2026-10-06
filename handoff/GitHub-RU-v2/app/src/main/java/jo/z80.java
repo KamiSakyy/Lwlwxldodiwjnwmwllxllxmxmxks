@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z80 {
-    public final String a;
-    public final d90 b;
+    public String a;
+    public d90 b;
 
     public z80(String str, d90 d90Var) {
         this.a = str;

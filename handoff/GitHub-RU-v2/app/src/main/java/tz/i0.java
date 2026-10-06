@@ -2,11 +2,11 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 {
-    public final String a;
-    public final s1 b;
-    public final r1 c;
-    public final l0 d;
-    public final k0 e;
+    public String a;
+    public s1 b;
+    public r1 c;
+    public l0 d;
+    public k0 e;
 
     public i0(String str, s1 s1Var, r1 r1Var, l0 l0Var, k0 k0Var) {
         k71.k.g(str, "__typename");

@@ -6,7 +6,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends n1 {
-    public final vf u;
+    public vf u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(vf vfVar, SearchAndFilterBaseFragment searchAndFilterBaseFragment) {
@@ -16,5 +16,6 @@ public final class c extends n1 {
         vfVar.P0(searchAndFilterBaseFragment);
     }
 
+    public Object a(Object p1, Object p2) { return null; }
     public Object a(Object p1, Object p2) { return null; }
 }

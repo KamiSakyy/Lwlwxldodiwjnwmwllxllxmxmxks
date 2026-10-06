@@ -43,4 +43,5 @@ public final class b extends f {
                 break;
         }
     }
+    public Object a(float p1) { return null; }
 }

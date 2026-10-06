@@ -8,8 +8,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements d0, Parcelable {
     public static final Parcelable.Creator<l> CREATOR = new c(7);
-    public final String r;
-    public final Object s;
+    public String r;
+    public Object s;
 
     public l(String str, List list) {
         k71.k.g(str, "id");

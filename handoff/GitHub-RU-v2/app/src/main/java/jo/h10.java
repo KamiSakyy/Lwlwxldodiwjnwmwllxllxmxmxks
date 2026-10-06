@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h10 implements aaShadow.v0 {
-    public final n10Shadow a;
-    public final String b;
-    public final String c;
+    public n10Shadow a;
+    public String b;
+    public String c;
 
     public h10(n10Shadow n10Var, String str, String str2) {
         this.a = n10Var;

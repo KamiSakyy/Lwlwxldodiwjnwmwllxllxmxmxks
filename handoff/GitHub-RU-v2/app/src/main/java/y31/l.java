@@ -26,27 +26,27 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l extends LinearLayout {
-    public final LinkedHashSet A;
+    public LinkedHashSet A;
     public ColorStateList B;
     public PorterDuff.Mode C;
     public int D;
     public ImageView.ScaleType E;
     public View.OnLongClickListener F;
     public CharSequence G;
-    public final AppCompatTextView H;
+    public AppCompatTextView H;
     public boolean I;
     public EditText J;
-    public final AccessibilityManager K;
+    public AccessibilityManager K;
     public AccessibilityManager.TouchExplorationStateChangeListener L;
-    public final j M;
-    public final TextInputLayout r;
-    public final FrameLayout s;
-    public final CheckableImageButton t;
+    public j M;
+    public TextInputLayout r;
+    public FrameLayout s;
+    public CheckableImageButton t;
     public ColorStateList u;
     public PorterDuff.Mode v;
     public View.OnLongClickListener w;
-    public final CheckableImageButton x;
-    public final i3.e y;
+    public CheckableImageButton x;
+    public i3.e y;
     public int z;
 
     /* JADX WARN: Multi-variable type inference failed */

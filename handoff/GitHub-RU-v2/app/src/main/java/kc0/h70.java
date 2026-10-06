@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h70 implements aaShadow.n0 {
     public static final d70 Companion = new d70();
-    public final ArrayList r;
-    public final aa.u0 s;
+    public ArrayList r;
+    public aa.u0 s;
 
     public h70(aa.u0 u0Var, ArrayList arrayList) {
         this.r = arrayList;

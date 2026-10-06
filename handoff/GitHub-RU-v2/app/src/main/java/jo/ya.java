@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ya {
-    public final wa a;
-    public final String b;
-    public final String c;
-    public final String d;
+    public wa a;
+    public String b;
+    public String c;
+    public String d;
 
     public ya(wa waVar, String str, String str2, String str3) {
         this.a = waVar;

@@ -14,13 +14,13 @@ import kotlinx.serialization.KSerializer;
 public final class WorkflowRunsRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f5117r;
+    public String f5117r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f5118s;
+    public String f5118s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f5119t;
+    public String f5119t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<WorkflowRunsRoute> CREATOR = new a();
 

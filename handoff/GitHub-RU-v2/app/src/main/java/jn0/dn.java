@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dn implements aaShadow.n0 {
     public static final ym Companion = new ym();
-    public final String r;
-    public final pz0.hx s;
+    public String r;
+    public pz0.hx s;
 
     public dn(String str, pz0.hx hxVar) {
         k71.k.g(str, "subjectId");

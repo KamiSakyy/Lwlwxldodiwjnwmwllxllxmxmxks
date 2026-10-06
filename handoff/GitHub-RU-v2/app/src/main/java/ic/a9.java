@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class a9 extends k5.f {
-    public final FrameLayout N;
-    public final ImageView O;
-    public final TextView P;
-    public final ProgressBar Q;
+    public FrameLayout N;
+    public ImageView O;
+    public TextView P;
+    public ProgressBar Q;
 
     public a9(i4 i4Var, View view, FrameLayout frameLayout, ImageView imageView, TextView textView, ProgressBar progressBar) {
         super(0, view, i4Var);

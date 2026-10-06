@@ -4,14 +4,14 @@ import gn0.hn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k {
-    public final String a;
-    public final hn b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final u f;
-    public final boolean g;
-    public final String h;
+    public String a;
+    public hn b;
+    public String c;
+    public int d;
+    public String e;
+    public u f;
+    public boolean g;
+    public String h;
 
     public k(String str, hn hnVar, String str2, int i, String str3, u uVar, boolean z, String str4) {
         this.a = str;

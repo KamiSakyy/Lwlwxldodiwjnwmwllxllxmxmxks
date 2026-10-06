@@ -21,7 +21,7 @@ import x61.r;
 public final class OrganizationFilter extends d {
     public static final w61.h[] w;
     public static final k x;
-    public final List v;
+    public List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<OrganizationFilter> CREATOR = new o(4);
 

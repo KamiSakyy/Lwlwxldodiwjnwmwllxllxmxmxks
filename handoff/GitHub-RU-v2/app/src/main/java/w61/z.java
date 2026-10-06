@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z implements Collection, l71.a {
-    public final short[] r;
+    public short[] r;
 
     @Override // java.util.Collection
     public final /* bridge */ /* synthetic */ boolean add(Object obj) {

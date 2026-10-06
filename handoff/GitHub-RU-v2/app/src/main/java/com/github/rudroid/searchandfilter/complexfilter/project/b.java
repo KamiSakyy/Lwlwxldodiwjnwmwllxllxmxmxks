@@ -9,7 +9,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends com.github.rudroid.searchandfilter.complexfilter.e0<o> {
-    public final SearchAndFilterBaseFragment f;
+    public SearchAndFilterBaseFragment f;
 
     public b(SearchAndFilterBaseFragment searchAndFilterBaseFragment) {
         this.f = searchAndFilterBaseFragment;

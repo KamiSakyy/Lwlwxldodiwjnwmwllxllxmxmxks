@@ -13,10 +13,10 @@ import l01.z;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ProjectFieldOption$SingleOption implements z {
-    public final String r;
-    public final String s;
-    public final String t;
-    public final int u;
+    public String r;
+    public String s;
+    public String t;
+    public int u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectFieldOption$SingleOption> CREATOR = new c(15);
     public static final ProjectFieldOption$SingleOption v = new ProjectFieldOption$SingleOption(0, "", "", "");

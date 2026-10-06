@@ -7,12 +7,12 @@ import yz0.v1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements v1 {
-    public final c1 a;
-    public final String b;
-    public final Avatar c;
-    public final String d;
-    public final String e;
-    public final String f;
+    public c1 a;
+    public String b;
+    public Avatar c;
+    public String d;
+    public String e;
+    public String f;
 
     public d(c1 c1Var) {
         k71.k.g(c1Var, "fragment");

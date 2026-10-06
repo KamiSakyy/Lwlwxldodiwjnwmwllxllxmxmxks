@@ -24,9 +24,9 @@ import y71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements a, b, j {
-    public final z9.b a;
-    public final com.github.rudroid.common.e b;
-    public final boolean c;
+    public z9.b a;
+    public com.github.rudroid.common.e b;
+    public boolean c;
 
     public i(z9.b bVar, q10.b bVar2, com.github.rudroid.common.e eVar, boolean z) {
         k.g(bVar2, "cacheKeyResolver");

@@ -13,9 +13,9 @@ import v71.v;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final m a;
-    public final h b;
-    public final v c;
+    public m a;
+    public h b;
+    public v c;
 
     public d(m mVar, h hVar, v vVar) {
         k.g(mVar, "userManager");

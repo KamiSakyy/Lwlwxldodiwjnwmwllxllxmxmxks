@@ -10,8 +10,8 @@ import m10.ui;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n implements w0 {
     public static final j Companion = new j();
-    public final String r;
-    public final ui s;
+    public String r;
+    public ui s;
 
     public n(String str, ui uiVar) {
         this.r = str;

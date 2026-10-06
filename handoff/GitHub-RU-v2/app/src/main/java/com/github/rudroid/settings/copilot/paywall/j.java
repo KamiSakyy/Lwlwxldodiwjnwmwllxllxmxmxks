@@ -16,7 +16,7 @@ public final class j extends com.github.rudroid.activities.util.e<m, b> {
     }
 
     public static final class b {
-        public final boolean a;
+        public boolean a;
 
         public b(boolean z) {
             this.a = z;

@@ -10,7 +10,7 @@ import z01.v;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final g a;
+    public g a;
 
     public c(g gVar) {
         k.g(gVar, "firebaseService");

@@ -6,7 +6,7 @@ import com.github.rudroid.copilot.h1;
 final class n0<T> implements o0<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f9365a;
+    public Object f9365a;
 
     public n0(Object obj) {
         this.f9365a = obj;

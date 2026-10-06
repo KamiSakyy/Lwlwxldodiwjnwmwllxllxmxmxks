@@ -11,15 +11,15 @@ import yz0.d3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final d3 e;
-    public final String f;
-    public final ZonedDateTime g;
-    public final PullRequestState h;
-    public final StatusState i;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public d3 e;
+    public String f;
+    public ZonedDateTime g;
+    public PullRequestState h;
+    public StatusState i;
 
     public e(String str, String str2, String str3, int i, d3 d3Var, String str4, ZonedDateTime zonedDateTime, PullRequestState pullRequestState, StatusState statusState) {
         k.g(str, "id");
@@ -70,5 +70,5 @@ public final class e {
         o.append(")");
         return o.toString();
     }
-    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public static Object c(Object p1, Object p2, Object p3) { return null; }
 }

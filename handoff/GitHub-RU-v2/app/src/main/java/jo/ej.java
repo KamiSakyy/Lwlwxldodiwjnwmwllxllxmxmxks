@@ -2,12 +2,12 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ej {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final eq.g e;
-    public final qx.z f;
+    public String a;
+    public String b;
+    public String c;
+    public boolean d;
+    public eq.g e;
+    public qx.z f;
 
     public ej(String str, String str2, String str3, boolean z, eq.g gVar, qx.z zVar) {
         this.a = str;

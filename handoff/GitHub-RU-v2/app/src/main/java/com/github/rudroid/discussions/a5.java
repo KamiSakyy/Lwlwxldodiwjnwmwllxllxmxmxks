@@ -6,39 +6,39 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class a5 extends za implements le.a {
-    public final String A;
-    public final String B;
-    public final ZonedDateTime C;
-    public final ZonedDateTime D;
-    public final boolean E;
-    public final yz0.z F;
-    public final boolean G;
-    public final yz0.x2 H;
-    public final boolean I;
-    public final boolean J;
-    public final boolean K;
-    public final CommentAuthorAssociation L;
+    public String A;
+    public String B;
+    public ZonedDateTime C;
+    public ZonedDateTime D;
+    public boolean E;
+    public yz0.z F;
+    public boolean G;
+    public yz0.x2 H;
+    public boolean I;
+    public boolean J;
+    public boolean K;
+    public CommentAuthorAssociation L;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f11168t;
+    public String f11168t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f11169u;
+    public String f11169u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f11170v;
+    public String f11170v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final boolean f11171w;
+    public boolean f11171w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final boolean f11172x;
+    public boolean f11172x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f11173y;
+    public String f11173y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final Avatar f11174z;
+    public Avatar f11174z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a5(String str, String str2, String str3, boolean z10, boolean z11, String str4, Avatar avatar, String str5, String str6, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, boolean z12, yz0.z zVar, boolean z13, yz0.x2 x2Var, boolean z14, boolean z15, boolean z16, CommentAuthorAssociation commentAuthorAssociation) {

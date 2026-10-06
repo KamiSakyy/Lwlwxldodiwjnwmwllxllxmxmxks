@@ -6,10 +6,10 @@ import z01.h0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
     public static final b Companion = new b();
-    public final al.c a;
-    public final al.a b;
-    public final al.d c;
-    public final qj.a d;
+    public al.c a;
+    public al.a b;
+    public al.d c;
+    public qj.a d;
 
     public interface a {
         c d();

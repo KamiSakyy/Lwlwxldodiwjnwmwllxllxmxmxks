@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ct {
-    public final gt a;
-    public final String b;
+    public gt a;
+    public String b;
 
     public ct(gt gtVar, String str) {
         this.a = gtVar;

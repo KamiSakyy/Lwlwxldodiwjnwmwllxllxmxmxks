@@ -16,7 +16,7 @@ public final class c5 {
     public static final c5 t;
     public static final c5[] u;
     public static final /* synthetic */ c5[] v;
-    public final int r;
+    public int r;
 
     /* JADX INFO: Fake field, exist only in values array */
     c5 EF0;

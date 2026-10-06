@@ -5,7 +5,7 @@ import v41.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final e81.c a;
+    public e81.c a;
     public i b = null;
 
     public a(e81.c cVar) {

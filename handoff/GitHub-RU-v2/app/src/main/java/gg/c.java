@@ -18,12 +18,12 @@ import t71.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends m0 {
-    public final b.a d;
-    public final a e;
+    public b.a d;
+    public a e;
     public final int f = 1;
-    public final Calendar g;
-    public final ArrayList h;
-    public final ArrayList i;
+    public Calendar g;
+    public ArrayList h;
+    public ArrayList i;
 
     public interface a {
         void b();
@@ -78,4 +78,5 @@ public final class c extends m0 {
         k.f(b, "inflate(...)");
         return new b(b, this.d);
     }
+    public Object o(int p1) { return null; }
 }

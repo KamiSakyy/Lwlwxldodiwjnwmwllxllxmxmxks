@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class js {
-    public final String a;
-    public final ts b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final ss f;
+    public String a;
+    public ts b;
+    public String c;
+    public String d;
+    public String e;
+    public ss f;
 
     public js(String str, ts tsVar, String str2, String str3, String str4, ss ssVar) {
         this.a = str;

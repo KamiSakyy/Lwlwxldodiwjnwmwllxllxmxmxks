@@ -37,8 +37,8 @@ import java.util.WeakHashMap;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class MaterialDatePicker<S> extends DialogFragment {
-    public final LinkedHashSet J0;
-    public final LinkedHashSet K0;
+    public LinkedHashSet J0;
+    public LinkedHashSet K0;
     public int L0;
     public PickerFragment M0;
     public b N0;

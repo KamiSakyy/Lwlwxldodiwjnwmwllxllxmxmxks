@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gm {
-    public final String a;
-    public final fm b;
-    public final hc0.bj c;
-    public final ArrayList d;
-    public final String e;
+    public String a;
+    public fm b;
+    public hc0.bj c;
+    public ArrayList d;
+    public String e;
 
     public gm(String str, fm fmVar, hc0.bj bjVar, ArrayList arrayList, String str2) {
         this.a = str;

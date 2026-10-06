@@ -6,8 +6,8 @@ import v71.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final i a;
-    public final z b;
+    public i a;
+    public z b;
 
     public d(i iVar, z zVar) {
         k.g(iVar, "repository");

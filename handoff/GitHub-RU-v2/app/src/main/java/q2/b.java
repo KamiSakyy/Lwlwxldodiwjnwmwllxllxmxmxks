@@ -4,13 +4,13 @@ package q2;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f30821a;
+    public long f30821a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final long f30822b;
+    public long f30822b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f30823c;
+    public long f30823c;
 
     public b(long j10, long j11, long j12) {
         this.f30821a = j10;

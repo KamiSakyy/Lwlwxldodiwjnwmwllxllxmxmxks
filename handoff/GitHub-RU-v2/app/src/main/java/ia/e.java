@@ -10,7 +10,7 @@ public final class e {
     public ha.f f26156a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f26157b;
+    public ArrayList f26157b;
 
     public e(ha.f fVar) {
         this.f26156a = fVar;
@@ -18,5 +18,8 @@ public final class e {
     }
     public Object C(Object p1, Object p2) { return null; }
     public Object D(Object p1, Object p2) { return null; }
+    public Object v(Object p1, Object p2) { return null; }
+    public Object C(Object p1, Object p2) { return null; }
+    public Object D(Object p1, boolean p2) { return null; }
     public Object v(Object p1, Object p2) { return null; }
 }

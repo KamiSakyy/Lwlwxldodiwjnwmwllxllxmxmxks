@@ -18,7 +18,7 @@ public final class RepositorySortFilter extends d {
     public static final w61.h[] w;
     public static final v01.c x;
     public static final f y;
-    public final v01.c v;
+    public v01.c v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositorySortFilter> CREATOR = new o(14);
 

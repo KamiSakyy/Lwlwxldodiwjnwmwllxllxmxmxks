@@ -29,7 +29,7 @@ import x61.l;
 public final class c extends e implements d {
     public static final boolean e;
     public Context c;
-    public final ArrayList d;
+    public ArrayList d;
 
     static {
         e = Build.VERSION.SDK_INT < 29;

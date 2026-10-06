@@ -2,9 +2,9 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final String c;
+    public String a;
+    public boolean b;
+    public String c;
 
     public g1(String str, String str2, boolean z) {
         k71.k.g(str, "id");

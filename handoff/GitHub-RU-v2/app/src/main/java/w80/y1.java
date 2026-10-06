@@ -2,10 +2,10 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y1 {
-    public final String a;
-    public final w1 b;
-    public final String c;
-    public final String d;
+    public String a;
+    public w1 b;
+    public String c;
+    public String d;
 
     public y1(String str, w1 w1Var, String str2, String str3) {
         this.a = str;

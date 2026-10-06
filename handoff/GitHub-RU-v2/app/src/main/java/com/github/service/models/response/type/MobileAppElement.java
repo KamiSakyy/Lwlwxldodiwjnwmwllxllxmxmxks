@@ -12,7 +12,7 @@ public final class MobileAppElement {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MobileAppElement[] $VALUES;
     public static final j Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final MobileAppElement REPOSITORY_DISCUSSIONS_LIST_FILTER = new MobileAppElement("REPOSITORY_DISCUSSIONS_LIST_FILTER", 0, "REPOSITORY_DISCUSSIONS_LIST_FILTER");
     public static final MobileAppElement VIEWER_DISCUSSIONS_LIST_FILTER = new MobileAppElement("VIEWER_DISCUSSIONS_LIST_FILTER", 1, "VIEWER_DISCUSSIONS_LIST_FILTER");
     public static final MobileAppElement EXPLORE_BOTTOM_NAVIGATION = new MobileAppElement("EXPLORE_BOTTOM_NAVIGATION", 2, "EXPLORE_BOTTOM_NAVIGATION");

@@ -8,7 +8,7 @@ import x61.n;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final mj.b a;
+    public mj.b a;
 
     public e(mj.b bVar) {
         k.g(bVar, "commentMapper");

@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e90 {
-    public final String a;
-    public final y80 b;
+    public String a;
+    public y80 b;
 
     public e90(String str, y80 y80Var) {
         k71.k.g(str, "__typename");

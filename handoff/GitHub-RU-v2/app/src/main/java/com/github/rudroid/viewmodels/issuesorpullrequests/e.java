@@ -2,11 +2,11 @@ package com.github.rudroid.viewmodels.issuesorpullrequests;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final xi.a a;
-    public final zi.a b;
-    public final zk.j0 c;
-    public final zk.c1 d;
-    public final com.github.rudroid.activities.util.c e;
+    public xi.a a;
+    public zi.a b;
+    public zk.j0 c;
+    public zk.c1 d;
+    public com.github.rudroid.activities.util.c e;
 
     public e(xi.a aVar, zi.a aVar2, zk.j0 j0Var, zk.c1 c1Var, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(aVar, "aliveObserveIssueUseCase");

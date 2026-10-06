@@ -2,7 +2,7 @@ package j11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final Integer a;
+    public Integer a;
 
     public b(Integer num) {
         this.a = num;

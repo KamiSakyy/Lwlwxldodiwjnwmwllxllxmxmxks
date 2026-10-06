@@ -4,13 +4,13 @@ package x9;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final a51.a f34002a;
+    public a51.a f34002a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final l f34003b;
+    public l f34003b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f34004c;
+    public String f34004c;
 
     public /* synthetic */ g(f fVar) {
         this.f34003b = (l) fVar.f34001t;

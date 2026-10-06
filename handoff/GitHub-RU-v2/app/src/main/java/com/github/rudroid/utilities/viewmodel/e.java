@@ -12,8 +12,8 @@ public interface e<T> {
     }
 
     public static final class b<T> implements e<T> {
-        public final y1 r;
-        public final i1 s;
+        public y1 r;
+        public i1 s;
 
         public b() {
             com.github.rudroid.utilities.viewmodel.a.Companion.getClass();

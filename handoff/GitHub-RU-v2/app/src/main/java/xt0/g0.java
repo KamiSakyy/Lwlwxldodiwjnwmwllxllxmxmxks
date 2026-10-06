@@ -2,8 +2,8 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 {
-    public final String a;
-    public final wq0.a b;
+    public String a;
+    public wq0.a b;
 
     public g0(String str, wq0.a aVar) {
         k71.k.g(str, "__typename");
