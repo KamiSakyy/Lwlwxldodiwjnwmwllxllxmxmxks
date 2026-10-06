@@ -45,6 +45,8 @@ public final class SyncEngine {
     private static final int MAX_MESSAGES = 200;
     /** Пауза после ошибки квоты Google, чтобы не добивать лимит запросами. */
     private volatile long throttleUntil;
+    /** Подряд идущие ошибки квоты — пауза растёт 60с → 120с → … → 5мин. */
+    private volatile int quotaFails;
     public static final String SUBJECT_INVITE_MARKER = "X-MailGram-PublicKey:";
     public static final String PREKEY_MARKER = "X-MailGram-PreKey:";
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
@@ -128,7 +130,9 @@ public final class SyncEngine {
                 String em = String.valueOf(e.getMessage()).toLowerCase(Locale.US);
                 if (em.contains("quota") || em.contains("rate limit") || em.contains("ratelimit")
                         || em.contains("429")) {
-                    throttleUntil = System.currentTimeMillis() + 60_000L;
+                    quotaFails++;
+                    long pause = Math.min(300_000L, 60_000L * quotaFails);
+                    throttleUntil = System.currentTimeMillis() + pause;
                 }
                 com.mailgram.app.util.CrashLog.record(app, e);
                 r.ok = false;
@@ -161,6 +165,20 @@ public final class SyncEngine {
 
     // ---------------- синхронизация ----------------
 
+    /** Сохраняем закладку History API для следующей синхронизации. */
+    private void saveHistory(long newId) {
+        try {
+            if (newId > 0) {
+                Prefs.setHistoryId(app, newId);
+            } else if (Prefs.historyId(app) == 0L) {
+                long h = GmailApi.profileHistoryId(Auth.accessTokenFresh(app));
+                if (h > 0) Prefs.setHistoryId(app, h);
+            }
+        } catch (Exception e) {
+            Log.i(TAG, "не удалось обновить historyId: " + e.getMessage());
+        }
+    }
+
     /** Запрос Gmail: наши письма + вся почта известных собеседников (не более 8). */
     private static String buildQuery(Store store) {
         StringBuilder q = new StringBuilder(QUERY_BASE);
@@ -187,22 +205,42 @@ public final class SyncEngine {
             if (!me.isEmpty()) Auth.setAccount(app, me);
         }
 
-        List<String> ids = GmailApi.listMessageIds(token, buildQuery(store), MAX_MESSAGES);
+        // History API: берём только изменённые письма (2 юнита), поиск q= — лишь первый раз
+        long start = Prefs.historyId(app);
+        final long[] newH = {0L};
+        List<String> ids;
+        if (start > 0) {
+            try {
+                ids = GmailApi.historyChangedIds(token, start, newH);
+            } catch (java.io.IOException he) {
+                Log.i(TAG, "History API недоступен, разовый полный проход: " + he.getMessage());
+                ids = GmailApi.listMessageIds(token, buildQuery(store), MAX_MESSAGES);
+            }
+        } else {
+            ids = GmailApi.listMessageIds(token, buildQuery(store), MAX_MESSAGES);
+        }
         List<String> unknown = new ArrayList<>();
         for (String id : ids) {
             if (!store.hasGmailId(id)) unknown.add(id);
         }
         result.scanned = ids.size();
-        Log.i(TAG, "писем найдено: " + ids.size() + ", новых: " + unknown.size());
-        if (unknown.isEmpty()) return;
+        Log.i(TAG, "изменений: " + ids.size() + ", новых: " + unknown.size());
+        saveHistory(newH[0]);
+        if (unknown.isEmpty()) {
+            quotaFails = 0;
+            return;
+        }
+        // защита квоты: не больше 40 писем за цикл, остальные — следующим
+        if (unknown.size() > 40) unknown = new ArrayList<>(unknown.subList(0, 40));
 
+        // batchGet: вся пачка писем одним запросом
+        List<GmailApi.Mail> mails = GmailApi.batchGet(token, unknown);
         List<Future<?>> futures = new ArrayList<>();
-        for (String id : unknown) {
-            final String messageId = id;
+        for (GmailApi.Mail mailItem : mails) {
+            final GmailApi.Mail mail = mailItem;
             final String myEmail = me;
             futures.add(pool.submit(() -> {
                 try {
-                    GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
                     Msg parsed = parseMail(store, mail, myEmail);
                     if (parsed == null) return;
                     boolean isNew = store.byMid(parsed.chat, parsed.mid) == null;
@@ -214,12 +252,12 @@ public final class SyncEngine {
                         }
                     }
                 } catch (SecurityException se) {
-                    Log.w(TAG, "не удалось расшифровать письмо " + messageId + ": " + se.getMessage());
+                    Log.w(TAG, "не удалось расшифровать письмо " + mail.id + ": " + se.getMessage());
                     synchronized (result) {
                         result.undecryptable++;
                     }
                 } catch (Exception e) {
-                    Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
+                    Log.w(TAG, "ошибка обработки письма " + mail.id + ": " + e);
                 }
             }));
         }

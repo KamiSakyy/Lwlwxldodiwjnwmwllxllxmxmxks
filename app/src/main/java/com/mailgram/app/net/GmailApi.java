@@ -71,10 +71,20 @@ public final class GmailApi {
     /** Полное письмо (заголовки + тело + метки). */
     public static Mail get(String token, String id) throws IOException {
         String json = Http.get(BASE + "/messages/" + id + "?format=full", token);
-        Mail mail = new Mail();
-        mail.id = id;
         try {
-            JSONObject obj = new JSONObject(json);
+            return parseMessage(new JSONObject(json), id);
+        } catch (IOException e) {
+            throw e;
+        } catch (Exception e) {
+            throw new IOException("не удалось разобрать письмо " + id + ": " + e.getMessage(), e);
+        }
+    }
+
+    /** Один парсер на messages.get и messages.batchGet — ответы идентичны. */
+    private static Mail parseMessage(JSONObject obj, String fallbackId) throws IOException {
+        Mail mail = new Mail();
+        mail.id = obj.optString("id", fallbackId);
+        {
             mail.threadId = obj.optString("threadId", null);
             mail.internalDate = obj.optLong("internalDate", 0L);
             JSONArray labels = obj.optJSONArray("labelIds");
@@ -104,10 +114,84 @@ public final class GmailApi {
                 String body = extractText(payload);
                 mail.body = body == null ? "" : body;
             }
-        } catch (Exception e) {
-            throw new IOException("не удалось разобрать письмо " + id + ": " + e.getMessage(), e);
         }
         return mail;
+    }
+
+    /** Текущий historyId ящика — «закладка» для History API (users.me.getProfile, 1 юнит). */
+    public static long profileHistoryId(String token) throws IOException {
+        String json = Http.get(BASE + "/profile", token);
+        try {
+            return new JSONObject(json).optLong("historyId", 0L);
+        } catch (Exception e) {
+            throw new IOException("не удалось разобрать профиль: " + e.getMessage(), e);
+        }
+    }
+
+    /**
+     * History API (users.me.history): только письма, у которых с startHistoryId
+     * менялись метки (новые в INBOX). Стоимость — 2 юнита за запрос вместо
+     * дорогого поиска q=. Новый historyId возвращается в newHistoryOut[0].
+     */
+    public static List<String> historyChangedIds(String token, long startHistoryId, long[] newHistoryOut)
+            throws IOException {
+        List<String> ids = new ArrayList<>();
+        String pageToken = null;
+        do {
+            StringBuilder url = new StringBuilder(BASE).append("/history?startHistoryId=")
+                    .append(startHistoryId)
+                    .append("&historyTypes=labelAdded&labelId=INBOX&maxResults=500");
+            if (pageToken != null) url.append("&pageToken=").append(pageToken);
+            String json = Http.get(url.toString(), token);
+            try {
+                JSONObject obj = new JSONObject(json);
+                JSONArray arr = obj.optJSONArray("history");
+                if (arr != null) {
+                    for (int i = 0; i < arr.length(); i++) {
+                        JSONArray msgs = arr.getJSONObject(i).optJSONArray("messages");
+                        if (msgs == null) continue;
+                        for (int j = 0; j < msgs.length(); j++) {
+                            String id = msgs.getJSONObject(j).optString("id", null);
+                            if (id != null && !ids.contains(id)) ids.add(id);
+                        }
+                    }
+                }
+                pageToken = obj.optString("nextPageToken", null);
+                long h = obj.optLong("historyId", 0L);
+                if (h > 0 && newHistoryOut != null && newHistoryOut.length > 0) newHistoryOut[0] = h;
+            } catch (Exception e) {
+                throw new IOException("не удалось разобрать историю: " + e.getMessage(), e);
+            }
+        } while (pageToken != null);
+        return ids;
+    }
+
+    /** messages.batchGet: пачка писем одним запросом (5 юнитов за письмо, один HTTP-запрос). */
+    public static List<Mail> batchGet(String token, List<String> ids) throws IOException {
+        List<Mail> out = new ArrayList<>();
+        for (int from = 0; from < ids.size(); from += 25) {
+            List<String> chunk = ids.subList(from, Math.min(ids.size(), from + 25));
+            JSONArray arr = new JSONArray();
+            for (String id : chunk) arr.put(id);
+            JSONObject req = new JSONObject();
+            try {
+                req.put("ids", arr);
+                req.put("format", "full");
+            } catch (Exception ignored) {
+            }
+            String json = Http.postJson(BASE + "/messages/batchGet", token, req.toString());
+            try {
+                JSONObject obj = new JSONObject(json);
+                JSONArray msgs = obj.optJSONArray("messages");
+                if (msgs == null) continue;
+                for (int i = 0; i < msgs.length(); i++) {
+                    out.add(parseMessage(msgs.getJSONObject(i), null));
+                }
+            } catch (Exception e) {
+                throw new IOException("не удалось разобрать batchGet: " + e.getMessage(), e);
+            }
+        }
+        return out;
     }
 
     /** Рекурсивно ищет text/plain (иначе text/html) в MIME-структуре. */

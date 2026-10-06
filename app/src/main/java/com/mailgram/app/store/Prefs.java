@@ -23,6 +23,15 @@ public final class Prefs {
         return p(ctx).getString("theme", THEME_DARK);
     }
 
+    /** Закладка History API: состояние ящика после последней синхронизации. */
+    public static long historyId(Context ctx) {
+        return p(ctx).getLong("history_id", 0L);
+    }
+
+    public static void setHistoryId(Context ctx, long value) {
+        p(ctx).edit().putLong("history_id", value).apply();
+    }
+
     /** Режим «Без шифрования»: все исходящие уходят открытым текстом (конверт v0). */
     public static boolean plainMode(Context ctx) {
         return p(ctx).getBoolean("plain_mode", false);

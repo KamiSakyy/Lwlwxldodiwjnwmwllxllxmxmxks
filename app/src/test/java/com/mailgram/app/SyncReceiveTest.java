@@ -90,25 +90,38 @@ public class SyncReceiveTest {
                 }
                 return new Http.Response(200, "{\"messages\":[" + ids + "]}");
             }
+            if (url.contains("/messages/batchGet")) {
+                StringBuilder ms = new StringBuilder();
+                for (String id : served.keySet()) {
+                    if (ms.length() > 0) ms.append(',');
+                    ms.append(mailJson(id));
+                }
+                requests.add("BATCH:" + served.size());
+                return new Http.Response(200, "{\"messages\":[" + ms + "]}");
+            }
             // точное совпадение id: префиксное contains("/messages/gm-v2") ловило и gm-v2b!
             java.util.regex.Matcher gm = java.util.regex.Pattern
                     .compile("/messages/([^/?]+)").matcher(url);
             if (gm.find()) {
                 String id = gm.group(1);
-                String mailBody = served.get(id);
-                if (mailBody == null) return new Http.Response(404, "{}");
+                if (!served.containsKey(id)) return new Http.Response(404, "{}");
                 requests.add("GET:" + id);
-                String data = b64url(mailBody.getBytes(StandardCharsets.UTF_8));
-                return new Http.Response(200, "{\"id\":\"" + id + "\",\"internalDate\":"
-                        + System.currentTimeMillis() + ",\"labelIds\":[\"INBOX\",\"UNREAD\"],"
-                        + "\"payload\":{\"mimeType\":\"text/plain\","
-                        + "\"headers\":[{\"name\":\"Subject\",\"value\":\"MailGram " + chatUid + "\"},"
-                        + "{\"name\":\"From\",\"value\":\"" + PEER + "\"},"
-                        + "{\"name\":\"To\",\"value\":\"" + ME + "\"}],"
-                        + "\"body\":{\"data\":\"" + data + "\"}}}");
+                return new Http.Response(200, mailJson(id));
             }
             return new Http.Response(200, "{}");
         };
+    }
+
+    /** JSON письма для фейкового Gmail (общий для get и batchGet). */
+    private String mailJson(String id) {
+        String data = b64url(served.get(id).getBytes(StandardCharsets.UTF_8));
+        return "{\"id\":\"" + id + "\",\"internalDate\":" + System.currentTimeMillis()
+                + ",\"labelIds\":[\"INBOX\",\"UNREAD\"],"
+                + "\"payload\":{\"mimeType\":\"text/plain\","
+                + "\"headers\":[{\"name\":\"Subject\",\"value\":\"MailGram " + chatUid + "\"},"
+                + "{\"name\":\"From\",\"value\":\"" + PEER + "\"},"
+                + "{\"name\":\"To\",\"value\":\"" + ME + "\"}],"
+                + "\"body\":{\"data\":\"" + data + "\"}}}";
     }
 
     @After
