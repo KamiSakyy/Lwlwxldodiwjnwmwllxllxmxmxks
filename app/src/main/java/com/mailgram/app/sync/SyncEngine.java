@@ -46,6 +46,9 @@ public final class SyncEngine {
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
     private static final Pattern PREKEY_LINE = Pattern.compile("X-MailGram-PreKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
 
+    /** Выключается JVM-тестами, чтобы интерфейс прогонялся без сети. На устройстве всегда false. */
+    public static volatile boolean disabled;
+
     private static volatile SyncEngine instance;
 
     private final Context app;
@@ -101,6 +104,7 @@ public final class SyncEngine {
 
     /** Запускает синхронизацию, если она ещё не идёт. */
     public void syncNow() {
+        if (disabled) return;
         if (!Auth.isSignedIn(app)) return;
         if (!running.compareAndSet(false, true)) {
             Log.d(TAG, "синхронизация уже идёт");

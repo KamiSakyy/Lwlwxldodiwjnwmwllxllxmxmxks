@@ -143,9 +143,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             finish();
             return;
         }
-        setContentView(R.layout.activity_chat);
-        Ui.applyWallpaper(this, R.id.chat_root);
-        Ui.applySystemBars(this, findViewById(R.id.chat_header), findViewById(R.id.input_bar));
+        Ui.safeSetContentView(this, R.layout.activity_chat);
+        Ui.safely(this, () -> {
+            Ui.applyWallpaper(this, R.id.chat_root);
+            Ui.applySystemBars(this, findViewById(R.id.chat_header), findViewById(R.id.input_bar));
+        });
         try {
             setUpScreen();
         } catch (Throwable error) {

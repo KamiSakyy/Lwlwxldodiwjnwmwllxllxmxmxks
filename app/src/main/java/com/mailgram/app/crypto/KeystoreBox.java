@@ -56,6 +56,13 @@ public final class KeystoreBox {
     }
 
     public static byte[] open(Context context, String sealed) throws Exception {
+        // Отладочный шов для JVM-тестов (Robolectric, без эмулятора): в отладочной
+        // сборке можно положить токен открытым текстом. В релизную сборку не попадает:
+        // BuildConfig.DEBUG в release=false. Формат: "testplain:" + base64url(байты).
+        if (com.mailgram.app.BuildConfig.DEBUG && sealed != null
+                && sealed.startsWith("testplain:")) {
+            return B64.bytes(sealed.substring("testplain:".length()));
+        }
         byte[] all = B64.bytes(sealed);
         if (all.length <= IV_LEN) throw new IllegalArgumentException("повреждённые данные сейфа");
         byte[] iv = new byte[IV_LEN];

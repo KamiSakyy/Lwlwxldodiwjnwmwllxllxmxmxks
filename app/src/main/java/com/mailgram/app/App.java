@@ -39,8 +39,20 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.i(TAG, "MailGram запускается; нативное ядро: " + NativeCrypto.isLoaded()
-                + (NativeCrypto.isLoaded() ? " (" + NativeCrypto.version() + ")" : " (" + NativeCrypto.loadError() + ")"));
+        // версия — нативный вызов: если символа нет, ошибка не должна ронять запуск
+        String nativeInfo;
+        if (NativeCrypto.isLoaded()) {
+            String v;
+            try {
+                v = NativeCrypto.version();
+            } catch (Throwable t) {
+                v = "ошибка версии: " + t.getClass().getSimpleName();
+            }
+            nativeInfo = "загружено (" + v + ")";
+        } else {
+            nativeInfo = "не загружено (" + NativeCrypto.loadError() + ")";
+        }
+        Log.i(TAG, "MailGram запускается; нативное ядро: " + nativeInfo);
         Notifier.ensureChannels(this);
         com.mailgram.app.util.CrashLog.install(this);
         applyTheme(themeMode(Prefs.theme(this)));

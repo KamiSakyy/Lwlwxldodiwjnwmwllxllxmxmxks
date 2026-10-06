@@ -56,10 +56,13 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             finish();
             return;
         }
-        setContentView(R.layout.activity_main);
-        Ui.applyWallpaper(this, R.id.main_root);
-        Ui.applySystemBars(this, findViewById(R.id.main_header), findViewById(R.id.bottom_nav));
-        Ui.padBottomForBars(findViewById(R.id.recycler_chats));
+        Ui.safeSetContentView(this, R.layout.activity_main);
+        // оформление экрана — необязательная часть: сбой не должен закрывать окно
+        Ui.safely(this, () -> {
+            Ui.applyWallpaper(this, R.id.main_root);
+            Ui.applySystemBars(this, findViewById(R.id.main_header), findViewById(R.id.bottom_nav));
+            Ui.padBottomForBars(findViewById(R.id.recycler_chats));
+        });
 
         try {
             setUpChatsList();

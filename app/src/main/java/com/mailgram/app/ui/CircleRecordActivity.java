@@ -62,10 +62,12 @@ public class CircleRecordActivity extends Activity implements SurfaceHolder.Call
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circle_record);
-        Ui.applySystemBars(this, null, null);
-        Ui.marginTopForBars(findViewById(R.id.circle_timer), 0);
-        Ui.liftBottomForBars(findViewById(R.id.circle_controls), 0);
+        Ui.safeSetContentView(this, R.layout.activity_circle_record);
+        Ui.safely(this, () -> {
+            Ui.applySystemBars(this, null, null);
+            Ui.marginTopForBars(findViewById(R.id.circle_timer), 0);
+            Ui.liftBottomForBars(findViewById(R.id.circle_controls), 0);
+        });
         try {
             setUpScreen();
         } catch (Throwable error) {

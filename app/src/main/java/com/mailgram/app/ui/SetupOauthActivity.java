@@ -35,10 +35,12 @@ public class SetupOauthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setup);
-        Ui.applySystemBars(this, findViewById(R.id.setup_toolbar),
-                findViewById(R.id.setup_root));
-        Ui.padBottomForBars(findViewById(R.id.setup_root));
+        Ui.safeSetContentView(this, R.layout.activity_setup);
+        Ui.safely(this, () -> {
+            Ui.applySystemBars(this, findViewById(R.id.setup_toolbar),
+                    findViewById(R.id.setup_root));
+            Ui.padBottomForBars(findViewById(R.id.setup_root));
+        });
         try {
             setUpScreen();
         } catch (Throwable error) {

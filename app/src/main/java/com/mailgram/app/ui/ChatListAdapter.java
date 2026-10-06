@@ -162,12 +162,22 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // сбой инфляции строки не должен закрывать приложение
         return new Holder(LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_chat, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull Holder h, int position) {
+        try {
+            bind(h, position);
+        } catch (Throwable error) {
+            // ошибка привязки одной строки — не повод закрывать приложение
+            com.mailgram.app.util.CrashLog.record(h.itemView.getContext(), error);
+        }
+    }
+
+    private void bind(@NonNull Holder h, int position) {
         final Chat chat = items.get(position);
         h.avatar.setTag("avatar_" + chat.uid);
         h.avatar.setTransitionName("avatar_" + chat.uid);

@@ -35,10 +35,12 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
-        Ui.applyWallpaper(this, R.id.settings_root);
-        Ui.applySystemBars(this, findViewById(R.id.settings_toolbar),
-                findViewById(R.id.settings_content));
+        Ui.safeSetContentView(this, R.layout.activity_settings);
+        Ui.safely(this, () -> {
+            Ui.applyWallpaper(this, R.id.settings_root);
+            Ui.applySystemBars(this, findViewById(R.id.settings_toolbar),
+                    findViewById(R.id.settings_content));
+        });
 
         try {
             setUpRows();

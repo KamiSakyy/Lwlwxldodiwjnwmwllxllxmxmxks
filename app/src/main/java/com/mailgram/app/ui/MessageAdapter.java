@@ -260,6 +260,15 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        try {
+            bindRow(holder, position);
+        } catch (Throwable error) {
+            // сбой привязки одного сообщения не должен закрывать приложение
+            com.mailgram.app.util.CrashLog.record(holder.itemView.getContext(), error);
+        }
+    }
+
+    private void bindRow(@NonNull RecyclerView.ViewHolder holder, int position) {
         Row row = rows.get(position);
         if (row.kind == TYPE_DAY || row.kind == TYPE_UNREAD) {
             DayHolder day = (DayHolder) holder;

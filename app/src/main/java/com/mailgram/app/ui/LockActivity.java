@@ -34,9 +34,11 @@ public class LockActivity extends AppCompatActivity {
             finish();
             return;
         }
-        setContentView(R.layout.activity_lock);
-        Ui.applyWallpaper(this, R.id.lock_root);
-        Ui.applySystemBars(this, findViewById(R.id.lock_root), findViewById(R.id.lock_root));
+        Ui.safeSetContentView(this, R.layout.activity_lock);
+        Ui.safely(this, () -> {
+            Ui.applyWallpaper(this, R.id.lock_root);
+            Ui.applySystemBars(this, findViewById(R.id.lock_root), findViewById(R.id.lock_root));
+        });
         try {
             setUpScreen();
         } catch (Throwable error) {

@@ -44,8 +44,14 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        Anim.springIn(findViewById(R.id.login_logo), 0.86f, 16f);
+        if (!Ui.safeSetContentView(this, R.layout.activity_login)) {
+            // разметка не встала — причина в «чёрном ящике», окно не закрываем
+            return;
+        }
+        View logoView = findViewById(R.id.login_logo);
+        if (logoView != null) {
+            Anim.springIn(logoView, 0.86f, 16f);
+        }
         Ui.applySystemBars(this, findViewById(R.id.login_root), findViewById(R.id.login_root));
         try {
             setUpScreen();

@@ -58,6 +58,21 @@ public final class Ui {
         };
     }
 
+    /**
+     * Инфляция экрана, которая не роняет приложение: любая ошибка разметки
+     * пишется в «чёрный ящик», окно остаётся живым (пустым), человек видит
+     * интерфейс вместо «приложение остановлено».
+     */
+    public static boolean safeSetContentView(android.app.Activity activity, int layoutRes) {
+        try {
+            activity.setContentView(layoutRes);
+            return true;
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(activity, error);
+            return false;
+        }
+    }
+
     /** Выполняет необязательную настройку интерфейса, не давая приложению закрыться. */
     public static void safely(Context context, Runnable body) {
         if (body == null) return;

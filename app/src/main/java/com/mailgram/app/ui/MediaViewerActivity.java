@@ -60,8 +60,9 @@ public class MediaViewerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_media_viewer);
-        Ui.applySystemBars(this, findViewById(R.id.viewer_toolbar), findViewById(R.id.viewer_bottom));
+        Ui.safeSetContentView(this, R.layout.activity_media_viewer);
+        Ui.safely(this, () ->
+                Ui.applySystemBars(this, findViewById(R.id.viewer_toolbar), findViewById(R.id.viewer_bottom)));
         handler = new android.os.Handler(getMainLooper());
         try {
             setUpScreen();
