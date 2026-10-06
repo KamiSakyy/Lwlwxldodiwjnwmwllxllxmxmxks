@@ -79,6 +79,18 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        final TextView fontValue = findViewById(R.id.settings_font_value);
+        fontValue.setText(fontScaleLabel(Prefs.fontScale(this)));
+        findViewById(R.id.row_font_scale).setOnClickListener(v -> {
+            int next = (Prefs.fontScale(this) + 1) % 4;
+            Prefs.setFontScale(this, next);
+            fontValue.setText(fontScaleLabel(next));
+        });
+
+        MaterialSwitch animations = findViewById(R.id.switch_animations);
+        animations.setChecked(Prefs.animations(this));
+        animations.setOnCheckedChangeListener((buttonView, isChecked) -> Prefs.setAnimations(this, isChecked));
+
         MaterialSwitch notifications = findViewById(R.id.switch_notifications);
         notifications.setChecked(Prefs.notifications(this));
         notifications.setOnCheckedChangeListener((buttonView, isChecked) ->
@@ -228,6 +240,19 @@ public class SettingsActivity extends AppCompatActivity {
                     Ui.toast(this, getString(R.string.setup_saved));
                 })
                 .show();
+    }
+
+    private String fontScaleLabel(int scale) {
+        switch (scale) {
+            case 0:
+                return getString(R.string.font_small);
+            case 2:
+                return getString(R.string.font_large);
+            case 3:
+                return getString(R.string.font_huge);
+            default:
+                return getString(R.string.font_normal);
+        }
     }
 
     private void logoutDialog() {

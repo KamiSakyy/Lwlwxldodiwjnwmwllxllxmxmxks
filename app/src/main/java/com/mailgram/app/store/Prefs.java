@@ -68,6 +68,41 @@ public final class Prefs {
         p(ctx).edit().putString("name:" + email.toLowerCase(java.util.Locale.US), name).apply();
     }
 
+    /** Размер текста сообщений: 0 — мелкий, 1 — обычный, 2 — крупный. */
+    public static int fontScale(Context ctx) {
+        return p(ctx).getInt("font_scale", 1);
+    }
+
+    public static void setFontScale(Context ctx, int scale) {
+        p(ctx).edit().putInt("font_scale", Math.max(0, Math.min(2, scale))).apply();
+    }
+
+    public static float fontScaleFactor(Context ctx) {
+        switch (fontScale(ctx)) {
+            case 0: return 0.88f;
+            case 2: return 1.18f;
+            default: return 1.0f;
+        }
+    }
+
+    /** Анимации интерфейса. */
+    public static boolean animations(Context ctx) {
+        return p(ctx).getBoolean("animations", true);
+    }
+
+    public static void setAnimations(Context ctx, boolean on) {
+        p(ctx).edit().putBoolean("animations", on).apply();
+    }
+
+    /** Пузыри: 0 — как в iOS (со «хвостиком»), 1 — сжатые (радиус 14). */
+    public static int bubbleStyle(Context ctx) {
+        return p(ctx).getInt("bubble_style", 0);
+    }
+
+    public static void setBubbleStyle(Context ctx, int style) {
+        p(ctx).edit().putInt("bubble_style", style).apply();
+    }
+
     public static long lastSyncAt(Context ctx) {
         return p(ctx).getLong("last_sync", 0L);
     }

@@ -20,7 +20,11 @@ public final class PhotoUtil {
     }
 
     public static byte[] compressForMail(Context ctx, Uri uri) throws IOException {
-        byte[] raw = readAll(ctx, uri);
+        return compressBytes(readAll(ctx, uri));
+    }
+
+    /** То же самое, но если изображение уже в памяти (например, снимок с камеры). */
+    public static byte[] compressBytes(byte[] raw) throws IOException {
         BitmapFactory.Options bounds = new BitmapFactory.Options();
         bounds.inJustDecodeBounds = true;
         BitmapFactory.decodeByteArray(raw, 0, raw.length, bounds);

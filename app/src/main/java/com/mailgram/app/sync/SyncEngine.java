@@ -308,13 +308,45 @@ public final class SyncEngine {
         try {
             JSONObject payload = new JSONObject(env.payload);
             String type = payload.optString("t", "text");
+
+            // Служебные конверты меняют уже существующее сообщение и в ленту не попадают.
+            if ("react".equals(type) || "edit".equals(type) || "del".equals(type)) {
+                if (!outgoing) {
+                    String targetMid = payload.optString("mid", "");
+                    if ("react".equals(type)) {
+                        store.applyReaction(chat.uid, targetMid, payload.optString("e", ""));
+                    } else if ("edit".equals(type)) {
+                        store.applyEdit(chat.uid, targetMid, payload.optString("b", ""));
+                    } else {
+                        store.applyDelete(chat.uid, targetMid);
+                    }
+                }
+                store.markGmailId(mail.id);
+                return null;
+            }
+
             msg.type = type;
-            if ("image".equals(type)) {
-                msg.imageB64 = payload.optString("b", "");
-                String caption = payload.optString("c", "");
-                if (!caption.isEmpty()) msg.text = caption;
-            } else {
+            msg.mediaB64 = payload.optString("b", "");
+            msg.mediaMime = payload.optString("m", "");
+            msg.durationMs = payload.optLong("d", 0L);
+            msg.fileName = payload.optString("n", "");
+            msg.fileSize = payload.optLong("s", 0L);
+            msg.round = payload.optBoolean("rnd", false);
+            msg.replyMid = payload.optString("r", "");
+            msg.replyPreview = payload.optString("rp", "");
+            org.json.JSONArray wave = payload.optJSONArray("w");
+            if (wave != null) {
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < wave.length(); i++) {
+                    if (i > 0) sb.append(',');
+                    sb.append(wave.optInt(i, 0));
+                }
+                msg.wave = sb.toString();
+            }
+            if ("text".equals(type) || "invite".equals(type)) {
                 msg.text = payload.optString("b", "");
+            } else {
+                msg.text = payload.optString("c", "");
             }
         } catch (Exception e) {
             msg.text = env.payload;
@@ -326,25 +358,177 @@ public final class SyncEngine {
 
     /** Отправляет текст. Требует известного открытого ключа собеседника. */
     public void sendText(final Chat chat, final String text, final SendCallback callback) {
+        sendText(chat, text, null, null, callback);
+    }
+
+    /** Отправляет текст ответом на сообщение (reply на сообщение в ленте). */
+    public void sendText(final Chat chat, final String text, final Msg replyTo, final SendCallback callback) {
+        sendText(chat, text, replyTo == null ? null : replyTo.mid, replyQuote(replyTo), callback);
+    }
+
+    private void sendText(final Chat chat, final String text, final String replyMid,
+                          final String replyPreview, final SendCallback callback) {
         JSONObject payload = new JSONObject();
         try {
             payload.put("t", "text");
             payload.put("b", text);
+            putReply(payload, replyMid, replyPreview);
         } catch (Exception ignored) {
         }
-        sendPayload(chat, payload.toString(), "text", text, null, callback);
+        Msg local = newLocal(chat, "text", text, null, "", 0L, "", 0L, false, "", replyMid, replyPreview);
+        sendPayload(chat, local, payload.toString(), callback);
     }
 
     /** Отправляет изображение (уже сжатый JPEG). */
     public void sendImage(final Chat chat, final byte[] jpeg, final String caption, final SendCallback callback) {
+        sendImage(chat, jpeg, caption, null, callback);
+    }
+
+    public void sendImage(final Chat chat, final byte[] jpeg, final String caption, final Msg replyTo,
+                          final SendCallback callback) {
+        sendMedia(chat, "image", jpeg, "image/jpeg", 0L, "", caption,
+                false, replyTo == null ? null : replyTo.mid, replyQuote(replyTo), callback);
+    }
+
+    /**
+     * Отправляет вложение: фото, видео, кружок, голосовое или файл.
+     * Всё шифруется тем же сессионным ключом — почта видит только base64-конверт.
+     */
+    public void sendMedia(final Chat chat, final String type, final byte[] data, final String mime,
+                          final long durationMs, final String fileName, final String caption,
+                          final boolean round, final String replyMid, final String replyPreview,
+                          final SendCallback callback) {
         JSONObject payload = new JSONObject();
         try {
-            payload.put("t", "image");
-            payload.put("b", android.util.Base64.encodeToString(jpeg, android.util.Base64.NO_WRAP));
-            payload.put("c", caption == null ? "" : caption);
+            payload.put("t", type);
+            payload.put("b", android.util.Base64.encodeToString(data, android.util.Base64.NO_WRAP));
+            if (mime != null && !mime.isEmpty()) payload.put("m", mime);
+            if (durationMs > 0) payload.put("d", durationMs);
+            if (fileName != null && !fileName.isEmpty()) {
+                payload.put("n", fileName);
+                payload.put("s", data.length);
+            }
+            if (caption != null && !caption.isEmpty()) payload.put("c", caption);
+            if (round) payload.put("rnd", true);
+            putReply(payload, replyMid, replyPreview);
         } catch (Exception ignored) {
         }
-        sendPayload(chat, payload.toString(), "image", caption == null ? "" : caption, jpeg, callback);
+        String preview = caption == null ? "" : caption;
+        Msg local = newLocal(chat, type, preview, data, mime, durationMs, fileName, data.length,
+                round, "", replyMid, replyPreview);
+        sendPayload(chat, local, payload.toString(), callback);
+    }
+
+    /**
+     * Голосовое сообщение: аудио + список амплитуд для волны. Амплитуды уходят
+     * в шифрованном конверте (поле w), чтобы собеседник видел ту же волну.
+     */
+    public void sendVoice(final Chat chat, final byte[] audio, final long durationMs, final int[] amplitudes,
+                          final String replyMid, final String replyPreview, final SendCallback callback) {
+        JSONObject payload = new JSONObject();
+        String wave = joinWave(amplitudes);
+        try {
+            payload.put("t", "voice");
+            payload.put("b", android.util.Base64.encodeToString(audio, android.util.Base64.NO_WRAP));
+            payload.put("m", "audio/mp4");
+            payload.put("d", durationMs);
+            if (amplitudes != null && amplitudes.length > 0) {
+                org.json.JSONArray arr = new org.json.JSONArray();
+                for (int value : amplitudes) arr.put(value);
+                payload.put("w", arr);
+            }
+            putReply(payload, replyMid, replyPreview);
+        } catch (Exception ignored) {
+        }
+        Msg local = newLocal(chat, "voice", "", audio, "audio/mp4", durationMs,
+                "", audio.length, false, wave, replyMid, replyPreview);
+        sendPayload(chat, local, payload.toString(), callback);
+    }
+
+    /** Волна в виде строки "4,9,15,..." для хранения и повторной отправки. */
+    public static String joinWave(int[] amplitudes) {
+        if (amplitudes == null || amplitudes.length == 0) return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < amplitudes.length; i++) {
+            if (i > 0) sb.append(',');
+            sb.append(amplitudes[i]);
+        }
+        return sb.toString();
+    }
+
+    /** Реакция на сообщение (уходит письмом-«реакцией», в ленте не отображается). */
+    public void sendReaction(final Chat chat, final Msg target, final String emoji, final SendCallback callback) {
+        JSONObject payload = new JSONObject();
+        try {
+            payload.put("t", "react");
+            payload.put("mid", target.mid);
+            payload.put("e", emoji);
+        } catch (Exception ignored) {
+        }
+        Store.get(app).addOwnReaction(chat.uid, target.mid, emoji);
+        notifyDirty();
+        sendControl(chat, payload, callback);
+    }
+
+    /** Правка своего сообщения. */
+    public void sendEdit(final Chat chat, final Msg target, final String newText, final SendCallback callback) {
+        JSONObject payload = new JSONObject();
+        try {
+            payload.put("t", "edit");
+            payload.put("mid", target.mid);
+            payload.put("b", newText);
+        } catch (Exception ignored) {
+        }
+        Store.get(app).applyEdit(chat.uid, target.mid, newText);
+        notifyDirty();
+        sendControl(chat, payload, callback);
+    }
+
+    /** Удаление сообщения у себя и у собеседника. */
+    public void sendDelete(final Chat chat, final Msg target, final SendCallback callback) {
+        JSONObject payload = new JSONObject();
+        try {
+            payload.put("t", "del");
+            payload.put("mid", target.mid);
+        } catch (Exception ignored) {
+        }
+        Store.get(app).applyDelete(chat.uid, target.mid);
+        notifyDirty();
+        sendControl(chat, payload, callback);
+    }
+
+    private void sendControl(final Chat chat, final JSONObject payload, final SendCallback callback) {
+        final String type = payload.optString("t", "control");
+        pool.execute(() -> {
+            try {
+                String me = Auth.account(app);
+                String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid,
+                        UUID.randomUUID().toString(), System.currentTimeMillis(),
+                        B64.bytes(chat.peerPublic), payload.toString());
+                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
+                        MailCrypto.toMailBody(envelope), null, null);
+                GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
+                notifyDirty();
+                if (callback != null) callback.onSent(null);
+            } catch (Exception e) {
+                Log.w(TAG, "служебное сообщение " + type + " не ушло: " + e);
+                if (callback != null) callback.onError(describe(e));
+            }
+        });
+    }
+
+    private static void putReply(JSONObject payload, String replyMid, String replyPreview) throws Exception {
+        if (replyMid != null && !replyMid.isEmpty()) {
+            payload.put("r", replyMid);
+            payload.put("rp", replyPreview == null ? "" : replyPreview);
+        }
+    }
+
+    /** Короткая цитата сообщения для превью ответа. */
+    public static String replyQuote(Msg msg) {
+        if (msg == null) return "";
+        String text = msg.previewText().replace('\n', ' ');
+        return text.length() > 90 ? text.substring(0, 90) + "…" : text;
     }
 
     public interface SendCallback {
@@ -353,8 +537,13 @@ public final class SyncEngine {
         void onError(String error);
     }
 
-    private void sendPayload(final Chat chat, final String payloadJson, final String type,
-                             final String localPreview, final byte[] imageBytes, final SendCallback callback) {
+    /**
+     * Общая отправка: готовим локальную копию сообщения (её сразу видно в ленте),
+     * затем шифруем и отправляем письмом. Локальная копия уже содержит все поля медиа,
+     * поэтому превью корректно до первой синхронизации.
+     */
+    private void sendPayload(final Chat chat, final Msg local, final String payloadJson,
+                             final SendCallback callback) {
         if (!NativeCrypto.isLoaded()) {
             fail(callback, "нативная библиотека не загружена: " + NativeCrypto.loadError());
             return;
@@ -365,20 +554,11 @@ public final class SyncEngine {
         }
         final Store store = Store.get(app);
         final String me = Auth.account(app);
-        final String mid = UUID.randomUUID().toString();
-        final long ts = System.currentTimeMillis();
-
-        final Msg local = new Msg();
-        local.mid = mid;
         local.chat = chat.uid;
         local.peer = chat.peer;
         local.from = me;
         local.to = chat.peer;
-        local.ts = ts;
         local.outgoing = true;
-        local.type = type;
-        local.text = localPreview;
-        local.imageB64 = imageBytes == null ? "" : android.util.Base64.encodeToString(imageBytes, android.util.Base64.NO_WRAP);
         local.state = Msg.STATE_SENDING;
         store.put(chat.uid, local);
         if (callback != null) callback.onSent(local);
@@ -387,21 +567,40 @@ public final class SyncEngine {
             try {
                 byte[] peerKey = B64.bytes(chat.peerPublic);
                 if (peerKey.length != 65) throw new IllegalStateException("ключ собеседника повреждён");
-                String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid, mid, ts, peerKey, payloadJson);
+                String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid, local.mid, local.ts, peerKey, payloadJson);
                 String subject = MailCrypto.SUBJECT_PREFIX + chat.uid;
-                String mime = Mime.build(me, chat.peer, subject,
-                        MailCrypto.toMailBody(envelope), mid, null);
-                String token = Auth.accessTokenFresh(app);
-                String gmailId = GmailApi.send(token, Mime.toRaw(mime));
-                store.updateState(chat.uid, mid, Msg.STATE_SENT, gmailId, null);
+                String mime = Mime.build(me, chat.peer, subject, MailCrypto.toMailBody(envelope), local.mid, null);
+                String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
+                store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
                 notifyDirty();
             } catch (Exception e) {
                 Log.w(TAG, "отправка не удалась: " + e);
-                store.updateState(chat.uid, mid, Msg.STATE_FAILED, null, describe(e));
+                store.updateState(chat.uid, local.mid, Msg.STATE_FAILED, null, describe(e));
                 if (callback != null) callback.onError(describe(e));
                 notifyDirty();
             }
         });
+    }
+
+    /** Локальная копия исходящего сообщения до отправки. */
+    private Msg newLocal(final Chat chat, final String type, final String preview, final byte[] media,
+                         final String mime, final long durationMs, final String fileName, final long fileSize,
+                         final boolean round, final String wave, final String replyMid, final String replyPreview) {
+        Msg local = new Msg();
+        local.mid = UUID.randomUUID().toString();
+        local.ts = System.currentTimeMillis();
+        local.type = type;
+        local.text = preview == null ? "" : preview;
+        if (media != null) local.mediaB64 = android.util.Base64.encodeToString(media, android.util.Base64.NO_WRAP);
+        local.mediaMime = mime == null ? "" : mime;
+        local.durationMs = durationMs;
+        local.fileName = fileName == null ? "" : fileName;
+        local.fileSize = fileSize;
+        local.round = round;
+        local.wave = wave == null ? "" : wave;
+        local.replyMid = replyMid == null ? "" : replyMid;
+        local.replyPreview = replyPreview == null ? "" : replyPreview;
+        return local;
     }
 
     /** Повторить отправку ранее неудавшегося сообщения. */
@@ -411,15 +610,7 @@ public final class SyncEngine {
         pool.execute(() -> {
             try {
                 String me = Auth.account(app);
-                JSONObject payload = new JSONObject();
-                if (msg.isImage()) {
-                    payload.put("t", "image");
-                    payload.put("b", msg.imageB64);
-                    payload.put("c", msg.text == null ? "" : msg.text);
-                } else {
-                    payload.put("t", "text");
-                    payload.put("b", msg.text == null ? "" : msg.text);
-                }
+                JSONObject payload = retryPayload(msg);
                 String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid, msg.mid, msg.ts,
                         B64.bytes(chat.peerPublic), payload.toString());
                 String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
@@ -434,6 +625,35 @@ public final class SyncEngine {
                 notifyDirty();
             }
         });
+    }
+
+    /** Собирает шифруемый payload для повторной отправки сообщения любого типа. */
+    private JSONObject retryPayload(Msg msg) throws Exception {
+        JSONObject payload = new JSONObject();
+        String type = msg.type == null ? "text" : msg.type;
+        payload.put("t", type);
+        payload.put("b", msg.mediaB64 != null && !msg.mediaB64.isEmpty() ? msg.mediaB64
+                : (msg.text == null ? "" : msg.text));
+        if (msg.mediaMime != null && !msg.mediaMime.isEmpty()) payload.put("m", msg.mediaMime);
+        if (msg.durationMs > 0) payload.put("d", msg.durationMs);
+        if (msg.fileName != null && !msg.fileName.isEmpty()) {
+            payload.put("n", msg.fileName);
+            payload.put("s", msg.fileSize);
+        }
+        if (!"text".equals(type) && msg.text != null && !msg.text.isEmpty()) payload.put("c", msg.text);
+        if (msg.round) payload.put("rnd", true);
+        if (msg.wave != null && !msg.wave.isEmpty()) {
+            org.json.JSONArray arr = new org.json.JSONArray();
+            for (String piece : msg.wave.split(",")) {
+                try {
+                    arr.put(Integer.parseInt(piece.trim()));
+                } catch (Exception ignored) {
+                }
+            }
+            if (arr.length() > 0) payload.put("w", arr);
+        }
+        putReply(payload, msg.replyMid, msg.replyPreview);
+        return payload;
     }
 
     /**

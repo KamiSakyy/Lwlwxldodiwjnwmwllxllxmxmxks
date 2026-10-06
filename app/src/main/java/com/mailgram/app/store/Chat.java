@@ -15,6 +15,9 @@ public final class Chat {
     public int unread;
     public int total;
     public boolean damaged;     // было сообщение, которое не удалось расшифровать
+    public boolean pinned;      // закреплён в списке
+    public boolean muted;       // без звука
+    public boolean verified;    // отпечаток безопасности сверен вручную
 
     public JSONObject toJson() {
         JSONObject o = new JSONObject();
@@ -29,6 +32,9 @@ public final class Chat {
             o.put("unread", unread);
             o.put("total", total);
             o.put("damaged", damaged);
+            o.put("pinned", pinned);
+            o.put("muted", muted);
+            o.put("verified", verified);
         } catch (Exception ignored) {
         }
         return o;
@@ -46,6 +52,9 @@ public final class Chat {
         c.unread = o.optInt("unread", 0);
         c.total = o.optInt("total", 0);
         c.damaged = o.optBoolean("damaged", false);
+        c.pinned = o.optBoolean("pinned", false);
+        c.muted = o.optBoolean("muted", false);
+        c.verified = o.optBoolean("verified", false);
         return c;
     }
 }

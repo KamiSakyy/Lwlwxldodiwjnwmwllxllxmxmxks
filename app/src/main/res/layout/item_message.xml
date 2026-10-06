@@ -4,9 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingStart="8dp"
-    android:paddingTop="2dp"
+    android:paddingTop="1dp"
     android:paddingEnd="8dp"
-    android:paddingBottom="2dp">
+    android:paddingBottom="1dp">
+
+    <!-- иконка ответа, которая проявляется при смахивании пузыря -->
+    <ImageView
+        android:id="@+id/msg_swipe_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="14dp"
+        android:alpha="0"
+        android:contentDescription="@string/reply"
+        android:src="@drawable/ic_reply"
+        app:tint="?attr/colorPrimary" />
 
     <LinearLayout
         android:id="@+id/msg_container"
@@ -15,19 +27,209 @@
         android:background="@drawable/bg_bubble_in"
         android:orientation="vertical"
         android:paddingStart="12dp"
-        android:paddingTop="7dp"
+        android:paddingTop="8dp"
         android:paddingEnd="12dp"
         android:paddingBottom="6dp">
 
-        <ImageView
+        <!-- цитата, если это ответ -->
+        <LinearLayout
+            android:id="@+id/msg_reply_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_quote"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/msg_reply_strip"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/msg_reply_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/msg_reply_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- медиа: фото, видео, кружок, голосовое или файл -->
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/msg_image"
-            android:layout_width="220dp"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/image"
             android:scaleType="fitCenter"
-            android:visibility="gone" />
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.MailGram.Media" />
+
+        <FrameLayout
+            android:id="@+id/msg_video_box"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/msg_video_thumb"
+                android:layout_width="240dp"
+                android:layout_height="160dp"
+                android:contentDescription="@string/attach_video"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.MailGram.Media" />
+
+            <ImageView
+                android:id="@+id/msg_video_play"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/attach_video"
+                android:src="@drawable/ic_play"
+                app:tint="#FFFFFFFF" />
+
+            <TextView
+                android:id="@+id/msg_video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp"
+                android:background="#80000000"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:textColor="#FFFFFFFF"
+                android:textSize="11sp" />
+        </FrameLayout>
+
+        <!-- кружок: то же видео, но круглое и без подписи -->
+        <FrameLayout
+            android:id="@+id/msg_circle_box"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/msg_circle_thumb"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/attach_circle"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.MailGram.Circle" />
+
+            <ImageView
+                android:id="@+id/msg_circle_play"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/attach_circle"
+                android:src="@drawable/ic_play"
+                app:tint="#FFFFFFFF" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/msg_voice_box"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/msg_voice_play"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/attach_voice"
+                android:padding="7dp"
+                android:src="@drawable/ic_play"
+                app:tint="?attr/colorPrimary" />
+
+            <com.mailgram.app.media.VoiceWaveView
+                android:id="@+id/msg_voice_wave"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/msg_voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/msg_file_box"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_quote"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:contentDescription="@string/attach_file"
+                android:src="@drawable/ic_file"
+                app:tint="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/msg_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:maxLines="1"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/msg_file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/msg_text"
@@ -36,7 +238,16 @@
             android:maxWidth="280dp"
             android:textAppearance="?attr/textAppearanceBodyLarge"
             android:textColor="?attr/colorOnSurface"
-            android:textIsSelectable="true" />
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/msg_reactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -47,6 +258,16 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/msg_edited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/edited"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
                 android:id="@+id/msg_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,13 +276,23 @@
 
             <ImageView
                 android:id="@+id/msg_state"
-                android:layout_width="13dp"
-                android:layout_height="13dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:layout_marginStart="4dp"
                 android:contentDescription="@string/state_sent"
                 android:src="@drawable/ic_check"
-                android:visibility="gone"
-                app:tint="@color/lock_green" />
+                android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/msg_select_check"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="2dp"
+        android:contentDescription="@string/select"
+        android:src="@drawable/ic_check_accent"
+        android:visibility="gone" />
 </FrameLayout>

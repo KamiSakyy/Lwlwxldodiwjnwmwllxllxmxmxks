@@ -238,6 +238,148 @@ public final class Store {
 
     // ---------------- сообщения ----------------
 
+    /** Запомнить письмо, не создавая сообщение (служебные конверты). */
+    public synchronized void markGmailId(String gmailId) {
+        if (gmailId != null && !gmailId.isEmpty()) gmailIds.add(gmailId);
+    }
+
+    /** Закрепить/открепить сообщение — показывается в шапке чата. */
+    public synchronized void setMsgPinned(String uid, String mid, boolean pinned) {
+        LinkedHashMap<String, Msg> list = messages.get(uid);
+        if (list == null) return;
+        for (Msg m : list.values()) {
+            m.pinned = pinned && mid.equals(m.mid);
+        }
+        persistChat(uid);
+    }
+
+    /** Реакция собеседника: +1 к счётчику эмодзи у указанного сообщения. */
+    public synchronized void applyReaction(String uid, String mid, String emoji) {
+        Msg target = byMid(uid, mid);
+        if (target == null || emoji == null || emoji.isEmpty()) return;
+        Integer current = target.reactions.get(emoji);
+        target.reactions.put(emoji, current == null ? 1 : current + 1);
+        persistChat(uid);
+    }
+
+    /** Своя реакция (локально, без ожидания письма). */
+    public synchronized void addOwnReaction(String uid, String mid, String emoji) {
+        applyReaction(uid, mid, emoji);
+    }
+
+    public synchronized void applyEdit(String uid, String mid, String newText) {
+        Msg target = byMid(uid, mid);
+        if (target == null) return;
+        target.text = newText == null ? "" : newText;
+        target.edited = true;
+        refreshPreview(uid);
+        persistChat(uid);
+    }
+
+    public synchronized void applyDelete(String uid, String mid) {
+        Msg target = byMid(uid, mid);
+        if (target == null) return;
+        target.deleted = true;
+        target.text = "";
+        target.mediaB64 = "";
+        refreshPreview(uid);
+        persistChat(uid);
+    }
+
+    private void refreshPreview(String uid) {
+        LinkedHashMap<String, Msg> list = messages.get(uid);
+        Chat c = chats.get(uid);
+        if (list == null || c == null || list.isEmpty()) return;
+        Msg last = null;
+        for (Msg m : list.values()) {
+            if (m.isControl()) continue;
+            if (last == null || m.ts >= last.ts) last = m;
+        }
+        if (last != null) {
+            c.preview = preview(last);
+            c.lastTs = last.ts;
+            c.lastOutgoing = last.outgoing;
+        }
+        writeChatsLocked();
+    }
+
+    /** Закреплённые чаты — выше остальных, дальше по времени последнего сообщения. */
+    public synchronized List<Chat> sortedChats() {
+        List<Chat> out = chats();
+        Collections.sort(out, (a, b) -> {
+            if (a.pinned != b.pinned) return a.pinned ? -1 : 1;
+            if (a.lastTs != b.lastTs) return Long.compare(b.lastTs, a.lastTs);
+            return 0;
+        });
+        return out;
+    }
+
+    public synchronized void setPinned(String uid, boolean pinned) {
+        Chat c = chats.get(uid);
+        if (c != null) {
+            c.pinned = pinned;
+            writeChatsLocked();
+        }
+    }
+
+    public synchronized void setMuted(String uid, boolean muted) {
+        Chat c = chats.get(uid);
+        if (c != null) {
+            c.muted = muted;
+            writeChatsLocked();
+        }
+    }
+
+    public synchronized void setVerified(String uid, boolean verified) {
+        Chat c = chats.get(uid);
+        if (c != null) {
+            c.verified = verified;
+            writeChatsLocked();
+        }
+    }
+
+    /** Черновик сообщения для чата (чтобы текст не терялся при выходе). */
+    public String draft(String uid) {
+        File f = new File(dir, uid + ".draft");
+        if (!f.exists()) return "";
+        try {
+            StringBuilder sb = new StringBuilder();
+            try (java.io.BufferedReader r = new java.io.BufferedReader(new java.io.InputStreamReader(
+                    new java.io.FileInputStream(f), java.nio.charset.StandardCharsets.UTF_8))) {
+                String line;
+                while ((line = r.readLine()) != null) sb.append(line).append('\n');
+            }
+            return sb.toString();
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    public void setDraft(String uid, String text) {
+        File f = new File(dir, uid + ".draft");
+        try {
+            if (text == null || text.trim().isEmpty()) {
+                if (f.exists()) f.delete();
+                return;
+            }
+            try (java.io.FileOutputStream out = new java.io.FileOutputStream(f)) {
+                out.write(text.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+            }
+        } catch (Exception ignored) {
+        }
+    }
+
+    /** Сводка по вложению: количество фото, видео и голосовых в чате. */
+    public synchronized int[] mediaCounts(String uid) {
+        int[] counts = new int[3];
+        for (Msg m : messages(uid)) {
+            if (m.isImage()) counts[0]++;
+            else if (m.isVideo()) counts[1]++;
+            else if (m.isVoice()) counts[2]++;
+        }
+        return counts;
+    }
+
     public synchronized List<Msg> messages(String uid) {
         LinkedHashMap<String, Msg> list = messages.get(uid);
         if (list == null) return new ArrayList<>();
@@ -334,9 +476,9 @@ public final class Store {
     }
 
     public static String preview(Msg m) {
-        if (m.isImage()) return "🖼 Фото";
+        if (m == null) return "";
         if (m.type != null && m.type.equals("invite")) return "✉ Приглашение в MailGram";
-        String t = m.text == null ? "" : m.text.replace('\n', ' ');
+        String t = m.previewText().replace('\n', ' ');
         return t.length() > 160 ? t.substring(0, 160) + "…" : t;
     }
 

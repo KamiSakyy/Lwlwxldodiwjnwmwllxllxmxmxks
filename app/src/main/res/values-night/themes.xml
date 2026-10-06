@@ -2,13 +2,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.MailGram" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/accent_dark</item>
-        <item name="colorOnPrimary">#FF0B1B2B</item>
-        <item name="colorPrimaryContainer">@color/accent_dark</item>
-        <item name="colorOnPrimaryContainer">#FF0B1B2B</item>
+        <item name="colorOnPrimary">#FF000000</item>
+        <item name="colorPrimaryContainer">@color/accent</item>
+        <item name="colorOnPrimaryContainer">#FFFFFFFF</item>
         <item name="colorSecondary">@color/accent_dark</item>
-        <item name="colorOnSecondary">#FF0B1B2B</item>
+        <item name="colorOnSecondary">#FF000000</item>
         <item name="colorSurface">@color/surface_dark</item>
-        <item name="colorSurfaceVariant">@color/bg_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_grouped_dark</item>
         <item name="colorOnSurface">@color/text_primary_dark</item>
         <item name="colorOnSurfaceVariant">@color/text_secondary_dark</item>
         <item name="colorOutline">@color/divider_dark</item>
@@ -16,18 +16,21 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
         <item name="colorBubbleOut">@color/bubble_out_dark</item>
         <item name="colorBubbleIn">@color/bubble_in_dark</item>
         <item name="colorChatBackground">@color/bg_dark</item>
         <item name="materialAlertDialogTheme">@style/Theme.MailGram.Dialog</item>
         <item name="android:textColorPrimary">@color/text_primary_dark</item>
         <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MailGram</item>
     </style>
 
-    <style name="Theme.MailGram.Transparent" parent="Theme.MailGram">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@null</item>
+    <style name="TextAppearance.MailGram.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
     </style>
 </resources>

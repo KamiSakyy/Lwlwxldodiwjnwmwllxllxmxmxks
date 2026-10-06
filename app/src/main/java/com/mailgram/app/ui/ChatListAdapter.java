@@ -29,6 +29,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
     private final List<Chat> all = new ArrayList<>();
     private final Actions actions;
     private String filter = "";
+    private final java.util.Set<String> animated = new java.util.HashSet<>();
 
     public ChatListAdapter(Actions actions) {
         this.actions = actions;
@@ -102,11 +103,39 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
             h.badge.setVisibility(View.GONE);
         }
 
+        h.pin.setVisibility(chat.pinned ? View.VISIBLE : View.GONE);
+        h.mute.setVisibility(chat.muted ? View.VISIBLE : View.GONE);
+        h.name.setTextColor(chat.muted
+                ? h.itemView.getContext().getResources().getColor(R.color.text_muted)
+                : resolveOnSurface(h.itemView.getContext()));
+        h.time.setTextColor(chat.unread > 0
+                ? h.itemView.getContext().getResources().getColor(R.color.accent)
+                : h.itemView.getContext().getResources().getColor(R.color.text_muted));
+
+        if (!animated.contains(chat.uid)) {
+            animated.add(chat.uid);
+            h.itemView.setAlpha(0f);
+            h.itemView.setTranslationY(Ui.dp(h.itemView.getContext(), 10));
+            h.itemView.animate().alpha(1f).translationY(0f).setDuration(170L).start();
+        } else {
+            h.itemView.setAlpha(1f);
+            h.itemView.setTranslationY(0f);
+        }
+
         h.itemView.setOnClickListener(v -> actions.onOpen(chat));
         h.itemView.setOnLongClickListener(v -> {
             actions.onLongPress(chat);
             return true;
         });
+    }
+
+    private static int resolveOnSurface(android.content.Context ctx) {
+        android.util.TypedValue value = new android.util.TypedValue();
+        if (!ctx.getTheme().resolveAttribute(com.google.android.material.R.attr.colorOnSurface,
+                value, true)) {
+            return 0xFFFFFFFF;
+        }
+        return value.data;
     }
 
     @Override
@@ -121,6 +150,8 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         final TextView time;
         final TextView badge;
         final ImageView state;
+        final ImageView pin;
+        final ImageView mute;
 
         Holder(View itemView) {
             super(itemView);
@@ -130,6 +161,8 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
             time = itemView.findViewById(R.id.chat_time);
             badge = itemView.findViewById(R.id.chat_badge);
             state = itemView.findViewById(R.id.chat_state_icon);
+            pin = itemView.findViewById(R.id.chat_pin_icon);
+            mute = itemView.findViewById(R.id.chat_mute_icon);
         }
     }
 }

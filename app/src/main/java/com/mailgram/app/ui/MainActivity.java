@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void refresh() {
-        adapter.submit(Store.get(this).chats());
+        adapter.submit(Store.get(this).sortedChats());
         updateEmpty();
         int unread = Store.get(this).totalUnread();
         toolbar.setSubtitle(unread > 0
@@ -194,18 +194,32 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private void showChatMenu(final Chat chat) {
         PopupMenu popup = new PopupMenu(this, list);
-        popup.getMenu().add(0, 1, 0, R.string.chat_menu_rename);
-        popup.getMenu().add(0, 2, 1, R.string.chat_menu_clear);
-        popup.getMenu().add(0, 3, 2, R.string.chat_menu_delete);
+        popup.getMenu().add(0, 1, 0, chat.pinned ? R.string.unpin_chat : R.string.pin_chat);
+        popup.getMenu().add(0, 2, 1, chat.muted ? R.string.unmute_chat : R.string.mute_chat);
+        popup.getMenu().add(0, 3, 2, R.string.chat_menu_rename);
+        popup.getMenu().add(0, 4, 3, R.string.chat_info);
+        popup.getMenu().add(0, 5, 4, R.string.chat_menu_clear);
+        popup.getMenu().add(0, 6, 5, R.string.chat_menu_delete);
         popup.setOnMenuItemClickListener(item -> {
             switch (item.getItemId()) {
                 case 1:
-                    renameChat(chat);
+                    Store.get(this).setPinned(chat.uid, !chat.pinned);
+                    refresh();
                     return true;
                 case 2:
-                    confirmClear(chat);
+                    Store.get(this).setMuted(chat.uid, !chat.muted);
+                    refresh();
                     return true;
                 case 3:
+                    renameChat(chat);
+                    return true;
+                case 4:
+                    showChatInfo(chat);
+                    return true;
+                case 5:
+                    confirmClear(chat);
+                    return true;
+                case 6:
                     confirmDelete(chat);
                     return true;
                 default:
@@ -213,6 +227,25 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             }
         });
         popup.show();
+    }
+
+    /** Карточка чата: участник, ключ, количество медиа и кнопка «проверен». */
+    private void showChatInfo(final Chat chat) {
+        int[] counts = Store.get(this).mediaCounts(chat.uid);
+        String body = chat.peer + "\n"
+                + getString(R.string.media_count, counts[0], counts[1], counts[2]) + "\n"
+                + (chat.peerPublic == null || chat.peerPublic.isEmpty()
+                ? getString(R.string.encryption_waiting) : getString(R.string.encryption_on));
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.chat_info)
+                .setMessage(body)
+                .setNeutralButton(chat.verified ? R.string.chat_menu_safety : R.string.verify_chat,
+                        (d, w) -> {
+                            Store.get(this).setVerified(chat.uid, !chat.verified);
+                            refresh();
+                        })
+                .setPositiveButton(R.string.done, null)
+                .show();
     }
 
     private void renameChat(final Chat chat) {
