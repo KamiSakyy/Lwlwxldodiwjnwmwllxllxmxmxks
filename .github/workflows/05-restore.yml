@@ -54,6 +54,8 @@ jobs:
 
       - name: "ИТЕРАТИВНЫЙ ЦИКЛ: javac + стабы (6 раундов)"
         shell: bash
+        env:
+          GT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           PROJ="${{ env.PROJ }}"
           SRC="$PROJ/app/src/main/java"
@@ -70,7 +72,10 @@ jobs:
               git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks" 2>&1
               echo "PUSH_EXIT=$?"
             } >> "$CYCLE" 2>&1
-            gh api repos/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/issues -f title="[CI] cycle-report $(date -u +%H:%M)" -f body="$(tail -c 2500 "$CYCLE" | tail -20)" || true
+            curl -s -X POST \
+              -H "Authorization: Bearer $GT" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/issues" \
+              -d "$(python3 -c "import json,sys; print(json.dumps({'title': '[CI] cycle-report', 'body': open('$CYCLE').read()[-3500:]})")" )" || true
           }
           trap push_artifacts EXIT
           PREV=999999999
