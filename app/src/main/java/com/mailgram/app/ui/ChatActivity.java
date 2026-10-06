@@ -448,17 +448,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         } catch (Exception e) {
             safety = "ошибка: " + e.getMessage();
         }
+        final String safetyValue = safety;
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_text, null);
         TextView text = view.findViewById(R.id.dialog_text);
         String content = getString(R.string.safety_text) + "\n\n"
-                + getString(R.string.safety_number) + ":\n" + safety + "\n\n"
+                + getString(R.string.safety_number) + ":\n" + safetyValue + "\n\n"
                 + getString(R.string.my_key) + ":\n" + keyPreview(peerKey);
         text.setText(content);
         new MaterialAlertDialogBuilder(this)
                 .setTitle(R.string.chat_menu_safety)
                 .setView(view)
                 .setNegativeButton(R.string.done, null)
-                .setPositiveButton(R.string.copy, (d, w) -> Ui.copy(this, "MailGram safety", safety))
+                .setPositiveButton(R.string.copy, (d, w) -> Ui.copy(this, "MailGram safety", safetyValue))
                 .show();
     }
 

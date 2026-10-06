@@ -37,6 +37,7 @@
     <string name="copied">Скопировано</string>
     <string name="send_failed">Не удалось отправить: %1$s</string>
     <string name="retry">Повторить</string>
+    <string name="state_sent">отправлено</string>
     <string name="state_sending">отправляется…</string>
     <string name="state_failed">не отправлено</string>
     <string name="encryption_on">сквозное шифрование включено</string>

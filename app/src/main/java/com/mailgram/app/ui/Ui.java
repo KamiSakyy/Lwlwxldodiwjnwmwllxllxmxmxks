@@ -141,11 +141,11 @@ public final class Ui {
             if (android.os.Build.VERSION.SDK_INT >= 28) {
                 info = pm.getPackageInfo(pkg, PackageManager.GET_SIGNING_CERTIFICATES);
                 if (info.signingInfo == null) return "нет подписи";
-                byte[][] signatures = info.signingInfo.hasMultipleSigners()
+                android.content.pm.Signature[] signatures = info.signingInfo.hasMultipleSigners()
                         ? info.signingInfo.getApkContentsSigners()
                         : info.signingInfo.getSigningCertificateHistory();
                 if (signatures == null || signatures.length == 0) return "нет подписи";
-                return B64.hexColons(MessageDigest.getInstance("SHA-1").digest(signatures[0]));
+                return B64.hexColons(MessageDigest.getInstance("SHA-1").digest(signatures[0].toByteArray()));
             }
             @SuppressWarnings("deprecation")
             PackageInfo legacy = pm.getPackageInfo(pkg, PackageManager.GET_SIGNATURES);
