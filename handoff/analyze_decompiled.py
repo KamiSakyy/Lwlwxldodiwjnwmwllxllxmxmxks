@@ -18,12 +18,43 @@ import xml.etree.ElementTree as ET
 
 ANDROID_NS = "{http://schemas.android.com/apk/res/android}"
 AUTH_TERMS = re.compile(r"auth|oauth|login|session|vkid|passport|qr.?code", re.IGNORECASE)
+PRIVACY_TERMS = re.compile(
+    r"\b(?:ads?|advert(?:isement|ising)?|sponsor(?:ed)?|promot(?:e|ion|ional)?|"
+    r"analytics?|track(?:er|ing)?|telemetry|attribution|install.?referrer|"
+    r"advertising.?id|ad.?id|my.?tracker|metrica|appsflyer|crashlytics|"
+    r"sentry|bugsnag|unityads|vungle|ironsource|applovin|measurement)\b",
+    re.IGNORECASE,
+)
+SDK_REFERENCES = {
+    "Google Mobile Ads": re.compile(r"com\.google\.android\.gms\.ads", re.IGNORECASE),
+    "Google Ads": re.compile(r"com\.google\.ads", re.IGNORECASE),
+    "AppLovin": re.compile(r"com\.applovin", re.IGNORECASE),
+    "Unity Ads": re.compile(r"com\.unity3d\.ads", re.IGNORECASE),
+    "Vungle": re.compile(r"com\.vungle", re.IGNORECASE),
+    "ironSource": re.compile(r"com\.ironsource", re.IGNORECASE),
+    "myTracker": re.compile(r"com\.my\.tracker", re.IGNORECASE),
+    "Yandex Metrica": re.compile(r"com\.yandex\.metrica", re.IGNORECASE),
+    "Firebase Analytics": re.compile(r"com\.google\.firebase\.analytics", re.IGNORECASE),
+    "Firebase Crashlytics": re.compile(r"com\.google\.firebase\.crashlytics", re.IGNORECASE),
+    "Firebase Performance": re.compile(r"com\.google\.firebase\.perf", re.IGNORECASE),
+}
 AUTH_URLS = {
     "oauth.vk.com": re.compile(r"oauth\.vk\.com", re.IGNORECASE),
     "id.vk.com": re.compile(r"id\.vk\.com", re.IGNORECASE),
     "api.vk.com": re.compile(r"api\.vk\.com", re.IGNORECASE),
 }
 CLASS_DECL = re.compile(r"\b(?:class|interface|enum)\s+([A-Za-z_$][\w$]*)")
+SDK_MANIFEST_MARKERS = (
+    "com.google.android.gms.ads",
+    "com.google.ads",
+    "com.applovin",
+    "com.unity3d",
+    "com.vungle",
+    "com.ironsource",
+    "com.my.tracker",
+    "com.yandex",
+    "com.google.firebase",
+)
 
 
 def sha256_file(path: Path) -> str:
@@ -61,6 +92,8 @@ def main() -> int:
     package_name = version_name = version_code = None
     permissions: list[str] = []
     exported_components: list[str] = []
+    sdk_manifest_components: list[str] = []
+    analytics_metadata_keys: list[str] = []
 
     if manifest_path:
         try:
@@ -76,10 +109,15 @@ def main() -> int:
             if app is not None:
                 for tag in ("activity", "activity-alias", "service", "receiver", "provider"):
                     for component in app.findall(tag):
-                        if component.attrib.get(ANDROID_NS + "exported") == "true":
-                            name = component.attrib.get(ANDROID_NS + "name")
-                            if name:
-                                exported_components.append(f"{tag}: {name}")
+                        name = component.attrib.get(ANDROID_NS + "name")
+                        if name and any(marker in name for marker in SDK_MANIFEST_MARKERS):
+                            sdk_manifest_components.append(f"{tag}: {name}")
+                        if component.attrib.get(ANDROID_NS + "exported") == "true" and name:
+                            exported_components.append(f"{tag}: {name}")
+                for item in app.findall("meta-data"):
+                    name = item.attrib.get(ANDROID_NS + "name")
+                    if name and (name.startswith("firebase_") or name.startswith("google_analytics_")):
+                        analytics_metadata_keys.append(name)
             if package_name != "com.vkontakte.android":
                 print(f"Unexpected package ID: {package_name}", file=sys.stderr)
                 return 1
@@ -111,8 +149,12 @@ def main() -> int:
     source_root = root / "sources"
     java_files = list(source_root.rglob("*.java")) if source_root.is_dir() else []
     auth_files: list[tuple[int, str, str]] = []
+    privacy_files: list[tuple[int, str, str]] = []
     host_counts: Counter[str] = Counter()
     package_counts: Counter[str] = Counter()
+    sdk_reference_counts: Counter[str] = Counter()
+    sdk_reference_files: dict[str, list[str]] = {name: [] for name in SDK_REFERENCES}
+    privacy_file_count = 0
 
     for path in java_files:
         relative = path.relative_to(source_root)
@@ -133,8 +175,26 @@ def main() -> int:
             score = (100 if path_match else 0) + min(term_matches, 50)
             auth_files.append((score, str(relative), class_name))
 
+        privacy_path_match = bool(PRIVACY_TERMS.search(path.name) or PRIVACY_TERMS.search(str(relative)))
+        privacy_matches = len(PRIVACY_TERMS.findall(text))
+        if privacy_path_match or privacy_matches >= 2:
+            privacy_file_count += 1
+            declarations = CLASS_DECL.findall(text)
+            class_name = declarations[0] if declarations else path.stem
+            score = (100 if privacy_path_match else 0) + min(privacy_matches, 100)
+            privacy_files.append((score, str(relative), class_name))
+
+        if str(relative).startswith("com/vkontakte/android/"):
+            for sdk_name, sdk_pattern in SDK_REFERENCES.items():
+                occurrences = len(sdk_pattern.findall(text))
+                if occurrences:
+                    sdk_reference_counts[sdk_name] += occurrences
+                    sdk_reference_files[sdk_name].append(str(relative))
+
     auth_files.sort(key=lambda item: (-item[0], item[1].lower()))
     candidates = auth_files[:20]
+    privacy_files.sort(key=lambda item: (-item[0], item[1].lower()))
+    privacy_candidates = privacy_files[:25]
     top_packages = package_counts.most_common(8)
     partial_decompilation = os.environ.get("JADX_INCOMPLETE", "false").lower() == "true"
     completion_note = (
@@ -160,6 +220,7 @@ def main() -> int:
         f"- Java files emitted by JADX: {len(java_files)}",
         f"- Decompilation status: {completion_note}",
         f"- Files matching auth/login/session/QR naming or source terms: {len(auth_files)}",
+        f"- Ad/analytics/tracking candidate files (names/terms only): {privacy_file_count}",
         f"- OAuth/API host references (occurrence counts only): "
         + ", ".join(f"`{name}` {host_counts[name]}" for name in AUTH_URLS),
         "",
@@ -168,6 +229,22 @@ def main() -> int:
     if candidates:
         report += ["## Candidate auth/session files (names only)"]
         report += [f"- `{path}` (class `{class_name}`)" for _, path, class_name in candidates]
+        report.append("")
+
+    if sdk_reference_counts:
+        report += ["## First-party references to known ad/analytics SDKs (file counts and names only)"]
+        for sdk_name in SDK_REFERENCES:
+            if sdk_reference_counts[sdk_name]:
+                report.append(
+                    f"- {sdk_name}: {sdk_reference_counts[sdk_name]} source references across "
+                    f"{len(sdk_reference_files[sdk_name])} files"
+                )
+                report.extend(f"  - `{relative}`" for relative in sdk_reference_files[sdk_name][:12])
+        report.append("")
+
+    if privacy_candidates:
+        report += ["## Candidate ad/analytics/tracking files (names only)"]
+        report += [f"- `{path}` (class `{class_name}`)" for _, path, class_name in privacy_candidates]
         report.append("")
 
     if top_packages:
@@ -183,6 +260,16 @@ def main() -> int:
     if exported_components:
         report += ["## Exported component names (first 20)"]
         report += [f"- `{component}`" for component in sorted(exported_components)[:20]]
+        report.append("")
+
+    if sdk_manifest_components:
+        report += ["## Ad/analytics SDK manifest components (names only)"]
+        report += [f"- `{component}`" for component in sorted(set(sdk_manifest_components))]
+        report.append("")
+
+    if analytics_metadata_keys:
+        report += ["## Firebase/Google Analytics manifest opt-out keys"]
+        report += [f"- `{name}`" for name in sorted(set(analytics_metadata_keys))]
         report.append("")
 
     report += [
@@ -208,10 +295,29 @@ def main() -> int:
             "OAuth/API reference counts: " + ", ".join(
                 f"{name}={host_counts[name]}" for name in AUTH_URLS
             ),
+            "Ad/analytics manifest components: " + (
+                ", ".join(sorted(set(sdk_manifest_components))[:10]) or "none"
+            ),
+            "Firebase/Google Analytics opt-out keys: " + (
+                ", ".join(sorted(set(analytics_metadata_keys))[:10]) or "none"
+            ),
         ]
+        notice_messages.append(f"Ad/analytics/tracking candidate file count: {privacy_file_count}")
+        notice_messages.append(
+            "First-party SDK reference source counts: " + (
+                ", ".join(
+                    f"{name}={len(sdk_reference_files[name])} files"
+                    for name in SDK_REFERENCES if sdk_reference_files[name]
+                ) or "none found"
+            )
+        )
         notice_messages.extend(
-            f"Candidate source name only: {relative} (class {class_name})"
+            f"Candidate auth source name only: {relative} (class {class_name})"
             for _, relative, class_name in candidates
+        )
+        notice_messages.extend(
+            f"Candidate privacy source name only: {relative} (class {class_name})"
+            for _, relative, class_name in privacy_candidates[:12]
         )
         for message in notice_messages:
             escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")

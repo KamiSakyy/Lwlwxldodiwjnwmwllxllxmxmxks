@@ -7,8 +7,15 @@ on:
     paths:
       - .github/workflows/vk-privacy-audit.yml
       - handoff/audit_privacy_footprint.py
+      - handoff/analyze_decompiled.py
       - handoff/prepare_apkpure_xapk.py
   workflow_dispatch:
+    inputs:
+      full_decompile:
+        description: 'Run JADX to enumerate first-party ad/tracking call sites (long-running)'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -17,10 +24,11 @@ jobs:
   audit:
     name: Audit known ad and tracking SDK signatures
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 120
     env:
       APK_ARCHIVE_NAME: vk-latest.xapk
       APK_NAME: vk-base.apk
+      JADX_DIRECTORY: vk-jadx-privacy
       APKPURE_XAPK_URL: 'https://d.apkpure.net/b/XAPK/com.vkontakte.android?version=latest'
       EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
 
@@ -122,7 +130,75 @@ jobs:
         shell: bash
         run: python3 handoff/audit_privacy_footprint.py "$RUNNER_TEMP/$APK_NAME"
 
+      - name: Download JADX
+        if: success() && github.event_name == 'workflow_dispatch' && inputs.full_decompile
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --max-time 180 \
+            'https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip' \
+            --output "$RUNNER_TEMP/jadx.zip"
+          mkdir -p "$RUNNER_TEMP/jadx"
+          unzip -q "$RUNNER_TEMP/jadx.zip" -d "$RUNNER_TEMP/jadx"
+          test -x "$RUNNER_TEMP/jadx/bin/jadx"
+          "$RUNNER_TEMP/jadx/bin/jadx" --version
+
+      - name: Decompile for ad/tracking call-site inventory
+        if: success() && github.event_name == 'workflow_dispatch' && inputs.full_decompile
+        shell: bash
+        env:
+          JAVA_OPTS: -Xmx10g
+        run: |
+          set -euo pipefail
+          JADX_OUT="$RUNNER_TEMP/$JADX_DIRECTORY"
+          mkdir -p "$JADX_OUT"
+          if ! "$RUNNER_TEMP/jadx/bin/jadx" \
+            --threads-count 2 \
+            --output-dir "$JADX_OUT" \
+            "$RUNNER_TEMP/$APK_NAME" > "$RUNNER_TEMP/jadx-privacy.log" 2>&1; then
+            if ! python3 - "$RUNNER_TEMP/jadx-privacy.log" "$JADX_OUT" <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+          log_path, output_path = map(Path, sys.argv[1:])
+          text = log_path.read_text(encoding='utf-8', errors='replace') if log_path.is_file() else ''
+          error_count = len(re.findall(r'\bERROR\b', text, re.IGNORECASE))
+          exception_types = sorted(set(re.findall(r'\b([A-Za-z_$][\w$]*(?:Exception|Error))\b', text)))
+          java_count = sum(1 for _ in output_path.rglob('*.java')) if output_path.exists() else 0
+          manifest_found = any(p.name == 'AndroidManifest.xml' for p in output_path.rglob('*')) if output_path.exists() else False
+          usable_partial = java_count >= 10000 and manifest_found
+          message = (
+              f'JADX incomplete; error markers={error_count}; '
+              f'exception types={",".join(exception_types[:8]) or "none"}; '
+              f'Java files={java_count}; manifest-emitted={manifest_found}; '
+              f'partial scan accepted={usable_partial}'
+          ).replace('%', '%25').replace(chr(13), '%0D').replace(chr(10), '%0A')
+          level = 'warning' if usable_partial else 'error'
+          print(f'::{level} title=JADX privacy scan::{message}')
+          raise SystemExit(0 if usable_partial else 1)
+          PY
+            then
+              exit 1
+            fi
+            echo 'JADX_INCOMPLETE=true' >> "$GITHUB_ENV"
+          else
+            echo 'JADX_INCOMPLETE=false' >> "$GITHUB_ENV"
+          fi
+          find "$JADX_OUT" -type f -name '*.java' | wc -l | awk '{print "Decompiled Java files: " $1}'
+
+      - name: Generate metadata-only ad/tracking call-site report
+        if: success() && github.event_name == 'workflow_dispatch' && inputs.full_decompile
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 handoff/analyze_decompiled.py \
+            "$RUNNER_TEMP/$JADX_DIRECTORY" "$RUNNER_TEMP/$APK_NAME"
+
       - name: Remove downloaded APKs and signature metadata
         if: always()
         shell: bash
-        run: rm -f "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$RUNNER_TEMP/$APK_NAME" "$RUNNER_TEMP/apk-signature.txt"
+        run: |
+          rm -f "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$RUNNER_TEMP/$APK_NAME" \
+            "$RUNNER_TEMP/apk-signature.txt" "$RUNNER_TEMP/jadx.zip" \
+            "$RUNNER_TEMP/jadx-privacy.log"
+          rm -rf "$RUNNER_TEMP/$JADX_DIRECTORY" "$RUNNER_TEMP/jadx"
