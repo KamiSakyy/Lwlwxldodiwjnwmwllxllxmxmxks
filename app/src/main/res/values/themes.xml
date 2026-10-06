@@ -484,6 +484,8 @@
     </style>
 
     <style name="Widget.MailGram.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">@style/TextAppearance.MailGram.ActionItem</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:buttonTint">@color/brand</item>
@@ -639,10 +641,14 @@
     </style>
 
     <style name="Widget.MailGram.RowTitle" parent="TextAppearance.MailGram.RowTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_primary</item>
     </style>
 
     <style name="Widget.MailGram.RowValue" parent="TextAppearance.MailGram.RowValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_secondary</item>
     </style>
 
