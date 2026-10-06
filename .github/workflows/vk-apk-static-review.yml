@@ -288,6 +288,7 @@ jobs:
           python3 handoff/analyze_package_size.py "$RUNNER_TEMP/$MOD_APK_NAME"
 
       - name: Download JADX
+        if: success() && steps.build_mod.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -300,6 +301,7 @@ jobs:
           "$RUNNER_TEMP/jadx/bin/jadx" --version
 
       - name: Decompile to temporary runner storage
+        if: success() && steps.build_mod.outcome == 'success'
         shell: bash
         env:
           JAVA_OPTS: -Xmx10g
@@ -347,6 +349,7 @@ jobs:
           find "$JADX_OUT" -type f -name '*.java' | wc -l | awk '{print "Decompiled Java files: " $1}'
 
       - name: Generate metadata-only handoff summary
+        if: success() && steps.build_mod.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
