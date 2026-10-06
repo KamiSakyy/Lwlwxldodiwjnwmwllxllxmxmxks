@@ -1,0 +1,279 @@
+name: "09 — GitHub RU MOD: собрать APK из официального 1.257.0 (пакет com.github.rudroid) → handoff"
+
+# Что делает:
+#   1) скачивает официальный APK com.github.android (берём версию 1.257.0 — ту же,
+#      из которой сделан наш GitHub RU; если её нет — берём ближайшую);
+#   2) разбирает apktool (smali + ресурсы);
+#   3) переименовывает пакет com.github.android -> com.github.rudroid (как в нашем
+#      исходнике: "Пакет заменён на com.github.rudroid — ставится рядом");
+#   4) применяет мод: вес (только arm64 + ru/en), оптимизация (аналитика/фон),
+#      дизайн (темы), плюс отчёт и выжимки ресурсов для следующих правок;
+#   5) собирает, подписывает нашим ключом github-ru.jks и кладёт APK в handoff/.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'arena/**'
+    paths:
+      - '.github/workflows/09-github-ru-mod.yml'
+      - 'handoff/apkmod/**'
+
+permissions:
+  contents: write
+
+env:
+  OUT: handoff/apkmod
+  PKG_OLD: com.github.android
+  PKG_NEW: com.github.rudroid
+  TARGET_VERSION: '1.257.0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "JDK 17 + apktool"
+        run: |
+          set -e
+          mkdir -p tools/bin
+          curl -sSL -o tools/bin/apktool.jar \
+            https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar
+          java -version 2>&1 | head -2
+          java -jar tools/bin/apktool.jar --version
+
+      - name: "Инструменты Android SDK (aapt2 / zipalign / apksigner)"
+        run: |
+          set -e
+          SDK="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+          echo "SDK=$SDK" >> "$GITHUB_ENV"
+          BT=$(ls -d "$SDK"/build-tools/*/ 2>/dev/null | sort -V | tail -1)
+          echo "BT=$BT" >> "$GITHUB_ENV"
+          ls "$BT" | head -20 || true
+          "$BT/aapt2" version || true
+
+      - name: "Скачать официальный APK (ищем версию ${{ env.TARGET_VERSION }})"
+        run: |
+          set -e
+          mkdir -p work
+          try_url() {
+            echo "--- $1"
+            code=$(curl -sSL -o work/cand.bin -w '%{http_code}' --retry 1 --max-time 600 "$1" || echo 000)
+            size=$(stat -c%s work/cand.bin 2>/dev/null || echo 0)
+            echo "    HTTP $code, $size байт"
+            if [ "$code" = "200" ] && [ "$size" -gt 1000000 ] && head -c2 work/cand.bin | grep -q PK; then
+              return 0
+            fi
+            return 1
+          }
+          for U in \
+            "https://d.apkpure.net/b/XAPK/${PKG_OLD}?version=${TARGET_VERSION}" \
+            "https://d.apkpure.net/b/APK/${PKG_OLD}?version=${TARGET_VERSION}" \
+            "https://d.apkpure.net/b/XAPK/${PKG_OLD}?version=latest" \
+            "https://d.apkpure.com/b/XAPK/${PKG_OLD}?version=latest" ; do
+            if try_url "$U"; then cp work/cand.bin work/download.bin; echo "ВЗЯЛ: $U"; break; fi
+          done
+          [ -f work/download.bin ] || { echo "не удалось скачать APK"; exit 1; }
+          ls -la work/download.bin
+
+      - name: "Достать базовый APK из XAPK"
+        run: |
+          set -e
+          python3 - <<'PY'
+          import zipfile, shutil, pathlib
+          src = pathlib.Path('work/download.bin')
+          with zipfile.ZipFile(src) as z:
+              names = z.namelist()
+              apks = [n for n in names if n.lower().endswith('.apk')]
+              print('внутри .apk:', apks)
+              if not apks:
+                  shutil.copy(src, 'work/base.apk')
+                  print('это уже APK')
+              else:
+                  def score(n):
+                      base = pathlib.PurePosixPath(n).name.lower()
+                      if base == 'base.apk': return 0
+                      if base.startswith(('config.', 'split_')): return 3
+                      if base.startswith('com.github.android'): return 1
+                      return 2
+                  pick = sorted(apks, key=score)[0]
+                  print('беру:', pick)
+                  with z.open(pick) as f, open('work/base.apk','wb') as o:
+                      shutil.copyfileobj(f, o)
+          PY
+          ls -la work/base.apk
+          "$BT/aapt2" dump badging work/base.apk 2>/dev/null | head -5 || true
+
+      - name: "Разбор apktool (smali + ресурсы)"
+        run: |
+          set -e
+          set -o pipefail
+          rm -rf work/dec
+          java -jar tools/bin/apktool.jar d -f -o work/dec work/base.apk 2>&1 | tee work/decode.log | tail -20
+          cat work/dec/apktool.yml | head -30
+
+      - name: "Переименование пакета: ${PKG_OLD} -> ${PKG_NEW}"
+        run: |
+          set -e
+          cd work/dec
+          # 1) каталоги smali: com/github/android -> com/github/rudroid
+          n=0
+          for d in smali*/com/github/android; do
+            [ -d "$d" ] || continue
+            mv "$d" "${d%android}rudroid"; n=$((n+1))
+          done
+          echo "переименовано каталогов: $n"
+          # 2) ссылки в smali и ресурсах
+          grep -rl 'com/github/android' -r smali* 2>/dev/null | xargs -r sed -i 's|com/github/android|com/github/rudroid|g'
+          grep -rl 'com\.github\.android' AndroidManifest.xml res assets 2>/dev/null | xargs -r sed -i 's|com\.github\.android|com.github.rudroid|g' || true
+          sed -i 's|com\.github\.android|com.github.rudroid|g' apktool.yml || true
+          echo "--- остались упоминания:"
+          grep -r 'com\.github\.android\|com/github/android' -l . 2>/dev/null | head -10 || echo "нет"
+          grep -o 'package="[^"]*"' AndroidManifest.xml | head -3
+
+      - name: "Мод: вес + оптимизация (черновые правки ресурсов)"
+        run: |
+          set -e
+          cd work/dec
+          # --- ВЕС: оставляем только ru и en из языков
+          removed=0
+          for d in res/values-*; do
+            [ -d "$d" ] || continue
+            lang=$(basename "$d")
+            case "$lang" in
+              values-ru|values-en) ;;
+              *) rm -rf "$d"; removed=$((removed+1)) ;;
+            esac
+          done
+          echo "удалено языковых папок: $removed"
+          ls res | grep '^values' | head -30
+          # --- ВЕС: только arm64-v8a
+          if [ -d lib ]; then
+            for d in lib/*; do
+              [ "$(basename "$d")" = "arm64-v8a" ] || rm -rf "$d"
+            done
+            ls lib
+          fi
+          # --- ОПТИМИЗАЦИЯ: аналитика/автостарт Firebase (как в FIXES-APPLIED.txt нашего проекта)
+          python3 - <<'PY'
+          import re, pathlib
+          p = pathlib.Path('AndroidManifest.xml')
+          s = p.read_text()
+          add = '''        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false" />
+          <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
+          <meta-data android:name="firebase_analytics_collection_enabled" android:value="false" />
+          <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
+'''
+          if 'firebase_messaging_auto_init_enabled' not in s:
+              # кладём в <application ...> сразу после открывающего тега
+              m = re.search(r'<application\b[^>]*>', s)
+              if m:
+                  s = s[:m.end()] + '\n' + add + s[m.end():]
+                  print('meta-data аналитики добавлены')
+              else:
+                  print('НЕ НАШЁЛ <application>')
+          else:
+              print('meta-data аналитики уже есть')
+          # убираем рекламные разрешения (безопасно: код просто получит отказ)
+          for perm in ['com.google.android.gms.permission.AD_ID',
+                       'android.permission.ACCESS_ADSERVICES_ATTRIBUTION',
+                       'android.permission.ACCESS_ADSERVICES_AD_ID']:
+              s2 = re.sub(r'\s*<uses-permission[^>]*name="%s"[^>]*/>' % re.escape(perm), '', s)
+              if s2 != s:
+                  print('убрано разрешение:', perm)
+                  s = s2
+          p.write_text(s)
+          PY
+
+      - name: "Сборка apktool + zipalign + подпись нашим ключом"
+        run: |
+          set -e
+          set -o pipefail
+          java -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk 2>&1 | tee work/build.log | tail -25
+          "$BT/zipalign" -f -p 4 work/unsigned.apk work/aligned.apk
+          "$BT/apksigner" sign --ks handoff/GitHub-RU-v2/app/github-ru.jks \
+            --ks-pass pass:android --key-pass pass:android --ks-key-alias github-ru \
+            --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
+            --out work/signed.apk work/aligned.apk
+          "$BT/apksigner" verify --print-certs work/signed.apk | head -8
+          ls -la work/signed.apk
+
+      - name: "Проверки и отчёт"
+        run: |
+          set -e
+          mkdir -p "$OUT/inspect"
+          {
+            echo "# GitHub RU MOD — сборка из официального APK"
+            echo
+            echo "_$(date -u +%Y-%m-%dT%H:%M:%SZ)_"
+            echo
+            echo "- база: официальный ${PKG_OLD} (${TARGET_VERSION})"
+            echo "- скачано: $(stat -c%s work/download.bin 2>/dev/null || echo 0) байт"
+            echo "- базовый APK: $(stat -c%s work/base.apk 2>/dev/null || echo 0) байт"
+            echo "- собрано: $(stat -c%s work/signed.apk 2>/dev/null || echo 0) байт"
+            echo
+            echo "## Итоговый APK"
+            echo '```'
+            "$BT/aapt2" dump badging work/signed.apk 2>/dev/null | grep -E "package|application-label|sdkVersion|targetSdkVersion|native-code" | head -10
+            echo '```'
+            echo
+            echo "## Подпись"
+            echo '```'
+            "$BT/apksigner" verify --print-certs work/signed.apk 2>&1 | head -6
+            echo '```'
+            echo
+            echo "## Что внутри (крупное)"
+            echo '```'
+            unzip -l work/signed.apk | sort -k1 -n -r | head -15
+            echo '```'
+            echo
+            echo "## Языки в сборке"
+            echo '```'
+            unzip -l work/signed.apk | grep -oE 'res/[^/]+' | sort -u | head -20
+            echo '```'
+          } > "$OUT/REPORT-BUILD.md" 2>&1 || true
+          cat "$OUT/REPORT-BUILD.md"
+          # выжимки для следующих правок (дизайн/редактор/скачивание)
+          cp work/dec/AndroidManifest.xml "$OUT/inspect/AndroidManifest.xml" 2>/dev/null || true
+          cp work/dec/apktool.yml "$OUT/inspect/apktool.yml" 2>/dev/null || true
+          for f in colors.xml styles.xml themes.xml strings.xml; do
+            for d in res/values res/values-night res/values-ru; do
+              [ -f "work/dec/$d/$f" ] && cp "work/dec/$d/$f" "$OUT/inspect/$(echo $d | tr '/' '-')-$f"
+            done
+          done
+          ls work/dec/assets/webview 2>/dev/null | head -20 > "$OUT/inspect/assets-webview.txt" || true
+          find work/dec/res -maxdepth 1 -type d | sort > "$OUT/inspect/res-dirs.txt" || true
+          find work/dec/smali* -name "*.smali" 2>/dev/null | sed 's|work/dec/||' | head -5 >/dev/null || true
+          grep -rl "extends Landroid/webkit/WebViewClient;" work/dec/smali* 2>/dev/null | head -20 > "$OUT/inspect/webviewclients.txt" || true
+          grep -rl "android/webkit/DownloadListener" work/dec/smali* 2>/dev/null | head -10 > "$OUT/inspect/downloadlisteners.txt" || true
+          grep -rl "addJavascriptInterface" work/dec/smali* 2>/dev/null | head -10 > "$OUT/inspect/jsinterfaces.txt" || true
+          find work/dec/smali* -path "*github/rudroid/fileeditor*" -name "*.smali" 2>/dev/null | sed 's|work/dec/||' | head -30 > "$OUT/inspect/fileeditor-classes.txt" || true
+          ls -la "$OUT/inspect"
+
+      - name: "Кладём APK в handoff/ и коммитим"
+        run: |
+          set -e
+          git config user.name "apk-mod-bot"
+          git config user.email "actions@github.com"
+          if [ -f work/signed.apk ]; then
+            cp work/signed.apk "handoff/GitHub-RU-${TARGET_VERSION}-rudroid-mod.apk"
+          fi
+          git add -A handoff/apkmod "handoff/GitHub-RU-${TARGET_VERSION}-rudroid-mod.apk" 2>/dev/null || true
+          git diff --cached --quiet && { echo "нечего коммитить"; exit 0; }
+          git commit -m "github-ru mod: сборка из официального ${TARGET_VERSION} → com.github.rudroid [skip ci]"
+          git push || true
+
+      - name: "Артефакт"
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-ru-mod-apk
+          path: |
+            work/signed.apk
+            handoff/apkmod/REPORT-BUILD.md
+            handoff/apkmod/inspect/**
+          if-no-files-found: warn
+          retention-days: 14
