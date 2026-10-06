@@ -765,12 +765,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         avatar.setName(title);
         boolean hasKey = chat.peerPublic != null && !chat.peerPublic.isEmpty();
         boolean ratchet = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
-        subtitleView.setText(!hasKey
-                ? getString(R.string.peer_no_key_short)
-                : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
+        // ключ больше не требуется для переписки — показываем адрес и статус сессии
+        subtitleView.setText(ratchet ? getString(R.string.ratchet_on) : chat.peer);
 
-        banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
-        bannerText.setText(R.string.peer_no_key);
+        banner.setVisibility(View.GONE);
 
         List<Msg> messages = Store.get(this).messages(uid);
         Msg pinned = null;
@@ -848,10 +846,6 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         if (text.isEmpty()) return;
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
-        if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
-            inviteDialog();
-            return;
-        }
         Msg target = replyTo;
         input.setText("");
         Store.get(this).setDraft(uid, "");
@@ -1103,10 +1097,6 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                            String fileName, boolean round, String caption) {
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
-        if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
-            inviteDialog();
-            return;
-        }
         if (data == null || data.length == 0) {
             Ui.toast(this, getString(R.string.error_generic, "пустое вложение"));
             return;
@@ -1256,10 +1246,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         final long duration = result.durationMs;
         final int[] wave = result.amplitudes;
         chat = Store.get(this).chat(uid);
-        if (chat == null || chat.peerPublic == null || chat.peerPublic.isEmpty()) {
-            inviteDialog();
-            return;
-        }
+        if (chat == null) return;
         Msg target = replyTo;
         setReplyTarget(null);
         Ui.toast(this, getString(R.string.sending_media));

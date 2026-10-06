@@ -35,6 +35,27 @@ public final class MailCrypto {
     private static final String TAG = "MailGramCrypto";
     /** Статический конверт: ECDH(P-256) + HKDF + ChaCha20-Poly1305 (нужен только для старта сессии). */
     public static final int VERSION = 1;
+
+    /** Простой конверт без шифрования: работает без обмена ключами. */
+    public static final int VERSION_PLAIN = 0;
+
+    /** Собирает простой (нешифрованный) конверт версии 0. */
+    public static String sealPlain(String from, String to, String chatUid,
+                                   String id, long ts, byte[] senderPublicRaw, String payload)
+            throws Exception {
+        JSONObject env = new JSONObject();
+        env.put("v", VERSION_PLAIN);
+        env.put("id", id);
+        env.put("ts", ts);
+        env.put("chat", chatUid);
+        env.put("from", from);
+        env.put("to", to);
+        if (senderPublicRaw != null && senderPublicRaw.length > 0) {
+            env.put("pk", B64.str(senderPublicRaw));
+        }
+        env.put("b", payload);
+        return env.toString();
+    }
     /** Конверт с двойным крысиным шагом (Double Ratchet) — основной режим. */
     public static final int VERSION_RATCHET = 2;
     public static final String ALG = "EC-P256-ECDH+HKDF-SHA256+ChaCha20-Poly1305";
@@ -127,9 +148,23 @@ public final class MailCrypto {
         if (json == null) return null;
 
         JSONObject env = new JSONObject(json);
-        int version = env.optInt("v", 0);
+        int version = env.optInt("v", -1);
         if (version == VERSION_RATCHET) {
             return openRatchet(ctx, env, myEmail);
+        }
+        if (version == VERSION_PLAIN) {
+            // простой конверт без шифрования
+            Envelope plain = new Envelope();
+            plain.version = VERSION_PLAIN;
+            plain.id = env.getString("id");
+            plain.ts = env.optLong("ts", 0L);
+            plain.chatUid = env.getString("chat");
+            plain.from = env.getString("from");
+            plain.to = env.getString("to");
+            String plainPk = env.optString("pk", "");
+            if (!plainPk.isEmpty()) plain.senderPublicRaw = B64.bytes(plainPk);
+            plain.payload = env.getString("b");
+            return plain;
         }
         if (version != VERSION) {
             throw new SecurityException("неизвестная версия протокола: " + version);

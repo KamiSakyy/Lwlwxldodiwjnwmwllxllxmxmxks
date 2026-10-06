@@ -419,7 +419,9 @@ public final class SyncEngine {
         Chat chat = store.ensureChat(env.chatUid, peer, null);
         if (!outgoing) {
             // открытый ключ собеседника обновляем из каждого его письма
-            store.setPeerPublic(chat.uid, B64.str(env.senderPublicRaw));
+            if (env.senderPublicRaw != null && env.senderPublicRaw.length == 65) {
+                store.setPeerPublic(chat.uid, B64.str(env.senderPublicRaw));
+            }
         }
 
         Msg msg = new Msg();
@@ -774,10 +776,6 @@ public final class SyncEngine {
      */
     private void sendPayload(final Chat chat, final Msg local, final String payloadJson,
                              final SendCallback callback) {
-        if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
-            fail(callback, "нет открытого ключа собеседника — отправьте приглашение или дождитесь его письма");
-            return;
-        }
         final Store store = Store.get(app);
         final String me = Auth.account(app);
         local.chat = chat.uid;
@@ -791,9 +789,15 @@ public final class SyncEngine {
 
         pool.execute(() -> {
             try {
-                byte[] peerKey = B64.bytes(chat.peerPublic);
-                if (peerKey.length != 65) throw new IllegalStateException("ключ собеседника повреждён");
-                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, local.mid, local.ts, peerKey, payloadJson);
+                // отправка без ключей и шифрования: простой конверт v0 + свой открытый
+                // ключ в приложении (собеседник получит его автоматически)
+                byte[] myPub = null;
+                try {
+                    myPub = com.mailgram.app.crypto.Identity.publicKeyRaw(app);
+                } catch (Exception ignored) {
+                }
+                String envelope = MailCrypto.sealPlain(me, chat.peer, chat.uid,
+                        local.mid, local.ts, myPub, payloadJson);
                 String subject = MailCrypto.SUBJECT_PREFIX + chat.uid;
                 String mime = Mime.build(me, chat.peer, subject, MailCrypto.toMailBody(envelope), local.mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
@@ -950,10 +954,13 @@ public final class SyncEngine {
     /** Синхронизирует «прочитано» с Gmail (снимает метку UNREAD у входящих). */
     public void markReadOnServer(final List<Msg> unreadIncoming) {
         if (unreadIncoming == null || unreadIncoming.isEmpty()) return;
+        // не больше 10 писем за раз — иначе упираемся в минутную квоту Google
+        final List<Msg> batch = unreadIncoming.size() > 10
+                ? new ArrayList<>(unreadIncoming.subList(0, 10)) : unreadIncoming;
         pool.execute(() -> {
             try {
                 String token = Auth.accessTokenFresh(app);
-                for (Msg m : unreadIncoming) {
+                for (Msg m : batch) {
                     if (m.gmailId != null && !m.gmailId.isEmpty()) {
                         GmailApi.markRead(token, m.gmailId);
                     }
