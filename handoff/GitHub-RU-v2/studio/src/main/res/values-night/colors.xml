@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тёмная тема (GitHub Primer Dark — как в оригинальном клиенте) -->
+<resources>
+    <color name="ic_launcher_background">#0D1117</color>
+
+    <color name="bg">#0D1117</color>
+    <color name="surface">#161B22</color>
+    <color name="surface2">#21262D</color>
+    <color name="border">#30363D</color>
+    <color name="text">#E6EDF3</color>
+    <color name="muted">#9AA4B2</color>
+    <color name="accent">#3FB950</color>
+    <color name="accent_text">#04120A</color>
+    <color name="chip">#16351F</color>
+    <color name="danger">#F85149</color>
+</resources>

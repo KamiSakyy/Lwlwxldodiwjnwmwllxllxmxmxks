@@ -1,0 +1,23 @@
+{
+  "name": "github-ru-studio-react",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "React-сборка GitHub RU Studio: редактор файлов, скачивание, инструменты, Node.js. Собирается Vite и упаковывается в APK (assets/web/react), работает офлайн.",
+  "scripts": {
+    "sync": "node scripts/sync-shared.mjs",
+    "predev": "npm run sync",
+    "dev": "vite",
+    "prebuild": "npm run sync",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.3"
+  }
+}

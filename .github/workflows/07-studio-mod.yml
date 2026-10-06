@@ -1,0 +1,366 @@
+name: "07 — Studio MOD: скачивание файлов + редактор + дизайн + оптимизация + вес → APK в handoff"
+
+# Что делает этот workflow:
+#   1. Скачивает Node.js 24 (digidem/nodejs-mobile) и СТРИПИТ libnode.so (минус вес).
+#   2. Собирает React- и Vue-фронт (общее ядро студии: редактор, скачивание, инструменты).
+#   3. Собирает ТРИ варианта APK из одного кода:
+#        full  — Node.js внутри, .so сжат внутри APK (основной, самый компактный с движком)
+#        fast  — Node.js внутри, .so распакован (для сравнения скорости старта)
+#        lite  — БЕЗ libnode.so (минус ~65 МБ; редактор/файлы/инструменты работают)
+#   4. Проверяет подпись, API 28/36, arm64, состав и наличие новых функций.
+#   5. Кладёт APK в папку handoff/ и публикует в Release studio-mod.
+#   6. Всегда коммитит диагностику в handoff/studio-diag (лог сборки, ошибки, размеры).
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "arena/ab8df68b-lwlwxldodiwjnwmwllxllxmxmxks"
+    paths:
+      - ".github/workflows/07-studio-mod.yml"
+      - "handoff/GitHub-RU-v2/**"
+
+permissions:
+  contents: write
+
+env:
+  PROJ: handoff/GitHub-RU-v2
+  NODE_MOBILE_TAG: v24.20.0-0
+  NODE_MOBILE_ZIP: nodejs-mobile-android-24.20.0-0.zip
+  STUDIO_VC: "928"
+
+jobs:
+  studio:
+    name: "Сборка Studio MOD (full / fast / lite) → handoff + Release"
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: "Checkout рабочей ветки"
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: "JDK 17 (AGP 9.4)"
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: "Node.js 22 (сборка React/Vue)"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: "Android SDK 36 + NDK + CMake"
+        run: |
+          set -e
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          echo "SDK: $SDK"
+          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" \
+            "platforms;android-36" "build-tools;36.0.0" "platform-tools" \
+            "ndk;28.2.13676358" "cmake;3.22.1" | tail -3
+          echo "BT=$SDK/build-tools/36.0.0" >> "$GITHUB_ENV"
+          echo "NDKBIN=$SDK/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/bin" >> "$GITHUB_ENV"
+
+      - name: "Node.js 24 для APK: скачать, распаковать, СТРИПНУТЬ libnode.so"
+        run: |
+          set -e
+          JNIDIR="$PROJ/studio/src/main/jniLibs/arm64-v8a"
+          mkdir -p "$JNIDIR" /tmp/nodem
+          rm -f "$JNIDIR/libnode.so"
+          if gh release download "$NODE_MOBILE_TAG" --repo digidem/nodejs-mobile \
+               --pattern "$NODE_MOBILE_ZIP" --dir /tmp/nodem --clobber; then
+            ZIP="/tmp/nodem/$NODE_MOBILE_ZIP"
+            CAND=$(unzip -l "$ZIP" | grep -oE '[^ ]*libnode\.so' | grep -iE 'arm64|aarch64' | head -1 || true)
+            [ -n "$CAND" ] || CAND=$(unzip -l "$ZIP" | grep -oE '[^ ]*libnode\.so' | head -1 || true)
+            echo "Из архива: $CAND"
+            unzip -p "$ZIP" "$CAND" > "$JNIDIR/libnode.so"
+            BEFORE=$(stat -c%s "$JNIDIR/libnode.so")
+            "$NDKBIN/llvm-strip" --strip-unneeded "$JNIDIR/libnode.so" || true
+            AFTER=$(stat -c%s "$JNIDIR/libnode.so")
+            echo "libnode.so: $BEFORE → $AFTER байт (strip сэкономил $((BEFORE-AFTER)))"
+            echo "NODE_STATUS=встроен" >> "$GITHUB_ENV"
+            echo "NODE_SO_BEFORE=$BEFORE" >> "$GITHUB_ENV"
+            echo "NODE_SO_AFTER=$AFTER" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Node.js не скачался — FULL-сборка выйдет с заглушкой моста"
+            echo "NODE_STATUS=не скачался" >> "$GITHUB_ENV"
+          fi
+
+      - name: "Смоук-тест веб-ядра (jsdom): редактор, скачивание, инструменты, консоль"
+        run: |
+          set -e
+          cd tools/studio-smoke
+          npm install --no-audit --no-fund
+          node smoke.mjs
+
+      - name: "Сборка фронта: React (общее ядро студии)"
+        run: |
+          set -e
+          cd "$PROJ/web-react"
+          npm install --no-audit --no-fund
+          npm run build
+          ls -la dist dist/assets
+          echo "REACT_STATUS=собран" >> "$GITHUB_ENV"
+          # Проверяем, что в бандл попали все новые функции (иначе сборка бесполезна).
+          JS=$(cat dist/assets/app-*.js)
+          echo "$JS" | grep -q "Скачать по ссылке" && echo "  ✔ скачивание по ссылке" || (echo "✘ нет «Скачать по ссылке»"; exit 1)
+          echo "$JS" | grep -q "Минифицировать" && echo "  ✔ минификатор" || (echo "✘ нет минификатора"; exit 1)
+          echo "$JS" | grep -q "SHA-256" && echo "  ✔ SHA-256" || (echo "✘ нет SHA-256"; exit 1)
+          echo "$JS" | grep -q "Заменить" && echo "  ✔ поиск и замена" || (echo "✘ нет поиска/замены"; exit 1)
+
+      - name: "Сборка фронта: Vue (то же ядро)"
+        run: |
+          set -e
+          cd "$PROJ/web-vue"
+          npm install --no-audit --no-fund
+          npm run build
+          ls -la dist dist/assets
+          echo "VUE_STATUS=собран" >> "$GITHUB_ENV"
+          JS=$(cat dist/assets/app-*.js)
+          echo "$JS" | grep -q "Скачать по ссылке" && echo "  ✔ скачивание по ссылке" || (echo "✘ нет «Скачать по ссылке»"; exit 1)
+          echo "$JS" | grep -q "Поиск" && echo "  ✔ редактор" || (echo "✘ нет редактора"; exit 1)
+
+      - name: "Сборка 1/3 — FULL (Node.js + сжатые .so)"
+        run: |
+          set -e
+          set -o pipefail
+          cd "$PROJ"
+          chmod +x gradlew
+          sed -i 's/-Xmx4096m/-Xmx6g/; s/MaxMetaspaceSize=1024m/MaxMetaspaceSize=2048m/' gradle.properties
+          rm -rf studio/build/outputs/apk
+          ./gradlew :studio:assembleRelease -PstudioLegacyPackaging=true --no-daemon --stacktrace 2>&1 \
+            | tee /tmp/log-full.txt | tail -25
+          APK=$(find studio/build/outputs/apk/release -name "*.apk" | head -1)
+          cp "$APK" /tmp/studio-full.apk
+          ls -la /tmp/studio-full.apk
+
+      - name: "Сборка 2/3 — FAST (Node.js + распакованные .so, для сравнения)"
+        continue-on-error: true
+        run: |
+          set -e
+          set -o pipefail
+          cd "$PROJ"
+          ./gradlew :studio:assembleRelease -PstudioLegacyPackaging=false --no-daemon 2>&1 \
+            | tee /tmp/log-fast.txt | tail -15
+          APK=$(find studio/build/outputs/apk/release -name "*.apk" | head -1)
+          cp "$APK" /tmp/studio-fast.apk
+          ls -la /tmp/studio-fast.apk
+
+      - name: "Сборка 3/3 — LITE (без Node.js, минус ~65 МБ)"
+        continue-on-error: true
+        run: |
+          set -e
+          set -o pipefail
+          cd "$PROJ"
+          ./gradlew :studio:assembleRelease -PstudioNoNode=true -PstudioLegacyPackaging=true --no-daemon 2>&1 \
+            | tee /tmp/log-lite.txt | tail -15
+          APK=$(find studio/build/outputs/apk/release -name "*.apk" | head -1)
+          cp "$APK" /tmp/studio-lite.apk
+          ls -la /tmp/studio-lite.apk
+
+      - name: "Проверка APK: подпись, API, состав, новые функции"
+        if: always()
+        run: |
+          set +e
+          CHECKS=/tmp/checks.txt
+          : > "$CHECKS"
+          check() { # check "описание" "команда"
+            if eval "$2"; then echo "OK    $1" | tee -a "$CHECKS"; else echo "FAIL  $1" | tee -a "$CHECKS"; fi
+          }
+          for V in full fast lite; do
+            APK=/tmp/studio-$V.apk
+            [ -f "$APK" ] || { echo "MISS  $V — APK не собран" | tee -a "$CHECKS"; continue; }
+            echo "--- $V ($(stat -c%s "$APK") байт)" | tee -a "$CHECKS"
+            "$BT/apksigner" verify --print-certs "$APK" > /tmp/sig-$V.txt 2>&1
+            check "$V: подпись" "grep -q 'Signer #1 certificate DN' /tmp/sig-$V.txt"
+            "$BT/aapt" dump badging "$APK" > /tmp/badging-$V.txt 2>&1
+            check "$V: minSdk 28" "grep -q \"sdkVersion:'28'\" /tmp/badging-$V.txt"
+            check "$V: targetSdk 36" "grep -q \"targetSdkVersion:'36'\" /tmp/badging-$V.txt"
+            check "$V: arm64-v8a" "grep -q \"native-code: 'arm64-v8a'\" /tmp/badging-$V.txt"
+            check "$V: label GitHub RU Studio" "grep -q \"application-label:'GitHub RU Studio'\" /tmp/badging-$V.txt"
+            unzip -l "$APK" > /tmp/zip-$V.txt
+            check "$V: React-фронт" "grep -q 'assets/web/react/index.html' /tmp/zip-$V.txt"
+            check "$V: Vue-фронт" "grep -q 'assets/web/vue/index.html' /tmp/zip-$V.txt"
+            check "$V: server.js" "grep -q 'assets/nodejs/server.js' /tmp/zip-$V.txt"
+            check "$V: нативный мост" "grep -q 'libnodestarter.so' /tmp/zip-$V.txt"
+            if [ "$V" = "lite" ]; then
+              check "lite: libnode.so ОТСУТСТВУЕТ" "! grep -q 'libnode.so' /tmp/zip-$V.txt"
+            else
+              check "$V: libnode.so на месте" "grep -q 'libnode.so' /tmp/zip-$V.txt"
+            fi
+          done
+          # Новые функции — по строкам в dex-строковой таблице.
+          unzip -p /tmp/studio-full.apk classes.dex > /tmp/classes.dex 2>/dev/null || true
+          check "dex: мост файлов StudioFiles" "grep -aq 'saveText\\|listDownloads' /tmp/classes.dex"
+          check "dex: NodeEngine" "grep -aq 'NodeEngine' /tmp/classes.dex"
+          echo "=== ИТОГ ПРОВЕРОК ==="
+          grep -c '^OK' "$CHECKS" | sed 's/^/OK: /'
+          grep -c '^FAIL' "$CHECKS" | sed 's/^/FAIL: /'
+          cat "$CHECKS"
+
+      - name: "Отчёт о размере: handoff/SIZE-STUDIO.md"
+        if: always()
+        run: |
+          set +e
+          OUT="handoff/SIZE-STUDIO.md"
+          mkdir -p handoff
+          size_of() { [ -f "$1" ] && stat -c%s "$1" || echo 0; }
+          human() { python3 -c "import sys;n=int(sys.argv[1]);print(f'{n/1048576:.1f} МБ' if n else '—')" "$1"; }
+          FULL=$(size_of /tmp/studio-full.apk)
+          FAST=$(size_of /tmp/studio-fast.apk)
+          LITE=$(size_of /tmp/studio-lite.apk)
+          {
+            echo "# GitHub RU Studio — размер APK (версия $STUDIO_VC)"
+            echo
+            echo "_Сгенерировано workflow 07 в $(date -u +%Y-%m-%dT%H:%M:%SZ), run #${{ github.run_number }}._"
+            echo
+            echo "## Варианты сборки"
+            echo
+            echo "| Вариант | Размер | Что внутри |"
+            echo "|---|---|---|"
+            echo "| **full** | $(human "$FULL") ($FULL Б) | Node.js 24 внутри, .so **сжат** внутри APK |"
+            echo "| fast | $(human "$FAST") ($FAST Б) | Node.js 24 внутри, .so распакован (быстрее первый старт) |"
+            echo "| **lite** | $(human "$LITE") ($LITE Б) | без Node.js: редактор, файлы, инструменты работают |"
+            echo
+            echo "Было до мода: **68,431,908 Б (65.3 МБ)** — APK со сжатием не использовался, R8 выключен."
+            if [ "$FULL" -gt 0 ]; then
+              echo
+              awk -v f="$FULL" -v o="68431908" 'BEGIN{printf "Экономия основного APK: %d Б (%.1f%%), было %d Б\n", o-f, (1-f/o)*100, o}'
+            fi
+            echo
+            echo "## libnode.so"
+            echo
+            echo "| Этап | Размер |"
+            echo "|---|---|"
+            echo "| скачанный | $(human "${NODE_SO_BEFORE:-0}") (${NODE_SO_BEFORE:-0} Б) |"
+            echo "| после llvm-strip | $(human "${NODE_SO_AFTER:-0}") (${NODE_SO_AFTER:-0} Б) |"
+            echo
+            echo "## Из чего состоит full-APK"
+            echo
+            echo '```'
+            unzip -v /tmp/studio-full.apk 2>/dev/null | head -3
+            unzip -v /tmp/studio-full.apk 2>/dev/null | sort -k1 -n -r | head -14
+            echo '```'
+            echo
+            echo "## Проверки"
+            echo
+            echo '```'
+            cat /tmp/checks.txt 2>/dev/null
+            echo '```'
+            echo
+            echo "## Что изменилось в этом моде"
+            echo
+            echo "1. **Скачивание файлов**: системный загрузчик по ссылке, сохранение текста и Base64"
+            echo "   в «Загрузки/GitHub RU Studio», «Сохранить как» через системный диалог,"
+            echo "   «Поделиться», список скачанного с открытием и удалением."
+            echo "2. **Редактор файлов**: нумерация строк, подсветка синтаксиса (JS/JSON/HTML/CSS/MD),"
+            echo "   поиск и замена, автоотступы, парные скобки, форматирование JSON,"
+            echo "   минификация JS/CSS/HTML, размер шрифта, перенос строк, горячие клавиши."
+            echo "3. **Дизайн**: палитра GitHub, светлая/тёмная темы, чипсы состояния, карточки,"
+            echo "   нижняя навигация с анимацией, тосты, аккуратные отступы и safe-area."
+            echo "4. **Оптимизация**: R8 (минификация + удаление мёртвого кода), ленивый старт"
+            echo "   Node.js, ленивое создание Vue-вкладки, отключённые отладочные логи,"
+            echo "   strip нативного моста, WebView без отладки и лишнего кеша."
+            echo "5. **Вес**: сжатие .so внутри APK + llvm-strip libnode.so + исключение"
+            echo "   лишних ресурсов (kotlin/*, META-INF/*) + LITE-сборка без Node.js."
+            echo
+          } > "$OUT"
+          cat "$OUT"
+
+      - name: "Кладём APK в handoff/ (+ sha256)"
+        if: always()
+        run: |
+          set +e
+          mkdir -p handoff
+          git rm -q --ignore-unmatch handoff/GitHub-RU-Studio-*.apk
+          rm -f handoff/GitHub-RU-Studio-*.apk
+          [ -f /tmp/studio-full.apk ] && cp /tmp/studio-full.apk "handoff/GitHub-RU-Studio-${STUDIO_VC}-full.apk"
+          [ -f /tmp/studio-lite.apk ] && cp /tmp/studio-lite.apk "handoff/GitHub-RU-Studio-${STUDIO_VC}-lite.apk"
+          [ -f /tmp/studio-fast.apk ] && cp /tmp/studio-fast.apk "handoff/GitHub-RU-Studio-${STUDIO_VC}-fast.apk"
+          (cd handoff && sha256sum GitHub-RU-Studio-*.apk > SHA256-STUDIO.txt) 2>/dev/null
+          cat handoff/SHA256-STUDIO.txt 2>/dev/null
+          ls -la handoff/ | head -20
+
+      - name: "Диагностика сборки в репозиторий"
+        if: always()
+        run: |
+          set +e
+          mkdir -p handoff/studio-diag
+          for V in full fast lite; do
+            [ -f "/tmp/log-$V.txt" ] && tail -250 "/tmp/log-$V.txt" > "handoff/studio-diag/log-$V-tail.txt"
+          done
+          grep -h -B2 -A20 -E "FAILED|FAILURE:|error:|Exception|What went wrong" /tmp/log-*.txt 2>/dev/null | head -200 > handoff/studio-diag/errors.txt
+          {
+            echo "run=${{ github.run_number }}"
+            echo "job_status=${{ job.status }}"
+            echo "node=${NODE_STATUS:-?}"
+            echo "react=${REACT_STATUS:-?} vue=${VUE_STATUS:-?}"
+            echo "full_apk=$( [ -f /tmp/studio-full.apk ] && stat -c%s /tmp/studio-full.apk || echo 0 )"
+            echo "fast_apk=$( [ -f /tmp/studio-fast.apk ] && stat -c%s /tmp/studio-fast.apk || echo 0 )"
+            echo "lite_apk=$( [ -f /tmp/studio-lite.apk ] && stat -c%s /tmp/studio-lite.apk || echo 0 )"
+            echo "node_so_before=${NODE_SO_BEFORE:-0} node_so_after=${NODE_SO_AFTER:-0}"
+          } > handoff/studio-diag/meta.txt
+          cp /tmp/checks.txt handoff/studio-diag/checks.txt 2>/dev/null
+          cp /tmp/badging-full.txt handoff/studio-diag/badging-full.txt 2>/dev/null
+          cp handoff/SIZE-STUDIO.md handoff/studio-diag/size-report.md 2>/dev/null
+
+      - name: "Коммит handoff (APK + отчёт + диагностика)"
+        if: always()
+        run: |
+          set +e
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          git add -A handoff/
+          if git diff --cached --quiet; then
+            echo "handoff: изменений нет"
+          else
+            git commit -m "handoff: Studio MOD v${STUDIO_VC} — APK (full/fast/lite) + отчёт по весу [skip ci]"
+            git pull --rebase origin "${{ github.ref_name }}" || true
+            git push origin "HEAD:${{ github.ref_name }}" || git push --force-with-lease origin "HEAD:${{ github.ref_name }}"
+          fi
+
+      - name: "GitHub Release: studio-mod"
+        if: always()
+        run: |
+          set +e
+          TAG="studio-mod"
+          FULL="handoff/GitHub-RU-Studio-${STUDIO_VC}-full.apk"
+          LITE="handoff/GitHub-RU-Studio-${STUDIO_VC}-lite.apk"
+          NOTES="GitHub RU Studio v${STUDIO_VC} — мод: скачивание файлов, редактор, дизайн, оптимизация, меньший вес.
+          |
+          | Вариант | Размер | Что внутри |
+          |---|---|---|
+          | full | $(stat -c%s "$FULL" 2>/dev/null || echo 0) Б | Node.js 24 внутри, .so сжат |
+          | lite | $(stat -c%s "$LITE" 2>/dev/null || echo 0) Б | без Node.js |
+          |
+          | Было | 68 431 908 Б (65.3 МБ) |
+          |---|---|
+          |
+          Требования: Android 9+ (API 28+), arm64-v8a. Интернет не нужен.
+          Подробности — handoff/SIZE-STUDIO.md и handoff/README-STUDIO.md в ветке.
+          Сборка: run #${{ github.run_number }}, $(date -u +%Y-%m-%dT%H:%M:%SZ)."
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "GitHub RU Studio MOD — APK (full + lite)" --notes "$NOTES"
+          else
+            gh release edit "$TAG" --notes "$NOTES"
+          fi
+          for F in "$FULL" "$LITE" handoff/SIZE-STUDIO.md; do
+            [ -f "$F" ] && gh release upload "$TAG" "$F" --clobber
+          done
+          gh release view "$TAG" --json assets --jq '.assets[] | "\(.name) \(.size)"'
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: "Артефакты запуска"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: studio-mod-apk-v${{ env.STUDIO_VC }}
+          path: |
+            handoff/GitHub-RU-Studio-*.apk
+            handoff/SIZE-STUDIO.md
+          if-no-files-found: warn
+          retention-days: 90

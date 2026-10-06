@@ -1,0 +1,22 @@
+{
+  "name": "github-ru-studio-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vue-сборка GitHub RU Studio: тот же редактор, скачивание файлов и инструменты. Собирается Vite и упаковывается в APK (assets/web/vue), работает офлайн.",
+  "scripts": {
+    "sync": "node scripts/sync-shared.mjs",
+    "predev": "npm run sync",
+    "dev": "vite",
+    "prebuild": "npm run sync",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "3.5.43"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.9",
+    "vite": "8.3.3"
+  }
+}

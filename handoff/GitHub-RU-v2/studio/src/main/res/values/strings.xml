@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitHub RU Studio</string>
+    <string name="tab_studio">Студия</string>
+    <string name="tab_vue">Vue</string>
+    <string name="tab_node">Node.js</string>
+    <string name="tab_files">Файлы</string>
+    <string name="theme_toggle">Сменить тему</string>
+    <string name="about">О приложении</string>
+</resources>

@@ -1,0 +1,3 @@
+/* Дополнения Vue-сборки: общие стили студии лежат в studio-core.css */
+html, body, #app { height: 100%; margin: 0; }
+.studio-host { height: 100%; }

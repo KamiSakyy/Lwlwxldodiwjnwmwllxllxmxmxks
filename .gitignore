@@ -1,0 +1,21 @@
+# Сборка фронтов и Gradle — не в репозиторий
+node_modules/
+dist/
+*.log
+
+# Android/Gradle
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+
+# Нативные библиотеки, которые CI скачивает на раннере (libnode.so ~65 МБ)
+handoff/GitHub-RU-v2/studio/src/main/jniLibs/
+
+# Копии общего ядра, которые создаёт sync-shared (источник — shared-web/)
+handoff/GitHub-RU-v2/web-react/src/studio-core.js
+handoff/GitHub-RU-v2/web-react/src/studio-core.css
+handoff/GitHub-RU-v2/web-vue/src/studio-core.js
+handoff/GitHub-RU-v2/web-vue/src/studio-core.css

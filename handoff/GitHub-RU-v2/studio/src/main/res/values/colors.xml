@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Светлая тема (GitHub Primer Light) -->
+<resources>
+    <color name="ic_launcher_background">#0D1117</color>
+
+    <color name="bg">#FFFFFF</color>
+    <color name="surface">#F6F8FA</color>
+    <color name="surface2">#EAEEF2</color>
+    <color name="border">#D0D7DE</color>
+    <color name="text">#1F2328</color>
+    <color name="muted">#59636E</color>
+    <color name="accent">#1F883D</color>
+    <color name="accent_text">#FFFFFF</color>
+    <color name="chip">#DDF4E4</color>
+    <color name="danger">#CF222E</color>
+</resources>
