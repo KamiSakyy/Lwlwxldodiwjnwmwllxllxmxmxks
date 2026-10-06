@@ -101,7 +101,7 @@
     <string name="settings_logout">Выйти из аккаунта</string>
     <string name="logout_title">Выйти?</string>
     <string name="logout_text">Токены будут отозваны, локальная переписка удалена, ключи устройства уничтожены. Письма в Gmail останутся.</string>
-    <string name="logout">Выйти</string>
+    <string name="logout">Сменить аккаунт</string>
     <string name="settings_redirect">Редирект OAuth</string>
     <string name="settings_console">Открыть Google Cloud Console</string>
     <string name="copy_all">Скопировать всё для настройки</string>
@@ -283,7 +283,7 @@
     <string name="drawer_stealth">Режим «Не читать»</string>
     <string name="drawer_sound">Звук уведомлений</string>
     <string name="drawer_encrypt">Шифрование E2EE</string>
-    <string name="drawer_logout">Выйти из аккаунта</string>
+    <string name="drawer_logout">Сменить аккаунт</string>
     <string name="stealth_on">Режим «Не читать» включён</string>
     <string name="stealth_off">Режим «Не читать» выключен</string>
     <string name="sound_on">Звук уведомлений включён</string>

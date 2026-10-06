@@ -21,6 +21,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
@@ -39,8 +40,9 @@ import java.util.regex.Pattern;
 public final class SyncEngine {
 
     private static final String TAG = "MailGramSync";
-    private static final String QUERY = "subject:MailGram -in:draft newer_than:120d";
-    private static final int MAX_MESSAGES = 400;
+    // вся почта без исключения: без фильтра по теме, со спамом и корзиной (includeSpamTrash)
+    private static final String QUERY = "";
+    private static final int MAX_MESSAGES = 1000;
     public static final String SUBJECT_INVITE_MARKER = "X-MailGram-PublicKey:";
     public static final String PREKEY_MARKER = "X-MailGram-PreKey:";
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
@@ -220,6 +222,51 @@ public final class SyncEngine {
         return body;
     }
 
+    /** Обычное (не MailGram) письмо → чат «mail:<адрес>»: тема + начало текста. */
+    private Msg parseForeignMail(Store store, GmailApi.Mail mail, String me) {
+        String from = Store.normalizeEmail(mail.from);
+        String to = Store.normalizeEmail(mail.to);
+        boolean outgoing = me != null && (from.isEmpty() || me.equalsIgnoreCase(from));
+        String peer = outgoing ? to : from;
+        if (peer.isEmpty()) return null;
+        String uid = "mail:" + peer.toLowerCase(Locale.US);
+        Chat chat = store.ensureChat(uid, peer, null);
+        Msg msg = new Msg();
+        msg.mid = mail.id;
+        msg.chat = chat.uid;
+        msg.peer = peer;
+        msg.from = from.isEmpty() ? me : from;
+        msg.to = to;
+        msg.ts = mail.internalDate > 0 ? mail.internalDate : System.currentTimeMillis();
+        msg.outgoing = outgoing;
+        msg.gmailId = mail.id;
+        msg.state = Msg.STATE_SENT;
+        msg.unread = mail.unread && !outgoing;
+        msg.type = "mail";
+        String subject = mail.subject == null ? "" : mail.subject.trim();
+        String text = plainTextPreview(bodyWithDecoded(mail.body));
+        if (!subject.isEmpty() && !text.isEmpty()) msg.text = subject + "\n" + text;
+        else if (!subject.isEmpty()) msg.text = subject;
+        else msg.text = text.isEmpty() ? "(пустое письмо)" : text;
+        return msg;
+    }
+
+    /** Текст письма для предпросмотра: HTML чистим, длину ограничиваем. */
+    static String plainTextPreview(String body) {
+        if (body == null) return "";
+        String t = body.trim();
+        if (t.startsWith("<")) {
+            t = t.replaceAll("(?is)<(script|style)[^>]*>.*?</\\1>", " ")
+                    .replaceAll("(?i)<br\\s*/?>", "\n")
+                    .replaceAll("(?s)<[^>]+>", " ")
+                    .replace("&nbsp;", " ").replace("&amp;", "&")
+                    .replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", "\"")
+                    .replace("&#39;", "'");
+        }
+        t = t.replaceAll("[ \\t]+", " ").replaceAll("\n{3,}", "\n\n").trim();
+        return t.length() > 400 ? t.substring(0, 400) + "…" : t;
+    }
+
     private Msg parseMail(Store store, GmailApi.Mail mail, String me) throws Exception {
         String subject = mail.subject == null ? "" : mail.subject.trim();
         MailCrypto.Envelope env = null;
@@ -255,7 +302,8 @@ public final class SyncEngine {
                 throw se;
             }
         } else {
-            return null;
+            // не MailGram-письмо: показываем как обычную почту — «вся почта» в чатах
+            return parseForeignMail(store, mail, me);
         }
 
         if (env == null) {
@@ -400,8 +448,46 @@ public final class SyncEngine {
         sendText(chat, text, replyTo == null ? null : replyTo.mid, replyQuote(replyTo), callback);
     }
 
+    /** Обычный e-mail из чата «вся почта»: настоящий текст, без конверта MailGram. */
+    private void sendPlainMail(final Chat chat, final String text, final SendCallback callback) {
+        final Store store = Store.get(app);
+        final String me = Auth.account(app);
+        final Msg local = new Msg();
+        local.mid = UUID.randomUUID().toString();
+        local.chat = chat.uid;
+        local.peer = chat.peer;
+        local.from = me;
+        local.to = chat.peer;
+        local.ts = System.currentTimeMillis();
+        local.outgoing = true;
+        local.type = "mail";
+        local.text = text;
+        local.state = Msg.STATE_SENDING;
+        store.put(chat.uid, local);
+        notifyDirty();
+        if (callback != null) callback.onSent(local);
+        pool.execute(() -> {
+            try {
+                String mime = Mime.build(me, chat.peer, "", text, local.mid, null);
+                String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
+                store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
+                notifyDirty();
+            } catch (Exception e) {
+                Log.w(TAG, "отправка обычного письма не удалась: " + e);
+                store.updateState(chat.uid, local.mid, Msg.STATE_FAILED, null, describe(e));
+                if (callback != null) callback.onError(describe(e));
+                notifyDirty();
+            }
+        });
+    }
+
     private void sendText(final Chat chat, final String text, final String replyMid,
                           final String replyPreview, final SendCallback callback) {
+        if (chat.uid != null && chat.uid.startsWith("mail:")) {
+            // чат обычной почты: отправляем настоящий e-mail без шифрования
+            sendPlainMail(chat, text, callback);
+            return;
+        }
         JSONObject payload = new JSONObject();
         try {
             payload.put("t", "text");

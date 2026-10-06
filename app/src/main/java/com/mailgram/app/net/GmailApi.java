@@ -44,7 +44,8 @@ public final class GmailApi {
         List<String> ids = new ArrayList<>();
         String pageToken = null;
         do {
-            StringBuilder url = new StringBuilder(BASE).append("/messages?maxResults=100");
+            StringBuilder url = new StringBuilder(BASE)
+                    .append("/messages?maxResults=100&includeSpamTrash=true");
             if (query != null && !query.isEmpty()) {
                 url.append("&q=").append(java.net.URLEncoder.encode(query, "UTF-8"));
             }
