@@ -108,10 +108,22 @@ jobs:
             echo 'apksigner was not found in Android build-tools.' >&2
             exit 1
           fi
-          "$apksigner" verify --verbose --print-certs "$APK_PATH" > "$RUNNER_TEMP/apk-signature.txt"
-          actual_sha1="$(awk -F ': ' '/Signer #1 certificate SHA-1 digest:/ { print tolower($2); exit }' "$RUNNER_TEMP/apk-signature.txt" | tr -d ':[:space:]')"
+          "$apksigner" verify --verbose --print-certs "$APK_PATH" > "$RUNNER_TEMP/apk-signature.txt" 2>&1
+          signer_digests="$(python3 - "$RUNNER_TEMP/apk-signature.txt" <<'PY'
+          import re
+          import sys
+          digests = {}
+          for line in open(sys.argv[1], encoding='utf-8', errors='replace'):
+              match = re.search(r'(?i)certificate\s+SHA-(1|256)\s+digest:\s*([0-9a-f:]+)', line)
+              if match:
+                  digests[match.group(1)] = match.group(2).lower().replace(':', '')
+          print(f"{digests.get('1', '')}|{digests.get('256', '')}")
+          PY
+          )"
+          actual_sha1="${signer_digests%%|*}"
+          actual_sha256="${signer_digests#*|}"
           echo "Verified APK signer SHA-1: ${actual_sha1:-unavailable}"
-          echo "::notice title=APK signer::SHA-1 ${actual_sha1:-unavailable}"
+          echo "::notice title=APK signer digests::SHA-1=${actual_sha1:-unavailable}; SHA-256=${actual_sha256:-unavailable}"
           if [[ "$actual_sha1" != "$EXPECTED_SIGNER_SHA1" ]]; then
             echo "::error::Signer mismatch; expected the previously observed VK signer SHA-1 $EXPECTED_SIGNER_SHA1, received ${actual_sha1:-none}."
             exit 1
