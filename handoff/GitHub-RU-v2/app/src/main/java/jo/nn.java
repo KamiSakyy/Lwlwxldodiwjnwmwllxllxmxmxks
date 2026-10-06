@@ -6,7 +6,7 @@ public final class nnShadow {
     public String b;
     public vx.a c;
 
-    public nn(String str, String str2, vx.a aVar) {
+    public Object nn(String str, String str2, vx.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

@@ -30,7 +30,7 @@ public class l {
     public static Object a(Object p1) { return null; }
     public static Object c(Object p1) { return null; }
     public static Object k(Object p1) { return null; }
-    public Object l(Object p1) { return null; }
+    public static Object l(Object p1) { return null; }
     public static Object r(Object p1) { return null; }
     public static Object s(Object p1) { return null; }
     public static Object u(Object p1) { return null; }

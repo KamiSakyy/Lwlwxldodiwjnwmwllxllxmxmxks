@@ -8,7 +8,7 @@ import z01.v0;
 public final class hShadow {
     public oa.g a;
 
-    public h(oa.g gVar) {
+    public Object h(oa.g gVar) {
         k71.k.g(gVar, "reacteesService");
         this.a = gVar;
     }

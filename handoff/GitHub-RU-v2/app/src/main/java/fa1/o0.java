@@ -37,7 +37,7 @@ public final class o0Shadow {
     public x0Shadow[] w;
     public boolean x;
 
-    public o0(l1 l1Var, Class cls, Method method) {
+    public Object o0(l1 l1Var, Class cls, Method method) {
         this.a = l1Var;
         this.b = cls;
         this.c = method;

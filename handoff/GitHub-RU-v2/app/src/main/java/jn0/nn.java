@@ -6,7 +6,7 @@ public final class nnShadow {
     public tn b;
     public String c;
 
-    public nn(String str, tn tnVar, String str2) {
+    public Object nn(String str, tn tnVar, String str2) {
         this.a = str;
         this.b = tnVar;
         this.c = str2;

@@ -67,7 +67,7 @@ public final class dShadow {
     public Object f;
     public Object g;
 
-    public d() {
+    public Object d() {
         this.a = new AtomicBoolean();
         this.b = null;
         this.c = new HashMap(16, 1.0f);
@@ -457,7 +457,7 @@ public final class dShadow {
         return t.q.u(arrayList2);
     }
 
-    public d(Context context) {
+    public Object d(Context context) {
         String str;
         String replaceAll;
         String str2 = ((z0) s41.c.a.b(context)).a;
@@ -494,7 +494,7 @@ public final class dShadow {
         this.g = file5;
     }
 
-    public d(String str, dShadow dVar, w41.c cVar) {
+    public Object d(String str, dShadow dVar, w41.c cVar) {
         this.d = new t1(this, false);
         this.e = new t1(this, true);
         this.f = new q1(5);
@@ -504,7 +504,7 @@ public final class dShadow {
         this.c = cVar;
     }
 
-    public d(q qVar, b bVar, c51.a aVar, f fVar, dShadow dVar, v vVar, w41.c cVar) {
+    public Object d(q qVar, b bVar, c51.a aVar, f fVar, dShadow dVar, v vVar, w41.c cVar) {
         this.a = qVar;
         this.b = bVar;
         this.c = aVar;
@@ -514,7 +514,7 @@ public final class dShadow {
         this.g = cVar;
     }
 
-    public d(Context context, v8.c cVar, f9.a aVar, c9.a aVar2, WorkDatabase workDatabase, d9.q qVar, ArrayList arrayList) {
+    public Object d(Context context, v8.c cVar, f9.a aVar, c9.a aVar2, WorkDatabase workDatabase, d9.q qVar, ArrayList arrayList) {
         k.g(context, "context");
         k.g(aVar2, "foregroundProcessor");
         this.a = cVar;

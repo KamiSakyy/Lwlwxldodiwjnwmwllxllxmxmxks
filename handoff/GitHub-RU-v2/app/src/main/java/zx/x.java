@@ -9,7 +9,7 @@ public final class xShadow {
     public t4 c;
     public dw.c d;
 
-    public x(String str, yw.b bVar, t4 t4Var, dw.c cVar) {
+    public Object x(String str, yw.b bVar, t4 t4Var, dw.c cVar) {
         this.a = str;
         this.b = bVar;
         this.c = t4Var;

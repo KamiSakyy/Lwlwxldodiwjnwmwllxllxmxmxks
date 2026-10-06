@@ -12,7 +12,7 @@ public final class a0Shadow {
     public m f;
     public vx.a g;
 
-    public a0(String str, w wVar, q qVar, y yVar, xShadow xVar, m mVar, vx.a aVar) {
+    public Object a0(String str, w wVar, q qVar, y yVar, xShadow xVar, m mVar, vx.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = wVar;

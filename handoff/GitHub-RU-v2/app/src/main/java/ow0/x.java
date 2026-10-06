@@ -8,7 +8,7 @@ public final class xShadow {
     public int b;
     public List c;
 
-    public x(int i, String str, List list) {
+    public Object x(int i, String str, List list) {
         this.a = str;
         this.b = i;
         this.c = list;

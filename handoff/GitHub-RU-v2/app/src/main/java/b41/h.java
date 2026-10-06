@@ -10,7 +10,7 @@ public abstract class hShadow extends c41.d implements c41.i {
     public final /* synthetic */ k i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h(k kVar, t tVar, w21.g gVar) {
+    public Object h(k kVar, t tVar, w21.g gVar) {
         super(0);
         this.i = kVar;
         attachInterface(this, "com.google.android.play.core.appupdate.protocol.IAppUpdateServiceCallback");

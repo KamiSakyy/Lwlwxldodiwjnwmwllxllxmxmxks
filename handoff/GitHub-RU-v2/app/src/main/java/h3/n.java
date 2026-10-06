@@ -7,5 +7,5 @@ package h3;
 public class n {
     public n() {
     }
-    public Object d(Object p1, int p2, boolean p3) { return null; }
+    public static Object d(Object p1, int p2, boolean p3) { return null; }
 }

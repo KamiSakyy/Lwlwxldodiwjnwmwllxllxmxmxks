@@ -5,7 +5,7 @@ public final class xShadow {
     public String a;
     public w b;
 
-    public x(String str, w wVar) {
+    public Object x(String str, w wVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = wVar;

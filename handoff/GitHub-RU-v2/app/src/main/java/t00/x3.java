@@ -11,7 +11,7 @@ public final class x3Shadow extends c71.c {
     public int y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x3(rm0.j4 j4Var, c71.c cVar) {
+    public Object x3(rm0.j4 j4Var, c71.c cVar) {
         super(cVar);
         this.x = j4Var;
     }

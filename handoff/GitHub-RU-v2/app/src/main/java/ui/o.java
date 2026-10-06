@@ -7,7 +7,7 @@ import y71.y;
 public final class oShadow {
     public oa.g a;
 
-    public o(oa.g gVar) {
+    public Object o(oa.g gVar) {
         k71.k.g(gVar, "agentsService");
         this.a = gVar;
     }

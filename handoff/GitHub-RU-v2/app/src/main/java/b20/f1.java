@@ -6,7 +6,7 @@ public final class f1Shadow {
     public String b;
     public g20.r0 c;
 
-    public f1(String str, String str2, g20.r0 r0Var) {
+    public Object f1(String str, String str2, g20.r0 r0Var) {
         this.a = str;
         this.b = str2;
         this.c = r0Var;

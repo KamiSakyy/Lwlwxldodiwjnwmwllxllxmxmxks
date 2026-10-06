@@ -7,7 +7,7 @@ public final class xShadow {
     public ArrayList a;
     public x01.i b;
 
-    public x(ArrayList arrayList, x01.i iVar) {
+    public Object x(ArrayList arrayList, x01.i iVar) {
         this.a = arrayList;
         this.b = iVar;
     }

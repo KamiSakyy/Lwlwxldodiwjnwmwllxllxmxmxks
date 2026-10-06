@@ -7,7 +7,7 @@ public final class xShadow {
     public t c;
     public String d;
 
-    public x(String str, String str2, t tVar, String str3) {
+    public Object x(String str, String str2, t tVar, String str3) {
         this.a = str;
         this.b = str2;
         this.c = tVar;

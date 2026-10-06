@@ -4,7 +4,7 @@ package zk;
 public final class a0Shadow {
     public oa.g a;
 
-    public a0(oa.g gVar) {
+    public Object a0(oa.g gVar) {
         k71.k.g(gVar, "service");
         this.a = gVar;
     }
@@ -14,6 +14,6 @@ public final class a0Shadow {
         return b31.b.J(((z01.d1) this.a.a(jVar)).a(str, str2, str3), jVar, cVar);
     }
 
-    public a0(Object... a) {
+    public Object a0(Object... a) {
     }
 }

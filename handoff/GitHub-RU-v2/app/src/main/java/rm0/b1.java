@@ -12,7 +12,7 @@ public final class b1Shadow extends c71.c {
     public kc0.sa z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b1(c00.f fVar, a71.c cVar) {
+    public Object b1(c00.f fVar, a71.c cVar) {
         super(cVar);
         this.w = fVar;
     }

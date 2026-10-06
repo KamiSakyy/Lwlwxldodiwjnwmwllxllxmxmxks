@@ -10,7 +10,7 @@ public final class xShadow {
     public long c;
     public long[] d;
 
-    public x(SerialDescriptor serialDescriptor, f0.o0 o0Var) {
+    public Object x(SerialDescriptor serialDescriptor, f0.o0 o0Var) {
         k71.k.g(serialDescriptor, "descriptor");
         this.a = serialDescriptor;
         this.b = o0Var;

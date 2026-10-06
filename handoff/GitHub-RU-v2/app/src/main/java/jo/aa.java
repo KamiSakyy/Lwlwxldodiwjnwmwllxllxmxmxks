@@ -4,7 +4,7 @@ package jo;
 public final class aaShadow {
     public Boolean a;
 
-    public aa(Boolean bool) {
+    public Object aa(Boolean bool) {
         this.a = bool;
     }
 

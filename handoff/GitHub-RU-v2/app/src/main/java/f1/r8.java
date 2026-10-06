@@ -7,5 +7,5 @@ package f1;
 public class r8 {
     public r8() {
     }
-    public Object b(Object p1, Object p2) { return null; }
+    public static Object b(Object p1, Object p2) { return null; }
 }

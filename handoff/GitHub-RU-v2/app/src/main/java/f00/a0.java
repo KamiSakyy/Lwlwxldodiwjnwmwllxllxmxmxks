@@ -7,7 +7,7 @@ public final class a0Shadow {
     public mx a;
     public String b;
 
-    public a0(mx mxVar, String str) {
+    public Object a0(mx mxVar, String str) {
         this.a = mxVar;
         this.b = str;
     }

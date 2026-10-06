@@ -38,7 +38,7 @@ public final class vShadow {
         s = new b();
     }
 
-    public v(String str, int i, String str2) {
+    public Object v(String str, int i, String str2) {
         this.r = str2;
     }
 

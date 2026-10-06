@@ -11,7 +11,7 @@ public final class xShadow {
     public String d;
     public String e;
 
-    public x(String str, String str2, yv yvVar, String str3, String str4) {
+    public Object x(String str, String str2, yv yvVar, String str3, String str4) {
         this.a = str;
         this.b = str2;
         this.c = yvVar;

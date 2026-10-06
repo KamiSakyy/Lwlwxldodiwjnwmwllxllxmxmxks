@@ -6,7 +6,7 @@ public final class joShadow {
     public String b;
     public ko c;
 
-    public jo(String str, String str2, ko koVar) {
+    public Object jo(String str, String str2, ko koVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

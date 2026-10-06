@@ -25,5 +25,5 @@ public class q {
     public static Object f(Object p1, Object p2) { return null; }
     public static o k(Object p1) { return null; }
     public e8 pShadow(Object p1) { return null; }
-    public Avatar q(Object p1) { return null; }
+    public static Avatar q(Object p1) { return null; }
 }

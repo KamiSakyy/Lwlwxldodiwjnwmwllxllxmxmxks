@@ -5,6 +5,6 @@ package a0;
  * Оригинал потерян при декомпиляции APK.
  */
 public class d2Shadow {
-    public d2() {
+    public Object d2() {
     }
 }

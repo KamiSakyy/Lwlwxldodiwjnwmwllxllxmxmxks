@@ -7,7 +7,7 @@ public final class j0Shadow extends c71.c {
     public final /* synthetic */ k0 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public j0(k0 k0Var, a71.c cVar) {
+    public Object j0(k0 k0Var, a71.c cVar) {
         super(cVar);
         this.w = k0Var;
     }
@@ -87,7 +87,7 @@ public final class j0Shadow extends c71.c {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class jShadow {
-        public j() {
+        public Object j() {
         }
     }
 

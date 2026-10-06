@@ -4,7 +4,7 @@ package jo;
 public final class a0Shadow implements aaShadow.m0 {
     public y a;
 
-    public a0(y yVar) {
+    public Object a0(y yVar) {
         this.a = yVar;
     }
 

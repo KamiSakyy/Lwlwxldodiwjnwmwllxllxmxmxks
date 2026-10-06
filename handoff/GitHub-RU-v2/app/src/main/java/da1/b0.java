@@ -227,6 +227,6 @@ public abstract class b0Shadow {
         }
     }
 
-    public b0(Object... a) {
+    public Object b0(Object... a) {
     }
 }

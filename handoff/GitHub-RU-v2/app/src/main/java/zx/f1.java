@@ -10,7 +10,7 @@ public final class f1Shadow {
     public boolean f;
     public eq.g g;
 
-    public f1(eq.g gVar, String str, String str2, String str3, String str4, boolean z, boolean z2) {
+    public Object f1(eq.g gVar, String str, String str2, String str3, String str4, boolean z, boolean z2) {
         this.a = str;
         this.b = str2;
         this.c = str3;

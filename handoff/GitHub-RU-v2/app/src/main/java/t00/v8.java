@@ -7,7 +7,7 @@ public final class v8Shadow extends c71.c {
     public int w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public v8(c9 c9Var, c71.c cVar) {
+    public Object v8(c9 c9Var, c71.c cVar) {
         super(cVar);
         this.v = c9Var;
     }

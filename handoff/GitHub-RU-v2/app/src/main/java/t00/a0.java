@@ -7,7 +7,7 @@ public final class a0Shadow extends c71.c {
     public final /* synthetic */ s01.f w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a0(s01.f fVar, a71.c cVar) {
+    public Object a0(s01.f fVar, a71.c cVar) {
         super(cVar);
         this.w = fVar;
     }

@@ -8,7 +8,7 @@ public final class xShadow {
     public f40 b;
     public kw0.a c;
 
-    public x(String str, f40 f40Var, kw0.a aVar) {
+    public Object x(String str, f40 f40Var, kw0.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = f40Var;

@@ -15,7 +15,7 @@ public final class aaShadow implements z01.l1, yb0, mi0, y90, yf0 {
     public com.github.service.wrapper.j s;
     public v71.v t;
 
-    public aa(com.github.service.wrapper.j jVar, v71.v vVar, int i) {
+    public Object aa(com.github.service.wrapper.j jVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

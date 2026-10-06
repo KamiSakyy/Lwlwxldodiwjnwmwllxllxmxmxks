@@ -7,7 +7,7 @@ public final class a0Shadow implements aaShadow.n0 {
     public static final xShadow Companion = new xShadow();
     public String r;
 
-    public a0(String str) {
+    public Object a0(String str) {
         this.r = str;
     }
 

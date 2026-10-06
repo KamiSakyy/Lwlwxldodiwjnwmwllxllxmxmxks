@@ -46,7 +46,7 @@ public final class b1Shadow implements Comparator {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class jShadow {
-        public j() {
+        public Object j() {
         }
     }
 

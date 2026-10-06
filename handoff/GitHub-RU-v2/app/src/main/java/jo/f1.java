@@ -7,7 +7,7 @@ public final class f1Shadow {
     public e1 c;
     public lv.c d;
 
-    public f1(String str, String str2, e1 e1Var, lv.c cVar) {
+    public Object f1(String str, String str2, e1 e1Var, lv.c cVar) {
         this.a = str;
         this.b = str2;
         this.c = e1Var;

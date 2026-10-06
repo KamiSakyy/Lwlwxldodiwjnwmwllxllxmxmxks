@@ -6,7 +6,7 @@ public final class a5Shadow {
     public final aa1.b b = aa.t0.d;
     public aa1.b c;
 
-    public a5(aa.u0 u0Var, aa1.b bVar) {
+    public Object a5(aa.u0 u0Var, aa1.b bVar) {
         this.a = u0Var;
         this.c = bVar;
     }

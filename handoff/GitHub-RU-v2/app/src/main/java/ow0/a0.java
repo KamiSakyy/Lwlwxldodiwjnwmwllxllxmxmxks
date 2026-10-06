@@ -8,7 +8,7 @@ public final class a0Shadow implements aa.v0 {
     public String b;
     public String c;
 
-    public a0(e0 e0Var, String str, String str2) {
+    public Object a0(e0 e0Var, String str, String str2) {
         this.a = e0Var;
         this.b = str;
         this.c = str2;

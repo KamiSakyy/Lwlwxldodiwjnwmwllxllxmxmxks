@@ -12,7 +12,7 @@ public final class rShadow implements Thread.UncaughtExceptionHandler {
     public s41.b d;
     public final AtomicBoolean e = new AtomicBoolean(false);
 
-    public r(s21.a aVar, d51.d dVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, s41.b bVar) {
+    public Object r(s21.a aVar, d51.d dVar, Thread.UncaughtExceptionHandler uncaughtExceptionHandler, s41.b bVar) {
         this.a = aVar;
         this.b = dVar;
         this.c = uncaughtExceptionHandler;

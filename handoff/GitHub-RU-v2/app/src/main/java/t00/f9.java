@@ -12,7 +12,7 @@ public final class f9Shadow extends c71.c {
     public int z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public f9(rm0.k9 k9Var, c71.c cVar) {
+    public Object f9(rm0.k9 k9Var, c71.c cVar) {
         super(cVar);
         this.y = k9Var;
     }

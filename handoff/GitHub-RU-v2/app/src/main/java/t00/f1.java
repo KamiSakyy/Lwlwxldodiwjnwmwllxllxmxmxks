@@ -1815,7 +1815,7 @@ public final class f1Shadow implements y71.j {
         }
     }
 
-    public f1(y71.j jVar, r3 r3Var) {
+    public Object f1(y71.j jVar, r3 r3Var) {
         this.r = 28;
         this.s = jVar;
     }

@@ -10,7 +10,7 @@ public final class dShadow {
     public zl.b b;
     public z c;
 
-    public d(g gVar, zl.b bVar, z zVar) {
+    public Object d(g gVar, zl.b bVar, z zVar) {
         k.g(gVar, "serializer");
         k.g(bVar, "store");
         k.g(zVar, "applicationScope");

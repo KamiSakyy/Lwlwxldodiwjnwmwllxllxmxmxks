@@ -10,7 +10,7 @@ public final class s0Shadow {
     public z b;
     public ConcurrentHashMap c;
 
-    public s0(w wVar, z zVar) {
+    public Object s0(w wVar, z zVar) {
         k71.k.g(wVar, "fetchTaskEventsPagedUseCase");
         k71.k.g(zVar, "forUserSessionEventsStoreFactory");
         this.a = wVar;

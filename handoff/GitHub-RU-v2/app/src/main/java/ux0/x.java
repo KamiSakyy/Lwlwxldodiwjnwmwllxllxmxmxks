@@ -9,7 +9,7 @@ public final class xShadow {
     public v c;
     public e2 d;
 
-    public x(String str, String str2, v vVar, e2 e2Var) {
+    public Object x(String str, String str2, v vVar, e2 e2Var) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

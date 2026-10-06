@@ -18,7 +18,7 @@ public final class a0Shadow implements aa.h0 {
     public gu0.c l;
     public gt0.a m;
 
-    public a0(String str, String str2, z zVar, String str3, String str4, f40 f40Var, boolean z, boolean z2, boolean z3, boolean z4, p0 p0Var, gu0.c cVar, gt0.a aVar) {
+    public Object a0(String str, String str2, z zVar, String str3, String str4, f40 f40Var, boolean z, boolean z2, boolean z3, boolean z4, p0 p0Var, gu0.c cVar, gt0.a aVar) {
         this.a = str;
         this.b = str2;
         this.c = zVar;

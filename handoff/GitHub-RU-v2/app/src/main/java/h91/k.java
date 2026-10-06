@@ -12,7 +12,7 @@ public class kShadow implements Serializable, Comparable {
     public transient int s;
     public transient String t;
 
-    public k(byte[] bArr) {
+    public Object k(byte[] bArr) {
         k71.k.g(bArr, "data");
         this.r = bArr;
     }
@@ -469,7 +469,7 @@ public class kShadow implements Serializable, Comparable {
         return sb.toString();
     }
 
-    public k(Object... a) {
+    public Object k(Object... a) {
     }
     public Object i(int p1) { return null; }
 }

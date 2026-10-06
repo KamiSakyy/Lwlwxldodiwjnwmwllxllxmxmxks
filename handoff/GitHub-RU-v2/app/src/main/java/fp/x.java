@@ -14,7 +14,7 @@ public final class xShadow implements aa.w0 {
     public aa1.b v;
     public aa.u0 w;
 
-    public x(String str, String str2, int i, aa.u0 u0Var, aa1.b bVar, aa.u0 u0Var2) {
+    public Object x(String str, String str2, int i, aa.u0 u0Var, aa1.b bVar, aa.u0 u0Var2) {
         k71.k.g(str, "owner");
         k71.k.g(str2, "name");
         this.r = str;

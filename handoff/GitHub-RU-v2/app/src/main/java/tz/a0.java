@@ -6,7 +6,7 @@ public final class a0Shadow {
     public b1 b;
     public vx.a c;
 
-    public a0(String str, b1 b1Var, vx.a aVar) {
+    public Object a0(String str, b1 b1Var, vx.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = b1Var;

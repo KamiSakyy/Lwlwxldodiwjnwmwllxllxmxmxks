@@ -12,7 +12,7 @@ public abstract class h1Shadow extends s {
     public g1 b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h1(KSerializer kSerializer) {
+    public Object h1(KSerializer kSerializer) {
         super(kSerializer);
         k71.k.g(kSerializer, "primitiveSerializer");
         this.b = new g1(kSerializer.getDescriptor());

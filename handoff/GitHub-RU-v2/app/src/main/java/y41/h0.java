@@ -7,7 +7,7 @@ public final class h0Shadow extends r1 {
     public String a;
     public byte[] b;
 
-    public h0(String str, byte[] bArr) {
+    public Object h0(String str, byte[] bArr) {
         this.a = str;
         this.b = bArr;
     }

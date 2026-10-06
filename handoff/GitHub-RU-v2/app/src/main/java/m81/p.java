@@ -14,7 +14,7 @@ public final class pShadow extends c71.c {
     public /* synthetic */ Object z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public p(l7.d dVar, c71.a aVar) {
+    public Object p(l7.d dVar, c71.a aVar) {
         super(aVar);
         this.A = dVar;
     }

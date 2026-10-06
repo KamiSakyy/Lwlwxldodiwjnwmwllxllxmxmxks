@@ -46,7 +46,7 @@ public final class y9Shadow implements z01.k1, yb0, mi0, y90, yf0 {
     public com.github.service.wrapper.bShadow s;
     public v71.v t;
 
-    public y9(com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
+    public Object y9(com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

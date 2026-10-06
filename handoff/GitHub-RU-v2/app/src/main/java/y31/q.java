@@ -18,7 +18,7 @@ public final class qShadow extends ArrayAdapter {
     public final /* synthetic */ r t;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public q(r rVar, Context context, int i, String[] strArr) {
+    public Object q(r rVar, Context context, int i, String[] strArr) {
         super(context, i, strArr);
         this.t = rVar;
         a();

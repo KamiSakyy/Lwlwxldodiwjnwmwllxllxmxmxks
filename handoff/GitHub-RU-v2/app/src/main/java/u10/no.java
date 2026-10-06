@@ -6,7 +6,7 @@ public final class noShadow {
     public String b;
     public ea0.c1 c;
 
-    public no(String str, String str2, ea0.c1 c1Var) {
+    public Object no(String str, String str2, ea0.c1 c1Var) {
         this.a = str;
         this.b = str2;
         this.c = c1Var;

@@ -16,7 +16,7 @@ public final class xShadow extends c71.j implements j71.e {
     public final /* synthetic */ c71.j f3731y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x(int i, a71.c cVar, j71.e eVar) {
+    public Object x(int i, a71.c cVar, j71.e eVar) {
         super(2, cVar);
         this.f3728v = i;
         switch (i) {

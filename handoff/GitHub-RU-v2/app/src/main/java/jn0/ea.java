@@ -8,7 +8,7 @@ public final class eaShadow implements aaShadow.w0 {
     public String r;
     public aa.u0 s;
 
-    public ea(aa.u0 u0Var, String str) {
+    public Object ea(aa.u0 u0Var, String str) {
         k71.k.g(str, "nodeId");
         this.r = str;
         this.s = u0Var;

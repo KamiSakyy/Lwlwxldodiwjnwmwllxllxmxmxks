@@ -22,7 +22,7 @@ public final class cShadow {
         i = c30.d.b(":authority");
     }
 
-    public c(h91.kShadow kVar, h91.kShadow kVar2) {
+    public Object c(h91.kShadow kVar, h91.kShadow kVar2) {
         k71.k.g(kVar, "name");
         k71.k.g(kVar2, "value");
         this.a = kVar;
@@ -50,13 +50,13 @@ public final class cShadow {
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public c(String str, String str2) {
+    public Object c(String str, String str2) {
         this(c30.d.b(str), c30.d.b(str2));
         h91.kShadow kVar = h91.kShadow.u;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
-    public c(h91.kShadow kVar, String str) {
+    public Object c(h91.kShadow kVar, String str) {
         this(kVar, c30.d.b(str));
         k71.k.g(kVar, "name");
         k71.k.g(str, "value");

@@ -9,7 +9,7 @@ public final class b1Shadow extends c71.j implements j71.f {
     public final /* synthetic */ Object z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b1(a71.c cVar, j71.g gVar) {
+    public Object b1(a71.c cVar, j71.g gVar) {
         super(3, cVar);
         this.z = gVar;
     }
@@ -109,7 +109,7 @@ public final class b1Shadow extends c71.j implements j71.f {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public b1(j71.f fVar, a71.c cVar) {
+    public Object b1(j71.f fVar, a71.c cVar) {
         super(3, cVar);
         this.z = fVar;
     }

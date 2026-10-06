@@ -9,7 +9,7 @@ public final class xShadow extends z {
     public String s;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x(String str) {
+    public Object x(String str) {
         super(str);
         k71.k.g(str, "discussionId");
         this.s = str;

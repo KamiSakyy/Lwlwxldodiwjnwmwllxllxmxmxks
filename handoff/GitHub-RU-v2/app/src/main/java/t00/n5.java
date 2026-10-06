@@ -7,7 +7,7 @@ public final class n5Shadow extends c71.c {
     public final /* synthetic */ b5 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public n5(b5 b5Var, a71.c cVar) {
+    public Object n5(b5 b5Var, a71.c cVar) {
         super(cVar);
         this.w = b5Var;
     }

@@ -4,7 +4,7 @@ package zx;
 public final class a0Shadow implements aa.m0 {
     public b0 a;
 
-    public a0(b0 b0Var) {
+    public Object a0(b0 b0Var) {
         this.a = b0Var;
     }
 

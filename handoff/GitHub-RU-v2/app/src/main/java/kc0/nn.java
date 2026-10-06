@@ -8,7 +8,7 @@ public final class nnShadow implements aaShadow.w0 {
     public String r;
     public String s;
 
-    public nn(String str, String str2) {
+    public Object nn(String str, String str2) {
         k71.k.g(str, "repositoryOwner");
         k71.k.g(str2, "repositoryName");
         this.r = str;

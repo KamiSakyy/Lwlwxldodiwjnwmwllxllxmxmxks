@@ -14,7 +14,7 @@ public final class z6Shadow extends c71.c {
     public /* synthetic */ Object z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public z6(t00.c9 c9Var, c71.c cVar) {
+    public Object z6(t00.c9 c9Var, c71.c cVar) {
         super(cVar);
         this.A = c9Var;
     }

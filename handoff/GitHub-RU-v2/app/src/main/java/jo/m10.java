@@ -6,7 +6,7 @@ public final class m10Shadow {
     public d10 b;
     public String c;
 
-    public m10(String str, d10 d10Var, String str2) {
+    public Object m10(String str, d10 d10Var, String str2) {
         this.a = str;
         this.b = d10Var;
         this.c = str2;

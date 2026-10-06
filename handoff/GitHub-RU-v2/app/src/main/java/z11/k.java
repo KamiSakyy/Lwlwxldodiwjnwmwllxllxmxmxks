@@ -11,7 +11,7 @@ import java.util.Arrays;
 public abstract class kShadow extends c41.d implements j0 {
     public int g;
 
-    public k(byte[] bArr) {
+    public Object k(byte[] bArr) {
         super("com.google.android.gms.common.internal.ICertData");
         u.b(bArr.length == 25);
         this.g = Arrays.hashCode(bArr);

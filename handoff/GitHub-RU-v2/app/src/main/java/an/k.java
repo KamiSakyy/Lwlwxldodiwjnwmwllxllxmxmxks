@@ -7,7 +7,7 @@ public final class kShadow {
     public b2 a;
     public m b;
 
-    public k(b2 b2Var, m mVar) {
+    public Object k(b2 b2Var, m mVar) {
         k71.k.g(b2Var, "updatePullRequestUseCase");
         k71.k.g(mVar, "markDownTaskListHandler");
         this.a = b2Var;

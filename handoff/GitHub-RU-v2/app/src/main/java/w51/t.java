@@ -10,7 +10,7 @@ public final class tShadow {
     public String b;
     public String c;
 
-    public t(String str, String str2) {
+    public Object t(String str, String str2) {
         String substring = (str2 == null || !str2.startsWith("/topics/")) ? str2 : str2.substring(8);
         if (substring == null || !d.matcher(substring).matches()) {
             throw new IllegalArgumentException(f1.e.z("Invalid topic name: ", substring, " does not match the allowed format [a-zA-Z0-9-_.~%]{1,900}."));

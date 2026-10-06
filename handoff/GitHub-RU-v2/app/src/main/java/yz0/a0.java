@@ -9,7 +9,7 @@ public final class a0Shadow extends c0 {
     public String s;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a0(String str) {
+    public Object a0(String str) {
         super(str);
         k71.k.g(str, "issueOrPullRequestId");
         this.s = str;

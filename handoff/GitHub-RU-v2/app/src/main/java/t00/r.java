@@ -10,7 +10,7 @@ public final class rShadow extends c71.c {
     public int z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public r(rm0.o oVar, c71.c cVar) {
+    public Object r(rm0.o oVar, c71.c cVar) {
         super(cVar);
         this.y = oVar;
     }

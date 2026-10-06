@@ -4,7 +4,7 @@ package u10;
 public final class eaShadow implements aaShadow.v0 {
     public ga a;
 
-    public ea(ga gaVar) {
+    public Object ea(ga gaVar) {
         this.a = gaVar;
     }
 

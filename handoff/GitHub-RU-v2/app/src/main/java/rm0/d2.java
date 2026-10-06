@@ -7,7 +7,7 @@ public final class d2Shadow extends c71.c {
     public final /* synthetic */ i0 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public d2(i0 i0Var, a71.c cVar) {
+    public Object d2(i0 i0Var, a71.c cVar) {
         super(cVar);
         this.w = i0Var;
     }

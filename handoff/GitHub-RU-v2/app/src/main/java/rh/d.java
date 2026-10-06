@@ -64,7 +64,7 @@ public final class d extends f {
     public static final class cShadow implements d {
         public fl.b a;
 
-        public c(fl.b bVar) {
+        public Object c(fl.b bVar) {
             k71.k.g(bVar, "executionError");
             this.a = bVar;
         }

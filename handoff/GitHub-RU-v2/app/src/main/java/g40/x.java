@@ -4,7 +4,7 @@ package g40;
 public final class xShadow {
     public String a;
 
-    public x(String str) {
+    public Object x(String str) {
         this.a = str;
     }
 

@@ -15,7 +15,7 @@ public final class xShadow extends b0 {
     /* renamed from: f, reason: collision with root package name */
     public float f26964f;
 
-    public x(float f6, float f10, float f11, float f12) {
+    public Object x(float f6, float f10, float f11, float f12) {
         super(2);
         this.f26961c = f6;
         this.f26962d = f10;

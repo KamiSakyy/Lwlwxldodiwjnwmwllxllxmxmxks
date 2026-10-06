@@ -6,7 +6,7 @@ public final class y00Shadow {
     public String b;
     public yu.h c;
 
-    public y00(String str, String str2, yu.h hVar) {
+    public Object y00(String str, String str2, yu.h hVar) {
         this.a = str;
         this.b = str2;
         this.c = hVar;

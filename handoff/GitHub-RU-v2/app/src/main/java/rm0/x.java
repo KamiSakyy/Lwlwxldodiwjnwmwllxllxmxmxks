@@ -7,7 +7,7 @@ public final class xShadow extends c71.c {
     public final /* synthetic */ nm.f w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x(nm.f fVar, a71.c cVar) {
+    public Object x(nm.f fVar, a71.c cVar) {
         super(cVar);
         this.w = fVar;
     }

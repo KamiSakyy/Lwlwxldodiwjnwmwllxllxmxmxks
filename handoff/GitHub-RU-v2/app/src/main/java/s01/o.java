@@ -28,7 +28,7 @@ public final class oShadow {
         return (oShadow[]) t.clone();
     }
 
-    public o(Object... a) {
+    public Object o(Object... a) {
     }
     public Object ordinal() { return null; }
 }

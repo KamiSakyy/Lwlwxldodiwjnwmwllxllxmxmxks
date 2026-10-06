@@ -4,7 +4,7 @@ package kc0;
 public final class aaShadow implements aaShadow.v0 {
     final ba a;
 
-    public aa(ba baVar) {
+    public Object aa(ba baVar) {
         this.a = baVar;
     }
 

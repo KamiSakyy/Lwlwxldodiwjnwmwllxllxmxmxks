@@ -7,7 +7,7 @@ public final class hShadow {
     public h01.q a;
     public Object b;
 
-    public h(h01.q qVar, List list) {
+    public Object h(h01.q qVar, List list) {
         k71.k.g(qVar, "timeline");
         this.a = qVar;
         this.b = list;

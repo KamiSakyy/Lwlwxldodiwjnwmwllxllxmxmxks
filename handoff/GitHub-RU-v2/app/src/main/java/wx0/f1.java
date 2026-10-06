@@ -5,7 +5,7 @@ public final class f1Shadow {
     public c0 a;
     public v b;
 
-    public f1(c0 c0Var, v vVar) {
+    public Object f1(c0 c0Var, v vVar) {
         this.a = c0Var;
         this.b = vVar;
     }

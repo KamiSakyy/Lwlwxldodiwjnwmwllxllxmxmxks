@@ -7,7 +7,7 @@ public final class e9Shadow extends c71.c {
     public final /* synthetic */ d8 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public e9(d8 d8Var, a71.c cVar) {
+    public Object e9(d8 d8Var, a71.c cVar) {
         super(cVar);
         this.w = d8Var;
     }

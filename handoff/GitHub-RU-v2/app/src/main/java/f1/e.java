@@ -5,7 +5,7 @@ package f1;
  * Оригинал потерян при декомпиляции APK.
  */
 public class e {
-    public e() {
+    public static Object e() {
     }
 
     public e(Object p1) {

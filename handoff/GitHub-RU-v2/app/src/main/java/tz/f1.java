@@ -12,7 +12,7 @@ public final class f1Shadow {
     public LocalDate f;
     public u g;
 
-    public f1(String str, String str2, String str3, String str4, int i, LocalDate localDate, u uVar) {
+    public Object f1(String str, String str2, String str3, String str4, int i, LocalDate localDate, u uVar) {
         this.a = str;
         this.b = str2;
         this.c = str3;

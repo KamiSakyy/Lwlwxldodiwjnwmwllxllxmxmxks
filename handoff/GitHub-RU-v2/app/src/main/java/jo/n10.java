@@ -10,7 +10,7 @@ public final class n10Shadow {
     public List d;
     public String e;
 
-    public n10(String str, m10Shadow m10Var, g10 g10Var, List list, String str2) {
+    public Object n10(String str, m10Shadow m10Var, g10 g10Var, List list, String str2) {
         this.a = str;
         this.b = m10Var;
         this.c = g10Var;

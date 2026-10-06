@@ -5,7 +5,7 @@ public final class a0Shadow {
     public String a;
     public vo.a b;
 
-    public a0(String str, vo.a aVar) {
+    public Object a0(String str, vo.a aVar) {
         this.a = str;
         this.b = aVar;
     }

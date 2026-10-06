@@ -19,7 +19,7 @@ public final class xShadow implements i51.c {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class h0Shadow {
-        public h0() {
+        public Object h0() {
         }
     }
 }

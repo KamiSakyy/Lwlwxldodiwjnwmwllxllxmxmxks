@@ -71,7 +71,7 @@ public final class aaShadow {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class xShadow {
-        public x() {
+        public Object x() {
         }
     }
 

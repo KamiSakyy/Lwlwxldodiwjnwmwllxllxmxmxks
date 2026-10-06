@@ -5,7 +5,7 @@ public final class a0Shadow {
     public String a;
     public g20.a b;
 
-    public a0(String str, g20.a aVar) {
+    public Object a0(String str, g20.a aVar) {
         this.a = str;
         this.b = aVar;
     }

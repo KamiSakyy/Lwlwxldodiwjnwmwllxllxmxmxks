@@ -6,7 +6,7 @@ public final class zShadow {
     public long b;
     public f1.o0 c;
 
-    public z(d2.e0Shadow e0Var, long j, f1.o0 o0Var) {
+    public Object z(d2.e0Shadow e0Var, long j, f1.o0 o0Var) {
         this.a = e0Var;
         this.b = j;
         this.c = o0Var;

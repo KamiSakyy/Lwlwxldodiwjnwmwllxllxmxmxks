@@ -21,7 +21,7 @@ public final class yShadow {
     /* renamed from: f, reason: collision with root package name */
     public int f33647f;
 
-    public y(int i) {
+    public Object y(int i) {
         if (i >= 0) {
             d(o0.d(i));
         } else {

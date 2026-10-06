@@ -4,7 +4,7 @@ package ui;
 public final class cShadow {
     public oa.g a;
 
-    public c(oa.g gVar) {
+    public Object c(oa.g gVar) {
         k71.k.g(gVar, "agentsService");
         this.a = gVar;
     }

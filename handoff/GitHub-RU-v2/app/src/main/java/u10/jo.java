@@ -9,7 +9,7 @@ public final class joShadow implements aaShadow.n0 {
     public List s;
     public aa1.b t;
 
-    public jo(String str, List list, aa1.b bVar) {
+    public Object jo(String str, List list, aa1.b bVar) {
         k71.k.g(str, "checkSuiteId");
         k71.k.g(list, "environments");
         this.r = str;

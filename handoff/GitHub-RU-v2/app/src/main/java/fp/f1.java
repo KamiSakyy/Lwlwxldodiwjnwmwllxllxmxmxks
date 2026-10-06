@@ -5,7 +5,7 @@ public final class f1Shadow {
     public String a;
     public eq.g b;
 
-    public f1(String str, eq.g gVar) {
+    public Object f1(String str, eq.g gVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = gVar;

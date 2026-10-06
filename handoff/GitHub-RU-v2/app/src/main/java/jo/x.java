@@ -7,7 +7,7 @@ public final class xShadow implements aaShadow.n0 {
     public static final t Companion = new t();
     public String r;
 
-    public x(String str) {
+    public Object x(String str) {
         k71.k.g(str, "option_id");
         this.r = str;
     }

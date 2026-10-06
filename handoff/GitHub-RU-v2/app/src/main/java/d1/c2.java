@@ -5,7 +5,7 @@ package d1;
  * Оригинал потерян при декомпиляции APK.
  */
 public class c2Shadow {
-    public c2() {
+    public Object c2() {
     }
 
 
@@ -20,6 +20,6 @@ public class c2Shadow {
         public c() {
         }
     }
-    public c2(Object p1, Object p2, Object p3, Object p4) {
+    public Object c2(Object p1, Object p2, Object p3, Object p4) {
     }
 }

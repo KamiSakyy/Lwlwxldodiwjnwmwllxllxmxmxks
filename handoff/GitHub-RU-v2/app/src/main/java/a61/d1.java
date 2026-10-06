@@ -15,7 +15,7 @@ public final class d1Shadow extends Handler {
     public long b;
     public ArrayList c;
 
-    public d1(Looper looper) {
+    public Object d1(Looper looper) {
         super(looper);
         this.c = new ArrayList();
     }

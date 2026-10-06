@@ -14,7 +14,7 @@ public final class y0Shadow extends c71.c {
     public jc z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public y0(c00.f fVar, a71.c cVar) {
+    public Object y0(c00.f fVar, a71.c cVar) {
         super(cVar);
         this.w = fVar;
     }

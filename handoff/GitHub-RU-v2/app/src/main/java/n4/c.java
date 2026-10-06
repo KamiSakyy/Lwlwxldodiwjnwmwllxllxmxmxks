@@ -25,7 +25,7 @@ public final class cShadow implements Application.ActivityLifecycleCallbacks {
     /* renamed from: w, reason: collision with root package name */
     public boolean f29428w = false;
 
-    public c(Activity activity) {
+    public Object c(Activity activity) {
         this.f29424s = activity;
         this.f29425t = activity.hashCode();
     }

@@ -12,7 +12,7 @@ public final class m7Shadow extends c71.c {
     public int y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public m7(y9 y9Var, c71.c cVar) {
+    public Object m7(y9 y9Var, c71.c cVar) {
         super(cVar);
         this.x = y9Var;
     }

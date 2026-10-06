@@ -10,7 +10,7 @@ public final class f1Shadow {
     public boolean d;
     public double e;
 
-    public f1(LocalDate localDate, Boolean bool, Double d, boolean z, double d2) {
+    public Object f1(LocalDate localDate, Boolean bool, Double d, boolean z, double d2) {
         this.a = localDate;
         this.b = bool;
         this.c = d;

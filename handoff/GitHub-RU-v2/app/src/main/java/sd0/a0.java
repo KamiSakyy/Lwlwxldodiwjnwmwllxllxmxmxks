@@ -8,7 +8,7 @@ public final class a0Shadow {
     public String a;
     public List b;
 
-    public a0(String str, List list) {
+    public Object a0(String str, List list) {
         this.a = str;
         this.b = list;
     }

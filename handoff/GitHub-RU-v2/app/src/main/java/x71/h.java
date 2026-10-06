@@ -40,7 +40,7 @@ public class hShadow implements l {
     public static final /* synthetic */ AtomicReferenceFieldUpdater z = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "_closeCause$volatile");
     public static final /* synthetic */ AtomicReferenceFieldUpdater A = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "closeHandler$volatile");
 
-    public h(int i) {
+    public Object h(int i) {
         this.r = i;
         if (i < 0) {
             throw new IllegalArgumentException(s0.i("Invalid channel capacity: ", i, ", should be >=0").toString());

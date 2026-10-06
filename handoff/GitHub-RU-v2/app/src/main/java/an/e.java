@@ -7,7 +7,7 @@ public final class eShadow {
     public t0 a;
     public m b;
 
-    public e(t0 t0Var, m mVar) {
+    public Object e(t0 t0Var, m mVar) {
         k71.k.g(t0Var, "updateDiscussionCommentUseCase");
         k71.k.g(mVar, "markDownTaskListHandler");
         this.a = t0Var;

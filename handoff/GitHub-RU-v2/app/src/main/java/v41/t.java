@@ -11,7 +11,7 @@ public final class tShadow implements Runnable {
     public final /* synthetic */ int r = 0;
     public final /* synthetic */ Object s;
 
-    public t(Runnable runnable) {
+    public Object t(Runnable runnable) {
         this.s = runnable;
     }
 
@@ -42,7 +42,7 @@ public final class tShadow implements Runnable {
         }
     }
 
-    public t(ExecutorService executorService) {
+    public Object t(ExecutorService executorService) {
         TimeUnit timeUnit = TimeUnit.SECONDS;
         this.s = executorService;
     }

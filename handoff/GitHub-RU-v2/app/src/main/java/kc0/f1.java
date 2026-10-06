@@ -4,7 +4,7 @@ package kc0;
 public final class f1Shadow {
     public int a;
 
-    public f1(int i) {
+    public Object f1(int i) {
         this.a = i;
     }
 

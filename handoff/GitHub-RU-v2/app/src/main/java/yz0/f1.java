@@ -11,7 +11,7 @@ public final class f1Shadow {
     public final Entry$EntryType e;
     public boolean f;
 
-    public f1(int i, String str, String str2, String str3) {
+    public Object f1(int i, String str, String str2, String str3) {
         Entry$EntryType entry$EntryType;
         this.a = str;
         this.b = str2;

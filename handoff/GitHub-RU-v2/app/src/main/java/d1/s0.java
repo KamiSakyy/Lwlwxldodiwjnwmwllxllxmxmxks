@@ -15,7 +15,7 @@ public final class s0Shadow {
     /* renamed from: d, reason: collision with root package name */
     public boolean f21219d;
 
-    public s0(s0.c0 c0Var, long j10, r0 r0Var, boolean z10) {
+    public Object s0(s0.c0 c0Var, long j10, r0 r0Var, boolean z10) {
         this.f21216a = c0Var;
         this.f21217b = j10;
         this.f21218c = r0Var;

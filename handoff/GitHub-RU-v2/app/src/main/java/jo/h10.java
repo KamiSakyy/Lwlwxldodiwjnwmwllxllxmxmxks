@@ -6,7 +6,7 @@ public final class h10Shadow implements aaShadow.v0 {
     public String b;
     public String c;
 
-    public h10(n10Shadow n10Var, String str, String str2) {
+    public Object h10(n10Shadow n10Var, String str, String str2) {
         this.a = n10Var;
         this.b = str;
         this.c = str2;

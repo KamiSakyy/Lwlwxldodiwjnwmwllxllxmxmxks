@@ -10,7 +10,7 @@ public final class v1Shadow implements z01.o, mi0, yf0 {
     public com.github.service.wrapper.b s;
     public v71.v t;
 
-    public v1(com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public Object v1(com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

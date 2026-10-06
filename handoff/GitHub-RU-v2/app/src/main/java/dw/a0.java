@@ -7,7 +7,7 @@ public final class a0Shadow implements aa.h0 {
     public y c;
     public pu.a d;
 
-    public a0(String str, String str2, y yVar, pu.a aVar) {
+    public Object a0(String str, String str2, y yVar, pu.a aVar) {
         this.a = str;
         this.b = str2;
         this.c = yVar;

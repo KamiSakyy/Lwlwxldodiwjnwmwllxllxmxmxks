@@ -13,7 +13,7 @@ public final class c2Shadow extends c71.c {
     public int f24933w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public c2(e2 e2Var, c71.c cVar) {
+    public Object c2(e2 e2Var, c71.c cVar) {
         super(cVar);
         this.f24932v = e2Var;
     }

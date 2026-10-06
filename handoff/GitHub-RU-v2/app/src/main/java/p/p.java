@@ -11,7 +11,7 @@ public final class pShadow extends FrameLayout implements oShadow.c {
     public CollapsibleActionView f30300r;
 
     /* JADX WARN: Multi-variable type inference failed */
-    public p(View view) {
+    public Object p(View view) {
         super(view.getContext());
         this.f30300r = (CollapsibleActionView) view;
         addView(view);

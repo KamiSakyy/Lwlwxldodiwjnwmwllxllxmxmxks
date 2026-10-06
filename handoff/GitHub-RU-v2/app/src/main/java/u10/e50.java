@@ -116,7 +116,7 @@ public final class e50 implements aaShadow.n0 {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class xShadow {
-        public x() {
+        public Object x() {
         }
     }
 }

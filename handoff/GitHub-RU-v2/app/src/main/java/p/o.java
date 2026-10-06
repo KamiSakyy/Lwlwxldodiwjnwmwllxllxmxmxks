@@ -11,7 +11,7 @@ public final class oShadow implements ActionProvider.VisibilityListener {
     /* renamed from: b, reason: collision with root package name */
     public ActionProvider f30299b;
 
-    public o(s sVar, ActionProvider actionProvider) {
+    public Object o(s sVar, ActionProvider actionProvider) {
         this.f30299b = actionProvider;
     }
 

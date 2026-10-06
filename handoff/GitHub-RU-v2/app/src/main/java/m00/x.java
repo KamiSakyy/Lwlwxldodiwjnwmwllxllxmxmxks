@@ -9,7 +9,7 @@ public final class xShadow implements v0 {
     public String b;
     public String c;
 
-    public x(z zVar, String str, String str2) {
+    public Object x(z zVar, String str, String str2) {
         this.a = zVar;
         this.b = str;
         this.c = str2;

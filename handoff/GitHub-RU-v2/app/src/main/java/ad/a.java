@@ -22,7 +22,7 @@ public interface a {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class d {
-        public d() {
+        public static Object d() {
         }
     }
 

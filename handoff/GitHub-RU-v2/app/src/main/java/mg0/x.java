@@ -10,7 +10,7 @@ public final class xShadow {
     public boolean c;
     public String d;
 
-    public x(String str, String str2, boolean z, boolean z2) {
+    public Object x(String str, String str2, boolean z, boolean z2) {
         this.a = z;
         this.b = str;
         this.c = z2;

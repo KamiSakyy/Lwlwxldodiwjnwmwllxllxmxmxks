@@ -13,4 +13,9 @@ public @interface e {
     public static Iterator q(Object p1, Object p2) { return null; }
     public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public static Object z(Object p1, Object p2, Object p3) { return null; }
+    String b() default "";
+    String c() default "";
+    String q() default "";
+    String x() default "";
+    String z() default "";
 }

@@ -41,7 +41,7 @@ public final class qShadow {
         g = "Crashlytics Android SDK/19.4.4";
     }
 
-    public q(Context context, v vVar, a aVar, e51.a aVar2, d51.d dVar) {
+    public Object q(Context context, v vVar, a aVar, e51.a aVar2, d51.d dVar) {
         this.a = context;
         this.b = vVar;
         this.c = aVar;

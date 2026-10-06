@@ -539,7 +539,7 @@ public abstract class joShadow implements aaShadow.a {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class qxShadow {
-        public qx() {
+        public Object qx() {
         }
     }
 

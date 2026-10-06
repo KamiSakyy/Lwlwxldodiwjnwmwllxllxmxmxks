@@ -4,7 +4,7 @@ package jo;
 public final class eaShadow {
     public String a;
 
-    public ea(String str) {
+    public Object ea(String str) {
         this.a = str;
     }
 

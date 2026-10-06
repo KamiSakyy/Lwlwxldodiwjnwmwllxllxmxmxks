@@ -7,7 +7,7 @@ public final class l3Shadow extends c71.c {
     public final /* synthetic */ t2 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public l3(t2 t2Var, a71.c cVar) {
+    public Object l3(t2 t2Var, a71.c cVar) {
         super(cVar);
         this.w = t2Var;
     }

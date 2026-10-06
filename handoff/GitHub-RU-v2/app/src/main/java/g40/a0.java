@@ -6,7 +6,7 @@ public final class a0Shadow {
     public String b;
     public String c;
 
-    public a0(String str, String str2, String str3) {
+    public Object a0(String str, String str2, String str3) {
         this.a = str;
         this.b = str2;
         this.c = str3;

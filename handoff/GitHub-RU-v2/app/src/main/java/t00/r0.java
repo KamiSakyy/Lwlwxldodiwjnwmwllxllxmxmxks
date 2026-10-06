@@ -14,7 +14,7 @@ public final class r0Shadow implements z01.g, mi0, yf0 {
     public v71.v t;
     public s01.p u;
 
-    public r0(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public Object r0(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

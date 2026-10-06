@@ -8,7 +8,7 @@ public final class kShadow implements j71.a {
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ GitHubFragment f27850r;
 
-    public k(GitHubFragment gitHubFragment) {
+    public Object k(GitHubFragment gitHubFragment) {
         this.f27850r = gitHubFragment;
     }
 

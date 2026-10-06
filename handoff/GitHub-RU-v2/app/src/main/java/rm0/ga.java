@@ -7,7 +7,7 @@ public final class gaShadow extends c71.c {
     public final /* synthetic */ o8 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public ga(o8 o8Var, a71.c cVar) {
+    public Object ga(o8 o8Var, a71.c cVar) {
         super(cVar);
         this.w = o8Var;
     }

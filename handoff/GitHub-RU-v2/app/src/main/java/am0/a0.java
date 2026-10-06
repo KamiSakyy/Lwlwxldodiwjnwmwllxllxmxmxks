@@ -10,7 +10,7 @@ public final class a0Shadow {
     public p0 d;
     public b e;
 
-    public a0(String str, String str2, int i, p0 p0Var, b bVar) {
+    public Object a0(String str, String str2, int i, p0 p0Var, b bVar) {
         this.a = str;
         this.b = str2;
         this.c = i;

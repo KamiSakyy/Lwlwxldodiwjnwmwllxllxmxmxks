@@ -67,7 +67,7 @@ public final class k3 implements aa.h0 {
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
     public static class xShadow {
-        public x() {
+        public Object x() {
         }
     }
 }

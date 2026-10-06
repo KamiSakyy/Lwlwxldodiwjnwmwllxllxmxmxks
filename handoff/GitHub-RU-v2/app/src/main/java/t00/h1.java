@@ -7,7 +7,7 @@ public final class h1Shadow extends c71.c {
     public final /* synthetic */ f1Shadow w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h1(f1Shadow f1Var, a71.c cVar) {
+    public Object h1(f1Shadow f1Var, a71.c cVar) {
         super(cVar);
         this.w = f1Var;
     }

@@ -8,7 +8,7 @@ public final class a0Shadow {
     public String b;
     public c0 c;
 
-    public a0(String str, String str2, c0 c0Var) {
+    public Object a0(String str, String str2, c0 c0Var) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

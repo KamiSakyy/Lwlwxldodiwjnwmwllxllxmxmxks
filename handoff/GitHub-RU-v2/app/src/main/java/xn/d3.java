@@ -10,7 +10,7 @@ public final class d3Shadow {
     public ZonedDateTime d;
     public boolean e;
 
-    public d3(int i, double d, int i2, ZonedDateTime zonedDateTime, boolean z) {
+    public Object d3(int i, double d, int i2, ZonedDateTime zonedDateTime, boolean z) {
         this.a = i;
         this.b = d;
         this.c = i2;

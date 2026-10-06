@@ -211,7 +211,7 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
         /*
             Code decompiled incorrectly, please refer to instructions dump.
         */
-        public b(Context context) {
+        public Object b(Context context) {
             super(b.a.d(context, r1));
             k.g(context, "context");
             b.a aVar = lg.bShadow.Companion;

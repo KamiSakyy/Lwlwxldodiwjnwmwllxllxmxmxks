@@ -6,7 +6,7 @@ public final class g1Shadow {
     public boolean b;
     public String c;
 
-    public g1(String str, boolean z, boolean z2) {
+    public Object g1(String str, boolean z, boolean z2) {
         this.a = z;
         this.b = z2;
         this.c = str;

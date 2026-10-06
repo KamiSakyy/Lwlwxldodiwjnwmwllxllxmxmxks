@@ -20,7 +20,7 @@ public final class tShadow extends c71.c {
     public j0 z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public t(u uVar, c71.c cVar) {
+    public Object t(u uVar, c71.c cVar) {
         super(cVar);
         this.D = uVar;
     }

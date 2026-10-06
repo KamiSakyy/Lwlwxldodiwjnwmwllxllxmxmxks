@@ -5,7 +5,7 @@ package f0;
  * Оригинал потерян при декомпиляции APK.
  */
 public class h0Shadow {
-    public h0() {
+    public Object h0() {
     }
 
 

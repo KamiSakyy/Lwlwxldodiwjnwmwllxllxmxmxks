@@ -739,6 +739,6 @@ public final class bShadow {
         E();
     }
 
-    public b(Object... a) {
+    public Object b(Object... a) {
     }
 }

@@ -4,7 +4,7 @@ package j00;
 public final class xShadow implements aa.m0 {
     public z a;
 
-    public x(z zVar) {
+    public Object x(z zVar) {
         this.a = zVar;
     }
 

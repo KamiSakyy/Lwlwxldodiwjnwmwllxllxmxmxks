@@ -6,7 +6,7 @@ import java.util.List;
 public final class nnShadow {
     public List a;
 
-    public nn(List list) {
+    public Object nn(List list) {
         this.a = list;
     }
 

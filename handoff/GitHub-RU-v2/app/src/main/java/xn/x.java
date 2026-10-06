@@ -122,7 +122,7 @@ public final class xShadow implements y {
         return o.toString();
     }
 
-    public x(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0Shadow a0Var, List list2, List list3, List list4, wShadow wVar, r0 r0Var, f0 f0Var, boolean z, f3 f3Var) {
+    public Object x(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0Shadow a0Var, List list2, List list3, List list4, wShadow wVar, r0 r0Var, f0 f0Var, boolean z, f3 f3Var) {
         k71.k.g(str, "id");
         k71.k.g(str2, "threadId");
         k71.k.g(str3, "content");

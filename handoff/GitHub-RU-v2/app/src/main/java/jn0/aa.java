@@ -6,7 +6,7 @@ import java.util.List;
 public final class aaShadow {
     public List a;
 
-    public aa(List list) {
+    public Object aa(List list) {
         this.a = list;
     }
 

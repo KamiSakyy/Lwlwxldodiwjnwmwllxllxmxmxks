@@ -32,7 +32,7 @@ public final class a0Shadow {
         return (a0Shadow[]) v.clone();
     }
 
-    public a0(Object... a) {
+    public Object a0(Object... a) {
     }
     public Object ordinal() { return null; }
 }

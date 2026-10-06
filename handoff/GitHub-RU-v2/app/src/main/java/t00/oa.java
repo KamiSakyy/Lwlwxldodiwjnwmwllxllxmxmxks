@@ -7,7 +7,7 @@ public final class oaShadow extends c71.c {
     public final /* synthetic */ x9 w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public oa(x9 x9Var, a71.c cVar) {
+    public Object oa(x9 x9Var, a71.c cVar) {
         super(cVar);
         this.w = x9Var;
     }

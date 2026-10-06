@@ -28,7 +28,7 @@ public final class sShadow extends y {
         i = new byte[]{45, 45};
     }
 
-    public s(h91.kShadow kVar, q qVar, List list) {
+    public Object s(h91.kShadow kVar, q qVar, List list) {
         k71.k.g(kVar, "boundaryByteString");
         k71.k.g(qVar, "type");
         this.a = kVar;
