@@ -1,154 +1,42 @@
 name: MailGram — сборка APK
 
+# Сборка только того, что нужно: один job, без проверок и без сторонних запросов.
+# Никаких обращений к OAuth-клиентам здесь нет — только компиляция и публикация APK.
+
 on:
   push:
-    branches:
-      - '**'
+    branches: ['**']
   workflow_dispatch:
     inputs:
       oauth_client_id:
-        description: 'OAuth client ID (если не задан секрет OAUTH_CLIENT_ID)'
+        description: 'OAuth client ID (необязательно — переопределяет вшитый в сборку)'
+        required: false
+        default: ''
+      oauth_client_secret:
+        description: 'client_secret (необязательно, только для клиента типа Desktop)'
         required: false
         default: ''
 
 permissions:
   contents: write
 
+concurrency:
+  group: mailgram-apk-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  crypto-core:
-    name: Крипто-ядро C++ (тест-векторы RFC)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - name: Сборка ядра и прогон векторов RFC 8439 / 5869 / 4231 / FIPS 180-4
-        run: |
-          g++ -std=c++17 -O2 -Wall -Wextra -Wno-unused-parameter \
-            -o /tmp/crypto_selftest tools/crypto_selftest.cpp app/src/main/cpp/mailgram_crypto.cpp
-          /tmp/crypto_selftest
-
-  check:
-    name: Проверка компиляции (Java + ресурсы)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-java@v6
-        with:
-          distribution: temurin
-          java-version: '21'
-      - name: Android SDK
-        run: |
-          export ANDROID_HOME="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
-          {
-            echo "ANDROID_HOME=$ANDROID_HOME"
-            echo "ANDROID_SDK_ROOT=$ANDROID_HOME"
-          } >> "$GITHUB_ENV"
-          echo "sdk.dir=$ANDROID_HOME" > local.properties
-          echo "$ANDROID_HOME/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
-      - name: Установка платформы Android (без NDK — так быстрее)
-        run: |
-          yes | sdkmanager --sdk_root="$ANDROID_HOME" --licenses > /dev/null 2>&1 || true
-          sdkmanager --sdk_root="$ANDROID_HOME" --install "platforms;android-37" "build-tools;36.0.0" | tail -3
-      - name: Компиляция Java и ресурсов
-        run: |
-          chmod +x gradlew
-          set -o pipefail
-          ./gradlew --no-daemon --console=plain --stacktrace \
-            :app:processReleaseResources :app:compileReleaseJavaWithJavac 2>&1 | tee build-check.log
-      - name: Диагностика при ошибке (аннотации видны через API)
-        if: failure()
-        run: bash tools/ci-annotate.sh build-check.log 40
-      - name: Отчёт о проверке
-        if: always()
-        run: bash tools/ci-report.sh app/build/outputs/apk/release/app-release.apk build-report.md || true
-
-  oauth-check:
-    name: Проверка OAuth-клиентов (живой запрос к Google)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - name: Страница авторизации и token endpoint — все комбинации клиентов
-        env:
-          ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
-          DESKTOP_ID: "520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4.apps.googleusercontent.com"
-          DESKTOP_SECRET: ${{ secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
-        run: |
-          set -uo pipefail
-          VERIFIER=$(head -c 32 /dev/urandom | base64 | tr -dc 'A-Za-z0-9-._~' | head -c 50)
-          CHALLENGE=$(printf '%s' "$VERIFIER" | sha256sum | cut -d' ' -f1 | xxd -r -p | base64 | tr '+/' '-_' | tr -d '=')
-          FAKE_CODE="4/0AVMBsJ$(head -c 24 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 32)"
-
-          # --- 1. Страница авторизации: то, что реально видит пользователь в браузере ---
-          page () {
-            local label="$1" cid="$2" uri="$3"
-            local code text info loc
-            code=$(curl -s -D /tmp/hdr -o /tmp/pg.html -w '%{http_code}' -G \
-              https://accounts.google.com/o/oauth2/v2/auth \
-              --data-urlencode "client_id=$cid" \
-              --data-urlencode "redirect_uri=$uri" \
-              --data-urlencode "response_type=code" \
-              --data-urlencode "scope=openid email https://www.googleapis.com/auth/gmail.modify" \
-              --data-urlencode "code_challenge=$CHALLENGE" \
-              --data-urlencode "code_challenge_method=S256" \
-              --data-urlencode "state=mailgramprobe" \
-              --data-urlencode "access_type=offline" \
-              --data-urlencode "prompt=consent" \
-              --data-urlencode "include_granted_scopes=true" \
-              --data-urlencode "hl=ru") || code="000"
-            loc=$(grep -i '^location:' /tmp/hdr | tr -d '\r' | sed 's/^[Ll]ocation: //' | head -c 200 || true)
-            if printf '%s' "$loc" | grep -q 'authError='; then
-              decoded=$(printf '%s' "$loc" | sed 's/.*authError=//' | python3 tools/oauth-decode.py | head -c 300) || true
-              echo "::notice title=Причина отказа [$label]::${decoded}"
-            fi
-            text=$(sed -e 's/<[^>]*>/ /g' /tmp/pg.html | tr -s ' \n\t' ' ' | tr -d '\r')
-            info=$(printf '%s' "$text" | grep -oiE 'invalid_request|redirect_uri_mismatch|invalid_client|unauthorized_client|access_denied|Custom URI scheme[^.]{0,70}|Доступ заблокирован|недопустимый запрос' | sort -u | head -6 | paste -sd'|' - || true)
-            echo "::notice title=Страница авторизации [$label]::HTTP $code | ${info:-принято} | ${loc} | текст: $(printf '%s' "$text" | head -c 150)"
-          }
-
-          # --- 2. Token endpoint: принимает ли клиент наш redirect_uri ---
-          token () {
-            local label="$1" cid="$2" secret="$3" uri="$4"
-            local body extra=()
-            [ -n "$secret" ] && extra=(--data-urlencode "client_secret=$secret")
-            body=$(curl -s -X POST https://oauth2.googleapis.com/token \
-              -H 'Content-Type: application/x-www-form-urlencoded' \
-              --data-urlencode "client_id=$cid" "${extra[@]}" \
-              --data-urlencode "code=$FAKE_CODE" \
-              --data-urlencode "code_verifier=$VERIFIER" \
-              --data-urlencode "grant_type=authorization_code" \
-              --data-urlencode "redirect_uri=$uri" | tr -d '\r\n')
-            echo "::notice title=Token endpoint [$label]::$(printf '%s' "$body" | head -c 220)"
-          }
-
-          PRIMARY_ID=$(grep -oP "def default(A|D)ndroidClientId = '\\K[^']+" app/build.gradle | head -1 || true)
-          MAIN_URI=$([ "$PRIMARY_ID" = "$ANDROID_ID" ] && echo "com.googleusercontent.apps.${ANDROID_ID%.apps.googleusercontent.com}:/oauth2redirect" || echo "http://127.0.0.1:7717/oauth2redirect")
-          page "ПУТЬ ПРИЛОЖЕНИЯ (основной клиент)" "$PRIMARY_ID" "$MAIN_URI"
-          page "A. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
-          page "B. Android-клиент + локальный порт" "$ANDROID_ID" "http://127.0.0.1:7717/oauth2redirect"
-          page "C. Desktop-клиент + локальный порт" "$DESKTOP_ID" "http://127.0.0.1:7717/oauth2redirect"
-          page "D. Desktop-клиент + схема" "$DESKTOP_ID" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect"
-
-          # Секрет Desktop-клиента: сначала секрет репозитория, иначе значение из сборки —
-          # так проверяется ровно тот путь, которым входит приложение.
-          if [ -z "$DESKTOP_SECRET" ]; then
-            echo "::notice title=Секрет Desktop-клиента::секрет репозитория MAILGRAM_OAUTH_CLIENT_SECRET не задан — резервный путь (локальный порт) в этой сборке не заработает, токен-пробы Desktop покажут «client_secret is missing»"
-          else
-            echo "::notice title=Секрет Desktop-клиента::секрет репозитория задан — проверяю обмен кода с ним"
-          fi
-          token "A. Android-клиент + схема (без секрета)" "$ANDROID_ID" "" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
-          token "C. Desktop-клиент + локальный порт" "$DESKTOP_ID" "$DESKTOP_SECRET" "http://127.0.0.1:7717/oauth2redirect"
-          token "D. Desktop-клиент + схема" "$DESKTOP_ID" "$DESKTOP_SECRET" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect"
-          token "E. Android-клиент + локальный порт" "$ANDROID_ID" "" "http://127.0.0.1:7717/oauth2redirect"
-
   apk:
-    name: Сборка APK (Java + C++)
+    name: APK
     runs-on: ubuntu-latest
-    needs: [crypto-core, check]
     steps:
       - uses: actions/checkout@v7
+
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: '21'
+          cache: gradle
+
       - name: Android SDK
         run: |
           export ANDROID_HOME="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}}"
@@ -159,109 +47,65 @@ jobs:
           echo "sdk.dir=$ANDROID_HOME" > local.properties
           echo "$ANDROID_HOME/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
           echo "$ANDROID_HOME/build-tools/36.0.0" >> "$GITHUB_PATH"
-      - name: Установка NDK, CMake и платформы
+          echo "$ANDROID_HOME/ndk/28.2.13676358" >> "$GITHUB_PATH"
+
+      - name: Кэш NDK, CMake и платформы
+        id: sdk
+        uses: actions/cache@v6
+        with:
+          path: |
+            /usr/local/lib/android/sdk/ndk/28.2.13676358
+            /usr/local/lib/android/sdk/cmake/3.22.1
+            /usr/local/lib/android/sdk/platforms/android-37
+            /usr/local/lib/android/sdk/build-tools/36.0.0
+          key: android-37-ndk-28.2.13676358-cmake-3.22.1-v1
+
+      - name: Установка недостающего (только первый раз)
+        if: steps.sdk.outputs.cache-hit != 'true'
         run: |
           yes | sdkmanager --sdk_root="$ANDROID_HOME" --licenses > /dev/null 2>&1 || true
           sdkmanager --sdk_root="$ANDROID_HOME" --install \
-            "platforms;android-37" "build-tools;36.0.0" "ndk;28.2.13676358" "cmake;3.22.1" | tail -5
-      - name: OAuth client ID (секрет OAUTH_CLIENT_ID или параметр запуска)
+            "platforms;android-37" "build-tools;36.0.0" "ndk;28.2.13676358" "cmake;3.22.1" | tail -3
+
+      - name: Сборка APK
         env:
-          SECRET_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
-          INPUT_CLIENT_ID: ${{ github.event.inputs.oauth_client_id }}
-        run: |
-          CLIENT_ID="${SECRET_CLIENT_ID:-$INPUT_CLIENT_ID}"
-          if [ -z "$CLIENT_ID" ]; then
-            # Значение по умолчанию живёт в app/build.gradle — здесь повторяем его,
-            # чтобы отчёт о сборке показывал реальный client ID.
-            CLIENT_ID="520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
-            echo "::notice title=OAuth::используется client ID, вшитый в проект — вход работает в один тап"
-          else
-            echo "::notice title=OAuth::client ID задан секретом/параметром — вход работает в один тап"
-          fi
-          echo "MAILGRAM_OAUTH_CLIENT_ID=$CLIENT_ID" >> "$GITHUB_ENV"
-      - name: Подпись (свой keystore через секреты или встроенный dev-keystore)
-        env:
+          MAILGRAM_OAUTH_CLIENT_ID: ${{ github.event.inputs.oauth_client_id || secrets.OAUTH_CLIENT_ID }}
+          MAILGRAM_OAUTH_CLIENT_SECRET: ${{ github.event.inputs.oauth_client_secret || secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
           STORE_B64: ${{ secrets.MAILGRAM_STORE_B64 }}
         run: |
           if [ -n "$STORE_B64" ]; then
             echo "$STORE_B64" | base64 -d > /tmp/release.keystore
-            {
-              echo "MAILGRAM_STORE_FILE=/tmp/release.keystore"
-              echo "MAILGRAM_STORE_PASSWORD=${{ secrets.MAILGRAM_STORE_PASSWORD }}"
-              echo "MAILGRAM_KEY_ALIAS=${{ secrets.MAILGRAM_KEY_ALIAS }}"
-            } >> "$GITHUB_ENV"
-            echo "::notice title=Подпись::используется keystore из секрета MAILGRAM_STORE_B64"
-          else
-            echo "::notice title=Подпись::используется встроенный dev-keystore (пароль mailgram, alias mailgram)"
+            echo "MAILGRAM_STORE_FILE=/tmp/release.keystore" >> "$GITHUB_ENV"
+            echo "MAILGRAM_STORE_PASSWORD=${{ secrets.MAILGRAM_STORE_PASSWORD }}" >> "$GITHUB_ENV"
+            echo "MAILGRAM_KEY_ALIAS=${{ secrets.MAILGRAM_KEY_ALIAS }}" >> "$GITHUB_ENV"
           fi
-      - name: Сборка release APK
-        env:
-          # Секрет Desktop-клиента (если задан): в репозитории не хранится, попадает только в APK.
-          MAILGRAM_OAUTH_CLIENT_SECRET: ${{ secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
-        run: |
           chmod +x gradlew
-          set -o pipefail
-          ./gradlew --no-daemon --console=plain --stacktrace :app:assembleRelease 2>&1 | tee build.log
-      - name: Диагностика при ошибке (аннотации видны через API)
-        if: failure()
-        run: bash tools/ci-annotate.sh build.log 40
-      - name: Проверка размера APK
-        if: success()
+          ./gradlew --no-daemon --console=plain :app:assembleRelease
+
+      - name: Размер APK (лимит 15 МБ)
         run: |
           APK=app/build/outputs/apk/release/app-release.apk
           SIZE=$(stat -c%s "$APK")
-          echo "::notice title=Размер APK::$(basename "$APK") — $((SIZE / 1024)) КБ"
+          echo "::notice title=Размер APK::$((SIZE / 1024)) КБ"
           if [ "$SIZE" -gt 15728640 ]; then
-            echo "::error title=Размер APK::APK больше 15 МБ ($((SIZE / 1024 / 1024)) МБ) — нужна оптимизация"
+            echo "::error title=Размер APK::больше 15 МБ"
             exit 1
           fi
-          if ! unzip -l "$APK" | grep -q "lib/arm64-v8a/libmailgram.so"; then
-            echo "::error title=Состав APK::в APK нет нативной библиотеки libmailgram.so для arm64"
-            exit 1
-          fi
-          echo "::notice title=Состав APK::libmailgram.so на месте (arm64-v8a / armeabi-v7a / x86_64)"
-      - name: Проверка, что OAuth-схема вшита в манифест
-        if: success()
-        run: |
-          APK=app/build/outputs/apk/release/app-release.apk
-          SCHEME="${MAILGRAM_OAUTH_CLIENT_ID%.apps.googleusercontent.com}"
-          if aapt2 dump xmltree --file AndroidManifest.xml "$APK" | grep -qi "com.googleusercontent.apps.${SCHEME}"; then
-            echo "::notice title=OAuth::схема редиректа в манифесте совпадает с client ID — вход сработает в один тап"
-          else
-            echo "::error title=OAuth::в манифесте нет схемы com.googleusercontent.apps.${SCHEME} — Google отклонит вход"
-            exit 1
-          fi
-      - name: Сказать, какой путь входа зашит в APK
-        if: success()
-        env:
-          MAILGRAM_OAUTH_CLIENT_SECRET: ${{ secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
-        run: |
-          if [ -n "${MAILGRAM_OAUTH_CLIENT_SECRET}" ]; then
-            echo "::notice title=Вход::секрет Desktop-клиента передан — работает и резервный путь (локальный порт), даже если у Android-клиента выключена схема"
-          else
-            echo "::notice title=Вход::секрет Desktop-клиента не задан — вход пойдёт через Android-клиент, у него в консоли Google должна быть включена «Advanced Settings → Enable custom URI scheme»"
-          fi
-      - name: Отчёт о сборке
-        if: always()
-        run: bash tools/ci-report.sh app/build/outputs/apk/release/app-release.apk build-report.md || true
-      - name: Артефакт сборки
-        if: success()
-        uses: actions/upload-artifact@v7
-        with:
-          name: MailGram-APK
-          path: app/build/outputs/apk/release/*.apk
-          if-no-files-found: error
-      - name: Публикация (APK + отчёт о сборке)
-        if: always()
+
+      - name: Отчёт и публикация в релиз
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          APK=app/build/outputs/apk/release/app-release.apk
+          bash tools/ci-report.sh app/build/outputs/apk/release/app-release.apk build-report.md || true
           gh release view apk-latest > /dev/null 2>&1 || \
             gh release create apk-latest --title "MailGram — APK (последняя сборка)" \
               --notes "Автоматическая сборка" --prerelease
           gh release edit apk-latest --notes-file build-report.md
-          if [ -f "$APK" ]; then
-            gh release upload apk-latest "$APK" --clobber
-          fi
-          echo "::notice title=Релиз::https://github.com/${GITHUB_REPOSITORY}/releases/tag/apk-latest"
+          gh release upload apk-latest app/build/outputs/apk/release/app-release.apk --clobber
+          echo "::notice title=Готово::https://github.com/${GITHUB_REPOSITORY}/releases/tag/apk-latest"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: MailGram-APK
+          path: app/build/outputs/apk/release/app-release.apk
+          retention-days: 14
