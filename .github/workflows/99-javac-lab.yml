@@ -12,7 +12,7 @@ permissions:
 jobs:
   lab:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -58,6 +58,31 @@ jobs:
           rm -rf /tmp/l5; mkdir -p /tmp/l5
           javac -d /tmp/l5 -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -cE "error:" | tee -a "$R" || true
           javac -d /tmp/l5b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -c "symbol:   class Object$" | tee -a "$R" || true
+
+          echo "===== ЭКСП 6: FULL, -Xmx3g =====" | tee -a "$R"
+          grep -v "^$" /tmp/sources.txt > /tmp/sources_all.txt || find "$SRC" -name "*.java" | sort > /tmp/sources_all.txt
+          find "$SRC" -name "*.java" | sort > /tmp/sources_all.txt
+          echo "файлов: $(wc -l < /tmp/sources_all.txt)" | tee -a "$R"
+          javac -J-Xmx3g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l6 @/tmp/sources_all.txt > /tmp/l6.log 2>&1 || true
+          echo "exit=$? errors=$(grep -c 'error:' /tmp/l6.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l6.log)" | tee -a "$R"
+          echo "===== ЭКСП 7: FULL, -Xmx10g =====" | tee -a "$R"
+          javac -J-Xmx10g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l7 @/tmp/sources_all.txt > /tmp/l7.log 2>&1 || true
+          echo "exit=$? errors=$(grep -c 'error:' /tmp/l7.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l7.log)" | tee -a "$R"
+          echo "===== ЭКСП 8: половина 1 =====" | tee -a "$R"
+          head -n $(( $(wc -l < /tmp/sources_all.txt) / 2 )) /tmp/sources_all.txt > /tmp/s_half1.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l8 @/tmp/s_half1.txt > /tmp/l8.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l8.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l8.log)" | tee -a "$R"
+          echo "===== ЭКСП 9: половина 2 =====" | tee -a "$R"
+          tail -n +$(( $(wc -l < /tmp/sources_all.txt) / 2 + 1 )) /tmp/sources_all.txt > /tmp/s_half2.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l9 @/tmp/s_half2.txt > /tmp/l9.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l9.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l9.log)" | tee -a "$R"
+          echo "===== ЭКСП 10: 3000 файлов случайных =====" | tee -a "$R"
+          shuf -n 3000 /tmp/sources_all.txt > /tmp/s_rand.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l10 @/tmp/s_rand.txt > /tmp/l10.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l10.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l10.log)" | tee -a "$R"
+          echo "===== ЭКСП 10b: топ Object-шума ЭКСП 7 (пакеты) =====" | tee -a "$R"
+          grep -B4 "symbol:   class Object$" /tmp/l7.log | grep -oE "java/[a-zA-Z0-9_/]+\.java" | cut -d/ -f1 | sort | uniq -c | sort -rn | head -5 | tee -a "$R"
+
       - name: "Коммит отчёта лабы"
         if: always()
         run: |
