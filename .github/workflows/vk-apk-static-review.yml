@@ -9,6 +9,7 @@ on:
       - .gitattributes
       - handoff/analyze_decompiled.py
       - handoff/analyze_package_size.py
+      - handoff/optimize_abi_apk.py
       - handoff/prepare_apkpure_xapk.py
       - handoff/README.md
   workflow_dispatch:
@@ -24,6 +25,7 @@ jobs:
     env:
       APK_ARCHIVE_NAME: vk-latest.xapk
       APK_NAME: vk-base.apk
+      MOD_APK_NAME: vk-mod-arm.apk
       JADX_DIRECTORY: vk-jadx
       APKPURE_XAPK_URL: 'https://d.apkpure.net/b/XAPK/com.vkontakte.android?version=latest'
       EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
@@ -175,6 +177,104 @@ jobs:
             "$RUNNER_TEMP/$APK_ARCHIVE_NAME" \
             "$RUNNER_TEMP/$APK_NAME"
 
+      - name: Build ARM-focused size-optimized APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          raw_apk="$RUNNER_TEMP/vk-mod-arm-unaligned.apk"
+          aligned_apk="$RUNNER_TEMP/vk-mod-arm-aligned.apk"
+          signed_apk="$RUNNER_TEMP/$MOD_APK_NAME"
+          keystore="$RUNNER_TEMP/vk-mod-temporary.p12"
+          password_file="$RUNNER_TEMP/vk-mod-temporary.pass"
+          sdk_root="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
+          if [[ -z "$sdk_root" || ! -d "$sdk_root/build-tools" ]]; then
+            echo 'Android build-tools are unavailable; refusing to produce an unsigned or unverified mod.' >&2
+            exit 1
+          fi
+          zipalign="$(find "$sdk_root/build-tools" -type f -name zipalign -print | sort -V | tail -n 1)"
+          apksigner="$(find "$sdk_root/build-tools" -type f -name apksigner -print | sort -V | tail -n 1)"
+          if [[ -z "$zipalign" || -z "$apksigner" ]]; then
+            echo 'zipalign or apksigner was not found in Android build-tools.' >&2
+            exit 1
+          fi
+
+          python3 handoff/optimize_abi_apk.py \
+            "$RUNNER_TEMP/$APK_NAME" "$raw_apk" \
+            --keep-abi arm64-v8a --keep-abi armeabi-v7a
+          "$zipalign" -P 16 -f 4 "$raw_apk" "$aligned_apk"
+          "$zipalign" -c -P 16 -v 4 "$aligned_apk"
+
+          python3 - "$password_file" <<'PY'
+          import secrets
+          import sys
+          from pathlib import Path
+          path = Path(sys.argv[1])
+          path.write_text(secrets.token_urlsafe(32), encoding='ascii')
+          path.chmod(0o600)
+          PY
+          keytool -genkeypair -noprompt \
+            -alias vk-mod-temporary \
+            -keyalg RSA -keysize 2048 -sigalg SHA256withRSA \
+            -validity 10000 -storetype PKCS12 \
+            -keystore "$keystore" \
+            -storepass:file "$password_file" \
+            -keypass:file "$password_file" \
+            -dname 'CN=VK ARM size mod, O=Temporary build, C=DE'
+          "$apksigner" sign \
+            --ks "$keystore" \
+            --ks-key-alias vk-mod-temporary \
+            --ks-pass "file:$password_file" \
+            --key-pass "file:$password_file" \
+            --out "$signed_apk" "$aligned_apk"
+          "$apksigner" verify --verbose --print-certs "$signed_apk"
+
+          original_bytes="$(stat -c '%s' "$RUNNER_TEMP/$APK_NAME")"
+          mod_bytes="$(stat -c '%s' "$signed_apk")"
+          if (( mod_bytes >= original_bytes )); then
+            echo "::error::Signed ARM APK is not smaller than its source ($mod_bytes >= $original_bytes bytes)."
+            exit 1
+          fi
+          reduction=$((original_bytes - mod_bytes))
+          awk -v before="$original_bytes" -v after="$mod_bytes" \
+            'BEGIN { printf "Signed APK size: %d -> %d bytes; reduction: %d bytes (%.2f%%)\n", before, after, before-after, (before-after)*100/before }'
+
+      - name: Preserve optimized ARM APK in handoff through Git LFS
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected_ref='refs/heads/arena/3f6a741b-lwlwxldodiwjnwmwllxllxmxmxks'
+          if [[ "$GITHUB_REF" != "$expected_ref" ]]; then
+            echo "::error::Refusing to persist the optimized APK outside the session branch $expected_ref"
+            exit 1
+          fi
+          if ! command -v git-lfs >/dev/null 2>&1; then
+            echo 'Git LFS is unavailable; refusing to store the mod as a normal Git blob.' >&2
+            exit 1
+          fi
+          git lfs install --local
+          cp "$RUNNER_TEMP/$MOD_APK_NAME" "handoff/$MOD_APK_NAME"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .gitattributes "handoff/$MOD_APK_NAME"
+          if git diff --cached --quiet; then
+            echo 'The optimized ARM APK is already current in handoff.'
+          else
+            git commit -m 'Store size-optimized VK ARM APK in handoff [skip ci]'
+            git push origin "HEAD:$expected_ref"
+          fi
+          pointer_line="$(git show "HEAD:handoff/$MOD_APK_NAME" | sed -n '1p')"
+          if [[ "$pointer_line" != 'version https://git-lfs.github.com/spec/v1' ]]; then
+            echo '::error::Optimized APK was not committed as a Git LFS pointer.'
+            exit 1
+          fi
+          echo 'The signed ARM APK is retained in handoff through Git LFS.'
+
+      - name: Audit optimized APK size composition
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 handoff/analyze_package_size.py "$RUNNER_TEMP/$MOD_APK_NAME"
+
       - name: Download JADX
         shell: bash
         run: |
@@ -250,6 +350,8 @@ jobs:
         shell: bash
         run: |
           rm -rf "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$RUNNER_TEMP/$APK_NAME" \
-            "$RUNNER_TEMP/$JADX_DIRECTORY" "$RUNNER_TEMP/jadx" \
-            "$RUNNER_TEMP/jadx.zip" "$RUNNER_TEMP/jadx.log" \
+            "$RUNNER_TEMP/$MOD_APK_NAME" "$RUNNER_TEMP/vk-mod-arm-unaligned.apk" \
+            "$RUNNER_TEMP/vk-mod-arm-aligned.apk" "$RUNNER_TEMP/vk-mod-temporary.p12" \
+            "$RUNNER_TEMP/vk-mod-temporary.pass" "$RUNNER_TEMP/$JADX_DIRECTORY" \
+            "$RUNNER_TEMP/jadx" "$RUNNER_TEMP/jadx.zip" "$RUNNER_TEMP/jadx.log" \
             "$RUNNER_TEMP/apk-signature.txt" "$RUNNER_TEMP/curl-error.txt"
