@@ -46,3 +46,11 @@ dependencies {
     implementation 'androidx.activity:activity:1.7.2'
     implementation 'androidx.core:core:1.9.0'
 }
+
+// Chaquopy 14 and AndroidX bring the pre-1.8 split JDK artifacts at different versions.
+configurations.configureEach {
+    resolutionStrategy.force(
+            'org.jetbrains.kotlin:kotlin-stdlib:1.8.10',
+            'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10',
+            'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10')
+}
