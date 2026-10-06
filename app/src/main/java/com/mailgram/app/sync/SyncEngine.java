@@ -69,22 +69,26 @@ public final class SyncEngine {
     private static final Pattern PREKEY_LINE = Pattern.compile("X-MailGram-PreKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
 
     /**
-     * Тема писем в режиме без шифрования: по ней письмо возвращается в нужный чат, а текст
-     * остаётся читаемым в любом почтовом клиенте.
+     * Тема наших писем — ровно «MailGram». Никаких id в заголовке: Gmail перекодирует и
+     * переносит темы, клиенты лепят «Re:»/«Fwd:» — на это полагаться нельзя.
+     * @deprecated SUBJECT_PREFIX_PLAIN оставлен только чтобы читать письма старых сборок.
      */
-    /** @deprecated тема больше не несёт id чата — оставлено для совместимости форматов. */
     @Deprecated
     public static final String SUBJECT_PREFIX_PLAIN = "MailGram #";
-    /** Тема наших писем — просто «MailGram»; хвост (uid) не обязателен и ни на что не влияет. */
     public static final String SUBJECT_MARK = "MailGram";
     /** Служебная строка открытого письма: -- [MailGram "chat:..." "t:..." "id:..."] */
     private static final Pattern FOOTER_CHAT = Pattern.compile("chat:\\s*([A-Za-z0-9._-]{4,})");
 
-    /** Узнаём, что письмо наше, даже если тема испорчена переносами и «Re:». */
+    /**
+     * Узнаём «наше» письмо даже если тема изуродована: MIME-кодирование (=?UTF-8?B?...?=),
+     * «Re: »/«Fwd: », переносы строк, лишний пробел внутри слова, разный регистр.
+     */
     private static boolean isMailGramSubject(String subject) {
         if (subject == null) return false;
-        String s = subject.replace("_", " ").replaceAll("=\?[A-Za-z0-9-]+\?[BQbq]\?", " ")
-                .replaceAll("\?=", " ");
+        String s = subject.replace('_', ' ')
+                .replaceAll("=\\?[A-Za-z0-9\\-]+\\?[BQbq]\\?", " ")
+                .replaceAll("\\?=", " ")
+                .replaceAll("\\s+", " ");
         if (s.indexOf(SUBJECT_MARK) >= 0) return true;
         String low = s.toLowerCase(java.util.Locale.US);
         return low.contains("mailgram") || low.contains("mail gram");
