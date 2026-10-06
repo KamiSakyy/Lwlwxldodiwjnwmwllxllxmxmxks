@@ -38,7 +38,7 @@ public final class kl implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.yuShadow yuVar = (jo.yu) obj;
+        jo.yu yuVar = (jo.yu) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(yuVar, "value");

@@ -39,7 +39,7 @@ public final class ij implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.isShadow isVar = (jo.is) obj;
+        jo.is isVar = (jo.is) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(isVar, "value");

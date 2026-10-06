@@ -25,7 +25,7 @@ public final class km implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.kwShadow kwVar = (jo.kw) obj;
+        jo.kw kwVar = (jo.kw) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(kwVar, "value");

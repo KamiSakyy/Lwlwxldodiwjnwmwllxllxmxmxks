@@ -276,7 +276,7 @@ public class b extends j implements e {
                     return a0Var;
                 }
                 y.j(obj);
-                ia.dShadow dVar2 = (ia.d) this.x;
+                ia.d dVar2 = (ia.d) this.x;
                 dVar2.getClass();
                 k.g(qVar, "spec");
                 ArrayList arrayList = dVar2.a;
@@ -315,7 +315,7 @@ public class b extends j implements e {
                 y.j(obj);
                 z9.b bVar = (z9.b) this.x;
                 l3.y yVar = bVar.r;
-                aa.dShadow d = ((aa.d) obj3).d();
+                aa.d d = ((aa.d) obj3).d();
                 g0 d2 = bVar.s.d(bVar.w).d(bVar.z).d(d.c);
                 k.g(d2, "executionContext");
                 d.c = d2;
@@ -356,7 +356,7 @@ public class b extends j implements e {
                 Boolean bool5 = d.j;
                 d.j = bool5 != null ? bool5 : null;
                 d.k = bVar.y;
-                aa.dShadow b = d.b();
+                aa.d b = d.b();
                 y61.b i17 = d0.i();
                 i17.addAll(yVar.a);
                 i17.addAll((ArrayList) yVar.d);

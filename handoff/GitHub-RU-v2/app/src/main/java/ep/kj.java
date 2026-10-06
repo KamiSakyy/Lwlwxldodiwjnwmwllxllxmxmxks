@@ -10,9 +10,9 @@ public final class kj implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.ksShadow ksVar = null;
-        jo.isShadow isVar = null;
-        jo.msShadow msVar = null;
+        jo.ks ksVar = null;
+        jo.is isVar = null;
+        jo.ms msVar = null;
         jo.rs rsVar = null;
         String str = null;
         String str2 = null;

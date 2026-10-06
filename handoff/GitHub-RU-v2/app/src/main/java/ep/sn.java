@@ -11,7 +11,7 @@ public final class sn implements aaShadow.a {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
-        jo.xxShadow xxVar = null;
+        jo.xx xxVar = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(b);

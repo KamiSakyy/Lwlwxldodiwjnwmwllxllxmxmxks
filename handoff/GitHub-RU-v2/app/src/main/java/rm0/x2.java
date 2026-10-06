@@ -87,7 +87,7 @@ public final class x2 implements y71.j {
         int i4;
         GitObjectType gitObjectType2;
         String str2;
-        vb0.w1Shadow w1Var;
+        vb0.w1 w1Var;
         int i5;
         GitObjectType gitObjectType3;
         String str3;
@@ -96,9 +96,9 @@ public final class x2 implements y71.j {
         v70.d dVar4;
         v70.d dVar5;
         v70.d dVar6;
-        vb0.v3Shadow v3Var;
+        vb0.v3 v3Var;
         int i7;
-        wy0.c2Shadow c2Var;
+        wy0.c2 c2Var;
         int i8;
         GitObjectType gitObjectType4;
         String str4;

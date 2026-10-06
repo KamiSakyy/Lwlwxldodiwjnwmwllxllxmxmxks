@@ -127,7 +127,7 @@ public abstract class mg implements aaShadow.a {
         gn0.xm xmVar = null;
         String str3 = null;
         ZonedDateTime zonedDateTime = null;
-        kc0.noShadow noVar = null;
+        kc0.no noVar = null;
         kc0.ao aoVar = null;
         kc0.oo ooVar = null;
         kc0.so soVar = null;

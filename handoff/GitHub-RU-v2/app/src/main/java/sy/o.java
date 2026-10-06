@@ -133,8 +133,8 @@ public abstract class oShadow {
         t6.a aVar = t6.a.b;
         k71.k.g(dVar, "factory");
         k71.k.g(aVar, "extras");
-        w51.rShadow rVar = new w51.r(t1Var, dVar, aVar);
-        k71.e a = k71.xShadow.a(x6.pShadow.class);
+        w51.r rVar = new w51.r(t1Var, dVar, aVar);
+        k71.e a = k71.xShadow.a(x6.p.class);
         String b = a.b();
         if (b != null) {
             return rVar.E(a, "androidx.lifecycle.ViewModelProvider.DefaultKey:".concat(b));

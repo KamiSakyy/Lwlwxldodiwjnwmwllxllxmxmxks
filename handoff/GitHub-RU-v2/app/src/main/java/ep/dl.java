@@ -49,7 +49,7 @@ public final class dl implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.puShadow puVar = (jo.pu) obj;
+        jo.pu puVar = (jo.pu) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(puVar, "value");

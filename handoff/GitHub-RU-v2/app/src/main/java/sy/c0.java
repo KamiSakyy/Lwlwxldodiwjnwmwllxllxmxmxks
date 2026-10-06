@@ -51,7 +51,7 @@ public abstract class c0 {
         while (i < size) {
             Object obj = S.get(i);
             i++;
-            is.pShadow pVar = (is.p) obj;
+            is.p pVar = (is.p) obj;
             ms.i iVar = pVar.c;
             ar.c cVar = iVar.j;
             String str = iVar.c;
@@ -392,7 +392,7 @@ public abstract class c0 {
 
     public static final mn.p e(g2 g2Var) {
         k71.k.g(g2Var, "<this>");
-        mn.oShadow oVar = mn.p.Companion;
+        mn.o oVar = mn.p.Companion;
         List list = g2Var.a;
         String str = g2Var.e;
         String str2 = g2Var.b;

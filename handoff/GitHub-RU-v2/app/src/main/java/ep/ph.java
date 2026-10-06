@@ -10,7 +10,7 @@ public final class ph implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.eqShadow eqVar = null;
+        jo.eq eqVar = null;
         String str = null;
         String str2 = null;
         while (true) {
@@ -38,7 +38,7 @@ public final class ph implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.cqShadow cqVar = (jo.cq) obj;
+        jo.cq cqVar = (jo.cq) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(cqVar, "value");

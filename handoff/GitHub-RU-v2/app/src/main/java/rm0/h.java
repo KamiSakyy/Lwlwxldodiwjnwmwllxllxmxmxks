@@ -31,7 +31,7 @@ public final class h extends c71.j implements j71.e {
 
     @Override // j71.e
     public final Object s(Object obj, Object obj2) {
-        w61.a0Shadow a0Var = (w61.a0) obj;
+        w61.a0 a0Var = (w61.a0) obj;
         a71.c cVar = (a71.c) obj2;
         switch (this.v) {
         }

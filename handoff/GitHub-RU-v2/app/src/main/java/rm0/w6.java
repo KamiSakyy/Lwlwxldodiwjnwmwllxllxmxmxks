@@ -61,7 +61,7 @@ public final class w6 extends c71.j implements j71.e {
                 b71.a aVar = b71.a.r;
                 sy.y.j(obj);
                 com.github.service.wrapper.bShadow bVar = y6Var.s;
-                kc0.h0Shadow h0Var = new kc0.h0(str, boVar);
+                kc0.h0 h0Var = new kc0.h0(str, boVar);
                 if (cVar != null) {
                     String str2 = cVar.a;
                     m0Var = new kc0.d0(new kc0.b0(new kc0.g0(cVar, str2), new kc0.f0(new kc0.e0(cVar, str2), cVar.b, str2)));

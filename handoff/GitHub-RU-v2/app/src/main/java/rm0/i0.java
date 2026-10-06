@@ -1279,7 +1279,7 @@ public final class i0 implements y71.j {
                         Object obj10 = u0Var.u;
                         b71.a aVar10 = b71.a.r;
                         i9 = u0Var.v;
-                        w61.a0Shadow a0Var = w61.a0.a;
+                        w61.a0 a0Var = w61.a0.a;
                         if (i9 != 0) {
                             sy.y.j(obj10);
                             u0Var.v = 1;
@@ -1299,7 +1299,7 @@ public final class i0 implements y71.j {
                 Object obj102 = u0Var.u;
                 b71.a aVar102 = b71.a.r;
                 i9 = u0Var.v;
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 if (i9 != 0) {
                 }
                 return a0Var2;
@@ -1370,7 +1370,7 @@ public final class i0 implements y71.j {
                                         Object obj13 = S2.get(i39);
                                         i39++;
                                         ArrayList arrayList6 = S2;
-                                        of0.bShadow bVar4 = (of0.b) obj13;
+                                        of0.b bVar4 = (of0.b) obj13;
                                         int i40 = size2;
                                         of0.c cVar4 = bVar4.c;
                                         if (cVar4 != null) {
@@ -1543,7 +1543,7 @@ public final class i0 implements y71.j {
                         Object obj17 = w0Var2.u;
                         b71.a aVar14 = b71.a.r;
                         i13 = w0Var2.v;
-                        w61.a0Shadow a0Var3 = w61.a0.a;
+                        w61.a0 a0Var3 = w61.a0.a;
                         if (i13 != 0) {
                             sy.y.j(obj17);
                             w0Var2.v = 1;
@@ -1563,7 +1563,7 @@ public final class i0 implements y71.j {
                 Object obj172 = w0Var2.u;
                 b71.a aVar142 = b71.a.r;
                 i13 = w0Var2.v;
-                w61.a0Shadow a0Var32 = w61.a0.a;
+                w61.a0 a0Var32 = w61.a0.a;
                 if (i13 != 0) {
                 }
                 return a0Var32;

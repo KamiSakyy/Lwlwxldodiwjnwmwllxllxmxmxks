@@ -934,7 +934,7 @@ public final class b5 implements y71.j {
                         i8 = p5Var.v;
                         if (i8 != 0) {
                             sy.y.j(obj9);
-                            jo.n5Shadow n5Var2 = (jo.n5) obj;
+                            jo.n5 n5Var2 = (jo.n5) obj;
                             k71.k.g(n5Var2, "<this>");
                             jo.l5 l5Var = n5Var2.a;
                             b00 b00Var = (l5Var == null || (o5Var2 = l5Var.a) == null) ? null : o5Var2.b;
@@ -1550,7 +1550,7 @@ public final class b5 implements y71.j {
                         Object obj23 = c6Var.u;
                         b71.a aVar23 = b71.a.r;
                         i21 = c6Var.v;
-                        w61.a0Shadow a0Var = w61.a0.a;
+                        w61.a0 a0Var = w61.a0.a;
                         if (i21 != 0) {
                             sy.y.j(obj23);
                             c6Var.v = 1;
@@ -1570,7 +1570,7 @@ public final class b5 implements y71.j {
                 Object obj232 = c6Var.u;
                 b71.a aVar232 = b71.a.r;
                 i21 = c6Var.v;
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 if (i21 != 0) {
                 }
                 return a0Var2;
@@ -1583,7 +1583,7 @@ public final class b5 implements y71.j {
                         Object obj24 = d6Var.u;
                         b71.a aVar24 = b71.a.r;
                         i22 = d6Var.v;
-                        w61.a0Shadow a0Var3 = w61.a0.a;
+                        w61.a0 a0Var3 = w61.a0.a;
                         if (i22 != 0) {
                             sy.y.j(obj24);
                             d6Var.v = 1;
@@ -1603,7 +1603,7 @@ public final class b5 implements y71.j {
                 Object obj242 = d6Var.u;
                 b71.a aVar242 = b71.a.r;
                 i22 = d6Var.v;
-                w61.a0Shadow a0Var32 = w61.a0.a;
+                w61.a0 a0Var32 = w61.a0.a;
                 if (i22 != 0) {
                 }
                 return a0Var32;

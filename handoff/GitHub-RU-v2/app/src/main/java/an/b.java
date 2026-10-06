@@ -457,7 +457,7 @@ public class b extends c71.j implements j71.e {
                     return obj;
                 }
                 y.j(obj);
-                r9.kShadow kVar = (r9.k) this.x;
+                r9.k kVar = (r9.k) this.x;
                 m9.i iVar2 = new m9.i(kVar, ((g9.h) this.y).j, 0, kVar, (s9.h) this.z, (g9.c) this.A, ((Bitmap) this.B) != null);
                 this.w = 1;
                 Object c2 = iVar2.c(kVar, this);
@@ -493,7 +493,7 @@ public class b extends c71.j implements j71.e {
                 }
                 y.j(obj);
                 k6.v vVar = new k6.v((z) this.x, (d8.m) this.z, (z) this.A, (j71.e) this.y, (AtomicReference) this.B);
-                j71.eShadow eVar = (j71.e) this.y;
+                j71.e eVar = (j71.e) this.y;
                 this.w = 1;
                 Object s = eVar.s(vVar, this);
                 return s == aVar9 ? aVar9 : s;

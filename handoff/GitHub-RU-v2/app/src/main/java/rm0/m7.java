@@ -77,7 +77,7 @@ public final class m7Shadow extends c71.j implements j71.e {
             case 1:
                 b71.a aVar2 = b71.a.r;
                 int i2 = this.w;
-                w61.a0Shadow a0Var = w61.a0.a;
+                w61.a0 a0Var = w61.a0.a;
                 if (i2 == 0) {
                     sy.y.j(obj);
                     b1.j jVar = (b1.j) this.x;
@@ -100,7 +100,7 @@ public final class m7Shadow extends c71.j implements j71.e {
             case 2:
                 b71.a aVar3 = b71.a.r;
                 int i3 = this.w;
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 if (i3 == 0) {
                     sy.y.j(obj);
                     s0.p0 p0Var = (s0.p0) this.x;

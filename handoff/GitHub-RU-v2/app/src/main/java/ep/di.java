@@ -15,7 +15,7 @@ public final class di implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
         jo.tq tqVar = null;
-        m10.ksShadow ksVar = null;
+        m10.ks ksVar = null;
         ArrayList arrayList = null;
         String str2 = null;
         while (true) {
@@ -39,7 +39,7 @@ public final class di implements aaShadow.a {
                         break;
                     }
                 }
-                m10.ksShadow ksVar2 = (m10.ks) obj;
+                m10.ks ksVar2 = (m10.ks) obj;
                 ksVar = ksVar2 == null ? m10.ks.t : ksVar2;
             } else if (r0 == 3) {
                 arrayList = aa.c.a(aa.c.a).c(eVar, wVar);

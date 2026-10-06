@@ -13,7 +13,7 @@ public final class r implements aa.a {
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        m00.d0Shadow d0Var = null;
+        m00.d0 d0Var = null;
         while (eVar.r0(b) == 0) {
             d0Var = (m00.d0) aa.c.b(aa.c.c(q.a, false)).a(eVar, wVar);
         }

@@ -776,7 +776,7 @@ public final class e8 implements y71.j {
         int i;
         g8 g8Var;
         int i2;
-        yz0.a7Shadow s;
+        yz0.a7 s;
         jn0.a1 a1Var;
         jn0.a1 a1Var2;
         i8 i8Var;
@@ -802,7 +802,7 @@ public final class e8 implements y71.j {
         int i4;
         k8 k8Var;
         int i5;
-        yz0.a7Shadow s2;
+        yz0.a7 s2;
         v50 v50Var;
         l8 l8Var;
         int i6;

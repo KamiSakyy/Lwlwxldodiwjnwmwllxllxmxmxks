@@ -123,7 +123,7 @@ public final class a0 implements Handler.Callback, ServiceConnection {
     public final boolean handleMessage(Message message) {
         HashSet hashSet;
         int i = message.what;
-        c.cShadow cVar = null;
+        c.c cVar = null;
         if (i == 0) {
             x xVar = (x) message.obj;
             String string = Settings.Secure.getString(this.f29412r.getContentResolver(), "enabled_notification_listeners");

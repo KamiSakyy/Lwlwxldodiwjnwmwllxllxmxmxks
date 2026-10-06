@@ -77,7 +77,7 @@ public final class l {
     public static final Charset s = Charset.forName("UTF-8");
     public Context a;
     public s b;
-    public v2.tShadow c;
+    public v2.t c;
     public b51.dShadow d;
     public w41.c e;
     public v f;
@@ -89,11 +89,11 @@ public final class l {
     public i l;
     public b51.dShadow m;
     public rShadow n;
-    public final w21.gShadow o = new w21.g();
-    public final w21.gShadow p = new w21.g();
-    public final w21.gShadow q = new w21.g();
+    public final w21.g o = new w21.g();
+    public final w21.g p = new w21.g();
+    public final w21.g q = new w21.g();
 
-    public l(Context context, v vVar, s sVar, b51.dShadow dVar, v2.tShadow tVar, a aVar, b51.dShadow dVar2, x41.f fVar, b51.dShadow dVar3, s41.b bVar, t41.a aVar2, i iVar, w41.c cVar) {
+    public l(Context context, v vVar, s sVar, b51.dShadow dVar, v2.t tVar, a aVar, b51.dShadow dVar2, x41.f fVar, b51.dShadow dVar3, s41.b bVar, t41.a aVar2, i iVar, w41.c cVar) {
         new AtomicBoolean(false);
         this.a = context;
         this.f = vVar;
@@ -746,7 +746,7 @@ public final class l {
                                     String str14 = (String) atomicMarkableReference.getReference();
                                     File f2 = hVar.a.f(str13, "user-data");
                                     try {
-                                        x41.gShadow gVar2 = new x41.g();
+                                        x41.g gVar2 = new x41.g();
                                         gVar2.put("userId", str14);
                                         obj = gVar2.toString();
                                         bufferedWriter2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f2), h.b));
@@ -1029,7 +1029,7 @@ public final class l {
     public final void g(w21.o oVar) {
         w21.o oVar2;
         w21.o a;
-        w21.gShadow gVar = this.o;
+        w21.g gVar = this.o;
         b51.dShadow dVar = ((b51.b) this.m.b).b;
         if (b51.dShadow.k(((File) dVar.e).listFiles()).isEmpty() && b51.dShadow.k(((File) dVar.f).listFiles()).isEmpty() && b51.dShadow.k(((File) dVar.g).listFiles()).isEmpty()) {
             Log.isLoggable("FirebaseCrashlytics", 2);

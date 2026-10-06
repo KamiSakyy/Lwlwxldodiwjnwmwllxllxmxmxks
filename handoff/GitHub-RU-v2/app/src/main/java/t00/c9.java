@@ -457,7 +457,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -679,12 +679,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -692,13 +692,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -1108,7 +1108,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -1330,12 +1330,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -1343,13 +1343,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -1755,7 +1755,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -1977,12 +1977,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -1990,13 +1990,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -2402,7 +2402,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -2624,12 +2624,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -2637,13 +2637,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -3049,7 +3049,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -3271,12 +3271,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -3284,13 +3284,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -3720,7 +3720,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -3942,12 +3942,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -3955,13 +3955,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -4371,7 +4371,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -4593,12 +4593,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -4606,13 +4606,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -5020,7 +5020,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -5242,12 +5242,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -5255,13 +5255,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -5669,7 +5669,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -5891,12 +5891,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -5904,13 +5904,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -6318,7 +6318,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 f10 f10Var2 = g10Var.a;
                                 return new pb0.f(arrayList4, new i(f10Var2.b, f10Var2.a, !f10Var2.c));
                             case 9:
-                                w1.rShadow rVar8 = (w1.r) obj;
+                                w1.r rVar8 = (w1.r) obj;
                                 k71.k.g(rVar8, "$this$applyIf");
                                 return androidx.compose.foundation.layout.b.B(rVar8, ih.a.l, 0.0f, 0.0f, 0.0f, 14);
                             case 10:
@@ -6540,12 +6540,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 k71.k.g(pVar3, "repositoryIssueTypesParameters");
                                 return new w(new u0(30), bVar7, pVar3.a, pVar3.b);
                             case 20:
-                                py0.rShadow rVar10 = (py0.r) obj;
+                                py0.r rVar10 = (py0.r) obj;
                                 k71.k.g(rVar10, "data");
                                 v vVar2 = rVar10.a;
                                 return Boolean.valueOf((vVar2 == null || (sVar = vVar2.a) == null || (list2 = sVar.b) == null) ? false : !list2.isEmpty());
                             case 21:
-                                py0.rShadow rVar11 = (py0.r) obj;
+                                py0.r rVar11 = (py0.r) obj;
                                 k71.k.g(rVar11, "data");
                                 v vVar3 = rVar11.a;
                                 if (vVar3 == null || (sVar2 = vVar3.a) == null || (uVar = sVar2.a) == null) {
@@ -6553,13 +6553,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                                 }
                                 return new i(uVar.a, uVar.b, !uVar.c);
                             case 22:
-                                py0.rShadow rVar12 = (py0.r) obj;
+                                py0.r rVar12 = (py0.r) obj;
                                 k71.k.g(rVar12, "data");
                                 v vVar4 = rVar12.a;
                                 List list11 = (vVar4 == null || (sVar3 = vVar4.a) == null) ? null : sVar3.b;
                                 return list11 == null ? rVar5 : list11;
                             case 23:
-                                py0.rShadow rVar13 = (py0.r) obj;
+                                py0.r rVar13 = (py0.r) obj;
                                 k71.k.g(rVar13, "data");
                                 v vVar5 = rVar13.a;
                                 if (vVar5 == null || (sVar4 = vVar5.a) == null) {
@@ -6688,7 +6688,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                 i = v8Var.w;
                 if (i != 0) {
                     sy.y.j(obj);
-                    dw.m7Shadow m7Var = new dw.m7();
+                    dw.m7 m7Var = new dw.m7();
                     v8Var.w = 1;
                     obj = bVar.c(m7Var, str);
                 } else {
@@ -6705,7 +6705,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                 if (k7Var != null) {
                     String str2 = k7Var.a;
                     dw.k7 k7Var2 = new dw.k7(str2, new dw.i7(x61.rShadow.r), k7Var.c);
-                    dw.m7Shadow m7Var2 = new dw.m7();
+                    dw.m7 m7Var2 = new dw.m7();
                     v8Var.w = 2;
                 }
                 return w61.a0.a;
@@ -7654,7 +7654,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         u4Var = (uu0.u4) obj4;
                         com.github.service.wrapper.b bVar3 = this.t;
                         if (u4Var == null) {
-                            jn0.v1Shadow v1Var = new jn0.v1(str);
+                            jn0.v1 v1Var = new jn0.v1(str);
                             String str3 = u4Var.a;
                             d2 = bVar3.k(v1Var, new jn0.t1(new jn0.r1(new jn0.u1(str3, new kw0.a(u4Var.b, str3), u4Var))));
                         } else {

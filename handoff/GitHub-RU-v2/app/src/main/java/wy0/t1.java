@@ -1723,7 +1723,7 @@ public final class t1 implements y71.j {
                     ti tiVar = (ti) obj;
                     ig igVar = (tiVar == null || (uiVar2 = tiVar.a) == null || (viVar = uiVar2.b) == null) ? null : viVar.b;
                     int i3 = igVar == null ? -1 : bx0.n.a[igVar.ordinal()];
-                    yz0.t6Shadow t6Var = new yz0.t6(i3 != 1 ? i3 != 2 ? i3 != 3 ? i3 != 4 ? TimelineItem$TimelineLockedEvent$Reason.UNKNOWN : TimelineItem$TimelineLockedEvent$Reason.RESOLVED : TimelineItem$TimelineLockedEvent$Reason.TOO_HEATED : TimelineItem$TimelineLockedEvent$Reason.SPAM : TimelineItem$TimelineLockedEvent$Reason.OFF_TOPIC, new com.github.service.models.response.a((tiVar == null || (uiVar = tiVar.a) == null || (riVar = uiVar.a) == null) ? "" : riVar.b, (Avatar) null, (String) null, false, (String) null, 62));
+                    yz0.t6 t6Var = new yz0.t6(i3 != 1 ? i3 != 2 ? i3 != 3 ? i3 != 4 ? TimelineItem$TimelineLockedEvent$Reason.UNKNOWN : TimelineItem$TimelineLockedEvent$Reason.RESOLVED : TimelineItem$TimelineLockedEvent$Reason.TOO_HEATED : TimelineItem$TimelineLockedEvent$Reason.SPAM : TimelineItem$TimelineLockedEvent$Reason.OFF_TOPIC, new com.github.service.models.response.a((tiVar == null || (uiVar = tiVar.a) == null || (riVar = uiVar.a) == null) ? "" : riVar.b, (Avatar) null, (String) null, false, (String) null, 62));
                     j3Var.v = 1;
                     if (this.s.c(t6Var, j3Var) == aVar) {
                         return aVar;

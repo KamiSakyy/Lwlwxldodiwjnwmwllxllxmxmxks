@@ -31,7 +31,7 @@ public final class ng implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jn0.noShadow noVar = (jn0.no) obj;
+        jn0.no noVar = (jn0.no) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(noVar, "value");

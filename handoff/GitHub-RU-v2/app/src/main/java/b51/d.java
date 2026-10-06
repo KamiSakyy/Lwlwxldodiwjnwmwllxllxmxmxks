@@ -426,7 +426,7 @@ public final class dShadow {
                     bVar = new v41.b(a3.a(), bVar.b, bVar.c);
                 }
                 boolean z = str != null;
-                c51.dShadow dVar = aVar.a;
+                c51.d dVar = aVar.a;
                 synchronized (dVar.f) {
                     try {
                         gVar = new g();

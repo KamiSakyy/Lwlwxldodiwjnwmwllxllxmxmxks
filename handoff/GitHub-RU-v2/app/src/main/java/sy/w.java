@@ -656,7 +656,7 @@ public abstract class w {
 
     public static final mn.p p(g2 g2Var) {
         k71.k.g(g2Var, "<this>");
-        mn.oShadow oVar = mn.p.Companion;
+        mn.o oVar = mn.p.Companion;
         List list = g2Var.a;
         String str = g2Var.e;
         String str2 = g2Var.b;
@@ -690,13 +690,13 @@ public abstract class w {
     }
 
     public static w61.h s(w61.i iVar, j71.a aVar) {
-        w61.xShadow xVar = w61.x.a;
+        w61.x xVar = w61.x.a;
         int ordinal = iVar.ordinal();
         if (ordinal == 0) {
             return new w61.p(aVar);
         }
         if (ordinal == 1) {
-            w61.oShadow oVar = new w61.o();
+            w61.o oVar = new w61.o();
             oVar.r = aVar;
             oVar.s = xVar;
             return oVar;

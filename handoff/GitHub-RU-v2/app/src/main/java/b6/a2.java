@@ -147,11 +147,11 @@ public abstract class a2 {
         try {
             systemForegroundService.startForeground(i, notification, i10);
         } catch (ForegroundServiceStartNotAllowedException unused) {
-            v8.xShadow a10 = v8.x.a();
+            v8.x a10 = v8.x.a();
             int i11 = SystemForegroundService.f3235v;
             a10.getClass();
         } catch (SecurityException unused2) {
-            v8.xShadow a11 = v8.x.a();
+            v8.x a11 = v8.x.a();
             int i12 = SystemForegroundService.f3235v;
             a11.getClass();
         }

@@ -62,7 +62,7 @@ public abstract class a extends j1 implements a71.c, z {
         Object th = null;
         Object s;
         int ordinal = a0Var.ordinal();
-        w61.a0Shadow a0Var2 = w61.a0.a;
+        w61.a0 a0Var2 = w61.a0.a;
         if (ordinal == 0) {
             try {
                 a81.bShadow.h(b4.T(b4.G(aVar, this, eVar)), a0Var2);

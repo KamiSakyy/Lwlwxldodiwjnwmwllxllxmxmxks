@@ -10,7 +10,7 @@ public final class el implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.tuShadow tuVar = null;
+        jo.tu tuVar = null;
         while (eVar.r0(b) == 0) {
             tuVar = (jo.tu) aa.c.b(aa.c.c(hl.a, true)).a(eVar, wVar);
         }

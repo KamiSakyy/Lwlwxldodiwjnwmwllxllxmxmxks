@@ -169,7 +169,7 @@ public final class m implements y71.j {
         int i12;
         go0.w wVar;
         int i13;
-        go0.xShadow xVar;
+        go0.x xVar;
         int i14;
         h9.h hVar;
         int i15;
@@ -212,7 +212,7 @@ public final class m implements y71.j {
         x7<gy0.s> x7Var = x61.rShadow.r;
         x7 x7Var2 = null;
         y71.j jVar3 = this.s;
-        w61.a0Shadow a0Var = w61.a0.a;
+        w61.a0 a0Var = w61.a0.a;
         switch (i33) {
             case 0:
                 if (cVar instanceof l) {

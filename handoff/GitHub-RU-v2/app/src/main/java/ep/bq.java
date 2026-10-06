@@ -10,7 +10,7 @@ public final class bq implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.n10Shadow n10Var = null;
+        jo.n10 n10Var = null;
         String str = null;
         String str2 = null;
         while (true) {

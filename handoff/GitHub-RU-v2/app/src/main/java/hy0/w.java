@@ -40,7 +40,7 @@ public final class w implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        gy0.d0Shadow d0Var = (gy0.d0) obj;
+        gy0.d0 d0Var = (gy0.d0) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(d0Var, "value");

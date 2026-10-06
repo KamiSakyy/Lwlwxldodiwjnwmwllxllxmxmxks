@@ -14,7 +14,7 @@ public final class v implements aa.a {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
-        uw0.d0Shadow d0Var = null;
+        uw0.d0 d0Var = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(b);

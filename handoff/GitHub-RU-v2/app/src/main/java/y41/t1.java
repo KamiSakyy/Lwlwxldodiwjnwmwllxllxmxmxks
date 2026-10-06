@@ -90,7 +90,7 @@ public abstract class t1 {
         return valueOf + ":" + t9Var;
     }
 
-    public static final boolean H(x.h0Shadow h0Var, Object obj, Object obj2) {
+    public static final boolean H(x.h0 h0Var, Object obj, Object obj2) {
         Object g = h0Var.g(obj);
         if (g == null) {
             return false;
@@ -110,7 +110,7 @@ public abstract class t1 {
         return l;
     }
 
-    public static final void I(x.h0Shadow h0Var, Object obj) {
+    public static final void I(x.h0 h0Var, Object obj) {
         boolean z;
         long[] jArr = h0Var.a;
         int length = jArr.length - 2;
@@ -500,7 +500,7 @@ public abstract class t1 {
         return new c2.c(Float.intBitsToFloat(i), Float.intBitsToFloat(i2), Float.intBitsToFloat((int) (j2 >> 32)) + Float.intBitsToFloat(i), Float.intBitsToFloat((int) (j2 & 4294967295L)) + Float.intBitsToFloat(i2));
     }
 
-    public static final void d(x.h0Shadow h0Var, Object obj, Object obj2) {
+    public static final void d(x.h0 h0Var, Object obj, Object obj2) {
         int f = h0Var.f(obj);
         boolean z = f < 0;
         Object obj3 = z ? null : h0Var.c[f];

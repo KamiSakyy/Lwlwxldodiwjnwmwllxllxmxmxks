@@ -1020,7 +1020,7 @@ public final class r implements j0, o.a {
 
     /* JADX WARN: Type inference failed for: r1v0, types: [java.lang.Object, java.util.Collection, java.util.List] */
     public void s(q2.m mVar, boolean z) {
-        q2.zShadow zVar = (q2.z) this.v;
+        q2.z zVar = (q2.z) this.v;
         java.util.List r1 = (java.util.List) (mVar.a);
         int size = r1.size();
         for (int i = 0; i < size; i++) {
@@ -1065,7 +1065,7 @@ public final class r implements j0, o.a {
         n5.h hVar;
         int i;
         n5.c cVar2;
-        n5.xShadow xVar = (n5.x) this.v;
+        n5.x xVar = (n5.x) this.v;
         if (cVar instanceof n5.h) {
             hVar = (n5.h) cVar;
             int i2 = hVar.w;
@@ -1272,7 +1272,7 @@ public final class r implements j0, o.a {
         this.v = new a61.c1(0, this);
     }
 
-    public r(q2.zShadow zVar) {
+    public r(q2.z zVar) {
         this.r = 22;
         this.v = zVar;
         this.t = q2.y.r;
@@ -1547,7 +1547,7 @@ public final class r implements j0, o.a {
             i2 = 0;
         }
         for (int i7 = 0; i7 < i2; i7++) {
-            u5.tShadow tVar = new u5.t(this, i7);
+            u5.t tVar = new u5.t(this, i7);
             androidx.emoji2.text.flatbuffer.a c = tVar.c();
             int a3 = c.a(4);
             Character.toChars(a3 != 0 ? ((ByteBuffer) ((a5.q0) c).u).getInt(a3 + ((a5.q0) c).r) : 0, (char[]) this.t, i7 * 2);
@@ -1677,7 +1677,7 @@ public final class r implements j0, o.a {
         this.v = identityCredential;
     }
 
-    public r(n5.xShadow xVar, List list) {
+    public r(n5.x xVar, List list) {
         this.r = 17;
         this.v = xVar;
         this.s = e81.d.a();

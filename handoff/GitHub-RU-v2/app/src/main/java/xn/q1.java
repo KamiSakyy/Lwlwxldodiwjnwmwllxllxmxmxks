@@ -160,7 +160,7 @@ public final /* synthetic */ class q1 implements j71.c {
                     F0.close();
                 }
             case 15:
-                zm0.eShadow eVar = (zm0.e) obj;
+                zm0.e eVar = (zm0.e) obj;
                 k71.k.g(eVar, "$this$fetchWithPartialResultErrors");
                 return Boolean.valueOf(eVar.b != null);
             case 16:
@@ -521,7 +521,7 @@ public final /* synthetic */ class q1 implements j71.c {
                     ArrayList arrayList26 = new ArrayList();
                     Iterator it3 = list7.iterator();
                     while (it3.hasNext()) {
-                        v10.eShadow eVar2 = (v10.e) it3.next();
+                        v10.e eVar2 = (v10.e) it3.next();
                         if (eVar2 != null) {
                             String str13 = eVar2.b;
                             ZonedDateTime zonedDateTime10 = eVar2.c;
@@ -700,15 +700,15 @@ public final /* synthetic */ class q1 implements j71.c {
                 x6.y yVar = (x6.y) obj;
                 k71.k.g(yVar, "$this$navigation");
                 x6.p0 p0Var = yVar.g;
-                z6.eShadow r = com.github.rudroid.m0.r(p0Var, z6.eShadow.class);
+                z6.e r = com.github.rudroid.m0.r(p0Var, z6.e.class);
                 k71.eShadow a2 = k71.xShadow.a(UserOrOgProfileScreenRoute.class);
                 k71.eShadow a3 = k71.xShadow.a(UserOrOrganizationProfileNavigationFragment.class);
                 x61.s sVar2 = x61.s.r;
                 z6.i iVar4 = new z6.i(r, a2, sVar2, a3);
                 ArrayList arrayList29 = yVar.j;
                 arrayList29.add(iVar4.a());
-                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.xShadow.a(OrganizationsRoute.class), sVar2, k71.xShadow.a(OrganizationsFragment.class)).a());
-                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.xShadow.a(UsersRoute.class), (Map) ze.e.a, k71.xShadow.a(UsersFragment.class)).a());
+                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.xShadow.a(OrganizationsRoute.class), sVar2, k71.xShadow.a(OrganizationsFragment.class)).a());
+                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.xShadow.a(UsersRoute.class), (Map) ze.e.a, k71.xShadow.a(UsersFragment.class)).a());
                 rf.g.a(yVar);
                 mg.a.a(yVar);
                 sy.rShadow.u(yVar, k71.xShadow.a(OwnerProjectsEntryPointRoute.class), k71.xShadow.a(OwnerProjectsRoute.class), sVar2, new bf.c(1));

@@ -231,7 +231,7 @@ public final class a0Shadow {
     public static final z b(androidx.compose.runtime.s sVar) {
         long j = ih.d.a(sVar).e;
         long b = d2.t.b(0.38f, j);
-        List r = x61.l.r(new d2.tShadow[]{new d2.t(ih.d.b(sVar).K0), new d2.t(ih.d.b(sVar).L0)});
+        List r = x61.l.r(new d2.t[]{new d2.t(ih.d.b(sVar).K0), new d2.t(ih.d.b(sVar).L0)});
         long j2 = ih.d.a(sVar).v;
         f2 f2Var = f1.p0.a;
         return new zShadow(rb0.b.b(r), j2, f1.p0.a(d2.t.j, j, 0L, b, sVar, 4));

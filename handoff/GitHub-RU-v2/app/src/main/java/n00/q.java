@@ -54,7 +54,7 @@ public final class q implements aa.a {
     }
 
     public final void b(ea.f fVar, w wVar, Object obj) {
-        m00.d0Shadow d0Var = (m00.d0) obj;
+        m00.d0 d0Var = (m00.d0) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(d0Var, "value");

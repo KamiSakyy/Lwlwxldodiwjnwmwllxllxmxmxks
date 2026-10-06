@@ -29,12 +29,12 @@ public final class c9 extends c71.j implements j71.e {
         switch (this.v) {
             case 0:
                 c9 c9Var = (c9) r(cVar, jVar);
-                w61.a0Shadow a0Var = w61.a0.a;
+                w61.a0 a0Var = w61.a0.a;
                 c9Var.v(a0Var);
                 return a0Var;
             default:
                 c9 c9Var2 = (c9) r(cVar, jVar);
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 c9Var2.v(a0Var2);
                 return a0Var2;
         }
@@ -43,7 +43,7 @@ public final class c9 extends c71.j implements j71.e {
     @Override // c71.a
     public final Object v(Object obj) {
         int i = this.v;
-        w61.a0Shadow a0Var = w61.a0.a;
+        w61.a0 a0Var = w61.a0.a;
         a71.h hVar = this.s;
         e9 e9Var = this.w;
         switch (i) {

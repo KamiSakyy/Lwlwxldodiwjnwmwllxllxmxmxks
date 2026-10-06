@@ -37,7 +37,7 @@ public final class hi implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.arShadow arVar = (jo.ar) obj;
+        jo.ar arVar = (jo.ar) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(arVar, "value");

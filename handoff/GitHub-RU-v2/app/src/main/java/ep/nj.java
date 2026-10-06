@@ -26,7 +26,7 @@ public final class nj implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.osShadow osVar = (jo.os) obj;
+        jo.os osVar = (jo.os) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(osVar, "value");

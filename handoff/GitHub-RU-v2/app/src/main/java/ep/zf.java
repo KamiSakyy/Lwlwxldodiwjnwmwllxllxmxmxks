@@ -10,7 +10,7 @@ public final class zf implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.nnShadow nnVar = null;
+        jo.nn nnVar = null;
         jo.tn tnVar = null;
         while (true) {
             int r0 = eVar.r0(b);

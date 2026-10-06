@@ -223,7 +223,7 @@ public abstract class n {
         return new y1(str2, str4, str5, z, zonedDateTime, d3Var, z2, subscriptionState5, subscriptionState7, c, str, i, b0Var, i2, x0, gVar != null ? gVar.a : 0, t.a0.N(lVar.o), (IssueType) null, (h01.p) null, (String) null, kVar.c, (z01.p) null);
     }
 
-    public static final p01.n G(w61.kShadow kVar) {
+    public static final p01.n G(w61.k kVar) {
         int i;
         Object obj = kVar.r;
         m3 m3Var = (m3) obj;
@@ -255,7 +255,7 @@ public abstract class n {
     public static final Object H(x6.kShadow kVar, k71.e eVar) {
         Bundle a = kVar.y.a();
         if (a == null) {
-            a = d((w61.kShadow[]) Arrays.copyOf(new w61.k[0], 0));
+            a = d((w61.k[]) Arrays.copyOf(new w61.k[0], 0));
         }
         Map f = kVar.s.f();
         LinkedHashMap linkedHashMap = new LinkedHashMap(x61.x.s(f.size()));

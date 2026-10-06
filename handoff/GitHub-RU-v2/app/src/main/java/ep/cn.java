@@ -38,7 +38,7 @@ public final class cn implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.mxShadow mxVar = (jo.mx) obj;
+        jo.mx mxVar = (jo.mx) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(mxVar, "value");

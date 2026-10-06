@@ -10,7 +10,7 @@ public final class sl implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.nvShadow nvVar = null;
+        jo.nv nvVar = null;
         while (eVar.r0(b) == 0) {
             nvVar = (jo.nv) aa.c.b(aa.c.c(vl.a, false)).a(eVar, wVar);
         }

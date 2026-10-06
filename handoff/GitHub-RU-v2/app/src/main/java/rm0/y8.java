@@ -75,9 +75,9 @@ public final class y8 implements z01.g1, yb0, y90 {
                 this.t = bVar;
                 this.u = vVar;
                 oo.a aVar = new oo.a(4);
-                n0.xShadow xVar = new n0.x(25);
+                n0.x xVar = new n0.x(25);
                 s01.oShadow oVar = s01.oShadow.r;
-                n0.xShadow xVar2 = new n0.x(26);
+                n0.x xVar2 = new n0.x(26);
                 oo.a aVar2 = new oo.a(5);
                 oo.a aVar3 = new oo.a(6);
                 oo.a aVar4 = new oo.a(7);
@@ -89,7 +89,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                jy.bShadow bVar2 = new jy.b(29);
+                jy.b bVar2 = new jy.b(29);
                 lb0.a aVar6 = new lb0.a(1);
                 s01.oShadow oVar2 = s01.oShadow.r;
                 lb0.a aVar7 = new lb0.a(2);
@@ -192,7 +192,7 @@ public final class y8 implements z01.g1, yb0, y90 {
     public static final Object N(y8 y8Var, String str, c71.c cVar) {
         vb0.l6 l6Var;
         int i;
-        w80.v3Shadow v3Var;
+        w80.v3 v3Var;
         com.github.service.wrapper.bShadow bVar = y8Var.t;
         if (cVar instanceof vb0.l6) {
             l6Var = (vb0.l6) cVar;

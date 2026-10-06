@@ -80,7 +80,7 @@ public final class tk implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.fuShadow fuVar = (jo.fu) obj;
+        jo.fu fuVar = (jo.fu) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(fuVar, "value");

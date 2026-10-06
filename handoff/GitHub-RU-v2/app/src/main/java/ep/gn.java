@@ -20,7 +20,7 @@ public abstract class gn implements aaShadow.a {
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, jo.qxShadow qxVar) {
+    public static void d(ea.f fVar, aa.w wVar, jo.qx qxVar) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(qxVar, "value");

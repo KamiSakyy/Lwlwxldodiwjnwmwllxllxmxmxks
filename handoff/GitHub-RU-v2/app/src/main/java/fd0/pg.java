@@ -42,7 +42,7 @@ public final class pg implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        kc0.noShadow noVar = (kc0.no) obj;
+        kc0.no noVar = (kc0.no) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(noVar, "value");

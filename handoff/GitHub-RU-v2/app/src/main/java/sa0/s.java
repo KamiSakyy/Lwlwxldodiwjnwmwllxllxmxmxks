@@ -20,7 +20,7 @@ public class s implements aa.a {
     }
 
     public final void b(ea.f fVar, w wVar, Object obj) {
-        ra0.d0Shadow d0Var = (ra0.d0) obj;
+        ra0.d0 d0Var = (ra0.d0) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(d0Var, "value");

@@ -12,10 +12,10 @@ public class s {
     public SharedPreferences a;
     public k41.gShadow b;
     public Object c;
-    public w21.gShadow d;
+    public w21.g d;
     public boolean e;
     public Boolean f;
-    public w21.gShadow g;
+    public w21.g g;
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x006c  */
     /* JADX WARN: Removed duplicated region for block: B:18:0x006e  */

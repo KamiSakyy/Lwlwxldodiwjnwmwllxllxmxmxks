@@ -70,9 +70,9 @@ import yz0.l4;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 implements y71.j {
     public final /* synthetic */ int r;
-    public final /* synthetic */ y71.jShadow s;
+    public final /* synthetic */ y71.j s;
 
-    public /* synthetic */ k0(y71.jShadow jVar, int i) {
+    public /* synthetic */ k0(y71.j jVar, int i) {
         this.r = i;
         this.s = jVar;
     }
@@ -215,7 +215,7 @@ public final class k0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object d(a71.c cVar, Object obj) {
-        c00.jShadow jVar;
+        c00.j jVar;
         int i;
         f00.m0 m0Var;
         f00.g0 g0Var;
@@ -644,7 +644,7 @@ public final class k0 implements y71.j {
         int i14;
         w61.k kVar6;
         kw kwVar;
-        bz0.jShadow jVar3;
+        bz0.j jVar3;
         int i15;
         b2 b2Var;
         bz0.k kVar7;
@@ -1609,7 +1609,7 @@ public final class k0 implements y71.j {
                         Object obj33 = sVar.u;
                         b71.a aVar26 = b71.a.r;
                         i22 = sVar.v;
-                        w61.a0Shadow a0Var = w61.a0.a;
+                        w61.a0 a0Var = w61.a0.a;
                         if (i22 != 0) {
                             sy.y.j(obj33);
                             sVar.v = 1;
@@ -1629,7 +1629,7 @@ public final class k0 implements y71.j {
                 Object obj332 = sVar.u;
                 b71.a aVar262 = b71.a.r;
                 i22 = sVar.v;
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 if (i22 != 0) {
                 }
                 return a0Var2;
@@ -1642,7 +1642,7 @@ public final class k0 implements y71.j {
                         Object obj34 = uVar.u;
                         b71.a aVar27 = b71.a.r;
                         i23 = uVar.v;
-                        w61.a0Shadow a0Var3 = w61.a0.a;
+                        w61.a0 a0Var3 = w61.a0.a;
                         if (i23 != 0) {
                             sy.y.j(obj34);
                             uVar.v = 1;
@@ -1662,7 +1662,7 @@ public final class k0 implements y71.j {
                 Object obj342 = uVar.u;
                 b71.a aVar272 = b71.a.r;
                 i23 = uVar.v;
-                w61.a0Shadow a0Var32 = w61.a0.a;
+                w61.a0 a0Var32 = w61.a0.a;
                 if (i23 != 0) {
                 }
                 return a0Var32;
@@ -1717,7 +1717,7 @@ public final class k0 implements y71.j {
         }
     }
 
-    public k0(y71.jShadow jVar, o0 o0Var) {
+    public k0(y71.j jVar, o0 o0Var) {
         this.r = 0;
         this.s = jVar;
     }

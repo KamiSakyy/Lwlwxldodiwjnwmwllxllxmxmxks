@@ -40,7 +40,7 @@ public final class s1 implements z01.n, mi0 {
         this.s = bVar;
         this.t = vVar;
         m7.rShadow rVar = new m7.r(16);
-        n0.xShadow xVar = new n0.x(3);
+        n0.x xVar = new n0.x(3);
         s01.oShadow oVar = s01.oShadow.s;
         jy.d dVar = new jy.d(jVar, bVar, vVar, rVar, xVar, oVar, new n0.x(4), new m7.r(17), new m7.r(18), new m7.r(19), new m7.r(20), null, null, 126976);
         this.u = dVar;

@@ -10,7 +10,7 @@ public final class ul implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.lvShadow lvVar = null;
+        jo.lv lvVar = null;
         String str = null;
         String str2 = null;
         while (true) {

@@ -413,7 +413,7 @@ public final class bShadow {
     }
 
     public final ca1.j g(p0 p0Var, String str, boolean z2) {
-        ca1.bShadow bVar = p0Var.g;
+        ca1.b bVar = p0Var.g;
         if (bVar != null && bVar.size() != 0) {
             int i = 0;
             if (!z2 && !this.h.b) {

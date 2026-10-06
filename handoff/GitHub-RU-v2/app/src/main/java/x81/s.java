@@ -210,7 +210,7 @@ public class s implements Closeable {
                     final int readInt4 = this.r.readInt();
                     final int readInt5 = this.r.readInt();
                     if (((readByte2 & 1) != 0 ? 1 : 0) == 0) {
-                        t81.cShadow cVar = nVar.s.y;
+                        t81.c cVar = nVar.s.y;
                         String p = h1.p(new StringBuilder(), nVar.s.t, " ping");
                         final o oVar3 = nVar.s;
                         t81.c.b(cVar, p, 0L, new j71.a() { // from class: x81.m

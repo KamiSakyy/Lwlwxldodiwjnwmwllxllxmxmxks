@@ -10,7 +10,7 @@ public final class al implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.juShadow juVar = null;
+        jo.ju juVar = null;
         List list = null;
         while (true) {
             int r0 = eVar.r0(b);

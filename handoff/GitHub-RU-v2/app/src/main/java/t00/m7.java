@@ -27,12 +27,12 @@ public final class m7Shadow extends c71.j implements j71.e {
         switch (this.v) {
             case 0:
                 m7Shadow r = r(cVar, jVar);
-                w61.a0Shadow a0Var = w61.a0.a;
+                w61.a0 a0Var = w61.a0.a;
                 r.v(a0Var);
                 return a0Var;
             default:
                 m7Shadow r2 = r(cVar, jVar);
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 r2.v(a0Var2);
                 return a0Var2;
         }
@@ -40,7 +40,7 @@ public final class m7Shadow extends c71.j implements j71.e {
 
     public final Object v(Object obj) {
         int i = this.v;
-        w61.a0Shadow a0Var = w61.a0.a;
+        w61.a0 a0Var = w61.a0.a;
         a71.h hVar = ((c71.c) this).s;
         o7 o7Var = this.w;
         switch (i) {

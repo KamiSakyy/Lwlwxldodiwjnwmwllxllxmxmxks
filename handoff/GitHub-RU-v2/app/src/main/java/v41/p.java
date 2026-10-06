@@ -10,10 +10,10 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class p {
     public Context a;
     public s b;
-    public v2.tShadow c;
+    public v2.t c;
     public long d;
-    public v2.tShadow e;
-    public v2.tShadow f;
+    public v2.t e;
+    public v2.t f;
     public boolean g;
     public l h;
     public v i;
@@ -45,7 +45,7 @@ public final class p {
         File file;
         w41.c.a();
         w41.c.a();
-        v2.tShadow tVar = this.e;
+        v2.t tVar = this.e;
         tVar.getClass();
         try {
             b51.dShadow dVar2 = (b51.dShadow) tVar.t;
@@ -62,7 +62,7 @@ public final class p {
                     this.h.f();
                 } catch (Exception unused2) {
                     w41.c.a();
-                    v2.tShadow tVar2 = this.e;
+                    v2.t tVar2 = this.e;
                     b51.dShadow dVar3 = (b51.dShadow) tVar2.t;
                     String str2 = (String) tVar2.s;
                     dVar3.getClass();
@@ -85,7 +85,7 @@ public final class p {
                     }
                 }
                 this.h.g(((w21.g) ((AtomicReference) dVar.i).get()).a);
-                v2.tShadow tVar3 = this.e;
+                v2.t tVar3 = this.e;
                 b51.dShadow dVar4 = (b51.dShadow) tVar3.t;
                 String str3 = (String) tVar3.s;
                 dVar4.getClass();
@@ -94,7 +94,7 @@ public final class p {
             } finally {
                 w41.c.a();
                 try {
-                    v2.tShadow tVar4 = this.e;
+                    v2.t tVar4 = this.e;
                     b51.dShadow dVar5 = (b51.dShadow) tVar4.t;
                     String str4 = (String) tVar4.s;
                     dVar5.getClass();

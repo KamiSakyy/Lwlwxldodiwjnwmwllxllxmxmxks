@@ -38,7 +38,7 @@ public final class vf implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jn0.nnShadow nnVar = (jn0.nn) obj;
+        jn0.nn nnVar = (jn0.nn) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(nnVar, "value");

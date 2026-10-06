@@ -182,7 +182,7 @@ public abstract class f0 {
         List list;
         int i3;
         String str2;
-        b01.kShadow kVar;
+        b01.k kVar;
         boolean z4;
         String str3;
         ArrayList arrayList;
@@ -395,8 +395,8 @@ public abstract class f0 {
                 while (i < m) {
                     i++;
                     Object obj2 = arrayList.get(i);
-                    d3.tShadow tVar = (d3.t) obj2;
-                    d3.tShadow tVar2 = (d3.t) obj;
+                    d3.t tVar = (d3.t) obj2;
+                    d3.t tVar2 = (d3.t) obj;
                     float abs = Math.abs(Float.intBitsToFloat((int) (tVar2.g().c() >> 32)) - Float.intBitsToFloat((int) (tVar.g().c() >> 32)));
                     float abs2 = Math.abs(Float.intBitsToFloat((int) (tVar2.g().c() & 4294967295L)) - Float.intBitsToFloat((int) (tVar.g().c() & 4294967295L)));
                     arrayList2.add(new c2.b((Float.floatToRawIntBits(abs) << 32) | (Float.floatToRawIntBits(abs2) & 4294967295L)));
@@ -548,7 +548,7 @@ public abstract class f0 {
         return r3.a(r3Var, Math.max(r3Var.c - 1, 0), false);
     }
 
-    public static final void q(b5.f fVar, d3.tShadow tVar) {
+    public static final void q(b5.f fVar, d3.t tVar) {
         Object g = tVar.k().r.g(d3.x.g);
         if (g == null) {
             g = null;
@@ -556,7 +556,7 @@ public abstract class f0 {
         if (g != null) {
             throw new ClassCastException();
         }
-        d3.tShadow l = tVar.l();
+        d3.t l = tVar.l();
         if (l == null) {
             return;
         }
@@ -574,7 +574,7 @@ public abstract class f0 {
                     int size = j.size();
                     int i = 0;
                     for (int i2 = 0; i2 < size; i2++) {
-                        d3.tShadow tVar2 = (d3.t) j.get(i2);
+                        d3.t tVar2 = (d3.t) j.get(i2);
                         if (tVar2.k().r.c(d3.x.I)) {
                             arrayList.add(tVar2);
                             if (tVar2.c.x() < tVar.c.x()) {

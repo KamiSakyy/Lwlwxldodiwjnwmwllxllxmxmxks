@@ -10,7 +10,7 @@ public final class xf implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jn0.nnShadow nnVar = null;
+        jn0.nn nnVar = null;
         String str = null;
         String str2 = null;
         while (true) {

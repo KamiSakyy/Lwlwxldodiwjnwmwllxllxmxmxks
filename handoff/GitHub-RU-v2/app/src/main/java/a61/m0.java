@@ -37,7 +37,7 @@ public final class m0 extends c71.j implements j71.e {
         switch (this.v) {
             case 0:
                 m0 m0Var = (m0) r((a71.c) obj2, (s5.b) obj);
-                w61.a0Shadow a0Var = w61.a0.a;
+                w61.a0 a0Var = w61.a0.a;
                 m0Var.v(a0Var);
                 return a0Var;
             default:

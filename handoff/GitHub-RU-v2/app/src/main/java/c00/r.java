@@ -439,7 +439,7 @@ public final class r implements y71.j {
                                 while (i29 < size2) {
                                     Object obj4 = S.get(i29);
                                     int i31 = i29 + 1;
-                                    vz.xShadow xVar = (vz.x) obj4;
+                                    vz.x xVar = (vz.x) obj4;
                                     String str2 = xVar.b;
                                     xz.f fVar4 = xVar.c;
                                     if (str2 == null) {
@@ -788,7 +788,7 @@ public final class r implements y71.j {
                                 while (i37 < size4) {
                                     Object obj10 = S3.get(i37);
                                     int i38 = i37 + 1;
-                                    yx0.xShadow xVar2 = (yx0.x) obj10;
+                                    yx0.x xVar2 = (yx0.x) obj10;
                                     String str6 = xVar2.b;
                                     ay0.f fVar6 = xVar2.c;
                                     if (str6 == null) {

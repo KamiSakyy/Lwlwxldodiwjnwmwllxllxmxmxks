@@ -10,7 +10,7 @@ public final class gi implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.arShadow arVar = null;
+        jo.ar arVar = null;
         String str = null;
         String str2 = null;
         while (true) {

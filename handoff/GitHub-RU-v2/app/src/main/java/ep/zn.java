@@ -10,7 +10,7 @@ public final class zn implements aaShadow.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.syShadow syVar = null;
+        jo.sy syVar = null;
         String str = null;
         String str2 = null;
         while (true) {

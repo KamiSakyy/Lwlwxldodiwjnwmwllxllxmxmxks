@@ -43,7 +43,7 @@ public final class d1Shadow implements y71.j {
         int i3;
         s20.c cVar4;
         hc0.i9 i9Var;
-        wy0.s0Shadow s0Var;
+        wy0.s0 s0Var;
         int i4;
         io0.c cVar5;
         pz0.va vaVar;

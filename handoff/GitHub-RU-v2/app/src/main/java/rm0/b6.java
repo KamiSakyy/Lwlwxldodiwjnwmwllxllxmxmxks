@@ -271,13 +271,13 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 return y71.n1Shadow.y(new vb0.t3(new y00.l(in.rShadow.h(this.t.d(new xb(str, u0Var12, u0Var13, u0Var14, u0Var15, u0Var11))), 10), 3), this.u);
             default:
                 zs Q = pullRequestMergeMethod != null ? aa1.b.Q(pullRequestMergeMethod) : null;
-                aa1.bShadow bVar = aa.t0.d;
-                aa1.bShadow u0Var16 = Q == null ? bVar : new aa.u0(Q);
-                aa1.bShadow u0Var17 = str2 == null ? bVar : new aa.u0(str2);
+                aa1.b bVar = aa.t0.d;
+                aa1.b u0Var16 = Q == null ? bVar : new aa.u0(Q);
+                aa1.b u0Var17 = str2 == null ? bVar : new aa.u0(str2);
                 String str10 = s2Var != null ? s2Var.r : null;
-                aa1.bShadow u0Var18 = str10 == null ? bVar : new aa.u0(str10);
+                aa1.b u0Var18 = str10 == null ? bVar : new aa.u0(str10);
                 String str11 = s2Var != null ? s2Var.s : null;
-                aa1.bShadow u0Var19 = str11 == null ? bVar : new aa.u0(str11);
+                aa1.b u0Var19 = str11 == null ? bVar : new aa.u0(str11);
                 if (str3 != null) {
                     bVar = new aa.u0(str3);
                 }
@@ -372,7 +372,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     nnVar = null;
                 }
-                aa1.bShadow bVar = aa.t0.d;
+                aa1.b bVar = aa.t0.d;
                 return y71.n1Shadow.y(new d5(new y00.l(in.rShadow.h(this.t.d(new l80(str, nnVar == null ? bVar : new aa.u0(nnVar), bVar, str2 == null ? bVar : new aa.u0(str2), bVar, arrayList == null ? bVar : new aa.u0(arrayList), bVar))), 10), 10), this.u);
             case 1:
                 k71.k.g(str, "id");
@@ -391,7 +391,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     l00Var = null;
                 }
-                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.b bVar2 = aa.t0.d;
                 return y71.n1Shadow.y(new t00.w3(new y00.l(in.rShadow.h(this.t.d(new ze0(str, l00Var == null ? bVar2 : new aa.u0(l00Var), bVar2, str2 == null ? bVar2 : new aa.u0(str2), bVar2, bVar2))), 10), 24), this.u);
             case 2:
                 k71.k.g(str, "id");
@@ -410,7 +410,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     lmVar = null;
                 }
-                aa1.bShadow bVar3 = aa.t0.d;
+                aa1.b bVar3 = aa.t0.d;
                 return y71.n1Shadow.y(new vb0.t3(new y00.l(in.rShadow.h(this.t.d(new l60(str, lmVar == null ? bVar3 : new aa.u0(lmVar), bVar3, str2 == null ? bVar3 : new aa.u0(str2), bVar3, arrayList == null ? bVar3 : new aa.u0(arrayList), bVar3))), 10), 8), this.u);
             default:
                 k71.k.g(str, "id");
@@ -429,7 +429,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     ouVar = null;
                 }
-                aa1.bShadow bVar4 = aa.t0.d;
+                aa1.b bVar4 = aa.t0.d;
                 return y71.n1Shadow.y(new wy0.q3(new y00.l(in.rShadow.h(this.t.d(new lc0(str, ouVar == null ? bVar4 : new aa.u0(ouVar), bVar4, str2 == null ? bVar4 : new aa.u0(str2), bVar4, arrayList == null ? bVar4 : new aa.u0(arrayList), bVar4))), 10), 19), this.u);
         }
     }

@@ -73,7 +73,7 @@ public abstract class tShadow {
         List list;
         int i3;
         String str2;
-        b01.kShadow kVar;
+        b01.k kVar;
         boolean z4;
         String str3;
         ArrayList arrayList;
@@ -545,7 +545,7 @@ public abstract class tShadow {
             int i4 = c0Var.h;
             int i5 = c0Var.i;
             int i6 = x6.w.w;
-            x6.d0Shadow d0Var = new x6.d0(z, z2, "android-app://androidx.navigation/".concat(str2).hashCode(), z9, z11, i2, i3, i4, i5);
+            x6.d0 d0Var = new x6.d0(z, z2, "android-app://androidx.navigation/".concat(str2).hashCode(), z9, z11, i2, i3, i4, i5);
             d0Var.j = str2;
             return d0Var;
         }
@@ -553,7 +553,7 @@ public abstract class tShadow {
         if (bVar == null) {
             return new x6.d0(z, z2, c0Var.a, c0Var.d, c0Var.e, c0Var.f, c0Var.g, c0Var.h, c0Var.i);
         }
-        x6.d0Shadow d0Var2 = new x6.d0(z, z2, b7.i.b(b91.g.J(bVar)), c0Var.d, c0Var.e, c0Var.f, c0Var.g, c0Var.h, c0Var.i);
+        x6.d0 d0Var2 = new x6.d0(z, z2, b7.i.b(b91.g.J(bVar)), c0Var.d, c0Var.e, c0Var.f, c0Var.g, c0Var.h, c0Var.i);
         d0Var2.k = bVar;
         return d0Var2;
     }

@@ -37,7 +37,7 @@ public final class hl implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.tuShadow tuVar = (jo.tu) obj;
+        jo.tu tuVar = (jo.tu) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(tuVar, "value");

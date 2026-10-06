@@ -46,11 +46,11 @@ public final class f implements z01.c, yb0, y90 {
     public final y71.i b(String str, ArrayList arrayList, AgentAssignment agentAssignment, ProjectsMetaInfo projectsMetaInfo, String str2) {
         switch (this.r) {
             case 0:
-                z01.bShadow bVar = z01.b.r;
+                z01.b bVar = z01.b.r;
                 k71.k.g(str, "assignableId");
                 return y41.t1.S("addAssigneesToAssignable", "3.12");
             default:
-                z01.bShadow bVar2 = z01.b.r;
+                z01.b bVar2 = z01.b.r;
                 k71.k.g(str, "assignableId");
                 return y41.t1.S("addAssigneesToAssignable", "3.10");
         }
@@ -67,7 +67,7 @@ public final class f implements z01.c, yb0, y90 {
     }
 
     @Override // z01.c
-    public final y71.i d(String str, z01.bShadow bVar, ArrayList arrayList, ProjectsMetaInfo projectsMetaInfo, String str2) {
+    public final y71.i d(String str, z01.b bVar, ArrayList arrayList, ProjectsMetaInfo projectsMetaInfo, String str2) {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "assignableId");

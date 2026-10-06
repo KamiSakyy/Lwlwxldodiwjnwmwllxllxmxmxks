@@ -53,7 +53,7 @@ public final class z9 extends c71.j implements j71.f {
             case 0:
                 b71.a aVar = b71.a.r;
                 int i = this.w;
-                w61.a0Shadow a0Var = w61.a0.a;
+                w61.a0 a0Var = w61.a0.a;
                 if (i == 0) {
                     sy.y.j(obj);
                     y71.j jVar = this.x;
@@ -105,7 +105,7 @@ public final class z9 extends c71.j implements j71.f {
             case 2:
                 b71.a aVar3 = b71.a.r;
                 int i3 = this.w;
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 if (i3 == 0) {
                     sy.y.j(obj);
                     y71.j jVar3 = this.x;

@@ -130,7 +130,7 @@ public abstract class qf implements aaShadow.a {
         u10.in inVar = null;
         u10.wm wmVar = null;
         u10.jn jnVar = null;
-        u10.nnShadow nnVar = null;
+        u10.nn nnVar = null;
         while (true) {
             switch (eVar.r0(a)) {
                 case 0:

@@ -272,7 +272,7 @@ public final class v4 extends c71.j implements j71.e {
         v50 v50Var;
         int i = this.v;
         int i2 = 8;
-        w61.a0Shadow a0Var = w61.a0.a;
+        w61.a0 a0Var = w61.a0.a;
         Object obj2 = this.y;
         switch (i) {
             case 0:
@@ -293,7 +293,7 @@ public final class v4 extends c71.j implements j71.e {
                 }
                 ri0.u3 u3Var = xkVar.i;
                 com.github.service.wrapper.bShadow bVar = ((x4) obj2).t;
-                ri0.w3Shadow w3Var = new ri0.w3();
+                ri0.w3 w3Var = new ri0.w3();
                 String str = u3Var.a;
                 this.x = null;
                 this.w = 1;
@@ -380,7 +380,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 sy.y.j(obj);
-                q2.xShadow xVar = (q2.x) this.x;
+                q2.x xVar = (q2.x) this.x;
                 d1.r1 r1Var = new d1.r1((d1.z1) obj2, 2);
                 this.w = 1;
                 return h0.n3.e(xVar, (f1.r9) null, r1Var, this, 7) == aVar5 ? aVar5 : a0Var;
@@ -663,7 +663,7 @@ public final class v4 extends c71.j implements j71.e {
                 int i22 = this.w;
                 if (i22 == 0) {
                     sy.y.j(obj);
-                    y71.w1Shadow w1Var = (y71.w1) this.x;
+                    y71.w1 w1Var = (y71.w1) this.x;
                     a61.f0Shadow f0Var = new a61.f0Shadow(8, (w2.y1) obj2);
                     this.w = 1;
                     if (w1Var.b(f0Var, this) == aVar18) {
@@ -741,7 +741,7 @@ public final class v4 extends c71.j implements j71.e {
                 }
                 xt0.u3 u3Var2 = omVar.i;
                 com.github.service.wrapper.bShadow bVar13 = ((x4) obj2).t;
-                xt0.w3Shadow w3Var2 = new xt0.w3();
+                xt0.w3 w3Var2 = new xt0.w3();
                 String str10 = u3Var2.a;
                 this.x = null;
                 this.w = 1;
@@ -862,7 +862,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 sy.y.j(obj);
-                x71.tShadow tVar = (x71.t) this.x;
+                x71.t tVar = (x71.t) this.x;
                 this.w = 1;
                 return ((z71.d) obj2).d(tVar, this) == aVar26 ? aVar26 : a0Var;
             case 26:
@@ -921,7 +921,7 @@ public final class v4 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                v8.xShadow a = v8.x.a();
+                v8.x a = v8.x.a();
                 int i38 = z8.h.a;
                 a.getClass();
                 ((x71.t) obj2).j(new z8.b(7));

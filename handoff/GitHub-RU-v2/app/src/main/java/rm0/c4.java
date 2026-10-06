@@ -148,7 +148,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final Object q(c4 c4Var, String str, int i, c71.c cVar) {
-        vb0.w2Shadow w2Var;
+        vb0.w2 w2Var;
         int i2;
         int i3;
         w50.l lVar;
@@ -688,7 +688,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         switch (this.r) {
             case 0:
                 int ordinal = b0Var.ordinal();
-                aa1.bShadow bVar = aa.t0.d;
+                aa1.b bVar = aa.t0.d;
                 if (ordinal == 0) {
                     if (str3 != null) {
                         bVar = new aa.u0(str3);
@@ -708,7 +708,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 return y71.n1Shadow.y(new j3(com.github.service.wrapper.a.o(this.s, p0Var, null, false, null, null, 62), 4), this.u);
             case 1:
                 int ordinal2 = b0Var.ordinal();
-                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.b bVar2 = aa.t0.d;
                 if (ordinal2 == 0) {
                     if (str3 != null) {
                         bVar2 = new aa.u0(str3);
@@ -728,7 +728,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 return y71.n1Shadow.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, p0Var2, null, false, null, null, 62), 2), this.u);
             default:
                 int ordinal3 = b0Var.ordinal();
-                aa1.bShadow bVar3 = aa.t0.d;
+                aa1.b bVar3 = aa.t0.d;
                 if (ordinal3 == 0) {
                     if (str3 != null) {
                         bVar3 = new aa.u0(str3);

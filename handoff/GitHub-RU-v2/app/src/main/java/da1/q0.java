@@ -7,7 +7,7 @@ public abstract class q0 extends s0 {
     public b1.m d;
     public String e;
     public boolean f;
-    public ca1.bShadow g;
+    public ca1.b g;
     public b1.m h;
     public b1.m i;
     public boolean j;

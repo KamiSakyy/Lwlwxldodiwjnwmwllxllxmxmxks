@@ -114,7 +114,7 @@ public final class f2 implements y71.j {
         int i18;
         wy0.u2 u2Var;
         int i19;
-        wy0.w2Shadow w2Var;
+        wy0.w2 w2Var;
         int i20;
         wy0.x2 x2Var;
         int i22;
@@ -535,7 +535,7 @@ public final class f2 implements y71.j {
                         i13 = i5Var.v;
                         if (i13 != 0) {
                             sy.y.j(obj13);
-                            rz.s0Shadow s0Var = (rz.s0) obj;
+                            rz.s0 s0Var = (rz.s0) obj;
                             k71.k.g(s0Var, "<this>");
                             rz.u0 u0Var3 = s0Var.a;
                             if (u0Var3 != null) {
@@ -550,7 +550,7 @@ public final class f2 implements y71.j {
                             } else {
                                 u0Var = null;
                             }
-                            rz.s0Shadow s0Var2 = new rz.s0(u0Var, s0Var.b, s0Var.c);
+                            rz.s0 s0Var2 = new rz.s0(u0Var, s0Var.b, s0Var.c);
                             List list4 = u0Var3 != null ? u0Var3.b.b.a : null;
                             w61.k kVar2 = new w61.k(s0Var2, Boolean.valueOf(!(list4 == null || list4.isEmpty())));
                             i5Var.v = 1;
@@ -907,7 +907,7 @@ public final class f2 implements y71.j {
                         i24 = q4Var.v;
                         if (i24 != 0) {
                             sy.y.j(obj24);
-                            ux0.s0Shadow s0Var3 = (ux0.s0) obj;
+                            ux0.s0 s0Var3 = (ux0.s0) obj;
                             k71.k.g(s0Var3, "<this>");
                             ux0.u0 u0Var4 = s0Var3.a;
                             if (u0Var4 != null) {
@@ -922,7 +922,7 @@ public final class f2 implements y71.j {
                             } else {
                                 u0Var2 = null;
                             }
-                            ux0.s0Shadow s0Var4 = new ux0.s0(u0Var2, s0Var3.b, s0Var3.c);
+                            ux0.s0 s0Var4 = new ux0.s0(u0Var2, s0Var3.b, s0Var3.c);
                             List list8 = u0Var4 != null ? u0Var4.b.b.a : null;
                             w61.k kVar4 = new w61.k(s0Var4, Boolean.valueOf(!(list8 == null || list8.isEmpty())));
                             q4Var.v = 1;

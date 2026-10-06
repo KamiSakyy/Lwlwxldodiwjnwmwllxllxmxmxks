@@ -876,7 +876,7 @@ public final class o8 implements y71.j {
                         Object obj3 = s8Var.u;
                         b71.a aVar3 = b71.a.r;
                         i2 = s8Var.v;
-                        w61.a0Shadow a0Var = w61.a0.a;
+                        w61.a0 a0Var = w61.a0.a;
                         if (i2 != 0) {
                             sy.y.j(obj3);
                             s8Var.v = 1;
@@ -896,7 +896,7 @@ public final class o8 implements y71.j {
                 Object obj32 = s8Var.u;
                 b71.a aVar32 = b71.a.r;
                 i2 = s8Var.v;
-                w61.a0Shadow a0Var2 = w61.a0.a;
+                w61.a0 a0Var2 = w61.a0.a;
                 if (i2 != 0) {
                 }
                 return a0Var2;
@@ -1366,7 +1366,7 @@ public final class o8 implements y71.j {
                             oj0.b2 b2Var = e2Var.h;
                             yz0.t7 t7Var = new yz0.t7(str19, str20, b2Var.c, b41.b.O(b2Var.d), new wl0.j(ooVar4.d), e2Var.e);
                             String str21 = e2Var.h.b;
-                            wl0.bShadow bVar = new wl0.b(koVar.k, str9, new yz0.k0(str10));
+                            wl0.b bVar = new wl0.b(koVar.k, str9, new yz0.k0(str10));
                             ZonedDateTime zonedDateTime = koVar.f;
                             ArrayList p = aa1.b.p(cVar4, str10);
                             boolean z13 = cVar4.c;
@@ -1392,7 +1392,7 @@ public final class o8 implements y71.j {
                             com.github.service.models.response.a d = aa1.b.d(aoVar != null ? aoVar.b : null);
                             boolean z14 = koVar.e;
                             yh0.a aVar15 = koVar.n;
-                            yz0.l3Shadow l3Var = new yz0.l3(str10, arrayList10, t7Var, str21, bVar, zonedDateTime, p, z13, issueOrPullRequest$ReviewerReviewState2, d, z14, str9, aVar15.b, aVar15.c);
+                            yz0.l3 l3Var = new yz0.l3(str10, arrayList10, t7Var, str21, bVar, zonedDateTime, p, z13, issueOrPullRequest$ReviewerReviewState2, d, z14, str9, aVar15.b, aVar15.c);
                             h9Var.v = 1;
                             if (this.s.c(l3Var, h9Var) == aVar14) {
                                 return aVar14;
@@ -1768,7 +1768,7 @@ public final class o8 implements y71.j {
                         Object obj26 = baVar.u;
                         b71.a aVar26 = b71.a.r;
                         i22 = baVar.v;
-                        w61.a0Shadow a0Var3 = w61.a0.a;
+                        w61.a0 a0Var3 = w61.a0.a;
                         if (i22 != 0) {
                             sy.y.j(obj26);
                             baVar.v = 1;
@@ -1788,7 +1788,7 @@ public final class o8 implements y71.j {
                 Object obj262 = baVar.u;
                 b71.a aVar262 = b71.a.r;
                 i22 = baVar.v;
-                w61.a0Shadow a0Var32 = w61.a0.a;
+                w61.a0 a0Var32 = w61.a0.a;
                 if (i22 != 0) {
                 }
                 return a0Var32;

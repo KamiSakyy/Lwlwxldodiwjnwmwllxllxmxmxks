@@ -260,14 +260,14 @@ public final class o implements Parcelable.Creator {
                 Bundle bundle = null;
                 c21.f fVar = null;
                 int i17 = 0;
-                z11.dShadow[] dVarArr = null;
+                z11.d[] dVarArr = null;
                 while (parcel.dataPosition() < b04) {
                     int readInt10 = parcel.readInt();
                     char c3 = (char) readInt10;
                     if (c3 == 1) {
                         bundle = k41.b.m(parcel, readInt10);
                     } else if (c3 == 2) {
-                        dVarArr = (z11.dShadow[]) k41.b.p(parcel, readInt10, z11.d.CREATOR);
+                        dVarArr = (z11.d[]) k41.b.p(parcel, readInt10, z11.d.CREATOR);
                     } else if (c3 == 3) {
                         i17 = k41.b.F(parcel, readInt10);
                     } else if (c3 != 4) {

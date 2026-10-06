@@ -503,7 +503,7 @@ public final /* synthetic */ class a implements j71.c {
                         n2 n2Var = v2Var.g;
                         g20.q2 q2Var4 = n2Var.f;
                         g20.m2 m2Var = n2Var.h;
-                        mn.rShadow rVar3 = (q2Var4 == null || (list8 = q2Var4.a) == null || (r2Var = (r2) x61.m.W(list8)) == null) ? null : new mn.r(r2Var.a, r2Var.b);
+                        mn.r rVar3 = (q2Var4 == null || (list8 = q2Var4.a) == null || (r2Var = (r2) x61.m.W(list8)) == null) ? null : new mn.r(r2Var.a, r2Var.b);
                         String str29 = v2Var.a;
                         int i6 = v2Var.c;
                         String str30 = v2Var.b;

@@ -16,7 +16,7 @@ import kotlinx.serialization.encoding.Decoder;
 import m71.a;
 import w61.c;
 import w61.h;
-import xn.eShadow;
+import xn.e;
 import xn.g3;
 
 @c
@@ -273,7 +273,7 @@ public final /* synthetic */ class AgentTaskSessionResponse$$serializer implemen
 
     /*  JADX ERROR: JadxRuntimeException in pass: IfRegionVisitor
         jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r2v5 xn.e, still in use, count: 2, list:
-          (r2v5 xn.e) from 0x0107: IF  (r2v5 xn.e) != (wrap:xn.e:0x0103: SGET  A[WRAPPED] (LINE:3) xn.eShadow.u xn.e)  -> B:36:0x0109 A[HIDDEN] (LINE:3)
+          (r2v5 xn.e) from 0x0107: IF  (r2v5 xn.e) != (wrap:xn.e:0x0103: SGET  A[WRAPPED] (LINE:3) xn.e.u xn.e)  -> B:36:0x0109 A[HIDDEN] (LINE:3)
           (r2v5 xn.e) from 0x0109: PHI (r2v33 xn.e) = (r2v5 xn.e) binds: [B:131:0x0107] A[DONT_GENERATE, DONT_INLINE]
         	at jadx.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:162)
         	at jadx.core.utils.InsnRemover.unbindResult(InsnRemover.java:127)

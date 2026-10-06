@@ -39,7 +39,7 @@ public final class dj implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.csShadow csVar = (jo.cs) obj;
+        jo.cs csVar = (jo.cs) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(csVar, "value");

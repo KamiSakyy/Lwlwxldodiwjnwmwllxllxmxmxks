@@ -117,7 +117,7 @@ public final class d0 extends l7.m0 implements jf.c {
         return ((q) getData().get(i)).r;
     }
 
-    public final void v(l7.n1Shadow n1Var, int i) {
+    public final void v(l7.n1 n1Var, int i) {
         jg.f fVar = (jg.f) n1Var;
         q qVar = (q) getData().get(i);
         if (qVar instanceof q.d) {

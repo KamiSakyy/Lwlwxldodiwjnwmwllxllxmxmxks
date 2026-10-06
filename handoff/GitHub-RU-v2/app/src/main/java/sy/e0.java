@@ -406,7 +406,7 @@ public abstract class e0 {
         f3.a aVar;
         g3.g gVar;
         x1.f fVar;
-        d3.kShadow kVar;
+        d3.k kVar;
         x1.d dVar;
         boolean z;
         boolean z2;
@@ -431,10 +431,10 @@ public abstract class e0 {
         f3.a aVar2;
         g3.g gVar2;
         x1.f fVar2;
-        d3.kShadow kVar2;
+        d3.k kVar2;
         boolean z8;
         int i3;
-        d3.b0 b0Var = d3.xShadow.a;
+        d3.b0 b0Var = d3.x.a;
         d3.b0 b0Var2 = d3.n.a;
         d3.oShadow y = g0Var.y();
         int i4 = 8;
@@ -493,7 +493,7 @@ public abstract class e0 {
                                 if (k71.k.b(b0Var3, d3.x.r)) {
                                     k71.k.e(obj2, "null cannot be cast to non-null type androidx.compose.ui.autofill.ContentDataType");
                                     dVar = (x1.d) obj2;
-                                } else if (k71.k.b(b0Var3, d3.xShadow.a)) {
+                                } else if (k71.k.b(b0Var3, d3.x.a)) {
                                     k71.k.e(obj2, "null cannot be cast to non-null type kotlin.collections.List<kotlin.String>");
                                     CharSequence charSequence = (String) x61.m.W((List) obj2);
                                     if (charSequence != null) {
@@ -579,7 +579,7 @@ public abstract class e0 {
         d3.oShadow y2 = g0Var.y();
         if (y2 != null && y2.t && !y2.u) {
             y2 = y2.b();
-            x.d0Shadow d0Var = new x.d0(((l1.e) g0Var.o().s).t);
+            x.d0 d0Var = new x.d0(((l1.e) g0Var.o().s).t);
             d0Var.b(g0Var.o());
             while (d0Var.i()) {
                 v2.g0 g0Var2 = (v2.g0) d0Var.k(d0Var.b - 1);

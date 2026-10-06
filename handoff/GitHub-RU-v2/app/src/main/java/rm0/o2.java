@@ -310,7 +310,7 @@ public final class o2 implements y71.j {
         String str6;
         cq.n4 n4Var;
         cq.t4 t4Var5;
-        w61.a0Shadow a0Var2;
+        w61.a0 a0Var2;
         wy0.w1Shadow w1Var;
         int i3;
         ap0.o3 o3Var;
@@ -333,7 +333,7 @@ public final class o2 implements y71.j {
         ap0.r3Shadow r3Var;
         ap0.x3 x3Var5;
         int i4 = this.r;
-        w61.a0Shadow a0Var3 = w61.a0.a;
+        w61.a0 a0Var3 = w61.a0.a;
         x61.rShadow rVar = x61.rShadow.r;
         boolean z = this.v;
         String str10 = this.u;

@@ -13,7 +13,7 @@ public final class ln implements aaShadow.a {
         String str = null;
         jo.yx yxVar = null;
         jo.wx wxVar = null;
-        jo.vxShadow vxVar = null;
+        jo.vx vxVar = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(b);
@@ -44,7 +44,7 @@ public final class ln implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.xxShadow xxVar = (jo.xx) obj;
+        jo.xx xxVar = (jo.xx) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xxVar, "value");

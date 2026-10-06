@@ -18,7 +18,7 @@ public final class ql implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.gvShadow gvVar = (jo.gv) obj;
+        jo.gv gvVar = (jo.gv) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(gvVar, "value");

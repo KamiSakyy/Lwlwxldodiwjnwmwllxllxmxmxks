@@ -37,7 +37,7 @@ public final /* synthetic */ class n6 implements j71.e {
                 k71.k.g(o3Var, "data");
                 k71.k.g(list, "nodes");
                 jn0.s3 s3Var = o3Var.a;
-                jn0.r3Shadow r3Var = s3Var.b;
+                jn0.r3 r3Var = s3Var.b;
                 if (r3Var != null) {
                     jn0.q3 q3Var = r3Var.a;
                     k71.k.g(q3Var, "pageInfo");

@@ -840,7 +840,7 @@ public final class x9 implements y71.j {
         int i6;
         pa paVar;
         int i7;
-        yz0.p8Shadow p8Var;
+        yz0.p8 p8Var;
         String str;
         boolean z;
         yz0.o8 o8Var;
@@ -889,7 +889,7 @@ public final class x9 implements y71.j {
         int i22;
         um0.c cVar3;
         int i23;
-        v00.rShadow rVar3;
+        v00.r rVar3;
         int i24;
         switch (this.r) {
             case 0:
@@ -1575,7 +1575,7 @@ public final class x9 implements y71.j {
                             if (g7Var != null && (i7Var = g7Var.a) != null) {
                                 num2 = Integer.valueOf(i7Var.d);
                             }
-                            yz0.y0Shadow y0Var = new yz0.y0(num2, str47, str49);
+                            yz0.y0 y0Var = new yz0.y0(num2, str47, str49);
                             cVar2.v = 1;
                             if (this.s.c(y0Var, cVar2) == aVar18) {
                                 return aVar18;

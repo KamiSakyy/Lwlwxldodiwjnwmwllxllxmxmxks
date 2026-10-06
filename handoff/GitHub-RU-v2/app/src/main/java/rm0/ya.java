@@ -39,7 +39,7 @@ public final /* synthetic */ class ya implements j71.e {
                 k71.k.g(i3Var, "data");
                 k71.k.g(list, "nodes");
                 kc0.m3 m3Var = i3Var.a;
-                kc0.l3Shadow l3Var = m3Var.b;
+                kc0.l3 l3Var = m3Var.b;
                 return new kc0.i3(new kc0.m3(m3Var.a, l3Var != null ? new kc0.l3(l3Var.a, list) : null, m3Var.c));
             case 1:
                 rz.z zVar = (rz.z) obj;
@@ -48,7 +48,7 @@ public final /* synthetic */ class ya implements j71.e {
                 k71.k.g(str, "after");
                 return new vz.h(zVar.a, new aa.u0(10), new aa.u0(str), new aa.u0(zVar.b));
             case 2:
-                vz.bShadow bVar = (vz.b) obj;
+                vz.b bVar = (vz.b) obj;
                 List list2 = (List) obj2;
                 k71.k.g(bVar, "data");
                 k71.k.g(list2, "nodes");
@@ -129,7 +129,7 @@ public final /* synthetic */ class ya implements j71.e {
                 List list8 = (List) obj2;
                 k71.k.g(eaVar, "data");
                 k71.k.g(list8, "nodes");
-                u10.gaShadow gaVar = eaVar.a;
+                u10.ga gaVar = eaVar.a;
                 if (gaVar != null) {
                     i50.c0 c0Var = gaVar.d;
                     r3 = u10.ga.a(gaVar, c0Var != null ? i50.c0.a(c0Var, i50.b0.a(c0Var.c, 0, list8, 3), (i50.h) null, 27) : null);

@@ -41,7 +41,7 @@ public final class xj implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.ctShadow ctVar = (jo.ct) obj;
+        jo.ct ctVar = (jo.ct) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(ctVar, "value");

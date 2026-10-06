@@ -9,7 +9,7 @@ public abstract class sm implements aaShadow.a {
     public static jo.ww c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.swShadow swVar = null;
+        jo.sw swVar = null;
         while (eVar.r0(a) == 0) {
             swVar = (jo.sw) aa.c.c(om.a, false).a(eVar, wVar);
         }

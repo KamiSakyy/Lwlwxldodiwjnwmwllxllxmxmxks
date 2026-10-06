@@ -44,7 +44,7 @@ public final class hq implements aaShadow.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.n10Shadow n10Var = (jo.n10) obj;
+        jo.n10 n10Var = (jo.n10) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(n10Var, "value");

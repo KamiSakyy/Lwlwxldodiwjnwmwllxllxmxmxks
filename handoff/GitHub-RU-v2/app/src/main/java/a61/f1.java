@@ -31,7 +31,7 @@ public final class f1 implements Application.ActivityLifecycleCallbacks {
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public final void onActivityResumed(Activity activity) {
-        w61.a0Shadow a0Var;
+        w61.a0 a0Var;
         k71.k.g(activity, "activity");
         w51.r rVar = t;
         if (rVar != null) {
