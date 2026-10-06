@@ -145,7 +145,7 @@ public final class f8 implements y71.i {
                         Object obj3 = aVar.v;
                         b71.a aVar3 = b71.a.r;
                         i2 = aVar.x;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i2 != 0) {
                             sy.y.j(obj3);
                             a71.h hVar = ((c71.c) aVar).s;
@@ -189,7 +189,7 @@ public final class f8 implements y71.i {
                 Object obj32 = aVar.v;
                 b71.a aVar32 = b71.a.r;
                 i2 = aVar.x;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i2 != 0) {
                 }
                 uVar.w();

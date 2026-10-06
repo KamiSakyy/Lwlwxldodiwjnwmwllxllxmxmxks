@@ -4,7 +4,7 @@ import java.util.List;
 import u10.m60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class et implements aa.a {
+public final class et implements aaShadow.a {
     public static final et a = new et();
     public static final List b = sy.d0.o("__typename", "login");
 

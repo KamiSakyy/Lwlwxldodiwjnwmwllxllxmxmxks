@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class s1 implements aa.a {
+public abstract class s1 implements aaShadow.a {
     public static final List a = sy.d0.n("repository");
 
     public static jn0.z2 c(ea.e eVar, aa.w wVar) {

@@ -4,7 +4,7 @@ import com.github.service.models.response.projects.ProjectsMetaInfo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class aa extends c71.j implements j71.f {
+public final class aaShadow extends c71.j implements j71.f {
     public final /* synthetic */ ma A;
     public final /* synthetic */ String B;
     public final /* synthetic */ int v;
@@ -27,12 +27,12 @@ public final class aa extends c71.j implements j71.f {
         a71.c cVar = (a71.c) obj3;
         switch (this.v) {
             case 0:
-                aa aaVar = new aa(cVar, this.z, this.A, this.B, 0);
+                aaShadow aaVar = new aaShadow(cVar, this.z, this.A, this.B, 0);
                 aaVar.x = jVar;
                 aaVar.y = obj2;
                 return aaVar.v(w61.a0.a);
             default:
-                aa aaVar2 = new aa(cVar, this.z, this.A, this.B, 1);
+                aaShadow aaVar2 = new aaShadow(cVar, this.z, this.A, this.B, 1);
                 aaVar2.x = jVar;
                 aaVar2.y = obj2;
                 return aaVar2.v(w61.a0.a);

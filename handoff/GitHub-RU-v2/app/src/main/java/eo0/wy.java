@@ -5,7 +5,7 @@ import jn0.je0;
 import jn0.le0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wy implements aa.a {
+public final class wy implements aaShadow.a {
     public static final wy a = new wy();
     public static final List b = sy.d0.n("updateUserDashboardNavLinks");
 

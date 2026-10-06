@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class pi implements aa.a {
+public final class pi implements aaShadow.a {
     public static final pi a = new pi();
     public static final List b = sy.d0.n("issue");
 

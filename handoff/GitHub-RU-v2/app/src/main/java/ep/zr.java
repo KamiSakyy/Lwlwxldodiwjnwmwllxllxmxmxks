@@ -4,7 +4,7 @@ import java.util.List;
 import jo.f40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class zr implements aa.a {
+public abstract class zr implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static f40 c(ea.e eVar, aa.w wVar) {

@@ -5,7 +5,7 @@ import jn0.t00;
 import jn0.u00;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qp implements aa.a {
+public final class qp implements aaShadow.a {
     public static final qp a = new qp();
     public static final List b = sy.d0.o(new String[]{"repository", "id", "__typename"});
 

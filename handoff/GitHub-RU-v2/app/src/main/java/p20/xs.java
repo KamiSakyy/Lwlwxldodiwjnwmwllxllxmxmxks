@@ -5,7 +5,7 @@ import u10.e60;
 import u10.k60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xs implements aa.a {
+public final class xs implements aaShadow.a {
     public static final xs a = new xs();
     public static final List b = sy.d0.n("updatePullRequest");
 

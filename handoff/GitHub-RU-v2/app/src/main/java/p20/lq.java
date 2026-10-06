@@ -5,7 +5,7 @@ import u10.o20;
 import u10.r20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class lq implements aa.a {
+public final class lq implements aaShadow.a {
     public static final lq a = new lq();
     public static final List b = sy.d0.n("unmarkDiscussionCommentAsAnswer");
 

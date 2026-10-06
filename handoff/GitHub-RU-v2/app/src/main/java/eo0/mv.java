@@ -5,7 +5,7 @@ import jn0.i90;
 import jn0.k90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mv implements aa.a {
+public final class mv implements aaShadow.a {
     public static final mv a = new mv();
     public static final List b = sy.d0.n("updateDiscussion");
 

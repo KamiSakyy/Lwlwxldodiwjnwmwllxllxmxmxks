@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class ee implements aa.a {
+public abstract class ee implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "headRefOid", "mergeStateStatus", "isInMergeQueue", "mergeQueue", "mergeQueueEntry"});
 
     public static kc0.el c(ea.e eVar, aa.w wVar) {

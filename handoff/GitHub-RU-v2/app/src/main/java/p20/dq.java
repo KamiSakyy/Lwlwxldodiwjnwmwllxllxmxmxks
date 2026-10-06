@@ -5,7 +5,7 @@ import u10.c20;
 import u10.d20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class dq implements aa.a {
+public final class dq implements aaShadow.a {
     public static final dq a = new dq();
     public static final List b = sy.d0.n("unfollowUser");
 

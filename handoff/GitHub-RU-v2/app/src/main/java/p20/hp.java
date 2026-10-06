@@ -4,7 +4,7 @@ import java.util.List;
 import u10.u00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class hp implements aa.a {
+public abstract class hp implements aaShadow.a {
     public static final List a = sy.d0.n("id");
 
     public static u00 c(ea.e eVar, aa.w wVar) {

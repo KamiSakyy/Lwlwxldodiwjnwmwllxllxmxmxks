@@ -5,7 +5,7 @@ import u10.v70;
 import u10.w70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class eu implements aa.a {
+public final class eu implements aaShadow.a {
     public static final eu a = new eu();
     public static final List b = sy.d0.n("shortcut");
 

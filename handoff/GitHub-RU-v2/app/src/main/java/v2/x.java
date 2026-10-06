@@ -4,5 +4,5 @@ package v2;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public interface x {
+public interface xShadow {
 }

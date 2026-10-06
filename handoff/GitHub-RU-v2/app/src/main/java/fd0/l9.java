@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class l9 implements aa.a {
+public final class l9 implements aaShadow.a {
     public static final l9 a = new l9();
     public static final List b = sy.d0.n("__typename");
 

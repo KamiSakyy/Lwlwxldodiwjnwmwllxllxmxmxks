@@ -3,7 +3,7 @@ package u10;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class nn {
+public final class nnShadow {
     public final List a;
 
     public nn(List list) {
@@ -14,7 +14,7 @@ public final class nn {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof nn) && k71.k.b(this.a, ((nn) obj).a);
+        return (obj instanceof nnShadow) && k71.k.b(this.a, ((nnShadow) obj).a);
     }
 
     public final int hashCode() {

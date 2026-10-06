@@ -42,7 +42,7 @@ public final class a3 extends c71.j implements j71.f {
             case 0:
                 b71.a aVar = b71.a.r;
                 int i = this.w;
-                w61.a0 a0Var = w61.a0.a;
+                w61.a0Shadow a0Var = w61.a0.a;
                 if (i == 0) {
                     sy.y.j(obj);
                     y71.j jVar = this.x;
@@ -72,7 +72,7 @@ public final class a3 extends c71.j implements j71.f {
             default:
                 b71.a aVar2 = b71.a.r;
                 int i2 = this.w;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i2 == 0) {
                     sy.y.j(obj);
                     y71.j jVar2 = this.x;

@@ -14,7 +14,7 @@ import vb0.k1;
 import w61.a0;
 import wy0.l1;
 import xz.v;
-import y71.b1;
+import y71.b1Shadow;
 import y71.e1;
 import y71.y;
 
@@ -126,7 +126,7 @@ public final class g implements y71.i {
                 Object b29 = iVar.b(new f(jVar, (xk.c) obj, (oa.j) r6, 23), cVar);
                 return b29 == b71.a.r ? b29 : a0Var;
             case 27:
-                Object a = z71.b.a(cVar, e1.r, new b1((j71.f) r6, (a71.c) null), jVar, new y71.i[]{iVar, (y71.i) obj});
+                Object a = z71.b.a(cVar, e1.r, new b1Shadow((j71.f) r6, (a71.c) null), jVar, new y71.i[]{iVar, (y71.i) obj});
                 return a == b71.a.r ? a : a0Var;
             default:
                 Object k = b0.k(new a0.i(this.s, (y71.i) obj, jVar, (go0.o) r6, (a71.c) null, 12), cVar);

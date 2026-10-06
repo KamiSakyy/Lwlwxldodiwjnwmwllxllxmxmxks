@@ -1,7 +1,7 @@
 package qz0;
 
 import a0.s0;
-import a5.g1;
+import a5Shadow.g1;
 import aa.c;
 import aa.u0;
 import aa.w;
@@ -10,7 +10,7 @@ import ea.f;
 import java.util.Iterator;
 import jo.f4;
 import k71.k;
-import pz0.a5;
+import pz0.a5Shadow;
 import pz0.ab;
 import pz0.ak;
 import pz0.bf;
@@ -425,7 +425,7 @@ public final class a implements aa.a {
                 c.a.b(fVar, wVar, z4Var.b);
                 break;
             case 3:
-                a5 a5Var = (a5) obj;
+                a5Shadow a5Var = (a5Shadow) obj;
                 k.g(fVar, "writer");
                 k.g(wVar, "customScalarAdapters");
                 k.g(a5Var, "value");

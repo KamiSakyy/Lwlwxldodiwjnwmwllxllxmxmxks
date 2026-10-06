@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fw implements aa.v0 {
+public final class fw implements aaShadow.v0 {
     public final gw a;
 
     public fw(gw gwVar) {

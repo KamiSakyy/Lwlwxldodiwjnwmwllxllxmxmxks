@@ -5,7 +5,7 @@ import kc0.o70;
 import kc0.z70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wt implements aa.a {
+public final class wt implements aaShadow.a {
     public static final wt a = new wt();
     public static final List b = sy.d0.n("updatePullRequestBranch");
 

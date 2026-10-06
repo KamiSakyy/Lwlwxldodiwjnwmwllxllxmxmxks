@@ -10,7 +10,7 @@ public final class z {
     public final ComponentName f29487a;
 
     /* renamed from: c, reason: collision with root package name */
-    public c.c f29489c;
+    public c.cShadow f29489c;
 
     /* renamed from: b, reason: collision with root package name */
     public boolean f29488b = false;

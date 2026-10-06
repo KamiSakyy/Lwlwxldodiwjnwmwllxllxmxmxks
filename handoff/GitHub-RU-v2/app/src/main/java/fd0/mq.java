@@ -5,7 +5,7 @@ import kc0.n20;
 import kc0.w20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mq implements aa.a {
+public final class mq implements aaShadow.a {
     public static final mq a = new mq();
     public static final List b = sy.d0.n("repository");
 

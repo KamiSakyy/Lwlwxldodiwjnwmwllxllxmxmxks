@@ -3,8 +3,8 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ar implements aa.a {
-    public static final ar a = new ar();
+public final class arShadow implements aaShadow.a {
+    public static final arShadow a = new arShadow();
     public static final List b = sy.d0.o("defaultBranchRef", "refs", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

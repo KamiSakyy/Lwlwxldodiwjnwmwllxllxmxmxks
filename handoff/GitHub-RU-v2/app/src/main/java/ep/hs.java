@@ -4,7 +4,7 @@ import java.util.List;
 import jo.p40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class hs implements aa.a {
+public abstract class hs implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static p40 c(ea.e eVar, aa.w wVar) {

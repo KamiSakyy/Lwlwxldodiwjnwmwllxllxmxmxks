@@ -5,8 +5,8 @@ import jo.q70;
 import jo.u70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class lu implements aa.a {
-    public static final lu a = new lu();
+public final class luShadow implements aaShadow.a {
+    public static final luShadow a = new luShadow();
     public static final List b = sy.d0.o("repositoryOwner", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -18,7 +18,7 @@ public final class lu implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                u70Var = (u70) aa.c.b(aa.c.c(pu.a, true)).a(eVar, wVar);
+                u70Var = (u70) aa.c.b(aa.c.c(puShadow.a, true)).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -45,7 +45,7 @@ public final class lu implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(q70Var, "value");
         fVar.z0("repositoryOwner");
-        aa.c.b(aa.c.c(pu.a, true)).b(fVar, wVar, q70Var.a);
+        aa.c.b(aa.c.c(puShadow.a, true)).b(fVar, wVar, q70Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, q70Var.b);

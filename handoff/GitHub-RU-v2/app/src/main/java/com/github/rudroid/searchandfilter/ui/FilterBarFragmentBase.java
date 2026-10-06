@@ -7,7 +7,7 @@ import com.github.rudroid.fragments.BindingFragment;
 import com.github.rudroid.utilities.w0;
 import ic.w2;
 import java.util.concurrent.CancellationException;
-import rm0.r3;
+import rm0.r3Shadow;
 import v71.q1;
 import y71.n1;
 import y71.y1;
@@ -62,7 +62,7 @@ public abstract class FilterBarFragmentBase extends BindingFragment implements c
             q1Var2.m((CancellationException) null);
         }
         this.E0 = null;
-        r3 r3Var = H4().G;
+        r3Shadow r3Var = H4().G;
         l1 F3 = F3();
         c cVar = new c(this, null);
         androidx.lifecycle.w wVar = androidx.lifecycle.w.u;

@@ -4,7 +4,7 @@ import java.util.List;
 import jo.ti0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class u10 implements aa.a {
+public final class u10 implements aaShadow.a {
     public static final u10 a = new u10();
     public static final List b = sy.d0.o("copilotLicenseType", "id", "__typename");
 
@@ -17,7 +17,7 @@ public final class u10 implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                m8Var = (m10.m8) aa.c.b(n10.a.o).a(eVar, wVar);
+                m8Var = (m10.m8) aa.c.b(n10Shadow.a.o).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -44,7 +44,7 @@ public final class u10 implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(ti0Var, "value");
         fVar.z0("copilotLicenseType");
-        aa.c.b(n10.a.o).b(fVar, wVar, ti0Var.a);
+        aa.c.b(n10Shadow.a.o).b(fVar, wVar, ti0Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, ti0Var.b);

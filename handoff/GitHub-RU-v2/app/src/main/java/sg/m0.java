@@ -43,7 +43,7 @@ public final class m0 {
             i5 |= sVar.f(str) ? 32 : 16;
         }
         if ((i & 384) == 0) {
-            i5 |= sVar.g(z) ? 256 : 128;
+            i5 |= sVar.g(zShadow) ? 256 : 128;
         }
         int i6 = 74752 | i5;
         int i7 = i2 & 64;

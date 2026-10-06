@@ -5,7 +5,7 @@ import u10.o30;
 import u10.p30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class er implements aa.a {
+public final class er implements aaShadow.a {
     public static final er a = new er();
     public static final List b = sy.d0.n("discussion");
 

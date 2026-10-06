@@ -87,7 +87,7 @@ public final class f implements y71.j {
                 wVar2.r = v71.b0.z(zVar2, (a71.h) null, a0Var2, new d(eVar22, obj32, zVar2, null, 0), 1);
                 return w61.a0.a;
             default:
-                if (cVar instanceof h1.i) {
+                if (cVar instanceof h1Shadow.i) {
                     iVar = (h1.i) cVar;
                     int i12 = iVar.f25343x;
                     if ((i12 & Integer.MIN_VALUE) != 0) {

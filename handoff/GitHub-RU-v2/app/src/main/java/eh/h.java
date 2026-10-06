@@ -7,7 +7,7 @@ import d2.p0;
 import f1.s0;
 import g3.q0;
 import sg.d0;
-import sg.z;
+import sg.zShadow;
 import w1.r;
 import w61.a0;
 
@@ -28,7 +28,7 @@ public final /* synthetic */ class h implements j71.e {
     public final /* synthetic */ Object y;
     public final /* synthetic */ Object z;
 
-    public /* synthetic */ h(r rVar, d2 d2Var, j71.a aVar, z zVar, long j, s0 s0Var, boolean z, p0 p0Var, Integer num, Integer num2, r1.d dVar, int i, int i2) {
+    public /* synthetic */ h(r rVar, d2 d2Var, j71.a aVar, zShadow zVar, long j, s0 s0Var, boolean z, p0 p0Var, Integer num, Integer num2, r1.d dVar, int i, int i2) {
         this.s = rVar;
         this.t = d2Var;
         this.y = aVar;
@@ -55,7 +55,7 @@ public final /* synthetic */ class h implements j71.e {
             default:
                 ((Integer) obj2).getClass();
                 int L3 = t.L(this.w | 1);
-                d0.a(this.s, this.t, (j71.a) this.y, (z) this.z, this.u, (s0) this.A, this.v, (p0) this.B, (Integer) this.C, (Integer) this.D, this.E, (s) obj, L3, this.x);
+                d0.a(this.s, this.t, (j71.a) this.y, (zShadow) this.z, this.u, (s0) this.A, this.v, (p0) this.B, (Integer) this.C, (Integer) this.D, this.E, (s) obj, L3, this.x);
                 break;
         }
         return a0.a;

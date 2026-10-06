@@ -89,7 +89,7 @@ public final class d8 implements y71.j {
     private final Object a(a71.c cVar, Object obj) {
         j9 j9Var;
         int i;
-        jo.w8 w8Var;
+        jo.w8Shadow w8Var;
         List<jo.y8> list;
         jo.z8 z8Var;
         if (cVar instanceof j9) {
@@ -102,7 +102,7 @@ public final class d8 implements y71.j {
                 i = j9Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    jo.v8 v8Var = ((jo.x8) obj).a;
+                    jo.v8Shadow v8Var = ((jo.x8) obj).a;
                     ArrayList arrayList = null;
                     if (v8Var != null && (w8Var = v8Var.a) != null && (list = w8Var.a.a) != null) {
                         ArrayList arrayList2 = new ArrayList();
@@ -439,7 +439,7 @@ public final class d8 implements y71.j {
                 Object obj2 = u9Var.u;
                 b71.a aVar = b71.a.r;
                 i = u9Var.v;
-                w61.a0 a0Var = w61.a0.a;
+                w61.a0Shadow a0Var = w61.a0.a;
                 if (i == 0) {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -456,7 +456,7 @@ public final class d8 implements y71.j {
         Object obj22 = u9Var.u;
         b71.a aVar2 = b71.a.r;
         i = u9Var.v;
-        w61.a0 a0Var2 = w61.a0.a;
+        w61.a0Shadow a0Var2 = w61.a0.a;
         if (i == 0) {
         }
     }
@@ -542,13 +542,13 @@ public final class d8 implements y71.j {
         s70 s70Var;
         s70 s70Var2;
         s70 s70Var3;
-        p8 p8Var;
+        p8Shadow p8Var;
         int i12;
         r8 r8Var;
         int i13;
         s8 s8Var;
         int i14;
-        w8 w8Var;
+        w8Shadow w8Var;
         int i15;
         z8 z8Var;
         int i16;
@@ -559,8 +559,8 @@ public final class d8 implements y71.j {
         e9 e9Var;
         int i19;
         yz0.a7 k;
-        jo.f1 f1Var;
-        jo.f1 f1Var2;
+        jo.f1Shadow f1Var;
+        jo.f1Shadow f1Var2;
         g9 g9Var;
         int i21;
         IssueOrPullRequest.ReviewerReviewState reviewerReviewState;
@@ -888,7 +888,7 @@ public final class d8 implements y71.j {
                         i8 = l8Var.v;
                         if (i8 != 0) {
                             sy.y.j(obj11);
-                            m00.x xVar = (m00.x) obj;
+                            m00.xShadow xVar = (m00.x) obj;
                             k71.k.g(xVar, "<this>");
                             m00.z zVar = xVar.a;
                             if (zVar == null || (list = zVar.b) == null) {
@@ -1031,8 +1031,8 @@ public final class d8 implements y71.j {
                 }
                 return w61.a0.a;
             case 10:
-                if (cVar instanceof p8) {
-                    p8Var = (p8) cVar;
+                if (cVar instanceof p8Shadow) {
+                    p8Var = (p8Shadow) cVar;
                     int i41 = p8Var.v;
                     if ((i41 & Integer.MIN_VALUE) != 0) {
                         p8Var.v = i41 - Integer.MIN_VALUE;
@@ -1056,7 +1056,7 @@ public final class d8 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                p8Var = new p8(this, cVar);
+                p8Var = new p8Shadow(this, cVar);
                 Object obj162 = p8Var.u;
                 b71.a aVar132 = b71.a.r;
                 i12 = p8Var.v;
@@ -1133,15 +1133,15 @@ public final class d8 implements y71.j {
                 }
                 return w61.a0.a;
             case 13:
-                if (cVar instanceof w8) {
-                    w8Var = (w8) cVar;
+                if (cVar instanceof w8Shadow) {
+                    w8Var = (w8Shadow) cVar;
                     int i44 = w8Var.v;
                     if ((i44 & Integer.MIN_VALUE) != 0) {
                         w8Var.v = i44 - Integer.MIN_VALUE;
                         Object obj19 = w8Var.u;
                         b71.a aVar16 = b71.a.r;
                         i15 = w8Var.v;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i15 != 0) {
                             sy.y.j(obj19);
                             w8Var.v = 1;
@@ -1157,11 +1157,11 @@ public final class d8 implements y71.j {
                         return a0Var;
                     }
                 }
-                w8Var = new w8(this, cVar);
+                w8Var = new w8Shadow(this, cVar);
                 Object obj192 = w8Var.u;
                 b71.a aVar162 = b71.a.r;
                 i15 = w8Var.v;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i15 != 0) {
                 }
                 return a0Var2;

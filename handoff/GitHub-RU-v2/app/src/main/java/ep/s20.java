@@ -4,7 +4,7 @@ import java.util.List;
 import jo.dk0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s20 implements aa.a {
+public final class s20 implements aaShadow.a {
     public static final s20 a = new s20();
     public static final List b = sy.d0.n("__typename");
 
@@ -16,7 +16,7 @@ public final class s20 implements aa.a {
             str = (String) aa.c.a.a(eVar, wVar);
         }
         eVar.s0();
-        xx.a c = xx.b.c(eVar, wVar);
+        xx.a c = xxShadow.b.c(eVar, wVar);
         if (str != null) {
             return new dk0(str, c);
         }
@@ -31,7 +31,7 @@ public final class s20 implements aa.a {
         k71.k.g(dk0Var, "value");
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, dk0Var.a);
-        List list = xx.b.a;
-        xx.b.d(fVar, wVar, dk0Var.b);
+        List list = xxShadow.b.a;
+        xxShadow.b.d(fVar, wVar, dk0Var.b);
     }
 }

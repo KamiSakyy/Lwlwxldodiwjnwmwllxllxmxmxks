@@ -6,9 +6,9 @@ import androidx.lifecycle.u1;
 public final class o implements j71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public final /* synthetic */ k f27852r;
+    public final /* synthetic */ kShadow f27852r;
 
-    public o(k kVar) {
+    public o(kShadow kVar) {
         this.f27852r = kVar;
     }
 

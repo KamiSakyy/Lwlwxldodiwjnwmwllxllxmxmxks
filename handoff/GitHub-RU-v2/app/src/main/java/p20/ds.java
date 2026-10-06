@@ -5,7 +5,7 @@ import u10.c50;
 import u10.d50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ds implements aa.a {
+public final class ds implements aaShadow.a {
     public static final ds a = new ds();
     public static final List b = sy.d0.n("updateNotificationSettings");
 

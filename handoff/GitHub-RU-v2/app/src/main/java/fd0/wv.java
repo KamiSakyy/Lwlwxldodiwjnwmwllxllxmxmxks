@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.ga0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wv implements aa.a {
+public final class wv implements aaShadow.a {
     public static final wv a = new wv();
     public static final List b = sy.d0.o(new String[]{"mobileTimeZone", "id", "__typename"});
 

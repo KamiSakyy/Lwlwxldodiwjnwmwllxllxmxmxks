@@ -5,7 +5,7 @@ import jn0.o30;
 import jn0.p30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qr implements aa.a {
+public final class qr implements aaShadow.a {
     public static final qr a = new qr();
     public static final List b = sy.d0.o(new String[]{"issueCount", "pageInfo", "nodes"});
 

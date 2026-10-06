@@ -5,7 +5,7 @@ import jo.wb0;
 import jo.yb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hx implements aa.a {
+public final class hx implements aaShadow.a {
     public static final hx a = new hx();
     public static final List b = sy.d0.n("updateDiscussion");
 

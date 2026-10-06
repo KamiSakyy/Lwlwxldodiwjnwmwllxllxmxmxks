@@ -4,7 +4,7 @@ import java.util.List;
 import u10.c30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class vq implements aa.a {
+public abstract class vq implements aaShadow.a {
     public static final List a = sy.d0.n("id");
 
     public static c30 c(ea.e eVar, aa.w wVar) {

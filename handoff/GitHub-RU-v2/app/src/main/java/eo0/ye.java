@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class ye implements aa.a {
+public abstract class ye implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "mergeHeadline", "mergeBody", "squashHeadline", "squashBody"});
 
     public static jn0.gm c(ea.e eVar, aa.w wVar) {

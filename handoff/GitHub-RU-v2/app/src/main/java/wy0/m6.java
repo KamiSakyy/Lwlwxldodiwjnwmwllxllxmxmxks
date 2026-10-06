@@ -372,7 +372,7 @@ public final class m6 implements y71.j {
         tv tvVar;
         tv tvVar2;
         tv tvVar3;
-        t6 t6Var;
+        t6Shadow t6Var;
         int i5;
         p01.g gVar;
         ix ixVar;
@@ -384,12 +384,12 @@ public final class m6 implements y71.j {
         d10 d10Var;
         w6 w6Var;
         int i8;
-        x6 x6Var;
+        x6Shadow x6Var;
         int i9;
         java.util.ArrayList r5;
         List<bw> list;
         dw dwVar;
-        a7 a7Var;
+        a7Shadow a7Var;
         int i10;
         String str3;
         String str4;
@@ -598,8 +598,8 @@ public final class m6 implements y71.j {
                 }
                 return w61.a0.a;
             case 4:
-                if (cVar instanceof t6) {
-                    t6Var = (t6) cVar;
+                if (cVar instanceof t6Shadow) {
+                    t6Var = (t6Shadow) cVar;
                     int i35 = t6Var.v;
                     if ((i35 & Integer.MIN_VALUE) != 0) {
                         t6Var.v = i35 - Integer.MIN_VALUE;
@@ -628,7 +628,7 @@ public final class m6 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                t6Var = new t6(this, cVar);
+                t6Var = new t6Shadow(this, cVar);
                 Object obj72 = t6Var.u;
                 b71.a aVar62 = b71.a.r;
                 i5 = t6Var.v;
@@ -737,8 +737,8 @@ public final class m6 implements y71.j {
                 }
                 return w61.a0.a;
             case 8:
-                if (cVar instanceof x6) {
-                    x6Var = (x6) cVar;
+                if (cVar instanceof x6Shadow) {
+                    x6Var = (x6Shadow) cVar;
                     int i39 = x6Var.v;
                     if ((i39 & Integer.MIN_VALUE) != 0) {
                         x6Var.v = i39 - Integer.MIN_VALUE;
@@ -781,7 +781,7 @@ public final class m6 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                x6Var = new x6(this, cVar);
+                x6Var = new x6Shadow(this, cVar);
                 Object obj112 = x6Var.u;
                 b71.a aVar102 = b71.a.r;
                 i9 = x6Var.v;
@@ -789,8 +789,8 @@ public final class m6 implements y71.j {
                 }
                 return w61.a0.a;
             case 9:
-                if (cVar instanceof a7) {
-                    a7Var = (a7) cVar;
+                if (cVar instanceof a7Shadow) {
+                    a7Var = (a7Shadow) cVar;
                     int i40 = a7Var.v;
                     if ((i40 & Integer.MIN_VALUE) != 0) {
                         a7Var.v = i40 - Integer.MIN_VALUE;
@@ -822,7 +822,7 @@ public final class m6 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                a7Var = new a7(this, cVar);
+                a7Var = new a7Shadow(this, cVar);
                 Object obj122 = a7Var.u;
                 b71.a aVar112 = b71.a.r;
                 i10 = a7Var.v;

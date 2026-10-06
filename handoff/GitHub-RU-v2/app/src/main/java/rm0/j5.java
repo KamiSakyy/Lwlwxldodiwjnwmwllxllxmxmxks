@@ -104,7 +104,7 @@ public final class j5 implements z01.r0, yb0, y90 {
     }
 
     @Override // z01.r0
-    public final y71.i f(String str, String str2, String str3, String str4, l01.c0 c0Var, String str5, l01.j0 j0Var, String str6) {
+    public final y71.i f(String str, String str2, String str3, String str4, l01.c0 c0Var, String str5, l01.j0Shadow j0Var, String str6) {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "projectId");
@@ -199,7 +199,7 @@ public final class j5 implements z01.r0, yb0, y90 {
     }
 
     @Override // z01.r0
-    public final y71.i m(String str, String str2, String str3, String str4, String str5, l01.j0 j0Var, String str6) {
+    public final y71.i m(String str, String str2, String str3, String str4, String str5, l01.j0Shadow j0Var, String str6) {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "projectId");

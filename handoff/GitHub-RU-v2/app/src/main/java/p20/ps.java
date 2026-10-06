@@ -5,7 +5,7 @@ import java.util.Set;
 import u10.u50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ps implements aa.a {
+public final class ps implements aaShadow.a {
     public static final ps a = new ps();
     public static final List b = sy.d0.n("__typename");
 

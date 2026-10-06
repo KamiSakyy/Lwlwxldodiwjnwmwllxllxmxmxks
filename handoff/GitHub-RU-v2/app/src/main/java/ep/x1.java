@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class x1 implements aa.a {
+public abstract class x1 implements aaShadow.a {
     public static final List a = sy.d0.n("id");
 
     public static jo.g3 c(ea.e eVar, aa.w wVar) {

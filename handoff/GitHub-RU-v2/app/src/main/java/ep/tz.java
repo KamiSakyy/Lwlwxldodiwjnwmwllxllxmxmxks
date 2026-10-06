@@ -6,7 +6,7 @@ import jo.hf0;
 import jo.jf0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tz implements aa.a {
+public final class tz implements aaShadow.a {
     public static final tz a = new tz();
     public static final List b = sy.d0.o("actor", "pullRequest");
 

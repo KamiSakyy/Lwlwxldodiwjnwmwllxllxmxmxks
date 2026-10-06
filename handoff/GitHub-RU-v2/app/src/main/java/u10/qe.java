@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qe implements aa.m0 {
+public final class qe implements aaShadow.m0 {
     public final re a;
 
     public qe(re reVar) {

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class j extends h {
+public final class j extends hShadow {
     public final /* synthetic */ k j;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

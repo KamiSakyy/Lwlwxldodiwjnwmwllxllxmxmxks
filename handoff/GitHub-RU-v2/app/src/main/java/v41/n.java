@@ -23,7 +23,7 @@ public final /* synthetic */ class n implements Runnable {
                 break;
             default:
                 l lVar = this.s.h;
-                r rVar = lVar.n;
+                rShadow rVar = lVar.n;
                 if (rVar == null || !rVar.e.get()) {
                     ((x41.d) lVar.i.s).f(this.u, this.t);
                     break;

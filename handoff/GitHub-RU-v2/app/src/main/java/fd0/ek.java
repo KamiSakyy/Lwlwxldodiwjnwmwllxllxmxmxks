@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class ek implements aa.a {
+public abstract class ek implements aaShadow.a {
     public static final List a = sy.d0.n("forks");
 
     public static kc0.jt c(ea.e eVar, aa.w wVar) {

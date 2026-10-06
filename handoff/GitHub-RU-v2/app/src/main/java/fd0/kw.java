@@ -5,7 +5,7 @@ import kc0.eb0;
 import kc0.ib0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class kw implements aa.a {
+public final class kw implements aaShadow.a {
     public static final kw a = new kw();
     public static final List b = sy.d0.n("user");
 

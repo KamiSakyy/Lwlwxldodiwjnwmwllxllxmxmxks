@@ -5,7 +5,7 @@ import jn0.i60;
 import jn0.o60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mt implements aa.a {
+public final class mt implements aaShadow.a {
     public static final mt a = new mt();
     public static final List b = sy.d0.o(new String[]{"pullRequestReview", "id", "__typename"});
 

@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class fn implements aa.m0 {
+public final class fn implements aaShadow.m0 {
     public final gn a;
 
     public fn(gn gnVar) {

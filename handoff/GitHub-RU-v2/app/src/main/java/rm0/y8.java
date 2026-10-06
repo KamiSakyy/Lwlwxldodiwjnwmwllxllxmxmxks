@@ -75,9 +75,9 @@ public final class y8 implements z01.g1, yb0, y90 {
                 this.t = bVar;
                 this.u = vVar;
                 oo.a aVar = new oo.a(4);
-                n0.x xVar = new n0.x(25);
+                n0.xShadow xVar = new n0.x(25);
                 s01.o oVar = s01.o.r;
-                n0.x xVar2 = new n0.x(26);
+                n0.xShadow xVar2 = new n0.x(26);
                 oo.a aVar2 = new oo.a(5);
                 oo.a aVar3 = new oo.a(6);
                 oo.a aVar4 = new oo.a(7);
@@ -220,7 +220,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 v3Var = (w80.v3) obj;
                 if (v3Var != null) {
                     String str2 = v3Var.a;
-                    aa.h0 v3Var2 = new w80.v3(str2, new w80.t3(x61.r.r), v3Var.c);
+                    aa.h0Shadow v3Var2 = new w80.v3(str2, new w80.t3(x61.r.r), v3Var.c);
                     aa.i0 w3Var2 = new w80.w3(0);
                     l6Var.w = 2;
                 }
@@ -700,7 +700,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                         if (str5 != null) {
                             bVar = new aa.u0(str5);
                         }
-                        return y71.n1.y(in.r.l(new y71.y(new r3(2, com.github.service.wrapper.a.o(this.s, new vt(u0Var, bVar, str6, str7), null, false, null, null, 62), qtVar), new h1.u(this, vtVar, (a71.c) null, 27), 6)), this.u);
+                        return y71.n1.y(in.r.l(new y71.y(new r3Shadow(2, com.github.service.wrapper.a.o(this.s, new vt(u0Var, bVar, str6, str7), null, false, null, null, 62), qtVar), new h1.u(this, vtVar, (a71.c) null, 27), 6)), this.u);
                     }
                 }
                 v7Var = new v7(this, (c71.c) cVar);
@@ -717,7 +717,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 }
                 if (str5 != null) {
                 }
-                return y71.n1.y(in.r.l(new y71.y(new r3(2, com.github.service.wrapper.a.o(this.s, new vt(u0Var, bVar2, str6, str7), null, false, null, null, 62), qtVar), new h1.u(this, vtVar, (a71.c) null, 27), 6)), this.u);
+                return y71.n1.y(in.r.l(new y71.y(new r3Shadow(2, com.github.service.wrapper.a.o(this.s, new vt(u0Var, bVar2, str6, str7), null, false, null, null, 62), qtVar), new h1.u(this, vtVar, (a71.c) null, 27), 6)), this.u);
             default:
                 return y41.t1.S("fetchMergeQueueEntriesPage", "3.10");
         }
@@ -1032,7 +1032,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                         } else {
                             d = bVar.d(new kc0.v1(str));
                         }
-                        return y71.n1.y(new aq.c(new y71.y(in.r.h(d), new m7(this, null, 0), 6), 13), this.u);
+                        return y71.n1.y(new aq.c(new y71.y(in.r.h(d), new m7Shadow(this, null, 0), 6), 13), this.u);
                     }
                 }
                 l7Var = new l7(this, (c71.c) cVar);
@@ -1045,7 +1045,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 com.github.service.wrapper.bShadow bVar2 = this.t;
                 if (q3Var == null) {
                 }
-                return y71.n1.y(new aq.c(new y71.y(in.r.h(d), new m7(this, null, 0), 6), 13), this.u);
+                return y71.n1.y(new aq.c(new y71.y(in.r.h(d), new m7Shadow(this, null, 0), 6), 13), this.u);
             default:
                 if (cVar instanceof vb0.q5) {
                     q5Var = (vb0.q5) cVar;
@@ -1079,7 +1079,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                         } else {
                             d2 = bVar3.d(new u10.v1(str));
                         }
-                        return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2), new m7(this, null, 4), 6), 6), this.u);
+                        return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2Shadow), new m7Shadow(this, null, 4), 6), 6), this.u);
                     }
                 }
                 q5Var = new vb0.q5(this, (c71.c) cVar);
@@ -1092,7 +1092,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 com.github.service.wrapper.bShadow bVar32 = this.t;
                 if (m3Var == null) {
                 }
-                return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2), new m7(this, null, 4), 6), 6), this.u);
+                return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2Shadow), new m7Shadow(this, null, 4), 6), 6), this.u);
         }
     }
 
@@ -1198,7 +1198,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                         } else {
                             d2 = bVar3.d(new uq(str));
                         }
-                        return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2), new v4(this, str, null, 13), 6), 7), this.u);
+                        return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2Shadow), new v4(this, str, null, 13), 6), 7), this.u);
                     }
                 }
                 n6Var = new vb0.n6(this, (c71.c) cVar);
@@ -1211,7 +1211,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 com.github.service.wrapper.bShadow bVar32 = this.t;
                 if (m3Var == null) {
                 }
-                return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2), new v4(this, str, null, 13), 6), 7), this.u);
+                return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2Shadow), new v4(this, str, null, 13), 6), 7), this.u);
         }
     }
 

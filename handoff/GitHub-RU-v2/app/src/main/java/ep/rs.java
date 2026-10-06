@@ -5,7 +5,7 @@ import jo.a50;
 import jo.b50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rs implements aa.a {
+public final class rs implements aaShadow.a {
     public static final rs a = new rs();
     public static final List b = sy.d0.o("userCount", "pageInfo", "nodes");
 
@@ -33,7 +33,7 @@ public final class rs implements aa.a {
                 if (r0 != 2) {
                     break;
                 }
-                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(os.a, true)))).a(eVar, wVar);
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(osShadow.a, true)))).a(eVar, wVar);
             }
         }
         if (num == null) {
@@ -58,6 +58,6 @@ public final class rs implements aa.a {
         fVar.z0("pageInfo");
         aa.c.c(qs.a, false).b(fVar, wVar, b50Var.b);
         fVar.z0("nodes");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(os.a, true)))).b(fVar, wVar, b50Var.c);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(osShadow.a, true)))).b(fVar, wVar, b50Var.c);
     }
 }

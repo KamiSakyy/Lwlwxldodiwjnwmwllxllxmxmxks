@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class bj implements aa.a {
+public abstract class bj implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "path", "subjectType", "isResolved", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "diffLines", "comments"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0036, code lost:
@@ -125,7 +125,7 @@ public abstract class bj implements aa.a {
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0024, code lost:
     
         r19.s0();
-        r15 = nv.b.c(r19, r20);
+        r15 = nvShadow.b.c(r19, r20);
         r12 = r3;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002e, code lost:
@@ -160,7 +160,7 @@ public abstract class bj implements aa.a {
         Boolean bool3 = null;
         Boolean bool4 = null;
         Boolean bool5 = null;
-        jo.es esVar = null;
+        jo.esShadow esVar = null;
         List list = null;
         jo.qr qrVar = null;
         while (true) {
@@ -259,7 +259,7 @@ public abstract class bj implements aa.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(vi.a, true)))).b(fVar, wVar, asVar.j);
         fVar.z0("comments");
         aa.c.c(si.a, false).b(fVar, wVar, asVar.k);
-        List list = nv.b.a;
-        nv.b.d(fVar, wVar, asVar.l);
+        List list = nvShadow.b.a;
+        nvShadow.b.d(fVar, wVar, asVar.l);
     }
 }

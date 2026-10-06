@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class v7 implements aa.a {
+public final class v7 implements aaShadow.a {
     public static final v7 a = new v7();
     public static final List b = sy.d0.o("discussionCategory", "id", "__typename");
 

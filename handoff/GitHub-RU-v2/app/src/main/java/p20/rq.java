@@ -5,7 +5,7 @@ import u10.w20;
 import u10.x20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rq implements aa.a {
+public final class rq implements aaShadow.a {
     public static final rq a = new rq();
     public static final List b = sy.d0.o("number", "repository", "id", "__typename");
 

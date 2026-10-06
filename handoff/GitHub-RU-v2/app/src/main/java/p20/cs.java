@@ -5,7 +5,7 @@ import u10.y40;
 import u10.z40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cs implements aa.a {
+public final class cs implements aaShadow.a {
     public static final cs a = new cs();
     public static final List b = sy.d0.n("issue");
 

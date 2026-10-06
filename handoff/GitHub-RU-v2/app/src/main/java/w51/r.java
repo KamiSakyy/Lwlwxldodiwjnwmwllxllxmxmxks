@@ -40,7 +40,7 @@ import com.google.android.gms.internal.measurement.m8;
 import com.google.android.gms.internal.measurement.r9;
 import com.google.android.gms.internal.measurement.t5;
 import com.google.android.gms.internal.measurement.w3;
-import d1.c2;
+import d1.c2Shadow;
 import h91.i0Shadow;
 import h91.j0;
 import java.io.InterruptedIOException;
@@ -1233,7 +1233,7 @@ public final class r implements j0, o.a {
         this.v = new kk.a(13);
         v71.d1 w0 = zVar.K().w0(v71.w.s);
         if (w0 != null) {
-            w0.o0(new c2(rVar, this, xVar, 11));
+            w0.o0(new c2Shadow(rVar, this, xVar, 11));
         }
     }
 
@@ -1552,7 +1552,7 @@ public final class r implements j0, o.a {
             int a3 = c.a(4);
             Character.toChars(a3 != 0 ? ((ByteBuffer) ((a5.q0) c).u).getInt(a3 + ((a5.q0) c).r) : 0, (char[]) this.t, i7 * 2);
             androidx.emoji2.text.flatbuffer.a c2 = tVar.c();
-            int a4 = c2.a(16);
+            int a4 = c2Shadow.a(16);
             if (a4 != 0) {
                 int i8 = a4 + ((a5.q0) c2).r;
                 i3 = ((ByteBuffer) ((a5.q0) c2).u).getInt(((ByteBuffer) ((a5.q0) c2).u).getInt(i8) + i8);

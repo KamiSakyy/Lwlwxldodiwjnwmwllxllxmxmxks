@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cf implements aa.a {
+public final class cf implements aaShadow.a {
     public static final cf a = new cf();
     public static final List b = sy.d0.o("aheadBy", "behindBy", "commits", "id", "__typename");
 

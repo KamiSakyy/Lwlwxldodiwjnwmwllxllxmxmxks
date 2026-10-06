@@ -5,8 +5,8 @@ import jo.s50;
 import jo.w50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ct implements aa.a {
-    public static final ct a = new ct();
+public final class ctShadow implements aaShadow.a {
+    public static final ctShadow a = new ctShadow();
     public static final List b = sy.d0.o("search", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -18,7 +18,7 @@ public final class ct implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                w50Var = (w50) aa.c.c(gt.a, false).a(eVar, wVar);
+                w50Var = (w50) aa.c.c(gtShadow.a, false).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -49,7 +49,7 @@ public final class ct implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(s50Var, "value");
         fVar.z0("search");
-        aa.c.c(gt.a, false).b(fVar, wVar, s50Var.a);
+        aa.c.c(gtShadow.a, false).b(fVar, wVar, s50Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, s50Var.b);

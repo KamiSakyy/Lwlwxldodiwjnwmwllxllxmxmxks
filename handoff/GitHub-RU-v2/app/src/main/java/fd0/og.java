@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class og implements aa.a {
+public abstract class og implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "path", "subjectType", "isResolved", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "diffLines", "comments"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0036, code lost:

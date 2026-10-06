@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class pr implements aa.n0 {
+public final class pr implements aaShadow.n0 {
     public static final lr Companion = new lr();
     public final String r;
     public final List s;
@@ -68,7 +68,7 @@ public final class pr implements aa.n0 {
         fVar.z0("environments");
         aa.c.a(bVar).e(fVar, wVar, this.s);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("comment");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

@@ -15,7 +15,7 @@ public final class r0 extends c71.j implements j71.e {
     public int H;
     public int I;
     public /* synthetic */ Object J;
-    public final /* synthetic */ s0 K;
+    public final /* synthetic */ s0Shadow K;
     public final /* synthetic */ oa.j L;
     public final /* synthetic */ String M;
     public final /* synthetic */ j71.e N;
@@ -28,7 +28,7 @@ public final class r0 extends c71.j implements j71.e {
     public Object z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public r0(s0 s0Var, oa.j jVar, String str, j71.e eVar, j71.c cVar, j71.f fVar, a71.c cVar2) {
+    public r0(s0Shadow s0Var, oa.j jVar, String str, j71.e eVar, j71.c cVar, j71.f fVar, a71.c cVar2) {
         super(2, cVar2);
         this.K = s0Var;
         this.L = jVar;
@@ -68,7 +68,7 @@ public final class r0 extends c71.j implements j71.e {
         y0 y0Var;
         j71.e eVar;
         String str;
-        s0 s0Var;
+        s0Shadow s0Var;
         oa.j jVar;
         j71.f fVar;
         j71.c cVar;
@@ -80,7 +80,7 @@ public final class r0 extends c71.j implements j71.e {
         k71.s sVar;
         int i2;
         j71.f fVar2;
-        s0 s0Var2;
+        s0Shadow s0Var2;
         k71.u uVar;
         e81.a aVar;
         q0 q0Var;
@@ -133,7 +133,7 @@ public final class r0 extends c71.j implements j71.e {
                     fVar = (j71.f) this.C;
                     cVar = (j71.c) this.B;
                     jVar = (oa.j) this.A;
-                    s0Var = (s0) this.z;
+                    s0Var = (s0Shadow) this.z;
                     str = (String) this.y;
                     eVar = (j71.e) this.x;
                     e81.a aVar6 = this.w;
@@ -153,7 +153,7 @@ public final class r0 extends c71.j implements j71.e {
                     j71.f fVar3 = (j71.f) this.B;
                     j71.c cVar4 = (j71.c) this.A;
                     oa.j jVar4 = (oa.j) this.z;
-                    s0 s0Var3 = (s0) this.y;
+                    s0Shadow s0Var3 = (s0Shadow) this.y;
                     String str3 = (String) this.x;
                     e81.a aVar7 = this.w;
                     y0 y0Var3 = this.v;
@@ -183,7 +183,7 @@ public final class r0 extends c71.j implements j71.e {
                             try {
                                 k71.s sVar4 = new k71.s();
                                 w wVar = s0Var2.a;
-                                s0 s0Var4 = s0Var2;
+                                s0Shadow s0Var4 = s0Var2;
                                 int i8 = uVar.r;
                                 j71.f fVar5 = fVar2;
                                 int i9 = q0Var.b;

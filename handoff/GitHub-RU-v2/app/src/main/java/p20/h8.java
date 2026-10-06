@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h8 implements aa.a {
+public final class h8 implements aaShadow.a {
     public static final h8 a = new h8();
     public static final List b = sy.d0.o("extension", "fileType");
 

@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class jo implements aa.a {
+public abstract class joShadow implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"repositories", "id"});
 
     public static jo.bz c(ea.e eVar, aa.w wVar) {
@@ -538,7 +538,7 @@ public abstract class jo implements aa.a {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class qx {
+    public static class qxShadow {
         public qx() {
         }
     }

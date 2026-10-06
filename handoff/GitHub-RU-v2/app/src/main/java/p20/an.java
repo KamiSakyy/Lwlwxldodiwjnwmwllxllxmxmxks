@@ -5,7 +5,7 @@ import u10.mx;
 import u10.nx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class an implements aa.a {
+public final class an implements aaShadow.a {
     public static final an a = new an();
     public static final List b = sy.d0.o("userCount", "pageInfo", "nodes");
 

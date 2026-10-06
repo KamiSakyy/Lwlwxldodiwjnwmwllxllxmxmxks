@@ -5,7 +5,7 @@ import jn0.w60;
 import jn0.x60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class zt implements aa.a {
+public final class zt implements aaShadow.a {
     public static final zt a = new zt();
     public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
 

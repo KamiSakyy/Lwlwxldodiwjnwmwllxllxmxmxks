@@ -3,7 +3,7 @@ package kc0;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xg implements aa.v0 {
+public final class xg implements aaShadow.v0 {
     public final ArrayList a;
 
     public xg(ArrayList arrayList) {

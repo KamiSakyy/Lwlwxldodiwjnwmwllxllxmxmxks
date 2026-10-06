@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hb implements aa.a {
+public final class hb implements aaShadow.a {
     public static final hb a = new hb();
     public static final List b = sy.d0.o("owner", "name", "id", "__typename");
 

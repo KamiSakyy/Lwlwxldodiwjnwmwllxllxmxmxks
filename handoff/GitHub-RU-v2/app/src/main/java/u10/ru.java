@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ru implements aa.v0 {
+public final class ru implements aaShadow.v0 {
     public final uu a;
 
     public ru(uu uuVar) {

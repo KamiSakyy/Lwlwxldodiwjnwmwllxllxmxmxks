@@ -14,9 +14,9 @@ import u31.l;
 import u31.n;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class g extends ForegroundColorSpan implements LineHeightSpan.WithDensity {
+public abstract class gShadow extends ForegroundColorSpan implements LineHeightSpan.WithDensity {
 
-    public static final class a extends g {
+    public static final class a extends gShadow {
         public static final C0026a Companion = new C0026a();
         public final u31.j r;
         public final u31.j s;
@@ -187,7 +187,7 @@ public abstract class g extends ForegroundColorSpan implements LineHeightSpan.Wi
         }
     }
 
-    public static final class b extends g {
+    public static final class b extends gShadow {
         public static final a Companion = new a();
         public final GradientDrawable r;
         public final GradientDrawable s;
@@ -265,7 +265,7 @@ public abstract class g extends ForegroundColorSpan implements LineHeightSpan.Wi
         }
     }
 
-    public static final class c extends g {
+    public static final class c extends gShadow {
         public static final a Companion = new a();
         public final GradientDrawable r;
         public final GradientDrawable s;

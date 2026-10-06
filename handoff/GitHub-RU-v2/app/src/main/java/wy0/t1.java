@@ -880,7 +880,7 @@ public final class t1 implements y71.j {
                                             kx0.b bVar4 = bVar3;
                                             l01.s k3 = a1Var != null ? m71.a.k(a1Var.c) : null;
                                             if (k3 != null) {
-                                                arrayList5.add(k3);
+                                                arrayList5.add(k3Shadow);
                                             }
                                             bVar3 = bVar4;
                                         }
@@ -1423,7 +1423,7 @@ public final class t1 implements y71.j {
                     sy.y.j(obj2);
                     ow0.p0 p0Var = ((ow0.o0) obj).a;
                     if (p0Var != null && (q0Var = p0Var.c) != null) {
-                        uu0.i6 i6Var = q0Var.b;
+                        uu0.i6Shadow i6Var = q0Var.b;
                         h01.p i3 = com.google.android.gms.internal.measurement.z3.i(i6Var.c);
                         uu0.p0 p0Var2 = i6Var.d.a;
                         r7 = new h01.o(i3, b91.g.g(i6Var.e), p0Var2 != null ? b41.b.l(p0Var2) : null);
@@ -1466,7 +1466,7 @@ public final class t1 implements y71.j {
         int i;
         java.util.ArrayList r13;
         List<uw0.r> list;
-        uu0.k3 k3Var;
+        uu0.k3Shadow k3Var;
         String str;
         if (cVar instanceof e3) {
             e3Var = (e3) cVar;
@@ -1580,12 +1580,12 @@ public final class t1 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object i(a71.c cVar, Object obj) {
-        g3 g3Var;
+        g3Shadow g3Var;
         int i;
         Object obj2;
         List<uu0.n6> list;
-        if (cVar instanceof g3) {
-            g3Var = (g3) cVar;
+        if (cVar instanceof g3Shadow) {
+            g3Var = (g3Shadow) cVar;
             int i2 = g3Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 g3Var.v = i2 - Integer.MIN_VALUE;
@@ -1619,7 +1619,7 @@ public final class t1 implements y71.j {
                 return w61.a0.a;
             }
         }
-        g3Var = new g3(this, cVar);
+        g3Var = new g3Shadow(this, cVar);
         Object obj32 = g3Var.u;
         b71.a aVar2 = b71.a.r;
         i = g3Var.v;
@@ -1704,7 +1704,7 @@ public final class t1 implements y71.j {
                     ti tiVar = (ti) obj;
                     ig igVar = (tiVar == null || (uiVar2 = tiVar.a) == null || (viVar = uiVar2.b) == null) ? null : viVar.b;
                     int i3 = igVar == null ? -1 : bx0.n.a[igVar.ordinal()];
-                    yz0.t6 t6Var = new yz0.t6(i3 != 1 ? i3 != 2 ? i3 != 3 ? i3 != 4 ? TimelineItem$TimelineLockedEvent$Reason.UNKNOWN : TimelineItem$TimelineLockedEvent$Reason.RESOLVED : TimelineItem$TimelineLockedEvent$Reason.TOO_HEATED : TimelineItem$TimelineLockedEvent$Reason.SPAM : TimelineItem$TimelineLockedEvent$Reason.OFF_TOPIC, new com.github.service.models.response.a((tiVar == null || (uiVar = tiVar.a) == null || (riVar = uiVar.a) == null) ? "" : riVar.b, (Avatar) null, (String) null, false, (String) null, 62));
+                    yz0.t6Shadow t6Var = new yz0.t6(i3 != 1 ? i3 != 2 ? i3 != 3 ? i3 != 4 ? TimelineItem$TimelineLockedEvent$Reason.UNKNOWN : TimelineItem$TimelineLockedEvent$Reason.RESOLVED : TimelineItem$TimelineLockedEvent$Reason.TOO_HEATED : TimelineItem$TimelineLockedEvent$Reason.SPAM : TimelineItem$TimelineLockedEvent$Reason.OFF_TOPIC, new com.github.service.models.response.a((tiVar == null || (uiVar = tiVar.a) == null || (riVar = uiVar.a) == null) ? "" : riVar.b, (Avatar) null, (String) null, false, (String) null, 62));
                     j3Var.v = 1;
                     if (this.s.c(t6Var, j3Var) == aVar) {
                         return aVar;

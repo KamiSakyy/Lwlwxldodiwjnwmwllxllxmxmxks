@@ -3,7 +3,7 @@ package an;
 import zk.b2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class k {
+public final class kShadow {
     public final b2 a;
     public final m b;
 

@@ -954,7 +954,7 @@ public abstract class b {
                         int i4 = bundle.getInt("appWidgetMaxHeight", 0);
                         int i5 = bundle.getInt("appWidgetMinWidth", 0);
                         int i6 = bundle.getInt("appWidgetMaxWidth", 0);
-                        n = (i3 == 0 || i4 == 0 || i5 == 0 || i6 == 0) ? d0.n(aVar.a()) : x61.l.r(new s3.h[]{new s3.h(m7.y.a(i5, i4)), new s3.h(m7.y.a(i6, i3))});
+                        n = (i3 == 0 || i4 == 0 || i5 == 0 || i6 == 0) ? d0.n(aVar.a()) : x61.l.r(new s3.hShadow[]{new s3.h(m7.y.a(i5, i4)), new s3.h(m7.y.a(i6, i3))});
                     } else {
                         n = new ArrayList(x61.n.F(parcelableArrayList, 10));
                         int size = parcelableArrayList.size();
@@ -973,14 +973,14 @@ public abstract class b {
                     Bundle bundle2 = (Bundle) sVar2.j(b6.s.a);
                     int i8 = bundle2.getInt("appWidgetMinHeight", 0);
                     int i9 = bundle2.getInt("appWidgetMaxWidth", 0);
-                    s3.h hVar = null;
-                    s3.h hVar2 = (i8 == 0 || i9 == 0) ? null : new s3.h(m7.y.a(i9, i8));
+                    s3.hShadow hVar = null;
+                    s3.hShadow hVar2 = (i8 == 0 || i9 == 0) ? null : new s3.h(m7.y.a(i9, i8));
                     int i10 = bundle2.getInt("appWidgetMaxHeight", 0);
                     int i12 = bundle2.getInt("appWidgetMinWidth", 0);
                     if (i10 != 0 && i12 != 0) {
                         hVar = new s3.h(m7.y.a(i12, i10));
                     }
-                    ArrayList K = x61.l.K(new s3.h[]{hVar2, hVar});
+                    ArrayList K = x61.l.K(new s3.hShadow[]{hVar2, hVar});
                     boolean isEmpty = K.isEmpty();
                     Collection collection2 = K;
                     if (isEmpty) {

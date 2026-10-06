@@ -3,8 +3,8 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gq implements aa.a {
-    public static final gq a = new gq();
+public final class gqShadow implements aaShadow.a {
+    public static final gqShadow a = new gqShadow();
     public static final List b = sy.d0.o("id", "activePullRequests", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -42,7 +42,7 @@ public final class gq implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.m10 m10Var = (jo.m10) obj;
+        jo.m10Shadow m10Var = (jo.m10) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(m10Var, "value");

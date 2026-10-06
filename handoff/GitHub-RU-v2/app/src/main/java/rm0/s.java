@@ -47,7 +47,7 @@ public final /* synthetic */ class s implements j71.c {
         String str;
         String str2;
         List list;
-        kc0.k3 k3Var;
+        kc0.k3Shadow k3Var;
         vz.f fVar;
         vz.c cVar;
         List list2;
@@ -60,7 +60,7 @@ public final /* synthetic */ class s implements j71.c {
         String str3;
         String str4;
         String str5;
-        l01.n0 n0Var;
+        l01.n0Shadow n0Var;
         java.util.List r4;
         xz.m mVar;
         xz.e eVar;
@@ -155,7 +155,7 @@ public final /* synthetic */ class s implements j71.c {
             case 13:
                 kc0.i3 i3Var = (kc0.i3) obj;
                 k71.k.g(i3Var, "data");
-                kc0.l3 l3Var = i3Var.a.b;
+                kc0.l3Shadow l3Var = i3Var.a.b;
                 if (l3Var != null && (list = l3Var.b) != null) {
                     z3 = !list.isEmpty();
                 }
@@ -163,7 +163,7 @@ public final /* synthetic */ class s implements j71.c {
             case 14:
                 kc0.i3 i3Var2 = (kc0.i3) obj;
                 k71.k.g(i3Var2, "data");
-                kc0.l3 l3Var2 = i3Var2.a.b;
+                kc0.l3Shadow l3Var2 = i3Var2.a.b;
                 if (l3Var2 == null || (k3Var = l3Var2.a) == null) {
                     return null;
                 }
@@ -171,13 +171,13 @@ public final /* synthetic */ class s implements j71.c {
             case 15:
                 kc0.i3 i3Var3 = (kc0.i3) obj;
                 k71.k.g(i3Var3, "data");
-                kc0.l3 l3Var3 = i3Var3.a.b;
+                kc0.l3Shadow l3Var3 = i3Var3.a.b;
                 List list4 = l3Var3 != null ? l3Var3.b : null;
                 return list4 == null ? collection : list4;
             case 16:
                 kc0.i3 i3Var4 = (kc0.i3) obj;
                 k71.k.g(i3Var4, "data");
-                kc0.l3 l3Var4 = i3Var4.a.b;
+                kc0.l3Shadow l3Var4 = i3Var4.a.b;
                 Collection collection2 = l3Var4 != null ? l3Var4.b : null;
                 if (collection2 != null) {
                     collection = collection2;
@@ -192,7 +192,7 @@ public final /* synthetic */ class s implements j71.c {
                     kc0.j3 j3Var = (kc0.j3) obj2;
                     arrayList.add(new yz0.h4(j3Var.b, j3Var.c));
                 }
-                kc0.k3 k3Var2 = l3Var4 != null ? l3Var4.a : null;
+                kc0.k3Shadow k3Var2 = l3Var4 != null ? l3Var4.a : null;
                 return new yz0.i4(arrayList, k3Var2 != null ? new x01.i(k3Var2.c, k3Var2.a, !k3Var2.b) : new x01.i(null, false, true));
             case 17:
                 rz.z zVar = (rz.z) obj;

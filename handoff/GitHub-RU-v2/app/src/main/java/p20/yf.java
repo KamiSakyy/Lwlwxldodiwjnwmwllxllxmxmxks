@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yf implements aa.a {
+public final class yf implements aaShadow.a {
     public static final yf a = new yf();
     public static final List b = sy.d0.n("nodes");
 
@@ -18,7 +18,7 @@ public final class yf implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        u10.nn nnVar = (u10.nn) obj;
+        u10.nnShadow nnVar = (u10.nn) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(nnVar, "value");

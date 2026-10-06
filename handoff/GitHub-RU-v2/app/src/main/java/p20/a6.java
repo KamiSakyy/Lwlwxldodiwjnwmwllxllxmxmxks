@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a6 implements aa.a {
+public final class a6 implements aaShadow.a {
     public static final a6 a = new a6();
     public static final List b = sy.d0.o("id", "url", "runNumber", "workflow", "pendingDeploymentRequests", "__typename");
 

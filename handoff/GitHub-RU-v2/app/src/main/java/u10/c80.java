@@ -3,7 +3,7 @@ package u10;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class c80 implements aa.n0 {
+public final class c80 implements aaShadow.n0 {
     public static final y70 Companion = new y70();
     public final String r;
     public final hc0.ev s;
@@ -70,7 +70,7 @@ public final class c80 implements aa.n0 {
         k71.k.g(evVar, "value");
         fVar.I(evVar.r);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("types");
             aa.c.d(aa.c.b(aa.c.a(ic0.a.i))).d(fVar, wVar, u0Var);
         }

@@ -13,109 +13,109 @@ public final class d5 implements y71.i {
     public final Object b(y71.j jVar, a71.c cVar) {
         switch (this.r) {
             case 0:
-                Object b = this.s.b(new a5(jVar, 2), cVar);
+                Object b = this.s.b(new a5Shadow(jVar, 2), cVar);
                 if (b != b71.a.r) {
                     break;
                 }
                 break;
             case 1:
-                Object b2 = this.s.b(new a5(jVar, 3), cVar);
+                Object b2 = this.s.b(new a5Shadow(jVar, 3), cVar);
                 if (b2 != b71.a.r) {
                     break;
                 }
                 break;
             case 2:
-                Object b3 = this.s.b(new a5(jVar, 4), cVar);
+                Object b3 = this.s.b(new a5Shadow(jVar, 4), cVar);
                 if (b3 != b71.a.r) {
                     break;
                 }
                 break;
             case 3:
-                Object b4 = this.s.b(new a5(jVar, 5), cVar);
+                Object b4 = this.s.b(new a5Shadow(jVar, 5), cVar);
                 if (b4 != b71.a.r) {
                     break;
                 }
                 break;
             case 4:
-                Object b5 = this.s.b(new a5(jVar, 6), cVar);
+                Object b5 = this.s.b(new a5Shadow(jVar, 6), cVar);
                 if (b5 != b71.a.r) {
                     break;
                 }
                 break;
             case 5:
-                Object b6 = this.s.b(new a5(jVar, 8), cVar);
+                Object b6 = this.s.b(new a5Shadow(jVar, 8), cVar);
                 if (b6 != b71.a.r) {
                     break;
                 }
                 break;
             case 6:
-                Object b7 = this.s.b(new a5(jVar, 9), cVar);
+                Object b7 = this.s.b(new a5Shadow(jVar, 9), cVar);
                 if (b7 != b71.a.r) {
                     break;
                 }
                 break;
             case 7:
-                Object b8 = this.s.b(new a5(jVar, 10), cVar);
+                Object b8 = this.s.b(new a5Shadow(jVar, 10), cVar);
                 if (b8 != b71.a.r) {
                     break;
                 }
                 break;
             case 8:
-                Object b9 = this.s.b(new a5(jVar, 11), cVar);
+                Object b9 = this.s.b(new a5Shadow(jVar, 11), cVar);
                 if (b9 != b71.a.r) {
                     break;
                 }
                 break;
             case 9:
-                Object b10 = this.s.b(new a5(jVar, 13), cVar);
+                Object b10 = this.s.b(new a5Shadow(jVar, 13), cVar);
                 if (b10 != b71.a.r) {
                     break;
                 }
                 break;
             case 10:
-                Object b12 = this.s.b(new a5(jVar, 14), cVar);
+                Object b12 = this.s.b(new a5Shadow(jVar, 14), cVar);
                 if (b12 != b71.a.r) {
                     break;
                 }
                 break;
             case 11:
-                Object b13 = this.s.b(new a5(jVar, 15), cVar);
+                Object b13 = this.s.b(new a5Shadow(jVar, 15), cVar);
                 if (b13 != b71.a.r) {
                     break;
                 }
                 break;
             case 12:
-                Object b14 = this.s.b(new a5(jVar, 16), cVar);
+                Object b14 = this.s.b(new a5Shadow(jVar, 16), cVar);
                 if (b14 != b71.a.r) {
                     break;
                 }
                 break;
             case 13:
-                Object b15 = this.s.b(new a5(jVar, 17), cVar);
+                Object b15 = this.s.b(new a5Shadow(jVar, 17), cVar);
                 if (b15 != b71.a.r) {
                     break;
                 }
                 break;
             case 14:
-                Object b16 = this.s.b(new a5(jVar, 19), cVar);
+                Object b16 = this.s.b(new a5Shadow(jVar, 19), cVar);
                 if (b16 != b71.a.r) {
                     break;
                 }
                 break;
             case 15:
-                Object b17 = this.s.b(new a5(jVar, 26), cVar);
+                Object b17 = this.s.b(new a5Shadow(jVar, 26), cVar);
                 if (b17 != b71.a.r) {
                     break;
                 }
                 break;
             case 16:
-                Object b18 = this.s.b(new a5(jVar, 27), cVar);
+                Object b18 = this.s.b(new a5Shadow(jVar, 27), cVar);
                 if (b18 != b71.a.r) {
                     break;
                 }
                 break;
             case 17:
-                Object b19 = this.s.b(new a5(jVar, 28), cVar);
+                Object b19 = this.s.b(new a5Shadow(jVar, 28), cVar);
                 if (b19 != b71.a.r) {
                     break;
                 }

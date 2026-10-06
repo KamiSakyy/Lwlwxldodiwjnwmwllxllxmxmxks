@@ -6,7 +6,7 @@ import kc0.fb0;
 import kc0.ib0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ow implements aa.a {
+public final class ow implements aaShadow.a {
     public static final ow a = new ow();
     public static final List b = sy.d0.o(new String[]{"id", "hasCreatedLists", "suggestedListNames", "lists", "__typename"});
 

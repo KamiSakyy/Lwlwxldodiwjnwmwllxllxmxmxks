@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class kb implements aa.a {
+public final class kb implements aaShadow.a {
     public static final kb a = new kb();
     public static final List b = sy.d0.n("followUser");
 

@@ -148,7 +148,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final Object q(c4 c4Var, String str, int i, c71.c cVar) {
-        vb0.w2 w2Var;
+        vb0.w2Shadow w2Var;
         int i2;
         int i3;
         w50.l lVar;
@@ -188,7 +188,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 lVar = (w50.l) obj;
                 if (lVar != null) {
                     aa.i0 mVar2 = new w50.m(0);
-                    aa.h0 lVar2 = new w50.l(lVar.a, lVar.b, lVar.c, lVar.d, lVar.e, lVar.f, lVar.g, lVar.h, lVar.i, lVar.j, lVar.k, lVar.l, lVar.m, lVar.n != null ? new w50.g(i3) : null, lVar.o, lVar.p);
+                    aa.h0Shadow lVar2 = new w50.l(lVar.a, lVar.b, lVar.c, lVar.d, lVar.e, lVar.f, lVar.g, lVar.h, lVar.i, lVar.j, lVar.k, lVar.l, lVar.m, lVar.n != null ? new w50.g(i3) : null, lVar.o, lVar.p);
                     w2Var.u = str2;
                     w2Var.v = i3;
                     w2Var.y = 2;
@@ -425,7 +425,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 l2Var = (z70.l2) obj;
                 if (l2Var != null) {
                     aa.i0 m2Var2 = new z70.m2(0);
-                    aa.h0 l2Var2 = new z70.l2(l2Var.a, l2Var.b, l2Var.c, l2Var.d, l2Var.e, l2Var.f, l2Var.g, l2Var.h, l2Var.i, l2Var.j, l2Var.k, l2Var.l, l2Var.m, l2Var.n, l2Var.o, l2Var.p, l2Var.q, l2Var.r, l2Var.s != null ? new z70.b2(i3) : null, l2Var.t, l2Var.u);
+                    aa.h0Shadow l2Var2 = new z70.l2(l2Var.a, l2Var.b, l2Var.c, l2Var.d, l2Var.e, l2Var.f, l2Var.g, l2Var.h, l2Var.i, l2Var.j, l2Var.k, l2Var.l, l2Var.m, l2Var.n, l2Var.o, l2Var.p, l2Var.q, l2Var.r, l2Var.s != null ? new z70.b2(i3) : null, l2Var.t, l2Var.u);
                     x2Var.u = str2;
                     x2Var.v = i3;
                     x2Var.y = 2;
@@ -552,11 +552,11 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
     public final y71.i c(String str, int i, String str2) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new r3(1, com.google.android.gms.internal.measurement.d5.R(com.github.service.wrapper.b.q(this.t, new dl0.k(str, str2, i, new aa.u0(Integer.valueOf(i))), ga.h.t, false, null, null, new bd.m(str, 8), new s(4), 28)), this), this.u);
+                return y71.n1.y(new r3Shadow(1, com.google.android.gms.internal.measurement.d5.R(com.github.service.wrapper.b.q(this.t, new dl0.k(str, str2, i, new aa.u0(Integer.valueOf(i))), ga.h.t, false, null, null, new bd.m(str, 8), new s(4), 28)), this), this.u);
             case 1:
-                return y71.n1.y(new r3(12, com.google.android.gms.internal.measurement.d5.R(com.github.service.wrapper.b.q(this.t, new na0.k(str, str2, i, new aa.u0(Integer.valueOf(i))), ga.h.t, false, null, null, new bd.m(str, 8), new v00.n(15), 28)), this), this.u);
+                return y71.n1.y(new r3Shadow(12, com.google.android.gms.internal.measurement.d5.R(com.github.service.wrapper.b.q(this.t, new na0.k(str, str2, i, new aa.u0(Integer.valueOf(i))), ga.h.t, false, null, null, new bd.m(str, 8), new v00.n(15), 28)), this), this.u);
             default:
-                return y71.n1.y(new r3(15, com.google.android.gms.internal.measurement.d5.R(com.github.service.wrapper.b.q(this.t, new ow0.o(str, str2, i, new aa.u0(Integer.valueOf(i))), ga.h.t, false, null, null, new bd.m(str, 8), new wa.g(21), 28)), this), this.u);
+                return y71.n1.y(new r3Shadow(15, com.google.android.gms.internal.measurement.d5.R(com.github.service.wrapper.b.q(this.t, new ow0.o(str, str2, i, new aa.u0(Integer.valueOf(i))), ga.h.t, false, null, null, new bd.m(str, 8), new wa.g(21), 28)), this), this.u);
         }
     }
 
@@ -774,17 +774,17 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 k71.k.g(str, "ownerName");
                 k71.k.g(str2, "repoName");
                 k71.k.g(str3, "url");
-                return y71.n1.y(new r3(0, com.github.service.wrapper.a.o(this.s, new z20(i, str, str2, str3), null, false, null, null, 62), this), this.u);
+                return y71.n1.y(new r3Shadow(0, com.github.service.wrapper.a.o(this.s, new z20(i, str, str2, str3), null, false, null, null, 62), this), this.u);
             case 1:
                 k71.k.g(str, "ownerName");
                 k71.k.g(str2, "repoName");
                 k71.k.g(str3, "url");
-                return y71.n1.y(new r3(11, com.github.service.wrapper.a.o(this.s, new b10(i, str, str2, str3), null, false, null, null, 62), this), this.u);
+                return y71.n1.y(new r3Shadow(11, com.github.service.wrapper.a.o(this.s, new b10(i, str, str2, str3), null, false, null, null, 62), this), this.u);
             default:
                 k71.k.g(str, "ownerName");
                 k71.k.g(str2, "repoName");
                 k71.k.g(str3, "url");
-                return y71.n1.y(new r3(14, com.github.service.wrapper.a.o(this.s, new s60(i, str, str2, str3), null, false, null, null, 62), this), this.u);
+                return y71.n1.y(new r3Shadow(14, com.github.service.wrapper.a.o(this.s, new s60(i, str, str2, str3), null, false, null, null, 62), this), this.u);
         }
     }
 }

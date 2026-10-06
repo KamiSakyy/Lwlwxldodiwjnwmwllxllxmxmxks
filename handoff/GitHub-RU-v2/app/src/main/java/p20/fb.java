@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fb implements aa.a {
+public final class fb implements aaShadow.a {
     public static final fb a = new fb();
     public static final List b = sy.d0.o("__typename", "login");
 

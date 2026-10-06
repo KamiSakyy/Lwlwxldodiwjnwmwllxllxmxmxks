@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class dj implements aa.a {
+public final class dj implements aaShadow.a {
     public static final dj a = new dj();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -39,7 +39,7 @@ public final class dj implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.cs csVar = (jo.cs) obj;
+        jo.csShadow csVar = (jo.cs) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(csVar, "value");

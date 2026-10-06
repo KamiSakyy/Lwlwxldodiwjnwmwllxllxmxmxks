@@ -5,7 +5,7 @@ import u10.q90;
 import u10.r90;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gv implements aa.a {
+public final class gv implements aaShadow.a {
     public static final gv a = new gv();
     public static final List b = sy.d0.n("user");
 

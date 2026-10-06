@@ -15,7 +15,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CancellationException;
-import rm0.r3;
+import rm0.r3Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -27,7 +27,7 @@ public class q extends androidx.lifecycle.k1 {
     public final y1 D;
     public final y1 E;
     public final y1 F;
-    public final r3 G;
+    public final r3Shadow G;
     public final y1 H;
     public final y00.l I;
     public final y1 J;

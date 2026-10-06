@@ -6,7 +6,7 @@ import u10.i20;
 import u10.j20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hq implements aa.a {
+public final class hq implements aaShadow.a {
     public static final hq a = new hq();
     public static final List b = sy.d0.o("actor", "unlockedRecord");
 

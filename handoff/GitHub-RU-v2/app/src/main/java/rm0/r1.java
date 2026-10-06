@@ -41,9 +41,9 @@ public final class r1 implements y71.j {
         int i;
         t00.l1 l1Var;
         int i2;
-        vb0.d1 d1Var;
+        vb0.d1Shadow d1Var;
         int i3;
-        wy0.d1 d1Var2;
+        wy0.d1Shadow d1Var2;
         int i4;
         switch (this.r) {
             case 0:

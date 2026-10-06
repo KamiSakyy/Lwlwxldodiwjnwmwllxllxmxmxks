@@ -1,7 +1,7 @@
 package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b1 extends c71.j implements j71.f {
+public final class b1Shadow extends c71.j implements j71.f {
     public final /* synthetic */ int v = 0;
     public int w;
     public /* synthetic */ j x;
@@ -22,12 +22,12 @@ public final class b1 extends c71.j implements j71.f {
         a71.c cVar = (a71.c) obj3;
         switch (this.v) {
             case 0:
-                b1 b1Var = new b1(cVar, (j71.g) this.z);
+                b1Shadow b1Var = new b1Shadow(cVar, (j71.g) this.z);
                 b1Var.x = jVar;
                 b1Var.y = objArr;
                 return b1Var.v(w61.a0.a);
             default:
-                b1 b1Var2 = new b1((j71.f) this.z, cVar);
+                b1Shadow b1Var2 = new b1Shadow((j71.f) this.z, cVar);
                 b1Var2.x = jVar;
                 b1Var2.y = objArr;
                 return b1Var2.v(w61.a0.a);

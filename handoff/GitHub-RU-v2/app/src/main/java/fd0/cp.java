@@ -5,7 +5,7 @@ import kc0.l00;
 import kc0.m00;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class cp implements aa.a {
+public final class cp implements aaShadow.a {
     public static final cp a = new cp();
     public static final List b = sy.d0.n("replaceAssigneesForAssignable");
 

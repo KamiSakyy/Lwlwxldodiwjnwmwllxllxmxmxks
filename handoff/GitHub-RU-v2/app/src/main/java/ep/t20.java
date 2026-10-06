@@ -5,7 +5,7 @@ import jo.dk0;
 import jo.ek0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class t20 implements aa.a {
+public final class t20 implements aaShadow.a {
     public static final t20 a = new t20();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 

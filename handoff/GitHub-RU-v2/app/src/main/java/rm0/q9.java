@@ -242,7 +242,7 @@ public final class q9 implements z01.j1, yb0, mi0, y90, yf0 {
                     String name3 = kVar3.getName();
                     String g3 = kVar3.g();
                     aa.u0 u0Var5 = aa.t0.d;
-                    aa.u0 u0Var6 = g3 == null ? u0Var5 : new aa.u0(g3);
+                    aa.u0 u0Var6 = g3 == null ? u0Var5 : new aa.u0(g3Shadow);
                     xp s = t.e.s(kVar3.i());
                     if (s != null) {
                         u0Var5 = new aa.u0(s);

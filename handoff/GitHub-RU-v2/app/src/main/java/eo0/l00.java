@@ -5,7 +5,7 @@ import jn0.wg0;
 import jn0.xg0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class l00 implements aa.a {
+public final class l00 implements aaShadow.a {
     public static final l00 a = new l00();
     public static final List b = sy.d0.o(new String[]{"repositories", "id", "__typename"});
 

@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class n10 {
+public final class n10Shadow {
     public final String a;
     public final m10 b;
     public final g10 c;
@@ -22,10 +22,10 @@ public final class n10 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof n10)) {
+        if (!(obj instanceof n10Shadow)) {
             return false;
         }
-        n10 n10Var = (n10) obj;
+        n10Shadow n10Var = (n10Shadow) obj;
         return k71.k.b(this.a, n10Var.a) && k71.k.b(this.b, n10Var.b) && k71.k.b(this.c, n10Var.c) && k71.k.b(this.d, n10Var.d) && k71.k.b(this.e, n10Var.e);
     }
 

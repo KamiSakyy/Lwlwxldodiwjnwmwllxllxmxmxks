@@ -3,14 +3,14 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xf implements aa.a {
+public final class xf implements aaShadow.a {
     public static final xf a = new xf();
     public static final List b = sy.d0.o(new String[]{"comment", "id", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jn0.nn nnVar = null;
+        jn0.nnShadow nnVar = null;
         String str = null;
         String str2 = null;
         while (true) {

@@ -5,7 +5,7 @@ import jn0.hc0;
 import jn0.kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class lx implements aa.a {
+public final class lx implements aaShadow.a {
     public static final lx a = new lx();
     public static final List b = sy.d0.n("updatePullRequest");
 

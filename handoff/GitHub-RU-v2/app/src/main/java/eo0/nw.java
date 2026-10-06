@@ -5,7 +5,7 @@ import jn0.bb0;
 import jn0.za0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class nw implements aa.a {
+public final class nw implements aaShadow.a {
     public static final nw a = new nw();
     public static final List b = sy.d0.n("updateIssue");
 

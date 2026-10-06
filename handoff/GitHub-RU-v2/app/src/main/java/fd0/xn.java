@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.xy;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xn implements aa.a {
+public final class xn implements aaShadow.a {
     public static final xn a = new xn();
     public static final List b = sy.d0.o(new String[]{"__typename", "id"});
 

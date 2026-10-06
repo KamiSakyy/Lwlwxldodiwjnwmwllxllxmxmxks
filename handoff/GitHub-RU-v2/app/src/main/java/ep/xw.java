@@ -5,7 +5,7 @@ import jo.eb0;
 import jo.gb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xw implements aa.a {
+public final class xw implements aaShadow.a {
     public static final xw a = new xw();
     public static final List b = sy.d0.o("owner", "name", "id", "__typename");
 

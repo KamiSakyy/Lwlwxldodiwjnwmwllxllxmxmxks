@@ -1,7 +1,7 @@
 package com.github.rudroid.widget.shortcuts;
 
 import com.github.domain.shortcuts.model.StoredShortcutModel;
-import rm0.r3;
+import rm0.r3Shadow;
 import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -97,7 +97,7 @@ public final class g {
                     String str2 = (String) d;
                     floatValue = new Float(f != null ? f.floatValue() : 0.0f).floatValue();
                     if (h != null && str2 != null) {
-                        r3 b2 = this.b.b(h, str2);
+                        r3Shadow b2 = this.b.b(h, str2);
                         jVar.u = null;
                         jVar.v = null;
                         jVar.w = null;

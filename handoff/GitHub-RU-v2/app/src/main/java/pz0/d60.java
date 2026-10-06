@@ -11,7 +11,7 @@ public abstract class d60 {
         u4.Companion.getClass();
         t4 t4Var = u4.Companion;
         ba.Companion.getClass();
-        aa aaVar = ba.Companion;
+        aaShadow aaVar = ba.Companion;
         ja.Companion.getClass();
         ia iaVar = ja.Companion;
         le.Companion.getClass();

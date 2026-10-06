@@ -5,7 +5,7 @@ import jn0.e60;
 import jn0.n60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class rt implements aa.a {
+public abstract class rt implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "comments"});
 
     public static n60 c(ea.e eVar, aa.w wVar) {

@@ -5,7 +5,7 @@ import jo.xg0;
 import jo.zg0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class r00 implements aa.a {
+public final class r00 implements aaShadow.a {
     public static final r00 a = new r00();
     public static final List b = sy.d0.n("updateUserDashboardNavLinks");
 

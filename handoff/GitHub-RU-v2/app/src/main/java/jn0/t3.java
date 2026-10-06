@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class t3 implements aa.w0 {
+public final class t3 implements aaShadow.w0 {
     public static final n3 Companion = new n3();
     public final aa1.b r;
 
@@ -54,7 +54,7 @@ public final class t3 implements aa.w0 {
     public final void o(ea.f fVar, aa.w wVar, boolean z) {
         k71.k.g(wVar, "customScalarAdapters");
         aa.u0 u0Var = this.r;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("after");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

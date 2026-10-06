@@ -5,7 +5,7 @@ import androidx.compose.runtime.b2;
 import androidx.compose.runtime.v1;
 import com.github.rudroid.activities.g3;
 import f1.ub;
-import h0.h1;
+import h0.h1Shadow;
 import java.util.Iterator;
 import java.util.List;
 import xn.e1;
@@ -74,7 +74,7 @@ public final class w0 {
                 i4 = i7;
                 cVar5 = cVar4;
             }
-            com.google.common.util.concurrent.a.b(rVar, (m0.s) null, f, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1) null, false, (f0.j) null, (j71.c) N2, sVar, i4 & 14, 506);
+            com.google.common.util.concurrent.a.b(rVar, (m0.s) null, f, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1Shadow) null, false, (f0.j) null, (j71.c) N2, sVar, i4 & 14, 506);
             cVar3 = cVar5;
         } else {
             sVar.V();

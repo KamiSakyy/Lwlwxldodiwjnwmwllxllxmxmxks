@@ -5,7 +5,7 @@ import kc0.u40;
 import kc0.v40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class bs implements aa.a {
+public final class bs implements aaShadow.a {
     public static final bs a = new bs();
     public static final List b = sy.d0.o(new String[]{"number", "repository", "id", "__typename"});
 

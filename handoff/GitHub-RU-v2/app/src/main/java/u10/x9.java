@@ -1,10 +1,10 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x9 implements aa.v0 {
-    public final aa a;
+public final class x9 implements aaShadow.v0 {
+    public final aaShadow a;
 
-    public x9(aa aaVar) {
+    public x9(aaShadow aaVar) {
         this.a = aaVar;
     }
 
@@ -16,7 +16,7 @@ public final class x9 implements aa.v0 {
     }
 
     public final int hashCode() {
-        aa aaVar = this.a;
+        aaShadow aaVar = this.a;
         if (aaVar == null) {
             return 0;
         }

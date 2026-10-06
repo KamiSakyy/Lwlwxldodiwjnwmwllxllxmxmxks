@@ -4,7 +4,7 @@ import java.util.List;
 import jo.l60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qt implements aa.a {
+public final class qt implements aaShadow.a {
     public static final qt a = new qt();
     public static final List b = sy.d0.o("__typename", "id");
 

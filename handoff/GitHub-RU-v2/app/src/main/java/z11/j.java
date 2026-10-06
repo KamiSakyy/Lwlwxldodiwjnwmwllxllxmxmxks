@@ -3,7 +3,7 @@ package z11;
 import java.lang.ref.WeakReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class j extends k {
+public final class j extends kShadow {
     public static final WeakReference j = new WeakReference(null);
     public WeakReference h;
     public final /* synthetic */ int i;

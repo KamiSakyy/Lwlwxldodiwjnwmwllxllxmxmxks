@@ -5,7 +5,7 @@ import java.util.List;
 import kc0.h80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class nu implements aa.a {
+public final class nu implements aaShadow.a {
     public static final nu a = new nu();
     public static final List b = sy.d0.o(new String[]{"id", "name", "state", "__typename"});
 

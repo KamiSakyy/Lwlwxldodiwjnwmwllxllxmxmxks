@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class xb implements aa.a {
+public abstract class xb implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"following", "followers"});
 
     public static jo.oh c(ea.e eVar, aa.w wVar) {

@@ -3,7 +3,7 @@ package z11;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class l extends k {
+public final class l extends kShadow {
     public final byte[] h;
 
     public l(byte[] bArr) {

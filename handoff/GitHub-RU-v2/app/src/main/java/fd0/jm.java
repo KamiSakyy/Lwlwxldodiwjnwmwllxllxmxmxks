@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jm implements aa.a {
+public final class jm implements aaShadow.a {
     public static final jm a = new jm();
     public static final List b = sy.d0.o(new String[]{"id", "gitObject", "ref", "__typename"});
 

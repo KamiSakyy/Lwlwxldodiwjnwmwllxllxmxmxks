@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ip implements aa.a {
+public final class ip implements aaShadow.a {
     public static final ip a = new ip();
     public static final List b = sy.d0.o("planLimit", "pullRequest", "collaborators", "id", "__typename");
 

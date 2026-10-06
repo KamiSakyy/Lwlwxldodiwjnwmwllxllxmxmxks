@@ -5,7 +5,7 @@ import kc0.s10;
 import kc0.w10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xp implements aa.a {
+public final class xp implements aaShadow.a {
     public static final xp a = new xp();
     public static final List b = sy.d0.n("repositoryOwner");
 

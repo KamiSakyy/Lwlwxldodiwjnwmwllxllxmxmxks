@@ -5,7 +5,7 @@ import sy.y;
 import z01.v0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h {
+public final class hShadow {
     public final oa.g a;
 
     public h(oa.g gVar) {

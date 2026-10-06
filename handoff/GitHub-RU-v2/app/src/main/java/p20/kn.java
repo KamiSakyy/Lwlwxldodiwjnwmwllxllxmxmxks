@@ -5,7 +5,7 @@ import u10.ay;
 import u10.cy;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kn implements aa.a {
+public final class kn implements aaShadow.a {
     public static final kn a = new kn();
     public static final List b = sy.d0.o("issueCount", "pageInfo", "nodes");
 

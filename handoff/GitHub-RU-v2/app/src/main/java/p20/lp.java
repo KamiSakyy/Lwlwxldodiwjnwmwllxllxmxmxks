@@ -5,7 +5,7 @@ import u10.q00;
 import u10.y00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class lp implements aa.a {
+public final class lp implements aaShadow.a {
     public static final lp a = new lp();
     public static final List b = sy.d0.o("id", "issueOrPullRequest", "__typename");
 

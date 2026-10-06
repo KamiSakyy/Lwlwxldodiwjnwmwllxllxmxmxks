@@ -55,7 +55,7 @@ public final class x1 implements KSerializer {
     public final void serialize(Encoder encoder, Object obj) {
         JsonNull aVar;
         JsonNull oVar;
-        w1 w1Var = (w1) obj;
+        w1Shadow w1Var = (w1Shadow) obj;
         k71.k.g(w1Var, "value");
         m81.r rVar = encoder instanceof m81.r ? (m81.r) encoder : null;
         if (rVar == null) {

@@ -5,7 +5,7 @@ import jn0.dc0;
 import jn0.zb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jx implements aa.a {
+public final class jx implements aaShadow.a {
     public static final jx a = new jx();
     public static final List b = sy.d0.o(new String[]{"pullRequest", "clientMutationId"});
 

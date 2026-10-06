@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ub implements aa.a {
+public final class ub implements aaShadow.a {
     public static final ub a = new ub();
     public static final List b = sy.d0.n("markNotificationSubjectAsRead");
 

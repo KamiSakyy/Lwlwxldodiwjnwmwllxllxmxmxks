@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.v00;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ip implements aa.a {
+public final class ip implements aaShadow.a {
     public static final ip a = new ip();
     public static final List b = sy.d0.n("shortcuts");
 

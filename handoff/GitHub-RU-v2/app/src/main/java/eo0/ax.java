@@ -5,7 +5,7 @@ import java.util.List;
 import jn0.ub0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ax implements aa.a {
+public final class ax implements aaShadow.a {
     public static final ax a = new ax();
     public static final List b = sy.d0.o(new String[]{"id", "abbreviatedOid", "committedDate", "__typename"});
 

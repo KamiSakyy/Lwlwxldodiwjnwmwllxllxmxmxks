@@ -5,7 +5,7 @@ import kc0.sz;
 import kc0.tz;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qo implements aa.a {
+public final class qo implements aaShadow.a {
     public static final qo a = new qo();
     public static final List b = sy.d0.o(new String[]{"userCount", "pageInfo", "nodes"});
 

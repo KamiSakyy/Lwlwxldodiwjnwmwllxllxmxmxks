@@ -5,7 +5,7 @@ import jo.a90;
 import jo.r80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class lv implements aa.a {
+public abstract class lvShadow implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "comments"});
 
     public static a90 c(ea.e eVar, aa.w wVar) {

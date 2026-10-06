@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ui implements aa.m0 {
+public final class ui implements aaShadow.m0 {
     public final vi a;
 
     public ui(vi viVar) {

@@ -98,7 +98,7 @@ import kotlin.NoWhenBranchMatchedException;
 import m10.ks;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class f1 implements y71.j {
+public final class f1Shadow implements y71.j {
     public final /* synthetic */ int r;
     public final /* synthetic */ y71.j s;
 
@@ -702,7 +702,7 @@ public final class f1 implements y71.j {
         xc xcVar;
         g1 g1Var;
         int i2;
-        h1 h1Var;
+        h1Shadow h1Var;
         int i3;
         i1 i1Var;
         int i4;
@@ -730,7 +730,7 @@ public final class f1 implements y71.j {
         ac0 ac0Var2;
         t1 t1Var;
         int i13;
-        w1 w1Var;
+        w1Shadow w1Var;
         int i14;
         x1 x1Var;
         int i15;
@@ -861,8 +861,8 @@ public final class f1 implements y71.j {
                 }
                 return w61.a0.a;
             case 2:
-                if (cVar instanceof h1) {
-                    h1Var = (h1) cVar;
+                if (cVar instanceof h1Shadow) {
+                    h1Var = (h1Shadow) cVar;
                     int i33 = h1Var.v;
                     if ((i33 & Integer.MIN_VALUE) != 0) {
                         h1Var.v = i33 - Integer.MIN_VALUE;
@@ -886,7 +886,7 @@ public final class f1 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                h1Var = new h1(this, cVar);
+                h1Var = new h1Shadow(this, cVar);
                 Object obj52 = h1Var.u;
                 b71.a aVar42 = b71.a.r;
                 i3 = h1Var.v;
@@ -1218,8 +1218,8 @@ public final class f1 implements y71.j {
                 }
                 return w61.a0.a;
             case 9:
-                if (cVar instanceof w1) {
-                    w1Var = (w1) cVar;
+                if (cVar instanceof w1Shadow) {
+                    w1Var = (w1Shadow) cVar;
                     int i44 = w1Var.v;
                     if ((i44 & Integer.MIN_VALUE) != 0) {
                         w1Var.v = i44 - Integer.MIN_VALUE;
@@ -1256,7 +1256,7 @@ public final class f1 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                w1Var = new w1(this, cVar);
+                w1Var = new w1Shadow(this, cVar);
                 Object obj132 = w1Var.u;
                 b71.a aVar132 = b71.a.r;
                 i14 = w1Var.v;
@@ -1776,7 +1776,7 @@ public final class f1 implements y71.j {
                         if (i28 != 0) {
                             sy.y.j(obj30);
                             zx.x1 x1Var2 = ((zx.t1) obj).a;
-                            zx.w1 w1Var2 = null;
+                            zx.w1Shadow w1Var2 = null;
                             if (((x1Var2 == null || (u1Var2 = x1Var2.b) == null) ? null : u1Var2.b) != null) {
                                 ct.j0 j0Var = x1Var2.b.b.c;
                                 String str22 = j0Var.b;

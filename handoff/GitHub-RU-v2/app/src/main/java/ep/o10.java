@@ -5,7 +5,7 @@ import jo.ii0;
 import jo.ki0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class o10 implements aa.a {
+public final class o10 implements aaShadow.a {
     public static final o10 a = new o10();
     public static final List b = sy.d0.o("viewer", "id", "__typename");
 

@@ -6,10 +6,10 @@ public final class da {
     public final String b;
     public final int c;
     public final ca d;
-    public final aa e;
+    public final aaShadow e;
     public final String f;
 
-    public da(String str, String str2, int i, ca caVar, aa aaVar, String str3) {
+    public da(String str, String str2, int i, ca caVar, aaShadow aaVar, String str3) {
         this.a = str;
         this.b = str2;
         this.c = i;

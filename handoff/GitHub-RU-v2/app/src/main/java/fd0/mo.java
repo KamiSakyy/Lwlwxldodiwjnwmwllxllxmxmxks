@@ -5,7 +5,7 @@ import kc0.pz;
 import kc0.tz;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mo implements aa.a {
+public final class mo implements aaShadow.a {
     public static final mo a = new mo();
     public static final List b = sy.d0.n("search");
 

@@ -6,7 +6,7 @@ import u10.yx;
 import u10.zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hn implements aa.a {
+public final class hn implements aaShadow.a {
     public static final hn a = new hn();
     public static final List b = sy.d0.n("__typename");
 

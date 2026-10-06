@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.i10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class rp implements aa.a {
+public final class rp implements aaShadow.a {
     public static final rp a = new rp();
     public static final List b = sy.d0.o(new String[]{"__typename", "isArchived", "id"});
 

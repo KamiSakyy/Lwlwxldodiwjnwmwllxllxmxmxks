@@ -5,8 +5,8 @@ import jo.v50;
 import jo.w50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gt implements aa.a {
-    public static final gt a = new gt();
+public final class gtShadow implements aaShadow.a {
+    public static final gtShadow a = new gtShadow();
     public static final List b = sy.d0.o("repositoryCount", "pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {

@@ -5,7 +5,7 @@ import jn0.se0;
 import jn0.ue0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class dz implements aa.a {
+public final class dz implements aaShadow.a {
     public static final dz a = new dz();
     public static final List b = sy.d0.n("contributionCalendar");
 

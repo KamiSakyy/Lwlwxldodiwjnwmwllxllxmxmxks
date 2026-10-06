@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ai implements aa.m0 {
+public final class ai implements aaShadow.m0 {
     public final bi a;
 
     public ai(bi biVar) {

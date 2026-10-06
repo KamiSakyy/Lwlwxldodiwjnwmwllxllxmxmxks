@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class dh implements aa.a {
+public final class dh implements aaShadow.a {
     public static final dh a = new dh();
     public static final List b = sy.d0.o(new String[]{"totalCount", "nodes"});
 

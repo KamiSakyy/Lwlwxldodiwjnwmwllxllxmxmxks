@@ -9,7 +9,7 @@ public abstract class l00 {
         w0.Companion.getClass();
         v0 v0Var = w0.Companion;
         ba.Companion.getClass();
-        aa aaVar = ba.Companion;
+        aaShadow aaVar = ba.Companion;
         le.Companion.getClass();
         ke keVar = le.Companion;
         bm.Companion.getClass();

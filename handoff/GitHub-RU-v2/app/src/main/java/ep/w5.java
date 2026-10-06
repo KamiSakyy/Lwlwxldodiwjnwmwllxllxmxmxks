@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class w5 implements aa.a {
+public final class w5 implements aaShadow.a {
     public static final w5 a = new w5();
     public static final List b = sy.d0.o("shortcuts", "id", "__typename");
 

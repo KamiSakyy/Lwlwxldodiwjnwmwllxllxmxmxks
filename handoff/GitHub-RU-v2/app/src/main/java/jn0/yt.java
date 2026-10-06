@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class yt implements aa.m0 {
+public final class yt implements aaShadow.m0 {
     public final zt a;
 
     public yt(zt ztVar) {

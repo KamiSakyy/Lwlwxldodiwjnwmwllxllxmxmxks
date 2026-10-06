@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class pp implements aa.v0 {
+public final class pp implements aaShadow.v0 {
     public final up a;
 
     public pp(up upVar) {

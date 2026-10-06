@@ -43,7 +43,7 @@ import f1.w3;
 import f1.x3;
 import g3.q0;
 import h0.b2;
-import h0.h1;
+import h0.h1Shadow;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
@@ -312,7 +312,7 @@ public final /* synthetic */ class g implements j71.f {
             N = new fg.d(25, dVar, reRunJobBottomSheet);
             sVar.n0(N);
         }
-        com.google.common.util.concurrent.a.b((w1.r) null, (m0.s) null, (d2) null, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1) null, false, (f0.j) null, (j71.c) N, sVar, 0, 511);
+        com.google.common.util.concurrent.a.b((w1.r) null, (m0.s) null, (d2) null, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1Shadow) null, false, (f0.j) null, (j71.c) N, sVar, 0, 511);
         sVar.q(true);
         return w61.a0.a;
     }

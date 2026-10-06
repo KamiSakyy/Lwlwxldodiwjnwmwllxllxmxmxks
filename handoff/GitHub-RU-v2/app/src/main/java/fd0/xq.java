@@ -5,7 +5,7 @@ import kc0.s20;
 import kc0.y20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xq implements aa.a {
+public final class xq implements aaShadow.a {
     public static final xq a = new xq();
     public static final List b = sy.d0.n("__typename");
 

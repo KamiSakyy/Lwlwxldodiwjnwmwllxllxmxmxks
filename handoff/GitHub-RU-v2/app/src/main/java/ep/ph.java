@@ -3,14 +3,14 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ph implements aa.a {
+public final class ph implements aaShadow.a {
     public static final ph a = new ph();
     public static final List b = sy.d0.o("organization", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.eq eqVar = null;
+        jo.eqShadow eqVar = null;
         String str = null;
         String str2 = null;
         while (true) {
@@ -38,7 +38,7 @@ public final class ph implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.cq cqVar = (jo.cq) obj;
+        jo.cqShadow cqVar = (jo.cq) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(cqVar, "value");

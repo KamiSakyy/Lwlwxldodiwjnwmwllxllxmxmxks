@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class z0 implements aa.a {
+public final class z0 implements aaShadow.a {
     public static final z0 a = new z0();
     public static final List b = sy.d0.o("__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "pullRequest", "diffLines", "comments");
 
@@ -95,7 +95,7 @@ public final class z0 implements aa.a {
     /* JADX WARN: Code restructure failed: missing block: B:5:0x0023, code lost:
     
         r18.s0();
-        r13 = nv.b.c(r18, r19);
+        r13 = nvShadow.b.c(r18, r19);
         r9 = r3;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x002d, code lost:
@@ -195,7 +195,7 @@ public final class z0 implements aa.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(s0.a, true)))).b(fVar, wVar, u1Var.h);
         fVar.z0("comments");
         aa.c.c(p0.a, false).b(fVar, wVar, u1Var.i);
-        List list = nv.b.a;
-        nv.b.d(fVar, wVar, u1Var.j);
+        List list = nvShadow.b.a;
+        nvShadow.b.d(fVar, wVar, u1Var.j);
     }
 }

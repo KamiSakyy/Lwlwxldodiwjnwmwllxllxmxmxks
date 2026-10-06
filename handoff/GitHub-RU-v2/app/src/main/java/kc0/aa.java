@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class aa implements aa.v0 {
+public final class aaShadow implements aaShadow.v0 {
     final ba a;
 
     public aa(ba baVar) {
@@ -12,7 +12,7 @@ public final class aa implements aa.v0 {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof aa) && k71.k.b(this.a, ((aa) obj).a);
+        return (obj instanceof aaShadow) && k71.k.b(this.a, ((aaShadow) obj).a);
     }
 
     public final int hashCode() {

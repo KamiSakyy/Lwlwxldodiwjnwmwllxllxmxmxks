@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class jz implements aa.v0 {
+public final class jz implements aaShadow.v0 {
     public final nz a;
 
     public jz(nz nzVar) {

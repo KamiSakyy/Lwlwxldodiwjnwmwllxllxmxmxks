@@ -91,7 +91,7 @@ import t00.i0;
 import t00.j0;
 import t00.k0;
 import t00.m0;
-import t00.n0;
+import t00.n0Shadow;
 import t00.o0;
 import t00.p0;
 import t00.q0;
@@ -100,7 +100,7 @@ import t00.t0;
 import t00.u;
 import t00.u0;
 import t00.w;
-import t00.x;
+import t00.xShadow;
 import t00.z;
 import v8.l0;
 import w61.a0;
@@ -710,7 +710,7 @@ public final class f implements y71.j {
         jo.j jVar;
         w wVar;
         int i8;
-        x xVar;
+        xShadow xVar;
         int i9;
         f01.g gVar3;
         w7 w7Var;
@@ -746,7 +746,7 @@ public final class f implements y71.j {
         int i22;
         a7 k;
         eg0 eg0Var;
-        n0 n0Var;
+        n0Shadow n0Var;
         int i23;
         b0 b0Var;
         o0 o0Var;
@@ -811,7 +811,7 @@ public final class f implements y71.j {
                         if (i2 != 0) {
                             y.j(obj4);
                             List<ak.e> list = (List) obj;
-                            int s = x61.x.s(x61.n.F(list, 10));
+                            int s = x61.xShadow.s(x61.n.F(list, 10));
                             if (s < 16) {
                                 s = 16;
                             }
@@ -1092,7 +1092,7 @@ public final class f implements y71.j {
                 return a0.a;
             case 8:
                 if (cVar instanceof x) {
-                    xVar = (x) cVar;
+                    xVar = (xShadow) cVar;
                     int i38 = xVar.v;
                     if ((i38 & Integer.MIN_VALUE) != 0) {
                         xVar.v = i38 - Integer.MIN_VALUE;
@@ -1129,7 +1129,7 @@ public final class f implements y71.j {
                         return a0.a;
                     }
                 }
-                xVar = new x(this, cVar);
+                xVar = new xShadow(this, cVar);
                 Object obj122 = xVar.u;
                 b71.a aVar132 = b71.a.r;
                 i9 = xVar.v;
@@ -1536,7 +1536,7 @@ public final class f implements y71.j {
                 return a0.a;
             case 20:
                 if (cVar instanceof n0) {
-                    n0Var = (n0) cVar;
+                    n0Var = (n0Shadow) cVar;
                     int i52 = n0Var.v;
                     if ((i52 & Integer.MIN_VALUE) != 0) {
                         n0Var.v = i52 - Integer.MIN_VALUE;
@@ -1562,7 +1562,7 @@ public final class f implements y71.j {
                         return a0.a;
                     }
                 }
-                n0Var = new n0(this, cVar);
+                n0Var = new n0Shadow(this, cVar);
                 Object obj242 = n0Var.u;
                 b71.a aVar252 = b71.a.r;
                 i23 = n0Var.v;

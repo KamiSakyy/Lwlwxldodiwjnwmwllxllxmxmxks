@@ -5,7 +5,7 @@ import jn0.o70;
 import jn0.p70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class iu implements aa.a {
+public final class iu implements aaShadow.a {
     public static final iu a = new iu();
     public static final List b = sy.d0.n("undoUserDisinterest");
 

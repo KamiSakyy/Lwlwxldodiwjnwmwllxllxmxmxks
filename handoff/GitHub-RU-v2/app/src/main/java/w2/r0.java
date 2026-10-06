@@ -4,7 +4,7 @@ import android.os.Build;
 import android.view.ViewConfiguration;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class r0 implements q2 {
+public final class r0 implements q2Shadow {
 
     /* renamed from: a, reason: collision with root package name */
     public final ViewConfiguration f33134a;

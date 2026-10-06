@@ -5,7 +5,7 @@ import kc0.e10;
 import kc0.z00;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class pp implements aa.a {
+public final class pp implements aaShadow.a {
     public static final pp a = new pp();
     public static final List b = sy.d0.o(new String[]{"dashboard", "id", "__typename"});
 

@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rf implements aa.v0 {
+public final class rf implements aaShadow.v0 {
     public final sf a;
 
     public rf(sf sfVar) {

@@ -5,7 +5,7 @@ import jn0.b30;
 import jn0.x20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class cr implements aa.a {
+public final class cr implements aaShadow.a {
     public static final cr a = new cr();
     public static final List b = sy.d0.o(new String[]{"search", "id", "__typename"});
 

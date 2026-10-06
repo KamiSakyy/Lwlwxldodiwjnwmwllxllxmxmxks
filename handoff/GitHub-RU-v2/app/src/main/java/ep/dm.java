@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class dm implements aa.a {
+public final class dm implements aaShadow.a {
     public static final dm a = new dm();
     public static final List b = sy.d0.o("__typename", "id", "url", "parent");
 
@@ -13,7 +13,7 @@ public final class dm implements aa.a {
         String str = null;
         String str2 = null;
         String str3 = null;
-        jo.dw dwVar = null;
+        jo.dwShadow dwVar = null;
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {

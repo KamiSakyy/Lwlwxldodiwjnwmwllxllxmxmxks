@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class yh implements aa.a {
+public abstract class yh implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "oid", "abbreviatedOid", "signature", "message", "messageBodyHTML", "authoredDate"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0025, code lost:

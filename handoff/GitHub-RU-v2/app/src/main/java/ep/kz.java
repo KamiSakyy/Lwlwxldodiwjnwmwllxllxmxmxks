@@ -6,7 +6,7 @@ import jo.xe0;
 import jo.ye0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kz implements aa.a {
+public final class kz implements aaShadow.a {
     public static final kz a = new kz();
     public static final List b = sy.d0.o("actor", "pullRequest");
 

@@ -7,7 +7,7 @@ import jn0.h80;
 import jn0.k80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wu implements aa.a {
+public final class wu implements aaShadow.a {
     public static final wu a = new wu();
     public static final List b = sy.d0.o(new String[]{"id", "answerChosenAt", "answer", "answerChosenBy", "__typename"});
 

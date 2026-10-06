@@ -5,7 +5,7 @@ import jn0.vf0;
 import jn0.wf0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class vz implements aa.a {
+public final class vz implements aaShadow.a {
     public static final vz a = new vz();
     public static final List b = sy.d0.o(new String[]{"notificationThreads", "id", "__typename"});
 

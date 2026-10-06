@@ -5,8 +5,8 @@ import jo.ei0;
 import jo.fi0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class m10 implements aa.a {
-    public static final m10 a = new m10();
+public final class m10Shadow implements aaShadow.a {
+    public static final m10Shadow a = new m10Shadow();
     public static final List b = sy.d0.o("user", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -18,7 +18,7 @@ public final class m10 implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                fi0Var = (fi0) aa.c.b(aa.c.c(n10.a, true)).a(eVar, wVar);
+                fi0Var = (fi0) aa.c.b(aa.c.c(n10Shadow.a, true)).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -45,7 +45,7 @@ public final class m10 implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(ei0Var, "value");
         fVar.z0("user");
-        aa.c.b(aa.c.c(n10.a, true)).b(fVar, wVar, ei0Var.a);
+        aa.c.b(aa.c.c(n10Shadow.a, true)).b(fVar, wVar, ei0Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, ei0Var.b);

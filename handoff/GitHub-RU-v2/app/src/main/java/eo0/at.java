@@ -5,7 +5,7 @@ import jn0.t50;
 import jn0.w50;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class at implements aa.a {
+public final class at implements aaShadow.a {
     public static final at a = new at();
     public static final List b = sy.d0.n("submitPullRequestReview");
 

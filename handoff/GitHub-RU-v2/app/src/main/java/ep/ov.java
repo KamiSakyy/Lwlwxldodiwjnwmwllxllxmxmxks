@@ -7,7 +7,7 @@ import jo.d90;
 import jo.x80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ov implements aa.a {
+public final class ov implements aaShadow.a {
     public static final ov a = new ov();
     public static final List b = sy.d0.n("__typename");
 

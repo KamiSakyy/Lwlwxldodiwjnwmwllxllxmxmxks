@@ -5,7 +5,7 @@ import u10.g50;
 import u10.h50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fs implements aa.a {
+public final class fs implements aaShadow.a {
     public static final fs a = new fs();
     public static final List b = sy.d0.n("updateUserDashboardPins");
 

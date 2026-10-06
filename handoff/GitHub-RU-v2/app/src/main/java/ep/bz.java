@@ -12,7 +12,7 @@ import jo.pe0;
 import jo.qe0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class bz implements aa.a {
+public final class bz implements aaShadow.a {
     public static final bz a = new bz();
     public static final List b = sy.d0.o("__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "mergeQueueEntry", "mergeQueue", "viewerCanUpdate", "timelineItems");
 

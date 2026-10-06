@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class g6 implements aa.a {
+public final class g6 implements aaShadow.a {
     public static final g6 a = new g6();
     public static final List b = sy.d0.n("deleteDiscussionComment");
 

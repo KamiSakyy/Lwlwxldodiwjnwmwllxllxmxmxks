@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.v20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uq implements aa.a {
+public final class uq implements aaShadow.a {
     public static final uq a = new uq();
     public static final List b = sy.d0.o(new String[]{"id", "__typename"});
 

@@ -12,7 +12,7 @@ public final class j1 extends c71.j implements j71.f {
     public /* synthetic */ Object z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public j1(a71.c cVar, t00.r3 r3Var, int i) {
+    public j1(a71.c cVar, t00.r3Shadow r3Var, int i) {
         super(3, cVar);
         this.v = 12;
         this.A = r3Var;
@@ -447,7 +447,7 @@ public final class j1 extends c71.j implements j71.f {
                 }
                 throw th12;
             default:
-                t00.r3 r3Var = (t00.r3) this.A;
+                t00.r3Shadow r3Var = (t00.r3) this.A;
                 b71.a aVar13 = b71.a.r;
                 int i27 = this.x;
                 if (i27 == 0) {

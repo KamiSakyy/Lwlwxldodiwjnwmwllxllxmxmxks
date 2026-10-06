@@ -5,7 +5,7 @@ import jo.d90;
 import jo.z80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class kv implements aa.a {
+public abstract class kv implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "timelineItem"});
 
     public static z80 c(ea.e eVar, aa.w wVar) {

@@ -5,7 +5,7 @@ import jn0.c80;
 import jn0.d80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qu implements aa.a {
+public final class qu implements aaShadow.a {
     public static final qu a = new qu();
     public static final List b = sy.d0.n("unlockLockable");
 

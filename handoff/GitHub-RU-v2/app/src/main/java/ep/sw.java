@@ -4,8 +4,8 @@ import java.util.List;
 import jo.za0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class sw implements aa.a {
-    public static final sw a = new sw();
+public final class swShadow implements aaShadow.a {
+    public static final swShadow a = new swShadow();
     public static final List b = sy.d0.o("id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

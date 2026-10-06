@@ -27,7 +27,7 @@ import k81.d;
 import k81.f0;
 import k81.q1;
 import k81.z;
-import xn.e;
+import xn.eShadow;
 import xn.g1;
 import xn.g3;
 import xn.j3;
@@ -78,7 +78,7 @@ public final /* synthetic */ class a implements j71.a {
             case 12:
                 return new z("com.github.rudroid.feed.navigation.ExploreTrendingReposRoute", ExploreTrendingReposRoute.INSTANCE, new Annotation[0]);
             case 13:
-                return c1.e("com.github.service.copilot.AgentTaskStatus", e.values(), new String[]{"completed", "in_progress", "queued", "failed", "waiting_for_user", "timed_out", "cancelled", null}, new Annotation[][]{null, null, null, null, null, null, null, null});
+                return c1.e("com.github.service.copilot.AgentTaskStatus", eShadow.values(), new String[]{"completed", "in_progress", "queued", "failed", "waiting_for_user", "timed_out", "cancelled", null}, new Annotation[][]{null, null, null, null, null, null, null, null});
             case 14:
                 return c1.e("com.github.service.copilot.ElicitationAction", g1.values(), new String[]{"accept", "decline", "cancel"}, new Annotation[][]{null, null, null});
             case 15:

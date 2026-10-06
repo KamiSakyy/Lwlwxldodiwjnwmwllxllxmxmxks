@@ -6,7 +6,7 @@ import u10.g60;
 import u10.h60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zs implements aa.a {
+public final class zs implements aaShadow.a {
     public static final zs a = new zs();
     public static final List b = sy.d0.o("column", "project", "id", "__typename");
 

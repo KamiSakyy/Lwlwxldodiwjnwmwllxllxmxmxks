@@ -7,7 +7,7 @@ import kc0.i80;
 import kc0.j80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class pu implements aa.a {
+public final class pu implements aaShadow.a {
     public static final pu a = new pu();
     public static final List b = sy.d0.o(new String[]{"__typename", "id", "url", "state", "milestone", "projectCards", "viewerCanDeleteHeadRef", "viewerCanReopen"});
 

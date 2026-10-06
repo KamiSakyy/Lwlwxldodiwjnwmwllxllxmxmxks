@@ -4,7 +4,7 @@ import java.util.List;
 import u10.cx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class rm implements aa.a {
+public abstract class rm implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static cx c(ea.e eVar, aa.w wVar) {

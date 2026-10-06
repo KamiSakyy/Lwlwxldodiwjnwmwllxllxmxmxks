@@ -5,7 +5,7 @@ import kc0.l20;
 import kc0.u20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class tq implements aa.a {
+public abstract class tq implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "comments"});
 
     public static u20 c(ea.e eVar, aa.w wVar) {

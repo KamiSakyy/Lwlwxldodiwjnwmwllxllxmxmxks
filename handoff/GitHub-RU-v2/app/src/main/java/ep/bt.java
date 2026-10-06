@@ -5,7 +5,7 @@ import jo.o50;
 import jo.p50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class bt implements aa.a {
+public final class bt implements aaShadow.a {
     public static final bt a = new bt();
     public static final List b = sy.d0.o("issueCount", "pageInfo", "nodes");
 

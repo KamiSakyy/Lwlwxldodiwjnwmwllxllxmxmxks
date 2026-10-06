@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class gr implements aa.m0 {
+public final class gr implements aaShadow.m0 {
     public final hr a;
 
     public gr(hr hrVar) {

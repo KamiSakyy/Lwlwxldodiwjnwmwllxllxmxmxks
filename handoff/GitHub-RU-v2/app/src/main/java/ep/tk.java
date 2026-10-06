@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tk implements aa.a {
+public final class tk implements aaShadow.a {
     public static final tk a = new tk();
     public static final List b = sy.d0.o("id", "name", "size", "url", "contentType", "__typename");
 
@@ -80,7 +80,7 @@ public final class tk implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.fu fuVar = (jo.fu) obj;
+        jo.fuShadow fuVar = (jo.fu) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(fuVar, "value");

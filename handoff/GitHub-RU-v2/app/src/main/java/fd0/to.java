@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.yz;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class to implements aa.a {
+public abstract class to implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static yz c(ea.e eVar, aa.w wVar) {

@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class vn implements aa.v0 {
+public final class vn implements aaShadow.v0 {
     public final yn a;
 
     public vn(yn ynVar) {

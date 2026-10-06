@@ -6,7 +6,7 @@ import d2.t;
 import f1.gb;
 import f1.jb;
 import f1.l2;
-import f1.o2;
+import f1.o2Shadow;
 import f1.y1;
 import f1.z1;
 
@@ -26,9 +26,9 @@ public final class c {
         jb jbVar = jb.a;
         long j13 = ih.d.b(sVar).L;
         gb c = jb.c(0L, ih.d.b(sVar).s, 0L, 0L, 0L, j13, 0L, 0L, ih.d.b(sVar).F, 0L, (f2) null, 0L, ih.d.b(sVar).p, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, ih.d.b(sVar).t, ih.d.b(sVar).s, 0L, 0L, 0L, ih.d.b(sVar).v, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, sVar, 1853877981, 4095);
-        o2 o2Var = o2.a;
+        o2Shadow o2Var = o2Shadow.a;
         long j14 = t.k;
-        l2 c2 = o2.c((y1) sVar.j(z1.a), sVar, 48);
+        l2 c2 = o2Shadow.c((y1) sVar.j(z1.a), sVar, 48);
         long j15 = j12 != 16 ? j12 : c2.a;
         long j16 = j2 != 16 ? j2 : c2.b;
         long j17 = j3 != 16 ? j3 : c2.c;

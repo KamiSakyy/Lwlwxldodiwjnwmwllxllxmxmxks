@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class aj implements aa.a {
+public abstract class aj implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "path", "subjectType", "thread", "url", "state"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x004c, code lost:
@@ -77,7 +77,7 @@ public abstract class aj implements aa.a {
         r14.s0();
         r11 = mx.d.c(r14, r15);
         r14.s0();
-        r12 = pu.b.c(r14, r15);
+        r12 = puShadow.b.c(r14, r15);
         r14.s0();
         r1 = ju.d.a;
         r13 = ju.d.c(r14, r15);
@@ -203,8 +203,8 @@ public abstract class aj implements aa.a {
         pv.f.d(fVar, wVar, zrVar.i);
         List list2 = mx.d.a;
         mx.d.d(fVar, wVar, zrVar.j);
-        List list3 = pu.b.a;
-        pu.b.d(fVar, wVar, zrVar.k);
+        List list3 = puShadow.b.a;
+        puShadow.b.d(fVar, wVar, zrVar.k);
         ju.d dVar = ju.d.a;
         ju.d.d(fVar, wVar, zrVar.l);
     }

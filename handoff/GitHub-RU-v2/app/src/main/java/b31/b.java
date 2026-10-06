@@ -94,7 +94,7 @@ import pz0.g9;
 import pz0.gu;
 import pz0.je;
 import pz0.y00;
-import rm0.z8;
+import rm0.z8Shadow;
 import t71.w;
 import uk0.h;
 import ur0.a0;
@@ -898,11 +898,11 @@ public final class b {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final Object b(com.github.service.wrapper.b bVar, j71.c cVar, c71.c cVar2) {
-        z8 z8Var;
+        z8Shadow z8Var;
         int i;
         uk0.f fVar;
         if (cVar2 instanceof z8) {
-            z8Var = (z8) cVar2;
+            z8Var = (z8Shadow) cVar2;
             int i2 = z8Var.x;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 z8Var.x = i2 - Integer.MIN_VALUE;
@@ -940,7 +940,7 @@ public final class b {
                 return w61.a0.a;
             }
         }
-        z8Var = new z8(cVar2);
+        z8Var = new z8Shadow(cVar2);
         Object obj2 = z8Var.w;
         b71.a aVar2 = b71.a.r;
         i = z8Var.x;

@@ -5,7 +5,7 @@ import u10.w20;
 import u10.y20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tq implements aa.a {
+public final class tq implements aaShadow.a {
     public static final tq a = new tq();
     public static final List b = sy.d0.o("clientMutationId", "pullRequest");
 

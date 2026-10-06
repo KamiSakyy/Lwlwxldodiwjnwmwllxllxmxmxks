@@ -832,7 +832,7 @@ public final class w implements y71.j {
         ia0 ia0Var;
         g0 g0Var;
         int i8;
-        yz0.a7 s;
+        yz0.a7Shadow s;
         qd0 qd0Var;
         h0 h0Var;
         int i9;
@@ -1846,7 +1846,7 @@ public final class w implements y71.j {
                                 Object obj27 = S6.get(i60);
                                 i60++;
                                 od odVar = (od) obj27;
-                                uu0.k3 k3Var = odVar.d;
+                                uu0.k3Shadow k3Var = odVar.d;
                                 RepositoryRecommendationReason repositoryRecommendationReason = RepositoryRecommendationReason.UNKNOWN__;
                                 int i62 = odVar.b;
                                 String str30 = k3Var.c;

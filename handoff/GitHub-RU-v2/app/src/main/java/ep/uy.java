@@ -5,7 +5,7 @@ import jo.ge0;
 import jo.re0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class uy implements aa.a {
+public final class uy implements aaShadow.a {
     public static final uy a = new uy();
     public static final List b = sy.d0.n("updatePullRequestBranch");
 

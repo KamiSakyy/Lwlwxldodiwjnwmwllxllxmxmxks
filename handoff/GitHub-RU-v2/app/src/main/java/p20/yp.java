@@ -5,7 +5,7 @@ import u10.t10;
 import u10.u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yp implements aa.a {
+public final class yp implements aaShadow.a {
     public static final yp a = new yp();
     public static final List b = sy.d0.n("unblockUser");
 

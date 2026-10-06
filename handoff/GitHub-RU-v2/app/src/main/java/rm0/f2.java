@@ -95,7 +95,7 @@ public final class f2 implements y71.j {
         int i10;
         t00.c5 c5Var;
         int i12;
-        rz.x xVar;
+        rz.xShadow xVar;
         rz.v vVar;
         rz.v vVar2;
         t00.i5 i5Var;
@@ -114,13 +114,13 @@ public final class f2 implements y71.j {
         int i18;
         wy0.u2 u2Var;
         int i19;
-        wy0.w2 w2Var;
+        wy0.w2Shadow w2Var;
         int i20;
         wy0.x2 x2Var;
         int i22;
         wy0.l4 l4Var;
         int i23;
-        ux0.x xVar2;
+        ux0.xShadow xVar2;
         ux0.v vVar3;
         ux0.v vVar4;
         wy0.q4 q4Var;
@@ -475,7 +475,7 @@ public final class f2 implements y71.j {
                             sy.y.j(obj12);
                             rz.u uVar = (rz.u) obj;
                             k71.k.g(uVar, "<this>");
-                            rz.x xVar3 = uVar.a;
+                            rz.xShadow xVar3 = uVar.a;
                             List list = null;
                             if (xVar3 != null) {
                                 rz.v vVar5 = xVar3.c;
@@ -847,7 +847,7 @@ public final class f2 implements y71.j {
                             sy.y.j(obj23);
                             ux0.u uVar3 = (ux0.u) obj;
                             k71.k.g(uVar3, "<this>");
-                            ux0.x xVar4 = uVar3.a;
+                            ux0.xShadow xVar4 = uVar3.a;
                             List list5 = null;
                             if (xVar4 != null) {
                                 ux0.v vVar6 = xVar4.c;

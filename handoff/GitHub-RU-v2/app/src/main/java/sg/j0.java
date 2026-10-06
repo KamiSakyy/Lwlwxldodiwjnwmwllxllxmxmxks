@@ -49,7 +49,7 @@ public final class j0 {
             i3 = i;
         }
         if ((i & 48) == 0) {
-            i3 |= sVar.g(z) ? 32 : 16;
+            i3 |= sVar.g(zShadow) ? 32 : 16;
         }
         int i8 = i2 & 4;
         if (i8 != 0) {

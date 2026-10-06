@@ -5,7 +5,7 @@ import jo.mb0;
 import jo.nb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class bx implements aa.a {
+public final class bx implements aaShadow.a {
     public static final bx a = new bx();
     public static final List b = sy.d0.n("unminimizedComment");
 

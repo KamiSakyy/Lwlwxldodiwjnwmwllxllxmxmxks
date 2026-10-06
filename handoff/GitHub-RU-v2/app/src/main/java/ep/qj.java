@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qj implements aa.a {
+public final class qj implements aaShadow.a {
     public static final qj a = new qj();
     public static final List b = sy.d0.o("issueCount", "nodes");
 

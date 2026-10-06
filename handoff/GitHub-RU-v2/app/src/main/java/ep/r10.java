@@ -5,7 +5,7 @@ import jo.oi0;
 import jo.pi0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class r10 implements aa.a {
+public final class r10 implements aaShadow.a {
     public static final r10 a = new r10();
     public static final List b = sy.d0.o("repository", "id", "__typename");
 

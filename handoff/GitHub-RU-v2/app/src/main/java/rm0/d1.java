@@ -6,7 +6,7 @@ import m10.fd;
 import m10.zd;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class d1 implements y71.j {
+public final class d1Shadow implements y71.j {
     public final /* synthetic */ int r;
     public final /* synthetic */ y71.j s;
     public final /* synthetic */ DiscussionCloseReason t;

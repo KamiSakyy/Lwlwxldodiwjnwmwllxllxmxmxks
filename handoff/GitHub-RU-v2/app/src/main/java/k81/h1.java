@@ -8,7 +8,7 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class h1 extends s {
+public abstract class h1Shadow extends s {
     public final g1 b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

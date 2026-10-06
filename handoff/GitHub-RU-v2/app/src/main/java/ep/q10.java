@@ -5,7 +5,7 @@ import jo.ji0;
 import jo.ki0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class q10 implements aa.a {
+public final class q10 implements aaShadow.a {
     public static final q10 a = new q10();
     public static final List b = sy.d0.o("notificationThreads", "id", "__typename");
 

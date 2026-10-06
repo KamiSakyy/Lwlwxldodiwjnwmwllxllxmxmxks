@@ -6,7 +6,7 @@ import jo.we0;
 import jo.xe0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class jz implements aa.a {
+public final class jz implements aaShadow.a {
     public static final jz a = new jz();
     public static final List b = sy.d0.o("__typename", "id", "url", "state", "milestone", "viewerCanDeleteHeadRef", "viewerCanReopen");
 

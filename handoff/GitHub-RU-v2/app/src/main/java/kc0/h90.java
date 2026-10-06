@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class h90 implements aa.n0 {
+public final class h90 implements aaShadow.n0 {
     public static final d90 Companion = new d90();
     public final ArrayList r;
     public final LocalTime s;

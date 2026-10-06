@@ -5,7 +5,7 @@ import java.util.List;
 import m10.da0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class z2 implements aa.a {
+public abstract class z2 implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "context", "state", "avatarUrl", "description", "targetUrl", "isRequired"});
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x002d, code lost:

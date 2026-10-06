@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rq implements aa.m0 {
+public final class rq implements aaShadow.m0 {
     public final sq a;
 
     public rq(sq sqVar) {

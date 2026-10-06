@@ -5,7 +5,7 @@ import kc0.s80;
 import kc0.u80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class yu implements aa.a {
+public final class yu implements aaShadow.a {
     public static final yu a = new yu();
     public static final List b = sy.d0.o(new String[]{"id", "owner", "__typename"});
 

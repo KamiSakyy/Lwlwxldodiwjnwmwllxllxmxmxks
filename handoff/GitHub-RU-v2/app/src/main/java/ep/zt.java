@@ -4,8 +4,8 @@ import java.util.List;
 import jo.y60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zt implements aa.a {
-    public static final zt a = new zt();
+public final class ztShadow implements aaShadow.a {
+    public static final ztShadow a = new ztShadow();
     public static final List b = sy.d0.o("hasNextPage", "endCursor");
 
     public final Object a(ea.e eVar, aa.w wVar) {

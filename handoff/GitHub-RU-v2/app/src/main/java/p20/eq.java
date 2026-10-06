@@ -4,7 +4,7 @@ import java.util.List;
 import u10.d20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class eq implements aa.a {
+public final class eq implements aaShadow.a {
     public static final eq a = new eq();
     public static final List b = sy.d0.n("clientMutationId");
 

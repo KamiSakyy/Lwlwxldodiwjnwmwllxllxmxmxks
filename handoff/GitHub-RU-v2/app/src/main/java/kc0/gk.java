@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class gk implements aa.v0 {
+public final class gk implements aaShadow.v0 {
     public final jk a;
 
     public gk(jk jkVar) {

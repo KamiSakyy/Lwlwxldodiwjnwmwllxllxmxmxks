@@ -5,7 +5,7 @@ import java.util.List;
 import pz0.l40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class t8 implements aa.a {
+public final class t8 implements aaShadow.a {
     public static final t8 a = new t8();
     public static final List b = sy.d0.o(new String[]{"link", "linkType"});
 

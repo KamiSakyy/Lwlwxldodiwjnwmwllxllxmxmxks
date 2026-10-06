@@ -95,7 +95,7 @@ public final class i8 implements y71.j {
         int i9;
         zx zxVar;
         zx zxVar2;
-        wy0.m7 m7Var;
+        wy0.m7Shadow m7Var;
         int i10;
         wy0.r7 r7Var;
         int i12;
@@ -862,7 +862,7 @@ public final class i8 implements y71.j {
                             for (Object obj37 : iterable8) {
                                 m30 m30Var = (m30) obj37;
                                 if (m30Var != null && (n30Var2 = m30Var.b) != null) {
-                                    uu0.k3 k3Var = n30Var2.c;
+                                    uu0.k3Shadow k3Var = n30Var2.c;
                                     boolean z4 = k3Var.g;
                                     int ordinal12 = this.t.ordinal();
                                     if (ordinal12 != 0) {

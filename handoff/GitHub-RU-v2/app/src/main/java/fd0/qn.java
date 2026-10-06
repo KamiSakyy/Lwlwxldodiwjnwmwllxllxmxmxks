@@ -5,7 +5,7 @@ import kc0.my;
 import kc0.oy;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qn implements aa.a {
+public final class qn implements aaShadow.a {
     public static final qn a = new qn();
     public static final List b = sy.d0.n("repository");
 

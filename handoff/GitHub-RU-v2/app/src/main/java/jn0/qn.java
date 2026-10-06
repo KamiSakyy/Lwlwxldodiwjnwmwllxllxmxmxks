@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qn {
-    public final nn a;
+    public final nnShadow a;
     public final String b;
     public final String c;
 
-    public qn(nn nnVar, String str, String str2) {
+    public qn(nnShadow nnVar, String str, String str2) {
         this.a = nnVar;
         this.b = str;
         this.c = str2;
@@ -24,7 +24,7 @@ public final class qn {
     }
 
     public final int hashCode() {
-        nn nnVar = this.a;
+        nnShadow nnVar = this.a;
         return this.c.hashCode() + com.github.rudroid.copilot.h1.i((nnVar == null ? 0 : nnVar.hashCode()) * 31, this.b, 31);
     }
 

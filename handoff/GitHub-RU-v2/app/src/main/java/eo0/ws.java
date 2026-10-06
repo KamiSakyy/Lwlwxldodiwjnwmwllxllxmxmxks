@@ -6,7 +6,7 @@ import jn0.j50;
 import jn0.l50;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ws implements aa.a {
+public final class ws implements aaShadow.a {
     public static final ws a = new ws();
     public static final List b = sy.d0.n("__typename");
 

@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class go implements aa.m0 {
+public final class go implements aaShadow.m0 {
     public final io a;
 
     public go(io ioVar) {

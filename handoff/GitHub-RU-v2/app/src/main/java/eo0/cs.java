@@ -5,7 +5,7 @@ import jn0.j40;
 import jn0.k40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class cs implements aa.a {
+public final class cs implements aaShadow.a {
     public static final cs a = new cs();
     public static final List b = sy.d0.n("setDashboardSearchShortcuts");
 

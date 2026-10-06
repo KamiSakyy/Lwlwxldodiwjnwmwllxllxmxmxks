@@ -5,7 +5,7 @@ import jn0.jb0;
 import jn0.kb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class tw implements aa.a {
+public final class tw implements aaShadow.a {
     public static final tw a = new tw();
     public static final List b = sy.d0.n("user");
 

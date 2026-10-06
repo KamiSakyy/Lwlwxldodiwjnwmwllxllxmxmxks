@@ -9,7 +9,7 @@ import jn0.st;
 import pz0.cv;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class z5 extends c71.j implements j71.e {
+public final class z5Shadow extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public /* synthetic */ Object w;
     public final /* synthetic */ rm0.y6 x;
@@ -29,11 +29,11 @@ public final class z5 extends c71.j implements j71.e {
     public final a71.c r(a71.c cVar, Object obj) {
         switch (this.v) {
             case 0:
-                z5 z5Var = new z5(this.x, this.y, this.z, cVar, 0);
+                z5Shadow z5Var = new z5Shadow(this.x, this.y, this.z, cVar, 0);
                 z5Var.w = obj;
                 return z5Var;
             default:
-                z5 z5Var2 = new z5(this.x, this.y, this.z, cVar, 1);
+                z5Shadow z5Var2 = new z5Shadow(this.x, this.y, this.z, cVar, 1);
                 z5Var2.w = obj;
                 return z5Var2;
         }
@@ -45,7 +45,7 @@ public final class z5 extends c71.j implements j71.e {
         a71.c cVar2 = (a71.c) obj2;
         switch (this.v) {
         }
-        return ((z5) r(cVar2, cVar)).v(w61.a0.a);
+        return ((z5Shadow) r(cVar2, cVar)).v(w61.a0.a);
     }
 
     @Override // c71.a

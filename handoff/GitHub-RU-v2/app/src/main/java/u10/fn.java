@@ -13,13 +13,13 @@ public final class fn {
     public final in g;
     public final wm h;
     public final jn i;
-    public final nn j;
+    public final nnShadow j;
     public final c40.c k;
     public final i80.c l;
     public final aa0.c m;
     public final g70.a n;
 
-    public fn(String str, String str2, hc0.vl vlVar, String str3, boolean z, ZonedDateTime zonedDateTime, in inVar, wm wmVar, jn jnVar, nn nnVar, c40.c cVar, i80.c cVar2, aa0.c cVar3, g70.a aVar) {
+    public fn(String str, String str2, hc0.vl vlVar, String str3, boolean z, ZonedDateTime zonedDateTime, in inVar, wm wmVar, jn jnVar, nnShadow nnVar, c40.c cVar, i80.c cVar2, aa0.c cVar3, g70.a aVar) {
         this.a = str;
         this.b = str2;
         this.c = vlVar;
@@ -53,7 +53,7 @@ public final class fn {
         int hashCode = (this.g.hashCode() + ((e + (zonedDateTime == null ? 0 : zonedDateTime.hashCode())) * 31)) * 31;
         wm wmVar = this.h;
         int hashCode2 = (this.i.hashCode() + ((hashCode + (wmVar == null ? 0 : wmVar.hashCode())) * 31)) * 31;
-        nn nnVar = this.j;
+        nnShadow nnVar = this.j;
         return this.n.hashCode() + ((this.m.hashCode() + ((this.l.hashCode() + ((this.k.hashCode() + ((hashCode2 + (nnVar != null ? nnVar.hashCode() : 0)) * 31)) * 31)) * 31)) * 31);
     }
 

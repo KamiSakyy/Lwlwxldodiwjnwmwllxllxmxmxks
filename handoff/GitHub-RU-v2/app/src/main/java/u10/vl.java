@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vl implements aa.v0 {
+public final class vl implements aaShadow.v0 {
     public final zl a;
 
     public vl(zl zlVar) {

@@ -5,7 +5,7 @@ import u10.e70;
 import u10.g70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class st implements aa.a {
+public final class st implements aaShadow.a {
     public static final st a = new st();
     public static final List b = sy.d0.n("updateMobilePushNotificationSchedules");
 

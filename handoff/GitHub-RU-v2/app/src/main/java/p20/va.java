@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class va implements aa.a {
+public final class va implements aaShadow.a {
     public static final va a = new va();
     public static final List b = sy.d0.o("actor", "lockedRecord");
 

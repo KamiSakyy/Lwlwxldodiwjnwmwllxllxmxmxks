@@ -55,19 +55,19 @@ public final class j3 implements y71.i {
                 }
                 break;
             case 7:
-                Object b8 = this.s.b(new a5(jVar, 12), cVar);
+                Object b8 = this.s.b(new a5Shadow(jVar, 12), cVar);
                 if (b8 != b71.a.r) {
                     break;
                 }
                 break;
             case 8:
-                Object b9 = this.s.b(new a5(jVar, 18), cVar);
+                Object b9 = this.s.b(new a5Shadow(jVar, 18), cVar);
                 if (b9 != b71.a.r) {
                     break;
                 }
                 break;
             case 9:
-                Object b10 = this.s.b(new a5(jVar, 20), cVar);
+                Object b10 = this.s.b(new a5Shadow(jVar, 20), cVar);
                 if (b10 != b71.a.r) {
                     break;
                 }

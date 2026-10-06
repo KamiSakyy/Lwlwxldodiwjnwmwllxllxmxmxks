@@ -5,7 +5,7 @@ import kc0.v30;
 import kc0.w30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class kr implements aa.a {
+public final class kr implements aaShadow.a {
     public static final kr a = new kr();
     public static final List b = sy.d0.n("unfollowUser");
 

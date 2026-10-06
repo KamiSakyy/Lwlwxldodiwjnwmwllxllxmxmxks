@@ -164,7 +164,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                 }
                 a0Var = (uf0.a0) obj;
                 if (a0Var != null) {
-                    uf0.h0 h0Var = a0Var.k.q;
+                    uf0.h0Shadow h0Var = a0Var.k.q;
                     if (k71.k.b((h0Var == null || (k0Var = h0Var.b) == null) ? null : k0Var.a, str2)) {
                         a0Var = uf0.a0.a(a0Var, null, yh0.a.a(a0Var.m, !z, z), 4095);
                     }
@@ -244,7 +244,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                 }
                 a0Var = (is.a0) obj;
                 if (a0Var != null) {
-                    is.h0 h0Var = a0Var.k.q;
+                    is.h0Shadow h0Var = a0Var.k.q;
                     if (k71.k.b((h0Var == null || (k0Var = h0Var.b) == null) ? null : k0Var.a, str2)) {
                         a0Var = is.a0.a(a0Var, (is.p0) null, pu.a.a(a0Var.m, !z, z), 4095);
                     }
@@ -290,7 +290,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
     public static final Object j(o oVar, String str, String str2, boolean z, c71.c cVar) {
         vb0.g gVar;
         int i;
-        aa.h0 h0Var;
+        aa.h0Shadow h0Var;
         e50.g0 g0Var;
         com.github.service.wrapper.bShadow bVar = oVar.t;
         if (cVar instanceof vb0.g) {
@@ -404,7 +404,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                 }
                 a0Var = (ar0.a0) obj;
                 if (a0Var != null) {
-                    ar0.h0 h0Var = a0Var.k.q;
+                    ar0.h0Shadow h0Var = a0Var.k.q;
                     if (k71.k.b((h0Var == null || (k0Var = h0Var.b) == null) ? null : k0Var.a, str2)) {
                         a0Var = ar0.a0.a(a0Var, null, gt0.a.a(a0Var.m, !z, z), 4095);
                     }
@@ -629,7 +629,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                 sVar = (w80.s) obj;
                 if (k71.k.b((sVar != null || (qVar = sVar.c) == null || (rVar = qVar.c) == null) ? null : rVar.a, str2)) {
                     aa.i0 tVar2 = new w80.t(0);
-                    aa.h0 sVar2 = new w80.s(sVar.a, sVar.b, sVar.c, g70.a.a(sVar.d, !z, z));
+                    aa.h0Shadow sVar2 = new w80.s(sVar.a, sVar.b, sVar.c, g70.a.a(sVar.d, !z, z));
                     iVar.u = null;
                     iVar.v = null;
                     iVar.w = z;
@@ -819,7 +819,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
         int i;
         dw.i0 i0Var;
         dw.g0 g0Var;
-        dw.h0 h0Var;
+        dw.h0Shadow h0Var;
         com.github.service.wrapper.bShadow bVar = oVar.t;
         if (cVar instanceof t00.r) {
             rVar = (t00.r) cVar;
@@ -893,7 +893,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
         vb0.j jVar;
         int i;
         w80.z zVar;
-        w80.x xVar;
+        w80.xShadow xVar;
         w80.y yVar;
         com.github.service.wrapper.bShadow bVar = oVar.t;
         if (cVar instanceof vb0.j) {
@@ -929,7 +929,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                 zVar = (w80.z) obj;
                 if (k71.k.b((zVar != null || (xVar = zVar.c) == null || (yVar = xVar.c) == null) ? null : yVar.a, str2)) {
                     aa.i0 a0Var3 = new w80.a0(0);
-                    aa.h0 zVar2 = new w80.z(zVar.a, zVar.b, zVar.c, g70.a.a(zVar.d, !z, z));
+                    aa.h0Shadow zVar2 = new w80.z(zVar.a, zVar.b, zVar.c, g70.a.a(zVar.d, !z, z));
                     jVar.u = null;
                     jVar.v = null;
                     jVar.w = z;
@@ -969,7 +969,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
         int i;
         uu0.i0 i0Var;
         uu0.g0 g0Var;
-        uu0.h0 h0Var;
+        uu0.h0Shadow h0Var;
         com.github.service.wrapper.bShadow bVar = oVar.t;
         if (cVar instanceof wy0.m) {
             mVar = (wy0.m) cVar;
@@ -1940,7 +1940,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     MinimizedStateReason o = t.z.o(hideCommentReason);
                     rawValue = o != null ? o.getRawValue() : null;
-                    ri0.x xVar = new ri0.x();
+                    ri0.xShadow xVar = new ri0.x();
                     kVar.u = str;
                     kVar.v = str2;
                     kVar.w = rawValue;
@@ -2036,7 +2036,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                         arrayList = null;
                     }
                     ri0.v vVar2 = new ri0.v(vVar.a, vVar.b, new ri0.u(arrayList), vVar.d);
-                    ri0.x xVar2 = new ri0.x();
+                    ri0.xShadow xVar2 = new ri0.x();
                     kVar.u = null;
                     kVar.v = null;
                     kVar.w = null;
@@ -2097,7 +2097,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     MinimizedStateReason o = t.z.o(hideCommentReason);
                     rawValue = o != null ? o.getRawValue() : null;
-                    xt0.x xVar = new xt0.x();
+                    xt0.xShadow xVar = new xt0.x();
                     kVar.u = str;
                     kVar.v = str2;
                     kVar.w = rawValue;
@@ -2193,7 +2193,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                         arrayList = null;
                     }
                     xt0.v vVar2 = new xt0.v(vVar.a, vVar.b, new xt0.u(arrayList), vVar.d);
-                    xt0.x xVar2 = new xt0.x();
+                    xt0.xShadow xVar2 = new xt0.x();
                     kVar.u = null;
                     kVar.v = null;
                     kVar.w = null;
@@ -2254,7 +2254,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     MinimizedStateReason o = t.z.o(hideCommentReason);
                     rawValue = o != null ? o.getRawValue() : null;
-                    gv.h0 h0Var = new gv.h0();
+                    gv.h0Shadow h0Var = new gv.h0();
                     pVar.u = str;
                     pVar.v = str2;
                     pVar.w = rawValue;
@@ -2350,7 +2350,7 @@ public final class o implements z01.d, yb0, mi0, y90, yf0 {
                         arrayList = null;
                     }
                     gv.f0 f0Var2 = new gv.f0(f0Var.a, f0Var.b, new gv.e0(arrayList), f0Var.d);
-                    gv.h0 h0Var2 = new gv.h0();
+                    gv.h0Shadow h0Var2 = new gv.h0();
                     pVar.u = null;
                     pVar.v = null;
                     pVar.w = null;

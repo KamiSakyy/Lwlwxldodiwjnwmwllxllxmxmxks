@@ -5,7 +5,7 @@ import java.util.List;
 import jn0.bc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class hx implements aa.a {
+public final class hx implements aaShadow.a {
     public static final hx a = new hx();
     public static final List b = sy.d0.o(new String[]{"id", "mergeCommitAllowed", "squashMergeAllowed", "rebaseMergeAllowed", "viewerDefaultMergeMethod", "viewerDefaultCommitEmail", "viewerPossibleCommitEmails", "viewerPermission", "__typename"});
 

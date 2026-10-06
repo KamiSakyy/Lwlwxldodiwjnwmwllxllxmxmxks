@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.x40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ms implements aa.a {
+public final class ms implements aaShadow.a {
     public static final ms a = new ms();
     public static final List b = sy.d0.o(new String[]{"__typename", "isArchived", "id"});
 

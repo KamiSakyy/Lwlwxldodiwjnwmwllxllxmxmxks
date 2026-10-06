@@ -5,7 +5,7 @@ import jo.ce0;
 import jo.de0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ty implements aa.a {
+public final class ty implements aaShadow.a {
     public static final ty a = new ty();
     public static final List b = sy.d0.n("pullRequest");
 

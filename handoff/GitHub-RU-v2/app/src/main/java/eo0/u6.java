@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class u6 implements aa.a {
+public final class u6 implements aaShadow.a {
     public static final u6 a = new u6();
     public static final List b = sy.d0.o(new String[]{"id", "url", "runNumber", "workflow", "pendingDeploymentRequests", "__typename"});
 
@@ -15,7 +15,7 @@ public final class u6 implements aa.a {
         String str = null;
         String str2 = null;
         jn0.ca caVar = null;
-        jn0.aa aaVar = null;
+        jn0.aaShadow aaVar = null;
         String str3 = null;
         while (true) {
             int r0 = eVar.r0(b);

@@ -5,7 +5,7 @@ import jo.sg0;
 import jo.tg0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class o00 implements aa.a {
+public final class o00 implements aaShadow.a {
     public static final o00 a = new o00();
     public static final List b = sy.d0.n("updateUserMobileTimeZone");
 

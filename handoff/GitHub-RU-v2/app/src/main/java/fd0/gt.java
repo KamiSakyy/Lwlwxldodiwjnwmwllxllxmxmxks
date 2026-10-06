@@ -6,7 +6,7 @@ import kc0.p60;
 import kc0.q60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class gt implements aa.a {
+public final class gt implements aaShadow.a {
     public static final gt a = new gt();
     public static final List b = sy.d0.o(new String[]{"column", "project", "id", "__typename"});
 

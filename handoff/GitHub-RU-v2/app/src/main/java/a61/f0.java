@@ -8,7 +8,7 @@ import v71.q1;
 import w2.y1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class f0 implements y71.j {
+public final class f0Shadow implements y71.j {
     public final /* synthetic */ int r;
     public final /* synthetic */ Object s;
 

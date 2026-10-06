@@ -5,8 +5,8 @@ import jo.ab0;
 import jo.xa0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qw implements aa.a {
-    public static final qw a = new qw();
+public final class qwShadow implements aaShadow.a {
+    public static final qwShadow a = new qwShadow();
     public static final List b = sy.d0.n("unmarkDiscussionCommentAsAnswer");
 
     public final Object a(ea.e eVar, aa.w wVar) {

@@ -151,7 +151,7 @@ public final class x9 implements y71.j {
                     sy.y.j(obj2);
                     am0.b1 b1Var = (am0.b1) obj;
                     k71.k.g(b1Var, "<this>");
-                    am0.f1 f1Var = b1Var.a;
+                    am0.f1Shadow f1Var = b1Var.a;
                     int i3 = f1Var.a.a;
                     x61.r<am0.d1> rVar = f1Var.b.a;
                     if (rVar == null) {
@@ -827,7 +827,7 @@ public final class x9 implements y71.j {
         f60 f60Var;
         ba baVar;
         int i2;
-        ga gaVar;
+        gaShadow gaVar;
         int i3;
         la laVar;
         int i4;
@@ -836,11 +836,11 @@ public final class x9 implements y71.j {
         i30 i30Var3;
         na naVar;
         int i5;
-        oa oaVar;
+        oaShadow oaVar;
         int i6;
         pa paVar;
         int i7;
-        yz0.p8 p8Var;
+        yz0.p8Shadow p8Var;
         String str;
         boolean z;
         yz0.o8 o8Var;
@@ -958,8 +958,8 @@ public final class x9 implements y71.j {
                 }
                 return w61.a0.a;
             case 2:
-                if (cVar instanceof ga) {
-                    gaVar = (ga) cVar;
+                if (cVar instanceof gaShadow) {
+                    gaVar = (gaShadow) cVar;
                     int i27 = gaVar.v;
                     if ((i27 & Integer.MIN_VALUE) != 0) {
                         gaVar.v = i27 - Integer.MIN_VALUE;
@@ -982,7 +982,7 @@ public final class x9 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                gaVar = new ga(this, cVar);
+                gaVar = new gaShadow(this, cVar);
                 Object obj42 = gaVar.u;
                 b71.a aVar52 = b71.a.r;
                 i3 = gaVar.v;
@@ -1071,8 +1071,8 @@ public final class x9 implements y71.j {
                 }
                 return w61.a0.a;
             case 5:
-                if (cVar instanceof oa) {
-                    oaVar = (oa) cVar;
+                if (cVar instanceof oaShadow) {
+                    oaVar = (oaShadow) cVar;
                     int i32 = oaVar.v;
                     if ((i32 & Integer.MIN_VALUE) != 0) {
                         oaVar.v = i32 - Integer.MIN_VALUE;
@@ -1097,7 +1097,7 @@ public final class x9 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                oaVar = new oa(this, cVar);
+                oaVar = new oaShadow(this, cVar);
                 Object obj82 = oaVar.u;
                 b71.a aVar92 = b71.a.r;
                 i6 = oaVar.v;
@@ -1150,7 +1150,7 @@ public final class x9 implements y71.j {
                                 String str15 = str14 == null ? "" : str14;
                                 qx.r1 r1Var = t1Var.v;
                                 if (r1Var != null) {
-                                    qx.n0 n0Var = r1Var.c;
+                                    qx.n0Shadow n0Var = r1Var.c;
                                     str = "";
                                     String str16 = n0Var.b;
                                     qx.m0 m0Var = n0Var.g;
@@ -1447,7 +1447,7 @@ public final class x9 implements y71.j {
                             sy.y.j(obj17);
                             fa1.q0 q0Var = (fa1.q0) obj;
                             k71.k.g(q0Var, "<this>");
-                            q81.a0 a0Var = q0Var.a;
+                            q81.a0Shadow a0Var = q0Var.a;
                             c11.a aVar15 = null;
                             if (a0Var.u == 301 && (a = a0Var.w.a("Location")) != null) {
                                 List g0 = t71.p.g0(a, new String[]{"/"}, 6);

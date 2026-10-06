@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class gn implements aa.a {
+public abstract class gn implements aaShadow.a {
     public static final List a = sy.d0.n("forks");
 
     public static jo.qx c(ea.e eVar, aa.w wVar) {
@@ -20,7 +20,7 @@ public abstract class gn implements aa.a {
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, jo.qx qxVar) {
+    public static void d(ea.f fVar, aa.w wVar, jo.qxShadow qxVar) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(qxVar, "value");

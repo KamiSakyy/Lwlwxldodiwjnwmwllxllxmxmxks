@@ -5,7 +5,7 @@ import jn0.f40;
 import jn0.g40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class bs implements aa.a {
+public final class bs implements aaShadow.a {
     public static final bs a = new bs();
     public static final List b = sy.d0.n("labelableRecord");
 

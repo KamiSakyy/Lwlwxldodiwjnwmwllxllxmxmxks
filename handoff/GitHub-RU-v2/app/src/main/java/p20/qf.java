@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class qf implements aa.a {
+public abstract class qf implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "state", "url", "authorCanPushToRepository", "submittedAt", "pullRequest", "author", "repository", "threadsAndReplies"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x004d, code lost:
@@ -130,7 +130,7 @@ public abstract class qf implements aa.a {
         u10.in inVar = null;
         u10.wm wmVar = null;
         u10.jn jnVar = null;
-        u10.nn nnVar = null;
+        u10.nnShadow nnVar = null;
         while (true) {
             switch (eVar.r0(a)) {
                 case 0:

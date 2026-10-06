@@ -55,7 +55,7 @@ public final class e extends f {
 
     public static void e(Activity activity, AlertDialog alertDialog, String str, DialogInterface.OnCancelListener onCancelListener) {
         try {
-            if (activity instanceof k.i) {
+            if (activity instanceof kShadow.i) {
                 a1 H = ((k.i) activity).H();
                 SupportErrorDialogFragment supportErrorDialogFragment = new SupportErrorDialogFragment();
                 u.h(alertDialog, "Cannot display null dialog");

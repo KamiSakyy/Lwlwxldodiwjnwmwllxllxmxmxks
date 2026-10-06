@@ -4,7 +4,7 @@ import java.util.List;
 import jo.p30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class pr implements aa.a {
+public final class pr implements aaShadow.a {
     public static final pr a = new pr();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -105,7 +105,7 @@ public final class pr implements aa.a {
         jo.f4.C(k2Var.C, bVar3, fVar, wVar, "viewerCanPush");
         jo.f4.C(k2Var.D, bVar3, fVar, wVar, "viewerCanSubscribe");
         jo.f4.C(k2Var.E, bVar3, fVar, wVar, "viewerPermission");
-        aa.c.b(n10.b.A).b(fVar, wVar, k2Var.F);
+        aa.c.b(n10Shadow.b.A).b(fVar, wVar, k2Var.F);
         fVar.z0("watchers");
         aa.c.c(dw.f3.a, false).b(fVar, wVar, k2Var.G);
         fVar.z0("licenseInfo");

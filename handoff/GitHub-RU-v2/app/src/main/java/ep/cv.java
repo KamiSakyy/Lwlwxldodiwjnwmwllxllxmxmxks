@@ -4,7 +4,7 @@ import java.util.List;
 import jo.p80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cv implements aa.a {
+public final class cv implements aaShadow.a {
     public static final cv a = new cv();
     public static final List b = sy.d0.n("subscribed");
 

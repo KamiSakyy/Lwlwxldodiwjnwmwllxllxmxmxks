@@ -5,7 +5,7 @@ import jn0.ib0;
 import jn0.jb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class sw implements aa.a {
+public final class sw implements aaShadow.a {
     public static final sw a = new sw();
     public static final List b = sy.d0.n("updateUserDashboardPins");
 

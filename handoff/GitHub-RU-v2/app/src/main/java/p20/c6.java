@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class c6 implements aa.a {
+public final class c6 implements aaShadow.a {
     public static final c6 a = new c6();
     public static final List b = sy.d0.n("mergeMethod");
 

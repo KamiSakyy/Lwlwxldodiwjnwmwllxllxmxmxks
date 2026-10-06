@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class yc0 implements aa.w0 {
+public final class yc0 implements aaShadow.w0 {
     public static final sc0 Companion = new sc0();
     public final aa1.b r;
     public final aa1.b s;
@@ -63,12 +63,12 @@ public final class yc0 implements aa.w0 {
         fVar.z0("first");
         fVar.z(30);
         aa.u0 u0Var = this.r;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("after");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.s;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("query");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
         }

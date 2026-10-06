@@ -11,7 +11,7 @@ public abstract class vl {
         s4.Companion.getClass();
         r4 r4Var = s4.Companion;
         ba.Companion.getClass();
-        aa aaVar = ba.Companion;
+        aaShadow aaVar = ba.Companion;
         bd.Companion.getClass();
         ad adVar = bd.Companion;
         le.Companion.getClass();

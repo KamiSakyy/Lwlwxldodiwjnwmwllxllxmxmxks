@@ -5,7 +5,7 @@ import jo.l70;
 import jo.n70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ku implements aa.a {
+public final class ku implements aaShadow.a {
     public static final ku a = new ku();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 
@@ -22,7 +22,7 @@ public final class ku implements aa.a {
                 if (r0 != 1) {
                     break;
                 }
-                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(fu.a, false)))).a(eVar, wVar);
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(fuShadow.a, false)))).a(eVar, wVar);
             }
         }
         if (l70Var != null) {
@@ -40,6 +40,6 @@ public final class ku implements aa.a {
         fVar.z0("pageInfo");
         aa.c.c(iu.a, false).b(fVar, wVar, n70Var.a);
         fVar.z0("nodes");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(fu.a, false)))).b(fVar, wVar, n70Var.b);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(fuShadow.a, false)))).b(fVar, wVar, n70Var.b);
     }
 }

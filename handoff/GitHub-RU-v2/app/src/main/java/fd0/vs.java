@@ -5,7 +5,7 @@ import kc0.a60;
 import kc0.c60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class vs implements aa.a {
+public final class vs implements aaShadow.a {
     public static final vs a = new vs();
     public static final List b = sy.d0.n("updateDiscussion");
 

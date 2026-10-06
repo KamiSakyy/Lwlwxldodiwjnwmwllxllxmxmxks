@@ -5,7 +5,7 @@ import android.app.Application;
 import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class c implements Application.ActivityLifecycleCallbacks {
+public final class cShadow implements Application.ActivityLifecycleCallbacks {
 
     /* renamed from: r, reason: collision with root package name */
     public Object f29423r;
@@ -79,7 +79,7 @@ public final class c implements Application.ActivityLifecycleCallbacks {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c {
+    public static class cShadow {
         public c() {
         }
     }

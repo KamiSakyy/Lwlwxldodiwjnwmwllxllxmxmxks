@@ -1,6 +1,6 @@
 package gp;
 
-import fp.g1;
+import fp.g1Shadow;
 import fp.i1;
 import java.util.List;
 import jo.f4;
@@ -15,7 +15,7 @@ public final class e0 implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         Integer num = null;
         List list = null;
-        g1 g1Var = null;
+        g1Shadow g1Var = null;
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
@@ -34,7 +34,7 @@ public final class e0 implements aa.a {
                 if (r0 != 2) {
                     break;
                 }
-                g1Var = (g1) aa.c.c(c0.a, false).a(eVar, wVar);
+                g1Var = (g1Shadow) aa.c.c(c0.a, false).a(eVar, wVar);
             }
         }
         if (num == null) {

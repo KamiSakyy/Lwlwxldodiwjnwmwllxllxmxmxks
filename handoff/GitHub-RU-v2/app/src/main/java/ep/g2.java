@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class g2 implements aa.a {
+public final class g2 implements aaShadow.a {
     public static final g2 a = new g2();
     public static final List b = sy.d0.n("blockUser");
 

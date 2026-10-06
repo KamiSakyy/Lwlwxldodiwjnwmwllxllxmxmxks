@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class n2 implements aa.a {
+public abstract class n2 implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "conclusion", "name", "summary", "permalink", "duration", "checkSuite", "isRequired"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x001d. Please report as an issue. */

@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h40 implements aa.m0 {
+public final class h40 implements aaShadow.m0 {
     public final j40 a;
 
     public h40(j40 j40Var) {

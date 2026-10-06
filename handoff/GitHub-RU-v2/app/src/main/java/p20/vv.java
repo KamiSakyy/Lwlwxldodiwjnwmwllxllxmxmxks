@@ -5,7 +5,7 @@ import u10.oa0;
 import u10.qa0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vv implements aa.a {
+public final class vv implements aaShadow.a {
     public static final vv a = new vv();
     public static final List b = sy.d0.o("organizations", "id", "__typename");
 

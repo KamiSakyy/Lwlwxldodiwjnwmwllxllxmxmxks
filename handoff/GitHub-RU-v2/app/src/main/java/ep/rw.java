@@ -7,7 +7,7 @@ import jo.va0;
 import jo.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rw implements aa.a {
+public final class rw implements aaShadow.a {
     public static final rw a = new rw();
     public static final List b = sy.d0.o("id", "answerChosenAt", "answer", "answerChosenBy", "__typename");
 

@@ -2,7 +2,7 @@ package z11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class n {
-    public static final k[] a = {o.a, o.b};
+    public static final kShadow[] a = {o.a, o.b};
     public static final o21.f b;
     public static final o21.f c;
 

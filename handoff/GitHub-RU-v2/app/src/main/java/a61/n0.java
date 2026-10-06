@@ -296,7 +296,7 @@ public final class n0 extends c71.j implements j71.e {
                         while (true) {
                             if (it.hasNext()) {
                                 if (((v41.i) it.next()).a.a()) {
-                                    for (Message message : x61.m.v0(x61.m.S(sy.d0.q(new Message[]{w51.r.d(rVar, arrayList, 2), w51.r.d(rVar, arrayList, 1)})), new b1())) {
+                                    for (Message message : x61.m.v0(x61.m.S(sy.d0.q(new Message[]{w51.r.d(rVar, arrayList, 2), w51.r.d(rVar, arrayList, 1)})), new b1Shadow())) {
                                         Messenger messenger = (Messenger) rVar.t;
                                         if (messenger != null) {
                                             try {
@@ -476,7 +476,7 @@ public final class n0 extends c71.j implements j71.e {
                 if (c == null) {
                     return w61.a0.a;
                 }
-                f0 f0Var = new f0(i, (b1.m) this.y);
+                f0Shadow f0Var = new f0Shadow(i, (b1.m) this.y);
                 this.w = 2;
                 y71.m1.k(c, f0Var, this);
                 return aVar8;
@@ -514,7 +514,7 @@ public final class n0 extends c71.j implements j71.e {
                         }
                     } else {
                         sy.y.j(obj);
-                        v71.d1 d1Var = (v71.d1) this.x;
+                        v71.d1Shadow d1Var = (v71.d1) this.x;
                         if (d1Var != null) {
                             this.w = 1;
                             d1Var.m((CancellationException) null);
@@ -852,7 +852,7 @@ public final class n0 extends c71.j implements j71.e {
                 }
                 sy.y.j(obj);
                 w2.h hVar5 = (w2.c1) this.x;
-                w2.b1 a8 = k0.c.a((g3.g) this.y);
+                w2.b1Shadow a8 = k0.c.a((g3.g) this.y);
                 this.w = 1;
                 hVar5.a(a8);
                 return a0Var4 == aVar18 ? aVar18 : a0Var4;

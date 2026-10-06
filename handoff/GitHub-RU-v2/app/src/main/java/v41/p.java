@@ -75,7 +75,7 @@ public final class p {
                 l lVar = this.h;
                 lVar.getClass();
                 w41.c.a();
-                r rVar = lVar.n;
+                rShadow rVar = lVar.n;
                 if (!(rVar != null && rVar.e.get())) {
                     Log.isLoggable("FirebaseCrashlytics", 2);
                     try {

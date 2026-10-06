@@ -3,16 +3,16 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kj implements aa.a {
+public final class kj implements aaShadow.a {
     public static final kj a = new kj();
     public static final List b = sy.d0.o("created", "assigned", "mentioned", "requested", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.ks ksVar = null;
-        jo.is isVar = null;
-        jo.ms msVar = null;
+        jo.ksShadow ksVar = null;
+        jo.isShadow isVar = null;
+        jo.msShadow msVar = null;
         jo.rs rsVar = null;
         String str = null;
         String str2 = null;

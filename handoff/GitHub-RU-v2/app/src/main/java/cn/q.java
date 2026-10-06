@@ -5,7 +5,7 @@ import in.r0;
 import rm0.o8;
 import rm0.r6;
 import rm0.t2;
-import t00.f1;
+import t00.f1Shadow;
 import t00.f8;
 import t00.o6;
 import t00.w3;
@@ -184,7 +184,7 @@ public final class q implements y71.i {
                 }
                 break;
             case 27:
-                Object b29 = this.s.b(new f1(jVar, 18), cVar);
+                Object b29 = this.s.b(new f1Shadow(jVar, 18), cVar);
                 if (b29 != b71.a.r) {
                     break;
                 }

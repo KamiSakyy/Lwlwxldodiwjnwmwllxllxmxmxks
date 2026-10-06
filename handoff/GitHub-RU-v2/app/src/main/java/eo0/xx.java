@@ -6,7 +6,7 @@ import jn0.tc0;
 import jn0.vc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xx implements aa.a {
+public final class xx implements aaShadow.a {
     public static final xx a = new xx();
     public static final List b = sy.d0.o(new String[]{"actor", "pullRequest"});
 

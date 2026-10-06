@@ -82,7 +82,7 @@ public final class v2 {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class e {
+    public static class eShadow {
         public e() {
         }
     }

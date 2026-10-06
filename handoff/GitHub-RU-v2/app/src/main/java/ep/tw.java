@@ -5,7 +5,7 @@ import jo.ab0;
 import jo.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tw implements aa.a {
+public final class tw implements aaShadow.a {
     public static final tw a = new tw();
     public static final List b = sy.d0.n("discussion");
 

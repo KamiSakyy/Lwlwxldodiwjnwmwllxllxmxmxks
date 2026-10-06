@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
-import rm0.r3;
+import rm0.r3Shadow;
 import sy.y;
 import t00.z1;
 import y71.n1;
@@ -60,7 +60,7 @@ public final class r {
         sVar.getClass();
         ek.d F = ((GitHubDatabase) sVar.a.a(jVar)).F();
         F.getClass();
-        return new r3(9, new y00.l(d5.B(F.a, new String[]{"shortcuts"}, new e0(15, str, F)), 10), this);
+        return new r3Shadow(9, new y00.l(d5.B(F.a, new String[]{"shortcuts"}, new e0(15, str, F)), 10), this);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:12:0x004e  */

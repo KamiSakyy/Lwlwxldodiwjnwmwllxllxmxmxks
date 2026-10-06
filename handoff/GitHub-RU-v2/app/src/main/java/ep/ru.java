@@ -5,7 +5,7 @@ import jo.y70;
 import jo.z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ru implements aa.a {
+public final class ru implements aaShadow.a {
     public static final ru a = new ru();
     public static final List b = sy.d0.o("node", "id", "__typename");
 

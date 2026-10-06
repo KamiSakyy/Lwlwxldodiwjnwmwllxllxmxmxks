@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kd implements aa.v0 {
+public final class kd implements aaShadow.v0 {
     public final qd a;
 
     public kd(qd qdVar) {

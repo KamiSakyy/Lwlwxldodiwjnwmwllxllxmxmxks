@@ -5,7 +5,7 @@ import jo.ua0;
 import jo.za0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ow implements aa.a {
+public final class ow implements aaShadow.a {
     public static final ow a = new ow();
     public static final List b = sy.d0.o("__typename", "id", "replyTo");
 
@@ -25,7 +25,7 @@ public final class ow implements aa.a {
                 if (r0 != 2) {
                     break;
                 }
-                za0Var = (za0) aa.c.b(aa.c.c(sw.a, false)).a(eVar, wVar);
+                za0Var = (za0) aa.c.b(aa.c.c(swShadow.a, false)).a(eVar, wVar);
             }
         }
         eVar.s0();
@@ -52,7 +52,7 @@ public final class ow implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, ua0Var.b);
         fVar.z0("replyTo");
-        aa.c.b(aa.c.c(sw.a, false)).b(fVar, wVar, ua0Var.c);
+        aa.c.b(aa.c.c(swShadow.a, false)).b(fVar, wVar, ua0Var.c);
         List list = ms.l.a;
         ms.l.d(fVar, wVar, ua0Var.d);
     }

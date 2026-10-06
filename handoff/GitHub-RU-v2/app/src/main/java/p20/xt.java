@@ -6,7 +6,7 @@ import u10.k70;
 import u10.l70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xt implements aa.a {
+public final class xt implements aaShadow.a {
     public static final xt a = new xt();
     public static final List b = sy.d0.o("__typename", "subjectType", "pullRequest", "id");
 

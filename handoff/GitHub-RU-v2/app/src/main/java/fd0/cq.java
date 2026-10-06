@@ -5,7 +5,7 @@ import kc0.v10;
 import kc0.x10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class cq implements aa.a {
+public final class cq implements aaShadow.a {
     public static final cq a = new cq();
     public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
 

@@ -5,7 +5,7 @@ import jo.f60;
 import jo.g60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class nt implements aa.a {
+public final class nt implements aaShadow.a {
     public static final nt a = new nt();
     public static final List b = sy.d0.n("labelableRecord");
 

@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.vf0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uz implements aa.a {
+public final class uz implements aaShadow.a {
     public static final uz a = new uz();
     public static final List b = sy.d0.n("totalCount");
 

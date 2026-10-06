@@ -7,7 +7,7 @@ import jo.xi0;
 import jo.yi0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class z10 implements aa.a {
+public final class z10 implements aaShadow.a {
     public static final z10 a = new z10();
     public static final List b = sy.d0.o("copilotLicenseType", "isCopilotMobileChatEnabled", "viewerIsCopilotCodingAgentEnabled", "viewerCanSubscribeToCopilotIndividual", "viewerCanSubscribeToCopilotLimited", "copilotEndpoints", "copilotLimitedUser", "copilotConsumptiveUser", "copilotSubscriptionPlatform", "availableCopilotUpgradeSkus", "id", "__typename");
 
@@ -115,7 +115,7 @@ public final class z10 implements aa.a {
     */
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
-        n10.a aVar = n10.a.o;
+        n10.a aVar = n10Shadow.a.o;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         Boolean bool2 = null;
@@ -160,7 +160,7 @@ public final class z10 implements aa.a {
                     wi0Var = (wi0) aa.c.b(aa.c.c(v10.a, true)).a(eVar, wVar);
                     break;
                 case 8:
-                    q8Var = (m10.q8) aa.c.b(n10.a.p).a(eVar, wVar);
+                    q8Var = (m10.q8) aa.c.b(n10Shadow.a.p).a(eVar, wVar);
                     continue;
                 case 9:
                     list = (List) aa.c.b(aa.c.a(aVar)).a(eVar, wVar);
@@ -182,7 +182,7 @@ public final class z10 implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(aj0Var, "value");
         fVar.z0("copilotLicenseType");
-        n10.a aVar = n10.a.o;
+        n10.a aVar = n10Shadow.a.o;
         aa.c.b(aVar).b(fVar, wVar, aj0Var.a);
         fVar.z0("isCopilotMobileChatEnabled");
         aa.b bVar = aa.c.f;
@@ -196,7 +196,7 @@ public final class z10 implements aa.a {
         fVar.z0("copilotConsumptiveUser");
         aa.c.b(aa.c.c(v10.a, true)).b(fVar, wVar, aj0Var.h);
         fVar.z0("copilotSubscriptionPlatform");
-        aa.c.b(n10.a.p).b(fVar, wVar, aj0Var.i);
+        aa.c.b(n10Shadow.a.p).b(fVar, wVar, aj0Var.i);
         fVar.z0("availableCopilotUpgradeSkus");
         aa.c.b(aa.c.a(aVar)).b(fVar, wVar, aj0Var.j);
         fVar.z0("id");

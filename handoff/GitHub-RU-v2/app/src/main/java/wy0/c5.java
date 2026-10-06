@@ -230,7 +230,7 @@ public final class c5 implements y71.j {
                             int size2 = S2.size();
                             int i6 = 0;
                             while (i6 < size2) {
-                                Object obj4 = S2.get(i6);
+                                Object obj4 = S2.get(i6Shadow);
                                 i6++;
                                 r52.add(k41.b.e(((gs) obj4).c));
                             }
@@ -490,7 +490,7 @@ public final class c5 implements y71.j {
     private final Object e(a71.c cVar, Object obj) {
         g6 g6Var;
         int i;
-        jn0.v7 v7Var;
+        jn0.v7Shadow v7Var;
         if (cVar instanceof g6) {
             g6Var = (g6) cVar;
             int i2 = g6Var.v;
@@ -598,12 +598,12 @@ public final class c5 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object g(a71.c cVar, Object obj) {
-        i6 i6Var;
+        i6Shadow i6Var;
         int i;
         n00 n00Var;
         p00 p00Var;
-        if (cVar instanceof i6) {
-            i6Var = (i6) cVar;
+        if (cVar instanceof i6Shadow) {
+            i6Var = (i6Shadow) cVar;
             int i2 = i6Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 i6Var.v = i2 - Integer.MIN_VALUE;
@@ -643,7 +643,7 @@ public final class c5 implements y71.j {
                 return w61.a0.a;
             }
         }
-        i6Var = new i6(this, cVar);
+        i6Var = new i6Shadow(this, cVar);
         Object obj22 = i6Var.u;
         b71.a aVar2 = b71.a.r;
         i = i6Var.v;

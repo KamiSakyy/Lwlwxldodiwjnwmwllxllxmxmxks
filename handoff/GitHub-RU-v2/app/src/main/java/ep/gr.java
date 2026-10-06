@@ -5,7 +5,7 @@ import jo.c30;
 import jo.e30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gr implements aa.a {
+public final class gr implements aaShadow.a {
     public static final gr a = new gr();
     public static final List b = sy.d0.o("repository", "id", "__typename");
 

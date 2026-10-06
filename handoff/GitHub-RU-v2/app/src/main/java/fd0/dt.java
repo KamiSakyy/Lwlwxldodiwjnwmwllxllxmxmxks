@@ -5,7 +5,7 @@ import kc0.m60;
 import kc0.s60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class dt implements aa.a {
+public final class dt implements aaShadow.a {
     public static final dt a = new dt();
     public static final List b = sy.d0.n("updateIssue");
 

@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qi implements aa.m0 {
+public final class qi implements aaShadow.m0 {
     public final ri a;
 
     public qi(ri riVar) {

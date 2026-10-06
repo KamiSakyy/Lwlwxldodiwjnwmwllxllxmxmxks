@@ -4,8 +4,8 @@ import java.util.List;
 import jo.s40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ks implements aa.a {
-    public static final ks a = new ks();
+public final class ksShadow implements aaShadow.a {
+    public static final ksShadow a = new ksShadow();
     public static final List b = sy.d0.n("nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {

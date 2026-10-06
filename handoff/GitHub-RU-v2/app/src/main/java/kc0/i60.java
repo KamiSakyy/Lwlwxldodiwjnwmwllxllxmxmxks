@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class i60 implements aa.n0 {
+public final class i60 implements aaShadow.n0 {
     public static final e60 Companion = new e60();
     public final String r;
     public final String s;

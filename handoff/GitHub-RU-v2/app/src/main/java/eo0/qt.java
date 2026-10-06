@@ -5,7 +5,7 @@ import jn0.m60;
 import jn0.q60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class qt implements aa.a {
+public abstract class qt implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "timelineItem"});
 
     public static m60 c(ea.e eVar, aa.w wVar) {

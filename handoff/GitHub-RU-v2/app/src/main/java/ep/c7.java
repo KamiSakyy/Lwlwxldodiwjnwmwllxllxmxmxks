@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class c7 implements aa.a {
+public final class c7 implements aaShadow.a {
     public static final c7 a = new c7();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -59,7 +59,7 @@ public final class c7 implements aa.a {
         fVar.z0("id");
         bVar2.b(fVar, wVar, fVar2.c);
         fVar.z0("conclusion");
-        aa.c.b(n10.a.d).b(fVar, wVar, fVar2.d);
+        aa.c.b(n10Shadow.a.d).b(fVar, wVar, fVar2.d);
         fVar.z0("permalink");
         bVar2.b(fVar, wVar, fVar2.e);
         fVar.z0("deployment");

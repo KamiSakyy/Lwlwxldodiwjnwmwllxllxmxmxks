@@ -455,7 +455,7 @@ public final class b extends c71.j implements j71.e {
                     return obj;
                 }
                 y.j(obj);
-                r9.k kVar = (r9.k) this.x;
+                r9.kShadow kVar = (r9.k) this.x;
                 m9.i iVar2 = new m9.i(kVar, ((g9.h) this.y).j, 0, kVar, (s9.h) this.z, (g9.c) this.A, ((Bitmap) this.B) != null);
                 this.w = 1;
                 Object c2 = iVar2.c(kVar, this);

@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class cm implements aa.a {
+public final class cm implements aaShadow.a {
     public static final cm a = new cm();
     public static final List b = sy.d0.o(new String[]{"planLimit", "pullRequest", "collaborators", "id", "__typename"});
 

@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zp implements aa.a {
+public final class zp implements aaShadow.a {
     public static final zp a = new zp();
     public static final List b = sy.d0.o("id", "additions", "deletions", "changedFiles", "latestCommit", "__typename");
 
@@ -55,7 +55,7 @@ public final class zp implements aa.a {
                     } else if (r0 == 4) {
                         num3 = num5;
                         num4 = num6;
-                        i10Var = (jo.i10) aa.c.c(cq.a, false).a(eVar, wVar);
+                        i10Var = (jo.i10) aa.c.c(cqShadow.a, false).a(eVar, wVar);
                     } else {
                         if (r0 != 5) {
                             break;
@@ -135,7 +135,7 @@ public final class zp implements aa.a {
         fVar.z0("changedFiles");
         fVar.z(f10Var.d);
         fVar.z0("latestCommit");
-        aa.c.c(cq.a, false).b(fVar, wVar, f10Var.e);
+        aa.c.c(cqShadow.a, false).b(fVar, wVar, f10Var.e);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, f10Var.f);
     }

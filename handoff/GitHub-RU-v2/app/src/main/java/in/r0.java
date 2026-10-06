@@ -843,7 +843,7 @@ public final class r0 implements y71.j {
                         Object obj21 = dVar2.u;
                         b71.a aVar20 = b71.a.r;
                         i21 = dVar2.v;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i21 != 0) {
                             sy.y.j(obj21);
                             dVar2.v = 1;
@@ -863,7 +863,7 @@ public final class r0 implements y71.j {
                 Object obj212 = dVar2.u;
                 b71.a aVar202 = b71.a.r;
                 i21 = dVar2.v;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i21 != 0) {
                 }
                 return a0Var2;
@@ -876,7 +876,7 @@ public final class r0 implements y71.j {
                         Object obj23 = eVar2.u;
                         b71.a aVar21 = b71.a.r;
                         i22 = eVar2.v;
-                        w61.a0 a0Var3 = w61.a0.a;
+                        w61.a0Shadow a0Var3 = w61.a0.a;
                         if (i22 != 0) {
                             sy.y.j(obj23);
                             eVar2.v = 1;
@@ -896,7 +896,7 @@ public final class r0 implements y71.j {
                 Object obj232 = eVar2.u;
                 b71.a aVar212 = b71.a.r;
                 i22 = eVar2.v;
-                w61.a0 a0Var32 = w61.a0.a;
+                w61.a0Shadow a0Var32 = w61.a0.a;
                 if (i22 != 0) {
                 }
                 return a0Var32;
@@ -1010,7 +1010,7 @@ public final class r0 implements y71.j {
                         Object obj26 = hVar3.u;
                         b71.a aVar26 = b71.a.r;
                         i25 = hVar3.v;
-                        w61.a0 a0Var4 = w61.a0.a;
+                        w61.a0Shadow a0Var4 = w61.a0.a;
                         if (i25 != 0) {
                             sy.y.j(obj26);
                             hVar3.v = 1;
@@ -1030,7 +1030,7 @@ public final class r0 implements y71.j {
                 Object obj262 = hVar3.u;
                 b71.a aVar262 = b71.a.r;
                 i25 = hVar3.v;
-                w61.a0 a0Var42 = w61.a0.a;
+                w61.a0Shadow a0Var42 = w61.a0.a;
                 if (i25 != 0) {
                 }
                 return a0Var42;
@@ -1259,7 +1259,7 @@ public final class r0 implements y71.j {
                         Object obj36 = bVar4.u;
                         b71.a aVar33 = b71.a.r;
                         i32 = bVar4.v;
-                        w61.a0 a0Var5 = w61.a0.a;
+                        w61.a0Shadow a0Var5 = w61.a0.a;
                         if (i32 != 0) {
                             sy.y.j(obj36);
                             bVar4.v = 1;
@@ -1279,7 +1279,7 @@ public final class r0 implements y71.j {
                 Object obj362 = bVar4.u;
                 b71.a aVar332 = b71.a.r;
                 i32 = bVar4.v;
-                w61.a0 a0Var52 = w61.a0.a;
+                w61.a0Shadow a0Var52 = w61.a0.a;
                 if (i32 != 0) {
                 }
                 return a0Var52;

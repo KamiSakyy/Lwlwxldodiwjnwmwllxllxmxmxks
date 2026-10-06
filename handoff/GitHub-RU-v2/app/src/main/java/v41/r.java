@@ -5,7 +5,7 @@ import java.lang.Thread;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class r implements Thread.UncaughtExceptionHandler {
+public final class rShadow implements Thread.UncaughtExceptionHandler {
     public final s21.a a;
     public final d51.d b;
     public final Thread.UncaughtExceptionHandler c;

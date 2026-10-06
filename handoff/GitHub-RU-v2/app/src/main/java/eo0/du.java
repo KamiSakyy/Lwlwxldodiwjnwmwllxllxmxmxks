@@ -5,7 +5,7 @@ import jn0.c70;
 import jn0.d70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class du implements aa.a {
+public final class du implements aaShadow.a {
     public static final du a = new du();
     public static final List b = sy.d0.n("thread");
 

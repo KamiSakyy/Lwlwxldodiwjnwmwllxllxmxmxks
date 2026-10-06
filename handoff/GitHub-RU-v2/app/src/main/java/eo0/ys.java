@@ -5,7 +5,7 @@ import jn0.p50;
 import jn0.q50;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ys implements aa.a {
+public final class ys implements aaShadow.a {
     public static final ys a = new ys();
     public static final List b = sy.d0.o(new String[]{"node", "id", "__typename"});
 

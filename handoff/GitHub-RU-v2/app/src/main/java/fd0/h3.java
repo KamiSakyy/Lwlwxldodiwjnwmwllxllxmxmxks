@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class h3 implements aa.a {
+public final class h3 implements aaShadow.a {
     public static final h3 a = new h3();
     public static final List b = sy.d0.o(new String[]{"language", "path", "matchCount", "snippets"});
 

@@ -3,7 +3,7 @@ package k81;
 import com.google.android.gms.internal.measurement.d5;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class k0 extends h1 {
+public final class k0 extends h1Shadow {
     public static final k0 c = new k0(l0.a);
 
     @Override // k81.a

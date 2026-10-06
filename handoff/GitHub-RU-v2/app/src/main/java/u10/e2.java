@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e2 implements aa.n0 {
+public final class e2 implements aaShadow.n0 {
     public static final c2 Companion = new c2();
     public final String r;
     public final String s;
@@ -73,7 +73,7 @@ public final class e2 implements aa.n0 {
         fVar.z0("suggestions");
         aa.c.a(aa.c.c(ic0.a.z, false)).e(fVar, wVar, this.t);
         aa.u0 u0Var = this.u;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("commitMessage");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

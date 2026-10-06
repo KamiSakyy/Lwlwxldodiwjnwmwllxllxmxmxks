@@ -3,7 +3,7 @@ package t00;
 import com.github.service.models.response.type.PullRequestReviewEvent;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class f9 extends c71.c {
+public final class f9Shadow extends c71.c {
     public String u;
     public PullRequestReviewEvent v;
     public String w;

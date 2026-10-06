@@ -211,7 +211,7 @@ public abstract class c0 {
                                             String str17 = rVar.e.r;
                                             eVar.getClass();
                                             IssueState b = r01.e.b(str17);
-                                            wk0.x xVar = rVar.i;
+                                            wk0.xShadow xVar = rVar.i;
                                             qgVar = qgVar2;
                                             z4Var = new q4(str15, str16, i5, b, xVar.c.c, xVar.b, b31.b.d0(rVar.j));
                                         } else if (sVar != null) {

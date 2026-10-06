@@ -7,7 +7,7 @@ import jn0.j60;
 import jn0.m60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class lt implements aa.a {
+public final class lt implements aaShadow.a {
     public static final lt a = new lt();
     public static final List b = sy.d0.n("__typename");
 

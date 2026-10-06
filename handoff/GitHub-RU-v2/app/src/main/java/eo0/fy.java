@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.gd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class fy implements aa.a {
+public final class fy implements aaShadow.a {
     public static final fy a = new fy();
     public static final List b = sy.d0.n("mobilePushNotificationSchedules");
 

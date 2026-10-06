@@ -72,7 +72,7 @@ public final class x2 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
-        w2 w2Var;
+        w2Shadow w2Var;
         int i;
         GitObjectType gitObjectType;
         String str;
@@ -87,7 +87,7 @@ public final class x2 implements y71.j {
         int i4;
         GitObjectType gitObjectType2;
         String str2;
-        vb0.w1 w1Var;
+        vb0.w1Shadow w1Var;
         int i5;
         GitObjectType gitObjectType3;
         String str3;
@@ -98,14 +98,14 @@ public final class x2 implements y71.j {
         v70.d dVar6;
         vb0.v3 v3Var;
         int i7;
-        wy0.c2 c2Var;
+        wy0.c2Shadow c2Var;
         int i8;
         GitObjectType gitObjectType4;
         String str4;
         switch (this.r) {
             case 0:
-                if (cVar instanceof w2) {
-                    w2Var = (w2) cVar;
+                if (cVar instanceof w2Shadow) {
+                    w2Var = (w2Shadow) cVar;
                     int i9 = w2Var.v;
                     if ((i9 & Integer.MIN_VALUE) != 0) {
                         w2Var.v = i9 - Integer.MIN_VALUE;
@@ -145,7 +145,7 @@ public final class x2 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                w2Var = new w2(this, cVar);
+                w2Var = new w2Shadow(this, cVar);
                 Object obj22 = w2Var.u;
                 b71.a aVar2 = b71.a.r;
                 i = w2Var.v;

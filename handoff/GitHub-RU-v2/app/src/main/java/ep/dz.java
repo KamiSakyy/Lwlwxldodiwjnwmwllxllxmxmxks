@@ -6,7 +6,7 @@ import jo.pe0;
 import m10.n40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class dz implements aa.a {
+public final class dz implements aaShadow.a {
     public static final dz a = new dz();
     public static final List b = sy.d0.o("id", "mergeCommitAllowed", "squashMergeAllowed", "rebaseMergeAllowed", "viewerDefaultMergeMethod", "viewerDefaultCommitEmail", "viewerPossibleCommitEmails", "viewerPermission", "__typename");
 
@@ -171,7 +171,7 @@ public final class dz implements aa.a {
                     break;
                 case 7:
                     bool = bool2;
-                    n40Var = (n40) aa.c.b(n10.b.A).a(eVar, wVar);
+                    n40Var = (n40) aa.c.b(n10Shadow.b.A).a(eVar, wVar);
                     break;
                 case 8:
                     bool = bool2;
@@ -201,7 +201,7 @@ public final class dz implements aa.a {
         fVar.z0("viewerPossibleCommitEmails");
         aa.c.b(aa.c.a(bVar)).b(fVar, wVar, pe0Var.g);
         fVar.z0("viewerPermission");
-        aa.c.b(n10.b.A).b(fVar, wVar, pe0Var.h);
+        aa.c.b(n10Shadow.b.A).b(fVar, wVar, pe0Var.h);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, pe0Var.i);
     }

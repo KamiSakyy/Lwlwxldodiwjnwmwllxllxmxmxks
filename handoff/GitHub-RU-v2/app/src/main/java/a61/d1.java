@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class d1 extends Handler {
+public final class d1Shadow extends Handler {
     public boolean a;
     public long b;
     public final ArrayList c;

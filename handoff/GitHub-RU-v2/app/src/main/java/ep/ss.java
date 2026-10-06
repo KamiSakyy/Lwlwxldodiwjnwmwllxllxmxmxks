@@ -5,8 +5,8 @@ import jo.e50;
 import jo.i50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ss implements aa.a {
-    public static final ss a = new ss();
+public final class ssShadow implements aaShadow.a {
+    public static final ssShadow a = new ssShadow();
     public static final List b = sy.d0.o("search", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

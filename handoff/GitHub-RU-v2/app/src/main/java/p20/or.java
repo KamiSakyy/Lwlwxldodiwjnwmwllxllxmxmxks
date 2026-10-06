@@ -5,7 +5,7 @@ import u10.h40;
 import u10.j40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class or implements aa.a {
+public final class or implements aaShadow.a {
     public static final or a = new or();
     public static final List b = sy.d0.n("updateIssueComment");
 

@@ -5,7 +5,7 @@ import jn0.h30;
 import jn0.i30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class lr implements aa.a {
+public final class lr implements aaShadow.a {
     public static final lr a = new lr();
     public static final List b = sy.d0.o(new String[]{"userCount", "pageInfo", "nodes"});
 

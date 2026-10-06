@@ -192,7 +192,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i11) {
                             case 0:
@@ -843,7 +843,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i11) {
                             case 0:
@@ -1490,7 +1490,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i11) {
                             case 0:
@@ -2137,7 +2137,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i11) {
                             case 0:
@@ -2784,7 +2784,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i11) {
                             case 0:
@@ -3455,7 +3455,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i11) {
                             case 0:
@@ -4106,7 +4106,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i12 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i112) {
                             case 0:
@@ -4755,7 +4755,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i122 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i112) {
                             case 0:
@@ -5404,7 +5404,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i122 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i112) {
                             case 0:
@@ -6053,7 +6053,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         String str5 = "<this>";
                         int i122 = 10;
                         aa1.b bVar7 = t0.d;
-                        a0 a0Var = a0.a;
+                        a0Shadow a0Var = a0.a;
                         r rVar5 = r.r;
                         switch (i112) {
                             case 0:
@@ -6674,12 +6674,12 @@ public final class c9 implements z01.g1, mi0, yf0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final Object M(c9 c9Var, String str, c71.c cVar) {
-        v8 v8Var;
+        v8Shadow v8Var;
         int i;
         dw.k7 k7Var;
         com.github.service.wrapper.b bVar = c9Var.t;
-        if (cVar instanceof v8) {
-            v8Var = (v8) cVar;
+        if (cVar instanceof v8Shadow) {
+            v8Var = (v8Shadow) cVar;
             int i2 = v8Var.w;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 v8Var.w = i2 - Integer.MIN_VALUE;
@@ -6688,7 +6688,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                 i = v8Var.w;
                 if (i != 0) {
                     sy.y.j(obj);
-                    dw.m7 m7Var = new dw.m7();
+                    dw.m7Shadow m7Var = new dw.m7();
                     v8Var.w = 1;
                     obj = bVar.c(m7Var, str);
                 } else {
@@ -6705,13 +6705,13 @@ public final class c9 implements z01.g1, mi0, yf0 {
                 if (k7Var != null) {
                     String str2 = k7Var.a;
                     dw.k7 k7Var2 = new dw.k7(str2, new dw.i7(x61.r.r), k7Var.c);
-                    dw.m7 m7Var2 = new dw.m7();
+                    dw.m7Shadow m7Var2 = new dw.m7();
                     v8Var.w = 2;
                 }
                 return w61.a0.a;
             }
         }
-        v8Var = new v8(c9Var, cVar);
+        v8Var = new v8Shadow(c9Var, cVar);
         Object obj2 = v8Var.u;
         b71.a aVar2 = b71.a.r;
         i = v8Var.w;
@@ -7642,7 +7642,7 @@ public final class c9 implements z01.g1, mi0, yf0 {
                         u4Var = (uu0.u4) obj4;
                         com.github.service.wrapper.b bVar3 = this.t;
                         if (u4Var == null) {
-                            jn0.v1 v1Var = new jn0.v1(str);
+                            jn0.v1Shadow v1Var = new jn0.v1(str);
                             String str3 = u4Var.a;
                             d2 = bVar3.k(v1Var, new jn0.t1(new jn0.r1(new jn0.u1(str3, new kw0.a(u4Var.b, str3), u4Var))));
                         } else {

@@ -182,7 +182,7 @@ public abstract class f0 {
         List list;
         int i3;
         String str2;
-        b01.k kVar;
+        b01.kShadow kVar;
         boolean z4;
         String str3;
         ArrayList arrayList;
@@ -335,7 +335,7 @@ public abstract class f0 {
         return new b01.b(str2, str, aVar, str8, str9, str10, str11, z5, z, z2, z3, z8, d, zonedDateTime, zonedDateTime3, z9, zonedDateTime4, i2, cVar4, str15, i3, b8Var, list, kVar, r01.a.a(str18), o0Var.e, e(p0Var.v));
     }
 
-    public static final b01.f e(is.k kVar) {
+    public static final b01.f e(is.kShadow kVar) {
         boolean z = kVar.b;
         boolean z2 = kVar.c;
         boolean z3 = kVar.d;

@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class nt implements aa.m0 {
+public final class nt implements aaShadow.m0 {
     public final qt a;
 
     public nt(qt qtVar) {

@@ -7,7 +7,7 @@ import u10.w00;
 import u10.z00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class mp implements aa.a {
+public final class mp implements aaShadow.a {
     public static final mp a = new mp();
     public static final List b = sy.d0.n("__typename");
 

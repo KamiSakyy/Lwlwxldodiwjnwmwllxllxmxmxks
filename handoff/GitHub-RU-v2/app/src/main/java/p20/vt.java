@@ -5,7 +5,7 @@ import u10.j70;
 import u10.m70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vt implements aa.a {
+public final class vt implements aaShadow.a {
     public static final vt a = new vt();
     public static final List b = sy.d0.n("updatePullRequestReviewComment");
 

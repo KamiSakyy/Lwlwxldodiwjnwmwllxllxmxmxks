@@ -1,6 +1,6 @@
 package kp;
 
-import a61.f0;
+import a61.f0Shadow;
 import go0.z;
 import sy.y;
 import w61.a0;
@@ -63,7 +63,7 @@ public final class c extends c71.j implements j71.e {
                     y.j(obj);
                     z zVar2 = this.x;
                     y71.i o = n1.o(zVar2.B.h(), 2000L);
-                    f0 f0Var = new f0(5, zVar2);
+                    f0Shadow f0Var = new f0Shadow(5, zVar2);
                     this.w = 1;
                     if (o.b(f0Var, this) == aVar2) {
                         return aVar2;

@@ -5,7 +5,7 @@ import jo.ag0;
 import jo.xf0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b00 implements aa.a {
+public final class b00 implements aaShadow.a {
     public static final b00 a = new b00();
     public static final List b = sy.d0.n("updatePullRequestReviewComment");
 

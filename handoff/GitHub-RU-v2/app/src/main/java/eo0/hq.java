@@ -5,7 +5,7 @@ import jn0.t10;
 import jn0.u10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class hq implements aa.a {
+public final class hq implements aaShadow.a {
     public static final hq a = new hq();
     public static final List b = sy.d0.o(new String[]{"readme", "id", "__typename"});
 

@@ -6,27 +6,27 @@ import com.github.service.copilot.AgentTaskStatus$Companion;
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public final class eShadow {
     public static final AgentTaskStatus$Companion Companion;
     public static final Object r;
-    public static final e s;
-    public static final e t;
-    public static final e u;
-    public static final /* synthetic */ e[] v;
+    public static final eShadow s;
+    public static final eShadow t;
+    public static final eShadow u;
+    public static final /* synthetic */ eShadow[] v;
 
     static {
-        e eVar = new e("COMPLETED", 0);
+        eShadow eVar = new eShadow("COMPLETED", 0);
         s = eVar;
-        e eVar2 = new e("IN_PROGRESS", 1);
-        e eVar3 = new e("QUEUED", 2);
-        e eVar4 = new e("FAILED", 3);
-        e eVar5 = new e("WAITING_FOR_USER", 4);
-        e eVar6 = new e("TIMED_OUT", 5);
-        e eVar7 = new e("CANCELLED", 6);
+        eShadow eVar2 = new eShadow("IN_PROGRESS", 1);
+        eShadow eVar3 = new eShadow("QUEUED", 2);
+        eShadow eVar4 = new eShadow("FAILED", 3);
+        eShadow eVar5 = new eShadow("WAITING_FOR_USER", 4);
+        eShadow eVar6 = new eShadow("TIMED_OUT", 5);
+        eShadow eVar7 = new eShadow("CANCELLED", 6);
         t = eVar7;
-        e eVar8 = new e("UNKNOWN", 7);
+        eShadow eVar8 = new eShadow("UNKNOWN", 7);
         u = eVar8;
-        e[] eVarArr = {eVar, eVar2, eVar3, eVar4, eVar5, eVar6, eVar7, eVar8};
+        eShadow[] eVarArr = {eVar, eVar2, eVar3, eVar4, eVar5, eVar6, eVar7, eVar8};
         v = eVarArr;
         v8.l0.t(eVarArr);
         Companion = new AgentTaskStatus$Companion();
@@ -34,10 +34,10 @@ public final class e {
     }
 
     public static e valueOf(String str) {
-        return (e) Enum.valueOf(e.class, str);
+        return (eShadow) Enum.valueOf(eShadow.class, str);
     }
 
-    public static e[] values() {
-        return (e[]) v.clone();
+    public static eShadow[] values() {
+        return (eShadow[]) v.clone();
     }
 }

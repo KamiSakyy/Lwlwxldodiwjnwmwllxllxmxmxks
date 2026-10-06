@@ -307,7 +307,7 @@ public final class t2 implements y71.j {
                         oj0.p2 p2Var = iVar.c;
                         oj0.m2 m2Var2 = p2Var.c;
                         oj0.s2 s2Var = p2Var.d;
-                        oj0.q2 q2Var = s2Var.p;
+                        oj0.q2Shadow q2Var = s2Var.p;
                         String str7 = s2Var.b;
                         String str8 = s2Var.f;
                         jr jrVar2 = s2Var.g;
@@ -325,7 +325,7 @@ public final class t2 implements y71.j {
                             SubscriptionState z17 = sy.r.z(kwVar);
                             List list10 = aVar4 != null ? aVar4.a : null;
                             SubscriptionState z18 = sy.r.z(n2Var2.c.c);
-                            oj0.g3 g3Var = n2Var2.d;
+                            oj0.g3Shadow g3Var = n2Var2.d;
                             String str9 = g3Var.c;
                             aVar5.getClass();
                             aj0.c cVar2 = g3Var.y;
@@ -867,7 +867,7 @@ public final class t2 implements y71.j {
                                         yz0.a2 a2Var = new yz0.a2(i24, i25, i26, z55, h2Var);
                                         yz0.z1 z1Var = (list2 != null || (g5Var2 = (ri0.g5) x61.m.f0(list2)) == null) ? null : new yz0.z1(r4Var.b, g5Var2.b.b);
                                         String str29 = t4Var != null ? t4Var.a : null;
-                                        yz0.c2 c2Var = new yz0.c2(y5Var.E, y5Var.G);
+                                        yz0.c2Shadow c2Var = new yz0.c2(y5Var.E, y5Var.G);
                                         ArrayList a4 = pl0.a.a(r5Var, w4Var, v4Var);
                                         ArrayList S4 = x61.m.S(y5Var.M);
                                         String str30 = str29;
@@ -918,7 +918,7 @@ public final class t2 implements y71.j {
                                         boolean z59 = bVar7.c;
                                         boolean z60 = bVar7.b;
                                         boolean z62 = y5Var.R;
-                                        ri0.a5 a5Var = y5Var.w;
+                                        ri0.a5Shadow a5Var = y5Var.w;
                                         String str32 = a5Var != null ? a5Var.b : null;
                                         String str33 = x4Var != null ? x4Var.a : null;
                                         ZonedDateTime zonedDateTime3 = x4Var != null ? x4Var.b : null;
@@ -946,7 +946,7 @@ public final class t2 implements y71.j {
                                                 boolean z64 = e2Var.c;
                                                 IssueOrPullRequest$ReviewerReviewState issueOrPullRequest$ReviewerReviewState3 = IssueOrPullRequest$ReviewerReviewState.APPROVED;
                                                 if (issueOrPullRequest$ReviewerReviewState2 != issueOrPullRequest$ReviewerReviewState3 || !z64) {
-                                                    yz0.d2 d2Var = e2Var.g;
+                                                    yz0.d2Shadow d2Var = e2Var.g;
                                                     if ((d2Var != null ? d2Var.c : null) != issueOrPullRequest$ReviewerReviewState3) {
                                                         continue;
                                                     } else if (!z64) {
@@ -1095,7 +1095,7 @@ public final class t2 implements y71.j {
                                     }
                                     if (t4Var != null) {
                                     }
-                                    yz0.c2 c2Var2 = new yz0.c2(y5Var.E, y5Var.G);
+                                    yz0.c2Shadow c2Var2 = new yz0.c2(y5Var.E, y5Var.G);
                                     ArrayList a42 = pl0.a.a(r5Var, w4Var, v4Var);
                                     ArrayList S42 = x61.m.S(y5Var.M);
                                     String str302 = str29;
@@ -1124,7 +1124,7 @@ public final class t2 implements y71.j {
                                     boolean z592 = bVar72.c;
                                     boolean z602 = bVar72.b;
                                     boolean z622 = y5Var.R;
-                                    ri0.a5 a5Var2 = y5Var.w;
+                                    ri0.a5Shadow a5Var2 = y5Var.w;
                                     if (a5Var2 != null) {
                                     }
                                     if (x4Var2 != null) {
@@ -1250,7 +1250,7 @@ public final class t2 implements y71.j {
                             }
                             if (t4Var != null) {
                             }
-                            yz0.c2 c2Var22 = new yz0.c2(y5Var.E, y5Var.G);
+                            yz0.c2Shadow c2Var22 = new yz0.c2(y5Var.E, y5Var.G);
                             ArrayList a422 = pl0.a.a(r5Var, w4Var, v4Var);
                             ArrayList S422 = x61.m.S(y5Var.M);
                             String str3022 = str29;
@@ -1279,7 +1279,7 @@ public final class t2 implements y71.j {
                             boolean z5922 = bVar722.c;
                             boolean z6022 = bVar722.b;
                             boolean z6222 = y5Var.R;
-                            ri0.a5 a5Var22 = y5Var.w;
+                            ri0.a5Shadow a5Var22 = y5Var.w;
                             if (a5Var22 != null) {
                             }
                             if (x4Var22 != null) {
@@ -1386,7 +1386,7 @@ public final class t2 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     il0.y yVar = ((il0.w) obj).a;
-                    il0.x xVar = yVar != null ? yVar.a : null;
+                    il0.xShadow xVar = yVar != null ? yVar.a : null;
                     String str2 = "";
                     String str3 = xVar != null ? xVar.a : "";
                     String str4 = xVar != null ? xVar.b : "";
@@ -1555,7 +1555,7 @@ public final class t2 implements y71.j {
                         for (xj xjVar : collection) {
                             yz0.r2 c2 = (xjVar != null ? xjVar.b.b : null) != null ? pl0.f.c(xjVar.b.b) : (xjVar != null ? xjVar.b.c : null) != null ? pl0.f.b(xjVar.b.c) : (xjVar != null ? xjVar.b.d : null) != null ? pl0.f.a(xjVar.b.d) : null;
                             if (c2 != null) {
-                                arrayList.add(c2);
+                                arrayList.add(c2Shadow);
                             }
                         }
                     } else {
@@ -1897,15 +1897,15 @@ public final class t2 implements y71.j {
         Boolean bool;
         e3 e3Var;
         int i5;
-        g3 g3Var;
+        g3Shadow g3Var;
         int i6;
         i3 i3Var;
         int i7;
         ArrayList arrayList2;
-        k3 k3Var;
+        k3Shadow k3Var;
         int i8;
         oj0.v3 v3Var;
-        l3 l3Var;
+        l3Shadow l3Var;
         int i9;
         m3 m3Var;
         int i10;
@@ -2071,7 +2071,7 @@ public final class t2 implements y71.j {
                         i3 = z2Var.v;
                         if (i3 != 0) {
                             sy.y.j(obj6);
-                            kc0.a5 a5Var = ((kc0.c5) obj).a;
+                            kc0.a5Shadow a5Var = ((kc0.c5) obj).a;
                             kc0.f5 f5Var = a5Var.a;
                             x01.i iVar = new x01.i(f5Var.b, f5Var.a, false);
                             List<kc0.e5> list5 = a5Var.b;
@@ -2240,8 +2240,8 @@ public final class t2 implements y71.j {
                 }
                 return w61.a0.a;
             case 5:
-                if (cVar instanceof g3) {
-                    g3Var = (g3) cVar;
+                if (cVar instanceof g3Shadow) {
+                    g3Var = (g3Shadow) cVar;
                     int i35 = g3Var.v;
                     if ((i35 & Integer.MIN_VALUE) != 0) {
                         g3Var.v = i35 - Integer.MIN_VALUE;
@@ -2282,7 +2282,7 @@ public final class t2 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                g3Var = new g3(this, cVar);
+                g3Var = new g3Shadow(this, cVar);
                 Object obj102 = g3Var.u;
                 b71.a aVar72 = b71.a.r;
                 i6 = g3Var.v;
@@ -2349,8 +2349,8 @@ public final class t2 implements y71.j {
                 }
                 return w61.a0.a;
             case 7:
-                if (cVar instanceof k3) {
-                    k3Var = (k3) cVar;
+                if (cVar instanceof k3Shadow) {
+                    k3Var = (k3Shadow) cVar;
                     int i39 = k3Var.v;
                     if ((i39 & Integer.MIN_VALUE) != 0) {
                         k3Var.v = i39 - Integer.MIN_VALUE;
@@ -2383,7 +2383,7 @@ public final class t2 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                k3Var = new k3(this, cVar);
+                k3Var = new k3Shadow(this, cVar);
                 Object obj142 = k3Var.u;
                 b71.a aVar102 = b71.a.r;
                 i8 = k3Var.v;
@@ -2391,8 +2391,8 @@ public final class t2 implements y71.j {
                 }
                 return w61.a0.a;
             case 8:
-                if (cVar instanceof l3) {
-                    l3Var = (l3) cVar;
+                if (cVar instanceof l3Shadow) {
+                    l3Var = (l3Shadow) cVar;
                     int i40 = l3Var.v;
                     if ((i40 & Integer.MIN_VALUE) != 0) {
                         l3Var.v = i40 - Integer.MIN_VALUE;
@@ -2415,7 +2415,7 @@ public final class t2 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                l3Var = new l3(this, cVar);
+                l3Var = new l3Shadow(this, cVar);
                 Object obj152 = l3Var.u;
                 b71.a aVar112 = b71.a.r;
                 i9 = l3Var.v;
@@ -2573,14 +2573,14 @@ public final class t2 implements y71.j {
                         if (i14 != 0) {
                             sy.y.j(obj21);
                             dl0.o0 o0Var = ((dl0.k0) obj).a;
-                            dl0.n0 n0Var = null;
+                            dl0.n0Shadow n0Var = null;
                             if (((o0Var == null || (l0Var2 = o0Var.b) == null) ? null : l0Var2.b) != null) {
                                 mg0.z zVar = o0Var.b.b.c;
                                 String str10 = zVar.b;
                                 mg0.y yVar = zVar.c;
                                 int i47 = yVar.b;
                                 List e = sy.p.e(yVar);
-                                mg0.x xVar = yVar.c;
+                                mg0.xShadow xVar = yVar.c;
                                 d = new h01.q(str10, i47, e, xVar.a, xVar.b, xVar.c, xVar.d);
                             } else {
                                 if (o0Var != null && (l0Var = o0Var.b) != null) {
@@ -2684,7 +2684,7 @@ public final class t2 implements y71.j {
                         if (i17 != 0) {
                             sy.y.j(obj24);
                             dl0.o0 o0Var2 = ((dl0.k0) obj).a;
-                            dl0.n0 n0Var2 = null;
+                            dl0.n0Shadow n0Var2 = null;
                             if (((o0Var2 == null || (l0Var4 = o0Var2.b) == null) ? null : l0Var4.b) != null) {
                                 obj2 = sy.p.e(o0Var2.b.b.c.c);
                             } else {

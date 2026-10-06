@@ -3,7 +3,7 @@ package xn;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class u1 extends w1 {
+public final class u1 extends w1Shadow {
     public final Object a;
 
     public u1(List list) {

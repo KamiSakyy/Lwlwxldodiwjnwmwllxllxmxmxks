@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class h70 implements aa.n0 {
+public final class h70 implements aaShadow.n0 {
     public static final d70 Companion = new d70();
     public final ArrayList r;
     public final aa.u0 s;

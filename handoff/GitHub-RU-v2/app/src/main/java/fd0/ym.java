@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ym implements aa.a {
+public final class ym implements aaShadow.a {
     public static final ym a = new ym();
     public static final List b = sy.d0.n("repository");
 

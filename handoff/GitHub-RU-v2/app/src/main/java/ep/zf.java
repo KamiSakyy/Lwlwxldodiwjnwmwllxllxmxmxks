@@ -3,14 +3,14 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zf implements aa.a {
+public final class zf implements aaShadow.a {
     public static final zf a = new zf();
     public static final List b = sy.d0.o("actor", "pullRequest");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.nn nnVar = null;
+        jo.nnShadow nnVar = null;
         jo.tn tnVar = null;
         while (true) {
             int r0 = eVar.r0(b);

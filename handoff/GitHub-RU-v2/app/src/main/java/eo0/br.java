@@ -5,7 +5,7 @@ import jn0.r20;
 import jn0.u20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class br implements aa.a {
+public final class br implements aaShadow.a {
     public static final br a = new br();
     public static final List b = sy.d0.o(new String[]{"issueCount", "pageInfo", "nodes"});
 

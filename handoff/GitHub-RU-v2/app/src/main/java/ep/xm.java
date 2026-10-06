@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xm implements aa.a {
+public final class xm implements aaShadow.a {
     public static final xm a = new xm();
     public static final List b = sy.d0.o("name", "type", "mode", "submodule");
 

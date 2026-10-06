@@ -5,7 +5,7 @@ import jo.sd0;
 import jo.td0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class my implements aa.a {
+public final class my implements aaShadow.a {
     public static final my a = new my();
     public static final List b = sy.d0.n("updateNotificationSettings");
 

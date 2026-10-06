@@ -5,7 +5,7 @@ import jo.wc0;
 import jo.xc0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yx implements aa.a {
+public final class yx implements aaShadow.a {
     public static final yx a = new yx();
     public static final List b = sy.d0.n("issueComment");
 
@@ -14,7 +14,7 @@ public final class yx implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         wc0 wc0Var = null;
         while (eVar.r0(b) == 0) {
-            wc0Var = (wc0) aa.c.b(aa.c.c(xx.a, true)).a(eVar, wVar);
+            wc0Var = (wc0) aa.c.b(aa.c.c(xxShadow.a, true)).a(eVar, wVar);
         }
         return new xc0(wc0Var);
     }
@@ -25,6 +25,6 @@ public final class yx implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xc0Var, "value");
         fVar.z0("issueComment");
-        aa.c.b(aa.c.c(xx.a, true)).b(fVar, wVar, xc0Var.a);
+        aa.c.b(aa.c.c(xxShadow.a, true)).b(fVar, wVar, xc0Var.a);
     }
 }

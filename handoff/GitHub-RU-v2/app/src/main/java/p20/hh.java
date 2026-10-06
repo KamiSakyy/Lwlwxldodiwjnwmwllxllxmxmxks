@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hh implements aa.a {
+public final class hh implements aaShadow.a {
     public static final hh a = new hh();
     public static final List b = sy.d0.o("__typename", "id", "url", "name", "tagName", "tagCommit", "author", "descriptionHTML", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "releaseAssets", "discussion", "mentions");
 

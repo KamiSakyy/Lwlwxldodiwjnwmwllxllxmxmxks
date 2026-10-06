@@ -492,7 +492,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
         int i2;
         qg0 qg0Var;
         com.github.service.wrapper.bShadow bVar2;
-        vb0.m7 m7Var;
+        vb0.m7Shadow m7Var;
         int i3;
         c80 c80Var;
         com.github.service.wrapper.bShadow bVar3;

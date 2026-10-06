@@ -477,7 +477,7 @@ public final class m implements y71.j {
                 }
                 break;
             case 6:
-                if (cVar instanceof g1.a) {
+                if (cVar instanceof g1Shadow.a) {
                     aVar = (g1.a) cVar;
                     int i41 = aVar.v;
                     if ((i41 & Integer.MIN_VALUE) != 0) {

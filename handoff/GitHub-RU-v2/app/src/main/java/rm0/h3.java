@@ -10,7 +10,7 @@ public final class h3 implements z01.z, yb0 {
     public static final d3 Companion = new d3();
     public final com.github.service.wrapper.j r;
     public final v71.v s;
-    public v71.d1 t;
+    public v71.d1Shadow t;
 
     public h3(com.github.service.wrapper.j jVar, v71.v vVar) {
         k71.k.g(jVar, "client");
@@ -27,7 +27,7 @@ public final class h3 implements z01.z, yb0 {
     @Override // z01.z
     public final y71.i b(String str, boolean z) {
         k71.k.g(str, "query");
-        v71.d1 d1Var = this.t;
+        v71.d1Shadow d1Var = this.t;
         if (d1Var != null) {
             d1Var.m((CancellationException) null);
         }

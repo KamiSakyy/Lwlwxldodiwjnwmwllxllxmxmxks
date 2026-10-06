@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class t6 implements aa.a {
+public final class t6 implements aaShadow.a {
     public static final t6 a = new t6();
     public static final List b = sy.d0.n("node");
 

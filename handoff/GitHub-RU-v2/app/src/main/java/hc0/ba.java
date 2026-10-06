@@ -2,7 +2,7 @@ package hc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class ba {
-    public static final aa Companion = new aa();
+    public static final aaShadow Companion = new aaShadow();
     public static final aa.q0 a;
 
     static {

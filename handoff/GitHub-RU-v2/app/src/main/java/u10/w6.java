@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class w6 implements aa.m0 {
+public final class w6 implements aaShadow.m0 {
     public final v6 a;
 
     public w6(v6 v6Var) {

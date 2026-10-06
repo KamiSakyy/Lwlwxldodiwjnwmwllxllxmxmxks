@@ -5,7 +5,7 @@ import kc0.j00;
 import kc0.m00;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class dp implements aa.a {
+public final class dp implements aaShadow.a {
     public static final dp a = new dp();
     public static final List b = sy.d0.n("assignable");
 

@@ -5,7 +5,7 @@ import u10.q50;
 import u10.z50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ls implements aa.a {
+public final class ls implements aaShadow.a {
     public static final ls a = new ls();
     public static final List b = sy.d0.n("updatePullRequestBranch");
 

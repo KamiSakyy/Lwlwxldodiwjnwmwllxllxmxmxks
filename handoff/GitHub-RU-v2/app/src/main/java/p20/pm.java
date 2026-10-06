@@ -5,7 +5,7 @@ import u10.ax;
 import u10.yw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class pm implements aa.a {
+public final class pm implements aaShadow.a {
     public static final pm a = new pm();
     public static final List b = sy.d0.o("issue", "id", "__typename");
 

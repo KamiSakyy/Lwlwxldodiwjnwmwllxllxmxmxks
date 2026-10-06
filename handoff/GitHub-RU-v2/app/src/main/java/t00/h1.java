@@ -1,13 +1,13 @@
 package t00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h1 extends c71.c {
+public final class h1Shadow extends c71.c {
     public /* synthetic */ Object u;
     public int v;
-    public final /* synthetic */ f1 w;
+    public final /* synthetic */ f1Shadow w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public h1(f1 f1Var, a71.c cVar) {
+    public h1(f1Shadow f1Var, a71.c cVar) {
         super(cVar);
         this.w = f1Var;
     }

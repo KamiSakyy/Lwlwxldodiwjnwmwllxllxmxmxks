@@ -5,7 +5,7 @@ import jn0.fe0;
 import jn0.ge0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uy implements aa.a {
+public final class uy implements aaShadow.a {
     public static final uy a = new uy();
     public static final List b = sy.d0.n("user");
 

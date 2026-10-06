@@ -30,7 +30,7 @@ import com.github.rudroid.widget.WidgetUIState;
 import com.github.service.models.response.type.MobileAuthRequestType;
 import com.google.android.gms.internal.measurement.i4;
 import com.google.android.gms.internal.measurement.z3;
-import d1.c2;
+import d1.c2Shadow;
 import d1.i1;
 import f0.z1;
 import f1.a4;
@@ -465,7 +465,7 @@ public final /* synthetic */ class q implements j71.e {
                     l3.p pVar = z1Var2.b;
                     p0Var = new p0(g0.b(pVar.m((int) (j9 >> 32)), pVar.m((int) (j9 & 4294967295L))));
                 }
-                d1.t.a(aVar3, context, j8, str7, p0Var, z1Var2.i, new c2(z1Var2, zVar, context, 0));
+                d1.t.a(aVar3, context, j8, str7, p0Var, z1Var2.i, new c2Shadow(z1Var2, zVar, context, 0));
                 return a0Var;
             case 19:
                 ((Integer) obj2).getClass();

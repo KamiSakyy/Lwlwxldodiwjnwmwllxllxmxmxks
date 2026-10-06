@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class or implements aa.v0 {
+public final class or implements aaShadow.v0 {
     public final pr a;
 
     public or(pr prVar) {

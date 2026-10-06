@@ -5,7 +5,7 @@ import jo.y60;
 import jo.z60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class au implements aa.a {
+public final class au implements aaShadow.a {
     public static final au a = new au();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 
@@ -17,7 +17,7 @@ public final class au implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                y60Var = (y60) aa.c.c(zt.a, false).a(eVar, wVar);
+                y60Var = (y60) aa.c.c(ztShadow.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 1) {
                     break;
@@ -38,7 +38,7 @@ public final class au implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(z60Var, "value");
         fVar.z0("pageInfo");
-        aa.c.c(zt.a, false).b(fVar, wVar, z60Var.a);
+        aa.c.c(ztShadow.a, false).b(fVar, wVar, z60Var.a);
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(yt.a, true)))).b(fVar, wVar, z60Var.b);
     }

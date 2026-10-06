@@ -5,7 +5,7 @@ import jo.jg0;
 import jo.kg0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class k00 implements aa.a {
+public final class k00 implements aaShadow.a {
     public static final k00 a = new k00();
     public static final List b = sy.d0.n("shortcut");
 

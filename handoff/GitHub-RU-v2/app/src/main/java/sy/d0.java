@@ -238,7 +238,7 @@ public abstract class d0 {
         File databasePath = context.getDatabasePath("androidx.work.workdb");
         k71.k.f(databasePath, "getDatabasePath(...)");
         if (databasePath.exists()) {
-            v8.x a = v8.x.a();
+            v8.xShadow a = v8.x.a();
             String[] strArr = w8.m.a;
             a.getClass();
             File databasePath2 = context.getDatabasePath("androidx.work.workdb");
@@ -259,7 +259,7 @@ public abstract class d0 {
                 File file2 = (File) entry.getValue();
                 if (file.exists()) {
                     if (file2.exists()) {
-                        v8.x a2 = v8.x.a();
+                        v8.xShadow a2 = v8.x.a();
                         String[] strArr3 = w8.m.a;
                         file2.toString();
                         a2.getClass();
@@ -271,7 +271,7 @@ public abstract class d0 {
                         file.toString();
                         file2.toString();
                     }
-                    v8.x a3 = v8.x.a();
+                    v8.xShadow a3 = v8.x.a();
                     String[] strArr4 = w8.m.a;
                     a3.getClass();
                 }

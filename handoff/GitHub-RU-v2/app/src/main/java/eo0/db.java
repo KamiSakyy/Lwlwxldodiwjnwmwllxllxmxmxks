@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class db implements aa.a {
+public final class db implements aaShadow.a {
     public static final db a = new db();
     public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
 

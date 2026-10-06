@@ -5,7 +5,7 @@ import java.util.List;
 import u10.s80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qu implements aa.a {
+public final class qu implements aaShadow.a {
     public static final qu a = new qu();
     public static final List b = sy.d0.n("weeks");
 

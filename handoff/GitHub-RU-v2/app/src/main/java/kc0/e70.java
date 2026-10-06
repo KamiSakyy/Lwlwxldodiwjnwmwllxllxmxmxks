@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e70 implements aa.m0 {
+public final class e70 implements aaShadow.m0 {
     public final f70 a;
 
     public e70(f70 f70Var) {

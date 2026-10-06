@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yf implements aa.a {
+public final class yf implements aaShadow.a {
     public static final yf a = new yf();
     public static final List b = sy.d0.o("abbreviatedOid", "committedDate", "id", "__typename");
 

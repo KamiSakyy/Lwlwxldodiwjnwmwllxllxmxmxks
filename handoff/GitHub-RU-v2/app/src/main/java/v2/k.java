@@ -82,7 +82,7 @@ public abstract class k extends w1Shadow.q {
             qVar.f32949t = f6;
             int i10 = this.f32949t;
             int i11 = f6 & 2;
-            if (i11 != 0 && (i10 & 2) != 0 && !(this instanceof x)) {
+            if (i11 != 0 && (i10 & 2) != 0 && !(this instanceof xShadow)) {
                 t2.a.b("Delegating to multiple LayoutModifierNodes without the delegating node implementing LayoutModifierNode itself is not allowed.\nDelegating Node: " + this + "\nDelegate Node: " + qVar);
             }
             qVar.f32952w = this.G;

@@ -5,7 +5,7 @@ import jn0.eg0;
 import jn0.fg0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class yz implements aa.a {
+public final class yz implements aaShadow.a {
     public static final yz a = new yz();
     public static final List b = sy.d0.o(new String[]{"viewer", "id", "__typename"});
 

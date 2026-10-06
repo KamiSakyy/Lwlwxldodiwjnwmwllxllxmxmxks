@@ -5,7 +5,7 @@ import u10.dx;
 import u10.gx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vm implements aa.a {
+public final class vm implements aaShadow.a {
     public static final vm a = new vm();
     public static final List b = sy.d0.o("issueCount", "pageInfo", "nodes");
 

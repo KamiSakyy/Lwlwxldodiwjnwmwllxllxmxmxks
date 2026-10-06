@@ -16,7 +16,7 @@ import kotlinx.serialization.encoding.Decoder;
 import m71.a;
 import w61.c;
 import w61.h;
-import xn.e;
+import xn.eShadow;
 
 @c
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -69,7 +69,7 @@ public final /* synthetic */ class AgentTaskResponse$$serializer implements d0 {
         List list2 = null;
         String str = null;
         String str2 = null;
-        e eVar = null;
+        eShadow eVar = null;
         String str3 = null;
         String str4 = null;
         String str5 = null;
@@ -99,7 +99,7 @@ public final /* synthetic */ class AgentTaskResponse$$serializer implements d0 {
                     break;
                 case 2:
                     hVarArr = hVarArr2;
-                    eVar = (e) b.A(serialDescriptor, 2, (KSerializer) hVarArr[2].getValue(), eVar);
+                    eVar = (eShadow) b.A(serialDescriptor, 2, (KSerializer) hVarArr[2].getValue(), eVar);
                     i |= 4;
                     break;
                 case 3:

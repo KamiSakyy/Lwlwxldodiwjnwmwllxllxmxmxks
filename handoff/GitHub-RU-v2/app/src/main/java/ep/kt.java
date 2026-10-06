@@ -5,7 +5,7 @@ import jo.b60;
 import jo.y50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kt implements aa.a {
+public final class kt implements aaShadow.a {
     public static final kt a = new kt();
     public static final List b = sy.d0.n("assignable");
 

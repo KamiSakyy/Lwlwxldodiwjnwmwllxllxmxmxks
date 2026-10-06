@@ -5,8 +5,8 @@ import jo.fb0;
 import jo.hb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yw implements aa.a {
-    public static final yw a = new yw();
+public final class ywShadow implements aaShadow.a {
+    public static final ywShadow a = new ywShadow();
     public static final List b = sy.d0.o("clientMutationId", "pullRequest");
 
     public final Object a(ea.e eVar, aa.w wVar) {

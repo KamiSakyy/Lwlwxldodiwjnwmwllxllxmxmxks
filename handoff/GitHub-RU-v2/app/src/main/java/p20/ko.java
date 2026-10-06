@@ -5,7 +5,7 @@ import u10.mz;
 import u10.nz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ko implements aa.a {
+public final class ko implements aaShadow.a {
     public static final ko a = new ko();
     public static final List b = sy.d0.o("topRepositories", "id", "__typename");
 

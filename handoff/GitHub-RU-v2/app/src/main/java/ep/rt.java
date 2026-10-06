@@ -5,7 +5,7 @@ import jo.o60;
 import jo.s60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rt implements aa.a {
+public final class rt implements aaShadow.a {
     public static final rt a = new rt();
     public static final List b = sy.d0.o("shortcuts", "id", "__typename");
 

@@ -776,7 +776,7 @@ public final class e8 implements y71.j {
         int i;
         g8 g8Var;
         int i2;
-        yz0.a7 s;
+        yz0.a7Shadow s;
         jn0.a1 a1Var;
         jn0.a1 a1Var2;
         i8 i8Var;
@@ -787,7 +787,7 @@ public final class e8 implements y71.j {
         String str;
         String str2;
         ArrayList arrayList;
-        yz0.k3 k3Var;
+        yz0.k3Shadow k3Var;
         boolean z;
         CommentLevelType commentLevelType;
         gq gqVar;
@@ -802,7 +802,7 @@ public final class e8 implements y71.j {
         int i4;
         k8 k8Var;
         int i5;
-        yz0.a7 s2;
+        yz0.a7Shadow s2;
         v50 v50Var;
         l8 l8Var;
         int i6;
@@ -1102,7 +1102,7 @@ public final class e8 implements y71.j {
                             b71.a aVar7 = aVar4;
                             fq fqVar4 = fqVar2;
                             ArrayList arrayList7 = arrayList6;
-                            uu0.k3 k3Var2 = fqVar4.c;
+                            uu0.k3Shadow k3Var2 = fqVar4.c;
                             String str18 = k3Var2.d;
                             String str19 = k3Var2.c;
                             uu0.h3 h3Var = k3Var2.h;

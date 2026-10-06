@@ -4,7 +4,7 @@ import java.util.List;
 import jo.x80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class iv implements aa.a {
+public abstract class iv implements aaShadow.a {
     public static final List a = sy.d0.n("id");
 
     public static x80 c(ea.e eVar, aa.w wVar) {

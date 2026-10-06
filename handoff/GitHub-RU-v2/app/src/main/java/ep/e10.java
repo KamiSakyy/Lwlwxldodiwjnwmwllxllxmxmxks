@@ -5,8 +5,8 @@ import jo.sh0;
 import jo.wh0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e10 implements aa.a {
-    public static final e10 a = new e10();
+public final class e10Shadow implements aaShadow.a {
+    public static final e10Shadow a = new e10Shadow();
     public static final List b = sy.d0.o("user", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

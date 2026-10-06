@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yg implements aa.m0 {
+public final class yg implements aaShadow.m0 {
     public final zg a;
 
     public yg(zg zgVar) {

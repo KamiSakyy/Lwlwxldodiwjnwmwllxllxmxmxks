@@ -66,10 +66,10 @@ public final class e2 implements s3.c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object f(c71.c cVar) {
-        c2 c2Var;
+        c2Shadow c2Var;
         int i;
-        if (cVar instanceof c2) {
-            c2Var = (c2) cVar;
+        if (cVar instanceof c2Shadow) {
+            c2Var = (c2Shadow) cVar;
             int i10 = c2Var.f24933w;
             if ((i10 & Integer.MIN_VALUE) != 0) {
                 c2Var.f24933w = i10 - Integer.MIN_VALUE;
@@ -93,7 +93,7 @@ public final class e2 implements s3.c {
                 return w61.a0.a;
             }
         }
-        c2Var = new c2(this, cVar);
+        c2Var = new c2Shadow(this, cVar);
         Object obj2 = c2Var.f24931u;
         b71.a aVar2 = b71.a.r;
         i = c2Var.f24933w;

@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mg implements aa.a {
+public final class mg implements aaShadow.a {
     public static final mg a = new mg();
     public static final List b = sy.d0.o(new String[]{"teams", "id", "__typename"});
 

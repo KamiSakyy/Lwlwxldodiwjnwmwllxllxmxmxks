@@ -175,14 +175,14 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 k71.k.g(str, "id");
                 aa.u0 u0Var2 = new aa.u0(l00.t);
                 aa.t0 t0Var2 = aa.t0.d;
-                aa.n0 ze0Var = new ze0(str, u0Var2, t0Var2, t0Var2, t0Var2, t0Var2);
+                aa.n0Shadow ze0Var = new ze0(str, u0Var2, t0Var2, t0Var2, t0Var2, t0Var2);
                 com.github.service.wrapper.bShadow bVar2 = this.t;
                 return y71.n1.y(new t00.w3(new y00.l(in.r.m(in.r.h(bVar2.d(ze0Var)), bVar2, new gv.g4(), str, new sw0.e(20)), 10), 23), this.u);
             case 2:
                 k71.k.g(str, "id");
                 aa.u0 u0Var3 = new aa.u0(lm.t);
                 aa.t0 t0Var3 = aa.t0.d;
-                aa.n0 l60Var = new l60(str, u0Var3, t0Var3, t0Var3, t0Var3, t0Var3, t0Var3);
+                aa.n0Shadow l60Var = new l60(str, u0Var3, t0Var3, t0Var3, t0Var3, t0Var3, t0Var3);
                 com.github.service.wrapper.bShadow bVar3 = this.t;
                 return y71.n1.y(new vb0.t3(new y00.l(in.r.m(in.r.h(bVar3.d(l60Var)), bVar3, new z70.m3(0), str, new v00.n(17)), 10), 7), this.u);
             default:
@@ -544,12 +544,12 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 return y71.n1.y(new d5(new y00.l(in.r.m(in.r.h(bVar.d(z4Var)), bVar, new ri0.w3(), str, new s(6)), 10), 3), this.u);
             case 1:
                 k71.k.g(str, "id");
-                aa.n0 p5Var = new jo.p5(str);
+                aa.n0Shadow p5Var = new jo.p5(str);
                 com.github.service.wrapper.bShadow bVar2 = this.t;
                 return y71.n1.y(new t00.w3(new y00.l(in.r.m(in.r.h(bVar2.d(p5Var)), bVar2, new gv.g4(), str, new sw0.e(22)), 10), 17), this.u);
             case 2:
                 k71.k.g(str, "id");
-                aa.n0 z4Var2 = new u10.z4(str);
+                aa.n0Shadow z4Var2 = new u10.z4(str);
                 com.github.service.wrapper.bShadow bVar3 = this.t;
                 return y71.n1.y(new vb0.t3(new y00.l(in.r.m(in.r.h(bVar3.d(z4Var2)), bVar3, new z70.m3(0), str, new v00.n(19)), 10), 1), this.u);
             default:

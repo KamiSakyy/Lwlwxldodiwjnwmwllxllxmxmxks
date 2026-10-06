@@ -8,7 +8,7 @@ import androidx.compose.runtime.i3;
 import androidx.compose.runtime.n;
 import androidx.compose.runtime.t;
 import f0.j;
-import h0.h1;
+import h0.h1Shadow;
 import k71.k;
 import m0.s;
 import m0.u;
@@ -183,7 +183,7 @@ public final class h {
                                             };
                                             sVar6.n0(N2);
                                         }
-                                        com.google.common.util.concurrent.a.c(a2.i.f(rVar3, (j71.c) N2), sVar7, (d2) null, iVar4, w1.c.B, (h1) null, false, (j) null, cVar, sVar6, 196608, 460);
+                                        com.google.common.util.concurrent.a.c(a2.i.f(rVar3, (j71.c) N2), sVar7, (d2) null, iVar4, w1.c.B, (h1Shadow) null, false, (j) null, cVar, sVar6, 196608, 460);
                                         return a0.a;
                                     }
                                 }, sVar2), sVar2, ((i6 >> 9) & 14) | 200064, 18);
@@ -247,7 +247,7 @@ public final class h {
                                     };
                                     sVar6.n0(N2);
                                 }
-                                com.google.common.util.concurrent.a.c(a2.i.f(rVar3, (j71.c) N2), sVar7, (d2) null, iVar4, w1.c.B, (h1) null, false, (j) null, cVar, sVar6, 196608, 460);
+                                com.google.common.util.concurrent.a.c(a2.i.f(rVar3, (j71.c) N2), sVar7, (d2) null, iVar4, w1.c.B, (h1Shadow) null, false, (j) null, cVar, sVar6, 196608, 460);
                                 return a0.a;
                             }
                         }, sVar2), sVar2, ((i6 >> 9) & 14) | 200064, 18);

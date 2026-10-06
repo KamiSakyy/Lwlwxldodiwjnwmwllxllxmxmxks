@@ -5,7 +5,7 @@ import jo.c90;
 import jo.t80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ev implements aa.a {
+public final class ev implements aaShadow.a {
     public static final ev a = new ev();
     public static final List b = sy.d0.o("repository", "id", "__typename");
 
@@ -18,7 +18,7 @@ public final class ev implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                c90Var = (c90) aa.c.b(aa.c.c(nv.a, false)).a(eVar, wVar);
+                c90Var = (c90) aa.c.b(aa.c.c(nvShadow.a, false)).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -45,7 +45,7 @@ public final class ev implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(t80Var, "value");
         fVar.z0("repository");
-        aa.c.b(aa.c.c(nv.a, false)).b(fVar, wVar, t80Var.a);
+        aa.c.b(aa.c.c(nvShadow.a, false)).b(fVar, wVar, t80Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, t80Var.b);

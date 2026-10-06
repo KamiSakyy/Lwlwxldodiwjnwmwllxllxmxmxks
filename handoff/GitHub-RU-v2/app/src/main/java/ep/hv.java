@@ -5,7 +5,7 @@ import jo.e90;
 import jo.w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class hv implements aa.a {
+public abstract class hv implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"timelineItem", "id"});
 
     public static w80 c(ea.e eVar, aa.w wVar) {
@@ -16,7 +16,7 @@ public abstract class hv implements aa.a {
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
-                e90Var = (e90) aa.c.b(aa.c.c(pv.a, true)).a(eVar, wVar);
+                e90Var = (e90) aa.c.b(aa.c.c(pvShadow.a, true)).a(eVar, wVar);
             } else {
                 if (r0 != 1) {
                     break;
@@ -36,7 +36,7 @@ public abstract class hv implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(w80Var, "value");
         fVar.z0("timelineItem");
-        aa.c.b(aa.c.c(pv.a, true)).b(fVar, wVar, w80Var.a);
+        aa.c.b(aa.c.c(pvShadow.a, true)).b(fVar, wVar, w80Var.a);
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, w80Var.b);
     }

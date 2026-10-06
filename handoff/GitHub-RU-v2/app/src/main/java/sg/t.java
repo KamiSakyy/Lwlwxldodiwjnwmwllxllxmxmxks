@@ -120,7 +120,7 @@ public final class t {
             rVar3 = rVar2;
             i3 |= sVar.f(rVar3) ? 32 : 16;
             if ((i & 384) == 0) {
-                i3 |= sVar.g(z) ? 256 : 128;
+                i3 |= sVar.g(zShadow) ? 256 : 128;
             }
             if ((i & 3072) == 0) {
                 i3 |= sVar.h(cVar) ? 2048 : 1024;

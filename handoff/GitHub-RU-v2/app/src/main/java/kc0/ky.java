@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ky implements aa.w0 {
+public final class ky implements aaShadow.w0 {
     public static final hy Companion = new hy();
     public final String r;
     public final String s;
@@ -77,14 +77,14 @@ public final class ky implements aa.w0 {
         fVar.z0("defaultBranch");
         aa.c.f.b(fVar, wVar, Boolean.valueOf(this.t));
         aa.u0 u0Var = this.u;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("branch");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         fVar.z0("qualifiedName");
         bVar.b(fVar, wVar, this.v);
         aa.u0 u0Var2 = this.w;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("includeIssueTemplateProperties");
             aa.c.d(aa.c.k).d(fVar, wVar, u0Var2);
         } else if (z) {

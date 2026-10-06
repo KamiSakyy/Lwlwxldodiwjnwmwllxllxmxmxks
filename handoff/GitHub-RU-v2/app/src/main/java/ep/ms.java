@@ -5,8 +5,8 @@ import jo.r40;
 import jo.u40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ms implements aa.a {
-    public static final ms a = new ms();
+public final class msShadow implements aaShadow.a {
+    public static final msShadow a = new msShadow();
     public static final List b = sy.d0.o("issueCount", "pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {

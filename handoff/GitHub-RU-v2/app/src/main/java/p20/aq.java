@@ -5,7 +5,7 @@ import u10.x10;
 import u10.y10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class aq implements aa.a {
+public final class aq implements aaShadow.a {
     public static final aq a = new aq();
     public static final List b = sy.d0.n("unfollowUser");
 

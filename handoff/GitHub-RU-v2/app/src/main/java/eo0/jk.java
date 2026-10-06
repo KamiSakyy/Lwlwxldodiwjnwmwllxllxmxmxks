@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jk implements aa.a {
+public final class jk implements aaShadow.a {
     public static final jk a = new jk();
     public static final List b = sy.d0.n("clientMutationId");
 

@@ -5,7 +5,7 @@ import jo.sb0;
 import jo.tb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gx implements aa.a {
+public final class gx implements aaShadow.a {
     public static final gx a = new gx();
     public static final List b = sy.d0.o("__typename", "subscribable");
 

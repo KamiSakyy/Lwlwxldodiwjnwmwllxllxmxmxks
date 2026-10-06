@@ -47,7 +47,7 @@ import rm0.g0;
 import rm0.t;
 import rm0.v;
 import rm0.w;
-import rm0.x;
+import rm0.xShadow;
 import sy.y;
 import v8.l0;
 import w61.a0;
@@ -261,7 +261,7 @@ public final class f implements y71.j {
         o7 o7Var;
         List list2;
         o7 o7Var2;
-        x xVar;
+        xShadow xVar;
         int i28;
         rm0.a0 a0Var;
         int i29;
@@ -1255,7 +1255,7 @@ public final class f implements y71.j {
                 return a0.a;
             case 25:
                 if (cVar instanceof x) {
-                    xVar = (x) cVar;
+                    xVar = (xShadow) cVar;
                     int i64 = xVar.v;
                     if ((i64 & Integer.MIN_VALUE) != 0) {
                         xVar.v = i64 - Integer.MIN_VALUE;
@@ -1278,7 +1278,7 @@ public final class f implements y71.j {
                         return a0.a;
                     }
                 }
-                xVar = new x(this, cVar);
+                xVar = new xShadow(this, cVar);
                 Object obj292 = xVar.u;
                 b71.a aVar392 = b71.a.r;
                 i28 = xVar.v;

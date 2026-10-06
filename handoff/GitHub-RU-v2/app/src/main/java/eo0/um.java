@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class um implements aa.a {
+public final class um implements aaShadow.a {
     public static final um a = new um();
     public static final List b = sy.d0.o(new String[]{"repositoryOwner", "id", "__typename"});
 

@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ry implements aa.m0 {
+public final class ry implements aaShadow.m0 {
     public final sy a;
 
     public ry(sy syVar) {

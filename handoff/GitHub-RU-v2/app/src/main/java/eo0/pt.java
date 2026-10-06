@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.l60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class pt implements aa.a {
+public abstract class pt implements aaShadow.a {
     public static final List a = sy.d0.n("id");
 
     public static l60 c(ea.e eVar, aa.w wVar) {

@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class o90 implements aa.m0 {
+public final class o90 implements aaShadow.m0 {
     public final p90 a;
 
     public o90(p90 p90Var) {

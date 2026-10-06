@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class lu implements aa.m0 {
+public final class lu implements aaShadow.m0 {
     public final mu a;
 
     public lu(mu muVar) {

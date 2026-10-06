@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class du implements aa.m0 {
+public final class du implements aaShadow.m0 {
     public final hu a;
 
     public du(hu huVar) {

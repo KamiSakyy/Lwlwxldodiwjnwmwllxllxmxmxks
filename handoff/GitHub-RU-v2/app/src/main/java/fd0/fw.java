@@ -5,7 +5,7 @@ import kc0.va0;
 import kc0.wa0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class fw implements aa.a {
+public final class fw implements aaShadow.a {
     public static final fw a = new fw();
     public static final List b = sy.d0.n("viewer");
 

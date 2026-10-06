@@ -5,7 +5,7 @@ import u10.f10;
 import u10.g10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rp implements aa.a {
+public final class rp implements aaShadow.a {
     public static final rp a = new rp();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 

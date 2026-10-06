@@ -55,7 +55,7 @@ public final /* synthetic */ class y implements j71.c {
             case 3:
                 b1 b1Var2 = (b1) obj;
                 k71.k.g(b1Var2, "data");
-                g1 g1Var = b1Var2.b.a.c;
+                g1Shadow g1Var = b1Var2.b.a.c;
                 boolean z3 = g1Var.a;
                 String str2 = g1Var.c;
                 return new x01.i(str2, z3, str2 == null);
@@ -68,7 +68,7 @@ public final /* synthetic */ class y implements j71.c {
                 b1 b1Var4 = (b1) obj;
                 k71.k.g(b1Var4, "data");
                 i1 i1Var = b1Var4.b.a;
-                g1 g1Var2 = i1Var.c;
+                g1Shadow g1Var2 = i1Var.c;
                 x01.i iVar2 = new x01.i(g1Var2.c, g1Var2.a, !g1Var2.b);
                 List<d1> list3 = i1Var.b;
                 if (list3 != null) {

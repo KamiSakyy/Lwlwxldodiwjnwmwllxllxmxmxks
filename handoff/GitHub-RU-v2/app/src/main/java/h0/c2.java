@@ -1,7 +1,7 @@
 package h0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class c2 extends c71.c {
+public final class c2Shadow extends c71.c {
 
     /* renamed from: u, reason: collision with root package name */
     public /* synthetic */ Object f24931u;

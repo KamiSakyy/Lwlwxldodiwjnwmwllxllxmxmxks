@@ -9,7 +9,7 @@ import f1.s0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 {
+public final class a0Shadow {
     /* JADX WARN: Removed duplicated region for block: B:105:0x01ba  */
     /* JADX WARN: Removed duplicated region for block: B:106:0x00e3  */
     /* JADX WARN: Removed duplicated region for block: B:109:0x00c4  */
@@ -22,10 +22,10 @@ public final class a0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void a(w1.r rVar, d2 d2Var, j71.a aVar, z zVar, f0.v vVar, s0 s0Var, boolean z, p0 p0Var, r1.d dVar, androidx.compose.runtime.s sVar, int i, int i2) {
+    public static final void a(w1.r rVar, d2 d2Var, j71.a aVar, zShadow zVar, f0.v vVar, s0 s0Var, boolean z, p0 p0Var, r1.d dVar, androidx.compose.runtime.s sVar, int i, int i2) {
         int i3;
         d2 d2Var2;
-        z zVar2;
+        zShadow zVar2;
         s0 s0Var2;
         boolean z2;
         p0 p0Var2;
@@ -33,12 +33,12 @@ public final class a0 {
         p0 p0Var3;
         boolean z3;
         s0 s0Var3;
-        z zVar3;
+        zShadow zVar3;
         d2 d2Var3;
         b2 t;
         s0 s0Var4;
         p0 p0Var4;
-        z zVar4;
+        zShadow zVar4;
         int i4;
         d2 d2Var4;
         boolean z4;
@@ -234,6 +234,6 @@ public final class a0 {
         List r = x61.l.r(new d2.t[]{new d2.t(ih.d.b(sVar).K0), new d2.t(ih.d.b(sVar).L0)});
         long j2 = ih.d.a(sVar).v;
         f2 f2Var = f1.p0.a;
-        return new z(rb0.b.b(r), j2, f1.p0.a(d2.t.j, j, 0L, b, sVar, 4));
+        return new zShadow(rb0.b.b(r), j2, f1.p0.a(d2.t.j, j, 0L, b, sVar, 4));
     }
 }

@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ei implements aa.w0 {
+public final class ei implements aaShadow.w0 {
     public static final lh Companion = new lh();
     public final String r;
     public final String s;
@@ -92,7 +92,7 @@ public final class ei implements aa.w0 {
         fVar.z0("first");
         fVar.z(3);
         aa.u0 u0Var = this.x;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("includeIssueTemplateProperties");
             aa.c.d(aa.c.k).d(fVar, wVar, u0Var);
         } else if (z) {

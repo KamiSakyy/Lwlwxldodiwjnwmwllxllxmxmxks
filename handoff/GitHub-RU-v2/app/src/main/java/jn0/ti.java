@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ti implements aa.m0 {
+public final class ti implements aaShadow.m0 {
     public final ui a;
 
     public ti(ui uiVar) {

@@ -5,7 +5,7 @@ import jn0.a40;
 import jn0.b40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xr implements aa.a {
+public final class xr implements aaShadow.a {
     public static final xr a = new xr();
     public static final List b = sy.d0.n("replaceAssigneesForAssignable");
 

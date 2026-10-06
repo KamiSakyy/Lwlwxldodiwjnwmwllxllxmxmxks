@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class j5 implements aa.a {
+public final class j5 implements aaShadow.a {
     public static final j5 a = new j5();
     public static final List b = sy.d0.n("issue");
 

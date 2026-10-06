@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uc implements aa.a {
+public final class uc implements aaShadow.a {
     public static final uc a = new uc();
     public static final List b = sy.d0.o(new String[]{"actor", "lockedRecord"});
 

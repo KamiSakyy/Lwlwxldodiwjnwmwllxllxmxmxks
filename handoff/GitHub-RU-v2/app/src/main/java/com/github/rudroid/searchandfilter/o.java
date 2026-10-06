@@ -1,12 +1,12 @@
 package com.github.rudroid.searchandfilter;
 
-import rm0.r3;
+import rm0.r3Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements y71.i {
     public final /* synthetic */ y71.i r;
 
-    public o(r3 r3Var) {
+    public o(r3Shadow r3Var) {
         this.r = r3Var;
     }
 

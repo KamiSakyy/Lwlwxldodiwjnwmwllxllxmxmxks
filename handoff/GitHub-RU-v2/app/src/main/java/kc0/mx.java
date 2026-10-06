@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mx implements aa.v0 {
+public final class mx implements aaShadow.v0 {
     public final ox a;
 
     public mx(ox oxVar) {

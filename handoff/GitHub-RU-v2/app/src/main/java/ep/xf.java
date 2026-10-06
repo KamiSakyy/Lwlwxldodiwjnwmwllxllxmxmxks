@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xf implements aa.a {
+public final class xf implements aaShadow.a {
     public static final xf a = new xf();
     public static final List b = sy.d0.n("mergePullRequest");
 

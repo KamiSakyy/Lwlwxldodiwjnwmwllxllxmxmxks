@@ -5,7 +5,7 @@ import jo.eg0;
 import jo.fg0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h00 implements aa.a {
+public final class h00 implements aaShadow.a {
     public static final h00 a = new h00();
     public static final List b = sy.d0.n("pullRequestReview");
 

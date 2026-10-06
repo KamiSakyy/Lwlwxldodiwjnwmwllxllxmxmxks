@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uf0 implements aa.v0 {
+public final class uf0 implements aaShadow.v0 {
     public final wf0 a;
     public final String b;
     public final String c;

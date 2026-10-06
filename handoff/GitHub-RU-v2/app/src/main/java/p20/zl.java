@@ -4,7 +4,7 @@ import java.util.List;
 import u10.cw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zl implements aa.a {
+public final class zl implements aaShadow.a {
     public static final zl a = new zl();
     public static final List b = sy.d0.n("repository");
 

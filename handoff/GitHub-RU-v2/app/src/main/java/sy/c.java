@@ -174,7 +174,7 @@ public abstract class c {
             return new yz0.e2(aVar2, reviewerReviewState, mVar.c, mVar.b, f2Var, false, i(mVar));
         }
         String str = gVar.b;
-        lv.k kVar = gVar.d;
+        lv.kShadow kVar = gVar.d;
         com.github.service.models.response.a aVar3 = new com.github.service.models.response.a(str, w8.s.A(gVar.e), kVar.b, kVar.c, kVar.d, 16);
         int ordinal3 = rzVar.ordinal();
         if (ordinal3 == 0) {

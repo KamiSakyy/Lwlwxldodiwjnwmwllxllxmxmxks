@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class pk implements aa.m0 {
+public final class pk implements aaShadow.m0 {
     public final qk a;
 
     public pk(qk qkVar) {

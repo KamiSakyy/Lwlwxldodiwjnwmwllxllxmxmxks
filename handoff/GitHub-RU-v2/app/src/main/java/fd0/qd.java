@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class qd implements aa.a {
+public abstract class qd implements aaShadow.a {
     public static final List a = sy.d0.n("mentionableUsers");
 
     public static kc0.kk c(ea.e eVar, aa.w wVar) {

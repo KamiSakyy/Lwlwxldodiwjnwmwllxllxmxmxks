@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a3 implements aa.a {
+public final class a3 implements aaShadow.a {
     public static final a3 a = new a3();
     public static final List b = sy.d0.o(new String[]{"__typename", "id"});
 

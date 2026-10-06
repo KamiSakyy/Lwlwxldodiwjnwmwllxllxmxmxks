@@ -5,7 +5,7 @@ import u10.a10;
 import u10.s00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class fp implements aa.a {
+public abstract class fp implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"timelineItem", "id"});
 
     public static s00 c(ea.e eVar, aa.w wVar) {

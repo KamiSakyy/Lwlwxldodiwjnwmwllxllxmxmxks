@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yp implements aa.a {
+public final class yp implements aaShadow.a {
     public static final yp a = new yp();
     public static final List b = sy.d0.n("nodes");
 
@@ -12,7 +12,7 @@ public final class yp implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         List list = null;
         while (eVar.r0(b) == 0) {
-            list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(eq.a, true)))).a(eVar, wVar);
+            list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(eqShadow.a, true)))).a(eVar, wVar);
         }
         return new jo.d10(list);
     }
@@ -23,6 +23,6 @@ public final class yp implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(d10Var, "value");
         fVar.z0("nodes");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(eq.a, true)))).b(fVar, wVar, d10Var.a);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(eqShadow.a, true)))).b(fVar, wVar, d10Var.a);
     }
 }

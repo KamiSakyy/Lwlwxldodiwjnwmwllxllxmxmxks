@@ -3,8 +3,8 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class wq implements aa.a {
-    public static final wq a = new wq();
+public final class wqShadow implements aaShadow.a {
+    public static final wqShadow a = new wqShadow();
     public static final List b = sy.d0.o("repository", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -16,7 +16,7 @@ public final class wq implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                q20Var = (jo.q20) aa.c.b(aa.c.c(ar.a, false)).a(eVar, wVar);
+                q20Var = (jo.q20) aa.c.b(aa.c.c(arShadow.a, false)).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -43,7 +43,7 @@ public final class wq implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(m20Var, "value");
         fVar.z0("repository");
-        aa.c.b(aa.c.c(ar.a, false)).b(fVar, wVar, m20Var.a);
+        aa.c.b(aa.c.c(arShadow.a, false)).b(fVar, wVar, m20Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, m20Var.b);

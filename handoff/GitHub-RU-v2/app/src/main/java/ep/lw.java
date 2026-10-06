@@ -4,7 +4,7 @@ import java.util.List;
 import jo.qa0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class lw implements aa.a {
+public abstract class lw implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"displayName", "id"});
 
     public static qa0 c(ea.e eVar, aa.w wVar) {

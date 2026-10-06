@@ -5,7 +5,7 @@ import kc0.b90;
 import kc0.z80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class bv implements aa.a {
+public final class bv implements aaShadow.a {
     public static final bv a = new bv();
     public static final List b = sy.d0.n("updatePullRequest");
 

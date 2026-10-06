@@ -42,7 +42,7 @@ public final class a extends c71.j implements j71.e {
                 aVar4.x = obj;
                 return aVar4;
             default:
-                a aVar5 = new a((k) this.B, this.y, this.z, this.A, cVar, 4);
+                a aVar5 = new a((kShadow) this.B, this.y, this.z, this.A, cVar, 4);
                 aVar5.x = obj;
                 return aVar5;
         }
@@ -144,7 +144,7 @@ public final class a extends c71.j implements j71.e {
                 int i5 = this.w;
                 if (i5 == 0) {
                     y.j(obj);
-                    ((k) this.B).b.getClass();
+                    ((kShadow) this.B).b.getClass();
                     String a5 = m.a(this.z, this.y, this.A);
                     this.x = null;
                     this.w = 1;

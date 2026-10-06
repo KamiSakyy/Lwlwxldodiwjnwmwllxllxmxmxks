@@ -5,7 +5,7 @@ import kc0.ry;
 import kc0.sy;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class tn implements aa.a {
+public final class tn implements aaShadow.a {
     public static final tn a = new tn();
     public static final List b = sy.d0.n("resolveReviewThread");
 

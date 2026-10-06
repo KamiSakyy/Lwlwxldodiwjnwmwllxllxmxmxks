@@ -4,7 +4,7 @@ import java.util.List;
 import jo.tf0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zz implements aa.a {
+public final class zz implements aaShadow.a {
     public static final zz a = new zz();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -25,7 +25,7 @@ public final class zz implements aa.a {
             }
         }
         eVar.s0();
-        lu.a c = lu.b.c(eVar, wVar);
+        lu.a c = luShadow.b.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -47,7 +47,7 @@ public final class zz implements aa.a {
         bVar.b(fVar, wVar, tf0Var.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, tf0Var.b);
-        List list = lu.b.a;
-        lu.b.d(fVar, wVar, tf0Var.c);
+        List list = luShadow.b.a;
+        luShadow.b.d(fVar, wVar, tf0Var.c);
     }
 }

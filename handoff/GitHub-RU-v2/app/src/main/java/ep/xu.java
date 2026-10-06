@@ -6,7 +6,7 @@ import jo.j80;
 import jo.l80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xu implements aa.a {
+public final class xu implements aaShadow.a {
     public static final xu a = new xu();
     public static final List b = sy.d0.o("updateSubscription", "markNotificationAsUndone");
 
@@ -23,7 +23,7 @@ public final class xu implements aa.a {
                 if (r0 != 1) {
                     return new i80(l80Var, j80Var);
                 }
-                j80Var = (j80) aa.c.b(aa.c.c(yu.a, false)).a(eVar, wVar);
+                j80Var = (j80) aa.c.b(aa.c.c(yuShadow.a, false)).a(eVar, wVar);
             }
         }
     }
@@ -36,6 +36,6 @@ public final class xu implements aa.a {
         fVar.z0("updateSubscription");
         aa.c.b(aa.c.c(av.a, false)).b(fVar, wVar, i80Var.a);
         fVar.z0("markNotificationAsUndone");
-        aa.c.b(aa.c.c(yu.a, false)).b(fVar, wVar, i80Var.b);
+        aa.c.b(aa.c.c(yuShadow.a, false)).b(fVar, wVar, i80Var.b);
     }
 }

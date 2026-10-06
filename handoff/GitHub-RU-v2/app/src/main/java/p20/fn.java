@@ -5,7 +5,7 @@ import u10.tx;
 import u10.ux;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fn implements aa.a {
+public final class fn implements aaShadow.a {
     public static final fn a = new fn();
     public static final List b = sy.d0.o("userCount", "pageInfo", "nodes");
 

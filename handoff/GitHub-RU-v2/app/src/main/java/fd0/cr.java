@@ -5,7 +5,7 @@ import kc0.e30;
 import kc0.f30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class cr implements aa.a {
+public final class cr implements aaShadow.a {
     public static final cr a = new cr();
     public static final List b = sy.d0.o(new String[]{"topRepositories", "id", "__typename"});
 

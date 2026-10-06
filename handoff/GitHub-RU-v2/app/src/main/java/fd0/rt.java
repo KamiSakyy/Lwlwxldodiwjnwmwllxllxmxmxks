@@ -5,7 +5,7 @@ import kc0.f70;
 import kc0.g70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class rt implements aa.a {
+public final class rt implements aaShadow.a {
     public static final rt a = new rt();
     public static final List b = sy.d0.n("user");
 

@@ -4,7 +4,7 @@ import java.util.List;
 import jo.rc0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ux implements aa.a {
+public final class ux implements aaShadow.a {
     public static final ux a = new ux();
     public static final List b = sy.d0.n("__typename");
 
@@ -16,7 +16,7 @@ public final class ux implements aa.a {
             str = (String) aa.c.a.a(eVar, wVar);
         }
         eVar.s0();
-        ss.a c = ss.b.c(eVar, wVar);
+        ss.a c = ssShadow.b.c(eVar, wVar);
         if (str != null) {
             return new rc0(str, c);
         }
@@ -31,7 +31,7 @@ public final class ux implements aa.a {
         k71.k.g(rc0Var, "value");
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, rc0Var.a);
-        List list = ss.b.a;
-        ss.b.d(fVar, wVar, rc0Var.b);
+        List list = ssShadow.b.a;
+        ssShadow.b.d(fVar, wVar, rc0Var.b);
     }
 }

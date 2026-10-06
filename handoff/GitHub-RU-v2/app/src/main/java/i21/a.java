@@ -49,7 +49,7 @@ import f0.j;
 import f1.e;
 import fl.f;
 import fl.g;
-import h0.h1;
+import h0.h1Shadow;
 import h91.d0;
 import h91.m0;
 import hc0.zk;
@@ -707,7 +707,7 @@ public abstract class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void c(w1.r rVar, m0.s sVar, d2 d2Var, boolean z, h1 h1Var, boolean z2, j jVar, w1.d dVar, androidx.compose.foundation.layout.k kVar, w1.i iVar, androidx.compose.foundation.layout.i iVar2, c cVar, androidx.compose.runtime.s sVar2, int i, int i2, int i3) {
+    public static final void c(w1.r rVar, m0.s sVar, d2 d2Var, boolean z, h1Shadow h1Var, boolean z2, j jVar, w1.d dVar, androidx.compose.foundation.layout.k kVar, w1.i iVar, androidx.compose.foundation.layout.i iVar2, c cVar, androidx.compose.runtime.s sVar2, int i, int i2, int i3) {
         int i4;
         w1.d dVar2;
         androidx.compose.foundation.layout.k kVar2;
@@ -858,7 +858,7 @@ public abstract class a {
                             N2 = new m0.c(sVar, z);
                             sVar2.n0(N2);
                         }
-                        androidx.compose.foundation.lazy.layout.h1 h1Var2 = (androidx.compose.foundation.lazy.layout.h1) N2;
+                        androidx.compose.foundation.lazy.layout.h1Shadow h1Var2 = (androidx.compose.foundation.lazy.layout.h1) N2;
                         N3 = sVar2.N();
                         if (N3 == iVar7) {
                             N3 = t.p(sVar2);
@@ -950,7 +950,7 @@ public abstract class a {
                 }
                 N2 = new m0.c(sVar, z);
                 sVar2.n0(N2);
-                androidx.compose.foundation.lazy.layout.h1 h1Var22 = (androidx.compose.foundation.lazy.layout.h1) N2;
+                androidx.compose.foundation.lazy.layout.h1Shadow h1Var22 = (androidx.compose.foundation.lazy.layout.h1) N2;
                 N3 = sVar2.N();
                 if (N3 == iVar7) {
                 }

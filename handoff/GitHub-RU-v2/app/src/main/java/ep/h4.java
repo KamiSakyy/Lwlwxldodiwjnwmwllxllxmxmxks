@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h4 implements aa.a {
+public final class h4 implements aaShadow.a {
     public static final h4 a = new h4();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -44,7 +44,7 @@ public final class h4 implements aa.a {
             s6Var = null;
         }
         eVar.s0();
-        vx.a c = vx.b.c(eVar, wVar);
+        vx.a c = vxShadow.b.c(eVar, wVar);
         if (str2 != null) {
             return new jo.p6(str, str2, r6Var, s6Var, c);
         }
@@ -70,7 +70,7 @@ public final class h4 implements aa.a {
         if (s6Var != null) {
             k4.d(fVar, wVar, s6Var);
         }
-        List list = vx.b.a;
-        vx.b.d(fVar, wVar, p6Var.e);
+        List list = vxShadow.b.a;
+        vxShadow.b.d(fVar, wVar, p6Var.e);
     }
 }

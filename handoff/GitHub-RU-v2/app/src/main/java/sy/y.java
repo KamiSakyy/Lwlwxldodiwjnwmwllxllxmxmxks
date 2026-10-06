@@ -227,7 +227,7 @@ public abstract class y {
         return String.format("%6s", Arrays.copyOf(new Object[]{f}, 1));
     }
 
-    public static final v8.d0 f(v8.x xVar, String str, Executor executor, j71.a aVar) {
+    public static final v8.d0 f(v8.xShadow xVar, String str, Executor executor, j71.a aVar) {
         k71.k.g(xVar, "tracer");
         k71.k.g(str, "label");
         k71.k.g(executor, "executor");

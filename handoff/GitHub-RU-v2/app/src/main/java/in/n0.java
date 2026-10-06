@@ -20,7 +20,7 @@ public final class n0 {
         this.d = aVar;
     }
 
-    public static final y a(n0 n0Var, q81.a0 a0Var, String str, t tVar) {
+    public static final y a(n0 n0Var, q81.a0Shadow a0Var, String str, t tVar) {
         String str2 = tVar.d;
         String str3 = tVar.b;
         if (t71.p.I(str, "field\":\"size", false)) {

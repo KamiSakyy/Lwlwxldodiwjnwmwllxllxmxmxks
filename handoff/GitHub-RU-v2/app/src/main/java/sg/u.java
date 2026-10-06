@@ -29,7 +29,7 @@ public final class u {
             i3 |= sVar.h(aVar) ? 32 : 16;
         }
         if ((i & 384) == 0) {
-            i3 |= sVar.g(z) ? 256 : 128;
+            i3 |= sVar.g(zShadow) ? 256 : 128;
         }
         int i5 = i3;
         if (sVar.S(i5 & 1, (i5 & 147) != 146)) {

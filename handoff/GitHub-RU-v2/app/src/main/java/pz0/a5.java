@@ -1,7 +1,7 @@
 package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a5 {
+public final class a5Shadow {
     public final aa1.b a;
     public final aa1.b b = aa.t0.d;
     public final aa1.b c;
@@ -15,10 +15,10 @@ public final class a5 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof a5)) {
+        if (!(obj instanceof a5Shadow)) {
             return false;
         }
-        a5 a5Var = (a5) obj;
+        a5Shadow a5Var = (a5Shadow) obj;
         return k71.k.b(this.a, a5Var.a) && k71.k.b(this.b, a5Var.b) && k71.k.b(this.c, a5Var.c);
     }
 

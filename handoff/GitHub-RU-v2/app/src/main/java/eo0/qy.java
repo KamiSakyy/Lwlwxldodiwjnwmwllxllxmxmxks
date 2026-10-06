@@ -5,7 +5,7 @@ import jn0.be0;
 import jn0.zd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qy implements aa.a {
+public final class qy implements aaShadow.a {
     public static final qy a = new qy();
     public static final List b = sy.d0.n("updateSubscription");
 

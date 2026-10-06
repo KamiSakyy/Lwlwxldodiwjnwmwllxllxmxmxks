@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class o2 implements aa.a {
+public final class o2 implements aaShadow.a {
     public static final o2 a = new o2();
     public static final List b = sy.d0.o("workflowRun", "app", "id", "__typename");
 

@@ -5,7 +5,7 @@ import java.util.List;
 import jn0.d50;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qs implements aa.a {
+public final class qs implements aaShadow.a {
     public static final qs a = new qs();
     public static final List b = sy.d0.o(new String[]{"spokenLanguages", "id", "__typename"});
 

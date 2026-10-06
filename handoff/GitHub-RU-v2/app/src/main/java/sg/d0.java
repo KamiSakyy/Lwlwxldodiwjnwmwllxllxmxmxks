@@ -21,7 +21,7 @@ public final class d0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void a(w1.r rVar, d2 d2Var, j71.a aVar, z zVar, long j, s0 s0Var, boolean z, p0 p0Var, Integer num, Integer num2, r1.d dVar, androidx.compose.runtime.s sVar, int i, int i2) {
+    public static final void a(w1.r rVar, d2 d2Var, j71.a aVar, zShadow zVar, long j, s0 s0Var, boolean z, p0 p0Var, Integer num, Integer num2, r1.d dVar, androidx.compose.runtime.s sVar, int i, int i2) {
         w1.r rVar2;
         int i3;
         boolean z2;
@@ -311,7 +311,7 @@ public final class d0 {
             i3 |= 12582912;
         } else if ((i & 12582912) == 0) {
             i4 = i18;
-            i3 |= sVar.g(z) ? 8388608 : 4194304;
+            i3 |= sVar.g(zShadow) ? 8388608 : 4194304;
             if ((i & 100663296) != 0) {
                 if ((i2 & 256) == 0) {
                     p0Var2 = p0Var;

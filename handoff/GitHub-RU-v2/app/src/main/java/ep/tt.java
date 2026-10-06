@@ -5,8 +5,8 @@ import jo.q60;
 import jo.r60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tt implements aa.a {
-    public static final tt a = new tt();
+public final class ttShadow implements aaShadow.a {
+    public static final ttShadow a = new ttShadow();
     public static final List b = sy.d0.n("node");
 
     public final Object a(ea.e eVar, aa.w wVar) {

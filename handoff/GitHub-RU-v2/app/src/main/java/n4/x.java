@@ -22,7 +22,7 @@ public final class x {
         this.f29484c = notification;
     }
 
-    public final void a(c.c cVar) {
+    public final void a(c.cShadow cVar) {
         String str = this.f29482a;
         int i = this.f29483b;
         c.a aVar = (c.a) cVar;

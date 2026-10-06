@@ -6,7 +6,7 @@ import java.util.List;
 import jo.rj0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class k20 implements aa.a {
+public final class k20 implements aaShadow.a {
     public static final k20 a = new k20();
     public static final List b = sy.d0.o("allowableStatus", "mergeMethods", "name");
 

@@ -5,7 +5,7 @@ import u10.k10;
 import u10.m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tp implements aa.a {
+public final class tp implements aaShadow.a {
     public static final tp a = new tp();
     public static final List b = sy.d0.n("unresolveReviewThread");
 

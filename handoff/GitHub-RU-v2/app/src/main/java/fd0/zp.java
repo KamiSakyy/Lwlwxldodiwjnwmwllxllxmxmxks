@@ -5,7 +5,7 @@ import kc0.u10;
 import kc0.x10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class zp implements aa.a {
+public abstract class zp implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"starredRepositories", "id"});
 
     public static u10 c(ea.e eVar, aa.w wVar) {

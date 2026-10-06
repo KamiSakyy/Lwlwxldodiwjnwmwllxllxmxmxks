@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gj implements aa.a {
+public final class gj implements aaShadow.a {
     public static final gj a = new gj();
     public static final List b = sy.d0.o("__typename", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "viewerCanReply", "diffLines", "id");
 
@@ -60,7 +60,7 @@ public final class gj implements aa.a {
                     bool4 = bool;
             }
             eVar.s0();
-            nv.a c = nv.b.c(eVar, wVar);
+            nv.a c = nvShadow.b.c(eVar, wVar);
             Boolean bool8 = bool4;
             if (str == null) {
                 k41.b.B(eVar, "__typename");
@@ -116,7 +116,7 @@ public final class gj implements aa.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(ui.a, true)))).b(fVar, wVar, fsVar.g);
         fVar.z0("id");
         bVar.b(fVar, wVar, fsVar.h);
-        List list = nv.b.a;
-        nv.b.d(fVar, wVar, fsVar.i);
+        List list = nvShadow.b.a;
+        nvShadow.b.d(fVar, wVar, fsVar.i);
     }
 }

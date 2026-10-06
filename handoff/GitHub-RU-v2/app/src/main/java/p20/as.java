@@ -5,7 +5,7 @@ import u10.x40;
 import u10.z40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class as implements aa.a {
+public final class as implements aaShadow.a {
     public static final as a = new as();
     public static final List b = sy.d0.n("updateIssue");
 

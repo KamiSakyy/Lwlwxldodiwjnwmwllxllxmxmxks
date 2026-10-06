@@ -1,7 +1,7 @@
 package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class g1 {
+public final class g1Shadow {
     public final boolean a;
     public final boolean b;
     public final String c;
@@ -16,10 +16,10 @@ public final class g1 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof g1)) {
+        if (!(obj instanceof g1Shadow)) {
             return false;
         }
-        g1 g1Var = (g1) obj;
+        g1Shadow g1Var = (g1Shadow) obj;
         return this.a == g1Var.a && this.b == g1Var.b && k71.k.b(this.c, g1Var.c);
     }
 

@@ -232,7 +232,7 @@ public abstract class w {
         yq.d dVar = nVar.f;
         if (dVar != null && (fVar = dVar.b) != null) {
             String str2 = fVar.a;
-            yq.k kVar = fVar.e;
+            yq.kShadow kVar = fVar.e;
             String str3 = fVar.b;
             String str4 = fVar.c;
             yq.b bVar = fVar.d;
@@ -423,7 +423,7 @@ public abstract class w {
         return new t6(reason, l0.e(aVar != null ? aVar.b : null), bVar.e);
     }
 
-    public static final u6 i(xt.k kVar) {
+    public static final u6 i(xt.kShadow kVar) {
         String str;
         String str2;
         xt.h hVar;
@@ -690,7 +690,7 @@ public abstract class w {
     }
 
     public static w61.h s(w61.i iVar, j71.a aVar) {
-        w61.x xVar = w61.x.a;
+        w61.xShadow xVar = w61.x.a;
         int ordinal = iVar.ordinal();
         if (ordinal == 0) {
             return new w61.p(aVar);

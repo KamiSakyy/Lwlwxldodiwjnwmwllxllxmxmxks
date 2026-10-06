@@ -5,7 +5,7 @@ import jo.k90;
 import jo.l90;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class uv implements aa.a {
+public final class uv implements aaShadow.a {
     public static final uv a = new uv();
     public static final List b = sy.d0.o("topRepositories", "id", "__typename");
 

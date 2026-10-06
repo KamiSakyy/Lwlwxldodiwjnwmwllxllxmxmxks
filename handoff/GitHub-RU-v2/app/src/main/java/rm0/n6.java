@@ -4,10 +4,10 @@ package rm0;
 public final class n6 extends c71.c {
     public /* synthetic */ Object u;
     public int v;
-    public final /* synthetic */ a5 w;
+    public final /* synthetic */ a5Shadow w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public n6(a5 a5Var, a71.c cVar) {
+    public n6(a5Shadow a5Var, a71.c cVar) {
         super(cVar);
         this.w = a5Var;
     }

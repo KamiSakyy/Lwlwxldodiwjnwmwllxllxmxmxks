@@ -291,11 +291,11 @@ public final class i0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object d(a71.c cVar, Object obj) {
-        w1 w1Var;
+        w1Shadow w1Var;
         int i;
         id0.k kVar;
-        if (cVar instanceof w1) {
-            w1Var = (w1) cVar;
+        if (cVar instanceof w1Shadow) {
+            w1Var = (w1Shadow) cVar;
             int i2 = w1Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 w1Var.v = i2 - Integer.MIN_VALUE;
@@ -321,7 +321,7 @@ public final class i0 implements y71.j {
                 return w61.a0.a;
             }
         }
-        w1Var = new w1(this, cVar);
+        w1Var = new w1Shadow(this, cVar);
         Object obj22 = w1Var.u;
         b71.a aVar2 = b71.a.r;
         i = w1Var.v;
@@ -403,10 +403,10 @@ public final class i0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object f(a71.c cVar, Object obj) {
-        c2 c2Var;
+        c2Shadow c2Var;
         int i;
-        if (cVar instanceof c2) {
-            c2Var = (c2) cVar;
+        if (cVar instanceof c2Shadow) {
+            c2Var = (c2Shadow) cVar;
             int i2 = c2Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 c2Var.v = i2 - Integer.MIN_VALUE;
@@ -443,7 +443,7 @@ public final class i0 implements y71.j {
                 return w61.a0.a;
             }
         }
-        c2Var = new c2(this, cVar);
+        c2Var = new c2Shadow(this, cVar);
         Object obj22 = c2Var.u;
         b71.a aVar2 = b71.a.r;
         i = c2Var.v;
@@ -458,10 +458,10 @@ public final class i0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object g(a71.c cVar, Object obj) {
-        d2 d2Var;
+        d2Shadow d2Var;
         int i;
-        if (cVar instanceof d2) {
-            d2Var = (d2) cVar;
+        if (cVar instanceof d2Shadow) {
+            d2Var = (d2Shadow) cVar;
             int i2 = d2Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 d2Var.v = i2 - Integer.MIN_VALUE;
@@ -498,7 +498,7 @@ public final class i0 implements y71.j {
                 return w61.a0.a;
             }
         }
-        d2Var = new d2(this, cVar);
+        d2Var = new d2Shadow(this, cVar);
         Object obj22 = d2Var.u;
         b71.a aVar2 = b71.a.r;
         i = d2Var.v;
@@ -549,7 +549,7 @@ public final class i0 implements y71.j {
                         RepositoryRecommendationReason repositoryRecommendationReason = RepositoryRecommendationReason.UNKNOWN__;
                         int i5 = ucVar.b;
                         String str2 = e2Var.c;
-                        oj0.d2 d2Var = e2Var.i;
+                        oj0.d2Shadow d2Var = e2Var.i;
                         oj0.b2 b2Var = e2Var.h;
                         com.github.service.models.response.a aVar2 = new com.github.service.models.response.a(b2Var.c, b41.b.O(b2Var.d), (String) null, false, (String) null, 60);
                         String str3 = e2Var.d;
@@ -715,15 +715,15 @@ public final class i0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object k(a71.c cVar, Object obj) {
-        q2 q2Var;
+        q2Shadow q2Var;
         int i;
         Object obj2;
         kd kdVar;
         hd hdVar;
         fd fdVar;
         gd gdVar;
-        if (cVar instanceof q2) {
-            q2Var = (q2) cVar;
+        if (cVar instanceof q2Shadow) {
+            q2Var = (q2Shadow) cVar;
             int i2 = q2Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 q2Var.v = i2 - Integer.MIN_VALUE;
@@ -760,7 +760,7 @@ public final class i0 implements y71.j {
                 return w61.a0.a;
             }
         }
-        q2Var = new q2(this, cVar);
+        q2Var = new q2Shadow(this, cVar);
         Object obj32 = q2Var.u;
         b71.a aVar2 = b71.a.r;
         i = q2Var.v;
@@ -826,10 +826,10 @@ public final class i0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
-        h0 h0Var;
+        h0Shadow h0Var;
         int i;
         j30 j30Var;
-        j0 j0Var;
+        j0Shadow j0Var;
         int i2;
         c50 c50Var;
         k0 k0Var;
@@ -840,7 +840,7 @@ public final class i0 implements y71.j {
         int i4;
         yz0.a7 w;
         q90 q90Var;
-        n0 n0Var;
+        n0Shadow n0Var;
         int i5;
         we0.b0 b0Var;
         o0 o0Var;
@@ -886,10 +886,10 @@ public final class i0 implements y71.j {
         int i14;
         kc0.h hVar;
         kc0.h hVar2;
-        f1 f1Var;
+        f1Shadow f1Var;
         int i15;
         id0.d dVar2;
-        h1 h1Var;
+        h1Shadow h1Var;
         int i16;
         kc0.o6 o6Var;
         k1 k1Var;
@@ -901,7 +901,7 @@ public final class i0 implements y71.j {
         int i19;
         n1 n1Var;
         int i20;
-        kc0.ga gaVar;
+        kc0.gaShadow gaVar;
         kc0.da daVar;
         i2 i2Var;
         int i22;
@@ -912,8 +912,8 @@ public final class i0 implements y71.j {
         xd xdVar;
         switch (this.r) {
             case 0:
-                if (cVar instanceof h0) {
-                    h0Var = (h0) cVar;
+                if (cVar instanceof h0Shadow) {
+                    h0Var = (h0Shadow) cVar;
                     int i24 = h0Var.v;
                     if ((i24 & Integer.MIN_VALUE) != 0) {
                         h0Var.v = i24 - Integer.MIN_VALUE;
@@ -940,7 +940,7 @@ public final class i0 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                h0Var = new h0(this, cVar);
+                h0Var = new h0Shadow(this, cVar);
                 Object obj22 = h0Var.u;
                 b71.a aVar2 = b71.a.r;
                 i = h0Var.v;
@@ -948,8 +948,8 @@ public final class i0 implements y71.j {
                 }
                 return w61.a0.a;
             case 1:
-                if (cVar instanceof j0) {
-                    j0Var = (j0) cVar;
+                if (cVar instanceof j0Shadow) {
+                    j0Var = (j0Shadow) cVar;
                     int i25 = j0Var.v;
                     if ((i25 & Integer.MIN_VALUE) != 0) {
                         j0Var.v = i25 - Integer.MIN_VALUE;
@@ -975,7 +975,7 @@ public final class i0 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                j0Var = new j0(this, cVar);
+                j0Var = new j0Shadow(this, cVar);
                 Object obj32 = j0Var.u;
                 b71.a aVar32 = b71.a.r;
                 i2 = j0Var.v;
@@ -1061,8 +1061,8 @@ public final class i0 implements y71.j {
                 }
                 return w61.a0.a;
             case 4:
-                if (cVar instanceof n0) {
-                    n0Var = (n0) cVar;
+                if (cVar instanceof n0Shadow) {
+                    n0Var = (n0Shadow) cVar;
                     int i28 = n0Var.v;
                     if ((i28 & Integer.MIN_VALUE) != 0) {
                         n0Var.v = i28 - Integer.MIN_VALUE;
@@ -1088,7 +1088,7 @@ public final class i0 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                n0Var = new n0(this, cVar);
+                n0Var = new n0Shadow(this, cVar);
                 Object obj62 = n0Var.u;
                 b71.a aVar62 = b71.a.r;
                 i5 = n0Var.v;
@@ -1312,7 +1312,7 @@ public final class i0 implements y71.j {
                         i10 = v0Var.v;
                         if (i10 != 0) {
                             sy.y.j(obj11);
-                            kc0.d9 d9Var = ((kc0.y8) obj).a;
+                            kc0.d9Shadow d9Var = ((kc0.y8) obj).a;
                             if (d9Var == null || (e9Var = d9Var.c) == null) {
                                 dVar = null;
                             } else {
@@ -1397,7 +1397,7 @@ public final class i0 implements y71.j {
                                 CheckStatusState checkStatusState3 = n;
                                 String str21 = str9;
                                 a01.f fVar2 = new a01.f(i35, str11, str12, str13, arrayList3);
-                                kc0.v8 v8Var = e9Var.g;
+                                kc0.v8Shadow v8Var = e9Var.g;
                                 List list5 = v8Var != null ? v8Var.a : null;
                                 if (list5 == null) {
                                     list5 = rVar4;
@@ -1455,7 +1455,7 @@ public final class i0 implements y71.j {
                                     size3 = i44;
                                     i42 = i12;
                                 }
-                                kc0.z8 z8Var = e9Var.h;
+                                kc0.z8Shadow z8Var = e9Var.h;
                                 List list6 = z8Var != null ? z8Var.a : null;
                                 if (list6 == null) {
                                     list6 = rVar4;
@@ -1609,8 +1609,8 @@ public final class i0 implements y71.j {
                 }
                 return w61.a0.a;
             case 12:
-                if (cVar instanceof f1) {
-                    f1Var = (f1) cVar;
+                if (cVar instanceof f1Shadow) {
+                    f1Var = (f1Shadow) cVar;
                     int i54 = f1Var.v;
                     if ((i54 & Integer.MIN_VALUE) != 0) {
                         f1Var.v = i54 - Integer.MIN_VALUE;
@@ -1636,7 +1636,7 @@ public final class i0 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                f1Var = new f1(this, cVar);
+                f1Var = new f1Shadow(this, cVar);
                 Object obj192 = f1Var.u;
                 b71.a aVar162 = b71.a.r;
                 i15 = f1Var.v;
@@ -1644,8 +1644,8 @@ public final class i0 implements y71.j {
                 }
                 return w61.a0.a;
             case 13:
-                if (cVar instanceof h1) {
-                    h1Var = (h1) cVar;
+                if (cVar instanceof h1Shadow) {
+                    h1Var = (h1Shadow) cVar;
                     int i55 = h1Var.v;
                     if ((i55 & Integer.MIN_VALUE) != 0) {
                         h1Var.v = i55 - Integer.MIN_VALUE;
@@ -1673,7 +1673,7 @@ public final class i0 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                h1Var = new h1(this, cVar);
+                h1Var = new h1Shadow(this, cVar);
                 Object obj202 = h1Var.u;
                 b71.a aVar182 = b71.a.r;
                 i16 = h1Var.v;

@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.zx;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class kn implements aa.a {
+public final class kn implements aaShadow.a {
     public static final kn a = new kn();
     public static final List b = sy.d0.n("__typename");
 

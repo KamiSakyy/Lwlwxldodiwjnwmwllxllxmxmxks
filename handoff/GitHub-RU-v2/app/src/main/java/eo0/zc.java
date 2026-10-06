@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class zc implements aa.a {
+public final class zc implements aaShadow.a {
     public static final zc a = new zc();
     public static final List b = sy.d0.o(new String[]{"id", "answerChosenAt", "answer", "answerChosenBy", "__typename"});
 

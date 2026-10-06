@@ -37,7 +37,7 @@ public final class h extends c71.j implements j71.e {
     }
 
     public final Object v(Object obj) {
-        xn.s0 s0Var = (xn.s0) this.v;
+        xn.s0Shadow s0Var = (xn.s0) this.v;
         b71.a aVar = b71.a.r;
         sy.y.j(obj);
         j0 j0Var = this.w.b;

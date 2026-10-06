@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.widget.AppCompatTextView;
 import k71.k;
 import kh.a;
-import lg.g;
+import lg.gShadow;
 import lg.j;
 import sy.w;
 import w61.p;
@@ -42,7 +42,7 @@ public final class RoundedBgTextView extends AppCompatTextView {
         Layout layout2 = layout;
         g[] gVarArr = this.y;
         if (gVarArr == null) {
-            gVarArr = (g[]) spanned.getSpans(0, spanned.length(), g.class);
+            gVarArr = (g[]) spanned.getSpans(0, spanned.length(), gShadow.class);
             this.y = gVarArr;
         }
         g[] gVarArr2 = gVarArr;
@@ -50,7 +50,7 @@ public final class RoundedBgTextView extends AppCompatTextView {
             int length = gVarArr2.length;
             int i = 0;
             while (i < length) {
-                g gVar = gVarArr2[i];
+                gShadow gVar = gVarArr2[i];
                 int spanStart = spanned.getSpanStart(gVar);
                 int spanEnd = spanned.getSpanEnd(gVar);
                 int lineForOffset = layout2.getLineForOffset(spanStart);

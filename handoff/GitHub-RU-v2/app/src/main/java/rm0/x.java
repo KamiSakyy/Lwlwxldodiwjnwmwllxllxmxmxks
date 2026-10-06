@@ -1,7 +1,7 @@
 package rm0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class x extends c71.c {
+public final class xShadow extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ nm.f w;

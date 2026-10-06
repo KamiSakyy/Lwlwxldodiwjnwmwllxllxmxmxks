@@ -5,7 +5,7 @@ import jo.d80;
 import jo.e80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vu implements aa.a {
+public final class vu implements aaShadow.a {
     public static final vu a = new vu();
     public static final List b = sy.d0.o("__typename", "pullRequest", "id");
 

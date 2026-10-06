@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wd implements aa.v0 {
+public final class wd implements aaShadow.v0 {
     public final ae a;
 
     public wd(ae aeVar) {

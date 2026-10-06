@@ -6,7 +6,7 @@ import jn0.ke0;
 import pz0.i90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xy implements aa.a {
+public final class xy implements aaShadow.a {
     public static final xy a = new xy();
     public static final List b = sy.d0.o(new String[]{"identifier", "hidden"});
 

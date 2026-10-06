@@ -5,7 +5,7 @@ import kc0.c20;
 import kc0.d20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class gq implements aa.a {
+public final class gq implements aaShadow.a {
     public static final gq a = new gq();
     public static final List b = sy.d0.n("pullRequestReview");
 

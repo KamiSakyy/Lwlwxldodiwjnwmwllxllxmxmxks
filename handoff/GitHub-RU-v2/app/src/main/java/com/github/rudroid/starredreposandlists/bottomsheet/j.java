@@ -1,7 +1,7 @@
 package com.github.rudroid.starredreposandlists.bottomsheet;
 
 import androidx.compose.foundation.layout.d2;
-import h0.h1;
+import h0.h1Shadow;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -47,7 +47,7 @@ public final /* synthetic */ class j implements j71.e {
                     c6.b bVar = new c6.b(list, aVar, cVar, 24);
                     sVar.n0(bVar);
                     obj3 = bVar;
-                    com.google.common.util.concurrent.a.b(B, (m0.s) null, (d2) null, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1) null, false, (f0.j) null, (j71.c) obj3, sVar, 0, 510);
+                    com.google.common.util.concurrent.a.b(B, (m0.s) null, (d2) null, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1Shadow) null, false, (f0.j) null, (j71.c) obj3, sVar, 0, 510);
                 } else {
                     sVar.V();
                 }

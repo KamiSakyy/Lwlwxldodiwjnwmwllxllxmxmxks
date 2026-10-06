@@ -19,7 +19,7 @@ public final class p0 extends j2 {
     }
 
     public final o0 a() {
-        o0 o0Var = new o0();
+        o0Shadow o0Var = new o0Shadow();
         o0Var.a = this.a;
         o0Var.b = this.b;
         o0Var.c = this.c;

@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.ae0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ry implements aa.a {
+public final class ry implements aaShadow.a {
     public static final ry a = new ry();
     public static final List b = sy.d0.n("__typename");
 

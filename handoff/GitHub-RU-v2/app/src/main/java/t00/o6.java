@@ -414,7 +414,7 @@ public final class o6 implements y71.j {
                 Object obj2 = p7Var.u;
                 b71.a aVar = b71.a.r;
                 i = p7Var.v;
-                w61.a0 a0Var = w61.a0.a;
+                w61.a0Shadow a0Var = w61.a0.a;
                 if (i == 0) {
                     if (i != 1) {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -431,7 +431,7 @@ public final class o6 implements y71.j {
         Object obj22 = p7Var.u;
         b71.a aVar2 = b71.a.r;
         i = p7Var.v;
-        w61.a0 a0Var2 = w61.a0.a;
+        w61.a0Shadow a0Var2 = w61.a0.a;
         if (i == 0) {
         }
     }
@@ -648,11 +648,11 @@ public final class o6 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object n(a71.c cVar, Object obj) {
-        v7 v7Var;
+        v7Shadow v7Var;
         int i;
         d30 d30Var;
-        if (cVar instanceof v7) {
-            v7Var = (v7) cVar;
+        if (cVar instanceof v7Shadow) {
+            v7Var = (v7Shadow) cVar;
             int i2 = v7Var.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 v7Var.v = i2 - Integer.MIN_VALUE;
@@ -676,7 +676,7 @@ public final class o6 implements y71.j {
                 return w61.a0.a;
             }
         }
-        v7Var = new v7(this, cVar);
+        v7Var = new v7Shadow(this, cVar);
         Object obj22 = v7Var.u;
         b71.a aVar2 = b71.a.r;
         i = v7Var.v;
@@ -907,7 +907,7 @@ public final class o6 implements y71.j {
     public final Object c(Object obj, a71.c cVar) {
         n6 n6Var;
         int i;
-        j00.a0 a0Var;
+        j00.a0Shadow a0Var;
         j00.y yVar;
         p6 p6Var;
         int i2;

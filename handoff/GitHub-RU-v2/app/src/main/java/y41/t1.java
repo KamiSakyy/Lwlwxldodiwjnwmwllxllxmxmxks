@@ -740,7 +740,7 @@ public abstract class t1 {
         yf0.g gVar;
         k71.k.g(p0Var, "<this>");
         uf0.g0 g0Var = p0Var.o;
-        uf0.o0 o0Var = p0Var.m;
+        uf0.o0Shadow o0Var = p0Var.m;
         jr jrVar2 = o0Var.d;
         String str6 = p0Var.b;
         String str7 = p0Var.c;

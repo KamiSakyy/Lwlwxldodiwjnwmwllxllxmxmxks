@@ -7,7 +7,7 @@ import u10.i60;
 import u10.j60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ct implements aa.a {
+public final class ct implements aaShadow.a {
     public static final ct a = new ct();
     public static final List b = sy.d0.o("__typename", "id", "url", "state", "milestone", "projectCards", "viewerCanDeleteHeadRef", "viewerCanReopen");
 

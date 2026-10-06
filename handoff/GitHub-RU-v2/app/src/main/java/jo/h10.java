@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h10 implements aaShadow.v0 {
-    public final n10 a;
+    public final n10Shadow a;
     public final String b;
     public final String c;
 
-    public h10(n10 n10Var, String str, String str2) {
+    public h10(n10Shadow n10Var, String str, String str2) {
         this.a = n10Var;
         this.b = str;
         this.c = str2;
@@ -24,7 +24,7 @@ public final class h10 implements aaShadow.v0 {
     }
 
     public final int hashCode() {
-        n10 n10Var = this.a;
+        n10Shadow n10Var = this.a;
         return this.c.hashCode() + com.github.rudroid.copilot.h1.i((n10Var == null ? 0 : n10Var.hashCode()) * 31, this.b, 31);
     }
 

@@ -7,7 +7,7 @@ import kc0.k40;
 import kc0.n40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wr implements aa.a {
+public final class wr implements aaShadow.a {
     public static final wr a = new wr();
     public static final List b = sy.d0.o(new String[]{"id", "answerChosenAt", "answer", "answerChosenBy", "__typename"});
 

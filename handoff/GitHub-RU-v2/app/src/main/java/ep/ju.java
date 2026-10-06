@@ -5,8 +5,8 @@ import java.util.Set;
 import jo.m70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ju implements aa.a {
-    public static final ju a = new ju();
+public final class juShadow implements aaShadow.a {
+    public static final juShadow a = new juShadow();
     public static final List b = sy.d0.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zj implements aa.a {
+public final class zj implements aaShadow.a {
     public static final zj a = new zj();
     public static final List b = sy.d0.o("hasNextPage", "endCursor");
 
@@ -31,7 +31,7 @@ public final class zj implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.et etVar = (jo.et) obj;
+        jo.etShadow etVar = (jo.et) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(etVar, "value");

@@ -5,7 +5,7 @@ import jo.g40;
 import jo.h40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class bs implements aa.a {
+public final class bs implements aaShadow.a {
     public static final bs a = new bs();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 

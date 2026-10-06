@@ -6,7 +6,7 @@ import u10.r40;
 import u10.s40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class wr implements aa.a {
+public final class wr implements aaShadow.a {
     public static final wr a = new wr();
     public static final List b = sy.d0.o("column", "project", "id", "__typename");
 

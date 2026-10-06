@@ -7,7 +7,7 @@ import kc0.u20;
 import kc0.x20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wq implements aa.a {
+public final class wq implements aaShadow.a {
     public static final wq a = new wq();
     public static final List b = sy.d0.n("__typename");
 

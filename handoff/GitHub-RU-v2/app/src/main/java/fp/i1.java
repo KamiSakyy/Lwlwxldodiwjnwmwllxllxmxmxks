@@ -6,9 +6,9 @@ import java.util.List;
 public final class i1 {
     public final int a;
     public final List b;
-    public final g1 c;
+    public final g1Shadow c;
 
-    public i1(int i, List list, g1 g1Var) {
+    public i1(int i, List list, g1Shadow g1Var) {
         this.a = i;
         this.b = list;
         this.c = g1Var;

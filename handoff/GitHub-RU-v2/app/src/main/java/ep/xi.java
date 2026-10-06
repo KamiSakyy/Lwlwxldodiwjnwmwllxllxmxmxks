@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xi implements aa.a {
+public final class xi implements aaShadow.a {
     public static final xi a = new xi();
     public static final List b = sy.d0.o("__typename", "url", "state", "id");
 
@@ -54,7 +54,7 @@ public final class xi implements aa.a {
         eVar.s0();
         mx.c c3 = mx.d.c(eVar, wVar);
         eVar.s0();
-        pu.a c4 = pu.b.c(eVar, wVar);
+        pu.a c4 = puShadow.b.c(eVar, wVar);
         eVar.s0();
         ju.d dVar = ju.d.a;
         ju.a c5 = ju.d.c(eVar, wVar);
@@ -97,8 +97,8 @@ public final class xi implements aa.a {
         pv.f.d(fVar, wVar, wrVar.f);
         List list2 = mx.d.a;
         mx.d.d(fVar, wVar, wrVar.g);
-        List list3 = pu.b.a;
-        pu.b.d(fVar, wVar, wrVar.h);
+        List list3 = puShadow.b.a;
+        puShadow.b.d(fVar, wVar, wrVar.h);
         ju.d dVar = ju.d.a;
         ju.d.d(fVar, wVar, wrVar.i);
     }

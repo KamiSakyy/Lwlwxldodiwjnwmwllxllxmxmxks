@@ -9,7 +9,7 @@ import kc0.yv;
 public final class e9 implements z01.d1, yb0 {
     public final com.github.service.wrapper.j r;
     public final v71.v s;
-    public v71.d1 t;
+    public v71.d1Shadow t;
 
     public e9(com.github.service.wrapper.j jVar, v71.v vVar) {
         k71.k.g(jVar, "client");
@@ -21,7 +21,7 @@ public final class e9 implements z01.d1, yb0 {
     @Override // z01.d1
     public final y71.i a(String str, String str2, String str3) {
         k71.k.g(str, "login");
-        v71.d1 d1Var = this.t;
+        v71.d1Shadow d1Var = this.t;
         if (d1Var != null) {
             d1Var.m((CancellationException) null);
         }
@@ -38,7 +38,7 @@ public final class e9 implements z01.d1, yb0 {
     public final y71.i b(int i, String str, String str2, String str3, String str4) {
         k71.k.g(str, "owner");
         k71.k.g(str2, "repo");
-        v71.d1 d1Var = this.t;
+        v71.d1Shadow d1Var = this.t;
         if (d1Var != null) {
             d1Var.m((CancellationException) null);
         }
@@ -53,7 +53,7 @@ public final class e9 implements z01.d1, yb0 {
 
     @Override // z01.d1
     public final void c() {
-        v71.d1 d1Var = this.t;
+        v71.d1Shadow d1Var = this.t;
         if (d1Var != null) {
             d1Var.m((CancellationException) null);
         }

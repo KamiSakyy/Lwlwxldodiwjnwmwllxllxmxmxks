@@ -6,7 +6,7 @@ import u10.wz;
 import u10.yz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ro implements aa.a {
+public final class ro implements aaShadow.a {
     public static final ro a = new ro();
     public static final List b = sy.d0.n("__typename");
 

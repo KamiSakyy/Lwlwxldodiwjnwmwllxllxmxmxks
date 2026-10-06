@@ -160,7 +160,7 @@ public final /* synthetic */ class q1 implements j71.c {
                     F0.close();
                 }
             case 15:
-                zm0.e eVar = (zm0.e) obj;
+                zm0.eShadow eVar = (zm0.e) obj;
                 k71.k.g(eVar, "$this$fetchWithPartialResultErrors");
                 return Boolean.valueOf(eVar.b != null);
             case 16:
@@ -208,7 +208,7 @@ public final /* synthetic */ class q1 implements j71.c {
                                 boolean z = wVar.c;
                                 String str3 = wVar.d;
                                 com.github.service.models.response.a e = v8.l0.e(wVar.a.c);
-                                t10.e a = xp.a.a(wVar.f.c);
+                                t10.eShadow a = xp.a.a(wVar.f.c);
                                 String str4 = wVar.e;
                                 ArrayList arrayList5 = rVar5.b;
                                 ArrayList arrayList6 = new ArrayList();
@@ -377,7 +377,7 @@ public final /* synthetic */ class q1 implements j71.c {
                                                     }
                                                     bVar2 = new t10.p(zonedDateTime6, z8, str9, e6, c, arrayList18);
                                                 } else {
-                                                    cq.d3 d3Var = ofVar.h;
+                                                    cq.d3Shadow d3Var = ofVar.h;
                                                     if (d3Var != null) {
                                                         cq.i3 i3Var = d3Var.c;
                                                         ZonedDateTime zonedDateTime7 = i3Var.b;
@@ -521,7 +521,7 @@ public final /* synthetic */ class q1 implements j71.c {
                     ArrayList arrayList26 = new ArrayList();
                     Iterator it3 = list7.iterator();
                     while (it3.hasNext()) {
-                        v10.e eVar2 = (v10.e) it3.next();
+                        v10.eShadow eVar2 = (v10.e) it3.next();
                         if (eVar2 != null) {
                             String str13 = eVar2.b;
                             ZonedDateTime zonedDateTime10 = eVar2.c;
@@ -567,7 +567,7 @@ public final /* synthetic */ class q1 implements j71.c {
                                         aVar = new jn.d(str18, str20, str19);
                                     } else {
                                         i = i16;
-                                        x10.e eVar3 = g0Var2.c;
+                                        x10.eShadow eVar3 = g0Var2.c;
                                         if (eVar3 != null) {
                                             aVar = new jn.d(str18, eVar3.a, eVar3.b.a);
                                         } else {
@@ -700,15 +700,15 @@ public final /* synthetic */ class q1 implements j71.c {
                 x6.y yVar = (x6.y) obj;
                 k71.k.g(yVar, "$this$navigation");
                 x6.p0 p0Var = yVar.g;
-                z6.e r = com.github.rudroid.m0.r(p0Var, z6.e.class);
-                k71.e a2 = k71.x.a(UserOrOgProfileScreenRoute.class);
-                k71.e a3 = k71.x.a(UserOrOrganizationProfileNavigationFragment.class);
+                z6.eShadow r = com.github.rudroid.m0.r(p0Var, z6.eShadow.class);
+                k71.eShadow a2 = k71.x.a(UserOrOgProfileScreenRoute.class);
+                k71.eShadow a3 = k71.x.a(UserOrOrganizationProfileNavigationFragment.class);
                 x61.s sVar2 = x61.s.r;
                 z6.i iVar4 = new z6.i(r, a2, sVar2, a3);
                 ArrayList arrayList29 = yVar.j;
                 arrayList29.add(iVar4.a());
-                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.x.a(OrganizationsRoute.class), sVar2, k71.x.a(OrganizationsFragment.class)).a());
-                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.x.a(UsersRoute.class), (Map) ze.e.a, k71.x.a(UsersFragment.class)).a());
+                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.x.a(OrganizationsRoute.class), sVar2, k71.x.a(OrganizationsFragment.class)).a());
+                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.x.a(UsersRoute.class), (Map) ze.e.a, k71.x.a(UsersFragment.class)).a());
                 rf.g.a(yVar);
                 mg.a.a(yVar);
                 sy.r.u(yVar, k71.x.a(OwnerProjectsEntryPointRoute.class), k71.x.a(OwnerProjectsRoute.class), sVar2, new bf.c(1));

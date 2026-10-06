@@ -5,7 +5,7 @@ import kc0.v90;
 import kc0.w90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qv implements aa.a {
+public final class qv implements aaShadow.a {
     public static final qv a = new qv();
     public static final List b = sy.d0.n("shortcut");
 

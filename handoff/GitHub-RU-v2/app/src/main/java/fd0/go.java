@@ -5,7 +5,7 @@ import kc0.cz;
 import kc0.fz;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class go implements aa.a {
+public final class go implements aaShadow.a {
     public static final go a = new go();
     public static final List b = sy.d0.o(new String[]{"issueCount", "pageInfo", "nodes"});
 

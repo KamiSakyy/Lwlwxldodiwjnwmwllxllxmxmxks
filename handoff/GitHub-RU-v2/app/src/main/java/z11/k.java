@@ -8,7 +8,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class k extends c41.d implements j0 {
+public abstract class kShadow extends c41.d implements j0 {
     public final int g;
 
     public k(byte[] bArr) {

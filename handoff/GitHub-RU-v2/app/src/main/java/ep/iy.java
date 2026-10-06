@@ -6,7 +6,7 @@ import jo.id0;
 import jo.kd0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class iy implements aa.a {
+public final class iy implements aaShadow.a {
     public static final iy a = new iy();
     public static final List b = sy.d0.o("actor", "issue");
 

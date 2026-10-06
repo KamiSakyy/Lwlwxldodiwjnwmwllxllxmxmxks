@@ -5,7 +5,7 @@ import jn0.qd0;
 import jn0.rd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class my implements aa.a {
+public final class my implements aaShadow.a {
     public static final my a = new my();
     public static final List b = sy.d0.n("pullRequestReview");
 

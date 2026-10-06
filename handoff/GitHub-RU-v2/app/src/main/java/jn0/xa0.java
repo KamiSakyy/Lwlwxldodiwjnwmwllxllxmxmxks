@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xa0 implements aa.n0 {
+public final class xa0 implements aaShadow.n0 {
     public static final sa0 Companion = new sa0();
     public final String r;
     public final aa1.b s;
@@ -69,21 +69,21 @@ public final class xa0 implements aa.n0 {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, this.r);
         aa.u0 u0Var = this.s;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("state");
             aa.c.d(aa.c.b(qz0.a.y)).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.t;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             jo.f4.e(fVar, "assigneeIds", bVar).d(fVar, wVar, u0Var2);
         }
         aa.u0 u0Var3 = this.u;
-        if (u0Var3 instanceof aa.u0) {
+        if (u0Var3 instanceof aaShadow.u0) {
             fVar.z0("body");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var3);
         }
         aa.u0 u0Var4 = this.v;
-        if (u0Var4 instanceof aa.u0) {
+        if (u0Var4 instanceof aaShadow.u0) {
             fVar.z0("milestoneId");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var4);
         }

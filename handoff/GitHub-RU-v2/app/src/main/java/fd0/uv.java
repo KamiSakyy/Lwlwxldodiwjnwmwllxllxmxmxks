@@ -5,7 +5,7 @@ import kc0.ea0;
 import kc0.fa0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uv implements aa.a {
+public final class uv implements aaShadow.a {
     public static final uv a = new uv();
     public static final List b = sy.d0.n("updateUserMobileTimeZone");
 

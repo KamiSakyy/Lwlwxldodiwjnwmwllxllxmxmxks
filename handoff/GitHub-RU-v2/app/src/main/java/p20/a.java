@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a implements aa.a {
+public final class a implements aaShadow.a {
     public static final a a = new a();
     public static final List b = sy.d0.n("commentEdge");
 

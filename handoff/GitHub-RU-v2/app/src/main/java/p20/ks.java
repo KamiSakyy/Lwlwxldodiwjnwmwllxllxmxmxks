@@ -5,7 +5,7 @@ import u10.m50;
 import u10.n50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ks implements aa.a {
+public final class ks implements aaShadow.a {
     public static final ks a = new ks();
     public static final List b = sy.d0.n("pullRequest");
 

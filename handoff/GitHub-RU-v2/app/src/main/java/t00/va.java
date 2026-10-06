@@ -4,10 +4,10 @@ package t00;
 public final class va extends c71.c {
     public /* synthetic */ Object u;
     public int v;
-    public final /* synthetic */ wa w;
+    public final /* synthetic */ waShadow w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public va(wa waVar, a71.c cVar) {
+    public va(waShadow waVar, a71.c cVar) {
         super(cVar);
         this.w = waVar;
     }

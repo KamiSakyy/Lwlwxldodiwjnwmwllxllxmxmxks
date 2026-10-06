@@ -49,7 +49,7 @@ import jo.u00;
 import jo.v00;
 import jo.w00;
 import jo.x00;
-import jo.y00;
+import jo.y00Shadow;
 import jo.z00;
 import k71.x;
 import k71.z;
@@ -488,7 +488,7 @@ public final /* synthetic */ class a implements j71.c {
                 while (i14 < size4) {
                     Object obj6 = S4.get(i14);
                     i14++;
-                    y00 y00Var = (y00) obj6;
+                    y00Shadow y00Var = (y00Shadow) obj6;
                     k71.k.g(y00Var, "<this>");
                     yu.h hVar5 = y00Var.c;
                     d dVar = hVar5.e;

@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class zf implements aa.a {
+public final class zf implements aaShadow.a {
     public static final zf a = new zf();
     public static final List b = sy.d0.o(new String[]{"id", "discussion", "__typename"});
 

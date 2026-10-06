@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class od implements aa.v0 {
+public final class od implements aaShadow.v0 {
     public final pd a;
 
     public od(pd pdVar) {

@@ -1,7 +1,7 @@
 package rm0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class m7 extends c71.j implements j71.e {
+public final class m7Shadow extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public int w;
     public final /* synthetic */ Object x;
@@ -17,19 +17,19 @@ public final class m7 extends c71.j implements j71.e {
     public final a71.c r(a71.c cVar, Object obj) {
         switch (this.v) {
             case 0:
-                return new m7((y8) this.x, cVar, 0);
+                return new m7Shadow((y8) this.x, cVar, 0);
             case 1:
-                return new m7((b1.j) this.x, cVar, 1);
+                return new m7Shadow((b1.j) this.x, cVar, 1);
             case 2:
-                return new m7((s0.p0) this.x, cVar, 2);
+                return new m7Shadow((s0.p0) this.x, cVar, 2);
             case 3:
-                return new m7((t00.c9) this.x, cVar, 3);
+                return new m7Shadow((t00.c9) this.x, cVar, 3);
             case 4:
-                return new m7((y8) this.x, cVar, 4);
+                return new m7Shadow((y8) this.x, cVar, 4);
             case 5:
-                return new m7((t00.c9) this.x, cVar, 5);
+                return new m7Shadow((t00.c9) this.x, cVar, 5);
             default:
-                return new m7((y71.y) this.x, cVar, 6);
+                return new m7Shadow((y71.y) this.x, cVar, 6);
         }
     }
 
@@ -37,19 +37,19 @@ public final class m7 extends c71.j implements j71.e {
     public final Object s(Object obj, Object obj2) {
         switch (this.v) {
             case 0:
-                return ((m7) r((a71.c) obj2, (kc0.t1) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (kc0.t1) obj)).v(w61.a0.a);
             case 1:
-                return ((m7) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
             case 2:
-                return ((m7) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
             case 3:
-                return ((m7) r((a71.c) obj2, (jo.y1) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (jo.y1) obj)).v(w61.a0.a);
             case 4:
-                return ((m7) r((a71.c) obj2, (u10.t1) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (u10.t1) obj)).v(w61.a0.a);
             case 5:
-                return ((m7) r((a71.c) obj2, (jn0.t1) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (jn0.t1) obj)).v(w61.a0.a);
             default:
-                return ((m7) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
+                return ((m7Shadow) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
         }
     }
 

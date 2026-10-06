@@ -310,7 +310,7 @@ public final class o2 implements y71.j {
         cq.n4 n4Var;
         cq.t4 t4Var5;
         w61.a0 a0Var2;
-        wy0.w1 w1Var;
+        wy0.w1Shadow w1Var;
         int i3;
         ap0.o3 o3Var;
         ap0.q3 q3Var;
@@ -329,7 +329,7 @@ public final class o2 implements y71.j {
         ap0.x3 x3Var4;
         yz0.m1 m1Var6;
         String str9;
-        ap0.r3 r3Var;
+        ap0.r3Shadow r3Var;
         ap0.x3 x3Var5;
         int i4 = this.r;
         w61.a0 a0Var3 = w61.a0.a;
@@ -365,7 +365,7 @@ public final class o2 implements y71.j {
                                 } else {
                                     str = null;
                                 }
-                                sd0.h0 h0Var = ssVar.a.c;
+                                sd0.h0Shadow h0Var = ssVar.a.c;
                                 String str12 = h0Var.a;
                                 String str13 = h0Var.f.b;
                                 Integer num = h0Var.b;

@@ -5,7 +5,7 @@ import jn0.vd0;
 import jn0.wd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class py implements aa.a {
+public final class py implements aaShadow.a {
     public static final py a = new py();
     public static final List b = sy.d0.n("shortcut");
 

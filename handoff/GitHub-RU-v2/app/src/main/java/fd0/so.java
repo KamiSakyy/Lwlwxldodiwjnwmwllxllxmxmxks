@@ -6,7 +6,7 @@ import kc0.xz;
 import kc0.yz;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class so implements aa.a {
+public final class so implements aaShadow.a {
     public static final so a = new so();
     public static final List b = sy.d0.n("__typename");
 

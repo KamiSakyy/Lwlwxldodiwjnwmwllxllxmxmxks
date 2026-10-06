@@ -5,7 +5,7 @@ import kc0.e70;
 import kc0.f70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class qt implements aa.a {
+public final class qt implements aaShadow.a {
     public static final qt a = new qt();
     public static final List b = sy.d0.n("updateUserDashboardPins");
 

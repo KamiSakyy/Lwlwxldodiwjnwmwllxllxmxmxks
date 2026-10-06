@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class lo implements aa.v0 {
+public final class lo implements aaShadow.v0 {
     public final qo a;
 
     public lo(qo qoVar) {

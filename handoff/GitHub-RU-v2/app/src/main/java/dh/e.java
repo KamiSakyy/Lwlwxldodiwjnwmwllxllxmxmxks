@@ -11,7 +11,7 @@ import com.github.rudroid.uitoolkit.text.h;
 import d1.e0;
 import d2.p0;
 import f1.n2;
-import f1.o2;
+import f1.o2Shadow;
 import f1.s2;
 import f1.u2;
 import f1.w3;
@@ -122,8 +122,8 @@ public final class e {
                 }
                 int i12 = i4 >> 6;
                 float f = w3.a;
-                g gVar = o2.b;
-                n2 n2Var = o2.d;
+                g gVar = o2Shadow.b;
+                n2 n2Var = o2Shadow.d;
                 sVar.c0(2088426481);
                 Locale locale = ((Configuration) sVar.j(j0.a)).getLocales().get(0);
                 sVar.q(false);

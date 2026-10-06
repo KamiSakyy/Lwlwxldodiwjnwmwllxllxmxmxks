@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class zi implements aa.a {
+public abstract class zi implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "state", "url", "authorCanPushToRepository", "submittedAt", "pullRequest", "author", "repository", "threadsAndReplies"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x004d, code lost:
@@ -94,7 +94,7 @@ public abstract class zi implements aa.a {
         r18.s0();
         r16 = mx.d.c(r18, r19);
         r18.s0();
-        r17 = pu.b.c(r18, r19);
+        r17 = puShadow.b.c(r18, r19);
         r8 = r3;
      */
     /* JADX WARN: Code restructure failed: missing block: B:6:0x0045, code lost:
@@ -129,7 +129,7 @@ public abstract class zi implements aa.a {
         ZonedDateTime zonedDateTime = null;
         jo.bs bsVar = null;
         jo.pr prVar = null;
-        jo.cs csVar = null;
+        jo.csShadow csVar = null;
         jo.gs gsVar = null;
         while (true) {
             switch (eVar.r0(a)) {
@@ -228,7 +228,7 @@ public abstract class zi implements aa.a {
         pv.f.d(fVar, wVar, yrVar.l);
         List list2 = mx.d.a;
         mx.d.d(fVar, wVar, yrVar.m);
-        List list3 = pu.b.a;
-        pu.b.d(fVar, wVar, yrVar.n);
+        List list3 = puShadow.b.a;
+        puShadow.b.d(fVar, wVar, yrVar.n);
     }
 }

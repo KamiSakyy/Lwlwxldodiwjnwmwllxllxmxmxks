@@ -5,7 +5,7 @@ import jo.nf0;
 import jo.pf0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vz implements aa.a {
+public final class vz implements aaShadow.a {
     public static final vz a = new vz();
     public static final List b = sy.d0.n("updatePullRequest");
 

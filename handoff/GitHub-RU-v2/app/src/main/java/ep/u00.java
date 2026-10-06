@@ -5,7 +5,7 @@ import jo.ch0;
 import jo.dh0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class u00 implements aa.a {
+public final class u00 implements aaShadow.a {
     public static final u00 a = new u00();
     public static final List b = sy.d0.o("viewer", "id", "__typename");
 

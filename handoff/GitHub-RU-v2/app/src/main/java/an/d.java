@@ -96,7 +96,7 @@ public final class d extends c71.j implements j71.e {
                 dVar2.w = obj;
                 return dVar2;
             case 2:
-                d dVar3 = new d((k) this.z, (oa.j) this.x, (String) this.y, (com.github.rudroid.viewmodels.tasklist.c) this.A, cVar, 2);
+                d dVar3 = new d((kShadow) this.z, (oa.j) this.x, (String) this.y, (com.github.rudroid.viewmodels.tasklist.c) this.A, cVar, 2);
                 dVar3.w = obj;
                 return dVar3;
             case 3:
@@ -219,8 +219,8 @@ public final class d extends c71.j implements j71.e {
     public final Object v(Object obj) {
         int i;
         int i2;
-        cn.k kVar;
-        cn.k kVar2;
+        cn.kShadow kVar;
+        cn.kShadow kVar2;
         String str;
         int i3 = this.v;
         a0 a0Var = a0.a;
@@ -243,7 +243,7 @@ public final class d extends c71.j implements j71.e {
                 String str4 = (String) this.w;
                 b71.a aVar3 = b71.a.r;
                 y.j(obj);
-                return b2.a(((k) obj5).a, (oa.j) obj4, (String) obj2, null, str4, (com.github.rudroid.viewmodels.tasklist.c) obj3, 108);
+                return b2.a(((kShadow) obj5).a, (oa.j) obj4, (String) obj2, null, str4, (com.github.rudroid.viewmodels.tasklist.c) obj3, 108);
             case 3:
                 b71.a aVar4 = b71.a.r;
                 y.j(obj);

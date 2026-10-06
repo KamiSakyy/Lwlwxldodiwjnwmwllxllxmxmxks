@@ -5,7 +5,7 @@ import jo.wd0;
 import jo.xd0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class oy implements aa.a {
+public final class oy implements aaShadow.a {
     public static final oy a = new oy();
     public static final List b = sy.d0.n("updateUserDashboardPins");
 

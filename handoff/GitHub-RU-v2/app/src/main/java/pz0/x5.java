@@ -2,13 +2,13 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x5 {
-    public final a5 a;
+    public final a5Shadow a;
     public final aa1.b b;
     public final String c;
     public final aa1.b d;
     public final z4 e;
 
-    public x5(a5 a5Var, String str, aa.u0 u0Var, z4 z4Var) {
+    public x5(a5Shadow a5Var, String str, aa.u0 u0Var, z4 z4Var) {
         k71.k.g(str, "expectedHeadOid");
         this.a = a5Var;
         this.b = aa.t0.d;

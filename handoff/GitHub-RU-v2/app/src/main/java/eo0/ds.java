@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.k40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ds implements aa.a {
+public final class ds implements aaShadow.a {
     public static final ds a = new ds();
     public static final List b = sy.d0.n("shortcuts");
 

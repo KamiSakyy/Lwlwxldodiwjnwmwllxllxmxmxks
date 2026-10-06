@@ -4,7 +4,7 @@ import java.util.List;
 import jo.t70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ou implements aa.a {
+public final class ou implements aaShadow.a {
     public static final ou a = new ou();
     public static final List b = sy.d0.o("hasNextPage", "endCursor");
 

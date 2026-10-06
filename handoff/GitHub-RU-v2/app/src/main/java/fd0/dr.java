@@ -5,7 +5,7 @@ import kc0.i30;
 import kc0.k30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class dr implements aa.a {
+public final class dr implements aaShadow.a {
     public static final dr a = new dr();
     public static final List b = sy.d0.n("unresolveReviewThread");
 

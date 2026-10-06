@@ -5,8 +5,8 @@ import jo.i70;
 import jo.m70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fu implements aa.a {
-    public static final fu a = new fu();
+public final class fuShadow implements aaShadow.a {
+    public static final fuShadow a = new fuShadow();
     public static final List b = sy.d0.o("sponsorable", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -18,7 +18,7 @@ public final class fu implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                m70Var = (m70) aa.c.c(ju.a, true).a(eVar, wVar);
+                m70Var = (m70) aa.c.c(juShadow.a, true).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -49,7 +49,7 @@ public final class fu implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(i70Var, "value");
         fVar.z0("sponsorable");
-        aa.c.c(ju.a, true).b(fVar, wVar, i70Var.a);
+        aa.c.c(juShadow.a, true).b(fVar, wVar, i70Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, i70Var.b);

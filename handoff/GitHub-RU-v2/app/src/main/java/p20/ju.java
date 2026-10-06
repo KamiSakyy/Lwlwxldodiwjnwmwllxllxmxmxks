@@ -5,7 +5,7 @@ import u10.f80;
 import u10.g80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ju implements aa.a {
+public final class ju implements aaShadow.a {
     public static final ju a = new ju();
     public static final List b = sy.d0.n("user");
 

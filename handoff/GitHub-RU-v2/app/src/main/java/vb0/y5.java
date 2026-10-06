@@ -52,7 +52,7 @@ import u10.kz;
 import u10.ln;
 import u10.lz;
 import u10.mn;
-import u10.nn;
+import u10.nnShadow;
 import u10.ol;
 import u10.pl;
 import u10.ql;
@@ -1293,7 +1293,7 @@ public final class y5 implements y71.j {
                             i80.c cVar5 = fnVar.l;
                             String str12 = fnVar.b;
                             jn jnVar2 = fnVar.i;
-                            nn nnVar = fnVar.j;
+                            nnShadow nnVar = fnVar.j;
                             in inVar = fnVar.g;
                             String str13 = inVar.a;
                             String str14 = inVar.b;

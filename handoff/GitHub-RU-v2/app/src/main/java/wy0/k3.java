@@ -3,7 +3,7 @@ package wy0;
 import pz0.py;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class k3 extends c71.j implements j71.e {
+public final class k3Shadow extends c71.j implements j71.e {
     public final /* synthetic */ rm0.o4 A;
     public final /* synthetic */ String B;
     public final /* synthetic */ int v;
@@ -25,9 +25,9 @@ public final class k3 extends c71.j implements j71.e {
     public final a71.c r(a71.c cVar, Object obj) {
         switch (this.v) {
             case 0:
-                return new k3(this.z, this.A, this.B, cVar, 0);
+                return new k3Shadow(this.z, this.A, this.B, cVar, 0);
             default:
-                return new k3(this.z, this.A, this.B, cVar, 1);
+                return new k3Shadow(this.z, this.A, this.B, cVar, 1);
         }
     }
 
@@ -37,7 +37,7 @@ public final class k3 extends c71.j implements j71.e {
         a71.c cVar = (a71.c) obj2;
         switch (this.v) {
         }
-        return ((k3) r(cVar, jVar)).v(w61.a0.a);
+        return ((k3Shadow) r(cVar, jVar)).v(w61.a0.a);
     }
 
     @Override // c71.a

@@ -5,7 +5,7 @@ import kc0.wc0;
 import kc0.xc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mx implements aa.a {
+public final class mx implements aaShadow.a {
     public static final mx a = new mx();
     public static final List b = sy.d0.o(new String[]{"repositories", "id", "__typename"});
 

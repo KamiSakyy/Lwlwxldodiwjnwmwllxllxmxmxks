@@ -123,7 +123,7 @@ public final class a0 implements Handler.Callback, ServiceConnection {
     public final boolean handleMessage(Message message) {
         HashSet hashSet;
         int i = message.what;
-        c.c cVar = null;
+        c.cShadow cVar = null;
         if (i == 0) {
             x xVar = (x) message.obj;
             String string = Settings.Secure.getString(this.f29412r.getContentResolver(), "enabled_notification_listeners");
@@ -203,7 +203,7 @@ public final class a0 implements Handler.Callback, ServiceConnection {
                 int i10 = c.b.f3941f;
                 if (iBinder != null) {
                     IInterface queryLocalInterface = iBinder.queryLocalInterface(c.c.f3942c);
-                    if (queryLocalInterface == null || !(queryLocalInterface instanceof c.c)) {
+                    if (queryLocalInterface == null || !(queryLocalInterface instanceof cShadow.c)) {
                         c.a aVar = new c.a();
                         aVar.f3940f = iBinder;
                         cVar = aVar;

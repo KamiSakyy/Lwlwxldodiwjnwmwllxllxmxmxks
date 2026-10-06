@@ -5,7 +5,7 @@ import kc0.j90;
 import kc0.m90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class hv implements aa.a {
+public final class hv implements aaShadow.a {
     public static final hv a = new hv();
     public static final List b = sy.d0.n("updatePullRequestReviewComment");
 

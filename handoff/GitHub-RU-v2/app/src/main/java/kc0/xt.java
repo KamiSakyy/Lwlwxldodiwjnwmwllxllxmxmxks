@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class xt implements aa.v0 {
+public final class xt implements aaShadow.v0 {
     public final zt a;
 
     public xt(zt ztVar) {

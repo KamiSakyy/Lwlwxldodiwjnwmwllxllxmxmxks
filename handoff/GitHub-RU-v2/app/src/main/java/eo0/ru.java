@@ -6,7 +6,7 @@ import jn0.d80;
 import jn0.e80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ru implements aa.a {
+public final class ru implements aaShadow.a {
     public static final ru a = new ru();
     public static final List b = sy.d0.o(new String[]{"actor", "unlockedRecord"});
 

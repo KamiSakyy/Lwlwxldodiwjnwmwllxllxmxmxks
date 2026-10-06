@@ -49,7 +49,7 @@ public final class q {
         this.e = dVar;
     }
 
-    public static t0 c(w51.r rVar, int i) {
+    public static t0 c(w51.rShadow rVar, int i) {
         String str = (String) rVar.t;
         String str2 = (String) rVar.s;
         StackTraceElement[] stackTraceElementArr = (StackTraceElement[]) rVar.u;
@@ -57,9 +57,9 @@ public final class q {
         if (stackTraceElementArr == null) {
             stackTraceElementArr = new StackTraceElement[0];
         }
-        w51.r rVar2 = (w51.r) rVar.v;
+        w51.rShadow rVar2 = (w51.r) rVar.v;
         if (i >= 8) {
-            w51.r rVar3 = rVar2;
+            w51.rShadow rVar3 = rVar2;
             while (rVar3 != null) {
                 rVar3 = (w51.r) rVar3.v;
                 i2++;

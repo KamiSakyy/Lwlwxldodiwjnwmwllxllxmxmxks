@@ -10,7 +10,7 @@ import u10.tf;
 import u10.y90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class aa implements z01.l1, yb0, mi0, y90, yf0 {
+public final class aaShadow implements z01.l1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
     public final v71.v t;

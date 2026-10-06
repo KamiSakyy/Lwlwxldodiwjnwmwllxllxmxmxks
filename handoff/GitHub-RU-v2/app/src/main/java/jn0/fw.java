@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class fw implements aa.w0 {
+public final class fw implements aaShadow.w0 {
     public static final wv Companion = new wv();
     public final String r;
     public final String s;
@@ -70,14 +70,14 @@ public final class fw implements aa.w0 {
         fVar.z0("repositoryName");
         bVar.b(fVar, wVar, this.s);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("branch");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         fVar.z0("first");
         fVar.z(30);
         aa.u0 u0Var2 = this.u;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("after");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
         }

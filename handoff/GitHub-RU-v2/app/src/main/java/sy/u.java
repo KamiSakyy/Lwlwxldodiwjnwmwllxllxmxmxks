@@ -216,7 +216,7 @@ public abstract class u {
                                             String str17 = rVar.e.r;
                                             eVar.getClass();
                                             IssueState b = r01.e.b(str17);
-                                            ea0.x xVar = rVar.i;
+                                            ea0.xShadow xVar = rVar.i;
                                             q4Var = new q4(str15, str16, i5, b, xVar.c.c, xVar.b, t.a0.N(rVar.j));
                                         } else if (sVar != null) {
                                             String str18 = sVar.a;
@@ -545,5 +545,5 @@ public abstract class u {
         throw new NoWhenBranchMatchedException();
     }
 
-    public abstract void g(u31.x xVar, float f, float f2);
+    public abstract void g(u31.xShadow xVar, float f, float f2);
 }

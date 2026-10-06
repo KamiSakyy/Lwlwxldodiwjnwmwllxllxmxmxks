@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class hc implements aa.a {
+public final class hc implements aaShadow.a {
     public static final hc a = new hc();
     public static final List b = sy.d0.n("createSavedNotificationThread");
 

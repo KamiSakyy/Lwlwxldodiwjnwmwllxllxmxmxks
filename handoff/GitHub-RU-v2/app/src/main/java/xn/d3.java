@@ -3,7 +3,7 @@ package xn;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class d3 {
+public final class d3Shadow {
     public final int a;
     public final double b;
     public final int c;
@@ -22,10 +22,10 @@ public final class d3 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof d3)) {
+        if (!(obj instanceof d3Shadow)) {
             return false;
         }
-        d3 d3Var = (d3) obj;
+        d3Shadow d3Var = (d3Shadow) obj;
         return this.a == d3Var.a && Double.compare(this.b, d3Var.b) == 0 && this.c == d3Var.c && k71.k.b(this.d, d3Var.d) && this.e == d3Var.e;
     }
 

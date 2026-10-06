@@ -5,7 +5,7 @@ import jn0.b70;
 import jn0.d70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class bu implements aa.a {
+public final class bu implements aaShadow.a {
     public static final bu a = new bu();
     public static final List b = sy.d0.n("unresolveReviewThread");
 

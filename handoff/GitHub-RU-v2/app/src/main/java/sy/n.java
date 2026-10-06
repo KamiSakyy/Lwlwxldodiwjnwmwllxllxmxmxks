@@ -148,7 +148,7 @@ public abstract class n {
         k71.k.g(lVar, "<this>");
         w50.f fVar = lVar.m;
         ev evVar2 = lVar.k;
-        w50.k kVar = lVar.j;
+        w50.kShadow kVar = lVar.j;
         ev evVar3 = kVar.d;
         String str3 = lVar.b;
         String str4 = lVar.c;
@@ -223,7 +223,7 @@ public abstract class n {
         return new y1(str2, str4, str5, z, zonedDateTime, d3Var, z2, subscriptionState5, subscriptionState7, c, str, i, b0Var, i2, x0, gVar != null ? gVar.a : 0, t.a0.N(lVar.o), (IssueType) null, (h01.p) null, (String) null, kVar.c, (z01.p) null);
     }
 
-    public static final p01.n G(w61.k kVar) {
+    public static final p01.n G(w61.kShadow kVar) {
         int i;
         Object obj = kVar.r;
         m3 m3Var = (m3) obj;
@@ -252,10 +252,10 @@ public abstract class n {
         return new p01.n(str, aVar, z, str2, i2, str3, str4, i3, jVar, z2, str5, str6, z3, k3Var != null ? f1.e.h(k3Var.b.b, "/", k3Var.a) : null);
     }
 
-    public static final Object H(x6.k kVar, k71.e eVar) {
+    public static final Object H(x6.kShadow kVar, k71.e eVar) {
         Bundle a = kVar.y.a();
         if (a == null) {
-            a = d((w61.k[]) Arrays.copyOf(new w61.k[0], 0));
+            a = d((w61.kShadow[]) Arrays.copyOf(new w61.k[0], 0));
         }
         Map f = kVar.s.f();
         LinkedHashMap linkedHashMap = new LinkedHashMap(x61.x.s(f.size()));
@@ -774,7 +774,7 @@ public abstract class n {
 
     public abstract boolean u(float f, float f2);
 
-    public abstract void x(x91.c cVar, x91.g gVar, ArrayList arrayList, q81.k kVar);
+    public abstract void x(x91.c cVar, x91.g gVar, ArrayList arrayList, q81.kShadow kVar);
 
     public abstract int z(x91.c cVar, b21.v vVar, ArrayList arrayList);
 

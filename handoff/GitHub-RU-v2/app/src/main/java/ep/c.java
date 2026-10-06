@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class c implements aa.a {
+public final class c implements aaShadow.a {
     public static final c a = new c();
     public static final List b = sy.d0.n("addAssigneesToAssignable");
 
@@ -12,7 +12,7 @@ public final class c implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         jo.a aVar = null;
         while (eVar.r0(b) == 0) {
-            aVar = (jo.a) aa.c.b(aa.c.c(a.a, false)).a(eVar, wVar);
+            aVar = (joShadow.a) aa.c.b(aa.c.c(a.a, false)).a(eVar, wVar);
         }
         return new jo.d(aVar);
     }

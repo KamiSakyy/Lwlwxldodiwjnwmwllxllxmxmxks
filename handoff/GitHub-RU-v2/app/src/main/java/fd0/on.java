@@ -5,7 +5,7 @@ import kc0.iy;
 import kc0.jy;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class on implements aa.a {
+public final class on implements aaShadow.a {
     public static final on a = new on();
     public static final List b = sy.d0.n("repository");
 

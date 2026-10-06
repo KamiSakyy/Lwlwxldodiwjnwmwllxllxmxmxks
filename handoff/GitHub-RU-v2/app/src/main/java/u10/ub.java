@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ub implements aa.m0 {
+public final class ub implements aaShadow.m0 {
     public final vb a;
 
     public ub(vb vbVar) {

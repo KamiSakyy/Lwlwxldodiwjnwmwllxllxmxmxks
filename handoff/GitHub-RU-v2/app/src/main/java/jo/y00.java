@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class y00 {
+public final class y00Shadow {
     public final String a;
     public final String b;
     public final yu.h c;
@@ -16,10 +16,10 @@ public final class y00 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof y00)) {
+        if (!(obj instanceof y00Shadow)) {
             return false;
         }
-        y00 y00Var = (y00) obj;
+        y00Shadow y00Var = (y00Shadow) obj;
         return k71.k.b(this.a, y00Var.a) && k71.k.b(this.b, y00Var.b) && k71.k.b(this.c, y00Var.c);
     }
 

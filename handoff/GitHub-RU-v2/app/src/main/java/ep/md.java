@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class md implements aa.a {
+public final class md implements aaShadow.a {
     public static final md a = new md();
     public static final List b = sy.d0.o("id", "copilotLicenseType", "__typename");
 
@@ -18,7 +18,7 @@ public final class md implements aa.a {
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                m8Var = (m10.m8) aa.c.b(n10.a.o).a(eVar, wVar);
+                m8Var = (m10.m8) aa.c.b(n10Shadow.a.o).a(eVar, wVar);
             } else {
                 if (r0 != 2) {
                     break;
@@ -46,7 +46,7 @@ public final class md implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, tjVar.a);
         fVar.z0("copilotLicenseType");
-        aa.c.b(n10.a.o).b(fVar, wVar, tjVar.b);
+        aa.c.b(n10Shadow.a.o).b(fVar, wVar, tjVar.b);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, tjVar.c);
     }

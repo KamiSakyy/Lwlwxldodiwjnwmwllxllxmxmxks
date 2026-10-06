@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class of implements aa.a {
+public final class of implements aaShadow.a {
     public static final of a = new of();
     public static final List b = sy.d0.o("__typename", "url", "state", "id");
 

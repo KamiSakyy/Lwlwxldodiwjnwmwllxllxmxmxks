@@ -5,7 +5,7 @@ import java.util.List;
 import jo.d70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cu implements aa.a {
+public final class cu implements aaShadow.a {
     public static final cu a = new cu();
     public static final List b = sy.d0.o("spokenLanguages", "id", "__typename");
 

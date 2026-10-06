@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class py implements aa.n0 {
+public final class py implements aaShadow.n0 {
     public static final my Companion = new my();
     public final String r;
     public final ArrayList s;

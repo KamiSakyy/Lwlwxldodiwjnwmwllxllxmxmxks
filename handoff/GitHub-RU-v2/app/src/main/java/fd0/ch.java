@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class ch implements aa.a {
+public abstract class ch implements aaShadow.a {
     public static final List a = sy.d0.n("reactions");
 
     public static kc0.ep c(ea.e eVar, aa.w wVar) {

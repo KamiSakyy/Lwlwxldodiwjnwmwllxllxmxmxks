@@ -5,7 +5,7 @@ import u10.sw;
 import u10.tw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class jm implements aa.a {
+public final class jm implements aaShadow.a {
     public static final jm a = new jm();
     public static final List b = sy.d0.n("resolveReviewThread");
 

@@ -12,7 +12,7 @@ import jn0.xb0;
 import jn0.zb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class fx implements aa.a {
+public final class fx implements aaShadow.a {
     public static final fx a = new fx();
     public static final List b = sy.d0.o(new String[]{"__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "mergeQueueEntry", "mergeQueue", "viewerCanUpdate", "timelineItems"});
 

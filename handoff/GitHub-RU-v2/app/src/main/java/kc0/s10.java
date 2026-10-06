@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s10 implements aa.v0 {
+public final class s10 implements aaShadow.v0 {
     public final w10 a;
 
     public s10(w10 w10Var) {

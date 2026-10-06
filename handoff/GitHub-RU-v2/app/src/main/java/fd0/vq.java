@@ -5,7 +5,7 @@ import kc0.o20;
 import kc0.w20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class vq implements aa.a {
+public final class vq implements aaShadow.a {
     public static final vq a = new vq();
     public static final List b = sy.d0.o(new String[]{"id", "issueOrPullRequest", "__typename"});
 

@@ -1,7 +1,7 @@
 package q;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class v1 implements Runnable {
+public final class v1Shadow implements Runnable {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ int f30742r;

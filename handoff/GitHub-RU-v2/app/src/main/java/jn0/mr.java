@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mr implements aa.m0 {
+public final class mr implements aaShadow.m0 {
     public final or a;
 
     public mr(or orVar) {

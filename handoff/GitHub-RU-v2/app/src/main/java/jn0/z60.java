@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class z60 implements aa.w0 {
+public final class z60 implements aaShadow.w0 {
     public static final t60 Companion = new t60();
     public final aa1.b r;
     public final aa1.b s;
@@ -65,12 +65,12 @@ public final class z60 implements aa.w0 {
         fVar.z0("first");
         fVar.z(30);
         aa.u0 u0Var = this.r;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("after");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.s;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("type");
             aa.c.d(aa.c.b(qz0.b.p)).d(fVar, wVar, u0Var2);
         } else if (z) {
@@ -78,7 +78,7 @@ public final class z60 implements aa.w0 {
             aa.c.l.b(fVar, wVar, (Object) null);
         }
         aa.u0 u0Var3 = this.t;
-        if (u0Var3 instanceof aa.u0) {
+        if (u0Var3 instanceof aaShadow.u0) {
             fVar.z0("includeIssueTemplateProperties");
             aa.c.d(aa.c.k).d(fVar, wVar, u0Var3);
         } else if (z) {

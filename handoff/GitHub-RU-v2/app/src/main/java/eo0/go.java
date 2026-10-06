@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class go implements aa.a {
+public final class go implements aaShadow.a {
     public static final go a = new go();
     public static final List b = sy.d0.o(new String[]{"id", "compare", "__typename"});
 

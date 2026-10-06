@@ -3,7 +3,7 @@ package xk;
 import com.github.domain.database.GitHubDatabase;
 import com.google.android.gms.internal.measurement.d5;
 import in.r;
-import rm0.r3;
+import rm0.r3Shadow;
 import t00.ua;
 import t00.z1;
 import y71.y;
@@ -25,7 +25,7 @@ public final class c {
         e eVar = this.a;
         eVar.getClass();
         a71.c cVar = null;
-        return new c00.g(new r3(17, d5.B(((GitHubDatabase) eVar.a.a(jVar)).w().a, new String[]{"dashboard_nav_links"}, new ua(21)), eVar), new y(new cn.e(2, cVar, 5), b(jVar)), new a(3, cVar, 0), 27);
+        return new c00.g(new r3Shadow(17, d5.B(((GitHubDatabase) eVar.a.a(jVar)).w().a, new String[]{"dashboard_nav_links"}, new ua(21)), eVar), new y(new cn.e(2, cVar, 5), b(jVar)), new a(3, cVar, 0), 27);
     }
 
     public final gl.f b(oa.j jVar) {

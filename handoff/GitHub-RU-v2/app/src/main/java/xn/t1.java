@@ -1,7 +1,7 @@
 package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class t1 extends w1 {
+public final class t1 extends w1Shadow {
     public final double a;
 
     public t1(double d) {

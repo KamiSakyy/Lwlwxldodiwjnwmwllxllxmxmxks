@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class bp implements aa.v0 {
+public final class bp implements aaShadow.v0 {
     public final dp a;
 
     public bp(dp dpVar) {

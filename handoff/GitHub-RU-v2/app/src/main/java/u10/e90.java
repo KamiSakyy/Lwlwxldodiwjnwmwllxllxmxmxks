@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e90 implements aa.v0 {
+public final class e90 implements aaShadow.v0 {
     public final i90 a;
 
     public e90(i90 i90Var) {

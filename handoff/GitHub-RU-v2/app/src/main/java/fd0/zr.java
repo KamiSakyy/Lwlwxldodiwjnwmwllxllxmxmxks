@@ -5,7 +5,7 @@ import kc0.s40;
 import kc0.w40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class zr implements aa.a {
+public final class zr implements aaShadow.a {
     public static final zr a = new zr();
     public static final List b = sy.d0.n("unmarkFileAsViewed");
 

@@ -55,7 +55,7 @@ import kc0.zm;
 import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a5 implements y71.j {
+public final class a5Shadow implements y71.j {
     public final /* synthetic */ int r;
     public final /* synthetic */ y71.j s;
 
@@ -390,7 +390,7 @@ public final class a5 implements y71.j {
     private final Object g(a71.c cVar, Object obj) {
         j6 j6Var;
         int i;
-        im0.h0 h0Var;
+        im0.h0Shadow h0Var;
         im0.f0 f0Var;
         if (cVar instanceof j6) {
             j6Var = (j6) cVar;
@@ -434,7 +434,7 @@ public final class a5 implements y71.j {
     private final Object h(a71.c cVar, Object obj) {
         k6 k6Var;
         int i;
-        im0.n0 n0Var;
+        im0.n0Shadow n0Var;
         im0.l0 l0Var;
         if (cVar instanceof k6) {
             k6Var = (k6) cVar;
@@ -1112,7 +1112,7 @@ public final class a5 implements y71.j {
                                 fVar = null;
                             } else {
                                 ri0.m3 m3Var = ybVar.b.c;
-                                ri0.l3 l3Var = m3Var.c;
+                                ri0.l3Shadow l3Var = m3Var.c;
                                 fVar = new h01.f(l3Var.c.b, m3Var.b, l3Var.b);
                             }
                             if (fVar != null) {
@@ -1248,7 +1248,7 @@ public final class a5 implements y71.j {
                                         }
                                         MergeCheckStatus f = k21.f.f(l2Var);
                                         String str8 = c4Var.e;
-                                        kc0.r3 r3Var = s3Var.b;
+                                        kc0.r3Shadow r3Var = s3Var.b;
                                         String str9 = r3Var != null ? r3Var.a : "";
                                         String str10 = c4Var.d;
                                         aVar3 = new wl0.a(str5, str6, str7, f, str8, str9, str10 == null ? "" : str10, Boolean.valueOf(c4Var.h), Integer.valueOf(c4Var.f));

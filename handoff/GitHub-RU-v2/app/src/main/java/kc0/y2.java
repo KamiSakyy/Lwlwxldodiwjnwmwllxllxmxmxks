@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class y2 implements aa.w0 {
+public final class y2 implements aaShadow.w0 {
     public static final o2 Companion = new o2();
     public final String r;
     public final aa1.b s;
@@ -64,7 +64,7 @@ public final class y2 implements aa.w0 {
         fVar.z0("assignableId");
         aa.c.a.b(fVar, wVar, this.r);
         aa.u0 u0Var = this.s;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("query");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

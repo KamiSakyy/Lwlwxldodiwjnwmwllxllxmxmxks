@@ -5,7 +5,7 @@ import u10.nw;
 import u10.pw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gm implements aa.a {
+public final class gm implements aaShadow.a {
     public static final gm a = new gm();
     public static final List b = sy.d0.n("repository");
 

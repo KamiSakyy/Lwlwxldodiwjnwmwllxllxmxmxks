@@ -5,7 +5,7 @@ import java.util.List;
 import pz0.n30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class n2 implements aa.a {
+public final class n2 implements aaShadow.a {
     public static final n2 a = new n2();
     public static final List b = sy.d0.o(new String[]{"id", "context", "state", "description", "__typename"});
 

@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class wp implements aa.a {
+public final class wp implements aaShadow.a {
     public static final wp a = new wp();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 

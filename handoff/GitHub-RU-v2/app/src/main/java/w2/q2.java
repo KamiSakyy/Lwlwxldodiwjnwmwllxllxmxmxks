@@ -1,7 +1,7 @@
 package w2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public interface q2 {
+public interface q2Shadow {
     long a();
 
     long b();

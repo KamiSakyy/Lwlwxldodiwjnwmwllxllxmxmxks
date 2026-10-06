@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hq implements aa.a {
+public final class hq implements aaShadow.a {
     public static final hq a = new hq();
     public static final List b = sy.d0.o("id", "ref", "comparison", "pullRequestTemplates", "__typename");
 
@@ -11,7 +11,7 @@ public final class hq implements aa.a {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
-        jo.m10 m10Var = null;
+        jo.m10Shadow m10Var = null;
         jo.g10 g10Var = null;
         List list = null;
         String str2 = null;
@@ -20,7 +20,7 @@ public final class hq implements aa.a {
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                m10Var = (jo.m10) aa.c.b(aa.c.c(gq.a, false)).a(eVar, wVar);
+                m10Var = (jo.m10) aa.c.b(aa.c.c(gqShadow.a, false)).a(eVar, wVar);
             } else if (r0 == 2) {
                 g10Var = (jo.g10) aa.c.b(aa.c.c(aq.a, false)).a(eVar, wVar);
             } else if (r0 == 3) {
@@ -44,7 +44,7 @@ public final class hq implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.n10 n10Var = (jo.n10) obj;
+        jo.n10Shadow n10Var = (jo.n10) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(n10Var, "value");
@@ -52,7 +52,7 @@ public final class hq implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, n10Var.a);
         fVar.z0("ref");
-        aa.c.b(aa.c.c(gq.a, false)).b(fVar, wVar, n10Var.b);
+        aa.c.b(aa.c.c(gqShadow.a, false)).b(fVar, wVar, n10Var.b);
         fVar.z0("comparison");
         aa.c.b(aa.c.c(aq.a, false)).b(fVar, wVar, n10Var.c);
         fVar.z0("pullRequestTemplates");

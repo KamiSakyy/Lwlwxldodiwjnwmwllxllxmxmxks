@@ -5,7 +5,7 @@ import jn0.dc0;
 import jn0.sb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class yw implements aa.a {
+public final class yw implements aaShadow.a {
     public static final yw a = new yw();
     public static final List b = sy.d0.n("updatePullRequestBranch");
 

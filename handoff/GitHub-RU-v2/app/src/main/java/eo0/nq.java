@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.e20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class nq implements aa.a {
+public abstract class nq implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static e20 c(ea.e eVar, aa.w wVar) {

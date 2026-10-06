@@ -6,7 +6,7 @@ import jn0.t30;
 import jn0.u30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class sr implements aa.a {
+public final class sr implements aaShadow.a {
     public static final sr a = new sr();
     public static final List b = sy.d0.n("__typename");
 

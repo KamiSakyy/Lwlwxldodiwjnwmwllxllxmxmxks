@@ -48,7 +48,7 @@ import y41.f0;
 import y41.f1;
 import y41.g1;
 import y41.j2;
-import y41.o0;
+import y41.o0Shadow;
 import y41.p0;
 import y41.q0;
 import y41.r0;
@@ -81,7 +81,7 @@ public final class d {
         Map unmodifiableMap;
         Map unmodifiableMap2;
         Map unmodifiableMap3;
-        o0 a = p0Var.a();
+        o0Shadow a = p0Var.a();
         String e = ((x41.d) fVar.s).e();
         if (e != null) {
             a.e = new c1(e);
@@ -159,7 +159,7 @@ public final class d {
         if (arrayList.isEmpty()) {
             return p0Var;
         }
-        o0 a = p0Var.a();
+        o0Shadow a = p0Var.a();
         a.f = new g1(arrayList);
         return a.a();
     }
@@ -285,7 +285,7 @@ public final class d {
             rVar = new r(th3.getLocalizedMessage(), th3.getClass().getName(), aVar2.k(th3.getStackTrace()), rVar, 9);
         }
         r rVar2 = rVar;
-        o0 o0Var = new o0();
+        o0Shadow o0Var = new o0Shadow();
         o0Var.b = str;
         o0Var.a = j;
         o0Var.g = (byte) (o0Var.g | 1);

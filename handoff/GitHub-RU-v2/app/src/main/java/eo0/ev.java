@@ -5,7 +5,7 @@ import jn0.w80;
 import jn0.y80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ev implements aa.a {
+public final class ev implements aaShadow.a {
     public static final ev a = new ev();
     public static final List b = sy.d0.n("unminimizeComment");
 

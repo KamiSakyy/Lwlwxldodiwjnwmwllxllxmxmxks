@@ -5,7 +5,7 @@ import jo.y20;
 import jo.z20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fr implements aa.a {
+public final class fr implements aaShadow.a {
     public static final fr a = new fr();
     public static final List b = sy.d0.o("id", "mergeQueue", "__typename");
 
@@ -20,7 +20,7 @@ public final class fr implements aa.a {
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                y20Var = (y20) aa.c.b(aa.c.c(er.a, false)).a(eVar, wVar);
+                y20Var = (y20) aa.c.b(aa.c.c(erShadow.a, false)).a(eVar, wVar);
             } else {
                 if (r0 != 2) {
                     break;
@@ -48,7 +48,7 @@ public final class fr implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, z20Var.a);
         fVar.z0("mergeQueue");
-        aa.c.b(aa.c.c(er.a, false)).b(fVar, wVar, z20Var.b);
+        aa.c.b(aa.c.c(erShadow.a, false)).b(fVar, wVar, z20Var.b);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, z20Var.c);
     }

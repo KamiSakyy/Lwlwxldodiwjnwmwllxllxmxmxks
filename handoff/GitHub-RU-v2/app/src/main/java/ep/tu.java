@@ -5,8 +5,8 @@ import jo.c80;
 import jo.f80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tu implements aa.a {
-    public static final tu a = new tu();
+public final class tuShadow implements aaShadow.a {
+    public static final tuShadow a = new tuShadow();
     public static final List b = sy.d0.n("submitPullRequestReview");
 
     public final Object a(ea.e eVar, aa.w wVar) {

@@ -5,7 +5,7 @@ import u10.fy;
 import u10.jy;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ln implements aa.a {
+public final class ln implements aaShadow.a {
     public static final ln a = new ln();
     public static final List b = sy.d0.n("search");
 

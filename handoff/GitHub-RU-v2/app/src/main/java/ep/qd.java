@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qd implements aa.a {
+public final class qd implements aaShadow.a {
     public static final qd a = new qd();
     public static final List b = sy.d0.o("__typename", "activeLockReason");
 
@@ -20,7 +20,7 @@ public final class qd implements aa.a {
                 if (r0 != 1) {
                     break;
                 }
-                kkVar = (m10.kk) aa.c.b(n10.b.h).a(eVar, wVar);
+                kkVar = (m10.kk) aa.c.b(n10Shadow.b.h).a(eVar, wVar);
             }
         }
         eVar.s0();
@@ -41,7 +41,7 @@ public final class qd implements aa.a {
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, zjVar.a);
         fVar.z0("activeLockReason");
-        aa.c.b(n10.b.h).b(fVar, wVar, zjVar.b);
+        aa.c.b(n10Shadow.b.h).b(fVar, wVar, zjVar.b);
         tt.h hVar = tt.h.a;
         tt.h.d(fVar, wVar, zjVar.c);
     }

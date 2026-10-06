@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.p80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class tu implements aa.a {
+public final class tu implements aaShadow.a {
     public static final tu a = new tu();
     public static final List b = sy.d0.n("nodes");
 

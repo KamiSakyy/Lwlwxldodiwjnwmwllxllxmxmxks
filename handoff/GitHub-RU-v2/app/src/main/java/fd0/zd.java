@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class zd implements aa.a {
+public final class zd implements aaShadow.a {
     public static final zd a = new zd();
     public static final List b = sy.d0.o(new String[]{"__typename", "id", "baseRefName", "mergeCommit", "mergedBy", "mergeStateStatus", "viewerCanDeleteHeadRef", "viewerCanReopen"});
 

@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.c10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class np implements aa.a {
+public final class np implements aaShadow.a {
     public static final np a = new np();
     public static final List b = sy.d0.o(new String[]{"__typename", "id"});
 

@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class nn implements aa.w0 {
+public final class nnShadow implements aaShadow.w0 {
     public static final hn Companion = new hn();
     public final String r;
     public final String s;
@@ -30,10 +30,10 @@ public final class nn implements aa.w0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof nn)) {
+        if (!(obj instanceof nnShadow)) {
             return false;
         }
-        nn nnVar = (nn) obj;
+        nnShadow nnVar = (nnShadow) obj;
         return k71.k.b(this.r, nnVar.r) && k71.k.b(this.s, nnVar.s);
     }
 

@@ -58,7 +58,7 @@ import y41.n;
 import y41.n0;
 import y41.n2;
 import y41.o;
-import y41.o0;
+import y41.o0Shadow;
 import y41.o1;
 import y41.p;
 import y41.p0;
@@ -327,7 +327,7 @@ public final class c {
         int i3;
         int i4;
         int i5;
-        o0 o0Var = new o0();
+        o0Shadow o0Var = new o0Shadow();
         jsonReader.beginObject();
         while (jsonReader.hasNext()) {
             String nextName = jsonReader.nextName();

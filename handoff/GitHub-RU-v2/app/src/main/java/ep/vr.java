@@ -4,7 +4,7 @@ import java.util.List;
 import jo.z30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vr implements aa.a {
+public final class vr implements aaShadow.a {
     public static final vr a = new vr();
     public static final List b = sy.d0.o("__typename", "id");
 

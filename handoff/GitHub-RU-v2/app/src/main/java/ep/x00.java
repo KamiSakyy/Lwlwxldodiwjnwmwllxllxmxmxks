@@ -5,7 +5,7 @@ import java.util.List;
 import jo.hh0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x00 implements aa.a {
+public final class x00 implements aaShadow.a {
     public static final x00 a = new x00();
     public static final List b = sy.d0.n("contributionLevel");
 

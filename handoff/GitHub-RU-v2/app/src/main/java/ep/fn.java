@@ -3,12 +3,12 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fn implements aa.a {
+public final class fn implements aaShadow.a {
     public static final fn a = new fn();
     public static final List b = sy.d0.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
-        jo.qx qxVar;
+        jo.qxShadow qxVar;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
@@ -50,7 +50,7 @@ public final class fn implements aa.a {
         bVar.b(fVar, wVar, pxVar.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, pxVar.b);
-        jo.qx qxVar = pxVar.c;
+        jo.qxShadow qxVar = pxVar.c;
         if (qxVar != null) {
             gn.d(fVar, wVar, qxVar);
         }

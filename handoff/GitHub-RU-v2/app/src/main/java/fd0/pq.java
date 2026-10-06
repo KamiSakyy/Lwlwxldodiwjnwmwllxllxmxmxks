@@ -5,7 +5,7 @@ import kc0.q20;
 import kc0.y20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class pq implements aa.a {
+public abstract class pq implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"timelineItem", "id"});
 
     public static q20 c(ea.e eVar, aa.w wVar) {

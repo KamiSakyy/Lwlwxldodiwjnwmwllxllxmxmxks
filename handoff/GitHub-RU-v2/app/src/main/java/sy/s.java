@@ -126,7 +126,7 @@ public abstract class s {
         return w61.a0.a;
     }
 
-    public static final b01.j d(e50.x xVar) {
+    public static final b01.j d(e50.xShadow xVar) {
         g0 g0Var;
         i80.c cVar = xVar.l;
         com.github.service.models.response.a c = t.e.c(xVar.c.b.b);

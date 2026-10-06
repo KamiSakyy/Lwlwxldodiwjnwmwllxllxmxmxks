@@ -172,9 +172,9 @@ public final class u7 implements y71.j {
         List list8;
         yv yvVar2;
         List list9;
-        wy0.z8 z8Var;
+        wy0.z8Shadow z8Var;
         int i15;
-        wy0.d9 d9Var;
+        wy0.d9Shadow d9Var;
         int i16;
         wy0.g9 g9Var;
         int i17;
@@ -246,15 +246,15 @@ public final class u7 implements y71.j {
                 j0.g gVar = (j0.h) obj;
                 s0.p0 p0Var = (s0.p0) this.t;
                 x.d0 d0Var2 = (x.d0) this.s;
-                if ((gVar instanceof j0.f) || (gVar instanceof j0.d) || (gVar instanceof j0.l)) {
+                if ((gVar instanceof j0Shadow.f) || (gVar instanceof j0Shadow.d) || (gVar instanceof j0Shadow.l)) {
                     d0Var2.a(gVar);
-                } else if (gVar instanceof j0.g) {
+                } else if (gVar instanceof j0Shadow.g) {
                     d0Var2.j(gVar.a);
-                } else if (gVar instanceof j0.e) {
+                } else if (gVar instanceof j0Shadow.e) {
                     d0Var2.j(((j0.e) gVar).a);
-                } else if (gVar instanceof j0.m) {
+                } else if (gVar instanceof j0Shadow.m) {
                     d0Var2.j(((j0.m) gVar).a);
-                } else if (gVar instanceof j0.k) {
+                } else if (gVar instanceof j0Shadow.k) {
                     d0Var2.j(((j0.k) gVar).a);
                 }
                 Object[] objArr = d0Var2.a;
@@ -262,13 +262,13 @@ public final class u7 implements y71.j {
                 int i24 = 0;
                 for (int i25 = 0; i25 < i23; i25++) {
                     j0.h hVar = (j0.h) objArr[i25];
-                    if (hVar instanceof j0.f) {
+                    if (hVar instanceof j0Shadow.f) {
                         p0Var.getClass();
                         i24 |= 2;
-                    } else if (hVar instanceof j0.d) {
+                    } else if (hVar instanceof j0Shadow.d) {
                         p0Var.getClass();
                         i24 |= 1;
-                    } else if (hVar instanceof j0.l) {
+                    } else if (hVar instanceof j0Shadow.l) {
                         p0Var.getClass();
                         i24 |= 4;
                     }

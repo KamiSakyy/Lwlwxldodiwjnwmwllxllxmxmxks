@@ -3,7 +3,7 @@ package u10;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vf implements aa.v0 {
+public final class vf implements aaShadow.v0 {
     public final ArrayList a;
 
     public vf(ArrayList arrayList) {

@@ -5,7 +5,7 @@ import jo.ga0;
 import jo.ha0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fw implements aa.a {
+public final class fw implements aaShadow.a {
     public static final fw a = new fw();
     public static final List b = sy.d0.n("user");
 

@@ -5,7 +5,7 @@ import jn0.y40;
 import jn0.z40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class os implements aa.a {
+public final class os implements aaShadow.a {
     public static final os a = new os();
     public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
 

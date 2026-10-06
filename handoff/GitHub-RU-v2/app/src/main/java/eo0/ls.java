@@ -5,7 +5,7 @@ import jn0.a50;
 import jn0.w40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ls implements aa.a {
+public final class ls implements aaShadow.a {
     public static final ls a = new ls();
     public static final List b = sy.d0.o(new String[]{"viewer", "id", "__typename"});
 

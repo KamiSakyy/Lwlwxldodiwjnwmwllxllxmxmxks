@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class sm implements aa.a {
+public final class sm implements aaShadow.a {
     public static final sm a = new sm();
     public static final List b = sy.d0.o(new String[]{"hasNextPage", "endCursor"});
 

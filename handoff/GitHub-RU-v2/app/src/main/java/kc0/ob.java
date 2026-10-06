@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ob implements aa.v0 {
+public final class ob implements aaShadow.v0 {
     public final rb a;
     public final sb b;
 

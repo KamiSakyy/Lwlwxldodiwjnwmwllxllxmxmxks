@@ -5,7 +5,7 @@ import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.ui.h0;
-import rm0.r3;
+import rm0.r3Shadow;
 import v71.q1;
 import y71.i1;
 import y71.n1;
@@ -70,7 +70,7 @@ public final class q extends k1 implements com.github.rudroid.utilities.viewmode
         y1 c12 = n1.c(g1.a.a());
         this.A = c12;
         h0 h0Var = null;
-        r3 l = n1.l(c10, c11, c12, new b0(this, null));
+        r3Shadow l = n1.l(c10, c11, c12, new b0(this, null));
         v6.a k10 = d1.k(this);
         v1 a10 = y71.q1.a(3);
         com.github.rudroid.createrepository.model.a aVar = (com.github.rudroid.createrepository.model.a) c10.getValue();

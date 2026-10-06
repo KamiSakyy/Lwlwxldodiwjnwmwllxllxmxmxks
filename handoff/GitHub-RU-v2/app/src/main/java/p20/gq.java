@@ -5,7 +5,7 @@ import u10.h20;
 import u10.i20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gq implements aa.a {
+public final class gq implements aaShadow.a {
     public static final gq a = new gq();
     public static final List b = sy.d0.n("unlockLockable");
 

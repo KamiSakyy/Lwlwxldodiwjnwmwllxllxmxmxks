@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jh implements aa.a {
+public final class jh implements aaShadow.a {
     public static final jh a = new jh();
     public static final List b = sy.d0.n("__typename");
 

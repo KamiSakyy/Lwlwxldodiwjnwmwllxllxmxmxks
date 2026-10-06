@@ -4,7 +4,7 @@ import java.util.List;
 import jo.q40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class is implements aa.a {
+public abstract class isShadow implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static q40 c(ea.e eVar, aa.w wVar) {

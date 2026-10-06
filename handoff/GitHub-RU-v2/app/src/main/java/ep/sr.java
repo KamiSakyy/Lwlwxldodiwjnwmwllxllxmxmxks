@@ -5,7 +5,7 @@ import jo.t30;
 import jo.u30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class sr implements aa.a {
+public final class sr implements aaShadow.a {
     public static final sr a = new sr();
     public static final List b = sy.d0.o("readme", "id", "__typename");
 

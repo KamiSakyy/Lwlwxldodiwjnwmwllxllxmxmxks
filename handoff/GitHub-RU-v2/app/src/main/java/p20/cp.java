@@ -5,7 +5,7 @@ import u10.p00;
 import u10.y00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cp implements aa.a {
+public final class cp implements aaShadow.a {
     public static final cp a = new cp();
     public static final List b = sy.d0.n("repository");
 

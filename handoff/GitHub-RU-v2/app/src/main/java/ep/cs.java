@@ -6,8 +6,8 @@ import jo.t40;
 import jo.u40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cs implements aa.a {
-    public static final cs a = new cs();
+public final class csShadow implements aaShadow.a {
+    public static final csShadow a = new csShadow();
     public static final List b = sy.d0.o("repository", "search", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -22,7 +22,7 @@ public final class cs implements aa.a {
             if (r0 == 0) {
                 t40Var = (t40) aa.c.b(aa.c.c(ls.a, false)).a(eVar, wVar);
             } else if (r0 == 1) {
-                u40Var = (u40) aa.c.c(ms.a, false).a(eVar, wVar);
+                u40Var = (u40) aa.c.c(msShadow.a, false).a(eVar, wVar);
             } else if (r0 == 2) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -55,7 +55,7 @@ public final class cs implements aa.a {
         fVar.z0("repository");
         aa.c.b(aa.c.c(ls.a, false)).b(fVar, wVar, k40Var.a);
         fVar.z0("search");
-        aa.c.c(ms.a, false).b(fVar, wVar, k40Var.b);
+        aa.c.c(msShadow.a, false).b(fVar, wVar, k40Var.b);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, k40Var.c);

@@ -6,7 +6,7 @@ import kc0.mb0;
 import kc0.nb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class pw implements aa.a {
+public final class pw implements aaShadow.a {
     public static final pw a = new pw();
     public static final List b = sy.d0.o(new String[]{"user", "organization"});
 

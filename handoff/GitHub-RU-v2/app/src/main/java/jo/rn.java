@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rn {
-    public final nn a;
+    public final nnShadow a;
     public final tn b;
 
-    public rn(nn nnVar, tn tnVar) {
+    public rn(nnShadow nnVar, tn tnVar) {
         this.a = nnVar;
         this.b = tnVar;
     }
@@ -22,7 +22,7 @@ public final class rn {
     }
 
     public final int hashCode() {
-        nn nnVar = this.a;
+        nnShadow nnVar = this.a;
         int hashCode = (nnVar == null ? 0 : nnVar.hashCode()) * 31;
         tn tnVar = this.b;
         return hashCode + (tnVar != null ? tnVar.hashCode() : 0);

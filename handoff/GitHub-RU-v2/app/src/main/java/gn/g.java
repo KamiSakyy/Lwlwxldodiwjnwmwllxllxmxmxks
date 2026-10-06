@@ -5,11 +5,11 @@ public final class g extends c71.c {
     public oa.j u;
     public j71.c v;
     public /* synthetic */ Object w;
-    public final /* synthetic */ h x;
+    public final /* synthetic */ hShadow x;
     public int y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public g(h hVar, c71.c cVar) {
+    public g(hShadow hVar, c71.c cVar) {
         super(cVar);
         this.x = hVar;
     }

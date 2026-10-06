@@ -15,7 +15,7 @@ import com.github.service.models.response.shortcuts.ShortcutScope;
 import com.github.service.models.response.shortcuts.ShortcutType;
 import com.google.android.gms.internal.measurement.d5;
 import java.util.List;
-import rm0.r3;
+import rm0.r3Shadow;
 import t00.f8;
 import wy0.p4;
 import y71.n1;
@@ -83,13 +83,13 @@ final class i0 extends c71.j implements j71.e {
             gVar.getClass();
             zl.b bVar = gVar.a;
             bVar.getClass();
-            r3 r3Var = new r3(8, d5.B(((GitHubDatabase) bVar.a.a(d)).z().a, new String[]{"filter_bars"}, new p4(27)), gVar);
+            r3Shadow r3Var = new r3Shadow(8, d5.B(((GitHubDatabase) bVar.a.a(d)).z().a, new String[]{"filter_bars"}, new p4(27)), gVar);
             tm.c cVar2 = n0Var.w;
             oa.j d2 = cVar.d();
             cVar2.getClass();
             um.r rVar = cVar2.a;
             rVar.getClass();
-            r3 l = n1.l(f8Var, r3Var, new um.j(rVar.a.b(d2), rVar, 0), new g0(4, null));
+            r3Shadow l = n1.l(f8Var, r3Var, new um.j(rVar.a.b(d2), rVar, 0), new g0(4, null));
             h0 h0Var = new h0(n0Var);
             this.v = 1;
             if (l.b(h0Var, this) == aVar) {

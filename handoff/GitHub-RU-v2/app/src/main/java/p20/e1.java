@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e1 implements aa.a {
+public final class e1 implements aaShadow.a {
     public static final e1 a = new e1();
     public static final List b = sy.d0.n("applyMobileSuggestedChanges");
 

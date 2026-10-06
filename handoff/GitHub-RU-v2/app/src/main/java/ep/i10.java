@@ -6,7 +6,7 @@ import jo.th0;
 import jo.wh0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class i10 implements aa.a {
+public final class i10 implements aaShadow.a {
     public static final i10 a = new i10();
     public static final List b = sy.d0.o("id", "hasCreatedLists", "suggestedListNames", "lists", "__typename");
 

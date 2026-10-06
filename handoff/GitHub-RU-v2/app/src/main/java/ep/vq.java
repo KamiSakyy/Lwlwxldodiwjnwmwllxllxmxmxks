@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vq implements aa.a {
+public final class vq implements aaShadow.a {
     public static final vq a = new vq();
     public static final List b = sy.d0.o("id", "labels", "__typename");
 

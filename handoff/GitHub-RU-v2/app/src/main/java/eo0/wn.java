@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wn implements aa.a {
+public final class wn implements aaShadow.a {
     public static final wn a = new wn();
     public static final List b = sy.d0.o(new String[]{"planLimit", "pullRequest", "collaborators", "id", "__typename"});
 

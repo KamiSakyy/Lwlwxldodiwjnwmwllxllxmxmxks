@@ -169,7 +169,7 @@ public abstract class q {
         }
     }
 
-    public static x6.w g(x6.x xVar) {
+    public static x6.w g(x6.xShadow xVar) {
         Iterator it = s71.j.h0(xVar, new p4(20)).iterator();
         if (!it.hasNext()) {
             throw new NoSuchElementException("Sequence is empty.");

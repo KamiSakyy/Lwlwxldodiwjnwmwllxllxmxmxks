@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class qx implements aa.v0 {
+public final class qx implements aaShadow.v0 {
     public final ux a;
 
     public qx(ux uxVar) {

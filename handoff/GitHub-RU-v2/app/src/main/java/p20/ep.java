@@ -5,7 +5,7 @@ import u10.r00;
 import u10.x00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ep implements aa.a {
+public final class ep implements aaShadow.a {
     public static final ep a = new ep();
     public static final List b = sy.d0.o("pullRequestReview", "id", "__typename");
 

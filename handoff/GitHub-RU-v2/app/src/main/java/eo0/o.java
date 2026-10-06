@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class o implements aa.a {
+public final class o implements aaShadow.a {
     public static final o a = new o();
     public static final List b = sy.d0.n("addMobileDeviceToken");
 

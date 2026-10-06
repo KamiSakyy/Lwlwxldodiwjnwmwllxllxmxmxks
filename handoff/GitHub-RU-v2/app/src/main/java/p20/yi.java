@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yi implements aa.a {
+public final class yi implements aaShadow.a {
     public static final yi a = new yi();
     public static final List b = sy.d0.n("repository");
 

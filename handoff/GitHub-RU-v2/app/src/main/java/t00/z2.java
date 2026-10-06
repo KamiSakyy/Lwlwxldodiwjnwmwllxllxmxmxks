@@ -471,7 +471,7 @@ public final class z2 implements y71.j {
                 i = q4Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    rz.f1 f1Var = ((rz.d1) obj).a;
+                    rz.f1Shadow f1Var = ((rz.d1) obj).a;
                     Object j = in.r.j(f1Var != null ? f1Var.a : null, "Invalid project, item id, fieldId or value", u1.u);
                     q4Var.v = 1;
                     if (this.s.c(j, q4Var) == aVar) {
@@ -513,7 +513,7 @@ public final class z2 implements y71.j {
                 i = s4Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    rz.f1 f1Var = ((rz.d1) obj).a;
+                    rz.f1Shadow f1Var = ((rz.d1) obj).a;
                     Object j = in.r.j(f1Var != null ? f1Var.a : null, "Invalid project, item id, fieldId or value", u1.v);
                     s4Var.v = 1;
                     if (this.s.c(j, s4Var) == aVar) {
@@ -969,7 +969,7 @@ public final class z2 implements y71.j {
                         if (i5 != 0) {
                             sy.y.j(obj9);
                             zx.x1 x1Var = ((zx.t1) obj).a;
-                            zx.w1 w1Var = null;
+                            zx.w1Shadow w1Var = null;
                             if (((x1Var == null || (u1Var2 = x1Var.b) == null) ? null : u1Var2.b) != null) {
                                 list = w8.s.f(x1Var.b.b.c.c);
                             } else {
@@ -1183,7 +1183,7 @@ public final class z2 implements y71.j {
                         if (i11 != 0) {
                             sy.y.j(obj14);
                             ly.y yVar = ((ly.w) obj).a;
-                            ly.x xVar = yVar != null ? yVar.a : null;
+                            ly.xShadow xVar = yVar != null ? yVar.a : null;
                             String str16 = "";
                             String str17 = xVar != null ? xVar.a : "";
                             String str18 = xVar != null ? xVar.b : "";

@@ -4,7 +4,7 @@ import java.util.List;
 import jo.sa0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class nw implements aa.a {
+public final class nw implements aaShadow.a {
     public static final nw a = new nw();
     public static final List b = sy.d0.o("__typename", "activeLockReason");
 
@@ -21,7 +21,7 @@ public final class nw implements aa.a {
                 if (r0 != 1) {
                     break;
                 }
-                kkVar = (m10.kk) aa.c.b(n10.b.h).a(eVar, wVar);
+                kkVar = (m10.kk) aa.c.b(n10Shadow.b.h).a(eVar, wVar);
             }
         }
         eVar.s0();
@@ -42,7 +42,7 @@ public final class nw implements aa.a {
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, sa0Var.a);
         fVar.z0("activeLockReason");
-        aa.c.b(n10.b.h).b(fVar, wVar, sa0Var.b);
+        aa.c.b(n10Shadow.b.h).b(fVar, wVar, sa0Var.b);
         tt.h hVar = tt.h.a;
         tt.h.d(fVar, wVar, sa0Var.c);
     }

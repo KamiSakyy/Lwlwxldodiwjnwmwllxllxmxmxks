@@ -54,7 +54,7 @@ public final /* synthetic */ class ua implements j71.c {
         String str;
         String str2;
         String str3;
-        l01.n0 n0Var;
+        l01.n0Shadow n0Var;
         x61.r rVar;
         ay0.m mVar;
         ay0.e eVar5;
@@ -202,7 +202,7 @@ public final /* synthetic */ class ua implements j71.c {
                 return Boolean.TRUE;
             case 18:
                 v1.o oVar = (androidx.compose.runtime.f1) obj;
-                if (!(oVar instanceof v1.o)) {
+                if (!(oVar instanceof v1Shadow.o)) {
                     throw new IllegalArgumentException("Failed requirement.");
                 }
                 v1.o oVar2 = oVar;

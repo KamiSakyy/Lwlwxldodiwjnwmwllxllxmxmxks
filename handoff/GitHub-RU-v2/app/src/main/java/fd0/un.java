@@ -5,7 +5,7 @@ import kc0.sy;
 import kc0.ty;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class un implements aa.a {
+public final class un implements aaShadow.a {
     public static final un a = new un();
     public static final List b = sy.d0.n("thread");
 

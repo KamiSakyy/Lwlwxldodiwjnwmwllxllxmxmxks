@@ -5,7 +5,7 @@ import jn0.b60;
 import jn0.c60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ht implements aa.a {
+public final class ht implements aaShadow.a {
     public static final ht a = new ht();
     public static final List b = sy.d0.o(new String[]{"__typename", "subscribable"});
 

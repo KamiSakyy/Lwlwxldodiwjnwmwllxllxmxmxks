@@ -402,7 +402,7 @@ public abstract class e0 {
         f3.a aVar;
         g3.g gVar;
         x1.f fVar;
-        d3.k kVar;
+        d3.kShadow kVar;
         x1.d dVar;
         boolean z;
         boolean z2;
@@ -427,7 +427,7 @@ public abstract class e0 {
         f3.a aVar2;
         g3.g gVar2;
         x1.f fVar2;
-        d3.k kVar2;
+        d3.kShadow kVar2;
         boolean z8;
         int i3;
         d3.b0 b0Var = d3.x.a;
@@ -786,7 +786,7 @@ public abstract class e0 {
         return new p01.g(str, z, str2, statusState);
     }
 
-    public static final p01.n o(w61.k kVar) {
+    public static final p01.n o(w61.kShadow kVar) {
         int i;
         Object obj = kVar.r;
         a2 a2Var = (a2) obj;

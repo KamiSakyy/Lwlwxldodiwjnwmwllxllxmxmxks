@@ -12,7 +12,7 @@ import kc0.x70;
 import kc0.y70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class du implements aa.a {
+public final class du implements aaShadow.a {
     public static final du a = new du();
     public static final List b = sy.d0.o(new String[]{"__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "mergeQueueEntry", "mergeQueue", "viewerCanUpdate", "timelineItems"});
 

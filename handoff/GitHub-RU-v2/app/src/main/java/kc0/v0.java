@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class v0 implements aa.n0 {
+public final class v0 implements aaShadow.n0 {
     public static final q0 Companion = new q0();
     public final String r;
     public final String s;
@@ -85,12 +85,12 @@ public final class v0 implements aa.n0 {
         fVar.z0("endSide");
         aa.c.d(aa.c.b(aVar)).d(fVar, wVar, this.v);
         aa.u0 u0Var = this.w;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("startLine");
             aa.c.d(aa.c.b(aVar2)).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.x;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("startSide");
             aa.c.d(aa.c.b(aVar)).d(fVar, wVar, u0Var2);
         }

@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class vb implements aa.m0 {
+public final class vb implements aaShadow.m0 {
     public final wb a;
 
     public vb(wb wbVar) {

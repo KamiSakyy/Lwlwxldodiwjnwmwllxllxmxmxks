@@ -5,7 +5,7 @@ import u10.d30;
 import u10.e30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class wq implements aa.a {
+public final class wq implements aaShadow.a {
     public static final wq a = new wq();
     public static final List b = sy.d0.n("unminimizedComment");
 

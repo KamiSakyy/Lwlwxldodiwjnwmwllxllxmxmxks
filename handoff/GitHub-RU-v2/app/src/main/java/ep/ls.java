@@ -6,7 +6,7 @@ import jo.s40;
 import jo.t40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ls implements aa.a {
+public final class ls implements aaShadow.a {
     public static final ls a = new ls();
     public static final List b = sy.d0.o("__typename", "name", "id", "issueTypes", "pinnedIssues");
 
@@ -27,12 +27,12 @@ public final class ls implements aa.a {
             } else if (r0 == 2) {
                 str3 = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 3) {
-                m40Var = (m40) aa.c.b(aa.c.c(es.a, false)).a(eVar, wVar);
+                m40Var = (m40) aa.c.b(aa.c.c(esShadow.a, false)).a(eVar, wVar);
             } else {
                 if (r0 != 4) {
                     break;
                 }
-                s40Var = (s40) aa.c.b(aa.c.c(ks.a, false)).a(eVar, wVar);
+                s40Var = (s40) aa.c.b(aa.c.c(ksShadow.a, false)).a(eVar, wVar);
             }
         }
         if (str == null) {
@@ -63,8 +63,8 @@ public final class ls implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, t40Var.c);
         fVar.z0("issueTypes");
-        aa.c.b(aa.c.c(es.a, false)).b(fVar, wVar, t40Var.d);
+        aa.c.b(aa.c.c(esShadow.a, false)).b(fVar, wVar, t40Var.d);
         fVar.z0("pinnedIssues");
-        aa.c.b(aa.c.c(ks.a, false)).b(fVar, wVar, t40Var.e);
+        aa.c.b(aa.c.c(ksShadow.a, false)).b(fVar, wVar, t40Var.e);
     }
 }

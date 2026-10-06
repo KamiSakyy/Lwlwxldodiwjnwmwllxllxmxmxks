@@ -5,7 +5,7 @@ import jo.vc0;
 import jo.xc0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class wx implements aa.a {
+public final class wx implements aaShadow.a {
     public static final wx a = new wx();
     public static final List b = sy.d0.n("updateIssueComment");
 

@@ -1,7 +1,7 @@
 package sg;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class z {
+public final class zShadow {
     public final d2.e0 a;
     public final long b;
     public final f1.o0 c;
@@ -16,10 +16,10 @@ public final class z {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof z)) {
+        if (!(obj instanceof zShadow)) {
             return false;
         }
-        z zVar = (z) obj;
+        zShadow zVar = (zShadow) obj;
         return this.a.equals(zVar.a) && d2.t.c(this.b, zVar.b) && this.c.equals(zVar.c);
     }
 

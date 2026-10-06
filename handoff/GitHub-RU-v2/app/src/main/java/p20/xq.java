@@ -5,7 +5,7 @@ import u10.c30;
 import u10.e30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xq implements aa.a {
+public final class xq implements aaShadow.a {
     public static final xq a = new xq();
     public static final List b = sy.d0.n("__typename");
 

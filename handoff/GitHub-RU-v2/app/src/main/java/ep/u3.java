@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class u3 implements aa.a {
+public final class u3 implements aaShadow.a {
     public static final u3 a = new u3();
     public static final List b = sy.d0.o("startingLineNumber", "endingLineNumber", "jumpToLineNumber", "lines", "score");
 

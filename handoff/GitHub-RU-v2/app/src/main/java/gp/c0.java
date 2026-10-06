@@ -1,6 +1,6 @@
 package gp;
 
-import fp.g1;
+import fp.g1Shadow;
 import java.util.List;
 import jo.f4;
 
@@ -34,14 +34,14 @@ public final class c0 implements aa.a {
         }
         boolean booleanValue = bool.booleanValue();
         if (bool2 != null) {
-            return new g1(str, booleanValue, bool2.booleanValue());
+            return new g1Shadow(str, booleanValue, bool2.booleanValue());
         }
         k41.b.B(eVar, "hasPreviousPage");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        g1 g1Var = (g1) obj;
+        g1Shadow g1Var = (g1Shadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(g1Var, "value");

@@ -5,7 +5,7 @@ import jo.x20;
 import jo.z20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class dr implements aa.a {
+public final class dr implements aaShadow.a {
     public static final dr a = new dr();
     public static final List b = sy.d0.o("repository", "id", "__typename");
 

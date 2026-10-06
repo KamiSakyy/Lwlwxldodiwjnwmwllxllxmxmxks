@@ -52,7 +52,7 @@ public final class ma implements z01.o1, mi0, yf0 {
                 k71.k.g(str, "id");
                 aa.u0 u0Var = new aa.u0(str2);
                 aa.t0 t0Var = aa.t0.d;
-                return y71.n1.y(y71.n1.I(y71.n1.I(new rm0.c8(y71.n1.I(new y00.l(in.r.h(this.t.d(new ld0(str, t0Var, t0Var, t0Var, u0Var))), 10), new z9(null, projectsMetaInfo, this, 0)), 5), new z9(null, projectsMetaInfo, this, 1)), new aa(null, projectsMetaInfo, this, str3, 0)), this.v);
+                return y71.n1.y(y71.n1.I(y71.n1.I(new rm0.c8(y71.n1.I(new y00.l(in.r.h(this.t.d(new ld0(str, t0Var, t0Var, t0Var, u0Var))), 10), new z9(null, projectsMetaInfo, this, 0)), 5), new z9(null, projectsMetaInfo, this, 1)), new aaShadow(null, projectsMetaInfo, this, str3, 0)), this.v);
             default:
                 k71.k.g(str, "id");
                 aa.u0 u0Var2 = new aa.u0(str2);
@@ -67,7 +67,7 @@ public final class ma implements z01.o1, mi0, yf0 {
                 k71.k.g(str, "id");
                 aa.u0 u0Var = new aa.u0(str2);
                 aa.t0 t0Var = aa.t0.d;
-                return y71.n1.y(y71.n1.I(y71.n1.I(new rm0.c8(y71.n1.I(new y00.l(in.r.h(this.t.d(new ze0(str, t0Var, t0Var, t0Var, t0Var, u0Var))), 10), new z9(null, projectsMetaInfo, this, 2)), 6), new z9(null, projectsMetaInfo, this, 3)), new aa(null, projectsMetaInfo, this, str3, 1)), this.v);
+                return y71.n1.y(y71.n1.I(y71.n1.I(new rm0.c8(y71.n1.I(new y00.l(in.r.h(this.t.d(new ze0(str, t0Var, t0Var, t0Var, t0Var, u0Var))), 10), new z9(null, projectsMetaInfo, this, 2)), 6), new z9(null, projectsMetaInfo, this, 3)), new aaShadow(null, projectsMetaInfo, this, str3, 1)), this.v);
             default:
                 k71.k.g(str, "id");
                 aa.u0 u0Var2 = new aa.u0(str2);

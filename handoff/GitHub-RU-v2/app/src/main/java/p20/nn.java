@@ -4,7 +4,7 @@ import java.util.List;
 import u10.hy;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class nn implements aa.a {
+public abstract class nnShadow implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static hy c(ea.e eVar, aa.w wVar) {

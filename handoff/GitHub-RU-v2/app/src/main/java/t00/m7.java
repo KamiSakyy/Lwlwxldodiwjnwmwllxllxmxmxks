@@ -1,7 +1,7 @@
 package t00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class m7 extends c71.j implements j71.e {
+public final class m7Shadow extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public final /* synthetic */ o7 w;
 
@@ -15,9 +15,9 @@ public final class m7 extends c71.j implements j71.e {
     public final a71.c r(a71.c cVar, Object obj) {
         switch (this.v) {
             case 0:
-                return new m7(this.w, cVar, 0);
+                return new m7Shadow(this.w, cVar, 0);
             default:
-                return new m7(this.w, cVar, 1);
+                return new m7Shadow(this.w, cVar, 1);
         }
     }
 
@@ -26,13 +26,13 @@ public final class m7 extends c71.j implements j71.e {
         a71.c cVar = (a71.c) obj2;
         switch (this.v) {
             case 0:
-                m7 r = r(cVar, jVar);
-                w61.a0 a0Var = w61.a0.a;
+                m7Shadow r = r(cVar, jVar);
+                w61.a0Shadow a0Var = w61.a0.a;
                 r.v(a0Var);
                 return a0Var;
             default:
-                m7 r2 = r(cVar, jVar);
-                w61.a0 a0Var2 = w61.a0.a;
+                m7Shadow r2 = r(cVar, jVar);
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 r2.v(a0Var2);
                 return a0Var2;
         }
@@ -40,7 +40,7 @@ public final class m7 extends c71.j implements j71.e {
 
     public final Object v(Object obj) {
         int i = this.v;
-        w61.a0 a0Var = w61.a0.a;
+        w61.a0Shadow a0Var = w61.a0.a;
         a71.h hVar = ((c71.c) this).s;
         o7 o7Var = this.w;
         switch (i) {

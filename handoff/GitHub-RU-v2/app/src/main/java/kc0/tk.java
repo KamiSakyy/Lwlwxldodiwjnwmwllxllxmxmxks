@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class tk implements aa.m0 {
+public final class tk implements aaShadow.m0 {
     public final vk a;
 
     public tk(vk vkVar) {

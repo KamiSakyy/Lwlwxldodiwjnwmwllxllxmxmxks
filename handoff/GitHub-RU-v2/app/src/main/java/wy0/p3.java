@@ -454,7 +454,7 @@ public final class p3 implements y71.j {
         o3 o3Var;
         int i;
         String str;
-        r3 r3Var;
+        r3Shadow r3Var;
         int i2;
         s3 s3Var;
         int i3;
@@ -581,8 +581,8 @@ public final class p3 implements y71.j {
                 }
                 return w61.a0.a;
             case 1:
-                if (cVar instanceof r3) {
-                    r3Var = (r3) cVar;
+                if (cVar instanceof r3Shadow) {
+                    r3Var = (r3Shadow) cVar;
                     int i30 = r3Var.v;
                     if ((i30 & Integer.MIN_VALUE) != 0) {
                         r3Var.v = i30 - Integer.MIN_VALUE;
@@ -607,7 +607,7 @@ public final class p3 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                r3Var = new r3(this, cVar);
+                r3Var = new r3Shadow(this, cVar);
                 Object obj32 = r3Var.u;
                 b71.a aVar32 = b71.a.r;
                 i2 = r3Var.v;
@@ -710,7 +710,7 @@ public final class p3 implements y71.j {
                         if (i5 != 0) {
                             sy.y.j(obj6);
                             dc0 dc0Var = ((sb0) obj).a;
-                            yz0.z6 r = (dc0Var == null || (zb0Var = dc0Var.a) == null || (list = zb0Var.o.a) == null || (yb0Var = (yb0) x61.m.W(list)) == null || (dVar = yb0Var.c) == null) ? null : com.google.android.gms.internal.measurement.b4.r(dVar);
+                            yz0.z6Shadow r = (dc0Var == null || (zb0Var = dc0Var.a) == null || (list = zb0Var.o.a) == null || (yb0Var = (yb0) x61.m.W(list)) == null || (dVar = yb0Var.c) == null) ? null : com.google.android.gms.internal.measurement.b4.r(dVar);
                             if (r != null) {
                                 u3Var.v = 1;
                                 if (this.s.c(r, u3Var) == aVar6) {

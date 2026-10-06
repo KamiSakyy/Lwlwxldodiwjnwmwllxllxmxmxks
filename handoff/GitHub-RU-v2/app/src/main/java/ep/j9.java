@@ -5,7 +5,7 @@ import java.util.List;
 import m10.gb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class j9 implements aa.a {
+public final class j9 implements aaShadow.a {
     public static final j9 a = new j9();
     public static final List b = sy.d0.o("link", "linkType");
 

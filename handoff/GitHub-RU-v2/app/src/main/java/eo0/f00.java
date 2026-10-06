@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.pg0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class f00 implements aa.a {
+public final class f00 implements aaShadow.a {
     public static final f00 a = new f00();
     public static final List b = sy.d0.o(new String[]{"hasNextPage", "endCursor"});
 

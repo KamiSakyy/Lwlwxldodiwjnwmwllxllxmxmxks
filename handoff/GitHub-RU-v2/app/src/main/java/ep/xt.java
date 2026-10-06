@@ -5,7 +5,7 @@ import jo.a70;
 import jo.w60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xt implements aa.a {
+public final class xt implements aaShadow.a {
     public static final xt a = new xt();
     public static final List b = sy.d0.o("viewer", "id", "__typename");
 
@@ -18,7 +18,7 @@ public final class xt implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                a70Var = (a70) aa.c.c(bu.a, false).a(eVar, wVar);
+                a70Var = (a70) aa.c.c(buShadow.a, false).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {
@@ -49,7 +49,7 @@ public final class xt implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(w60Var, "value");
         fVar.z0("viewer");
-        aa.c.c(bu.a, false).b(fVar, wVar, w60Var.a);
+        aa.c.c(buShadow.a, false).b(fVar, wVar, w60Var.a);
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, w60Var.b);

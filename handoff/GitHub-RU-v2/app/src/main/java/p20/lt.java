@@ -7,7 +7,7 @@ import u10.u60;
 import u10.w60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class lt implements aa.a {
+public final class lt implements aaShadow.a {
     public static final lt a = new lt();
     public static final List b = sy.d0.o("id", "repository", "reviewRequests", "latestReviews", "__typename");
 

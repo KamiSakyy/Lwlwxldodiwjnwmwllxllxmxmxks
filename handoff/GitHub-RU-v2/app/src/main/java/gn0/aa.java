@@ -1,7 +1,7 @@
 package gn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class aa {
+public abstract class aaShadow {
     public static final z9 Companion = new z9();
     public static final aa.q0 a;
 

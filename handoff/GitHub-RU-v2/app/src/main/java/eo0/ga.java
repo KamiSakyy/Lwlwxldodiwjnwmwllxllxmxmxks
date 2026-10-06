@@ -3,7 +3,7 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ga implements aa.a {
+public final class ga implements aaShadow.a {
     public static final ga a = new ga();
     public static final List b = sy.d0.o(new String[]{"organization", "id", "__typename"});
 

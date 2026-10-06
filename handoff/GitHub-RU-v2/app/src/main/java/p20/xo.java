@@ -6,7 +6,7 @@ import u10.j00;
 import u10.l00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class xo implements aa.a {
+public final class xo implements aaShadow.a {
     public static final xo a = new xo();
     public static final List b = sy.d0.o("updateSubscription", "markNotificationAsUndone");
 

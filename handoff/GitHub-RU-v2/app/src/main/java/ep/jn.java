@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class jn implements aa.a {
+public final class jn implements aaShadow.a {
     public static final jn a = new jn();
     public static final List b = sy.d0.o("totalCount", "pageInfo", "nodes");
 
@@ -31,7 +31,7 @@ public final class jn implements aa.a {
                 if (r0 != 2) {
                     break;
                 }
-                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(nn.a, false)))).a(eVar, wVar);
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(nnShadow.a, false)))).a(eVar, wVar);
             }
         }
         if (num == null) {
@@ -47,7 +47,7 @@ public final class jn implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.vx vxVar = (jo.vx) obj;
+        jo.vxShadow vxVar = (jo.vx) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(vxVar, "value");
@@ -56,6 +56,6 @@ public final class jn implements aa.a {
         fVar.z0("pageInfo");
         aa.c.c(pn.a, false).b(fVar, wVar, vxVar.b);
         fVar.z0("nodes");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(nn.a, false)))).b(fVar, wVar, vxVar.c);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(nnShadow.a, false)))).b(fVar, wVar, vxVar.c);
     }
 }

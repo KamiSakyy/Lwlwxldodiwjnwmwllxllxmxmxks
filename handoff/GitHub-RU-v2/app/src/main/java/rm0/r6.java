@@ -492,7 +492,7 @@ public final class r6 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     pl0.k kVar = pl0.l.Companion;
-                    oj0.f1 f1Var = ((jy) obj).c;
+                    oj0.f1Shadow f1Var = ((jy) obj).c;
                     kVar.getClass();
                     p01.j a = pl0.k.a(f1Var);
                     z7Var.v = 1;
@@ -907,8 +907,8 @@ public final class r6 implements y71.j {
     public final Object c(Object obj, a71.c cVar) {
         q6 q6Var;
         int i;
-        im0.f1 f1Var;
-        im0.d1 d1Var;
+        im0.f1Shadow f1Var;
+        im0.d1Shadow d1Var;
         t6 t6Var;
         int i2;
         ep epVar;
@@ -1882,7 +1882,7 @@ public final class r6 implements y71.j {
                         if (i17 != 0) {
                             sy.y.j(obj26);
                             pl0.k kVar3 = pl0.l.Companion;
-                            oj0.f1 f1Var2 = ((jy) obj).c;
+                            oj0.f1Shadow f1Var2 = ((jy) obj).c;
                             kVar3.getClass();
                             p01.j a = pl0.k.a(f1Var2);
                             m8Var.v = 1;

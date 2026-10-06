@@ -3,7 +3,7 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class tr implements aa.n0 {
+public final class tr implements aaShadow.n0 {
     public static final qr Companion = new qr();
     public final String r;
 

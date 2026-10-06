@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ra implements aa.a {
+public final class ra implements aaShadow.a {
     public static final ra a = new ra();
     public static final List b = sy.d0.n("programmingLanguages");
 

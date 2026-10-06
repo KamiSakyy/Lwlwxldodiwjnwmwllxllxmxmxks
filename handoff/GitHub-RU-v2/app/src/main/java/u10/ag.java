@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ag implements aa.m0 {
+public final class ag implements aaShadow.m0 {
     public final bg a;
 
     public ag(bg bgVar) {

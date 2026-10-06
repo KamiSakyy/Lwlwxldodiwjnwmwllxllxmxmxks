@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class tv implements aa.v0 {
+public final class tv implements aaShadow.v0 {
     public final xv a;
 
     public tv(xv xvVar) {

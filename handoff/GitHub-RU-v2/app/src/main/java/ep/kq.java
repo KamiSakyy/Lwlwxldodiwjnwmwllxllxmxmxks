@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kq implements aa.a {
+public final class kq implements aaShadow.a {
     public static final kq a = new kq();
     public static final List b = sy.d0.o("defaultBranchRef", "id", "__typename");
 

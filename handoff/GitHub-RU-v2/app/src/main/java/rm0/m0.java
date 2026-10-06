@@ -912,7 +912,7 @@ public final class m0 implements z01.f, yb0, mi0, y90, yf0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Object E(String str, j71.c cVar, c71.c cVar2) {
-        t00.h0 h0Var;
+        t00.h0Shadow h0Var;
         int i;
         gv.i2 i2Var;
         if (cVar2 instanceof t00.h0) {
@@ -1583,7 +1583,7 @@ public final class m0 implements z01.f, yb0, mi0, y90, yf0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Object x(String str, j71.c cVar, c71.c cVar2) {
-        vb0.x xVar;
+        vb0.xShadow xVar;
         int i;
         w50.bShadow bVar;
         if (cVar2 instanceof vb0.x) {

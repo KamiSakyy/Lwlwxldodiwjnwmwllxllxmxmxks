@@ -2,7 +2,7 @@ package rd;
 
 import android.view.ViewTreeObserver;
 import android.widget.TextView;
-import d1.c2;
+import d1.c2Shadow;
 import g9.f;
 import s9.h;
 import s9.i;
@@ -29,7 +29,7 @@ public final class d implements i {
         ViewTreeObserver viewTreeObserver = textView.getViewTreeObserver();
         c cVar = new c(this, viewTreeObserver, b10);
         viewTreeObserver.addOnPreDrawListener(cVar);
-        b10.o0(new c2(this, viewTreeObserver, cVar, 16));
+        b10.o0(new c2Shadow(this, viewTreeObserver, cVar, 16));
         Object s2 = b10.s(fVar);
         b71.a aVar = b71.a.r;
         return s2;

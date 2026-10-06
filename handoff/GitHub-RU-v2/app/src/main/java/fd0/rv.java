@@ -5,7 +5,7 @@ import kc0.ba0;
 import kc0.z90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class rv implements aa.a {
+public final class rv implements aaShadow.a {
     public static final rv a = new rv();
     public static final List b = sy.d0.n("updateSubscription");
 

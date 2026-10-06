@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class hx implements aa.w0 {
+public final class hx implements aaShadow.w0 {
     public static final ww Companion = new ww();
     public final String r;
     public final aa1.b s;
@@ -76,17 +76,17 @@ public final class hx implements aa.w0 {
         fVar.z0("first");
         fVar.z(30);
         aa.u0 u0Var = this.s;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("after");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.t;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("query");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
         }
         aa.u0 u0Var3 = this.u;
-        if (u0Var3 instanceof aa.u0) {
+        if (u0Var3 instanceof aaShadow.u0) {
             fVar.z0("type");
             aa.c.d(aa.c.b(qz0.b.p)).d(fVar, wVar, u0Var3);
         } else if (z) {
@@ -94,12 +94,12 @@ public final class hx implements aa.w0 {
             aa.c.l.b(fVar, wVar, (Object) null);
         }
         aa.u0 u0Var4 = this.v;
-        if (u0Var4 instanceof aa.u0) {
+        if (u0Var4 instanceof aaShadow.u0) {
             fVar.z0("language");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var4);
         }
         aa.u0 u0Var5 = this.w;
-        if (u0Var5 instanceof aa.u0) {
+        if (u0Var5 instanceof aaShadow.u0) {
             fVar.z0("orderField");
             aa.c.d(aa.c.b(qz0.b.n)).d(fVar, wVar, u0Var5);
         } else if (z) {
@@ -107,7 +107,7 @@ public final class hx implements aa.w0 {
             aa.c.l.b(fVar, wVar, "PUSHED_AT");
         }
         aa.u0 u0Var6 = this.x;
-        if (u0Var6 instanceof aa.u0) {
+        if (u0Var6 instanceof aaShadow.u0) {
             fVar.z0("orderDirection");
             aa.c.d(aa.c.b(qz0.b.d)).d(fVar, wVar, u0Var6);
         } else if (z) {
@@ -115,7 +115,7 @@ public final class hx implements aa.w0 {
             aa.c.l.b(fVar, wVar, "DESC");
         }
         aa.u0 u0Var7 = this.y;
-        if (u0Var7 instanceof aa.u0) {
+        if (u0Var7 instanceof aaShadow.u0) {
             fVar.z0("includeIssueTemplateProperties");
             aa.c.d(aa.c.k).d(fVar, wVar, u0Var7);
         } else if (z) {

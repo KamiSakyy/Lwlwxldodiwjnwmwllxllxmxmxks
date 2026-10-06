@@ -4,7 +4,7 @@ import a61.k0;
 import fp.m;
 import in.r0;
 import nm.f;
-import rm0.a5;
+import rm0.a5Shadow;
 import rm0.i0;
 import rm0.o8;
 import rm0.r6;
@@ -104,7 +104,7 @@ public final class c implements i {
                 }
                 break;
             case 12:
-                Object b14 = this.s.b(new a5(jVar, 7), cVar);
+                Object b14 = this.s.b(new a5Shadow(jVar, 7), cVar);
                 if (b14 != b71.a.r) {
                     break;
                 }

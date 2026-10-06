@@ -2,7 +2,7 @@ package dh;
 
 import androidx.compose.foundation.layout.f2;
 import androidx.compose.runtime.s;
-import f1.o2;
+import f1.o2Shadow;
 import f1.t2;
 import f1.ub;
 import f1.x3;
@@ -60,7 +60,7 @@ public final /* synthetic */ class d implements j71.e {
                     sVar3.V();
                     break;
                 } else {
-                    o2.a.b(x3Var.a(), (r) null, 0L, sVar3, 3072, 6);
+                    o2Shadow.a.b(x3Var.a(), (r) null, 0L, sVar3, 3072, 6);
                     break;
                 }
             default:
@@ -72,7 +72,7 @@ public final /* synthetic */ class d implements j71.e {
                     break;
                 } else {
                     float f = 12;
-                    o2.a.a(x3Var.b(), x3Var.a(), new t2(), androidx.compose.foundation.layout.b.w(w1.o.a, androidx.compose.foundation.layout.b.f(24, 0.0f, f, f, 2)), ih.d.b(sVar4).F, sVar4, 199680);
+                    o2Shadow.a.a(x3Var.b(), x3Var.a(), new t2(), androidx.compose.foundation.layout.b.w(w1.o.a, androidx.compose.foundation.layout.b.f(24, 0.0f, f, f, 2)), ih.d.b(sVar4).F, sVar4, 199680);
                     break;
                 }
         }

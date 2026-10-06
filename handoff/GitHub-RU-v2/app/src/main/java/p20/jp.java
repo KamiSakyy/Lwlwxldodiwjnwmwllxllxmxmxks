@@ -5,7 +5,7 @@ import u10.n00;
 import u10.w00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class jp implements aa.a {
+public abstract class jp implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "comments"});
 
     public static w00 c(ea.e eVar, aa.w wVar) {

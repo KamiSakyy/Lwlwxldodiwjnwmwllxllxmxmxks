@@ -8,7 +8,7 @@ import android.text.style.ForegroundColorSpan;
 import android.text.style.StrikethroughSpan;
 import android.text.style.TextAppearanceSpan;
 import kotlin.NoWhenBranchMatchedException;
-import lg.g;
+import lg.gShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s2 {
@@ -84,7 +84,7 @@ public final class s2 {
             int length = str.length() + V;
             int a2 = lg.i.a(spannableStringBuilder, V, length, 2) + length;
             spannableStringBuilder.setSpan(new TextAppearanceSpan(context, i2), V, a2, 17);
-            spannableStringBuilder.setSpan(new g.a(context, i), V, a2, 17);
+            spannableStringBuilder.setSpan(new gShadow.a(context, i), V, a2, 17);
         }
     }
 

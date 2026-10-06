@@ -79,12 +79,12 @@ public final /* synthetic */ class p4 implements j71.c {
             case 10:
                 jn0.o3 o3Var = (jn0.o3) obj;
                 k71.k.g(o3Var, "data");
-                jn0.r3 r3Var = o3Var.a.b;
+                jn0.r3Shadow r3Var = o3Var.a.b;
                 return Boolean.valueOf((r3Var == null || (list = r3Var.b) == null) ? false : !list.isEmpty());
             case 11:
                 jn0.o3 o3Var2 = (jn0.o3) obj;
                 k71.k.g(o3Var2, "data");
-                jn0.r3 r3Var2 = o3Var2.a.b;
+                jn0.r3Shadow r3Var2 = o3Var2.a.b;
                 if (r3Var2 == null || (q3Var = r3Var2.a) == null) {
                     return null;
                 }
@@ -92,13 +92,13 @@ public final /* synthetic */ class p4 implements j71.c {
             case 12:
                 jn0.o3 o3Var3 = (jn0.o3) obj;
                 k71.k.g(o3Var3, "data");
-                jn0.r3 r3Var3 = o3Var3.a.b;
+                jn0.r3Shadow r3Var3 = o3Var3.a.b;
                 List list2 = r3Var3 != null ? r3Var3.b : null;
                 return list2 == null ? x61.r.r : list2;
             case 13:
                 jn0.o3 o3Var4 = (jn0.o3) obj;
                 k71.k.g(o3Var4, "data");
-                jn0.r3 r3Var4 = o3Var4.a.b;
+                jn0.r3Shadow r3Var4 = o3Var4.a.b;
                 List list3 = r3Var4 != null ? r3Var4.b : null;
                 if (list3 == null) {
                     list3 = x61.r.r;
@@ -154,7 +154,7 @@ public final /* synthetic */ class p4 implements j71.c {
             case 20:
                 x6.x xVar = (x6.w) obj;
                 k71.k.g(xVar, "it");
-                if (!(xVar instanceof x6.x)) {
+                if (!(xVar instanceof x6Shadow.x)) {
                     return null;
                 }
                 a7.q qVar = xVar.x;
@@ -174,7 +174,7 @@ public final /* synthetic */ class p4 implements j71.c {
                 if (tag instanceof WeakReference) {
                     return (x6.a0) ((WeakReference) tag).get();
                 }
-                if (tag instanceof x6.a0) {
+                if (tag instanceof x6Shadow.a0) {
                     return (x6.a0) tag;
                 }
                 return null;

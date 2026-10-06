@@ -4,7 +4,7 @@ import java.util.List;
 import jo.cd0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cy implements aa.a {
+public final class cy implements aaShadow.a {
     public static final cy a = new cy();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -25,7 +25,7 @@ public final class cy implements aa.a {
             }
         }
         eVar.s0();
-        gt.a c = gt.b.c(eVar, wVar);
+        gt.a c = gtShadow.b.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -47,7 +47,7 @@ public final class cy implements aa.a {
         bVar.b(fVar, wVar, cd0Var.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, cd0Var.b);
-        List list = gt.b.a;
-        gt.b.d(fVar, wVar, cd0Var.c);
+        List list = gtShadow.b.a;
+        gtShadow.b.d(fVar, wVar, cd0Var.c);
     }
 }

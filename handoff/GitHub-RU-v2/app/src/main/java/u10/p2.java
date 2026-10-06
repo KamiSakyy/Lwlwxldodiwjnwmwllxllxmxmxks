@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class p2 implements aa.v0 {
+public final class p2 implements aaShadow.v0 {
     public final x2 a;
     public final r2 b;
 

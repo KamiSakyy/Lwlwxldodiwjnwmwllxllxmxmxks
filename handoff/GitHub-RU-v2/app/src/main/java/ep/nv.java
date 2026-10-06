@@ -5,8 +5,8 @@ import jo.c90;
 import jo.u80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class nv implements aa.a {
-    public static final nv a = new nv();
+public final class nvShadow implements aaShadow.a {
+    public static final nvShadow a = new nvShadow();
     public static final List b = sy.d0.o("id", "issueOrPullRequest", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

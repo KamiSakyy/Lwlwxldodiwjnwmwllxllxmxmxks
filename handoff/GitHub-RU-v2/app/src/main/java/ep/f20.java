@@ -7,7 +7,7 @@ import jo.oj0;
 import jo.pj0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class f20 implements aa.a {
+public final class f20 implements aaShadow.a {
     public static final f20 a = new f20();
     public static final List b = sy.d0.n("__typename");
 

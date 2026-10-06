@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class x2 implements aa.a {
+public abstract class x2 implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"id", "conclusion", "name", "summary", "permalink", "duration", "checkSuite", "isRequired"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x001d. Please report as an issue. */
@@ -28,7 +28,7 @@ public abstract class x2 implements aa.a {
                     num2 = num;
                 case 1:
                     num = num2;
-                    t3Var = (m10.t3) aa.c.b(n10.a.d).a(eVar, wVar);
+                    t3Var = (m10.t3) aa.c.b(n10Shadow.a.d).a(eVar, wVar);
                     num2 = num;
                 case 2:
                     num = num2;
@@ -103,7 +103,7 @@ public abstract class x2 implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, r4Var.a);
         fVar.z0("conclusion");
-        aa.c.b(n10.a.d).b(fVar, wVar, r4Var.b);
+        aa.c.b(n10Shadow.a.d).b(fVar, wVar, r4Var.b);
         fVar.z0("name");
         bVar.b(fVar, wVar, r4Var.c);
         fVar.z0("summary");

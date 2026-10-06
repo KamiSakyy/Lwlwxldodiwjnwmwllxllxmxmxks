@@ -32,7 +32,7 @@ import com.google.android.gms.internal.play_billing.k1;
 import f0.p1;
 import fw0.z0;
 import gn0.xc;
-import h0.h1;
+import h0.h1Shadow;
 import h0.z;
 import hc0.pi;
 import i6.e;
@@ -580,7 +580,7 @@ public abstract class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void b(w1.r rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.k kVar, w1.d dVar, h1 h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
+    public static final void b(w1.r rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.k kVar, w1.d dVar, h1Shadow h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
         w1.r rVar2;
         int i3;
         m0.s sVar3;
@@ -588,7 +588,7 @@ public abstract class a {
         androidx.compose.foundation.layout.k kVar2;
         int i4;
         w1.d dVar2;
-        h1 h1Var2;
+        h1Shadow h1Var2;
         int i5;
         f0.j jVar2;
         w1.r rVar3;
@@ -596,7 +596,7 @@ public abstract class a {
         d2 d2Var3;
         androidx.compose.foundation.layout.k kVar3;
         w1.d dVar3;
-        h1 h1Var3;
+        h1Shadow h1Var3;
         boolean z2;
         b2 t;
         w1.r rVar4;
@@ -751,7 +751,7 @@ public abstract class a {
                     int i13 = i6 >> 3;
                     w1.r rVar5 = rVar4;
                     m0.s sVar5 = sVar3;
-                    h1 h1Var4 = h1Var2;
+                    h1Shadow h1Var4 = h1Var2;
                     i21.a.c(rVar5, sVar5, d2Var5, true, h1Var4, z3, a, dVar4, kVar4, null, null, cVar, sVar2, ((i6 << 12) & 1879048192) | (i6 & 14) | 24576 | (i6 & 112) | (i6 & 896) | (i6 & 7168) | (458752 & i13) | (i13 & 3670016), ((i6 >> 12) & 14) | ((i6 >> 18) & 7168), 6400);
                     f0.j jVar3 = a;
                     h1Var3 = h1Var4;
@@ -889,21 +889,21 @@ public abstract class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void c(w1.r rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.i iVar, w1.i iVar2, h1 h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
+    public static final void c(w1.r rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.i iVar, w1.i iVar2, h1Shadow h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
         int i3;
         m0.s sVar3;
         d2 d2Var2;
         androidx.compose.foundation.layout.i iVar3;
         int i4;
         w1.i iVar4;
-        h1 h1Var2;
+        h1Shadow h1Var2;
         int i5;
         boolean z2;
         m0.s sVar4;
         d2 d2Var3;
         androidx.compose.foundation.layout.i iVar5;
         w1.i iVar6;
-        h1 h1Var3;
+        h1Shadow h1Var3;
         f0.j jVar2;
         b2 t;
         m0.s sVar5;
@@ -1044,7 +1044,7 @@ public abstract class a {
                         z3 = z;
                         a = jVar;
                     }
-                    h1 h1Var4 = h1Var2;
+                    h1Shadow h1Var4 = h1Var2;
                     w1.i iVar8 = iVar4;
                     sVar2.r();
                     int i13 = i6 >> 3;

@@ -606,7 +606,7 @@ public final class b5 implements y71.j {
         int i5;
         k5 k5Var;
         int i6;
-        n5 n5Var;
+        n5Shadow n5Var;
         int i7;
         py.n nVar;
         py.o oVar;
@@ -671,7 +671,7 @@ public final class b5 implements y71.j {
         y5 y5Var;
         int i17;
         ev.j jVar;
-        gv.v8 v8Var;
+        gv.v8Shadow v8Var;
         yz0.q8 q8Var;
         List list4;
         gv.r8 r8Var;
@@ -765,7 +765,7 @@ public final class b5 implements y71.j {
                         i3 = f5Var.v;
                         if (i3 != 0) {
                             sy.y.j(obj4);
-                            rz.x xVar = ((rz.u) obj).a;
+                            rz.xShadow xVar = ((rz.u) obj).a;
                             Object j2 = in.r.j((xVar == null || (vVar = xVar.c) == null) ? null : vVar.b, "Invalid owner id", u1.B);
                             f5Var.v = 1;
                             if (this.s.c(j2, f5Var) == aVar7) {
@@ -887,8 +887,8 @@ public final class b5 implements y71.j {
                 }
                 return w61.a0.a;
             case 6:
-                if (cVar instanceof n5) {
-                    n5Var = (n5) cVar;
+                if (cVar instanceof n5Shadow) {
+                    n5Var = (n5Shadow) cVar;
                     int i31 = n5Var.v;
                     if ((i31 & Integer.MIN_VALUE) != 0) {
                         n5Var.v = i31 - Integer.MIN_VALUE;
@@ -916,7 +916,7 @@ public final class b5 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                n5Var = new n5(this, cVar);
+                n5Var = new n5Shadow(this, cVar);
                 Object obj82 = n5Var.u;
                 b71.a aVar112 = b71.a.r;
                 i7 = n5Var.v;
@@ -934,7 +934,7 @@ public final class b5 implements y71.j {
                         i8 = p5Var.v;
                         if (i8 != 0) {
                             sy.y.j(obj9);
-                            jo.n5 n5Var2 = (jo.n5) obj;
+                            jo.n5Shadow n5Var2 = (jo.n5) obj;
                             k71.k.g(n5Var2, "<this>");
                             jo.l5 l5Var = n5Var2.a;
                             b00 b00Var = (l5Var == null || (o5Var2 = l5Var.a) == null) ? null : o5Var2.b;
@@ -1438,7 +1438,7 @@ public final class b5 implements y71.j {
                                 boolean z7 = x8Var.b;
                                 gv.u8 u8Var = x8Var.d;
                                 int i46 = (u8Var == null || (list4 = u8Var.a) == null || (r8Var = (gv.r8) x61.m.f0(list4)) == null) ? 0 : r8Var.b.a;
-                                gv.w8 w8Var = x8Var.c;
+                                gv.w8Shadow w8Var = x8Var.c;
                                 if (w8Var != null && (v8Var = w8Var.b) != null) {
                                     gv.t8 t8Var = v8Var.b;
                                     if (t8Var != null) {
@@ -1550,7 +1550,7 @@ public final class b5 implements y71.j {
                         Object obj23 = c6Var.u;
                         b71.a aVar23 = b71.a.r;
                         i21 = c6Var.v;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i21 != 0) {
                             sy.y.j(obj23);
                             c6Var.v = 1;
@@ -1570,7 +1570,7 @@ public final class b5 implements y71.j {
                 Object obj232 = c6Var.u;
                 b71.a aVar232 = b71.a.r;
                 i21 = c6Var.v;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i21 != 0) {
                 }
                 return a0Var2;
@@ -1583,7 +1583,7 @@ public final class b5 implements y71.j {
                         Object obj24 = d6Var.u;
                         b71.a aVar24 = b71.a.r;
                         i22 = d6Var.v;
-                        w61.a0 a0Var3 = w61.a0.a;
+                        w61.a0Shadow a0Var3 = w61.a0.a;
                         if (i22 != 0) {
                             sy.y.j(obj24);
                             d6Var.v = 1;
@@ -1603,7 +1603,7 @@ public final class b5 implements y71.j {
                 Object obj242 = d6Var.u;
                 b71.a aVar242 = b71.a.r;
                 i22 = d6Var.v;
-                w61.a0 a0Var32 = w61.a0.a;
+                w61.a0Shadow a0Var32 = w61.a0.a;
                 if (i22 != 0) {
                 }
                 return a0Var32;

@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class il implements aa.a {
+public final class il implements aaShadow.a {
     public static final il a = new il();
     public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
 

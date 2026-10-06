@@ -4,8 +4,8 @@ import java.util.List;
 import jo.j80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yu implements aa.a {
-    public static final yu a = new yu();
+public final class yuShadow implements aaShadow.a {
+    public static final yuShadow a = new yuShadow();
     public static final List b = sy.d0.n("success");
 
     public final Object a(ea.e eVar, aa.w wVar) {

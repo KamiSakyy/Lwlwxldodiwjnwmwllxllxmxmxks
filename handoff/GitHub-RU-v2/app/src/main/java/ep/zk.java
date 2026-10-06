@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zk implements aa.a {
+public final class zk implements aaShadow.a {
     public static final zk a = new zk();
     public static final List b = sy.d0.o("__typename", "id", "url", "name", "tagName", "tagCommit", "author", "descriptionHTML", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "releaseAssets", "discussion", "mentions");
 
@@ -153,7 +153,7 @@ public final class zk implements aa.a {
         String str3 = null;
         String str4 = null;
         String str5 = null;
-        jo.pu puVar = null;
+        jo.puShadow puVar = null;
         jo.xt xtVar = null;
         String str6 = null;
         Boolean bool3 = null;
@@ -161,7 +161,7 @@ public final class zk implements aa.a {
         ZonedDateTime zonedDateTime = null;
         ZonedDateTime zonedDateTime2 = null;
         jo.mu muVar = null;
-        jo.bu buVar = null;
+        jo.buShadow buVar = null;
         jo.cu cuVar = null;
         while (true) {
             int r0 = eVar.r0(b);
@@ -239,7 +239,7 @@ public final class zk implements aa.a {
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.lu luVar = (jo.lu) obj;
+        jo.luShadow luVar = (jo.lu) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(luVar, "value");

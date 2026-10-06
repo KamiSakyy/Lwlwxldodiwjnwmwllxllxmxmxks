@@ -3,7 +3,7 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class wi implements aa.a {
+public final class wi implements aaShadow.a {
     public static final wi a = new wi();
     public static final List b = sy.d0.n("removeReaction");
 

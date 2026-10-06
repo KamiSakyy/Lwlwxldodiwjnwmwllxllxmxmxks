@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class tj implements aa.a {
+public final class tj implements aaShadow.a {
     public static final tj a = new tj();
     public static final List b = sy.d0.o("__typename", "id");
 
@@ -24,7 +24,7 @@ public final class tj implements aa.a {
             }
         }
         eVar.s0();
-        lu.a c = lu.b.c(eVar, wVar);
+        lu.a c = luShadow.b.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -46,7 +46,7 @@ public final class tj implements aa.a {
         bVar.b(fVar, wVar, wsVar.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, wsVar.b);
-        List list = lu.b.a;
-        lu.b.d(fVar, wVar, wsVar.c);
+        List list = luShadow.b.a;
+        luShadow.b.d(fVar, wVar, wsVar.c);
     }
 }

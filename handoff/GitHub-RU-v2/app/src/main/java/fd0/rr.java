@@ -6,7 +6,7 @@ import kc0.g40;
 import kc0.h40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class rr implements aa.a {
+public final class rr implements aaShadow.a {
     public static final rr a = new rr();
     public static final List b = sy.d0.o(new String[]{"actor", "unlockedRecord"});
 

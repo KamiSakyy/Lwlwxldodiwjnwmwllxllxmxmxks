@@ -8,12 +8,12 @@ import v2.d1;
 import v2.e1;
 import v2.g0;
 import v2.w1Shadow;
-import v2.x;
+import v2.xShadow;
 import v2.x0;
 import v2.z;
 import v2.z0;
 import w2.m1;
-import x.c0;
+import xShadow.c0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
@@ -151,13 +151,13 @@ public final class h {
             str = str.concat(" encodedPayload");
         }
         if (((Long) this.g) == null) {
-            str = x.i.f(str, " eventMillis");
+            str = xShadow.i.f(str, " eventMillis");
         }
         if (((Long) this.h) == null) {
-            str = x.i.f(str, " uptimeMillis");
+            str = xShadow.i.f(str, " uptimeMillis");
         }
         if (((HashMap) this.i) == null) {
-            str = x.i.f(str, " autoMetadata");
+            str = xShadow.i.f(str, " autoMetadata");
         }
         if (str.isEmpty()) {
             return new i((String) this.b, (Integer) this.d, (m) this.f, ((Long) this.g).longValue(), ((Long) this.h).longValue(), (HashMap) this.i, (Integer) this.e, (String) this.c, (byte[]) this.j, (byte[]) this.k);
@@ -606,7 +606,7 @@ public final class h {
                     k71.k.d(qVar3);
                     d1 d1Var4 = qVar3.y;
                     k71.k.d(d1Var4);
-                    x f = v2.l.f(z0Var.a);
+                    xShadow f = v2.l.f(z0Var.a);
                     if (f != null) {
                         z zVar = new z((g0) hVar.b, f);
                         z0Var.a.N0(zVar);
@@ -661,13 +661,13 @@ public final class h {
         m1 m1Var;
         g0 g0Var = (g0) this.b;
         z zVar2 = (v2.s) this.d;
-        for (x xVar = ((w1Shadow.q) ((w1Shadow) this.f)).v; xVar != null; xVar = ((w1Shadow.q) xVar).v) {
-            x f = v2.l.f(xVar);
+        for (xShadow xVar = ((w1Shadow.q) ((w1Shadow) this.f)).v; xVar != null; xVar = ((w1Shadow.q) xVar).v) {
+            xShadow f = v2.l.f(xVar);
             if (f != null) {
                 z zVar3 = ((w1Shadow.q) xVar).y;
                 if (zVar3 != null) {
                     zVar = zVar3;
-                    x xVar2 = zVar.j0;
+                    xShadow xVar2 = zVar.j0;
                     zVar.y1(f);
                     if (xVar2 != xVar && (m1Var = ((d1) zVar).c0) != null) {
                         m1Var.invalidate();

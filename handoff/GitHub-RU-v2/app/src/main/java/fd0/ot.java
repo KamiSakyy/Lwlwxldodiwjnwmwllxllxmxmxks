@@ -5,7 +5,7 @@ import kc0.a70;
 import kc0.b70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ot implements aa.a {
+public final class ot implements aaShadow.a {
     public static final ot a = new ot();
     public static final List b = sy.d0.n("updateNotificationSettings");
 

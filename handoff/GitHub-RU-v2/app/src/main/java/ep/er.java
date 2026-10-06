@@ -4,8 +4,8 @@ import java.util.List;
 import jo.y20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class er implements aa.a {
-    public static final er a = new er();
+public final class erShadow implements aaShadow.a {
+    public static final erShadow a = new erShadow();
     public static final List b = sy.d0.o("id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

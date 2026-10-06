@@ -4,7 +4,7 @@ import java.util.List;
 import jn0.a60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ft implements aa.a {
+public final class ft implements aaShadow.a {
     public static final ft a = new ft();
     public static final List b = sy.d0.n("success");
 

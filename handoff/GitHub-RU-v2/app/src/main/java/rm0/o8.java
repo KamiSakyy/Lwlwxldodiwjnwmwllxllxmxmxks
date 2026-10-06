@@ -165,10 +165,10 @@ public final class o8 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object b(a71.c cVar, Object obj) {
-        ga gaVar;
+        gaShadow gaVar;
         int i;
-        if (cVar instanceof ga) {
-            gaVar = (ga) cVar;
+        if (cVar instanceof gaShadow) {
+            gaVar = (gaShadow) cVar;
             int i2 = gaVar.v;
             if ((i2 & Integer.MIN_VALUE) != 0) {
                 gaVar.v = i2 - Integer.MIN_VALUE;
@@ -191,7 +191,7 @@ public final class o8 implements y71.j {
                 return w61.a0.a;
             }
         }
-        gaVar = new ga(this, cVar);
+        gaVar = new gaShadow(this, cVar);
         Object obj22 = gaVar.u;
         b71.a aVar2 = b71.a.r;
         i = gaVar.v;
@@ -460,7 +460,7 @@ public final class o8 implements y71.j {
                         String str16 = str15 == null ? "" : str15;
                         wk0.q1 q1Var = s1Var.u;
                         if (q1Var != null) {
-                            wk0.n0 n0Var = q1Var.c;
+                            wk0.n0Shadow n0Var = q1Var.c;
                             z = z8;
                             String str17 = n0Var.b;
                             wk0.m0 m0Var = n0Var.g;
@@ -757,7 +757,7 @@ public final class o8 implements y71.j {
         int i;
         s8 s8Var;
         int i2;
-        v8 v8Var;
+        v8Shadow v8Var;
         int i3;
         w8 w8Var;
         int i4;
@@ -768,7 +768,7 @@ public final class o8 implements y71.j {
         qv qvVar;
         b9 b9Var;
         int i7;
-        d9 d9Var;
+        d9Shadow d9Var;
         int i8;
         f9 f9Var;
         int i9;
@@ -783,7 +783,7 @@ public final class o8 implements y71.j {
         String str;
         String str2;
         ArrayList arrayList;
-        yz0.k3 k3Var;
+        yz0.k3Shadow k3Var;
         boolean z;
         CommentLevelType commentLevelType;
         po poVar;
@@ -804,7 +804,7 @@ public final class o8 implements y71.j {
         int i14;
         kc0.j7 j7Var;
         List<kc0.l7> list2;
-        kc0.m7 m7Var;
+        kc0.m7Shadow m7Var;
         n9 n9Var;
         int i15;
         List<b10> list3;
@@ -901,8 +901,8 @@ public final class o8 implements y71.j {
                 }
                 return a0Var2;
             case 2:
-                if (cVar instanceof v8) {
-                    v8Var = (v8) cVar;
+                if (cVar instanceof v8Shadow) {
+                    v8Var = (v8Shadow) cVar;
                     int i27 = v8Var.v;
                     if ((i27 & Integer.MIN_VALUE) != 0) {
                         v8Var.v = i27 - Integer.MIN_VALUE;
@@ -946,7 +946,7 @@ public final class o8 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                v8Var = new v8(this, cVar);
+                v8Var = new v8Shadow(this, cVar);
                 Object obj42 = v8Var.u;
                 b71.a aVar42 = b71.a.r;
                 i3 = v8Var.v;
@@ -1115,8 +1115,8 @@ public final class o8 implements y71.j {
                 }
                 return w61.a0.a;
             case 7:
-                if (cVar instanceof d9) {
-                    d9Var = (d9) cVar;
+                if (cVar instanceof d9Shadow) {
+                    d9Var = (d9Shadow) cVar;
                     int i38 = d9Var.v;
                     if ((i38 & Integer.MIN_VALUE) != 0) {
                         d9Var.v = i38 - Integer.MIN_VALUE;
@@ -1161,7 +1161,7 @@ public final class o8 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                d9Var = new d9(this, cVar);
+                d9Var = new d9Shadow(this, cVar);
                 Object obj122 = d9Var.u;
                 b71.a aVar92 = b71.a.r;
                 i8 = d9Var.v;
@@ -1392,7 +1392,7 @@ public final class o8 implements y71.j {
                             com.github.service.models.response.a d = aa1.b.d(aoVar != null ? aoVar.b : null);
                             boolean z14 = koVar.e;
                             yh0.a aVar15 = koVar.n;
-                            yz0.l3 l3Var = new yz0.l3(str10, arrayList10, t7Var, str21, bVar, zonedDateTime, p, z13, issueOrPullRequest$ReviewerReviewState2, d, z14, str9, aVar15.b, aVar15.c);
+                            yz0.l3Shadow l3Var = new yz0.l3(str10, arrayList10, t7Var, str21, bVar, zonedDateTime, p, z13, issueOrPullRequest$ReviewerReviewState2, d, z14, str9, aVar15.b, aVar15.c);
                             h9Var.v = 1;
                             if (this.s.c(l3Var, h9Var) == aVar14) {
                                 return aVar14;
@@ -1469,7 +1469,7 @@ public final class o8 implements y71.j {
                             } else {
                                 w2 = b31.b.w(cVar5);
                             }
-                            yz0.b5 b5Var = new yz0.b5(w2);
+                            yz0.b5 b5Var = new yz0.b5(w2Shadow);
                             j9Var.v = 1;
                             if (this.s.c(b5Var, j9Var) == aVar17) {
                                 return aVar17;

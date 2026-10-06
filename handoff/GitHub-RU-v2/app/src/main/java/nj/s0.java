@@ -3,7 +3,7 @@ package nj;
 import java.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s0 {
+public final class s0Shadow {
     private static final p0 Companion = new p0();
     public static final q0 d = new q0(1, 1000);
     public final w a;

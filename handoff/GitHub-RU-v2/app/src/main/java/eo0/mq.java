@@ -7,7 +7,7 @@ import jn0.e20;
 import jn0.f20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class mq implements aa.a {
+public final class mq implements aaShadow.a {
     public static final mq a = new mq();
     public static final List b = sy.d0.n("__typename");
 

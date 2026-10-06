@@ -4,7 +4,7 @@ import java.util.List;
 import jo.s60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vt implements aa.a {
+public final class vt implements aaShadow.a {
     public static final vt a = new vt();
     public static final List b = sy.d0.n("edges");
 
@@ -13,7 +13,7 @@ public final class vt implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         List list = null;
         while (eVar.r0(b) == 0) {
-            list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(tt.a, false)))).a(eVar, wVar);
+            list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(ttShadow.a, false)))).a(eVar, wVar);
         }
         return new s60(list);
     }
@@ -24,6 +24,6 @@ public final class vt implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(s60Var, "value");
         fVar.z0("edges");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(tt.a, false)))).b(fVar, wVar, s60Var.a);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(ttShadow.a, false)))).b(fVar, wVar, s60Var.a);
     }
 }

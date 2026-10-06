@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class rl implements aa.a {
+public final class rl implements aaShadow.a {
     public static final rl a = new rl();
     public static final List b = sy.d0.o("defaultBranchRef", "refs", "id", "__typename");
 

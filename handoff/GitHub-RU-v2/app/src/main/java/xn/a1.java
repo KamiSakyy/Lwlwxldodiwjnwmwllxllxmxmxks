@@ -9,7 +9,7 @@ public final class a1 {
     public final String a;
     public final String b;
     public final String c;
-    public final e d;
+    public final eShadow d;
     public final Instant e;
     public final String f;
     public final Instant g;
@@ -23,7 +23,7 @@ public final class a1 {
     public final double o;
     public final List p;
 
-    public a1(String str, String str2, String str3, e eVar, Instant instant, String str4, Instant instant2, String str5, String str6, String str7, String str8, String str9, l3 l3Var, y3 y3Var, double d, List list) {
+    public a1(String str, String str2, String str3, eShadow eVar, Instant instant, String str4, Instant instant2, String str5, String str6, String str7, String str8, String str9, l3 l3Var, y3 y3Var, double d, List list) {
         k71.k.g(str, "id");
         k71.k.g(str2, "name");
         k71.k.g(str3, "taskId");

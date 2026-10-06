@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class nd implements aa.a {
+public abstract class nd implements aaShadow.a {
     public static final List a = sy.d0.n("id");
 
     public static u10.hk c(ea.e eVar, aa.w wVar) {

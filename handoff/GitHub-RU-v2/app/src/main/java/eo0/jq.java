@@ -5,7 +5,7 @@ import jn0.y10;
 import jn0.z10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jq implements aa.a {
+public final class jq implements aaShadow.a {
     public static final jq a = new jq();
     public static final List b = sy.d0.n("thread");
 

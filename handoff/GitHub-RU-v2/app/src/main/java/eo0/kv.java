@@ -5,7 +5,7 @@ import jn0.e90;
 import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class kv implements aa.a {
+public final class kv implements aaShadow.a {
     public static final kv a = new kv();
     public static final List b = sy.d0.o(new String[]{"__typename", "viewerSubscription"});
 

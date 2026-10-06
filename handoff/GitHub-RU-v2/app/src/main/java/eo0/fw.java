@@ -5,7 +5,7 @@ import jn0.na0;
 import jn0.oa0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class fw implements aa.a {
+public final class fw implements aaShadow.a {
     public static final fw a = new fw();
     public static final List b = sy.d0.o(new String[]{"id", "issueType", "__typename"});
 

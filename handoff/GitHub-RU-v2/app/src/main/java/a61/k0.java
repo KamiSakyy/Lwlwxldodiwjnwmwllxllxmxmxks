@@ -368,7 +368,7 @@ public final class k0 implements y71.j {
                 i = lVar.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    d00.f0 f0Var = ((d00.z) obj).a;
+                    d00.f0Shadow f0Var = ((d00.z) obj).a;
                     l01.v vVar = null;
                     d00.e0 e0Var = (f0Var == null || (g0Var = f0Var.c) == null || (list = g0Var.a.a) == null || (d0Var = (d00.d0) x61.m.W(list)) == null || (list2 = d0Var.a.a) == null) ? null : (d00.e0) x61.m.W(list2);
                     List u = d5.u(e0Var != null ? e0Var.c : null);

@@ -4,7 +4,7 @@ import java.util.List;
 import kc0.m80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ru implements aa.a {
+public final class ru implements aaShadow.a {
     public static final ru a = new ru();
     public static final List b = sy.d0.o(new String[]{"__typename", "login"});
 

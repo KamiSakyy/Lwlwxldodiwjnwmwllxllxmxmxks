@@ -7,7 +7,7 @@ import jn0.p20;
 import jn0.q20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class uq implements aa.a {
+public final class uq implements aaShadow.a {
     public static final uq a = new uq();
     public static final List b = sy.d0.n("__typename");
 

@@ -5,7 +5,7 @@ import jn0.j60;
 import jn0.r60;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class nt implements aa.a {
+public abstract class nt implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"timelineItem", "id"});
 
     public static j60 c(ea.e eVar, aa.w wVar) {

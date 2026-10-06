@@ -5,7 +5,7 @@ import jo.s70;
 import jo.v70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class nu implements aa.a {
+public abstract class nu implements aaShadow.a {
     public static final List a = x61.l.r(new String[]{"starredRepositories", "id"});
 
     public static s70 c(ea.e eVar, aa.w wVar) {

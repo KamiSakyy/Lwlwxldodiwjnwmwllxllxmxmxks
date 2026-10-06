@@ -4,7 +4,7 @@ import a81.t;
 import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class h extends c41.d implements c41.i {
+public abstract class hShadow extends c41.d implements c41.i {
     public final t g;
     public final w21.g h;
     public final /* synthetic */ k i;

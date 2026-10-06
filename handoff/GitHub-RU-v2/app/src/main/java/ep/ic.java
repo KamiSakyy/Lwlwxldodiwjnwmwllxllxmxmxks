@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ic implements aa.a {
+public final class ic implements aaShadow.a {
     public static final ic a = new ic();
     public static final List b = sy.d0.o("hasNextPage", "endCursor");
 

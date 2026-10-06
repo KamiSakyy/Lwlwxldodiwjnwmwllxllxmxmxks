@@ -4,8 +4,8 @@ import java.util.List;
 import jo.sc0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vx implements aa.a {
-    public static final vx a = new vx();
+public final class vxShadow implements aaShadow.a {
+    public static final vxShadow a = new vxShadow();
     public static final List b = sy.d0.n("filters");
 
     public final Object a(ea.e eVar, aa.w wVar) {

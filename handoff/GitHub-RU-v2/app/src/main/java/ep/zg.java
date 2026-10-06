@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class zg implements aa.a {
+public final class zg implements aaShadow.a {
     public static final zg a = new zg();
     public static final List b = sy.d0.o("notificationSettings", "id", "__typename");
 

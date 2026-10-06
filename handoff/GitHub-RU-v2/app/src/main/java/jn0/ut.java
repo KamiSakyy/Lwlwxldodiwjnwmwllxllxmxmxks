@@ -1,7 +1,7 @@
 package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ut implements aa.m0 {
+public final class ut implements aaShadow.m0 {
     public final vt a;
 
     public ut(vt vtVar) {

@@ -5,7 +5,7 @@ import jn0.ed0;
 import jn0.gd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class dy implements aa.a {
+public final class dy implements aaShadow.a {
     public static final dy a = new dy();
     public static final List b = sy.d0.n("updateMobilePushNotificationSchedules");
 

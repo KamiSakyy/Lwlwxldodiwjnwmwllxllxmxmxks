@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class ba {
-    public static final aa Companion = new aa();
+    public static final aaShadow Companion = new aaShadow();
     public static final a81.t a = new a81.t(1, "hideCodeBlobs", false);
     public static final a81.t b = new a81.t(1, "includeSuggestedChangesId", false);
     public static final a81.t c = new a81.t(1, "renderSuggestedChangesAsText", false);

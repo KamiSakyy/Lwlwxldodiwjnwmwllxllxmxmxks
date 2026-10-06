@@ -5,7 +5,7 @@ import jn0.b60;
 import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class gt implements aa.a {
+public final class gt implements aaShadow.a {
     public static final gt a = new gt();
     public static final List b = sy.d0.o(new String[]{"__typename", "viewerSubscription"});
 

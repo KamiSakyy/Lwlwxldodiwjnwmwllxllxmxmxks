@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class nf implements aa.v0 {
+public final class nf implements aaShadow.v0 {
     public final of a;
 
     public nf(of ofVar) {

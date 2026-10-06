@@ -380,7 +380,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 sy.y.j(obj);
-                q2.x xVar = (q2.x) this.x;
+                q2.xShadow xVar = (q2.x) this.x;
                 d1.r1 r1Var = new d1.r1((d1.z1) obj2, 2);
                 this.w = 1;
                 return h0.n3.e(xVar, (f1.r9) null, r1Var, this, 7) == aVar5 ? aVar5 : a0Var;
@@ -400,7 +400,7 @@ public final class v4 extends c71.j implements j71.e {
                 if (rnVar == null || (tnVar = rnVar.b) == null) {
                     return a0Var;
                 }
-                aa.h0 h0Var = tnVar.i;
+                aa.h0Shadow h0Var = tnVar.i;
                 com.github.service.wrapper.bShadow bVar5 = ((x4) obj2).t;
                 gv.g4 g4Var = new gv.g4();
                 String str4 = ((gv.e4) h0Var).a;
@@ -423,7 +423,7 @@ public final class v4 extends c71.j implements j71.e {
                 if (ndVar == null || (pdVar = ndVar.a) == null) {
                     return a0Var;
                 }
-                aa.h0 h0Var2 = pdVar.b.d;
+                aa.h0Shadow h0Var2 = pdVar.b.d;
                 com.github.service.wrapper.bShadow bVar6 = ((b6) obj2).t;
                 gv.c4 c4Var = new gv.c4();
                 String str5 = ((gv.a4) h0Var2).a;
@@ -471,7 +471,7 @@ public final class v4 extends c71.j implements j71.e {
                 if (f80Var == null || (e80Var = f80Var.a) == null) {
                     return a0Var;
                 }
-                aa.h0 h0Var3 = e80Var.b.c;
+                aa.h0Shadow h0Var3 = e80Var.b.c;
                 com.github.service.wrapper.bShadow bVar8 = ((k9) obj2).t;
                 gv.c4 c4Var2 = new gv.c4();
                 String str6 = ((gv.a4) h0Var3).a;
@@ -522,7 +522,7 @@ public final class v4 extends c71.j implements j71.e {
                 if (tjVar == null || (vjVar = tjVar.b) == null) {
                     return a0Var;
                 }
-                aa.h0 h0Var4 = vjVar.i;
+                aa.h0Shadow h0Var4 = vjVar.i;
                 com.github.service.wrapper.bShadow bVar9 = ((x4) obj2).t;
                 z70.m3 m3Var = new z70.m3(0);
                 String str7 = ((z70.l3) h0Var4).a;
@@ -545,7 +545,7 @@ public final class v4 extends c71.j implements j71.e {
                 if (obVar == null || (qbVar = obVar.a) == null) {
                     return a0Var;
                 }
-                aa.h0 h0Var5 = qbVar.b.d;
+                aa.h0Shadow h0Var5 = qbVar.b.d;
                 com.github.service.wrapper.bShadow bVar10 = ((b6) obj2).t;
                 z70.j3 j3Var = new z70.j3(0);
                 String str8 = ((z70.i3) h0Var5).a;
@@ -593,7 +593,7 @@ public final class v4 extends c71.j implements j71.e {
                 if (f00Var == null || (e00Var = f00Var.a) == null) {
                     return a0Var;
                 }
-                aa.h0 h0Var6 = e00Var.b.c;
+                aa.h0Shadow h0Var6 = e00Var.b.c;
                 com.github.service.wrapper.bShadow bVar12 = ((k9) obj2).t;
                 z70.j3 j3Var2 = new z70.j3(0);
                 String str9 = ((z70.i3) h0Var6).a;
@@ -627,7 +627,7 @@ public final class v4 extends c71.j implements j71.e {
                 }
                 throw new KotlinNothingValueException();
             case 16:
-                androidx.compose.runtime.x xVar2 = (androidx.compose.runtime.i2) this.x;
+                androidx.compose.runtime.xShadow xVar2 = (androidx.compose.runtime.i2) this.x;
                 View view = (View) obj2;
                 b71.a aVar17 = b71.a.r;
                 int i20 = this.w;
@@ -663,7 +663,7 @@ public final class v4 extends c71.j implements j71.e {
                 int i22 = this.w;
                 if (i22 == 0) {
                     sy.y.j(obj);
-                    y71.w1 w1Var = (y71.w1) this.x;
+                    y71.w1Shadow w1Var = (y71.w1) this.x;
                     a61.f0 f0Var = new a61.f0(8, (w2.y1) obj2);
                     this.w = 1;
                     if (w1Var.b(f0Var, this) == aVar18) {
@@ -921,7 +921,7 @@ public final class v4 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                v8.x a = v8.x.a();
+                v8.xShadow a = v8.x.a();
                 int i38 = z8.h.a;
                 a.getClass();
                 ((x71.t) obj2).j(new z8.b(7));

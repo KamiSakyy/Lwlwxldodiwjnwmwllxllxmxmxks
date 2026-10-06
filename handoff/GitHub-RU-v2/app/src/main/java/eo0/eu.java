@@ -5,7 +5,7 @@ import jn0.g70;
 import jn0.h70;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class eu implements aa.a {
+public final class eu implements aaShadow.a {
     public static final eu a = new eu();
     public static final List b = sy.d0.n("unblockUserFromOrganization");
 

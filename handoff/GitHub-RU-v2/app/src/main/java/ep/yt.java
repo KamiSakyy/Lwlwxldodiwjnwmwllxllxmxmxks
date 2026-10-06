@@ -4,7 +4,7 @@ import java.util.List;
 import jo.x60;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yt implements aa.a {
+public final class yt implements aaShadow.a {
     public static final yt a = new yt();
     public static final List b = sy.d0.o("__typename", "isArchived", "id");
 

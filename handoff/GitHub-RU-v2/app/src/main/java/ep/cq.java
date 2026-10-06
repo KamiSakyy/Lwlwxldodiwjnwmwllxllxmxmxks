@@ -3,8 +3,8 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class cq implements aa.a {
-    public static final cq a = new cq();
+public final class cqShadow implements aaShadow.a {
+    public static final cqShadow a = new cqShadow();
     public static final List b = sy.d0.o("totalCount", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {

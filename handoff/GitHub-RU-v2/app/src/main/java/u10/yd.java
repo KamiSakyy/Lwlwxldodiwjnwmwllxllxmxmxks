@@ -3,7 +3,7 @@ package u10;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class yd implements aa.w0 {
+public final class yd implements aaShadow.w0 {
     public static final sd Companion = new sd();
     public final String r;
     public final String s;
@@ -77,12 +77,12 @@ public final class yd implements aa.w0 {
         fVar.z0("number");
         fVar.z(this.t);
         aa.u0 u0Var = this.u;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("after");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.v;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("includeIssueTemplateProperties");
             aa.c.d(aa.c.k).d(fVar, wVar, u0Var2);
         } else if (z) {

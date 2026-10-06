@@ -12,7 +12,7 @@ public final class d0 {
 
     public final void a(View view, q2.r rVar) {
         Context context = view.getContext();
-        PointerIcon systemIcon = rVar instanceof q2.a ? PointerIcon.getSystemIcon(context, ((q2.a) rVar).f30818b) : PointerIcon.getSystemIcon(context, 1000);
+        PointerIcon systemIcon = rVar instanceof q2Shadow.a ? PointerIcon.getSystemIcon(context, ((q2.a) rVar).f30818b) : PointerIcon.getSystemIcon(context, 1000);
         if (k71.k.b(view.getPointerIcon(), systemIcon)) {
             return;
         }

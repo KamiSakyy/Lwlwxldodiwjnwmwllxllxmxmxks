@@ -5,7 +5,7 @@ import u10.a80;
 import u10.b80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class hu implements aa.a {
+public final class hu implements aaShadow.a {
     public static final hu a = new hu();
     public static final List b = sy.d0.n("subscribable");
 

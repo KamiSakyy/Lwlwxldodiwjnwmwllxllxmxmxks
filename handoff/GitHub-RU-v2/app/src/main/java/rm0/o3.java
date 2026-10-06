@@ -37,37 +37,37 @@ public final class o3 implements y71.i {
                 }
                 break;
             case 4:
-                Object b5 = this.s.b(new a5(jVar, 21), cVar);
+                Object b5 = this.s.b(new a5Shadow(jVar, 21), cVar);
                 if (b5 != b71.a.r) {
                     break;
                 }
                 break;
             case 5:
-                Object b6 = this.s.b(new a5(jVar, 22), cVar);
+                Object b6 = this.s.b(new a5Shadow(jVar, 22), cVar);
                 if (b6 != b71.a.r) {
                     break;
                 }
                 break;
             case 6:
-                Object b7 = this.s.b(new a5(jVar, 23), cVar);
+                Object b7 = this.s.b(new a5Shadow(jVar, 23), cVar);
                 if (b7 != b71.a.r) {
                     break;
                 }
                 break;
             case 7:
-                Object b8 = this.s.b(new a5(jVar, 24), cVar);
+                Object b8 = this.s.b(new a5Shadow(jVar, 24), cVar);
                 if (b8 != b71.a.r) {
                     break;
                 }
                 break;
             case 8:
-                Object b9 = this.s.b(new a5(jVar, 25), cVar);
+                Object b9 = this.s.b(new a5Shadow(jVar, 25), cVar);
                 if (b9 != b71.a.r) {
                     break;
                 }
                 break;
             case 9:
-                Object b10 = this.s.b(new a5(jVar, 29), cVar);
+                Object b10 = this.s.b(new a5Shadow(jVar, 29), cVar);
                 if (b10 != b71.a.r) {
                     break;
                 }

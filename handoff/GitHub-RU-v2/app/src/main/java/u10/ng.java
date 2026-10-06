@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ng implements aa.m0 {
+public final class ng implements aaShadow.m0 {
     public final og a;
 
     public ng(og ogVar) {

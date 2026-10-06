@@ -6,7 +6,7 @@ import kc0.g50;
 import kc0.i50;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class is implements aa.a {
+public final class is implements aaShadow.a {
     public static final is a = new is();
     public static final List b = sy.d0.o(new String[]{"updateSubscription", "markNotificationAsDone"});
 

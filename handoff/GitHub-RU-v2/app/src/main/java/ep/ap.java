@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ap implements aa.a {
+public final class ap implements aaShadow.a {
     public static final ap a = new ap();
     public static final List b = sy.d0.o("pageInfo", "nodes");
 

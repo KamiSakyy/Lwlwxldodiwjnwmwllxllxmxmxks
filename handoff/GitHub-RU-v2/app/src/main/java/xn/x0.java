@@ -8,7 +8,7 @@ public final class x0 {
     public static final w0 Companion = new w0();
     public final String a;
     public final String b;
-    public final e c;
+    public final eShadow c;
     public final String d;
     public final String e;
     public final String f;
@@ -21,7 +21,7 @@ public final class x0 {
     public final List m;
     public final Boolean n;
 
-    public x0(String str, String str2, e eVar, String str3, String str4, String str5, long j, long j2, long j3, int i, ArrayList arrayList, ArrayList arrayList2, List list, Boolean bool) {
+    public x0(String str, String str2, eShadow eVar, String str3, String str4, String str5, long j, long j2, long j3, int i, ArrayList arrayList, ArrayList arrayList2, List list, Boolean bool) {
         k71.k.g(str, "id");
         k71.k.g(str2, "name");
         k71.k.g(eVar, "state");

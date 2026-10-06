@@ -3,7 +3,7 @@ package ep;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class eaShadow implements aa.a {
+public final class eaShadow implements aaShadow.a {
     public static final eaShadow a = new eaShadow();
     public static final List b = sy.d0.n("__typename");
 
@@ -15,7 +15,7 @@ public final class eaShadow implements aa.a {
             str = (String) aa.c.a.a(eVar, wVar);
         }
         eVar.s0();
-        ss.a c = ss.b.c(eVar, wVar);
+        ss.a c = ssShadow.b.c(eVar, wVar);
         if (str != null) {
             return new jo.ef(str, c);
         }
@@ -30,8 +30,8 @@ public final class eaShadow implements aa.a {
         k71.k.g(efVar, "value");
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, efVar.a);
-        List list = ss.b.a;
-        ss.b.d(fVar, wVar, efVar.b);
+        List list = ssShadow.b.a;
+        ssShadow.b.d(fVar, wVar, efVar.b);
     }
 
 

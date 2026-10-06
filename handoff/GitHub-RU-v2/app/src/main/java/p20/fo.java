@@ -5,7 +5,7 @@ import u10.bz;
 import u10.gz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fo implements aa.a {
+public final class fo implements aaShadow.a {
     public static final fo a = new fo();
     public static final List b = sy.d0.o("dashboard", "id", "__typename");
 

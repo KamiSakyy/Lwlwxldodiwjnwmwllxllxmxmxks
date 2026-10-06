@@ -1,6 +1,6 @@
 package com.github.rudroid.shortcuts;
 
-import rm0.r3;
+import rm0.r3Shadow;
 import y71.n1;
 
 @c71.e(c = "com.github.rudroid.shortcuts.ConfigureShortcutViewModel$1", f = "ConfigureShortcutViewModel.kt", l = {131}, m = "invokeSuspend", v = 1)
@@ -29,7 +29,7 @@ final class d extends c71.j implements j71.e {
         if (i == 0) {
             sy.y.j(obj);
             e eVar = this.w;
-            r3 l = n1.l(eVar.A, eVar.D, eVar.B, new b(4, null));
+            r3Shadow l = n1.l(eVar.A, eVar.D, eVar.B, new b(4, null));
             c cVar = new c(eVar);
             this.v = 1;
             if (l.b(cVar, this) == aVar) {
