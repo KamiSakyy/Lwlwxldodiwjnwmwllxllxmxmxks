@@ -95,11 +95,11 @@ class StudioComposeUi(private val activity: MainActivity) {
     private var canSave by mutableStateOf(false)
     private var buildProgress by mutableStateOf(0f)
     private var buildProgressMessage by mutableStateOf("")
-    private var pythonServerMode by mutableStateOf(preferences.getBoolean("python_server_mode", false))
+    private var pythonRuntimeSelected by mutableStateOf(preferences.getBoolean("python_server_mode", false))
     private var packageErrorState by mutableStateOf<String?>(null)
     private var versionErrorState by mutableStateOf<String?>(null)
     private val projectReady: Boolean
-        get() = pythonServerMode || projectSummaryState != "Файл ещё не выбран"
+        get() = pythonRuntimeSelected || projectSummaryState != "Файл ещё не выбран"
 
     fun install(view: ComposeView) {
         view.setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
@@ -116,11 +116,11 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun getAutoRotateValue(): Boolean = autoRotate
     fun getFullscreenValue(): Boolean = fullscreen
     fun getProjectSummaryValue(): String = projectSummaryState
-    fun getPythonServerMode(): Boolean = pythonServerMode
+    fun getPythonServerMode(): Boolean = pythonRuntimeSelected
 
     fun setPythonServerMode(value: Boolean) {
-        if (pythonServerMode == value || isBusy) return
-        pythonServerMode = value
+        if (pythonRuntimeSelected == value || isBusy) return
+        pythonRuntimeSelected = value
         preferences.edit().putBoolean("python_server_mode", value).apply()
         canSave = false
         statusMessage = if (value) "Встроенный Python/Flask режим выбран" else "Режим статического сайта выбран"
@@ -206,8 +206,8 @@ class StudioComposeUi(private val activity: MainActivity) {
                 ) {
                     StudioHeader()
                     SectionCard(
-                        title = if (pythonServerMode) "01 · PYTHON ENGINE" else "01 · ПРОЕКТ",
-                        subtitle = if (pythonServerMode) "Локальный сервер Flask внутри APK." else "Выберите HTML-файл или ZIP-проект."
+                        title = if (pythonRuntimeSelected) "01 · PYTHON ENGINE" else "01 · ПРОЕКТ",
+                        subtitle = if (pythonRuntimeSelected) "Локальный сервер Flask внутри APK." else "Выберите HTML-файл или ZIP-проект."
                     ) {
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
                             OutlinedButton(
@@ -215,8 +215,8 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 enabled = !isBusy,
                                 modifier = Modifier.weight(1f).height(46.dp),
                                 shape = RoundedCornerShape(14.dp),
-                                border = BorderStroke(1.dp, if (!pythonServerMode) Mint else Outline),
-                                colors = ButtonDefaults.outlinedButtonColors(contentColor = if (!pythonServerMode) Mint else Ink)
+                                border = BorderStroke(1.dp, if (!pythonRuntimeSelected) Mint else Outline),
+                                colors = ButtonDefaults.outlinedButtonColors(contentColor = if (!pythonRuntimeSelected) Mint else Ink)
                             ) {
                                 androidx.compose.material3.Text("Статический сайт", fontSize = 12.sp)
                             }
@@ -225,14 +225,14 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 enabled = !isBusy,
                                 modifier = Modifier.weight(1f).height(46.dp),
                                 shape = RoundedCornerShape(14.dp),
-                                border = BorderStroke(1.dp, if (pythonServerMode) Mint else Outline),
-                                colors = ButtonDefaults.outlinedButtonColors(contentColor = if (pythonServerMode) Mint else Ink)
+                                border = BorderStroke(1.dp, if (pythonRuntimeSelected) Mint else Outline),
+                                colors = ButtonDefaults.outlinedButtonColors(contentColor = if (pythonRuntimeSelected) Mint else Ink)
                             ) {
                                 androidx.compose.material3.Text("Python / Flask", fontSize = 12.sp)
                             }
                         }
                         Spacer(Modifier.height(10.dp))
-                        if (pythonServerMode) {
+                        if (pythonRuntimeSelected) {
                             Surface(
                                 modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(14.dp),
