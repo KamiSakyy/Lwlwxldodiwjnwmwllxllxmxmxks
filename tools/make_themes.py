@@ -325,7 +325,9 @@ def render_theme(night):
     for name, parent, items in STYLES:
         if name == "Theme.MailGram.Dialog":
             continue
-        parent_attr = ' parent="%s"' % parent if parent else ""
+        # parent="" обязателен: без него Android достраивает родителя по имени
+        # (ShapeAppearance.MailGram.Media → ShapeAppearance.MailGram) и сборка падает
+        parent_attr = ' parent="%s"' % parent
         lines.append('    <style name="%s"%s>\n' % (name, parent_attr))
         for attr, value in items:
             lines.append('        <item name="%s">%s</item>\n' % (attr, value))

@@ -60,22 +60,22 @@
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Dialog">
+    <style name="ShapeAppearance.MailGram.Dialog" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">22dp</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Media">
+    <style name="ShapeAppearance.MailGram.Media" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">14dp</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Circle">
+    <style name="ShapeAppearance.MailGram.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Sheet">
+    <style name="ShapeAppearance.MailGram.Sheet" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopLeft">22dp</item>
         <item name="cornerSizeTopRight">22dp</item>
@@ -152,7 +152,7 @@
         <item name="contentInsetEnd">4dp</item>
     </style>
 
-    <style name="Widget.MailGram.GlassIcon">
+    <style name="Widget.MailGram.GlassIcon" parent="">
         <item name="android:layout_width">42dp</item>
         <item name="android:layout_height">42dp</item>
         <item name="android:background">@drawable/bg_header_icon</item>
@@ -163,7 +163,7 @@
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Widget.MailGram.Pill">
+    <style name="Widget.MailGram.Pill" parent="">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">36dp</item>
         <item name="android:gravity">center</item>
@@ -184,7 +184,7 @@
         <item name="android:background">@drawable/bg_pill_accent</item>
     </style>
 
-    <style name="Widget.MailGram.Row">
+    <style name="Widget.MailGram.Row" parent="">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">54dp</item>
@@ -221,7 +221,7 @@
         <item name="android:paddingBottom">9dp</item>
     </style>
 
-    <style name="Widget.MailGram.Card">
+    <style name="Widget.MailGram.Card" parent="">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
@@ -232,7 +232,7 @@
     <style name="Widget.MailGram.CardRow" parent="Widget.MailGram.Row">
     </style>
 
-    <style name="Widget.MailGram.Separator">
+    <style name="Widget.MailGram.Separator" parent="">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@drawable/bg_separator</item>
@@ -304,7 +304,7 @@
         <item name="android:background">@drawable/bg_row_ripple_round</item>
     </style>
 
-    <style name="Widget.MailGram.AttachAction">
+    <style name="Widget.MailGram.AttachAction" parent="">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
@@ -318,7 +318,7 @@
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Widget.MailGram.AttachIcon">
+    <style name="Widget.MailGram.AttachIcon" parent="">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:background">@drawable/bg_attach_sheet_icon</item>

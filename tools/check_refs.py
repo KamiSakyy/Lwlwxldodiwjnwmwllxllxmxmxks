@@ -76,9 +76,33 @@ def scan(defined):
     return problems
 
 
+def check_implicit_parents(defined):
+    """Стиль вида A.B.C без parent= заставит aapt искать родителя по имени (A.B) —
+    если такого стиля нет, сборка падает: 'resource style/A.B not found'."""
+    problems = []
+    for path in glob.glob(os.path.join(RES, 'values*', '*.xml')):
+        root = ET.parse(path).getroot()
+        for el in root:
+            if el.tag != 'style':
+                continue
+            name = el.get('name') or ''
+            if el.get('parent') is not None or '.' not in name:
+                continue
+            base = name.rsplit('.', 1)[0]
+            local = name.replace('.', '_')
+            if base.replace('.', '_') in defined['style'] or base in defined['style']:
+                continue
+            if base.startswith(('Widget.Material', 'TextAppearance.Material', 'Theme.Material',
+                                'ThemeOverlay.Material', 'Widget.AppCompat', 'Theme.AppCompat')):
+                continue
+            problems.append('%s — стиль %s без parent, а базового стиля %s нет'
+                            % (path, name, base))
+    return problems
+
+
 def main():
     defined = collect()
-    problems = scan(defined)
+    problems = scan(defined) + check_implicit_parents(defined)
     for p in problems:
         print(p)
     print('проблем:', len(problems))
