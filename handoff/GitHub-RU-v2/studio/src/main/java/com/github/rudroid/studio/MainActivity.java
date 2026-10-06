@@ -408,6 +408,9 @@ public class MainActivity extends Activity {
         s.setSaveFormData(false);
         s.setCacheMode(WebSettings.LOAD_DEFAULT);
         s.setDefaultTextEncodingName("utf-8");
+        // file://-страница + http://127.0.0.1 (встроенный Node.js): WebView
+        // считает file:// «доверенным» и иначе блокирует такие запросы как mixed content.
+        s.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         if (Build.VERSION.SDK_INT >= 26) {
             w.setRendererPriorityPolicy(WebView.RENDERER_PRIORITY_BOUND, true);
         }
