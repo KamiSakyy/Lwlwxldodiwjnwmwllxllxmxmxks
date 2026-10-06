@@ -545,7 +545,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/message_hint"
-                    android:imeOptions="actionDefault"
                     android:inputType="textCapSentences|textMultiLine"
                     android:maxLines="5"
                     android:minHeight="42dp"
