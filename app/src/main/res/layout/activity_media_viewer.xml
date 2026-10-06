@@ -10,7 +10,7 @@
         android:id="@+id/viewer_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#FF000000"
+        android:background="@drawable/bg_toolbar_glass"
         app:navigationIcon="@drawable/ic_back"
         app:navigationIconTint="#FFFFFFFF"
         app:subtitleTextColor="#FF8E8E93"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#FF1C1C1E"
+            android:background="@drawable/bg_glass_panel"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="16dp"
@@ -79,9 +79,10 @@
     </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/viewer_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF000000"
+        android:background="@drawable/bg_toolbar_glass"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="8dp"

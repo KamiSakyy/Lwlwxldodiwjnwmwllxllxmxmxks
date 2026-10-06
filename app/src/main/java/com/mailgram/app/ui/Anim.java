@@ -7,6 +7,7 @@ import android.content.Context;
 import android.view.HapticFeedbackConstants;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.PathInterpolator;
 
@@ -66,6 +67,27 @@ public final class Anim {
                 .start();
     }
 
+    /** Поочерёдное появление дочерних блоков контейнера — «каскад» секций. */
+    public static void cascade(final ViewGroup group, final long stepMs, final float fromY) {
+        if (group == null) return;
+        boolean on = enabled(group.getContext());
+        for (int i = 0; i < group.getChildCount(); i++) {
+            final View child = group.getChildAt(i);
+            if (!on) {
+                child.setAlpha(1f);
+                child.setTranslationY(0f);
+                continue;
+            }
+            child.setAlpha(0f);
+            child.setTranslationY(Ui.dp(group.getContext(), fromY));
+            child.animate().alpha(1f).translationY(0f)
+                    .setStartDelay(Math.min(i, 8) * stepMs)
+                    .setInterpolator(EMPHASIZED)
+                    .setDuration(320L)
+                    .start();
+        }
+    }
+
     /** Появление элемента списка с задержкой по индексу (эффект «волны»). */
     public static void staggeredIn(View view, int index) {
         if (!enabled(view.getContext())) {
@@ -102,6 +124,17 @@ public final class Anim {
         }
         view.setAlpha(0f);
         view.animate().alpha(1f).setInterpolator(EMPHASIZED).setDuration(duration).start();
+    }
+
+    /** Мягкое проявление со задержкой — для «каскада» панелей. */
+    public static void fadeIn(View view, long duration, long delay) {
+        if (!enabled(view.getContext())) {
+            view.setAlpha(1f);
+            return;
+        }
+        view.setAlpha(0f);
+        view.animate().alpha(1f).setStartDelay(delay)
+                .setInterpolator(EMPHASIZED).setDuration(duration).start();
     }
 
     /** Плавное раскрытие/скрытие панели (эмодзи, ответ, запись). */

@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.materialswitch.MaterialSwitch;
+import android.view.ViewGroup;
+
 import com.mailgram.app.R;
 import com.mailgram.app.crypto.B64;
 import com.mailgram.app.crypto.Identity;
@@ -136,6 +138,9 @@ public class SettingsActivity extends AppCompatActivity {
                 + "\n" + getString(R.string.setup_package) + ": " + getPackageName());
 
         findViewById(R.id.btn_logout).setOnClickListener(v -> logoutDialog());
+
+        // Секции появляются каскадом — как списки в iOS при открытии экрана
+        Anim.cascade((ViewGroup) findViewById(R.id.settings_content), 45L, 10f);
     }
 
     private String currentRedirect() {

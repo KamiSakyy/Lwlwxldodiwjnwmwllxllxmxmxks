@@ -38,6 +38,9 @@ import java.io.OutputStream;
  */
 public class MediaViewerActivity extends AppCompatActivity {
 
+    private boolean chromeVisible = true;
+    private float downY;
+
     public static final String EXTRA_CHAT = "chat";
     public static final String EXTRA_MID = "mid";
 
@@ -72,6 +75,8 @@ public class MediaViewerActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> finish());
         toolbar.setTitle(Store.displayName(this, msg.peer));
         toolbar.setSubtitle(subtitle());
+        Anim.fadeIn(findViewById(R.id.viewer_toolbar), 260L, 0L);
+        Anim.fadeIn(findViewById(R.id.viewer_bottom), 260L, 60L);
         findViewById(R.id.viewer_share).setOnClickListener(v -> share());
         findViewById(R.id.viewer_save).setOnClickListener(v -> save());
 
@@ -108,6 +113,7 @@ public class MediaViewerActivity extends AppCompatActivity {
         image.setVisibility(View.VISIBLE);
         Bitmap bitmap = PhotoUtil.decodeScaled(data, 2048);
         image.setImageBitmap(bitmap);
+        Anim.springIn(image, 0.92f, 18f);
         image.setScaleType(ImageView.ScaleType.MATRIX);
 
         final ScaleGestureDetector scaleDetector = new ScaleGestureDetector(this,
@@ -136,6 +142,12 @@ public class MediaViewerActivity extends AppCompatActivity {
                     }
 
                     @Override
+                    public boolean onSingleTapConfirmed(MotionEvent e) {
+                        toggleChrome();
+                        return true;
+                    }
+
+                    @Override
                     public boolean onDoubleTap(MotionEvent e) {
                         scale = scale > 1.2f ? 1f : 2.5f;
                         imageMatrix = new Matrix();
@@ -147,8 +159,58 @@ public class MediaViewerActivity extends AppCompatActivity {
         image.setOnTouchListener((v, event) -> {
             scaleDetector.onTouchEvent(event);
             gestureDetector.onTouchEvent(event);
+            // Свайп вниз при отсутствии зума — закрыть просмотрщик (как в iOS и Telegram).
+            switch (event.getActionMasked()) {
+                case MotionEvent.ACTION_DOWN:
+                    downY = event.getRawY();
+                    break;
+                case MotionEvent.ACTION_MOVE: {
+                    if (scale <= 1.01f && !scaleDetector.isInProgress()) {
+                        float dy = event.getRawY() - downY;
+                        if (dy > 0f) {
+                            image.setTranslationY(dy);
+                            float fade = Math.max(0.35f, 1f - dy / (image.getHeight() * 1.4f));
+                            findViewById(R.id.viewer_toolbar).setAlpha(fade);
+                            findViewById(R.id.viewer_bottom).setAlpha(fade);
+                        }
+                    }
+                    break;
+                }
+                case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL: {
+                    float dy = image.getTranslationY();
+                    if (dy > Ui.dp(this, 110)) {
+                        image.animate().translationY(image.getHeight()).alpha(0f)
+                                .setDuration(180L)
+                                .withEndAction(this::finish)
+                                .start();
+                    } else if (dy > 0f) {
+                        image.animate().translationY(0f).setDuration(240L)
+                                .setInterpolator(new android.view.animation.OvershootInterpolator(0.9f))
+                                .start();
+                        findViewById(R.id.viewer_toolbar).setAlpha(chromeVisible ? 1f : 0f);
+                        findViewById(R.id.viewer_bottom).setAlpha(chromeVisible ? 1f : 0f);
+                    }
+                    break;
+                }
+                default:
+                    break;
+            }
             return true;
         });
+    }
+
+    /** Показать или спрятать панели — на весь экран остаётся только снимок. */
+    private void toggleChrome() {
+        chromeVisible = !chromeVisible;
+        View toolbar = findViewById(R.id.viewer_toolbar);
+        View bottom = findViewById(R.id.viewer_bottom);
+        Anim.fadeIn(toolbar, 220L, 0L);
+        Anim.fadeIn(bottom, 220L, 40L);
+        toolbar.animate().alpha(chromeVisible ? 1f : 0f).translationY(chromeVisible ? 0f : -toolbar.getHeight())
+                .setDuration(220L).start();
+        bottom.animate().alpha(chromeVisible ? 1f : 0f).translationY(chromeVisible ? 0f : bottom.getHeight())
+                .setDuration(220L).start();
     }
 
     // ---------------- видео ----------------

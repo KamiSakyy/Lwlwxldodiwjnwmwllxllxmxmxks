@@ -4,14 +4,14 @@
     android:id="@+id/settings_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorChatBackground"
+    android:background="@drawable/bg_chat_wallpaper"
     android:orientation="vertical">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/settings_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorSurface"
+        android:background="@drawable/bg_toolbar_glass"
         app:navigationIcon="@drawable/ic_back"
         app:subtitle="@string/settings"
         app:title="@string/app_name"
@@ -25,6 +25,7 @@
         android:paddingBottom="24dp">
 
         <LinearLayout
+            android:id="@+id/settings_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
