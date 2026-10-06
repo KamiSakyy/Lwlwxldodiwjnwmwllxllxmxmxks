@@ -85,12 +85,27 @@ public final class Auth {
     }
 
     public static String authMode(Context ctx) {
+        // 1. Что реально принял Google (живая проба) — важнее любых сохранённых значений:
+        //    решение, принятое установкой с другим набором клиентов, здесь не действует.
+        Probe cached = cachedProbe(ctx);
+        if (cached != null && !cached.inconclusive && !cached.rejected) {
+            if (cached.androidOk) return MODE_ANDROID;
+            if (cached.loopbackOk) return MODE_LOOPBACK;
+        }
         String stored = prefs(ctx).getString(K_MODE, null);
-        if (stored != null) return stored;
-        // Значение по умолчанию задаёт сборка: клиент типа Desktop работает через локальный
-        // порт, Android-клиент — через схему, прописанную в манифесте.
-        String mode = BuildConfig.OAUTH_DEFAULT_MODE;
-        return MODE_LOOPBACK.equals(mode) ? MODE_LOOPBACK : MODE_ANDROID;
+        if (stored != null && stored.contains("|")) {
+            // Режим запоминается вместе с набором клиентов, для которого он выбран: значение от
+            // сборки с другими client ID (или от старой версии) не применяем.
+            String[] parts = stored.split("\\|", 2);
+            String mode = parts[0];
+            String forPrimary = parts[1];
+            String primaryNow = BuildConfig.OAUTH_CLIENT_ID == null ? "" : BuildConfig.OAUTH_CLIENT_ID.trim();
+            boolean usable = mode.equals(parts[0]) && forPrimary.equals(primaryNow)
+                    && (MODE_LOOPBACK.equals(mode) ? !altClientId().isEmpty() : !androidClientId().isEmpty());
+            if (usable) return mode;
+        }
+        // 2. Значение по умолчанию задаёт сборка.
+        return MODE_LOOPBACK.equals(BuildConfig.OAUTH_DEFAULT_MODE) ? MODE_LOOPBACK : MODE_ANDROID;
     }
 
     /** Client ID Android-клиента (из него же берётся схема редиректа в манифесте). */
@@ -112,7 +127,8 @@ public final class Auth {
     }
 
     public static void setAuthMode(Context ctx, String mode) {
-        prefs(ctx).edit().putString(K_MODE, mode).apply();
+        String primary = BuildConfig.OAUTH_CLIENT_ID == null ? "" : BuildConfig.OAUTH_CLIENT_ID.trim();
+        prefs(ctx).edit().putString(K_MODE, mode + "|" + primary).apply();
     }
 
     private static String redirectForBuildClient(Context ctx) {
@@ -244,6 +260,7 @@ public final class Auth {
         if (p.androidOk) {
             p.mode = MODE_ANDROID;
             p.summary = "Google принимает client ID — вход в один тап готов";
+            setAuthMode(ctx, MODE_ANDROID);
             saveProbe(ctx, p);
             return p;
         }
@@ -292,6 +309,11 @@ public final class Auth {
         if (json == null) return null;
         try {
             JSONObject o = new JSONObject(json);
+            String probedPrimary = o.optString("clientId", "");
+            String probedAlt = o.optString("altClientId", "");
+            String nowPrimary = BuildConfig.OAUTH_CLIENT_ID == null ? "" : BuildConfig.OAUTH_CLIENT_ID.trim();
+            String nowAlt = BuildConfig.OAUTH_ALT_CLIENT_ID == null ? "" : BuildConfig.OAUTH_ALT_CLIENT_ID.trim();
+            if (!probedPrimary.equals(nowPrimary) || !probedAlt.equals(nowAlt)) return null;
             Probe p = new Probe();
             p.androidError = o.optString("androidError", "");
             p.loopbackError = o.optString("loopbackError", "");
@@ -314,6 +336,9 @@ public final class Auth {
     private static void saveProbe(Context ctx, Probe p) {
         try {
             JSONObject o = new JSONObject();
+            // проба действительна только для того набора клиентов, с которым сделана
+            o.put("clientId", BuildConfig.OAUTH_CLIENT_ID == null ? "" : BuildConfig.OAUTH_CLIENT_ID.trim());
+            o.put("altClientId", BuildConfig.OAUTH_ALT_CLIENT_ID == null ? "" : BuildConfig.OAUTH_ALT_CLIENT_ID.trim());
             o.put("androidError", p.androidError);
             o.put("loopbackError", p.loopbackError);
             o.put("androidOk", p.androidOk);
@@ -407,7 +432,7 @@ public final class Auth {
         prefs(ctx).edit()
                 .remove(K_ACCESS).remove(K_REFRESH).remove(K_EXPIRES)
                 .remove(K_ACCOUNT).remove(K_VERIFIER).remove(K_STATE)
-                .remove(K_PROBE)
+                .remove(K_MODE).remove(K_PROBE)
                 .apply();
     }
 }

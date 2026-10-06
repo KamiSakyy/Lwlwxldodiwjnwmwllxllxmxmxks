@@ -93,7 +93,11 @@ jobs:
               --data-urlencode "prompt=consent" \
               --data-urlencode "include_granted_scopes=true" \
               --data-urlencode "hl=ru") || code="000"
-            loc=$(grep -i '^location:' /tmp/hdr | tr -d '\r' | head -c 120 || true)
+            loc=$(grep -i '^location:' /tmp/hdr | tr -d '\r' | sed 's/^[Ll]ocation: //' | head -c 200 || true)
+            if printf '%s' "$loc" | grep -q 'authError='; then
+              decoded=$(printf '%s' "$loc" | sed 's/.*authError=//' | python3 tools/oauth-decode.py | head -c 300) || true
+              echo "::notice title=Причина отказа [$label]::${decoded}"
+            fi
             text=$(sed -e 's/<[^>]*>/ /g' /tmp/pg.html | tr -s ' \n\t' ' ' | tr -d '\r')
             info=$(printf '%s' "$text" | grep -oiE 'invalid_request|redirect_uri_mismatch|invalid_client|unauthorized_client|access_denied|Custom URI scheme[^.]{0,70}|Доступ заблокирован|недопустимый запрос' | sort -u | head -6 | paste -sd'|' - || true)
             echo "::notice title=Страница авторизации [$label]::HTTP $code | ${info:-принято} | ${loc} | текст: $(printf '%s' "$text" | head -c 150)"
