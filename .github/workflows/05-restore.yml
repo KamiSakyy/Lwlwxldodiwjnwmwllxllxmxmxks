@@ -54,7 +54,6 @@ jobs:
       - name: "ИТЕРАТИВНЫЙ ЦИКЛ: javac + стабы (6 раундов)"
         shell: bash
         run: |
-          set -e
           PROJ="${{ env.PROJ }}"
           SRC="$PROJ/app/src/main/java"
           mkdir -p handoff/restoration
@@ -105,7 +104,7 @@ jobs:
             for CH in /tmp/chunk_*; do
               N="${CH##*chunk_}"
               CP="$ANDROID_JAR"
-              for P in /tmp/classes_*; do [ -d "$P" ] && CP="$CP:$P"; done
+              for P in /tmp/classes_*; do if [ -d "$P" ]; then CP="$CP:$P"; fi; done
               javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 \
                 -source 8 -target 8 -encoding UTF-8 \
                 -bootclasspath "$ANDROID_JAR" -classpath "$CP" \
