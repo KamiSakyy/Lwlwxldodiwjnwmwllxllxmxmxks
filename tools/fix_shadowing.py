@@ -119,8 +119,7 @@ def main():
     for p, x, xs in jobs: inpkg[p].append((x, xs))
     pairmap = {(p, x): xs for p, x, xs in jobs}
     import_re = re.compile(r"\bimport\s+([\w.]+)\.(\w+)\s*;", re.M)
-    alt = "|".join("(%s)\.(%s)" % (re.escape(p), re.escape(x)) for p, x, _ in jobs)
-    qual_re = re.compile(r"\b(?:%s)\b" % alt)
+    qual_re = re.compile(r"\b([a-z][a-z0-9]{0,4})\.(\w{1,6})\b")
     totals = collections.Counter()
     changed_files = 0
     for fp in files:
@@ -141,7 +140,10 @@ def main():
                     text, n = rewrite_importer(text, m.group(2), pairmap[key])
                     totals["%s.%s(import)" % key] += n
         if qual_re.search(text):
-            text = qual_re.sub(lambda m: "%s.%s" % (m.group(1), pairmap[(m.group(1), m.group(2))]) if (m.group(1), m.group(2)) in pairmap else m.group(0), text)
+            def qrepl(m):
+                xs = pairmap.get((m.group(1), m.group(2)))
+                return "%s.%s" % (m.group(1), xs) if xs else m.group(0)
+            text = qual_re.sub(qrepl, text)
         if text != orig and not a.dry:
             with open(fp, "w", encoding="utf-8") as f:
                 f.write(text)
