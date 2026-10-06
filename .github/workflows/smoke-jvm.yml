@@ -67,15 +67,7 @@ jobs:
         run: |
           for f in app/build/test-results/testDebugUnitTest/TEST-*.xml; do
             [ -e "$f" ] || continue
-            python3 - "$f" <<'PY'
-import sys, xml.etree.ElementTree as ET
-t = ET.parse(sys.argv[1]); r = t.getroot()
-for tc in r.iter('testcase'):
-    for fail in list(tc.iter('failure')) + list(tc.iter('error')):
-        msg = (fail.get('message') or fail.text or '')[:1000]
-        msg = ' '.join(msg.split())
-        print(f"::error title=Падение: {tc.get('name')}::{msg}")
-PY
+            python3 -c "import sys,xml.etree.ElementTree as ET;t=ET.parse(sys.argv[1]);[print('::error title=Падение: '+tc.get('name')+'::'+(' '.join(((f.get('message') or f.text or '')[:1000]).split()))) for tc in t.getroot().iter('testcase') for f in (list(tc.iter('failure'))+list(tc.iter('error')))]" "$f"
           done
           if [ -f smoke.log ] && grep -q "What went wrong" smoke.log; then
             grep -A 20 "What went wrong" smoke.log | head -40 | while IFS= read -r line; do
