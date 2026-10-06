@@ -206,6 +206,11 @@ public final class SyncEngine {
         }
 
         // History API: берём только изменённые письма (2 юнита), поиск q= — лишь первый раз
+        if (Prefs.syncVersion(app) < 3) {
+            // схема синка обновлена: разовый полный пересмотр ящика, старая закладка сгорела
+            Prefs.setHistoryId(app, 0L);
+            Prefs.setSyncVersion(app, 3);
+        }
         long start = Prefs.historyId(app);
         final long[] newH = {0L};
         List<String> ids;
@@ -225,15 +230,18 @@ public final class SyncEngine {
         }
         result.scanned = ids.size();
         Log.i(TAG, "изменений: " + ids.size() + ", новых: " + unknown.size());
-        saveHistory(newH[0]);
         if (unknown.isEmpty()) {
+            saveHistory(newH[0]);
             quotaFails = 0;
             return;
         }
-        // защита квоты: не больше 40 писем за цикл, остальные — следующим
-        if (unknown.size() > 40) unknown = new ArrayList<>(unknown.subList(0, 40));
+        // защита квоты: не больше 40 писем за цикл; закладку не двигаем, пока есть остаток
+        boolean truncated = unknown.size() > 40;
+        if (truncated) unknown = new ArrayList<>(unknown.subList(0, 40));
 
         // по письму за запрос (messages.get — проверенный эндпоинт), параллельно, не более 40
+        final java.util.concurrent.atomic.AtomicInteger failures =
+                new java.util.concurrent.atomic.AtomicInteger();
         List<Future<?>> futures = new ArrayList<>();
         for (String id : unknown) {
             final String messageId = id;
@@ -257,6 +265,7 @@ public final class SyncEngine {
                         result.undecryptable++;
                     }
                 } catch (Exception e) {
+                    failures.incrementAndGet();
                     Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
                 }
             }));
@@ -265,8 +274,14 @@ public final class SyncEngine {
             try {
                 f.get(120, TimeUnit.SECONDS);
             } catch (Exception e) {
+                failures.incrementAndGet();
                 Log.w(TAG, "задача обработки письма не завершилась: " + e);
             }
+        }
+        // закладку истории двигаем, только если всё обработано — иначе письма
+        // остались бы «за закладкой» и не появились бы никогда
+        if (!truncated && failures.get() == 0) {
+            saveHistory(newH[0]);
         }
     }
 

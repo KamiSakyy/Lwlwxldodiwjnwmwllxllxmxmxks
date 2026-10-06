@@ -23,6 +23,15 @@ public final class Prefs {
         return p(ctx).getString("theme", THEME_DARK);
     }
 
+    /** Версия схемы синхронизации: при повышении сбрасываем закладку истории. */
+    public static int syncVersion(Context ctx) {
+        return p(ctx).getInt("sync_version", 0);
+    }
+
+    public static void setSyncVersion(Context ctx, int value) {
+        p(ctx).edit().putInt("sync_version", value).apply();
+    }
+
     /** Закладка History API: состояние ящика после последней синхронизации. */
     public static long historyId(Context ctx) {
         return p(ctx).getLong("history_id", 0L);
