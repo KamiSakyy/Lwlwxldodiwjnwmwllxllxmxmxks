@@ -30,6 +30,7 @@ jobs:
       - name: "Эксперименты"
         shell: bash
         run: |
+          exec > >(tee lab-report.txt) 2>&1
           SRC="$PWD/handoff/GitHub-RU-v2/app/src/main/java"
           AJ="$AJ"
           [ -n "$AJ" ] || AJ=$(echo "$ANDROID_HOME")/platforms/android-36/android.jar
@@ -57,3 +58,13 @@ jobs:
           rm -rf /tmp/l5; mkdir -p /tmp/l5
           javac -d /tmp/l5 -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -cE "error:" || true
           javac -d /tmp/l5b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -c "symbol:   class Object$" || true
+      - name: "Коммит отчёта лабы"
+        if: always()
+        run: |
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          mkdir -p handoff/restoration
+          cp lab-report.txt handoff/restoration/lab-report.txt
+          git add handoff/restoration/lab-report.txt
+          git commit -m "javac-lab отчёт [skip ci]" || true
+          git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks" || true
