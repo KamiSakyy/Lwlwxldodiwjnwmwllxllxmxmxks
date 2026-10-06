@@ -40,6 +40,9 @@ check('com.github.rudroid'.encode('utf-16-le') in man, 'в манифесте п
 check('com.github.android'.encode('utf-16-le') in man, 'в манифесте сохранён host com.github.android (oauth)')
 check('requiredSplitTypes'.encode('utf-16-le') not in man, 'атрибуты сплитов убраны (одиночный APK)')
 check('extractNativeLibs'.encode('utf-16-le') in man, 'extractNativeLibs присутствует')
+check('net.openid.appauth.RedirectUriReceiverActivity'.encode('utf-16-le') in man, 'приёмник oauth-редиректа на месте')
+check('DeepLinkAliasActivity'.encode('utf-16-le') in man, 'классический алиас диплинков сохранён')
+check('android.permission.POST_NOTIFICATIONS'.encode('utf-16-le') in man, 'разрешение POST_NOTIFICATIONS добавлено')
 
 blob = b''.join(z.read(n) for n in dexes)
 check(b'Lcom/github/rudroid/webview/GHRDownloadListener;' in blob, 'класс GHRDownloadListener внутри dex')
