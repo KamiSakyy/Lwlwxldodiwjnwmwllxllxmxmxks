@@ -24,7 +24,7 @@ def category(name: str) -> str:
     return "other"
 
 
-def report(path: Path) -> list[str]:
+def report(path: Path) -> tuple[list[str], str]:
     with zipfile.ZipFile(path) as archive:
         files = [entry for entry in archive.infolist() if not entry.is_dir()]
     groups: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
@@ -45,10 +45,23 @@ def report(path: Path) -> list[str]:
     ):
         lines.append(f"  - {name}: {raw_bytes} / {zipped_bytes} bytes; {count} files")
     lines.append("- Largest entries by stored size:")
-    for entry in sorted(files, key=lambda item: item.compress_size, reverse=True)[:15]:
+    largest = sorted(files, key=lambda item: item.compress_size, reverse=True)[:15]
+    for entry in largest:
         lines.append(f"  - `{entry.filename}`: {entry.compress_size} bytes stored")
     lines.append("")
-    return lines
+
+    category_summary = ", ".join(
+        f"{name}={values[1]}B/{values[2]} files"
+        for name, values in sorted(groups.items(), key=lambda item: item[1][1], reverse=True)
+    )
+    largest_summary = "; ".join(
+        f"{entry.filename}={entry.compress_size}B" for entry in largest[:6]
+    )
+    compact = (
+        f"{path.name}: {path.stat().st_size}B; {category_summary}; "
+        f"largest entries: {largest_summary}"
+    )
+    return lines, compact
 
 
 def main() -> int:
@@ -56,13 +69,16 @@ def main() -> int:
         print("usage: analyze_package_size.py ARCHIVE [ARCHIVE ...]", file=sys.stderr)
         return 2
     report_lines = ["# APKPure package size audit", ""]
+    compact_reports: list[str] = []
     for value in sys.argv[1:]:
         path = Path(value)
         if not path.is_file():
             print(f"Missing package archive: {path.name}", file=sys.stderr)
             return 2
         try:
-            report_lines.extend(report(path))
+            detailed, compact = report(path)
+            report_lines.extend(detailed)
+            compact_reports.append(compact)
         except (OSError, zipfile.BadZipFile) as exc:
             print(f"Cannot inspect {path.name}: {type(exc).__name__}", file=sys.stderr)
             return 1
@@ -72,6 +88,10 @@ def main() -> int:
     if summary:
         with Path(summary).open("a", encoding="utf-8") as stream:
             stream.write(output)
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        for message in compact_reports:
+            escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::notice title=APK size breakdown::{escaped}")
     return 0
 
 

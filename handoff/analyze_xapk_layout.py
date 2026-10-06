@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import shutil
@@ -44,6 +45,29 @@ def inner_apk_summary(outer: zipfile.ZipFile, member: zipfile.ZipInfo) -> tuple[
             return detail, abis
 
 
+def manifest_summary(data: object) -> str:
+    if not isinstance(data, dict):
+        return "APKPure manifest.json: top-level JSON is not an object"
+    keys = ",".join(sorted(str(key) for key in data)) or "none"
+    references: set[str] = set()
+
+    def visit(value: object) -> None:
+        if isinstance(value, dict):
+            for key, item in value.items():
+                if str(key).lower() in {"file", "filename", "path", "name"} and isinstance(item, str) and item.lower().endswith(".apk"):
+                    references.add(PurePosixPath(item).name)
+                visit(item)
+        elif isinstance(value, list):
+            for item in value:
+                visit(item)
+        elif isinstance(value, str) and value.lower().endswith(".apk"):
+            references.add(PurePosixPath(value).name)
+
+    visit(data)
+    declared = ",".join(sorted(references)) or "none"
+    return f"APKPure manifest.json: keys={keys}; APK references={declared}"
+
+
 def main() -> int:
     if len(sys.argv) != 2:
         print("usage: analyze_xapk_layout.py PACKAGE.xapk", file=sys.stderr)
@@ -65,6 +89,24 @@ def main() -> int:
             for member in apk_members:
                 detail, _ = inner_apk_summary(outer, member)
                 details.append(detail)
+            manifest_members = [
+                entry for entry in outer.infolist()
+                if not entry.is_dir() and PurePosixPath(entry.filename).name.lower() == "manifest.json"
+            ]
+            if len(manifest_members) == 1:
+                with outer.open(manifest_members[0], "r") as stream:
+                    manifest = json.load(stream)
+                details.append(manifest_summary(manifest))
+            elif len(manifest_members) > 1:
+                details.append(f"APKPure manifest.json: {len(manifest_members)} duplicate files")
+            other_members = [
+                f"{PurePosixPath(entry.filename).name}={entry.file_size}B"
+                for entry in outer.infolist()
+                if not entry.is_dir() and not entry.filename.lower().endswith(".apk")
+                and PurePosixPath(entry.filename).name.lower() != "manifest.json"
+            ]
+            if other_members:
+                details.append("Other XAPK entries: " + ", ".join(other_members[:12]))
     except (OSError, ValueError, zipfile.BadZipFile, RuntimeError) as exc:
         message = f"XAPK layout inspection failed: {type(exc).__name__}: {exc}"
         print(message, file=sys.stderr)
