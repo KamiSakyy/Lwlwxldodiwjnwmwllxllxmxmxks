@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class n implements u4.a {
-    public o A;
+    public oShadow A;
     public MenuItem.OnActionExpandListener B;
 
     /* renamed from: a, reason: collision with root package name */
@@ -111,11 +111,11 @@ public final class n implements u4.a {
     }
 
     @Override // u4.a
-    public final u4.a a(o oVar) {
+    public final u4.a a(oShadow oVar) {
         this.f30297z = null;
         this.A = oVar;
         this.f30285n.p(true);
-        o oVar2 = this.A;
+        oShadow oVar2 = this.A;
         if (oVar2 != null) {
             oVar2.f30298a = new kk.a(17, this);
             oVar2.f30299b.setVisibilityListener(oVar2);
@@ -153,7 +153,7 @@ public final class n implements u4.a {
     }
 
     public final boolean d() {
-        o oVar;
+        oShadow oVar;
         if ((this.f30296y & 8) != 0) {
             if (this.f30297z == null && (oVar = this.A) != null) {
                 this.f30297z = oVar.f30299b.onCreateActionView(this);
@@ -196,7 +196,7 @@ public final class n implements u4.a {
         if (view != null) {
             return view;
         }
-        o oVar = this.A;
+        oShadow oVar = this.A;
         if (oVar == null) {
             return null;
         }
@@ -334,7 +334,7 @@ public final class n implements u4.a {
 
     @Override // android.view.MenuItem
     public final boolean isVisible() {
-        o oVar = this.A;
+        oShadow oVar = this.A;
         return (oVar == null || !oVar.f30299b.overridesItemVisibility()) ? (this.f30295x & 8) == 0 : (this.f30295x & 8) == 0 && this.A.f30299b.isVisible();
     }
 

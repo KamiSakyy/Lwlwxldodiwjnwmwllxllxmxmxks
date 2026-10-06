@@ -59,7 +59,7 @@ public final class a implements u4.a {
     public int f30212p;
 
     @Override // u4.a
-    public final u4.a a(o oVar) {
+    public final u4.a a(oShadow oVar) {
         throw new UnsupportedOperationException();
     }
 

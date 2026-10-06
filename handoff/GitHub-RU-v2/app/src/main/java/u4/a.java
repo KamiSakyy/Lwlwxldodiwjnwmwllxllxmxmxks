@@ -3,11 +3,11 @@ package u4;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.view.MenuItem;
-import p.o;
+import p.oShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public interface a extends MenuItem {
-    a a(o oVar);
+    a a(oShadow oVar);
 
     @Override // android.view.MenuItem
     int getAlphabeticModifiers();

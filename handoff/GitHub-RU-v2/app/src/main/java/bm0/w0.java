@@ -1,7 +1,7 @@
 package bm0;
 
 import am0.b1;
-import am0.f1;
+import am0.f1Shadow;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -12,9 +12,9 @@ public final class w0 implements aa.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        f1 f1Var = null;
+        f1Shadow f1Var = null;
         while (eVar.r0(b) == 0) {
-            f1Var = (f1) aa.c.c(a1.a, false).a(eVar, wVar);
+            f1Var = (f1Shadow) aa.c.c(a1.a, false).a(eVar, wVar);
         }
         if (f1Var != null) {
             return new b1(f1Var);

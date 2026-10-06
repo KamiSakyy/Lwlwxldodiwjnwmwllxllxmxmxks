@@ -531,10 +531,10 @@ public class l implements Menu {
                 } catch (ActivityNotFoundException unused) {
                 }
             }
-            o oVar = nVar.A;
+            oShadow oVar = nVar.A;
             if (oVar == null || !oVar.f30299b.onPerformDefaultAction()) {
                 z10 = false;
-                o oVar2 = nVar.A;
+                oShadow oVar2 = nVar.A;
                 boolean z11 = oVar2 == null && oVar2.f30299b.hasSubMenu();
                 if (!nVar.d()) {
                     z10 |= nVar.expandActionView();
@@ -579,7 +579,7 @@ public class l implements Menu {
             }
         }
         z10 = true;
-        o oVar22 = nVar.A;
+        oShadow oVar22 = nVar.A;
         if (oVar22 == null) {
         }
         if (!nVar.d()) {

@@ -96,7 +96,7 @@ public abstract class e0 {
     public static final xn.h b(AiModelCapabilitiesResponse aiModelCapabilitiesResponse) {
         xn.i iVar;
         k71.k.g(aiModelCapabilitiesResponse, "<this>");
-        gz.b bVar_r7 = aiModelCapabilitiesResponse.a;
+        gz.bShadow bVar_r7 = aiModelCapabilitiesResponse.a;
         k71.k.g(bVar_r7, "<this>");
         int ordinal = bVar_r7.ordinal();
         if (ordinal == 0) {

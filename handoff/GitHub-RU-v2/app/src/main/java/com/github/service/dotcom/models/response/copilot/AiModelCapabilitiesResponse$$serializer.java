@@ -1,7 +1,7 @@
 package com.github.service.dotcom.models.response.copilot;
 
 import com.google.android.gms.internal.measurement.d5;
-import gz.b;
+import gz.bShadow;
 import j81.a;
 import k71.k;
 import k81.c1Shadow;
@@ -45,26 +45,26 @@ public final /* synthetic */ class AiModelCapabilitiesResponse$$serializer imple
         SerialDescriptor serialDescriptor = descriptor;
         a b = decoder.b(serialDescriptor);
         h[] hVarArr = AiModelCapabilitiesResponse.c;
-        b bVar = null;
+        bShadow bVar = null;
         boolean z = true;
         int i = 0;
         String str = null;
         while (z) {
-            int t = b.t(serialDescriptor);
+            int t = bShadow.t(serialDescriptor);
             if (t == -1) {
                 z = false;
             } else if (t == 0) {
-                bVar = (b) b.A(serialDescriptor, 0, (KSerializer) hVarArr[0].getValue(), bVar);
+                bVar = (bShadow) bShadow.A(serialDescriptor, 0, (KSerializer) hVarArr[0].getValue(), bVar);
                 i |= 1;
             } else {
                 if (t != 1) {
                     throw new UnknownFieldException(t);
                 }
-                str = b.r(serialDescriptor, 1);
+                str = bShadow.r(serialDescriptor, 1);
                 i |= 2;
             }
         }
-        b.g(serialDescriptor);
+        bShadow.g(serialDescriptor);
         return new AiModelCapabilitiesResponse(i, bVar, str);
     }
 
@@ -76,17 +76,17 @@ public final /* synthetic */ class AiModelCapabilitiesResponse$$serializer imple
         k.g(encoder, "encoder");
         k.g(aiModelCapabilitiesResponse, "value");
         String str = aiModelCapabilitiesResponse.b;
-        b bVar = aiModelCapabilitiesResponse.a;
+        bShadow bVar = aiModelCapabilitiesResponse.a;
         SerialDescriptor serialDescriptor = descriptor;
         d5 b = encoder.b(serialDescriptor);
         h[] hVarArr = AiModelCapabilitiesResponse.c;
-        if (b.X(serialDescriptor) || bVar != b.s) {
-            b.I(serialDescriptor, 0, (KSerializer) hVarArr[0].getValue(), bVar);
+        if (bShadow.X(serialDescriptor) || bVar != bShadow.s) {
+            bShadow.I(serialDescriptor, 0, (KSerializer) hVarArr[0].getValue(), bVar);
         }
-        if (b.X(serialDescriptor) || !k.b(str, "")) {
-            b.J(serialDescriptor, 1, str);
+        if (bShadow.X(serialDescriptor) || !k.b(str, "")) {
+            bShadow.J(serialDescriptor, 1, str);
         }
-        b.L(serialDescriptor);
+        bShadow.L(serialDescriptor);
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {

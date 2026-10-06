@@ -23,7 +23,7 @@ public final class e1 implements aa.i0 {
     }
 
     public final aa.p0 g() {
-        return aa.c.c(f1.a, false);
+        return aa.c.c(f1Shadow.a, false);
     }
 
     public final int hashCode() {

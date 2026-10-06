@@ -3,7 +3,7 @@ package p;
 import android.view.ActionProvider;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class o implements ActionProvider.VisibilityListener {
+public final class oShadow implements ActionProvider.VisibilityListener {
 
     /* renamed from: a, reason: collision with root package name */
     public kk.a f30298a;

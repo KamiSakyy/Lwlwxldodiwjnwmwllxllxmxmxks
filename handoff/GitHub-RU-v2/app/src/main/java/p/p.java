@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class pShadow extends FrameLayout implements o.c {
+public final class pShadow extends FrameLayout implements oShadow.c {
 
     /* renamed from: r, reason: collision with root package name */
     public CollapsibleActionView f30300r;
