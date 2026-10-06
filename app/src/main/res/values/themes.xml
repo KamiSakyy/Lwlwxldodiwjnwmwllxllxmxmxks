@@ -48,7 +48,6 @@
         <item name="android:enforceNavigationBarContrast">false</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="materialAlertDialogTheme">@style/Theme.MailGram.Dialog</item>
-        <item name="bottomSheetDialogTheme">@style/Theme.MailGram.Sheet</item>
         <item name="toolbarStyle">@style/Widget.MailGram.Toolbar</item>
         <item name="android:toolbarStyle">@style/Widget.MailGram.Toolbar</item>
     </style>
@@ -290,7 +289,7 @@
         <item name="trackThickness">3dp</item>
     </style>
 
-    <style name="Widget.MailGram.Input" parent="Widget.Material3.TextInputEditText">
+    <style name="Widget.MailGram.Input" parent="@android:style/Widget.EditText">
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textColorHint">@color/text_tertiary</item>
         <item name="android:textSize">16sp</item>
@@ -348,27 +347,6 @@
         <item name="colorSurfaceContainerHigh">@color/surface_alt</item>
         <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.MailGram.Dialog</item>
         <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.MailGram.Dialog</item>
-    </style>
-
-    <style name="Theme.MailGram.Sheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
-        <item name="bottomSheetStyle">@style/Widget.MailGram.BottomSheet</item>
-        <item name="android:colorBackgroundFloating">@color/surface</item>
-        <item name="android:textColorPrimary">@color/text_primary</item>
-        <item name="android:textColorSecondary">@color/text_secondary</item>
-        <item name="android:windowBackground">@color/surface</item>
-        <item name="colorOnSurface">@color/text_primary</item>
-        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
-        <item name="colorOutline">@color/divider</item>
-        <item name="colorPrimary">@color/brand</item>
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorSurfaceContainerHigh">@color/surface_alt</item>
-        <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.MailGram.Dialog</item>
-        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.MailGram.Dialog</item>
-    </style>
-
-    <style name="Widget.MailGram.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
-        <item name="android:background">@drawable/bg_sheet</item>
-        <item name="backgroundTint">@color/surface</item>
     </style>
 
     <style name="Theme.MailGram.Transparent" parent="Theme.MailGram">

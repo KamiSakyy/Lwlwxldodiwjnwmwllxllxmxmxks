@@ -61,7 +61,6 @@ THEME_COMMON = [
     ("android:enforceNavigationBarContrast", "false"),
     ("android:fontFamily", "sans-serif"),
     ("materialAlertDialogTheme", "@style/Theme.MailGram.Dialog"),
-    ("bottomSheetDialogTheme", "@style/Theme.MailGram.Sheet"),
     ("toolbarStyle", "@style/Widget.MailGram.Toolbar"),
     ("android:toolbarStyle", "@style/Widget.MailGram.Toolbar"),
 ]
@@ -267,7 +266,7 @@ STYLES = [
         ("app:trackColor", "@color/divider"),
         ("app:trackThickness", "3dp"),
     ]),
-    ("Widget.MailGram.Input", "Widget.Material3.TextInputEditText", [
+    ("Widget.MailGram.Input", "@android:style/Widget.EditText", [
         ("android:textColor", "@color/text_primary"),
         ("android:textColorHint", "@color/text_tertiary"),
         ("android:textSize", "16sp"),
@@ -337,15 +336,6 @@ def render_theme(night):
     lines.append('    <style name="Theme.MailGram.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">\n')
     for attr, value in sorted(DIALOG_COLORS.items()):
         lines.append('        <item name="%s">%s</item>\n' % (attr, value))
-    lines.append("    </style>\n\n")
-    lines.append('    <style name="Theme.MailGram.Sheet" parent="ThemeOverlay.Material3.BottomSheetDialog">\n')
-    lines.append('        <item name="bottomSheetStyle">@style/Widget.MailGram.BottomSheet</item>\n')
-    for attr, value in sorted(DIALOG_COLORS.items()):
-        lines.append('        <item name="%s">%s</item>\n' % (attr, value))
-    lines.append("    </style>\n\n")
-    lines.append('    <style name="Widget.MailGram.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">\n')
-    lines.append('        <item name="android:background">@drawable/bg_sheet</item>\n')
-    lines.append('        <item name="backgroundTint">@color/surface</item>\n')
     lines.append("    </style>\n\n")
     lines.append('    <style name="Theme.MailGram.Transparent" parent="Theme.MailGram">\n')
     lines.append('        <item name="android:windowBackground">@android:color/transparent</item>\n')
