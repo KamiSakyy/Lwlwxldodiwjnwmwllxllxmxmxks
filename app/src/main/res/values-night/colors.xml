@@ -56,6 +56,8 @@
     <color name="bubble_out_top_light">#FF2C2C2E</color>
     <color name="bubble_text_dark">#FFFFFFFF</color>
     <color name="bubble_time">#FF888888</color>
+    <color name="call_soft">#1A34C759</color>
+    <color name="circle_backdrop">#E0000000</color>
     <color name="danger">#FFFF3B30</color>
     <color name="danger_border">#4DFF3B30</color>
     <color name="danger_soft">#1AFF3B30</color>
@@ -103,6 +105,7 @@
     <color name="ripple_row">#FF111111</color>
     <color name="ripple_strong">#26FFFFFF</color>
     <color name="row_divider">#FF111111</color>
+    <color name="search_bar_border">#FF1A1A1A</color>
     <color name="search_border">#FF1A1A1A</color>
     <color name="selected_bubble">#330A84FF</color>
     <color name="soft_05">#0DFFFFFF</color>

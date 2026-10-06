@@ -23,6 +23,15 @@ public final class Prefs {
         return p(ctx).getString("theme", THEME_DARK);
     }
 
+    /** Режим «Не читать»: не отправляем собеседнику отметку о прочтении. */
+    public static boolean stealthRead(Context ctx) {
+        return p(ctx).getBoolean("stealth_read", false);
+    }
+
+    public static void setStealthRead(Context ctx, boolean value) {
+        p(ctx).edit().putBoolean("stealth_read", value).apply();
+    }
+
     public static void setTheme(Context ctx, String theme) {
         p(ctx).edit().putString("theme", theme).apply();
     }

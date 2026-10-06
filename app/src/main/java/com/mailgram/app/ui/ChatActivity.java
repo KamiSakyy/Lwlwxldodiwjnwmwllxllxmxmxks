@@ -138,6 +138,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         setContentView(R.layout.activity_chat);
         Ui.applyWallpaper(this, R.id.chat_root);
         Ui.applySystemBars(this, findViewById(R.id.chat_header), findViewById(R.id.input_bar));
+        Ui.padBottomForBars(list);
+        Ui.padTopForBars(findViewById(R.id.profile_header));
+        Ui.padBottomForBars(findViewById(R.id.profile_scroll));
+        Ui.padBottomForBars(findViewById(R.id.chat_sheet_panel));
+        Ui.padTopForBars(findViewById(R.id.encrypt_card));
 
         header = findViewById(R.id.chat_header);
         avatar = findViewById(R.id.chat_avatar);
@@ -157,6 +162,9 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         sendButton = findViewById(R.id.btn_send);
         micButton = findViewById(R.id.btn_mic);
         voiceBar = findViewById(R.id.voice_record_bar);
+        Ui.padBottomForBars(voiceBar);
+        Ui.padBottomForBars(findViewById(R.id.selection_bar));
+        Ui.padBottomForBars(replyBar);
         voiceTimer = findViewById(R.id.voice_timer);
         voiceHint = findViewById(R.id.voice_hint);
         liveWave = findViewById(R.id.voice_live_wave);
@@ -173,6 +181,9 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         findViewById(R.id.chat_back).setOnClickListener(v -> finishAfterTransition());
         findViewById(R.id.chat_menu_btn).setOnClickListener(v -> showSheet());
         findViewById(R.id.chat_search_btn).setOnClickListener(v -> toggleSearch());
+        findViewById(R.id.chat_call_btn).setOnClickListener(v ->
+                Ui.toast(this, getString(R.string.call_soon)));
+        findViewById(R.id.btn_circle).setOnClickListener(v -> openCircle());
         Anim.pressFeedback(avatar);
 
         adapter = new MessageAdapter(new MessageAdapter.Actions() {
@@ -705,7 +716,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             }
         }
         store.markRead(uid);
-        if (!unread.isEmpty()) SyncEngine.get(this).markReadOnServer(unread);
+        // «Не читать»: локально помечаем, но собеседнику отметку о прочтении не отправляем
+        if (!unread.isEmpty() && !Prefs.stealthRead(this)) {
+            SyncEngine.get(this).markReadOnServer(unread);
+        }
     }
 
     private String unreadAnchor(List<Msg> messages) {

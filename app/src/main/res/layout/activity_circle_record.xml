@@ -1,36 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Запись видеосообщения-«кружка»: превью по центру, таймер сверху, кнопки снизу. -->
+<!--
+  Запись «кружка» — .circle-recorder-modal из старого мессенджера:
+  фон rgba(0,0,0,.88), круг-превью 260px с рамкой 4px #fff,
+  таймер 18px, кнопки действий 52px (отмена #3a3a3c, отправка #ff3b30).
+-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/circle_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center">
-
-        <SurfaceView
-            android:id="@+id/circle_preview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center" />
-
-        <com.mailgram.app.media.CircleMaskView
-            android:id="@+id/circle_mask"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center" />
-    </FrameLayout>
+    android:background="@color/circle_backdrop">
 
     <TextView
         android:id="@+id/circle_timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center_horizontal"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/bg_video_chip"
         android:paddingStart="14dp"
         android:paddingTop="6dp"
@@ -41,29 +27,60 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/circle_cancel"
-        android:layout_width="52dp"
-        android:layout_height="52dp"
-        android:layout_gravity="bottom|start"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="56dp"
-        android:background="@drawable/bg_circle_btn_cancel"
-        android:contentDescription="@string/cancel"
-        android:padding="14dp"
-        android:src="@drawable/ic_close"
-        app:tint="@color/text_primary" />
+    <FrameLayout
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_circle_preview">
 
-    <ImageView
-        android:id="@+id/circle_stop"
-        android:layout_width="52dp"
-        android:layout_height="52dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="56dp"
-        android:background="@drawable/bg_circle_btn_stop"
-        android:contentDescription="@string/attach_circle"
-        android:padding="12dp"
-        android:src="@drawable/ic_stop_circle"
-        app:tint="@color/text_primary" />
+        <SurfaceView
+            android:id="@+id/circle_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.mailgram.app.media.CircleMaskView
+            android:id="@+id/circle_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/circle_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="28dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="40dp">
+
+        <ImageView
+            android:id="@+id/circle_cancel"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_circle_btn_cancel"
+            android:contentDescription="@string/cancel"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_close_small"
+            app:tint="@color/text_primary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/circle_stop"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_circle_btn_stop"
+            android:contentDescription="@string/send"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_send"
+            app:tint="@color/text_primary" />
+    </LinearLayout>
 </FrameLayout>

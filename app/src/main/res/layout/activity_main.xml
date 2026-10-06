@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Экран диалогов — перенос разметки старого мессенджера один в один:
-  шапка 56dp (#0d0d0d, линия #1c1c1c) с круглой кнопкой меню 40dp,
-  заголовок 20sp/900 с разрядкой 0.8, подпись 12sp #8e8e93,
-  поиск (padding 8/12, поле radius 12 #1c1c1e с рамкой #2a2a2c),
-  папки-пилюли (radius 16, активная #2c2c2e + рамка #3a3a3c),
-  список чатов и нижняя навигация 50dp (#0d0d0d, линия #1a1a1a).
-  Слева выезжает меню-панель: 82% ширины (max 320dp), фон #141416,
-  шапка меню 24/18 (#1c1c1e, линия #28282a), аватар 72dp, имя 18sp/700.
+  Экран диалогов — разметка один в один со старого мессенджера:
+  .header 56px (#0d0d0d, линия #1c1c1c): кнопка меню 40px (rgba(255,255,255,.08),
+  иконка 22px stroke 2.5), заголовок 20px/900 с разрядкой 0.8, подпись 12px #8e8e93,
+  кнопка шифрования 38px активная (rgba(255,255,255,.15), белая иконка 20px).
+  .search-bar-container: отступы 8/12, поле radius 12 (#1c1c1e, рамка #2a2a2c), иконка 18px.
+  #folderTabs: отступы 8/12, пилюли radius 16px.
+  .bottom-nav 50px: «Чаты», «Профиль», «Выход» — иконки 22px stroke 2, подпись 10px.
+  .drawer: 82% ширины, фон #141416, шапка 24/18 на #1c1c1e с линией #28282a,
+  аватар 72px, имя 18px/700, статус «в сети» 13px #34c759, пункты 20px-иконки.
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -21,28 +22,75 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/main_toolbar"
-            style="@style/Widget.MailGram.Toolbar"
+        <LinearLayout
+            android:id="@+id/main_header"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:background="@drawable/bg_nav_bar"
-            android:minHeight="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:paddingStart="12dp"
-            android:paddingEnd="6dp"
-            app:menu="@menu/menu_main"
-            app:navigationIcon="@drawable/ic_menu"
-            app:navigationIconTint="@color/text_primary"
-            app:subtitle="@string/app_name"
-            app:subtitleTextAppearance="@style/TextAppearance.MailGram.HeaderSubtitle"
-            app:title="@string/chats_title"
-            app:titleTextAppearance="@style/TextAppearance.MailGram.HeaderMain" />
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/main_menu_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_icon_circle_soft"
+                android:contentDescription="@string/menu"
+                android:padding="9dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu"
+                app:tint="@color/text_primary" />
+
+            <LinearLayout
+                android:id="@+id/main_title_box"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:letterSpacing="0.03"
+                    android:maxLines="1"
+                    android:text="@string/chats_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/main_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/online_now"
+                    android:textColor="@color/text_icon"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/main_encrypt_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_icon_circle_strong"
+                android:contentDescription="@string/settings_security"
+                android:padding="9dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_lock"
+                app:tint="@color/text_primary" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_nav_bar"
+            android:background="@drawable/bg_search_bar"
             android:orientation="vertical"
             android:paddingStart="12dp"
             android:paddingTop="8dp"
@@ -51,16 +99,17 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/bg_search_pill"
                 android:gravity="center_vertical"
+                android:minHeight="40dp"
                 android:orientation="horizontal"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp">
 
                 <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:layout_marginEnd="8dp"
                     android:contentDescription="@string/search"
                     android:src="@drawable/ic_search"
@@ -69,13 +118,14 @@
                 <EditText
                     android:id="@+id/search_input"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@null"
                     android:hint="@string/search_hint"
                     android:imeOptions="actionSearch"
                     android:inputType="text"
                     android:maxLines="1"
+                    android:minHeight="40dp"
                     android:textColor="@color/text_primary"
                     android:textColorHint="@color/text_muted"
                     android:textSize="14sp" />
@@ -129,7 +179,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:paddingBottom="21dp"
                 android:scrollbars="none" />
 
             <LinearLayout
@@ -153,7 +202,7 @@
                         android:layout_height="42dp"
                         android:layout_gravity="center"
                         android:contentDescription="@string/no_chats_title"
-                        android:src="@drawable/ic_chat"
+                        android:src="@drawable/ic_nav_chats"
                         app:tint="@color/brand" />
                 </FrameLayout>
 
@@ -195,14 +244,14 @@
                 android:layout_height="44dp"
                 android:layout_gravity="bottom|end"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="24dp"
                 android:contentDescription="@string/new_chat"
                 app:backgroundTint="@color/brand"
                 app:elevation="4dp"
                 app:fabCustomSize="44dp"
                 app:maxImageSize="20dp"
                 app:rippleColor="@color/ripple_strong"
-                app:srcCompat="@drawable/ic_edit"
+                app:srcCompat="@drawable/ic_edit_big"
                 app:tint="@color/text_on_accent" />
         </FrameLayout>
 
@@ -221,7 +270,7 @@
                     android:layout_width="22dp"
                     android:layout_height="22dp"
                     android:contentDescription="@string/chats_title"
-                    android:src="@drawable/ic_chat"
+                    android:src="@drawable/ic_nav_chats"
                     app:tint="@color/text_primary" />
 
                 <TextView
@@ -231,51 +280,35 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/nav_channels"
+                android:id="@+id/nav_profile"
                 style="@style/Widget.MailGram.NavItem">
 
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:contentDescription="@string/channel_messages"
-                    android:src="@drawable/ic_globe"
+                    android:contentDescription="@string/me"
+                    android:src="@drawable/ic_nav_profile"
                     app:tint="@color/text_muted" />
 
                 <TextView
                     style="@style/Widget.MailGram.NavLabel"
-                    android:text="@string/channel_messages" />
+                    android:text="@string/me" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/nav_contacts"
+                android:id="@+id/nav_logout"
                 style="@style/Widget.MailGram.NavItem">
 
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:contentDescription="@string/new_chat"
-                    android:src="@drawable/ic_person"
+                    android:contentDescription="@string/logout"
+                    android:src="@drawable/ic_nav_logout"
                     app:tint="@color/text_muted" />
 
                 <TextView
                     style="@style/Widget.MailGram.NavLabel"
-                    android:text="@string/new_chat" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/nav_settings"
-                style="@style/Widget.MailGram.NavItem">
-
-                <ImageView
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:contentDescription="@string/settings"
-                    android:src="@drawable/ic_settings"
-                    app:tint="@color/text_muted" />
-
-                <TextView
-                    style="@style/Widget.MailGram.NavLabel"
-                    android:text="@string/settings" />
+                    android:text="@string/logout" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -308,11 +341,28 @@
             android:paddingEnd="18dp"
             android:paddingBottom="24dp">
 
-            <com.mailgram.app.ui.AvatarView
-                android:id="@+id/drawer_avatar"
+            <FrameLayout
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                android:layout_marginBottom="4dp" />
+                android:layout_marginBottom="4dp">
+
+                <com.mailgram.app.ui.AvatarView
+                    android:id="@+id/drawer_avatar"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp" />
+
+                <ImageView
+                    android:id="@+id/drawer_avatar_edit"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/bg_white_circle"
+                    android:contentDescription="@string/me"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_camera"
+                    app:tint="@color/text_on_light" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/drawer_name"
@@ -327,25 +377,45 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/drawer_status"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="@color/text_dim"
-                android:textSize="13sp" />
-
-            <TextView
                 android:id="@+id/drawer_online"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:text="@string/online_now"
                 android:textColor="@color/success"
                 android:textSize="13sp"
                 android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/drawer_status_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/drawer_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_dim"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="6dp"
+                    android:contentDescription="@string/me"
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/text_dim" />
+            </LinearLayout>
         </LinearLayout>
 
         <ScrollView
+            android:id="@+id/drawer_scroll"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -361,137 +431,72 @@
                 android:paddingBottom="12dp">
 
                 <LinearLayout
-                    android:id="@+id/drawer_item_new_chat"
+                    android:id="@+id/drawer_item_stealth"
                     style="@style/Widget.MailGram.DrawerItem">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginEnd="14dp"
-                        android:contentDescription="@string/new_chat"
-                        android:src="@drawable/ic_edit"
+                        android:contentDescription="@string/drawer_stealth"
+                        android:src="@drawable/ic_eye_off"
                         app:tint="@color/text_dim" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/new_chat"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
+                        style="@style/Widget.MailGram.DrawerItemText"
+                        android:text="@string/drawer_stealth" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/drawer_item_contacts"
+                    android:id="@+id/drawer_item_sound"
                     style="@style/Widget.MailGram.DrawerItem">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginEnd="14dp"
-                        android:contentDescription="@string/contacts_title"
-                        android:src="@drawable/ic_person"
+                        android:contentDescription="@string/drawer_sound"
+                        android:src="@drawable/ic_bell"
                         app:tint="@color/text_dim" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/contacts_title"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
+                        style="@style/Widget.MailGram.DrawerItemText"
+                        android:text="@string/drawer_sound" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/drawer_item_invite"
+                    android:id="@+id/drawer_item_encrypt"
                     style="@style/Widget.MailGram.DrawerItem">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginEnd="14dp"
-                        android:contentDescription="@string/invite_contact"
-                        android:src="@drawable/ic_send"
+                        android:contentDescription="@string/drawer_encrypt"
+                        android:src="@drawable/ic_shield"
                         app:tint="@color/text_dim" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/invite_contact"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
+                        style="@style/Widget.MailGram.DrawerItemText"
+                        android:text="@string/drawer_encrypt" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/drawer_item_notifications"
+                    android:id="@+id/drawer_item_pin"
                     style="@style/Widget.MailGram.DrawerItem">
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginEnd="14dp"
-                        android:contentDescription="@string/settings_notifications"
-                        android:src="@drawable/ic_notifications"
-                        app:tint="@color/text_dim" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/settings_notifications"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/drawer_item_security"
-                    style="@style/Widget.MailGram.DrawerItem">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginEnd="14dp"
-                        android:contentDescription="@string/settings_security"
+                        android:contentDescription="@string/app_lock"
                         android:src="@drawable/ic_lock"
                         app:tint="@color/text_dim" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/settings_security"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
+                        style="@style/Widget.MailGram.DrawerItemText"
+                        android:text="@string/app_lock" />
                 </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/drawer_item_my_key"
-                    style="@style/Widget.MailGram.DrawerItem">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginEnd="14dp"
-                        android:contentDescription="@string/my_key"
-                        android:src="@drawable/ic_key"
-                        app:tint="@color/text_dim" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/my_key"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="6dp"
-                    android:background="@color/row_divider" />
 
                 <LinearLayout
                     android:id="@+id/drawer_item_settings"
@@ -506,12 +511,8 @@
                         app:tint="@color/text_dim" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/settings"
-                        android:textColor="@color/text_drawer"
-                        android:textSize="15sp" />
+                        style="@style/Widget.MailGram.DrawerItemText"
+                        android:text="@string/settings" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -523,16 +524,12 @@
                         android:layout_height="20dp"
                         android:layout_marginEnd="14dp"
                         android:contentDescription="@string/logout"
-                        android:src="@drawable/ic_logout"
-                        app:tint="@color/danger" />
+                        android:src="@drawable/ic_logout_small"
+                        app:tint="@color/text_dim" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/logout"
-                        android:textColor="@color/danger"
-                        android:textSize="15sp" />
+                        style="@style/Widget.MailGram.DrawerItemText"
+                        android:text="@string/drawer_logout" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

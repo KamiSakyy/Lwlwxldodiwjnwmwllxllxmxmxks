@@ -33,25 +33,98 @@ public final class Ui {
     private Ui() {
     }
 
-    /** Края экрана: панель состояния сверху и жесты/клавиатура снизу. */
+    /**
+     * Настоящий edge-to-edge: контент рисуется под панелью состояния и под панелью
+     * навигации (обе прозрачные, системные панели не меняем), а отступы внутрь
+     * добавляются только элементам интерфейса — сверху шапке, снизу нижней панели.
+     * Клавиатура учитывается так же, как нижняя панель: поле ввода поднимается над ней.
+     */
     public static void applySystemBars(Activity activity, View top, View bottom) {
         Window window = activity.getWindow();
         WindowCompat.setDecorFitsSystemWindows(window, false);
-        View root = activity.findViewById(android.R.id.content);
+        window.setStatusBarColor(Color.TRANSPARENT);
+        window.setNavigationBarColor(Color.TRANSPARENT);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+            window.setStatusBarContrastEnforced(false);
+            window.setNavigationBarContrastEnforced(false);
+        }
+        final View root = activity.findViewById(android.R.id.content);
+        if (root == null) return;
+        final int topBase = top == null ? 0 : top.getPaddingTop();
+        final int bottomBase = bottom == null ? 0 : bottom.getPaddingBottom();
         ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
             Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
             if (top != null) {
-                top.setPadding(top.getPaddingLeft(), bars.top, top.getPaddingRight(), top.getPaddingBottom());
+                top.setPadding(top.getPaddingLeft(), topBase + bars.top,
+                        top.getPaddingRight(), top.getPaddingBottom());
             }
             if (bottom != null) {
-                int bottomPx = Math.max(bars.bottom, ime.bottom);
+                int extra = Math.max(bars.bottom, ime.bottom);
                 bottom.setPadding(bottom.getPaddingLeft(), bottom.getPaddingTop(),
-                        bottom.getPaddingRight(), bottomPx);
+                        bottom.getPaddingRight(), bottomBase + extra);
             }
             return insets;
         });
         ViewCompat.requestApplyInsets(root);
+    }
+
+    /** Добавляет списку нижний отступ под панель навигации: последний элемент не прячется. */
+    public static void padBottomForBars(final View view) {
+        if (view == null) return;
+        final int base = view.getPaddingBottom();
+        ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(v.getPaddingLeft(), v.getPaddingTop(), v.getPaddingRight(),
+                    base + bars.bottom);
+            return insets;
+        });
+        ViewCompat.requestApplyInsets(view);
+    }
+
+    /** Нижний отступ (margin) для элемента поверх панели навигации: фон не растягивается. */
+    public static void liftBottomForBars(final View view, final int extraDp) {
+        if (!(view.getLayoutParams() instanceof android.view.ViewGroup.MarginLayoutParams)) return;
+        final int base = ((android.view.ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
+        final int extra = dp(view.getContext(), extraDp);
+        ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            android.view.ViewGroup.MarginLayoutParams lp =
+                    (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
+            lp.bottomMargin = base + extra + bars.bottom;
+            v.setLayoutParams(lp);
+            return insets;
+        });
+        ViewCompat.requestApplyInsets(view);
+    }
+
+    /** Верхний отступ (margin) под панель состояния: фон элемента не растягивается. */
+    public static void marginTopForBars(final View view, final int extraDp) {
+        if (!(view.getLayoutParams() instanceof android.view.ViewGroup.MarginLayoutParams)) return;
+        final int base = ((android.view.ViewGroup.MarginLayoutParams) view.getLayoutParams()).topMargin;
+        final int extra = dp(view.getContext(), extraDp);
+        ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            android.view.ViewGroup.MarginLayoutParams lp =
+                    (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
+            lp.topMargin = base + extra + bars.top;
+            v.setLayoutParams(lp);
+            return insets;
+        });
+        ViewCompat.requestApplyInsets(view);
+    }
+
+    /** Верхний отступ под панель состояния для экранов без шапки. */
+    public static void padTopForBars(final View view) {
+        if (view == null) return;
+        final int base = view.getPaddingTop();
+        ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(v.getPaddingLeft(), base + bars.top, v.getPaddingRight(),
+                    v.getPaddingBottom());
+            return insets;
+        });
+        ViewCompat.requestApplyInsets(view);
     }
 
     /** Поднимает элемент (например, кнопку) над панелью навигации. */

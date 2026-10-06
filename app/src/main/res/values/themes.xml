@@ -41,8 +41,6 @@
         <item name="colorAccent">@color/brand</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActivityTransitions">true</item>
-        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAnimationStyle">@style/Animation.MailGram</item>
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:enforceStatusBarContrast">false</item>
@@ -325,6 +323,13 @@
         <item name="android:background">@drawable/bg_row_ripple_round</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.MailGram.DrawerItemText" parent="TextAppearance.MailGram.DrawerItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_drawer</item>
     </style>
 
     <style name="Widget.MailGram.Sheet" parent="">

@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Anim.springIn(findViewById(R.id.login_logo), 0.86f, 16f);
-        Ui.applySystemBars(this, null, findViewById(R.id.login_root));
+        Ui.applySystemBars(this, findViewById(R.id.login_root), findViewById(R.id.login_root));
 
         googleButton = findViewById(R.id.btn_google);
         progress = findViewById(R.id.login_progress);

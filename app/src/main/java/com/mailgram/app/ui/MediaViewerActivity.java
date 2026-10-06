@@ -61,6 +61,7 @@ public class MediaViewerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_media_viewer);
+        Ui.applySystemBars(this, findViewById(R.id.viewer_toolbar), findViewById(R.id.viewer_bottom));
         handler = new android.os.Handler(getMainLooper());
 
         String chatUid = getIntent().getStringExtra(EXTRA_CHAT);

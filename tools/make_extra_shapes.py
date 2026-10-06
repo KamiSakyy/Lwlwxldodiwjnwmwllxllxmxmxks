@@ -185,6 +185,45 @@ FILES["drawable/bg_context_menu.xml"] = """<shape {ns} android:shape="rectangle"
 """.format(ns=NS)
 
 
+FILES["drawable/bg_icon_circle_strong.xml"] = """<ripple {ns} android:color="@color/ripple_strong">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/soft_15" />
+        </shape>
+    </item>
+</ripple>
+""".format(ns=NS)
+
+FILES["drawable/bg_white_circle.xml"] = """<shape {ns} android:shape="oval">
+    <solid android:color="@color/text_primary" />
+</shape>
+""".format(ns=NS)
+
+FILES["drawable/bg_search_bar.xml"] = """<layer-list {ns}>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/nav_bar" />
+        </shape>
+    </item>
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:height="1dp" />
+            <solid android:color="@color/search_bar_border" />
+        </shape>
+    </item>
+</layer-list>
+""".format(ns=NS)
+
+
+FILES["drawable/bg_call_btn.xml"] = """<ripple {ns} android:color="@color/soft_15">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/call_soft" />
+        </shape>
+    </item>
+</ripple>
+""".format(ns=NS)
+
 def main():
     for rel, body in FILES.items():
         path = os.path.join(RES, rel)

@@ -82,12 +82,15 @@ def main():
                     if not DIM_RE.match(value):
                         problems.append('%s: android:%s="%s" — ожидается размер или match_parent/wrap_content'
                                         % (path, attr, value))
+                elif attr in ('strokeWidth', 'strokeMiterLimit', 'viewportWidth', 'viewportHeight',
+                              'fillAlpha', 'alpha'):
+                    continue
                 elif attr in ('layout_margin', 'layout_marginStart', 'layout_marginEnd', 'layout_marginTop',
                               'layout_marginBottom', 'padding', 'paddingStart', 'paddingEnd', 'paddingTop',
                               'paddingBottom', 'textSize', 'layout_marginLeft', 'layout_marginRight',
-                              'cornerRadius', 'radius', 'strokeWidth', 'width', 'height'):
+                              'cornerRadius', 'radius', 'width', 'height'):
                     if not DIM_RE.match(value) and not value.startswith('@') and not value.startswith('?'):
-                        problems.append('%s: android:%s="%s" — ожидается размер (dp/sp/%)' % (path, attr, value))
+                        problems.append('%s: android:%s="%s" — ожидается размер (dp/sp/procent)' % (path, attr, value))
     for p in problems:
         print(p)
     print('ошибок значений:', len(problems))

@@ -52,8 +52,6 @@ THEME_ITEMS = [
     # прочее
     ("android:windowDrawsSystemBarBackgrounds", "true"),
     ("android:windowNoTitle", "true"),
-    ("android:windowActivityTransitions", "true"),
-    ("android:windowContentTransitions", "true"),
     ("android:windowAnimationStyle", "@style/Animation.MailGram"),
     ("android:windowLayoutInDisplayCutoutMode", "shortEdges"),
     ("android:enforceStatusBarContrast", "false"),
@@ -204,6 +202,12 @@ WIDGETS = [
         ("android:paddingStart", "14dp"), ("android:paddingEnd", "14dp"),
         ("android:background", "@drawable/bg_row_ripple_round"),
         ("android:clickable", "true"), ("android:focusable", "true"),
+    ]),
+    ("Widget.MailGram.DrawerItemText", "TextAppearance.MailGram.DrawerItem", [
+        ("android:layout_width", "0dp"),
+        ("android:layout_height", "wrap_content"),
+        ("android:layout_weight", "1"),
+        ("android:textColor", "@color/text_drawer"),
     ]),
     ("Widget.MailGram.Sheet", "", [
         ("android:background", "@drawable/bg_sheet"),

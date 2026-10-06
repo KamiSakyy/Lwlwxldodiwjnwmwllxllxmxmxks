@@ -278,4 +278,15 @@
     <string name="verified_short">Ключ отмечен как проверенный</string>
     <string name="unverified_short">Ключ ещё не проверен</string>
     <string name="login_ready">Подключение готово — можно входить</string>
+    <string name="menu">Меню</string>
+    <string name="drawer_stealth">Режим «Не читать»</string>
+    <string name="drawer_sound">Звук уведомлений</string>
+    <string name="drawer_encrypt">Шифрование E2EE</string>
+    <string name="drawer_logout">Выйти из аккаунта</string>
+    <string name="stealth_on">Режим «Не читать» включён</string>
+    <string name="stealth_off">Режим «Не читать» выключен</string>
+    <string name="sound_on">Звук уведомлений включён</string>
+    <string name="sound_off">Звук уведомлений выключен</string>
+    <string name="call_soon">Звонки появятся позже</string>
+    <string name="call">Позвонить</string>
 </resources>

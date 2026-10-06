@@ -22,7 +22,6 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.mailgram.app.R;
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private static final int REQ_NOTIFICATIONS = 41;
 
-    private MaterialToolbar toolbar;
     private RecyclerView list;
     private View emptyView;
     private LinearProgressIndicator syncBar;
@@ -60,18 +58,17 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         setContentView(R.layout.activity_main);
         Ui.applyWallpaper(this, R.id.main_root);
-        Ui.applySystemBars(this, findViewById(R.id.main_toolbar),
-                findViewById(R.id.recycler_chats));
+        Ui.applySystemBars(this, findViewById(R.id.main_header), findViewById(R.id.bottom_nav));
+        Ui.padBottomForBars(findViewById(R.id.recycler_chats));
 
-        toolbar = findViewById(R.id.main_toolbar);
         list = findViewById(R.id.recycler_chats);
         emptyView = findViewById(R.id.empty_view);
         syncBar = findViewById(R.id.sync_bar);
         searchBar = findViewById(R.id.search_bar);
         searchInput = findViewById(R.id.search_input);
 
-        toolbar.setSubtitle(Auth.account(this));
-        toolbar.setOnMenuItemClickListener(this::onMenu);
+        ((TextView) findViewById(R.id.main_title)).setText(R.string.chats_title);
+        ((TextView) findViewById(R.id.main_subtitle)).setText(Auth.account(this));
 
         adapter = new ChatListAdapter(new ChatListAdapter.Actions() {
             @Override
@@ -137,73 +134,87 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         refresh();
     }
 
-    /** Меню-панель слева — как .drawer в старом мессенджере. */
+    /** Меню-панель слева — .drawer из старого мессенджера: 82% ширины, до 320dp. */
     private void setUpDrawer() {
-        toolbar.setNavigationOnClickListener(v -> toggleDrawer(true));
         final View overlay = findViewById(R.id.drawer_overlay);
         final View panel = findViewById(R.id.drawer_panel);
         if (overlay == null || panel == null) return;
+        int screen = getResources().getDisplayMetrics().widthPixels;
+        android.view.ViewGroup.LayoutParams lp = panel.getLayoutParams();
+        lp.width = Math.min(Ui.dp(this, 320), (int) (screen * 0.82f));
+        panel.setLayoutParams(lp);
+        findViewById(R.id.main_menu_btn).setOnClickListener(v -> toggleDrawer(true));
+        findViewById(R.id.main_title_box).setOnClickListener(v -> toggleDrawer(true));
         overlay.setOnClickListener(v -> toggleDrawer(false));
         String account = Auth.account(this);
         String name = account == null || account.isEmpty() ? getString(R.string.me) : account;
         AvatarView drawerAvatar = findViewById(R.id.drawer_avatar);
         if (drawerAvatar != null) drawerAvatar.setName(name);
         ((TextView) findViewById(R.id.drawer_name)).setText(name);
-        ((TextView) findViewById(R.id.drawer_status)).setText(R.string.app_name);
         ((TextView) findViewById(R.id.drawer_online)).setText(R.string.online_now);
-        findViewById(R.id.drawer_item_new_chat).setOnClickListener(v -> {
-            toggleDrawer(false);
-            newChatDialog();
+        ((TextView) findViewById(R.id.drawer_status)).setText(R.string.app_name);
+
+        findViewById(R.id.drawer_item_stealth).setOnClickListener(v -> {
+            boolean on = !Prefs.stealthRead(this);
+            Prefs.setStealthRead(this, on);
+            Ui.toast(this, getString(on ? R.string.stealth_on : R.string.stealth_off));
         });
-        findViewById(R.id.drawer_item_contacts).setOnClickListener(v -> {
-            toggleDrawer(false);
-            newChatDialog();
-        });
-        findViewById(R.id.drawer_item_invite).setOnClickListener(v -> {
-            toggleDrawer(false);
-            shareInvite();
+        findViewById(R.id.drawer_item_sound).setOnClickListener(v -> {
+            boolean on = !Prefs.notifications(this);
+            Prefs.setNotifications(this, on);
+            Ui.toast(this, getString(on ? R.string.sound_on : R.string.sound_off));
         });
         View.OnClickListener toSettings = v -> {
             toggleDrawer(false);
             openSettings();
         };
-        findViewById(R.id.drawer_item_notifications).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_item_security).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_item_my_key).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_encrypt).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_pin).setOnClickListener(toSettings);
         findViewById(R.id.drawer_item_settings).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_item_logout).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_avatar_edit).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_status_row).setOnClickListener(toSettings);
+        findViewById(R.id.main_encrypt_btn).setOnClickListener(toSettings);
+        Ui.padTopForBars(findViewById(R.id.drawer_header));
+        Ui.padBottomForBars(findViewById(R.id.drawer_scroll));
+        findViewById(R.id.drawer_item_logout).setOnClickListener(v -> {
+            toggleDrawer(false);
+            logoutDialog();
+        });
     }
 
     private void openSettings() {
         startActivity(new Intent(this, SettingsActivity.class));
     }
 
-    /** Приглашение: свой публичный ключ можно переслать в любом мессенджере. */
-    private void shareInvite() {
-        String key = "";
-        try {
-            key = com.mailgram.app.crypto.B64.str(
-                    com.mailgram.app.crypto.Identity.publicKeyRaw(this));
-        } catch (Exception ignored) {
-        }
-        Intent send = new Intent(Intent.ACTION_SEND);
-        send.setType("text/plain");
-        send.putExtra(Intent.EXTRA_TEXT, getString(R.string.invite_share, key));
-        try {
-            startActivity(Intent.createChooser(send, getString(R.string.invite_title)));
-        } catch (Exception e) {
-            Ui.toast(this, getString(R.string.error_generic, getString(R.string.invite_title)));
-        }
+    /** Выход из аккаунта: чистим переписку, ключи и сессию. */
+    private void logoutDialog() {
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.logout_title)
+                .setMessage(R.string.logout_text)
+                .setNegativeButton(R.string.cancel, null)
+                .setPositiveButton(R.string.logout, (d, w) -> {
+                    SyncService.stop(this);
+                    com.mailgram.app.sync.Alarms.cancel(this);
+                    Store store = Store.get(this);
+                    for (Chat chat : store.chats()) store.removeChat(chat.uid);
+                    Auth.signOut(this, true);
+                    com.mailgram.app.crypto.Identity.destroy(this);
+                    com.mailgram.app.crypto.RatchetStore.wipeAll(this);
+                    startActivity(new Intent(this, LoginActivity.class)
+                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                    finish();
+                })
+                .show();
     }
 
+    /** Нижняя навигация — .bottom-nav: «Чаты», «Профиль», «Выход». */
     private void setUpBottomNav() {
         findViewById(R.id.nav_chats).setOnClickListener(v -> {
-            if (!list.canScrollVertically(-1)) refresh();
             list.smoothScrollToPosition(0);
+            refresh();
         });
-        findViewById(R.id.nav_channels).setOnClickListener(v -> searchMessagesDialog());
-        findViewById(R.id.nav_contacts).setOnClickListener(v -> newChatDialog());
-        findViewById(R.id.nav_settings).setOnClickListener(v -> openSettings());
+        findViewById(R.id.nav_profile).setOnClickListener(v -> toggleDrawer(true));
+        findViewById(R.id.nav_logout).setOnClickListener(v -> logoutDialog());
     }
 
     private void toggleDrawer(final boolean open) {
@@ -215,7 +226,9 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             panel.setVisibility(View.VISIBLE);
             overlay.setAlpha(0f);
             overlay.animate().alpha(1f).setDuration(250L).start();
-            panel.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.drawer_in));
+            android.view.animation.Animation in =
+                    android.view.animation.AnimationUtils.loadAnimation(this, R.anim.drawer_in);
+            panel.startAnimation(in);
         } else {
             overlay.animate().alpha(0f).setDuration(200L)
                     .withEndAction(() -> overlay.setVisibility(View.GONE)).start();
@@ -319,7 +332,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         adapter.submit(Store.get(this).sortedChats());
         updateEmpty();
         int unread = Store.get(this).totalUnread();
-        toolbar.setSubtitle(unread > 0
+        ((TextView) findViewById(R.id.main_subtitle)).setText(unread > 0
                 ? Auth.account(this) + " · " + getString(R.string.unread, unread)
                 : Auth.account(this));
     }
@@ -360,18 +373,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void openChat(Chat chat) {
-        Intent intent = new Intent(this, ChatActivity.class)
-                .putExtra(ChatActivity.EXTRA_CHAT_UID, chat.uid);
-        String name = "avatar_" + chat.uid;
-        View avatarView = list.findViewWithTag(name);
-        if (avatarView != null && android.os.Build.VERSION.SDK_INT >= 21) {
-            intent.putExtra(ChatActivity.EXTRA_SHARED_AVATAR, name);
-            android.app.ActivityOptions options =
-                    android.app.ActivityOptions.makeSceneTransitionAnimation(this, avatarView, name);
-            startActivity(intent, options.toBundle());
-            return;
-        }
-        startActivity(intent);
+        startActivity(new Intent(this, ChatActivity.class)
+                .putExtra(ChatActivity.EXTRA_CHAT_UID, chat.uid));
     }
 
     /** Стеклянные фильтры списка: все, непрочитанные, закреплённые (как нижняя панель Telegram 12.4). */

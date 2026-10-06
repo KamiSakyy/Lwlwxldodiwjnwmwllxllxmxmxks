@@ -36,7 +36,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/bg_icon_circle_soft"
                 android:contentDescription="@string/back"
-                android:padding="10dp"
+                android:padding="11dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_back"
                 app:tint="@color/text_primary" />
@@ -75,6 +75,18 @@
                     android:textSize="12sp" />
             </LinearLayout>
 
+            <ImageView
+                android:id="@+id/chat_call_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_call_btn"
+                android:contentDescription="@string/call"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_call"
+                app:tint="@color/success" />
+
             <ImageButton
                 android:id="@+id/chat_search_btn"
                 android:layout_width="38dp"
@@ -83,15 +95,15 @@
                 android:contentDescription="@string/search"
                 android:padding="9dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_search"
-                app:tint="@color/text_dim" />
+                android:src="@drawable/ic_search_chat"
+                app:tint="@color/text_primary" />
 
             <ImageButton
                 android:id="@+id/chat_menu_btn"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:layout_marginStart="6dp"
-                android:background="@drawable/bg_icon_circle_faint"
+                android:background="@drawable/bg_icon_circle_strong"
                 android:contentDescription="@string/settings"
                 android:padding="9dp"
                 android:scaleType="fitCenter"
@@ -217,9 +229,17 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/pinned_title"
+                    android:src="@drawable/ic_pin"
+                    app:tint="@color/brand" />
+
                 <TextView
                     android:id="@+id/chat_pinned_title"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:maxLines="1"
@@ -565,6 +585,18 @@
             </FrameLayout>
 
             <ImageButton
+                android:id="@+id/btn_circle"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_send"
+                android:contentDescription="@string/attach_circle"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_circle_video"
+                app:tint="@color/text_on_light" />
+
+            <ImageButton
                 android:id="@+id/btn_mic"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
@@ -602,6 +634,7 @@
         android:visibility="gone">
 
         <LinearLayout
+            android:id="@+id/chat_sheet_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_sheet"
@@ -668,6 +701,7 @@
         android:visibility="gone">
 
         <LinearLayout
+            android:id="@+id/profile_header"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/bg_nav_bar"
@@ -682,7 +716,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/bg_icon_circle_soft"
                 android:contentDescription="@string/back"
-                android:padding="10dp"
+                android:padding="11dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_back"
                 app:tint="@color/text_primary" />
@@ -699,6 +733,7 @@
         </LinearLayout>
 
         <ScrollView
+            android:id="@+id/profile_scroll"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -806,6 +841,7 @@
         android:visibility="gone">
 
         <LinearLayout
+            android:id="@+id/encrypt_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_modal"

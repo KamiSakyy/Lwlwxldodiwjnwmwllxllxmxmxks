@@ -36,7 +36,7 @@ public class LockActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_lock);
         Ui.applyWallpaper(this, R.id.lock_root);
-        Ui.applySystemBars(this, null, findViewById(R.id.lock_root));
+        Ui.applySystemBars(this, findViewById(R.id.lock_root), findViewById(R.id.lock_root));
         dots = findViewById(R.id.lock_dots);
         title = findViewById(R.id.lock_title);
         com.mailgram.app.ui.AvatarView avatar = findViewById(R.id.lock_avatar);

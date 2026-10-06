@@ -175,6 +175,10 @@ COLORS = {
     "switch_track": "#FF34C759",
     "border_strong": "#FF3A3A3C",
     "brand_dark": "#FF0A6FDB",
+    "soft_15": "#26FFFFFF",
+    "search_bar_border": "#FF1A1A1A",
+    "circle_backdrop": "#E0000000",
+    "call_soft": "#1A34C759",
 }
 
 

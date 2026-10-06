@@ -38,6 +38,7 @@ public class SetupOauthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_setup);
         Ui.applySystemBars(this, findViewById(R.id.setup_toolbar),
                 findViewById(R.id.setup_root));
+        Ui.padBottomForBars(findViewById(R.id.setup_root));
 
         MaterialToolbar toolbar = findViewById(R.id.setup_toolbar);
         toolbar.setNavigationOnClickListener(v -> finish());
