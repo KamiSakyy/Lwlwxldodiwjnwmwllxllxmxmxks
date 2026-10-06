@@ -23,7 +23,8 @@
         <LinearLayout
             android:id="@+id/chat_header"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
             android:background="@drawable/bg_nav_bar"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -806,7 +807,8 @@
         <LinearLayout
             android:id="@+id/profile_header"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
             android:background="@drawable/bg_nav_bar"
             android:gravity="center_vertical"
             android:orientation="horizontal"

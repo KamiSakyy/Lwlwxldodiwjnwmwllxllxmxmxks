@@ -78,8 +78,8 @@ public class MediaViewerActivity extends AppCompatActivity {
         toolbar.setSubtitle(subtitle());
         Anim.fadeIn(findViewById(R.id.viewer_toolbar), 260L, 0L);
         Anim.fadeIn(findViewById(R.id.viewer_bottom), 260L, 60L);
-        findViewById(R.id.viewer_share).setOnClickListener(v -> share());
-        findViewById(R.id.viewer_save).setOnClickListener(v -> save());
+        findViewById(R.id.viewer_share).setOnClickListener(Ui.tap(v -> share()));
+        findViewById(R.id.viewer_save).setOnClickListener(Ui.tap(v -> save()));
 
         byte[] data = MediaUtil.decode(msg.mediaB64);
         String suffix = msg.isVideo() ? ".mp4" : (msg.isVoice() ? ".m4a" : "");
@@ -265,8 +265,8 @@ public class MediaViewerActivity extends AppCompatActivity {
                     android.widget.Toast.LENGTH_SHORT).show();
             return;
         }
-        playButton.setOnClickListener(v -> togglePlay());
-        findViewById(R.id.viewer_voice_box).setOnClickListener(v -> togglePlay());
+        playButton.setOnClickListener(Ui.tap(v -> togglePlay()));
+        findViewById(R.id.viewer_voice_box).setOnClickListener(Ui.tap(v -> togglePlay()));
     }
 
     private void togglePlay() {

@@ -138,7 +138,6 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         setContentView(R.layout.activity_chat);
         Ui.applyWallpaper(this, R.id.chat_root);
         Ui.applySystemBars(this, findViewById(R.id.chat_header), findViewById(R.id.input_bar));
-        Ui.padBottomForBars(list);
         Ui.padTopForBars(findViewById(R.id.profile_header));
         Ui.padBottomForBars(findViewById(R.id.profile_scroll));
         Ui.padBottomForBars(findViewById(R.id.chat_sheet_panel));
@@ -149,6 +148,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         titleView = findViewById(R.id.chat_title);
         subtitleView = findViewById(R.id.chat_subtitle);
         list = findViewById(R.id.recycler_messages);
+        Ui.padBottomForBars(list);
         input = findViewById(R.id.input_edit);
         searchEdit = findViewById(R.id.chat_search_edit);
         searchBar = findViewById(R.id.chat_search_bar);
@@ -178,12 +178,12 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             avatar.setTransitionName(sharedAvatar);
             androidx.core.view.ViewCompat.setTransitionName(avatar, sharedAvatar);
         }
-        findViewById(R.id.chat_back).setOnClickListener(v -> finishAfterTransition());
-        findViewById(R.id.chat_menu_btn).setOnClickListener(v -> showSheet());
-        findViewById(R.id.chat_search_btn).setOnClickListener(v -> toggleSearch());
-        findViewById(R.id.chat_call_btn).setOnClickListener(v ->
-                Ui.toast(this, getString(R.string.call_soon)));
-        findViewById(R.id.btn_circle).setOnClickListener(v -> openCircle());
+        findViewById(R.id.chat_back).setOnClickListener(Ui.tap(v -> finish()));
+        findViewById(R.id.chat_menu_btn).setOnClickListener(Ui.tap(v -> showSheet()));
+        findViewById(R.id.chat_search_btn).setOnClickListener(Ui.tap(v -> toggleSearch()));
+        findViewById(R.id.chat_call_btn).setOnClickListener(Ui.tap(v ->
+                Ui.toast(this, getString(R.string.call_soon))));
+        findViewById(R.id.btn_circle).setOnClickListener(Ui.tap(v -> openCircle()));
         Anim.pressFeedback(avatar);
 
         adapter = new MessageAdapter(new MessageAdapter.Actions() {
@@ -255,32 +255,32 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             }
         });
 
-        sendButton.setOnClickListener(v -> {
+        sendButton.setOnClickListener(Ui.tap(v -> {
             Anim.haptic(v, false);
             sendMessage();
-        });
+        }));
         final View emojiButton = findViewById(R.id.btn_emoji);
-        emojiButton.setOnClickListener(v -> toggleEmoji());
+        emojiButton.setOnClickListener(Ui.tap(v -> toggleEmoji()));
         final View attachButton = findViewById(R.id.btn_attach);
-        attachButton.setOnClickListener(v -> showAttachSheet());
+        attachButton.setOnClickListener(Ui.tap(v -> showAttachSheet()));
         Anim.pressFeedback(attachButton);
         Anim.pressFeedback(emojiButton);
         Anim.pressFeedback(sendButton);
         Anim.pressFeedback(micButton);
-        findViewById(R.id.chat_reply_close).setOnClickListener(v -> setReplyTarget(null));
-        findViewById(R.id.chat_search_close).setOnClickListener(v -> closeSearch());
-        scrollDown.setOnClickListener(v -> scrollToBottom());
+        findViewById(R.id.chat_reply_close).setOnClickListener(Ui.tap(v -> setReplyTarget(null)));
+        findViewById(R.id.chat_search_close).setOnClickListener(Ui.tap(v -> closeSearch()));
+        scrollDown.setOnClickListener(Ui.tap(v -> scrollToBottom()));
         View.OnClickListener info = v -> showChatInfo();
-        findViewById(R.id.chat_title).setOnClickListener(info);
-        avatar.setOnClickListener(info);
-        setUpVoiceButton();
+        findViewById(R.id.chat_title).setOnClickListener(Ui.tap(info));
+        avatar.setOnClickListener(Ui.tap(info));
+        Ui.safely(this, this::setUpVoiceButton);
         selectionBar = findViewById(R.id.selection_bar);
         selectionTitle = findViewById(R.id.selection_title);
-        findViewById(R.id.sel_close).setOnClickListener(v -> exitSelection());
-        findViewById(R.id.sel_copy).setOnClickListener(v -> copySelected());
-        findViewById(R.id.sel_forward).setOnClickListener(v -> forwardSelected());
-        findViewById(R.id.sel_pin).setOnClickListener(v -> pinSelected());
-        findViewById(R.id.sel_delete).setOnClickListener(v -> deleteSelected());
+        findViewById(R.id.sel_close).setOnClickListener(Ui.tap(v -> exitSelection()));
+        findViewById(R.id.sel_copy).setOnClickListener(Ui.tap(v -> copySelected()));
+        findViewById(R.id.sel_forward).setOnClickListener(Ui.tap(v -> forwardSelected()));
+        findViewById(R.id.sel_pin).setOnClickListener(Ui.tap(v -> pinSelected()));
+        findViewById(R.id.sel_delete).setOnClickListener(Ui.tap(v -> deleteSelected()));
 
         input.setOnEditorActionListener((v, actionId, event) -> {
             sendMessage();
@@ -329,17 +329,22 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             }
         });
 
-        buildEmojiPanel();
-        bannerAction.setOnClickListener(v -> inviteDialog());
-        restoreDraft();
+        Ui.safely(this, this::buildEmojiPanel);
+        bannerAction.setOnClickListener(Ui.tap(v -> inviteDialog()));
+        Ui.safely(this, this::restoreDraft);
         SyncEngine.get(this).addListener(this);
-        refresh();
+        Ui.safely(this, this::refresh);
     }
 
     // ---------------- меню ----------------
 
     private boolean onMenu(MenuItem item) {
-        return handleMenuId(item.getItemId());
+        try {
+            return handleMenuId(item.getItemId());
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+            return false;
+        }
     }
 
     private boolean handleMenuId(int id) {
@@ -625,18 +630,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 .setText(getString(R.string.media_count, counts[0], counts[1], counts[2]));
         final TextView verify = findViewById(R.id.profile_info_key);
         verify.setText(chat.verified ? R.string.verified_short : R.string.unverified_short);
-        verify.setOnClickListener(v -> {
+        verify.setOnClickListener(Ui.tap(v -> {
             Store.get(this).setVerified(uid, !chat.verified);
             chat = Store.get(this).chat(uid);
             verify.setText(chat != null && chat.verified
                     ? R.string.verified_short : R.string.unverified_short);
             Anim.haptic(verify, false);
-        });
+        }));
         TextView keyBox = findViewById(R.id.profile_key_box);
         keyBox.setText(number.isEmpty() ? chat.peer : number);
-        keyBox.setOnClickListener(v -> Ui.copy(this, getString(R.string.safety_number),
-                number.isEmpty() ? chat.peer : number));
-        findViewById(R.id.profile_close).setOnClickListener(v -> hideProfile());
+        keyBox.setOnClickListener(Ui.tap(v -> Ui.copy(this, getString(R.string.safety_number),
+                number.isEmpty() ? chat.peer : number)));
+        findViewById(R.id.profile_close).setOnClickListener(Ui.tap(v -> hideProfile()));
         view.setVisibility(View.VISIBLE);
         view.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_up));
         Anim.haptic(view, false);
@@ -659,20 +664,20 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         final View panel = ((ViewGroup) sheet).getChildAt(0);
         if (panel != null) {
             panel.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.sheet_up));
-            panel.setOnClickListener(v -> {
-            });
+            panel.setOnClickListener(Ui.tap(v -> {
+            }));
         }
-        sheet.setOnClickListener(v -> hideSheet());
+        sheet.setOnClickListener(Ui.tap(v -> hideSheet()));
         int[] ids = {R.id.action_pin, R.id.action_mute, R.id.action_search, R.id.action_export,
                 R.id.action_safety, R.id.action_rename, R.id.action_clear, R.id.action_delete};
         for (int itemId : ids) {
             final int actionId = itemId;
             View item = findViewById(actionId);
             if (item == null) continue;
-            item.setOnClickListener(v -> {
+            item.setOnClickListener(Ui.tap(v -> {
                 hideSheet();
                 handleMenuId(actionId);
-            });
+            }));
             Anim.pressFeedback(item);
         }
     }
@@ -896,11 +901,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                               final androidx.appcompat.app.AlertDialog dialog) {
         View item = root.findViewById(id);
         Anim.pressFeedback(item);
-        item.setOnClickListener(v -> {
+        item.setOnClickListener(Ui.tap(v -> {
             Anim.haptic(v, false);
             dialog.dismiss();
             action.run();
-        });
+        }));
     }
 
     private void pick(int request, String mime) {
@@ -1386,10 +1391,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             boolean danger = actionId == 7 || actionId == 8;
             row.setTextColor(getResources().getColor(danger ? R.color.danger : R.color.text_drawer));
             row.setBackgroundResource(R.drawable.bg_row_ripple);
-            row.setOnClickListener(v -> {
+            row.setOnClickListener(Ui.tap(v -> {
                 if (holder[0] != null) holder[0].dismiss();
                 handleMessageAction(actionId, msg);
-            });
+            }));
             menu.addView(row);
         }
         android.widget.PopupWindow popup = new android.widget.PopupWindow(menu,
@@ -1614,10 +1619,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             lp.width = size;
             lp.height = size;
             tv.setLayoutParams(lp);
-            tv.setOnClickListener(v -> {
+            tv.setOnClickListener(Ui.tap(v -> {
                 input.append(emoji);
                 input.setSelection(input.getText().length());
-            });
+            }));
             emojiPanel.addView(tv);
         }
     }
@@ -1655,10 +1660,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         modal.setVisibility(View.VISIBLE);
         modal.setAlpha(0f);
         modal.animate().alpha(1f).setDuration(150L).start();
-        modal.setOnClickListener(v -> modal.setVisibility(View.GONE));
-        findViewById(R.id.encrypt_close).setOnClickListener(v -> modal.setVisibility(View.GONE));
-        findViewById(R.id.encrypt_copy).setOnClickListener(v -> Ui.copy(this,
-                getString(R.string.safety_number), number.isEmpty() ? keyValue : number));
+        modal.setOnClickListener(Ui.tap(v -> modal.setVisibility(View.GONE)));
+        findViewById(R.id.encrypt_close).setOnClickListener(Ui.tap(v -> modal.setVisibility(View.GONE)));
+        findViewById(R.id.encrypt_copy).setOnClickListener(Ui.tap(v -> Ui.copy(this,
+                getString(R.string.safety_number), number.isEmpty() ? keyValue : number)));
     }
 
     /** Запасной вариант: тот же номер безопасности обычным диалогом. */
@@ -1730,11 +1735,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             tv.setGravity(android.view.Gravity.CENTER);
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(Ui.dp(this, 44), Ui.dp(this, 44));
             tv.setLayoutParams(lp);
-            tv.setOnClickListener(v -> {
+            tv.setOnClickListener(Ui.tap(v -> {
                 SyncEngine.get(this).sendReaction(chat, msg, emoji, null);
                 dialog.dismiss();
                 refresh();
-            });
+            }));
             row.addView(tv);
         }
         dialog.show();

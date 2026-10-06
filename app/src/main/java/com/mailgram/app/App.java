@@ -42,6 +42,7 @@ public class App extends Application {
         Log.i(TAG, "MailGram запускается; нативное ядро: " + NativeCrypto.isLoaded()
                 + (NativeCrypto.isLoaded() ? " (" + NativeCrypto.version() + ")" : " (" + NativeCrypto.loadError() + ")"));
         Notifier.ensureChannels(this);
+        com.mailgram.app.util.CrashLog.install(this);
         applyTheme(themeMode(Prefs.theme(this)));
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             private int started;

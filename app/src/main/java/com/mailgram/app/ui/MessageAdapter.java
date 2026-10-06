@@ -297,10 +297,10 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             h.linkChip.setTextColor(m.outgoing ? 0xFFFFFFFF
                     : ctx.getResources().getColor(R.color.accent));
             final String target = url;
-            h.linkChip.setOnClickListener(v -> {
+            h.linkChip.setOnClickListener(Ui.tap(v -> {
                 Anim.haptic(v, false);
                 openUrl(v.getContext(), target);
-            });
+            }));
         } else {
             h.linkChip.setVisibility(View.GONE);
         }
@@ -314,9 +314,9 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
 
         // ---- переход к исходному сообщению по тапу на цитате ----
-        h.replyQuote.setOnClickListener(v -> {
+        h.replyQuote.setOnClickListener(Ui.tap(v -> {
             if (m.replyMid != null && !m.replyMid.isEmpty()) actions.onJumpToMessage(m);
-        });
+        }));
 
         // ---- цитата ответа ----
         if (m.replyMid != null && !m.replyMid.isEmpty()) {
@@ -362,9 +362,9 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             final VoiceWaveView wave = h.voiceWave;
             final ImageView play = h.voicePlay;
             View.OnClickListener listener = v -> actions.onVoiceTap(m, wave, play);
-            h.voicePlay.setOnClickListener(listener);
-            h.voiceBox.setOnClickListener(listener);
-            h.voiceTime.setOnClickListener(v -> actions.onVoiceSpeed(m));
+            h.voicePlay.setOnClickListener(Ui.tap(listener));
+            h.voiceBox.setOnClickListener(Ui.tap(listener));
+            h.voiceTime.setOnClickListener(Ui.tap(v -> actions.onVoiceSpeed(m)));
         } else if (m.isFile()) {
             h.fileBox.setVisibility(View.VISIBLE);
             h.fileName.setText(m.fileName == null || m.fileName.isEmpty() ? "файл" : m.fileName);
@@ -416,7 +416,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 chipParams.setMarginEnd(Ui.dp(ctx, 4));
                 chip.setLayoutParams(chipParams);
                 final String emoji = entry.getKey();
-                chip.setOnClickListener(v -> actions.onReactionTap(m, emoji));
+                chip.setOnClickListener(Ui.tap(v -> actions.onReactionTap(m, emoji)));
                 h.reactions.addView(chip);
                 if (animationsEnabled) Anim.pop(chip);
             }
@@ -450,12 +450,12 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         h.selectCheck.setAlpha(isSelected ? 1f : 0.35f);
 
         // ---- касания, смахивание для ответа ----
-        h.container.setOnLongClickListener(v -> {
+        h.container.setOnLongClickListener(Ui.hold(v -> {
             Anim.haptic(h.container, true);
             actions.onMessageLongPress(m, h.container);
             return true;
-        });
-        h.container.setOnClickListener(v -> {
+        }));
+        h.container.setOnClickListener(Ui.tap(v -> {
             long now = System.currentTimeMillis();
             if (now - lastTapAt < 280L && lastTapMid.equals(m.mid)) {
                 lastTapMid = "";
@@ -472,7 +472,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             } else {
                 actions.onMessageClick(m);
             }
-        });
+        }));
         attachSwipe(h, m);
 
         // ---- анимация появления нового сообщения: пружина (spatial spring) ----

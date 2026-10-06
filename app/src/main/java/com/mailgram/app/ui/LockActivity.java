@@ -77,7 +77,7 @@ public class LockActivity extends AppCompatActivity {
         params.setMargins(margin, margin, margin, margin);
         view.setLayoutParams(params);
         Anim.pressFeedback(view);
-        view.setOnClickListener(v -> {
+        view.setOnClickListener(Ui.tap(v -> {
             Anim.haptic(v, false);
             if ("\u232B".equals(label)) {
                 if (entered.length() > 0) {
@@ -93,7 +93,7 @@ public class LockActivity extends AppCompatActivity {
             if (entered.length() == pinLength) {
                 verify();
             }
-        });
+        }));
         return view;
     }
 

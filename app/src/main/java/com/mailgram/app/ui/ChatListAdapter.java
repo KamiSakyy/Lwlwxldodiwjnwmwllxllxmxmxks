@@ -216,12 +216,12 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
             Anim.pop(h.badge);
         }
 
-        h.itemView.setOnClickListener(v -> actions.onOpen(chat));
+        h.itemView.setOnClickListener(Ui.tap(v -> actions.onOpen(chat)));
         attachSwipe(h.itemView, chat, actions);
-        h.itemView.setOnLongClickListener(v -> {
+        h.itemView.setOnLongClickListener(Ui.hold(v -> {
             actions.onLongPress(chat);
             return true;
-        });
+        }));
     }
 
     private static int resolveOnSurface(android.content.Context ctx) {

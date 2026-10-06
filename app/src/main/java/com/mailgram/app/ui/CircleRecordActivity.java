@@ -77,8 +77,8 @@ public class CircleRecordActivity extends Activity implements SurfaceHolder.Call
         output = new File(dir, "circle-" + System.nanoTime() + ".mp4");
 
         preview.getHolder().addCallback(this);
-        stopButton.setOnClickListener(v -> finishRecording(true));
-        cancelButton.setOnClickListener(v -> finishRecording(false));
+        stopButton.setOnClickListener(Ui.tap(v -> finishRecording(true)));
+        cancelButton.setOnClickListener(Ui.tap(v -> finishRecording(false)));
     }
 
     @Override

@@ -33,6 +33,41 @@ public final class Ui {
     private Ui() {
     }
 
+    /** Обёртка нажатия: ошибка внутри обработчика пишется в «чёрный ящик», приложение живёт. */
+    public static View.OnClickListener tap(final View.OnClickListener body) {
+        return v -> {
+            if (body == null) return;
+            try {
+                body.onClick(v);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+            }
+        };
+    }
+
+    /** Обёртка долгого нажатия: то же самое, только с удержанием. */
+    public static View.OnLongClickListener hold(final View.OnLongClickListener body) {
+        return v -> {
+            if (body == null) return false;
+            try {
+                return body.onLongClick(v);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+                return true;
+            }
+        };
+    }
+
+    /** Выполняет необязательную настройку интерфейса, не давая приложению закрыться. */
+    public static void safely(Context context, Runnable body) {
+        if (body == null) return;
+        try {
+            body.run();
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(context, error);
+        }
+    }
+
     /**
      * Настоящий edge-to-edge: контент рисуется под панелью состояния и под панелью
      * навигации (обе прозрачные, системные панели не меняем), а отступы внутрь
@@ -53,16 +88,26 @@ public final class Ui {
         final int topBase = top == null ? 0 : top.getPaddingTop();
         final int bottomBase = bottom == null ? 0 : bottom.getPaddingBottom();
         ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
-            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
-            if (top != null) {
-                top.setPadding(top.getPaddingLeft(), topBase + bars.top,
-                        top.getPaddingRight(), top.getPaddingBottom());
-            }
-            if (bottom != null) {
+            try {
+                Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                Insets ime = insets.getInsets(WindowInsetsCompat.Type.ime());
                 int extra = Math.max(bars.bottom, ime.bottom);
-                bottom.setPadding(bottom.getPaddingLeft(), bottom.getPaddingTop(),
-                        bottom.getPaddingRight(), bottomBase + extra);
+                if (top != null && top == bottom) {
+                    // один и тот же контейнер: держим оба отступа, а не перетираем верх нижним
+                    top.setPadding(top.getPaddingLeft(), topBase + bars.top,
+                            top.getPaddingRight(), bottomBase + extra);
+                } else {
+                    if (top != null) {
+                        top.setPadding(top.getPaddingLeft(), topBase + bars.top,
+                                top.getPaddingRight(), top.getPaddingBottom());
+                    }
+                    if (bottom != null) {
+                        bottom.setPadding(bottom.getPaddingLeft(), bottom.getPaddingTop(),
+                                bottom.getPaddingRight(), bottomBase + extra);
+                    }
+                }
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(activity, error);
             }
             return insets;
         });
@@ -74,9 +119,13 @@ public final class Ui {
         if (view == null) return;
         final int base = view.getPaddingBottom();
         ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
-            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(v.getPaddingLeft(), v.getPaddingTop(), v.getPaddingRight(),
-                    base + bars.bottom);
+            try {
+                Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(v.getPaddingLeft(), v.getPaddingTop(), v.getPaddingRight(),
+                        base + bars.bottom);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+            }
             return insets;
         });
         ViewCompat.requestApplyInsets(view);
@@ -88,11 +137,15 @@ public final class Ui {
         final int base = ((android.view.ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
         final int extra = dp(view.getContext(), extraDp);
         ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
-            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            android.view.ViewGroup.MarginLayoutParams lp =
-                    (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
-            lp.bottomMargin = base + extra + bars.bottom;
-            v.setLayoutParams(lp);
+            try {
+                Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                android.view.ViewGroup.MarginLayoutParams lp =
+                        (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
+                lp.bottomMargin = base + extra + bars.bottom;
+                v.setLayoutParams(lp);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+            }
             return insets;
         });
         ViewCompat.requestApplyInsets(view);
@@ -104,11 +157,15 @@ public final class Ui {
         final int base = ((android.view.ViewGroup.MarginLayoutParams) view.getLayoutParams()).topMargin;
         final int extra = dp(view.getContext(), extraDp);
         ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
-            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            android.view.ViewGroup.MarginLayoutParams lp =
-                    (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
-            lp.topMargin = base + extra + bars.top;
-            v.setLayoutParams(lp);
+            try {
+                Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                android.view.ViewGroup.MarginLayoutParams lp =
+                        (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
+                lp.topMargin = base + extra + bars.top;
+                v.setLayoutParams(lp);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+            }
             return insets;
         });
         ViewCompat.requestApplyInsets(view);
@@ -119,9 +176,13 @@ public final class Ui {
         if (view == null) return;
         final int base = view.getPaddingTop();
         ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
-            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(v.getPaddingLeft(), base + bars.top, v.getPaddingRight(),
-                    v.getPaddingBottom());
+            try {
+                Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(v.getPaddingLeft(), base + bars.top, v.getPaddingRight(),
+                        v.getPaddingBottom());
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+            }
             return insets;
         });
         ViewCompat.requestApplyInsets(view);
@@ -132,11 +193,15 @@ public final class Ui {
         if (!(view.getLayoutParams() instanceof android.view.ViewGroup.MarginLayoutParams)) return;
         final int baseBottom = ((android.view.ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
         ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
-            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            android.view.ViewGroup.MarginLayoutParams lp =
-                    (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
-            lp.bottomMargin = baseBottom + bars.bottom;
-            v.setLayoutParams(lp);
+            try {
+                Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                android.view.ViewGroup.MarginLayoutParams lp =
+                        (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
+                lp.bottomMargin = baseBottom + bars.bottom;
+                v.setLayoutParams(lp);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+            }
             return insets;
         });
         ViewCompat.requestApplyInsets(view);

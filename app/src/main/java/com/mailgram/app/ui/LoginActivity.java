@@ -57,17 +57,17 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        googleButton.setOnClickListener(v -> startLogin());
+        googleButton.setOnClickListener(Ui.tap(v -> startLogin()));
         View logo = findViewById(R.id.login_logo);
         if (logo != null) {
-            logo.setOnLongClickListener(v -> {
+            logo.setOnLongClickListener(Ui.hold(v -> {
                 startActivity(new Intent(this, SetupOauthActivity.class));
                 return true;
-            });
+            }));
         }
-        findViewById(R.id.btn_setup).setOnClickListener(v ->
-                startActivity(new Intent(this, SetupOauthActivity.class)));
-        findViewById(R.id.btn_diag).setOnClickListener(v -> startProbe(true));
+        findViewById(R.id.btn_setup).setOnClickListener(Ui.tap(v ->
+                startActivity(new Intent(this, SetupOauthActivity.class))));
+        findViewById(R.id.btn_diag).setOnClickListener(Ui.tap(v -> startProbe(true)));
         updateStatus();
         // Никаких проверок при запуске: показываем только ранее сохранённый результат.
         // Живая диагностика — по кнопке, если вход действительно не проходит.

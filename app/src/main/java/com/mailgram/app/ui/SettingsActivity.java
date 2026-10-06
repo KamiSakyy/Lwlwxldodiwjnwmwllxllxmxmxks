@@ -69,7 +69,7 @@ public class SettingsActivity extends AppCompatActivity {
         // доставка
         final TextView pollValue = findViewById(R.id.settings_poll_value);
         pollValue.setText(pollLabel(Prefs.pollSeconds(this)));
-        findViewById(R.id.row_poll).setOnClickListener(v -> pollDialog(pollValue));
+        findViewById(R.id.row_poll).setOnClickListener(Ui.tap(v -> pollDialog(pollValue)));
 
         MaterialSwitch background = findViewById(R.id.switch_background);
         background.setChecked(Prefs.backgroundSync(this));
@@ -85,11 +85,11 @@ public class SettingsActivity extends AppCompatActivity {
 
         final TextView fontValue = findViewById(R.id.settings_font_value);
         fontValue.setText(fontScaleLabel(Prefs.fontScale(this)));
-        findViewById(R.id.row_font_scale).setOnClickListener(v -> {
+        findViewById(R.id.row_font_scale).setOnClickListener(Ui.tap(v -> {
             int next = (Prefs.fontScale(this) + 1) % 4;
             Prefs.setFontScale(this, next);
             fontValue.setText(fontScaleLabel(next));
-        });
+        }));
 
         MaterialSwitch animations = findViewById(R.id.switch_animations);
         animations.setChecked(Prefs.animations(this));
@@ -97,7 +97,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         final TextView wallpaperValue = findViewById(R.id.settings_wallpaper_value);
         wallpaperValue.setText(wallpaperLabel(Prefs.wallpaper(this)));
-        findViewById(R.id.row_wallpaper).setOnClickListener(v -> wallpaperDialog(wallpaperValue));
+        findViewById(R.id.row_wallpaper).setOnClickListener(Ui.tap(v -> wallpaperDialog(wallpaperValue)));
 
         MaterialSwitch notifications = findViewById(R.id.switch_notifications);
         notifications.setChecked(Prefs.notifications(this));
@@ -115,17 +115,17 @@ public class SettingsActivity extends AppCompatActivity {
         }
         ratchetState.setText(anySession ? getString(R.string.ratchet_state_on)
                 : getString(R.string.ratchet_state_wait));
-        findViewById(R.id.row_ratchet).setOnClickListener(v -> showRatchetInfo());
+        findViewById(R.id.row_ratchet).setOnClickListener(Ui.tap(v -> showRatchetInfo()));
 
         // безопасность
         selfTestResult = findViewById(R.id.settings_selftest_result);
-        findViewById(R.id.row_selftest).setOnClickListener(v -> runSelfTest());
-        findViewById(R.id.row_mykey).setOnClickListener(v -> showMyKey());
-        findViewById(R.id.row_invite_link).setOnClickListener(v -> editInviteLink());
+        findViewById(R.id.row_selftest).setOnClickListener(Ui.tap(v -> runSelfTest()));
+        findViewById(R.id.row_mykey).setOnClickListener(Ui.tap(v -> showMyKey()));
+        findViewById(R.id.row_invite_link).setOnClickListener(Ui.tap(v -> editInviteLink()));
 
         // подключение
-        findViewById(R.id.row_setup).setOnClickListener(v ->
-                startActivity(new Intent(this, SetupOauthActivity.class)));
+        findViewById(R.id.row_setup).setOnClickListener(Ui.tap(v ->
+                startActivity(new Intent(this, SetupOauthActivity.class))));
 
         TextView clientId = findViewById(R.id.settings_client_id);
         String id = Auth.clientId(this);
@@ -143,7 +143,7 @@ public class SettingsActivity extends AppCompatActivity {
                 + "\n" + getString(R.string.about_protocol) + ": " + com.mailgram.app.crypto.MailCrypto.ALG
                 + "\n" + getString(R.string.setup_package) + ": " + getPackageName());
 
-        findViewById(R.id.btn_logout).setOnClickListener(v -> logoutDialog());
+        findViewById(R.id.btn_logout).setOnClickListener(Ui.tap(v -> logoutDialog()));
 
         // Секции появляются каскадом — как списки в iOS при открытии экрана
         Anim.cascade((ViewGroup) findViewById(R.id.settings_content), 45L, 10f);

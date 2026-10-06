@@ -102,13 +102,13 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
 
-        setUpFilters();
+        Ui.safely(this, this::setUpFilters);
         Anim.pressFeedback(findViewById(R.id.fab_new_chat));
         Ui.liftAboveBars(findViewById(R.id.fab_new_chat));
-        findViewById(R.id.fab_new_chat).setOnClickListener(v -> newChatDialog());
-        findViewById(R.id.empty_action).setOnClickListener(v -> newChatDialog());
-        setUpDrawer();
-        setUpBottomNav();
+        findViewById(R.id.fab_new_chat).setOnClickListener(Ui.tap(v -> newChatDialog()));
+        findViewById(R.id.empty_action).setOnClickListener(Ui.tap(v -> newChatDialog()));
+        Ui.safely(this, this::setUpDrawer);
+        Ui.safely(this, this::setUpBottomNav);
 
         searchInput.addTextChangedListener(new TextWatcher() {
             @Override
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         if (Prefs.backgroundSync(this)) {
             SyncService.start(this);
         }
-        refresh();
+        Ui.safely(this, this::refresh);
     }
 
     /** Меню-панель слева — .drawer из старого мессенджера: 82% ширины, до 320dp. */
@@ -143,9 +143,9 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         android.view.ViewGroup.LayoutParams lp = panel.getLayoutParams();
         lp.width = Math.min(Ui.dp(this, 320), (int) (screen * 0.82f));
         panel.setLayoutParams(lp);
-        findViewById(R.id.main_menu_btn).setOnClickListener(v -> toggleDrawer(true));
-        findViewById(R.id.main_title_box).setOnClickListener(v -> toggleDrawer(true));
-        overlay.setOnClickListener(v -> toggleDrawer(false));
+        findViewById(R.id.main_menu_btn).setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
+        findViewById(R.id.main_title_box).setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
+        overlay.setOnClickListener(Ui.tap(v -> toggleDrawer(false)));
         String account = Auth.account(this);
         String name = account == null || account.isEmpty() ? getString(R.string.me) : account;
         AvatarView drawerAvatar = findViewById(R.id.drawer_avatar);
@@ -154,32 +154,32 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         ((TextView) findViewById(R.id.drawer_online)).setText(R.string.online_now);
         ((TextView) findViewById(R.id.drawer_status)).setText(R.string.app_name);
 
-        findViewById(R.id.drawer_item_stealth).setOnClickListener(v -> {
+        findViewById(R.id.drawer_item_stealth).setOnClickListener(Ui.tap(v -> {
             boolean on = !Prefs.stealthRead(this);
             Prefs.setStealthRead(this, on);
             Ui.toast(this, getString(on ? R.string.stealth_on : R.string.stealth_off));
-        });
-        findViewById(R.id.drawer_item_sound).setOnClickListener(v -> {
+        }));
+        findViewById(R.id.drawer_item_sound).setOnClickListener(Ui.tap(v -> {
             boolean on = !Prefs.notifications(this);
             Prefs.setNotifications(this, on);
             Ui.toast(this, getString(on ? R.string.sound_on : R.string.sound_off));
-        });
+        }));
         View.OnClickListener toSettings = v -> {
             toggleDrawer(false);
             openSettings();
         };
-        findViewById(R.id.drawer_item_encrypt).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_item_pin).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_item_settings).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_avatar_edit).setOnClickListener(toSettings);
-        findViewById(R.id.drawer_status_row).setOnClickListener(toSettings);
-        findViewById(R.id.main_encrypt_btn).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_encrypt).setOnClickListener(Ui.tap(toSettings));
+        findViewById(R.id.drawer_item_pin).setOnClickListener(Ui.tap(toSettings));
+        findViewById(R.id.drawer_item_settings).setOnClickListener(Ui.tap(toSettings));
+        findViewById(R.id.drawer_avatar_edit).setOnClickListener(Ui.tap(toSettings));
+        findViewById(R.id.drawer_status_row).setOnClickListener(Ui.tap(toSettings));
+        findViewById(R.id.main_encrypt_btn).setOnClickListener(Ui.tap(toSettings));
         Ui.padTopForBars(findViewById(R.id.drawer_header));
         Ui.padBottomForBars(findViewById(R.id.drawer_scroll));
-        findViewById(R.id.drawer_item_logout).setOnClickListener(v -> {
+        findViewById(R.id.drawer_item_logout).setOnClickListener(Ui.tap(v -> {
             toggleDrawer(false);
             logoutDialog();
-        });
+        }));
     }
 
     private void openSettings() {
@@ -209,12 +209,12 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     /** Нижняя навигация — .bottom-nav: «Чаты», «Профиль», «Выход». */
     private void setUpBottomNav() {
-        findViewById(R.id.nav_chats).setOnClickListener(v -> {
+        findViewById(R.id.nav_chats).setOnClickListener(Ui.tap(v -> {
             list.smoothScrollToPosition(0);
             refresh();
-        });
-        findViewById(R.id.nav_profile).setOnClickListener(v -> toggleDrawer(true));
-        findViewById(R.id.nav_logout).setOnClickListener(v -> logoutDialog());
+        }));
+        findViewById(R.id.nav_profile).setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
+        findViewById(R.id.nav_logout).setOnClickListener(Ui.tap(v -> logoutDialog()));
     }
 
     private void toggleDrawer(final boolean open) {
@@ -388,10 +388,10 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     private void bindFilter(int viewId, final String filter) {
         android.widget.TextView view = findViewById(viewId);
         Anim.pressFeedback(view);
-        view.setOnClickListener(v -> {
+        view.setOnClickListener(Ui.tap(v -> {
             Anim.haptic(v, false);
             applyFilter(filter);
-        });
+        }));
     }
 
     private void applyFilter(String filter) {
@@ -450,10 +450,10 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
                         : getString(R.string.found_count, hits.size()));
                 if (hits.isEmpty()) return;
                 final com.mailgram.app.store.Store.Hit first = hits.get(0);
-                results.setOnClickListener(v -> {
+                results.setOnClickListener(Ui.tap(v -> {
                     dialog.dismiss();
                     openChatAt(first.uid, first.msg.mid);
-                });
+                }));
             }
 
             @Override

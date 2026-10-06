@@ -67,9 +67,9 @@ public class SetupOauthActivity extends AppCompatActivity {
         modeGroup.setOnCheckedChangeListener((g, id) -> updateMode());
         updateMode();
 
-        findViewById(R.id.btn_copy_setup).setOnClickListener(v ->
-                Ui.copy(this, "MailGram setup", setupText()));
-        findViewById(R.id.btn_open_console).setOnClickListener(v -> {
+        findViewById(R.id.btn_copy_setup).setOnClickListener(Ui.tap(v ->
+                Ui.copy(this, "MailGram setup", setupText())));
+        findViewById(R.id.btn_open_console).setOnClickListener(Ui.tap(v -> {
             try {
                 String clientId = enteredClientId();
                 startActivity(new Intent(Intent.ACTION_VIEW,
@@ -77,8 +77,8 @@ public class SetupOauthActivity extends AppCompatActivity {
             } catch (Exception e) {
                 Ui.toast(this, getString(R.string.error_generic, "нет браузера"));
             }
-        });
-        findViewById(R.id.btn_setup_save).setOnClickListener(v -> save());
+        }));
+        findViewById(R.id.btn_setup_save).setOnClickListener(Ui.tap(v -> save()));
     }
 
     private String enteredClientId() {
