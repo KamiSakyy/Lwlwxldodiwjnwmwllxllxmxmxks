@@ -465,16 +465,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         super.onResume();
         Ui.safely(this, this::markRead);
         Ui.safely(this, this::refresh);
-        Ui.safely(this, () -> SyncEngine.get(this).syncNow());
+        // открытие чата = немедленная одна проверка (дальше поллер сам, раз в 20 с)
+        Ui.safely(this, () -> SyncEngine.get(this).syncNow(true));
         if (poller != null) handler.removeCallbacks(poller);
         poller = new Runnable() {
             @Override
             public void run() {
+                // 20 секунд, не 4: Google тарифицирует каждый запрос к Gmail API
                 Ui.safely(ChatActivity.this, () -> SyncEngine.get(ChatActivity.this).syncNow());
-                handler.postDelayed(this, 4000);
+                handler.postDelayed(this, 20_000L);
             }
         };
-        handler.postDelayed(poller, 4000);
+        handler.postDelayed(poller, 12_000L);
         if (Prefs.backgroundSync(this)) SyncService.start(this);
     }
 

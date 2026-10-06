@@ -30,6 +30,11 @@ public final class GmailApi {
         public final List<String> labels = new ArrayList<>();
     }
 
+    /** Один HTTP-запрос на 50 писем вместо 50 запросов — экономим квоту Gmail. */
+    private static final int BATCH_SIZE = 50;
+    private static final String BATCH_ENDPOINT = "https://gmail.googleapis.com/batch/gmail/v1";
+    private static final String BATCH_BOUNDARY = "batch_MailGram_9a7c41";
+
     public static String profileEmail(String token) throws IOException {
         String json = Http.get(BASE + "/profile", token);
         try {
@@ -70,6 +75,111 @@ public final class GmailApi {
     /** Полное письмо (заголовки + тело + метки). */
     public static Mail get(String token, String id) throws IOException {
         String json = Http.get(BASE + "/messages/" + id + "?format=full", token);
+        return parseMessage(id, json);
+    }
+
+    /**
+    * Пакетная загрузка писем: Google считает стоимость каждого запроса, а batch-эндпоинт
+    * позволяет достать до 50 писем ОДНИМ запросом — так приложение не упирается в лимит
+    * «Units per minute per user» и не спамит API.
+    */
+    public static java.util.Map<String, Mail> getBatch(String token, List<String> ids) {
+        java.util.Map<String, Mail> out = new java.util.LinkedHashMap<>();
+        if (ids == null || ids.isEmpty()) return out;
+        int i = 0;
+        while (i < ids.size()) {
+            List<String> chunk = ids.subList(i, Math.min(ids.size(), i + BATCH_SIZE));
+            try {
+                sendBatch(token, chunk, out);
+            } catch (Http.RateLimited rl) {
+                throw rl;                      // про лимит сообщаем наверх — там поставят паузу
+            } catch (Exception e) {
+                // batch мог не подойти (формат ответа, одно битое письмо) — тихо добираем по одному
+                for (String id : chunk) {
+                    if (out.containsKey(id)) continue;
+                    try {
+                        out.put(id, get(token, id));
+                    } catch (Http.RateLimited rl) {
+                        throw rl;
+                    } catch (Exception e2) {
+                        com.mailgram.app.util.CrashLog.record(null, e2);
+                    }
+                }
+            }
+            i += BATCH_SIZE;
+        }
+        return out;
+    }
+
+    private static void sendBatch(String token, List<String> ids,
+                                  java.util.Map<String, Mail> out) throws Exception {
+        StringBuilder body = new StringBuilder();
+        for (int k = 0; k < ids.size(); k++) {
+            String id = ids.get(k);
+            body.append("--").append(BATCH_BOUNDARY).append("\r\n")
+                    .append("Content-Type: application/http\r\n")
+                    .append("Content-ID: <item").append(k).append(">\r\n\r\n")
+                    .append("GET ").append(BASE).append("/messages/").append(id)
+                    .append("?format=full\r\n\r\n");
+        }
+        body.append("--").append(BATCH_BOUNDARY).append("--\r\n");
+        Http.Response resp = Http.request("POST", BATCH_ENDPOINT, token,
+                body.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8),
+                "multipart/mixed; boundary=" + BATCH_BOUNDARY);
+        java.util.Map<String, String> byCid = splitBatch(resp.body);
+        for (int k = 0; k < ids.size(); k++) {
+            String id = ids.get(k);
+            String payload = byCid.get("item" + k);
+            if (payload == null) continue;
+            if (payload.startsWith("HTTP/")) {
+                int sp = payload.indexOf(' ');
+                int code = parseIntSafe(payload.substring(0, sp < 0 ? 3 : sp).replace("HTTP/", ""), 0);
+                if (code >= 400) continue;
+                int nl = payload.indexOf('\n');
+                payload = payload.substring(nl + 1);
+            }
+            out.put(id, parseMessage(id, payload));
+        }
+    }
+
+    /** Разбор multipart-ответа batch: CID -> текст (включая Possible malformed строку статуса). */
+    private static java.util.Map<String, String> splitBatch(String raw) {
+        java.util.Map<String, String> map = new java.util.LinkedHashMap<>();
+        if (raw == null) return map;
+        String[] blocks = raw.split("--batch_[A-Za-z0-9]+");
+        for (String block : blocks) {
+            String text = block;
+            int hdrEnd = text.indexOf("\r\n\r\n");
+            if (hdrEnd < 0) hdrEnd = text.indexOf("\n\n");
+            if (hdrEnd < 0) continue;
+            String headers = text.substring(0, hdrEnd);
+            String cid = null;
+            boolean status = false;
+            for (String line : headers.split("\\r?\\n")) {
+                String l = line.trim();
+                if (l.regionMatches(true, 0, "Content-ID:", 0, 11)) {
+                    cid = l.substring(11).trim().replaceAll("[<>]", "");
+                } else if (l.startsWith("HTTP/")) {
+                    status = true;
+                }
+            }
+            if (cid == null) continue;
+            String rest = text.substring(hdrEnd).replaceFirst("^(\\r\\n|\\n)+", "");
+            map.put(cid, status ? rest : rest);
+        }
+        return map;
+    }
+
+    private static int parseIntSafe(String s, int def) {
+        try {
+            return Integer.parseInt(s.trim());
+        } catch (Exception e) {
+            return def;
+        }
+    }
+
+    /** Разбирает JSON письма в Mail (используется и для одиночного, и для batch-ответа). */
+    private static Mail parseMessage(String id, String json) throws IOException {
         Mail mail = new Mail();
         mail.id = id;
         try {
@@ -88,7 +198,7 @@ public final class GmailApi {
             if (payload != null) {
                 JSONArray headers = payload.optJSONArray("headers");
                 if (headers != null) {
-                    for (int i = 0; i < headers.length(); i++) {
+                    for (int i = 0; i < headers.length; i++) {
                         JSONObject h = headers.getJSONObject(i);
                         String name = h.optString("name", "").toLowerCase(java.util.Locale.US);
                         String value = h.optString("value", "");

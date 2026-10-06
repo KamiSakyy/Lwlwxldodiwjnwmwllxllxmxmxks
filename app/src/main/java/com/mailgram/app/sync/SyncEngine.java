@@ -12,6 +12,7 @@ import com.mailgram.app.crypto.RatchetStore;
 import com.mailgram.app.crypto.NativeCrypto;
 import com.mailgram.app.net.Auth;
 import com.mailgram.app.net.GmailApi;
+import com.mailgram.app.net.Http;
 import com.mailgram.app.net.Mime;
 import com.mailgram.app.store.Chat;
 import com.mailgram.app.store.Msg;
@@ -26,7 +27,6 @@ import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
@@ -46,9 +46,21 @@ public final class SyncEngine {
      * что у них нет содержимого для показа.
      */
     private static final String QUERY = "-in:draft newer_than:180d";
-    private static final int MAX_MESSAGES = 500;
+    /**
+     * Сколько писем смотрим за один проход. Разбор теперь бесплатный (письма приходят
+     * batch-ем), но листалка стоит денег — держим умеренно и добираем остальное в следующих проходах.
+     */
+    private static final int MAX_MESSAGES = 150;
     /** Раздел, куда складываются обычные письма Gmail (см. {@code Store.GENERIC_UID}). */
     private static final String GENERIC_UID = com.mailgram.app.store.Store.GENERIC_UID;
+    /**
+     * Минимальный интервал между фоновыми синхронизациями. Gmail тарифицирует КАЖДЫЙ запрос,
+     * и polling раз в 4–10 секунд сносил минутную квоту за пару минут. Раньше именно так и
+     * спамили; теперь — раз в 45 секунд, а активное действие (отправка, pull) не ждёт.
+     */
+    private static final long BACKGROUND_SYNC_INTERVAL_MS = 45_000L;
+    private static final Object SYNC_GATE = new Object();
+    private long lastSyncStartAt;
     /** Сколько уведомлений максимум показываем за одну синхронизацию. */
     private static final int NOTIFY_PER_SYNC = 6;
     public static final String SUBJECT_INVITE_MARKER = "X-MailGram-PublicKey:";
@@ -61,6 +73,12 @@ public final class SyncEngine {
      * остаётся читаемым в любом почтовом клиенте.
      */
     public static final String SUBJECT_PREFIX_PLAIN = "MailGram #";
+    /** Наш маркер в теме открытого письма — допускаем «Re:»/«Fwd:» перед ним. */
+    private static final Pattern PLAIN_MARK_IN_SUBJECT = Pattern.compile(
+            "MailGram #(\\w+)");
+    /** То же для темы зашифрованного конверта. */
+    private static final Pattern ENVELOPE_MARK_IN_SUBJECT = Pattern.compile(
+            "MailGram ([A-Za-z0-9._-]{6,})");
     /** Вложение в открытом письме: [mailgram-attach b64:<данные>]. */
     private static final Pattern PLAIN_ATTACH = Pattern.compile(
             "\\n?\\[mailgram-attach b64:([A-Za-z0-9+/=\\s]+)\\]\\n?");
@@ -126,15 +144,31 @@ public final class SyncEngine {
 
     /** Запускает синхронизацию, если она ещё не идёт. */
     public void syncNow() {
+        syncNow(false);
+    }
+
+    /** @param force true — пользователь нажал «Обновить» или только что отправил письмо. */
+    public void syncNow(boolean force) {
         if (!Auth.isSignedIn(app)) return;
+        long now = System.currentTimeMillis();
+        synchronized (SYNC_GATE) {
+            if (now - lastSyncStartAt < (force ? 1_500L : BACKGROUND_SYNC_INTERVAL_MS)) return;
+            lastSyncStartAt = now;
+        }
+        // Google считает каждый запрос к Gmail API; при исчерпанной минутной квоте
+        // не полим API, а ждём — синхронизация повторится сама (см. setQuotaPauseAndNotify)
+        if (Prefs.quotaPauseRemaining(app) > 0L) {
+            Log.i(TAG, "Gmail-квота: пауза ещё " + Prefs.quotaPauseRemaining(app) / 1000L + " с");
+            return;
+        }
         if (!running.compareAndSet(false, true)) {
             Log.d(TAG, "синхронизация уже идёт");
             return;
         }
         pool.execute(() -> {
-            Result r = new Result();
+            final Result r = new Result();
             try {
-                doSync(r);
+                doSyncSafely(r);
             } catch (Throwable e) {
                 // Ловим и ошибки: необработанный сбой в фоновом потоке закрывает всё приложение
                 Log.w(TAG, "синхронизация не удалась: " + e);
@@ -144,6 +178,7 @@ public final class SyncEngine {
                 r.cause = e;
             } finally {
                 r.finishedAt = System.currentTimeMillis();
+                if (r.ok) Prefs.quotaResume(app);   // прошла — паузу снимаем
                 Prefs.setLastSyncAt(app, r.finishedAt);
                 Prefs.recordSyncStats(app, r.scanned, r.added);
                 running.set(false);
@@ -178,6 +213,34 @@ public final class SyncEngine {
 
     // ---------------- синхронизация ----------------
 
+    private void doSyncSafely(Result result) throws Exception {
+        try {
+            doSync(result);
+        } catch (Http.RateLimited rl) {
+            setQuotaPauseAndNotify(rl.retryAfterMs);
+            throw rl;
+        }
+    }
+
+    /** Gmail ответил «quota exceeded»: ставим паузу и переносим очередь, не долбя API. */
+    private void setQuotaPauseAndNotify(long pauseMs) {
+        long ms = pauseMs <= 0L ? 45_000L : Math.min(pauseMs, 5 * 60_000L);
+        Prefs.quotaPause(app, ms);
+        Log.w(TAG, "лимит запросов Gmail: пауза " + ms / 1000L + " с");
+        Result r = new Result();
+        r.ok = false;
+        r.error = "Google ограничил частоту запросов — синхронизация продолжится через "
+                + (ms / 1000L) + " с";
+        r.finishedAt = System.currentTimeMillis();
+        for (Listener l : listeners) {
+            try {
+                l.onSyncDone(r);
+            } catch (Throwable ignored) {
+                com.mailgram.app.util.CrashLog.record(app, ignored);
+            }
+        }
+    }
+
     private void doSync(Result result) throws Exception {
         Store store = Store.get(app);
         String token = Auth.accessTokenFresh(app);
@@ -186,7 +249,8 @@ public final class SyncEngine {
             me = GmailApi.profileEmail(token);
             if (!me.isEmpty()) Auth.setAccount(app, me);
         }
-
+        // один запрос на список + один batch на 50 писем: раньше каждое письмо тялось
+        // отдельным GET, и при 500 письмах мы сносили минутную квоту Gmail
         List<String> ids = GmailApi.listMessageIds(token, QUERY, MAX_MESSAGES);
         // письма, которые в прошлый раз не удалось разобрать, пробуем ещё раз: «молча пропущено»
         // у нас больше не бывает — либо сообщение появляется в ленте, либо оно ждёт повторной попытки
@@ -195,62 +259,64 @@ public final class SyncEngine {
         for (String id : ids) {
             if (!store.hasGmailId(id)) wanted.add(id);
         }
-        wanted.addAll(retry);
+        for (String id : retry) {
+            if (!store.hasGmailId(id)) wanted.add(id);   // уже разобранное больше не трогаем
+        }
         List<String> unknown = new ArrayList<>(wanted);
         result.scanned = ids.size();
         Log.i(TAG, "писем найдено: " + ids.size() + ", новых или отложенных: " + unknown.size());
         if (unknown.isEmpty()) return;
 
-        List<Future<?>> futures = new ArrayList<>();
+        java.util.Map<String, GmailApi.Mail> fetched = GmailApi.getBatch(token, unknown);
         for (String id : unknown) {
-            final String messageId = id;
-            final String myEmail = me;
-            futures.add(pool.submit(() -> {
-                try {
-                    GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
-                    Msg parsed = parseMail(store, mail, myEmail);
-                    if (parsed != null) {
-                        boolean isNew = store.byMid(parsed.chat, parsed.mid) == null;
-                        store.put(parsed.chat, parsed);
-                        if (isNew) {
-                            synchronized (result) {
-                                result.added++;
-                                if (!parsed.outgoing) result.incoming.add(parsed);
-                            }
-                        }
-                    }
-                    Prefs.removeRetry(app, messageId);
-                } catch (SecurityException se) {
-                    Log.w(TAG, "не удалось расшифровать письмо " + messageId + ": " + se.getMessage());
-                    synchronized (result) {
-                        result.undecryptable++;
-                    }
-                    // письмо не выбрасываем: показываем его в чате и оставляем в очереди —
-                    // после обновления ключей крысиного шага оно расшифруется само
-                    try {
-                        GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
-                        addUndecryptable(store, mail, myEmail);
-                    } catch (Throwable ignored) {
-                        com.mailgram.app.util.CrashLog.record(app, ignored);
-                    }
-                    Prefs.addRetry(app, messageId);
-                } catch (Throwable e) {
-                    // и ошибки тоже: необработанная ошибка в потоке пула закрывала приложение
-                    Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
-                    com.mailgram.app.util.CrashLog.record(app, e);
-                    synchronized (result) {
-                        result.failed++;
-                    }
-                    Prefs.addRetry(app, messageId);
-                }
-            }));
-        }
-        for (Future<?> f : futures) {
-            try {
-                f.get(120, TimeUnit.SECONDS);
-            } catch (Exception e) {
-                Log.w(TAG, "задача обработки письма не завершилась: " + e);
+            GmailApi.Mail mail = fetched.get(id);
+            if (mail == null) {
+                Prefs.addRetry(app, id);     // письмо не дошло — попробуем в следующий раз
+                continue;
             }
+            processLetter(store, mail, me, id, result);
+        }
+    }
+
+    /** Разбирает одно полученное письмо. Никаких новых запросов к Gmail — тело уже на руках. */
+    private void processLetter(Store store, GmailApi.Mail mail, String myEmail,
+                               String messageId, Result result) {
+        boolean handled = false;
+        try {
+            Msg parsed = parseMail(store, mail, myEmail);
+            if (parsed != null) {
+                boolean isNew = store.byMid(parsed.chat, parsed.mid) == null;
+                store.put(parsed.chat, parsed);
+                if (isNew) {
+                    synchronized (result) {
+                        result.added++;
+                        if (!parsed.outgoing) result.incoming.add(parsed);
+                    }
+                }
+            }
+            handled = true;
+        } catch (SecurityException se) {
+            Log.w(TAG, "не удалось расшифровать письмо " + messageId + ": " + se.getMessage());
+            synchronized (result) {
+                result.undecryptable++;
+            }
+            // письмо не выбрасываем: показываем его в чате и оставляем в очереди —
+            // после обновления ключей крысиного шага оно расшифруется само
+            try {
+                addUndecryptable(store, mail, myEmail);
+                handled = true;
+            } catch (Throwable ignored) {
+                com.mailgram.app.util.CrashLog.record(app, ignored);
+            }
+        } catch (Throwable e) {
+            // и ошибки тоже: необработанная ошибка в потоке пула закрывала приложение
+            Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
+            com.mailgram.app.util.CrashLog.record(app, e);
+        }
+        if (handled) {
+            Prefs.removeRetry(app, messageId);
+        } else {
+            Prefs.addRetry(app, messageId);
         }
     }
 
@@ -282,15 +348,34 @@ public final class SyncEngine {
         String subject = mail.subject == null ? "" : mail.subject.trim();
         MailCrypto.Envelope env = null;
         String chatUid = null;
-        boolean plainSubject = subject.startsWith(SUBJECT_PREFIX_PLAIN);
-        boolean fromSubject = plainSubject || subject.startsWith(MailCrypto.SUBJECT_PREFIX);
+        // тема могла прийти с «Re:»/«Fwd:» (собеседник ответил из Gmail или почтового клиента),
+        // поэтому маркер ищем в любом месте темы, а не только в начале
+        java.util.regex.Matcher psm = PLAIN_MARK_IN_SUBJECT.matcher(subject);
+        boolean plainSubject = false;
+        boolean fromSubject = false;
+        if (psm.find()) {
+            plainSubject = true;
+            fromSubject = true;
+            chatUid = psm.group(1);
+        } else {
+            java.util.regex.Matcher em = ENVELOPE_MARK_IN_SUBJECT.matcher(subject);
+            if (em.find()) {
+                fromSubject = true;
+                chatUid = em.group(1);
+            }
+        }
+        if (chatUid != null) {
+            chatUid = chatUid.trim().split("[^A-Za-z0-9._-]+")[0];
+        } else {
+            fromSubject = false;
+        }
 
         if (fromSubject) {
-            chatUid = subject.substring((plainSubject ? SUBJECT_PREFIX_PLAIN
-                    : MailCrypto.SUBJECT_PREFIX).length()).trim();
-            chatUid = chatUid.split("\\s+")[0];
             String fromHeader = Store.normalizeEmail(mail.from);
-            boolean headerOutgoing = (me != null && me.equalsIgnoreCase(fromHeader)) || fromHeader.isEmpty();
+            // раньше пустой From считался «моим» письмом — и чужие письма молча проходили
+            // мимо чата; теперь «моё» — только когда адрес реально совпал
+            boolean headerOutgoing = me != null && !me.isEmpty()
+                    && !fromHeader.isEmpty() && me.equalsIgnoreCase(fromHeader);
             byte[] peerKeyForOwnMessage = null;
             if (headerOutgoing) {
                 Chat known = store.chat(chatUid);
@@ -906,6 +991,13 @@ public final class SyncEngine {
         // список чатов не превращается в лабиринт из сотен переписок. Внутренняя группировка —
         // по Gmail-цепочке (threadId), так что ветка переписки остаётся вместе.
         String uid = GENERIC_UID;
+        if (!outgoing && !peer.isEmpty()) {
+            Chat peerChat = store.chatByPeer(peer);
+            if (peerChat != null) {
+                // письмо собеседника уже есть в его чате — дублировать его в «Всю почту» не нужно
+                if (store.byMid(peerChat.uid, "mail:" + mail.id) != null) return null;
+            }
+        }
         Chat chat = store.ensureGenericChat(uid, peer);
         if (chat.name == null || chat.name.isEmpty()) {
             chat.name = str(com.mailgram.app.R.string.all_mail_title);
@@ -961,7 +1053,11 @@ public final class SyncEngine {
         String peer = outgoing ? Store.normalizeEmail(mail.to) : from;
         if (peer.isEmpty()) peer = outgoing ? from : Store.normalizeEmail(mail.to);
         if (peer.isEmpty()) peer = "неизвестный адрес";
-        Chat chat = store.ensureChat(chatUid, peer, null);
+        // переписка с собеседником должна попадать именно в его чат: раньше чат с ним пустовал,
+        // пока его письмо честно лежало в «Всей почте»
+        Chat known = store.chatByPeer(peer);
+        Chat chat = known != null && known.uid.equals(chatUid) ? known
+                : store.ensureChat(chatUid, peer, null);
 
         Msg m = new Msg();
         m.mid = "plain:" + mail.id;
@@ -1198,9 +1294,14 @@ public final class SyncEngine {
         pool.execute(() -> {
             try {
                 String token = Auth.accessTokenFresh(app);
+                int done = 0;
                 for (Msg m : unreadIncoming) {
+                    // каждый markRead — отдельный запрос: не снимаем метки сотнями за раз,
+                    // остальное доберём в следующий проход (иначе снова прилетит по квоте)
+                    if (done >= 10) break;
                     if (m.gmailId != null && !m.gmailId.isEmpty()) {
                         GmailApi.markRead(token, m.gmailId);
+                        done++;
                     }
                 }
             } catch (Throwable e) {

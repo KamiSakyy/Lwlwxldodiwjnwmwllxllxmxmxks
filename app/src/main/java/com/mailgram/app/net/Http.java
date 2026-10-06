@@ -34,6 +34,44 @@ public final class Http {
         }
     }
 
+    /** Gmail вернул 403/429 quota: запросы надо прекратить и подождать, а не повторять. */
+    public static final class RateLimited extends IOException {
+        public final long retryAfterMs;
+
+        RateLimited(String message, long retryAfterMs) {
+            super(message);
+            this.retryAfterMs = retryAfterMs <= 0L ? 45_000L : retryAfterMs;
+        }
+    }
+
+    private static String rateLimitedMessage(String body) {
+        if (body == null || body.isEmpty()) return "Google ограничил частоту запросов";
+        String one = body.replace('\n', ' ').trim();
+        return "Google ограничил частоту запросов: "
+                + (one.length() > 220 ? one.substring(0, 220) + "…" : one);
+    }
+
+    static long retryAfterMs(String header) {
+        if (header == null || header.trim().isEmpty()) return 0L;
+        try {
+            long seconds = (long) Double.parseDouble(header.trim());
+            if (seconds < 5L) seconds = 5L;
+            if (seconds > 300L) seconds = 300L;
+            return seconds * 1000L;
+        } catch (Exception e) {
+            return 0L;
+        }
+    }
+
+    /** Похоже ли сообщение об ошибке на ответ про исчерпанный лимит запросов. */
+    public static boolean isQuotaError(int code, String body) {
+        if (code != 403 && code != 429) return false;
+        if (body == null) return true;
+        String b = body.toLowerCase(java.util.Locale.US);
+        return b.contains("quota") || b.contains("rate_limit") || b.contains("ratelimit")
+                || b.contains("exceeded") || b.contains("userRateLimitExceeded");
+    }
+
     public static final class Response {
         public final int code;
         public final String body;
@@ -76,6 +114,11 @@ public final class Http {
                     continue;
                 }
                 if (code < 200 || code >= 300) {
+                    if (isQuotaError(code, text)) {
+                        // лимит запросов: повторять бессмысленно — только ждать
+                        throw new RateLimited(rateLimitedMessage(text),
+                                retryAfterMs(conn.getHeaderField("Retry-After")));
+                    }
                     throw new HttpException(code, text);
                 }
                 return new Response(code, text);

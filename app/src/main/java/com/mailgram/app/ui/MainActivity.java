@@ -323,7 +323,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         if (id == R.id.action_sync) {
             if (syncBar != null) syncBar.setVisibility(View.VISIBLE);
-            SyncEngine.get(this).syncNow();
+            // ручное обновление — единственное, что имеет право идти в обход интервала
+            SyncEngine.get(this).syncNow(true);
             return true;
         }
         if (id == R.id.action_search) {
@@ -356,7 +357,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             return;
         }
         Ui.safely(this, this::refresh);
-        Ui.safely(this, () -> SyncEngine.get(this).syncNow());
+        Ui.safely(this, () -> SyncEngine.get(this).syncNow(true));
         Ui.safely(this, this::startPolling);
     }
 
@@ -378,10 +379,10 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             @Override
             public void run() {
                 Ui.safely(MainActivity.this, () -> SyncEngine.get(MainActivity.this).syncNow());
-                handler.postDelayed(this, 10000);
+                handler.postDelayed(this, 45_000L);
             }
         };
-        handler.postDelayed(poller, 10000);
+        handler.postDelayed(poller, 25_000L);
     }
 
     private void refresh() {

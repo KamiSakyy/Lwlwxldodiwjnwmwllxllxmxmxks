@@ -202,6 +202,32 @@ public final class Prefs {
         p(ctx).edit().remove("pin_hash").remove("pin_salt").apply();
     }
 
+    /**
+     * До какой минуты нельзя дёргать Gmail (лимит «Units per minute per user» = 6000).
+     * Ставится, когда API ответил 403/429 quota — синхронизация переждёт, вместо шквала запросов.
+     */
+    public static long quotaPauseUntil(Context ctx) {
+        return p(ctx).getLong("quota_pause_until", 0L);
+    }
+
+    /** Возвращает сколько осталось ждать (мс); 0 — можно работать. */
+    public static synchronized long quotaPauseRemaining(Context ctx) {
+        long until = quotaPauseUntil(ctx);
+        long left = until - System.currentTimeMillis();
+        return left > 0 ? left : 0L;
+    }
+
+    public static synchronized void quotaPause(Context ctx, long millis) {
+        long until = System.currentTimeMillis() + Math.max(0L, millis);
+        long prev = quotaPauseUntil(ctx);
+        // только увеличиваем: параллельные потоки не должны сокращать паузу друг друга
+        p(ctx).edit().putLong("quota_pause_until", Math.max(until, prev)).apply();
+    }
+
+    public static synchronized void quotaResume(Context ctx) {
+        if (quotaPauseUntil(ctx) != 0L) p(ctx).edit().putLong("quota_pause_until", 0L).apply();
+    }
+
     /** Итог последней синхронизации: сколько писем просмотрено и добавлено. */
     public static void recordSyncStats(Context ctx, int scanned, int added) {
         p(ctx).edit().putInt("sync_scanned", scanned).putInt("sync_added", added).apply();
