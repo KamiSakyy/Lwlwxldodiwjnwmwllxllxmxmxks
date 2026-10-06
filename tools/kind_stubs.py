@@ -77,3 +77,5 @@ print(f"Стабов переведено в interface: {changed_i}; конфл�
 # trigger
 
 # trigger final
+
+# trigger conveyor
