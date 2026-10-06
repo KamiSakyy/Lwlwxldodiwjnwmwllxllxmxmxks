@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     env:
-      APK_PATH: ${{ runner.temp }}/com.vkontakte.android_58503_rs.apk
-      JADX_OUT: ${{ runner.temp }}/vk-jadx
+      APK_NAME: com.vkontakte.android_58503_rs.apk
+      JADX_DIRECTORY: vk-jadx
       TRASHBOX_APK_URL: https://trashbox.ru/files30/2659901/com.vkontakte.android_58503_rs.apk/
       EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
 
@@ -42,6 +42,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          APK_PATH="$RUNNER_TEMP/$APK_NAME"
           curl --fail --location --retry 3 --retry-delay 2 --max-time 900 \
             --user-agent 'Mozilla/5.0 (compatible; GitHubActions APK static review)' \
             "$TRASHBOX_APK_URL" \
@@ -66,6 +67,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          APK_PATH="$RUNNER_TEMP/$APK_NAME"
           sdk_root="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
           if [[ -z "$sdk_root" || ! -d "$sdk_root/build-tools" ]]; then
             echo 'Android build-tools are unavailable on this runner; refusing to skip signature verification.' >&2
@@ -102,6 +104,8 @@ jobs:
           JAVA_OPTS: -Xmx5g
         run: |
           set -euo pipefail
+          APK_PATH="$RUNNER_TEMP/$APK_NAME"
+          JADX_OUT="$RUNNER_TEMP/$JADX_DIRECTORY"
           mkdir -p "$JADX_OUT"
           if ! "$RUNNER_TEMP/jadx/bin/jadx" \
             --threads-count 2 \
@@ -117,11 +121,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          APK_PATH="$RUNNER_TEMP/$APK_NAME"
+          JADX_OUT="$RUNNER_TEMP/$JADX_DIRECTORY"
           python3 handoff/analyze_decompiled.py "$JADX_OUT" "$APK_PATH"
 
       - name: Remove temporary APK and decompiled tree
         if: always()
         shell: bash
         run: |
-          rm -rf "$APK_PATH" "$JADX_OUT" "$RUNNER_TEMP/jadx" "$RUNNER_TEMP/jadx.zip" \
+          rm -rf "$RUNNER_TEMP/$APK_NAME" "$RUNNER_TEMP/$JADX_DIRECTORY" \
+            "$RUNNER_TEMP/jadx" "$RUNNER_TEMP/jadx.zip" \
             "$RUNNER_TEMP/jadx.log" "$RUNNER_TEMP/apk-signature.txt"
