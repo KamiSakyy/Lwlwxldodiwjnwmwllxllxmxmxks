@@ -272,7 +272,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                List<com.mailgram.app.store.Store.Hit> hits =
+                java.util.List<Store.Hit> hits =
                         Store.get(MainActivity.this).searchMessages(s.toString(), 40);
                 if (s.toString().trim().length() < 2) {
                     results.setText("");
