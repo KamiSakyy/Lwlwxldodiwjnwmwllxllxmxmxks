@@ -61,6 +61,10 @@ jobs:
             "platforms;android-36" "build-tools;36.0.0" "platform-tools" \
             "ndk;28.2.13676358" "cmake;3.22.1" | tail -3
           echo "BT=$SDK/build-tools/36.0.0" >> "$GITHUB_ENV"
+          echo "=== Доступные cmake в SDK ==="
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" --list 2>/dev/null | grep -i "cmake;" | head -10 || true
+          echo "=== Установленный NDK ==="
+          ls "$SDK/ndk/" 2>/dev/null || true
 
       - name: "Скачивание Node.js 24 под arm64 (digidem/nodejs-mobile)"
         run: |
@@ -150,6 +154,34 @@ jobs:
           name: GitHub-RU-Studio-927-apk
           path: ${{ env.APK_PATH }}
           retention-days: 90
+
+      - name: "Диагностика в репозиторий (лог сборки)"
+        if: always()
+        run: |
+          set +e
+          mkdir -p handoff/studio-diag
+          if [ -f /tmp/studio-build-log.txt ]; then
+            cp /tmp/studio-build-log.txt handoff/studio-diag/build-log.txt
+            tail -200 /tmp/studio-build-log.txt > handoff/studio-diag/build-log-tail.txt
+            grep -n -B3 -A25 -E "FAILED|FAILURE:|error:|Error:|Exception|What went wrong" /tmp/studio-build-log.txt | head -150 > handoff/studio-diag/errors.txt
+          else
+            echo "NO BUILD LOG (упало до Gradle)" > handoff/studio-diag/build-log.txt
+          fi
+          {
+            echo "run=${{ github.run_number }}"
+            echo "job_status=${{ job.status }}"
+            echo "node=${NODE_STATUS:-?} react=${REACT_STATUS:-?} vue=${VUE_STATUS:-?}"
+          } > handoff/studio-diag/meta.txt
+          git config user.name "kami-bot"
+          git config user.email "kami-bot@users.noreply.github.com"
+          git add handoff/studio-diag/
+          if git diff --cached --quiet; then
+            echo "diag: без изменений"
+          else
+            git commit -m "diag: studio build log run ${{ github.run_number }} [skip ci]"
+            git pull --rebase origin "${{ github.ref_name }}" || true
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
 
       - name: "GitHub Release: studio-modern (APK для скачивания)"
         run: |
