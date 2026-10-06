@@ -30,6 +30,7 @@
         <item name="colorGlassStrong">@color/glass_dark_strong</item>
         <item name="colorGlassBorder">@color/glass_border_dark</item>
         <item name="colorWallpaperCore">@color/wallpaper_core_dark</item>
+        <item name="colorWallpaperIndigo">@color/wallpaper_indigo_dark</item>
         <item name="colorWallpaperGlow">@color/wallpaper_glow_dark</item>
         <item name="colorWallpaperGlow2">@color/wallpaper_glow2_dark</item>
         <item name="colorBubbleOutTop">@color/bubble_out_top_dark</item>

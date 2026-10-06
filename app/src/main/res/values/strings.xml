@@ -261,4 +261,10 @@
     <string name="unpinned_chat">Чат откреплён</string>
     <string name="muted_chat">Уведомления выключены</string>
     <string name="unmuted_chat">Уведомления включены</string>
+    <string name="settings_wallpaper">Обои чата</string>
+    <string name="wallpaper_glow">Свечения</string>
+    <string name="wallpaper_black">Чистый чёрный</string>
+    <string name="wallpaper_indigo">Глубокая синева</string>
+    <string name="link_failed">Не удалось открыть ссылку</string>
+    <string name="export_failed">Не удалось выгрузить переписку</string>
 </resources>

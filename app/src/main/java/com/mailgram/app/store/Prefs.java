@@ -94,13 +94,29 @@ public final class Prefs {
         p(ctx).edit().putBoolean("animations", on).apply();
     }
 
-    /** Пузыри: 0 — как в iOS (со «хвостиком»), 1 — сжатые (радиус 14). */
-    public static int bubbleStyle(Context ctx) {
-        return p(ctx).getInt("bubble_style", 0);
+    /** Обои чата: свечения, чистый чёрный или глубокая синева. */
+    public static final String WALLPAPER_GLOW = "glow";
+    public static final String WALLPAPER_BLACK = "black";
+    public static final String WALLPAPER_INDIGO = "indigo";
+
+    public static String wallpaper(Context ctx) {
+        return p(ctx).getString("wallpaper", WALLPAPER_GLOW);
     }
 
-    public static void setBubbleStyle(Context ctx, int style) {
-        p(ctx).edit().putInt("bubble_style", style).apply();
+    public static void setWallpaper(Context ctx, String value) {
+        p(ctx).edit().putString("wallpaper", value).apply();
+    }
+
+    /** Ресурс обоев для текущего выбора. */
+    public static int wallpaperRes(Context ctx) {
+        switch (wallpaper(ctx)) {
+            case WALLPAPER_BLACK:
+                return com.mailgram.app.R.drawable.bg_wallpaper_black;
+            case WALLPAPER_INDIGO:
+                return com.mailgram.app.R.drawable.bg_wallpaper_indigo;
+            default:
+                return com.mailgram.app.R.drawable.bg_chat_wallpaper;
+        }
     }
 
     /** Хеш PIN-кода (соль + SHA-256), пустая строка — блокировка выключена. */

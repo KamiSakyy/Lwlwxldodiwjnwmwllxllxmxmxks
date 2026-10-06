@@ -62,7 +62,12 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(this, SetupOauthActivity.class)));
         findViewById(R.id.btn_diag).setOnClickListener(v -> startProbe(true));
         updateStatus();
-        startProbe(false);
+        // Никаких проверок при запуске: показываем только ранее сохранённый результат.
+        // Живая диагностика — по кнопке, если вход действительно не проходит.
+        Auth.Probe cachedProbe = Auth.cachedProbe(this);
+        if (cachedProbe != null) {
+            onProbe(cachedProbe);
+        }
     }
 
     @Override

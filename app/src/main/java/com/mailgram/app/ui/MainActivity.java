@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             return;
         }
         setContentView(R.layout.activity_main);
+        Ui.applyWallpaper(this, R.id.main_root);
         Ui.applySystemBars(this, findViewById(R.id.main_toolbar), null);
 
         toolbar = findViewById(R.id.main_toolbar);

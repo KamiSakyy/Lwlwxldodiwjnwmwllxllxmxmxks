@@ -285,6 +285,22 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 ? ctx.getResources().getColor(R.color.bubble_out_text_dark)
                 : resolveOnSurface(ctx);
 
+        // ---- карточка ссылки: домен и путь, нажатие открывает браузер ----
+        String url = m.deleted ? null : firstUrl(m.text);
+        if (url != null) {
+            h.linkChip.setVisibility(View.VISIBLE);
+            h.linkChip.setText(prettyUrl(url));
+            h.linkChip.setTextColor(m.outgoing ? 0xFFFFFFFF
+                    : ctx.getResources().getColor(R.color.accent));
+            final String target = url;
+            h.linkChip.setOnClickListener(v -> {
+                Anim.haptic(v, false);
+                openUrl(v.getContext(), target);
+            });
+        } else {
+            h.linkChip.setVisibility(View.GONE);
+        }
+
         // ---- отметка «Переслано» ----
         if (m.forwarded && !m.deleted) {
             h.forwarded.setVisibility(View.VISIBLE);
@@ -623,6 +639,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     static class MessageHolder extends RecyclerView.ViewHolder {
         final LinearLayout container;
         final TextView forwarded;
+        final TextView linkChip;
         final LinearLayout replyQuote;
         final View replyStrip;
         final TextView replyName;
@@ -652,6 +669,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             super(itemView);
             container = itemView.findViewById(R.id.msg_container);
             forwarded = itemView.findViewById(R.id.msg_forwarded);
+            linkChip = itemView.findViewById(R.id.msg_link_chip);
             replyQuote = itemView.findViewById(R.id.msg_reply_quote);
             replyStrip = itemView.findViewById(R.id.msg_reply_strip);
             replyName = itemView.findViewById(R.id.msg_reply_name);
@@ -676,6 +694,47 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             state = itemView.findViewById(R.id.msg_state);
             swipeIcon = itemView.findViewById(R.id.msg_swipe_icon);
             selectCheck = itemView.findViewById(R.id.msg_select_check);
+        }
+    }
+
+    // ---------------- ссылки ----------------
+
+    private static final java.util.regex.Pattern URL_PATTERN = java.util.regex.Pattern.compile(
+            "https?://[^\\s<>\"]+", java.util.regex.Pattern.CASE_INSENSITIVE);
+
+    /** Первая ссылка в тексте, без хвостовой пунктуации. */
+    static String firstUrl(String text) {
+        if (text == null || text.isEmpty()) return null;
+        java.util.regex.Matcher matcher = URL_PATTERN.matcher(text);
+        if (!matcher.find()) return null;
+        String url = matcher.group();
+        while (!url.isEmpty() && ".,;:!?)\"'\u00bb".indexOf(url.charAt(url.length() - 1)) >= 0) {
+            url = url.substring(0, url.length() - 1);
+        }
+        return url.isEmpty() ? null : url;
+    }
+
+    /** Короткая подпись ссылки: домен и путь, как в карточке Telegram. */
+    static String prettyUrl(String url) {
+        try {
+            android.net.Uri uri = android.net.Uri.parse(url);
+            String host = uri.getHost() == null ? url : uri.getHost();
+            String path = uri.getEncodedPath() == null ? "" : uri.getEncodedPath();
+            String shown = host + path;
+            return shown.length() > 44 ? shown.substring(0, 44) + "\u2026" : shown;
+        } catch (Exception e) {
+            return url;
+        }
+    }
+
+    private static void openUrl(android.content.Context ctx, String url) {
+        try {
+            android.content.Intent intent = new android.content.Intent(
+                    android.content.Intent.ACTION_VIEW, android.net.Uri.parse(url));
+            intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
+            ctx.startActivity(intent);
+        } catch (Exception e) {
+            Ui.toast(ctx, ctx.getString(R.string.link_failed));
         }
     }
 }

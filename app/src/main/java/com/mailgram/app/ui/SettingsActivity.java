@@ -36,6 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        Ui.applyWallpaper(this, R.id.settings_root);
         Ui.applySystemBars(this, findViewById(R.id.settings_toolbar), null);
 
         MaterialToolbar toolbar = findViewById(R.id.settings_toolbar);
@@ -92,6 +93,10 @@ public class SettingsActivity extends AppCompatActivity {
         MaterialSwitch animations = findViewById(R.id.switch_animations);
         animations.setChecked(Prefs.animations(this));
         animations.setOnCheckedChangeListener((buttonView, isChecked) -> Prefs.setAnimations(this, isChecked));
+
+        final TextView wallpaperValue = findViewById(R.id.settings_wallpaper_value);
+        wallpaperValue.setText(wallpaperLabel(Prefs.wallpaper(this)));
+        findViewById(R.id.row_wallpaper).setOnClickListener(v -> wallpaperDialog(wallpaperValue));
 
         MaterialSwitch notifications = findViewById(R.id.switch_notifications);
         notifications.setChecked(Prefs.notifications(this));
@@ -166,6 +171,33 @@ public class SettingsActivity extends AppCompatActivity {
             default:
                 return getString(R.string.poll_30);
         }
+    }
+
+    /** Название обоев для строки настроек. */
+    private String wallpaperLabel(String value) {
+        if (Prefs.WALLPAPER_BLACK.equals(value)) return getString(R.string.wallpaper_black);
+        if (Prefs.WALLPAPER_INDIGO.equals(value)) return getString(R.string.wallpaper_indigo);
+        return getString(R.string.wallpaper_glow);
+    }
+
+    /** Выбор обоев: применяются сразу, без перезапуска. */
+    private void wallpaperDialog(final TextView valueView) {
+        final String[] values = {Prefs.WALLPAPER_GLOW, Prefs.WALLPAPER_BLACK, Prefs.WALLPAPER_INDIGO};
+        final String[] labels = {getString(R.string.wallpaper_glow),
+                getString(R.string.wallpaper_black), getString(R.string.wallpaper_indigo)};
+        int checked = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (values[i].equals(Prefs.wallpaper(this))) checked = i;
+        }
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.settings_wallpaper)
+                .setSingleChoiceItems(labels, checked, (d, which) -> {
+                    Prefs.setWallpaper(this, values[which]);
+                    valueView.setText(labels[which]);
+                    Ui.applyWallpaper(this, R.id.settings_root);
+                    d.dismiss();
+                })
+                .show();
     }
 
     private void pollDialog(final TextView label) {

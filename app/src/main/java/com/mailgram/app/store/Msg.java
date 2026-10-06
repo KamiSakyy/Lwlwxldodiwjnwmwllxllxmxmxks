@@ -45,6 +45,8 @@ public final class Msg {
     public boolean deleted;
     /** Сообщение переслано из другого чата. */
     public boolean forwarded;
+    /** Своя реакция на это сообщение (чтобы повторное нажатие её снимало). */
+    public String myReaction = "";
     /** Реакции: эмодзи → сколько раз поставили. */
     public final Map<String, Integer> reactions = new LinkedHashMap<>();
     public int state = STATE_SENT;
@@ -77,6 +79,7 @@ public final class Msg {
             if (pinned) o.put("pin", true);
             if (deleted) o.put("del", true);
             if (forwarded) o.put("fwd", true);
+            if (myReaction != null && !myReaction.isEmpty()) o.put("mre", myReaction);
             if (!reactions.isEmpty()) {
                 JSONObject r = new JSONObject();
                 for (Map.Entry<String, Integer> e : reactions.entrySet()) {
@@ -118,6 +121,7 @@ public final class Msg {
         m.pinned = o.optBoolean("pin", false);
         m.deleted = o.optBoolean("del", false);
         m.forwarded = o.optBoolean("fwd", false);
+        m.myReaction = o.optString("mre", "");
         JSONObject react = o.optJSONObject("react");
         if (react != null) {
             java.util.Iterator<String> keys = react.keys();

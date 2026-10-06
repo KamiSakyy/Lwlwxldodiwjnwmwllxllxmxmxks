@@ -253,6 +253,24 @@
             android:textSize="16sp"
             android:lineSpacingExtra="2dp" />
 
+        <TextView
+            android:id="@+id/msg_link_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_quote_glass"
+            android:ellipsize="end"
+            android:maxWidth="260dp"
+            android:paddingStart="10dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="7dp"
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
         <LinearLayout
             android:id="@+id/msg_reactions"
             android:layout_width="wrap_content"

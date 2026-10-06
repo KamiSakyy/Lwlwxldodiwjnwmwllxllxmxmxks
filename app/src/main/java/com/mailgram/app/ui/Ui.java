@@ -69,6 +69,14 @@ public final class Ui {
         ViewCompat.requestApplyInsets(view);
     }
 
+    /** Ставит выбранные обои на корень экрана. */
+    public static void applyWallpaper(android.app.Activity activity, int rootId) {
+        View root = activity.findViewById(rootId);
+        if (root != null) {
+            root.setBackgroundResource(com.mailgram.app.store.Prefs.wallpaperRes(activity));
+        }
+    }
+
     public static int dp(Context ctx, float value) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value,
                 ctx.getResources().getDisplayMetrics());
@@ -196,13 +204,21 @@ public final class Ui {
         }
     }
 
-    /** Разбивает строку цифр на читаемые группы по пять знаков. */
+    /**
+     * Приводит номер безопасности к виду «группы по пять цифр»: нативный код уже отдаёт
+     * разделённые группы, поэтому сначала собираем только цифры, потом группируем заново.
+     */
     public static String formatSafetyNumber(String raw) {
         if (raw == null || raw.isEmpty()) return "";
-        StringBuilder out = new StringBuilder();
+        StringBuilder digits = new StringBuilder();
         for (int i = 0; i < raw.length(); i++) {
+            char c = raw.charAt(i);
+            if (c >= '0' && c <= '9') digits.append(c);
+        }
+        StringBuilder out = new StringBuilder();
+        for (int i = 0; i < digits.length(); i++) {
             if (i > 0 && i % 5 == 0) out.append(' ');
-            out.append(raw.charAt(i));
+            out.append(digits.charAt(i));
         }
         return out.toString();
     }

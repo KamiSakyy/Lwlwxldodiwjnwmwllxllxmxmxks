@@ -333,7 +333,8 @@ public final class SyncEngine {
                 if (!outgoing) {
                     String targetMid = payload.optString("mid", "");
                     if ("react".equals(type)) {
-                        store.applyReaction(chat.uid, targetMid, payload.optString("e", ""));
+                        store.applyReaction(chat.uid, targetMid, payload.optString("e", ""),
+                                payload.optBoolean("rm", false));
                     } else if ("edit".equals(type)) {
                         store.applyEdit(chat.uid, targetMid, payload.optString("b", ""));
                     } else if ("pin".equals(type)) {
@@ -519,14 +520,20 @@ public final class SyncEngine {
 
     /** Реакция на сообщение (уходит письмом-«реакцией», в ленте не отображается). */
     public void sendReaction(final Chat chat, final Msg target, final String emoji, final SendCallback callback) {
+        final boolean remove = emoji != null && emoji.equals(target.myReaction);
         JSONObject payload = new JSONObject();
         try {
             payload.put("t", "react");
             payload.put("mid", target.mid);
             payload.put("e", emoji);
+            if (remove) payload.put("rm", true);
         } catch (Exception ignored) {
         }
-        Store.get(app).addOwnReaction(chat.uid, target.mid, emoji);
+        if (remove) {
+            Store.get(app).removeOwnReaction(chat.uid, target.mid, emoji);
+        } else {
+            Store.get(app).addOwnReaction(chat.uid, target.mid, emoji);
+        }
         notifyDirty();
         sendControl(chat, payload, callback);
     }

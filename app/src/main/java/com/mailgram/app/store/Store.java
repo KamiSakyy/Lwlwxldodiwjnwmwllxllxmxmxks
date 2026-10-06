@@ -254,17 +254,46 @@ public final class Store {
     }
 
     /** Реакция собеседника: +1 к счётчику эмодзи у указанного сообщения. */
-    public synchronized void applyReaction(String uid, String mid, String emoji) {
+    /** Реакция собеседника: добавить или (remove) снять. */
+    public synchronized void applyReaction(String uid, String mid, String emoji, boolean remove) {
         Msg target = byMid(uid, mid);
         if (target == null || emoji == null || emoji.isEmpty()) return;
-        Integer current = target.reactions.get(emoji);
-        target.reactions.put(emoji, current == null ? 1 : current + 1);
+        if (remove) {
+            Integer current = target.reactions.get(emoji);
+            if (current == null || current <= 1) {
+                target.reactions.remove(emoji);
+            } else {
+                target.reactions.put(emoji, current - 1);
+            }
+        } else {
+            Integer current = target.reactions.get(emoji);
+            target.reactions.put(emoji, current == null ? 1 : current + 1);
+        }
         persistChat(uid);
     }
 
-    /** Своя реакция (локально, без ожидания письма). */
+    /** Своя реакция: повторное нажатие тем же эмодзи снимает её (как в Telegram). */
     public synchronized void addOwnReaction(String uid, String mid, String emoji) {
-        applyReaction(uid, mid, emoji);
+        Msg target = byMid(uid, mid);
+        if (target == null || emoji == null || emoji.isEmpty()) return;
+        if (emoji.equals(target.myReaction)) {
+            removeOwnReaction(uid, mid, emoji);
+            return;
+        }
+        if (target.myReaction != null && !target.myReaction.isEmpty()) {
+            applyReaction(uid, mid, target.myReaction, true);
+        }
+        target.myReaction = emoji;
+        applyReaction(uid, mid, emoji, false);
+    }
+
+    /** Снять свою реакцию с сообщения. */
+    public synchronized void removeOwnReaction(String uid, String mid, String emoji) {
+        Msg target = byMid(uid, mid);
+        if (target == null || emoji == null || emoji.isEmpty()) return;
+        applyReaction(uid, mid, emoji, true);
+        if (emoji.equals(target.myReaction)) target.myReaction = "";
+        persistChat(uid);
     }
 
     public synchronized void applyEdit(String uid, String mid, String newText) {
