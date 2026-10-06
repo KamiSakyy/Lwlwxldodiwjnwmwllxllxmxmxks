@@ -162,10 +162,15 @@ for (f, meth) in stat_m:
     if e[0] is None: continue
     s = e[0]
     cls = os.path.basename(f)[:-5]
+    def _st(mm):
+        g2 = (mm.group(2) or "").strip()
+        if g2:
+            last = g2.split()[-1].split("<")[0]
+            if last == cls:   # конструктор — не трогаем
+                return mm.group(0)
+        return "%sstatic %s%s(" % (mm.group(1), mm.group(2) or "Object ", meth)
     s2 = re.sub(r"((?:public|protected|private)\s+)(?!static)([\w<>\[\], .?]+\s+)?%s\s*\(" % re.escape(meth),
-                lambda mm: "%sstatic %s%s(" % (mm.group(1), mm.group(2) or "", meth)
-                if (mm.group(2) or "").split()[-1].split("<")[0] != cls else mm.group(0),
-                s, count=1)
+                _st, s, count=1)
     if s2 != s:
         e[0] = s2; e[1] = True; stats["B-staticize"] += 1
 
