@@ -8,7 +8,7 @@ public class SwitchPreferenceCompat {
     public SwitchPreferenceCompat() {
     }
 
-    public <T0> T0 H(Object... a) {
+    public static  H(Object... a) {
         return null;
     }
 }

@@ -8,11 +8,11 @@ public class a0 {
     public a0() {
     }
 
-    public <T0> T0 z(Object... a) {
+    public static  z(Object... a) {
         return null;
     }
 
-    public <T0> T0 D(Object... a) {
+    public static  D(Object... a) {
         return null;
     }
     public Object D(Object p1, Object p2) { return null; }

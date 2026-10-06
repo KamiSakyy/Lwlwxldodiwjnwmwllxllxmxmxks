@@ -8,7 +8,7 @@ public class NavHostFragment {
     public NavHostFragment() {
     }
 
-    public <T0> T0 s4(Object... a) {
+    public static  s4(Object... a) {
         return null;
     }
 }

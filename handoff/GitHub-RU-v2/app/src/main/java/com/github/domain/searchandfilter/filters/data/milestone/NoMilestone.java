@@ -90,7 +90,7 @@ public final class NoMilestone implements v2 {
         }
     }
 
-    public <T0> T0 s(Object... a) {
+    public static  s(Object... a) {
         return null;
     }
 }

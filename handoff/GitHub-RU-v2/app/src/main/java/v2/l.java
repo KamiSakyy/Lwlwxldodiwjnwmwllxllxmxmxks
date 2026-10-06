@@ -8,23 +8,23 @@ public class l {
     public l() {
     }
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
 
-    public <T0> T0 e(Object... a) {
+    public static  e(Object... a) {
         return null;
     }
 
-    public <T0> T0 l(Object... a) {
+    public static  l(Object... a) {
         return null;
     }
 
-    public <T0> T0 k(Object... a) {
+    public static  k(Object... a) {
         return null;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
 

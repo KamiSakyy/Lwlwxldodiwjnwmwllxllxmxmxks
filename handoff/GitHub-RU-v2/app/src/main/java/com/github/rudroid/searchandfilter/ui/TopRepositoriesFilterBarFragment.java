@@ -47,7 +47,7 @@ public final class TopRepositoriesFilterBarFragment extends Hilt_TopRepositories
     }
 
 
-    public <T0> T0 g4(Object... a) {
+    public static  g4(Object... a) {
         return null;
     }
 }

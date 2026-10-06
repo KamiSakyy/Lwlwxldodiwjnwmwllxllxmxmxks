@@ -173,15 +173,15 @@ public final class FilterSortFragment extends Hilt_FilterSortFragment<y2> implem
         }
     }
 
-    public <T0> T0 n4(Object... a) {
+    public static  n4(Object... a) {
         return null;
     }
 
-    public <T0> T0 i4(Object... a) {
+    public static  i4(Object... a) {
         return null;
     }
 
-    public <T0> T0 B4(Object... a) {
+    public static  B4(Object... a) {
         return null;
     }
 }

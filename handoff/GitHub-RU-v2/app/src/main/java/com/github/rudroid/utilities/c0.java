@@ -7,7 +7,7 @@ public final class c0 {
         return rVar.f(androidx.compose.foundation.layout.b.J(f0.o.f(w1.o.a, j, d2.a0.b), new a7.i(5)));
     }
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
 

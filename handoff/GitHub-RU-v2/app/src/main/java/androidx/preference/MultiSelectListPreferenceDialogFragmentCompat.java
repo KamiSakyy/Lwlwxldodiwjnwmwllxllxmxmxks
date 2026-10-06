@@ -75,7 +75,7 @@ public class MultiSelectListPreferenceDialogFragmentCompat extends PreferenceDia
         bundle.putCharSequenceArray("MultiSelectListPreferenceDialogFragmentCompat.entryValues", this.U0);
     }
 
-    public <T0> T0 A4(Object... a) {
+    public static  A4(Object... a) {
         return null;
     }
 }

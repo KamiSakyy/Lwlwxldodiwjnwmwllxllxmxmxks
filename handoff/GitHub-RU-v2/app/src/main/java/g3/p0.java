@@ -59,11 +59,11 @@ public final class p0 {
         return h(this.f24684a);
     }
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 

@@ -7,11 +7,11 @@ package u5;
 public class i {
     public i() {}
 
-    public <T0> T0 d(Object... a) {
+    public static  d(Object... a) {
         return null;
     }
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
     public Object d = null;

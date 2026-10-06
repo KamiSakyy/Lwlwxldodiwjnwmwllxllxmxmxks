@@ -27,11 +27,11 @@ public final class SettingsActivity extends c<ic.j0> {
         }
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 
-    public <T0> T0 H(Object... a) {
+    public static  H(Object... a) {
         return null;
     }
 }

@@ -154,7 +154,7 @@ public final class PullRequestsWidgetSettingsActivity extends m0 {
         }
     }
 
-    public <T0> T0 getIntent(Object... a) {
+    public static  getIntent(Object... a) {
         return null;
     }
 }

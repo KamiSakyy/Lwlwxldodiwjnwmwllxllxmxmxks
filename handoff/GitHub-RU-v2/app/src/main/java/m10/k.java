@@ -6,7 +6,7 @@ public final class k {
         return l.a;
     }
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
 }

@@ -8,7 +8,7 @@ public class ViewPager2 {
     public ViewPager2() {
     }
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
 }

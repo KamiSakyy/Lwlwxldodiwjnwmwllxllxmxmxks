@@ -212,55 +212,55 @@ public class MaterialToolbar extends Toolbar {
         textView.layout(i, textView.getTop(), i2, textView.getBottom());
     }
 
-    public <T0> T0 getBackground(Object... a) {
+    public static  getBackground(Object... a) {
         return null;
     }
 
-    public <T0> T0 getElevation(Object... a) {
+    public static  getElevation(Object... a) {
         return null;
     }
 
-    public <T0> T0 setBackground(Object... a) {
+    public static  setBackground(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTitle(Object... a) {
+    public static  getTitle(Object... a) {
         return null;
     }
 
-    public <T0> T0 getSubtitle(Object... a) {
+    public static  getSubtitle(Object... a) {
         return null;
     }
 
-    public <T0> T0 getMeasuredWidth(Object... a) {
+    public static  getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingLeft(Object... a) {
+    public static  getPaddingLeft(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingRight(Object... a) {
+    public static  getPaddingRight(Object... a) {
         return null;
     }
 
-    public <T0> T0 getChildCount(Object... a) {
+    public static  getChildCount(Object... a) {
         return null;
     }
 
-    public <T0> T0 getChildAt(Object... a) {
+    public static  getChildAt(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLogo(Object... a) {
+    public static  getLogo(Object... a) {
         return null;
     }
 
-    public <T0> T0 requestLayout(Object... a) {
+    public static  requestLayout(Object... a) {
         return null;
     }
 
-    public <T0> T0 getNavigationIcon(Object... a) {
+    public static  getNavigationIcon(Object... a) {
         return null;
     }
 }

@@ -8,11 +8,11 @@ public class SidecarProvider {
     public SidecarProvider() {
     }
 
-    public <T0> T0 getSidecarImpl(Object... a) {
+    public static  getSidecarImpl(Object... a) {
         return null;
     }
 
-    public <T0> T0 getApiVersion(Object... a) {
+    public static  getApiVersion(Object... a) {
         return null;
     }
 }

@@ -276,59 +276,59 @@ public class ShapeableImageView extends v implements y {
         setStrokeWidth(getResources().getDimensionPixelSize(i));
     }
 
-    public <T0> T0 setImageDrawable(Object... a) {
+    public static  setImageDrawable(Object... a) {
         return null;
     }
 
-    public <T0> T0 setBackgroundColor(Object... a) {
+    public static  setBackgroundColor(Object... a) {
         return null;
     }
 
-    public <T0> T0 setImageURI(Object... a) {
+    public static  setImageURI(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOnClickListener(Object... a) {
+    public static  setOnClickListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 setLayerType(Object... a) {
+    public static  setLayerType(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOutlineProvider(Object... a) {
+    public static  setOutlineProvider(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLayoutDirection(Object... a) {
+    public static  getLayoutDirection(Object... a) {
         return null;
     }
 
-    public <T0> T0 getDrawableState(Object... a) {
+    public static  getDrawableState(Object... a) {
         return null;
     }
 
-    public <T0> T0 isLayoutDirectionResolved(Object... a) {
+    public static  isLayoutDirectionResolved(Object... a) {
         return null;
     }
 
-    public <T0> T0 isPaddingRelative(Object... a) {
+    public static  isPaddingRelative(Object... a) {
         return null;
     }
 
-    public <T0> T0 getWidth(Object... a) {
+    public static  getWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 getHeight(Object... a) {
+    public static  getHeight(Object... a) {
         return null;
     }
 
-    public <T0> T0 invalidateOutline(Object... a) {
+    public static  invalidateOutline(Object... a) {
         return null;
     }
 
-    public <T0> T0 getContext(Object... a) {
+    public static  getContext(Object... a) {
         return null;
     }
 }

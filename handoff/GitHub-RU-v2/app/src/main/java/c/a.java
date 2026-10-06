@@ -15,35 +15,35 @@ public final class a implements c {
 
     public static Object a;
 
-    public <T0> T0 arrayIndexScale(Object... a) {
+    public static  arrayIndexScale(Object... a) {
         return null;
     }
 
-    public <T0> T0 getInt(Object... a) {
+    public static  getInt(Object... a) {
         return null;
     }
 
-    public <T0> T0 putInt(Object... a) {
+    public static  putInt(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLong(Object... a) {
+    public static  getLong(Object... a) {
         return null;
     }
 
-    public <T0> T0 putLong(Object... a) {
+    public static  putLong(Object... a) {
         return null;
     }
 
-    public <T0> T0 getObject(Object... a) {
+    public static  getObject(Object... a) {
         return null;
     }
 
-    public <T0> T0 putObject(Object... a) {
+    public static  putObject(Object... a) {
         return null;
     }
 
-    public <T0> T0 arrayBaseOffset(Object... a) {
+    public static  arrayBaseOffset(Object... a) {
         return null;
     }
 }

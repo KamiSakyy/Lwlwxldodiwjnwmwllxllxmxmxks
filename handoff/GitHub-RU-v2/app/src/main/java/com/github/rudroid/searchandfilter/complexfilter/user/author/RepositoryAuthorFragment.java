@@ -104,11 +104,11 @@ public final class RepositoryAuthorFragment extends Hilt_RepositoryAuthorFragmen
     }
 
 
-    public <T0> T0 j4(Object... a) {
+    public static  j4(Object... a) {
         return null;
     }
 
-    public <T0> T0 f0(Object... a) {
+    public static  f0(Object... a) {
         return null;
     }
 }

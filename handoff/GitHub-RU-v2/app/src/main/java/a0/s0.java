@@ -8,31 +8,31 @@ public class s0 {
     public s0() {
     }
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
 
-    public <T0> T0 y(Object... a) {
+    public static  y(Object... a) {
         return null;
     }
 
-    public <T0> T0 m(Object... a) {
+    public static  m(Object... a) {
         return null;
     }
 
-    public <T0> T0 i(Object... a) {
+    public static  i(Object... a) {
         return null;
     }
 
-    public <T0> T0 n(Object... a) {
+    public static  n(Object... a) {
         return null;
     }
 
-    public <T0> T0 o(Object... a) {
+    public static  o(Object... a) {
         return null;
     }
 
-    public <T0> T0 l(Object... a) {
+    public static  l(Object... a) {
         return null;
     }
     public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
@@ -54,4 +54,7 @@ public class s0 {
     public Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object x(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object p(Object... p) { return null; }
+    public static Object w(Object... p) { return null; }
+    public static Object z(Object... p) { return null; }
 }

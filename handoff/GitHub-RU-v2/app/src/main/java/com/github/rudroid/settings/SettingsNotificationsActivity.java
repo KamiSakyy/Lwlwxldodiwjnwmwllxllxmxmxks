@@ -28,7 +28,7 @@ public final class SettingsNotificationsActivity extends g<ic.j0> {
         }
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 }

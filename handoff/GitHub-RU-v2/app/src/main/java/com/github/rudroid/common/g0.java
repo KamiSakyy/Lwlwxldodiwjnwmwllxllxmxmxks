@@ -8,7 +8,7 @@ public class g0 {
     public g0() {
     }
 
-    public <T0> T0 values(Object... a) {
+    public static  values(Object... a) {
         return null;
     }
 

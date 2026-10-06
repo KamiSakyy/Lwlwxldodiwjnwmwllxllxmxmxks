@@ -10,13 +10,13 @@ public class a0 {
 
     public static d2.l0 b;
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 
     public static Object b;
 
-    public <T0> T0 e(Object... a) {
+    public static  e(Object... a) {
         return null;
     }
     public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }

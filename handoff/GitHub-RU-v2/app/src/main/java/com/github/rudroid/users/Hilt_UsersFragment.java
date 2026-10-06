@@ -56,7 +56,7 @@ public abstract class Hilt_UsersFragment extends GitHubFragment {
         return this.A0;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
 }

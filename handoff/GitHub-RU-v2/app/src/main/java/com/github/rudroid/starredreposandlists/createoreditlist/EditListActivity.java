@@ -42,7 +42,7 @@ public final class EditListActivity extends d1<ic.d0> {
         com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(EditListRoute.class), x61.s.r, k71.x.a(EditListFragment.class)), yVar.j, yVar, s4);
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 }

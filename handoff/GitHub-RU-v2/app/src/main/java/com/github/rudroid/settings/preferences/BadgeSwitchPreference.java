@@ -99,15 +99,15 @@ public final class BadgeSwitchPreference extends SwitchPreference {
     }
 
 
-    public <T0> T0 H(Object... a) {
+    public static  H(Object... a) {
         return null;
     }
 
-    public <T0> T0 D(Object... a) {
+    public static  D(Object... a) {
         return null;
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 }

@@ -34,11 +34,11 @@ public class SupportErrorDialogFragment extends DialogFragment {
         return this.L0;
     }
 
-    public <T0> T0 y3(Object... a) {
+    public static  y3(Object... a) {
         return null;
     }
 
-    public <T0> T0 z4(Object... a) {
+    public static  z4(Object... a) {
         return null;
     }
 }

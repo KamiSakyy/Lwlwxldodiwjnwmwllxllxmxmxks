@@ -103,7 +103,7 @@ public abstract class u {
         }
     }
 
-    public <T0> T0 getValue(Object... a) {
+    public static  getValue(Object... a) {
         return null;
     }
 }

@@ -56,7 +56,7 @@ public abstract class Hilt_FocusedFilterExplainerBottomSheet extends BaseCompose
         return this.P0;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
     public Object P3(Object p1) { return null; }

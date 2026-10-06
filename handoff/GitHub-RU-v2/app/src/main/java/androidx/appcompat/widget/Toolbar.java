@@ -8,51 +8,51 @@ public class Toolbar {
     public Toolbar() {
     }
 
-    public <T0> T0 setNavigationIcon(Object... a) {
+    public static  setNavigationIcon(Object... a) {
         return null;
     }
 
-    public <T0> T0 setCollapseIcon(Object... a) {
+    public static  setCollapseIcon(Object... a) {
         return null;
     }
 
-    public <T0> T0 setNavigationOnClickListener(Object... a) {
+    public static  setNavigationOnClickListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTitleMarginStart(Object... a) {
+    public static  getTitleMarginStart(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTitleMarginEnd(Object... a) {
+    public static  getTitleMarginEnd(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTitleMarginTop(Object... a) {
+    public static  getTitleMarginTop(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTitleMarginBottom(Object... a) {
+    public static  getTitleMarginBottom(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTitle(Object... a) {
+    public static  getTitle(Object... a) {
         return null;
     }
 
-    public <T0> T0 getSubtitle(Object... a) {
+    public static  getSubtitle(Object... a) {
         return null;
     }
 
-    public <T0> T0 onAttachedToWindow(Object... a) {
+    public static  onAttachedToWindow(Object... a) {
         return null;
     }
 
-    public <T0> T0 onLayout(Object... a) {
+    public static  onLayout(Object... a) {
         return null;
     }
 
-    public <T0> T0 setElevation(Object... a) {
+    public static  setElevation(Object... a) {
         return null;
     }
 }

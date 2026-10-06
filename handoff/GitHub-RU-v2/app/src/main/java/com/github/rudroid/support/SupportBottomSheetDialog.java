@@ -105,23 +105,23 @@ public final class SupportBottomSheetDialog extends BaseBottomSheetDialog implem
     }
 
 
-    public <T0> T0 g4(Object... a) {
+    public static  g4(Object... a) {
         return null;
     }
 
-    public <T0> T0 C3(Object... a) {
+    public static  C3(Object... a) {
         return null;
     }
 
-    public <T0> T0 i4(Object... a) {
+    public static  i4(Object... a) {
         return null;
     }
 
-    public <T0> T0 F3(Object... a) {
+    public static  F3(Object... a) {
         return null;
     }
 
-    public <T0> T0 s4(Object... a) {
+    public static  s4(Object... a) {
         return null;
     }
     public Object s4() { return null; }

@@ -57,11 +57,11 @@ public final class ProjectFieldType {
         return this.rawValue;
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
 
-    public <T0> T0 name(Object... a) {
+    public static  name(Object... a) {
         return null;
     }
     public Object name() { return null; }

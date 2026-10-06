@@ -92,23 +92,23 @@ public final class z {
         return sb3;
     }
 
-    public <T0> T0 h(Object... a) {
+    public static  h(Object... a) {
         return null;
     }
 
-    public <T0> T0 j(Object... a) {
+    public static  j(Object... a) {
         return null;
     }
 
-    public <T0> T0 g(Object... a) {
+    public static  g(Object... a) {
         return null;
     }
 
-    public <T0> T0 i(Object... a) {
+    public static  i(Object... a) {
         return null;
     }
 
-    public <T0> T0 d(Object... a) {
+    public static  d(Object... a) {
         return null;
     }
     public Object a = null;

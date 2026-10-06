@@ -8,15 +8,15 @@ public class BCSSLSocket {
     public BCSSLSocket() {
     }
 
-    public <T0> T0 getApplicationProtocol(Object... a) {
+    public static  getApplicationProtocol(Object... a) {
         return null;
     }
 
-    public <T0> T0 getParameters(Object... a) {
+    public static  getParameters(Object... a) {
         return null;
     }
 
-    public <T0> T0 setParameters(Object... a) {
+    public static  setParameters(Object... a) {
         return null;
     }
 }

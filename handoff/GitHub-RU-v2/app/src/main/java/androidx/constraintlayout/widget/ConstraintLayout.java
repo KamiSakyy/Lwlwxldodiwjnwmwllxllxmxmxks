@@ -8,35 +8,35 @@ public class ConstraintLayout {
     public ConstraintLayout() {
     }
 
-    public <T0> T0 getPaddingLeft(Object... a) {
+    public static  getPaddingLeft(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingTop(Object... a) {
+    public static  getPaddingTop(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingRight(Object... a) {
+    public static  getPaddingRight(Object... a) {
         return null;
     }
 
-    public <T0> T0 onVisibilityChanged(Object... a) {
+    public static  onVisibilityChanged(Object... a) {
         return null;
     }
 
-    public <T0> T0 addView(Object... a) {
+    public static  addView(Object... a) {
         return null;
     }
 
-    public <T0> T0 onFinishInflate(Object... a) {
+    public static  onFinishInflate(Object... a) {
         return null;
     }
 
-    public <T0> T0 onViewRemoved(Object... a) {
+    public static  onViewRemoved(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOnClickListener(Object... a) {
+    public static  setOnClickListener(Object... a) {
         return null;
     }
 }

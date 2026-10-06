@@ -336,47 +336,47 @@ public class CarouselLayoutManager extends w0 implements i1 {
         }
     }
 
-    public <T0> T0 t0(Object... a) {
+    public static  t0(Object... a) {
         return null;
     }
 
-    public <T0> T0 G0(Object... a) {
+    public static  G0(Object... a) {
         return null;
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 
-    public <T0> T0 v(Object... a) {
+    public static  v(Object... a) {
         return null;
     }
 
-    public <T0> T0 u(Object... a) {
+    public static  u(Object... a) {
         return null;
     }
 
-    public <T0> T0 F(Object... a) {
+    public static  F(Object... a) {
         return null;
     }
 
-    public <T0> T0 o0(Object... a) {
+    public static  o0(Object... a) {
         return null;
     }
 
-    public <T0> T0 J(Object... a) {
+    public static  J(Object... a) {
         return null;
     }
 
-    public <T0> T0 G(Object... a) {
+    public static  G(Object... a) {
         return null;
     }
 
-    public <T0> T0 H(Object... a) {
+    public static  H(Object... a) {
         return null;
     }
 
-    public <T0> T0 I(Object... a) {
+    public static  I(Object... a) {
         return null;
     }
 }

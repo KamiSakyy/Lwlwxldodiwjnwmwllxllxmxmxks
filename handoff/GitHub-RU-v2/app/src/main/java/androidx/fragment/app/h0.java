@@ -8,7 +8,7 @@ public class h0 {
     public h0() {
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 }

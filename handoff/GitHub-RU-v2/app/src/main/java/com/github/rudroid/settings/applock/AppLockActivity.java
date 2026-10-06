@@ -50,15 +50,15 @@ public final class AppLockActivity extends c0 {
         }
     }
 
-    public <T0> T0 getLayoutInflater(Object... a) {
+    public static  getLayoutInflater(Object... a) {
         return null;
     }
 
-    public <T0> T0 m(Object... a) {
+    public static  m(Object... a) {
         return null;
     }
 
-    public <T0> T0 startActivity(Object... a) {
+    public static  startActivity(Object... a) {
         return null;
     }
 }

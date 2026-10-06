@@ -66,27 +66,27 @@ public final class CreateNewListActivity extends b1 {
     }
 
 
-    public <T0> T0 f0(Object... a) {
+    public static  f0(Object... a) {
         return null;
     }
 
-    public <T0> T0 K0(Object... a) {
+    public static  K0(Object... a) {
         return null;
     }
 
-    public <T0> T0 g0(Object... a) {
+    public static  g0(Object... a) {
         return null;
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 
-    public <T0> T0 getString(Object... a) {
+    public static  getString(Object... a) {
         return null;
     }
 
-    public <T0> T0 c0(Object... a) {
+    public static  c0(Object... a) {
         return null;
     }
 }

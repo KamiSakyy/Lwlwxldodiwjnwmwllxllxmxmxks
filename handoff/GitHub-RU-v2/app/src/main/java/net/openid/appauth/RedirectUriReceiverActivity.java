@@ -18,7 +18,7 @@ public class RedirectUriReceiverActivity extends k.i {
         finish();
     }
 
-    public <T0> T0 startActivity(Object... a) {
+    public static  startActivity(Object... a) {
         return null;
     }
 }

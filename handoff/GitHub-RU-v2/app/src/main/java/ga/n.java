@@ -8,7 +8,7 @@ public class n {
     public n() {
     }
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
     public Object d(Object p1) { return null; }

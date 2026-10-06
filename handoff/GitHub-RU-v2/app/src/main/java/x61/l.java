@@ -552,7 +552,7 @@ public abstract class l extends c0 {
 
     public static Object r;
 
-    public <T0> T0 J(Object... a) {
+    public static  J(Object... a) {
         return null;
     }
     public Object a() { return null; }

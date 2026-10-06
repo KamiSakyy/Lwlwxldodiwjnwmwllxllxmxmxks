@@ -23,19 +23,19 @@ public final class s {
     public s(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8) {
     }
 
-    public <T0> T0 h(Object... a) {
+    public static  h(Object... a) {
         return null;
     }
 
-    public <T0> T0 f(Object... a) {
+    public static  f(Object... a) {
         return null;
     }
 
-    public <T0> T0 j(Object... a) {
+    public static  j(Object... a) {
         return null;
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
     public Object A() { return null; }

@@ -26,7 +26,7 @@ public abstract class a {
 
     public static Object c;
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
     public static final Object e = null;

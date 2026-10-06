@@ -16,7 +16,7 @@ public abstract class a {
         return Trace.isEnabled();
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 }

@@ -34,11 +34,11 @@ public final class j {
 
     public static Object p;
 
-    public <T0> T0 f(Object... a) {
+    public static  f(Object... a) {
         return null;
     }
 
-    public <T0> T0 i(Object... a) {
+    public static  i(Object... a) {
         return null;
     }
     public Object a() { return null; }

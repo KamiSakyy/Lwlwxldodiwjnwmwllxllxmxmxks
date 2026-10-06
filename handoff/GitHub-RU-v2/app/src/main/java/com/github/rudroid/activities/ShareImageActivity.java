@@ -39,19 +39,19 @@ public final class ShareImageActivity extends o1 {
         finish();
     }
 
-    public <T0> T0 getIntent(Object... a) {
+    public static  getIntent(Object... a) {
         return null;
     }
 
-    public <T0> T0 b0(Object... a) {
+    public static  b0(Object... a) {
         return null;
     }
 
-    public <T0> T0 startActivity(Object... a) {
+    public static  startActivity(Object... a) {
         return null;
     }
 
-    public <T0> T0 finish(Object... a) {
+    public static  finish(Object... a) {
         return null;
     }
 }

@@ -8,31 +8,31 @@ public class Preference {
     public Preference() {
     }
 
-    public <T0> T0 n(Object... a) {
+    public static  n(Object... a) {
         return null;
     }
 
-    public <T0> T0 r(Object... a) {
+    public static  r(Object... a) {
         return null;
     }
 
-    public <T0> T0 s(Object... a) {
+    public static  s(Object... a) {
         return null;
     }
 
-    public <T0> T0 B(Object... a) {
+    public static  B(Object... a) {
         return null;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
 
-    public <T0> T0 D(Object... a) {
+    public static  D(Object... a) {
         return null;
     }
 
-    public <T0> T0 u(Object... a) {
+    public static  u(Object... a) {
         return null;
     }
     public Object s() { return null; }

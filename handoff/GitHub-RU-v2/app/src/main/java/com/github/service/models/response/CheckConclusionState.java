@@ -53,11 +53,11 @@ public final class CheckConclusionState {
         return this.rawValue;
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
 
-    public <T0> T0 n(Object... a) {
+    public static  n(Object... a) {
         return null;
     }
 }

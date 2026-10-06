@@ -8,119 +8,119 @@ public class AppCompatTextView {
     public AppCompatTextView() {
     }
 
-    public <T0> T0 setText(Object... a) {
+    public static  setText(Object... a) {
         return null;
     }
 
-    public <T0> T0 onDetachedFromWindow(Object... a) {
+    public static  onDetachedFromWindow(Object... a) {
         return null;
     }
 
-    public <T0> T0 onDraw(Object... a) {
+    public static  onDraw(Object... a) {
         return null;
     }
 
-    public <T0> T0 setVisibility(Object... a) {
+    public static  setVisibility(Object... a) {
         return null;
     }
 
-    public <T0> T0 getContentDescription(Object... a) {
+    public static  getContentDescription(Object... a) {
         return null;
     }
 
-    public <T0> T0 getCurrentTextColor(Object... a) {
+    public static  getCurrentTextColor(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTextColors(Object... a) {
+    public static  getTextColors(Object... a) {
         return null;
     }
 
-    public <T0> T0 setTextAppearance(Object... a) {
+    public static  setTextAppearance(Object... a) {
         return null;
     }
 
-    public <T0> T0 setTextColor(Object... a) {
+    public static  setTextColor(Object... a) {
         return null;
     }
 
-    public <T0> T0 setGravity(Object... a) {
+    public static  setGravity(Object... a) {
         return null;
     }
 
-    public <T0> T0 setPadding(Object... a) {
+    public static  setPadding(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaint(Object... a) {
+    public static  getPaint(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTextSize(Object... a) {
+    public static  getTextSize(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTypeface(Object... a) {
+    public static  getTypeface(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLetterSpacing(Object... a) {
+    public static  getLetterSpacing(Object... a) {
         return null;
     }
 
-    public <T0> T0 getMeasuredWidth(Object... a) {
+    public static  getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 setAccessibilityLiveRegion(Object... a) {
+    public static  setAccessibilityLiveRegion(Object... a) {
         return null;
     }
 
-    public <T0> T0 setContentDescription(Object... a) {
+    public static  setContentDescription(Object... a) {
         return null;
     }
 
-    public <T0> T0 setTypeface(Object... a) {
+    public static  setTypeface(Object... a) {
         return null;
     }
 
-    public <T0> T0 getContext(Object... a) {
+    public static  getContext(Object... a) {
         return null;
     }
 
-    public <T0> T0 setLineHeight(Object... a) {
+    public static  setLineHeight(Object... a) {
         return null;
     }
 
-    public <T0> T0 getBreakStrategy(Object... a) {
+    public static  getBreakStrategy(Object... a) {
         return null;
     }
 
-    public <T0> T0 setId(Object... a) {
+    public static  setId(Object... a) {
         return null;
     }
 
-    public <T0> T0 setLayoutParams(Object... a) {
+    public static  setLayoutParams(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingEnd(Object... a) {
+    public static  getPaddingEnd(Object... a) {
         return null;
     }
 
-    public <T0> T0 setPaddingRelative(Object... a) {
+    public static  setPaddingRelative(Object... a) {
         return null;
     }
 
-    public <T0> T0 getVisibility(Object... a) {
+    public static  getVisibility(Object... a) {
         return null;
     }
 
-    public <T0> T0 getText(Object... a) {
+    public static  getText(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingStart(Object... a) {
+    public static  getPaddingStart(Object... a) {
         return null;
     }
 }

@@ -474,27 +474,27 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
     }
 
 
-    public <T0> T0 finish(Object... a) {
+    public static  finish(Object... a) {
         return null;
     }
 
-    public <T0> T0 f0(Object... a) {
+    public static  f0(Object... a) {
         return null;
     }
 
-    public <T0> T0 K0(Object... a) {
+    public static  K0(Object... a) {
         return null;
     }
 
-    public <T0> T0 g0(Object... a) {
+    public static  g0(Object... a) {
         return null;
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 
-    public <T0> T0 startActivity(Object... a) {
+    public static  startActivity(Object... a) {
         return null;
     }
 }

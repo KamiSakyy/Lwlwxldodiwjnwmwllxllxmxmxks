@@ -8,23 +8,23 @@ public class d1 {
     public d1() {
     }
 
-    public <T0> T0 k(Object... a) {
+    public static  k(Object... a) {
         return null;
     }
 
-    public <T0> T0 i(Object... a) {
+    public static  i(Object... a) {
         return null;
     }
 
-    public <T0> T0 f(Object... a) {
+    public static  f(Object... a) {
         return null;
     }
 
-    public <T0> T0 h(Object... a) {
+    public static  h(Object... a) {
         return null;
     }
 
-    public <T0> T0 m(Object... a) {
+    public static  m(Object... a) {
         return null;
     }
 }

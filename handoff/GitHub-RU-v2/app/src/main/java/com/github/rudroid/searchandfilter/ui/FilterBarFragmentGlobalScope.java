@@ -16,7 +16,7 @@ public abstract class FilterBarFragmentGlobalScope extends Hilt_FilterBarFragmen
         throw null;
     }
 
-    public <T0> T0 A3(Object... a) {
+    public static  A3(Object... a) {
         return null;
     }
 }

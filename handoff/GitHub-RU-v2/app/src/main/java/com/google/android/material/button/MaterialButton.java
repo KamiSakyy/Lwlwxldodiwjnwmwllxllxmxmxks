@@ -1122,147 +1122,147 @@ public class MaterialButton extends o implements Checkable, y {
     }
 
 
-    public <T0> T0 getContext(Object... a) {
+    public static  getContext(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingStart(Object... a) {
+    public static  getPaddingStart(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingTop(Object... a) {
+    public static  getPaddingTop(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingEnd(Object... a) {
+    public static  getPaddingEnd(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaddingBottom(Object... a) {
+    public static  getPaddingBottom(Object... a) {
         return null;
     }
 
-    public <T0> T0 setPaddingRelative(Object... a) {
+    public static  setPaddingRelative(Object... a) {
         return null;
     }
 
-    public <T0> T0 setCompoundDrawablePadding(Object... a) {
+    public static  setCompoundDrawablePadding(Object... a) {
         return null;
     }
 
-    public <T0> T0 invalidate(Object... a) {
+    public static  invalidate(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTextAlignment(Object... a) {
+    public static  getTextAlignment(Object... a) {
         return null;
     }
 
-    public <T0> T0 getGravity(Object... a) {
+    public static  getGravity(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLineCount(Object... a) {
+    public static  getLineCount(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLayout(Object... a) {
+    public static  getLayout(Object... a) {
         return null;
     }
 
-    public <T0> T0 getPaint(Object... a) {
+    public static  getPaint(Object... a) {
         return null;
     }
 
-    public <T0> T0 getText(Object... a) {
+    public static  getText(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTransformationMethod(Object... a) {
+    public static  getTransformationMethod(Object... a) {
         return null;
     }
 
-    public <T0> T0 getParent(Object... a) {
+    public static  getParent(Object... a) {
         return null;
     }
 
-    public <T0> T0 getId(Object... a) {
+    public static  getId(Object... a) {
         return null;
     }
 
-    public <T0> T0 getDrawableState(Object... a) {
+    public static  getDrawableState(Object... a) {
         return null;
     }
 
-    public <T0> T0 getWidth(Object... a) {
+    public static  getWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 setCompoundDrawablesRelative(Object... a) {
+    public static  setCompoundDrawablesRelative(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLayoutDirection(Object... a) {
+    public static  getLayoutDirection(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLayoutParams(Object... a) {
+    public static  getLayoutParams(Object... a) {
         return null;
     }
 
-    public <T0> T0 isClickable(Object... a) {
+    public static  isClickable(Object... a) {
         return null;
     }
 
-    public <T0> T0 getMeasuredWidth(Object... a) {
+    public static  getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 getMeasuredHeight(Object... a) {
+    public static  getMeasuredHeight(Object... a) {
         return null;
     }
 
-    public <T0> T0 getResources(Object... a) {
+    public static  getResources(Object... a) {
         return null;
     }
 
-    public <T0> T0 isEnabled(Object... a) {
+    public static  isEnabled(Object... a) {
         return null;
     }
 
-    public <T0> T0 setMaxLines(Object... a) {
+    public static  setMaxLines(Object... a) {
         return null;
     }
 
-    public <T0> T0 setEllipsize(Object... a) {
+    public static  setEllipsize(Object... a) {
         return null;
     }
 
-    public <T0> T0 setTag(Object... a) {
+    public static  setTag(Object... a) {
         return null;
     }
 
-    public <T0> T0 setText(Object... a) {
+    public static  setText(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOnClickListener(Object... a) {
+    public static  setOnClickListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 setId(Object... a) {
+    public static  setId(Object... a) {
         return null;
     }
 
-    public <T0> T0 setLayoutParams(Object... a) {
+    public static  setLayoutParams(Object... a) {
         return null;
     }
 
-    public <T0> T0 setEnabled(Object... a) {
+    public static  setEnabled(Object... a) {
         return null;
     }
 
-    public <T0> T0 getVisibility(Object... a) {
+    public static  getVisibility(Object... a) {
         return null;
     }
 }

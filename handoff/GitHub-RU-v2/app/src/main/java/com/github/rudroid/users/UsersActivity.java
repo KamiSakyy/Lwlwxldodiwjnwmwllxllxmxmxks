@@ -105,7 +105,7 @@ public final class UsersActivity extends b<d0> {
         s4.g(yVar.h());
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 }

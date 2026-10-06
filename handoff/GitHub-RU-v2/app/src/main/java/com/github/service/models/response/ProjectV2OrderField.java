@@ -40,7 +40,7 @@ public final class ProjectV2OrderField {
         return (ProjectV2OrderField[]) $VALUES.clone();
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
 }

@@ -46,7 +46,7 @@ public final class NotificationsFilterBarFragment extends Hilt_NotificationsFilt
     }
 
 
-    public <T0> T0 g4(Object... a) {
+    public static  g4(Object... a) {
         return null;
     }
 }

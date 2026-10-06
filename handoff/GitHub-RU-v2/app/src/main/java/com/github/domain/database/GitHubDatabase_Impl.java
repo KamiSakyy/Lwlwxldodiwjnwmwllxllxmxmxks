@@ -691,11 +691,11 @@ public final class GitHubDatabase_Impl extends GitHubDatabase {
     }
 
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
 
-    public <T0> T0 o(Object... a) {
+    public static  o(Object... a) {
         return null;
     }
 }

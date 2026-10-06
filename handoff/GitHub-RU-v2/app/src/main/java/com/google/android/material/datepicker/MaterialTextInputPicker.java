@@ -35,7 +35,7 @@ public final class MaterialTextInputPicker<S> extends PickerFragment<S> {
         bundle.putParcelable("CALENDAR_CONSTRAINTS_KEY", this.v0);
     }
 
-    public <T0> T0 y3(Object... a) {
+    public static  y3(Object... a) {
         return null;
     }
 }

@@ -54,7 +54,7 @@ public final class CopilotCodeReviewFeedbackOption {
         return this.rawValue;
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
 }

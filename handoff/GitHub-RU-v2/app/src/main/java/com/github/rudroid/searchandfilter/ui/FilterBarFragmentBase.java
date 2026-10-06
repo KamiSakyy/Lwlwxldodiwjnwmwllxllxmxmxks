@@ -70,27 +70,27 @@ public abstract class FilterBarFragmentBase extends BindingFragment implements c
         this.E0 = w0.a(H4().M, F3(), wVar, new d(this, null));
     }
 
-    public <T0> T0 B4(Object... a) {
+    public static  B4(Object... a) {
         return null;
     }
 
-    public <T0> T0 F3(Object... a) {
+    public static  F3(Object... a) {
         return null;
     }
 
-    public <T0> T0 y3(Object... a) {
+    public static  y3(Object... a) {
         return null;
     }
 
-    public <T0> T0 i4(Object... a) {
+    public static  i4(Object... a) {
         return null;
     }
 
-    public <T0> T0 C3(Object... a) {
+    public static  C3(Object... a) {
         return null;
     }
 
-    public <T0> T0 D3(Object... a) {
+    public static  D3(Object... a) {
         return null;
     }
     public Object D3(Object p1, Object p2) { return null; }

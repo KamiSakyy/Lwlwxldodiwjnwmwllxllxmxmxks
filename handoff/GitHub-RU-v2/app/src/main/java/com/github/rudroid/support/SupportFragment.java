@@ -184,31 +184,31 @@ public final class SupportFragment extends Hilt_SupportFragment<e4> implements a
     }
 
 
-    public <T0> T0 g4(Object... a) {
+    public static  g4(Object... a) {
         return null;
     }
 
-    public <T0> T0 B4(Object... a) {
+    public static  B4(Object... a) {
         return null;
     }
 
-    public <T0> T0 D3(Object... a) {
+    public static  D3(Object... a) {
         return null;
     }
 
-    public <T0> T0 F3(Object... a) {
+    public static  F3(Object... a) {
         return null;
     }
 
-    public <T0> T0 r4(Object... a) {
+    public static  r4(Object... a) {
         return null;
     }
 
-    public <T0> T0 u4(Object... a) {
+    public static  u4(Object... a) {
         return null;
     }
 
-    public <T0> T0 C3(Object... a) {
+    public static  C3(Object... a) {
         return null;
     }
 }

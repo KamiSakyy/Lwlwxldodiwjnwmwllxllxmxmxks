@@ -90,123 +90,123 @@ public class CheckableImageButton extends u implements Checkable {
         setChecked(!this.u);
     }
 
-    public <T0> T0 setAlpha(Object... a) {
+    public static  setAlpha(Object... a) {
         return null;
     }
 
-    public <T0> T0 setTag(Object... a) {
+    public static  setTag(Object... a) {
         return null;
     }
 
-    public <T0> T0 setImageDrawable(Object... a) {
+    public static  setImageDrawable(Object... a) {
         return null;
     }
 
-    public <T0> T0 p(Object... a) {
+    public static  p(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOnClickListener(Object... a) {
+    public static  setOnClickListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 sendAccessibilityEvent(Object... a) {
+    public static  sendAccessibilityEvent(Object... a) {
         return null;
     }
 
-    public <T0> T0 getContentDescription(Object... a) {
+    public static  getContentDescription(Object... a) {
         return null;
     }
 
-    public <T0> T0 getDrawable(Object... a) {
+    public static  getDrawable(Object... a) {
         return null;
     }
 
-    public <T0> T0 setActivated(Object... a) {
+    public static  setActivated(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOnLongClickListener(Object... a) {
+    public static  setOnLongClickListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 setScaleType(Object... a) {
+    public static  setScaleType(Object... a) {
         return null;
     }
 
-    public <T0> T0 setContentDescription(Object... a) {
+    public static  setContentDescription(Object... a) {
         return null;
     }
 
-    public <T0> T0 hasOnClickListeners(Object... a) {
+    public static  hasOnClickListeners(Object... a) {
         return null;
     }
 
-    public <T0> T0 setFocusable(Object... a) {
+    public static  setFocusable(Object... a) {
         return null;
     }
 
-    public <T0> T0 setClickable(Object... a) {
+    public static  setClickable(Object... a) {
         return null;
     }
 
-    public <T0> T0 setLongClickable(Object... a) {
+    public static  setLongClickable(Object... a) {
         return null;
     }
 
-    public <T0> T0 setImportantForAccessibility(Object... a) {
+    public static  setImportantForAccessibility(Object... a) {
         return null;
     }
 
-    public <T0> T0 getDrawableState(Object... a) {
+    public static  getDrawableState(Object... a) {
         return null;
     }
 
-    public <T0> T0 performClick(Object... a) {
+    public static  performClick(Object... a) {
         return null;
     }
 
-    public <T0> T0 jumpDrawablesToCurrentState(Object... a) {
+    public static  jumpDrawablesToCurrentState(Object... a) {
         return null;
     }
 
-    public <T0> T0 hasFocus(Object... a) {
+    public static  hasFocus(Object... a) {
         return null;
     }
 
-    public <T0> T0 setId(Object... a) {
+    public static  setId(Object... a) {
         return null;
     }
 
-    public <T0> T0 getLayoutParams(Object... a) {
+    public static  getLayoutParams(Object... a) {
         return null;
     }
 
-    public <T0> T0 getVisibility(Object... a) {
+    public static  getVisibility(Object... a) {
         return null;
     }
 
-    public <T0> T0 isActivated(Object... a) {
+    public static  isActivated(Object... a) {
         return null;
     }
 
-    public <T0> T0 setVisibility(Object... a) {
+    public static  setVisibility(Object... a) {
         return null;
     }
 
-    public <T0> T0 setOnFocusChangeListener(Object... a) {
+    public static  setOnFocusChangeListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 getMeasuredWidth(Object... a) {
+    public static  getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 setMinimumWidth(Object... a) {
+    public static  setMinimumWidth(Object... a) {
         return null;
     }
 
-    public <T0> T0 setMinimumHeight(Object... a) {
+    public static  setMinimumHeight(Object... a) {
         return null;
     }
 }

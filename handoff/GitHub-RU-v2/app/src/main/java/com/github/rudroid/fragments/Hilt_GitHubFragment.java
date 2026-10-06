@@ -8,7 +8,7 @@ public class Hilt_GitHubFragment {
     public Hilt_GitHubFragment() {
     }
 
-    public <T0> T0 P3(Object... a) {
+    public static  P3(Object... a) {
         return null;
     }
 }

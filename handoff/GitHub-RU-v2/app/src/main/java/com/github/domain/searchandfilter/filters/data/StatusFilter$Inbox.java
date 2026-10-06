@@ -55,7 +55,7 @@ public final class StatusFilter$Inbox extends i {
         parcel.writeInt(1);
     }
 
-    public <T0> T0 s(Object... a) {
+    public static  s(Object... a) {
         return null;
     }
 }

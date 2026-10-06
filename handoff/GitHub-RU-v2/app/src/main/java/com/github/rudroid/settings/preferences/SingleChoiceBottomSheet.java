@@ -171,7 +171,7 @@ public final class SingleChoiceBottomSheet extends BaseComposeBottomSheetDialog 
     }
 
 
-    public <T0> T0 n4(Object... a) {
+    public static  n4(Object... a) {
         return null;
     }
 }

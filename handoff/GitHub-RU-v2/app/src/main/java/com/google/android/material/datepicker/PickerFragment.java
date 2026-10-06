@@ -7,7 +7,7 @@ import java.util.LinkedHashSet;
 abstract class PickerFragment<S> extends a0 {
     public final LinkedHashSet t0 = new LinkedHashSet();
 
-    public <T0> T0 n4(Object... a) {
+    public static  n4(Object... a) {
         return null;
     }
     public Object P3(Object p1) { return null; }

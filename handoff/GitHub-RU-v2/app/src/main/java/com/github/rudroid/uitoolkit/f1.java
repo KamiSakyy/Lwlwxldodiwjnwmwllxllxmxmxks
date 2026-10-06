@@ -234,7 +234,7 @@ public final class f1 {
 
     public static Object a;
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
 }

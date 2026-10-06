@@ -85,35 +85,35 @@ public class SwitchMaterial extends SwitchCompat {
         }
     }
 
-    public <T0> T0 setOnCheckedChangeListener(Object... a) {
+    public static  setOnCheckedChangeListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 getResources(Object... a) {
+    public static  getResources(Object... a) {
         return null;
     }
 
-    public <T0> T0 getParent(Object... a) {
+    public static  getParent(Object... a) {
         return null;
     }
 
-    public <T0> T0 getThumbTintList(Object... a) {
+    public static  getThumbTintList(Object... a) {
         return null;
     }
 
-    public <T0> T0 setThumbTintList(Object... a) {
+    public static  setThumbTintList(Object... a) {
         return null;
     }
 
-    public <T0> T0 getTrackTintList(Object... a) {
+    public static  getTrackTintList(Object... a) {
         return null;
     }
 
-    public <T0> T0 setTrackTintList(Object... a) {
+    public static  setTrackTintList(Object... a) {
         return null;
     }
 
-    public <T0> T0 setChecked(Object... a) {
+    public static  setChecked(Object... a) {
         return null;
     }
 }

@@ -18,7 +18,7 @@ public class l {
 
     public static Object e;
 
-    public <T0> T0 g(Object... a) {
+    public static  g(Object... a) {
         return null;
     }
 

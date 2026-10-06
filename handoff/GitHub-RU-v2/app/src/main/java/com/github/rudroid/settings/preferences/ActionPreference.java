@@ -47,7 +47,7 @@ public final class ActionPreference extends Preference {
         this.h0 = "";
     }
 
-    public <T0> T0 j(Object... a) {
+    public static  j(Object... a) {
         return null;
     }
 }

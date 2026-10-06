@@ -8,15 +8,15 @@ public class q {
     public q() {
     }
 
-    public <T0> T0 t(Object... a) {
+    public static  t(Object... a) {
         return null;
     }
 
-    public <T0> T0 j(Object... a) {
+    public static  j(Object... a) {
         return null;
     }
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 

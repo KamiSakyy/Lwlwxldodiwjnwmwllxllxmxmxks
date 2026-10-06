@@ -57,7 +57,7 @@ public abstract class Hilt_ChooseShortcutRepositoryFragment<T extends k5.f> exte
         return this.B0;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
 }

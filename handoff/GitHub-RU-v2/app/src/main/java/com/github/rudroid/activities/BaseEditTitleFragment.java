@@ -90,19 +90,19 @@ public abstract class BaseEditTitleFragment extends BindingFragment {
         ((ic.s2) B4()).P.setSelection(H4().n().length());
     }
 
-    public <T0> T0 B4(Object... a) {
+    public static  B4(Object... a) {
         return null;
     }
 
-    public <T0> T0 F3(Object... a) {
+    public static  F3(Object... a) {
         return null;
     }
 
-    public <T0> T0 i4(Object... a) {
+    public static  i4(Object... a) {
         return null;
     }
 
-    public <T0> T0 C3(Object... a) {
+    public static  C3(Object... a) {
         return null;
     }
 }

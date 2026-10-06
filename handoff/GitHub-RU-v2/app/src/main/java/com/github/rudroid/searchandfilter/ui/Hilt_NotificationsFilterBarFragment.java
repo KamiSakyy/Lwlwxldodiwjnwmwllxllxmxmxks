@@ -60,7 +60,7 @@ public abstract class Hilt_NotificationsFilterBarFragment extends FilterBarFragm
         return this.L0;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
 }

@@ -100,15 +100,15 @@ public final class UserOrOrgRepositoriesFilterBarFragment extends Hilt_UserOrOrg
     }
 
 
-    public <T0> T0 j4(Object... a) {
+    public static  j4(Object... a) {
         return null;
     }
 
-    public <T0> T0 f0(Object... a) {
+    public static  f0(Object... a) {
         return null;
     }
 
-    public <T0> T0 A3(Object... a) {
+    public static  A3(Object... a) {
         return null;
     }
 }

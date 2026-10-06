@@ -40,7 +40,7 @@ public final class xz {
         return (xz[]) w.clone();
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
     public Object ordinal() { return null; }

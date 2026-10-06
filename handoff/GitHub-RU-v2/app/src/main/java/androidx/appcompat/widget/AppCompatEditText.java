@@ -8,23 +8,23 @@ public class AppCompatEditText {
     public AppCompatEditText() {
     }
 
-    public <T0> T0 getFocusedRect(Object... a) {
+    public static  getFocusedRect(Object... a) {
         return null;
     }
 
-    public <T0> T0 getGlobalVisibleRect(Object... a) {
+    public static  getGlobalVisibleRect(Object... a) {
         return null;
     }
 
-    public <T0> T0 getHint(Object... a) {
+    public static  getHint(Object... a) {
         return null;
     }
 
-    public <T0> T0 onCreateInputConnection(Object... a) {
+    public static  onCreateInputConnection(Object... a) {
         return null;
     }
 
-    public <T0> T0 requestRectangleOnScreen(Object... a) {
+    public static  requestRectangleOnScreen(Object... a) {
         return null;
     }
 }

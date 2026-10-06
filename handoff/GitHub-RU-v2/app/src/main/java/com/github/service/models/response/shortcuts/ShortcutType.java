@@ -47,11 +47,11 @@ public final class ShortcutType {
         return this.value;
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
 
-    public <T0> T0 name(Object... a) {
+    public static  name(Object... a) {
         return null;
     }
 }

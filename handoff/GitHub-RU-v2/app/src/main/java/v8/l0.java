@@ -7,55 +7,55 @@ package v8;
 public class l0 {
     public l0() {}
 
-    public <T0> T0 t(Object... a) {
+    public static  t(Object... a) {
         return null;
     }
 
-    public <T0> T0 C(Object... a) {
+    public static  C(Object... a) {
         return null;
     }
 
-    public <T0> T0 x(Object... a) {
+    public static  x(Object... a) {
         return null;
     }
 
-    public <T0> T0 e(Object... a) {
+    public static  e(Object... a) {
         return null;
     }
 
-    public <T0> T0 F(Object... a) {
+    public static  F(Object... a) {
         return null;
     }
 
-    public <T0> T0 S(Object... a) {
+    public static  S(Object... a) {
         return null;
     }
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
 
-    public <T0> T0 a(Object... a) {
+    public static  a(Object... a) {
         return null;
     }
 
-    public <T0> T0 Q(Object... a) {
+    public static  Q(Object... a) {
         return null;
     }
 
-    public <T0> T0 T(Object... a) {
+    public static  T(Object... a) {
         return null;
     }
 
-    public <T0> T0 j(Object... a) {
+    public static  j(Object... a) {
         return null;
     }
 
-    public <T0> T0 K(Object... a) {
+    public static  K(Object... a) {
         return null;
     }
 
-    public <T0> T0 k(Object... a) {
+    public static  k(Object... a) {
         return null;
     }
     public Object A(Object p1) { return null; }

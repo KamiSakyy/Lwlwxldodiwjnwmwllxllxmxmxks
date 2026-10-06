@@ -8,29 +8,29 @@ public class p2 {
     public p2() {
     }
 
-    public <T0> T0 e(Object... a) {
+    public static  e(Object... a) {
         return null;
     }
 
-    public <T0> T0 o(Object... a) {
+    public static  o(Object... a) {
         return null;
     }
 
     public static Object a;
 
-    public <T0> T0 p(Object... a) {
+    public static  p(Object... a) {
         return null;
     }
 
-    public <T0> T0 d(Object... a) {
+    public static  d(Object... a) {
         return null;
     }
 
-    public <T0> T0 s(Object... a) {
+    public static  s(Object... a) {
         return null;
     }
 
-    public <T0> T0 f(Object... a) {
+    public static  f(Object... a) {
         return null;
     }
 

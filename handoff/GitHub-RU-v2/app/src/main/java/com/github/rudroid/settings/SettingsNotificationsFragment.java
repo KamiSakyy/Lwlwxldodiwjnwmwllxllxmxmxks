@@ -831,43 +831,43 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
     }
 
 
-    public <T0> T0 f4(Object... a) {
+    public static  f4(Object... a) {
         return null;
     }
 
-    public <T0> T0 t4(Object... a) {
+    public static  t4(Object... a) {
         return null;
     }
 
-    public <T0> T0 B3(Object... a) {
+    public static  B3(Object... a) {
         return null;
     }
 
-    public <T0> T0 i4(Object... a) {
+    public static  i4(Object... a) {
         return null;
     }
 
-    public <T0> T0 C3(Object... a) {
+    public static  C3(Object... a) {
         return null;
     }
 
-    public <T0> T0 D3(Object... a) {
+    public static  D3(Object... a) {
         return null;
     }
 
-    public <T0> T0 x3(Object... a) {
+    public static  x3(Object... a) {
         return null;
     }
 
-    public <T0> T0 F3(Object... a) {
+    public static  F3(Object... a) {
         return null;
     }
 
-    public <T0> T0 s4(Object... a) {
+    public static  s4(Object... a) {
         return null;
     }
 
-    public <T0> T0 E(Object... a) {
+    public static  E(Object... a) {
         return null;
     }
     public Object E(Object p1, Object p2) { return null; }

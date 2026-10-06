@@ -8,7 +8,7 @@ public class LinearLayoutManager {
     public LinearLayoutManager() {
     }
 
-    public <T0> T0 S0(Object... a) {
+    public static  S0(Object... a) {
         return null;
     }
 }

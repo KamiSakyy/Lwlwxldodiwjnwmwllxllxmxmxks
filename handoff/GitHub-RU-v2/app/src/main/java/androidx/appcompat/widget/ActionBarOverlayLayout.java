@@ -8,7 +8,7 @@ public class ActionBarOverlayLayout {
     public ActionBarOverlayLayout() {
     }
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
 }

@@ -86,19 +86,19 @@ public abstract class h0 {
     }
 
 
-    public <T0> T0 n(Object... a) {
+    public static  n(Object... a) {
         return null;
     }
 
-    public <T0> T0 d(Object... a) {
+    public static  d(Object... a) {
         return null;
     }
 
-    public <T0> T0 g(Object... a) {
+    public static  g(Object... a) {
         return null;
     }
 
-    public <T0> T0 m(Object... a) {
+    public static  m(Object... a) {
         return null;
     }
 }

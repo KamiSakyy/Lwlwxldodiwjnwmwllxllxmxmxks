@@ -471,7 +471,7 @@ public final class TwoFactorDialog extends w2.a {
     }
 
 
-    public <T0> T0 getContext(Object... a) {
+    public static  getContext(Object... a) {
         return null;
     }
 }

@@ -143,7 +143,7 @@ public abstract class q extends sy.u {
         }
     }
 
-    public <T0> T0 pShadow(Object... a) {
+    public static  pShadow(Object... a) {
         return null;
     }
 }

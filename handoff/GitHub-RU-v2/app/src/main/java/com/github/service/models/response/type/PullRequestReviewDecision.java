@@ -48,7 +48,7 @@ public final class PullRequestReviewDecision {
         return this.rawValue;
     }
 
-    public <T0> T0 ordinal(Object... a) {
+    public static  ordinal(Object... a) {
         return null;
     }
 }

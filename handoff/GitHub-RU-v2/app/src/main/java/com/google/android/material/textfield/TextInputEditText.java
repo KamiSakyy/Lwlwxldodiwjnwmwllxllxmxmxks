@@ -127,23 +127,23 @@ public class TextInputEditText extends AppCompatEditText {
         this.y = z;
     }
 
-    public <T0> T0 addTextChangedListener(Object... a) {
+    public static  addTextChangedListener(Object... a) {
         return null;
     }
 
-    public <T0> T0 getScrollX(Object... a) {
+    public static  getScrollX(Object... a) {
         return null;
     }
 
-    public <T0> T0 getScrollY(Object... a) {
+    public static  getScrollY(Object... a) {
         return null;
     }
 
-    public <T0> T0 setHint(Object... a) {
+    public static  setHint(Object... a) {
         return null;
     }
 
-    public <T0> T0 getHeight(Object... a) {
+    public static  getHeight(Object... a) {
         return null;
     }
 }

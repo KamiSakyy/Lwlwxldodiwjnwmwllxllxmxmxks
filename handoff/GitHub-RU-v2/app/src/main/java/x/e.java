@@ -98,35 +98,35 @@ public final class e extends q0 implements Map {
         }
     }
 
-    public <T0> T0 get(Object... a) {
+    public static  get(Object... a) {
         return null;
     }
 
-    public <T0> T0 put(Object... a) {
+    public static  put(Object... a) {
         return null;
     }
 
-    public <T0> T0 values(Object... a) {
+    public static  values(Object... a) {
         return null;
     }
 
-    public <T0> T0 clear(Object... a) {
+    public static  clear(Object... a) {
         return null;
     }
 
-    public <T0> T0 remove(Object... a) {
+    public static  remove(Object... a) {
         return null;
     }
 
-    public <T0> T0 isEmpty(Object... a) {
+    public static  isEmpty(Object... a) {
         return null;
     }
 
-    public <T0> T0 containsKey(Object... a) {
+    public static  containsKey(Object... a) {
         return null;
     }
 
-    public <T0> T0 keySet(Object... a) {
+    public static  keySet(Object... a) {
         return null;
     }
 }

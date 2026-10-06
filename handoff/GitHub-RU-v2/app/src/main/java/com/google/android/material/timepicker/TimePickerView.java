@@ -46,11 +46,11 @@ class TimePickerView extends ConstraintLayout {
         }
     }
 
-    public <T0> T0 findViewById(Object... a) {
+    public static  findViewById(Object... a) {
         return null;
     }
 
-    public <T0> T0 getContext(Object... a) {
+    public static  getContext(Object... a) {
         return null;
     }
 }

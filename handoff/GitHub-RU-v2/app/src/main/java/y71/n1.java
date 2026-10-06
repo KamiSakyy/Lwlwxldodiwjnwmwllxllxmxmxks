@@ -960,7 +960,7 @@ public abstract class n1 {
         return ((i == 0 || i == -3) && aVar == x71.a.r) ? j1Var : new z71.h(i, hVar, aVar, j1Var);
     }
 
-    public <T0> T0 l(Object... a) {
+    public static  l(Object... a) {
         return null;
     }
 }

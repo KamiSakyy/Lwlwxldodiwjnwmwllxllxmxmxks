@@ -57,7 +57,7 @@ public abstract class Hilt_LegacyProjectsTabFragment<T extends k5.f> extends Bin
         return this.B0;
     }
 
-    public <T0> T0 w(Object... a) {
+    public static  w(Object... a) {
         return null;
     }
 }

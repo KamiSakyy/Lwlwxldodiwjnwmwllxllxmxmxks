@@ -243,13 +243,13 @@ public final class t {
 
     public static Object b;
 
-    public <T0> T0 c(Object... a) {
+    public static  c(Object... a) {
         return null;
     }
 
     public static Object l;
 
-    public <T0> T0 i(Object... a) {
+    public static  i(Object... a) {
         return null;
     }
 
@@ -257,7 +257,7 @@ public final class t {
 
     public static Object j;
 
-    public <T0> T0 b(Object... a) {
+    public static  b(Object... a) {
         return null;
     }
 
