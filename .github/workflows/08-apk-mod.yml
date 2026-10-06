@@ -1,0 +1,153 @@
+name: "08 — APK-мод: получить базовый APK, разобрать apktool, отчёт"
+
+# Разведка перед модом: нужен APK приложения (его нельзя собрать из zip-исходника —
+# это результат декомпиляции, ~59 000 ошибок компиляции).
+#
+# Запуск: Actions → Run workflow. Можно передать прямую ссылку на APK,
+# иначе пробуем известные зеркала официального GitHub-клиента.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: "Прямая ссылка на APK (пусто = пробуем зеркала)"
+        required: false
+        default: ""
+      apk_name:
+        description: "Имя файла (необязательно)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+env:
+  OUT: handoff/apkmod
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "JDK 17"
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: "apktool.jar"
+        run: |
+          set -e
+          mkdir -p tools/bin
+          curl -sSL -o tools/bin/apktool.jar \
+            https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar
+          ls -la tools/bin/apktool.jar
+          java -jar tools/bin/apktool.jar --version
+
+      - name: "Получить APK"
+        run: |
+          set -e
+          mkdir -p "$OUT/base"
+          URL="${{ github.event.inputs.apk_url }}"
+          NAME="${{ github.event.inputs.apk_name }}"
+          [ -n "$NAME" ] || NAME="base.apk"
+          if [ -n "$URL" ]; then
+            echo "Скачиваю по ссылке: $URL"
+            curl -sSL --retry 2 -o "$OUT/base/$NAME" "$URL" || true
+          else
+            for U in \
+              "https://d.apkpure.net/b/APK/com.github.android?version=latest" \
+              "https://d.apkpure.com/b/APK/com.github.android?version=latest" \
+              "https://d.apkpure.net/b/XAPK/com.github.android?version=latest" ; do
+              echo "--- пробую: $U"
+              code=$(curl -sSL -o /tmp/cand.apk -w '%{http_code}' --retry 1 --max-time 300 "$U" || echo 000)
+              size=$(stat -c%s /tmp/cand.apk 2>/dev/null || echo 0)
+              echo "    HTTP $code, $size байт"
+              if [ "$code" = "200" ] && [ "$size" -gt 1000000 ] && head -c2 /tmp/cand.apk | grep -q PK; then
+                cp /tmp/cand.apk "$OUT/base/$NAME"; echo "    ✔ подходит"; break
+              fi
+            done
+          fi
+          ls -la "$OUT/base" || true
+
+      - name: "Разбор APK (apktool + aapt) и отчёт"
+        run: |
+          set -e
+          mkdir -p "$OUT"
+          APK=$(ls -S "$OUT/base/"*.apk 2>/dev/null | head -1 || true)
+          {
+            echo "# APK-мод: разведка базы"
+            echo
+            echo "_$(date -u +%Y-%m-%dT%H:%M:%SZ)_"
+            echo
+          } > "$OUT/REPORT.md"
+          if [ -z "$APK" ]; then
+            echo "**APK не получен** — зеркала не отдали файл. Нужна прямая ссылка или загрузка APK в репозиторий." >> "$OUT/REPORT.md"
+            exit 0
+          fi
+          echo "**Файл:** \`$(basename "$APK")\` — $(stat -c%s "$APK") байт" >> "$OUT/REPORT.md"
+          echo >> "$OUT/REPORT.md"
+          unzip -l "$APK" | tail -3 >> "$OUT/REPORT.md" || true
+          echo >> "$OUT/REPORT.md"
+          echo "## Крупнейшее внутри" >> "$OUT/REPORT.md"
+          echo '```' >> "$OUT/REPORT.md"
+          unzip -l "$APK" | sort -k1 -n -r | head -25 >> "$OUT/REPORT.md" || true
+          echo '```' >> "$OUT/REPORT.md"
+          echo >> "$OUT/REPORT.md"
+          echo "## Библиотеки по ABI" >> "$OUT/REPORT.md"
+          echo '```' >> "$OUT/REPORT.md"
+          unzip -l "$APK" | grep 'lib/' | awk '{print $4}' | cut -d/ -f1-2 | sort | uniq -c | sort -rn | head -20 >> "$OUT/REPORT.md" || true
+          echo '```' >> "$OUT/REPORT.md"
+          echo >> "$OUT/REPORT.md"
+          echo "## Расшифровка (apktool, только ресурсы)" >> "$OUT/REPORT.md"
+          echo '```' >> "$OUT/REPORT.md"
+          rm -rf /tmp/decoded
+          java -jar tools/bin/apktool.jar d -f -s -o /tmp/decoded "$APK" 2>&1 | tail -5 >> "$OUT/REPORT.md" || true
+          echo '```' >> "$OUT/REPORT.md"
+          if [ -f /tmp/decoded/apktool.yml ]; then
+            echo >> "$OUT/REPORT.md"
+            echo "## apktool.yml" >> "$OUT/REPORT.md"
+            echo '```yaml' >> "$OUT/REPORT.md"
+            head -40 /tmp/decoded/apktool.yml >> "$OUT/REPORT.md"
+            echo '```' >> "$OUT/REPORT.md"
+            echo >> "$OUT/REPORT.md"
+            echo "## Что можно улучшить (черновик)" >> "$OUT/REPORT.md"
+            echo "- Языки/ресурсы: остаётся только ru+en" >> "$OUT/REPORT.md"
+            echo "- ABI: остаётся только arm64-v8a" >> "$OUT/REPORT.md"
+            echo "- Ассеты редактора файлов: \`assets/webview/*\` (правятся без пересборки кода)" >> "$OUT/REPORT.md"
+            echo "- Тема/цвета: \`res/values*/colors.xml\`, \`styles.xml\`" >> "$OUT/REPORT.md"
+            ls /tmp/decoded/assets 2>/dev/null | head -20 >> "$OUT/REPORT.md" || true
+          fi
+          cat "$OUT/REPORT.md"
+
+      - name: "Коммит отчёта (+ APK, если он небольшой)"
+        run: |
+          set -e
+          git config user.name "apk-mod-bot"
+          git config user.email "actions@github.com"
+          APK=$(ls -S "$OUT/base/"*.apk 2>/dev/null | head -1 || true)
+          if [ -n "$APK" ]; then
+            SZ=$(stat -c%s "$APK")
+            if [ "$SZ" -gt 90000000 ]; then
+              echo "APK больше 90 МБ — в репозиторий не кладу, оставляю артефактом"
+              rm -f "$APK"
+            fi
+          fi
+          git add -A "$OUT" || true
+          if git diff --cached --quiet; then echo "нечего коммитить"; exit 0; fi
+          git commit -m "apk-mod: разведка базы (отчёт + APK) [skip ci]"
+          git push || true
+
+      - name: "Артефакт"
+        uses: actions/upload-artifact@v4
+        with:
+          name: apk-mod-base
+          path: |
+            handoff/apkmod/base/*.apk
+            handoff/apkmod/REPORT.md
+          if-no-files-found: warn
+          retention-days: 7
