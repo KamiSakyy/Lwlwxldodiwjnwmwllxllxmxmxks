@@ -2,10 +2,13 @@ plugins {
     id 'com.android.application'
 }
 
-// OAuth client ID не хранится в коде: он приходит из GitHub Secret,
-// из -Pmailgram.oauthClientId=... или вводится в самом приложении.
+// OAuth client ID публичного клиента не является секретом (он виден в любом APK и в
+// запросах к Google). Значение по умолчанию вшито в сборку, чтобы вход работал сразу
+// после установки; переопределить можно через -Pmailgram.oauthClientId=... или
+// переменную окружения MAILGRAM_OAUTH_CLIENT_ID (например, из GitHub Secret).
+def defaultOauthClientId = '520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com'
 def oauthClientId = (project.findProperty('mailgram.oauthClientId')
-        ?: System.getenv('MAILGRAM_OAUTH_CLIENT_ID') ?: '').toString().trim()
+        ?: System.getenv('MAILGRAM_OAUTH_CLIENT_ID') ?: defaultOauthClientId).toString().trim()
 def googleSuffix = '.apps.googleusercontent.com'
 def redirectScheme = oauthClientId.isEmpty()
         ? 'com.mailgram.app'

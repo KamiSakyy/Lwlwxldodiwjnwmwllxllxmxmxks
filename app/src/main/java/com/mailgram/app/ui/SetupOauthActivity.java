@@ -49,7 +49,18 @@ public class SetupOauthActivity extends AppCompatActivity {
         ((TextView) findViewById(R.id.setup_sha1)).setText(Ui.signingSha1(this));
 
         clientIdField.setText(Auth.clientId(this));
-        boolean loopback = Auth.MODE_LOOPBACK.equals(Auth.authMode(this));
+        boolean bakedIn = Auth.clientIdFromBuild();
+        if (bakedIn) {
+            // Идентификатор уже внутри APK и совпадает со схемой редиректа в манифесте —
+            // менять его в настройках нельзя, только пересобрать с другим значением.
+            clientIdField.setEnabled(false);
+            modeGroup.check(R.id.setup_mode_android);
+            modeGroup.setEnabled(false);
+            for (int i = 0; i < modeGroup.getChildCount(); i++) {
+                modeGroup.getChildAt(i).setEnabled(false);
+            }
+        }
+        boolean loopback = !bakedIn && Auth.MODE_LOOPBACK.equals(Auth.authMode(this));
         modeGroup.check(loopback ? R.id.setup_mode_loopback : R.id.setup_mode_android);
         modeGroup.setOnCheckedChangeListener((g, id) -> updateMode());
         updateMode();
@@ -86,6 +97,10 @@ public class SetupOauthActivity extends AppCompatActivity {
                     ? Auth.androidSchemeFromBuild() + OAuth.ANDROID_REDIRECT_SUFFIX
                     : OAuth.redirectForAndroidClient(clientId);
             modeNote.setText(getString(R.string.setup_android_note, Auth.androidSchemeFromBuild()));
+            if (Auth.clientIdFromBuild()) {
+                modeNote.setText(modeNote.getText() + "\n\n" + getString(R.string.setup_baked_note,
+                        Auth.clientIdFromBuildShort()));
+            }
             if (!clientId.isEmpty()
                     && !clientId.equals(Auth.clientIdFromSettings(this))
                     && !OAuth.androidScheme(clientId).equalsIgnoreCase(Auth.androidSchemeFromBuild())) {
@@ -105,6 +120,14 @@ public class SetupOauthActivity extends AppCompatActivity {
     }
 
     private void save() {
+        if (Auth.clientIdFromBuild()) {
+            // Client ID вшит при сборке: держим режим и хранилище в согласованном состоянии.
+            Auth.setClientId(this, "");
+            Auth.setAuthMode(this, Auth.MODE_ANDROID);
+            Ui.toast(this, getString(R.string.setup_baked_saved));
+            finish();
+            return;
+        }
         String clientId = enteredClientId();
         if (!clientId.isEmpty()
                 && !clientId.endsWith(".apps.googleusercontent.com")

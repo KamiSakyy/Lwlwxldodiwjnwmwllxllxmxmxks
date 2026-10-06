@@ -38,11 +38,14 @@ public final class Auth {
         return ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
     }
 
-    /** Client ID: из настроек, иначе из сборки (GitHub Secret). */
+    /**
+     * Client ID. Приоритет — у вшитого при сборке: схема редиректа в манифесте
+     * жёстко привязана именно к нему, поэтому подменить идентификатор из настроек нельзя.
+     */
     public static String clientId(Context ctx) {
+        if (clientIdFromBuild()) return BuildConfig.OAUTH_CLIENT_ID.trim();
         String stored = prefs(ctx).getString(K_CLIENT_ID, "");
-        if (stored != null && !stored.trim().isEmpty()) return stored.trim();
-        return BuildConfig.OAUTH_CLIENT_ID == null ? "" : BuildConfig.OAUTH_CLIENT_ID.trim();
+        return stored == null ? "" : stored.trim();
     }
 
     public static String clientIdFromSettings(Context ctx) {
@@ -52,6 +55,13 @@ public final class Auth {
 
     public static void setClientId(Context ctx, String clientId) {
         prefs(ctx).edit().putString(K_CLIENT_ID, clientId == null ? "" : clientId.trim()).apply();
+    }
+
+    /** Короткий вид вшитого client ID — для экрана настроек. */
+    public static String clientIdFromBuildShort() {
+        String id = BuildConfig.OAUTH_CLIENT_ID == null ? "" : BuildConfig.OAUTH_CLIENT_ID.trim();
+        int dot = id.indexOf('.');
+        return dot > 0 ? id.substring(0, dot) : id;
     }
 
     public static boolean clientIdFromBuild() {

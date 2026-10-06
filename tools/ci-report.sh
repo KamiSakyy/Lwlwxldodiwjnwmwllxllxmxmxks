@@ -51,7 +51,13 @@ fi
     echo "- package name: \`$(aapt2 dump badging "$apk" 2>/dev/null | head -1 | sed -E "s/^package: name='([^']+)'.*/\1/" || echo com.mailgram.app)\`"
     echo "- SHA-1: \`${sha1:-see above}\`"
     echo "- scopes: \`openid email https://www.googleapis.com/auth/gmail.modify\`"
-    echo "- redirect (Android-клиент): \`com.googleusercontent.apps.<client-id>:/oauth2redirect\`"
+    if [ -n "${MAILGRAM_OAUTH_CLIENT_ID:-}" ]; then
+      scheme="${MAILGRAM_OAUTH_CLIENT_ID%.apps.googleusercontent.com}"
+      echo "- client ID в сборке: \`${MAILGRAM_OAUTH_CLIENT_ID}\`"
+      echo "- redirect (Android-клиент): \`com.googleusercontent.apps.${scheme}:/oauth2redirect\`"
+    else
+      echo "- redirect (Android-клиент): \`com.googleusercontent.apps.<client-id>:/oauth2redirect\`"
+    fi
     echo "- redirect (Desktop+loopback): \`http://127.0.0.1:7717/oauth2redirect\`"
   else
     echo "### APK не собран"

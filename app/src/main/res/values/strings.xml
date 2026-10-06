@@ -116,6 +116,8 @@
     <string name="setup_mode">Тип клиента</string>
     <string name="setup_mode_android">Android (один клик, схема из сборки)</string>
     <string name="setup_mode_loopback">Desktop + локальный порт (client ID можно менять без пересборки)</string>
+    <string name="setup_baked_note">Client ID уже вшит в эту сборку (%1$s…), поэтому вход работает в один тап и ничего настраивать не нужно. Другой client ID — только через пересборку APK (параметр oauth_client_id).</string>
+    <string name="setup_baked_saved">Client ID вшит в сборку — менять нечего</string>
     <string name="setup_save">Сохранить</string>
     <string name="setup_saved">Сохранено</string>
     <string name="setup_loopback_note">В режиме «Desktop» добавьте в Google Cloud Console redirect URI:\n%1$s</string>

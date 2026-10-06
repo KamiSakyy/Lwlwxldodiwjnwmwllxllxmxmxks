@@ -92,12 +92,15 @@ jobs:
           INPUT_CLIENT_ID: ${{ github.event.inputs.oauth_client_id }}
         run: |
           CLIENT_ID="${SECRET_CLIENT_ID:-$INPUT_CLIENT_ID}"
-          if [ -n "$CLIENT_ID" ]; then
-            echo "MAILGRAM_OAUTH_CLIENT_ID=$CLIENT_ID" >> "$GITHUB_ENV"
-            echo "::notice title=OAuth::client ID подставлен из секрета — вход будет работать в один тап"
+          if [ -z "$CLIENT_ID" ]; then
+            # Значение по умолчанию живёт в app/build.gradle — здесь повторяем его,
+            # чтобы отчёт о сборке показывал реальный client ID.
+            CLIENT_ID="520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
+            echo "::notice title=OAuth::используется client ID, вшитый в проект — вход работает в один тап"
           else
-            echo "::notice title=OAuth::client ID не задан — вход настраивается в приложении (кнопка «Настройка подключения»)"
+            echo "::notice title=OAuth::client ID задан секретом/параметром — вход работает в один тап"
           fi
+          echo "MAILGRAM_OAUTH_CLIENT_ID=$CLIENT_ID" >> "$GITHUB_ENV"
       - name: Подпись (свой keystore через секреты или встроенный dev-keystore)
         env:
           STORE_B64: ${{ secrets.MAILGRAM_STORE_B64 }}
@@ -136,6 +139,17 @@ jobs:
             exit 1
           fi
           echo "::notice title=Состав APK::libmailgram.so на месте (arm64-v8a / armeabi-v7a / x86_64)"
+      - name: Проверка, что OAuth-схема вшита в манифест
+        if: success()
+        run: |
+          APK=app/build/outputs/apk/release/app-release.apk
+          SCHEME="${MAILGRAM_OAUTH_CLIENT_ID%.apps.googleusercontent.com}"
+          if aapt2 dump xmltree --file AndroidManifest.xml "$APK" | grep -qi "com.googleusercontent.apps.${SCHEME}"; then
+            echo "::notice title=OAuth::схема редиректа в манифесте совпадает с client ID — вход сработает в один тап"
+          else
+            echo "::error title=OAuth::в манифесте нет схемы com.googleusercontent.apps.${SCHEME} — Google отклонит вход"
+            exit 1
+          fi
       - name: Отчёт о сборке
         if: always()
         run: bash tools/ci-report.sh app/build/outputs/apk/release/app-release.apk build-report.md || true

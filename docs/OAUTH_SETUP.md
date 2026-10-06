@@ -1,5 +1,9 @@
 # Вход через Google: настройка за 5 минут
 
+> **Если вы просто ставите готовый APK из релиза — этот документ не нужен.** Вход уже настроен:
+> в приложении достаточно нажать «Войти через Google». Шаги ниже понадобятся, только если вы
+> пересобираете проект со своим client ID или разбираетесь, как всё устроено.
+
 MailGram не имеет сервера, поэтому OAuth-клиент создаёте вы — в своём проекте Google Cloud.
 Секретов в приложении нет: **client ID публичного клиента не является секретом**, а `client secret`
 не нужен вообще (используется PKCE, RFC 7636).
@@ -13,6 +17,7 @@ MailGram не имеет сервера, поэтому OAuth-клиент со�
 | Scopes | `openid`, `email`, `https://www.googleapis.com/auth/gmail.modify` |
 | redirect URI (Android-клиент) | `com.googleusercontent.apps.<ваш-client-id-без-.apps.googleusercontent.com>:/oauth2redirect` |
 | redirect URI (Desktop + loopback) | `http://127.0.0.1:7717/oauth2redirect` |
+| client ID, вшитый в сборку | `520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com` (схема `com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f`) |
 
 > Приложение показывает эти значения само: **Настройки → Настройка подключения** (пакет, отпечаток
 > подписи и redirect URI считаются на устройстве, поэтому всегда совпадают с установленным APK).
