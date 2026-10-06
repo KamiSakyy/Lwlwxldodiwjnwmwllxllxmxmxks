@@ -57,6 +57,8 @@ def rewrite_pkg_file(text, X, Xs, members):
         n += k
         return t2
     text = sub(r"(\b(?:class|interface|enum)\s+)%s\b" % x, r"\g<1>%s" % Xs)
+    # конструкторы: public X( / protected X( / private X(
+    text = sub(r"\b(public|protected|private)\s+%s(\s*\()" % x, r"\g<1> %s\g<2>" % Xs)
     text = sub(r"\bnew\s+%s\s*(?=[(\[])" % x, "new %s" % Xs)
     text = sub(r"\b%s\.class\b" % x, "%s.class" % Xs)
     text = sub(r"\(\s*%s\s*\)" % x, "(%s)" % Xs)
