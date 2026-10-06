@@ -4,7 +4,7 @@ import gn0.f8;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public String a;
     public f8 b;
     public String c;

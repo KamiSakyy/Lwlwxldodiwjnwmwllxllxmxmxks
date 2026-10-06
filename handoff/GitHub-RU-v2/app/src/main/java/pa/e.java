@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
     public static final d Companion = new d();
 
     /* renamed from: d, reason: collision with root package name */

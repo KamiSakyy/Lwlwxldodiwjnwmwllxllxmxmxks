@@ -49,7 +49,7 @@ import kotlin.NoWhenBranchMatchedException;
 import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final ArrayList a = d0.b(new TrendingPeriodFilter(TrendingPeriodFilter.x), new LanguageFilter(null), new SpokenLanguageFilter(null));
     public static final ArrayList b = b(d0.b(new PullRequestStatusFilter(), new ReviewRequestedFilter(false), new OrganizationFilter(), new RepositoriesFilter(3), new Separator(), new SortFilter()));
     public static final ArrayList c = b(d0.b(new PullRequestStatusFilter(), new ReviewRequestedFilter(false), new AssigneeFilter(), new Separator(), new SortFilter()));

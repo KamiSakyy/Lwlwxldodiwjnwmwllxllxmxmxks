@@ -3,7 +3,7 @@ package com.github.rudroid.repositorycreation.licensetemplate;
 import com.github.service.license.LicenseTemplate;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: a, reason: collision with root package name */
     public LicenseTemplate f20397a;

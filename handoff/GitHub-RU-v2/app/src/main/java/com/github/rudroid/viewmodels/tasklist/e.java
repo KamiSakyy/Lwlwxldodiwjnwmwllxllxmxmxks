@@ -8,7 +8,7 @@ import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.viewmodels.tasklist.TaskListViewModel$checkDiscussionBodyTask$1", f = "TaskListViewModel.kt", l = {196}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.e {
+class e extends c71.j implements j71.e {
     public final /* synthetic */ boolean A;
     public int v;
     public final /* synthetic */ n w;

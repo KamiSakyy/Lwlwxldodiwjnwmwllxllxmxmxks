@@ -1,7 +1,7 @@
 package t11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public long a;
     public m11.j b;
     public m11.i c;

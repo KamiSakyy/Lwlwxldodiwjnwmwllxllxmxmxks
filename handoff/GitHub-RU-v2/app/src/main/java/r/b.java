@@ -8,7 +8,7 @@ import k5.f;
 import v41.tShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements ThreadFactory {
+public class b implements ThreadFactory {
 
     /* renamed from: a, reason: collision with root package name */
     public final /* synthetic */ int f31057a;

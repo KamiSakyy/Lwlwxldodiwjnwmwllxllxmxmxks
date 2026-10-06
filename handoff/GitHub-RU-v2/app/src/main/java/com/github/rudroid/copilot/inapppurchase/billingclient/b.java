@@ -5,7 +5,7 @@ import sy.y;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b<T> implements y71.j {
+public class b<T> implements y71.j {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ y71.j f9652r;

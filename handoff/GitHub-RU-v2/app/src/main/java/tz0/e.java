@@ -5,7 +5,7 @@ import java.util.List;
 import x01.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public Object a;
     public ArrayList b;
     public i c;

@@ -6,7 +6,7 @@ import yz0.g2;
 import yz0.i2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
     /* JADX WARN: Type inference failed for: r1v5, types: [java.lang.Iterable, java.lang.Object, java.util.Collection] */
     public static final boolean a(i2 i2Var, d6 d6Var) {
         k71.k.g(i2Var, "<this>");

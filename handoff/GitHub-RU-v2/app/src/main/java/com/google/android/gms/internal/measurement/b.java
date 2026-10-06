@@ -3,7 +3,7 @@ package com.google.android.gms.internal.measurement;
 import java.util.HashMap;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public static final com.google.common.collect.f d = com.google.common.collect.f.j(3, "_syn", "_err", "_el");
     public String a;
     public long b;

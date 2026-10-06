@@ -53,6 +53,10 @@ public final class l {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static p01.j a(k2 k2Var) {
+        Object intValue = null;
+        Object I = null;
+        Object z22 = null;
+        Object i14 = null;
         String str;
         Avatar avatar;
         String str2;

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends v {
+public class s extends v {
     public static final s s = new s("OpenAI");
     public static final Parcelable.Creator<s> CREATOR = new l7.c0(26);
 

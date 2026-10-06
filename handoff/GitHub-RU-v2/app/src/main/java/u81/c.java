@@ -185,6 +185,7 @@ public final class c implements r, v81.d {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final q g() {
+        Object th = null;
         c cVar;
         c cVar2;
         t0 t0Var;

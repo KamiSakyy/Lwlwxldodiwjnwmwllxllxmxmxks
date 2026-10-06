@@ -3,7 +3,7 @@ package com.github.rudroid.fileeditor.commitbox;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: a, reason: collision with root package name */
     public String f12906a;

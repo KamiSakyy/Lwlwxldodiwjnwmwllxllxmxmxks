@@ -29,7 +29,7 @@ import y71.y1;
 
 @LogTag(tag = "NotificationsViewModel")
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends androidx.lifecycle.a implements v3, com.github.rudroid.utilities.viewmodel.e<String>, com.github.rudroid.utilities.viewmodel.g, com.github.rudroid.utilities.viewmodel.b {
+public class s extends androidx.lifecycle.a implements v3, com.github.rudroid.utilities.viewmodel.e<String>, com.github.rudroid.utilities.viewmodel.g, com.github.rudroid.utilities.viewmodel.b {
     public static final a Companion = new a();
     public mm.i A;
     public mm.l B;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements n {
+public class e implements n {
     public boolean r;
 
     public e(Boolean bool) {

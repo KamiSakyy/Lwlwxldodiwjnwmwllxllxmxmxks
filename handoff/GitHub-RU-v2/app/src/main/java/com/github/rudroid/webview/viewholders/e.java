@@ -15,7 +15,7 @@ import java.util.zip.GZIPInputStream;
 import t71.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends WebViewClient {
+public class e extends WebViewClient {
     public final /* synthetic */ GitHubWebView a;
 
     public e(GitHubWebView gitHubWebView) {

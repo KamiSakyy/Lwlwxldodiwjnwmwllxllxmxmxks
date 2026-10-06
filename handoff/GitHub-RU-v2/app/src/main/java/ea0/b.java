@@ -3,7 +3,7 @@ package ea0;
 import hc0.wz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public wz a;
     public boolean b;
 

@@ -9,7 +9,7 @@ import java.util.Objects;
 import org.jsoup.helper.ValidationException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements Iterable, Cloneable {
+public class b implements Iterable, Cloneable {
     public int r = 0;
     public String[] s = new String[3];
     public Object[] t = new Object[3];

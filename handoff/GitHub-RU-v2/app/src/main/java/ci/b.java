@@ -4,7 +4,7 @@ import a5.s;
 import androidx.lifecycle.c0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends a {
+public class b extends a {
     public static final s Q;
     public long P;
 

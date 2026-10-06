@@ -1,7 +1,7 @@
 package ae;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
     public final boolean equals(Object obj) {
         return this == obj || (obj instanceof e);
     }

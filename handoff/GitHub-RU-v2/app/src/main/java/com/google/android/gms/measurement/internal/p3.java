@@ -174,6 +174,7 @@ public final class p3 extends e0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean G() {
+        Object r2 = null;
         z();
         A();
         if (this.w == null) {
@@ -448,7 +449,9 @@ public final class p3 extends e0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void R(f0 f0Var, d21.a aVar, v4 v4Var) {
+    public final void R(f0 f0Va
+        Object th = null;
+        Object e = null;r, d21.a aVar, v4 v4Var) {
         ArrayList arrayList;
         o1 o1Var;
         Context context;

@@ -12,7 +12,7 @@ import v8.l0;
 import w61.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends l0 {
+public class b extends l0 {
     public final /* synthetic */ d a;
 
     public b(d dVar) {

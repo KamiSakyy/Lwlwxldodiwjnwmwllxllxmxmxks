@@ -9,7 +9,7 @@ import k5.f;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends BaseAdapter {
+public class b extends BaseAdapter {
 
     public static final class a {
         public final boolean equals(Object obj) {

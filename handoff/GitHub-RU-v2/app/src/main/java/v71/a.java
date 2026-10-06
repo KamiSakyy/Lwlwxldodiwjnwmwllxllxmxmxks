@@ -58,6 +58,8 @@ public abstract class a extends j1 implements a71.c, z {
     }
 
     public final void q0(a0Shadow a0Var, a aVar, j71.e eVar) {
+
+        Object th = null;
         Object s;
         int ordinal = a0Var.ordinal();
         w61.a0Shadow a0Var2 = w61.a0.a;

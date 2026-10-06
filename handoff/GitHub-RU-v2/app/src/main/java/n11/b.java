@@ -4,7 +4,7 @@ import android.content.Context;
 import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c {
+public class b extends c {
     public Context a;
     public v11.a b;
     public v11.a c;

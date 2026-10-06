@@ -32,6 +32,7 @@ public final class j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object a(oa.j jVar, String str, String str2, String str3, String str4, String str5, c71.c cVar) {
+        Object createWithBitmap = null;
         i iVar;
         int i;
         r9.q qVar;

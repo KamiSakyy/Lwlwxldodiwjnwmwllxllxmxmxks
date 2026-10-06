@@ -5,7 +5,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.service.models.response.SimpleRepository;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s {
+public class s {
     public static final a Companion = new a();
 
     /* renamed from: d, reason: collision with root package name */

@@ -1,7 +1,7 @@
 package ea1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends n {
+public class e extends n {
     public static boolean b = false;
     public final /* synthetic */ int a;
 

@@ -6,7 +6,7 @@ import k71.z;
 import sy.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends h {
+public class b extends h {
     public int s;
     public final /* synthetic */ j71.e t;
     public final /* synthetic */ a71.c u;

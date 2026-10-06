@@ -18,6 +18,8 @@ public final class f0Shadow implements y71.j {
     }
 
     public final Object c(Object obj, a71.c cVar) {
+
+        Object r3 = null;
         switch (this.r) {
             case 0:
                 ((o0) this.s).c.set((v) obj);

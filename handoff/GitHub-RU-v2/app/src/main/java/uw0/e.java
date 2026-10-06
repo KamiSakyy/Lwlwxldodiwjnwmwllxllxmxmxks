@@ -8,7 +8,7 @@ import pz0.sk;
 import pz0.u6;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements n0 {
+public class e implements n0 {
     public static final a Companion = new a();
     public u6 r;
 

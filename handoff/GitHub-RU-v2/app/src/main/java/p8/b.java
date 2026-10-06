@@ -3,7 +3,7 @@ package p8;
 import z70.a3;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements g {
+public class b implements g {
 
     /* renamed from: d, reason: collision with root package name */
     public static final b f30412d;

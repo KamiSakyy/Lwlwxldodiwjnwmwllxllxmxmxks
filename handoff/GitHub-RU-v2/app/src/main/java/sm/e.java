@@ -8,7 +8,7 @@ import y71.i;
 import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public qm.d a;
 
     public e(qm.d dVar) {

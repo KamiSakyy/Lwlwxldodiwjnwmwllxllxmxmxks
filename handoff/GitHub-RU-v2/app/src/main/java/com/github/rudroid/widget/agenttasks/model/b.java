@@ -3,7 +3,7 @@ package com.github.rudroid.widget.agenttasks.model;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public oa.j a;
     public List b;
 

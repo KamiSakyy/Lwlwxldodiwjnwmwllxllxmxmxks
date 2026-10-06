@@ -4,7 +4,7 @@ import k71.k;
 import pz0.g9;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public String a;
     public g9 b;
     public String c;

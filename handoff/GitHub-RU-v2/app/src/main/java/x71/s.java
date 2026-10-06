@@ -5,7 +5,7 @@ import kotlinx.coroutines.JobCancellationException;
 import v71.b0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s extends v71.a implements t, l {
+public class s extends v71.a implements t, l {
     public hShadow u;
 
     public s(a71.hShadow hVar, hShadow hVar2) {

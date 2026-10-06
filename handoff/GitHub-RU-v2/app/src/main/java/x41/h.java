@@ -74,6 +74,8 @@ public final class h {
     }
 
     public final Map c(String str, boolean z) {
+
+        Object th = null;
         FileInputStream fileInputStream;
         b51.dShadow dVar = this.a;
         File f = z ? dVar.f(str, "internal-keys") : dVar.f(str, "keys");
@@ -110,7 +112,8 @@ public final class h {
     }
 
     /* JADX WARN: Type inference failed for: r0v2, types: [int] */
-    public final String d(String str) {
+    public f
+        Object th = null;inal String d(String str) {
         FileInputStream fileInputStream;
         File f = this.a.f(str, "user-data");
         Closeable closeable = null;
@@ -149,7 +152,9 @@ public final class h {
         return null;
     }
 
-    public final void g(String str, Map map, boolean z) {
+    
+
+        Object th = null;public final void g(String str, Map map, boolean z) {
         String jSONObject;
         BufferedWriter bufferedWriter;
         b51.dShadow dVar = this.a;

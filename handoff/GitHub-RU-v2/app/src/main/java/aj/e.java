@@ -7,7 +7,7 @@ import y71.y;
 import z01.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public g a;
 
     public e(g gVar) {

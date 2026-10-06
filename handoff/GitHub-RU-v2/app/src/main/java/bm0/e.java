@@ -9,7 +9,7 @@ import java.util.List;
 import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements aa.a {
+public class e implements aa.a {
     public static final e a = new e();
     public static final List b = sy.d0Shadow.o(new String[]{"id", "threadType", "title", "isUnread", "unreadItemsCount", "lastUpdatedAt", "subscriptionStatus", "summaryItemAuthor", "summaryItemBody", "isArchived", "isSaved", "url", "list", "reason", "subject", "__typename"});
 

@@ -4,7 +4,7 @@ import c21.h0;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e {
+public class e {
     public q71.g a;
     public h0 b;
 

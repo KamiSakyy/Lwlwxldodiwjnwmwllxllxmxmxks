@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import es.voghdev.pdfviewpager.library.subscaleview.SubsamplingScaleImageView;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends GestureDetector.SimpleOnGestureListener {
+public class e extends GestureDetector.SimpleOnGestureListener {
     public final /* synthetic */ Context a;
     public final /* synthetic */ SubsamplingScaleImageView b;
 

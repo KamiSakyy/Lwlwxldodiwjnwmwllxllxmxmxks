@@ -9,7 +9,7 @@ import java.util.UUID;
 import java.util.concurrent.atomic.AtomicLong;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public static final String b = g.h(UUID.randomUUID().toString() + System.currentTimeMillis());
     public static final AtomicLong c = new AtomicLong(0);
     public String a;

@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.ProtocolException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends h91.p {
+public class e extends h91.p {
     public long s;
     public boolean t;
     public boolean u;

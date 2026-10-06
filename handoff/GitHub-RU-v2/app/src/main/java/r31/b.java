@@ -4,7 +4,7 @@ import android.graphics.Typeface;
 import com.google.android.gms.internal.measurement.d5;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends q4.b {
+public class b extends q4.b {
     public final /* synthetic */ d5 h;
     public final /* synthetic */ d i;
 

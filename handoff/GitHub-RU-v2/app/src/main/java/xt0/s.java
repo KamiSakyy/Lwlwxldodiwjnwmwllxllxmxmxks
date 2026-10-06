@@ -3,7 +3,7 @@ package xt0;
 import pz0.cu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public String a;
     public cu b;
     public String c;

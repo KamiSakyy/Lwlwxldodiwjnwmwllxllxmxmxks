@@ -3,7 +3,7 @@ package wk0;
 import gn0.e10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public e10 a;
     public boolean b;
 

@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import java.util.Locale;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements Parcelable {
+public class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new g(2);
     public String A;
     public Locale E;

@@ -11,7 +11,7 @@ import k71.k;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements n0 {
+public class e implements n0 {
     public static final a Companion = new a();
     public String r;
 

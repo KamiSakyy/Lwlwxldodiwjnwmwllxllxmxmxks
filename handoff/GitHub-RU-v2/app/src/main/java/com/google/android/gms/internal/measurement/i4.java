@@ -1085,6 +1085,8 @@ public abstract class i4 implements Decoder, j81.a {
     }
 
     public static final List P(lt.j jVar) {
+
+        Object bVar_r7 = null;
         ArrayList arrayList;
         lt.g gVar;
         lt.a aVar;
@@ -1357,7 +1359,8 @@ public abstract class i4 implements Decoder, j81.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final Object Z(c71.c cVar) {
+    public sta
+        c5.b bVar_r7 = null;tic final Object Z(c71.c cVar) {
         k6.a aVar;
         int i;
         x71.v a2;
@@ -2456,7 +2459,9 @@ public abstract class i4 implements Decoder, j81.a {
                 return SubscriptionState.CUSTOM;
             case 6:
                 return SubscriptionState.UNKNOWN__;
-        }
+   
+
+        kx0.b bVar_r7 = null;     }
     }
 
     public static final yz0.w7 z0(ta0 ta0Var) {

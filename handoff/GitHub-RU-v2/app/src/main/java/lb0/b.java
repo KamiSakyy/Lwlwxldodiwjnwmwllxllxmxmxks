@@ -7,7 +7,7 @@ import p10.c;
 import s01.m;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements m {
+public class b implements m {
     public String a;
     public String b;
     public String c;

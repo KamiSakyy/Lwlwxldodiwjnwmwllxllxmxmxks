@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c {
+public class b extends c {
     public final /* synthetic */ int g;
     public final /* synthetic */ d h;
     public g5 i;
@@ -61,6 +61,7 @@ public final class b extends c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public boolean h(Long l, Long l2, com.google.android.gms.internal.measurement.b3 b3Var, long j, t tVar, boolean z) {
+        Object r16 = null;
         boolean z2;
         s0 s0Var;
         Boolean bool;

@@ -4,7 +4,7 @@ import com.google.android.play.core.install.zza;
 import x71.t;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements d41.a {
+public class b implements d41.a {
     public final /* synthetic */ t a;
     public final /* synthetic */ b41.e b;
 

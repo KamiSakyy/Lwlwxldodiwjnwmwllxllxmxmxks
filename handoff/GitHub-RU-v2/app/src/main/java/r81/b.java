@@ -7,7 +7,7 @@ import v8.l0;
 import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends z3 {
+public class b extends z3 {
     public k71.e b;
     public Object c;
     public z3 d;

@@ -4,7 +4,7 @@ import android.content.Context;
 import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends c {
+public class e extends c {
     public static final d Companion = new d();
 
     /* renamed from: b, reason: collision with root package name */

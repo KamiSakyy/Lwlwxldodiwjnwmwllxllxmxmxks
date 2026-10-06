@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements bm.k, x, a71.g {
+public class e implements bm.k, x, a71.g {
 
     /* renamed from: s, reason: collision with root package name */
     public static final /* synthetic */ e f21683s = new e(3);

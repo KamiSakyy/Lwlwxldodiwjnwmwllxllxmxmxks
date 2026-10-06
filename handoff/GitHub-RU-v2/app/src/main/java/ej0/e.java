@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import gn0.yv;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public String a;
     public yv b;
     public String c;

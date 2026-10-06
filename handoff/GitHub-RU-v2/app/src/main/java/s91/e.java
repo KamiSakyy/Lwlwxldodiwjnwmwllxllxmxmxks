@@ -15,7 +15,7 @@ import x61.m;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e {
+public class e {
     public e(j jVar) {
     }
 

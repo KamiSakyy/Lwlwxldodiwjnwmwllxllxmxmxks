@@ -65,6 +65,7 @@ public final class t0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public com.google.android.gms.internal.measurement.b3 b(com.google.android.gms.internal.measurement.b3 b3Var, String str) {
+        Object th = null;
         Cursor cursor;
         com.google.android.gms.internal.measurement.b3 b3Var2;
         long j;

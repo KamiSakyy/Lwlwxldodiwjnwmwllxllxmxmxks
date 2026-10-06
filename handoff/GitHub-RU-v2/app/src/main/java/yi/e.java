@@ -3,7 +3,7 @@ package yi;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements k, l {
+public class e implements k, l {
     public static final d Companion = new d();
     public Object a;
     public Object b;

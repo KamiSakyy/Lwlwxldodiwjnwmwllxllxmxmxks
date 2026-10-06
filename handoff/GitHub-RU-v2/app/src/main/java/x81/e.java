@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e {
+public class e {
     public h91.h a;
     public boolean c;
     public int g;

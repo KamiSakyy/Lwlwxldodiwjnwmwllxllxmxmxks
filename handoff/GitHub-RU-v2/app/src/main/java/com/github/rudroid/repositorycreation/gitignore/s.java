@@ -11,7 +11,7 @@ import y71.q1;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends k1 {
+public class s extends k1 {
     public static final a Companion = new a();
 
     /* renamed from: s, reason: collision with root package name */

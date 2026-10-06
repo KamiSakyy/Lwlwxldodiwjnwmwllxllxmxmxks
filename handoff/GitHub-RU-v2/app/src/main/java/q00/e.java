@@ -6,7 +6,7 @@ import x.i;
 import yz0.t7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public t7 a;
     public boolean b;
     public boolean c;

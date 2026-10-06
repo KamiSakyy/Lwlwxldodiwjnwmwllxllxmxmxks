@@ -28,7 +28,7 @@ import yz0.t1;
 import yz0.w1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements w1 {
+public class e implements w1 {
     public vf a;
     public Object b;
     public ArrayList c;

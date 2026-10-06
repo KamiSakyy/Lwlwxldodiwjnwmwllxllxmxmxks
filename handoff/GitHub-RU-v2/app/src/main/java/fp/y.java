@@ -10,6 +10,8 @@ public final /* synthetic */ class y implements j71.c {
     public final /* synthetic */ int r;
 
     public final Object k(Object obj) {
+
+        Object r9 = null;
         List<c0> list;
         on.l lVar;
         e2 e2Var;

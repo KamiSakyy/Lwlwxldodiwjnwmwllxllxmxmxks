@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s implements Map, Serializable, l71.a {
+public class s implements Map, Serializable, l71.a {
     public static final s r = new s();
 
     @Override // java.util.Map

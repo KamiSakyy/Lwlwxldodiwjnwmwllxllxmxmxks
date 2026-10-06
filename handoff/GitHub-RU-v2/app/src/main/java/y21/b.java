@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import x.q0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public final q0 a = new q0(0);
     public final q0 b = new q0(0);
 

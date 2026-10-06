@@ -867,6 +867,7 @@ public class hShadow implements l {
 
     @Override // x71.v
     public final Object k(a71.c cVar) {
+        Object th = null;
         p pVar;
         Throwable th;
         p pVar2;
@@ -1003,7 +1004,8 @@ public class hShadow implements l {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public Object l(a71.c cVar, Object obj) {
+    public Object l
+        Object th = null;(a71.c cVar, Object obj) {
         Object s2;
         b71.a aVar;
         Object obj2;

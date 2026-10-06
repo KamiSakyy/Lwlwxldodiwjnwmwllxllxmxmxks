@@ -183,6 +183,8 @@ public abstract class c {
     public abstract boolean d();
 
     public c(x6.o0 o0Var, r71.b bVar, Map map) {
+
+        Object r2 = null;
         k71.k.g(map, "typeMap");
         int b = bVar != null ? b7.i.b(b91.g.J(bVar)) : -1;
         int i = 0;

@@ -7,7 +7,7 @@ import w61.a0;
 
 @e(c = "com.github.rudroid.viewmodels.search.SearchViewQueryViewModel$observeQuery$1", f = "SearchViewQueryViewModel.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b extends j implements j71.e {
+class b extends j implements j71.e {
     public /* synthetic */ Object v;
     public final /* synthetic */ c w;
 

@@ -6,7 +6,7 @@ import android.accounts.AccountAuthenticatorResponse;
 import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends AbstractAccountAuthenticator {
+public class b extends AbstractAccountAuthenticator {
     public static final a Companion = new a();
 
     @Override // android.accounts.AbstractAccountAuthenticator

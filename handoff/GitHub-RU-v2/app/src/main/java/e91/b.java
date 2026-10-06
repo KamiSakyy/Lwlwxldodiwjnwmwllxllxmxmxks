@@ -9,7 +9,7 @@ import javax.security.auth.x500.X500Principal;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements d {
+public class b implements d {
     public LinkedHashMap a;
 
     public b(X509Certificate... x509CertificateArr) {

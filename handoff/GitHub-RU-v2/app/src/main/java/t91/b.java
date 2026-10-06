@@ -4,7 +4,7 @@ import k71.l;
 import k71.u;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends l implements j71.c {
+public class b extends l implements j71.c {
     public final /* synthetic */ u s;
     public final /* synthetic */ u t;
     public final /* synthetic */ String u;

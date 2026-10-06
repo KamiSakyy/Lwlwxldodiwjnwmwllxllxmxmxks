@@ -18,7 +18,7 @@ import w21.o;
 import x.q0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public static int h;
     public static PendingIntent i;
     public static final Pattern j = Pattern.compile("\\|ID\\|([^|]+)\\|:?+(.*)");

@@ -5,7 +5,7 @@ import s01.m;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements m {
+public class e implements m {
     public String a;
     public String b;
 

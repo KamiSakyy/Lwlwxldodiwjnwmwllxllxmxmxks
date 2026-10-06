@@ -4,7 +4,7 @@ import android.content.Context;
 import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final b Companion = new b();
     public n5.f a;
     public oa.m b;

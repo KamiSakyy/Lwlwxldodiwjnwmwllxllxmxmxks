@@ -4,7 +4,7 @@ import com.github.service.models.HideCommentReason;
 import jo.hs;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends c71.c {
+public class s extends c71.c {
     public int A;
     public String u;
     public String v;

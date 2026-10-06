@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public SharedPreferences a;
     public k41.gShadow b;
     public Object c;

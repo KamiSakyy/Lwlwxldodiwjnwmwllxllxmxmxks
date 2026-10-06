@@ -106,6 +106,7 @@ public final class ContributionWidgetWorker extends CoroutineWorker {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(a71.c cVar) {
+        Object th = null;
         s sVar;
         java.util.List r4;
         List<z5.k> list;

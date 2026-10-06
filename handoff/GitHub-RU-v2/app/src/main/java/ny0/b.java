@@ -4,7 +4,7 @@ import java.util.List;
 import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements aa.a {
+public class b implements aa.a {
     public static final b a = new b();
     public static final List b = sy.d0Shadow.o(new String[]{"scheduledNotifications", "getsDirectMentions", "getsAssignments", "getsReviewRequests", "getsDeploymentRequests", "getsPullRequestReviews", "getsCiActivity", "getsCiFailedOnly", "getsReleases"});
 

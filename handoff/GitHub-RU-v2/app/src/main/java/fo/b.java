@@ -5,7 +5,7 @@ import com.github.service.models.response.projects.ProjectsMetaInfo;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements z01.c, yn.a {
+public class b implements z01.c, yn.a {
     public final Object a(String str, String str2, String str3, String str4) {
         return sy.c0.j();
     }

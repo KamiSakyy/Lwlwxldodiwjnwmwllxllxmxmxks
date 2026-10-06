@@ -1,7 +1,7 @@
 package com.github.rudroid.settings.copilot;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s<T> implements y71.j {
+class s<T> implements y71.j {
     public final /* synthetic */ o r;
 
     public s(o oVar) {

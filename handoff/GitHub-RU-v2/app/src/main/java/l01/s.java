@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s implements Parcelable {
+public class s implements Parcelable {
     public static final Parcelable.Creator<s> CREATOR = new c(12);
     public p0 r;
     public t0 s;

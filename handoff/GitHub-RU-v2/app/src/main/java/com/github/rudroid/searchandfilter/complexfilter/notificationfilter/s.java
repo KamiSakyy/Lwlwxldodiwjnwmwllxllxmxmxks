@@ -10,7 +10,7 @@ import java.util.ListIterator;
 import yz0.a3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s<T> implements y71.j {
+public class s<T> implements y71.j {
     public final /* synthetic */ y71.j r;
 
     public s(y71.j jVar, a0 a0Var) {

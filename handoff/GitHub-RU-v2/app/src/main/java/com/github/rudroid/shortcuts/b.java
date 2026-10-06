@@ -5,7 +5,7 @@ import com.github.rudroid.utilities.ui.g1;
 
 @c71.e(c = "com.github.rudroid.shortcuts.ConfigureShortcutViewModel$1$1", f = "ConfigureShortcutViewModel.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b extends c71.j implements j71.g {
+class b extends c71.j implements j71.g {
     public /* synthetic */ ShortcutConfigurationModel v;
     public /* synthetic */ boolean w;
     public /* synthetic */ g1 x;

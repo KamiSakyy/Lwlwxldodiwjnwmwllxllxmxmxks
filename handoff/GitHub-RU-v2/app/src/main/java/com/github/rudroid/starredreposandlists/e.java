@@ -7,7 +7,7 @@ import com.google.android.gms.internal.measurement.i4;
 import f1.ub;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final void a(int i, androidx.compose.runtime.s sVar, j71.a aVar, w1.r rVar) {
         j71.a aVar2;
         w1.r rVar2;

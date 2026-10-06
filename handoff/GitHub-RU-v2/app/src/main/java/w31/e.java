@@ -5,7 +5,7 @@ import a5.z;
 import android.view.View;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements z {
+public class e implements z {
     public final /* synthetic */ i r;
 
     public void a(View view) {

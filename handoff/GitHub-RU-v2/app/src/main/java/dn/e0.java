@@ -40,6 +40,9 @@ public final class e0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object a(oa.j jVar, c71.c cVar) {
+        Object obj = null;
+        Object aVar2 = null;
+        Object e = null;
         b0 b0Var;
         int i;
         qe.a aVar;

@@ -6,7 +6,7 @@ import u5.i;
 import w80.t;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public volatile Object a;
     public volatile Object b;
     public Object c;

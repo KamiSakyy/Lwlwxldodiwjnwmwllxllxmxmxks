@@ -3,7 +3,7 @@ package com.google.android.material.timepicker;
 import android.view.ViewTreeObserver;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements ViewTreeObserver.OnPreDrawListener {
+public class b implements ViewTreeObserver.OnPreDrawListener {
     public final /* synthetic */ ClockFaceView r;
 
     public b(ClockFaceView clockFaceView) {

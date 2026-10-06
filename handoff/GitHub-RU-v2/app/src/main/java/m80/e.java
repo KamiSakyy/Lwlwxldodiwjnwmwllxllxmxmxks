@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import hc0.uu;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public String a;
     public uu b;
     public String c;

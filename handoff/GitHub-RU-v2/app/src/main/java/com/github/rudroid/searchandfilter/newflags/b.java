@@ -4,7 +4,7 @@ import sy.y;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b<T> implements y71.j {
+public class b<T> implements y71.j {
     public final /* synthetic */ y71.j r;
 
     public b(y71.j jVar) {

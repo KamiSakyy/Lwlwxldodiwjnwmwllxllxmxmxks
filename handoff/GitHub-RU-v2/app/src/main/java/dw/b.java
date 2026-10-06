@@ -3,7 +3,7 @@ package dw;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public List a;
 
     public b(List list) {

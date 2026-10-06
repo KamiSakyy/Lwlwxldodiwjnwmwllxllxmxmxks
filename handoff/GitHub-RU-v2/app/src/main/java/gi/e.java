@@ -8,7 +8,7 @@ import k71.k;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public boolean a;
     public int b;
     public String c;

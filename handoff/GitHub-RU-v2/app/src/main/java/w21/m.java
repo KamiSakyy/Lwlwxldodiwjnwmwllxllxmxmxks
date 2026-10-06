@@ -34,6 +34,7 @@ public final class m implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
+        Object a = null;
         switch (this.r) {
             case 0:
                 synchronized (((l) this.t).t) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import x01.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public ArrayList a;
     public i b;
 

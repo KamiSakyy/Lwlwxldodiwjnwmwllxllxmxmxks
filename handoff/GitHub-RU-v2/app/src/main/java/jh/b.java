@@ -4,7 +4,7 @@ import d2.a0Shadow;
 import d2.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final long A;
     public static final long B;
     public static final long C;

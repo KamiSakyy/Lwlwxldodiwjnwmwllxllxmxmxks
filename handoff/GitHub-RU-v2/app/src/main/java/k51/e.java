@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements i51.d, i51.f {
+public class e implements i51.d, i51.f {
     public final boolean a = true;
     public JsonWriter b;
     public Map c;

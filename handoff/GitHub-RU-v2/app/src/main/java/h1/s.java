@@ -3,7 +3,7 @@ package h1;
 import f1.ic;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends c71.j implements j71.e {
+public class s extends c71.j implements j71.e {
 
     /* renamed from: v, reason: collision with root package name */
     public final /* synthetic */ int f25412v;

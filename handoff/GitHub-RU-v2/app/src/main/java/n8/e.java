@@ -3,7 +3,7 @@ package n8;
 import java.lang.reflect.Method;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public final /* synthetic */ Method f29655a;

@@ -20,6 +20,8 @@ public final /* synthetic */ class y implements j71.c {
     }
 
     public final Object k(Object obj) {
+
+        Object r1 = null;
         y61.b h;
         int i = this.r;
         w61.a0 a0Var = w61.a0.a;

@@ -1,7 +1,7 @@
 package h0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s implements q {
+public class s implements q {
     @Override // h0.q
     public final float a(float f6, float f10, float f11) {
         float abs = Math.abs((f10 + f6) - f6);

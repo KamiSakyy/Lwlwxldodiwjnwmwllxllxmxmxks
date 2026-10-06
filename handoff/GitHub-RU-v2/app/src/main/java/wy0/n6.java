@@ -18,6 +18,7 @@ public final /* synthetic */ class n6 implements j71.e {
 
     @Override // j71.e
     public final Object s(Object obj, Object obj2) {
+        jn0.r3 r10 = null;
         int i = this.r;
         w61.a0 a0Var = w61.a0.a;
         switch (i) {

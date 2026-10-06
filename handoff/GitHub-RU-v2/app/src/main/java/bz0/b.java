@@ -1,7 +1,7 @@
 package bz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c71.j implements j71.f {
+public class b extends c71.j implements j71.f {
     public final /* synthetic */ int v;
     public int w;
     public /* synthetic */ Throwable x;

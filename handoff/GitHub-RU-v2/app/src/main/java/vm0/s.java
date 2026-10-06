@@ -7,7 +7,7 @@ import sy.y;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s extends c71.j implements j71.c {
+public class s extends c71.j implements j71.c {
     public final /* synthetic */ int v;
     public int w;
     public final /* synthetic */ c0 x;

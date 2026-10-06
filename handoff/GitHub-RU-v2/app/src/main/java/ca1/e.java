@@ -1,7 +1,7 @@
 package ca1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends n {
+public class e extends n {
     @Override // ca1.o
     /* renamed from: clone */
     public final Object i() {

@@ -43,6 +43,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static void k(m1 m1Var, j jVar, a71.c cVar) {
+        Object th = null;
         l1 l1Var;
         int i;
         m1 m1Var2;
@@ -183,7 +184,8 @@ public class m1 extends z71.a implements f1, i, z71.r {
     }
 
     @Override // y71.j
-    public final Object c(Object obj, a71.c cVar) {
+    public final Object c
+        Object th = null;(Object obj, a71.c cVar) {
         Throwable th;
         a71.c[] p;
         k1 k1Var;
@@ -192,7 +194,8 @@ public class m1 extends z71.a implements f1, i, z71.r {
         }
         v71.l lVar = new v71.l(1, b4.T(cVar));
         lVar.t();
-        a71.c[] cVarArr = z71.b.a;
+        a71.
+            Object th = null;c[] cVarArr = z71.b.a;
         synchronized (this) {
             try {
                 if (s(obj)) {
@@ -283,7 +286,9 @@ public class m1 extends z71.a implements f1, i, z71.r {
                 }
                 this.C = i2 - 1;
                 n1.f(objArr, q() + this.B + this.C, null);
-            }
+
+        Object th = null;    
+            Object th = null;        }
         }
     }
 
@@ -297,7 +302,8 @@ public class m1 extends z71.a implements f1, i, z71.r {
                     th = th;
                     throw th;
                 }
-            } catch (Throwable th2) {
+            } catch (
+        Object th = null;Throwable th2) {
                 th = th2;
             }
         }

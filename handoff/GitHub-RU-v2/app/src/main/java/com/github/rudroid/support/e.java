@@ -15,7 +15,7 @@ import l7.m0;
 import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends m0 {
+public class e extends m0 {
     public SupportFragment d;
     public SupportFragment e;
     public final m2 f = new m2();

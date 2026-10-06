@@ -41,6 +41,7 @@ public final class z0 extends g1 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void a() {
+        Object z = null;
         Boolean valueOf;
         k1 k1Var;
         Bundle bundle;

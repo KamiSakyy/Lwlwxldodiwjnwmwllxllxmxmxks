@@ -3,7 +3,7 @@ package com.github.rudroid.views;
 import com.github.rudroid.views.AutoCompleteView;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements AutoCompleteView.c.a {
+public class b implements AutoCompleteView.c.a {
     public final /* synthetic */ AutoCompleteView a;
 
     public b(AutoCompleteView autoCompleteView) {

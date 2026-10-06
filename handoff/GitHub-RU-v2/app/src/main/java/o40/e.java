@@ -1,7 +1,7 @@
 package o40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public String a;
     public e30.a b;
 

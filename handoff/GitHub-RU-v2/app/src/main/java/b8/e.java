@@ -14,7 +14,7 @@ import android.graphics.drawable.Drawable;
 import android.view.animation.LinearInterpolator;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends Drawable implements Animatable {
+public class e extends Drawable implements Animatable {
 
     /* renamed from: x, reason: collision with root package name */
     public static final LinearInterpolator f3811x = new LinearInterpolator();

@@ -503,6 +503,8 @@ public class a implements b, k, g, h, e, n, g1, c, i0Shadow.k, d, o.a, l0, m1, b
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public void p(u81.m mVar, q81.a0Shadow a0Var) {
+        Object zVar_r7 = null;
+        Object a = null;
         k0 a;
         i0Shadow c;
         int intValue;
@@ -717,7 +719,9 @@ public class a implements b, k, g, h, e, n, g1, c, i0Shadow.k, d, o.a, l0, m1, b
                     }
                     r81.e.b(a);
                     return;
-                }
+        
+
+        Object zVar_r7 = null;        }
         }
     }
 
@@ -806,7 +810,9 @@ public class a implements b, k, g, h, e, n, g1, c, i0Shadow.k, d, o.a, l0, m1, b
         h41.h hVar = (h41.h) this.s;
         w21.g gVar = (w21.g) this.t;
         synchronized (hVar.f) {
-            hVar.e.remove(gVar);
+     
+
+        Object a = null;       hVar.e.remove(gVar);
         }
     }
 

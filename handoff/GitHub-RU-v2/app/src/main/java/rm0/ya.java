@@ -30,6 +30,8 @@ public final /* synthetic */ class ya implements j71.e {
 
     @Override // j71.e
     public final Object s(Object obj, Object obj2) {
+        fl r4 = null;
+        Object r3 = null;
         switch (this.r) {
             case 0:
                 kc0.i3 i3Var = (kc0.i3) obj;

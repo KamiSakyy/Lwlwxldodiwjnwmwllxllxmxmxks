@@ -4,7 +4,7 @@ import android.graphics.RectF;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements d {
+public class b implements d {
     public d a;
     public float b;
 

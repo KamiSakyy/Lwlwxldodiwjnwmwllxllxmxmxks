@@ -5,7 +5,7 @@ import com.github.service.models.response.issueorpullrequest.CloseReason;
 import dw.t4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public /* synthetic */ Object A;
     public final /* synthetic */ c0 B;
     public int C;

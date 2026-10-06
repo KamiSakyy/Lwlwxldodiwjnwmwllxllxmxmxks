@@ -59,11 +59,14 @@ public final class d {
     }
 
     public final void b(final v41.b bVar, final g gVar) {
+
+        Object th = null;
         Log.isLoggable("FirebaseCrashlytics", 3);
         final boolean z = SystemClock.elapsedRealtime() - this.d < 2000;
         this.h.D(new j11.a(bVar.a, j11.d.t, null), new j11.g() { // from class: c51.b
             @Override // j11.g
-            public final void b(Exception exc) {
+            public fi
+                Object th = null;nal void b(Exception exc) {
                 g gVar2 = gVar;
                 if (exc != null) {
                     gVar2.b(exc);

@@ -246,6 +246,8 @@ public abstract class tShadow {
     }
 
     public static final List e(r6 r6Var) {
+
+        h01.n r4 = null;
         ArrayList arrayList;
         k71.k.g(r6Var, "<this>");
         List<o6> list = r6Var.b.b;

@@ -3,7 +3,7 @@ package com.github.rudroid.copilot.inapppurchase.billingclient;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements x9.e {
+public class e implements x9.e {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ y1 f9663r;

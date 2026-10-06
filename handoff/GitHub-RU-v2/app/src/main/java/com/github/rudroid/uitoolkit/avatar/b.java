@@ -14,7 +14,7 @@ import x61.n;
 import x61.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b implements v0 {
+class b implements v0 {
     public static final b a = new b();
 
     public final w0 a(x0 x0Var, List list, long j) {

@@ -1364,6 +1364,8 @@ public abstract class g {
     }
 
     public static final List g(v5 v5Var) {
+
+        h01.n r4 = null;
         ArrayList arrayList;
         k71.k.g(v5Var, "<this>");
         List<s5> list = v5Var.b.b;

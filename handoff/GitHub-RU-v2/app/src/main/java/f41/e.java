@@ -3,7 +3,7 @@ package f41;
 import com.google.android.play.core.install.zza;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements d41.a {
+public class e implements d41.a {
     public b a;
     public a2.d b;
 

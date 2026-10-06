@@ -557,6 +557,7 @@ public final class o4 implements x1 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean I(String str, long j) {
+        Object e = null;
         boolean z;
         int i;
         Long l;
@@ -2119,7 +2120,8 @@ public final class o4 implements x1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void Y(v4 v4Var) {
+    public
+        Object th = null; final void Y(v4 v4Var) {
         r4 t0;
         Boolean V;
         long j;
@@ -2990,7 +2992,8 @@ public final class o4 implements x1 {
     /* JADX WARN: Type inference failed for: r0v2, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r0v4, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r0v6, types: [java.util.List] */
-    public final List d0(Bundle bundle, v4 v4Var) {
+
+        Object e = null;    public final List d0(Bundle bundle, v4 v4Var) {
         int[] iArr;
         b().z();
         m8.a();
@@ -3231,7 +3234,9 @@ public final class o4 implements x1 {
     /* JADX WARN: Removed duplicated region for block: B:41:? A[SYNTHETIC] */
     /* JADX WARN: Removed duplicated region for block: B:9:0x0097  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
+        Code decompiled incorrectly, please re
+        Object th = null;
+        Object e = null;fer to instructions dump.
     */
     public final void i(w wVar, v4 v4Var) {
         Throwable th;
@@ -3630,7 +3635,10 @@ public final class o4 implements x1 {
     /* JADX WARN: Removed duplicated region for block: B:60:0x0379  */
     /* JADX WARN: Removed duplicated region for block: B:64:0x03e5 A[Catch: all -> 0x01eb, TryCatch #6 {all -> 0x01eb, blocks: (B:43:0x01cc, B:46:0x01d9, B:48:0x01e1, B:51:0x01ef, B:58:0x036c, B:62:0x03a9, B:64:0x03e5, B:66:0x03ea, B:67:0x0401, B:71:0x040c, B:73:0x0426, B:75:0x042c, B:76:0x0443, B:79:0x0462, B:83:0x0484, B:84:0x049b, B:85:0x04a4, B:88:0x04c1, B:89:0x04d5, B:91:0x04dd, B:93:0x04e7, B:95:0x04ed, B:96:0x04f4, B:98:0x0501, B:100:0x0509, B:102:0x0511, B:105:0x0519, B:108:0x0525, B:110:0x0532, B:114:0x057a, B:115:0x058f, B:117:0x05be, B:120:0x05e8, B:122:0x0638, B:124:0x0666, B:126:0x0695, B:127:0x0698, B:129:0x069e, B:130:0x06a6, B:132:0x06ac, B:133:0x06b4, B:135:0x06ba, B:138:0x06c9, B:140:0x06d8, B:142:0x06e1, B:143:0x06e9, B:146:0x071a, B:148:0x0723, B:152:0x0738, B:156:0x0745, B:161:0x07c0, B:162:0x07c7, B:164:0x07ea, B:166:0x07f3, B:168:0x07fe, B:169:0x0818, B:171:0x081e, B:174:0x0838, B:176:0x0844, B:178:0x0851, B:181:0x0886, B:186:0x0890, B:187:0x0893, B:189:0x08a0, B:190:0x08a3, B:201:0x08e7, B:313:0x0872, B:319:0x07ed, B:320:0x074e, B:323:0x075b, B:326:0x0769, B:329:0x0777, B:332:0x0785, B:335:0x0793, B:338:0x079f, B:341:0x07ad, B:356:0x0659, B:359:0x055f, B:360:0x037e, B:361:0x038a, B:363:0x0390, B:370:0x039e, B:374:0x020f, B:377:0x021d, B:379:0x0232, B:384:0x024a, B:387:0x027a, B:389:0x0280, B:391:0x028e, B:393:0x029c, B:395:0x02a5, B:397:0x032e, B:399:0x0338, B:401:0x02d2, B:403:0x02eb, B:404:0x0313, B:407:0x02fe, B:409:0x0256, B:411:0x0274), top: B:42:0x01cc, inners: #7, #8, #9 }] */
     /* JADX WARN: Removed duplicated region for block: B:70:0x040a  */
-    /*
+  
+        Object th = null;
+        ContentValues contentValues222 = null;
+        Object k0422 = null;  /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void l(w wVar, v4 v4Var) {
@@ -4574,7 +4582,9 @@ public final class o4 implements x1 {
         }
     }
 
-    public final void l0() {
+    public final vo
+
+        Object e = null;id l0() {
         if (!this.D.get()) {
             throw new IllegalStateException("UploadController is not initialized");
         }
@@ -5023,7 +5033,8 @@ public final class o4 implements x1 {
     public final void p(ArrayList arrayList) {
         c21.uShadow.b(!arrayList.isEmpty());
         if (this.P != null) {
-            a().x.a("Set uploading progress before finishing the previous upload");
+        
+        Object e = null;    a().x.a("Set uploading progress before finishing the previous upload");
         } else {
             this.P = new ArrayList(arrayList);
         }
@@ -5093,7 +5104,10 @@ public final class o4 implements x1 {
     /* JADX WARN: Type inference failed for: r1v13 */
     /* JADX WARN: Type inference failed for: r1v17 */
     /* JADX WARN: Type inference failed for: r1v18 */
-    /* JADX WARN: Type inference failed for: r1v22, types: [android.database.Cursor] */
+    /* JA
+        Object th = null;
+        Object r7 = null;
+        Object e = null;DX WARN: Type inference failed for: r1v22, types: [android.database.Cursor] */
     /* JADX WARN: Type inference failed for: r1v25, types: [android.database.Cursor] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -5330,7 +5344,9 @@ public final class o4 implements x1 {
     /* JADX WARN: Removed duplicated region for block: B:341:? A[RETURN, SYNTHETIC] */
     /* JADX WARN: Removed duplicated region for block: B:72:0x05a5  */
     /* JADX WARN: Removed duplicated region for block: B:93:0x0617  */
-    /* JADX WARN: Removed duplicated region for block: B:99:0x0652  */
+    /* JADX WARN: Removed 
+        Object th = null;
+        Object e = null;duplicated region for block: B:99:0x0652  */
     /* JADX WARN: Type inference failed for: r11v2 */
     /* JADX WARN: Type inference failed for: r11v3, types: [boolean] */
     /* JADX WARN: Type inference failed for: r11v58 */
@@ -6224,7 +6240,9 @@ public final class o4 implements x1 {
                         intent.setAction("com.google.android.gms.measurement.BATCHES_AVAILABLE");
                         intent.setPackage(str);
                         S(o1Var2.d(), intent);
-                        return;
+                        retu
+
+        Object th = null;rn;
                     }
                     return;
                 }

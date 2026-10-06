@@ -13,7 +13,7 @@ import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends k1 {
+public class s extends k1 {
     public static final a Companion = new a();
     public a1 A;
     public String B;

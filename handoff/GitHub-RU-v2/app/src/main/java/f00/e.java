@@ -1,7 +1,7 @@
 package f00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements aa.h0 {
+public class e implements aa.h0 {
     public String a;
     public String b;
     public a c;

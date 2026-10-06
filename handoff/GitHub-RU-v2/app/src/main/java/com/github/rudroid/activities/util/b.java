@@ -2,7 +2,7 @@ package com.github.rudroid.activities.util;
 
 @c71.e(c = "com.github.rudroid.activities.util.AccountHolder", f = "AccountHolder.kt", l = {e6.w.HAS_IMAGE_COLOR_FILTER_FIELD_NUMBER}, m = "getActivityUser$suspendImpl", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-final class b extends c71.c {
+class b extends c71.c {
 
     /* renamed from: u, reason: collision with root package name */
     public /* synthetic */ Object f5915u;

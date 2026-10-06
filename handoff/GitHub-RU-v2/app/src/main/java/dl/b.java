@@ -4,7 +4,7 @@ import com.github.rudroid.mergequeue.list.n;
 import oa.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public j u;
     public n v;
     public /* synthetic */ Object w;

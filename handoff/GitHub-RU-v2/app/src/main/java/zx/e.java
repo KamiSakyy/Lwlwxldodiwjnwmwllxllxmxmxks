@@ -1,7 +1,7 @@
 package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public String a;
     public String b;
     public rt.e c;

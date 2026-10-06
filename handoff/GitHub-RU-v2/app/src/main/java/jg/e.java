@@ -12,7 +12,7 @@ import k71.k;
 
 @SuppressLint({"ClickableViewAccessibility"})
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends f {
+public class e extends f {
     public static final /* synthetic */ int x = 0;
     public d0 v;
     public a w;

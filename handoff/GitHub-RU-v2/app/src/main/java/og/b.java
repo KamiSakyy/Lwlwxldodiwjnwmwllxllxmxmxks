@@ -9,7 +9,7 @@ import v2.i0;
 import x61.l;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final void a(i0 i0Var, boolean z, boolean z2, float f, long j) {
         k.g(i0Var, "$this$drawFadingEdges");
         if (z || z2) {

@@ -5,7 +5,7 @@ import com.github.service.models.response.CheckConclusionState;
 import com.github.service.models.response.CheckStatusState;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public String a;
     public CheckStatusState b;
     public String c;

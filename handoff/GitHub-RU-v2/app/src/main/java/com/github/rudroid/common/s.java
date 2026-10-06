@@ -3,7 +3,7 @@ package com.github.rudroid.common;
 import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s<T> implements y71.j {
+public class s<T> implements y71.j {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ y71.j f9374r;

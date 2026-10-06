@@ -5,7 +5,7 @@ import k71.k;
 import xn.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public List a;
     public e1 b;
     public c c;

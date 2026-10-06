@@ -1,7 +1,7 @@
 package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public String a;
     public v0 b;
     public kw0.a c;

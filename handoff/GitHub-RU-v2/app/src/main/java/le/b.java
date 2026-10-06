@@ -59,7 +59,7 @@ public abstract class b {
         }
     }
 
-    public static final class e extends b {
+    public static class e extends b {
 
         /* renamed from: c, reason: collision with root package name */
         public int f28452c;

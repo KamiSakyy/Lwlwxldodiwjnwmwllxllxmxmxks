@@ -8,7 +8,7 @@ import k71.k;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements h0 {
+public class b implements h0 {
     public String a;
     public String b;
     public ev c;

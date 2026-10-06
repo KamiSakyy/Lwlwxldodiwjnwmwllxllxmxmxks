@@ -34,6 +34,7 @@ public final class j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object a(a0.i iVar, c71.c cVar) {
+        Object th = null;
         i iVar2;
         int i;
         e81.a aVar;

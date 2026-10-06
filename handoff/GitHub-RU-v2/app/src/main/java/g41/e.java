@@ -3,7 +3,7 @@ package g41;
 import a81.t;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends c41.d {
+public class e extends c41.d {
     public t g;
     public w21.g h;
     public final /* synthetic */ f i;

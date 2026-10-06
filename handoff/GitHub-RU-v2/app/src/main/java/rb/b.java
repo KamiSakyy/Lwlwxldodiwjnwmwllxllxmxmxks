@@ -11,7 +11,7 @@ import v71.q1;
 import v71.z;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
     public static final q1 a(z zVar, h hVar, a0Shadow a0Var, e eVar, c cVar, String str, j71.e eVar2) {
         k.g(zVar, "<this>");
         k.g(hVar, "context");

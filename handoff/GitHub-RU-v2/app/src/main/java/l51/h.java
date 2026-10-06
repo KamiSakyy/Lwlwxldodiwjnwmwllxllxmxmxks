@@ -233,6 +233,8 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
     }
 
     public y71.i B(j jVar) {
+
+        Object kVar_r7 = null;
         k.g(jVar, "user");
         nm.i iVar = (nm.i) this.s;
         iVar.getClass();
@@ -247,7 +249,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         return n1Shadow.y(new c00.g(p, n1Shadow.y(new sm.b(n1Shadow.y(dVar.a.a(jVar), (v) hVar.t)), (v) hVar.u), new rm.a(this, (a71.c) null), 27), (v) this.u);
     }
 
-    public void D(Activity activity, p8.h hVar) {
+    public void D
+
+        Object kVar_r7 = null;(Activity activity, p8.h hVar) {
         WeakHashMap weakHashMap = (WeakHashMap) this.u;
         k.g(activity, "activity");
         ReentrantLock reentrantLock = (ReentrantLock) this.t;
@@ -407,13 +411,16 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
             jobScheduler.schedule(builder.build());
         } catch (Throwable th) {
             rawQuery.close();
-            throw th;
+      
+
+        Object kVar_r7 = null;      throw th;
         }
     }
 
     public void I(Object obj) {
         long b = r1.i.b();
-        if (b == r1.l.a) {
+        if (b == r
+            Object kVar_r7 = null;1.l.a) {
             this.u = obj;
             return;
         }
@@ -686,7 +693,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         i51.c cVar = (i51.c) hashMap.get(obj.getClass());
         if (cVar != null) {
             cVar.a(obj, fVar);
-        } else {
+   
+
+        Object kVar_r7 = null;     } else {
             throw new EncodingException("No encoder for " + obj.getClass());
         }
     }
@@ -1734,7 +1743,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
     public h(oa.g gVar, oa.g gVar2, v vVar) {
         this.r = 2;
         k.g(gVar, "service");
-        k.g(gVar2, "logStorage");
+        k.g(gVar
+
+        w9.j kVar_r7 = null;2, "logStorage");
         k.g(vVar, "ioDispatcher");
         this.s = gVar;
         this.t = gVar2;
@@ -1748,7 +1759,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         this.t = lVar;
         int i = Build.VERSION.SDK_INT;
         if (w9.a.a) {
-            kVar_r7 = new w9.j(false);
+            kVar_r7 = new w9.j(fal
+
+        w9.j kVar = null;se);
         } else if (i != 26 && i != 27) {
             kVar = new w9.j(true);
         } else {
@@ -1811,7 +1824,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         this.t = lVar;
         b9.i iVar = new b9.i(1, this);
         this.u = iVar;
-        connectivityManager.registerNetworkCallback(new NetworkRequest.Builder().addCapability(12).build(), (ConnectivityManager.NetworkCallback) iVar);
+        connectivityManager.registerN
+
+        Object kVar_r7 = null;etworkCallback(new NetworkRequest.Builder().addCapability(12).build(), (ConnectivityManager.NetworkCallback) iVar);
     }
 
     public h(t.u uVar) {

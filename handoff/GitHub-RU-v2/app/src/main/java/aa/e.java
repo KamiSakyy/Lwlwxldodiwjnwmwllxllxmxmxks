@@ -4,7 +4,7 @@ package aa;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public final class e {
+public class e {
     public e() {
     }
 

@@ -3,7 +3,7 @@ package l51;
 import java.io.OutputStream;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends OutputStream {
+public class b extends OutputStream {
     public long r;
 
     @Override // java.io.OutputStream

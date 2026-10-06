@@ -220,6 +220,8 @@ public abstract class u0 extends v0 implements g0 {
     }
 
     public final void Y0(long j, s0 s0Var) {
+
+        Object r2 = null;
         int c;
         Thread P0;
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = y;
@@ -251,7 +253,8 @@ public abstract class u0 extends v0 implements g0 {
         }
         t0 t0Var3 = (t0) atomicReferenceFieldUpdater.get(this);
         if (t0Var3 != null) {
-            synchronized (t0Var3) {
+        
+                Object r2 = null;    synchronized (t0Var3) {
                 s0[] s0VarArr = t0Var3.a;
                 r2 = s0VarArr != null ? s0VarArr[0] : null;
             }

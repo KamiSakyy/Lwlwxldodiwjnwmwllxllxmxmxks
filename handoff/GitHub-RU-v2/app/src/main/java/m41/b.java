@@ -11,7 +11,7 @@ import l7.x1;
 import z70.w;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements a {
+public class b implements a {
     public static volatile b c;
     public s21.a a;
     public ConcurrentHashMap b;

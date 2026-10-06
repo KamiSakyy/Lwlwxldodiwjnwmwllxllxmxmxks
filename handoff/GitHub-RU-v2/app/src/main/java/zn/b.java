@@ -6,7 +6,7 @@ import sy.c0;
 import y71.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements kn.b, yn.a {
+public class b implements kn.b, yn.a {
     @Override // kn.b
     public final i A(String str, String str2, LinkedHashMap linkedHashMap) {
         k.g(str, "workflowId");

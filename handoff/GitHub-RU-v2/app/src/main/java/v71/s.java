@@ -1,7 +1,7 @@
 package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s {
+public class s {
     public Object a;
     public j b;
     public j71.f c;

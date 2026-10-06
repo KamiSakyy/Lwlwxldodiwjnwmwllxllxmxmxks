@@ -4,7 +4,7 @@ import aa.h0;
 import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements h0 {
+public class e implements h0 {
     public String a;
     public boolean b;
     public c c;

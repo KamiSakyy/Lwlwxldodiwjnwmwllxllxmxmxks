@@ -22,6 +22,8 @@ public final /* synthetic */ class a implements j71.e {
     public final /* synthetic */ int r;
 
     public final Object s(Object obj, Object obj2) {
+
+        Object d = null;
         int i = this.r;
         a0 a0Var = a0.a;
         switch (i) {

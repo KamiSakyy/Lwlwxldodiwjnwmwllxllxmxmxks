@@ -6,7 +6,7 @@ import m10.jq;
 import m10.uq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public String a;
     public String b;
     public String c;

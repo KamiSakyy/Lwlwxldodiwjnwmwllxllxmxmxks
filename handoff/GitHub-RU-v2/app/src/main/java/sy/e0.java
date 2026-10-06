@@ -321,6 +321,8 @@ public abstract class e0 {
     }
 
     public static androidx.compose.foundation.lazy.layout.o1 l(String str) {
+
+        Object intValue = null;
         q81.vShadow vVar;
         int i;
         String str2;
@@ -393,7 +395,9 @@ public abstract class e0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void m(ViewStructure viewStructure, v2.g0 g0Var, AutofillId autofillId, String str, e3.b bVar_r7) {
+    public static final void m(ViewStructure viewStructure, v2.g0 g0Var, AutofillId autofi
+        Object z9 = null;
+        Object intValue = null;llId, String str, e3.b bVar_r7) {
         int i;
         long j;
         long j2;

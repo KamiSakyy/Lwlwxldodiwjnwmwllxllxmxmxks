@@ -2,7 +2,7 @@ package com.github.rudroid.widget.agenttasks;
 
 @c71.e(c = "com.github.rudroid.widget.agenttasks.AgentTasksGlanceWidget", f = "AgentTasksGlanceWidget.kt", l = {25}, m = "provideGlance", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b extends c71.c {
+class b extends c71.c {
     public /* synthetic */ Object u;
     public final /* synthetic */ d v;
     public int w;

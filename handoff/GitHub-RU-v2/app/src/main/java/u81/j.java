@@ -16,6 +16,8 @@ public final class j implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
+        Object th = null;
+        Object e = null;
         w51.r rVar;
         String str = "OkHttp " + ((q81.o) this.t.s.b).g();
         m mVar = this.t;

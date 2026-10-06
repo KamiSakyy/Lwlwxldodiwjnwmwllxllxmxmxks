@@ -1644,6 +1644,18 @@ public final class v2 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
+        Object str36 = null;
+        Object i37 = null;
+        Object iVar2 = null;
+        Object subscriptionState13 = null;
+        Object intValue = null;
+        Object z1Var = null;
+        Object str31 = null;
+        Object str37 = null;
+        Object z67 = null;
+        Object subscriptionState8 = null;
+        Object z52 = null;
+        Object str34 = null;
         u2 u2Var;
         int i;
         u2 u2Var2;

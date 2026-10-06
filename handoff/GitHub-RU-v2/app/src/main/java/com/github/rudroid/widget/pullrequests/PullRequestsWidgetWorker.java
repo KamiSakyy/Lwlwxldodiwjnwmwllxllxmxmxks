@@ -116,6 +116,7 @@ public final class PullRequestsWidgetWorker extends CoroutineWorker {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(a71.c cVar) {
+        Object th = null;
         k kVar;
         java.util.List r4;
         SharedPreferences b;

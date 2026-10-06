@@ -8,7 +8,7 @@ import k71.k;
 import yz0.f;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements f {
+public class b implements f {
     public static final Parcelable.Creator<b> CREATOR = new c0(18);
     public String r;
     public Avatar s;

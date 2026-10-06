@@ -1,7 +1,7 @@
 package j8;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends i {
+public class b extends i {
     @Override // j8.i
     public final void a(int i) {
     }

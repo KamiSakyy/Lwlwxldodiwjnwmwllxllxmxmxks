@@ -4,7 +4,7 @@ import android.animation.Animator;
 import android.view.View;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements Animator.AnimatorListener {
+public class b implements Animator.AnimatorListener {
     public final /* synthetic */ View a;
 
     public b(View view) {

@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends SpannableStringBuilder {
+public class s extends SpannableStringBuilder {
 
     /* renamed from: r, reason: collision with root package name */
     public Class f32244r;

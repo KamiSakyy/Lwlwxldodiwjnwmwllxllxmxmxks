@@ -7,7 +7,7 @@ import w61.a0;
 
 @c71.e(c = "com.github.rudroid.cache.DefaultCacheDirProvider$provideCacheSubDir$2", f = "DefaultCacheDirProvider.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-final class e extends j implements j71.e {
+class e extends j implements j71.e {
 
     /* renamed from: v, reason: collision with root package name */
     public /* synthetic */ Object f8738v;

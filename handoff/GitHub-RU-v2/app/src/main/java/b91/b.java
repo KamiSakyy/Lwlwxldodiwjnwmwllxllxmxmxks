@@ -9,7 +9,7 @@ import javax.net.ssl.X509TrustManager;
 import m7.y;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends y {
+public class b extends y {
     public X509TrustManager a;
     public X509TrustManagerExtensions b;
 

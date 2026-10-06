@@ -6,7 +6,7 @@ import k71.k;
 import t71.q;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final d Companion = new d();
     public static final String e = q.r("\n            ALTER TABLE filter_bars ADD COLUMN timestamp INTEGER NOT NULL DEFAULT '" + System.currentTimeMillis() + "'\n        ");
     public String a;

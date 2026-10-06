@@ -26,7 +26,7 @@ import yz0.w7;
 import yz0.y7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements j {
+public class b implements j {
     public final /* synthetic */ int r;
     public final /* synthetic */ j s;
     public final /* synthetic */ Object t;

@@ -135,6 +135,8 @@ public final class m0 extends e0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean G(int i, byte[] bArr) {
+        Object th = null;
+        Object e = null;
         SQLiteDatabase sQLiteDatabase;
         boolean z;
         boolean z2;

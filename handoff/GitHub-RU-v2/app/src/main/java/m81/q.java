@@ -359,6 +359,7 @@ public final class q extends i4 implements l81.i {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final int t(SerialDescriptor serialDescriptor) {
+        Object r10 = null;
         boolean z;
         boolean z2;
         char c;

@@ -1,7 +1,7 @@
 package z71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s implements a71.c {
+public class s implements a71.c {
     public static final s r = new s();
 
     public final void i(Object obj) {

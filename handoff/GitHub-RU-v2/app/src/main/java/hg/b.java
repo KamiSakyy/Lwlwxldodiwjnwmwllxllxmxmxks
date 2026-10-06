@@ -11,7 +11,7 @@ import dc.p;
 import w1.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final void a(r rVar, j71.c cVar, ShortcutColor shortcutColor, s sVar, int i) {
         int i2;
         k71.k.g(cVar, "onColorClick");

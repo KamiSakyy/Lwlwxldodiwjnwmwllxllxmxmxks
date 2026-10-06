@@ -20,7 +20,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public static final u31.f c;
     public static Boolean e = null;
     public static String f = null;
@@ -71,6 +71,8 @@ public final class e {
     }
 
     public static e c(Context context, d dVar, String str) {
+
+        Object th = null;
         long j2;
         e eVar;
         int i2;
@@ -250,12 +252,14 @@ public final class e {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static int d(Context context, String str, boolean z) {
+    public static int d(Context contex
+        Object th = null;t, String str, boolean z) {
         Field declaredField;
         Throwable th;
         RemoteException remoteException;
         int readInt;
-        Cursor cursor;
+        Cursor curso
+                Object th = null;r;
         try {
             synchronized (e.class) {
                 Boolean bool = e;
@@ -444,7 +448,8 @@ public final class e {
     /* JADX WARN: Finally extract failed */
     /* JADX WARN: Removed duplicated region for block: B:14:0x00e7 A[EXC_TOP_SPLITTER, SYNTHETIC] */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
+        Code decompiled incorrectly, please refer to instructions dum
+        Object th = null;p.
     */
     public static int f(Context context, String str, boolean z, boolean z2) {
         Exception exc;

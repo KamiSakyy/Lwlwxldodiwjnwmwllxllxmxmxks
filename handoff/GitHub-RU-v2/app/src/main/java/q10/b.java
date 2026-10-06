@@ -14,7 +14,7 @@ import v8.l0;
 import w8.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements ha.c {
+public class b implements ha.c {
     public static final a Companion = new a();
 
     public final ha.b a(Map map, e51.a aVar) {

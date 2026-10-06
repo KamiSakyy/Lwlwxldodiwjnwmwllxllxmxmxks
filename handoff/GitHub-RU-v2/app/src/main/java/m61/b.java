@@ -6,7 +6,7 @@ import k71.xShadow;
 import w51.r;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements o61.b {
+public class b implements o61.b {
     public final /* synthetic */ int r;
     public k.i s;
     public Object t;

@@ -3,7 +3,7 @@ package dn;
 import com.google.android.gms.internal.measurement.i4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.j implements j71.e {
+public class b extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public int w;
 

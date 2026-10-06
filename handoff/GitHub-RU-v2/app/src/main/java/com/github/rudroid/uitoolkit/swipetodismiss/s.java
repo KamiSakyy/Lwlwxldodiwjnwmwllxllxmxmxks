@@ -2,7 +2,7 @@ package com.github.rudroid.uitoolkit.swipetodismiss;
 
 @c71.e(c = "com.github.rudroid.uitoolkit.swipetodismiss.AnchoredDraggableState$anchoredDrag$4$2", f = "AnchoredDraggable.kt", l = {591}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public int v;
     public /* synthetic */ Object w;
     public final /* synthetic */ j71.g x;

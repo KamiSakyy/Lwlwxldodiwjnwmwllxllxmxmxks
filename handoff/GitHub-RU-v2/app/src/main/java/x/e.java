@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends q0 implements Map {
+public class e extends q0 implements Map {
 
     /* renamed from: u, reason: collision with root package name */
     public y0 f33543u;

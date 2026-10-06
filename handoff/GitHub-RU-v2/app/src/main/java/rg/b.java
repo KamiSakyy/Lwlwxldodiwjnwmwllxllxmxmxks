@@ -3,7 +3,7 @@ package rg;
 import py0.o;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final r1.d a;
 
     static {

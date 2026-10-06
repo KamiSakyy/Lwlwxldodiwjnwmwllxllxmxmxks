@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import p41.m;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public static final a c = new a();
     public m a;
     public final AtomicReference b = new AtomicReference(null);

@@ -4,7 +4,7 @@ import java.io.File;
 import y41.b0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public b0 a;
     public String b;
     public File c;

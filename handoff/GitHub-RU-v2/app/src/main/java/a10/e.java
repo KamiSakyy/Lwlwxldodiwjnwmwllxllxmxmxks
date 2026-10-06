@@ -17,7 +17,7 @@ import y71.n1Shadow;
 import z01.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements e1, mi0 {
+public class e implements e1, mi0 {
     public static final a Companion = new a();
     public v r;
     public s00.a s;

@@ -3,7 +3,7 @@ package com.github.rudroid.uitoolkit.utils;
 import java.util.LinkedHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements j0.i {
+public class s implements j0.i {
     public long a;
     public final LinkedHashMap b = new LinkedHashMap();
     public r c;

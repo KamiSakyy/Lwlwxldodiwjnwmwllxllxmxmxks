@@ -13,7 +13,7 @@ import v91.i;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e implements u91.c {
+public class e implements u91.c {
     public static final n a = new n("^ {0,3}(-+|=+) *$");
 
     @Override // u91.c

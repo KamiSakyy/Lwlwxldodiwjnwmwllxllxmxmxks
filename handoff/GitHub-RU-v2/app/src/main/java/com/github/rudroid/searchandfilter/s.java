@@ -5,7 +5,7 @@ import java.util.List;
 
 @c71.e(c = "com.github.rudroid.searchandfilter.FilterBarViewModel$model$1", f = "FilterBarViewModel.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.g {
+class s extends c71.j implements j71.g {
     public /* synthetic */ boolean v;
     public /* synthetic */ List w;
     public /* synthetic */ List x;

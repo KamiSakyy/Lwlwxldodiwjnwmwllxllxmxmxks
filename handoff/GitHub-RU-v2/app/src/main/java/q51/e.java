@@ -1,7 +1,7 @@
 package q51;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements h {
+public class e implements h {
     public i a;
     public w21.g b;
 

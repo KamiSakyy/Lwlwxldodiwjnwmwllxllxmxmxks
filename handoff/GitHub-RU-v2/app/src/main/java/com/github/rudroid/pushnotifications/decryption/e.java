@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */

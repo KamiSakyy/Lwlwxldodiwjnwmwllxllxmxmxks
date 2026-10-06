@@ -1,7 +1,7 @@
 package nf;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements com.github.rudroid.settings.codeoptions.f {
+public class b implements com.github.rudroid.settings.codeoptions.f {
     public final boolean a() {
         return false;
     }

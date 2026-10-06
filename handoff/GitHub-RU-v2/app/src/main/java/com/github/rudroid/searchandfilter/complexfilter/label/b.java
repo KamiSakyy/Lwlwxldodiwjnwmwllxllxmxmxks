@@ -17,7 +17,7 @@ import l7.n1;
 import yz0.k2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends e0<com.github.rudroid.searchandfilter.complexfilter.label.a> {
+public class b extends e0<com.github.rudroid.searchandfilter.complexfilter.label.a> {
     public static final a Companion = new a();
     public SelectableLabelFragment f;
 

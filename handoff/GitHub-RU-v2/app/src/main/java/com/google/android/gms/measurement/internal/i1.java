@@ -554,6 +554,8 @@ public final class i1 extends i4 implements g {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void N(String str, byte[] bArr, String str2, String str3) {
+        Object th = null;
+        Object e = null;
         SQLiteDatabase sQLiteDatabase;
         com.google.android.gms.internal.measurement.e2 e2Var;
         byte[] bArr2;

@@ -1,7 +1,7 @@
 package ss0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public String a;
     public cp0.c b;
 

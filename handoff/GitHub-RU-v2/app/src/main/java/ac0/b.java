@@ -20,7 +20,7 @@ import y71.n1Shadow;
 import z01.e1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements e1, y90, yf0, yb0 {
+public class b implements e1, y90, yf0, yb0 {
     public final /* synthetic */ int r;
     public v s;
     public Object t;

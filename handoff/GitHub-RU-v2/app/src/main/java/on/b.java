@@ -4,7 +4,7 @@ import a0.s0;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public String a;
     public String b;
     public c c;

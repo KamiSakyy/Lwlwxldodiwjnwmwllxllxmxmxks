@@ -255,6 +255,7 @@ public final class y8 implements z01.g1, yb0, y90 {
 
     @Override // z01.g1
     public final y71.i B(String str, String str2, v01.d dVar, String str3, v01.c cVar, String str4) {
+        aa.u0 u0Var = null;
         fr frVar;
         zi ziVar;
         bq bqVar;
@@ -599,7 +600,8 @@ public final class y8 implements z01.g1, yb0, y90 {
     }
 
     @Override // z01.g1
-    public final Object a(String str, v01.d dVar, com.github.rudroid.common.i0 i0Var) {
+    public final Object a(String str, v01.d dVar, com.githu
+        Object u0Var = null;b.rudroid.common.i0 i0Var) {
         switch (this.r) {
             case 0:
                 aa1.bShadow bVar = aa.t0.d;
@@ -643,7 +645,9 @@ public final class y8 implements z01.g1, yb0, y90 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object c(String str, String str2, String str3, String str4, a71.c cVar) {
+    public final Object c(String 
+        Object u0Var = null;
+        Object qtVar = null;str, String str2, String str3, String str4, a71.c cVar) {
         v7 v7Var;
         int i;
         vt vtVar;

@@ -8,7 +8,7 @@ import t71.w;
 import x6.l0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends l0 {
+public class b extends l0 {
 
     /* renamed from: r, reason: collision with root package name */
     public Class f3747r;

@@ -1,7 +1,7 @@
 package fj;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public /* synthetic */ Object u;
     public final /* synthetic */ c v;
     public int w;

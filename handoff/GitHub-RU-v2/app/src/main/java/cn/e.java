@@ -15,7 +15,7 @@ import xn.wShadow;
 import xn.xShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends c71.j implements j71.e {
+public class e extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public int w;
     public /* synthetic */ Object x;

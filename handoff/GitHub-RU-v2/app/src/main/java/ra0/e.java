@@ -8,7 +8,7 @@ import hc0.wg;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements n0 {
+public class e implements n0 {
     public static final a Companion = new a();
     public t5 r;
 

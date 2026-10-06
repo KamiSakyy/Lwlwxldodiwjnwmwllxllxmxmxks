@@ -15,7 +15,7 @@ import w61.a0;
 import z01.x;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public m a;
     public x b;
 

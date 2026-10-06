@@ -3,7 +3,7 @@ package com.github.rudroid.utilities.viewmodel.paging.model;
 import com.github.rudroid.utilities.w0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e<T> implements y71.j {
+class e<T> implements y71.j {
     public final /* synthetic */ j r;
 
     public e(j jVar) {

@@ -3,7 +3,7 @@ package kotlin.io;
 import java.io.File;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends a {
+public class b extends a {
     public boolean b;
     public File[] c;
     public int d;

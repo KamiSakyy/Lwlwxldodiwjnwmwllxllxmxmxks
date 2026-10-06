@@ -10,7 +10,7 @@ import k71.k;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements Parcelable {
+public class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new c0(28);
     public int r;
     public String s;

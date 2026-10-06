@@ -6,7 +6,7 @@ import com.google.android.material.switchmaterial.SwitchMaterial;
 import l7.n1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends n1 {
+public class e extends n1 {
     public TextView u;
     public SwitchMaterial v;
 

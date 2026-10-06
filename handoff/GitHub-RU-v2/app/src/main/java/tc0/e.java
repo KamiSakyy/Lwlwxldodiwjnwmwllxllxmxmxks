@@ -8,7 +8,7 @@ import gn0.rn;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements w0 {
+public class e implements w0 {
     public static final a Companion = new a();
     public String r;
 

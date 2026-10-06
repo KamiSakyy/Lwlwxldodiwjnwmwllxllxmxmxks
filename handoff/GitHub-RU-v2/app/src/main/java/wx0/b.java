@@ -1,7 +1,7 @@
 package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public boolean a;
     public String b;
     public boolean c;

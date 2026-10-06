@@ -516,6 +516,7 @@ public class l implements Menu {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean q(MenuItem menuItem, x xVar, int i) {
+        Object r0 = null;
         boolean z10;
         n nVar = (n) menuItem;
         if (nVar == null || !nVar.isEnabled()) {

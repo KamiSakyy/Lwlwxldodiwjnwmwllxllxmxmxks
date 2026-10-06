@@ -7,7 +7,7 @@ import hc0.lc;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public jc a;
     public String b;
     public String c;

@@ -5,7 +5,7 @@ import b6.a2;
 import m11.r;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: e, reason: collision with root package name */
     public static final b f31147e = new b(0, 0, 0, 0);

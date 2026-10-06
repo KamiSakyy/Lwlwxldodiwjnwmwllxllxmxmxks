@@ -4,7 +4,7 @@ import android.content.Context;
 
 @c71.e(c = "com.github.rudroid.fragments.onboarding.notifications.usecase.ObserveNotificationsOnboardingStateUseCase$execute$1", f = "ObserveNotificationsOnboardingStateUseCase.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-final class b extends c71.j implements j71.f {
+class b extends c71.j implements j71.f {
 
     /* renamed from: v, reason: collision with root package name */
     public /* synthetic */ gi.e f14196v;

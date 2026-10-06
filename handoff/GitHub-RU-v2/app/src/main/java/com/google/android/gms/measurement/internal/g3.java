@@ -28,6 +28,8 @@ public final class g3 implements Runnable {
 
     @Override // java.lang.Runnable
     public final void run() {
+        Object th = null;
+        Object e = null;
         t4 t4Var;
         f0 f0Var;
         o1 o1Var;

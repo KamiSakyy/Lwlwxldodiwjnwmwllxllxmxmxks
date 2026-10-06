@@ -4,7 +4,7 @@ import kotlin.NoWhenBranchMatchedException;
 import ub.a;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
     public static final boolean a(a aVar, boolean z10) {
         if (aVar instanceof a.e) {
             return false;

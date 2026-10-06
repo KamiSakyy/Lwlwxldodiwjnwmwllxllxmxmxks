@@ -6,7 +6,7 @@ import k71.k;
 import yz0.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public boolean a;
     public List b;
     public f4 c;

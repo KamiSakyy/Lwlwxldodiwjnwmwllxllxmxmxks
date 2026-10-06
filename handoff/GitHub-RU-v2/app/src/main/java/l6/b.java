@@ -3,7 +3,7 @@ package l6;
 import android.content.Context;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public int A;
 
     /* renamed from: u, reason: collision with root package name */

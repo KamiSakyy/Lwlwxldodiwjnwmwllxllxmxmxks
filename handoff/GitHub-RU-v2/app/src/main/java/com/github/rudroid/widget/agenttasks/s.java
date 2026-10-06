@@ -2,7 +2,7 @@ package com.github.rudroid.widget.agenttasks;
 
 @c71.e(c = "com.github.rudroid.widget.agenttasks.AgentTasksWidgetSettingsActivity$getAccountName$1", f = "AgentTasksWidgetSettingsActivity.kt", l = {25}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ AgentTasksWidgetSettingsActivity w;
     public final /* synthetic */ b6.c x;

@@ -321,6 +321,8 @@ public final class o1 implements x1 {
     }
 
     public final void i(int i, Throwable th, byte[] bArr) {
+
+        Object e = null;
         s0 s0Var;
         s0 s0Var2;
         int i2 = i;

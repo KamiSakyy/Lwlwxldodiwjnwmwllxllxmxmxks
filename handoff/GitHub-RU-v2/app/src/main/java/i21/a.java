@@ -1179,6 +1179,8 @@ public abstract class a {
     }
 
     public static q81.n l(q81.n nVar, q81.n nVar2) {
+
+        Object e = null;
         ia.d dVar = new ia.d(4);
         int size = nVar.size();
         for (int i = 0; i < size; i++) {
@@ -1206,7 +1208,10 @@ public abstract class a {
     /* JADX WARN: Type inference failed for: r1v4 */
     /* JADX WARN: Type inference failed for: r1v5 */
     /* JADX WARN: Type inference failed for: r1v9 */
-    public static boolean m(File file, Resources resources, int i) {
+    public static boolean m(File file, Res
+        Object r1 = null;
+        Object th = null;
+        Object e = null;ources resources, int i) {
         InputStream inputStream;
         FileOutputStream fileOutputStream;
         int read;
@@ -1263,12 +1268,16 @@ public abstract class a {
                 throw th;
             }
         } catch (Throwable th4) {
-            th = th4;
+  
+
+        Object th = null;          th = th4;
             inputStream = null;
         }
     }
 
-    public static final long n() {
+    public static final 
+
+        Object e = null;long n() {
         return Thread.currentThread().getId();
     }
 

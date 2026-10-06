@@ -9,7 +9,7 @@ import y71.y1;
 
 @c71.e(c = "com.github.rudroid.settings.applock.AppLockAuthenticationStore$fetchAndUpdateAppLockUiModel$1", f = "AppLockAuthenticationStore.kt", l = {53}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.e {
+class e extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ k w;
 

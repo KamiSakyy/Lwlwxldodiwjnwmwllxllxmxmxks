@@ -1,7 +1,7 @@
 package gk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public int A;
     public String u;
     public String v;

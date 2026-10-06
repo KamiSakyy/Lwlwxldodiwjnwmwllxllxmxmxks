@@ -4,7 +4,7 @@ import android.text.SpannableStringBuilder;
 import com.google.android.gms.internal.measurement.n4;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: b, reason: collision with root package name */
     public static final String f34257b;

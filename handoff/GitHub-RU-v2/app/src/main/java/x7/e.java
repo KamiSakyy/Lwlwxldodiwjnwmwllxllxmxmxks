@@ -6,7 +6,7 @@ import k71.k;
 import sy.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends f {
+public class e extends f {
 
     /* renamed from: u, reason: collision with root package name */
     public int[] f33944u;

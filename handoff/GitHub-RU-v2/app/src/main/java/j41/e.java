@@ -4,7 +4,7 @@ import com.google.android.gms.internal.measurement.t5;
 import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements d, Serializable {
+public class e implements d, Serializable {
     public t5 r;
     public volatile transient boolean s;
     public transient Object t;

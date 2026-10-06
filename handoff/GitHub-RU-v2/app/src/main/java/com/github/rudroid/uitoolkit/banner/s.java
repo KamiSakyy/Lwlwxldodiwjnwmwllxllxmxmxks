@@ -1,7 +1,7 @@
 package com.github.rudroid.uitoolkit.banner;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s implements j71.c {
+class s implements j71.c {
     public final /* synthetic */ y3.d r;
 
     public s(y3.d dVar) {

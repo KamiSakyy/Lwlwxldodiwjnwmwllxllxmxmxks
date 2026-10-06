@@ -1,7 +1,7 @@
 package dn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final a Companion = new a();
     public en.c a;
     public oa.g b;

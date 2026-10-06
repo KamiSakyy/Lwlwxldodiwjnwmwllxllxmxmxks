@@ -6,7 +6,7 @@ import k71.k;
 import v71.v;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements e0 {
+public class e implements e0 {
 
     /* renamed from: c, reason: collision with root package name */
     public static final c f34645c = new c();

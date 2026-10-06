@@ -13,7 +13,7 @@ import t.q;
 import w21.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public k a;
     public c b;
     public Context c;

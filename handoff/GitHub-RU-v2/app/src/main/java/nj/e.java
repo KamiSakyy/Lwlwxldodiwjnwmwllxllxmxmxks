@@ -5,7 +5,7 @@ import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public y1 a;
     public i1 b;
     public y1 c;

@@ -1,7 +1,7 @@
 package com.github.rudroid.home.inappupdate;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */

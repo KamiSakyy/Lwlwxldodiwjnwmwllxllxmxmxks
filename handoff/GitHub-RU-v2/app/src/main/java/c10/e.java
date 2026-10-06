@@ -4,7 +4,7 @@ import aa.v0;
 import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements v0 {
+public class e implements v0 {
     public l a;
     public m b;
     public String c;

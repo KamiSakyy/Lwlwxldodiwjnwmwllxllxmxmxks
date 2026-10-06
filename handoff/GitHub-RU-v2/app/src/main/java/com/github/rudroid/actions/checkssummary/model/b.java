@@ -15,7 +15,7 @@ import x61.x;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
     public static final a Companion;
 
     /* renamed from: t, reason: collision with root package name */

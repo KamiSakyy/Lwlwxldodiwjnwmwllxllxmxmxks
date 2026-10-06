@@ -7,7 +7,7 @@ import ic.tf;
 import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends e0<a> {
+public class b extends e0<a> {
     public SelectableOrganizationFragment f;
 
     public b(SelectableOrganizationFragment selectableOrganizationFragment) {

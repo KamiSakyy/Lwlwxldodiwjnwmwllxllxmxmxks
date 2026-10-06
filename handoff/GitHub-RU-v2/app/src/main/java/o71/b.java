@@ -5,7 +5,7 @@ import k21.h;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends a {
+public class b extends a {
 
     /* renamed from: s, reason: collision with root package name */
     public final h f30093s = new h(1);

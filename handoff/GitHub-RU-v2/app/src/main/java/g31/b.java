@@ -12,7 +12,7 @@ import l7.t0;
 import l7.w0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends t0 {
+public class b extends t0 {
     public Paint a;
     public List b;
 

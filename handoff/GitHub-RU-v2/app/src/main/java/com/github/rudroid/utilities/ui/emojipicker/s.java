@@ -5,7 +5,7 @@ import java.util.List;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements j71.g {
+public class s implements j71.g {
     public final /* synthetic */ List r;
     public final /* synthetic */ y s;
     public final /* synthetic */ j71.c t;

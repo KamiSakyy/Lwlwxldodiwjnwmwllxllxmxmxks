@@ -13,7 +13,7 @@ import t71.n;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements u91.c {
+public class b implements u91.c {
     public static final n a = new n("^ {0,3}(~~~+|```+)([^`]*)$");
 
     public static a c(s91.c cVar, t91.d dVar) {

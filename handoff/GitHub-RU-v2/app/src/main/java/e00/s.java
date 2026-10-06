@@ -5,7 +5,7 @@ import java.util.List;
 import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements aa.a {
+public class s implements aa.a {
     public static final s a = new s();
     public static final List b = d0Shadow.o("node", "id", "__typename");
 

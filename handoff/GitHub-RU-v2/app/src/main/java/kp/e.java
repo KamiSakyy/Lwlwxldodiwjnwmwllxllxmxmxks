@@ -3,7 +3,7 @@ package kp;
 import go0.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends c71.c {
+public class e extends c71.c {
     public e81.a u;
     public int v;
     public /* synthetic */ Object w;

@@ -22,7 +22,7 @@ import com.google.android.gms.common.api.GoogleApiActivity;
 import n4.d0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends f {
+public class e extends f {
     public static final Object c = new Object();
     public static final e d = new e();
 

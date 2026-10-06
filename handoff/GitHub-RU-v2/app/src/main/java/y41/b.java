@@ -1,7 +1,7 @@
 package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements i51.c {
+public class b implements i51.c {
     public static final b a = new b();
     public static final i51.b b = i51.b.a("pid");
     public static final i51.b c = i51.b.a("processName");

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends i5.b {
+public class b extends i5.b {
     public static final Parcelable.Creator<b> CREATOR = new v1.p(9);
     public boolean t;
 

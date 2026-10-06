@@ -4,7 +4,7 @@ import java.util.List;
 import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements aa.a {
+public class s implements aa.a {
     public static final s a = new s();
     public static final List b = sy.d0Shadow.o("hasNextPage", "endCursor", "hasPreviousPage");
 

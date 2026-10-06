@@ -3,7 +3,7 @@ package kj;
 import yz0.r3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends c71.c {
+public class e extends c71.c {
     public final /* synthetic */ g A;
     public int B;
     public oa.j u;

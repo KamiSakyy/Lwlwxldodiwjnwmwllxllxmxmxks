@@ -1,7 +1,7 @@
 package com.github.rudroid.fragments.util;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public static final String[] f14776a = {"image/gif", "image/png", "image/jpeg", "image/webp"};

@@ -17,7 +17,7 @@ import w1.o;
 import w1.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final void a(r rVar, f fVar, j71.c cVar, boolean z, s sVar, int i) {
         int i2;
         k.g(cVar, "onSelect");

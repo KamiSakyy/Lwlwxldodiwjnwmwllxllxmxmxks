@@ -25,6 +25,7 @@ final class y3<T> implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
+        Object list5 = null;
         Object value;
         List list;
         PullRequestMergeMethod pullRequestMergeMethod;

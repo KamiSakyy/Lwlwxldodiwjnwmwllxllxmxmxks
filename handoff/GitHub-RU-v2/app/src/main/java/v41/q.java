@@ -50,6 +50,8 @@ public final class qShadow {
     }
 
     public static t0 c(w51.rShadow rVar, int i) {
+
+        Object i2 = null;
         String str = (String) rVar.t;
         String str2 = (String) rVar.s;
         StackTraceElement[] stackTraceElementArr = (StackTraceElement[]) rVar.u;
@@ -153,7 +155,9 @@ public final class qShadow {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final b1 b(int i) {
+   
+        Object i2 = null;
+        Object valueOf = null; public final b1 b(int i) {
         boolean z;
         Float f2;
         long j;

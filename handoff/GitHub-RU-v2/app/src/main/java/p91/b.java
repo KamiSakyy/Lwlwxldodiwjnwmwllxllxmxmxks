@@ -22,7 +22,7 @@ import x61.rShadow;
 import y41.t1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements c {
+public class b implements c {
     public final /* synthetic */ int a;
 
     public static g c(s91.c cVar) {

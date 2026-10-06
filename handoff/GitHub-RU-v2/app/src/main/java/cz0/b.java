@@ -17,7 +17,7 @@ import y71.n1Shadow;
 import z01.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements f1, yf0, mi0 {
+public class b implements f1, yf0, mi0 {
     public final /* synthetic */ int r;
     public v s;
     public Object t;

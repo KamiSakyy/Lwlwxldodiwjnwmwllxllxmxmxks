@@ -1,7 +1,7 @@
 package am0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public String a;
     public w b;
     public q c;

@@ -1,7 +1,7 @@
 package g40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public int a;
     public int b;
     public int c;

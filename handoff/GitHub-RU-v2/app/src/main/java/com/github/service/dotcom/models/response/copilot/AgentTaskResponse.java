@@ -45,6 +45,8 @@ public final class AgentTaskResponse {
     }
 
     public /* synthetic */ AgentTaskResponse(int i, String str, String str2, xn.e eVar, String str3, String str4, String str5, long j, long j2, long j3, int i2, List list, List list2, List list3, Boolean bool, List list4) {
+
+        Object e = null;
         if ((i & 1) == 0) {
             this.a = "";
         } else {

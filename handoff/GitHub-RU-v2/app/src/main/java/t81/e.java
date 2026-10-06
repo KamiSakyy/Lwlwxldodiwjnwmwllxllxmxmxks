@@ -10,7 +10,7 @@ import r81.f;
 import r81.g;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e {
+public class e {
     public static final Logger k;
     public static final e l;
     public s21.a a;

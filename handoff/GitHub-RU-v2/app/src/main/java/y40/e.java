@@ -4,7 +4,7 @@ import com.github.rudroid.m0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public List a;
 
     public e(List list) {

@@ -7,7 +7,7 @@ import o31.l;
 import o31.m;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends d5 {
+public class b extends d5 {
     public final /* synthetic */ int a;
     public final /* synthetic */ Object b;
 

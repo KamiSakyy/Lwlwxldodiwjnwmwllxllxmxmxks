@@ -3,7 +3,7 @@ package w31;
 import android.animation.ValueAnimator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements ValueAnimator.AnimatorUpdateListener {
+public class b implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ int a;
     public final /* synthetic */ i b;
 

@@ -14,6 +14,8 @@ public final /* synthetic */ class d2 implements j71.c {
     }
 
     public final Object k(Object obj) {
+
+        Object r3 = null;
         int i = this.r;
         w61.a0 a0Var = w61.a0.a;
         int i2 = 0;

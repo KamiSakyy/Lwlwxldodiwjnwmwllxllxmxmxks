@@ -6,7 +6,7 @@ import android.text.Layout;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends j {
+public class e extends j {
     @Override // lg.j
     public final void a(Canvas canvas, Layout layout, int i, int i2, int i3, int i4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
         k.g(drawable, "drawableLeft");

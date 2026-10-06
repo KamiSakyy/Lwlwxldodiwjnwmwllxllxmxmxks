@@ -18,7 +18,7 @@ import w1.r;
 import xn.b1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
 
     public static final /* synthetic */ class a {
         static {

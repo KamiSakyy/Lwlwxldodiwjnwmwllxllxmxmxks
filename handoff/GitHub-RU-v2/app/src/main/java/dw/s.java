@@ -3,7 +3,7 @@ package dw;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements aa.a {
+public class s implements aa.a {
     public static final s a = new s();
     public static final List b = sy.d0Shadow.o("name", "about", "title", "body", "filename", "assignees", "labels", "type");
 

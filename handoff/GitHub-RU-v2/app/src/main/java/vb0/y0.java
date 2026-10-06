@@ -570,6 +570,7 @@ public final class y0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
+        b01.h r2 = null;
         x0 x0Var;
         int i;
         z0 z0Var;

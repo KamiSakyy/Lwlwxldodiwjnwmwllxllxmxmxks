@@ -6,7 +6,7 @@ import com.github.service.models.response.home.NavLinkIdentifier;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements Parcelable {
+public class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: r, reason: collision with root package name */

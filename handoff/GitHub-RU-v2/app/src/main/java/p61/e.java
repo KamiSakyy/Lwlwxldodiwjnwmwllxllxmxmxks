@@ -1,7 +1,7 @@
 package p61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements d {
+public class e implements d {
     public static final Object c = new Object();
     public volatile d a;
     public volatile Object b;

@@ -44,6 +44,7 @@ public final class v1 extends com.google.android.gms.internal.measurement.y impl
 
     @Override // com.google.android.gms.measurement.internal.f0
     public final List F(String str, String str2, boolean z, v4 v4Var) {
+        Object e = null;
         g(v4Var);
         String str3 = v4Var.r;
         c21.uShadow.g(str3);
@@ -168,7 +169,8 @@ public final class v1 extends com.google.android.gms.internal.measurement.y impl
 
     /* JADX WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.internal.measurement.y
-    public final boolean e(int i, Parcel parcel, Parcel parcel2) {
+    public final boolean e(int i, Parcel 
+        Object e = null;parcel, Parcel parcel2) {
         boolean z;
         List list;
         o4 o4Var = this.f;
@@ -467,7 +469,8 @@ public final class v1 extends com.google.android.gms.internal.measurement.y impl
     }
 
     @Override // com.google.android.gms.measurement.internal.f0
-    public final List i(String str, String str2, String str3, boolean z) {
+    public final List i(
+        Object e = null;String str, String str2, String str3, boolean z) {
         L(str, true);
         o4 o4Var = this.f;
         try {
@@ -566,7 +569,8 @@ public final class v1 extends com.google.android.gms.internal.measurement.y impl
         M(new c51.c(5, this, v4Var, eVar, false));
     }
 
-    @Override // com.google.android.gms.measurement.internal.f0
+    @Override // com.google.android.
+        Object e = null;gms.measurement.internal.f0
     public final byte[] w(w wVar, String str) {
         c21.uShadow.d(str);
         c21.uShadow.g(wVar);

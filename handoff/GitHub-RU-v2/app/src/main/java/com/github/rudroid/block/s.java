@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.MenuItem;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s {
+public class s {
     public static void a(Context context, p.l lVar, boolean z10) {
         k71.k.g(lVar, "menu");
         MenuItem findItem = lVar.findItem(2131362119);

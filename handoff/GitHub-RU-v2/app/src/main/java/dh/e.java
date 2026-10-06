@@ -29,7 +29,7 @@ import w2.j0;
 import w3.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final f2 a = androidx.compose.foundation.layout.b.f(24, 16, 12, 0.0f, 8);
 
     public static final /* synthetic */ class a {

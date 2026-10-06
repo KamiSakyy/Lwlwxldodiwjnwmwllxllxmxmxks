@@ -6,7 +6,7 @@ import f1.ub;
 import g3.q0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     /* JADX WARN: Removed duplicated region for block: B:10:0x003d  */
     /* JADX WARN: Removed duplicated region for block: B:13:0x0048  */
     /* JADX WARN: Removed duplicated region for block: B:21:0x00c5  */

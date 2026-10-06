@@ -11,7 +11,7 @@ import yz0.q0;
 import yz0.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements s {
+public class b implements s {
     public String a;
     public String b;
     public com.github.service.models.response.a c;

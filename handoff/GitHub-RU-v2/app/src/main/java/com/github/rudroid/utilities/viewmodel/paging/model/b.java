@@ -6,7 +6,7 @@ import java.util.List;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b<T> implements y71.j {
+class b<T> implements y71.j {
     public final /* synthetic */ j r;
 
     public b(j jVar) {

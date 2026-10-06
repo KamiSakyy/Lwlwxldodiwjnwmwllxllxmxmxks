@@ -103,6 +103,8 @@ public final class h {
     }
 
     public synchronized ArrayList d() {
+
+        ArrayList arrayList = null;
         try {
             ArrayList arrayList = new ArrayList();
             for (Map.Entry<String, ?> entry : this.a.getAll().entrySet()) {

@@ -13,7 +13,7 @@ import t71.j;
 import t71.l;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c {
+public class b extends c {
     public final /* synthetic */ int b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

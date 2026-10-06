@@ -3,7 +3,7 @@ package s51;
 import androidx.compose.foundation.lazy.layout.o1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public String a;
     public long b;
     public int c;

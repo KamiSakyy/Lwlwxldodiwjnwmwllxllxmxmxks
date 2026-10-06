@@ -32,7 +32,7 @@ public interface e extends f {
         }
     }
 
-    public static final class b implements e {
+    public static class b implements e {
         public fl.b a;
 
         public b(fl.b bVar) {

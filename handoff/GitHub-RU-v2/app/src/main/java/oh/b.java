@@ -27,7 +27,7 @@ import w1.r;
 import yz0.l4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final n a = new n("@\\w+");
 
     /* JADX WARN: Code restructure failed: missing block: B:28:0x008b, code lost:

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c {
+public class b extends c {
     public u2 a;
 
     public b(u2 u2Var) {

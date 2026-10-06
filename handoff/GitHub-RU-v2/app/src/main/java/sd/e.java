@@ -8,7 +8,7 @@ import com.github.rudroid.html.b;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends URLSpan {
+public class e extends URLSpan {
 
     /* renamed from: r, reason: collision with root package name */
     public b.a f31983r;

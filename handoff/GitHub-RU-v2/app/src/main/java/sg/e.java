@@ -1,7 +1,7 @@
 package sg;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     static {
         new r1.d(new ra.c(23), false, -1199638747);
         new r1.d(new ra.c(24), false, -383385867);

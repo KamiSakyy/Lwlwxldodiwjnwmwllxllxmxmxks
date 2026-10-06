@@ -1,7 +1,7 @@
 package zk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends c71.c {
+public class s extends c71.c {
     public oa.j u;
     public j71.c v;
     public /* synthetic */ Object w;

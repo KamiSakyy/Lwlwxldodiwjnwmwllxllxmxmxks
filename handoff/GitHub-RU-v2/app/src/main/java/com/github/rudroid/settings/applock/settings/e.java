@@ -10,7 +10,7 @@ import yf.f;
 
 @c71.e(c = "com.github.rudroid.settings.applock.settings.AppLockSettingsActivity$authenticateAppLockSwitchAction$1", f = "AppLockSettingsActivity.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.e {
+class e extends c71.j implements j71.e {
     public /* synthetic */ Object v;
     public final /* synthetic */ boolean w;
     public final /* synthetic */ AppLockSettingsActivity x;

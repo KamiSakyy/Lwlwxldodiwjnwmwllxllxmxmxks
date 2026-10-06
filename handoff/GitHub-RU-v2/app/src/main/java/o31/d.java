@@ -241,6 +241,8 @@ public final class d {
     }
 
     public final void d(float f, boolean z) {
+
+        Object r7 = null;
         float f2;
         Typeface typeface;
         float f3;

@@ -4,7 +4,7 @@ import t00.f8;
 
 @c71.e(c = "com.github.rudroid.searchandfilter.complexfilter.BaseLocalSearchViewModel$loadPages$$inlined$flatMapLatest$1", f = "BaseLocalSearchViewModel.kt", l = {191, 189}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends c71.j implements j71.f {
+public class e extends c71.j implements j71.f {
     public final /* synthetic */ j71.c A;
     public y71.j B;
     public w61.k C;

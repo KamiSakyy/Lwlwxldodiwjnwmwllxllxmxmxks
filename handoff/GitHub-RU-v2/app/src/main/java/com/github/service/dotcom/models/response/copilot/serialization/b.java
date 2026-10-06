@@ -7,7 +7,7 @@ import kotlinx.serialization.KSerializer;
 import l81.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends n0 {
+public class b extends n0 {
     public static final b d = new b(xShadow.a(a.class));
 
     public final KSerializer c(kotlinx.serialization.json.b bVar) {

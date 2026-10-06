@@ -19,7 +19,7 @@ import x61.m;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends d {
+public class e extends d {
     public List v;
     public static final q Companion = new q();
     public static final Parcelable.Creator<e> CREATOR = new o(9);

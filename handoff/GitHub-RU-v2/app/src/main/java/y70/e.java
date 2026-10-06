@@ -8,7 +8,7 @@ import x70.h;
 import x70.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements aa.a {
+public class e implements aa.a {
     public static final e a = new e();
     public static final List b = d0Shadow.n("node");
 

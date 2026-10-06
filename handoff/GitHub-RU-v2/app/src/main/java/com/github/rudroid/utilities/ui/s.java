@@ -1,7 +1,7 @@
 package com.github.rudroid.utilities.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public Object A() { return null; }
     public Object N() { return null; }
     public Object S(Object p1, Object p2) { return null; }

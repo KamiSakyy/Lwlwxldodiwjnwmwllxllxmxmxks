@@ -6,7 +6,7 @@ import com.github.rudroid.agents.sessionevents.ui.u1;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public static final void a(j71.a aVar, j71.a aVar2, j71.c cVar, w1.r rVar, boolean z, List list, androidx.compose.runtime.s sVar, int i) {
         w1.r rVar2;
         k71.k.g(aVar, "onDismissRequest");

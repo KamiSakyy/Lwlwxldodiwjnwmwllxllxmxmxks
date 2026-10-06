@@ -4,7 +4,7 @@ import android.animation.ValueAnimator;
 import android.view.View;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements ValueAnimator.AnimatorUpdateListener {
+public class e implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ View a;
     public final /* synthetic */ View b;
     public final /* synthetic */ f c;

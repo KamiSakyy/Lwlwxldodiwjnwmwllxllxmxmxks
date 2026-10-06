@@ -95,6 +95,7 @@ public final class i0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object a(a71.c cVar, Object obj) {
+        b01.h r7 = null;
         o1 o1Var;
         int i;
         bm bmVar;
@@ -825,7 +826,8 @@ public final class i0 implements y71.j {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object c(Object obj, a71.c cVar) {
+    public final Object c(
+        b01.h r2 = null;Object obj, a71.c cVar) {
         h0Shadow h0Var;
         int i;
         j30 j30Var;

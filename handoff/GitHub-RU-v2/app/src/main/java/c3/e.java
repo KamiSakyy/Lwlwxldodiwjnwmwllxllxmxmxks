@@ -3,7 +3,7 @@ package c3;
 import w1.s;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements s {
+public class e implements s {
 
     /* renamed from: r, reason: collision with root package name */
     public static final e f4093r = new e();

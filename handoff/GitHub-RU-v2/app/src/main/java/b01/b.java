@@ -10,7 +10,7 @@ import jo.f4Shadow;
 import yz0.b8;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public f A;
     public String a;
     public String b;

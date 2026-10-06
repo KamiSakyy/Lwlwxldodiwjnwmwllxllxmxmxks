@@ -4,7 +4,7 @@ import com.github.rudroid.starredreposandlists.h;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b implements j71.a {
+class b implements j71.a {
     public final /* synthetic */ j71.e r;
     public final /* synthetic */ h.d s;
 

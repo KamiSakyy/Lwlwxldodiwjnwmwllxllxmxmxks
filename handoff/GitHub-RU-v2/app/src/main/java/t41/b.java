@@ -3,7 +3,7 @@ package t41;
 import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     void d(String str, Bundle bundle) { }
     public b() {
     }

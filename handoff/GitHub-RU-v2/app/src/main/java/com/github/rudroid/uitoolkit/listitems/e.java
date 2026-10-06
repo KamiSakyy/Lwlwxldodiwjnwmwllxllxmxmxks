@@ -1,7 +1,7 @@
 package com.github.rudroid.uitoolkit.listitems;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     static {
         new r1.d(new com.github.rudroid.uitoolkit.banner.m(21), false, -475393093);
         new r1.d(new d(6), false, -1226942246);

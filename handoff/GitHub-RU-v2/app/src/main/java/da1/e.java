@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class e extends b0Shadow {
+class e extends b0Shadow {
     public e() {
         super("InColumnGroup", 11);
     }

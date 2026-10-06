@@ -10,7 +10,7 @@ import l01.d0;
 import l01.m;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements d0, Parcelable {
+public class b implements d0, Parcelable {
     public static final b u;
     public String r;
     public final ProjectFieldOption$SingleOption s;

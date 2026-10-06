@@ -6,7 +6,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public static final long d = TimeUnit.DAYS.toMillis(7);
     public static final /* synthetic */ int e = 0;
     public String a;

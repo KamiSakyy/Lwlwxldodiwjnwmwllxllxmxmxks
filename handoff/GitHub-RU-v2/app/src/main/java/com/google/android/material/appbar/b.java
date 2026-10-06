@@ -8,7 +8,7 @@ import b5.f;
 import com.google.android.material.appbar.AppBarLayout;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends a5.b {
+public class b extends a5.b {
     public final /* synthetic */ AppBarLayout u;
     public final /* synthetic */ CoordinatorLayout v;
     public final /* synthetic */ AppBarLayout.BaseBehavior w;

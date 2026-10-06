@@ -154,6 +154,14 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object d(String str, PullRequestReviewEvent pullRequestReviewEvent, String str2, a71.c cVar) {
+        Object num3 = null;
+        Object p = null;
+        Object num4 = null;
+        Object num = null;
+        Object num2 = null;
+        Object P = null;
+        Object C = null;
+        Object T = null;
         g9 g9Var;
         int i;
         String str3;

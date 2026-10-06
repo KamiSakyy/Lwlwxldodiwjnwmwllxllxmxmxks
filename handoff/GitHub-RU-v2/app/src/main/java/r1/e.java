@@ -3,7 +3,7 @@ package r1;
 import sy.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public int f31074a = 0;

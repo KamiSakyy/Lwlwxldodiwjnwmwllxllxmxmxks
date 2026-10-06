@@ -12,7 +12,7 @@ import l01.t0;
 import x61.s;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public static final a Companion = new a();
     public static final b h;
     public String a;

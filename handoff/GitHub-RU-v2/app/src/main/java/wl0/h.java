@@ -109,6 +109,8 @@ public final class h implements z2 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public h(am0.f fVar) {
+        Object subscriptionState = null;
+        Object z6 = null;
         c5 c5Var;
         boolean z;
         i3 i3Var;
@@ -451,7 +453,9 @@ public final class h implements z2 {
     }
 
     @Override // yz0.z2
-    public final o.b h() {
+    public final o.b h(
+
+        Object subscriptionState = null;) {
         return this.p;
     }
 

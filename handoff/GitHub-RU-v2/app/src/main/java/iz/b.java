@@ -23,7 +23,7 @@ import x61.n;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements h01.c {
+public class b implements h01.c {
     public static final a Companion = new a();
     public int a;
     public List b;

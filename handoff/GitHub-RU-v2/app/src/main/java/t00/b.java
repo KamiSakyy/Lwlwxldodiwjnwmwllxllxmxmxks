@@ -4,7 +4,7 @@ import com.github.service.models.response.projects.ProjectsMetaInfo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.j implements j71.f {
+public class b extends c71.j implements j71.f {
     public final /* synthetic */ k A;
     public final /* synthetic */ String B;
     public final /* synthetic */ int v;

@@ -120,7 +120,7 @@ import yz0.g8;
 import yz0.l4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements j {
+public class b implements j {
     public final /* synthetic */ int r;
     public final /* synthetic */ j s;
 

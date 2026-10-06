@@ -4,7 +4,7 @@ import android.text.TextPaint;
 import android.text.style.MetricAffectingSpan;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends MetricAffectingSpan {
+public class e extends MetricAffectingSpan {
 
     /* renamed from: r, reason: collision with root package name */
     public float f26976r;

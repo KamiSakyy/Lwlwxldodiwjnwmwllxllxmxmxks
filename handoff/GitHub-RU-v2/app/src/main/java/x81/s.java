@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s implements Closeable {
+public class s implements Closeable {
     public static final Logger u;
     public h91.j r;
     public r s;

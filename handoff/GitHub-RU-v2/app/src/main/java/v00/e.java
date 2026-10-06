@@ -10,7 +10,7 @@ import t00.h7;
 import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements z01.k, mi0 {
+public class e implements z01.k, mi0 {
     public com.github.service.wrapper.j r;
     public com.github.service.wrapper.b s;
     public v71.v t;

@@ -3,7 +3,7 @@ package yg0;
 import aa.h0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements h0 {
+public class e implements h0 {
     public String a;
     public d b;
     public a c;

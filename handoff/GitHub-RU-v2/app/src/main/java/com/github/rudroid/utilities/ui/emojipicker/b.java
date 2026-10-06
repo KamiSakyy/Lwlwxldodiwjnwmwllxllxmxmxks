@@ -10,7 +10,7 @@ import java.util.Map;
 import x61.x;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final LinkedHashMap a;
     public static final LinkedHashMap b;
 

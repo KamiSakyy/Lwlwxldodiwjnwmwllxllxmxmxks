@@ -3,7 +3,7 @@ package k81;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends f1Shadow {
+public class e extends f1Shadow {
     public boolean[] a;
     public int b;
 

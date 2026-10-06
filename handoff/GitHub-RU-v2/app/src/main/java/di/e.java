@@ -12,7 +12,7 @@ import w61.a0;
 import x71.hShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends j implements f {
+public class e extends j implements f {
     public final /* synthetic */ int v;
     public int w;
     public /* synthetic */ Object x;

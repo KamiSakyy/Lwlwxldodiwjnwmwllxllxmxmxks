@@ -13,6 +13,8 @@ public final class z0 {
     public Object e;
 
     public z0(c1 c1Var, String str, boolean z) {
+
+        Object d = null;
         this.e = c1Var;
         c21.uShadow.d(str);
         this.d = str;

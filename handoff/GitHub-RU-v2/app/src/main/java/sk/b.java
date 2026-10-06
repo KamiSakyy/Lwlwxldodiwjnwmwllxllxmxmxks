@@ -11,7 +11,7 @@ import y71.y;
 import z01.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public c a;
     public g b;
 

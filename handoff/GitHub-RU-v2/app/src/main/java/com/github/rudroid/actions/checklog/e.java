@@ -3,7 +3,7 @@ package com.github.rudroid.actions.checklog;
 import androidx.lifecycle.u1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends k71.l implements j71.a {
+public class e extends k71.l implements j71.a {
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ d f4803s;

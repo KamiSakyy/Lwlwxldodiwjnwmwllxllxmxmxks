@@ -195,6 +195,8 @@ public abstract class b0 {
     }
 
     public static final Object L(a71.h hVar, j71.e eVar, a71.c cVar) {
+
+        Object th = null;
         Object J;
         a71.h q = cVar.q();
         a71.h A = !((Boolean) hVar.x0(new sw0.b(23), Boolean.FALSE)).booleanValue() ? q.A(hVar) : n(q, hVar, false);
@@ -266,7 +268,8 @@ public abstract class b0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final Object N(long j2, j71.e eVar, c71.c cVar) {
+    public static final Object N(long j2
+        Object r = null;, j71.e eVar, c71.c cVar) {
         w1 w1Var;
         int i2;
         k71.w wVar;
@@ -494,7 +497,9 @@ public abstract class b0 {
         return o0;
     }
 
-    public static final Object l(long j2, a71.c cVar) {
+   
+
+        Object s = null; public static final Object l(long j2, a71.c cVar) {
         if (j2 > 0) {
             l lVar = new l(1, b4.T(cVar));
             lVar.t();
@@ -599,7 +604,9 @@ public abstract class b0 {
                 return lVar;
             }
         }
-        return new l(2, cVar);
+        return new
+
+        Object th = null; l(2, cVar);
     }
 
     public static final void t(a71.h hVar, Throwable th) {

@@ -1,7 +1,7 @@
 package w61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements a71.c {
+public class b implements a71.c {
     public m81.o r;
     public a71.c s;
     public Object t;

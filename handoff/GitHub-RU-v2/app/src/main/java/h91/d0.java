@@ -60,6 +60,7 @@ public final class d0 implements i {
 
     @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
+        Object th = null;
         i0Shadow i0Var = this.r;
         if (this.t) {
             return;

@@ -435,6 +435,8 @@ public abstract class y {
     }
 
     public static final w7 n(hd0 hd0Var) {
+
+        Object a = null;
         IssueOrPullRequestState issueOrPullRequestState;
         yz0.q bVar;
         id0 id0Var;

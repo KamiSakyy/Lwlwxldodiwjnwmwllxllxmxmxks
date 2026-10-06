@@ -1,7 +1,7 @@
 package yb;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b<T1, T2, T3, T4, T5> {
+public class b<T1, T2, T3, T4, T5> {
     public final boolean equals(Object obj) {
         return this == obj || (obj instanceof b);
     }

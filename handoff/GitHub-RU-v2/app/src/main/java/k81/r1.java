@@ -15,6 +15,8 @@ public final class r1 implements KSerializer {
     public i81.g d;
 
     public r1(KSerializer kSerializer, KSerializer kSerializer2, KSerializer kSerializer3) {
+
+        Object c = null;
         k71.k.g(kSerializer, "aSerializer");
         k71.k.g(kSerializer2, "bSerializer");
         k71.k.g(kSerializer3, "cSerializer");

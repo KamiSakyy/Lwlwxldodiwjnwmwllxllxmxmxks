@@ -1,7 +1,7 @@
 package il;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public l01.v a;
     public l01.w b;
 

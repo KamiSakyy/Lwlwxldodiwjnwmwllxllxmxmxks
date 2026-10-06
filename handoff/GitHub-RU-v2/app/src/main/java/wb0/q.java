@@ -196,6 +196,7 @@ public final class q {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Serializable b(String str, String str2, c71.c cVar) {
+        Object str13 = null;
         c cVar2;
         int i;
         String str3;
@@ -1023,7 +1024,9 @@ public final class q {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Serializable g(String str, String str2, c71.c cVar) {
+    public final Serializable g(String st
+        Object str13 = null;
+        Object lVar = null;r, String str2, c71.c cVar) {
         k kVar;
         int i;
         String str3;
@@ -1442,7 +1445,9 @@ public final class q {
     /* JADX WARN: Removed duplicated region for block: B:79:0x00b2  */
     /* JADX WARN: Removed duplicated region for block: B:9:0x002f  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
+        Code decompiled incorrectly, please refer to instructio
+        Object str13 = null;
+        Object lVar = null;ns dump.
     */
     public final Serializable h(String str, String str2, c71.c cVar) {
         m mVar;

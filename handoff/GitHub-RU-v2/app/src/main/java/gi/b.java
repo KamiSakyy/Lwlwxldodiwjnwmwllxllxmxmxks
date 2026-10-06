@@ -54,7 +54,7 @@ import w61.a0;
 import x71.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends j implements j71.e {
+public class b extends j implements j71.e {
     public final /* synthetic */ int v;
     public int w;
     public Object x;

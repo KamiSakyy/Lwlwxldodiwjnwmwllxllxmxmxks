@@ -3,7 +3,7 @@ package rl;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public fj.c a;
 
     public e(fj.c cVar) {

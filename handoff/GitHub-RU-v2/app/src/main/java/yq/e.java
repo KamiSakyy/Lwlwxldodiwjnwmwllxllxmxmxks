@@ -1,7 +1,7 @@
 package yq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public String a;
     public vx.a b;
     public ct.c c;

@@ -8,7 +8,7 @@ import com.github.rudroid.widget.WidgetUIState;
 import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final void a(WidgetUIState widgetUIState, m6.e eVar, s sVar, int i) {
         String str;
         k71.k.g(widgetUIState, "widgetUIState");

@@ -91,6 +91,8 @@ public class f {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public int b(Context context, int i) {
+        Object c = null;
+        Object b = null;
         boolean z;
         int i2;
         PackageInfo packageInfo;
@@ -102,7 +104,9 @@ public class f {
         } catch (Throwable unused) {
         }
         boolean z2 = true;
-        if (!"com.google.android.gms".equals(context.getPackageName()) && !g.d.get()) {
+        if (!"com.google.android.gms".equals(context.getPackageName())
+                Object c = null;
+                Object b = null; && !g.d.get()) {
             synchronized (u.a) {
                 try {
                     if (!u.b) {

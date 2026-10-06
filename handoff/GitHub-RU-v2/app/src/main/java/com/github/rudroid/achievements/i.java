@@ -14,6 +14,7 @@ final /* synthetic */ class i extends k71.i implements j71.a {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object a() {
+        Object r0 = null;
         y1 y1Var = ((k) ((k71.c) this).s).A;
         boolean z10 = h1.g((g1) y1Var.getValue()) && (r0 = (jn.i) ((g1) y1Var.getValue()).getData()) != null;
         return Boolean.valueOf(z10);

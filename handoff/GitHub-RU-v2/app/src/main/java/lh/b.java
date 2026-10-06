@@ -9,7 +9,7 @@ import k3.s;
 import y41.t1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final c a;
 
     static {

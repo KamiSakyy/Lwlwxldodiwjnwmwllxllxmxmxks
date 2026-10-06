@@ -697,6 +697,7 @@ public final class f1Shadow implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
+        b01.h r2 = null;
         e1 e1Var;
         int i;
         xc xcVar;

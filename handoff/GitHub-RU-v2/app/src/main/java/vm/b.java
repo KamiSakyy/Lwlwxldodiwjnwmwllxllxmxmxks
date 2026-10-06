@@ -13,7 +13,7 @@ import q01.r;
 import x61.n;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public u a;
 
     public b(u uVar) {

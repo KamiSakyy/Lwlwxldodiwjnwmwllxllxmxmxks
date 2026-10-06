@@ -3,7 +3,7 @@ package ct;
 import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public a a;
     public String b;
     public boolean c;

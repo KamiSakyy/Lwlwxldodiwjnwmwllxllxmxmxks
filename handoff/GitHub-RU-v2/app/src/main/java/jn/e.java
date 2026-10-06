@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements g {
+public class e implements g {
     public String a;
     public String b;
     public String c;

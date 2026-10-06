@@ -1,7 +1,7 @@
 package c41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements c {
+public class b implements c {
     public static final Object t = new Object();
     public volatile c r;
     public volatile Object s;

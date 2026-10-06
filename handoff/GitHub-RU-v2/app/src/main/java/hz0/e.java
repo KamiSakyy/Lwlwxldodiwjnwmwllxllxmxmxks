@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements h0 {
+public class e implements h0 {
     public a a;
     public c b;
     public int c;

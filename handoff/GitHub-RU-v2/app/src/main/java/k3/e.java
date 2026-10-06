@@ -1,7 +1,7 @@
 package k3;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public z f27669a;

@@ -18,7 +18,7 @@ import java.util.List;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements w7.b, k, x, k21.b {
+public class e implements w7.b, k, x, k21.b {
     public static final /* synthetic */ e s = new e(3);
     public static final /* synthetic */ e t = new e(4);
     public static final /* synthetic */ e u = new e(5);

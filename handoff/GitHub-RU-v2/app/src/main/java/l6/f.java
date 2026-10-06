@@ -97,6 +97,7 @@ public final class f implements a {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object b(Context context, g gVar, String str, c71.c cVar) {
+        Object th = null;
         c cVar2;
         int i;
         e81.a aVar;

@@ -171,7 +171,7 @@ import yz0.z6;
 import z5.n;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public final /* synthetic */ int a;
 
     public static final g7 A(kj0.b bVar) {
@@ -585,6 +585,7 @@ public final class b {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static r4.d[] O(String str) {
+        Object i12 = null;
         int i;
         String trim;
         float[] fArr;
@@ -1654,7 +1655,8 @@ public final class b {
     /* JADX WARN: Type inference failed for: r9v10, types: [yz0.m6] */
     /* JADX WARN: Type inference failed for: r9v19, types: [yz0.i7] */
     /* JADX WARN: Type inference failed for: r9v21, types: [yz0.j7] */
-    public static final h01.q i(xt0.b4 b4Var) {
+    public static fi
+        Object r6 = null;nal h01.q i(xt0.b4 b4Var) {
         String str;
         qp0.a aVar;
         e eVar;

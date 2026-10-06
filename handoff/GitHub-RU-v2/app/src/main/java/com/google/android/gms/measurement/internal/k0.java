@@ -62,6 +62,8 @@ public final class k0 extends e0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final v4 D(String str) {
+        Object booleanValue = null;
+        Object e = null;
         String str2;
         String str3;
         boolean z;

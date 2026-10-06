@@ -4,7 +4,7 @@ import java.util.List;
 import pz0.su;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements aa.w0 {
+public class e implements aa.w0 {
     public static final a Companion = new a();
 
     public final aa.m d() {

@@ -14,7 +14,7 @@ import m10.p00;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements w0 {
+public class e implements w0 {
     public static final a Companion = new a();
     public ArrayList r;
 

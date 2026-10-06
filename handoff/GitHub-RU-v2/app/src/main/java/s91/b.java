@@ -10,7 +10,7 @@ import org.intellij.markdown.MarkdownParsingException;
 import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends s0 {
+public class b extends s0 {
     public x91.c t;
     public int u;
 

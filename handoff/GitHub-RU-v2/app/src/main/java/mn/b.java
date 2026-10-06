@@ -6,7 +6,7 @@ import com.github.service.models.response.CheckStatusState;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public String a;
     public CheckConclusionState b;
     public CheckStatusState c;

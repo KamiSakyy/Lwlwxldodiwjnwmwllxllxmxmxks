@@ -3,7 +3,7 @@ package z8;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends c {
+public class b extends c {
 
     /* renamed from: a, reason: collision with root package name */
     public int f34621a;

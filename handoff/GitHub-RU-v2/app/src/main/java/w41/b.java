@@ -6,7 +6,7 @@ import t.q;
 import w21.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements Executor {
+public class b implements Executor {
     public ExecutorService r;
     public final Object s = new Object();
     public o t = q.k((Object) null);

@@ -6,7 +6,7 @@ import k71.k;
 import q81.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends a {
+public class e extends a {
     public boolean v;
 
     @Override // w81.a, h91.k0

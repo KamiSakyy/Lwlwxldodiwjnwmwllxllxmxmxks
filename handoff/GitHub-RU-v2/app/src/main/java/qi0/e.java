@@ -8,7 +8,7 @@ import pi0.i;
 import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements aa.a {
+public class e implements aa.a {
     public static final e a = new e();
     public static final List b = d0Shadow.n("node");
 

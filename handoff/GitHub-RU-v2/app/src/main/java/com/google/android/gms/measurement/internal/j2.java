@@ -32,6 +32,7 @@ public final class j2 implements Runnable {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void run() {
+        Object e = null;
         p2 p2Var;
         s0 s0Var;
         Bundle z0;

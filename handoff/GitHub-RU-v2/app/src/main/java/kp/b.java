@@ -9,7 +9,7 @@ import v71.q1;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements y71.j {
+public class b implements y71.j {
     public final /* synthetic */ z r;
 
     public b(z zVar) {

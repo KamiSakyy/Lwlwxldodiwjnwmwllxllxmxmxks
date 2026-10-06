@@ -3,7 +3,7 @@ package r0;
 import s3.f;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements a {
+public class b implements a {
 
     /* renamed from: a, reason: collision with root package name */
     public float f31062a;

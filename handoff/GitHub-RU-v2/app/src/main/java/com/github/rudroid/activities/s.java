@@ -4,7 +4,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s implements TextWatcher {
+public class s implements TextWatcher {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ BaseEditTitleFragment f5896r;

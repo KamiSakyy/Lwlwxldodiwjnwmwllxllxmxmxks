@@ -9,7 +9,7 @@ import q81.h0;
 import y71.m1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends com.google.common.util.concurrent.a {
+public class b extends com.google.common.util.concurrent.a {
     public static final a Companion = new a();
     public Object a;
 

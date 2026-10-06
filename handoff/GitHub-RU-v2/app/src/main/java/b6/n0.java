@@ -46,6 +46,8 @@ public final class n0 extends c71.j implements j71.e {
     }
 
     public final Object v(Object obj) {
+
+        Object r2 = null;
         int i = this.f3639v;
         Set set = this.f3641x;
         int i10 = 0;

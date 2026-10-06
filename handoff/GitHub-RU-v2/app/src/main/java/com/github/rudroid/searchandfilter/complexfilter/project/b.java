@@ -8,7 +8,7 @@ import ic.vf;
 import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends com.github.rudroid.searchandfilter.complexfilter.e0<o> {
+public class b extends com.github.rudroid.searchandfilter.complexfilter.e0<o> {
     public SearchAndFilterBaseFragment f;
 
     public b(SearchAndFilterBaseFragment searchAndFilterBaseFragment) {

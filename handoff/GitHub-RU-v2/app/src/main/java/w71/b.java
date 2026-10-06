@@ -9,7 +9,7 @@ import v71.w;
 import v71.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends a71.a implements x {
+public class b extends a71.a implements x {
     private volatile Object _preHandler;
 
     public b() {

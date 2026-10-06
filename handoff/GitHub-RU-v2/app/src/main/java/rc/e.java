@@ -6,7 +6,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
     public static final void a(View view) {
         k71.k.g(view, "<this>");
         Context context = view.getContext();

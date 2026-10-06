@@ -10,7 +10,7 @@ import ic.ea;
 import zh.c;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends com.github.rudroid.adapters.viewholders.e<k5.f> implements o3 {
+public class b extends com.github.rudroid.adapters.viewholders.e<k5.f> implements o3 {
     public int v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

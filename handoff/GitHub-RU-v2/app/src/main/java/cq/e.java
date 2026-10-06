@@ -4,7 +4,7 @@ import java.util.List;
 import m10.rf0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements aa.i0 {
+public class e implements aa.i0 {
     public static final d Companion = new d();
 
     public final aa.m d() {

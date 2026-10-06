@@ -3,7 +3,7 @@ package z70;
 import hc0.bm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public String a;
     public bm b;
     public String c;

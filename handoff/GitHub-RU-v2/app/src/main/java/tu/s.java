@@ -6,7 +6,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements h0 {
+public class s implements h0 {
     public String a;
     public String b;
     public String c;

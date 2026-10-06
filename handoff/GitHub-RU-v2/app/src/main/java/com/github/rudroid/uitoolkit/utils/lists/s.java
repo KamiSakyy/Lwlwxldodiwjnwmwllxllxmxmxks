@@ -4,7 +4,7 @@ import androidx.compose.runtime.m1;
 
 @c71.e(c = "com.github.rudroid.uitoolkit.utils.lists.LazyListStateExtensionsKt$scrollVerticalTopBarOffset$1$1", f = "LazyListStateExtensions.kt", l = {113}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ m0.s w;
     public final /* synthetic */ int x;

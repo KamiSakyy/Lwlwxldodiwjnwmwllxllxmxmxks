@@ -4,7 +4,7 @@ import gn0.hn;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements aa.h0 {
+public class e implements aa.h0 {
     public String a;
     public ZonedDateTime b;
     public hn c;

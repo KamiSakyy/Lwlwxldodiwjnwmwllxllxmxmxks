@@ -7,7 +7,7 @@ import y71.i;
 import y71.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements i {
+public class e implements i {
     public final /* synthetic */ y r;
     public final /* synthetic */ j s;
     public final /* synthetic */ StoredShortcutModel t;

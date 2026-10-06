@@ -46,7 +46,7 @@ import m10.yo;
 import m10.zo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements aa.a {
+public class b implements aa.a {
     public final /* synthetic */ int a;
     public static final b b = new b(0);
     public static final b c = new b(1);

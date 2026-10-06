@@ -5,7 +5,7 @@ import androidx.work.WorkerParameters;
 import v8.w;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements d {
+public class e implements d {
     @Override // o6.b
     public final w a(Context context, WorkerParameters workerParameters) {
         throw null;

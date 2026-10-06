@@ -46,7 +46,7 @@ import wy0.l1;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.j implements j71.e {
+public class b extends c71.j implements j71.e {
     public final /* synthetic */ Object A;
     public final /* synthetic */ Object B;
     public final /* synthetic */ int v;
@@ -162,6 +162,8 @@ public final class b extends c71.j implements j71.e {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object v(Object obj) {
+        Object th = null;
+        Object m = null;
         y1 y1Var;
         p1.b bVar;
         p1.b bVar2;

@@ -9,7 +9,7 @@ import k71.k;
 import u81.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends t81.a {
+public class e extends t81.a {
     public final /* synthetic */ int e = 1;
     public final /* synthetic */ Object f;
 

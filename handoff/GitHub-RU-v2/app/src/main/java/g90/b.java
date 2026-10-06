@@ -3,7 +3,7 @@ package g90;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public String a;
     public e30.a b;
     public o90.b c;

@@ -12,7 +12,7 @@ import o1.i;
 import sy.pShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements Map, Serializable, l71.e {
+public class e implements Map, Serializable, l71.e {
     public static final e E;
     public f A;
     public i B;

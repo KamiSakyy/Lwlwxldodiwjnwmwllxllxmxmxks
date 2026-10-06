@@ -9,7 +9,7 @@ import org.jsoup.helper.ValidationException;
 import org.jsoup.select.Selector$SelectorParseException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s implements AutoCloseable {
+public class s implements AutoCloseable {
     public static final char[] u = {'>', '+', '~'};
     public static final String[] v = {"=", "!=", "^=", "$=", "*=", "~="};
     public static final char[] w = {',', ')'};
@@ -67,6 +67,8 @@ public final class s implements AutoCloseable {
     }
 
     public final l E(boolean z, boolean z2) {
+
+        Object r2 = null;
         String d = ba1.a.d(r());
         int i = 2;
         if (!"odd".equals(d)) {
@@ -286,7 +288,8 @@ public final class s implements AutoCloseable {
     /* JADX WARN: Multi-variable type inference failed */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
-    */
+    *
+        Object r2 = null;/
     public final n e0() {
         n pVar;
         t0 t0Var = this.r;

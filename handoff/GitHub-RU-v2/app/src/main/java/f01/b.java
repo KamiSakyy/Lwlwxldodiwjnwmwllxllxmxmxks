@@ -1,7 +1,7 @@
 package f01;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements e {
+public class b implements e {
     @Override // f01.e
     public final String a() {
         return null;

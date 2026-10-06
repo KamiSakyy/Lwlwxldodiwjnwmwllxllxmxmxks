@@ -26,6 +26,8 @@ public class SkiaImageDecoder {
     }
 
     public final Bitmap a(Context context, Uri uri) {
+
+        Object th = null;
         Bitmap bitmap;
         String uri2 = uri.toString();
         BitmapFactory.Options options = new BitmapFactory.Options();

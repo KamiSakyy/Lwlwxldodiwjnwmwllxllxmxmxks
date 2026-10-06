@@ -4,7 +4,7 @@ import a0.f1;
 
 @c71.e(c = "com.github.rudroid.uitoolkit.swipetodismiss.AnchoredDraggableKt$animateTo$2", f = "AnchoredDraggable.kt", l = {709}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.g {
+class e extends c71.j implements j71.g {
     public final /* synthetic */ float A;
     public int v;
     public /* synthetic */ a w;

@@ -8,7 +8,7 @@ import y71.j;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b<T> implements j {
+class b<T> implements j {
     public final /* synthetic */ a r;
 
     public b(a aVar) {

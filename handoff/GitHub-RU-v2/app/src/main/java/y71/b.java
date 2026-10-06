@@ -1,7 +1,7 @@
 package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public x71.t u;
     public /* synthetic */ Object v;
     public final /* synthetic */ c w;

@@ -15,7 +15,7 @@ import y71.m1;
 import yz0.s7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public static final j Companion = new j();
     public z a;
     public v b;

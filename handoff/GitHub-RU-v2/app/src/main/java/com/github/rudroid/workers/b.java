@@ -6,7 +6,7 @@ import w61.a0;
 import y71.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b<T> implements j {
+class b<T> implements j {
     public final /* synthetic */ wj.c r;
     public final /* synthetic */ List s;
 

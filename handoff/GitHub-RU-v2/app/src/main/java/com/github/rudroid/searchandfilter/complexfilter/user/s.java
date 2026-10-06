@@ -3,7 +3,7 @@ package com.github.rudroid.searchandfilter.complexfilter.user;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s implements y71.i {
+public class s implements y71.i {
     public final /* synthetic */ y71.i r;
     public final /* synthetic */ String s;
     public final /* synthetic */ String t;

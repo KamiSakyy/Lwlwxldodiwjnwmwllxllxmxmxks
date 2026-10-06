@@ -13,7 +13,7 @@ import java.util.regex.Matcher;
 import x.q0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends h0 {
+public class e extends h0 {
     public final /* synthetic */ b a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

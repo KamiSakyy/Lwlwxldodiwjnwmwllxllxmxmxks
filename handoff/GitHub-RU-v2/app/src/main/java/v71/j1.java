@@ -484,6 +484,7 @@ public class j1 implements d1, p1 {
 
     @Override // v71.d1
     public final o e0(j1 j1Var) {
+        Object r4 = null;
         p pVar = new p(j1Var);
         pVar.u = this;
         loop0: while (true) {

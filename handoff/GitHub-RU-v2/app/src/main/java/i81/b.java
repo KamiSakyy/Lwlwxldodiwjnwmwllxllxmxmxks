@@ -4,7 +4,7 @@ import java.util.List;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements SerialDescriptor {
+public class b implements SerialDescriptor {
     public g a;
     public r71.b b;
     public String c;

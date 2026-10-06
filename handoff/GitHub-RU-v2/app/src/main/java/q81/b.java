@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements f0 {
+public class b implements f0 {
     public static final b b = new b();
     public static final b c = new b();
     public static final b d = new b();

@@ -62,6 +62,7 @@ public final class l implements i0Shadow {
 
     @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
+        Object th = null;
         switch (this.r) {
             case 0:
                 Deflater deflater = (Deflater) this.u;

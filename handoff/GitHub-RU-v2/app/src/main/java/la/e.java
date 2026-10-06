@@ -3,7 +3,7 @@ package la;
 import do0.q;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends c71.c {
+public class e extends c71.c {
 
     /* renamed from: u, reason: collision with root package name */
     public /* synthetic */ Object f28426u;

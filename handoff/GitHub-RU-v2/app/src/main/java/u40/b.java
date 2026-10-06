@@ -5,7 +5,7 @@ import hc0.v7;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public String a;
     public v7 b;
     public String c;

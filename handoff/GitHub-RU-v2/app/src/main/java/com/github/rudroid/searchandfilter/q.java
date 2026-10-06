@@ -342,6 +342,8 @@ public class q extends androidx.lifecycle.k1 {
     }
 
     public final void Z(e0.b bVar) {
+
+        Object r0 = null;
         Iterable iterable = (Iterable) this.E.getValue();
         ArrayList arrayList = new ArrayList();
         for (Object obj : iterable) {
@@ -403,7 +405,9 @@ public class q extends androidx.lifecycle.k1 {
         y1Var.k((Object) null, valueOf);
     }
 
-    public final void c0(com.github.rudroid.viewmodels.search.a aVar) {
+    public final void c0(com.github.rudroid.
+
+        Object r0 = null;viewmodels.search.a aVar) {
         k71.k.g(aVar, "query");
         String str = aVar.a;
         boolean z = aVar.b;

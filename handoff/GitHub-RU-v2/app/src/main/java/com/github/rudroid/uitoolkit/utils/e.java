@@ -7,7 +7,7 @@ import androidx.compose.ui.layout.w0;
 import androidx.compose.ui.layout.x0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e implements e0 {
+class e implements e0 {
     public float a;
 
     public e(float f) {

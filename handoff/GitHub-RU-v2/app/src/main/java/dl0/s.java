@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public String a;
     public ZonedDateTime b;
     public f0 c;

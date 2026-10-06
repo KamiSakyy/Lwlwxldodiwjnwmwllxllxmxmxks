@@ -137,7 +137,7 @@ public interface e {
         }
     }
 
-    public static final class b {
+    public static class b {
     }
 
     static /* synthetic */ void a(e eVar, Throwable th, Map map, int i) {

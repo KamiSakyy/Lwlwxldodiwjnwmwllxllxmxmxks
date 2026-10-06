@@ -3,7 +3,7 @@ package az0;
 import a61.k0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ k0 w;

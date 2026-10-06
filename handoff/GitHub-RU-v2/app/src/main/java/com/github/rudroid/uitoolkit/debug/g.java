@@ -20,6 +20,8 @@ public final /* synthetic */ class g implements j71.c {
     }
 
     public final Object k(Object obj) {
+
+        Object r2 = null;
         int i = this.r;
         n1 n1Var = this.t;
         Long[] lArr = this.s;

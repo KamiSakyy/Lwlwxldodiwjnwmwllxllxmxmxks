@@ -19,7 +19,7 @@ import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends k1 {
+public class e extends k1 {
     public static final a Companion = new a();
     public static final ShortcutConfigurationModel F = new ShortcutConfigurationModel(x61.rShadow.r, ShortcutColor.GRAY, ShortcutIcon.ZAP, ShortcutScope.AllRepositories.INSTANCE, ShortcutType.ISSUE, "");
     public y1 A;

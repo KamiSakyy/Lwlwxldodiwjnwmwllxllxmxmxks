@@ -10,7 +10,7 @@ import java.util.List;
 import x61.m;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements e {
+public class b implements e {
     public static final h91.kShadow D;
     public static final h91.kShadow E;
     public static final h91.kShadow F;

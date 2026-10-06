@@ -2,7 +2,7 @@ package com.github.rudroid.pushnotifications;
 
 @c71.e(c = "com.github.rudroid.pushnotifications.DisableLiveUpdatesWorker", f = "DisableLiveUpdatesWorker.kt", l = {43}, m = "doWork", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-final class b extends c71.c {
+class b extends c71.c {
 
     /* renamed from: u, reason: collision with root package name */
     public /* synthetic */ Object f18527u;

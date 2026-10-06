@@ -2,7 +2,7 @@ package com.github.rudroid.viewmodels.issuesorpullrequests;
 
 @c71.e(c = "com.github.rudroid.viewmodels.issuesorpullrequests.IssueOrPullRequestViewModel$changeBaseBranch$1", f = "IssueOrPullRequestViewModel.kt", l = {1323}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ l w;
     public final /* synthetic */ String x;

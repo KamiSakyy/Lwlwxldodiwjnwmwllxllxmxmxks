@@ -1,7 +1,7 @@
 package com.github.rudroid.viewmodels.tasklist;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b<T> {
+public class b<T> {
     public Object a;
 
     public b(Object obj, String str) {

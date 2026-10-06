@@ -226,6 +226,8 @@ public abstract class d extends LinearLayout {
     }
 
     public final void b() {
+
+        Object r5 = null;
         MaterialButton materialButton;
         MaterialButton materialButton2;
         float max;

@@ -15,7 +15,7 @@ import w1.o;
 import w1.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final void a(r rVar, String str, q0 q0Var, d2 d2Var, r1.d dVar, s sVar, int i, int i2) {
         r rVar2;
         int i3;

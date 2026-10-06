@@ -8,7 +8,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s extends w {
+public class s extends w {
     public u c;
     public float d;
     public float e;

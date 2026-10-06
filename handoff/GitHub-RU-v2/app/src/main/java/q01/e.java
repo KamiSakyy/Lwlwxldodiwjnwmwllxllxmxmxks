@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import yz0.v2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements a {
+public class e implements a {
     public String a;
     public String b;
     public boolean c;

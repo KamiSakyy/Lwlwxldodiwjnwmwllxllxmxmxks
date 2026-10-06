@@ -9,7 +9,7 @@ import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements r71.b, d {
+public class e implements r71.b, d {
     public static final Map b;
     public Class a;
 

@@ -6,7 +6,7 @@ import gn0.xc;
 import gn0.zc;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public String a;
     public int b;
     public String c;

@@ -21,7 +21,7 @@ import z70.u4;
 import z70.v4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements h01.c {
+public class b implements h01.c {
     public static final a Companion = new a();
     public int a;
     public List b;

@@ -9,7 +9,7 @@ import w61.i;
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final ModelPickerCategoryResponse$Companion Companion;
     public static final Object r;
     public static final e s;

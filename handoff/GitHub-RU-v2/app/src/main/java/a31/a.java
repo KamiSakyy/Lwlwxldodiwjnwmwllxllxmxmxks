@@ -287,6 +287,7 @@ public final class a extends Drawable implements l {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void j() {
+        Object intValue5 = null;
         float f;
         float f2;
         int intValue;

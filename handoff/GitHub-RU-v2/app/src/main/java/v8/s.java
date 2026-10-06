@@ -1,7 +1,7 @@
 package v8;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends v {
+public class s extends v {
 
     /* renamed from: a, reason: collision with root package name */
     public final i f32840a = i.f32789b;

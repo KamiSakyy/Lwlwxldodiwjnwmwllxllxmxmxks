@@ -3,7 +3,7 @@ package a61;
 import android.os.Build;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public String a;
     public a b;
 

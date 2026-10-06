@@ -4,7 +4,7 @@ import com.github.commonandroid.featureflag.RuntimeFeatureFlag;
 import com.github.rudroid.common.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements k {
+public class b implements k {
     public final boolean a() {
         RuntimeFeatureFlag runtimeFeatureFlag = RuntimeFeatureFlag.a;
         c cVar = c.a0;

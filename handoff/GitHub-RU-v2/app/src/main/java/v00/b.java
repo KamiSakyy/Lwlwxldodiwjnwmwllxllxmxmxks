@@ -14,7 +14,7 @@ import t00.g3;
 import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements z01.j, mi0 {
+public class b implements z01.j, mi0 {
     public com.github.service.wrapper.j r;
     public v71.v s;
 

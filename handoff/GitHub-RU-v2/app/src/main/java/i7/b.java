@@ -5,7 +5,7 @@ import android.content.Context;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends d {
+public class b extends d {
     /* JADX WARN: Illegal instructions before constructor call */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

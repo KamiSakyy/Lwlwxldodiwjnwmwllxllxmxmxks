@@ -102,6 +102,8 @@ public abstract class g implements com.google.common.util.concurrent.c {
     }
 
     public static Object g(Object obj) {
+
+        Object th = null;
         if (obj instanceof a) {
             Throwable th = ((a) obj).f33720b;
             CancellationException cancellationException = new CancellationException("Task was cancelled.");

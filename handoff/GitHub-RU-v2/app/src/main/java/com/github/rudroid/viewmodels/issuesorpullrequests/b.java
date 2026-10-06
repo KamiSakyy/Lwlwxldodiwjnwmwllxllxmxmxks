@@ -2,7 +2,7 @@ package com.github.rudroid.viewmodels.issuesorpullrequests;
 
 @c71.e(c = "com.github.rudroid.viewmodels.issuesorpullrequests.IssueOrPullRequestAliveUseCase$collectAndUpdate$2$invokeSuspend$$inlined$combine$1$3", f = "IssueOrPullRequestAliveUseCase.kt", l = {234}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.j implements j71.f {
+public class b extends c71.j implements j71.f {
     public int v;
     public /* synthetic */ y71.j w;
     public /* synthetic */ Object[] x;

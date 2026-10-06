@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public final HashMap a = new HashMap();
     public final int b = 64;
     public int c;

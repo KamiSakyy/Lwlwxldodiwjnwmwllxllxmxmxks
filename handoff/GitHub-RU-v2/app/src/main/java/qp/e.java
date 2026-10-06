@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import f00.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public String a;
     public String b;
     public g1 c;

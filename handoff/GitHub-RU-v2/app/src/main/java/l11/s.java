@@ -3,7 +3,7 @@ package l11;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s extends e0 {
+public class s extends e0 {
     public long a;
     public Integer b;
     public a0 c;

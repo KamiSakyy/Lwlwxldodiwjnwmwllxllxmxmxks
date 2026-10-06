@@ -1,7 +1,7 @@
 package f0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends c71.j implements j71.e {
+public class e extends c71.j implements j71.e {
 
     /* renamed from: v, reason: collision with root package name */
     public final /* synthetic */ int f22262v = 1;

@@ -110,6 +110,8 @@ public final class h implements z2 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public h(lz.e eVar) {
+        Object subscriptionState = null;
+        Object y0 = null;
         o oVar;
         boolean z;
         boolean z2;
@@ -475,7 +477,9 @@ public final class h implements z2 {
         return this.e;
     }
 
-    public final o.b h() {
+    public final o.b h(
+
+        Object subscriptionState = null;) {
         return this.p;
     }
 

@@ -14,7 +14,7 @@ import sy.w;
 import w61.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends n1 {
+public class b extends n1 {
     public static final /* synthetic */ e[] y;
     public fh u;
     public a v;

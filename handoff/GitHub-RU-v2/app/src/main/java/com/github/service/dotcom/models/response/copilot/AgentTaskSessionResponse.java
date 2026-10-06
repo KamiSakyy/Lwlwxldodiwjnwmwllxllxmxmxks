@@ -58,6 +58,8 @@ public final class AgentTaskSessionResponse {
     }
 
     public /* synthetic */ AgentTaskSessionResponse(int i, String str, String str2, long j, long j2, long j3, long j4, String str3, String str4, xn.e eVar, String str5, String str6, String str7, String str8, String str9, String str10, List list, String str11, long j5, int i2, String str12, g3 g3Var, String str13, String str14, long j6, String str15, double d, AgentTaskSessionErrorResponse agentTaskSessionErrorResponse) {
+
+        Object e = null;
         if ((i & 1) == 0) {
             this.a = "";
         } else {

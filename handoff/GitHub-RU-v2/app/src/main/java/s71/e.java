@@ -4,7 +4,7 @@ import java.util.Iterator;
 import x61.q;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements h, d {
+public class e implements h, d {
 
     /* renamed from: a, reason: collision with root package name */
     public static final e f31730a = new e();

@@ -7,7 +7,7 @@ import com.github.rudroid.starredreposandlists.h;
 import com.google.android.gms.internal.measurement.i4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public static final void a(h.d dVar, j71.a aVar, w1.r rVar, androidx.compose.runtime.s sVar, int i) {
         j71.a aVar2;
         w1.r rVar2;

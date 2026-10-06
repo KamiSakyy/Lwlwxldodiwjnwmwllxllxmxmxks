@@ -2,7 +2,7 @@ package com.github.rudroid.projects.domain;
 
 @c71.e(c = "com.github.rudroid.projects.domain.SaveProjectConfigurationUseCase$createDeleteProjectItemFlow$$inlined$map$1$2", f = "SaveProjectConfigurationUseCase.kt", l = {50}, m = "emit", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends c71.c {
+public class e extends c71.c {
 
     /* renamed from: u, reason: collision with root package name */
     public /* synthetic */ Object f17690u;

@@ -80,6 +80,9 @@ public final class c implements Runnable {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void run() {
+        Object th = null;
+        Object r21 = null;
+        Object e = null;
         Object obj;
         v vVar;
         int i;

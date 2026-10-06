@@ -6,7 +6,7 @@ import sy.d0Shadow;
 import x61.u;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements Iterator, l71.a {
+public class b implements Iterator, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ int f31724r = 2;

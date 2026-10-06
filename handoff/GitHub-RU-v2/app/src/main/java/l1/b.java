@@ -4,7 +4,7 @@ package l1;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public final class b {
+public class b {
     public b() {
     }
 

@@ -7,7 +7,7 @@ import w61.a0;
 
 @c71.e(c = "com.github.rudroid.issueorpullrequest.closeasduplicated.CloseIssueAsDuplicateViewModel$submitAction$1$2", f = "CloseIssueAsDuplicateViewModel.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-final class b extends j implements j71.e {
+class b extends j implements j71.e {
 
     /* renamed from: v, reason: collision with root package name */
     public final /* synthetic */ a f15274v;

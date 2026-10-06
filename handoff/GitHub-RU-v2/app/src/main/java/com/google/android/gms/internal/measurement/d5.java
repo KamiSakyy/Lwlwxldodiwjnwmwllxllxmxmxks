@@ -168,6 +168,9 @@ public abstract class d5 implements Encoder {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final b3.a Q(Resources.Theme theme, Resources resources, XmlResourceParser xmlResourceParser, int i) {
+        Object i22 = null;
+        Object i20 = null;
+        Object qVar2 = null;
         long j;
         int i2;
         j2.e eVar;
@@ -1016,7 +1019,9 @@ public abstract class d5 implements Encoder {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final Object r(k6.v vVar, Context context, b6.m mVar, k6.u uVar, hz.k kVar, c71.c cVar) {
+    public static final 
+        Object th = null;
+        Object qVar2 = null;Object r(k6.v vVar, Context context, b6.m mVar, k6.u uVar, hz.k kVar, c71.c cVar) {
         k6.q qVar;
         k6.d dVar;
         k6.q qVar2;
@@ -1326,7 +1331,9 @@ public abstract class d5 implements Encoder {
     }
 
     public static final yz0.l4 w(wk0.c1 c1Var) {
-        k71.k.g(c1Var, "<this>");
+        k71.k.g(c1Var, "<this>"
+
+        yz0.z5 r6 = null;);
         return new yz0.l4(b41.b.O(c1Var.g), c1Var.b, c1Var.c, c1Var.d, c1Var.e);
     }
 

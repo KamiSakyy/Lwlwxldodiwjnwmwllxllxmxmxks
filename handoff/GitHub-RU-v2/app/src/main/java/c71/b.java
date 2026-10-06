@@ -1,7 +1,7 @@
 package c71;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements a71.c {
+public class b implements a71.c {
     public static final b r = new b();
 
     @Override // a71.c

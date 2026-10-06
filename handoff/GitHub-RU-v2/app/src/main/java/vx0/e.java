@@ -3,7 +3,7 @@ package vx0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements aa.a {
+public class e implements aa.a {
     public static final e a = new e();
     public static final List b = sy.d0Shadow.n("clearProjectV2ItemFieldValue");
 

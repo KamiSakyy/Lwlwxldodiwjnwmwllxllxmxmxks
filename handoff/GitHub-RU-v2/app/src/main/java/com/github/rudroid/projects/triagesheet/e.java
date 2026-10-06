@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
     public static final ArrayList a(List list, List list2) {
         k71.k.g(list, "<this>");
         k71.k.g(list2, "that");

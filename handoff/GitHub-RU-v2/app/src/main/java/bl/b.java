@@ -10,7 +10,7 @@ import w61.a0;
 import y71.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements j {
+public class b implements j {
     public final /* synthetic */ int r;
     public final /* synthetic */ j s;
     public final /* synthetic */ List t;

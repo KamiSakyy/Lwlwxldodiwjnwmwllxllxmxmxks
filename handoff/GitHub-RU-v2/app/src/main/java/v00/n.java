@@ -32,6 +32,7 @@ public final /* synthetic */ class n implements j71.c {
 
     /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Object, java.util.Collection, java.util.List] */
     public final Object k(Object obj) {
+        Object r2 = null;
         String str;
         String str2;
         List list;

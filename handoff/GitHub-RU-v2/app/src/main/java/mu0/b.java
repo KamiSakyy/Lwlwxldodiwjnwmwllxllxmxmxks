@@ -7,7 +7,7 @@ import java.time.ZonedDateTime;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements h0 {
+public class b implements h0 {
     public String a;
     public String b;
     public a c;

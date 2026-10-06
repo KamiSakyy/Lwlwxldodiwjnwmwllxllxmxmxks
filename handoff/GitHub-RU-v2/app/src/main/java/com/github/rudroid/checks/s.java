@@ -4,7 +4,7 @@ import com.github.rudroid.utilities.w0;
 
 @c71.e(c = "com.github.rudroid.checks.ChecksViewModel$loadHead$1$2", f = "ChecksViewModel.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
 
     /* renamed from: v, reason: collision with root package name */
     public final /* synthetic */ b0 f8780v;

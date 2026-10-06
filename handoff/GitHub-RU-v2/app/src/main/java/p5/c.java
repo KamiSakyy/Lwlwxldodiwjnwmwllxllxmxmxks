@@ -60,6 +60,7 @@ public class c implements j0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Object f(c cVar, c71.c cVar2) {
+        Object e = null;
         b bVar;
         int i;
         e0 c10;

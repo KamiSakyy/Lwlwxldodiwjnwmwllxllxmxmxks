@@ -3,7 +3,7 @@ package s5;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public String f31718a;

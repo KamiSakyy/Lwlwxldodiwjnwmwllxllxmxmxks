@@ -10,7 +10,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s implements u81.g {
+public class s implements u81.g {
     public final /* synthetic */ int r = 0;
     public long s;
     public long t;

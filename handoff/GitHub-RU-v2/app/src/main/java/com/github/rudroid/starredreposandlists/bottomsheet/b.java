@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import com.github.rudroid.starredreposandlists.createoreditlist.CreateNewListActivity;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends com.github.rudroid.activities.util.e<w61.a0, C0006b> {
+public class b extends com.github.rudroid.activities.util.e<w61.a0, C0006b> {
     public static final a Companion = new a();
 
     public static final class a {

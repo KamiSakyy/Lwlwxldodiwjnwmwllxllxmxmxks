@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public ha.f f26156a;

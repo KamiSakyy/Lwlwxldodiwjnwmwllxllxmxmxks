@@ -5,7 +5,7 @@ import com.github.service.models.response.type.MobileAppElement;
 
 @c71.e(c = "com.github.rudroid.searchandfilter.complexfilter.notificationfilter.FocusedFilterExplainerBottomSheet$onCreate$1", f = "FocusedFilterExplainerBottomSheet.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.e {
+class e extends c71.j implements j71.e {
     public final /* synthetic */ FocusedFilterExplainerBottomSheet v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

@@ -11,7 +11,7 @@ import m10.vp;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements n0 {
+public class e implements n0 {
     public static final b Companion = new b();
     public String r;
     public u0 s;

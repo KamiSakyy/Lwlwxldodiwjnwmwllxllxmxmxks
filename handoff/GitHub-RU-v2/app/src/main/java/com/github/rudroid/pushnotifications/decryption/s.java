@@ -7,7 +7,7 @@ import javax.crypto.spec.SecretKeySpec;
 import x61.v;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s {
+public class s {
     public static final a Companion = new a();
 
     /* renamed from: h, reason: collision with root package name */

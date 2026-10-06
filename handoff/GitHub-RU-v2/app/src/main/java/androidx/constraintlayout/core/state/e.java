@@ -1,7 +1,7 @@
 package androidx.constraintlayout.core.state;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements d {
+public class e implements d {
 
     /* renamed from: a, reason: collision with root package name */
     public float f2138a;

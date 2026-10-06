@@ -9,7 +9,7 @@ import k71.k;
 import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public String a;
     public String b;
     public com.github.service.models.response.a c;

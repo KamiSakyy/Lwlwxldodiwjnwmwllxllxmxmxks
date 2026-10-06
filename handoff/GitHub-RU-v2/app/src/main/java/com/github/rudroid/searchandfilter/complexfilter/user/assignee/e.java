@@ -3,7 +3,7 @@ package com.github.rudroid.searchandfilter.complexfilter.user.assignee;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements y71.i {
+public class e implements y71.i {
     public final /* synthetic */ y00.l r;
     public final /* synthetic */ f s;
 

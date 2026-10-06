@@ -1,7 +1,7 @@
 package s9;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements i {
+public class e implements i {
 
     /* renamed from: r, reason: collision with root package name */
     public h f31772r;

@@ -3,7 +3,7 @@ package ih;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public r0.d a;
     public r0.d b;
     public r0.d c;

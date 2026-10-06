@@ -7,7 +7,7 @@ import k71.k;
 import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements RandomAccess {
+public class e implements RandomAccess {
 
     /* renamed from: r, reason: collision with root package name */
     public Object[] f27901r;

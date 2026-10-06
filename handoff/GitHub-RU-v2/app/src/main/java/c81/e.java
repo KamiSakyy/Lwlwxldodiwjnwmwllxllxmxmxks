@@ -3,7 +3,7 @@ package c81;
 import v71.v;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends h {
+public class e extends h {
     public static final e u;
 
     static {

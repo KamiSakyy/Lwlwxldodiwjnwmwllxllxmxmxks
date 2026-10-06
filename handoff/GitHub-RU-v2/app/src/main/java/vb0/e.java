@@ -1,7 +1,7 @@
 package vb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends c71.j implements j71.e {
+public class e extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public int w;
     public final /* synthetic */ rm0.o x;

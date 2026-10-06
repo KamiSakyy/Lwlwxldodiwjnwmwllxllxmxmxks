@@ -14,7 +14,7 @@ import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends k1 {
+public class e extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
     public com.github.rudroid.activities.util.c f8593s;

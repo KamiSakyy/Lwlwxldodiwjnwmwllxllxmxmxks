@@ -3,7 +3,7 @@ package b4;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends com.google.common.util.concurrent.a {
+public class b extends com.google.common.util.concurrent.a {
 
     /* renamed from: a, reason: collision with root package name */
     public double[] f3402a;

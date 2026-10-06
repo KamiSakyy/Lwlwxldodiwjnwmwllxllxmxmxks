@@ -9,7 +9,7 @@ import y71.i;
 import z01.q;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public g a;
 
     public b(g gVar) {

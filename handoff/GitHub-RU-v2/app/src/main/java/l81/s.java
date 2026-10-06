@@ -6,7 +6,7 @@ import k81.q1;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s implements SerialDescriptor {
+public class s implements SerialDescriptor {
     public static final s b = new s();
     public static final String c = "kotlinx.serialization.json.JsonObject";
     public final /* synthetic */ e0 a = m71.a.c(q1.a, k.a).d;

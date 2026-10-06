@@ -7,7 +7,7 @@ import w61.a0;
 
 @c71.e(c = "com.github.rudroid.widget.shortcuts.viewmodel.ShortcutWidgetViewModel$updateShortcuts$1", f = "ShortcutWidgetViewModel.kt", l = {119}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.e {
+class e extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ f w;
     public final /* synthetic */ oa.j x;

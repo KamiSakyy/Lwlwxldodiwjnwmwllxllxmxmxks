@@ -5,7 +5,7 @@ import yz0.d3;
 import yz0.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
     /* JADX WARN: Type inference failed for: r12v0, types: [java.lang.Object, java.util.List] */
     public static final a a(y1 y1Var, String str) {
         k71.k.g(y1Var, "<this>");

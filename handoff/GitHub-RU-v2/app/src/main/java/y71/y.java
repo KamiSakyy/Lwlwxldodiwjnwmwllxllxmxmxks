@@ -42,6 +42,7 @@ public final class y implements i {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object b(j jVar, a71.c cVar) {
+        Object e = null;
         x xVar;
         b71.a aVar;
         int i;

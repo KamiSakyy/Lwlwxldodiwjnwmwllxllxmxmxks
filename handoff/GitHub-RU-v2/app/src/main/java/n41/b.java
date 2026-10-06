@@ -8,7 +8,7 @@ import java.util.HashSet;
 import l7.x1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements d2 {
+public class b implements d2 {
     public final /* synthetic */ int a;
     public final /* synthetic */ Object b;
 

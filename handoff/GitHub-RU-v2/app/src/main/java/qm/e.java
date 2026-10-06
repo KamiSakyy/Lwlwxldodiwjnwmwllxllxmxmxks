@@ -6,7 +6,7 @@ import w61.a0;
 import z01.u0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends j implements j71.f {
+public class e extends j implements j71.f {
     public final /* synthetic */ int v;
     public /* synthetic */ u0 w;
     public /* synthetic */ boolean x;

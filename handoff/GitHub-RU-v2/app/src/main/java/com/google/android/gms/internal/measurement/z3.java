@@ -504,6 +504,11 @@ public abstract class z3 implements a5.m1 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final yz0.u0 M(we0.b0 b0Var) {
+        Object str21 = null;
+        Object i8 = null;
+        Object z5 = null;
+        Object i9 = null;
+        Object i7 = null;
         StatusState statusState;
         com.github.service.models.response.a aVar;
         String str;

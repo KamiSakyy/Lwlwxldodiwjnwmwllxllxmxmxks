@@ -14,7 +14,7 @@ import sy.d0Shadow;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s implements v0 {
+class s implements v0 {
     public final /* synthetic */ float a;
 
     public s(float f) {

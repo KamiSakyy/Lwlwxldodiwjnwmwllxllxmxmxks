@@ -7,7 +7,7 @@ import com.github.rudroid.copilot.h1;
 import gn.m;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends View.BaseSavedState {
+public class b extends View.BaseSavedState {
     public static final Parcelable.Creator<b> CREATOR = new m(18);
     public int r;
 

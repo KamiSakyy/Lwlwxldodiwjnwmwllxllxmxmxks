@@ -5,7 +5,7 @@ import yz0.c2;
 import yz0.z1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s {
+public class s {
 
     /* renamed from: a, reason: collision with root package name */
     public c2 f15376a;

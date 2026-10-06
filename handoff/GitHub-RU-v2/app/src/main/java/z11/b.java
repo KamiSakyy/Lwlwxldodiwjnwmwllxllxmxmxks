@@ -9,7 +9,7 @@ import m7.y;
 import xn.i0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends d21.a {
+public class b extends d21.a {
     public int r;
     public int s;
     public PendingIntent t;

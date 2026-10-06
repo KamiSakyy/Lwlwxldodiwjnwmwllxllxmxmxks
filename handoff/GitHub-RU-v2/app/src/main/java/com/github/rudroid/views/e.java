@@ -11,7 +11,7 @@ import com.github.service.models.response.Avatar;
 import ic.o1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends FrameLayout {
+public class e extends FrameLayout {
     /* JADX WARN: Removed duplicated region for block: B:16:0x007f  */
     /* JADX WARN: Removed duplicated region for block: B:28:0x0095  */
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View

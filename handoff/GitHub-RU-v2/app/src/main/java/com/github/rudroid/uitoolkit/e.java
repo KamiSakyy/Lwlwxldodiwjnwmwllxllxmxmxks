@@ -1,7 +1,7 @@
 package com.github.rudroid.uitoolkit;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     /* JADX WARN: Removed duplicated region for block: B:17:0x005b  */
     /* JADX WARN: Removed duplicated region for block: B:24:0x006b  */
     /* JADX WARN: Removed duplicated region for block: B:33:0x008b  */

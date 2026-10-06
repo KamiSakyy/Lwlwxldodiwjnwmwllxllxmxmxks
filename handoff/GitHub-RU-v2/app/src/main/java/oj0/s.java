@@ -1,7 +1,7 @@
 package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s implements aa.h0 {
+public class s implements aa.h0 {
     public String a;
     public String b;
     public q c;

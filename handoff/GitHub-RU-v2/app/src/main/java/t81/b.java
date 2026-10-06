@@ -1,7 +1,7 @@
 package t81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends a {
+public class b extends a {
     public final /* synthetic */ int e = 0;
     public final /* synthetic */ j71.a f;
 

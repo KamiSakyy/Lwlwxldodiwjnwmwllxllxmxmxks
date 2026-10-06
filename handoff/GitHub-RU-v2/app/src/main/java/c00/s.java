@@ -3,7 +3,7 @@ package c00;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends c71.c {
+public class s extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ f w;

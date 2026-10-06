@@ -1,7 +1,7 @@
 package com.github.rudroid.viewmodels;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e<T> implements y71.j {
+class e<T> implements y71.j {
     public final /* synthetic */ g r;
 
     public e(g gVar) {

@@ -809,6 +809,8 @@ public abstract class c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static void t(Context context, Executor executor, b bVar, boolean z10) {
+        Object th = null;
+        Object e = null;
         boolean z11;
         Object r72;
         byte[] bArr;

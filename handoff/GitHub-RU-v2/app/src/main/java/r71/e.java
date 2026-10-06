@@ -1,7 +1,7 @@
 package r71;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends a {
+public class e extends a {
     public e() {
     }
 

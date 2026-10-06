@@ -26,7 +26,7 @@ import yz0.z2;
 import yz0.z4;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s implements me.d {
+public class s implements me.d {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */

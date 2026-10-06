@@ -63,6 +63,8 @@ public final /* synthetic */ class a implements e {
     public final /* synthetic */ int r;
 
     public final Object s(Object obj, Object obj2) {
+
+        qn0.l0 r1 = null;
         a71.b bVar;
         h hVar;
         switch (this.r) {

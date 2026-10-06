@@ -11,7 +11,7 @@ import k71.k;
 import q4.l;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends ForegroundColorSpan implements LeadingMarginSpan {
+public class b extends ForegroundColorSpan implements LeadingMarginSpan {
 
     /* renamed from: r, reason: collision with root package name */
     public int f31979r;

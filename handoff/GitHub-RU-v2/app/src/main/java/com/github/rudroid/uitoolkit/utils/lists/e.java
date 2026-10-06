@@ -2,7 +2,7 @@ package com.github.rudroid.uitoolkit.utils.lists;
 
 @c71.e(c = "com.github.rudroid.uitoolkit.utils.lists.LazyListStateExtensionsKt$ObservePaging$1$1$invokeSuspend$$inlined$filter$2$2", f = "LazyListStateExtensions.kt", l = {50}, m = "emit", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e extends c71.c {
+public class e extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ f w;

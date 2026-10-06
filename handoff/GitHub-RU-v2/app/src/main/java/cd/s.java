@@ -7,7 +7,7 @@ import com.github.service.models.response.type.PatchStatus;
 import ic.w5;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends com.github.rudroid.adapters.viewholders.e<k5.f> implements o3 {
+public class s extends com.github.rudroid.adapters.viewholders.e<k5.f> implements o3 {
 
     /* renamed from: x, reason: collision with root package name */
     public static final /* synthetic */ int f4231x = 0;

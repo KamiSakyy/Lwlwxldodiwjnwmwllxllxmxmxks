@@ -19,7 +19,7 @@ import yz0.j5;
 
 @c71.e(c = "com.github.rudroid.templates.IssueTemplatesActivity$onCreate$3", f = "IssueTemplatesActivity.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class e extends c71.j implements j71.e {
+class e extends c71.j implements j71.e {
     public /* synthetic */ Object v;
     public final /* synthetic */ IssueTemplatesActivity w;
 

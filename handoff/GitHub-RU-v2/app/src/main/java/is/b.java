@@ -3,7 +3,7 @@ package is;
 import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public String a;
     public String b;
     public vx.a c;

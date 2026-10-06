@@ -44,6 +44,9 @@ public final /* synthetic */ class s implements j71.c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object k(Object obj) {
+        Object g = null;
+        Object r9 = null;
+        Object r8 = null;
         String str;
         String str2;
         List list;

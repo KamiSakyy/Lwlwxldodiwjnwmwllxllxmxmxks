@@ -3,7 +3,7 @@ package w2;
 import java.text.BreakIterator;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends k.w {
+public class b extends k.w {
 
     /* renamed from: e, reason: collision with root package name */
     public static b f32975e;

@@ -3,7 +3,7 @@ package yx0;
 import iy0.e1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public String a;
     public e1 b;
 

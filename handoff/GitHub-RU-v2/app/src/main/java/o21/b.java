@@ -6,7 +6,7 @@ import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends b0 implements ListIterator {
+public class b extends b0 implements ListIterator {
     public int s;
     public int t;
     public e u;

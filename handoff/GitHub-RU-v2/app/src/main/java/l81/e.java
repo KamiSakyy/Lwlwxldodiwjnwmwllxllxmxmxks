@@ -10,7 +10,7 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e implements KSerializer {
+public class e implements KSerializer {
     public static final e a = new e();
     public static final d b = d.b;
 

@@ -27,6 +27,8 @@ public final /* synthetic */ class m implements j71.e {
     public final /* synthetic */ int r;
 
     public final Object s(Object obj, Object obj2) {
+
+        Object r4 = null;
         switch (this.r) {
             case 0:
                 androidx.compose.runtime.s sVar = (androidx.compose.runtime.s) obj;

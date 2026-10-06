@@ -6,7 +6,7 @@ import z5.j;
 import z5.n;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends j {
+public class b extends j {
 
     /* renamed from: d, reason: collision with root package name */
     public i6.c f21594d;

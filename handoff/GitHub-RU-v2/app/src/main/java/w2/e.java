@@ -1,7 +1,7 @@
 package w2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends k.w {
+public class e extends k.w {
 
     /* renamed from: c, reason: collision with root package name */
     public static e f33004c;

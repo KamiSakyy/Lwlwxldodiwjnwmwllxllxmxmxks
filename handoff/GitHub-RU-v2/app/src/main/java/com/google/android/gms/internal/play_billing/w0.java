@@ -38,6 +38,7 @@ public final class w0 extends m0 implements h0 {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static Object h(u0 u0Var) {
+        Object e = null;
         Object obj;
         Throwable c;
         if (u0Var instanceof h0) {

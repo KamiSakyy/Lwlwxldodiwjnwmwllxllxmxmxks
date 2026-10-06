@@ -3,7 +3,7 @@ package ms;
 import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements aa.h0 {
+public class b implements aa.h0 {
     public String a;
     public boolean b;
     public a c;

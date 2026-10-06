@@ -5,7 +5,7 @@ import d2.t;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public long A;
     public long A0;
     public long B;

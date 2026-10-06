@@ -29,7 +29,7 @@ import vn0.m1;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements y71.j {
+public class b implements y71.j {
     public final /* synthetic */ int r;
     public final /* synthetic */ y71.j s;
 
@@ -92,6 +92,7 @@ public final class b implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object b(a71.c cVar, Object obj) {
+        zz0.a r8 = null;
         fp.i iVar;
         int i;
         if (cVar instanceof fp.i) {

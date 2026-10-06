@@ -9,7 +9,7 @@ import l7.p;
 import l7.u;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements ValueAnimator.AnimatorUpdateListener {
+public class b implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ int a;
     public final /* synthetic */ Object b;
 

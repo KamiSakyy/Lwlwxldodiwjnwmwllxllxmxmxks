@@ -8,7 +8,7 @@ import sy.d0Shadow;
 import v20.f;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements aa.a {
+public class e implements aa.a {
     public static final e a = new e();
     public static final List b = d0Shadow.o("id", "planLimit", "assignableUsers", "__typename");
 

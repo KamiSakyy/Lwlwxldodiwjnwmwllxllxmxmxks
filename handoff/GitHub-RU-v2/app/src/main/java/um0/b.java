@@ -3,7 +3,7 @@ package um0;
 import t00.x9;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ x9 w;

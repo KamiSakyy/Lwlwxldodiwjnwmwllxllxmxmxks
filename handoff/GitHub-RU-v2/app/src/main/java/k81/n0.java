@@ -17,6 +17,8 @@ public abstract class n0 implements KSerializer {
     public Object c;
 
     public n0(KSerializer kSerializer, KSerializer kSerializer2) {
+
+        Object c = null;
         this.b = kSerializer;
         this.c = kSerializer2;
     }
@@ -30,7 +32,8 @@ public abstract class n0 implements KSerializer {
     public abstract Object d(Object obj, Object obj2);
 
     @Override // kotlinx.serialization.KSerializer
-    public final Object deserialize(Decoder decoder) {
+    public final Object dese
+        Object c = null;rialize(Decoder decoder) {
         Decoder kVar;
         switch (this.a) {
             case 0:
@@ -92,7 +95,8 @@ public abstract class n0 implements KSerializer {
     }
 
     @Override // kotlinx.serialization.KSerializer
-    public final void serialize(Encoder encoder, Object obj) {
+    public 
+        Object c = null;final void serialize(Encoder encoder, Object obj) {
         switch (this.a) {
             case 0:
                 d5 b = encoder.b(getDescriptor());
@@ -117,7 +121,9 @@ public abstract class n0 implements KSerializer {
                     }
                     b2 = L;
                 }
-                b2.serialize(encoder, obj);
+                b2.serialize(encoder
+
+        Object c = null;, obj);
                 return;
         }
     }

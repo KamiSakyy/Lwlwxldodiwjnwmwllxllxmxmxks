@@ -12,7 +12,7 @@ import k41.g;
 import k41.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public static final String[] c = {"*", "FCM", "GCM", ""};
     public SharedPreferences a;
     public String b;

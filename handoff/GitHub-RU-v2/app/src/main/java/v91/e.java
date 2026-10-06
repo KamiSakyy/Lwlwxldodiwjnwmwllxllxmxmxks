@@ -11,7 +11,7 @@ import sy.d0Shadow;
 import t71.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e extends u91.b {
+public class e extends u91.b {
     public q1 e;
     public n f;
 

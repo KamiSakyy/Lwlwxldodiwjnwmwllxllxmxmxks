@@ -10,7 +10,7 @@ import g3.q0;
 import y41.t1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static final void a(int i, f fVar, w1.r rVar, DiffLineType diffLineType, androidx.compose.runtime.s sVar, int i2, int i3) {
         w1.r rVar2;
         int i4;

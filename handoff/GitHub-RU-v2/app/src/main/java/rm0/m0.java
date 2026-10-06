@@ -1071,6 +1071,7 @@ public final class m0 implements z01.f, yb0, mi0, y90, yf0 {
 
     @Override // z01.f
     public final y71.i f(int i, CommentLevelType commentLevelType, DiffSide diffSide, DiffSide diffSide2, Integer num, String str, String str2, String str3) {
+        Object k = null;
         dn dnVar;
         bm bmVar;
         cu cuVar;

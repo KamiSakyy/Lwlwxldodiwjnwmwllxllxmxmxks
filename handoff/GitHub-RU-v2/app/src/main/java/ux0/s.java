@@ -5,7 +5,7 @@ import jo.f4Shadow;
 import pz0.su;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s implements aa.w0 {
+public class s implements aa.w0 {
     public static final o Companion = new o();
     public String r;
     public aa1.b s;

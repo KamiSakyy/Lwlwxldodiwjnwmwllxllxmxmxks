@@ -18,7 +18,7 @@ import sd.e;
 import t71.p;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: a, reason: collision with root package name */
     public td.b f15133a;

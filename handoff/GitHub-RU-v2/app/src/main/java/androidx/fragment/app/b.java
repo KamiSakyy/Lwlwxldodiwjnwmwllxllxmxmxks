@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements Parcelable {
+public class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a21.g(3);
     public int A;
     public CharSequence B;

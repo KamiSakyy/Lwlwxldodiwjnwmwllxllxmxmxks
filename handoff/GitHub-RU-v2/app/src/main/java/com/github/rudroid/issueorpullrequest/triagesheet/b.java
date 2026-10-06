@@ -107,7 +107,7 @@ public abstract class b implements z {
         }
     }
 
-    public static final class e extends b {
+    public static class e extends b {
 
         /* renamed from: s, reason: collision with root package name */
         public h01.j f16243s;

@@ -74,6 +74,7 @@ public final class v0 implements Runnable {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void run() {
+        Object e = null;
         int i;
         HttpURLConnection httpURLConnection;
         Map map;

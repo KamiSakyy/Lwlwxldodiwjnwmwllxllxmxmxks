@@ -3,7 +3,7 @@ package mi;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public int a;
     public String b;
 

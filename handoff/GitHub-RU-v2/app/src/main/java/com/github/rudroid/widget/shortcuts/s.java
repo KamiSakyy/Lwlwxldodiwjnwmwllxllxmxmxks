@@ -6,7 +6,7 @@ import com.google.android.gms.internal.measurement.z3;
 
 @c71.e(c = "com.github.rudroid.widget.shortcuts.ShortcutWidgetReceiver$onDisabled$1", f = "ShortcutWidgetReceiver.kt", l = {31}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ Context w;
 

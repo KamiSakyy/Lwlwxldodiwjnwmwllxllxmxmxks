@@ -21,6 +21,7 @@ public abstract class v {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Intent a(Context context, d0 d0Var) {
+        Object e = null;
         Bundle bundle;
         ContentProviderClient acquireUnstableContentProviderClient;
         String str = d0Var.a;

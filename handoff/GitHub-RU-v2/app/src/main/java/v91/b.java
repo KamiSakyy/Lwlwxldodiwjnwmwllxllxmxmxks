@@ -7,7 +7,7 @@ import org.intellij.markdown.MarkdownParsingException;
 import sy.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b extends u91.b {
+public class b extends u91.b {
     public final /* synthetic */ int e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

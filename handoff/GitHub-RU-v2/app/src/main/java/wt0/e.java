@@ -8,7 +8,7 @@ import vt0.h;
 import vt0.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements aa.a {
+public class e implements aa.a {
     public static final e a = new e();
     public static final List b = d0Shadow.o(new String[]{"node", "id", "__typename"});
 

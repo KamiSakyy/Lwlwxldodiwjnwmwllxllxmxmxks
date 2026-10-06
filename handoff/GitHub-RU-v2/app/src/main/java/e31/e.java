@@ -17,7 +17,7 @@ import u31.n;
 import u31.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public MaterialButton a;
     public n b;
     public a0 c;

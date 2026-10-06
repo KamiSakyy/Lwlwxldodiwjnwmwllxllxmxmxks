@@ -1,7 +1,7 @@
 package l11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements i51.c {
+public class e implements i51.c {
     public static final e a = new e();
     public static final i51.b b = i51.b.a("privacyContext");
     public static final i51.b c = i51.b.a("productIdOrigin");

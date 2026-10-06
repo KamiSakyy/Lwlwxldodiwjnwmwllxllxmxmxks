@@ -12,7 +12,7 @@ import v71.z;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends j implements j71.e {
+public class b extends j implements j71.e {
     public int v;
     public final /* synthetic */ i w;
     public final /* synthetic */ int x;

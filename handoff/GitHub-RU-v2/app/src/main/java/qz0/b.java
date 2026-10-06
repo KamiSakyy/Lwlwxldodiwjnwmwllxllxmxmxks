@@ -40,7 +40,7 @@ import pz0.zs;
 import pz0.zy;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements aa.a {
+public class b implements aa.a {
     public final /* synthetic */ int a;
     public static final b b = new b(0);
     public static final b c = new b(1);

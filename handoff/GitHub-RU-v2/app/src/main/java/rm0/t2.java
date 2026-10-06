@@ -206,6 +206,22 @@ public final class t2 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object a(a71.c cVar, Object obj) {
+        Object str36 = null;
+        Object z55 = null;
+        Object iVar2 = null;
+        Object str32 = null;
+        Object str29 = null;
+        Object zonedDateTime3 = null;
+        Object subscriptionState13 = null;
+        Object intValue = null;
+        Object z1Var = null;
+        Object i30 = null;
+        Object str37 = null;
+        Object subscriptionState8 = null;
+        Object z65 = null;
+        Object str34 = null;
+        Object str33 = null;
+        Object T = null;
         z3 z3Var;
         int i;
         z3 z3Var2;
@@ -1872,7 +1888,9 @@ public final class t2 implements y71.j {
     /* JADX WARN: Type inference failed for: r1v86, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r2v86, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r2v87, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r2v88, types: [java.util.ArrayList] */
+    /* JADX WARN: Type inference failed for: r2v8
+        x01.i iVar2 = null;
+        Object i30 = null;8, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r6v18, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r6v6, types: [java.util.Collection, java.util.List] */
     /* JADX WARN: Type inference failed for: r6v7 */

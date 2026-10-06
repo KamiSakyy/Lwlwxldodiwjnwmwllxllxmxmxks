@@ -3,7 +3,7 @@ package n2;
 import q2.t;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: a, reason: collision with root package name */
     public long f29399a;

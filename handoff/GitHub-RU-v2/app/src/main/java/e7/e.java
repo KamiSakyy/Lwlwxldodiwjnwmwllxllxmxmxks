@@ -6,7 +6,7 @@ import android.view.AbsSavedState;
 import c21.c0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e extends i {
+public class e extends i {
     public static final Parcelable.Creator<e> CREATOR = new c0(20);
 
     /* renamed from: r, reason: collision with root package name */

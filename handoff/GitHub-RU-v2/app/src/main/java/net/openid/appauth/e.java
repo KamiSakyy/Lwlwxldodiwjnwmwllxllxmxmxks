@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e implements d {
+public class e implements d {
     public static final Set s = Collections.unmodifiableSet(new HashSet(Arrays.asList("client_id", "code_challenge", "code_challenge_method", "display", "login_hint", "prompt", "ui_locales", "redirect_uri", "response_mode", "response_type", "scope", "state", "claims", "claims_locales")));
     public l1 a;
     public String b;

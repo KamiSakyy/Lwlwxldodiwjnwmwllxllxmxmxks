@@ -10,6 +10,7 @@ final /* synthetic */ class k2 extends k71.i implements j71.a {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object a() {
+        Object r0 = null;
         y71.y1 y1Var = ((q2) ((k71.c) this).s).f17792z;
         boolean z10 = com.github.rudroid.utilities.ui.h1.g((com.github.rudroid.utilities.ui.g1) y1Var.getValue()) && (r0 = (l01.x0) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData()) != null;
         return Boolean.valueOf(z10);

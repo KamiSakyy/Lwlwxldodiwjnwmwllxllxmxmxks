@@ -8,7 +8,7 @@ import pz0.f40;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements h0 {
+public class b implements h0 {
     public String a;
     public String b;
     public f40 c;

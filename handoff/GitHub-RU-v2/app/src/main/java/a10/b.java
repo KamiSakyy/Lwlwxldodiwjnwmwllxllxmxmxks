@@ -38,7 +38,7 @@ import v00.m;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends j implements j71.c {
+public class b extends j implements j71.c {
     public final /* synthetic */ int v;
     public int w;
     public final /* synthetic */ Object x;

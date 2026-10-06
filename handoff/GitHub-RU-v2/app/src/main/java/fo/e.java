@@ -6,7 +6,7 @@ import com.github.service.models.response.type.ReportedContentClassifier;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements z01.f, yn.a {
+public class e implements z01.f, yn.a {
     public final y71.i a(String str) {
         k71.k.g(str, "threadId");
         return sy.c0.j();

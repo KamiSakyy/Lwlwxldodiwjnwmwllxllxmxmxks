@@ -12,7 +12,7 @@ import m10.t00;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements i0 {
+public class e implements i0 {
     public static final d Companion = new d();
 
     public final m d() {

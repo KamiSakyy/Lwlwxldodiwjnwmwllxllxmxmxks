@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.Random;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b implements u2 {
+public class b implements u2 {
     public final /* synthetic */ k1 a;
 
     public b(k1 k1Var) {

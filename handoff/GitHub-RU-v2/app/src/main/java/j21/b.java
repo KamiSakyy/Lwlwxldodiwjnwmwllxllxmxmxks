@@ -7,7 +7,7 @@ import c41.d;
 import java.lang.reflect.Field;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends d implements a {
+public class b extends d implements a {
     public Object g;
 
     public b(Object obj) {

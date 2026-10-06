@@ -7,7 +7,7 @@ import java.util.zip.CRC32;
 import java.util.zip.Inflater;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s implements k0 {
+public class s implements k0 {
     public byte r;
     public e0 s;
     public Inflater t;

@@ -607,6 +607,7 @@ public abstract class b {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final com.github.service.models.response.a e(cp0.c cVar) {
+        Object r7 = null;
         boolean z;
         String str = cVar != null ? cVar.b : "";
         Avatar L = y.L(cVar != null ? cVar.f : null);

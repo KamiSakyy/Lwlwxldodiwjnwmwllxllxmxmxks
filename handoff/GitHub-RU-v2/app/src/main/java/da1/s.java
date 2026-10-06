@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class s extends b0Shadow {
+class s extends b0Shadow {
     public s() {
         super("BeforeHtml", 1);
     }

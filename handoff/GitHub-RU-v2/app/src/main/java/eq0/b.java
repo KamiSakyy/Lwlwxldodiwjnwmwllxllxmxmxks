@@ -7,7 +7,7 @@ import pz0.bf;
 import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public bf a;
     public String b;
     public String c;

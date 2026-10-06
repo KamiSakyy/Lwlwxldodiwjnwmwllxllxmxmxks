@@ -5,7 +5,7 @@ import e50.k;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b {
+public class b {
     public static final k m = new k(8);
     public static final int[] n = {0, 0, 1, 1, 2, 2, 3, 3, 4, 4};
     public static final int[] o;

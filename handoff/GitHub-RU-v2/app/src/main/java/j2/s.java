@@ -1,7 +1,7 @@
 package j2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends b0 {
+public class s extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
     public float f26933c;

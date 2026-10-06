@@ -4,7 +4,7 @@ import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.Drawable;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends Animatable2.AnimationCallback {
+public class b extends Animatable2.AnimationCallback {
 
     /* renamed from: a, reason: collision with root package name */
     public final /* synthetic */ h31.a f22063a;

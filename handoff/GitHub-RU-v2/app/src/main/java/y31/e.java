@@ -4,7 +4,7 @@ import android.view.View;
 import com.google.android.material.internal.CheckableImageButton;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends m {
+public class e extends m {
     public final /* synthetic */ int e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

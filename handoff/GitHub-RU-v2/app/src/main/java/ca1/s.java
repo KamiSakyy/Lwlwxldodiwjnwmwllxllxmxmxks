@@ -3,7 +3,7 @@ package ca1;
 import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s {
+public class s {
     public int a;
     public int b;
     public int c;

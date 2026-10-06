@@ -2,7 +2,7 @@ package com.github.rudroid.widget.pullrequests;
 
 @c71.e(c = "com.github.rudroid.widget.pullrequests.PullRequestsGlanceWidget", f = "PullRequestsGlanceWidget.kt", l = {28}, m = "provideGlance", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class b extends c71.c {
+class b extends c71.c {
     public /* synthetic */ Object u;
     public final /* synthetic */ c v;
     public int w;

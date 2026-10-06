@@ -25,6 +25,7 @@ public abstract class c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static String a() {
+        Object th = null;
         BufferedReader bufferedReader;
         if (a == null) {
             if (Build.VERSION.SDK_INT >= 28) {

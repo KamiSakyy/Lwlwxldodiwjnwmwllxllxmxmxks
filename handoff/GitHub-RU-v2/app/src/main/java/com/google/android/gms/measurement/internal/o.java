@@ -140,6 +140,8 @@ public final class o extends i4 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final x0 B0(String str) {
+        Object th = null;
+        Object e = null;
         Cursor cursor;
         Boolean valueOf;
         String string;
@@ -601,7 +603,8 @@ public final class o extends i4 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final List E(String str, g4 g4Var, int i) {
+   
+        Object th = null; public final List E(String str, g4 g4Var, int i) {
         List list;
         c21.uShadow.d(str);
         z();
@@ -651,7 +654,9 @@ public final class o extends i4 {
         return list;
     }
 
-    public final k E0(long j, String str, long j2, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8) {
+    public final k E0(long j, String str, long j2, boolean 
+
+        Object e = null;z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8) {
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         c21.uShadow.d(str);
         z();
@@ -740,7 +745,9 @@ public final class o extends i4 {
     /* JADX WARN: Removed duplicated region for block: B:31:? A[SYNTHETIC] */
     /* JADX WARN: Removed duplicated region for block: B:9:0x0085  */
     /*
-        Code decompiled incorrectly, please refer to instructions dump.
+        Code d
+        Object th = null;
+        Object e = null;ecompiled incorrectly, please refer to instructions dump.
     */
     public final a5.s F0(String str) {
         Throwable th;
@@ -874,7 +881,9 @@ public final class o extends i4 {
     /* JADX WARN: Removed duplicated region for block: B:21:0x003f  */
     /* JADX WARN: Type inference failed for: r1v0 */
     /* JADX WARN: Type inference failed for: r1v1, types: [android.database.Cursor] */
-    /* JADX WARN: Type inference failed for: r1v3 */
+    /* JADX WA
+        Object th = null;
+        Object e = null;RN: Type inference failed for: r1v3 */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -1080,7 +1089,8 @@ public final class o extends i4 {
         com.google.android.gms.measurement.internal.o1.m(r0);
         r0.x.d("Error inserting column. appId", com.google.android.gms.measurement.internal.s0.H(r14), "first_open_count", r1);
      */
-    /* JADX WARN: Code restructure failed: missing block: B:26:0x00bc, code lost:
+    /* JADX WARN: Code restruc
+        Object e = null;ture failed: missing block: B:26:0x00bc, code lost:
     
         r7 = r4;
      */
@@ -1179,7 +1189,9 @@ public final class o extends i4 {
     /* JADX WARN: Removed duplicated region for block: B:71:0x01c7  */
     /* JADX WARN: Removed duplicated region for block: B:74:0x01d8  */
     /* JADX WARN: Removed duplicated region for block: B:80:0x029c A[Catch: SQLiteException -> 0x02b8, TRY_LEAVE, TryCatch #0 {SQLiteException -> 0x02b8, blocks: (B:78:0x0281, B:80:0x029c), top: B:77:0x0281 }] */
-    /* JADX WARN: Removed duplicated region for block: B:92:0x01de  */
+
+        Object th = null;
+        Object e = null;    /* JADX WARN: Removed duplicated region for block: B:92:0x01de  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -1420,7 +1432,11 @@ public final class o extends i4 {
     /* JADX WARN: Type inference failed for: r5v4 */
     /* JADX WARN: Type inference failed for: r5v5 */
     /* JADX WARN: Type inference failed for: r5v6 */
-    /* JADX WARN: Type inference failed for: r5v8, types: [android.database.Cursor] */
+    /* JADX WA
+        Object r5 = null;
+        Object r2 = null;
+        Object th = null;
+        Object e = null;RN: Type inference failed for: r5v8, types: [android.database.Cursor] */
     /* JADX WARN: Type inference failed for: r5v9, types: [android.database.Cursor] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1459,7 +1475,13 @@ public final class o extends i4 {
                 cursor = r5;
                 if (cursor != null) {
                     cursor.close();
-                }
+        
+
+        Object r5 = null;
+
+        Object th = null;
+
+        Object e = null;        }
                 throw th;
             }
         } catch (SQLiteException e3) {
@@ -1564,7 +1586,9 @@ public final class o extends i4 {
                 s0Var2.x.c("Failed to insert/update table (got -1). key", s0.H("consent_settings"), s0.H("app_id"));
             }
         } catch (SQLiteException e) {
-            s0 s0Var3 = o1Var.w;
+ 
+        Object th = null;
+        Object e = null;           s0 s0Var3 = o1Var.w;
             o1.m(s0Var3);
             s0Var3.x.d("Error storing into table. key", s0.H("consent_settings"), s0.H("app_id"), e);
         }
@@ -1815,7 +1839,9 @@ public final class o extends i4 {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:18:0x0248  */
-    /* JADX WARN: Removed duplicated region for block: B:21:? A[RETURN, SYNTHETIC] */
+    /* 
+        Object th = null;
+        Object e = null;JADX WARN: Removed duplicated region for block: B:21:? A[RETURN, SYNTHETIC] */
     /* JADX WARN: Type inference failed for: r9v2, types: [boolean] */
     /* JADX WARN: Type inference failed for: r9v20 */
     /* JADX WARN: Type inference failed for: r9v21 */
@@ -2012,7 +2038,9 @@ public final class o extends i4 {
                     o1.m(s0Var6);
                     s0Var6.x.c("Data loss. Failed to merge raw event metadata. appId", s0.H(str3), e8);
                 }
-            } else {
+ 
+
+        Object th = null;           } else {
                 s0 s0Var7 = o1Var.w;
                 o1.m(s0Var7);
                 s0Var7.x.b(s0.H(str3), "Raw event metadata record is missing. appId");
@@ -2135,7 +2163,9 @@ public final class o extends i4 {
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0059, code lost:
     
         if (r8 != null) goto L9;
-     */
+
+        Object th = null;
+        Object e = null;     */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x005b, code lost:
     
         Y("events", r8);
@@ -2219,7 +2249,9 @@ public final class o extends i4 {
                     throw th;
                 }
             } catch (Throwable th3) {
-                th = th3;
+                
+
+        Object th = null;th = th3;
                 z3 = z4;
                 if (cursor != null) {
                 }
@@ -2291,7 +2323,9 @@ public final class o extends i4 {
             }
             s0 s0Var = o1Var.w;
             o1.m(s0Var);
-            s0Var.x.b(s0.H(str2), "Failed to insert/update user property (got -1). appId");
+            s0Va
+        Object th = null;
+        Object e = null;r.x.b(s0.H(str2), "Failed to insert/update user property (got -1). appId");
             return true;
         } catch (SQLiteException e) {
             s0 s0Var2 = o1Var.w;
@@ -2368,7 +2402,9 @@ public final class o extends i4 {
             str3 = str;
             str4 = str2;
             sQLiteException = e3;
-            cursor = null;
+        
+        Object th = null;
+        Object e = null;    cursor = null;
         } catch (Throwable th3) {
             th = th3;
             if (cursor2 != null) {
@@ -2453,7 +2489,9 @@ public final class o extends i4 {
         return arrayList;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:45:0x00b1, code lost:
+    /* JADX WARN: Code restructure failed: missing block: B:45:0
+        Object th = null;
+        Object e = null;x00b1, code lost:
     
         com.google.android.gms.measurement.internal.o1.m(r13);
         r13.x.b(1000, "Read more than the max allowed user properties, ignoring excess");
@@ -2570,7 +2608,11 @@ public final class o extends i4 {
                                 cursor2 = cursor;
                                 if (cursor2 != null) {
                                 }
-                                return arrayList;
+                    
+
+        Object th = null;
+
+        Object e = null;            return arrayList;
                             }
                         }
                     }
@@ -2635,7 +2677,9 @@ public final class o extends i4 {
         contentValues.put("time_to_live", Long.valueOf(fVar.A));
         contentValues.put("expired_event", t4.e0(fVar.B));
         try {
-            if (o0().insertWithOnConflict("conditional_properties", null, contentValues, 5) != -1) {
+            if (o0(
+        Object th = null;
+        Object e = null;).insertWithOnConflict("conditional_properties", null, contentValues, 5) != -1) {
                 return true;
             }
             o1.m(s0Var);
@@ -2725,6 +2769,8 @@ public final class o extends i4 {
                 s0Var.x.c("Got multiple records for conditional property, expected one", s0.H(str), o1Var.A.c(str3));
             }
             cursor.close();
+
+        Object e = null;
             return fVar;
         } catch (SQLiteException e3) {
             e = e3;

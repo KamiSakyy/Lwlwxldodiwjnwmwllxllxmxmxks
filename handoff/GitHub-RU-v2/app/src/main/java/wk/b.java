@@ -21,7 +21,7 @@ import yz0.z1;
 import z01.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends c71.j implements j71.g {
+public class b extends c71.j implements j71.g {
     public final /* synthetic */ int v;
     public /* synthetic */ List w;
     public /* synthetic */ Object x;

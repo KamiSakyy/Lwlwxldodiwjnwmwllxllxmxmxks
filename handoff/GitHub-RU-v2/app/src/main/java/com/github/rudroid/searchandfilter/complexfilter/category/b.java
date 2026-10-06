@@ -11,7 +11,7 @@ import ic.af;
 import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends e0<a> {
+public class b extends e0<a> {
     public com.github.rudroid.searchandfilter.complexfilter.s f;
     public com.github.rudroid.html.b g;
 

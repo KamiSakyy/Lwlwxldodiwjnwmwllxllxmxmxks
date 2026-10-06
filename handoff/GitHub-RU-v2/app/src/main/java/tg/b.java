@@ -7,7 +7,7 @@ import f1.x0;
 import ih.d;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static x0 a(s sVar) {
         long j = d.b(sVar).c;
         long j2 = d.b(sVar).c;

@@ -7,7 +7,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import v1.p;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e extends i5.b {
+public class e extends i5.b {
     public static final Parcelable.Creator<e> CREATOR = new p(3);
     public int t;
     public int u;

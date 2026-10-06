@@ -118,7 +118,7 @@ public interface e extends Parcelable {
         }
     }
 
-    public static final class b implements e, k {
+    public static class b implements e, k {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */

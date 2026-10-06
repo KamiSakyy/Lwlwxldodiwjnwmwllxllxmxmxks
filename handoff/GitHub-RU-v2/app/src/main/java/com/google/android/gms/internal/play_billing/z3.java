@@ -90,6 +90,8 @@ public class z3 implements u0 {
     }
 
     public static final Object h(Object obj) {
+
+        Object th = null;
         if (obj instanceof c1) {
             Throwable th = ((c1) obj).a;
             CancellationException cancellationException = new CancellationException("Task was cancelled.");

@@ -59,6 +59,7 @@ public final class g2 extends p {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final void a() {
+        Object r13 = null;
         Pair pair;
         NetworkInfo activeNetworkInfo;
         j y;

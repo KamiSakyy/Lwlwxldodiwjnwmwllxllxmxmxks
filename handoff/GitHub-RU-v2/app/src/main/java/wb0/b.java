@@ -3,7 +3,7 @@ package wb0;
 import e50.y0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public int A;
     public i50.h u;
     public y0 v;

@@ -3,7 +3,7 @@ package p5;
 import h91.e0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
 
     /* renamed from: u, reason: collision with root package name */
     public c f30362u;

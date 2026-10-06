@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s implements Collection, l71.a {
+public class s implements Collection, l71.a {
     public byte[] r;
 
     @Override // java.util.Collection

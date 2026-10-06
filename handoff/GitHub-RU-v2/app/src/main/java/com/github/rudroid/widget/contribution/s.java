@@ -7,7 +7,7 @@ import java.util.List;
 
 @c71.e(c = "com.github.rudroid.widget.contribution.ContributionWidgetWorker", f = "ContributionWidgetWorker.kt", l = {67, 70, 86, 105, 111, 122, 131}, m = "doWork", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.c {
+class s extends c71.c {
     public int A;
     public int B;
     public /* synthetic */ Object C;

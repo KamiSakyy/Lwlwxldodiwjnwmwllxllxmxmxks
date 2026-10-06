@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import d2.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public long a;
     public long b;
     public long c;

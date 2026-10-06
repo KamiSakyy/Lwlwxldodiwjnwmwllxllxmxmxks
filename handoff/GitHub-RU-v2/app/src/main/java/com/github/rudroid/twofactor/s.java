@@ -2,7 +2,7 @@ package com.github.rudroid.twofactor;
 
 @c71.e(c = "com.github.rudroid.twofactor.TwoFactorApproveDenyViewModel$rejectRequest$1", f = "TwoFactorApproveDenyViewModel.kt", l = {147, 155}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public int v;
     public final /* synthetic */ h w;
     public final /* synthetic */ fn.a x;

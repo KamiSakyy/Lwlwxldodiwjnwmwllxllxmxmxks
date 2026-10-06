@@ -14,7 +14,7 @@ import sy.c0;
 import t71.n;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c0 implements g {
+public class b extends c0 implements g {
     public static final a Companion = new a();
     public String r;
     public oa.j s;

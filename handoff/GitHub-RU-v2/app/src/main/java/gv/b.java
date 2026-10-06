@@ -1,7 +1,7 @@
 package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b implements aa.h0 {
+public class b implements aa.h0 {
     public String a;
     public boolean b;
     public boolean c;

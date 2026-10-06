@@ -5,7 +5,7 @@ import com.github.rudroid.utilities.ui.g1;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public z5.k a;
     public oa.j b;
     public List c;

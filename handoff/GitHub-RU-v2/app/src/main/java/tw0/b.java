@@ -3,7 +3,7 @@ package tw0;
 import jn0.h7;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ c00.f w;

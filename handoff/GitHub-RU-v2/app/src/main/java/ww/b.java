@@ -6,7 +6,7 @@ import m10.wi;
 import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public wi a;
     public String b;
     public String c;

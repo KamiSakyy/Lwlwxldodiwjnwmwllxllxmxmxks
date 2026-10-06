@@ -5,7 +5,7 @@ import com.github.service.models.response.type.IssueState;
 import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public static IssueOrPullRequestState a(IssueState issueState) {
         k71.k.g(issueState, "<this>");
         int i = d.a[issueState.ordinal()];

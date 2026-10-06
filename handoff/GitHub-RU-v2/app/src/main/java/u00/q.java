@@ -192,6 +192,7 @@ public final class q {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Serializable b(String str, String str2, c71.c cVar) {
+        Object str13 = null;
         c cVar2;
         int i;
         String str3;
@@ -1022,7 +1023,8 @@ public final class q {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Serializable g(String str, String str2, c71.c cVar) {
+    public final Serializable g(String st
+        Object str13 = null;r, String str2, c71.c cVar) {
         k kVar;
         int i;
         String str3;
@@ -1444,7 +1446,9 @@ public final class q {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Serializable h(String str, String str2, c71.c cVar) {
+    public f
+        Object str13 = null;
+        Object lVar = null;inal Serializable h(String str, String str2, c71.c cVar) {
         m mVar;
         int i;
         String str3;

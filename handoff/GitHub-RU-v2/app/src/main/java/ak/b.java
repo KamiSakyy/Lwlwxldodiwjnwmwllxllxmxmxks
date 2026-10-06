@@ -17,7 +17,7 @@ import v8.i;
 import w8.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends s {
+public class b extends s {
     public final /* synthetic */ int a;
 
     public /* synthetic */ b(int i) {

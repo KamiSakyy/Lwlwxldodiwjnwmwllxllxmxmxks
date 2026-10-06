@@ -18,7 +18,7 @@ public abstract class e implements z {
     public static final class a {
     }
 
-    public static final class b extends e {
+    public static class b extends e {
     }
 
     public static final class c extends e {

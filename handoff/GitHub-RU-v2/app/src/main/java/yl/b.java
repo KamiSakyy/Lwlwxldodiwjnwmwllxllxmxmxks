@@ -42,7 +42,7 @@ import z71.x;
 import z8.g;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b extends j implements e {
+public class b extends j implements e {
     public final /* synthetic */ int v;
     public int w;
     public /* synthetic */ Object x;

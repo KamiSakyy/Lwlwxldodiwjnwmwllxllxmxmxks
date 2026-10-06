@@ -13,7 +13,7 @@ import x61.m;
 import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e {
+public class e {
     public static final d Companion = new d();
     public static final Set e = f0.r("MobileAuthRequests");
     public String a;

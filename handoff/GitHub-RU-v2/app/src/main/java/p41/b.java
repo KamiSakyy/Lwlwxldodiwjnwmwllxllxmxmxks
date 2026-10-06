@@ -3,7 +3,7 @@ package p41;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     default Object a(Class cls) {
         return b(o.a(cls));
     }

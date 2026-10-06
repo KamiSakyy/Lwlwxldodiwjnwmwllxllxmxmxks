@@ -1,7 +1,7 @@
 package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public e a;
 
     public b(e eVar) {

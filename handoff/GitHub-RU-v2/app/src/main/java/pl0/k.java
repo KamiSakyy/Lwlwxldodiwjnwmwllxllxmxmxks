@@ -53,6 +53,9 @@ public final class k {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static p01.j a(f1Shadow f1Var) {
+        Object i15 = null;
+        Object z24 = null;
+        Object N = null;
         String str;
         boolean z;
         int i;

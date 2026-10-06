@@ -6,7 +6,7 @@ import v71.v;
 import v71.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public class b {
     public static final a Companion = new a();
     public g a;
     public z b;

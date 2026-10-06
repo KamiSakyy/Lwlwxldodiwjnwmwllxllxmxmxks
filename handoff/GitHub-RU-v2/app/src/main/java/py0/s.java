@@ -3,7 +3,7 @@ package py0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public u a;
     public List b;
 

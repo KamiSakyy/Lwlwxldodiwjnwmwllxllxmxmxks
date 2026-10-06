@@ -56,6 +56,7 @@ public final /* synthetic */ class b implements u11.a, g, i, w21.a, f {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public Object apply(Object obj) {
+        Object th = null;
         long insert;
         Cursor cursor;
         p11.c cVar;

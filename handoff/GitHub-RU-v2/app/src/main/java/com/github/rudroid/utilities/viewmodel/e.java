@@ -11,7 +11,7 @@ public interface e<T> {
     public static final class a {
     }
 
-    public static final class b<T> implements e<T> {
+    public static class b<T> implements e<T> {
         public y1 r;
         public i1 s;
 

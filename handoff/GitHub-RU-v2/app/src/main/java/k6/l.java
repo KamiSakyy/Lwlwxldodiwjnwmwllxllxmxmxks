@@ -40,6 +40,7 @@ public final class l implements f {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static Object a(l lVar, j71.e eVar, c71.c cVar) {
+        Object th = null;
         g gVar;
         b71.a aVar;
         int i;

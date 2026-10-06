@@ -3,7 +3,7 @@ package c2;
 import w8.s;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     /* renamed from: a, reason: collision with root package name */
     public long f4058a;

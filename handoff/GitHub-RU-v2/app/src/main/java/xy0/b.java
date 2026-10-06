@@ -3,7 +3,7 @@ package xy0;
 import ar0.c1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends c71.c {
+public class b extends c71.c {
     public int A;
     public er0.i u;
     public c1 v;

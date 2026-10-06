@@ -3,7 +3,7 @@ package ri0;
 import gn0.dn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public String a;
     public dn b;
     public String c;

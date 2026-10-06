@@ -249,6 +249,7 @@ public final class w implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object e(a71.c cVar, Object obj) {
+        b01.h r7 = null;
         a1 a1Var;
         int i;
         ab abVar;
@@ -300,7 +301,8 @@ public final class w implements y71.j {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    private final Object f(a71.c cVar, Object obj) {
+    private final Object f(
+        b01.h r7 = null;a71.c cVar, Object obj) {
         b1 b1Var;
         int i;
         sn snVar;

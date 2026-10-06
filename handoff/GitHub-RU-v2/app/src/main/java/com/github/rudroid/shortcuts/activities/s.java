@@ -7,7 +7,7 @@ import com.github.rudroid.utilities.ui.g1;
 
 @c71.e(c = "com.github.rudroid.shortcuts.activities.ConfigureShortcutFragment$onCreateView$1$1$1$1", f = "ConfigureShortcutFragment.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s extends c71.j implements j71.e {
+class s extends c71.j implements j71.e {
     public final /* synthetic */ ConfigureShortcutFragment v;
     public final /* synthetic */ g1 w;
 

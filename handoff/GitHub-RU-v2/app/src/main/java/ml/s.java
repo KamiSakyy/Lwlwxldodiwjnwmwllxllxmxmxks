@@ -5,7 +5,7 @@ import sy.y;
 import z01.k1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s {
+public class s {
     public oa.g a;
 
     public s(oa.g gVar) {

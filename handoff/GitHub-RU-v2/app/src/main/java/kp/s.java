@@ -3,7 +3,7 @@ package kp;
 import in.r0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class s extends c71.c {
+public class s extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ r0 w;

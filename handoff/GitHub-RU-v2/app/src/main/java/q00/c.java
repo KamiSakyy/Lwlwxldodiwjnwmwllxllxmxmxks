@@ -111,6 +111,8 @@ public final /* synthetic */ class c implements j71.c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object k(Object obj) {
+        Object str24 = null;
+        Object num = null;
         bx bxVar;
         ex exVar;
         ne neVar;

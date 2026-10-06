@@ -1,7 +1,7 @@
 package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s implements i {
+public class s implements i {
     public final /* synthetic */ i r;
     public final /* synthetic */ c71.j s;
 

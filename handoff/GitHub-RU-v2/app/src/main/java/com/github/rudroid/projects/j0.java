@@ -84,6 +84,7 @@ public final class j0 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static ArrayList a(Map map, Map map2, List list, String str, boolean z10, l01.xShadow xVar) {
+        Object r6 = null;
         x61.rShadow r10;
         ArrayList arrayList;
         ArrayList arrayList2;

@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s {
+public class s {
     public Object a;
     public Object b;
     public Object c;

@@ -3,7 +3,7 @@ package fl;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public static f a(b bVar, Object obj) {
         k.g(bVar, "executionError");
         return new f(g.t, obj, bVar);

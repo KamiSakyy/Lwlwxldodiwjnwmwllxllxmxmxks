@@ -8,7 +8,7 @@ import javax.net.ssl.X509TrustManager;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements e91.d {
+public class b implements e91.d {
     public X509TrustManager a;
     public Method b;
 

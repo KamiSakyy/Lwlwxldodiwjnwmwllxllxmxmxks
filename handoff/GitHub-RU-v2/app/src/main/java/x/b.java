@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b implements Set {
+public class b implements Set {
 
     /* renamed from: r, reason: collision with root package name */
     public final /* synthetic */ e f33523r;

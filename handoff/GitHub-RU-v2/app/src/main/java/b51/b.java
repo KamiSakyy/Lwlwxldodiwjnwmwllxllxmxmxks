@@ -20,7 +20,7 @@ import v41.i;
 import y41.j2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
+public class b {
     public static final Charset e = Charset.forName("UTF-8");
     public static final int f = 15;
     public static final z41.c g = new z41.c();

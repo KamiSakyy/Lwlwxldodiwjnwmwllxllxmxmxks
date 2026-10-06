@@ -15,7 +15,7 @@ import v1.v;
 import x61.l;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b extends x61.g implements RandomAccess, Serializable {
+public class b extends x61.g implements RandomAccess, Serializable {
     public static final b u;
     public Object[] r;
     public int s;

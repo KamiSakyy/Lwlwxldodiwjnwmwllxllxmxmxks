@@ -6,7 +6,7 @@ import com.github.service.models.response.type.DiffLineType;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b {
+public class b {
 
     public static final /* synthetic */ class a {
 

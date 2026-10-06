@@ -38,7 +38,7 @@ import y71.i;
 import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements s10.a, yf0, mi0 {
+public class e implements s10.a, yf0, mi0 {
     public final /* synthetic */ int r;
     public j s;
     public com.github.service.wrapper.b t;

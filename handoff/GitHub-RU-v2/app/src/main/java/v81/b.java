@@ -17,7 +17,7 @@ import sy.u;
 import u81.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b implements p {
+public class b implements p {
     public static final b a = new b();
 
     /* JADX WARN: Code restructure failed: missing block: B:55:0x01e3, code lost:

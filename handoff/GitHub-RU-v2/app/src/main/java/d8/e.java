@@ -3,7 +3,7 @@ package d8;
 import android.view.View;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e {
+public class e {
 
     /* renamed from: a, reason: collision with root package name */
     public int f21620a;

@@ -5,7 +5,7 @@ import aa.f0;
 import com.apollographql.apollo.exception.ApolloException;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class e implements e0 {
+public class e implements e0 {
 
     /* renamed from: b, reason: collision with root package name */
     public static final b f24816b = new b();

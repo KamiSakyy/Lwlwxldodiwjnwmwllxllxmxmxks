@@ -3,7 +3,7 @@ package h4;
 import android.view.View;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class b extends f {
+public class b extends f {
 
     /* renamed from: g, reason: collision with root package name */
     public final /* synthetic */ int f25491g;

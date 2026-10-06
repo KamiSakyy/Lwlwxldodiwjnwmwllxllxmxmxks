@@ -1,7 +1,7 @@
 package l7;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s extends x0 {
+public class s extends x0 {
 
     /* renamed from: e, reason: collision with root package name */
     public int f28268e;

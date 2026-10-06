@@ -42,6 +42,8 @@ public final class g {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final g3.g b(ch.e eVar, g3.d dVar, String str, Map map, k91.a aVar) {
+        Object r15 = null;
+        Object r17 = null;
         CharSequence t;
         Object obj;
         Object obj2;

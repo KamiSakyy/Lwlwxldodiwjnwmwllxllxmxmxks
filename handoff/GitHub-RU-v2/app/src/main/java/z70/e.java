@@ -4,7 +4,7 @@ import hc0.fm;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements aa.h0 {
+public class e implements aa.h0 {
     public String a;
     public ZonedDateTime b;
     public fm c;

@@ -3,7 +3,7 @@ package t11;
 import android.content.Context;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class e implements o11.b {
+public class e implements o11.b {
     public final /* synthetic */ int a;
     public v61.a b;
 

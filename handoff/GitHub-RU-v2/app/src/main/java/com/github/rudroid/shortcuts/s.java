@@ -4,7 +4,7 @@ import com.github.domain.shortcuts.model.StoredShortcutModel;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-final class s<T> implements y71.j {
+class s<T> implements y71.j {
     public final /* synthetic */ w r;
 
     public s(w wVar) {

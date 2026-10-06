@@ -25,7 +25,7 @@ import yz0.w1;
 import z70.l2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements w1 {
+public class e implements w1 {
     public ue a;
     public ArrayList b;
     public int c;

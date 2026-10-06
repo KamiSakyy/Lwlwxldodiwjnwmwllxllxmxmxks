@@ -142,6 +142,8 @@ public class IconCompat extends CustomVersionedParcelable {
     }
 
     public final Icon e(Context context) {
+
+        Object r2 = null;
         Icon createWithBitmap;
         int i = Build.VERSION.SDK_INT;
         int i10 = this.f2227a;

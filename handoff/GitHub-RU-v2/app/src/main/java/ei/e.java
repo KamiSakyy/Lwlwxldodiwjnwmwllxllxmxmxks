@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e {
+public class e {
     public SharedPreferences a;
 
     public e(Context context) {
