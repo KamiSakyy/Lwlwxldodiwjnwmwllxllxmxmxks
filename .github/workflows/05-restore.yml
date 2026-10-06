@@ -163,10 +163,17 @@ jobs:
       - name: "Коммит: восстановленный исходник + отчёт"
         if: always()
         run: |
-          set -e
-          git config user.name "kami-bot"
-          git config user.email "kami-bot@users.noreply.github.com"
-          git add handoff/ || true
-          git commit -m "Этап 5 v3: итеративное восстановление (javac+стабы) [skip ci]" || true
+          LOG=handoff/restoration/commit-step.log
+          {
+            echo "=== commit-step $(date -u) ==="
+            git status --short | head -5
+            git add handoff/
+            git commit -m "Этап 5 v3: итеративное восстановление (javac+стабы) [skip ci]"
+            git pull --rebase -q origin arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks
+            git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+            echo "PUSH_EXIT=$?"
+          } > "$LOG" 2>&1 || true
+          git add "$LOG" 2>/dev/null || true
+          git commit -m "commit-step лог [skip ci]" 2>/dev/null || true
           git pull --rebase -q origin arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks || true
           git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks" || true
