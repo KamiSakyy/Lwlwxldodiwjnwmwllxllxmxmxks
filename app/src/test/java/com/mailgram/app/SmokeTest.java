@@ -29,8 +29,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
-import org.robolectric.shadows.ShadowLooper;
 
 import java.lang.reflect.Field;
 
@@ -85,7 +85,7 @@ public class SmokeTest {
     }
 
     private static void idle() {
-        ShadowLooper.shadowOf(Looper.getMainLooper()).idle();
+        Shadows.shadowOf(Looper.getMainLooper()).idle();
     }
 
     /** Заставляет RecyclerView создать и привязать строки (как реальная раскладка). */
