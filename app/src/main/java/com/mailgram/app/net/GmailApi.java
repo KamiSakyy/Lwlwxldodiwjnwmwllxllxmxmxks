@@ -1,5 +1,7 @@
 package com.mailgram.app.net;
 
+import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -13,6 +15,7 @@ import java.util.List;
  */
 public final class GmailApi {
 
+    private static final String TAG = "MailGramGmail";
     private static final String BASE = "https://gmail.googleapis.com/gmail/v1/users/me";
 
     private GmailApi() {
@@ -79,7 +82,7 @@ public final class GmailApi {
     }
 
     /**
-    * Пакетная загрузка писем: Google считает стоимость каждого запроса, а batch-эндпоинт
+     * Пакетная загрузка писем: Google считает стоимость каждого запроса, а batch-эндпоинт
     * позволяет достать до 50 писем ОДНИМ запросом — так приложение не упирается в лимит
     * «Units per minute per user» и не спамит API.
     */
@@ -89,12 +92,16 @@ public final class GmailApi {
         int i = 0;
         while (i < ids.size()) {
             List<String> chunk = ids.subList(i, Math.min(ids.size(), i + BATCH_SIZE));
+            boolean ok = true;
             try {
                 sendBatch(token, chunk, out);
             } catch (Http.RateLimited rl) {
                 throw rl;                      // про лимит сообщаем наверх — там поставят паузу
             } catch (Exception e) {
-                // batch мог не подойти (формат ответа, одно битое письмо) — тихо добираем по одному
+                ok = false;                    // batch не разобрался — тихий откат на одиночные GET
+                Log.w(TAG, "batch не разобрался, добраю по одному: " + e);
+            }
+            if (!ok) {
                 for (String id : chunk) {
                     if (out.containsKey(id)) continue;
                     try {
@@ -102,7 +109,7 @@ public final class GmailApi {
                     } catch (Http.RateLimited rl) {
                         throw rl;
                     } catch (Exception e2) {
-                        com.mailgram.app.util.CrashLog.record(null, e2);
+                        Log.w(TAG, "письмо " + id + " не дошло: " + e2);
                     }
                 }
             }
@@ -131,51 +138,52 @@ public final class GmailApi {
             String id = ids.get(k);
             String payload = byCid.get("item" + k);
             if (payload == null) continue;
-            if (payload.startsWith("HTTP/")) {
-                int sp = payload.indexOf(' ');
-                int code = parseIntSafe(payload.substring(0, sp < 0 ? 3 : sp).replace("HTTP/", ""), 0);
-                if (code >= 400) continue;
-                int nl = payload.indexOf('\n');
-                payload = payload.substring(nl + 1);
+            try {
+                out.put(id, parseMessage(id, payload));
+            } catch (Exception e) {
+                // одно битое письмо не должно ломать всю пачку — остальное разберём
+                Log.w(TAG, "под-ответ разобран с ошибкой: " + e);
             }
-            out.put(id, parseMessage(id, payload));
         }
     }
 
-    /** Разбор multipart-ответа batch: CID -> текст (включая Possible malformed строку статуса). */
+    /**
+     * Разбирает multipart-ответ batch: Content-ID -> тело под-ответа. Внутри блока может
+     * быть строка статуса и свои заголовки — снимаем и их, остаётся чистый JSON.
+     */
     private static java.util.Map<String, String> splitBatch(String raw) {
         java.util.Map<String, String> map = new java.util.LinkedHashMap<>();
         if (raw == null) return map;
-        String[] blocks = raw.split("--batch_[A-Za-z0-9]+");
+        String[] blocks = raw.split("--batch_[A-Za-z0-9]+(?:--)?");
         for (String block : blocks) {
-            String text = block;
-            int hdrEnd = text.indexOf("\r\n\r\n");
-            if (hdrEnd < 0) hdrEnd = text.indexOf("\n\n");
-            if (hdrEnd < 0) continue;
-            String headers = text.substring(0, hdrEnd);
+            String text = block.replace('\r', ' ').replace('\n', '\n').trim();
+            if (text.isEmpty() || "--".equals(text)) continue;
             String cid = null;
-            boolean status = false;
-            for (String line : headers.split("\\r?\\n")) {
-                String l = line.trim();
-                if (l.regionMatches(true, 0, "Content-ID:", 0, 11)) {
-                    cid = l.substring(11).trim().replaceAll("[<>]", "");
-                } else if (l.startsWith("HTTP/")) {
-                    status = true;
+            boolean bad = false;
+            while (text.length() > 0) {
+                int nl = text.indexOf('\n');
+                String head = nl < 0 ? text : text.substring(0, nl).trim();
+                if (head.isEmpty()) {
+                    text = nl < 0 ? "" : text.substring(nl + 1);
+                    break;
                 }
+                if (head.startsWith("Content-ID:")) {
+                    cid = head.substring(11).trim().replaceAll("[<>]", "");
+                } else if (head.startsWith("HTTP/")) {
+                    try {
+                        if (Integer.parseInt(head.split("\\s+")[1]) >= 400) bad = true;
+                    } catch (Exception ignored) {
+                    }
+                } else if (head.indexOf(':') < 0) {
+                    break;                      // дальше пошёл сам JSON
+                }
+                text = nl < 0 ? "" : text.substring(nl + 1);
             }
-            if (cid == null) continue;
-            String rest = text.substring(hdrEnd).replaceFirst("^(\\r\\n|\\n)+", "");
-            map.put(cid, status ? rest : rest);
+            if (bad || cid == null) continue;
+            text = text.trim();
+            if (text.startsWith("{")) map.put(cid, text);
         }
         return map;
-    }
-
-    private static int parseIntSafe(String s, int def) {
-        try {
-            return Integer.parseInt(s.trim());
-        } catch (Exception e) {
-            return def;
-        }
     }
 
     /** Разбирает JSON письма в Mail (используется и для одиночного, и для batch-ответа). */
