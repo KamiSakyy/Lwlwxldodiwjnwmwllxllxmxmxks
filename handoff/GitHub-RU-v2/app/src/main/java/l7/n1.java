@@ -261,5 +261,4 @@ public abstract class n1 {
     }
     public Object k(Object p1) { return null; }
     public Object a = null;
-    public Object k(Object p1) { return null; }
 }

@@ -11,5 +11,4 @@ public final class c {
         this.a = gVar;
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object p1) { return null; }
 }

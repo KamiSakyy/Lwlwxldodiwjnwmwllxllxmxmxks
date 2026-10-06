@@ -20,5 +20,4 @@ public final class e extends n1 {
         this.v = (SwitchMaterial) findViewById2;
     }
     public Object a(Object p1) { return null; }
-    public Object a(Object p1) { return null; }
 }

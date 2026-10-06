@@ -16,5 +16,4 @@ public final class c extends p0 {
     }
     public Object v(Object p1) { return null; }
     public Object b = null;
-    public Object v(Object p1) { return null; }
 }

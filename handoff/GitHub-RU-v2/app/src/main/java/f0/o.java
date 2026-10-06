@@ -25,7 +25,7 @@ public class o {
         return null;
     }
 
-    public static v a(Object... a) {
+    public static f0.v a(Object... a) {
         return null;
     }
 

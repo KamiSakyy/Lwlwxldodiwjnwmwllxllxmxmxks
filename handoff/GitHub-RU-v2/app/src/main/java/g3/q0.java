@@ -8,7 +8,7 @@ public class q0 {
     public q0() {
     }
 
-    public static q0 a(Object... a) {
+    public static g3.q0 a(Object... a) {
         return null;
     }
     public static Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12) { return null; }

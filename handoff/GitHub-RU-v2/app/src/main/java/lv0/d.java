@@ -52,5 +52,4 @@ public final class d implements h0 {
     public Object e() { return null; }
     public Object s(Object p1, Object p2) { return null; }
     public Object b(Object p1, Object p2) { return null; }
-    public Object d(Object p1, Object p2) { return null; }
 }

@@ -12,5 +12,4 @@ class b implements g.b {
         this.a.Z();
     }
     public Object y(Object p1, Object p2) { return null; }
-    public Object y(Object p1, Object p2) { return null; }
 }

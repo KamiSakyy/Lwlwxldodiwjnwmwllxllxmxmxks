@@ -68,6 +68,5 @@ public final class e implements n {
     public Object clear() { return null; }
     public Object get(Object p1) { return null; }
     public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
     public Object values() { return null; }
 }

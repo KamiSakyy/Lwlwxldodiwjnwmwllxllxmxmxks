@@ -15,5 +15,4 @@ public final class c {
         this.d = z2;
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object p1) { return null; }
 }

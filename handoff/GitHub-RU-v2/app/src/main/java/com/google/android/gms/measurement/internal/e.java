@@ -32,24 +32,9 @@ public final class e extends d21.a {
     }
     public Object containsKey(Object p1) { return null; }
     public Object get(Object p1) { return null; }
-    public Object get(Object p1) { return null; }
     public Object isEmpty() { return null; }
     public Object keySet() { return null; }
     public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
     public Object put(Object p1, int p2) { return null; }
-    public Object put(Object p1, Object p2) { return null; }
-    public Object remove(Object p1) { return null; }
     public Object remove(Object p1) { return null; }
 }

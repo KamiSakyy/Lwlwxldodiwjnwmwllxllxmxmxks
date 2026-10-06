@@ -4,5 +4,4 @@ package w21;
 public interface b {
     void a();
     public Object n(Object p1) { return null; }
-    public Object n(Object p1) { return null; }
 }

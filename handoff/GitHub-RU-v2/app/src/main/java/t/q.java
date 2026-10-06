@@ -12,7 +12,7 @@ public class q {
         return null;
     }
 
-    public static o j(Object... a) {
+    public static w21.o j(Object... a) {
         return null;
     }
 

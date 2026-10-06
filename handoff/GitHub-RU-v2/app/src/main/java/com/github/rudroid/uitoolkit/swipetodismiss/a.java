@@ -11,5 +11,4 @@ public interface a {
     public Object W(Object p1) { return null; }
     public static Object c(Object p1, Object p2) { return null; }
     public Object f(Object p1) { return null; }
-    public Object f(Object p1) { return null; }
 }

@@ -12,5 +12,4 @@ public interface h {
     public Object b() { return null; }
     public Object c(Object p1, Object p2) { return null; }
     public Object b = null;
-    public Object c(Object p1, Object p2) { return null; }
 }

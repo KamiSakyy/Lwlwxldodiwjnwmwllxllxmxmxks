@@ -11,5 +11,4 @@ public final class c {
     public Object v(Object p1) { return null; }
     public Object a(Object p1, Object p2) { return null; }
     public Object a(int p1) { return null; }
-    public Object v(Object p1) { return null; }
 }

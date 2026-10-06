@@ -45,6 +45,4 @@ public final class h {
     }
     public Object Q(Object p1, Object p2, Object p3) { return null; }
     public Object R(Object p1) { return null; }
-    public Object Q(Object p1, Object p2, Object p3) { return null; }
-    public Object R(Object p1) { return null; }
 }

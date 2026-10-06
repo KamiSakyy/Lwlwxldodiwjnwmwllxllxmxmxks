@@ -34,5 +34,4 @@ public final class c extends f {
         return a0.s0.i("MultiSelectMarkAsReadSnackBarEvent(count=", this.a, ", undoAction=null)");
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object p1) { return null; }
 }

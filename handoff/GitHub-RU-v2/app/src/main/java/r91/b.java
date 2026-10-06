@@ -51,5 +51,4 @@ public final class b {
     }
     public Object add(Object p1) { return null; }
     public Object pop() { return null; }
-    public Object add(Object p1) { return null; }
 }

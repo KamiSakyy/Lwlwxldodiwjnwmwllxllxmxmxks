@@ -21,5 +21,4 @@ public final class j extends c71.c {
     public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
     public Object s(Object p1, Object p2) { return null; }
     public Object a(Object p1, boolean p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public Object s(Object p1, Object p2) { return null; }
 }

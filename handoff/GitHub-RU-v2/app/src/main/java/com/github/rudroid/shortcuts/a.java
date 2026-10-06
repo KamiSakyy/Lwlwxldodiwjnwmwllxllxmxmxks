@@ -35,5 +35,4 @@ public final class a {
         return "ConfigureShortcutUIState(shortcutModel=" + this.a + ", mergeQueueEnabled=" + this.b + ", savingState=" + this.c + ")";
     }
     public Object a(Object p1) { return null; }
-    public Object a(Object p1) { return null; }
 }

@@ -12,6 +12,4 @@ public final class p {
         this.b = str2;
     }
     public Object add(Object p1) { return null; }
-    public Object add(Object p1) { return null; }
-    public Object add(Object p1) { return null; }
 }

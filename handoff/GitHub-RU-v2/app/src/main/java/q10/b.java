@@ -87,5 +87,4 @@ public final class b implements ha.c {
     public Object s() { return null; }
     public Object d = null;
     public Object e = null;
-    public Object C(Object p1) { return null; }
 }

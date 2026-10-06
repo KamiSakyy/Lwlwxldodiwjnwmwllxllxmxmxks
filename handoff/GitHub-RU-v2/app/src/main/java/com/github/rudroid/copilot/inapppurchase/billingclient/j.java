@@ -85,6 +85,4 @@ public interface j {
         }
     }
     public Object s(Object p1, Object p2) { return null; }
-    public Object s(Object p1, Object p2) { return null; }
-    public Object s(Object p1, Object p2) { return null; }
 }

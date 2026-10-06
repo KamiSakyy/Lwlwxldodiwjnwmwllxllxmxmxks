@@ -35,7 +35,6 @@ public final class t {
     public Object g(Object p1, Object p2) { return null; }
     public Object i(Object p1, Object p2) { return null; }
     public Object k(Object p1, Object p2) { return null; }
-    public Object d(Object p1) { return null; }
     public Object g(Object p1, long p2) { return null; }
     public Object i(Object p1, long p2) { return null; }
     public Object k(Object p1, int p2) { return null; }

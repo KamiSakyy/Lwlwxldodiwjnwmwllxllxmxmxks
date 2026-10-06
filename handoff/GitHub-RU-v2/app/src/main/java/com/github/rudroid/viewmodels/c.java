@@ -15,5 +15,4 @@ public final class c implements b {
         this.t = c;
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object p1) { return null; }
 }

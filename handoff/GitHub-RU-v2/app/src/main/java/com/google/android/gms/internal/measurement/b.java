@@ -88,8 +88,4 @@ public final class b {
     public Object h0 = null;
     public Object i0 = null;
     public Object z = null;
-    public Object e(Object p1) { return null; }
-    public Object i(Object p1) { return null; }
-    public Object o(Object p1) { return null; }
-    public Object p(Object p1) { return null; }
 }

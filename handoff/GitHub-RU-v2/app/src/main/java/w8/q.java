@@ -8,7 +8,7 @@ public class q {
     public q() {
     }
 
-    public static q Z(Object... a) {
+    public static w8.q Z(Object... a) {
         return null;
     }
     public Object W(Object p1) { return null; }

@@ -21,5 +21,4 @@ public final class a extends c {
     }
     public static Object M(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object a(Object p1) { return null; }
-    public Object a(Object p1) { return null; }
 }

@@ -18,5 +18,4 @@ public final class c {
         this.c = vVar;
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object p1) { return null; }
 }

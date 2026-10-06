@@ -24,5 +24,4 @@ public enum j implements k51.f {
     }
     public Object k(Object p1) { return null; }
     public Object s(Object p1, Object p2) { return null; }
-    public Object s(Object p1, Object p2) { return null; }
 }

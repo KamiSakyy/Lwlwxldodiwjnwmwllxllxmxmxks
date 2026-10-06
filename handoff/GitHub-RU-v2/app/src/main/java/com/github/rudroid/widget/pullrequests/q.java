@@ -4,5 +4,4 @@ package com.github.rudroid.widget.pullrequests;
 public interface q {
     public Object X(Object p1) { return null; }
     public q Z(Object p1) { return null; }
-    public Object X(Object p1) { return null; }
 }

@@ -42,6 +42,4 @@ public final class c {
     public static final Object f = null;
     public static final Object i = null;
     public Object b(Object p1, Object p2) { return null; }
-    public Object b(Object p1, Object p2) { return null; }
-    public Object b(Object p1, Object p2) { return null; }
 }

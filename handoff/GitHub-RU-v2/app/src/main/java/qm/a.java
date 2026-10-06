@@ -24,5 +24,4 @@ public final class a extends c71.c {
     public Object a(Object p1) { return null; }
     public static Object c(Object p1, Object p2) { return null; }
     public Object ordinal() { return null; }
-    public Object a(Object p1) { return null; }
 }

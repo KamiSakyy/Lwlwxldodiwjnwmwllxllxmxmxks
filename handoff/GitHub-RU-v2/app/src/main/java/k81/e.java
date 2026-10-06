@@ -43,7 +43,5 @@ public final class e extends f1 {
     public static final Object b = null;
     public static final Object c = null;
     public static final Object d = null;
-    public Object a(Object p1) { return null; }
     public Object k(Object p1) { return null; }
-    public Object s(Object p1, Object p2) { return null; }
 }

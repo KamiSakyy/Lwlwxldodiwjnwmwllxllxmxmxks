@@ -13,5 +13,4 @@ public final class d {
     public Object k() { return null; }
     public Object a(int p1, int p2, Object p3, Object p4) { return null; }
     public Object b(Object p1, int p2, int p3) { return null; }
-    public Object g(Object p1) { return null; }
 }

@@ -21,5 +21,4 @@ final class c implements j71.a {
     public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
     public Object v(Object p1) { return null; }
     public Object a(Object p1, Object p2, Object p3, Object p4, int p5, int p6) { return null; }
-    public Object v(Object p1) { return null; }
 }

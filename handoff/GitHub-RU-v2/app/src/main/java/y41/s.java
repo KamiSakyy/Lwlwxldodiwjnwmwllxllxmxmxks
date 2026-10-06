@@ -37,8 +37,5 @@ public final class s implements i51.c {
     public Object a = null;
     public Object d0(int p1) { return null; }
     public Object e0(int p1) { return null; }
-    public Object f(Object p1) { return null; }
-    public Object k(Object p1) { return null; }
-    public Object n0(Object p1) { return null; }
     public Object q(boolean p1) { return null; }
 }

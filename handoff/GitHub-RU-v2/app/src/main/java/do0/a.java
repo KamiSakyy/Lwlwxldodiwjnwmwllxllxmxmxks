@@ -26,5 +26,4 @@ public final class a extends c71.c {
     public Object d = null;
     public Object e = null;
     public Object f = null;
-    public Object a(Object p1) { return null; }
 }

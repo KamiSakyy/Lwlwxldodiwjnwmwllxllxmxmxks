@@ -25,5 +25,4 @@ public final class c implements z5.k {
         return x.i.j(new StringBuilder("AppWidgetId(appWidgetId="), this.f3507a, ')');
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object p1) { return null; }
 }
