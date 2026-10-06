@@ -165,7 +165,26 @@ jobs:
             --threads-count 2 \
             --output-dir "$JADX_OUT" \
             "$APK_PATH" > "$RUNNER_TEMP/jadx.log" 2>&1; then
-            tail -n 80 "$RUNNER_TEMP/jadx.log" >&2
+            python3 - "$RUNNER_TEMP/jadx.log" "$JADX_OUT" <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+          log_path, output_path = map(Path, sys.argv[1:])
+          text = log_path.read_text(encoding='utf-8', errors='replace') if log_path.is_file() else ''
+          error_count = len(re.findall(r'\bERROR\b', text, re.IGNORECASE))
+          exception_types = sorted(set(re.findall(r'\b([A-Za-z_$][\w$]*(?:Exception|Error))\b', text)))
+          memory_hint = bool(re.search(r'OutOfMemoryError|Java heap space|GC overhead', text, re.IGNORECASE))
+          java_count = sum(1 for _ in output_path.rglob('*.java')) if output_path.exists() else 0
+          manifest_found = any(p.name == 'AndroidManifest.xml' for p in output_path.rglob('*')) if output_path.exists() else False
+          message = (
+              f'JADX returned nonzero; error markers={error_count}; '
+              f'exception types={",".join(exception_types[:8]) or "none"}; '
+              f'heap-error-marker={"yes" if memory_hint else "no"}; '
+              f'partial Java files={java_count}; manifest-emitted={manifest_found}'
+          )
+          message = message.replace('%', '%25').replace(chr(13), '%0D').replace(chr(10), '%0A')
+          print(f'::error title=JADX failure::{message}')
+          PY
             exit 1
           fi
           echo 'JADX completed; source remains only in the ephemeral runner.'
