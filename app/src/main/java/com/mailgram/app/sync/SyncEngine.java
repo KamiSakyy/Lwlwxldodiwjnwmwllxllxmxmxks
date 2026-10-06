@@ -229,7 +229,7 @@ public final class SyncEngine {
                     // после обновления ключей крысиного шага оно расшифруется само
                     try {
                         GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
-                        addUndecryptable(store, mail, me);
+                        addUndecryptable(store, mail, myEmail);
                     } catch (Throwable ignored) {
                         com.mailgram.app.util.CrashLog.record(app, ignored);
                     }
