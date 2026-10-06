@@ -330,7 +330,9 @@ def render_theme(night):
         parent_attr = ' parent="%s"' % parent
         lines.append('    <style name="%s"%s>\n' % (name, parent_attr))
         for attr, value in items:
-            lines.append('        <item name="%s">%s</item>\n' % (attr, value))
+            # в <style> атрибуты пишутся без префикса app: — иначе aapt2 не находит их
+            name = attr[4:] if attr.startswith('app:') else attr
+            lines.append('        <item name="%s">%s</item>\n' % (name, value))
         lines.append("    </style>\n\n")
     lines.append('    <style name="Theme.MailGram.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">\n')
     for attr, value in sorted(DIALOG_COLORS.items()):

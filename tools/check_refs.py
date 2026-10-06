@@ -77,8 +77,11 @@ def scan(defined):
 
 
 def check_implicit_parents(defined):
-    """Стиль вида A.B.C без parent= заставит aapt искать родителя по имени (A.B) —
-    если такого стиля нет, сборка падает: 'resource style/A.B not found'."""
+    """Две ошибки, которые валят aapt2 на этапе processReleaseResources:
+
+    * стиль вида A.B.C без parent= — Android ищет родителя по имени (A.B);
+    * атрибут с префиксом app: внутри <style> — в values он недопустим.
+    """
     problems = []
     for path in glob.glob(os.path.join(RES, 'values*', '*.xml')):
         root = ET.parse(path).getroot()
@@ -86,17 +89,21 @@ def check_implicit_parents(defined):
             if el.tag != 'style':
                 continue
             name = el.get('name') or ''
-            if el.get('parent') is not None or '.' not in name:
-                continue
-            base = name.rsplit('.', 1)[0]
-            local = name.replace('.', '_')
-            if base.replace('.', '_') in defined['style'] or base in defined['style']:
-                continue
-            if base.startswith(('Widget.Material', 'TextAppearance.Material', 'Theme.Material',
-                                'ThemeOverlay.Material', 'Widget.AppCompat', 'Theme.AppCompat')):
-                continue
-            problems.append('%s — стиль %s без parent, а базового стиля %s нет'
-                            % (path, name, base))
+            if el.get('parent') is None and '.' in name:
+                base = name.rsplit('.', 1)[0]
+                known = base.replace('.', '_') in defined['style'] or base in defined['style']
+                library = base.startswith(('Widget.Material', 'TextAppearance.Material',
+                                           'Theme.Material', 'ThemeOverlay.Material',
+                                           'Widget.AppCompat', 'Theme.AppCompat'))
+                if not known and not library:
+                    problems.append('%s — стиль %s без parent, а базового стиля %s нет'
+                                    % (path, name, base))
+            for item in el:
+                item_name = item.get('name') or ''
+                if item_name.startswith('app:'):
+                    problems.append('%s — в стиле %s атрибут с префиксом app: (%s); '
+                                    'в values пишется без префикса'
+                                    % (path, name, item_name))
     return problems
 
 
