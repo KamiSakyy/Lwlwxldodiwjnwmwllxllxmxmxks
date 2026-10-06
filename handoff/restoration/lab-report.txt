@@ -59,15 +59,15 @@ import com.github.domain.searchandfilter.filters.data.CustomInstructionsFilter;
 0
 ===== ЭКСП 6: FULL, -Xmx3g =====
 файлов: 44532
-exit=0 errors=58948 Object=48782
+exit=0 errors=58915 Object=48782
 ===== ЭКСП 7: FULL, -Xmx10g =====
-exit=0 errors=58948 Object=48782
+exit=0 errors=58915 Object=48782
 ===== ЭКСП 8: половина 1 =====
-errors=42778 Object=9504
+errors=42743 Object=9504
 ===== ЭКСП 9: половина 2 =====
 errors=88572 Object=21335
 ===== ЭКСП 10: 3000 файлов случайных =====
-errors=55984 Object=0
+errors=17095 Object=0
 ===== ЭКСП 10b: топ Object-шума ЭКСП 7 (пакеты) =====
   48723 java
 ===== ЭКСП 11: k71/*.java изолированно =====
@@ -109,11 +109,20 @@ package k71;
 import a0.s0;
 ===== ЭКСП 14: FULL БЕЗ стаб-файлов =====
 файлов без стабов: 42793 (вырезано: 1739)
-errors=52699 Object=0
+errors=52695 Object=0
 ===== ЭКСП 15: half2 верхняя половина (11k) =====
 errors=45738 Object=6920
 ===== ЭКСП 16: half2 нижняя половина (11k) =====
 errors=79580 Object=0
 ===== ЭКСП 17: FULL СО ВСЕМИ стабами, БЕЗ <T1,T2,T3,T4> у стабов =====
-стабов с вырезанными дженериками: 1739
+стабов с вырезанными дженериками: 0
 errors= Object=
+===== ЭКСП 20: 10k файлов =====
+errors=28939 Object=0
+===== ЭКСП 21: 20k файлов =====
+errors=43049 Object=7623
+===== ЭКСП 22: 30k файлов =====
+errors=55545 Object=30358
+===== ЭКСП 23: ДВУХЧАСТНАЯ full =====
+part1: errors=42743 Object=9504
+part2: errors=88572 Object=21335
