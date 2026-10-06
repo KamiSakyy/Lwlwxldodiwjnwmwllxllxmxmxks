@@ -155,7 +155,7 @@ jobs:
       - name: Decompile to temporary runner storage
         shell: bash
         env:
-          JAVA_OPTS: -Xmx5g
+          JAVA_OPTS: -Xmx7g
         run: |
           set -euo pipefail
           APK_PATH="$RUNNER_TEMP/$APK_NAME"
@@ -165,7 +165,7 @@ jobs:
             --threads-count 2 \
             --output-dir "$JADX_OUT" \
             "$APK_PATH" > "$RUNNER_TEMP/jadx.log" 2>&1; then
-            python3 - "$RUNNER_TEMP/jadx.log" "$JADX_OUT" <<'PY'
+            if ! python3 - "$RUNNER_TEMP/jadx.log" "$JADX_OUT" <<'PY'
           import re
           import sys
           from pathlib import Path
@@ -176,18 +176,27 @@ jobs:
           memory_hint = bool(re.search(r'OutOfMemoryError|Java heap space|GC overhead', text, re.IGNORECASE))
           java_count = sum(1 for _ in output_path.rglob('*.java')) if output_path.exists() else 0
           manifest_found = any(p.name == 'AndroidManifest.xml' for p in output_path.rglob('*')) if output_path.exists() else False
+          usable_partial = java_count >= 10000 and manifest_found
           message = (
-              f'JADX returned nonzero; error markers={error_count}; '
+              f'JADX incomplete; error markers={error_count}; '
               f'exception types={",".join(exception_types[:8]) or "none"}; '
               f'heap-error-marker={"yes" if memory_hint else "no"}; '
-              f'partial Java files={java_count}; manifest-emitted={manifest_found}'
+              f'Java files={java_count}; manifest-emitted={manifest_found}; '
+              f'partial scan accepted={usable_partial}'
           )
           message = message.replace('%', '%25').replace(chr(13), '%0D').replace(chr(10), '%0A')
-          print(f'::error title=JADX failure::{message}')
+          level = 'warning' if usable_partial else 'error'
+          print(f'::{level} title=JADX decompilation::{message}')
+          raise SystemExit(0 if usable_partial else 1)
           PY
-            exit 1
+            then
+              exit 1
+            fi
+            echo 'JADX_INCOMPLETE=true' >> "$GITHUB_ENV"
+          else
+            echo 'JADX_INCOMPLETE=false' >> "$GITHUB_ENV"
+            echo 'JADX completed; source remains only in the ephemeral runner.'
           fi
-          echo 'JADX completed; source remains only in the ephemeral runner.'
           find "$JADX_OUT" -type f -name '*.java' | wc -l | awk '{print "Decompiled Java files: " $1}'
 
       - name: Generate metadata-only handoff summary
@@ -196,6 +205,9 @@ jobs:
           set -euo pipefail
           APK_PATH="$RUNNER_TEMP/$APK_NAME"
           JADX_OUT="$RUNNER_TEMP/$JADX_DIRECTORY"
+          if [[ "${JADX_INCOMPLETE:-false}" == 'true' ]]; then
+            echo '> **Partial decompilation:** JADX hit an error after emitting a substantial tree; the findings below cover emitted files only.' >> "$GITHUB_STEP_SUMMARY"
+          fi
           python3 handoff/analyze_decompiled.py "$JADX_OUT" "$APK_PATH"
 
       - name: Remove temporary APK and decompiled tree

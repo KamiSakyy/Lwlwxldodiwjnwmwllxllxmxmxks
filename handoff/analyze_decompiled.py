@@ -136,6 +136,12 @@ def main() -> int:
     auth_files.sort(key=lambda item: (-item[0], item[1].lower()))
     candidates = auth_files[:20]
     top_packages = package_counts.most_common(8)
+    partial_decompilation = os.environ.get("JADX_INCOMPLETE", "false").lower() == "true"
+    completion_note = (
+        "partial; JADX exited nonzero, so findings cover emitted files only"
+        if partial_decompilation
+        else "complete; JADX exited successfully"
+    )
 
     report = [
         "# VK APK — temporary static-review summary",
@@ -152,6 +158,7 @@ def main() -> int:
         "",
         "## Decompiled tree",
         f"- Java files emitted by JADX: {len(java_files)}",
+        f"- Decompilation status: {completion_note}",
         f"- Files matching auth/login/session/QR naming or source terms: {len(auth_files)}",
         f"- OAuth/API host references (occurrence counts only): "
         + ", ".join(f"`{name}` {host_counts[name]}" for name in AUTH_URLS),
@@ -196,7 +203,8 @@ def main() -> int:
         notice_messages = [
             f"Package: {package_name}; version: {version_name}; code: {version_code}",
             f"DEX files: {len(dex_files)}; native libraries: {len(native_libs)}",
-            f"Java files: {len(java_files)}; auth/session candidates: {len(auth_files)}",
+            f"Java files: {len(java_files)}; decompilation status: {completion_note}",
+            f"Auth/session candidate count: {len(auth_files)}",
             "OAuth/API reference counts: " + ", ".join(
                 f"{name}={host_counts[name]}" for name in AUTH_URLS
             ),
