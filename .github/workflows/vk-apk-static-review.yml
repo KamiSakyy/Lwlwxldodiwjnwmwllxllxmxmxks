@@ -114,7 +114,7 @@ jobs:
           import sys
           digests = {}
           for line in open(sys.argv[1], encoding='utf-8', errors='replace'):
-              match = re.search(r'(?i)certificate\s+SHA-(1|256)\s+digest:\s*([0-9a-f:]+)', line)
+              match = re.search(r'(?i)^\s*Signer\s+#\d+\s+certificate\s+SHA-(1|256)\s+digest:\s*([0-9a-f:]+)', line)
               if match:
                   digests[match.group(1)] = match.group(2).lower().replace(':', '')
           print(f"{digests.get('1', '')}|{digests.get('256', '')}")
