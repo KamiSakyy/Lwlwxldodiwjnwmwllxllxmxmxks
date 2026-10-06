@@ -73,7 +73,7 @@ for i, l in enumerate(lines):
     j = rel.find(SRC_MARK)
     if j < 0:
         continue
-    p = rel[j:]
+    p = os.path.join(root, rel[j + len(SRC_MARK):])
     if p in seen or not os.path.isfile(p):
         continue
     lno = int(m.group(2))
