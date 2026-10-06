@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Экран переписки: стеклянная шапка (аватар, имя, состояние), обои, пузыри,
+  панель ответа, эмодзи, панель выбора и поле ввода-«пилюля» с круглой кнопкой отправки.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/chat_root"
@@ -11,28 +15,30 @@
         android:id="@+id/chat_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_toolbar_glass"
+        android:background="@drawable/bg_nav_bar"
         android:gravity="center_vertical"
-        android:minHeight="60dp"
+        android:minHeight="58dp"
         android:orientation="horizontal"
         android:paddingStart="4dp"
-        android:paddingTop="4dp"
-        android:paddingEnd="4dp"
-        android:paddingBottom="4dp">
+        android:paddingTop="5dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="5dp">
 
         <ImageButton
             android:id="@+id/chat_back"
             style="@style/Widget.MailGram.GlassIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:contentDescription="@string/back"
             android:src="@drawable/ic_back"
-            app:tint="?attr/colorOnSurface" />
+            app:tint="@color/brand" />
 
         <com.mailgram.app.ui.AvatarView
             android:id="@+id/chat_avatar"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:layout_marginStart="2dp"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="11dp" />
 
         <LinearLayout
             android:id="@+id/chat_title_box"
@@ -48,7 +54,7 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textAppearance="@style/TextAppearance.MailGram.ChatTitle"
-                android:textColor="?attr/colorOnSurface" />
+                android:textColor="@color/text_primary" />
 
             <TextView
                 android:id="@+id/chat_subtitle"
@@ -57,71 +63,65 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textAppearance="@style/TextAppearance.MailGram.ChatSubtitle"
-                android:textColor="?attr/colorPrimary" />
+                android:textColor="@color/brand" />
         </LinearLayout>
 
         <ImageButton
             android:id="@+id/chat_search_btn"
             style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/search_chat"
-            android:src="@drawable/ic_search"
-            app:tint="?attr/colorOnSurface" />
+            android:src="@drawable/ic_search" />
 
         <ImageButton
             android:id="@+id/chat_menu_btn"
             style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/more"
-            android:src="@drawable/ic_more_vert"
-            app:tint="?attr/colorOnSurface" />
+            android:src="@drawable/ic_more_vert" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/chat_search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_toolbar_glass"
+        android:background="@drawable/bg_nav_bar"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="12dp"
+        android:paddingTop="4dp"
         android:paddingEnd="8dp"
+        android:paddingBottom="6dp"
         android:visibility="gone">
 
         <EditText
             android:id="@+id/chat_search_edit"
+            style="@style/Widget.MailGram.Input"
             android:layout_width="0dp"
             android:layout_height="44dp"
             android:layout_weight="1"
-            android:background="@drawable/bg_input"
             android:hint="@string/search_chat"
             android:imeOptions="actionSearch"
-            android:inputType="text"
-            android:paddingStart="14dp"
-            android:paddingEnd="14dp"
-            android:textColor="?attr/colorOnSurface"
-            android:textColorHint="?attr/colorOnSurfaceVariant"
-            android:textSize="15sp" />
+            android:inputType="text" />
 
         <ImageButton
             android:id="@+id/chat_search_close"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
+            android:layout_marginStart="4dp"
             android:contentDescription="@string/cancel"
             android:src="@drawable/ic_close"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            app:tint="@color/text_secondary" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/chat_pinned"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorSurface"
+        android:background="@color/surface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="14dp"
-        android:paddingTop="6dp"
-        android:paddingEnd="6dp"
-        android:paddingBottom="6dp"
+        android:paddingStart="16dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="7dp"
         android:visibility="gone">
 
         <ImageView
@@ -129,43 +129,44 @@
             android:layout_height="18dp"
             android:contentDescription="@string/pin_chat"
             android:src="@drawable/ic_pin"
-            app:tint="?attr/colorPrimary" />
+            app:tint="@color/brand" />
 
         <TextView
             android:id="@+id/chat_pinned_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="11dp"
             android:layout_weight="1"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textSize="13sp" />
+            android:textAppearance="@style/TextAppearance.MailGram.BodySmall"
+            android:textColor="@color/text_primary" />
 
         <ImageButton
             android:id="@+id/chat_pinned_close"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:contentDescription="@string/cancel"
             android:src="@drawable/ic_close"
             android:visibility="gone"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            app:tint="@color/text_secondary" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/chat_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
         android:background="@drawable/bg_banner"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="12dp"
-        android:paddingTop="8dp"
+        android:paddingStart="14dp"
+        android:paddingTop="6dp"
         android:paddingEnd="8dp"
-        android:paddingBottom="8dp"
+        android:paddingBottom="6dp"
         android:visibility="gone">
 
         <TextView
@@ -173,16 +174,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?attr/textAppearanceBodySmall"
-            android:textColor="?attr/colorOnSurface" />
+            android:textAppearance="@style/TextAppearance.MailGram.Caption"
+            android:textColor="@color/text_primary" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/chat_banner_action"
-            style="@style/Widget.Material3.Button.TextButton"
+            style="@style/Widget.MailGram.Button.Text"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="@string/invite_contact"
-            android:textAllCaps="false"
             android:textSize="13sp" />
     </LinearLayout>
 
@@ -196,7 +196,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:paddingBottom="8dp" />
 
         <FrameLayout
@@ -210,22 +210,22 @@
 
             <ImageView
                 android:id="@+id/btn_scroll_down"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:background="@drawable/bg_badge"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_icon_circle"
                 android:contentDescription="@string/scroll_down"
                 android:padding="10dp"
                 android:src="@drawable/ic_scroll_down"
-                app:tint="#FFFFFFFF" />
+                app:tint="@color/brand" />
 
             <TextView
                 android:id="@+id/scroll_unread_badge"
                 android:layout_width="wrap_content"
-                android:layout_height="22dp"
+                android:layout_height="21dp"
                 android:layout_gravity="top|end"
                 android:background="@drawable/bg_badge"
                 android:gravity="center"
-                android:minWidth="22dp"
+                android:minWidth="21dp"
                 android:paddingStart="6dp"
                 android:paddingEnd="6dp"
                 android:textColor="#FFFFFFFF"
@@ -239,13 +239,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="?attr/colorSurface"
+            android:background="@drawable/bg_sheet"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingStart="18dp"
-            android:paddingTop="10dp"
-            android:paddingEnd="18dp"
-            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="12dp"
             android:visibility="gone">
 
             <LinearLayout
@@ -267,7 +267,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:text="0:00"
-                    android:textColor="?attr/colorOnSurface"
+                    android:textColor="@color/text_primary"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -280,15 +280,14 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:text="@string/voice_hold"
-                    android:textColor="?attr/colorOnSurfaceVariant"
-                    android:textSize="12sp" />
+                    android:textAppearance="@style/TextAppearance.MailGram.Caption" />
             </LinearLayout>
 
             <com.mailgram.app.media.VoiceWaveView
                 android:id="@+id/voice_live_wave"
                 android:layout_width="match_parent"
                 android:layout_height="26dp"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="6dp" />
         </LinearLayout>
     </FrameLayout>
 
@@ -296,24 +295,24 @@
         android:id="@+id/chat_reply_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorSurface"
+        android:background="@color/surface"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="12dp"
-        android:paddingTop="6dp"
+        android:paddingTop="7dp"
         android:paddingEnd="6dp"
-        android:paddingBottom="6dp"
+        android:paddingBottom="7dp"
         android:visibility="gone">
 
         <View
             android:layout_width="3dp"
             android:layout_height="34dp"
-            android:background="?attr/colorPrimary" />
+            android:background="@color/brand" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="11dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -323,7 +322,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="?attr/colorPrimary"
+                android:textColor="@color/brand"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
@@ -333,34 +332,34 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textColor="@color/text_secondary"
                 android:textSize="13sp" />
         </LinearLayout>
 
         <ImageButton
             android:id="@+id/chat_reply_close"
+            style="@style/Widget.MailGram.GlassIcon"
             android:layout_width="38dp"
             android:layout_height="38dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/cancel"
             android:src="@drawable/ic_close"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            app:tint="@color/text_secondary" />
     </LinearLayout>
 
     <GridLayout
         android:id="@+id/emoji_panel"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="?attr/colorSurface"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_sheet"
         android:columnCount="8"
-        android:padding="6dp"
+        android:padding="10dp"
         android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/selection_bar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@drawable/bg_toolbar_glass"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_nav_bar"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="6dp"
@@ -369,132 +368,118 @@
 
         <ImageView
             android:id="@+id/sel_close"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/cancel"
-            android:padding="10dp"
-            android:src="@drawable/ic_close"
-            app:tint="?attr/colorOnSurface" />
+            android:src="@drawable/ic_close" />
 
         <TextView
             android:id="@+id/selection_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingStart="6dp"
+            android:paddingStart="10dp"
             android:text="@string/select"
-            android:textAppearance="?attr/textAppearanceTitleMedium"
-            android:textColor="?attr/colorOnSurface" />
+            android:textAppearance="@style/TextAppearance.MailGram.ChatTitle" />
 
         <ImageView
             android:id="@+id/sel_copy"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/copy"
-            android:padding="10dp"
-            android:src="@drawable/ic_copy"
-            app:tint="?attr/colorOnSurface" />
+            android:src="@drawable/ic_copy" />
 
         <ImageView
             android:id="@+id/sel_forward"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/forward"
-            android:padding="10dp"
-            android:src="@drawable/ic_forward"
-            app:tint="?attr/colorOnSurface" />
+            android:src="@drawable/ic_forward" />
 
         <ImageView
             android:id="@+id/sel_pin"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/pin_chat"
-            android:padding="10dp"
-            android:src="@drawable/ic_pin"
-            app:tint="?attr/colorOnSurface" />
+            android:src="@drawable/ic_pin" />
 
         <ImageView
             android:id="@+id/sel_delete"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
             android:contentDescription="@string/delete_for_all"
-            android:padding="10dp"
             android:src="@drawable/ic_delete"
-            app:tint="@color/google_red" />
+            app:tint="@color/danger" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/input_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_toolbar_glass"
+        android:background="@drawable/bg_bottom_bar"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="6dp"
-        android:paddingTop="6dp"
+        android:paddingStart="8dp"
+        android:paddingTop="7dp"
         android:paddingEnd="10dp"
-        android:paddingBottom="6dp">
+        android:paddingBottom="7dp">
 
         <ImageButton
             android:id="@+id/btn_attach"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            style="@style/Widget.MailGram.GlassIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:contentDescription="@string/attach_title"
             android:src="@drawable/ic_attach_plus"
-            app:tint="?attr/colorOnSurfaceVariant" />
+            app:tint="@color/text_secondary" />
 
-        <ImageButton
-            android:id="@+id/btn_emoji"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/emoji"
-            android:src="@drawable/ic_emoji"
-            app:tint="?attr/colorOnSurfaceVariant" />
-
-        <EditText
-            android:id="@+id/input_edit"
+        <!-- поле ввода-«пилюля», внутри справа — смайлик (как в Telegram и WhatsApp) -->
+        <FrameLayout
             android:layout_width="0dp"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
-            android:layout_marginEnd="6dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_input"
-            android:hint="@string/message_hint"
-            android:imeOptions="actionSend|flagNoEnterAction"
-            android:inputType="textCapSentences|textMultiLine"
-            android:maxLines="5"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:textColor="?attr/colorOnSurface"
-            android:textColorHint="?attr/colorOnSurfaceVariant"
-            android:textSize="16sp" />
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/input_edit"
+                style="@style/Widget.MailGram.Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message_hint"
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxHeight="132dp"
+                android:maxLines="5"
+                android:minHeight="44dp"
+                android:paddingEnd="46dp" />
+
+            <ImageButton
+                android:id="@+id/btn_emoji"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_icon_ripple_round"
+                android:contentDescription="@string/emoji"
+                android:padding="7dp"
+                android:src="@drawable/ic_emoji"
+                app:tint="@color/text_secondary" />
+        </FrameLayout>
 
         <ImageButton
             android:id="@+id/btn_mic"
+            style="@style/Widget.MailGram.GlassIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/attach_voice"
+            android:src="@drawable/ic_mic"
+            app:tint="@color/text_secondary" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
             android:layout_width="46dp"
             android:layout_height="46dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/attach_voice"
-            android:padding="8dp"
-            android:src="@drawable/ic_mic"
-            app:tint="?attr/colorOnSurfaceVariant" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/btn_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@drawable/bg_send"
             android:contentDescription="@string/send"
-            android:visibility="gone"
-            app:backgroundTint="?attr/colorPrimary"
-            app:fabCustomSize="46dp"
-            app:srcCompat="@drawable/ic_send"
-            app:tint="#FFFFFFFF" />
+            android:padding="12dp"
+            android:src="@drawable/ic_send"
+            android:tint="#FFFFFFFF"
+            android:visibility="gone" />
     </LinearLayout>
 </LinearLayout>

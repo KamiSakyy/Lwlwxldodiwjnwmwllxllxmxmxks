@@ -20,7 +20,7 @@ public final class Prefs {
     }
 
     public static String theme(Context ctx) {
-        return p(ctx).getString("theme", THEME_SYSTEM);
+        return p(ctx).getString("theme", THEME_DARK);
     }
 
     public static void setTheme(Context ctx, String theme) {

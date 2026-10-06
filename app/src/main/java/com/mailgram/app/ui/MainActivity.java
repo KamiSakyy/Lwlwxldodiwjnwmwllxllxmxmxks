@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         setContentView(R.layout.activity_main);
         Ui.applyWallpaper(this, R.id.main_root);
-        Ui.applySystemBars(this, findViewById(R.id.main_toolbar), null);
+        Ui.applySystemBars(this, findViewById(R.id.main_toolbar),
+                findViewById(R.id.recycler_chats));
 
         toolbar = findViewById(R.id.main_toolbar);
         list = findViewById(R.id.recycler_chats);

@@ -2,13 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/action_search" android:icon="@drawable/ic_search"
+        android:iconTint="@color/text_primary"
         android:title="@string/search_chat" app:showAsAction="always" />
+    <item android:id="@+id/action_safety" android:icon="@drawable/ic_shield"
+        android:iconTint="@color/text_primary"
+        android:title="@string/chat_menu_safety" app:showAsAction="never" />
     <item android:id="@+id/action_pin" android:icon="@drawable/ic_pin"
+        android:iconTint="@color/text_primary"
         android:title="@string/pin_chat" app:showAsAction="never" />
     <item android:id="@+id/action_mute" android:icon="@drawable/ic_mute"
+        android:iconTint="@color/text_primary"
         android:title="@string/mute_chat" app:showAsAction="never" />
-    <item android:id="@+id/action_safety" android:icon="@drawable/ic_shield"
-        android:title="@string/chat_menu_safety" app:showAsAction="never" />
     <item android:id="@+id/action_rename" android:title="@string/chat_menu_rename"
         app:showAsAction="never" />
     <item android:id="@+id/action_export" android:title="@string/export_chat"

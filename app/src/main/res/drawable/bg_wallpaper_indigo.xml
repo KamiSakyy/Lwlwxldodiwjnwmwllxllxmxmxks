@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="?attr/colorWallpaperCore" />
+            <solid android:color="@color/wallpaper_core" />
         </shape>
     </item>
     <item>
@@ -12,7 +12,7 @@
                 android:centerX="0.5"
                 android:centerY="1.05"
                 android:gradientRadius="95%p"
-                android:startColor="?attr/colorWallpaperIndigo"
+                android:startColor="@color/wallpaper_indigo"
                 android:endColor="#00000000" />
         </shape>
     </item>
@@ -23,7 +23,7 @@
                 android:centerX="0.9"
                 android:centerY="0.05"
                 android:gradientRadius="55%p"
-                android:startColor="?attr/colorWallpaperGlow"
+                android:startColor="@color/wallpaper_glow"
                 android:endColor="#00000000" />
         </shape>
     </item>

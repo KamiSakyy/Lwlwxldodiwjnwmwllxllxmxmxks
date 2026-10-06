@@ -100,7 +100,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     private TextView voiceTimer;
     private TextView voiceHint;
     private VoiceWaveView liveWave;
-    private ImageView pinnedRow;
+    private View pinnedRow;
     private TextView pinnedText;
     private View scrollDown;
     private TextView scrollBadge;

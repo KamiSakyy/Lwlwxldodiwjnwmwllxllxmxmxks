@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Пузырь сообщения: исходящие — синий градиент, входящие — графитовая поверхность.
+  Хвостик рисуется фоном (bg_bubble_out / bg_bubble_in), поэтому пузырь «растёт» вниз.
+-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingStart="8dp"
+    android:paddingStart="7dp"
     android:paddingTop="1dp"
-    android:paddingEnd="8dp"
+    android:paddingEnd="7dp"
     android:paddingBottom="1dp">
 
-    <!-- иконка ответа, которая проявляется при смахивании пузыря -->
     <ImageView
         android:id="@+id/msg_swipe_icon"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_gravity="start|center_vertical"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="16dp"
         android:alpha="0"
         android:contentDescription="@string/reply"
         android:src="@drawable/ic_reply"
-        app:tint="?attr/colorPrimary" />
+        app:tint="@color/brand" />
 
     <LinearLayout
         android:id="@+id/msg_container"
@@ -31,7 +34,6 @@
         android:paddingEnd="13dp"
         android:paddingBottom="6dp">
 
-        <!-- отметка пересылки -->
         <TextView
             android:id="@+id/msg_forwarded"
             android:layout_width="wrap_content"
@@ -42,7 +44,6 @@
             android:textStyle="italic"
             android:visibility="gone" />
 
-        <!-- цитата, если это ответ -->
         <LinearLayout
             android:id="@+id/msg_reply_quote"
             android:layout_width="match_parent"
@@ -60,7 +61,7 @@
                 android:id="@+id/msg_reply_strip"
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
-                android:background="?attr/colorPrimary" />
+                android:background="@color/brand" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
-                    android:textColor="?attr/colorPrimary"
+                    android:textColor="@color/brand"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
@@ -83,12 +84,12 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:maxLines="2"
-                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textColor="@color/text_secondary"
                     android:textSize="13sp" />
             </LinearLayout>
         </LinearLayout>
 
-        <!-- медиа: фото, видео, кружок, голосовое или файл -->
+        <!-- фото -->
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/msg_image"
             android:layout_width="250dp"
@@ -100,6 +101,7 @@
             android:visibility="gone"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.MailGram.Media" />
 
+        <!-- видео -->
         <FrameLayout
             android:id="@+id/msg_video_box"
             android:layout_width="240dp"
@@ -117,12 +119,13 @@
 
             <ImageView
                 android:id="@+id/msg_video_play"
-                android:layout_width="54dp"
-                android:layout_height="54dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_gravity="center"
+                android:background="@drawable/bg_play_circle"
                 android:contentDescription="@string/attach_video"
-                android:src="@drawable/ic_play"
-                app:tint="#FFFFFFFF" />
+                android:padding="16dp"
+                android:src="@drawable/ic_play_white" />
 
             <TextView
                 android:id="@+id/msg_video_duration"
@@ -130,16 +133,16 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="8dp"
-                android:background="#80000000"
-                android:paddingStart="6dp"
+                android:background="@drawable/bg_video_chip"
+                android:paddingStart="7dp"
                 android:paddingTop="2dp"
-                android:paddingEnd="6dp"
+                android:paddingEnd="7dp"
                 android:paddingBottom="2dp"
                 android:textColor="#FFFFFFFF"
                 android:textSize="11sp" />
         </FrameLayout>
 
-        <!-- кружок: то же видео, но круглое и без подписи -->
+        <!-- кружок -->
         <FrameLayout
             android:id="@+id/msg_circle_box"
             android:layout_width="200dp"
@@ -157,17 +160,19 @@
 
             <ImageView
                 android:id="@+id/msg_circle_play"
-                android:layout_width="54dp"
-                android:layout_height="54dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:layout_gravity="center"
+                android:background="@drawable/bg_play_circle"
                 android:contentDescription="@string/attach_circle"
-                android:src="@drawable/ic_play"
-                app:tint="#FFFFFFFF" />
+                android:padding="16dp"
+                android:src="@drawable/ic_play_white" />
         </FrameLayout>
 
+        <!-- голосовое -->
         <LinearLayout
             android:id="@+id/msg_voice_box"
-            android:layout_width="230dp"
+            android:layout_width="232dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
             android:gravity="center_vertical"
@@ -176,19 +181,19 @@
 
             <ImageView
                 android:id="@+id/msg_voice_play"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_voice_play"
                 android:contentDescription="@string/attach_voice"
-                android:padding="7dp"
+                android:padding="11dp"
                 android:src="@drawable/ic_play"
-                app:tint="?attr/colorPrimary" />
+                app:tint="@color/brand" />
 
             <com.mailgram.app.media.VoiceWaveView
                 android:id="@+id/msg_voice_wave"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="8dp"
                 android:layout_weight="1" />
 
             <TextView
@@ -196,10 +201,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
-                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textColor="@color/text_secondary"
                 android:textSize="11sp" />
         </LinearLayout>
 
+        <!-- файл -->
         <LinearLayout
             android:id="@+id/msg_file_box"
             android:layout_width="240dp"
@@ -208,20 +214,20 @@
             android:background="@drawable/bg_quote"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="8dp"
+            android:padding="9dp"
             android:visibility="gone">
 
             <ImageView
-                android:layout_width="34dp"
-                android:layout_height="34dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:contentDescription="@string/attach_file"
                 android:src="@drawable/ic_file"
-                app:tint="?attr/colorPrimary" />
+                app:tint="@color/brand" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="9dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -230,14 +236,14 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="middle"
                     android:maxLines="1"
-                    android:textColor="?attr/colorOnSurface"
+                    android:textColor="@color/text_primary"
                     android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/msg_file_size"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textColor="@color/text_secondary"
                     android:textSize="11sp" />
             </LinearLayout>
         </LinearLayout>
@@ -246,12 +252,11 @@
             android:id="@+id/msg_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxWidth="280dp"
-            android:textAppearance="?attr/textAppearanceBodyLarge"
-            android:textColor="?attr/colorOnSurface"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="282dp"
+            android:textColor="@color/text_primary"
             android:textIsSelectable="true"
-            android:textSize="16sp"
-            android:lineSpacingExtra="2dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/msg_link_chip"
@@ -260,13 +265,13 @@
             android:layout_marginTop="6dp"
             android:background="@drawable/bg_quote_glass"
             android:ellipsize="end"
-            android:maxWidth="260dp"
+            android:maxWidth="262dp"
             android:paddingStart="10dp"
             android:paddingTop="7dp"
             android:paddingEnd="10dp"
             android:paddingBottom="7dp"
             android:singleLine="true"
-            android:textColor="@color/accent"
+            android:textColor="@color/brand"
             android:textSize="13sp"
             android:textStyle="bold"
             android:visibility="gone" />
@@ -293,7 +298,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:text="@string/edited"
-                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textColor="@color/text_secondary"
                 android:textSize="11sp"
                 android:visibility="gone" />
 
@@ -301,13 +306,13 @@
                 android:id="@+id/msg_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textColor="@color/text_secondary"
                 android:textSize="11sp" />
 
             <ImageView
                 android:id="@+id/msg_state"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
                 android:layout_marginStart="4dp"
                 android:contentDescription="@string/state_sent"
                 android:src="@drawable/ic_check"

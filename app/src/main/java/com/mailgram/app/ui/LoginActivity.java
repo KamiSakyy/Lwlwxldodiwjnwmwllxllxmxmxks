@@ -97,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         if (!probing.compareAndSet(false, true)) return;
         status.setVisibility(View.VISIBLE);
-        status.setTextColor(0xFF5F6368);
+        status.setTextColor(getResources().getColor(R.color.text_secondary));
         status.setText(R.string.login_check_running);
         new Thread(() -> {
             final Auth.Probe result = Auth.probeNow(getApplicationContext());
@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
         if (isFinishing() || isDestroyed()) return;
         status.setVisibility(View.VISIBLE);
         boolean ok = result.androidOk || result.loopbackOk;
-        status.setTextColor(ok ? 0xFF188038 : (result.inconclusive ? 0xFF5F6368 : 0xFFD93025));
+        status.setTextColor(ok ? getResources().getColor(R.color.success) : (result.inconclusive ? getResources().getColor(R.color.text_secondary) : getResources().getColor(R.color.danger)));
         status.setText(result.summary);
         if (result.hasFixHint() && !fixDialogShown) {
             fixDialogShown = true;
@@ -144,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
         if (probe != null && !probe.summary.isEmpty()) {
             status.setVisibility(View.VISIBLE);
             boolean ok = probe.androidOk || probe.loopbackOk;
-            status.setTextColor(ok ? 0xFF188038 : (probe.inconclusive ? 0xFF5F6368 : 0xFFD93025));
+            status.setTextColor(ok ? getResources().getColor(R.color.success) : (probe.inconclusive ? getResources().getColor(R.color.text_secondary) : getResources().getColor(R.color.danger)));
             status.setText(probe.summary);
             return;
         }
@@ -160,7 +160,7 @@ public class LoginActivity extends AppCompatActivity {
             // схема редиректа жёстко прописана в манифесте на этапе сборки
             status.setVisibility(View.VISIBLE);
             status.setText(getString(R.string.login_client_mismatch, Auth.androidSchemeFromBuild()));
-            status.setTextColor(0xFFD93025);
+            status.setTextColor(getResources().getColor(R.color.danger));
         } else {
             status.setVisibility(View.VISIBLE);
             status.setText("Client ID: " + shortId(clientId) + "\nРежим: "

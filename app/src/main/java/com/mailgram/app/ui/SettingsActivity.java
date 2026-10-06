@@ -37,7 +37,8 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         Ui.applyWallpaper(this, R.id.settings_root);
-        Ui.applySystemBars(this, findViewById(R.id.settings_toolbar), null);
+        Ui.applySystemBars(this, findViewById(R.id.settings_toolbar),
+                findViewById(R.id.settings_root));
 
         MaterialToolbar toolbar = findViewById(R.id.settings_toolbar);
         toolbar.setNavigationOnClickListener(v -> finish());

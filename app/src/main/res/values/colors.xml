@@ -1,82 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Палитра MailGram: светлая тема.
+  Семантические имена (bg, surface, text_primary, brand…) описаны и здесь, и в values-night —
+  поэтому одна и та же разметка выглядит правильно в обеих темах, а иконки и фон никогда
+  не зависят от атрибутов темы (это исключает «невидимые» элементы и падения при инфляции).
+-->
 <resources>
-    <!-- Акцент: системный синий iOS -->
-    <color name="accent">#0A84FF</color>
-    <color name="accent_dark">#409CFF</color>
-    <color name="accent_pressed">#0060DF</color>
-    <color name="accent_light">#E7F1FF</color>
-    <color name="lock_green">#30D158</color>
+    <!-- Семантика: базовые поверхности -->
+    <color name="bg">#FFF2F2F7</color>
+    <color name="bg_elevated">#FFFFFFFF</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_alt">#FFE9E9EE</color>
+    <color name="surface_pressed">#FFDEDEE3</color>
+    <color name="divider">#FFD7D7DC</color>
+    <color name="overlay">#66000000</color>
 
-    <!-- Светлая тема -->
-    <color name="bg_light">#FFFFFF</color>
-    <color name="surface_light">#FFFFFF</color>
-    <color name="surface_grouped_light">#F2F2F7</color>
-    <color name="text_primary_light">#000000</color>
-    <color name="text_secondary_light">#8A8A8E</color>
-    <color name="bubble_out_light">#0A84FF</color>
-    <color name="bubble_out_text_light">#FFFFFF</color>
-    <color name="bubble_in_light">#E9E9EB</color>
-    <color name="bubble_in_text_light">#000000</color>
-    <color name="divider_light">#D1D1D6</color>
+    <!-- Семантика: текст -->
+    <color name="text_primary">#FF000000</color>
+    <color name="text_secondary">#FF6E6E73</color>
+    <color name="text_tertiary">#FF9A9AA0</color>
+    <color name="text_on_accent">#FFFFFFFF</color>
+    <color name="text_muted">#FF8E8E93</color>
 
-    <!-- Тёмная тема: чистый чёрный, как в iOS -->
-    <color name="bg_dark">#000000</color>
-    <color name="surface_dark">#1C1C1E</color>
-    <color name="surface_grouped_dark">#1C1C1E</color>
-    <color name="text_primary_dark">#FFFFFF</color>
-    <color name="text_secondary_dark">#8E8E93</color>
-    <color name="bubble_out_dark">#0A84FF</color>
-    <color name="bubble_out_text_dark">#FFFFFF</color>
-    <color name="bubble_in_dark">#262628</color>
-    <color name="bubble_in_text_dark">#FFFFFF</color>
-    <color name="divider_dark">#38383A</color>
+    <!-- Семантика: акцент и состояния -->
+    <color name="brand">#FF0A84FF</color>
+    <color name="brand_pressed">#FF0060DF</color>
+    <color name="brand_soft">#FFE8F1FF</color>
+    <color name="danger">#FFFF3B30</color>
+    <color name="success">#FF34C759</color>
+    <color name="warning">#FFFF9F0A</color>
+    <color name="recording_red">#FFFF3B30</color>
+    <color name="lock_green">#FF34C759</color>
+    <color name="google_red">#FFEA4335</color>
 
-    <color name="text_muted">#8E8E93</color>
+    <!-- Пузыри сообщений -->
+    <color name="bubble_out">#FF0A84FF</color>
+    <color name="bubble_out_top">#FF3B9EFF</color>
+    <color name="bubble_out_bottom">#FF0A6BFF</color>
+    <color name="bubble_out_text">#FFFFFFFF</color>
+    <color name="bubble_in">#FFFFFFFF</color>
+    <color name="bubble_in_top">#FFFFFFFF</color>
+    <color name="bubble_in_bottom">#FFFFFFFF</color>
+    <color name="bubble_in_text">#FF000000</color>
+    <color name="bubble_meta_out">#CCFFFFFF</color>
+    <color name="bubble_meta_in">#FF8E8E93</color>
 
-    <!-- Liquid Glass 2026: полупрозрачные слои и мягкие границы -->
-    <color name="glass_dark">#E6101013</color>
-    <color name="glass_dark_strong">#F2141418</color>
-    <color name="glass_light">#E6FFFFFF</color>
-    <color name="glass_border_dark">#1FFFFFFF</color>
+    <!-- Стеклянные/полупрозрачные слои (навигационный слой) -->
+    <color name="glass">#F2FFFFFF</color>
+    <color name="glass_strong">#FFFFFFFF</color>
+    <color name="glass_border">#14000000</color>
+
+    <!-- Обои чата -->
+    <color name="wallpaper_core">#FFF2F2F7</color>
+    <color name="wallpaper_glow">#FFDCE9FF</color>
+    <color name="wallpaper_glow2">#FFEAF0FF</color>
+    <color name="wallpaper_indigo">#FFE6ECFF</color>
+    <color name="splash_bg">#FF000000</color>
+
+    <!-- Легаси-имена (используются кодом и старой разметкой) -->
+    <color name="accent">#FF0A84FF</color>
+    <color name="accent_dark">#FF0A84FF</color>
+    <color name="accent_light">#FFE8F1FF</color>
+    <color name="accent_pressed">#FF0060DF</color>
+    <color name="bg_light">#FFF2F2F7</color>
+    <color name="bg_dark">#FF000000</color>
+    <color name="surface_light">#FFFFFFFF</color>
+    <color name="surface_dark">#FF1C1C1E</color>
+    <color name="surface_grouped_light">#FFFFFFFF</color>
+    <color name="surface_grouped_dark">#FF1C1C1E</color>
+    <color name="text_primary_light">#FF000000</color>
+    <color name="text_primary_dark">#FFFFFFFF</color>
+    <color name="text_secondary_light">#FF6E6E73</color>
+    <color name="text_secondary_dark">#FFB8B8BE</color>
+    <color name="divider_light">#FFD7D7DC</color>
+    <color name="divider_dark">#FF2C2C2E</color>
+    <color name="bubble_out_light">#FF0A84FF</color>
+    <color name="bubble_out_dark">#FF0A84FF</color>
+    <color name="bubble_out_dark_alt">#FF0A6BFF</color>
+    <color name="bubble_out_text_light">#FFFFFFFF</color>
+    <color name="bubble_out_text_dark">#FFFFFFFF</color>
+    <color name="bubble_in_light">#FFFFFFFF</color>
+    <color name="bubble_in_dark">#FF1C1C1E</color>
+    <color name="bubble_in_text_light">#FF000000</color>
+    <color name="bubble_in_text_dark">#FFFFFFFF</color>
+    <color name="bubble_out_top_light">#FF3B9EFF</color>
+    <color name="bubble_out_top_dark">#FF3B9EFF</color>
+    <color name="bubble_out_bottom_light">#FF0A6BFF</color>
+    <color name="bubble_out_bottom_dark">#FF0A6BFF</color>
+    <color name="bubble_in_top_light">#FFFFFFFF</color>
+    <color name="bubble_in_top_dark">#FF232326</color>
+    <color name="bubble_in_bottom_light">#FFFFFFFF</color>
+    <color name="bubble_in_bottom_dark">#FF1C1C1E</color>
+    <color name="reaction_bg_light">#FFE9E9EE</color>
+    <color name="reaction_bg_dark">#FF2C2C2E</color>
+    <color name="glass_light">#F2FFFFFF</color>
+    <color name="glass_dark">#F21C1C1E</color>
+    <color name="glass_dark_strong">#FF2C2C2E</color>
     <color name="glass_border_light">#14000000</color>
-    <color name="glass_highlight">#26FFFFFF</color>
-
-    <!-- фон чата: чистый чёрный с едва заметным свечением -->
+    <color name="glass_border_dark">#1FFFFFFF</color>
+    <color name="glass_highlight">#33FFFFFF</color>
+    <color name="wallpaper_core_light">#FFF2F2F7</color>
     <color name="wallpaper_core_dark">#FF000000</color>
-    <color name="wallpaper_glow_dark">#1A0A84FF</color>
-    <color name="wallpaper_glow2_dark">#12AF52DE</color>
-    <color name="wallpaper_core_light">#FFF6F7FB</color>
-    <color name="wallpaper_glow_light">#120A84FF</color>
-    <color name="wallpaper_glow2_light">#10AF52DE</color>
+    <color name="wallpaper_glow_light">#FFDCE9FF</color>
+    <color name="wallpaper_glow_dark">#FF16233B</color>
+    <color name="wallpaper_glow2_light">#FFEAF0FF</color>
+    <color name="wallpaper_glow2_dark">#FF12161F</color>
+    <color name="wallpaper_indigo_light">#FFE6ECFF</color>
+    <color name="wallpaper_indigo_dark">#FF1A2340</color>
+    <color name="google_blue">#FF4285F4</color>
+    <color name="google_green">#FF34A853</color>
+    <color name="google_yellow">#FFFBBC05</color>
 
-    <!-- градиент исходящих: синий iOS с мягким переходом -->
-    <color name="bubble_out_top_light">#3B9CFF</color>
-    <color name="bubble_out_bottom_light">#0A6BFF</color>
-    <color name="bubble_out_top_dark">#2E8BFF</color>
-    <color name="bubble_out_bottom_dark">#0A5CF0</color>
-    <color name="bubble_in_top_dark">#232326</color>
-    <color name="bubble_in_bottom_dark">#1A1A1D</color>
-    <color name="bubble_in_top_light">#FFFFFF</color>
-    <color name="bubble_in_bottom_light">#F4F4F7</color>
-
-    <color name="reaction_bg_dark">#333338</color>
-    <color name="reaction_bg_light">#E9E9F0</color>
-    <color name="recording_red">#FF453A</color>
-    <color name="bubble_out_dark_alt">#0B84FF</color>
-
-    <color name="google_blue">#4285F4</color>
-    <color name="google_green">#34A853</color>
-    <color name="google_yellow">#FBBC05</color>
-    <color name="google_red">#EA4335</color>
-
-    <color name="avatar_1">#FF3B30</color>
-    <color name="avatar_2">#34C759</color>
-    <color name="avatar_3">#0A84FF</color>
-    <color name="avatar_4">#AF52DE</color>
-    <color name="avatar_5">#FF2D55</color>
-    <color name="avatar_6">#FF9500</color>
-    <color name="avatar_7">#5AC8FA</color>
-    <color name="splash_bg">#000000</color>
-    <color name="wallpaper_indigo_light">#332F6BFF</color>
-    <color name="wallpaper_indigo_dark">#4D1E3A8A</color>
+    <!-- Аватары -->
+    <color name="avatar_1">#FF0A84FF</color>
+    <color name="avatar_2">#FF34C759</color>
+    <color name="avatar_3">#FFFF9F0A</color>
+    <color name="avatar_4">#FFFF375F</color>
+    <color name="avatar_5">#FFBF5AF2</color>
+    <color name="avatar_6">#FF5E5CE6</color>
+    <color name="avatar_7">#FF64D2FF</color>
+    <!-- дополнительные оттенки навигационного слоя -->
+    <color name="nav_bar">#F2FFFFFF</color>
+    <color name="hairline">#26000000</color>
+    <color name="ripple">#14000000</color>
+    <color name="ripple_strong">#1F000000</color>
+    <color name="voice_play_bg">#E8E8ED</color>
+    <color name="google_btn">#FFFFFFFF</color>
+    <color name="google_btn_text">#FF1C1C1E</color>
 </resources>

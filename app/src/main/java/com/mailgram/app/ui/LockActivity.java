@@ -36,6 +36,7 @@ public class LockActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_lock);
         Ui.applyWallpaper(this, R.id.lock_root);
+        Ui.applySystemBars(this, null, findViewById(R.id.lock_root));
         dots = findViewById(R.id.lock_dots);
         title = findViewById(R.id.lock_title);
         com.mailgram.app.ui.AvatarView avatar = findViewById(R.id.lock_avatar);
@@ -68,7 +69,7 @@ public class LockActivity extends AppCompatActivity {
         view.setText(label);
         view.setTextSize(26f);
         view.setGravity(Gravity.CENTER);
-        view.setTextColor(getResources().getColor(R.color.text_primary_dark));
+        view.setTextColor(getResources().getColor(R.color.text_primary));
         view.setBackgroundResource(R.drawable.bg_keypad_key);
         GridLayout.LayoutParams params = new GridLayout.LayoutParams();
         params.width = size;
