@@ -1,0 +1,59 @@
+===== ЭКСП 1: v1.java один (bootclasspath, без sourcepath) =====
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/v1.java:4: error: cannot find symbol
+public final class v1 implements u1 {
+                                 ^
+  symbol: class u1
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/v1.java:17: error: method does not override or implement a method from a supertype
+    @Override // a0.u1
+    ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/v1.java:22: error: method does not override or implement a method from a supertype
+    @Override // a0.u1
+    ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/v1.java:28: error: cannot find symbol
+        if (!(obj instanceof u1)) {
+                             ^
+  symbol:   class u1
+  location: class v1
+===== ЭКСП 2: v1.java + u1.java =====
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/v1.java:32: error: package k71 does not exist
+        return k71.k.b(this.f278a, u1Var.a()) && k71.k.b(this.f279b, u1Var.c());
+                  ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/v1.java:32: error: package k71 does not exist
+        return k71.k.b(this.f278a, u1Var.a()) && k71.k.b(this.f279b, u1Var.c());
+                                                    ^
+2 errors
+===== ЭКСП 3: v1 + u1 + k71-стаб =====
+/tmp/l3src_k.java:2: error: class k is public, should be declared in a file named k.java
+public class k {
+       ^
+1 error
+===== ЭКСП 4: весь пакет a0 (44 файла) =====
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:7: error: package androidx.compose.runtime does not exist
+import androidx.compose.runtime.j3;
+                               ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:8: error: package com.github.domain.discussions.data does not exist
+import com.github.domain.discussions.data.DiscussionCategoryData$;
+                                         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:9: error: package com.github.domain.searchandfilter.filters.data does not exist
+import com.github.domain.searchandfilter.filters.data.AgentTasksSortFilter;
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:10: error: package com.github.domain.searchandfilter.filters.data does not exist
+import com.github.domain.searchandfilter.filters.data.AgentTasksStateFilter;
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:11: error: package com.github.domain.searchandfilter.filters.data does not exist
+import com.github.domain.searchandfilter.filters.data.AssigneeFilter;
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:12: error: package com.github.domain.searchandfilter.filters.data does not exist
+import com.github.domain.searchandfilter.filters.data.AuthorFilter;
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:13: error: package com.github.domain.searchandfilter.filters.data does not exist
+import com.github.domain.searchandfilter.filters.data.CustomFilter;
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:14: error: package com.github.domain.searchandfilter.filters.data does not exist
+import com.github.domain.searchandfilter.filters.data.CustomInstructionsFilter;
+                                                     ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/a0/c2.java:15: error: package com.github.domain.searchandfilter.filters.data does not exist
+0
+===== ЭКСП 5: весь пакет i80 =====
+171
+0
