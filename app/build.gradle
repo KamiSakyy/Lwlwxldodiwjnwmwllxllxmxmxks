@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+}
+
+// OAuth client ID не хранится в коде: он приходит из GitHub Secret,
+// из -Pmailgram.oauthClientId=... или вводится в самом приложении.
+def oauthClientId = (project.findProperty('mailgram.oauthClientId')
+        ?: System.getenv('MAILGRAM_OAUTH_CLIENT_ID') ?: '').toString().trim()
+def googleSuffix = '.apps.googleusercontent.com'
+def redirectScheme = oauthClientId.isEmpty()
+        ? 'com.mailgram.app'
+        : 'com.googleusercontent.apps.' + (oauthClientId.endsWith(googleSuffix)
+            ? oauthClientId.substring(0, oauthClientId.length() - googleSuffix.length())
+            : oauthClientId)
+
+// Подпись: свои значения можно передать через секреты/параметры сборки.
+def storeFilePath = (project.findProperty('mailgram.storeFile')
+        ?: System.getenv('MAILGRAM_STORE_FILE') ?: 'keystore/mailgram-dev.p12').toString()
+def storePasswordValue = (project.findProperty('mailgram.storePassword')
+        ?: System.getenv('MAILGRAM_STORE_PASSWORD') ?: 'mailgram').toString()
+def keyAliasValue = (project.findProperty('mailgram.keyAlias')
+        ?: System.getenv('MAILGRAM_KEY_ALIAS') ?: 'mailgram').toString()
+
+android {
+    namespace 'com.mailgram.app'
+    compileSdk 37
+    ndkVersion '28.2.13676358'
+
+    defaultConfig {
+        applicationId 'com.mailgram.app'
+        minSdk 26
+        targetSdk 37
+        versionCode 1
+        versionName '1.0.0'
+
+        manifestPlaceholders.put('appAuthRedirectScheme', redirectScheme)
+        buildConfigField 'String', 'OAUTH_CLIENT_ID', '"' + oauthClientId + '"'
+        buildConfigField 'String', 'OAUTH_REDIRECT_SCHEME', '"' + redirectScheme + '"'
+
+        externalNativeBuild {
+            cmake {
+                // статический C++ — без лишней libc++_shared.so в APK
+                arguments '-DANDROID_STL=c++_static'
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile rootProject.file(storeFilePath)
+            storePassword storePasswordValue
+            keyAlias keyAliasValue
+            keyPassword storePasswordValue
+            storeType 'PKCS12'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        resources {
+            excludes += ['/META-INF/{AL2.0,LGPL2.1}', 'META-INF/*.version', 'kotlin/**', 'DebugProbesKt.bin']
+        }
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.8.0'
+    implementation 'com.google.android.material:material:1.14.0'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.browser:browser:1.10.0'
+}

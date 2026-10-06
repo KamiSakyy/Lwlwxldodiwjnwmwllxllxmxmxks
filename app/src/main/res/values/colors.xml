@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#3390EC</color>
+    <color name="accent_dark">#58AAF6</color>
+    <color name="accent_pressed">#2A7AC4</color>
+    <color name="lock_green">#31C48D</color>
+
+    <color name="bg_light">#F2F5F9</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="text_primary_light">#0F1621</color>
+    <color name="text_secondary_light">#6B7A8C</color>
+    <color name="bubble_out_light">#D6EBFF</color>
+    <color name="bubble_in_light">#FFFFFF</color>
+    <color name="divider_light">#E3E8EF</color>
+
+    <color name="bg_dark">#0E1621</color>
+    <color name="surface_dark">#17212B</color>
+    <color name="text_primary_dark">#E9F1FF</color>
+    <color name="text_secondary_dark">#8FA3B5</color>
+    <color name="bubble_out_dark">#2B5278</color>
+    <color name="bubble_in_dark">#192B3C</color>
+    <color name="divider_dark">#223041</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="google_red">#EA4335</color>
+
+    <color name="avatar_1">#E17076</color>
+    <color name="avatar_2">#7BC862</color>
+    <color name="avatar_3">#65AADD</color>
+    <color name="avatar_4">#A695E7</color>
+    <color name="avatar_5">#EE7AAE</color>
+    <color name="avatar_6">#FAA774</color>
+    <color name="avatar_7">#6EC9CB</color>
+</resources>
