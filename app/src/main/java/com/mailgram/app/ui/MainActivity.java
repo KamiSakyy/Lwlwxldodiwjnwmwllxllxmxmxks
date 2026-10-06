@@ -200,19 +200,25 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         startActivity(new Intent(this, SettingsActivity.class));
     }
 
-    /** Быстрая смена аккаунта: одно нажатие — чистим всё и сразу на экран входа. */
+    /** Смена аккаунта: обязательно с подтверждением — иначе случайное нажатие стирает сессию. */
     private void logoutDialog() {
-        toggleDrawer(false);
-        SyncService.stop(this);
-        com.mailgram.app.sync.Alarms.cancel(this);
-        Store store = Store.get(this);
-        for (Chat chat : store.chats()) store.removeChat(chat.uid);
-        Auth.signOut(this, true);
-        com.mailgram.app.crypto.Identity.destroy(this);
-        com.mailgram.app.crypto.RatchetStore.wipeAll(this);
-        startActivity(new Intent(this, LoginActivity.class)
-                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
-        finish();
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.logout_title)
+                .setMessage(R.string.logout_text)
+                .setNegativeButton(R.string.cancel, null)
+                .setPositiveButton(R.string.logout, (d, w) -> {
+                    SyncService.stop(this);
+                    com.mailgram.app.sync.Alarms.cancel(this);
+                    Store store = Store.get(this);
+                    for (Chat chat : store.chats()) store.removeChat(chat.uid);
+                    Auth.signOut(this, true);
+                    com.mailgram.app.crypto.Identity.destroy(this);
+                    com.mailgram.app.crypto.RatchetStore.wipeAll(this);
+                    startActivity(new Intent(this, LoginActivity.class)
+                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                    finish();
+                })
+                .show();
     }
 
     /** Нижняя навигация — .bottom-nav: «Чаты», «Профиль», «Выход». */
