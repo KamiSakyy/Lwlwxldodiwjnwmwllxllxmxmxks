@@ -26,9 +26,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bg_bubble_in"
         android:orientation="vertical"
-        android:paddingStart="12dp"
+        android:paddingStart="13dp"
         android:paddingTop="8dp"
-        android:paddingEnd="12dp"
+        android:paddingEnd="13dp"
         android:paddingBottom="6dp">
 
         <!-- цитата, если это ответ -->
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:background="@drawable/bg_quote"
+            android:background="@drawable/bg_quote_glass"
             android:orientation="horizontal"
             android:paddingStart="8dp"
             android:paddingTop="5dp"
@@ -80,9 +80,9 @@
         <!-- медиа: фото, видео, кружок, голосовое или файл -->
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/msg_image"
-            android:layout_width="240dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="5dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/image"
             android:scaleType="fitCenter"
@@ -239,7 +239,8 @@
             android:textAppearance="?attr/textAppearanceBodyLarge"
             android:textColor="?attr/colorOnSurface"
             android:textIsSelectable="true"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp" />
 
         <LinearLayout
             android:id="@+id/msg_reactions"

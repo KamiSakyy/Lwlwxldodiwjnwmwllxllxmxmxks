@@ -19,7 +19,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -84,8 +83,9 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         });
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
-        list.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
+        setUpFilters();
+        Anim.pressFeedback(findViewById(R.id.fab_new_chat));
         Ui.liftAboveBars(findViewById(R.id.fab_new_chat));
         findViewById(R.id.fab_new_chat).setOnClickListener(v -> newChatDialog());
         findViewById(R.id.empty_action).setOnClickListener(v -> newChatDialog());
@@ -188,64 +188,53 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void openChat(Chat chat) {
-        startActivity(new Intent(this, ChatActivity.class)
-                .putExtra(ChatActivity.EXTRA_CHAT_UID, chat.uid));
+        Intent intent = new Intent(this, ChatActivity.class)
+                .putExtra(ChatActivity.EXTRA_CHAT_UID, chat.uid);
+        String name = "avatar_" + chat.uid;
+        View avatarView = list.findViewWithTag(name);
+        if (avatarView != null && android.os.Build.VERSION.SDK_INT >= 21) {
+            intent.putExtra(ChatActivity.EXTRA_SHARED_AVATAR, name);
+            android.app.ActivityOptions options =
+                    android.app.ActivityOptions.makeSceneTransitionAnimation(this, avatarView, name);
+            startActivity(intent, options.toBundle());
+            return;
+        }
+        startActivity(intent);
     }
 
-    private void showChatMenu(final Chat chat) {
-        PopupMenu popup = new PopupMenu(this, list);
-        popup.getMenu().add(0, 1, 0, chat.pinned ? R.string.unpin_chat : R.string.pin_chat);
-        popup.getMenu().add(0, 2, 1, chat.muted ? R.string.unmute_chat : R.string.mute_chat);
-        popup.getMenu().add(0, 3, 2, R.string.chat_menu_rename);
-        popup.getMenu().add(0, 4, 3, R.string.chat_info);
-        popup.getMenu().add(0, 5, 4, R.string.chat_menu_clear);
-        popup.getMenu().add(0, 6, 5, R.string.chat_menu_delete);
-        popup.setOnMenuItemClickListener(item -> {
-            switch (item.getItemId()) {
-                case 1:
-                    Store.get(this).setPinned(chat.uid, !chat.pinned);
-                    refresh();
-                    return true;
-                case 2:
-                    Store.get(this).setMuted(chat.uid, !chat.muted);
-                    refresh();
-                    return true;
-                case 3:
-                    renameChat(chat);
-                    return true;
-                case 4:
-                    showChatInfo(chat);
-                    return true;
-                case 5:
-                    confirmClear(chat);
-                    return true;
-                case 6:
-                    confirmDelete(chat);
-                    return true;
-                default:
-                    return false;
-            }
+    /** Стеклянные фильтры списка: все, непрочитанные, закреплённые (как нижняя панель Telegram 12.4). */
+    private void setUpFilters() {
+        bindFilter(R.id.filter_all, ChatListAdapter.FILTER_ALL);
+        bindFilter(R.id.filter_unread, ChatListAdapter.FILTER_UNREAD);
+        bindFilter(R.id.filter_pinned, ChatListAdapter.FILTER_PINNED);
+        applyFilter(ChatListAdapter.FILTER_ALL);
+    }
+
+    private void bindFilter(int viewId, final String filter) {
+        android.widget.TextView view = findViewById(viewId);
+        Anim.pressFeedback(view);
+        view.setOnClickListener(v -> {
+            Anim.haptic(v, false);
+            applyFilter(filter);
         });
-        popup.show();
     }
 
-    /** Карточка чата: участник, ключ, количество медиа и кнопка «проверен». */
-    private void showChatInfo(final Chat chat) {
-        int[] counts = Store.get(this).mediaCounts(chat.uid);
-        String body = chat.peer + "\n"
-                + getString(R.string.media_count, counts[0], counts[1], counts[2]) + "\n"
-                + (chat.peerPublic == null || chat.peerPublic.isEmpty()
-                ? getString(R.string.encryption_waiting) : getString(R.string.encryption_on));
-        new MaterialAlertDialogBuilder(this)
-                .setTitle(R.string.chat_info)
-                .setMessage(body)
-                .setNeutralButton(chat.verified ? R.string.chat_menu_safety : R.string.verify_chat,
-                        (d, w) -> {
-                            Store.get(this).setVerified(chat.uid, !chat.verified);
-                            refresh();
-                        })
-                .setPositiveButton(R.string.done, null)
-                .show();
+    private void applyFilter(String filter) {
+        adapter.setQuickFilter(filter);
+        int[] ids = {R.id.filter_all, R.id.filter_unread, R.id.filter_pinned};
+        String[] filters = {ChatListAdapter.FILTER_ALL, ChatListAdapter.FILTER_UNREAD,
+                ChatListAdapter.FILTER_PINNED};
+        for (int i = 0; i < ids.length; i++) {
+            android.widget.TextView view = findViewById(ids[i]);
+            boolean active = filters[i].equals(filter);
+            view.setBackgroundResource(active ? R.drawable.bg_pill_accent : R.drawable.bg_glass_pill);
+            view.setTextColor(active ? 0xFFFFFFFF
+                    : getResources().getColor(R.color.text_muted));
+            view.setTypeface(null, active ? android.graphics.Typeface.BOLD
+                    : android.graphics.Typeface.NORMAL);
+            if (active) Anim.pop(view);
+        }
+        updateEmpty();
     }
 
     private void renameChat(final Chat chat) {

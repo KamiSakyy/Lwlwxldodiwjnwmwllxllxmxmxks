@@ -27,7 +27,6 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.mailgram.app.R;
@@ -53,6 +52,8 @@ import java.util.List;
 public class ChatActivity extends AppCompatActivity implements SyncEngine.Listener {
 
     public static final String EXTRA_CHAT_UID = "chat_uid";
+    /** Имя общего элемента (аватар) для плавного перехода из списка чатов. */
+    public static final String EXTRA_SHARED_AVATAR = "shared_avatar";
 
     private static final int REQ_PICK_PHOTO = 3001;
     private static final int REQ_PICK_VIDEO = 3002;
@@ -75,7 +76,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private String uid;
     private Chat chat;
-    private MaterialToolbar toolbar;
+    private View header;
+    private AvatarView avatar;
+    private TextView titleView;
+    private TextView subtitleView;
     private RecyclerView list;
     private MessageAdapter adapter;
     private EditText input;
@@ -124,9 +128,12 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             return;
         }
         setContentView(R.layout.activity_chat);
-        Ui.applySystemBars(this, findViewById(R.id.chat_toolbar), findViewById(R.id.input_bar));
+        Ui.applySystemBars(this, findViewById(R.id.chat_header), findViewById(R.id.input_bar));
 
-        toolbar = findViewById(R.id.chat_toolbar);
+        header = findViewById(R.id.chat_header);
+        avatar = findViewById(R.id.chat_avatar);
+        titleView = findViewById(R.id.chat_title);
+        subtitleView = findViewById(R.id.chat_subtitle);
         list = findViewById(R.id.recycler_messages);
         input = findViewById(R.id.input_edit);
         searchEdit = findViewById(R.id.chat_search_edit);
@@ -148,8 +155,21 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         pinnedText = findViewById(R.id.chat_pinned_text);
         scrollDown = findViewById(R.id.btn_scroll_down);
 
-        toolbar.setNavigationOnClickListener(v -> finish());
-        toolbar.setOnMenuItemClickListener(this::onMenu);
+        String sharedAvatar = getIntent().getStringExtra(EXTRA_SHARED_AVATAR);
+        if (sharedAvatar != null && !sharedAvatar.isEmpty()) {
+            avatar.setTransitionName(sharedAvatar);
+            androidx.core.view.ViewCompat.setTransitionName(avatar, sharedAvatar);
+        }
+        findViewById(R.id.chat_back).setOnClickListener(v -> finishAfterTransition());
+        findViewById(R.id.chat_menu_btn).setOnClickListener(v -> {
+            androidx.appcompat.widget.PopupMenu popup =
+                    new androidx.appcompat.widget.PopupMenu(this, findViewById(R.id.chat_menu_btn));
+            popup.getMenuInflater().inflate(R.menu.menu_chat, popup.getMenu());
+            popup.setOnMenuItemClickListener(this::onMenu);
+            popup.show();
+        });
+        findViewById(R.id.chat_search_btn).setOnClickListener(v -> toggleSearch());
+        Anim.pressFeedback(avatar);
 
         adapter = new MessageAdapter(new MessageAdapter.Actions() {
             @Override
@@ -191,12 +211,27 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             @Override
             public void onScrolled(RecyclerView view, int dx, int dy) {
                 updateScrollButton();
+                if (!Anim.enabled(ChatActivity.this)) return;
+                if (dy > 6 && list.canScrollVertically(-1)) {
+                    hideHeader(true);
+                } else if (dy < -6) {
+                    hideHeader(false);
+                }
             }
         });
 
-        sendButton.setOnClickListener(v -> sendMessage());
-        findViewById(R.id.btn_emoji).setOnClickListener(v -> toggleEmoji());
-        findViewById(R.id.btn_attach).setOnClickListener(v -> showAttachSheet());
+        sendButton.setOnClickListener(v -> {
+            Anim.haptic(v, false);
+            sendMessage();
+        });
+        final View emojiButton = findViewById(R.id.btn_emoji);
+        emojiButton.setOnClickListener(v -> toggleEmoji());
+        final View attachButton = findViewById(R.id.btn_attach);
+        attachButton.setOnClickListener(v -> showAttachSheet());
+        Anim.pressFeedback(attachButton);
+        Anim.pressFeedback(emojiButton);
+        Anim.pressFeedback(sendButton);
+        Anim.pressFeedback(micButton);
         findViewById(R.id.chat_reply_close).setOnClickListener(v -> setReplyTarget(null));
         findViewById(R.id.chat_search_close).setOnClickListener(v -> closeSearch());
         scrollDown.setOnClickListener(v -> scrollToBottom());
@@ -389,17 +424,16 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         String title = chat.name != null && !chat.name.isEmpty()
                 ? chat.name : Store.displayName(this, chat.peer);
-        toolbar.setTitle(title);
+        titleView.setText(title);
+        avatar.setName(title);
         boolean hasKey = chat.peerPublic != null && !chat.peerPublic.isEmpty();
-        toolbar.setSubtitle(hasKey ? chat.peer + " · 🔒" : chat.peer);
+        boolean ratchet = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
+        subtitleView.setText(!hasKey
+                ? getString(R.string.peer_no_key_short)
+                : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
 
         banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
         bannerText.setText(R.string.peer_no_key);
-
-        toolbar.getMenu().findItem(R.id.action_pin).setTitle(
-                chat.pinned ? R.string.unpin_chat : R.string.pin_chat);
-        toolbar.getMenu().findItem(R.id.action_mute).setTitle(
-                chat.muted ? R.string.unmute_chat : R.string.mute_chat);
 
         List<Msg> messages = Store.get(this).messages(uid);
         Msg pinned = null;
@@ -428,6 +462,14 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     @Override
     public void onSyncDone(SyncEngine.Result result) {
         handler.post(this::refresh);
+    }
+
+    /** Шапка уезжает вверх при листании вниз и возвращается при листании вверх — как в Telegram. */
+    private void hideHeader(boolean hide) {
+        float target = hide ? -header.getHeight() : 0f;
+        if (Math.abs(header.getTranslationY() - target) < 2f) return;
+        header.animate().translationY(target)
+                .setInterpolator(Anim.EMPHASIZED).setDuration(220L).start();
     }
 
     private void scrollToBottom() {
@@ -477,10 +519,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     private void setReplyTarget(Msg msg) {
         replyTo = msg;
         if (msg == null) {
-            replyBar.setVisibility(View.GONE);
+            Anim.slidePanel(replyBar, false);
             return;
         }
-        replyBar.setVisibility(View.VISIBLE);
+        Anim.slidePanel(replyBar, true);
         replyName.setText(msg.outgoing ? getString(R.string.reply_short) : Store.displayName(this, msg.peer));
         replyText.setText(msg.previewText());
     }
@@ -805,7 +847,9 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             Ui.toast(this, getString(R.string.error_generic, "микрофон занят"));
             return;
         }
-        voiceBar.setVisibility(View.VISIBLE);
+        Anim.slidePanel(voiceBar, true);
+        Anim.pulse(findViewById(R.id.voice_dot), 900L);
+        Anim.haptic(micButton, true);
         voiceHint.setText(R.string.voice_slide_cancel);
         liveWave.setAmplitudes(new int[0]);
         recordTicker = new Runnable() {
@@ -828,7 +872,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private void finishRecordingTouch(boolean cancelled) {
         if (recordTicker != null) handler.removeCallbacks(recordTicker);
-        voiceBar.setVisibility(View.GONE);
+        Anim.slidePanel(voiceBar, false);
         VoiceRecorder current = recorder;
         recorder = null;
         if (current == null) return;
@@ -1062,7 +1106,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private void toggleEmoji() {
         boolean visible = emojiPanel.getVisibility() == View.VISIBLE;
-        emojiPanel.setVisibility(visible ? View.GONE : View.VISIBLE);
+        Anim.slidePanel(emojiPanel, !visible);
+        if (!visible) Anim.haptic(emojiPanel, false);
     }
 
     private void showSafety() {

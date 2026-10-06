@@ -3,4 +3,15 @@
     <attr name="colorBubbleOut" format="color"/>
     <attr name="colorBubbleIn" format="color"/>
     <attr name="colorChatBackground" format="color"/>
+    <attr name="colorGlass" format="color"/>
+    <attr name="colorGlassStrong" format="color"/>
+    <attr name="colorGlassBorder" format="color"/>
+    <attr name="colorWallpaperCore" format="color"/>
+    <attr name="colorWallpaperGlow" format="color"/>
+    <attr name="colorWallpaperGlow2" format="color"/>
+    <attr name="colorBubbleOutTop" format="color"/>
+    <attr name="colorBubbleOutBottom" format="color"/>
+    <attr name="colorBubbleInTop" format="color"/>
+    <attr name="colorBubbleInBottom" format="color"/>
+    <attr name="colorReactionBg" format="color"/>
 </resources>

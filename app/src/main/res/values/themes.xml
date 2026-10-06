@@ -24,6 +24,21 @@
         <item name="android:textColorPrimary">@color/text_primary_light</item>
         <item name="android:textColorSecondary">@color/text_secondary_light</item>
         <item name="android:windowAnimationStyle">@style/Animation.MailGram</item>
+        <item name="colorGlass">@color/glass_light</item>
+        <item name="colorGlassStrong">@color/glass_light</item>
+        <item name="colorGlassBorder">@color/glass_border_light</item>
+        <item name="colorWallpaperCore">@color/wallpaper_core_light</item>
+        <item name="colorWallpaperGlow">@color/wallpaper_glow_light</item>
+        <item name="colorWallpaperGlow2">@color/wallpaper_glow2_light</item>
+        <item name="colorBubbleOutTop">@color/bubble_out_top_light</item>
+        <item name="colorBubbleOutBottom">@color/bubble_out_bottom_light</item>
+        <item name="colorBubbleInTop">@color/bubble_in_top_light</item>
+        <item name="colorBubbleInBottom">@color/bubble_in_bottom_light</item>
+        <item name="colorReactionBg">@color/reaction_bg_light</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/shared_enter</item>
+        <item name="android:windowSharedElementExitTransition">@transition/shared_exit</item>
     </style>
 
     <style name="Animation.MailGram" parent="@android:style/Animation.Activity">
@@ -59,7 +74,7 @@
 
     <style name="ShapeAppearance.MailGram.Media" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">14dp</item>
+        <item name="cornerSize">18dp</item>
     </style>
 
     <style name="ShapeAppearance.MailGram.Circle" parent="">
@@ -84,6 +99,41 @@
         <item name="android:orientation">vertical</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Widget.MailGram.GlassIcon" parent="">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="Widget.MailGram.Pill" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/bg_glass_pill</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Widget.MailGram.PillActive" parent="Widget.MailGram.Pill">
+        <item name="android:background">@drawable/bg_pill_accent</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ChatTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ChatSubtitle" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="Theme.MailGram.Transparent" parent="Theme.MailGram">

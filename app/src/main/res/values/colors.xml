@@ -32,6 +32,36 @@
     <color name="divider_dark">#38383A</color>
 
     <color name="text_muted">#8E8E93</color>
+
+    <!-- Liquid Glass 2026: полупрозрачные слои и мягкие границы -->
+    <color name="glass_dark">#E6101013</color>
+    <color name="glass_dark_strong">#F2141418</color>
+    <color name="glass_light">#E6FFFFFF</color>
+    <color name="glass_border_dark">#1FFFFFFF</color>
+    <color name="glass_border_light">#14000000</color>
+    <color name="glass_highlight">#26FFFFFF</color>
+
+    <!-- фон чата: чистый чёрный с едва заметным свечением -->
+    <color name="wallpaper_core_dark">#FF000000</color>
+    <color name="wallpaper_glow_dark">#1A0A84FF</color>
+    <color name="wallpaper_glow2_dark">#12AF52DE</color>
+    <color name="wallpaper_core_light">#FFF6F7FB</color>
+    <color name="wallpaper_glow_light">#120A84FF</color>
+    <color name="wallpaper_glow2_light">#10AF52DE</color>
+
+    <!-- градиент исходящих: синий iOS с мягким переходом -->
+    <color name="bubble_out_top_light">#3B9CFF</color>
+    <color name="bubble_out_bottom_light">#0A6BFF</color>
+    <color name="bubble_out_top_dark">#2E8BFF</color>
+    <color name="bubble_out_bottom_dark">#0A5CF0</color>
+    <color name="bubble_in_top_dark">#232326</color>
+    <color name="bubble_in_bottom_dark">#1A1A1D</color>
+    <color name="bubble_in_top_light">#FFFFFF</color>
+    <color name="bubble_in_bottom_light">#F4F4F7</color>
+
+    <color name="reaction_bg_dark">#333338</color>
+    <color name="reaction_bg_light">#E9E9F0</color>
+    <color name="recording_red">#FF453A</color>
     <color name="bubble_out_dark_alt">#0B84FF</color>
 
     <color name="google_blue">#4285F4</color>

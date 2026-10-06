@@ -208,4 +208,13 @@
     <string name="font_normal">Обычный</string>
     <string name="font_large">Крупный</string>
     <string name="font_huge">Очень крупный</string>
+    <string name="back">Назад</string>
+    <string name="more">Ещё</string>
+    <string name="chats_title">Чаты</string>
+    <string name="filter_all">Все</string>
+    <string name="filter_unread">Непрочитанные</string>
+    <string name="filter_pinned">Закреплённые</string>
+    <string name="peer_no_key_short">Ключ собеседника ещё не получен</string>
+    <string name="ratchet_on">🔒 Double Ratchet</string>
+    <string name="ratchet_wait">Сессия с крысиным шагом поднимется после первого письма собеседника</string>
 </resources>

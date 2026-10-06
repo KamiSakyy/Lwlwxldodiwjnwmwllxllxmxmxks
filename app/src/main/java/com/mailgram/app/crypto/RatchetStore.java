@@ -141,7 +141,7 @@ public final class RatchetStore {
             if (!f.exists()) return null;
             String sealed = read(f);
             if (sealed == null) return null;
-            JSONObject o = new JSONObject(KeystoreBox.open(ctx, sealed));
+            JSONObject o = new JSONObject(new String(KeystoreBox.open(ctx, sealed), StandardCharsets.UTF_8));
             Ratchet r = Ratchet.fromJson(o);
             CACHE.put(chatUid, r);
             return r;

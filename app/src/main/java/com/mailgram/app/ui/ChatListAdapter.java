@@ -27,8 +27,13 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
 
     private final List<Chat> items = new ArrayList<>();
     private final List<Chat> all = new ArrayList<>();
+    public static final String FILTER_ALL = "all";
+    public static final String FILTER_UNREAD = "unread";
+    public static final String FILTER_PINNED = "pinned";
+
     private final Actions actions;
     private String filter = "";
+    private String quickFilter = FILTER_ALL;
     private final java.util.Set<String> animated = new java.util.HashSet<>();
 
     public ChatListAdapter(Actions actions) {
@@ -46,9 +51,17 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         applyFilter();
     }
 
+    /** Нижние стеклянные фильтры: все / непрочитанные / закреплённые. */
+    public void setQuickFilter(String value) {
+        quickFilter = value == null ? FILTER_ALL : value;
+        applyFilter();
+    }
+
     private void applyFilter() {
         items.clear();
         for (Chat c : all) {
+            if (FILTER_UNREAD.equals(quickFilter) && c.unread <= 0) continue;
+            if (FILTER_PINNED.equals(quickFilter) && !c.pinned) continue;
             if (filter.isEmpty()) {
                 items.add(c);
                 continue;
@@ -78,7 +91,9 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
 
     @Override
     public void onBindViewHolder(@NonNull Holder h, int position) {
-        Chat chat = items.get(position);
+        final Chat chat = items.get(position);
+        h.avatar.setTag("avatar_" + chat.uid);
+        h.avatar.setTransitionName("avatar_" + chat.uid);
         String name = chat.name != null && !chat.name.isEmpty()
                 ? chat.name
                 : Store.displayName(h.itemView.getContext(), chat.peer);
@@ -114,12 +129,13 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
 
         if (!animated.contains(chat.uid)) {
             animated.add(chat.uid);
-            h.itemView.setAlpha(0f);
-            h.itemView.setTranslationY(Ui.dp(h.itemView.getContext(), 10));
-            h.itemView.animate().alpha(1f).translationY(0f).setDuration(170L).start();
+            Anim.staggeredIn(h.itemView, position);
         } else {
             h.itemView.setAlpha(1f);
             h.itemView.setTranslationY(0f);
+        }
+        if (chat.unread > 0) {
+            Anim.pop(h.badge);
         }
 
         h.itemView.setOnClickListener(v -> actions.onOpen(chat));

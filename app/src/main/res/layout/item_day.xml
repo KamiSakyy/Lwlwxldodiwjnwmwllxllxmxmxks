@@ -10,7 +10,7 @@
         android:id="@+id/day_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_day_separator"
+        android:background="@drawable/bg_day_chip"
         android:paddingStart="10dp"
         android:paddingTop="3dp"
         android:paddingEnd="10dp"

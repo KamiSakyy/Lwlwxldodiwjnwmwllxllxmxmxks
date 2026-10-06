@@ -24,6 +24,21 @@
         <item name="android:textColorPrimary">@color/text_primary_dark</item>
         <item name="android:textColorSecondary">@color/text_secondary_dark</item>
         <item name="android:windowAnimationStyle">@style/Animation.MailGram</item>
+        <item name="colorGlass">@color/glass_dark</item>
+        <item name="colorGlassStrong">@color/glass_dark_strong</item>
+        <item name="colorGlassBorder">@color/glass_border_dark</item>
+        <item name="colorWallpaperCore">@color/wallpaper_core_dark</item>
+        <item name="colorWallpaperGlow">@color/wallpaper_glow_dark</item>
+        <item name="colorWallpaperGlow2">@color/wallpaper_glow2_dark</item>
+        <item name="colorBubbleOutTop">@color/bubble_out_top_dark</item>
+        <item name="colorBubbleOutBottom">@color/bubble_out_bottom_dark</item>
+        <item name="colorBubbleInTop">@color/bubble_in_top_dark</item>
+        <item name="colorBubbleInBottom">@color/bubble_in_bottom_dark</item>
+        <item name="colorReactionBg">@color/reaction_bg_dark</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/shared_enter</item>
+        <item name="android:windowSharedElementExitTransition">@transition/shared_exit</item>
     </style>
 
     <style name="TextAppearance.MailGram.Title" parent="TextAppearance.Material3.TitleLarge">

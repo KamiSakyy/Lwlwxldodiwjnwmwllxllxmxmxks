@@ -74,6 +74,8 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private final Set<String> selected = new HashSet<>();
 
     private String playingMid = "";
+    private long lastTapAt;
+    private String lastTapMid = "";
     private float playingProgress;
     private float textScale = 1f;
     private boolean animationsEnabled = true;
@@ -361,7 +363,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 chip.setText(entry.getKey() + (entry.getValue() > 1 ? " " + entry.getValue() : ""));
                 chip.setTextSize(13f);
                 chip.setPadding(Ui.dp(ctx, 7), Ui.dp(ctx, 2), Ui.dp(ctx, 7), Ui.dp(ctx, 2));
-                chip.setBackgroundResource(R.drawable.bg_pill);
+                chip.setBackgroundResource(R.drawable.bg_reaction_chip);
                 LinearLayout.LayoutParams chipParams = new LinearLayout.LayoutParams(
                         ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 chipParams.setMarginEnd(Ui.dp(ctx, 4));
@@ -369,6 +371,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 final String emoji = entry.getKey();
                 chip.setOnClickListener(v -> actions.onReactionTap(m, emoji));
                 h.reactions.addView(chip);
+                if (animationsEnabled) Anim.pop(chip);
             }
         }
 
@@ -400,27 +403,39 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         h.selectCheck.setAlpha(isSelected ? 1f : 0.35f);
 
         // ---- касания, смахивание для ответа ----
+        h.container.setOnLongClickListener(v -> {
+            Anim.haptic(h.container, true);
+            actions.onMessageLongPress(m, h.container);
+            return true;
+        });
         h.container.setOnClickListener(v -> {
+            long now = System.currentTimeMillis();
+            if (now - lastTapAt < 280L && lastTapMid.equals(m.mid)) {
+                lastTapMid = "";
+                lastTapAt = 0L;
+                Anim.haptic(h.container, false);
+                Anim.pop(h.container);
+                actions.onReactionTap(m, "\u2764\uFE0F");
+                return;
+            }
+            lastTapAt = now;
+            lastTapMid = m.mid;
             if (selectionMode()) {
                 toggleSelection(m);
             } else {
                 actions.onMessageClick(m);
             }
         });
-        h.container.setOnLongClickListener(v -> {
-            actions.onMessageLongPress(m, h.container);
-            return true;
-        });
         attachSwipe(h, m);
 
-        // ---- анимация появления нового сообщения ----
+        // ---- анимация появления нового сообщения: пружина (spatial spring) ----
         if (animationsEnabled && !animated.contains(m.mid)) {
             animated.add(m.mid);
-            h.container.setAlpha(0f);
-            h.container.setTranslationY(Ui.dp(ctx, 12));
-            h.container.animate().alpha(1f).translationY(0f).setDuration(190L).start();
+            Anim.springIn(h.container, 0.94f, 14f);
         } else {
             h.container.setAlpha(1f);
+            h.container.setScaleX(1f);
+            h.container.setScaleY(1f);
             h.container.setTranslationY(0f);
         }
     }
@@ -432,6 +447,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             float startX;
             float startY;
             boolean dragging;
+            boolean armed;
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -440,6 +456,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                         startX = event.getRawX();
                         startY = event.getRawY();
                         dragging = false;
+                        armed = false;
                         return false;
                     case MotionEvent.ACTION_MOVE:
                         float dx = event.getRawX() - startX;
@@ -452,9 +469,20 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             }
                         }
                         if (dragging) {
-                            float shift = Math.min(dx, trigger * 1.4f);
+                            // мягкое «сопротивление» за порогом — как эластичная лента
+                            float shift = dx <= trigger ? dx : trigger + (dx - trigger) * 0.25f;
                             h.container.setTranslationX(shift);
-                            h.swipeIcon.setAlpha(Math.min(1f, shift / trigger));
+                            float progress = Math.min(1f, shift / trigger);
+                            h.swipeIcon.setAlpha(progress);
+                            h.swipeIcon.setScaleX(0.7f + 0.5f * progress);
+                            h.swipeIcon.setScaleY(0.7f + 0.5f * progress);
+                            if (!armed && shift >= trigger * 0.8f) {
+                                armed = true;
+                                h.container.performHapticFeedback(
+                                        android.view.HapticFeedbackConstants.LONG_PRESS);
+                            } else if (armed && shift < trigger * 0.6f) {
+                                armed = false;
+                            }
                             return true;
                         }
                         return false;
@@ -466,8 +494,10 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             h.swipeIcon.animate().alpha(0f).setDuration(150L).withEndAction(() -> {
                                 h.swipeIcon.setVisibility(View.GONE);
                             }).start();
+                            h.swipeIcon.setScaleX(1f);
+                            h.swipeIcon.setScaleY(1f);
                             if (shift >= trigger * 0.8f) {
-                                h.container.performHapticFeedback(android.view.HapticFeedbackConstants.LONG_PRESS);
+                                Anim.haptic(h.container, true);
                                 actions.onReply(m);
                             }
                             dragging = false;
