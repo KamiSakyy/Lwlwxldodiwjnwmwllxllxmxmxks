@@ -7,6 +7,7 @@ import com.mailgram.app.App;
 import com.mailgram.app.crypto.B64;
 import com.mailgram.app.crypto.Identity;
 import com.mailgram.app.crypto.MailCrypto;
+import com.mailgram.app.crypto.RatchetStore;
 import com.mailgram.app.crypto.NativeCrypto;
 import com.mailgram.app.net.Auth;
 import com.mailgram.app.net.GmailApi;
@@ -41,7 +42,9 @@ public final class SyncEngine {
     private static final String QUERY = "subject:MailGram -in:draft newer_than:120d";
     private static final int MAX_MESSAGES = 400;
     public static final String SUBJECT_INVITE_MARKER = "X-MailGram-PublicKey:";
+    public static final String PREKEY_MARKER = "X-MailGram-PreKey:";
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
+    private static final Pattern PREKEY_LINE = Pattern.compile("X-MailGram-PreKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
 
     private static volatile SyncEngine instance;
 
@@ -256,6 +259,15 @@ public final class SyncEngine {
                 boolean outgoing = me.equalsIgnoreCase(from);
                 String peer = outgoing ? Store.normalizeEmail(mail.to) : from;
                 Chat chat = store.ensureChat(chatUid, peer, outgoing ? null : keyB64);
+                // предключ собеседника из приглашения — сразу можно вести сессию с крысиным шагом
+                java.util.regex.Matcher preMatcher = PREKEY_LINE.matcher(bodyWithDecoded(mail.body));
+                if (!outgoing && preMatcher.find()) {
+                    try {
+                        byte[] preRaw = B64.bytes(preMatcher.group(1));
+                        if (preRaw.length == 65) RatchetStore.setPeerPre(app, chat.uid, preRaw);
+                    } catch (Exception ignored) {
+                    }
+                }
                 if (!outgoing) {
                     store.setPeerPublic(chat.uid, keyB64);
                 }
@@ -276,6 +288,13 @@ public final class SyncEngine {
                 invite.unread = mail.unread && !outgoing;
                 return invite;
             }
+            return null;
+        }
+
+        if (env.selfCopyOfRatchet) {
+            // своё письмо: локальная копия уже отправлена, ключ звена израсходован
+            store.markGmailId(mail.id);
+            store.updateState(env.chatUid, env.id, Msg.STATE_SENT, mail.id, null);
             return null;
         }
 
@@ -502,7 +521,7 @@ public final class SyncEngine {
         pool.execute(() -> {
             try {
                 String me = Auth.account(app);
-                String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid,
+                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid,
                         UUID.randomUUID().toString(), System.currentTimeMillis(),
                         B64.bytes(chat.peerPublic), payload.toString());
                 String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
@@ -567,7 +586,7 @@ public final class SyncEngine {
             try {
                 byte[] peerKey = B64.bytes(chat.peerPublic);
                 if (peerKey.length != 65) throw new IllegalStateException("ключ собеседника повреждён");
-                String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid, local.mid, local.ts, peerKey, payloadJson);
+                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, local.mid, local.ts, peerKey, payloadJson);
                 String subject = MailCrypto.SUBJECT_PREFIX + chat.uid;
                 String mime = Mime.build(me, chat.peer, subject, MailCrypto.toMailBody(envelope), local.mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
@@ -611,7 +630,7 @@ public final class SyncEngine {
             try {
                 String me = Auth.account(app);
                 JSONObject payload = retryPayload(msg);
-                String envelope = MailCrypto.seal(app, me, chat.peer, chat.uid, msg.mid, msg.ts,
+                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, msg.mid, msg.ts,
                         B64.bytes(chat.peerPublic), payload.toString());
                 String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
                         MailCrypto.toMailBody(envelope), msg.mid, null);
@@ -695,6 +714,12 @@ public final class SyncEngine {
                 body.append(SUBJECT_INVITE_MARKER).append(" ").append(myKey).append("\r\n");
                 body.append("(это мой публичный ключ — его можно передавать открыто,\r\n");
                 body.append(" он нужен, чтобы первый ответ пришёл уже зашифрованным)\r\n");
+                try {
+                    byte[] pre = RatchetStore.myPreKeyPublic(app);
+                    body.append(PREKEY_MARKER).append(" ").append(B64.str(pre)).append("\r\n");
+                    body.append("(предключ для двойного крысиного шага — прямой секретности каждого сообщения)\r\n");
+                } catch (Exception ignored) {
+                }
                 String mime = Mime.build(me, peer, MailCrypto.SUBJECT_PREFIX + chatUid,
                         Mime.wrap(B64ToBody(body.toString())), mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));

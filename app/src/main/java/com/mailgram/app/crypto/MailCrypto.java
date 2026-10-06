@@ -2,6 +2,7 @@ package com.mailgram.app.crypto;
 
 import android.content.Context;
 import android.util.Base64;
+import android.util.Log;
 
 import org.json.JSONObject;
 
@@ -31,8 +32,13 @@ import org.json.JSONObject;
 public final class MailCrypto {
 
     public static final String SUBJECT_PREFIX = "MailGram ";
+    private static final String TAG = "MailGramCrypto";
+    /** Статический конверт: ECDH(P-256) + HKDF + ChaCha20-Poly1305 (нужен только для старта сессии). */
     public static final int VERSION = 1;
+    /** Конверт с двойным крысиным шагом (Double Ratchet) — основной режим. */
+    public static final int VERSION_RATCHET = 2;
     public static final String ALG = "EC-P256-ECDH+HKDF-SHA256+ChaCha20-Poly1305";
+    public static final String ALG_RATCHET = "P256+HKDF-SHA256+ChaCha20-Poly1305+DOUBLE-RATCHET";
 
     private static final byte[] SALT = B64.utf8("MailGram/v1/salt");
 
@@ -76,6 +82,7 @@ public final class MailCrypto {
         env.put("from", from);
         env.put("to", to);
         env.put("pk", B64.str(Identity.publicKeyRaw(ctx)));
+        env.put("pre", ourPreKey(ctx));
         env.put("n", B64.str(nonce));
         env.put("c", B64.str(ct));
         java.util.Arrays.fill(key, (byte) 0);
@@ -92,6 +99,15 @@ public final class MailCrypto {
         public String to;
         public byte[] senderPublicRaw;
         public String payload; // расшифрованный JSON
+        /** Открытый предключ отправителя (для старта сессии с крысиным шагом). */
+        public byte[] senderPreKeyRaw;
+        /** Заголовок крысиного шага (версия 2). */
+        public byte[] ratchetPublic;
+        public long pn;
+        public long n;
+        /** Своё же отправленное письмо в режиме крысиного шага: прочитать его на этом
+         *  устройстве нельзя (ключ цепочки уже ушёл вперёд), но и ошибкой это не является. */
+        public boolean selfCopyOfRatchet;
     }
 
     /**
@@ -115,6 +131,9 @@ public final class MailCrypto {
 
         JSONObject env = new JSONObject(json);
         int version = env.optInt("v", 0);
+        if (version == VERSION_RATCHET) {
+            return openRatchet(ctx, env, myEmail);
+        }
         if (version != VERSION) {
             throw new SecurityException("неизвестная версия протокола: " + version);
         }
@@ -130,6 +149,14 @@ public final class MailCrypto {
             throw new SecurityException("некорректный открытый ключ отправителя");
         }
         boolean iAmSender = myEmail != null && myEmail.equalsIgnoreCase(out.from);
+        String pre = env.optString("pre", "");
+        if (!pre.isEmpty()) {
+            try {
+                out.senderPreKeyRaw = B64.bytes(pre);
+                if (!iAmSender) RatchetStore.setPeerPre(ctx, out.chatUid, out.senderPreKeyRaw);
+            } catch (Exception ignored) {
+            }
+        }
         byte[] peerKey;
         if (iAmSender) {
             if (peerPublicForOwnMessages == null || peerPublicForOwnMessages.length != 65) {
@@ -150,6 +177,157 @@ public final class MailCrypto {
             throw new SecurityException("тег не сошёлся: сообщение изменено или ключ не подходит");
         }
         out.payload = B64.fromUtf8(pt);
+        return out;
+    }
+
+    // ---------------- двойной крысиный шаг ----------------
+
+    /** Наш открытый предключ (в письме — поле pre), при любой ошибке пустая строка. */
+    private static String ourPreKey(Context ctx) {
+        try {
+            return B64.str(RatchetStore.myPreKeyPublic(ctx));
+        } catch (Exception e) {
+            Log.w(TAG, "предключ недоступен: " + e);
+            return "";
+        }
+    }
+
+    /** Готовы ли шифровать письмо крысиным шагом (нужен предключ собеседника). */
+    public static boolean canRatchet(Context ctx, String chatUid, byte[] peerIdentityRaw) {
+        if (peerIdentityRaw == null || peerIdentityRaw.length != 65) return false;
+        if (!NativeCrypto.isLoaded()) return false;
+        return RatchetStore.peerPre(ctx, chatUid) != null;
+    }
+
+    /**
+     * Основной путь: конверт с двойным крысиным шагом. Если предключа собеседника ещё нет —
+     * используется статический конверт (в нём уходит наш предключ, и собеседник начнёт сессию).
+     */
+    public static String sealMessage(Context ctx, String from, String to, String chatUid,
+                                     String id, long ts, byte[] peerIdentityRaw,
+                                     String payloadJson) throws Exception {
+        if (canRatchet(ctx, chatUid, peerIdentityRaw)) {
+            try {
+                return sealRatchet(ctx, from, to, chatUid, id, ts, peerIdentityRaw, payloadJson);
+            } catch (Exception e) {
+                Log.w(TAG, "крысиный шаг не сработал, отправляем статическим конвертом: " + e);
+            }
+        }
+        return seal(ctx, from, to, chatUid, id, ts, peerIdentityRaw, payloadJson);
+    }
+
+    /** AD для конверта версии 2: метаданные письма плюс заголовок крысиного шага. */
+    private static byte[] aadRatchet(String id, long ts, String from, String to, String chatUid) {
+        return B64.utf8("MailGram/DR|" + VERSION_RATCHET + "|" + id + "|" + ts + "|"
+                + from + "|" + to + "|" + chatUid);
+    }
+
+    /** Шифрует payload ключом текущего звена цепочки (версия 2). */
+    public static String sealRatchet(Context ctx, String from, String to, String chatUid,
+                                     String id, long ts, byte[] peerIdentityRaw,
+                                     String payloadJson) throws Exception {
+        if (!NativeCrypto.isLoaded()) {
+            throw new IllegalStateException("нативная библиотека не загружена: " + NativeCrypto.loadError());
+        }
+        Ratchet.Sealed sealed;
+        synchronized (RatchetStore.chatLock(chatUid)) {
+            Ratchet r = RatchetStore.load(ctx, chatUid, true);
+            if (r == null || !r.ready) {
+                byte[] peerPre = RatchetStore.peerPre(ctx, chatUid);
+                if (peerPre == null || peerPre.length != 65) {
+                    throw new IllegalStateException("нет предключа собеседника");
+                }
+                r = Ratchet.initiator(ctx, chatUid, peerIdentityRaw, peerPre);
+                RatchetStore.save(ctx, chatUid, r);
+            }
+            sealed = r.encrypt(ctx, aadRatchet(id, ts, from, to, chatUid), B64.utf8(payloadJson));
+            RatchetStore.save(ctx, chatUid, r);
+        }
+
+        JSONObject env = new JSONObject();
+        env.put("v", VERSION_RATCHET);
+        env.put("alg", ALG_RATCHET);
+        env.put("id", id);
+        env.put("ts", ts);
+        env.put("chat", chatUid);
+        env.put("from", from);
+        env.put("to", to);
+        env.put("pk", B64.str(Identity.publicKeyRaw(ctx)));
+        env.put("pre", ourPreKey(ctx));
+        env.put("dh", B64.str(sealed.dhPublic));
+        env.put("pn", sealed.pn);
+        env.put("n", sealed.n);
+        env.put("nc", B64.str(sealed.nonce));
+        env.put("c", B64.str(sealed.ciphertext));
+        return env.toString();
+    }
+
+    /** Разбирает конверт версии 2: при первом письме поднимает сессию, дальше — крысиный шаг. */
+    private static Envelope openRatchet(Context ctx, JSONObject env, String myEmail) throws Exception {
+        if (!NativeCrypto.isLoaded()) {
+            throw new IllegalStateException("нативная библиотека не загружена: " + NativeCrypto.loadError());
+        }
+        Envelope out = new Envelope();
+        out.version = VERSION_RATCHET;
+        out.id = env.getString("id");
+        out.ts = env.getLong("ts");
+        out.chatUid = env.getString("chat");
+        out.from = env.getString("from");
+        out.to = env.getString("to");
+        out.senderPublicRaw = B64.bytes(env.getString("pk"));
+        out.ratchetPublic = B64.bytes(env.getString("dh"));
+        out.pn = env.optLong("pn", 0L);
+        out.n = env.optLong("n", 0L);
+        byte[] nonce = B64.bytes(env.getString("nc"));
+        byte[] ct = B64.bytes(env.getString("c"));
+        String pre = env.optString("pre", "");
+        out.senderPreKeyRaw = pre.isEmpty() ? null : B64.bytes(pre);
+
+        boolean iAmSender = myEmail != null && myEmail.equalsIgnoreCase(out.from);
+        if (iAmSender) {
+            // своя же копия письма из Gmail: ключ этого звена цепочки уже израсходован,
+            // содержимое читается из локальной базы, поэтому просто помечаем письмо своим
+            out.selfCopyOfRatchet = true;
+            return out;
+        }
+        if (out.senderPreKeyRaw != null && out.senderPreKeyRaw.length == 65) {
+            RatchetStore.setPeerPre(ctx, out.chatUid, out.senderPreKeyRaw);
+        }
+        byte[] aad = aadRatchet(out.id, out.ts, out.from, out.to, out.chatUid);
+
+        synchronized (RatchetStore.chatLock(out.chatUid)) {
+            Ratchet r = RatchetStore.load(ctx, out.chatUid, true);
+            byte[] pt = null;
+            Exception first = null;
+            if (r != null && r.ready) {
+                try {
+                    pt = r.decrypt(ctx, aad, out.ratchetPublic, out.pn, out.n, nonce, ct);
+                    RatchetStore.save(ctx, out.chatUid, r);
+                } catch (Exception e) {
+                    first = e;
+                    r = null;
+                }
+            }
+            if (pt == null) {
+                // первое письмо в сессии либо рассинхронизация после переустановки —
+                // поднимаем новую сессию в роли ответчика из заголовка письма
+                try {
+                    Ratchet fresh = Ratchet.responder(ctx, out.chatUid, out.senderPublicRaw,
+                            out.ratchetPublic, out.senderPreKeyRaw,
+                            RatchetStore.myPreKeyPrivateForResponder(ctx),
+                            RatchetStore.myPreKeyPublic(ctx));
+                    pt = fresh.decrypt(ctx, aad, out.ratchetPublic, out.pn, out.n, nonce, ct);
+                    RatchetStore.save(ctx, out.chatUid, fresh);
+                } catch (Exception e) {
+                    if (first != null) {
+                        throw new SecurityException("не удалось расшифровать в крысином шаге: "
+                                + first.getMessage() + " / " + e.getMessage());
+                    }
+                    throw new SecurityException("не удалось поднять сессию: " + e.getMessage());
+                }
+            }
+            out.payload = B64.fromUtf8(pt);
+        }
         return out;
     }
 

@@ -267,6 +267,7 @@ public class SettingsActivity extends AppCompatActivity {
                     for (Chat chat : store.chats()) store.removeChat(chat.uid);
                     Auth.signOut(this, true);
                     Identity.destroy(this);
+                    com.mailgram.app.crypto.RatchetStore.wipeAll(this);
                     startActivity(new Intent(this, LoginActivity.class)
                             .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
                     finish();
