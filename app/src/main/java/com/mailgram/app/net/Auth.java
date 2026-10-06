@@ -82,9 +82,15 @@ public final class Auth {
         return MODE_LOOPBACK.equals(mode) ? MODE_LOOPBACK : MODE_ANDROID;
     }
 
-    /** Client ID резервного Android-клиента (схема редиректа берётся из него же). */
+    /** Client ID Android-клиента (из него же берётся схема редиректа в манифесте). */
     public static String androidClientId() {
         String id = BuildConfig.OAUTH_ANDROID_CLIENT_ID;
+        return id == null ? "" : id.trim();
+    }
+
+    /** Client ID резервного клиента типа Desktop (вход через локальный порт). */
+    public static String altClientId() {
+        String id = BuildConfig.OAUTH_ALT_CLIENT_ID;
         return id == null ? "" : id.trim();
     }
 
@@ -183,6 +189,7 @@ public final class Auth {
         public boolean loopbackOk;
         public boolean rejected;      // обе схемы отклонены — нужна настройка в консоли
         public boolean schemeDisabled; // Google прямо сказал, что custom URI scheme выключена
+        public boolean secretMissing;  // клиенту типа Desktop нужен client_secret
         public boolean inconclusive;  // сеть/неизвестный ответ — вывода нет
         public String mode = MODE_ANDROID;
         public String summary = "";
@@ -208,49 +215,61 @@ public final class Auth {
             p.summary = "client ID не задан";
             return p;
         }
-        String verifier = OAuth.randomVerifier();
         String secret = clientSecret();
-        p.androidError = OAuth.probeRedirect(clientId, secret, verifier,
-                OAuth.redirectForAndroidClient(clientId));
-        p.loopbackError = OAuth.probeRedirect(clientId, secret, verifier, LoopbackServer.redirectUri());
-        p.androidOk = accepted(p.androidError);
-        p.loopbackOk = accepted(p.loopbackError);
-        p.schemeDisabled = mentionsScheme(p.androidError);
+        String verifier = OAuth.randomVerifier();
 
-        // На случай, если рабочим окажется резервный Android-клиент (custom URI scheme включён
-        // в консоли) — проверяем и его, чтобы выбрать работающий вход, а не угадывать.
-        String androidId = androidClientId();
-        if (!androidId.isEmpty() && !androidId.equalsIgnoreCase(clientId)) {
-            String androidProbe = OAuth.probeRedirect(androidId, secret, verifier,
-                    OAuth.redirectForAndroidClient(androidId));
-            if (accepted(androidProbe)) {
-                p.mode = MODE_ANDROID;
-                p.summary = "Вход через Android-клиент готов";
-                p.androidOk = true;
-                Log.i(TAG, "рабочий Android-клиент: " + androidId);
-                saveProbe(ctx, p);
-                return p;
-            }
-            Log.i(TAG, "резервный Android-клиент: " + androidProbe);
-        }
+        // 1. Основной клиент (Android): схема, зашитая в манифест при сборке
+        String primaryScheme = OAuth.probeRedirect(clientId, secret, verifier,
+                OAuth.redirectForAndroidClient(clientId));
+        // 2. Он же через локальный порт — иногда пригождается
+        String primaryLoopback = OAuth.probeRedirect(clientId, secret, verifier,
+                LoopbackServer.redirectUri());
+        p.androidError = primaryScheme;
+        p.loopbackError = primaryLoopback;
+        p.androidOk = accepted(primaryScheme);
+        p.schemeDisabled = mentionsScheme(primaryScheme);
 
         if (p.androidOk) {
             p.mode = MODE_ANDROID;
-            p.summary = "Клиент принимает схему Android: вход в один тап готов";
-        } else if (p.loopbackOk) {
+            p.summary = "Google принимает client ID — вход в один тап готов";
+            saveProbe(ctx, p);
+            return p;
+        }
+
+        // 3. Резервный клиент типа Desktop — вход через локальный порт
+        String alt = altClientId();
+        if (!alt.isEmpty() && !alt.equalsIgnoreCase(clientId)) {
+            String altError = OAuth.probeRedirect(alt, secret, verifier, LoopbackServer.redirectUri());
+            Log.i(TAG, "резервный Desktop-клиент: " + altError);
+            if (accepted(altError)) {
+                p.mode = MODE_LOOPBACK;
+                p.loopbackOk = true;
+                p.summary = "Вход пойдёт через локальный порт (клиент типа Desktop) — готово";
+                saveProbe(ctx, p);
+                return p;
+            }
+            if (altError.contains("client_secret")) {
+                p.secretMissing = true;
+            }
+        }
+
+        if (accepted(primaryLoopback)) {
             p.mode = MODE_LOOPBACK;
-            p.summary = "Клиент типа «Desktop»: вход пойдёт через локальный порт — готово";
-            setAuthMode(ctx, MODE_LOOPBACK);
-        } else if (rejected(p.androidError) && rejected(p.loopbackError)) {
+            p.loopbackOk = true;
+            p.summary = "Вход пойдёт через локальный порт — готово";
+        } else if (rejected(primaryScheme)) {
             p.rejected = true;
-            p.summary = p.schemeDisabled
-                    ? "У Android-клиента выключен custom URI scheme — включите его в консоли Google"
-                    : "Google не принимает ни одну из наших схем редиректа для этого client ID";
+            p.summary = p.secretMissing
+                    ? "Google отклоняет оба клиента: у Android-клиента выключен custom URI scheme, "
+                      + "а клиенту Desktop нужен client_secret"
+                    : (p.schemeDisabled
+                        ? "У Android-клиента выключен custom URI scheme — включите его в консоли Google"
+                        : "Google не принимает наш redirect URI для этого client ID");
         } else {
             p.inconclusive = true;
-            p.summary = "не удалось проверить подключение (" + firstLine(p.androidError) + ")";
+            p.summary = "не удалось проверить подключение (" + firstLine(primaryScheme) + ")";
         }
-        Log.i(TAG, "проба клиента: android=" + p.androidError + " | loopback=" + p.loopbackError);
+        Log.i(TAG, "проба клиента: scheme=" + primaryScheme + " | loopback=" + primaryLoopback);
         saveProbe(ctx, p);
         return p;
     }
@@ -268,6 +287,7 @@ public final class Auth {
             p.loopbackOk = o.optBoolean("loopbackOk", false);
             p.rejected = o.optBoolean("rejected", false);
             p.schemeDisabled = o.optBoolean("schemeDisabled", false);
+            p.secretMissing = o.optBoolean("secretMissing", false);
             p.inconclusive = o.optBoolean("inconclusive", false);
             p.mode = o.optString("mode", MODE_ANDROID);
             p.summary = o.optString("summary", "");
@@ -288,6 +308,7 @@ public final class Auth {
             o.put("loopbackOk", p.loopbackOk);
             o.put("rejected", p.rejected);
             o.put("schemeDisabled", p.schemeDisabled);
+            o.put("secretMissing", p.secretMissing);
             o.put("inconclusive", p.inconclusive);
             o.put("mode", p.mode);
             o.put("summary", p.summary);

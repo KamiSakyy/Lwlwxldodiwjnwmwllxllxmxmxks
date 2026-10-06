@@ -93,6 +93,34 @@ jobs:
           probe "C. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect" | tee -a oauth-check.log
           probe "D. Android-клиент + локальный порт" "$ANDROID_ID" "http://127.0.0.1:7717/oauth2redirect" | tee -a oauth-check.log
 
+      - name: Проверить саму страницу авторизации (тот же запрос, что делает приложение)
+        env:
+          ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
+        run: |
+          set -uo pipefail
+          VERIFIER=$(head -c 32 /dev/urandom | base64 | tr -dc 'A-Za-z0-9-._~' | head -c 50)
+          CHALLENGE=$(printf '%s' "$VERIFIER" | sha256sum | cut -d' ' -f1 | xxd -r -p | base64 | tr '+/' '-_' | tr -d '=')
+          html=$(curl -s -G https://accounts.google.com/o/oauth2/v2/auth \
+            --data-urlencode "client_id=$ANDROID_ID" \
+            --data-urlencode "redirect_uri=com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect" \
+            --data-urlencode "response_type=code" \
+            --data-urlencode "scope=openid email https://www.googleapis.com/auth/gmail.modify" \
+            --data-urlencode "code_challenge=$CHALLENGE" \
+            --data-urlencode "code_challenge_method=S256" \
+            --data-urlencode "state=mailgramprobe" \
+            --data-urlencode "access_type=offline" \
+            --data-urlencode "prompt=consent" \
+            --data-urlencode "hl=ru" | tr -d '\r\n')
+          marker=""
+          for m in invalid_request invalid_client redirect_uri_mismatch unauthorized_client access_denied "Custom URI scheme"; do
+            if printf '%s' "$html" | grep -qi "$m"; then marker="$marker | $m"; fi
+          done
+          if [ -n "$marker" ]; then
+            echo "::error title=Страница авторизации::Google отвечает ошибкой:$marker"
+          else
+            echo "::notice title=Страница авторизации::ошибок нет — Google готов показать выбор аккаунта (страница $(printf '%s' "$html" | wc -c) байт)"
+          fi
+
   apk:
     name: Сборка APK (Java + C++)
     runs-on: ubuntu-latest
