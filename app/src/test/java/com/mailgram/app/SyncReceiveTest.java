@@ -90,10 +90,14 @@ public class SyncReceiveTest {
                 }
                 return new Http.Response(200, "{\"messages\":[" + ids + "]}");
             }
-            for (String id : served.keySet()) {
-                if (!url.contains("/messages/" + id)) continue;
-                requests.add("GET:" + id);
+            // точное совпадение id: префиксное contains("/messages/gm-v2") ловило и gm-v2b!
+            java.util.regex.Matcher gm = java.util.regex.Pattern
+                    .compile("/messages/([^/?]+)").matcher(url);
+            if (gm.find()) {
+                String id = gm.group(1);
                 String mailBody = served.get(id);
+                if (mailBody == null) return new Http.Response(404, "{}");
+                requests.add("GET:" + id);
                 String data = b64url(mailBody.getBytes(StandardCharsets.UTF_8));
                 return new Http.Response(200, "{\"id\":\"" + id + "\",\"internalDate\":"
                         + System.currentTimeMillis() + ",\"labelIds\":[\"INBOX\",\"UNREAD\"],"
