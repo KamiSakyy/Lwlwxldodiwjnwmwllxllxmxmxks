@@ -17,6 +17,7 @@ MailGram не имеет сервера, поэтому OAuth-клиент со�
 | Scopes | `openid`, `email`, `https://www.googleapis.com/auth/gmail.modify` |
 | redirect URI (Android-клиент) | `com.googleusercontent.apps.<ваш-client-id-без-.apps.googleusercontent.com>:/oauth2redirect` |
 | redirect URI (Desktop + loopback) | `http://127.0.0.1:7717/oauth2redirect` |
+| проверка клиента | кнопка «Проверить подключение к Google» на экране входа: приложение само спрашивает у Google, какие схемы редиректа принимает client ID, и выбирает рабочий режим |
 | client ID, вшитый в сборку | `520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com` (схема `com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f`) |
 
 > Приложение показывает эти значения само: **Настройки → Настройка подключения** (пакет, отпечаток
@@ -40,6 +41,13 @@ MailGram не имеет сервера, поэтому OAuth-клиент со�
    * Package name: `com.mailgram.app`
    * SHA-1 certificate fingerprint: `BA:CF:61:D8:5B:A6:51:0E:27:6B:3C:8D:B8:79:43:0A:51:83:47:32`
    → Create → скопируйте **client ID**.
+4б. **Обязательно для Android-клиента:** в том же клиенте прокрутите страницу вниз до раздела
+   **Advanced Settings**, включите галочку **«Enable custom URI scheme»** и нажмите **Save**.
+   Google с октября 2023 **выключает эту схему у новых Android-клиентов по умолчанию**, и без неё
+   вход обрывается на странице Google с `Error 400: invalid_request`
+   («Custom URI scheme is not enabled for your Android client») — по-русски это
+   «Доступ заблокирован: недопустимый запрос». Консоль помечает настройку как *not recommended*,
+   но это официально предусмотренный Google способ (см. [анонс от 02.10.2023](https://developers.googleblog.com/en/improving-user-safety-in-oauth-flows-through-new-oauth-custom-uri-scheme-restrictions/)).
 5. **Передайте client ID приложению — любым из двух способов:**
    * **А. Он вшит в сборку (вход в один тап, «из коробки»):** GitHub → репозиторий → Settings →
      Secrets and variables → Actions → *New repository secret* → имя `OAUTH_CLIENT_ID`, значение —
@@ -54,6 +62,7 @@ MailGram не имеет сервера, поэтому OAuth-клиент со�
 
 | Симптом | Причина и решение |
 |---|---|
+| `Error 400: invalid_request` («Доступ заблокирован: недопустимый запрос») | У Android-клиента выключен custom URI scheme (Google отключает его по умолчанию): в консоли откройте свой клиент → **Advanced Settings** → **Enable custom URI scheme** → Save. Либо создайте клиент типа **Desktop app** с redirect URI `http://127.0.0.1:7717/oauth2redirect` — приложение определит это само и переключится на локальный порт. Приложение показывает эту подсказку само: кнопка «Проверить подключение к Google» на экране входа. |
 | `Error 400: redirect_uri_mismatch` | В консоли указан не тот пакет/SHA-1 (например, вы подписали APK своим ключом) или выбран режим «локальный порт», а клиент создан как Android. Сверьте данные в «Настройка подключения» → скопируйте их кнопкой «Скопировать всё для настройки». |
 | `Error 403: access_denied` / «доступ заблокирован» | Ваш аккаунт не добавлен в **Test users** экрана согласия. |
 | `Error 401: invalid_client` | client ID введён с опечаткой (лишний пробел) или это ID от другого проекта. |

@@ -98,6 +98,15 @@
             android:textAllCaps="false"
             android:textColor="?attr/colorPrimary" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_diag"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/login_check"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorPrimary" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

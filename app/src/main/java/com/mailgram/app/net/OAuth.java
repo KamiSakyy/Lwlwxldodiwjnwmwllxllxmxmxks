@@ -135,6 +135,58 @@ public final class OAuth {
         return email;
     }
 
+    /**
+     * Проверяет, зарегистрирован ли у клиента такой redirect URI: отправляем на token endpoint
+     * заведомо неверный код авторизации. Google сначала проверяет параметры запроса и только
+     * потом сам код, поэтому ответ рассказывает, принимает ли клиент этот redirect:
+     * <ul>
+     *   <li>{@code invalid_grant} — параметры приняты, «не тот код» (то есть URI подходит);</li>
+     *   <li>{@code redirect_uri_mismatch} / {@code invalid_request} — URI клиенту не подходит
+     *       (например, «Custom URI scheme is not enabled for your Android client»).</li>
+     * </ul>
+     *
+     * @return код ошибки Google в виде {@code "код: описание"} (пустая строка — параметры приняты)
+     */
+    public static String probeRedirect(String clientId, String verifier, String redirectUri) {
+        String form = "client_id=" + enc(clientId)
+                + "&code=" + enc(probeCode())
+                + "&code_verifier=" + enc(verifier)
+                + "&grant_type=authorization_code"
+                + "&redirect_uri=" + enc(redirectUri);
+        try {
+            Http.postForm(TOKEN_ENDPOINT, form);
+            return "";
+        } catch (Http.HttpException e) {
+            try {
+                JSONObject obj = new JSONObject(e.body);
+                String code = obj.optString("error", "");
+                String desc = obj.optString("error_description", "");
+                if (code.isEmpty()) return "http_" + e.code;
+                return desc.isEmpty() ? code : code + ": " + desc;
+            } catch (Exception parse) {
+                return "http_" + e.code;
+            }
+        } catch (Exception network) {
+            return "network: " + network.getMessage();
+        }
+    }
+
+    /** Код-«пустышка» правильной формы (43 символа base64url) — как настоящий код авторизации. */
+    private static String probeCode() {
+        try {
+            return B64.str(NativeCrypto.random(32));
+        } catch (Throwable t) {
+            return "MailGramProbeCode0000000000000000000000000000";
+        }
+    }
+
+    /** Прямая ссылка на страницу этого OAuth-клиента в Google Cloud Console. */
+    public static String clientConsoleUrl(String clientId) {
+        String id = clientId == null ? "" : clientId.trim();
+        if (id.isEmpty()) return "https://console.cloud.google.com/apis/credentials";
+        return "https://console.cloud.google.com/apis/credentials/oauthclient/" + id;
+    }
+
     private static String enc(String s) {
         return URLEncoder.encode(s == null ? "" : s, StandardCharsets.UTF_8);
     }

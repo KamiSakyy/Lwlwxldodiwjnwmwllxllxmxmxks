@@ -69,7 +69,9 @@ public class SetupOauthActivity extends AppCompatActivity {
                 Ui.copy(this, "MailGram setup", setupText()));
         findViewById(R.id.btn_open_console).setOnClickListener(v -> {
             try {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(CONSOLE_URL)));
+                String clientId = enteredClientId();
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse(clientId.isEmpty() ? CONSOLE_URL : OAuth.clientConsoleUrl(clientId))));
             } catch (Exception e) {
                 Ui.toast(this, getString(R.string.error_generic, "нет браузера"));
             }
@@ -97,9 +99,17 @@ public class SetupOauthActivity extends AppCompatActivity {
                     ? Auth.androidSchemeFromBuild() + OAuth.ANDROID_REDIRECT_SUFFIX
                     : OAuth.redirectForAndroidClient(clientId);
             modeNote.setText(getString(R.string.setup_android_note, Auth.androidSchemeFromBuild()));
+            // Google с 2023 выключает custom URI scheme у новых Android-клиентов по умолчанию:
+            // без этой галочки вход отклоняется с ошибкой 400 invalid_request.
+            modeNote.setText(modeNote.getText() + "\n\n" + getString(R.string.setup_probe_hint));
             if (Auth.clientIdFromBuild()) {
                 modeNote.setText(modeNote.getText() + "\n\n" + getString(R.string.setup_baked_note,
                         Auth.clientIdFromBuildShort()));
+            }
+            Auth.Probe cached = Auth.cachedProbe(this);
+            if (cached != null && !cached.summary.isEmpty()) {
+                modeNote.setText(modeNote.getText() + "\n\n" + getString(R.string.setup_probe_result)
+                        + ": " + cached.summary);
             }
             if (!clientId.isEmpty()
                     && !clientId.equals(Auth.clientIdFromSettings(this))
@@ -116,6 +126,7 @@ public class SetupOauthActivity extends AppCompatActivity {
                 + getString(R.string.setup_package) + ": " + getPackageName() + "\n"
                 + getString(R.string.setup_sha1) + ": " + Ui.signingSha1(this) + "\n"
                 + getString(R.string.setup_redirect) + ": " + redirectView.getText() + "\n"
+                + getString(R.string.setup_probe_hint) + "\n"
                 + "Scopes: " + OAuth.SCOPE;
     }
 

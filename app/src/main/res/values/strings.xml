@@ -118,6 +118,21 @@
     <string name="setup_mode_loopback">Desktop + локальный порт (client ID можно менять без пересборки)</string>
     <string name="setup_baked_note">Client ID уже вшит в эту сборку (%1$s…), поэтому вход работает в один тап и ничего настраивать не нужно. Другой client ID — только через пересборку APK (параметр oauth_client_id).</string>
     <string name="setup_baked_saved">Client ID вшит в сборку — менять нечего</string>
+    <string name="login_check">Проверить подключение к Google</string>
+    <string name="login_check_running">Проверяю настройки входа…</string>
+    <string name="login_fix_title">Нужна одна настройка в Google Cloud</string>
+    <string name="login_fix_message">Google выключает custom URI scheme у новых Android-клиентов по умолчанию, поэтому запрос отклоняется с ошибкой 400 invalid_request — это и есть «Доступ заблокирован: недопустимый запрос».
+
+Вариант 1 (30 секунд, этот APK менять не нужно):
+Google Cloud Console → APIs &amp; Services → Credentials → ваш Android-клиент → раздел «Advanced Settings» → включите «Enable custom URI scheme» → Save.
+
+Вариант 2: создайте клиент типа «Desktop app», добавьте redirect URI http://127.0.0.1:7717/oauth2redirect и нажмите «Проверить снова» — приложение само переключится на этот режим.
+
+Если вы уже включили схему — нажмите «Проверить снова».</string>
+    <string name="login_fix_open">Открыть настройки клиента</string>
+    <string name="login_fix_recheck">Проверить снова</string>
+    <string name="setup_probe_hint">Для клиента типа «Android» обязательно включите «Advanced Settings → Enable custom URI scheme» — по умолчанию Google её выключает и возвращает ошибку 400 invalid_request.</string>
+    <string name="setup_probe_result">Проверка Google</string>
     <string name="setup_save">Сохранить</string>
     <string name="setup_saved">Сохранено</string>
     <string name="setup_loopback_note">В режиме «Desktop» добавьте в Google Cloud Console redirect URI:\n%1$s</string>

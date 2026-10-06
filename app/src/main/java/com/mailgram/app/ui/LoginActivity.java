@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsIntent;
 
@@ -17,6 +19,7 @@ import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.mailgram.app.R;
 import com.mailgram.app.net.Auth;
 import com.mailgram.app.net.LoopbackServer;
+import com.mailgram.app.net.OAuth;
 
 /** Вход через Google: один тап, PKCE, без серверов и секретов. */
 public class LoginActivity extends AppCompatActivity {
@@ -27,6 +30,16 @@ public class LoginActivity extends AppCompatActivity {
     private LinearProgressIndicator progress;
     private TextView status;
     private final Handler handler = new Handler(Looper.getMainLooper());
+    private final AtomicBoolean probing = new AtomicBoolean(false);
+
+    private Auth.Probe probe;
+    private boolean awaitingAuth;
+    private long authStartedAt;
+    private boolean fixDialogShown;
+
+    private final Runnable authWatchdog = () -> {
+        if (awaitingAuth && !Auth.isSignedIn(this)) showFixDialog();
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +59,9 @@ public class LoginActivity extends AppCompatActivity {
         googleButton.setOnClickListener(v -> startLogin());
         findViewById(R.id.btn_setup).setOnClickListener(v ->
                 startActivity(new Intent(this, SetupOauthActivity.class)));
+        findViewById(R.id.btn_diag).setOnClickListener(v -> startProbe(true));
         updateStatus();
+        startProbe(false);
     }
 
     @Override
@@ -57,9 +72,78 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
         updateStatus();
+        // вернулись из браузера, а код в приложение не пришёл — почти всегда это
+        // отклонённый Google запрос (например, выключенный custom URI scheme)
+        if (awaitingAuth && !Auth.isSignedIn(this)
+                && System.currentTimeMillis() - authStartedAt > 6000L) {
+            showFixDialog();
+        }
+    }
+
+    /** Спрашивает у Google, какие схемы редиректа принимает client ID, и подбирает режим входа. */
+    private void startProbe(boolean force) {
+        if (!force) {
+            Auth.Probe cached = Auth.cachedProbe(this);
+            if (cached != null) {
+                onProbe(cached);
+                return;
+            }
+        }
+        if (!probing.compareAndSet(false, true)) return;
+        status.setVisibility(View.VISIBLE);
+        status.setTextColor(0xFF5F6368);
+        status.setText(R.string.login_check_running);
+        new Thread(() -> {
+            final Auth.Probe result = Auth.probeNow(getApplicationContext());
+            handler.post(() -> onProbe(result));
+        }, "mailgram-probe").start();
+    }
+
+    private void onProbe(final Auth.Probe result) {
+        probing.set(false);
+        probe = result;
+        if (isFinishing() || isDestroyed()) return;
+        status.setVisibility(View.VISIBLE);
+        boolean ok = result.androidOk || result.loopbackOk;
+        status.setTextColor(ok ? 0xFF188038 : (result.inconclusive ? 0xFF5F6368 : 0xFFD93025));
+        status.setText(result.summary);
+        if (result.hasFixHint() && !fixDialogShown) {
+            fixDialogShown = true;
+            showFixDialog();
+        }
+    }
+
+    private void showFixDialog() {
+        if (isFinishing() || isDestroyed()) return;
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle(R.string.login_fix_title)
+                .setMessage(R.string.login_fix_message)
+                .setPositiveButton(R.string.login_fix_open, (d, w) -> openConsole())
+                .setNeutralButton(R.string.login_fix_recheck, (d, w) -> {
+                    fixDialogShown = false;
+                    startProbe(true);
+                })
+                .setNegativeButton(R.string.done, null)
+                .show();
+    }
+
+    private void openConsole() {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(OAuth.clientConsoleUrl(Auth.clientId(this)))));
+        } catch (Exception e) {
+            Ui.toast(this, getString(R.string.error_generic, "нет браузера"));
+        }
     }
 
     private void updateStatus() {
+        if (probe != null && !probe.summary.isEmpty()) {
+            status.setVisibility(View.VISIBLE);
+            boolean ok = probe.androidOk || probe.loopbackOk;
+            status.setTextColor(ok ? 0xFF188038 : (probe.inconclusive ? 0xFF5F6368 : 0xFFD93025));
+            status.setText(probe.summary);
+            return;
+        }
         String clientId = Auth.clientId(this);
         if (clientId.isEmpty()) {
             status.setVisibility(View.VISIBLE);
@@ -96,6 +180,10 @@ public class LoginActivity extends AppCompatActivity {
         progress.setVisibility(View.VISIBLE);
         status.setVisibility(View.VISIBLE);
         status.setText(R.string.signing_in);
+        awaitingAuth = true;
+        authStartedAt = System.currentTimeMillis();
+        handler.removeCallbacks(authWatchdog);
+        handler.postDelayed(authWatchdog, 90_000L);
 
         if (Auth.MODE_LOOPBACK.equals(Auth.authMode(this))) {
             LoopbackServer.start(new LoopbackServer.Callback() {
@@ -149,6 +237,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void openMain() {
+        awaitingAuth = false;
+        handler.removeCallbacks(authWatchdog);
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }

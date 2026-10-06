@@ -8,6 +8,10 @@ import com.mailgram.app.BuildConfig;
 import com.mailgram.app.crypto.B64;
 import com.mailgram.app.crypto.KeystoreBox;
 
+import org.json.JSONObject;
+
+import java.util.Locale;
+
 /**
  * Состояние входа: OAuth-токены (зашифрованы ключом Android Keystore),
  * выбранный client ID и режим редиректа. Секретов в коде нет: client ID
@@ -54,7 +58,8 @@ public final class Auth {
     }
 
     public static void setClientId(Context ctx, String clientId) {
-        prefs(ctx).edit().putString(K_CLIENT_ID, clientId == null ? "" : clientId.trim()).apply();
+        prefs(ctx).edit().putString(K_CLIENT_ID, clientId == null ? "" : clientId.trim())
+                .remove(K_PROBE).apply();
     }
 
     /** Короткий вид вшитого client ID — для экрана настроек. */
@@ -153,6 +158,134 @@ public final class Auth {
         }
     }
 
+    // ---------------- автодиагностика OAuth-клиента ----------------
+
+    private static final String K_PROBE = "probe_json";
+    private static final long PROBE_TTL_MS = 24L * 60L * 60L * 1000L;
+
+    /** Результат проверки: какие redirect URI принимает этот client ID. */
+    public static final class Probe {
+        public String androidError = "";
+        public String loopbackError = "";
+        public boolean androidOk;
+        public boolean loopbackOk;
+        public boolean rejected;      // обе схемы отклонены — нужна настройка в консоли
+        public boolean schemeDisabled; // Google прямо сказал, что custom URI scheme выключена
+        public boolean inconclusive;  // сеть/неизвестный ответ — вывода нет
+        public String mode = MODE_ANDROID;
+        public String summary = "";
+        public long at;
+
+        public boolean hasFixHint() {
+            return rejected || schemeDisabled;
+        }
+    }
+
+    /**
+     * Спрашивает у Google, какие redirect URI зарегистрированы у этого client ID, и подбирает
+     * рабочий режим входа. Android-клиенты Google по умолчанию не принимают custom URI scheme
+     * («Custom URI scheme is not enabled for your Android client») — тогда вход отклоняется
+     * с ошибкой 400 invalid_request, и её нужно включить в «Advanced Settings» консоли.
+     */
+    public static Probe probeNow(Context ctx) {
+        String clientId = clientId(ctx);
+        Probe p = new Probe();
+        p.at = System.currentTimeMillis();
+        if (clientId.isEmpty()) {
+            p.inconclusive = true;
+            p.summary = "client ID не задан";
+            return p;
+        }
+        String verifier = OAuth.randomVerifier();
+        p.androidError = OAuth.probeRedirect(clientId, verifier, OAuth.redirectForAndroidClient(clientId));
+        p.loopbackError = OAuth.probeRedirect(clientId, verifier, LoopbackServer.redirectUri());
+        p.androidOk = accepted(p.androidError);
+        p.loopbackOk = accepted(p.loopbackError);
+        p.schemeDisabled = mentionsScheme(p.androidError);
+
+        if (p.androidOk) {
+            p.mode = MODE_ANDROID;
+            p.summary = "Клиент принимает схему Android: вход в один тап готов";
+        } else if (p.loopbackOk) {
+            p.mode = MODE_LOOPBACK;
+            p.summary = "Клиент типа «Desktop»: вход пойдёт через локальный порт — готово";
+            setAuthMode(ctx, MODE_LOOPBACK);
+        } else if (rejected(p.androidError) && rejected(p.loopbackError)) {
+            p.rejected = true;
+            p.summary = p.schemeDisabled
+                    ? "У Android-клиента выключен custom URI scheme — включите его в консоли Google"
+                    : "Google не принимает ни одну из наших схем редиректа для этого client ID";
+        } else {
+            p.inconclusive = true;
+            p.summary = "не удалось проверить подключение (" + firstLine(p.androidError) + ")";
+        }
+        Log.i(TAG, "проба клиента: android=" + p.androidError + " | loopback=" + p.loopbackError);
+        saveProbe(ctx, p);
+        return p;
+    }
+
+    /** Кэшированный результат (проба ходит в сеть, поэтому держим его сутки). */
+    public static Probe cachedProbe(Context ctx) {
+        String json = prefs(ctx).getString(K_PROBE, null);
+        if (json == null) return null;
+        try {
+            JSONObject o = new JSONObject(json);
+            Probe p = new Probe();
+            p.androidError = o.optString("androidError", "");
+            p.loopbackError = o.optString("loopbackError", "");
+            p.androidOk = o.optBoolean("androidOk", false);
+            p.loopbackOk = o.optBoolean("loopbackOk", false);
+            p.rejected = o.optBoolean("rejected", false);
+            p.schemeDisabled = o.optBoolean("schemeDisabled", false);
+            p.inconclusive = o.optBoolean("inconclusive", false);
+            p.mode = o.optString("mode", MODE_ANDROID);
+            p.summary = o.optString("summary", "");
+            p.at = o.optLong("at", 0L);
+            if (System.currentTimeMillis() - p.at > PROBE_TTL_MS) return null;
+            return p;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    private static void saveProbe(Context ctx, Probe p) {
+        try {
+            JSONObject o = new JSONObject();
+            o.put("androidError", p.androidError);
+            o.put("loopbackError", p.loopbackError);
+            o.put("androidOk", p.androidOk);
+            o.put("loopbackOk", p.loopbackOk);
+            o.put("rejected", p.rejected);
+            o.put("schemeDisabled", p.schemeDisabled);
+            o.put("inconclusive", p.inconclusive);
+            o.put("mode", p.mode);
+            o.put("summary", p.summary);
+            o.put("at", p.at);
+            prefs(ctx).edit().putString(K_PROBE, o.toString()).apply();
+        } catch (Exception ignored) {
+        }
+    }
+
+    private static boolean accepted(String error) {
+        return error == null || error.isEmpty() || error.startsWith("invalid_grant");
+    }
+
+    private static boolean rejected(String error) {
+        if (error == null) return false;
+        return error.startsWith("redirect_uri_mismatch") || error.startsWith("invalid_request")
+                || error.startsWith("unauthorized_client") || error.startsWith("invalid_client");
+    }
+
+    private static boolean mentionsScheme(String error) {
+        return error != null && error.toLowerCase(Locale.US).contains("scheme");
+    }
+
+    private static String firstLine(String error) {
+        if (error == null || error.isEmpty()) return "нет ответа";
+        int dot = error.indexOf('.');
+        return dot > 0 ? error.substring(0, dot) : error;
+    }
+
     /** Действующий access-token, при необходимости обновляется по refresh-token. */
     public static synchronized String accessTokenFresh(Context ctx) throws Exception {
         String token = accessToken(ctx);
@@ -209,6 +342,7 @@ public final class Auth {
         prefs(ctx).edit()
                 .remove(K_ACCESS).remove(K_REFRESH).remove(K_EXPIRES)
                 .remove(K_ACCOUNT).remove(K_VERIFIER).remove(K_STATE)
+                .remove(K_PROBE)
                 .apply();
     }
 }
