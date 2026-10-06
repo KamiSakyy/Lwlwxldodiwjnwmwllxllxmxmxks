@@ -177,13 +177,17 @@ for tfp, ms in A.items():
     e = rd(tfp)
     if e[0] is None: continue
     s = e[0]
+    is_iface = bool(re.search(r"\binterface\s+\w+", s))
     add = ""
     for meth, params in sorted(ms):
         have = re.findall(r"\b%s\s*\(([^)]*)\)" % re.escape(meth), s)
         have_k = {tuple(x.strip() for x in hh.split(",") if hh.strip()) for hh in have}
         if params in have_k: continue
         jparams = ", ".join("%s p%d" % (t, i2) for i2, t in enumerate(params, 1))
-        add += "    public Object %s(%s) { return null; }\n" % (meth, jparams)
+        if is_iface:
+            add += "    default Object %s(%s) { return null; }\n" % (meth, jparams)
+        else:
+            add += "    public Object %s(%s) { return null; }\n" % (meth, jparams)
         stats["A-добавлено"] += 1
     if add:
         i = e[0].rstrip().rfind("}")
