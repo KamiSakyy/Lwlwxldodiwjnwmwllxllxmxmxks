@@ -226,11 +226,11 @@ for f, ms in und_m.items():
         have_k = {tuple(x.strip() for x in hh.split(",") if hh.strip()) for hh in have}
         if params in have_k: continue
         jparams = []
-        for p in params:
+        for i2, p in enumerate(params, 1):
             if p in ("int", "boolean", "long", "char", "float", "double", "short", "byte"):
-                jparams.append(p)
+                jparams.append("%s p%d" % (p, i2))
             else:
-                jparams.append("Object")
+                jparams.append("Object p%d" % i2)
         add += "    public Object %s(%s) { return null; }\n" % (meth, ", ".join(jparams))
         stats["F-метод"] += 1
     if add:
