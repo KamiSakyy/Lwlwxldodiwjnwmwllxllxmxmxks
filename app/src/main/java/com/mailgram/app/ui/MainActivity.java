@@ -81,6 +81,24 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             public void onLongPress(Chat chat) {
                 showChatMenu(chat);
             }
+
+            @Override
+            public void onSwipePin(Chat chat) {
+                Store.get(MainActivity.this).setPinned(chat.uid, !chat.pinned);
+                Anim.haptic(list, false);
+                Ui.toast(MainActivity.this,
+                        getString(chat.pinned ? R.string.unpinned_chat : R.string.pinned_chat));
+                refresh();
+            }
+
+            @Override
+            public void onSwipeMute(Chat chat) {
+                Store.get(MainActivity.this).setMuted(chat.uid, !chat.muted);
+                Anim.haptic(list, true);
+                Ui.toast(MainActivity.this,
+                        getString(chat.muted ? R.string.unmuted_chat : R.string.muted_chat));
+                refresh();
+            }
         });
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);

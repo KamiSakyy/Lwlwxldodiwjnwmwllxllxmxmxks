@@ -257,4 +257,8 @@
     <string name="empty_pinned_text">Долгое нажатие по чату — и он всегда будет наверху.</string>
     <string name="empty_search_title">Ничего не найдено</string>
     <string name="empty_search_text">По запросу «%1$s» ничего нет. Проверьте раскладку или попробуйте другое слово.</string>
+    <string name="pinned_chat">Чат закреплён</string>
+    <string name="unpinned_chat">Чат откреплён</string>
+    <string name="muted_chat">Уведомления выключены</string>
+    <string name="unmuted_chat">Уведомления включены</string>
 </resources>

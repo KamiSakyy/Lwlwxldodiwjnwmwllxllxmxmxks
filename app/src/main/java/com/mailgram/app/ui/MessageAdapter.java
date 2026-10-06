@@ -366,6 +366,10 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         } else {
             h.text.setVisibility(text.isEmpty() ? View.GONE : View.VISIBLE);
             h.text.setText(text);
+            // Ссылки в тексте открываются по нажатию и подсвечиваются акцентом
+            if (android.text.util.Linkify.addLinks(h.text, android.text.util.Linkify.WEB_URLS)) {
+                h.text.setLinkTextColor(ctx.getResources().getColor(R.color.accent));
+            }
             h.text.setTypeface(null, android.graphics.Typeface.NORMAL);
             h.text.setTextColor(onBubble);
             h.text.setTextSize(16f * textScale);

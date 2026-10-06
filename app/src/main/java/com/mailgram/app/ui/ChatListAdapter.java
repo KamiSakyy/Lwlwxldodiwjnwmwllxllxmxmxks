@@ -23,6 +23,10 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         void onOpen(Chat chat);
 
         void onLongPress(Chat chat);
+
+        void onSwipePin(Chat chat);
+
+        void onSwipeMute(Chat chat);
     }
 
     private final List<Chat> items = new ArrayList<>();
@@ -49,6 +53,79 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
     public void setFilter(String query) {
         filter = query == null ? "" : query.trim().toLowerCase(java.util.Locale.US);
         applyFilter();
+    }
+
+    /** Свайп по строке: вправо — закрепить, влево — выключить или включить звук. */
+    private void attachSwipe(final View row, final Chat chat, final Actions actions) {
+        final android.graphics.drawable.Drawable original = row.getBackground();
+        row.setOnTouchListener(new View.OnTouchListener() {
+            private float downX;
+            private float downY;
+            private boolean swiping;
+            private boolean armed;
+
+            @Override
+            public boolean onTouch(View v, android.view.MotionEvent event) {
+                switch (event.getActionMasked()) {
+                    case android.view.MotionEvent.ACTION_DOWN:
+                        downX = event.getRawX();
+                        downY = event.getRawY();
+                        swiping = false;
+                        armed = false;
+                        return false;
+                    case android.view.MotionEvent.ACTION_MOVE: {
+                        float dx = event.getRawX() - downX;
+                        float dy = event.getRawY() - downY;
+                        if (!swiping && Math.abs(dx) > Ui.dp(v.getContext(), 18)
+                                && Math.abs(dx) > Math.abs(dy) * 1.5f) {
+                            swiping = true;
+                            if (v.getParent() != null) {
+                                v.getParent().requestDisallowInterceptTouchEvent(true);
+                            }
+                        }
+                        if (!swiping) return false;
+                        float limit = Ui.dp(v.getContext(), 96);
+                        float eased = Math.abs(dx) <= limit ? dx
+                                : (float) (Math.signum(dx) * (limit + (Math.abs(dx) - limit) * 0.25f));
+                        v.setTranslationX(eased);
+                        // подсветка намерения: закрепить (акцент) или выключить звук (серый)
+                        if (Math.abs(eased) > Ui.dp(v.getContext(), 8)) {
+                            v.setBackgroundResource(dx > 0
+                                    ? R.drawable.bg_swipe_pin : R.drawable.bg_swipe_mute);
+                        }
+                        boolean nowArmed = Math.abs(eased) > Ui.dp(v.getContext(), 64);
+                        if (nowArmed && !armed) {
+                            Anim.haptic(v, false);
+                        }
+                        armed = nowArmed;
+                        return true;
+                    }
+                    case android.view.MotionEvent.ACTION_UP:
+                    case android.view.MotionEvent.ACTION_CANCEL: {
+                        if (!swiping) return false;
+                        float dx = v.getTranslationX();
+                        v.animate().translationX(0f).setDuration(190L)
+                                .setInterpolator(Anim.EMPHASIZED).start();
+                        if (original != null) {
+                            v.setBackground(original);
+                        } else {
+                            v.setBackgroundResource(0);
+                        }
+                        if (Math.abs(dx) > Ui.dp(v.getContext(), 64)) {
+                            if (dx > 0) {
+                                actions.onSwipePin(chat);
+                            } else {
+                                actions.onSwipeMute(chat);
+                            }
+                        }
+                        swiping = false;
+                        return true;
+                    }
+                    default:
+                        return false;
+                }
+            }
+        });
     }
 
     /** Нижние стеклянные фильтры: все / непрочитанные / закреплённые. */
@@ -139,6 +216,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         }
 
         h.itemView.setOnClickListener(v -> actions.onOpen(chat));
+        attachSwipe(h.itemView, chat, actions);
         h.itemView.setOnLongClickListener(v -> {
             actions.onLongPress(chat);
             return true;
