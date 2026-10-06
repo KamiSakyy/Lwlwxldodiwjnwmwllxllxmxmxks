@@ -120,7 +120,7 @@ public final class GmailApi {
     }
 
     private static void sendBatch(String token, List<String> ids,
-                                  java.util.Map<String, Mail> out) throws Exception, Http.RateLimited {
+                                  java.util.Map<String, Mail> out) throws Exception {
         StringBuilder body = new StringBuilder();
         for (int k = 0; k < ids.size(); k++) {
             String id = ids.get(k);

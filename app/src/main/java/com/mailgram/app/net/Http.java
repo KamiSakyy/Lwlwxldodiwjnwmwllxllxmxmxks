@@ -108,7 +108,7 @@ public final class Http {
                 int code = conn.getResponseCode();
                 InputStream is = (code >= 200 && code < 300) ? conn.getInputStream() : conn.getErrorStream();
                 String text = is == null ? "" : readAll(is);
-                if (code >= 500 && attempt < 2) {
+                if (code >= 500 && attempt < 2) {   // сетевые 5xx — максимум 2 повтора
                     last = new HttpException(code, text);
                     sleep(400L * (attempt + 1));
                     continue;
