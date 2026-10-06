@@ -111,22 +111,26 @@ public class SettingsActivity extends AppCompatActivity {
         wallpaperValue.setText(wallpaperLabel(Prefs.wallpaper(this)));
         findViewById(R.id.row_wallpaper).setOnClickListener(Ui.tap(v -> wallpaperDialog(wallpaperValue)));
 
+        MaterialSwitch encryption = findViewById(R.id.switch_encryption);
+        if (encryption != null) {
+            // релиз 3.6: по умолчанию почтовый режим (без шифрования) — видно и отправляется
+            // всё; приватный режим включается вручную
+            encryption.setChecked(Prefs.mailEncryption(this));
+            encryption.setOnCheckedChangeListener((buttonView, isChecked) -> Ui.safely(this, () -> {
+                Prefs.setMailEncryption(this, isChecked);
+                Ui.toast(this, getString(isChecked
+                        ? R.string.encryption_on_toast : R.string.encryption_off_toast));
+                refreshRatchetRow();
+            }));
+        }
+
         MaterialSwitch notifications = findViewById(R.id.switch_notifications);
         notifications.setChecked(Prefs.notifications(this));
         notifications.setOnCheckedChangeListener((buttonView, isChecked) -> Ui.safely(this,
                 () -> Prefs.setNotifications(this, isChecked)));
 
         // криптография
-        TextView ratchetState = findViewById(R.id.settings_ratchet_state);
-        boolean anySession = false;
-        for (Chat chat : Store.get(this).chats()) {
-            if (com.mailgram.app.crypto.RatchetStore.hasSession(this, chat.uid)) {
-                anySession = true;
-                break;
-            }
-        }
-        ratchetState.setText(anySession ? getString(R.string.ratchet_state_on)
-                : getString(R.string.ratchet_state_wait));
+        refreshRatchetRow();
         findViewById(R.id.row_ratchet).setOnClickListener(Ui.tap(v -> showRatchetInfo()));
 
         // безопасность
@@ -294,6 +298,25 @@ public class SettingsActivity extends AppCompatActivity {
                 .setNegativeButton(R.string.done, null)
                 .setPositiveButton(R.string.copy, (d, w) -> Ui.copy(this, "MailGram key", value))
                 .show();
+    }
+
+    /** Строка «Ключи переписки»: учитываем, включено ли шифрование в принципе. */
+    private void refreshRatchetRow() {
+        TextView ratchetState = findViewById(R.id.settings_ratchet_state);
+        if (ratchetState == null) return;
+        if (!Prefs.mailEncryption(this)) {
+            ratchetState.setText(R.string.chat_mode_plain);
+            return;
+        }
+        boolean anySession = false;
+        for (Chat chat : Store.get(this).chats()) {
+            if (com.mailgram.app.crypto.RatchetStore.hasSession(this, chat.uid)) {
+                anySession = true;
+                break;
+            }
+        }
+        ratchetState.setText(anySession ? getString(R.string.ratchet_state_on)
+                : getString(R.string.ratchet_state_wait));
     }
 
     /** Показываем ссылку, которая реально подставляется в приглашение. */

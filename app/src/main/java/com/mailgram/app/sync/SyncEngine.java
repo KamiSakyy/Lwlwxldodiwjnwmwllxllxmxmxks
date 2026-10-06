@@ -1,6 +1,7 @@
 package com.mailgram.app.sync;
 
 import android.content.Context;
+import android.util.Base64;
 import android.util.Log;
 
 import com.mailgram.app.App;
@@ -54,6 +55,18 @@ public final class SyncEngine {
     public static final String PREKEY_MARKER = "X-MailGram-PreKey:";
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
     private static final Pattern PREKEY_LINE = Pattern.compile("X-MailGram-PreKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
+
+    /**
+     * Тема писем в режиме без шифрования: по ней письмо возвращается в нужный чат, а текст
+     * остаётся читаемым в любом почтовом клиенте.
+     */
+    public static final String SUBJECT_PREFIX_PLAIN = "MailGram #";
+    /** Вложение в открытом письме: [mailgram-attach b64:<данные>]. */
+    private static final Pattern PLAIN_ATTACH = Pattern.compile(
+            "\\n?\\[mailgram-attach b64:([A-Za-z0-9+/=\\s]+)\\]\\n?");
+    /** Служебная строка в конце открытого письма: -- [MailGram #<uid> "..." ...]]. */
+    private static final Pattern PLAIN_FOOTER = Pattern.compile(
+            "\\n?--\\s*\\[MailGram #\\w+ \"[^\\]]*\\]\\s*\\n?$");
 
     private static volatile SyncEngine instance;
 
@@ -269,10 +282,12 @@ public final class SyncEngine {
         String subject = mail.subject == null ? "" : mail.subject.trim();
         MailCrypto.Envelope env = null;
         String chatUid = null;
-        boolean fromSubject = subject.startsWith(MailCrypto.SUBJECT_PREFIX);
+        boolean plainSubject = subject.startsWith(SUBJECT_PREFIX_PLAIN);
+        boolean fromSubject = plainSubject || subject.startsWith(MailCrypto.SUBJECT_PREFIX);
 
         if (fromSubject) {
-            chatUid = subject.substring(MailCrypto.SUBJECT_PREFIX.length()).trim();
+            chatUid = subject.substring((plainSubject ? SUBJECT_PREFIX_PLAIN
+                    : MailCrypto.SUBJECT_PREFIX).length()).trim();
             chatUid = chatUid.split("\\s+")[0];
             String fromHeader = Store.normalizeEmail(mail.from);
             boolean headerOutgoing = (me != null && me.equalsIgnoreCase(fromHeader)) || fromHeader.isEmpty();
@@ -285,7 +300,7 @@ public final class SyncEngine {
                 }
             }
             try {
-                env = MailCrypto.open(app, mail.body, me, peerKeyForOwnMessage);
+                if (!plainSubject) env = MailCrypto.open(app, mail.body, me, peerKeyForOwnMessage);
             } catch (SecurityException se) {
                 if (headerOutgoing) {
                     // своё письмо, но ключа собеседника нет (например, отправлено с другого
@@ -373,6 +388,7 @@ public final class SyncEngine {
                 invite.unread = mail.unread && !outgoing;
                 return invite;
             }
+            if (plainSubject) return parsePlainLetter(store, mail, me, chatUid, subject);
             return null;
         }
 
@@ -671,12 +687,8 @@ public final class SyncEngine {
         pool.execute(() -> {
             try {
                 String me = Auth.account(app);
-                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid,
-                        UUID.randomUUID().toString(), System.currentTimeMillis(),
-                        B64.bytes(chat.peerPublic), payload.toString());
-                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
-                        MailCrypto.toMailBody(envelope), null, null);
-                GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
+                sendLetter(me, chat.peer, chat.uid, UUID.randomUUID().toString(), chat.peerPublic,
+                        payload.toString(), payload.optString("note", ""), null, "control", null);
                 notifyDirty();
                 if (callback != null) callback.onSent(null);
             } catch (Throwable e) {
@@ -734,12 +746,8 @@ public final class SyncEngine {
 
         pool.execute(() -> {
             try {
-                byte[] peerKey = B64.bytes(chat.peerPublic);
-                if (peerKey.length != 65) throw new IllegalStateException("ключ собеседника повреждён");
-                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, local.mid, local.ts, peerKey, payloadJson);
-                String subject = MailCrypto.SUBJECT_PREFIX + chat.uid;
-                String mime = Mime.build(me, chat.peer, subject, MailCrypto.toMailBody(envelope), local.mid, null);
-                String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
+                String gmailId = sendLetter(me, chat.peer, chat.uid, local.mid, chat.peerPublic,
+                        payloadJson, local.text, local.mediaB64, local.type, null);
                 store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
                 notifyDirty();
             } catch (Throwable e) {
@@ -780,11 +788,8 @@ public final class SyncEngine {
             try {
                 String me = Auth.account(app);
                 JSONObject payload = retryPayload(msg);
-                String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, msg.mid, msg.ts,
-                        B64.bytes(chat.peerPublic), payload.toString());
-                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
-                        MailCrypto.toMailBody(envelope), msg.mid, null);
-                String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
+                String gmailId = sendLetter(me, chat.peer, chat.uid, msg.mid, chat.peerPublic,
+                        payload.toString(), msg.text, msg.mediaB64, msg.type, null);
                 store.updateState(chat.uid, msg.mid, Msg.STATE_SENT, gmailId, null);
                 if (callback != null) callback.onSent(msg);
                 notifyDirty();
@@ -870,7 +875,9 @@ public final class SyncEngine {
                     body.append("(предключ для двойного крысиного шага — прямой секретности каждого сообщения)\r\n");
                 } catch (Exception ignored) {
                 }
-                String mime = Mime.build(me, peer, MailCrypto.SUBJECT_PREFIX + chatUid,
+                String mime = Mime.build(me, peer,
+                        (Prefs.mailEncryption(app) ? MailCrypto.SUBJECT_PREFIX : SUBJECT_PREFIX_PLAIN)
+                                + chatUid,
                         Mime.wrap(B64ToBody(body.toString())), mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chatUid, mid, Msg.STATE_SENT, gmailId, null);
@@ -906,6 +913,10 @@ public final class SyncEngine {
         }
         String senderName = headerName(mail.from, from);
         String body = plainBody(mail.body);
+        Matcher gfm = PLAIN_FOOTER.matcher(body);
+        if (gfm.find()) body = body.substring(0, gfm.start()).trim();
+        Matcher gam = PLAIN_ATTACH.matcher(body);
+        if (gam.find()) body = body.replace(gam.group(0), " ").trim();
         String subject = mail.subject == null ? "" : mail.subject.trim();
 
         Msg m = new Msg();
@@ -918,7 +929,7 @@ public final class SyncEngine {
         m.outgoing = outgoing;
         m.type = "text";
         m.subject = subject.isEmpty() ? str(com.mailgram.app.R.string.mail_no_subject) : subject;
-        m.text = (outgoing ? "" : senderName + " — ") + (body.isEmpty() ? str(R.string.mail_empty_body) : body);
+        m.text = (outgoing ? "" : senderName + " — ") + (body.isEmpty() ? str(com.mailgram.app.R.string.mail_empty_body) : body);
         m.gmailId = mail.id;
         m.state = Msg.STATE_SENT;
         m.unread = mail.unread;
@@ -927,6 +938,109 @@ public final class SyncEngine {
         return m;
     }
 
+
+    /**
+     * Письмо в открытом режиме (без шифрования): читаем текст, вытаскиваем вложение и
+     * привязываем письмо к чату по теме. Текст остаётся обычным письмом — его видно в Gmail.
+     */
+    private Msg parsePlainLetter(Store store, GmailApi.Mail mail, String me, String chatUid,
+                                 String subject) {
+        String raw = bodyWithDecoded(mail.body);
+        String text = raw == null ? "" : raw.trim();
+        String media = null;
+        Matcher am = PLAIN_ATTACH.matcher(text);
+        if (am.find()) {
+            media = am.group(1).replaceAll("\\s", "");
+            text = text.replace(am.group(0), "");
+        }
+        Matcher fm = PLAIN_FOOTER.matcher(text);
+        if (fm.find()) text = text.substring(0, fm.start()).trim();
+
+        String from = Store.normalizeEmail(mail.from);
+        boolean outgoing = me != null && me.equalsIgnoreCase(from);
+        String peer = outgoing ? Store.normalizeEmail(mail.to) : from;
+        if (peer.isEmpty()) peer = outgoing ? from : Store.normalizeEmail(mail.to);
+        if (peer.isEmpty()) peer = "неизвестный адрес";
+        Chat chat = store.ensureChat(chatUid, peer, null);
+
+        Msg m = new Msg();
+        m.mid = "plain:" + mail.id;
+        m.chat = chat.uid;
+        m.peer = peer;
+        m.from = from;
+        m.to = Store.normalizeEmail(mail.to);
+        m.ts = mail.internalDate > 0 ? mail.internalDate : System.currentTimeMillis();
+        m.outgoing = outgoing;
+        m.type = "text";
+        m.text = text.isEmpty() ? str(com.mailgram.app.R.string.mail_empty_body) : text;
+        String cleanSubject = subject.startsWith(SUBJECT_PREFIX_PLAIN) ? "" : subject;
+        m.subject = cleanSubject;
+        m.gmailId = mail.id;
+        m.state = Msg.STATE_SENT;
+        m.unread = mail.unread && !outgoing;
+        if (media != null && !media.isEmpty()) {
+            m.mediaB64 = media;
+            m.mediaMime = "image/jpeg";
+            m.type = "image";
+            m.fileName = "photo.jpg";
+        }
+        store.put(chat.uid, m);
+        return m;
+    }
+
+    /** Шифрование включено? Снимок настройки на время разбора/отправки одного письма. */
+    private boolean encryptionOn() {
+        return Prefs.mailEncryption(app);
+    }
+
+    /** Тема письма: с конвертом — «MailGram », в открытом режиме — «MailGram #». */
+    private String subjectFor(String chatUid) {
+        return (encryptionOn() ? MailCrypto.SUBJECT_PREFIX : SUBJECT_PREFIX_PLAIN) + chatUid;
+    }
+
+    /**
+     * Тело открытого письма: читаемый текст + (при необходимости) base64 вложения + служебная
+     * строка, по которой письмо вернётся в тот же чат. Так письмо можно прочитать и ответить
+     * на него из Gmail, Яндекс.Почты или Thunderbird — и оно не потеряется.
+     */
+    private static String plainMailBody(String text, String chatUid, String mid,
+                                        String type, String mediaB64) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(text == null ? "" : text);
+        if (mediaB64 != null && !mediaB64.isEmpty()) {
+            if (sb.length() > 0) sb.append("\r\n\r\n");
+            sb.append("[mailgram-attach b64:").append(mediaB64.trim()).append("]");
+        }
+        if (sb.length() == 0) sb.append("(пустое сообщение)");
+        sb.append("\r\n\r\n-- [MailGram #").append(chatUid).append("\" t: \"").append(type)
+                .append("\" id: \"").append(mid).append("\"]");
+        return sb.toString();
+    }
+
+    /**
+     * Собирает письмо и отправляет его, возвращая Gmail-id. Два режима:
+     *  • шифрование включено — обычный конверт MailCrypto (письмо нечитаемо для почты);
+     *  • шифрование выключено — открытое читаемое письмо, привязанное к чату темой.
+     */
+    private String sendLetter(String me, String to, String chatUid, String mid, String peerPublicB64,
+                              String payloadJson, String plainText, String mediaB64, String type,
+                              String inReplyTo) throws Exception {
+        if (encryptionOn()) {
+            byte[] peerKey = peerPublicB64 == null ? new byte[0] : B64.bytes(peerPublicB64);
+            if (peerKey.length != 65) {
+                throw new IllegalStateException("нужен открытый ключ собеседника — включите его "
+                        + "получение (приглашение) или отправляйте письмо без шифрования");
+            }
+            String envelope = MailCrypto.sealMessage(app, me, to, chatUid, mid,
+                    System.currentTimeMillis(), peerKey, payloadJson);
+            return GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(Mime.build(
+                    me, to, MailCrypto.SUBJECT_PREFIX + chatUid,
+                    MailCrypto.toMailBody(envelope), mid, inReplyTo)));
+        }
+        String body = plainMailBody(plainText, chatUid, mid, type, mediaB64);
+        return GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(Mime.build(
+                me, to, SUBJECT_PREFIX_PLAIN + chatUid, body, mid, inReplyTo)));
+    }
     private String str(int resId) {
         try {
             String v = app.getString(resId);
@@ -979,8 +1093,10 @@ public final class SyncEngine {
         String peer = from.isEmpty() ? Store.normalizeEmail(mail.to) : from;
         if (peer.isEmpty()) return;
         String subject = mail.subject == null ? "" : mail.subject.trim();
-        String uid = subject.startsWith(MailCrypto.SUBJECT_PREFIX)
-                ? subject.substring(MailCrypto.SUBJECT_PREFIX.length()).trim().split("\\s+")[0]
+        boolean plain = subject.startsWith(SUBJECT_PREFIX_PLAIN);
+        String uid = (plain || subject.startsWith(MailCrypto.SUBJECT_PREFIX))
+                ? subject.substring((plain ? SUBJECT_PREFIX_PLAIN
+                        : MailCrypto.SUBJECT_PREFIX).length()).trim().split("\\s+")[0]
                 : null;
         Chat chat = uid != null ? store.chat(uid) : null;
         if (chat == null) chat = store.chatByPeer(peer);

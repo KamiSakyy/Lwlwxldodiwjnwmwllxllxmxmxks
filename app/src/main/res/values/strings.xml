@@ -87,6 +87,11 @@
     <string name="poll_300">каждые 5 минут</string>
     <string name="settings_background">Фоновая проверка писем</string>
     <string name="settings_background_desc">Тихая служба синхронизации и уведомления даже когда приложение закрыто</string>
+    <string name="settings_mail_encryption">Сквозное шифрование</string>
+    <string name="settings_mail_encryption_desc">Выключено: письмо уходит обычным текстом — его видно в Gmail, читается в любом клиенте и не теряется. Включено: письмо шифруется на устройстве, почта видит только шифротекст (нужен ключ собеседника).</string>
+    <string name="chat_mode_plain">Открытый режим — письмо читается в почте</string>
+    <string name="encryption_off_toast">Шифрование выключено: письма уходят обычным текстом</string>
+    <string name="encryption_on_toast">Шифрование включено: письма уходят конвертом MailGram</string>
     <string name="settings_notifications">Уведомления</string>
     <string name="settings_security">Безопасность</string>
     <string name="settings_identity">Ключи устройства</string>

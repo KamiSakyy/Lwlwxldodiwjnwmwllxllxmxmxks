@@ -57,6 +57,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     /** Открыть чат сразу на нужном сообщении (переход из глобального поиска). */
     public static final String EXTRA_JUMP_MID = "jump_mid";
 
+    /** Релиз 3.6: по умолчанию почтовый режим — пишем открыто, шифрование включается вручную. */
+    private boolean encryptionOn() {
+        return com.mailgram.app.store.Prefs.mailEncryption(this);
+    }
+
     private static final int REQ_PICK_PHOTO = 3001;
     private static final int REQ_PICK_VIDEO = 3002;
     private static final int REQ_PICK_FILE = 3003;
@@ -787,11 +792,16 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             if (banner != null) banner.setVisibility(View.GONE);
         } else {
             if (subtitleView != null) {
-                subtitleView.setText(!hasKey
-                        ? getString(R.string.peer_no_key_short)
-                        : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
+                if (!encryptionOn()) {
+                    subtitleView.setText(getString(R.string.chat_mode_plain));
+                } else {
+                    subtitleView.setText(!hasKey
+                            ? getString(R.string.peer_no_key_short)
+                            : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
+                }
             }
-            if (banner != null) banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
+            if (banner != null) banner.setVisibility(hasKey || !encryptionOn()
+                    ? View.GONE : View.VISIBLE);
             if (bannerText != null) bannerText.setText(R.string.peer_no_key);
         }
 
@@ -882,7 +892,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             sendGenericText(text);
             return;
         }
-        if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
+        if (encryptionOn() && (chat.peerPublic == null || chat.peerPublic.isEmpty())) {
             inviteDialog();
             return;
         }
@@ -1203,11 +1213,12 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                            String fileName, boolean round, String caption) {
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
+        if (chat.generic || !encryptionOn()) {
+            // в открытом режиме вложение уходит прямо в письме (base64) — ключ не нужен
+            sendGenericMedia(type, data, mime, durationMs, fileName, round, caption);
+            return;
+        }
         if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
-            if (chat.generic) {
-                sendGenericMedia(type, data, mime, durationMs, fileName, round, caption);
-                return;
-            }
             inviteDialog();
             return;
         }
@@ -1360,7 +1371,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         final long duration = result.durationMs;
         final int[] wave = result.amplitudes;
         chat = Store.get(this).chat(uid);
-        if (chat == null || chat.peerPublic == null || chat.peerPublic.isEmpty()) {
+        if (chat == null || (encryptionOn()
+                && (chat.peerPublic == null || chat.peerPublic.isEmpty()))) {
             inviteDialog();
             return;
         }

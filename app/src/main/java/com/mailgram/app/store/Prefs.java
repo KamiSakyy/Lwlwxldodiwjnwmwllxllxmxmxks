@@ -63,6 +63,19 @@ public final class Prefs {
         p(ctx).edit().putBoolean("notifications", on).apply();
     }
 
+    /**
+     * Шифрование почты. По умолчанию ВЫКЛЮЧЕНО: релиз 3.6 — это прежде всего полноценный
+     * почтовый клиент, в котором видно, читается и отправляется абсолютно вся почта, а
+     * сквозной режим включается вручную (настройки → приватность).
+     */
+    public static boolean mailEncryption(Context ctx) {
+        return p(ctx).getBoolean("mail_encryption", false);
+    }
+
+    public static void setMailEncryption(Context ctx, boolean on) {
+        p(ctx).edit().putBoolean("mail_encryption", on).apply();
+    }
+
     public static String inviteLink(Context ctx) {
         return p(ctx).getString("invite_link",
                 "https://github.com/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/releases/latest");

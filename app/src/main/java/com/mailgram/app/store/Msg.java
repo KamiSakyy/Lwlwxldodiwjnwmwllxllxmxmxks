@@ -79,25 +79,6 @@ public final class Msg {
         if (subject == null) subject = "";
     }
 
-    /** Гарантированно непустые указатели: лента сравнивает их напрямую. */
-    public void sanitize() {
-        if (mid == null) mid = "";
-        if (chat == null) chat = "";
-        if (peer == null) peer = "";
-        if (from == null) from = "";
-        if (to == null) to = "";
-        if (type == null) type = "text";
-        if (text == null) text = "";
-        if (mediaB64 == null) mediaB64 = "";
-        if (mediaMime == null) mediaMime = "";
-        if (fileName == null) fileName = "";
-        if (wave == null) wave = "";
-        if (replyMid == null) replyMid = "";
-        if (replyPreview == null) replyPreview = "";
-        if (myReaction == null) myReaction = "";
-        if (gmailId == null) gmailId = "";
-        if (error == null) error = "";
-    }
 
     public JSONObject toJson() {
         JSONObject o = new JSONObject();
