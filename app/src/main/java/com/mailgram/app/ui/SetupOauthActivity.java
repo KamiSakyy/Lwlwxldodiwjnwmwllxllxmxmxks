@@ -27,6 +27,7 @@ public class SetupOauthActivity extends AppCompatActivity {
     private static final String CONSOLE_URL = "https://console.cloud.google.com/apis/credentials";
 
     private TextInputEditText clientIdField;
+    private TextInputEditText secretField;
     private RadioGroup modeGroup;
     private TextView modeNote;
     private TextView redirectView;
@@ -41,6 +42,8 @@ public class SetupOauthActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> finish());
 
         clientIdField = findViewById(R.id.setup_client_id);
+        secretField = findViewById(R.id.setup_client_secret);
+        secretField.setText(Auth.storedSecretHint(this));
         modeGroup = findViewById(R.id.setup_mode_group);
         modeNote = findViewById(R.id.setup_mode_note);
         redirectView = findViewById(R.id.setup_redirect);
@@ -131,6 +134,19 @@ public class SetupOauthActivity extends AppCompatActivity {
     }
 
     private void save() {
+        String typedSecret = secretField.getText() == null ? "" : secretField.getText().toString().trim();
+        boolean hintUnchanged = typedSecret.equals(Auth.storedSecretHint(this));
+        if (!typedSecret.isEmpty() && !hintUnchanged) {
+            try {
+                Auth.setStoredSecret(this, typedSecret);
+                Ui.toast(this, getString(R.string.setup_secret_saved));
+            } catch (Exception e) {
+                Ui.toast(this, String.valueOf(e.getMessage()));
+            }
+        } else if (typedSecret.isEmpty() && !Auth.storedSecret(this).isEmpty()) {
+            Auth.setStoredSecret(this, "");
+            Ui.toast(this, getString(R.string.setup_secret_cleared));
+        }
         if (Auth.clientIdFromBuild()) {
             // Client ID вшит при сборке: держим режим и хранилище в согласованном состоянии.
             Auth.setClientId(this, "");

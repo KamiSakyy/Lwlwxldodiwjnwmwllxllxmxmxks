@@ -103,6 +103,24 @@
                     android:maxLines="2" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/setup_secret_wrap"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/setup_client_secret"
+                app:helperText="@string/setup_client_secret_help"
+                app:helperTextEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/setup_client_secret"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <TextView style="@style/TextAppearance.MailGram.Caption"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:layout_marginTop="16dp" android:layout_marginBottom="4dp"

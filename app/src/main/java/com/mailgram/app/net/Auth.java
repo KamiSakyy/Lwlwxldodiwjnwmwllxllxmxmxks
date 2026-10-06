@@ -34,6 +34,7 @@ public final class Auth {
     private static final String K_ACCOUNT = "account";
     private static final String K_VERIFIER = "pkce_verifier";
     private static final String K_STATE = "pkce_state";
+    private static final String K_SECRET = "client_secret_sealed";
 
     private Auth() {
     }
@@ -60,7 +61,45 @@ public final class Auth {
 
     /** client_secret отправляем только клиенту типа Desktop: Android-клиенту он не применим. */
     public static String activeSecret(Context ctx) {
-        return MODE_LOOPBACK.equals(authMode(ctx)) ? clientSecret() : "";
+        if (!MODE_LOOPBACK.equals(authMode(ctx))) return "";
+        String stored = storedSecret(ctx);
+        return stored.isEmpty() ? clientSecret() : stored;
+    }
+
+    /** Секрет, введённый в приложении (лежит в настройках зашифрованным ключом Keystore). */
+    public static String storedSecret(Context ctx) {
+        String sealed = prefs(ctx).getString(K_SECRET, null);
+        if (sealed == null) return "";
+        try {
+            return B64.fromUtf8(KeystoreBox.open(ctx, sealed));
+        } catch (Exception e) {
+            Log.w(TAG, "не читается client_secret: " + e);
+            return "";
+        }
+    }
+
+    public static String storedSecretHint(Context ctx) {
+        String value = storedSecret(ctx);
+        if (value.isEmpty()) return "";
+        return value.length() <= 8 ? "••••" : value.substring(0, 4) + "…" + value.substring(value.length() - 4);
+    }
+
+    public static void setStoredSecret(Context ctx, String secret) {
+        String value = secret == null ? "" : secret.trim();
+        try {
+            if (value.isEmpty()) {
+                prefs(ctx).edit().remove(K_SECRET).apply();
+            } else {
+                prefs(ctx).edit().putString(K_SECRET, KeystoreBox.seal(ctx, B64.utf8(value))).apply();
+            }
+        } catch (Exception e) {
+            throw new IllegalStateException("не удалось сохранить client_secret: " + e.getMessage(), e);
+        }
+    }
+
+    /** Хватает ли данных для резервного пути (клиент Desktop + секрет). */
+    public static boolean hasDesktopSecret(Context ctx) {
+        return !storedSecret(ctx).isEmpty() || !clientSecret().isEmpty();
     }
 
     public static String clientIdFromSettings(Context ctx) {
@@ -288,12 +327,14 @@ public final class Auth {
             p.summary = "Вход пойдёт через локальный порт — готово";
         } else if (rejected(primaryScheme)) {
             p.rejected = true;
-            p.summary = p.secretMissing
-                    ? "Google отклоняет оба клиента: у Android-клиента выключен custom URI scheme, "
-                      + "а клиенту Desktop нужен client_secret"
-                    : (p.schemeDisabled
-                        ? "У Android-клиента выключен custom URI scheme — включите его в консоли Google"
-                        : "Google не принимает наш redirect URI для этого client ID");
+            if (p.schemeDisabled && p.secretMissing) {
+                p.summary = "Google отклоняет оба пути: Android-клиенту нужна галочка «Enable custom URI scheme» "
+                        + "в консоли, а клиенту Desktop — client_secret (введите его в «Настройке подключения»)";
+            } else if (p.schemeDisabled) {
+                p.summary = "У Android-клиента выключен custom URI scheme — включите галочку в консоли Google";
+            } else {
+                p.summary = "Google не принимает наш redirect URI для этого client ID";
+            }
         } else {
             p.inconclusive = true;
             p.summary = "не удалось проверить подключение (" + firstLine(primaryScheme) + ")";

@@ -65,6 +65,7 @@ jobs:
     name: Проверка OAuth-клиентов (живой запрос к Google)
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v7
       - name: Страница авторизации и token endpoint — все комбинации клиентов
         env:
           ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
@@ -118,13 +119,20 @@ jobs:
             echo "::notice title=Token endpoint [$label]::$(printf '%s' "$body" | head -c 220)"
           }
 
+          PRIMARY_ID=$(grep -oP "def defaultOauthClientId = '\\K[^']+" app/build.gradle || true)
+          MAIN_URI=$([ "$PRIMARY_ID" = "$ANDROID_ID" ] && echo "com.googleusercontent.apps.${ANDROID_ID%%%.apps.googleusercontent.com}:/oauth2redirect" || echo "http://127.0.0.1:7717/oauth2redirect")
+          page "ПУТЬ ПРИЛОЖЕНИЯ (основной клиент)" "$PRIMARY_ID" "$MAIN_URI"
           page "A. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
           page "B. Android-клиент + локальный порт" "$ANDROID_ID" "http://127.0.0.1:7717/oauth2redirect"
           page "C. Desktop-клиент + локальный порт" "$DESKTOP_ID" "http://127.0.0.1:7717/oauth2redirect"
           page "D. Desktop-клиент + схема" "$DESKTOP_ID" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect"
 
+          # Секрет Desktop-клиента: сначала секрет репозитория, иначе значение из сборки —
+          # так проверяется ровно тот путь, которым входит приложение.
           if [ -z "$DESKTOP_SECRET" ]; then
-            echo "::notice title=Секрет Desktop-клиента::в репозитории не задан секрет MAILGRAM_OAUTH_CLIENT_SECRET — token-пробы Desktop ниже покажут «client_secret is missing» (для страницы авторизации секрет не нужен)"
+            echo "::notice title=Секрет Desktop-клиента::секрет репозитория MAILGRAM_OAUTH_CLIENT_SECRET не задан — резервный путь (локальный порт) в этой сборке не заработает, токен-пробы Desktop покажут «client_secret is missing»"
+          else
+            echo "::notice title=Секрет Desktop-клиента::секрет репозитория задан — проверяю обмен кода с ним"
           fi
           token "A. Android-клиент + схема (без секрета)" "$ANDROID_ID" "" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
           token "C. Desktop-клиент + локальный порт" "$DESKTOP_ID" "$DESKTOP_SECRET" "http://127.0.0.1:7717/oauth2redirect"
@@ -187,6 +195,9 @@ jobs:
             echo "::notice title=Подпись::используется встроенный dev-keystore (пароль mailgram, alias mailgram)"
           fi
       - name: Сборка release APK
+        env:
+          # Секрет Desktop-клиента (если задан): в репозитории не хранится, попадает только в APK.
+          MAILGRAM_OAUTH_CLIENT_SECRET: ${{ secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
         run: |
           chmod +x gradlew
           set -o pipefail
@@ -219,6 +230,16 @@ jobs:
           else
             echo "::error title=OAuth::в манифесте нет схемы com.googleusercontent.apps.${SCHEME} — Google отклонит вход"
             exit 1
+          fi
+      - name: Сказать, какой путь входа зашит в APK
+        if: success()
+        env:
+          MAILGRAM_OAUTH_CLIENT_SECRET: ${{ secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
+        run: |
+          if [ -n "${MAILGRAM_OAUTH_CLIENT_SECRET}" ]; then
+            echo "::notice title=Вход::секрет Desktop-клиента передан — работает и резервный путь (локальный порт), даже если у Android-клиента выключена схема"
+          else
+            echo "::notice title=Вход::секрет Desktop-клиента не задан — вход пойдёт через Android-клиент, у него в консоли Google должна быть включена «Advanced Settings → Enable custom URI scheme»"
           fi
       - name: Отчёт о сборке
         if: always()
