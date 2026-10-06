@@ -6,7 +6,7 @@ from __future__ import annotations
 import os
 import sys
 import zipfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 
@@ -28,11 +28,13 @@ def report(path: Path) -> tuple[list[str], str]:
     with zipfile.ZipFile(path) as archive:
         files = [entry for entry in archive.infolist() if not entry.is_dir()]
     groups: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])
+    compression_methods: Counter[int] = Counter()
     for entry in files:
         values = groups[category(entry.filename)]
         values[0] += entry.file_size
         values[1] += entry.compress_size
         values[2] += 1
+        compression_methods[entry.compress_type] += 1
 
     lines = [
         f"### `{path.name}`",
@@ -51,15 +53,21 @@ def report(path: Path) -> tuple[list[str], str]:
     lines.append("")
 
     category_summary = ", ".join(
-        f"{name}={values[1]}B/{values[2]} files"
+        f"{name}={values[0]}B raw/{values[1]}B stored/{values[2]} files"
         for name, values in sorted(groups.items(), key=lambda item: item[1][1], reverse=True)
     )
+    method_names = {0: "STORE", 8: "DEFLATE", 12: "BZIP2", 14: "LZMA"}
+    method_summary = ",".join(
+        f"{method_names.get(method, str(method))}:{count}"
+        for method, count in sorted(compression_methods.items())
+    )
     largest_summary = "; ".join(
-        f"{entry.filename}={entry.compress_size}B" for entry in largest[:6]
+        f"{entry.filename}={entry.file_size}B/{entry.compress_size}B/{method_names.get(entry.compress_type, str(entry.compress_type))}"
+        for entry in largest[:6]
     )
     compact = (
-        f"{path.name}: {path.stat().st_size}B; {category_summary}; "
-        f"largest entries: {largest_summary}"
+        f"{path.name}: {path.stat().st_size}B; ZIP methods {method_summary}; "
+        f"categories {category_summary}; largest entries {largest_summary}"
     )
     return lines, compact
 

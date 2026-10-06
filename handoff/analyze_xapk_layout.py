@@ -65,7 +65,12 @@ def manifest_summary(data: object) -> str:
 
     visit(data)
     declared = ",".join(sorted(references)) or "none"
-    return f"APKPure manifest.json: keys={keys}; APK references={declared}"
+    total_size = data.get("total_size", "unknown")
+    xapk_version = data.get("xapk_version", "unknown")
+    return (
+        f"APKPure manifest.json: keys={keys}; APK references={declared}; "
+        f"total_size={total_size}; xapk_version={xapk_version}"
+    )
 
 
 def main() -> int:
