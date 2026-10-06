@@ -84,7 +84,7 @@ public final class n extends c71.j implements j71.e {
             if (length != 0) {
                 objArr = new Object[length];
                 x61.l.G(0, length, tVar, objArr);
-                x71.h a = t.e.a(length, 6, (x71.a) null);
+                x71.hShadow a = t.e.a(length, 6, (x71.a) null);
                 AtomicInteger atomicInteger = new AtomicInteger(length);
                 for (int i2 = 0; i2 < length; i2++) {
                     b0.z(zVar, null, null, new dn.c(this.B, i2, atomicInteger, a, (a71.c) null, 4), 3);

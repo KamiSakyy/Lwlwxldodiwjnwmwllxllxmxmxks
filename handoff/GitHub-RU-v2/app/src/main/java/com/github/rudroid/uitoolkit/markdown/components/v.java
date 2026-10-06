@@ -85,7 +85,7 @@ public final /* synthetic */ class v implements j71.e {
                 break;
             case 10:
                 ((Integer) obj2).getClass();
-                ef.d.b((w1.r) this.s, (j71.a) this.v, (l01.x) this.t, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(this.u | 1));
+                ef.d.b((w1.r) this.s, (j71.a) this.v, (l01.xShadow) this.t, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(this.u | 1));
                 break;
             case 11:
                 ((Integer) obj2).getClass();

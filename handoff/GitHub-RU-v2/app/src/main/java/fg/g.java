@@ -26,9 +26,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 import k71.k;
-import sg.k0;
+import sg.k0Shadow;
 import sg.v;
-import sg.y;
+import sg.yShadow;
 import w1.o;
 import w1.r;
 import w2.j0;
@@ -243,19 +243,19 @@ public final class g {
                                 runtimeFeatureFlag.getClass();
                                 if (RuntimeFeatureFlag.a(cVar)) {
                                     sVar3.c0(506795442);
-                                    y.a(100663296, 234, null, sVar3, null, null, v.d(0, sVar3), null, aVar8, b.a, androidx.compose.foundation.layout.b.z(p2.e(oVar, 1.0f), ih.a.n, 0.0f, 2), false);
+                                    yShadow.a(100663296, 234, null, sVar3, null, null, v.d(0, sVar3), null, aVar8, b.a, androidx.compose.foundation.layout.b.z(p2.e(oVar, 1.0f), ih.a.n, 0.0f, 2), false);
                                     sVar3.q(false);
                                 } else {
                                     e1 e1Var2 = e1.u;
                                     List list4 = list3;
                                     if (list4.contains(e1Var2)) {
                                         sVar3.c0(507543782);
-                                        y.a(100663296, 234, null, sVar3, null, null, v.d(0, sVar3), null, aVar2, b.b, androidx.compose.foundation.layout.b.z(p2.e(oVar, 1.0f), ih.a.n, 0.0f, 2), false);
+                                        yShadow.a(100663296, 234, null, sVar3, null, null, v.d(0, sVar3), null, aVar2, b.b, androidx.compose.foundation.layout.b.z(p2.e(oVar, 1.0f), ih.a.n, 0.0f, 2), false);
                                         sVar3.q(false);
                                     } else {
                                         if (list4.contains(e1.v)) {
                                             sVar3.c0(508320797);
-                                            y.a(100663296, 234, null, sVar3, null, null, v.d(0, sVar3), null, aVar4, b.c, androidx.compose.foundation.layout.b.z(p2.e(oVar, 1.0f), ih.a.n, 0.0f, 2), false);
+                                            yShadow.a(100663296, 234, null, sVar3, null, null, v.d(0, sVar3), null, aVar4, b.c, androidx.compose.foundation.layout.b.z(p2.e(oVar, 1.0f), ih.a.n, 0.0f, 2), false);
                                         } else {
                                             sVar3.c0(502048970);
                                         }
@@ -298,7 +298,7 @@ public final class g {
                 N = new com.github.rudroid.uitoolkit.markdown.components.c(13, aVar);
                 sVar.n0(N);
             }
-            k0.a(12582912, 122, null, sVar, null, null, null, (j71.a) N, r1.i.d(855885755, new m(str, 14), sVar), z, false);
+            k0Shadow.a(12582912, 122, null, sVar, null, null, null, (j71.a) N, r1.i.d(855885755, new m(str, 14), sVar), z, false);
         } else {
             sVar.V();
         }
@@ -333,16 +333,16 @@ public final class g {
                 } else {
                     sVar2.q0();
                 }
-                v2.e eVar = v2.g.f;
+                v2.eShadow eVar = v2.g.f;
                 t.I(sVar2, eVar, a2);
-                v2.e eVar2 = v2.g.e;
+                v2.eShadow eVar2 = v2.g.e;
                 t.I(sVar2, eVar2, l);
                 Integer valueOf = Integer.valueOf(hashCode);
-                v2.e eVar3 = v2.g.g;
+                v2.eShadow eVar3 = v2.g.g;
                 t.w(sVar2, valueOf, eVar3);
                 v2.d dVar = v2.g.h;
                 t.E(sVar2, dVar);
-                v2.e eVar4 = v2.g.d;
+                v2.eShadow eVar4 = v2.g.d;
                 t.I(sVar2, eVar4, c);
                 if (1.0f <= 0.0d) {
                     l0.a.a("invalid weight; must be greater than zero");
@@ -424,7 +424,7 @@ public final class g {
                     sVar2.c0(1507851385);
                     String upperCase = i4.p0(2131954532, sVar2).toUpperCase(Locale.ROOT);
                     k.f(upperCase, "toUpperCase(...)");
-                    k0.b(null, false, aVar, null, upperCase, null, sVar2, (i2 << 6) & 896, 43);
+                    k0Shadow.b(null, false, aVar, null, upperCase, null, sVar2, (i2 << 6) & 896, 43);
                 } else {
                     sVar2.c0(1499156815);
                 }

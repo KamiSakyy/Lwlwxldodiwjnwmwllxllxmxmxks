@@ -14,12 +14,12 @@ public abstract class l {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list = d0.a;
         aa.s c = no.a.c(list, "selections", "User", n, list);
-        List n2 = sy.d0.n("Organization");
+        List n2 = sy.d0Shadow.n("Organization");
         List list2 = c0.a;
         List r = x61.l.r(new aa.s[]{mVar, c, no.a.c(list2, "selections", "Organization", n2, list2)});
         aa.m mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);

@@ -2,15 +2,15 @@ package qy;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import py.m;
 import py.o;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.a {
     public static final l a = new l();
-    public static final List b = d0.o("id", "isInMergeQueue", "mergeQueue", "mergeQueueEntry", "__typename");
+    public static final List b = d0Shadow.o("id", "isInMergeQueue", "mergeQueue", "mergeQueueEntry", "__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         Boolean bool;
@@ -69,7 +69,7 @@ public final class l implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, oVar.a);
         fVar.z0("isInMergeQueue");
-        f4.C(oVar.b, aa.c.f, fVar, wVar, "mergeQueue");
+        f4Shadow.C(oVar.b, aa.c.f, fVar, wVar, "mergeQueue");
         aa.c.b(aa.c.c(i.a, true)).b(fVar, wVar, oVar.c);
         fVar.z0("mergeQueueEntry");
         aa.c.b(aa.c.c(j.a, true)).b(fVar, wVar, oVar.d);

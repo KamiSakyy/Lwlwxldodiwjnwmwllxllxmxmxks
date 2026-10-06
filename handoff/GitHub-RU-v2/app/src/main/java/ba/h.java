@@ -2,13 +2,13 @@ package ba;
 
 import a0.m0;
 import h91.i;
-import h91.k;
+import h91.kShadow;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
-import sy.d0;
+import sy.d0Shadow;
 import sy.w;
 import v8.l0;
 import w61.p;
@@ -22,7 +22,7 @@ public final class h implements d {
     public Map f3872r;
 
     /* renamed from: s, reason: collision with root package name */
-    public k f3873s;
+    public kShadow f3873s;
 
     /* renamed from: t, reason: collision with root package name */
     public String f3874t;
@@ -33,15 +33,15 @@ public final class h implements d {
     /* renamed from: v, reason: collision with root package name */
     public p f3876v;
 
-    public h(Map map, k kVar) {
-        k71.k.g(map, "uploads");
-        k71.k.g(kVar, "operationByteString");
+    public h(Map map, kShadow kVar) {
+        k71.kShadow.g(map, "uploads");
+        k71.kShadow.g(kVar, "operationByteString");
         this.f3872r = map;
         this.f3873s = kVar;
         UUID randomUUID = UUID.randomUUID();
-        k71.k.f(randomUUID, "randomUUID(...)");
+        k71.kShadow.f(randomUUID, "randomUUID(...)");
         String uuid = randomUUID.toString();
-        k71.k.f(uuid, "toString(...)");
+        k71.kShadow.f(uuid, "toString(...)");
         this.f3874t = uuid;
         this.f3875u = "multipart/form-data; boundary=".concat(uuid);
         this.f3876v = w.t(new m0(9, this));
@@ -56,7 +56,7 @@ public final class h implements d {
         iVar.d0("Content-Disposition: form-data; name=\"operations\"\r\n");
         iVar.d0("Content-Type: application/json\r\n");
         StringBuilder sb3 = new StringBuilder("Content-Length: ");
-        k kVar = this.f3873s;
+        kShadow kVar = this.f3873s;
         sb3.append(kVar.d());
         sb3.append("\r\n");
         iVar.d0(sb3.toString());
@@ -71,14 +71,14 @@ public final class h implements d {
         for (Object obj : entrySet) {
             int i10 = i + 1;
             if (i < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
-            arrayList.add(new w61.k(String.valueOf(i), d0.n(((Map.Entry) obj).getKey())));
+            arrayList.add(new w61.k(String.valueOf(i), d0Shadow.n(((Map.Entry) obj).getKey())));
             i = i10;
         }
         l0.U(aVar, x.A(arrayList));
-        k v4 = hVar.v(hVar.s);
+        kShadow v4 = hVar.v(hVar.s);
         iVar.d0("\r\n--" + str + "\r\n");
         iVar.d0("Content-Disposition: form-data; name=\"map\"\r\n");
         iVar.d0("Content-Type: application/json\r\n");

@@ -7,7 +7,7 @@ import bm.o;
 import bm.p;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.q1;
 import kotlinx.serialization.KSerializer;
 import sy.w;
@@ -32,7 +32,7 @@ public final class Separator extends d {
     public /* synthetic */ Separator(int i, l lVar, String str, String str2) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, Separator$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, Separator$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

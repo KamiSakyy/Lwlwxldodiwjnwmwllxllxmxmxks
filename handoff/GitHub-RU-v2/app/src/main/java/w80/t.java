@@ -24,12 +24,12 @@ public final class t implements aa.i0, bm.k, com.google.android.gms.measurement.
         this.r = i;
     }
 
-    public static final String e(h91.k kVar, h91.k[] kVarArr, int i) {
+    public static final String e(h91.kShadow kVar, h91.kShadow[] kVarArr, int i) {
         int i2;
         boolean z;
         int i3;
         int i4;
-        h91.k kVar2 = d91.a.b;
+        h91.kShadow kVar2 = d91.a.b;
         int d = kVar.d();
         int i5 = 0;
         while (i5 < d) {
@@ -168,7 +168,7 @@ public final class t implements aa.i0, bm.k, com.google.android.gms.measurement.
         List list = x80.b.a;
         List list2 = x80.b.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -192,7 +192,7 @@ public final class t implements aa.i0, bm.k, com.google.android.gms.measurement.
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(t.class).hashCode();
+                return k71.xShadow.a(t.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -218,10 +218,10 @@ public final class t implements aa.i0, bm.k, com.google.android.gms.measurement.
                 com.github.domain.database.serialization.a.Companion.getClass();
                 if (str != null) {
                     l81.n nVar = com.github.domain.database.serialization.a.b;
-                    list = (List) nVar.a(str, m71.a.z(new k81.d(b91.g.C(((l81.c) nVar).b, k71.x.a(yz0.f.class)), 0)));
+                    list = (List) nVar.a(str, m71.a.z(new k81.d(b91.g.C(((l81.c) nVar).b, k71.xShadow.a(yz0.f.class)), 0)));
                     break;
                 }
-                list = x61.r.r;
+                list = x61.rShadow.r;
                 return new AssigneeFilter(list);
             default:
                 if (str != null) {

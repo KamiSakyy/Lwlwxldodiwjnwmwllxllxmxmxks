@@ -7,7 +7,7 @@ import jn0.w50;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dt implements aaShadow.a {
     public static final dt a = new dt();
-    public static final List b = sy.d0.n("pullRequestReview");
+    public static final List b = sy.d0Shadow.n("pullRequestReview");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

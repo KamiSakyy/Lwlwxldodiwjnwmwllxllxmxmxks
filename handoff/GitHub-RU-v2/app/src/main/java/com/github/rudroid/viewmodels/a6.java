@@ -32,7 +32,7 @@ public final class a6 extends androidx.lifecycle.k1 implements v3, com.github.ru
 
     static {
         r71.e mVar = new k71.m(a6.class, "query", "getQuery()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         K = new r71.e[]{mVar};
         Companion = new a();
     }
@@ -53,17 +53,17 @@ public final class a6 extends androidx.lifecycle.k1 implements v3, com.github.ru
         this.x = iVar;
         this.y = cVar;
         this.z = y3Var;
-        this.A = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        this.A = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         Boolean bool = (Boolean) a1Var.a("EXTRA_HIDE_CREATE_PR_ENTRY");
         this.B = bool != null ? bool.booleanValue() : false;
-        y71.y1 c = y71.n1.c(Boolean.FALSE);
+        y71.y1 c = y71.n1Shadow.c(Boolean.FALSE);
         this.C = c;
         this.D = new y71.i1(c);
         this.E = new x01.i((String) null, false, true);
         this.F = new l6(this);
         this.G = (String) a1Var.a("EXTRA_REPO_OWNER");
         this.H = "";
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new z5(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new z5(this, null), 3);
     }
 
     public static final String P(a6 a6Var, String str) {
@@ -85,7 +85,7 @@ public final class a6 extends androidx.lifecycle.k1 implements v3, com.github.ru
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.J = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new h6(this, null), 3);
+        this.J = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new h6(this, null), 3);
     }
 
     public final String Q() {
@@ -127,7 +127,7 @@ public final class a6 extends androidx.lifecycle.k1 implements v3, com.github.ru
             if (q1Var3 != null) {
                 q1Var3.m((CancellationException) null);
             }
-            this.I = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new e6(this, null), 3);
+            this.I = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new e6(this, null), 3);
             this.H = S();
         }
     }
@@ -141,7 +141,7 @@ public final class a6 extends androidx.lifecycle.k1 implements v3, com.github.ru
         if (q1Var2 == null || !q1Var2.f()) {
             U();
         } else {
-            this.J = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new k6(this, null), 3);
+            this.J = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new k6(this, null), 3);
         }
     }
 

@@ -6,7 +6,7 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -57,8 +57,8 @@ public abstract class b implements aa.a {
         o0Var.b(fVar, wVar, aVar.a);
         fVar.z0("hasNextPage");
         aa.b bVar = c.f;
-        f4.C(aVar.b, bVar, fVar, wVar, "hasPreviousPage");
-        f4.C(aVar.c, bVar, fVar, wVar, "startCursor");
+        f4Shadow.C(aVar.b, bVar, fVar, wVar, "hasPreviousPage");
+        f4Shadow.C(aVar.c, bVar, fVar, wVar, "startCursor");
         o0Var.b(fVar, wVar, aVar.d);
     }
 }

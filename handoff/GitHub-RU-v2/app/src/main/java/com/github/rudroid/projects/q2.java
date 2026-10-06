@@ -76,7 +76,7 @@ public final class q2 extends androidx.lifecycle.a implements com.github.rudroid
         this.f17789w = wVar;
         this.f17790x = cVar;
         this.f17791y = l0Var;
-        y71.y1 c10 = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y71.y1 c10 = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.f17792z = c10;
         this.A = com.github.rudroid.utilities.w0.f(c10, androidx.lifecycle.d1.k(this), new p2(this, 0));
         this.B = new p2(this, 1);
@@ -90,7 +90,7 @@ public final class q2 extends androidx.lifecycle.a implements com.github.rudroid
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.C = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new v2(this, null), 3);
+        this.C = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v2(this, null), 3);
     }
 
     public final void R(ProjectV2OrderField projectV2OrderField, v01.a aVar) {

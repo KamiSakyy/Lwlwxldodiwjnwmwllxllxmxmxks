@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -27,7 +27,7 @@ public final class AgentTasksResponse {
     public /* synthetic */ AgentTasksResponse(int i, List list, boolean z) {
         this.a = (i & 1) == 0 ? false : z;
         if ((i & 2) == 0) {
-            this.b = r.r;
+            this.b = rShadow.r;
         } else {
             this.b = list;
         }

@@ -15,7 +15,7 @@ public final class cg {
         s = cgVarArr;
         v8.l0.t(cgVarArr);
         Companion = new bg();
-        sy.d0.o(new String[]{"PHONE", "TABLET"});
+        sy.d0Shadow.o(new String[]{"PHONE", "TABLET"});
     }
 
     public cg(String str, int i, String str2) {

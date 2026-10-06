@@ -19,7 +19,7 @@ import hc0.rn;
 import hc0.xa;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -31,7 +31,7 @@ public abstract class a {
         fb.Companion.getClass();
         x xVar = fb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = f30.a.a;
@@ -55,7 +55,7 @@ public abstract class a {
         fm.Companion.getClass();
         m mVar7 = new m("state", l0.b(fm.s), "pullRequestState", rVar, rVar, rVar);
         xa.Companion.getClass();
-        List r4 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Issue", d0.n("Issue"), r3), new n("PullRequest", d0.n("PullRequest"), l.r(new m[]{mVar7, new m("isDraft", l0.b(xa.a), (String) null, rVar, rVar, rVar), new m("title", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("url", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("number", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar4), (String) null, rVar, rVar, rVar)}))});
+        List r4 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Issue", d0Shadow.n("Issue"), r3), new n("PullRequest", d0Shadow.n("PullRequest"), l.r(new m[]{mVar7, new m("isDraft", l0.b(xa.a), (String) null, rVar, rVar, rVar), new m("title", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("url", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("number", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar4), (String) null, rVar, rVar, rVar)}))});
         m mVar8 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         m mVar9 = new m("id", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         hc0.l.Companion.getClass();

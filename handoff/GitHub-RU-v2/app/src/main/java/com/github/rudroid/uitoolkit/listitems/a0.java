@@ -115,7 +115,7 @@ public final class a0 {
                     sVar2.n0(N);
                 }
                 String str9 = str4;
-                w1.r f = f0.o.f(p2.e(com.github.rudroid.uitoolkit.extensions.d.a(rVar5, z2, (j71.c) N), 1.0f), ih.d.b(sVar2).b, d2.a0.b);
+                w1.r f = f0.o.f(p2.e(com.github.rudroid.uitoolkit.extensions.d.a(rVar5, z2, (j71.c) N), 1.0f), ih.d.b(sVar2).b, d2.a0Shadow.b);
                 float f2 = ih.a.m;
                 float f3 = ih.a.n;
                 w1.r A = androidx.compose.foundation.layout.b.A(f, f3, f2, f3, f2);
@@ -133,16 +133,16 @@ public final class a0 {
                 } else {
                     sVar2.q0();
                 }
-                v2.e eVar = v2.g.f;
+                v2.eShadow eVar = v2.g.f;
                 androidx.compose.runtime.t.I(sVar2, eVar, a);
-                v2.e eVar2 = v2.g.e;
+                v2.eShadow eVar2 = v2.g.e;
                 androidx.compose.runtime.t.I(sVar2, eVar2, l);
                 Integer valueOf = Integer.valueOf(hashCode);
-                v2.e eVar3 = v2.g.g;
+                v2.eShadow eVar3 = v2.g.g;
                 androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
                 v2.d dVar = v2.g.h;
                 androidx.compose.runtime.t.E(sVar2, dVar);
-                v2.e eVar4 = v2.g.d;
+                v2.eShadow eVar4 = v2.g.d;
                 androidx.compose.runtime.t.I(sVar2, eVar4, c);
                 w1.r o = p2.o(f0.o.f(rVar4, j, ih.d.e(sVar2).c), 32);
                 v0 d = androidx.compose.foundation.layout.t.d(w1.c.v, false);

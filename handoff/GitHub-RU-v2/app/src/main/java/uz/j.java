@@ -17,7 +17,7 @@ import m10.ow;
 import m10.q30;
 import m10.sa;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -29,13 +29,13 @@ public abstract class j {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("login", b, (String) null, rVar, rVar, rVar));
-        List n2 = d0.n(new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("login", b, (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar));
         s mVar = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
-        List r = l.r(new s[]{mVar, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("User", d0.n("User"), n), new n("Organization", d0.n("Organization"), n2)});
+        List r = l.r(new s[]{mVar, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("User", d0Shadow.n("User"), n), new n("Organization", d0Shadow.n("Organization"), n2)});
         List r2 = l.r(new m[]{new m("nameWithOwner", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         ch.Companion.getClass();
         x xVar3 = ch.a;

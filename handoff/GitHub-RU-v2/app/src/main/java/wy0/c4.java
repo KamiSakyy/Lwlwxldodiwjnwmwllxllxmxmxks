@@ -52,7 +52,7 @@ public final class c4 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar, k, this) == aVar) {
+                    if (y71.n1Shadow.q(jVar, k, this) == aVar) {
                         return aVar;
                     }
                 } else {
@@ -72,7 +72,7 @@ public final class c4 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, k2, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, k2, this) == aVar2) {
                         return aVar2;
                     }
                 } else {

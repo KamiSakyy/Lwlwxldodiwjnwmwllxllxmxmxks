@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ti implements aaShadow.a {
     public static final ti a = new ti();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         u10.kr krVar;
@@ -29,7 +29,7 @@ public final class ti implements aaShadow.a {
         }
         if (m71.a.v(m71.a.O(new String[]{"Repository"}), wVar.a, str, wVar.b)) {
             eVar.s0();
-            krVar = ui.c(eVar, wVar);
+            krVar = ui.cShadow(eVar, wVar);
         } else {
             krVar = null;
         }
@@ -52,7 +52,7 @@ public final class ti implements aaShadow.a {
         bVar.b(fVar, wVar, jrVar.b);
         u10.kr krVar = jrVar.c;
         if (krVar != null) {
-            ui.d(fVar, wVar, krVar);
+            ui.dShadow(fVar, wVar, krVar);
         }
     }
 }

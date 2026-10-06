@@ -12,7 +12,7 @@ import q81.n;
 import q81.p;
 import q81.y;
 import q81.z;
-import sy.d0;
+import sy.d0Shadow;
 import sy.u;
 import u81.m;
 
@@ -70,7 +70,7 @@ public final class b implements p {
         long currentTimeMillis = System.currentTimeMillis();
         boolean z2 = false;
         Object r14 = 1;
-        boolean z3 = d0.u((String) bVar.c) && yVar != null;
+        boolean z3 = d0Shadow.u((String) bVar.c) && yVar != null;
         boolean equalsIgnoreCase = "upgrade".equalsIgnoreCase(nVar2.a("Connection"));
         try {
             try {
@@ -94,7 +94,7 @@ public final class b implements p {
                                 y yVar2 = (y) bVar.e;
                                 k.d(yVar2);
                                 long a4 = yVar2.a();
-                                h91.d0 b = h91.b.b(new u81.e(t1Var, eVar.i(bVar, a4), a4, false));
+                                h91.d0Shadow b = h91.b.b(new u81.e(t1Var, eVar.i(bVar, a4), a4, false));
                                 yVar.d(b);
                                 b.close();
                                 r14 = "upgrade";

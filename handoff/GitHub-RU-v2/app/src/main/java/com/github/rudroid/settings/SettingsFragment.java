@@ -148,8 +148,8 @@ public final class SettingsFragment extends Hilt_SettingsFragment implements com
 
     public SettingsFragment() {
         w61.h s = sy.w.s(w61.i.s, new f(new e()));
-        this.L0 = new androidx.lifecycle.l1(k71.x.a(t2.class), new g(s), new i(s), new h(s));
-        this.M0 = new androidx.lifecycle.l1(k71.x.a(com.github.rudroid.support.s.class), new b(), new d(), new c());
+        this.L0 = new androidx.lifecycle.l1(k71.xShadow.a(t2.class), new g(s), new i(s), new h(s));
+        this.M0 = new androidx.lifecycle.l1(k71.xShadow.a(com.github.rudroid.support.s.class), new b(), new d(), new c());
     }
 
     public static void A4(SettingsFragment settingsFragment, String str, Bundle bundle) {
@@ -266,7 +266,7 @@ public final class SettingsFragment extends Hilt_SettingsFragment implements com
         for (Object obj : r) {
             int i3 = i2 + 1;
             if (i2 < 0) {
-                sy.d0.x();
+                sy.d0Shadow.x();
                 throw null;
             }
             String str = (String) obj;

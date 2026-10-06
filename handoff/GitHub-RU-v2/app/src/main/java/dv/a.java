@@ -18,7 +18,7 @@ import m10.ig;
 import m10.kg;
 import m10.ss;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -30,9 +30,9 @@ public abstract class a {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Repository");
+        List n = d0Shadow.n("Repository");
         List list = j.a;
         s c = no.a.c(list, "selections", "Repository", n, list);
         ah.Companion.getClass();
@@ -46,9 +46,9 @@ public abstract class a {
         m mVar4 = new m("url", l0.b(cc0.a), (String) null, rVar, rVar, rVar);
         p a2 = l0.a(kg.b);
         ig.Companion.getClass();
-        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Repository", d0.n("Repository"), r), new n("Gist", d0.n("Gist"), l.r(new m[]{mVar3, mVar4, new m("files", a2, (String) null, rVar, no.a.s(ig.a, new u0(1)), r2), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)}))});
+        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Repository", d0Shadow.n("Repository"), r), new n("Gist", d0Shadow.n("Gist"), l.r(new m[]{mVar3, mVar4, new m("files", a2, (String) null, rVar, no.a.s(ig.a, new u0(1)), r2), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)}))});
         cs.Companion.getClass();
-        List n2 = d0.n(new m("nodes", l0.a(cs.a), "pinnedItems", rVar, rVar, r3));
+        List n2 = d0Shadow.n(new m("nodes", l0.a(cs.a), "pinnedItems", rVar, rVar, r3));
         wg.Companion.getClass();
         m mVar5 = new m("hasPinnedItems", l0.b(wg.a), (String) null, rVar, rVar, rVar);
         es.Companion.getClass();

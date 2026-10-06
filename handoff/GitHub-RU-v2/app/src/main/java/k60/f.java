@@ -82,7 +82,7 @@ public final class f implements i0, bm.k, x, j7.b, j11.e {
         List list = l60.a.a;
         List list2 = l60.a.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new m("data", j0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -102,7 +102,7 @@ public final class f implements i0, bm.k, x, j7.b, j11.e {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(f.class).hashCode();
+                return k71.xShadow.a(f.class).hashCode();
             default:
                 return super.hashCode();
         }

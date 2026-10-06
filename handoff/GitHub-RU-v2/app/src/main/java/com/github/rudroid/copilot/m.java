@@ -6,5 +6,5 @@ import java.util.List;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final List f9888a = sy.d0.o(new String[]{"(Preview)", "(Beta)"});
+    public static final List f9888a = sy.d0Shadow.o(new String[]{"(Preview)", "(Beta)"});
 }

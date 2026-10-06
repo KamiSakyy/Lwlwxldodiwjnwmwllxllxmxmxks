@@ -5,7 +5,7 @@ public abstract class aw {
     public static final zv Companion = new zv();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("ProjectV2ItemIssueFieldValue", rVar, rVar);
     }
 }

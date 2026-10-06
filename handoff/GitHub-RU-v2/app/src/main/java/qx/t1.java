@@ -10,7 +10,7 @@ public final class t1 implements aa.h0 {
     public boolean D;
     public m1 E;
     public o1 F;
-    public f1 G;
+    public f1Shadow G;
     public eq.g H;
     public z6 I;
     public String a;
@@ -40,7 +40,7 @@ public final class t1 implements aa.h0 {
     public boolean y;
     public boolean z;
 
-    public t1(String str, String str2, String str3, String str4, String str5, String str6, g1 g1Var, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, h1 h1Var, String str7, String str8, String str9, k1 k1Var, String str10, n1 n1Var, q1 q1Var, p1 p1Var, r1 r1Var, boolean z6, l1 l1Var, boolean z7, boolean z8, String str11, boolean z9, boolean z11, boolean z12, m1 m1Var, o1 o1Var, f1 f1Var, eq.g gVar, z6 z6Var) {
+    public t1(String str, String str2, String str3, String str4, String str5, String str6, g1 g1Var, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, h1 h1Var, String str7, String str8, String str9, k1 k1Var, String str10, n1 n1Var, q1 q1Var, p1 p1Var, r1 r1Var, boolean z6, l1 l1Var, boolean z7, boolean z8, String str11, boolean z9, boolean z11, boolean z12, m1 m1Var, o1 o1Var, f1Shadow f1Var, eq.g gVar, z6 z6Var) {
         this.a = str;
         this.b = str2;
         this.c = str3;

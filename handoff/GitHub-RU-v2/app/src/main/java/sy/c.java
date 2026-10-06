@@ -65,7 +65,7 @@ public abstract class c {
                 }
             }
         }
-        ArrayList arrayList3 = x61.r.r;
+        ArrayList arrayList3 = x61.rShadow.r;
         if (arrayList == null) {
             arrayList = arrayList3;
         }
@@ -199,9 +199,9 @@ public abstract class c {
     public static final yz0.d2 i(lv.m mVar) {
         IssueOrPullRequest.ReviewerReviewState reviewerReviewState;
         String str = mVar.b;
-        x61.r rVar = mVar.f.a;
+        x61.rShadow rVar = mVar.f.a;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(rVar);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));

@@ -21,8 +21,8 @@ public abstract class cx {
     public static final aa.q0 n;
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        n = new aa.q0("ProjectV2View", n2, sy.d0.n(zp.a));
+        n = new aa.q0("ProjectV2View", n2, sy.d0Shadow.n(zp.a));
     }
 }

@@ -2,13 +2,13 @@ package i60;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t implements aa.a {
     public static final t a = new t();
-    public static final List b = d0.o("totalCount", "nodes");
+    public static final List b = d0Shadow.o("totalCount", "nodes");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class t implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = f4.c(1, nextLong, "substring(...)");
+                        nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

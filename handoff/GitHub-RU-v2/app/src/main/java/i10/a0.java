@@ -9,7 +9,7 @@ import m10.vp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 implements n0 {
-    public static final x Companion = new x();
+    public static final xShadow Companion = new xShadow();
     public int r;
 
     public a0(int i) {
@@ -23,7 +23,7 @@ public final class a0 implements n0 {
         List list = k10.f.a;
         List list2 = k10.f.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

@@ -3,7 +3,7 @@ package com.github.domain.users;
 import g81.d;
 import gn.n;
 import java.lang.annotation.Annotation;
-import k71.x;
+import k71.xShadow;
 import kotlinx.serialization.KSerializer;
 import r71.b;
 
@@ -12,6 +12,6 @@ public final class FetchUsersParams$Companion {
     public static final /* synthetic */ FetchUsersParams$Companion a = new FetchUsersParams$Companion();
 
     public final KSerializer serializer() {
-        return new d("com.github.domain.users.FetchUsersParams", x.a(n.class), new b[]{x.a(FetchUsersParams$FetchContributorsParams.class), x.a(FetchUsersParams$FetchFollowersParams.class), x.a(FetchUsersParams$FetchFollowingParams.class), x.a(FetchUsersParams$FetchReacteesParams.class), x.a(FetchUsersParams$FetchReleaseMentionsParams.class), x.a(FetchUsersParams$FetchSponsoringParams.class), x.a(FetchUsersParams$FetchStargazersParams.class), x.a(FetchUsersParams$FetchWatchersParams.class)}, new KSerializer[]{FetchUsersParams$FetchContributorsParams$$serializer.INSTANCE, FetchUsersParams$FetchFollowersParams$$serializer.INSTANCE, FetchUsersParams$FetchFollowingParams$$serializer.INSTANCE, FetchUsersParams$FetchReacteesParams$$serializer.INSTANCE, FetchUsersParams$FetchReleaseMentionsParams$$serializer.INSTANCE, FetchUsersParams$FetchSponsoringParams$$serializer.INSTANCE, FetchUsersParams$FetchStargazersParams$$serializer.INSTANCE, FetchUsersParams$FetchWatchersParams$$serializer.INSTANCE}, new Annotation[0]);
+        return new d("com.github.domain.users.FetchUsersParams", xShadow.a(n.class), new b[]{xShadow.a(FetchUsersParams$FetchContributorsParams.class), xShadow.a(FetchUsersParams$FetchFollowersParams.class), xShadow.a(FetchUsersParams$FetchFollowingParams.class), xShadow.a(FetchUsersParams$FetchReacteesParams.class), xShadow.a(FetchUsersParams$FetchReleaseMentionsParams.class), xShadow.a(FetchUsersParams$FetchSponsoringParams.class), xShadow.a(FetchUsersParams$FetchStargazersParams.class), xShadow.a(FetchUsersParams$FetchWatchersParams.class)}, new KSerializer[]{FetchUsersParams$FetchContributorsParams$$serializer.INSTANCE, FetchUsersParams$FetchFollowersParams$$serializer.INSTANCE, FetchUsersParams$FetchFollowingParams$$serializer.INSTANCE, FetchUsersParams$FetchReacteesParams$$serializer.INSTANCE, FetchUsersParams$FetchReleaseMentionsParams$$serializer.INSTANCE, FetchUsersParams$FetchSponsoringParams$$serializer.INSTANCE, FetchUsersParams$FetchStargazersParams$$serializer.INSTANCE, FetchUsersParams$FetchWatchersParams$$serializer.INSTANCE}, new Annotation[0]);
     }
 }

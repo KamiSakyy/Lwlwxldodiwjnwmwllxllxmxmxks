@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 implements aa.a {
     public static final l2 a = new l2();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -69,7 +69,7 @@ public final class l2 implements aa.a {
         fVar.z0("state");
         fVar.I(n3Var.h.r);
         fVar.z0("isDraft");
-        jo.f4.C(n3Var.i, aa.c.f, fVar, wVar, "number");
+        jo.f4Shadow.C(n3Var.i, aa.c.f, fVar, wVar, "number");
         fVar.z(n3Var.j);
         fVar.z0("repository");
         aa.c.c(p3.a, true).b(fVar, wVar, n3Var.k);

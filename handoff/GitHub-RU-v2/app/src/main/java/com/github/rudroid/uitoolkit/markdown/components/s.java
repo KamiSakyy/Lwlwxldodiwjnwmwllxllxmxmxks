@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import sy.d0;
+import sy.d0Shadow;
 import w2.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -58,12 +58,12 @@ public final class s {
                 }
                 k91.a aVar2 = (k91.a) obj;
                 ArrayList d = aVar2 != null ? d(aVar2) : null;
-                ArrayList arrayList2 = x61.r.r;
+                ArrayList arrayList2 = x61.rShadow.r;
                 if (d == null) {
                     d = arrayList2;
                 }
                 int size = d.size();
-                y61.b i3 = d0.i();
+                y61.b i3 = d0Shadow.i();
                 ArrayList arrayList3 = new ArrayList(size);
                 for (int i4 = 0; i4 < size; i4++) {
                     arrayList3.add((k91.a) x61.m.X(i4, d));
@@ -92,7 +92,7 @@ public final class s {
                     i3.add(new u(arrayList5, false));
                     size2 = size2;
                 }
-                y61.b h = d0.h(i3);
+                y61.b h = d0Shadow.h(i3);
                 Iterator it2 = aVar.a().iterator();
                 while (true) {
                     if (it2.hasNext()) {
@@ -208,7 +208,7 @@ public final class s {
                                             int i15 = i14 + 1;
                                             int i16 = i13 + 1;
                                             if (i13 < 0) {
-                                                d0.x();
+                                                d0Shadow.x();
                                                 throw null;
                                             }
                                             k91.a aVar4 = (k91.a) obj12;
@@ -365,7 +365,7 @@ public final class s {
                                         break;
                                     }
                                     float intValue2 = f4 + ((Number) list2.get(i7)).intValue();
-                                    if (i7 < d0.m(list2)) {
+                                    if (i7 < d0Shadow.m(list2)) {
                                         long floatToRawIntBits = Float.floatToRawIntBits(Float.intBitsToFloat((int) (dVar3.a() >> 32)));
                                         dVar3 = dVar3;
                                         dVar3.w(j2, (Float.floatToRawIntBits(0.0f) << 32) | (Float.floatToRawIntBits(intValue2) & 4294967295L), (Float.floatToRawIntBits(intValue2) & 4294967295L) | (floatToRawIntBits << 32), W);
@@ -376,7 +376,7 @@ public final class s {
                                 }
                                 List list3 = tVar.a;
                                 float W2 = dVar3.W(0.0f);
-                                int m = d0.m(list3);
+                                int m = d0Shadow.m(list3);
                                 float f5 = 0.0f;
                                 int i8 = 0;
                                 while (i8 < m) {

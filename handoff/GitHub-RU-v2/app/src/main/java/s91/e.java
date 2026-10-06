@@ -9,10 +9,10 @@ import java.util.List;
 import k71.k;
 import org.intellij.markdown.MarkdownParsingException;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import x61.l;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e {
@@ -116,7 +116,7 @@ public final class e {
             t91.d dVar4 = ((f) fVar.g).a;
             k.g(dVar4, "constraints");
             if (i4 == a0.l(dVar4, str2) && ((bVar = (u91.b) m.f0(arrayList3)) == null || bVar.b())) {
-                List<u91.b> list = r.r;
+                List<u91.b> list = rShadow.r;
                 if (i4 == -1) {
                     z2 = z;
                 } else {
@@ -144,7 +144,7 @@ public final class e {
                             z = z2;
                         } else {
                             z2 = z;
-                            list = (i4 < a0.l(((f) fVar.g).b, str2) || cVar.a() == null) ? list : d0.n(new v91.h(((f) fVar.g).a, new v(q1Var2), fVar.f));
+                            list = (i4 < a0.l(((f) fVar.g).b, str2) || cVar.a() == null) ? list : d0Shadow.n(new v91.h(((f) fVar.g).a, new v(q1Var2), fVar.f));
                         }
                     }
                 }

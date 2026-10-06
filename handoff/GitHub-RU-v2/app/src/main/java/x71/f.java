@@ -3,11 +3,11 @@ package x71;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends c71.c {
     public /* synthetic */ Object u;
-    public final /* synthetic */ h v;
+    public final /* synthetic */ hShadow v;
     public int w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public f(h hVar, c71.c cVar) {
+    public f(hShadow hVar, c71.c cVar) {
         super(cVar);
         this.v = hVar;
     }

@@ -18,8 +18,8 @@ public abstract class l1 {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List r = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("MarkdownFileType", sy.d0.n("MarkdownFileType"), sy.d0.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar))), new aa.n("TextFileType", sy.d0.n("TextFileType"), sy.d0.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar)))});
+        x61.rShadow rVar = x61.rShadow.r;
+        List r = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("MarkdownFileType", sy.d0Shadow.n("MarkdownFileType"), sy.d0Shadow.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar))), new aa.n("TextFileType", sy.d0Shadow.n("TextFileType"), sy.d0Shadow.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar)))});
         aa.m mVar = new aa.m("extension", xVar, (String) null, rVar, rVar, rVar);
         cc.Companion.getClass();
         aa.x0 x0Var = cc.a;
@@ -38,7 +38,7 @@ public abstract class l1 {
         List list = lw0.a.a;
         aa.s c = no.a.c(list, "selections", "Node", r4, list);
         ld.Companion.getClass();
-        List r5 = x61.l.r(new aa.s[]{mVar3, c, new aa.m("oid", v8.l0.b(ld.a), (String) null, rVar, rVar, rVar), new aa.n("Commit", sy.d0.n("Commit"), r3)});
+        List r5 = x61.l.r(new aa.s[]{mVar3, c, new aa.m("oid", v8.l0.b(ld.a), (String) null, rVar, rVar, rVar), new aa.n("Commit", sy.d0Shadow.n("Commit"), r3)});
         aa.m mVar4 = new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
         jd.Companion.getClass();
         aa.j0 j0Var = jd.a;

@@ -7,7 +7,7 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.Iterator;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import m10.bp;
 import m10.cr;
@@ -573,7 +573,7 @@ public final class b implements aa.a {
                 u0 u0Var10 = sqVar.a;
                 if (u0Var10 instanceof u0) {
                     fVar.z0("listIds");
-                    f4.d(aa.c.a).d(fVar, wVar, u0Var10);
+                    f4Shadow.d(aa.c.a).d(fVar, wVar, u0Var10);
                 }
                 if (u0Var9 instanceof u0) {
                     fVar.z0("reasons");
@@ -593,7 +593,7 @@ public final class b implements aa.a {
                 }
                 if (u0Var5 instanceof u0) {
                     fVar.z0("threadTypes");
-                    f4.d(aa.c.a).d(fVar, wVar, u0Var5);
+                    f4Shadow.d(aa.c.a).d(fVar, wVar, u0Var5);
                     return;
                 }
                 return;

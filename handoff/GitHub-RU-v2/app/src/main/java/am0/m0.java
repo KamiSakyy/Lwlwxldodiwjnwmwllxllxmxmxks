@@ -7,7 +7,7 @@ public final class m0 {
     public k c;
     public y d;
     public h e;
-    public a0 f;
+    public a0Shadow f;
     public l g;
     public o h;
     public p i;
@@ -19,7 +19,7 @@ public final class m0 {
     public v o;
     public m p;
 
-    public m0(String str, i iVar, k kVar, y yVar, h hVar, a0 a0Var, l lVar, o oVar, p pVar, t tVar, u uVar, r rVar, j jVar, s sVar, v vVar, m mVar) {
+    public m0(String str, i iVar, k kVar, y yVar, h hVar, a0Shadow a0Var, l lVar, o oVar, p pVar, t tVar, u uVar, r rVar, j jVar, s sVar, v vVar, m mVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = iVar;
@@ -60,7 +60,7 @@ public final class m0 {
         int hashCode4 = (hashCode3 + (yVar == null ? 0 : yVar.hashCode())) * 31;
         h hVar = this.e;
         int hashCode5 = (hashCode4 + (hVar == null ? 0 : hVar.hashCode())) * 31;
-        a0 a0Var = this.f;
+        a0Shadow a0Var = this.f;
         int hashCode6 = (hashCode5 + (a0Var == null ? 0 : a0Var.hashCode())) * 31;
         l lVar = this.g;
         int hashCode7 = (hashCode6 + (lVar == null ? 0 : lVar.hashCode())) * 31;

@@ -54,13 +54,13 @@ public final class q implements z01.e, yb0, mi0, y90, yf0 {
     public final Object a() {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new a61.l0(new y00.l(com.github.service.wrapper.a.o(this.s, new kc0.q3(), null, false, null, null, 58), 10), this, 29), this.t);
+                return y71.n1Shadow.y(new a61.l0(new y00.l(com.github.service.wrapper.a.o(this.s, new kc0.q3(), null, false, null, null, 58), 10), this, 29), this.t);
             case 1:
-                return y71.n1.y(new r3Shadow(5, new y00.l(com.github.service.wrapper.a.o(this.s, new jo.e4(), null, false, null, null, 58), 10), this), this.t);
+                return y71.n1Shadow.y(new r3Shadow(5, new y00.l(com.github.service.wrapper.a.o(this.s, new jo.e4(), null, false, null, null, 58), 10), this), this.t);
             case 2:
-                return y71.n1.y(new r3Shadow(10, new y00.l(com.github.service.wrapper.a.o(this.s, new u10.q3(), null, false, null, null, 58), 10), this), this.t);
+                return y71.n1Shadow.y(new r3Shadow(10, new y00.l(com.github.service.wrapper.a.o(this.s, new u10.q3(), null, false, null, null, 58), 10), this), this.t);
             default:
-                return y71.n1.y(new r3Shadow(13, new y00.l(com.github.service.wrapper.a.o(this.s, new jn0.w3(), null, false, null, null, 58), 10), this), this.t);
+                return y71.n1Shadow.y(new r3Shadow(13, new y00.l(com.github.service.wrapper.a.o(this.s, new jn0.w3(), null, false, null, null, 58), 10), this), this.t);
         }
     }
 

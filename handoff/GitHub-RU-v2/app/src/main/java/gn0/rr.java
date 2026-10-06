@@ -39,7 +39,7 @@ public final class rr {
         A = rrVarArr;
         B = v8.l0.t(rrVarArr);
         Companion = new qr();
-        sy.d0.o(new String[]{"ARCHIVED", "FORK", "MIRROR", "PRIVATE", "PUBLIC", "SOURCE", "SPONSORABLE", "TEMPLATE"});
+        sy.d0Shadow.o(new String[]{"ARCHIVED", "FORK", "MIRROR", "PRIVATE", "PUBLIC", "SOURCE", "SPONSORABLE", "TEMPLATE"});
     }
 
     public rr(String str, int i, String str2) {

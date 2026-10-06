@@ -15,13 +15,13 @@ import java.util.ArrayList;
 import java.util.concurrent.CancellationException;
 import kotlin.NoWhenBranchMatchedException;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e extends k1 {
     public static final a Companion = new a();
-    public static final ShortcutConfigurationModel F = new ShortcutConfigurationModel(x61.r.r, ShortcutColor.GRAY, ShortcutIcon.ZAP, ShortcutScope.AllRepositories.INSTANCE, ShortcutType.ISSUE, "");
+    public static final ShortcutConfigurationModel F = new ShortcutConfigurationModel(x61.rShadow.r, ShortcutColor.GRAY, ShortcutIcon.ZAP, ShortcutScope.AllRepositories.INSTANCE, ShortcutType.ISSUE, "");
     public y1 A;
     public y1 B;
     public q1 C;
@@ -50,7 +50,7 @@ public final class e extends k1 {
         this.t = mVar;
         this.u = aVar2;
         this.v = cVar;
-        ConfigureShortcutRoute configureShortcutRoute = (ConfigureShortcutRoute) sy.y.m(a1Var, k71.x.a(ConfigureShortcutRoute.class), ig.b.a);
+        ConfigureShortcutRoute configureShortcutRoute = (ConfigureShortcutRoute) sy.y.m(a1Var, k71.xShadow.a(ConfigureShortcutRoute.class), ig.b.a);
         wm.b bVar = configureShortcutRoute.r;
         this.w = bVar;
         this.x = configureShortcutRoute.t;
@@ -73,16 +73,16 @@ public final class e extends k1 {
         } else {
             shortcutConfigurationModel = F;
         }
-        y1 c = n1.c(shortcutConfigurationModel);
+        y1 c = n1Shadow.c(shortcutConfigurationModel);
         this.A = c;
         g1.Companion.getClass();
-        y1 c2 = n1.c(g1.a.a());
+        y1 c2 = n1Shadow.c(g1.a.a());
         this.B = c2;
-        y1 c3 = n1.c(Boolean.FALSE);
+        y1 c3 = n1Shadow.c(Boolean.FALSE);
         this.D = c3;
-        this.E = n1.c(new com.github.rudroid.shortcuts.a((wm.b) c.getValue(), ((Boolean) c3.getValue()).booleanValue(), (g1) c2.getValue()));
+        this.E = n1Shadow.c(new com.github.rudroid.shortcuts.a((wm.b) c.getValue(), ((Boolean) c3.getValue()).booleanValue(), (g1) c2.getValue()));
         Q();
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new d(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d(this, null), 3);
     }
 
     public final void P() {
@@ -91,9 +91,9 @@ public final class e extends k1 {
         String str = storedShortcutModel != null ? storedShortcutModel.r : null;
         y1 y1Var = this.A;
         if (str == null || str.length() == 0) {
-            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new g((wm.b) y1Var.getValue(), this, this.x, null), 3);
+            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new g((wm.b) y1Var.getValue(), this, this.x, null), 3);
         } else {
-            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new k((wm.b) y1Var.getValue(), this, this.x, str, null), 3);
+            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new k((wm.b) y1Var.getValue(), this, this.x, str, null), 3);
         }
     }
 
@@ -113,7 +113,7 @@ public final class e extends k1 {
         }
         ShortcutScope.SpecificRepository specificRepository2 = specificRepository;
         if (this.v.d().f(com.github.rudroid.common.a.E)) {
-            this.C = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new i(this, specificRepository2, null), 3);
+            this.C = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new i(this, specificRepository2, null), 3);
             return;
         }
         Boolean bool2 = Boolean.FALSE;

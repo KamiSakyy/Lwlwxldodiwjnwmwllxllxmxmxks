@@ -7,8 +7,8 @@ import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class d4 implements KSerializer {
-    public static final d4 a = new d4();
+public final class d4Shadow implements KSerializer {
+    public static final d4Shadow a = new d4Shadow();
     public static final l81.n b = d5.q(new q1(1));
     public static final k81.i1 c = y41.t1.b("SteerCommand");
 
@@ -29,7 +29,7 @@ public final class d4 implements KSerializer {
         } else if (c4Var instanceof a4) {
             b2 = "";
         } else {
-            b2 = b.b(b91.g.J(k71.x.a(c4Var.getClass())), c4Var);
+            b2 = b.b(b91.g.J(k71.xShadow.a(c4Var.getClass())), c4Var);
         }
         encoder.p(b2);
     }

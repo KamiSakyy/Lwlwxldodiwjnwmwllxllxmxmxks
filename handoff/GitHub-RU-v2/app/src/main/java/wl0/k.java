@@ -5,7 +5,7 @@ import gn0.si;
 import gn0.ti;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract /* synthetic */ class k {
+public abstract /* synthetic */ class kShadow {
     public static final /* synthetic */ int[] a;
 
     static {

@@ -1,7 +1,7 @@
 package c71;
 
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import k71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -23,7 +23,7 @@ public abstract class i extends h implements k71.h {
         if (this.r != null) {
             return super.toString();
         }
-        x.a.getClass();
+        xShadow.a.getClass();
         String a = y.a(this);
         k.f(a, "renderLambdaToString(...)");
         return a;

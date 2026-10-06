@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z5 implements aa.a {
     public static final z5 a = new z5();
-    public static final List b = sy.d0.o(new String[]{"id", "viewerCanBlock", "viewerCanUnblock", "viewerIsFollowing", "isFollowingViewer", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "viewerCanBlock", "viewerCanUnblock", "viewerIsFollowing", "isFollowingViewer", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -87,10 +87,10 @@ public final class z5 implements aa.a {
         bVar.b(fVar, wVar, w5Var.a);
         fVar.z0("viewerCanBlock");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(w5Var.b, bVar2, fVar, wVar, "viewerCanUnblock");
-        jo.f4.C(w5Var.c, bVar2, fVar, wVar, "viewerIsFollowing");
-        jo.f4.C(w5Var.d, bVar2, fVar, wVar, "isFollowingViewer");
-        jo.f4.C(w5Var.e, bVar2, fVar, wVar, "__typename");
+        jo.f4Shadow.C(w5Var.b, bVar2, fVar, wVar, "viewerCanUnblock");
+        jo.f4Shadow.C(w5Var.c, bVar2, fVar, wVar, "viewerIsFollowing");
+        jo.f4Shadow.C(w5Var.d, bVar2, fVar, wVar, "isFollowingViewer");
+        jo.f4Shadow.C(w5Var.e, bVar2, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, w5Var.f);
     }
 }

@@ -2,7 +2,7 @@ package px0;
 
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -43,7 +43,7 @@ public abstract class o implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -140,14 +140,14 @@ public abstract class o implements aa.a {
         bVar.b(fVar, wVar, pVar.b);
         fVar.z0("isDraft");
         aa.b bVar2 = aa.c.f;
-        f4.C(pVar.c, bVar2, fVar, wVar, "number");
+        f4Shadow.C(pVar.c, bVar2, fVar, wVar, "number");
         fVar.z(pVar.d);
         fVar.z0("pullRequestState");
         fVar.I(pVar.e.r);
         fVar.z0("repository");
         aa.c.c(i0.a, false).b(fVar, wVar, pVar.f);
         fVar.z0("isInMergeQueue");
-        f4.C(pVar.g, bVar2, fVar, wVar, "titleHTML");
+        f4Shadow.C(pVar.g, bVar2, fVar, wVar, "titleHTML");
         bVar.b(fVar, wVar, pVar.h);
     }
 }

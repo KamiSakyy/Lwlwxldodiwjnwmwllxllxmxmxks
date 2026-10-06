@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o3 implements aaShadow.a {
     public static final o3 a = new o3();
-    public static final List b = sy.d0.o("id", "state", "viewerCanReopen", "viewerCanDeleteHeadRef", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "state", "viewerCanReopen", "viewerCanDeleteHeadRef", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -97,8 +97,8 @@ public final class o3 implements aaShadow.a {
         fVar.I(o5Var.b.r);
         fVar.z0("viewerCanReopen");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(o5Var.c, bVar2, fVar, wVar, "viewerCanDeleteHeadRef");
-        jo.f4.C(o5Var.d, bVar2, fVar, wVar, "__typename");
+        jo.f4Shadow.C(o5Var.c, bVar2, fVar, wVar, "viewerCanDeleteHeadRef");
+        jo.f4Shadow.C(o5Var.d, bVar2, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, o5Var.e);
     }
 }

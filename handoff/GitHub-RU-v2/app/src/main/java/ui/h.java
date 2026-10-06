@@ -3,7 +3,7 @@ package ui;
 import y71.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h {
+public final class hShadow {
     public oa.g a;
 
     public h(oa.g gVar) {
@@ -11,7 +11,7 @@ public final class h {
         this.a = gVar;
     }
 
-    public final y a(oa.j jVar, String str, String str2, j71.c cVar) {
+    public final y a(oa.j jVar, String str, String str2, j71.cShadow cVar) {
         k71.k.g(jVar, "user");
         k71.k.g(str, "repoOwner");
         k71.k.g(str2, "repoName");

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l01.c;
 import l01.j0;
@@ -42,7 +42,7 @@ public final class ProjectV2Field$ProjectV2SingleSelectField implements j0 {
 
     public /* synthetic */ ProjectV2Field$ProjectV2SingleSelectField(int i, String str, int i2, String str2, ProjectFieldType projectFieldType, List list) {
         if (31 != (i & 31)) {
-            c1.l(i, 31, ProjectV2Field$ProjectV2SingleSelectField$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 31, ProjectV2Field$ProjectV2SingleSelectField$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

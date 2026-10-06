@@ -43,6 +43,6 @@ public class FirebaseMessagingRegistrar implements ComponentRegistrar {
         a.a(i.a(c.class));
         a.f = new n51.b(oVar, 1);
         a.i(1);
-        return Arrays.asList(a.b(), sy.o.c(LIBRARY_NAME, "24.1.2"));
+        return Arrays.asList(a.b(), sy.oShadow.c(LIBRARY_NAME, "24.1.2"));
     }
 }

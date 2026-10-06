@@ -2,11 +2,11 @@ package wi0;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class q implements aa.a {
-    public static final List a = d0.n("id");
+    public static final List a = d0Shadow.n("id");
 
     public static k c(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

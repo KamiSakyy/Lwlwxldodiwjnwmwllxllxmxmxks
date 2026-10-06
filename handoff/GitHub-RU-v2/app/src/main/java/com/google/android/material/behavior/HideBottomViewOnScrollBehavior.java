@@ -13,7 +13,7 @@ import androidx.fragment.app.h1;
 import b31.a;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import jo.f4;
+import jo.f4Shadow;
 import l4.b;
 
 @Deprecated
@@ -77,7 +77,7 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends b {
         this.j = 1;
         Iterator it = this.a.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
         this.k = view.animate().translationY(this.f).setInterpolator(this.e).setDuration(this.c).setListener(new k1(1, this));
     }
@@ -98,7 +98,7 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends b {
         this.j = 2;
         Iterator it = this.a.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
         this.k = view.animate().translationY(0).setInterpolator(this.d).setDuration(this.b).setListener(new k1(1, this));
     }

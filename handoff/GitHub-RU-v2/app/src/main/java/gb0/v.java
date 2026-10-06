@@ -9,13 +9,13 @@ public abstract class v implements aa.a {
     public static fb0.w c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        fb0.a0 a0Var = null;
+        fb0.a0Shadow a0Var = null;
         String str = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
-                a0Var = (fb0.a0) aa.c.c(z.a, false).a(eVar, wVar);
+                a0Var = (fb0.a0Shadow) aa.c.c(z.a, false).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {

@@ -40,7 +40,7 @@ public abstract class h5 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -152,10 +152,10 @@ public abstract class h5 implements aa.a {
         aa.c.i.b(fVar, wVar, b5Var.e);
         fVar.z0("public");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(b5Var.f, bVar2, fVar, wVar, "url");
+        jo.f4Shadow.C(b5Var.f, bVar2, fVar, wVar, "url");
         bVar.b(fVar, wVar, b5Var.g);
         fVar.z0("closed");
-        jo.f4.C(b5Var.h, bVar2, fVar, wVar, "owner");
+        jo.f4Shadow.C(b5Var.h, bVar2, fVar, wVar, "owner");
         aa.c.c(f5.a, true).b(fVar, wVar, b5Var.i);
         fVar.z0("repositories");
         aa.c.c(g5.a, false).b(fVar, wVar, b5Var.j);

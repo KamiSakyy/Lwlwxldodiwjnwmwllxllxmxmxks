@@ -47,7 +47,7 @@ public interface u4 {
             sb2.append(", model=");
             sb2.append(this.f10062b);
             sb2.append(", isLoading=");
-            return jo.f4.s(sb2, this.f10063c, ", shouldHideUserTextInput=true)");
+            return jo.f4Shadow.s(sb2, this.f10063c, ", shouldHideUserTextInput=true)");
         }
     }
 
@@ -209,7 +209,7 @@ public interface u4 {
         }
 
         public final String toString() {
-            return jo.f4.s(com.github.rudroid.m0.o("CopilotPaidExceededOverageQuotaBannerModel(resetDate=", this.f10071a, ", showUpgradeOption=", ", showFallbackModelOption=", this.f10072b), this.f10073c, ", shouldHideUserTextInput=true)");
+            return jo.f4Shadow.s(com.github.rudroid.m0.o("CopilotPaidExceededOverageQuotaBannerModel(resetDate=", this.f10071a, ", showUpgradeOption=", ", showFallbackModelOption=", this.f10072b), this.f10073c, ", shouldHideUserTextInput=true)");
         }
     }
 
@@ -252,7 +252,7 @@ public interface u4 {
         }
 
         public final String toString() {
-            return jo.f4.s(com.github.rudroid.m0.o("CopilotPaidReachedRateLimitBannerModel(resetDate=", this.f10074a, ", showUpgradeOption=", ", showFallbackModelOption=", this.f10075b), this.f10076c, ", shouldHideUserTextInput=true)");
+            return jo.f4Shadow.s(com.github.rudroid.m0.o("CopilotPaidReachedRateLimitBannerModel(resetDate=", this.f10074a, ", showUpgradeOption=", ", showFallbackModelOption=", this.f10075b), this.f10076c, ", shouldHideUserTextInput=true)");
         }
     }
 

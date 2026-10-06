@@ -13,7 +13,7 @@ public final class u {
 
     public final synchronized t a() {
         String str;
-        t tVar;
+        tShadow tVar;
         l1 l1Var = this.a;
         synchronized (((ArrayDeque) l1Var.u)) {
             str = (String) ((ArrayDeque) l1Var.u).peek();
@@ -23,7 +23,7 @@ public final class u {
         if (!TextUtils.isEmpty(str)) {
             String[] split = str.split("!", -1);
             if (split.length == 2) {
-                tVar = new t(split[0], split[1]);
+                tVar = new tShadow(split[0], split[1]);
             }
         }
         return tVar;

@@ -12,7 +12,7 @@ import org.json.JSONObject;
 import q81.a0;
 import q81.q;
 import q81.w;
-import q81.x;
+import q81.xShadow;
 import q81.y;
 import sy.c0;
 import t71.n;
@@ -32,7 +32,7 @@ public final class c extends c0 {
 
     @Override // sy.c0
     public final androidx.lifecycle.b k() {
-        x xVar = y.Companion;
+        xShadow xVar = y.Companion;
         JSONObject jSONObject = new JSONObject();
         jSONObject.put("eventType", "usage");
         JSONObject jSONObject2 = new JSONObject();
@@ -46,7 +46,7 @@ public final class c extends c0 {
         n nVar = q.d;
         q g0 = i4.g0("application/json; charset=utf-8");
         xVar.getClass();
-        w a = x.a(jSONObject3, g0);
+        w a = xShadow.a(jSONObject3, g0);
         l1 l1Var = new l1(11);
         l1Var.I("https://central.github.com/api/usage/mobile");
         l1Var.G(j0.class, new j0());

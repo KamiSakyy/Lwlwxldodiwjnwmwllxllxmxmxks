@@ -3,18 +3,18 @@ package sa0;
 import aa.w;
 import java.util.List;
 import ra0.g0;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements aa.a {
     public static final v a = new v();
-    public static final List b = d0.o("id", "lists", "__typename");
+    public static final List b = d0Shadow.o("id", "lists", "__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
-        ra0.d0 d0Var = null;
+        ra0.d0Shadow d0Var = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(b);

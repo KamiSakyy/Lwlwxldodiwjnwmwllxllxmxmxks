@@ -64,7 +64,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
     public ShortcutWidgetSettingsActivity() {
         this.h0 = false;
         C(new com.github.rudroid.widget.shortcuts.c(this));
-        this.i0 = new l1(k71.x.a(com.github.rudroid.widget.shortcuts.viewmodel.f.class), new c(), new b(), new d());
+        this.i0 = new l1(k71.xShadow.a(com.github.rudroid.widget.shortcuts.viewmodel.f.class), new c(), new b(), new d());
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -84,11 +84,11 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                     final StoredShortcutModel storedShortcutModel = ((com.github.rudroid.widget.shortcuts.viewmodel.b) n.getValue()).d;
                     final List list = ((com.github.rudroid.widget.shortcuts.viewmodel.b) n.getValue()).c;
                     final g1 g1Var = ((com.github.rudroid.widget.shortcuts.viewmodel.b) n.getValue()).e_r7;
-                    x61.r rVar = (List) ((com.github.rudroid.widget.shortcuts.viewmodel.b) n.getValue()).e_r7.getData();
+                    x61.rShadow rVar = (List) ((com.github.rudroid.widget.shortcuts.viewmodel.b) n.getValue()).e_r7.getData();
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
-                    final x61.r rVar2 = rVar;
+                    final x61.rShadow rVar2 = rVar;
                     final float f = ((com.github.rudroid.widget.shortcuts.viewmodel.b) n.getValue()).f;
                     final z1 v = f0.o.v(sVar);
                     Object[] objArr = new Object[0];
@@ -203,7 +203,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                                                 }
                                                 String str3 = str2;
                                                 long j2 = ih.d.b(sVar4).d;
-                                                d2.l0 l0Var = d2.a0.b;
+                                                d2.l0 l0Var = d2.a0Shadow.b;
                                                 w1.r e_r7 = p2.e_r7(f0.o.f(oVar, j2, l0Var), 1.0f);
                                                 float f3 = ih.a.n;
                                                 float f4 = ih.a.l;
@@ -258,7 +258,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                                                     sVar4.n0(aVar4);
                                                     obj11 = aVar4;
                                                 }
-                                                sg.k0.b(null, false, (j71.a) obj11, null, str3, null, sVar4, 0, 43);
+                                                sg.k0Shadow.b(null, false, (j71.a) obj11, null, str3, null, sVar4, 0, 43);
                                                 sVar4.q(true);
                                                 String p03 = i4.p0(2131954618, sVar4);
                                                 StoredShortcutModel storedShortcutModel3 = storedShortcutModel2;
@@ -319,7 +319,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                                                     z = true;
                                                     obj9 = N4;
                                                 }
-                                                sg.k0.b(null, z4, (j71.a) obj9, null, str5, null, sVar4, 0, 41);
+                                                sg.k0Shadow.b(null, z4, (j71.a) obj9, null, str5, null, sVar4, 0, 41);
                                                 sVar4.q(z);
                                                 w1.r y3 = androidx.compose.foundation.layout.b.y(p2.e_r7(f0.o.f(oVar, ih.d.b(sVar4).d, l0Var), 1.0f), f3, f4);
                                                 float f8 = f2;
@@ -380,7 +380,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                                                     }
                                                     g0Var = this;
                                                     jVar3 = jVar4;
-                                                    xg.t.a(null, (j71.a) obj13, r1.i.d(-420171616, new com.github.rudroid.actions.workflowruns.ui.f(list4, str, (ShortcutWidgetSettingsActivity) r4, f1Var5, jVar3), sVar4), sVar4, 384, 1);
+                                                    xg.tShadow.a(null, (j71.a) obj13, r1.i.d(-420171616, new com.github.rudroid.actions.workflowruns.ui.f(list4, str, (ShortcutWidgetSettingsActivity) r4, f1Var5, jVar3), sVar4), sVar4, 384, 1);
                                                     z2 = false;
                                                 } else {
                                                     g0Var = this;
@@ -436,7 +436,7 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
                                                             sVar4.n0(aVar7);
                                                             obj15 = aVar7;
                                                         }
-                                                        xg.t.a(null, (j71.a) obj15, r1.i.d(629326011, new com.github.rudroid.actions.workflowruns.ui.f(list5, storedShortcutModel3, p04, f1Var6, (Object) r4, 10), sVar4), sVar4, 384, 1);
+                                                        xg.tShadow.a(null, (j71.a) obj15, r1.i.d(629326011, new com.github.rudroid.actions.workflowruns.ui.f(list5, storedShortcutModel3, p04, f1Var6, (Object) r4, 10), sVar4), sVar4, 384, 1);
                                                         sVar3 = sVar4;
                                                         z3 = false;
                                                         sVar3.q(false);

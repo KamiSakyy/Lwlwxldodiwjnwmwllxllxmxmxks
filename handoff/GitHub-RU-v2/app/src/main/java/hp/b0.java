@@ -87,11 +87,11 @@ public abstract class b0 implements aa.a {
         ZonedDateTime zonedDateTime = null;
         ZonedDateTime zonedDateTime2 = null;
         ZonedDateTime zonedDateTime3 = null;
-        x xVar = null;
+        xShadow xVar = null;
         String str3 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar2 = sa.a;
+            aa.xShadow xVar2 = sa.a;
             switch (r0) {
                 case 0:
                     str = (String) aa.c.a.a(eVar, wVar);
@@ -134,7 +134,7 @@ public abstract class b0 implements aa.a {
                     zonedDateTime3 = (ZonedDateTime) aa.c.b(wVar.e(xVar2)).a(eVar, wVar);
                     break;
                 case 6:
-                    xVar = (x) aa.c.b(aa.c.c(a0.a, true)).a(eVar, wVar);
+                    xVar = (xShadow) aa.c.b(aa.c.c(a0.a, true)).a(eVar, wVar);
                     break;
                 case 7:
                     str3 = (String) aa.c.a.a(eVar, wVar);

@@ -4,10 +4,10 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m implements y71.j {
-    public final /* synthetic */ x71.h r;
+    public final /* synthetic */ x71.hShadow r;
     public final /* synthetic */ int s;
 
-    public m(x71.h hVar, int i) {
+    public m(x71.hShadow hVar, int i) {
         this.r = hVar;
         this.s = i;
     }

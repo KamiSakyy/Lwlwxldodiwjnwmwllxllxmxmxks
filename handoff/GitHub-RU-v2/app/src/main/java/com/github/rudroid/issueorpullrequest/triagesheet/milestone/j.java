@@ -11,7 +11,7 @@ import com.github.service.models.response.projects.ProjectsMetaInfo;
 import java.util.concurrent.CancellationException;
 import v71.b0;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import yz0.v2;
 
@@ -87,7 +87,7 @@ public final class j extends k1 implements v3 {
         this.A = (String) h2.a(a1Var, "extra_issue_pull_id");
         this.B = (x1) h2.a(a1Var, "extra_source_type");
         this.C = (ProjectsMetaInfo) a1Var.a("EXTRA_PROJECTS_META_INFO");
-        y1 c10 = n1.c(v2Var);
+        y1 c10 = n1Shadow.c(v2Var);
         this.D = c10;
         y1 s2 = m0.s(fl.f.Companion, null);
         this.E = s2;
@@ -102,7 +102,7 @@ public final class j extends k1 implements v3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.H = b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new q(this, null), 3);
+        this.H = b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new q(this, null), 3);
     }
 
     public final void P() {
@@ -112,7 +112,7 @@ public final class j extends k1 implements v3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.H = b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new o(this, null), 3);
+        this.H = b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new o(this, null), 3);
     }
 
     public final boolean a() {

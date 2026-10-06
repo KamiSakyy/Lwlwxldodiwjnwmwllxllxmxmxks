@@ -1,7 +1,7 @@
 package j2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class x extends b0 {
+public final class xShadow extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
     public float f26961c;
@@ -27,10 +27,10 @@ public final class x extends b0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return Float.compare(this.f26961c, xVar.f26961c) == 0 && Float.compare(this.f26962d, xVar.f26962d) == 0 && Float.compare(this.f26963e, xVar.f26963e) == 0 && Float.compare(this.f26964f, xVar.f26964f) == 0;
     }
 

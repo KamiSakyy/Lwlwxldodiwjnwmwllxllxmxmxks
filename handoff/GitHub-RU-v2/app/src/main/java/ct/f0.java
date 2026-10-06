@@ -1,13 +1,13 @@
 package ct;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f0 implements aa.a {
     public static final f0 a = new f0();
-    public static final List b = sy.d0.o("id", "name", "isPrivate", "viewerSubscription", "viewerSubscriptionTypes", "owner", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "isPrivate", "viewerSubscription", "viewerSubscriptionTypes", "owner", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0028, code lost:
     

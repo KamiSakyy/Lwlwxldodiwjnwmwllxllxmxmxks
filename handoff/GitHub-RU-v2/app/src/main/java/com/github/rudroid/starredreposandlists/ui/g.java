@@ -8,7 +8,7 @@ import com.github.rudroid.starredreposandlists.h;
 import com.github.rudroid.starredreposandlists.u;
 import com.github.rudroid.starredreposandlists.v;
 import com.github.rudroid.uitoolkit.k0;
-import d2.a0;
+import d2.a0Shadow;
 import java.util.List;
 import w1.o;
 import w1.r;
@@ -78,7 +78,7 @@ public final class g implements j71.g {
                     o oVar = o.a;
                     if (z2) {
                         sVar.c0(1597725245);
-                        r x = androidx.compose.foundation.layout.b.x(f0.o.f(oVar, ih.d.b(sVar).b, a0.b), ih.a.n);
+                        r x = androidx.compose.foundation.layout.b.x(f0.o.f(oVar, ih.d.b(sVar).b, a0Shadow.b), ih.a.n);
                         k kVar2 = kVar;
                         j71.e eVar2 = this.w;
                         boolean f2 = sVar.f(eVar2) | sVar.f(kVar);
@@ -108,7 +108,7 @@ public final class g implements j71.g {
         } else {
             sVar.V();
         }
-        return w61.a0.a;
+        return w61.a0Shadow.a;
     }
     public static final Object b = null;
     public static final Object d = null;

@@ -84,7 +84,7 @@ public abstract class p1 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, o1Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(o1Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(o1Var.c, aa.c.f, fVar, wVar, "identifier");
         bVar.b(fVar, wVar, o1Var.d);
         fVar.z0("followee");
         aa.c.c(q1.a, true).b(fVar, wVar, o1Var.e);

@@ -8,7 +8,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import sy.w;
 import w61.i;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b extends k81.b {
@@ -19,7 +19,7 @@ public final class b extends k81.b {
     public b(r71.b bVar) {
         k.g(bVar, "baseClass");
         this.a = bVar;
-        this.b = r.r;
+        this.b = rShadow.r;
         this.c = w.s(i.r, new b2(5, this));
     }
 

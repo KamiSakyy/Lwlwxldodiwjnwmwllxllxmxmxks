@@ -2,7 +2,7 @@ package com.github.rudroid.home.search.navigation;
 
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -43,7 +43,7 @@ public final class GlobalCodeSearchResultsRoute {
         if (1 == (i & 1)) {
             this.f15051a = str;
         } else {
-            c1.l(i, 1, GlobalCodeSearchResultsRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, GlobalCodeSearchResultsRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

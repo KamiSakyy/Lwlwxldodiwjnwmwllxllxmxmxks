@@ -63,7 +63,7 @@ public abstract class b implements KSerializer {
                     }
                     sb.append(str);
                     sb.append("\n Expected 0, 1 or DECODE_DONE(-1), but found ");
-                    sb.append(t);
+                    sb.append(tShadow);
                     throw new SerializationException(sb.toString());
                 }
                 if (str == null) {

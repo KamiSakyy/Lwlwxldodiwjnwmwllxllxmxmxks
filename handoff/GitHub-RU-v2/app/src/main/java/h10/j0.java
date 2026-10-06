@@ -17,9 +17,9 @@ public abstract class j0 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Issue");
+        List n = sy.d0Shadow.n("Issue");
         List list = ew.t.a;
         aa.s c = no.a.c(list, "selections", "Issue", n, list);
         ah.Companion.getClass();
@@ -35,13 +35,13 @@ public abstract class j0 {
         aa.q0 q0Var = wh.B;
         k71.k.g(q0Var, "type");
         aa.s mVar6 = new aa.m("parent", q0Var, (String) null, rVar, rVar, r);
-        List n2 = sy.d0.n("Issue");
+        List n2 = sy.d0Shadow.n("Issue");
         List list2 = ew.r.a;
-        List n3 = sy.d0.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, x61.l.r(new aa.s[]{mVar2, mVar3, mVar4, mVar5, mVar6, no.a.c(list2, "selections", "Issue", n2, list2)})));
+        List n3 = sy.d0Shadow.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, x61.l.r(new aa.s[]{mVar2, mVar3, mVar4, mVar5, mVar6, no.a.c(list2, "selections", "Issue", n2, list2)})));
         n9.Companion.getClass();
         aa.q0 q0Var2 = n9.a;
         k71.k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("createIssue", q0Var2, (String) null, rVar, no.a.s(vp.H, new aa.u0(new aa.t("createIssueInput"))), n3));
+        a = sy.d0Shadow.n(new aa.m("createIssue", q0Var2, (String) null, rVar, no.a.s(vp.H, new aa.u0(new aa.t("createIssueInput"))), n3));
     }
 }

@@ -2,7 +2,7 @@ package tt;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class i implements aa.a {
@@ -60,7 +60,7 @@ public abstract class i implements aa.a {
         aa.c.a.b(fVar, wVar, aVar.b);
         fVar.z0("viewerCanReact");
         aa.b bVar = aa.c.f;
-        f4.C(aVar.c, bVar, fVar, wVar, "viewerCanUpvote");
+        f4Shadow.C(aVar.c, bVar, fVar, wVar, "viewerCanUpvote");
         bVar.b(fVar, wVar, Boolean.valueOf(aVar.d));
     }
 }

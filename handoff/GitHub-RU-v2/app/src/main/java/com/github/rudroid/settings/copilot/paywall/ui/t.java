@@ -55,7 +55,7 @@ public final class t {
                 sVar2.q(false);
             } else if (i3 == 3) {
                 sVar2.c0(-1675847954);
-                xg.c.b(rVar, c.a, c.b, 2131952184, 2131951840, aVar2, aVar, aVar, false, sVar, ((i2 << 9) & 458752) | 438 | ((i2 << 15) & 3670016) | ((i2 << 18) & 29360128), 256);
+                xg.cShadow.b(rVar, c.a, c.b, 2131952184, 2131951840, aVar2, aVar, aVar, false, sVar, ((i2 << 9) & 458752) | 438 | ((i2 << 15) & 3670016) | ((i2 << 18) & 29360128), 256);
                 sVar2 = sVar;
                 sVar2.q(false);
             } else {
@@ -70,7 +70,7 @@ public final class t {
                     return;
                 }
                 sVar2.c0(-1673902828);
-                xg.t.b(rVar, c.c, c.d, r1.i.d(213143605, new com.github.rudroid.agents.copilothome.ui.f0(19, aVar), sVar2), null, sVar2, 3510, 16);
+                xg.tShadow.b(rVar, c.c, c.d, r1.i.d(213143605, new com.github.rudroid.agents.copilothome.ui.f0(19, aVar), sVar2), null, sVar2, 3510, 16);
                 sVar2 = sVar2;
                 sVar2.q(false);
             }

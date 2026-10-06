@@ -15,7 +15,7 @@ public final class w7 {
         s = w7VarArr;
         v8.l0.t(w7VarArr);
         Companion = new v7();
-        sy.d0.n("LAST_UPDATED_AT");
+        sy.d0Shadow.n("LAST_UPDATED_AT");
     }
 
     public w7(String str, int i, String str2) {

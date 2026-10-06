@@ -7,7 +7,7 @@ import jo.kd0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fy implements aaShadow.a {
     public static final fy a = new fy();
-    public static final List b = sy.d0.n("updateIssue");
+    public static final List b = sy.d0Shadow.n("updateIssue");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

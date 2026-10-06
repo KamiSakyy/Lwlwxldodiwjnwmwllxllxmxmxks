@@ -31,6 +31,6 @@ public final class o4 {
     }
 
     public final String toString() {
-        return jo.f4.o("OnMarkdownFileType(contentHTML=", this.a, ", markDownFileLines=", ")", this.b);
+        return jo.f4Shadow.o("OnMarkdownFileType(contentHTML=", this.a, ", markDownFileLines=", ")", this.b);
     }
 }

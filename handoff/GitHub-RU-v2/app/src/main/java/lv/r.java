@@ -2,7 +2,7 @@ package lv;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class r implements aa.a {
@@ -60,7 +60,7 @@ public abstract class r implements aa.a {
         fVar.z0("displayName");
         bVar.b(fVar, wVar, kVar.b);
         fVar.z0("isCopilot");
-        f4.C(kVar.c, aa.c.f, fVar, wVar, "url");
+        f4Shadow.C(kVar.c, aa.c.f, fVar, wVar, "url");
         bVar.b(fVar, wVar, kVar.d);
     }
 }

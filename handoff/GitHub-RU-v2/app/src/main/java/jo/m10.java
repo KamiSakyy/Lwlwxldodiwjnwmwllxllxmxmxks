@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class m10 {
+public final class m10Shadow {
     public String a;
     public d10 b;
     public String c;
@@ -16,10 +16,10 @@ public final class m10 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof m10)) {
+        if (!(obj instanceof m10Shadow)) {
             return false;
         }
-        m10 m10Var = (m10) obj;
+        m10Shadow m10Var = (m10Shadow) obj;
         return k71.k.b(this.a, m10Var.a) && k71.k.b(this.b, m10Var.b) && k71.k.b(this.c, m10Var.c);
     }
 

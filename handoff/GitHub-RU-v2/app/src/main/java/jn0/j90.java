@@ -4,9 +4,9 @@ package jn0;
 public final class j90 {
     public String a;
     public String b;
-    public ar0.a0 c;
+    public ar0.a0Shadow c;
 
-    public j90(String str, String str2, ar0.a0 a0Var) {
+    public j90(String str, String str2, ar0.a0Shadow a0Var) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

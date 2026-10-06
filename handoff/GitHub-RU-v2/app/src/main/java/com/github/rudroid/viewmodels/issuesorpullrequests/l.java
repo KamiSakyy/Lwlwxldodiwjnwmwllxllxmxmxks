@@ -230,34 +230,34 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         this.c0 = mVar2;
         this.d0 = eVar2;
         this.e0 = cVar;
-        y71.y1 c2 = y71.n1.c((Object) null);
+        y71.y1 c2 = y71.n1Shadow.c((Object) null);
         this.f0 = c2;
-        y71.y1 c3 = y71.n1.c(new a6(null, null, null, null, 255));
+        y71.y1 c3 = y71.n1Shadow.c(new a6(null, null, null, null, 255));
         this.g0 = c3;
         this.h0 = new y71.i1(c3);
-        y71.y1 c4 = y71.n1.c((Object) null);
+        y71.y1 c4 = y71.n1Shadow.c((Object) null);
         this.i0 = c4;
-        y71.y1 c5 = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y71.y1 c5 = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.j0 = c5;
         this.k0 = new y71.i1(c5);
-        y71.y1 c6 = y71.n1.c(new com.github.rudroid.utilities.ui.u0(null));
+        y71.y1 c6 = y71.n1Shadow.c(new com.github.rudroid.utilities.ui.u0(null));
         this.l0 = c6;
-        y71.y1 c7 = y71.n1.c(new d6(cVar.d().f(com.github.rudroid.common.a.U), rc.l.b(cVar.d())));
+        y71.y1 c7 = y71.n1Shadow.c(new d6(cVar.d().f(com.github.rudroid.common.a.U), rc.l.b(cVar.d())));
         this.m0 = c7;
         com.github.rudroid.utilities.ui.h0 a2 = g1.a.a();
         x61.t tVar = x61.t.r;
-        y71.y1 c8 = y71.n1.c(new y7(a2, false, tVar, tVar));
+        y71.y1 c8 = y71.n1Shadow.c(new y7(a2, false, tVar, tVar));
         this.n0 = c8;
-        this.o0 = y71.n1.G(y71.n1.y(y71.n1.l(y71.n1.l(c2, c5, c7, x1.y), y71.n1.l(c3, c4, c8, y1.y), c6, new a2(this, null)), vVar2), androidx.lifecycle.d1.k(this), y71.q1.b, new g(new com.github.rudroid.utilities.ui.u0(null)));
+        this.o0 = y71.n1Shadow.G(y71.n1Shadow.y(y71.n1Shadow.l(y71.n1Shadow.l(c2, c5, c7, x1.y), y71.n1Shadow.l(c3, c4, c8, y1.y), c6, new a2(this, null)), vVar2), androidx.lifecycle.d1.k(this), y71.q1.b, new g(new com.github.rudroid.utilities.ui.u0(null)));
         this.p0 = new i7.a(null, false);
         this.q0 = new i7.a(null, false);
-        this.s0 = y71.n1.c((Object) null);
+        this.s0 = y71.n1Shadow.c((Object) null);
         y71.m1 j = w8.s.j();
         this.t0 = j;
         this.u0 = new y71.h1(j);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new i(this, null), 3);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new k(this, null), 3);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new x0(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new i(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new k(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new x0(this, null), 3);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0031  */
@@ -315,7 +315,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
     public static final Object Q(l lVar, boolean z, c71.j jVar) {
         String str = z ? lVar.p0.b : lVar.q0.b;
         if (str != null) {
-            Object j = y71.n1.j(lVar.z.a(lVar.e0.d(), lVar.f0(), lVar.e0(), lVar.c0(), str, z ? z01.b0.r : z01.b0.s, new n0(lVar, 1)), jVar);
+            Object j = y71.n1Shadow.j(lVar.z.a(lVar.e0.d(), lVar.f0(), lVar.e0(), lVar.c0(), str, z ? z01.b0.r : z01.b0.s, new n0(lVar, 1)), jVar);
             if (j == b71.a.r) {
                 return j;
             }
@@ -344,7 +344,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
     public final void D() {
         v71.q1 q1Var = this.v0;
         if (q1Var == null || !q1Var.f()) {
-            this.v0 = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new q0(this, null), 3);
+            this.v0 = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new q0(this, null), 3);
         }
     }
 
@@ -355,7 +355,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
 
     public final void T(yz0.r3 r3Var) {
         k71.k.g(r3Var, "reaction");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new m(this, r3Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m(this, r3Var, null), 3);
     }
 
     public final androidx.lifecycle.p0 U() {
@@ -366,24 +366,24 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         }
         fl.f.Companion.getClass();
         p0Var.j(fl.e.b(null));
-        v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0) null, new p(this, i2Var, p0Var, null), 2);
+        v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0Shadow) null, new p(this, i2Var, p0Var, null), 2);
         return p0Var;
     }
 
     public final void V(String str) {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new s(this, str, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new s(this, str, null), 3);
     }
 
     public final void W(String str) {
         k71.k.g(str, "refId");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new b0(this, str, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new b0(this, str, null), 3);
     }
 
     public final void X(String str) {
         k71.k.g(str, "commentId");
         yz0.i2 i2Var = (yz0.i2) ((com.github.rudroid.utilities.ui.g1) this.j0.getValue()).getData();
         if (i2Var != null) {
-            v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0) null, new c0(this, i2Var, str, null), 2);
+            v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0Shadow) null, new c0(this, i2Var, str, null), 2);
         }
     }
 
@@ -394,13 +394,13 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
 
     public final void Z() {
         String str = (String) this.T.a("EXTRA_DEEPLINK");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new m0(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m0(this, null), 3);
         if (str == null || t71.p.T(str)) {
             o0();
             g0(null, false);
         } else {
             o0();
-            v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0) null, new j0(this, str, null), 2);
+            v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0Shadow) null, new j0(this, str, null), 2);
         }
     }
 
@@ -489,22 +489,22 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         if (q1Var3 != null) {
             q1Var3.m((CancellationException) null);
         }
-        this.x0 = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new p0(this, str, z, null), 3);
+        this.x0 = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p0(this, str, z, null), 3);
     }
 
     public final void h0() {
         v71.q1 q1Var = this.w0;
         if (q1Var == null || !q1Var.f()) {
-            this.w0 = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new r0(this, null), 3);
+            this.w0 = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new r0(this, null), 3);
         }
     }
 
     public final void i0() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new c1(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c1(this, null), 3);
     }
 
     public final void j0() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new d1(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d1(this, null), 3);
     }
 
     public final void k0(com.github.rudroid.utilities.ui.g1 g1Var) {
@@ -520,17 +520,17 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         k71.k.g(str2, "id");
         k71.k.g(e0Var, "type");
         boolean equals = e0Var.equals(yz0.f2.d);
-        List list = x61.r.r;
-        List n = equals ? sy.d0.n(str2) : list;
+        List list = x61.rShadow.r;
+        List n = equals ? sy.d0Shadow.n(str2) : list;
         if (e0Var.equals(yz0.f2.a)) {
-            list = sy.d0.n(str2);
+            list = sy.d0Shadow.n(str2);
         }
-        v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0) null, new k1(this, str, n, list, null), 2);
+        v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0Shadow) null, new k1(this, str, n, list, null), 2);
     }
 
     public final void m0(yz0.r3 r3Var) {
         k71.k.g(r3Var, "reaction");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new l1(this, r3Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new l1(this, r3Var, null), 3);
     }
 
     public final void n0(String str, yz0.g2 g2Var) {
@@ -539,12 +539,12 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         String str2 = g2Var.c;
         sy.e0 e0Var = g2Var.d;
         boolean equals = e0Var.equals(yz0.f2.d);
-        List list = x61.r.r;
-        List n = equals ? sy.d0.n(str2) : list;
+        List list = x61.rShadow.r;
+        List n = equals ? sy.d0Shadow.n(str2) : list;
         if (e0Var.equals(yz0.f2.a)) {
-            list = sy.d0.n(str2);
+            list = sy.d0Shadow.n(str2);
         }
-        v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0) null, new o1(this, str, n, list, g2Var, null), 2);
+        v71.b0.z(androidx.lifecycle.d1.k(this), this.u, (v71.a0Shadow) null, new o1(this, str, n, list, g2Var, null), 2);
     }
 
     public final void o0() {
@@ -559,7 +559,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
             y1Var.k((Object) null, u0Var);
             return;
         }
-        ArrayList q = sy.d0.q(new g.c(new i.p0(new le.h(c0(), f0(), e0(), str))));
+        ArrayList q = sy.d0Shadow.q(new g.c(new i.p0(new le.h(c0(), f0(), e0(), str))));
         y71.y1 y1Var2 = this.f0;
         y1Var2.getClass();
         y1Var2.k((Object) null, q);
@@ -574,11 +574,11 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
                 if (i != 5) {
                     return;
                 }
-                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new g1(this, str, null), 3);
+                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new g1(this, str, null), 3);
             } else {
                 k71.k.g(str, "id");
                 if (closeReason != CloseReason.Duplicate) {
-                    v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new v(this, str, closeReason, null), 3);
+                    v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v(this, str, closeReason, null), 3);
                 }
             }
         }
@@ -589,9 +589,9 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         if (i2Var != null) {
             String str = i2Var.h;
             if (i2Var.o) {
-                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new i2(this, str, null), 3);
+                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new i2(this, str, null), 3);
             } else {
-                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u0(this, str, null), 3);
+                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u0(this, str, null), 3);
             }
         }
     }
@@ -602,12 +602,12 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
             String str = i2Var.h;
             int i = c.a[i2Var.p.ordinal()];
             if (i == 1 || i == 2) {
-                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new y(this, str, null), 3);
+                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new y(this, str, null), 3);
             } else {
                 if (i != 3) {
                     return;
                 }
-                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new j1(this, str, null), 3);
+                v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new j1(this, str, null), 3);
             }
         }
     }
@@ -615,7 +615,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
     public final void s0() {
         yz0.i2 i2Var = (yz0.i2) ((com.github.rudroid.utilities.ui.g1) this.j0.getValue()).getData();
         if (i2Var != null) {
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u1(i2Var, this, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u1(i2Var, this, null), 3);
         }
     }
 
@@ -623,7 +623,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         androidx.lifecycle.p0 p0Var = new androidx.lifecycle.p0();
         fl.f.Companion.getClass();
         p0Var.j(fl.e.b(null));
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new c2(this, p0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c2(this, p0Var, null), 3);
         return p0Var;
     }
 
@@ -640,7 +640,7 @@ public final class l extends androidx.lifecycle.k1 implements com.github.rudroid
         k71.k.g(str, "userId");
         k71.k.g(str2, "organizationId");
         k71.k.g(str3, "userLogin");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new f2(this, str, str2, str3, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f2(this, str, str2, str3, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.issuesorpullrequests.m2

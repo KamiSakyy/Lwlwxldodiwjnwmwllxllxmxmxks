@@ -3,7 +3,7 @@ package os0;
 import aa.w;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import pz0.o7;
 import x61.l;
@@ -83,7 +83,7 @@ public abstract class h implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, eVar.d);
         fVar.z0("isCrossRepository");
-        f4.C(eVar.e, aa.c.f, fVar, wVar, "canonical");
+        f4Shadow.C(eVar.e, aa.c.f, fVar, wVar, "canonical");
         aa.c.b(aa.c.c(g.a, true)).b(fVar, wVar, eVar.f);
     }
 }

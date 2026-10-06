@@ -12,7 +12,7 @@ public final class n4 {
 
     public final long a() {
         o4 o4Var = this.a;
-        c21.u.g(o4Var);
+        c21.uShadow.g(o4Var);
         long longValue = ((Long) c0.v.a(null)).longValue();
         long longValue2 = ((Long) c0.w.a(null)).longValue();
         for (int i = 1; i < this.b; i++) {

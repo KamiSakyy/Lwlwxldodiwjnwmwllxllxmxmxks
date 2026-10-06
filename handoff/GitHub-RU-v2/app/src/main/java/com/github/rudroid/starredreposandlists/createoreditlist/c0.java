@@ -146,7 +146,7 @@ public final class c0 {
         if (sVar.S(i3 & 1, (i3 & 1171) != 1170)) {
             String p0 = i4.p0(z ? 2131953006 : 2131953015, sVar);
             final String p02 = i4.p0(z ? 2131953149 : 2131953182, sVar);
-            qg.p.c(null, p0, null, 0L, aVar, 0, 0, 0.0f, 0, 0, r1.i.d(1057581293, new j71.f() { // from class: com.github.rudroid.starredreposandlists.createoreditlist.b0
+            qg.pShadow.c(null, p0, null, 0L, aVar, 0, 0, 0.0f, 0, 0, r1.i.d(1057581293, new j71.f() { // from class: com.github.rudroid.starredreposandlists.createoreditlist.b0
                 public final Object f(Object obj, Object obj2, Object obj3) {
                     androidx.compose.runtime.s sVar2 = (androidx.compose.runtime.s) obj2;
                     int intValue = ((Integer) obj3).intValue();
@@ -157,7 +157,7 @@ public final class c0 {
                             String str = p02;
                             if (ordinal == 1) {
                                 sVar2.c0(-1571617423);
-                                sg.k0.b(null, false, aVar2, null, str, null, sVar2, 0, 43);
+                                sg.k0Shadow.b(null, false, aVar2, null, str, null, sVar2, 0, 43);
                                 sVar2.q(false);
                             } else if (ordinal == 2) {
                                 sVar2.c0(-1571613426);
@@ -166,7 +166,7 @@ public final class c0 {
                                     N = new com.github.rudroid.widget.p(15);
                                     sVar2.n0(N);
                                 }
-                                sg.k0.b(null, false, (j71.a) N, null, str, null, sVar2, 432, 41);
+                                sg.k0Shadow.b(null, false, (j71.a) N, null, str, null, sVar2, 432, 41);
                                 sVar2.q(false);
                             } else if (ordinal != 3) {
                                 if (ordinal != 4) {

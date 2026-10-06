@@ -1,6 +1,6 @@
 package com.github.rudroid.starredreposandlists.bottomsheet;
 
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.starredreposandlists.bottomsheet.ListsSelectionBottomSheetViewModel$observe$1", f = "ListsSelectionBottomSheetViewModel.kt", l = {64, 75}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -72,7 +72,7 @@ final class z extends c71.j implements j71.e {
         k71.k.g(str2, "repoName");
         xm.b bVar = aVar.b;
         bVar.getClass();
-        y71.i o = n1.o(new y71.y(new x(wVar, null), b31.b.J(new c00.g(b31.b.J(((z01.j0) bVar.a.a(jVar)).a(str, str2), jVar, gVar), aVar.a.a(jVar, jVar.c, gVar), new cn.r(3, (a71.c) null, 12), 27), jVar, gVar)), 250L);
+        y71.i o = n1Shadow.o(new y71.y(new x(wVar, null), b31.b.J(new c00.g(b31.b.J(((z01.j0) bVar.a.a(jVar)).a(str, str2), jVar, gVar), aVar.a.a(jVar, jVar.c, gVar), new cn.r(3, (a71.c) null, 12), 27), jVar, gVar)), 250L);
         y yVar = new y(wVar);
         this.v = null;
         this.w = 2;

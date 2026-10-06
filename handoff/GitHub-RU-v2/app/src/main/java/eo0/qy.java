@@ -7,14 +7,14 @@ import jn0.zd0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qy implements aaShadow.a {
     public static final qy a = new qy();
-    public static final List b = sy.d0.n("updateSubscription");
+    public static final List b = sy.d0Shadow.n("updateSubscription");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         be0 be0Var = null;
         while (eVar.r0(b) == 0) {
-            be0Var = (be0) aa.c.b(aa.c.c(sy.a, false)).a(eVar, wVar);
+            be0Var = (be0) aa.c.b(aa.c.c(syShadow.a, false)).a(eVar, wVar);
         }
         return new zd0(be0Var);
     }
@@ -25,6 +25,6 @@ public final class qy implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(zd0Var, "value");
         fVar.z0("updateSubscription");
-        aa.c.b(aa.c.c(sy.a, false)).b(fVar, wVar, zd0Var.a);
+        aa.c.b(aa.c.c(syShadow.a, false)).b(fVar, wVar, zd0Var.a);
     }
 }

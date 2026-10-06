@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ng implements aaShadow.a {
     public static final ng a = new ng();
-    public static final List b = sy.d0.n("minimizedComment");
+    public static final List b = sy.d0Shadow.n("minimizedComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.no noVar = null;
+        jo.noShadow noVar = null;
         while (eVar.r0(b) == 0) {
             noVar = (jo.no) aa.c.b(aa.c.c(og.a, true)).a(eVar, wVar);
         }

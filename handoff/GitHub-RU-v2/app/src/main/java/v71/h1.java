@@ -22,13 +22,13 @@ public final class h1 extends f1 {
     @Override // v71.f1
     public final void l(Throwable th) {
         p pVar = this.x;
-        p a0 = j1.a0(pVar);
+        p a0 = j1.a0Shadow(pVar);
         j1 j1Var = this.v;
         i1 i1Var = this.w;
         Object obj = this.y;
         if (a0 == null || !j1Var.m0(i1Var, a0, obj)) {
             i1Var.r.c(new a81.h(2), 2);
-            p a02 = j1.a0(pVar);
+            p a02 = j1.a0Shadow(pVar);
             if (a02 == null || !j1Var.m0(i1Var, a02, obj)) {
                 j1Var.n(j1Var.G(i1Var, obj));
             }

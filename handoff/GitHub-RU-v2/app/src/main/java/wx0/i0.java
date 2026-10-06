@@ -8,7 +8,7 @@ public final class i0 {
     public m1 d;
     public e1 e;
     public l1 f;
-    public f1 g;
+    public f1Shadow g;
     public g1 h;
     public n1 i;
     public j1 j;
@@ -16,7 +16,7 @@ public final class i0 {
     public k1 l;
     public kw0.a m;
 
-    public i0(String str, d1 d1Var, h1 h1Var, m1 m1Var, e1 e1Var, l1 l1Var, f1 f1Var, g1 g1Var, n1 n1Var, j1 j1Var, i1 i1Var, k1 k1Var, kw0.a aVar) {
+    public i0(String str, d1 d1Var, h1 h1Var, m1 m1Var, e1 e1Var, l1 l1Var, f1Shadow f1Var, g1 g1Var, n1 n1Var, j1 j1Var, i1 i1Var, k1 k1Var, kw0.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = d1Var;
@@ -56,7 +56,7 @@ public final class i0 {
         int hashCode5 = (hashCode4 + (e1Var == null ? 0 : e1Var.hashCode())) * 31;
         l1 l1Var = this.f;
         int hashCode6 = (hashCode5 + (l1Var == null ? 0 : l1Var.hashCode())) * 31;
-        f1 f1Var = this.g;
+        f1Shadow f1Var = this.g;
         int hashCode7 = (hashCode6 + (f1Var == null ? 0 : f1Var.hashCode())) * 31;
         g1 g1Var = this.h;
         int hashCode8 = (hashCode7 + (g1Var == null ? 0 : g1Var.hashCode())) * 31;

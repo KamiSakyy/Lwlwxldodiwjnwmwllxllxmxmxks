@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f5 implements aaShadow.a {
     public static final f5 a = new f5();
-    public static final List b = sy.d0.n("deleteMobileDeviceToken");
+    public static final List b = sy.d0Shadow.n("deleteMobileDeviceToken");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

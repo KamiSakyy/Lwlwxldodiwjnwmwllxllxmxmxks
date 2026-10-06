@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class n extends b0 {
+final class n extends b0Shadow {
     public n() {
         super("InFrameset", 19);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         p0 p0Var;
         if (b0.a(s0Var)) {
             bVar.t((k0) s0Var);

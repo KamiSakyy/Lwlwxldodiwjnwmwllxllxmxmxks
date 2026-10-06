@@ -9,7 +9,7 @@ public abstract class ue {
     public static final aa.q0 d;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         d = new aa.q0("Feed", rVar, rVar);
     }
 }

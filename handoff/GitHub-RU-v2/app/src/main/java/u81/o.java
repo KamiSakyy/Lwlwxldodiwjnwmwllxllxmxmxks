@@ -23,7 +23,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import q81.b0;
 import q81.c0;
 import q81.d0;
-import q81.v;
+import q81.vShadow;
 import q81.y;
 
 /* loaded from: /home/user/work/p/classes5.dex */
@@ -196,7 +196,7 @@ public final class o {
                                 t71.n nVar2 = r81.d.a;
                                 k71.k.g(str, "<this>");
                                 if (r81.d.a.e(str)) {
-                                    list = sy.d0.n(InetAddress.getByName(str));
+                                    list = sy.d0Shadow.n(InetAddress.getByName(str));
                                 } else {
                                     aVar.a.getClass();
                                     try {
@@ -227,7 +227,7 @@ public final class o {
                                         byte[] bArr = r81.e.a;
                                         Iterator it = arrayList3.iterator();
                                         Iterator it2 = arrayList4.iterator();
-                                        y61.b i3 = sy.d0.i();
+                                        y61.b i3 = sy.d0Shadow.i();
                                         while (true) {
                                             if (!it.hasNext() && !it2.hasNext()) {
                                                 break;
@@ -239,7 +239,7 @@ public final class o {
                                                 i3.add(it2.next());
                                             }
                                         }
-                                        list = sy.d0.h(i3);
+                                        list = sy.d0Shadow.h(i3);
                                     }
                                 }
                                 Iterator it3 = list.iterator();
@@ -315,13 +315,13 @@ public final class o {
             if (!a91.e.a.i(str)) {
                 throw new UnknownServiceException(f1.e.z("CLEARTEXT communication to ", str, " not permitted by network security policy"));
             }
-        } else if (aVar.i.contains(v.x)) {
+        } else if (aVar.i.contains(vShadow.x)) {
             throw new UnknownServiceException("H2_PRIOR_KNOWLEDGE cannot be used with HTTPS");
         }
         androidx.lifecycle.b bVar = null;
         if (d0Var.b.type() == Proxy.Type.HTTP) {
             q81.a aVar2 = d0Var.a;
-            if (aVar2.c != null || aVar2.i.contains(v.x)) {
+            if (aVar2.c != null || aVar2.i.contains(vShadow.x)) {
                 l1 l1Var = new l1(11);
                 q81.o oVar = d0Var.a.h;
                 k71.k.g(oVar, "url");
@@ -334,7 +334,7 @@ public final class o {
                 bVar = new androidx.lifecycle.b(l1Var);
                 b0 b0Var = c0.r;
                 ia.d dVar = new ia.d(4);
-                q81.b bVar2 = v.s;
+                q81.b bVar2 = vShadow.s;
                 i4.a0("Proxy-Authenticate");
                 i4.b0("OkHttp-Preemptive", "Proxy-Authenticate");
                 dVar.l("Proxy-Authenticate");

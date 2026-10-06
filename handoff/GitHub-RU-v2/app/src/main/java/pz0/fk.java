@@ -8,8 +8,8 @@ public abstract class fk {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        a = new aa.q0("MobilePushNotificationSchedule", n, sy.d0.n(wk.a));
+        a = new aa.q0("MobilePushNotificationSchedule", n, sy.d0Shadow.n(wk.a));
     }
 }

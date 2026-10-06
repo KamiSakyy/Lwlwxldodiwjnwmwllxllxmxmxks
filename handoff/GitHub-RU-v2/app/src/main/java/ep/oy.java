@@ -7,7 +7,7 @@ import jo.xd0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class oy implements aaShadow.a {
     public static final oy a = new oy();
-    public static final List b = sy.d0.n("updateUserDashboardPins");
+    public static final List b = sy.d0Shadow.n("updateUserDashboardPins");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

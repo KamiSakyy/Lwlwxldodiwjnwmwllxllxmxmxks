@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class od implements aaShadow.a {
     public static final od a = new od();
-    public static final List b = sy.d0.n("lockLockable");
+    public static final List b = sy.d0Shadow.n("lockLockable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

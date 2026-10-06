@@ -6,7 +6,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import c21.u;
+import c21.uShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class c extends DialogFragment {

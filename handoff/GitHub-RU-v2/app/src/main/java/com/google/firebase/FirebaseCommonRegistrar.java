@@ -41,15 +41,15 @@ public class FirebaseCommonRegistrar implements ComponentRegistrar {
         uVar.a(new i(oVar, 1, 0));
         uVar.f = new n51.b(oVar, 0);
         arrayList.add(uVar.b());
-        arrayList.add(sy.o.c("fire-android", String.valueOf(Build.VERSION.SDK_INT)));
-        arrayList.add(sy.o.c("fire-core", "21.0.0"));
-        arrayList.add(sy.o.c("device-name", a(Build.PRODUCT)));
-        arrayList.add(sy.o.c("device-model", a(Build.DEVICE)));
-        arrayList.add(sy.o.c("device-brand", a(Build.BRAND)));
-        arrayList.add(sy.o.h("android-target-sdk", new m(22)));
-        arrayList.add(sy.o.h("android-min-sdk", new m(23)));
-        arrayList.add(sy.o.h("android-platform", new m(24)));
-        arrayList.add(sy.o.h("android-installer", new m(25)));
+        arrayList.add(sy.oShadow.c("fire-android", String.valueOf(Build.VERSION.SDK_INT)));
+        arrayList.add(sy.oShadow.c("fire-core", "21.0.0"));
+        arrayList.add(sy.oShadow.c("device-name", a(Build.PRODUCT)));
+        arrayList.add(sy.oShadow.c("device-model", a(Build.DEVICE)));
+        arrayList.add(sy.oShadow.c("device-brand", a(Build.BRAND)));
+        arrayList.add(sy.oShadow.h("android-target-sdk", new m(22)));
+        arrayList.add(sy.oShadow.h("android-min-sdk", new m(23)));
+        arrayList.add(sy.oShadow.h("android-platform", new m(24)));
+        arrayList.add(sy.oShadow.h("android-installer", new m(25)));
         try {
             w61.g.s.getClass();
             str = "2.2.21";
@@ -57,7 +57,7 @@ public class FirebaseCommonRegistrar implements ComponentRegistrar {
             str = null;
         }
         if (str != null) {
-            arrayList.add(sy.o.c("kotlin", str));
+            arrayList.add(sy.oShadow.c("kotlin", str));
         }
         return arrayList;
     }

@@ -5,7 +5,7 @@ import java.util.Locale;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m1 extends d5 {
-    public static final boolean e = v2.e;
+    public static final boolean e = v2.eShadow;
     public c2 a;
     public byte[] b;
     public int c;

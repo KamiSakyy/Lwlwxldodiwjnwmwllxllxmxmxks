@@ -3,8 +3,8 @@ package fa1;
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class k0 {
     public static final a a;
-    public static final b b;
-    public static final b c;
+    public static final bShadow b;
+    public static final bShadow c;
 
     static {
         String property = System.getProperty("java.vm.name");
@@ -12,8 +12,8 @@ public abstract class k0 {
         int i = 6;
         if (property.equals("RoboVM")) {
             a = null;
-            b = new b(7);
-            c = new b(i);
+            b = new bShadow(7);
+            c = new bShadow(i);
         } else if (property.equals("Dalvik")) {
             a = new a(0);
             b = new l0(0);

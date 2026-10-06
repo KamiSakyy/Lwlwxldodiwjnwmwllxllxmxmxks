@@ -89,7 +89,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                 if (str5 != null) {
                     bVar = new aa.u0(str5);
                 }
-                return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.t.d(new yk(str, s, u0Var, u0Var2, bVar, str3))), 10), new v4(this, null, 0), 6), 11), this.u);
+                return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.t.d(new yk(str, s, u0Var, u0Var2, bVar, str3))), 10), new v4(this, null, 0), 6), 11), this.u);
             case 1:
                 k71.k.g(pullRequestMergeMethod, "method");
                 py z = w8.s.z(pullRequestMergeMethod);
@@ -101,7 +101,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                 if (str7 != null) {
                     bVar2 = new aa.u0(str7);
                 }
-                return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.t.d(new un(str, z, u0Var3, u0Var4, bVar2, str3))), 10), new v4(this, null, 5), 6), 21), this.u);
+                return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.t.d(new un(str, z, u0Var3, u0Var4, bVar2, str3))), 10), new v4(this, null, 5), 6), 21), this.u);
             case 2:
                 k71.k.g(pullRequestMergeMethod, "method");
                 zk F = i21.a.F(pullRequestMergeMethod);
@@ -113,7 +113,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                 if (str9 != null) {
                     bVar3 = new aa.u0(str9);
                 }
-                return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.t.d(new wj(str, F, u0Var5, u0Var6, bVar3, str3))), 10), new v4(this, null, 11), 6), 4), this.u);
+                return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.t.d(new wj(str, F, u0Var5, u0Var6, bVar3, str3))), 10), new v4(this, null, 11), 6), 4), this.u);
             default:
                 k71.k.g(pullRequestMergeMethod, "method");
                 zs Q = aa1.b.Q(pullRequestMergeMethod);
@@ -125,7 +125,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                 if (str11 != null) {
                     bVar4 = new aa.u0(str11);
                 }
-                return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.t.d(new pm(str, Q, u0Var7, u0Var8, bVar4, str3))), 10), new v4(this, null, 19), 6), 13), this.u);
+                return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.t.d(new pm(str, Q, u0Var7, u0Var8, bVar4, str3))), 10), new v4(this, null, 19), 6), 13), this.u);
         }
     }
 
@@ -134,16 +134,16 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "pullId");
-                return y71.n1.y(new cn.q(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new qk(str), null, false, null, null, 58), 10), 25), 20), this.u);
+                return y71.n1Shadow.y(new cn.q(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new qk(str), null, false, null, null, 58), 10), 25), 20), this.u);
             case 1:
                 k71.k.g(str, "pullId");
-                return y71.n1.y(new cn.q(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new mn(str), null, false, null, null, 58), 10), 5), 28), this.u);
+                return y71.n1Shadow.y(new cn.q(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new mn(str), null, false, null, null, 58), 10), 5), 28), this.u);
             case 2:
                 k71.k.g(str, "pullId");
-                return y71.n1.y(new t00.f8(6, new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new oj(str), null, false, null, null, 58), 10), 24)), this.u);
+                return y71.n1Shadow.y(new t00.f8(6, new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new oj(str), null, false, null, null, 58), 10), 24)), this.u);
             default:
                 k71.k.g(str, "pullId");
-                return y71.n1.y(new t00.f8(13, new wy0.q3(new y00.l(com.github.service.wrapper.a.o(this.s, new hm(str), null, false, null, null, 58), 10), 1)), this.u);
+                return y71.n1Shadow.y(new t00.f8(13, new wy0.q3(new y00.l(com.github.service.wrapper.a.o(this.s, new hm(str), null, false, null, null, 58), 10), 1)), this.u);
         }
     }
 
@@ -166,7 +166,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                     }
                     nlVar = nl.t;
                 }
-                return y71.n1.y(new y(new y00.l(in.r.h(this.t.d(new a80(str, nlVar))), 10), 26), this.u);
+                return y71.n1Shadow.y(new y(new y00.l(in.rShadow.h(this.t.d(new a80(str, nlVar))), 10), 26), this.u);
             case 1:
                 k71.k.g(pullRequestUpdateBranchMethod, "updateMethod");
                 int i2 = dz.l.a[pullRequestUpdateBranchMethod.ordinal()];
@@ -180,10 +180,10 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                     }
                     wxVar = wx.t;
                 }
-                return y71.n1.y(new t00.w3(new y00.l(in.r.h(this.t.d(new se0(str, wxVar))), 10), 7), this.u);
+                return y71.n1Shadow.y(new t00.w3(new y00.l(in.rShadow.h(this.t.d(new se0(str, wxVar))), 10), 7), this.u);
             case 2:
                 k71.k.g(pullRequestUpdateBranchMethod, "updateMethod");
-                return y71.n1.y(new vb0.u(new y00.l(in.r.h(this.t.d(new a60(str))), 10), 25), this.u);
+                return y71.n1Shadow.y(new vb0.u(new y00.l(in.rShadow.h(this.t.d(new a60(str))), 10), 25), this.u);
             default:
                 k71.k.g(pullRequestUpdateBranchMethod, "updateMethod");
                 int i3 = jx0.k.a[pullRequestUpdateBranchMethod.ordinal()];
@@ -197,7 +197,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                     }
                     jsVar = js.t;
                 }
-                return y71.n1.y(new wy0.q3(new y00.l(in.r.h(this.t.d(new ec0(str, jsVar))), 10), 2), this.u);
+                return y71.n1Shadow.y(new wy0.q3(new y00.l(in.rShadow.h(this.t.d(new ec0(str, jsVar))), 10), 2), this.u);
         }
     }
 
@@ -225,7 +225,7 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
                     }
                     nyVar = ny.t;
                 }
-                return y71.n1.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new ao(str, nyVar, w8.s.z(pullRequestMergeMethod), z), null, false, null, null, 58), 10), 6), this.u);
+                return y71.n1Shadow.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new ao(str, nyVar, w8.s.z(pullRequestMergeMethod), z), null, false, null, null, 58), 10), 6), this.u);
             case 2:
                 k71.k.g(str, "pullId");
                 k71.k.g(pullRequestMergeAction, "pullRequestMergeAction");

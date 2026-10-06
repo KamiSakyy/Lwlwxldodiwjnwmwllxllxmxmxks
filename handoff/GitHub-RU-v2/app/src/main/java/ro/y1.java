@@ -1,7 +1,7 @@
 package ro;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import qo.z2;
 import vo.m2;
 import vo.p2;
@@ -9,7 +9,7 @@ import vo.p2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y1 implements aa.a {
     public static final y1 a = new y1();
-    public static final List b = sy.d0.o("__typename", "totalCount");
+    public static final List b = sy.d0Shadow.o("__typename", "totalCount");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -27,7 +27,7 @@ public final class y1 implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = f4.c(1, nextLong, "substring(...)");
+                        nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

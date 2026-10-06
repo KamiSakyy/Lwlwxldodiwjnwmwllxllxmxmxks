@@ -13,13 +13,13 @@ public abstract class e {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"AddedToListFeedItem", "BecameSponsorableFeedItem", "CreatedDiscussionFeedItem", "CreatedRepositoryFeedItem", "FollowRecommendationFeedItem", "FollowedUserFeedItem", "ForkedRepositoryFeedItem", "MemberAddToRepositoryFeedItem", "MergedPullRequestFeedItem", "NearSponsorsGoalFeedItem", "PublishedReleaseFeedItem", "RepositoryRecommendationFeedItem", "SponsoredUserFeedItem", "StarredRepositoryFeedItem"});
         List list = h.a;
         List r2 = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "FeedItem", r, list)});
         aa.s mVar2 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("CreatedRepositoryFeedItem");
+        List n = sy.d0Shadow.n("CreatedRepositoryFeedItem");
         List list2 = d.a;
         aa.s c = no.a.c(list2, "selections", "CreatedRepositoryFeedItem", n, list2);
         wb.Companion.getClass();

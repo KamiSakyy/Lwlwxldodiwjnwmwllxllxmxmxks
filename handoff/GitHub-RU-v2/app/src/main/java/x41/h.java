@@ -21,9 +21,9 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
     public static final Charset b = Charset.forName("UTF-8");
-    public b51.d a;
+    public b51.dShadow a;
 
-    public h(b51.d dVar) {
+    public h(b51.dShadow dVar) {
         this.a = dVar;
     }
 
@@ -75,7 +75,7 @@ public final class h {
 
     public final Map c(String str, boolean z) {
         FileInputStream fileInputStream;
-        b51.d dVar = this.a;
+        b51.dShadow dVar = this.a;
         File f = z ? dVar.f(str, "internal-keys") : dVar.f(str, "keys");
         if (!f.exists() || f.length() == 0) {
             if (f.exists() && f.delete()) {
@@ -93,18 +93,18 @@ public final class h {
             th = th;
         }
         try {
-            HashMap a = a(v41.g.i(fileInputStream));
-            v41.g.b(fileInputStream);
+            HashMap a = a(v41.gShadow.i(fileInputStream));
+            v41.gShadow.b(fileInputStream);
             return a;
         } catch (Exception unused2) {
             fileInputStream2 = fileInputStream;
             f(f);
-            v41.g.b(fileInputStream2);
+            v41.gShadow.b(fileInputStream2);
             return Collections.EMPTY_MAP;
         } catch (Throwable th2) {
             th = th2;
             fileInputStream2 = fileInputStream;
-            v41.g.b(fileInputStream2);
+            v41.gShadow.b(fileInputStream2);
             throw th;
         }
     }
@@ -121,21 +121,21 @@ public final class h {
                     try {
                         fileInputStream = new FileInputStream(f);
                         try {
-                            JSONObject jSONObject = new JSONObject(v41.g.i(fileInputStream));
+                            JSONObject jSONObject = new JSONObject(v41.gShadow.i(fileInputStream));
                             String optString = !jSONObject.isNull("userId") ? jSONObject.optString("userId", null) : null;
                             Log.isLoggable("FirebaseCrashlytics", 3);
-                            v41.g.b(fileInputStream);
+                            v41.gShadow.b(fileInputStream);
                             return optString;
                         } catch (Exception unused) {
                             f(f);
-                            v41.g.b(fileInputStream);
+                            v41.gShadow.b(fileInputStream);
                             return null;
                         }
                     } catch (Exception unused2) {
                         fileInputStream = null;
                     } catch (Throwable th) {
                         th = th;
-                        v41.g.b(closeable);
+                        v41.gShadow.b(closeable);
                         throw th;
                     }
                 }
@@ -152,7 +152,7 @@ public final class h {
     public final void g(String str, Map map, boolean z) {
         String jSONObject;
         BufferedWriter bufferedWriter;
-        b51.d dVar = this.a;
+        b51.dShadow dVar = this.a;
         File f = z ? dVar.f(str, "internal-keys") : dVar.f(str, "keys");
         BufferedWriter bufferedWriter2 = null;
         try {
@@ -167,15 +167,15 @@ public final class h {
         try {
             bufferedWriter.write(jSONObject);
             bufferedWriter.flush();
-            v41.g.b(bufferedWriter);
+            v41.gShadow.b(bufferedWriter);
         } catch (Exception unused2) {
             bufferedWriter2 = bufferedWriter;
             f(f);
-            v41.g.b(bufferedWriter2);
+            v41.gShadow.b(bufferedWriter2);
         } catch (Throwable th2) {
             th = th2;
             bufferedWriter2 = bufferedWriter;
-            v41.g.b(bufferedWriter2);
+            v41.gShadow.b(bufferedWriter2);
             throw th;
         }
     }

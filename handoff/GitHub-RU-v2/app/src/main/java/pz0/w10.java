@@ -6,6 +6,6 @@ public abstract class w10 {
 
     static {
         a10.Companion.getClass();
-        new aa.q0("SearchShortcutQueryText", x61.r.r, sy.d0.n(a10.a));
+        new aa.q0("SearchShortcutQueryText", x61.rShadow.r, sy.d0Shadow.n(a10.a));
     }
 }

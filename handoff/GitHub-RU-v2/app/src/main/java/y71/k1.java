@@ -27,7 +27,7 @@ public final class k1 implements v71.n0 {
             if (objArr[((int) j) & (objArr.length - 1)] != this) {
                 return;
             }
-            n1.f(objArr, j, n1.a);
+            n1.f(objArr, j, n1Shadow.a);
             m1Var.j();
         }
     }

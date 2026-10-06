@@ -4,12 +4,12 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f0 implements Cloneable {
-    public b r;
+    public bShadow r;
     public d0 s;
     public e0 t;
     public i0 u;
 
-    public f0(b bVar) {
+    public f0(bShadow bVar) {
         new ReentrantLock();
         this.r = bVar;
         this.t = e0.c;
@@ -31,7 +31,7 @@ public final class f0 implements Cloneable {
     public f0(f0 f0Var) {
         new ReentrantLock();
         f0Var.r.getClass();
-        this.r = new b();
+        this.r = new bShadow();
         f0Var.s.getClass();
         this.s = new d0(0, 0);
         e0 e0Var = f0Var.t;

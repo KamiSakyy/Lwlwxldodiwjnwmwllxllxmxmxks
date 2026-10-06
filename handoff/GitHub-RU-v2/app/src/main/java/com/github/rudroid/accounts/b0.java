@@ -4,7 +4,7 @@ import androidx.lifecycle.a1;
 import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import kotlin.KotlinNothingValueException;
-import y71.n1;
+import y71.n1Shadow;
 import y71.q1;
 import y71.w1;
 import y71.y1;
@@ -46,10 +46,10 @@ public final class b0 extends k1 {
         this.f4343t = m0Var;
         this.f4344u = cVar;
         this.f4345v = wVar;
-        this.f4346w = n1.c(Boolean.FALSE);
-        x61.r rVar = x61.r.r;
-        this.f4347x = n1.c(rVar);
-        this.f4348y = n1.c(rVar);
+        this.f4346w = n1Shadow.c(Boolean.FALSE);
+        x61.rShadow rVar = x61.rShadow.r;
+        this.f4347x = n1Shadow.c(rVar);
+        this.f4348y = n1Shadow.c(rVar);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0034  */
@@ -92,6 +92,6 @@ public final class b0 extends k1 {
     }
 
     public final w1 Q() {
-        return n1.G(n1.m(this.f4344u.f5919b, this.f4346w, this.f4347x, this.f4348y, new g0(this, null)), d1.k(this), q1.a, new b(x61.r.r, false));
+        return n1Shadow.G(n1Shadow.m(this.f4344u.f5919b, this.f4346w, this.f4347x, this.f4348y, new g0(this, null)), d1.k(this), q1.a, new b(x61.rShadow.r, false));
     }
 }

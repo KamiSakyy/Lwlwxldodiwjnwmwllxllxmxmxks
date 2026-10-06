@@ -1,7 +1,7 @@
 package gw;
 
 import aa.h0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -40,7 +40,7 @@ public final class c implements h0 {
         sb.append(", repository=");
         sb.append(this.b);
         sb.append(", nodeIdFragment=");
-        return f4.r(sb, this.c, ")");
+        return f4Shadow.r(sb, this.c, ")");
     }
     public Object c(Object p1, Object p2) { return null; }
     public static final Object a = null;

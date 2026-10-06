@@ -53,7 +53,7 @@ final class z extends c71.j implements j71.e {
             t6.d g0 = iVar.g0();
             k71.k.g(f0, "factory");
             w51.r rVar = new w51.r(K0, f0, g0);
-            k71.e a2 = k71.x.a(t.v.class);
+            k71.e a2 = k71.xShadow.a(t.v.class);
             String b = a2.b();
             if (b == null) {
                 throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");

@@ -2525,7 +2525,7 @@ public final class i2 implements o2 {
                     break;
                 case 4:
                     i2 = i6 * 53;
-                    floatToIntBits = v2.e(j2, t1Var);
+                    floatToIntBits = v2.eShadow(j2, t1Var);
                     i6 = floatToIntBits + i2;
                     break;
                 case 5:
@@ -2536,7 +2536,7 @@ public final class i2 implements o2 {
                     break;
                 case 6:
                     i2 = i6 * 53;
-                    floatToIntBits = v2.e(j2, t1Var);
+                    floatToIntBits = v2.eShadow(j2, t1Var);
                     i6 = floatToIntBits + i2;
                     break;
                 case 7:
@@ -2564,17 +2564,17 @@ public final class i2 implements o2 {
                     break;
                 case 11:
                     i2 = i6 * 53;
-                    floatToIntBits = v2.e(j2, t1Var);
+                    floatToIntBits = v2.eShadow(j2, t1Var);
                     i6 = floatToIntBits + i2;
                     break;
                 case 12:
                     i2 = i6 * 53;
-                    floatToIntBits = v2.e(j2, t1Var);
+                    floatToIntBits = v2.eShadow(j2, t1Var);
                     i6 = floatToIntBits + i2;
                     break;
                 case 13:
                     i2 = i6 * 53;
-                    floatToIntBits = v2.e(j2, t1Var);
+                    floatToIntBits = v2.eShadow(j2, t1Var);
                     i6 = floatToIntBits + i2;
                     break;
                 case 14:
@@ -2585,7 +2585,7 @@ public final class i2 implements o2 {
                     break;
                 case 15:
                     i2 = i6 * 53;
-                    floatToIntBits = v2.e(j2, t1Var);
+                    floatToIntBits = v2.eShadow(j2, t1Var);
                     i6 = floatToIntBits + i2;
                     break;
                 case 16:
@@ -2871,7 +2871,7 @@ public final class i2 implements o2 {
                     break;
                 case 4:
                     if (p(i, obj2)) {
-                        v2.j(v2.e(j2, obj2), j2, obj);
+                        v2.j(v2.eShadow(j2, obj2), j2, obj);
                         l(i, obj);
                     }
                     obj3 = obj;
@@ -2885,7 +2885,7 @@ public final class i2 implements o2 {
                     break;
                 case 6:
                     if (p(i, obj2)) {
-                        v2.j(v2.e(j2, obj2), j2, obj);
+                        v2.j(v2.eShadow(j2, obj2), j2, obj);
                         l(i, obj);
                     }
                     obj3 = obj;
@@ -2918,21 +2918,21 @@ public final class i2 implements o2 {
                     break;
                 case 11:
                     if (p(i, obj2)) {
-                        v2.j(v2.e(j2, obj2), j2, obj);
+                        v2.j(v2.eShadow(j2, obj2), j2, obj);
                         l(i, obj);
                     }
                     obj3 = obj;
                     break;
                 case 12:
                     if (p(i, obj2)) {
-                        v2.j(v2.e(j2, obj2), j2, obj);
+                        v2.j(v2.eShadow(j2, obj2), j2, obj);
                         l(i, obj);
                     }
                     obj3 = obj;
                     break;
                 case 13:
                     if (p(i, obj2)) {
-                        v2.j(v2.e(j2, obj2), j2, obj);
+                        v2.j(v2.eShadow(j2, obj2), j2, obj);
                         l(i, obj);
                     }
                     obj3 = obj;
@@ -2946,7 +2946,7 @@ public final class i2 implements o2 {
                     break;
                 case 15:
                     if (p(i, obj2)) {
-                        v2.j(v2.e(j2, obj2), j2, obj);
+                        v2.j(v2.eShadow(j2, obj2), j2, obj);
                         l(i, obj);
                     }
                     obj3 = obj;
@@ -3107,7 +3107,7 @@ public final class i2 implements o2 {
                         }
                         break;
                     case 4:
-                        if (o(t1Var, t1Var2, i) && v2.e(j2, t1Var) == v2.e(j2, t1Var2)) {
+                        if (o(t1Var, t1Var2, i) && v2.eShadow(j2, t1Var) == v2.eShadow(j2, t1Var2)) {
                             continue;
                             i += 3;
                         }
@@ -3119,7 +3119,7 @@ public final class i2 implements o2 {
                         }
                         break;
                     case 6:
-                        if (o(t1Var, t1Var2, i) && v2.e(j2, t1Var) == v2.e(j2, t1Var2)) {
+                        if (o(t1Var, t1Var2, i) && v2.eShadow(j2, t1Var) == v2.eShadow(j2, t1Var2)) {
                             continue;
                             i += 3;
                         }
@@ -3155,19 +3155,19 @@ public final class i2 implements o2 {
                         }
                         break;
                     case 11:
-                        if (o(t1Var, t1Var2, i) && v2.e(j2, t1Var) == v2.e(j2, t1Var2)) {
+                        if (o(t1Var, t1Var2, i) && v2.eShadow(j2, t1Var) == v2.eShadow(j2, t1Var2)) {
                             continue;
                             i += 3;
                         }
                         break;
                     case 12:
-                        if (o(t1Var, t1Var2, i) && v2.e(j2, t1Var) == v2.e(j2, t1Var2)) {
+                        if (o(t1Var, t1Var2, i) && v2.eShadow(j2, t1Var) == v2.eShadow(j2, t1Var2)) {
                             continue;
                             i += 3;
                         }
                         break;
                     case 13:
-                        if (o(t1Var, t1Var2, i) && v2.e(j2, t1Var) == v2.e(j2, t1Var2)) {
+                        if (o(t1Var, t1Var2, i) && v2.eShadow(j2, t1Var) == v2.eShadow(j2, t1Var2)) {
                             continue;
                             i += 3;
                         }
@@ -3179,7 +3179,7 @@ public final class i2 implements o2 {
                         }
                         break;
                     case 15:
-                        if (o(t1Var, t1Var2, i) && v2.e(j2, t1Var) == v2.e(j2, t1Var2)) {
+                        if (o(t1Var, t1Var2, i) && v2.eShadow(j2, t1Var) == v2.eShadow(j2, t1Var2)) {
                             continue;
                             i += 3;
                         }
@@ -3252,7 +3252,7 @@ public final class i2 implements o2 {
                     case 67:
                     case 68:
                         long j3 = iArr[i + 2] & 1048575;
-                        if (v2.e(j3, t1Var) == v2.e(j3, t1Var2) && p2.f(v2.h(j2, t1Var), v2.h(j2, t1Var2))) {
+                        if (v2.eShadow(j3, t1Var) == v2.eShadow(j3, t1Var2) && p2.f(v2.h(j2, t1Var), v2.h(j2, t1Var2))) {
                             continue;
                             i += 3;
                         }
@@ -3342,7 +3342,7 @@ public final class i2 implements o2 {
         if (j2 == 1048575) {
             return;
         }
-        v2.j((1 << (i2 >>> 20)) | v2.e(j2, obj), j2, obj);
+        v2.j((1 << (i2 >>> 20)) | v2.eShadow(j2, obj), j2, obj);
     }
 
     public final void m(int i, Object obj, Object obj2) {
@@ -3387,7 +3387,7 @@ public final class i2 implements o2 {
                     }
                     break;
                 case 4:
-                    if (v2.e(j3, obj) == 0) {
+                    if (v2.eShadow(j3, obj) == 0) {
                         return false;
                     }
                     break;
@@ -3397,7 +3397,7 @@ public final class i2 implements o2 {
                     }
                     break;
                 case 6:
-                    if (v2.e(j3, obj) == 0) {
+                    if (v2.eShadow(j3, obj) == 0) {
                         return false;
                     }
                     break;
@@ -3429,17 +3429,17 @@ public final class i2 implements o2 {
                     }
                     break;
                 case 11:
-                    if (v2.e(j3, obj) == 0) {
+                    if (v2.eShadow(j3, obj) == 0) {
                         return false;
                     }
                     break;
                 case 12:
-                    if (v2.e(j3, obj) == 0) {
+                    if (v2.eShadow(j3, obj) == 0) {
                         return false;
                     }
                     break;
                 case 13:
-                    if (v2.e(j3, obj) == 0) {
+                    if (v2.eShadow(j3, obj) == 0) {
                         return false;
                     }
                     break;
@@ -3449,7 +3449,7 @@ public final class i2 implements o2 {
                     }
                     break;
                 case 15:
-                    if (v2.e(j3, obj) == 0) {
+                    if (v2.eShadow(j3, obj) == 0) {
                         return false;
                     }
                     break;
@@ -3466,7 +3466,7 @@ public final class i2 implements o2 {
                 default:
                     throw new IllegalArgumentException();
             }
-        } else if (((1 << (i2 >>> 20)) & v2.e(j2, obj)) == 0) {
+        } else if (((1 << (i2 >>> 20)) & v2.eShadow(j2, obj)) == 0) {
             return false;
         }
         return true;
@@ -3477,7 +3477,7 @@ public final class i2 implements o2 {
     }
 
     public final boolean s(int i, Object obj, int i2) {
-        return v2.e((long) (this.a[i2 + 2] & 1048575), obj) == i;
+        return v2.eShadow((long) (this.a[i2 + 2] & 1048575), obj) == i;
     }
 
     /*  JADX ERROR: Type inference failed

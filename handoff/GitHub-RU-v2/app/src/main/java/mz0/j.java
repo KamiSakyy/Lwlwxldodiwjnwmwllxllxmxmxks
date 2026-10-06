@@ -3,15 +3,15 @@ package mz0;
 import aa.w;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import lz0.r;
 import pz0.sj;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements aa.a {
     public static final j a = new j();
-    public static final List b = d0.o(new String[]{"id", "payload", "challengeRequired", "type"});
+    public static final List b = d0Shadow.o(new String[]{"id", "payload", "challengeRequired", "type"});
 
     public final Object a(ea.e eVar, w wVar) {
         Object obj;
@@ -27,7 +27,7 @@ public final class j implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = f4.c(1, nextLong, "substring(...)");
+                        nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {
@@ -90,7 +90,7 @@ public final class j implements aa.a {
         fVar.z0("payload");
         aa.c.a.b(fVar, wVar, rVar.b);
         fVar.z0("challengeRequired");
-        f4.C(rVar.c, aa.c.f, fVar, wVar, "type");
+        f4Shadow.C(rVar.c, aa.c.f, fVar, wVar, "type");
         fVar.I(rVar.d.r);
     }
 }

@@ -32,7 +32,7 @@ public final class a1 extends Handler {
                     if (data == null || (str = data.getString("SessionUpdateExtra")) == null) {
                         str = "";
                     }
-                    v71.b0.z(v71.b0.c((a71.h) this.b), (a71.h) null, (v71.a0) null, new g0(str, (a71.c) null, 1), 3);
+                    v71.b0.z(v71.b0.c((a71.h) this.b), (a71.h) null, (v71.a0Shadow) null, new g0(str, (a71.c) null, 1), 3);
                     break;
                 }
             case 1:

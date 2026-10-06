@@ -1,7 +1,7 @@
 package k90;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class j0 implements aa.a {
@@ -59,7 +59,7 @@ public abstract class j0 implements aa.a {
         fVar.z0("name");
         bVar.b(fVar, wVar, nVar.b);
         fVar.z0("negative");
-        f4.C(nVar.c, aa.c.f, fVar, wVar, "value");
+        f4Shadow.C(nVar.c, aa.c.f, fVar, wVar, "value");
         bVar.b(fVar, wVar, nVar.d);
     }
 }

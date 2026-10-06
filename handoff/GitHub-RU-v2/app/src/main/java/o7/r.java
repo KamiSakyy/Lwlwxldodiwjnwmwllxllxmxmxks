@@ -2,7 +2,7 @@ package o7;
 
 import java.util.concurrent.locks.ReentrantLock;
 import kotlinx.coroutines.TimeoutCancellationException;
-import sy.d0;
+import sy.d0Shadow;
 import v71.b0;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -36,7 +36,7 @@ public final class r {
         this.f30054a = i;
         this.f30055b = aVar;
         this.f30059f = new g[i];
-        int i10 = e81.j.a;
+        int i10 = e81.jShadow.a;
         this.f30060g = new e81.i(i, 0);
         this.f30061h = new x61.k(i);
     }
@@ -80,7 +80,7 @@ public final class r {
                         reentrantLock = this.f30056c;
                         reentrantLock.lock();
                         if (!this.f30058e) {
-                            sy.r.w("Connection pool is closed", 21);
+                            sy.rShadow.w("Connection pool is closed", 21);
                             throw null;
                         }
                         if (kVar.isEmpty() && this.f30057d < this.f30054a) {
@@ -259,12 +259,12 @@ public final class r {
         ReentrantLock reentrantLock = this.f30056c;
         reentrantLock.lock();
         try {
-            y61.b i = d0.i();
+            y61.b i = d0Shadow.i();
             int i10 = kVar.t;
             for (int i11 = 0; i11 < i10; i11++) {
                 i.add(kVar.get(i11));
             }
-            y61.b h10 = d0.h(i);
+            y61.b h10 = d0Shadow.h(i);
             sb2.append('\t' + toString() + " (");
             sb2.append("capacity=" + this.f30054a + ", ");
             StringBuilder sb3 = new StringBuilder();

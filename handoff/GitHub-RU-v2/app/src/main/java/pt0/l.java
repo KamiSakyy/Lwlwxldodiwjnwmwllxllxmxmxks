@@ -2,13 +2,13 @@ package pt0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements aa.a {
     public static final l a = new l();
-    public static final List b = d0.o(new String[]{"path", "isGenerated", "submodule", "lineCount", "fileType"});
+    public static final List b = d0Shadow.o(new String[]{"path", "isGenerated", "submodule", "lineCount", "fileType"});
 
     public final Object a(ea.e eVar, w wVar) {
         Boolean bool;
@@ -57,7 +57,7 @@ public final class l implements aa.a {
         fVar.z0("path");
         aa.c.i.b(fVar, wVar, dVar.a);
         fVar.z0("isGenerated");
-        f4.C(dVar.b, aa.c.f, fVar, wVar, "submodule");
+        f4Shadow.C(dVar.b, aa.c.f, fVar, wVar, "submodule");
         aa.c.b(aa.c.c(p.a, false)).b(fVar, wVar, dVar.c);
         fVar.z0("lineCount");
         aa.c.b(ro0.a.a).b(fVar, wVar, dVar.d);

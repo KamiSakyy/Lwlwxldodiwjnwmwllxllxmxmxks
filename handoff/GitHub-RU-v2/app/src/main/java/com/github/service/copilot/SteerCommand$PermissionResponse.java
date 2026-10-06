@@ -3,7 +3,7 @@ package com.github.service.copilot;
 import com.github.rudroid.m0;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -29,7 +29,7 @@ public final class SteerCommand$PermissionResponse implements c4 {
 
     public /* synthetic */ SteerCommand$PermissionResponse(int i, String str, boolean z, z2 z2Var) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, SteerCommand$PermissionResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, SteerCommand$PermissionResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;

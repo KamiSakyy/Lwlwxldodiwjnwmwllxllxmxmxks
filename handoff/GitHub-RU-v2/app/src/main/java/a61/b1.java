@@ -7,7 +7,7 @@ import java.util.Comparator;
 public final class b1Shadow implements Comparator {
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
-        return sy.t.g(Long.valueOf(((Message) obj).getWhen()), Long.valueOf(((Message) obj2).getWhen()));
+        return sy.tShadow.g(Long.valueOf(((Message) obj).getWhen()), Long.valueOf(((Message) obj2).getWhen()));
     }
 
 
@@ -45,7 +45,7 @@ public final class b1Shadow implements Comparator {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j {
+    public static class jShadow {
         public j() {
         }
     }

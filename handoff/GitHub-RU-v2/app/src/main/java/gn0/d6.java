@@ -32,7 +32,7 @@ public final class d6 {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("CreateUserListInput(clientMutationId=", this.a, ", description=", this.b, ", isPrivate=");
+        StringBuilder u = jo.f4Shadow.u("CreateUserListInput(clientMutationId=", this.a, ", description=", this.b, ", isPrivate=");
         u.append(this.c);
         u.append(", name=");
         u.append(this.d);

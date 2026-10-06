@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 implements aaShadow.a {
     public static final l0 a = new l0();
-    public static final List b = sy.d0.o("__typename", "pullRequestReview", "subjectType", "position", "thread", "path", "state", "url", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "pullRequestReview", "subjectType", "position", "thread", "path", "state", "url", "id");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x004b, code lost:
     

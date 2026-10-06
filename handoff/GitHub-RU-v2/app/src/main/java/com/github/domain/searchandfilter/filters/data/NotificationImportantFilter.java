@@ -7,7 +7,7 @@ import bm.o;
 import c30.s0;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 
@@ -31,7 +31,7 @@ public final class NotificationImportantFilter extends d {
     public /* synthetic */ NotificationImportantFilter(int i, l lVar, String str, boolean z, boolean z2) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, NotificationImportantFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, NotificationImportantFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

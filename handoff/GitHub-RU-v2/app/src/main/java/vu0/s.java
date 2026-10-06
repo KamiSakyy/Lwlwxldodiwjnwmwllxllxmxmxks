@@ -16,7 +16,7 @@ public abstract class s {
         vd.Companion.getClass();
         x xVar = vd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         List r = x61.l.r(new aa.m[]{new aa.m("total", b, (String) null, rVar, rVar, rVar), new aa.m("completed", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         td.Companion.getClass();
         aa.m mVar = new aa.m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);

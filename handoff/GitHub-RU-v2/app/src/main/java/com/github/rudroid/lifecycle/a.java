@@ -4,7 +4,7 @@ import androidx.lifecycle.c0;
 import androidx.lifecycle.i;
 import k71.k;
 import sb.a;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -17,7 +17,7 @@ public final class a implements i, sb.a {
     public y1 f16786s;
 
     public a() {
-        y1 c10 = n1.c(a.EnumC0089a.f31788s);
+        y1 c10 = n1Shadow.c(a.EnumC0089a.f31788s);
         this.f16785r = c10;
         this.f16786s = c10;
     }

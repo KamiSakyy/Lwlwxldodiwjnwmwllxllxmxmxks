@@ -22,7 +22,7 @@ public abstract class bm {
     public static final aa.q0 o;
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         l.Companion.getClass();
         aa.j0 j0Var = l.a;
         u0.Companion.getClass();

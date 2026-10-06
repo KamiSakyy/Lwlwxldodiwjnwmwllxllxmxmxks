@@ -4,9 +4,9 @@ package jn0;
 public final class ub {
     public String a;
     public String b;
-    public ar0.a0 c;
+    public ar0.a0Shadow c;
 
-    public ub(String str, String str2, ar0.a0 a0Var) {
+    public ub(String str, String str2, ar0.a0Shadow a0Var) {
         this.a = str;
         this.b = str2;
         this.c = a0Var;

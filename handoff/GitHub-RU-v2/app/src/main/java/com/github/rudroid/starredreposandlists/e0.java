@@ -15,7 +15,7 @@ final class e0<T> implements y71.j {
     }
 
     public final Object c(Object obj, a71.c cVar) {
-        x61.r rVar;
+        x61.rShadow rVar;
         c4 c4Var;
         c4 c4Var2 = (c4) obj;
         x01.i iVar = c4Var2.b;
@@ -23,8 +23,8 @@ final class e0<T> implements y71.j {
         h0Var.x = iVar;
         y1 y1Var = h0Var.A;
         w61.k kVar = (w61.k) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();
-        x61.r rVar2 = x61.r.r;
-        x61.r l0 = (kVar == null || (c4Var = (c4) kVar.r) == null) ? rVar2 : x61.m.l0(c4Var.a, c4Var2.a);
+        x61.rShadow rVar2 = x61.rShadow.r;
+        x61.rShadow l0 = (kVar == null || (c4Var = (c4) kVar.r) == null) ? rVar2 : x61.m.l0(c4Var.a, c4Var2.a);
         g1.a aVar = com.github.rudroid.utilities.ui.g1.Companion;
         c4 c4Var3 = new c4(l0, c4Var2.b);
         w61.k kVar2 = (w61.k) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();

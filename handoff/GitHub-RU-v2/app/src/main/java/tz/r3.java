@@ -10,7 +10,7 @@ public abstract class r3 implements aa.a {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         u1 u1Var = null;
-        a0 a0Var = null;
+        a0Shadow a0Var = null;
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
@@ -19,7 +19,7 @@ public abstract class r3 implements aa.a {
                 if (r0 != 1) {
                     break;
                 }
-                a0Var = (a0) aa.c.c(i2.a, true).a(eVar, wVar);
+                a0Var = (a0Shadow) aa.c.c(i2.a, true).a(eVar, wVar);
             }
         }
         if (a0Var != null) {

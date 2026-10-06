@@ -10,7 +10,7 @@ import m10.ah;
 import m10.at;
 import m10.eh;
 import m10.nt;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,9 +22,9 @@ public abstract class c {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2FieldConfigurationConnection");
+        List n = d0Shadow.n("ProjectV2FieldConfigurationConnection");
         List list = b.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2FieldConfigurationConnection", n, list)});
         nt.Companion.getClass();

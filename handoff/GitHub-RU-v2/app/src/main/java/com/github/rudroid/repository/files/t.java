@@ -21,14 +21,14 @@ public final class t extends androidx.lifecycle.k1 {
         this.f19679s = aVar;
         this.f19680t = cVar;
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
-        this.f19681u = y71.n1.c(new com.github.rudroid.utilities.ui.t1(z.d.f19702a));
+        this.f19681u = y71.n1Shadow.c(new com.github.rudroid.utilities.ui.t1(z.d.f19702a));
     }
 
     public final void P(String str, String str2, String str3, String str4) {
         k71.k.g(str, "repoOwner");
         k71.k.g(str2, "repoName");
         k71.k.g(str4, "path");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new s(this, str, str2, str3, str4, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new s(this, str, str2, str3, str4, null), 3);
     }
 
     public final void Q() {

@@ -4,7 +4,7 @@ import g3.b0;
 import l7.x1;
 import oa.j;
 import sy.y;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
@@ -47,7 +47,7 @@ public final class h {
                     } else {
                         y71.i A = this.b.A(jVar);
                         gVar.w = 3;
-                        Object v = n1.v(A, gVar);
+                        Object v = n1Shadow.v(A, gVar);
                         if (v != aVar) {
                             return v;
                         }
@@ -67,7 +67,7 @@ public final class h {
                 y.j(obj);
                 f fVar = new f((y71.i) obj, 0);
                 gVar.w = 2;
-                Object v2 = n1.v(fVar, gVar);
+                Object v2 = n1Shadow.v(fVar, gVar);
                 return v2 != aVar ? aVar : v2;
             }
         }
@@ -79,7 +79,7 @@ public final class h {
         }
         f fVar2 = new f((y71.i) obj2, 0);
         gVar.w = 2;
-        Object v22 = n1.v(fVar2, gVar);
+        Object v22 = n1Shadow.v(fVar2, gVar);
         if (v22 != aVar2) {
         }
     }

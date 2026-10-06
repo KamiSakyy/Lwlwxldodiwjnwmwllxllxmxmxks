@@ -19,9 +19,9 @@ import com.google.android.gms.measurement.internal.x;
 import hc0.k00;
 import java.util.List;
 import k81.z;
-import sy.p;
+import sy.pShadow;
 import u31.n;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements i0, t6.b, k, x {
@@ -35,7 +35,7 @@ public final class d implements i0, t6.b, k, x {
     }
 
     public static d a(Context context, int i) {
-        p.g("Cannot create a CalendarItemStyle with a styleResId of 0", i != 0);
+        pShadow.g("Cannot create a CalendarItemStyle with a styleResId of 0", i != 0);
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(i, x21.a.u);
         Rect rect = new Rect(obtainStyledAttributes.getDimensionPixelOffset(0, 0), obtainStyledAttributes.getDimensionPixelOffset(2, 0), obtainStyledAttributes.getDimensionPixelOffset(1, 0), obtainStyledAttributes.getDimensionPixelOffset(3, 0));
         i4.W(context, obtainStyledAttributes, 4);
@@ -45,10 +45,10 @@ public final class d implements i0, t6.b, k, x {
         n.a(obtainStyledAttributes.getResourceId(5, 0), obtainStyledAttributes.getResourceId(6, 0), context).a();
         obtainStyledAttributes.recycle();
         d dVar = new d(6);
-        p.h(rect.left);
-        p.h(rect.top);
-        p.h(rect.right);
-        p.h(rect.bottom);
+        pShadow.h(rect.left);
+        pShadow.h(rect.top);
+        pShadow.h(rect.right);
+        pShadow.h(rect.bottom);
         return dVar;
     }
 
@@ -80,7 +80,7 @@ public final class d implements i0, t6.b, k, x {
         List list = ma0.a.a;
         List list2 = ma0.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", j0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -100,7 +100,7 @@ public final class d implements i0, t6.b, k, x {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(d.class).hashCode();
+                return k71.xShadow.a(d.class).hashCode();
             default:
                 return super.hashCode();
         }

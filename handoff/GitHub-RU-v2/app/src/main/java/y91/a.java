@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import n91.b;
 import q81.k;
-import sy.r;
-import sy.t;
+import sy.rShadow;
+import sy.tShadow;
 import x91.c;
 import x91.d;
 import x91.e;
@@ -87,9 +87,9 @@ public final class a implements f {
                         return kVar2;
                     }
                     if (k71.k.b(gVar2.m(), j91.a.R) && k71.k.b(gVar2.r(), j91.a.M)) {
-                        d v2 = r.v(gVar2.c());
+                        d v2 = rShadow.v(gVar2.c());
                         if (v2 == null) {
-                            v2 = t.p(gVar2.c());
+                            v2 = tShadow.p(gVar2.c());
                         }
                         if (v2 != null) {
                             v vVar = v2.a;
@@ -115,7 +115,7 @@ public final class a implements f {
                 int i7 = -239;
                 int i8 = -239;
                 while (gVar3.m() != null) {
-                    if (!k71.k.b(gVar3.m(), j91.a.M) || (v = r.v(gVar3)) == null) {
+                    if (!k71.k.b(gVar3.m(), j91.a.M) || (v = rShadow.v(gVar3)) == null) {
                         int i9 = gVar3.s;
                         if (i7 + 1 != i9) {
                             if (i8 != -239) {
@@ -190,7 +190,7 @@ public final class a implements f {
                 int i14 = -239;
                 int i15 = -239;
                 while (gVar5.m() != null) {
-                    if (!k71.k.b(gVar5.m(), j91.a.M) || (p = t.p(gVar5)) == null) {
+                    if (!k71.k.b(gVar5.m(), j91.a.M) || (p = tShadow.p(gVar5)) == null) {
                         int i16 = gVar5.s;
                         if (i14 + 1 != i16) {
                             if (i15 != -239) {

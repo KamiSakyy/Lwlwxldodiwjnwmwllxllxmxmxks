@@ -16,10 +16,10 @@ import pz0.qf;
 import pz0.su;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class d {
@@ -29,13 +29,13 @@ public abstract class d {
         xd.Companion.getClass();
         x xVar = xd.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("endCursor", xVar, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         x xVar2 = pd.a;
         List r = l.r(new m[]{mVar, new m("hasNextPage", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("hasPreviousPage", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("IssueType");
+        List n = d0Shadow.n("IssueType");
         List list = zr0.a.a;
         s c = no.a.c(list, "selections", "IssueType", n, list);
         td.Companion.getClass();

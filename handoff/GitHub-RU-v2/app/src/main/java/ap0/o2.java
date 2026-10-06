@@ -75,7 +75,7 @@ public abstract class o2 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, m2Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(m2Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(m2Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, m2Var.d);
         fVar.z0("release");
         aa.c.c(p2.a, true).b(fVar, wVar, m2Var.e);

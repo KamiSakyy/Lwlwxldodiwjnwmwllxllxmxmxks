@@ -44,7 +44,7 @@ public abstract class u implements aa.a {
         aa.c.a.b(fVar, wVar, tVar.a);
         fVar.z0("relatedItems");
         aa.c.a(aa.c.c(v.a, true)).e(fVar, wVar, tVar.b);
-        List list = a0.a;
+        List list = a0Shadow.a;
         a0.d(fVar, wVar, tVar.c);
     }
 }

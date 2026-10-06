@@ -76,31 +76,31 @@ public final class b implements f0 {
     }
 
     public static v e(String str) {
-        v vVar = v.t;
+        vShadow vVar = v.t;
         if (str.equals("http/1.0")) {
             return vVar;
         }
-        v vVar2 = v.u;
+        vShadow vVar2 = v.u;
         if (str.equals("http/1.1")) {
             return vVar2;
         }
-        v vVar3 = v.x;
+        vShadow vVar3 = v.x;
         if (str.equals("h2_prior_knowledge")) {
             return vVar3;
         }
-        v vVar4 = v.w;
+        vShadow vVar4 = v.w;
         if (str.equals("h2")) {
             return vVar4;
         }
-        v vVar5 = v.v;
+        vShadow vVar5 = v.v;
         if (str.equals("spdy/3.1")) {
             return vVar5;
         }
-        v vVar6 = v.y;
+        vShadow vVar6 = v.y;
         if (str.equals("quic")) {
             return vVar6;
         }
-        v vVar7 = v.z;
+        vShadow vVar7 = v.z;
         if (t71.w.F(str, "h3", false)) {
             return vVar7;
         }

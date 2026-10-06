@@ -5,9 +5,9 @@ import u10.lz;
 import u10.mz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class jo implements aaShadow.a {
-    public static final jo a = new jo();
-    public static final List b = sy.d0.o("pageInfo", "nodes");
+public final class joShadow implements aaShadow.a {
+    public static final joShadow a = new joShadow();
+    public static final List b = sy.d0Shadow.o("pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -4,13 +4,13 @@ import aa.w;
 import i10.r;
 import i10.u;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.a {
     public static final l a = new l();
-    public static final List b = d0.o("hasValidDeviceAuthKey", "hasExpiredAuthRequest", "activeAuthRequest");
+    public static final List b = d0Shadow.o("hasValidDeviceAuthKey", "hasExpiredAuthRequest", "activeAuthRequest");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -50,8 +50,8 @@ public final class l implements aa.a {
         k71.k.g(uVar, "value");
         fVar.z0("hasValidDeviceAuthKey");
         aa.b bVar = aa.c.f;
-        f4.C(uVar.a, bVar, fVar, wVar, "hasExpiredAuthRequest");
-        f4.C(uVar.b, bVar, fVar, wVar, "activeAuthRequest");
+        f4Shadow.C(uVar.a, bVar, fVar, wVar, "hasExpiredAuthRequest");
+        f4Shadow.C(uVar.b, bVar, fVar, wVar, "activeAuthRequest");
         aa.c.b(aa.c.c(j.a, false)).b(fVar, wVar, uVar.c);
     }
 

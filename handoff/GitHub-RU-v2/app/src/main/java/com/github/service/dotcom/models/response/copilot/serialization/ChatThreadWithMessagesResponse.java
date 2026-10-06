@@ -7,7 +7,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -30,7 +30,7 @@ public final class ChatThreadWithMessagesResponse {
         }
         this.a = chatThreadResponse;
         if ((i & 2) == 0) {
-            this.b = r.r;
+            this.b = rShadow.r;
         } else {
             this.b = list;
         }

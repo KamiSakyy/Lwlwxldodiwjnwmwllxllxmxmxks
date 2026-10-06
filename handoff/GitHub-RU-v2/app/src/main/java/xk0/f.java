@@ -14,7 +14,7 @@ import gn0.pb;
 import gn0.s00;
 import gn0.tb;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -26,15 +26,15 @@ public abstract class f {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("User");
+        List n = d0Shadow.n("User");
         List list = h.a;
         s c = no.a.c(list, "selections", "User", n, list);
         lb.Companion.getClass();
         List r = l.r(new s[]{mVar, c, new m("viewerCanUnblock", l0.b(lb.a), (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        s nVar = new n("User", d0.n("User"), r);
+        s nVar = new n("User", d0Shadow.n("User"), r);
         pb.Companion.getClass();
         x xVar2 = pb.a;
         List r2 = l.r(new s[]{mVar2, nVar, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});

@@ -4,7 +4,7 @@ import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.service.models.response.CheckStatusState;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -46,7 +46,7 @@ public final class d {
     }
 
     public final int hashCode() {
-        return this.j.hashCode() + f1.e.c(this.i, (this.h.hashCode() + f4.b(this.g, f4.b(this.f, h1.i(h1.i((this.c.hashCode() + h1.i(this.a.hashCode() * 31, this.b, 31)) * 31, this.d, 31), this.e, 31), 31), 31)) * 31, 31);
+        return this.j.hashCode() + f1.e.c(this.i, (this.h.hashCode() + f4Shadow.b(this.g, f4Shadow.b(this.f, h1.i(h1.i((this.c.hashCode() + h1.i(this.a.hashCode() * 31, this.b, 31)) * 31, this.d, 31), this.e, 31), 31), 31)) * 31, 31);
     }
 
     public final String toString() {

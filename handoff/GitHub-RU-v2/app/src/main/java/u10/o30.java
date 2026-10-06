@@ -4,9 +4,9 @@ package u10;
 public final class o30 {
     public String a;
     public String b;
-    public e50.x c;
+    public e50.xShadow c;
 
-    public o30(String str, String str2, e50.x xVar) {
+    public o30(String str, String str2, e50.xShadow xVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

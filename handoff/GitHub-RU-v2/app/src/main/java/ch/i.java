@@ -24,7 +24,7 @@ public final class i {
         q0 a6 = q0.a(q0Var2, 0L, t1.C(14), (s) null, (o) null, (k3.i) null, 0L, 0, 0L, (z) null, (r3.i) null, 16777213);
         q0 a7 = q0.a(q0Var2, 0L, t1.C(12), (s) null, (o) null, (k3.i) null, 0L, 0, 0L, (z) null, (r3.i) null, 16777213);
         q0 q0Var3 = cVar.d;
-        long j = jh.c.p;
+        long j = jh.cShadow.p;
         a = new h(q0Var, q0Var2, a2, a3, a4, a5, a6, a7, q0.a(q0Var3, j, 0L, (s) null, (o) null, (k3.i) null, 0L, 0, 0L, (z) null, (r3.i) null, 16777214), q0.a(cVar.E, j, 0L, (s) null, (o) null, (k3.i) null, 0L, 0, 0L, (z) null, (r3.i) null, 16777214));
         lh.c cVar2 = lh.a.a;
         q0 q0Var4 = cVar2.l;

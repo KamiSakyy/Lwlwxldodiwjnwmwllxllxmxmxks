@@ -3,7 +3,7 @@ package go0;
 import pz0.bt;
 import pz0.ze;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p extends c71.j implements j71.e {
@@ -109,7 +109,7 @@ public final class p extends c71.j implements j71.e {
                     sy.y.j(obj);
                     this.x = jVar;
                     this.w = 1;
-                    v = n1.v(n1.y(new i(com.github.service.wrapper.a.o(zVar.s, new sn0.e(str), null, false, null, null, 58), str, i2), zVar.u), this);
+                    v = n1Shadow.v(n1Shadow.y(new i(com.github.service.wrapper.a.o(zVar.s, new sn0.e(str), null, false, null, null, 58), str, i2), zVar.u), this);
                     break;
                 } else {
                     if (i5 != 1) {
@@ -141,7 +141,7 @@ public final class p extends c71.j implements j71.e {
                     sn.a[] aVarArr = sn.a.r;
                     this.x = jVar2;
                     this.w = 1;
-                    v2 = n1.v(n1.y(new i(com.github.service.wrapper.a.o(zVar.s, new sn0.j(str, ze.s), null, false, null, null, 58), str, i3), zVar.u), this);
+                    v2 = n1Shadow.v(n1Shadow.y(new i(com.github.service.wrapper.a.o(zVar.s, new sn0.j(str, ze.s), null, false, null, null, 58), str, i3), zVar.u), this);
                     break;
                 } else {
                     if (i6 != 1) {
@@ -172,7 +172,7 @@ public final class p extends c71.j implements j71.e {
                     sy.y.j(obj);
                     this.x = jVar3;
                     this.w = 1;
-                    v3 = n1.v(n1.y(new i(com.github.service.wrapper.a.o(zVar.s, new sn0.r(str), null, false, null, null, 58), str, i4), zVar.u), this);
+                    v3 = n1Shadow.v(n1Shadow.y(new i(com.github.service.wrapper.a.o(zVar.s, new sn0.r(str), null, false, null, null, 58), str, i4), zVar.u), this);
                     break;
                 } else {
                     if (i7 != 1) {
@@ -204,7 +204,7 @@ public final class p extends c71.j implements j71.e {
                     sn.b[] bVarArr = sn.b.r;
                     this.x = jVar4;
                     this.w = 1;
-                    v4 = n1.v(n1.y(new n(new y71.y(com.github.service.wrapper.a.o(zVar.s, new sn0.w(str, bt.s), null, false, null, null, 58), new o(3, null, 0)), str, 0), zVar.u), this);
+                    v4 = n1Shadow.v(n1Shadow.y(new n(new y71.y(com.github.service.wrapper.a.o(zVar.s, new sn0.w(str, bt.s), null, false, null, null, 58), new o(3, null, 0)), str, 0), zVar.u), this);
                     break;
                 } else {
                     if (i8 != 1) {

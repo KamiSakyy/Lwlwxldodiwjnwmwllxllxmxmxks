@@ -15,7 +15,7 @@ final class o<T> implements y71.j {
     public final Object c(Object obj, a71.c cVar) {
         int intValue = ((Number) ((w61.k) obj).r).intValue();
         int i = this.r;
-        int m = i > 0 ? sy.t.m(0, (intValue / 4.0f) / i, i) : Integer.MAX_VALUE;
+        int m = i > 0 ? sy.tShadow.m(0, (intValue / 4.0f) / i, i) : Integer.MAX_VALUE;
         this.s.E(m <= i ? i - m : 0);
         return w61.a0.a;
     }

@@ -16,12 +16,12 @@ import j71.e;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import rm0.u7;
 import rm0.v4;
 import s0.z0;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import t00.f8;
 import t71.w;
@@ -30,12 +30,12 @@ import v71.z;
 import w61.a0;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import x71.s;
 import x71.t;
 import x71.v;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 import y71.o;
 import y71.p;
 import z71.x;
@@ -216,7 +216,7 @@ public final class b extends j implements e {
                 this.w = 1;
                 return pVar.f((z) this.x, (y71.j) obj2, this) == aVar5 ? aVar5 : a0Var;
             case 5:
-                z8.d dVar = (z8.d) obj2;
+                z8.dShadow dVar = (z8.d) obj2;
                 ConnectivityManager connectivityManager = dVar.a;
                 b71.a aVar6 = b71.a.r;
                 int i7 = this.w;
@@ -236,7 +236,7 @@ public final class b extends j implements e {
                     sVar2.e((Throwable) null);
                     return a0Var;
                 }
-                z0 z0Var = new z0(16, b0.z(sVar, (h) null, (v71.a0) null, new v4(dVar, sVar, (a71.c) null, 29), 3), sVar);
+                z0 z0Var = new z0(16, b0.z(sVar, (h) null, (v71.a0Shadow) null, new v4(dVar, sVar, (a71.c) null, 29), 3), sVar);
                 if (Build.VERSION.SDK_INT >= 30) {
                     g.a.getClass();
                     eVar = g.a(connectivityManager, a2, z0Var);
@@ -276,7 +276,7 @@ public final class b extends j implements e {
                     return a0Var;
                 }
                 y.j(obj);
-                ia.d dVar2 = (ia.d) this.x;
+                ia.dShadow dVar2 = (ia.d) this.x;
                 dVar2.getClass();
                 k.g(qVar, "spec");
                 ArrayList arrayList = dVar2.a;
@@ -315,7 +315,7 @@ public final class b extends j implements e {
                 y.j(obj);
                 z9.b bVar = (z9.b) this.x;
                 l3.y yVar = bVar.r;
-                aa.d d = ((aa.d) obj3).d();
+                aa.dShadow d = ((aa.d) obj3).d();
                 g0 d2 = bVar.s.d(bVar.w).d(bVar.z).d(d.c);
                 k.g(d2, "executionContext");
                 d.c = d2;
@@ -356,7 +356,7 @@ public final class b extends j implements e {
                 Boolean bool5 = d.j;
                 d.j = bool5 != null ? bool5 : null;
                 d.k = bVar.y;
-                aa.d b = d.b();
+                aa.dShadow b = d.b();
                 y61.b i17 = d0.i();
                 i17.addAll(yVar.a);
                 i17.addAll((ArrayList) yVar.d);

@@ -92,7 +92,7 @@ public final class w {
         if (sVar2.S(i5 & 1, (i5 & 306783379) != 306783378)) {
             w1.r rVar3 = w1.o.a;
             w1.r rVar4 = i4 != 0 ? rVar3 : rVar2;
-            w1.r f = f0.o.f(rVar4, ih.d.b(sVar2).a, d2.a0.b);
+            w1.r f = f0.o.f(rVar4, ih.d.b(sVar2).a, d2.a0Shadow.b);
             l2 a = j2.a(androidx.compose.foundation.layout.l.a, w1.c.A, sVar2, 0);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();
@@ -105,17 +105,17 @@ public final class w {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar2, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar);
             w1.r rVar5 = rVar4;
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar2, eVar4, c);
             if (1.0f <= 0.0d) {
                 l0.a.a("invalid weight; must be greater than zero");
@@ -198,7 +198,7 @@ public final class w {
         if (sVar2.S(i5 & 1, (i5 & 306783379) != 306783378)) {
             w1.r rVar3 = w1.o.a;
             w1.r rVar4 = i4 != 0 ? rVar3 : rVar2;
-            w1.r f = f0.o.f(rVar4, ih.d.b(sVar2).a, d2.a0.b);
+            w1.r f = f0.o.f(rVar4, ih.d.b(sVar2).a, d2.a0Shadow.b);
             androidx.compose.foundation.layout.e0 a = androidx.compose.foundation.layout.c0.a(androidx.compose.foundation.layout.l.c, w1.c.D, sVar2, 0);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();
@@ -315,7 +315,7 @@ public final class w {
                 g3.q0 q0Var = ih.d.f(sVar2).r;
                 long j = d2.t.d;
                 ub.b(q0, B, 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, g3.q0.a(q0Var, j, 0L, (k3.s) null, (k3.o) null, (k3.i) null, 0L, 0, 0L, (g3.z) null, (r3.i) null, 16777214), sVar, 0, 0, 131068);
-                sg.e0.b(p2.e(rVar5, 1.0f), null, aVar, sg.v.e(j, 0L, sVar, 6, 6), null, null, false, null, j0Var == com.github.rudroid.copilot.inapppurchase.j0.s, d.c, sVar, ((i5 >> 3) & 896) | 805306374, 242);
+                sg.e0Shadow.b(p2.e(rVar5, 1.0f), null, aVar, sg.v.e(j, 0L, sVar, 6, 6), null, null, false, null, j0Var == com.github.rudroid.copilot.inapppurchase.j0.s, d.c, sVar, ((i5 >> 3) & 896) | 805306374, 242);
                 androidx.compose.runtime.s sVar3 = sVar;
                 if (str2 != null) {
                     sVar3.c0(-43955283);

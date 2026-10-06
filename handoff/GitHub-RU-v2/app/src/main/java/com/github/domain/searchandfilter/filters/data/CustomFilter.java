@@ -7,7 +7,7 @@ import bm.l;
 import java.util.ArrayList;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import t71.p;
@@ -33,7 +33,7 @@ public final class CustomFilter extends d {
     public /* synthetic */ CustomFilter(int i, l lVar, String str, String str2) {
         super(i, lVar, str);
         if (5 != (i & 5)) {
-            c1.l(i, 5, CustomFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 5, CustomFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.v = str2;

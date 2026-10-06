@@ -9,9 +9,9 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.q0;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.z;
-import k71.x;
+import k71.xShadow;
 import sy.w;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableMilestoneBottomSheet extends Hilt_SelectableMilestoneBottomSheet {
@@ -237,14 +237,14 @@ public final class SelectableMilestoneBottomSheet extends Hilt_SelectableMilesto
 
     static {
         r71.e pVar = new k71.p(SelectableMilestoneBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public SelectableMilestoneBottomSheet() {
         w61.h s = w.s(w61.i.s, new k(new j()));
-        this.a1 = new l1(x.a(com.github.rudroid.searchandfilter.complexfilter.milestone.g.class), new l(s), new n(s), new m(s));
+        this.a1 = new l1(xShadow.a(com.github.rudroid.searchandfilter.complexfilter.milestone.g.class), new l(s), new n(s), new m(s));
         this.b1 = 2131954225;
         this.c1 = 2131954214;
     }
@@ -288,7 +288,7 @@ public final class SelectableMilestoneBottomSheet extends Hilt_SelectableMilesto
         k71.k.g(view, "view");
         super.c4(view, bundle);
         com.github.rudroid.searchandfilter.complexfilter.milestone.g gVar = (com.github.rudroid.searchandfilter.complexfilter.milestone.g) this.a1.getValue();
-        d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.milestone.k(new y00.l(gVar.t.b, 10)), gVar.F)).e(F3(), new i(new z(19, this)));
+        d1.a(n1Shadow.y(new com.github.rudroid.searchandfilter.complexfilter.milestone.k(new y00.l(gVar.t.b, 10)), gVar.F)).e(F3(), new i(new z(19, this)));
     }
 
 

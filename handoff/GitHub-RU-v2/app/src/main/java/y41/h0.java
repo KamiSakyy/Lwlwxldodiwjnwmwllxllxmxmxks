@@ -3,7 +3,7 @@ package y41;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class h0 extends r1 {
+public final class h0Shadow extends r1 {
     public String a;
     public byte[] b;
 
@@ -18,9 +18,9 @@ public final class h0 extends r1 {
         }
         if (obj instanceof r1) {
             r1 r1Var = (r1) obj;
-            h0 h0Var = (h0) r1Var;
+            h0Shadow h0Var = (h0Shadow) r1Var;
             if (this.a.equals(h0Var.a)) {
-                if (Arrays.equals(this.b, r1Var instanceof h0 ? ((h0) r1Var).b : h0Var.b)) {
+                if (Arrays.equals(this.b, r1Var instanceof h0Shadow ? ((h0Shadow) r1Var).b : h0Var.b)) {
                     return true;
                 }
             }

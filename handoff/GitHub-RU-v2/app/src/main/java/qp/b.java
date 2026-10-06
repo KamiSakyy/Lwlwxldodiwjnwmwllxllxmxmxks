@@ -1,6 +1,6 @@
 package qp;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
@@ -28,6 +28,6 @@ public final class b {
     }
 
     public final String toString() {
-        return f4.n("Creator(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.n("Creator(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

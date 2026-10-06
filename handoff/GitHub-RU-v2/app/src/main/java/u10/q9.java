@@ -26,7 +26,7 @@ public final class q9 implements aaShadow.w0 {
         List list = fc0.p0.a;
         List list2 = fc0.p0.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -70,7 +70,7 @@ public final class q9 implements aaShadow.w0 {
         fVar.z0("repositoryName");
         bVar.b(fVar, wVar, this.s);
         fVar.z0("filterByAssignable");
-        jo.f4.C(this.t, aa.c.f, fVar, wVar, "number");
+        jo.f4Shadow.C(this.t, aa.c.f, fVar, wVar, "number");
         fVar.z(30);
         fVar.z0("after");
         aa.c.d(aa.c.i).d(fVar, wVar, this.u);

@@ -22,7 +22,7 @@ public final class cd implements aaShadow.w0 {
         List list = en0.e1.a;
         List list2 = en0.e1.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -42,7 +42,7 @@ public final class cd implements aaShadow.w0 {
     }
 
     public final int hashCode() {
-        return this.t.hashCode() + jo.f4.a(this.s, this.r.hashCode() * 31, 31);
+        return this.t.hashCode() + jo.f4Shadow.a(this.s, this.r.hashCode() * 31, 31);
     }
 
     public final String i() {
@@ -62,8 +62,8 @@ public final class cd implements aaShadow.w0 {
         k71.k.g(wVar, "customScalarAdapters");
         fVar.z0("language");
         aa.o0 o0Var = aa.c.i;
-        jo.f4.y(o0Var, fVar, wVar, this.r, "spokenLanguageCode");
-        jo.f4.y(o0Var, fVar, wVar, this.s, "period");
+        jo.f4Shadow.y(o0Var, fVar, wVar, this.r, "spokenLanguageCode");
+        jo.f4Shadow.y(o0Var, fVar, wVar, this.s, "period");
         aa.c.d(aa.c.b(hn0.b.p)).d(fVar, wVar, this.t);
     }
 

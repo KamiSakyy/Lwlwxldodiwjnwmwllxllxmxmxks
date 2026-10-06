@@ -30,6 +30,6 @@ public final class lq {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Assigned(issueCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Assigned(issueCount=", ", nodes=", ")", this.b);
     }
 }

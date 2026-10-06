@@ -15,7 +15,7 @@ public final class ah {
         s = ahVarArr;
         v8.l0.t(ahVarArr);
         Companion = new zg();
-        sy.d0.o(new String[]{"ANDROID", "IOS"});
+        sy.d0Shadow.o(new String[]{"ANDROID", "IOS"});
     }
 
     public ah(String str, int i, String str2) {

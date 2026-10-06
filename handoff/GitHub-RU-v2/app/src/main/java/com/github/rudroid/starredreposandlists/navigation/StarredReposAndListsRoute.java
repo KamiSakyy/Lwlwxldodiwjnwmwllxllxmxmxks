@@ -2,7 +2,7 @@ package com.github.rudroid.starredreposandlists.navigation;
 
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import mg.c;
 
@@ -22,7 +22,7 @@ public final class StarredReposAndListsRoute implements c {
         if (1 == (i & 1)) {
             this.a = str;
         } else {
-            c1.l(i, 1, StarredReposAndListsRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, StarredReposAndListsRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

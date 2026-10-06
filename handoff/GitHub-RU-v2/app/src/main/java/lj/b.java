@@ -7,7 +7,7 @@ import com.github.service.models.response.type.CommentAuthorAssociation;
 import f1.e;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import t.z;
 import x.i;
@@ -140,7 +140,7 @@ public final class b {
         sb.append(this.d);
         sb.append(", createdAt=");
         m0.v(", wasEdited=", ", lastEditedAt=", sb, this.e, this.f);
-        f4.A(", bodyHtml=", this.h, ", bodyText=", sb, this.g);
+        f4Shadow.A(", bodyHtml=", this.h, ", bodyText=", sb, this.g);
         m0.x(sb, this.i, ", viewerDidAuthor=", this.j, ", canManage=");
         m0.z(sb, this.k, ", url=", this.l, ", type=");
         sb.append(this.m);

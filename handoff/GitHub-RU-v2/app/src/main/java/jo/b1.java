@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b1 {
-    public f1 a;
+    public f1Shadow a;
 
-    public b1(f1 f1Var) {
+    public b1(f1Shadow f1Var) {
         this.a = f1Var;
     }
 
@@ -16,7 +16,7 @@ public final class b1 {
     }
 
     public final int hashCode() {
-        f1 f1Var = this.a;
+        f1Shadow f1Var = this.a;
         if (f1Var == null) {
             return 0;
         }

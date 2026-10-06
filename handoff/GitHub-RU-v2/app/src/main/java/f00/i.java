@@ -1,7 +1,7 @@
 package f00;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -46,7 +46,7 @@ public abstract class i implements aa.a {
         bVar.b(fVar, wVar, dVar.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, dVar.b);
-        List list = x.a;
+        List list = xShadow.a;
         w wVar2 = dVar.c;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
@@ -71,7 +71,7 @@ public abstract class i implements aa.a {
         f4.C(wVar2.h, bVar3, fVar, wVar, "isInMergeQueue");
         f4.C(wVar2.i, bVar3, fVar, wVar, "updatedAt");
         sa.Companion.getClass();
-        aa.x xVar = sa.a;
+        aa.xShadow xVar = sa.a;
         wVar.e(xVar).b(fVar, wVar, wVar2.j);
         fVar.z0("createdAt");
         wVar.e(xVar).b(fVar, wVar, wVar2.k);

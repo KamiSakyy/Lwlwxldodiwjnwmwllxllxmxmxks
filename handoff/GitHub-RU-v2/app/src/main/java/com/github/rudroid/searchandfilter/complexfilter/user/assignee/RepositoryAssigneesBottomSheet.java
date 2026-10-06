@@ -10,10 +10,10 @@ import androidx.lifecycle.q0;
 import androidx.lifecycle.r;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.z;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 import w61.p;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RepositoryAssigneesBottomSheet extends Hilt_RepositoryAssigneesBottomSheet {
@@ -239,14 +239,14 @@ public final class RepositoryAssigneesBottomSheet extends Hilt_RepositoryAssigne
 
     static {
         r71.e pVar = new k71.p(RepositoryAssigneesBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public RepositoryAssigneesBottomSheet() {
         w61.h s = w.s(w61.i.s, new k(new j()));
-        this.a1 = new l1(x.a(com.github.rudroid.searchandfilter.complexfilter.user.assignee.f.class), new l(s), new n(s), new m(s));
+        this.a1 = new l1(xShadow.a(com.github.rudroid.searchandfilter.complexfilter.user.assignee.f.class), new l(s), new n(s), new m(s));
         this.b1 = 2131954207;
         this.c1 = 2131954211;
     }
@@ -290,7 +290,7 @@ public final class RepositoryAssigneesBottomSheet extends Hilt_RepositoryAssigne
         k71.k.g(view, "view");
         super.c4(view, bundle);
         com.github.rudroid.searchandfilter.complexfilter.user.assignee.f fVar = (com.github.rudroid.searchandfilter.complexfilter.user.assignee.f) this.a1.getValue();
-        d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.e(new y00.l(fVar.t.b, 10), fVar), fVar.I)).e(F3(), new i(new z(23, this)));
+        d1.a(n1Shadow.y(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.e(new y00.l(fVar.t.b, 10), fVar), fVar.I)).e(F3(), new i(new z(23, this)));
     }
 
 

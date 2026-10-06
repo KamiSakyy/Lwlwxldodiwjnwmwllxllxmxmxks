@@ -3,7 +3,7 @@ package ur0;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.bf;
 import pz0.df;
 import pz0.f40;
@@ -13,7 +13,7 @@ import uu0.g6;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u implements aa.a {
     public static final u a = new u();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "title", "titleHTML", "number", "createdAt", "isReadByViewer", "comments", "issueState", "repository", "viewerSubscription", "url", "assignees", "closedByPullRequestsReferences", "stateReason", "issueType", "parent"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "title", "titleHTML", "number", "createdAt", "isReadByViewer", "comments", "issueState", "repository", "viewerSubscription", "url", "assignees", "closedByPullRequestsReferences", "stateReason", "issueType", "parent"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x004b, code lost:
     

@@ -66,7 +66,7 @@ public final class e5 extends c71.j implements j71.e {
                     String str2 = cVar.a;
                     m0Var = new u10.d0(new u10.b0(new u10.g0(cVar, str2), new u10.f0(new u10.e0(cVar, str2), cVar.b, str2)));
                 }
-                return y71.n1.y(bVar.k(h0Var, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar.k(h0Var, m0Var), y6Var.t);
             default:
                 i80.c cVar2 = (i80.c) this.w;
                 b71.a aVar2 = b71.a.r;
@@ -77,7 +77,7 @@ public final class e5 extends c71.j implements j71.e {
                     String str3 = cVar2.a;
                     m0Var = new gq(new jq(new kq(cVar2, str3), new iq(new hq(cVar2, str3), cVar2.b, str3)));
                 }
-                return y71.n1.y(bVar2.k(lqVar, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar2.k(lqVar, m0Var), y6Var.t);
         }
     }
 }

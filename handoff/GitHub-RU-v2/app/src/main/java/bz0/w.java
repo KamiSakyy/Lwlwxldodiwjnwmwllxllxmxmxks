@@ -88,7 +88,7 @@ import vb0.p1;
 import wy0.h1;
 import xn.e1;
 import y41.t1;
-import y71.n1;
+import y71.n1Shadow;
 import z01.r1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -136,11 +136,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object A(String str, String str2, lm.i iVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new j30(new u0(str2), f1.e.g("type:user ", str)), null, false, null, null, 58), 7), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new j30(new u0(str2), f1.e.g("type:user ", str)), null, false, null, null, 58), 7), this.u);
             case 1:
-                return n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new uz(new u0(str2), f1.e.g("type:user ", str)), null, false, null, null, 58), 2), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new uz(new u0(str2), f1.e.g("type:user ", str)), null, false, null, null, 58), 2), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new vx(new u0(str2), f1.e.g("type:user ", str)), null, false, null, null, 58), 18), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new vx(new u0(str2), f1.e.g("type:user ", str)), null, false, null, null, 58), 18), this.u);
         }
     }
 
@@ -150,15 +150,15 @@ public final class w implements r1, yf0, yb0, y90 {
             case 0:
                 k71.w v = no.a.v(str, "userId");
                 v.r = new c(1, null, 1);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new a(v, this, str, null, 1), this.t.d(new dh(str))), new b(v, null, 1)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new a(v, this, str, null, 1), this.t.d(new dh(str))), new b(v, null, 1)))), this.u);
             case 1:
                 k71.w v2 = no.a.v(str, "userId");
                 v2.r = new c(1, null, 10);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new vm0.a(v2, this, str, null, 1), this.t.d(new mf(str))), new b(v2, null, 5)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new vm0.a(v2, this, str, null, 1), this.t.d(new mf(str))), new b(v2, null, 5)))), this.u);
             default:
                 k71.w v3 = no.a.v(str, "userId");
                 v3.r = new c(1, null, 26);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new zb0.a(v3, this, str, null, 1), this.t.d(new se(str))), new b(v3, null, 13)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new zb0.a(v3, this, str, null, 1), this.t.d(new se(str))), new b(v3, null, 13)))), this.u);
         }
     }
 
@@ -168,15 +168,15 @@ public final class w implements r1, yf0, yb0, y90 {
             case 0:
                 zg zgVar = new zg(str);
                 w80.Companion.getClass();
-                return n1.y(new t(in.r.h(this.t.k(zgVar, new wg(new xg(new yg("User", str, new y0(str, ((aa.q) w80.W).a, true)))))), 0), this.u);
+                return n1Shadow.y(new t(in.rShadow.h(this.t.k(zgVar, new wg(new xg(new yg("User", str, new y0(str, ((aa.q) w80.W).a, true)))))), 0), this.u);
             case 1:
                 hf hfVar = new hf(str);
                 s00.Companion.getClass();
-                return n1.y(new p1(in.r.h(this.t.k(hfVar, new ef(new ff(new gf("User", str, new sd0.q(str, ((aa.q) s00.P).a, true)))))), 22), this.u);
+                return n1Shadow.y(new p1(in.rShadow.h(this.t.k(hfVar, new ef(new ff(new gf("User", str, new sd0.q(str, ((aa.q) s00.P).a, true)))))), 22), this.u);
             default:
                 n0 oeVar = new oe(str);
                 kz.Companion.getClass();
-                return n1.y(new h1(in.r.h(this.t.k(oeVar, new le(new me(new ne("User", str, new c30.h(str, ((aa.q) kz.O).a, true)))))), 28), this.u);
+                return n1Shadow.y(new h1(in.rShadow.h(this.t.k(oeVar, new le(new me(new ne("User", str, new c30.h(str, ((aa.q) kz.O).a, true)))))), 28), this.u);
         }
     }
 
@@ -185,13 +185,13 @@ public final class w implements r1, yf0, yb0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "login");
-                return n1.y(new e(com.github.service.wrapper.b.a(this.t, new jf0(new u0(100), str), ga.h.t, false, null, 56), 11), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.b.a(this.t, new jf0(new u0(100), str), ga.h.t, false, null, 56), 11), this.u);
             case 1:
                 k71.k.g(str, "login");
-                return n1.y(new vm0.h(com.github.service.wrapper.b.a(this.t, new jb0(new u0(100), str), ga.h.t, false, null, 56), 6), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.b.a(this.t, new jb0(new u0(100), str), ga.h.t, false, null, 56), 6), this.u);
             default:
                 k71.k.g(str, "login");
-                return n1.y(new y00.l(com.github.service.wrapper.b.a(this.t, new j90(new u0(100), str), ga.h.t, false, null, 56), 22), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.b.a(this.t, new j90(new u0(100), str), ga.h.t, false, null, 56), 22), this.u);
         }
     }
 
@@ -223,11 +223,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object f(String str, String str2, gn.k kVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new nw(new u0(str2), str), null, false, null, null, 58), 4), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new nw(new u0(str2), str), null, false, null, null, 58), 4), this.u);
             case 1:
-                return n1.y(new e2(com.github.service.wrapper.a.o(this.s, new du(new u0(str2), str), null, false, null, null, 58), 29), this.u);
+                return n1Shadow.y(new e2(com.github.service.wrapper.a.o(this.s, new du(new u0(str2), str), null, false, null, null, 58), 29), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new os(new u0(str2), str), null, false, null, null, 58), 15), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new os(new u0(str2), str), null, false, null, null, 58), 15), this.u);
         }
     }
 
@@ -235,11 +235,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final y71.i g() {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new ye0(), null, false, null, null, 62), 6), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new ye0(), null, false, null, null, 62), 6), this.u);
             case 1:
-                return n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new ya0(), null, false, null, null, 62), 1), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new ya0(), null, false, null, null, 62), 1), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new y80(), null, false, null, null, 62), 17), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new y80(), null, false, null, null, 62), 17), this.u);
         }
     }
 
@@ -252,11 +252,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object i(String str, String str2, gn.o oVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new vw(new u0(str2), str), null, false, null, null, 58), 10), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new vw(new u0(str2), str), null, false, null, null, 58), 10), this.u);
             case 1:
-                return n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new lu(new u0(str2), str), null, false, null, null, 58), 5), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new lu(new u0(str2), str), null, false, null, null, 58), 5), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new ws(new u0(str2), str), null, false, null, null, 58), 21), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new ws(new u0(str2), str), null, false, null, null, 58), 21), this.u);
         }
     }
 
@@ -264,11 +264,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object j(String str, String str2, gn.e eVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new ug(new u0(str2), str), null, false, null, null, 58), 3), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new ug(new u0(str2), str), null, false, null, null, 58), 3), this.u);
             case 1:
-                return n1.y(new e2(com.github.service.wrapper.a.o(this.s, new cf(new u0(str2), str), null, false, null, null, 58), 28), this.u);
+                return n1Shadow.y(new e2(com.github.service.wrapper.a.o(this.s, new cf(new u0(str2), str), null, false, null, null, 58), 28), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new je(new u0(str2), str), null, false, null, null, 58), 14), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new je(new u0(str2), str), null, false, null, null, 58), 14), this.u);
         }
     }
 
@@ -278,15 +278,15 @@ public final class w implements r1, yf0, yb0, y90 {
             case 0:
                 k71.w wVar = new k71.w();
                 wVar.r = new c(1, null, 0);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new a(wVar, this, str, null, 0), this.t.d(new m3(str))), new b(wVar, null, 0)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new a(wVar, this, str, null, 0), this.t.d(new m3(str))), new b(wVar, null, 0)))), this.u);
             case 1:
                 k71.w wVar2 = new k71.w();
                 wVar2.r = new c(1, null, 9);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new vm0.a(wVar2, this, str, null, 0), this.t.d(new g3(str))), new b(wVar2, null, 4)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new vm0.a(wVar2, this, str, null, 0), this.t.d(new g3(str))), new b(wVar2, null, 4)))), this.u);
             default:
                 k71.w wVar3 = new k71.w();
                 wVar3.r = new c(1, null, 25);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new zb0.a(wVar3, this, str, null, 0), this.t.d(new u10.g3(str))), new b(wVar3, null, 12)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new zb0.a(wVar3, this, str, null, 0), this.t.d(new u10.g3(str))), new b(wVar3, null, 12)))), this.u);
         }
     }
 
@@ -295,13 +295,13 @@ public final class w implements r1, yf0, yb0, y90 {
         switch (this.r) {
             case 0:
                 t0 t0Var = t0.d;
-                return n1.y(in.r.l(new y71.y(in.r.h(this.t.d(new rx0.g(t0Var, t0Var, t0Var, t0Var, t0Var))), new v0(this, (a71.c) null, 2), 6)), this.u);
+                return n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.t.d(new rx0.g(t0Var, t0Var, t0Var, t0Var, t0Var))), new v0(this, (a71.c) null, 2), 6)), this.u);
             case 1:
                 t0 t0Var2 = t0.d;
-                return n1.y(in.r.l(new y71.y(in.r.h(this.t.d(new dm0.g(t0Var2, t0Var2, t0Var2, t0Var2, t0Var2))), new v0(this, (a71.c) null, 5), 6)), this.u);
+                return n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.t.d(new dm0.g(t0Var2, t0Var2, t0Var2, t0Var2, t0Var2))), new v0(this, (a71.c) null, 5), 6)), this.u);
             default:
                 t0 t0Var3 = t0.d;
-                return n1.y(in.r.l(new y71.y(in.r.h(this.t.d(new ib0.g(t0Var3, t0Var3, t0Var3, t0Var3, t0Var3))), new v0(this, (a71.c) null, 7), 6)), this.u);
+                return n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.t.d(new ib0.g(t0Var3, t0Var3, t0Var3, t0Var3, t0Var3))), new v0(this, (a71.c) null, 7), 6)), this.u);
         }
     }
 
@@ -323,15 +323,15 @@ public final class w implements r1, yf0, yb0, y90 {
             case 0:
                 k71.w v = no.a.v(str, "userId");
                 v.r = new c(1, null, 3);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new a(v, this, str, null, 3), this.t.d(new z70(str))), new b(v, null, 3)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new a(v, this, str, null, 3), this.t.d(new z70(str))), new b(v, null, 3)))), this.u);
             case 1:
                 k71.w v2 = no.a.v(str, "userId");
                 v2.r = new c(1, null, 12);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new vm0.a(v2, this, str, null, 3), this.t.d(new c40(str))), new b(v2, null, 7)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new vm0.a(v2, this, str, null, 3), this.t.d(new c40(str))), new b(v2, null, 7)))), this.u);
             default:
                 k71.w v3 = no.a.v(str, "userId");
                 v3.r = new c(1, null, 28);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new zb0.a(v3, this, str, null, 3), this.t.d(new e20(str))), new b(v3, null, 15)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new zb0.a(v3, this, str, null, 3), this.t.d(new e20(str))), new b(v3, null, 15)))), this.u);
         }
     }
 
@@ -351,11 +351,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object p(mm.e eVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new kg0(), null, false, null, null, 58), 9), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new kg0(), null, false, null, null, 58), 9), this.u);
             case 1:
-                return n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new kc0(), null, false, null, null, 58), 4), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new kc0(), null, false, null, null, 58), 4), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new ka0(), null, false, null, null, 58), 20), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new ka0(), null, false, null, null, 58), 20), this.u);
         }
     }
 
@@ -363,11 +363,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object q(String str, lm.a aVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.t, new sf0(str), null, false, null, null, 58), 5), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.t, new sf0(str), null, false, null, null, 58), 5), this.u);
             case 1:
-                return n1.y(new vm0.h(com.github.service.wrapper.a.o(this.t, new sb0(str), null, false, null, null, 58), 0), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.t, new sb0(str), null, false, null, null, 58), 0), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.t, new s90(str), null, false, null, null, 58), 16), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.t, new s90(str), null, false, null, null, 58), 16), this.u);
         }
     }
 
@@ -375,11 +375,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final y71.i r() {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.t, new gg0(), null, false, null, null, 62), 8), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.t, new gg0(), null, false, null, null, 62), 8), this.u);
             case 1:
-                return n1.y(new vm0.h(com.github.service.wrapper.a.o(this.t, new gc0(), null, false, null, null, 62), 3), this.u);
+                return n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.t, new gc0(), null, false, null, null, 62), 3), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.t, new ga0(), null, false, null, null, 62), 19), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.t, new ga0(), null, false, null, null, 62), 19), this.u);
         }
     }
 
@@ -395,7 +395,7 @@ public final class w implements r1, yf0, yb0, y90 {
                 if (zonedDateTime != null) {
                     u0Var = new u0(zonedDateTime);
                 }
-                return n1.y(in.r.l(in.r.h(this.t.d(new rx0.g(u0Var2, u0Var3, u0Var4, u0Var5, u0Var)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(this.t.d(new rx0.g(u0Var2, u0Var3, u0Var4, u0Var5, u0Var)))), this.u);
             case 1:
                 u0 u0Var6 = t0.d;
                 u0 u0Var7 = str == null ? u0Var6 : new u0(str);
@@ -405,7 +405,7 @@ public final class w implements r1, yf0, yb0, y90 {
                 if (zonedDateTime != null) {
                     u0Var6 = new u0(zonedDateTime);
                 }
-                return n1.y(in.r.l(in.r.h(this.t.d(new dm0.g(u0Var7, u0Var8, u0Var9, u0Var10, u0Var6)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(this.t.d(new dm0.g(u0Var7, u0Var8, u0Var9, u0Var10, u0Var6)))), this.u);
             default:
                 aa1.b bVar = t0.d;
                 aa1.b u0Var11 = str == null ? bVar : new u0(str);
@@ -415,7 +415,7 @@ public final class w implements r1, yf0, yb0, y90 {
                 if (zonedDateTime != null) {
                     bVar = new u0(zonedDateTime);
                 }
-                return n1.y(in.r.l(in.r.h(this.t.d(new ib0.g(u0Var11, u0Var12, u0Var13, u0Var14, bVar)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(this.t.d(new ib0.g(u0Var11, u0Var12, u0Var13, u0Var14, bVar)))), this.u);
         }
     }
 
@@ -423,11 +423,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object t(mm.b bVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new dd(), null, false, null, null, 58), 1), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new dd(), null, false, null, null, 58), 1), this.u);
             case 1:
-                return n1.y(new e2(com.github.service.wrapper.a.o(this.s, new jc(), null, false, null, null, 58), 26), this.u);
+                return n1Shadow.y(new e2(com.github.service.wrapper.a.o(this.s, new jc(), null, false, null, null, 58), 26), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new bc(), null, false, null, null, 58), 12), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new bc(), null, false, null, null, 58), 12), this.u);
         }
     }
 
@@ -436,7 +436,7 @@ public final class w implements r1, yf0, yb0, y90 {
         switch (this.r) {
             case 0:
                 boolean z = pullsWidgetFilter == PullsWidgetFilter.REVIEW_REQUESTED;
-                return n1.y(new n(com.github.service.wrapper.a.o(this.s, new vq(pullsWidgetFilter == PullsWidgetFilter.CREATED, pullsWidgetFilter == PullsWidgetFilter.ASSIGNED, pullsWidgetFilter == PullsWidgetFilter.MENTIONED, z), null, false, null, null, 62), pullsWidgetFilter, 0), this.u);
+                return n1Shadow.y(new n(com.github.service.wrapper.a.o(this.s, new vq(pullsWidgetFilter == PullsWidgetFilter.CREATED, pullsWidgetFilter == PullsWidgetFilter.ASSIGNED, pullsWidgetFilter == PullsWidgetFilter.MENTIONED, z), null, false, null, null, 62), pullsWidgetFilter, 0), this.u);
             case 1:
                 return t1.S("fetchUserPullRequestWidgetData", "3.12");
             default:
@@ -448,11 +448,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object v(String str, String str2, gn.c cVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new ug(new u0(str2), str), null, false, null, null, 58), 2), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new ug(new u0(str2), str), null, false, null, null, 58), 2), this.u);
             case 1:
-                return n1.y(new e2(com.github.service.wrapper.a.o(this.s, new cf(new u0(str2), str), null, false, null, null, 58), 27), this.u);
+                return n1Shadow.y(new e2(com.github.service.wrapper.a.o(this.s, new cf(new u0(str2), str), null, false, null, null, 58), 27), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new je(new u0(str2), str), null, false, null, null, 58), 13), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new je(new u0(str2), str), null, false, null, null, 58), 13), this.u);
         }
     }
 
@@ -462,15 +462,15 @@ public final class w implements r1, yf0, yb0, y90 {
             case 0:
                 k71.w v = no.a.v(str, "userId");
                 v.r = new c(1, null, 2);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new a(v, this, str, null, 2), this.t.d(new m70(str))), new b(v, null, 2)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new a(v, this, str, null, 2), this.t.d(new m70(str))), new b(v, null, 2)))), this.u);
             case 1:
                 k71.w v2 = no.a.v(str, "userId");
                 v2.r = new c(1, null, 11);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new vm0.a(v2, this, str, null, 2), this.t.d(new t30(str))), new b(v2, null, 6)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new vm0.a(v2, this, str, null, 2), this.t.d(new t30(str))), new b(v2, null, 6)))), this.u);
             default:
                 k71.w v3 = no.a.v(str, "userId");
                 v3.r = new c(1, null, 27);
-                return n1.y(in.r.l(in.r.h(new y71.y(new y71.y(new zb0.a(v3, this, str, null, 2), this.t.d(new v10(str))), new b(v3, null, 14)))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(new y71.y(new y71.y(new zb0.a(v3, this, str, null, 2), this.t.d(new v10(str))), new b(v3, null, 14)))), this.u);
         }
     }
 
@@ -478,11 +478,11 @@ public final class w implements r1, yf0, yb0, y90 {
     public final Object x(String str, String str2, gn.a aVar) {
         switch (this.r) {
             case 0:
-                return n1.y(new e(com.github.service.wrapper.a.o(this.s, new bv(new u0(str2), str), null, false, null, null, 58), 0), this.u);
+                return n1Shadow.y(new e(com.github.service.wrapper.a.o(this.s, new bv(new u0(str2), str), null, false, null, null, 58), 0), this.u);
             case 1:
-                return n1.y(new e2(com.github.service.wrapper.a.o(this.s, new qs(new u0(str2), str), null, false, null, null, 58), 25), this.u);
+                return n1Shadow.y(new e2(com.github.service.wrapper.a.o(this.s, new qs(new u0(str2), str), null, false, null, null, 58), 25), this.u);
             default:
-                return n1.y(new y00.l(com.github.service.wrapper.a.o(this.s, new mr(new u0(str2), str), null, false, null, null, 58), 11), this.u);
+                return n1Shadow.y(new y00.l(com.github.service.wrapper.a.o(this.s, new mr(new u0(str2), str), null, false, null, null, 58), 11), this.u);
         }
     }
 
@@ -492,15 +492,15 @@ public final class w implements r1, yf0, yb0, y90 {
             case 0:
                 v70 v70Var = new v70(str);
                 w80.Companion.getClass();
-                return n1.y(new t(in.r.h(this.t.k(v70Var, new s70(new t70(new u70("User", str, new y0(str, ((aa.q) w80.W).a, false)))))), 1), this.u);
+                return n1Shadow.y(new t(in.rShadow.h(this.t.k(v70Var, new s70(new t70(new u70("User", str, new y0(str, ((aa.q) w80.W).a, false)))))), 1), this.u);
             case 1:
                 y30 y30Var = new y30(str);
                 s00.Companion.getClass();
-                return n1.y(new p1(in.r.h(this.t.k(y30Var, new v30(new w30(new x30("User", str, new sd0.q(str, ((aa.q) s00.P).a, false)))))), 23), this.u);
+                return n1Shadow.y(new p1(in.rShadow.h(this.t.k(y30Var, new v30(new w30(new x30("User", str, new sd0.q(str, ((aa.q) s00.P).a, false)))))), 23), this.u);
             default:
                 n0 a20Var = new a20(str);
                 kz.Companion.getClass();
-                return n1.y(new h1(in.r.h(this.t.k(a20Var, new x10(new y10(new z10("User", str, new c30.h(str, ((aa.q) kz.O).a, false)))))), 29), this.u);
+                return n1Shadow.y(new h1(in.rShadow.h(this.t.k(a20Var, new x10(new y10(new z10("User", str, new c30.h(str, ((aa.q) kz.O).a, false)))))), 29), this.u);
         }
     }
 

@@ -9,7 +9,7 @@ import ri0.f5;
 import ri0.r5;
 import ri0.v4;
 import ri0.w4;
-import x61.r;
+import x61.rShadow;
 import yz0.e2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -18,7 +18,7 @@ public final class a {
         e2 e2Var;
         Object obj;
         List<e5> list = w4Var != null ? w4Var.a : null;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         if (list == null) {
             list = rVar;
         }

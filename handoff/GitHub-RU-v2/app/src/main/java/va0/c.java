@@ -10,7 +10,7 @@ import t.a0;
 import t.q;
 import w50.d0;
 import w50.e0;
-import x61.r;
+import x61.rShadow;
 import yz0.d2;
 import yz0.e2;
 import yz0.f2;
@@ -95,9 +95,9 @@ public abstract class c {
     public static final d2 f(e80.l lVar) {
         IssueOrPullRequest.ReviewerReviewState reviewerReviewState;
         String str = lVar.b;
-        r rVar = lVar.f.a;
+        rShadow rVar = lVar.f.a;
         if (rVar == null) {
-            rVar = r.r;
+            rVar = rShadow.r;
         }
         ArrayList S = x61.m.S(rVar);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));

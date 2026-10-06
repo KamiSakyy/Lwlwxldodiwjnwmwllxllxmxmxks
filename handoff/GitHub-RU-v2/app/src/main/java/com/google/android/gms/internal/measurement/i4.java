@@ -97,7 +97,7 @@ public abstract class i4 implements Decoder, j81.a {
         for (byte b : t71.w.w(str)) {
             int i = b & 255;
             if ((97 > i || i >= 123) && ((65 > i || i >= 91) && !((48 <= i && i < 58) || i == 45 || i == 46 || i == 95 || i == 126))) {
-                sy.r.m(16);
+                sy.rShadow.m(16);
                 String num = Integer.toString(i, 16);
                 k71.k.f(num, "toString(...)");
                 String upperCase = num.toUpperCase(Locale.ROOT);
@@ -178,7 +178,7 @@ public abstract class i4 implements Decoder, j81.a {
             k71.k.g(str, "name");
             k71.k.g(str2, "value");
             q81.y.Companion.getClass();
-            ((ArrayList) hVar.u).add(b31.b.N(str, null, q81.x.a(str2, (q81.q) null)));
+            ((ArrayList) hVar.u).add(b31.b.N(str, null, q81.xShadow.a(str2, (q81.q) null)));
         }
     }
 
@@ -460,7 +460,7 @@ public abstract class i4 implements Decoder, j81.a {
         if ((encoder instanceof m81.r ? (m81.r) encoder : null) != null) {
             return;
         }
-        throw new IllegalStateException("This serializer can be used only with Json format.Expected Encoder to be JsonEncoder, got " + k71.x.a(encoder.getClass()));
+        throw new IllegalStateException("This serializer can be used only with Json format.Expected Encoder to be JsonEncoder, got " + k71.xShadow.a(encoder.getClass()));
     }
 
     public static int K0(byte[] bArr, int i, androidx.glance.appwidget.protobuf.d dVar) {
@@ -828,7 +828,7 @@ public abstract class i4 implements Decoder, j81.a {
                                 } else {
                                     c4.c n4 = gVar3.n(str3);
                                     if (n4 == null) {
-                                        StringBuilder v = jo.f4.v("no int found for key <", str3, ">, found [");
+                                        StringBuilder v = jo.f4Shadow.v("no int found for key <", str3, ">, found [");
                                         v.append(n4.g());
                                         v.append("] : ");
                                         v.append(n4);
@@ -981,7 +981,7 @@ public abstract class i4 implements Decoder, j81.a {
             i2++;
             int i3 = i + 1;
             if (i < 0) {
-                sy.d0.x();
+                sy.d0Shadow.x();
                 throw null;
             }
             wz0.e c = wz0.d.c((String) obj, 2);
@@ -1081,7 +1081,7 @@ public abstract class i4 implements Decoder, j81.a {
         if (iVar != null) {
             return iVar;
         }
-        throw new IllegalStateException("This serializer can be used only with Json format.Expected Decoder to be JsonDecoder, got " + k71.x.a(decoder.getClass()));
+        throw new IllegalStateException("This serializer can be used only with Json format.Expected Decoder to be JsonDecoder, got " + k71.xShadow.a(decoder.getClass()));
     }
 
     public static final List P(lt.j jVar) {
@@ -1130,7 +1130,7 @@ public abstract class i4 implements Decoder, j81.a {
                 arrayList.add(b4.p0(((lt.d) obj3).c));
             }
         }
-        return arrayList == null ? x61.r.r : arrayList;
+        return arrayList == null ? x61.rShadow.r : arrayList;
     }
 
     public static final LinkedHashMap Q(tz.h hVar) {
@@ -1140,7 +1140,7 @@ public abstract class i4 implements Decoder, j81.a {
         w61.k kVar2;
         Iterable iterable = hVar.a;
         if (iterable == null) {
-            iterable = x61.r.r;
+            iterable = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(iterable);
         int i2 = 10;
@@ -1182,7 +1182,7 @@ public abstract class i4 implements Decoder, j81.a {
                         i5++;
                         int i6 = i4 + 1;
                         if (i4 < 0) {
-                            sy.d0.x();
+                            sy.d0Shadow.x();
                             throw null;
                         }
                         tz.i5 i5Var = ((tz.q4) obj2).b;
@@ -1457,7 +1457,7 @@ public abstract class i4 implements Decoder, j81.a {
             char charAt = str.charAt(i);
             if ('!' > charAt || charAt >= 127) {
                 StringBuilder sb = new StringBuilder("Unexpected char 0x");
-                sy.r.m(16);
+                sy.rShadow.m(16);
                 String num = Integer.toString(charAt, 16);
                 k71.k.f(num, "toString(...)");
                 if (num.length() < 2) {
@@ -1478,7 +1478,7 @@ public abstract class i4 implements Decoder, j81.a {
             char charAt = str.charAt(i);
             if (charAt != '\t' && (' ' > charAt || charAt >= 127)) {
                 StringBuilder sb = new StringBuilder("Unexpected char 0x");
-                sy.r.m(16);
+                sy.rShadow.m(16);
                 String num = Integer.toString(charAt, 16);
                 k71.k.f(num, "toString(...)");
                 if (num.length() < 2) {
@@ -2499,12 +2499,12 @@ public abstract class i4 implements Decoder, j81.a {
         } else {
             yp0.c a2 = yp0.c.a(cVar, wa0Var.b.e, null, 4031);
             ua0 ua0Var8 = wa0Var.b;
-            bVar_r7 = new kx0.b(a2, ua0Var8.c, new yz0.a0(ua0Var8.b));
+            bVar_r7 = new kx0.b(a2, ua0Var8.c, new yz0.a0Shadow(ua0Var8.b));
         }
         if (wa0Var != null && (ra0Var = wa0Var.a) != null) {
             str = ra0Var.b;
         }
-        return new yz0.w7(str2, issueOrPullRequestState, d, f, x61.r.r, f2, bVar_r7, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (wa0Var == null || (ua0Var = wa0Var.b) == null || !ua0Var.g) ? false : true);
+        return new yz0.w7(str2, issueOrPullRequestState, d, f, x61.rShadow.r, f2, bVar_r7, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (wa0Var == null || (ua0Var = wa0Var.b) == null || !ua0Var.g) ? false : true);
     }
 
     public Object A(SerialDescriptor serialDescriptor, int i, KSerializer kSerializer, Object obj) {
@@ -2538,7 +2538,7 @@ public abstract class i4 implements Decoder, j81.a {
     }
 
     public Object U() {
-        throw new SerializationException(k71.x.a(getClass()) + " can't retrieve untyped values");
+        throw new SerializationException(k71.xShadow.a(getClass()) + " can't retrieve untyped values");
     }
 
     public j81.a b(SerialDescriptor serialDescriptor) {

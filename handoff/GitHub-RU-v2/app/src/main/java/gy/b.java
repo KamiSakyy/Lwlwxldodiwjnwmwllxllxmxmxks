@@ -24,7 +24,7 @@ import m10.v90;
 import m10.z3;
 import m10.z90;
 import m10.zp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -35,20 +35,20 @@ public abstract class b {
     static {
         ch.Companion.getClass();
         r b = l0.b(ch.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("count", b, (String) null, rVar, rVar, rVar);
         v90.Companion.getClass();
         List r = l.r(new m[]{mVar, new m("state", l0.b(v90.s), (String) null, rVar, rVar, rVar)});
         z3.Companion.getClass();
-        List n = d0.n(new m("summary", no.a.d(z3.a), (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("summary", no.a.d(z3.a), (String) null, rVar, rVar, r));
         eh.Companion.getClass();
         x xVar = eh.a;
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("PageInfo");
+        List n2 = d0Shadow.n("PageInfo");
         List list = yx.a.a;
         List r2 = l.r(new s[]{mVar2, no.a.c(list, "selections", "PageInfo", n2, list)});
         s mVar3 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("StatusCheck");
+        List n3 = d0Shadow.n("StatusCheck");
         List list2 = vw.a.a;
         s c = no.a.c(list2, "selections", "StatusCheck", n3, list2);
         ah.Companion.getClass();
@@ -69,7 +69,7 @@ public abstract class b {
         q0 q0Var2 = d00.c;
         k.g(q0Var2, "type");
         ux.Companion.getClass();
-        List r6 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0.n("PullRequest"), l.r(new m[]{mVar6, new m("pullRequestStatus", q0Var2, (String) null, rVar, no.a.s(ux.B, new u0(Boolean.FALSE)), r5)})), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r6 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0Shadow.n("PullRequest"), l.r(new m[]{mVar6, new m("pullRequestStatus", q0Var2, (String) null, rVar, no.a.s(ux.B, new u0(Boolean.FALSE)), r5)})), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         zp.Companion.getClass();
         j0 j0Var = zp.a;
         k.g(j0Var, "type");

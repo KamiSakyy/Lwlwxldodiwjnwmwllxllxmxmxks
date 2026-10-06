@@ -35,7 +35,7 @@ import yz0.p0;
 import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class r {
+public abstract class rShadow {
     public static final boolean A(i50.h hVar) {
         k71.k.g(hVar, "<this>");
         i50.g gVar = hVar.i;
@@ -142,9 +142,9 @@ public abstract class r {
         boolean z9 = cVar2.c;
         Integer valueOf = Integer.valueOf(mVar.a);
         x2 d = t.d(aVar);
-        x61.r rVar = mVar.b;
+        x61.rShadow rVar = mVar.b;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(rVar);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -168,7 +168,7 @@ public abstract class r {
             boolean z14 = uVar.c;
             boolean z15 = uVar.d;
             boolean z16 = uVar.e;
-            i50.t tVar = uVar.f;
+            i50.tShadow tVar = uVar.f;
             arrayList.add(e(cVar3, str4, cVar4, aVar2, z11, z12, z13, z14, z15, z16, (tVar == null || (sVar = tVar.c) == null) ? null : sVar.b));
             valueOf = num;
             S = arrayList2;
@@ -431,7 +431,7 @@ public abstract class r {
                     c = c.c();
                 }
                 boolean b = k71.k.b(c.m(), h0Var3);
-                List list3 = x61.r.r;
+                List list3 = x61.rShadow.r;
                 if (!b && !k71.k.b(c.m(), h0Var2)) {
                     int i2 = c.s;
                     boolean b2 = k71.k.b(c.m(), j91.a.O);

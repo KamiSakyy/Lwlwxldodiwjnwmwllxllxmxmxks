@@ -5,7 +5,7 @@ import b21.l;
 import com.github.domain.searchandfilter.filters.data.assignee.NoAssignee;
 import com.google.android.gms.internal.measurement.d5;
 import f1.q6;
-import k71.x;
+import k71.xShadow;
 import l81.n;
 import yz0.f;
 
@@ -17,9 +17,9 @@ public abstract class a {
 
     static {
         kotlinx.serialization.modules.d dVar = new kotlinx.serialization.modules.d();
-        s sVar = new s(x.a(f.class));
-        sVar.H(x.a(NoAssignee.class), NoAssignee.Companion.serializer());
-        sVar.H(x.a(SerializableAssignee.class), SerializableAssignee.Companion.serializer());
+        s sVar = new s(xShadow.a(f.class));
+        sVar.H(xShadow.a(NoAssignee.class), NoAssignee.Companion.serializer());
+        sVar.H(xShadow.a(SerializableAssignee.class), SerializableAssignee.Companion.serializer());
         sVar.q(new q6(11));
         sVar.n(dVar);
         a = dVar.a();

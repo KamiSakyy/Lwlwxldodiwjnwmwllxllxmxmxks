@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -25,7 +25,7 @@ public final class RepositoryDiscussionsFilterPersistenceKey extends b {
     public /* synthetic */ RepositoryDiscussionsFilterPersistenceKey(int i, String str, String str2, String str3) {
         super(str);
         if (7 != (i & 7)) {
-            c1.l(i, 7, RepositoryDiscussionsFilterPersistenceKey$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, RepositoryDiscussionsFilterPersistenceKey$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.t = str2;

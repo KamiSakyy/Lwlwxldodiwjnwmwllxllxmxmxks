@@ -536,8 +536,8 @@ public final class t2 extends e0 {
         int i2;
         Bundle[] bundleArr;
         String str3 = str;
-        c21.u.d(str3);
-        c21.u.g(bundle);
+        c21.uShadow.d(str3);
+        c21.uShadow.g(bundle);
         z();
         A();
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
@@ -634,7 +634,7 @@ public final class t2 extends e0 {
                 if (!equals) {
                     o1.m(s0Var);
                     s0Var.E.c("Passing event to registered event handler (FE)", n0Var.a(str2), n0Var.e(bundle));
-                    c21.u.g(t2Var.v);
+                    c21.uShadow.g(t2Var.v);
                     b1.m mVar = t2Var.v;
                     mVar.getClass();
                     try {
@@ -668,7 +668,7 @@ public final class t2 extends e0 {
                     return;
                 }
                 Bundle H = t4Var.H(str2, bundle, Collections.unmodifiableList(Arrays.asList("_o", "_sn", "_sc", "_si")), z3);
-                c21.u.g(H);
+                c21.uShadow.g(H);
                 o1.l(f3Var);
                 String str4 = "_o";
                 if (f3Var.F(false) == null || !"_ae".equals(str2)) {
@@ -915,8 +915,8 @@ public final class t2 extends e0 {
         boolean G;
         Object obj2 = obj;
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
-        c21.u.d(str);
-        c21.u.d(str2);
+        c21.uShadow.d(str);
+        c21.uShadow.d(str2);
         z();
         A();
         if ("allow_personalized_ads".equals(str2)) {
@@ -1032,7 +1032,7 @@ public final class t2 extends e0 {
 
     public final void M(Bundle bundle, long j) {
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
-        c21.u.g(bundle);
+        c21.uShadow.g(bundle);
         Bundle bundle2 = new Bundle(bundle);
         if (!TextUtils.isEmpty(bundle2.getString("app_id"))) {
             s0 s0Var = o1Var.w;
@@ -1053,9 +1053,9 @@ public final class t2 extends e0 {
         c2.e(bundle2, "time_to_live", Long.class, 0L);
         c2.e(bundle2, "expired_event_name", String.class, null);
         c2.e(bundle2, "expired_event_params", Bundle.class, null);
-        c21.u.d(bundle2.getString("name"));
-        c21.u.d(bundle2.getString("origin"));
-        c21.u.g(bundle2.get("value"));
+        c21.uShadow.d(bundle2.getString("name"));
+        c21.uShadow.d(bundle2.getString("origin"));
+        c21.uShadow.g(bundle2.get("value"));
         bundle2.putLong("creation_timestamp", j);
         String string = bundle2.getString("name");
         Object obj = bundle2.get("value");
@@ -1102,7 +1102,7 @@ public final class t2 extends e0 {
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         o1Var.B.getClass();
         long currentTimeMillis = System.currentTimeMillis();
-        c21.u.d(str);
+        c21.uShadow.d(str);
         Bundle bundle2 = new Bundle();
         bundle2.putString("name", str);
         bundle2.putLong("creation_timestamp", currentTimeMillis);

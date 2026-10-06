@@ -2,11 +2,11 @@ package sg;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zShadow {
-    public d2.e0 a;
+    public d2.e0Shadow a;
     public long b;
     public f1.o0 c;
 
-    public z(d2.e0 e0Var, long j, f1.o0 o0Var) {
+    public z(d2.e0Shadow e0Var, long j, f1.o0 o0Var) {
         this.a = e0Var;
         this.b = j;
         this.c = o0Var;

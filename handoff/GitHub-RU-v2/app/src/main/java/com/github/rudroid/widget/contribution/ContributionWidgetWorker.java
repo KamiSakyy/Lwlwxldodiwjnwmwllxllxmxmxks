@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import v8.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 import yz0.d8;
 import z01.r1;
 
@@ -223,7 +223,7 @@ public final class ContributionWidgetWorker extends CoroutineWorker {
                             sVar.A = i3;
                             sVar.B = i;
                             sVar.E = 4;
-                            Object v = n1.v(J, sVar);
+                            Object v = n1Shadow.v(J, sVar);
                             if (v != obj2) {
                                 i4 = i2;
                                 obj = v;

@@ -5,7 +5,7 @@ import m10.tq;
 import m10.uq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract /* synthetic */ class k {
+public abstract /* synthetic */ class kShadow {
     public static final /* synthetic */ int[] a;
 
     static {

@@ -17,7 +17,7 @@ public abstract class s {
         lb.Companion.getClass();
         aa.x xVar = lb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         aa.m mVar2 = new aa.m("hasPreviousPage", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
@@ -36,6 +36,6 @@ public abstract class s {
         aa.q0 q0Var = zs.a;
         k71.k.g(q0Var, "type");
         s00.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, x61.l.r(new aa.m[]{mVar4, new aa.m("savedReplies", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(s00.E, new aa.u0(new aa.t("after"))), new aa.k(s00.F, new aa.u0(30))}), r3), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, x61.l.r(new aa.m[]{mVar4, new aa.m("savedReplies", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(s00.E, new aa.u0(new aa.t("after"))), new aa.k(s00.F, new aa.u0(30))}), r3), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
     }
 }

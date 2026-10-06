@@ -21,7 +21,7 @@ final class s<T> implements y71.j {
         g1.a aVar = g1.Companion;
         ArrayList arrayList = new ArrayList();
         for (T t10 : (Set) obj) {
-            if (!sy.p.o(((t10.f) t10).b)) {
+            if (!sy.pShadow.o(((t10.f) t10).b)) {
                 arrayList.add(t10);
             }
         }

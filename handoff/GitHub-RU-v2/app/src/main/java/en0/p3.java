@@ -21,8 +21,8 @@ public abstract class p3 {
         rb.Companion.getClass();
         aa.x xVar = rb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
         lb.Companion.getClass();
         aa.m mVar = new aa.m("hasNextPage", v8.l0.b(lb.a), (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
@@ -30,7 +30,7 @@ public abstract class p3 {
         k71.k.g(xVar2, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar2, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n2 = sy.d0.n("PullRequest");
+        List n2 = sy.d0Shadow.n("PullRequest");
         List list = si0.h.a;
         aa.s c = no.a.c(list, "selections", "PullRequest", n2, list);
         pb.Companion.getClass();
@@ -62,6 +62,6 @@ public abstract class p3 {
         aa.q0 q0Var4 = eq.m0;
         k71.k.g(q0Var4, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var4, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(rn.l, new aa.u0(new aa.t("repositoryName"))), new aa.k(rn.m, new aa.u0(new aa.t("repositoryOwner")))}), r6));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var4, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(rn.l, new aa.u0(new aa.t("repositoryName"))), new aa.k(rn.m, new aa.u0(new aa.t("repositoryOwner")))}), r6));
     }
 }

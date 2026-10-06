@@ -11,7 +11,7 @@ public final class l extends kShadow {
         this.h = bArr;
     }
 
-    @Override // z11.k
+    @Override // z11.kShadow
     public final byte[] M() {
         return this.h;
     }

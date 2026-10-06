@@ -3,14 +3,14 @@ package ox0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
     public String a;
-    public x b;
+    public xShadow b;
     public r c;
-    public a0 d;
+    public a0Shadow d;
     public y e;
     public n f;
     public kw0.a g;
 
-    public e(String str, x xVar, r rVar, a0 a0Var, y yVar, n nVar, kw0.a aVar) {
+    public e(String str, xShadow xVar, r rVar, a0Shadow a0Var, y yVar, n nVar, kw0.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = xVar;
@@ -34,11 +34,11 @@ public final class e {
 
     public final int hashCode() {
         int hashCode = this.a.hashCode() * 31;
-        x xVar = this.b;
+        xShadow xVar = this.b;
         int hashCode2 = (hashCode + (xVar == null ? 0 : xVar.hashCode())) * 31;
         r rVar = this.c;
         int hashCode3 = (hashCode2 + (rVar == null ? 0 : rVar.hashCode())) * 31;
-        a0 a0Var = this.d;
+        a0Shadow a0Var = this.d;
         int hashCode4 = (hashCode3 + (a0Var == null ? 0 : a0Var.hashCode())) * 31;
         y yVar = this.e;
         int hashCode5 = (hashCode4 + (yVar == null ? 0 : yVar.hashCode())) * 31;

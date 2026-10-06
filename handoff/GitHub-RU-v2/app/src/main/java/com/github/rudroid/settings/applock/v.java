@@ -8,7 +8,7 @@ import androidx.lifecycle.d1;
 import l7.x1;
 import y71.h1;
 import y71.m1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.q1;
 import y71.s1;
 
@@ -48,16 +48,16 @@ public final class v {
     }
 
     public static h1 d(v vVar, k.i iVar) {
-        y71.c h = n1.h(new z(iVar, vVar, c(iVar) ? 2131951790 : 2131951797, null));
+        y71.c h = n1Shadow.h(new z(iVar, vVar, c(iVar) ? 2131951790 : 2131951797, null));
         androidx.lifecycle.x i = d1.i(iVar);
-        y11.l n = n1.n(h, 0);
-        m1 a2 = n1.a(0, n.a, (x71.a) n.c);
+        y11.l n = n1Shadow.n(h, 0);
+        m1 a2 = n1Shadow.a(0, n.a, (x71.a) n.c);
         a71.h hVar = (a71.h) n.d;
         y71.i iVar2 = (y71.i) n.b;
-        a81.t tVar = n1.a;
+        a81.t tVar = n1Shadow.a;
         s1 s1Var = q1.a;
         s1 s1Var2 = q1.b;
-        v71.b0.y(i, hVar, s1Var2.equals(s1Var) ? v71.a0.r : v71.a0.u, new m7.x(s1Var2, iVar2, a2, tVar, (a71.c) null));
+        v71.b0.y(i, hVar, s1Var2.equals(s1Var) ? v71.a0Shadow.r : v71.a0Shadow.u, new m7.x(s1Var2, iVar2, a2, tVar, (a71.c) null));
         return new h1(a2);
     }
 

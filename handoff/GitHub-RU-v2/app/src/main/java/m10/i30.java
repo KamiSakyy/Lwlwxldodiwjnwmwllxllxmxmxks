@@ -82,7 +82,7 @@ public abstract class i30 {
     public static final a81.t v0 = new a81.t(1, "orderBy", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         sl.Companion.getClass();
         aa.j0 j0Var = sl.a;
         zp.Companion.getClass();

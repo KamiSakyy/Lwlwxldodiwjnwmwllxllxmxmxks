@@ -24,7 +24,7 @@ public final class bl {
         t = blVarArr;
         v8.l0.t(blVarArr);
         Companion = new al();
-        sy.d0.o(new String[]{"DEPLOYED", "HEAD_REF", "MERGEABILITY", "MERGE_QUEUE", "PRESENCE", "REVIEW_STATE", "STATE", "TIMELINE", "UPDATED", "WORKFLOWS"});
+        sy.d0Shadow.o(new String[]{"DEPLOYED", "HEAD_REF", "MERGEABILITY", "MERGE_QUEUE", "PRESENCE", "REVIEW_STATE", "STATE", "TIMELINE", "UPDATED", "WORKFLOWS"});
     }
 
     public bl(String str, int i, String str2) {

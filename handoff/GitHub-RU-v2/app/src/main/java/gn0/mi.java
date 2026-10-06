@@ -23,7 +23,7 @@ public final class mi {
         u = miVarArr;
         v = v8.l0.t(miVarArr);
         Companion = new li();
-        sy.d0.o(new String[]{"ARCHIVED", "DONE", "READ", "UNREAD"});
+        sy.d0Shadow.o(new String[]{"ARCHIVED", "DONE", "READ", "UNREAD"});
     }
 
     public mi(String str, int i, String str2) {

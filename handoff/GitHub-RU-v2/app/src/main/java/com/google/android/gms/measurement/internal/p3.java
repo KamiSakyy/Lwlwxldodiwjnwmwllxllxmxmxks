@@ -124,7 +124,7 @@ public final class p3 extends e0 {
                         o1.m(s0Var3);
                         s0Var3.F.a("Connecting to remote service");
                         o3Var.r = true;
-                        c21.u.g(o3Var.s);
+                        c21.uShadow.g(o3Var.s);
                         o3Var.s.o();
                         return;
                     }

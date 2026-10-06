@@ -26,6 +26,6 @@ public final class l9 {
     }
 
     public final String toString() {
-        return jo.f4.p("Actor(__typename=", this.a, ", actorFields=", this.b, ")");
+        return jo.f4Shadow.p("Actor(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

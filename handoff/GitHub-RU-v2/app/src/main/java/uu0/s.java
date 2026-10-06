@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s implements aa.a {
     public static final s a = new s();
-    public static final List b = sy.d0.o(new String[]{"name", "about", "title", "body", "filename", "assignees", "labels", "type"});
+    public static final List b = sy.d0Shadow.o(new String[]{"name", "about", "title", "body", "filename", "assignees", "labels", "type"});
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0027, code lost:
     
@@ -73,7 +73,7 @@ public final class s implements aa.a {
                     kVar = (k) aa.c.b(aa.c.c(u.a, false)).a(eVar, wVar);
                     break;
                 case 7:
-                    nVar = (n) aa.c.b(aa.c.c(x.a, true)).a(eVar, wVar);
+                    nVar = (n) aa.c.b(aa.c.c(xShadow.a, true)).a(eVar, wVar);
                     break;
             }
         }
@@ -101,6 +101,6 @@ public final class s implements aa.a {
         fVar.z0("labels");
         aa.c.b(aa.c.c(u.a, false)).b(fVar, wVar, jVar.g);
         fVar.z0("type");
-        aa.c.b(aa.c.c(x.a, true)).b(fVar, wVar, jVar.h);
+        aa.c.b(aa.c.c(xShadow.a, true)).b(fVar, wVar, jVar.h);
     }
 }

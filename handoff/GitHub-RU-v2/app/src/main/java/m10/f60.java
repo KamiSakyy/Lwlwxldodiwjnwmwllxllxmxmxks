@@ -7,8 +7,8 @@ public abstract class f60 {
     public static final e60 Companion = new e60();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("ReviewRequestedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("ReviewRequestedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

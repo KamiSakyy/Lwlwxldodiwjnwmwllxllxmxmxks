@@ -151,7 +151,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
         f();
         t2 t2Var = this.f.D;
         o1.l(t2Var);
-        c21.u.d(str);
+        c21.uShadow.d(str);
         ((o1) ((androidx.compose.foundation.lazy.layout.s0) t2Var).s).getClass();
         f();
         t4 t4Var = this.f.z;
@@ -257,7 +257,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
         o1 o1Var = this.f;
         if (o1Var == null) {
             Context context = (Context) j21.b.N(aVar);
-            c21.u.g(context);
+            c21.uShadow.g(context);
             this.f = o1.s(context, u0Var, Long.valueOf(j));
         } else {
             s0 s0Var = o1Var.w;
@@ -285,7 +285,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     @Override // com.google.android.gms.internal.measurement.l0
     public void logEventAndBundle(String str, String str2, Bundle bundle, com.google.android.gms.internal.measurement.n0 n0Var, long j) {
         f();
-        c21.u.d(str2);
+        c21.uShadow.d(str2);
         (bundle != null ? new Bundle(bundle) : new Bundle()).putString("_o", "app");
         w wVar = new w(str2, new v(bundle), "app", j);
         m1 m1Var = this.f.x;
@@ -308,7 +308,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivityCreated(j21.a aVar, Bundle bundle, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivityCreatedByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), bundle, j);
     }
 
@@ -330,7 +330,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivityDestroyed(j21.a aVar, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivityDestroyedByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), j);
     }
 
@@ -352,7 +352,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivityPaused(j21.a aVar, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivityPausedByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), j);
     }
 
@@ -374,7 +374,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivityResumed(j21.a aVar, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivityResumedByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), j);
     }
 
@@ -396,7 +396,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivitySaveInstanceState(j21.a aVar, com.google.android.gms.internal.measurement.n0 n0Var, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivitySaveInstanceStateByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), n0Var, j);
     }
 
@@ -426,7 +426,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivityStarted(j21.a aVar, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivityStartedByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), j);
     }
 
@@ -446,7 +446,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void onActivityStopped(j21.a aVar, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         onActivityStoppedByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), j);
     }
 
@@ -574,7 +574,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
                     AtomicReference atomicReference2 = new AtomicReference();
                     k0 r = ((o1) ((androidx.compose.foundation.lazy.layout.s0) t2Var).s).r();
                     r.A();
-                    c21.u.g(r.y);
+                    c21.uShadow.g(r.y);
                     String str = r.y;
                     o1 o1Var2 = (o1) ((androidx.compose.foundation.lazy.layout.s0) t2Var).s;
                     s0 s0Var7 = o1Var2.w;
@@ -600,8 +600,8 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
                     byte[] bArr = f4Var.s;
                     a5.s sVar = new a5.s(t2Var, atomicReference2, f4Var, 13);
                     x2Var.B();
-                    c21.u.g(url);
-                    c21.u.g(bArr);
+                    c21.uShadow.g(url);
+                    c21.uShadow.g(bArr);
                     m1 m1Var4 = ((o1) ((androidx.compose.foundation.lazy.layout.s0) x2Var).s).x;
                     o1.m(m1Var4);
                     m1Var4.L(new v0(x2Var, str, url, bArr, hashMap, (v2) sVar));
@@ -650,7 +650,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
             p0Var.a();
         } catch (RemoteException e2) {
             o1 o1Var4 = this.f;
-            c21.u.g(o1Var4);
+            c21.uShadow.g(o1Var4);
             s0 s0Var12 = o1Var4.w;
             o1.m(s0Var12);
             s0Var12.A.b(e2, "Failed to call IDynamiteUploadBatchesCallback");
@@ -687,7 +687,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
     public void setCurrentScreen(j21.a aVar, String str, String str2, long j) {
         f();
         Activity activity = (Activity) j21.b.N(aVar);
-        c21.u.g(activity);
+        c21.uShadow.g(activity);
         setCurrentScreenByScionActivityInfo(com.google.android.gms.internal.measurement.w0.j(activity), str, str2, j);
     }
 
@@ -812,7 +812,7 @@ public class AppMeasurementDynamiteService extends com.google.android.gms.intern
         t2Var.A();
         b1.m mVar2 = t2Var.v;
         if (mVar != mVar2) {
-            c21.u.i("EventInterceptor already set.", mVar2 == null);
+            c21.uShadow.i("EventInterceptor already set.", mVar2 == null);
         }
         t2Var.v = mVar;
     }

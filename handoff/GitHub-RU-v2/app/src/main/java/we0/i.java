@@ -4,10 +4,10 @@ package we0;
 public final class i {
     public String a;
     public boolean b;
-    public x c;
+    public xShadow c;
     public g d;
 
-    public i(String str, boolean z, x xVar, g gVar) {
+    public i(String str, boolean z, xShadow xVar, g gVar) {
         this.a = str;
         this.b = z;
         this.c = xVar;
@@ -28,7 +28,7 @@ public final class i {
     public final int hashCode() {
         String str = this.a;
         int e = x.i.e((str == null ? 0 : str.hashCode()) * 31, 31, this.b);
-        x xVar = this.c;
+        xShadow xVar = this.c;
         int hashCode = (e + (xVar == null ? 0 : xVar.a.hashCode())) * 31;
         g gVar = this.d;
         return hashCode + (gVar != null ? gVar.hashCode() : 0);

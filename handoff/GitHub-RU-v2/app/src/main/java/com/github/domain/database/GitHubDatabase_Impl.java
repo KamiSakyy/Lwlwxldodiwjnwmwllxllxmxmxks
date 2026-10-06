@@ -9,14 +9,14 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import k71.e;
-import k71.x;
+import k71.xShadow;
 import l7.h0;
 import m7.g;
 import qj.f;
 import sy.w;
 import w61.p;
 import wj.c;
-import x61.r;
+import x61.rShadow;
 import zj.b;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -612,44 +612,44 @@ public final class GitHubDatabase_Impl extends GitHubDatabase {
 
     public final LinkedHashMap l() {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        e a = x.a(b.class);
+        e a = xShadow.a(b.class);
         b.Companion.getClass();
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         linkedHashMap.put(a, rVar);
-        e a2 = x.a(d.class);
+        e a2 = xShadow.a(d.class);
         d.Companion.getClass();
         linkedHashMap.put(a2, rVar);
-        e a3 = x.a(c.class);
+        e a3 = xShadow.a(c.class);
         c.Companion.getClass();
         linkedHashMap.put(a3, rVar);
-        e a4 = x.a(ck.b.class);
+        e a4 = xShadow.a(ck.b.class);
         ck.f.Companion.getClass();
         linkedHashMap.put(a4, rVar);
-        e a5 = x.a(uj.b.class);
+        e a5 = xShadow.a(uj.b.class);
         uj.b.Companion.getClass();
         linkedHashMap.put(a5, rVar);
-        e a6 = x.a(bk.b.class);
+        e a6 = xShadow.a(bk.b.class);
         bk.b.Companion.getClass();
         linkedHashMap.put(a6, rVar);
-        e a7 = x.a(xj.c.class);
+        e a7 = xShadow.a(xj.c.class);
         xj.c.Companion.getClass();
         linkedHashMap.put(a7, rVar);
-        e a8 = x.a(ek.d.class);
+        e a8 = xShadow.a(ek.d.class);
         ek.d.Companion.getClass();
         linkedHashMap.put(a8, rVar);
-        e a9 = x.a(vj.c.class);
+        e a9 = xShadow.a(vj.c.class);
         vj.c.Companion.getClass();
         linkedHashMap.put(a9, rVar);
-        e a11 = x.a(dk.b.class);
+        e a11 = xShadow.a(dk.b.class);
         dk.d.Companion.getClass();
         linkedHashMap.put(a11, rVar);
-        e a12 = x.a(tj.d.class);
+        e a12 = xShadow.a(tj.d.class);
         tj.d.Companion.getClass();
         linkedHashMap.put(a12, rVar);
-        e a13 = x.a(yj.c.class);
+        e a13 = xShadow.a(yj.c.class);
         yj.c.Companion.getClass();
         linkedHashMap.put(a13, rVar);
-        e a14 = x.a(sj.d.class);
+        e a14 = xShadow.a(sj.d.class);
         sj.d.Companion.getClass();
         linkedHashMap.put(a14, rVar);
         return linkedHashMap;
@@ -677,12 +677,12 @@ public final class GitHubDatabase_Impl extends GitHubDatabase {
 
     @Override // com.github.domain.database.GitHubDatabase
     public final vj.c x() {
-        return (vj.c) this.x.getValue();
+        return (vj.c) this.xShadow.getValue();
     }
 
     @Override // com.github.domain.database.GitHubDatabase
     public final c y() {
-        return (c) this.r.getValue();
+        return (c) this.rShadow.getValue();
     }
 
     @Override // com.github.domain.database.GitHubDatabase

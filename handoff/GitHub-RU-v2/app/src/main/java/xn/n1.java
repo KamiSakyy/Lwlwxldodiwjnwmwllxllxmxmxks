@@ -3,7 +3,7 @@ package xn;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class n1 extends sy.r {
+public final class n1 extends sy.rShadow {
     public ArrayList a;
     public String b;
 

@@ -5,7 +5,7 @@ import androidx.lifecycle.l1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class NotificationsFilterBarFragment extends Hilt_NotificationsFilterBarFragment {
     public static final a Companion = new a();
-    public final l1 O0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.h0.class), new b(), new d(), new c());
+    public final l1 O0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.h0.class), new b(), new d(), new c());
 
     public static final class a {
     }

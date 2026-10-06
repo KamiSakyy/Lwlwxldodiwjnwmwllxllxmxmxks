@@ -19,7 +19,7 @@ final class u<T> implements y71.j {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        b0Var.x = v71.b0.z(d1.k(b0Var), (a71.h) null, (v71.a0) null, new a0(b0Var, jVar, null), 3);
+        b0Var.x = v71.b0.z(d1.k(b0Var), (a71.h) null, (v71.a0Shadow) null, new a0(b0Var, jVar, null), 3);
         return w61.a0.a;
     }
     public static Object a(Object p1, Object p2, Object p3) { return null; }

@@ -2,7 +2,7 @@ package com.apollographql.apollo.internal;
 
 import h91.h;
 import h91.j;
-import h91.k;
+import h91.kShadow;
 import h91.y;
 import java.io.Closeable;
 
@@ -13,10 +13,10 @@ public final class g implements Closeable {
     public j f4306r;
 
     /* renamed from: s, reason: collision with root package name */
-    public k f4307s;
+    public kShadow f4307s;
 
     /* renamed from: t, reason: collision with root package name */
-    public k f4308t;
+    public kShadow f4308t;
 
     /* renamed from: u, reason: collision with root package name */
     public int f4309u;
@@ -43,8 +43,8 @@ public final class g implements Closeable {
         hVar2.P0("\r\n--");
         hVar2.P0(str);
         this.f4308t = hVar2.v(hVar2.s);
-        k kVar = k.u;
-        this.f4313y = h91.b.f(new k[]{c30.d.b("\r\n--" + str + "--"), c30.d.b("\r\n"), c30.d.b("--"), c30.d.b(" "), c30.d.b("\t")});
+        kShadow kVar = kShadow.u;
+        this.f4313y = h91.b.f(new kShadow[]{c30.d.b("\r\n--" + str + "--"), c30.d.b("\r\n"), c30.d.b("--"), c30.d.b(" "), c30.d.b("\t")});
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -58,7 +58,7 @@ public final class g implements Closeable {
     }
 
     public final long f(long j10) {
-        k kVar = this.f4308t;
+        kShadow kVar = this.f4308t;
         long d10 = kVar.d();
         j jVar = this.f4306r;
         jVar.C0(d10);

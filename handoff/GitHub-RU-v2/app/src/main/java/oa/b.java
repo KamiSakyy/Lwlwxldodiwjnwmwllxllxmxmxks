@@ -2,7 +2,7 @@ package oa;
 
 import android.accounts.Account;
 import android.accounts.OnAccountsUpdateListener;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class b implements OnAccountsUpdateListener {
@@ -16,6 +16,6 @@ public final class b implements OnAccountsUpdateListener {
 
     @Override // android.accounts.OnAccountsUpdateListener
     public final void onAccountsUpdated(Account[] accountArr) {
-        this.f30101a.k(accountArr != null ? x61.l.g0(accountArr) : r.r);
+        this.f30101a.k(accountArr != null ? x61.l.g0(accountArr) : rShadow.r);
     }
 }

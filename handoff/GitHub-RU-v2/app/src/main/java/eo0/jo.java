@@ -3,9 +3,9 @@ package eo0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jo implements aaShadow.a {
-    public static final jo a = new jo();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+public final class joShadow implements aaShadow.a {
+    public static final joShadow a = new joShadow();
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -66,9 +66,9 @@ public final class jo implements aaShadow.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(pt0.i.a, true)))).b(fVar, wVar, hVar.f);
         fVar.z0("isBinary");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(hVar.g, bVar3, fVar, wVar, "isLargeDiff");
-        jo.f4.C(hVar.h, bVar3, fVar, wVar, "isSubmodule");
-        jo.f4.C(hVar.i, bVar3, fVar, wVar, "status");
+        jo.f4Shadow.C(hVar.g, bVar3, fVar, wVar, "isLargeDiff");
+        jo.f4Shadow.C(hVar.h, bVar3, fVar, wVar, "isSubmodule");
+        jo.f4Shadow.C(hVar.i, bVar3, fVar, wVar, "status");
         fVar.I(hVar.j.r);
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, hVar.k);

@@ -1,7 +1,7 @@
 package x01;
 
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
@@ -42,6 +42,6 @@ public final class i {
     }
 
     public final String toString() {
-        return f4.s(h1.t("Page(hasNextPageApiValue=", ", endCursor=", this.b, ", isHead=", this.a), this.c, ")");
+        return f4Shadow.s(h1.t("Page(hasNextPageApiValue=", ", endCursor=", this.b, ", isHead=", this.a), this.c, ")");
     }
 }

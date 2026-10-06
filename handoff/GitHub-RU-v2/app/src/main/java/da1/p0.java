@@ -12,7 +12,7 @@ public final class p0 extends q0 {
 
     public final String toString() {
         String str = this.f ? "/>" : ">";
-        ca1.b bVar = this.g;
+        ca1.bShadow bVar = this.g;
         if (bVar == null || bVar.size() <= 0) {
             return "<" + n() + str;
         }

@@ -46,6 +46,6 @@ public class CrashlyticsRegistrar implements ComponentRegistrar {
         a.a(new i(0, 2, z51.a.class));
         a.f = new c5.b(18, this);
         a.i(2);
-        return Arrays.asList(a.b(), sy.o.c("fire-cls", "19.4.4"));
+        return Arrays.asList(a.b(), sy.oShadow.c("fire-cls", "19.4.4"));
     }
 }

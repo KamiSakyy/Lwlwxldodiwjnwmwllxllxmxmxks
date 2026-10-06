@@ -1,10 +1,10 @@
 package x71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class j {
+public abstract class jShadow {
     public static final p a = new p(-1, null, null, 0);
-    public static final int b = a81.b.l(32, "kotlinx.coroutines.bufferedChannel.segmentSize", 12);
-    public static final int c = a81.b.l(10000, "kotlinx.coroutines.bufferedChannel.expandBufferCompletionWaitIterations", 12);
+    public static final int b = a81.bShadow.l(32, "kotlinx.coroutines.bufferedChannel.segmentSize", 12);
+    public static final int c = a81.bShadow.l(10000, "kotlinx.coroutines.bufferedChannel.expandBufferCompletionWaitIterations", 12);
     public static final a81.t d = new a81.t(0, "BUFFERED", false);
     public static final a81.t e = new a81.t(0, "SHOULD_BUFFER", false);
     public static final a81.t f = new a81.t(0, "S_RESUMING_BY_RCV", false);

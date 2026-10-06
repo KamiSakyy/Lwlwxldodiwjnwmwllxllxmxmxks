@@ -7,7 +7,7 @@ import android.content.pm.ProviderInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.SystemClock;
-import c21.u;
+import c21.uShadow;
 import java.util.concurrent.atomic.AtomicBoolean;
 import k41.a;
 import k41.g;
@@ -20,7 +20,7 @@ public class FirebaseInitProvider extends ContentProvider {
 
     @Override // android.content.ContentProvider
     public final void attachInfo(Context context, ProviderInfo providerInfo) {
-        u.h(providerInfo, "FirebaseInitProvider ProviderInfo cannot be null.");
+        uShadow.h(providerInfo, "FirebaseInitProvider ProviderInfo cannot be null.");
         if ("com.google.firebase.firebaseinitprovider".equals(providerInfo.authority)) {
             throw new IllegalStateException("Incorrect provider authority in manifest. Most likely due to a missing applicationId variable in application's build.gradle.");
         }

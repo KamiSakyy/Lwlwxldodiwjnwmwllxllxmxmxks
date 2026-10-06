@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -41,7 +41,7 @@ public final class WorkflowsRoute implements Parcelable, sa.e {
 
     public /* synthetic */ WorkflowsRoute(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, WorkflowsRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, WorkflowsRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f5124r = str;

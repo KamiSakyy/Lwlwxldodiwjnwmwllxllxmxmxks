@@ -19,7 +19,7 @@ public final class f extends j0 implements c71.d, a71.c {
         super(-1);
         this.u = vVar;
         this.v = cVar;
-        this.w = b.b;
+        this.w = bShadow.b;
         this.x = b.m(cVar.q());
     }
 
@@ -72,7 +72,7 @@ public final class f extends j0 implements c71.d, a71.c {
     @Override // v71.j0
     public final Object j() {
         Object obj = this.w;
-        this.w = b.b;
+        this.w = bShadow.b;
         return obj;
     }
 

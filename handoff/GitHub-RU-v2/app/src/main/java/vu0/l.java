@@ -18,7 +18,7 @@ import pz0.vd;
 import pz0.xd;
 import pz0.yi;
 import pz0.zd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -29,21 +29,21 @@ public abstract class l {
         xd.Companion.getClass();
         x xVar = xd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         aa.s mVar2 = new aa.m("login", l0.b(xVar), (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = dp0.b.a;
         List r2 = x61.l.r(new aa.s[]{mVar, mVar2, no.a.c(list, "selections", "Actor", r, list)});
         aa.s mVar3 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Milestone");
+        List n = d0Shadow.n("Milestone");
         List list2 = xs0.a.a;
         aa.s c = no.a.c(list2, "selections", "Milestone", n, list2);
         td.Companion.getClass();
         x xVar2 = td.a;
         List r3 = x61.l.r(new aa.s[]{mVar3, c, new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.s mVar4 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("IssueType");
+        List n2 = d0Shadow.n("IssueType");
         List list3 = zr0.a.a;
         List r4 = x61.l.r(new aa.s[]{mVar4, no.a.c(list3, "selections", "IssueType", n2, list3), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -100,7 +100,7 @@ public abstract class l {
         q0 q0Var = yi.a;
         k71.k.g(q0Var, "type");
         aa.s mVar19 = new aa.m("milestone", q0Var, (String) null, rVar, rVar, r3);
-        List n3 = d0.n("Issue");
+        List n3 = d0Shadow.n("Issue");
         List list9 = js0.b.a;
         aa.s c7 = no.a.c(list9, "selections", "Issue", n3, list9);
         List r10 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "GistComment", "Issue", "IssueComment", "Project", "ProjectNext", "ProjectV2", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"});
@@ -108,8 +108,8 @@ public abstract class l {
         aa.s c8 = no.a.c(list10, "selections", "Updatable", r10, list10);
         aa.r b3 = l0.b(xVar5);
         a81.t tVar3 = le.r;
-        aa.s mVar20 = new aa.m("taskListItemCount", b3, "completeTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0.n("COMPLETE"))), rVar);
-        aa.s mVar21 = new aa.m("taskListItemCount", l0.b(xVar5), "incompleteTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0.n("INCOMPLETE"))), rVar);
+        aa.s mVar20 = new aa.m("taskListItemCount", b3, "completeTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0Shadow.n("COMPLETE"))), rVar);
+        aa.s mVar21 = new aa.m("taskListItemCount", l0.b(xVar5), "incompleteTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0Shadow.n("INCOMPLETE"))), rVar);
         aa.s mVar22 = new aa.m("viewerCanReopen", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         df.Companion.getClass();
         a0 a0Var = df.s;
@@ -122,7 +122,7 @@ public abstract class l {
         q0 q0Var2 = mf.a;
         k71.k.g(q0Var2, "type");
         aa.s mVar27 = new aa.m("issueType", q0Var2, (String) null, rVar, rVar, r4);
-        List n4 = d0.n("Issue");
+        List n4 = d0Shadow.n("Issue");
         List list11 = e.a;
         a = x61.l.r(new aa.s[]{mVar5, mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, c2, c3, c4, c5, mVar18, c6, mVar19, c7, c8, mVar20, mVar21, mVar22, mVar23, mVar24, mVar25, mVar26, mVar27, no.a.c(list11, "selections", "Issue", n4, list11)});
     }

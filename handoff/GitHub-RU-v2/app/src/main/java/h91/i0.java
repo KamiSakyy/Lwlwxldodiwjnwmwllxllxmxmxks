@@ -29,7 +29,7 @@ public interface i0Shadow extends Closeable, Flushable {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k {
+    public static class kShadow {
         public k() {
         }
     }

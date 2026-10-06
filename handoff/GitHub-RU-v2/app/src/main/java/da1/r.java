@@ -3,16 +3,16 @@ package da1;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class r extends b0 {
+final class r extends b0Shadow {
     public r() {
         super("ForeignContent", 23);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
-        ca1.b bVar2;
-        ca1.b bVar3;
-        ca1.b bVar4;
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
+        ca1.bShadow bVar2;
+        ca1.bShadow bVar3;
+        ca1.bShadow bVar4;
         ca1.j h;
         int b = y3.a.b(s0Var.a);
         if (b == 0) {

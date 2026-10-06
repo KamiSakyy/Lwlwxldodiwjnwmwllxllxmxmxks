@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
@@ -48,7 +48,7 @@ public final class e {
 
     public final String toString() {
         StringBuilder o = s0.o("Node(id=", this.a, ", localizedDescription=", this.b, ", unlockedAt=");
-        f4.A(", url=", this.d, ", achievable=", o, this.c);
+        f4Shadow.A(", url=", this.d, ", achievable=", o, this.c);
         o.append(this.e);
         o.append(", tier=");
         o.append(this.f);

@@ -21,7 +21,7 @@ public abstract class o3 implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

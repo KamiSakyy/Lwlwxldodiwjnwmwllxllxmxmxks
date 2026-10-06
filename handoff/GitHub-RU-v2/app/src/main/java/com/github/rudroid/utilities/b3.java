@@ -12,7 +12,7 @@ public final class b3 {
         k71.k.g(dVar, "dispatcher");
         androidx.lifecycle.c0 f = androidx.lifecycle.d1.f(view);
         if (f != null) {
-            v71.b0.z(androidx.lifecycle.d1.h(f.m3()), dVar, (v71.a0) null, new a3(aVar, null), 2);
+            v71.b0.z(androidx.lifecycle.d1.h(f.m3()), dVar, (v71.a0Shadow) null, new a3(aVar, null), 2);
         }
     }
 

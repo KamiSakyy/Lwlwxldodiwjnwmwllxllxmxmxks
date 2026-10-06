@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class jo {
+public final class joShadow {
     public String a;
     public String b;
     public ko c;
@@ -17,10 +17,10 @@ public final class jo {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof jo)) {
+        if (!(obj instanceof joShadow)) {
             return false;
         }
-        jo joVar = (jo) obj;
+        joShadow joVar = (joShadow) obj;
         return k71.k.b(this.a, joVar.a) && k71.k.b(this.b, joVar.b) && k71.k.b(this.c, joVar.c);
     }
 

@@ -5,12 +5,12 @@ import ev.i;
 import ev.j;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = d0.o("__typename", "id");
+    public static final List b = d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, w wVar) {
         j jVar;

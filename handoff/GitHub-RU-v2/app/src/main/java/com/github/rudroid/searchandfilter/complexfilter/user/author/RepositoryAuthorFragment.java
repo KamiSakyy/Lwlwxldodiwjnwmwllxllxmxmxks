@@ -9,7 +9,7 @@ import com.github.rudroid.searchandfilter.complexfilter.e0;
 import com.github.rudroid.searchandfilter.complexfilter.user.j;
 import com.github.rudroid.searchandfilter.complexfilter.user.k;
 import k71.l;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 import w61.h;
 import w61.i;
@@ -89,7 +89,7 @@ public final class RepositoryAuthorFragment extends Hilt_RepositoryAuthorFragmen
 
     public RepositoryAuthorFragment() {
         h s = w.s(i.s, new b(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(11, this)));
-        this.H0 = new l1(x.a(com.github.rudroid.searchandfilter.complexfilter.user.d.class), new c(s), new e(s), new d(s));
+        this.H0 = new l1(xShadow.a(com.github.rudroid.searchandfilter.complexfilter.user.d.class), new c(s), new e(s), new d(s));
         this.I0 = new k(this);
     }
 

@@ -23,7 +23,7 @@ public final class kl {
         u = klVarArr;
         v = v8.l0.t(klVarArr);
         Companion = new jl();
-        sy.d0.o(new String[]{"ARCHIVED", "DONE", "READ", "UNREAD"});
+        sy.d0Shadow.o(new String[]{"ARCHIVED", "DONE", "READ", "UNREAD"});
     }
 
     public kl(String str, int i, String str2) {

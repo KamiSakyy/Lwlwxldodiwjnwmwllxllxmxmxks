@@ -2,13 +2,13 @@ package n00;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements aa.a {
     public static final b a = new b();
-    public static final List b = d0.o("id", "isEmpty", "__typename");
+    public static final List b = d0Shadow.o("id", "isEmpty", "__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -54,7 +54,7 @@ public final class b implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, cVar.a);
         fVar.z0("isEmpty");
-        f4.C(cVar.b, aa.c.f, fVar, wVar, "__typename");
+        f4Shadow.C(cVar.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, cVar.c);
     }
 }

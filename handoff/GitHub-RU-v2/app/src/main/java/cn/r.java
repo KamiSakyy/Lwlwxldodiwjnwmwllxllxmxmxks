@@ -151,7 +151,7 @@ public final class r extends c71.j implements j71.f {
                     k71.k.g("- sending: ".concat(jSONObject), "message");
                     g91.f fVar = zVar.A;
                     if (fVar != null) {
-                        h91.k kVar = h91.k.u;
+                        h91.kShadow kVar = h91.kShadow.u;
                         bool = Boolean.valueOf(fVar.f(1, c30.d.b(jSONObject)));
                     }
                     k71.k.g("on completion - unsubscribed: " + bool, "message");
@@ -168,7 +168,7 @@ public final class r extends c71.j implements j71.f {
                     k71.k.g("- sending: ".concat(jSONObject2), "message");
                     g91.f fVar2 = zVar2.A;
                     if (fVar2 != null) {
-                        h91.k kVar2 = h91.k.u;
+                        h91.kShadow kVar2 = h91.kShadow.u;
                         bool = Boolean.valueOf(fVar2.f(1, c30.d.b(jSONObject2)));
                     }
                     k71.k.g("on completion - unsubscribed: " + bool, "message");
@@ -179,7 +179,7 @@ public final class r extends c71.j implements j71.f {
                 b71.a aVar6 = b71.a.r;
                 y.j(obj);
                 if (apolloException instanceof ApolloException) {
-                    throw in.r.b(apolloException, (String) this.x);
+                    throw in.rShadow.b(apolloException, (String) this.x);
                 }
                 throw apolloException;
             case 6:
@@ -193,7 +193,7 @@ public final class r extends c71.j implements j71.f {
                     k71.k.g("- sending: ".concat(jSONObject3), "message");
                     g91.f fVar3 = zVar3.A;
                     if (fVar3 != null) {
-                        h91.k kVar3 = h91.k.u;
+                        h91.kShadow kVar3 = h91.kShadow.u;
                         bool = Boolean.valueOf(fVar3.f(1, c30.d.b(jSONObject3)));
                     }
                     k71.k.g("on completion - unsubscribed: " + bool, "message");
@@ -219,7 +219,7 @@ public final class r extends c71.j implements j71.f {
                     k71.k.g("- sending: ".concat(jSONObject4), "message");
                     g91.f fVar4 = zVar4.A;
                     if (fVar4 != null) {
-                        h91.k kVar4 = h91.k.u;
+                        h91.kShadow kVar4 = h91.kShadow.u;
                         bool = Boolean.valueOf(fVar4.f(1, c30.d.b(jSONObject4)));
                     }
                     k71.k.g("on completion - unsubscribed: " + bool, "message");

@@ -6,7 +6,7 @@ import h0.q1;
 import k71.k;
 import org.intellij.markdown.MarkdownParsingException;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c extends u91.b {
@@ -18,7 +18,7 @@ public final class c extends u91.b {
         super(dVar, new v(q1Var));
         k.g(dVar, "myConstraints");
         this.e = q1Var;
-        q1Var.a(d0.n(new x91.e(new q71.g(cVar.c, cVar.d(), 1), j91.a.F)));
+        q1Var.a(d0Shadow.n(new x91.e(new q71.g(cVar.c, cVar.d(), 1), j91.a.F)));
         this.f = -1;
     }
 
@@ -85,7 +85,7 @@ public final class c extends u91.b {
                     int l2 = a0.l(a0.a(cVar, dVar2), cVar.d) + i2 + 1;
                     q71.g gVar = new q71.g(l2, cVar.d(), 1);
                     if (((q71.e) gVar).s - l2 > 0) {
-                        this.e.a(d0.n(new x91.e(gVar, j91.a.F)));
+                        this.e.a(d0Shadow.n(new x91.e(gVar, j91.a.F)));
                     }
                     this.f = cVar.d();
                     return u91.a.e;

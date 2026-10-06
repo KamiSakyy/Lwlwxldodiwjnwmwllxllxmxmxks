@@ -7,7 +7,7 @@ import kc0.d20;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dq implements aaShadow.a {
     public static final dq a = new dq();
-    public static final List b = sy.d0.n("submitPullRequestReview");
+    public static final List b = sy.d0Shadow.n("submitPullRequestReview");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

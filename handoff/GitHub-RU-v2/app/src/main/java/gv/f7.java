@@ -86,7 +86,7 @@ public abstract class f7 implements aa.a {
         fVar.z0("displayName");
         bVar.b(fVar, wVar, s5Var.d);
         fVar.z0("isCopilot");
-        jo.f4.C(s5Var.e, aa.c.f, fVar, wVar, "url");
+        jo.f4Shadow.C(s5Var.e, aa.c.f, fVar, wVar, "url");
         bVar.b(fVar, wVar, s5Var.f);
         List list = eq.h.a;
         eq.h.d(fVar, wVar, s5Var.g);

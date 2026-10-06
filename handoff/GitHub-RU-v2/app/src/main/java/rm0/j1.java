@@ -463,7 +463,7 @@ public final class j1 extends c71.j implements j71.f {
                     this.w = null;
                     this.z = null;
                     this.x = 1;
-                    if (y71.n1.q(jVar, m3Var, this) == aVar13) {
+                    if (y71.n1Shadow.q(jVar, m3Var, this) == aVar13) {
                         return aVar13;
                     }
                 } else {

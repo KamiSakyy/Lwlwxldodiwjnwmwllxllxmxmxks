@@ -13,7 +13,7 @@ import com.google.android.gms.internal.measurement.d5;
 import com.google.android.gms.internal.measurement.i4;
 import java.time.ZonedDateTime;
 import kotlin.NoWhenBranchMatchedException;
-import lz.a0;
+import lz.a0Shadow;
 import lz.b0;
 import lz.j0;
 import lz.k0;
@@ -28,7 +28,7 @@ import lz.t;
 import lz.u;
 import lz.v;
 import lz.w;
-import lz.x;
+import lz.xShadow;
 import lz.z;
 import m10.jq;
 import m10.t3;
@@ -124,7 +124,7 @@ public final class h implements z2 {
         NotificationReasonState notificationReasonState;
         w wVar;
         ya0 ya0Var;
-        lz.k kVar;
+        lz.kShadow kVar;
         k71.k.g(eVar, "node");
         a0 a0Var = eVar.m;
         String str = eVar.a;
@@ -204,12 +204,12 @@ public final class h implements z2 {
                             o4Var = new a5(zVar.c, zVar.a, zVar.b, zVar.d.a, zVar.e.a);
                         } else {
                             if ((b0Var != null ? b0Var.f : null) != null) {
-                                lz.k kVar2 = b0Var.f;
+                                lz.kShadow kVar2 = b0Var.f;
                                 String str10 = kVar2.a;
                                 String str11 = kVar2.b;
                                 int i2 = kVar2.c;
                                 IssueState O = i21.a.O(kVar2.d);
-                                lz.k kVar3 = b0Var.f;
+                                lz.kShadow kVar3 = b0Var.f;
                                 m0 m0Var = kVar3.e;
                                 o4Var = new q4(str10, str11, i2, O, m0Var.b.b, m0Var.a, sy.w.w(kVar3.f));
                             } else {

@@ -11,8 +11,8 @@ public abstract class yt {
     public static final aa.q0 d;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        d = new aa.q0("PullRequestReviewThread", n, sy.d0.n(wk.a));
+        d = new aa.q0("PullRequestReviewThread", n, sy.d0Shadow.n(wk.a));
     }
 }

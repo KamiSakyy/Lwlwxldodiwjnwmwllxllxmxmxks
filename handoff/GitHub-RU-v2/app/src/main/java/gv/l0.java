@@ -7,7 +7,7 @@ import m10.xz;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 implements aa.a {
     public static final l0 a = new l0();
-    public static final List b = sy.d0.o("__typename", "subjectType", "id", "isResolved", "isOutdated", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "comments");
+    public static final List b = sy.d0Shadow.o("__typename", "subjectType", "id", "isResolved", "isOutdated", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "comments");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0035, code lost:
     
@@ -168,7 +168,7 @@ public final class l0 implements aa.a {
         Boolean bool5 = null;
         Boolean bool6 = null;
         d0 d0Var = null;
-        a0 a0Var = null;
+        a0Shadow a0Var = null;
         while (true) {
             switch (eVar.r0(b)) {
                 case 0:
@@ -231,7 +231,7 @@ public final class l0 implements aa.a {
                     break;
                 case 9:
                     bool = bool2;
-                    a0Var = (a0) aa.c.c(i0.a, false).a(eVar, wVar);
+                    a0Var = (a0Shadow) aa.c.c(i0.a, false).a(eVar, wVar);
                     break;
             }
             bool2 = bool;
@@ -252,13 +252,13 @@ public final class l0 implements aa.a {
         bVar.b(fVar, wVar, c0Var.c);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(c0Var.d, bVar2, fVar, wVar, "isOutdated");
-        jo.f4.C(c0Var.e, bVar2, fVar, wVar, "viewerCanResolve");
-        jo.f4.C(c0Var.f, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(c0Var.g, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(c0Var.d, bVar2, fVar, wVar, "isOutdated");
+        jo.f4Shadow.C(c0Var.e, bVar2, fVar, wVar, "viewerCanResolve");
+        jo.f4Shadow.C(c0Var.f, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(c0Var.g, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(m0.a, false)).b(fVar, wVar, c0Var.h);
         fVar.z0("viewerCanReply");
-        jo.f4.C(c0Var.i, bVar2, fVar, wVar, "comments");
+        jo.f4Shadow.C(c0Var.i, bVar2, fVar, wVar, "comments");
         aa.c.c(i0.a, false).b(fVar, wVar, c0Var.j);
         List list = nv.b.a;
         nv.b.d(fVar, wVar, c0Var.k);

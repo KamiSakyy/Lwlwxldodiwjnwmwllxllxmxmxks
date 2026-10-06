@@ -36,7 +36,7 @@ public final class ShortcutsOverviewActivity extends l0<ic.d0> implements com.gi
         k71.k.e(E, "null cannot be cast to non-null type androidx.navigation.fragment.NavHostFragment");
         x6.a0 s4 = E.s4();
         x6.y yVar = new x6.y(s4.b.s, ShortcutsOverviewRoute.INSTANCE, (k71.e) null);
-        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ShortcutsOverviewRoute.class), x61.s.r, k71.x.a(ShortcutsOverviewFragment.class)), yVar.j, yVar, s4);
+        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.xShadow.a(ShortcutsOverviewRoute.class), x61.s.r, k71.xShadow.a(ShortcutsOverviewFragment.class)), yVar.j, yVar, s4);
     }
 
     public final void onProvideKeyboardShortcuts(List list, Menu menu, int i) {

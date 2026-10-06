@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import k21.d;
 import k81.z;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements i0, k, x, d {
@@ -69,7 +69,7 @@ public final class b implements i0, k, x, d {
         List list = sb0.a.a;
         List list2 = sb0.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -105,7 +105,7 @@ public final class b implements i0, k, x, d {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(b.class).hashCode();
+                return k71.xShadow.a(b.class).hashCode();
             default:
                 return super.hashCode();
         }

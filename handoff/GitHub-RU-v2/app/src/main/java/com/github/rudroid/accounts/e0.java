@@ -3,7 +3,7 @@ package com.github.rudroid.accounts;
 import java.util.ArrayList;
 import java.util.List;
 import y71.g1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -65,7 +65,7 @@ final class e0<T> implements y71.j {
                 sy.y.j(obj);
                 d0Var.f4355u = g1Var;
                 d0Var.f4358x = 2;
-                obj = n1.H((y71.i) obj, new ArrayList(), d0Var);
+                obj = n1Shadow.H((y71.i) obj, new ArrayList(), d0Var);
             }
         }
         d0Var = new d0(this, cVar);
@@ -76,6 +76,6 @@ final class e0<T> implements y71.j {
         }
         d0Var.f4355u = g1Var;
         d0Var.f4358x = 2;
-        obj2 = n1.H((y71.i) obj2, new ArrayList(), d0Var);
+        obj2 = n1Shadow.H((y71.i) obj2, new ArrayList(), d0Var);
     }
 }

@@ -9,7 +9,7 @@ import na0.n0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c0 implements aa.a {
     public static final c0 a = new c0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         m0 m0Var;

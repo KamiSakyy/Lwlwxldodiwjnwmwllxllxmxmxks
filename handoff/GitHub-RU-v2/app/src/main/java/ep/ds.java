@@ -6,7 +6,7 @@ import jo.l40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ds implements aaShadow.a {
     public static final ds a = new ds();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -25,8 +25,8 @@ public final class ds implements aaShadow.a {
             }
         }
         eVar.s0();
-        ct.a0 a0Var = ct.a0.a;
-        ct.u c = ct.a0.c(eVar, wVar);
+        ct.a0Shadow a0Var = ct.a0Shadow.a;
+        ct.u c = ct.a0Shadow.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -48,7 +48,7 @@ public final class ds implements aaShadow.a {
         bVar.b(fVar, wVar, l40Var.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, l40Var.b);
-        ct.a0 a0Var = ct.a0.a;
-        ct.a0.d(fVar, wVar, l40Var.c);
+        ct.a0Shadow a0Var = ct.a0Shadow.a;
+        ct.a0Shadow.d(fVar, wVar, l40Var.c);
     }
 }

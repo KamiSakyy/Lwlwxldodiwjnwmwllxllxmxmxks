@@ -27,7 +27,7 @@ import com.github.service.models.response.issueorpullrequest.IssueType;
 import com.github.service.models.response.issueorpullrequest.IssueTypeColor;
 import h0.t0;
 import java.lang.annotation.Annotation;
-import k81.c1;
+import k81.c1Shadow;
 import k81.q1;
 import k81.r0;
 import xn.g3;
@@ -77,10 +77,10 @@ public final /* synthetic */ class a implements j71.a {
                 AiModelCapabilitiesResponse.Companion companion11 = AiModelCapabilitiesResponse.Companion;
                 return b.Companion.serializer();
             case 11:
-                return c1.e("com.github.service.dotcom.models.response.copilot.AiModelCapabilityTypeResponse", b.values(), new String[]{"chat", "unknown"}, new Annotation[][]{null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.AiModelCapabilityTypeResponse", b.values(), new String[]{"chat", "unknown"}, new Annotation[][]{null, null});
             case 12:
                 AiModelPolicyResponse.Companion companion12 = AiModelPolicyResponse.Companion;
-                return c1.e("com.github.service.dotcom.models.response.copilot.AiModelPolicyStateResponse", c.values(), new String[]{"enabled", "unconfigured", "disabled"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.AiModelPolicyStateResponse", c.values(), new String[]{"enabled", "unconfigured", "disabled"}, new Annotation[][]{null, null, null});
             case 13:
                 ChatAgentsResponse.Companion companion13 = ChatAgentsResponse.Companion;
                 return new k81.d(ChatAgentResponse$$serializer.INSTANCE, 0);
@@ -97,7 +97,7 @@ public final /* synthetic */ class a implements j71.a {
                 EventsResponse.Companion companion17 = EventsResponse.Companion;
                 return new k81.d(EventResponse$$serializer.INSTANCE, 0);
             case 18:
-                return c1.e("com.github.service.dotcom.models.response.copilot.ModelPickerCategoryResponse", e.values(), new String[]{"lightweight", "versatile", "powerful", "unknown"}, new Annotation[][]{null, null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.ModelPickerCategoryResponse", e.values(), new String[]{"lightweight", "versatile", "powerful", "unknown"}, new Annotation[][]{null, null, null, null});
             case 19:
                 SteerAgentTaskRequest.Companion companion18 = SteerAgentTaskRequest.Companion;
                 return new k81.d(q1.a, 0);
@@ -108,23 +108,23 @@ public final /* synthetic */ class a implements j71.a {
                 return Boolean.TRUE;
             case 22:
                 IssueType.Companion companion19 = IssueType.Companion;
-                return c1.f("com.github.service.models.response.issueorpullrequest.IssueTypeColor", IssueTypeColor.values());
+                return c1Shadow.f("com.github.service.models.response.issueorpullrequest.IssueTypeColor", IssueTypeColor.values());
             case 23:
                 return null;
             case 24:
                 ChatClientConfirmationResponse.Companion companion20 = ChatClientConfirmationResponse.Companion;
                 return hz.a.Companion.serializer();
             case 25:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatClientConfirmationStateResponse", hz.a.values(), new String[]{"accepted", "dismissed", "unknown"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatClientConfirmationStateResponse", hz.a.values(), new String[]{"accepted", "dismissed", "unknown"}, new Annotation[][]{null, null, null});
             case 26:
                 ChatMessageAnnotationsResponse.Companion companion21 = ChatMessageAnnotationsResponse.Companion;
                 return new k81.d(ChatMessageCodeVulnerabilityResponse$$serializer.INSTANCE, 0);
             case 27:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageFeedbackType", hz.b.values(), new String[]{"NEGATIVE", "POSITIVE", "unknown"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageFeedbackType", hz.b.values(), new String[]{"NEGATIVE", "POSITIVE", "unknown"}, new Annotation[][]{null, null, null});
             case 28:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageNegativeFeedbackChoiceType", hz.c.values(), new String[]{"offensive_or_discriminatory", "poorly_formatted", "not_true", "unhelpful", "Unknown"}, new Annotation[][]{null, null, null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageNegativeFeedbackChoiceType", hz.c.values(), new String[]{"offensive_or_discriminatory", "poorly_formatted", "not_true", "unhelpful", "Unknown"}, new Annotation[][]{null, null, null, null, null});
             default:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageReferenceOwnerTypeResponse", hz.d.values(), new String[]{"Organization", "User", "unknown"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageReferenceOwnerTypeResponse", hz.d.values(), new String[]{"Organization", "User", "unknown"}, new Annotation[][]{null, null, null});
         }
     }
 }

@@ -8,8 +8,8 @@ public abstract class fj {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        a = new aa.q0("PinnedIssue", n, sy.d0.n(yg.a));
+        a = new aa.q0("PinnedIssue", n, sy.d0Shadow.n(yg.a));
     }
 }

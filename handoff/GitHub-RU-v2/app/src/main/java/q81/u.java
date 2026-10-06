@@ -20,7 +20,7 @@ import javax.net.ssl.X509TrustManager;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u implements d, g0 {
-    public static final List E = r81.g.k(new v[]{v.w, v.u});
+    public static final List E = r81.g.k(new vShadow[]{v.w, v.u});
     public static final List F = r81.g.k(new i[]{i.e, i.f});
     public long A;
     public s21.a B;
@@ -260,7 +260,7 @@ public final class u implements d, g0 {
         List list = g91.f.x;
         k71.k.g(list, "protocols");
         ArrayList H0 = x61.m.H0(list);
-        v vVar = v.x;
+        vShadow vVar = v.x;
         if (!H0.contains(vVar) && !H0.contains(v.u)) {
             throw new IllegalArgumentException(("protocols must contain h2_prior_knowledge or http/1.1: " + H0).toString());
         }
@@ -287,7 +287,7 @@ public final class u implements d, g0 {
         s.w("Sec-WebSocket-Key", fVar.g);
         s.w("Sec-WebSocket-Version", "13");
         s.w("Sec-WebSocket-Extensions", "permessage-deflate");
-        androidx.lifecycle.b bVar2 = new androidx.lifecycle.b(s);
+        androidx.lifecycle.b bVar2 = new androidx.lifecycle.b(sShadow);
         u81.m mVar = new u81.m(uVar, bVar2, true);
         fVar.h = mVar;
         mVar.d(new e51.a(fVar, bVar2, false, 8));

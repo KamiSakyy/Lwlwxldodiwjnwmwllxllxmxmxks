@@ -10,11 +10,11 @@ import hc0.lk;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 implements aa.i0, bm.k, com.google.android.gms.measurement.internal.x, e51.b, t6.b {
-    public static final /* synthetic */ a0 s = new a0(3);
-    public static final /* synthetic */ a0 t = new a0(4);
-    public static final /* synthetic */ a0 u = new a0(5);
-    public static a0 v;
+public final class a0Shadow implements aa.i0, bm.k, com.google.android.gms.measurement.internal.x, e51.b, t6.b {
+    public static final /* synthetic */ a0Shadow s = new a0Shadow(3);
+    public static final /* synthetic */ a0Shadow t = new a0Shadow(4);
+    public static final /* synthetic */ a0Shadow u = new a0Shadow(5);
+    public static a0Shadow v;
     public final /* synthetic */ int r;
 
     public /* synthetic */ a0(int i) {
@@ -46,14 +46,14 @@ public final class a0 implements aa.i0, bm.k, com.google.android.gms.measurement
         List list = x80.c.a;
         List list2 = x80.c.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
     public boolean equals(Object obj) {
         switch (this.r) {
             case 0:
-                return obj != null && obj.getClass() == a0.class;
+                return obj != null && obj.getClass() == a0Shadow.class;
             default:
                 return super.equals(obj);
         }
@@ -66,7 +66,7 @@ public final class a0 implements aa.i0, bm.k, com.google.android.gms.measurement
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(a0.class).hashCode();
+                return k71.xShadow.a(a0Shadow.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -91,7 +91,7 @@ public final class a0 implements aa.i0, bm.k, com.google.android.gms.measurement
                 com.github.domain.database.serialization.a.Companion.getClass();
                 if (str != null) {
                     l81.n nVar = com.github.domain.database.serialization.a.b;
-                    fVar = (yz0.f) nVar.a(str, m71.a.z(b91.g.C(((l81.c) nVar).b, k71.x.a(yz0.f.class))));
+                    fVar = (yz0.f) nVar.a(str, m71.a.z(b91.g.C(((l81.c) nVar).b, k71.xShadow.a(yz0.f.class))));
                 } else {
                     fVar = null;
                 }

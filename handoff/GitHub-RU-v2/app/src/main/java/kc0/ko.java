@@ -63,7 +63,7 @@ public final class ko {
         o.append(", url=");
         o.append(this.d);
         o.append(", authorCanPushToRepository=");
-        jo.f4.B(", submittedAt=", ", pullRequest=", o, this.f, this.e);
+        jo.f4Shadow.B(", submittedAt=", ", pullRequest=", o, this.f, this.e);
         o.append(this.g);
         o.append(", author=");
         o.append(this.h);

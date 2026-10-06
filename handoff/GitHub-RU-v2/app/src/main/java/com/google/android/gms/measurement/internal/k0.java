@@ -89,7 +89,7 @@ public final class k0 extends e0 {
         A();
         long j4 = this.w;
         A();
-        c21.u.g(this.x);
+        c21.uShadow.g(this.x);
         String str7 = this.x;
         o1 o1Var2 = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         h hVar = o1Var2.u;
@@ -108,7 +108,7 @@ public final class k0 extends e0 {
             o1 o1Var3 = (o1) ((androidx.compose.foundation.lazy.layout.s0) t4Var).s;
             String packageName = context.getPackageName();
             t4Var.z();
-            c21.u.d(packageName);
+            c21.uShadow.d(packageName);
             PackageManager packageManager = context.getPackageManager();
             z = false;
             MessageDigest Q = t4.Q();
@@ -527,14 +527,14 @@ public final class k0 extends e0 {
 
     public final String F() {
         A();
-        c21.u.g(this.u);
+        c21.uShadow.g(this.u);
         return this.u;
     }
 
     public final String G() {
         z();
         A();
-        c21.u.g(this.F);
+        c21.uShadow.g(this.F);
         return this.F;
     }
 }

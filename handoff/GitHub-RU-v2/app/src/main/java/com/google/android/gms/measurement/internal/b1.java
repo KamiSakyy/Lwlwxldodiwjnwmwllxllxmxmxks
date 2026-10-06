@@ -98,8 +98,8 @@ public final class b1 {
 
     public /* synthetic */ b1(c1 c1Var, long j) {
         this.e = c1Var;
-        c21.u.d("health_monitor");
-        c21.u.b(j > 0);
+        c21.uShadow.d("health_monitor");
+        c21.uShadow.b(j > 0);
         this.b = "health_monitor:start";
         this.c = "health_monitor:count";
         this.d = "health_monitor:value";

@@ -9,11 +9,11 @@ import com.github.rudroid.utilities.ui.u0;
 import com.github.rudroid.utilities.w0;
 import com.github.service.models.response.issueorpullrequest.IssueType;
 import java.util.concurrent.CancellationException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import zk.w1;
 
@@ -78,13 +78,13 @@ public final class h extends k1 implements com.github.rudroid.utilities.viewmode
         this.B = (String) a1Var.a("KEY_ISSUE_ID");
         this.C = (d) h2.a(a1Var, "KEY_BOTTOM_SHEET_CONFIGURATION");
         P();
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.D = c10;
-        y1 c11 = n1.c(g1.a.a());
+        y1 c11 = n1Shadow.c(g1.a.a());
         this.E = c11;
-        y1 c12 = n1.c(issueType);
+        y1 c12 = n1Shadow.c(issueType);
         this.F = c12;
-        this.G = n1.G(n1.l(c10, c12, c11, new u(this, null)), d1.k(this), y71.q1.a(3), new u0((Object) null));
+        this.G = n1Shadow.G(n1Shadow.l(c10, c12, c11, new u(this, null)), d1.k(this), y71.q1.a(3), new u0((Object) null));
     }
 
     public final void P() {
@@ -96,12 +96,12 @@ public final class h extends k1 implements com.github.rudroid.utilities.viewmode
         if (q1Var2 != null) {
             q1Var2.m((CancellationException) null);
         }
-        this.H = b0.z(d1.k(this), (a71.h) null, (a0) null, new n(this, null), 3);
+        this.H = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new n(this, null), 3);
     }
 
     public final void Q() {
         if (this.B != null) {
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new q(this, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new q(this, null), 3);
         } else {
             w0.p(this.E, this.F.getValue());
         }

@@ -2,14 +2,14 @@ package vo;
 
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.b4;
 import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b3 implements aa.a {
     public static final b3 a = new b3();
-    public static final List b = sy.d0.o("id", "status", "conclusion", "workflowFilePath", "repository", "matchingPullRequests", "duration", "branch", "creator", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "status", "conclusion", "workflowFilePath", "repository", "matchingPullRequests", "duration", "branch", "creator", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002e, code lost:
     

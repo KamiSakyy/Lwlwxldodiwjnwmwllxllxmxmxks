@@ -28,7 +28,7 @@ import jo.j90;
 import jo.k90;
 import jo.m90;
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import kc0.me;
 import kc0.ne;
 import kc0.pe;
@@ -37,7 +37,7 @@ import kc0.re;
 import m10.x40;
 import oj0.b2;
 import oj0.e2;
-import qg.p;
+import qg.pShadow;
 import ri0.f0;
 import ri0.g;
 import ri0.g0;
@@ -75,7 +75,7 @@ import x01.i;
 import x6.y;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.e4;
 import yz0.n1;
 import yz0.o1;
@@ -149,7 +149,7 @@ public final /* synthetic */ class c implements j71.c {
         pe peVar4;
         int i = this.r;
         aa1.b bVar = aa.t0.d;
-        List list3 = r.r;
+        List list3 = rShadow.r;
         a0 a0Var = a0.a;
         int i2 = 0;
         switch (i) {
@@ -282,13 +282,13 @@ public final /* synthetic */ class c implements j71.c {
                 return a0Var;
             case 13:
                 c0 c0Var2 = (c0) obj;
-                float f = p.a;
+                float f = pShadow.a;
                 k.g(c0Var2, "$this$semantics");
                 z.b(c0Var2);
                 return a0Var;
             case 14:
                 c0 c0Var3 = (c0) obj;
-                float f2 = p.a;
+                float f2 = pShadow.a;
                 k.g(c0Var3, "$this$semantics");
                 z.b(c0Var3);
                 return a0Var;
@@ -428,10 +428,10 @@ public final /* synthetic */ class c implements j71.c {
                     m0 m0Var = p0Var.d;
                     ArrayList arrayList9 = S3;
                     String str22 = m0Var != null ? m0Var.a : null;
-                    if (str22 == null || t71.p.T(str22)) {
+                    if (str22 == null || t71.pShadow.T(str22)) {
                         String str23 = q0Var != null ? q0Var.a : null;
                         if (str23 != null) {
-                            if (!t71.p.T(str23)) {
+                            if (!t71.pShadow.T(str23)) {
                                 if (q0Var != null) {
                                     str2 = q0Var.a;
                                     break;
@@ -556,12 +556,12 @@ public final /* synthetic */ class c implements j71.c {
             case 26:
                 y yVar = (y) obj;
                 k.g(yVar, "$this$navigation");
-                yVar.j.add(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), x.a(RepositoriesRoute.class), rf.e.a, x.a(RepositoriesFragment.class)).a());
+                yVar.j.add(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), xShadow.a(RepositoriesRoute.class), rf.e.a, xShadow.a(RepositoriesFragment.class)).a());
                 return a0Var;
             case 27:
                 y yVar2 = (y) obj;
                 k.g(yVar2, "$this$navigation");
-                yVar2.j.add(new z6.i(com.github.rudroid.m0.r(yVar2.g, z6.e.class), x.a(DefaultRepositoryDetailRoute.class), rf.a.a, x.a(RepositoryDetailFragment.class)).a());
+                yVar2.j.add(new z6.i(com.github.rudroid.m0.r(yVar2.g, z6.e.class), xShadow.a(DefaultRepositoryDetailRoute.class), rf.a.a, xShadow.a(RepositoryDetailFragment.class)).a());
                 rf.g.b(yVar2);
                 return a0Var;
             case 28:

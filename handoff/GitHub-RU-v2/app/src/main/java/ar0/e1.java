@@ -14,7 +14,7 @@ public final class e1 implements aa.i0 {
         List list = br0.f.a;
         List list2 = br0.f.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -23,11 +23,11 @@ public final class e1 implements aa.i0 {
     }
 
     public final aa.p0 g() {
-        return aa.c.c(f1.a, false);
+        return aa.c.c(f1Shadow.a, false);
     }
 
     public final int hashCode() {
-        return k71.x.a(e1.class).hashCode();
+        return k71.xShadow.a(e1.class).hashCode();
     }
 
     public final void o(ea.f fVar, aa.w wVar, boolean z) {

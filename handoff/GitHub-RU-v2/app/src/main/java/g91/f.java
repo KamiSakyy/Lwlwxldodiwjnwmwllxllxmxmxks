@@ -14,13 +14,13 @@ import k71.w;
 import q81.a0;
 import q81.h0;
 import q81.n;
-import q81.v;
-import sy.d0;
+import q81.vShadow;
+import sy.d0Shadow;
 import u81.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f implements h0, h {
-    public static final List x = d0.n(v.u);
+    public static final List x = d0Shadow.n(vShadow.u);
     public com.google.common.util.concurrent.a a;
     public Random b;
     public long c;
@@ -62,7 +62,7 @@ public final class f implements h0, h {
         if (!"GET".equals(str)) {
             throw new IllegalArgumentException(f1.e.g("Request must be GET: ", str).toString());
         }
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         byte[] bArr = new byte[16];
         random.nextBytes(bArr);
         this.g = c30.d.f(bArr).a();
@@ -132,7 +132,7 @@ public final class f implements h0, h {
         }
         String a3 = nVar.a("Sec-WebSocket-Accept");
         String str = a3 != null ? a3 : null;
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         String a4 = c30.d.b(this.g + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11").c("SHA-1").a();
         if (k.b(a4, str)) {
             j0 j0Var = a0Var.y;
@@ -148,7 +148,7 @@ public final class f implements h0, h {
         String str2;
         long j = this.f;
         synchronized (this) {
-            h91.k kVar = null;
+            h91.kShadow kVar = null;
             try {
                 if (i < 1000 || i >= 5000) {
                     str2 = "Code must be in range [1000,5000): " + i;
@@ -161,7 +161,7 @@ public final class f implements h0, h {
                     throw new IllegalArgumentException(str2.toString());
                 }
                 if (str != null) {
-                    h91.k kVar2 = h91.k.u;
+                    h91.kShadow kVar2 = h91.kShadow.u;
                     kVar = c30.d.b(str);
                     if (kVar.r.length > 123) {
                         throw new IllegalArgumentException("reason.size() > 123: ".concat(str).toString());
@@ -223,7 +223,7 @@ public final class f implements h0, h {
         }
     }
 
-    public final synchronized boolean f(int i, h91.k kVar) {
+    public final synchronized boolean f(int i, h91.kShadow kVar) {
         if (!this.u && !this.r) {
             if (this.q + kVar.d() > 16777216) {
                 b(null, 1001);
@@ -238,7 +238,7 @@ public final class f implements h0, h {
     }
 
     public final boolean g(String str) {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         return f(1, c30.d.b(str));
     }
 
@@ -309,7 +309,7 @@ public final class f implements h0, h {
                 try {
                     if (poll != null) {
                         k.d(jVar2);
-                        jVar2.f(10, (h91.k) poll);
+                        jVar2.f(10, (h91.kShadow) poll);
                     } else if (dVar instanceof d) {
                         k.d(jVar2);
                         jVar2.m(dVar.a, dVar.b);
@@ -322,8 +322,8 @@ public final class f implements h0, h {
                         }
                         k.d(jVar2);
                         int i3 = dVar.a;
-                        h91.k kVar = ((c) dVar).b;
-                        h91.k kVar2 = h91.k.u;
+                        h91.kShadow kVar = ((c) dVar).b;
+                        h91.kShadow kVar2 = h91.kShadow.u;
                         if (i3 >= 1000 && i3 < 5000) {
                             if (1004 <= i3) {
                                 if (i3 < 1007) {

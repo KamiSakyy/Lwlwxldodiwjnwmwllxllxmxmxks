@@ -11,7 +11,7 @@ import java.util.ListIterator;
 import java.util.RandomAccess;
 import k71.k;
 import sy.a0;
-import sy.p;
+import sy.pShadow;
 import v1.v;
 import x61.l;
 
@@ -317,7 +317,7 @@ public final class a extends x61.g implements RandomAccess, Serializable {
     @Override // java.util.AbstractCollection
     public final String toString() {
         g();
-        return p.a(this.r, this.s, this.t, this);
+        return pShadow.a(this.r, this.s, this.t, this);
     }
 
     @Override // java.util.AbstractList, java.util.List

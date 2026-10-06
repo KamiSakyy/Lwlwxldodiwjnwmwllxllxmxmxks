@@ -7,10 +7,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import sy.f0;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
@@ -43,7 +43,7 @@ public final class e {
             String str = (String) it.next();
             Collection collection = (List) concurrentHashMap.get(str);
             if (collection == null) {
-                collection = r.r;
+                collection = rShadow.r;
             }
             concurrentHashMap.put(str, m.m0(collection, Long.valueOf(currentTimeMillis)));
         }
@@ -56,7 +56,7 @@ public final class e {
                 Iterator it2 = list.iterator();
                 while (it2.hasNext()) {
                     if (((Number) it2.next()).longValue() > currentTimeMillis - j && (i = i + 1) < 0) {
-                        d0.w();
+                        d0Shadow.w();
                         throw null;
                     }
                 }

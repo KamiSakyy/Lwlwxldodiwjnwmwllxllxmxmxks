@@ -2,10 +2,10 @@ package com.github.rudroid.searchandfilter.newflags;
 
 import com.github.commonandroid.featureflag.RuntimeFeatureFlag;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import w61.a0;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g<T> implements y71.j {
@@ -40,16 +40,16 @@ public final class g<T> implements y71.j {
                         ei.c cVar2 = ei.c.P;
                         runtimeFeatureFlag.getClass();
                         if (RuntimeFeatureFlag.a(cVar2)) {
-                            list = d0.n(bm.l.d0);
+                            list = d0Shadow.n(bm.l.d0);
                             fVar.v = 1;
-                            if (this.r.c(list, fVar) == aVar) {
+                            if (this.rShadow.c(list, fVar) == aVar) {
                                 return aVar;
                             }
                         }
                     }
-                    list = r.r;
+                    list = rShadow.r;
                     fVar.v = 1;
-                    if (this.r.c(list, fVar) == aVar) {
+                    if (this.rShadow.c(list, fVar) == aVar) {
                     }
                 } else {
                     if (i != 1) {

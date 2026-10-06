@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z7 implements aaShadow.a {
     public static final z7 a = new z7();
-    public static final List b = sy.d0.o("link", "linkType");
+    public static final List b = sy.d0Shadow.o("link", "linkType");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

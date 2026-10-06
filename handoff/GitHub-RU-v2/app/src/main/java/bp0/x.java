@@ -23,7 +23,7 @@ public abstract class x {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         aa.x xVar2 = td.a;
@@ -39,7 +39,7 @@ public abstract class x {
         w80.Companion.getClass();
         List r3 = x61.l.r(new aa.m[]{mVar4, new aa.m("nodes", l0.a(w80.W), (String) null, rVar, rVar, r2)});
         aa.s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Repository");
+        List n = sy.d0Shadow.n("Repository");
         List list2 = a0.a;
         List r4 = x61.l.r(new aa.s[]{mVar5, no.a.c(list2, "selections", "Repository", n, list2), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r5 = x61.l.r(new aa.m[]{new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("url", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});

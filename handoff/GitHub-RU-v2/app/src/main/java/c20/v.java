@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements aa.a {
     public static final v a = new v();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -17,14 +17,14 @@ public final class v implements aa.a {
         eVar.s0();
         g20.a c = g20.b.c(eVar, wVar);
         if (str != null) {
-            return new b20.a0(str, c);
+            return new b20.a0Shadow(str, c);
         }
         k41.b.B(eVar, "__typename");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        b20.a0 a0Var = (b20.a0) obj;
+        b20.a0Shadow a0Var = (b20.a0Shadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(a0Var, "value");

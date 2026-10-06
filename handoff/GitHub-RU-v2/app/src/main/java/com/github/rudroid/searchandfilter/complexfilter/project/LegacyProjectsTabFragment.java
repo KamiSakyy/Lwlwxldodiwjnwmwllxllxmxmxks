@@ -13,7 +13,7 @@ import kotlin.NoWhenBranchMatchedException;
 public final class LegacyProjectsTabFragment extends Hilt_LegacyProjectsTabFragment<t0> {
     public static final a Companion = new a();
     public final int E0 = 2131558455;
-    public final List F0 = sy.d0.o(c.b.b, c.a.b);
+    public final List F0 = sy.d0Shadow.o(c.b.b, c.a.b);
 
     public static final class a {
     }

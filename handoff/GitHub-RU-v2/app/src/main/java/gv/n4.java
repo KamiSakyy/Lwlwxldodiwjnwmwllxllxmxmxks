@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n4 implements aa.a {
     public static final n4 a = new n4();
-    public static final List b = sy.d0.o("hasPreviousPage", "startCursor", "hasNextPage", "endCursor");
+    public static final List b = sy.d0Shadow.o("hasPreviousPage", "startCursor", "hasNextPage", "endCursor");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -48,11 +48,11 @@ public final class n4 implements aa.a {
         k71.k.g(j4Var, "value");
         fVar.z0("hasPreviousPage");
         aa.b bVar = aa.c.f;
-        jo.f4.C(j4Var.a, bVar, fVar, wVar, "startCursor");
+        jo.f4Shadow.C(j4Var.a, bVar, fVar, wVar, "startCursor");
         aa.o0 o0Var = aa.c.i;
         o0Var.b(fVar, wVar, j4Var.b);
         fVar.z0("hasNextPage");
-        jo.f4.C(j4Var.c, bVar, fVar, wVar, "endCursor");
+        jo.f4Shadow.C(j4Var.c, bVar, fVar, wVar, "endCursor");
         o0Var.b(fVar, wVar, j4Var.d);
     }
 }

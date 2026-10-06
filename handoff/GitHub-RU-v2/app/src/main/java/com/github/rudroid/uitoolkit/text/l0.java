@@ -248,16 +248,16 @@ public final class l0 {
                     } else {
                         sVar.q0();
                     }
-                    v2.e eVar5 = v2.g.f;
+                    v2.eShadow eVar5 = v2.g.f;
                     androidx.compose.runtime.t.I(sVar, eVar5, a);
-                    v2.e eVar6 = v2.g.e;
+                    v2.eShadow eVar6 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar, eVar6, l);
                     Integer valueOf = Integer.valueOf(hashCode);
-                    v2.e eVar7 = v2.g.g;
+                    v2.eShadow eVar7 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar, valueOf, eVar7);
                     v2.d dVar = v2.g.h;
                     androidx.compose.runtime.t.E(sVar, dVar);
-                    v2.e eVar8 = v2.g.d;
+                    v2.eShadow eVar8 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar, eVar8, c);
                     w1.r rVar3 = w1.o.a;
                     j71.e eVar9 = eVar3;

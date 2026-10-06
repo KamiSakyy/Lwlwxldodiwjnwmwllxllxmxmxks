@@ -14,7 +14,7 @@ import m10.id0;
 import m10.vp;
 import m10.wg;
 import m10.wh;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -24,7 +24,7 @@ public abstract class l {
     static {
         ah.Companion.getClass();
         r b = l0.b(ah.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         wg.Companion.getClass();
         x xVar = wg.a;
@@ -35,11 +35,11 @@ public abstract class l {
         wh.Companion.getClass();
         q0 q0Var = wh.B;
         k71.k.g(q0Var, "type");
-        List n = d0.n(new m("issue", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("issue", q0Var, (String) null, rVar, rVar, r));
         id0.Companion.getClass();
         q0 q0Var2 = id0.a;
         k71.k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = d0.n(new m("unpinIssue", q0Var2, (String) null, rVar, no.a.s(vp.b1, new u0(s0.p("issueId", new t("issueId")))), n));
+        a = d0Shadow.n(new m("unpinIssue", q0Var2, (String) null, rVar, no.a.s(vp.b1, new u0(s0.p("issueId", new t("issueId")))), n));
     }
 }

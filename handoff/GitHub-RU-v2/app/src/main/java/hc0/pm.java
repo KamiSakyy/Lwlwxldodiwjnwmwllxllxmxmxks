@@ -23,7 +23,7 @@ public abstract class pm {
     public static final aa.q0 r;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         r = new aa.q0("Query", rVar, rVar);
     }
 }

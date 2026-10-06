@@ -7,7 +7,7 @@ public abstract class og {
     public static final ng Companion = new ng();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         l.Companion.getClass();
         aa.j0 j0Var = l.a;
         wk.Companion.getClass();

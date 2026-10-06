@@ -4,7 +4,7 @@ import aa.t0;
 import aa.u0;
 import com.github.service.models.response.NotificationReasonState;
 import com.github.service.wrapper.j;
-import in.r;
+import in.rShadow;
 import java.util.ArrayList;
 import java.util.List;
 import jn0.bk;
@@ -27,17 +27,17 @@ import ox0.r0;
 import pz0.gl;
 import pz0.kl;
 import pz0.pl;
-import sy.d0;
+import sy.d0Shadow;
 import v71.v;
 import x61.n;
 import y00.l;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements a11.a, yf0 {
     public static final a Companion = new a();
-    public static final List t = d0.o(new String[]{"Commit", "Gist", "DiscussionPost", "CheckSuite", "Issue", "PullRequest", "Release", "RepositoryInvitation", "RepositoryVulnerabilityAlert", "Discussion", "RepositoryDependabotAlertsThread", "SecurityAdvisory", "Actions::WorkflowRun"});
+    public static final List t = d0Shadow.o(new String[]{"Commit", "Gist", "DiscussionPost", "CheckSuite", "Issue", "PullRequest", "Release", "RepositoryInvitation", "RepositoryVulnerabilityAlert", "Discussion", "RepositoryDependabotAlertsThread", "SecurityAdvisory", "Actions::WorkflowRun"});
     public j r;
     public v s;
 
@@ -51,43 +51,43 @@ public final class g implements a11.a, yf0 {
     @Override // a11.a
     public final i a(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new tj(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new tj(str)))), this.s);
     }
 
     @Override // a11.a
     public final i b(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new pj(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new pj(str)))), this.s);
     }
 
     @Override // a11.a
     public final i c(List list) {
         k.g(list, "id");
-        return n1.y(r.l(r.h(this.r.d(new vk(list)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new vk(list)))), this.s);
     }
 
     @Override // a11.a
     public final i d(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new fk(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new fk(str)))), this.s);
     }
 
     @Override // a11.a
     public final i e(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new jk(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new jk(str)))), this.s);
     }
 
     @Override // a11.a
     public final i f(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new nk(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new nk(str)))), this.s);
     }
 
     @Override // a11.a
     public final i g(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new xj(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new xj(str)))), this.s);
     }
 
     public final Object h() {
@@ -97,30 +97,30 @@ public final class g implements a11.a, yf0 {
     @Override // a11.a
     public final i i(List list) {
         k.g(list, "id");
-        return n1.y(r.l(r.h(this.r.d(new rk(list)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new rk(list)))), this.s);
     }
 
     @Override // a11.a
     public final i j(List list) {
         k.g(list, "id");
-        return n1.y(r.l(r.h(this.r.d(new zk(list)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new zk(list)))), this.s);
     }
 
     @Override // a11.a
     public final i k() {
-        return n1.y(new c(new l(com.github.service.wrapper.a.o(this.r, new a1(), null, false, null, null, 58), 10), 2), this.s);
+        return n1Shadow.y(new c(new l(com.github.service.wrapper.a.o(this.r, new a1(), null, false, null, null, 58), 10), 2), this.s);
     }
 
     @Override // a11.a
     public final i l(List list) {
         k.g(list, "id");
-        return n1.y(r.l(r.h(this.r.d(new dl(list)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new dl(list)))), this.s);
     }
 
     @Override // a11.a
     public final i m(String str, String str2) {
         k.g(str2, "query");
-        return n1.y(new c(new l(com.github.service.wrapper.a.o(this.r, new r0(new u0(str), t0.d, new u0(str2)), null, false, null, null, 58), 10), 1), this.s);
+        return n1Shadow.y(new c(new l(com.github.service.wrapper.a.o(this.r, new r0(new u0(str), t0.d, new u0(str2)), null, false, null, null, 58), 10), 1), this.s);
     }
 
     @Override // a11.a
@@ -128,7 +128,7 @@ public final class g implements a11.a, yf0 {
         ArrayList arrayList2;
         gl glVar;
         u0 u0Var = new u0((Object) null);
-        u0 u0Var2 = new u0(d0.n(kl.s));
+        u0 u0Var2 = new u0(d0Shadow.n(kl.s));
         if (arrayList != null) {
             arrayList2 = new ArrayList(n.F(arrayList, 10));
             int size = arrayList.size();
@@ -200,17 +200,17 @@ public final class g implements a11.a, yf0 {
         }
         u0 u0Var3 = new u0(arrayList2);
         List list = t;
-        return n1.y(new c(new l(com.github.service.wrapper.a.o(this.r, new r0(u0Var, new u0(new pl(u0Var3, u0Var2, list == null ? t0.d : new u0(list))), new u0((Object) null)), null, false, null, null, 58), 10), 0), this.s);
+        return n1Shadow.y(new c(new l(com.github.service.wrapper.a.o(this.r, new r0(u0Var, new u0(new pl(u0Var3, u0Var2, list == null ? t0.d : new u0(list))), new u0((Object) null)), null, false, null, null, 58), 10), 0), this.s);
     }
 
     @Override // a11.a
     public final i o() {
-        return n1.y(new c(new l(com.github.service.wrapper.a.o(this.r, new h1(), null, false, null, null, 58), 10), 3), this.s);
+        return n1Shadow.y(new c(new l(com.github.service.wrapper.a.o(this.r, new h1(), null, false, null, null, 58), 10), 3), this.s);
     }
 
     @Override // a11.a
     public final i p(String str) {
         k.g(str, "id");
-        return n1.y(r.l(r.h(this.r.d(new bk(str)))), this.s);
+        return n1Shadow.y(rShadow.l(rShadow.h(this.rShadow.d(new bk(str)))), this.s);
     }
 }

@@ -104,7 +104,7 @@ public final /* synthetic */ class b implements j71.e {
                     };
                     sVar3.n0(aVar4);
                     obj3 = aVar4;
-                    qg.p.b(null, 0L, (j71.a) obj3, 0, 0, 0.0f, 0.0f, null, u.a, sVar3, 100663296, 251);
+                    qg.pShadow.b(null, 0L, (j71.a) obj3, 0, 0, 0.0f, 0.0f, null, u.a, sVar3, 100663296, 251);
                     break;
                 }
         }

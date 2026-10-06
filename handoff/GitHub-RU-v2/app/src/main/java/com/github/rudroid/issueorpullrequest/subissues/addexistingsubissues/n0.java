@@ -5,7 +5,7 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import zk.h1;
 
@@ -55,10 +55,10 @@ public final class n0 extends k1 implements com.github.rudroid.utilities.viewmod
         this.f15972w = (String) h2.a(a1Var, "EXTRA_PARENT_ISSUE_ID");
         this.f15973x = ((Number) h2.a(a1Var, "EXTRA_PARENT_ISSUE_NUMBER")).intValue();
         g1.Companion.getClass();
-        y1 c10 = n1.c(g1.a.a());
+        y1 c10 = n1Shadow.c(g1.a.a());
         this.f15974y = c10;
         this.f15975z = new i1(c10);
-        y1 c11 = n1.c((Object) null);
+        y1 c11 = n1Shadow.c((Object) null);
         this.A = c11;
         this.B = new i1(c11);
     }

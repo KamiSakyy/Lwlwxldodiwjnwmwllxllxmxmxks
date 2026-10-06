@@ -3,7 +3,7 @@ package wf;
 import androidx.lifecycle.o1;
 import androidx.lifecycle.t1;
 import com.github.rudroid.searchandfilter.filter.sort.FilterSortBottomSheetDialog;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -23,7 +23,7 @@ public final /* synthetic */ class c implements j71.a {
             case 0:
                 int i2 = 1;
                 if (((Boolean) filterSortBottomSheetDialog.W0.a(filterSortBottomSheetDialog, FilterSortBottomSheetDialog.Y0[1])).booleanValue()) {
-                    k71.e a = x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     FilterSortBottomSheetDialog.b bVar = new FilterSortBottomSheetDialog.b(filterSortBottomSheetDialog);
                     FilterSortBottomSheetDialog.c cVar = new FilterSortBottomSheetDialog.c(filterSortBottomSheetDialog);
                     FilterSortBottomSheetDialog.d dVar = new FilterSortBottomSheetDialog.d(filterSortBottomSheetDialog);
@@ -41,7 +41,7 @@ public final /* synthetic */ class c implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = w.s(w61.i.s, new FilterSortBottomSheetDialog.e(new c(filterSortBottomSheetDialog, i2)));
-                k71.e a2 = x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 FilterSortBottomSheetDialog.f fVar = new FilterSortBottomSheetDialog.f(s);
                 FilterSortBottomSheetDialog.g gVar = new FilterSortBottomSheetDialog.g(s);
                 FilterSortBottomSheetDialog.h hVar = new FilterSortBottomSheetDialog.h(filterSortBottomSheetDialog, s);

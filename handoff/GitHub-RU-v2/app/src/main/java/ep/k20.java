@@ -8,7 +8,7 @@ import jo.rj0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k20 implements aaShadow.a {
     public static final k20 a = new k20();
-    public static final List b = sy.d0.o("allowableStatus", "mergeMethods", "name");
+    public static final List b = sy.d0Shadow.o("allowableStatus", "mergeMethods", "name");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

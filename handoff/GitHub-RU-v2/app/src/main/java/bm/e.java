@@ -46,7 +46,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import kotlin.NoWhenBranchMatchedException;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
@@ -65,7 +65,7 @@ public final class e {
         y61.b i2 = d0.i();
         i2.add(new DiscussionStatusFilter());
         i2.add(new AuthorFilter(null));
-        i2.add(new DiscussionCategoryFilter(discussionCategoryData != null ? d0.n(discussionCategoryData) : x61.r.r));
+        i2.add(new DiscussionCategoryFilter(discussionCategoryData != null ? d0.n(discussionCategoryData) : x61.rShadow.r));
         i2.add(new LabelFilter());
         i2.add(new DiscussionsIsUnansweredFilter(false));
         i2.add(new Separator());
@@ -160,7 +160,7 @@ public final class e {
         List<com.github.domain.searchandfilter.filters.data.d> r0 = x61.m.r0(arrayList);
         ArrayList arrayList3 = new ArrayList(x61.n.F(r0, 10));
         for (com.github.domain.searchandfilter.filters.data.d dVar : r0) {
-            com.github.domain.searchandfilter.filters.data.d j2 = dVar.j(H0, true);
+            com.github.domain.searchandfilter.filters.data.dShadow j2 = dVar.j(H0, true);
             if (j2 != null) {
                 dVar = j2;
             }

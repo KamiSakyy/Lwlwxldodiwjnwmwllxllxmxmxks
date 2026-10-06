@@ -62,7 +62,7 @@ public class l extends j0 implements k, c71.d, a2 {
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = a81.f.y;
             loop0: while (true) {
                 Object obj = atomicReferenceFieldUpdater.get(fVar);
-                a81.t tVar = a81.b.c;
+                a81.t tVar = a81.bShadow.c;
                 if (obj == tVar) {
                     while (!atomicReferenceFieldUpdater.compareAndSet(fVar, tVar, this)) {
                         if (atomicReferenceFieldUpdater.get(fVar) != tVar) {
@@ -313,8 +313,8 @@ public class l extends j0 implements k, c71.d, a2 {
                         a81.f fVar = (a81.f) cVar;
                         v vVar = fVar.u;
                         a71.h q = fVar.v.q();
-                        if (a81.b.j(vVar, q)) {
-                            a81.b.i(vVar, q, this);
+                        if (a81.bShadow.j(vVar, q)) {
+                            a81.bShadow.i(vVar, q, this);
                             return;
                         }
                         v0 a = t1.a();

@@ -19,7 +19,7 @@ import java.util.Objects;
 import kotlin.KotlinNothingValueException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class x0 {
+public abstract class x0Shadow {
     public static final Type[] a = new Type[0];
     public static boolean b = true;
     public static Constructor c;

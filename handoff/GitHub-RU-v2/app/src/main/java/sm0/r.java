@@ -23,14 +23,14 @@ import yf0.v;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public static final b Companion = new b();
-    public com.github.service.wrapper.b a;
+    public static final bShadow Companion = new bShadow();
+    public com.github.service.wrapper.bShadow a;
     public String b;
-    public a00.b c;
-    public a00.b d;
-    public a00.b e;
+    public a00.bShadow c;
+    public a00.bShadow d;
+    public a00.bShadow e;
 
-    public r(com.github.service.wrapper.b bVar, String str, a00.b bVar2, a00.b bVar3, a00.b bVar4) {
+    public r(com.github.service.wrapper.bShadow bVar, String str, a00.bShadow bVar2, a00.bShadow bVar3, a00.bShadow bVar4) {
         k71.k.g(bVar, "cachedClient");
         k71.k.g(str, "userLogin");
         this.a = bVar;
@@ -195,12 +195,12 @@ public final class r {
         d dVar;
         int i;
         String str3;
-        yf0.b bVar;
+        yf0.bShadow bVar;
         String str4;
         String str5;
         c1 c1Var;
         String str6;
-        yf0.b bVar2;
+        yf0.bShadow bVar2;
         yf0.a aVar;
         Boolean valueOf;
         Integer num;
@@ -231,7 +231,7 @@ public final class r {
                 Object obj = dVar2.E;
                 b71.a aVar2 = b71.a.r;
                 i = dVar2.G;
-                com.github.service.wrapper.b bVar3 = this.a;
+                com.github.service.wrapper.bShadow bVar3 = this.a;
                 j71.c cVar6 = null;
                 if (i != 0) {
                     y.j(obj);
@@ -256,7 +256,7 @@ public final class r {
                             String str14 = c1Var != null ? c1Var.c.b : null;
                             str7 = c1Var != null ? c1Var.c.c.b : null;
                             if (valueOf != null || num == null || str14 == null || str7 == null) {
-                                return x61.r.r;
+                                return x61.rShadow.r;
                             }
                             if (str3 == null) {
                                 str8 = str14;
@@ -442,7 +442,7 @@ public final class r {
                     }
                     if (valueOf != null) {
                     }
-                    return x61.r.r;
+                    return x61.rShadow.r;
                 }
                 e1 e1Var = new e1();
                 dVar2.u = str13;
@@ -468,7 +468,7 @@ public final class r {
                     }
                     if (valueOf != null) {
                     }
-                    return x61.r.r;
+                    return x61.rShadow.r;
                 }
                 return aVar2;
             }
@@ -478,7 +478,7 @@ public final class r {
         Object obj2 = dVar22.E;
         b71.a aVar22 = b71.a.r;
         i = dVar22.G;
-        com.github.service.wrapper.b bVar32 = this.a;
+        com.github.service.wrapper.bShadow bVar32 = this.a;
         j71.c cVar62 = null;
         if (i != 0) {
         }
@@ -513,7 +513,7 @@ public final class r {
                 Object obj2 = eVar2.z;
                 b71.a aVar = b71.a.r;
                 i2 = eVar2.B;
-                a00.b bVar = this.e;
+                a00.bShadow bVar = this.e;
                 if (i2 != 0) {
                     y.j(obj2);
                     id0.h hVar = new id0.h(str2, i3);
@@ -566,7 +566,7 @@ public final class r {
         Object obj22 = eVar22.z;
         b71.a aVar4 = b71.a.r;
         i2 = eVar22.B;
-        a00.b bVar2 = this.e;
+        a00.bShadow bVar2 = this.e;
         if (i2 != 0) {
         }
         int i52 = i3;
@@ -620,7 +620,7 @@ public final class r {
                 Object obj = gVar2.x;
                 b71.a aVar = b71.a.r;
                 i = gVar2.z;
-                a00.b bVar = this.c;
+                a00.bShadow bVar = this.c;
                 if (i != 0) {
                     y.j(obj);
                     fVar = new id0.f(str);
@@ -759,7 +759,7 @@ public final class r {
         Object obj4 = gVar22.x;
         b71.a aVar2 = b71.a.r;
         i = gVar22.z;
-        a00.b bVar2 = this.c;
+        a00.bShadow bVar2 = this.c;
         if (i != 0) {
         }
         id0.f fVar22 = fVar;
@@ -795,7 +795,7 @@ public final class r {
                 Object obj2 = iVar2.A;
                 b71.a aVar = b71.a.r;
                 i2 = iVar2.C;
-                a00.b bVar = this.d;
+                a00.bShadow bVar = this.d;
                 if (i2 != 0) {
                     y.j(obj2);
                     id0.g gVar = new id0.g(str2, i, str3);
@@ -854,7 +854,7 @@ public final class r {
         Object obj22 = iVar22.A;
         b71.a aVar4 = b71.a.r;
         i2 = iVar22.C;
-        a00.b bVar2 = this.d;
+        a00.bShadow bVar2 = this.d;
         if (i2 != 0) {
         }
         j jVar22 = new j((ua) obj, this, str5, str6, i3, null, 0);
@@ -914,7 +914,7 @@ public final class r {
                     str2 = kVar.u;
                     y.j(obj);
                 }
-                ag0.b bVar = (ag0.b) obj;
+                ag0.bShadow bVar = (ag0.b) obj;
                 iVar = (bVar != null || (aVar = bVar.b) == null) ? null : aVar.c;
                 if (iVar == null) {
                     ag0.h hVar2 = iVar.f;
@@ -967,7 +967,7 @@ public final class r {
         i = kVar.x;
         if (i != 0) {
         }
-        ag0.b bVar2 = (ag0.b) obj2;
+        ag0.bShadow bVar2 = (ag0.b) obj2;
         if (bVar2 != null) {
         }
         if (iVar == null) {
@@ -1069,7 +1069,7 @@ public final class r {
                 Object obj = lVar2.F;
                 b71.a aVar2 = b71.a.r;
                 i = lVar2.H;
-                com.github.service.wrapper.b bVar = this.a;
+                com.github.service.wrapper.bShadow bVar = this.a;
                 switch (i) {
                     case 0:
                         y.j(obj);
@@ -1086,7 +1086,7 @@ public final class r {
                         y.j(obj);
                         str3 = str19;
                         str18 = str20;
-                        yf0.b bVar2 = (yf0.b) obj;
+                        yf0.bShadow bVar2 = (yf0.b) obj;
                         str4 = (bVar2 == null || (aVar = bVar2.c) == null) ? null : aVar.a;
                         if (str4 != null) {
                             e1 e1Var = new e1();
@@ -1168,7 +1168,7 @@ public final class r {
                                         i2 = 2;
                                         s00.Companion.getClass();
                                         String str22 = ((aa.q) s00.P).a;
-                                        uf0.b bVar3 = new uf0.b(str22, this.b, new bl0.a("", str22));
+                                        uf0.bShadow bVar3 = new uf0.b(str22, this.b, new bl0.a("", str22));
                                         i9.Companion.getClass();
                                         String str23 = ((aa.q) i9.c).a;
                                         uf0.a aVar3 = new uf0.a(str10, str7 != null ? new uf0.c(str7, str23) : null, str23);
@@ -1390,7 +1390,7 @@ public final class r {
         Object obj2 = lVar22.F;
         b71.a aVar22 = b71.a.r;
         i = lVar22.H;
-        com.github.service.wrapper.b bVar4 = this.a;
+        com.github.service.wrapper.bShadow bVar4 = this.a;
         switch (i) {
         }
     }
@@ -1471,7 +1471,7 @@ public final class r {
                 Object obj = nVar2.E;
                 b71.a aVar2 = b71.a.r;
                 i = nVar2.G;
-                com.github.service.wrapper.b bVar = this.a;
+                com.github.service.wrapper.bShadow bVar = this.a;
                 j71.c cVar8 = null;
                 switch (i) {
                     case 0:
@@ -1485,7 +1485,7 @@ public final class r {
                     case 1:
                         str3 = nVar2.u;
                         y.j(obj);
-                        yf0.b bVar2 = (yf0.b) obj;
+                        yf0.bShadow bVar2 = (yf0.b) obj;
                         str4 = (bVar2 == null || (aVar = bVar2.c) == null) ? null : aVar.a;
                         if (str4 != null) {
                             uf0.f fVar = new uf0.f();
@@ -1732,7 +1732,7 @@ public final class r {
         Object obj2 = nVar22.E;
         b71.a aVar22 = b71.a.r;
         i = nVar22.G;
-        com.github.service.wrapper.b bVar3 = this.a;
+        com.github.service.wrapper.bShadow bVar3 = this.a;
         j71.c cVar82 = null;
         switch (i) {
         }
@@ -1761,7 +1761,7 @@ public final class r {
                 Object obj2 = oVar2.y;
                 b71.a aVar = b71.a.r;
                 i2 = oVar2.A;
-                a00.b bVar = this.e;
+                a00.bShadow bVar = this.e;
                 if (i2 != 0) {
                     y.j(obj2);
                     id0.h hVar = new id0.h(str2, i);
@@ -1810,7 +1810,7 @@ public final class r {
         Object obj22 = oVar22.y;
         b71.a aVar3 = b71.a.r;
         i2 = oVar22.A;
-        a00.b bVar2 = this.e;
+        a00.bShadow bVar2 = this.e;
         if (i2 != 0) {
         }
         f fVar22 = new f((fm) obj, this, str4, i3, null, 1);
@@ -1851,7 +1851,7 @@ public final class r {
                 Object obj = pVar2.x;
                 b71.a aVar = b71.a.r;
                 i = pVar2.z;
-                a00.b bVar = this.c;
+                a00.bShadow bVar = this.c;
                 if (i != 0) {
                     y.j(obj);
                     fVar = new id0.f(str);
@@ -1893,7 +1893,7 @@ public final class r {
                                 arrayList = new ArrayList(x61.n.F(list, 10));
                                 for (yf0.a0 a0Var2 : list) {
                                     if (a0Var2 != null) {
-                                        b bVar2 = Companion;
+                                        bShadow bVar2 = Companion;
                                         v vVar = a0Var2.c;
                                         bVar2.getClass();
                                         a0Var = yf0.a0.a(a0Var2, b.d(vVar, str3));
@@ -1930,7 +1930,7 @@ public final class r {
         Object obj2 = pVar22.x;
         b71.a aVar2 = b71.a.r;
         i = pVar22.z;
-        a00.b bVar3 = this.c;
+        a00.bShadow bVar3 = this.c;
         if (i != 0) {
         }
         id0.f fVar22 = fVar;
@@ -1964,7 +1964,7 @@ public final class r {
                 Object obj = qVar2.z;
                 b71.a aVar = b71.a.r;
                 i2 = qVar2.B;
-                a00.b bVar = this.d;
+                a00.bShadow bVar = this.d;
                 if (i2 != 0) {
                     y.j(obj);
                     id0.g gVar = new id0.g(str2, i, str6);
@@ -2015,7 +2015,7 @@ public final class r {
         Object obj3 = qVar22.z;
         b71.a aVar3 = b71.a.r;
         i2 = qVar22.B;
-        a00.b bVar2 = this.d;
+        a00.bShadow bVar2 = this.d;
         if (i2 != 0) {
         }
         Object obj22 = obj3;

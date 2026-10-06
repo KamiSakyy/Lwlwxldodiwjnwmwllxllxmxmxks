@@ -31,7 +31,7 @@ public abstract class v {
         td.Companion.getClass();
         aa.x xVar = td.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         aa.x xVar2 = xd.a;
@@ -84,7 +84,7 @@ public abstract class v {
         aa.m mVar17 = new aa.m("checkSuite", v8.l0.b(pz0.k3.f), (String) null, rVar, rVar, r8);
         aa.r b3 = v8.l0.b(xVar4);
         pz0.a3.Companion.getClass();
-        List r9 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("StatusContext", sy.d0.n("StatusContext"), r4), new aa.n("CheckRun", sy.d0.n("CheckRun"), x61.l.r(new aa.m[]{mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, new aa.m("isRequired", b3, (String) null, rVar, no.a.s(pz0.a3.a, new aa.u0(new aa.t("id"))), rVar)}))});
+        List r9 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("StatusContext", sy.d0Shadow.n("StatusContext"), r4), new aa.n("CheckRun", sy.d0Shadow.n("CheckRun"), x61.l.r(new aa.m[]{mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, new aa.m("isRequired", b3, (String) null, rVar, no.a.s(pz0.a3.a, new aa.u0(new aa.t("id"))), rVar)}))});
         hm.Companion.getClass();
         aa.m mVar18 = new aa.m("pageInfo", v8.l0.b(hm.a), (String) null, rVar, rVar, r3);
         h30.Companion.getClass();
@@ -104,13 +104,13 @@ public abstract class v {
         pz0.s4.Companion.getClass();
         List r14 = x61.l.r(new aa.m[]{new aa.m("commit", v8.l0.b(pz0.s4.j), (String) null, rVar, rVar, r13), new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         ps.Companion.getClass();
-        List n = sy.d0.n(new aa.m("nodes", v8.l0.a(ps.a), (String) null, rVar, rVar, r14));
+        List n = sy.d0Shadow.n(new aa.m("nodes", v8.l0.a(ps.a), (String) null, rVar, rVar, r14));
         pz.Companion.getClass();
         aa.r b5 = v8.l0.b(pz.a);
         hs.Companion.getClass();
         aa.m mVar21 = new aa.m("requiredStatusChecks", b5, (String) null, rVar, no.a.s(hs.x, new aa.u0(25)), r2);
         ts.Companion.getClass();
-        List r15 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0.n("PullRequest"), x61.l.r(new aa.m[]{mVar21, new aa.m("commits", v8.l0.b(ts.a), (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(hs.j, new aa.u0((Object) null)), new aa.k(hs.l, new aa.u0(1))}), n)})), new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        List r15 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0Shadow.n("PullRequest"), x61.l.r(new aa.m[]{mVar21, new aa.m("commits", v8.l0.b(ts.a), (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(hs.j, new aa.u0((Object) null)), new aa.k(hs.l, new aa.u0(1))}), n)})), new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
         wk.Companion.getClass();
         aa.j0 j0Var = wk.a;
         k71.k.g(j0Var, "type");

@@ -1,7 +1,7 @@
 package pw0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.y2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -41,7 +41,7 @@ public abstract class w implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {

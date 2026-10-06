@@ -16,7 +16,7 @@ public abstract class u3 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "Release", "RepositoryAdvisory", "RepositoryAdvisoryComment"});
         List list = qv.a.a;
@@ -36,6 +36,6 @@ public abstract class u3 {
         aa.q0 q0Var2 = h20.a;
         k71.k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("removeReaction", q0Var2, (String) null, rVar, no.a.s(vp.C0, new aa.u0(x61.x.u(new w61.k[]{new w61.k("content", new aa.t("content")), new w61.k("subjectId", new aa.t("subject_id"))}))), r5));
+        a = sy.d0Shadow.n(new aa.m("removeReaction", q0Var2, (String) null, rVar, no.a.s(vp.C0, new aa.u0(x61.x.u(new w61.k[]{new w61.k("content", new aa.t("content")), new w61.k("subjectId", new aa.t("subject_id"))}))), r5));
     }
 }

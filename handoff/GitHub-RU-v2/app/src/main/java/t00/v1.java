@@ -32,10 +32,10 @@ public final class v1Shadow implements z01.o, mi0, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "id");
-                return y71.n1.y(new rm0.v9(new y00.l(com.github.service.wrapper.b.a(this.s, new qp.j(str), ga.h.t, false, (LinkedHashSet) null, 60), 10), 23), this.t);
+                return y71.n1Shadow.y(new rm0.v9(new y00.l(com.github.service.wrapper.b.a(this.s, new qp.j(str), ga.h.t, false, (LinkedHashSet) null, 60), 10), 23), this.t);
             default:
                 k71.k.g(str, "id");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.b.a(this.s, new lo0.j(str), ga.h.t, false, (LinkedHashSet) null, 60), 10), 20), this.t);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.b.a(this.s, new lo0.j(str), ga.h.t, false, (LinkedHashSet) null, 60), 10), 20), this.t);
         }
     }
 
@@ -43,10 +43,10 @@ public final class v1Shadow implements z01.o, mi0, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str2, "title");
-                return y71.n1.y(jo.f4.f(in.r.h(this.s.d(new qp.o(new aa.u0(str2), str)))), this.t);
+                return y71.n1Shadow.y(jo.f4Shadow.f(in.rShadow.h(this.s.d(new qp.o(new aa.u0(str2), str)))), this.t);
             default:
                 k71.k.g(str2, "title");
-                return y71.n1.y(jo.f4.f(in.r.h(this.s.d(new lo0.o(new aa.u0(str2), str)))), this.t);
+                return y71.n1Shadow.y(jo.f4Shadow.f(in.rShadow.h(this.s.d(new lo0.o(new aa.u0(str2), str)))), this.t);
         }
     }
 

@@ -1,6 +1,6 @@
 package com.github.service.models.response.projects;
 
-import l01.a0;
+import l01.a0Shadow;
 import v8.l0;
 
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
@@ -9,7 +9,7 @@ import v8.l0;
 public final class ProjectFieldType {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ ProjectFieldType[] $VALUES;
-    public static final a0 Companion;
+    public static final a0Shadow Companion;
     private String rawValue;
     public static final ProjectFieldType ASSIGNEES = new ProjectFieldType("ASSIGNEES", 0, "ASSIGNEES");
     public static final ProjectFieldType LINKED_PULL_REQUESTS = new ProjectFieldType("LINKED_PULL_REQUESTS", 1, "LINKED_PULL_REQUESTS");
@@ -34,7 +34,7 @@ public final class ProjectFieldType {
         ProjectFieldType[] $values = $values();
         $VALUES = $values;
         $ENTRIES = l0.t($values);
-        Companion = new a0();
+        Companion = new a0Shadow();
     }
 
     private ProjectFieldType(String str, int i, String str2) {

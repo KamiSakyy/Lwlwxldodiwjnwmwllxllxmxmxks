@@ -83,20 +83,20 @@ public final class j0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static ArrayList a(Map map, Map map2, List list, String str, boolean z10, l01.x xVar) {
-        x61.r r10;
+    public static ArrayList a(Map map, Map map2, List list, String str, boolean z10, l01.xShadow xVar) {
+        x61.rShadow r10;
         ArrayList arrayList;
         ArrayList arrayList2;
         com.github.service.models.response.projects.a c0046a;
         com.github.service.models.response.projects.a iVar;
         com.github.service.models.response.projects.a aVar;
-        l01.x xVar2 = xVar;
+        l01.xShadow xVar2 = xVar;
         k71.k.g(map2, "fieldValues");
         List list2 = list;
         k71.k.g(list2, "viewGroupedByFields");
         List r11 = x61.l.r(new ProjectFieldType[]{ProjectFieldType.SINGLE_SELECT, ProjectFieldType.ITERATION, ProjectFieldType.DATE, ProjectFieldType.NUMBER, ProjectFieldType.TEXT});
         if (xVar2 == null) {
-            r10 = x61.r.r;
+            r10 = x61.rShadow.r;
         } else if (xVar2 instanceof l01.u0) {
             r10 = x61.l.r(new ProjectFieldType[]{ProjectFieldType.LABELS, ProjectFieldType.ASSIGNEES, ProjectFieldType.MILESTONE});
         } else {

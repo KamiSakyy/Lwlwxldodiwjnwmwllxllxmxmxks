@@ -3,7 +3,7 @@ package s51;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import q51.i;
-import w80.a0;
+import w80.a0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
@@ -14,11 +14,11 @@ public final class d {
     public int c;
 
     public d() {
-        if (a0.v == null) {
+        if (a0Shadow.v == null) {
             Pattern pattern = i.c;
-            a0.v = new a0(8);
+            a0Shadow.v = new a0Shadow(8);
         }
-        a0 a0Var = a0.v;
+        a0Shadow a0Var = a0Shadow.v;
         if (i.d == null) {
             i.d = new i(a0Var);
         }

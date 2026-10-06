@@ -3,7 +3,7 @@ package u10;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class jo implements aaShadow.n0 {
+public final class joShadow implements aaShadow.n0 {
     public static final fo Companion = new fo();
     public String r;
     public List s;
@@ -24,7 +24,7 @@ public final class jo implements aaShadow.n0 {
         List list = fc0.x2.a;
         List list2 = fc0.x2.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -32,10 +32,10 @@ public final class jo implements aaShadow.n0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof jo)) {
+        if (!(obj instanceof joShadow)) {
             return false;
         }
-        jo joVar = (jo) obj;
+        joShadow joVar = (joShadow) obj;
         return k71.k.b(this.r, joVar.r) && k71.k.b(this.s, joVar.s) && k71.k.b(this.t, joVar.t);
     }
 

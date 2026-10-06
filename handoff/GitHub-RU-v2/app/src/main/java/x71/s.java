@@ -6,16 +6,16 @@ import v71.b0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class s extends v71.a implements t, l {
-    public h u;
+    public hShadow u;
 
-    public s(a71.h hVar, h hVar2) {
+    public s(a71.hShadow hVar, hShadow hVar2) {
         super(hVar, true);
         this.u = hVar2;
     }
 
     @Override // x71.v
-    public final Object a(c71.j jVar) {
-        h hVar = this.u;
+    public final Object a(c71.jShadow jVar) {
+        hShadow hVar = this.u;
         hVar.getClass();
         Object E = h.E(hVar, jVar);
         b71.a aVar = b71.a.r;
@@ -44,7 +44,7 @@ public final class s extends v71.a implements t, l {
 
     @Override // x71.v
     public final c iterator() {
-        h hVar = this.u;
+        hShadow hVar = this.u;
         hVar.getClass();
         return new c(hVar);
     }

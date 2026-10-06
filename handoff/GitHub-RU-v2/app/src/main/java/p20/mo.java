@@ -6,7 +6,7 @@ import u10.rz;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mo implements aaShadow.a {
     public static final mo a = new mo();
-    public static final List b = sy.d0.o("name", "code");
+    public static final List b = sy.d0Shadow.o("name", "code");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -3,13 +3,13 @@ package zx;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e1 {
     public String a;
-    public f1 b;
+    public f1Shadow b;
     public h1 c;
     public i1 d;
     public g1 e;
     public qx.c1 f;
 
-    public e1(String str, f1 f1Var, h1 h1Var, i1 i1Var, g1 g1Var, qx.c1 c1Var) {
+    public e1(String str, f1Shadow f1Var, h1 h1Var, i1 i1Var, g1 g1Var, qx.c1 c1Var) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = f1Var;
@@ -32,7 +32,7 @@ public final class e1 {
 
     public final int hashCode() {
         int hashCode = this.a.hashCode() * 31;
-        f1 f1Var = this.b;
+        f1Shadow f1Var = this.b;
         int hashCode2 = (hashCode + (f1Var == null ? 0 : f1Var.hashCode())) * 31;
         h1 h1Var = this.c;
         int hashCode3 = (hashCode2 + (h1Var == null ? 0 : h1Var.a.hashCode())) * 31;

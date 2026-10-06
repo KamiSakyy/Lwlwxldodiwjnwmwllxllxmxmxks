@@ -2,7 +2,7 @@ package ag0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class j implements aa.a {
@@ -136,7 +136,7 @@ public abstract class j implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -175,10 +175,10 @@ public abstract class j implements aa.a {
         bVar.b(fVar, wVar, iVar.b);
         fVar.z0("viewerHasVoted");
         aa.b bVar2 = aa.c.f;
-        f4.C(iVar.c, bVar2, fVar, wVar, "totalVoteCount");
+        f4Shadow.C(iVar.c, bVar2, fVar, wVar, "totalVoteCount");
         fVar.z(iVar.d);
         fVar.z0("viewerCanVote");
-        f4.C(iVar.e, bVar2, fVar, wVar, "options");
+        f4Shadow.C(iVar.e, bVar2, fVar, wVar, "options");
         aa.c.b(aa.c.c(l.a, false)).b(fVar, wVar, iVar.f);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, iVar.g);

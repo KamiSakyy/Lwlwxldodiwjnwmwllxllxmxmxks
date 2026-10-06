@@ -4,12 +4,12 @@ import cq.u2;
 import cq.v2;
 import java.util.List;
 import java.util.Set;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.a {
     public static final q a = new q();
-    public static final List b = d0.o("__typename", "id");
+    public static final List b = d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         d00.t tVar;

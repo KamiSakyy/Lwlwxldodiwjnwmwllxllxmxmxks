@@ -2,13 +2,13 @@ package j0;
 
 import w61.a0;
 import y71.m1;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class j implements i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final m1 f26277a = n1.b(16, 1, x71.a.s);
+    public final m1 f26277a = n1Shadow.b(16, 1, x71.a.s);
 
     @Override // j0.i
     public final y71.i a() {

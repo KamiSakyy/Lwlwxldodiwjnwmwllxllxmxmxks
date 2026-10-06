@@ -7,7 +7,7 @@ import com.github.service.models.response.type.IssueState;
 import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class r implements x {
+public final class r implements xShadow {
     public String a;
     public String b;
     public String c;
@@ -57,12 +57,12 @@ public final class r implements x {
         this.v = pVar2;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean a() {
         return this.l;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final int b() {
         return this.d;
     }
@@ -72,12 +72,12 @@ public final class r implements x {
         return this.e;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean d() {
         return this.m;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean e() {
         return this.n;
     }
@@ -93,7 +93,7 @@ public final class r implements x {
         return k71.k.b(this.a, rVar.a) && k71.k.b(this.b, rVar.b) && k71.k.b(this.c, rVar.c) && this.d == rVar.d && k71.k.b(this.e, rVar.e) && this.f == rVar.f && this.g == rVar.g && this.h == rVar.h && this.i == rVar.i && this.j == rVar.j && this.k == rVar.k && this.l == rVar.l && this.m == rVar.m && this.n == rVar.n && this.o == rVar.o && this.p == rVar.p && k71.k.b(this.q, rVar.q) && k71.k.b(this.r, rVar.r) && k71.k.b(this.s, rVar.s) && k71.k.b(this.t, rVar.t) && k71.k.b(this.u, rVar.u) && k71.k.b(this.v, rVar.v);
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean f() {
         return this.j;
     }
@@ -122,7 +122,7 @@ public final class r implements x {
         return i + (pVar2 != null ? pVar2.hashCode() : 0);
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean m() {
         return this.k;
     }

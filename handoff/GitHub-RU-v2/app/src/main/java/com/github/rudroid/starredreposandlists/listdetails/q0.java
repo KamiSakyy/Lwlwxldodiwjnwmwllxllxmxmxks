@@ -21,7 +21,7 @@ final class q0<T> implements y71.j {
         s0Var.x = iVar;
         y1 y1Var = s0Var.B;
         List list = (List) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();
-        ArrayList l0 = list != null ? x61.m.l0(list, g1Var.b.a) : x61.r.r;
+        ArrayList l0 = list != null ? x61.m.l0(list, g1Var.b.a) : x61.rShadow.r;
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
         t1 t1Var = new t1(l0);
         y1Var.getClass();

@@ -2,11 +2,11 @@ package yu;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class n implements aa.a {
-    public static final List a = d0.n("url");
+    public static final List a = d0Shadow.n("url");
 
     public static f c(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

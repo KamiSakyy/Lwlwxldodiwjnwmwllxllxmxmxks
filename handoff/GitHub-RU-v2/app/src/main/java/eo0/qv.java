@@ -7,7 +7,7 @@ import jn0.p90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qv implements aaShadow.a {
     public static final qv a = new qv();
-    public static final List b = sy.d0.n("updateDiscussionComment");
+    public static final List b = sy.d0Shadow.n("updateDiscussionComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

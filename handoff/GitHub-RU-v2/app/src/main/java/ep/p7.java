@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p7 implements aaShadow.a {
     public static final p7 a = new p7();
-    public static final List b = sy.d0.o("id", "viewerCanEnableAutoMerge", "viewerCanDisableAutoMerge", "autoMergeRequest", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "viewerCanEnableAutoMerge", "viewerCanDisableAutoMerge", "autoMergeRequest", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -72,8 +72,8 @@ public final class p7 implements aaShadow.a {
         bVar.b(fVar, wVar, hbVar.a);
         fVar.z0("viewerCanEnableAutoMerge");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(hbVar.b, bVar2, fVar, wVar, "viewerCanDisableAutoMerge");
-        jo.f4.C(hbVar.c, bVar2, fVar, wVar, "autoMergeRequest");
+        jo.f4Shadow.C(hbVar.b, bVar2, fVar, wVar, "viewerCanDisableAutoMerge");
+        jo.f4Shadow.C(hbVar.c, bVar2, fVar, wVar, "autoMergeRequest");
         aa.c.b(aa.c.c(m7.a, false)).b(fVar, wVar, hbVar.d);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, hbVar.e);

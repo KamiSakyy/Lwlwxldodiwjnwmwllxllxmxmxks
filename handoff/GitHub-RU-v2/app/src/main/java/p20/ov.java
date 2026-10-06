@@ -6,7 +6,7 @@ import u10.fa0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ov implements aaShadow.a {
     public static final ov a = new ov();
-    public static final List b = sy.d0.o("hasCreatedLists", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("hasCreatedLists", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -49,7 +49,7 @@ public final class ov implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(fa0Var, "value");
         fVar.z0("hasCreatedLists");
-        jo.f4.C(fa0Var.a, aa.c.f, fVar, wVar, "id");
+        jo.f4Shadow.C(fa0Var.a, aa.c.f, fVar, wVar, "id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, fa0Var.b);
         fVar.z0("__typename");

@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class x {
+public abstract class xShadow {
     public static final y a;
 
     static {

@@ -1,8 +1,8 @@
 package yq;
 
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 implements aa.a {
@@ -30,7 +30,7 @@ public final class a0 implements aa.a {
                 bool2 = (Boolean) aa.c.f.a(eVar, wVar);
             } else if (r0 == 3) {
                 bool = bool2;
-                iVar = (i) aa.c.c(x.a, false).a(eVar, wVar);
+                iVar = (i) aa.c.c(xShadow.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 4) {
                     break;
@@ -77,7 +77,7 @@ public final class a0 implements aa.a {
         bVar.b(fVar, wVar, lVar.b);
         fVar.z0("isPrivate");
         f4.C(lVar.c, aa.c.f, fVar, wVar, "owner");
-        aa.c.c(x.a, false).b(fVar, wVar, lVar.d);
+        aa.c.c(xShadow.a, false).b(fVar, wVar, lVar.d);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, lVar.e);
     }

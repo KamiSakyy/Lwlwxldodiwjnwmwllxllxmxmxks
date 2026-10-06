@@ -5,7 +5,7 @@ public abstract class fn {
     public static final en Companion = new en();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("PullRequestRevisionMarker", rVar, rVar);
     }
 }

@@ -12,8 +12,8 @@ public abstract class mv {
     public static final aa.q0 e;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        e = new aa.q0("Ref", n, sy.d0.n(wk.a));
+        e = new aa.q0("Ref", n, sy.d0Shadow.n(wk.a));
     }
 }

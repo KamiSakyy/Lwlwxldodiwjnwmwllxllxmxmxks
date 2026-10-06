@@ -31,7 +31,7 @@ import java.util.Set;
 import k71.w;
 import kotlin.NoWhenBranchMatchedException;
 import l3.v;
-import sy.d0;
+import sy.d0Shadow;
 import sy.e0;
 import sy.f0;
 import sy.y;
@@ -88,7 +88,7 @@ public final class d extends c71.j implements j71.e {
     public final a71.c r(a71.c cVar, Object obj) {
         switch (this.v) {
             case 0:
-                d dVar = new d((e) this.z, (oa.j) this.x, (String) this.y, (com.github.rudroid.viewmodels.tasklist.c) this.A, cVar, 0);
+                d dVar = new d((eShadow) this.z, (oa.j) this.x, (String) this.y, (com.github.rudroid.viewmodels.tasklist.c) this.A, cVar, 0);
                 dVar.w = obj;
                 return dVar;
             case 1:
@@ -233,7 +233,7 @@ public final class d extends c71.j implements j71.e {
                 String str2 = (String) this.w;
                 b71.a aVar = b71.a.r;
                 y.j(obj);
-                return ((e) obj5).a.a((oa.j) obj4, (String) obj2, str2, (com.github.rudroid.viewmodels.tasklist.c) obj3);
+                return ((eShadow) obj5).a.a((oa.j) obj4, (String) obj2, str2, (com.github.rudroid.viewmodels.tasklist.c) obj3);
             case 1:
                 String str3 = (String) this.w;
                 b71.a aVar2 = b71.a.r;
@@ -462,7 +462,7 @@ public final class d extends c71.j implements j71.e {
                     lVar.getClass();
                     k71.k.g(str9, "owner");
                     k71.k.g(str10, "repository");
-                    v71.b0.z(lVar.b, (a71.h) null, (v71.a0) null, new a0.h(lVar, (oa.j) obj4, str9, str10, (a71.c) null, 23), 3);
+                    v71.b0.z(lVar.b, (a71.h) null, (v71.a0Shadow) null, new a0.h(lVar, (oa.j) obj4, str9, str10, (a71.c) null, 23), 3);
                 }
                 return a0Var;
             case 10:
@@ -470,8 +470,8 @@ public final class d extends c71.j implements j71.e {
                 y.j(obj);
                 v71.z zVar = (v71.z) this.w;
                 p0.g gVar = (p0.g) obj5;
-                v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new u(gVar, (d1) obj4, (a2.b) obj2, (a71.c) null, 18), 3);
-                return v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new gi.b(gVar, (com.github.rudroid.actions.workflowruns.ui.e) obj3, null, 29), 3);
+                v71.b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new u(gVar, (d1) obj4, (a2.b) obj2, (a71.c) null, 18), 3);
+                return v71.b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new gi.b(gVar, (com.github.rudroid.actions.workflowruns.ui.e) obj3, null, 29), 3);
             case 11:
                 b71.a aVar14 = b71.a.r;
                 y.j(obj);

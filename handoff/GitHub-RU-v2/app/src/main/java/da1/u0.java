@@ -35,7 +35,7 @@ public final class u0 {
         Arrays.sort(cArr);
     }
 
-    public u0(b bVar) {
+    public u0(bShadow bVar) {
         p0 p0Var = new p0(2, bVar);
         this.h = p0Var;
         this.j = p0Var;

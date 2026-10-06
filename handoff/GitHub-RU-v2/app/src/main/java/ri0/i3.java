@@ -14,7 +14,7 @@ public final class i3 implements aa.i0 {
         List list = si0.i.a;
         List list2 = si0.i.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -27,7 +27,7 @@ public final class i3 implements aa.i0 {
     }
 
     public final int hashCode() {
-        return k71.x.a(i3.class).hashCode();
+        return k71.xShadow.a(i3.class).hashCode();
     }
 
     public final void o(ea.f fVar, aa.w wVar, boolean z) {

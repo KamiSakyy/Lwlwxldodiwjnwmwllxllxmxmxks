@@ -7,7 +7,7 @@ import m10.mx;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 implements aa.a {
     public static final d0 a = new d0();
-    public static final List b = sy.d0.o("type", "value");
+    public static final List b = sy.d0Shadow.o("type", "value");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;
@@ -42,14 +42,14 @@ public final class d0 implements aa.a {
             }
         }
         if (mxVar != null) {
-            return new a0(mxVar, str);
+            return new a0Shadow(mxVar, str);
         }
         k41.b.B(eVar, "type");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        a0 a0Var = (a0) obj;
+        a0Shadow a0Var = (a0Shadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(a0Var, "value");

@@ -13,7 +13,7 @@ public final class xf0 implements aaShadow.w0 {
         List list = kz0.a7.a;
         List list2 = kz0.a7.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -26,7 +26,7 @@ public final class xf0 implements aaShadow.w0 {
     }
 
     public final int hashCode() {
-        return k71.x.a(xf0.class).hashCode();
+        return k71.xShadow.a(xf0.class).hashCode();
     }
 
     public final String i() {

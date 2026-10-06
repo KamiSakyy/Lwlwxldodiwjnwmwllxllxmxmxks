@@ -100,7 +100,7 @@ public final class y1 extends z71.a implements g1, i, z71.r {
                         y1Var = x1Var.u;
                         sy.y.j(obj3);
                         AtomicReference atomicReference = z1Var.a;
-                        a81.t tVar = n1.b;
+                        a81.t tVar = n1Shadow.b;
                         andSet = atomicReference.getAndSet(tVar);
                         k71.k.d(andSet);
                         if (andSet == n1.c) {
@@ -144,7 +144,7 @@ public final class y1 extends z71.a implements g1, i, z71.r {
                         }
                         obj = obj42;
                         AtomicReference atomicReference2 = z1Var.a;
-                        a81.t tVar2 = n1.b;
+                        a81.t tVar2 = n1Shadow.b;
                         andSet = atomicReference2.getAndSet(tVar2);
                         k71.k.d(andSet);
                         if (andSet == n1.c) {
@@ -310,7 +310,7 @@ public final class y1 extends z71.a implements g1, i, z71.r {
                             while (true) {
                                 Object obj4 = atomicReference.get();
                                 if (obj4 != null && obj4 != (tVar = n1.c)) {
-                                    a81.t tVar2 = n1.b;
+                                    a81.t tVar2 = n1Shadow.b;
                                     if (obj4 != tVar2) {
                                         while (!atomicReference.compareAndSet(obj4, tVar2)) {
                                             if (atomicReference.get() != obj4) {

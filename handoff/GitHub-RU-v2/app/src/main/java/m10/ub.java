@@ -7,8 +7,8 @@ public abstract class ub {
     public static final tb Companion = new tb();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("DemilestonedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("DemilestonedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

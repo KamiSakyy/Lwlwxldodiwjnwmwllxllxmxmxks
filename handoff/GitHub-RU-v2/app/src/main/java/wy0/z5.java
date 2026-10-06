@@ -66,7 +66,7 @@ public final class z5Shadow extends c71.j implements j71.e {
                     String str2 = cVar.a;
                     m0Var = new jn0.d0(new jn0.b0(new jn0.g0(cVar, str2), new jn0.f0(new jn0.e0(cVar, str2), cVar.b, str2)));
                 }
-                return y71.n1.y(bVar.k(h0Var, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar.k(h0Var, m0Var), y6Var.t);
             default:
                 gu0.c cVar2 = (gu0.c) this.w;
                 b71.a aVar2 = b71.a.r;
@@ -77,7 +77,7 @@ public final class z5Shadow extends c71.j implements j71.e {
                     String str3 = cVar2.a;
                     m0Var = new nt(new qt(new rt(cVar2, str3), new pt(new ot(cVar2, str3), cVar2.b, str3)));
                 }
-                return y71.n1.y(bVar2.k(stVar, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar2.k(stVar, m0Var), y6Var.t);
         }
     }
 }

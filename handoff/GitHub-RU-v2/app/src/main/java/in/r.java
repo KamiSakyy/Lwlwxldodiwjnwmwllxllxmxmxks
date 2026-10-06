@@ -17,10 +17,10 @@ import java.util.Set;
 import javax.net.ssl.SSLException;
 import kotlin.NoWhenBranchMatchedException;
 import t00.f8;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class r {
+public abstract class rShadow {
     public static final Set a;
     public static final Set b;
 
@@ -51,7 +51,7 @@ public abstract class r {
         Object obj;
         aa.r0 r0Var = fVar.c;
         List list = fVar.d;
-        List list2 = x61.r.r;
+        List list2 = x61.rShadow.r;
         if (r0Var != null) {
             if ((list == null ? list2 : list).isEmpty()) {
                 apiFailure = null;

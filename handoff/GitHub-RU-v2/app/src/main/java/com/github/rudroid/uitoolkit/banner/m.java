@@ -10,7 +10,7 @@ import f1.o5;
 import f1.p5;
 import f1.ub;
 import g3.q0;
-import sg.k0;
+import sg.k0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final /* synthetic */ class m implements j71.f {
@@ -81,7 +81,7 @@ public final /* synthetic */ class m implements j71.f {
                 int intValue6 = ((Integer) obj3).intValue();
                 k71.k.g((androidx.compose.foundation.layout.x) obj, "$this$CTALeftAlignedBanner");
                 if (sVar6.S(intValue6 & 1, (intValue6 & 17) != 16)) {
-                    k0.b(null, false, null, null, "CTA button", androidx.compose.foundation.layout.b.d(3, 0.0f), sVar6, 221184, 15);
+                    k0Shadow.b(null, false, null, null, "CTA button", androidx.compose.foundation.layout.b.d(3, 0.0f), sVar6, 221184, 15);
                 } else {
                     sVar6.V();
                 }
@@ -167,7 +167,7 @@ public final /* synthetic */ class m implements j71.f {
                 int intValue14 = ((Integer) obj3).intValue();
                 k71.k.g((androidx.compose.foundation.layout.x) obj, "$this$GenericBanner");
                 if (sVar14.S(intValue14 & 1, (intValue14 & 17) != 16)) {
-                    k0.b(null, false, null, null, "CTA button", null, sVar14, 24576, 47);
+                    k0Shadow.b(null, false, null, null, "CTA button", null, sVar14, 24576, 47);
                 } else {
                     sVar14.V();
                 }
@@ -229,7 +229,7 @@ public final /* synthetic */ class m implements j71.f {
                 int intValue19 = ((Integer) obj3).intValue();
                 k71.k.g((androidx.compose.foundation.layout.x) obj, "$this$GenericBanner");
                 if (sVar19.S(intValue19 & 1, (intValue19 & 17) != 16)) {
-                    k0.b(null, false, null, null, "CTA button with a really long translation string that should wrap to a second line", null, sVar19, 24576, 47);
+                    k0Shadow.b(null, false, null, null, "CTA button with a really long translation string that should wrap to a second line", null, sVar19, 24576, 47);
                 } else {
                     sVar19.V();
                 }

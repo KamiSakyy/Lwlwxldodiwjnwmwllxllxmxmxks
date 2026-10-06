@@ -11,7 +11,7 @@ import b21.j;
 import c21.e;
 import c21.g0;
 import c21.m;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.common.api.Scope;
 import java.util.Collections;
 import java.util.Iterator;
@@ -30,8 +30,8 @@ public final class d extends e implements a21.a {
         super(context, looper, r3, r4, 270, new y51.c(19, jVar), new y51.c(20, jVar2), (String) sVar.u);
         g0 a = g0.a(context);
         z11.e eVar = z11.e.d;
-        u.g(jVar);
-        u.g(jVar2);
+        uShadow.g(jVar);
+        uShadow.g(jVar2);
         Set set = (Set) sVar.t;
         Iterator it = set.iterator();
         while (it.hasNext()) {

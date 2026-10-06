@@ -7,7 +7,7 @@ import u10.y20;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tq implements aaShadow.a {
     public static final tq a = new tq();
-    public static final List b = sy.d0.o("clientMutationId", "pullRequest");
+    public static final List b = sy.d0Shadow.o("clientMutationId", "pullRequest");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

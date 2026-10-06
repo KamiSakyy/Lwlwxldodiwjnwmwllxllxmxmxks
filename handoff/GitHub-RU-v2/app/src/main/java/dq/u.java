@@ -12,9 +12,9 @@ public abstract class u {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("MobileCopilotFeatureComparisonSubsectionItem");
+        List n = sy.d0Shadow.n("MobileCopilotFeatureComparisonSubsectionItem");
         List list = y.a;
         List r = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "MobileCopilotFeatureComparisonSubsectionItem", n, list)});
         aa.m mVar2 = new aa.m("title", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);

@@ -17,7 +17,7 @@ import m10.wi;
 import m10.x1;
 import m10.yi;
 import m10.z1;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -28,7 +28,7 @@ public abstract class r {
         eh.Companion.getClass();
         x xVar = eh.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = fq.a.a;
@@ -38,9 +38,9 @@ public abstract class r {
         aa.m mVar2 = new aa.m("totalCount", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         x1.Companion.getClass();
         List r3 = x61.l.r(new aa.m[]{mVar2, new aa.m("nodes", l0.a(x1.a), (String) null, rVar, rVar, r2)});
-        List n = d0.n(new aa.m("totalCount", l0.b(xVar2), (String) null, rVar, rVar, rVar));
+        List n = d0Shadow.n(new aa.m("totalCount", l0.b(xVar2), (String) null, rVar, rVar, rVar));
         aa.s mVar3 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("IssueType");
+        List n2 = d0Shadow.n("IssueType");
         List list2 = ht.a.a;
         aa.s c = no.a.c(list2, "selections", "IssueType", n2, list2);
         ah.Companion.getClass();
@@ -53,12 +53,12 @@ public abstract class r {
         List r6 = x61.l.r(new aa.m[]{mVar4, mVar5, new aa.m("owner", l0.b(l40.e), (String) null, rVar, rVar, r5), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         List r7 = x61.l.r(new aa.m[]{new aa.m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.s mVar6 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("Issue");
+        List n3 = d0Shadow.n("Issue");
         List list3 = dt.a.a;
         List r8 = x61.l.r(new aa.s[]{mVar6, no.a.c(list3, "selections", "Issue", n3, list3), new aa.m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
         aa.s mVar7 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.s mVar8 = new aa.m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n4 = d0.n("Issue");
+        List n4 = d0Shadow.n("Issue");
         List list4 = t.a;
         aa.s c2 = no.a.c(list4, "selections", "Issue", n4, list4);
         aa.s mVar9 = new aa.m("titleHTML", l0.b(xVar), (String) null, rVar, rVar, rVar);

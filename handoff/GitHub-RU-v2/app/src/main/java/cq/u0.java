@@ -21,7 +21,7 @@ public abstract class u0 implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {
@@ -67,7 +67,7 @@ public abstract class u0 implements aa.a {
         fVar.z(o0Var.b);
         fVar.z0("viewerCanUpvote");
         aa.b bVar = aa.c.f;
-        jo.f4.C(o0Var.c, bVar, fVar, wVar, "viewerHasUpvoted");
+        jo.f4Shadow.C(o0Var.c, bVar, fVar, wVar, "viewerHasUpvoted");
         bVar.b(fVar, wVar, Boolean.valueOf(o0Var.d));
     }
 }

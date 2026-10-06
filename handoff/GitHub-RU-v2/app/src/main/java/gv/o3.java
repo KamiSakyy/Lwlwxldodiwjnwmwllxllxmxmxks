@@ -6,7 +6,7 @@ import m10.ya0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o3 implements aa.a {
     public static final o3 a = new o3();
-    public static final List b = sy.d0.o("id", "name", "viewerSubscription", "viewerSubscriptionTypes", "owner", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "viewerSubscription", "viewerSubscriptionTypes", "owner", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

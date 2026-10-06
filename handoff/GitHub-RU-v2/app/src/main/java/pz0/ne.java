@@ -24,7 +24,7 @@ public final class ne {
         v = neVarArr;
         w = v8.l0.t(neVarArr);
         Companion = new me();
-        sy.d0.o(new String[]{"COMPLETED", "DUPLICATE", "NOT_PLANNED"});
+        sy.d0Shadow.o(new String[]{"COMPLETED", "DUPLICATE", "NOT_PLANNED"});
     }
 
     public ne(String str, int i, String str2) {

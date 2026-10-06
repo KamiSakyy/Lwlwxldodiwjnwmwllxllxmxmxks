@@ -79,7 +79,7 @@ public final class UserOrOrgRepositoriesFilterBarFragment extends Hilt_UserOrOrg
 
     public UserOrOrgRepositoriesFilterBarFragment() {
         w61.h s = sy.w.s(w61.i.s, new b(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(14, this)));
-        this.O0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.q.class), new c(s), new e(s), new d(s));
+        this.O0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.q.class), new c(s), new e(s), new d(s));
     }
 
     @Override // com.github.rudroid.searchandfilter.ui.FilterBarFragmentBase

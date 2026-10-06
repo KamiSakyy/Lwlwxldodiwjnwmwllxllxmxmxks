@@ -17,7 +17,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.service.models.response.type.MobileAppElement;
 import com.google.android.gms.internal.measurement.i4;
 import w61.a0;
-import x61.r;
+import x61.rShadow;
 import xn.e1;
 import y71.y1;
 
@@ -68,13 +68,13 @@ public final /* synthetic */ class e implements j71.f {
             final f1 f1Var = this.r;
             l0 l0Var = this.s;
             final CopilotChatProPaywallActivity copilotChatProPaywallActivity = this.t;
-            r rVar = null;
+            rShadow rVar = null;
             Object obj5 = androidx.compose.runtime.n.a;
             if (a) {
                 sVar.c0(1457220802);
                 final String p0 = i4.p0(2131953438, sVar);
                 final String p02 = i4.p0(2131951986, sVar);
-                w1.r w = androidx.compose.foundation.layout.b.w(p2.d(oVar, 1.0f), d2Var);
+                w1.rShadow w = androidx.compose.foundation.layout.b.w(p2.d(oVar, 1.0f), d2Var);
                 g1 g1Var = (g1) f1Var.getValue();
                 if (g1Var == null || (m0Var8 = (m0) g1Var.getData()) == null || (e1Var = m0Var8.e) == null) {
                     e1Var = e1.s;
@@ -105,7 +105,7 @@ public final /* synthetic */ class e implements j71.f {
                     rVar = m0Var4.f;
                 }
                 if (rVar == null) {
-                    rVar = r.r;
+                    rVar = rShadow.r;
                 }
                 g1 g1Var6 = (g1) f1Var.getValue();
                 if (g1Var6 == null || (m0Var3 = (m0) g1Var6.getData()) == null || (c = m0Var3.g) == null) {
@@ -306,7 +306,7 @@ public final /* synthetic */ class e implements j71.f {
             } else {
                 final int i6 = 0;
                 sVar.c0(1459571656);
-                w1.r w2 = androidx.compose.foundation.layout.b.w(p2.d(oVar, 1.0f), d2Var);
+                w1.rShadow w2 = androidx.compose.foundation.layout.b.w(p2.d(oVar, 1.0f), d2Var);
                 g1 g1Var8 = (g1) f1Var.getValue();
                 String a3 = (g1Var8 == null || (m0Var2 = (m0) g1Var8.getData()) == null || (lVar = m0Var2.b) == null) ? null : com.github.rudroid.copilot.inapppurchase.billingclient.n.a(lVar);
                 String str3 = a3 == null ? "" : a3;

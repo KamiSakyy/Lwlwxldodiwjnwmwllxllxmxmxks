@@ -2,7 +2,7 @@ package com.github.rudroid.actions.workflowruns.dispatchworkflow;
 
 import com.github.rudroid.copilot.h1;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class y {
@@ -71,6 +71,6 @@ public final class y {
     public final String toString() {
         StringBuilder n10 = com.github.rudroid.m0.n("DispatchWorkflowState(workflowInputs=", ", currentBranch=", this.f5411b, ", shouldDismiss=", this.f5410a);
         com.github.rudroid.m0.A(n10, this.f5412c, ", invalidInputsAndAttemptedDispatch=", this.f5413d, ", hasWorkflowDispatchTrigger=");
-        return f4.s(n10, this.f5414e, ")");
+        return f4Shadow.s(n10, this.f5414e, ")");
     }
 }

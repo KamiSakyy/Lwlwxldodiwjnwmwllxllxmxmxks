@@ -29,7 +29,7 @@ public final class cq {
         x = cqVarArr;
         y = v8.l0.t(cqVarArr);
         Companion = new bq();
-        sy.d0.o(new String[]{"DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED"});
+        sy.d0Shadow.o(new String[]{"DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED"});
     }
 
     public cq(String str, int i, String str2) {

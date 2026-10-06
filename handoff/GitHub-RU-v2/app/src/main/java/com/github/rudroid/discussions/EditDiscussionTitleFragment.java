@@ -88,7 +88,7 @@ public final class EditDiscussionTitleFragment extends Hilt_EditDiscussionTitleF
 
     public EditDiscussionTitleFragment() {
         w61.h s2 = sy.w.s(w61.i.s, new b(new a()));
-        this.I0 = new androidx.lifecycle.l1(k71.x.a(l8.class), new c(s2), new e(s2), new d(s2));
+        this.I0 = new androidx.lifecycle.l1(k71.xShadow.a(l8.class), new c(s2), new e(s2), new d(s2));
     }
 
     @Override // com.github.rudroid.activities.BaseEditTitleFragment

@@ -98,7 +98,7 @@ public final class a extends c {
         d dVar;
         k71.k.g(lVar, "match");
         j b = lVar.c.b(1);
-        ArrayList arrayList2 = x61.r.r;
+        ArrayList arrayList2 = x61.rShadow.r;
         if (b != null) {
             List g0 = p.g0(b.a, new String[]{";"}, 6);
             arrayList = new ArrayList();

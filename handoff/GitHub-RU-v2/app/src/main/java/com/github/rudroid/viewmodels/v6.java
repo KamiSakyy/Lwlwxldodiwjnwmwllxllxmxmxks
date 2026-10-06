@@ -25,7 +25,7 @@ public final class v6 extends w3 {
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new c7(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c7(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.w3
@@ -35,7 +35,7 @@ public final class v6 extends w3 {
 
     @Override // com.github.rudroid.viewmodels.w3
     public final void Q() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new z6(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new z6(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.x3

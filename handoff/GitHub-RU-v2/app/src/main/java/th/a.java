@@ -9,7 +9,7 @@ import com.github.rudroid.common.logging.LogTag;
 import k71.k;
 import rb.b;
 import t00.ua;
-import v71.a0;
+import v71.a0Shadow;
 import v71.q1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -19,7 +19,7 @@ public final class a {
             hVar = i.r;
         }
         h hVar2 = hVar;
-        a0 a0Var = a0.r;
+        a0Shadow a0Var = a0Shadow.r;
         ua uaVar = new ua(2);
         k.g(k1Var, "<this>");
         LogTag declaredAnnotation = k1Var.getClass().getDeclaredAnnotation(LogTag.class);

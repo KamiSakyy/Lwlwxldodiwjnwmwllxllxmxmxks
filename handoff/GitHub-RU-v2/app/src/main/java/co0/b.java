@@ -21,7 +21,7 @@ import pz0.vd;
 import pz0.wk;
 import pz0.xd;
 import pz0.y2;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -32,7 +32,7 @@ public abstract class b {
         td.Companion.getClass();
         x xVar = td.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         o7.Companion.getClass();
         x xVar2 = o7.a;
@@ -56,7 +56,7 @@ public abstract class b {
         q0 q0Var = c3.a;
         k71.k.g(q0Var, "type");
         k3.Companion.getClass();
-        List r3 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("CheckSuite", d0.n("CheckSuite"), x61.l.r(new aa.m[]{mVar6, new aa.m("checkRuns", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(k3.a, new u0((Object) null)), new aa.k(k3.b, new u0(s0.p("checkName", new t("checkRunName")))), new aa.k(k3.c, new u0(new t("first")))}), r2)}))});
+        List r3 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("CheckSuite", d0Shadow.n("CheckSuite"), x61.l.r(new aa.m[]{mVar6, new aa.m("checkRuns", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(k3.a, new u0((Object) null)), new aa.k(k3.b, new u0(s0.p("checkName", new t("checkRunName")))), new aa.k(k3.c, new u0(new t("first")))}), r2)}))});
         wk.Companion.getClass();
         j0 j0Var = wk.a;
         k71.k.g(j0Var, "type");

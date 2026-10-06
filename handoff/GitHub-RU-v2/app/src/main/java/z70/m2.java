@@ -52,7 +52,7 @@ public class m2 implements aa.i0, bm.k, com.google.android.gms.measurement.inter
         List list = a80.h.a;
         List list2 = a80.h.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -76,7 +76,7 @@ public class m2 implements aa.i0, bm.k, com.google.android.gms.measurement.inter
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(m2.class).hashCode();
+                return k71.xShadow.a(m2.class).hashCode();
             default:
                 return super.hashCode();
         }

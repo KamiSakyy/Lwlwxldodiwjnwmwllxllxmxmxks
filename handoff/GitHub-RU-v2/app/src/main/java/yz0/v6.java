@@ -28,7 +28,7 @@ public final class v6 extends s7 {
     }
 
     public final int hashCode() {
-        return this.d.hashCode() + jo.f4.b(this.c, com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), 31);
+        return this.d.hashCode() + jo.f4Shadow.b(this.c, com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), 31);
     }
 
     public final String toString() {

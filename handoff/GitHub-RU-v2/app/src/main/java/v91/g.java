@@ -39,7 +39,7 @@ public final class g extends u91.b {
             throw new MarkdownParsingException("");
         }
         t91.d dVar2 = this.a;
-        int z = a0.z(cVar, dVar2);
+        int z = a0.zShadow(cVar, dVar2);
         if (z < 3 && (D = a0.D(cVar, z)) != null) {
             t91.c a = sy.a0.a(D, dVar2);
             char[] cArr = ((t91.c) dVar2).b;

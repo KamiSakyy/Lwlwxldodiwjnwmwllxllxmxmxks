@@ -5,17 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x implements y {
+public final class xShadow implements y {
     public String a;
     public String b;
     public String c;
     public ZonedDateTime d;
     public List e;
-    public a0 f;
+    public a0Shadow f;
     public List g;
     public List h;
     public List i;
-    public w j;
+    public wShadow j;
     public r0 k;
     public f0 l;
     public boolean m;
@@ -26,8 +26,8 @@ public final class x implements y {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public /* synthetic */ x(String str, String str2, String str3, ZonedDateTime zonedDateTime, ArrayList arrayList, a0 a0Var, List list, List list2, ArrayList arrayList2, w wVar, r0 r0Var, f0 f0Var, f3 f3Var, int i) {
-        this(r4, r5, r6, r7, (List) (r1 != 0 ? r3 : arrayList), (i & 32) != 0 ? new a0() : a0Var, (i & 64) != 0 ? r3 : list, (i & 128) != 0 ? r3 : list2, (List) ((i & 256) != 0 ? r3 : arrayList2), (i & 512) != 0 ? w.s : wVar, (i & 1024) != 0 ? r0.r : r0Var, (i & 2048) != 0 ? new f0("") : f0Var, false, (i & 8192) != 0 ? null : f3Var);
+    public /* synthetic */ x(String str, String str2, String str3, ZonedDateTime zonedDateTime, ArrayList arrayList, a0Shadow a0Var, List list, List list2, ArrayList arrayList2, wShadow wVar, r0 r0Var, f0 f0Var, f3 f3Var, int i) {
+        this(r4, r5, r6, r7, (List) (r1 != 0 ? r3 : arrayList), (i & 32) != 0 ? new a0Shadow() : a0Var, (i & 64) != 0 ? r3 : list, (i & 128) != 0 ? r3 : list2, (List) ((i & 256) != 0 ? r3 : arrayList2), (i & 512) != 0 ? w.s : wVar, (i & 1024) != 0 ? r0.r : r0Var, (i & 2048) != 0 ? new f0("") : f0Var, false, (i & 8192) != 0 ? null : f3Var);
         ZonedDateTime zonedDateTime2;
         String str4 = (i & 1) != 0 ? "" : str;
         String str5 = (i & 2) != 0 ? "" : str2;
@@ -40,20 +40,20 @@ public final class x implements y {
             zonedDateTime2 = zonedDateTime;
         }
         int i2 = i & 16;
-        ArrayList arrayList3 = x61.r.r;
+        ArrayList arrayList3 = x61.rShadow.r;
     }
 
-    public static x a(x xVar, String str, String str2, ArrayList arrayList, ArrayList arrayList2, w wVar, int i) {
+    public static x a(xShadow xVar, String str, String str2, ArrayList arrayList, ArrayList arrayList2, wShadow wVar, int i) {
         String str3 = xVar.a;
         String str4 = (i & 2) != 0 ? xVar.b : str;
         String str5 = (i & 4) != 0 ? xVar.c : str2;
         ZonedDateTime zonedDateTime = xVar.d;
         List list = xVar.e;
-        a0 a0Var = xVar.f;
+        a0Shadow a0Var = xVar.f;
         List list2 = (i & 64) != 0 ? xVar.g : arrayList;
         List list3 = (i & 128) != 0 ? xVar.h : arrayList2;
         List list4 = xVar.i;
-        w wVar2 = (i & 512) != 0 ? xVar.j : wVar;
+        wShadow wVar2 = (i & 512) != 0 ? xVar.j : wVar;
         r0 r0Var = xVar.k;
         f0 f0Var = xVar.l;
         boolean z = (i & 4096) != 0 ? xVar.m : true;
@@ -71,17 +71,17 @@ public final class x implements y {
         k71.k.g(wVar2, "state");
         k71.k.g(r0Var, "errorType");
         k71.k.g(f0Var, "errorDescription");
-        return new x(str3, str4, str5, zonedDateTime, list, a0Var, list2, list3, list4, wVar2, r0Var, f0Var, z, f3Var);
+        return new xShadow(str3, str4, str5, zonedDateTime, list, a0Var, list2, list3, list4, wVar2, r0Var, f0Var, z, f3Var);
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return k71.k.b(this.a, xVar.a) && k71.k.b(this.b, xVar.b) && k71.k.b(this.c, xVar.c) && k71.k.b(this.d, xVar.d) && k71.k.b(this.e, xVar.e) && k71.k.b(this.f, xVar.f) && k71.k.b(this.g, xVar.g) && k71.k.b(this.h, xVar.h) && k71.k.b(this.i, xVar.i) && this.j == xVar.j && this.k == xVar.k && k71.k.b(this.l, xVar.l) && this.m == xVar.m && k71.k.b(this.n, xVar.n);
     }
 
@@ -122,7 +122,7 @@ public final class x implements y {
         return o.toString();
     }
 
-    public x(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0 a0Var, List list2, List list3, List list4, w wVar, r0 r0Var, f0 f0Var, boolean z, f3 f3Var) {
+    public x(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0Shadow a0Var, List list2, List list3, List list4, wShadow wVar, r0 r0Var, f0 f0Var, boolean z, f3 f3Var) {
         k71.k.g(str, "id");
         k71.k.g(str2, "threadId");
         k71.k.g(str3, "content");

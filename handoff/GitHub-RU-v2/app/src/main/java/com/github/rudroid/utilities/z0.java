@@ -24,10 +24,10 @@ public final class z0 {
         for (Object obj : list) {
             int i2 = i + 1;
             if (i < 0) {
-                sy.d0.x();
+                sy.d0Shadow.x();
                 throw null;
             }
-            com.github.rudroid.main.navigation.f.c(sy.s.i(a0Var), obj, sy.t.o(new com.github.rudroid.agents.sessionevents.w1(i, eVar, 3)), 4);
+            com.github.rudroid.main.navigation.f.c(sy.s.i(a0Var), obj, sy.tShadow.o(new com.github.rudroid.agents.sessionevents.w1(i, eVar, 3)), 4);
             i = i2;
         }
     }

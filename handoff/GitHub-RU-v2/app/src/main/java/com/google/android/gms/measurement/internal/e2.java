@@ -15,9 +15,9 @@ public final class e2 {
 
     public e2(Context context, com.google.android.gms.internal.measurement.u0 u0Var, Long l) {
         this.e = true;
-        c21.u.g(context);
+        c21.uShadow.g(context);
         Context applicationContext = context.getApplicationContext();
-        c21.u.g(applicationContext);
+        c21.uShadow.g(applicationContext);
         this.a = applicationContext;
         this.f = l;
         if (u0Var != null) {

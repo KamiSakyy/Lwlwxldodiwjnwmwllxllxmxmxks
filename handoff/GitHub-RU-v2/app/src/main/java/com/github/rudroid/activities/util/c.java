@@ -1,6 +1,6 @@
 package com.github.rudroid.activities.util;
 
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -13,7 +13,7 @@ public final class c implements a {
     public y00.l f5919b;
 
     public c() {
-        y1 c10 = n1.c((Object) null);
+        y1 c10 = n1Shadow.c((Object) null);
         this.f5918a = c10;
         this.f5919b = new y00.l(c10, 10);
     }

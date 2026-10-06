@@ -13,7 +13,7 @@ import pz0.s70;
 import pz0.sk;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -24,7 +24,7 @@ public abstract class b {
     static {
         td.Companion.getClass();
         r b = l0.b(td.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar = xd.a;
@@ -38,6 +38,6 @@ public abstract class b {
         q0 q0Var2 = s70.a;
         k.g(q0Var2, "type");
         sk.Companion.getClass();
-        a = d0.n(new m("updateProjectV2DraftIssue", q0Var2, (String) null, rVar, no.a.s(sk.h1, new u0(x61.x.u(new w61.k("draftIssueId", new t("id")), new w61.k("title", new t("title"))))), r2));
+        a = d0Shadow.n(new m("updateProjectV2DraftIssue", q0Var2, (String) null, rVar, no.a.s(sk.h1, new u0(x61.x.u(new w61.k("draftIssueId", new t("id")), new w61.k("title", new t("title"))))), r2));
     }
 }

@@ -14,9 +14,9 @@ public abstract class g6 {
     static {
         eh.Companion.getClass();
         aa.r b = v8.l0.b(eh.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Discussion");
+        List n = sy.d0Shadow.n("Discussion");
         List list = js.d.a;
         aa.s c = no.a.c(list, "selections", "Discussion", n, list);
         ah.Companion.getClass();
@@ -24,11 +24,11 @@ public abstract class g6 {
         fd.Companion.getClass();
         aa.q0 q0Var = fd.l;
         k71.k.g(q0Var, "type");
-        List n2 = sy.d0.n(new aa.m("discussion", q0Var, (String) null, rVar, rVar, r));
+        List n2 = sy.d0Shadow.n(new aa.m("discussion", q0Var, (String) null, rVar, rVar, r));
         zd0.Companion.getClass();
         aa.q0 q0Var2 = zd0.a;
         k71.k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("updateDiscussion", q0Var2, (String) null, rVar, no.a.s(vp.e1, new aa.u0(x61.x.u(new w61.k[]{new w61.k("categoryId", new aa.t("categoryId")), new w61.k("discussionId", new aa.t("id"))}))), n2));
+        a = sy.d0Shadow.n(new aa.m("updateDiscussion", q0Var2, (String) null, rVar, no.a.s(vp.e1, new aa.u0(x61.x.u(new w61.k[]{new w61.k("categoryId", new aa.t("categoryId")), new w61.k("discussionId", new aa.t("id"))}))), n2));
     }
 }

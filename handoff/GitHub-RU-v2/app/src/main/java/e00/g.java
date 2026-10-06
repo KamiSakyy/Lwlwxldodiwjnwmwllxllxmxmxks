@@ -1,12 +1,12 @@
 package e00;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements aa.a {
     public static final g a = new g();
-    public static final List b = d0.o("__typename", "id", "fields", "defaultView", "views");
+    public static final List b = d0Shadow.o("__typename", "id", "fields", "defaultView", "views");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

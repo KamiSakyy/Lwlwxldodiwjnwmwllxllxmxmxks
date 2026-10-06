@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import hc0.ev;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x implements aa.h0 {
+public final class xShadow implements aa.h0 {
     public String a;
     public String b;
     public w c;
@@ -35,7 +35,7 @@ public final class x implements aa.h0 {
         this.m = aVar;
     }
 
-    public static x a(x xVar, l0 l0Var, g70.a aVar, int i) {
+    public static x a(xShadow xVar, l0 l0Var, g70.a aVar, int i) {
         String str = xVar.a;
         String str2 = xVar.b;
         w wVar = xVar.c;
@@ -50,17 +50,17 @@ public final class x implements aa.h0 {
         i80.c cVar = xVar.l;
         g70.a aVar2 = (i & 4096) != 0 ? xVar.m : aVar;
         xVar.getClass();
-        return new x(str, str2, wVar, str3, str4, evVar, z, z2, z3, z4, l0Var2, cVar, aVar2);
+        return new xShadow(str, str2, wVar, str3, str4, evVar, z, z2, z3, z4, l0Var2, cVar, aVar2);
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return k71.k.b(this.a, xVar.a) && k71.k.b(this.b, xVar.b) && k71.k.b(this.c, xVar.c) && k71.k.b(this.d, xVar.d) && k71.k.b(this.e, xVar.e) && this.f == xVar.f && this.g == xVar.g && this.h == xVar.h && this.i == xVar.i && this.j == xVar.j && k71.k.b(this.k, xVar.k) && k71.k.b(this.l, xVar.l) && k71.k.b(this.m, xVar.m);
     }
 

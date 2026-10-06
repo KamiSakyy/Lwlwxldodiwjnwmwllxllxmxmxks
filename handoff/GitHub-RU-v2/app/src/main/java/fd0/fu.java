@@ -7,7 +7,7 @@ import kc0.x70;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fu implements aaShadow.a {
     public static final fu a = new fu();
-    public static final List b = sy.d0.o(new String[]{"id", "mergeCommitAllowed", "squashMergeAllowed", "rebaseMergeAllowed", "viewerDefaultMergeMethod", "viewerDefaultCommitEmail", "viewerPossibleCommitEmails", "viewerPermission", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "mergeCommitAllowed", "squashMergeAllowed", "rebaseMergeAllowed", "viewerDefaultMergeMethod", "viewerDefaultCommitEmail", "viewerPossibleCommitEmails", "viewerPermission", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002b, code lost:
     
@@ -191,9 +191,9 @@ public final class fu implements aaShadow.a {
         bVar.b(fVar, wVar, x70Var.a);
         fVar.z0("mergeCommitAllowed");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(x70Var.b, bVar2, fVar, wVar, "squashMergeAllowed");
-        jo.f4.C(x70Var.c, bVar2, fVar, wVar, "rebaseMergeAllowed");
-        jo.f4.C(x70Var.d, bVar2, fVar, wVar, "viewerDefaultMergeMethod");
+        jo.f4Shadow.C(x70Var.b, bVar2, fVar, wVar, "squashMergeAllowed");
+        jo.f4Shadow.C(x70Var.c, bVar2, fVar, wVar, "rebaseMergeAllowed");
+        jo.f4Shadow.C(x70Var.d, bVar2, fVar, wVar, "viewerDefaultMergeMethod");
         fVar.I(x70Var.e.r);
         fVar.z0("viewerDefaultCommitEmail");
         aa.c.i.b(fVar, wVar, x70Var.f);

@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zk implements aaShadow.a {
     public static final zk a = new zk();
-    public static final List b = sy.d0.o("__typename", "id", "url", "name", "tagName", "tagCommit", "author", "descriptionHTML", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "releaseAssets", "discussion", "mentions");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "url", "name", "tagName", "tagCommit", "author", "descriptionHTML", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "releaseAssets", "discussion", "mentions");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0047, code lost:
     
@@ -263,13 +263,13 @@ public final class zk implements aaShadow.a {
         o0Var.b(fVar, wVar, luVar.h);
         fVar.z0("isPrerelease");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(luVar.i, bVar2, fVar, wVar, "isDraft");
-        jo.f4.C(luVar.j, bVar2, fVar, wVar, "isLatest");
-        jo.f4.C(luVar.k, bVar2, fVar, wVar, "createdAt");
+        jo.f4Shadow.C(luVar.i, bVar2, fVar, wVar, "isDraft");
+        jo.f4Shadow.C(luVar.j, bVar2, fVar, wVar, "isLatest");
+        jo.f4Shadow.C(luVar.k, bVar2, fVar, wVar, "createdAt");
         m10.sa.Companion.getClass();
         aa.x xVar = m10.sa.a;
         wVar.e(xVar).b(fVar, wVar, luVar.l);
-        no.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, luVar.m);
+        noShadow.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, luVar.m);
         fVar.z0("releaseAssets");
         aa.c.c(al.a, false).b(fVar, wVar, luVar.n);
         fVar.z0("discussion");

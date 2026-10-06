@@ -33,8 +33,8 @@ public abstract class su {
     public static final aa.q0 z;
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        z = new aa.q0("Query", n2, sy.d0.n(wk.a));
+        z = new aa.q0("Query", n2, sy.d0Shadow.n(wk.a));
     }
 }

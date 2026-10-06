@@ -23,7 +23,7 @@ public final class zi {
         v = ziVarArr;
         w = v8.l0.t(ziVarArr);
         Companion = new yi();
-        sy.d0.o(new String[]{"ASC", "DESC"});
+        sy.d0Shadow.o(new String[]{"ASC", "DESC"});
     }
 
     public zi(String str, int i, String str2) {

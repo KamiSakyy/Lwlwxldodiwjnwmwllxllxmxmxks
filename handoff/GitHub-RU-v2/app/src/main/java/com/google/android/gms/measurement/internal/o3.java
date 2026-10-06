@@ -38,7 +38,7 @@ public final class o3 implements ServiceConnection, c21.b, c21.c {
         m1Var.E();
         synchronized (this) {
             try {
-                c21.u.g(this.s);
+                c21.uShadow.g(this.s);
                 f0 f0Var = (f0) this.s.u();
                 m1 m1Var2 = ((o1) ((androidx.compose.foundation.lazy.layout.s0) this.t).s).x;
                 o1.m(m1Var2);

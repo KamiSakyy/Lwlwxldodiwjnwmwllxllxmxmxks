@@ -4,7 +4,7 @@ import a5.q1;
 import android.os.Bundle;
 import android.os.SystemClock;
 import androidx.compose.foundation.lazy.layout.s0;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.measurement.internal.b3;
 import com.google.android.gms.measurement.internal.f3;
 import com.google.android.gms.measurement.internal.j2;
@@ -28,7 +28,7 @@ public final class a extends c {
     public t2 b;
 
     public a(o1 o1Var) {
-        u.g(o1Var);
+        uShadow.g(o1Var);
         this.a = o1Var;
         t2 t2Var = o1Var.D;
         o1.l(t2Var);
@@ -137,7 +137,7 @@ public final class a extends c {
     public final int j(String str) {
         t2 t2Var = this.b;
         t2Var.getClass();
-        u.d(str);
+        uShadow.d(str);
         ((o1) ((s0) t2Var).s).getClass();
         return 25;
     }

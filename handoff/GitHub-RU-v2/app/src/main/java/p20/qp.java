@@ -6,7 +6,7 @@ import u10.f10;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qp implements aaShadow.a {
     public static final qp a = new qp();
-    public static final List b = sy.d0.o("hasNextPage", "endCursor", "hasPreviousPage");
+    public static final List b = sy.d0Shadow.o("hasNextPage", "endCursor", "hasPreviousPage");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -46,7 +46,7 @@ public final class qp implements aaShadow.a {
         k71.k.g(f10Var, "value");
         fVar.z0("hasNextPage");
         aa.b bVar = aa.c.f;
-        jo.f4.C(f10Var.a, bVar, fVar, wVar, "endCursor");
+        jo.f4Shadow.C(f10Var.a, bVar, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, f10Var.b);
         fVar.z0("hasPreviousPage");
         bVar.b(fVar, wVar, Boolean.valueOf(f10Var.c));

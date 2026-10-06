@@ -8,10 +8,10 @@ import bm.p;
 import com.github.service.models.response.SpokenLanguage;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
-import w80.a0;
+import w80.a0Shadow;
 
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -20,7 +20,7 @@ public final class SpokenLanguageFilter extends d {
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SpokenLanguageFilter> CREATOR = new o(21);
     public static final w61.h[] w = {w.s(w61.i.r, new p(22)), null, null};
-    public static final a0 x = new a0(2);
+    public static final a0Shadow x = new a0Shadow(2);
 
     public static final class Companion {
         public final KSerializer serializer() {
@@ -32,7 +32,7 @@ public final class SpokenLanguageFilter extends d {
     public /* synthetic */ SpokenLanguageFilter(int i, l lVar, String str, SpokenLanguage spokenLanguage) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, SpokenLanguageFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, SpokenLanguageFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

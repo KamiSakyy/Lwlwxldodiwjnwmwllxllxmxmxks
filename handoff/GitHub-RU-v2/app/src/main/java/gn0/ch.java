@@ -15,7 +15,7 @@ public final class ch {
         s = chVarArr;
         v8.l0.t(chVarArr);
         Companion = new bh();
-        sy.d0.o(new String[]{"PHONE", "TABLET"});
+        sy.d0Shadow.o(new String[]{"PHONE", "TABLET"});
     }
 
     public ch(String str, int i, String str2) {

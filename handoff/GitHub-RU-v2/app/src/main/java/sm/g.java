@@ -4,7 +4,7 @@ import k71.k;
 import oa.j;
 import sy.y;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
@@ -62,7 +62,7 @@ public final class g {
                 fVar.v = null;
                 fVar.w = z;
                 fVar.z = 2;
-                Object F = n1.F(J, fVar);
+                Object F = n1Shadow.F(J, fVar);
                 return F != aVar2 ? aVar2 : F;
             }
         }
@@ -77,7 +77,7 @@ public final class g {
         fVar.v = null;
         fVar.w = z;
         fVar.z = 2;
-        Object F2 = n1.F(J2, fVar);
+        Object F2 = n1Shadow.F(J2, fVar);
         if (F2 != aVar22) {
         }
     }

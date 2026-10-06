@@ -12,7 +12,7 @@ import androidx.compose.runtime.v1;
 import com.github.rudroid.achievements.ui.b0;
 import com.github.rudroid.agents.copilothome.ui.w;
 import com.github.rudroid.utilities.k1;
-import d2.a0;
+import d2.a0Shadow;
 import f0.v;
 import f1.g2;
 import f1.qa;
@@ -21,7 +21,7 @@ import f1.y1;
 import f1.z1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class p {
+public final class pShadow {
     public static final float a;
     public static final float b;
     public static final w1.r c;

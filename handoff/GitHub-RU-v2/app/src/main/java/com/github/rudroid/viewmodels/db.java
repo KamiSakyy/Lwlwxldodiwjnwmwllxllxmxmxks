@@ -17,9 +17,9 @@ final class db<T> implements y71.j {
         za zaVar = this.r;
         zaVar.x = iVar;
         y71.y1 y1Var = zaVar.v;
-        x61.r rVar = (List) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();
+        x61.rShadow rVar = (List) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         com.github.rudroid.utilities.w0.p(y1Var, x61.m.l0(rVar, list));
         return w61.a0.a;

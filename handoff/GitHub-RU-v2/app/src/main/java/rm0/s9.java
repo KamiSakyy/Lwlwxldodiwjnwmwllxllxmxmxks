@@ -8,11 +8,11 @@ public final class s9 extends c71.c {
     public kw u;
     public List v;
     public /* synthetic */ Object w;
-    public final /* synthetic */ y9 x;
+    public final /* synthetic */ y9Shadow x;
     public int y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public s9(y9 y9Var, c71.c cVar) {
+    public s9(y9Shadow y9Var, c71.c cVar) {
         super(cVar);
         this.x = y9Var;
     }

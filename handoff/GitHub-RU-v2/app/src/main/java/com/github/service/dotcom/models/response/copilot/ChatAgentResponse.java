@@ -3,7 +3,7 @@ package com.github.service.dotcom.models.response.copilot;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import no.a;
 
@@ -25,7 +25,7 @@ public final class ChatAgentResponse {
 
     public /* synthetic */ ChatAgentResponse(int i, long j, String str, String str2, String str3, String str4) {
         if (31 != (i & 31)) {
-            c1.l(i, 31, ChatAgentResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 31, ChatAgentResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = j;

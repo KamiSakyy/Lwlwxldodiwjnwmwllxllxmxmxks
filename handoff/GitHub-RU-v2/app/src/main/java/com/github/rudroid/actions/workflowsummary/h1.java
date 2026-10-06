@@ -49,7 +49,7 @@ public final class h1<T> implements y71.j {
                     g1Var.f5559x = jVar;
                     g1Var.f5560y = 0;
                     g1Var.f5557v = 1;
-                    obj2 = y71.n1.w(i1Var, e1Var, g1Var);
+                    obj2 = y71.n1Shadow.w(i1Var, e1Var, g1Var);
                     if (obj2 != aVar) {
                         i10 = 0;
                     }

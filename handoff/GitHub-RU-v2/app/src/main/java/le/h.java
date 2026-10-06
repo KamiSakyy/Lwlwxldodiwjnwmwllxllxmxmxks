@@ -4,7 +4,7 @@ import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import com.github.service.models.response.Avatar;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class h {

@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class j extends b0 {
+final class j extends b0Shadow {
     public j() {
         super("InSelectInTable", 16);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         boolean e = s0Var.e();
         String[] strArr = a0.F;
         if (e && ba1.h.c(((p0) s0Var).l(), strArr)) {

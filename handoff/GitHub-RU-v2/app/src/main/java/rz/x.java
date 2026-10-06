@@ -3,7 +3,7 @@ package rz;
 import cq.u2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x {
+public final class xShadow {
     public String a;
     public String b;
     public v c;
@@ -21,10 +21,10 @@ public final class x {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return k71.k.b(this.a, xVar.a) && k71.k.b(this.b, xVar.b) && k71.k.b(this.c, xVar.c) && k71.k.b(this.d, xVar.d);
     }
 

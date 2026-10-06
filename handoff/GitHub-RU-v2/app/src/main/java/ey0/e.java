@@ -14,7 +14,7 @@ import pz0.su;
 import pz0.td;
 import pz0.xd;
 import pz0.zn;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -25,9 +25,9 @@ public abstract class e {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2Connection");
+        List n = d0Shadow.n("ProjectV2Connection");
         List list = xx0.a.a;
         List r = x61.l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2Connection", n, list)});
         td.Companion.getClass();
@@ -39,7 +39,7 @@ public abstract class e {
         List r2 = x61.l.r(new aa.m[]{mVar2, new aa.m("projectsV2", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(dr.b, new u0(new t("after"))), new aa.k(dr.c, new u0(new t("number"))), new aa.k(dr.e, new u0(x61.x.u(new w61.k("direction", "DESC"), new w61.k("field", "RELEVANCE")))), new aa.k(dr.f, new u0(new t("query")))}), r)});
         s mVar3 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         s mVar4 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("Organization");
+        List n2 = d0Shadow.n("Organization");
         List list2 = bp0.r.a;
         List r3 = x61.l.r(new s[]{mVar3, mVar4, no.a.c(list2, "selections", "Organization", n2, list2), new n("ProjectV2Owner", x61.l.r(new String[]{"Issue", "Organization", "PullRequest", "User"}), r2)});
         ny.Companion.getClass();

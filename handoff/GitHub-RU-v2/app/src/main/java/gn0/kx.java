@@ -26,7 +26,7 @@ public final class kx {
         w = kxVarArr;
         x = v8.l0.t(kxVarArr);
         Companion = new jx();
-        sy.d0.o(new String[]{"DAILY", "MONTHLY", "WEEKLY"});
+        sy.d0Shadow.o(new String[]{"DAILY", "MONTHLY", "WEEKLY"});
     }
 
     public kx(String str, int i, String str2) {

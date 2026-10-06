@@ -7,7 +7,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class we implements aaShadow.a {
     public static final we a = new we();
-    public static final List b = sy.d0.o("id", "discussion", "pattern", "gradientStopColors", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "discussion", "pattern", "gradientStopColors", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

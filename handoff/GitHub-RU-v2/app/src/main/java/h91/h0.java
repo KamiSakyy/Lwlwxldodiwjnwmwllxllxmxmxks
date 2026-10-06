@@ -5,7 +5,7 @@ import java.nio.charset.Charset;
 import java.security.MessageDigest;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class h0 extends k {
+public final class h0 extends kShadow {
     public transient byte[][] v;
     public transient int[] w;
 
@@ -15,12 +15,12 @@ public final class h0 extends k {
         this.w = iArr;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final String a() {
         throw null;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final k c(String str) {
         MessageDigest messageDigest = MessageDigest.getInstance(str);
         byte[][] bArr = this.v;
@@ -37,26 +37,26 @@ public final class h0 extends k {
         }
         byte[] digest = messageDigest.digest();
         k71.k.d(digest);
-        return new k(digest);
+        return new kShadow(digest);
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final int d() {
         return this.w[this.v.length - 1];
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final String e() {
         return u().e();
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final boolean equals(Object obj) {
         if (obj == this) {
             return true;
         }
-        if (obj instanceof k) {
-            k kVar = (k) obj;
+        if (obj instanceof kShadow) {
+            kShadow kVar = (kShadow) obj;
             if (kVar.d() == d() && l(0, kVar, d())) {
                 return true;
             }
@@ -64,18 +64,18 @@ public final class h0 extends k {
         return false;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final int f(int i, byte[] bArr) {
         k71.k.g(bArr, "other");
         return u().f(i, bArr);
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final byte[] h() {
         return t();
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final int hashCode() {
         int i = this.s;
         if (i != 0) {
@@ -103,7 +103,7 @@ public final class h0 extends k {
         return i3;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final byte i(int i) {
         byte[][] bArr = this.v;
         int length = bArr.length - 1;
@@ -113,14 +113,14 @@ public final class h0 extends k {
         return bArr[h][(i - (h == 0 ? 0 : iArr[h - 1])) + iArr[bArr.length + h]];
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final int j(byte[] bArr) {
         k71.k.g(bArr, "other");
         return u().j(bArr);
     }
 
-    @Override // h91.k
-    public final boolean l(int i, k kVar, int i2) {
+    @Override // h91.kShadow
+    public final boolean l(int i, kShadow kVar, int i2) {
         k71.k.g(kVar, "other");
         if (i >= 0 && i <= d() - i2) {
             int i3 = i2 + i;
@@ -144,7 +144,7 @@ public final class h0 extends k {
         return false;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final boolean m(int i, byte[] bArr, int i2, int i3) {
         k71.k.g(bArr, "other");
         if (i < 0 || i > d() - i3 || i2 < 0 || i2 > bArr.length - i3) {
@@ -169,13 +169,13 @@ public final class h0 extends k {
         return true;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final String n(Charset charset) {
         k71.k.g(charset, "charset");
         return u().n(charset);
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final k o(int i, int i2) {
         if (i2 == -1234567890) {
             i2 = d();
@@ -225,12 +225,12 @@ public final class h0 extends k {
         return new h0(bArr2, iArr);
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final k q() {
         return u().q();
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final void s(h hVar, int i) {
         int h = i91.b.h(this, 0);
         int i2 = 0;
@@ -279,12 +279,12 @@ public final class h0 extends k {
         return bArr;
     }
 
-    @Override // h91.k
+    @Override // h91.kShadow
     public final String toString() {
         return u().toString();
     }
 
     public final k u() {
-        return new k(t());
+        return new kShadow(t());
     }
 }

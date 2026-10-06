@@ -1,6 +1,6 @@
 package gw;
 
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -32,7 +32,7 @@ public final class a {
     }
 
     public final String toString() {
-        return f4.n("Owner(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.n("Owner(__typename=", this.a, ", actorFields=", this.b, ")");
     }
     public Object O(Object p1) { return null; }
 }

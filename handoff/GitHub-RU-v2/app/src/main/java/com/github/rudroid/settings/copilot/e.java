@@ -232,7 +232,7 @@ public final /* synthetic */ class e implements j71.e {
                         sVar3.n0(cVar);
                         obj7 = cVar;
                     }
-                    qg.p.c(null, p02, null, 0L, (j71.a) obj7, 0, 0.0f, 0.0f, 0, 0, null, sVar3, 0, 0, 2029);
+                    qg.pShadow.c(null, p02, null, 0L, (j71.a) obj7, 0, 0.0f, 0.0f, 0, 0, null, sVar3, 0, 0, 2029);
                     break;
                 }
             default:

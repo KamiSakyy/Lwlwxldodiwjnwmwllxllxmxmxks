@@ -9,7 +9,7 @@ import k71.k;
 import oa.j;
 import w61.a0;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
@@ -22,7 +22,7 @@ public final class g {
 
     public final i a(j jVar) {
         k.g(jVar, "user");
-        return n1.p(d5.B(((GitHubDatabase) this.a.a(jVar)).A().a, new String[]{"mobile_push_notification_settings"}, new a7.i(4)));
+        return n1Shadow.p(d5.B(((GitHubDatabase) this.a.a(jVar)).A().a, new String[]{"mobile_push_notification_settings"}, new a7.i(4)));
     }
 
     public final Object b(j jVar, List list, c71.j jVar2) {

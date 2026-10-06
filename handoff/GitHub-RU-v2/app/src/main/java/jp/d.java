@@ -13,7 +13,7 @@ import m10.ah;
 import m10.eh;
 import m10.m7;
 import m10.rf0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,9 +25,9 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("CopilotAgentSession");
+        List n = d0Shadow.n("CopilotAgentSession");
         List list = ip.e.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "CopilotAgentSession", n, list), new m("sessionId", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         m7.Companion.getClass();

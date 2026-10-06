@@ -22,7 +22,7 @@ public final class pq {
         v = pqVarArr;
         v8.l0.t(pqVarArr);
         Companion = new oq();
-        sy.d0.o(new String[]{"INTERNAL", "PRIVATE", "PUBLIC"});
+        sy.d0Shadow.o(new String[]{"INTERNAL", "PRIVATE", "PUBLIC"});
     }
 
     public pq(String str, int i, String str2) {

@@ -7,7 +7,7 @@ import pz0.o7;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 implements aa.a {
     public static final n2 a = new n2();
-    public static final List b = sy.d0.o(new String[]{"id", "name", "tagName", "publishedAt", "createdAt", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "name", "tagName", "publishedAt", "createdAt", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -25,7 +25,7 @@ public final class n2 implements aa.a {
             } else if (r0 == 1) {
                 str2 = (String) aa.c.i.a(eVar, wVar);
             } else if (r0 != 2) {
-                aa.x xVar = o7.a;
+                aa.xShadow xVar = o7.a;
                 if (r0 == 3) {
                     o7.Companion.getClass();
                     zonedDateTime = (ZonedDateTime) aa.c.b(wVar.e(xVar)).a(eVar, wVar);
@@ -75,7 +75,7 @@ public final class n2 implements aa.a {
         bVar.b(fVar, wVar, s1Var.c);
         fVar.z0("publishedAt");
         o7.Companion.getClass();
-        aa.x xVar = o7.a;
+        aa.xShadow xVar = o7.a;
         aa.c.b(wVar.e(xVar)).b(fVar, wVar, s1Var.d);
         fVar.z0("createdAt");
         wVar.e(xVar).b(fVar, wVar, s1Var.e);

@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
-import jo.f4;
+import jo.f4Shadow;
 import m7.y;
 import z70.y1;
 
@@ -172,7 +172,7 @@ public final class f implements b {
         if (arrayDeque != null) {
             Iterator it = arrayDeque.iterator();
             if (it.hasNext()) {
-                throw f4.g(it);
+                throw f4Shadow.g(it);
             }
         }
     }

@@ -136,7 +136,7 @@ public final class m {
                     }
                     String str2 = (String) kVar.r;
                     String str3 = (String) kVar.s;
-                    w1.r f6 = f0.o.f(rVar5, ih.d.b(sVar).o, d2.a0.b);
+                    w1.r f6 = f0.o.f(rVar5, ih.d.b(sVar).o, d2.a0Shadow.b);
                     boolean z13 = i == 0 || z8;
                     z11 = (i8 & 29360128) != 8388608;
                     N = sVar.N();
@@ -165,16 +165,16 @@ public final class m {
                     } else {
                         sVar.k(fVar);
                     }
-                    v2.e eVar = v2.g.f;
+                    v2.eShadow eVar = v2.g.f;
                     androidx.compose.runtime.t.I(sVar, eVar, a2);
-                    v2.e eVar2 = v2.g.e;
+                    v2.eShadow eVar2 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar, eVar2, l);
                     Integer valueOf = Integer.valueOf(hashCode);
-                    v2.e eVar3 = v2.g.g;
+                    v2.eShadow eVar3 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar, valueOf, eVar3);
                     v2.d dVar = v2.g.h;
                     androidx.compose.runtime.t.E(sVar, dVar);
-                    v2.e eVar4 = v2.g.d;
+                    v2.eShadow eVar4 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar, eVar4, c);
                     N3 = sVar.N();
                     if (N3 == obj) {
@@ -266,7 +266,7 @@ public final class m {
             }
             String str22 = (String) kVar.r;
             String str32 = (String) kVar.s;
-            w1.r f62 = f0.o.f(rVar5, ih.d.b(sVar).o, d2.a0.b);
+            w1.r f62 = f0.o.f(rVar5, ih.d.b(sVar).o, d2.a0Shadow.b);
             if (i == 0) {
             }
             if ((i8 & 29360128) != 8388608) {
@@ -294,16 +294,16 @@ public final class m {
             sVar.g0();
             if (sVar.S) {
             }
-            v2.e eVar5 = v2.g.f;
+            v2.eShadow eVar5 = v2.g.f;
             androidx.compose.runtime.t.I(sVar, eVar5, a22);
-            v2.e eVar22 = v2.g.e;
+            v2.eShadow eVar22 = v2.g.e;
             androidx.compose.runtime.t.I(sVar, eVar22, l3);
             Integer valueOf2 = Integer.valueOf(hashCode3);
-            v2.e eVar32 = v2.g.g;
+            v2.eShadow eVar32 = v2.g.g;
             androidx.compose.runtime.t.w(sVar, valueOf2, eVar32);
             v2.d dVar2 = v2.g.h;
             androidx.compose.runtime.t.E(sVar, dVar2);
-            v2.e eVar42 = v2.g.d;
+            v2.eShadow eVar42 = v2.g.d;
             androidx.compose.runtime.t.I(sVar, eVar42, c3);
             N3 = sVar.N();
             if (N3 == obj) {

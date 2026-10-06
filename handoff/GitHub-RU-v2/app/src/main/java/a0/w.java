@@ -40,12 +40,12 @@ public final class w implements a0 {
         double d13 = d11 * 2.0d;
         double d14 = (d10 - d13) + d12;
         if (d14 == 0.0d) {
-            i = d11 == d12 ? 0 : d2.a0.D((float) ((d13 - d12) / (d13 - (d12 * 2.0d))), fArr, 0);
+            i = d11 == d12 ? 0 : d2.a0Shadow.D((float) ((d13 - d12) / (d13 - (d12 * 2.0d))), fArr, 0);
         } else {
             double d15 = -Math.sqrt((d11 * d11) - (d12 * d10));
             double d16 = (-d10) + d11;
-            int D = d2.a0.D((float) ((-(d15 + d16)) / d14), fArr, 0);
-            int D2 = d2.a0.D((float) ((d15 - d16) / d14), fArr, D) + D;
+            int D = d2.a0Shadow.D((float) ((-(d15 + d16)) / d14), fArr, 0);
+            int D2 = d2.a0Shadow.D((float) ((d15 - d16) / d14), fArr, D) + D;
             if (D2 > 1) {
                 float f16 = fArr[0];
                 float f17 = fArr[1];
@@ -59,7 +59,7 @@ public final class w implements a0 {
             i = D2;
         }
         float f18 = (f14 - f13) * 2.0f;
-        int D3 = d2.a0.D((-f18) / (((f15 - f14) * 2.0f) - f18), fArr, i) + i;
+        int D3 = d2.a0Shadow.D((-f18) / (((f15 - f14) * 2.0f) - f18), fArr, i) + i;
         float min = Math.min(0.0f, 1.0f);
         float max = Math.max(0.0f, 1.0f);
         for (int i10 = 0; i10 < D3; i10++) {
@@ -138,7 +138,7 @@ public final class w implements a0 {
                     d22 = 1.0d;
                 }
                 double acos = Math.acos(d22);
-                double h10 = sy.t.h((float) sqrt) * 2.0f;
+                double h10 = sy.tShadow.h((float) sqrt) * 2.0f;
                 float cos = (float) ((Math.cos(acos / 3.0d) * h10) - d21);
                 float f16 = cos < 0.0f ? 0.0f : cos;
                 if (f16 > 1.0f) {
@@ -171,7 +171,7 @@ public final class w implements a0 {
                 if (isNaN) {
                 }
             } else if (d20 == 0.0d) {
-                float f19 = -sy.t.h((float) d18);
+                float f19 = -sy.tShadow.h((float) d18);
                 float f20 = (float) d21;
                 float f21 = (f19 * 2.0f) - f20;
                 float f22 = f21 < 0.0f ? 0.0f : f21;
@@ -197,7 +197,7 @@ public final class w implements a0 {
                 }
             } else {
                 double sqrt2 = Math.sqrt(d20);
-                float h11 = (float) ((sy.t.h((float) ((-d18) + sqrt2)) - sy.t.h((float) (d18 + sqrt2))) - d21);
+                float h11 = (float) ((sy.tShadow.h((float) ((-d18) + sqrt2)) - sy.tShadow.h((float) (d18 + sqrt2))) - d21);
                 if (h11 >= 0.0f) {
                     f14 = h11;
                 }

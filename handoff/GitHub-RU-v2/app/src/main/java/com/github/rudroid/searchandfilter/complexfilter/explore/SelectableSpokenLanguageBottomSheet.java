@@ -160,9 +160,9 @@ public final class SelectableSpokenLanguageBottomSheet extends Hilt_SelectableSp
         b bVar = new b();
         w61.i iVar = w61.i.s;
         w61.h s = sy.w.s(iVar, new c(bVar));
-        this.Y0 = new l1(k71.x.a(i0.class), new d(s), new f(s), new e(s));
+        this.Y0 = new l1(k71.xShadow.a(i0.class), new d(s), new f(s), new e(s));
         w61.h s2 = sy.w.s(iVar, new g(new w(this, 0)));
-        this.Z0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.q.class), new h(s2), new j(s2), new i(s2));
+        this.Z0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.q.class), new h(s2), new j(s2), new i(s2));
         this.a1 = 2131954230;
         this.b1 = 2131954218;
     }

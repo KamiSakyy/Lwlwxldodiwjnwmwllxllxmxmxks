@@ -9,7 +9,7 @@ import androidx.compose.ui.layout.x0;
 import com.github.rudroid.starredreposandlists.u0;
 import java.util.ArrayList;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class r implements v0 {
@@ -42,7 +42,7 @@ final class r implements v0 {
         for (Object obj : list) {
             int i6 = i5 + 1;
             if (i5 < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
             int i7 = i5 % i;
@@ -89,7 +89,7 @@ final class r implements v0 {
         for (Object obj3 : list) {
             int i14 = i13 + 1;
             if (i13 < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
             int i15 = iArr[i13 % i];
@@ -105,7 +105,7 @@ final class r implements v0 {
             i17++;
             int i18 = i2 + 1;
             if (i2 < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
             int i19 = i2 / i;

@@ -14,7 +14,7 @@ public final class m0 implements s3.c {
     public s3.c J;
     public s3.m K;
     public int L;
-    public a0 M;
+    public a0Shadow M;
 
     /* renamed from: r, reason: collision with root package name */
     public int f21359r;

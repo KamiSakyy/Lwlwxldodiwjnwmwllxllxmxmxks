@@ -76,7 +76,7 @@ public final class b2 {
         List r10 = x61.l.r(new r3[]{new r3(t3.j, "ThumbsUp", 0, false), new r3(t3.i, "ThumbsDown", 3, false), new r3(t3.g, "Laugh", 1, false), new r3(t3.f, "Hooray", 0, false), new r3(t3.c, "Confused", 0, false), new r3(t3.e, "Heart", 0, false), new r3(t3.h, "Rocket", 0, false), new r3(t3.d, "Eyes", 1, true)});
         Avatar.Type type = Avatar.Type.Organization;
         t10.l lVar = new t10.l("id", "strapboot", "https://github.com/twbs/strap_boot", "strap_boot", "Strapboot", new Avatar("https://github.com/twbs.png", type), "https://github.com/twbs", true, "https://github.com/twbs.png", true);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         t10.k kVar = new t10.k("id", 0, "JavaScript", "yellow", "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.", true, 2000, true, lVar, rVar);
         Avatar.Type type2 = Avatar.Type.User;
         t10.s sVar = new t10.s("id", "Steven Popovich", "stevepopovich", "https://github.com/stevepopovich", "A full stack developer, who is really fun!", 99, 17450, new Avatar("https://github.com/stevepopovich.png", type2), false, false, false);

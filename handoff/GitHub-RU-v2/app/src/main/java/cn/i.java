@@ -3,9 +3,9 @@ package cn;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
     public String a;
-    public h b;
+    public hShadow b;
 
-    public i(String str, h hVar) {
+    public i(String str, hShadow hVar) {
         k71.k.g(str, "cacheKey");
         this.a = str;
         this.b = hVar;

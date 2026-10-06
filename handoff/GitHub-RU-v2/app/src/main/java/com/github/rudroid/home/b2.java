@@ -3,7 +3,7 @@ package com.github.rudroid.home;
 import com.github.domain.shortcuts.model.StoredShortcutModel;
 import com.github.service.models.response.Avatar;
 import com.github.service.models.response.SimpleRepository;
-import jo.f4;
+import jo.f4Shadow;
 import yz0.d3;
 import yz0.i3;
 
@@ -272,7 +272,7 @@ public abstract class b2 implements le.z {
             sb2.append(", owner=");
             sb2.append(this.f14907u);
             sb2.append(", isUnread=");
-            return f4.s(sb2, this.f14908v, ")");
+            return f4Shadow.s(sb2, this.f14908v, ")");
         }
     }
 
@@ -341,7 +341,7 @@ public abstract class b2 implements le.z {
             sb2.append(", section=");
             sb2.append(this.f14911u);
             sb2.append(", isEditable=");
-            return f4.s(sb2, this.f14912v, ")");
+            return f4Shadow.s(sb2, this.f14912v, ")");
         }
     }
 

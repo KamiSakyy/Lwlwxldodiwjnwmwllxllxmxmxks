@@ -1,7 +1,7 @@
 package uk;
 
 import com.github.rudroid.fileschanged.v3;
-import in.r;
+import in.rShadow;
 import java.util.List;
 import k71.k;
 import oa.g;
@@ -59,7 +59,7 @@ public final class b {
                     jVar = jVar2;
                     c = obj;
                 }
-                return b31.b.J(r.l((i) c), jVar, v3Var2);
+                return b31.b.J(rShadow.l((i) c), jVar, v3Var2);
             }
         }
         aVar = new a(this, cVar);
@@ -68,7 +68,7 @@ public final class b {
         i = aVar.y;
         if (i != 0) {
         }
-        return b31.b.J(r.l((i) c), jVar, v3Var2);
+        return b31.b.J(rShadow.l((i) c), jVar, v3Var2);
     }
 
 }

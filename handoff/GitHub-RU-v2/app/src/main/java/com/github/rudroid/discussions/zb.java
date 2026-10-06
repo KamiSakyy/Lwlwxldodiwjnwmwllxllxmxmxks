@@ -56,7 +56,7 @@ public final class zb extends androidx.lifecycle.k1 {
         y71.y1 s2 = com.github.rudroid.m0.s(fl.f.Companion, null);
         this.f12057v = s2;
         this.f12058w = new y71.i1(s2);
-        y71.y1 c10 = y71.n1.c(fl.e.b((Object) null));
+        y71.y1 c10 = y71.n1Shadow.c(fl.e.b((Object) null));
         this.f12059x = c10;
         this.f12060y = new y71.i1(c10);
     }

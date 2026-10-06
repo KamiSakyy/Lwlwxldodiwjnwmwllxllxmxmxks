@@ -13,7 +13,7 @@ import u10.y90;
 import v71.q1;
 import y41.t1;
 import y71.m1;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z implements pn.a, yf0, yb0, mi0, y90 {
@@ -50,7 +50,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                 rb.b.b(zVar, (a71.h) null, aVar2, "AliveService", new hd0.c(this, null, 0), 11);
                 this.y = e81.d.a();
                 this.z = new LinkedHashMap();
-                this.B = n1.b(10, 1, x71.a.r);
+                this.B = n1Shadow.b(10, 1, x71.a.r);
                 this.D = new rn.b(this);
                 break;
             case 2:
@@ -69,7 +69,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                 rb.b.b(zVar, (a71.h) null, aVar2, "AliveService", new kp.c(this, (a71.c) null, 0), 11);
                 this.y = e81.d.a();
                 this.z = new LinkedHashMap();
-                this.B = n1.b(10, 1, x71.a.r);
+                this.B = n1Shadow.b(10, 1, x71.a.r);
                 this.D = new rn.b(this);
                 break;
             case 3:
@@ -88,7 +88,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                 rb.b.b(zVar, (a71.h) null, aVar2, "AliveService", new r20.c(this, (a71.c) null, 0), 11);
                 this.y = e81.d.a();
                 this.z = new LinkedHashMap();
-                this.B = n1.b(10, 1, x71.a.r);
+                this.B = n1Shadow.b(10, 1, x71.a.r);
                 this.D = new rn.b(this);
                 break;
             default:
@@ -107,7 +107,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                 rb.b.b(zVar, (a71.h) null, aVar2, "AliveService", new e(this, null, 0), 11);
                 this.y = e81.d.a();
                 this.z = new LinkedHashMap();
-                this.B = n1.b(10, 1, x71.a.r);
+                this.B = n1Shadow.b(10, 1, x71.a.r);
                 this.D = new rn.b(this);
                 break;
         }
@@ -115,21 +115,21 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
 
     public static final y71.s i(z zVar, qn.g gVar) {
         a71.c cVar = null;
-        return new y71.s(n1.x(new y(zVar, gVar, cVar, 0), new c00.g(new y71.y(new f8(new a61.o(zVar, (a71.c) null)), new o(3, cVar, 1)), zVar, gVar, 9)), new cn.r(zVar, gVar, (a71.c) null, 3));
+        return new y71.s(n1Shadow.x(new y(zVar, gVar, cVar, 0), new c00.g(new y71.y(new f8(new a61.o(zVar, (a71.c) null)), new o(3, cVar, 1)), zVar, gVar, 9)), new cn.r(zVar, gVar, (a71.c) null, 3));
     }
 
     public static final y71.s j(z zVar, qn.g gVar) {
         a71.c cVar = null;
-        return new y71.s(n1.x(new y(zVar, gVar, cVar, 1), new c00.g(new y71.y(new f8(new h1.u(zVar, (a71.c) null, 2)), new o(3, cVar, 6)), zVar, gVar, 10)), new cn.r(zVar, gVar, (a71.c) null, 4));
+        return new y71.s(n1Shadow.x(new y(zVar, gVar, cVar, 1), new c00.g(new y71.y(new f8(new h1.u(zVar, (a71.c) null, 2)), new o(3, cVar, 6)), zVar, gVar, 10)), new cn.r(zVar, gVar, (a71.c) null, 4));
     }
 
     public static final y71.s k(z zVar, qn.g gVar) {
         a71.c cVar = null;
-        return new y71.s(n1.x(new y(zVar, gVar, cVar, 2), new c00.g(new y71.y(new f8(new h1.u(zVar, (a71.c) null, 6)), new o(3, cVar, 9)), zVar, gVar, 11)), new cn.r(zVar, gVar, (a71.c) null, 6));
+        return new y71.s(n1Shadow.x(new y(zVar, gVar, cVar, 2), new c00.g(new y71.y(new f8(new h1.u(zVar, (a71.c) null, 6)), new o(3, cVar, 9)), zVar, gVar, 11)), new cn.r(zVar, gVar, (a71.c) null, 6));
     }
 
     public static final y71.s l(z zVar, qn.g gVar) {
-        return new y71.s(n1.x(new y(zVar, gVar, null, 3), new c00.g(new f8(new h1.u(zVar, (a71.c) null, 21)), zVar, gVar, 15)), new cn.r(zVar, gVar, (a71.c) null, 8));
+        return new y71.s(n1Shadow.x(new y(zVar, gVar, null, 3), new c00.g(new f8(new h1.u(zVar, (a71.c) null, 21)), zVar, gVar, 15)), new cn.r(zVar, gVar, (a71.c) null, 8));
     }
 
     public final y71.i a(String str) {
@@ -137,19 +137,19 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
             case 0:
                 sn.b[] bVarArr = sn.b.r;
                 k71.k.g(str, "prId");
-                return n1.x(new q(this, null, 3), new f8(new p(this, str, null, 3)));
+                return n1Shadow.x(new q(this, null, 3), new f8(new p(this, str, null, 3)));
             case 1:
                 sn.b[] bVarArr2 = sn.b.r;
                 k71.k.g(str, "prId");
-                return n1.x(new hd0.k(this, null, 2), new f8(new hd0.j(this, str, null, 2)));
+                return n1Shadow.x(new hd0.k(this, null, 2), new f8(new hd0.j(this, str, null, 2)));
             case 2:
                 sn.b[] bVarArr3 = sn.b.r;
                 k71.k.g(str, "prId");
-                return n1.x(new kp.o(this, (a71.c) null, 9), new f8(new kp.n(this, str, (a71.c) null, 3)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 9), new f8(new kp.n(this, str, (a71.c) null, 3)));
             default:
                 sn.b[] bVarArr4 = sn.b.r;
                 k71.k.g(str, "prId");
-                return n1.x(new r20.k(this, (a71.c) null, 2), new f8(new r20.j(this, str, (a71.c) null, 2)));
+                return n1Shadow.x(new r20.k(this, (a71.c) null, 2), new f8(new r20.j(this, str, (a71.c) null, 2)));
         }
     }
 
@@ -157,16 +157,16 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
         switch (this.r) {
             case 0:
                 sn.a[] aVarArr = sn.a.r;
-                return n1.x(new q(this, null, 1), new f8(new p(this, str, null, 1)));
+                return n1Shadow.x(new q(this, null, 1), new f8(new p(this, str, null, 1)));
             case 1:
                 sn.a[] aVarArr2 = sn.a.r;
-                return n1.x(new hd0.k(this, null, 1), new f8(new hd0.j(this, str, null, 1)));
+                return n1Shadow.x(new hd0.k(this, null, 1), new f8(new hd0.j(this, str, null, 1)));
             case 2:
                 sn.a[] aVarArr3 = sn.a.r;
-                return n1.x(new kp.o(this, (a71.c) null, 1), new f8(new kp.n(this, str, (a71.c) null, 1)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 1), new f8(new kp.n(this, str, (a71.c) null, 1)));
             default:
                 sn.a[] aVarArr4 = sn.a.r;
-                return n1.x(new r20.k(this, (a71.c) null, 1), new f8(new r20.j(this, str, (a71.c) null, 1)));
+                return n1Shadow.x(new r20.k(this, (a71.c) null, 1), new f8(new r20.j(this, str, (a71.c) null, 1)));
         }
     }
 
@@ -174,16 +174,16 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "id");
-                return n1.x(new q(this, null, 0), new f8(new p(this, str, null, 0, false)));
+                return n1Shadow.x(new q(this, null, 0), new f8(new p(this, str, null, 0, false)));
             case 1:
                 k71.k.g(str, "id");
-                return n1.x(new hd0.k(this, null, 0), new f8(new hd0.j(this, str, null, 0)));
+                return n1Shadow.x(new hd0.k(this, null, 0), new f8(new hd0.j(this, str, null, 0)));
             case 2:
                 k71.k.g(str, "id");
-                return n1.x(new kp.o(this, (a71.c) null, 0), new f8(new kp.n(this, str, (a71.c) null, 0, false)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 0), new f8(new kp.n(this, str, (a71.c) null, 0, false)));
             default:
                 k71.k.g(str, "id");
-                return n1.x(new r20.k(this, (a71.c) null, 0), new f8(new r20.j(this, str, (a71.c) null, 0)));
+                return n1Shadow.x(new r20.k(this, (a71.c) null, 0), new f8(new r20.j(this, str, (a71.c) null, 0)));
         }
     }
 
@@ -194,7 +194,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
             case 1:
                 return t1.S("observeMobileAgentLogUpdates", "3.12");
             case 2:
-                return n1.x(new kp.o(this, (a71.c) null, 5), new f8(new kp.o(this, (a71.c) null, 4)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 5), new f8(new kp.o(this, (a71.c) null, 4)));
             default:
                 return t1.S("observeMobileAgentLogUpdates", "3.10");
         }
@@ -204,13 +204,13 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "id");
-                return n1.x(new q(this, null, 2), new f8(new p(this, str, null, 2, false)));
+                return n1Shadow.x(new q(this, null, 2), new f8(new p(this, str, null, 2, false)));
             case 1:
                 k71.k.g(str, "id");
                 return t1.S("observeProject", "3.12");
             case 2:
                 k71.k.g(str, "id");
-                return n1.x(new kp.o(this, (a71.c) null, 8), new f8(new kp.n(this, str, (a71.c) null, 2, false)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 8), new f8(new kp.n(this, str, (a71.c) null, 2, false)));
             default:
                 k71.k.g(str, "id");
                 return t1.S("observeProject", "3.10");
@@ -224,7 +224,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
             case 1:
                 return t1.S("observeMobileAgentUpdates", "3.12");
             case 2:
-                return n1.x(new kp.o(this, (a71.c) null, 7), new f8(new kp.o(this, (a71.c) null, 6)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 7), new f8(new kp.o(this, (a71.c) null, 6)));
             default:
                 return t1.S("observeMobileAgentUpdates", "3.10");
         }
@@ -237,7 +237,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
             case 1:
                 return t1.S("observeMobileAgentCreate", "3.12");
             case 2:
-                return n1.x(new kp.o(this, (a71.c) null, 3), new f8(new kp.o(this, (a71.c) null, 2)));
+                return n1Shadow.x(new kp.o(this, (a71.c) null, 3), new f8(new kp.o(this, (a71.c) null, 2)));
             default:
                 return t1.S("observeMobileAgentCreate", "3.10");
         }
@@ -332,7 +332,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                     eVar.u = aVar;
                     eVar.v = i2;
                     eVar.y = 2;
-                    Object v = n1.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new d20.m(), null, false, null, null, 58), 19), this.u), eVar);
+                    Object v = n1Shadow.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new d20.m(), null, false, null, null, 58), 19), this.u), eVar);
                     if (v != aVar3) {
                         aVar2 = aVar;
                         obj = v;
@@ -447,7 +447,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                     eVar.u = aVar;
                     eVar.v = i2;
                     eVar.y = 2;
-                    Object v = n1.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new tc0.m(), null, false, null, null, 58), 3), this.u), eVar);
+                    Object v = n1Shadow.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new tc0.m(), null, false, null, null, 58), 3), this.u), eVar);
                     if (v != aVar3) {
                         aVar2 = aVar;
                         obj = v;
@@ -563,7 +563,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                     gVar.u = aVar;
                     gVar.v = i2;
                     gVar.y = 2;
-                    Object v = n1.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new sn0.m(), null, false, null, null, 58), 1), this.u), gVar);
+                    Object v = n1Shadow.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new sn0.m(), null, false, null, null, 58), 1), this.u), gVar);
                     if (v != aVar3) {
                         aVar2 = aVar;
                         obj = v;
@@ -684,7 +684,7 @@ public final class z implements pn.a, yf0, yb0, mi0, y90 {
                     eVar.u = aVar;
                     eVar.v = i2;
                     eVar.y = 2;
-                    Object v = n1.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new so.q(), null, false, null, null, 58), 11), this.u), eVar);
+                    Object v = n1Shadow.v(com.github.rudroid.common.v.b(new gl.f(com.github.service.wrapper.a.o(this.s, new so.q(), null, false, null, null, 58), 11), this.u), eVar);
                     if (v != aVar3) {
                         aVar2 = aVar;
                         obj = v;

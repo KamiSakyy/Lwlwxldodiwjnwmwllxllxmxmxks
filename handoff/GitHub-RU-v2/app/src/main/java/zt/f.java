@@ -2,7 +2,7 @@ package zt;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -78,7 +78,7 @@ public abstract class f implements aa.a {
         fVar.z0("login");
         bVar.b(fVar, wVar, aVar.b);
         fVar.z0("isCopilot");
-        f4.C(aVar.c, aa.c.f, fVar, wVar, "displayName");
+        f4Shadow.C(aVar.c, aa.c.f, fVar, wVar, "displayName");
         bVar.b(fVar, wVar, aVar.d);
         fVar.z0("id");
         bVar.b(fVar, wVar, aVar.e);

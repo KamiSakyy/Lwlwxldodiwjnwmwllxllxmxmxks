@@ -36,6 +36,6 @@ public final class t {
         sb.append(", onProjectV2FieldConfiguration=");
         sb.append(this.b);
         sb.append(", nodeIdFragment=");
-        return jo.f4.r(sb, this.c, ")");
+        return jo.f4Shadow.r(sb, this.c, ")");
     }
 }

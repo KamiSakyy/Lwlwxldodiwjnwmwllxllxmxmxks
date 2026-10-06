@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.ui.h0;
 import rm0.r3Shadow;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.v1;
 import y71.y1;
 
@@ -62,15 +62,15 @@ public final class q extends k1 implements com.github.rudroid.utilities.viewmode
         this.f10604x = fVar;
         String str = cVar.d().f30109c;
         String b10 = cVar.d().b();
-        y1 c10 = n1.c(new com.github.rudroid.createrepository.model.a((1020 & 1) != 0 ? "" : str, (1020 & 2) != 0 ? "" : b10 == null ? "" : b10, (1020 & 4) != 0 ? "" : null, (1020 & 8) == 0 ? "A short description of my new repository" : "", (1020 & 16) != 0, (1020 & 32) != 0 ? null : null, (1020 & 64) == 0, (1020 & 128) != 0 ? null : "Kotlin", (1020 & 256) == 0 ? null : null, (1020 & 512) == 0));
+        y1 c10 = n1Shadow.c(new com.github.rudroid.createrepository.model.a((1020 & 1) != 0 ? "" : str, (1020 & 2) != 0 ? "" : b10 == null ? "" : b10, (1020 & 4) != 0 ? "" : null, (1020 & 8) == 0 ? "A short description of my new repository" : "", (1020 & 16) != 0, (1020 & 32) != 0 ? null : null, (1020 & 64) == 0, (1020 & 128) != 0 ? null : "Kotlin", (1020 & 256) == 0 ? null : null, (1020 & 512) == 0));
         this.f10605y = c10;
         g1.Companion.getClass();
-        y1 c11 = n1.c(g1.a.a());
+        y1 c11 = n1Shadow.c(g1.a.a());
         this.f10606z = c11;
-        y1 c12 = n1.c(g1.a.a());
+        y1 c12 = n1Shadow.c(g1.a.a());
         this.A = c12;
         h0 h0Var = null;
-        r3Shadow l = n1.l(c10, c11, c12, new b0(this, null));
+        r3Shadow l = n1Shadow.l(c10, c11, c12, new b0(this, null));
         v6.a k10 = d1.k(this);
         v1 a10 = y71.q1.a(3);
         com.github.rudroid.createrepository.model.a aVar = (com.github.rudroid.createrepository.model.a) c10.getValue();
@@ -79,7 +79,7 @@ public final class q extends k1 implements com.github.rudroid.utilities.viewmode
             h0Var = g1.a.a();
         }
         g1.Companion.getClass();
-        this.B = n1.G(l, k10, a10, new com.github.rudroid.createrepository.model.d(aVar, h0Var, g1.a.a(), ""));
+        this.B = n1Shadow.G(l, k10, a10, new com.github.rudroid.createrepository.model.d(aVar, h0Var, g1.a.a(), ""));
     }
 
     public final void P(y71.g1 g1Var, fl.b bVar, boolean z10) {

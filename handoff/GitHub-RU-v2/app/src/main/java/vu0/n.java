@@ -13,7 +13,7 @@ public abstract class n {
         zd.Companion.getClass();
         x xVar = zd.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("contentHTML", xVar, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar2 = xd.a;

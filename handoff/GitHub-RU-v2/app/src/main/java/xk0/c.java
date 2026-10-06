@@ -27,7 +27,7 @@ import gn0.xc;
 import gn0.zc;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -39,7 +39,7 @@ public abstract class c {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         s mVar2 = new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
@@ -50,7 +50,7 @@ public abstract class c {
         List r2 = l.r(new s[]{mVar, mVar2, c, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         rb.Companion.getClass();
         x xVar3 = rb.a;
-        List n = d0.n(new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
+        List n = d0Shadow.n(new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
         List r3 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Actor", l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"}), list)});
         m mVar3 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         m mVar4 = new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -80,7 +80,7 @@ public abstract class c {
         eq.Companion.getClass();
         q0 q0Var2 = eq.m0;
         List r5 = l.r(new m[]{mVar5, mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, mVar12, mVar13, mVar14, new m("repository", l0.b(q0Var2), (String) null, rVar, rVar, r4), new m("isInMergeQueue", l0.b(xVar5), (String) null, rVar, rVar, rVar)});
-        List n2 = d0.n(new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
         List r6 = l.r(new m[]{new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("owner", l0.b(j0Var), (String) null, rVar, rVar, l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Actor", l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"}), list)})), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         m mVar15 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         m mVar16 = new m("url", l0.b(xVar4), (String) null, rVar, rVar, rVar);
@@ -95,7 +95,7 @@ public abstract class c {
         zc.Companion.getClass();
         a0 a0Var = zc.s;
         k.g(a0Var, "type");
-        List r7 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0.n("PullRequest"), r5), new n("Issue", d0.n("Issue"), l.r(new m[]{mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, mVar21, mVar22, mVar23, new m("stateReason", a0Var, (String) null, rVar, rVar, rVar)}))});
+        List r7 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0Shadow.n("PullRequest"), r5), new n("Issue", d0Shadow.n("Issue"), l.r(new m[]{mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, mVar21, mVar22, mVar23, new m("stateReason", a0Var, (String) null, rVar, rVar, rVar)}))});
         fc.Companion.getClass();
         m mVar24 = new m("interaction", l0.b(fc.s), (String) null, rVar, rVar, rVar);
         m mVar25 = new m("occurredAt", l0.b(xVar6), (String) null, rVar, rVar, rVar);

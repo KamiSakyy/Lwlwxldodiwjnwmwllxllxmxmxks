@@ -6,11 +6,11 @@ import k71.k;
 import q71.g;
 import s91.f;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import t71.j;
 import t71.l;
 import t71.n;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements u91.c {
@@ -46,14 +46,14 @@ public final class b implements u91.c {
         t91.d dVar = fVar.a;
         a c = c(cVar, dVar);
         if (c == null) {
-            return r.r;
+            return rShadow.r;
         }
         String str = c.b;
         int d = cVar.d() - str.length();
-        q1Var.a(d0.n(new x91.e(new g(cVar.c, d, 1), j91.a.i0)));
+        q1Var.a(d0Shadow.n(new x91.e(new g(cVar.c, d, 1), j91.a.i0)));
         if (str.length() > 0) {
-            q1Var.a(d0.n(new x91.e(new g(d, cVar.d(), 1), j91.a.h0)));
+            q1Var.a(d0Shadow.n(new x91.e(new g(d, cVar.d(), 1), j91.a.h0)));
         }
-        return d0.n(new v91.d(dVar, q1Var, c.a));
+        return d0Shadow.n(new v91.d(dVar, q1Var, c.a));
     }
 }

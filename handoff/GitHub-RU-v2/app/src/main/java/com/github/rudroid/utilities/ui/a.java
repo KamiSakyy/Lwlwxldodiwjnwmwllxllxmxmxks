@@ -23,7 +23,7 @@ public final /* synthetic */ class a implements j71.e {
                 androidx.compose.runtime.s sVar = (androidx.compose.runtime.s) obj;
                 int intValue = ((Integer) obj2).intValue();
                 if (sVar.S(intValue & 1, (intValue & 3) != 2)) {
-                    sg.k0.b(null, false, this.s, null, i4.p0(this.t, sVar), null, sVar, 0, 43);
+                    sg.k0Shadow.b(null, false, this.s, null, i4.p0(this.t, sVar), null, sVar, 0, 43);
                 } else {
                     sVar.V();
                 }
@@ -32,7 +32,7 @@ public final /* synthetic */ class a implements j71.e {
                 androidx.compose.runtime.s sVar2 = (androidx.compose.runtime.s) obj;
                 int intValue2 = ((Integer) obj2).intValue();
                 if (sVar2.S(intValue2 & 1, (intValue2 & 3) != 2)) {
-                    sg.y.a(100663302, 250, null, sVar2, null, null, null, null, this.s, r1.i.d(259000450, new d2(this.t, 7), sVar2), p2.e(w1.o.a, 1.0f), false);
+                    sg.yShadow.a(100663302, 250, null, sVar2, null, null, null, null, this.s, r1.i.d(259000450, new d2(this.t, 7), sVar2), p2.e(w1.o.a, 1.0f), false);
                 } else {
                     sVar2.V();
                 }

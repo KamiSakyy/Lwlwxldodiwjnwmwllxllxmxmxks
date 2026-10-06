@@ -98,14 +98,14 @@ public final class SettingsSwipeFragment extends ToolBarPreferenceFragmentCompat
 
     static {
         r71.e mVar = new k71.m(SettingsSwipeFragment.class, "showFooter", "getShowFooter()Z", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         D0 = new r71.e[]{mVar};
         Companion = new a();
     }
 
     public SettingsSwipeFragment() {
         w61.h s = sy.w.s(w61.i.s, new c(new b()));
-        this.C0 = new androidx.lifecycle.l1(k71.x.a(j3.class), new d(s), new f(s), new e(s));
+        this.C0 = new androidx.lifecycle.l1(k71.xShadow.a(j3.class), new d(s), new f(s), new e(s));
     }
 
     public static void A4(SettingsSwipeFragment settingsSwipeFragment, String str, Bundle bundle) {

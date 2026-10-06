@@ -1,12 +1,12 @@
 package ny0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements aa.a {
     public static final m a = new m();
-    public static final List b = sy.d0.o(new String[]{"getsCiFailedOnly", "getsCiActivity"});
+    public static final List b = sy.d0Shadow.o(new String[]{"getsCiFailedOnly", "getsCiActivity"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -43,7 +43,7 @@ public final class m implements aa.a {
         k71.k.g(tVar, "value");
         fVar.z0("getsCiFailedOnly");
         aa.b bVar = aa.c.f;
-        f4.C(tVar.a, bVar, fVar, wVar, "getsCiActivity");
+        f4Shadow.C(tVar.a, bVar, fVar, wVar, "getsCiActivity");
         bVar.b(fVar, wVar, Boolean.valueOf(tVar.b));
     }
 }

@@ -29,7 +29,7 @@ public final class sb {
         x = sbVarArr;
         y = v8.l0.t(sbVarArr);
         Companion = new rb();
-        sy.d0.o(new String[]{"DISMISSED", "EVENT_TYPE", "EVENT_TYPE_RESOURCE", "RESOURCE"});
+        sy.d0Shadow.o(new String[]{"DISMISSED", "EVENT_TYPE", "EVENT_TYPE_RESOURCE", "RESOURCE"});
     }
 
     public sb(String str, int i, String str2) {

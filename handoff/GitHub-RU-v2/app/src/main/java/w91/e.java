@@ -6,11 +6,11 @@ import java.util.List;
 import k71.k;
 import s91.f;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import t71.n;
 import v91.h;
 import v91.i;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e implements u91.c {
@@ -41,7 +41,7 @@ public final class e implements u91.c {
             }
         }
         h hVar = (h) obj;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         if (hVar == null) {
             t91.d dVar = fVar.a;
             if (k.b(fVar.b, dVar)) {
@@ -58,7 +58,7 @@ public final class e implements u91.c {
                         }
                     }
                     if (charSequence != null && a.e(charSequence)) {
-                        return d0.n(new i(dVar, q1Var));
+                        return d0Shadow.n(new i(dVar, q1Var));
                     }
                 }
             }

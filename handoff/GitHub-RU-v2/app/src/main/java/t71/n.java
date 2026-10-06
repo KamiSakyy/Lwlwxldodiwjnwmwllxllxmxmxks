@@ -35,7 +35,7 @@ public final class n implements Serializable {
         k71.k.g(charSequence, "input");
         Matcher matcher = this.f32141r.matcher(charSequence);
         k71.k.f(matcher, "matcher(...)");
-        return sy.t.a(matcher, 0, charSequence);
+        return sy.tShadow.a(matcher, 0, charSequence);
     }
 
     public final l c(String str, int i) {

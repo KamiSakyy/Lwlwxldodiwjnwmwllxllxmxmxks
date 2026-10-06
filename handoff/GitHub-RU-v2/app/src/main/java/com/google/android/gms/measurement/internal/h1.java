@@ -55,7 +55,7 @@ public final /* synthetic */ class h1 implements Callable {
                                 x9.c cVar3 = uVar.v;
                                 cVar3.t(0);
                                 int i2 = uVar.u;
-                                x9.h hVar = x9.z.j;
+                                x9.hShadow hVar = x9.z.j;
                                 cVar3.s(107, i2, hVar);
                                 uVar.c(hVar);
                             } else {
@@ -89,7 +89,7 @@ public final /* synthetic */ class h1 implements Callable {
                                             com.google.android.gms.internal.play_billing.t.h("BillingClient");
                                             boolean z3 = e instanceof DeadObjectException;
                                             int i5 = z3 ? 91 : e instanceof RemoteException ? 90 : e instanceof SecurityException ? 92 : 42;
-                                            String a = y3.a.a(i5, 42) ? x9.x.a(e) : null;
+                                            String a = y3.a.a(i5, 42) ? x9.xShadow.a(e) : null;
                                             uVar.v.t(0);
                                             uVar.b(z3 ? x9.z.j : x9.z.h, i5, a, z2);
                                             uVar.c(z3 ? x9.z.j : x9.z.h);
@@ -150,7 +150,7 @@ public final /* synthetic */ class h1 implements Callable {
                                 }
                                 x9.c.k(cVar4, i6);
                                 if (i6 != 0) {
-                                    x9.h hVar2 = x9.z.b;
+                                    x9.hShadow hVar2 = x9.z.b;
                                     uVar.b(hVar2, i, (String) null, z2);
                                     uVar.c(hVar2);
                                 } else {

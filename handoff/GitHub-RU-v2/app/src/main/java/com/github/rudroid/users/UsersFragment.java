@@ -17,7 +17,7 @@ import com.github.rudroid.repository.navigation.UsersRoute;
 import com.github.rudroid.uitoolkit.utils.z;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.viewmodels.za;
-import k71.x;
+import k71.xShadow;
 import m0.u;
 import sy.w;
 import sy.y;
@@ -60,7 +60,7 @@ public class UsersFragment extends Hilt_UsersFragment implements com.github.rudr
                     case 0:
                         a1 a1Var = (a1) obj;
                         k71.k.g(a1Var, "savedStateHandle");
-                        UsersRoute usersRoute = (UsersRoute) y.m(a1Var, x.a(UsersRoute.class), ze.e.a);
+                        UsersRoute usersRoute = (UsersRoute) y.m(a1Var, xShadow.a(UsersRoute.class), ze.e.a);
                         UsersFragment usersFragment = this.s;
                         r rVar = usersFragment.E0;
                         if (rVar == null) {
@@ -83,7 +83,7 @@ public class UsersFragment extends Hilt_UsersFragment implements com.github.rudr
         w61.i iVar = w61.i.s;
         a aVar = new a(r0, this, w.s(iVar, new kc.o(kVar)));
         w61.h s = w.s(iVar, new kc.g(kVar));
-        this.F0 = new l1(x.a(za.class), new kc.h(s), aVar, new kc.i(s));
+        this.F0 = new l1(xShadow.a(za.class), new kc.h(s), aVar, new kc.i(s));
         this.H0 = t.B(Boolean.FALSE);
     }
 

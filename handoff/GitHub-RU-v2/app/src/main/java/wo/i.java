@@ -14,7 +14,7 @@ import m10.wg;
 import m10.yg0;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class i {
@@ -24,7 +24,7 @@ public abstract class i {
         eh.Companion.getClass();
         x xVar = eh.a;
         p a2 = l0.a(l0.b(xVar));
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("choices", a2, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("description", xVar, (String) null, rVar, rVar, rVar);
         wg.Companion.getClass();

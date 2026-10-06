@@ -5,8 +5,8 @@ import aa.w0;
 import com.github.service.models.ApiFailure;
 import h1.u;
 import java.util.List;
-import x61.r;
-import y71.n1;
+import x61.rShadow;
+import y71.n1Shadow;
 import y71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */

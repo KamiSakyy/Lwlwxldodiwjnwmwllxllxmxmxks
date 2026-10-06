@@ -15,7 +15,7 @@ public final /* synthetic */ class y implements j71.c {
         e2 e2Var;
         gy0.t tVar;
         int i = this.r;
-        s3.p pVar = x61.r.r;
+        s3.p pVar = x61.rShadow.r;
         boolean z = false;
         z = false;
         switch (i) {
@@ -186,7 +186,7 @@ public final /* synthetic */ class y implements j71.c {
                 int i2 = d2.t.l;
                 Boolean bool3 = Boolean.FALSE;
                 k71.k.b(obj12, bool3);
-                d2.t tVar2 = obj12 != null ? k71.k.b(obj12, Boolean.FALSE) ? new d2.t(d2.t.k) : new d2.t(d2.a0.c(((Integer) obj12).intValue())) : null;
+                d2.t tVar2 = obj12 != null ? k71.k.b(obj12, Boolean.FALSE) ? new d2.t(d2.t.k) : new d2.t(d2.a0Shadow.c(((Integer) obj12).intValue())) : null;
                 k71.k.d(tVar2);
                 long j2 = tVar2.a;
                 Object obj13 = list10.get(1);

@@ -85,10 +85,10 @@ public abstract class g4 implements aa.a {
         wVar.e(o7.a).b(fVar, wVar, u5Var.i);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(u5Var.j, bVar3, fVar, wVar, "viewerDidAuthor");
-        jo.f4.C(u5Var.k, bVar3, fVar, wVar, "viewerCanChangeBaseBranch");
-        jo.f4.C(u5Var.l, bVar3, fVar, wVar, "locked");
-        jo.f4.C(u5Var.m, bVar3, fVar, wVar, "author");
+        jo.f4Shadow.C(u5Var.j, bVar3, fVar, wVar, "viewerDidAuthor");
+        jo.f4Shadow.C(u5Var.k, bVar3, fVar, wVar, "viewerCanChangeBaseBranch");
+        jo.f4Shadow.C(u5Var.l, bVar3, fVar, wVar, "locked");
+        jo.f4Shadow.C(u5Var.m, bVar3, fVar, wVar, "author");
         aa.c.b(aa.c.c(xt0.w5.a, true)).b(fVar, wVar, u5Var.n);
         fVar.z0("isReadByViewer");
         aa.c.k.b(fVar, wVar, u5Var.o);
@@ -115,7 +115,7 @@ public abstract class g4 implements aa.a {
         fVar.z0("reviewDecision");
         aa.c.b(qz0.b.h).b(fVar, wVar, u5Var.A);
         fVar.z0("isDraft");
-        jo.f4.C(u5Var.B, bVar3, fVar, wVar, "requiredStatusChecks");
+        jo.f4Shadow.C(u5Var.B, bVar3, fVar, wVar, "requiredStatusChecks");
         aa.c.c(y6.a, false).b(fVar, wVar, u5Var.C);
         fVar.z0("baseRef");
         aa.c.b(aa.c.c(xt0.x5.a, false)).b(fVar, wVar, u5Var.D);
@@ -141,10 +141,10 @@ public abstract class g4 implements aa.a {
         fVar.z0("viewerLatestReview");
         aa.c.b(aa.c.c(d7.a, false)).b(fVar, wVar, u5Var.O);
         fVar.z0("viewerCanReopen");
-        jo.f4.C(u5Var.P, bVar3, fVar, wVar, "viewerCanMergeAsAdmin");
-        jo.f4.C(u5Var.Q, bVar3, fVar, wVar, "viewerCanAssign");
-        jo.f4.C(u5Var.R, bVar3, fVar, wVar, "viewerCanLabel");
-        jo.f4.C(u5Var.S, bVar3, fVar, wVar, "viewerCanUpdateBranch");
+        jo.f4Shadow.C(u5Var.P, bVar3, fVar, wVar, "viewerCanMergeAsAdmin");
+        jo.f4Shadow.C(u5Var.Q, bVar3, fVar, wVar, "viewerCanAssign");
+        jo.f4Shadow.C(u5Var.R, bVar3, fVar, wVar, "viewerCanLabel");
+        jo.f4Shadow.C(u5Var.S, bVar3, fVar, wVar, "viewerCanUpdateBranch");
         bVar3.b(fVar, wVar, Boolean.valueOf(u5Var.T));
         List list2 = yp0.e.a;
         yp0.e.d(fVar, wVar, u5Var.U);
@@ -164,7 +164,7 @@ public abstract class g4 implements aa.a {
         v7.d(fVar, wVar, u5Var.b0);
         List list9 = xt0.d.a;
         xt0.d.d(fVar, wVar, u5Var.c0);
-        List list10 = f1.a;
+        List list10 = f1Shadow.a;
         f1.d(fVar, wVar, u3Var.e);
     }
 }

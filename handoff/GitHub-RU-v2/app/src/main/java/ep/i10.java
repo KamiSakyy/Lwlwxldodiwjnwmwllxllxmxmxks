@@ -8,7 +8,7 @@ import jo.wh0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i10 implements aaShadow.a {
     public static final i10 a = new i10();
-    public static final List b = sy.d0.o("id", "hasCreatedLists", "suggestedListNames", "lists", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "hasCreatedLists", "suggestedListNames", "lists", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -75,7 +75,7 @@ public final class i10 implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, wh0Var.a);
         fVar.z0("hasCreatedLists");
-        jo.f4.C(wh0Var.b, aa.c.f, fVar, wVar, "suggestedListNames");
+        jo.f4Shadow.C(wh0Var.b, aa.c.f, fVar, wVar, "suggestedListNames");
         aa.c.a(aa.c.c(h10.a, false)).e(fVar, wVar, wh0Var.c);
         fVar.z0("lists");
         aa.c.c(f10.a, false).b(fVar, wVar, wh0Var.d);

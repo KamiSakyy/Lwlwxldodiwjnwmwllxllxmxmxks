@@ -1,6 +1,6 @@
 package ih0;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
@@ -28,7 +28,7 @@ public final class e {
     }
 
     public final String toString() {
-        return f4.p("Enqueuer(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.p("Enqueuer(__typename=", this.a, ", actorFields=", this.b, ")");
     }
     public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

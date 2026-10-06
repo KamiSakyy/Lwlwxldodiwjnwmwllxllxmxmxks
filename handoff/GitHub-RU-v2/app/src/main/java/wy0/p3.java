@@ -300,7 +300,7 @@ public final class p3 implements y71.j {
                     jn0.n4 n4Var = (h4Var == null || (j4Var2 = h4Var.c) == null || (list2 = j4Var2.b.a) == null || (f4Var = (jn0.f4) x61.m.f0(list2)) == null) ? null : f4Var.a.b;
                     jn0.h4 h4Var2 = d4Var.a;
                     List<jn0.e4> S = (h4Var2 == null || (j4Var = h4Var2.c) == null || (list = j4Var.a.b) == null) ? null : x61.m.S(list);
-                    List<jn0.g4> list3 = x61.r.r;
+                    List<jn0.g4> list3 = x61.rShadow.r;
                     if (S == null) {
                         S = list3;
                     }
@@ -545,7 +545,7 @@ public final class p3 implements y71.j {
                             sy.y.j(obj2);
                             am amVar = ((xl) obj).a;
                             bm bmVar = amVar != null ? amVar.c : null;
-                            Collection<zl> collection = x61.r.r;
+                            Collection<zl> collection = x61.rShadow.r;
                             if (bmVar != null) {
                                 Collection collection2 = amVar.c.a.a;
                                 if (collection2 != null) {
@@ -817,7 +817,7 @@ public final class p3 implements y71.j {
                             vo voVar = roVar.a;
                             List<so> list2 = voVar != null ? voVar.a.b : null;
                             if (list2 == null) {
-                                list2 = x61.r.r;
+                                list2 = x61.rShadow.r;
                             }
                             ArrayList arrayList2 = new ArrayList();
                             for (so soVar : list2) {
@@ -870,7 +870,7 @@ public final class p3 implements y71.j {
                             mg0 mg0Var = (mg0) obj;
                             Iterable<ng0> iterable = mg0Var.a.a.b;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList arrayList4 = new ArrayList();
                             for (ng0 ng0Var : iterable) {
@@ -923,7 +923,7 @@ public final class p3 implements y71.j {
                             x20 x20Var = (x20) obj;
                             Iterable<y20> iterable2 = x20Var.a.c;
                             if (iterable2 == null) {
-                                iterable2 = x61.r.r;
+                                iterable2 = x61.rShadow.r;
                             }
                             ArrayList arrayList6 = new ArrayList();
                             for (y20 y20Var : iterable2) {
@@ -974,7 +974,7 @@ public final class p3 implements y71.j {
                         if (i12 != 0) {
                             sy.y.j(obj15);
                             ux0.a aVar15 = ((ux0.c) obj).a;
-                            Object j = in.r.j(aVar15 != null ? aVar15.a : null, "Invalid project or item id", n1.t);
+                            Object j = in.rShadow.j(aVar15 != null ? aVar15.a : null, "Invalid project or item id", n1.t);
                             a4Var.v = 1;
                             if (this.s.c(j, a4Var) == aVar14) {
                                 return aVar14;
@@ -1006,8 +1006,8 @@ public final class p3 implements y71.j {
                         i13 = b4Var.v;
                         if (i13 != 0) {
                             sy.y.j(obj16);
-                            ux0.f1 f1Var = ((ux0.d1) obj).a;
-                            Object j2 = in.r.j(f1Var != null ? f1Var.a : null, "Invalid project, item id, fieldId or value", n1.u);
+                            ux0.f1Shadow f1Var = ((ux0.d1) obj).a;
+                            Object j2 = in.rShadow.j(f1Var != null ? f1Var.a : null, "Invalid project, item id, fieldId or value", n1.u);
                             b4Var.v = 1;
                             if (this.s.c(j2, b4Var) == aVar16) {
                                 return aVar16;
@@ -1039,8 +1039,8 @@ public final class p3 implements y71.j {
                         i14 = d4Var.v;
                         if (i14 != 0) {
                             sy.y.j(obj17);
-                            ux0.f1 f1Var2 = ((ux0.d1) obj).a;
-                            Object j3 = in.r.j(f1Var2 != null ? f1Var2.a : null, "Invalid project, item id, fieldId or value", n1.v);
+                            ux0.f1Shadow f1Var2 = ((ux0.d1) obj).a;
+                            Object j3 = in.rShadow.j(f1Var2 != null ? f1Var2.a : null, "Invalid project, item id, fieldId or value", n1.v);
                             d4Var.v = 1;
                             if (this.s.c(j3, d4Var) == aVar17) {
                                 return aVar17;
@@ -1073,7 +1073,7 @@ public final class p3 implements y71.j {
                         if (i15 != 0) {
                             sy.y.j(obj18);
                             ux0.f fVar = ((ux0.h) obj).a;
-                            Object j4 = in.r.j(fVar != null ? fVar.a : null, "Invalid project, item id, fieldId or value", n1.w);
+                            Object j4 = in.rShadow.j(fVar != null ? fVar.a : null, "Invalid project, item id, fieldId or value", n1.w);
                             f4Var.v = 1;
                             if (this.s.c(j4, f4Var) == aVar18) {
                                 return aVar18;
@@ -1106,7 +1106,7 @@ public final class p3 implements y71.j {
                         if (i16 != 0) {
                             sy.y.j(obj19);
                             ux0.f fVar2 = ((ux0.h) obj).a;
-                            Object j5 = in.r.j(fVar2 != null ? fVar2.a : null, "Invalid project, item id, fieldId or value", n1.x);
+                            Object j5 = in.rShadow.j(fVar2 != null ? fVar2.a : null, "Invalid project, item id, fieldId or value", n1.x);
                             g4Var.v = 1;
                             if (this.s.c(j5, g4Var) == aVar19) {
                                 return aVar19;
@@ -1139,7 +1139,7 @@ public final class p3 implements y71.j {
                         if (i17 != 0) {
                             sy.y.j(obj20);
                             ux0.q qVar4 = ((ux0.p) obj).a;
-                            Object j6 = in.r.j(qVar4 != null ? qVar4.a : null, "Invalid owner or repository name", n1.y);
+                            Object j6 = in.rShadow.j(qVar4 != null ? qVar4.a : null, "Invalid owner or repository name", n1.y);
                             i4Var.v = 1;
                             if (this.s.c(j6, i4Var) == aVar20) {
                                 return aVar20;
@@ -1172,7 +1172,7 @@ public final class p3 implements y71.j {
                         if (i18 != 0) {
                             sy.y.j(obj21);
                             ux0.t1 t1Var = ((ux0.r1) obj).a;
-                            Object j7 = in.r.j(t1Var != null ? t1Var.a : null, "Invalid owner or repository name", n1.z);
+                            Object j7 = in.rShadow.j(t1Var != null ? t1Var.a : null, "Invalid owner or repository name", n1.z);
                             j4Var.v = 1;
                             if (this.s.c(j7, j4Var) == aVar21) {
                                 return aVar21;
@@ -1205,7 +1205,7 @@ public final class p3 implements y71.j {
                         if (i19 != 0) {
                             sy.y.j(obj23);
                             ux0.p0 p0Var = ((ux0.l0) obj).a;
-                            Object j8 = in.r.j((p0Var == null || (m0Var = p0Var.b.c) == null) ? null : m0Var.a, "Invalid owner or repository name", n1.A);
+                            Object j8 = in.rShadow.j((p0Var == null || (m0Var = p0Var.b.c) == null) ? null : m0Var.a, "Invalid owner or repository name", n1.A);
                             k4Var.v = 1;
                             if (this.s.c(j8, k4Var) == aVar22) {
                                 return aVar22;
@@ -1270,8 +1270,8 @@ public final class p3 implements y71.j {
                         i22 = n4Var.v;
                         if (i22 != 0) {
                             sy.y.j(obj25);
-                            ux0.x xVar = ((ux0.u) obj).a;
-                            Object j9 = in.r.j((xVar == null || (vVar = xVar.c) == null) ? null : vVar.b, "Invalid owner id", n1.B);
+                            ux0.xShadow xVar = ((ux0.u) obj).a;
+                            Object j9 = in.rShadow.j((xVar == null || (vVar = xVar.c) == null) ? null : vVar.b, "Invalid owner id", n1.B);
                             n4Var.v = 1;
                             if (this.s.c(j9, n4Var) == aVar24) {
                                 return aVar24;
@@ -1370,7 +1370,7 @@ public final class p3 implements y71.j {
                         if (i25 != 0) {
                             sy.y.j(obj28);
                             ux0.u0 u0Var = ((ux0.s0) obj).a;
-                            Object j10 = in.r.j(u0Var != null ? u0Var.b : null, "Invalid owner or repository name", n1.C);
+                            Object j10 = in.rShadow.j(u0Var != null ? u0Var.b : null, "Invalid owner or repository name", n1.C);
                             s4Var.v = 1;
                             if (this.s.c(j10, s4Var) == aVar27) {
                                 return aVar27;

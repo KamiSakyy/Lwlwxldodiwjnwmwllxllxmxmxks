@@ -23,7 +23,7 @@ public final class p implements v81.e {
     public n0.w b;
     public o c;
     public volatile w d;
-    public q81.v e;
+    public q81.vShadow e;
     public volatile boolean f;
 
     public p(q81.u uVar, u81.n nVar, n0.w wVar, o oVar) {
@@ -32,8 +32,8 @@ public final class p implements v81.e {
         this.b = wVar;
         this.c = oVar;
         List list = uVar.r;
-        q81.v vVar = q81.v.x;
-        this.e = list.contains(vVar) ? vVar : q81.v.w;
+        q81.vShadow vVar = q81.vShadow.x;
+        this.e = list.contains(vVar) ? vVar : q81.vShadow.w;
     }
 
     @Override // v81.e
@@ -150,7 +150,7 @@ public final class p implements v81.e {
             k71.k.f(removeFirst, "removeFirst(...)");
             nVar = (q81.n) removeFirst;
         }
-        q81.v vVar = this.e;
+        q81.vShadow vVar = this.e;
         k71.k.g(vVar, "protocol");
         ia.d dVar = new ia.d(4);
         int size = nVar.size();
@@ -216,8 +216,8 @@ public final class p implements v81.e {
         boolean z2 = ((q81.y) bVar.e) != null;
         q81.n nVar = (q81.n) bVar.d;
         ArrayList arrayList = new ArrayList(nVar.size() + 4);
-        arrayList.add(new c(c.f, (String) bVar.c));
-        h91.k kVar = c.g;
+        arrayList.add(new cShadow(c.f, (String) bVar.c));
+        h91.kShadow kVar = c.g;
         q81.o oVar = (q81.o) bVar.b;
         k71.k.g(oVar, "url");
         String b = oVar.b();
@@ -225,12 +225,12 @@ public final class p implements v81.e {
         if (d != null) {
             b = b + '?' + d;
         }
-        arrayList.add(new c(kVar, b));
+        arrayList.add(new cShadow(kVar, b));
         String a = ((q81.n) bVar.d).a("Host");
         if (a != null) {
-            arrayList.add(new c(c.i, a));
+            arrayList.add(new cShadow(c.i, a));
         }
-        arrayList.add(new c(c.h, oVar.a));
+        arrayList.add(new cShadow(c.h, oVar.a));
         int size = nVar.size();
         for (int i2 = 0; i2 < size; i2++) {
             String b2 = nVar.b(i2);
@@ -239,7 +239,7 @@ public final class p implements v81.e {
             String lowerCase = b2.toLowerCase(locale);
             k71.k.f(lowerCase, "toLowerCase(...)");
             if (!g.contains(lowerCase) || (lowerCase.equals("te") && nVar.e(i2).equals("trailers"))) {
-                arrayList.add(new c(lowerCase, nVar.e(i2)));
+                arrayList.add(new cShadow(lowerCase, nVar.e(i2)));
             }
         }
         o oVar2 = this.c;

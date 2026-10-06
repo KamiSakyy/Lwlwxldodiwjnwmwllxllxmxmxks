@@ -5,7 +5,7 @@ import c71.j;
 import sy.y;
 import v71.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends j implements j71.e {
@@ -46,7 +46,7 @@ public final class a extends j implements j71.e {
                     y.j(obj);
                     l0 l0Var = this.x.b;
                     this.w = 1;
-                    obj = n1.v(l0Var, this);
+                    obj = n1Shadow.v(l0Var, this);
                     if (obj == aVar) {
                         return aVar;
                     }
@@ -65,7 +65,7 @@ public final class a extends j implements j71.e {
                     y.j(obj);
                     l0 l0Var2 = this.x.b;
                     this.w = 1;
-                    obj = n1.v(l0Var2, this);
+                    obj = n1Shadow.v(l0Var2, this);
                     if (obj == aVar2) {
                         return aVar2;
                     }

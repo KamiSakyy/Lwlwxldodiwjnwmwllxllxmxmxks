@@ -64,7 +64,7 @@ public final class e0 extends c71.j implements j71.c {
                 }
                 String upperCase = this.A.toUpperCase(Locale.ROOT);
                 k71.k.f(upperCase, "toUpperCase(...)");
-                SteerAgentTaskRequest w = sy.p.w(new SteerCommand$PermissionResponse(this.z, this.B, z2.valueOf(upperCase)));
+                SteerAgentTaskRequest w = sy.pShadow.w(new SteerCommand$PermissionResponse(this.z, this.B, z2.valueOf(upperCase)));
                 this.w = 2;
                 if (((mp.c) obj).a(this.y, w, this) == aVar) {
                     return aVar;
@@ -91,7 +91,7 @@ public final class e0 extends c71.j implements j71.c {
                     }
                     sy.y.j(obj);
                 }
-                SteerAgentTaskRequest w2 = sy.p.w(new SteerCommand$AskUserResponse(this.z, this.A, this.B));
+                SteerAgentTaskRequest w2 = sy.pShadow.w(new SteerCommand$AskUserResponse(this.z, this.A, this.B));
                 this.w = 2;
                 if (((mp.c) obj).a(this.y, w2, this) == aVar2) {
                     return aVar2;

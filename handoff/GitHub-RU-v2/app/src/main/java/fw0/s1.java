@@ -9,7 +9,7 @@ public final class s1 implements aa.h0 {
     public boolean C;
     public m1 D;
     public o1 E;
-    public f1 F;
+    public f1Shadow F;
     public cp0.g G;
     public d6 H;
     public String a;
@@ -39,7 +39,7 @@ public final class s1 implements aa.h0 {
     public boolean y;
     public String z;
 
-    public s1(String str, String str2, String str3, String str4, String str5, String str6, g1 g1Var, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, h1 h1Var, String str7, String str8, String str9, k1 k1Var, String str10, n1 n1Var, p1 p1Var, q1 q1Var, boolean z6, l1 l1Var, boolean z7, boolean z8, String str11, boolean z9, boolean z10, boolean z12, m1 m1Var, o1 o1Var, f1 f1Var, cp0.g gVar, d6 d6Var) {
+    public s1(String str, String str2, String str3, String str4, String str5, String str6, g1 g1Var, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, h1 h1Var, String str7, String str8, String str9, k1 k1Var, String str10, n1 n1Var, p1 p1Var, q1 q1Var, boolean z6, l1 l1Var, boolean z7, boolean z8, String str11, boolean z9, boolean z10, boolean z12, m1 m1Var, o1 o1Var, f1Shadow f1Var, cp0.g gVar, d6 d6Var) {
         this.a = str;
         this.b = str2;
         this.c = str3;

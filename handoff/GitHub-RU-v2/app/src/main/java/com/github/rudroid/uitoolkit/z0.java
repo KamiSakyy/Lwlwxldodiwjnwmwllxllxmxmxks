@@ -73,7 +73,7 @@ public final class z0 {
                     Object obj3 = arrayList2.get(i7);
                     i7++;
                     if ((((o1) obj3).a / i4) * 100.0f < 6.0f && (i2 = i2 + 1) < 0) {
-                        sy.d0.w();
+                        sy.d0Shadow.w();
                         throw null;
                     }
                 }
@@ -135,7 +135,7 @@ public final class z0 {
                 i13++;
                 int i14 = i12 + 1;
                 if (i12 < 0) {
-                    sy.d0.x();
+                    sy.d0Shadow.x();
                     throw null;
                 }
                 final o1 o1Var = (o1) obj5;

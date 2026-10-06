@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.ui.h1;
 import com.github.rudroid.utilities.ui.u0;
 import com.github.rudroid.viewmodels.v3;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -44,7 +44,7 @@ public final class b0 extends k1 implements v3, com.github.rudroid.utilities.vie
         this.f8753t = bVar;
         this.f8754u = cVar;
         g1.Companion.getClass();
-        y1 c10 = n1.c(new u0(x61.r.r));
+        y1 c10 = n1Shadow.c(new u0(x61.rShadow.r));
         this.f8755v = c10;
         this.f8756w = new a0(new i1(c10), this);
         this.f8757x = new x01.i((String) null, false, true);
@@ -52,7 +52,7 @@ public final class b0 extends k1 implements v3, com.github.rudroid.utilities.vie
     }
 
     public final void D() {
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new x(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new x(this, null), 3);
     }
 
     public final void P(y71.g1 g1Var, fl.b bVar, boolean z10) {

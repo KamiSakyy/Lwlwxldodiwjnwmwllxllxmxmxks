@@ -22,7 +22,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jo.f4;
+import jo.f4Shadow;
 import jo.w5;
 import kotlin.NoWhenBranchMatchedException;
 import kotlinx.serialization.KSerializer;
@@ -90,7 +90,7 @@ public abstract class t1 {
         return valueOf + ":" + t9Var;
     }
 
-    public static final boolean H(x.h0 h0Var, Object obj, Object obj2) {
+    public static final boolean H(x.h0Shadow h0Var, Object obj, Object obj2) {
         Object g = h0Var.g(obj);
         if (g == null) {
             return false;
@@ -110,7 +110,7 @@ public abstract class t1 {
         return l;
     }
 
-    public static final void I(x.h0 h0Var, Object obj) {
+    public static final void I(x.h0Shadow h0Var, Object obj) {
         boolean z;
         long[] jArr = h0Var.a;
         int length = jArr.length - 2;
@@ -486,7 +486,7 @@ public abstract class t1 {
             KSerializer kSerializer = (KSerializer) ((y61.c) it).next();
             if (str.equals(kSerializer.getDescriptor().a())) {
                 StringBuilder v = f4.v("\n                The name of serial descriptor should uniquely identify associated serializer.\n                For serial name ", str, " there already exists ");
-                v.append(k71.x.a(kSerializer.getClass()).c());
+                v.append(k71.xShadow.a(kSerializer.getClass()).c());
                 v.append(".\n                Please refer to SerialDescriptor documentation for additional information.\n            ");
                 throw new IllegalArgumentException(t71.q.r(v.toString()));
             }
@@ -500,7 +500,7 @@ public abstract class t1 {
         return new c2.c(Float.intBitsToFloat(i), Float.intBitsToFloat(i2), Float.intBitsToFloat((int) (j2 >> 32)) + Float.intBitsToFloat(i), Float.intBitsToFloat((int) (j2 & 4294967295L)) + Float.intBitsToFloat(i2));
     }
 
-    public static final void d(x.h0 h0Var, Object obj, Object obj2) {
+    public static final void d(x.h0Shadow h0Var, Object obj, Object obj2) {
         int f = h0Var.f(obj);
         boolean z = f < 0;
         Object obj3 = z ? null : h0Var.c[f];
@@ -537,7 +537,7 @@ public abstract class t1 {
             i2++;
             int i3 = i + 1;
             if (i < 0) {
-                sy.d0.x();
+                sy.d0Shadow.x();
                 throw null;
             }
             wz0.e c = wz0.d.c((String) obj, 2);
@@ -566,7 +566,7 @@ public abstract class t1 {
     public static yz0.b1 g(wq0.a aVar, List list) {
         LinkedHashMap linkedHashMap;
         String str;
-        x61.r rVar;
+        x61.rShadow rVar;
         int intValue;
         String str2;
         java.util.List r0;
@@ -604,7 +604,7 @@ public abstract class t1 {
         String G = G(aVar);
         t9 t9Var2 = aVar.a;
         int i2 = bx0.e.b[k41.b.X(t9Var2).ordinal()];
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         int i3 = 0;
         switch (i2) {
             case 1:
@@ -730,7 +730,7 @@ public abstract class t1 {
         b01.k kVar;
         boolean z4;
         String str3;
-        x61.r rVar;
+        x61.rShadow rVar;
         List list2;
         int i4;
         String str4;
@@ -744,7 +744,7 @@ public abstract class t1 {
         jr jrVar2 = o0Var.d;
         String str6 = p0Var.b;
         String str7 = p0Var.c;
-        uf0.h0 h0Var = p0Var.q;
+        uf0.h0Shadow h0Var = p0Var.q;
         com.github.service.models.response.a d = aa1.b.d(h0Var != null ? h0Var.c : null);
         String str8 = o0Var.a;
         String str9 = o0Var.b;
@@ -829,7 +829,7 @@ public abstract class t1 {
                 i3 = i9;
                 str2 = str6;
                 str3 = str16;
-                rVar = x61.r.r;
+                rVar = x61.rShadow.r;
             } else {
                 z4 = z16;
                 ArrayList arrayList = new ArrayList();
@@ -994,7 +994,7 @@ public abstract class t1 {
     /* JADX WARN: Type inference failed for: r11v1, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r11v2, types: [java.util.ArrayList] */
     public static final LinkedHashMap u(xt0.v vVar, cu cuVar) {
-        x61.r rVar;
+        x61.rShadow rVar;
         ArrayList r112;
         DiffLineType diffLineType;
         List list;
@@ -1003,7 +1003,7 @@ public abstract class t1 {
         g7 g7Var2;
         xt0.v vVar2 = vVar;
         List list3 = vVar2.c.a;
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         if (list3 == null) {
             list3 = rVar2;
         }
@@ -1045,7 +1045,7 @@ public abstract class t1 {
                     String str2 = h7Var != null ? h7Var.a : null;
                     yp0.c cVar = k7Var.k;
                     String str3 = sVar.c;
-                    x61.r rVar3 = rVar2;
+                    x61.rShadow rVar3 = rVar2;
                     gu0.c cVar2 = k7Var.l;
                     at0.a aVar = k7Var.o;
                     String str4 = k7Var.h;

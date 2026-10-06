@@ -7,7 +7,7 @@ import java.util.Comparator;
 public final class j<T> implements Comparator {
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
-        return sy.t.g(((DiscussionCategoryData) obj).s, ((DiscussionCategoryData) obj2).s);
+        return sy.tShadow.g(((DiscussionCategoryData) obj).s, ((DiscussionCategoryData) obj2).s);
     }
     public Object j(Object p1) { return null; }
 }

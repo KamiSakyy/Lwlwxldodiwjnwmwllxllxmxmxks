@@ -16,7 +16,7 @@ public abstract class a {
     static {
         xd.Companion.getClass();
         r b = l0.b(xd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("name", b, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         m mVar2 = new m("isEnabled", l0.b(pd.a), (String) null, rVar, rVar, rVar);

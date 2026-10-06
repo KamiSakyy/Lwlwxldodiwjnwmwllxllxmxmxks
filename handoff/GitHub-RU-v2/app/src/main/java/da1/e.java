@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class e extends b0 {
+final class e extends b0Shadow {
     public e() {
         super("InColumnGroup", 11);
     }
@@ -11,11 +11,11 @@ final class e extends b0 {
     
         if (r7.equals("template") == false) goto L40;
      */
-    @Override // da1.b0
+    @Override // da1.b0Shadow
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean d(s0 s0Var, b bVar) {
+    public final boolean d(s0 s0Var, bShadow bVar) {
         if (b0.a(s0Var)) {
             bVar.t((k0) s0Var);
             return true;
@@ -93,7 +93,7 @@ final class e extends b0 {
         }
     }
 
-    public final boolean e(s0 s0Var, b bVar) {
+    public final boolean e(s0 s0Var, bShadow bVar) {
         if (!bVar.i("colgroup")) {
             bVar.k(this);
             return false;

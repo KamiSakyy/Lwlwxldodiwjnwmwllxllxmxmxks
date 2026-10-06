@@ -4,12 +4,12 @@ import aa.w;
 import java.util.List;
 import k71.k;
 import np.m;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = d0.n("reopenDiscussion");
+    public static final List b = d0Shadow.n("reopenDiscussion");
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

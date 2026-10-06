@@ -2,7 +2,7 @@ package kw;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -57,7 +57,7 @@ public abstract class j implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, eVar.b);
         fVar.z0("asCodeOwner");
-        f4.C(eVar.c, aa.c.f, fVar, wVar, "requestedReviewer");
+        f4Shadow.C(eVar.c, aa.c.f, fVar, wVar, "requestedReviewer");
         aa.c.b(aa.c.c(i.a, true)).b(fVar, wVar, eVar.d);
     }
 }

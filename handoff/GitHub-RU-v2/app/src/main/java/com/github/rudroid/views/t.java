@@ -6,13 +6,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.github.rudroid.copilot.h1;
-import k71.x;
-import lg.b;
+import k71.xShadow;
+import lg.bShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t extends ConstraintLayout {
-    public static final /* synthetic */ r71.e[] I = {new k71.m(t.class, "text", "getText()Ljava/lang/CharSequence;", 0), h1.w(x.a, t.class, "progress", "getProgress()I", 0)};
-    public lg.b H;
+    public static final /* synthetic */ r71.e[] I = {new k71.m(t.class, "text", "getText()Ljava/lang/CharSequence;", 0), h1.w(xShadow.a, t.class, "progress", "getProgress()I", 0)};
+    public lg.bShadow H;
 
     /* JADX WARN: Multi-variable type inference failed */
     private final void setProgressValue(int i) {
@@ -43,21 +43,21 @@ public final class t extends ConstraintLayout {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public final void setLabelColor(lg.b bVar) {
+    public final void setLabelColor(lg.bShadow bVar) {
         k71.k.g(bVar, "newColor");
         this.H = bVar;
-        b.a aVar = lg.b.Companion;
+        bShadow.a aVar = lg.bShadow.Companion;
         Context context = getContext();
         k71.k.f(context, "getContext(...)");
-        lg.b bVar2 = this.H;
+        lg.bShadow bVar2 = this.H;
         aVar.getClass();
-        setBackground(b.a.b(context, bVar2));
+        setBackground(bShadow.a.b(context, bVar2));
         int dimensionPixelSize = getResources().getDimensionPixelSize(2131165322);
         int i = dimensionPixelSize / 3;
         setPadding(dimensionPixelSize, i, dimensionPixelSize, i);
         Context context2 = getContext();
         k71.k.f(context2, "getContext(...)");
-        int d = b.a.d(context2, this.H);
+        int d = bShadow.a.d(context2, this.H);
         View findViewById = findViewById(2131363422);
         TextView textView = findViewById instanceof TextView ? (TextView) findViewById : null;
         if (textView != null) {

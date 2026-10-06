@@ -34,6 +34,6 @@ public final class c5 {
         sb.append(", requiresCodeOwnerReviews=");
         sb.append(this.b);
         sb.append(", viewerAllowedToDismissReviews=");
-        return jo.f4.s(sb, this.c, ")");
+        return jo.f4Shadow.s(sb, this.c, ")");
     }
 }

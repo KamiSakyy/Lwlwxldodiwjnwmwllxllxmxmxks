@@ -40,7 +40,7 @@ public final class b {
         long j32 = d.E;
         long j33 = d.F;
         a = new e(true, j, j2, j3, j4, j5, j6, j7, j8, j9, j11, j12, j13, j14, j15, j16, j17, j18, j19, j21, j22, j23, j24, j25, j26, j27, j28, j29, j31, j32, j33, d.G, d.H, d.I, d.J, d.K, d.L, d.M, d.N, d.O, d.P, d.Q, d.R, d.S, d.T, d.U, d.Z, d.a0, d.b0, d.W, d.X, d.c0, d.d0, d.e0, d.f0, d.g0, d.h0, d.i0, d.j0, j33, j9, d.n0, d.o0, d.p0, d.k0, d.l0, d.m0, d.q0, d.r0, d.s0, d.t0, d.u0, d.v0, d.w0, d.x0, d.y0, d.z0, d.A0, d.B0, d.C0, d.D0, d.E0, d.F0, d.G0);
-        long j34 = c.b;
+        long j34 = cShadow.b;
         long j35 = c.c;
         long j36 = c.d;
         long j37 = c.f;

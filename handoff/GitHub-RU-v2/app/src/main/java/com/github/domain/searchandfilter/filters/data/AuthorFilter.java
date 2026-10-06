@@ -1,6 +1,6 @@
 package com.github.domain.searchandfilter.filters.data;
 
-import a0.c2;
+import a0Shadow.c2;
 import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.compose.foundation.lazy.layout.p1;
@@ -9,19 +9,19 @@ import com.google.android.gms.internal.measurement.d5;
 import java.util.ArrayList;
 import java.util.List;
 import k71.k;
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l81.n;
 import sy.w;
-import w80.a0;
+import w80.a0Shadow;
 import x61.m;
 
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class AuthorFilter extends d {
     public static final w61.h[] w;
-    public static final a0 x;
+    public static final a0Shadow x;
     public yz0.f v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<AuthorFilter> CREATOR = new a21.g(15);
@@ -35,14 +35,14 @@ public final class AuthorFilter extends d {
     static {
         w61.i iVar = w61.i.r;
         w = new w61.h[]{w.s(iVar, new c2(19)), null, w.s(iVar, new c2(20))};
-        x = new a0(1);
+        x = new a0Shadow(1);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ AuthorFilter(int i, l lVar, String str, yz0.f fVar) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, AuthorFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, AuthorFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {
@@ -96,7 +96,7 @@ public final class AuthorFilter extends d {
         }
         com.github.domain.database.serialization.a.Companion.getClass();
         n nVar = com.github.domain.database.serialization.a.b;
-        return nVar.b(b91.g.C(((l81.c) nVar).b, x.a(yz0.f.class)), d5.U(fVar));
+        return nVar.b(b91.g.C(((l81.c) nVar).b, xShadow.a(yz0.f.class)), d5.U(fVar));
     }
 
     @Override // com.github.domain.searchandfilter.filters.data.d

@@ -6,6 +6,6 @@ public abstract class w70 {
 
     static {
         a70.Companion.getClass();
-        new aa.q0("SearchShortcutQueryText", x61.r.r, sy.d0.n(a70.a));
+        new aa.q0("SearchShortcutQueryText", x61.rShadow.r, sy.d0Shadow.n(a70.a));
     }
 }

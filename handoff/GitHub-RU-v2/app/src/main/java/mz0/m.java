@@ -4,12 +4,12 @@ import aa.w;
 import java.util.List;
 import lz0.u;
 import lz0.v;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements aa.a {
     public static final m a = new m();
-    public static final List b = d0.o(new String[]{"email", "primaryEmail", "login", "mobileAuthStatus", "id", "__typename"});
+    public static final List b = d0Shadow.o(new String[]{"email", "primaryEmail", "login", "mobileAuthStatus", "id", "__typename"});
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

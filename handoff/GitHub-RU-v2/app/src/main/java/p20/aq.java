@@ -7,7 +7,7 @@ import u10.y10;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class aq implements aaShadow.a {
     public static final aq a = new aq();
-    public static final List b = sy.d0.n("unfollowUser");
+    public static final List b = sy.d0Shadow.n("unfollowUser");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

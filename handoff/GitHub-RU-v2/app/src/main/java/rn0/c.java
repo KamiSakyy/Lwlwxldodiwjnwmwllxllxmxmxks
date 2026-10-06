@@ -1,12 +1,12 @@
 package rn0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements aa.a {
     public static final c a = new c();
-    public static final List b = sy.d0.o(new String[]{"id", "branch", "rerunnable", "repository", "workflowRun", "app", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "branch", "rerunnable", "repository", "workflowRun", "app", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0029, code lost:
     
@@ -127,7 +127,7 @@ public final class c implements aa.a {
         fVar.z0("branch");
         aa.c.b(aa.c.c(b.a, false)).b(fVar, wVar, cVar.b);
         fVar.z0("rerunnable");
-        f4.C(cVar.c, aa.c.f, fVar, wVar, "repository");
+        f4Shadow.C(cVar.c, aa.c.f, fVar, wVar, "repository");
         aa.c.c(k.a, false).b(fVar, wVar, cVar.d);
         fVar.z0("workflowRun");
         aa.c.b(aa.c.c(n.a, false)).b(fVar, wVar, cVar.e);

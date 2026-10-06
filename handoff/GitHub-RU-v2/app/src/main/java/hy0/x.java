@@ -2,14 +2,14 @@ package hy0;
 
 import gy0.b0;
 import gy0.e0;
-import iy0.a0;
+import iy0.a0Shadow;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x implements aa.a {
     public static final x a = new x();
-    public static final List b = d0.o(new String[]{"__typename", "item"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "item"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -28,7 +28,7 @@ public final class x implements aa.a {
             }
         }
         eVar.s0();
-        iy0.z c = a0.c(eVar, wVar);
+        iy0.z c = a0Shadow.c(eVar, wVar);
         if (str != null) {
             return new e0(str, b0Var, c);
         }
@@ -45,7 +45,7 @@ public final class x implements aa.a {
         aa.c.a.b(fVar, wVar, e0Var.a);
         fVar.z0("item");
         aa.c.b(aa.c.c(u.a, true)).b(fVar, wVar, e0Var.b);
-        List list = a0.a;
-        a0.d(fVar, wVar, e0Var.c);
+        List list = a0Shadow.a;
+        a0Shadow.d(fVar, wVar, e0Var.c);
     }
 }

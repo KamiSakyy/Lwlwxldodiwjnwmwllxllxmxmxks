@@ -7,11 +7,11 @@ public final class r9 extends c71.c {
     public com.github.service.wrapper.b u;
     public qg0 v;
     public /* synthetic */ Object w;
-    public final /* synthetic */ rm0.y9 x;
+    public final /* synthetic */ rm0.y9Shadow x;
     public int y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public r9(rm0.y9 y9Var, c71.c cVar) {
+    public r9(rm0.y9Shadow y9Var, c71.c cVar) {
         super(cVar);
         this.x = y9Var;
     }

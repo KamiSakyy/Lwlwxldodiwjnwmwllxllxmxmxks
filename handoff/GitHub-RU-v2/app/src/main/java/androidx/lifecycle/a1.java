@@ -51,7 +51,7 @@ public final class a1 {
                 if (!linkedHashMap2.containsKey(str)) {
                     linkedHashMap2.put(str, null);
                 }
-                obj = y71.n1.c(linkedHashMap2.get(str));
+                obj = y71.n1Shadow.c(linkedHashMap2.get(str));
                 linkedHashMap3.put(str, obj);
             }
             return new y71.i1((y71.g1) obj);
@@ -62,7 +62,7 @@ public final class a1 {
             if (!linkedHashMap2.containsKey(str)) {
                 linkedHashMap2.put(str, null);
             }
-            obj2 = y71.n1.c(linkedHashMap2.get(str));
+            obj2 = y71.n1Shadow.c(linkedHashMap2.get(str));
             linkedHashMap4.put(str, obj2);
         }
         return new y71.i1((y71.g1) obj2);

@@ -6,7 +6,7 @@ import kc0.t70;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bu implements aaShadow.a {
     public static final bu a = new bu();
-    public static final List b = sy.d0.o(new String[]{"__typename", "login"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "login"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         bl0.a aVar;

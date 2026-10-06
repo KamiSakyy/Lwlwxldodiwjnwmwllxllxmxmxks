@@ -7,7 +7,7 @@ import jo.ek0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t20 implements aaShadow.a {
     public static final t20 a = new t20();
-    public static final List b = sy.d0.o("pageInfo", "nodes");
+    public static final List b = sy.d0Shadow.o("pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -3,12 +3,12 @@ package e00;
 import f00.e1;
 import f00.x0;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = d0.o("__typename", "id");
+    public static final List b = d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

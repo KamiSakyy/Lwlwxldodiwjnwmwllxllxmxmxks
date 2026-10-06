@@ -4,9 +4,9 @@ import aa.v0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w implements v0 {
-    public a0 a;
+    public a0Shadow a;
 
-    public w(a0 a0Var) {
+    public w(a0Shadow a0Var) {
         this.a = a0Var;
     }
 
@@ -18,7 +18,7 @@ public final class w implements v0 {
     }
 
     public final int hashCode() {
-        a0 a0Var = this.a;
+        a0Shadow a0Var = this.a;
         if (a0Var == null) {
             return 0;
         }

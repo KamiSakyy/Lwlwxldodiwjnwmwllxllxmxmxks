@@ -120,12 +120,12 @@ public final class f3 {
                             if (z7) {
                                 sVar.c0(-1311773265);
                                 float a = com.github.rudroid.uitoolkit.utils.h.a(ih.a.E, sVar);
-                                n = sy.d0.n(new u9.c(a, a, a, a));
+                                n = sy.d0Shadow.n(new u9.c(a, a, a, a));
                                 sVar.q(false);
                             } else {
                                 sVar.c0(-1311667741);
                                 sVar.q(false);
-                                n = sy.d0.n(new u9.a());
+                                n = sy.d0Shadow.n(new u9.a());
                             }
                             w1.r o = androidx.compose.foundation.layout.p2.o(rVar3, aVar4.r);
                             boolean z9 = (i11 & 3670016) == 1048576;

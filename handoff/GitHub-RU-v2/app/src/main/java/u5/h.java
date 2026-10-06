@@ -1,8 +1,8 @@
 package u5;
 
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public interface h {
-    void a(d0 d0Var);
+    void a(d0Shadow d0Var);
 }

@@ -9,7 +9,7 @@ import u10.j60;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ct implements aaShadow.a {
     public static final ct a = new ct();
-    public static final List b = sy.d0.o("__typename", "id", "url", "state", "milestone", "projectCards", "viewerCanDeleteHeadRef", "viewerCanReopen");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "url", "state", "milestone", "projectCards", "viewerCanDeleteHeadRef", "viewerCanReopen");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0040, code lost:
     
@@ -205,7 +205,7 @@ public final class ct implements aaShadow.a {
         aa.c.c(bt.a, false).b(fVar, wVar, j60Var.f);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(j60Var.g, bVar2, fVar, wVar, "viewerCanReopen");
+        jo.f4Shadow.C(j60Var.g, bVar2, fVar, wVar, "viewerCanReopen");
         bVar2.b(fVar, wVar, Boolean.valueOf(j60Var.h));
         List list = i30.j.a;
         i30.j.d(fVar, wVar, j60Var.i);

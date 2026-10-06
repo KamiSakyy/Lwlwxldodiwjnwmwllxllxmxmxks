@@ -29,7 +29,7 @@ public final class we {
         x = weVarArr;
         y = v8.l0.t(weVarArr);
         Companion = new ve();
-        sy.d0.o("DISMISSED", "EVENT_TYPE", "EVENT_TYPE_RESOURCE", "RESOURCE");
+        sy.d0Shadow.o("DISMISSED", "EVENT_TYPE", "EVENT_TYPE_RESOURCE", "RESOURCE");
     }
 
     public we(String str, int i, String str2) {

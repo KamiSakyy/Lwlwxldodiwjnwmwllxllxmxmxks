@@ -1,12 +1,12 @@
 package ms;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r implements aa.a {
     public static final r a = new r();
-    public static final List b = sy.d0.o("totalCount", "nodes");
+    public static final List b = sy.d0Shadow.o("totalCount", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

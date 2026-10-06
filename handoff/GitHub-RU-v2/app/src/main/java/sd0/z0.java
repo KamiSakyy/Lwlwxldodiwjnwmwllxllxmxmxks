@@ -1,12 +1,12 @@
 package sd0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z0 implements aa.a {
     public static final z0 a = new z0();
-    public static final List b = sy.d0.o(new String[]{"id", "viewerCanBlock", "viewerCanUnblock", "viewerIsFollowing", "isFollowingViewer", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "viewerCanBlock", "viewerCanUnblock", "viewerIsFollowing", "isFollowingViewer", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;

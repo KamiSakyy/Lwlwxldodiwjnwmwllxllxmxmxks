@@ -30,6 +30,6 @@ public final class d0 {
     }
 
     public final String toString() {
-        return jo.f4.o("Labels(__typename=", this.a, ", nodes=", ")", this.b);
+        return jo.f4Shadow.o("Labels(__typename=", this.a, ", nodes=", ")", this.b);
     }
 }

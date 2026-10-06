@@ -19,7 +19,7 @@ final class v3<T> implements y71.j {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        w2Var.y0 = v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0) null, new j4(w2Var, str, null), 3);
+        w2Var.y0 = v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0Shadow) null, new j4(w2Var, str, null), 3);
         return w61.a0.a;
     }
 }

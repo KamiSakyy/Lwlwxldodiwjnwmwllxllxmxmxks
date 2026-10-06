@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vh implements aaShadow.a {
     public static final vh a = new vh();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "author", "createdAt", "lastEditedAt", "body"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "author", "createdAt", "lastEditedAt", "body"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -79,7 +79,7 @@ public final class vh implements aaShadow.a {
         gn0.r6.Companion.getClass();
         aa.x xVar = gn0.r6.a;
         wVar.e(xVar).b(fVar, wVar, dqVar.d);
-        no.a.e(fVar, "lastEditedAt", wVar, xVar).b(fVar, wVar, dqVar.e);
+        noShadow.a.e(fVar, "lastEditedAt", wVar, xVar).b(fVar, wVar, dqVar.e);
         fVar.z0("body");
         bVar.b(fVar, wVar, dqVar.f);
         qh0.d dVar = qh0.d.a;

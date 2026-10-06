@@ -11,7 +11,7 @@ import com.github.rudroid.viewmodels.v3;
 import java.util.concurrent.CancellationException;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -48,10 +48,10 @@ public final class g extends k1 implements com.github.rudroid.utilities.viewmode
         this.f8835s = new d.a();
         this.f8836t = cVar;
         this.f8837u = aVar;
-        this.f8838v = ((GlobalCodeSearchResultsRoute) sy.y.m(a1Var, k71.x.a(GlobalCodeSearchResultsRoute.class), x61.s.r)).f15051a;
+        this.f8838v = ((GlobalCodeSearchResultsRoute) sy.y.m(a1Var, k71.xShadow.a(GlobalCodeSearchResultsRoute.class), x61.s.r)).f15051a;
         x01.i.Companion.getClass();
         this.f8840x = x01.i.d;
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f8841y = c10;
         this.f8842z = new i1(c10);
         P();
@@ -68,7 +68,7 @@ public final class g extends k1 implements com.github.rudroid.utilities.viewmode
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.f8839w = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new f(this, z10, null), 3);
+        this.f8839w = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f(this, z10, null), 3);
     }
 
     public final boolean a() {

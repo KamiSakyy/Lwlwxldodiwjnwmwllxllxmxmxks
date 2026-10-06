@@ -6,6 +6,6 @@ public abstract class x40 {
 
     static {
         v40.Companion.getClass();
-        new aa.q0("TextFileType", x61.r.r, sy.d0.n(v40.a));
+        new aa.q0("TextFileType", x61.rShadow.r, sy.d0Shadow.n(v40.a));
     }
 }

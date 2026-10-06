@@ -21,7 +21,7 @@ public final class h3 implements z01.z, yb0 {
 
     @Override // z01.z
     public final y71.i a(String str, String str2) {
-        return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.r, new sf(str, str2 == null ? aa.t0.d : new aa.u0(str2)), null, true, null, null, 58), 10), 18), this.s);
+        return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.r, new sf(str, str2 == null ? aa.t0.d : new aa.u0(str2)), null, true, null, null, 58), 10), 18), this.s);
     }
 
     @Override // z01.z
@@ -32,7 +32,7 @@ public final class h3 implements z01.z, yb0 {
             d1Var.m((CancellationException) null);
         }
         this.t = null;
-        return y71.n1.y(new f3(new y71.y(new com.github.rudroid.d0(this, (a71.c) null, 7), com.github.service.wrapper.a.o(this.r, new ng("type:issue ".concat(str), "type:pr ".concat(str), str, "type:user ".concat(str), "type:org ".concat(str), str, z), null, false, null, null, 62)), 0), this.s);
+        return y71.n1Shadow.y(new f3(new y71.y(new com.github.rudroid.d0(this, (a71.c) null, 7), com.github.service.wrapper.a.o(this.r, new ng("type:issue ".concat(str), "type:pr ".concat(str), str, "type:user ".concat(str), "type:org ".concat(str), str, z), null, false, null, null, 62)), 0), this.s);
     }
 
     public final Object h() {

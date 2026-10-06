@@ -7,7 +7,7 @@ import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import c21.e0;
-import c21.u;
+import c21.uShadow;
 import i21.b;
 import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
@@ -31,7 +31,7 @@ public final class a {
             }
         }
         a aVar = c;
-        u.g(aVar);
+        uShadow.g(aVar);
         return aVar;
     }
 

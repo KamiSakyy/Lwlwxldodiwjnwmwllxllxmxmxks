@@ -6,7 +6,7 @@ import jo.i90;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rv implements aaShadow.a {
     public static final rv a = new rv();
-    public static final List b = sy.d0.o("__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -82,9 +82,9 @@ public final class rv implements aaShadow.a {
         bVar.b(fVar, wVar, i90Var.a);
         fVar.z0("hasIssuesEnabled");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(i90Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
-        jo.f4.C(i90Var.c, bVar2, fVar, wVar, "isArchived");
-        jo.f4.C(i90Var.d, bVar2, fVar, wVar, "id");
+        jo.f4Shadow.C(i90Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
+        jo.f4Shadow.C(i90Var.c, bVar2, fVar, wVar, "isArchived");
+        jo.f4Shadow.C(i90Var.d, bVar2, fVar, wVar, "id");
         bVar.b(fVar, wVar, i90Var.e);
         List list = dw.v5.a;
         dw.v5.d(fVar, wVar, i90Var.f);

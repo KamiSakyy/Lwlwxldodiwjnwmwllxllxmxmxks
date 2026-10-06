@@ -2,13 +2,13 @@ package xt;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements aa.a {
     public static final v a = new v();
-    public static final List b = d0.o("owner", "name", "isPrivate", "id", "__typename");
+    public static final List b = d0Shadow.o("owner", "name", "isPrivate", "id", "__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         Boolean bool;
@@ -77,7 +77,7 @@ public final class v implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, jVar.b);
         fVar.z0("isPrivate");
-        f4.C(jVar.c, aa.c.f, fVar, wVar, "id");
+        f4Shadow.C(jVar.c, aa.c.f, fVar, wVar, "id");
         bVar.b(fVar, wVar, jVar.d);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, jVar.e);

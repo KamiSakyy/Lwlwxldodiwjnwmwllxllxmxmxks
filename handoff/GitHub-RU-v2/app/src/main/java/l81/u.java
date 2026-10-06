@@ -1,7 +1,7 @@
 package l81;
 
 import com.google.android.gms.internal.measurement.i4;
-import k71.x;
+import k71.xShadow;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
@@ -20,7 +20,7 @@ public final class u implements KSerializer {
         if (k instanceof kotlinx.serialization.json.d) {
             return (kotlinx.serialization.json.d) k;
         }
-        throw m81.i.d(-1, k.toString(), "Unexpected JSON element, expected JsonPrimitive, had " + x.a(k.getClass()));
+        throw m81.i.d(-1, k.toString(), "Unexpected JSON element, expected JsonPrimitive, had " + xShadow.a(k.getClass()));
     }
 
     @Override // kotlinx.serialization.KSerializer

@@ -1,6 +1,6 @@
 package zm0;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
@@ -52,6 +52,6 @@ public final class m {
         sb.append(", onPullRequest=");
         sb.append(this.d);
         sb.append(", nodeIdFragment=");
-        return f4.q(sb, this.e, ")");
+        return f4Shadow.q(sb, this.e, ")");
     }
 }

@@ -6,7 +6,7 @@ import kc0.p10;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wp implements aaShadow.a {
     public static final wp a = new wp();
-    public static final List b = sy.d0.o(new String[]{"name", "code"});
+    public static final List b = sy.d0Shadow.o(new String[]{"name", "code"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

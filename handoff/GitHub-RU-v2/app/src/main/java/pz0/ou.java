@@ -23,7 +23,7 @@ public final class ou {
         v = ouVarArr;
         w = v8.l0.t(ouVarArr);
         Companion = new nu();
-        sy.d0.o(new String[]{"CLOSED", "OPEN"});
+        sy.d0Shadow.o(new String[]{"CLOSED", "OPEN"});
     }
 
     public ou(String str, int i, String str2) {

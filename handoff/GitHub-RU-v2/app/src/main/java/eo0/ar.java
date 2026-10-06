@@ -8,7 +8,7 @@ import jn0.t20;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ar implements aaShadow.a {
     public static final ar a = new ar();
-    public static final List b = sy.d0.o(new String[]{"__typename", "name", "id", "issueTypes", "pinnedIssues"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "name", "id", "issueTypes", "pinnedIssues"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

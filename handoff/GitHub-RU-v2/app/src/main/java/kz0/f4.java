@@ -16,7 +16,7 @@ public abstract class f4 {
     static {
         pd.Companion.getClass();
         aa.r b = v8.l0.b(pd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         aa.x xVar = xd.a;
@@ -26,7 +26,7 @@ public abstract class f4 {
         td.Companion.getClass();
         aa.x xVar2 = td.a;
         aa.s mVar3 = new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Commit");
+        List n = sy.d0Shadow.n("Commit");
         List list = dq0.c.a;
         List r2 = x61.l.r(new aa.s[]{mVar2, mVar3, no.a.c(list, "selections", "Commit", n, list)});
         hm.Companion.getClass();

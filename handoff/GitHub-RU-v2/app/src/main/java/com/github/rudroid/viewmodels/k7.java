@@ -57,7 +57,7 @@ public final class k7 extends androidx.lifecycle.k1 implements x3 {
         this.t = b0Var;
         this.u = cVar;
         fl.f.Companion.getClass();
-        this.v = y71.n1.c(fl.e.b(x61.r.r));
+        this.v = y71.n1Shadow.c(fl.e.b(x61.rShadow.r));
         this.w = new x01.i((String) null, false, true);
         v71.q1 q1Var = this.x;
         if (q1Var != null) {
@@ -67,14 +67,14 @@ public final class k7 extends androidx.lifecycle.k1 implements x3 {
         if (q1Var2 != null) {
             q1Var2.m((CancellationException) null);
         }
-        this.x = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new n7(this, null), 3);
+        this.x = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new n7(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
         v71.q1 q1Var = this.y;
         if (q1Var == null || !q1Var.f()) {
-            this.y = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new q7(this, null), 3);
+            this.y = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new q7(this, null), 3);
         }
     }
 

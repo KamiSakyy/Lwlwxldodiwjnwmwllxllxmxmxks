@@ -12,7 +12,7 @@ import g81.e;
 import java.util.Iterator;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l7.c0;
 import sy.w;
@@ -48,7 +48,7 @@ public final class StoredShortcutModel implements b {
 
     public /* synthetic */ StoredShortcutModel(int i, String str, String str2, String str3, List list, ShortcutColor shortcutColor, ShortcutIcon shortcutIcon, a aVar, ShortcutType shortcutType) {
         if (255 != (i & 255)) {
-            c1.l(i, 255, StoredShortcutModel$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 255, StoredShortcutModel$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

@@ -4,7 +4,7 @@ import com.github.service.models.response.Avatar;
 import ea0.c1;
 import java.util.ArrayList;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import t.q;
 import u10.p2;
 import u10.q2;
@@ -12,7 +12,7 @@ import u10.u2;
 import u10.v2;
 import u10.w2;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.b2;
 
 /* loaded from: /home/user/work/p/classes3.dex */

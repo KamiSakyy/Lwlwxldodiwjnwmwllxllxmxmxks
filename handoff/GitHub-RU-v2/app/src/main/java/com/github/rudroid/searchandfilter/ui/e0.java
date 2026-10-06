@@ -1086,7 +1086,7 @@ public final class e0 {
             boolean z6 = z4;
             if (!(((yz0.f) x61.m.U(list)) instanceof NoAssignee)) {
                 String str5 = assigneeFilter.s;
-                String j = sy.d0.j((yz0.f) x61.m.U(list));
+                String j = sy.d0Shadow.j((yz0.f) x61.m.U(list));
                 boolean c3 = assigneeFilter.c();
                 String string5 = context.getString(2131953663);
                 k71.k.f(string5, "getString(...)");
@@ -1389,7 +1389,7 @@ public final class e0 {
             yz0.f fVar = authorFilter.v;
             if (fVar != null) {
                 String str18 = authorFilter.s;
-                String j2 = sy.d0.j(fVar);
+                String j2 = sy.d0Shadow.j(fVar);
                 boolean c15 = authorFilter.c();
                 String string23 = context.getString(2131953663);
                 k71.k.f(string23, "getString(...)");
@@ -1443,7 +1443,7 @@ public final class e0 {
                 String string27 = context.getString(2131953663);
                 k71.k.f(string27, "getString(...)");
                 final int i17 = 0;
-                return new f.b.c(str20, string26, c17, string27, z12, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.o
+                return new f.b.c(str20, string26, c17, string27, z12, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.oShadow
                     public final Object a() {
                         switch (i17) {
                             case 0:
@@ -1471,7 +1471,7 @@ public final class e0 {
                 String string29 = context.getString(2131953663);
                 k71.k.f(string29, "getString(...)");
                 final int i18 = 3;
-                return new f.b.c(str21, string28, c18, string29, z12, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.o
+                return new f.b.c(str21, string28, c18, string29, z12, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.oShadow
                     public final Object a() {
                         switch (i18) {
                             case 0:
@@ -1499,7 +1499,7 @@ public final class e0 {
                 String string30 = context.getString(2131953663);
                 k71.k.f(string30, "getString(...)");
                 final int i19 = 2;
-                return new f.b.c(str22, name2, c19, string30, z13, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.o
+                return new f.b.c(str22, name2, c19, string30, z13, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.oShadow
                     public final Object a() {
                         switch (i19) {
                             case 0:
@@ -1526,7 +1526,7 @@ public final class e0 {
             String string32 = context.getString(2131953663);
             k71.k.f(string32, "getString(...)");
             final int i21 = 1;
-            return new f.b.c(str23, string31, c21, string32, z13, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.o
+            return new f.b.c(str23, string31, c21, string32, z13, new j71.a() { // from class: com.github.rudroid.searchandfilter.ui.oShadow
                 public final Object a() {
                     switch (i21) {
                         case 0:

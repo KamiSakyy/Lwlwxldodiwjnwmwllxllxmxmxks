@@ -92,7 +92,7 @@ public final class SelectableNotificationFilterBottomSheet extends Hilt_Selectab
 
     public SelectableNotificationFilterBottomSheet() {
         w61.h s = sy.w.s(w61.i.s, new c(new b()));
-        this.Y0 = new l1(k71.x.a(a0.class), new d(s), new f(s), new e(s));
+        this.Y0 = new l1(k71.xShadow.a(a0.class), new d(s), new f(s), new e(s));
         this.Z0 = 2131954226;
         this.a1 = 2131954226;
     }

@@ -22,7 +22,7 @@ public final class nl {
         v = nlVarArr;
         v8.l0.t(nlVarArr);
         Companion = new ml();
-        sy.d0.o(new String[]{"MERGE", "REBASE"});
+        sy.d0Shadow.o(new String[]{"MERGE", "REBASE"});
     }
 
     public nl(String str, int i, String str2) {

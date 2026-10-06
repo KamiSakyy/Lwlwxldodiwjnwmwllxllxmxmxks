@@ -18,7 +18,7 @@ public final class f10 implements aaShadow.w0 {
         List list = en0.t4.a;
         List list2 = en0.t4.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -57,6 +57,6 @@ public final class f10 implements aaShadow.w0 {
     }
 
     public final String toString() {
-        return jo.f4.j(this.r, "ShortcutsQuery(number=", ")");
+        return jo.f4Shadow.j(this.r, "ShortcutsQuery(number=", ")");
     }
 }

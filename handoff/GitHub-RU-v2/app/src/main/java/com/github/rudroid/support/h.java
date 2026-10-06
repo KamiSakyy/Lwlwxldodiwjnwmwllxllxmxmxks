@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
     public static final a Companion = new a();
-    public static final h f = new h(x61.r.r, false, false, null, null);
+    public static final h f = new h(x61.rShadow.r, false, false, null, null);
     public List a;
     public boolean b;
     public boolean c;

@@ -6,7 +6,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n implements aa.a {
     public static final n a = new n();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public static k c(ea.e eVar, aa.w wVar) {
         i iVar;

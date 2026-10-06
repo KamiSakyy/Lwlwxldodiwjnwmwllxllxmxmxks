@@ -43,13 +43,13 @@ public final class j {
             return d0Var.b(intent).e(new i7.c(0), new m11.r(20));
         }
         if (r.C().G(context)) {
-            synchronized (z.b) {
+            synchronized (zShadow.b) {
                 try {
                     z.a(context);
                     boolean booleanExtra = intent.getBooleanExtra("com.google.firebase.iid.WakeLockHolder.wakefulintent", false);
                     intent.putExtra("com.google.firebase.iid.WakeLockHolder.wakefulintent", true);
                     if (!booleanExtra) {
-                        z.c.a(z.a);
+                        z.c.a(zShadow.a);
                     }
                     d0Var.b(intent).b(new c5.b(29, intent));
                 } finally {
@@ -131,7 +131,7 @@ public final class j {
                         w8.a0 a0Var = (w8.a0) intent;
                         d9.q qVar = a0Var.a;
                         String str3 = a0Var.c;
-                        d9.t tVar = a0Var.i;
+                        d9.tShadow tVar = a0Var.i;
                         if (!(vVar instanceof w8.v)) {
                             if (vVar instanceof w8.u) {
                                 a0Var.d(((w8.u) vVar).a);

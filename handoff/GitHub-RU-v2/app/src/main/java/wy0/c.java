@@ -55,7 +55,7 @@ public final class c extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar);
+                    y71.n1Shadow.s(jVar);
                     Object b = R.b(new rm0.u7(11, jVar, a40Var), this);
                     if (b != aVar) {
                         b = a0Var;
@@ -81,11 +81,11 @@ public final class c extends c71.j implements j71.f {
                     y71.j jVar2 = this.x;
                     List list = (List) this.y;
                     ProjectsMetaInfo projectsMetaInfo = this.z;
-                    xa k = projectsMetaInfo != null ? sy.a0.k(list, this.A.t, projectsMetaInfo.r, projectsMetaInfo.t) : new t00.f8(21, new w61.k(list, x61.r.r));
+                    xa k = projectsMetaInfo != null ? sy.a0.k(list, this.A.t, projectsMetaInfo.r, projectsMetaInfo.t) : new t00.f8(21, new w61.k(list, x61.rShadow.r));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, k, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, k, this) == aVar2) {
                         return aVar2;
                     }
                 } else {

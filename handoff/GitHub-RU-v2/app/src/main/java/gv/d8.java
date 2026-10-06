@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d8 implements aa.a {
     public static final d8 a = new d8();
-    public static final List b = sy.d0.o("__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "positioning");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "positioning");
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0018. Please report as an issue. */
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -102,11 +102,11 @@ public final class d8 implements aa.a {
         bVar.b(fVar, wVar, x7Var.b);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(x7Var.c, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(x7Var.c, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(b8.a, false)).b(fVar, wVar, x7Var.d);
         fVar.z0("viewerCanResolve");
-        jo.f4.C(x7Var.e, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(x7Var.f, bVar2, fVar, wVar, "positioning");
+        jo.f4Shadow.C(x7Var.e, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(x7Var.f, bVar2, fVar, wVar, "positioning");
         aa.c.c(z7.a, true).b(fVar, wVar, x7Var.g);
         List list = nv.b.a;
         nv.b.d(fVar, wVar, x7Var.h);

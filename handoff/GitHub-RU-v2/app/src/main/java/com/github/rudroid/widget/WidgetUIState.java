@@ -1,6 +1,6 @@
 package com.github.rudroid.widget;
 
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 
@@ -170,7 +170,7 @@ public abstract class WidgetUIState {
             if (1 == (i & 1)) {
                 this.b = str;
             } else {
-                c1.l(i, 1, WidgetUIState$Error$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 1, WidgetUIState$Error$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
         }

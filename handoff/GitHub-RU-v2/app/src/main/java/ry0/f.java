@@ -2,14 +2,14 @@ package ry0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = d0.o(new String[]{"id", "isInOrganization", "issueTypes", "__typename"});
+    public static final List b = d0Shadow.o(new String[]{"id", "isInOrganization", "issueTypes", "__typename"});
 
     public static b c(ea.e eVar, w wVar) {
         k.g(eVar, "reader");
@@ -57,7 +57,7 @@ public final class f implements aa.a {
         aa.b bVar2 = aa.c.a;
         bVar2.b(fVar, wVar, bVar.a);
         fVar.z0("isInOrganization");
-        f4.C(bVar.b, aa.c.f, fVar, wVar, "issueTypes");
+        f4Shadow.C(bVar.b, aa.c.f, fVar, wVar, "issueTypes");
         aa.c.b(aa.c.c(e.a, false)).b(fVar, wVar, bVar.c);
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, bVar.d);

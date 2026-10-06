@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -45,7 +45,7 @@ public final class MergeQueueEntriesRoute implements Parcelable {
 
     public /* synthetic */ MergeQueueEntriesRoute(int i, String str, String str2, String str3) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, MergeQueueEntriesRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, MergeQueueEntriesRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f17096r = str;

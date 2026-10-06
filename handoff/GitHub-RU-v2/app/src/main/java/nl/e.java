@@ -5,12 +5,12 @@ import java.util.List;
 import l01.c0;
 import l01.j0;
 import l01.p0;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import t00.h5;
 import t00.u4;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 import z01.c1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -73,7 +73,7 @@ public final class e extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar, e, this) == aVar) {
+                    if (n1Shadow.q(jVar, e, this) == aVar) {
                         return aVar;
                     }
                 } else {
@@ -95,11 +95,11 @@ public final class e extends c71.j implements j71.f {
                     List list = (List) kVar.s;
                     h5 h5Var = (h5) this.D;
                     j0 j0Var = (j0) this.E;
-                    y71.i e2 = h5Var.u.e(new ProjectsMetaInfo(this.z, this.A, this.B, j0Var, d0.n(j0Var)), this.C, (c0) null, list);
+                    y71.i e2 = h5Var.u.e(new ProjectsMetaInfo(this.z, this.A, this.B, j0Var, d0Shadow.n(j0Var)), this.C, (c0) null, list);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    n1.s(jVar2);
+                    n1Shadow.s(jVar2);
                     Object b = e2.b(new u4(jVar2, p0Var, 1), this);
                     if (b != aVar2) {
                         b = a0Var;
@@ -129,11 +129,11 @@ public final class e extends c71.j implements j71.f {
                     List list2 = (List) kVar2.s;
                     h5 h5Var2 = (h5) this.D;
                     j0 j0Var2 = (j0) this.E;
-                    y71.i e3 = h5Var2.u.e(new ProjectsMetaInfo(this.z, this.A, this.B, j0Var2, d0.n(j0Var2)), this.C, (c0) null, list2);
+                    y71.i e3 = h5Var2.u.e(new ProjectsMetaInfo(this.z, this.A, this.B, j0Var2, d0Shadow.n(j0Var2)), this.C, (c0) null, list2);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    n1.s(jVar3);
+                    n1Shadow.s(jVar3);
                     Object b2 = e3.b(new u4(jVar3, p0Var2, 3), this);
                     if (b2 != aVar3) {
                         b2 = a0Var2;

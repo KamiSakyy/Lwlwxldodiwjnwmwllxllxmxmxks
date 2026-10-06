@@ -28,7 +28,7 @@ import uu0.v1;
 import uu0.y1;
 import uu0.z1;
 import w8.s;
-import x61.r;
+import x61.rShadow;
 import yz0.e8;
 import yz0.l2;
 import yz0.l4;
@@ -83,7 +83,7 @@ public final class l {
         int i2;
         List<n6> list;
         boolean z;
-        r rVar;
+        rShadow rVar;
         List list2;
         v1 v1Var;
         String str6;
@@ -106,7 +106,7 @@ public final class l {
         Avatar L = y.L(gVar3);
         int i3 = u4Var.c;
         int i4 = i2Var.G.a;
-        int i5 = i2Var.r.a;
+        int i5 = i2Var.rShadow.a;
         int i6 = i2Var.u.a;
         int i7 = i2Var.R.a;
         int i8 = i2Var.g;
@@ -213,7 +213,7 @@ public final class l {
                 if (list != null) {
                 }
                 boolean z19 = i2Var.i;
-                r rVar2 = rVar;
+                rShadow rVar2 = rVar;
                 py pyVar = i2Var.F;
                 if (pyVar == null) {
                 }
@@ -329,10 +329,10 @@ public final class l {
                         rVar = arrayList4;
                     } else {
                         z = z172;
-                        rVar = r.r;
+                        rVar = rShadow.r;
                     }
                     boolean z192 = i2Var.i;
-                    r rVar22 = rVar;
+                    rShadow rVar22 = rVar;
                     py pyVar2 = i2Var.F;
                     int i14 = pyVar2 == null ? -1 : nx0.a.a[pyVar2.ordinal()];
                     boolean z23 = i14 != 1 || i14 == 2;
@@ -392,7 +392,7 @@ public final class l {
         if (list != null) {
         }
         boolean z1922 = i2Var.i;
-        r rVar222 = rVar;
+        rShadow rVar222 = rVar;
         py pyVar22 = i2Var.F;
         if (pyVar22 == null) {
         }

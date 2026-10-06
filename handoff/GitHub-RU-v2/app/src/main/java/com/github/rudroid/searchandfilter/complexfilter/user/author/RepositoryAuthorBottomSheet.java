@@ -10,7 +10,7 @@ import androidx.lifecycle.q0;
 import androidx.lifecycle.r;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.z;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 import w61.p;
 
@@ -238,14 +238,14 @@ public final class RepositoryAuthorBottomSheet extends Hilt_RepositoryAuthorBott
 
     static {
         r71.e pVar = new k71.p(RepositoryAuthorBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public RepositoryAuthorBottomSheet() {
         w61.h s = w.s(w61.i.s, new k(new j()));
-        this.Y0 = new l1(x.a(com.github.rudroid.searchandfilter.complexfilter.user.d.class), new l(s), new n(s), new m(s));
+        this.Y0 = new l1(xShadow.a(com.github.rudroid.searchandfilter.complexfilter.user.d.class), new l(s), new n(s), new m(s));
         this.Z0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(1));
         this.a1 = w.t(new com.github.rudroid.searchandfilter.complexfilter.user.author.a(this, 0));
         this.b1 = 2131954208;

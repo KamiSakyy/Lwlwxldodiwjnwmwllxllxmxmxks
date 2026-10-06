@@ -8,11 +8,11 @@ import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.w0;
 import java.util.concurrent.CancellationException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -58,18 +58,18 @@ public final class g extends k1 implements com.github.rudroid.utilities.viewmode
         this.f19130t = cVar;
         this.f19131u = fVar;
         this.f19132v = (String) h2.a(a1Var, "EXTRA_REPOSITORY_OWNER");
-        y1 c10 = n1.c("");
+        y1 c10 = n1Shadow.c("");
         this.f19133w = c10;
-        this.f19134x = n1.c("");
-        y1 c11 = n1.c(g1.a.c(g1.Companion));
+        this.f19134x = n1Shadow.c("");
+        y1 c11 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f19135y = c11;
         this.f19136z = w0.f(c11, d1.k(this), new y(23));
         q1 q1Var = this.A;
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.A = b0.z(d1.k(this), (a71.h) null, (a0) null, new n(this, null), 3);
-        n1.A(new y71.y(new y00.l(n1.o(c10, 250L), 10), new h(this, null), 6), d1.k(this));
+        this.A = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new n(this, null), 3);
+        n1Shadow.A(new y71.y(new y00.l(n1Shadow.o(c10, 250L), 10), new h(this, null), 6), d1.k(this));
     }
 
     public final void P(String str) {

@@ -3,7 +3,7 @@ package iy0;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.o7;
 import pz0.tq;
 import wx0.b4;
@@ -11,7 +11,7 @@ import wx0.j2;
 import wx0.x1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class f1 implements aa.a {
+public abstract class f1Shadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "fullDatabaseId", "updatedAt", "isArchived", "type"});
 
     public static e1 c(ea.e eVar, aa.w wVar) {

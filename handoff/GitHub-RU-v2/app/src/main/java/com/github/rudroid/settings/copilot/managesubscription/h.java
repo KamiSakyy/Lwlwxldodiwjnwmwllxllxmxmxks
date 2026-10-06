@@ -35,7 +35,7 @@ public final /* synthetic */ class h implements j71.e {
                     sVar.V();
                     break;
                 } else {
-                    w1.r f = f0.o.f(p2.d(w1.o.a, 1.0f), ih.d.b(sVar).a, d2.a0.b);
+                    w1.r f = f0.o.f(p2.d(w1.o.a, 1.0f), ih.d.b(sVar).a, d2.a0Shadow.b);
                     g1 g1Var = (g1) f1Var.getValue();
                     final CopilotManageSubscriptionActivity copilotManageSubscriptionActivity = this.s;
                     boolean h = sVar.h(copilotManageSubscriptionActivity);
@@ -85,7 +85,7 @@ public final /* synthetic */ class h implements j71.e {
                         N3 = new f(copilotManageSubscriptionActivity2, 2);
                         sVar3.n0(N3);
                     }
-                    qg.p.c(null, p0, null, 0L, (j71.a) N3, 0, e, 0.0f, 0, 0, null, sVar3, 0, 0, 1965);
+                    qg.pShadow.c(null, p0, null, 0L, (j71.a) N3, 0, e, 0.0f, 0, 0, null, sVar3, 0, 0, 1965);
                     break;
                 }
         }

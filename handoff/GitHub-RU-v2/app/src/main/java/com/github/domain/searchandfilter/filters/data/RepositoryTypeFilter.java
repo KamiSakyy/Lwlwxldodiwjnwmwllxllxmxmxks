@@ -10,7 +10,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.z;
 import kotlin.NoWhenBranchMatchedException;
 import kotlinx.serialization.KSerializer;
@@ -45,7 +45,7 @@ public final class RepositoryTypeFilter extends d {
     public /* synthetic */ RepositoryTypeFilter(int i, l lVar, String str, v01.d dVar) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, RepositoryTypeFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, RepositoryTypeFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

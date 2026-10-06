@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fi implements aaShadow.a {
     public static final fi a = new fi();
-    public static final List b = sy.d0.n("removeDashboardSearchShortcut");
+    public static final List b = sy.d0Shadow.n("removeDashboardSearchShortcut");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

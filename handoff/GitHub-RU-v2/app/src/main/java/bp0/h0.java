@@ -15,8 +15,8 @@ public abstract class h0 {
     static {
         vd.Companion.getClass();
         aa.r b = l0.b(vd.a);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
         td.Companion.getClass();
         aa.m mVar = new aa.m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();

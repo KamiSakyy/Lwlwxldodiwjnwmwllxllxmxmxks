@@ -42,7 +42,7 @@ public final class cz {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("UpdateDashboardSearchShortcutInput(clientMutationId=", this.a, ", color=", this.b, ", description=");
+        StringBuilder u = jo.f4Shadow.u("UpdateDashboardSearchShortcutInput(clientMutationId=", this.a, ", color=", this.b, ", description=");
         f1.e.w(u, this.c, ", icon=", this.d, ", name=");
         f1.e.w(u, this.e, ", query=", this.f, ", scopingRepository=");
         f1.e.w(u, this.g, ", searchType=", this.h, ", shortcutId=");

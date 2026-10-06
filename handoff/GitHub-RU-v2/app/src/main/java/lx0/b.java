@@ -9,11 +9,11 @@ import java.util.List;
 import k71.k;
 import kotlin.NoWhenBranchMatchedException;
 import lm0.g;
-import sy.d0;
-import sy.t;
+import sy.d0Shadow;
+import sy.tShadow;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import xt0.e5;
 import xt0.f5;
 import xt0.g5;
@@ -51,7 +51,7 @@ public final class b implements h01.c {
         r4 r4Var = (list == null || (e5Var3 = (e5) m.f0(list)) == null || (p5Var3 = e5Var3.b.c) == null) ? null : p5Var3.c;
         aVar.getClass();
         List<f5> list2 = r4Var != null ? r4Var.b : null;
-        List<f5> list3 = r.r;
+        List<f5> list3 = rShadow.r;
         list2 = list2 == null ? list3 : list2;
         ArrayList arrayList = new ArrayList();
         for (f5 f5Var : list2) {
@@ -71,7 +71,7 @@ public final class b implements h01.c {
                 Object obj = arrayList.get(i3);
                 i3++;
                 if (k.b(((kx0.a) obj).h, Boolean.TRUE) && (i = i + 1) < 0) {
-                    d0.w();
+                    d0Shadow.w();
                     throw null;
                 }
             }
@@ -118,7 +118,7 @@ public final class b implements h01.c {
                 arrayList4.add(obj2);
             }
         }
-        List v0 = m.v0(arrayList4, t.f(new j71.c[]{new g(9), new g(i6)}));
+        List v0 = m.v0(arrayList4, tShadow.f(new j71.c[]{new g(9), new g(i6)}));
         if (u5Var.M > 0) {
             checksOverviewState = ChecksOverviewState.ACTION_REQUIRED;
         } else {

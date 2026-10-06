@@ -40,6 +40,6 @@ public final class e5 {
         sb2.append(", isFallback=");
         sb2.append(this.f9543b);
         sb2.append(", isLocked=");
-        return jo.f4.s(sb2, this.f9544c, ")");
+        return jo.f4Shadow.s(sb2, this.f9544c, ")");
     }
 }

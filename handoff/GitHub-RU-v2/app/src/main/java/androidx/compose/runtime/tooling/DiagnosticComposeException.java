@@ -4,7 +4,7 @@ import com.google.android.gms.internal.measurement.z3;
 import java.util.ArrayList;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class DiagnosticComposeException extends RuntimeException {
@@ -41,7 +41,7 @@ public final class DiagnosticComposeException extends RuntimeException {
         StringBuilder sb2 = new StringBuilder("Composition stack when thrown:\n");
         int i = 0;
         if (aVar.a()) {
-            y61.b i10 = d0.i();
+            y61.b i10 = d0Shadow.i();
             List list = aVar.f1846a;
             k.g(list, "<this>");
             t71.k kVar = new t71.k(list);
@@ -49,7 +49,7 @@ public final class DiagnosticComposeException extends RuntimeException {
             for (int i11 = 0; i11 < a10; i11++) {
                 ((b) kVar.get(i11)).getClass();
             }
-            y61.b h10 = d0.h(i10);
+            y61.b h10 = d0Shadow.h(i10);
             k.g(h10, "<this>");
             t71.k kVar2 = new t71.k((List) h10);
             int a11 = kVar2.a();

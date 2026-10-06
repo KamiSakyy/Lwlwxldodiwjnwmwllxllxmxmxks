@@ -1,7 +1,7 @@
 package j00;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.vp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -20,7 +20,7 @@ public final class p implements aa.n0 {
         List list = l00.c.a;
         List list2 = l00.c.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

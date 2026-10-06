@@ -4,7 +4,7 @@ import com.github.rudroid.searchandfilter.complexfilter.h0;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
@@ -13,7 +13,7 @@ public final class u {
         k71.k.g(list, "preSelectedItems");
         k71.k.g(list2, "items");
         k71.k.g(list3, "replacements");
-        List n = d0.n(obj);
+        List n = d0Shadow.n(obj);
         j71.e eVar = h0Var.a;
         ArrayList c = c(list, list2, eVar);
         ArrayList arrayList = new ArrayList();

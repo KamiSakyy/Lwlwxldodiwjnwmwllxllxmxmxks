@@ -33,7 +33,7 @@ import pz0.to;
 import pz0.xo;
 import pz0.xr;
 import pz0.zo;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import wy0.n6;
 import z01.y0;
@@ -97,7 +97,7 @@ public final class u {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Serializable b(ProjectsMetaInfo projectsMetaInfo, com.github.service.wrapper.b bVar, String str, c0 c0Var, List list, String str2, c71.c cVar) {
-        t tVar;
+        tShadow tVar;
         int i;
         ProjectsMetaInfo projectsMetaInfo2;
         yx0.h hVar;
@@ -108,7 +108,7 @@ public final class u {
         List list2;
         yx0.b bVar3;
         yx0.h hVar2;
-        t tVar2;
+        tShadow tVar2;
         b71.a aVar;
         com.github.service.wrapper.b bVar4;
         String str4;
@@ -146,15 +146,15 @@ public final class u {
         ArrayList n;
         int i3;
         ArrayList n2;
-        if (cVar instanceof t) {
-            tVar = (t) cVar;
+        if (cVar instanceof tShadow) {
+            tVar = (tShadow) cVar;
             int i4 = tVar.E;
             if ((i4 & Integer.MIN_VALUE) != 0) {
                 tVar.E = i4 - Integer.MIN_VALUE;
                 Object obj4 = tVar.C;
                 b71.a aVar2 = b71.a.r;
                 i = tVar.E;
-                x61.r rVar = x61.r.r;
+                x61.rShadow rVar = x61.rShadow.r;
                 if (i != 0) {
                     y.j(obj4);
                     j0 j0Var3 = projectsMetaInfo.u;
@@ -631,7 +631,7 @@ public final class u {
                     bVar5 = null;
                 }
                 if (bVar5 == null) {
-                    t tVar3 = tVar2;
+                    tShadow tVar3 = tVar2;
                     obj = null;
                     tVar3.u = null;
                     tVar3.v = null;
@@ -655,11 +655,11 @@ public final class u {
                 return rVar;
             }
         }
-        tVar = new t(this, cVar);
+        tVar = new tShadow(this, cVar);
         Object obj42 = tVar.C;
         b71.a aVar22 = b71.a.r;
         i = tVar.E;
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         if (i != 0) {
         }
         bVar3 = (yx0.b) obj42;

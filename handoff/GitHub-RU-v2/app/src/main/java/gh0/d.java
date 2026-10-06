@@ -1,7 +1,7 @@
 package gh0;
 
 import aa.h0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -54,6 +54,6 @@ public final class d implements h0 {
         sb.append(", onBot=");
         sb.append(this.d);
         sb.append(", nodeIdFragment=");
-        return f4.q(sb, this.e, ")");
+        return f4Shadow.q(sb, this.e, ")");
     }
 }

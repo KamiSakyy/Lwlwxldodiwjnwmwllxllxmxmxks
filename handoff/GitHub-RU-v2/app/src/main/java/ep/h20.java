@@ -5,7 +5,7 @@ import jo.oj0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h20 implements aaShadow.a {
-    public static final List a = sy.d0.n("id");
+    public static final List a = sy.d0Shadow.n("id");
 
     public static oj0 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -8,7 +8,7 @@ import com.github.service.models.response.discussions.type.DiscussionCloseReason
 import com.github.service.models.response.projects.ProjectsMetaInfo;
 import e50.e0;
 import e50.l0;
-import e50.x;
+import e50.xShadow;
 import gn0.a9;
 import gn0.c9;
 import gn0.g9;
@@ -48,7 +48,7 @@ import u10.q30;
 import vb0.k1;
 import w61.a0;
 import wy0.l1;
-import y71.n1;
+import y71.n1Shadow;
 import z01.p0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -171,7 +171,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar, m, this) == aVar) {
+                    if (n1Shadow.q(jVar, m, this) == aVar) {
                         return aVar;
                     }
                 } else {
@@ -191,11 +191,11 @@ public final class a extends c71.j implements j71.f {
                     vz.b bVar = (vz.b) this.y;
                     String str = this.A;
                     a71.c cVar = null;
-                    y71.i b = bVar == null ? uVar.b(str, "") : n1.I(new g(new g(new y00.l(new f8(new c(sy.q.i(bVar).size(), uVar, str, cVar, 0)), 10), uVar, bVar, 2), uVar, (w0) this.B, 3), new m(cVar, uVar, str, 1));
+                    y71.i b = bVar == null ? uVar.b(str, "") : n1Shadow.I(new g(new g(new y00.l(new f8(new c(sy.q.i(bVar).size(), uVar, str, cVar, 0)), 10), uVar, bVar, 2), uVar, (w0) this.B, 3), new m(cVar, uVar, str, 1));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar2, b, this) == aVar2) {
+                    if (n1Shadow.q(jVar2, b, this) == aVar2) {
                         return aVar2;
                     }
                 } else {
@@ -215,7 +215,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar3, n, this) == aVar3) {
+                    if (n1Shadow.q(jVar3, n, this) == aVar3) {
                         return aVar3;
                     }
                 } else {
@@ -235,11 +235,11 @@ public final class a extends c71.j implements j71.f {
                     yx0.b bVar2 = (yx0.b) this.y;
                     String str2 = this.A;
                     a71.c cVar2 = null;
-                    y71.i b2 = bVar2 == null ? uVar2.b(str2, "") : n1.I(new g(new g(new y00.l(new f8(new c(t.e.k(bVar2).size(), uVar2, str2, cVar2, 1)), 10), uVar2, bVar2, 7), uVar2, (w0) this.B, 8), new m(cVar2, uVar2, str2, 5));
+                    y71.i b2 = bVar2 == null ? uVar2.b(str2, "") : n1Shadow.I(new g(new g(new y00.l(new f8(new c(t.e.k(bVar2).size(), uVar2, str2, cVar2, 1)), 10), uVar2, bVar2, 7), uVar2, (w0) this.B, 8), new m(cVar2, uVar2, str2, 5));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar4, b2, this) == aVar4) {
+                    if (n1Shadow.q(jVar4, b2, this) == aVar4) {
                         return aVar4;
                     }
                 } else {
@@ -259,7 +259,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar5, d, this) == aVar5) {
+                    if (n1Shadow.q(jVar5, d, this) == aVar5) {
                         return aVar5;
                     }
                 } else {
@@ -320,7 +320,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar6, k, this) == aVar7) {
+                    if (n1Shadow.q(jVar6, k, this) == aVar7) {
                         return aVar7;
                     }
                 } else {
@@ -339,7 +339,7 @@ public final class a extends c71.j implements j71.f {
                 if (i9 == 0) {
                     y.j(obj);
                     y71.j jVar7 = (y71.j) this.x;
-                    uf0.a0 a0Var = (uf0.a0) this.y;
+                    uf0.a0Shadow a0Var = (uf0.a0Shadow) this.y;
                     String str4 = this.A;
                     if (a0Var != null) {
                         a9.Companion.getClass();
@@ -354,15 +354,15 @@ public final class a extends c71.j implements j71.f {
                         boolean z2 = eVar.e;
                         String str10 = eVar.f;
                         String str11 = eVar.g;
-                        l50Var = new l50(new n50(new m50(str5, str4, uf0.a0.a(a0Var, new uf0.p0(p0Var.a, p0Var.b, p0Var.c, p0Var.d, p0Var.e, p0Var.f, p0Var.g, p0Var.h, p0Var.i, p0Var.j, p0Var.k, p0Var.l, p0Var.m, p0Var.n, p0Var.o, new uf0.i0(str6, str3, new wf0.b(str7, str8, str9, z, z2, str10, str11 != null ? new wf0.a(str11) : null, str6)), p0Var.q, p0Var.r, p0Var.s, p0Var.t, p0Var.u, p0Var.v), (yh0.a) null, 7167))));
+                        l50Var = new l50(new n50(new m50(str5, str4, uf0.a0Shadow.a(a0Var, new uf0.p0(p0Var.a, p0Var.b, p0Var.c, p0Var.d, p0Var.e, p0Var.f, p0Var.g, p0Var.h, p0Var.i, p0Var.j, p0Var.k, p0Var.l, p0Var.m, p0Var.n, p0Var.o, new uf0.i0(str6, str3, new wf0.b(str7, str8, str9, z, z2, str10, str11 != null ? new wf0.a(str11) : null, str6)), p0Var.q, p0Var.r, p0Var.s, p0Var.t, p0Var.u, p0Var.v), (yh0.a) null, 7167))));
                     } else {
                         l50Var = null;
                     }
-                    y71.i y = n1.y(b2Var.s.k(new o50(str4, str3), l50Var), b2Var.t);
+                    y71.i y = n1Shadow.y(b2Var.s.k(new o50(str4, str3), l50Var), b2Var.t);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar7, y, this) == aVar8) {
+                    if (n1Shadow.q(jVar7, y, this) == aVar8) {
                         return aVar8;
                     }
                 } else {
@@ -399,7 +399,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar8, k2, this) == aVar9) {
+                    if (n1Shadow.q(jVar8, k2, this) == aVar9) {
                         return aVar9;
                     }
                 } else {
@@ -418,7 +418,7 @@ public final class a extends c71.j implements j71.f {
                 if (i13 == 0) {
                     y.j(obj);
                     y71.j jVar9 = (y71.j) this.x;
-                    is.a0 a0Var2 = (is.a0) this.y;
+                    is.a0Shadow a0Var2 = (is.a0Shadow) this.y;
                     String str13 = this.A;
                     if (a0Var2 != null) {
                         fd.Companion.getClass();
@@ -433,15 +433,15 @@ public final class a extends c71.j implements j71.f {
                         boolean z4 = eVar2.e;
                         String str19 = eVar2.f;
                         String str20 = eVar2.g;
-                        wb0Var = new wb0(new yb0(new xb0(str14, str13, is.a0.a(a0Var2, new is.p0(p0Var2.a, p0Var2.b, p0Var2.c, p0Var2.d, p0Var2.e, p0Var2.f, p0Var2.g, p0Var2.h, p0Var2.i, p0Var2.j, p0Var2.k, p0Var2.l, p0Var2.m, p0Var2.n, p0Var2.o, new is.i0(str15, str12, new ks.b(str16, str17, str18, z3, z4, str19, str20 != null ? new ks.a(str20) : null, str15)), p0Var2.q, p0Var2.r, p0Var2.s, p0Var2.t, p0Var2.u, p0Var2.v), null, 7167))));
+                        wb0Var = new wb0(new yb0(new xb0(str14, str13, is.a0Shadow.a(a0Var2, new is.p0(p0Var2.a, p0Var2.b, p0Var2.c, p0Var2.d, p0Var2.e, p0Var2.f, p0Var2.g, p0Var2.h, p0Var2.i, p0Var2.j, p0Var2.k, p0Var2.l, p0Var2.m, p0Var2.n, p0Var2.o, new is.i0(str15, str12, new ks.b(str16, str17, str18, z3, z4, str19, str20 != null ? new ks.a(str20) : null, str15)), p0Var2.q, p0Var2.r, p0Var2.s, p0Var2.t, p0Var2.u, p0Var2.v), null, 7167))));
                     } else {
                         wb0Var = null;
                     }
-                    y71.i y2 = n1.y(s1Var.s.k(new zb0(str13, str12), wb0Var), s1Var.t);
+                    y71.i y2 = n1Shadow.y(s1Var.s.k(new zb0(str13, str12), wb0Var), s1Var.t);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar9, y2, this) == aVar10) {
+                    if (n1Shadow.q(jVar9, y2, this) == aVar10) {
                         return aVar10;
                     }
                 } else {
@@ -478,7 +478,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar10, k3, this) == aVar11) {
+                    if (n1Shadow.q(jVar10, k3, this) == aVar11) {
                         return aVar11;
                     }
                 } else {
@@ -497,7 +497,7 @@ public final class a extends c71.j implements j71.f {
                 if (i16 == 0) {
                     y.j(obj);
                     y71.j jVar11 = (y71.j) this.x;
-                    x xVar = (x) this.y;
+                    xShadow xVar = (xShadow) this.y;
                     String str22 = this.A;
                     if (xVar != null) {
                         o8.Companion.getClass();
@@ -512,15 +512,15 @@ public final class a extends c71.j implements j71.f {
                         boolean z6 = eVar3.e;
                         String str28 = eVar3.f;
                         String str29 = eVar3.g;
-                        n30Var = new n30(new p30(new o30(str23, str22, x.a(xVar, new l0(l0Var.a, l0Var.b, l0Var.c, l0Var.d, l0Var.e, l0Var.f, l0Var.g, l0Var.h, l0Var.i, l0Var.j, l0Var.k, l0Var.l, l0Var.m, l0Var.n, l0Var.o, new e0(str24, str21, new g50.b(str25, str26, str27, z5, z6, str28, str29 != null ? new g50.a(str29) : null, str24)), l0Var.q, l0Var.r, l0Var.s, l0Var.t, l0Var.u, l0Var.v), null, 7167))));
+                        n30Var = new n30(new p30(new o30(str23, str22, xShadow.a(xVar, new l0(l0Var.a, l0Var.b, l0Var.c, l0Var.d, l0Var.e, l0Var.f, l0Var.g, l0Var.h, l0Var.i, l0Var.j, l0Var.k, l0Var.l, l0Var.m, l0Var.n, l0Var.o, new e0(str24, str21, new g50.b(str25, str26, str27, z5, z6, str28, str29 != null ? new g50.a(str29) : null, str24)), l0Var.q, l0Var.r, l0Var.s, l0Var.t, l0Var.u, l0Var.v), null, 7167))));
                     } else {
                         n30Var = null;
                     }
-                    y71.i y3 = n1.y(k1Var.s.k(new q30(str22, str21), n30Var), k1Var.t);
+                    y71.i y3 = n1Shadow.y(k1Var.s.k(new q30(str22, str21), n30Var), k1Var.t);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar11, y3, this) == aVar12) {
+                    if (n1Shadow.q(jVar11, y3, this) == aVar12) {
                         return aVar12;
                     }
                 } else {
@@ -544,7 +544,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar12, g2Var, this) == aVar13) {
+                    if (n1Shadow.q(jVar12, g2Var, this) == aVar13) {
                         return aVar13;
                     }
                 } else {
@@ -581,7 +581,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar13, k4, this) == aVar14) {
+                    if (n1Shadow.q(jVar13, k4, this) == aVar14) {
                         return aVar14;
                     }
                 } else {
@@ -600,7 +600,7 @@ public final class a extends c71.j implements j71.f {
                 if (i21 == 0) {
                     y.j(obj);
                     y71.j jVar14 = (y71.j) this.x;
-                    ar0.a0 a0Var3 = (ar0.a0) this.y;
+                    ar0.a0Shadow a0Var3 = (ar0.a0Shadow) this.y;
                     String str31 = this.A;
                     if (a0Var3 != null) {
                         ba.Companion.getClass();
@@ -615,15 +615,15 @@ public final class a extends c71.j implements j71.f {
                         boolean z8 = eVar4.e;
                         String str37 = eVar4.f;
                         String str38 = eVar4.g;
-                        i90Var = new i90(new k90(new j90(str32, str31, ar0.a0.a(a0Var3, new ar0.p0(p0Var3.a, p0Var3.b, p0Var3.c, p0Var3.d, p0Var3.e, p0Var3.f, p0Var3.g, p0Var3.h, p0Var3.i, p0Var3.j, p0Var3.k, p0Var3.l, p0Var3.m, p0Var3.n, p0Var3.o, new ar0.i0(str33, str30, new cr0.b(str34, str35, str36, z7, z8, str37, str38 != null ? new cr0.a(str38) : null, str33)), p0Var3.q, p0Var3.r, p0Var3.s, p0Var3.t, p0Var3.u, p0Var3.v), (gt0.a) null, 7167))));
+                        i90Var = new i90(new k90(new j90(str32, str31, ar0.a0Shadow.a(a0Var3, new ar0.p0(p0Var3.a, p0Var3.b, p0Var3.c, p0Var3.d, p0Var3.e, p0Var3.f, p0Var3.g, p0Var3.h, p0Var3.i, p0Var3.j, p0Var3.k, p0Var3.l, p0Var3.m, p0Var3.n, p0Var3.o, new ar0.i0(str33, str30, new cr0.b(str34, str35, str36, z7, z8, str37, str38 != null ? new cr0.a(str38) : null, str33)), p0Var3.q, p0Var3.r, p0Var3.s, p0Var3.t, p0Var3.u, p0Var3.v), (gt0.a) null, 7167))));
                     } else {
                         i90Var = null;
                     }
-                    y71.i y4 = n1.y(l1Var.s.k(new l90(str31, str30), i90Var), l1Var.t);
+                    y71.i y4 = n1Shadow.y(l1Var.s.k(new l90(str31, str30), i90Var), l1Var.t);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (n1.q(jVar14, y4, this) == aVar15) {
+                    if (n1Shadow.q(jVar14, y4, this) == aVar15) {
                         return aVar15;
                     }
                 } else {

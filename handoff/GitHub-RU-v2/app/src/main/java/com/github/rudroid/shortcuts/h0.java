@@ -24,7 +24,7 @@ final class h0<T> implements y71.j {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        n0Var.C = v71.b0.z(d1.k(n0Var), (a71.h) null, (v71.a0) null, new k0(n0Var, list, list2, null), 3);
+        n0Var.C = v71.b0.z(d1.k(n0Var), (a71.h) null, (v71.a0Shadow) null, new k0(n0Var, list, list2, null), 3);
         b71.a aVar = b71.a.r;
         return w61.a0.a;
     }

@@ -22,7 +22,7 @@ import pz0.pd;
 import pz0.td;
 import pz0.vd;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -34,9 +34,9 @@ public abstract class c {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("IssueType");
+        List n = d0Shadow.n("IssueType");
         List list = zr0.a.a;
         s c = no.a.c(list, "selections", "IssueType", n, list);
         td.Companion.getClass();
@@ -76,7 +76,7 @@ public abstract class c {
         r b2 = l0.b(xVar3);
         le.Companion.getClass();
         t tVar = le.r;
-        s mVar15 = new m("taskListItemCount", b2, "completedTasksCount", rVar, no.a.s(tVar, new u0(d0.n("COMPLETE"))), rVar);
+        s mVar15 = new m("taskListItemCount", b2, "completedTasksCount", rVar, no.a.s(tVar, new u0(d0Shadow.n("COMPLETE"))), rVar);
         s mVar16 = new m("taskListItemCount", l0.b(xVar3), "totalTaskCount", rVar, no.a.s(tVar, new u0(l.r(new String[]{"COMPLETE", "INCOMPLETE"}))), rVar);
         s mVar17 = new m("viewerCanReopen", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         s mVar18 = new m("viewerCanUpdate", l0.b(xVar4), (String) null, rVar, rVar, rVar);
@@ -84,10 +84,10 @@ public abstract class c {
         s mVar20 = new m("createdAt", l0.b(xVar5), (String) null, rVar, rVar, rVar);
         s mVar21 = new m("viewerCanAssign", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         s mVar22 = new m("viewerCanLabel", l0.b(xVar4), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("Issue");
+        List n2 = d0Shadow.n("Issue");
         List list3 = vu0.s.a;
         s c3 = no.a.c(list3, "selections", "Issue", n2, list3);
-        List n3 = d0.n("Issue");
+        List n3 = d0Shadow.n("Issue");
         List list4 = vu0.e.a;
         s c4 = no.a.c(list4, "selections", "Issue", n3, list4);
         mf.Companion.getClass();

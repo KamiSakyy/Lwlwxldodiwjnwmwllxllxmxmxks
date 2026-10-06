@@ -25,7 +25,7 @@ import yz0.g4;
 import yz0.x7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class o {
+public abstract class oShadow {
     public static final g4 a(qw.f fVar) {
         String str;
         qw.c cVar;
@@ -133,8 +133,8 @@ public abstract class o {
         t6.a aVar = t6.a.b;
         k71.k.g(dVar, "factory");
         k71.k.g(aVar, "extras");
-        w51.r rVar = new w51.r(t1Var, dVar, aVar);
-        k71.e a = k71.x.a(x6.p.class);
+        w51.rShadow rVar = new w51.r(t1Var, dVar, aVar);
+        k71.e a = k71.xShadow.a(x6.pShadow.class);
         String b = a.b();
         if (b != null) {
             return rVar.E(a, "androidx.lifecycle.ViewModelProvider.DefaultKey:".concat(b));

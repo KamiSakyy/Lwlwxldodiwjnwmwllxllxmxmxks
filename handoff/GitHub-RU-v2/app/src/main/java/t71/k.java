@@ -3,7 +3,7 @@ package t71;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-import sy.d0;
+import sy.d0Shadow;
 import v1.c0;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -49,11 +49,11 @@ public final class k extends x61.e {
                 return group == null ? "" : group;
             default:
                 List list = (List) this.f32135s;
-                if (i >= 0 && i <= d0.m(this)) {
-                    return list.get(d0.m(this) - i);
+                if (i >= 0 && i <= d0Shadow.m(this)) {
+                    return list.get(d0Shadow.m(this) - i);
                 }
                 StringBuilder o5 = x.i.o("Element index ", i, " must be in range [");
-                o5.append(new q71.g(0, d0.m(this), 1));
+                o5.append(new q71.g(0, d0Shadow.m(this), 1));
                 o5.append("].");
                 throw new IndexOutOfBoundsException(o5.toString());
         }

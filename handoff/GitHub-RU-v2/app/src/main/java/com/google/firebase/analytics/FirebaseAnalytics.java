@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.k1;
 import com.google.android.gms.internal.measurement.w0;
 import com.google.android.gms.internal.measurement.y0;
@@ -24,7 +24,7 @@ public final class FirebaseAnalytics {
     public k1 a;
 
     public FirebaseAnalytics(k1 k1Var) {
-        u.g(k1Var);
+        uShadow.g(k1Var);
         this.a = k1Var;
     }
 

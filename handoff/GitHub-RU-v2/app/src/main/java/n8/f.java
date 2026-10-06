@@ -1,12 +1,12 @@
 package n8;
 
 import androidx.window.extensions.WindowExtensionsProvider;
-import k71.x;
+import k71.xShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class f {
     static {
-        x.a(f.class).c();
+        xShadow.a(f.class).c();
     }
 
     public static int a() {

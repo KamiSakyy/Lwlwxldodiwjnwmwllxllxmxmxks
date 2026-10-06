@@ -50,7 +50,7 @@ public final class h {
                                     obj3 = N;
                                     break;
                                 }
-                                com.github.rudroid.actions.checkssummary.ui.d dVar = new com.github.rudroid.actions.checkssummary.ui.d(10, cVar2);
+                                com.github.rudroid.actions.checkssummary.ui.dShadow dVar = new com.github.rudroid.actions.checkssummary.ui.dShadow(10, cVar2);
                                 sVar3.n0(dVar);
                                 obj3 = dVar;
                                 s1.c(null, g1Var, null, null, null, null, null, null, null, sVar, null, null, null, null, null, (j71.f) obj3, sVar3, 0, 0, 65021);
@@ -69,7 +69,7 @@ public final class h {
                                     obj4 = N2;
                                     break;
                                 }
-                                com.github.rudroid.actions.checkssummary.ui.d dVar2 = new com.github.rudroid.actions.checkssummary.ui.d(11, cVar3);
+                                com.github.rudroid.actions.checkssummary.ui.dShadow dVar2 = new com.github.rudroid.actions.checkssummary.ui.dShadow(11, cVar3);
                                 sVar4.n0(dVar2);
                                 obj4 = dVar2;
                                 s1.c(null, g1Var, null, null, null, null, null, null, null, sVar, null, null, null, null, null, (j71.f) obj4, sVar4, 0, 0, 65021);

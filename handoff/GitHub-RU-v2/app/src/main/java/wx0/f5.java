@@ -6,7 +6,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f5 implements aa.a {
     public static final f5 a = new f5();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         y4 y4Var;

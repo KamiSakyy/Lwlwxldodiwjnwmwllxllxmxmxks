@@ -6,7 +6,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kf implements aaShadow.a {
     public static final kf a = new kf();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         jo.ym ymVar;

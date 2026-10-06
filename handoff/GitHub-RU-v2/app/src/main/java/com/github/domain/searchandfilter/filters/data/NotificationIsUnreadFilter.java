@@ -7,7 +7,7 @@ import bm.o;
 import com.github.rudroid.m0;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 
@@ -30,7 +30,7 @@ public final class NotificationIsUnreadFilter extends d {
     public /* synthetic */ NotificationIsUnreadFilter(int i, l lVar, String str, boolean z) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, NotificationIsUnreadFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, NotificationIsUnreadFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

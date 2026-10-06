@@ -16,7 +16,7 @@ public final class StarredRepositoriesAndListsActivity extends g<ic.d0> {
 
     static {
         r71.e pVar = new k71.p(StarredRepositoriesAndListsActivity.class, "login", "getLogin()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         x0 = new r71.e[]{pVar};
         Companion = new a();
     }

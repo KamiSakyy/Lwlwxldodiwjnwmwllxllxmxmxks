@@ -6,7 +6,7 @@ import m10.n40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i8 implements aaShadow.a {
     public static final i8 a = new i8();
-    public static final List b = sy.d0.o("id", "viewerPermission", "owner", "hasNestedDiscussionAnswersEnabled", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "viewerPermission", "owner", "hasNestedDiscussionAnswersEnabled", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -73,7 +73,7 @@ public final class i8 implements aaShadow.a {
         fVar.z0("owner");
         aa.c.c(h8.a, false).b(fVar, wVar, icVar.c);
         fVar.z0("hasNestedDiscussionAnswersEnabled");
-        jo.f4.C(icVar.d, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(icVar.d, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, icVar.e);
     }
 }

@@ -26,17 +26,17 @@ public final class y0 extends g1 {
         switch (this.v) {
             case 0:
                 l0 l0Var = this.y.f;
-                c21.u.g(l0Var);
+                c21.uShadow.g(l0Var);
                 l0Var.clearConditionalUserProperty(this.w, this.x, (Bundle) this.z);
                 break;
             case 1:
                 l0 l0Var2 = this.y.f;
-                c21.u.g(l0Var2);
+                c21.uShadow.g(l0Var2);
                 l0Var2.getConditionalUserProperties(this.w, this.x, (i0) this.z);
                 break;
             default:
                 l0 l0Var3 = this.y.f;
-                c21.u.g(l0Var3);
+                c21.uShadow.g(l0Var3);
                 l0Var3.setCurrentScreenByScionActivityInfo((w0) this.z, this.w, this.x, this.r);
                 break;
         }

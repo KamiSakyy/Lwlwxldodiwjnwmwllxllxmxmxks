@@ -8,7 +8,7 @@ import pz0.su;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 implements w0 {
-    public static final x Companion = new x();
+    public static final xShadow Companion = new xShadow();
     public String r;
     public String s;
 
@@ -24,7 +24,7 @@ public final class b0 implements w0 {
         List list = uy0.e.a;
         List list2 = uy0.e.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

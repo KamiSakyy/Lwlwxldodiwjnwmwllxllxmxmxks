@@ -51,9 +51,9 @@ public final class k0<T> implements y71.j {
                     boolean isEmpty = arrayList.isEmpty();
                     Collection collection = arrayList;
                     if (isEmpty) {
-                        collection = sy.d0.n(new h.d());
+                        collection = sy.d0Shadow.n(new h.d());
                     }
-                    ArrayList l02 = x61.m.l0(sy.d0.n(fVar), collection);
+                    ArrayList l02 = x61.m.l0(sy.d0Shadow.n(fVar), collection);
                     j0Var.f16422v = 1;
                     if (this.f16425r.c(l02, j0Var) == aVar) {
                         return aVar;

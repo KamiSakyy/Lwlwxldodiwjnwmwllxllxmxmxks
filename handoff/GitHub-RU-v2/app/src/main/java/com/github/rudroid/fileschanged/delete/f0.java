@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.viewmodel.d;
 import com.github.service.models.response.type.MobileEventContext;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -87,12 +87,12 @@ public final class f0 extends androidx.lifecycle.a implements com.github.rudroid
         this.J = r01.k.a(str3);
         this.K = "";
         g1.a aVar = g1.Companion;
-        d0 d0Var = new d0(str2, 0, x61.r.r, false, false, str, str, null, null, null);
+        d0 d0Var = new d0(str2, 0, x61.rShadow.r, false, false, str, str, null, null, null);
         aVar.getClass();
-        y1 c10 = n1.c(new com.github.rudroid.utilities.ui.u0(d0Var));
+        y1 c10 = n1Shadow.c(new com.github.rudroid.utilities.ui.u0(d0Var));
         this.L = c10;
         this.M = new i1(c10);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new m0(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m0(this, null), 3);
     }
 
     public final void Q(fl.b bVar) {

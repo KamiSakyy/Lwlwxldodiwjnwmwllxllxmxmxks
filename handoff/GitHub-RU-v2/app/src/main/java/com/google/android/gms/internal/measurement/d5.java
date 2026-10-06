@@ -118,7 +118,7 @@ public abstract class d5 implements Encoder {
         int[] iArr2 = (int[]) kVar.s;
         k71.k.g(strArr4, "resolvedTableNames");
         k71.k.g(iArr2, "tableIds");
-        return new c00.g(y71.n1.g(new t00.f8(new m7.x(m0Var, iArr2, strArr4, (a71.c) null, 1)), -1), wVar, cVar, 14);
+        return new c00.g(y71.n1Shadow.g(new t00.f8(new m7.x(m0Var, iArr2, strArr4, (a71.c) null, 1)), -1), wVar, cVar, 14);
     }
 
     public static void M() {
@@ -177,8 +177,8 @@ public abstract class d5 implements Encoder {
         int i5;
         int i6;
         int i7;
-        x61.r rVar;
-        x61.r rVar2;
+        x61.rShadow rVar;
+        x61.rShadow rVar2;
         int i8;
         int i9;
         int i10;
@@ -213,7 +213,7 @@ public abstract class d5 implements Encoder {
             } else {
                 ColorStateList c = q4.b.c(h, xmlResourceParser2, theme);
                 aVar.b(h.getChangingConfigurations());
-                j = c != null ? d2.a0.c(c.getDefaultColor()) : d2.t.k;
+                j = c != null ? d2.a0Shadow.c(c.getDefaultColor()) : d2.t.k;
             }
         } else {
             j = d2.t.k;
@@ -279,7 +279,7 @@ public abstract class d5 implements Encoder {
                     String name = xmlPullParser.getName();
                     if (name != null) {
                         int hashCode = name.hashCode();
-                        x61.r rVar3 = x61.r.r;
+                        x61.rShadow rVar3 = x61.rShadow.r;
                         h0.b1 b1Var = aVar.c;
                         if (hashCode != -1649314686) {
                             if (hashCode != 3433509) {
@@ -355,12 +355,12 @@ public abstract class d5 implements Encoder {
                                         aVar.b(h3.getChangingConfigurations());
                                         h3.recycle();
                                         Shader shader2 = (Shader) d2.c;
-                                        d2.p qVar2 = (shader2 == null && d2.b == 0) ? null : shader2 != null ? new d2.q(shader2) : new d2.r0(d2.a0.c(d2.b));
+                                        d2.p qVar2 = (shader2 == null && d2.b == 0) ? null : shader2 != null ? new d2.q(shader2) : new d2.r0(d2.a0Shadow.c(d2.b));
                                         shader = (Shader) d.c;
                                         if (shader == null && d.b == 0) {
                                             qVar = null;
                                         } else {
-                                            qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0.c(d.b));
+                                            qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0Shadow.c(d.b));
                                         }
                                         int i22 = i20 == 0 ? 0 : 1;
                                         if (eVar.k) {
@@ -398,7 +398,7 @@ public abstract class d5 implements Encoder {
                                             i7 = 3;
                                             i6 = 2;
                                         }
-                                        qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0.c(d.b));
+                                        qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0Shadow.c(d.b));
                                         if (i20 == 0) {
                                         }
                                         if (eVar.k) {
@@ -411,7 +411,7 @@ public abstract class d5 implements Encoder {
                                     shader = (Shader) d.c;
                                     if (shader == null) {
                                     }
-                                    qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0.c(d.b));
+                                    qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0Shadow.c(d.b));
                                     if (i20 == 0) {
                                     }
                                     if (eVar.k) {
@@ -446,7 +446,7 @@ public abstract class d5 implements Encoder {
                                 shader = (Shader) d.c;
                                 if (shader == null) {
                                 }
-                                qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0.c(d.b));
+                                qVar = shader == null ? new d2.q(shader) : new d2.r0(d2.a0Shadow.c(d.b));
                                 if (i20 == 0) {
                                 }
                                 if (eVar.k) {
@@ -599,7 +599,7 @@ public abstract class d5 implements Encoder {
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r2v10, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r2v8, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r2v8, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r2v9, types: [java.util.List] */
     public static final yz0.y1 b0(mg0.m mVar) {
         kw kwVar;
@@ -625,8 +625,8 @@ public abstract class d5 implements Encoder {
         boolean z2 = false;
         ZonedDateTime zonedDateTime = mVar.f;
         yz0.d3 d3Var = new yz0.d3(lVar.f.b, lVar.b);
-        SubscriptionState z3 = sy.r.z(kwVar3);
-        SubscriptionState z4 = sy.r.z(kwVar2);
+        SubscriptionState z3 = sy.rShadow.z(kwVar3);
+        SubscriptionState z4 = sy.rShadow.z(kwVar2);
         List list = lVar.e;
         SubscriptionState subscriptionState2 = SubscriptionState.IGNORED;
         if (z4 == subscriptionState2 || z3 == subscriptionState2 || (z3 == null && z4 == null)) {
@@ -648,11 +648,11 @@ public abstract class d5 implements Encoder {
             }
             z2 = false;
         }
-        SubscriptionState z5 = sy.r.z(kwVar3);
-        SubscriptionState z6 = sy.r.z(kwVar);
+        SubscriptionState z5 = sy.rShadow.z(kwVar3);
+        SubscriptionState z6 = sy.rShadow.z(kwVar);
         SubscriptionState subscriptionState5 = (z6 == subscriptionState2 || z5 == SubscriptionState.SUBSCRIBED || z6 == (subscriptionState = SubscriptionState.UNSUBSCRIBED)) ? subscriptionState2 : subscriptionState;
-        SubscriptionState z7 = sy.r.z(kwVar3);
-        SubscriptionState z8 = sy.r.z(kwVar);
+        SubscriptionState z7 = sy.rShadow.z(kwVar3);
+        SubscriptionState z8 = sy.rShadow.z(kwVar);
         SubscriptionState subscriptionState6 = SubscriptionState.SUBSCRIBED;
         if (z7 == subscriptionState6 && z8 == null) {
             subscriptionState6 = null;
@@ -679,7 +679,7 @@ public abstract class d5 implements Encoder {
             str = str6;
             i = i3;
             str2 = str3;
-            r2 = x61.r.r;
+            r2 = x61.rShadow.r;
         }
         com.github.rudroid.common.b0 b0Var = new com.github.rudroid.common.b0(gVar.a, (List) r2);
         mg0.h hVar = mVar.n;
@@ -1097,11 +1097,11 @@ public abstract class d5 implements Encoder {
                     } else {
                         sy.y.j(obj);
                         dVar2 = new k6.d(vVar);
-                        Context z = v71.b0.z(vVar, (a71.h) null, (v71.a0) null, new dn.b(2, (a71.c) null, 2), 3);
+                        Context z = v71.b0.z(vVar, (a71.h) null, (v71.a0Shadow) null, new dn.b(2, (a71.c) null, 2), 3);
                         v71.z zVar = vVar.r;
                         mVar5.getClass();
                         b6.p1 p1Var = new b6.p1(50);
-                        y71.y1 c = y71.n1.c(Boolean.FALSE);
+                        y71.y1 c = y71.n1Shadow.c(Boolean.FALSE);
                         a71.h pVar = new k6.p(vVar, mVar5, context5);
                         kVar.getClass();
                         a71.h d = v71.b0.d();
@@ -1115,7 +1115,7 @@ public abstract class d5 implements Encoder {
                             mVar2 = i2Var;
                             context2 = z;
                             try {
-                                v71.b0.z(vVar, dVar2, (v71.a0) null, new a0.i(wVar2, mVar5, context5, mVar2, vVar, (a71.c) null, 6, false), 2);
+                                v71.b0.z(vVar, dVar2, (v71.a0Shadow) null, new a0.i(wVar2, mVar5, context5, mVar2, vVar, (a71.c) null, 6, false), 2);
                                 mVar3 = mVar;
                                 try {
                                     a61.u0 u0Var = new a61.u0(mVar2, mVar3, c, context, p1Var, vVar, uVar, null, 1);
@@ -1123,7 +1123,7 @@ public abstract class d5 implements Encoder {
                                     mVar2 = mVar2;
                                     vVar2 = vVar;
                                     try {
-                                        v71.b0.z(vVar2, (a71.h) null, (v71.a0) null, u0Var, 3);
+                                        v71.b0.z(vVar2, (a71.h) null, (v71.a0Shadow) null, u0Var, 3);
                                         k6.s sVar = new k6.s(2, null);
                                         qVar2.u = vVar2;
                                         qVar2.v = context3;
@@ -1137,7 +1137,7 @@ public abstract class d5 implements Encoder {
                                         try {
                                             qVar2.B = wVar4;
                                             qVar2.D = 1;
-                                            if (y71.n1.u(c, sVar, qVar2) != aVar) {
+                                            if (y71.n1Shadow.u(c, sVar, qVar2) != aVar) {
                                                 wVar2 = wVar4;
                                             }
                                             return aVar;
@@ -1266,7 +1266,7 @@ public abstract class d5 implements Encoder {
         sb.append('\"');
     }
 
-    public static final List t(zx.a0 a0Var) {
+    public static final List t(zx.a0Shadow a0Var) {
         List<zx.c0> list;
         Parcelable d;
         k71.k.g(a0Var, "<this>");
@@ -1288,16 +1288,16 @@ public abstract class d5 implements Encoder {
             }
             arrayList = arrayList2;
         }
-        return arrayList == null ? x61.r.r : arrayList;
+        return arrayList == null ? x61.rShadow.r : arrayList;
     }
 
     public static final List u(f00.b0 b0Var) {
-        List<f00.a0> list;
+        List<f00.a0Shadow> list;
         if (b0Var == null || (list = b0Var.a) == null) {
-            return x61.r.r;
+            return x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
-        for (f00.a0 a0Var : list) {
+        for (f00.a0Shadow a0Var : list) {
             arrayList.add(new l01.q0(a0Var.b, f0(a0Var.a)));
         }
         return arrayList;
@@ -1393,7 +1393,7 @@ public abstract class d5 implements Encoder {
         int i = q3Var.b;
         Iterable<z70.o3> iterable = q3Var.d;
         if (iterable == null) {
-            iterable = x61.r.r;
+            iterable = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         for (z70.o3 o3Var : iterable) {
@@ -1699,7 +1699,7 @@ public abstract class d5 implements Encoder {
         y50.a aVar;
         Iterable<w50.u> iterable = wVar.d;
         if (iterable == null) {
-            iterable = x61.r.r;
+            iterable = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         for (w50.u uVar : iterable) {
@@ -1931,7 +1931,7 @@ public abstract class d5 implements Encoder {
 
     public void K(Object obj) {
         k71.k.g(obj, "value");
-        throw new SerializationException("Non-serializable " + k71.x.a(obj.getClass()) + " is not supported by " + k71.x.a(getClass()) + " encoder");
+        throw new SerializationException("Non-serializable " + k71.xShadow.a(obj.getClass()) + " is not supported by " + k71.xShadow.a(getClass()) + " encoder");
     }
 
     public void L(SerialDescriptor serialDescriptor) {

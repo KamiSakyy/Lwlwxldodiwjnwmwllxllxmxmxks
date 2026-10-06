@@ -6,7 +6,7 @@ import androidx.lifecycle.d1;
 import com.github.commonandroid.featureflag.RuntimeFeatureFlag;
 import com.github.rudroid.starredreposandlists.navigation.EditListRoute;
 import com.github.rudroid.utilities.ui.g1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import yz0.p2;
 
@@ -50,10 +50,10 @@ final /* synthetic */ class q extends k71.i implements j71.c {
                             ListDetailFragment listDetailFragment2 = listDetailFragment;
                             s0 C4 = listDetailFragment2.C4();
                             fl.f.Companion.getClass();
-                            y1 c = n1.c(fl.e.b(w61.a0.a));
+                            y1 c = n1Shadow.c(fl.e.b(w61.a0.a));
                             p2 p2Var = (p2) ((g1) C4.A.getValue()).getData();
                             if (p2Var != null) {
-                                v71.b0.z(d1.k(C4), (a71.h) null, (v71.a0) null, new j0(C4, p2Var.a, c, null), 3);
+                                v71.b0.z(d1.k(C4), (a71.h) null, (v71.a0Shadow) null, new j0(C4, p2Var.a, c, null), 3);
                             }
                             com.github.rudroid.utilities.w0.a(c, listDetailFragment2.F3(), androidx.lifecycle.w.u, new n(listDetailFragment2, null));
                             break;
@@ -73,10 +73,10 @@ final /* synthetic */ class q extends k71.i implements j71.c {
                             ListDetailFragment listDetailFragment2 = listDetailFragment;
                             s0 C4 = listDetailFragment2.C4();
                             fl.f.Companion.getClass();
-                            y1 c = n1.c(fl.e.b(w61.a0.a));
+                            y1 c = n1Shadow.c(fl.e.b(w61.a0.a));
                             p2 p2Var = (p2) ((g1) C4.A.getValue()).getData();
                             if (p2Var != null) {
-                                v71.b0.z(d1.k(C4), (a71.h) null, (v71.a0) null, new j0(C4, p2Var.a, c, null), 3);
+                                v71.b0.z(d1.k(C4), (a71.h) null, (v71.a0Shadow) null, new j0(C4, p2Var.a, c, null), 3);
                             }
                             com.github.rudroid.utilities.w0.a(c, listDetailFragment2.F3(), androidx.lifecycle.w.u, new n(listDetailFragment2, null));
                             break;

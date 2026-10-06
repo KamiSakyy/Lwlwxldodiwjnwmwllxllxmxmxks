@@ -35,7 +35,7 @@ public final class g30 {
         z = g30VarArr;
         A = v8.l0.t(g30VarArr);
         Companion = new f30();
-        sy.d0.o("ABUSE", "DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED", "SPAM");
+        sy.d0Shadow.o("ABUSE", "DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED", "SPAM");
     }
 
     public g30(String str, int i, String str2) {

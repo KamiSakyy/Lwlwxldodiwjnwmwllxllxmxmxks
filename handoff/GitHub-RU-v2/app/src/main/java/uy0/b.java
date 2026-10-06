@@ -14,7 +14,7 @@ import pz0.su;
 import pz0.td;
 import pz0.wk;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -26,13 +26,13 @@ public abstract class b {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Repository");
+        List n = d0Shadow.n("Repository");
         List list = sy0.a.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "Repository", n, list)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        s nVar = new n("Repository", d0.n("Repository"), r);
+        s nVar = new n("Repository", d0Shadow.n("Repository"), r);
         td.Companion.getClass();
         x xVar2 = td.a;
         List r2 = l.r(new s[]{mVar2, nVar, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});

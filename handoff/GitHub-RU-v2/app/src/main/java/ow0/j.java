@@ -20,7 +20,7 @@ public final class j implements aa.w0 {
         List list = qw0.b.a;
         List list2 = qw0.b.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

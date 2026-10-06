@@ -1,7 +1,7 @@
 package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class f1 {
+public final class f1Shadow {
     public int a;
 
     public f1(int i) {
@@ -12,7 +12,7 @@ public final class f1 {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof f1) && this.a == ((f1) obj).a;
+        return (obj instanceof f1Shadow) && this.a == ((f1Shadow) obj).a;
     }
 
     public final int hashCode() {

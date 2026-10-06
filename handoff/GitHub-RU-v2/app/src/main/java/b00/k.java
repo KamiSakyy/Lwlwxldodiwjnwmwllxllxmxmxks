@@ -9,8 +9,8 @@ import java.util.List;
 import m10.eh;
 import m10.re0;
 import m10.vp;
-import sy.d0;
-import x61.r;
+import sy.d0Shadow;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class k {
@@ -20,12 +20,12 @@ public abstract class k {
         eh.Companion.getClass();
         x xVar = eh.a;
         k71.k.g(xVar, "type");
-        r rVar = r.r;
-        List n = d0.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        rShadow rVar = rShadow.r;
+        List n = d0Shadow.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         re0.Companion.getClass();
         q0 q0Var = re0.a;
         k71.k.g(q0Var, "type");
         vp.Companion.getClass();
-        a = d0.n(new aa.m("updateProjectV2LastViewed", q0Var, (String) null, rVar, no.a.s(vp.o1, new u0(s0.p("projectId", new t("projectId")))), n));
+        a = d0Shadow.n(new aa.m("updateProjectV2LastViewed", q0Var, (String) null, rVar, no.a.s(vp.o1, new u0(s0.p("projectId", new t("projectId")))), n));
     }
 }

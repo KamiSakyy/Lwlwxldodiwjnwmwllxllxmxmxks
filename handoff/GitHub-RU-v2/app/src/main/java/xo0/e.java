@@ -3,7 +3,7 @@ package xo0;
 import com.github.service.models.response.feed.FeedDisinterestReason;
 import com.github.service.wrapper.j;
 import ga.h;
-import in.r;
+import in.rShadow;
 import java.util.ArrayList;
 import java.util.Set;
 import jn0.ce;
@@ -25,7 +25,7 @@ import m10.we;
 import pz0.g7;
 import pz0.sb;
 import s01.n;
-import s01.o;
+import s01.oShadow;
 import s01.p;
 import t00.f8;
 import v71.v;
@@ -35,7 +35,7 @@ import wy0.n6;
 import xn.q1;
 import y00.l;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements s10.a, yf0, mi0 {
@@ -55,7 +55,7 @@ public final class e implements s10.a, yf0, mi0 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                this.v = new sw0.c(jVar, bVar, vVar, new q1(16), new n6(7), o.r, new n6(8), new q1(17), new q1(18), new q1(19), new q1(20), null, null, 126976);
+                this.v = new sw0.c(jVar, bVar, vVar, new q1(16), new n6(7), oShadow.r, new n6(8), new q1(17), new q1(18), new q1(19), new q1(20), null, null, 126976);
                 break;
             default:
                 k.g(jVar, "client");
@@ -64,7 +64,7 @@ public final class e implements s10.a, yf0, mi0 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                this.v = new sw0.c(jVar, bVar, vVar, new g(10), new sw0.b(28), o.r, new sw0.b(29), new g(11), new g(12), new g(13), new g(14), null, null, 126976);
+                this.v = new sw0.c(jVar, bVar, vVar, new g(10), new sw0.b(28), oShadow.r, new sw0.b(29), new g(11), new g(12), new g(13), new g(14), null, null, 126976);
                 break;
         }
     }
@@ -78,9 +78,9 @@ public final class e implements s10.a, yf0, mi0 {
     public final i b() {
         switch (this.r) {
             case 0:
-                return n1.y(new d6(com.github.service.wrapper.a.o(this.s, new je(), null, false, null, null, 62), 21), this.u);
+                return n1Shadow.y(new d6(com.github.service.wrapper.a.o(this.s, new je(), null, false, null, null, 62), 21), this.u);
             default:
-                return n1.y(new l(com.github.service.wrapper.a.o(this.s, new gf(), null, false, null, null, 62), 23), this.u);
+                return n1Shadow.y(new l(com.github.service.wrapper.a.o(this.s, new gf(), null, false, null, null, 62), 23), this.u);
         }
     }
 
@@ -132,7 +132,7 @@ public final class e implements s10.a, yf0, mi0 {
                     }
                     arrayList.add(g7Var);
                 }
-                return n1.y(r.l(r.h(this.s.d(new fa0(arrayList)))), this.u);
+                return n1Shadow.y(rShadow.l(rShadow.h(this.s.d(new fa0(arrayList)))), this.u);
             default:
                 Set<t10.g> set3 = set;
                 ArrayList arrayList2 = new ArrayList(x61.n.F(set3, 10));
@@ -171,25 +171,25 @@ public final class e implements s10.a, yf0, mi0 {
                     }
                     arrayList2.add(kaVar);
                 }
-                return n1.y(r.l(r.h(this.s.d(new tc0(arrayList2)))), this.u);
+                return n1Shadow.y(rShadow.l(rShadow.h(this.s.d(new tc0(arrayList2)))), this.u);
         }
     }
 
     public final i e(String str) {
         switch (this.r) {
             case 0:
-                return n1.y(r.l(r.h(this.s.d(new q70(str)))), this.u);
+                return n1Shadow.y(rShadow.l(rShadow.h(this.s.d(new q70(str)))), this.u);
             default:
-                return n1.y(r.l(r.h(this.s.d(new da0(str)))), this.u);
+                return n1Shadow.y(rShadow.l(rShadow.h(this.s.d(new da0(str)))), this.u);
         }
     }
 
     public final i f() {
         switch (this.r) {
             case 0:
-                return n1.y(new f8(19, new d6(com.github.service.wrapper.b.a(this.t, new ce(), h.t, true, null, 56), 22)), this.u);
+                return n1Shadow.y(new f8(19, new d6(com.github.service.wrapper.b.a(this.t, new ce(), h.t, true, null, 56), 22)), this.u);
             default:
-                return n1.y(new f8(24, new l(com.github.service.wrapper.b.a(this.t, new ze(), h.t, true, null, 56), 24)), this.u);
+                return n1Shadow.y(new f8(24, new l(com.github.service.wrapper.b.a(this.t, new ze(), h.t, true, null, 56), 24)), this.u);
         }
     }
 
@@ -228,7 +228,7 @@ public final class e implements s10.a, yf0, mi0 {
                     }
                     arrayList.add(sbVar);
                 }
-                return n1.y(r.l(r.h(this.s.d(new i8(str, arrayList)))), this.u);
+                return n1Shadow.y(rShadow.l(rShadow.h(this.s.d(new i8(str, arrayList)))), this.u);
             default:
                 Set<FeedDisinterestReason> set3 = set;
                 ArrayList arrayList2 = new ArrayList(x61.n.F(set3, 10));
@@ -249,7 +249,7 @@ public final class e implements s10.a, yf0, mi0 {
                     }
                     arrayList2.add(weVar);
                 }
-                return n1.y(r.l(r.h(this.s.d(new f9(str, arrayList2)))), this.u);
+                return n1Shadow.y(rShadow.l(rShadow.h(this.s.d(new f9(str, arrayList2)))), this.u);
         }
     }
 

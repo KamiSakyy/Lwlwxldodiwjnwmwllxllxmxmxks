@@ -37,7 +37,7 @@ public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3
     public static void n(List list) {
         Iterator it = list.iterator();
         if (it.hasNext()) {
-            throw jo.f4.g(it);
+            throw jo.f4Shadow.g(it);
         }
     }
 
@@ -198,21 +198,21 @@ public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3
             if (file.exists()) {
                 fileInputStream = new FileInputStream(file);
                 try {
-                    jSONObject = new JSONObject(v41.g.i(fileInputStream));
+                    jSONObject = new JSONObject(v41.gShadow.i(fileInputStream));
                     fileInputStream2 = fileInputStream;
                 } catch (Exception unused) {
-                    v41.g.b(fileInputStream);
+                    v41.gShadow.b(fileInputStream);
                     return null;
                 } catch (Throwable th2) {
                     th = th2;
-                    v41.g.b(fileInputStream);
+                    v41.gShadow.b(fileInputStream);
                     throw th;
                 }
             } else {
                 Log.isLoggable("FirebaseCrashlytics", 2);
                 jSONObject = null;
             }
-            v41.g.b(fileInputStream2);
+            v41.gShadow.b(fileInputStream2);
             return jSONObject;
         } catch (Exception unused2) {
             fileInputStream = null;
@@ -366,7 +366,7 @@ public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3
         }
     }
 
-    public x3(b51.d dVar) {
+    public x3(b51.dShadow dVar) {
         this.r = 5;
         this.s = new File((File) dVar.c, "com.crashlytics.settings.json");
     }

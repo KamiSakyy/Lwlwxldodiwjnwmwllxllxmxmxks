@@ -5,7 +5,7 @@ import gn0.r6;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class s0 implements aa.a {
@@ -151,7 +151,7 @@ public abstract class s0 implements aa.a {
         String str4 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar = r6.a;
+            aa.xShadow xVar = r6.a;
             switch (r0) {
                 case 0:
                     num = num2;
@@ -240,7 +240,7 @@ public abstract class s0 implements aa.a {
         aVar.b(fVar, wVar, Integer.valueOf(r0Var.c));
         fVar.z0("createdAt");
         r6.Companion.getClass();
-        aa.x xVar = r6.a;
+        aa.xShadow xVar = r6.a;
         wVar.e(xVar).b(fVar, wVar, r0Var.d);
         fVar.z0("updatedAt");
         wVar.e(xVar).b(fVar, wVar, r0Var.e);

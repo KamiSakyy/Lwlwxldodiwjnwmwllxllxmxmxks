@@ -3,7 +3,7 @@ package com.github.rudroid.shortcuts.navigation;
 import g81.e;
 import ig.c;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -42,7 +42,7 @@ public final class ShortcutViewEntryPointRoute implements c {
         if (1 == (i & 1)) {
             this.a = str;
         } else {
-            c1.l(i, 1, ShortcutViewEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, ShortcutViewEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

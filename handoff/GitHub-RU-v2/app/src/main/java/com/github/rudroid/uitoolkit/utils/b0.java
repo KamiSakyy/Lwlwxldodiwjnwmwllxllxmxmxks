@@ -10,7 +10,7 @@ public final class b0 {
         k71.k.g(z1Var, "<this>");
         sVar.c0(121642416);
         s3.c cVar = (s3.c) sVar.j(g1.h);
-        float f = qg.p.a;
+        float f = qg.pShadow.a;
         int i0 = cVar.i0(f);
         int i02 = cVar.i0(f);
         int i03 = cVar.i0(ih.a.f);

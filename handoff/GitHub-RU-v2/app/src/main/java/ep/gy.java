@@ -8,7 +8,7 @@ import jo.jd0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gy implements aaShadow.a {
     public static final gy a = new gy();
-    public static final List b = sy.d0.o("__typename", "id", "url", "state", "bodyHtml", "milestone", "viewerCanReopen");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "url", "state", "bodyHtml", "milestone", "viewerCanReopen");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003b, code lost:
     

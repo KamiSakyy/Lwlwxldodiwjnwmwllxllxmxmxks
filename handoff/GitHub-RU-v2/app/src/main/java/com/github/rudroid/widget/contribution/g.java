@@ -5,7 +5,7 @@ import com.github.service.models.response.ContributionLevel;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
-import sy.d0;
+import sy.d0Shadow;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -39,7 +39,7 @@ public final /* synthetic */ class g implements j71.f {
                     i++;
                     int i3 = i2 + 1;
                     if (i2 < 0) {
-                        d0.x();
+                        d0Shadow.x();
                         throw null;
                     }
                     final List list = (List) obj4;
@@ -56,12 +56,12 @@ public final /* synthetic */ class g implements j71.f {
                             for (Object obj8 : list2) {
                                 int i5 = i4 + 1;
                                 if (i4 < 0) {
-                                    d0.x();
+                                    d0Shadow.x();
                                     throw null;
                                 }
                                 List list3 = (List) obj8;
-                                if (i4 == d0.m(list2)) {
-                                    if (i2 == d0.m(M)) {
+                                if (i4 == d0Shadow.m(list2)) {
+                                    if (i2 == d0Shadow.m(M)) {
                                         z = false;
                                         k.c(list3, f, f2, z, sVar2, 0);
                                         i4 = i5;
@@ -86,7 +86,7 @@ public final /* synthetic */ class g implements j71.f {
                 for (Object obj5 : list2) {
                     int i5 = i4 + 1;
                     if (i4 < 0) {
-                        d0.x();
+                        d0Shadow.x();
                         throw null;
                     }
                     switch (k.a.a[((ContributionLevel) obj5).ordinal()]) {
@@ -109,7 +109,7 @@ public final /* synthetic */ class g implements j71.f {
                         default:
                             throw new NoWhenBranchMatchedException();
                     }
-                    k.a(aVar, this.s, this.t, i4 != d0.m(list2), sVar2, 0);
+                    k.a(aVar, this.s, this.t, i4 != d0Shadow.m(list2), sVar2, 0);
                     i4 = i5;
                 }
                 return a0.a;

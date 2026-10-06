@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v8 implements aa.a {
     public static final v8 a = new v8();
-    public static final List b = sy.d0.o(new String[]{"id", "login", "avatarUrl", "isViewer", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "login", "avatarUrl", "isViewer", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -76,7 +76,7 @@ public final class v8 implements aa.a {
         fVar.z0("avatarUrl");
         bVar.b(fVar, wVar, p8Var.c);
         fVar.z0("isViewer");
-        jo.f4.C(p8Var.d, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(p8Var.d, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, p8Var.e);
     }
 }

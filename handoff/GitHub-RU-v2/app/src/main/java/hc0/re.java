@@ -7,8 +7,8 @@ public abstract class re {
     public static final qe Companion = new qe();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("MarkedAsDuplicateEvent", n, sy.d0.n(yg.a));
+        new aa.q0("MarkedAsDuplicateEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

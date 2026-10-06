@@ -209,7 +209,7 @@ public final /* synthetic */ class b implements j71.e {
                 k.g(str21, "__typename");
                 return new u60(y60Var2, str20, str21);
             case 13:
-                return Integer.valueOf(sy.r.o(d5.u(((xz.n) obj).c), d5.u(((xz.n) obj2).c), 0));
+                return Integer.valueOf(sy.rShadow.o(d5.u(((xz.n) obj).c), d5.u(((xz.n) obj2).c), 0));
             case 14:
                 u1.a aVar3 = (u1.a) obj;
                 o oVar = (f1) obj2;

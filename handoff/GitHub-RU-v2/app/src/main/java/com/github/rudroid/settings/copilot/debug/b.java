@@ -73,7 +73,7 @@ public final /* synthetic */ class b implements j71.e {
                     com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j jVar = new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(15, copilotPermissionsOverrideActivity);
                     sVar2.n0(jVar);
                     obj3 = jVar;
-                    qg.p.c(null, "Copilot Permission Overrides", null, 0L, (j71.a) obj3, 0, 0.0f, 0.0f, 0, 0, null, sVar2, 48, 0, 2029);
+                    qg.pShadow.c(null, "Copilot Permission Overrides", null, 0L, (j71.a) obj3, 0, 0.0f, 0.0f, 0, 0, null, sVar2, 48, 0, 2029);
                     break;
                 }
         }

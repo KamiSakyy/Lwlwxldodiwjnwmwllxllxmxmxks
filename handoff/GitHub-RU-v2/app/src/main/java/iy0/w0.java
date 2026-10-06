@@ -10,7 +10,7 @@ import wx0.t4;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w0 implements aa.a {
     public static final w0 a = new w0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         wx0.o oVar;
@@ -41,7 +41,7 @@ public final class w0 implements aa.a {
         }
         if (m71.a.v(m71.a.O(new String[]{"ProjectV2IterationField"}), set2, str, set)) {
             eVar.s0();
-            j4Var = n4.c(eVar, wVar);
+            j4Var = n4.cShadow(eVar, wVar);
         }
         return new o0(str, oVar, r4Var, j4Var);
     }

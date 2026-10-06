@@ -7,8 +7,8 @@ public abstract class be {
     public static final ae Companion = new ae();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("LockedEvent", n, sy.d0.n(yh.a));
+        new aa.q0("LockedEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

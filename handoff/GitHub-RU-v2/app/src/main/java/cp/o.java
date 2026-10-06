@@ -12,7 +12,7 @@ import m10.eh;
 import m10.i30;
 import m10.p00;
 import m10.vg0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -23,9 +23,9 @@ public abstract class o {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("WorkflowConnection");
+        List n = d0Shadow.n("WorkflowConnection");
         List list = wo.g.a;
         List r = x61.l.r(new s[]{mVar, no.a.c(list, "selections", "WorkflowConnection", n, list)});
         ah.Companion.getClass();

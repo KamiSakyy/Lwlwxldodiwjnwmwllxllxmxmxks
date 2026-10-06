@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lo implements aaShadow.a {
     public static final lo a = new lo();
-    public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"pageInfo", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -20,7 +20,7 @@ public final class lo implements aaShadow.a {
                 if (r0 != 1) {
                     break;
                 }
-                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(jo.a, true)))).a(eVar, wVar);
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(joShadow.a, true)))).a(eVar, wVar);
             }
         }
         if (zyVar != null) {
@@ -38,6 +38,6 @@ public final class lo implements aaShadow.a {
         fVar.z0("pageInfo");
         aa.c.c(ko.a, false).b(fVar, wVar, azVar.a);
         fVar.z0("nodes");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(jo.a, true)))).b(fVar, wVar, azVar.b);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(joShadow.a, true)))).b(fVar, wVar, azVar.b);
     }
 }

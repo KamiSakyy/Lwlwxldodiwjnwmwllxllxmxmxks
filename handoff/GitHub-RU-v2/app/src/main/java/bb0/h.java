@@ -25,7 +25,7 @@ import fb0.t;
 import fb0.u;
 import fb0.v;
 import fb0.w;
-import fb0.x;
+import fb0.xShadow;
 import fb0.y;
 import fb0.z;
 import hc0.ev;
@@ -188,7 +188,7 @@ public final class h implements z2 {
             if (iVar == null) {
                 n4Var = new n4(iVar.a, iVar.b, iVar.c);
             } else {
-                fb0.k kVar = l0Var.c;
+                fb0.kShadow kVar = l0Var.c;
                 if (kVar != null) {
                     n4Var = new p4(kVar.b, kVar.a);
                 } else {
@@ -247,7 +247,7 @@ public final class h implements z2 {
                                         String str20 = j0Var.b.b;
                                         String str21 = j0Var.a;
                                         i9 i9Var = jVar.d;
-                                        o4Var = new o4(str17, str18, z7, i4, str20, str21, i9Var != null ? sy.o.m(i9Var) : null);
+                                        o4Var = new o4(str17, str18, z7, i4, str20, str21, i9Var != null ? sy.oShadow.m(i9Var) : null);
                                     } else {
                                         fb0.q qVar = l0Var.l;
                                         if (qVar != null) {

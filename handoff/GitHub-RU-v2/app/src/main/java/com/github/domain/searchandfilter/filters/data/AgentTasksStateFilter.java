@@ -7,7 +7,7 @@ import bm.l;
 import java.util.ArrayList;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.z;
 import kotlinx.serialization.KSerializer;
 import sy.w;
@@ -41,7 +41,7 @@ public final class AgentTasksStateFilter extends d implements bm.a {
     public AgentTasksStateFilter(int i, l lVar, String str, cm.a aVar, List list) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, AgentTasksStateFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, AgentTasksStateFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

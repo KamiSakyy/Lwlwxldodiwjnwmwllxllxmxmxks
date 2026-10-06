@@ -138,7 +138,7 @@ import z70.l2;
 import z70.z6;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class t implements y71.j {
+public final class tShadow implements y71.j {
     public final /* synthetic */ int r;
     public final /* synthetic */ y71.j s;
 
@@ -213,7 +213,7 @@ public final class t implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     d30 d30Var = ((b30) obj).a;
-                    x2 d = (d30Var == null || (e30Var = d30Var.a) == null) ? null : sy.t.d(e30Var.c);
+                    x2 d = (d30Var == null || (e30Var = d30Var.a) == null) ? null : sy.tShadow.d(e30Var.c);
                     if (d != null) {
                         b0Var.v = 1;
                         if (this.s.c(d, b0Var) == aVar) {
@@ -442,7 +442,7 @@ public final class t implements y71.j {
     private final Object h(a71.c cVar, Object obj) {
         vb0.g0 g0Var;
         int i;
-        x61.r arrayList;
+        x61.rShadow arrayList;
         s5 s5Var;
         r5 r5Var;
         x01.i iVar;
@@ -463,9 +463,9 @@ public final class t implements y71.j {
                     r5 r5Var2 = m5Var.a;
                     String str = null;
                     t5 t5Var = r5Var2 != null ? r5Var2.c : null;
-                    x61.r<q5> rVar = x61.r.r;
+                    x61.rShadow<q5> rVar = x61.rShadow.r;
                     if (t5Var != null) {
-                        x61.r rVar2 = r5Var2.c.a.b;
+                        x61.rShadow rVar2 = r5Var2.c.a.b;
                         if (rVar2 != null) {
                             rVar = rVar2;
                         }
@@ -479,7 +479,7 @@ public final class t implements y71.j {
                     } else {
                         if ((r5Var2 != null ? r5Var2.d : null) != null) {
                             n5 n5Var = r5Var2.d.a;
-                            x61.r rVar3 = (n5Var == null || (s5Var = n5Var.b) == null) ? null : s5Var.a.b;
+                            x61.rShadow rVar3 = (n5Var == null || (s5Var = n5Var.b) == null) ? null : s5Var.a.b;
                             if (rVar3 != null) {
                                 rVar = rVar3;
                             }
@@ -566,7 +566,7 @@ public final class t implements y71.j {
                     String str = null;
                     List<nd> list = (qdVar == null || (ldVar3 = qdVar.b) == null || (odVar3 = ldVar3.b) == null) ? null : odVar3.b.b;
                     if (list == null) {
-                        list = x61.r.r;
+                        list = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (nd ndVar : list) {
@@ -615,7 +615,7 @@ public final class t implements y71.j {
         w8 w8Var;
         int i2;
         int i3;
-        x61.r rVar;
+        x61.rShadow rVar;
         String str;
         y30.b bVar;
         String str2;
@@ -654,8 +654,8 @@ public final class t implements y71.j {
                         String str9 = b9Var.b;
                         int i5 = b9Var.c;
                         String str10 = b9Var.d.a;
-                        x61.r rVar2 = b9Var.e.a;
-                        x61.r rVar3 = x61.r.r;
+                        x61.rShadow rVar2 = b9Var.e.a;
+                        x61.rShadow rVar3 = x61.rShadow.r;
                         if (rVar2 == null) {
                             rVar2 = rVar3;
                         }
@@ -674,7 +674,7 @@ public final class t implements y71.j {
                             String str11 = str5;
                             String str12 = aVar2.a;
                             String str13 = aVar2.b;
-                            x61.r rVar4 = fVar.c.a;
+                            x61.rShadow rVar4 = fVar.c.a;
                             if (rVar4 == null) {
                                 rVar4 = rVar3;
                             }
@@ -719,7 +719,7 @@ public final class t implements y71.j {
                         String str18 = str7;
                         a01.f fVar2 = new a01.f(i5, str8, str9, str10, arrayList);
                         n8 n8Var = w8Var.g;
-                        x61.r rVar5 = n8Var != null ? n8Var.a : null;
+                        x61.rShadow rVar5 = n8Var != null ? n8Var.a : null;
                         if (rVar5 == null) {
                             rVar5 = rVar3;
                         }
@@ -747,7 +747,7 @@ public final class t implements y71.j {
                             } else {
                                 i2 = size3;
                                 i3 = i13;
-                                x61.r arrayList7 = new ArrayList(x61.n.F(list, 10));
+                                x61.rShadow arrayList7 = new ArrayList(x61.n.F(list, 10));
                                 for (y30.c cVar3 : list) {
                                     y30.d dVar3 = cVar3 != null ? cVar3.b : null;
                                     if (dVar3 == null || (checkStatusState = b91.g.Y(dVar3.a)) == null) {
@@ -776,7 +776,7 @@ public final class t implements y71.j {
                             i12 = i3;
                         }
                         r8 r8Var = w8Var.h;
-                        x61.r rVar6 = r8Var != null ? r8Var.a : null;
+                        x61.rShadow rVar6 = r8Var != null ? r8Var.a : null;
                         if (rVar6 == null) {
                             rVar6 = rVar3;
                         }
@@ -803,7 +803,7 @@ public final class t implements y71.j {
                             }
                             ZonedDateTime zonedDateTime2 = zonedDateTime;
                             PullRequestState Q = m7.y.Q(eVar2.c);
-                            x61.r rVar7 = l2Var.r.a;
+                            x61.rShadow rVar7 = l2Var.r.a;
                             if (rVar7 == null) {
                                 rVar7 = rVar3;
                             }
@@ -922,7 +922,7 @@ public final class t implements y71.j {
                         throw new ApiFailure(ApiFailureType.PARSE_ERROR, "Invalid server response.", (String) null, (Integer) null, (ArrayList) null, (Map) null, (Throwable) null, 120);
                     }
                     i50.h hVar3 = gVar.a.d;
-                    d = sy.r.d(cVar3, hVar3.c, cVar4, (r32 & 4) != 0 ? null : null, null, hVar3.d, hVar3.e, hVar3.f, (r32 & 128) != 0 ? false : false, (r32 & 256) != 0 ? null : null, false, x61.r.r, hVar3.m, (r32 & 4096) != 0 ? false : false, (r32 & 8192) != 0 ? false : false, sy.r.A(hVar3));
+                    d = sy.rShadow.d(cVar3, hVar3.c, cVar4, (r32 & 4) != 0 ? null : null, null, hVar3.d, hVar3.e, hVar3.f, (r32 & 128) != 0 ? false : false, (r32 & 256) != 0 ? null : null, false, x61.rShadow.r, hVar3.m, (r32 & 4096) != 0 ? false : false, (r32 & 8192) != 0 ? false : false, sy.rShadow.A(hVar3));
                     o0Var.v = 1;
                     if (this.s.c(d, o0Var) == aVar) {
                         return aVar;
@@ -965,7 +965,7 @@ public final class t implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     s20.a aVar2 = ((s20.c) obj).a;
-                    b01.f c = (aVar2 == null || (dVar = aVar2.a) == null) ? null : sy.t.c(dVar.c);
+                    b01.f c = (aVar2 == null || (dVar = aVar2.a) == null) ? null : sy.tShadow.c(dVar.c);
                     if (c != null) {
                         s0Var.v = 1;
                         if (this.s.c(c, s0Var) == aVar) {
@@ -1014,7 +1014,7 @@ public final class t implements y71.j {
                     if (l0Var == null) {
                         throw new ApiFailure(ApiFailureType.PARSE_ERROR, "Invalid server response.", (String) null, (Integer) null, (ArrayList) null, (Map) null, (Throwable) null, 120);
                     }
-                    b01.b b = sy.t.b(l0Var);
+                    b01.b b = sy.tShadow.b(l0Var);
                     u0Var.v = 1;
                     if (this.s.c(b, u0Var) == aVar) {
                         return aVar;
@@ -1120,9 +1120,9 @@ public final class t implements y71.j {
         int i;
         u uVar;
         int i2;
-        xn.x xVar;
+        xn.xShadow xVar;
         r0 r0Var;
-        xn.w wVar;
+        xn.wShadow wVar;
         x xVar2;
         int i3;
         y yVar;
@@ -1181,7 +1181,7 @@ public final class t implements y71.j {
         int i13;
         vb0.s sVar2;
         int i14;
-        vb0.t tVar;
+        vb0.tShadow tVar;
         int i15;
         vb0.w wVar2;
         int i16;
@@ -1212,7 +1212,7 @@ public final class t implements y71.j {
                             ArrayList arrayList3 = new ArrayList(x61.n.F(list4, 10));
                             Iterator it = list4.iterator();
                             while (it.hasNext()) {
-                                arrayList3.add(t.q.b((ChatThreadResponse) it.next(), x61.r.r));
+                                arrayList3.add(t.q.b((ChatThreadResponse) it.next(), x61.rShadow.r));
                             }
                             sVar.v = 1;
                             if (this.s.c(arrayList3, sVar) == aVar3) {
@@ -1260,33 +1260,33 @@ public final class t implements y71.j {
                                 switch (iVar2.ordinal()) {
                                     case 0:
                                     case 6:
-                                        wVar = xn.w.w;
+                                        wVar = xn.wShadow.w;
                                         break;
                                     case 1:
-                                        wVar = xn.w.t;
+                                        wVar = xn.wShadow.t;
                                         break;
                                     case 2:
-                                        wVar = xn.w.s;
+                                        wVar = xn.wShadow.s;
                                         break;
                                     case 3:
-                                        wVar = xn.w.s;
+                                        wVar = xn.wShadow.s;
                                         break;
                                     case 4:
-                                        wVar = xn.w.u;
+                                        wVar = xn.wShadow.u;
                                         break;
                                     case 5:
-                                        wVar = xn.w.v;
+                                        wVar = xn.wShadow.v;
                                         break;
                                     default:
                                         throw new NoWhenBranchMatchedException();
                                 }
-                                xVar = new xn.x(str12, str13, str14, g, sy.f0.c(chatServerSentEventDataResponse$Complete.g), t.e.d(chatServerSentEventDataResponse$Complete.e), (List) null, (List) null, (ArrayList) null, wVar, (r0) null, (xn.f0) null, f3Var, 7616);
+                                xVar = new xn.xShadow(str12, str13, str14, g, sy.f0.c(chatServerSentEventDataResponse$Complete.g), t.e.d(chatServerSentEventDataResponse$Complete.e), (List) null, (List) null, (ArrayList) null, wVar, (r0) null, (xn.f0) null, f3Var, 7616);
                             } else if (cVar3 instanceof ChatServerSentEventDataResponse$Content) {
-                                xVar = new xn.x((String) null, (String) null, ((ChatServerSentEventDataResponse$Content) cVar3).b, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, (List) null, (List) null, (ArrayList) null, xn.w.s, (r0) null, (xn.f0) null, f3Var, 7675);
+                                xVar = new xn.xShadow((String) null, (String) null, ((ChatServerSentEventDataResponse$Content) cVar3).b, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, (List) null, (List) null, (ArrayList) null, xn.wShadow.s, (r0) null, (xn.f0) null, f3Var, 7675);
                             } else if (cVar3 instanceof ChatServerSentEventDataResponse$AgentConfirmation) {
-                                xVar = new xn.x((String) null, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, sy.d0.n(t.e.e((ChatServerSentEventDataResponse$AgentConfirmation) cVar3)), (List) null, (ArrayList) null, (xn.w) null, (r0) null, (xn.f0) null, f3Var, 8127);
+                                xVar = new xn.xShadow((String) null, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, sy.d0Shadow.n(t.e.e((ChatServerSentEventDataResponse$AgentConfirmation) cVar3)), (List) null, (ArrayList) null, (xn.wShadow) null, (r0) null, (xn.f0) null, f3Var, 8127);
                             } else if (cVar3 instanceof ChatServerSentEventDataResponse$Debug) {
-                                xVar = new xn.x((String) null, (String) null, ((ChatServerSentEventDataResponse$Debug) cVar3).b, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, (List) null, (List) null, (ArrayList) null, xn.w.w, (r0) null, (xn.f0) null, f3Var, 7675);
+                                xVar = new xn.xShadow((String) null, (String) null, ((ChatServerSentEventDataResponse$Debug) cVar3).b, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, (List) null, (List) null, (ArrayList) null, xn.wShadow.w, (r0) null, (xn.f0) null, f3Var, 7675);
                             } else if (cVar3 instanceof ChatServerSentEventDataResponse$Error) {
                                 String uuid = UUID.randomUUID().toString();
                                 k71.k.f(uuid, "toString(...)");
@@ -1304,14 +1304,14 @@ public final class t implements y71.j {
                                     }
                                     r0Var = r0.t;
                                 }
-                                xVar = new xn.x(uuid, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, (List) null, (List) null, (ArrayList) null, xn.w.v, r0Var, new xn.f0(chatServerSentEventDataResponse$Error.c), f3Var, 4606);
+                                xVar = new xn.xShadow(uuid, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, (List) null, (List) null, (ArrayList) null, xn.wShadow.v, r0Var, new xn.f0(chatServerSentEventDataResponse$Error.c), f3Var, 4606);
                             } else if (cVar3 instanceof ChatServerSentEventDataResponse$FunctionCall) {
-                                xVar = new xn.x((String) null, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, (List) null, sy.d0.n(t.e.f((ChatServerSentEventDataResponse$FunctionCall) cVar3)), (ArrayList) null, xn.w.s, (r0) null, (xn.f0) null, f3Var, 7551);
+                                xVar = new xn.xShadow((String) null, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, (List) null, sy.d0Shadow.n(t.e.f((ChatServerSentEventDataResponse$FunctionCall) cVar3)), (ArrayList) null, xn.wShadow.s, (r0) null, (xn.f0) null, f3Var, 7551);
                             } else {
                                 if (!(cVar3 instanceof ChatServerSentEventDataResponse$Unknown)) {
                                     throw new NoWhenBranchMatchedException();
                                 }
-                                xVar = new xn.x((String) null, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, (List) null, (List) null, (ArrayList) null, xn.w.w, (r0) null, (xn.f0) null, f3Var, 7679);
+                                xVar = new xn.xShadow((String) null, (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, (List) null, (List) null, (ArrayList) null, xn.wShadow.w, (r0) null, (xn.f0) null, f3Var, 7679);
                             }
                             uVar.v = 1;
                             if (this.s.c(xVar, uVar) == aVar4) {
@@ -1459,11 +1459,11 @@ public final class t implements y71.j {
                                 k71.k.g(str36, "eventUrl");
                                 k71.k.g(str37, "eventContent");
                                 k71.k.g(list7, "eventIdentifiers");
-                                Long e = sy.o.e("issue", list7);
-                                Long e2 = sy.o.e("issue_id", list7);
+                                Long e = sy.oShadow.e("issue", list7);
+                                Long e2 = sy.oShadow.e("issue_id", list7);
                                 if (e == null && e2 == null) {
-                                    Long e3 = sy.o.e("alert", list7);
-                                    Long e4 = sy.o.e("alert_id", list7);
+                                    Long e3 = sy.oShadow.e("alert", list7);
+                                    Long e4 = sy.oShadow.e("alert_id", list7);
                                     if (e3 == null && e4 == null) {
                                         switch (str35.hashCode()) {
                                             case -1783613603:
@@ -1515,7 +1515,7 @@ public final class t implements y71.j {
                                                     if (!arrayList.isEmpty()) {
                                                     }
                                                 }
-                                                q3Var = new u3(j2, str35, str7, !t71.p.T(str6) ? null : str6, sy.o.g(list));
+                                                q3Var = new u3(j2, str35, str7, !t71.p.T(str6) ? null : str6, sy.oShadow.g(list));
                                                 y3Var = q3Var;
                                                 break;
                                             case -1106575017:
@@ -1535,7 +1535,7 @@ public final class t implements y71.j {
                                                 str7 = str37;
                                                 j2 = j7;
                                                 if (str35.equals("merge_conflict")) {
-                                                    q3Var = new r3(j2, str35, str7, t71.p.T(str36) ? null : str36, sy.o.g(list7));
+                                                    q3Var = new r3(j2, str35, str7, t71.p.T(str36) ? null : str36, sy.oShadow.g(list7));
                                                     y3Var = q3Var;
                                                     break;
                                                 }
@@ -1559,7 +1559,7 @@ public final class t implements y71.j {
                                                     list = list7;
                                                     j = j2;
                                                     str4 = str7;
-                                                    q3Var = new x3(j, str5, str4, t71.p.T(str8) ? null : str8, sy.o.g(list));
+                                                    q3Var = new x3(j, str5, str4, t71.p.T(str8) ? null : str8, sy.oShadow.g(list));
                                                     y3Var = q3Var;
                                                     break;
                                                 }
@@ -1603,7 +1603,7 @@ public final class t implements y71.j {
                                                 j2 = j7;
                                                 if (str35.equals("pull_request_review")) {
                                                     list = list7;
-                                                    q3Var = new u3(j2, str35, str7, !t71.p.T(str6) ? null : str6, sy.o.g(list));
+                                                    q3Var = new u3(j2, str35, str7, !t71.p.T(str6) ? null : str6, sy.oShadow.g(list));
                                                     y3Var = q3Var;
                                                     break;
                                                 }
@@ -1657,7 +1657,7 @@ public final class t implements y71.j {
                                                 break;
                                             case 431351170:
                                                 if (str35.equals("issue_created")) {
-                                                    o3Var = new o3(j7, str35, str37, "an issue", t71.p.T(str36) ? null : str36, str36, null, sy.o.g(list7));
+                                                    o3Var = new o3(j7, str35, str37, "an issue", t71.p.T(str36) ? null : str36, str36, null, sy.oShadow.g(list7));
                                                     break;
                                                 }
                                                 str4 = str37;
@@ -1696,7 +1696,7 @@ public final class t implements y71.j {
                                                     str9 = str36;
                                                     str7 = str37;
                                                     j2 = j7;
-                                                    q3Var = new t3(j2, str35, str7, t71.p.T(str9) ? null : str9, sy.o.g(list7));
+                                                    q3Var = new t3(j2, str35, str7, t71.p.T(str9) ? null : str9, sy.oShadow.g(list7));
                                                     y3Var = q3Var;
                                                     break;
                                                 }
@@ -1832,9 +1832,9 @@ public final class t implements y71.j {
                             if (fVar != null) {
                                 int i29 = fVar.b;
                                 v20.a aVar9 = fVar.c;
-                                x61.r rVar = aVar9.c;
+                                x61.rShadow rVar = aVar9.c;
                                 if (rVar == null) {
-                                    rVar = x61.r.r;
+                                    rVar = x61.rShadow.r;
                                 }
                                 ArrayList S = x61.m.S(rVar);
                                 ArrayList arrayList8 = new ArrayList(x61.n.F(S, 10));
@@ -1898,7 +1898,7 @@ public final class t implements y71.j {
                             if (cVar4 != null && (aVar2 = cVar4.b) != null) {
                                 iVar = aVar2.c;
                             } else if (cVar4 == null || (bVar2 = cVar4.c) == null) {
-                                arrayList2 = x61.r.r;
+                                arrayList2 = x61.rShadow.r;
                                 cVar2.v = 1;
                                 if (this.s.c(arrayList2, cVar2) == aVar10) {
                                     return aVar10;
@@ -2157,8 +2157,8 @@ public final class t implements y71.j {
                 }
                 return a0Var2;
             case 12:
-                if (cVar instanceof vb0.t) {
-                    tVar = (vb0.t) cVar;
+                if (cVar instanceof vb0.tShadow) {
+                    tVar = (vb0.tShadow) cVar;
                     int i38 = tVar.v;
                     if ((i38 & Integer.MIN_VALUE) != 0) {
                         tVar.v = i38 - Integer.MIN_VALUE;
@@ -2181,7 +2181,7 @@ public final class t implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                tVar = new vb0.t(this, cVar);
+                tVar = new vb0.tShadow(this, cVar);
                 Object obj162 = tVar.u;
                 b71.a aVar202 = b71.a.r;
                 i15 = tVar.v;
@@ -2200,7 +2200,7 @@ public final class t implements y71.j {
                         if (i16 != 0) {
                             sy.y.j(obj17);
                             fk fkVar = ((ek) obj).a;
-                            x2 d = (fkVar == null || (gkVar = fkVar.a) == null) ? null : sy.t.d(gkVar.c);
+                            x2 d = (fkVar == null || (gkVar = fkVar.a) == null) ? null : sy.tShadow.d(gkVar.c);
                             if (d != null) {
                                 wVar2.v = 1;
                                 if (this.s.c(d, wVar2) == aVar21) {
@@ -2334,7 +2334,7 @@ public final class t implements y71.j {
                             if (l0Var == null) {
                                 throw new ApiFailure(ApiFailureType.PARSE_ERROR, "Invalid server response.", (String) null, (Integer) null, (ArrayList) null, (Map) null, (Throwable) null, 120);
                             }
-                            b01.b b = sy.t.b(l0Var);
+                            b01.b b = sy.tShadow.b(l0Var);
                             w0Var.v = 1;
                             if (this.s.c(b, w0Var) == aVar24) {
                                 return aVar24;

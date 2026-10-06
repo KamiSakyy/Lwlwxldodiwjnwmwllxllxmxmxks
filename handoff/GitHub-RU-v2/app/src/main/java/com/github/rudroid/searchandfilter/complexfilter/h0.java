@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h0<T> {
     public j71.e a;
-    public final y1 b = n1.c((Object) null);
+    public final y1 b = n1Shadow.c((Object) null);
     public final LinkedHashSet c = new LinkedHashSet();
-    public List d = x61.r.r;
+    public List d = x61.rShadow.r;
 
     public h0(j71.e eVar) {
         this.a = eVar;

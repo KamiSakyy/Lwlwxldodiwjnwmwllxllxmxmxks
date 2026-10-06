@@ -330,7 +330,7 @@ public final class ContributionWidgetSettingsActivity extends com.github.rudroid
         SharedPreferences.Editor edit = a2.edit();
         edit.putString("selected_contribution_user" + cVar, str);
         edit.apply();
-        b0.z(d1.i(this), (a71.h) null, (v71.a0) null, new p(this, context, null), 3).o0(new com.github.rudroid.support.u(13, this));
+        b0.z(d1.i(this), (a71.h) null, (v71.a0Shadow) null, new p(this, context, null), 3).o0(new com.github.rudroid.support.u(13, this));
         ContributionWidgetWorker.Companion.getClass();
         ContributionWidgetWorker.a.a(context);
     }

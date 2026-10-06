@@ -12,7 +12,7 @@ import m10.l40;
 import m10.wh;
 import m10.wi;
 import m10.yi;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -23,7 +23,7 @@ public abstract class e {
         ah.Companion.getClass();
         x xVar = ah.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
@@ -33,7 +33,7 @@ public abstract class e {
         l40.Companion.getClass();
         List r2 = x61.l.r(new aa.m[]{mVar2, mVar3, new aa.m("owner", l0.b(l40.e), (String) null, rVar, rVar, r), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.s mVar4 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Issue");
+        List n = d0Shadow.n("Issue");
         List list = dt.a.a;
         List r3 = x61.l.r(new aa.s[]{mVar4, no.a.c(list, "selections", "Issue", n, list), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.m mVar5 = new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);

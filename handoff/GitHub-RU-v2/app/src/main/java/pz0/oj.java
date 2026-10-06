@@ -15,7 +15,7 @@ public final class oj {
         s = ojVarArr;
         v8.l0.t(ojVarArr);
         Companion = new nj();
-        sy.d0.o(new String[]{"ANDROID", "IOS"});
+        sy.d0Shadow.o(new String[]{"ANDROID", "IOS"});
     }
 
     public oj(String str, int i, String str2) {

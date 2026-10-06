@@ -17,7 +17,7 @@ public abstract class r6 {
         lb.Companion.getClass();
         aa.x xVar = lb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         aa.m mVar2 = new aa.m("hasPreviousPage", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
@@ -25,7 +25,7 @@ public abstract class r6 {
         k71.k.g(xVar2, "type");
         List r = x61.l.r(new aa.m[]{mVar, mVar2, new aa.m("endCursor", xVar2, (String) null, rVar, rVar, rVar)});
         aa.s mVar3 = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Repository");
+        List n = sy.d0Shadow.n("Repository");
         List list = pj0.l.a;
         aa.s c = no.a.c(list, "selections", "Repository", n, list);
         pb.Companion.getClass();
@@ -38,6 +38,6 @@ public abstract class r6 {
         mq.Companion.getClass();
         aa.r b2 = v8.l0.b(mq.a);
         s00.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, x61.l.r(new aa.m[]{new aa.m("repositories", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(s00.x, new aa.u0(new aa.t("after"))), new aa.k(s00.y, new aa.u0(new aa.t("first"))), new aa.k(s00.A, new aa.u0(x61.x.u(new w61.k("direction", "ASC"), new w61.k("field", "NAME")))), new aa.k(s00.C, new aa.u0(new aa.t("query"))), new aa.k(s00.D, new aa.u0("TEMPLATE"))}), r3), new aa.m("id", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, x61.l.r(new aa.m[]{new aa.m("repositories", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(s00.x, new aa.u0(new aa.t("after"))), new aa.k(s00.y, new aa.u0(new aa.t("first"))), new aa.k(s00.A, new aa.u0(x61.x.u(new w61.k("direction", "ASC"), new w61.k("field", "NAME")))), new aa.k(s00.C, new aa.u0(new aa.t("query"))), new aa.k(s00.D, new aa.u0("TEMPLATE"))}), r3), new aa.m("id", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
     }
 }

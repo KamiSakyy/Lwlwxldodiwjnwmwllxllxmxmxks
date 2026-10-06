@@ -107,8 +107,8 @@ public final class b0 implements y71.j {
         a0 a0Var2;
         b71.a aVar;
         EventsResponse eventsResponse;
-        x61.r rVar;
-        x61.r rVar2;
+        x61.rShadow rVar;
+        x61.rShadow rVar2;
         t2 t2Var;
         Integer num;
         String str;
@@ -121,10 +121,10 @@ public final class b0 implements y71.j {
         EventsResponse eventsResponse2;
         String C3;
         kotlinx.serialization.json.b bVar;
-        x61.r rVar3;
+        x61.rShadow rVar3;
         LinkedHashMap linkedHashMap;
         q0 q0Var2;
-        x61.r rVar4;
+        x61.rShadow rVar4;
         Boolean bool;
         Boolean bool2;
         kotlinx.serialization.json.b bVar2;
@@ -149,17 +149,17 @@ public final class b0 implements y71.j {
         String C8;
         String C9;
         String C10;
-        x61.r rVar5;
+        x61.rShadow rVar5;
         boolean z3;
         f4 f4Var;
         Boolean b2;
-        x61.r rVar6;
+        x61.rShadow rVar6;
         kotlinx.serialization.json.b bVar8;
         Boolean b3;
         String C11;
-        x61.r rVar7;
+        x61.rShadow rVar7;
         z1 z1Var;
-        x61.r rVar8;
+        x61.rShadow rVar8;
         kotlinx.serialization.json.b bVar9;
         Boolean b4;
         String C12;
@@ -167,12 +167,12 @@ public final class b0 implements y71.j {
         kotlinx.serialization.json.c cVar3;
         kotlinx.serialization.json.b bVar10;
         kotlinx.serialization.json.c e;
-        x61.r rVar9;
+        x61.rShadow rVar9;
         y1 y1Var;
         Set<Map.Entry> entrySet;
         h1 h1Var;
         kotlinx.serialization.json.c e2;
-        sy.r l;
+        sy.rShadow l;
         kotlinx.serialization.json.b bVar11;
         sy.s sVar;
         String C14;
@@ -193,7 +193,7 @@ public final class b0 implements y71.j {
                     String str5 = "<this>";
                     k71.k.g(q0Var3, "<this>");
                     EventsResponse eventsResponse3 = (EventsResponse) q0Var3.b;
-                    x61.r rVar10 = x61.r.r;
+                    x61.rShadow rVar10 = x61.rShadow.r;
                     if (eventsResponse3 == null || (list = eventsResponse3.a) == null) {
                         q0Var = q0Var3;
                         a0Var2 = a0Var;
@@ -216,7 +216,7 @@ public final class b0 implements y71.j {
                             j3 j3Var2 = eventResponse.e;
                             String str8 = str5;
                             kotlinx.serialization.json.c cVar4 = eventResponse.f;
-                            x61.r rVar11 = rVar10;
+                            x61.rShadow rVar11 = rVar10;
                             Iterator it2 = it;
                             if (cVar4 == null) {
                                 a0Var3 = a0Var;
@@ -277,7 +277,7 @@ public final class b0 implements y71.j {
                                                         }
                                                         if (bVar != null) {
                                                             kotlinx.serialization.json.a d = l81.j.d(bVar);
-                                                            x61.r arrayList = new ArrayList();
+                                                            x61.rShadow arrayList = new ArrayList();
                                                             Iterator it3 = d.r.iterator();
                                                             while (it3.hasNext()) {
                                                                 Iterator it4 = it3;
@@ -583,7 +583,7 @@ public final class b0 implements y71.j {
                                                                                                                         if (e != null || (entrySet = e.r.entrySet()) == null) {
                                                                                                                             rVar9 = rVar11;
                                                                                                                         } else {
-                                                                                                                            x61.r arrayList2 = new ArrayList();
+                                                                                                                            x61.rShadow arrayList2 = new ArrayList();
                                                                                                                             for (Map.Entry entry : entrySet) {
                                                                                                                                 String str11 = (String) entry.getKey();
                                                                                                                                 try {
@@ -708,7 +708,7 @@ public final class b0 implements y71.j {
                                                                                             boolean booleanValue = bool3 != null ? bool3.booleanValue() : false;
                                                                                             Boolean bool4 = eventResponse.g;
                                                                                             boolean booleanValue2 = bool4 != null ? bool4.booleanValue() : false;
-                                                                                            x61.r rVar12 = rVar4;
+                                                                                            x61.rShadow rVar12 = rVar4;
                                                                                             rVar12.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                             rVar2 = rVar12;
                                                                                             str5 = str8;
@@ -744,7 +744,7 @@ public final class b0 implements y71.j {
                                                                                                 }
                                                                                                 if (cVar4 != null) {
                                                                                                     if (cVar4 != null) {
-                                                                                                        x61.r rVar122 = rVar4;
+                                                                                                        x61.rShadow rVar122 = rVar4;
                                                                                                         rVar122.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                                         rVar2 = rVar122;
                                                                                                         str5 = str8;
@@ -755,7 +755,7 @@ public final class b0 implements y71.j {
                                                                                                         eventsResponse3 = eventsResponse2;
                                                                                                         q0Var3 = q0Var2;
                                                                                                     }
-                                                                                                    x61.r rVar1222 = rVar4;
+                                                                                                    x61.rShadow rVar1222 = rVar4;
                                                                                                     rVar1222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                                     rVar2 = rVar1222;
                                                                                                     str5 = str8;
@@ -768,7 +768,7 @@ public final class b0 implements y71.j {
                                                                                                 }
                                                                                                 if (cVar4 != null) {
                                                                                                 }
-                                                                                                x61.r rVar12222 = rVar4;
+                                                                                                x61.rShadow rVar12222 = rVar4;
                                                                                                 rVar12222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                                 rVar2 = rVar12222;
                                                                                                 str5 = str8;
@@ -791,7 +791,7 @@ public final class b0 implements y71.j {
                                                                                             }
                                                                                             if (cVar4 != null) {
                                                                                             }
-                                                                                            x61.r rVar122222 = rVar4;
+                                                                                            x61.rShadow rVar122222 = rVar4;
                                                                                             rVar122222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                             rVar2 = rVar122222;
                                                                                             str5 = str8;
@@ -817,7 +817,7 @@ public final class b0 implements y71.j {
                                                                                         }
                                                                                         if (cVar4 != null) {
                                                                                         }
-                                                                                        x61.r rVar1222222 = rVar4;
+                                                                                        x61.rShadow rVar1222222 = rVar4;
                                                                                         rVar1222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                         rVar2 = rVar1222222;
                                                                                         str5 = str8;
@@ -844,7 +844,7 @@ public final class b0 implements y71.j {
                                                                                     }
                                                                                     if (cVar4 != null) {
                                                                                     }
-                                                                                    x61.r rVar12222222 = rVar4;
+                                                                                    x61.rShadow rVar12222222 = rVar4;
                                                                                     rVar12222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                     rVar2 = rVar12222222;
                                                                                     str5 = str8;
@@ -885,7 +885,7 @@ public final class b0 implements y71.j {
                                                                                     }
                                                                                     if (cVar4 != null) {
                                                                                     }
-                                                                                    x61.r rVar122222222 = rVar4;
+                                                                                    x61.rShadow rVar122222222 = rVar4;
                                                                                     rVar122222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                     rVar2 = rVar122222222;
                                                                                     str5 = str8;
@@ -912,7 +912,7 @@ public final class b0 implements y71.j {
                                                                                 }
                                                                                 if (cVar4 != null) {
                                                                                 }
-                                                                                x61.r rVar1222222222 = rVar4;
+                                                                                x61.rShadow rVar1222222222 = rVar4;
                                                                                 rVar1222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                 rVar2 = rVar1222222222;
                                                                                 str5 = str8;
@@ -942,7 +942,7 @@ public final class b0 implements y71.j {
                                                                             }
                                                                             if (cVar4 != null) {
                                                                             }
-                                                                            x61.r rVar12222222222 = rVar4;
+                                                                            x61.rShadow rVar12222222222 = rVar4;
                                                                             rVar12222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                             rVar2 = rVar12222222222;
                                                                             str5 = str8;
@@ -1006,7 +1006,7 @@ public final class b0 implements y71.j {
                                                                                 }
                                                                                 if (cVar4 != null) {
                                                                                 }
-                                                                                x61.r rVar122222222222 = rVar4;
+                                                                                x61.rShadow rVar122222222222 = rVar4;
                                                                                 rVar122222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                                 rVar2 = rVar122222222222;
                                                                                 str5 = str8;
@@ -1036,7 +1036,7 @@ public final class b0 implements y71.j {
                                                                             }
                                                                             if (cVar4 != null) {
                                                                             }
-                                                                            x61.r rVar1222222222222 = rVar4;
+                                                                            x61.rShadow rVar1222222222222 = rVar4;
                                                                             rVar1222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                             rVar2 = rVar1222222222222;
                                                                             str5 = str8;
@@ -1071,7 +1071,7 @@ public final class b0 implements y71.j {
                                                                         }
                                                                         if (cVar4 != null) {
                                                                         }
-                                                                        x61.r rVar12222222222222 = rVar4;
+                                                                        x61.rShadow rVar12222222222222 = rVar4;
                                                                         rVar12222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                         rVar2 = rVar12222222222222;
                                                                         str5 = str8;
@@ -1106,7 +1106,7 @@ public final class b0 implements y71.j {
                                                                 }
                                                                 if (cVar4 != null) {
                                                                 }
-                                                                x61.r rVar122222222222222 = rVar4;
+                                                                x61.rShadow rVar122222222222222 = rVar4;
                                                                 rVar122222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                                 rVar2 = rVar122222222222222;
                                                                 str5 = str8;
@@ -1143,7 +1143,7 @@ public final class b0 implements y71.j {
                                                             }
                                                             if (cVar4 != null) {
                                                             }
-                                                            x61.r rVar1222222222222222 = rVar4;
+                                                            x61.rShadow rVar1222222222222222 = rVar4;
                                                             rVar1222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                             rVar2 = rVar1222222222222222;
                                                             str5 = str8;
@@ -1185,7 +1185,7 @@ public final class b0 implements y71.j {
                                                     }
                                                     if (cVar4 != null) {
                                                     }
-                                                    x61.r rVar12222222222222222 = rVar4;
+                                                    x61.rShadow rVar12222222222222222 = rVar4;
                                                     rVar12222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                     rVar2 = rVar12222222222222222;
                                                     str5 = str8;
@@ -1232,7 +1232,7 @@ public final class b0 implements y71.j {
                                                 }
                                                 if (cVar4 != null) {
                                                 }
-                                                x61.r rVar122222222222222222 = rVar4;
+                                                x61.rShadow rVar122222222222222222 = rVar4;
                                                 rVar122222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                                 rVar2 = rVar122222222222222222;
                                                 str5 = str8;
@@ -1276,7 +1276,7 @@ public final class b0 implements y71.j {
                                             }
                                             if (cVar4 != null) {
                                             }
-                                            x61.r rVar1222222222222222222 = rVar4;
+                                            x61.rShadow rVar1222222222222222222 = rVar4;
                                             rVar1222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                             rVar2 = rVar1222222222222222222;
                                             str5 = str8;
@@ -1324,7 +1324,7 @@ public final class b0 implements y71.j {
                                             }
                                             if (cVar4 != null) {
                                             }
-                                            x61.r rVar12222222222222222222 = rVar4;
+                                            x61.rShadow rVar12222222222222222222 = rVar4;
                                             rVar12222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                             rVar2 = rVar12222222222222222222;
                                             str5 = str8;
@@ -1370,7 +1370,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar122222222222222222222 = rVar4;
+                                        x61.rShadow rVar122222222222222222222 = rVar4;
                                         rVar122222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar122222222222222222222;
                                         str5 = str8;
@@ -1424,7 +1424,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar1222222222222222222222 = rVar4;
+                                        x61.rShadow rVar1222222222222222222222 = rVar4;
                                         rVar1222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar1222222222222222222222;
                                         str5 = str8;
@@ -1481,7 +1481,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar12222222222222222222222 = rVar4;
+                                        x61.rShadow rVar12222222222222222222222 = rVar4;
                                         rVar12222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar12222222222222222222222;
                                         str5 = str8;
@@ -1538,7 +1538,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar122222222222222222222222 = rVar4;
+                                        x61.rShadow rVar122222222222222222222222 = rVar4;
                                         rVar122222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar122222222222222222222222;
                                         str5 = str8;
@@ -1594,7 +1594,7 @@ public final class b0 implements y71.j {
                                             }
                                             if (cVar4 != null) {
                                             }
-                                            x61.r rVar1222222222222222222222222 = rVar4;
+                                            x61.rShadow rVar1222222222222222222222222 = rVar4;
                                             rVar1222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                             rVar2 = rVar1222222222222222222222222;
                                             str5 = str8;
@@ -1646,7 +1646,7 @@ public final class b0 implements y71.j {
                                             }
                                             if (cVar4 != null) {
                                             }
-                                            x61.r rVar12222222222222222222222222 = rVar4;
+                                            x61.rShadow rVar12222222222222222222222222 = rVar4;
                                             rVar12222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                             rVar2 = rVar12222222222222222222222222;
                                             str5 = str8;
@@ -1705,7 +1705,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar122222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar122222222222222222222222222 = rVar4;
                                         rVar122222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar122222222222222222222222222;
                                         str5 = str8;
@@ -1759,7 +1759,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar1222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar1222222222222222222222222222 = rVar4;
                                         rVar1222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar1222222222222222222222222222;
                                         str5 = str8;
@@ -1816,7 +1816,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar12222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar12222222222222222222222222222 = rVar4;
                                         rVar12222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar12222222222222222222222222222;
                                         str5 = str8;
@@ -1873,7 +1873,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar122222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar122222222222222222222222222222 = rVar4;
                                         rVar122222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar122222222222222222222222222222;
                                         str5 = str8;
@@ -1928,7 +1928,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar1222222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar1222222222222222222222222222222 = rVar4;
                                         rVar1222222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar1222222222222222222222222222222;
                                         str5 = str8;
@@ -1988,7 +1988,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar12222222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar12222222222222222222222222222222 = rVar4;
                                         rVar12222222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar12222222222222222222222222222222;
                                         str5 = str8;
@@ -2050,7 +2050,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar122222222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar122222222222222222222222222222222 = rVar4;
                                         rVar122222222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar122222222222222222222222222222222;
                                         str5 = str8;
@@ -2110,7 +2110,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar1222222222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar1222222222222222222222222222222222 = rVar4;
                                         rVar1222222222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar1222222222222222222222222222222222;
                                         str5 = str8;
@@ -2164,7 +2164,7 @@ public final class b0 implements y71.j {
                                         }
                                         if (cVar4 != null) {
                                         }
-                                        x61.r rVar12222222222222222222222222222222222 = rVar4;
+                                        x61.rShadow rVar12222222222222222222222222222222222 = rVar4;
                                         rVar12222222222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                                         rVar2 = rVar12222222222222222222222222222222222;
                                         str5 = str8;
@@ -2220,7 +2220,7 @@ public final class b0 implements y71.j {
                             }
                             if (cVar4 != null) {
                             }
-                            x61.r rVar122222222222222222222222222222222222 = rVar4;
+                            x61.rShadow rVar122222222222222222222222222222222222 = rVar4;
                             rVar122222222222222222222222222222222222.add(new i3(str6, instant, str7, z4, j3Var2, str2, C2, C15, C3, rVar3, linkedHashMap, bool2, str3, C6, C17, sVar, booleanValue, booleanValue2, (cVar4 != null && j3Var == j3.y) ? sy.n.C(cVar4, "reasoningText") : null, cVar4 == null ? null : sy.n.C(cVar4, "parentToolCallId"), (cVar4 != null && j3Var == j3.w) ? sy.n.C(cVar4, str4) : null));
                             rVar2 = rVar122222222222222222222222222222222222;
                             str5 = str8;
@@ -2237,7 +2237,7 @@ public final class b0 implements y71.j {
                         eventsResponse = eventsResponse3;
                         rVar = rVar10;
                     }
-                    x61.r rVar13 = rVar2 == null ? rVar : rVar2;
+                    x61.rShadow rVar13 = rVar2 == null ? rVar : rVar2;
                     t71.n nVar = m2.a;
                     String a4 = q0Var.a.w.a("Link");
                     if (a4 == null || t71.p.T(a4)) {

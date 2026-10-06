@@ -26,7 +26,7 @@ import hc0.wz;
 import hc0.xp;
 import hc0.yo;
 import java.util.Iterator;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -489,7 +489,7 @@ public final class b implements aa.a {
                 fVar.z0("listIds");
                 c.a(bVar2).e(fVar, wVar, ezVar.c);
                 if (u0Var16 instanceof u0) {
-                    f4.e(fVar, "suggestedListIds", bVar2).d(fVar, wVar, u0Var16);
+                    f4Shadow.e(fVar, "suggestedListIds", bVar2).d(fVar, wVar, u0Var16);
                     break;
                 }
                 break;

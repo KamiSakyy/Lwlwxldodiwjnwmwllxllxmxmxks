@@ -10,7 +10,7 @@ import java.util.List;
 import k71.k;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import y41.c2;
 import y41.y0;
 import y41.z0;
@@ -27,7 +27,7 @@ public final class c {
         ActivityManager activityManager = systemService instanceof ActivityManager ? (ActivityManager) systemService : null;
         List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = activityManager != null ? activityManager.getRunningAppProcesses() : null;
         if (runningAppProcesses == null) {
-            runningAppProcesses = r.r;
+            runningAppProcesses = rShadow.r;
         }
         ArrayList S = m.S(runningAppProcesses);
         ArrayList arrayList = new ArrayList();

@@ -7,8 +7,8 @@ public abstract class j3 {
     public static final i3 Companion = new i3();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("BlockingAddedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("BlockingAddedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

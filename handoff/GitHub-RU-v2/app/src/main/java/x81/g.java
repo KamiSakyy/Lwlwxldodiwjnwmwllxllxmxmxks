@@ -4,13 +4,13 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class g {
-    public static final h91.k a;
+    public static final h91.kShadow a;
     public static final String[] b;
     public static final String[] c;
     public static final String[] d;
 
     static {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         a = c30.d.b("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
         b = new String[]{"DATA", "HEADERS", "PRIORITY", "RST_STREAM", "SETTINGS", "PUSH_PROMISE", "PING", "GOAWAY", "WINDOW_UPDATE", "CONTINUATION"};
         c = new String[64];

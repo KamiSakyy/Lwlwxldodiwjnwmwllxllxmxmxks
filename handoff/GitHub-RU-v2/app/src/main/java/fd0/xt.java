@@ -7,7 +7,7 @@ import kc0.w70;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xt implements aaShadow.a {
     public static final xt a = new xt();
-    public static final List b = sy.d0.o(new String[]{"id", "refUpdateRule", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "refUpdateRule", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -10,7 +10,7 @@ public abstract class l30 {
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
         aa.j0 j0Var = wk.a;
         lz.Companion.getClass();

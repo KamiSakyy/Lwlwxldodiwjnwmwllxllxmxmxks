@@ -14,7 +14,7 @@ public abstract class o {
     static {
         xd.Companion.getClass();
         aa.r b = l0.b(xd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         aa.m mVar2 = new aa.m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);

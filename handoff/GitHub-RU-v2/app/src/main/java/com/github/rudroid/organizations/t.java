@@ -7,7 +7,7 @@ import com.github.rudroid.m0;
 import com.github.rudroid.profile.navigation.OrganizationsRoute;
 import com.github.rudroid.viewmodels.x3;
 import java.util.concurrent.CancellationException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.y1;
@@ -47,7 +47,7 @@ public final class t extends k1 implements x3 {
         this.f17197s = dVar;
         this.f17198t = hVar;
         this.f17199u = cVar;
-        OrganizationsRoute organizationsRoute = (OrganizationsRoute) sy.y.m(a1Var, k71.x.a(OrganizationsRoute.class), x61.s.r);
+        OrganizationsRoute organizationsRoute = (OrganizationsRoute) sy.y.m(a1Var, k71.xShadow.a(OrganizationsRoute.class), x61.s.r);
         this.f17200v = organizationsRoute.f17326a;
         this.f17201w = organizationsRoute.f17327b;
         this.f17202x = m0.s(fl.f.Companion, null);
@@ -60,7 +60,7 @@ public final class t extends k1 implements x3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.f17204z = b0.z(d1.k(this), (a71.h) null, (a0) null, new s(this, str, null), 3);
+        this.f17204z = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new s(this, str, null), 3);
     }
 
     public final x01.i l() {

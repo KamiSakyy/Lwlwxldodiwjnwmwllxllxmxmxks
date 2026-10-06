@@ -2,7 +2,7 @@ package h01;
 
 import com.github.service.models.response.issueorpullrequest.PullRequestMergeMethodStatus;
 import com.github.service.models.response.type.PullRequestMergeMethod;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
@@ -39,6 +39,6 @@ public final class b {
         sb.append(", allowableStatus=");
         sb.append(this.b);
         sb.append(", isDefault=");
-        return f4.s(sb, this.c, ")");
+        return f4Shadow.s(sb, this.c, ")");
     }
 }

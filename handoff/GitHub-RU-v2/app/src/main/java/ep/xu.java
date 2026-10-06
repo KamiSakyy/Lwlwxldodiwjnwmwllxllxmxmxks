@@ -8,7 +8,7 @@ import jo.l80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xu implements aaShadow.a {
     public static final xu a = new xu();
-    public static final List b = sy.d0.o("updateSubscription", "markNotificationAsUndone");
+    public static final List b = sy.d0Shadow.o("updateSubscription", "markNotificationAsUndone");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

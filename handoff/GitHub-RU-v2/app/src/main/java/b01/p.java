@@ -2,7 +2,7 @@ package b01;
 
 import a0.s0;
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
@@ -34,7 +34,7 @@ public final class p {
     }
 
     public final int hashCode() {
-        return this.f.hashCode() + h1.i(h1.i(f4.b(this.c, s0.b(this.b, this.a.hashCode() * 31, 31), 31), this.d, 31), this.e, 31);
+        return this.f.hashCode() + h1.i(h1.i(f4Shadow.b(this.c, s0.b(this.b, this.a.hashCode() * 31, 31), 31), this.d, 31), this.e, 31);
     }
 
     public final String toString() {

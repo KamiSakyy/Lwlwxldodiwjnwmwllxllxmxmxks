@@ -131,7 +131,7 @@ public abstract class s {
         i80.c cVar = xVar.l;
         com.github.service.models.response.a c = t.e.c(xVar.c.b.b);
         l0 l0Var = xVar.k;
-        e50.d0 d0Var = l0Var.q;
+        e50.d0Shadow d0Var = l0Var.q;
         String str = (d0Var == null || (g0Var = d0Var.b) == null) ? "" : g0Var.a;
         b01.b b = t.b(l0Var);
         String str2 = str;

@@ -25,7 +25,7 @@ import v8.y;
 import v8.z;
 import w61.a0;
 import x61.x;
-import y71.n1;
+import y71.n1Shadow;
 import z01.r1;
 import zk.a1;
 
@@ -254,7 +254,7 @@ public final class PullRequestsWidgetWorker extends CoroutineWorker {
                             kVar.C = i2;
                             kVar.D = i;
                             kVar.G = 4;
-                            Object v = n1.v(J, kVar);
+                            Object v = n1Shadow.v(J, kVar);
                             if (v != obj2) {
                                 str = str2;
                                 obj = v;

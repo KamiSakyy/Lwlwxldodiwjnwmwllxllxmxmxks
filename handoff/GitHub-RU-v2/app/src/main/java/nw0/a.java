@@ -8,7 +8,7 @@ import pz0.pd;
 import pz0.xd;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
@@ -18,7 +18,7 @@ public abstract class a {
         xd.Companion.getClass();
         x xVar = xd.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("endCursor", xVar, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         x xVar2 = pd.a;

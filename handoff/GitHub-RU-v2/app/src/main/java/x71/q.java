@@ -5,7 +5,7 @@ import v71.a2;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class q extends h {
+public final class q extends hShadow {
     public a B;
 
     public q(int i, a aVar) {
@@ -16,11 +16,11 @@ public final class q extends h {
                 throw new IllegalArgumentException(s0.i("Buffered channel capacity must be at least 1, but ", i, " was specified").toString());
             }
         } else {
-            throw new IllegalArgumentException(("This implementation does not support suspension for senders, use " + k71.x.a(h.class).c() + " instead").toString());
+            throw new IllegalArgumentException(("This implementation does not support suspension for senders, use " + k71.xShadow.a(hShadow.class).c() + " instead").toString());
         }
     }
 
-    @Override // x71.h
+    @Override // x71.hShadow
     public final boolean A() {
         return this.B == a.s;
     }
@@ -46,7 +46,7 @@ public final class q extends h {
             long andIncrement = h.s.getAndIncrement(this);
             long j2 = 1152921504606846975L & andIncrement;
             boolean x = x(false, andIncrement);
-            int i = j.b;
+            int i = jShadow.b;
             long j3 = i;
             long j4 = j2 / j3;
             int i2 = (int) (j2 % j3);
@@ -93,12 +93,12 @@ public final class q extends h {
         }
     }
 
-    @Override // x71.h, x71.w
+    @Override // x71.hShadow, x71.w
     public final Object j(Object obj) {
         return M(obj, false);
     }
 
-    @Override // x71.h, x71.w
+    @Override // x71.hShadow, x71.w
     public final Object l(a71.c cVar, Object obj) {
         if (M(obj, true) instanceof m) {
             throw u();

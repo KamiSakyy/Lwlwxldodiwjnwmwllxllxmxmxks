@@ -1,6 +1,6 @@
 package com.github.rudroid.uitoolkit.banner;
 
-import a0.d2;
+import a0.d2Shadow;
 import androidx.compose.runtime.b2;
 import com.github.rudroid.uitoolkit.y2;
 import f1.qa;
@@ -25,7 +25,7 @@ public final class l {
         }
         b2 t = sVar.t();
         if (t != null) {
-            t.d = new d2(rVar, dVar, dVar2, dVar3, dVar4, i, 7);
+            t.d = new d2Shadow(rVar, dVar, dVar2, dVar3, dVar4, i, 7);
         }
     }
 }

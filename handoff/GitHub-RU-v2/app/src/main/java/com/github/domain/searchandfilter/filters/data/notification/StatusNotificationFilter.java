@@ -12,7 +12,7 @@ import com.github.rudroid.copilot.h1;
 import f1.u5;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlin.NoWhenBranchMatchedException;
 import kotlinx.serialization.KSerializer;
 import sy.w;
@@ -50,7 +50,7 @@ public final class StatusNotificationFilter extends a {
 
     public /* synthetic */ StatusNotificationFilter(int i, String str, String str2, i iVar, int i2) {
         if (15 != (i & 15)) {
-            c1.l(i, 15, StatusNotificationFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 15, StatusNotificationFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.s = str;

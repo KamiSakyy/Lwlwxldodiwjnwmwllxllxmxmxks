@@ -9,7 +9,7 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.SystemClock;
 import c21.h0;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import java.io.IOException;
 import java.util.HashMap;
@@ -29,7 +29,7 @@ public final class a {
     public long g;
 
     public a(Context context) {
-        u.g(context);
+        uShadow.g(context);
         Context applicationContext = context.getApplicationContext();
         this.f = applicationContext != null ? applicationContext : context;
         this.c = false;
@@ -69,7 +69,7 @@ public final class a {
     }
 
     public final void b() {
-        u.f("Calling this from your main thread can lead to deadlock");
+        uShadow.f("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             try {
                 if (this.f == null || this.a == null) {
@@ -91,7 +91,7 @@ public final class a {
     }
 
     public final void c() {
-        u.f("Calling this from your main thread can lead to deadlock");
+        uShadow.f("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             try {
                 if (this.c) {
@@ -138,7 +138,7 @@ public final class a {
 
     public final h0 e() {
         h0 h0Var;
-        u.f("Calling this from your main thread can lead to deadlock");
+        uShadow.f("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             try {
                 if (!this.c) {
@@ -157,8 +157,8 @@ public final class a {
                         throw new IOException("AdvertisingIdClient cannot reconnect.", e);
                     }
                 }
-                u.g(this.a);
-                u.g(this.b);
+                uShadow.g(this.a);
+                uShadow.g(this.b);
                 try {
                     l21.b bVar2 = (l21.b) this.b;
                     bVar2.getClass();

@@ -29,6 +29,6 @@ public final class re {
     }
 
     public final String toString() {
-        return jo.f4.s(com.github.rudroid.m0.o("PageInfo(endCursor=", this.a, ", hasNextPage=", ", hasPreviousPage=", this.b), this.c, ")");
+        return jo.f4Shadow.s(com.github.rudroid.m0.o("PageInfo(endCursor=", this.a, ", hasNextPage=", ", hasPreviousPage=", this.b), this.c, ")");
     }
 }

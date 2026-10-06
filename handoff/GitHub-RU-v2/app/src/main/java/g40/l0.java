@@ -1,19 +1,19 @@
 package g40;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 implements aa.a {
     public static final l0 a = new l0();
-    public static final List b = sy.d0.o("path", "isGenerated", "submodule", "fileType");
+    public static final List b = sy.d0Shadow.o("path", "isGenerated", "submodule", "fileType");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
         Boolean bool = null;
-        x xVar = null;
+        xShadow xVar = null;
         g gVar = null;
         while (true) {
             int r0 = eVar.r0(b);
@@ -22,7 +22,7 @@ public final class l0 implements aa.a {
             } else if (r0 == 1) {
                 bool = (Boolean) aa.c.f.a(eVar, wVar);
             } else if (r0 == 2) {
-                xVar = (x) aa.c.b(aa.c.c(a1.a, false)).a(eVar, wVar);
+                xVar = (xShadow) aa.c.b(aa.c.c(a1.a, false)).a(eVar, wVar);
             } else {
                 if (r0 != 3) {
                     break;

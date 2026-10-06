@@ -28,7 +28,7 @@ public final class m2 {
         x = m2VarArr;
         v8.l0.t(m2VarArr);
         Companion = new l2();
-        sy.d0.o(new String[]{"INDEFINITE", "ONE_DAY", "SEVEN_DAYS", "THIRTY_DAYS", "THREE_DAYS"});
+        sy.d0Shadow.o(new String[]{"INDEFINITE", "ONE_DAY", "SEVEN_DAYS", "THIRTY_DAYS", "THREE_DAYS"});
     }
 
     public m2(String str, int i, String str2) {

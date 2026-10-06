@@ -25,7 +25,7 @@ import ea.f;
 import hc0.sf;
 import java.util.Iterator;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public class b implements i0, k, g, x, m {
@@ -68,7 +68,7 @@ public class b implements i0, k, g, x, m {
         CharSequence[] charSequenceArr = listPreference.l0;
         int H = listPreference.H(listPreference.n0);
         if (TextUtils.isEmpty((H < 0 || charSequenceArr == null) ? null : charSequenceArr[H])) {
-            return ((Preference) listPreference).r.getString(2131953323);
+            return ((Preference) listPreference).rShadow.getString(2131953323);
         }
         int H2 = listPreference.H(listPreference.n0);
         if (H2 < 0 || charSequenceArr == null) {
@@ -104,7 +104,7 @@ public class b implements i0, k, g, x, m {
         List list = z60.a.a;
         List list2 = z60.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new aa.m("data", j0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -132,7 +132,7 @@ public class b implements i0, k, g, x, m {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(b.class).hashCode();
+                return k71.xShadow.a(b.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -153,7 +153,7 @@ public class b implements i0, k, g, x, m {
             bVar.getClass();
             list = (List) bVar.a(str, new k81.d(DiscussionCategoryData.Companion.serializer(), 0));
         }
-        list = r.r;
+        list = rShadow.r;
         return new DiscussionCategoryFilter(list);
     }
 

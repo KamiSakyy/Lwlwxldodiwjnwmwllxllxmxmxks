@@ -2,7 +2,7 @@ package vw0;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import uu0.o6;
 import uu0.t6;
 import uw0.c0;
@@ -10,7 +10,7 @@ import uw0.c0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements aa.a {
     public static final r a = new r();
-    public static final List b = d0.n("__typename");
+    public static final List b = d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

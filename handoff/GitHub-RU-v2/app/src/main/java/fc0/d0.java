@@ -15,7 +15,7 @@ public abstract class d0 {
     static {
         bb.Companion.getClass();
         aa.r b = v8.l0.b(bb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         ew.Companion.getClass();
         aa.m mVar2 = new aa.m("url", v8.l0.b(ew.a), (String) null, rVar, rVar, rVar);
@@ -26,11 +26,11 @@ public abstract class d0 {
         tb.Companion.getClass();
         aa.q0 q0Var = tb.x;
         k71.k.g(q0Var, "type");
-        List n = sy.d0.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, r));
+        List n = sy.d0Shadow.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, r));
         hc0.k5.Companion.getClass();
         aa.q0 q0Var2 = hc0.k5.a;
         k71.k.g(q0Var2, "type");
         wg.Companion.getClass();
-        a = sy.d0.n(new aa.m("createIssue", q0Var2, (String) null, rVar, no.a.s(wg.z, new aa.u0(new aa.t("createIssueInput"))), n));
+        a = sy.d0Shadow.n(new aa.m("createIssue", q0Var2, (String) null, rVar, no.a.s(wg.z, new aa.u0(new aa.t("createIssueInput"))), n));
     }
 }

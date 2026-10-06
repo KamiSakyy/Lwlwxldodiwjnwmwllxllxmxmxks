@@ -9,7 +9,7 @@ import kc0.j80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pu implements aaShadow.a {
     public static final pu a = new pu();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "url", "state", "milestone", "projectCards", "viewerCanDeleteHeadRef", "viewerCanReopen"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "url", "state", "milestone", "projectCards", "viewerCanDeleteHeadRef", "viewerCanReopen"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0040, code lost:
     
@@ -205,7 +205,7 @@ public final class pu implements aaShadow.a {
         aa.c.c(ou.a, false).b(fVar, wVar, j80Var.f);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(j80Var.g, bVar2, fVar, wVar, "viewerCanReopen");
+        jo.f4Shadow.C(j80Var.g, bVar2, fVar, wVar, "viewerCanReopen");
         bVar2.b(fVar, wVar, Boolean.valueOf(j80Var.h));
         List list = yd0.j.a;
         yd0.j.d(fVar, wVar, j80Var.i);

@@ -3,9 +3,9 @@ package tz;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j1 {
     public u1 a;
-    public a0 b;
+    public a0Shadow b;
 
-    public j1(u1 u1Var, a0 a0Var) {
+    public j1(u1 u1Var, a0Shadow a0Var) {
         this.a = u1Var;
         this.b = a0Var;
     }

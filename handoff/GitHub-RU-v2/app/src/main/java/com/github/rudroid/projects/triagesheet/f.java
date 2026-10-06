@@ -15,7 +15,7 @@ public final class f {
         while (it.hasNext()) {
             arrayList.add(new m.f((d) it.next()));
         }
-        return x61.m.l0(sy.d0.n(dVar), arrayList);
+        return x61.m.l0(sy.d0Shadow.n(dVar), arrayList);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -27,7 +27,7 @@ public final class f {
         k71.k.g(list, "selectableItems");
         m.d dVar = new m.d(2131952995);
         if (list.isEmpty()) {
-            n10 = sy.d0.n(new m.b());
+            n10 = sy.d0Shadow.n(new m.b());
         } else {
             n10 = new ArrayList(x61.n.F(list, 10));
             Iterator it = list.iterator();
@@ -35,6 +35,6 @@ public final class f {
                 n10.add(new m.h((d) it.next()));
             }
         }
-        return x61.m.l0(sy.d0.n(dVar), (Iterable) n10);
+        return x61.m.l0(sy.d0Shadow.n(dVar), (Iterable) n10);
     }
 }

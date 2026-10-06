@@ -10,8 +10,8 @@ public abstract class qv {
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        c = new aa.q0("StatusCheckRollup", n, sy.d0.n(yh.a));
+        c = new aa.q0("StatusCheckRollup", n, sy.d0Shadow.n(yh.a));
     }
 }

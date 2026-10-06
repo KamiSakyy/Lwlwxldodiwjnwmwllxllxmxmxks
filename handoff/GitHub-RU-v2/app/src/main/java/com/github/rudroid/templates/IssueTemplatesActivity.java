@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.Set;
 import kotlin.NoWhenBranchMatchedException;
 import le.p;
-import sy.d0;
+import sy.d0Shadow;
 import yz0.f5;
 import yz0.g5;
 import yz0.h5;
@@ -34,7 +34,7 @@ import yz0.j5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class IssueTemplatesActivity extends com.github.rudroid.templates.b<ic.u> implements x {
-    public static final /* synthetic */ r71.e[] C0 = {new k71.p(IssueTemplatesActivity.class, "repoName", "getRepoName()Ljava/lang/String;", 0), m0.q(k71.x.a, IssueTemplatesActivity.class, "repoOwner", "getRepoOwner()Ljava/lang/String;", 0), new k71.p(IssueTemplatesActivity.class, "parentIssueId", "getParentIssueId()Ljava/lang/String;", 0), new k71.p(IssueTemplatesActivity.class, "navigationSource", "getNavigationSource()Lcom/github/service/models/response/type/MobileSubjectType;", 0)};
+    public static final /* synthetic */ r71.e[] C0 = {new k71.p(IssueTemplatesActivity.class, "repoName", "getRepoName()Ljava/lang/String;", 0), m0.q(k71.xShadow.a, IssueTemplatesActivity.class, "repoOwner", "getRepoOwner()Ljava/lang/String;", 0), new k71.p(IssueTemplatesActivity.class, "parentIssueId", "getParentIssueId()Ljava/lang/String;", 0), new k71.p(IssueTemplatesActivity.class, "navigationSource", "getNavigationSource()Lcom/github/service/models/response/type/MobileSubjectType;", 0)};
     public static final a Companion = new a();
     public com.github.rudroid.activities.util.g A0;
     public com.github.rudroid.activities.util.g B0;
@@ -101,7 +101,7 @@ public final class IssueTemplatesActivity extends com.github.rudroid.templates.b
         this.u0 = false;
         C(new com.github.rudroid.templates.a(this));
         this.v0 = 2131558439;
-        this.x0 = new l1(k71.x.a(l.class), new c(), new b(), new d());
+        this.x0 = new l1(k71.xShadow.a(l.class), new c(), new b(), new d());
         this.y0 = new com.github.rudroid.activities.util.g("EXTRA_REPO_NAME");
         this.z0 = new com.github.rudroid.activities.util.g("EXTRA_REPO_OWNER");
         this.A0 = new com.github.rudroid.activities.util.g("EXTRA_PARENT_ISSUE_ID", new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(8));
@@ -217,7 +217,7 @@ public final class IssueTemplatesActivity extends com.github.rudroid.templates.b
             k71.k.m("dataAdapter");
             throw null;
         }
-        UiStateRecyclerView.w0(recyclerView, d0.n(gVar), false, 4);
+        UiStateRecyclerView.w0(recyclerView, d0Shadow.n(gVar), false, 4);
         AppBarLayout appBarLayout = ((k5.f) J0().N).A;
         k71.k.e(appBarLayout, "null cannot be cast to non-null type com.google.android.material.appbar.AppBarLayout");
         recyclerView.u0(appBarLayout);

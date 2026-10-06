@@ -24,7 +24,7 @@ public final class vq implements aaShadow.w0 {
         List list = kz0.f3.a;
         List list2 = kz0.f3.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -64,10 +64,10 @@ public final class vq implements aaShadow.w0 {
         k71.k.g(wVar, "customScalarAdapters");
         fVar.z0("includeCreated");
         aa.b bVar = aa.c.f;
-        jo.f4.C(this.r, bVar, fVar, wVar, "includeAssigned");
-        jo.f4.C(this.s, bVar, fVar, wVar, "includeMentioned");
-        jo.f4.C(this.t, bVar, fVar, wVar, "includeRequested");
-        jo.f4.C(this.u, bVar, fVar, wVar, "first");
+        jo.f4Shadow.C(this.r, bVar, fVar, wVar, "includeAssigned");
+        jo.f4Shadow.C(this.s, bVar, fVar, wVar, "includeMentioned");
+        jo.f4Shadow.C(this.t, bVar, fVar, wVar, "includeRequested");
+        jo.f4Shadow.C(this.u, bVar, fVar, wVar, "first");
         fVar.z(30);
     }
 

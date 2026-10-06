@@ -23,7 +23,7 @@ public final class nq {
         u = nqVarArr;
         v = v8.l0.t(nqVarArr);
         Companion = new mq();
-        sy.d0.o("ARCHIVED", "DONE", "READ", "UNREAD");
+        sy.d0Shadow.o("ARCHIVED", "DONE", "READ", "UNREAD");
     }
 
     public nq(String str, int i, String str2) {

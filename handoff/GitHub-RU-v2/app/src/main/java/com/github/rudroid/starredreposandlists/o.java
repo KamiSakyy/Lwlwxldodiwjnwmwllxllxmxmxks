@@ -56,7 +56,7 @@ public final class o extends k71.l implements j71.e {
         com.github.rudroid.utilities.d0 d0Var = (com.github.rudroid.utilities.d0) N;
         long j = ih.d.b(sVar).b;
         w1.o oVar = w1.o.a;
-        d2.l0 l0Var = d2.a0.b;
+        d2.l0 l0Var = d2.a0Shadow.b;
         w1.r f2 = f0.o.f(oVar, j, l0Var);
         float f3 = ih.a.n;
         w1.r B = androidx.compose.foundation.layout.b.B(f2, f3, f3, 0.0f, f3, 4);

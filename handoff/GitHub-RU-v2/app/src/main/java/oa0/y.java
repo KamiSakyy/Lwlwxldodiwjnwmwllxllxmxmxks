@@ -7,7 +7,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y implements aa.a {
     public static final y a = new y();
-    public static final List b = sy.d0.o("id", "state", "contexts", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "state", "contexts", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

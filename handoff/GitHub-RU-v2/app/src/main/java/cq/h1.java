@@ -49,7 +49,7 @@ public abstract class h1 implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, g1Var.a);
         fVar.z0("viewerIsFollowing");
-        jo.f4.C(g1Var.b, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(g1Var.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, g1Var.c);
     }
     public static final Object i = null;

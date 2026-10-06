@@ -7,7 +7,7 @@ import kc0.w10;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xp implements aaShadow.a {
     public static final xp a = new xp();
-    public static final List b = sy.d0.n("repositoryOwner");
+    public static final List b = sy.d0Shadow.n("repositoryOwner");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

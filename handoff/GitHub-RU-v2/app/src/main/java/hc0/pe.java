@@ -6,6 +6,6 @@ public abstract class pe {
 
     static {
         uv.Companion.getClass();
-        new aa.q0("MarkdownFileType", x61.r.r, sy.d0.n(uv.a));
+        new aa.q0("MarkdownFileType", x61.rShadow.r, sy.d0Shadow.n(uv.a));
     }
 }

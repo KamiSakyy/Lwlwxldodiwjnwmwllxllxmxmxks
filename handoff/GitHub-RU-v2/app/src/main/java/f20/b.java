@@ -16,7 +16,7 @@ import hc0.v1;
 import hc0.yg;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -28,7 +28,7 @@ public abstract class b {
         bb.Companion.getClass();
         x xVar = bb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         v1.Companion.getClass();
         x xVar2 = v1.a;
@@ -38,11 +38,11 @@ public abstract class b {
         x xVar3 = fb.a;
         k.g(xVar3, "type");
         tb.Companion.getClass();
-        List r = l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("Issue", d0.n("Issue"), l.r(new m[]{mVar, mVar2, new m("updatesChannel", xVar3, (String) null, rVar, no.a.s(tb.w, new u0(new t("topic"))), rVar)})), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        List r = l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("Issue", d0Shadow.n("Issue"), l.r(new m[]{mVar, mVar2, new m("updatesChannel", xVar3, (String) null, rVar, no.a.s(tb.w, new u0(new t("topic"))), rVar)})), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         yg.Companion.getClass();
         j0 j0Var = yg.a;
         k.g(j0Var, "type");
         pm.Companion.getClass();
-        a = d0.n(new m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new u0(new t("id"))), r));
+        a = d0Shadow.n(new m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new u0(new t("id"))), r));
     }
 }

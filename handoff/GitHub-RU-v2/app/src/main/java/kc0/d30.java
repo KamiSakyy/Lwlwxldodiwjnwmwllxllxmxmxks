@@ -30,6 +30,6 @@ public final class d30 {
     }
 
     public final String toString() {
-        return jo.f4.s(com.github.rudroid.copilot.h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
+        return jo.f4Shadow.s(com.github.rudroid.copilot.h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
     }
 }

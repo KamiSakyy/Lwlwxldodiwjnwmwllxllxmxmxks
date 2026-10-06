@@ -1,5 +1,5 @@
 package l01;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a0 {
+public final class a0Shadow {
 }

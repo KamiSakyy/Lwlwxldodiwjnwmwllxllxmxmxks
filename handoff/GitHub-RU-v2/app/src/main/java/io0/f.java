@@ -110,7 +110,7 @@ public final /* synthetic */ class f implements j71.c {
                 k71.k.g(gbVar3, "data");
                 ib ibVar3 = gbVar3.a;
                 List list4 = (ibVar3 == null || (d0Var3 = ibVar3.d) == null || (c0Var3 = d0Var3.c) == null) ? null : c0Var3.c;
-                return list4 == null ? x61.r.r : list4;
+                return list4 == null ? x61.rShadow.r : list4;
             case 4:
                 gb gbVar4 = (gb) obj;
                 k71.k.g(gbVar4, "data");
@@ -147,7 +147,7 @@ public final /* synthetic */ class f implements j71.c {
                 b01.g h = aa1.b.h(cVar, str4, cVar2, aVar3, valueOf, z3, z4, z5, z6, str5, z7, (List) null, i1Var, aVar4.b, aVar4.c, aa1.b.c0(iVar));
                 Iterable iterable = c0Var4.c;
                 if (iterable == null) {
-                    iterable = x61.r.r;
+                    iterable = x61.rShadow.r;
                 }
                 ArrayList S = x61.m.S(iterable);
                 ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -204,7 +204,7 @@ public final /* synthetic */ class f implements j71.c {
                 k71.k.g(obVar3, "data");
                 qb qbVar3 = obVar3.a;
                 List list5 = (qbVar3 == null || (pbVar3 = qbVar3.b) == null || (rVar3 = pbVar3.c) == null || (oVar3 = rVar3.c) == null) ? null : oVar3.b;
-                return list5 == null ? x61.r.r : list5;
+                return list5 == null ? x61.rShadow.r : list5;
             case 9:
                 ob obVar4 = (ob) obj;
                 k71.k.g(obVar4, "data");
@@ -236,7 +236,7 @@ public final /* synthetic */ class f implements j71.c {
                 k71.k.g(wnVar3, "data");
                 r S4 = b31.b.S(wnVar3);
                 List list6 = (S4 == null || (oVar6 = S4.c) == null) ? null : oVar6.b;
-                return list6 == null ? x61.r.r : list6;
+                return list6 == null ? x61.rShadow.r : list6;
             case 14:
                 wn wnVar4 = (wn) obj;
                 k71.k.g(wnVar4, "data");
@@ -273,7 +273,7 @@ public final /* synthetic */ class f implements j71.c {
                 ic icVar3 = (ic) obj;
                 k71.k.g(icVar3, "data");
                 List list7 = icVar3.b.c;
-                return list7 == null ? x61.r.r : list7;
+                return list7 == null ? x61.rShadow.r : list7;
             case 19:
                 ic icVar4 = (ic) obj;
                 k71.k.g(icVar4, "data");
@@ -282,7 +282,7 @@ public final /* synthetic */ class f implements j71.c {
                 String str11 = lcVar != null ? lcVar.b : null;
                 Iterable iterable2 = mcVar.c;
                 if (iterable2 == null) {
-                    iterable2 = x61.r.r;
+                    iterable2 = x61.rShadow.r;
                 }
                 ArrayList S6 = x61.m.S(iterable2);
                 ArrayList arrayList3 = new ArrayList(x61.n.F(S6, 10));
@@ -332,14 +332,14 @@ public final /* synthetic */ class f implements j71.c {
                 ta0 ta0Var3 = (ta0) obj;
                 k71.k.g(ta0Var3, "data");
                 List list8 = ta0Var3.a.a.b;
-                return list8 == null ? x61.r.r : list8;
+                return list8 == null ? x61.rShadow.r : list8;
             case 28:
                 ta0 ta0Var4 = (ta0) obj;
                 k71.k.g(ta0Var4, "data");
                 wa0 wa0Var = ta0Var4.a.a;
                 Iterable iterable3 = wa0Var.b;
                 if (iterable3 == null) {
-                    iterable3 = x61.r.r;
+                    iterable3 = x61.rShadow.r;
                 }
                 ArrayList S7 = x61.m.S(iterable3);
                 ArrayList arrayList4 = new ArrayList(x61.n.F(S7, 10));

@@ -5,7 +5,7 @@ import java.util.List;
 import pz0.ko;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class x implements aa.a {
+public abstract class xShadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"dataType", "id"});
 
     public static w c(ea.e eVar, aa.w wVar) {

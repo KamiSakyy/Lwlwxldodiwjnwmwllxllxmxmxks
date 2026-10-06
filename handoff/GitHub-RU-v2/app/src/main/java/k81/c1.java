@@ -16,7 +16,7 @@ import kotlinx.serialization.SerializationException;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class c1 {
+public abstract class c1Shadow {
     public static final SerialDescriptor[] a = new SerialDescriptor[0];
     public static final KSerializer[] b = new KSerializer[0];
     public static final Object c = new Object();
@@ -206,10 +206,10 @@ public abstract class c1 {
                             if (kSerializer2 == null) {
                                 return kSerializer2;
                             }
-                            if (cls.getAnnotation(g81.a.class) == null && ((eVar = (g81.e) cls.getAnnotation(g81.e.class)) == null || !k71.x.a(eVar.with()).equals(k71.x.a(g81.b.class)))) {
+                            if (cls.getAnnotation(g81.a.class) == null && ((eVar = (g81.e) cls.getAnnotation(g81.e.class)) == null || !k71.xShadow.a(eVar.with()).equals(k71.xShadow.a(g81.b.class)))) {
                                 return null;
                             }
-                            return new g81.b(k71.x.a(cls));
+                            return new g81.b(k71.xShadow.a(cls));
                         }
                         obj2 = null;
                         if (obj2 != null) {

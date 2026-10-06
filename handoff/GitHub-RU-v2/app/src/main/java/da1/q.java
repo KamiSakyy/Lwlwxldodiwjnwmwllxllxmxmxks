@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class q extends b0 {
+final class q extends b0Shadow {
     public q() {
         super("AfterAfterFrameset", 22);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         if (s0Var.a()) {
             bVar.v((l0) s0Var);
             return true;

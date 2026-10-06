@@ -4,7 +4,7 @@ import aa.p0;
 import aa.q0;
 import aa.w0;
 import java.util.List;
-import k71.x;
+import k71.xShadow;
 import pz0.su;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -18,7 +18,7 @@ public final class m implements w0 {
         List list = un0.c.a;
         List list2 = un0.c.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -31,7 +31,7 @@ public final class m implements w0 {
     }
 
     public final int hashCode() {
-        return x.a(m.class).hashCode();
+        return xShadow.a(m.class).hashCode();
     }
 
     public final String i() {

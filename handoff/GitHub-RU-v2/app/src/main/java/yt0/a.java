@@ -8,7 +8,7 @@ import pz0.s1;
 import pz0.td;
 import pz0.xd;
 import pz0.zs;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -18,8 +18,8 @@ public abstract class a {
     static {
         zs.Companion.getClass();
         aa.r b = l0.b(zs.s);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new aa.m("mergeMethod", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new aa.m("mergeMethod", b, (String) null, rVar, rVar, rVar));
         td.Companion.getClass();
         aa.m mVar = new aa.m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();

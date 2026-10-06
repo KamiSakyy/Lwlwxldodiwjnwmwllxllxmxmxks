@@ -31,7 +31,7 @@ public final class br {
         y = brVarArr;
         v8.l0.t(brVarArr);
         Companion = new ar();
-        sy.d0.o(new String[]{"CREATED_AT", "NUMBER", "RECENTLY_VIEWED", "RELEVANCE", "TITLE", "UPDATED_AT"});
+        sy.d0Shadow.o(new String[]{"CREATED_AT", "NUMBER", "RECENTLY_VIEWED", "RELEVANCE", "TITLE", "UPDATED_AT"});
     }
 
     public br(String str, int i, String str2) {

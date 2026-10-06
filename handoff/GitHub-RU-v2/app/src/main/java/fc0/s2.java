@@ -12,14 +12,14 @@ public abstract class s2 {
     static {
         fb.Companion.getClass();
         aa.r b = v8.l0.b(fb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         bb.Companion.getClass();
         aa.s mVar2 = new aa.m("id", v8.l0.b(bb.a), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list = fa0.b.a;
         List r = x61.l.r(new aa.s[]{mVar, mVar2, no.a.c(list, "selections", "User", n, list)});
         kz.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r));
     }
 }

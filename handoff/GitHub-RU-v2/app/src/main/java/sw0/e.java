@@ -47,13 +47,13 @@ import rz.s0;
 import rz.u;
 import rz.v;
 import rz.w;
-import rz.x;
+import rz.xShadow;
 import rz.x0;
 import rz.y0;
 import ur0.o;
 import x01.i;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.e4;
 import zx.h;
 
@@ -91,7 +91,7 @@ public final /* synthetic */ class e implements j71.c {
                 k20 k20Var = (k20) obj;
                 k.g(k20Var, "data");
                 List list3 = k20Var.b.c;
-                return list3 == null ? r.r : list3;
+                return list3 == null ? rShadow.r : list3;
             case 1:
                 k20 k20Var2 = (k20) obj;
                 k.g(k20Var2, "data");
@@ -99,7 +99,7 @@ public final /* synthetic */ class e implements j71.c {
                 t20 t20Var = k20Var2.a;
                 String str3 = t20Var != null ? t20Var.b : null;
                 List<o20> list4 = (t20Var == null || (s20Var = t20Var.e) == null) ? null : s20Var.a;
-                List<n20> list5 = r.r;
+                List<n20> list5 = rShadow.r;
                 if (list4 == null) {
                     list4 = list5;
                 }
@@ -222,7 +222,7 @@ public final /* synthetic */ class e implements j71.c {
             case 13:
                 u uVar = (u) obj;
                 k.g(uVar, "data");
-                x xVar = uVar.a;
+                xShadow xVar = uVar.a;
                 if (xVar == null || (u2Var2 = xVar.d) == null) {
                     return null;
                 }
@@ -230,7 +230,7 @@ public final /* synthetic */ class e implements j71.c {
             case 14:
                 u uVar2 = (u) obj;
                 k.g(uVar2, "$this$observeWithPartialResultErrors");
-                x xVar2 = uVar2.a;
+                xShadow xVar2 = uVar2.a;
                 if (xVar2 != null && (vVar = xVar2.c) != null && (wVar = vVar.b) != null && (cVar = wVar.b) != null && (list = cVar.a) != null && !list.isEmpty()) {
                     Iterator it = list.iterator();
                     while (it.hasNext()) {

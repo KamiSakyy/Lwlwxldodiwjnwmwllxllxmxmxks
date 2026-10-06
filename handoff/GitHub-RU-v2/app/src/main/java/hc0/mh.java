@@ -23,7 +23,7 @@ public final class mh {
         u = mhVarArr;
         v = v8.l0.t(mhVarArr);
         Companion = new lh();
-        sy.d0.o(new String[]{"ARCHIVED", "DONE", "READ", "UNREAD"});
+        sy.d0Shadow.o(new String[]{"ARCHIVED", "DONE", "READ", "UNREAD"});
     }
 
     public mh(String str, int i, String str2) {

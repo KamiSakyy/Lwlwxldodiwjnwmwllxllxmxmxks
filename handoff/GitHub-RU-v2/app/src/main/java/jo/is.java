@@ -55,7 +55,7 @@ public final class is {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0 {
+    public static class a0Shadow {
         public a0() {
         }
     }

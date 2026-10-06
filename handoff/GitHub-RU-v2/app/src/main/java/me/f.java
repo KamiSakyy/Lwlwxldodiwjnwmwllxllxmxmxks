@@ -1,9 +1,9 @@
 package me;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class f {
@@ -17,7 +17,7 @@ public abstract class f {
         public Object[] f29215b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final List f29216c = r.r;
+        public final List f29216c = rShadow.r;
 
         public a(int i, Object[] objArr) {
             this.f29214a = i;
@@ -46,7 +46,7 @@ public abstract class f {
         public b(String str) {
             k.g(str, "value");
             this.f29217a = str;
-            this.f29218b = r.r;
+            this.f29218b = rShadow.r;
         }
 
         @Override // me.f
@@ -75,7 +75,7 @@ public abstract class f {
         }
 
         public final String toString() {
-            return f4.o("SimpleString(value=", this.f29217a, ", spansList=", ", customAccessibilityLabel=null)", this.f29218b);
+            return f4Shadow.o("SimpleString(value=", this.f29217a, ", spansList=", ", customAccessibilityLabel=null)", this.f29218b);
         }
     }
 
@@ -85,7 +85,7 @@ public abstract class f {
         public int f29219a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final List f29220b = r.r;
+        public final List f29220b = rShadow.r;
 
         public c(int i) {
             this.f29219a = i;
@@ -117,7 +117,7 @@ public abstract class f {
         }
 
         public final String toString() {
-            return f4.i(this.f29219a, "SimpleStringResource(resId=", ", spansList=", ", customAccessibilityLabel=null)", this.f29220b);
+            return f4Shadow.i(this.f29219a, "SimpleStringResource(resId=", ", spansList=", ", customAccessibilityLabel=null)", this.f29220b);
         }
     }
 
@@ -130,7 +130,7 @@ public abstract class f {
         public int f29226b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final List f29227c = r.r;
+        public final List f29227c = rShadow.r;
 
         public e(int i, int i10) {
             this.f29225a = i;
@@ -161,7 +161,7 @@ public abstract class f {
         public List f29230c;
 
         public C0085f(d dVar, List list, List list2, int i) {
-            list2 = (i & 4) != 0 ? r.r : list2;
+            list2 = (i & 4) != 0 ? rShadow.r : list2;
             k.g(list2, "spansList");
             this.f29228a = dVar;
             this.f29229b = list;
@@ -216,7 +216,7 @@ public abstract class f {
         }
 
         public /* synthetic */ d(int i, Object[] objArr, List list, int i10) {
-            this(i, objArr, (i10 & 4) != 0 ? r.r : list, (d) null);
+            this(i, objArr, (i10 & 4) != 0 ? rShadow.r : list, (d) null);
         }
     }
 }

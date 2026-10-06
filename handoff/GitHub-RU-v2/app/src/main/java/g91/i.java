@@ -112,7 +112,7 @@ public final class i implements Closeable {
                     fVar.a.K(fVar, hVar.o0());
                     return;
                 } else {
-                    h91.k v = hVar.v(hVar.s);
+                    h91.kShadow v = hVar.v(hVar.s);
                     f fVar2 = (f) hVar3;
                     k.g(v, "bytes");
                     fVar2.a.J(fVar2, v);
@@ -180,7 +180,7 @@ public final class i implements Closeable {
             case 9:
                 h hVar2 = this.s;
                 h91.h hVar3 = this.B;
-                h91.k v = hVar3.v(hVar3.s);
+                h91.kShadow v = hVar3.v(hVar3.s);
                 f fVar2 = (f) hVar2;
                 synchronized (fVar2) {
                     try {
@@ -197,7 +197,7 @@ public final class i implements Closeable {
             case 10:
                 h hVar4 = this.s;
                 h91.h hVar5 = this.B;
-                h91.k v2 = hVar5.v(hVar5.s);
+                h91.kShadow v2 = hVar5.v(hVar5.s);
                 f fVar3 = (f) hVar4;
                 synchronized (fVar3) {
                     k.g(v2, "payload");

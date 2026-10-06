@@ -13,7 +13,7 @@ import v71.v0;
 import v71.y1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class b {
+public abstract class bShadow {
     public static final t a = new t(0, "CLOSED", false);
     public static final t b = new t(0, "UNDEFINED", false);
     public static final t c = new t(0, "REUSABLE_CLAIMED", false);

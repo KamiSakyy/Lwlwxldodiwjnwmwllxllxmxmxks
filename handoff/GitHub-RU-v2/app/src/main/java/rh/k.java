@@ -6,7 +6,7 @@ import com.github.rudroid.uitoolkit.r1;
 import com.github.rudroid.utilities.ui.f0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class k {
+public final class kShadow {
     public static final void a(int i, int i2, s sVar, j71.a aVar, boolean z) {
         sVar.e0(-330787736);
         int i3 = (sVar.g(z) ? 4 : 2) | i2 | (sVar.d(i) ? 32 : 16) | (sVar.h(aVar) ? 256 : 128);

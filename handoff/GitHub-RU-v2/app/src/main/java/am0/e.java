@@ -6,10 +6,10 @@ public final class e {
     public w b;
     public q c;
     public z d;
-    public x e;
+    public xShadow e;
     public n f;
 
-    public e(String str, w wVar, q qVar, z zVar, x xVar, n nVar) {
+    public e(String str, w wVar, q qVar, z zVar, xShadow xVar, n nVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = wVar;
@@ -38,7 +38,7 @@ public final class e {
         int hashCode3 = (hashCode2 + (qVar == null ? 0 : qVar.hashCode())) * 31;
         z zVar = this.d;
         int hashCode4 = (hashCode3 + (zVar == null ? 0 : zVar.hashCode())) * 31;
-        x xVar = this.e;
+        xShadow xVar = this.e;
         int hashCode5 = (hashCode4 + (xVar == null ? 0 : xVar.hashCode())) * 31;
         n nVar = this.f;
         return hashCode5 + (nVar != null ? nVar.hashCode() : 0);

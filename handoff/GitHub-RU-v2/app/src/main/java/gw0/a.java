@@ -22,7 +22,7 @@ public abstract class a {
     static {
         i90.Companion.getClass();
         r b = l0.b(i90.s);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("identifier", b, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         List r = l.r(new m[]{mVar, new m("hidden", l0.b(pd.a), (String) null, rVar, rVar, rVar)});

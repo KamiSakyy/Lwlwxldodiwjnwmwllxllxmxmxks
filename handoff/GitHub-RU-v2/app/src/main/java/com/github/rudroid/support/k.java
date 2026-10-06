@@ -13,7 +13,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 @c71.e(c = "com.github.rudroid.support.SupportFragment$onViewCreated$3", f = "SupportFragment.kt", l = {}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -52,7 +52,7 @@ final class k extends c71.j implements j71.e {
         }
         h hVar = (h) g1Var.getData();
         if (hVar != null) {
-            List n = d0.n(new b.C0008b(null, 0));
+            List n = d0Shadow.n(new b.C0008b(null, 0));
             List list = hVar.a;
             ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
             Iterator it = list.iterator();

@@ -76,7 +76,7 @@ public final class p0 {
         int i6 = i4 | (sVar.f(g1Var2) ? 16384 : 8192);
         if (sVar.S(i5 & 1, ((i5 & 306783379) == 306783378 && (i6 & 9363) == 9362) ? false : true)) {
             long j = ih.d.b(sVar).a;
-            d2.l0 l0Var = d2.a0.b;
+            d2.l0 l0Var = d2.a0Shadow.b;
             w1.o oVar = w1.o.a;
             w1.r f = f0.o.f(oVar, j, l0Var).f(rVar);
             w1.j jVar = w1.c.r;
@@ -92,16 +92,16 @@ public final class p0 {
             } else {
                 sVar.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar, eVar, d);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar, eVar4, c);
             w1.r d2 = p2.d(oVar, 1.0f);
             androidx.compose.foundation.layout.e0 a = androidx.compose.foundation.layout.c0.a(androidx.compose.foundation.layout.l.c, w1.c.D, sVar, 0);

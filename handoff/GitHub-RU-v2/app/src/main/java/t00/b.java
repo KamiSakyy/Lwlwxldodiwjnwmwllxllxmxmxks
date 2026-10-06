@@ -55,7 +55,7 @@ public final class b extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar, g2Var, this) == aVar) {
+                    if (y71.n1Shadow.q(jVar, g2Var, this) == aVar) {
                         return aVar;
                     }
                 } else {
@@ -79,7 +79,7 @@ public final class b extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, g2Var2, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, g2Var2, this) == aVar2) {
                         return aVar2;
                     }
                 } else {

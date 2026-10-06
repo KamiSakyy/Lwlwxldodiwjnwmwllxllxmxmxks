@@ -23,8 +23,8 @@ public final class k {
         s sVar = this.d;
         ConcurrentHashMap concurrentHashMap = sVar.e;
         String str = this.a;
-        if (((h) concurrentHashMap.get(str)) != null) {
-            concurrentHashMap.put(str, new h(this.b, this.c));
+        if (((hShadow) concurrentHashMap.get(str)) != null) {
+            concurrentHashMap.put(str, new hShadow(this.b, this.c));
         }
         sVar.c(str);
     }

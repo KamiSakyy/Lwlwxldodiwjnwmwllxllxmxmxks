@@ -1,7 +1,7 @@
 package s3;
 
 import a0.s0;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class b {
@@ -156,7 +156,7 @@ public abstract class b {
     }
 
     public static final void k(int i, int i10) {
-        throw new IllegalArgumentException(f4.h(i, i10, "Can't represent a width of ", " and height of ", " in Constraints"));
+        throw new IllegalArgumentException(f4Shadow.h(i, i10, "Can't represent a width of ", " and height of ", " in Constraints"));
     }
 
     public static final Void l(int i) {

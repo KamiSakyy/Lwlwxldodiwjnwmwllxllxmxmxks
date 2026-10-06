@@ -15,7 +15,7 @@ import androidx.fragment.app.h1;
 import b31.a;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import jo.f4;
+import jo.f4Shadow;
 import l4.b;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -99,7 +99,7 @@ public class HideViewOnScrollBehavior<V extends View> extends b {
             this.j = 1;
             Iterator it = this.d.iterator();
             if (it.hasNext()) {
-                throw f4.g(it);
+                throw f4Shadow.g(it);
             }
             this.k = this.a.U(view, this.i).setInterpolator(this.h).setDuration(this.f).setListener(new k1(2, this));
         }
@@ -152,7 +152,7 @@ public class HideViewOnScrollBehavior<V extends View> extends b {
         this.j = 2;
         Iterator it = this.d.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
         this.a.getClass();
         this.k = this.a.U(view, 0).setInterpolator(this.g).setDuration(this.e).setListener(new k1(2, this));

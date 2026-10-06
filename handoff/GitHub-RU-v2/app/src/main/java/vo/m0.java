@@ -6,7 +6,7 @@ import m10.n40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 implements aa.a {
     public static final m0 a = new m0();
-    public static final List b = sy.d0.o("id", "name", "owner", "viewerPermission", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "owner", "viewerPermission", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -31,9 +31,9 @@ final class p0 extends c71.j implements j71.e {
         sy.y.j(obj);
         y1 y1Var = this.v.B;
         g1.a aVar2 = g1.Companion;
-        x61.r rVar = (List) ((g1) y1Var.getValue()).getData();
+        x61.rShadow rVar = (List) ((g1) y1Var.getValue()).getData();
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         aVar2.getClass();
         com.github.rudroid.utilities.ui.t0 t0Var = new com.github.rudroid.utilities.ui.t0(rVar);

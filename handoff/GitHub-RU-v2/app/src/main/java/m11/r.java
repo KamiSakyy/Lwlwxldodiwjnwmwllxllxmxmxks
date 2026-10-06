@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.util.JsonReader;
 import android.view.contentcapture.ContentCaptureSession;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.tasks.RuntimeExecutionException;
 import com.google.firebase.concurrent.ExecutorsRegistrar;
 import com.google.firebase.installations.FirebaseInstallationsRegistrar;
@@ -18,7 +18,7 @@ import java.util.concurrent.CancellationException;
 import java.util.concurrent.ScheduledExecutorService;
 import y31.w;
 import y41.e0;
-import y41.h0;
+import y41.h0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final /* synthetic */ class r implements j11.g, p51.a, p41.d, w21.d, t11.g, w21.a, m51.a, j11.e, w, z41.b {
@@ -107,7 +107,7 @@ public final /* synthetic */ class r implements j11.g, p51.a, p41.d, w21.d, t11.
                 }
                 jsonReader.endObject();
                 if (str != null && bArr != null) {
-                    return new h0(str, bArr);
+                    return new h0Shadow(str, bArr);
                 }
                 StringBuilder sb2 = new StringBuilder();
                 if (str == null) {
@@ -169,7 +169,7 @@ public final /* synthetic */ class r implements j11.g, p51.a, p41.d, w21.d, t11.
                 break;
             default:
                 synchronized (oVar.a) {
-                    u.i("Task is not yet complete", oVar.c);
+                    uShadow.i("Task is not yet complete", oVar.c);
                     if (oVar.d) {
                         throw new CancellationException("Task is already canceled.");
                     }

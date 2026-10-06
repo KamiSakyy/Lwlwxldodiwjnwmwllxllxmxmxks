@@ -10,7 +10,7 @@ public final class c implements b {
 
     public c(Application application) {
         this.r = application;
-        y71.y1 c = y71.n1.c(a.u);
+        y71.y1 c = y71.n1Shadow.c(a.u);
         this.s = c;
         this.t = c;
     }

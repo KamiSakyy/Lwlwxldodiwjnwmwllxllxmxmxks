@@ -1,6 +1,6 @@
 package gq;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
@@ -31,6 +31,6 @@ public final class h {
     }
 
     public final String toString() {
-        return f4.n("Node(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.n("Node(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

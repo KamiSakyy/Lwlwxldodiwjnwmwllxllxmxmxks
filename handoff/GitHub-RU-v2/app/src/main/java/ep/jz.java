@@ -8,7 +8,7 @@ import jo.xe0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jz implements aaShadow.a {
     public static final jz a = new jz();
-    public static final List b = sy.d0.o("__typename", "id", "url", "state", "milestone", "viewerCanDeleteHeadRef", "viewerCanReopen");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "url", "state", "milestone", "viewerCanDeleteHeadRef", "viewerCanReopen");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003b, code lost:
     
@@ -185,7 +185,7 @@ public final class jz implements aaShadow.a {
         aa.c.b(aa.c.c(iz.a, true)).b(fVar, wVar, xe0Var.e);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(xe0Var.f, bVar2, fVar, wVar, "viewerCanReopen");
+        jo.f4Shadow.C(xe0Var.f, bVar2, fVar, wVar, "viewerCanReopen");
         bVar2.b(fVar, wVar, Boolean.valueOf(xe0Var.g));
         List list = gq.k.a;
         gq.k.d(fVar, wVar, xe0Var.h);

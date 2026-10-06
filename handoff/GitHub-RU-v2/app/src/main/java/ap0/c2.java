@@ -75,7 +75,7 @@ public abstract class c2 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, a2Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(a2Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(a2Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, a2Var.d);
         fVar.z0("pullRequest");
         aa.c.c(d2.a, true).b(fVar, wVar, a2Var.e);

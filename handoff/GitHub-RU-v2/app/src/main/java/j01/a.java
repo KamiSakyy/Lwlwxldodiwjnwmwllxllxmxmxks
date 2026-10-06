@@ -2,7 +2,7 @@ package j01;
 
 import a0.s0;
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -42,6 +42,6 @@ public final class a {
     public final String toString() {
         StringBuilder o = s0.o("CustomFilter(id=", this.a, ", name=", this.b, ", queryString=");
         s0.w(this.d, this.c, ", unreadCount=", ", isDefault=", o);
-        return f4.s(o, this.e, ")");
+        return f4Shadow.s(o, this.e, ")");
     }
 }

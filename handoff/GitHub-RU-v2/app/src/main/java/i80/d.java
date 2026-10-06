@@ -16,7 +16,7 @@ import com.google.android.gms.measurement.internal.x;
 import hc0.tm;
 import java.util.List;
 import k81.z;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements i0, t6.b, k, x, q9.e {
@@ -60,7 +60,7 @@ public final class d implements i0, t6.b, k, x, q9.e {
         List list = j80.a.a;
         List list2 = j80.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", j0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -80,7 +80,7 @@ public final class d implements i0, t6.b, k, x, q9.e {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(d.class).hashCode();
+                return k71.xShadow.a(d.class).hashCode();
             default:
                 return super.hashCode();
         }

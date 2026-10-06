@@ -45,6 +45,6 @@ public final class u7 {
         n.append(this.d);
         n.append(", rightNum=");
         x.i.r(this.e, ", raw=", this.f, ", isMissingNewlineAtEnd=", n);
-        return jo.f4.s(n, this.g, ")");
+        return jo.f4Shadow.s(n, this.g, ")");
     }
 }

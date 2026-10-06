@@ -126,8 +126,8 @@ public final class o4 implements x1 {
     }
 
     public static o4 C(Context context) {
-        c21.u.g(context);
-        c21.u.g(context.getApplicationContext());
+        c21.uShadow.g(context);
+        c21.uShadow.g(context.getApplicationContext());
         if (b0 == null) {
             synchronized (o4.class) {
                 try {
@@ -237,7 +237,7 @@ public final class o4 implements x1 {
         w0 w0Var = this.s;
         b().z();
         l0();
-        c21.u.d(str);
+        c21.uShadow.d(str);
         if (bArr == null) {
             try {
                 bArr = new byte[0];
@@ -665,7 +665,7 @@ public final class o4 implements x1 {
                             } else {
                                 o4Var.j0();
                                 String p2 = a3Var3.p();
-                                c21.u.d(p2);
+                                c21.uShadow.d(p2);
                                 z2 = P;
                                 if (p2.hashCode() != 95027 || !p2.equals("_ui")) {
                                     str5 = str8;
@@ -1185,7 +1185,7 @@ public final class o4 implements x1 {
                             if (tVar == null) {
                                 o g0 = o4Var.g0();
                                 String p7 = ((com.google.android.gms.internal.measurement.j3) b1Var.b).p();
-                                c21.u.g(str14);
+                                c21.uShadow.g(str14);
                                 tVar = g0.X("events", p7, str14);
                                 if (tVar != null) {
                                     hashMap2.put(str14, tVar);
@@ -1415,7 +1415,7 @@ public final class o4 implements x1 {
                     }
                     o g02 = g0();
                     arrayList = (ArrayList) b1Var.c;
-                    c21.u.g(arrayList);
+                    c21.uShadow.g(arrayList);
                     g02.z();
                     g02.A();
                     StringBuilder sb = new StringBuilder("rowid in (");
@@ -1440,7 +1440,7 @@ public final class o4 implements x1 {
                 }
                 o g022 = g0();
                 arrayList = (ArrayList) b1Var.c;
-                c21.u.g(arrayList);
+                c21.uShadow.g(arrayList);
                 g022.z();
                 g022.A();
                 StringBuilder sb2 = new StringBuilder("rowid in (");
@@ -1508,7 +1508,7 @@ public final class o4 implements x1 {
     }
 
     public final boolean K(com.google.android.gms.internal.measurement.a3 a3Var, com.google.android.gms.internal.measurement.a3 a3Var2) {
-        c21.u.b("_e".equals(a3Var.p()));
+        c21.uShadow.b("_e".equals(a3Var.p()));
         j0();
         com.google.android.gms.internal.measurement.e3 H = w0.H((com.google.android.gms.internal.measurement.b3) a3Var.e(), "_sc");
         String s = H == null ? null : H.s();
@@ -1518,7 +1518,7 @@ public final class o4 implements x1 {
         if (s2 == null || !s2.equals(s)) {
             return false;
         }
-        c21.u.b("_e".equals(a3Var.p()));
+        c21.uShadow.b("_e".equals(a3Var.p()));
         j0();
         com.google.android.gms.internal.measurement.e3 H3 = w0.H((com.google.android.gms.internal.measurement.b3) a3Var.e(), "_et");
         if (H3 == null || !H3.t() || H3.u() <= 0) {
@@ -1799,7 +1799,7 @@ public final class o4 implements x1 {
             ((Runnable) obj).run();
         }
         ArrayList arrayList2 = this.G;
-        c21.u.g(arrayList2);
+        c21.uShadow.g(arrayList2);
         arrayList2.clear();
     }
 
@@ -1936,7 +1936,7 @@ public final class o4 implements x1 {
                 if ("_sid".equals(str3)) {
                     long j3 = q4Var.t;
                     String str4 = q4Var.w;
-                    c21.u.g(str2);
+                    c21.uShadow.g(str2);
                     o oVar = this.t;
                     U(oVar);
                     r4 t0 = oVar.t0(str2, "_sno");
@@ -1968,9 +1968,9 @@ public final class o4 implements x1 {
                 } else {
                     str = "_sid";
                 }
-                c21.u.g(str2);
+                c21.uShadow.g(str2);
                 String str5 = q4Var.w;
-                c21.u.g(str5);
+                c21.uShadow.g(str5);
                 r4 r4Var = new r4(str2, str5, str3, q4Var.t, N);
                 q0 q0Var2 = a().F;
                 o1 o1Var = this.C;
@@ -2063,12 +2063,12 @@ public final class o4 implements x1 {
                 if ("_id".equals(str)) {
                     o oVar2 = this.t;
                     U(oVar2);
-                    c21.u.g(str2);
+                    c21.uShadow.g(str2);
                     oVar2.r0(str2, "_lair");
                 }
                 o oVar3 = this.t;
                 U(oVar3);
-                c21.u.g(str2);
+                c21.uShadow.g(str2);
                 oVar3.r0(str2, str);
                 o oVar4 = this.t;
                 U(oVar4);
@@ -2141,10 +2141,10 @@ public final class o4 implements x1 {
         o1 o1Var3 = this.C;
         b().z();
         l0();
-        c21.u.g(o4Var);
+        c21.uShadow.g(o4Var);
         boolean z3 = o4Var.F;
         String str3 = o4Var.r;
-        c21.u.d(str3);
+        c21.uShadow.d(str3);
         if (!T(o4Var)) {
             return;
         }
@@ -2240,7 +2240,7 @@ public final class o4 implements x1 {
                             W(new q4(j8, valueOf2, "_fot", "auto"), o4Var);
                             b().z();
                             e1 e1Var = this.B;
-                            c21.u.g(e1Var);
+                            c21.uShadow.g(e1Var);
                             o1 o1Var4 = e1Var.s;
                             if (str3 != null) {
                                 try {
@@ -2310,11 +2310,11 @@ public final class o4 implements x1 {
                                         if (z3) {
                                             bundle2.putLong("_dac", j9);
                                         }
-                                        c21.u.g(str2);
+                                        c21.uShadow.g(str2);
                                         o4Var = this;
                                         o oVar7 = o4Var.t;
                                         U(oVar7);
-                                        c21.u.d(str2);
+                                        c21.uShadow.d(str2);
                                         oVar7.z();
                                         oVar7.A();
                                         String str5 = str2;
@@ -2404,11 +2404,11 @@ public final class o4 implements x1 {
                             bundle22.putLong("_et", j92);
                             if (z3) {
                             }
-                            c21.u.g(str2);
+                            c21.uShadow.g(str2);
                             o4Var = this;
                             o oVar72 = o4Var.t;
                             U(oVar72);
-                            c21.u.d(str2);
+                            c21.uShadow.d(str2);
                             oVar72.z();
                             oVar72.A();
                             String str52 = str2;
@@ -2481,10 +2481,10 @@ public final class o4 implements x1 {
 
     public final void Z(f fVar, v4 v4Var) {
         w wVar;
-        c21.u.d(fVar.r);
-        c21.u.g(fVar.s);
-        c21.u.g(fVar.t);
-        c21.u.d(fVar.t.s);
+        c21.uShadow.d(fVar.r);
+        c21.uShadow.g(fVar.s);
+        c21.uShadow.g(fVar.t);
+        c21.uShadow.d(fVar.t.s);
         b().z();
         l0();
         if (T(v4Var)) {
@@ -2502,7 +2502,7 @@ public final class o4 implements x1 {
                 o oVar2 = this.t;
                 U(oVar2);
                 String str = fVar2.r;
-                c21.u.g(str);
+                c21.uShadow.g(str);
                 f x0 = oVar2.x0(str, fVar2.t.s);
                 o1 o1Var = this.C;
                 if (x0 != null && !x0.s.equals(fVar2.s)) {
@@ -2526,12 +2526,12 @@ public final class o4 implements x1 {
                 if (fVar2.v) {
                     q4 q4Var3 = fVar2.t;
                     String str2 = fVar2.r;
-                    c21.u.g(str2);
+                    c21.uShadow.g(str2);
                     String str3 = fVar2.s;
                     String str4 = q4Var3.s;
                     long j = q4Var3.t;
                     Object j2 = q4Var3.j();
-                    c21.u.g(j2);
+                    c21.uShadow.g(j2);
                     r4 r4Var = new r4(str2, str3, str4, j, j2);
                     Object obj = r4Var.e;
                     String str5 = r4Var.c;
@@ -2571,16 +2571,16 @@ public final class o4 implements x1 {
     @Override // com.google.android.gms.measurement.internal.x1
     public final s0 a() {
         o1 o1Var = this.C;
-        c21.u.g(o1Var);
+        c21.uShadow.g(o1Var);
         s0 s0Var = o1Var.w;
         o1.m(s0Var);
         return s0Var;
     }
 
     public final void a0(f fVar, v4 v4Var) {
-        c21.u.d(fVar.r);
-        c21.u.g(fVar.t);
-        c21.u.d(fVar.t.s);
+        c21.uShadow.d(fVar.r);
+        c21.uShadow.g(fVar.t);
+        c21.uShadow.d(fVar.t.s);
         b().z();
         l0();
         if (T(v4Var)) {
@@ -2594,7 +2594,7 @@ public final class o4 implements x1 {
             try {
                 c0(v4Var);
                 String str = fVar.r;
-                c21.u.g(str);
+                c21.uShadow.g(str);
                 o oVar2 = this.t;
                 U(oVar2);
                 f x0 = oVar2.x0(str, fVar.t.s);
@@ -2613,7 +2613,7 @@ public final class o4 implements x1 {
                     if (wVar != null) {
                         v vVar = wVar.s;
                         w c0 = k0().c0(wVar.r, vVar != null ? vVar.C() : null, x0.s, wVar.u, true);
-                        c21.u.g(c0);
+                        c21.uShadow.g(c0);
                         l(c0, v4Var);
                     }
                 } else {
@@ -2637,7 +2637,7 @@ public final class o4 implements x1 {
     @Override // com.google.android.gms.measurement.internal.x1
     public final m1 b() {
         o1 o1Var = this.C;
-        c21.u.g(o1Var);
+        c21.uShadow.g(o1Var);
         m1 m1Var = o1Var.x;
         o1.m(m1Var);
         return m1Var;
@@ -2647,7 +2647,7 @@ public final class o4 implements x1 {
         o oVar = this.t;
         U(oVar);
         String str = v4Var.r;
-        c21.u.g(str);
+        c21.uShadow.g(str);
         x0 B0 = oVar.B0(str);
         if (B0 != null) {
             k0();
@@ -2656,7 +2656,7 @@ public final class o4 implements x1 {
             boolean isEmpty = TextUtils.isEmpty(str2);
             boolean isEmpty2 = TextUtils.isEmpty(G);
             if (!isEmpty && !isEmpty2) {
-                c21.u.g(str2);
+                c21.uShadow.g(str2);
                 if (!str2.equals(G)) {
                     a().A.b(s0.H(B0.D()), "New GMP App Id passed in. Removing cached database data. appId");
                     o oVar2 = this.t;
@@ -2665,7 +2665,7 @@ public final class o4 implements x1 {
                     String D = B0.D();
                     oVar2.A();
                     oVar2.z();
-                    c21.u.d(D);
+                    c21.uShadow.d(D);
                     try {
                         SQLiteDatabase o0 = oVar2.o0();
                         String[] strArr = {D};
@@ -2739,10 +2739,10 @@ public final class o4 implements x1 {
         String str4;
         b().z();
         l0();
-        c21.u.g(v4Var);
+        c21.uShadow.g(v4Var);
         boolean z2 = v4Var.E;
         String str5 = v4Var.r;
-        c21.u.d(str5);
+        c21.uShadow.d(str5);
         String str6 = v4Var.K;
         if (!str6.isEmpty()) {
             this.U.put(str5, new m4(this, str6));
@@ -3013,7 +3013,7 @@ public final class o4 implements x1 {
                         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) oVar).s;
                         int i2 = intArray[i];
                         long j = longArray[i];
-                        c21.u.d(str);
+                        c21.uShadow.d(str);
                         oVar.z();
                         oVar.A();
                         try {
@@ -3049,7 +3049,7 @@ public final class o4 implements x1 {
         o oVar2 = this.t;
         U(oVar2);
         String str2 = v4Var.r;
-        c21.u.d(str2);
+        c21.uShadow.d(str2);
         oVar2.z();
         oVar2.A();
         ArrayList arrayList = new ArrayList();
@@ -3109,14 +3109,14 @@ public final class o4 implements x1 {
 
     public final h e0() {
         o1 o1Var = this.C;
-        c21.u.g(o1Var);
+        c21.uShadow.g(o1Var);
         return o1Var.u;
     }
 
     @Override // com.google.android.gms.measurement.internal.x1
     public final g21.a f() {
         o1 o1Var = this.C;
-        c21.u.g(o1Var);
+        c21.uShadow.g(o1Var);
         return o1Var.B;
     }
 
@@ -3241,7 +3241,7 @@ public final class o4 implements x1 {
         w d;
         v vVar;
         String str = v4Var.r;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         t0 c = t0.c(wVar);
         Bundle bundle2 = (Bundle) c.e;
         t4 k0 = k0();
@@ -3352,9 +3352,9 @@ public final class o4 implements x1 {
         List A02;
         List<f> A03;
         String str;
-        c21.u.g(v4Var);
+        c21.uShadow.g(v4Var);
         String str2 = v4Var.r;
-        c21.u.d(str2);
+        c21.uShadow.d(str2);
         b().z();
         l0();
         long j = wVar.u;
@@ -3412,7 +3412,7 @@ public final class o4 implements x1 {
             }
             o oVar7 = this.t;
             U(oVar7);
-            c21.u.d(str2);
+            c21.uShadow.d(str2);
             oVar7.z();
             oVar7.A();
             if (j < 0) {
@@ -3444,7 +3444,7 @@ public final class o4 implements x1 {
             }
             o oVar9 = this.t;
             U(oVar9);
-            c21.u.d(str2);
+            c21.uShadow.d(str2);
             oVar9.z();
             oVar9.A();
             if (j < 0) {
@@ -3484,8 +3484,8 @@ public final class o4 implements x1 {
             }
             o oVar12 = this.t;
             U(oVar12);
-            c21.u.d(str2);
-            c21.u.d(str4);
+            c21.uShadow.d(str2);
+            c21.uShadow.d(str4);
             oVar12.z();
             oVar12.A();
             if (j < 0) {
@@ -3502,11 +3502,11 @@ public final class o4 implements x1 {
                 if (fVar3 != null) {
                     q4 q4Var = fVar3.t;
                     String str5 = fVar3.r;
-                    c21.u.g(str5);
+                    c21.uShadow.g(str5);
                     String str6 = fVar3.s;
                     String str7 = q4Var.s;
                     Object j2 = q4Var.j();
-                    c21.u.g(j2);
+                    c21.uShadow.g(j2);
                     r4 r4Var = new r4(str5, str6, str7, j, j2);
                     Object obj2 = r4Var.e;
                     String str8 = r4Var.c;
@@ -3573,7 +3573,7 @@ public final class o4 implements x1 {
 
     public final t4 k0() {
         o1 o1Var = this.C;
-        c21.u.g(o1Var);
+        c21.uShadow.g(o1Var);
         t4 t4Var = o1Var.z;
         o1.k(t4Var);
         return t4Var;
@@ -3674,7 +3674,7 @@ public final class o4 implements x1 {
         Pair D;
         x0 B02;
         r4 t0;
-        c21.u.g(v4Var);
+        c21.uShadow.g(v4Var);
         boolean z = v4Var.E;
         long j7 = v4Var.H;
         long j8 = v4Var.w;
@@ -3687,7 +3687,7 @@ public final class o4 implements x1 {
         long j12 = j8;
         boolean z2 = v4Var.y;
         String str17 = v4Var.r;
-        c21.u.d(str17);
+        c21.uShadow.d(str17);
         long nanoTime = System.nanoTime();
         b().z();
         l0();
@@ -3844,7 +3844,7 @@ public final class o4 implements x1 {
                             }
                         }
                         o g03 = g0();
-                        c21.u.d(str23);
+                        c21.uShadow.d(str23);
                         g03.z();
                         g03.A();
                         try {
@@ -3890,8 +3890,8 @@ public final class o4 implements x1 {
                         b().z();
                         l0();
                         String str27 = (String) sVar2.u;
-                        c21.u.d(str27);
-                        c21.u.b(str27.equals(str23));
+                        c21.uShadow.d(str27);
+                        c21.uShadow.b(str27.equals(str23));
                         com.google.android.gms.internal.measurement.i3 U = com.google.android.gms.internal.measurement.j3.U();
                         U.B();
                         U.k();
@@ -3930,7 +3930,7 @@ public final class o4 implements x1 {
                             str9 = str18;
                             U.K(str9);
                         }
-                        c21.u.g(str23);
+                        c21.uShadow.g(str23);
                         String str29 = str8;
                         b2 j16 = e(str23).j(b2.c(str13, 100));
                         U.T(j16.f());
@@ -4097,12 +4097,12 @@ public final class o4 implements x1 {
                                                             }
                                                             if (j6.i(a2.ANALYTICS_STORAGE) && !TextUtils.isEmpty(B0.E())) {
                                                                 String E = B0.E();
-                                                                c21.u.g(E);
+                                                                c21.uShadow.g(E);
                                                                 U.y(E);
                                                             }
                                                             if (!TextUtils.isEmpty(B0.J())) {
                                                                 String J2 = B0.J();
-                                                                c21.u.g(J2);
+                                                                c21.uShadow.g(J2);
                                                                 U.N(J2);
                                                             }
                                                             u0 = o4Var.g0().u0(str23);
@@ -4149,7 +4149,7 @@ public final class o4 implements x1 {
                                                             j3Var = (com.google.android.gms.internal.measurement.j3) U.e();
                                                             g0.z();
                                                             g0.A();
-                                                            c21.u.d(j3Var.p());
+                                                            c21.uShadow.d(j3Var.p());
                                                             byte[] a4 = j3Var.a();
                                                             long k04 = g0.t.j0().k0(a4);
                                                             ContentValues contentValues2 = new ContentValues();
@@ -4178,7 +4178,7 @@ public final class o4 implements x1 {
                                                             g02.z();
                                                             g02.A();
                                                             String str34 = (String) sVar2.u;
-                                                            c21.u.d(str34);
+                                                            c21.uShadow.d(str34);
                                                             byte[] a5 = g02.t.j0().b0(sVar2).a();
                                                             contentValues = new ContentValues();
                                                             contentValues.put("app_id", str34);
@@ -4225,7 +4225,7 @@ public final class o4 implements x1 {
                                         }
                                         if (j6.i(a2.ANALYTICS_STORAGE)) {
                                             String E2 = B0.E();
-                                            c21.u.g(E2);
+                                            c21.uShadow.g(E2);
                                             U.y(E2);
                                         }
                                         if (!TextUtils.isEmpty(B0.J())) {
@@ -4238,7 +4238,7 @@ public final class o4 implements x1 {
                                         j3Var = (com.google.android.gms.internal.measurement.j3) U.e();
                                         g0.z();
                                         g0.A();
-                                        c21.u.d(j3Var.p());
+                                        c21.uShadow.d(j3Var.p());
                                         byte[] a42 = j3Var.a();
                                         long k042 = g0.t.j0().k0(a42);
                                         ContentValues contentValues22 = new ContentValues();
@@ -4258,7 +4258,7 @@ public final class o4 implements x1 {
                                         g02.z();
                                         g02.A();
                                         String str342 = (String) sVar2.u;
-                                        c21.u.d(str342);
+                                        c21.uShadow.d(str342);
                                         byte[] a52 = g02.t.j0().b0(sVar2).a();
                                         contentValues = new ContentValues();
                                         contentValues.put("app_id", str342);
@@ -4318,7 +4318,7 @@ public final class o4 implements x1 {
                                     j3Var = (com.google.android.gms.internal.measurement.j3) U.e();
                                     g0.z();
                                     g0.A();
-                                    c21.u.d(j3Var.p());
+                                    c21.uShadow.d(j3Var.p());
                                     byte[] a422 = j3Var.a();
                                     long k0422 = g0.t.j0().k0(a422);
                                     ContentValues contentValues222 = new ContentValues();
@@ -4338,7 +4338,7 @@ public final class o4 implements x1 {
                                     g02.z();
                                     g02.A();
                                     String str3422 = (String) sVar2.u;
-                                    c21.u.d(str3422);
+                                    c21.uShadow.d(str3422);
                                     byte[] a522 = g02.t.j0().b0(sVar2).a();
                                     contentValues = new ContentValues();
                                     contentValues.put("app_id", str3422);
@@ -4369,7 +4369,7 @@ public final class o4 implements x1 {
                             g02.z();
                             g02.A();
                             String str34222 = (String) sVar2.u;
-                            c21.u.d(str34222);
+                            c21.uShadow.d(str34222);
                             byte[] a5222 = g02.t.j0().b0(sVar2).a();
                             contentValues = new ContentValues();
                             contentValues.put("app_id", str34222);
@@ -4436,7 +4436,7 @@ public final class o4 implements x1 {
                         j3Var = (com.google.android.gms.internal.measurement.j3) U.e();
                         g0.z();
                         g0.A();
-                        c21.u.d(j3Var.p());
+                        c21.uShadow.d(j3Var.p());
                         byte[] a4222 = j3Var.a();
                         long k04222 = g0.t.j0().k0(a4222);
                         ContentValues contentValues2222 = new ContentValues();
@@ -4526,7 +4526,7 @@ public final class o4 implements x1 {
                     }
                     o g05 = g0();
                     int H2 = e0().H(str17, c0.T) - 1;
-                    c21.u.d(str17);
+                    c21.uShadow.d(str17);
                     g05.z();
                     g05.A();
                     g05.o0().execSQL("delete from user_attributes where app_id=? and name in (select name from user_attributes where app_id=? and name like '!_ltv!_%' escape '!'order by set_timestamp desc limit ?,10);", new String[]{str17, str17, String.valueOf(H2)});
@@ -4666,7 +4666,7 @@ public final class o4 implements x1 {
         q q0 = q0(D2, o0(D2), e(D2), cVar);
         String str = q0.d;
         Boolean bool = q0.c;
-        c21.u.g(bool);
+        c21.uShadow.g(bool);
         boolean booleanValue = bool.booleanValue();
         i3Var.b();
         ((com.google.android.gms.internal.measurement.j3) i3Var.s).f1(booleanValue);
@@ -4791,7 +4791,7 @@ public final class o4 implements x1 {
         b().z();
         l0();
         String str = v4Var.r;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         b2 c = b2.c(v4Var.J, v4Var.O);
         e(str);
         a().F.c("Setting storage consent for package", str, c);
@@ -4949,7 +4949,7 @@ public final class o4 implements x1 {
         b().z();
         l0();
         String str = v4Var.r;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         q b = q.b(v4Var.P);
         a().F.c("Setting DMA consent for package", str, b);
         b().z();
@@ -4958,8 +4958,8 @@ public final class o4 implements x1 {
         this.T.put(str, b);
         o oVar = this.t;
         U(oVar);
-        c21.u.g(str);
-        c21.u.g(b);
+        c21.uShadow.g(str);
+        c21.uShadow.g(b);
         oVar.z();
         oVar.A();
         b2 S = oVar.S(str);
@@ -5012,7 +5012,7 @@ public final class o4 implements x1 {
         }
         o oVar = this.t;
         U(oVar);
-        c21.u.g(str);
+        c21.uShadow.g(str);
         oVar.z();
         oVar.A();
         q b = q.b(oVar.V("select dma_consent_settings from consent_settings where app_id=? limit 1;", new String[]{str}));
@@ -5021,7 +5021,7 @@ public final class o4 implements x1 {
     }
 
     public final void p(ArrayList arrayList) {
-        c21.u.b(!arrayList.isEmpty());
+        c21.uShadow.b(!arrayList.isEmpty());
         if (this.P != null) {
             a().x.a("Set uploading progress before finishing the previous upload");
         } else {
@@ -5395,10 +5395,10 @@ public final class o4 implements x1 {
         g0.z();
         g0.A();
         int i9 = 1;
-        c21.u.b(H > 0);
+        c21.uShadow.b(H > 0);
         Object r112 = max > 0 ? 1 : 0;
-        c21.u.b(r112);
-        c21.u.d(str4);
+        c21.uShadow.b(r112);
+        c21.uShadow.d(str4);
         try {
             try {
                 try {
@@ -5584,7 +5584,7 @@ public final class o4 implements x1 {
                         ArrayList arrayList3 = new ArrayList(list2.size());
                         o g02 = g0();
                         o1 o1Var5 = (o1) ((androidx.compose.foundation.lazy.layout.s0) g02).s;
-                        c21.u.d(str4);
+                        c21.uShadow.d(str4);
                         g02.z();
                         g02.A();
                         ArrayList arrayList4 = new ArrayList();
@@ -5889,7 +5889,7 @@ public final class o4 implements x1 {
                                         o g03 = g0();
                                         g03.z();
                                         g03.A();
-                                        c21.u.d(str4);
+                                        c21.uShadow.d(str4);
                                         o1 o1Var6 = (o1) ((androidx.compose.foundation.lazy.layout.s0) g03).s;
                                         o1Var6.a().G().b(b3Var, "Caching events in NO_DATA mode");
                                         ContentValues contentValues = new ContentValues();
@@ -6283,7 +6283,7 @@ public final class o4 implements x1 {
                     if (oVar.F(str)) {
                         o oVar2 = this.t;
                         U(oVar2);
-                        c21.u.d(str);
+                        c21.uShadow.d(str);
                         oVar2.z();
                         oVar2.A();
                         List E = oVar2.E(str, g4.j(a3.t), 1);
@@ -6577,7 +6577,7 @@ public final class o4 implements x1 {
             bArr2 = bArr;
         }
         ArrayList arrayList = this.P;
-        c21.u.g(arrayList);
+        c21.uShadow.g(arrayList);
         this.P = null;
         try {
             if (z) {
@@ -6746,12 +6746,12 @@ public final class o4 implements x1 {
         b().z();
         if (TextUtils.isEmpty(x0Var.G())) {
             String D = x0Var.D();
-            c21.u.g(D);
+            c21.uShadow.g(D);
             A(D, 204, null, null, null);
             return;
         }
         String D2 = x0Var.D();
-        c21.u.g(D2);
+        c21.uShadow.g(D2);
         a().F.b(D2, "Fetching remote configuration");
         i1 i1Var = this.r;
         U(i1Var);

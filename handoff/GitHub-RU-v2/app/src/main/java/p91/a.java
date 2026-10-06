@@ -8,7 +8,7 @@ import k71.k;
 import q71.g;
 import s91.c;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import t71.p;
 import t91.d;
 import x61.m;
@@ -27,7 +27,7 @@ public final class a extends u91.b {
         k.g(dVar, "constraints");
         this.e = q1Var;
         this.f = i;
-        q1Var.a(d0.n(new e(new g(cVar.c, cVar.d(), 1), n91.b.c)));
+        q1Var.a(d0Shadow.n(new e(new g(cVar.c, cVar.d(), 1), n91.b.c)));
         q1Var.a(g(cVar));
     }
 
@@ -48,7 +48,7 @@ public final class a extends u91.b {
         this.g = i;
         q1 q1Var = this.e;
         if (i == 1) {
-            q1Var.a(d0.n(new e(new g(cVar.c + 1, cVar.d(), 1), n91.c.b)));
+            q1Var.a(d0Shadow.n(new e(new g(cVar.c + 1, cVar.d(), 1), n91.c.b)));
             return u91.a.e;
         }
         if (!p.J(cVar.d, '|')) {
@@ -58,7 +58,7 @@ public final class a extends u91.b {
         if (g.isEmpty()) {
             return u91.a.f;
         }
-        q1Var.a(m.l0(d0.n(new e(new g(((q71.e) ((e) m.U(g)).a).r, ((q71.e) ((e) m.e0(g)).a).s, 1), n91.b.d)), g));
+        q1Var.a(m.l0(d0Shadow.n(new e(new g(((q71.e) ((e) m.U(g)).a).r, ((q71.e) ((e) m.e0(g)).a).s, 1), n91.b.d)), g));
         return u91.a.e;
     }
 
@@ -90,12 +90,12 @@ public final class a extends u91.b {
                 break;
             }
             String str2 = (String) K.get(i3);
-            if (!p.T(str2) || (1 <= i3 && i3 <= d0.m(K) - 1)) {
+            if (!p.T(str2) || (1 <= i3 && i3 <= d0Shadow.m(K) - 1)) {
                 arrayList.add(new e(new g(i, str2.length() + i, 1), n91.c.e));
                 i4++;
             }
             int length = str2.length() + i;
-            if (i3 < d0.m(K)) {
+            if (i3 < d0Shadow.m(K)) {
                 arrayList.add(new e(new g(length, length + 1, 1), n91.c.b));
             }
             i = length + 1;

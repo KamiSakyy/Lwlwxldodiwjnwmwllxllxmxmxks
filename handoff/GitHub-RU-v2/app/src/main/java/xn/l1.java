@@ -1,7 +1,7 @@
 package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class l1 extends sy.r {
+public final class l1 extends sy.rShadow {
     public Integer a;
     public Integer b;
     public Integer c;

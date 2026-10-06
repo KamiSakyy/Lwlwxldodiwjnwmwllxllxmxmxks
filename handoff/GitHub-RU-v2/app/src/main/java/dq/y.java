@@ -12,7 +12,7 @@ public abstract class y {
     static {
         m8.Companion.getClass();
         aa.r b = v8.l0.b(m8.s);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("copilotLicenseType", b, (String) null, rVar, rVar, rVar);
         ro.Companion.getClass();
         aa.m mVar2 = new aa.m("icon", v8.l0.b(ro.s), (String) null, rVar, rVar, rVar);

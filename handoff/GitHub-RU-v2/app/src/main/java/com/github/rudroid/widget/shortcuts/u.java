@@ -38,7 +38,7 @@ public final /* synthetic */ class u implements j71.f {
                 } else {
                     int i = a0.a.a[pullRequestState.ordinal()];
                     if (i == 1) {
-                        aVar = z ? com.github.rudroid.widget.k.k : com.github.rudroid.widget.k.i;
+                        aVar = z ? com.github.rudroid.widget.k.kShadow : com.github.rudroid.widget.k.i;
                     } else if (i == 2) {
                         aVar = com.github.rudroid.widget.k.l;
                     } else if (i == 3) {
@@ -47,10 +47,10 @@ public final /* synthetic */ class u implements j71.f {
                         if (i != 4) {
                             throw new NoWhenBranchMatchedException();
                         }
-                        aVar = com.github.rudroid.widget.k.k;
+                        aVar = com.github.rudroid.widget.k.kShadow;
                     }
                 }
-                sy.r.a(new z5.a(c), k41.b.M(ih.a.N), 0, new z5.d(new z5.q(aVar)), sVar, 32816, 8);
+                sy.rShadow.a(new z5.a(c), k41.b.M(ih.a.N), 0, new z5.d(new z5.q(aVar)), sVar, 32816, 8);
                 m7.y.f(k41.b.c0(ih.a.l), sVar, 0);
                 com.google.common.util.concurrent.a.a((z5.n) null, 0, 0, r1.i.d(-865653753, new u(j3Var, this.t, this.u, 1), sVar), sVar, 3072, 7);
                 break;

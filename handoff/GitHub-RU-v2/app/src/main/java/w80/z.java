@@ -4,10 +4,10 @@ package w80;
 public final class z implements aa.h0 {
     public String a;
     public String b;
-    public x c;
+    public xShadow c;
     public g70.a d;
 
-    public z(String str, String str2, x xVar, g70.a aVar) {
+    public z(String str, String str2, xShadow xVar, g70.a aVar) {
         this.a = str;
         this.b = str2;
         this.c = xVar;
@@ -27,7 +27,7 @@ public final class z implements aa.h0 {
 
     public final int hashCode() {
         int i = com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31);
-        x xVar = this.c;
+        xShadow xVar = this.c;
         return this.d.hashCode() + ((i + (xVar == null ? 0 : xVar.hashCode())) * 31);
     }
 

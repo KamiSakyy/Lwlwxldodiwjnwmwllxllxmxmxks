@@ -1,6 +1,6 @@
 package xt;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
@@ -40,7 +40,7 @@ public final class c {
         sb.append(", onIssue=");
         sb.append(this.b);
         sb.append(", nodeIdFragment=");
-        return f4.r(sb, this.c, ")");
+        return f4Shadow.r(sb, this.c, ")");
     }
     public Object b(Object p1) { return null; }
     public Object c(Object p1, Object p2) { return null; }

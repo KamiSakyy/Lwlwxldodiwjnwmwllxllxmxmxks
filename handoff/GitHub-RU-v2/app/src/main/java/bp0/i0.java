@@ -26,7 +26,7 @@ public abstract class i0 {
         td.Companion.getClass();
         aa.x xVar = td.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         aa.x xVar2 = xd.a;
@@ -46,9 +46,9 @@ public abstract class i0 {
         ps.Companion.getClass();
         q0 q0Var2 = ps.a;
         k71.k.g(q0Var2, "type");
-        List n = sy.d0.n(new aa.m("node", q0Var2, (String) null, rVar, rVar, r5));
+        List n = sy.d0Shadow.n(new aa.m("node", q0Var2, (String) null, rVar, rVar, r5));
         vs.Companion.getClass();
-        List n2 = sy.d0.n(new aa.m("edges", l0.a(vs.a), (String) null, rVar, rVar, n));
+        List n2 = sy.d0Shadow.n(new aa.m("edges", l0.a(vs.a), (String) null, rVar, rVar, n));
         aa.m mVar4 = new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.m mVar5 = new aa.m("title", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         vd.Companion.getClass();

@@ -3,7 +3,7 @@ package iy0;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.gu;
 import pz0.o7;
 
@@ -52,7 +52,7 @@ public abstract class v implements aa.a {
         Boolean bool16 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar = o7.a;
+            aa.xShadow xVar = o7.a;
             Integer num7 = num3;
             String str7 = str;
             switch (r0) {

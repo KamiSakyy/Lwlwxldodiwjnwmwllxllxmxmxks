@@ -8,7 +8,7 @@ public abstract class ig {
     public static final a81.t a = new a81.t(1, "limit", false);
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
         aa.j0 j0Var = zp.a;
         d90.Companion.getClass();

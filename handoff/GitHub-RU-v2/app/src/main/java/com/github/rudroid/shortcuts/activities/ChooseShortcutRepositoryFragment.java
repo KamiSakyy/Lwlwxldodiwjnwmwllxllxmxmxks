@@ -128,7 +128,7 @@ public final class ChooseShortcutRepositoryFragment extends Hilt_ChooseShortcutR
 
     public ChooseShortcutRepositoryFragment() {
         w61.h s = sy.w.s(w61.i.s, new c(new b()));
-        this.I0 = new l1(k71.x.a(w6.class), new d(s), new f(s), new e(s));
+        this.I0 = new l1(k71.xShadow.a(w6.class), new d(s), new f(s), new e(s));
         this.J0 = new a();
     }
 
@@ -181,7 +181,7 @@ public final class ChooseShortcutRepositoryFragment extends Hilt_ChooseShortcutR
             k71.k.m("dataAdapter");
             throw null;
         }
-        UiStateRecyclerView.w0(recyclerView, sy.d0.n(aVar), true, 4);
+        UiStateRecyclerView.w0(recyclerView, sy.d0Shadow.n(aVar), true, 4);
         recyclerView.u0(B4().N);
         B4().Q.q(new com.github.rudroid.shortcuts.activities.c(this, 1));
         com.github.rudroid.utilities.w0.a(((w6) l1Var.getValue()).F, F3(), androidx.lifecycle.w.u, new com.github.rudroid.shortcuts.activities.f(this, null));

@@ -3,11 +3,11 @@ package mo;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
     public int a;
-    public x b;
+    public xShadow b;
     public String c;
     public String d;
 
-    public a(int i, x xVar, String str, String str2) {
+    public a(int i, xShadow xVar, String str, String str2) {
         this.a = i;
         this.b = xVar;
         this.c = str;

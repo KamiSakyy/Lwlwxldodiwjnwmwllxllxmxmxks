@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sa.d;
 import x.i;
@@ -42,7 +42,7 @@ public final class ChecksOverviewRoute implements Parcelable, d {
 
     public /* synthetic */ ChecksOverviewRoute(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, ChecksOverviewRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, ChecksOverviewRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f5115r = str;

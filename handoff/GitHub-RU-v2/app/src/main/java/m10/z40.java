@@ -22,7 +22,7 @@ public final class z40 {
         v = z40VarArr;
         v8.l0.t(z40VarArr);
         Companion = new y40();
-        sy.d0.o("INTERNAL", "PRIVATE", "PUBLIC");
+        sy.d0Shadow.o("INTERNAL", "PRIVATE", "PUBLIC");
     }
 
     public z40(String str, int i, String str2) {

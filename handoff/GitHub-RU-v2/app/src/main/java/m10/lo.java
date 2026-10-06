@@ -5,7 +5,7 @@ public abstract class lo {
     public static final ko Companion = new ko();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("MobileCopilotPaywallChatModels", rVar, rVar);
     }
 }

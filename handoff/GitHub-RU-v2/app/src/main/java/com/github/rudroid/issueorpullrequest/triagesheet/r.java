@@ -5,7 +5,7 @@ import com.github.service.models.response.issueorpullrequest.IssueType;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import w61.a0;
 import yz0.i2;
 import yz0.m2;
@@ -65,7 +65,7 @@ public final class r<T> implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     i2 i2Var = (i2) obj;
-                    x61.r rVar = x61.r.r;
+                    x61.rShadow rVar = x61.rShadow.r;
                     if (i2Var != null) {
                         Object r22 = tVar.f16682u;
                         boolean f6 = cVar2.d().f(com.github.rudroid.common.a.D);
@@ -79,7 +79,7 @@ public final class r<T> implements y71.j {
                         java.util.List r14 = (java.util.List) (i2Var.x);
                         b.i iVar = new b.i(2131954781, z11, p.f16514r);
                         if (r14.isEmpty()) {
-                            arrayList = d0.n(new b.h(2131954848));
+                            arrayList = d0Shadow.n(new b.h(2131954848));
                         } else {
                             arrayList = new ArrayList(x61.n.F((Iterable) r14, 10));
                             Iterator it = r14.iterator();
@@ -87,13 +87,13 @@ public final class r<T> implements y71.j {
                                 arrayList.add(new b.g((yz0.f) it.next()));
                             }
                         }
-                        arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(iVar), (Iterable) arrayList), d0.n(new b.l(2131954781))));
+                        arrayList3.addAll(x61.m.l0(x61.m.l0(d0Shadow.n(iVar), (Iterable) arrayList), d0Shadow.n(new b.l(2131954781))));
                         boolean z12 = i2Var.N;
                         Object r72 = i2Var.y;
-                        arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(new b.i(2131954789, z12, p.f16515s)), r72.isEmpty() ? d0.n(new b.h(2131954850)) : d0.n(new b.j(r72))), d0.n(new b.l(2131954789))));
+                        arrayList3.addAll(x61.m.l0(x61.m.l0(d0Shadow.n(new b.i(2131954789, z12, p.f16515s)), r72.isEmpty() ? d0Shadow.n(new b.h(2131954850)) : d0Shadow.n(new b.j(r72))), d0Shadow.n(new b.l(2131954789))));
                         if (i2Var.r0) {
                             IssueType issueType = i2Var.q0;
-                            arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(new b.i(2131954788, z10, p.f16520x)), issueType == null ? d0.n(new b.h(2131954849)) : d0.n(new b.C0045b(issueType))), d0.n(new b.l(2131954788))));
+                            arrayList3.addAll(x61.m.l0(x61.m.l0(d0Shadow.n(new b.i(2131954788, z10, p.f16520x)), issueType == null ? d0Shadow.n(new b.h(2131954849)) : d0Shadow.n(new b.C0045b(issueType))), d0Shadow.n(new b.l(2131954788))));
                         }
                         if (f6 || !f10) {
                             a10 = (!f6 || f10) ? r22.a(r10, z10) : r22.a(r10, z10);
@@ -101,7 +101,7 @@ public final class r<T> implements y71.j {
                             Object r23 = i2Var.z;
                             b.i iVar2 = new b.i(2131954875, z10, p.f16516t);
                             if (r23.isEmpty()) {
-                                list = d0.n(new b.h(2131954854));
+                                list = d0Shadow.n(new b.h(2131954854));
                             } else {
                                 ArrayList arrayList4 = new ArrayList(x61.n.F((Iterable) r23, 10));
                                 Iterator it2 = r23.iterator();
@@ -110,18 +110,18 @@ public final class r<T> implements y71.j {
                                 }
                                 list = arrayList4;
                             }
-                            a10 = x61.m.l0(x61.m.l0(d0.n(iVar2), list), d0.n(new b.l(2131954875)));
+                            a10 = x61.m.l0(x61.m.l0(d0Shadow.n(iVar2), list), d0Shadow.n(new b.l(2131954875)));
                         }
                         if (!f6) {
                             arrayList3.addAll(a10);
                         }
                         v2 v2Var = i2Var.w;
-                        arrayList3.addAll(x61.m.l0(x61.m.l0(d0.n(new b.i(2131954847, z10, p.f16518v)), v2Var == null ? d0.n(new b.h(2131954852)) : d0.n(new b.d(v2Var))), d0.n(new b.l(2131954847))));
+                        arrayList3.addAll(x61.m.l0(x61.m.l0(d0Shadow.n(new b.i(2131954847, z10, p.f16518v)), v2Var == null ? d0Shadow.n(new b.h(2131954852)) : d0Shadow.n(new b.d(v2Var))), d0Shadow.n(new b.l(2131954847))));
                         boolean z13 = i2Var.F;
                         Object r73 = i2Var.K;
                         b.i iVar3 = new b.i(r73.isEmpty() ? 2131954792 : x61.m.U((List) r73) instanceof m2 ? 2131954790 : 2131954793, z13, p.f16519w);
                         if (r73.isEmpty()) {
-                            arrayList2 = d0.n(new b.h(2131954851));
+                            arrayList2 = d0Shadow.n(new b.h(2131954851));
                         } else {
                             arrayList2 = new ArrayList(x61.n.F((Iterable) r73, 10));
                             Iterator it3 = r73.iterator();
@@ -129,14 +129,14 @@ public final class r<T> implements y71.j {
                                 arrayList2.add(new b.k((o2) it3.next()));
                             }
                         }
-                        arrayList3.addAll(x61.m.m0(x61.m.l0(d0.n(iVar3), (Iterable) arrayList2), new b.l(2131954792)));
+                        arrayList3.addAll(x61.m.m0(x61.m.l0(d0Shadow.n(iVar3), (Iterable) arrayList2), new b.l(2131954792)));
                         if (f6) {
                             arrayList3.addAll(a10);
                         }
                         if (!i2Var.a0) {
                             h01.j jVar = i2Var.s0;
                             if (f11) {
-                                rVar = x61.m.l0(x61.m.l0(d0.n(new b.i(2131954857, z10, p.f16521y)), jVar != null ? d0.n(new b.e(jVar)) : d0.n(new b.h(2131954853))), d0.n(new b.l(2131954857)));
+                                rVar = x61.m.l0(x61.m.l0(d0Shadow.n(new b.i(2131954857, z10, p.f16521y)), jVar != null ? d0Shadow.n(new b.e(jVar)) : d0Shadow.n(new b.h(2131954853))), d0Shadow.n(new b.l(2131954857)));
                             }
                             arrayList3.addAll(rVar);
                         }

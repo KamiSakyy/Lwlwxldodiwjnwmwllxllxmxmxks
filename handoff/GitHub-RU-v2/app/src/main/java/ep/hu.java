@@ -6,7 +6,7 @@ import jo.n70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class hu implements aaShadow.a {
-    public static final List a = sy.d0.n("sponsorshipsAsSponsor");
+    public static final List a = sy.d0Shadow.n("sponsorshipsAsSponsor");
 
     public static k70 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -32,7 +32,7 @@ public final class z0 {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("AgentAssignmentInput(baseRef=", this.a, ", customAgent=", this.b, ", customInstructions=");
+        StringBuilder u = jo.f4Shadow.u("AgentAssignmentInput(baseRef=", this.a, ", customAgent=", this.b, ", customInstructions=");
         f1.e.w(u, this.c, ", model=", this.d, ", targetRepositoryId=");
         return f1.e.k(u, this.e, ")");
     }

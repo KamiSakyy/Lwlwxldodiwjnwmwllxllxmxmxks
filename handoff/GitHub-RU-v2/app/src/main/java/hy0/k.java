@@ -6,12 +6,12 @@ import iy0.k0;
 import iy0.m0;
 import java.util.List;
 import java.util.Set;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements aa.a {
     public static final k a = new k();
-    public static final List b = d0.o(new String[]{"__typename", "id"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         e0 e0Var;

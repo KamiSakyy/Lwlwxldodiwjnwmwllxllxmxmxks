@@ -17,9 +17,9 @@ public abstract class t4 {
         tb.Companion.getClass();
         aa.x xVar = tb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("SearchShortcut");
+        List n = sy.d0Shadow.n("SearchShortcut");
         List list = dk0.a.a;
         aa.s c = no.a.c(list, "selections", "SearchShortcut", n, list);
         pb.Companion.getClass();
@@ -28,9 +28,9 @@ public abstract class t4 {
         ft.Companion.getClass();
         aa.q0 q0Var = ft.a;
         k71.k.g(q0Var, "type");
-        List n2 = sy.d0.n(new aa.m("node", q0Var, (String) null, rVar, rVar, r));
+        List n2 = sy.d0Shadow.n(new aa.m("node", q0Var, (String) null, rVar, rVar, r));
         nt.Companion.getClass();
-        List n3 = sy.d0.n(new aa.m("edges", v8.l0.a(nt.a), (String) null, rVar, rVar, n2));
+        List n3 = sy.d0Shadow.n(new aa.m("edges", v8.l0.a(nt.a), (String) null, rVar, rVar, n2));
         lt.Companion.getClass();
         aa.r b2 = v8.l0.b(lt.a);
         a10.Companion.getClass();
@@ -39,6 +39,6 @@ public abstract class t4 {
         k71.k.g(q0Var2, "type");
         List r3 = x61.l.r(new aa.m[]{new aa.m("dashboard", q0Var2, (String) null, rVar, rVar, r2), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
         s00.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, r3));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, r3));
     }
 }

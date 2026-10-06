@@ -19,7 +19,7 @@ public final class gi0 implements aaShadow.w0 {
         List list = h10.i7.a;
         List list2 = h10.i7.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -31,7 +31,7 @@ public final class gi0 implements aaShadow.w0 {
     }
 
     public final aa.p0 g() {
-        return aa.c.c(ep.m10.a, false);
+        return aa.c.c(ep.m10Shadow.a, false);
     }
 
     public final int hashCode() {

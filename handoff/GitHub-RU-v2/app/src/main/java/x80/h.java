@@ -25,7 +25,7 @@ import hc0.tb;
 import hc0.tj;
 import hc0.xa;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -36,14 +36,14 @@ public abstract class h {
         fb.Companion.getClass();
         x xVar = fb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         s mVar2 = new aa.m("login", l0.b(xVar), (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = f30.b.a;
         List r2 = x61.l.r(new s[]{mVar, mVar2, no.a.c(list, "selections", "Actor", r, list)});
         s mVar3 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Milestone");
+        List n = d0Shadow.n("Milestone");
         List list2 = v60.a.a;
         s c = no.a.c(list2, "selections", "Milestone", n, list2);
         bb.Companion.getClass();
@@ -61,7 +61,7 @@ public abstract class h {
         nj.Companion.getClass();
         List r6 = x61.l.r(new aa.m[]{mVar6, new aa.m("project", l0.b(nj.a), (String) null, rVar, rVar, r5), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         pj.Companion.getClass();
-        List n2 = d0.n(new aa.m("nodes", l0.a(pj.a), (String) null, rVar, rVar, r6));
+        List n2 = d0Shadow.n(new aa.m("nodes", l0.a(pj.a), (String) null, rVar, rVar, r6));
         s mVar7 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         ew.Companion.getClass();
         x xVar3 = ew.a;
@@ -118,7 +118,7 @@ public abstract class h {
         s mVar21 = new aa.m("milestone", q0Var2, (String) null, rVar, rVar, r3);
         rj.Companion.getClass();
         s mVar22 = new aa.m("projectCards", l0.b(rj.a), (String) null, rVar, no.a.s(tb.n, new u0(25)), n2);
-        List n3 = d0.n("Issue");
+        List n3 = d0Shadow.n("Issue");
         List list8 = j60.b.a;
         s c7 = no.a.c(list8, "selections", "Issue", n3, list8);
         List r13 = x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "GistComment", "Issue", "IssueComment", "Project", "ProjectNext", "ProjectV2", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"});
@@ -126,8 +126,8 @@ public abstract class h {
         s c8 = no.a.c(list9, "selections", "Updatable", r13, list9);
         r b3 = l0.b(xVar5);
         t tVar3 = tb.o;
-        s mVar23 = new aa.m("taskListItemCount", b3, "completeTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0.n("COMPLETE"))), rVar);
-        s mVar24 = new aa.m("taskListItemCount", l0.b(xVar5), "incompleteTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0.n("INCOMPLETE"))), rVar);
+        s mVar23 = new aa.m("taskListItemCount", b3, "completeTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0Shadow.n("COMPLETE"))), rVar);
+        s mVar24 = new aa.m("taskListItemCount", l0.b(xVar5), "incompleteTaskListItemCount", rVar, no.a.s(tVar3, new u0(d0Shadow.n("INCOMPLETE"))), rVar);
         s mVar25 = new aa.m("viewerCanReopen", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         lc.Companion.getClass();
         a0 a0Var = lc.s;

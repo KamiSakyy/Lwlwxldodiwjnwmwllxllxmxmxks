@@ -15,12 +15,12 @@ public final class t {
     public Boolean k;
 
     public t(String str, String str2, long j, long j2, long j3, long j4, long j5, Long l, Long l2, Long l3, Boolean bool) {
-        c21.u.d(str);
-        c21.u.d(str2);
-        c21.u.b(j >= 0);
-        c21.u.b(j2 >= 0);
-        c21.u.b(j3 >= 0);
-        c21.u.b(j5 >= 0);
+        c21.uShadow.d(str);
+        c21.uShadow.d(str2);
+        c21.uShadow.b(j >= 0);
+        c21.uShadow.b(j2 >= 0);
+        c21.uShadow.b(j3 >= 0);
+        c21.uShadow.b(j5 >= 0);
         this.a = str;
         this.b = str2;
         this.c = j;

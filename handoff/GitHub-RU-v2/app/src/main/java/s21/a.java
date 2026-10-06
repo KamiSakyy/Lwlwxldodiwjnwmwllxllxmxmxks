@@ -386,7 +386,7 @@ public final class a implements b, u41.a, t41.a, g, f, d, e, v7.b {
                 this.s = new w21.o();
                 break;
             case 26:
-                this.s = sy.o.d(Looper.getMainLooper());
+                this.s = sy.oShadow.d(Looper.getMainLooper());
                 break;
             default:
                 this.s = new LinkedHashSet();

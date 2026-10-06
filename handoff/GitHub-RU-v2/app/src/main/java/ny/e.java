@@ -13,7 +13,7 @@ import m10.eh;
 import m10.fg0;
 import m10.kf0;
 import m10.vp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -24,7 +24,7 @@ public abstract class e {
     static {
         ah.Companion.getClass();
         r b = l0.b(ah.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar = eh.a;
@@ -32,11 +32,11 @@ public abstract class e {
         fg0.Companion.getClass();
         q0 q0Var = fg0.c;
         k.g(q0Var, "type");
-        List n = d0.n(new m("list", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("list", q0Var, (String) null, rVar, rVar, r));
         kf0.Companion.getClass();
         q0 q0Var2 = kf0.a;
         k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = d0.n(new m("updateUserList", q0Var2, (String) null, rVar, no.a.s(vp.x1, new u0(new t("input"))), n));
+        a = d0Shadow.n(new m("updateUserList", q0Var2, (String) null, rVar, no.a.s(vp.x1, new u0(new t("input"))), n));
     }
 }

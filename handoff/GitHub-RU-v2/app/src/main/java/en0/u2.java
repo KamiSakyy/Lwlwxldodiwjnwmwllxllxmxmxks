@@ -17,14 +17,14 @@ public abstract class u2 {
     static {
         lb.Companion.getClass();
         aa.r b = v8.l0.b(lb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar = tb.a;
         k71.k.g(xVar, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Organization");
+        List n = sy.d0Shadow.n("Organization");
         List list = di0.c.a;
         aa.s c = no.a.c(list, "selections", "Organization", n, list);
         pb.Companion.getClass();
@@ -41,6 +41,6 @@ public abstract class u2 {
         aa.q0 q0Var = s00.P;
         k71.k.g(q0Var, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("user", q0Var, (String) null, rVar, no.a.s(rn.y, new aa.u0(new aa.t("login"))), r4));
+        a = sy.d0Shadow.n(new aa.m("user", q0Var, (String) null, rVar, no.a.s(rn.y, new aa.u0(new aa.t("login"))), r4));
     }
 }

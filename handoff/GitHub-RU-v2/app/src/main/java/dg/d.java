@@ -58,7 +58,7 @@ public final class d {
             e1Var4 = e1Var2;
             int i6 = (i3 & 14) | 100663728;
             int i7 = i3 << 12;
-            xg.c.b(rVar3, i.d(-1592915245, new f() { // from class: com.github.rudroid.settings.copilot.paywall.ui.x
+            xg.cShadow.b(rVar3, i.d(-1592915245, new f() { // from class: com.github.rudroid.settings.copilot.paywall.ui.x
                 public final Object f(Object obj, Object obj2, Object obj3) {
                     switch (i5) {
                         case 0:

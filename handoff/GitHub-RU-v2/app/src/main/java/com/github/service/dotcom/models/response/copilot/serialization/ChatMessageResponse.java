@@ -9,7 +9,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -60,7 +60,7 @@ public final class ChatMessageResponse {
             this.d = hVar;
         }
         int i2 = i & 16;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         if (i2 == 0) {
             this.e = rVar;
         } else {

@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class l extends b0 {
+final class l extends b0Shadow {
     public l() {
         super("AfterBody", 18);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         ca1.j n = bVar.n("html");
         boolean a = b0.a(s0Var);
         x xVar = b0.x;

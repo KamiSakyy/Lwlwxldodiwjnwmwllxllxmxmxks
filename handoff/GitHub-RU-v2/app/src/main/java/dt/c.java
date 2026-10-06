@@ -28,7 +28,7 @@ import m10.x1;
 import m10.ya0;
 import m10.yi;
 import m10.z1;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -40,8 +40,8 @@ public abstract class c {
         ch.Companion.getClass();
         x xVar = ch.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         ah.Companion.getClass();
         x xVar2 = ah.a;
         m mVar = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -68,9 +68,9 @@ public abstract class c {
         m mVar8 = new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar);
         x1.Companion.getClass();
         List r5 = l.r(new m[]{mVar8, new m("nodes", l0.a(x1.a), (String) null, rVar, rVar, r4)});
-        List n2 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
         s mVar9 = new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("IssueType");
+        List n3 = d0Shadow.n("IssueType");
         List list2 = ht.a.a;
         List r6 = l.r(new s[]{mVar9, no.a.c(list2, "selections", "IssueType", n3, list2), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r7 = l.r(new m[]{new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
@@ -110,13 +110,13 @@ public abstract class c {
         q0 q0Var2 = gj.a;
         k.g(q0Var2, "type");
         s mVar25 = new m("issueType", q0Var2, (String) null, rVar, rVar, r6);
-        List n4 = d0.n("Issue");
+        List n4 = d0Shadow.n("Issue");
         List list4 = t.a;
         s c2 = no.a.c(list4, "selections", "Issue", n4, list4);
         q0 q0Var3 = wh.B;
         k.g(q0Var3, "type");
         s mVar26 = new m("parent", q0Var3, (String) null, rVar, rVar, r7);
-        List n5 = d0.n("Issue");
+        List n5 = d0Shadow.n("Issue");
         List list5 = a.a;
         a = l.r(new s[]{mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, c, mVar18, mVar19, mVar20, mVar21, mVar22, mVar23, mVar24, mVar25, c2, mVar26, no.a.c(list5, "selections", "Issue", n5, list5)});
     }

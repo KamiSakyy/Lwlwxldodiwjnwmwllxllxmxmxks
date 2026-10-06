@@ -35,6 +35,6 @@ public final class h0 implements d0 {
 
     @Override // k81.d0
     public final KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

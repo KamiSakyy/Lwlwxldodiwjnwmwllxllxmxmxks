@@ -3,7 +3,7 @@ package gb0;
 import hc0.fm;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class m implements aa.a {
@@ -42,7 +42,7 @@ public abstract class m implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -129,7 +129,7 @@ public abstract class m implements aa.a {
         fVar.z0("url");
         bVar.b(fVar, wVar, nVar.b);
         fVar.z0("isDraft");
-        f4.C(nVar.c, aa.c.f, fVar, wVar, "number");
+        f4Shadow.C(nVar.c, aa.c.f, fVar, wVar, "number");
         fVar.z(nVar.d);
         fVar.z0("pullRequestState");
         fVar.I(nVar.e.r);

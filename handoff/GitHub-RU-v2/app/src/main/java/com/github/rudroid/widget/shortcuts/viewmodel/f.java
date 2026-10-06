@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.concurrent.CancellationException;
 import oa.m;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -52,7 +52,7 @@ public final class f extends androidx.lifecycle.a {
             aVar2 = null;
         }
         this.x = aVar2;
-        y1 c = n1.c(new b(aVar2, null, this.w, null, g1.a.c(g1.Companion), 0.0f));
+        y1 c = n1Shadow.c(new b(aVar2, null, this.w, null, g1.a.c(g1.Companion), 0.0f));
         this.y = c;
         this.z = c;
         if (aVar2 != null) {

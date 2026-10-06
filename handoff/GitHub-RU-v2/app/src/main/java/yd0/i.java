@@ -1,7 +1,7 @@
 package yd0;
 
 import aa.h0;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements h0 {
@@ -39,6 +39,6 @@ public final class i implements h0 {
         sb.append(", assignees=");
         sb.append(this.b);
         sb.append(", nodeIdFragment=");
-        return f4.q(sb, this.c, ")");
+        return f4Shadow.q(sb, this.c, ")");
     }
 }

@@ -7,7 +7,7 @@ import u10.w80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tu implements aaShadow.a {
     public static final tu a = new tu();
-    public static final List b = sy.d0.n("viewer");
+    public static final List b = sy.d0Shadow.n("viewer");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

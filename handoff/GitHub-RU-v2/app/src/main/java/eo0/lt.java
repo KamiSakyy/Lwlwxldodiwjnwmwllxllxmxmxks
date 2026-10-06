@@ -9,7 +9,7 @@ import jn0.m60;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lt implements aaShadow.a {
     public static final lt a = new lt();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         j60 j60Var;

@@ -5,9 +5,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -46,7 +46,7 @@ public final class EditIssueOrPullTitleRoute implements Parcelable {
 
     public /* synthetic */ EditIssueOrPullTitleRoute(int i, String str, String str2, boolean z10) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, EditIssueOrPullTitleRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, EditIssueOrPullTitleRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f15766r = str;
@@ -75,7 +75,7 @@ public final class EditIssueOrPullTitleRoute implements Parcelable {
     }
 
     public final String toString() {
-        return f4.s(s0.o("EditIssueOrPullTitleRoute(id=", this.f15766r, ", title=", this.f15767s, ", isPullRequest="), this.f15768t, ")");
+        return f4Shadow.s(s0.o("EditIssueOrPullTitleRoute(id=", this.f15766r, ", title=", this.f15767s, ", isPullRequest="), this.f15768t, ")");
     }
 
     @Override // android.os.Parcelable

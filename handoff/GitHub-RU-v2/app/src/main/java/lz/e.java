@@ -19,12 +19,12 @@ public final class e {
     public boolean j;
     public boolean k;
     public String l;
-    public a0 m;
+    public a0Shadow m;
     public jq n;
     public b0 o;
     public String p;
 
-    public e(String str, String str2, String str3, boolean z, int i, ZonedDateTime zonedDateTime, uq uqVar, n0 n0Var, String str4, boolean z2, boolean z3, String str5, a0 a0Var, jq jqVar, b0 b0Var, String str6) {
+    public e(String str, String str2, String str3, boolean z, int i, ZonedDateTime zonedDateTime, uq uqVar, n0 n0Var, String str4, boolean z2, boolean z3, String str5, a0Shadow a0Var, jq jqVar, b0 b0Var, String str6) {
         this.a = str;
         this.b = str2;
         this.c = str3;
@@ -60,7 +60,7 @@ public final class e {
         int hashCode2 = (hashCode + (n0Var == null ? 0 : n0Var.hashCode())) * 31;
         String str = this.i;
         int i = h1.i(x.i.e(x.i.e((hashCode2 + (str == null ? 0 : str.hashCode())) * 31, 31, this.j), 31, this.k), this.l, 31);
-        a0 a0Var = this.m;
+        a0Shadow a0Var = this.m;
         int hashCode3 = (i + (a0Var == null ? 0 : a0Var.hashCode())) * 31;
         jq jqVar = this.n;
         int hashCode4 = (hashCode3 + (jqVar == null ? 0 : jqVar.hashCode())) * 31;

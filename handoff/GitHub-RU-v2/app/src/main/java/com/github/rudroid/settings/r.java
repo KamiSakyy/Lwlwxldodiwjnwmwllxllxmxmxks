@@ -37,7 +37,7 @@ public final /* synthetic */ class r implements h.b, e7.k, androidx.fragment.app
             settingsFragment.F4().P();
         }
         t2 F4 = settingsFragment.F4();
-        v71.b0.z(F4.y, (a71.h) null, (v71.a0) null, new a3(F4, null), 3);
+        v71.b0.z(F4.y, (a71.h) null, (v71.a0Shadow) null, new a3(F4, null), 3);
     }
 
     public void e(String str, Bundle bundle) {

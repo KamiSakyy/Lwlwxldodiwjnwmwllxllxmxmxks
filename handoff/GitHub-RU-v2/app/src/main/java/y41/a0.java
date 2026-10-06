@@ -1,7 +1,7 @@
 package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a0 {
+public final class a0Shadow {
     public String a;
     public String b;
     public int c;

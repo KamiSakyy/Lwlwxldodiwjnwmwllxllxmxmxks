@@ -13,13 +13,13 @@ import com.google.android.gms.measurement.internal.x3;
 import d1.i1;
 import ga.n;
 import ga.s;
-import in.r;
+import in.rShadow;
 import java.util.Set;
 import k71.k;
 import t00.f8;
 import v71.l0;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -50,13 +50,13 @@ public final class i implements a, b, j {
     public final y71.i d(n0 n0Var) {
         aa.d dVar = new aa.d(n0Var);
         dVar.c = dVar.c.d(new s());
-        return r.i(n1.g(n1.y(new y71.e(new yl.b(this.a, dVar.b(), (a71.c) null, 8), a71.i.r, -2, x71.a.r), l0.b), Integer.MAX_VALUE), n0Var.name());
+        return rShadow.i(n1Shadow.g(n1Shadow.y(new y71.e(new yl.b(this.a, dVar.b(), (a71.c) null, 8), a71.i.r, -2, x71.a.r), l0.b), Integer.MAX_VALUE), n0Var.name());
     }
 
     @Override // com.github.service.wrapper.b
     public final y71.i e(n0 n0Var, i0 i0Var, String str, j71.c cVar) {
         k.g(str, "id");
-        return n1.I(new a61.l0(b.n(this, i0Var, str), cVar, 1), new m((a71.c) null, this, n0Var, 2));
+        return n1Shadow.I(new a61.l0(b.n(this, i0Var, str), cVar, 1), new m((a71.c) null, this, n0Var, 2));
     }
 
     @Override // com.github.service.wrapper.b
@@ -80,16 +80,16 @@ public final class i implements a, b, j {
         k.g(eVar, "addFailureMetaData");
         z9.a aVar = new z9.a(this.a, w0Var);
         aVar.c(new ga.f());
-        Set set4 = r.a;
-        go0.n i = r.i(((z9.a) n.c(aVar, hVar)).a(), w0Var.name());
+        Set set4 = rShadow.a;
+        go0.n i = rShadow.i(((z9.a) n.c(aVar, hVar)).a(), w0Var.name());
         if (this.c) {
             set3 = set;
-            d = r.c(i, !z, set3, set2, cVar, eVar, this);
+            d = rShadow.c(i, !z, set3, set2, cVar, eVar, this);
         } else {
             set3 = set;
-            d = r.d(i, !z, set3, set2, cVar, eVar);
+            d = rShadow.d(i, !z, set3, set2, cVar, eVar);
         }
-        return r.f(new y(d, new e(set3, this, w0Var, null, 0), 6));
+        return rShadow.f(new y(d, new e(set3, this, w0Var, null, 0), 6));
     }
 
     /* JADX WARN: Can't wrap try/catch for region: R(10:0|1|(2:3|(7:5|6|7|(1:(1:10)(2:16|17))(3:18|19|(1:21))|11|12|13))|23|6|7|(0)(0)|11|12|13) */
@@ -153,8 +153,8 @@ public final class i implements a, b, j {
         k.g(eVar, "addFailureMetaData");
         z9.a aVar = new z9.a(this.a, w0Var);
         aVar.c(new ga.f());
-        go0.n i = r.i(new y(new f8(new a0.h((z9.a) n.c(aVar, hVar), (a71.c) null, 21)), new androidx.lifecycle.n(w0Var, (a71.c) null, 7), 6), w0Var.name());
-        return r.f(new y(this.c ? r.c(i, !z, set, set2, cVar, eVar, this) : r.d(i, !z, set, set2, cVar, eVar), new e(set, this, w0Var, null, 1), 6));
+        go0.n i = rShadow.i(new y(new f8(new a0.h((z9.a) n.c(aVar, hVar), (a71.c) null, 21)), new androidx.lifecycle.n(w0Var, (a71.c) null, 7), 6), w0Var.name());
+        return rShadow.f(new y(this.c ? rShadow.c(i, !z, set, set2, cVar, eVar, this) : rShadow.d(i, !z, set, set2, cVar, eVar), new e(set, this, w0Var, null, 1), 6));
     }
 
     @Override // com.github.service.wrapper.b
@@ -172,7 +172,7 @@ public final class i implements a, b, j {
             dVar.c = dVar.c.d(new ga.r(m0Var));
         }
         dVar.c = dVar.c.d(new s());
-        return r.i(n1.g(n1.y(new y71.e(new yl.b(this.a, dVar.b(), (a71.c) null, 8), a71.i.r, -2, x71.a.r), l0.b), Integer.MAX_VALUE), n0Var.name());
+        return rShadow.i(n1Shadow.g(n1Shadow.y(new y71.e(new yl.b(this.a, dVar.b(), (a71.c) null, 8), a71.i.r, -2, x71.a.r), l0.b), Integer.MAX_VALUE), n0Var.name());
     }
 
     @Override // com.github.service.wrapper.a

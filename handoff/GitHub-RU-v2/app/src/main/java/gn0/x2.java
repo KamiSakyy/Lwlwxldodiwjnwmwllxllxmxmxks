@@ -13,8 +13,8 @@ public abstract class x2 {
     public static final aa.q0 f;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        f = new aa.q0("CheckSuite", n, sy.d0.n(yh.a));
+        f = new aa.q0("CheckSuite", n, sy.d0Shadow.n(yh.a));
     }
 }

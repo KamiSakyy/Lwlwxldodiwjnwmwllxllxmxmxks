@@ -2,7 +2,7 @@ package com.github.rudroid.actions.navigation;
 
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sa.d;
 import x.i;
@@ -26,7 +26,7 @@ public final class ChecksOverviewEntryPointRoute implements d {
 
     public /* synthetic */ ChecksOverviewEntryPointRoute(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, ChecksOverviewEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, ChecksOverviewEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f5113r = str;

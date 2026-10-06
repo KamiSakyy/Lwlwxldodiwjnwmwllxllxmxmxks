@@ -41,7 +41,7 @@ import u10.z70;
 import ub.a;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
+public final class y9Shadow implements z01.k1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public com.github.service.wrapper.bShadow s;
     public v71.v t;
@@ -125,7 +125,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                         i = w9Var.y;
                         if (i != 0) {
                             sy.y.j(obj);
-                            Object obj3 = x61.r.r;
+                            Object obj3 = x61.rShadow.r;
                             if (aVar == null) {
                                 kVar = new w61.k(kw.x, obj3);
                             } else if (aVar instanceof a.e) {
@@ -187,7 +187,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar = w9Var.u;
                             sy.y.j(obj);
                         }
-                        return y71.n1.y(new d5(new y00.l(in.r.h(bVar.k(ca0Var, (aa.m0) obj)), 10), 29), this.t);
+                        return y71.n1Shadow.y(new d5(new y00.l(in.rShadow.h(bVar.k(ca0Var, (aa.m0) obj)), 10), 29), this.t);
                     }
                 }
                 w9Var = new w9(this, (c71.c) cVar);
@@ -196,7 +196,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i = w9Var.y;
                 if (i != 0) {
                 }
-                return y71.n1.y(new d5(new y00.l(in.r.h(bVar.k(ca0Var, (aa.m0) obj4)), 10), 29), this.t);
+                return y71.n1Shadow.y(new d5(new y00.l(in.rShadow.h(bVar.k(ca0Var, (aa.m0) obj4)), 10), 29), this.t);
             case 1:
                 if (cVar instanceof t00.r9) {
                     r9Var = (t00.r9) cVar;
@@ -208,7 +208,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                         i2 = ((t00.r9) r9Var).y;
                         if (i2 != 0) {
                             sy.y.j(obj5);
-                            Object obj7 = x61.r.r;
+                            Object obj7 = x61.rShadow.r;
                             if (aVar == null) {
                                 kVar2 = new w61.k(ya0.x, obj7);
                             } else if (aVar instanceof a.e) {
@@ -270,7 +270,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar2 = ((t00.r9) r9Var).u;
                             sy.y.j(obj5);
                         }
-                        return y71.n1.y(new t00.q6(new y00.l(in.r.h(bVar2.k(qg0Var, (aa.m0) obj5)), 10), 15), this.t);
+                        return y71.n1Shadow.y(new t00.q6(new y00.l(in.rShadow.h(bVar2.k(qg0Var, (aa.m0) obj5)), 10), 15), this.t);
                     }
                 }
                 r9Var = new t00.r9(this, (c71.c) cVar);
@@ -279,7 +279,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i2 = ((t00.r9) r9Var).y;
                 if (i2 != 0) {
                 }
-                return y71.n1.y(new t00.q6(new y00.l(in.r.h(bVar2.k(qg0Var, (aa.m0) obj52)), 10), 15), this.t);
+                return y71.n1Shadow.y(new t00.q6(new y00.l(in.rShadow.h(bVar2.k(qg0Var, (aa.m0) obj52)), 10), 15), this.t);
             case 2:
                 if (cVar instanceof vb0.l7) {
                     l7Var = (vb0.l7) cVar;
@@ -291,7 +291,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                         i3 = l7Var.y;
                         if (i3 != 0) {
                             sy.y.j(obj8);
-                            Object obj10 = x61.r.r;
+                            Object obj10 = x61.rShadow.r;
                             if (aVar == null) {
                                 kVar3 = new w61.k(ev.x, obj10);
                             } else if (aVar instanceof a.e) {
@@ -353,7 +353,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar3 = l7Var.u;
                             sy.y.j(obj8);
                         }
-                        return y71.n1.y(new vb0.t3(new y00.l(in.r.h(bVar3.k(c80Var, (aa.m0) obj8)), 10), 26), this.t);
+                        return y71.n1Shadow.y(new vb0.t3(new y00.l(in.rShadow.h(bVar3.k(c80Var, (aa.m0) obj8)), 10), 26), this.t);
                     }
                 }
                 l7Var = new vb0.l7(this, (c71.c) cVar);
@@ -362,7 +362,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i3 = l7Var.y;
                 if (i3 != 0) {
                 }
-                return y71.n1.y(new vb0.t3(new y00.l(in.r.h(bVar3.k(c80Var, (aa.m0) obj82)), 10), 26), this.t);
+                return y71.n1Shadow.y(new vb0.t3(new y00.l(in.rShadow.h(bVar3.k(c80Var, (aa.m0) obj82)), 10), 26), this.t);
             default:
                 if (cVar instanceof wy0.t8) {
                     t8Var = (wy0.t8) cVar;
@@ -374,7 +374,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                         i4 = t8Var.y;
                         if (i4 != 0) {
                             sy.y.j(obj11);
-                            Object obj13 = x61.r.r;
+                            Object obj13 = x61.rShadow.r;
                             if (aVar == null) {
                                 kVar4 = new w61.k(f40.x, obj13);
                             } else if (aVar instanceof a.e) {
@@ -436,7 +436,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar4 = t8Var.u;
                             sy.y.j(obj11);
                         }
-                        return y71.n1.y(new wy0.s6(new y00.l(in.r.h(bVar4.k(ce0Var, (aa.m0) obj11)), 10), 9), this.t);
+                        return y71.n1Shadow.y(new wy0.s6(new y00.l(in.rShadow.h(bVar4.k(ce0Var, (aa.m0) obj11)), 10), 9), this.t);
                     }
                 }
                 t8Var = new wy0.t8(this, (c71.c) cVar);
@@ -445,7 +445,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i4 = t8Var.y;
                 if (i4 != 0) {
                 }
-                return y71.n1.y(new wy0.s6(new y00.l(in.r.h(bVar4.k(ce0Var, (aa.m0) obj112)), 10), 9), this.t);
+                return y71.n1Shadow.y(new wy0.s6(new y00.l(in.rShadow.h(bVar4.k(ce0Var, (aa.m0) obj112)), 10), 9), this.t);
         }
     }
 
@@ -455,19 +455,19 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new j50(str, str2, sy.r.x(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new j50(str, str2, sy.rShadow.x(subscriptionState))))), this.t);
             case 1:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new ub0(str, str2, com.google.android.gms.internal.measurement.i4.r0(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new ub0(str, str2, com.google.android.gms.internal.measurement.i4.r0(subscriptionState))))), this.t);
             case 2:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new l30(str, str2, a.a.w(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new l30(str, str2, a.a.w(subscriptionState))))), this.t);
             default:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new g90(str, str2, i21.a.G(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new g90(str, str2, i21.a.G(subscriptionState))))), this.t);
         }
     }
 
@@ -512,8 +512,8 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                         i = x9Var.y;
                         if (i != 0) {
                             sy.y.j(obj);
-                            ca0 ca0Var2 = new ca0(str, sy.r.x(subscriptionState), aa.t0.d);
-                            kw x = sy.r.x(subscriptionState);
+                            ca0 ca0Var2 = new ca0(str, sy.rShadow.x(subscriptionState), aa.t0.d);
+                            kw x = sy.rShadow.x(subscriptionState);
                             com.github.service.wrapper.bShadow bVar5 = this.s;
                             x9Var.u = bVar5;
                             x9Var.v = ca0Var2;
@@ -533,7 +533,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar = x9Var.u;
                             sy.y.j(obj);
                         }
-                        return y71.n1.y(new v9(new y00.l(in.r.h(bVar.k(ca0Var, (aa.m0) obj)), 10), 0), this.t);
+                        return y71.n1Shadow.y(new v9(new y00.l(in.rShadow.h(bVar.k(ca0Var, (aa.m0) obj)), 10), 0), this.t);
                     }
                 }
                 x9Var = new x9(this, cVar);
@@ -542,7 +542,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i = x9Var.y;
                 if (i != 0) {
                 }
-                return y71.n1.y(new v9(new y00.l(in.r.h(bVar.k(ca0Var, (aa.m0) obj3)), 10), 0), this.t);
+                return y71.n1Shadow.y(new v9(new y00.l(in.rShadow.h(bVar.k(ca0Var, (aa.m0) obj3)), 10), 0), this.t);
             case 1:
                 if (cVar instanceof t00.s9) {
                     s9Var = (t00.s9) cVar;
@@ -575,7 +575,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar2 = ((t00.s9) s9Var).u;
                             sy.y.j(obj4);
                         }
-                        return y71.n1.y(new t00.q6(new y00.l(in.r.h(bVar2.k(qg0Var, (aa.m0) obj4)), 10), 16), this.t);
+                        return y71.n1Shadow.y(new t00.q6(new y00.l(in.rShadow.h(bVar2.k(qg0Var, (aa.m0) obj4)), 10), 16), this.t);
                     }
                 }
                 s9Var = new t00.s9(this, cVar);
@@ -584,10 +584,10 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i2 = ((t00.s9) s9Var).y;
                 if (i2 != 0) {
                 }
-                return y71.n1.y(new t00.q6(new y00.l(in.r.h(bVar2.k(qg0Var, (aa.m0) obj42)), 10), 16), this.t);
+                return y71.n1Shadow.y(new t00.q6(new y00.l(in.rShadow.h(bVar2.k(qg0Var, (aa.m0) obj42)), 10), 16), this.t);
             case 2:
-                if (cVar instanceof vb0.m7) {
-                    m7Var = (vb0.m7) cVar;
+                if (cVar instanceof vb0.m7Shadow) {
+                    m7Var = (vb0.m7Shadow) cVar;
                     int i7 = m7Var.y;
                     if ((i7 & Integer.MIN_VALUE) != 0) {
                         m7Var.y = i7 - Integer.MIN_VALUE;
@@ -617,16 +617,16 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar3 = m7Var.u;
                             sy.y.j(obj6);
                         }
-                        return y71.n1.y(new vb0.t3(new y00.l(in.r.h(bVar3.k(c80Var, (aa.m0) obj6)), 10), 27), this.t);
+                        return y71.n1Shadow.y(new vb0.t3(new y00.l(in.rShadow.h(bVar3.k(c80Var, (aa.m0) obj6)), 10), 27), this.t);
                     }
                 }
-                m7Var = new vb0.m7(this, cVar);
+                m7Var = new vb0.m7Shadow(this, cVar);
                 Object obj62 = m7Var.w;
                 Object obj72 = b71.a.r;
                 i3 = m7Var.y;
                 if (i3 != 0) {
                 }
-                return y71.n1.y(new vb0.t3(new y00.l(in.r.h(bVar3.k(c80Var, (aa.m0) obj62)), 10), 27), this.t);
+                return y71.n1Shadow.y(new vb0.t3(new y00.l(in.rShadow.h(bVar3.k(c80Var, (aa.m0) obj62)), 10), 27), this.t);
             default:
                 if (cVar instanceof wy0.u8) {
                     u8Var = (wy0.u8) cVar;
@@ -659,7 +659,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             bVar4 = u8Var.u;
                             sy.y.j(obj8);
                         }
-                        return y71.n1.y(new wy0.s6(new y00.l(in.r.h(bVar4.k(ce0Var, (aa.m0) obj8)), 10), 10), this.t);
+                        return y71.n1Shadow.y(new wy0.s6(new y00.l(in.rShadow.h(bVar4.k(ce0Var, (aa.m0) obj8)), 10), 10), this.t);
                     }
                 }
                 u8Var = new wy0.u8(this, cVar);
@@ -668,7 +668,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 i4 = u8Var.y;
                 if (i4 != 0) {
                 }
-                return y71.n1.y(new wy0.s6(new y00.l(in.r.h(bVar4.k(ce0Var, (aa.m0) obj82)), 10), 10), this.t);
+                return y71.n1Shadow.y(new wy0.s6(new y00.l(in.rShadow.h(bVar4.k(ce0Var, (aa.m0) obj82)), 10), 10), this.t);
         }
     }
 
@@ -678,19 +678,19 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new k20(str, str2, sy.r.x(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new k20(str, str2, sy.rShadow.x(subscriptionState))))), this.t);
             case 1:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new m80(str, str2, com.google.android.gms.internal.measurement.i4.r0(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new m80(str, str2, com.google.android.gms.internal.measurement.i4.r0(subscriptionState))))), this.t);
             case 2:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new m00(str, str2, a.a.w(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new m00(str, str2, a.a.w(subscriptionState))))), this.t);
             default:
                 k71.k.g(str2, "notificationId");
                 k71.k.g(subscriptionState, "state");
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new d60(str, str2, i21.a.G(subscriptionState))))), this.t);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new d60(str, str2, i21.a.G(subscriptionState))))), this.t);
         }
     }
 

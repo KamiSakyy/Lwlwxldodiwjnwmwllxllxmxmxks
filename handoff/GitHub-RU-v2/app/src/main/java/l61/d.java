@@ -11,7 +11,7 @@ import java.io.Closeable;
 import java.util.Arrays;
 import k.i;
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import m7.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -253,7 +253,7 @@ public final class d implements o1 {
                 v61.a aVar = (v61.a) d.get(cls.getName());
                 j71.c cVar2 = (j71.c) cVar.a(f.d);
                 ((e) k41.b.v(e.class, uVar)).getClass();
-                Object obj = com.google.common.collect.m.x.get(cls);
+                Object obj = com.google.common.collect.m.xShadow.get(cls);
                 if (obj == null) {
                     if (cVar2 != null) {
                         throw new IllegalStateException("Found creation callback but class " + cls.getName() + " does not have an assisted factory specified in @HiltViewModel.");
@@ -297,7 +297,7 @@ public final class d implements o1 {
             default:
                 k.g(cls, "modelClass");
                 k.g(cVar, "extras");
-                k71.e a = x.a(cls);
+                k71.e a = xShadow.a(cls);
                 t6.e[] eVarArr = (t6.e[]) this.b;
                 t6.e[] eVarArr2 = (t6.e[]) Arrays.copyOf(eVarArr, eVarArr.length);
                 k.g(eVarArr2, "initializers");

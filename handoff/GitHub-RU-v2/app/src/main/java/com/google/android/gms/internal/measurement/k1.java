@@ -47,7 +47,7 @@ public final class k1 {
     }
 
     public static k1 c(Context context, Bundle bundle) {
-        c21.u.g(context);
+        c21.uShadow.g(context);
         if (g == null) {
             synchronized (k1.class) {
                 try {

@@ -6,7 +6,7 @@ import u10.d40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mr implements aaShadow.a {
     public static final mr a = new mr();
-    public static final List b = sy.d0.o("id", "title", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "title", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

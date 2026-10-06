@@ -3,7 +3,7 @@ package sr;
 import aa.w;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -83,7 +83,7 @@ public abstract class l implements aa.a {
         fVar.z0("actor");
         aa.c.b(aa.c.c(k.a, true)).b(fVar, wVar, jVar.c);
         fVar.z0("isCrossRepository");
-        f4.C(jVar.d, aa.c.f, fVar, wVar, "source");
+        f4Shadow.C(jVar.d, aa.c.f, fVar, wVar, "source");
         aa.c.c(t.a, true).b(fVar, wVar, jVar.e);
         fVar.z0("createdAt");
         sa.Companion.getClass();

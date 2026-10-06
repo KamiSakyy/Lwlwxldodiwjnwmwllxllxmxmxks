@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = sy.d0.o(new String[]{"id", "viewerIsFollowing", "isFollowingViewer", "followers", "following", "viewerCanBlock", "viewerCanUnblock", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "viewerIsFollowing", "isFollowingViewer", "followers", "following", "viewerCanBlock", "viewerCanUnblock", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002f, code lost:
     
@@ -193,14 +193,14 @@ public final class f implements aa.a {
         bVar.b(fVar, wVar, cVar.a);
         fVar.z0("viewerIsFollowing");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(cVar.b, bVar2, fVar, wVar, "isFollowingViewer");
-        jo.f4.C(cVar.c, bVar2, fVar, wVar, "followers");
+        jo.f4Shadow.C(cVar.b, bVar2, fVar, wVar, "isFollowingViewer");
+        jo.f4Shadow.C(cVar.c, bVar2, fVar, wVar, "followers");
         aa.c.c(g.a, false).b(fVar, wVar, cVar.d);
         fVar.z0("following");
         aa.c.c(h.a, false).b(fVar, wVar, cVar.e);
         fVar.z0("viewerCanBlock");
-        jo.f4.C(cVar.f, bVar2, fVar, wVar, "viewerCanUnblock");
-        jo.f4.C(cVar.g, bVar2, fVar, wVar, "__typename");
+        jo.f4Shadow.C(cVar.f, bVar2, fVar, wVar, "viewerCanUnblock");
+        jo.f4Shadow.C(cVar.g, bVar2, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, cVar.h);
     }
 }

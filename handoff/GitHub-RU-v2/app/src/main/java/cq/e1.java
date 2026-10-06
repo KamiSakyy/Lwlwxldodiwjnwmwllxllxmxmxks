@@ -40,7 +40,7 @@ public abstract class e1 implements aa.a {
                     break;
                 }
                 bool = bool2;
-                c1Var = (c1) aa.c.c(f1.a, true).a(eVar, wVar);
+                c1Var = (c1) aa.c.c(f1Shadow.a, true).a(eVar, wVar);
             }
             bool2 = bool;
         }
@@ -84,11 +84,11 @@ public abstract class e1 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, d1Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(d1Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(d1Var.c, aa.c.f, fVar, wVar, "identifier");
         bVar.b(fVar, wVar, d1Var.d);
         fVar.z0("reason");
         bVar.b(fVar, wVar, d1Var.e);
         fVar.z0("followee");
-        aa.c.c(f1.a, true).b(fVar, wVar, d1Var.f);
+        aa.c.c(f1Shadow.a, true).b(fVar, wVar, d1Var.f);
     }
 }

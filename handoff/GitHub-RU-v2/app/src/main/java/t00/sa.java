@@ -27,15 +27,15 @@ public final class sa implements z01.s1, mi0, yf0 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                this.v = new jy.d(jVar, bVar, vVar, new rm0.s(22), new ya(3), s01.o.r, new ya(4), new rm0.s(23), new rm0.s(24), new rm0.s(25), new rm0.s(26), null, null, 126976);
+                this.v = new jy.d(jVar, bVar, vVar, new rm0.s(22), new ya(3), s01.oShadow.r, new ya(4), new rm0.s(23), new rm0.s(24), new rm0.s(25), new rm0.s(26), null, null, 126976);
                 break;
             default:
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                this.v = new jy.d(jVar, bVar, vVar, new np.h(7), new n0.x(15), s01.o.r, new n0.x(16), new np.h(8), new np.h(9), new np.h(10), new np.h(11), null, null, 126976);
+                this.v = new jy.d(jVar, bVar, vVar, new np.h(7), new n0.x(15), s01.oShadow.r, new n0.x(16), new np.h(8), new np.h(9), new np.h(10), new np.h(11), null, null, 126976);
                 ga.h hVar = ga.h.r;
-                Set set = in.r.b;
+                Set set = in.rShadow.b;
                 k71.k.g(set, "partialNodeErrorTypes");
                 k71.k.g(set, "partialNodeErrorTypes");
                 break;
@@ -93,9 +93,9 @@ public final class sa implements z01.s1, mi0, yf0 {
     public final y71.i c() {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new h7(com.github.service.wrapper.a.o(this.t, new ox.d(), ga.h.r, false, (LinkedHashSet) null, (Set) null, 60), 17), this.u);
+                return y71.n1Shadow.y(new h7(com.github.service.wrapper.a.o(this.t, new ox.d(), ga.h.r, false, (LinkedHashSet) null, (Set) null, 60), 17), this.u);
             default:
-                return y71.n1.y(new wy0.d6(com.github.service.wrapper.a.o(this.t, new dw0.d(), ga.h.r, false, (LinkedHashSet) null, (Set) null, 60), 20), this.u);
+                return y71.n1Shadow.y(new wy0.d6(com.github.service.wrapper.a.o(this.t, new dw0.d(), ga.h.r, false, (LinkedHashSet) null, (Set) null, 60), 20), this.u);
         }
     }
 

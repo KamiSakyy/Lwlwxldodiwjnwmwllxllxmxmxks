@@ -1,7 +1,7 @@
 package com.github.rudroid.utilities.ui.emojipicker;
 
 import com.github.rudroid.y;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.z;
 
@@ -19,7 +19,7 @@ final class k implements j71.c {
 
     public final Object k(Object obj) {
         k71.k.g((y) obj, "it");
-        b0.z(this.r, (a71.h) null, (a0) null, new j(this.s, this.t, null), 3);
-        return w61.a0.a;
+        b0.z(this.r, (a71.h) null, (a0Shadow) null, new j(this.s, this.t, null), 3);
+        return w61.a0Shadow.a;
     }
 }

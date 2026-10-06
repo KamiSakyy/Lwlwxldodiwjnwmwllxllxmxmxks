@@ -7,7 +7,7 @@ public abstract class jr {
     public static final ir Companion = new ir();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
         aa.j0 j0Var = wk.a;
         eo.Companion.getClass();

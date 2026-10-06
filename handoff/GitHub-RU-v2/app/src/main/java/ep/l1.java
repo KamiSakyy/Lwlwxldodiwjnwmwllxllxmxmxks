@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 implements aaShadow.a {
     public static final l1 a = new l1();
-    public static final List b = sy.d0.n("applyMobileSuggestedChanges");
+    public static final List b = sy.d0Shadow.n("applyMobileSuggestedChanges");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

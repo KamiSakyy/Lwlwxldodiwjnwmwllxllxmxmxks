@@ -322,7 +322,7 @@ public final class l {
                         z = z172;
                     } else {
                         z = z172;
-                        arrayList = x61.r.r;
+                        arrayList = x61.rShadow.r;
                     }
                     boolean z192 = k2Var.i;
                     ArrayList arrayList52 = arrayList;

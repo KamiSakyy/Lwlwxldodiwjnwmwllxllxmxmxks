@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -24,7 +24,7 @@ public final class ChatMessageAnnotationsResponse {
     }
 
     public ChatMessageAnnotationsResponse() {
-        this.a = r.r;
+        this.a = rShadow.r;
     }
 
     public final boolean equals(Object obj) {
@@ -44,7 +44,7 @@ public final class ChatMessageAnnotationsResponse {
 
     public /* synthetic */ ChatMessageAnnotationsResponse(int i, List list) {
         if ((i & 1) == 0) {
-            this.a = r.r;
+            this.a = rShadow.r;
         } else {
             this.a = list;
         }

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fb implements aaShadow.a {
     public static final fb a = new fb();
-    public static final List b = sy.d0.o(new String[]{"repositoryCount", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"repositoryCount", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -18,7 +18,7 @@ public final class fb implements aaShadow.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

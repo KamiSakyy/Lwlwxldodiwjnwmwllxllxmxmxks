@@ -6,7 +6,7 @@ import com.github.rudroid.utilities.w0;
 import com.github.service.models.ApiFailure;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
-import rh.c;
+import rh.cShadow;
 import v71.q1;
 import y71.y1;
 
@@ -25,7 +25,7 @@ final class j<T> implements y71.j {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final Object a(a71.c cVar) {
+    public final Object a(a71.cShadow cVar) {
         i iVar;
         int i;
         y1 y1Var;
@@ -47,11 +47,11 @@ final class j<T> implements y71.j {
                         if (q1Var != null) {
                             q1Var.m((CancellationException) null);
                         }
-                        mVar.J = v71.b0.z(d1.k(mVar), (a71.h) null, (v71.a0) null, new y(mVar, S, null), 3);
+                        mVar.J = v71.b0.z(d1.k(mVar), (a71.h) null, (v71.a0Shadow) null, new y(mVar, S, null), 3);
                         return w61.a0.a;
                     }
                     y1 y1Var2 = mVar.I;
-                    com.github.rudroid.activities.util.c cVar2 = mVar.B;
+                    com.github.rudroid.activities.util.cShadow cVar2 = mVar.B;
                     iVar.f17297u = y1Var2;
                     rh.b bVar2 = rh.b.a;
                     iVar.f17298v = bVar2;
@@ -74,7 +74,7 @@ final class j<T> implements y71.j {
                 oa.j jVar = (oa.j) obj;
                 bVar.getClass();
                 k71.k.g(jVar, "user");
-                w0.q(y1Var, new c.b(new fl.b(fl.c.s, (String) null, (Integer) null, (Map) null, jVar, (ApiFailure) null, 104), 2131954933, false, true));
+                w0.q(y1Var, new cShadow.b(new fl.b(fl.cShadow.s, (String) null, (Integer) null, (Map) null, jVar, (ApiFailure) null, 104), 2131954933, false, true));
                 return w61.a0.a;
             }
         }
@@ -87,11 +87,11 @@ final class j<T> implements y71.j {
         oa.j jVar2 = (oa.j) obj2;
         bVar.getClass();
         k71.k.g(jVar2, "user");
-        w0.q(y1Var, new c.b(new fl.b(fl.c.s, (String) null, (Integer) null, (Map) null, jVar2, (ApiFailure) null, 104), 2131954933, false, true));
+        w0.q(y1Var, new cShadow.b(new fl.b(fl.cShadow.s, (String) null, (Integer) null, (Map) null, jVar2, (ApiFailure) null, 104), 2131954933, false, true));
         return w61.a0.a;
     }
 
-    public final /* bridge */ /* synthetic */ Object c(Object obj, a71.c cVar) {
+    public final /* bridge */ /* synthetic */ Object c(Object obj, a71.cShadow cVar) {
         return a(cVar);
     }
 

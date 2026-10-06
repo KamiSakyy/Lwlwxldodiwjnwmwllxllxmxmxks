@@ -4,7 +4,7 @@ import com.github.service.models.response.issueorpullrequest.CloseReason;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x implements z01.h0, yn.a {
+public final class xShadow implements z01.h0, yn.a {
     public final y71.i a(String str, String str2) {
         return x.i.q(str, "id", str2, "title");
     }

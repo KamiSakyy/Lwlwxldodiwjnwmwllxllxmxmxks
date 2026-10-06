@@ -41,7 +41,7 @@ final class n extends c71.j implements j71.f {
         if (obj2 != null) {
             List list3 = (List) fVar.b;
             if (list3 == null || (list = (List) this.f18065x.f18071a.s(list3, list2)) == null) {
-                list = x61.r.r;
+                list = x61.rShadow.r;
             }
             qVar = new q(list2, list);
         } else {

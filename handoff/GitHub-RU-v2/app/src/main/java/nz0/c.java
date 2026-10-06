@@ -11,8 +11,8 @@ import k71.k;
 import pz0.a8;
 import pz0.sk;
 import pz0.xd;
-import sy.d0;
-import x61.r;
+import sy.d0Shadow;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class c {
@@ -22,12 +22,12 @@ public abstract class c {
         xd.Companion.getClass();
         x xVar = xd.a;
         k.g(xVar, "type");
-        r rVar = r.r;
-        List n = d0.n(new m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        rShadow rVar = rShadow.r;
+        List n = d0Shadow.n(new m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         a8.Companion.getClass();
         q0 q0Var = a8.a;
         k.g(q0Var, "type");
         sk.Companion.getClass();
-        a = d0.n(new m("deleteMobileDevicePublicKey", q0Var, (String) null, rVar, no.a.s(sk.O, new u0(s0.p("type", new t("type")))), n));
+        a = d0Shadow.n(new m("deleteMobileDevicePublicKey", q0Var, (String) null, rVar, no.a.s(sk.O, new u0(s0.p("type", new t("type")))), n));
     }
 }

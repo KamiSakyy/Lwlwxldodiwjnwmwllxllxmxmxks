@@ -5,7 +5,7 @@ public abstract class xp {
     public static final wp Companion = new wp();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("ProjectV2ItemFieldMilestoneValue", rVar, rVar);
     }
 }

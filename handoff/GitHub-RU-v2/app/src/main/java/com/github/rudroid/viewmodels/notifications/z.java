@@ -26,9 +26,9 @@ final class z<T> implements y71.j {
         int i = 0;
         sVar.g0 = (b3Var.b() || b3Var.a()) ? false : true;
         y1 y1Var = sVar.X;
-        x61.r rVar = (List) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();
+        x61.rShadow rVar = (List) ((com.github.rudroid.utilities.ui.g1) y1Var.getValue()).getData();
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList a = j1.a(b3Var.c());
         ArrayList arrayList = new ArrayList((Collection) rVar);

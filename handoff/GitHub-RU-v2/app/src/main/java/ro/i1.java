@@ -8,7 +8,7 @@ import m10.da0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i1 implements aa.a {
     public static final i1 a = new i1();
-    public static final List b = sy.d0.o("state", "contexts", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("state", "contexts", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

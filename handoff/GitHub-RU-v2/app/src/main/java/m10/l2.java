@@ -7,8 +7,8 @@ public abstract class l2 {
     public static final k2 Companion = new k2();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("AutomaticBaseChangeFailedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("AutomaticBaseChangeFailedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

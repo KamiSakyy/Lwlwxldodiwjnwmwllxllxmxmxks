@@ -15,7 +15,7 @@ import pz0.td;
 import pz0.vd;
 import pz0.wk;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,7 +27,7 @@ public abstract class d {
         td.Companion.getClass();
         x xVar = td.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         vd.Companion.getClass();
         x xVar2 = vd.a;
@@ -36,7 +36,7 @@ public abstract class d {
         xd.Companion.getClass();
         x xVar3 = xd.a;
         k.g(xVar3, "type");
-        List r = l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("ProjectV2", d0.n("ProjectV2"), l.r(new m[]{mVar, mVar2, new m("updatesChannel", xVar3, (String) null, rVar, rVar, rVar)})), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        List r = l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("ProjectV2", d0Shadow.n("ProjectV2"), l.r(new m[]{mVar, mVar2, new m("updatesChannel", xVar3, (String) null, rVar, rVar, rVar)})), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         wk.Companion.getClass();
         j0 j0Var = wk.a;
         k.g(j0Var, "type");

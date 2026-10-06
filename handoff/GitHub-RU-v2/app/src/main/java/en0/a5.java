@@ -17,17 +17,17 @@ public abstract class a5 {
         lb.Companion.getClass();
         aa.x xVar = lb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar2 = tb.a;
         k71.k.g(xVar2, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar2, (String) null, rVar, rVar, rVar), new aa.m("hasPreviousPage", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Repository");
+        List n = sy.d0Shadow.n("Repository");
         List list = pj0.l.a;
         aa.s c = no.a.c(list, "selections", "Repository", n, list);
-        List n2 = sy.d0.n("Repository");
+        List n2 = sy.d0Shadow.n("Repository");
         List list2 = pj0.a.a;
         aa.s c2 = no.a.c(list2, "selections", "Repository", n2, list2);
         aa.s mVar3 = new aa.m("hasIssuesEnabled", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -43,6 +43,6 @@ public abstract class a5 {
         mq.Companion.getClass();
         aa.r b2 = v8.l0.b(mq.a);
         s00.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, x61.l.r(new aa.m[]{new aa.m("topRepositories", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(s00.L, new aa.u0(new aa.t("after"))), new aa.k(s00.M, new aa.u0(new aa.t("first"))), new aa.k(s00.N, new aa.u0(x61.x.u(new w61.k("direction", "DESC"), new w61.k("field", "PUSHED_AT")))), new aa.k(s00.O, new aa.u0(new aa.t("type")))}), r3), new aa.m("id", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(s00.P), (String) null, rVar, rVar, x61.l.r(new aa.m[]{new aa.m("topRepositories", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(s00.L, new aa.u0(new aa.t("after"))), new aa.k(s00.M, new aa.u0(new aa.t("first"))), new aa.k(s00.N, new aa.u0(x61.x.u(new w61.k("direction", "DESC"), new w61.k("field", "PUSHED_AT")))), new aa.k(s00.O, new aa.u0(new aa.t("type")))}), r3), new aa.m("id", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
     }
 }

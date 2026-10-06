@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kb implements aaShadow.a {
     public static final kb a = new kb();
-    public static final List b = sy.d0.n("followUser");
+    public static final List b = sy.d0Shadow.n("followUser");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

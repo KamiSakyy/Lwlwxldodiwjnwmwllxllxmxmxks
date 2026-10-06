@@ -22,7 +22,7 @@ public abstract class c {
         sa.Companion.getClass();
         x xVar = sa.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("createdAt", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;

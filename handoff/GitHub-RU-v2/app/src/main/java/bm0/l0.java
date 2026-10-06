@@ -6,14 +6,14 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l0 implements aa.a {
     public static final l0 a = new l0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         am0.i iVar;
         am0.k kVar;
         am0.y yVar;
         am0.h hVar;
-        am0.a0 a0Var;
+        am0.a0Shadow a0Var;
         am0.l lVar;
         am0.o oVar;
         am0.p pVar;
@@ -149,7 +149,7 @@ public final class l0 implements aa.a {
         if (hVar != null) {
             g.d(fVar, wVar, hVar);
         }
-        am0.a0 a0Var = m0Var.f;
+        am0.a0Shadow a0Var = m0Var.f;
         if (a0Var != null) {
             z.d(fVar, wVar, a0Var);
         }

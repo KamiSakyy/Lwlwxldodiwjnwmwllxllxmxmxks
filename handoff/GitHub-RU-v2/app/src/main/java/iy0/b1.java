@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class b1 implements aa.a {
-    public static final List a = sy.d0.n("__typename");
+    public static final List a = sy.d0Shadow.n("__typename");
 
     public static t0 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -28,7 +28,7 @@ public abstract class b1 implements aa.a {
         k71.k.g(t0Var, "value");
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, t0Var.a);
-        List list = x.a;
+        List list = xShadow.a;
         x.d(fVar, wVar, t0Var.b);
     }
 }

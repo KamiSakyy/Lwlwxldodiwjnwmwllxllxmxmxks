@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.i;
@@ -30,7 +30,7 @@ public final class SimpleLegacyProject implements Parcelable {
 
     public /* synthetic */ SimpleLegacyProject(int i, String str, String str2, ProjectState projectState, String str3) {
         if (15 != (i & 15)) {
-            c1.l(i, 15, SimpleLegacyProject$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 15, SimpleLegacyProject$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

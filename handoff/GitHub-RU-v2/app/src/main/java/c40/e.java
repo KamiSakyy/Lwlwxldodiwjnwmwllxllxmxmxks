@@ -7,7 +7,7 @@ import hc0.p3;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -239,14 +239,14 @@ public abstract class e implements aa.a {
         aa.c.b(wVar.e(xVar)).b(fVar, wVar, cVar.e);
         fVar.z0("includesCreatedEdit");
         aa.b bVar2 = aa.c.f;
-        f4.C(cVar.f, bVar2, fVar, wVar, "bodyHTML");
+        f4Shadow.C(cVar.f, bVar2, fVar, wVar, "bodyHTML");
         bVar.b(fVar, wVar, cVar.g);
         fVar.z0("body");
         bVar.b(fVar, wVar, cVar.h);
         fVar.z0("createdAt");
         wVar.e(xVar).b(fVar, wVar, cVar.i);
         fVar.z0("viewerDidAuthor");
-        f4.C(cVar.j, bVar2, fVar, wVar, "authorAssociation");
+        f4Shadow.C(cVar.j, bVar2, fVar, wVar, "authorAssociation");
         fVar.I(cVar.k.r);
         aa0.a aVar = cVar.l;
         if (aVar != null) {

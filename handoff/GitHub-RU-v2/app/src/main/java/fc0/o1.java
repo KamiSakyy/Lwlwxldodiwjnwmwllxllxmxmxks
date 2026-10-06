@@ -14,7 +14,7 @@ public abstract class o1 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("name", b, (String) null, rVar, rVar, rVar);
         aa.m mVar2 = new aa.m("color", xVar, (String) null, rVar, rVar, rVar);
         bb.Companion.getClass();
@@ -22,6 +22,6 @@ public abstract class o1 {
         bd.Companion.getClass();
         aa.r b2 = v8.l0.b(v8.l0.a(bd.a));
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("programmingLanguages", b2, (String) null, rVar, no.a.s(pm.h, new aa.u0(Boolean.TRUE)), r));
+        a = sy.d0Shadow.n(new aa.m("programmingLanguages", b2, (String) null, rVar, no.a.s(pm.h, new aa.u0(Boolean.TRUE)), r));
     }
 }

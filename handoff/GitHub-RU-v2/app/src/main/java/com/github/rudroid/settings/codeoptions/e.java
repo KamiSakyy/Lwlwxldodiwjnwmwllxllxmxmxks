@@ -38,7 +38,7 @@ public final class e {
             w1.r rVar4 = i7 != 0 ? w1.o.a : rVar2;
             DiffLineType diffLineType3 = i8 != 0 ? DiffLineType.CONTEXT : diffLineType;
             long j = ih.d.b(sVar).l;
-            w1.r f = f0.o.f(p2.b(rVar4, 32, 0.0f, 2), ih.d.b(sVar).k, d2.a0.b);
+            w1.r f = f0.o.f(p2.b(rVar4, 32, 0.0f, 2), ih.d.b(sVar).k, d2.a0Shadow.b);
             boolean e = sVar.e(j);
             Object N = sVar.N();
             if (e || N == androidx.compose.runtime.n.a) {

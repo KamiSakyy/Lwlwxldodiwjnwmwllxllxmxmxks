@@ -7,7 +7,7 @@ import jn0.d80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qu implements aaShadow.a {
     public static final qu a = new qu();
-    public static final List b = sy.d0.n("unlockLockable");
+    public static final List b = sy.d0Shadow.n("unlockLockable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -4,7 +4,7 @@ import a61.l0;
 import android.os.SystemClock;
 import com.google.android.gms.internal.measurement.z3;
 import java.util.concurrent.TimeUnit;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 @c71.e(c = "com.github.rudroid.settings.applock.AppLockAuthenticationStore$fetchAndUpdateAppLockUiModel$1", f = "AppLockAuthenticationStore.kt", l = {53}, m = "invokeSuspend", v = 1)
@@ -46,7 +46,7 @@ final class e extends c71.j implements j71.e {
             com.github.rudroid.settings.applock.usecases.a aVar2 = kVar.a;
             l0 G = z3.G(aVar2.a.getData(), new com.github.rudroid.fragments.onboarding.notifications.viewmodel.z(25, aVar2));
             this.v = 1;
-            obj = n1.v(G, this);
+            obj = n1Shadow.v(G, this);
             if (obj == aVar) {
                 return aVar;
             }
@@ -75,7 +75,7 @@ final class e extends c71.j implements j71.e {
                 }
             } while (!y1Var.i(value, Boolean.valueOf(z)));
             if (((Boolean) y1Var.getValue()).booleanValue()) {
-                v71.b0.z(kVar.e, (a71.h) null, (v71.a0) null, new f(kVar, null), 3);
+                v71.b0.z(kVar.e, (a71.h) null, (v71.a0Shadow) null, new f(kVar, null), 3);
             }
         }
         return w61.a0.a;

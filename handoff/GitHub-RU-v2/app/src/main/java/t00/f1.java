@@ -119,7 +119,7 @@ public final class f1Shadow implements y71.j {
     private final Object a(a71.c cVar, Object obj) {
         l2 l2Var;
         int i;
-        x61.r rVar;
+        x61.rShadow rVar;
         yz0.o oVar;
         Object next;
         if (cVar instanceof l2) {
@@ -138,7 +138,7 @@ public final class f1Shadow implements y71.j {
                     x01.i iVar = new x01.i(v5Var.b, v5Var.a, false);
                     List<jo.u5> list = q5Var.b;
                     if (list != null) {
-                        x61.r arrayList = new ArrayList();
+                        x61.rShadow arrayList = new ArrayList();
                         for (jo.u5 u5Var : list) {
                             if (u5Var != null) {
                                 ArrayList arrayList2 = u5Var.d;
@@ -208,7 +208,7 @@ public final class f1Shadow implements y71.j {
                         rVar = null;
                     }
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
                     w61.k kVar = new w61.k(iVar, rVar);
                     l2Var.v = 1;
@@ -255,9 +255,9 @@ public final class f1Shadow implements y71.j {
                     fi fiVar = biVar.a;
                     x01.i iVar = new x01.i(fiVar.b, fiVar.a, false);
                     List<ei> list = biVar.b;
-                    x61.r rVar = null;
+                    x61.rShadow rVar = null;
                     if (list != null) {
-                        x61.r arrayList = new ArrayList();
+                        x61.rShadow arrayList = new ArrayList();
                         for (ei eiVar : list) {
                             yz0.t1 k = eiVar != null ? b41.b.k(eiVar.b) : null;
                             if (k != null) {
@@ -267,7 +267,7 @@ public final class f1Shadow implements y71.j {
                         rVar = arrayList;
                     }
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
                     w61.k kVar = new w61.k(iVar, rVar);
                     p2Var.v = 1;
@@ -380,9 +380,9 @@ public final class f1Shadow implements y71.j {
                 i = s2Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    x61.r<qx.h> rVar = ((zq) obj).a.c.a.a;
+                    x61.rShadow<qx.h> rVar = ((zq) obj).a.c.a.a;
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (qx.h hVar : rVar) {
@@ -537,7 +537,7 @@ public final class f1Shadow implements y71.j {
                         }
                     }
                     if (arrayList == null) {
-                        arrayList = x61.r.r;
+                        arrayList = x61.rShadow.r;
                     }
                     v2Var.v = 1;
                     if (this.s.c(arrayList, v2Var) == aVar) {
@@ -738,7 +738,7 @@ public final class f1Shadow implements y71.j {
         int i16;
         String str;
         int i17;
-        x61.r rVar;
+        x61.rShadow rVar;
         b2 b2Var;
         int i18;
         c2 c2Var;
@@ -827,7 +827,7 @@ public final class f1Shadow implements y71.j {
                             ob obVar = kbVar.a;
                             List list = obVar != null ? obVar.b.b : null;
                             if (list == null) {
-                                list = x61.r.r;
+                                list = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(list);
                             ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -986,7 +986,7 @@ public final class f1Shadow implements y71.j {
                             wq wqVar = ((sq) obj).a;
                             List list2 = wqVar != null ? wqVar.b.a : null;
                             if (list2 == null) {
-                                list2 = x61.r.r;
+                                list2 = x61.rShadow.r;
                             }
                             ArrayList S2 = x61.m.S(list2);
                             ArrayList arrayList2 = new ArrayList(x61.n.F(S2, 10));
@@ -1163,7 +1163,7 @@ public final class f1Shadow implements y71.j {
                             String str9 = str7;
                             is.i1 i1Var2 = iVar.m;
                             pu.a aVar11 = iVar.k;
-                            b01.g d3 = sy.d0.d(cVar2, str8, cVar3, aVar10, oVar, z, z2, z3, z4, str9, false, i1Var2, aVar11.b, aVar11.c, sy.d0.E(iVar));
+                            b01.g d3 = sy.d0Shadow.d(cVar2, str8, cVar3, aVar10, oVar, z, z2, z3, z4, str9, false, i1Var2, aVar11.b, aVar11.c, sy.d0Shadow.E(iVar));
                             r1Var.v = 1;
                             if (this.s.c(d3, r1Var) == aVar9) {
                                 return aVar9;
@@ -1196,7 +1196,7 @@ public final class f1Shadow implements y71.j {
                         if (i13 != 0) {
                             sy.y.j(obj12);
                             qp.f fVar = ((qp.c) obj).a;
-                            Object j = in.r.j(fVar != null ? fVar.c : null, "Invalid draft issue Id", u1.s);
+                            Object j = in.rShadow.j(fVar != null ? fVar.c : null, "Invalid draft issue Id", u1.s);
                             t1Var.v = 1;
                             if (this.s.c(j, t1Var) == aVar12) {
                                 return aVar12;
@@ -1323,8 +1323,8 @@ public final class f1Shadow implements y71.j {
                             ke keVar = (ke) obj;
                             k71.k.g(keVar, "<this>");
                             oe oeVar = keVar.a;
-                            x61.r rVar2 = oeVar != null ? oeVar.b.a : null;
-                            x61.r rVar3 = x61.r.r;
+                            x61.rShadow rVar2 = oeVar != null ? oeVar.b.a : null;
+                            x61.rShadow rVar3 = x61.rShadow.r;
                             if (rVar2 == null) {
                                 rVar2 = rVar3;
                             }
@@ -1365,7 +1365,7 @@ public final class f1Shadow implements y71.j {
                                 String str15 = m3Var.e;
                                 List<dw.h3> list3 = m3Var.q.a;
                                 if (list3 != null) {
-                                    x61.r arrayList11 = new ArrayList();
+                                    x61.rShadow arrayList11 = new ArrayList();
                                     for (dw.h3 h3Var : list3) {
                                         String str16 = str13;
                                         String str17 = h3Var != null ? h3Var.b : null;
@@ -1481,7 +1481,7 @@ public final class f1Shadow implements y71.j {
                             xd0 xd0Var = ((wd0) obj).a;
                             List<qx.h> list4 = (xd0Var == null || (yd0Var = xd0Var.a) == null) ? null : yd0Var.c.a.a;
                             if (list4 == null) {
-                                list4 = x61.r.r;
+                                list4 = x61.rShadow.r;
                             }
                             ArrayList arrayList12 = new ArrayList();
                             for (qx.h hVar2 : list4) {
@@ -1636,9 +1636,9 @@ public final class f1Shadow implements y71.j {
                         i25 = i2Var.v;
                         if (i25 != 0) {
                             sy.y.j(obj26);
-                            x61.r<fx> rVar4 = ((hx) obj).a;
+                            x61.rShadow<fx> rVar4 = ((hx) obj).a;
                             if (rVar4 == null) {
-                                rVar4 = x61.r.r;
+                                rVar4 = x61.rShadow.r;
                             }
                             ArrayList arrayList13 = new ArrayList(x61.n.F(rVar4, 10));
                             for (fx fxVar : rVar4) {
@@ -1646,14 +1646,14 @@ public final class f1Shadow implements y71.j {
                                 String str21 = fxVar.b;
                                 int i62 = fxVar.c;
                                 jx jxVar = fxVar.d;
-                                arrayList13.add(new yz0.f1(i62, str20, str21, jxVar != null ? jxVar.a : ""));
+                                arrayList13.add(new yz0.f1Shadow(i62, str20, str21, jxVar != null ? jxVar.a : ""));
                             }
                             List v0 = x61.m.v0(arrayList13, new j2(0));
                             ArrayList arrayList14 = new ArrayList();
                             ArrayList arrayList15 = new ArrayList();
                             ArrayList arrayList16 = new ArrayList();
                             for (Object obj27 : v0) {
-                                Entry.EntryType entryType = ((yz0.f1) obj27).e;
+                                Entry.EntryType entryType = ((yz0.f1Shadow) obj27).e;
                                 if (entryType == Entry.EntryType.TREE) {
                                     arrayList14.add(obj27);
                                 } else if (entryType == Entry.EntryType.COMMIT) {
@@ -1696,7 +1696,7 @@ public final class f1Shadow implements y71.j {
                         i26 = m2Var.v;
                         if (i26 != 0) {
                             sy.y.j(obj28);
-                            jo.y yVar = ((jo.a0) obj).a;
+                            jo.y yVar = ((jo.a0Shadow) obj).a;
                             Boolean valueOf2 = Boolean.valueOf((yVar == null || (bool = yVar.a) == null) ? false : bool.booleanValue());
                             m2Var.v = 1;
                             if (this.s.c(valueOf2, m2Var) == aVar25) {

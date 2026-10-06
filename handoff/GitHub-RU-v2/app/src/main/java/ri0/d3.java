@@ -10,7 +10,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d3 implements aa.a {
     public static final d3 a = new d3();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "isDraft", "title", "titleHTMLString", "number", "createdAt", "headRepository", "headRepositoryOwner", "isReadByViewer", "totalCommentsCount", "pullRequestState", "repository", "url", "viewerSubscription", "reviewDecision", "assignees", "commits", "closingIssuesReferences", "isInMergeQueue", "mergeQueueEntry", "mergeQueue"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "isDraft", "title", "titleHTMLString", "number", "createdAt", "headRepository", "headRepositoryOwner", "isReadByViewer", "totalCommentsCount", "pullRequestState", "repository", "url", "viewerSubscription", "reviewDecision", "assignees", "commits", "closingIssuesReferences", "isInMergeQueue", "mergeQueueEntry", "mergeQueue"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0038. Please report as an issue. */
     public static p2 c(ea.e eVar, aa.w wVar) {
@@ -60,7 +60,7 @@ public final class d3 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -215,7 +215,7 @@ public final class d3 implements aa.a {
         bVar.b(fVar, wVar, p2Var.b);
         fVar.z0("isDraft");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(p2Var.c, bVar2, fVar, wVar, "title");
+        jo.f4Shadow.C(p2Var.c, bVar2, fVar, wVar, "title");
         bVar.b(fVar, wVar, p2Var.d);
         fVar.z0("titleHTMLString");
         bVar.b(fVar, wVar, p2Var.e);
@@ -251,7 +251,7 @@ public final class d3 implements aa.a {
         fVar.z0("closingIssuesReferences");
         aa.c.b(aa.c.c(t2.a, false)).b(fVar, wVar, p2Var.s);
         fVar.z0("isInMergeQueue");
-        jo.f4.C(p2Var.t, bVar2, fVar, wVar, "mergeQueueEntry");
+        jo.f4Shadow.C(p2Var.t, bVar2, fVar, wVar, "mergeQueueEntry");
         aa.c.b(aa.c.c(z2.a, false)).b(fVar, wVar, p2Var.u);
         fVar.z0("mergeQueue");
         aa.c.b(aa.c.c(y2.a, true)).b(fVar, wVar, p2Var.v);

@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qi implements aaShadow.a {
     public static final qi a = new qi();
-    public static final List b = sy.d0.o(new String[]{"id", "name", "tagName", "author", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "url", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "name", "tagName", "author", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "url", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0034, code lost:
     
@@ -214,13 +214,13 @@ public final class qi implements aaShadow.a {
         aa.c.b(aa.c.c(mi.a, true)).b(fVar, wVar, arVar.d);
         fVar.z0("isPrerelease");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(arVar.e, bVar2, fVar, wVar, "isDraft");
-        jo.f4.C(arVar.f, bVar2, fVar, wVar, "isLatest");
-        jo.f4.C(arVar.g, bVar2, fVar, wVar, "createdAt");
+        jo.f4Shadow.C(arVar.e, bVar2, fVar, wVar, "isDraft");
+        jo.f4Shadow.C(arVar.f, bVar2, fVar, wVar, "isLatest");
+        jo.f4Shadow.C(arVar.g, bVar2, fVar, wVar, "createdAt");
         gn0.r6.Companion.getClass();
         aa.x xVar = gn0.r6.a;
         wVar.e(xVar).b(fVar, wVar, arVar.h);
-        no.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, arVar.i);
+        noShadow.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, arVar.i);
         fVar.z0("url");
         bVar.b(fVar, wVar, arVar.j);
         fVar.z0("__typename");

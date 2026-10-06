@@ -96,7 +96,7 @@ public final class x2 implements y71.j {
         v70.d dVar4;
         v70.d dVar5;
         v70.d dVar6;
-        vb0.v3 v3Var;
+        vb0.v3Shadow v3Var;
         int i7;
         wy0.c2Shadow c2Var;
         int i8;
@@ -168,7 +168,7 @@ public final class x2 implements y71.j {
                             String str7 = null;
                             List list = (ayVar == null || (dVar3 = ayVar.a.b) == null) ? null : dVar3.b.b;
                             if (list == null) {
-                                list = x61.r.r;
+                                list = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(list);
                             ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -220,7 +220,7 @@ public final class x2 implements y71.j {
                             fy fyVar = eyVar.a;
                             List list2 = fyVar != null ? fyVar.c.b.b : null;
                             if (list2 == null) {
-                                list2 = x61.r.r;
+                                list2 = x61.rShadow.r;
                             }
                             ArrayList S2 = x61.m.S(list2);
                             ArrayList arrayList2 = new ArrayList(x61.n.F(S2, 10));
@@ -367,7 +367,7 @@ public final class x2 implements y71.j {
                             String str12 = null;
                             List list3 = (cwVar == null || (dVar6 = cwVar.a.b) == null) ? null : dVar6.b.b;
                             if (list3 == null) {
-                                list3 = x61.r.r;
+                                list3 = x61.rShadow.r;
                             }
                             ArrayList S3 = x61.m.S(list3);
                             ArrayList arrayList3 = new ArrayList(x61.n.F(S3, 10));
@@ -419,7 +419,7 @@ public final class x2 implements y71.j {
                             u10.gw gwVar2 = fwVar2.a;
                             List list4 = gwVar2 != null ? gwVar2.c.b.b : null;
                             if (list4 == null) {
-                                list4 = x61.r.r;
+                                list4 = x61.rShadow.r;
                             }
                             ArrayList S4 = x61.m.S(list4);
                             ArrayList arrayList4 = new ArrayList(x61.n.F(S4, 10));

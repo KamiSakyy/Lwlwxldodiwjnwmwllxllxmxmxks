@@ -14,21 +14,21 @@ import v8.l0;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
-    public static final /* synthetic */ b[] A;
+public final class bShadow {
+    public static final /* synthetic */ bShadow[] A;
     public static final a Companion;
-    public static final b r;
-    public static final b s;
-    public static final b t;
-    public static final b u;
-    public static final b v;
-    public static final b w;
-    public static final b x;
-    public static final b y;
-    public static final b z;
+    public static final bShadow r;
+    public static final bShadow s;
+    public static final bShadow t;
+    public static final bShadow u;
+    public static final bShadow v;
+    public static final bShadow w;
+    public static final bShadow x;
+    public static final bShadow y;
+    public static final bShadow z;
 
     public static final class a {
-        public static int a(Context context, b bVar) {
+        public static int a(Context context, bShadow bVar) {
             k.g(context, "context");
             k.g(bVar, "labelColor");
             Resources resources = context.getResources();
@@ -38,7 +38,7 @@ public final class b {
             return resources.getColor(a, theme);
         }
 
-        public static LayerDrawable b(Context context, b bVar) {
+        public static LayerDrawable b(Context context, bShadow bVar) {
             k.g(bVar, "labelColor");
             Drawable drawable = context.getDrawable(2131231641);
             Drawable mutate = drawable != null ? drawable.mutate() : null;
@@ -51,7 +51,7 @@ public final class b {
             return layerDrawable;
         }
 
-        public static int c(Context context, b bVar) {
+        public static int c(Context context, bShadow bVar) {
             k.g(context, "context");
             k.g(bVar, "labelColor");
             Resources resources = context.getResources();
@@ -61,7 +61,7 @@ public final class b {
             return resources.getColor(b, theme);
         }
 
-        public static int d(Context context, b bVar) {
+        public static int d(Context context, bShadow bVar) {
             k.g(context, "context");
             k.g(bVar, "labelColor");
             Resources resources = context.getResources();
@@ -72,7 +72,7 @@ public final class b {
         }
     }
 
-    /* renamed from: lg.b$b, reason: collision with other inner class name */
+    /* renamed from: lg.bShadow$b, reason: collision with other inner class name */
     public static final /* synthetic */ class C0025b {
         static {
             int[] iArr = new int[b.values().length];
@@ -124,36 +124,36 @@ public final class b {
     }
 
     static {
-        b bVar = new b("BLUE", 0);
+        bShadow bVar = new bShadow("BLUE", 0);
         r = bVar;
-        b bVar2 = new b("GREEN", 1);
+        bShadow bVar2 = new bShadow("GREEN", 1);
         s = bVar2;
-        b bVar3 = new b("ORANGE", 2);
+        bShadow bVar3 = new bShadow("ORANGE", 2);
         t = bVar3;
-        b bVar4 = new b("PINK", 3);
+        bShadow bVar4 = new bShadow("PINK", 3);
         u = bVar4;
-        b bVar5 = new b("PURPLE", 4);
+        bShadow bVar5 = new bShadow("PURPLE", 4);
         v = bVar5;
-        b bVar6 = new b("RED", 5);
+        bShadow bVar6 = new bShadow("RED", 5);
         w = bVar6;
-        b bVar7 = new b("YELLOW", 6);
+        bShadow bVar7 = new bShadow("YELLOW", 6);
         x = bVar7;
-        b bVar8 = new b("GRAY", 7);
+        bShadow bVar8 = new bShadow("GRAY", 7);
         y = bVar8;
-        b bVar9 = new b("SYSTEM", 8);
+        bShadow bVar9 = new bShadow("SYSTEM", 8);
         z = bVar9;
-        b[] bVarArr = {bVar, bVar2, bVar3, bVar4, bVar5, bVar6, bVar7, bVar8, bVar9};
+        bShadow[] bVarArr = {bVar, bVar2, bVar3, bVar4, bVar5, bVar6, bVar7, bVar8, bVar9};
         A = bVarArr;
         l0.t(bVarArr);
         Companion = new a();
     }
 
     public static b valueOf(String str) {
-        return (b) Enum.valueOf(b.class, str);
+        return (bShadow) Enum.valueOf(bShadow.class, str);
     }
 
-    public static b[] values() {
-        return (b[]) A.clone();
+    public static bShadow[] values() {
+        return (bShadow[]) A.clone();
     }
 
     public final int a() {

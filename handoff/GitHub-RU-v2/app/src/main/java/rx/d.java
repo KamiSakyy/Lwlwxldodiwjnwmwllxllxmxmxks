@@ -14,7 +14,7 @@ import m10.gh;
 import m10.gr;
 import m10.sa;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -26,9 +26,9 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Organization");
+        List n = d0Shadow.n("Organization");
         List list = w.a;
         s c = no.a.c(list, "selections", "Organization", n, list);
         ah.Companion.getClass();

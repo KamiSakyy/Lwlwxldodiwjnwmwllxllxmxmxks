@@ -174,7 +174,7 @@ public abstract class qf implements aaShadow.a {
                 case 5:
                     bool = bool2;
                     hc0.h6.Companion.getClass();
-                    zonedDateTime = (ZonedDateTime) no.a.h(wVar, hc0.h6.a, eVar, wVar);
+                    zonedDateTime = (ZonedDateTime) noShadow.a.h(wVar, hc0.h6.a, eVar, wVar);
                     break;
                 case 6:
                     bool = bool2;
@@ -211,7 +211,7 @@ public abstract class qf implements aaShadow.a {
         fVar.z0("url");
         bVar.b(fVar, wVar, fnVar.d);
         fVar.z0("authorCanPushToRepository");
-        jo.f4.C(fnVar.e, aa.c.f, fVar, wVar, "submittedAt");
+        jo.f4Shadow.C(fnVar.e, aa.c.f, fVar, wVar, "submittedAt");
         hc0.h6.Companion.getClass();
         aa.c.b(wVar.e(hc0.h6.a)).b(fVar, wVar, fnVar.f);
         fVar.z0("pullRequest");

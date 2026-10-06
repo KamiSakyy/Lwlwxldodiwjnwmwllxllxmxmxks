@@ -4,7 +4,7 @@ package pz0;
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ko {
-    public static final jo Companion;
+    public static final joShadow Companion;
     public static final aa.a0 s;
     public static final ko t;
     public static final ko u;
@@ -36,7 +36,7 @@ public final class ko {
         ko[] koVarArr = {koVar, koVar2, koVar3, koVar4, koVar5, koVar6, koVar7, koVar8, koVar9, koVar10, koVar11, koVar12, koVar13, koVar14, koVar15, koVar16, koVar17, koVar18};
         v = koVarArr;
         w = v8.l0.t(koVarArr);
-        Companion = new jo();
+        Companion = new joShadow();
         x61.l.r(new String[]{"ASSIGNEES", "DATE", "ISSUE_TYPE", "ITERATION", "LABELS", "LINKED_PULL_REQUESTS", "MILESTONE", "NUMBER", "PARENT_ISSUE", "REPOSITORY", "REVIEWERS", "SINGLE_SELECT", "SUB_ISSUES_PROGRESS", "TEXT", "TITLE", "TRACKED_BY", "TRACKS"});
         s = new aa.a0("ProjectV2FieldType");
     }

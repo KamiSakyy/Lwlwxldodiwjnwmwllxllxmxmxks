@@ -7,7 +7,7 @@ import pz0.xl;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a1 implements aa.a {
     public static final a1 a = new a1();
-    public static final List b = sy.d0.o(new String[]{"direction", "field"});
+    public static final List b = sy.d0Shadow.o(new String[]{"direction", "field"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

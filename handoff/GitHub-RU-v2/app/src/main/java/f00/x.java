@@ -3,12 +3,12 @@ package f00;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.b00;
 import m10.sa;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class x implements aa.a {
+public abstract class xShadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "title", "number", "url", "locked", "pullRequestState", "isDraft", "isInMergeQueue", "updatedAt", "createdAt", "totalCommentsCount", "completedTasksCount", "totalTaskCount", "baseRefName", "headRefName", "viewerCanReopen", "viewerCanUpdate", "viewerDidAuthor", "viewerCanAssign", "viewerCanLabel"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0041. Please report as an issue. */
@@ -52,7 +52,7 @@ public abstract class x implements aa.a {
         Boolean bool16 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar = sa.a;
+            aa.xShadow xVar = sa.a;
             Integer num7 = num3;
             String str7 = str;
             switch (r0) {

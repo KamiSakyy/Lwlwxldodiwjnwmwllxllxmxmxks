@@ -8,7 +8,7 @@ import gn0.lb;
 import gn0.pb;
 import gn0.tb;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -18,8 +18,8 @@ public abstract class a {
     static {
         bm.Companion.getClass();
         aa.r b = l0.b(bm.s);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new aa.m("mergeMethod", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new aa.m("mergeMethod", b, (String) null, rVar, rVar, rVar));
         pb.Companion.getClass();
         aa.m mVar = new aa.m("id", l0.b(pb.a), (String) null, rVar, rVar, rVar);
         lb.Companion.getClass();

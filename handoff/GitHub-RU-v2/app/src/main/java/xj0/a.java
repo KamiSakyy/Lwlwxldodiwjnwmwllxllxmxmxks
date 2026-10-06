@@ -13,7 +13,7 @@ import gn0.tb;
 import gn0.zr;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,14 +25,14 @@ public abstract class a {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = vd0.a.a;
         List r2 = l.r(new s[]{mVar, no.a.c(list, "selections", "Actor", r, list)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         s nVar = new n("Actor", l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"}), list);
-        List n = d0.n("Team");
+        List n = d0Shadow.n("Team");
         List list2 = hk0.a.a;
         List r3 = l.r(new s[]{mVar2, nVar, no.a.c(list2, "selections", "Team", n, list2)});
         m mVar3 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);

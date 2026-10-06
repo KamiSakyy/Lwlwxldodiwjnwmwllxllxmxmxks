@@ -17,7 +17,7 @@ import gn0.tb;
 import gn0.wh;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -28,8 +28,8 @@ public abstract class h {
     static {
         lb.Companion.getClass();
         r b = l0.b(lb.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("getsPullRequestReviews", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("getsPullRequestReviews", b, (String) null, rVar, rVar, rVar));
         tb.Companion.getClass();
         x xVar = tb.a;
         s mVar = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -51,6 +51,6 @@ public abstract class h {
         q0 q0Var3 = qz.a;
         k.g(q0Var3, "type");
         wh.Companion.getClass();
-        a = d0.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(wh.R0, new u0(s0.p("getPullRequestReviews", new t("enabled")))), r3));
+        a = d0Shadow.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(wh.R0, new u0(s0.p("getPullRequestReviews", new t("enabled")))), r3));
     }
 }

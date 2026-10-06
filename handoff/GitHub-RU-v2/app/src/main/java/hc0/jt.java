@@ -6,6 +6,6 @@ public abstract class jt {
 
     static {
         ms.Companion.getClass();
-        new aa.q0("SearchShortcutQueryText", x61.r.r, sy.d0.n(ms.a));
+        new aa.q0("SearchShortcutQueryText", x61.rShadow.r, sy.d0Shadow.n(ms.a));
     }
 }

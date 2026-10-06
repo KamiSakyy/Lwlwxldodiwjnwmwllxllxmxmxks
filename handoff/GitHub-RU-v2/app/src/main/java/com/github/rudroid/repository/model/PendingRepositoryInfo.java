@@ -5,9 +5,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -46,7 +46,7 @@ public final class PendingRepositoryInfo implements Parcelable {
 
     public /* synthetic */ PendingRepositoryInfo(int i, String str, String str2, boolean z10) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, PendingRepositoryInfo$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, PendingRepositoryInfo$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f19994r = str;
@@ -79,7 +79,7 @@ public final class PendingRepositoryInfo implements Parcelable {
     }
 
     public final String toString() {
-        return f4.s(s0.o("PendingRepositoryInfo(sourceRepositoryOwnerLogin=", this.f19994r, ", sourceRepositoryName=", this.f19995s, ", isTemplateClone="), this.f19996t, ")");
+        return f4Shadow.s(s0.o("PendingRepositoryInfo(sourceRepositoryOwnerLogin=", this.f19994r, ", sourceRepositoryName=", this.f19995s, ", isTemplateClone="), this.f19996t, ")");
     }
 
     @Override // android.os.Parcelable

@@ -8,7 +8,7 @@ import jn0.if0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nz implements aaShadow.a {
     public static final nz a = new nz();
-    public static final List b = sy.d0.o(new String[]{"id", "hasCreatedLists", "suggestedListNames", "lists", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "hasCreatedLists", "suggestedListNames", "lists", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -75,7 +75,7 @@ public final class nz implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, if0Var.a);
         fVar.z0("hasCreatedLists");
-        jo.f4.C(if0Var.b, aa.c.f, fVar, wVar, "suggestedListNames");
+        jo.f4Shadow.C(if0Var.b, aa.c.f, fVar, wVar, "suggestedListNames");
         aa.c.a(aa.c.c(mz.a, false)).e(fVar, wVar, if0Var.c);
         fVar.z0("lists");
         aa.c.c(kz.a, false).b(fVar, wVar, if0Var.d);

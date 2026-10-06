@@ -48,7 +48,7 @@ final class f extends c71.j implements j71.e {
             k71.k.g(str3, "commentId");
             String str4 = this.A;
             k71.k.g(str4, "suggestionId");
-            y71.y yVar = new y71.y(new d(gVar, null), b31.b.J(((z01.f) kVar.a.a(d)).l(str, str2, sy.d0.n(new w61.k(str3, str4)), this.B), d, uVar));
+            y71.y yVar = new y71.y(new d(gVar, null), b31.b.J(((z01.f) kVar.a.a(d)).l(str, str2, sy.d0Shadow.n(new w61.k(str3, str4)), this.B), d, uVar));
             e eVar = new e(gVar);
             this.v = 1;
             if (yVar.b(eVar, this) == aVar) {

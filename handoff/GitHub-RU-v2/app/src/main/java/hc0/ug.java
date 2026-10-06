@@ -7,8 +7,8 @@ public abstract class ug {
     public static final tg Companion = new tg();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("MovedColumnsInProjectEvent", n, sy.d0.n(yg.a));
+        new aa.q0("MovedColumnsInProjectEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

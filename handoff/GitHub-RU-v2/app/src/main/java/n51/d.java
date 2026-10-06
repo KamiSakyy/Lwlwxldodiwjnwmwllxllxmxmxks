@@ -3,7 +3,7 @@ package n51;
 import android.content.Context;
 import java.util.Set;
 import java.util.concurrent.Executor;
-import sy.p;
+import sy.pShadow;
 import t.q;
 import w21.o;
 
@@ -24,7 +24,7 @@ public final class d implements f, g {
     }
 
     public final o a() {
-        if (!p.p(this.b)) {
+        if (!pShadow.p(this.b)) {
             return q.k("");
         }
         return q.f(this.e, new c(this, 0));
@@ -33,7 +33,7 @@ public final class d implements f, g {
     public final void b() {
         if (this.d.size() <= 0) {
             q.k((Object) null);
-        } else if (!p.p(this.b)) {
+        } else if (!pShadow.p(this.b)) {
             q.k((Object) null);
         } else {
             q.f(this.e, new c(this, 1));

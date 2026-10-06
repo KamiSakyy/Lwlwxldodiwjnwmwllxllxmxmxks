@@ -3,7 +3,7 @@ package mn;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x {
+public final class xShadow {
     public ArrayList a;
     public x01.i b;
 
@@ -16,10 +16,10 @@ public final class x {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return this.a.equals(xVar.a) && this.b.equals(xVar.b);
     }
 

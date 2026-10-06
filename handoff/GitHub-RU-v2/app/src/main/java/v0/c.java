@@ -1,13 +1,13 @@
 package v0;
 
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class c {
 
     /* renamed from: b, reason: collision with root package name */
-    public static final c f32323b = new c(r.r);
+    public static final c f32323b = new c(rShadow.r);
 
     /* renamed from: a, reason: collision with root package name */
     public Object f32324a;

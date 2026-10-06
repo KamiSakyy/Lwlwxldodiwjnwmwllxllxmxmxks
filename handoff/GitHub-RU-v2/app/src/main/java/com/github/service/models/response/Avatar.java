@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import v8.l0;
@@ -63,7 +63,7 @@ public final class Avatar implements Parcelable {
 
     public /* synthetic */ Avatar(int i, String str, Type type) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, Avatar$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, Avatar$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

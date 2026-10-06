@@ -84,7 +84,7 @@ public final class l1 {
             } else {
                 w1.r rVar4 = i7 != 0 ? w1.o.a : rVar2;
                 float f4 = i5 != 0 ? 0 : f2;
-                qa.a(w1.a.d(rVar4, 1.0f), d2.a0.b, ih.d.b(sVar).d, ih.d.b(sVar).s, 0.0f, f4, (f0.v) null, r1.i.d(2068271281, new com.github.rudroid.copilot.ui.v0(i, dVar, 6), sVar), sVar, ((i6 << 9) & 458752) | 12582960, 80);
+                qa.a(w1.a.d(rVar4, 1.0f), d2.a0Shadow.b, ih.d.b(sVar).d, ih.d.b(sVar).s, 0.0f, f4, (f0.v) null, r1.i.d(2068271281, new com.github.rudroid.copilot.ui.v0(i, dVar, 6), sVar), sVar, ((i6 << 9) & 458752) | 12582960, 80);
                 f3 = f4;
                 rVar3 = rVar4;
             }

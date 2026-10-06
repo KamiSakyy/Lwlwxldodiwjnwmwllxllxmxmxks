@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
 import t00.f8;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o extends c71.j implements j71.e {
@@ -276,9 +276,9 @@ public final class o extends c71.j implements j71.e {
         Object f3;
         rc0.h hVar3;
         rc0.m mVar3;
-        y71.j jVar;
+        y71.jShadow jVar;
         Object E;
-        y71.j jVar2;
+        y71.jShadow jVar2;
         y71.i q;
         Object obj2;
         v71.z zVar;
@@ -477,7 +477,7 @@ public final class o extends c71.j implements j71.e {
                     try {
                         if (i10 == 0) {
                             sy.y.j(obj);
-                            b6.x xVar2 = new b6.x(0, (a71.c) null, (c71.j) obj3);
+                            b6.xShadow xVar2 = new b6.xShadow(0, (a71.c) null, (c71.j) obj3);
                             this.w = 1;
                             if (v71.b0.k(xVar2, this) == aVar9) {
                                 return aVar9;
@@ -511,7 +511,7 @@ public final class o extends c71.j implements j71.e {
             case 7:
                 String str = (String) obj3;
                 cn.s sVar = (cn.s) this.y;
-                y71.j jVar3 = (y71.j) this.x;
+                y71.jShadow jVar3 = (y71.j) this.x;
                 b71.a aVar10 = b71.a.r;
                 int i12 = this.w;
                 if (i12 != 0) {
@@ -523,7 +523,7 @@ public final class o extends c71.j implements j71.e {
                 }
                 sy.y.j(obj);
                 sVar.g.add(str);
-                cn.h hVar6 = (cn.h) sVar.e.get(str);
+                cn.hShadow hVar6 = (cn.hShadow) sVar.e.get(str);
                 if (hVar6 == null) {
                     return a0Var;
                 }
@@ -548,7 +548,7 @@ public final class o extends c71.j implements j71.e {
                 this.w = 1;
                 return J.b(rVar2, this) == aVar11 ? aVar11 : a0Var;
             case 9:
-                y71.j jVar4 = (y71.j) this.y;
+                y71.jShadow jVar4 = (y71.j) this.y;
                 b71.a aVar12 = b71.a.r;
                 int i14 = this.w;
                 if (i14 == 0) {
@@ -672,7 +672,7 @@ public final class o extends c71.j implements j71.e {
                 int i18 = this.w;
                 if (i18 == 0) {
                     sy.y.j(obj);
-                    j0.j jVar5 = (j0.j) this.x;
+                    j0.jShadow jVar5 = (j0.j) this.x;
                     j0.k kVar = (j0.k) this.y;
                     this.w = 1;
                     if (jVar5.b(kVar, this) == aVar16) {
@@ -695,7 +695,7 @@ public final class o extends c71.j implements j71.e {
                 int i19 = this.w;
                 if (i19 == 0) {
                     sy.y.j(obj);
-                    j0.j jVar6 = (j0.j) this.x;
+                    j0.jShadow jVar6 = (j0.j) this.x;
                     j0.h hVar7 = (j0.h) this.y;
                     this.w = 1;
                     if (jVar6.b(hVar7, this) == aVar17) {
@@ -802,7 +802,7 @@ public final class o extends c71.j implements j71.e {
                 }
                 return aVar20;
             case 18:
-                y71.j jVar7 = (y71.j) this.y;
+                y71.jShadow jVar7 = (y71.j) this.y;
                 b71.a aVar21 = b71.a.r;
                 int i24 = this.w;
                 if (i24 == 0) {

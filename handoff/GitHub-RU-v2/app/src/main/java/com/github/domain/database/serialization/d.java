@@ -6,7 +6,7 @@ import com.github.domain.searchandfilter.filters.data.milestone.NoMilestone;
 import com.google.android.gms.internal.measurement.d5;
 import f1.q6;
 import fk.i;
-import k71.x;
+import k71.xShadow;
 import l81.n;
 import yz0.v2;
 
@@ -18,9 +18,9 @@ public abstract class d {
 
     static {
         kotlinx.serialization.modules.d dVar = new kotlinx.serialization.modules.d();
-        s sVar = new s(x.a(v2.class));
-        sVar.H(x.a(NoMilestone.class), NoMilestone.Companion.serializer());
-        sVar.H(x.a(SerializableMilestone.class), SerializableMilestone.Companion.serializer());
+        s sVar = new s(xShadow.a(v2.class));
+        sVar.H(xShadow.a(NoMilestone.class), NoMilestone.Companion.serializer());
+        sVar.H(xShadow.a(SerializableMilestone.class), SerializableMilestone.Companion.serializer());
         sVar.q(new q6(15));
         sVar.n(dVar);
         a = dVar.a();

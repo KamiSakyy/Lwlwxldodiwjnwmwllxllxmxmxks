@@ -3,7 +3,7 @@ package nm;
 import rm0.o8;
 import t00.o6;
 import t00.x9;
-import v00.t;
+import v00.tShadow;
 import vb0.r7;
 import w61.a0;
 import wy0.e8;
@@ -83,25 +83,25 @@ public final class g implements y71.i {
                 }
                 break;
             case 10:
-                Object b12 = this.s.b(new t(jVar, 0), cVar);
+                Object b12 = this.s.b(new tShadow(jVar, 0), cVar);
                 if (b12 != b71.a.r) {
                     break;
                 }
                 break;
             case 11:
-                Object b13 = this.s.b(new t(jVar, 2), cVar);
+                Object b13 = this.s.b(new tShadow(jVar, 2), cVar);
                 if (b13 != b71.a.r) {
                     break;
                 }
                 break;
             case 12:
-                Object b14 = this.s.b(new t(jVar, 3), cVar);
+                Object b14 = this.s.b(new tShadow(jVar, 3), cVar);
                 if (b14 != b71.a.r) {
                     break;
                 }
                 break;
             case 13:
-                Object b15 = this.s.b(new t(jVar, 4), cVar);
+                Object b15 = this.s.b(new tShadow(jVar, 4), cVar);
                 if (b15 != b71.a.r) {
                     break;
                 }

@@ -57,7 +57,7 @@ public abstract class u9 implements aaShadow.a {
         fVar.z0("headRefOid");
         bVar2.b(fVar, wVar, x0Var.c);
         fVar.z0("viewerCanEditFiles");
-        jo.f4.C(x0Var.d, aa.c.f, fVar, wVar, "baseRefName");
+        jo.f4Shadow.C(x0Var.d, aa.c.f, fVar, wVar, "baseRefName");
         bVar2.b(fVar, wVar, x0Var.e);
         fVar.z0("headRefName");
         bVar2.b(fVar, wVar, x0Var.f);
@@ -66,7 +66,7 @@ public abstract class u9 implements aaShadow.a {
         fVar.z0("deletions");
         fVar.z(x0Var.h);
         fVar.z0("headRepository");
-        aa.c.b(aa.c.c(ri0.f1.a, false)).b(fVar, wVar, x0Var.i);
+        aa.c.b(aa.c.c(ri0.f1Shadow.a, false)).b(fVar, wVar, x0Var.i);
         fVar.z0("headRepositoryOwner");
         aa.c.b(aa.c.c(ri0.g1.a, false)).b(fVar, wVar, x0Var.j);
         fVar.z0("repository");

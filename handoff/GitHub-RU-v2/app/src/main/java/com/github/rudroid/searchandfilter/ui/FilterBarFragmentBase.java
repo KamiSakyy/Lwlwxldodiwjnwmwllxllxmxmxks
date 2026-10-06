@@ -9,7 +9,7 @@ import ic.w2;
 import java.util.concurrent.CancellationException;
 import rm0.r3Shadow;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -20,12 +20,12 @@ public abstract class FilterBarFragmentBase extends BindingFragment implements c
     public y1 G0;
     public y1 H0;
     public final int C0 = 2131558796;
-    public final y1 F0 = n1.c(Boolean.FALSE);
+    public final y1 F0 = n1Shadow.c(Boolean.FALSE);
 
     public FilterBarFragmentBase() {
-        x61.r rVar = x61.r.r;
-        this.G0 = n1.c(rVar);
-        this.H0 = n1.c(rVar);
+        x61.rShadow rVar = x61.rShadow.r;
+        this.G0 = n1Shadow.c(rVar);
+        this.H0 = n1Shadow.c(rVar);
     }
 
     public final int C4() {

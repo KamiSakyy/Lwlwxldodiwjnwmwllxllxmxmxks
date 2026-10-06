@@ -24,7 +24,7 @@ import org.json.JSONObject;
 import t.q;
 import t00.z1;
 import t11.g;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.w;
 import v8.l;
@@ -42,7 +42,7 @@ public final /* synthetic */ class b implements u11.a, g, i, w21.a, f {
     public final /* synthetic */ Object u;
 
     /* JADX WARN: Multi-variable type inference failed */
-    public /* synthetic */ b(h hVar, a0 a0Var, j71.e eVar) {
+    public /* synthetic */ b(h hVar, a0Shadow a0Var, j71.e eVar) {
         this.r = 4;
         this.u = hVar;
         this.t = a0Var;
@@ -352,7 +352,7 @@ public final /* synthetic */ class b implements u11.a, g, i, w21.a, f {
         switch (this.r) {
             case 4:
                 h hVar2 = (h) this.u;
-                a0 a0Var = (a0) this.t;
+                a0Shadow a0Var = (a0Shadow) this.t;
                 j71.e r2 = (j71.e) ((j) this.s);
                 androidx.fragment.app.s sVar = new androidx.fragment.app.s(24, hVar2.w0(w.s));
                 l lVar = l.r;

@@ -16,7 +16,7 @@ public abstract class k {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         a = l.r(new m[]{new m("id", b, (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("nameHTML", l0.b(xVar), (String) null, rVar, rVar, rVar)});
     }
 }

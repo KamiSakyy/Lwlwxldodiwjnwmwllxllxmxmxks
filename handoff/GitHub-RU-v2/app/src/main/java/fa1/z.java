@@ -27,7 +27,7 @@ public final class z implements e {
     public final u81.m a() {
         q81.o c;
         p0 p0Var = this.r;
-        x0[] x0VarArr = p0Var.k;
+        x0Shadow[] x0VarArr = p0Var.k;
         Object[] objArr = this.t;
         int length = objArr.length;
         if (length != x0VarArr.length) {
@@ -68,7 +68,7 @@ public final class z implements e {
                     if (arrayList2.isEmpty()) {
                         throw new IllegalStateException("Multipart body must have at least one part.");
                     }
-                    yVar = new q81.s((h91.k) hVar.s, (q81.q) hVar.t, r81.g.j(arrayList2));
+                    yVar = new q81.sShadow((h91.kShadow) hVar.s, (q81.q) hVar.t, r81.g.j(arrayList2));
                 } else if (n0Var.h) {
                     q81.y.Companion.getClass();
                     long j = 0;

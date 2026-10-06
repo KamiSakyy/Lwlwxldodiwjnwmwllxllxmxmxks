@@ -39,7 +39,7 @@ import m10.wg;
 import m10.wr;
 import m10.y5;
 import m10.yb0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -51,7 +51,7 @@ public abstract class a {
         ah.Companion.getClass();
         x xVar = ah.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
@@ -74,15 +74,15 @@ public abstract class a {
         List r6 = l.r(new m[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("name", xVar2, (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("user", q0Var, (String) null, rVar, rVar, l.r(new m[]{new m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)}))});
         mg.Companion.getClass();
         q0 q0Var2 = mg.a;
-        List n = d0.n(new m("nodes", l0.a(q0Var2), (String) null, rVar, rVar, r6));
-        List r7 = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ImageFileType", d0.n("ImageFileType"), d0.n(new m("url", xVar3, (String) null, rVar, rVar, rVar)))});
+        List n = d0Shadow.n(new m("nodes", l0.a(q0Var2), (String) null, rVar, rVar, r6));
+        List r7 = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ImageFileType", d0Shadow.n("ImageFileType"), d0Shadow.n(new m("url", xVar3, (String) null, rVar, rVar, rVar)))});
         m mVar6 = new m("path", xVar2, (String) null, rVar, rVar, rVar);
         gf.Companion.getClass();
         x0 x0Var = gf.a;
         k.g(x0Var, "type");
         List r8 = l.r(new m[]{mVar6, new m("fileType", x0Var, (String) null, rVar, rVar, r7)});
-        List n2 = d0.n(new m("gitUrl", l0.b(xVar3), (String) null, rVar, rVar, rVar));
-        List r9 = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ImageFileType", d0.n("ImageFileType"), d0.n(new m("url", xVar3, (String) null, rVar, rVar, rVar)))});
+        List n2 = d0Shadow.n(new m("gitUrl", l0.b(xVar3), (String) null, rVar, rVar, rVar));
+        List r9 = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ImageFileType", d0Shadow.n("ImageFileType"), d0Shadow.n(new m("url", xVar3, (String) null, rVar, rVar, rVar)))});
         m mVar7 = new m("path", xVar2, (String) null, rVar, rVar, rVar);
         wg.Companion.getClass();
         x xVar4 = wg.a;
@@ -92,7 +92,7 @@ public abstract class a {
         k.g(q0Var3, "type");
         List r11 = l.r(new m[]{mVar7, mVar8, new m("submodule", q0Var3, (String) null, rVar, rVar, n2), new m("fileType", x0Var, (String) null, rVar, rVar, r9)});
         s mVar9 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("DiffLine");
+        List n3 = d0Shadow.n("DiffLine");
         List list = fs.a.a;
         List r12 = l.r(new s[]{mVar9, no.a.c(list, "selections", "DiffLine", n3, list)});
         ch.Companion.getClass();
@@ -112,7 +112,7 @@ public abstract class a {
         wr.Companion.getClass();
         List r13 = l.r(new m[]{mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, new m("status", l0.b(wr.s), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         sr.Companion.getClass();
-        List n4 = d0.n(new m("nodes", l0.a(sr.b), (String) null, rVar, rVar, r13));
+        List n4 = d0Shadow.n(new m("nodes", l0.a(sr.b), (String) null, rVar, rVar, r13));
         m mVar18 = new m("linesAdded", l0.b(xVar5), (String) null, rVar, rVar, rVar);
         m mVar19 = new m("linesDeleted", l0.b(xVar5), (String) null, rVar, rVar, rVar);
         m mVar20 = new m("filesChanged", l0.b(xVar5), (String) null, rVar, rVar, rVar);
@@ -134,10 +134,10 @@ public abstract class a {
         q0 q0Var5 = i30.w0;
         List r17 = l.r(new m[]{mVar22, mVar23, mVar24, mVar25, mVar26, new m("repository", l0.b(q0Var5), (String) null, rVar, rVar, r16), new m("isInMergeQueue", l0.b(xVar4), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         ux.Companion.getClass();
-        List n5 = d0.n(new m("nodes", l0.a(ux.T), (String) null, rVar, rVar, r17));
+        List n5 = d0Shadow.n(new m("nodes", l0.a(ux.T), (String) null, rVar, rVar, r17));
         List r18 = l.r(new m[]{new m("abbreviatedOid", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         y5.Companion.getClass();
-        List n6 = d0.n(new m("nodes", l0.a(y5.j), (String) null, rVar, rVar, r18));
+        List n6 = d0Shadow.n(new m("nodes", l0.a(y5.j), (String) null, rVar, rVar, r18));
         sa.Companion.getClass();
         m mVar27 = new m("committedDate", l0.b(sa.a), (String) null, rVar, rVar, rVar);
         gh.Companion.getClass();

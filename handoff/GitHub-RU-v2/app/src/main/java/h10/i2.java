@@ -13,12 +13,12 @@ public abstract class i2 {
         wg.Companion.getClass();
         aa.x xVar = wg.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("success", xVar, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("success", xVar, (String) null, rVar, rVar, rVar));
         t9.Companion.getClass();
         aa.q0 q0Var = t9.a;
         k71.k.g(q0Var, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("createSavedNotificationThread", q0Var, (String) null, rVar, no.a.s(vp.K, new aa.u0(a0.s0.p("id", new aa.t("id")))), n));
+        a = sy.d0Shadow.n(new aa.m("createSavedNotificationThread", q0Var, (String) null, rVar, no.a.s(vp.K, new aa.u0(a0.s0.p("id", new aa.t("id")))), n));
     }
 }

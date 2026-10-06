@@ -67,7 +67,7 @@ public abstract class f0 {
     public static final ArrayList b(i30.i iVar) {
         List list = iVar != null ? iVar.b.c : null;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(list);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -253,7 +253,7 @@ public abstract class f0 {
             String str14 = (hVar == null || (gVar = hVar.c) == null) ? null : gVar.b;
             i1 i1Var = iVar.m;
             pu.a aVar3 = iVar.k;
-            c = d0.c(cVar2, str13, cVar3, (r32 & 4) != 0 ? null : aVar2, null, z11, z12, z13, (r32 & 128) != 0 ? false : z14, (r32 & 256) != 0 ? null : str14, false, x61.r.r, i1Var, (r32 & 4096) != 0 ? false : aVar3.b, (r32 & 8192) != 0 ? false : aVar3.c, d0.E(iVar));
+            c = d0.c(cVar2, str13, cVar3, (r32 & 4) != 0 ? null : aVar2, null, z11, z12, z13, (r32 & 128) != 0 ? false : z14, (r32 & 256) != 0 ? null : str14, false, x61.rShadow.r, i1Var, (r32 & 4096) != 0 ? false : aVar3.b, (r32 & 8192) != 0 ? false : aVar3.c, d0.E(iVar));
             is.n0 n0Var = g0Var.c;
             cVar = new b01.c(str12, c, n0Var != null ? n0Var.a : null);
         } else {
@@ -285,7 +285,7 @@ public abstract class f0 {
                 i3 = i7;
                 str2 = str6;
                 str3 = str16;
-                arrayList = x61.r.r;
+                arrayList = x61.rShadow.r;
             } else {
                 z4 = z16;
                 arrayList = new ArrayList();
@@ -382,21 +382,21 @@ public abstract class f0 {
     }
 
     public static final boolean i(ArrayList arrayList) {
-        x61.r rVar;
+        x61.rShadow rVar;
         long j;
         if (arrayList.size() >= 2) {
             if (arrayList.size() <= 1) {
-                rVar = x61.r.r;
+                rVar = x61.rShadow.r;
             } else {
-                x61.r arrayList2 = new ArrayList();
+                x61.rShadow arrayList2 = new ArrayList();
                 Object obj = arrayList.get(0);
                 int m = d0.m(arrayList);
                 int i = 0;
                 while (i < m) {
                     i++;
                     Object obj2 = arrayList.get(i);
-                    d3.t tVar = (d3.t) obj2;
-                    d3.t tVar2 = (d3.t) obj;
+                    d3.tShadow tVar = (d3.t) obj2;
+                    d3.tShadow tVar2 = (d3.t) obj;
                     float abs = Math.abs(Float.intBitsToFloat((int) (tVar2.g().c() >> 32)) - Float.intBitsToFloat((int) (tVar.g().c() >> 32)));
                     float abs2 = Math.abs(Float.intBitsToFloat((int) (tVar2.g().c() & 4294967295L)) - Float.intBitsToFloat((int) (tVar.g().c() & 4294967295L)));
                     arrayList2.add(new c2.b((Float.floatToRawIntBits(abs) << 32) | (Float.floatToRawIntBits(abs2) & 4294967295L)));
@@ -548,7 +548,7 @@ public abstract class f0 {
         return r3.a(r3Var, Math.max(r3Var.c - 1, 0), false);
     }
 
-    public static final void q(b5.f fVar, d3.t tVar) {
+    public static final void q(b5.f fVar, d3.tShadow tVar) {
         Object g = tVar.k().r.g(d3.x.g);
         if (g == null) {
             g = null;
@@ -556,7 +556,7 @@ public abstract class f0 {
         if (g != null) {
             throw new ClassCastException();
         }
-        d3.t l = tVar.l();
+        d3.tShadow l = tVar.l();
         if (l == null) {
             return;
         }
@@ -574,7 +574,7 @@ public abstract class f0 {
                     int size = j.size();
                     int i = 0;
                     for (int i2 = 0; i2 < size; i2++) {
-                        d3.t tVar2 = (d3.t) j.get(i2);
+                        d3.tShadow tVar2 = (d3.t) j.get(i2);
                         if (tVar2.k().r.c(d3.x.I)) {
                             arrayList.add(tVar2);
                             if (tVar2.c.x() < tVar.c.x()) {
@@ -625,11 +625,11 @@ public abstract class f0 {
     public static final ArrayList t(re reVar) {
         String str;
         int i;
-        x61.r rVar;
-        x61.r rVar2;
+        x61.rShadow rVar;
+        x61.rShadow rVar2;
         k71.k.g(reVar, "<this>");
-        x61.r rVar3 = reVar.a;
-        x61.r rVar4 = x61.r.r;
+        x61.rShadow rVar3 = reVar.a;
+        x61.rShadow rVar4 = x61.rShadow.r;
         if (rVar3 == null) {
             rVar3 = rVar4;
         }
@@ -671,9 +671,9 @@ public abstract class f0 {
             String str8 = m3Var.e;
             List<h3> list = m3Var.q.a;
             if (list != null) {
-                x61.r arrayList3 = new ArrayList();
+                x61.rShadow arrayList3 = new ArrayList();
                 for (h3 h3Var : list) {
-                    x61.r rVar5 = rVar4;
+                    x61.rShadow rVar5 = rVar4;
                     String str9 = h3Var != null ? h3Var.b : null;
                     if (str9 != null) {
                         arrayList3.add(str9);
@@ -695,7 +695,7 @@ public abstract class f0 {
 
     public static final List u(List list) {
         int size = list.size();
-        return size != 0 ? size != 1 ? Collections.unmodifiableList(new ArrayList(list)) : Collections.singletonList(x61.m.U(list)) : x61.r.r;
+        return size != 0 ? size != 1 ? Collections.unmodifiableList(new ArrayList(list)) : Collections.singletonList(x61.m.U(list)) : x61.rShadow.r;
     }
 
     public static final Map v(Map map) {

@@ -3,12 +3,12 @@ package rh;
 import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class c extends f {
+public final class cShadow extends f {
 
-    public static final class a implements c {
+    public static final class a implements cShadow {
         public fl.b a;
         public String b;
         public boolean c;
@@ -28,7 +28,7 @@ public final class c extends f {
             return this.a;
         }
 
-        @Override // rh.c
+        @Override // rh.cShadow
         public final boolean b() {
             return this.d;
         }
@@ -58,7 +58,7 @@ public final class c extends f {
         }
     }
 
-    public static final class b implements c {
+    public static final class b implements cShadow {
         public fl.b a;
         public int b;
         public boolean c;
@@ -77,7 +77,7 @@ public final class c extends f {
             return this.a;
         }
 
-        @Override // rh.c
+        @Override // rh.cShadow
         public final boolean b() {
             return this.d;
         }
@@ -107,8 +107,8 @@ public final class c extends f {
         }
     }
 
-    /* renamed from: rh.c$c, reason: collision with other inner class name */
-    public static final class C0030c implements c {
+    /* renamed from: rh.cShadow$c, reason: collision with other inner class name */
+    public static final class C0030c implements cShadow {
         public fl.b a;
         public boolean b;
         public boolean c;
@@ -125,7 +125,7 @@ public final class c extends f {
             return this.a;
         }
 
-        @Override // rh.c
+        @Override // rh.cShadow
         public final boolean b() {
             return this.b;
         }
@@ -155,7 +155,7 @@ public final class c extends f {
         }
     }
 
-    public static final class d implements c {
+    public static final class d implements cShadow {
         public fl.b a;
         public boolean b;
         public boolean c;
@@ -172,7 +172,7 @@ public final class c extends f {
             return this.a;
         }
 
-        @Override // rh.c
+        @Override // rh.cShadow
         public final boolean b() {
             return this.c;
         }

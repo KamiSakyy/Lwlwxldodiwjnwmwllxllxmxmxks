@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.z;
 import kotlinx.serialization.KSerializer;
 import sy.w;
@@ -46,7 +46,7 @@ public final class ReviewStatusFilter extends d {
     public /* synthetic */ ReviewStatusFilter(int i, l lVar, String str, k0 k0Var) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, ReviewStatusFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, ReviewStatusFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

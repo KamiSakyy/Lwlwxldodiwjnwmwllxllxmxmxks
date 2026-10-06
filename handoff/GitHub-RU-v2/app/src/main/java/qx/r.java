@@ -14,10 +14,10 @@ public final class r {
     public q f;
     public Boolean g;
     public ZonedDateTime h;
-    public x i;
+    public xShadow i;
     public yi j;
 
-    public r(String str, String str2, String str3, int i, wi wiVar, q qVar, Boolean bool, ZonedDateTime zonedDateTime, x xVar, yi yiVar) {
+    public r(String str, String str2, String str3, int i, wi wiVar, q qVar, Boolean bool, ZonedDateTime zonedDateTime, xShadow xVar, yi yiVar) {
         this.a = str;
         this.b = str2;
         this.c = str3;

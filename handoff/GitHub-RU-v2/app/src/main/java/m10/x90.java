@@ -10,7 +10,7 @@ public abstract class x90 {
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
         aa.j0 j0Var = zp.a;
         j50.Companion.getClass();

@@ -14,7 +14,7 @@ import sy.w;
 import w61.i;
 import w61.k;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 import x61.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
@@ -27,7 +27,7 @@ public final class d extends k81.b {
 
     public d(String str, k71.e eVar, r71.b[] bVarArr, KSerializer[] kSerializerArr, Annotation[] annotationArr) {
         this.a = eVar;
-        this.b = r.r;
+        this.b = rShadow.r;
         this.c = w.s(i.r, new i1(12, str, this));
         if (bVarArr.length != kSerializerArr.length) {
             throw new IllegalArgumentException("All subclasses of sealed class " + eVar.c() + " should be marked @Serializable");
@@ -70,7 +70,7 @@ public final class d extends k81.b {
     @Override // k81.b
     public final KSerializer b(Encoder encoder, Object obj) {
         k71.k.g(obj, "value");
-        KSerializer kSerializer = (KSerializer) this.d.get(k71.x.a(obj.getClass()));
+        KSerializer kSerializer = (KSerializer) this.d.get(k71.xShadow.a(obj.getClass()));
         KSerializer b = kSerializer != null ? kSerializer : super.b(encoder, obj);
         if (b != null) {
             return b;

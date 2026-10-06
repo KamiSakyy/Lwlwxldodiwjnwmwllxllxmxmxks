@@ -20,7 +20,7 @@ public final class j7 extends androidx.lifecycle.k1 {
         k71.k.g(r0Var, "updateDiscussionCategoryUseCase");
         this.f11417s = cVar;
         this.f11418t = r0Var;
-        y71.y1 c10 = y71.n1.c(x61.r.r);
+        y71.y1 c10 = y71.n1Shadow.c(x61.rShadow.r);
         this.f11419u = c10;
         this.f11420v = new y71.i1(c10);
     }

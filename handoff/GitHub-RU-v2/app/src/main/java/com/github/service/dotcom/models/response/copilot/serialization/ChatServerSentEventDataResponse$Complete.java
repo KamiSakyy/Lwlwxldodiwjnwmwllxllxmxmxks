@@ -8,7 +8,7 @@ import k71.k;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -63,7 +63,7 @@ public final class ChatServerSentEventDataResponse$Complete extends c {
             this.f = str4;
         }
         if ((i2 & 64) == 0) {
-            this.g = r.r;
+            this.g = rShadow.r;
         } else {
             this.g = list;
         }
@@ -117,7 +117,7 @@ public final class ChatServerSentEventDataResponse$Complete extends c {
         this.d = "";
         this.e = chatMessageAnnotationsResponse;
         this.f = "";
-        this.g = r.r;
+        this.g = rShadow.r;
         this.h = hVar;
     }
 }

@@ -3,7 +3,7 @@ package com.github.rudroid.discussions.navigation;
 import g81.e;
 import jk.j;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kh.a;
 import kotlinx.serialization.KSerializer;
 import sy.w;
@@ -31,7 +31,7 @@ public final class RepositoryDiscussionsEntryPointRoute implements oc.e {
         if (1 == (i & 1)) {
             this.f11580r = jVar;
         } else {
-            c1.l(i, 1, RepositoryDiscussionsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, RepositoryDiscussionsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

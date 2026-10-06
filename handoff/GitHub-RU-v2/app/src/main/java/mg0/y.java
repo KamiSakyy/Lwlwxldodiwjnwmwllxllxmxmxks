@@ -7,10 +7,10 @@ import java.util.List;
 public final class y {
     public String a;
     public int b;
-    public x c;
+    public xShadow c;
     public List d;
 
-    public y(String str, int i, x xVar, List list) {
+    public y(String str, int i, xShadow xVar, List list) {
         this.a = str;
         this.b = i;
         this.c = xVar;

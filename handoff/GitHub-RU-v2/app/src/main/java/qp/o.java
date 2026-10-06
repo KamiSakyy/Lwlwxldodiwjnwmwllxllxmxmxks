@@ -6,9 +6,9 @@ import aa.q0;
 import aa.u0;
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.vp;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements n0 {
@@ -28,7 +28,7 @@ public final class o implements n0 {
         List list = sp.b.a;
         List list2 = sp.b.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -40,7 +40,7 @@ public final class o implements n0 {
             return false;
         }
         o oVar = (o) obj;
-        return this.r.equals(oVar.r) && this.s.equals(oVar.s);
+        return this.rShadow.equals(oVar.r) && this.s.equals(oVar.s);
     }
 
     public final p0 g() {
@@ -48,7 +48,7 @@ public final class o implements n0 {
     }
 
     public final int hashCode() {
-        return this.s.hashCode() + (this.r.hashCode() * 31);
+        return this.s.hashCode() + (this.rShadow.hashCode() * 31);
     }
 
     public final String i() {
@@ -73,6 +73,6 @@ public final class o implements n0 {
     }
 
     public final String toString() {
-        return f4.k(this.s, "UpdateDraftIssueMutation(id=", this.r, ", title=", ")");
+        return f4Shadow.k(this.s, "UpdateDraftIssueMutation(id=", this.r, ", title=", ")");
     }
 }

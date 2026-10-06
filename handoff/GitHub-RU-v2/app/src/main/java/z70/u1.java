@@ -63,7 +63,7 @@ public abstract class u1 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num3 = Integer.valueOf((int) nextLong);
                     } else {
@@ -141,7 +141,7 @@ public abstract class u1 implements aa.a {
         fVar.z0("number");
         fVar.z(t1Var.e);
         fVar.z0("isDraft");
-        jo.f4.C(t1Var.f, aa.c.f, fVar, wVar, "repository");
+        jo.f4Shadow.C(t1Var.f, aa.c.f, fVar, wVar, "repository");
         aa.c.c(w1.a, false).b(fVar, wVar, t1Var.g);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, t1Var.h);

@@ -1,13 +1,13 @@
 package vx0;
 
 import iy0.e1;
-import iy0.f1;
+import iy0.f1Shadow;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 implements aa.a {
     public static final k0 a = new k0();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -26,7 +26,7 @@ public final class k0 implements aa.a {
             }
         }
         eVar.s0();
-        e1 c = f1.c(eVar, wVar);
+        e1 c = f1Shadow.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -48,7 +48,7 @@ public final class k0 implements aa.a {
         bVar.b(fVar, wVar, e1Var.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, e1Var.b);
-        List list = f1.a;
-        f1.d(fVar, wVar, e1Var.c);
+        List list = f1Shadow.a;
+        f1Shadow.d(fVar, wVar, e1Var.c);
     }
 }

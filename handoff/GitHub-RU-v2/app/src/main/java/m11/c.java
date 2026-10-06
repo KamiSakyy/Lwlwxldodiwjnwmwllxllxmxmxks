@@ -1,12 +1,12 @@
 package m11;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements i51.c {
     public static final c a = new c();
-    public static final i51.b b = new i51.b("eventsDroppedCount", f4.x(f4.w(l51.e.class, new l51.a(1))));
-    public static final i51.b c = new i51.b("reason", f4.x(f4.w(l51.e.class, new l51.a(3))));
+    public static final i51.b b = new i51.b("eventsDroppedCount", f4Shadow.x(f4Shadow.w(l51.e.class, new l51.a(1))));
+    public static final i51.b c = new i51.b("reason", f4Shadow.x(f4Shadow.w(l51.e.class, new l51.a(3))));
 
     @Override // i51.a
     public final void a(Object obj, Object obj2) {

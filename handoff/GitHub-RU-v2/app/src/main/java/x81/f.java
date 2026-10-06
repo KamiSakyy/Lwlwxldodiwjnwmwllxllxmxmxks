@@ -7,22 +7,22 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class f {
-    public static final c[] a;
+    public static final cShadow[] a;
     public static final Map b;
 
     static {
-        c cVar = new c(c.i, "");
-        h91.k kVar = c.f;
-        c cVar2 = new c(kVar, "GET");
-        c cVar3 = new c(kVar, "POST");
-        h91.k kVar2 = c.g;
-        c cVar4 = new c(kVar2, "/");
-        c cVar5 = new c(kVar2, "/index.html");
-        h91.k kVar3 = c.h;
-        c cVar6 = new c(kVar3, "http");
-        c cVar7 = new c(kVar3, "https");
-        h91.k kVar4 = c.e;
-        c[] cVarArr = {cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, new c(kVar4, "200"), new c(kVar4, "204"), new c(kVar4, "206"), new c(kVar4, "304"), new c(kVar4, "400"), new c(kVar4, "404"), new c(kVar4, "500"), new c("accept-charset", ""), new c("accept-encoding", "gzip, deflate"), new c("accept-language", ""), new c("accept-ranges", ""), new c("accept", ""), new c("access-control-allow-origin", ""), new c("age", ""), new c("allow", ""), new c("authorization", ""), new c("cache-control", ""), new c("content-disposition", ""), new c("content-encoding", ""), new c("content-language", ""), new c("content-length", ""), new c("content-location", ""), new c("content-range", ""), new c("content-type", ""), new c("cookie", ""), new c("date", ""), new c("etag", ""), new c("expect", ""), new c("expires", ""), new c("from", ""), new c("host", ""), new c("if-match", ""), new c("if-modified-since", ""), new c("if-none-match", ""), new c("if-range", ""), new c("if-unmodified-since", ""), new c("last-modified", ""), new c("link", ""), new c("location", ""), new c("max-forwards", ""), new c("proxy-authenticate", ""), new c("proxy-authorization", ""), new c("range", ""), new c("referer", ""), new c("refresh", ""), new c("retry-after", ""), new c("server", ""), new c("set-cookie", ""), new c("strict-transport-security", ""), new c("transfer-encoding", ""), new c("user-agent", ""), new c("vary", ""), new c("via", ""), new c("www-authenticate", "")};
+        cShadow cVar = new cShadow(c.i, "");
+        h91.kShadow kVar = c.f;
+        cShadow cVar2 = new cShadow(kVar, "GET");
+        cShadow cVar3 = new cShadow(kVar, "POST");
+        h91.kShadow kVar2 = c.g;
+        cShadow cVar4 = new cShadow(kVar2, "/");
+        cShadow cVar5 = new cShadow(kVar2, "/index.html");
+        h91.kShadow kVar3 = c.h;
+        cShadow cVar6 = new cShadow(kVar3, "http");
+        cShadow cVar7 = new cShadow(kVar3, "https");
+        h91.kShadow kVar4 = c.e;
+        cShadow[] cVarArr = {cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7, new cShadow(kVar4, "200"), new cShadow(kVar4, "204"), new cShadow(kVar4, "206"), new cShadow(kVar4, "304"), new cShadow(kVar4, "400"), new cShadow(kVar4, "404"), new cShadow(kVar4, "500"), new cShadow("accept-charset", ""), new cShadow("accept-encoding", "gzip, deflate"), new cShadow("accept-language", ""), new cShadow("accept-ranges", ""), new cShadow("accept", ""), new cShadow("access-control-allow-origin", ""), new cShadow("age", ""), new cShadow("allow", ""), new cShadow("authorization", ""), new cShadow("cache-control", ""), new cShadow("content-disposition", ""), new cShadow("content-encoding", ""), new cShadow("content-language", ""), new cShadow("content-length", ""), new cShadow("content-location", ""), new cShadow("content-range", ""), new cShadow("content-type", ""), new cShadow("cookie", ""), new cShadow("date", ""), new cShadow("etag", ""), new cShadow("expect", ""), new cShadow("expires", ""), new cShadow("from", ""), new cShadow("host", ""), new cShadow("if-match", ""), new cShadow("if-modified-since", ""), new cShadow("if-none-match", ""), new cShadow("if-range", ""), new cShadow("if-unmodified-since", ""), new cShadow("last-modified", ""), new cShadow("link", ""), new cShadow("location", ""), new cShadow("max-forwards", ""), new cShadow("proxy-authenticate", ""), new cShadow("proxy-authorization", ""), new cShadow("range", ""), new cShadow("referer", ""), new cShadow("refresh", ""), new cShadow("retry-after", ""), new cShadow("server", ""), new cShadow("set-cookie", ""), new cShadow("strict-transport-security", ""), new cShadow("transfer-encoding", ""), new cShadow("user-agent", ""), new cShadow("vary", ""), new cShadow("via", ""), new cShadow("www-authenticate", "")};
         a = cVarArr;
         LinkedHashMap linkedHashMap = new LinkedHashMap(61, 1.0f);
         for (int i = 0; i < 61; i++) {
@@ -35,7 +35,7 @@ public abstract class f {
         b = unmodifiableMap;
     }
 
-    public static void a(h91.k kVar) {
+    public static void a(h91.kShadow kVar) {
         k71.k.g(kVar, "name");
         int d = kVar.d();
         for (int i = 0; i < d; i++) {

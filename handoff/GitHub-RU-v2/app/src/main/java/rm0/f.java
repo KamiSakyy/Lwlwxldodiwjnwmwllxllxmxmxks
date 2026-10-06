@@ -36,9 +36,9 @@ public final class f implements z01.c, yb0, y90 {
     public final Object a(String str, String str2, String str3, String str4) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new az0.c(new y00.l(com.github.service.wrapper.a.o(this.s, new ld0.g(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), ga.h.r, false, null, null, 56), 10), 28), this.t);
+                return y71.n1Shadow.y(new az0.c(new y00.l(com.github.service.wrapper.a.o(this.s, new ld0.g(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), ga.h.r, false, null, null, 56), 10), 28), this.t);
             default:
-                return y71.n1.y(new t00.q6(new y00.l(com.github.service.wrapper.a.o(this.s, new v20.g(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), ga.h.r, false, null, null, 56), 10), 27), this.t);
+                return y71.n1Shadow.y(new t00.q6(new y00.l(com.github.service.wrapper.a.o(this.s, new v20.g(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), ga.h.r, false, null, null, 56), 10), 27), this.t);
         }
     }
 
@@ -60,9 +60,9 @@ public final class f implements z01.c, yb0, y90 {
     public final Object c(String str, String str2, String str3) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new c(new y00.l(com.github.service.wrapper.a.o(this.s, new kc0.y2(new aa.u0(str3), str2 == null ? aa.t0.d : new aa.u0(str2), str), ga.h.r, false, null, null, 56), 10), str2, 0), this.t);
+                return y71.n1Shadow.y(new c(new y00.l(com.github.service.wrapper.a.o(this.s, new kc0.y2(new aa.u0(str3), str2 == null ? aa.t0.d : new aa.u0(str2), str), ga.h.r, false, null, null, 56), 10), str2, 0), this.t);
             default:
-                return y71.n1.y(new c(new y00.l(com.github.service.wrapper.a.o(this.s, new u10.y2(new aa.u0(str3), str2 == null ? aa.t0.d : new aa.u0(str2), str), ga.h.r, false, null, null, 56), 10), str2, 2), this.t);
+                return y71.n1Shadow.y(new c(new y00.l(com.github.service.wrapper.a.o(this.s, new u10.y2(new aa.u0(str3), str2 == null ? aa.t0.d : new aa.u0(str2), str), ga.h.r, false, null, null, 56), 10), str2, 2), this.t);
         }
     }
 
@@ -72,11 +72,11 @@ public final class f implements z01.c, yb0, y90 {
             case 0:
                 k71.k.g(str, "assignableId");
                 k71.k.g(bVar, "assignable");
-                return y71.n1.y(new az0.c(new y00.l(in.r.h(this.s.d(new n00(str, arrayList))), 10), 29), this.t);
+                return y71.n1Shadow.y(new az0.c(new y00.l(in.rShadow.h(this.s.d(new n00(str, arrayList))), 10), 29), this.t);
             default:
                 k71.k.g(str, "assignableId");
                 k71.k.g(bVar, "assignable");
-                return y71.n1.y(new t00.q6(new y00.l(in.r.h(this.s.d(new py(str, arrayList))), 10), 28), this.t);
+                return y71.n1Shadow.y(new t00.q6(new y00.l(in.rShadow.h(this.s.d(new py(str, arrayList))), 10), 28), this.t);
         }
     }
 

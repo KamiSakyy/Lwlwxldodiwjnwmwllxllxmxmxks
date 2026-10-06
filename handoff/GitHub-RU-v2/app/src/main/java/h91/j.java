@@ -6,7 +6,7 @@ import java.nio.charset.Charset;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public interface j extends k0, ReadableByteChannel {
-    boolean A0(long j, k kVar);
+    boolean A0(long j, kShadow kVar);
 
     void C0(long j);
 
@@ -26,7 +26,7 @@ public interface j extends k0, ReadableByteChannel {
 
     String p0();
 
-    long q(k kVar);
+    long q(kShadow kVar);
 
     byte readByte();
 

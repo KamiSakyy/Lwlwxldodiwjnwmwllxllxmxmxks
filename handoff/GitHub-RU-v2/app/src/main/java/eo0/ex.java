@@ -7,7 +7,7 @@ import jn0.yb0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ex implements aaShadow.a {
     public static final ex a = new ex();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         kw0.a aVar;

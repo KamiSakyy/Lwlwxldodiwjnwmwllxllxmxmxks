@@ -17,7 +17,7 @@ public abstract class q2 {
         pb.Companion.getClass();
         aa.x xVar = pb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar2 = tb.a;
@@ -41,6 +41,6 @@ public abstract class q2 {
         aa.q0 q0Var4 = dj.m;
         k71.k.g(q0Var4, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("organization", q0Var4, (String) null, rVar, no.a.s(rn.j, new aa.u0(new aa.t("repositoryOwner"))), r5));
+        a = sy.d0Shadow.n(new aa.m("organization", q0Var4, (String) null, rVar, no.a.s(rn.j, new aa.u0(new aa.t("repositoryOwner"))), r5));
     }
 }

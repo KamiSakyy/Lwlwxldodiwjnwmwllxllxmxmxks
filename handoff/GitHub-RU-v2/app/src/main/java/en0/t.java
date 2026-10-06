@@ -10,7 +10,7 @@ public abstract class t {
     static {
         tb.Companion.getClass();
         aa.p a2 = v8.l0.a(tb.a);
-        x61.r rVar = x61.r.r;
-        a = sy.d0.n(new aa.m("mobileCapabilities", a2, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        a = sy.d0Shadow.n(new aa.m("mobileCapabilities", a2, (String) null, rVar, rVar, rVar));
     }
 }

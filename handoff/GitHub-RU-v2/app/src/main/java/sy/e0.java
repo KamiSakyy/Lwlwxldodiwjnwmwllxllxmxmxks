@@ -147,7 +147,7 @@ public abstract class e0 {
         return new xn.k(lVar, aiModelPolicyResponse.b);
     }
 
-    public static final b01.j e(is.a0 a0Var) {
+    public static final b01.j e(is.a0Shadow a0Var) {
         k0 k0Var;
         pv.c cVar = a0Var.l;
         com.github.service.models.response.a e = l0.e(a0Var.c.b.b);
@@ -171,7 +171,7 @@ public abstract class e0 {
 
     public static final t10.h f(w0 w0Var) {
         cq.w wVar = w0Var.b;
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         if (wVar != null) {
             return new t10.b(wVar.b, wVar.c, wVar.d, l0.e(wVar.a.c), xp.a.a(wVar.f.c), wVar.e, rVar);
         }
@@ -321,7 +321,7 @@ public abstract class e0 {
     }
 
     public static androidx.compose.foundation.lazy.layout.o1 l(String str) {
-        q81.v vVar;
+        q81.vShadow vVar;
         int i;
         String str2;
         k71.k.g(str, "statusLine");
@@ -332,21 +332,21 @@ public abstract class e0 {
             }
             int charAt = str.charAt(7) - '0';
             if (charAt == 0) {
-                vVar = q81.v.t;
+                vVar = q81.vShadow.t;
             } else {
                 if (charAt != 1) {
                     throw new ProtocolException("Unexpected status line: ".concat(str));
                 }
-                vVar = q81.v.u;
+                vVar = q81.vShadow.u;
             }
         } else if (t71.w.F(str, "ICY ", false)) {
-            vVar = q81.v.t;
+            vVar = q81.vShadow.t;
             i = 4;
         } else {
             if (!t71.w.F(str, "SOURCETABLE ", false)) {
                 throw new ProtocolException("Unexpected status line: ".concat(str));
             }
-            vVar = q81.v.u;
+            vVar = q81.vShadow.u;
             i = 12;
         }
         int i2 = i + 3;
@@ -430,9 +430,9 @@ public abstract class e0 {
         d3.kShadow kVar2;
         boolean z8;
         int i3;
-        d3.b0 b0Var = d3.x.a;
+        d3.b0 b0Var = d3.xShadow.a;
         d3.b0 b0Var2 = d3.n.a;
-        d3.o y = g0Var.y();
+        d3.oShadow y = g0Var.y();
         int i4 = 8;
         if (y == null || (h0Var2 = y.r) == null) {
             i = 2;
@@ -489,7 +489,7 @@ public abstract class e0 {
                                 if (k71.k.b(b0Var3, d3.x.r)) {
                                     k71.k.e(obj2, "null cannot be cast to non-null type androidx.compose.ui.autofill.ContentDataType");
                                     dVar = (x1.d) obj2;
-                                } else if (k71.k.b(b0Var3, d3.x.a)) {
+                                } else if (k71.k.b(b0Var3, d3.xShadow.a)) {
                                     k71.k.e(obj2, "null cannot be cast to non-null type kotlin.collections.List<kotlin.String>");
                                     CharSequence charSequence = (String) x61.m.W((List) obj2);
                                     if (charSequence != null) {
@@ -572,14 +572,14 @@ public abstract class e0 {
             kVar = kVar2;
             z = z8;
         }
-        d3.o y2 = g0Var.y();
+        d3.oShadow y2 = g0Var.y();
         if (y2 != null && y2.t && !y2.u) {
             y2 = y2.b();
-            x.d0 d0Var = new x.d0(((l1.e) g0Var.o().s).t);
+            x.d0Shadow d0Var = new x.d0(((l1.e) g0Var.o().s).t);
             d0Var.b(g0Var.o());
             while (d0Var.i()) {
                 v2.g0 g0Var2 = (v2.g0) d0Var.k(d0Var.b - 1);
-                d3.o y3 = g0Var2.y();
+                d3.oShadow y3 = g0Var2.y();
                 if (y3 != null && !y3.t) {
                     y2.e(y3);
                     if (!y3.u) {

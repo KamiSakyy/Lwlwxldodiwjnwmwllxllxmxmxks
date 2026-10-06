@@ -8,7 +8,7 @@ import m10.eh;
 import m10.fg0;
 import m10.hg0;
 import m10.i30;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -19,16 +19,16 @@ public abstract class v {
         eh.Companion.getClass();
         x xVar = eh.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("UserList");
+        List n = d0Shadow.n("UserList");
         List list = rx.g.a;
         aa.s c = no.a.c(list, "selections", "UserList", n, list);
         ah.Companion.getClass();
         x xVar2 = ah.a;
         List r = x61.l.r(new aa.s[]{mVar, c, new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         fg0.Companion.getClass();
-        List n2 = d0.n(new aa.m("nodes", l0.a(fg0.c), (String) null, rVar, rVar, r));
+        List n2 = d0Shadow.n(new aa.m("nodes", l0.a(fg0.c), (String) null, rVar, rVar, r));
         aa.m mVar2 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         hg0.Companion.getClass();
         aa.r b2 = l0.b(hg0.a);

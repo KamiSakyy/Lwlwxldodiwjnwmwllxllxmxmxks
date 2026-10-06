@@ -13,12 +13,12 @@ public abstract class t3 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         qb.Companion.getClass();
         aa.q0 q0Var = qb.a;
         k71.k.g(q0Var, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("deleteUserDashboardPin", q0Var, (String) null, rVar, no.a.s(vp.X, new aa.u0(a0.s0.p("itemId", new aa.t("itemId")))), n));
+        a = sy.d0Shadow.n(new aa.m("deleteUserDashboardPin", q0Var, (String) null, rVar, no.a.s(vp.X, new aa.u0(a0.s0.p("itemId", new aa.t("itemId")))), n));
     }
 }

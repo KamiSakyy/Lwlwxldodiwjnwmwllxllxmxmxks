@@ -8,7 +8,7 @@ import androidx.preference.Preference;
 import e7.v;
 import k71.k;
 import k71.m;
-import k71.x;
+import k71.xShadow;
 import t71.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -18,7 +18,7 @@ public final class TrailingMetadataPreference extends Preference {
 
     static {
         r71.e mVar = new m(TrailingMetadataPreference.class, "metadata", "getMetadata()Ljava/lang/String;", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         g0 = new r71.e[]{mVar};
     }
 

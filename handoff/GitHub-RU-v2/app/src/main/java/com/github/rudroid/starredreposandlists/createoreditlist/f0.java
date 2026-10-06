@@ -29,7 +29,7 @@ public final /* synthetic */ class f0 implements j71.e {
                 androidx.compose.runtime.s sVar = (androidx.compose.runtime.s) obj;
                 int intValue = ((Integer) obj2).intValue();
                 if (sVar.S(intValue & 1, (intValue & 3) != 2)) {
-                    w1.r f = f0.o.f(w1.o.a, ih.d.b(sVar).b, d2.a0.b);
+                    w1.r f = f0.o.f(w1.o.a, ih.d.b(sVar).b, d2.a0Shadow.b);
                     xz0.h hVar = (xz0.h) ((fl.f) i3Var.getValue()).b;
                     String str3 = (hVar == null || (str2 = hVar.t) == null) ? "" : str2;
                     xz0.h hVar2 = (xz0.h) ((fl.f) i3Var.getValue()).b;
@@ -71,7 +71,7 @@ public final /* synthetic */ class f0 implements j71.e {
                 androidx.compose.runtime.s sVar2 = (androidx.compose.runtime.s) obj;
                 int intValue2 = ((Integer) obj2).intValue();
                 if (sVar2.S(intValue2 & 1, (intValue2 & 3) != 2)) {
-                    w1.r f2 = f0.o.f(w1.o.a, ih.d.b(sVar2).b, d2.a0.b);
+                    w1.r f2 = f0.o.f(w1.o.a, ih.d.b(sVar2).b, d2.a0Shadow.b);
                     boolean z = ((fl.f) i3Var2.getValue()).b != null;
                     f1 f1Var = this.u;
                     m1.b(f2, i3Var2, z, r1.i.d(1142507779, new f0(i3Var2, editListFragment2, f1Var, 0), sVar2), r1.i.d(1874683234, new g0(f1Var, editListFragment2, 0), sVar2), null, sVar2, 27648, 32);

@@ -4,7 +4,7 @@ import a0.s0;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -30,7 +30,7 @@ public final class PullsWidgetPullRow {
 
     public /* synthetic */ PullsWidgetPullRow(int i, String str, int i2, String str2, String str3, String str4, CheckStatusState checkStatusState) {
         if (63 != (i & 63)) {
-            c1.l(i, 63, PullsWidgetPullRow$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 63, PullsWidgetPullRow$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;

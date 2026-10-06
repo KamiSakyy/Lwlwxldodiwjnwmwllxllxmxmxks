@@ -76,7 +76,7 @@ public final class t6 extends androidx.lifecycle.k1 implements com.github.rudroi
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.B = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new w6(this, str, null), 3);
+        this.B = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new w6(this, str, null), 3);
     }
 
     public final ArrayList P() {

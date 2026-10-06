@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import g81.e;
 import gn.n;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -56,7 +56,7 @@ public final class FetchUsersParams$FetchContributorsParams implements n {
         if (1 == (i & 1)) {
             this.r = str;
         } else {
-            c1.l(i, 1, FetchUsersParams$FetchContributorsParams$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, FetchUsersParams$FetchContributorsParams$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

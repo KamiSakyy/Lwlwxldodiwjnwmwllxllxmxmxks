@@ -13,7 +13,7 @@ public abstract class n2 {
     public static final aa.q0 f;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
         aa.j0 j0Var = yh.a;
         bs.Companion.getClass();

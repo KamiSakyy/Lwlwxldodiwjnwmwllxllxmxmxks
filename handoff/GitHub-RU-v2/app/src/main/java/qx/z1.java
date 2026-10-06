@@ -7,7 +7,7 @@ import m10.p80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z1 implements aa.a {
     public static final z1 a = new z1();
-    public static final List b = sy.d0.o("displayName", "provider", "url");
+    public static final List b = sy.d0Shadow.o("displayName", "provider", "url");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

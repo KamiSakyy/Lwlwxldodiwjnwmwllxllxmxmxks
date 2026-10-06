@@ -20,7 +20,7 @@ import pz0.td;
 import pz0.vd;
 import pz0.wk;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -31,14 +31,14 @@ public abstract class d {
     static {
         pd.Companion.getClass();
         r b = l0.b(pd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar = xd.a;
         k.g(xVar, "type");
         List r = l.r(new m[]{mVar, new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2Group");
+        List n = d0Shadow.n("ProjectV2Group");
         List list = by0.a.a;
         List r2 = l.r(new s[]{mVar2, no.a.c(list, "selections", "ProjectV2Group", n, list), new m("viewGroupId", xVar, (String) null, rVar, rVar, rVar)});
         vd.Companion.getClass();
@@ -53,7 +53,7 @@ public abstract class d {
         ro.Companion.getClass();
         r b2 = l0.b(ro.a);
         rr.Companion.getClass();
-        List r4 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2View", d0.n("ProjectV2View"), l.r(new m[]{mVar5, new m("groups", b2, (String) null, rVar, l.r(new aa.k[]{new aa.k(rr.h, new u0(new t("after"))), new aa.k(rr.i, new u0(new t("first")))}), r3)}))});
+        List r4 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2View", d0Shadow.n("ProjectV2View"), l.r(new m[]{mVar5, new m("groups", b2, (String) null, rVar, l.r(new aa.k[]{new aa.k(rr.h, new u0(new t("after"))), new aa.k(rr.i, new u0(new t("first")))}), r3)}))});
         wk.Companion.getClass();
         j0 j0Var = wk.a;
         k.g(j0Var, "type");

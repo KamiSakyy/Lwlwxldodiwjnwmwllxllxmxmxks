@@ -56,13 +56,13 @@ public final class h implements Parcelable.Creator {
                 return new w(parcel.readString(), parcel.readString(), parcel.readString());
             case 5:
                 k71.k.g(parcel, "parcel");
-                return new x(parcel.readString());
+                return new xShadow(parcel.readString());
             case 6:
                 k71.k.g(parcel, "parcel");
                 return new y(parcel.readString(), parcel.readString());
             case 7:
                 k71.k.g(parcel, "parcel");
-                return new a0(parcel.readString());
+                return new a0Shadow(parcel.readString());
             case 8:
                 k71.k.g(parcel, "parcel");
                 return new b0(parcel.readString());
@@ -194,11 +194,11 @@ public final class h implements Parcelable.Creator {
             case 4:
                 return new w[i];
             case 5:
-                return new x[i];
+                return new xShadow[i];
             case 6:
                 return new y[i];
             case 7:
-                return new a0[i];
+                return new a0Shadow[i];
             case 8:
                 return new b0[i];
             case 9:

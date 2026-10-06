@@ -6,7 +6,7 @@ import jo.ij0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d20 implements aaShadow.a {
     public static final d20 a = new d20();
-    public static final List b = sy.d0.o("isEmployee", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("isEmployee", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -49,7 +49,7 @@ public final class d20 implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(ij0Var, "value");
         fVar.z0("isEmployee");
-        jo.f4.C(ij0Var.a, aa.c.f, fVar, wVar, "id");
+        jo.f4Shadow.C(ij0Var.a, aa.c.f, fVar, wVar, "id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, ij0Var.b);
         fVar.z0("__typename");

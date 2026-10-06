@@ -1,12 +1,12 @@
 package ct;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = sy.d0.o("owner", "name", "isPrivate", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("owner", "name", "isPrivate", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;

@@ -7,7 +7,7 @@ import u10.ux;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bn implements aaShadow.a {
     public static final bn a = new bn();
-    public static final List b = sy.d0.n("search");
+    public static final List b = sy.d0Shadow.n("search");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -13,7 +13,7 @@ import java.util.concurrent.CancellationException;
 import v71.q1;
 import y71.h1;
 import y71.m1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.s1;
 import y71.y1;
 
@@ -22,7 +22,7 @@ public final class AppLockFragment extends Hilt_AppLockFragment {
     public static final a Companion = new a();
     public v D0;
     public k E0;
-    public final y1 F0 = n1.c(Boolean.FALSE);
+    public final y1 F0 = n1Shadow.c(Boolean.FALSE);
     public final androidx.fragment.app.t G0 = f4(new h.b() { // from class: com.github.rudroid.settings.applock.m
         public final void d(Object obj) {
             k71.k.g((h.a) obj, "it");
@@ -59,16 +59,16 @@ public final class AppLockFragment extends Hilt_AppLockFragment {
             k71.k.m("appLockStore");
             throw null;
         }
-        y71.c h = n1.h(new y(appLockFragment, vVar, v.c(appLockFragment.i4()) ? 2131951790 : 2131951797, null));
+        y71.c h = n1Shadow.h(new y(appLockFragment, vVar, v.c(appLockFragment.i4()) ? 2131951790 : 2131951797, null));
         androidx.lifecycle.x i = d1.i(appLockFragment);
-        y11.l n = n1.n(h, 0);
-        m1 a2 = n1.a(0, n.a, (x71.a) n.c);
+        y11.l n = n1Shadow.n(h, 0);
+        m1 a2 = n1Shadow.a(0, n.a, (x71.a) n.c);
         a71.h hVar = (a71.h) n.d;
         y71.i iVar = (y71.i) n.b;
-        a81.t tVar = n1.a;
+        a81.t tVar = n1Shadow.a;
         s1 s1Var = y71.q1.a;
         s1 s1Var2 = y71.q1.b;
-        v71.b0.y(i, hVar, s1Var2.equals(s1Var) ? v71.a0.r : v71.a0.u, new m7.x(s1Var2, iVar, a2, tVar, (a71.c) null));
+        v71.b0.y(i, hVar, s1Var2.equals(s1Var) ? v71.a0Shadow.r : v71.a0Shadow.u, new m7.x(s1Var2, iVar, a2, tVar, (a71.c) null));
         appLockFragment.H0 = w0.a(new h1(a2), appLockFragment, androidx.lifecycle.w.u, new q(appLockFragment, null));
     }
 

@@ -3,12 +3,12 @@ package sd0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v {
     public String a;
-    public a0 b;
+    public a0Shadow b;
     public z c;
     public b0 d;
     public c0 e;
 
-    public v(String str, a0 a0Var, z zVar, b0 b0Var, c0 c0Var) {
+    public v(String str, a0Shadow a0Var, z zVar, b0 b0Var, c0 c0Var) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = a0Var;
@@ -30,7 +30,7 @@ public final class v {
 
     public final int hashCode() {
         int hashCode = this.a.hashCode() * 31;
-        a0 a0Var = this.b;
+        a0Shadow a0Var = this.b;
         int hashCode2 = (hashCode + (a0Var == null ? 0 : a0Var.hashCode())) * 31;
         z zVar = this.c;
         int hashCode3 = (hashCode2 + (zVar == null ? 0 : zVar.hashCode())) * 31;

@@ -25,7 +25,7 @@ public final class x80 implements aaShadow.n0 {
         List list = en0.x5.a;
         List list2 = en0.x5.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -45,7 +45,7 @@ public final class x80 implements aaShadow.n0 {
     }
 
     public final int hashCode() {
-        return this.u.hashCode() + jo.f4.a(this.t, jo.f4.a(this.s, this.r.hashCode() * 31, 31), 31);
+        return this.u.hashCode() + jo.f4Shadow.a(this.t, jo.f4Shadow.a(this.s, this.r.hashCode() * 31, 31), 31);
     }
 
     public final String i() {
@@ -66,14 +66,14 @@ public final class x80 implements aaShadow.n0 {
         fVar.z0("id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, this.r);
-        jo.f4.e(fVar, "userIds", bVar).d(fVar, wVar, this.s);
-        jo.f4.e(fVar, "teamIds", bVar).d(fVar, wVar, this.t);
+        jo.f4Shadow.e(fVar, "userIds", bVar).d(fVar, wVar, this.s);
+        jo.f4Shadow.e(fVar, "teamIds", bVar).d(fVar, wVar, this.t);
         fVar.z0("union");
         aa.c.d(aa.c.k).d(fVar, wVar, this.u);
     }
 
     public final String toString() {
-        StringBuilder t = jo.f4.t(this.s, "UpdatePullRequestReviewersMutation(id=", this.r, ", userIds=", ", teamIds=");
+        StringBuilder t = jo.f4Shadow.t(this.s, "UpdatePullRequestReviewersMutation(id=", this.r, ", userIds=", ", teamIds=");
         t.append(this.t);
         t.append(", union=");
         t.append(this.u);

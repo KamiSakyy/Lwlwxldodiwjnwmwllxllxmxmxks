@@ -30,7 +30,7 @@ public final class b {
     }
 
     public final String toString() {
-        return jo.f4.s(com.github.rudroid.copilot.h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
+        return jo.f4Shadow.s(com.github.rudroid.copilot.h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
     }
     public Object c(Object p1, Object p2) { return null; }
     public Object e(Object p1, Object p2, Object p3) { return null; }

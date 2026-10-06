@@ -7,7 +7,7 @@ import jo.ca0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cw implements aaShadow.a {
     public static final cw a = new cw();
-    public static final List b = sy.d0.n("undoUserDisinterest");
+    public static final List b = sy.d0Shadow.n("undoUserDisinterest");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

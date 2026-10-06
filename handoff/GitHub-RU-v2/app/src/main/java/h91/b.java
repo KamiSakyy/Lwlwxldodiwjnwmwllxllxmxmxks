@@ -43,16 +43,16 @@ public abstract class b {
             throw new IllegalArgumentException("Failed requirement.");
         }
         for (int i8 = i2; i8 < i3; i8++) {
-            if (((k) arrayList4.get(i8)).d() < i7) {
+            if (((kShadow) arrayList4.get(i8)).d() < i7) {
                 throw new IllegalArgumentException("Failed requirement.");
             }
         }
-        k kVar = (k) arrayList.get(i2);
-        k kVar2 = (k) arrayList4.get(i3 - 1);
+        kShadow kVar = (kShadow) arrayList.get(i2);
+        kShadow kVar2 = (kShadow) arrayList4.get(i3 - 1);
         if (i7 == kVar.d()) {
             int intValue = ((Number) arrayList5.get(i2)).intValue();
             int i9 = i2 + 1;
-            k kVar3 = (k) arrayList4.get(i9);
+            kShadow kVar3 = (kShadow) arrayList4.get(i9);
             i4 = i9;
             i5 = intValue;
             kVar = kVar3;
@@ -76,7 +76,7 @@ public abstract class b {
                 i7++;
             }
             if (i4 + 1 == i3) {
-                if (i12 != ((k) arrayList4.get(i4)).d()) {
+                if (i12 != ((kShadow) arrayList4.get(i4)).d()) {
                     throw new IllegalStateException("Check failed.");
                 }
                 hVar.M0(((Number) arrayList5.get(i4)).intValue());
@@ -91,7 +91,7 @@ public abstract class b {
         }
         int i13 = 1;
         for (int i14 = i4 + 1; i14 < i3; i14++) {
-            if (((k) arrayList4.get(i14 - 1)).i(i7) != ((k) arrayList4.get(i14)).i(i7)) {
+            if (((kShadow) arrayList4.get(i14 - 1)).i(i7) != ((kShadow) arrayList4.get(i14)).i(i7)) {
                 i13++;
             }
         }
@@ -100,28 +100,28 @@ public abstract class b {
         hVar.M0(i13);
         hVar.M0(i5);
         for (int i15 = i4; i15 < i3; i15++) {
-            int i16 = ((k) arrayList4.get(i15)).i(i7);
-            if (i15 == i4 || i16 != ((k) arrayList4.get(i15 - 1)).i(i7)) {
+            int i16 = ((kShadow) arrayList4.get(i15)).i(i7);
+            if (i15 == i4 || i16 != ((kShadow) arrayList4.get(i15 - 1)).i(i7)) {
                 hVar.M0(i16 & 255);
             }
         }
         h hVar3 = new h();
         int i17 = i4;
         while (i17 < i3) {
-            byte i18 = ((k) arrayList4.get(i17)).i(i7);
+            byte i18 = ((kShadow) arrayList4.get(i17)).i(i7);
             int i19 = i17 + 1;
             int i20 = i19;
             while (true) {
                 if (i20 >= i3) {
                     i20 = i3;
                     break;
-                } else if (i18 != ((k) arrayList4.get(i20)).i(i7)) {
+                } else if (i18 != ((kShadow) arrayList4.get(i20)).i(i7)) {
                     break;
                 } else {
                     i20++;
                 }
             }
-            if (i19 == i20 && i7 + 1 == ((k) arrayList4.get(i17)).d()) {
+            if (i19 == i20 && i7 + 1 == ((kShadow) arrayList4.get(i17)).d()) {
                 hVar.M0(((Number) arrayList5.get(i17)).intValue());
                 arrayList3 = arrayList5;
                 j2 = j6;
@@ -156,7 +156,7 @@ public abstract class b {
     */
     public static y f(k... kVarArr) {
         if (kVarArr.length == 0) {
-            return new y(new k[0], new int[]{0, -1});
+            return new y(new kShadow[0], new int[]{0, -1});
         }
         ArrayList arrayList = new ArrayList((Collection) new x61.j(kVarArr, false));
         x61.p.H(arrayList);
@@ -169,20 +169,20 @@ public abstract class b {
         int i2 = 0;
         int i3 = 0;
         while (i2 < length) {
-            arrayList2.set(sy.d0.g(arrayList, kVarArr[i2]), Integer.valueOf(i3));
+            arrayList2.set(sy.d0Shadow.g(arrayList, kVarArr[i2]), Integer.valueOf(i3));
             i2++;
             i3++;
         }
-        if (((k) arrayList.get(0)).d() <= 0) {
+        if (((kShadow) arrayList.get(0)).d() <= 0) {
             throw new IllegalArgumentException("the empty byte string is not a supported option");
         }
         int i4 = 0;
         while (i4 < arrayList.size()) {
-            k kVar = (k) arrayList.get(i4);
+            kShadow kVar = (kShadow) arrayList.get(i4);
             int i5 = i4 + 1;
             int i6 = i5;
             while (i6 < arrayList.size()) {
-                k kVar2 = (k) arrayList.get(i6);
+                kShadow kVar2 = (kShadow) arrayList.get(i6);
                 kVar2.getClass();
                 k71.k.g(kVar, "prefix");
                 if (kVar2.l(0, kVar, kVar.d())) {
@@ -208,7 +208,7 @@ public abstract class b {
         }
         Object[] copyOf = Arrays.copyOf(kVarArr, kVarArr.length);
         k71.k.f(copyOf, "copyOf(...)");
-        return new y((k[]) copyOf, iArr);
+        return new y((kShadow[]) copyOf, iArr);
     }
 
     public static final u g(InputStream inputStream) {

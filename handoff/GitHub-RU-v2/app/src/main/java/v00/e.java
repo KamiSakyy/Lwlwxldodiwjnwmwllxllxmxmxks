@@ -7,7 +7,7 @@ import jo.wo;
 import m10.sa0;
 import t00.g3;
 import t00.h7;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements z01.k, mi0 {
@@ -29,7 +29,7 @@ public final class e implements z01.k, mi0 {
     }
 
     public final y71.i b() {
-        return n1.y(new g3(in.r.h(this.r.d(new q80(new sa0()))), 22), this.t);
+        return n1.y(new g3(in.rShadow.h(this.r.d(new q80(new sa0()))), 22), this.t);
     }
 
     public final Object h() {

@@ -2,12 +2,12 @@ package sr;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s implements aa.a {
     public static final s a = new s();
-    public static final List b = d0.o("__typename", "id", "name", "owner", "isPrivate");
+    public static final List b = d0Shadow.o("__typename", "id", "name", "owner", "isPrivate");
 
     public final Object a(ea.e eVar, w wVar) {
         Boolean bool;

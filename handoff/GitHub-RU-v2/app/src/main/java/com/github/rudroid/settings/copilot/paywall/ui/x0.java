@@ -72,16 +72,16 @@ public final class x0 {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar2, eVar, a2);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar2, eVar4, c);
             ub.b(str, (w1.r) null, 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar2).o, sVar, 0, 0, 131070);
             sVar2 = sVar;

@@ -7,8 +7,8 @@ public abstract class ac {
     public static final zb Companion = new zb();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("DeploymentEnvironmentChangedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("DeploymentEnvironmentChangedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

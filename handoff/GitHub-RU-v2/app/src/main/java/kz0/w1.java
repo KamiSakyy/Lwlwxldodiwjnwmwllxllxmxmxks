@@ -14,7 +14,7 @@ public abstract class w1 {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         aa.x xVar2 = td.a;
@@ -25,7 +25,7 @@ public abstract class w1 {
         List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = dp0.b.a;
         aa.s c = no.a.c(list, "selections", "Actor", r, list);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list2 = gw0.c.a;
         List r2 = x61.l.r(new aa.s[]{mVar, mVar2, mVar3, mVar4, c, no.a.c(list2, "selections", "User", n, list2)});
         w80.Companion.getClass();

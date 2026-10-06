@@ -32,7 +32,7 @@ public final class l0 extends androidx.lifecycle.k1 {
         g1.a aVar = com.github.rudroid.utilities.ui.g1.Companion;
         b bVar = new b(str, 4);
         aVar.getClass();
-        y71.y1 c = y71.n1.c(new com.github.rudroid.utilities.ui.t1(bVar));
+        y71.y1 c = y71.n1Shadow.c(new com.github.rudroid.utilities.ui.t1(bVar));
         this.y = c;
         this.z = com.github.rudroid.utilities.w0.f(c, androidx.lifecycle.d1.k(this), new k0(this, 0));
     }
@@ -43,7 +43,7 @@ public final class l0 extends androidx.lifecycle.k1 {
         if (bVar == null || (str = bVar.a) == null) {
             str = this.x;
         }
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new o0(this, str, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new o0(this, str, null), 3);
     }
 
     public static final class b {
@@ -87,7 +87,7 @@ public final class l0 extends androidx.lifecycle.k1 {
         }
 
         public final String toString() {
-            return jo.f4.s(com.github.rudroid.m0.o("DescriptionEditorState(text=", this.a, ", saveEnabled=", ", successfullySaved=", this.b), this.c, ")");
+            return jo.f4Shadow.s(com.github.rudroid.m0.o("DescriptionEditorState(text=", this.a, ", saveEnabled=", ", successfullySaved=", this.b), this.c, ")");
         }
 
         public /* synthetic */ b(String str, int i) {

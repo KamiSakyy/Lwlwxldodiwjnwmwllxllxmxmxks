@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bf implements aaShadow.a {
     public static final bf a = new bf();
-    public static final List b = sy.d0.o("id", "pullRequestState", "isDraft", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "pullRequestState", "isDraft", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;
@@ -77,7 +77,7 @@ public final class bf implements aaShadow.a {
         fVar.z0("pullRequestState");
         fVar.I(mmVar.b.r);
         fVar.z0("isDraft");
-        jo.f4.C(mmVar.c, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(mmVar.c, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, mmVar.d);
     }
 }

@@ -17,7 +17,7 @@ public final class p extends d21.a {
     public p(boolean z, String str, int i, int i2, long j) {
         this.r = z;
         this.s = str;
-        this.t = sy.o.o(i) - 1;
+        this.t = sy.oShadow.o(i) - 1;
         this.u = sy.n.M(i2) - 1;
         this.v = j;
     }

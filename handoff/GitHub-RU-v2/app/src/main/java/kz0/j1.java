@@ -16,13 +16,13 @@ public abstract class j1 {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("FeedFilter");
+        List n = sy.d0Shadow.n("FeedFilter");
         List list = lr0.a.a;
         List r = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "FeedFilter", n, list)});
         ub.Companion.getClass();
-        List n2 = sy.d0.n(new aa.m("filters", v8.l0.a(v8.l0.b(ub.a)), (String) null, rVar, rVar, r));
+        List n2 = sy.d0Shadow.n(new aa.m("filters", v8.l0.a(v8.l0.b(ub.a)), (String) null, rVar, rVar, r));
         qb.Companion.getClass();
         aa.m mVar2 = new aa.m("feed", v8.l0.b(qb.d), (String) null, rVar, rVar, n2);
         td.Companion.getClass();

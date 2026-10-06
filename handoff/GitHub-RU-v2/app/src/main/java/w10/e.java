@@ -3,11 +3,11 @@ package w10;
 import aa.w;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class e implements aa.a {
-    public static final List a = d0.n("achievements");
+    public static final List a = d0Shadow.n("achievements");
 
     public static v10.f c(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

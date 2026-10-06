@@ -2,7 +2,7 @@ package i2;
 
 import c2.c;
 import com.google.android.gms.measurement.internal.x3;
-import d2.a0;
+import d2.a0Shadow;
 import d2.r;
 import k71.k;
 import s3.m;
@@ -52,7 +52,7 @@ public abstract class b {
                 } else {
                     l lVar3 = this.f25765r;
                     if (lVar3 == null) {
-                        lVar3 = a0.g();
+                        lVar3 = a0Shadow.g();
                         this.f25765r = lVar3;
                     }
                     lVar3.c(f6);
@@ -72,7 +72,7 @@ public abstract class b {
                 } else {
                     l lVar5 = this.f25765r;
                     if (lVar5 == null) {
-                        lVar5 = a0.g();
+                        lVar5 = a0Shadow.g();
                         this.f25765r = lVar5;
                     }
                     lVar5.f(lVar);
@@ -101,7 +101,7 @@ public abstract class b {
                         r t10 = bVar.f24208s.t();
                         l lVar6 = this.f25765r;
                         if (lVar6 == null) {
-                            lVar6 = a0.g();
+                            lVar6 = a0Shadow.g();
                             this.f25765r = lVar6;
                         }
                         try {

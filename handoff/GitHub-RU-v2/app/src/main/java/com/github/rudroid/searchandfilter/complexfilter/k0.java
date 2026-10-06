@@ -9,7 +9,7 @@ import y71.y1;
 public final class k0<T> extends h0<T> {
     public Object e;
 
-    public k0(Object obj, com.github.rudroid.profile.ui.h hVar) {
+    public k0(Object obj, com.github.rudroid.profile.ui.hShadow hVar) {
         super(hVar);
         this.e = obj;
     }

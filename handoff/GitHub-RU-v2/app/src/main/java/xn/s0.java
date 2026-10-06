@@ -21,7 +21,7 @@ public final class s0 {
         String str6 = (i & 2) != 0 ? "" : str2;
         String str7 = (i & 4) != 0 ? "" : str3;
         String str8 = (i & 8) != 0 ? "" : str4;
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
     }
 
     public static s0 a(s0 s0Var, String str, String str2, List list, int i) {

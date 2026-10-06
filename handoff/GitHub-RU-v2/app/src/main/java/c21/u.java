@@ -5,7 +5,7 @@ import android.os.Looper;
 import android.text.TextUtils;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class u {
+public abstract class uShadow {
     public static final Object a = new Object();
     public static boolean b;
     public static int c;

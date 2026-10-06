@@ -191,7 +191,7 @@ public final class n {
             eh.i.b(null, p05, null, null, null, null, null, d2, (j71.c) N5, null, 0L, sVar2, 0, 0, 1661);
             w1.o oVar = w1.o.a;
             androidx.compose.foundation.layout.b.g(sVar2, p2.f(oVar, 20));
-            ub.b(i4.p0(2131954516, sVar2), androidx.compose.foundation.layout.b.y(f0.o.f(p2.e(oVar, 1.0f), ih.d.b(sVar2).b, d2.a0.b), ih.a.n, ih.a.l), 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar2).b, sVar2, 0, 0, 131068);
+            ub.b(i4.p0(2131954516, sVar2), androidx.compose.foundation.layout.b.y(f0.o.f(p2.e(oVar, 1.0f), ih.d.b(sVar2).b, d2.a0Shadow.b), ih.a.n, ih.a.l), 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar2).b, sVar2, 0, 0, 131068);
             a.g gVar = a;
             com.github.rudroid.fileschanged.ui.k0.a((w1.r) null, gVar, fVar, false, cd.t.b(gVar), cd.t.a(gVar), false, c, b, sVar, ((i2 << 3) & 896) | 113249328, 65);
             fVar2 = fVar;
@@ -267,7 +267,7 @@ public final class n {
             }
             l1 l1Var = (l1) N3;
             w1.r rVar3 = w1.o.a;
-            w1.r x = androidx.compose.foundation.layout.b.x(f0.o.f(p2.u(p2.e(rVar3, 1.0f)), ih.d.b(sVar2).b, d2.a0.b), ih.a.n);
+            w1.r x = androidx.compose.foundation.layout.b.x(f0.o.f(p2.u(p2.e(rVar3, 1.0f)), ih.d.b(sVar2).b, d2.a0Shadow.b), ih.a.n);
             l2 a2 = j2.a(androidx.compose.foundation.layout.l.a, w1.c.B, sVar2, 48);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();

@@ -11,7 +11,7 @@ import f1.ub;
 import g3.g0;
 import g3.h0;
 import g3.q0;
-import qg.p;
+import qg.pShadow;
 import s0.w0;
 import s3.m;
 import w1.o;
@@ -66,7 +66,7 @@ public final /* synthetic */ class i implements j71.f {
                 String str2 = (String) obj5;
                 s sVar2 = (s) obj2;
                 ((Integer) obj3).getClass();
-                float f = p.a;
+                float f = pShadow.a;
                 k71.k.g((y) obj, "$this$AnimatedVisibility");
                 if (str2 == null) {
                     sVar2.c0(-86127860);
@@ -124,7 +124,7 @@ public final /* synthetic */ class i implements j71.f {
                     }
                     k3.o oVar2 = h0Var.d;
                     int i4 = oVar2 != null ? oVar2.a : 0;
-                    k3.p pVar = h0Var.e;
+                    k3.pShadow pVar = h0Var.e;
                     N3 = jVar.b(iVar, sVar5, i4, pVar != null ? pVar.a : 65535);
                     sVar4.n0(N3);
                 }

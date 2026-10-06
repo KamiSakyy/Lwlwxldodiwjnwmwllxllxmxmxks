@@ -12,7 +12,7 @@ import gn0.vb;
 import gn0.w9;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -23,8 +23,8 @@ public abstract class a {
     static {
         mx.Companion.getClass();
         r b = l0.b(mx.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("url", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("url", b, (String) null, rVar, rVar, rVar));
         pb.Companion.getClass();
         m mVar = new m("id", l0.b(pb.a), (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();

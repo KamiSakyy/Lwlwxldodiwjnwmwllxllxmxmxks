@@ -7,7 +7,7 @@ public abstract class vr {
     public static final ur Companion = new ur();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
         aa.j0 j0Var = yh.a;
         dr.Companion.getClass();

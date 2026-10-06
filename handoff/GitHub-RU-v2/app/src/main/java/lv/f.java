@@ -5,7 +5,7 @@ import aa.x;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.rz;
 import m10.sa;
 
@@ -224,7 +224,7 @@ public abstract class f implements aa.a {
         x xVar = sa.a;
         aa.c.b(wVar.e(xVar)).b(fVar, wVar, cVar.c);
         fVar.z0("authorCanPushToRepository");
-        f4.C(cVar.d, aa.c.f, fVar, wVar, "url");
+        f4Shadow.C(cVar.d, aa.c.f, fVar, wVar, "url");
         bVar.b(fVar, wVar, cVar.e);
         fVar.z0("state");
         fVar.I(cVar.f.r);

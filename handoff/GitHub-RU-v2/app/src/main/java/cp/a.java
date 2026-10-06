@@ -30,7 +30,7 @@ import m10.tg0;
 import m10.v3;
 import m10.wg;
 import m10.zp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -41,7 +41,7 @@ public abstract class a {
         ah.Companion.getClass();
         x xVar = ah.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
@@ -88,7 +88,7 @@ public abstract class a {
         List r8 = x61.l.r(new aa.m[]{mVar9, mVar10, mVar11, mVar12, mVar13, new aa.m("app", q0Var3, (String) null, rVar, rVar, r7), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r9 = x61.l.r(new aa.m[]{new aa.m("hasNextPage", l0.b(xVar4), (String) null, rVar, rVar, rVar), new aa.m("endCursor", xVar2, (String) null, rVar, rVar, rVar), new aa.m("hasPreviousPage", l0.b(xVar4), (String) null, rVar, rVar, rVar)});
         s mVar14 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("CheckStep");
+        List n = d0Shadow.n("CheckStep");
         List list2 = wo.a.a;
         List r11 = x61.l.r(new s[]{mVar14, no.a.c(list2, "selections", "CheckStep", n, list2)});
         aa.m mVar15 = new aa.m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar);
@@ -97,7 +97,7 @@ public abstract class a {
         d4.Companion.getClass();
         List r12 = x61.l.r(new aa.m[]{mVar15, mVar16, new aa.m("nodes", l0.a(d4.a), (String) null, rVar, rVar, r11)});
         s mVar17 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("CheckRun");
+        List n2 = d0Shadow.n("CheckRun");
         List list3 = wo.f.a;
         s c = no.a.c(list3, "selections", "CheckRun", n2, list3);
         h4.Companion.getClass();
@@ -115,10 +115,10 @@ public abstract class a {
         da0.Companion.getClass();
         List r14 = x61.l.r(new aa.m[]{mVar19, mVar20, mVar21, mVar22, new aa.m("state", l0.b(da0.s), (String) null, rVar, rVar, rVar)});
         s mVar23 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        s nVar = new aa.n("CheckRun", d0.n("CheckRun"), r13);
-        List n3 = d0.n("StatusContext");
+        s nVar = new aa.n("CheckRun", d0Shadow.n("CheckRun"), r13);
+        List n3 = d0Shadow.n("StatusContext");
         List list4 = wo.e.a;
-        List r15 = x61.l.r(new s[]{mVar23, nVar, no.a.c(list4, "selections", "StatusContext", n3, list4), new aa.n("RequiredStatusCheck", d0.n("RequiredStatusCheck"), r14), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        List r15 = x61.l.r(new s[]{mVar23, nVar, no.a.c(list4, "selections", "StatusContext", n3, list4), new aa.n("RequiredStatusCheck", d0Shadow.n("RequiredStatusCheck"), r14), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         zp.Companion.getClass();
         j0 j0Var = zp.a;
         k71.k.g(j0Var, "type");

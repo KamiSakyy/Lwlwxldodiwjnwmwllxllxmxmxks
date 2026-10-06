@@ -35,7 +35,7 @@ public final class h extends c71.j implements j71.f {
             this.w = null;
             this.x = null;
             this.v = 1;
-            if (y71.n1.q(jVar, hVar, this) == aVar) {
+            if (y71.n1Shadow.q(jVar, hVar, this) == aVar) {
                 return aVar;
             }
         } else {

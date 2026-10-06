@@ -4,7 +4,7 @@ import a0.s0;
 import androidx.compose.runtime.i1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class h {
+public final class hShadow {
 
     /* renamed from: a, reason: collision with root package name */
     public int f34005a;

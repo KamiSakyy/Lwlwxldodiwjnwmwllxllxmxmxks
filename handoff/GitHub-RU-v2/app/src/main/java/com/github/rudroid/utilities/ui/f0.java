@@ -29,7 +29,7 @@ public final class f0 {
         int i5 = i3 | (sVar.f(str) ? 32 : 16);
         if (sVar2.S(i5 & 1, (i5 & 19) != 18)) {
             w1.r rVar4 = i4 != 0 ? w1.o.a : rVar2;
-            w1.r z = androidx.compose.foundation.layout.b.z(f0.o.f(f0.o.w(p2.d(rVar4, 1.0f), f0.o.v(sVar2), true), ih.d.b(sVar2).a, d2.a0.b), ih.a.n, 0.0f, 2);
+            w1.r z = androidx.compose.foundation.layout.b.z(f0.o.f(f0.o.w(p2.d(rVar4, 1.0f), f0.o.v(sVar2), true), ih.d.b(sVar2).a, d2.a0Shadow.b), ih.a.n, 0.0f, 2);
             boolean z2 = (i5 & 112) == 32;
             Object N = sVar2.N();
             if (z2 || N == androidx.compose.runtime.n.a) {

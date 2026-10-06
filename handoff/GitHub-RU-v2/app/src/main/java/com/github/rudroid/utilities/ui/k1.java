@@ -28,13 +28,13 @@ public final /* synthetic */ class k1 implements j71.c {
                 m0.f fVar2 = (m0.f) obj;
                 k71.k.g(fVar2, "$this$LazyColumn");
                 if (p0Var instanceof c0) {
-                    m0.f.q(fVar2, (String) null, new r1.d(new com.github.rudroid.actions.checkdetail.ui.d(1, eVar), true, -233990683), 3);
+                    m0.f.q(fVar2, (String) null, new r1.d(new com.github.rudroid.actions.checkdetail.ui.dShadow(1, eVar), true, -233990683), 3);
                 }
                 Object data = ((q0) p0Var).getData();
                 a0 a0Var = p0Var instanceof a0 ? (a0) p0Var : null;
                 fVar.f(fVar2, data, a0Var != null ? a0Var.b : null);
                 if (p0Var instanceof b0) {
-                    m0.f.q(fVar2, (String) null, new r1.d(new com.github.rudroid.actions.checkdetail.ui.d(2, eVar), true, 809407068), 3);
+                    m0.f.q(fVar2, (String) null, new r1.d(new com.github.rudroid.actions.checkdetail.ui.dShadow(2, eVar), true, 809407068), 3);
                 } else {
                     m0.f.q(fVar2, (String) null, t.f, 3);
                 }

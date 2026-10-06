@@ -15,7 +15,7 @@ final class t {
     }
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         e = new t(rVar, rVar);
     }
 

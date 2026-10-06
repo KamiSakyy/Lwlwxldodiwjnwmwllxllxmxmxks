@@ -3,12 +3,12 @@ package qy0;
 import aa.w;
 import java.util.List;
 import py0.f0;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements aa.a {
     public static final p a = new p();
-    public static final List b = d0.n("updateRepository");
+    public static final List b = d0Shadow.n("updateRepository");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class p implements aa.a {
     }
 
     public final void b(ea.f fVar, w wVar, Object obj) {
-        py0.d0 d0Var = (py0.d0) obj;
+        py0.d0Shadow d0Var = (py0.d0) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(d0Var, "value");

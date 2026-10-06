@@ -1,6 +1,6 @@
 package com.google.common.util.concurrent;
 
-import a0.y;
+import a0Shadow.y;
 import a6.f;
 import android.app.Application;
 import android.content.Context;
@@ -81,10 +81,10 @@ import x01.i;
 import x61.l;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import x61.x;
 import y41.t1;
-import yz0.a0;
+import yz0.a0Shadow;
 import yz0.e8;
 import yz0.s;
 import yz0.w7;
@@ -123,7 +123,7 @@ public abstract class a {
         } else {
             r = l.r(new String[]{str2, str2.length() != 0 ? xb.a.a(str2) ? String.format("https://api.%s", Arrays.copyOf(new Object[]{str2}, 1)) : String.format("https://%s/api/v3", Arrays.copyOf(new Object[]{str2}, 1)) : "https://api.github.com"});
         }
-        return r.contains(str);
+        return rShadow.contains(str);
     }
 
     public static final f F(a6.d... dVarArr) {
@@ -229,7 +229,7 @@ public abstract class a {
         k.g(cVar, "<this>");
         Iterable<tz.a> iterable = cVar.a;
         if (iterable == null) {
-            iterable = r.r;
+            iterable = rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         for (tz.a aVar : iterable) {
@@ -413,7 +413,7 @@ public abstract class a {
         List f = f((s60Var == null || (n60Var5 = s60Var.b) == null) ? null : n60Var5.j);
         List list = (s60Var == null || (n60Var4 = s60Var.b) == null) ? null : n60Var4.g.a;
         if (list == null) {
-            list = r.r;
+            list = rShadow.r;
         }
         ArrayList S = m.S(list);
         ArrayList arrayList2 = new ArrayList(n.F(S, 10));
@@ -434,11 +434,11 @@ public abstract class a {
         se0.c cVar = (s60Var == null || (n60Var2 = s60Var.b) == null) ? null : n60Var2.k;
         if (cVar == null) {
             s.Companion.getClass();
-            bVar = yz0.r.b;
+            bVar = yz0.rShadow.b;
         } else {
             se0.c a2 = se0.c.a(cVar, s60Var.b.e, null, 4031);
             n60 n60Var9 = s60Var.b;
-            bVar = new wl0.b(a2, n60Var9.c, new a0(n60Var9.b));
+            bVar = new wl0.b(a2, n60Var9.c, new a0Shadow(n60Var9.b));
         }
         com.github.service.models.response.a aVar = new com.github.service.models.response.a((s60Var == null || (j60Var = s60Var.a) == null) ? str4 : j60Var.b, (Avatar) null, (String) null, false, (String) null, 62);
         ArrayList arrayList3 = new ArrayList();
@@ -580,8 +580,8 @@ public abstract class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void b(w1.r rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.k kVar, w1.d dVar, h1Shadow h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
-        w1.r rVar2;
+    public static final void b(w1.rShadow rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.k kVar, w1.d dVar, h1Shadow h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
+        w1.rShadow rVar2;
         int i3;
         m0.s sVar3;
         d2 d2Var2;
@@ -591,7 +591,7 @@ public abstract class a {
         h1Shadow h1Var2;
         int i5;
         f0.j jVar2;
-        w1.r rVar3;
+        w1.rShadow rVar3;
         m0.s sVar4;
         d2 d2Var3;
         androidx.compose.foundation.layout.k kVar3;
@@ -599,7 +599,7 @@ public abstract class a {
         h1Shadow h1Var3;
         boolean z2;
         b2 t;
-        w1.r rVar4;
+        w1.rShadow rVar4;
         d2 d2Var4;
         int i6;
         f0.j a;
@@ -749,7 +749,7 @@ public abstract class a {
                     w1.d dVar4 = dVar2;
                     sVar2.r();
                     int i13 = i6 >> 3;
-                    w1.r rVar5 = rVar4;
+                    w1.rShadow rVar5 = rVar4;
                     m0.s sVar5 = sVar3;
                     h1Shadow h1Var4 = h1Var2;
                     i21.a.c(rVar5, sVar5, d2Var5, true, h1Var4, z3, a, dVar4, kVar4, null, null, cVar, sVar2, ((i6 << 12) & 1879048192) | (i6 & 14) | 24576 | (i6 & 112) | (i6 & 896) | (i6 & 7168) | (458752 & i13) | (i13 & 3670016), ((i6 >> 12) & 14) | ((i6 >> 18) & 7168), 6400);
@@ -889,7 +889,7 @@ public abstract class a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void c(w1.r rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.i iVar, w1.i iVar2, h1Shadow h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
+    public static final void c(w1.rShadow rVar, m0.s sVar, d2 d2Var, androidx.compose.foundation.layout.i iVar, w1.i iVar2, h1Shadow h1Var, boolean z, f0.j jVar, j71.c cVar, androidx.compose.runtime.s sVar2, int i, int i2) {
         int i3;
         m0.s sVar3;
         d2 d2Var2;
@@ -1307,7 +1307,7 @@ public abstract class a {
                 arrayList.add(b31.b.i0(((sg0.d) obj3).c));
             }
         }
-        return arrayList == null ? r.r : arrayList;
+        return arrayList == null ? rShadow.r : arrayList;
     }
 
     public static final x2 g(at0.a aVar) {
@@ -1451,13 +1451,13 @@ public abstract class a {
 
     public abstract void H(h0 h0Var, int i, String str);
 
-    public abstract void I(g91.f fVar, Exception exc, q81.a0 a0Var);
+    public abstract void I(g91.f fVar, Exception exc, q81.a0Shadow a0Var);
 
-    public abstract void J(h0 h0Var, h91.k kVar);
+    public abstract void J(h0 h0Var, h91.kShadow kVar);
 
     public abstract void K(h0 h0Var, String str);
 
-    public abstract void L(h0 h0Var, q81.a0 a0Var);
+    public abstract void L(h0 h0Var, q81.a0Shadow a0Var);
 
     public abstract Typeface k(Context context, q4.e eVar, Resources resources, int i);
 

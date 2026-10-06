@@ -8,6 +8,6 @@ public abstract class q10 {
         a10.Companion.getClass();
         aa.j0 j0Var = a10.a;
         k10.Companion.getClass();
-        new aa.q0("SearchShortcutQueryTerm", x61.r.r, x61.l.r(new aa.j0[]{j0Var, k10.a}));
+        new aa.q0("SearchShortcutQueryTerm", x61.rShadow.r, x61.l.r(new aa.j0[]{j0Var, k10.a}));
     }
 }

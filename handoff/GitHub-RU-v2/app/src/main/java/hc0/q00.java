@@ -9,7 +9,7 @@ public abstract class q00 {
     public static final aa.q0 b;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
         aa.j0 j0Var = yg.a;
         qw.Companion.getClass();

@@ -39,7 +39,7 @@ public final class y2 extends e0 {
         persistableBundle.putString("action", "com.google.android.gms.measurement.SCION_UPLOAD");
         JobInfo build = new JobInfo.Builder("measurement-client".concat(String.valueOf(o1Var.r.getPackageName())).hashCode(), new ComponentName(o1Var.r, "com.google.android.gms.measurement.AppMeasurementJobService")).setRequiredNetworkType(1).setMinimumLatency(j).setOverrideDeadline(j + j).setExtras(persistableBundle).build();
         JobScheduler jobScheduler2 = this.u;
-        c21.u.g(jobScheduler2);
+        c21.uShadow.g(jobScheduler2);
         int schedule = jobScheduler2.schedule(build);
         s0 s0Var4 = o1Var.w;
         o1.m(s0Var4);

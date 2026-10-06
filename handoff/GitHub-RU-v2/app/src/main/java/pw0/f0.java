@@ -7,7 +7,7 @@ import uu0.l6;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class f0 implements aa.a {
-    public static final List a = sy.d0.n("__typename");
+    public static final List a = sy.d0Shadow.n("__typename");
 
     public static q0 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -59,7 +59,7 @@ public final class o implements e {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b {
+    public static class bShadow {
         public b() {
         }
     }

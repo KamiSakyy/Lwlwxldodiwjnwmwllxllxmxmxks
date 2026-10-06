@@ -87,9 +87,9 @@ public abstract class i {
     public static final class g extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        public lg.b f29237a;
+        public lg.bShadow f29237a;
 
-        public g(lg.b bVar) {
+        public g(lg.bShadow bVar) {
             this.f29237a = bVar;
         }
 

@@ -2,7 +2,7 @@ package ji0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class h implements aa.a {
@@ -41,7 +41,7 @@ public abstract class h implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(fVar2, "value");
         fVar.z0("hasPinnedItems");
-        f4.C(fVar2.a, aa.c.f, fVar, wVar, "items");
+        f4Shadow.C(fVar2.a, aa.c.f, fVar, wVar, "items");
         aa.c.c(i.a, false).b(fVar, wVar, fVar2.b);
     }
 }

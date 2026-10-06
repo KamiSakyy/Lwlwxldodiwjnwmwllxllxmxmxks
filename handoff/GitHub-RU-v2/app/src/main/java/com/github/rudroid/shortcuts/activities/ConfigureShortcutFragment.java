@@ -123,9 +123,9 @@ public final class ConfigureShortcutFragment extends Hilt_ConfigureShortcutFragm
         w61.i iVar = w61.i.s;
         f fVar = new f(sy.w.s(iVar, new kc.o(kVar)), a0Var);
         w61.h s = sy.w.s(iVar, new kc.g(kVar));
-        this.E0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.q.class), new kc.h(s), fVar, new kc.i(s));
+        this.E0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.q.class), new kc.h(s), fVar, new kc.i(s));
         w61.h s2 = sy.w.s(iVar, new b(new a()));
-        this.F0 = new l1(k71.x.a(com.github.rudroid.shortcuts.e.class), new c(s2), new e(s2), new d(s2));
+        this.F0 = new l1(k71.xShadow.a(com.github.rudroid.shortcuts.e.class), new c(s2), new e(s2), new d(s2));
     }
 
     public static void C4(ConfigureShortcutFragment configureShortcutFragment, String str, Bundle bundle) {

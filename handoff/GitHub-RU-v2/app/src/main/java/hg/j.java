@@ -84,16 +84,16 @@ public final class j {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             t.I(sVar2, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             t.E(sVar2, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             t.I(sVar2, eVar4, c);
             r f2 = f0.o.f(p2.o(androidx.compose.foundation.layout.b.B(rVar3, f, 0.0f, 0.0f, 0.0f, 14), ih.a.O), b91.g.l(com.github.rudroid.shortcuts.r.d(shortcutColor), sVar2), ih.d.e(sVar2).b);
             v0 d = androidx.compose.foundation.layout.t.d(w1.c.v, false);

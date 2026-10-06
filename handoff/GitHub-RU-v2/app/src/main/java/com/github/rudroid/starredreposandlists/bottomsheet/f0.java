@@ -1,7 +1,7 @@
 package com.github.rudroid.starredreposandlists.bottomsheet;
 
 import java.util.List;
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.starredreposandlists.bottomsheet.SaveListSelectionsViewModel$saveListSelections$1", f = "SaveListSelectionsViewModel.kt", l = {34}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -41,7 +41,7 @@ final class f0 extends c71.j implements j71.e {
             cVar.getClass();
             y71.y J = b31.b.J(((z01.j0) cVar.a.a(d)).c(this.x, this.y, this.z), d, gVar);
             this.v = 1;
-            if (n1.j(J, this) == aVar) {
+            if (n1Shadow.j(J, this) == aVar) {
                 return aVar;
             }
         } else {

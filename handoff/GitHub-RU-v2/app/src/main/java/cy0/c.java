@@ -15,7 +15,7 @@ import pz0.su;
 import pz0.td;
 import pz0.wk;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,15 +27,15 @@ public abstract class c {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2Item");
+        List n = d0Shadow.n("ProjectV2Item");
         List list = j.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2Item", n, list)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         x xVar2 = td.a;
-        List r2 = l.r(new s[]{mVar2, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2Item", d0.n("ProjectV2Item"), r)});
+        List r2 = l.r(new s[]{mVar2, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2Item", d0Shadow.n("ProjectV2Item"), r)});
         wk.Companion.getClass();
         j0 j0Var = wk.a;
         k.g(j0Var, "type");

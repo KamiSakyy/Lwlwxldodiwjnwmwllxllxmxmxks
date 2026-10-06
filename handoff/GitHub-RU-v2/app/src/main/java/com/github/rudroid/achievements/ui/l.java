@@ -19,7 +19,7 @@ public final class l implements SensorEventListener {
     public float[] f4534c;
 
     /* renamed from: d, reason: collision with root package name */
-    public x71.h f4535d;
+    public x71.hShadow f4535d;
 
     public l(Context context) {
         k71.k.g(context, "context");

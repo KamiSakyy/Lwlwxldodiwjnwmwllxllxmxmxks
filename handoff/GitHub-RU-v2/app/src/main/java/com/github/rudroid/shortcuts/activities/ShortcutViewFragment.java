@@ -296,14 +296,14 @@ public final class ShortcutViewFragment extends Hilt_ShortcutViewFragment<th> im
         d dVar = new d();
         w61.i iVar = w61.i.s;
         w61.h s = sy.w.s(iVar, new e(dVar));
-        this.G0 = new l1(k71.x.a(com.github.rudroid.viewmodels.search.c.class), new f(s), new h(s), new g(s));
+        this.G0 = new l1(k71.xShadow.a(com.github.rudroid.viewmodels.search.c.class), new f(s), new h(s), new g(s));
         w61.h s2 = sy.w.s(iVar, new j(new i()));
-        this.H0 = new l1(k71.x.a(com.github.rudroid.shortcuts.w.class), new k(s2), new c(s2), new l(s2));
+        this.H0 = new l1(k71.xShadow.a(com.github.rudroid.shortcuts.w.class), new k(s2), new c(s2), new l(s2));
         com.github.rudroid.searchandfilter.complexfilter.explore.a0 a0Var = new com.github.rudroid.searchandfilter.complexfilter.explore.a0(26);
         kc.k kVar = new kc.k(this);
         m mVar = new m(sy.w.s(iVar, new kc.o(kVar)), a0Var);
         w61.h s3 = sy.w.s(iVar, new kc.g(kVar));
-        this.I0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.q.class), new kc.h(s3), mVar, new kc.i(s3));
+        this.I0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.q.class), new kc.h(s3), mVar, new kc.i(s3));
         this.M0 = new b();
     }
 

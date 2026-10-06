@@ -2,7 +2,7 @@ package j21;
 
 import android.os.IBinder;
 import android.os.IInterface;
-import c21.u;
+import c21.uShadow;
 import c41.d;
 import java.lang.reflect.Field;
 
@@ -44,7 +44,7 @@ public final class b extends d implements a {
             sb.append(length);
             throw new IllegalArgumentException(sb.toString());
         }
-        u.g(field);
+        uShadow.g(field);
         if (field.isAccessible()) {
             throw new IllegalArgumentException("IObjectWrapper declared field not private!");
         }

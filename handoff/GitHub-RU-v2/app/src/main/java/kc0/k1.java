@@ -3,10 +3,10 @@ package kc0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 {
     public String a;
-    public f1 b;
+    public f1Shadow b;
     public String c;
 
-    public k1(String str, f1 f1Var, String str2) {
+    public k1(String str, f1Shadow f1Var, String str2) {
         this.a = str;
         this.b = f1Var;
         this.c = str2;

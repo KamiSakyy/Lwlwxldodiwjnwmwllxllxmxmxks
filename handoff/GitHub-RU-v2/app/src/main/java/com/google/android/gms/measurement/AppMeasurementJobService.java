@@ -5,7 +5,7 @@ import android.app.Service;
 import android.app.job.JobParameters;
 import android.app.job.JobService;
 import android.content.Intent;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.k1;
 import com.google.android.gms.internal.measurement.x0;
 import com.google.android.gms.measurement.internal.o4;
@@ -71,7 +71,7 @@ public final class AppMeasurementJobService extends JobService implements s3 {
         String string = jobParameters.getExtras().getString("action");
         "onStartJob received action: ".concat(String.valueOf(string));
         if (Objects.equals(string, "com.google.android.gms.measurement.UPLOAD")) {
-            u.g(string);
+            uShadow.g(string);
             o4 C = o4.C(service);
             s0 a = C.a();
             w3 w3Var = C.C.t;
@@ -84,7 +84,7 @@ public final class AppMeasurementJobService extends JobService implements s3 {
         if (!Objects.equals(string, "com.google.android.gms.measurement.SCION_UPLOAD")) {
             return true;
         }
-        u.g(string);
+        uShadow.g(string);
         k1 c = k1.c(service, null);
         b bVar = new b(17, d, jobParameters2);
         c.getClass();

@@ -48,7 +48,7 @@ public final class f {
             if (!z) {
                 obj = N;
             }
-            com.github.rudroid.actions.checkssummary.ui.d dVar = new com.github.rudroid.actions.checkssummary.ui.d(9, cVar);
+            com.github.rudroid.actions.checkssummary.ui.dShadow dVar = new com.github.rudroid.actions.checkssummary.ui.dShadow(9, cVar);
             sVar2.n0(dVar);
             obj = dVar;
             r rVar4 = rVar3;

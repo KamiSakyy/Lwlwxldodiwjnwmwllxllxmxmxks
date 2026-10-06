@@ -69,8 +69,8 @@ public final /* synthetic */ class s implements j71.c {
         vz.f fVar5;
         int i = this.r;
         aa1.bShadow bVar = aa.t0.d;
-        w61.a0 a0Var = w61.a0.a;
-        Collection collection = x61.r.r;
+        w61.a0Shadow a0Var = w61.a0.a;
+        Collection collection = x61.rShadow.r;
         r8 = null;
         r8 = null;
         List list3 = null;

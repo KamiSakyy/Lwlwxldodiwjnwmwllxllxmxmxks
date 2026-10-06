@@ -47,11 +47,11 @@ final class e0 extends c71.j implements j71.f {
                                     int i10 = s0Var.f4871v;
                                     int i11 = s0Var.f4872w;
                                     k71.k.g(list2, "formatting");
-                                    n10 = x61.m.l0(sy.d0.n(new s0(str, list2, lVar, zonedDateTime, i10, i11, list, true)), list);
+                                    n10 = x61.m.l0(sy.d0Shadow.n(new s0(str, list2, lVar, zonedDateTime, i10, i11, list, true)), list);
                                     x61.m.J(arrayList, n10);
                                 }
                             }
-                            n10 = sy.d0.n(q0Var);
+                            n10 = sy.d0Shadow.n(q0Var);
                             x61.m.J(arrayList, n10);
                         }
                         return arrayList;

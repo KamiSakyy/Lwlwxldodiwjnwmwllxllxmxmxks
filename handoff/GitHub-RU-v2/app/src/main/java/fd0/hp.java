@@ -7,7 +7,7 @@ import kc0.v00;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hp implements aaShadow.a {
     public static final hp a = new hp();
-    public static final List b = sy.d0.n("setDashboardSearchShortcuts");
+    public static final List b = sy.d0Shadow.n("setDashboardSearchShortcuts");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

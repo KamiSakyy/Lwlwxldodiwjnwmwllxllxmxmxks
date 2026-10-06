@@ -16,7 +16,7 @@ import mn.j;
 import mn.s;
 import mn.u;
 import mn.w;
-import mn.x;
+import mn.xShadow;
 import pz0.py;
 import qn0.a3;
 import qn0.c3;
@@ -48,7 +48,7 @@ import qn0.y2;
 import qn0.z1;
 import qo.o0;
 import qo.p;
-import sy.t;
+import sy.tShadow;
 import vn0.a1;
 import vn0.a2;
 import vn0.b2;
@@ -73,7 +73,7 @@ import vn0.z0;
 import vn0.z2;
 import x01.i;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final /* synthetic */ class a implements j71.c {
@@ -84,10 +84,10 @@ public final /* synthetic */ class a implements j71.c {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r5v19, types: [java.util.List, x61.r] */
+    /* JADX WARN: Type inference failed for: r5v19, types: [java.util.List, x61.rShadow] */
     /* JADX WARN: Type inference failed for: r5v20, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r5v21, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r9v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r9v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r9v1, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r9v12, types: [java.util.ArrayList] */
     @Override // j71.c
@@ -191,7 +191,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(q0Var3, "data");
                 r0 r0Var3 = q0Var3.a;
                 List list10 = (r0Var3 == null || (s0Var3 = r0Var3.c) == null || (vVar3 = s0Var3.c) == null || (gVar3 = vVar3.n) == null) ? null : gVar3.c;
-                return list10 == null ? r.r : list10;
+                return list10 == null ? rShadow.r : list10;
             case 4:
                 k1 k1Var = (k1) obj;
                 k71.k.g(k1Var, "data");
@@ -203,9 +203,9 @@ public final /* synthetic */ class a implements j71.c {
                 v vVar4 = m1Var.f;
                 g gVar4 = vVar4.n;
                 vn0.i iVar3 = vVar4.o;
-                vn0.r rVar = vVar4.h;
+                vn0.rShadow rVar = vVar4.h;
                 vn0.h hVar6 = vVar4.k;
-                java.util.ArrayList r9 = (java.util.ArrayList) (r.r);
+                java.util.ArrayList r9 = (java.util.ArrayList) (rShadow.r);
                 if (gVar4 == null || (list4 = gVar4.c) == null) {
                     arrayList = r9;
                 } else {
@@ -231,7 +231,7 @@ public final /* synthetic */ class a implements j71.c {
                 CheckStatusState K = k21.f.K(vVar4.b);
                 CheckConclusionState N = i21.a.N(vVar4.c);
                 int i2 = gVar4 != null ? gVar4.a : 0;
-                mn.m q = t.q(vVar4);
+                mn.m q = tShadow.q(vVar4);
                 if (iVar3 != null && (list2 = iVar3.b) != null) {
                     r9 = new ArrayList();
                     for (l lVar : list2) {
@@ -299,7 +299,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(q1Var3, "data");
                 r1 r1Var3 = q1Var3.a;
                 List list11 = (r1Var3 == null || (s1Var3 = r1Var3.c) == null || (a1Var3 = s1Var3.c) == null || (v0Var3 = a1Var3.b) == null) ? null : v0Var3.c;
-                return list11 == null ? r.r : list11;
+                return list11 == null ? rShadow.r : list11;
             case 10:
                 qn0.w1 w1Var4 = (qn0.w1) obj;
                 k71.k.g(w1Var4, "data");
@@ -316,7 +316,7 @@ public final /* synthetic */ class a implements j71.c {
                         mVar2 = null;
                         for (w0 w0Var : list12) {
                             if (w0Var != null) {
-                                mn.m q2 = t.q(w0Var.e);
+                                mn.m q2 = tShadow.q(w0Var.e);
                                 mVar2 = mVar2 != null ? new mn.m(mVar2.a + q2.a, mVar2.b + q2.b, mVar2.c + q2.c, mVar2.d + q2.d, mVar2.e + q2.e, mVar2.f + q2.f) : q2;
                             }
                         }
@@ -337,7 +337,7 @@ public final /* synthetic */ class a implements j71.c {
                     statusState = StatusState.UNKNOWN__;
                 }
                 StatusState statusState2 = statusState;
-                java.util.ArrayList r5 = (java.util.ArrayList) (r.r);
+                java.util.ArrayList r5 = (java.util.ArrayList) (rShadow.r);
                 if (z1Var != null) {
                     ArrayList arrayList3 = z1Var.b;
                     ArrayList arrayList4 = new ArrayList(n.F(arrayList3, 10));
@@ -404,7 +404,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(q2Var3, "data");
                 r2 r2Var3 = q2Var3.a;
                 List list14 = (r2Var3 == null || (s2Var3 = r2Var3.c) == null || (t2Var3 = s2Var3.b) == null || (m2Var3 = t2Var3.b) == null) ? null : m2Var3.b;
-                return list14 == null ? r.r : list14;
+                return list14 == null ? rShadow.r : list14;
             case 16:
                 w2 w2Var = (w2) obj;
                 k71.k.g(w2Var, "data");
@@ -412,14 +412,14 @@ public final /* synthetic */ class a implements j71.c {
                 if (x2Var == null || (y2Var = x2Var.c) == null) {
                     return null;
                 }
-                return (w) in.r.j(y2Var, "Invalid request for workflow runs.", new a(17));
+                return (w) in.rShadow.j(y2Var, "Invalid request for workflow runs.", new a(17));
             case 17:
                 y2 y2Var2 = (y2) obj;
                 k71.k.g(y2Var2, "$this$mapOrApiFailure");
                 m2 m2Var4 = y2Var2.f.c;
                 Iterable<k2> iterable = m2Var4.b;
                 if (iterable == null) {
-                    iterable = r.r;
+                    iterable = rShadow.r;
                 }
                 ArrayList arrayList5 = new ArrayList();
                 for (k2 k2Var : iterable) {
@@ -429,7 +429,7 @@ public final /* synthetic */ class a implements j71.c {
                         vn0.r2 r2Var4 = z2Var.g;
                         vn0.u2 u2Var = r2Var4.f;
                         vn0.q2 q2Var4 = r2Var4.h;
-                        mn.r rVar2 = (u2Var == null || (list7 = u2Var.a) == null || (v2Var = (v2) x61.m.W(list7)) == null) ? null : new mn.r(v2Var.a, v2Var.b);
+                        mn.rShadow rVar2 = (u2Var == null || (list7 = u2Var.a) == null || (v2Var = (v2) x61.m.W(list7)) == null) ? null : new mn.r(v2Var.a, v2Var.b);
                         String str19 = z2Var.a;
                         int i6 = z2Var.c;
                         String str20 = z2Var.b;
@@ -479,19 +479,19 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(c3Var3, "data");
                 d3 d3Var3 = c3Var3.a;
                 List list15 = (d3Var3 == null || (e3Var3 = d3Var3.b) == null || (w1Var3 = e3Var3.b) == null) ? null : w1Var3.a;
-                return list15 == null ? r.r : list15;
+                return list15 == null ? rShadow.r : list15;
             case 22:
                 c3 c3Var4 = (c3) obj;
                 k71.k.g(c3Var4, "data");
                 d3 d3Var4 = c3Var4.a;
-                return (x) in.r.j(d3Var4 != null ? d3Var4.b : null, "Invalid request for workflows.", new a(23));
+                return (xShadow) in.rShadow.j(d3Var4 != null ? d3Var4.b : null, "Invalid request for workflows.", new a(23));
             case 23:
                 e3 e3Var4 = (e3) obj;
                 k71.k.g(e3Var4, "$this$mapOrApiFailure");
                 w1 w1Var5 = e3Var4.b;
                 Iterable<u1> iterable2 = w1Var5.a;
                 if (iterable2 == null) {
-                    iterable2 = r.r;
+                    iterable2 = rShadow.r;
                 }
                 ArrayList arrayList6 = new ArrayList();
                 for (u1 u1Var : iterable2) {
@@ -512,7 +512,7 @@ public final /* synthetic */ class a implements j71.c {
                     }
                 }
                 v1 v1Var2 = w1Var5.b;
-                return new x(arrayList6, new i(v1Var2.b, v1Var2.a, false));
+                return new xShadow(arrayList6, new i(v1Var2.b, v1Var2.a, false));
             case 24:
                 String str30 = (String) obj;
                 k71.k.g(str30, "id");
@@ -535,7 +535,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(eVar6, "data");
                 qo.g gVar7 = eVar6.a;
                 List list17 = (gVar7 == null || (hVar4 = gVar7.c) == null || (mVar5 = hVar4.c) == null) ? null : mVar5.c;
-                return list17 == null ? r.r : list17;
+                return list17 == null ? rShadow.r : list17;
             case 28:
                 qo.e eVar7 = (qo.e) obj;
                 k71.k.g(eVar7, "data");

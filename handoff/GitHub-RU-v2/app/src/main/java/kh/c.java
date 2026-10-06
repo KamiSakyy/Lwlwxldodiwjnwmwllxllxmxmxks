@@ -1,9 +1,9 @@
 package kh;
 
-import d2.a0;
+import d2.a0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class c {
+public final class cShadow {
     public static final long a = a0.d(4294934669L);
     public static final long b = a0.d(4294267747L);
     public static final long c = a0.d(4292887378L);

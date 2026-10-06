@@ -8,7 +8,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r implements aa.a {
     public static final r a = new r();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         ct.q0 q0Var;

@@ -26,7 +26,7 @@ public final class ha {
         w = haVarArr;
         x = v8.l0.t(haVarArr);
         Companion = new ga();
-        sy.d0.o(new String[]{"DUPLICATE", "OUTDATED", "RESOLVED"});
+        sy.d0Shadow.o(new String[]{"DUPLICATE", "OUTDATED", "RESOLVED"});
     }
 
     public ha(String str, int i, String str2) {

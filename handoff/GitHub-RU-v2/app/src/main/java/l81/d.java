@@ -53,7 +53,7 @@ public final class d implements SerialDescriptor {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List getAnnotations() {
         this.a.getClass();
-        return x61.r.r;
+        return x61.rShadow.r;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -65,7 +65,7 @@ public final class d implements SerialDescriptor {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List i(int i) {
         this.a.i(i);
-        return x61.r.r;
+        return x61.rShadow.r;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor

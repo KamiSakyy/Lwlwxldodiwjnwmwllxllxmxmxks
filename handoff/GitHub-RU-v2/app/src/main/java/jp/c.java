@@ -18,7 +18,7 @@ import m10.l5;
 import m10.mr;
 import m10.p00;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -30,9 +30,9 @@ public abstract class c {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("CodingAgent");
+        List n = d0Shadow.n("CodingAgent");
         List list = ip.b.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "CodingAgent", n, list)});
         wg.Companion.getClass();

@@ -12,7 +12,7 @@ public final class z1 extends z71.c {
         if (atomicReference.get() != null) {
             return false;
         }
-        atomicReference.set(n1.b);
+        atomicReference.set(n1Shadow.b);
         return true;
     }
 

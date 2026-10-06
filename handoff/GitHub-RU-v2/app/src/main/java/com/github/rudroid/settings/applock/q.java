@@ -46,7 +46,7 @@ final class q extends c71.j implements j71.e {
                 value = y1Var.getValue();
                 ((Boolean) value).getClass();
             } while (!y1Var.i(value, Boolean.FALSE));
-            v71.b0.z(kVar.e, (a71.h) null, (v71.a0) null, new i(kVar, null), 3);
+            v71.b0.z(kVar.e, (a71.h) null, (v71.a0Shadow) null, new i(kVar, null), 3);
             appLockFragment.g4().finish();
         } else if (!(fVar instanceof f.a)) {
             throw new NoWhenBranchMatchedException();

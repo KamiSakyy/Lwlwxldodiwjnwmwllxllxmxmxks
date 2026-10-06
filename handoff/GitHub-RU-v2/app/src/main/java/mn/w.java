@@ -19,7 +19,7 @@ public final class w {
     static {
         WorkflowState workflowState = WorkflowState.UNKNOWN__;
         x01.i.Companion.getClass();
-        g = new w("", "", workflowState, x61.r.r, x01.i.d, false);
+        g = new w("", "", workflowState, x61.rShadow.r, x01.i.d, false);
     }
 
     public w(String str, String str2, WorkflowState workflowState, List list, x01.i iVar, boolean z) {

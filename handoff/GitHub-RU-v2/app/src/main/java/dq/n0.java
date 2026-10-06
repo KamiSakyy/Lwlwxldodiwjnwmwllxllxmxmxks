@@ -13,7 +13,7 @@ public abstract class n0 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         aa.s mVar2 = new aa.m("id", v8.l0.b(ah.a), (String) null, rVar, rVar, rVar);

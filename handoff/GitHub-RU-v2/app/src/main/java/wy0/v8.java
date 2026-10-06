@@ -1,7 +1,7 @@
 package wy0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class v8 extends c71.c {
+public final class v8Shadow extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ e8 w;

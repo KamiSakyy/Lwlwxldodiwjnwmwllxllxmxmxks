@@ -15,14 +15,14 @@ import com.google.android.material.textfield.TextInputEditText;
 import ic.e4;
 import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
-import sy.d0;
+import sy.d0Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SupportFragment extends Hilt_SupportFragment<e4> implements a.InterfaceC0007a, d.a {
     public static final a Companion = new a();
     public final int E0 = 2131558813;
-    public final l1 F0 = new l1(k71.x.a(s.class), new c(), new e(), new d());
+    public final l1 F0 = new l1(k71.xShadow.a(s.class), new c(), new e(), new d());
     public final com.github.rudroid.support.e G0 = new com.github.rudroid.support.e(this, this);
 
     public static final class a {
@@ -116,12 +116,12 @@ public final class SupportFragment extends Hilt_SupportFragment<e4> implements a
         if (i == 1 && i2 == -1 && data != null) {
             y1 y1Var = J4().u;
             h hVar = (h) ((g1) y1Var.getValue()).getData();
-            List list = hVar != null ? hVar.a : x61.r.r;
+            List list = hVar != null ? hVar.a : x61.rShadow.r;
             do {
                 value = y1Var.getValue();
                 g1.a aVar = g1.Companion;
                 h hVar2 = (h) ((g1) y1Var.getValue()).getData();
-                a2 = hVar2 != null ? h.a(hVar2, x61.m.l0(list, d0.n(data)), false, false, null, null, 30) : null;
+                a2 = hVar2 != null ? h.a(hVar2, x61.m.l0(list, d0Shadow.n(data)), false, false, null, null, 30) : null;
                 aVar.getClass();
             } while (!y1Var.i(value, new h0(a2)));
         }
@@ -173,12 +173,12 @@ public final class SupportFragment extends Hilt_SupportFragment<e4> implements a
         k71.k.g(uri, "uri");
         y1 y1Var = J4().u;
         h hVar = (h) ((g1) y1Var.getValue()).getData();
-        List list = hVar != null ? hVar.a : x61.r.r;
+        List list = hVar != null ? hVar.a : x61.rShadow.r;
         do {
             value = y1Var.getValue();
             g1.a aVar = g1.Companion;
             h hVar2 = (h) ((g1) y1Var.getValue()).getData();
-            a2 = hVar2 != null ? h.a(hVar2, x61.m.k0(list, x61.m.K0(d0.n(uri))), false, false, null, null, 30) : null;
+            a2 = hVar2 != null ? h.a(hVar2, x61.m.k0(list, x61.m.K0(d0Shadow.n(uri))), false, false, null, null, 30) : null;
             aVar.getClass();
         } while (!y1Var.i(value, new h0(a2)));
     }

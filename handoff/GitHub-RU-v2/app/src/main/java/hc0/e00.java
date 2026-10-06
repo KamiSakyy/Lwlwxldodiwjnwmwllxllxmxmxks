@@ -6,7 +6,7 @@ public abstract class e00 {
     public static final aa.q0 a;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         a = new aa.q0("UserListItemsConnection", rVar, rVar);
     }
 }

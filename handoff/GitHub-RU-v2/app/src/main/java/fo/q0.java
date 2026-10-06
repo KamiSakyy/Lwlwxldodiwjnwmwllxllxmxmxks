@@ -1,6 +1,6 @@
 package fo;
 
-import z01.f1;
+import z01.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 implements f1, yn.a {

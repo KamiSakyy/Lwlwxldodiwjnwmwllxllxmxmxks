@@ -7,7 +7,7 @@ public abstract class op {
     public static final np Companion = new np();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
         aa.j0 j0Var = yg.a;
         zp.Companion.getClass();

@@ -14,21 +14,21 @@ public abstract class h6 {
     static {
         xd.Companion.getClass();
         aa.r b = v8.l0.b(xd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         aa.s mVar2 = new aa.m("id", v8.l0.b(td.a), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list = gw0.b.a;
         List r = x61.l.r(new aa.s[]{mVar, mVar2, no.a.c(list, "selections", "User", n, list)});
         w80.Companion.getClass();
         aa.q0 q0Var = w80.W;
         k71.k.g(q0Var, "type");
-        List n2 = sy.d0.n(new aa.m("user", q0Var, (String) null, rVar, rVar, r));
+        List n2 = sy.d0Shadow.n(new aa.m("user", q0Var, (String) null, rVar, rVar, r));
         m80.Companion.getClass();
         aa.q0 q0Var2 = m80.a;
         k71.k.g(q0Var2, "type");
         sk.Companion.getClass();
-        a = sy.d0.n(new aa.m("updateUserDashboardPins", q0Var2, (String) null, rVar, no.a.s(sk.r1, new aa.u0(a0.s0.p("itemIds", new aa.t("itemIds")))), n2));
+        a = sy.d0Shadow.n(new aa.m("updateUserDashboardPins", q0Var2, (String) null, rVar, no.a.s(sk.r1, new aa.u0(a0.s0.p("itemIds", new aa.t("itemIds")))), n2));
     }
 }

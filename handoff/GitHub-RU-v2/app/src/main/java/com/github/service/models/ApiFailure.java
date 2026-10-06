@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import k71.k;
-import x61.r;
+import x61.rShadow;
 import x61.s;
 import xz0.a;
 
@@ -22,7 +22,7 @@ public final class ApiFailure extends GithubException {
     public Throwable x;
 
     public /* synthetic */ ApiFailure(ApiFailureType apiFailureType, String str, String str2, Integer num, ArrayList arrayList, Map map, Throwable th, int i) {
-        this(apiFailureType, str, (i & 4) != 0 ? null : str2, (i & 8) != 0 ? null : num, (i & 16) != 0 ? r.r : arrayList, (i & 32) != 0 ? s.r : map, (i & 64) != 0 ? null : th);
+        this(apiFailureType, str, (i & 4) != 0 ? null : str2, (i & 8) != 0 ? null : num, (i & 16) != 0 ? rShadow.r : arrayList, (i & 32) != 0 ? s.r : map, (i & 64) != 0 ? null : th);
     }
 
     public final boolean equals(Object obj) {
@@ -37,7 +37,7 @@ public final class ApiFailure extends GithubException {
     }
 
     public final int hashCode() {
-        int hashCode = this.r.hashCode() * 31;
+        int hashCode = this.rShadow.hashCode() * 31;
         String str = this.s;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.t;

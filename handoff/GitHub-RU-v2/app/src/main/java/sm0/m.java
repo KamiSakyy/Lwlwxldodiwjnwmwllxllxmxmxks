@@ -37,7 +37,7 @@ public final class m extends c71.j implements j71.c {
                 int i = this.w;
                 if (i == 0) {
                     y.j(obj);
-                    com.github.service.wrapper.b bVar = this.x.a;
+                    com.github.service.wrapper.bShadow bVar = this.x.a;
                     uf0.f fVar = new uf0.f();
                     uf0.d dVar = this.y;
                     String str = dVar.a;
@@ -57,7 +57,7 @@ public final class m extends c71.j implements j71.c {
                 int i2 = this.w;
                 if (i2 == 0) {
                     y.j(obj);
-                    com.github.service.wrapper.b bVar2 = this.x.a;
+                    com.github.service.wrapper.bShadow bVar2 = this.x.a;
                     uf0.f fVar2 = new uf0.f();
                     uf0.d dVar2 = this.y;
                     String str2 = dVar2.a;

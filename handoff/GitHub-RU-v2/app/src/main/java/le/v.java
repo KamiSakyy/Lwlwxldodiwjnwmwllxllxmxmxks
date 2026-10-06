@@ -6,7 +6,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import com.github.rudroid.utilities.j2;
 import com.github.service.models.response.Avatar;
-import jo.f4;
+import jo.f4Shadow;
 import v8.l0;
 import yz0.t1;
 import yz0.u1;

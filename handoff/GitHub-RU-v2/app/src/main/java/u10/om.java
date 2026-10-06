@@ -30,6 +30,6 @@ public final class om {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Commits(totalCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Commits(totalCount=", ", nodes=", ")", this.b);
     }
 }

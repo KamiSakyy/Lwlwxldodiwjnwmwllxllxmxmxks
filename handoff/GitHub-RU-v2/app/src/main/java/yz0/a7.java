@@ -96,7 +96,7 @@ public final class a7 extends s7 {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public /* synthetic */ a7(s sVar, boolean z, TimelineItem$TimelinePullRequestReview$ReviewState timelineItem$TimelinePullRequestReview$ReviewState) {
-        this("", false, 0, sVar, x61.r.r, z, timelineItem$TimelinePullRequestReview$ReviewState, r8, false, false);
+        this("", false, 0, sVar, x61.rShadow.r, z, timelineItem$TimelinePullRequestReview$ReviewState, r8, false, false);
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
     }

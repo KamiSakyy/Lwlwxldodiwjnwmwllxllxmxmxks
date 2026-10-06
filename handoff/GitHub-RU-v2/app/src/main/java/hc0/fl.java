@@ -8,7 +8,7 @@ public abstract class fl {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         n3.Companion.getClass();
         aa.j0 j0Var = n3.f;
         l6.Companion.getClass();

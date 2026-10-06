@@ -4,7 +4,7 @@ import aa.v0;
 import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x implements v0 {
+public final class xShadow implements v0 {
     public z a;
     public String b;
     public String c;
@@ -19,10 +19,10 @@ public final class x implements v0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return k71.k.b(this.a, xVar.a) && k71.k.b(this.b, xVar.b) && k71.k.b(this.c, xVar.c);
     }
 

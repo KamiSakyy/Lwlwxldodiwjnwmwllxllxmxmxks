@@ -12,7 +12,7 @@ import u10.y50;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qs implements aaShadow.a {
     public static final qs a = new qs();
-    public static final List b = sy.d0.o("__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "viewerCanUpdate", "timelineItems");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "viewerCanUpdate", "timelineItems");
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0025. Please report as an issue. */
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -189,12 +189,12 @@ public final class qs implements aaShadow.a {
         bVar.b(fVar, wVar, v50Var.h);
         fVar.z0("viewerCanMergeAsAdmin");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(v50Var.i, bVar2, fVar, wVar, "mergedBy");
+        jo.f4Shadow.C(v50Var.i, bVar2, fVar, wVar, "mergedBy");
         aa.c.b(aa.c.c(os.a, true)).b(fVar, wVar, v50Var.j);
         fVar.z0("mergeCommit");
         aa.c.b(aa.c.c(ns.a, false)).b(fVar, wVar, v50Var.k);
         fVar.z0("viewerCanUpdate");
-        jo.f4.C(v50Var.l, bVar2, fVar, wVar, "timelineItems");
+        jo.f4Shadow.C(v50Var.l, bVar2, fVar, wVar, "timelineItems");
         aa.c.c(ts.a, false).b(fVar, wVar, v50Var.m);
         List list = z70.d.a;
         z70.d.d(fVar, wVar, v50Var.n);

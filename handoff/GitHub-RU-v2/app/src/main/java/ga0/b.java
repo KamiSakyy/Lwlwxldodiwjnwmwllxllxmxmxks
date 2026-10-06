@@ -8,7 +8,7 @@ import hc0.fb;
 import hc0.iu;
 import hc0.kz;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -19,8 +19,8 @@ public abstract class b {
     static {
         db.Companion.getClass();
         r b = l0.b(db.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         bb.Companion.getClass();
         m mVar = new m("id", l0.b(bb.a), (String) null, rVar, rVar, rVar);
         iu.Companion.getClass();
@@ -28,6 +28,6 @@ public abstract class b {
         fb.Companion.getClass();
         List r = l.r(new m[]{mVar, mVar2, new m("__typename", l0.b(fb.a), (String) null, rVar, rVar, rVar)});
         kz.Companion.getClass();
-        a = d0.n(new m("viewer", l0.b(kz.O), (String) null, rVar, rVar, r));
+        a = d0Shadow.n(new m("viewer", l0.b(kz.O), (String) null, rVar, rVar, r));
     }
 }

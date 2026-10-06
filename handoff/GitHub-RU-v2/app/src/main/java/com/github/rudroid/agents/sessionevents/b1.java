@@ -42,7 +42,7 @@ public final class b1 {
     public static final class a {
         public static b1 a() {
             k.a aVar = new k.a(null, false, false);
-            x61.r rVar = x61.r.r;
+            x61.rShadow rVar = x61.rShadow.r;
             return new b1(rVar, rVar, null, null, j.a.f7655a, false, false, null, null, aVar, null);
         }
     }

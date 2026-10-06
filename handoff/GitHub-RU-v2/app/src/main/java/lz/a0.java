@@ -1,18 +1,18 @@
 package lz;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 {
+public final class a0Shadow {
     public String a;
     public w b;
     public q c;
     public y d;
-    public x e;
+    public xShadow e;
     public m f;
     public vx.a g;
 
-    public a0(String str, w wVar, q qVar, y yVar, x xVar, m mVar, vx.a aVar) {
+    public a0(String str, w wVar, q qVar, y yVar, xShadow xVar, m mVar, vx.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = wVar;
@@ -27,10 +27,10 @@ public final class a0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof a0)) {
+        if (!(obj instanceof a0Shadow)) {
             return false;
         }
-        a0 a0Var = (a0) obj;
+        a0Shadow a0Var = (a0Shadow) obj;
         return k71.k.b(this.a, a0Var.a) && k71.k.b(this.b, a0Var.b) && k71.k.b(this.c, a0Var.c) && k71.k.b(this.d, a0Var.d) && k71.k.b(this.e, a0Var.e) && k71.k.b(this.f, a0Var.f) && k71.k.b(this.g, a0Var.g);
     }
 
@@ -42,7 +42,7 @@ public final class a0 {
         int hashCode3 = (hashCode2 + (qVar == null ? 0 : qVar.hashCode())) * 31;
         y yVar = this.d;
         int hashCode4 = (hashCode3 + (yVar == null ? 0 : yVar.hashCode())) * 31;
-        x xVar = this.e;
+        xShadow xVar = this.e;
         int hashCode5 = (hashCode4 + (xVar == null ? 0 : xVar.hashCode())) * 31;
         m mVar = this.f;
         int hashCode6 = (hashCode5 + (mVar == null ? 0 : mVar.hashCode())) * 31;

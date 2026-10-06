@@ -151,7 +151,7 @@ public abstract class c0 {
         y = a("measurement.sgtm.batch.retry_max_wait", 21600000L, w50.c.s, false);
         z = a("measurement.sgtm.batch.retry_max_count", 10, w50.m.s, false);
         A = a("measurement.sgtm.upload.max_queued_batches", 5000, w80.t.s, false);
-        B = a("measurement.sgtm.upload.batches_retrieval_limit", 5, w80.a0.s, false);
+        B = a("measurement.sgtm.upload.batches_retrieval_limit", 5, w80.a0Shadow.s, false);
         C = a("measurement.sgtm.upload.min_delay_after_startup", 5000L, w80.n3.s, false);
         D = a("measurement.sgtm.upload.min_delay_after_broadcast", 1000L, w80.w3.s, false);
         E = a("measurement.sgtm.upload.min_delay_after_background", 600000L, y60.b.t, false);
@@ -184,7 +184,7 @@ public abstract class c0 {
         a("measurement.test.cached_long_flag", -1L, w50.c.t, true);
         d0 = a("measurement.test.int_flag", -2, w50.m.t, false);
         e0 = a("measurement.test.double_flag", Double.valueOf(-3.0d), w80.t.t, false);
-        f0 = a("measurement.experiment.max_ids", 50, w80.a0.t, false);
+        f0 = a("measurement.experiment.max_ids", 50, w80.a0Shadow.t, false);
         g0 = a("measurement.upload.max_item_scoped_custom_parameters", 27, w80.n3.t, false);
         h0 = a("measurement.upload.max_event_parameter_value_length", 500, w80.w3.t, true);
         i0 = a("measurement.max_bundles_per_iteration", 100, y60.b.u, false);
@@ -215,7 +215,7 @@ public abstract class c0 {
         F0 = a("measurement.audience.use_bundle_timestamp_for_event_count_filters", bool, w50.c.u, true);
         G0 = a("measurement.sdk.collection.last_deep_link_referrer_campaign2", bool, w50.m.u, false);
         H0 = a("measurement.integration.disable_firebase_instance_id", bool, w80.t.u, false);
-        I0 = a("measurement.collection.service.update_with_analytics_fix", bool, w80.a0.u, false);
+        I0 = a("measurement.collection.service.update_with_analytics_fix", bool, w80.a0Shadow.u, false);
         J0 = a("measurement.service.storage_consent_support_version", 203600, w80.n3.u, false);
         K0 = a("measurement.service.store_null_safelist", bool2, w80.w3.u, false);
         L0 = a("measurement.service.store_safelist", bool2, y60.b.v, false);

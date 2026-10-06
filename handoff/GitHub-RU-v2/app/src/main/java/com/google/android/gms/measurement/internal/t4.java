@@ -100,7 +100,7 @@ public final class t4 extends w1 {
     }
 
     public static long R(byte[] bArr) {
-        c21.u.g(bArr);
+        c21.uShadow.g(bArr);
         int length = bArr.length;
         if (length <= 0) {
             throw new IllegalStateException();
@@ -145,7 +145,7 @@ public final class t4 extends w1 {
     }
 
     public static boolean Z(String str, String[] strArr) {
-        c21.u.g(strArr);
+        c21.uShadow.g(strArr);
         for (String str2 : strArr) {
             if (Objects.equals(str, str2)) {
                 return true;
@@ -181,7 +181,7 @@ public final class t4 extends w1 {
             bundle.putLong("creation_timestamp", fVar.u);
             bundle.putString("name", fVar.t.s);
             Object j = fVar.t.j();
-            c21.u.g(j);
+            c21.uShadow.g(j);
             c2.c(bundle, j);
             bundle.putBoolean("active", fVar.v);
             String str = fVar.w;
@@ -222,7 +222,7 @@ public final class t4 extends w1 {
 
     public static boolean q0(Context context) {
         ActivityInfo receiverInfo;
-        c21.u.g(context);
+        c21.uShadow.g(context);
         try {
             PackageManager packageManager = context.getPackageManager();
             if (packageManager != null && (receiverInfo = packageManager.getReceiverInfo(new ComponentName(context, "com.google.android.gms.measurement.AppMeasurementReceiver"), 0)) != null) {
@@ -271,7 +271,7 @@ public final class t4 extends w1 {
     }
 
     public static boolean y0(String str) {
-        c21.u.d(str);
+        c21.uShadow.d(str);
         return str.charAt(0) != '_' || str.equals("_ep");
     }
 
@@ -391,7 +391,7 @@ public final class t4 extends w1 {
             s0Var.z.a("Missing google_app_id. Firebase Analytics disabled. See https://goo.gl/NAOOOI");
             return false;
         }
-        c21.u.g(str);
+        c21.uShadow.g(str);
         if (str.matches("^1:\\d+:android:[a-f0-9]+$")) {
             return true;
         }
@@ -692,7 +692,7 @@ public final class t4 extends w1 {
     }
 
     public final void J(Parcelable[] parcelableArr, int i) {
-        c21.u.g(parcelableArr);
+        c21.uShadow.g(parcelableArr);
         for (Parcelable parcelable : parcelableArr) {
             Bundle bundle = (Bundle) parcelable;
             Iterator it = new TreeSet(bundle.keySet()).iterator();
@@ -1069,7 +1069,7 @@ public final class t4 extends w1 {
         if (z) {
             H = b0(H);
         }
-        c21.u.g(H);
+        c21.uShadow.g(H);
         return new w(str, new v(H), str2, j);
     }
 

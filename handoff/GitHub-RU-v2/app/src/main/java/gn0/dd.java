@@ -63,7 +63,7 @@ public abstract class dd {
         ny.Companion.getClass();
         my myVar = ny.Companion;
         ty.Companion.getClass();
-        sy syVar = ty.Companion;
+        syShadow syVar = ty.Companion;
         xy.Companion.getClass();
         wy wyVar = xy.Companion;
         w00.Companion.getClass();

@@ -7,7 +7,7 @@ import u10.l00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ap implements aaShadow.a {
     public static final ap a = new ap();
-    public static final List b = sy.d0.o("__typename", "subscribable");
+    public static final List b = sy.d0Shadow.o("__typename", "subscribable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

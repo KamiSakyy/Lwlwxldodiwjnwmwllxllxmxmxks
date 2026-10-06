@@ -36,7 +36,7 @@ import sn0.v;
 import so.u;
 import so.x;
 import so.z;
-import sy.d0;
+import sy.d0Shadow;
 import sy.e0;
 import sy.y;
 import t00.n1;
@@ -255,7 +255,7 @@ public final class n implements y71.j {
     public final Object c(Object obj, a71.c cVar) {
         m mVar;
         int i;
-        go0.h hVar;
+        go0.hShadow hVar;
         int i2;
         sn0.d dVar;
         String str;
@@ -275,7 +275,7 @@ public final class n implements y71.j {
         int i6;
         tc0.d dVar2;
         String str5;
-        hd0.h hVar2;
+        hd0.hShadow hVar2;
         int i7;
         tc0.i iVar2;
         String str6;
@@ -289,7 +289,7 @@ public final class n implements y71.j {
         int i11;
         kp.i iVar4;
         int i12;
-        so.h hVar3;
+        so.hShadow hVar3;
         String str8;
         kp.k kVar2;
         int i13;
@@ -313,7 +313,7 @@ public final class n implements y71.j {
         int i19;
         d20.d dVar3;
         String str12;
-        r20.h hVar4;
+        r20.hShadow hVar4;
         int i21;
         d20.i iVar5;
         String str13;
@@ -418,7 +418,7 @@ public final class n implements y71.j {
                         i3 = kVar.v;
                         if (i3 != 0) {
                             y.j(obj4);
-                            sn0.h hVar5 = ((sn0.g) obj).a;
+                            sn0.hShadow hVar5 = ((sn0.g) obj).a;
                             qn.g gVar2 = null;
                             if (hVar5 != null && (iVar = hVar5.c) != null && (str2 = iVar.c) != null) {
                                 y61.b i34 = d0.i();
@@ -574,7 +574,7 @@ public final class n implements y71.j {
                         i7 = hVar2.v;
                         if (i7 != 0) {
                             y.j(obj8);
-                            tc0.h hVar6 = ((tc0.g) obj).a;
+                            tc0.hShadow hVar6 = ((tc0.g) obj).a;
                             qn.g gVar6 = null;
                             if (hVar6 != null && (iVar2 = hVar6.c) != null && (str6 = iVar2.c) != null) {
                                 y61.b i41 = d0.i();
@@ -692,7 +692,7 @@ public final class n implements y71.j {
                             aa.f fVar5 = (aa.f) obj;
                             ApolloException apolloException = fVar5.e;
                             if (apolloException != null) {
-                                throw in.r.b(apolloException, this.t);
+                                throw in.rShadow.b(apolloException, this.t);
                             }
                             oVar.v = 1;
                             if (this.s.c(fVar5, oVar) == aVar11) {
@@ -1019,7 +1019,7 @@ public final class n implements y71.j {
                         i21 = hVar4.v;
                         if (i21 != 0) {
                             y.j(obj20);
-                            d20.h hVar7 = ((d20.g) obj).a;
+                            d20.hShadow hVar7 = ((d20.g) obj).a;
                             qn.g gVar14 = null;
                             if (hVar7 != null && (iVar5 = hVar7.c) != null && (str13 = iVar5.c) != null) {
                                 y61.b i57 = d0.i();

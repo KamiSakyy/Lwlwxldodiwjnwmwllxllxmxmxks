@@ -1,6 +1,6 @@
 package xg;
 
-import a0.d2;
+import a0.d2Shadow;
 import androidx.compose.runtime.b2;
 import com.google.android.gms.internal.measurement.i4;
 import w2.g1;

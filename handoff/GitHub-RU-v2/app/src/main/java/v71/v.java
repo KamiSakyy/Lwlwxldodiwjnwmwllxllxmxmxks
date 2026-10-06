@@ -11,7 +11,7 @@ public abstract class v extends a71.a implements a71.e {
     public abstract void J0(a71.h hVar, Runnable runnable);
 
     public void K0(a71.h hVar, Runnable runnable) {
-        a81.b.i(this, hVar, runnable);
+        a81.bShadow.i(this, hVar, runnable);
     }
 
     public boolean L0(a71.h hVar) {
@@ -19,7 +19,7 @@ public abstract class v extends a71.a implements a71.e {
     }
 
     public v M0(int i) {
-        a81.b.a(i);
+        a81.bShadow.a(i);
         return new a81.g(this, i);
     }
 

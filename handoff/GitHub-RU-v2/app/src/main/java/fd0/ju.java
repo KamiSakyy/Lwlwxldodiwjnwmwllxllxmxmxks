@@ -6,7 +6,7 @@ import kc0.c80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ju implements aaShadow.a {
     public static final ju a = new ju();
-    public static final List b = sy.d0.o(new String[]{"name", "id", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"name", "id", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

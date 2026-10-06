@@ -11,9 +11,9 @@ public final class g4 {
     public sz0.b e;
     public List f;
     public String g;
-    public f1 h;
+    public f1Shadow h;
 
-    public g4(e1 e1Var, boolean z, boolean z2, boolean z3, sz0.b bVar, List list, String str, f1 f1Var) {
+    public g4(e1 e1Var, boolean z, boolean z2, boolean z3, sz0.b bVar, List list, String str, f1Shadow f1Var) {
         k71.k.g(e1Var, "licenseType");
         k71.k.g(list, "availableCopilotUpgradeSkus");
         this.a = e1Var;
@@ -43,7 +43,7 @@ public final class g4 {
         int c = f1.e.c(this.f, (e + (bVar == null ? 0 : bVar.hashCode())) * 31, 31);
         String str = this.g;
         int hashCode = (c + (str == null ? 0 : str.hashCode())) * 31;
-        f1 f1Var = this.h;
+        f1Shadow f1Var = this.h;
         return hashCode + (f1Var != null ? f1Var.hashCode() : 0);
     }
 
@@ -66,6 +66,6 @@ public final class g4 {
     }
 
     public /* synthetic */ g4(int i, boolean z, boolean z2) {
-        this((i & 1) != 0 ? e1.z : e1.x, (i & 2) != 0 ? false : z, (i & 4) != 0 ? false : z2, false, null, x61.r.r, null, null);
+        this((i & 1) != 0 ? e1.z : e1.x, (i & 2) != 0 ? false : z, (i & 4) != 0 ? false : z2, false, null, x61.rShadow.r, null, null);
     }
 }

@@ -4,7 +4,7 @@ import sy.y;
 import t00.f8;
 import v71.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.viewmodels.tasklist.TaskListViewModel$checkPullRequestBodyTask$1", f = "TaskListViewModel.kt", l = {142}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -49,7 +49,7 @@ final class m extends c71.j implements j71.e {
             String str2 = this.y;
             k71.k.g(str2, "body");
             a71.c cVar2 = null;
-            y71.y J = b31.b.J(n1.x(new an.d(kVar, d, str, cVar, cVar2, 2), new f8(new an.a(kVar, str2, this.z, this.A, cVar2, 4))), d, cVar);
+            y71.y J = b31.b.J(n1Shadow.x(new an.d(kVar, d, str, cVar, cVar2, 2), new f8(new an.a(kVar, str2, this.z, this.A, cVar2, 4))), d, cVar);
             l lVar = new l(nVar, str);
             this.v = 1;
             if (J.b(lVar, this) == aVar) {

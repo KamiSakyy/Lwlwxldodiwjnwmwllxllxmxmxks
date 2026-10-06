@@ -61,7 +61,7 @@ public abstract class d8 implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, z7Var.b);
         fVar.z0("viewerDidAuthor");
-        jo.f4.C(z7Var.c, aa.c.f, fVar, wVar, "pendingReviews");
+        jo.f4Shadow.C(z7Var.c, aa.c.f, fVar, wVar, "pendingReviews");
         aa.c.b(aa.c.c(c8.a, false)).b(fVar, wVar, z7Var.d);
         List list = v7.a;
         v7.d(fVar, wVar, z7Var.e);

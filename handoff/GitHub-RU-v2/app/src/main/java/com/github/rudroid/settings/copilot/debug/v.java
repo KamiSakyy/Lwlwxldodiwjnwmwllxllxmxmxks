@@ -1,7 +1,7 @@
 package com.github.rudroid.settings.copilot.debug;
 
 import androidx.lifecycle.k1;
-import xn.f1;
+import xn.f1Shadow;
 import y71.i1;
 import y71.y1;
 
@@ -22,14 +22,14 @@ public final class v extends k1 {
         Object value;
         nj.d dVar;
         nj.e eVar = this.s;
-        f1 f1Var = ((nj.d) eVar.d.r.getValue()).e;
+        f1Shadow f1Var = ((nj.d) eVar.d.r.getValue()).e;
         if (f1Var != null) {
             y1 y1Var = eVar.c;
             do {
                 value = y1Var.getValue();
                 dVar = (nj.d) value;
                 k71.k.g(dVar, "$this$updateOverrides");
-            } while (!y1Var.i(value, nj.d.a(dVar, null, null, null, null, (f1) cVar.k(f1Var), 15)));
+            } while (!y1Var.i(value, nj.d.a(dVar, null, null, null, null, (f1Shadow) cVar.k(f1Var), 15)));
         }
     }
 }

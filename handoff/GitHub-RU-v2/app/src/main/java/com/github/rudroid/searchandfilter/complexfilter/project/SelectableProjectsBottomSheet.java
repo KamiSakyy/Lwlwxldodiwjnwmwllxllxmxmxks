@@ -10,7 +10,7 @@ import androidx.lifecycle.q0;
 import androidx.lifecycle.u1;
 import com.github.rudroid.searchandfilter.complexfilter.project.SelectableProjectsBottomSheet;
 import java.util.List;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjectsBottomSheet {
@@ -311,7 +311,7 @@ public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjects
 
     static {
         r71.e pVar = new k71.p(SelectableProjectsBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         e1 = new r71.e[]{pVar};
         Companion = new a();
     }
@@ -320,9 +320,9 @@ public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjects
         k kVar = new k();
         w61.i iVar = w61.i.s;
         w61.h s2 = sy.w.s(iVar, new l(kVar));
-        this.Y0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.complexfilter.project.i.class), new m(s2), new o(s2), new n(s2));
+        this.Y0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.complexfilter.project.i.class), new m(s2), new o(s2), new n(s2));
         w61.h s3 = sy.w.s(iVar, new q(new p()));
-        this.Z0 = new l1(k71.x.a(y.class), new r(s3), new j(s3), new s(s3));
+        this.Z0 = new l1(k71.xShadow.a(y.class), new r(s3), new j(s3), new s(s3));
         this.a1 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(28));
         this.b1 = sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.project.s(this, 0));
         this.c1 = 2131954228;
@@ -371,9 +371,9 @@ public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjects
         super.c4(view, bundle);
         final o0 o0Var = new o0();
         y yVar = (y) this.Z0.getValue();
-        final androidx.lifecycle.h a2 = d1.a(n1.y(new x(new y00.l(yVar.t.b, 10)), yVar.F));
+        final androidx.lifecycle.h a2 = d1.a(n1Shadow.y(new x(new y00.l(yVar.t.b, 10)), yVar.F));
         com.github.rudroid.searchandfilter.complexfilter.project.i iVar = (com.github.rudroid.searchandfilter.complexfilter.project.i) this.Y0.getValue();
-        final androidx.lifecycle.h a3 = d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.project.h(new y00.l(iVar.t.b, 10)), iVar.F));
+        final androidx.lifecycle.h a3 = d1.a(n1Shadow.y(new com.github.rudroid.searchandfilter.complexfilter.project.h(new y00.l(iVar.t.b, 10)), iVar.F));
         final int i2 = 0;
         o0Var.l(a2, new i(new j71.c() { // from class: com.github.rudroid.searchandfilter.complexfilter.project.r
             public final Object k(Object obj) {

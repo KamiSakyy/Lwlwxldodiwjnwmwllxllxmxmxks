@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import g81.e;
 import gz.a;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -38,7 +38,7 @@ public final class ChatAiModelResponse {
 
     public /* synthetic */ ChatAiModelResponse(int i, AiModelBillingResponse aiModelBillingResponse, AiModelCapabilitiesResponse aiModelCapabilitiesResponse, AiModelPolicyResponse aiModelPolicyResponse, AiModelSupportsResponse aiModelSupportsResponse, gz.e eVar, String str, String str2, String str3, boolean z, boolean z2, boolean z3, boolean z4) {
         if (1568 != (i & 1568)) {
-            c1.l(i, 1568, ChatAiModelResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1568, ChatAiModelResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 1) == 0) {

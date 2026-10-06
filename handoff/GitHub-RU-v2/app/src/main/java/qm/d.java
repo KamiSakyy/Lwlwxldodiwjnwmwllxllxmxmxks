@@ -1,7 +1,7 @@
 package qm;
 
 import h1.u;
-import in.r;
+import in.rShadow;
 import java.util.Iterator;
 import java.util.List;
 import k71.k;
@@ -10,7 +10,7 @@ import oa.j;
 import sy.y;
 import v71.v;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 import z01.u0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -60,7 +60,7 @@ public final class d {
                     jVar = aVar.u;
                     y.j(obj);
                 }
-                return n1.y(r.l(new y71.y((i) obj, new u(this, jVar, (a71.c) null, 20), 6)), this.c);
+                return n1Shadow.y(rShadow.l(new y71.y((i) obj, new u(this, jVar, (a71.c) null, 20), 6)), this.c);
             }
         }
         aVar = new a(this, cVar);
@@ -69,7 +69,7 @@ public final class d {
         i = aVar.x;
         if (i != 0) {
         }
-        return n1.y(r.l(new y71.y((i) obj2, new u(this, jVar, (a71.c) null, 20), 6)), this.c);
+        return n1Shadow.y(rShadow.l(new y71.y((i) obj2, new u(this, jVar, (a71.c) null, 20), 6)), this.c);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:60:0x006a, code lost:
@@ -130,7 +130,7 @@ public final class d {
                     z2 = z;
                     bVar.w = z2;
                     bVar.A = 1;
-                    obj2 = n1.v(a, bVar);
+                    obj2 = n1Shadow.v(a, bVar);
                 } else {
                     if (i != 1) {
                         if (i != 2) {
@@ -146,7 +146,7 @@ public final class d {
                         i3 = i5;
                         i iVar = (i) obj2;
                         ak.a aVar4 = aVar3;
-                        return n1.y(r.l(new y71.y(new y71.y(new androidx.compose.foundation.lazy.layout.y(aVar4, z3, this, jVar2, (a71.c) null, 3), iVar), new c(aVar4, i3 == 0, this, jVar2, null))), this.c);
+                        return n1Shadow.y(rShadow.l(new y71.y(new y71.y(new androidx.compose.foundation.lazy.layout.y(aVar4, z3, this, jVar2, (a71.c) null, 3), iVar), new c(aVar4, i3 == 0, this, jVar2, null))), this.c);
                     }
                     boolean z5 = bVar.w;
                     aVar3 = bVar.v;
@@ -228,7 +228,7 @@ public final class d {
                             jVar2 = jVar3;
                             i iVar2 = (i) obj2;
                             ak.a aVar42 = aVar3;
-                            return n1.y(r.l(new y71.y(new y71.y(new androidx.compose.foundation.lazy.layout.y(aVar42, z3, this, jVar2, (a71.c) null, 3), iVar2), new c(aVar42, i3 == 0, this, jVar2, null))), this.c);
+                            return n1Shadow.y(rShadow.l(new y71.y(new y71.y(new androidx.compose.foundation.lazy.layout.y(aVar42, z3, this, jVar2, (a71.c) null, 3), iVar2), new c(aVar42, i3 == 0, this, jVar2, null))), this.c);
                         }
                         return aVar2;
                     }

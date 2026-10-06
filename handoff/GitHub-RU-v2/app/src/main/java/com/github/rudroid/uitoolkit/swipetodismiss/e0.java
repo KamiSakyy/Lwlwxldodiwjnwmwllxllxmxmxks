@@ -75,16 +75,16 @@ public final /* synthetic */ class e0 implements j71.e {
                     } else {
                         sVar.q0();
                     }
-                    v2.e eVar = v2.g.f;
+                    v2.eShadow eVar = v2.g.f;
                     androidx.compose.runtime.t.I(sVar, eVar, a);
-                    v2.e eVar2 = v2.g.e;
+                    v2.eShadow eVar2 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar, eVar2, l);
                     Integer valueOf = Integer.valueOf(hashCode);
-                    v2.e eVar3 = v2.g.g;
+                    v2.eShadow eVar3 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar, valueOf, eVar3);
                     v2.d dVar = v2.g.h;
                     androidx.compose.runtime.t.E(sVar, dVar);
-                    v2.e eVar4 = v2.g.d;
+                    v2.eShadow eVar4 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar, eVar4, c);
                     w1.r z2 = androidx.compose.foundation.layout.b.z(oVar, f, 0.0f, 2);
                     l2 a2 = j2.a(androidx.compose.foundation.layout.l.a, w1.c.B, sVar, 48);
@@ -128,7 +128,7 @@ public final /* synthetic */ class e0 implements j71.e {
                     sVar.q(true);
                     if (z4 && this.t) {
                         sVar.c0(659916284);
-                        sg.k0.a(12582912, 91, androidx.compose.foundation.layout.b.d(2, f), sVar, null, null, null, aVar, dg.a.a, null, false);
+                        sg.k0Shadow.a(12582912, 91, androidx.compose.foundation.layout.b.d(2, f), sVar, null, null, null, aVar, dg.a.a, null, false);
                         w1.r z5 = androidx.compose.foundation.layout.b.z(oVar, f, 0.0f, 2);
                         String format = zonedDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE);
                         k71.k.f(format, "format(...)");
@@ -143,7 +143,7 @@ public final /* synthetic */ class e0 implements j71.e {
                 }
             case 2:
                 ((Integer) obj2).getClass();
-                ef.d.a((w1.r) obj3, (j71.a) obj6, this.s, (l01.x) obj5, this.t, (j71.c) obj4, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(1));
+                ef.d.a((w1.r) obj3, (j71.a) obj6, this.s, (l01.xShadow) obj5, this.t, (j71.c) obj4, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(1));
                 break;
             default:
                 jb jbVar = jb.a;
@@ -166,7 +166,7 @@ public final /* synthetic */ class e0 implements j71.e {
         this.x = p0Var;
     }
 
-    public /* synthetic */ e0(w1.r rVar, j71.a aVar, boolean z, l01.x xVar, boolean z2, j71.c cVar, int i) {
+    public /* synthetic */ e0(w1.r rVar, j71.a aVar, boolean z, l01.xShadow xVar, boolean z2, j71.c cVar, int i) {
         this.x = rVar;
         this.u = aVar;
         this.s = z;

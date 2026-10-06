@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class q0 implements aa.a {
-    public static final List a = sy.d0.n("text");
+    public static final List a = sy.d0Shadow.n("text");
 
     public static h0 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

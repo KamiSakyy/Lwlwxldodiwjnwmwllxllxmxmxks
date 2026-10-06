@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yc implements aaShadow.a {
     public static final yc a = new yc();
-    public static final List b = sy.d0.n("markPullRequestReadyForReview");
+    public static final List b = sy.d0Shadow.n("markPullRequestReadyForReview");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

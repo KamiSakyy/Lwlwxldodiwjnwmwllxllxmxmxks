@@ -114,7 +114,7 @@ public abstract class a3 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -168,7 +168,7 @@ public abstract class a3 implements aa.a {
                     long nextLong2 = eVar.nextLong();
                     if (nextLong2 > 2147483647L) {
                         while (nextLong2 > 2147483647L) {
-                            nextLong2 = jo.f4.c(1, nextLong2, "substring(...)");
+                            nextLong2 = jo.f4Shadow.c(1, nextLong2, "substring(...)");
                         }
                         valueOf2 = Integer.valueOf((int) nextLong2);
                     } else {
@@ -326,7 +326,7 @@ public abstract class a3 implements aa.a {
                     long nextLong3 = eVar.nextLong();
                     if (nextLong3 > 2147483647L) {
                         while (nextLong3 > 2147483647L) {
-                            nextLong3 = jo.f4.c(1, nextLong3, "substring(...)");
+                            nextLong3 = jo.f4Shadow.c(1, nextLong3, "substring(...)");
                         }
                         valueOf3 = Integer.valueOf((int) nextLong3);
                     } else {

@@ -36,8 +36,8 @@ public final class e implements aa.i0, a71.g, bm.k, com.google.android.gms.measu
         x61.m.K0(arrayList);
     }
 
-    public static final boolean b(h91.a0 a0Var) {
-        h91.a0 a0Var2 = i91.h.v;
+    public static final boolean b(h91.a0Shadow a0Var) {
+        h91.a0Shadow a0Var2 = i91.h.v;
         return !t71.w.x(a0Var.b(), ".class", true);
     }
 
@@ -71,7 +71,7 @@ public final class e implements aa.i0, a71.g, bm.k, com.google.android.gms.measu
         List list = f50.a.a;
         List list2 = f50.a.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -91,7 +91,7 @@ public final class e implements aa.i0, a71.g, bm.k, com.google.android.gms.measu
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(e.class).hashCode();
+                return k71.xShadow.a(e.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -112,7 +112,7 @@ public final class e implements aa.i0, a71.g, bm.k, com.google.android.gms.measu
             bVar.getClass();
             list = (List) bVar.a(str, new k81.d(com.github.domain.searchandfilter.filters.data.notification.a.Companion.serializer(), 0));
         }
-        list = x61.r.r;
+        list = x61.rShadow.r;
         return new NotificationRepositoriesFilter(list);
     }
 

@@ -21,8 +21,8 @@ public abstract class x3 {
         vd.Companion.getClass();
         aa.x xVar = vd.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
         pd.Companion.getClass();
         aa.m mVar = new aa.m("hasNextPage", v8.l0.b(pd.a), (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
@@ -30,7 +30,7 @@ public abstract class x3 {
         k71.k.g(xVar2, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar2, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n2 = sy.d0.n("PullRequest");
+        List n2 = sy.d0Shadow.n("PullRequest");
         List list = yt0.h.a;
         aa.s c = no.a.c(list, "selections", "PullRequest", n2, list);
         td.Companion.getClass();

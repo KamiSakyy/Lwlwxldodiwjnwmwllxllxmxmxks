@@ -5,9 +5,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -29,7 +29,7 @@ public final class CustomNotificationFilter extends a {
 
     public /* synthetic */ CustomNotificationFilter(int i, int i2, String str, String str2, String str3, boolean z) {
         if (31 != (i & 31)) {
-            c1.l(i, 31, CustomNotificationFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 31, CustomNotificationFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.s = str;
@@ -72,7 +72,7 @@ public final class CustomNotificationFilter extends a {
     public final String toString() {
         StringBuilder o = s0.o("CustomNotificationFilter(id=", this.s, ", name=", this.t, ", queryString=");
         s0.w(this.v, this.u, ", unreadCount=", ", isDefault=", o);
-        return f4.s(o, this.w, ")");
+        return f4Shadow.s(o, this.w, ")");
     }
 
     @Override // android.os.Parcelable

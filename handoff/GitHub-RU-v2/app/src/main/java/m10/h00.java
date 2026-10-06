@@ -59,7 +59,7 @@ public abstract class h00 {
         u8.Companion.getClass();
         t8 t8Var = u8.Companion;
         w8.Companion.getClass();
-        v8 v8Var = w8.Companion;
+        v8Shadow v8Var = w8.Companion;
         ga.Companion.getClass();
         fa faVar = ga.Companion;
         ub.Companion.getClass();

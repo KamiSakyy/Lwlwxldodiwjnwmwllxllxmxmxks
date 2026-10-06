@@ -13,13 +13,13 @@ import com.github.rudroid.utilities.w0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class FilterBarFragmentRepositoryScope extends Hilt_FilterBarFragmentRepositoryScope {
-    public final w61.p L0 = sy.w.t(new com.github.rudroid.searchandfilter.ui.h(this, 0));
-    public final l1 M0 = new l1(k71.x.a(q0.class), new b(), new d(), new c());
+    public final w61.p L0 = sy.w.t(new com.github.rudroid.searchandfilter.ui.hShadow(this, 0));
+    public final l1 M0 = new l1(k71.xShadow.a(q0.class), new b(), new d(), new c());
     public final com.github.rudroid.fragments.util.c N0 = new com.github.rudroid.fragments.util.c("EXTRA_REPO_OWNER");
     public final com.github.rudroid.fragments.util.c O0 = new com.github.rudroid.fragments.util.c("EXTRA_REPO_NAME");
     public final com.github.rudroid.fragments.util.c P0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED");
     public boolean Q0;
-    public static final /* synthetic */ r71.e[] R0 = {new k71.m(FilterBarFragmentRepositoryScope.class, "repositoryOwner", "getRepositoryOwner()Ljava/lang/String;", 0), h1.w(k71.x.a, FilterBarFragmentRepositoryScope.class, "repositoryName", "getRepositoryName()Ljava/lang/String;", 0), new k71.m(FilterBarFragmentRepositoryScope.class, "isActivityHosted", "isActivityHosted()Z", 0)};
+    public static final /* synthetic */ r71.e[] R0 = {new k71.m(FilterBarFragmentRepositoryScope.class, "repositoryOwner", "getRepositoryOwner()Ljava/lang/String;", 0), h1.w(k71.xShadow.a, FilterBarFragmentRepositoryScope.class, "repositoryName", "getRepositoryName()Ljava/lang/String;", 0), new k71.m(FilterBarFragmentRepositoryScope.class, "isActivityHosted", "isActivityHosted()Z", 0)};
     public static final a Companion = new a();
 
     public static final class a {
@@ -98,10 +98,10 @@ public final class FilterBarFragmentRepositoryScope extends Hilt_FilterBarFragme
     }
 
     public static final class h extends k71.l implements j71.a {
-        public final /* synthetic */ com.github.rudroid.searchandfilter.ui.h s;
+        public final /* synthetic */ com.github.rudroid.searchandfilter.ui.hShadow s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(com.github.rudroid.searchandfilter.ui.h hVar) {
+        public h(com.github.rudroid.searchandfilter.ui.hShadow hVar) {
             super(0);
             this.s = hVar;
         }

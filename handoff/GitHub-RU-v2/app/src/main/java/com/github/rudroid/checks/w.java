@@ -23,9 +23,9 @@ final class w<T> implements y71.j {
         b0 b0Var = this.f8785r;
         b0Var.f8757x = iVar;
         y1 y1Var = b0Var.f8755v;
-        x61.r rVar = (List) ((g1) y1Var.getValue()).getData();
+        x61.rShadow rVar = (List) ((g1) y1Var.getValue()).getData();
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         w0.p(y1Var, x61.m.l0(rVar, arrayList));
         return w61.a0.a;

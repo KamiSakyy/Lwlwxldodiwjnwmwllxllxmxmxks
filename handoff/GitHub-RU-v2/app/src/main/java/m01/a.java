@@ -1,7 +1,7 @@
 package m01;
 
 import a0.s0;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
@@ -36,6 +36,6 @@ public final class a {
         sb.append(", pendingReviewCommentsCount=");
         sb.append(this.b);
         sb.append(", viewerIsRequestedAsReviewer=");
-        return f4.s(sb, this.c, ")");
+        return f4Shadow.s(sb, this.c, ")");
     }
 }

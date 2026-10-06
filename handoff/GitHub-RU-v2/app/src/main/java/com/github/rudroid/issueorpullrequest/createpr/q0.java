@@ -1,7 +1,7 @@
 package com.github.rudroid.issueorpullrequest.createpr;
 
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 import yz0.c2;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -78,6 +78,6 @@ public final class q0 {
         sb2.append(", pullRequestCreationResult=");
         sb2.append(this.f15366d);
         sb2.append(", enabled=");
-        return f4.s(sb2, this.f15367e, ")");
+        return f4Shadow.s(sb2, this.f15367e, ")");
     }
 }

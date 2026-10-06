@@ -11,7 +11,7 @@ import androidx.preference.Preference;
 import androidx.preference.SwitchPreferenceCompat;
 import com.github.rudroid.settings.ToolBarPreferenceFragmentCompat;
 import com.github.rudroid.utilities.b3;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -99,7 +99,7 @@ public final class SettingsPrivacyAnalyticsFragment extends Hilt_SettingsPrivacy
 
     public SettingsPrivacyAnalyticsFragment() {
         w61.h s = w.s(w61.i.s, new c(new b()));
-        this.H0 = new l1(x.a(h.class), new d(s), new f(s), new e(s));
+        this.H0 = new l1(xShadow.a(h.class), new d(s), new f(s), new e(s));
     }
 
     public final com.github.rudroid.activities.util.c J2() {

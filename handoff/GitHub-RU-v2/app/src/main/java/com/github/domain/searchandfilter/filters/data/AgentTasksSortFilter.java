@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import bm.l;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 
@@ -37,7 +37,7 @@ public final class AgentTasksSortFilter extends d {
     public /* synthetic */ AgentTasksSortFilter(int i, l lVar, String str, on.g gVar) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, AgentTasksSortFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, AgentTasksSortFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {

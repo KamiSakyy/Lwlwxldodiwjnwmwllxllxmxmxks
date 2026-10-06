@@ -1,6 +1,6 @@
 package p8;
 
-import k71.x;
+import k71.xShadow;
 import sy.w;
 import w61.p;
 
@@ -17,7 +17,7 @@ public final class f {
     public static final a f30431c;
 
     static {
-        x.a(g.class).c();
+        xShadow.a(g.class).c();
         f30430b = w.t(new kh.a(28));
         f30431c = a.f30411a;
     }

@@ -1,14 +1,14 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class z extends b0 {
+final class z extends b0Shadow {
     public z() {
         super("InTable", 8);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
-        if (s0Var.a == 5 && ba1.h.c(bVar.h().u.t, a0.z)) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
+        if (s0Var.a == 5 && ba1.h.c(bVar.h().u.t, a0.zShadow)) {
             bVar.s.clear();
             bVar.m = bVar.l;
             bVar.l = b0.A;
@@ -102,7 +102,7 @@ final class z extends b0 {
                 return uVar.d(s0Var, bVar);
             }
             if (l2.equals("input")) {
-                ca1.b bVar2 = p0Var.g;
+                ca1.bShadow bVar2 = p0Var.g;
                 if (bVar2 == null || !bVar2.e("type").equalsIgnoreCase("hidden")) {
                     e(s0Var, bVar);
                     return true;
@@ -123,7 +123,7 @@ final class z extends b0 {
         return false;
     }
 
-    public final void e(s0 s0Var, b bVar) {
+    public final void e(s0 s0Var, bShadow bVar) {
         bVar.k(this);
         bVar.v = true;
         b0.x.d(s0Var, bVar);

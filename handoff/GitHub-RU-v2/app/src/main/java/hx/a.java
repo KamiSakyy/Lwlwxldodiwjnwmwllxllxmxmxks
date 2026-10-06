@@ -11,7 +11,7 @@ import m10.ah;
 import m10.eh;
 import m10.sa;
 import m10.sj;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -23,13 +23,13 @@ public abstract class a {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = fq.a.a;
         List r2 = l.r(new s[]{mVar, no.a.c(list, "selections", "Actor", r, list)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Label");
+        List n = d0Shadow.n("Label");
         List list2 = kt.a.a;
         s c = no.a.c(list2, "selections", "Label", n, list2);
         ah.Companion.getClass();

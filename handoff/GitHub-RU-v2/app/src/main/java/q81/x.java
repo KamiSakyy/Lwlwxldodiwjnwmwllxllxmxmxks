@@ -4,7 +4,7 @@ import com.google.android.gms.internal.measurement.i4;
 import java.nio.charset.Charset;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class x {
+public final class xShadow {
     public static w a(String str, q qVar) {
         k71.k.g(str, "<this>");
         Charset charset = t71.a.a;

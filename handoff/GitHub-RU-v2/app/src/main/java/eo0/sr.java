@@ -8,7 +8,7 @@ import jn0.u30;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sr implements aaShadow.a {
     public static final sr a = new sr();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         u30 u30Var;

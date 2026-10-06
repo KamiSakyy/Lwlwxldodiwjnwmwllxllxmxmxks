@@ -3,7 +3,7 @@ package com.github.rudroid.widget.pullrequests;
 import com.github.rudroid.widget.WidgetUIState;
 import com.google.android.gms.internal.measurement.d5;
 import java.util.Map;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import kotlinx.serialization.KSerializer;
@@ -86,6 +86,6 @@ public final /* synthetic */ class PullRequestsWidgetModel$$serializer implement
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

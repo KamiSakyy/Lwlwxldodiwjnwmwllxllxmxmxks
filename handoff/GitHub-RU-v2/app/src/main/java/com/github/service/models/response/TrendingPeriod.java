@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import v8.l0;
@@ -53,7 +53,7 @@ public final class TrendingPeriod implements Parcelable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _init_$_anonymous_() {
-        return c1.f("com.github.service.models.response.TrendingPeriod", values());
+        return c1Shadow.f("com.github.service.models.response.TrendingPeriod", values());
     }
 
     public static d71.a getEntries() {

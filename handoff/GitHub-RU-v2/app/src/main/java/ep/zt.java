@@ -6,7 +6,7 @@ import jo.y60;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ztShadow implements aaShadow.a {
     public static final ztShadow a = new ztShadow();
-    public static final List b = sy.d0.o("hasNextPage", "endCursor");
+    public static final List b = sy.d0Shadow.o("hasNextPage", "endCursor");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -37,7 +37,7 @@ public final class ztShadow implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(y60Var, "value");
         fVar.z0("hasNextPage");
-        jo.f4.C(y60Var.a, aa.c.f, fVar, wVar, "endCursor");
+        jo.f4Shadow.C(y60Var.a, aa.c.f, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, y60Var.b);
     }
 }

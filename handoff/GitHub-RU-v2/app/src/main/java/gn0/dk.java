@@ -7,8 +7,8 @@ public abstract class dk {
     public static final ck Companion = new ck();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("PinnedEvent", n, sy.d0.n(yh.a));
+        new aa.q0("PinnedEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

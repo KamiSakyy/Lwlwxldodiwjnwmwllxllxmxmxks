@@ -29,12 +29,12 @@ public final class v extends androidx.lifecycle.k1 {
         k71.k.g(a1Var, "savedStateHandle");
         this.f20295s = cVar;
         this.f20296t = eVar;
-        LicenseContentsRoute licenseContentsRoute = (LicenseContentsRoute) sy.y.m(a1Var, k71.x.a(LicenseContentsRoute.class), x61.s.r);
+        LicenseContentsRoute licenseContentsRoute = (LicenseContentsRoute) sy.y.m(a1Var, k71.xShadow.a(LicenseContentsRoute.class), x61.s.r);
         this.f20297u = licenseContentsRoute.f20014r;
         this.f20298v = licenseContentsRoute.f20015s;
         y71.y1 s2 = com.github.rudroid.m0.s(fl.f.Companion, null);
         this.f20299w = s2;
         this.f20300x = new y71.i1(s2);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u(this, null), 3);
     }
 }

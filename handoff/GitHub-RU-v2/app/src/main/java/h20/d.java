@@ -20,7 +20,7 @@ import hc0.x2;
 import hc0.xa;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -32,7 +32,7 @@ public abstract class d {
         xa.Companion.getClass();
         x xVar = xa.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("hasPreviousPage", l0.b(xVar), (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
@@ -50,7 +50,7 @@ public abstract class d {
         ew.Companion.getClass();
         List r4 = l.r(new m[]{mVar4, mVar5, new m("logoUrl", l0.b(ew.a), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar6 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("CheckSuite");
+        List n = d0Shadow.n("CheckSuite");
         List list = b.a;
         s c = no.a.c(list, "selections", "CheckSuite", n, list);
         q00.Companion.getClass();

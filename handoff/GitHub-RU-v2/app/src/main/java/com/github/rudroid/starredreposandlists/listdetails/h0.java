@@ -17,7 +17,7 @@ public final class h0 {
         int i2 = i | (sVar2.h(aVar) ? 4 : 2) | (sVar2.h(cVar) ? 32 : 16) | (sVar2.f(sVar) ? 256 : 128) | 3072;
         if (sVar2.S(i2 & 1, (i2 & 1171) != 1170)) {
             w1.r rVar3 = w1.o.a;
-            qg.p.c(rVar3, "", null, ih.d.b(sVar2).o, aVar, 0, com.github.rudroid.uitoolkit.utils.lists.t.e(sVar, false, sVar2, 1), 0.0f, 0, 0, r1.i.d(-941435567, new j71.f() { // from class: com.github.rudroid.starredreposandlists.listdetails.e0
+            qg.pShadow.c(rVar3, "", null, ih.d.b(sVar2).o, aVar, 0, com.github.rudroid.uitoolkit.utils.lists.t.e(sVar, false, sVar2, 1), 0.0f, 0, 0, r1.i.d(-941435567, new j71.f() { // from class: com.github.rudroid.starredreposandlists.listdetails.e0
                 public final Object f(Object obj, Object obj2, Object obj3) {
                     androidx.compose.runtime.s sVar3 = (androidx.compose.runtime.s) obj2;
                     int intValue = ((Integer) obj3).intValue();

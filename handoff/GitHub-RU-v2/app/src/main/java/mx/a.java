@@ -2,7 +2,7 @@ package mx;
 
 import aa.h0;
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 
@@ -37,7 +37,7 @@ public final class a implements h0 {
     }
 
     public final String toString() {
-        return f4.r(m0.o("UpdatableFields(__typename=", this.a, ", viewerCanUpdate=", ", nodeIdFragment=", this.b), this.c, ")");
+        return f4Shadow.r(m0.o("UpdatableFields(__typename=", this.a, ", viewerCanUpdate=", ", nodeIdFragment=", this.b), this.c, ")");
     }
     public Object O(Object p1) { return null; }
     public Object s0 = null;

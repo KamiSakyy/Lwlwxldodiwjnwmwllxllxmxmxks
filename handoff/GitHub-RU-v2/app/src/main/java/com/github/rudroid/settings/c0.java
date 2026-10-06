@@ -235,7 +235,7 @@ public final /* synthetic */ class c0 implements j71.c {
                     settingsNotificationSchedulesFragment.C4(arrayList, true);
                 } else {
                     boolean z2 = aVar instanceof a1.a.b;
-                    List list2 = x61.r.r;
+                    List list2 = x61.rShadow.r;
                     if (z2) {
                         RadioPreferenceGroup radioPreferenceGroup2 = (RadioPreferenceGroup) settingsNotificationSchedulesFragment.t4("radio_group");
                         if (radioPreferenceGroup2 != null) {

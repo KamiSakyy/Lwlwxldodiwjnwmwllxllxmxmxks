@@ -6,7 +6,7 @@ import kc0.h20;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iq implements aaShadow.a {
     public static final iq a = new iq();
-    public static final List b = sy.d0.n("success");
+    public static final List b = sy.d0Shadow.n("success");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

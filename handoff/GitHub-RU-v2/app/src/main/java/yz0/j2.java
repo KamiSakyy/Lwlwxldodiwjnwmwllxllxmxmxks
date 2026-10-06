@@ -179,11 +179,11 @@ public final class j2 {
     }
 
     public final int hashCode() {
-        int e = x.i.e(com.github.rudroid.copilot.h1.i(x.i.e(x.i.e(com.github.rudroid.copilot.h1.i(jo.f4.b(this.d, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), this.e, 31), 31, this.f), 31, this.g), this.h, 31), 31, this.i);
+        int e = x.i.e(com.github.rudroid.copilot.h1.i(x.i.e(x.i.e(com.github.rudroid.copilot.h1.i(jo.f4Shadow.b(this.d, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), this.e, 31), 31, this.f), 31, this.g), this.h, 31), 31, this.i);
         SubscriptionState subscriptionState = this.j;
         int hashCode = (e + (subscriptionState == null ? 0 : subscriptionState.hashCode())) * 31;
         SubscriptionState subscriptionState2 = this.k;
-        int e2 = x.i.e(no.a.b(this.t, (this.s.hashCode() + x.i.e(jo.f4.b(this.q, (this.p.hashCode() + x.i.e(a0.s0.b(this.n, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i((hashCode + (subscriptionState2 == null ? 0 : subscriptionState2.hashCode())) * 31, this.l, 31), this.m, 31), 31), 31, this.o)) * 31, 31), 31, this.r)) * 31, 31), 31, this.u);
+        int e2 = x.i.e(no.a.b(this.t, (this.s.hashCode() + x.i.e(jo.f4Shadow.b(this.q, (this.p.hashCode() + x.i.e(a0.s0.b(this.n, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i((hashCode + (subscriptionState2 == null ? 0 : subscriptionState2.hashCode())) * 31, this.l, 31), this.m, 31), 31), 31, this.o)) * 31, 31), 31, this.r)) * 31, 31), 31, this.u);
         v2 v2Var = this.v;
         int e3 = x.i.e(x.i.e(x.i.e(com.github.rudroid.copilot.h1.h(x.i.e(x.i.e(a0.s0.b(this.G, a0.s0.b(this.F, x.i.e(x.i.e(com.github.rudroid.copilot.h1.i(x.i.e(x.i.e(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h((e2 + (v2Var == null ? 0 : v2Var.hashCode())) * 31, this.w, 31), this.x, 31), this.y, 31), this.z, 31), 31, this.A), 31, this.B), this.C, 31), 31, this.D), 31, this.E), 31), 31), 31, this.H), 31, this.I), this.J, 31), 31, this.K), 31, this.L), 31, this.M);
         String str = this.N;
@@ -311,6 +311,6 @@ public final class j2 {
         o.append(", duplicateOf=");
         o.append(this.r0);
         o.append(", copilotSuggestedAsAssignee=");
-        return jo.f4.s(o, this.s0, ")");
+        return jo.f4Shadow.s(o, this.s0, ")");
     }
 }

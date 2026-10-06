@@ -22,7 +22,7 @@ public final class bz {
         v = bzVarArr;
         v8.l0.t(bzVarArr);
         Companion = new az();
-        sy.d0.o(new String[]{"INTERNAL", "PRIVATE", "PUBLIC"});
+        sy.d0Shadow.o(new String[]{"INTERNAL", "PRIVATE", "PUBLIC"});
     }
 
     public bz(String str, int i, String str2) {

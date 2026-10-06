@@ -20,7 +20,7 @@ public final /* synthetic */ class c implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) selectableLanguageBottomSheet.Z0.a(selectableLanguageBottomSheet, SelectableLanguageBottomSheet.d1[0])).booleanValue()) {
-                    k71.e a = k71.x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     SelectableLanguageBottomSheet.b bVar = new SelectableLanguageBottomSheet.b(selectableLanguageBottomSheet);
                     SelectableLanguageBottomSheet.c cVar = new SelectableLanguageBottomSheet.c(selectableLanguageBottomSheet);
                     SelectableLanguageBottomSheet.d dVar = new SelectableLanguageBottomSheet.d(selectableLanguageBottomSheet);
@@ -38,7 +38,7 @@ public final /* synthetic */ class c implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = sy.w.s(w61.i.s, new SelectableLanguageBottomSheet.e(new c(selectableLanguageBottomSheet, 1)));
-                k71.e a2 = k71.x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 SelectableLanguageBottomSheet.f fVar = new SelectableLanguageBottomSheet.f(s);
                 SelectableLanguageBottomSheet.g gVar = new SelectableLanguageBottomSheet.g(s);
                 SelectableLanguageBottomSheet.h hVar = new SelectableLanguageBottomSheet.h(selectableLanguageBottomSheet, s);

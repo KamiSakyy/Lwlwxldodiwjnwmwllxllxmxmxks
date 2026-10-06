@@ -1,7 +1,7 @@
 package xz;
 
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
@@ -40,6 +40,6 @@ public final class o {
     }
 
     public final String toString() {
-        return f4.s(h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
+        return f4Shadow.s(h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
     }
 }

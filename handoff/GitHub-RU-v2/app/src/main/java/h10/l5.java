@@ -17,14 +17,14 @@ public abstract class l5 {
         wg.Companion.getClass();
         aa.x xVar = wg.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         aa.x xVar2 = eh.a;
         k71.k.g(xVar2, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar2, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Repository");
+        List n = sy.d0Shadow.n("Repository");
         List list = ew.q.a;
         aa.s c = no.a.c(list, "selections", "Repository", n, list);
         aa.s mVar3 = new aa.m("isArchived", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y implements aa.a {
     public static final y a = new y();
-    public static final List b = sy.d0.o(new String[]{"id", "answer", "answerChosenBy", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "answer", "answerChosenBy", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class y implements aa.a {
             } else if (r0 == 1) {
                 sVar = (s) aa.c.b(aa.c.c(w.a, false)).a(eVar, wVar);
             } else if (r0 == 2) {
-                tVar = (t) aa.c.b(aa.c.c(x.a, true)).a(eVar, wVar);
+                tVar = (t) aa.c.b(aa.c.c(xShadow.a, true)).a(eVar, wVar);
             } else {
                 if (r0 != 3) {
                     break;
@@ -51,7 +51,7 @@ public final class y implements aa.a {
         fVar.z0("answer");
         aa.c.b(aa.c.c(w.a, false)).b(fVar, wVar, uVar.b);
         fVar.z0("answerChosenBy");
-        aa.c.b(aa.c.c(x.a, true)).b(fVar, wVar, uVar.c);
+        aa.c.b(aa.c.c(xShadow.a, true)).b(fVar, wVar, uVar.c);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, uVar.d);
     }

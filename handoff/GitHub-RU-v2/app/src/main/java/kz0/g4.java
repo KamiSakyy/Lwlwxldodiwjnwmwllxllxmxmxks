@@ -21,7 +21,7 @@ public abstract class g4 {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("hasNextPage", v8.l0.b(pd.a), (String) null, rVar, rVar, rVar)});
@@ -29,7 +29,7 @@ public abstract class g4 {
         td.Companion.getClass();
         aa.x xVar2 = td.a;
         aa.s mVar3 = new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Patch");
+        List n = sy.d0Shadow.n("Patch");
         List list = qt0.a.a;
         List r2 = x61.l.r(new aa.s[]{mVar2, mVar3, no.a.c(list, "selections", "Patch", n, list)});
         hm.Companion.getClass();

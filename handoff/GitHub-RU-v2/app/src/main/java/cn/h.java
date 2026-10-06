@@ -3,7 +3,7 @@ package cn;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h {
+public final class hShadow {
     public h01.q a;
     public Object b;
 
@@ -17,10 +17,10 @@ public final class h {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof h)) {
+        if (!(obj instanceof hShadow)) {
             return false;
         }
-        h hVar = (h) obj;
+        hShadow hVar = (hShadow) obj;
         return k71.k.b(this.a, hVar.a) && this.b.equals(hVar.b);
     }
 

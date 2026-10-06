@@ -23,7 +23,7 @@ import ri0.p2;
 import w8.s;
 import wk0.c1;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.t1;
 import yz0.w1;
 
@@ -43,7 +43,7 @@ public final class e implements w1 {
     public int l;
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v2, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r10v2, types: [x61.rShadow] */
     public e(vf vfVar) {
         ArrayList arrayList;
         gg ggVar;

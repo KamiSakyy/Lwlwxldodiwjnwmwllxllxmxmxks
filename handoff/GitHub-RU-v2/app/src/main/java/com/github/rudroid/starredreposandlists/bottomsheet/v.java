@@ -2,7 +2,7 @@ package com.github.rudroid.starredreposandlists.bottomsheet;
 
 import a0.s0;
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v {
@@ -34,6 +34,6 @@ public final class v {
     }
 
     public final String toString() {
-        return f4.s(s0.o("ListSelectionData(id=", this.a, ", name=", this.b, ", isSelected="), this.c, ")");
+        return f4Shadow.s(s0.o("ListSelectionData(id=", this.a, ", name=", this.b, ", isSelected="), this.c, ")");
     }
 }

@@ -52,7 +52,7 @@ final class x0 extends c71.j implements j71.e {
             sy.y.j(obj);
             y00.l lVar = g1Var.u.b;
             this.v = 1;
-            obj = y71.n1.v(lVar, this);
+            obj = y71.n1Shadow.v(lVar, this);
         } else if (i == 1) {
             sy.y.j(obj);
         } else {

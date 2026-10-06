@@ -37,7 +37,7 @@ import jo.t40;
 import jo.u40;
 import jo.v40;
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import kc0.g30;
 import l3.v;
 import l7.x1;
@@ -58,7 +58,7 @@ import x01.i;
 import x6.p0;
 import x6.y;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import x61.s;
 import yz0.a7;
 import yz0.e4;
@@ -91,8 +91,8 @@ public final /* synthetic */ class b implements j71.c {
         int i = this.r;
         a0 a0Var = a0.a;
         u0 u0Var = t0.d;
-        r<zw> rVar = r.r;
-        r rVar2 = null;
+        r<zw> rVar = rShadow.r;
+        rShadow rVar2 = null;
         switch (i) {
             case 0:
                 c40 c40Var = (c40) obj;
@@ -116,7 +116,7 @@ public final /* synthetic */ class b implements j71.c {
                 h40 h40Var = c40Var4.a;
                 List<d40> list2 = h40Var.b;
                 if (list2 != null) {
-                    r arrayList = new ArrayList();
+                    rShadow arrayList = new ArrayList();
                     for (d40 d40Var : list2) {
                         if (d40Var != null) {
                             e40 e40Var = d40Var.b;
@@ -202,7 +202,7 @@ public final /* synthetic */ class b implements j71.c {
                     i2++;
                     arrayList3.add(g.W((u) obj2));
                 }
-                r rVar4 = u40Var.c;
+                rShadow rVar4 = u40Var.c;
                 if (rVar4 != null) {
                     rVar = rVar4;
                 }
@@ -239,14 +239,14 @@ public final /* synthetic */ class b implements j71.c {
                 k.g(yVar, "$this$navigation");
                 p0 p0Var = yVar.g;
                 z6.e r = m0.r(p0Var, z6.e.class);
-                k71.e a = x.a(GlobalSearchRoute.class);
-                k71.e a2 = x.a(GlobalSearchFragment.class);
+                k71.e a = xShadow.a(GlobalSearchRoute.class);
+                k71.e a2 = xShadow.a(GlobalSearchFragment.class);
                 s sVar = s.r;
                 z6.i iVar = new z6.i(r, a, sVar, a2);
                 ArrayList arrayList6 = yVar.j;
                 arrayList6.add(iVar.a());
-                arrayList6.add(new z6.i(p0Var.b(w.r(z6.e.class)), x.a(SearchResultsRoute.class), sVar, x.a(SearchResultsFragment.class)).a());
-                arrayList6.add(new z6.i(p0Var.b(w.r(z6.e.class)), x.a(GlobalCodeSearchResultsRoute.class), sVar, x.a(GlobalCodeSearchResultsFragment.class)).a());
+                arrayList6.add(new z6.i(p0Var.b(w.r(z6.e.class)), xShadow.a(SearchResultsRoute.class), sVar, xShadow.a(SearchResultsFragment.class)).a());
+                arrayList6.add(new z6.i(p0Var.b(w.r(z6.e.class)), xShadow.a(GlobalCodeSearchResultsRoute.class), sVar, xShadow.a(GlobalCodeSearchResultsFragment.class)).a());
                 ee.b.a(yVar);
                 ze.b.a(yVar);
                 lf.b.a(yVar);
@@ -345,7 +345,7 @@ public final /* synthetic */ class b implements j71.c {
                 gx gxVar = xwVar4.b;
                 fx fxVar = xwVar4.a;
                 String str12 = fxVar != null ? fxVar.b : null;
-                r rVar5 = gxVar.c;
+                rShadow rVar5 = gxVar.c;
                 if (rVar5 != null) {
                     rVar = rVar5;
                 }
@@ -371,7 +371,7 @@ public final /* synthetic */ class b implements j71.c {
             case 28:
                 y yVar2 = (y) obj;
                 k.g(yVar2, "$this$navigation");
-                yVar2.j.add(new z6.i(m0.r(yVar2.g, z6.e.class), x.a(RepositoryFileRoute.class), com.github.rudroid.repository.file.navigation.a.a, x.a(RepositoryFileFragmentContainer.class)).a());
+                yVar2.j.add(new z6.i(m0.r(yVar2.g, z6.e.class), xShadow.a(RepositoryFileRoute.class), com.github.rudroid.repository.file.navigation.a.a, xShadow.a(RepositoryFileFragmentContainer.class)).a());
                 return a0Var;
             default:
                 h hVar = (h) obj;

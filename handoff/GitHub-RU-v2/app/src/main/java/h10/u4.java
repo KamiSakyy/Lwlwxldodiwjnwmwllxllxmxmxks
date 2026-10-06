@@ -14,7 +14,7 @@ public abstract class u4 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("licenseContents", xVar, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         aa.x xVar2 = ah.a;

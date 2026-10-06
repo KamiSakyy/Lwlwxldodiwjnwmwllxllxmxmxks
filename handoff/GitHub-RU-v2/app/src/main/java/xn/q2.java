@@ -29,6 +29,6 @@ public final class q2 {
     }
 
     public final String toString() {
-        return jo.f4.o("MobileCopilotFeatureSection(title=", this.a, ", features=", ")", this.b);
+        return jo.f4Shadow.o("MobileCopilotFeatureSection(title=", this.a, ", features=", ")", this.b);
     }
 }

@@ -24,7 +24,7 @@ import m10.v90;
 import m10.z3;
 import m10.z90;
 import m10.zp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -36,16 +36,16 @@ public abstract class a {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("StatusCheck");
+        List n = d0Shadow.n("StatusCheck");
         List list = vw.a.a;
         s c = no.a.c(list, "selections", "StatusCheck", n, list);
         ah.Companion.getClass();
         x xVar2 = ah.a;
         List r = l.r(new s[]{mVar, c, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         l90.Companion.getClass();
-        List n2 = d0.n(new m("nodes", l0.a(l90.a), (String) null, rVar, rVar, r));
+        List n2 = d0Shadow.n(new m("nodes", l0.a(l90.a), (String) null, rVar, rVar, r));
         ch.Companion.getClass();
         m mVar2 = new m("count", l0.b(ch.a), (String) null, rVar, rVar, rVar);
         v90.Companion.getClass();
@@ -65,7 +65,7 @@ public abstract class a {
         q0 q0Var2 = d00.c;
         k.g(q0Var2, "type");
         ux.Companion.getClass();
-        List r5 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0.n("PullRequest"), l.r(new m[]{mVar5, new m("pullRequestStatus", q0Var2, (String) null, rVar, no.a.s(ux.B, new u0(Boolean.FALSE)), r4)})), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r5 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0Shadow.n("PullRequest"), l.r(new m[]{mVar5, new m("pullRequestStatus", q0Var2, (String) null, rVar, no.a.s(ux.B, new u0(Boolean.FALSE)), r4)})), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         zp.Companion.getClass();
         j0 j0Var = zp.a;
         k.g(j0Var, "type");

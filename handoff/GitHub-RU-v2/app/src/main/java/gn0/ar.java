@@ -7,8 +7,8 @@ public abstract class ar {
     public static final zq Companion = new zq();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("RepositoryInvitation", n, sy.d0.n(yh.a));
+        new aa.q0("RepositoryInvitation", n, sy.d0Shadow.n(yh.a));
     }
 }

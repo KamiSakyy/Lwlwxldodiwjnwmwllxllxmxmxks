@@ -3,7 +3,7 @@ package bm;
 import java.util.Comparator;
 import java.util.List;
 import v2.g0;
-import x.y;
+import x.yShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements Comparator {
@@ -20,11 +20,11 @@ public final class m implements Comparator {
         switch (this.a) {
             case 0:
                 List list = (List) this.b;
-                return sy.t.g(((com.github.domain.searchandfilter.filters.data.d) obj).r(list), ((com.github.domain.searchandfilter.filters.data.d) obj2).r(list));
+                return sy.tShadow.g(((com.github.domain.searchandfilter.filters.data.d) obj).r(list), ((com.github.domain.searchandfilter.filters.data.d) obj2).r(list));
             case 1:
                 long longValue = ((Number) obj).longValue();
                 y yVar = (y) this.b;
-                return sy.t.g(Integer.valueOf(yVar.c(longValue)), Integer.valueOf(yVar.c(((Number) obj2).longValue())));
+                return sy.tShadow.g(Integer.valueOf(yVar.c(longValue)), Integer.valueOf(yVar.c(((Number) obj2).longValue())));
             case 2:
                 int compare = ((Comparator) this.b).compare(obj, obj2);
                 if (compare != 0) {
@@ -33,10 +33,10 @@ public final class m implements Comparator {
                 return g0.l0.compare(((d3.t) obj).c, ((d3.t) obj2).c);
             case 3:
                 int compare2 = ((m) this.b).compare(obj, obj2);
-                return compare2 != 0 ? compare2 : sy.t.g(Integer.valueOf(((d3.t) obj).g), Integer.valueOf(((d3.t) obj2).g));
+                return compare2 != 0 ? compare2 : sy.tShadow.g(Integer.valueOf(((d3.t) obj).g), Integer.valueOf(((d3.t) obj2).g));
             default:
                 ac.c cVar = (ac.c) this.b;
-                return sy.t.g((Comparable) cVar.k(obj), (Comparable) cVar.k(obj2));
+                return sy.tShadow.g((Comparable) cVar.k(obj), (Comparable) cVar.k(obj2));
         }
     }
 

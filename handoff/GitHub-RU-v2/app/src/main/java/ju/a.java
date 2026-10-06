@@ -2,7 +2,7 @@ package ju;
 
 import aa.h0;
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 
@@ -57,7 +57,7 @@ public final class a implements h0 {
     public final String toString() {
         StringBuilder o = m0.o("MinimizableCommentFragment(__typename=", this.a, ", isMinimized=", ", minimizedReason=", this.b);
         m0.x(o, this.c, ", viewerCanMinimize=", this.d, ", nodeIdFragment=");
-        return f4.r(o, this.e, ")");
+        return f4Shadow.r(o, this.e, ")");
     }
     public Object O(Object p1) { return null; }
 }

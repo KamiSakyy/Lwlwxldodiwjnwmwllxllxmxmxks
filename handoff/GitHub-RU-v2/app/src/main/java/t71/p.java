@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class p extends w {
@@ -49,7 +49,7 @@ public abstract class p extends w {
     }
 
     public static boolean M(String str, char c10) {
-        return str.length() > 0 && sy.r.p(str.charAt(N(str)), c10, false);
+        return str.length() > 0 && sy.rShadow.p(str.charAt(N(str)), c10, false);
     }
 
     public static int N(CharSequence charSequence) {
@@ -160,7 +160,7 @@ public abstract class p extends w {
         while (true) {
             char charAt = charSequence.charAt(i);
             for (char c10 : cArr) {
-                if (sy.r.p(c10, charAt, z10)) {
+                if (sy.rShadow.p(c10, charAt, z10)) {
                     return i;
                 }
             }
@@ -174,7 +174,7 @@ public abstract class p extends w {
     public static boolean T(CharSequence charSequence) {
         k71.k.g(charSequence, "<this>");
         for (int i = 0; i < charSequence.length(); i++) {
-            if (!sy.r.s(charSequence.charAt(i))) {
+            if (!sy.rShadow.s(charSequence.charAt(i))) {
                 return false;
             }
         }
@@ -213,7 +213,7 @@ public abstract class p extends w {
             i = N;
         }
         while (-1 < i) {
-            if (sy.r.p(cArr[0], charSequence.charAt(i), false)) {
+            if (sy.rShadow.p(cArr[0], charSequence.charAt(i), false)) {
                 return i;
             }
             i--;
@@ -260,7 +260,7 @@ public abstract class p extends w {
             return false;
         }
         for (int i12 = 0; i12 < i11; i12++) {
-            if (!sy.r.p(charSequence.charAt(i + i12), charSequence2.charAt(i10 + i12), z10)) {
+            if (!sy.rShadow.p(charSequence.charAt(i + i12), charSequence2.charAt(i10 + i12), z10)) {
                 return false;
             }
         }
@@ -290,7 +290,7 @@ public abstract class p extends w {
         k71.k.g(charSequence, "<this>");
         k71.k.g(charSequence2, "replacement");
         if (i10 < i) {
-            throw new IndexOutOfBoundsException(f4.h(i10, i, "End index (", ") is less than start index (", ")."));
+            throw new IndexOutOfBoundsException(f4Shadow.h(i10, i, "End index (", ") is less than start index (", ")."));
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append(charSequence, 0, i);
@@ -309,7 +309,7 @@ public abstract class p extends w {
         d0(i);
         int O = O(charSequence, str, 0, false);
         if (O == -1 || i == 1) {
-            return d0.n(charSequence.toString());
+            return d0Shadow.n(charSequence.toString());
         }
         boolean z10 = i > 0;
         int i10 = 10;
@@ -386,7 +386,7 @@ public abstract class p extends w {
     }
 
     public static boolean j0(String str, char c10) {
-        return str.length() > 0 && sy.r.p(str.charAt(0), c10, false);
+        return str.length() > 0 && sy.rShadow.p(str.charAt(0), c10, false);
     }
 
     public static String k0(char c10, String str, String str2) {
@@ -503,7 +503,7 @@ public abstract class p extends w {
         int i = 0;
         boolean z10 = false;
         while (i <= length) {
-            boolean s2 = sy.r.s(charSequence.charAt(!z10 ? i : length));
+            boolean s2 = sy.rShadow.s(charSequence.charAt(!z10 ? i : length));
             if (z10) {
                 if (!s2) {
                     break;

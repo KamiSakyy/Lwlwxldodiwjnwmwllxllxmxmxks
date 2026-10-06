@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h6 implements aa.a {
     public static final h6 a = new h6();
-    public static final List b = sy.d0.o(new String[]{"id", "viewerIsFollowing", "followers", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "viewerIsFollowing", "followers", "__typename"});
 
     public static d6 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -57,7 +57,7 @@ public final class h6 implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, d6Var.a);
         fVar.z0("viewerIsFollowing");
-        jo.f4.C(d6Var.b, aa.c.f, fVar, wVar, "followers");
+        jo.f4Shadow.C(d6Var.b, aa.c.f, fVar, wVar, "followers");
         aa.c.c(g6.a, false).b(fVar, wVar, d6Var.c);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, d6Var.d);

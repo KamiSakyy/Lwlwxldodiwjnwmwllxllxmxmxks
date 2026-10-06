@@ -14,7 +14,7 @@ import m10.kp;
 import m10.rf0;
 import m10.vp;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,7 +25,7 @@ public abstract class e {
         wg.Companion.getClass();
         x xVar = wg.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         List r = x61.l.r(new m[]{new m("getsCiFailedOnly", b, (String) null, rVar, rVar, rVar), new m("getsCiActivity", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         kp.Companion.getClass();
         q0 q0Var = kp.a;
@@ -45,6 +45,6 @@ public abstract class e {
         q0 q0Var3 = je0.a;
         k71.k.g(q0Var3, "type");
         vp.Companion.getClass();
-        a = d0.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(vp.k1, new u0(x61.x.u(new w61.k[]{new w61.k("getCiActivity", new t("enabled")), new w61.k("getCiFailedOnly", new t("enabled"))}))), r3));
+        a = d0Shadow.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(vp.k1, new u0(x61.x.u(new w61.k[]{new w61.k("getCiActivity", new t("enabled")), new w61.k("getCiFailedOnly", new t("enabled"))}))), r3));
     }
 }

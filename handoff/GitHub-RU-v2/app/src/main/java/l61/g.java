@@ -3,7 +3,7 @@ package l61;
 import android.os.Looper;
 import java.util.HashSet;
 import java.util.Iterator;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
@@ -18,7 +18,7 @@ public final class g {
         }
         Iterator it = this.a.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
     }
 }

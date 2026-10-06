@@ -3,7 +3,7 @@ package com.github.rudroid.searchandfilter.complexfilter.category;
 import androidx.lifecycle.o1;
 import androidx.lifecycle.t1;
 import com.github.rudroid.searchandfilter.complexfilter.category.SelectableDiscussionCategoryBottomSheet;
-import k71.x;
+import k71.xShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final /* synthetic */ class c implements j71.a {
@@ -21,7 +21,7 @@ public final /* synthetic */ class c implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) selectableDiscussionCategoryBottomSheet.Z0.a(selectableDiscussionCategoryBottomSheet, SelectableDiscussionCategoryBottomSheet.d1[0])).booleanValue()) {
-                    k71.e a = x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     SelectableDiscussionCategoryBottomSheet.b bVar = new SelectableDiscussionCategoryBottomSheet.b(selectableDiscussionCategoryBottomSheet);
                     SelectableDiscussionCategoryBottomSheet.c cVar = new SelectableDiscussionCategoryBottomSheet.c(selectableDiscussionCategoryBottomSheet);
                     SelectableDiscussionCategoryBottomSheet.d dVar = new SelectableDiscussionCategoryBottomSheet.d(selectableDiscussionCategoryBottomSheet);
@@ -39,7 +39,7 @@ public final /* synthetic */ class c implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = sy.w.s(w61.i.s, new SelectableDiscussionCategoryBottomSheet.e(new c(selectableDiscussionCategoryBottomSheet, 1)));
-                k71.e a2 = x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 SelectableDiscussionCategoryBottomSheet.f fVar = new SelectableDiscussionCategoryBottomSheet.f(s);
                 SelectableDiscussionCategoryBottomSheet.g gVar = new SelectableDiscussionCategoryBottomSheet.g(s);
                 SelectableDiscussionCategoryBottomSheet.h hVar = new SelectableDiscussionCategoryBottomSheet.h(selectableDiscussionCategoryBottomSheet, s);

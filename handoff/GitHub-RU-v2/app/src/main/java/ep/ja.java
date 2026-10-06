@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ja implements aaShadow.a {
     public static final ja a = new ja();
-    public static final List b = sy.d0.o("isEnabled", "filterGroup");
+    public static final List b = sy.d0Shadow.o("isEnabled", "filterGroup");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;
@@ -58,7 +58,7 @@ public final class ja implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(mfVar, "value");
         fVar.z0("isEnabled");
-        jo.f4.C(mfVar.a, aa.c.f, fVar, wVar, "filterGroup");
+        jo.f4Shadow.C(mfVar.a, aa.c.f, fVar, wVar, "filterGroup");
         fVar.I(mfVar.b.r);
     }
 }

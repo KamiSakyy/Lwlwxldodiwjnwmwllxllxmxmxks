@@ -63,7 +63,7 @@ public final class p extends c71.j implements j71.f {
             j jVar3 = (j) this.z;
             j71.e pVar = new androidx.lifecycle.p(this.B, (a71.c) null, 1);
             x71.a aVar2 = x71.a.r;
-            v71.a0 a0Var = v71.a0.r;
+            v71.a0Shadow a0Var = v71.a0Shadow.r;
             v71.a sVar = new x71.s(v71.b0.A(zVar, a71.i.r), t.e.a(0, 4, aVar2));
             sVar.q0(a0Var, sVar, pVar);
             wVar = new k71.w();
@@ -90,7 +90,7 @@ public final class p extends c71.j implements j71.f {
             if (wVar.r != null) {
             }
             b1.m b = r7.b();
-            eVar.f(new d81.c(eVar, (x71.h) b.s, x71.d.z, x71.e.z, null, new m7.x(wVar, jVar2, (a71.c) null, 22), (j71.f) b.t), false);
+            eVar.f(new d81.c(eVar, (x71.hShadow) b.s, x71.d.z, x71.e.z, null, new m7.x(wVar, jVar2, (a71.c) null, 22), (j71.f) b.t), false);
             this.y = jVar2;
             this.z = r7;
             this.v = wVar;
@@ -161,7 +161,7 @@ public final class p extends c71.j implements j71.f {
                     eVar.f(new d81.c(eVar, bVar2, aVar3, d81.g.r, d81.h.e, bVar, null), false);
                 }
                 b1.m b2 = r7.b();
-                eVar.f(new d81.c(eVar, (x71.h) b2.s, x71.d.z, x71.e.z, null, new m7.x(wVar, jVar2, (a71.c) null, 22), (j71.f) b2.t), false);
+                eVar.f(new d81.c(eVar, (x71.hShadow) b2.s, x71.d.z, x71.e.z, null, new m7.x(wVar, jVar2, (a71.c) null, 22), (j71.f) b2.t), false);
                 this.y = jVar2;
                 this.z = r7;
                 this.v = wVar;

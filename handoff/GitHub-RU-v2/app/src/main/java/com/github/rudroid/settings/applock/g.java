@@ -31,12 +31,12 @@ final class g<T> implements y71.j {
         v71.z zVar = kVar.e;
         int ordinal = ((a.a) obj).ordinal();
         if (ordinal == 0) {
-            v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new j(kVar, null), 3);
+            v71.b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new j(kVar, null), 3);
         } else {
             if (ordinal != 1) {
                 throw new NoWhenBranchMatchedException();
             }
-            v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new e(kVar, null), 3);
+            v71.b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new e(kVar, null), 3);
         }
         return w61.a0.a;
     }

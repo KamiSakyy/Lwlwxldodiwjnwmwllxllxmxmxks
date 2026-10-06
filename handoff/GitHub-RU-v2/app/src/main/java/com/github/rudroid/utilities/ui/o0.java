@@ -93,7 +93,7 @@ public final class o0 {
                 z4 = z5;
             }
             w1.r rVar3 = w1.o.a;
-            w1.r f = f0.o.f(f0.o.w(p2.d(d3.q.a(rVar3, (j71.c) N2), 1.0f), f0.o.v(sVar2), true), ih.d.b(sVar2).a, d2.a0.b);
+            w1.r f = f0.o.f(f0.o.w(p2.d(d3.q.a(rVar3, (j71.c) N2), 1.0f), f0.o.v(sVar2), true), ih.d.b(sVar2).a, d2.a0Shadow.b);
             float f2 = ih.a.q;
             w1.r B = androidx.compose.foundation.layout.b.B(f, f2, 0.0f, f2, 0.0f, 10);
             androidx.compose.foundation.layout.e0 a = androidx.compose.foundation.layout.c0.a(androidx.compose.foundation.layout.l.e, w1.c.E, sVar2, 54);

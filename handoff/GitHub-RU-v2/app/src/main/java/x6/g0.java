@@ -1,6 +1,6 @@
 package x6;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class g0 extends k0 {
@@ -47,7 +47,7 @@ public final class g0 extends k0 {
         if (r42 != null) {
             return r42;
         }
-        StringBuilder v4 = f4.v("Enum value ", str, " not found for type ");
+        StringBuilder v4 = f4Shadow.v("Enum value ", str, " not found for type ");
         v4.append(cls.getName());
         v4.append('.');
         throw new IllegalArgumentException(v4.toString());

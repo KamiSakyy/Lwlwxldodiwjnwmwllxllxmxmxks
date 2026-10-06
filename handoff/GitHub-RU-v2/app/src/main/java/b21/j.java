@@ -15,7 +15,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Set;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements a21.d, a21.e {
@@ -45,7 +45,7 @@ public final class j implements a21.d, a21.e {
         sVar.u = context.getPackageName();
         a5.s sVar2 = new a5.s((String) sVar.u, (String) sVar.s, (x.f) sVar.t);
         e21.b bVar = (e21.b) cVar.c.s;
-        c21.u.g(bVar);
+        c21.uShadow.g(bVar);
         c21.m mVar = cVar.d;
         Context context2 = cVar.a;
         bVar.getClass();
@@ -69,7 +69,7 @@ public final class j implements a21.d, a21.e {
             if (it.next() != null) {
                 throw new ClassCastException();
             }
-            if (c21.u.j(bVar, z11.b.w)) {
+            if (c21.uShadow.j(bVar, z11.b.w)) {
                 this.g.d();
             }
             throw null;
@@ -77,12 +77,12 @@ public final class j implements a21.d, a21.e {
     }
 
     public final void b(Status status) {
-        c21.u.c(this.p.D);
+        c21.uShadow.c(this.p.D);
         c(status, null, false);
     }
 
     public final void c(Status status, Exception exc, boolean z) {
-        c21.u.c(this.p.D);
+        c21.uShadow.c(this.p.D);
         if ((status == null) == (exc == null)) {
             throw new IllegalArgumentException("Status XOR exception should be null");
         }
@@ -144,7 +144,7 @@ public final class j implements a21.d, a21.e {
 
     public final void h() {
         d dVar = this.p;
-        c21.u.c(dVar.D);
+        c21.uShadow.c(dVar.D);
         this.o = null;
         a(z11.b.w);
         h0 h0Var = dVar.D;
@@ -165,7 +165,7 @@ public final class j implements a21.d, a21.e {
     public final void i(int i) {
         d dVar = this.p;
         h0 h0Var = dVar.D;
-        c21.u.c(dVar.D);
+        c21.uShadow.c(dVar.D);
         this.o = null;
         this.m = true;
         String j = this.g.j();
@@ -253,10 +253,10 @@ public final class j implements a21.d, a21.e {
             oVar.d(new UnsupportedApiCallException(dVar));
             return true;
         }
-        k kVar = new k(this.h, dVar);
+        kShadow kVar = new kShadow(this.h, dVar);
         int indexOf = this.n.indexOf(kVar);
         if (indexOf >= 0) {
-            k kVar2 = (k) this.n.get(indexOf);
+            kShadow kVar2 = (kShadow) this.n.get(indexOf);
             this.p.D.removeMessages(15, kVar2);
             h0 h0Var = this.p.D;
             h0Var.sendMessageDelayed(Message.obtain(h0Var, 15, kVar2), 5000L);
@@ -282,7 +282,7 @@ public final class j implements a21.d, a21.e {
 
     public final void m() {
         d dVar = this.p;
-        c21.u.c(dVar.D);
+        c21.uShadow.c(dVar.D);
         a21.a aVar = this.g;
         if (aVar.g() || aVar.c()) {
             return;
@@ -291,7 +291,7 @@ public final class j implements a21.d, a21.e {
             b1.m mVar = dVar.x;
             Context context = dVar.v;
             SparseIntArray sparseIntArray = (SparseIntArray) mVar.s;
-            c21.u.g(context);
+            c21.uShadow.g(context);
             int h = aVar.h();
             int i = ((SparseIntArray) mVar.s).get(h, -1);
             if (i == -1) {
@@ -322,7 +322,7 @@ public final class j implements a21.d, a21.e {
             }
             l lVar = new l(dVar, aVar, this.h);
             if (aVar.l()) {
-                c21.u.g(null);
+                c21.uShadow.g(null);
                 throw null;
             }
             try {
@@ -336,7 +336,7 @@ public final class j implements a21.d, a21.e {
     }
 
     public final void n(o oVar) {
-        c21.u.c(this.p.D);
+        c21.uShadow.c(this.p.D);
         boolean g = this.g.g();
         LinkedList linkedList = this.f;
         if (g) {
@@ -358,8 +358,8 @@ public final class j implements a21.d, a21.e {
     }
 
     public final void o(z11.b bVar, RuntimeException runtimeException) {
-        c21.u.c(this.p.D);
-        c21.u.c(this.p.D);
+        c21.uShadow.c(this.p.D);
+        c21.uShadow.c(this.p.D);
         this.o = null;
         ((SparseIntArray) this.p.x.s).clear();
         a(bVar);
@@ -378,7 +378,7 @@ public final class j implements a21.d, a21.e {
             return;
         }
         if (runtimeException != null) {
-            c21.u.c(this.p.D);
+            c21.uShadow.c(this.p.D);
             c(null, runtimeException, false);
             return;
         }
@@ -404,7 +404,7 @@ public final class j implements a21.d, a21.e {
     }
 
     public final void p() {
-        c21.u.c(this.p.D);
+        c21.uShadow.c(this.p.D);
         Status status = d.F;
         b(status);
         this.i.H(false, status);

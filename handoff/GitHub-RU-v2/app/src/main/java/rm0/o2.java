@@ -51,7 +51,7 @@ public final class o2 implements y71.j {
         String str;
         c30.p pVar2;
         c30.l lVar2;
-        c30.t tVar;
+        c30.tShadow tVar;
         String str2;
         Object a4Var;
         c30.w wVar;
@@ -99,7 +99,7 @@ public final class o2 implements y71.j {
                             c30.m mVar2 = lVar2.c;
                             if (mVar2 == null || (qVar = mVar2.c) == null) {
                                 int i3 = 2;
-                                Collection<c30.o> collection = x61.r.r;
+                                Collection<c30.o> collection = x61.rShadow.r;
                                 if (mVar2 == null || (rVar = mVar2.b) == null) {
                                     if (mVar2 != null && mVar2.d != null) {
                                         if (str == null) {
@@ -140,7 +140,7 @@ public final class o2 implements y71.j {
                                             collection = collection2;
                                         }
                                         ArrayList arrayList = new ArrayList();
-                                        for (c30.x xVar : collection) {
+                                        for (c30.xShadow xVar : collection) {
                                             if (xVar != null) {
                                                 w61.p pVar3 = wz0.d.a;
                                                 o50.a aVar2 = xVar.b;
@@ -281,7 +281,7 @@ public final class o2 implements y71.j {
         sd0.f0 f0Var;
         yz0.m1 m1Var;
         sd0.f0 f0Var2;
-        sd0.a0 a0Var;
+        sd0.a0Shadow a0Var;
         sd0.f0 f0Var3;
         sd0.f0 f0Var4;
         yz0.m1 m1Var2;
@@ -309,7 +309,7 @@ public final class o2 implements y71.j {
         String str6;
         cq.n4 n4Var;
         cq.t4 t4Var5;
-        w61.a0 a0Var2;
+        w61.a0Shadow a0Var2;
         wy0.w1Shadow w1Var;
         int i3;
         ap0.o3 o3Var;
@@ -332,8 +332,8 @@ public final class o2 implements y71.j {
         ap0.r3Shadow r3Var;
         ap0.x3 x3Var5;
         int i4 = this.r;
-        w61.a0 a0Var3 = w61.a0.a;
-        x61.r rVar = x61.r.r;
+        w61.a0Shadow a0Var3 = w61.a0.a;
+        x61.rShadow rVar = x61.rShadow.r;
         boolean z = this.v;
         String str10 = this.u;
         File file = this.t;
@@ -440,12 +440,12 @@ public final class o2 implements y71.j {
                                     } else if (z) {
                                         boolean z8 = e0Var != null ? e0Var.c : false;
                                         boolean z9 = h0Var.d;
-                                        List<sd0.x> list2 = a0Var.b;
+                                        List<sd0.xShadow> list2 = a0Var.b;
                                         if (list2 == null) {
                                             list2 = rVar;
                                         }
                                         ArrayList arrayList2 = new ArrayList();
-                                        for (sd0.x xVar : list2) {
+                                        for (sd0.xShadow xVar : list2) {
                                             if (xVar != null) {
                                                 w61.p pVar2 = wz0.d.a;
                                                 eg0.a aVar3 = xVar.b;
@@ -672,8 +672,8 @@ public final class o2 implements y71.j {
             case 2:
                 return a(cVar, obj);
             default:
-                if (cVar instanceof wy0.w1) {
-                    w1Var = (wy0.w1) cVar;
+                if (cVar instanceof wy0.w1Shadow) {
+                    w1Var = (wy0.w1Shadow) cVar;
                     a0Var2 = a0Var3;
                     int i7 = w1Var.v;
                     if ((i7 & Integer.MIN_VALUE) != 0) {
@@ -701,7 +701,7 @@ public final class o2 implements y71.j {
                                 String str64 = z3Var.a;
                                 String str65 = z3Var.f.b;
                                 Integer num3 = z3Var.b;
-                                ap0.w3 w3Var = z3Var.e;
+                                ap0.w3Shadow w3Var = z3Var.e;
                                 ap0.o3 o3Var2 = z3Var.c;
                                 if (o3Var2 != null && (q3Var2 = o3Var2.b) != null && (m3Var2 = q3Var2.a) != null) {
                                     String str66 = m3Var2.b;
@@ -834,7 +834,7 @@ public final class o2 implements y71.j {
                 } else {
                     a0Var2 = a0Var3;
                 }
-                w1Var = new wy0.w1(this, cVar);
+                w1Var = new wy0.w1Shadow(this, cVar);
                 Object obj52 = w1Var.u;
                 b71.a aVar82 = b71.a.r;
                 i3 = w1Var.v;

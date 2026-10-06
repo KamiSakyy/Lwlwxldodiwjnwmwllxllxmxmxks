@@ -57,7 +57,7 @@ public abstract class h9 implements aaShadow.a {
         fVar.z0("headRefOid");
         bVar2.b(fVar, wVar, w0Var.c);
         fVar.z0("viewerCanEditFiles");
-        jo.f4.C(w0Var.d, aa.c.f, fVar, wVar, "baseRefName");
+        jo.f4Shadow.C(w0Var.d, aa.c.f, fVar, wVar, "baseRefName");
         bVar2.b(fVar, wVar, w0Var.e);
         fVar.z0("headRefName");
         bVar2.b(fVar, wVar, w0Var.f);
@@ -68,7 +68,7 @@ public abstract class h9 implements aaShadow.a {
         fVar.z0("headRepository");
         aa.c.b(aa.c.c(z70.e1.a, false)).b(fVar, wVar, w0Var.i);
         fVar.z0("headRepositoryOwner");
-        aa.c.b(aa.c.c(z70.f1.a, false)).b(fVar, wVar, w0Var.j);
+        aa.c.b(aa.c.c(z70.f1Shadow.a, false)).b(fVar, wVar, w0Var.j);
         fVar.z0("repository");
         aa.c.c(z70.p1.a, true).b(fVar, wVar, w0Var.k);
         fVar.z0("diff");

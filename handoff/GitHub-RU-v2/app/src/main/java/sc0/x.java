@@ -10,14 +10,14 @@ public abstract class x implements aa.a {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
-        rc0.x xVar = null;
+        rc0.xShadow xVar = null;
         rc0.d0 d0Var = null;
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                xVar = (rc0.x) aa.c.c(t.a, false).a(eVar, wVar);
+                xVar = (rc0.xShadow) aa.c.c(t.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 2) {
                     break;

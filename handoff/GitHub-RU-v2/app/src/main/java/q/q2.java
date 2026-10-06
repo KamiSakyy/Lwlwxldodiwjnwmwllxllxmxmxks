@@ -2,7 +2,7 @@ package q;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class q2 extends i5.b {
@@ -20,7 +20,7 @@ public final class q2 extends i5.b {
         StringBuilder sb2 = new StringBuilder("SearchView.SavedState{");
         sb2.append(Integer.toHexString(System.identityHashCode(this)));
         sb2.append(" isIconified=");
-        return f4.s(sb2, this.f30695t, "}");
+        return f4Shadow.s(sb2, this.f30695t, "}");
     }
 
     @Override // i5.b, android.os.Parcelable

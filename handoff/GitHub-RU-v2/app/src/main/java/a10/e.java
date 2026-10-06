@@ -13,7 +13,7 @@ import q81.u;
 import v71.v;
 import w51.r;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 import z01.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -38,15 +38,15 @@ public final class e implements e1, mi0 {
     }
 
     public final i a() {
-        return n1.y(d11.b.b(d11.a.t, new c(this, null, 0)), this.r);
+        return n1Shadow.y(d11.b.b(d11.a.t, new c(this, null, 0)), this.r);
     }
 
     public final i b(CreateRepositoryInput createRepositoryInput) {
-        return n1.y(d11.b.b(d11.b.a, new b(this, createRepositoryInput, null, 0)), this.r);
+        return n1Shadow.y(d11.b.b(d11.b.a, new b(this, createRepositoryInput, null, 0)), this.r);
     }
 
     public final i c() {
-        return n1.y(d11.b.b(d11.a.t, new c(this, null, 1)), this.r);
+        return n1Shadow.y(d11.b.b(d11.a.t, new c(this, null, 1)), this.r);
     }
 
     public final Object h() {

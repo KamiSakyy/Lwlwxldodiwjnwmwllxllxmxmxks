@@ -8,6 +8,6 @@ public abstract class i70 {
         a70.Companion.getClass();
         aa.j0 j0Var = a70.a;
         k70.Companion.getClass();
-        new aa.q0("SearchShortcutQueryMilestoneTerm", x61.r.r, x61.l.r(new aa.j0[]{j0Var, k70.a}));
+        new aa.q0("SearchShortcutQueryMilestoneTerm", x61.rShadow.r, x61.l.r(new aa.j0[]{j0Var, k70.a}));
     }
 }

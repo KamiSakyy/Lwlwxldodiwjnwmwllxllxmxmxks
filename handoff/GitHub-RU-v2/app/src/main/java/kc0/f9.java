@@ -29,6 +29,6 @@ public final class f9 {
     }
 
     public final String toString() {
-        return jo.f4.p("Owner(__typename=", this.a, ", actorFields=", this.b, ")");
+        return jo.f4Shadow.p("Owner(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

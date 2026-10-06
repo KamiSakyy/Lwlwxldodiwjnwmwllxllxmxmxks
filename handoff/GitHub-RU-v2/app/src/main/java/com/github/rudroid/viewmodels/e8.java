@@ -41,7 +41,7 @@ final class e8<T> implements y71.j {
                     H0.addAll(this.u + 1, list2);
                     list = x61.m.F0(H0);
                 } else {
-                    list = x61.r.r;
+                    list = x61.rShadow.r;
                 }
                 oVar = new h01.o(oVar2.a, list, oVar2.c);
             } else {

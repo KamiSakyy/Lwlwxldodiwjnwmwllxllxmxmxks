@@ -31,7 +31,7 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import q81.a0;
 import q81.d0;
-import q81.v;
+import q81.vShadow;
 import q81.z;
 
 /* loaded from: /home/user/work/p/classes5.dex */
@@ -55,7 +55,7 @@ public final class c implements r, v81.d {
     public Socket q;
     public Socket r;
     public q81.m s;
-    public v t;
+    public vShadow t;
     public l51.h u;
     public n v;
 
@@ -191,7 +191,7 @@ public final class c implements r, v81.d {
         d0 d0Var;
         Socket socket;
         q81.m mVar;
-        v vVar;
+        vShadow vVar;
         l51.h hVar;
         c cVar3 = this.b;
         CopyOnWriteArrayList copyOnWriteArrayList = this.i.J;
@@ -276,9 +276,9 @@ public final class c implements r, v81.d {
                 }
                 this.r = socket2;
                 List list2 = aVar2.i;
-                v vVar2 = v.x;
+                vShadow vVar2 = vShadow.x;
                 if (!list2.contains(vVar2)) {
-                    vVar2 = v.u;
+                    vVar2 = vShadow.u;
                 }
                 this.t = vVar2;
                 cVar2 = null;
@@ -438,7 +438,7 @@ public final class c implements r, v81.d {
 
     public final void j(SSLSocket sSLSocket, q81.i iVar) {
         String str;
-        v vVar;
+        vShadow vVar;
         q81.a aVar = this.k.a;
         try {
             if (iVar.b) {
@@ -470,10 +470,10 @@ public final class c implements r, v81.d {
                 this.r = sSLSocket;
                 this.u = new l51.h(new w51.r(sSLSocket));
                 if (str != null) {
-                    v.s.getClass();
+                    vShadow.s.getClass();
                     vVar = q81.b.e(str);
                 } else {
-                    vVar = v.u;
+                    vVar = vShadow.u;
                 }
                 this.t = vVar;
                 a91.e eVar3 = a91.e.a;
@@ -492,7 +492,7 @@ public final class c implements r, v81.d {
             sb.append(" not verified:\n            |    certificate: ");
             q81.f fVar2 = q81.f.c;
             StringBuilder sb2 = new StringBuilder("sha256/");
-            h91.k kVar = h91.k.u;
+            h91.kShadow kVar = h91.kShadow.u;
             byte[] encoded = x509Certificate.getPublicKey().getEncoded();
             k71.k.f(encoded, "getEncoded(...)");
             sb2.append(c30.d.f(encoded).c("SHA-256").a());

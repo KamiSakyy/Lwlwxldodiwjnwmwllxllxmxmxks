@@ -16,7 +16,7 @@ import m10.kp;
 import m10.rf0;
 import m10.vp;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -26,8 +26,8 @@ public abstract class j {
     static {
         wg.Companion.getClass();
         r b = l0.b(wg.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("getsPullRequestReviews", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("getsPullRequestReviews", b, (String) null, rVar, rVar, rVar));
         eh.Companion.getClass();
         x xVar = eh.a;
         s mVar = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -49,6 +49,6 @@ public abstract class j {
         q0 q0Var3 = je0.a;
         k71.k.g(q0Var3, "type");
         vp.Companion.getClass();
-        a = d0.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(vp.k1, new u0(s0.p("getPullRequestReviews", new t("enabled")))), r3));
+        a = d0Shadow.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(vp.k1, new u0(s0.p("getPullRequestReviews", new t("enabled")))), r3));
     }
 }

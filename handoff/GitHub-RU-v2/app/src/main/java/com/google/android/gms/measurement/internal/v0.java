@@ -27,8 +27,8 @@ public final class v0 implements Runnable {
     public v0(w0 w0Var, String str, URL url, byte[] bArr, Map map, u0 u0Var) {
         Objects.requireNonNull(w0Var);
         this.x = w0Var;
-        c21.u.d(str);
-        c21.u.g(url);
+        c21.uShadow.d(str);
+        c21.uShadow.g(url);
         this.s = url;
         this.t = bArr;
         this.w = u0Var;
@@ -532,7 +532,7 @@ public final class v0 implements Runnable {
     public v0(x2 x2Var, String str, URL url, byte[] bArr, HashMap hashMap, v2 v2Var) {
         Objects.requireNonNull(x2Var);
         this.x = x2Var;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         this.s = url;
         this.t = bArr;
         this.w = v2Var;

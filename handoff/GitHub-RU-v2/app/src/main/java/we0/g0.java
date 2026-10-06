@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 implements aa.a {
     public static final g0 a = new g0();
-    public static final List b = sy.d0.o(new String[]{"__typename", "avatarUrl", "name", "user"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "avatarUrl", "name", "user"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -13,7 +13,7 @@ public final class g0 implements aa.a {
         String str = null;
         String str2 = null;
         String str3 = null;
-        a0 a0Var = null;
+        a0Shadow a0Var = null;
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
@@ -26,7 +26,7 @@ public final class g0 implements aa.a {
                 if (r0 != 3) {
                     break;
                 }
-                a0Var = (a0) aa.c.b(aa.c.c(d1.a, false)).a(eVar, wVar);
+                a0Var = (a0Shadow) aa.c.b(aa.c.c(d1.a, false)).a(eVar, wVar);
             }
         }
         if (str == null) {

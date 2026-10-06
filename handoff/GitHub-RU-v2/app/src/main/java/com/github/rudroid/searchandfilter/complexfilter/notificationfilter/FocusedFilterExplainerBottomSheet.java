@@ -7,7 +7,7 @@ import androidx.lifecycle.l1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class FocusedFilterExplainerBottomSheet extends Hilt_FocusedFilterExplainerBottomSheet {
     public com.github.rudroid.activities.util.c S0;
-    public final l1 T0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.h0.class), new a(), new c(), new b());
+    public final l1 T0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.h0.class), new a(), new c(), new b());
     public com.github.rudroid.utilities.e U0;
 
     public static final class a extends k71.l implements j71.a {
@@ -51,7 +51,7 @@ public final class FocusedFilterExplainerBottomSheet extends Hilt_FocusedFilterE
 
     public final void P3(Bundle bundle) {
         super.P3(bundle);
-        v71.b0.z(d1.i(this), (a71.h) null, (v71.a0) null, new e(this, null), 3);
+        v71.b0.z(d1.i(this), (a71.h) null, (v71.a0Shadow) null, new e(this, null), 3);
     }
 
 

@@ -21,7 +21,7 @@ public final class kq implements aaShadow.w0 {
         List list = kz0.e3.a;
         List list2 = kz0.e3.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -72,6 +72,6 @@ public final class kq implements aaShadow.w0 {
     }
 
     public final String toString() {
-        return jo.f4.l(this.s, "PullRequestReviewQuery(id=", this.r, ", includeIssueTemplateProperties=", ")");
+        return jo.f4Shadow.l(this.s, "PullRequestReviewQuery(id=", this.r, ", includeIssueTemplateProperties=", ")");
     }
 }

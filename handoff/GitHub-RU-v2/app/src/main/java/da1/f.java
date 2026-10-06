@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class f extends b0 {
+final class f extends b0Shadow {
     public f() {
         super("InTableBody", 12);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         int b = y3.a.b(s0Var.a);
         z zVar = b0.z;
         if (b == 1) {
@@ -50,7 +50,7 @@ final class f extends b0 {
         return true;
     }
 
-    public final boolean e(s0 s0Var, b bVar) {
+    public final boolean e(s0 s0Var, bShadow bVar) {
         if (!bVar.s("tbody") && !bVar.s("thead") && !bVar.p("tfoot")) {
             bVar.k(this);
             return false;

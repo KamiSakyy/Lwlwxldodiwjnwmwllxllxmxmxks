@@ -61,7 +61,7 @@ public final class s6 extends s7 {
         sb.append(", isDraft=");
         sb.append(this.h);
         sb.append(", isInMergeQueue=");
-        return jo.f4.s(sb, this.i, ")");
+        return jo.f4Shadow.s(sb, this.i, ")");
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции

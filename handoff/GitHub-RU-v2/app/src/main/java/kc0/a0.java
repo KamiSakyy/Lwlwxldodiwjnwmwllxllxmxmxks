@@ -3,8 +3,8 @@ package kc0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a0 implements aaShadow.n0 {
-    public static final x Companion = new x();
+public final class a0Shadow implements aaShadow.n0 {
+    public static final xShadow Companion = new xShadow();
     public String r;
 
     public a0(String str) {
@@ -18,7 +18,7 @@ public final class a0 implements aaShadow.n0 {
         List list = en0.e.a;
         List list2 = en0.e.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -26,7 +26,7 @@ public final class a0 implements aaShadow.n0 {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof a0) && k71.k.b(this.r, ((a0) obj).r);
+        return (obj instanceof a0Shadow) && k71.k.b(this.r, ((a0Shadow) obj).r);
     }
 
     public final aa.p0 g() {

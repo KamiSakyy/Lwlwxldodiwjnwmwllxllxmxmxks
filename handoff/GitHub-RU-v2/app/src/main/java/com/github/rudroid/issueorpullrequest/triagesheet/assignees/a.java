@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import le.b;
-import sy.d0;
+import sy.d0Shadow;
 import sy.f0;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -15,7 +15,7 @@ public final class a {
         k71.k.g(set, "selectedList");
         k71.k.g(set2, "selectableList");
         k71.k.g(set3, "suggestedList");
-        y61.b i = d0.i();
+        y61.b i = d0Shadow.i();
         if (!z10) {
             i.add(new b.e(2131952995));
             if (set.isEmpty()) {
@@ -35,7 +35,7 @@ public final class a {
         }
         Set l = f0.l(set2, set);
         if (z10) {
-            kVar = new w61.k(x61.r.r, x61.m.F0(l));
+            kVar = new w61.k(x61.rShadow.r, x61.m.F0(l));
         } else {
             ArrayList arrayList2 = new ArrayList();
             ArrayList arrayList3 = new ArrayList();
@@ -71,6 +71,6 @@ public final class a {
         if (z11) {
             i.add(new b.d(5, 2131952992));
         }
-        return d0.h(i);
+        return d0Shadow.h(i);
     }
 }

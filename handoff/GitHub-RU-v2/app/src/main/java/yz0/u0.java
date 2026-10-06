@@ -59,7 +59,7 @@ public final class u0 {
     }
 
     public final int hashCode() {
-        int b = jo.f4.b(this.g, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(com.github.rudroid.m0.a(this.c, com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), 31), this.d, 31), this.e, 31), this.f, 31), 31);
+        int b = jo.f4Shadow.b(this.g, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(com.github.rudroid.m0.a(this.c, com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), 31), this.d, 31), this.e, 31), this.f, 31), 31);
         com.github.service.models.response.a aVar = this.h;
         return this.r.hashCode() + com.github.rudroid.copilot.h1.i(no.a.b(this.p, no.a.b(this.o, no.a.b(this.n, (this.m.hashCode() + no.a.b(this.l, a0.s0.b(this.k, a0.s0.b(this.j, a0.s0.b(this.i, (b + (aVar == null ? 0 : aVar.hashCode())) * 31, 31), 31), 31), 31)) * 31, 31), 31), 31), this.q, 31);
     }
@@ -68,7 +68,7 @@ public final class u0 {
         String a = qb.b.a(this.d);
         String a2 = qb.a.a(this.e);
         StringBuilder o = a0.s0.o("Commit(messageHeader=", this.a, ", messageBody=", this.b, ", committedAt=");
-        jo.f4.A(", abbreviatedOid=", a, ", oid=", o, this.c);
+        jo.f4Shadow.A(", abbreviatedOid=", a, ", oid=", o, this.c);
         f1.e.x(o, a2, ", url=", this.f, ", author=");
         o.append(this.g);
         o.append(", committer=");

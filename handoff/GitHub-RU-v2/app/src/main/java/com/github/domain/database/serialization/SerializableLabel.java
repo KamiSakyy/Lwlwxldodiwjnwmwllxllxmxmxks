@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import yz0.k2;
 
@@ -28,7 +28,7 @@ public final class SerializableLabel implements k2 {
 
     public /* synthetic */ SerializableLabel(int i, int i2, String str, String str2, String str3) {
         if (15 != (i & 15)) {
-            c1.l(i, 15, SerializableLabel$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 15, SerializableLabel$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

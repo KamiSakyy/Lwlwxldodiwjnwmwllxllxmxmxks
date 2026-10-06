@@ -26,7 +26,7 @@ final class i extends c71.j implements j71.e {
         if (i == 0) {
             sy.y.j(obj);
             q qVar = this.w;
-            z71.k I = y71.n1.I(qVar.x.b(), new h(null, qVar));
+            z71.k I = y71.n1Shadow.I(qVar.x.b(), new h(null, qVar));
             g gVar = new g(qVar);
             this.v = 1;
             if (I.b(gVar, this) == aVar) {

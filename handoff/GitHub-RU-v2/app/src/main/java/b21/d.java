@@ -193,7 +193,7 @@ public final class d implements Handler.Callback {
                 throw s0.d(message.obj);
             case 3:
                 for (j jVar4 : concurrentHashMap.values()) {
-                    c21.u.c(jVar4.p.D);
+                    c21.uShadow.c(jVar4.p.D);
                     jVar4.o = null;
                     jVar4.m();
                 }
@@ -278,7 +278,7 @@ public final class d implements Handler.Callback {
             case 9:
                 if (concurrentHashMap.containsKey(message.obj)) {
                     j jVar6 = (j) concurrentHashMap.get(message.obj);
-                    c21.u.c(jVar6.p.D);
+                    c21.uShadow.c(jVar6.p.D);
                     if (jVar6.m) {
                         jVar6.m();
                         return true;
@@ -300,7 +300,7 @@ public final class d implements Handler.Callback {
                 if (concurrentHashMap.containsKey(message.obj)) {
                     j jVar8 = (j) concurrentHashMap.get(message.obj);
                     d dVar = jVar8.p;
-                    c21.u.c(dVar.D);
+                    c21.uShadow.c(dVar.D);
                     boolean z2 = jVar8.m;
                     if (z2) {
                         a aVar2 = jVar8.h;
@@ -319,7 +319,7 @@ public final class d implements Handler.Callback {
             case 12:
                 if (concurrentHashMap.containsKey(message.obj)) {
                     j jVar9 = (j) concurrentHashMap.get(message.obj);
-                    c21.u.c(jVar9.p.D);
+                    c21.uShadow.c(jVar9.p.D);
                     a21.a aVar3 = jVar9.g;
                     if (aVar3.g() && jVar9.k.isEmpty()) {
                         b1.m mVar = jVar9.i;
@@ -335,7 +335,7 @@ public final class d implements Handler.Callback {
             case 14:
                 throw s0.d(message.obj);
             case 15:
-                k kVar = (k) message.obj;
+                kShadow kVar = (kShadow) message.obj;
                 if (concurrentHashMap.containsKey(kVar.a)) {
                     j jVar10 = (j) concurrentHashMap.get(kVar.a);
                     if (jVar10.n.contains(kVar) && !jVar10.m) {
@@ -349,7 +349,7 @@ public final class d implements Handler.Callback {
                 }
                 return true;
             case 16:
-                k kVar2 = (k) message.obj;
+                kShadow kVar2 = (kShadow) message.obj;
                 if (concurrentHashMap.containsKey(kVar2.a)) {
                     j jVar11 = (j) concurrentHashMap.get(kVar2.a);
                     ArrayList arrayList = jVar11.n;
@@ -368,7 +368,7 @@ public final class d implements Handler.Callback {
                                     if (i5 >= length) {
                                         break;
                                     }
-                                    if (!c21.u.j(b[i5], dVar3)) {
+                                    if (!c21.uShadow.j(b[i5], dVar3)) {
                                         i5++;
                                     } else if (i5 >= 0) {
                                         arrayList2.add(oVar);

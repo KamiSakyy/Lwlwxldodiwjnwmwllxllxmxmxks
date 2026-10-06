@@ -9,13 +9,13 @@ public final class a4 implements j71.c {
     @Override // j71.c
     public final Object k(Object obj) {
         na0.c0 c0Var;
-        na0.t tVar;
+        na0.tShadow tVar;
         List list;
         na0.y yVar;
         na0.s sVar;
         na0.w wVar = (na0.w) obj;
         k71.k.g(wVar, "data");
-        na0.a0 a0Var = wVar.a;
+        na0.a0Shadow a0Var = wVar.a;
         return Boolean.valueOf(((a0Var == null || (c0Var = a0Var.c) == null || (tVar = c0Var.d) == null || (list = tVar.c) == null || (yVar = (na0.y) x61.m.W(list)) == null || (sVar = yVar.b) == null) ? null : sVar.c) != null);
     }
 }

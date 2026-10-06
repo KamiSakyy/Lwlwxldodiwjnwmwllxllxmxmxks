@@ -184,7 +184,7 @@ public final /* synthetic */ class q1 implements j71.c {
                 k71.k.g(kfVar3, "data");
                 jf jfVar3 = kfVar3.a.c;
                 List list3 = (jfVar3 == null || (lfVar3 = jfVar3.a) == null || (nfVar3 = lfVar3.b) == null) ? null : nfVar3.b;
-                return list3 == null ? x61.r.r : list3;
+                return list3 == null ? x61.rShadow.r : list3;
             case 20:
                 kf kfVar4 = (kf) obj;
                 k71.k.g(kfVar4, "data");
@@ -196,14 +196,14 @@ public final /* synthetic */ class q1 implements j71.c {
                 pf pfVar2 = nfVar4.a;
                 x01.i iVar = new x01.i(pfVar2.a, pfVar2.b, !pfVar2.c);
                 List<of> list4 = nfVar4.b;
-                ArrayList arrayList4 = x61.r.r;
+                ArrayList arrayList4 = x61.rShadow.r;
                 if (list4 != null) {
                     arrayList = new ArrayList();
                     for (of ofVar : list4) {
                         if (ofVar != null) {
                             cq.r rVar5 = ofVar.b;
                             if (rVar5 != null) {
-                                cq.w wVar = rVar5.c;
+                                cq.wShadow wVar = rVar5.c;
                                 ZonedDateTime zonedDateTime = wVar.b;
                                 boolean z = wVar.c;
                                 String str3 = wVar.d;
@@ -239,7 +239,7 @@ public final /* synthetic */ class q1 implements j71.c {
                                     while (i3 < size2) {
                                         Object obj3 = arrayList7.get(i3);
                                         i3++;
-                                        t10.h f2 = sy.e0.f(((cq.a0) obj3).b);
+                                        t10.h f2 = sy.e0.f(((cq.a0Shadow) obj3).b);
                                         if (f2 != null) {
                                             arrayList8.add(f2);
                                         }
@@ -466,7 +466,7 @@ public final /* synthetic */ class q1 implements j71.c {
                 if (list5 != null) {
                     ArrayList arrayList25 = new ArrayList();
                     for (Object obj13 : list5) {
-                        if (!sy.p.o(sy.d0.C(((mf) obj13).b))) {
+                        if (!sy.pShadow.o(sy.d0Shadow.C(((mf) obj13).b))) {
                             arrayList25.add(obj13);
                         }
                     }
@@ -507,7 +507,7 @@ public final /* synthetic */ class q1 implements j71.c {
                 k71.k.g(dVar3, "data");
                 v10.k kVar3 = dVar3.a;
                 List list6 = (kVar3 == null || (fVar3 = kVar3.c) == null || (bVar5 = fVar3.a) == null) ? null : bVar5.c;
-                return list6 == null ? x61.r.r : list6;
+                return list6 == null ? x61.rShadow.r : list6;
             case 26:
                 v10.d dVar4 = (v10.d) obj;
                 k71.k.g(dVar4, "data");
@@ -684,7 +684,7 @@ public final /* synthetic */ class q1 implements j71.c {
                     arrayList2 = null;
                 }
                 if (arrayList2 == null) {
-                    arrayList2 = x61.r.r;
+                    arrayList2 = x61.rShadow.r;
                 }
                 v10.g gVar3 = bVar6.b;
                 return new jn.i(arrayList2.size(), arrayList2, new x01.i(gVar3.a, gVar3.b, gVar3.c));
@@ -701,17 +701,17 @@ public final /* synthetic */ class q1 implements j71.c {
                 k71.k.g(yVar, "$this$navigation");
                 x6.p0 p0Var = yVar.g;
                 z6.eShadow r = com.github.rudroid.m0.r(p0Var, z6.eShadow.class);
-                k71.eShadow a2 = k71.x.a(UserOrOgProfileScreenRoute.class);
-                k71.eShadow a3 = k71.x.a(UserOrOrganizationProfileNavigationFragment.class);
+                k71.eShadow a2 = k71.xShadow.a(UserOrOgProfileScreenRoute.class);
+                k71.eShadow a3 = k71.xShadow.a(UserOrOrganizationProfileNavigationFragment.class);
                 x61.s sVar2 = x61.s.r;
                 z6.i iVar4 = new z6.i(r, a2, sVar2, a3);
                 ArrayList arrayList29 = yVar.j;
                 arrayList29.add(iVar4.a());
-                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.x.a(OrganizationsRoute.class), sVar2, k71.x.a(OrganizationsFragment.class)).a());
-                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.x.a(UsersRoute.class), (Map) ze.e.a, k71.x.a(UsersFragment.class)).a());
+                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.xShadow.a(OrganizationsRoute.class), sVar2, k71.xShadow.a(OrganizationsFragment.class)).a());
+                arrayList29.add(new z6.i(p0Var.b(sy.w.r(z6.eShadow.class)), k71.xShadow.a(UsersRoute.class), (Map) ze.e.a, k71.xShadow.a(UsersFragment.class)).a());
                 rf.g.a(yVar);
                 mg.a.a(yVar);
-                sy.r.u(yVar, k71.x.a(OwnerProjectsEntryPointRoute.class), k71.x.a(OwnerProjectsRoute.class), sVar2, new bf.c(1));
+                sy.rShadow.u(yVar, k71.xShadow.a(OwnerProjectsEntryPointRoute.class), k71.xShadow.a(OwnerProjectsRoute.class), sVar2, new bf.c(1));
                 rf.b.a(yVar);
                 return w61.a0.a;
         }

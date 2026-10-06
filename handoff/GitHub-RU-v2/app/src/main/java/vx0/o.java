@@ -8,7 +8,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements aa.a {
     public static final o a = new o();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         ux0.v vVar;
@@ -46,14 +46,14 @@ public final class o implements aa.a {
             e2Var = null;
         }
         if (str2 != null) {
-            return new ux0.x(str, str2, vVar, e2Var);
+            return new ux0.xShadow(str, str2, vVar, e2Var);
         }
         k41.b.B(eVar, "id");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        ux0.x xVar = (ux0.x) obj;
+        ux0.xShadow xVar = (ux0.xShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

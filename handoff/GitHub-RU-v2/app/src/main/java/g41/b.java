@@ -1,7 +1,7 @@
 package g41;
 
 import android.app.PendingIntent;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends a {
@@ -34,6 +34,6 @@ public final class b extends a {
     }
 
     public final String toString() {
-        return f4.s(f4.v("ReviewInfo{pendingIntent=", this.r.toString(), ", isNoOp="), this.s, "}");
+        return f4Shadow.s(f4Shadow.v("ReviewInfo{pendingIntent=", this.r.toString(), ", isNoOp="), this.s, "}");
     }
 }

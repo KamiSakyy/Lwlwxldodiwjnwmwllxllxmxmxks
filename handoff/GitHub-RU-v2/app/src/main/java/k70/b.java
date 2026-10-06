@@ -2,7 +2,7 @@ package k70;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class b implements aa.a {
@@ -51,7 +51,7 @@ public abstract class b implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, aVar.a);
         fVar.z0("viewerIsFollowing");
-        f4.C(aVar.b, aa.c.f, fVar, wVar, "__typename");
+        f4Shadow.C(aVar.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, aVar.c);
     }
 }

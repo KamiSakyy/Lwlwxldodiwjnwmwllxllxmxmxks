@@ -6,6 +6,6 @@ public abstract class he {
 
     static {
         uu.Companion.getClass();
-        new aa.q0("ImageFileType", x61.r.r, sy.d0.n(uu.a));
+        new aa.q0("ImageFileType", x61.rShadow.r, sy.d0Shadow.n(uu.a));
     }
 }

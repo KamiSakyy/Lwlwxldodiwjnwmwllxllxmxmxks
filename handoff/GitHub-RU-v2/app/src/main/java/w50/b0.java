@@ -1,12 +1,12 @@
 package w50;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 implements aa.a {
     public static final b0 a = new b0();
-    public static final List b = sy.d0.o("__typename", "beforeFocusCount", "pageInfo", "nodes");
+    public static final List b = sy.d0Shadow.o("__typename", "beforeFocusCount", "pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

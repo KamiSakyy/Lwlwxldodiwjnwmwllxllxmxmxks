@@ -45,7 +45,7 @@ import m11.i;
 import m11.j;
 import w8.f;
 import x41.h;
-import y41.a0;
+import y41.a0Shadow;
 import y41.b0;
 import y41.c0;
 import y41.d0;
@@ -77,23 +77,23 @@ public final class l {
     public static final Charset s = Charset.forName("UTF-8");
     public Context a;
     public s b;
-    public v2.t c;
-    public b51.d d;
+    public v2.tShadow c;
+    public b51.dShadow d;
     public w41.c e;
     public v f;
-    public b51.d g;
+    public b51.dShadow g;
     public a h;
     public x41.f i;
     public s41.b j;
     public t41.a k;
     public i l;
-    public b51.d m;
+    public b51.dShadow m;
     public rShadow n;
-    public final w21.g o = new w21.g();
-    public final w21.g p = new w21.g();
-    public final w21.g q = new w21.g();
+    public final w21.gShadow o = new w21.g();
+    public final w21.gShadow p = new w21.g();
+    public final w21.gShadow q = new w21.g();
 
-    public l(Context context, v vVar, s sVar, b51.d dVar, v2.t tVar, a aVar, b51.d dVar2, x41.f fVar, b51.d dVar3, s41.b bVar, t41.a aVar2, i iVar, w41.c cVar) {
+    public l(Context context, v vVar, s sVar, b51.dShadow dVar, v2.tShadow tVar, a aVar, b51.dShadow dVar2, x41.f fVar, b51.dShadow dVar3, s41.b bVar, t41.a aVar2, i iVar, w41.c cVar) {
         new AtomicBoolean(false);
         this.a = context;
         this.f = vVar;
@@ -114,7 +114,7 @@ public final class l {
         w21.o f;
         lVar.getClass();
         ArrayList arrayList = new ArrayList();
-        for (File file : b51.d.k(((File) lVar.g.c).listFiles(rShadow))) {
+        for (File file : b51.dShadow.k(((File) lVar.g.c).listFiles(rShadow))) {
             try {
                 long parseLong = Long.parseLong(file.getName().substring(3));
                 try {
@@ -190,17 +190,17 @@ public final class l {
         } else if (Build.VERSION.SDK_INT >= 30) {
             List<ApplicationExitInfo> historicalProcessExitReasons = ((ActivityManager) this.a.getSystemService("activity")).getHistoricalProcessExitReasons(null, 0, 0);
             if (historicalProcessExitReasons.size() != 0) {
-                b51.d dVar2 = this.g;
+                b51.dShadow dVar2 = this.g;
                 x41.f fVar = new x41.f(dVar2);
                 fVar.s = x41.f.t;
                 if (str3 != null) {
                     fVar.s = new x41.m(dVar2.f(str3, "userlog"));
                 }
-                b51.d dVar3 = this.g;
+                b51.dShadow dVar3 = this.g;
                 w41.c cVar = this.e;
                 x41.h hVar = new x41.h(dVar3);
                 i2 = 4;
-                b51.d dVar4 = new b51.d(str3, dVar3, cVar);
+                b51.dShadow dVar4 = new b51.dShadow(str3, dVar3, cVar);
                 i3 = 8;
                 ((x41.e) ((AtomicMarkableReference) ((t1) dVar4.d).b).getReference()).c(hVar.c(str3, false));
                 ((x41.e) ((AtomicMarkableReference) ((t1) dVar4.e).b).getReference()).c(hVar.c(str3, true));
@@ -245,7 +245,7 @@ public final class l {
                                     q1Var.b.addAll(list2);
                                 }
                             }
-                            b51.d dVar5 = this.m;
+                            b51.dShadow dVar5 = this.m;
                             b51.b bVar = (b51.b) dVar5.b;
                             long lastModified = bVar.b.f(str3, "start-time").lastModified();
                             Iterator<ApplicationExitInfo> it = historicalProcessExitReasons.iterator();
@@ -269,7 +269,7 @@ public final class l {
                                 i4 = 2;
                                 z3 = z6;
                             } else {
-                                q qVar = (q) dVar5.a;
+                                qShadow qVar = (qShadow) dVar5.a;
                                 try {
                                     traceInputStream = applicationExitInfo.getTraceInputStream();
                                 } catch (IOException e) {
@@ -277,7 +277,7 @@ public final class l {
                                     e.toString();
                                 }
                                 if (traceInputStream != null) {
-                                    str2 = b51.d.d(traceInputStream);
+                                    str2 = b51.dShadow.d(traceInputStream);
                                     c0 c0Var = new c0();
                                     c0Var.d = applicationExitInfo.getImportance();
                                     c0Var.j = (byte) (c0Var.j | 4);
@@ -397,7 +397,7 @@ public final class l {
                                     p0 a6 = o0Var.a();
                                     Log.isLoggable("FirebaseCrashlytics", 3);
                                     z3 = true;
-                                    bVar.d(b51.d.b(b51.d.a(a6, fVar, dVar4, Collections.EMPTY_MAP), dVar4), str3, true);
+                                    bVar.d(b51.dShadow.b(b51.dShadow.a(a6, fVar, dVar4, Collections.EMPTY_MAP), dVar4), str3, true);
                                 }
                                 str2 = null;
                                 c0 c0Var3 = new c0();
@@ -448,10 +448,10 @@ public final class l {
             this.l.a(null);
             str = null;
         }
-        b51.d dVar7 = this.m;
+        b51.dShadow dVar7 = this.m;
         long currentTimeMillis = System.currentTimeMillis() / 1000;
         b51.b bVar2 = (b51.b) dVar7.b;
-        b51.d dVar8 = bVar2.b;
+        b51.dShadow dVar8 = bVar2.b;
         dVar8.c(".com.google.firebase.crashlytics");
         dVar8.c(".com.google.firebase.crashlytics-ndk");
         if (!((String) dVar8.a).isEmpty()) {
@@ -479,7 +479,7 @@ public final class l {
             while (c.size() > i14) {
                 String str10 = (String) c.last();
                 Log.isLoggable("FirebaseCrashlytics", 3);
-                b51.d.j(new File((File) dVar8.d, str10));
+                b51.dShadow.j(new File((File) dVar8.d, str10));
                 c.remove(str10);
             }
         }
@@ -489,7 +489,7 @@ public final class l {
             b51.a aVar2 = b51.b.i;
             File file2 = new File((File) dVar8.d, str11);
             file2.mkdirs();
-            List<File> k = b51.d.k(file2.listFiles(aVar2));
+            List<File> k = b51.dShadow.k(file2.listFiles(aVar2));
             if (k.isEmpty()) {
                 Log.isLoggable("FirebaseCrashlytics", 2);
             } else {
@@ -531,11 +531,11 @@ public final class l {
                         if (Objects.equals(hVar2.b, str11)) {
                             substring = hVar2.c;
                         } else {
-                            b51.d dVar9 = hVar2.a;
+                            b51.dShadow dVar9 = hVar2.a;
                             b51.a aVar3 = h.d;
                             File file4 = new File((File) dVar9.d, str11);
                             file4.mkdirs();
-                            List k2 = b51.d.k(file4.listFiles(aVar3));
+                            List k2 = b51.dShadow.k(file4.listFiles(aVar3));
                             substring = k2.isEmpty() ? null : ((File) Collections.min(k2, h.e)).getName().substring(i2);
                         }
                     }
@@ -561,7 +561,7 @@ public final class l {
                                 a7.j = a.a();
                             } catch (IOException unused5) {
                                 Objects.toString(f2);
-                                b51.d.j(new File((File) dVar8.d, str11));
+                                b51.dShadow.j(new File((File) dVar8.d, str11));
                                 z4 = false;
                                 z3 = true;
                                 i2 = 4;
@@ -598,12 +598,12 @@ public final class l {
                     }
                     Objects.toString(f2);
                 }
-                b51.d.j(new File((File) dVar8.d, str11));
+                b51.dShadow.j(new File((File) dVar8.d, str11));
                 z4 = false;
                 z3 = true;
                 i2 = 4;
             }
-            b51.d.j(new File((File) dVar8.d, str11));
+            b51.dShadow.j(new File((File) dVar8.d, str11));
             z4 = false;
             z3 = true;
             i2 = 4;
@@ -670,7 +670,7 @@ public final class l {
             str4 = str8;
             i = 4;
         } else {
-            final b51.d dVar = this.d;
+            final b51.dShadow dVar = this.d;
             synchronized (((String) dVar.a)) {
                 dVar.a = str;
                 x41.e eVar = (x41.e) ((AtomicMarkableReference) ((t1) dVar.d).b).getReference();
@@ -698,12 +698,12 @@ public final class l {
                                 c cVar = (c) dVar;
                                 j jVar = (j) str;
                                 String str11 = jVar.a;
-                                g gVar = (g) unmodifiableMap;
+                                gShadow gVar = (gShadow) unmodifiableMap;
                                 i iVar = (i) unmodifiableList;
                                 cVar.getClass();
                                 Logger logger = c.f;
                                 try {
-                                    n11.g a2 = cVar.c.a(str11);
+                                    n11.gShadow a2 = cVar.c.a(str11);
                                     if (a2 == null) {
                                         String str12 = "Transport backend '" + str11 + "' is not registered";
                                         logger.warning(str12);
@@ -730,7 +730,7 @@ public final class l {
                                 f.b(cVar2, workDatabase, list);
                                 return;
                             default:
-                                b51.d dVar2 = (b51.d) dVar;
+                                b51.dShadow dVar2 = (b51.dShadow) dVar;
                                 String str13 = (String) str;
                                 Map map = (Map) unmodifiableMap;
                                 List list2 = (List) unmodifiableList;
@@ -741,7 +741,7 @@ public final class l {
                                     String str14 = (String) atomicMarkableReference.getReference();
                                     File f2 = hVar.a.f(str13, "user-data");
                                     try {
-                                        x41.g gVar2 = new x41.g();
+                                        x41.gShadow gVar2 = new x41.g();
                                         gVar2.put("userId", str14);
                                         obj = gVar2.toString();
                                         bufferedWriter2 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f2), h.b));
@@ -757,10 +757,10 @@ public final class l {
                                     } catch (Throwable th2) {
                                         th = th2;
                                         bufferedWriter3 = bufferedWriter2;
-                                        v41.g.b(bufferedWriter3);
+                                        v41.gShadow.b(bufferedWriter3);
                                         throw th;
                                     }
-                                    v41.g.b(bufferedWriter2);
+                                    v41.gShadow.b(bufferedWriter2);
                                 }
                                 if (!map.isEmpty()) {
                                     hVar.g(str13, map, false);
@@ -788,17 +788,17 @@ public final class l {
                                 try {
                                     bufferedWriter.write(e);
                                     bufferedWriter.flush();
-                                    v41.g.b(bufferedWriter);
+                                    v41.gShadow.b(bufferedWriter);
                                     return;
                                 } catch (Exception unused4) {
                                     bufferedWriter3 = bufferedWriter;
                                     h.f(f3);
-                                    v41.g.b(bufferedWriter3);
+                                    v41.gShadow.b(bufferedWriter3);
                                     return;
                                 } catch (Throwable th4) {
                                     th = th4;
                                     bufferedWriter3 = bufferedWriter;
-                                    v41.g.b(bufferedWriter3);
+                                    v41.gShadow.b(bufferedWriter3);
                                     throw th;
                                 }
                         }
@@ -810,11 +810,11 @@ public final class l {
         ((x41.d) fVar3.s).a();
         fVar3.s = x41.f.t;
         if (str != null) {
-            fVar3.s = new x41.m(((b51.d) fVar3.r).f(str, "userlog"));
+            fVar3.s = new x41.m(((b51.dShadow) fVar3.r).f(str, "userlog"));
         }
         this.l.a(str);
-        b51.d dVar2 = this.m;
-        q qVar = (q) dVar2.a;
+        b51.dShadow dVar2 = this.m;
+        qShadow qVar = (qShadow) dVar2.a;
         Charset charset = n2.a;
         a0 a0Var = new a0();
         a0Var.a = "19.4.4";
@@ -926,7 +926,7 @@ public final class l {
         i0Var.m = (byte) (i0Var.m | 4);
         a0Var.j = i0Var.a();
         b0 a3 = a0Var.a();
-        b51.d dVar3 = ((b51.b) dVar2.b).b;
+        b51.dShadow dVar3 = ((b51.b) dVar2.b).b;
         m2 m2Var = a3.k;
         if (m2Var == null) {
             Log.isLoggable("FirebaseCrashlytics", 3);
@@ -1024,9 +1024,9 @@ public final class l {
     public final void g(w21.o oVar) {
         w21.o oVar2;
         w21.o a;
-        w21.g gVar = this.o;
-        b51.d dVar = ((b51.b) this.m.b).b;
-        if (b51.d.k(((File) dVar.e).listFiles()).isEmpty() && b51.d.k(((File) dVar.f).listFiles()).isEmpty() && b51.d.k(((File) dVar.g).listFiles()).isEmpty()) {
+        w21.gShadow gVar = this.o;
+        b51.dShadow dVar = ((b51.b) this.m.b).b;
+        if (b51.dShadow.k(((File) dVar.e).listFiles()).isEmpty() && b51.dShadow.k(((File) dVar.f).listFiles()).isEmpty() && b51.dShadow.k(((File) dVar.g).listFiles()).isEmpty()) {
             Log.isLoggable("FirebaseCrashlytics", 2);
             gVar.c(Boolean.FALSE);
             return;

@@ -6,7 +6,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i implements aa.a {
     public static final i a = new i();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         o oVar;
@@ -37,7 +37,7 @@ public final class i implements aa.a {
         }
         if (m71.a.v(m71.a.O(new String[]{"ProjectV2IterationField"}), set2, str, set)) {
             eVar.s0();
-            j4Var = n4.c(eVar, wVar);
+            j4Var = n4.cShadow(eVar, wVar);
         }
         return new g(str, oVar, r4Var, j4Var);
     }

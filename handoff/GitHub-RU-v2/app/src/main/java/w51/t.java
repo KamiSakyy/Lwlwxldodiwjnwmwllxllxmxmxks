@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.regex.Pattern;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class t {
+public final class tShadow {
     public static final Pattern d = Pattern.compile("[a-zA-Z0-9-_.~%]{1,900}");
     public String a;
     public String b;
@@ -21,10 +21,10 @@ public final class t {
     }
 
     public final boolean equals(Object obj) {
-        if (!(obj instanceof t)) {
+        if (!(obj instanceof tShadow)) {
             return false;
         }
-        t tVar = (t) obj;
+        tShadow tVar = (tShadow) obj;
         return this.a.equals(tVar.a) && this.b.equals(tVar.b);
     }
 

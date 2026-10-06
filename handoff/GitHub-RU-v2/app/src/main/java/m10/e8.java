@@ -10,7 +10,7 @@ public abstract class e8 {
     public static final aa.q0 e;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         e = new aa.q0("CopilotConsumptiveUser", rVar, rVar);
     }
 }

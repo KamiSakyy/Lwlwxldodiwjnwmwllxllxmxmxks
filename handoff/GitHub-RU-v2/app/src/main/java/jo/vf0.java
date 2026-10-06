@@ -26,7 +26,7 @@ public final class vf0 implements aaShadow.n0 {
         List list = h10.w6.a;
         List list2 = h10.w6.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -68,7 +68,7 @@ public final class vf0 implements aaShadow.n0 {
         aa.c.a(n10.a.w).e(fVar, wVar, this.r);
         fVar.z0("startTime");
         m10.mp.Companion.getClass();
-        aa.x xVar = m10.mp.a;
+        aa.xShadow xVar = m10.mp.a;
         wVar.e(xVar).b(fVar, wVar, this.s);
         fVar.z0("endTime");
         wVar.e(xVar).b(fVar, wVar, this.t);

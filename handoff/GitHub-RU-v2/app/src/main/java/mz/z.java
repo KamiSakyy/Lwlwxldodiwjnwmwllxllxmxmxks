@@ -6,13 +6,13 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z implements aa.a {
     public static final z a = new z();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         lz.w wVar2;
         lz.q qVar;
         lz.y yVar;
-        lz.x xVar;
+        lz.xShadow xVar;
         lz.m mVar;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
@@ -60,11 +60,11 @@ public final class z implements aa.a {
             eVar.s0();
             aVar = vx.b.c(eVar, wVar);
         }
-        return new lz.a0(str, wVar2, qVar, yVar, xVar, mVar, aVar);
+        return new lz.a0Shadow(str, wVar2, qVar, yVar, xVar, mVar, aVar);
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        lz.a0 a0Var = (lz.a0) obj;
+        lz.a0Shadow a0Var = (lz.a0Shadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(a0Var, "value");
@@ -82,7 +82,7 @@ public final class z implements aa.a {
         if (yVar != null) {
             x.d(fVar, wVar, yVar);
         }
-        lz.x xVar = a0Var.e;
+        lz.xShadow xVar = a0Var.e;
         if (xVar != null) {
             w.d(fVar, wVar, xVar);
         }

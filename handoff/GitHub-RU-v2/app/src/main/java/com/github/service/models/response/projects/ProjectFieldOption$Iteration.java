@@ -7,7 +7,7 @@ import com.github.rudroid.copilot.h1;
 import g81.e;
 import java.time.LocalDate;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l01.c;
 import l01.z;
@@ -38,7 +38,7 @@ public final class ProjectFieldOption$Iteration implements z {
 
     public /* synthetic */ ProjectFieldOption$Iteration(int i, String str, String str2, String str3, int i2, LocalDate localDate) {
         if (31 != (i & 31)) {
-            c1.l(i, 31, ProjectFieldOption$Iteration$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 31, ProjectFieldOption$Iteration$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

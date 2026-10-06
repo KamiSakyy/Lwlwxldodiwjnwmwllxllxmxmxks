@@ -16,9 +16,9 @@ public abstract class o2 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Discussion");
+        List n = sy.d0Shadow.n("Discussion");
         List list = f50.d.a;
         aa.s c = no.a.c(list, "selections", "Discussion", n, list);
         bb.Companion.getClass();
@@ -36,6 +36,6 @@ public abstract class o2 {
         aa.q0 q0Var3 = di.m;
         k71.k.g(q0Var3, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("organization", q0Var3, (String) null, rVar, no.a.s(pm.g, new aa.u0(new aa.t("repositoryOwner"))), r3));
+        a = sy.d0Shadow.n(new aa.m("organization", q0Var3, (String) null, rVar, no.a.s(pm.g, new aa.u0(new aa.t("repositoryOwner"))), r3));
     }
 }

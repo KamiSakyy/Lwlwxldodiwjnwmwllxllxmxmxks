@@ -34,7 +34,7 @@ public abstract class b {
 
     public static final Object c(a71.h hVar, Object obj, Object obj2, j71.e eVar, a71.c cVar) {
         Object s;
-        Object n = a81.b.n(hVar, obj2);
+        Object n = a81.bShadow.n(hVar, obj2);
         try {
             y yVar = new y(cVar, hVar);
             if (eVar == null) {
@@ -43,13 +43,13 @@ public abstract class b {
                 k71.z.c(2, eVar);
                 s = eVar.s(obj, yVar);
             }
-            a81.b.g(hVar, n);
+            a81.bShadow.g(hVar, n);
             if (s == b71.a.r) {
                 k71.k.g(cVar, "frame");
             }
             return s;
         } catch (Throwable th) {
-            a81.b.g(hVar, n);
+            a81.bShadow.g(hVar, n);
             throw th;
         }
     }

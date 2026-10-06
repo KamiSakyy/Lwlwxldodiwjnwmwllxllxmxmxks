@@ -6,7 +6,7 @@ import u10.k00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zo implements aaShadow.a {
     public static final zo a = new zo();
-    public static final List b = sy.d0.o("__typename", "viewerSubscription");
+    public static final List b = sy.d0Shadow.o("__typename", "viewerSubscription");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

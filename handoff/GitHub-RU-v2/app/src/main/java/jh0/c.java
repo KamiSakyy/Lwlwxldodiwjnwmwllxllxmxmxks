@@ -13,7 +13,7 @@ import gn0.rb;
 import gn0.tb;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,12 +25,12 @@ public abstract class c {
         rb.Companion.getClass();
         x xVar = rb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         bm.Companion.getClass();
         a0 a0Var = bm.s;
         k.g(a0Var, "type");
-        List n2 = d0.n(new m("mergeMethod", a0Var, (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("mergeMethod", a0Var, (String) null, rVar, rVar, rVar));
         pb.Companion.getClass();
         m mVar = new m("id", l0.b(pb.a), (String) null, rVar, rVar, rVar);
         eg.Companion.getClass();

@@ -17,7 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.OverScroller;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.e0;
 import com.google.android.gms.internal.measurement.n0;
 import com.google.android.gms.internal.measurement.zzd;
@@ -223,7 +223,7 @@ public final class c implements Runnable {
                 o4 o4Var4 = v1Var3.f;
                 o4Var4.B();
                 String str4 = v4Var4.r;
-                u.g(str4);
+                uShadow.g(str4);
                 HashMap hashMap = o4Var4.V;
                 o4Var4.b().z();
                 o4Var4.l0();
@@ -332,7 +332,7 @@ public final class c implements Runnable {
                     return;
                 }
                 String string2 = cursor.getString(1);
-                u.g(string2);
+                uShadow.g(string2);
                 try {
                     try {
                         try {

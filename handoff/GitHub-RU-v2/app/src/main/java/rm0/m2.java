@@ -50,13 +50,13 @@ public final class m2 implements z01.r, yb0, mi0, y90, yf0 {
     public final y71.i a(ArrayList arrayList) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new bz0.t(in.r.h(this.s.d(new h70(new aa.u0(10), arrayList))), 28), this.t);
+                return y71.n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new h70(new aa.u0(10), arrayList))), 28), this.t);
             case 1:
-                return y71.n1.y(new o3(in.r.h(this.s.d(new zd0(new aa.u0(10), arrayList))), 26), this.t);
+                return y71.n1Shadow.y(new o3(in.rShadow.h(this.s.d(new zd0(new aa.u0(10), arrayList))), 26), this.t);
             case 2:
-                return y71.n1.y(new vb0.p1(in.r.h(this.s.d(new j50(new aa.u0(10), arrayList))), 0), this.t);
+                return y71.n1Shadow.y(new vb0.p1(in.rShadow.h(this.s.d(new j50(new aa.u0(10), arrayList))), 0), this.t);
             default:
-                return y71.n1.y(new wy0.h1(in.r.h(this.s.d(new lb0(new aa.u0(10), arrayList))), 1), this.t);
+                return y71.n1Shadow.y(new wy0.h1(in.rShadow.h(this.s.d(new lb0(new aa.u0(10), arrayList))), 1), this.t);
         }
     }
 

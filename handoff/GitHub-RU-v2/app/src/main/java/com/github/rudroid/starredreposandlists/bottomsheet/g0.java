@@ -20,6 +20,6 @@ public final class g0 extends k1 implements com.github.rudroid.utilities.viewmod
     }
 
     public final void P(String str, List list, List list2) {
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new f0(this, str, list, list2, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f0(this, str, list, list2, null), 3);
     }
 }

@@ -152,7 +152,7 @@ public final class g0 {
                         k71.k.g(m0Var2, "it");
                         long j3 = vVar.b;
                         int i16 = g3.p0.c;
-                        v71.b0.z(zVar3, (a71.h) null, (v71.a0) null, new e0(cVar3, m0Var2.c((int) (j3 >> 32)), W, null), 3);
+                        v71.b0.z(zVar3, (a71.h) null, (v71.a0Shadow) null, new e0(cVar3, m0Var2.c((int) (j3 >> 32)), W, null), 3);
                         cVar2.k(m0Var2);
                         return w61.a0.a;
                     }
@@ -457,7 +457,7 @@ public final class g0 {
                                         }
                                         if ((i6 & 262144) != 0) {
                                             jb jbVar = jb.a;
-                                            p0Var3 = r8.b(j1.a0.d, sVar2);
+                                            p0Var3 = r8.b(j1.a0Shadow.d, sVar2);
                                             i22 &= -234881025;
                                         } else {
                                             p0Var3 = p0Var;
@@ -1038,7 +1038,7 @@ public final class g0 {
                                     d2Var3 = d2Var;
                                 }
                                 jb jbVar = jb.a;
-                                d2.p0 b = r8.b(j1.a0.d, sVar);
+                                d2.p0 b = r8.b(j1.a0Shadow.d, sVar);
                                 int i47 = i33 & (-29360129);
                                 if (i23 == 0) {
                                     fVar3 = fVar;

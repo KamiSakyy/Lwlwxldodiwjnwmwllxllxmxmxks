@@ -23,7 +23,7 @@ public final class jc {
         v = jcVarArr;
         w = v8.l0.t(jcVarArr);
         Companion = new ic();
-        sy.d0.o(new String[]{"COMPLETED", "NOT_PLANNED"});
+        sy.d0Shadow.o(new String[]{"COMPLETED", "NOT_PLANNED"});
     }
 
     public jc(String str, int i, String str2) {

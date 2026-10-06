@@ -5,11 +5,11 @@ public final class h1 {
     public String a;
     public c1 b;
     public Boolean c;
-    public f1 d;
+    public f1Shadow d;
     public k1 e;
     public String f;
 
-    public h1(String str, c1 c1Var, Boolean bool, f1 f1Var, k1 k1Var, String str2) {
+    public h1(String str, c1 c1Var, Boolean bool, f1Shadow f1Var, k1 k1Var, String str2) {
         this.a = str;
         this.b = c1Var;
         this.c = bool;

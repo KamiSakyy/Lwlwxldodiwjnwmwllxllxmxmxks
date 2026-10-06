@@ -22,7 +22,7 @@ public final class js {
         v = jsVarArr;
         v8.l0.t(jsVarArr);
         Companion = new is();
-        sy.d0.o(new String[]{"MERGE", "REBASE"});
+        sy.d0Shadow.o(new String[]{"MERGE", "REBASE"});
     }
 
     public js(String str, int i, String str2) {

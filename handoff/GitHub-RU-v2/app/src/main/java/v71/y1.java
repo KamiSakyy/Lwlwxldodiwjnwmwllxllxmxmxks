@@ -16,8 +16,8 @@ public final class y1 extends a81.q {
         if (cVar.q().w0(a71.d.r) instanceof v) {
             return;
         }
-        Object n = a81.b.n(hVar, null);
-        a81.b.g(hVar, n);
+        Object n = a81.bShadow.n(hVar, null);
+        a81.bShadow.g(hVar, n);
         u0(hVar, n);
     }
 
@@ -27,16 +27,16 @@ public final class y1 extends a81.q {
         Object B = b0.B(obj);
         a71.c cVar = this.u;
         a71.h q = cVar.q();
-        Object n = a81.b.n(q, null);
-        y1 K = n != a81.b.d ? b0.K(cVar, q, n) : null;
+        Object n = a81.bShadow.n(q, null);
+        y1 K = n != a81.bShadow.d ? b0.K(cVar, q, n) : null;
         try {
             cVar.i(B);
             if (K == null || K.s0()) {
-                a81.b.g(q, n);
+                a81.bShadow.g(q, n);
             }
         } catch (Throwable th) {
             if (K == null || K.s0()) {
-                a81.b.g(q, n);
+                a81.bShadow.g(q, n);
             }
             throw th;
         }
@@ -57,7 +57,7 @@ public final class y1 extends a81.q {
         if (this.threadLocalIsSet) {
             w61.k kVar = (w61.k) this.v.get();
             if (kVar != null) {
-                a81.b.g((a71.h) kVar.r, kVar.s);
+                a81.bShadow.g((a71.h) kVar.r, kVar.s);
             }
             this.v.remove();
         }

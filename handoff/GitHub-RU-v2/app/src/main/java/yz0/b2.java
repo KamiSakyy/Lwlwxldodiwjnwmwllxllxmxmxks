@@ -87,7 +87,7 @@ public final class b2 implements f {
         sb.append(", id=");
         f1.e.x(sb, this.t, ", name=", this.u, ", isBot=");
         com.github.rudroid.m0.A(sb, this.v, ", isCopilot=", this.w, ", isAgent=");
-        return jo.f4.s(sb, this.x, ")");
+        return jo.f4Shadow.s(sb, this.x, ")");
     }
 
     @Override // yz0.f

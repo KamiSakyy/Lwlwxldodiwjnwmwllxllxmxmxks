@@ -11,7 +11,7 @@ public final class CopilotNegativeFeedbackBottomSheet extends Hilt_CopilotNegati
 
     static {
         r71.e pVar = new k71.p(CopilotNegativeFeedbackBottomSheet.class, "messageId", "getMessageId()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         T0 = new r71.e[]{pVar};
         Companion = new a();
     }

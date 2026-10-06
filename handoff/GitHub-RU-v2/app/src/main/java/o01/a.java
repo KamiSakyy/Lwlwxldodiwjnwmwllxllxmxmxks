@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 
@@ -95,7 +95,7 @@ public final class a {
     }
 
     public final int hashCode() {
-        int i = h1.i(i.e(i.e(i.e(m0.a(this.e, f4.b(this.d, h1.i(h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), 31), 31, this.f), 31, this.g), 31, this.h), this.i, 31);
+        int i = h1.i(i.e(i.e(i.e(m0.a(this.e, f4Shadow.b(this.d, h1.i(h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), 31), 31, this.f), 31, this.g), 31, this.h), this.i, 31);
         String str = this.j;
         int hashCode = (i + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.k;
@@ -124,6 +124,6 @@ public final class a {
         o.append(", reactions=");
         o.append(this.n);
         o.append(", viewerCanReact=");
-        return f4.s(o, this.o, ")");
+        return f4Shadow.s(o, this.o, ")");
     }
 }

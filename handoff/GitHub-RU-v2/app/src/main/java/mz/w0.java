@@ -2,23 +2,23 @@ package mz;
 
 import java.util.List;
 import lz.b1;
-import lz.f1;
+import lz.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w0 implements aa.a {
     public static final w0 a = new w0();
-    public static final List b = sy.d0.o("viewer", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("viewer", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        f1 f1Var = null;
+        f1Shadow f1Var = null;
         String str = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                f1Var = (f1) aa.c.c(a1.a, false).a(eVar, wVar);
+                f1Var = (f1Shadow) aa.c.c(a1.a, false).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {

@@ -5,7 +5,7 @@ import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -38,14 +38,14 @@ public final class h extends k1 {
         fl.e eVar2 = fl.f.Companion;
         b bVar = new b(null, com.github.rudroid.twofactor.a.r, "");
         eVar2.getClass();
-        y1 c = n1.c(fl.e.b(bVar));
+        y1 c = n1Shadow.c(fl.e.b(bVar));
         this.x = c;
         f11.b bVar2 = (f11.b) a1Var.a("key_auth_request");
         String str = (String) a1Var.a("key_auth_user");
         oa.j h = str != null ? mVar.h(str) : null;
         fn.a aVar = (bVar2 == null || h == null) ? null : new fn.a(h, bVar2);
         if (aVar == null) {
-            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new p(this, null), 3);
+            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p(this, null), 3);
         } else {
             c.k((Object) null, fl.e.c(new b(aVar, com.github.rudroid.twofactor.a.s, "")));
         }
@@ -67,7 +67,7 @@ public final class h extends k1 {
                 if (!z || G == null) {
                     q1 q1Var = this.y;
                     if (q1Var == null || !q1Var.f()) {
-                        this.y = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new o(this, aVar, new b(aVar, com.github.rudroid.twofactor.a.t, ""), null), 3);
+                        this.y = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new o(this, aVar, new b(aVar, com.github.rudroid.twofactor.a.t, ""), null), 3);
                         return;
                     }
                     return;
@@ -75,7 +75,7 @@ public final class h extends k1 {
                 int intValue = G.intValue();
                 q1 q1Var2 = this.y;
                 if (q1Var2 == null || !q1Var2.f()) {
-                    this.y = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new l(this, aVar, intValue, new b(aVar, com.github.rudroid.twofactor.a.t, String.valueOf(intValue)), null), 3);
+                    this.y = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new l(this, aVar, intValue, new b(aVar, com.github.rudroid.twofactor.a.t, String.valueOf(intValue)), null), 3);
                 }
             }
         }

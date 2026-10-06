@@ -1,7 +1,7 @@
 package ko;
 
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
@@ -32,6 +32,6 @@ public final class g {
     }
 
     public final String toString() {
-        return f4.s(m0.o("PageInfo(endCursor=", this.a, ", hasNextPage=", ", hasPreviousPage=", this.b), this.c, ")");
+        return f4Shadow.s(m0.o("PageInfo(endCursor=", this.a, ", hasNextPage=", ", hasPreviousPage=", this.b), this.c, ")");
     }
 }

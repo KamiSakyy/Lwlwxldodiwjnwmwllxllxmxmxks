@@ -2,7 +2,7 @@ package com.github.service.dotcom.models.response.copilot;
 
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import k81.g;
@@ -177,7 +177,7 @@ public final /* synthetic */ class AgentTaskResponse$$serializer implements d0 {
 
     /*  JADX ERROR: JadxRuntimeException in pass: IfRegionVisitor
         jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r1v21 java.util.List, still in use, count: 2, list:
-          (r1v21 java.util.List) from 0x00fd: INVOKE (r1v21 java.util.List), (r2v7 x61.r) STATIC call: k71.k.b(java.lang.Object, java.lang.Object):boolean A[WRAPPED]
+          (r1v21 java.util.List) from 0x00fd: INVOKE (r1v21 java.util.List), (r2v7 x61.rShadow) STATIC call: k71.k.b(java.lang.Object, java.lang.Object):boolean A[WRAPPED]
           (r1v21 java.util.List) from 0x0103: PHI (r1v36 java.util.List) = (r1v21 java.util.List) binds: [B:69:0x0101] A[DONT_GENERATE, DONT_INLINE]
         	at jadx.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:162)
         	at jadx.core.utils.InsnRemover.unbindResult(InsnRemover.java:127)
@@ -202,6 +202,6 @@ public final /* synthetic */ class AgentTaskResponse$$serializer implements d0 {
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

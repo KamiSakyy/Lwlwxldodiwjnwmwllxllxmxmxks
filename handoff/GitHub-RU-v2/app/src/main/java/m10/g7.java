@@ -21,7 +21,7 @@ public final class g7 {
         u = g7VarArr;
         v = v8.l0.t(g7VarArr);
         Companion = new f7();
-        sy.d0.o("CHAT_THREAD", "PULL_REQUEST");
+        sy.d0Shadow.o("CHAT_THREAD", "PULL_REQUEST");
     }
 
     public g7(String str, int i, String str2) {

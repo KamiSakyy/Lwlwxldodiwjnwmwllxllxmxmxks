@@ -92,7 +92,7 @@ public final class EditListFragment extends Hilt_EditListFragment implements com
 
     public EditListFragment() {
         w61.h s = sy.w.s(w61.i.s, new b(new a()));
-        this.E0 = new l1(k71.x.a(u0.class), new c(s), new e(s), new d(s));
+        this.E0 = new l1(k71.xShadow.a(u0.class), new c(s), new e(s), new d(s));
         this.F0 = sy.w.t(new e0(this, 0));
     }
 

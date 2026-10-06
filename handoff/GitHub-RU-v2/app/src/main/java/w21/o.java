@@ -1,6 +1,6 @@
 package w21;
 
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.h4;
 import com.google.android.gms.tasks.DuplicateTaskCompletionException;
 import com.google.android.gms.tasks.RuntimeExecutionException;
@@ -62,7 +62,7 @@ public final class o {
         Object obj;
         synchronized (this.a) {
             try {
-                u.i("Task is not yet complete", this.c);
+                uShadow.i("Task is not yet complete", this.c);
                 if (this.d) {
                     throw new CancellationException("Task is already canceled.");
                 }
@@ -108,7 +108,7 @@ public final class o {
     }
 
     public final void l(Exception exc) {
-        u.h(exc, "Exception must not be null");
+        uShadow.h(exc, "Exception must not be null");
         synchronized (this.a) {
             p();
             this.c = true;

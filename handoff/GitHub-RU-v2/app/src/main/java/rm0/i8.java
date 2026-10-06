@@ -118,7 +118,7 @@ public final class i8 implements y71.j {
                             b30 b30Var = (b30) obj;
                             Iterable iterable = b30Var.a.a.b;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(iterable);
                             ArrayList arrayList = new ArrayList();
@@ -148,7 +148,7 @@ public final class i8 implements y71.j {
                                 Object obj4 = arrayList.get(i16);
                                 i16++;
                                 c30 c30Var2 = (c30) obj4;
-                                oj0.v3 v3Var = c30Var2.f;
+                                oj0.v3Shadow v3Var = c30Var2.f;
                                 oj0.u3 u3Var = v3Var.d;
                                 arrayList2.add(new yz0.t7(v3Var.a, v3Var.b, u3Var.c, b41.b.O(u3Var.d), new wl0.j(c30Var2.g), v3Var.c));
                             }
@@ -250,7 +250,7 @@ public final class i8 implements y71.j {
                             wz wzVar = (wz) obj;
                             Iterable iterable2 = wzVar.a.c;
                             if (iterable2 == null) {
-                                iterable2 = x61.r.r;
+                                iterable2 = x61.rShadow.r;
                             }
                             ArrayList arrayList6 = new ArrayList();
                             for (Object obj9 : iterable2) {
@@ -320,7 +320,7 @@ public final class i8 implements y71.j {
                             h90 h90Var = (h90) obj;
                             Iterable iterable3 = h90Var.a.a.b;
                             if (iterable3 == null) {
-                                iterable3 = x61.r.r;
+                                iterable3 = x61.rShadow.r;
                             }
                             ArrayList S2 = x61.m.S(iterable3);
                             ArrayList arrayList8 = new ArrayList();
@@ -452,7 +452,7 @@ public final class i8 implements y71.j {
                             l50 l50Var = (l50) obj;
                             Iterable iterable4 = l50Var.a.c;
                             if (iterable4 == null) {
-                                iterable4 = x61.r.r;
+                                iterable4 = x61.rShadow.r;
                             }
                             ArrayList arrayList13 = new ArrayList();
                             for (Object obj18 : iterable4) {
@@ -522,7 +522,7 @@ public final class i8 implements y71.j {
                             d10 d10Var = (d10) obj;
                             Iterable iterable5 = d10Var.a.a.b;
                             if (iterable5 == null) {
-                                iterable5 = x61.r.r;
+                                iterable5 = x61.rShadow.r;
                             }
                             ArrayList S3 = x61.m.S(iterable5);
                             ArrayList arrayList15 = new ArrayList();
@@ -654,7 +654,7 @@ public final class i8 implements y71.j {
                             xx xxVar = (xx) obj;
                             Iterable iterable6 = xxVar.a.c;
                             if (iterable6 == null) {
-                                iterable6 = x61.r.r;
+                                iterable6 = x61.rShadow.r;
                             }
                             ArrayList arrayList20 = new ArrayList();
                             for (Object obj28 : iterable6) {
@@ -711,8 +711,8 @@ public final class i8 implements y71.j {
                 }
                 return w61.a0.a;
             case 9:
-                if (cVar instanceof wy0.m7) {
-                    m7Var = (wy0.m7) cVar;
+                if (cVar instanceof wy0.m7Shadow) {
+                    m7Var = (wy0.m7Shadow) cVar;
                     int i40 = m7Var.v;
                     if ((i40 & Integer.MIN_VALUE) != 0) {
                         m7Var.v = i40 - Integer.MIN_VALUE;
@@ -724,7 +724,7 @@ public final class i8 implements y71.j {
                             u60 u60Var = (u60) obj;
                             Iterable iterable7 = u60Var.a.a.b;
                             if (iterable7 == null) {
-                                iterable7 = x61.r.r;
+                                iterable7 = x61.rShadow.r;
                             }
                             ArrayList S4 = x61.m.S(iterable7);
                             ArrayList arrayList22 = new ArrayList();
@@ -773,7 +773,7 @@ public final class i8 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                m7Var = new wy0.m7(this, cVar);
+                m7Var = new wy0.m7Shadow(this, cVar);
                 Object obj302 = m7Var.u;
                 b71.a aVar112 = b71.a.r;
                 i10 = m7Var.v;
@@ -856,7 +856,7 @@ public final class i8 implements y71.j {
                             l30 l30Var = (l30) obj;
                             Iterable iterable8 = l30Var.a.c;
                             if (iterable8 == null) {
-                                iterable8 = x61.r.r;
+                                iterable8 = x61.rShadow.r;
                             }
                             ArrayList arrayList27 = new ArrayList();
                             for (Object obj37 : iterable8) {

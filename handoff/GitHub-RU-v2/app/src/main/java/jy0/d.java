@@ -15,7 +15,7 @@ import pz0.pd;
 import pz0.td;
 import pz0.vd;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,7 +27,7 @@ public abstract class d {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         s mVar2 = new m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);
@@ -52,14 +52,14 @@ public abstract class d {
         r b2 = l0.b(xVar2);
         hs.Companion.getClass();
         t tVar = hs.C;
-        s mVar13 = new m("taskListItemCount", b2, "completedTasksCount", rVar, no.a.s(tVar, new u0(d0.n("COMPLETE"))), rVar);
+        s mVar13 = new m("taskListItemCount", b2, "completedTasksCount", rVar, no.a.s(tVar, new u0(d0Shadow.n("COMPLETE"))), rVar);
         s mVar14 = new m("taskListItemCount", l0.b(xVar2), "totalTaskCount", rVar, no.a.s(tVar, new u0(l.r(new String[]{"COMPLETE", "INCOMPLETE"}))), rVar);
         s mVar15 = new m("baseRefName", l0.b(xVar), (String) null, rVar, rVar, rVar);
         s mVar16 = new m("headRefName", l0.b(xVar), (String) null, rVar, rVar, rVar);
         s mVar17 = new m("viewerCanReopen", l0.b(xVar3), (String) null, rVar, rVar, rVar);
         s mVar18 = new m("viewerCanUpdate", l0.b(xVar3), (String) null, rVar, rVar, rVar);
         s mVar19 = new m("viewerDidAuthor", l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = js0.a.a;
         a = l.r(new s[]{mVar, mVar2, mVar3, mVar4, mVar5, mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, mVar18, mVar19, no.a.c(list, "selections", "PullRequest", n, list), new m("viewerCanAssign", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("viewerCanLabel", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
     }

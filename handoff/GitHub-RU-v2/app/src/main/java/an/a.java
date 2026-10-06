@@ -30,7 +30,7 @@ public final class a extends c71.j implements j71.e {
                 aVar.x = obj;
                 return aVar;
             case 1:
-                a aVar2 = new a((e) this.B, this.y, this.z, this.A, cVar, 1);
+                a aVar2 = new a((eShadow) this.B, this.y, this.z, this.A, cVar, 1);
                 aVar2.x = obj;
                 return aVar2;
             case 2:
@@ -84,7 +84,7 @@ public final class a extends c71.j implements j71.e {
                 int i2 = this.w;
                 if (i2 == 0) {
                     y.j(obj);
-                    ((e) this.B).b.getClass();
+                    ((eShadow) this.B).b.getClass();
                     String a2 = m.a(this.z, this.y, this.A);
                     this.x = null;
                     this.w = 1;

@@ -6,7 +6,7 @@ import u10.ow;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hm implements aaShadow.a {
     public static final hm a = new hm();
-    public static final List b = sy.d0.o("contentHTML", "path");
+    public static final List b = sy.d0Shadow.o("contentHTML", "path");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

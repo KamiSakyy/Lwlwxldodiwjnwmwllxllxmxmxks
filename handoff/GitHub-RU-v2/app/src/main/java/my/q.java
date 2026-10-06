@@ -4,12 +4,12 @@ import aa.w;
 import java.util.List;
 import ly.b0;
 import ly.f0;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.a {
     public static final q a = new q();
-    public static final List b = d0.n("updateUserListsForItem");
+    public static final List b = d0Shadow.n("updateUserListsForItem");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

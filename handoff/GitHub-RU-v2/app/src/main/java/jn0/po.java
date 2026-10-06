@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class po implements aaShadow.w0 {
-    public static final jo Companion = new jo();
+    public static final joShadow Companion = new joShadow();
     public String r;
     public aa1.b s;
     public aa1.b t;
@@ -23,7 +23,7 @@ public final class po implements aaShadow.w0 {
         List list = kz0.z2.a;
         List list2 = kz0.z2.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

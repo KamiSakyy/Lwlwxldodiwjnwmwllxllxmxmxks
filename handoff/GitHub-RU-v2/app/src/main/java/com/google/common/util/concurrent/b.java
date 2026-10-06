@@ -25,7 +25,7 @@ import androidx.biometric.BiometricFragment;
 import androidx.compose.foundation.lazy.layout.s0;
 import androidx.compose.foundation.lazy.layout.t1;
 import androidx.fragment.app.o;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.b4;
 import com.google.android.gms.internal.measurement.m8;
 import com.google.android.gms.internal.measurement.n0;
@@ -227,11 +227,11 @@ public final class b implements Runnable {
     }
 
     private final void i() {
-        ((n4.c) this.s).r = this.t;
+        ((n4.cShadow) this.s).r = this.t;
     }
 
     private final void j() {
-        ((Application) this.s).unregisterActivityLifecycleCallbacks((n4.c) this.t);
+        ((Application) this.s).unregisterActivityLifecycleCallbacks((n4.cShadow) this.t);
     }
 
     private final void k() {
@@ -277,19 +277,19 @@ public final class b implements Runnable {
 
     private final void o() {
         if (((w21.o) this.s).d) {
-            ((k) this.t).u.n();
+            ((k) this.t).uShadow.n();
             return;
         }
         try {
-            ((k) this.t).u.m(((k) this.t).t.c((w21.o) this.s));
+            ((k) this.t).uShadow.m(((k) this.t).t.c((w21.o) this.s));
         } catch (RuntimeExecutionException e) {
             if (e.getCause() instanceof Exception) {
-                ((k) this.t).u.l((Exception) e.getCause());
+                ((k) this.t).uShadow.l((Exception) e.getCause());
             } else {
-                ((k) this.t).u.l(e);
+                ((k) this.t).uShadow.l(e);
             }
         } catch (Exception e2) {
-            ((k) this.t).u.l(e2);
+            ((k) this.t).uShadow.l(e2);
         }
     }
 
@@ -537,9 +537,9 @@ public final class b implements Runnable {
                         i2++;
                         if (i2 >= 16) {
                             g gVar = (g) this.t;
-                            if (a81.b.j(gVar.u, gVar)) {
+                            if (a81.bShadow.j(gVar.u, gVar)) {
                                 g gVar2 = (g) this.t;
-                                a81.b.i(gVar2.u, gVar2, this);
+                                a81.bShadow.i(gVar2.u, gVar2, this);
                                 return;
                             }
                         }
@@ -694,7 +694,7 @@ public final class b implements Runnable {
                 boolean z4 = sharedPreferences.getBoolean("has_been_opened", false);
                 c1Var.J = z4;
                 if (!z4) {
-                    SharedPreferences.Editor edit = c1Var.u.edit();
+                    SharedPreferences.Editor edit = c1Var.uShadow.edit();
                     edit.putBoolean("has_been_opened", true);
                     edit.apply();
                 }
@@ -776,7 +776,7 @@ public final class b implements Runnable {
                                     k0Var2.C = null;
                                     com.google.android.gms.measurement.internal.h hVar3 = o1Var9.u;
                                     o1 o1Var10 = (o1) ((s0) hVar3).s;
-                                    u.d("analytics.safelisted_events");
+                                    uShadow.d("analytics.safelisted_events");
                                     K = hVar3.K();
                                     if (K == null) {
                                     }
@@ -846,7 +846,7 @@ public final class b implements Runnable {
                             k0Var2.C = null;
                             com.google.android.gms.measurement.internal.h hVar32 = o1Var9.u;
                             o1 o1Var102 = (o1) ((s0) hVar32).s;
-                            u.d("analytics.safelisted_events");
+                            uShadow.d("analytics.safelisted_events");
                             K = hVar32.K();
                             if (K == null) {
                                 com.google.android.gms.measurement.internal.s0 s0Var9 = o1Var102.w;
@@ -1034,7 +1034,7 @@ public final class b implements Runnable {
                                                                             o1.m(s0Var13_r7);
                                                                             s0Var13_r7.F.a("IABTCF_TCString change picked up in listener.");
                                                                             g2 g2Var = t2Var3.N;
-                                                                            c21.u.g(g2Var);
+                                                                            c21.uShadow.g(g2Var);
                                                                             g2Var.b(500L);
                                                                             return;
                                                                         }
@@ -1044,7 +1044,7 @@ public final class b implements Runnable {
                                                                         o1.m(s0Var13_r7);
                                                                         s0Var13_r7.F.a("IABTCF_TCString change picked up in listener.");
                                                                         g2 g2Var2 = t2Var3.N;
-                                                                        c21.u.g(g2Var2);
+                                                                        c21.uShadow.g(g2Var2);
                                                                         g2Var2.b(500L);
                                                                     }
                                                                 }
@@ -1081,7 +1081,7 @@ public final class b implements Runnable {
                                                             boolean isEmpty = TextUtils.isEmpty(G2);
                                                             boolean isEmpty2 = TextUtils.isEmpty(string);
                                                             if (!isEmpty && !isEmpty2) {
-                                                                u.g(G2);
+                                                                uShadow.g(G2);
                                                                 if (!G2.equals(string)) {
                                                                     o1.m(s0Var5);
                                                                     q0Var4.a("Rechecking which service to use due to a GMP App Id change");
@@ -1409,7 +1409,7 @@ public final class b implements Runnable {
                 k0Var2.C = null;
                 com.google.android.gms.measurement.internal.h hVar322 = o1Var9.u;
                 o1 o1Var1022 = (o1) ((s0) hVar322).s;
-                u.d("analytics.safelisted_events");
+                uShadow.d("analytics.safelisted_events");
                 K = hVar322.K();
                 if (K == null) {
                 }
@@ -1436,7 +1436,7 @@ public final class b implements Runnable {
                 if (fVar.t.j() == null) {
                     o4Var.getClass();
                     String str12 = fVar.r;
-                    u.g(str12);
+                    uShadow.g(str12);
                     v4 Q = o4Var.Q(str12);
                     if (Q != null) {
                         o4Var.a0(fVar, Q);
@@ -1446,7 +1446,7 @@ public final class b implements Runnable {
                 }
                 o4Var.getClass();
                 String str13 = fVar.r;
-                u.g(str13);
+                uShadow.g(str13);
                 v4 Q2 = o4Var.Q(str13);
                 if (Q2 != null) {
                     o4Var.Z(fVar, Q2);
@@ -1509,7 +1509,7 @@ public final class b implements Runnable {
                 t2Var4.A();
                 b1.m mVar3 = t2Var4.v;
                 if (mVar2 != mVar3) {
-                    u.i("EventInterceptor already set.", mVar3 == null);
+                    uShadow.i("EventInterceptor already set.", mVar3 == null);
                 }
                 t2Var4.v = mVar2;
                 return;
@@ -1580,7 +1580,7 @@ public final class b implements Runnable {
                 synchronized (((w21.l) this.t).t) {
                     w21.d dVar2 = (w21.d) ((w21.l) this.t).u;
                     Exception g3 = ((w21.o) this.s).g();
-                    u.g(g3);
+                    uShadow.g(g3);
                     dVar2.h(g3);
                 }
                 return;

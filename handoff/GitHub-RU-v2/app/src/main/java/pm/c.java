@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import k71.k;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
@@ -35,7 +35,7 @@ public final class c {
         while (it.hasNext()) {
             arrayList.add(new b((f) it.next(), "", e, f));
         }
-        c cVar = new c(r.r, e, f, false);
+        c cVar = new c(rShadow.r, e, f, false);
         g = cVar;
         h = a(cVar, arrayList, null, null, false, 14);
     }

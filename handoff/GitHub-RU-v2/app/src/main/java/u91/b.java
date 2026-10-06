@@ -2,7 +2,7 @@ package u91;
 
 import b21.v;
 import c21.h0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import t91.d;
 
@@ -21,7 +21,7 @@ public abstract class b {
     }
 
     public final boolean a(int i) {
-        f4.z("action", i);
+        f4Shadow.z("action", i);
         if (i == 3) {
             i = 1;
         }

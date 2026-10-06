@@ -49,7 +49,7 @@ public abstract class j implements aa.a {
         bVar.b(fVar, wVar, eVar.b);
         fVar.z0("content");
         aa.c.b(aa.c.c(f.a, true)).b(fVar, wVar, eVar.c);
-        List list = f1.a;
+        List list = f1Shadow.a;
         f1.d(fVar, wVar, eVar.d);
     }
 }

@@ -7,7 +7,7 @@ import jn0.wd0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ny implements aaShadow.a {
     public static final ny a = new ny();
-    public static final List b = sy.d0.n("updateDashboardSearchShortcut");
+    public static final List b = sy.d0Shadow.n("updateDashboardSearchShortcut");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

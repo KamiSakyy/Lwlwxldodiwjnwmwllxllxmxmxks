@@ -10,7 +10,7 @@ import mg0.f0;
 import mg0.g0;
 import ri0.t1;
 import ri0.u1;
-import x61.r;
+import x61.rShadow;
 import yz0.d2;
 import yz0.e2;
 import yz0.f2;
@@ -95,7 +95,7 @@ public abstract class c {
         String str = lVar.b;
         Iterable iterable = lVar.f.a;
         if (iterable == null) {
-            iterable = r.r;
+            iterable = rShadow.r;
         }
         ArrayList S = x61.m.S(iterable);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));

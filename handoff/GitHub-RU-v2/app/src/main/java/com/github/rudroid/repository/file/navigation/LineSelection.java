@@ -3,9 +3,9 @@ package com.github.rudroid.repository.file.navigation;
 import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -65,7 +65,7 @@ public final class LineSelection implements Parcelable {
     }
 
     public final String toString() {
-        return f4.h(this.f19431r, this.f19432s, "LineSelection(start=", ", end=", ")");
+        return f4Shadow.h(this.f19431r, this.f19432s, "LineSelection(start=", ", end=", ")");
     }
 
     @Override // android.os.Parcelable
@@ -77,7 +77,7 @@ public final class LineSelection implements Parcelable {
 
     public /* synthetic */ LineSelection(int i, int i10, int i11) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, LineSelection$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, LineSelection$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f19431r = i10;

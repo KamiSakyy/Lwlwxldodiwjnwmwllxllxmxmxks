@@ -15,7 +15,7 @@ import pz0.td;
 import pz0.vd;
 import pz0.xd;
 import pz0.xs;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 import yt0.f;
@@ -28,7 +28,7 @@ public abstract class b {
         td.Companion.getClass();
         x xVar = td.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar2 = xd.a;
@@ -40,7 +40,7 @@ public abstract class b {
         q0 q0Var = hs.N;
         List r2 = l.r(new m[]{mVar2, new m("nodes", l0.a(q0Var), (String) null, rVar, rVar, r)});
         s mVar3 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = f.a;
         List r3 = l.r(new m[]{new m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("nodes", l0.a(q0Var), (String) null, rVar, rVar, l.r(new s[]{mVar3, no.a.c(list, "selections", "PullRequest", n, list), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)}))});
         xs.Companion.getClass();

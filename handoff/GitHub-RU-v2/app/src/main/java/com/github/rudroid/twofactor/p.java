@@ -2,7 +2,7 @@ package com.github.rudroid.twofactor;
 
 import com.github.service.models.ApiFailure;
 import java.util.Map;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 @c71.e(c = "com.github.rudroid.twofactor.TwoFactorApproveDenyViewModel$fetchAuthRequest$1", f = "TwoFactorApproveDenyViewModel.kt", l = {167, 167}, m = "invokeSuspend", v = 1)
@@ -81,6 +81,6 @@ final class p extends c71.j implements j71.e {
             sy.y.j(obj);
         }
         this.v = 2;
-        obj = n1.v((y71.i) obj, this);
+        obj = n1Shadow.v((y71.i) obj, this);
     }
 }

@@ -39,7 +39,7 @@ public final class h2 {
         sb.append(", submittedAt=");
         sb.append(this.b);
         sb.append(", didCommitsChangeSinceLatestReview=");
-        return jo.f4.s(sb, this.c, ")");
+        return jo.f4Shadow.s(sb, this.c, ")");
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции

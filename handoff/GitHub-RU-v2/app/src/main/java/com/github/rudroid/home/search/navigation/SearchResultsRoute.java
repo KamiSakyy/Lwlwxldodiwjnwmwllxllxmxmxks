@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import hz.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -50,7 +50,7 @@ public final class SearchResultsRoute implements Parcelable {
 
     public /* synthetic */ SearchResultsRoute(int i, SearchViewModelType searchViewModelType, String str, String str2) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, SearchResultsRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, SearchResultsRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f15055r = searchViewModelType;

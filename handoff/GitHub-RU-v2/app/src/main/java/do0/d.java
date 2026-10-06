@@ -7,7 +7,7 @@ import kc0.yb0;
 import q81.u;
 import u10.y90;
 import v71.v;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements kn.a, yf0, mi0, yb0, y90 {
@@ -67,24 +67,24 @@ public final class d implements kn.a, yf0, mi0, yb0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "checkRunId");
-                bz0.t tVar = new bz0.t(in.r.h(this.s.d(new yn0.h(str, i))), 2);
+                bz0.t tVar = new bz0.t(in.rShadow.h(this.s.d(new yn0.h(str, i))), 2);
                 v vVar = this.v;
-                return n1.y(new cn.d(new c00.g(n1.y(tVar, vVar), this.u.b(str, i), new g0(this, (a71.c) null, 1), 27), 1), vVar);
+                return n1Shadow.y(new cn.d(new c00.g(n1Shadow.y(tVar, vVar), this.u.b(str, i), new g0(this, (a71.c) null, 1), 27), 1), vVar);
             case 1:
                 k71.k.g(str, "checkRunId");
-                bz0.t tVar2 = new bz0.t(in.r.h(this.s.d(new yo.h(str, i))), 6);
+                bz0.t tVar2 = new bz0.t(in.rShadow.h(this.s.d(new yo.h(str, i))), 6);
                 v vVar2 = this.v;
-                return n1.y(new cn.d(new c00.g(n1.y(tVar2, vVar2), this.u.b(str, i), new g0(this, (a71.c) null, 2), 27), 2), vVar2);
+                return n1Shadow.y(new cn.d(new c00.g(n1Shadow.y(tVar2, vVar2), this.u.b(str, i), new g0(this, (a71.c) null, 2), 27), 2), vVar2);
             case 2:
                 k71.k.g(str, "checkRunId");
-                bz0.t tVar3 = new bz0.t(in.r.h(this.s.d(new zc0.h(str, i))), 10);
+                bz0.t tVar3 = new bz0.t(in.rShadow.h(this.s.d(new zc0.h(str, i))), 10);
                 v vVar3 = this.v;
-                return n1.y(new cn.d(new c00.g(n1.y(tVar3, vVar3), this.u.b(str, i), new g0(this, (a71.c) null, 3), 27), 3), vVar3);
+                return n1Shadow.y(new cn.d(new c00.g(n1Shadow.y(tVar3, vVar3), this.u.b(str, i), new g0(this, (a71.c) null, 3), 27), 3), vVar3);
             default:
                 k71.k.g(str, "checkRunId");
-                bz0.t tVar4 = new bz0.t(in.r.h(this.s.d(new j20.h(str, i))), 17);
+                bz0.t tVar4 = new bz0.t(in.rShadow.h(this.s.d(new j20.h(str, i))), 17);
                 v vVar4 = this.v;
-                return n1.y(new cn.d(new c00.g(n1.y(tVar4, vVar4), this.u.b(str, i), new g0(this, (a71.c) null, 6), 27), 4), vVar4);
+                return n1Shadow.y(new cn.d(new c00.g(n1Shadow.y(tVar4, vVar4), this.u.b(str, i), new g0(this, (a71.c) null, 6), 27), 4), vVar4);
         }
     }
 

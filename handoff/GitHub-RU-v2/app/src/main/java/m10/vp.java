@@ -136,7 +136,7 @@ public abstract class vp {
     public static final a81.t z1 = new a81.t(1, "input", false);
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         A1 = new aa.q0("Mutation", rVar, rVar);
     }
 }

@@ -2,7 +2,7 @@ package yg;
 
 import androidx.compose.foundation.layout.p2;
 import androidx.compose.runtime.b2;
-import d2.a0;
+import d2.a0Shadow;
 import w2.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */

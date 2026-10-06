@@ -106,7 +106,7 @@ public final class ListDetailFragment extends Hilt_ListDetailFragment implements
 
     public ListDetailFragment() {
         w61.h s = sy.w.s(w61.i.s, new b(new a()));
-        this.G0 = new l1(k71.x.a(s0.class), new c(s), new e(s), new d(s));
+        this.G0 = new l1(k71.xShadow.a(s0.class), new c(s), new e(s), new d(s));
         this.I0 = sy.w.t(new l(this, 1));
     }
 

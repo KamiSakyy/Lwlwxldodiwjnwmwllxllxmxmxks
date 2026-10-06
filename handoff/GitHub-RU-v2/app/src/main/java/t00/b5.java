@@ -82,7 +82,7 @@ public final class b5 implements y71.j {
                     kf0 kf0Var = (jf0Var == null || (hf0Var3 = jf0Var.b) == null) ? null : hf0Var3.c;
                     df0 df0Var = (jf0Var == null || (hf0Var2 = jf0Var.b) == null) ? null : hf0Var2.d;
                     List<ff0> list = kf0Var != null ? kf0Var.a : null;
-                    List<ef0> list2 = x61.r.r;
+                    List<ef0> list2 = x61.rShadow.r;
                     if (list == null) {
                         list = list2;
                     }
@@ -328,9 +328,9 @@ public final class b5 implements y71.j {
                 i = h6Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    x61.r<ws> rVar = ((us) obj).a.a.a;
+                    x61.rShadow<ws> rVar = ((us) obj).a.a.a;
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (ws wsVar : rVar) {
@@ -521,7 +521,7 @@ public final class b5 implements y71.j {
                 i = l6Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    j00.r0 r0Var = ((j00.p0) obj).a;
+                    j00.r0Shadow r0Var = ((j00.p0) obj).a;
                     Boolean valueOf = Boolean.valueOf((r0Var == null || (s0Var = r0Var.b) == null || (q0Var = s0Var.a) == null) ? false : q0Var.a);
                     l6Var.v = 1;
                     if (this.s.c(valueOf, l6Var) == aVar) {
@@ -601,7 +601,7 @@ public final class b5 implements y71.j {
         rz.v vVar;
         g5 g5Var;
         int i4;
-        rz.y0 y0Var;
+        rz.y0Shadow y0Var;
         j5 j5Var;
         int i5;
         k5 k5Var;
@@ -700,7 +700,7 @@ public final class b5 implements y71.j {
                         if (i != 0) {
                             sy.y.j(obj2);
                             rz.p0 p0Var = ((rz.l0) obj).a;
-                            Object j = in.r.j((p0Var == null || (m0Var = p0Var.b.c) == null) ? null : m0Var.a, "Invalid owner or repository name", u1.A);
+                            Object j = in.rShadow.j((p0Var == null || (m0Var = p0Var.b.c) == null) ? null : m0Var.a, "Invalid owner or repository name", u1.A);
                             a5Var.v = 1;
                             if (this.s.c(j, a5Var) == aVar5) {
                                 return aVar5;
@@ -766,7 +766,7 @@ public final class b5 implements y71.j {
                         if (i3 != 0) {
                             sy.y.j(obj4);
                             rz.xShadow xVar = ((rz.u) obj).a;
-                            Object j2 = in.r.j((xVar == null || (vVar = xVar.c) == null) ? null : vVar.b, "Invalid owner id", u1.B);
+                            Object j2 = in.rShadow.j((xVar == null || (vVar = xVar.c) == null) ? null : vVar.b, "Invalid owner id", u1.B);
                             f5Var.v = 1;
                             if (this.s.c(j2, f5Var) == aVar7) {
                                 return aVar7;
@@ -865,7 +865,7 @@ public final class b5 implements y71.j {
                         if (i6 != 0) {
                             sy.y.j(obj7);
                             rz.u0 u0Var = ((rz.s0) obj).a;
-                            Object j3 = in.r.j(u0Var != null ? u0Var.b : null, "Invalid owner or repository name", u1.C);
+                            Object j3 = in.rShadow.j(u0Var != null ? u0Var.b : null, "Invalid owner or repository name", u1.C);
                             k5Var.v = 1;
                             if (this.s.c(j3, k5Var) == aVar10) {
                                 return aVar10;
@@ -1137,7 +1137,7 @@ public final class b5 implements y71.j {
                             jo.w4 w4Var = (q4Var == null || (s4Var2 = q4Var.c) == null || (list2 = s4Var2.b.a) == null || (o4Var = (jo.o4) x61.m.f0(list2)) == null) ? null : o4Var.a.b;
                             jo.q4 q4Var2 = m4Var.a;
                             ArrayList<jo.n4> S = (q4Var2 == null || (s4Var = q4Var2.c) == null || (list = s4Var.a.b) == null) ? null : x61.m.S(list);
-                            ArrayList<jo.p4> arrayList2 = x61.r.r;
+                            ArrayList<jo.p4> arrayList2 = x61.rShadow.r;
                             if (S == null) {
                                 S = arrayList2;
                             }
@@ -1358,7 +1358,7 @@ public final class b5 implements y71.j {
                                     arrayList = arrayList6;
                                 }
                                 if (arrayList == null) {
-                                    arrayList = x61.r.r;
+                                    arrayList = x61.rShadow.r;
                                 }
                                 ey.h hVar = fVar2.b;
                                 switch (hVar.a.ordinal()) {

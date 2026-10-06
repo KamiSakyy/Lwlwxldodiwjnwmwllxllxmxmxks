@@ -7,7 +7,7 @@ public abstract class iq {
     public static final hq Companion = new hq();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         x3.Companion.getClass();
         aa.j0 j0Var = x3.f;
         v6.Companion.getClass();

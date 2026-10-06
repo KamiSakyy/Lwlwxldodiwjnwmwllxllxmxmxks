@@ -127,7 +127,7 @@ public class j extends o implements Iterable {
         aa1.b.J(str, "tagName");
         aa1.b.J(str2, "namespace");
         g x2 = x();
-        f0 f0Var = x2 != null ? x2.B : new f0(new da1.b());
+        f0 f0Var = x2 != null ? x2.B : new f0(new da1.bShadow());
         i0 a = f0Var.a();
         e0 e0Var = f0Var.t;
         a.getClass();

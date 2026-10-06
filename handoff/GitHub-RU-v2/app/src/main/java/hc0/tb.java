@@ -31,7 +31,7 @@ public abstract class tb {
     public static final aa.q0 x;
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         v0.Companion.getClass();
         aa.j0 j0Var = v0.e;
         b3.Companion.getClass();

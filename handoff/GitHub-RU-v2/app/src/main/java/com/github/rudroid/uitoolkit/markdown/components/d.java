@@ -1,6 +1,6 @@
 package com.github.rudroid.uitoolkit.markdown.components;
 
-import a0.d2;
+import a0.d2Shadow;
 import androidx.compose.foundation.layout.c0;
 import androidx.compose.foundation.layout.e0;
 import androidx.compose.foundation.layout.j2;
@@ -16,7 +16,7 @@ import com.github.rudroid.m0;
 import com.github.rudroid.starredreposandlists.u0;
 import com.github.rudroid.uitoolkit.w0;
 import com.google.android.gms.internal.measurement.i4;
-import d2.p0;
+import d2Shadow.p0;
 import f1.e8;
 import f1.o5;
 import f1.ub;
@@ -24,7 +24,7 @@ import g3.q0;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
@@ -69,16 +69,16 @@ public final class d {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar2, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar2, eVar4, c);
             float f = ih.a.n;
             float f2 = ih.a.l;
@@ -151,7 +151,7 @@ public final class d {
         List r;
         v2.d dVar;
         j71.e eVar;
-        v2.e eVar2;
+        v2.eShadow eVar2;
         j71.e eVar3;
         j71.e eVar4;
         boolean z;
@@ -233,7 +233,7 @@ public final class d {
             }
             d3.f fVar = new d3.f(p0, (j71.a) N4);
             if (isEmpty) {
-                r = d0.n(fVar);
+                r = d0Shadow.n(fVar);
                 sVar2.q(false);
             } else {
                 if (booleanValue) {
@@ -277,7 +277,7 @@ public final class d {
                 N7 = new com.github.rudroid.repositories.repositoryownerrepositories.d(12, r, str3);
                 sVar2.n0(N7);
             }
-            w1.r f6 = f0.o.f(a2.i.b(d3.q.b(rVar, true, (j71.c) N7), ih.d.e(sVar2).d), j, d2.a0.b);
+            w1.r f6 = f0.o.f(a2.i.b(d3.q.b(rVar, true, (j71.c) N7), ih.d.e(sVar2).d), j, d2Shadow.a0.b);
             f0.v a = f0.o.a(0.0f, ih.d.a(sVar2).F0);
             w1.r h2 = f0.o.h(f6, a.a, a.b, ih.d.e(sVar2).d);
             w1.j jVar = w1.c.r;
@@ -298,7 +298,7 @@ public final class d {
             j71.e eVar6 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar6, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar7 = v2.g.g;
+            v2.eShadow eVar7 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar7);
             v2.d dVar3 = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar3);
@@ -360,7 +360,7 @@ public final class d {
                 eVar4 = eVar8;
                 dVar = dVar3;
                 eVar2 = eVar7;
-                w0.a(d3.q.a(z3, (j71.c) N8), null, new com.github.rudroid.uitoolkit.p2(charSequence2.toString(), null, null, null, null, new d2.t(ih.d.a(sVar2).j0), new d2.t(ih.d.a(sVar2).l0), ih.d.f(sVar2).r, 30), sVar2, 0, 2);
+                w0.a(d3.q.a(z3, (j71.c) N8), null, new com.github.rudroid.uitoolkit.p2(charSequence2.toString(), null, null, null, null, new d2Shadow.t(ih.d.a(sVar2).j0), new d2Shadow.t(ih.d.a(sVar2).l0), ih.d.f(sVar2).r, 30), sVar2, 0, 2);
                 z = false;
             }
             sVar2.q(z);
@@ -376,7 +376,7 @@ public final class d {
                 sVar2.n0(N9);
             }
             j71.e eVar9 = eVar4;
-            v2.e eVar10 = eVar2;
+            v2.eShadow eVar10 = eVar2;
             e8.h((j71.a) N9, o, false, (o5) null, (p0) null, a.a, sVar, 1572912, 60);
             sVar2 = sVar;
             sVar2.q(true);
@@ -415,7 +415,7 @@ public final class d {
         }
         b2 t = sVar2.t();
         if (t != null) {
-            t.d = new d2(rVar, str, aVar, cVar, list, i, 8);
+            t.d = new d2Shadow(rVar, str, aVar, cVar, list, i, 8);
         }
     }
     public Object W(Object p1) { return null; }

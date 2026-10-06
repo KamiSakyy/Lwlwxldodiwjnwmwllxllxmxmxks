@@ -70,9 +70,9 @@ import yz0.l4;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 implements y71.j {
     public final /* synthetic */ int r;
-    public final /* synthetic */ y71.j s;
+    public final /* synthetic */ y71.jShadow s;
 
-    public /* synthetic */ k0(y71.j jVar, int i) {
+    public /* synthetic */ k0(y71.jShadow jVar, int i) {
         this.r = i;
         this.s = jVar;
     }
@@ -80,7 +80,7 @@ public final class k0 implements y71.j {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Removed duplicated region for block: B:15:0x0030  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
-    /* JADX WARN: Type inference failed for: r4v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r4v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r4v1, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r4v2, types: [java.util.ArrayList] */
     /*
@@ -113,7 +113,7 @@ public final class k0 implements y71.j {
                                 }
                             }
                         } else {
-                            r4 = x61.r.r;
+                            r4 = x61.rShadow.r;
                         }
                         List<hf0> list2 = if0Var.c;
                         ArrayList arrayList = new ArrayList(x61.n.F(list2, 10));
@@ -205,7 +205,7 @@ public final class k0 implements y71.j {
     /* JADX WARN: Removed duplicated region for block: B:15:0x0030  */
     /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
     /* JADX WARN: Type inference failed for: r4v8, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r8v2, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r8v2, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r8v3, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r8v4, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r8v5, types: [java.util.List] */
@@ -215,7 +215,7 @@ public final class k0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     private final Object d(a71.c cVar, Object obj) {
-        c00.j jVar;
+        c00.jShadow jVar;
         int i;
         f00.m0 m0Var;
         f00.g0 g0Var;
@@ -230,7 +230,7 @@ public final class k0 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     d00.n nVar = ((d00.m) obj).a;
-                    java.util.List r8 = (java.util.List) (x61.r.r);
+                    java.util.List r8 = (java.util.List) (x61.rShadow.r);
                     l01.w wVar = null;
                     if (nVar != null && (g0Var = nVar.c) != null) {
                         List<f00.e0> list = g0Var.c.a;
@@ -308,12 +308,12 @@ public final class k0 implements y71.j {
                     d00.q qVar = (d00.q) obj;
                     k71.k.g(qVar, "<this>");
                     d00.v vVar = qVar.a;
-                    d00.u uVar = (d00.u) in.r.j((vVar == null || (tVar = vVar.c) == null) ? null : tVar.a, "Project is null", new com.github.rudroid.utilities.ui.emojipicker.e(21));
+                    d00.u uVar = (d00.u) in.rShadow.j((vVar == null || (tVar = vVar.c) == null) ? null : tVar.a, "Project is null", new com.github.rudroid.utilities.ui.emojipicker.e(21));
                     d00.r rVar = uVar.b;
-                    l01.l0 l0Var = (l01.l0) in.r.j(rVar != null ? rVar.c : null, "Default view is null", new com.github.rudroid.utilities.ui.emojipicker.e(22));
+                    l01.l0 l0Var = (l01.l0) in.rShadow.j(rVar != null ? rVar.c : null, "Default view is null", new com.github.rudroid.utilities.ui.emojipicker.e(22));
                     Iterable<d00.s> iterable = uVar.c.a;
                     if (iterable == null) {
-                        iterable = x61.r.r;
+                        iterable = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (d00.s sVar : iterable) {
@@ -462,7 +462,7 @@ public final class k0 implements y71.j {
                 i = pVar.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    cn.h hVar = ((cn.i) obj).b;
+                    cn.hShadow hVar = ((cn.i) obj).b;
                     cn.l lVar = new cn.l(hVar.a, (List) hVar.b);
                     pVar.v = 1;
                     if (this.s.c(lVar, pVar) == aVar) {
@@ -580,10 +580,10 @@ public final class k0 implements y71.j {
     /* JADX WARN: Removed duplicated region for block: B:683:0x0a8c  */
     /* JADX WARN: Removed duplicated region for block: B:78:0x0116  */
     /* JADX WARN: Removed duplicated region for block: B:84:0x0124  */
-    /* JADX WARN: Type inference failed for: r6v4, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r6v4, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r6v5, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r6v6, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r6v7, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r6v7, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r6v8, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r6v9, types: [java.util.ArrayList] */
     /*
@@ -616,7 +616,7 @@ public final class k0 implements y71.j {
         List<c10.h> list;
         c10.i iVar;
         c10.g gVar;
-        c10.j jVar;
+        c10.jShadow jVar;
         bc0.a aVar3;
         int i8;
         Object obj3;
@@ -625,7 +625,7 @@ public final class k0 implements y71.j {
         List<cc0.h> list2;
         cc0.i iVar2;
         cc0.g gVar2;
-        cc0.j jVar2;
+        cc0.jShadow jVar2;
         bz0.d dVar2;
         int i9;
         w61.k kVar3;
@@ -644,7 +644,7 @@ public final class k0 implements y71.j {
         int i14;
         w61.k kVar6;
         kw kwVar;
-        bz0.j jVar3;
+        bz0.jShadow jVar3;
         int i15;
         b2 b2Var;
         bz0.k kVar7;
@@ -714,7 +714,7 @@ public final class k0 implements y71.j {
                             d7 d7Var = ((z6) obj).a;
                             List list3 = (d7Var == null || (y6Var = d7Var.b) == null || (x6Var = y6Var.b) == null || (a7Var = x6Var.b) == null || (c7Var = a7Var.a) == null) ? null : c7Var.b;
                             if (list3 == null) {
-                                list3 = x61.r.r;
+                                list3 = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(list3);
                             ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -828,7 +828,7 @@ public final class k0 implements y71.j {
                             sy.y.j(obj9);
                             Iterable<ox0.v0> iterable = ((ox0.t0) obj).a.a.a;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList arrayList2 = new ArrayList();
                             for (ox0.v0 v0Var : iterable) {
@@ -882,7 +882,7 @@ public final class k0 implements y71.j {
                             int i35 = g1Var.a.a;
                             Iterable<ox0.e1> iterable2 = g1Var.b.a;
                             if (iterable2 == null) {
-                                iterable2 = x61.r.r;
+                                iterable2 = x61.rShadow.r;
                             }
                             ArrayList arrayList3 = new ArrayList();
                             for (ox0.e1 e1Var : iterable2) {
@@ -947,7 +947,7 @@ public final class k0 implements y71.j {
                                     String str5 = aVar12.a;
                                     c10.f fVar3 = aVar12.b;
                                     if (fVar3 == null || (list = fVar3.a) == null) {
-                                        r6 = x61.r.r;
+                                        r6 = x61.rShadow.r;
                                     } else {
                                         r6 = new ArrayList();
                                         for (c10.h hVar3 : list) {
@@ -1016,7 +1016,7 @@ public final class k0 implements y71.j {
                                     String str9 = aVar14.a;
                                     cc0.f fVar4 = aVar14.b;
                                     if (fVar4 == null || (list2 = fVar4.a) == null) {
-                                        r62 = x61.r.r;
+                                        r62 = x61.rShadow.r;
                                     } else {
                                         r62 = new ArrayList();
                                         for (cc0.h hVar4 : list2) {
@@ -1073,7 +1073,7 @@ public final class k0 implements y71.j {
                                 vu vuVar = zuVar.a;
                                 Iterable iterable3 = vuVar.b;
                                 if (iterable3 == null) {
-                                    iterable3 = x61.r.r;
+                                    iterable3 = x61.rShadow.r;
                                 }
                                 ArrayList S2 = x61.m.S(iterable3);
                                 ArrayList arrayList4 = new ArrayList(x61.n.F(S2, 10));
@@ -1170,7 +1170,7 @@ public final class k0 implements y71.j {
                                 mg mgVar = rgVar.b;
                                 Iterable iterable4 = mgVar.b;
                                 if (iterable4 == null) {
-                                    iterable4 = x61.r.r;
+                                    iterable4 = x61.rShadow.r;
                                 }
                                 ArrayList S3 = x61.m.S(iterable4);
                                 ArrayList arrayList6 = new ArrayList(x61.n.F(S3, 10));
@@ -1224,7 +1224,7 @@ public final class k0 implements y71.j {
                                 ng ngVar = rgVar2.a;
                                 Iterable iterable5 = ngVar.b;
                                 if (iterable5 == null) {
-                                    iterable5 = x61.r.r;
+                                    iterable5 = x61.rShadow.r;
                                 }
                                 ArrayList S4 = x61.m.S(iterable5);
                                 ArrayList arrayList7 = new ArrayList(x61.n.F(S4, 10));
@@ -1278,7 +1278,7 @@ public final class k0 implements y71.j {
                                 mw mwVar = kwVar.a;
                                 Iterable iterable6 = mwVar.b;
                                 if (iterable6 == null) {
-                                    iterable6 = x61.r.r;
+                                    iterable6 = x61.rShadow.r;
                                 }
                                 ArrayList S5 = x61.m.S(iterable6);
                                 ArrayList arrayList8 = new ArrayList(x61.n.F(S5, 10));
@@ -1443,7 +1443,7 @@ public final class k0 implements y71.j {
                             e30 e30Var = (e30) obj;
                             Iterable<f30> iterable7 = e30Var.a.c;
                             if (iterable7 == null) {
-                                iterable7 = x61.r.r;
+                                iterable7 = x61.rShadow.r;
                             }
                             ArrayList arrayList13 = new ArrayList();
                             for (f30 f30Var : iterable7) {
@@ -1564,7 +1564,7 @@ public final class k0 implements y71.j {
                                 uw uwVar = swVar.a;
                                 Iterable iterable8 = uwVar.b;
                                 if (iterable8 == null) {
-                                    iterable8 = x61.r.r;
+                                    iterable8 = x61.rShadow.r;
                                 }
                                 ArrayList S6 = x61.m.S(iterable8);
                                 ArrayList arrayList15 = new ArrayList(x61.n.F(S6, 10));
@@ -1717,7 +1717,7 @@ public final class k0 implements y71.j {
         }
     }
 
-    public k0(y71.j jVar, o0 o0Var) {
+    public k0(y71.jShadow jVar, o0 o0Var) {
         this.r = 0;
         this.s = jVar;
     }

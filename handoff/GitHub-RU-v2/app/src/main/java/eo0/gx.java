@@ -6,7 +6,7 @@ import jn0.ac0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gx implements aaShadow.a {
     public static final gx a = new gx();
-    public static final List b = sy.d0.n("viewerCanPush");
+    public static final List b = sy.d0Shadow.n("viewerCanPush");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.concurrent.CancellationException;
 import kotlinx.coroutines.flow.internal.AbortFlowException;
-import rm0.m7;
+import rm0.m7Shadow;
 import rm0.r3;
 import t00.f8;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class n1 {
+public abstract class n1Shadow {
     public static final a81.t a = new a81.t(0, "NO_VALUE", false);
     public static final a81.t b = new a81.t(0, "NONE", false);
     public static final a81.t c = new a81.t(0, "PENDING", false);
@@ -27,7 +27,7 @@ public abstract class n1 {
     public static final e C(i... iVarArr) {
         int i = n0.a;
         k71.k.g(iVarArr, "<this>");
-        return new e((Iterable) (iVarArr.length == 0 ? x61.r.r : new i81.h(2, iVarArr)), (a71.h) a71.i.r, -2, x71.a.r);
+        return new e((Iterable) (iVarArr.length == 0 ? x61.rShadow.r : new i81.h(2, iVarArr)), (a71.h) a71.i.r, -2, x71.a.r);
     }
 
     public static final y D(f8 f8Var, j71.e eVar) {
@@ -178,7 +178,7 @@ public abstract class n1 {
     public static final i1 G(i iVar, v71.z zVar, r1 r1Var, Object obj) {
         y11.l n = n(iVar, 1);
         y1 c2 = c(obj);
-        v71.b0.y(zVar, (a71.h) n.d, r1Var.equals(q1.a) ? v71.a0.r : v71.a0.u, new m7.x(r1Var, (i) n.b, c2, obj, (a71.c) null));
+        v71.b0.y(zVar, (a71.h) n.d, r1Var.equals(q1.a) ? v71.a0Shadow.r : v71.a0Shadow.u, new m7.x(r1Var, (i) n.b, c2, obj, (a71.c) null));
         return new i1(c2);
     }
 
@@ -207,7 +207,7 @@ public abstract class n1 {
                     return arrayList2;
                 }
                 sy.y.j(obj);
-                a61.f0 f0Var = new a61.f0(9, arrayList);
+                a61.f0Shadow f0Var = new a61.f0Shadow(9, arrayList);
                 mVar.u = arrayList;
                 mVar.w = 1;
                 return iVar.b(f0Var, mVar) == aVar ? aVar : arrayList;

@@ -27,7 +27,7 @@ import pz0.vd;
 import pz0.w80;
 import pz0.xd;
 import pz0.xs;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -39,8 +39,8 @@ public abstract class b {
         vd.Companion.getClass();
         x xVar = vd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         td.Companion.getClass();
         x xVar2 = td.a;
         m mVar = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -67,9 +67,9 @@ public abstract class b {
         m mVar8 = new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar);
         w80.Companion.getClass();
         List r5 = l.r(new m[]{mVar8, new m("nodes", l0.a(w80.W), (String) null, rVar, rVar, r4)});
-        List n2 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
         s mVar9 = new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("IssueType");
+        List n3 = d0Shadow.n("IssueType");
         List list2 = zr0.a.a;
         List r6 = l.r(new s[]{mVar9, no.a.c(list2, "selections", "IssueType", n3, list2), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r7 = l.r(new m[]{new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
@@ -109,7 +109,7 @@ public abstract class b {
         q0 q0Var2 = mf.a;
         k.g(q0Var2, "type");
         s mVar25 = new m("issueType", q0Var2, (String) null, rVar, rVar, r6);
-        List n4 = d0.n("Issue");
+        List n4 = d0Shadow.n("Issue");
         List list4 = vu0.s.a;
         s c2 = no.a.c(list4, "selections", "Issue", n4, list4);
         q0 q0Var3 = le.A;

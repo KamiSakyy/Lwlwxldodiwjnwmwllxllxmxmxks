@@ -9,5 +9,5 @@ import x61.x;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final Map f22217a = x.t(new k(k71.x.b(ProjectsMetaInfo.class), new com.github.rudroid.main.navigation.a(ProjectsMetaInfo.class, ProjectsMetaInfo.Companion.serializer())));
+    public static final Map f22217a = x.t(new k(k71.xShadow.b(ProjectsMetaInfo.class), new com.github.rudroid.main.navigation.a(ProjectsMetaInfo.class, ProjectsMetaInfo.Companion.serializer())));
 }

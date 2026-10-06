@@ -32,7 +32,7 @@ public final class bq {
         y = bqVarArr;
         z = v8.l0.t(bqVarArr);
         Companion = new aq();
-        sy.d0.o(new String[]{"CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT"});
+        sy.d0Shadow.o(new String[]{"CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT"});
     }
 
     public bq(String str, int i, String str2) {

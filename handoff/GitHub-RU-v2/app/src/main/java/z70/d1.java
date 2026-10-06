@@ -62,7 +62,7 @@ public abstract class d1 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf2 = Integer.valueOf((int) nextLong);
                     } else {
@@ -78,7 +78,7 @@ public abstract class d1 implements aa.a {
                     long nextLong2 = eVar.nextLong();
                     if (nextLong2 > 2147483647L) {
                         while (nextLong2 > 2147483647L) {
-                            nextLong2 = jo.f4.c(1, nextLong2, "substring(...)");
+                            nextLong2 = jo.f4Shadow.c(1, nextLong2, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong2);
                     } else {
@@ -92,7 +92,7 @@ public abstract class d1 implements aa.a {
                     j0Var = (j0) aa.c.b(aa.c.c(e1.a, false)).a(eVar, wVar);
                     bool = bool2;
                 case 9:
-                    k0Var = (k0) aa.c.b(aa.c.c(f1.a, false)).a(eVar, wVar);
+                    k0Var = (k0) aa.c.b(aa.c.c(f1Shadow.a, false)).a(eVar, wVar);
                     bool = bool2;
                 case 10:
                     u0Var = (u0) aa.c.c(p1.a, true).a(eVar, wVar);

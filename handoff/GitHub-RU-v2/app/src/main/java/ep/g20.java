@@ -7,7 +7,7 @@ import jo.nj0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g20 implements aaShadow.a {
     public static final g20 a = new g20();
-    public static final List b = sy.d0.o("allowableStatus", "name", "isDefault");
+    public static final List b = sy.d0Shadow.o("allowableStatus", "name", "isDefault");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

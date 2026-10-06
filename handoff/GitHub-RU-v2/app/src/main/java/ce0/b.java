@@ -4,7 +4,7 @@ import aa.h0;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import java.time.ZonedDateTime;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -48,7 +48,7 @@ public final class b implements h0 {
         sb.append(", actor=");
         sb.append(this.b);
         sb.append(", createdAt=");
-        f4.A(", reasonCode=", this.d, ", __typename=", sb, this.c);
+        f4Shadow.A(", reasonCode=", this.d, ", __typename=", sb, this.c);
         return h1.p(sb, this.e, ")");
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }

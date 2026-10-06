@@ -29,7 +29,7 @@ public final /* synthetic */ class b implements j71.e {
                 h1.j.a(this.s, this.t, sVar, t.L(this.u | 1));
                 break;
             default:
-                rh.k.a(this.u, t.L(1), sVar, this.t, this.s);
+                rh.kShadow.a(this.u, t.L(1), sVar, this.t, this.s);
                 break;
         }
         return a0.a;

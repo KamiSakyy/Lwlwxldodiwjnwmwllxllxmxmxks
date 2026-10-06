@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class be implements aaShadow.a {
     public static final be a = new be();
-    public static final List b = sy.d0.n("markNotificationsAsUnread");
+    public static final List b = sy.d0Shadow.n("markNotificationsAsUnread");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

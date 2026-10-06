@@ -26,13 +26,13 @@ public final class e1 extends g1 {
         switch (this.v) {
             case 0:
                 l0 l0Var = this.z.f;
-                c21.u.g(l0Var);
+                c21.uShadow.g(l0Var);
                 l0Var.getUserProperties(this.w, this.x, this.y, (i0) this.A);
                 break;
             default:
                 long j = this.r;
                 l0 l0Var2 = this.z.f;
-                c21.u.g(l0Var2);
+                c21.uShadow.g(l0Var2);
                 l0Var2.logEvent(this.w, this.x, (Bundle) this.A, this.y, true, j);
                 break;
         }

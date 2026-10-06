@@ -5,7 +5,7 @@ import android.text.method.PasswordTransformationMethod;
 import android.text.method.TransformationMethod;
 import android.util.SparseArray;
 import android.widget.TextView;
-import sy.p;
+import sy.pShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class f extends p {

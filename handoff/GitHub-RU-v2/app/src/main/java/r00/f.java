@@ -14,7 +14,7 @@ import m10.eh;
 import m10.gh;
 import m10.i30;
 import m10.vp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,7 +25,7 @@ public abstract class f {
     static {
         ah.Companion.getClass();
         r b = l0.b(ah.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar = eh.a;
@@ -37,11 +37,11 @@ public abstract class f {
         i30.Companion.getClass();
         q0 q0Var = i30.w0;
         k.g(q0Var, "type");
-        List n = d0.n(new m("repository", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("repository", q0Var, (String) null, rVar, rVar, r));
         bf0.Companion.getClass();
         q0 q0Var2 = bf0.a;
         k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = d0.n(new m("updateRepository", q0Var2, (String) null, rVar, no.a.s(vp.t1, new u0(x61.x.u(new w61.k[]{new w61.k("description", new t("description")), new w61.k("repositoryId", new t("repositoryId"))}))), n));
+        a = d0Shadow.n(new m("updateRepository", q0Var2, (String) null, rVar, no.a.s(vp.t1, new u0(x61.x.u(new w61.k[]{new w61.k("description", new t("description")), new w61.k("repositoryId", new t("repositoryId"))}))), n));
     }
 }

@@ -8,7 +8,7 @@ public abstract class kg {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         d3.Companion.getClass();
         aa.j0 j0Var = d3.a;
         yh.Companion.getClass();

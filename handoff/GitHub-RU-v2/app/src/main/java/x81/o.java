@@ -15,7 +15,7 @@ import k.h0;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o implements Closeable {
     public static final a0 R;
-    public t81.c A;
+    public t81.cShadow A;
     public z B;
     public long C;
     public long D;
@@ -39,8 +39,8 @@ public final class o implements Closeable {
     public int v;
     public boolean w;
     public t81.e x;
-    public t81.c y;
-    public t81.c z;
+    public t81.cShadow y;
+    public t81.cShadow z;
 
     static {
         a0 a0Var = new a0();
@@ -60,7 +60,7 @@ public final class o implements Closeable {
         this.v = 3;
         t81.e eVar = (t81.e) bVar.b;
         this.x = eVar;
-        t81.c d = eVar.d();
+        t81.cShadow d = eVar.d();
         this.y = d;
         this.z = eVar.d();
         this.A = eVar.d();

@@ -4,7 +4,7 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.t1;
 import com.github.rudroid.searchandfilter.complexfilter.user.assignee.RepositoryAssigneesBottomSheet;
 import com.github.rudroid.searchandfilter.q;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 import w51.r;
 
@@ -24,7 +24,7 @@ public final /* synthetic */ class m implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) repositoryAssigneesBottomSheet.Y0.a(repositoryAssigneesBottomSheet, RepositoryAssigneesBottomSheet.d1[0])).booleanValue()) {
-                    k71.e a = x.a(q.class);
+                    k71.e a = xShadow.a(q.class);
                     RepositoryAssigneesBottomSheet.b bVar = new RepositoryAssigneesBottomSheet.b(repositoryAssigneesBottomSheet);
                     RepositoryAssigneesBottomSheet.c cVar = new RepositoryAssigneesBottomSheet.c(repositoryAssigneesBottomSheet);
                     RepositoryAssigneesBottomSheet.d dVar = new RepositoryAssigneesBottomSheet.d(repositoryAssigneesBottomSheet);
@@ -42,7 +42,7 @@ public final /* synthetic */ class m implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = w.s(w61.i.s, new RepositoryAssigneesBottomSheet.e(new m(repositoryAssigneesBottomSheet, 1)));
-                k71.e a2 = x.a(q.class);
+                k71.e a2 = xShadow.a(q.class);
                 RepositoryAssigneesBottomSheet.f fVar = new RepositoryAssigneesBottomSheet.f(s);
                 RepositoryAssigneesBottomSheet.g gVar = new RepositoryAssigneesBottomSheet.g(s);
                 RepositoryAssigneesBottomSheet.h hVar = new RepositoryAssigneesBottomSheet.h(repositoryAssigneesBottomSheet, s);

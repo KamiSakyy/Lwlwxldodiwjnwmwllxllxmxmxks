@@ -5,7 +5,7 @@ import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import com.github.rudroid.shortcuts.navigation.ShortcutViewRoute;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -23,17 +23,17 @@ public final class w extends k1 {
         k71.k.g(cVar, "accountHolder");
         this.s = iVar;
         this.t = cVar;
-        this.u = (ShortcutViewRoute) sy.y.m(a1Var, k71.x.a(ShortcutViewRoute.class), x61.s.r);
+        this.u = (ShortcutViewRoute) sy.y.m(a1Var, k71.xShadow.a(ShortcutViewRoute.class), x61.s.r);
         y1 s = com.github.rudroid.m0.s(fl.f.Companion, (Object) null);
         this.v = s;
         this.w = new i1(s);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new t(bVar, this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new t(bVar, this, null), 3);
     }
 
     public final y1 P() {
         fl.f.Companion.getClass();
-        y1 c = n1.c(fl.e.b(w61.a0.a));
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new v(this, c, null), 3);
+        y1 c = n1Shadow.c(fl.e.b(w61.a0.a));
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v(this, c, null), 3);
         return c;
     }
 }

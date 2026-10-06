@@ -49,7 +49,7 @@ public abstract class s00 {
     public static final a81.t O = new a81.t(1, "type", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         l.Companion.getClass();
         aa.j0 j0Var = l.a;
         yh.Companion.getClass();

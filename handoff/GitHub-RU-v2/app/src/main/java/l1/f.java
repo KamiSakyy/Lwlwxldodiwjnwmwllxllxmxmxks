@@ -2,7 +2,7 @@ package l1;
 
 import a0.s0;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class f {
@@ -26,7 +26,7 @@ public abstract class f {
     }
 
     private static final void c(int i, int i10) {
-        throw new IndexOutOfBoundsException(f4.h(i, i10, "Index ", " is out of bounds. The list has ", " elements."));
+        throw new IndexOutOfBoundsException(f4Shadow.h(i, i10, "Index ", " is out of bounds. The list has ", " elements."));
     }
 
     private static final void d(int i) {
@@ -38,7 +38,7 @@ public abstract class f {
     }
 
     private static final void f(int i, int i10) {
-        throw new IllegalArgumentException(f4.h(i, i10, "Indices are out of order. fromIndex (", ") is greater than toIndex (", ")."));
+        throw new IllegalArgumentException(f4Shadow.h(i, i10, "Indices are out of order. fromIndex (", ") is greater than toIndex (", ")."));
     }
     public static final Object J = null;
 }

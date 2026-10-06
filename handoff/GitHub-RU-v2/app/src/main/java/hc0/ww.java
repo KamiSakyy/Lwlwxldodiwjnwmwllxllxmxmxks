@@ -7,8 +7,8 @@ public abstract class ww {
     public static final vw Companion = new vw();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("UnlockedEvent", n, sy.d0.n(yg.a));
+        new aa.q0("UnlockedEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

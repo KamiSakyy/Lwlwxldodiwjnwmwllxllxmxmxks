@@ -53,14 +53,14 @@ public final class i1 extends androidx.lifecycle.a {
         this.z = qVar;
         this.A = sVar;
         this.B = cVar2;
-        y71.y1 c = y71.n1.c(x61.s.r);
+        y71.y1 c = y71.n1Shadow.c(x61.s.r);
         this.E = c;
         this.F = new y71.i1(c);
         pm.c.Companion.getClass();
-        y71.y1 c2 = y71.n1.c(pm.c.g);
+        y71.y1 c2 = y71.n1Shadow.c(pm.c.g);
         this.G = c2;
         this.H = new y71.i1(c2);
-        y71.y1 c3 = y71.n1.c(Boolean.FALSE);
+        y71.y1 c3 = y71.n1Shadow.c(Boolean.FALSE);
         this.I = c3;
         this.J = new y71.i1(c3);
         float f = com.github.rudroid.utilities.g.a;
@@ -80,11 +80,11 @@ public final class i1 extends androidx.lifecycle.a {
             P.getPackageName();
         }
         this.N = z;
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new h1(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new h1(this, null), 3);
     }
 
     public final void O() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new p1(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p1(this, null), 3);
         RuntimeFeatureFlag runtimeFeatureFlag = RuntimeFeatureFlag.a;
         ei.c cVar = ei.c.G;
         runtimeFeatureFlag.getClass();

@@ -2,7 +2,7 @@ package vw0;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import uw0.c0;
 import uw0.f0;
 import uw0.g0;
@@ -10,7 +10,7 @@ import uw0.g0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u implements aa.a {
     public static final u a = new u();
-    public static final List b = d0.o(new String[]{"item", "user"});
+    public static final List b = d0Shadow.o(new String[]{"item", "user"});
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

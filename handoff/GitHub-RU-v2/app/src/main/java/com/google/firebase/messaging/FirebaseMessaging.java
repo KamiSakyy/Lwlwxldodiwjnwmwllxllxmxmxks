@@ -12,7 +12,7 @@ import androidx.compose.foundation.lazy.layout.t1;
 import androidx.lifecycle.b;
 import androidx.lifecycle.l1;
 import b6.a2;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.measurement.internal.e3;
 import com.google.android.gms.measurement.internal.p2;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -123,7 +123,7 @@ public class FirebaseMessaging {
                         androidx.lifecycle.b bVar5 = firebaseMessaging2.c;
                         final boolean i4 = firebaseMessaging2.i();
                         if (Build.VERSION.SDK_INT >= 29) {
-                            SharedPreferences k2 = sy.t.k(context3);
+                            SharedPreferences k2 = sy.tShadow.k(context3);
                             if (!k2.contains("proxy_retention") || k2.getBoolean("proxy_retention", false) != i4) {
                                 y11.b bVar6 = (y11.b) bVar5.d;
                                 if (bVar6.c.n() >= 241100000) {
@@ -141,7 +141,7 @@ public class FirebaseMessaging {
                                 j2.d(new i7.c(0), new w21.e() { // from class: w51.p
                                     @Override // w21.e
                                     public final void e(Object obj) {
-                                        SharedPreferences.Editor edit = sy.t.k(context3).edit();
+                                        SharedPreferences.Editor edit = sy.tShadow.k(context3).edit();
                                         edit.putBoolean("proxy_retention", i4);
                                         edit.apply();
                                     }
@@ -161,23 +161,23 @@ public class FirebaseMessaging {
         q.f(scheduledThreadPoolExecutor2, new Callable() { // from class: w51.v
             @Override // java.util.concurrent.Callable
             public final Object call() {
-                u uVar;
+                uShadow uVar;
                 Context context3 = context2;
                 ScheduledThreadPoolExecutor scheduledThreadPoolExecutor3 = scheduledThreadPoolExecutor2;
                 FirebaseMessaging firebaseMessaging = this;
                 j4.h hVar2 = hVar;
                 androidx.lifecycle.b bVar5 = bVar4;
-                synchronized (u.class) {
+                synchronized (uShadow.class) {
                     try {
-                        WeakReference weakReference = u.b;
-                        uVar = weakReference != null ? (u) weakReference.get() : null;
+                        WeakReference weakReference = uShadow.b;
+                        uVar = weakReference != null ? (uShadow) weakReference.get() : null;
                         if (uVar == null) {
                             SharedPreferences sharedPreferences = context3.getSharedPreferences("com.google.android.gms.appid", 0);
-                            u uVar2 = new u();
+                            uShadow uVar2 = new uShadow();
                             synchronized (uVar2) {
                                 uVar2.a = l1.m(sharedPreferences, scheduledThreadPoolExecutor3);
                             }
-                            u.b = new WeakReference(uVar2);
+                            uShadow.b = new WeakReference(uVar2);
                             uVar = uVar2;
                         }
                     } catch (Throwable th) {
@@ -217,7 +217,7 @@ public class FirebaseMessaging {
                         androidx.lifecycle.b bVar5 = firebaseMessaging2.c;
                         final boolean i4 = firebaseMessaging2.i();
                         if (Build.VERSION.SDK_INT >= 29) {
-                            SharedPreferences k2 = sy.t.k(context3);
+                            SharedPreferences k2 = sy.tShadow.k(context3);
                             if (!k2.contains("proxy_retention") || k2.getBoolean("proxy_retention", false) != i4) {
                                 y11.b bVar6 = (y11.b) bVar5.d;
                                 if (bVar6.c.n() >= 241100000) {
@@ -235,7 +235,7 @@ public class FirebaseMessaging {
                                 j2.d(new i7.c(0), new w21.e() { // from class: w51.p
                                     @Override // w21.e
                                     public final void e(Object obj) {
-                                        SharedPreferences.Editor edit = sy.t.k(context3).edit();
+                                        SharedPreferences.Editor edit = sy.tShadow.k(context3).edit();
                                         edit.putBoolean("proxy_retention", i4);
                                         edit.apply();
                                     }
@@ -293,7 +293,7 @@ public class FirebaseMessaging {
         FirebaseMessaging firebaseMessaging;
         synchronized (FirebaseMessaging.class) {
             firebaseMessaging = (FirebaseMessaging) gVar.b(FirebaseMessaging.class);
-            u.h(firebaseMessaging, "Firebase Messaging component is not present");
+            uShadow.h(firebaseMessaging, "Firebase Messaging component is not present");
         }
         return firebaseMessaging;
     }

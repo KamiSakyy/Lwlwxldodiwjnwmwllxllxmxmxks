@@ -118,7 +118,7 @@ public abstract class m implements aa.a {
         fVar.z0("issueFormLinks");
         aa.c.b(aa.c.a(aa.c.c(k.a, false))).b(fVar, wVar, hVar.c);
         fVar.z0("isBlankIssuesEnabled");
-        jo.f4.C(hVar.d, aa.c.f, fVar, wVar, "isSecurityPolicyEnabled");
+        jo.f4Shadow.C(hVar.d, aa.c.f, fVar, wVar, "isSecurityPolicyEnabled");
         aa.c.k.b(fVar, wVar, hVar.e);
         fVar.z0("securityPolicyUrl");
         aa.c.i.b(fVar, wVar, hVar.f);

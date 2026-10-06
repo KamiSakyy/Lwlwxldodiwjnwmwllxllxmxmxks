@@ -38,7 +38,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.WeakHashMap;
-import jo.f4;
+import jo.f4Shadow;
 import o31.o;
 import sy.w;
 import v2.t;
@@ -286,7 +286,7 @@ public class AppBarLayout extends LinearLayout implements l4.a {
                         z21.j b = CollapsingToolbarLayout.b(childAt);
                         int i4 = dVar3.a;
                         if (i4 == 1) {
-                            b.b(sy.o.b(-i, 0, ((collapsingToolbarLayout.getHeight() - CollapsingToolbarLayout.b(childAt).b) - childAt.getHeight()) - ((FrameLayout.LayoutParams) ((z21.d) childAt.getLayoutParams())).bottomMargin));
+                            b.b(sy.oShadow.b(-i, 0, ((collapsingToolbarLayout.getHeight() - CollapsingToolbarLayout.b(childAt).b) - childAt.getHeight()) - ((FrameLayout.LayoutParams) ((z21.d) childAt.getLayoutParams())).bottomMargin));
                         } else if (i4 == 2) {
                             b.b(Math.round((-i) * dVar3.b));
                         }
@@ -684,7 +684,7 @@ public class AppBarLayout extends LinearLayout implements l4.a {
             if (childAt.getVisibility() != 8 && !childAt.getFitsSystemWindows()) {
                 int measuredHeight = getMeasuredHeight();
                 if (mode == Integer.MIN_VALUE) {
-                    measuredHeight = sy.o.b(getTopInset() + getMeasuredHeight(), 0, View.MeasureSpec.getSize(i2));
+                    measuredHeight = sy.oShadow.b(getTopInset() + getMeasuredHeight(), 0, View.MeasureSpec.getSize(i2));
                 } else if (mode == 0) {
                     measuredHeight += getTopInset();
                 }
@@ -755,7 +755,7 @@ public class AppBarLayout extends LinearLayout implements l4.a {
                         }
                         Iterator it = linkedHashSet.iterator();
                         if (it.hasNext()) {
-                            throw f4.g(it);
+                            throw f4Shadow.g(it);
                         }
                     }
                 };
@@ -774,11 +774,11 @@ public class AppBarLayout extends LinearLayout implements l4.a {
                         }
                         Iterator it = appBarLayout.I.iterator();
                         if (it.hasNext()) {
-                            throw f4.g(it);
+                            throw f4Shadow.g(it);
                         }
                         Iterator it2 = appBarLayout.J.iterator();
                         if (it2.hasNext()) {
-                            throw f4.g(it2);
+                            throw f4Shadow.g(it2);
                         }
                     }
                 };
@@ -1153,7 +1153,7 @@ public class AppBarLayout extends LinearLayout implements l4.a {
                     if (y < (i5 + i4) / 2) {
                         i4 = i5;
                     }
-                    C(coordinatorLayout, appBarLayout, sy.o.b(i4 + paddingTop, -appBarLayout.getTotalScrollRange(), 0));
+                    C(coordinatorLayout, appBarLayout, sy.oShadow.b(i4 + paddingTop, -appBarLayout.getTotalScrollRange(), 0));
                 }
             }
         }
@@ -1193,7 +1193,7 @@ public class AppBarLayout extends LinearLayout implements l4.a {
             }
             appBarLayout.w = 0;
             this.m = null;
-            int b = sy.o.b(w(), -appBarLayout.getTotalScrollRange(), 0);
+            int b = sy.oShadow.b(w(), -appBarLayout.getTotalScrollRange(), 0);
             z21.j jVar = this.a;
             if (jVar != null) {
                 jVar.b(b);
@@ -1291,7 +1291,7 @@ public class AppBarLayout extends LinearLayout implements l4.a {
             if (i2 == 0 || y < i2 || y > i3) {
                 this.j = 0;
             } else {
-                int b = sy.o.b(i, i2, i3);
+                int b = sy.oShadow.b(i, i2, i3);
                 if (y != b) {
                     if (appBarLayout.v) {
                         int abs = Math.abs(b);

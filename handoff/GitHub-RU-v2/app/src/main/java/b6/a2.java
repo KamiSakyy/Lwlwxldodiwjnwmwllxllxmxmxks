@@ -62,7 +62,7 @@ public abstract class a2 {
         PackageManager packageManager;
         ApplicationInfo applicationInfo;
         Bundle bundle;
-        if (sy.t.k(context).getBoolean("proxy_notification_initialized", false)) {
+        if (sy.tShadow.k(context).getBoolean("proxy_notification_initialized", false)) {
             return;
         }
         try {
@@ -79,7 +79,7 @@ public abstract class a2 {
             w21.o oVar = new w21.o();
             try {
                 if (Binder.getCallingUid() == context.getApplicationInfo().uid) {
-                    SharedPreferences.Editor edit = sy.t.k(context).edit();
+                    SharedPreferences.Editor edit = sy.tShadow.k(context).edit();
                     edit.putBoolean("proxy_notification_initialized", true);
                     edit.apply();
                     NotificationManager notificationManager = (NotificationManager) context.getSystemService(NotificationManager.class);
@@ -147,11 +147,11 @@ public abstract class a2 {
         try {
             systemForegroundService.startForeground(i, notification, i10);
         } catch (ForegroundServiceStartNotAllowedException unused) {
-            v8.x a10 = v8.x.a();
+            v8.xShadow a10 = v8.x.a();
             int i11 = SystemForegroundService.f3235v;
             a10.getClass();
         } catch (SecurityException unused2) {
-            v8.x a11 = v8.x.a();
+            v8.xShadow a11 = v8.x.a();
             int i12 = SystemForegroundService.f3235v;
             a11.getClass();
         }

@@ -59,7 +59,7 @@ public abstract class g implements aa.a {
         bVar3.b(fVar, wVar, kVar.c);
         fVar.z0("updatedAt");
         o7.Companion.getClass();
-        aa.x xVar = o7.a;
+        aa.xShadow xVar = o7.a;
         wVar.e(xVar).b(fVar, wVar, kVar.d);
         fVar.z0("createdAt");
         wVar.e(xVar).b(fVar, wVar, kVar.e);

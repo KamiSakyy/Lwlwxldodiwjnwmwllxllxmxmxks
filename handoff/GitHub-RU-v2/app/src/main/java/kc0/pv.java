@@ -28,7 +28,7 @@ public final class pv implements aaShadow.w0 {
         List list = en0.v3.a;
         List list2 = en0.v3.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -48,7 +48,7 @@ public final class pv implements aaShadow.w0 {
     }
 
     public final int hashCode() {
-        return this.v.hashCode() + f1.e.a(this.u, jo.f4.a(this.t, com.github.rudroid.copilot.h1.i(this.r.hashCode() * 31, this.s, 31), 31), 31);
+        return this.v.hashCode() + f1.e.a(this.u, jo.f4Shadow.a(this.t, com.github.rudroid.copilot.h1.i(this.r.hashCode() * 31, this.s, 31), 31), 31);
     }
 
     public final String i() {

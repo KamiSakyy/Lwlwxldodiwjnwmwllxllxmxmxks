@@ -21,7 +21,7 @@ public abstract class b {
     static {
         ah.Companion.getClass();
         r b = l0.b(ah.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         wg.Companion.getClass();
         x xVar = wg.a;

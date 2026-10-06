@@ -10,7 +10,7 @@ import java.util.ListIterator;
 import java.util.RandomAccess;
 import k71.k;
 import sy.a0;
-import sy.p;
+import sy.pShadow;
 import v1.v;
 import x61.l;
 
@@ -201,7 +201,7 @@ public final class b extends x61.g implements RandomAccess, Serializable {
         l.x(i, i + i2, this.s, objArr, objArr);
         Object[] objArr2 = this.r;
         int i3 = this.s;
-        p.q(objArr2, i3 - i2, i3);
+        pShadow.q(objArr2, i3 - i2, i3);
         this.s -= i2;
     }
 
@@ -224,7 +224,7 @@ public final class b extends x61.g implements RandomAccess, Serializable {
         l.x(i + i4, i2 + i, this.s, objArr2, objArr2);
         Object[] objArr3 = this.r;
         int i7 = this.s;
-        p.q(objArr3, i7 - i6, i7);
+        pShadow.q(objArr3, i7 - i6, i7);
         if (i6 > 0) {
             ((AbstractList) this).modCount++;
         }
@@ -310,7 +310,7 @@ public final class b extends x61.g implements RandomAccess, Serializable {
 
     @Override // java.util.AbstractCollection
     public final String toString() {
-        return p.a(this.r, 0, this.s, this);
+        return pShadow.a(this.r, 0, this.s, this);
     }
 
     @Override // java.util.AbstractList, java.util.List

@@ -9,9 +9,9 @@ public final class g1 implements aa.h0 {
     public boolean c;
     public String d;
     public e1 e;
-    public f1 f;
+    public f1Shadow f;
 
-    public g1(String str, ZonedDateTime zonedDateTime, boolean z, String str2, e1 e1Var, f1 f1Var) {
+    public g1(String str, ZonedDateTime zonedDateTime, boolean z, String str2, e1 e1Var, f1Shadow f1Var) {
         this.a = str;
         this.b = zonedDateTime;
         this.c = z;

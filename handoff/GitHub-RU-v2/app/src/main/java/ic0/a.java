@@ -43,7 +43,7 @@ import hc0.zf;
 import hc0.zh;
 import hc0.zk;
 import java.util.Iterator;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -406,7 +406,7 @@ public final class a implements aa.a {
                 k.g(a4Var, "value");
                 u0 u0Var = a4Var.a;
                 fVar.z0("body");
-                f4.y(c.i, fVar, wVar, u0Var, "headline");
+                f4Shadow.y(c.i, fVar, wVar, u0Var, "headline");
                 c.a.b(fVar, wVar, a4Var.b);
                 break;
             case 2:
@@ -501,7 +501,7 @@ public final class a implements aa.a {
                 u0 u0Var17 = i5Var.a;
                 if (u0Var17 instanceof u0) {
                     fVar.z0("assigneeIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var17);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var17);
                 }
                 if (u0Var16 instanceof u0) {
                     fVar.z0("body");
@@ -517,7 +517,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var13 instanceof u0) {
                     fVar.z0("labelIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var13);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var13);
                 }
                 if (u0Var12 instanceof u0) {
                     fVar.z0("milestoneId");
@@ -525,7 +525,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var11 instanceof u0) {
                     fVar.z0("projectIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var11);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var11);
                 }
                 fVar.z0("repositoryId");
                 aa.b bVar = c.a;
@@ -748,7 +748,7 @@ public final class a implements aa.a {
                 u0 u0Var30 = rhVar.a;
                 if (u0Var30 instanceof u0) {
                     fVar.z0("listIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var30);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var30);
                 }
                 if (u0Var29 instanceof u0) {
                     fVar.z0("reasons");
@@ -768,7 +768,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var25 instanceof u0) {
                     fVar.z0("threadTypes");
-                    f4.d(c.a).d(fVar, wVar, u0Var25);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var25);
                     break;
                 }
                 break;

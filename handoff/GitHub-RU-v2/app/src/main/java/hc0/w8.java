@@ -4,13 +4,13 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class w8 {
-    public static final v8 Companion = new v8();
+    public static final v8Shadow Companion = new v8Shadow();
     public static final a81.t a = new a81.t(1, "before", false);
     public static final a81.t b = new a81.t(1, "last", false);
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         n3.Companion.getClass();
         aa.j0 j0Var = n3.f;
         l6.Companion.getClass();

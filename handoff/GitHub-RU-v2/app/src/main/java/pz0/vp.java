@@ -6,7 +6,7 @@ public abstract class vp {
     public static final a81.t a = new a81.t(1, "first", false);
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("ProjectV2ItemFieldLabelValue", rVar, rVar);
     }
 }

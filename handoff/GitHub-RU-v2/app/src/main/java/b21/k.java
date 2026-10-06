@@ -3,7 +3,7 @@ package b21;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class k {
+public final class kShadow {
     public a a;
     public z11.d b;
 
@@ -13,9 +13,9 @@ public final class k {
     }
 
     public final boolean equals(Object obj) {
-        if (obj != null && (obj instanceof k)) {
-            k kVar = (k) obj;
-            if (c21.u.j(this.a, kVar.a) && c21.u.j(this.b, kVar.b)) {
+        if (obj != null && (obj instanceof kShadow)) {
+            kShadow kVar = (kShadow) obj;
+            if (c21.uShadow.j(this.a, kVar.a) && c21.uShadow.j(this.b, kVar.b)) {
                 return true;
             }
         }

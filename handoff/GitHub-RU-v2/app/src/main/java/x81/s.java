@@ -210,7 +210,7 @@ public final class s implements Closeable {
                     final int readInt4 = this.r.readInt();
                     final int readInt5 = this.r.readInt();
                     if (((readByte2 & 1) != 0 ? 1 : 0) == 0) {
-                        t81.c cVar = nVar.s.y;
+                        t81.cShadow cVar = nVar.s.y;
                         String p = h1.p(new StringBuilder(), nVar.s.t, " ping");
                         final o oVar3 = nVar.s;
                         t81.c.b(cVar, p, 0L, new j71.a() { // from class: x81.m
@@ -269,7 +269,7 @@ public final class s implements Closeable {
                     if (aVar == null) {
                         throw new IOException(no.a.k("TYPE_GOAWAY unexpected error code: ", readInt7));
                     }
-                    h91.k kVar = h91.k.u;
+                    h91.kShadow kVar = h91.kShadow.u;
                     if (i8 > 0) {
                         kVar = this.r.v(i8);
                     }
@@ -481,16 +481,16 @@ public final class s implements Closeable {
                 int e = dVar.e(i5, 127);
                 int i6 = e - 1;
                 if (i6 >= 0) {
-                    c[] cVarArr = f.a;
+                    cShadow[] cVarArr = f.a;
                     if (i6 <= cVarArr.length - 1) {
                         arrayList.add(cVarArr[i6]);
                     }
                 }
                 int length = dVar.e + 1 + (i6 - f.a.length);
                 if (length >= 0) {
-                    c[] cVarArr2 = dVar.d;
+                    cShadow[] cVarArr2 = dVar.d;
                     if (length < cVarArr2.length) {
-                        c cVar = cVarArr2[length];
+                        cShadow cVar = cVarArr2[length];
                         k71.k.d(cVar);
                         arrayList.add(cVar);
                     }
@@ -498,12 +498,12 @@ public final class s implements Closeable {
                 throw new IOException(no.a.k("Header index too large ", e));
             }
             if (i5 == 64) {
-                c[] cVarArr3 = f.a;
-                h91.k d = dVar.d();
+                cShadow[] cVarArr3 = f.a;
+                h91.kShadow d = dVar.d();
                 f.a(d);
-                dVar.c(new c(d, dVar.d()));
+                dVar.c(new cShadow(d, dVar.d()));
             } else if ((readByte & 64) == 64) {
-                dVar.c(new c(dVar.b(dVar.e(i5, 63) - 1), dVar.d()));
+                dVar.c(new cShadow(dVar.b(dVar.e(i5, 63) - 1), dVar.d()));
             } else if ((readByte & 32) == 32) {
                 int e2 = dVar.e(i5, 31);
                 dVar.a = e2;
@@ -522,12 +522,12 @@ public final class s implements Closeable {
                     }
                 }
             } else if (i5 == 16 || i5 == 0) {
-                c[] cVarArr4 = f.a;
-                h91.k d2 = dVar.d();
+                cShadow[] cVarArr4 = f.a;
+                h91.kShadow d2 = dVar.d();
                 f.a(d2);
-                arrayList.add(new c(d2, dVar.d()));
+                arrayList.add(new cShadow(d2, dVar.d()));
             } else {
-                arrayList.add(new c(dVar.b(dVar.e(i5, 15) - 1), dVar.d()));
+                arrayList.add(new cShadow(dVar.b(dVar.e(i5, 15) - 1), dVar.d()));
             }
         }
         List F0 = x61.m.F0(arrayList);

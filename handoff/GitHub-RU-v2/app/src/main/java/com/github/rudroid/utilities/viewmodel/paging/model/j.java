@@ -3,7 +3,7 @@ package com.github.rudroid.utilities.viewmodel.paging.model;
 import com.github.rudroid.fragments.ui.q0;
 import com.github.rudroid.utilities.ui.g1;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,7 +25,7 @@ public final class j<T, R> implements r<T>, com.github.rudroid.utilities.viewmod
         this.t = q0Var2;
         this.u = cVar;
         this.v = cVar2;
-        this.w = n1.c(g1.a.c(g1.Companion));
+        this.w = n1Shadow.c(g1.a.c(g1.Companion));
         this.x = new com.github.rudroid.support.u(6, this);
     }
 

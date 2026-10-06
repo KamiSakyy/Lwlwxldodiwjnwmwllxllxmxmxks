@@ -5,7 +5,7 @@ public abstract class zz {
     public static final yz Companion = new yz();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("PullRequestRevisionMarker", rVar, rVar);
     }
 }

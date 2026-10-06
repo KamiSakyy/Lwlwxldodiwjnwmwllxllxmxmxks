@@ -43,7 +43,7 @@ import m10.nd;
 import m7.w;
 import nj.x0;
 import pz0.ja;
-import rm0.b1;
+import rm0.b1Shadow;
 import rm0.b2;
 import rm0.b6;
 import rm0.n5;
@@ -51,7 +51,7 @@ import rm0.v4;
 import sy.y;
 import t00.o5;
 import t00.s1;
-import t00.y0;
+import t00.y0Shadow;
 import u10.eaShadow;
 import u10.ga;
 import u10.ka;
@@ -70,7 +70,7 @@ import xt0.i3;
 import xz.x;
 import y71.e0;
 import y71.h0;
-import y71.n1;
+import y71.n1Shadow;
 import z70.a3;
 import z70.z2;
 
@@ -260,9 +260,9 @@ public final class f implements y71.j {
                             d0 d0Var2 = ibVar2.d;
                             if (d0Var2 != null) {
                                 c0 c0Var = d0Var2.c;
-                                x61.r rVar = c0Var.c;
+                                x61.rShadow rVar = c0Var.c;
                                 if (rVar == null) {
-                                    rVar = x61.r.r;
+                                    rVar = x61.rShadow.r;
                                 }
                                 ja.Companion.getClass();
                                 a0Var = a0Var3;
@@ -737,7 +737,7 @@ public final class f implements y71.j {
         b71.a aVar7;
         int i18;
         y71.j jVar7;
-        b1 b1Var;
+        b1Shadow b1Var;
         b71.a aVar8;
         int i19;
         kc0.l0 l0Var;
@@ -762,7 +762,7 @@ public final class f implements y71.j {
         Integer num;
         s01.d dVar2;
         int i25;
-        y0 y0Var;
+        y0Shadow y0Var;
         b71.a aVar10;
         int i26;
         q0 q0Var;
@@ -834,9 +834,9 @@ public final class f implements y71.j {
                             xz.p pVar2 = uVar.b;
                             xz.o oVar = pVar.b;
                             List list4 = (List) this.u;
-                            x61.r rVar = pVar.c;
+                            x61.rShadow rVar = pVar.c;
                             if (rVar == null) {
-                                rVar = x61.r.r;
+                                rVar = x61.rShadow.r;
                             }
                             ArrayList l0 = x61.m.l0(list4, rVar);
                             int i41 = pVar2.a;
@@ -1052,7 +1052,7 @@ public final class f implements y71.j {
                 } else if (gVar instanceof j0.k) {
                     arrayList.remove(((j0.k) gVar).a);
                 }
-                b0.z((z) this.t, (a71.h) null, (v71.a0) null, new n0((i5) this.u, (j0.h) x61.m.f0(arrayList), (a71.c) null, 25), 3);
+                b0.z((z) this.t, (a71.h) null, (v71.a0Shadow) null, new n0((i5) this.u, (j0.h) x61.m.f0(arrayList), (a71.c) null, 25), 3);
                 return a0.a;
             case 5:
                 if (cVar instanceof fy0.a) {
@@ -1074,9 +1074,9 @@ public final class f implements y71.j {
                             ay0.p pVar4 = uVar3.b;
                             ay0.o oVar2 = pVar3.b;
                             List list7 = (List) this.u;
-                            x61.r rVar2 = pVar3.c;
+                            x61.rShadow rVar2 = pVar3.c;
                             if (rVar2 == null) {
-                                rVar2 = x61.r.r;
+                                rVar2 = x61.rShadow.r;
                             }
                             ArrayList l02 = x61.m.l0(list7, rVar2);
                             int i46 = pVar4.a;
@@ -1361,7 +1361,7 @@ public final class f implements y71.j {
                             y71.j jVar27 = (y71.j) this.s;
                             k3 d2 = ((nj.y0) this.t).d((String) this.u);
                             if (d2 == null) {
-                                d2 = new k3(x61.r.r, false);
+                                d2 = new k3(x61.rShadow.r, false);
                             }
                             x0Var.v = 1;
                             if (jVar27.c(d2, x0Var) == aVar18) {
@@ -1438,7 +1438,7 @@ public final class f implements y71.j {
             case 13:
                 com.github.service.wrapper.b bVar11 = ((b2) this.u).s;
                 if (cVar instanceof b1) {
-                    b1Var = (b1) cVar;
+                    b1Var = (b1Shadow) cVar;
                     int i54 = b1Var.v;
                     if ((i54 & Integer.MIN_VALUE) != 0) {
                         b1Var.v = i54 - Integer.MIN_VALUE;
@@ -1511,9 +1511,9 @@ public final class f implements y71.j {
                                     yf0.d0 d0Var3 = oaVar2.d;
                                     if (d0Var3 != null) {
                                         yf0.c0 c0Var3 = d0Var3.c;
-                                        x61.r rVar3 = c0Var3.c;
+                                        x61.rShadow rVar3 = c0Var3.c;
                                         if (rVar3 == null) {
-                                            rVar3 = x61.r.r;
+                                            rVar3 = x61.rShadow.r;
                                         }
                                         i9.Companion.getClass();
                                         a0Var = a0Var7;
@@ -1563,7 +1563,7 @@ public final class f implements y71.j {
                         }
                     }
                 }
-                b1Var = new b1(this, cVar);
+                b1Var = new b1Shadow(this, cVar);
                 Object obj132 = b1Var.u;
                 aVar8 = b71.a.r;
                 i19 = b1Var.v;
@@ -1681,7 +1681,7 @@ public final class f implements y71.j {
             case 16:
                 com.github.service.wrapper.b bVar13 = ((s1) this.u).s;
                 if (cVar instanceof y0) {
-                    y0Var = (y0) cVar;
+                    y0Var = (y0Shadow) cVar;
                     int i59 = y0Var.v;
                     if ((i59 & Integer.MIN_VALUE) != 0) {
                         y0Var.v = i59 - Integer.MIN_VALUE;
@@ -1754,9 +1754,9 @@ public final class f implements y71.j {
                                     ms.d0 d0Var4 = fcVar2.d;
                                     if (d0Var4 != null) {
                                         ms.c0 c0Var4 = d0Var4.c;
-                                        x61.r rVar4 = c0Var4.c;
+                                        x61.rShadow rVar4 = c0Var4.c;
                                         if (rVar4 == null) {
-                                            rVar4 = x61.r.r;
+                                            rVar4 = x61.rShadow.r;
                                         }
                                         nd.Companion.getClass();
                                         a0Var3 = a0Var8;
@@ -1806,7 +1806,7 @@ public final class f implements y71.j {
                         }
                     }
                 }
-                y0Var = new y0(this, cVar);
+                y0Var = new y0Shadow(this, cVar);
                 Object obj162 = y0Var.u;
                 aVar10 = b71.a.r;
                 i26 = y0Var.v;
@@ -2037,9 +2037,9 @@ public final class f implements y71.j {
                                     i50.c0 c0Var6 = gaVar2.d;
                                     if (c0Var6 != null) {
                                         i50.b0 b0Var = c0Var6.c;
-                                        x61.r rVar5 = b0Var.c;
+                                        x61.rShadow rVar5 = b0Var.c;
                                         if (rVar5 == null) {
-                                            rVar5 = x61.r.r;
+                                            rVar5 = x61.rShadow.r;
                                         }
                                         w8.Companion.getClass();
                                         a0Var5 = a0Var9;
@@ -2136,7 +2136,7 @@ public final class f implements y71.j {
                             uVar5.r = i69;
                             if (i69 >= 1) {
                                 h0Var.w = 2;
-                                n1.d(jVar33, obj, this.u, h0Var);
+                                n1Shadow.d(jVar33, obj, this.u, h0Var);
                                 return aVar20;
                             }
                             h0Var.w = 1;
@@ -2199,7 +2199,7 @@ public final class f implements y71.j {
     public f(y71.j jVar, a71.h hVar) {
         this.r = 27;
         this.s = hVar;
-        this.t = a81.b.m(hVar);
+        this.t = a81.bShadow.m(hVar);
         this.u = new v4(jVar, (a71.c) null, 28);
     }
     public Object h = null;

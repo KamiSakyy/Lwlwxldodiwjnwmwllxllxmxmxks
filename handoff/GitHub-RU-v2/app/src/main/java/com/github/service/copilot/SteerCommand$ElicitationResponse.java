@@ -3,7 +3,7 @@ package com.github.service.copilot;
 import g81.e;
 import java.util.Map;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -34,7 +34,7 @@ public final class SteerCommand$ElicitationResponse implements c4 {
 
     public /* synthetic */ SteerCommand$ElicitationResponse(int i, String str, g1 g1Var, Map map) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, SteerCommand$ElicitationResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, SteerCommand$ElicitationResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;

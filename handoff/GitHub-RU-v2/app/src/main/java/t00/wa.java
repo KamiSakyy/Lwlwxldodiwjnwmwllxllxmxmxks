@@ -55,7 +55,7 @@ public final class waShadow implements y71.j {
                             sy.y.j(obj2);
                             rz.g0 g0Var = ((rz.b0) obj).a;
                             if (g0Var == null || (h0Var = g0Var.c) == null || (list = h0Var.b.a) == null || (e0Var = (rz.e0) x61.m.W(list)) == null || (list2 = e0Var.b.a) == null || (f0Var = (rz.f0) x61.m.W(list2)) == null || (list3 = f0Var.a) == null) {
-                                arrayList = x61.r.r;
+                                arrayList = x61.rShadow.r;
                             } else {
                                 arrayList = new ArrayList(x61.n.F(list3, 10));
                                 for (rz.i0 i0Var : list3) {
@@ -96,7 +96,7 @@ public final class waShadow implements y71.j {
                             sy.y.j(obj3);
                             ux0.g0 g0Var2 = ((ux0.b0) obj).a;
                             if (g0Var2 == null || (h0Var2 = g0Var2.c) == null || (list4 = h0Var2.b.a) == null || (e0Var2 = (ux0.e0) x61.m.W(list4)) == null || (list5 = e0Var2.b.a) == null || (f0Var2 = (ux0.f0) x61.m.W(list5)) == null || (list6 = f0Var2.a) == null) {
-                                arrayList2 = x61.r.r;
+                                arrayList2 = x61.rShadow.r;
                             } else {
                                 arrayList2 = new ArrayList(x61.n.F(list6, 10));
                                 for (ux0.i0 i0Var2 : list6) {

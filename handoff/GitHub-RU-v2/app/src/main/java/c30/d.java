@@ -24,7 +24,7 @@ public final class d implements aa.i0, a5.d0, bm.k, com.google.android.gms.measu
         this.r = i;
     }
 
-    public static h91.k a(String str) {
+    public static h91.kShadow a(String str) {
         if (str.length() % 2 != 0) {
             throw new IllegalArgumentException("Unexpected hex string: ".concat(str).toString());
         }
@@ -34,14 +34,14 @@ public final class d implements aa.i0, a5.d0, bm.k, com.google.android.gms.measu
             int i2 = i * 2;
             bArr[i] = (byte) (i91.b.a(str.charAt(i2 + 1)) + (i91.b.a(str.charAt(i2)) << 4));
         }
-        return new h91.k(bArr);
+        return new h91.kShadow(bArr);
     }
 
-    public static h91.k b(String str) {
+    public static h91.kShadow b(String str) {
         k71.k.g(str, "<this>");
         byte[] bytes = str.getBytes(t71.a.a);
         k71.k.f(bytes, "getBytes(...)");
-        h91.k kVar = new h91.k(bytes);
+        h91.kShadow kVar = new h91.kShadow(bytes);
         kVar.t = str;
         return kVar;
     }
@@ -161,11 +161,11 @@ public final class d implements aa.i0, a5.d0, bm.k, com.google.android.gms.measu
         return false;
     }
 
-    public static h91.k f(byte[] bArr) {
-        h91.k kVar = h91.k.u;
+    public static h91.kShadow f(byte[] bArr) {
+        h91.kShadow kVar = h91.kShadow.u;
         int length = bArr.length;
         h91.b.e(bArr.length, 0, length);
-        return new h91.k(x61.l.C(bArr, 0, length));
+        return new h91.kShadow(x61.l.C(bArr, 0, length));
     }
 
     public Object c() {
@@ -203,7 +203,7 @@ public final class d implements aa.i0, a5.d0, bm.k, com.google.android.gms.measu
         List list = d30.a.a;
         List list2 = d30.a.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -223,7 +223,7 @@ public final class d implements aa.i0, a5.d0, bm.k, com.google.android.gms.measu
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(d.class).hashCode();
+                return k71.xShadow.a(d.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -242,9 +242,9 @@ public final class d implements aa.i0, a5.d0, bm.k, com.google.android.gms.measu
         com.github.domain.database.serialization.d.Companion.getClass();
         if (str != null) {
             l81.n nVar = com.github.domain.database.serialization.d.b;
-            list = (List) nVar.a(str, m71.a.z(new k81.d(b91.g.C(((l81.c) nVar).b, k71.x.a(v2.class)), 0)));
+            list = (List) nVar.a(str, m71.a.z(new k81.d(b91.g.C(((l81.c) nVar).b, k71.xShadow.a(v2.class)), 0)));
         }
-        list = x61.r.r;
+        list = x61.rShadow.r;
         return new MilestoneFilter(list);
     }
 

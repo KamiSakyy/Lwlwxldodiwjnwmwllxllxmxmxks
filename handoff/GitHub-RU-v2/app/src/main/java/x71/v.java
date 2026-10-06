@@ -4,7 +4,7 @@ import java.util.concurrent.CancellationException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public interface v {
-    Object a(c71.j jVar);
+    Object a(c71.jShadow jVar);
 
     b1.m b();
 

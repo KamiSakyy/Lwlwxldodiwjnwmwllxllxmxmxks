@@ -73,7 +73,7 @@ public abstract class h6 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, f6Var.a);
         fVar.z0("dismissable");
-        jo.f4.C(f6Var.b, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(f6Var.b, aa.c.f, fVar, wVar, "identifier");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, f6Var.c);
         fVar.z0("reason");

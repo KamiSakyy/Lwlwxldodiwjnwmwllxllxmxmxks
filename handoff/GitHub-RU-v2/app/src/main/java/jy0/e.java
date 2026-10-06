@@ -15,7 +15,7 @@ public abstract class e {
     static {
         ko.Companion.getClass();
         r b = l0.b(ko.s);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("dataType", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         a = l.r(new m[]{mVar, new m("id", l0.b(td.a), (String) null, rVar, rVar, rVar)});

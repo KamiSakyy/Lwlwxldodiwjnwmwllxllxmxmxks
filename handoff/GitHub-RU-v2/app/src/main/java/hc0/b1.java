@@ -7,8 +7,8 @@ public abstract class b1 {
     public static final a1 Companion = new a1();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("AutoMergeDisabledEvent", n, sy.d0.n(yg.a));
+        new aa.q0("AutoMergeDisabledEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

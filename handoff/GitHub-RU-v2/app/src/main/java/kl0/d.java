@@ -19,7 +19,7 @@ import gn0.rn;
 import gn0.s00;
 import gn0.tb;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -31,7 +31,7 @@ public abstract class d {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = vd0.a.a;
@@ -42,10 +42,10 @@ public abstract class d {
         lb.Companion.getClass();
         List r3 = l.r(new m[]{new m("hasNextPage", l0.b(lb.a), (String) null, rVar, rVar, rVar), new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Repository");
+        List n = d0Shadow.n("Repository");
         List list2 = pj0.f.a;
         s c2 = no.a.c(list2, "selections", "Repository", n, list2);
-        List n2 = d0.n("Repository");
+        List n2 = d0Shadow.n("Repository");
         List list3 = pj0.a.a;
         List r4 = l.r(new s[]{mVar2, c2, no.a.c(list3, "selections", "Repository", n2, list3)});
         jj.Companion.getClass();
@@ -66,6 +66,6 @@ public abstract class d {
         q0 q0Var = g10.c;
         k71.k.g(q0Var, "type");
         rn.Companion.getClass();
-        a = d0.n(new m("list", q0Var, (String) null, rVar, l.r(new k[]{new k(rn.g, new u0(new t("login"))), new k(rn.h, new u0(new t("slug")))}), r6));
+        a = d0Shadow.n(new m("list", q0Var, (String) null, rVar, l.r(new k[]{new k(rn.g, new u0(new t("login"))), new k(rn.h, new u0(new t("slug")))}), r6));
     }
 }

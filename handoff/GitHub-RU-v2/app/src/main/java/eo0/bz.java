@@ -7,7 +7,7 @@ import jn0.se0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bz implements aaShadow.a {
     public static final bz a = new bz();
-    public static final List b = sy.d0.n("weeks");
+    public static final List b = sy.d0Shadow.n("weeks");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

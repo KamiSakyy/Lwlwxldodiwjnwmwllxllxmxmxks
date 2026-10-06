@@ -6,11 +6,11 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.ui.t1;
 import com.github.service.models.response.organizations.OrganizationNameAndAvatarUrl;
 import java.util.concurrent.CancellationException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -36,7 +36,7 @@ public final class e extends k1 {
         k71.k.g(aVar, "fetchOrganizationForLoginUseCase");
         this.f8593s = cVar;
         this.f8594t = aVar;
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f8595u = c10;
         this.f8596v = new i1(c10);
     }
@@ -50,7 +50,7 @@ public final class e extends k1 {
         String str2 = bVar.i;
         String str3 = bVar.j;
         if (str2 == null || str3 == null) {
-            this.f8597w = b0.z(d1.k(this), (a71.h) null, (a0) null, new d(this, str, null), 3);
+            this.f8597w = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new d(this, str, null), 3);
             return;
         }
         g1.a aVar = g1.Companion;

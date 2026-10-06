@@ -4,7 +4,7 @@ package com.github.rudroid.utilities;
 public final class c0 {
     public static final w1.r a(long j, w1.r rVar) {
         k71.k.g(rVar, "$this$setupEdgeToEdge");
-        return rVar.f(androidx.compose.foundation.layout.b.J(f0.o.f(w1.o.a, j, d2.a0.b), new a7.i(5)));
+        return rVar.f(androidx.compose.foundation.layout.b.J(f0.o.f(w1.o.a, j, d2.a0Shadow.b), new a7.i(5)));
     }
 
     public static Object a(Object... a) {

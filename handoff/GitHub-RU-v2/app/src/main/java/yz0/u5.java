@@ -26,7 +26,7 @@ public final class u5 extends s7 {
     }
 
     public final int hashCode() {
-        return this.c.hashCode() + jo.f4.b(this.b, this.a.hashCode() * 31, 31);
+        return this.c.hashCode() + jo.f4Shadow.b(this.b, this.a.hashCode() * 31, 31);
     }
 
     public final String toString() {

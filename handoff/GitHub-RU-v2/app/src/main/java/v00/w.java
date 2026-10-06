@@ -64,7 +64,7 @@ public final class w extends c71.j implements j71.c {
                     }
                     sy.y.j(obj);
                 }
-                SteerAgentTaskRequest w = sy.p.w(a4.a);
+                SteerAgentTaskRequest w = sy.pShadow.w(a4.a);
                 this.w = 2;
                 if (((mp.c) obj).a(this.y, w, this) == aVar) {
                     return aVar;

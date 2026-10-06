@@ -19,14 +19,14 @@ public abstract class m7 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("api", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("api", b, (String) null, rVar, rVar, rVar));
         aa.s mVar = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = sy.d0.n("CopilotLimitedUser");
+        List n2 = sy.d0Shadow.n("CopilotLimitedUser");
         List list = dq.d.a;
         List r = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "CopilotLimitedUser", n2, list)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n3 = sy.d0.n("CopilotConsumptiveUser");
+        List n3 = sy.d0Shadow.n("CopilotConsumptiveUser");
         List list2 = dq.c.a;
         List r2 = x61.l.r(new aa.s[]{mVar2, no.a.c(list2, "selections", "CopilotConsumptiveUser", n3, list2)});
         m8.Companion.getClass();

@@ -22,7 +22,7 @@ public final class g extends androidx.lifecycle.k1 {
         k71.k.g(str2, "headRefOid");
         k71.k.g(str3, "commentId");
         k71.k.g(str4, "suggestionId");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new f(this, str, str2, str3, str4, str5, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f(this, str, str2, str3, str4, str5, null), 3);
     }
     public Object a(Object p1) { return null; }
 }

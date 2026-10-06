@@ -29,6 +29,6 @@ public final class o2 extends p2 {
     }
 
     public final String toString() {
-        return jo.f4.o("ComparisonSubsection(title=", this.a, ", planRows=", ")", this.b);
+        return jo.f4Shadow.o("ComparisonSubsection(title=", this.a, ", planRows=", ")", this.b);
     }
 }

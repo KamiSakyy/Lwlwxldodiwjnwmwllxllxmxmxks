@@ -23,7 +23,7 @@ final class z0 implements j71.c {
     }
 
     public final Object k(Object obj) {
-        x61.r arrayList;
+        x61.rShadow arrayList;
         a4 a4Var = (b4) obj;
         k71.k.g(a4Var, "it");
         u0 u0Var = this.f19505r;
@@ -40,11 +40,11 @@ final class z0 implements j71.c {
             }
         } else {
             boolean z10 = a4Var instanceof y3;
-            x61.r rVar = x61.r.r;
+            x61.rShadow rVar = x61.rShadow.r;
             if (!z10) {
                 if (a4Var instanceof x3) {
                     x3 x3Var = (x3) a4Var;
-                    arrayList = sy.d0.n(new c.c(x3Var.a, x3Var.j, u0Var.S(), false, 0, (String) null, (String) null, 120));
+                    arrayList = sy.d0Shadow.n(new c.c(x3Var.a, x3Var.j, u0Var.S(), false, 0, (String) null, (String) null, 120));
                 } else if (a4Var instanceof z3) {
                     ArrayList arrayList3 = ((z3) a4Var).j;
                     arrayList = new ArrayList(x61.n.F(arrayList3, 10));

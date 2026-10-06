@@ -8,7 +8,7 @@ import in.j0;
 import java.util.Arrays;
 import q81.a0;
 import q81.q;
-import q81.x;
+import q81.xShadow;
 import q81.y;
 import sy.c0;
 import t71.n;
@@ -37,11 +37,11 @@ public final class k extends c0 implements g {
         l1Var.I((str == null || str.length() == 0) ? "https://api.github.com/graphql" : xb.a.a(str) ? String.format("https://api.%s/graphql", Arrays.copyOf(new Object[]{str}, 1)) : String.format("https://%s/api/graphql", Arrays.copyOf(new Object[]{str}, 1)));
         l1Var.g("Authorization", "Bearer " + this.r);
         l1Var.G(j0.class, new j0());
-        x xVar = y.Companion;
+        xShadow xVar = y.Companion;
         n nVar = q.d;
         q V = i4.V("application/json");
         xVar.getClass();
-        l1Var.A(x.a("{\n  \"operationName\": \"CheckQuery\",\n  \"query\": \"query CheckQuery {viewer{login}}\"\n}", V));
+        l1Var.A(xShadow.a("{\n  \"operationName\": \"CheckQuery\",\n  \"query\": \"query CheckQuery {viewer{login}}\"\n}", V));
         return new androidx.lifecycle.b(l1Var);
     }
 

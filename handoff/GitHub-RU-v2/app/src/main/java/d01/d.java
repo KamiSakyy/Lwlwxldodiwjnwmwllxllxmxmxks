@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import f1.e;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 
@@ -103,7 +103,7 @@ public final class d implements b {
     }
 
     public final int hashCode() {
-        int b = s0.b(this.d, h1.i(f4.b(this.b, this.a.hashCode() * 31, 31), this.c, 31), 31);
+        int b = s0.b(this.d, h1.i(f4Shadow.b(this.b, this.a.hashCode() * 31, 31), this.c, 31), 31);
         String str = this.e;
         int b2 = s0.b(this.h, i.e(h1.i((b + (str == null ? 0 : str.hashCode())) * 31, this.f, 31), 31, this.g), 31);
         String str2 = this.i;

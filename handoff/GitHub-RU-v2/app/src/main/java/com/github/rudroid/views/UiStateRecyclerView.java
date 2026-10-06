@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.appbar.AppBarLayout;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class UiStateRecyclerView extends RecyclerView {
@@ -87,10 +87,10 @@ public final class UiStateRecyclerView extends RecyclerView {
             if (z2) {
                 aVar_r7 = this.f1;
             }
-            cVar = new l7.c(aVar_r7, x61.m.l0(x61.m.l0(d0.n(eVar), list), d0.n(this.e1)));
+            cVar = new l7.c(aVar_r7, x61.m.l0(x61.m.l0(d0Shadow.n(eVar), list), d0Shadow.n(this.e1)));
         } else {
             this.e1 = null;
-            cVar = new l7.c(aVar_r7, x61.m.l0(d0.n(eVar), list));
+            cVar = new l7.c(aVar_r7, x61.m.l0(d0Shadow.n(eVar), list));
         }
         setConcatAdapter(cVar);
         setAdapter(getConcatAdapter());

@@ -2,7 +2,7 @@ package i01;
 
 import a0.s0;
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 import yz0.j3;
@@ -39,7 +39,7 @@ public final class b {
     }
 
     public final int hashCode() {
-        int b = f4.b(this.b, this.a.hashCode() * 31, 31);
+        int b = f4Shadow.b(this.b, this.a.hashCode() * 31, 31);
         Integer num = this.c;
         int b2 = s0.b(this.f, i.e(i.e((b + (num == null ? 0 : num.hashCode())) * 31, 31, this.d), 31, this.e), 31);
         j3 j3Var = this.g;

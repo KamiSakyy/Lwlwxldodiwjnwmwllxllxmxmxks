@@ -4,7 +4,7 @@ import hc0.h6;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class t1 implements aa.a {
@@ -33,7 +33,7 @@ public abstract class t1 implements aa.a {
         String str8 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar = h6.a;
+            aa.xShadow xVar = h6.a;
             switch (r0) {
                 case 0:
                     str2 = (String) aa.c.a.a(eVar, wVar);
@@ -153,7 +153,7 @@ public abstract class t1 implements aa.a {
         o0Var.b(fVar, wVar, s1Var.h);
         fVar.z0("startedAt");
         h6.Companion.getClass();
-        aa.x xVar = h6.a;
+        aa.xShadow xVar = h6.a;
         aa.c.b(wVar.e(xVar)).b(fVar, wVar, s1Var.i);
         no.a.e(fVar, "completedAt", wVar, xVar).b(fVar, wVar, s1Var.j);
         fVar.z0("permalink");

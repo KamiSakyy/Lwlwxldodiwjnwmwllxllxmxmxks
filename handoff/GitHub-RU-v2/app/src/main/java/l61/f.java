@@ -3,11 +3,11 @@ package l61;
 import androidx.lifecycle.k1;
 import androidx.lifecycle.o1;
 import b1.m;
-import w80.a0;
+import w80.a0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements o1 {
-    public static final a0 d = new a0(7);
+    public static final a0Shadow d = new a0Shadow(7);
     public p61.c a;
     public o1 b;
     public d c;

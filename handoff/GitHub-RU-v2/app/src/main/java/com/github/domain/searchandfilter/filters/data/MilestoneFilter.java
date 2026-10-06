@@ -13,14 +13,14 @@ import java.util.Iterator;
 import java.util.List;
 import k71.k;
 import k71.s;
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l81.n;
-import sy.d0;
+import sy.d0Shadow;
 import sy.w;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 import yz0.v2;
 
 @g81.e
@@ -48,11 +48,11 @@ public final class MilestoneFilter extends d {
     public /* synthetic */ MilestoneFilter(int i, l lVar, String str, List list) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, MilestoneFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, MilestoneFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {
-            this.v = r.r;
+            this.v = rShadow.r;
         } else {
             this.v = list;
         }
@@ -86,7 +86,7 @@ public final class MilestoneFilter extends d {
         m.n0(arrayList, new bm.b(sVar, arrayList2, 2));
         if (sVar.r) {
             NoMilestone.Companion.getClass();
-            return new MilestoneFilter(d0.n(NoMilestone.w));
+            return new MilestoneFilter(d0Shadow.n(NoMilestone.w));
         }
         if (arrayList2.isEmpty()) {
             return null;
@@ -112,7 +112,7 @@ public final class MilestoneFilter extends d {
             }
             arrayList.add(v2Var);
         }
-        return nVar.b(new k81.d(b91.g.C(((l81.c) nVar).b, x.a(v2.class)), 0), arrayList);
+        return nVar.b(new k81.d(b91.g.C(((l81.c) nVar).b, xShadow.a(v2.class)), 0), arrayList);
     }
 
     @Override // com.github.domain.searchandfilter.filters.data.d
@@ -135,7 +135,7 @@ public final class MilestoneFilter extends d {
     }
 
     public /* synthetic */ MilestoneFilter() {
-        this(r.r);
+        this(rShadow.r);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

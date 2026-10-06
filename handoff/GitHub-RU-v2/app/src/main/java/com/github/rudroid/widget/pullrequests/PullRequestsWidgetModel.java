@@ -2,7 +2,7 @@ package com.github.rudroid.widget.pullrequests;
 
 import com.github.rudroid.widget.WidgetUIState;
 import java.util.Map;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 
@@ -27,7 +27,7 @@ public final class PullRequestsWidgetModel {
 
     public /* synthetic */ PullRequestsWidgetModel(int i, Map map, WidgetUIState widgetUIState) {
         if (2 != (i & 2)) {
-            c1.l(i, 2, PullRequestsWidgetModel$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 2, PullRequestsWidgetModel$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 1) == 0) {

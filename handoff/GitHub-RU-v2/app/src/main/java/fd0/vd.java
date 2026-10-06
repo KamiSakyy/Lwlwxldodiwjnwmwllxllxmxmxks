@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vd implements aaShadow.a {
     public static final vd a = new vd();
-    public static final List b = sy.d0.n("mergePullRequest");
+    public static final List b = sy.d0Shadow.n("mergePullRequest");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

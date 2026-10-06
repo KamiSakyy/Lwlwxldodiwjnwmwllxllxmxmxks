@@ -10,7 +10,7 @@ import gn0.pb;
 import gn0.tb;
 import gn0.u10;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,9 +22,9 @@ public abstract class g {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Workflow");
+        List n = d0Shadow.n("Workflow");
         List list = h.a;
         s c = no.a.c(list, "selections", "Workflow", n, list);
         pb.Companion.getClass();

@@ -68,16 +68,16 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "reviewId");
-                return y71.n1.y(new cn.q(new d5(new y00.l(com.github.service.wrapper.b.a(this.t, new to(str), ga.h.t, false, null, 56), 10), 28), 24), this.u);
+                return y71.n1Shadow.y(new cn.q(new d5(new y00.l(com.github.service.wrapper.b.a(this.t, new to(str), ga.h.t, false, null, 56), 10), 28), 24), this.u);
             case 1:
                 k71.k.g(str, "reviewId");
-                return y71.n1.y(new t00.f8(2, new t00.q6(new y00.l(com.github.service.wrapper.b.a(this.t, new hs(str), ga.h.t, false, null, 56), 10), 14)), this.u);
+                return y71.n1Shadow.y(new t00.f8(2, new t00.q6(new y00.l(com.github.service.wrapper.b.a(this.t, new hs(str), ga.h.t, false, null, 56), 10), 14)), this.u);
             case 2:
                 k71.k.g(str, "reviewId");
-                return y71.n1.y(new t00.f8(10, new vb0.t3(new y00.l(com.github.service.wrapper.b.a(this.t, new on(str), ga.h.t, false, null, 56), 10), 25)), this.u);
+                return y71.n1Shadow.y(new t00.f8(10, new vb0.t3(new y00.l(com.github.service.wrapper.b.a(this.t, new on(str), ga.h.t, false, null, 56), 10), 25)), this.u);
             default:
                 k71.k.g(str, "reviewId");
-                return y71.n1.y(new t00.f8(17, new wy0.s6(new y00.l(com.github.service.wrapper.b.a(this.t, new kq(str), ga.h.t, false, null, 56), 10), 8)), this.u);
+                return y71.n1Shadow.y(new t00.f8(17, new wy0.s6(new y00.l(com.github.service.wrapper.b.a(this.t, new kq(str), ga.h.t, false, null, 56), 10), 8)), this.u);
         }
     }
 
@@ -85,13 +85,13 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
     public final y71.i b(String str) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new to(str), null, false, null, null, 58)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new to(str), null, false, null, null, 58)), this.u);
             case 1:
-                return y71.n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new hs(str), null, false, null, null, 58)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new hs(str), null, false, null, null, 58)), this.u);
             case 2:
-                return y71.n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new on(str), null, false, null, null, 58)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new on(str), null, false, null, null, 58)), this.u);
             default:
-                return y71.n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new kq(str), null, false, null, null, 58)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new kq(str), null, false, null, null, 58)), this.u);
         }
     }
 
@@ -99,13 +99,13 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
     public final Object c(String str, PullRequestReviewEvent pullRequestReviewEvent, String str2) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.s.d(new e20(str, t.q.pShadow(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 3), 6), 16), this.u);
+                return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.s.d(new e20(str, t.q.pShadow(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 3), 6), 16), this.u);
             case 1:
-                return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.s.d(new g80(str, y9.a.C(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 8), 6), 28), this.u);
+                return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.s.d(new g80(str, y9.a.C(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 8), 6), 28), this.u);
             case 2:
-                return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.s.d(new g00(str, k41.b.P(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 14), 6), 9), this.u);
+                return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.s.d(new g00(str, k41.b.P(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 14), 6), 9), this.u);
             default:
-                return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.s.d(new x50(str, b91.g.T(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 22), 6), 20), this.u);
+                return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.s.d(new x50(str, b91.g.T(pullRequestReviewEvent), str2 == null ? aa.t0.d : new aa.u0(str2)))), 10), new v4(this, null, 22), 6), 20), this.u);
         }
     }
 
@@ -213,7 +213,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                         Integer num = q3Var == null ? q3Var.c : null;
                         rm p = pullRequestReviewEvent2 == null ? t.q.pShadow(pullRequestReviewEvent2) : null;
                         aa1.bShadow bVar = aa.t0.d;
-                        return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.s.d(new kc0.b1(str3, p != null ? bVar : new aa.u0(p), str4 != null ? bVar : new aa.u0(str4), bVar))), 10), new m7.x(this, num, str4, (a71.c) null, 7), 6), 15), this.u);
+                        return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.s.d(new kc0.b1(str3, p != null ? bVar : new aa.u0(p), str4 != null ? bVar : new aa.u0(str4), bVar))), 10), new m7.x(this, num, str4, (a71.c) null, 7), 6), 15), this.u);
                     }
                 }
                 g9Var = new g9(this, (c71.c) cVar);
@@ -228,7 +228,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                 if (pullRequestReviewEvent2 == null) {
                 }
                 aa1.bShadow bVar2 = aa.t0.d;
-                return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.s.d(new kc0.b1(str3, p != null ? bVar2 : new aa.u0(p), str4 != null ? bVar2 : new aa.u0(str4), bVar2))), 10), new m7.x(this, num, str4, (a71.c) null, 7), 6), 15), this.u);
+                return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.s.d(new kc0.b1(str3, p != null ? bVar2 : new aa.u0(p), str4 != null ? bVar2 : new aa.u0(str4), bVar2))), 10), new m7.x(this, num, str4, (a71.c) null, 7), 6), 15), this.u);
             case 1:
                 if (cVar instanceof t00.f9) {
                     f9Var = (t00.f9) cVar;
@@ -267,7 +267,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                         Integer num2 = a4Var == null ? a4Var.c : null;
                         lz C = pullRequestReviewEvent3 == null ? y9.a.C(pullRequestReviewEvent3) : null;
                         aa1.bShadow bVar3 = aa.t0.d;
-                        return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.s.d(new jo.g1(str5, C != null ? bVar3 : new aa.u0(C), str6 != null ? bVar3 : new aa.u0(str6), bVar3))), 10), new m7.x(this, num2, str6, (a71.c) null, 13), 6), 27), this.u);
+                        return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.s.d(new jo.g1(str5, C != null ? bVar3 : new aa.u0(C), str6 != null ? bVar3 : new aa.u0(str6), bVar3))), 10), new m7.x(this, num2, str6, (a71.c) null, 13), 6), 27), this.u);
                     }
                 }
                 f9Var = new t00.f9(this, (c71.c) cVar);
@@ -282,7 +282,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                 if (pullRequestReviewEvent3 == null) {
                 }
                 aa1.bShadow bVar32 = aa.t0.d;
-                return y71.n1.y(new aq.c(new y71.y(new y00.l(in.r.h(this.s.d(new jo.g1(str5, C != null ? bVar32 : new aa.u0(C), str6 != null ? bVar32 : new aa.u0(str6), bVar32))), 10), new m7.x(this, num2, str6, (a71.c) null, 13), 6), 27), this.u);
+                return y71.n1Shadow.y(new aq.c(new y71.y(new y00.l(in.rShadow.h(this.s.d(new jo.g1(str5, C != null ? bVar32 : new aa.u0(C), str6 != null ? bVar32 : new aa.u0(str6), bVar32))), 10), new m7.x(this, num2, str6, (a71.c) null, 13), 6), 27), this.u);
             case 2:
                 if (cVar instanceof vb0.z6) {
                     z6Var = (vb0.z6) cVar;
@@ -321,7 +321,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                         Integer num3 = i3Var == null ? i3Var.c : null;
                         pl P = pullRequestReviewEvent4 == null ? k41.b.P(pullRequestReviewEvent4) : null;
                         aa1.bShadow bVar4 = aa.t0.d;
-                        return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.s.d(new u10.b1(str7, P != null ? bVar4 : new aa.u0(P), str8 != null ? bVar4 : new aa.u0(str8), bVar4))), 10), new m7.x(this, num3, str8, (a71.c) null, 15), 6), 8), this.u);
+                        return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.s.d(new u10.b1(str7, P != null ? bVar4 : new aa.u0(P), str8 != null ? bVar4 : new aa.u0(str8), bVar4))), 10), new m7.x(this, num3, str8, (a71.c) null, 15), 6), 8), this.u);
                     }
                 }
                 z6Var = new vb0.z6(this, (c71.c) cVar);
@@ -336,7 +336,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                 if (pullRequestReviewEvent4 == null) {
                 }
                 aa1.bShadow bVar42 = aa.t0.d;
-                return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.s.d(new u10.b1(str7, P != null ? bVar42 : new aa.u0(P), str8 != null ? bVar42 : new aa.u0(str8), bVar42))), 10), new m7.x(this, num3, str8, (a71.c) null, 15), 6), 8), this.u);
+                return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.s.d(new u10.b1(str7, P != null ? bVar42 : new aa.u0(P), str8 != null ? bVar42 : new aa.u0(str8), bVar42))), 10), new m7.x(this, num3, str8, (a71.c) null, 15), 6), 8), this.u);
             default:
                 if (cVar instanceof wy0.h8) {
                     h8Var = (wy0.h8) cVar;
@@ -375,7 +375,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                         Integer num4 = q3Var3 == null ? q3Var3.c : null;
                         qt T = pullRequestReviewEvent5 == null ? b91.g.T(pullRequestReviewEvent5) : null;
                         aa1.bShadow bVar5 = aa.t0.d;
-                        return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.s.d(new jn0.b1(str9, T != null ? bVar5 : new aa.u0(T), str10 != null ? bVar5 : new aa.u0(str10), bVar5))), 10), new m7.x(this, num4, str10, (a71.c) null, 21), 6), 19), this.u);
+                        return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.s.d(new jn0.b1(str9, T != null ? bVar5 : new aa.u0(T), str10 != null ? bVar5 : new aa.u0(str10), bVar5))), 10), new m7.x(this, num4, str10, (a71.c) null, 21), 6), 19), this.u);
                     }
                 }
                 h8Var = new wy0.h8(this, (c71.c) cVar);
@@ -390,7 +390,7 @@ public final class k9 implements z01.h1, yb0, mi0, y90, yf0 {
                 if (pullRequestReviewEvent5 == null) {
                 }
                 aa1.bShadow bVar52 = aa.t0.d;
-                return y71.n1.y(new tw0.i(new y71.y(new y00.l(in.r.h(this.s.d(new jn0.b1(str9, T != null ? bVar52 : new aa.u0(T), str10 != null ? bVar52 : new aa.u0(str10), bVar52))), 10), new m7.x(this, num4, str10, (a71.c) null, 21), 6), 19), this.u);
+                return y71.n1Shadow.y(new tw0.i(new y71.y(new y00.l(in.rShadow.h(this.s.d(new jn0.b1(str9, T != null ? bVar52 : new aa.u0(T), str10 != null ? bVar52 : new aa.u0(str10), bVar52))), 10), new m7.x(this, num4, str10, (a71.c) null, 21), 6), 19), this.u);
         }
     }
 

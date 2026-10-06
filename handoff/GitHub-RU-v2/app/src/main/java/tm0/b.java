@@ -18,7 +18,7 @@ import v71.v;
 import w51.r;
 import wy0.p4;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 import z01.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -76,13 +76,13 @@ public final class b implements l0, yb0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k.g(str, "text");
-                return n1.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (c) null, 3)), 4), this.s);
+                return n1Shadow.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (c) null, 3)), 4), this.s);
             case 1:
                 k.g(str, "text");
-                return n1.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (c) null, 7)), 18), this.s);
+                return n1Shadow.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (c) null, 7)), 18), this.s);
             default:
                 k.g(str, "text");
-                return n1.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (c) null, 8)), 21), this.s);
+                return n1Shadow.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (c) null, 8)), 21), this.s);
         }
     }
 

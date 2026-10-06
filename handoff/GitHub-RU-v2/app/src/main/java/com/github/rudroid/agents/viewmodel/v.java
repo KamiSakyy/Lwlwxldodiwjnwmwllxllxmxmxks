@@ -5,7 +5,7 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.common.logging.LogTag;
 import java.util.LinkedHashSet;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 @LogTag(tag = "ObserveAgentTaskCreationViewModel")
@@ -45,7 +45,7 @@ public final class v extends k1 {
         this.f8403t = aVar;
         this.f8404u = eVar;
         this.f8406w = new LinkedHashSet();
-        y1 c10 = n1.c((Object) null);
+        y1 c10 = n1Shadow.c((Object) null);
         this.f8407x = c10;
         this.f8408y = new y00.l(c10, 10);
     }
@@ -54,7 +54,7 @@ public final class v extends k1 {
         this.f8406w.add(str);
         q1 q1Var = this.f8405v;
         if (q1Var == null || !q1Var.f()) {
-            this.f8405v = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new z(this, null), 3);
+            this.f8405v = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new z(this, null), 3);
         }
     }
 }

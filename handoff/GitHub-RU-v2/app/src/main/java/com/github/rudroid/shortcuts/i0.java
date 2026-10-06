@@ -18,7 +18,7 @@ import java.util.List;
 import rm0.r3Shadow;
 import t00.f8;
 import wy0.p4;
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.shortcuts.ShortcutsOverviewViewModel$1", f = "ShortcutsOverviewViewModel.kt", l = {54}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -89,7 +89,7 @@ final class i0 extends c71.j implements j71.e {
             cVar2.getClass();
             um.r rVar = cVar2.a;
             rVar.getClass();
-            r3Shadow l = n1.l(f8Var, r3Var, new um.j(rVar.a.b(d2), rVar, 0), new g0(4, null));
+            r3Shadow l = n1Shadow.l(f8Var, r3Var, new um.j(rVar.a.b(d2), rVar, 0), new g0(4, null));
             h0 h0Var = new h0(n0Var);
             this.v = 1;
             if (l.b(h0Var, this) == aVar) {

@@ -3,7 +3,7 @@ package t10;
 import com.github.rudroid.copilot.h1;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v extends a {
@@ -58,7 +58,7 @@ public final class v extends a {
     }
 
     public final int hashCode() {
-        return this.f.hashCode() + ((this.e.hashCode() + f4.b(this.d, h1.i(x.i.e(this.a.hashCode() * 31, 31, this.b), this.c, 31), 31)) * 31);
+        return this.f.hashCode() + ((this.e.hashCode() + f4Shadow.b(this.d, h1.i(x.i.e(this.a.hashCode() * 31, 31, this.b), this.c, 31), 31)) * 31);
     }
 
     public final String toString() {

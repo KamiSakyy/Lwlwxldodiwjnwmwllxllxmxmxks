@@ -6,7 +6,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.w0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,10 +25,10 @@ public final class b0 extends k1 {
         this.s = cVar;
         this.t = d0Var;
         this.u = f0Var;
-        y1 c = n1.c(g1.a.c(g1.Companion));
+        y1 c = n1Shadow.c(g1.a.c(g1.Companion));
         this.v = c;
         this.w = new i1(c);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new v(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v(this, null), 3);
     }
 
     public final void P() {

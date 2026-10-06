@@ -8,7 +8,7 @@ import m10.yi;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v0 implements aa.a {
     public static final v0 a = new v0();
-    public static final List b = sy.d0.o("id", "title", "titleHTML", "number", "repository", "stateReason", "state", "duplicateOf", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "title", "titleHTML", "number", "repository", "stateReason", "state", "duplicateOf", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002d, code lost:
     
@@ -141,7 +141,7 @@ public final class v0 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {

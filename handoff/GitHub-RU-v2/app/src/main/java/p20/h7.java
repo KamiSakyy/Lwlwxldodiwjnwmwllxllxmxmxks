@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h7 implements aaShadow.a {
-    public static final List a = sy.d0.n("__typename");
+    public static final List a = sy.d0Shadow.n("__typename");
 
     public static u10.ya c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -516,7 +516,7 @@ public final /* synthetic */ class g implements j71.f {
                         i3++;
                         int i4 = i2 + 1;
                         if (i2 < 0) {
-                            sy.d0.x();
+                            sy.d0Shadow.x();
                             throw null;
                         }
                         d.a(null, fVar3.r, i4, (g3.g) obj7, fVar2, null, sVar2, (intValue2 << 3) & 112, 33);
@@ -650,7 +650,7 @@ public final /* synthetic */ class g implements j71.f {
                     sVar7.c0(1641503428);
                     for (PullsWidgetFilter pullsWidgetFilter : PullsWidgetFilter.getEntries()) {
                         boolean z5 = f1Var3.getValue() == pullsWidgetFilter;
-                        w1.r f2 = f0.o.f(oVar, ih.d.b(sVar7).d, d2.a0.b);
+                        w1.r f2 = f0.o.f(oVar, ih.d.b(sVar7).d, d2.a0Shadow.b);
                         String p0 = i4.p0(com.github.rudroid.widget.pullrequests.r.a(pullsWidgetFilter), sVar7);
                         String p02 = i4.p0(z5 ? 2131954108 : 2131953737, sVar7);
                         boolean f3 = sVar7.f(f1Var3) | sVar7.d(pullsWidgetFilter.ordinal()) | sVar7.f(f1Var4);
@@ -683,55 +683,55 @@ public final /* synthetic */ class g implements j71.f {
                 int[] iArr = a0.a.c;
                 switch (iArr[shortcutColor.ordinal()]) {
                     case 1:
-                        aVar2 = new h6.a(kh.d.u, kh.c.l);
+                        aVar2 = new h6.a(kh.d.u, kh.cShadow.l);
                         break;
                     case 2:
-                        aVar2 = new h6.a(kh.d.J, kh.c.J);
+                        aVar2 = new h6.a(kh.d.J, kh.cShadow.J);
                         break;
                     case 3:
-                        aVar2 = new h6.a(kh.d.A, kh.c.z);
+                        aVar2 = new h6.a(kh.d.A, kh.cShadow.z);
                         break;
                     case 4:
-                        aVar2 = new h6.a(kh.d.b0, kh.c.e0);
+                        aVar2 = new h6.a(kh.d.b0, kh.cShadow.e0);
                         break;
                     case 5:
-                        aVar2 = new h6.a(kh.d.d, kh.c.a);
+                        aVar2 = new h6.a(kh.d.d, kh.cShadow.a);
                         break;
                     case 6:
-                        aVar2 = new h6.a(kh.d.X, kh.c.a0);
+                        aVar2 = new h6.a(kh.d.X, kh.cShadow.a0);
                         break;
                     case 7:
-                        aVar2 = new h6.a(kh.d.U, kh.c.V);
+                        aVar2 = new h6.a(kh.d.U, kh.cShadow.V);
                         break;
                     default:
                         throw new NoWhenBranchMatchedException();
                 }
                 switch (iArr[shortcutColor.ordinal()]) {
                     case 1:
-                        aVar3 = new h6.a(kh.d.h, kh.c.u);
+                        aVar3 = new h6.a(kh.d.h, kh.cShadow.u);
                         break;
                     case 2:
-                        aVar3 = new h6.a(kh.d.D, kh.c.P);
+                        aVar3 = new h6.a(kh.d.D, kh.cShadow.P);
                         break;
                     case 3:
-                        aVar3 = new h6.a(kh.d.w, kh.c.F);
+                        aVar3 = new h6.a(kh.d.w, kh.cShadow.F);
                         break;
                     case 4:
-                        aVar3 = new h6.a(kh.d.Y, kh.c.i0);
+                        aVar3 = new h6.a(kh.d.Y, kh.cShadow.i0);
                         break;
                     case 5:
-                        aVar3 = new h6.a(kh.d.a, kh.c.e);
+                        aVar3 = new h6.a(kh.d.a, kh.cShadow.e);
                         break;
                     case 6:
-                        aVar3 = new h6.a(kh.d.V, kh.c.c0);
+                        aVar3 = new h6.a(kh.d.V, kh.cShadow.c0);
                         break;
                     case 7:
-                        aVar3 = new h6.a(kh.d.O, kh.c.Z);
+                        aVar3 = new h6.a(kh.d.O, kh.cShadow.Z);
                         break;
                     default:
                         throw new NoWhenBranchMatchedException();
                 }
-                sy.r.a(new z5.a(e2), i21.a.C(k41.b.M(ih.a.N).d(new z5.c(aVar3)).d(new b6.w(new n6.b(2))), 4), 0, new z5.d(new z5.q(aVar2)), sVar8, 32816, 8);
+                sy.rShadow.a(new z5.a(e2), i21.a.C(k41.b.M(ih.a.N).d(new z5.c(aVar3)).d(new b6.w(new n6.b(2))), 4), 0, new z5.d(new z5.q(aVar2)), sVar8, 32816, 8);
                 m7.y.f(k41.b.c0(ih.a.l), sVar8, 0);
                 m71.a.d(storedShortcutModel.t, (z5.n) null, eVar3, 1, sVar8, 3072, 2);
                 return a0Var;
@@ -894,16 +894,16 @@ public final /* synthetic */ class g implements j71.f {
                 } else {
                     sVar12.q0();
                 }
-                v2.e eVar6 = v2.g.f;
+                v2.eShadow eVar6 = v2.g.f;
                 androidx.compose.runtime.t.I(sVar12, eVar6, a6);
-                v2.e eVar7 = v2.g.e;
+                v2.eShadow eVar7 = v2.g.e;
                 androidx.compose.runtime.t.I(sVar12, eVar7, l5);
                 Integer valueOf = Integer.valueOf(hashCode5);
-                v2.e eVar8 = v2.g.g;
+                v2.eShadow eVar8 = v2.g.g;
                 androidx.compose.runtime.t.w(sVar12, valueOf, eVar8);
                 v2.d dVar2 = v2.g.h;
                 androidx.compose.runtime.t.E(sVar12, dVar2);
-                v2.e eVar9 = v2.g.d;
+                v2.eShadow eVar9 = v2.g.d;
                 androidx.compose.runtime.t.I(sVar12, eVar9, c5);
                 ub.b(i4.q0(2131952139, new Object[]{aVar11.b.getName()}, sVar12), (w1.r) null, 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar12).n, sVar12, 0, 0, 131070);
                 androidx.compose.foundation.layout.b.g(sVar12, p2.f(oVar, 4));

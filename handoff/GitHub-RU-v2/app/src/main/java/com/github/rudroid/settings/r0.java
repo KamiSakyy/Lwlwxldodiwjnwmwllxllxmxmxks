@@ -30,17 +30,17 @@ public final class r0 extends androidx.lifecycle.k1 implements a1, com.github.ru
         this.u = dVar;
         this.v = gVar;
         this.w = cVar;
-        y71.y1 c = y71.n1.c(a1.a.c.b);
+        y71.y1 c = y71.n1Shadow.c(a1.a.c.b);
         this.x = c;
         this.y = new androidx.lifecycle.p0();
         v71.b0.j(androidx.lifecycle.d1.k(this).r);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new y0(this, null), 3);
-        y71.n1.A(new y71.y(c, new q0(this, null), 6), androidx.lifecycle.d1.k(this));
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new y0(this, null), 3);
+        y71.n1Shadow.A(new y71.y(c, new q0(this, null), 6), androidx.lifecycle.d1.k(this));
     }
 
     @Override // com.github.rudroid.settings.a1
     public final void B() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new z0(this, new p0(this, 1), null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new z0(this, new p0(this, 1), null), 3);
     }
 
     @Override // com.github.rudroid.settings.a1
@@ -59,7 +59,7 @@ public final class r0 extends androidx.lifecycle.k1 implements a1, com.github.ru
 
     @Override // com.github.rudroid.settings.a1
     public final void I(boolean z) {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new s0(this, z, new p0(this, 0), null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new s0(this, z, new p0(this, 0), null), 3);
     }
 
     public final LocalTime P() {

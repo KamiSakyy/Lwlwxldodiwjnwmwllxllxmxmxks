@@ -16,9 +16,9 @@ public abstract class m3 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("PullRequest");
+        List n = sy.d0Shadow.n("PullRequest");
         List list = dq.p0.a;
         List r = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "PullRequest", n, list)});
         ch.Companion.getClass();
@@ -27,9 +27,9 @@ public abstract class m3 {
         l60.Companion.getClass();
         aa.x0 x0Var = l60.a;
         List r2 = x61.l.r(new aa.m[]{mVar2, new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, r)});
-        List r3 = x61.l.r(new aa.m[]{new aa.m("issueCount", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0.n("PullRequest"), list)}))});
-        List r4 = x61.l.r(new aa.m[]{new aa.m("issueCount", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0.n("PullRequest"), list)}))});
-        List r5 = x61.l.r(new aa.m[]{new aa.m("issueCount", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0.n("PullRequest"), list)}))});
+        List r3 = x61.l.r(new aa.m[]{new aa.m("issueCount", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0Shadow.n("PullRequest"), list)}))});
+        List r4 = x61.l.r(new aa.m[]{new aa.m("issueCount", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0Shadow.n("PullRequest"), list)}))});
+        List r5 = x61.l.r(new aa.m[]{new aa.m("issueCount", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("nodes", v8.l0.a(x0Var), (String) null, rVar, rVar, x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0Shadow.n("PullRequest"), list)}))});
         n60.Companion.getClass();
         aa.q0 q0Var = n60.a;
         aa.r b2 = v8.l0.b(q0Var);

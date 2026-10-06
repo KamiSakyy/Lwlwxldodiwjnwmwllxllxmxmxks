@@ -13,7 +13,7 @@ import w61.a0;
 import wy0.n6;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class n {
+public final class nShadow {
     /* JADX WARN: Removed duplicated region for block: B:115:0x029c  */
     /* JADX WARN: Removed duplicated region for block: B:117:0x0142  */
     /* JADX WARN: Removed duplicated region for block: B:124:0x011b  */
@@ -214,7 +214,7 @@ public final class n {
                                 j71.a aVar2 = aVar;
                                 boolean f4 = sVar2.f(aVar2);
                                 Object N = sVar2.N();
-                                androidx.compose.runtime.i iVar = androidx.compose.runtime.n.a;
+                                androidx.compose.runtime.i iVar = androidx.compose.runtime.nShadow.a;
                                 Object obj3 = N;
                                 if (f4 || N == iVar) {
                                     qd.g gVar = new qd.g(17, aVar2);

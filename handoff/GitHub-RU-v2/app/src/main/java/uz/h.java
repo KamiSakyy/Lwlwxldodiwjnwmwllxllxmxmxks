@@ -10,7 +10,7 @@ import m10.ch;
 import m10.eh;
 import m10.pt;
 import m10.ww;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,9 +22,9 @@ public abstract class h {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2SingleSelectFieldOption");
+        List n = d0Shadow.n("ProjectV2SingleSelectFieldOption");
         List list = k.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2SingleSelectFieldOption", n, list)});
         ah.Companion.getClass();

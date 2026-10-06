@@ -168,7 +168,7 @@ public abstract class l7 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -252,7 +252,7 @@ public abstract class l7 implements aa.a {
                     long nextLong2 = eVar.nextLong();
                     if (nextLong2 > 2147483647L) {
                         while (nextLong2 > 2147483647L) {
-                            nextLong2 = jo.f4.c(1, nextLong2, "substring(...)");
+                            nextLong2 = jo.f4Shadow.c(1, nextLong2, "substring(...)");
                         }
                         valueOf2 = Integer.valueOf((int) nextLong2);
                     } else {
@@ -290,7 +290,7 @@ public abstract class l7 implements aa.a {
                     long nextLong3 = eVar.nextLong();
                     if (nextLong3 > 2147483647L) {
                         while (nextLong3 > 2147483647L) {
-                            nextLong3 = jo.f4.c(1, nextLong3, "substring(...)");
+                            nextLong3 = jo.f4Shadow.c(1, nextLong3, "substring(...)");
                         }
                         valueOf3 = Integer.valueOf((int) nextLong3);
                     } else {
@@ -328,7 +328,7 @@ public abstract class l7 implements aa.a {
                     long nextLong4 = eVar.nextLong();
                     if (nextLong4 > 2147483647L) {
                         while (nextLong4 > 2147483647L) {
-                            nextLong4 = jo.f4.c(1, nextLong4, "substring(...)");
+                            nextLong4 = jo.f4Shadow.c(1, nextLong4, "substring(...)");
                         }
                         valueOf4 = Integer.valueOf((int) nextLong4);
                     } else {
@@ -476,7 +476,7 @@ public abstract class l7 implements aa.a {
                     long nextLong5 = eVar.nextLong();
                     if (nextLong5 > 2147483647L) {
                         while (nextLong5 > 2147483647L) {
-                            nextLong5 = jo.f4.c(1, nextLong5, "substring(...)");
+                            nextLong5 = jo.f4Shadow.c(1, nextLong5, "substring(...)");
                         }
                         valueOf5 = Integer.valueOf((int) nextLong5);
                     } else {
@@ -723,10 +723,10 @@ public abstract class l7 implements aa.a {
         wVar.e(sa.a).b(fVar, wVar, g6Var.i);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(g6Var.j, bVar2, fVar, wVar, "viewerDidAuthor");
-        jo.f4.C(g6Var.k, bVar2, fVar, wVar, "viewerCanChangeBaseBranch");
-        jo.f4.C(g6Var.l, bVar2, fVar, wVar, "locked");
-        jo.f4.C(g6Var.m, bVar2, fVar, wVar, "author");
+        jo.f4Shadow.C(g6Var.j, bVar2, fVar, wVar, "viewerDidAuthor");
+        jo.f4Shadow.C(g6Var.k, bVar2, fVar, wVar, "viewerCanChangeBaseBranch");
+        jo.f4Shadow.C(g6Var.l, bVar2, fVar, wVar, "locked");
+        jo.f4Shadow.C(g6Var.m, bVar2, fVar, wVar, "author");
         aa.c.b(aa.c.c(i6.a, true)).b(fVar, wVar, g6Var.n);
         fVar.z0("isReadByViewer");
         aa.c.k.b(fVar, wVar, g6Var.o);
@@ -753,7 +753,7 @@ public abstract class l7 implements aa.a {
         fVar.z0("reviewDecision");
         aa.c.b(n10.b.t).b(fVar, wVar, g6Var.A);
         fVar.z0("isDraft");
-        jo.f4.C(g6Var.B, bVar2, fVar, wVar, "requiredStatusChecks");
+        jo.f4Shadow.C(g6Var.B, bVar2, fVar, wVar, "requiredStatusChecks");
         aa.c.c(m7.a, false).b(fVar, wVar, g6Var.C);
         fVar.z0("baseRef");
         aa.c.b(aa.c.c(j6.a, false)).b(fVar, wVar, g6Var.D);
@@ -779,10 +779,10 @@ public abstract class l7 implements aa.a {
         fVar.z0("viewerLatestReview");
         aa.c.b(aa.c.c(r7.a, false)).b(fVar, wVar, g6Var.O);
         fVar.z0("viewerCanReopen");
-        jo.f4.C(g6Var.P, bVar2, fVar, wVar, "viewerCanMergeAsAdmin");
-        jo.f4.C(g6Var.Q, bVar2, fVar, wVar, "viewerCanAssign");
-        jo.f4.C(g6Var.R, bVar2, fVar, wVar, "viewerCanLabel");
-        jo.f4.C(g6Var.S, bVar2, fVar, wVar, "viewerCanUpdateBranch");
+        jo.f4Shadow.C(g6Var.P, bVar2, fVar, wVar, "viewerCanMergeAsAdmin");
+        jo.f4Shadow.C(g6Var.Q, bVar2, fVar, wVar, "viewerCanAssign");
+        jo.f4Shadow.C(g6Var.R, bVar2, fVar, wVar, "viewerCanLabel");
+        jo.f4Shadow.C(g6Var.S, bVar2, fVar, wVar, "viewerCanUpdateBranch");
         bVar2.b(fVar, wVar, Boolean.valueOf(g6Var.T));
         List list = ar.e.a;
         ar.e.d(fVar, wVar, g6Var.U);

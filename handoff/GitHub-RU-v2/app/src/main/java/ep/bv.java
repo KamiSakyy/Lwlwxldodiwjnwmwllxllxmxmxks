@@ -7,7 +7,7 @@ import jo.p80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bv implements aaShadow.a {
     public static final bv a = new bv();
-    public static final List b = sy.d0.n("subscribeToCopilotLimited");
+    public static final List b = sy.d0Shadow.n("subscribeToCopilotLimited");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

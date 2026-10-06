@@ -9,7 +9,7 @@ import kc0.r60;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class et implements aaShadow.a {
     public static final et a = new et();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "url", "state", "bodyHtml", "milestone", "projectCards", "viewerCanReopen"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "url", "state", "bodyHtml", "milestone", "projectCards", "viewerCanReopen"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003c, code lost:
     

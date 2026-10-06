@@ -10,7 +10,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 import xn.g3;
 
 @e
@@ -129,7 +129,7 @@ public final class AgentTaskSessionResponse {
         } else {
             this.o = str10;
         }
-        this.p = (32768 & i) == 0 ? r.r : list;
+        this.p = (32768 & i) == 0 ? rShadow.r : list;
         if ((65536 & i) == 0) {
             this.q = null;
         } else {

@@ -18,7 +18,7 @@ import okhttp3.internal.http2.ConnectionShutdownException;
 import okhttp3.internal.http2.StreamResetException;
 import q81.d0;
 import q81.u;
-import q81.v;
+import q81.vShadow;
 import x81.a0;
 import x81.w;
 import x81.x;
@@ -30,7 +30,7 @@ public final class n extends x81.l implements v81.d {
     public Socket d;
     public Socket e;
     public q81.m f;
-    public v g;
+    public vShadow g;
     public l51.h h;
     public int i;
     public x81.o j;
@@ -43,7 +43,7 @@ public final class n extends x81.l implements v81.d {
     public ArrayList q;
     public long r;
 
-    public n(t81.e eVar, t0 t0Var, d0 d0Var, Socket socket, Socket socket2, q81.m mVar, v vVar, l51.h hVar, int i) {
+    public n(t81.e eVar, t0 t0Var, d0 d0Var, Socket socket, Socket socket2, q81.m mVar, vShadow vVar, l51.h hVar, int i) {
         k71.k.g(eVar, "taskRunner");
         k71.k.g(t0Var, "connectionPool");
         k71.k.g(d0Var, "route");
@@ -256,8 +256,8 @@ public final class n extends x81.l implements v81.d {
 
     public final void i() {
         this.r = System.nanoTime();
-        v vVar = this.g;
-        if (vVar == v.w || vVar == v.x) {
+        vShadow vVar = this.g;
+        if (vVar == vShadow.w || vVar == vShadow.x) {
             this.e.setSoTimeout(0);
             x81.b bVar = x81.b.a;
             t81.e eVar = this.b;

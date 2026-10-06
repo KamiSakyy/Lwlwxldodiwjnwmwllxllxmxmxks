@@ -37,7 +37,7 @@ public final class e implements bm.k, x, a71.g {
         k71.k.g(list, "protocols");
         ArrayList arrayList = new ArrayList();
         for (Object obj : list) {
-            if (((q81.v) obj) != q81.v.t) {
+            if (((q81.vShadow) obj) != q81.vShadow.t) {
                 arrayList.add(obj);
             }
         }
@@ -47,7 +47,7 @@ public final class e implements bm.k, x, a71.g {
         while (i < size) {
             Object obj2 = arrayList.get(i);
             i++;
-            arrayList2.add(((q81.v) obj2).r);
+            arrayList2.add(((q81.vShadow) obj2).r);
         }
         return arrayList2;
     }

@@ -13,7 +13,7 @@ import pz0.su;
 import pz0.td;
 import pz0.wk;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,15 +25,15 @@ public abstract class b {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         x xVar2 = td.a;
         s mVar2 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = vu0.g.a;
         s c = no.a.c(list, "selections", "PullRequest", n, list);
-        List n2 = d0.n("Issue");
+        List n2 = d0Shadow.n("Issue");
         List list2 = vu0.a.a;
         List r = l.r(new s[]{mVar, mVar2, c, no.a.c(list2, "selections", "Issue", n2, list2)});
         wk.Companion.getClass();

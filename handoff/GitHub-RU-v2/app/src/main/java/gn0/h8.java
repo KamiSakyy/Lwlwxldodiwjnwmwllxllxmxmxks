@@ -8,8 +8,8 @@ public abstract class h8 {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        a = new aa.q0("DeploymentStatus", n, sy.d0.n(yh.a));
+        a = new aa.q0("DeploymentStatus", n, sy.d0Shadow.n(yh.a));
     }
 }

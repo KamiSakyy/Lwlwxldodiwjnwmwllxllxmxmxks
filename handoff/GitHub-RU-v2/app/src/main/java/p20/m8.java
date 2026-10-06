@@ -6,7 +6,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m8 implements aaShadow.a {
     public static final m8 a = new m8();
-    public static final List b = sy.d0.o("__typename", "oid");
+    public static final List b = sy.d0Shadow.o("__typename", "oid");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         u10.oc ocVar;

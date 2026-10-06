@@ -7,7 +7,7 @@ import kc0.x50;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ss implements aaShadow.a {
     public static final ss a = new ss();
-    public static final List b = sy.d0.n("updateDiscussion");
+    public static final List b = sy.d0Shadow.n("updateDiscussion");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

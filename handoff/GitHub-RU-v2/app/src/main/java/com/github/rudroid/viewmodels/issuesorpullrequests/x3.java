@@ -20,7 +20,7 @@ public final /* synthetic */ class x3 implements j71.c {
                 fl.c cVar2 = fl.c.A;
                 w2 w2Var = this.s;
                 if (cVar == cVar2) {
-                    v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0) null, new f5(w2Var, bVar, null), 3);
+                    v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0Shadow) null, new f5(w2Var, bVar, null), 3);
                 } else {
                     w2.S(w2Var, bVar);
                 }

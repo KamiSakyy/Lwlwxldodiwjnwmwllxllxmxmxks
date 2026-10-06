@@ -99,9 +99,9 @@ public class h {
         f fVar = f.z;
         long j = andIncrement / j.f;
         loop0: while (true) {
-            b = a81.b.b(kVar, j, fVar);
-            if (!a81.b.e(b)) {
-                r c = a81.b.c(b);
+            b = a81.bShadow.b(kVar, j, fVar);
+            if (!a81.bShadow.e(b)) {
+                r c = a81.bShadow.c(b);
                 while (true) {
                     r rVar = (r) atomicReferenceFieldUpdater.get(this);
                     if (rVar.t >= c.t) {
@@ -125,12 +125,12 @@ public class h {
                 break;
             }
         }
-        k kVar2 = (k) a81.b.c(b);
+        k kVar2 = (k) a81.bShadow.c(b);
         AtomicReferenceArray atomicReferenceArray = kVar2.v;
         int i = (int) (andIncrement % j.f);
         while (!atomicReferenceArray.compareAndSet(i, null, a2Var)) {
             if (atomicReferenceArray.get(i) != null) {
-                t tVar = j.b;
+                t tVar = jShadow.b;
                 t tVar2 = j.c;
                 while (!atomicReferenceArray.compareAndSet(i, tVar, tVar2)) {
                     if (atomicReferenceArray.get(i) != tVar) {
@@ -171,11 +171,11 @@ public class h {
             long j = andIncrement2 / j.f;
             g gVar = g.z;
             while (true) {
-                b = a81.b.b(kVar, j, gVar);
-                if (a81.b.e(b)) {
+                b = a81.bShadow.b(kVar, j, gVar);
+                if (a81.bShadow.e(b)) {
                     break;
                 }
-                r c = a81.b.c(b);
+                r c = a81.bShadow.c(b);
                 while (true) {
                     r rVar = (r) atomicReferenceFieldUpdater.get(this);
                     if (rVar.t >= c.t) {
@@ -196,22 +196,22 @@ public class h {
                     }
                 }
             }
-            k kVar2 = (k) a81.b.c(b);
+            k kVar2 = (k) a81.bShadow.c(b);
             AtomicReferenceArray atomicReferenceArray = kVar2.v;
             kVar2.a();
             z = false;
             if (kVar2.t <= j) {
                 int i3 = (int) (andIncrement2 % j.f);
-                Object andSet = atomicReferenceArray.getAndSet(i3, j.b);
+                Object andSet = atomicReferenceArray.getAndSet(i3, jShadow.b);
                 if (andSet == null) {
-                    int i4 = j.a;
+                    int i4 = jShadow.a;
                     for (int i5 = 0; i5 < i4; i5++) {
                         if (atomicReferenceArray.get(i3) == j.c) {
                             z = true;
                             break;
                         }
                     }
-                    t tVar = j.b;
+                    t tVar = jShadow.b;
                     t tVar2 = j.d;
                     while (true) {
                         if (!atomicReferenceArray.compareAndSet(i3, tVar, tVar2)) {

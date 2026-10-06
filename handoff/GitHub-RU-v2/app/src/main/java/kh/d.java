@@ -1,6 +1,6 @@
 package kh;
 
-import d2.a0;
+import d2.a0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {

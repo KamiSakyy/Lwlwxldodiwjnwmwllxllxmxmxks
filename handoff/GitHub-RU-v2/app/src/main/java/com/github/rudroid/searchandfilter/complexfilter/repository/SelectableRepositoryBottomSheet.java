@@ -9,7 +9,7 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.q0;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.z;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableRepositoryBottomSheet extends Hilt_SelectableRepositoryBottomSheet {
@@ -235,14 +235,14 @@ public final class SelectableRepositoryBottomSheet extends Hilt_SelectableReposi
 
     static {
         r71.e pVar = new k71.p(SelectableRepositoryBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public SelectableRepositoryBottomSheet() {
         w61.h s = sy.w.s(w61.i.s, new k(new j()));
-        this.Y0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.complexfilter.repository.a.class), new l(s), new n(s), new m(s));
+        this.Y0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.complexfilter.repository.a.class), new l(s), new n(s), new m(s));
         this.Z0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(29));
         this.a1 = sy.w.t(new t(this, 0));
         this.b1 = 2131954229;
@@ -288,7 +288,7 @@ public final class SelectableRepositoryBottomSheet extends Hilt_SelectableReposi
         k71.k.g(view, "view");
         super.c4(view, bundle);
         com.github.rudroid.searchandfilter.complexfilter.repository.a aVar = (com.github.rudroid.searchandfilter.complexfilter.repository.a) this.Y0.getValue();
-        d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.repository.l(new y00.l(aVar.t.b, 10)), aVar.G)).e(F3(), new i(new z(22, this)));
+        d1.a(n1Shadow.y(new com.github.rudroid.searchandfilter.complexfilter.repository.l(new y00.l(aVar.t.b, 10)), aVar.G)).e(F3(), new i(new z(22, this)));
     }
 
 

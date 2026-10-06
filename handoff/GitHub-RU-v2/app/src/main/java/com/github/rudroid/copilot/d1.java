@@ -25,13 +25,13 @@ public final class d1 {
         public static final /* synthetic */ int[] f9525a;
 
         static {
-            int[] iArr = new int[xn.w.values().length];
+            int[] iArr = new int[xn.wShadow.values().length];
             try {
                 iArr[1] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                xn.w wVar = xn.w.r;
+                xn.wShadow wVar = xn.wShadow.r;
                 iArr[2] = 2;
             } catch (NoSuchFieldError unused2) {
             }
@@ -54,7 +54,7 @@ public final class d1 {
                     break;
                 }
                 Object next = it.next();
-                if (k71.x.a(((b5) next).getClass()).equals(eVar)) {
+                if (k71.xShadow.a(((b5) next).getClass()).equals(eVar)) {
                     obj = next;
                     break;
                 }

@@ -4,7 +4,7 @@ import gn0.l2;
 import gn0.r2;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class q0 implements aa.a {
@@ -24,7 +24,7 @@ public abstract class q0 implements aa.a {
         l2 l2Var = null;
         Boolean bool2 = null;
         rc0.u0 u0Var = null;
-        rc0.f1 f1Var = null;
+        rc0.f1Shadow f1Var = null;
         rc0.x0 x0Var = null;
         rc0.c1 c1Var = null;
         rc0.d1 d1Var = null;
@@ -63,7 +63,7 @@ public abstract class q0 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -79,7 +79,7 @@ public abstract class q0 implements aa.a {
                     num2 = num;
                 case 6:
                     num = num2;
-                    f1Var = (rc0.f1) aa.c.b(aa.c.c(u0.a, true)).a(eVar, wVar);
+                    f1Var = (rc0.f1Shadow) aa.c.b(aa.c.c(u0.a, true)).a(eVar, wVar);
                     num2 = num;
                 case 7:
                     num = num2;
@@ -138,7 +138,7 @@ public abstract class q0 implements aa.a {
         fVar.z0("duration");
         fVar.z(b1Var.d);
         fVar.z0("rerunnable");
-        f4.C(b1Var.e, aa.c.f, fVar, wVar, "artifacts");
+        f4Shadow.C(b1Var.e, aa.c.f, fVar, wVar, "artifacts");
         aa.c.b(aa.c.c(k0.a, false)).b(fVar, wVar, b1Var.f);
         fVar.z0("workflowRun");
         aa.c.b(aa.c.c(u0.a, true)).b(fVar, wVar, b1Var.g);

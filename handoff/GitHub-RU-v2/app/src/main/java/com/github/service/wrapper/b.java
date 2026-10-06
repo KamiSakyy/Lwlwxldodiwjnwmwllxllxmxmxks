@@ -7,7 +7,7 @@ import aa.n0;
 import aa.r0;
 import aa.s0;
 import aa.w0;
-import in.r;
+import in.rShadow;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import k71.k;
@@ -22,9 +22,9 @@ public interface b extends a {
         boolean z2 = z;
         Set set = linkedHashSet;
         if ((i & 8) != 0) {
-            set = r.a;
+            set = rShadow.a;
         }
-        return bVar.m(w0Var, hVar, z2, set, r.b, new com.github.rudroid.utilities.ui.emojipicker.e(15));
+        return bVar.m(w0Var, hVar, z2, set, rShadow.b, new com.github.rudroid.utilities.ui.emojipicker.e(15));
     }
 
     static f8 n(b bVar, i0 i0Var, String str) {
@@ -39,11 +39,11 @@ public interface b extends a {
         }
         boolean z2 = z;
         if ((i & 8) != 0) {
-            set = r.a;
+            set = rShadow.a;
         }
         Set set3 = set;
         if ((i & 16) != 0) {
-            set2 = r.b;
+            set2 = rShadow.b;
         }
         Set set4 = set2;
         if ((i & 32) != 0) {

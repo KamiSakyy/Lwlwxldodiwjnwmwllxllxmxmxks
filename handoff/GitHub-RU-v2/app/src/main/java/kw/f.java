@@ -2,7 +2,7 @@ package kw;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -90,7 +90,7 @@ public abstract class f implements aa.a {
         fVar.z0("displayName");
         bVar.b(fVar, wVar, aVar.d);
         fVar.z0("isCopilot");
-        f4.C(aVar.e, aa.c.f, fVar, wVar, "url");
+        f4Shadow.C(aVar.e, aa.c.f, fVar, wVar, "url");
         bVar.b(fVar, wVar, aVar.f);
         List list = eq.h.a;
         eq.h.d(fVar, wVar, aVar.g);

@@ -3,7 +3,7 @@ package com.github.rudroid.searchandfilter.complexfilter.organization;
 import androidx.lifecycle.o1;
 import androidx.lifecycle.t1;
 import com.github.rudroid.searchandfilter.complexfilter.organization.SelectableOrganizationBottomSheet;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -22,7 +22,7 @@ public final /* synthetic */ class c implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) selectableOrganizationBottomSheet.Z0.a(selectableOrganizationBottomSheet, SelectableOrganizationBottomSheet.d1[0])).booleanValue()) {
-                    k71.e a = x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     SelectableOrganizationBottomSheet.b bVar = new SelectableOrganizationBottomSheet.b(selectableOrganizationBottomSheet);
                     SelectableOrganizationBottomSheet.c cVar = new SelectableOrganizationBottomSheet.c(selectableOrganizationBottomSheet);
                     SelectableOrganizationBottomSheet.d dVar = new SelectableOrganizationBottomSheet.d(selectableOrganizationBottomSheet);
@@ -40,7 +40,7 @@ public final /* synthetic */ class c implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = w.s(w61.i.s, new SelectableOrganizationBottomSheet.e(new c(selectableOrganizationBottomSheet, 1)));
-                k71.e a2 = x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 SelectableOrganizationBottomSheet.f fVar = new SelectableOrganizationBottomSheet.f(s);
                 SelectableOrganizationBottomSheet.g gVar = new SelectableOrganizationBottomSheet.g(s);
                 SelectableOrganizationBottomSheet.h hVar = new SelectableOrganizationBottomSheet.h(selectableOrganizationBottomSheet, s);

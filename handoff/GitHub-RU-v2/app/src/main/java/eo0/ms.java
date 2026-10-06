@@ -6,7 +6,7 @@ import jn0.x40;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ms implements aaShadow.a {
     public static final ms a = new ms();
-    public static final List b = sy.d0.o(new String[]{"__typename", "isArchived", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "isArchived", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -54,7 +54,7 @@ public final class ms implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, x40Var.a);
         fVar.z0("isArchived");
-        jo.f4.C(x40Var.b, aa.c.f, fVar, wVar, "id");
+        jo.f4Shadow.C(x40Var.b, aa.c.f, fVar, wVar, "id");
         bVar.b(fVar, wVar, x40Var.c);
         List list = uu0.b5.a;
         uu0.b5.d(fVar, wVar, x40Var.d);

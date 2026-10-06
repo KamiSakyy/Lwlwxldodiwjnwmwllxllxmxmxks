@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b6 implements aa.a {
     public static final b6 a = new b6();
-    public static final List b = sy.d0.o(new String[]{"__typename", "totalCount", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "totalCount", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class b6 implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

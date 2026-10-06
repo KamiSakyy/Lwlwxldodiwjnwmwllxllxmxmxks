@@ -8,7 +8,7 @@ import aa.w;
 import aa.w0;
 import hc0.pm;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements w0 {
@@ -33,7 +33,7 @@ public final class l implements w0 {
         List list = a20.a.a;
         List list2 = a20.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -53,7 +53,7 @@ public final class l implements w0 {
     }
 
     public final int hashCode() {
-        return this.t.hashCode() + f1.e.a(this.s, this.r.hashCode() * 31, 31);
+        return this.t.hashCode() + f1.e.a(this.s, this.rShadow.hashCode() * 31, 31);
     }
 
     public final String i() {

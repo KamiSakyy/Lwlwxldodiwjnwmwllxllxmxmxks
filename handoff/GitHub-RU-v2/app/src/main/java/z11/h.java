@@ -11,7 +11,7 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.StrictMode;
 import android.util.Log;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.dynamite.DynamiteModule$LoadingException;
 import java.util.Arrays;
 import m7.y;
@@ -232,12 +232,12 @@ public final class h {
                                         b = new r(true, null, null);
                                     } else {
                                         String str2 = pVar.s;
-                                        PackageManager.NameNotFoundException nameNotFoundException = sy.o.o(pVar.t) == 4 ? new PackageManager.NameNotFoundException() : null;
+                                        PackageManager.NameNotFoundException nameNotFoundException = sy.oShadow.o(pVar.t) == 4 ? new PackageManager.NameNotFoundException() : null;
                                         if (str2 == null) {
                                             str2 = "error checking package certificate";
                                         }
                                         sy.n.M(pVar.u);
-                                        sy.o.o(pVar.t);
+                                        sy.oShadow.o(pVar.t);
                                         b = new r(false, str2, nameNotFoundException);
                                     }
                                 } catch (RemoteException e2) {

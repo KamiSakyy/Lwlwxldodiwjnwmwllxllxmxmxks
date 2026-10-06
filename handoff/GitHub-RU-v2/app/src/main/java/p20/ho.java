@@ -6,7 +6,7 @@ import u10.kz;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ho implements aaShadow.a {
     public static final ho a = new ho();
-    public static final List b = sy.d0.o("__typename", "isArchived", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "isArchived", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -54,7 +54,7 @@ public final class ho implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, kzVar.a);
         fVar.z0("isArchived");
-        jo.f4.C(kzVar.b, aa.c.f, fVar, wVar, "id");
+        jo.f4Shadow.C(kzVar.b, aa.c.f, fVar, wVar, "id");
         bVar.b(fVar, wVar, kzVar.c);
         List list = w80.s3.a;
         w80.s3.d(fVar, wVar, kzVar.d);

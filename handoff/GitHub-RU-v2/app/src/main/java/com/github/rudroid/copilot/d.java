@@ -13,38 +13,38 @@ public final class d {
 
     public static final /* synthetic */ class a {
         static {
-            int[] iArr = new int[xn.w.values().length];
+            int[] iArr = new int[xn.wShadow.values().length];
             try {
                 iArr[1] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                xn.w wVar = xn.w.r;
+                xn.wShadow wVar = xn.wShadow.r;
                 iArr[5] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                xn.w wVar2 = xn.w.r;
+                xn.wShadow wVar2 = xn.wShadow.r;
                 iArr[2] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                xn.w wVar3 = xn.w.r;
+                xn.wShadow wVar3 = xn.wShadow.r;
                 iArr[4] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                xn.w wVar4 = xn.w.r;
+                xn.wShadow wVar4 = xn.wShadow.r;
                 iArr[3] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                xn.w wVar5 = xn.w.r;
+                xn.wShadow wVar5 = xn.wShadow.r;
                 iArr[0] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                xn.w wVar6 = xn.w.r;
+                xn.wShadow wVar6 = xn.wShadow.r;
                 iArr[6] = 7;
             } catch (NoSuchFieldError unused7) {
             }
@@ -61,9 +61,9 @@ public final class d {
         List list;
         String str;
         String str2;
-        xn.w wVar;
+        xn.wShadow wVar;
         String str3;
-        xn.w wVar2;
+        xn.wShadow wVar2;
         bh.a aVar2;
         k71.k.g(yVar, "<this>");
         k71.k.g(eVar, "markdownParser");
@@ -82,19 +82,19 @@ public final class d {
             }
             return new c.h(str4, str5, a10, zonedDateTime, arrayList);
         }
-        if (!(yVar instanceof xn.x)) {
+        if (!(yVar instanceof xn.xShadow)) {
             if (!(yVar instanceof xn.s2)) {
                 throw new NoWhenBranchMatchedException();
             }
             xn.s2 s2Var = (xn.s2) yVar;
             return new c.C0021c(s2Var.f, s2Var.g);
         }
-        xn.x xVar = (xn.x) yVar;
-        xn.w wVar3 = xVar.j;
+        xn.xShadow xVar = (xn.xShadow) yVar;
+        xn.wShadow wVar3 = xVar.j;
         List list3 = xVar.e;
         String str6 = xVar.c;
         int ordinal = wVar3.ordinal();
-        ArrayList arrayList2 = x61.r.r;
+        ArrayList arrayList2 = x61.rShadow.r;
         switch (ordinal) {
             case k5.f.J:
                 return c.j.f9511a;
@@ -105,10 +105,10 @@ public final class d {
                 k91.a a11 = eVar.a(str6);
                 String str7 = xVar.a;
                 String str8 = xVar.c;
-                xn.w wVar4 = xVar.j;
+                xn.wShadow wVar4 = xVar.j;
                 ZonedDateTime zonedDateTime2 = xVar.d;
                 boolean z12 = xVar.o;
-                xn.a0 a0Var = xVar.f;
+                xn.a0Shadow a0Var = xVar.f;
                 k71.k.g(a0Var, "<this>");
                 k71.k.g(a11, "rootNode");
                 List<xn.d0> list4 = a0Var.a;

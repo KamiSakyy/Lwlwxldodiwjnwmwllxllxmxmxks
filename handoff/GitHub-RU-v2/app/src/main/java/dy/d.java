@@ -14,7 +14,7 @@ import m10.eh;
 import m10.i30;
 import m10.p00;
 import m10.rf0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,13 +25,13 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
         List r = x61.l.r(new m[]{mVar, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Repository");
+        List n = d0Shadow.n("Repository");
         List list = n.a;
         List r2 = x61.l.r(new s[]{mVar2, no.a.c(list, "selections", "Repository", n, list), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         rf0.Companion.getClass();

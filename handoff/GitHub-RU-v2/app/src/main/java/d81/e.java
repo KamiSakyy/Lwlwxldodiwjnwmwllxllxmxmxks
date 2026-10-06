@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import v71.a2;
 import v71.j;
@@ -271,7 +271,7 @@ public final class e implements j, f, a2 {
                     return 2;
                 }
                 if (k.b(obj3, h.a)) {
-                    List n = d0.n(obj);
+                    List n = d0Shadow.n(obj);
                     while (!atomicReferenceFieldUpdater.compareAndSet(this, obj3, n)) {
                         if (atomicReferenceFieldUpdater.get(this) != obj3) {
                             break;

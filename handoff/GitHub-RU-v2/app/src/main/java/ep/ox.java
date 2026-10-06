@@ -6,7 +6,7 @@ import jo.hc0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ox implements aaShadow.a {
     public static final ox a = new ox();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -26,7 +26,7 @@ public final class ox implements aaShadow.a {
         }
         eVar.s0();
         is.d0 d0Var = is.d0.a;
-        is.a0 c = is.d0.c(eVar, wVar);
+        is.a0Shadow c = is.d0.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;

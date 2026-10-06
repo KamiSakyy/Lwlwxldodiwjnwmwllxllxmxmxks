@@ -1,13 +1,13 @@
 package ay;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class o0 implements aa.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id", "displayName", "login", "isCopilot", "isAgent"});
 
-    public static zx.f1 c(ea.e eVar, aa.w wVar) {
+    public static zx.f1Shadow c(ea.e eVar, aa.w wVar) {
         Boolean bool;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
@@ -68,13 +68,13 @@ public abstract class o0 implements aa.a {
         }
         boolean booleanValue = bool5.booleanValue();
         if (bool4 != null) {
-            return new zx.f1(c, str, str2, str3, str4, booleanValue, bool4.booleanValue());
+            return new zx.f1Shadow(c, str, str2, str3, str4, booleanValue, bool4.booleanValue());
         }
         k41.b.B(eVar, "isAgent");
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, zx.f1 f1Var) {
+    public static void d(ea.f fVar, aa.w wVar, zx.f1Shadow f1Var) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(f1Var, "value");
@@ -89,7 +89,7 @@ public abstract class o0 implements aa.a {
         bVar.b(fVar, wVar, f1Var.d);
         fVar.z0("isCopilot");
         aa.b bVar2 = aa.c.f;
-        f4.C(f1Var.e, bVar2, fVar, wVar, "isAgent");
+        f4Shadow.C(f1Var.e, bVar2, fVar, wVar, "isAgent");
         bVar2.b(fVar, wVar, Boolean.valueOf(f1Var.f));
         List list = eq.h.a;
         eq.h.d(fVar, wVar, f1Var.g);

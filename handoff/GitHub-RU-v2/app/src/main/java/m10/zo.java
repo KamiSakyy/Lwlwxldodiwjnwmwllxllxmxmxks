@@ -15,7 +15,7 @@ public final class zo {
         s = zoVarArr;
         v8.l0.t(zoVarArr);
         Companion = new yo();
-        sy.d0.o("PHONE", "TABLET");
+        sy.d0Shadow.o("PHONE", "TABLET");
     }
 
     public zo(String str, int i, String str2) {

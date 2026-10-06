@@ -14,7 +14,7 @@ import hc0.mw;
 import hc0.wg;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,9 +25,9 @@ public abstract class b {
     static {
         fb.Companion.getClass();
         r b = l0.b(fb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Organization");
+        List n = d0Shadow.n("Organization");
         List list = l70.a.a;
         s c = no.a.c(list, "selections", "Organization", n, list);
         bb.Companion.getClass();
@@ -35,11 +35,11 @@ public abstract class b {
         di.Companion.getClass();
         q0 q0Var = di.m;
         k.g(q0Var, "type");
-        List n2 = d0.n(new m("organization", q0Var, (String) null, rVar, rVar, r));
+        List n2 = d0Shadow.n(new m("organization", q0Var, (String) null, rVar, rVar, r));
         mw.Companion.getClass();
         q0 q0Var2 = mw.a;
         k.g(q0Var2, "type");
         wg.Companion.getClass();
-        a = d0.n(new m("unfollowOrganization", q0Var2, (String) null, rVar, no.a.s(wg.B0, new u0(s0.p("organizationId", new t("organizationId")))), n2));
+        a = d0Shadow.n(new m("unfollowOrganization", q0Var2, (String) null, rVar, no.a.s(wg.B0, new u0(s0.p("organizationId", new t("organizationId")))), n2));
     }
 }

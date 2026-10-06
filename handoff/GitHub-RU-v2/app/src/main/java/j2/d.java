@@ -45,7 +45,7 @@ public final class d {
         f15 = (i & 128) != 0 ? 0.0f : f15;
         if ((i & 256) != 0) {
             int i10 = m0.f26904a;
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         this.f26785a = str;

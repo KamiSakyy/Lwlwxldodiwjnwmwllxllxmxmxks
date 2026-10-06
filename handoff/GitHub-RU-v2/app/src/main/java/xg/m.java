@@ -32,13 +32,13 @@ public final /* synthetic */ class m implements j71.f {
     public final /* synthetic */ j71.f s;
     public final /* synthetic */ String t;
     public final /* synthetic */ m0 u;
-    public final /* synthetic */ j71.c v;
+    public final /* synthetic */ j71.cShadow v;
     public final /* synthetic */ boolean w;
     public final /* synthetic */ String x;
     public final /* synthetic */ String y;
     public final /* synthetic */ gb z;
 
-    public /* synthetic */ m(j71.f fVar, String str, m0 m0Var, j71.c cVar, boolean z, String str2, String str3, gb gbVar, j71.f fVar2, boolean z2, boolean z3, j71.a aVar, j71.a aVar2, int i, int i2, j71.e eVar, int i3) {
+    public /* synthetic */ m(j71.f fVar, String str, m0 m0Var, j71.cShadow cVar, boolean z, String str2, String str3, gb gbVar, j71.f fVar2, boolean z2, boolean z3, j71.a aVar, j71.a aVar2, int i, int i2, j71.e eVar, int i3) {
         this.r = i3;
         this.s = fVar;
         this.t = str;
@@ -101,7 +101,7 @@ public final /* synthetic */ class m implements j71.f {
                     q0 q0Var = ih.d.f(sVar2).d;
                     String str = this.t;
                     long b = g0.b(0, str.length());
-                    j71.c cVar = this.v;
+                    j71.cShadow cVar = this.v;
                     boolean f = sVar2.f(cVar);
                     Object N = sVar2.N();
                     if (f || N == androidx.compose.runtime.n.a) {

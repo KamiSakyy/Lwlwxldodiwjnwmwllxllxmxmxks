@@ -25,7 +25,7 @@ import jo.xe;
 import jo.ye;
 import kotlin.NoWhenBranchMatchedException;
 import q81.c0;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import t.q;
 import t.z;
@@ -75,7 +75,7 @@ import u10.x80;
 import u10.zb;
 import w61.a0;
 import w61.k;
-import x61.r;
+import x61.rShadow;
 import y71.j;
 import yz0.b2;
 import yz0.d5;
@@ -143,10 +143,10 @@ public final class c implements j {
     /* JADX WARN: Removed duplicated region for block: B:62:0x00d2  */
     /* JADX WARN: Removed duplicated region for block: B:90:0x0131  */
     /* JADX WARN: Removed duplicated region for block: B:96:0x013f  */
-    /* JADX WARN: Type inference failed for: r15v86, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r15v86, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r15v87, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r15v88, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r4v42, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r4v42, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r4v43, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r4v44, types: [java.util.ArrayList] */
     /*
@@ -227,7 +227,7 @@ public final class c implements j {
                             t6 t6Var = ((p6) obj).a;
                             List list2 = (t6Var == null || (o6Var = t6Var.b) == null || (n6Var = o6Var.b) == null || (q6Var = n6Var.b) == null || (s6Var = q6Var.a) == null) ? null : s6Var.b;
                             if (list2 == null) {
-                                list2 = r.r;
+                                list2 = rShadow.r;
                             }
                             ArrayList S = x61.m.S(list2);
                             ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -276,7 +276,7 @@ public final class c implements j {
                                 gr grVar = krVar.a;
                                 Iterable iterable = grVar.b;
                                 if (iterable == null) {
-                                    iterable = r.r;
+                                    iterable = rShadow.r;
                                 }
                                 ArrayList S2 = x61.m.S(iterable);
                                 ArrayList arrayList2 = new ArrayList(x61.n.F(S2, 10));
@@ -363,7 +363,7 @@ public final class c implements j {
                                 be beVar = geVar.b;
                                 Iterable iterable2 = beVar.b;
                                 if (iterable2 == null) {
-                                    iterable2 = r.r;
+                                    iterable2 = rShadow.r;
                                 }
                                 ArrayList S3 = x61.m.S(iterable2);
                                 ArrayList arrayList3 = new ArrayList(x61.n.F(S3, 10));
@@ -417,7 +417,7 @@ public final class c implements j {
                                 ce ceVar = geVar2.a;
                                 Iterable iterable3 = ceVar.b;
                                 if (iterable3 == null) {
-                                    iterable3 = r.r;
+                                    iterable3 = rShadow.r;
                                 }
                                 ArrayList S4 = x61.m.S(iterable3);
                                 ArrayList arrayList4 = new ArrayList(x61.n.F(S4, 10));
@@ -471,7 +471,7 @@ public final class c implements j {
                                 ns nsVar = lsVar.a;
                                 Iterable iterable4 = nsVar.b;
                                 if (iterable4 == null) {
-                                    iterable4 = r.r;
+                                    iterable4 = rShadow.r;
                                 }
                                 ArrayList S5 = x61.m.S(iterable4);
                                 ArrayList arrayList5 = new ArrayList(x61.n.F(S5, 10));
@@ -636,7 +636,7 @@ public final class c implements j {
                             qx qxVar = (qx) obj;
                             Iterable<rx> iterable5 = qxVar.a.c;
                             if (iterable5 == null) {
-                                iterable5 = r.r;
+                                iterable5 = rShadow.r;
                             }
                             ArrayList arrayList10 = new ArrayList();
                             for (rx rxVar : iterable5) {
@@ -757,7 +757,7 @@ public final class c implements j {
                                 vs vsVar = tsVar.a;
                                 Iterable iterable6 = vsVar.b;
                                 if (iterable6 == null) {
-                                    iterable6 = r.r;
+                                    iterable6 = rShadow.r;
                                 }
                                 ArrayList S6 = x61.m.S(iterable6);
                                 ArrayList arrayList12 = new ArrayList(x61.n.F(S6, 10));
@@ -883,7 +883,7 @@ public final class c implements j {
                                         }
                                     }
                                 } else {
-                                    r4 = r.r;
+                                    r4 = rShadow.r;
                                 }
                                 List<h90> list4 = i90Var.c;
                                 ArrayList arrayList13 = new ArrayList(x61.n.F(list4, 10));
@@ -942,7 +942,7 @@ public final class c implements j {
                                 Iterator it = list.iterator();
                                 while (it.hasNext()) {
                                     ss.a aVar19 = ((ef) it.next()).b;
-                                    arrayList14.add(new t10.f(aVar19.b, d0.C(aVar19.c), aVar19.a));
+                                    arrayList14.add(new t10.f(aVar19.b, d0Shadow.C(aVar19.c), aVar19.a));
                                 }
                                 set = x61.m.K0(arrayList14);
                             }
@@ -989,7 +989,7 @@ public final class c implements j {
                                     }
                                 }
                             } else {
-                                r15 = r.r;
+                                r15 = rShadow.r;
                             }
                             bVar3.v = 1;
                             if (this.s.c((Object) r15, bVar3) == aVar20) {

@@ -3,7 +3,7 @@ package com.github.rudroid.profile.navigation;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import ze.d;
 
@@ -26,7 +26,7 @@ public final class UserOrOgProfileScreenEntryPointRoute implements d {
 
     public /* synthetic */ UserOrOgProfileScreenEntryPointRoute(int i, String str, boolean z10) {
         if (1 != (i & 1)) {
-            c1.l(i, 1, UserOrOgProfileScreenEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, UserOrOgProfileScreenEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f17330r = str;

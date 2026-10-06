@@ -54,7 +54,7 @@ public final class SupportBottomSheetDialog extends BaseBottomSheetDialog implem
 
     public SupportBottomSheetDialog() {
         super(true, true, true);
-        this.V0 = new l1(k71.x.a(s.class), new a(), new c(), new b());
+        this.V0 = new l1(k71.xShadow.a(s.class), new a(), new c(), new b());
     }
 
     public final void D4(ScrollableTitleToolbar scrollableTitleToolbar) {
@@ -100,7 +100,7 @@ public final class SupportBottomSheetDialog extends BaseBottomSheetDialog implem
         if (sVar.S()) {
             return true;
         }
-        b0.z(d1.k(sVar), (a71.h) null, (v71.a0) null, new v(sVar, contentResolver, null), 3);
+        b0.z(d1.k(sVar), (a71.h) null, (v71.a0Shadow) null, new v(sVar, contentResolver, null), 3);
         return true;
     }
 

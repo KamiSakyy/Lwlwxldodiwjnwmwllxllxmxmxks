@@ -8,9 +8,9 @@ public final class y implements aa.h0 {
     public ZonedDateTime b;
     public boolean c;
     public String d;
-    public x e;
+    public xShadow e;
 
-    public y(w wVar, ZonedDateTime zonedDateTime, boolean z, String str, x xVar) {
+    public y(w wVar, ZonedDateTime zonedDateTime, boolean z, String str, xShadow xVar) {
         this.a = wVar;
         this.b = zonedDateTime;
         this.c = z;

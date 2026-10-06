@@ -1,6 +1,6 @@
 package com.github.rudroid.actions.checklog;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class m0 {
@@ -49,7 +49,7 @@ public abstract class m0 {
             sb2.append(", color=");
             sb2.append(this.f4835b);
             sb2.append(", bright=");
-            return f4.s(sb2, this.f4836c, ")");
+            return f4Shadow.s(sb2, this.f4836c, ")");
         }
     }
 

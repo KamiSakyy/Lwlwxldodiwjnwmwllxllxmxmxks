@@ -23,7 +23,7 @@ public final class zc {
         v = zcVarArr;
         w = v8.l0.t(zcVarArr);
         Companion = new yc();
-        sy.d0.o("LEFT", "RIGHT");
+        sy.d0Shadow.o("LEFT", "RIGHT");
     }
 
     public zc(String str, int i, String str2) {

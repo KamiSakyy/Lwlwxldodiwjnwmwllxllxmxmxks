@@ -53,10 +53,10 @@ public final class m implements y71.j {
     /* JADX WARN: Removed duplicated region for block: B:131:0x01b7  */
     /* JADX WARN: Removed duplicated region for block: B:137:0x01c6  */
     /* JADX WARN: Removed duplicated region for block: B:17:0x0039  */
-    /* JADX WARN: Type inference failed for: r1v11, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r1v11, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r1v12, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r1v15, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r1v29, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r1v29, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r1v30, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r1v33, types: [java.util.ArrayList] */
     /*
@@ -183,7 +183,7 @@ public final class m implements y71.j {
                                     }
                                 }
                             } else {
-                                r1 = x61.r.r;
+                                r1 = x61.rShadow.r;
                             }
                             PullRequestWidgetData pullRequestWidgetData = new PullRequestWidgetData(this.t, i2, r1);
                             lVar.v = 1;
@@ -295,7 +295,7 @@ public final class m implements y71.j {
                                     }
                                 }
                             } else {
-                                r12 = x61.r.r;
+                                r12 = x61.rShadow.r;
                             }
                             PullRequestWidgetData pullRequestWidgetData2 = new PullRequestWidgetData(this.t, i4, r12);
                             mVar.v = 1;

@@ -1,7 +1,7 @@
 package l81;
 
 import com.google.android.gms.internal.measurement.i4;
-import k71.x;
+import k71.xShadow;
 import k81.a2;
 import k81.i1;
 import kotlinx.serialization.KSerializer;
@@ -23,7 +23,7 @@ public final class p implements KSerializer {
         if (k instanceof o) {
             return (o) k;
         }
-        throw m81.i.d(-1, k.toString(), "Unexpected JSON element, expected JsonLiteral, had " + x.a(k.getClass()));
+        throw m81.i.d(-1, k.toString(), "Unexpected JSON element, expected JsonLiteral, had " + xShadow.a(k.getClass()));
     }
 
     @Override // kotlinx.serialization.KSerializer

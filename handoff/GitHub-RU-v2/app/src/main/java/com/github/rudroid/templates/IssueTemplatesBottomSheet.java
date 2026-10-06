@@ -6,7 +6,7 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.g0;
 import com.github.rudroid.templates.l;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -106,7 +106,7 @@ public final class IssueTemplatesBottomSheet extends Hilt_IssueTemplatesBottomSh
 
     public IssueTemplatesBottomSheet() {
         w61.h s = w.s(w61.i.s, new c(new b()));
-        this.S0 = new l1(x.a(l.class), new d(s), new f(s), new e(s));
+        this.S0 = new l1(xShadow.a(l.class), new d(s), new f(s), new e(s));
     }
 
     public final g0 D4() {

@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n implements aa.a {
     public static final n a = new n();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
-        zx.x xVar;
+        zx.xShadow xVar;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
@@ -50,7 +50,7 @@ public final class n implements aa.a {
         bVar.b(fVar, wVar, wVar2.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, wVar2.b);
-        zx.x xVar = wVar2.c;
+        zx.xShadow xVar = wVar2.c;
         if (xVar != null) {
             o.d(fVar, wVar, xVar);
         }

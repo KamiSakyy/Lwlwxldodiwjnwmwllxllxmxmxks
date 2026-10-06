@@ -4,7 +4,7 @@ import a7.n;
 import android.net.TrafficStats;
 import android.text.TextUtils;
 import androidx.compose.foundation.lazy.layout.o1;
-import c21.u;
+import c21.uShadow;
 import com.google.firebase.installations.FirebaseInstallationsException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -23,7 +23,7 @@ import p41.k;
 import q41.j;
 import t.q;
 import w21.o;
-import w80.a0;
+import w80.a0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements d {
@@ -50,10 +50,10 @@ public final class c implements d {
         s51.c cVar = new s51.c(gVar.a, bVar);
         x1 x1Var = new x1();
         x1Var.s = gVar;
-        if (a0.v == null) {
-            a0.v = new a0(8);
+        if (a0Shadow.v == null) {
+            a0Shadow.v = new a0Shadow(8);
         }
-        a0 a0Var = a0.v;
+        a0Shadow a0Var = a0Shadow.v;
         if (i.d == null) {
             i.d = new i(a0Var);
         }
@@ -239,17 +239,17 @@ public final class c implements d {
     public final void e() {
         k41.g gVar = this.a;
         gVar.a();
-        u.e(gVar.c.b, "Please set your Application ID. A valid Firebase App ID is required to communicate with Firebase server APIs: It identifies your application with Firebase.Please refer to https://firebase.google.com/support/privacy/init-options.");
+        uShadow.e(gVar.c.b, "Please set your Application ID. A valid Firebase App ID is required to communicate with Firebase server APIs: It identifies your application with Firebase.Please refer to https://firebase.google.com/support/privacy/init-options.");
         gVar.a();
-        u.e(gVar.c.g, "Please set your Project ID. A valid Firebase Project ID is required to communicate with Firebase server APIs: It identifies your application with Firebase.Please refer to https://firebase.google.com/support/privacy/init-options.");
+        uShadow.e(gVar.c.g, "Please set your Project ID. A valid Firebase Project ID is required to communicate with Firebase server APIs: It identifies your application with Firebase.Please refer to https://firebase.google.com/support/privacy/init-options.");
         gVar.a();
-        u.e(gVar.c.a, "Please set a valid API key. A Firebase API key is required to communicate with Firebase server APIs: It authenticates your project with Google.Please refer to https://firebase.google.com/support/privacy/init-options.");
+        uShadow.e(gVar.c.a, "Please set a valid API key. A Firebase API key is required to communicate with Firebase server APIs: It authenticates your project with Google.Please refer to https://firebase.google.com/support/privacy/init-options.");
         gVar.a();
         String str = gVar.c.b;
         Pattern pattern = i.c;
-        u.a("Please set your Application ID. A valid Firebase App ID is required to communicate with Firebase server APIs: It identifies your application with Firebase.Please refer to https://firebase.google.com/support/privacy/init-options.", str.contains(":"));
+        uShadow.a("Please set your Application ID. A valid Firebase App ID is required to communicate with Firebase server APIs: It identifies your application with Firebase.Please refer to https://firebase.google.com/support/privacy/init-options.", str.contains(":"));
         gVar.a();
-        u.a("Please set a valid API key. A Firebase API key is required to communicate with Firebase server APIs: It authenticates your project with Google.Please refer to https://firebase.google.com/support/privacy/init-options.", i.c.matcher(gVar.c.a).matches());
+        uShadow.a("Please set a valid API key. A Firebase API key is required to communicate with Firebase server APIs: It authenticates your project with Google.Please refer to https://firebase.google.com/support/privacy/init-options.", i.c.matcher(gVar.c.a).matches());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:4:0x001c, code lost:

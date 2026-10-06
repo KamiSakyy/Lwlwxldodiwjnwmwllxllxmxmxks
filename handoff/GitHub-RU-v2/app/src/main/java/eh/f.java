@@ -13,7 +13,7 @@ import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
 import bd.m;
 import com.github.rudroid.activities.g3;
-import d2.a0;
+import d2.a0Shadow;
 import f1.ub;
 import g3.q0;
 import w1.o;
@@ -152,7 +152,7 @@ public final class f {
                     N = new m(str3, 12);
                     sVar.n0(N);
                 }
-                r f2 = p2.e(androidx.compose.foundation.layout.b.w(f0.o.f(com.github.rudroid.uitoolkit.extensions.d.b(b, aVar, (j71.e) N), ih.d.b(sVar).b, a0.b), f2Var), 1.0f).f(rVar4);
+                r f2 = p2.e(androidx.compose.foundation.layout.b.w(f0.o.f(com.github.rudroid.uitoolkit.extensions.d.b(b, aVar, (j71.e) N), ih.d.b(sVar).b, a0Shadow.b), f2Var), 1.0f).f(rVar4);
                 e0 a = c0.a(l.c, w1.c.D, sVar, 0);
                 int hashCode = Long.hashCode(sVar.T);
                 v1 l = sVar.l();

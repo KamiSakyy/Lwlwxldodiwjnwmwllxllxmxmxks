@@ -84,7 +84,7 @@ public abstract class w0 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, v0Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(v0Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(v0Var.c, aa.c.f, fVar, wVar, "identifier");
         bVar.b(fVar, wVar, v0Var.d);
         fVar.z0("reason");
         bVar.b(fVar, wVar, v0Var.e);

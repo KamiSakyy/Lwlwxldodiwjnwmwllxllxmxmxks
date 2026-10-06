@@ -6,7 +6,7 @@ import com.github.rudroid.activities.d0;
 import com.github.rudroid.activities.e0;
 import com.github.rudroid.views.l;
 import f1.f4;
-import rh.c;
+import rh.cShadow;
 import rh.d;
 import rh.e;
 import w61.a0;
@@ -101,7 +101,7 @@ public final class j {
                 }
             }, true, -1464592902);
         }
-        if (fVar instanceof c.C0030c) {
+        if (fVar instanceof cShadow.C0030c) {
             final int i3 = 0;
             return new r1.d(new j71.e() { // from class: rh.i
                 public final Object s(Object obj, Object obj2) {
@@ -144,7 +144,7 @@ public final class j {
                 }
             }, true, -2138659687);
         }
-        if (fVar instanceof c.d) {
+        if (fVar instanceof cShadow.d) {
             final int i4 = 1;
             return new r1.d(new j71.e() { // from class: rh.i
                 public final Object s(Object obj, Object obj2) {
@@ -187,7 +187,7 @@ public final class j {
                 }
             }, true, 1482240824);
         }
-        if (fVar instanceof c.b) {
+        if (fVar instanceof cShadow.b) {
             final int i5 = 2;
             return new r1.d(new j71.e() { // from class: rh.i
                 public final Object s(Object obj, Object obj2) {
@@ -230,7 +230,7 @@ public final class j {
                 }
             }, true, 808174039);
         }
-        if (fVar instanceof c.a) {
+        if (fVar instanceof cShadow.a) {
             final int i6 = 3;
             return new r1.d(new j71.e() { // from class: rh.i
                 public final Object s(Object obj, Object obj2) {

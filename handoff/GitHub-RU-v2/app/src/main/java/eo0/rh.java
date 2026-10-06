@@ -174,7 +174,7 @@ public abstract class rh implements aaShadow.a {
                 case 5:
                     bool = bool2;
                     pz0.o7.Companion.getClass();
-                    zonedDateTime = (ZonedDateTime) no.a.h(wVar, pz0.o7.a, eVar, wVar);
+                    zonedDateTime = (ZonedDateTime) noShadow.a.h(wVar, pz0.o7.a, eVar, wVar);
                     break;
                 case 6:
                     bool = bool2;
@@ -211,7 +211,7 @@ public abstract class rh implements aaShadow.a {
         fVar.z0("url");
         bVar.b(fVar, wVar, bqVar.d);
         fVar.z0("authorCanPushToRepository");
-        jo.f4.C(bqVar.e, aa.c.f, fVar, wVar, "submittedAt");
+        jo.f4Shadow.C(bqVar.e, aa.c.f, fVar, wVar, "submittedAt");
         pz0.o7.Companion.getClass();
         aa.c.b(wVar.e(pz0.o7.a)).b(fVar, wVar, bqVar.f);
         fVar.z0("pullRequest");

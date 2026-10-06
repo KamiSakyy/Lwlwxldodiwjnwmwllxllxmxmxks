@@ -5,7 +5,7 @@ import hc0.sh;
 import hc0.th;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract /* synthetic */ class k {
+public abstract /* synthetic */ class kShadow {
     public static final /* synthetic */ int[] a;
 
     static {

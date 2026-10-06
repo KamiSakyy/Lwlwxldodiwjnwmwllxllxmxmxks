@@ -15,7 +15,7 @@ import m10.eh;
 import m10.p00;
 import m10.sg;
 import m10.zp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,14 +27,14 @@ public abstract class b {
         ah.Companion.getClass();
         x xVar = ah.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         sg.Companion.getClass();
         m mVar2 = new m("oid", l0.b(sg.a), (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
         k.g(xVar2, "type");
-        List r = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("Commit", d0.n("Commit"), l.r(new m[]{mVar, mVar2, new m("updatesChannel", xVar2, (String) null, rVar, rVar, rVar)})), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        List r = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("Commit", d0Shadow.n("Commit"), l.r(new m[]{mVar, mVar2, new m("updatesChannel", xVar2, (String) null, rVar, rVar, rVar)})), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         zp.Companion.getClass();
         j0 j0Var = zp.a;
         k.g(j0Var, "type");

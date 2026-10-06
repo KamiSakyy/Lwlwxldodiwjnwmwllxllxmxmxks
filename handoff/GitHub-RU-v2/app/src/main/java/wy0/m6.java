@@ -98,7 +98,7 @@ public final class m6 implements y71.j {
                     int i3 = w30Var.a;
                     Iterable iterable = w30Var.c;
                     if (iterable == null) {
-                        iterable = x61.r.r;
+                        iterable = x61.rShadow.r;
                     }
                     ArrayList S = x61.m.S(iterable);
                     ArrayList arrayList = new ArrayList();
@@ -244,7 +244,7 @@ public final class m6 implements y71.j {
                     Integer num = new Integer(i3);
                     List list = cyVar != null ? cyVar.c : null;
                     if (list == null) {
-                        list = x61.r.r;
+                        list = x61.rShadow.r;
                     }
                     ArrayList S = x61.m.S(list);
                     ArrayList arrayList = new ArrayList();
@@ -345,7 +345,7 @@ public final class m6 implements y71.j {
     /* JADX WARN: Removed duplicated region for block: B:80:0x0116  */
     /* JADX WARN: Removed duplicated region for block: B:91:0x0155  */
     /* JADX WARN: Removed duplicated region for block: B:97:0x0163  */
-    /* JADX WARN: Type inference failed for: r2v64, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r2v64, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r2v65, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r2v66, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r5v2 */
@@ -354,7 +354,7 @@ public final class m6 implements y71.j {
     /* JADX WARN: Type inference failed for: r6v11, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r6v13, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r6v15, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r6v9, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r6v9, types: [x61.rShadow] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
@@ -559,7 +559,7 @@ public final class m6 implements y71.j {
                             sv svVar = pvVar.a;
                             List list3 = (svVar == null || (tvVar3 = svVar.c) == null) ? null : tvVar3.a.b;
                             if (list3 == null) {
-                                list3 = x61.r.r;
+                                list3 = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(list3);
                             ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -754,7 +754,7 @@ public final class m6 implements y71.j {
                                 throw new ApiFailure(ApiFailureType.PARSE_ERROR, "Merge queue does not exists", null, null, null, null, null, 116);
                             }
                             yv yvVar = ewVar.b.c;
-                            x61.r rVar = x61.r.r;
+                            x61.rShadow rVar = x61.rShadow.r;
                             if (yvVar == null || (list = yvVar.c) == null) {
                                 r5 = rVar;
                             } else {
@@ -889,7 +889,7 @@ public final class m6 implements y71.j {
                             gx gxVar = xwVar.a;
                             String str7 = null;
                             bx bxVar3 = gxVar != null ? gxVar.b : null;
-                            java.util.List r6 = (java.util.List) (x61.r.r);
+                            java.util.List r6 = (java.util.List) (x61.rShadow.r);
                             if (bxVar3 != null) {
                                 List list4 = gxVar.b.a.b;
                                 List list5 = r6;
@@ -1176,7 +1176,7 @@ public final class m6 implements y71.j {
                             k71.k.g(yVar, "<this>");
                             py0.a0 a0Var3 = yVar.a;
                             if (a0Var3 == null || (list2 = a0Var3.b) == null) {
-                                r2 = x61.r.r;
+                                r2 = x61.rShadow.r;
                             } else {
                                 r2 = new ArrayList(x61.n.F(list2, 10));
                                 for (py0.z zVar : list2) {
@@ -1227,7 +1227,7 @@ public final class m6 implements y71.j {
                             w40 w40Var = (w40) obj;
                             Iterable iterable = w40Var.a.a.b;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList S4 = x61.m.S(iterable);
                             ArrayList arrayList2 = new ArrayList(x61.n.F(S4, 10));
@@ -1276,7 +1276,7 @@ public final class m6 implements y71.j {
                             String str12 = null;
                             List list8 = (l50Var == null || (j50Var3 = l50Var.b) == null) ? null : j50Var3.a.b;
                             if (list8 == null) {
-                                list8 = x61.r.r;
+                                list8 = x61.rShadow.r;
                             }
                             ArrayList S5 = x61.m.S(list8);
                             ArrayList arrayList3 = new ArrayList(x61.n.F(S5, 10));

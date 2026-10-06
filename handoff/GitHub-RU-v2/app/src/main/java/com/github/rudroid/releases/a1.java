@@ -34,13 +34,13 @@ public final class a1 extends k1 implements x3 {
         this.f18837t = cVar;
         this.f18838u = com.github.rudroid.m0.s(fl.f.Companion, null);
         this.f18839v = new x01.i((String) null, false, true);
-        ReleasesRoute releasesRoute = (ReleasesRoute) sy.y.m(a1Var, k71.x.a(ReleasesRoute.class), x61.s.r);
+        ReleasesRoute releasesRoute = (ReleasesRoute) sy.y.m(a1Var, k71.xShadow.a(ReleasesRoute.class), x61.s.r);
         this.f18840w = releasesRoute.f18933r;
         this.f18841x = releasesRoute.f18934s;
     }
 
     public final void D() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new z0(this, this.f18839v.b, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new z0(this, this.f18839v.b, null), 3);
     }
 
     public final x01.i l() {

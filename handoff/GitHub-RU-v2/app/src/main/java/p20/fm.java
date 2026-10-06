@@ -6,7 +6,7 @@ import u10.kw;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fm implements aaShadow.a {
     public static final fm a = new fm();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -70,18 +70,18 @@ public final class fm implements aaShadow.a {
         aVar.b(fVar, wVar, Integer.valueOf(c1Var.g));
         fVar.z0("hasIssuesEnabled");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(c1Var.h, bVar3, fVar, wVar, "showActions");
-        jo.f4.C(c1Var.i, bVar3, fVar, wVar, "homepageUrl");
+        jo.f4Shadow.C(c1Var.h, bVar3, fVar, wVar, "showActions");
+        jo.f4Shadow.C(c1Var.i, bVar3, fVar, wVar, "homepageUrl");
         aa.o0 o0Var = aa.c.i;
         o0Var.b(fVar, wVar, c1Var.j);
         fVar.z0("isPrivate");
-        jo.f4.C(c1Var.k, bVar3, fVar, wVar, "isArchived");
-        jo.f4.C(c1Var.l, bVar3, fVar, wVar, "isTemplate");
-        jo.f4.C(c1Var.m, bVar3, fVar, wVar, "isFork");
-        jo.f4.C(c1Var.n, bVar3, fVar, wVar, "isEmpty");
-        jo.f4.C(c1Var.o, bVar3, fVar, wVar, "isInOrganization");
-        jo.f4.C(c1Var.p, bVar3, fVar, wVar, "issues");
-        aa.c.c(w80.f1.a, false).b(fVar, wVar, c1Var.q);
+        jo.f4Shadow.C(c1Var.k, bVar3, fVar, wVar, "isArchived");
+        jo.f4Shadow.C(c1Var.l, bVar3, fVar, wVar, "isTemplate");
+        jo.f4Shadow.C(c1Var.m, bVar3, fVar, wVar, "isFork");
+        jo.f4Shadow.C(c1Var.n, bVar3, fVar, wVar, "isEmpty");
+        jo.f4Shadow.C(c1Var.o, bVar3, fVar, wVar, "isInOrganization");
+        jo.f4Shadow.C(c1Var.p, bVar3, fVar, wVar, "issues");
+        aa.c.c(w80.f1Shadow.a, false).b(fVar, wVar, c1Var.q);
         fVar.z0("name");
         bVar2.b(fVar, wVar, c1Var.r);
         fVar.z0("owner");
@@ -103,16 +103,16 @@ public final class fm implements aaShadow.a {
         fVar.z0("description");
         o0Var.b(fVar, wVar, c1Var.A);
         fVar.z0("viewerCanAdminister");
-        jo.f4.C(c1Var.B, bVar3, fVar, wVar, "viewerCanPush");
-        jo.f4.C(c1Var.C, bVar3, fVar, wVar, "viewerCanSubscribe");
-        jo.f4.C(c1Var.D, bVar3, fVar, wVar, "viewerPermission");
+        jo.f4Shadow.C(c1Var.B, bVar3, fVar, wVar, "viewerCanPush");
+        jo.f4Shadow.C(c1Var.C, bVar3, fVar, wVar, "viewerCanSubscribe");
+        jo.f4Shadow.C(c1Var.D, bVar3, fVar, wVar, "viewerPermission");
         aa.c.b(ic0.b.h).b(fVar, wVar, c1Var.E);
         fVar.z0("watchers");
         aa.c.c(w80.t1.a, false).b(fVar, wVar, c1Var.F);
         fVar.z0("licenseInfo");
         aa.c.b(aa.c.c(w80.h1.a, true)).b(fVar, wVar, c1Var.G);
         fVar.z0("isDiscussionsEnabled");
-        jo.f4.C(c1Var.H, bVar3, fVar, wVar, "discussionsCount");
+        jo.f4Shadow.C(c1Var.H, bVar3, fVar, wVar, "discussionsCount");
         aVar.b(fVar, wVar, Integer.valueOf(c1Var.I));
         fVar.z0("parent");
         aa.c.b(aa.c.c(w80.l1.a, false)).b(fVar, wVar, c1Var.J);
@@ -121,8 +121,8 @@ public final class fm implements aaShadow.a {
         fVar.z0("latestRelease");
         aa.c.b(aa.c.c(w80.g1.a, false)).b(fVar, wVar, c1Var.L);
         fVar.z0("isViewersFavorite");
-        jo.f4.C(c1Var.M, bVar3, fVar, wVar, "viewerHasBlockedContributors");
-        jo.f4.C(c1Var.N, bVar3, fVar, wVar, "viewerBlockedByOwner");
+        jo.f4Shadow.C(c1Var.M, bVar3, fVar, wVar, "viewerHasBlockedContributors");
+        jo.f4Shadow.C(c1Var.N, bVar3, fVar, wVar, "viewerBlockedByOwner");
         bVar3.b(fVar, wVar, Boolean.valueOf(c1Var.O));
         List list2 = w80.m.a;
         w80.m.d(fVar, wVar, c1Var.P);

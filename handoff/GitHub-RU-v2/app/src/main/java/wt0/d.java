@@ -3,12 +3,12 @@ package wt0;
 import aa.w;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = d0.o(new String[]{"id", "issueOrPullRequest", "__typename"});
+    public static final List b = d0Shadow.o(new String[]{"id", "issueOrPullRequest", "__typename"});
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

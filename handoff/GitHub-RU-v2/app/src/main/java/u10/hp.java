@@ -83,7 +83,7 @@ public final class hp {
         o.append(this.h);
         o.append(", isPrerelease=");
         com.github.rudroid.m0.A(o, this.i, ", isDraft=", this.j, ", isLatest=");
-        jo.f4.B(", createdAt=", ", publishedAt=", o, this.l, this.k);
+        jo.f4Shadow.B(", createdAt=", ", publishedAt=", o, this.l, this.k);
         o.append(this.m);
         o.append(", releaseAssets=");
         o.append(this.n);

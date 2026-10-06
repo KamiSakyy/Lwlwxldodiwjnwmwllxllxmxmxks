@@ -12,14 +12,14 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.z;
 import kotlin.NoWhenBranchMatchedException;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import x61.x;
 
 @g81.e
@@ -49,7 +49,7 @@ public final class PullRequestStatusFilter extends d {
     public /* synthetic */ PullRequestStatusFilter(int i, l lVar, String str, g0 g0Var) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, PullRequestStatusFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, PullRequestStatusFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {
@@ -124,7 +124,7 @@ public final class PullRequestStatusFilter extends d {
         g1 g1Var = new g1(8, bVar);
         while (g1Var.hasNext()) {
             Object next = g1Var.next();
-            linkedHashMap.put(z((g0) next, r.r), next);
+            linkedHashMap.put(z((g0) next, rShadow.r), next);
         }
         k71.w wVar = new k71.w();
         m.n0(arrayList, new bm.g(linkedHashMap, wVar, 7));

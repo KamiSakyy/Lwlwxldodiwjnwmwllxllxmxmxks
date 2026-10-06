@@ -26,6 +26,6 @@ public final class y6 {
     }
 
     public final String toString() {
-        return jo.f4.h(this.a, this.b, "SubIssuesSummary(total=", ", completed=", ")");
+        return jo.f4Shadow.h(this.a, this.b, "SubIssuesSummary(total=", ", completed=", ")");
     }
 }

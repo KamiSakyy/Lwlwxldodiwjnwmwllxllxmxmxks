@@ -1,7 +1,7 @@
 package iy0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.o7;
 import uu0.g6;
 
@@ -70,7 +70,7 @@ public abstract class h implements aa.a {
         fVar.I(pVar.g.r);
         fVar.z0("updatedAt");
         o7.Companion.getClass();
-        aa.x xVar = o7.a;
+        aa.xShadow xVar = o7.a;
         wVar.e(xVar).b(fVar, wVar, pVar.h);
         fVar.z0("totalCommentsCount");
         aa.c.b(aVar).b(fVar, wVar, pVar.i);

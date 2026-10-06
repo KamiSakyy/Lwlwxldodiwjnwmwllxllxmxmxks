@@ -15,7 +15,7 @@ import pz0.su;
 import pz0.td;
 import pz0.wk;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -26,9 +26,9 @@ public abstract class i {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("StatusContext");
+        List n = d0Shadow.n("StatusContext");
         List list = wn0.e.a;
         s c = no.a.c(list, "selections", "StatusContext", n, list);
         td.Companion.getClass();
@@ -44,9 +44,9 @@ public abstract class i {
         q0 q0Var = d30.a;
         k71.k.g(q0Var, "type");
         s mVar5 = new aa.m("status", q0Var, (String) null, rVar, rVar, r2);
-        List n2 = d0.n("Commit");
+        List n2 = d0Shadow.n("Commit");
         List list2 = wn0.d.a;
-        List r3 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("Commit", d0.n("Commit"), x61.l.r(new s[]{mVar3, mVar4, mVar5, no.a.c(list2, "selections", "Commit", n2, list2)})), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r3 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("Commit", d0Shadow.n("Commit"), x61.l.r(new s[]{mVar3, mVar4, mVar5, no.a.c(list2, "selections", "Commit", n2, list2)})), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         wk.Companion.getClass();
         j0 j0Var = wk.a;
         k71.k.g(j0Var, "type");

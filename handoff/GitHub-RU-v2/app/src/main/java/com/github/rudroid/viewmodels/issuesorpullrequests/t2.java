@@ -26,7 +26,7 @@ final class t2 extends c71.j implements j71.e {
         if (i == 0) {
             sy.y.j(obj);
             w2 w2Var = this.w;
-            y71.i p = y71.n1.p(new wd.j(w2Var.Z.a.b));
+            y71.i p = y71.n1Shadow.p(new wd.j(w2Var.Z.a.b));
             s2 s2Var = new s2(w2Var);
             this.v = 1;
             if (p.b(s2Var, this) == aVar) {

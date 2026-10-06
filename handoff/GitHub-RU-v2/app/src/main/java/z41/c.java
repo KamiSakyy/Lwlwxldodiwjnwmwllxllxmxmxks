@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import k51.d;
-import y41.a0;
+import y41.a0Shadow;
 import y41.a1;
 import y41.a2;
 import y41.b0;
@@ -34,7 +34,7 @@ import y41.g0;
 import y41.g1;
 import y41.g2;
 import y41.h;
-import y41.h0;
+import y41.h0Shadow;
 import y41.h1;
 import y41.h2;
 import y41.i;
@@ -177,7 +177,7 @@ public final class c {
         dVar.a(g0.class, eVar);
         f fVar = f.a;
         dVar.a(r1.class, fVar);
-        dVar.a(h0.class, fVar);
+        dVar.a(h0Shadow.class, fVar);
         dVar.d = true;
         a = new x3(29, dVar);
     }
@@ -974,7 +974,7 @@ public final class c {
         boolean z;
         char c4;
         Charset charset = n2.a;
-        a0 a0Var = new a0();
+        a0Shadow a0Var = new a0Shadow();
         jsonReader.beginObject();
         while (jsonReader.hasNext()) {
             String nextName = jsonReader.nextName();

@@ -75,7 +75,7 @@ public abstract class k3 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, i3Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(i3Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(i3Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, i3Var.d);
         fVar.z0("release");
         aa.c.c(l3.a, true).b(fVar, wVar, i3Var.e);

@@ -1,7 +1,7 @@
 package ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class d {
+public final class dShadow {
     public oa.g a;
 
     public d(oa.g gVar) {

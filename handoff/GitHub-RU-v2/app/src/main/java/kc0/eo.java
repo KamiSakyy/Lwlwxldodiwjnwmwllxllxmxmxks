@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class eo implements aaShadow.v0 {
-    public jo a;
+    public joShadow a;
 
-    public eo(jo joVar) {
+    public eo(joShadow joVar) {
         this.a = joVar;
     }
 
@@ -16,7 +16,7 @@ public final class eo implements aaShadow.v0 {
     }
 
     public final int hashCode() {
-        jo joVar = this.a;
+        joShadow joVar = this.a;
         if (joVar == null) {
             return 0;
         }

@@ -6,7 +6,7 @@ import hc0.fb;
 import hc0.fm;
 import hc0.h6;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -16,9 +16,9 @@ public abstract class b {
     static {
         fb.Companion.getClass();
         aa.r b = l0.b(fb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = h.a;
         aa.s c = no.a.c(list, "selections", "PullRequest", n, list);
         h6.Companion.getClass();

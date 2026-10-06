@@ -13,14 +13,14 @@ import ic.wh;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
-import lg.b;
+import lg.bShadow;
 import x61.x;
 import yz0.r3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u extends LinearLayout {
     public static final a Companion = new a();
-    public b r;
+    public bShadow r;
     public int s;
     public int t;
     public int u;
@@ -28,7 +28,7 @@ public final class u extends LinearLayout {
     public int w;
 
     public static final class a {
-        public static k.g a(Context context, yz0.b bVar, b bVar2, List list) {
+        public static k.g a(Context context, yz0.bShadow bVar, bShadow bVar2, List list) {
             k71.k.g(context, "context");
             k71.k.g(bVar, "data");
             k71.k.g(list, "selection");
@@ -65,11 +65,11 @@ public final class u extends LinearLayout {
         this.s = context.getResources().getDimensionPixelSize(2131165322);
         int i = a2 - (dimensionPixelSize * 2);
         this.t = i;
-        b.a aVar = lg.b.Companion;
-        lg.b bVar = lg.b.r;
+        bShadow.a aVar = lg.bShadow.Companion;
+        lg.bShadow bVar = lg.bShadow.r;
         aVar.getClass();
-        this.u = b.a.a(context, bVar);
-        this.v = b.a.c(context, bVar);
+        this.u = bShadow.a.a(context, bVar);
+        this.v = bShadow.a.c(context, bVar);
         int color = context.getColor(2131099701);
         this.w = color;
         setOrientation(1);
@@ -91,7 +91,7 @@ public final class u extends LinearLayout {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    public final void a(yz0.b bVar, List list) {
+    public final void a(yz0.bShadow bVar, List list) {
         LayerDrawable layerDrawable;
         k71.k.g(bVar, "data");
         k71.k.g(list, "selection");

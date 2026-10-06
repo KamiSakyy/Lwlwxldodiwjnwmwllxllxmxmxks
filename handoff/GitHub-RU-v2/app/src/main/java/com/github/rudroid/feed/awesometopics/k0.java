@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.ui.h1;
 import com.github.rudroid.viewmodels.v3;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 @LogTag(tag = "AwesomeListsViewModel")
@@ -59,11 +59,11 @@ public final class k0 extends k1 implements v3 {
         this.f12510x = dVar;
         this.f12511y = cVar2;
         this.f12512z = aVar2;
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.A = c10;
         this.B = com.github.rudroid.utilities.w0.f(c10, d1.k(this), new u(this, 0));
         this.C = new u(this, 1);
-        n1.A(new y71.y(new i0(cVar2.f5919b), new v(this, null), 6), d1.k(this));
+        n1Shadow.A(new y71.y(new i0(cVar2.f5919b), new v(this, null), 6), d1.k(this));
     }
 
     public final void D() {

@@ -22,7 +22,7 @@ public abstract class d {
         wg.Companion.getClass();
         x xVar = wg.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         List r = l.r(new m[]{new m("hasValidDeviceAuthKey", b, (String) null, rVar, rVar, rVar), new m("hasExpiredAuthRequest", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         yn.Companion.getClass();
         q0 q0Var = yn.a;

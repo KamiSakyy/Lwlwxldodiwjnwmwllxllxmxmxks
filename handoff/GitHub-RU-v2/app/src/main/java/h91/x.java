@@ -13,7 +13,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class x extends w {
+public final class xShadow extends w {
     public static Long i0(FileTime fileTime) {
         long millis = fileTime.toMillis();
         Long valueOf = Long.valueOf(millis);

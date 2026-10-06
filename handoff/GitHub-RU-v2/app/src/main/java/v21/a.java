@@ -8,7 +8,7 @@ import android.os.SystemClock;
 import android.os.WorkSource;
 import android.text.TextUtils;
 import android.util.Log;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.stats.zzi;
 import g21.d;
 import g21.e;
@@ -52,7 +52,7 @@ public final class a {
         this.i = g21.a.a;
         this.k = new HashMap();
         this.l = new AtomicInteger(0);
-        u.e("wake:com.google.firebase.iid.WakeLockHolder", "WakeLock: wakeLockName must not be empty");
+        uShadow.e("wake:com.google.firebase.iid.WakeLockHolder", "WakeLock: wakeLockName must not be empty");
         context.getApplicationContext();
         WorkSource workSource = null;
         this.h = null;

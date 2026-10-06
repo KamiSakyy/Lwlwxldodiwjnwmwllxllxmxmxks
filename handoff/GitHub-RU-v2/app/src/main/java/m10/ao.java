@@ -5,7 +5,7 @@ public abstract class ao {
     public static final zn Companion = new zn();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("MobileCopilotFeatureComparisonSubsection", rVar, rVar);
     }
 }

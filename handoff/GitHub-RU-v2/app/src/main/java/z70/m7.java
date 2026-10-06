@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m7 implements aa.a {
     public static final m7 a = new m7();
-    public static final List b = sy.d0.o("isViewer", "login", "avatarUrl", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("isViewer", "login", "avatarUrl", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -62,7 +62,7 @@ public final class m7 implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(j7Var, "value");
         fVar.z0("isViewer");
-        jo.f4.C(j7Var.a, aa.c.f, fVar, wVar, "login");
+        jo.f4Shadow.C(j7Var.a, aa.c.f, fVar, wVar, "login");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, j7Var.b);
         fVar.z0("avatarUrl");

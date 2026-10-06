@@ -250,12 +250,12 @@ public abstract class sf implements aaShadow.a {
         fVar.I(hnVar.d.r);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(hnVar.e, bVar2, fVar, wVar, "viewerCanResolve");
-        jo.f4.C(hnVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(hnVar.g, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(hnVar.e, bVar2, fVar, wVar, "viewerCanResolve");
+        jo.f4Shadow.C(hnVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(hnVar.g, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(wf.a, false)).b(fVar, wVar, hnVar.h);
         fVar.z0("viewerCanReply");
-        jo.f4.C(hnVar.i, bVar2, fVar, wVar, "diffLines");
+        jo.f4Shadow.C(hnVar.i, bVar2, fVar, wVar, "diffLines");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(mf.a, true)))).b(fVar, wVar, hnVar.j);
         fVar.z0("comments");
         aa.c.c(jf.a, false).b(fVar, wVar, hnVar.k);

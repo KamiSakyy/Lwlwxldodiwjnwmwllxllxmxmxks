@@ -2,14 +2,14 @@ package n00;
 
 import aa.w;
 import java.util.List;
-import m00.x;
+import m00.xShadow;
 import m00.z;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements aa.a {
     public static final m a = new m();
-    public static final List b = d0.o("repository", "id", "__typename");
+    public static final List b = d0Shadow.o("repository", "id", "__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -35,14 +35,14 @@ public final class m implements aa.a {
             throw null;
         }
         if (str2 != null) {
-            return new x(zVar, str, str2);
+            return new xShadow(zVar, str, str2);
         }
         k41.b.B(eVar, "__typename");
         throw null;
     }
 
     public final void b(ea.f fVar, w wVar, Object obj) {
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

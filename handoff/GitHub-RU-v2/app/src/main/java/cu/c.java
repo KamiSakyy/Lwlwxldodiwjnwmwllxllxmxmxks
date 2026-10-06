@@ -13,7 +13,7 @@ import m10.eh;
 import m10.py;
 import m10.qm;
 import m10.um;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,12 +25,12 @@ public abstract class c {
         ch.Companion.getClass();
         x xVar = ch.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         py.Companion.getClass();
         a0 a0Var = py.s;
         k.g(a0Var, "type");
-        List n2 = d0.n(new m("mergeMethod", a0Var, (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("mergeMethod", a0Var, (String) null, rVar, rVar, rVar));
         ah.Companion.getClass();
         m mVar = new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar);
         um.Companion.getClass();

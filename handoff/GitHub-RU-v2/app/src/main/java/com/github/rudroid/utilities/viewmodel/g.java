@@ -2,7 +2,7 @@ package com.github.rudroid.utilities.viewmodel;
 
 import k71.k;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.w1;
 import y71.y1;
 
@@ -14,7 +14,7 @@ public interface g {
         public i1 s;
 
         public a() {
-            y1 c = n1.c((Object) null);
+            y1 c = n1Shadow.c((Object) null);
             this.r = c;
             this.s = new i1(c);
         }

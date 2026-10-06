@@ -42,7 +42,7 @@ public final /* synthetic */ class g implements j71.a {
                 sb.append('\n');
                 eVar.r.d(sb);
                 try {
-                    sy.r.w(sb.toString(), 5);
+                    sy.rShadow.w(sb.toString(), 5);
                     throw null;
                 } catch (SQLException e) {
                     int i = eVar.x;

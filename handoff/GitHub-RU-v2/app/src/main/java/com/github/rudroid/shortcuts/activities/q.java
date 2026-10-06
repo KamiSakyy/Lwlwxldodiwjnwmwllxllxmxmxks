@@ -7,7 +7,7 @@ final /* synthetic */ class q extends k71.a implements j71.c {
     public final Object k(Object obj) {
         List list = (List) obj;
         k71.k.g(list, "p0");
-        ((com.github.rudroid.searchandfilter.q) ((k71.a) this).r).W(list, x61.r.r);
+        ((com.github.rudroid.searchandfilter.q) ((k71.a) this).r).W(list, x61.rShadow.r);
         return w61.a0.a;
     }
 }

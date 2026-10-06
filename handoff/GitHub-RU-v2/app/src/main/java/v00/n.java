@@ -186,14 +186,14 @@ public final /* synthetic */ class n implements j71.c {
                 k71.k.g(i3Var3, "data");
                 u10.l3 l3Var5 = i3Var3.a.b;
                 List list2 = l3Var5 != null ? l3Var5.b : null;
-                return list2 == null ? x61.r.r : list2;
+                return list2 == null ? x61.rShadow.r : list2;
             case 27:
                 i3 i3Var4 = (i3) obj;
                 k71.k.g(i3Var4, "data");
                 u10.l3 l3Var6 = i3Var4.a.b;
                 List list3 = l3Var6 != null ? l3Var6.b : null;
                 if (list3 == null) {
-                    list3 = x61.r.r;
+                    list3 = x61.rShadow.r;
                 }
                 ArrayList S = x61.m.S(list3);
                 ArrayList arrayList = new ArrayList(x61.n.F(S, 10));

@@ -18,7 +18,7 @@ public abstract class t2 {
     static {
         lb.Companion.getClass();
         aa.r b = v8.l0.b(lb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar = tb.a;
@@ -44,6 +44,6 @@ public abstract class t2 {
         aa.q0 q0Var = dj.m;
         k71.k.g(q0Var, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("organization", q0Var, (String) null, rVar, no.a.s(rn.j, new aa.u0(new aa.t("login"))), r4));
+        a = sy.d0Shadow.n(new aa.m("organization", q0Var, (String) null, rVar, no.a.s(rn.j, new aa.u0(new aa.t("login"))), r4));
     }
 }

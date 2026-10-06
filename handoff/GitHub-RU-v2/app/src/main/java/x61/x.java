@@ -136,7 +136,7 @@ public abstract class x extends e0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r {
+    public static class rShadow {
         public r() {
         }
     }

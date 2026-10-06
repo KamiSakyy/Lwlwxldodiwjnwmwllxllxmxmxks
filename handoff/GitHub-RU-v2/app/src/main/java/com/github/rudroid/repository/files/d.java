@@ -27,10 +27,10 @@ public final class d extends androidx.lifecycle.k1 {
         k71.k.g(a1Var, "savedStateHandle");
         Parcelable parcelable = (b) a1Var.a("EXTRA_BROWSING_MODE");
         parcelable = parcelable == null ? b.a.f19534r : parcelable;
-        y1 c10 = y71.n1.c((Object) null);
+        y1 c10 = y71.n1Shadow.c((Object) null);
         this.f19541s = c10;
         this.f19542t = new y71.i1(c10);
-        y1 c11 = y71.n1.c((Object) null);
+        y1 c11 = y71.n1Shadow.c((Object) null);
         this.f19543u = c11;
         this.f19544v = new y71.i1(c11);
         if (parcelable instanceof b.C0062b) {

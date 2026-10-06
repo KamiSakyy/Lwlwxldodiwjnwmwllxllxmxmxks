@@ -6,7 +6,7 @@ import androidx.compose.runtime.f1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public static final void a(w1.r rVar, String str, j71.a aVar, j71.c cVar, j71.a aVar2, androidx.compose.runtime.s sVar, int i, int i2) {
+    public static final void a(w1.r rVar, String str, j71.a aVar, j71.cShadow cVar, j71.a aVar2, androidx.compose.runtime.s sVar, int i, int i2) {
         w1.r rVar2;
         int i3;
         j71.a aVar3;
@@ -74,7 +74,7 @@ public final class q {
                 N3 = new ab.e(f1Var, 28);
                 sVar.n0(N3);
             }
-            j71.c cVar2 = (j71.c) N3;
+            j71.cShadow cVar2 = (j71.c) N3;
             boolean f2 = sVar.f(f1Var) | ((i4 & 7168) == 2048);
             Object N4 = sVar.N();
             if (f2 || N4 == obj) {

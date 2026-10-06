@@ -11,7 +11,7 @@ import g81.e;
 import java.util.Iterator;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l7.c0;
 import q01.p;
@@ -47,7 +47,7 @@ public final class ShortcutConfigurationModel implements b {
 
     public /* synthetic */ ShortcutConfigurationModel(int i, String str, List list, ShortcutColor shortcutColor, ShortcutIcon shortcutIcon, a aVar, ShortcutType shortcutType, String str2) {
         if (126 != (i & 126)) {
-            c1.l(i, 126, ShortcutConfigurationModel$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 126, ShortcutConfigurationModel$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 1) == 0) {

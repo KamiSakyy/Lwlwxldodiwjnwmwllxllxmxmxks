@@ -131,7 +131,7 @@ public final class y1 {
                                     iVar2 = androidx.compose.ui.layout.h.a;
                                 }
                                 if (i5 != 0) {
-                                    list2 = x61.r.r;
+                                    list2 = x61.rShadow.r;
                                 }
                                 if (i6 != 0) {
                                     str3 = null;

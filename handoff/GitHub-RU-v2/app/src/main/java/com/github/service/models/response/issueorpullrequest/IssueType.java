@@ -9,7 +9,7 @@ import g81.e;
 import gn.m;
 import gz.a;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -35,7 +35,7 @@ public final class IssueType implements Parcelable {
 
     public /* synthetic */ IssueType(int i, String str, String str2, String str3, boolean z, IssueTypeColor issueTypeColor) {
         if (31 != (i & 31)) {
-            c1.l(i, 31, IssueType$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 31, IssueType$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

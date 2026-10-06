@@ -15,7 +15,7 @@ import hc0.ll;
 import hc0.lr;
 import hc0.xa;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -26,7 +26,7 @@ public abstract class s {
         bb.Companion.getClass();
         x xVar = bb.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar2 = fb.a;
@@ -42,12 +42,12 @@ public abstract class s {
         k71.k.g(q0Var, "type");
         List r2 = x61.l.r(new aa.m[]{mVar4, new aa.m("requestedBy", q0Var, (String) null, rVar, rVar, r), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         db.Companion.getClass();
-        List n = d0.n(new aa.m("totalCount", l0.b(db.a), (String) null, rVar, rVar, rVar));
+        List n = d0Shadow.n(new aa.m("totalCount", l0.b(db.a), (String) null, rVar, rVar, rVar));
         aa.m mVar5 = new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
         hl.Companion.getClass();
         aa.r b2 = l0.b(hl.a);
         dl.Companion.getClass();
-        List n2 = d0.n(new aa.m("nodes", l0.a(dl.d), (String) null, rVar, rVar, x61.l.r(new aa.m[]{mVar5, new aa.m("comments", b2, (String) null, rVar, no.a.s(dl.a, new u0(1)), n), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
+        List n2 = d0Shadow.n(new aa.m("nodes", l0.a(dl.d), (String) null, rVar, rVar, x61.l.r(new aa.m[]{mVar5, new aa.m("comments", b2, (String) null, rVar, no.a.s(dl.a, new u0(1)), n), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)})));
         aa.m mVar6 = new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.m mVar7 = new aa.m("viewerDidAuthor", l0.b(xVar3), (String) null, rVar, rVar, rVar);
         lr.Companion.getClass();
@@ -58,6 +58,6 @@ public abstract class s {
         q0 q0Var3 = ll.a;
         k71.k.g(q0Var3, "type");
         lk.Companion.getClass();
-        a = x61.l.r(new aa.m[]{mVar6, mVar7, mVar8, new aa.m("reviews", q0Var3, "pendingReviews", rVar, x61.l.r(new aa.k[]{new aa.k(lk.x, new u0(1)), new aa.k(lk.y, new u0(d0.n("PENDING")))}), n2), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        a = x61.l.r(new aa.m[]{mVar6, mVar7, mVar8, new aa.m("reviews", q0Var3, "pendingReviews", rVar, x61.l.r(new aa.k[]{new aa.k(lk.x, new u0(1)), new aa.k(lk.y, new u0(d0Shadow.n("PENDING")))}), n2), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
     }
 }

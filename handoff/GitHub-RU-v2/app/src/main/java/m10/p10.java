@@ -7,8 +7,8 @@ public abstract class p10 {
     public static final o10 Companion = new o10();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("ReferencedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("ReferencedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

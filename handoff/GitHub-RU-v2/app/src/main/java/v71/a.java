@@ -57,13 +57,13 @@ public abstract class a extends j1 implements a71.c, z {
         return this.t;
     }
 
-    public final void q0(a0 a0Var, a aVar, j71.e eVar) {
+    public final void q0(a0Shadow a0Var, a aVar, j71.e eVar) {
         Object s;
         int ordinal = a0Var.ordinal();
-        w61.a0 a0Var2 = w61.a0.a;
+        w61.a0Shadow a0Var2 = w61.a0.a;
         if (ordinal == 0) {
             try {
-                a81.b.h(b4.T(b4.G(aVar, this, eVar)), a0Var2);
+                a81.bShadow.h(b4.T(b4.G(aVar, this, eVar)), a0Var2);
                 return;
             } finally {
                 th = th;
@@ -84,7 +84,7 @@ public abstract class a extends j1 implements a71.c, z {
             }
             try {
                 a71.h hVar = this.t;
-                Object n = a81.b.n(hVar, null);
+                Object n = a81.bShadow.n(hVar, null);
                 try {
                     if (eVar instanceof c71.a) {
                         k71.z.c(2, eVar);
@@ -92,12 +92,12 @@ public abstract class a extends j1 implements a71.c, z {
                     } else {
                         s = b4.u0(eVar, aVar, this);
                     }
-                    a81.b.g(hVar, n);
+                    a81.bShadow.g(hVar, n);
                     if (s != b71.a.r) {
                         i(s);
                     }
                 } catch (Throwable th) {
-                    a81.b.g(hVar, n);
+                    a81.bShadow.g(hVar, n);
                     throw th;
                 }
             } catch (Throwable th2) {

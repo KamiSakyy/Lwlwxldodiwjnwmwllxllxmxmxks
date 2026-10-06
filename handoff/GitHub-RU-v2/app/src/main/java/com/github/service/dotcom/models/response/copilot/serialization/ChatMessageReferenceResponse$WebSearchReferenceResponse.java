@@ -11,7 +11,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -46,7 +46,7 @@ public final class ChatMessageReferenceResponse$WebSearchReferenceResponse exten
             this.b = str2;
         }
         if ((i & 4) == 0) {
-            this.c = r.r;
+            this.c = rShadow.r;
         } else {
             this.c = list;
         }

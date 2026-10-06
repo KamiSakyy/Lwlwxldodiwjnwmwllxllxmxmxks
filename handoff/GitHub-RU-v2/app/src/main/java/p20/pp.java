@@ -6,7 +6,7 @@ import u10.e10;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pp implements aaShadow.a {
     public static final pp a = new pp();
-    public static final List b = sy.d0.o("__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -82,9 +82,9 @@ public final class pp implements aaShadow.a {
         bVar.b(fVar, wVar, e10Var.a);
         fVar.z0("hasIssuesEnabled");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(e10Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
-        jo.f4.C(e10Var.c, bVar2, fVar, wVar, "isArchived");
-        jo.f4.C(e10Var.d, bVar2, fVar, wVar, "id");
+        jo.f4Shadow.C(e10Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
+        jo.f4Shadow.C(e10Var.c, bVar2, fVar, wVar, "isArchived");
+        jo.f4Shadow.C(e10Var.d, bVar2, fVar, wVar, "id");
         bVar.b(fVar, wVar, e10Var.e);
         List list = w80.s3.a;
         w80.s3.d(fVar, wVar, e10Var.f);

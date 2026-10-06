@@ -15,10 +15,10 @@ public final class y implements h0 {
     public ZonedDateTime d;
     public ZonedDateTime e;
     public ZonedDateTime f;
-    public x g;
+    public xShadow g;
     public String h;
 
-    public y(String str, String str2, o7 o7Var, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, x xVar, String str3) {
+    public y(String str, String str2, o7 o7Var, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, xShadow xVar, String str3) {
         this.a = str;
         this.b = str2;
         this.c = o7Var;
@@ -46,7 +46,7 @@ public final class y implements h0 {
         int hashCode = (a + (zonedDateTime == null ? 0 : zonedDateTime.hashCode())) * 31;
         ZonedDateTime zonedDateTime2 = this.f;
         int hashCode2 = (hashCode + (zonedDateTime2 == null ? 0 : zonedDateTime2.hashCode())) * 31;
-        x xVar = this.g;
+        xShadow xVar = this.g;
         return this.h.hashCode() + ((hashCode2 + (xVar != null ? xVar.hashCode() : 0)) * 31);
     }
 

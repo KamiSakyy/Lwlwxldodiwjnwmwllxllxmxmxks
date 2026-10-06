@@ -44,7 +44,7 @@ public abstract class ll {
     public static final a81.t J = new a81.t(1, "mergeType", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         x0.Companion.getClass();
         aa.j0 j0Var = x0.e;
         d3.Companion.getClass();

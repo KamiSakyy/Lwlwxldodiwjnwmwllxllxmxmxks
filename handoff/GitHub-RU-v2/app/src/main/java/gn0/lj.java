@@ -9,8 +9,8 @@ public abstract class lj {
     public static final aa.q0 b;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        b = new aa.q0("Patch", n, sy.d0.n(yh.a));
+        b = new aa.q0("Patch", n, sy.d0Shadow.n(yh.a));
     }
 }

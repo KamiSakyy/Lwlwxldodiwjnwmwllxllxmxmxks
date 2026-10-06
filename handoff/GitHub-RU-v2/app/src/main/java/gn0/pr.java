@@ -6,7 +6,7 @@ public abstract class pr {
     public static final aa.q0 a;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         a = new aa.q0("RepositoryTopicConnection", rVar, rVar);
     }
 }

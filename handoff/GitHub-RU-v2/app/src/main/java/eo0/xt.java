@@ -6,7 +6,7 @@ import jn0.v60;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xt implements aaShadow.a {
     public static final xt a = new xt();
-    public static final List b = sy.d0.o(new String[]{"__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -82,9 +82,9 @@ public final class xt implements aaShadow.a {
         bVar.b(fVar, wVar, v60Var.a);
         fVar.z0("hasIssuesEnabled");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(v60Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
-        jo.f4.C(v60Var.c, bVar2, fVar, wVar, "isArchived");
-        jo.f4.C(v60Var.d, bVar2, fVar, wVar, "id");
+        jo.f4Shadow.C(v60Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
+        jo.f4Shadow.C(v60Var.c, bVar2, fVar, wVar, "isArchived");
+        jo.f4Shadow.C(v60Var.d, bVar2, fVar, wVar, "id");
         bVar.b(fVar, wVar, v60Var.e);
         List list = uu0.b5.a;
         uu0.b5.d(fVar, wVar, v60Var.f);

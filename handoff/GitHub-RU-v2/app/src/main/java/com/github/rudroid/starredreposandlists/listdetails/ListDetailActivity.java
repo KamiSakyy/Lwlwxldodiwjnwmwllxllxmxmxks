@@ -10,7 +10,7 @@ public final class ListDetailActivity extends e<ic.d0> {
     public int v0;
     public com.github.rudroid.activities.util.g w0;
     public com.github.rudroid.activities.util.g x0;
-    public static final /* synthetic */ r71.e[] y0 = {new k71.m(ListDetailActivity.class, "login", "getLogin()Ljava/lang/String;", 0), h1.w(k71.x.a, ListDetailActivity.class, "slug", "getSlug()Ljava/lang/String;", 0)};
+    public static final /* synthetic */ r71.e[] y0 = {new k71.m(ListDetailActivity.class, "login", "getLogin()Ljava/lang/String;", 0), h1.w(k71.xShadow.a, ListDetailActivity.class, "slug", "getSlug()Ljava/lang/String;", 0)};
     public static final a Companion = new a();
 
     public static final class a {
@@ -36,7 +36,7 @@ public final class ListDetailActivity extends e<ic.d0> {
         x6.a0 s4 = E.s4();
         r71.e[] eVarArr = y0;
         x6.y yVar = new x6.y(s4.b.s, new ListDetailRoute((String) this.w0.c(this, eVarArr[0]), (String) this.x0.c(this, eVarArr[1])), (k71.e) null);
-        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ListDetailRoute.class), x61.s.r, k71.x.a(ListDetailFragment.class)), yVar.j, yVar, s4);
+        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.xShadow.a(ListDetailRoute.class), x61.s.r, k71.xShadow.a(ListDetailFragment.class)), yVar.j, yVar, s4);
     }
     public Object C(Object p1) { return null; }
 }

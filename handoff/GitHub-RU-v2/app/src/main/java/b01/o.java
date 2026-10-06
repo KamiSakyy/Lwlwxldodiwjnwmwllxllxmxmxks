@@ -2,7 +2,7 @@ package b01;
 
 import com.github.rudroid.m0;
 import java.util.ArrayList;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
@@ -27,7 +27,7 @@ public final class o {
         if (!k71.k.b(this.a, oVar.a) || !this.b.equals(oVar.b)) {
             return false;
         }
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return rVar.equals(rVar) && this.c.equals(oVar.c);
     }
 
@@ -38,7 +38,7 @@ public final class o {
 
     public final String toString() {
         StringBuilder p = m0.p("DiscussionsList(repoName=", this.a, ", discussions=", this.b, ", pinnedDiscussions=");
-        p.append(r.r);
+        p.append(rShadow.r);
         p.append(", page=");
         p.append(this.c);
         p.append(")");

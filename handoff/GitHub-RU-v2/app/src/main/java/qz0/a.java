@@ -8,7 +8,7 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.Iterator;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import pz0.a5Shadow;
 import pz0.ab;
@@ -421,7 +421,7 @@ public final class a implements aa.a {
                 k.g(z4Var, "value");
                 u0 u0Var5 = z4Var.a;
                 fVar.z0("body");
-                f4.y(c.i, fVar, wVar, u0Var5, "headline");
+                f4Shadow.y(c.i, fVar, wVar, u0Var5, "headline");
                 c.a.b(fVar, wVar, z4Var.b);
                 break;
             case 3:
@@ -518,7 +518,7 @@ public final class a implements aa.a {
                 u0 u0Var23 = h6Var.a;
                 if (u0Var23 instanceof u0) {
                     fVar.z0("assigneeIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var23);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var23);
                 }
                 if (u0Var22 instanceof u0) {
                     fVar.z0("body");
@@ -538,7 +538,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var18 instanceof u0) {
                     fVar.z0("labelIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var18);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var18);
                 }
                 if (u0Var17 instanceof u0) {
                     fVar.z0("milestoneId");
@@ -550,7 +550,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var15 instanceof u0) {
                     fVar.z0("projectIds");
-                    f4.d(c.a).d(fVar, wVar, u0Var15);
+                    f4Shadow.d(c.a).d(fVar, wVar, u0Var15);
                 }
                 fVar.z0("repositoryId");
                 aa.b bVar = c.a;

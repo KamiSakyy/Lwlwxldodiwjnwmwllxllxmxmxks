@@ -31,9 +31,9 @@ public final class q1 implements Runnable {
                 o4Var.b().z();
                 o4Var.l0();
                 v4 v4Var = this.s;
-                c21.u.g(v4Var);
+                c21.uShadow.g(v4Var);
                 String str = v4Var.r;
-                c21.u.d(str);
+                c21.uShadow.d(str);
                 int i = 0;
                 if (o4Var.e0().J(null, c0.z0)) {
                     o4Var.f().getClass();
@@ -77,7 +77,7 @@ public final class q1 implements Runnable {
                 o4Var2.b().z();
                 o4Var2.l0();
                 v4 v4Var2 = this.s;
-                c21.u.d(v4Var2.r);
+                c21.uShadow.d(v4Var2.r);
                 o4Var2.c0(v4Var2);
                 break;
             case 3:
@@ -94,8 +94,8 @@ public final class q1 implements Runnable {
                 o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) oVar).s;
                 v4 v4Var3 = this.s;
                 String str2 = v4Var3.r;
-                c21.u.g(str2);
-                c21.u.d(str2);
+                c21.uShadow.g(str2);
+                c21.uShadow.d(str2);
                 oVar.z();
                 oVar.A();
                 try {
@@ -127,7 +127,7 @@ public final class q1 implements Runnable {
                 o4Var4.b().z();
                 o4Var4.l0();
                 v4 v4Var4 = this.s;
-                c21.u.d(v4Var4.r);
+                c21.uShadow.d(v4Var4.r);
                 o4Var4.m0(v4Var4);
                 o4Var4.n0(v4Var4);
                 break;

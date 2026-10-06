@@ -129,7 +129,7 @@ public final class w0 {
         }
         b2 t = sVar2.t();
         if (t != null) {
-            t.d = new com.github.rudroid.copilot.ui.o(rVar, list, i, 2);
+            t.d = new com.github.rudroid.copilot.ui.oShadow(rVar, list, i, 2);
         }
     }
 }

@@ -11,7 +11,7 @@ import m10.ah;
 import m10.eh;
 import m10.p00;
 import m10.zp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -22,14 +22,14 @@ public abstract class h {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
         s mVar2 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Commit");
+        List n = d0Shadow.n("Commit");
         List list = wo.d.a;
-        List r = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("Commit", d0.n("Commit"), x61.l.r(new s[]{mVar, mVar2, no.a.c(list, "selections", "Commit", n, list)})), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("Commit", d0Shadow.n("Commit"), x61.l.r(new s[]{mVar, mVar2, no.a.c(list, "selections", "Commit", n, list)})), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         zp.Companion.getClass();
         j0 j0Var = zp.a;
         k71.k.g(j0Var, "type");

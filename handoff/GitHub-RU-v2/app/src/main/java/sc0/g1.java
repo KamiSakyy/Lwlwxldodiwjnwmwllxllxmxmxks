@@ -7,7 +7,7 @@ import rc0.y1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g1 implements aa.a {
     public static final g1 a = new g1();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         y1 y1Var;

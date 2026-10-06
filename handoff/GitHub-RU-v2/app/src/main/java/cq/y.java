@@ -22,7 +22,7 @@ public abstract class y implements aa.a {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
                 bool = bool2;
-                uVar = (u) aa.c.c(x.a, true).a(eVar, wVar);
+                uVar = (u) aa.c.c(xShadow.a, true).a(eVar, wVar);
             } else if (r0 == 1) {
                 bool = bool2;
                 sa.Companion.getClass();
@@ -74,12 +74,12 @@ public abstract class y implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(wVar2, "value");
         fVar.z0("actor");
-        aa.c.c(x.a, true).b(fVar, wVar, wVar2.a);
+        aa.c.c(xShadow.a, true).b(fVar, wVar, wVar2.a);
         fVar.z0("createdAt");
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, wVar2.b);
         fVar.z0("dismissable");
-        jo.f4.C(wVar2.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(wVar2.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, wVar2.d);
         fVar.z0("previewImageUrl");
         aa.c.i.b(fVar, wVar, wVar2.e);

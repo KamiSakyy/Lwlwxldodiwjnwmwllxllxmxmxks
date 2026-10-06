@@ -5,7 +5,7 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.viewmodel.d;
 import k71.k;
 import kj.g0;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import yz0.r3;
 
@@ -35,10 +35,10 @@ public final class d extends k1 implements com.github.rudroid.utilities.viewmode
     }
 
     public final void P(r3 r3Var) {
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new b(this, r3Var, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new b(this, r3Var, null), 3);
     }
 
     public final void Q(r3 r3Var) {
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new c(this, r3Var, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new c(this, r3Var, null), 3);
     }
 }

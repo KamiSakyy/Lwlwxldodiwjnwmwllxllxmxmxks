@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class io implements aaShadow.a {
     public static final io a = new io();
-    public static final List b = sy.d0.o(new String[]{"linesAdded", "linesDeleted", "filesChanged", "patches"});
+    public static final List b = sy.d0Shadow.o(new String[]{"linesAdded", "linesDeleted", "filesChanged", "patches"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -20,7 +20,7 @@ public final class io implements aaShadow.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {
@@ -30,7 +30,7 @@ public final class io implements aaShadow.a {
                 long nextLong2 = eVar.nextLong();
                 if (nextLong2 > 2147483647L) {
                     while (nextLong2 > 2147483647L) {
-                        nextLong2 = jo.f4.c(1, nextLong2, "substring(...)");
+                        nextLong2 = jo.f4Shadow.c(1, nextLong2, "substring(...)");
                     }
                     num2 = Integer.valueOf((int) nextLong2);
                 } else {
@@ -40,7 +40,7 @@ public final class io implements aaShadow.a {
                 long nextLong3 = eVar.nextLong();
                 if (nextLong3 > 2147483647L) {
                     while (nextLong3 > 2147483647L) {
-                        nextLong3 = jo.f4.c(1, nextLong3, "substring(...)");
+                        nextLong3 = jo.f4Shadow.c(1, nextLong3, "substring(...)");
                     }
                     num3 = Integer.valueOf((int) nextLong3);
                 } else {

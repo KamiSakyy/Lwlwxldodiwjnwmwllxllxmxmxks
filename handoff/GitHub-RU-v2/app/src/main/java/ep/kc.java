@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kc implements aaShadow.a {
     public static final kc a = new kc();
-    public static final List b = sy.d0.o("issues", "pullRequests", "repos", "users", "organizations", "code", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("issues", "pullRequests", "repos", "users", "organizations", "code", "id", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0027, code lost:
     

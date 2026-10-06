@@ -4,11 +4,11 @@ import aa.w;
 import java.util.List;
 import java.util.Set;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class e implements aa.a {
-    public static final List a = d0.n("__typename");
+    public static final List a = d0Shadow.n("__typename");
 
     public static d c(ea.e eVar, w wVar) {
         c cVar;

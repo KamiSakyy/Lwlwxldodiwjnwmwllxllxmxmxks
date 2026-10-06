@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mo implements aaShadow.a {
     public static final mo a = new mo();
-    public static final List b = sy.d0.o("hasNextPage", "endCursor");
+    public static final List b = sy.d0Shadow.o("hasNextPage", "endCursor");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -36,7 +36,7 @@ public final class mo implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(ezVar, "value");
         fVar.z0("hasNextPage");
-        jo.f4.C(ezVar.a, aa.c.f, fVar, wVar, "endCursor");
+        jo.f4Shadow.C(ezVar.a, aa.c.f, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, ezVar.b);
     }
 }

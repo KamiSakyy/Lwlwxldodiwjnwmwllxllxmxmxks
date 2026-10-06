@@ -6,7 +6,7 @@ import jo.bi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l10 implements aaShadow.a {
     public static final l10 a = new l10();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -69,11 +69,11 @@ public final class l10 implements aaShadow.a {
         aa.c.c(qx.w1.a, false).b(fVar, wVar, t1Var.g);
         fVar.z0("isDeveloperProgramMember");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(t1Var.h, bVar3, fVar, wVar, "isEmployee");
-        jo.f4.C(t1Var.i, bVar3, fVar, wVar, "isFollowingViewer");
-        jo.f4.C(t1Var.j, bVar3, fVar, wVar, "isViewer");
-        jo.f4.C(t1Var.k, bVar3, fVar, wVar, "isBountyHunter");
-        jo.f4.C(t1Var.l, bVar3, fVar, wVar, "itemShowcase");
+        jo.f4Shadow.C(t1Var.h, bVar3, fVar, wVar, "isEmployee");
+        jo.f4Shadow.C(t1Var.i, bVar3, fVar, wVar, "isFollowingViewer");
+        jo.f4Shadow.C(t1Var.j, bVar3, fVar, wVar, "isViewer");
+        jo.f4Shadow.C(t1Var.k, bVar3, fVar, wVar, "isBountyHunter");
+        jo.f4Shadow.C(t1Var.l, bVar3, fVar, wVar, "itemShowcase");
         aa.c.c(qx.x1.a, true).b(fVar, wVar, t1Var.m);
         fVar.z0("location");
         aa.o0 o0Var = aa.c.i;
@@ -95,16 +95,16 @@ public final class l10 implements aaShadow.a {
         fVar.z0("status");
         aa.c.b(aa.c.c(qx.h2.a, true)).b(fVar, wVar, t1Var.v);
         fVar.z0("showProfileReadme");
-        jo.f4.C(t1Var.w, bVar3, fVar, wVar, "profileReadme");
+        jo.f4Shadow.C(t1Var.w, bVar3, fVar, wVar, "profileReadme");
         aa.c.b(aa.c.c(qx.b2.a, true)).b(fVar, wVar, t1Var.x);
         fVar.z0("viewerCanFollow");
-        jo.f4.C(t1Var.y, bVar3, fVar, wVar, "viewerIsFollowing");
-        jo.f4.C(t1Var.z, bVar3, fVar, wVar, "websiteUrl");
+        jo.f4Shadow.C(t1Var.y, bVar3, fVar, wVar, "viewerIsFollowing");
+        jo.f4Shadow.C(t1Var.z, bVar3, fVar, wVar, "websiteUrl");
         o0Var.b(fVar, wVar, t1Var.A);
         fVar.z0("viewerCanBlock");
-        jo.f4.C(t1Var.B, bVar3, fVar, wVar, "viewerCanUnblock");
-        jo.f4.C(t1Var.C, bVar3, fVar, wVar, "privateProfile");
-        jo.f4.C(t1Var.D, bVar3, fVar, wVar, "projectsV2");
+        jo.f4Shadow.C(t1Var.B, bVar3, fVar, wVar, "viewerCanUnblock");
+        jo.f4Shadow.C(t1Var.C, bVar3, fVar, wVar, "privateProfile");
+        jo.f4Shadow.C(t1Var.D, bVar3, fVar, wVar, "projectsV2");
         aa.c.c(qx.c2.a, false).b(fVar, wVar, t1Var.E);
         fVar.z0("socialAccounts");
         aa.c.c(qx.e2.a, false).b(fVar, wVar, t1Var.F);

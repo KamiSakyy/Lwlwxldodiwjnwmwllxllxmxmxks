@@ -58,8 +58,8 @@ public final class ct {
         o.append(this.d);
         o.append(", isPrerelease=");
         com.github.rudroid.m0.A(o, this.e, ", isDraft=", this.f, ", isLatest=");
-        jo.f4.B(", createdAt=", ", publishedAt=", o, this.h, this.g);
-        jo.f4.A(", url=", this.j, ", __typename=", o, this.i);
+        jo.f4Shadow.B(", createdAt=", ", publishedAt=", o, this.h, this.g);
+        jo.f4Shadow.A(", url=", this.j, ", __typename=", o, this.i);
         return com.github.rudroid.copilot.h1.p(o, this.k, ")");
     }
 }

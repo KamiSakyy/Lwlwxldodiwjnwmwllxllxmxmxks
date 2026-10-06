@@ -9,7 +9,7 @@ import com.github.rudroid.utilities.ui.u0;
 import in.a1;
 import v71.b0;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -38,12 +38,12 @@ public final class s extends k1 {
         h.Companion.getClass();
         h hVar = h.f;
         aVar.getClass();
-        y1 c = n1.c(new u0(hVar));
+        y1 c = n1Shadow.c(new u0(hVar));
         this.u = c;
         this.v = new i1(c);
-        this.w = n1.c("");
+        this.w = n1Shadow.c("");
         this.x = "";
-        this.y = n1.c("");
+        this.y = n1Shadow.c("");
         this.z = "";
         int i = Build.VERSION.SDK_INT;
         String str = Build.MANUFACTURER;
@@ -51,9 +51,9 @@ public final class s extends k1 {
         StringBuilder n = x.i.n(i, "GitHub Android v1.257.0; OS SDK v", "; ", str, " ");
         n.append(str2);
         this.B = n.toString();
-        b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new n(this, null), 3);
-        b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new p(this, null), 3);
-        b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new r(this, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new n(this, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p(this, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new r(this, null), 3);
     }
 
     public final void P() {

@@ -7,8 +7,8 @@ public abstract class zc {
     public static final yc Companion = new yc();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("LabeledEvent", n, sy.d0.n(yg.a));
+        new aa.q0("LabeledEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

@@ -8,7 +8,7 @@ import k71.k;
 import sy.y;
 import w61.a0;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class f implements a {
@@ -238,7 +238,7 @@ public final class f implements a {
                 }
                 i data = ((n5.f) obj).getData();
                 dVar.f28032w = 2;
-                Object t10 = n1.t(data, dVar);
+                Object t10 = n1Shadow.t(data, dVar);
                 return t10 != obj2 ? obj2 : t10;
             }
         }
@@ -250,7 +250,7 @@ public final class f implements a {
         }
         i data2 = ((n5.f) obj3).getData();
         dVar.f28032w = 2;
-        Object t102 = n1.t(data2, dVar);
+        Object t102 = n1Shadow.t(data2, dVar);
         if (t102 != obj22) {
         }
     }

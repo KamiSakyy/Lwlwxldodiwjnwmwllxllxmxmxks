@@ -2,14 +2,14 @@ package ni0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = d0.o(new String[]{"hasNextPage", "endCursor"});
+    public static final List b = d0Shadow.o(new String[]{"hasNextPage", "endCursor"});
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");
@@ -40,7 +40,7 @@ public final class f implements aa.a {
         k.g(wVar, "customScalarAdapters");
         k.g(bVar, "value");
         fVar.z0("hasNextPage");
-        f4.C(bVar.a, aa.c.f, fVar, wVar, "endCursor");
+        f4Shadow.C(bVar.a, aa.c.f, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, bVar.b);
     }
 }

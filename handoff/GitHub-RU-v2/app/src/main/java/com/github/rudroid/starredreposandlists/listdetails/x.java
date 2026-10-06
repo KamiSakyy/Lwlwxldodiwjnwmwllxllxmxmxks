@@ -3,7 +3,7 @@ package com.github.rudroid.starredreposandlists.listdetails;
 import androidx.compose.runtime.b2;
 import androidx.lifecycle.d1;
 import com.github.rudroid.utilities.ui.g1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.q1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -20,13 +20,13 @@ public final class x {
                 if (a == null) {
                     throw new IllegalStateException("No ViewModelStoreOwner was provided via LocalViewModelStoreOwner");
                 }
-                s0Var3 = (s0) t.e.v(k71.x.a(s0.class), a, a instanceof androidx.lifecycle.r ? a.g0() : t6.a.b, sVar2);
+                s0Var3 = (s0) t.e.v(k71.xShadow.a(s0.class), a, a instanceof androidx.lifecycle.r ? a.g0() : t6.a.b, sVar2);
             } else {
                 sVar2.V();
                 s0Var3 = s0Var;
             }
             sVar2.r();
-            com.github.rudroid.uitoolkit.utils.z.a(f0.o.f(w1.o.a, ih.d.b(sVar2).b, d2.a0.b), r1.i.d(168256266, new com.github.rudroid.profile.status.ui.x(aVar2, cVar, sVar), sVar2), null, null, null, 0, 0L, 0L, r1.i.d(-1607397292, new com.github.rudroid.actions.workflowruns.ui.f(androidx.compose.runtime.t.n(n1.G(new c00.g(s0Var3.A, s0Var3.B, new k0(s0Var3, null), 27), d1.k(s0Var3), q1.a(3), g1.a.c(g1.Companion)), sVar2), aVar, sVar, m0Var, bVar, 7), sVar2), sVar2, 100663344, 252);
+            com.github.rudroid.uitoolkit.utils.z.a(f0.o.f(w1.o.a, ih.d.b(sVar2).b, d2.a0Shadow.b), r1.i.d(168256266, new com.github.rudroid.profile.status.ui.x(aVar2, cVar, sVar), sVar2), null, null, null, 0, 0L, 0L, r1.i.d(-1607397292, new com.github.rudroid.actions.workflowruns.ui.f(androidx.compose.runtime.t.n(n1Shadow.G(new c00.g(s0Var3.A, s0Var3.B, new k0(s0Var3, null), 27), d1.k(s0Var3), q1.a(3), g1.a.c(g1.Companion)), sVar2), aVar, sVar, m0Var, bVar, 7), sVar2), sVar2, 100663344, 252);
             s0Var2 = s0Var3;
         } else {
             sVar2.V();

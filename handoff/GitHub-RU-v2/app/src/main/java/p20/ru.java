@@ -7,7 +7,7 @@ import u10.t80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ru implements aaShadow.a {
     public static final ru a = new ru();
-    public static final List b = sy.d0.n("contributionLevel");
+    public static final List b = sy.d0Shadow.n("contributionLevel");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

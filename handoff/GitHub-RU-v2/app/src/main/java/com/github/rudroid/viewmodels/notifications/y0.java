@@ -52,7 +52,7 @@ final class y0 extends c71.j implements j71.e {
             sy.y.j(obj);
         }
         this.v = 2;
-        Object F = y71.n1.F((y71.i) obj, this);
+        Object F = y71.n1Shadow.F((y71.i) obj, this);
         return F == aVar ? aVar : F;
     }
 }

@@ -28,10 +28,10 @@ public final class v1 extends androidx.lifecycle.k1 implements com.github.rudroi
     }
 
     public final void P(String str) {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new t1(this, str, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new t1(this, str, null), 3);
     }
 
     public final void Q(String str) {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u1(this, str, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u1(this, str, null), 3);
     }
 }

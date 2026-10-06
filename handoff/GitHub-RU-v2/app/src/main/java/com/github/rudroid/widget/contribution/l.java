@@ -41,7 +41,7 @@ public final class l implements l6.g {
 
     static {
         r71.e qVar = new k71.q(l.class, "datastore", "getDatastore(Landroid/content/Context;)Landroidx/datastore/core/DataStore;");
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         b = new r71.e[]{qVar};
         a = new l();
         c = k41.b.r("contributionWidgetState", a.a);

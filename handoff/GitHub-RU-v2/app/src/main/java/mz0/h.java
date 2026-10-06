@@ -2,13 +2,13 @@ package mz0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements aa.a {
     public static final h a = new h();
-    public static final List b = d0.o(new String[]{"hasValidDeviceAuthKey", "hasExpiredAuthRequest"});
+    public static final List b = d0Shadow.o(new String[]{"hasValidDeviceAuthKey", "hasExpiredAuthRequest"});
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -45,7 +45,7 @@ public final class h implements aa.a {
         k71.k.g(oVar, "value");
         fVar.z0("hasValidDeviceAuthKey");
         aa.b bVar = aa.c.f;
-        f4.C(oVar.a, bVar, fVar, wVar, "hasExpiredAuthRequest");
+        f4Shadow.C(oVar.a, bVar, fVar, wVar, "hasExpiredAuthRequest");
         bVar.b(fVar, wVar, Boolean.valueOf(oVar.b));
     }
 }

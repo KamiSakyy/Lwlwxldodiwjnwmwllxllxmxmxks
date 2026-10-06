@@ -13,12 +13,12 @@ public abstract class c5 {
         tb.Companion.getClass();
         aa.x xVar = tb.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         qx.Companion.getClass();
         aa.q0 q0Var = qx.a;
         k71.k.g(q0Var, "type");
         wh.Companion.getClass();
-        a = sy.d0.n(new aa.m("unblockUserFromOrganization", q0Var, (String) null, rVar, no.a.s(wh.C0, new aa.u0(x61.x.u(new w61.k("organizationId", new aa.t("organizationId")), new w61.k("unblockedUserId", new aa.t("userId"))))), n));
+        a = sy.d0Shadow.n(new aa.m("unblockUserFromOrganization", q0Var, (String) null, rVar, no.a.s(wh.C0, new aa.u0(x61.x.u(new w61.k("organizationId", new aa.t("organizationId")), new w61.k("unblockedUserId", new aa.t("userId"))))), n));
     }
 }

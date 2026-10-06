@@ -6,7 +6,7 @@ import kc0.b40;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class or implements aaShadow.a {
     public static final or a = new or();
-    public static final List b = sy.d0.n("clientMutationId");
+    public static final List b = sy.d0Shadow.n("clientMutationId");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

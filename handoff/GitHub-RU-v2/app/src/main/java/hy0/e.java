@@ -1,12 +1,12 @@
 package hy0;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements aa.a {
     public static final e a = new e();
-    public static final List b = d0.n("__typename");
+    public static final List b = d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class e implements aa.a {
         }
         if (m71.a.v(m71.a.O(new String[]{"ProjectV2Field", "ProjectV2IterationField", "ProjectV2SingleSelectField"}), wVar.a, str, wVar.b)) {
             eVar.s0();
-            wVar2 = iy0.x.c(eVar, wVar);
+            wVar2 = iy0.xShadow.c(eVar, wVar);
         }
         return new gy0.f(str, wVar2);
     }
@@ -35,7 +35,7 @@ public final class e implements aa.a {
         aa.c.a.b(fVar, wVar, fVar2.a);
         iy0.w wVar2 = fVar2.b;
         if (wVar2 != null) {
-            iy0.x.d(fVar, wVar, wVar2);
+            iy0.xShadow.d(fVar, wVar, wVar2);
         }
     }
 }

@@ -20,7 +20,7 @@ import y41.u0;
 import y41.w0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class q {
+public final class qShadow {
     public static final HashMap f;
     public static final String g;
     public Context a;

@@ -1,6 +1,6 @@
 package x1;
 
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class m {
@@ -18,41 +18,41 @@ public final class m {
     public static final e f33714d;
 
     static {
-        d0.a("username");
-        f33712b = d0.a("password");
-        f33713c = d0.a("emailAddress");
-        d0.a("newUsername");
-        d0.a("newPassword");
-        d0.a("postalAddress");
-        d0.a("postalCode");
-        d0.a("creditCardNumber");
-        d0.a("creditCardSecurityCode");
-        d0.a("creditCardExpirationDate");
-        d0.a("creditCardExpirationMonth");
-        d0.a("creditCardExpirationYear");
-        d0.a("creditCardExpirationDay");
-        d0.a("addressCountry");
-        d0.a("addressRegion");
-        d0.a("addressLocality");
-        d0.a("streetAddress");
-        d0.a("extendedAddress");
-        d0.a("extendedPostalCode");
-        d0.a("personName");
-        d0.a("personGivenName");
-        d0.a("personFamilyName");
-        d0.a("personMiddleName");
-        d0.a("personMiddleInitial");
-        d0.a("personNamePrefix");
-        d0.a("personNameSuffix");
-        f33714d = d0.a("phoneNumber");
-        d0.a("phoneNumberDevice");
-        d0.a("phoneCountryCode");
-        d0.a("phoneNational");
-        d0.a("gender");
-        d0.a("birthDateFull");
-        d0.a("birthDateDay");
-        d0.a("birthDateMonth");
-        d0.a("birthDateYear");
-        d0.a("smsOTPCode");
+        d0Shadow.a("username");
+        f33712b = d0Shadow.a("password");
+        f33713c = d0Shadow.a("emailAddress");
+        d0Shadow.a("newUsername");
+        d0Shadow.a("newPassword");
+        d0Shadow.a("postalAddress");
+        d0Shadow.a("postalCode");
+        d0Shadow.a("creditCardNumber");
+        d0Shadow.a("creditCardSecurityCode");
+        d0Shadow.a("creditCardExpirationDate");
+        d0Shadow.a("creditCardExpirationMonth");
+        d0Shadow.a("creditCardExpirationYear");
+        d0Shadow.a("creditCardExpirationDay");
+        d0Shadow.a("addressCountry");
+        d0Shadow.a("addressRegion");
+        d0Shadow.a("addressLocality");
+        d0Shadow.a("streetAddress");
+        d0Shadow.a("extendedAddress");
+        d0Shadow.a("extendedPostalCode");
+        d0Shadow.a("personName");
+        d0Shadow.a("personGivenName");
+        d0Shadow.a("personFamilyName");
+        d0Shadow.a("personMiddleName");
+        d0Shadow.a("personMiddleInitial");
+        d0Shadow.a("personNamePrefix");
+        d0Shadow.a("personNameSuffix");
+        f33714d = d0Shadow.a("phoneNumber");
+        d0Shadow.a("phoneNumberDevice");
+        d0Shadow.a("phoneCountryCode");
+        d0Shadow.a("phoneNational");
+        d0Shadow.a("gender");
+        d0Shadow.a("birthDateFull");
+        d0Shadow.a("birthDateDay");
+        d0Shadow.a("birthDateMonth");
+        d0Shadow.a("birthDateYear");
+        d0Shadow.a("smsOTPCode");
     }
 }

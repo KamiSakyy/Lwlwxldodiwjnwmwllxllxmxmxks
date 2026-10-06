@@ -5,7 +5,7 @@ import java.util.List;
 import pz0.o7;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class a0 implements aa.a {
+public abstract class a0Shadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"actor", "createdAt", "dismissable", "identifier", "repository"});
 
     public static y c(ea.e eVar, aa.w wVar) {
@@ -16,7 +16,7 @@ public abstract class a0 implements aa.a {
         w wVar2 = null;
         ZonedDateTime zonedDateTime = null;
         String str = null;
-        x xVar = null;
+        xShadow xVar = null;
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
@@ -36,7 +36,7 @@ public abstract class a0 implements aa.a {
                     break;
                 }
                 bool = bool2;
-                xVar = (x) aa.c.c(b0.a, true).a(eVar, wVar);
+                xVar = (xShadow) aa.c.c(b0.a, true).a(eVar, wVar);
             }
             bool2 = bool;
         }
@@ -75,7 +75,7 @@ public abstract class a0 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, yVar.b);
         fVar.z0("dismissable");
-        jo.f4.C(yVar.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(yVar.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, yVar.d);
         fVar.z0("repository");
         aa.c.c(b0.a, true).b(fVar, wVar, yVar.e);

@@ -17,14 +17,14 @@ public abstract class q2 {
     static {
         xa.Companion.getClass();
         aa.r b = v8.l0.b(xa.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         k71.k.g(xVar, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Organization");
+        List n = sy.d0Shadow.n("Organization");
         List list = l70.c.a;
         aa.s c = no.a.c(list, "selections", "Organization", n, list);
         bb.Companion.getClass();
@@ -41,6 +41,6 @@ public abstract class q2 {
         aa.q0 q0Var = kz.O;
         k71.k.g(q0Var, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("user", q0Var, (String) null, rVar, no.a.s(pm.q, new aa.u0(new aa.t("login"))), r4));
+        a = sy.d0Shadow.n(new aa.m("user", q0Var, (String) null, rVar, no.a.s(pm.q, new aa.u0(new aa.t("login"))), r4));
     }
 }

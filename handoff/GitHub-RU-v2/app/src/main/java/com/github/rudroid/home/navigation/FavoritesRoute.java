@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -39,7 +39,7 @@ public final class FavoritesRoute implements Parcelable {
         if (1 == (i & 1)) {
             this.f14994r = serializableSimpleRepositoryList;
         } else {
-            c1.l(i, 1, FavoritesRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, FavoritesRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

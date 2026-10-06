@@ -9,7 +9,7 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a0 implements Comparable {
     public static final String s;
-    public k r;
+    public kShadow r;
 
     static {
         String str = File.separator;
@@ -17,7 +17,7 @@ public final class a0 implements Comparable {
         s = str;
     }
 
-    public a0(k kVar) {
+    public a0(kShadow kVar) {
         k71.k.g(kVar, "bytes");
         this.r = kVar;
     }
@@ -25,7 +25,7 @@ public final class a0 implements Comparable {
     public final ArrayList a() {
         ArrayList arrayList = new ArrayList();
         int a = i91.c.a(this);
-        k kVar = this.r;
+        kShadow kVar = this.r;
         if (a == -1) {
             a = 0;
         } else if (a < kVar.d() && kVar.i(a) == 92) {
@@ -47,11 +47,11 @@ public final class a0 implements Comparable {
     }
 
     public final String b() {
-        k kVar = i91.c.a;
-        k kVar2 = this.r;
-        int k = k.k(kVar2, kVar);
+        kShadow kVar = i91.c.a;
+        kShadow kVar2 = this.r;
+        int k = k.kShadow(kVar2, kVar);
         if (k == -1) {
-            k = k.k(kVar2, i91.c.b);
+            k = k.kShadow(kVar2, i91.c.b);
         }
         if (k != -1) {
             kVar2 = k.p(kVar2, k + 1, 0, 2);
@@ -62,20 +62,20 @@ public final class a0 implements Comparable {
     }
 
     public final a0 c() {
-        k kVar = i91.c.d;
-        k kVar2 = this.r;
+        kShadow kVar = i91.c.d;
+        kShadow kVar2 = this.r;
         if (k71.k.b(kVar2, kVar)) {
             return null;
         }
-        k kVar3 = i91.c.a;
+        kShadow kVar3 = i91.c.a;
         if (k71.k.b(kVar2, kVar3)) {
             return null;
         }
-        k kVar4 = i91.c.b;
+        kShadow kVar4 = i91.c.b;
         if (k71.k.b(kVar2, kVar4)) {
             return null;
         }
-        k kVar5 = i91.c.e;
+        kShadow kVar5 = i91.c.e;
         kVar2.getClass();
         k71.k.g(kVar5, "suffix");
         int d = kVar2.d();
@@ -83,9 +83,9 @@ public final class a0 implements Comparable {
         if (kVar2.l(d - bArr.length, kVar5, bArr.length) && (kVar2.d() == 2 || kVar2.l(kVar2.d() - 3, kVar3, 1) || kVar2.l(kVar2.d() - 3, kVar4, 1))) {
             return null;
         }
-        int k = k.k(kVar2, kVar3);
+        int k = k.kShadow(kVar2, kVar3);
         if (k == -1) {
-            k = k.k(kVar2, kVar4);
+            k = k.kShadow(kVar2, kVar4);
         }
         if (k == 2 && g() != null) {
             if (kVar2.d() == 3) {
@@ -117,9 +117,9 @@ public final class a0 implements Comparable {
 
     public final a0 d(a0 a0Var) {
         k71.k.g(a0Var, "other");
-        k kVar = a0Var.r;
+        kShadow kVar = a0Var.r;
         int a = i91.c.a(this);
-        k kVar2 = this.r;
+        kShadow kVar2 = this.r;
         a0 a0Var2 = a == -1 ? null : new a0(kVar2.o(0, a));
         int a2 = i91.c.a(a0Var);
         if (!k71.k.b(a0Var2, a2 != -1 ? new a0(kVar.o(0, a2)) : null)) {
@@ -142,7 +142,7 @@ public final class a0 implements Comparable {
             return this;
         }
         h hVar = new h();
-        k c = i91.c.c(a0Var);
+        kShadow c = i91.c.c(a0Var);
         if (c == null && (c = i91.c.c(this)) == null) {
             c = i91.c.f(s);
         }
@@ -153,7 +153,7 @@ public final class a0 implements Comparable {
         }
         int size2 = a3.size();
         while (i < size2) {
-            hVar.E0((k) a3.get(i));
+            hVar.E0((kShadow) a3.get(i));
             hVar.E0(c);
             i++;
         }
@@ -178,8 +178,8 @@ public final class a0 implements Comparable {
     }
 
     public final Character g() {
-        k kVar = i91.c.a;
-        k kVar2 = this.r;
+        kShadow kVar = i91.c.a;
+        kShadow kVar2 = this.r;
         if (k.g(kVar2, kVar) != -1 || kVar2.d() < 2 || kVar2.i(1) != 58) {
             return null;
         }

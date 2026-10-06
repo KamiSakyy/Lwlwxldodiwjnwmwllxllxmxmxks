@@ -54,12 +54,12 @@ final class r extends c71.j implements j71.e {
             }
             sy.y.j(obj);
         }
-        x61.r rVar = (List) obj;
+        x61.rShadow rVar = (List) obj;
         q qVar = this.x;
         y1 y1Var = qVar.E;
         List list = qVar.t;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList a = c0.a(list, rVar);
         y1Var.getClass();

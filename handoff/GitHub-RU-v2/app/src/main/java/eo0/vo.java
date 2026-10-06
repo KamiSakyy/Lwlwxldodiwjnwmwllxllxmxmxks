@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vo implements aaShadow.a {
     public static final vo a = new vo();
-    public static final List b = sy.d0.o(new String[]{"id", "activePullRequests", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "activePullRequests", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -18,7 +18,7 @@ public final class vo implements aaShadow.a {
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                dzVar = (jn0.dz) aa.c.c(no.a, false).a(eVar, wVar);
+                dzVar = (jn0.dz) aa.c.c(noShadow.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 2) {
                     break;
@@ -50,7 +50,7 @@ public final class vo implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, mzVar.a);
         fVar.z0("activePullRequests");
-        aa.c.c(no.a, false).b(fVar, wVar, mzVar.b);
+        aa.c.c(noShadow.a, false).b(fVar, wVar, mzVar.b);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, mzVar.c);
     }

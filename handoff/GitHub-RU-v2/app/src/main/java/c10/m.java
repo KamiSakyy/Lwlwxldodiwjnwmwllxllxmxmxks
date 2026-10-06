@@ -1,6 +1,6 @@
 package c10;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
@@ -52,6 +52,6 @@ public final class m {
         sb.append(", onPullRequest=");
         sb.append(this.d);
         sb.append(", nodeIdFragment=");
-        return f4.r(sb, this.e, ")");
+        return f4Shadow.r(sb, this.e, ")");
     }
 }

@@ -1,6 +1,6 @@
 package ex;
 
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -32,7 +32,7 @@ public final class b {
     }
 
     public final String toString() {
-        return f4.n("Assignee(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.n("Assignee(__typename=", this.a, ", actorFields=", this.b, ")");
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
 }

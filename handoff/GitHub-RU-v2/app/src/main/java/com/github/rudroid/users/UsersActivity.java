@@ -17,7 +17,7 @@ import com.github.rudroid.repository.navigation.UsersRoute;
 import com.github.rudroid.viewmodels.za;
 import ic.d0;
 import java.util.Map;
-import k71.x;
+import k71.xShadow;
 import x6.a0;
 import x6.y;
 import yz0.u3;
@@ -28,7 +28,7 @@ public final class UsersActivity extends b<d0> {
     public com.github.rudroid.activities.util.g w0;
     public com.github.rudroid.activities.util.g x0;
     public int y0;
-    public static final /* synthetic */ r71.e[] z0 = {new k71.p(UsersActivity.class, "userParams", "getUserParams()Lcom/github/domain/users/FetchUsersParams;", 0), m0.q(x.a, UsersActivity.class, "userViewType", "getUserViewType()Lcom/github/domain/users/UserViewType;", 0), new k71.p(UsersActivity.class, "sourceEntity", "getSourceEntity()Ljava/lang/String;", 0)};
+    public static final /* synthetic */ r71.e[] z0 = {new k71.p(UsersActivity.class, "userParams", "getUserParams()Lcom/github/domain/users/FetchUsersParams;", 0), m0.q(xShadow.a, UsersActivity.class, "userViewType", "getUserViewType()Lcom/github/domain/users/UserViewType;", 0), new k71.p(UsersActivity.class, "sourceEntity", "getSourceEntity()Ljava/lang/String;", 0)};
     public static final a Companion = new a();
 
     public static final class a {
@@ -100,7 +100,7 @@ public final class UsersActivity extends b<d0> {
         a0 s4 = E.s4();
         r71.e[] eVarArr = z0;
         y yVar = new y(s4.b.s, new UsersRoute((gn.n) this.v0.c(this, eVarArr[0]), (com.github.domain.users.a) this.w0.c(this, eVarArr[1]), (String) this.x0.c(this, eVarArr[2])), (k71.e) null);
-        yVar.j.add(new z6.i(m0.r(yVar.g, z6.e.class), x.a(UsersRoute.class), (Map) ze.e.a, x.a(UsersFragment.class)).a());
+        yVar.j.add(new z6.i(m0.r(yVar.g, z6.e.class), xShadow.a(UsersRoute.class), (Map) ze.e.a, xShadow.a(UsersFragment.class)).a());
         ze.b.a(yVar);
         s4.g(yVar.h());
     }

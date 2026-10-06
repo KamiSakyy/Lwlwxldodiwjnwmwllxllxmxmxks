@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import com.google.android.gms.internal.measurement.b4;
 import com.google.android.gms.internal.play_billing.t;
-import d2.a0;
+import d2.a0Shadow;
 import java.util.Arrays;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -91,7 +91,7 @@ public final class l {
     }
 
     public void e(long j) {
-        ((Paint) this.b).setColor(a0.y(j));
+        ((Paint) this.b).setColor(a0Shadow.y(j));
     }
 
     public void f(d2.l lVar) {

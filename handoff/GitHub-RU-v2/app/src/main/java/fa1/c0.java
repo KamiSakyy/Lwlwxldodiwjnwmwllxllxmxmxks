@@ -3,31 +3,31 @@ package fa1;
 import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class c0 extends x0 {
+public final class c0 extends x0Shadow {
     public final /* synthetic */ int d;
     public String e;
-    public b f;
+    public bShadow f;
     public boolean g;
 
     public c0(int i, String str, boolean z) {
         this.d = i;
         switch (i) {
             case 1:
-                b bVar = b.s;
+                bShadow bVar = b.s;
                 Objects.requireNonNull(str, "name == null");
                 this.e = str;
                 this.f = bVar;
                 this.g = z;
                 break;
             case 2:
-                b bVar2 = b.s;
+                bShadow bVar2 = b.s;
                 Objects.requireNonNull(str, "name == null");
                 this.e = str;
                 this.f = bVar2;
                 this.g = z;
                 break;
             default:
-                b bVar3 = b.s;
+                bShadow bVar3 = b.s;
                 Objects.requireNonNull(str, "name == null");
                 this.e = str;
                 this.f = bVar3;
@@ -36,7 +36,7 @@ public final class c0 extends x0 {
         }
     }
 
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     public final void a(n0 n0Var, Object obj) {
         switch (this.d) {
             case 0:

@@ -9,7 +9,7 @@ import ma.k;
 import na.m;
 import sy.y;
 import w61.a0;
-import x71.h;
+import x71.hShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e extends j implements f {
@@ -87,7 +87,7 @@ public final class e extends j implements f {
                 int i3 = this.w;
                 if (i3 == 0) {
                     y.j(obj);
-                    h hVar = ((k) this.x).g;
+                    hShadow hVar = ((k) this.x).g;
                     m mVar = new m((aa.d) this.y);
                     this.w = 1;
                     if (hVar.l(this, mVar) == aVar3) {

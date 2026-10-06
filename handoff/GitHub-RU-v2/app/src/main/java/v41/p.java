@@ -10,14 +10,14 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class p {
     public Context a;
     public s b;
-    public v2.t c;
+    public v2.tShadow c;
     public long d;
-    public v2.t e;
-    public v2.t f;
+    public v2.tShadow e;
+    public v2.tShadow f;
     public boolean g;
     public l h;
     public v i;
-    public b51.d j;
+    public b51.dShadow j;
     public r41.a k;
     public r41.a l;
     public i m;
@@ -25,7 +25,7 @@ public final class p {
     public s21.a o;
     public w41.c p;
 
-    public p(k41.g gVar, v vVar, s41.b bVar, s sVar, r41.a aVar, r41.a aVar2, b51.d dVar, i iVar, s21.a aVar3, w41.c cVar) {
+    public p(k41.gShadow gVar, v vVar, s41.b bVar, s sVar, r41.a aVar, r41.a aVar2, b51.dShadow dVar, i iVar, s21.a aVar3, w41.c cVar) {
         this.b = sVar;
         gVar.a();
         this.a = gVar.a;
@@ -45,10 +45,10 @@ public final class p {
         File file;
         w41.c.a();
         w41.c.a();
-        v2.t tVar = this.e;
+        v2.tShadow tVar = this.e;
         tVar.getClass();
         try {
-            b51.d dVar2 = (b51.d) tVar.t;
+            b51.dShadow dVar2 = (b51.dShadow) tVar.t;
             String str = (String) tVar.s;
             dVar2.getClass();
             new File((File) dVar2.c, str).createNewFile();
@@ -62,8 +62,8 @@ public final class p {
                     this.h.f();
                 } catch (Exception unused2) {
                     w41.c.a();
-                    v2.t tVar2 = this.e;
-                    b51.d dVar3 = (b51.d) tVar2.t;
+                    v2.tShadow tVar2 = this.e;
+                    b51.dShadow dVar3 = (b51.dShadow) tVar2.t;
                     String str2 = (String) tVar2.s;
                     dVar3.getClass();
                     file = new File((File) dVar3.c, str2);
@@ -85,8 +85,8 @@ public final class p {
                     }
                 }
                 this.h.g(((w21.g) ((AtomicReference) dVar.i).get()).a);
-                v2.t tVar3 = this.e;
-                b51.d dVar4 = (b51.d) tVar3.t;
+                v2.tShadow tVar3 = this.e;
+                b51.dShadow dVar4 = (b51.dShadow) tVar3.t;
                 String str3 = (String) tVar3.s;
                 dVar4.getClass();
                 file = new File((File) dVar4.c, str3);
@@ -94,8 +94,8 @@ public final class p {
             } finally {
                 w41.c.a();
                 try {
-                    v2.t tVar4 = this.e;
-                    b51.d dVar5 = (b51.d) tVar4.t;
+                    v2.tShadow tVar4 = this.e;
+                    b51.dShadow dVar5 = (b51.dShadow) tVar4.t;
                     String str4 = (String) tVar4.s;
                     dVar5.getClass();
                     new File((File) dVar5.c, str4).delete();

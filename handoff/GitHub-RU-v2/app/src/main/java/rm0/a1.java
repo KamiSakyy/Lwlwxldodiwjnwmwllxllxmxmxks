@@ -46,11 +46,11 @@ public final class a1 extends c71.j implements j71.f {
                     y71.j jVar = this.x;
                     kc0.p pVar = (kc0.p) this.y;
                     b2 b2Var = this.z;
-                    y71.i y = y71.n1.y(in.r.l(in.r.h(b2Var.s.k(new kc0.s(this.A), pVar))), b2Var.t);
+                    y71.i y = y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(b2Var.s.k(new kc0.s(this.A), pVar))), b2Var.t);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar, y, this) == aVar) {
+                    if (y71.n1Shadow.q(jVar, y, this) == aVar) {
                         return aVar;
                     }
                 } else {
@@ -70,7 +70,7 @@ public final class a1 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, k, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, k, this) == aVar2) {
                         return aVar2;
                     }
                 } else {

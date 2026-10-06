@@ -19,14 +19,14 @@ public abstract class a3 {
     static {
         lb.Companion.getClass();
         aa.r b = v8.l0.b(lb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar = tb.a;
         k71.k.g(xVar, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list = xk0.e.a;
         aa.s c = no.a.c(list, "selections", "User", n, list);
         pb.Companion.getClass();
@@ -43,11 +43,11 @@ public abstract class a3 {
         zn.Companion.getClass();
         aa.r b2 = v8.l0.b(zn.a);
         vn.Companion.getClass();
-        List r5 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("Reactable", x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "Release", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"}), sy.d0.n(new aa.m("reactions", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(vn.a, new aa.u0(new aa.t("after"))), new aa.k(vn.b, new aa.u0(new aa.t("content"))), new aa.k(vn.c, new aa.u0(25))}), r4))), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r5 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("Reactable", x61.l.r(new String[]{"CommitComment", "Discussion", "DiscussionComment", "Issue", "IssueComment", "PullRequest", "PullRequestReview", "PullRequestReviewComment", "Release", "RepositoryAdvisory", "RepositoryAdvisoryComment", "TeamDiscussion", "TeamDiscussionComment"}), sy.d0Shadow.n(new aa.m("reactions", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(vn.a, new aa.u0(new aa.t("after"))), new aa.k(vn.b, new aa.u0(new aa.t("content"))), new aa.k(vn.c, new aa.u0(25))}), r4))), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         yh.Companion.getClass();
         aa.j0 j0Var = yh.a;
         k71.k.g(j0Var, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("node", j0Var, (String) null, rVar, no.a.s(rn.i, new aa.u0(new aa.t("id"))), r5));
+        a = sy.d0Shadow.n(new aa.m("node", j0Var, (String) null, rVar, no.a.s(rn.i, new aa.u0(new aa.t("id"))), r5));
     }
 }

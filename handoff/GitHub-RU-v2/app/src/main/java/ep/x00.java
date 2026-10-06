@@ -7,7 +7,7 @@ import jo.hh0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x00 implements aaShadow.a {
     public static final x00 a = new x00();
-    public static final List b = sy.d0.n("contributionLevel");
+    public static final List b = sy.d0Shadow.n("contributionLevel");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

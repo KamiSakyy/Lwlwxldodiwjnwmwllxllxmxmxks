@@ -38,6 +38,6 @@ public final class e00 {
         sb.append(", onRepository=");
         sb.append(this.b);
         sb.append(", nodeIdFragment=");
-        return jo.f4.q(sb, this.c, ")");
+        return jo.f4Shadow.q(sb, this.c, ")");
     }
 }

@@ -7,8 +7,8 @@ public abstract class q4 {
     public static final p4 Companion = new p4();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("CommentDeletedEvent", n, sy.d0.n(wk.a));
+        new aa.q0("CommentDeletedEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

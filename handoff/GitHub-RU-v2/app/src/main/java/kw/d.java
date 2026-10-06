@@ -1,6 +1,6 @@
 package kw;
 
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -53,6 +53,6 @@ public final class d {
         sb.append(", onBot=");
         sb.append(this.d);
         sb.append(", nodeIdFragment=");
-        return f4.r(sb, this.e, ")");
+        return f4Shadow.r(sb, this.e, ")");
     }
 }

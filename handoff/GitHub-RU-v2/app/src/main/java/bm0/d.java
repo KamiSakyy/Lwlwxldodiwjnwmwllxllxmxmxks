@@ -6,13 +6,13 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         am0.w wVar2;
         am0.q qVar;
         am0.z zVar;
-        am0.x xVar;
+        am0.xShadow xVar;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         Set set = wVar.b;
@@ -75,7 +75,7 @@ public final class d implements aa.a {
         if (zVar != null) {
             y.d(fVar, wVar, zVar);
         }
-        am0.x xVar = eVar.e;
+        am0.xShadow xVar = eVar.e;
         if (xVar != null) {
             w.d(fVar, wVar, xVar);
         }

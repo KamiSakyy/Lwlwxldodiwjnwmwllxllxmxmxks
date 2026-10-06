@@ -2,7 +2,7 @@ package com.github.rudroid.starredreposandlists.createoreditlist;
 
 import androidx.lifecycle.k1;
 import com.github.rudroid.starredreposandlists.navigation.EditListRoute;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -26,16 +26,16 @@ public final class u0 extends k1 {
         this.s = dVar;
         this.t = cVar;
         this.u = cVar2;
-        this.v = (EditListRoute) sy.y.m(a1Var, k71.x.a(EditListRoute.class), x61.s.r);
+        this.v = (EditListRoute) sy.y.m(a1Var, k71.xShadow.a(EditListRoute.class), x61.s.r);
         y1 s = com.github.rudroid.m0.s(fl.f.Companion, (Object) null);
         this.w = s;
         this.x = new y71.i1(s);
-        y1 c = n1.c(f1.r);
+        y1 c = n1Shadow.c(f1.r);
         this.y = c;
         this.z = new y71.i1(c);
-        y1 c2 = n1.c((Object) null);
+        y1 c2 = n1Shadow.c((Object) null);
         this.A = c2;
         this.B = new y71.i1(c2);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new q0(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new q0(this, null), 3);
     }
 }

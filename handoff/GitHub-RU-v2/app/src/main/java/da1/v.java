@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class v extends b0 {
+final class v extends b0Shadow {
     public v() {
         super("InHeadNoscript", 4);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         if (s0Var.b()) {
             bVar.k(this);
             return true;

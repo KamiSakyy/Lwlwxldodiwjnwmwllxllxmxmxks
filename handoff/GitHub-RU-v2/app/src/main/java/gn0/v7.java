@@ -7,8 +7,8 @@ public abstract class v7 {
     public static final u7 Companion = new u7();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("DeploymentEnvironmentChangedEvent", n, sy.d0.n(yh.a));
+        new aa.q0("DeploymentEnvironmentChangedEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

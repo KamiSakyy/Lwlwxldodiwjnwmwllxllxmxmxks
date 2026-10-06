@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import sy.w;
 import w61.p;
@@ -41,7 +41,7 @@ public final class g implements SerialDescriptor, k81.l {
         this.e = m.D0(arrayList);
         String[] strArr = (String[]) arrayList.toArray(new String[0]);
         this.f = strArr;
-        this.g = c1.c(aVar2.e);
+        this.g = c1Shadow.c(aVar2.e);
         this.h = (List[]) aVar2.f.toArray(new List[0]);
         this.i = m.z0(aVar2.g);
         k71.k.g(strArr, "<this>");
@@ -52,7 +52,7 @@ public final class g implements SerialDescriptor, k81.l {
             s71.b bVar = it;
             if (!bVar.t.hasNext()) {
                 this.j = x.A(arrayList2);
-                this.k = c1.c(list);
+                this.k = c1Shadow.c(list);
                 this.l = w.t(new b2(17, this));
                 return;
             }
@@ -153,6 +153,6 @@ public final class g implements SerialDescriptor, k81.l {
     }
 
     public final String toString() {
-        return c1.n(this);
+        return c1Shadow.n(this);
     }
 }

@@ -18,7 +18,7 @@ public abstract class g {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("title", l0.b(xVar), (String) null, rVar, rVar, rVar);
         m mVar3 = new m("titleHTML", l0.b(xVar), (String) null, rVar, rVar, rVar);

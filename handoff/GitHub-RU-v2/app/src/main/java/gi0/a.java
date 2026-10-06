@@ -17,7 +17,7 @@ public abstract class a {
     static {
         lb.Companion.getClass();
         r b = l0.b(lb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasPreviousPage", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         x xVar = tb.a;

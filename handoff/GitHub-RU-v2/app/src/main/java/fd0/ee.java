@@ -90,7 +90,7 @@ public abstract class ee implements aaShadow.a {
         fVar.z0("mergeStateStatus");
         fVar.I(elVar.c.r);
         fVar.z0("isInMergeQueue");
-        jo.f4.C(elVar.d, aa.c.f, fVar, wVar, "mergeQueue");
+        jo.f4Shadow.C(elVar.d, aa.c.f, fVar, wVar, "mergeQueue");
         aa.c.b(aa.c.c(ce.a, true)).b(fVar, wVar, elVar.e);
         fVar.z0("mergeQueueEntry");
         aa.c.b(aa.c.c(de.a, true)).b(fVar, wVar, elVar.f);

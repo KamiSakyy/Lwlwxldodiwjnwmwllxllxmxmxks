@@ -22,7 +22,7 @@ import com.google.android.material.internal.CheckableImageButton;
 import com.google.android.material.textfield.TextInputLayout;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l extends LinearLayout {
@@ -257,7 +257,7 @@ public final class l extends LinearLayout {
         this.z = i;
         Iterator it = this.A.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
         h(i != 0);
         m b2 = b();

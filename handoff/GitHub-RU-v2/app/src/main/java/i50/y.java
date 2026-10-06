@@ -1,7 +1,7 @@
 package i50;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class y implements aa.a {
@@ -147,7 +147,7 @@ public abstract class y implements aa.a {
                     bool4 = (Boolean) aa.c.f.a(eVar, wVar);
                     break;
                 case 5:
-                    tVar = (t) aa.c.b(aa.c.c(x.a, false)).a(eVar, wVar);
+                    tVar = (t) aa.c.b(aa.c.c(xShadow.a, false)).a(eVar, wVar);
                     bool2 = bool2;
                     bool3 = bool3;
                     continue;
@@ -174,7 +174,7 @@ public abstract class y implements aa.a {
         f4.C(uVar.c, bVar2, fVar, wVar, "viewerCanUnmarkAsAnswer");
         f4.C(uVar.d, bVar2, fVar, wVar, "isAnswer");
         f4.C(uVar.e, bVar2, fVar, wVar, "discussion");
-        aa.c.b(aa.c.c(x.a, false)).b(fVar, wVar, uVar.f);
+        aa.c.b(aa.c.c(xShadow.a, false)).b(fVar, wVar, uVar.f);
         fVar.z0("id");
         bVar.b(fVar, wVar, uVar.g);
         List list = c40.e.a;

@@ -55,7 +55,7 @@ final class y3<T> implements y71.j {
                 a6 a6Var = (a6) value;
                 h01.h hVar = i2Var.c0;
                 List list3 = hVar != null ? hVar.b : null;
-                List list4 = x61.r.r;
+                List list4 = x61.rShadow.r;
                 list = list3 == null ? list4 : list3;
                 PullRequestMergeMethod pullRequestMergeMethod3 = a6Var.b;
                 pullRequestMergeMethod = PullRequestMergeMethod.UNKNOWN__;
@@ -81,7 +81,7 @@ final class y3<T> implements y71.j {
                 z1Var = i2Var.V;
             } while (!y1Var2.i(value, a6.a(list, pullRequestMergeMethod2, str, null, null, s2Var, list2, z1Var == null ? z1Var.a : 0)));
             if (((a6) y1Var2.getValue()).b != pullRequestMergeMethod) {
-                v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0) null, new r3(w2Var, str2, null), 3);
+                v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0Shadow) null, new r3(w2Var, str2, null), 3);
             }
         }
         if (((d6) w2Var.m0.getValue()).h && z && str2.length() > 0) {
@@ -89,10 +89,10 @@ final class y3<T> implements y71.j {
             if (q1Var != null) {
                 q1Var.m((CancellationException) null);
             }
-            w2Var.A0 = v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0) null, new l4(w2Var, str2, null), 3);
+            w2Var.A0 = v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0Shadow) null, new l4(w2Var, str2, null), 3);
         }
         if (!i2Var.r) {
-            v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0) null, new f4(w2Var, str2, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0Shadow) null, new f4(w2Var, str2, null), 3);
         }
         if (this.s && w2Var.q0.a) {
             w2Var.D();
@@ -104,7 +104,7 @@ final class y3<T> implements y71.j {
         boolean z2 = i2Var.a0;
         v71.q1 q1Var2 = w2Var.z0;
         if (q1Var2 == null || !q1Var2.f()) {
-            w2Var.z0 = v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0) null, new z4(w2Var, z2, f0, e0, c0, d0, null), 3);
+            w2Var.z0 = v71.b0.z(androidx.lifecycle.d1.k(w2Var), (a71.h) null, (v71.a0Shadow) null, new z4(w2Var, z2, f0, e0, c0, d0, null), 3);
         }
         return w61.a0.a;
     }

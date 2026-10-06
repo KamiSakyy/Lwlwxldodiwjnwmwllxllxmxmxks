@@ -6,7 +6,7 @@ import java.util.Map;
 /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
 /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
 /* loaded from: /home/user/work/p/classes5.dex */
-public abstract class b0 {
+public abstract class b0Shadow {
     public static final c A;
     public static final d B;
     public static final e C;
@@ -23,7 +23,7 @@ public abstract class b0 {
     public static final q N;
     public static final r O;
     public static final String P;
-    public static final /* synthetic */ b0[] Q;
+    public static final /* synthetic */ b0Shadow[] Q;
     public static final m r;
     public static final s s;
     public static final t t;
@@ -37,9 +37,9 @@ public abstract class b0 {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r0v0, types: [da1.m] */
     static {
-        b0 r0 = new b0() { // from class: da1.m;
-            @Override // da1.b0
-            public final boolean d(s0 s0Var, b bVar) {
+        b0Shadow r0 = new b0Shadow() { // from class: da1.m;
+            @Override // da1.b0Shadow
+            public final boolean d(s0 s0Var, bShadow bVar) {
                 if (b0.a(s0Var)) {
                     return true;
                 }
@@ -67,7 +67,7 @@ public abstract class b0 {
                 ca1.h hVar = new ca1.h(trim);
                 aa1.b.K(G3);
                 aa1.b.K(G4);
-                ca1.b d = hVar.d();
+                ca1.bShadow d = hVar.d();
                 d.a("name", trim);
                 d.a("publicId", G3);
                 d.a("systemId", G4);
@@ -135,7 +135,7 @@ public abstract class b0 {
         N = qVar;
         r rVar = new r();
         O = rVar;
-        Q = new b0[]{r0, sVar, tVar, uVar, vVar, wVar, xVar, yVar, zVar, cVar, dVar, eVar, fVar, gVar, hVar, iVar, jVar, kVar, lVar, nVar, oVar, pVar, qVar, rVar};
+        Q = new b0Shadow[]{r0, sVar, tVar, uVar, vVar, wVar, xVar, yVar, zVar, cVar, dVar, eVar, fVar, gVar, hVar, iVar, jVar, kVar, lVar, nVar, oVar, pVar, qVar, rVar};
         P = String.valueOf((char) 0);
     }
 
@@ -146,7 +146,7 @@ public abstract class b0 {
         return false;
     }
 
-    public static void b(p0 p0Var, b bVar, l3 l3Var) {
+    public static void b(p0 p0Var, bShadow bVar, l3 l3Var) {
         if (l3Var != null) {
             bVar.c.o(l3Var);
         }
@@ -158,16 +158,16 @@ public abstract class b0 {
     public static void c(p0 p0Var, ca1.j jVar) {
         Object obj;
         Map map;
-        ca1.b bVar = p0Var.g;
+        ca1.bShadow bVar = p0Var.g;
         if (bVar != null) {
             bVar.getClass();
             androidx.datastore.preferences.protobuf.d dVar = new androidx.datastore.preferences.protobuf.d(bVar);
             while (dVar.hasNext()) {
                 ca1.a aVar = (ca1.a) dVar.next();
                 String str = aVar.r;
-                ca1.b d = jVar.d();
+                ca1.bShadow d = jVar.d();
                 if (d.i(str) == -1) {
-                    ca1.b bVar2 = aVar.t;
+                    ca1.bShadow bVar2 = aVar.t;
                     if (bVar2 == null) {
                         int i = ca1.r.c;
                     } else if (bVar2.i(str) != -1) {
@@ -205,14 +205,14 @@ public abstract class b0 {
     }
 
     public static b0 valueOf(String str) {
-        return (b0) Enum.valueOf(b0.class, str);
+        return (b0Shadow) Enum.valueOf(b0Shadow.class, str);
     }
 
-    public static b0[] values() {
-        return (b0[]) Q.clone();
+    public static b0Shadow[] values() {
+        return (b0Shadow[]) Q.clone();
     }
 
-    public abstract boolean d(s0 s0Var, b bVar);
+    public abstract boolean d(s0 s0Var, bShadow bVar);
 
 
 

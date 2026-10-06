@@ -1,7 +1,7 @@
 package qn0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.su;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -23,7 +23,7 @@ public final class a3 implements aa.w0 {
         List list = co0.n.a;
         List list2 = co0.n.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

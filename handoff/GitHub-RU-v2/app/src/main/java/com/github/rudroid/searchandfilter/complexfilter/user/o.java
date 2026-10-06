@@ -10,7 +10,7 @@ import com.github.rudroid.searchandfilter.complexfilter.d0;
 import com.github.rudroid.searchandfilter.complexfilter.h0;
 import com.github.rudroid.searchandfilter.complexfilter.k;
 import java.util.List;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -56,7 +56,7 @@ public abstract class o extends com.github.rudroid.searchandfilter.complexfilter
             throw new IllegalStateException("repository must be set");
         }
         this.H = str2;
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new n(this, cVar, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new n(this, cVar, null), 3);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:16:0x0037  */

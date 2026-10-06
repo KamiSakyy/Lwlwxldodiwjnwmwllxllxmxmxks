@@ -48,6 +48,6 @@ final class d extends c71.j implements j71.e {
         gVar.getClass();
         z01.f0 f0Var = (z01.f0) gVar.a.a(d);
         int i = this.z;
-        return new c(new y71.i[]{b31.b.J(in.r.l(new y71.y(f0Var.l(str2, i, str), new cn.b(gVar, d, str2, str, i, null, 0), 6)), d, cVar2), eVar.d.a(cVar.d(), str2, str, this.z, cVar2)});
+        return new c(new y71.i[]{b31.b.J(in.rShadow.l(new y71.y(f0Var.l(str2, i, str), new cn.b(gVar, d, str2, str, i, null, 0), 6)), d, cVar2), eVar.d.a(cVar.d(), str2, str, this.z, cVar2)});
     }
 }

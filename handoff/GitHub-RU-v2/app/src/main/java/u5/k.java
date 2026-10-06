@@ -1,18 +1,18 @@
 package u5;
 
 import java.util.concurrent.ThreadPoolExecutor;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class k extends d0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final /* synthetic */ d0 f32220a;
+    public final /* synthetic */ d0Shadow f32220a;
 
     /* renamed from: b, reason: collision with root package name */
     public final /* synthetic */ ThreadPoolExecutor f32221b;
 
-    public k(d0 d0Var, ThreadPoolExecutor threadPoolExecutor) {
+    public k(d0Shadow d0Var, ThreadPoolExecutor threadPoolExecutor) {
         this.f32220a = d0Var;
         this.f32221b = threadPoolExecutor;
     }

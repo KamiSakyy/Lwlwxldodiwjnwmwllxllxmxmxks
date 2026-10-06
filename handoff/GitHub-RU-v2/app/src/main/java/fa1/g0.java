@@ -4,15 +4,15 @@ import java.lang.reflect.Method;
 import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class g0 extends x0 {
+public final class g0 extends x0Shadow {
     public Method d;
     public int e;
     public String f;
-    public b g;
+    public bShadow g;
     public boolean h;
 
     public g0(Method method, int i, String str, boolean z) {
-        b bVar = b.s;
+        bShadow bVar = b.s;
         this.d = method;
         this.e = i;
         Objects.requireNonNull(str, "name == null");
@@ -23,7 +23,7 @@ public final class g0 extends x0 {
 
     /* JADX WARN: Removed duplicated region for block: B:53:0x00fb  */
     /* JADX WARN: Removed duplicated region for block: B:56:0x00fe  */
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */

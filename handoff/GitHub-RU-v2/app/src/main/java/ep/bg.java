@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bg implements aaShadow.a {
     public static final bg a = new bg();
-    public static final List b = sy.d0.o("__typename", "id", "baseRefName", "mergeCommit", "mergedBy", "mergeStateStatus", "viewerCanDeleteHeadRef", "viewerCanReopen");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "baseRefName", "mergeCommit", "mergedBy", "mergeStateStatus", "viewerCanDeleteHeadRef", "viewerCanReopen");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0030, code lost:
     
@@ -187,7 +187,7 @@ public final class bg implements aaShadow.a {
         fVar.I(tnVar.f.r);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(tnVar.g, bVar2, fVar, wVar, "viewerCanReopen");
+        jo.f4Shadow.C(tnVar.g, bVar2, fVar, wVar, "viewerCanReopen");
         bVar2.b(fVar, wVar, Boolean.valueOf(tnVar.h));
         gv.h4 h4Var = gv.h4.a;
         gv.h4.d(fVar, wVar, tnVar.i);

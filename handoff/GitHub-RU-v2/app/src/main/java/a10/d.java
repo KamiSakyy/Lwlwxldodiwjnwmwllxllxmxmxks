@@ -15,7 +15,7 @@ import q81.f0;
 import q81.m;
 import q81.n;
 import q81.p;
-import q81.v;
+import q81.vShadow;
 import q81.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -44,7 +44,7 @@ public final class d implements p {
                 a0 a0Var2 = (a0) x1Var.s;
                 int i2 = 0;
                 if (bVar2 == null && a0Var2 == null) {
-                    return new a0(bVar, v.u, "Unsatisfiable Request (only-if-cached)", 504, (m) null, new n((String[]) new ArrayList(20).toArray(new String[0])), c0.r, (j0) null, (a0) null, (a0) null, (a0) null, -1L, System.currentTimeMillis(), (t1) null, f0.a);
+                    return new a0(bVar, vShadow.u, "Unsatisfiable Request (only-if-cached)", 504, (m) null, new n((String[]) new ArrayList(20).toArray(new String[0])), c0.r, (j0) null, (a0) null, (a0) null, (a0) null, -1L, System.currentTimeMillis(), (t1) null, f0.a);
                 }
                 if (bVar2 == null) {
                     k.d(a0Var2);

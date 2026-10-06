@@ -41,7 +41,7 @@ public final class g extends j {
             if (H == 0) {
                 String str = this.u.r;
                 g x = x();
-                f0 f0Var = x != null ? x.B : new f0(new da1.b());
+                f0 f0Var = x != null ? x.B : new f0(new da1.bShadow());
                 i0 a = f0Var.a();
                 e0 e0Var = f0Var.t;
                 a.getClass();
@@ -84,7 +84,7 @@ public final class g extends j {
         }
         String str2 = H.u.r;
         g x2 = H.x();
-        f0 f0Var2 = x2 != null ? x2.B : new f0(new da1.b());
+        f0 f0Var2 = x2 != null ? x2.B : new f0(new da1.bShadow());
         i0 a2 = f0Var2.a();
         e0 e0Var2 = f0Var2.t;
         a2.getClass();
@@ -116,7 +116,7 @@ public final class g extends j {
     }
 
     public g() {
-        this("http://www.w3.org/1999/xhtml", "", new f0(new da1.b()));
+        this("http://www.w3.org/1999/xhtml", "", new f0(new da1.bShadow()));
     }
     public Object f(Object p1, Object p2) { return null; }
 }

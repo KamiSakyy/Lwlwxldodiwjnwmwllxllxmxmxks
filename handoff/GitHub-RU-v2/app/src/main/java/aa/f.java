@@ -63,7 +63,7 @@ public final class f {
         sb2.append(list != null ? Integer.valueOf(list.size()) : "null");
         sb2.append(", exception=");
         ApolloException apolloException = this.f647e;
-        if (apolloException != null && (str = k71.x.a(apolloException.getClass()).c()) == null) {
+        if (apolloException != null && (str = k71.xShadow.a(apolloException.getClass()).c()) == null) {
             str = "true";
         }
         return a0.s0.m(sb2, str, ')');

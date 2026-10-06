@@ -16,13 +16,13 @@ public abstract class f7 {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("PageInfo");
+        List n = sy.d0Shadow.n("PageInfo");
         List list = nw0.a.a;
         List r = x61.l.r(new aa.s[]{mVar, no.a.c(list, "selections", "PageInfo", n, list)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = sy.d0.n("Repository");
+        List n2 = sy.d0Shadow.n("Repository");
         List list2 = vu0.p.a;
         aa.s c = no.a.c(list2, "selections", "Repository", n2, list2);
         td.Companion.getClass();

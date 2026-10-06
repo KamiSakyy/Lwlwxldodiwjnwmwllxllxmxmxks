@@ -22,7 +22,7 @@ public abstract class a {
         bb.Companion.getClass();
         x xVar = bb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         ta.Companion.getClass();
         List r = l.r(new m[]{mVar, new m("oid", l0.b(ta.a), (String) null, rVar, rVar, rVar)});

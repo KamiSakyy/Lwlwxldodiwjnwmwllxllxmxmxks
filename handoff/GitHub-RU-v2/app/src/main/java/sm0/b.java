@@ -7,13 +7,13 @@ import yf0.a0;
 import yf0.v;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b {
-    public static final uf0.p a(b bVar, yf0.i iVar) {
+public final class bShadow {
+    public static final uf0.p a(bShadow bVar, yf0.i iVar) {
         bVar.getClass();
         i9.Companion.getClass();
         String str = ((aa.q) i9.c).a;
         String str2 = iVar.b;
-        return new uf0.p(str, str2, iVar, iVar.n, new yf0.o(str2, new yf0.n(0, x61.r.r), str));
+        return new uf0.p(str, str2, iVar, iVar.n, new yf0.o(str2, new yf0.n(0, x61.rShadow.r), str));
     }
 
     public static yf0.i b(yf0.i iVar) {

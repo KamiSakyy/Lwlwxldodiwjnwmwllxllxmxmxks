@@ -26,6 +26,6 @@ public final class e8 {
     }
 
     public final String toString() {
-        return jo.f4.h(this.a, this.b, "DiffLineRange(end=", ", start=", ")");
+        return jo.f4Shadow.h(this.a, this.b, "DiffLineRange(end=", ", start=", ")");
     }
 }

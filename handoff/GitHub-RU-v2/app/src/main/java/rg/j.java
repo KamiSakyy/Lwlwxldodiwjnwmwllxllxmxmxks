@@ -7,13 +7,13 @@ import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
 import com.github.rudroid.utilities.j1;
-import d2.a0;
-import qg.p;
+import d2.a0Shadow;
+import qg.pShadow;
 import w1.o;
 import w1.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class j {
+public final class jShadow {
     /* JADX WARN: Removed duplicated region for block: B:10:0x0052  */
     /* JADX WARN: Removed duplicated region for block: B:121:0x029c  */
     /* JADX WARN: Removed duplicated region for block: B:122:0x012b  */
@@ -91,7 +91,7 @@ public final class j {
             f2 = f;
             i5 |= sVar2.c(f2) ? 32 : 16;
             if ((i3 & 384) == 0) {
-                i5 |= sVar2.e(j) ? 256 : 128;
+                i5 |= sVar2.e(jShadow) ? 256 : 128;
             }
             if ((i3 & 3072) != 0) {
                 if ((i4 & 8) == 0) {
@@ -413,7 +413,7 @@ public final class j {
         } else if ((i & 24576) == 0) {
             f2 = f;
             i4 |= sVar2.c(f2) ? 16384 : 8192;
-            int i14 = i4 | (!sVar2.e(j) ? 131072 : 65536);
+            int i14 = i4 | (!sVar2.e(jShadow) ? 131072 : 65536);
             if ((i2 & 64) != 0) {
                 j3 = j2;
                 if (sVar2.e(j3)) {
@@ -546,7 +546,7 @@ public final class j {
             }
         }
         f2 = f;
-        int i142 = i4 | (!sVar2.e(j) ? 131072 : 65536);
+        int i142 = i4 | (!sVar2.e(jShadow) ? 131072 : 65536);
         if ((i2 & 64) != 0) {
         }
         i5 = 524288;

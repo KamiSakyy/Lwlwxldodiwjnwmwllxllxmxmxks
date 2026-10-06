@@ -14,7 +14,7 @@ import z.u0;
 import z.x0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class t {
+public final class tShadow {
     public static final void a(final String str, final int i, final boolean z, final int i2, final j71.a aVar, w1.r rVar, final int i3, androidx.compose.runtime.s sVar, final int i4, final int i5) {
         int i6;
         boolean z2;
@@ -105,7 +105,7 @@ public final class t {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void b(w1.r rVar, w1.r rVar2, boolean z, j71.c cVar, r1.d dVar, androidx.compose.runtime.s sVar, int i, int i2) {
+    public static final void b(w1.r rVar, w1.r rVar2, boolean z, j71.cShadow cVar, r1.d dVar, androidx.compose.runtime.s sVar, int i, int i2) {
         w1.r rVar3;
         w1.r rVar4;
         w1.r rVar5;

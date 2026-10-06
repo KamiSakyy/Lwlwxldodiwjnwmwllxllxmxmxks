@@ -3,7 +3,7 @@ package x7;
 import android.database.Cursor;
 import java.util.Arrays;
 import k71.k;
-import sy.r;
+import sy.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class e extends f {
@@ -40,7 +40,7 @@ public final class e extends f {
 
     public static void t(Cursor cursor, int i) {
         if (i < 0 || i >= cursor.getColumnCount()) {
-            r.w("column index out of range", 25);
+            rShadow.w("column index out of range", 25);
             throw null;
         }
     }
@@ -50,7 +50,7 @@ public final class e extends f {
         if (cursor != null) {
             return cursor;
         }
-        r.w("no row", 21);
+        rShadow.w("no row", 21);
         throw null;
     }
 

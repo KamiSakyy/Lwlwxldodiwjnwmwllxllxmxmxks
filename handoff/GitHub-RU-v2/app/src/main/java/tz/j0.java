@@ -6,7 +6,7 @@ public final class j0 {
     public e1 b;
     public i1 c;
     public n1 d;
-    public f1 e;
+    public f1Shadow e;
     public m1 f;
     public g1 g;
     public h1 h;
@@ -16,7 +16,7 @@ public final class j0 {
     public l1 l;
     public vx.a m;
 
-    public j0(String str, e1 e1Var, i1 i1Var, n1 n1Var, f1 f1Var, m1 m1Var, g1 g1Var, h1 h1Var, o1 o1Var, k1 k1Var, j1 j1Var, l1 l1Var, vx.a aVar) {
+    public j0(String str, e1 e1Var, i1 i1Var, n1 n1Var, f1Shadow f1Var, m1 m1Var, g1 g1Var, h1 h1Var, o1 o1Var, k1 k1Var, j1 j1Var, l1 l1Var, vx.a aVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = e1Var;
@@ -52,7 +52,7 @@ public final class j0 {
         int hashCode3 = (hashCode2 + (i1Var == null ? 0 : i1Var.hashCode())) * 31;
         n1 n1Var = this.d;
         int hashCode4 = (hashCode3 + (n1Var == null ? 0 : n1Var.hashCode())) * 31;
-        f1 f1Var = this.e;
+        f1Shadow f1Var = this.e;
         int hashCode5 = (hashCode4 + (f1Var == null ? 0 : f1Var.hashCode())) * 31;
         m1 m1Var = this.f;
         int hashCode6 = (hashCode5 + (m1Var == null ? 0 : m1Var.hashCode())) * 31;
@@ -98,6 +98,6 @@ public final class j0 {
         sb.append(", onProjectV2ItemFieldReviewerValue=");
         sb.append(this.l);
         sb.append(", nodeIdFragment=");
-        return jo.f4.r(sb, this.m, ")");
+        return jo.f4Shadow.r(sb, this.m, ")");
     }
 }

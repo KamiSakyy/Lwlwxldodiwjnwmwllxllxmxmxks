@@ -62,7 +62,7 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class z3 implements a5.m1 {
-    public static b51.d a;
+    public static b51.dShadow a;
 
     public static final i2.b C(int i, int i2, androidx.compose.runtime.s sVar) {
         TypedValue typedValue;
@@ -156,16 +156,16 @@ public abstract class z3 implements a5.m1 {
             k71.k.f(genericComponentType, "getGenericComponentType(...)");
             return E(genericComponentType);
         }
-        throw new IllegalArgumentException("type should be an instance of Class<?>, GenericArrayType, ParametrizedType or WildcardType, but actual argument " + type + " has type " + k71.x.a(type.getClass()));
+        throw new IllegalArgumentException("type should be an instance of Class<?>, GenericArrayType, ParametrizedType or WildcardType, but actual argument " + type + " has type " + k71.xShadow.a(type.getClass()));
     }
 
     public static final KSerializer F(b21.l lVar, Class cls, List list) {
         KSerializer[] kSerializerArr = (KSerializer[]) list.toArray(new KSerializer[0]);
-        KSerializer d = k81.c1.d(cls, (KSerializer[]) Arrays.copyOf(kSerializerArr, kSerializerArr.length));
+        KSerializer d = k81.c1Shadow.d(cls, (KSerializer[]) Arrays.copyOf(kSerializerArr, kSerializerArr.length));
         if (d != null) {
             return d;
         }
-        k71.e a2 = k71.x.a(cls);
+        k71.e a2 = k71.xShadow.a(cls);
         y61.e eVar = k81.j1.a;
         KSerializer kSerializer = (KSerializer) k81.j1.a.get(a2);
         if (kSerializer != null) {
@@ -176,7 +176,7 @@ public abstract class z3 implements a5.m1 {
             return a3;
         }
         if (cls.isInterface()) {
-            return new g81.b(k71.x.a(cls));
+            return new g81.b(k71.xShadow.a(cls));
         }
         return null;
     }
@@ -212,10 +212,10 @@ public abstract class z3 implements a5.m1 {
             if (genericComponentType instanceof ParameterizedType) {
                 Type rawType = ((ParameterizedType) genericComponentType).getRawType();
                 k71.k.e(rawType, "null cannot be cast to non-null type java.lang.Class<*>");
-                bVar = k71.x.a((Class) rawType);
+                bVar = k71.xShadow.a((Class) rawType);
             } else {
                 if (!(genericComponentType instanceof r71.b)) {
-                    throw new IllegalStateException("unsupported type in GenericArray: " + k71.x.a(genericComponentType.getClass()));
+                    throw new IllegalStateException("unsupported type in GenericArray: " + k71.xShadow.a(genericComponentType.getClass()));
                 }
                 bVar = (r71.b) genericComponentType;
             }
@@ -225,7 +225,7 @@ public abstract class z3 implements a5.m1 {
         if (type instanceof Class) {
             Class cls = (Class) type;
             if (!cls.isArray() || cls.getComponentType().isPrimitive()) {
-                return F(lVar, cls, x61.r.r);
+                return F(lVar, cls, x61.rShadow.r);
             }
             Class<?> componentType = cls.getComponentType();
             k71.k.f(componentType, "getComponentType(...)");
@@ -238,7 +238,7 @@ public abstract class z3 implements a5.m1 {
                     return null;
                 }
             }
-            return new k81.k1(k71.x.a(componentType), H);
+            return new k81.k1(k71.xShadow.a(componentType), H);
         }
         if (!(type instanceof ParameterizedType)) {
             if (type instanceof WildcardType) {
@@ -248,7 +248,7 @@ public abstract class z3 implements a5.m1 {
                 k71.k.f(L, "first(...)");
                 return H(lVar, (Type) L, true);
             }
-            throw new IllegalArgumentException("type should be an instance of Class<?>, GenericArrayType, ParametrizedType or WildcardType, but actual argument " + type + " has type " + k71.x.a(type.getClass()));
+            throw new IllegalArgumentException("type should be an instance of Class<?>, GenericArrayType, ParametrizedType or WildcardType, but actual argument " + type + " has type " + k71.xShadow.a(type.getClass()));
         }
         ParameterizedType parameterizedType = (ParameterizedType) type;
         Type rawType2 = parameterizedType.getRawType();
@@ -323,7 +323,7 @@ public abstract class z3 implements a5.m1 {
     }
 
     public static void I(TextView textView, int i) {
-        sy.p.h(i);
+        sy.pShadow.h(i);
         if (Build.VERSION.SDK_INT >= 28) {
             a5.l.y(textView, i);
             return;
@@ -336,7 +336,7 @@ public abstract class z3 implements a5.m1 {
     }
 
     public static void J(TextView textView, int i) {
-        sy.p.h(i);
+        sy.pShadow.h(i);
         Paint.FontMetricsInt fontMetricsInt = textView.getPaint().getFontMetricsInt();
         int i2 = textView.getIncludeFontPadding() ? fontMetricsInt.bottom : fontMetricsInt.descent;
         if (i > Math.abs(i2)) {
@@ -345,7 +345,7 @@ public abstract class z3 implements a5.m1 {
     }
 
     public static void K(TextView textView, int i) {
-        sy.p.h(i);
+        sy.pShadow.h(i);
         if (i != textView.getPaint().getFontMetricsInt(null)) {
             textView.setLineSpacing(i - r0, 1.0f);
         }
@@ -536,12 +536,12 @@ public abstract class z3 implements a5.m1 {
         String str9;
         we0.g gVar;
         we0.o oVar;
-        we0.x xVar;
+        we0.xShadow xVar;
         String str10;
         we0.y yVar;
         String str11;
         String str12;
-        we0.a0 a0Var;
+        we0.a0Shadow a0Var;
         k71.k.g(b0Var, "<this>");
         we0.b bVar = b0Var.k;
         we0.d dVar = b0Var.j;
@@ -582,7 +582,7 @@ public abstract class z3 implements a5.m1 {
                 int i8 = eVar == null ? eVar.b : 0;
                 int i9 = eVar == null ? eVar.c : 0;
                 list = eVar == null ? eVar.d.a : null;
-                x61.r rVar = x61.r.r;
+                x61.rShadow rVar = x61.rShadow.r;
                 if (list == null) {
                     list = rVar;
                 }
@@ -839,7 +839,7 @@ public abstract class z3 implements a5.m1 {
         }
         if (eVar2 == null) {
         }
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         if (list == null) {
         }
         ArrayList S6 = x61.m.S(list);
@@ -1112,7 +1112,7 @@ public abstract class z3 implements a5.m1 {
 
     public static final mn.e e(g20.g gVar, String str) {
         g20.s1 s1Var;
-        List list = x61.r.r;
+        List list = x61.rShadow.r;
         if (gVar == null) {
             return new mn.e(0, list, new x01.i(null, false, true));
         }
@@ -1163,7 +1163,7 @@ public abstract class z3 implements a5.m1 {
             }
             arrayList = arrayList2;
         }
-        return arrayList == null ? x61.r.r : arrayList;
+        return arrayList == null ? x61.rShadow.r : arrayList;
     }
 
     public static final yz0.g4 h(ak0.f fVar) {
@@ -1248,7 +1248,7 @@ public abstract class z3 implements a5.m1 {
             }
             A.c();
             e6.w.s(((androidx.glance.appwidget.protobuf.x) A).s, oVar);
-            boolean z2 = !sy.r.r(iVar);
+            boolean z2 = !sy.rShadow.r(iVar);
             A.c();
             e6.w.w(((androidx.glance.appwidget.protobuf.x) A).s, z2);
             boolean z3 = iVar.c != null;
@@ -1305,7 +1305,7 @@ public abstract class z3 implements a5.m1 {
     }
 
     public static final Object n(n5.f fVar, j71.e eVar, a71.c cVar) {
-        return fVar.a(new b6.x(1, (a71.c) null, eVar), cVar);
+        return fVar.a(new b6.xShadow(1, (a71.c) null, eVar), cVar);
     }
 
     public static final ArrayList o(androidx.compose.runtime.tooling.a aVar) {
@@ -1355,7 +1355,7 @@ public abstract class z3 implements a5.m1 {
         try {
             list = r81.g.k(sSLSession.getPeerCertificates());
         } catch (SSLPeerUnverifiedException unused) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         return new q81.m(d, c, r81.g.k(sSLSession.getLocalCertificates()), new g81.f(3, list));
     }

@@ -31,7 +31,7 @@ public final class r5 extends w3 {
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new n5(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new n5(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.w3
@@ -43,7 +43,7 @@ public final class r5 extends w3 {
     public final void Q() {
         v71.q1 q1Var = this.A;
         if (q1Var != null && q1Var.f()) {
-            this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new q5(this, null), 3);
+            this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new q5(this, null), 3);
             return;
         }
         v71.q1 q1Var2 = this.A;
@@ -58,7 +58,7 @@ public final class r5 extends w3 {
         p0Var.j(fl.e.b(list));
         v6.a k = androidx.lifecycle.d1.k(this);
         c81.e eVar2 = v71.l0.a;
-        v71.b0.z(k, c81.d.t, (v71.a0) null, new k5(this, null), 2);
+        v71.b0.z(k, c81.d.t, (v71.a0Shadow) null, new k5(this, null), 2);
     }
 
     @Override // com.github.rudroid.viewmodels.x3

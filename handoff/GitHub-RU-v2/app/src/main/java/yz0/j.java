@@ -35,6 +35,6 @@ public final class j {
         String a = qb.a.a(this.c);
         StringBuilder o = a0.s0.o("Branch(repositoryId=", this.a, ", id=", this.b, ", oid=");
         f1.e.x(o, a, ", name=", this.d, ", isDefault=");
-        return jo.f4.s(o, this.e, ")");
+        return jo.f4Shadow.s(o, this.e, ")");
     }
 }

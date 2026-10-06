@@ -4,9 +4,9 @@ package jo;
 public final class xp {
     public String a;
     public String b;
-    public is.a0 c;
+    public is.a0Shadow c;
 
-    public xp(String str, String str2, is.a0 a0Var) {
+    public xp(String str, String str2, is.a0Shadow a0Var) {
         this.a = str;
         this.b = str2;
         this.c = a0Var;

@@ -18,7 +18,7 @@ public abstract class k0 {
         ah.Companion.getClass();
         aa.x xVar = ah.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         aa.x xVar2 = eh.a;
@@ -35,11 +35,11 @@ public abstract class k0 {
         ux.Companion.getClass();
         aa.q0 q0Var = ux.T;
         k71.k.g(q0Var, "type");
-        List n = sy.d0.n(new aa.m("pullRequest", q0Var, (String) null, rVar, rVar, r3));
+        List n = sy.d0Shadow.n(new aa.m("pullRequest", q0Var, (String) null, rVar, rVar, r3));
         p9.Companion.getClass();
         aa.q0 q0Var2 = p9.a;
         k71.k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("createPullRequest", q0Var2, (String) null, rVar, no.a.s(vp.I, new aa.u0(x61.x.u(new w61.k[]{new w61.k("baseRefName", new aa.t("baseRefName")), new w61.k("body", new aa.t("body")), new w61.k("draft", Boolean.FALSE), new w61.k("headRefName", new aa.t("headRefName")), new w61.k("maintainerCanModify", Boolean.TRUE), new w61.k("repositoryId", new aa.t("repositoryId")), new w61.k("title", new aa.t("title"))}))), n));
+        a = sy.d0Shadow.n(new aa.m("createPullRequest", q0Var2, (String) null, rVar, no.a.s(vp.I, new aa.u0(x61.x.u(new w61.k[]{new w61.k("baseRefName", new aa.t("baseRefName")), new w61.k("body", new aa.t("body")), new w61.k("draft", Boolean.FALSE), new w61.k("headRefName", new aa.t("headRefName")), new w61.k("maintainerCanModify", Boolean.TRUE), new w61.k("repositoryId", new aa.t("repositoryId")), new w61.k("title", new aa.t("title"))}))), n));
     }
 }

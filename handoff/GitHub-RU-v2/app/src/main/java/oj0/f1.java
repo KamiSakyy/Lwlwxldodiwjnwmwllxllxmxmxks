@@ -3,7 +3,7 @@ package oj0;
 import gn0.jr;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class f1 implements aa.h0 {
+public final class f1Shadow implements aa.h0 {
     public String A;
     public boolean B;
     public boolean C;
@@ -106,10 +106,10 @@ public final class f1 implements aa.h0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof f1)) {
+        if (!(obj instanceof f1Shadow)) {
             return false;
         }
-        f1 f1Var = (f1) obj;
+        f1Shadow f1Var = (f1Shadow) obj;
         return k71.k.b(this.a, f1Var.a) && k71.k.b(this.b, f1Var.b) && k71.k.b(this.c, f1Var.c) && this.d == f1Var.d && k71.k.b(this.e, f1Var.e) && k71.k.b(this.f, f1Var.f) && this.g == f1Var.g && this.h == f1Var.h && this.i == f1Var.i && k71.k.b(this.j, f1Var.j) && this.k == f1Var.k && this.l == f1Var.l && this.m == f1Var.m && this.n == f1Var.n && this.o == f1Var.o && this.p == f1Var.p && k71.k.b(this.q, f1Var.q) && k71.k.b(this.r, f1Var.r) && k71.k.b(this.s, f1Var.s) && k71.k.b(this.t, f1Var.t) && k71.k.b(this.u, f1Var.u) && k71.k.b(this.v, f1Var.v) && k71.k.b(this.w, f1Var.w) && k71.k.b(this.x, f1Var.x) && k71.k.b(this.y, f1Var.y) && k71.k.b(this.z, f1Var.z) && k71.k.b(this.A, f1Var.A) && this.B == f1Var.B && this.C == f1Var.C && this.D == f1Var.D && this.E == f1Var.E && k71.k.b(this.F, f1Var.F) && k71.k.b(this.G, f1Var.G) && this.H == f1Var.H && this.I == f1Var.I && k71.k.b(this.J, f1Var.J) && k71.k.b(this.K, f1Var.K) && k71.k.b(this.L, f1Var.L) && this.M == f1Var.M && this.N == f1Var.N && this.O == f1Var.O && k71.k.b(this.P, f1Var.P) && k71.k.b(this.Q, f1Var.Q) && k71.k.b(this.R, f1Var.R) && k71.k.b(this.S, f1Var.S) && k71.k.b(this.T, f1Var.T) && k71.k.b(this.U, f1Var.U);
     }
 

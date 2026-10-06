@@ -8,8 +8,8 @@ import java.util.ListIterator;
 import java.util.RandomAccess;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class r implements List, Serializable, RandomAccess, l71.a {
-    public static final r r = new r();
+public final class rShadow implements List, Serializable, RandomAccess, l71.a {
+    public static final rShadow r = new rShadow();
 
     @Override // java.util.List
     public final /* bridge */ /* synthetic */ void add(int i, Object obj) {

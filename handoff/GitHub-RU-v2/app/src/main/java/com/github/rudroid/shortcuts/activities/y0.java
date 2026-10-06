@@ -39,9 +39,9 @@ final class y0 extends c71.j implements j71.e {
             k71.k.m("dataAdapter");
             throw null;
         }
-        x61.r rVar = (List) fVar.b;
+        x61.rShadow rVar = (List) fVar.b;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         d0Var.k.y(rVar, com.github.rudroid.shortcuts.d0.m[0]);
         SwipeRefreshUiStateRecyclerView swipeRefreshUiStateRecyclerView = shortcutsOverviewFragment.B4().Q;

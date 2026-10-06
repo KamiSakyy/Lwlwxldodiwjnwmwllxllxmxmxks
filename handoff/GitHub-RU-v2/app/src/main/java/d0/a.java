@@ -1,7 +1,7 @@
 package d0;
 
 import java.util.ArrayList;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class a {
@@ -24,7 +24,7 @@ public final class a {
         } else {
             obj = arrayList.get(0);
             int c10 = ((b) obj).f20939b.c();
-            int m = d0.m(arrayList);
+            int m = d0Shadow.m(arrayList);
             int i = 1;
             if (1 <= m) {
                 while (true) {

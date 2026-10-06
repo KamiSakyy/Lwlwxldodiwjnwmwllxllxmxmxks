@@ -13,7 +13,7 @@ import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
 import m7.y;
 import oj0.a1;
-import oj0.f1;
+import oj0.f1Shadow;
 import oj0.q3;
 import oj0.r0;
 import oj0.s0;
@@ -24,7 +24,7 @@ import oj0.z0;
 import oj0.z3;
 import sy.f0;
 import ub.a;
-import x61.r;
+import x61.rShadow;
 import yz0.e8;
 import yz0.l2;
 import yz0.l4;
@@ -52,7 +52,7 @@ public final class k {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static p01.j a(f1 f1Var) {
+    public static p01.j a(f1Shadow f1Var) {
         String str;
         boolean z;
         int i;
@@ -77,7 +77,7 @@ public final class k {
         int i3;
         List<z3> list;
         boolean z2;
-        r rVar;
+        rShadow rVar;
         String str5;
         String str6;
         String str7 = f1Var.b;
@@ -203,7 +203,7 @@ public final class k {
                 if (list != null) {
                 }
                 boolean z19 = f1Var.i;
-                r rVar2 = rVar;
+                rShadow rVar2 = rVar;
                 jr jrVar = f1Var.E;
                 if (jrVar == null) {
                 }
@@ -315,10 +315,10 @@ public final class k {
                         rVar = arrayList4;
                     } else {
                         z2 = z172;
-                        rVar = r.r;
+                        rVar = rShadow.r;
                     }
                     boolean z192 = f1Var.i;
-                    r rVar22 = rVar;
+                    rShadow rVar22 = rVar;
                     jr jrVar2 = f1Var.E;
                     int i15 = jrVar2 == null ? -1 : zl0.a.a[jrVar2.ordinal()];
                     boolean z24 = i15 != 1 || i15 == 2;
@@ -375,7 +375,7 @@ public final class k {
         if (list != null) {
         }
         boolean z1922 = f1Var.i;
-        r rVar222 = rVar;
+        rShadow rVar222 = rVar;
         jr jrVar22 = f1Var.E;
         if (jrVar22 == null) {
         }

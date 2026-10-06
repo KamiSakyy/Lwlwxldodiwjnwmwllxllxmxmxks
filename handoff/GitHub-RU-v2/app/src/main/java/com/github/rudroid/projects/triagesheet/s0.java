@@ -32,7 +32,7 @@ public final class s0 extends androidx.lifecycle.k1 {
     public List f18089x;
 
     /* renamed from: y, reason: collision with root package name */
-    public x71.h f18090y;
+    public x71.hShadow f18090y;
 
     /* renamed from: z, reason: collision with root package name */
     public y71.d f18091z;
@@ -62,20 +62,20 @@ public final class s0 extends androidx.lifecycle.k1 {
         }
         List g02 = x61.l.g0(mVarArr);
         this.f18089x = g02;
-        x71.h a10 = t.e.a(0, 6, null);
+        x71.hShadow a10 = t.e.a(0, 6, null);
         this.f18090y = a10;
         this.f18091z = new y71.d(a10);
-        y1 c10 = y71.n1.c(g02);
+        y1 c10 = y71.n1Shadow.c(g02);
         this.A = c10;
         this.B = new y71.i1(c10);
-        y1 c11 = y71.n1.c("");
+        y1 c11 = y71.n1Shadow.c("");
         this.C = c11;
-        this.D = y71.n1.G(y71.n1.o(c11, 250L), androidx.lifecycle.d1.k(this), y71.q1.b, "");
+        this.D = y71.n1Shadow.G(y71.n1Shadow.o(c11, 250L), androidx.lifecycle.d1.k(this), y71.q1.b, "");
     }
 
     public final void P(d dVar) {
         k71.k.g(dVar, "project");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new t0(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new t0(this, null), 3);
         y1 y1Var = this.A;
         ArrayList m02 = x61.m.m0((Collection) y1Var.getValue(), dVar);
         y1Var.getClass();

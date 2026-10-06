@@ -7,7 +7,7 @@ import m10.ah;
 import m10.ch;
 import m10.ci;
 import m10.eh;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -18,8 +18,8 @@ public abstract class b {
     static {
         ch.Companion.getClass();
         r b = l0.b(ch.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         ah.Companion.getClass();
         m mVar = new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar);
         ci.Companion.getClass();

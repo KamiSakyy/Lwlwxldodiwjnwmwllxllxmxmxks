@@ -2,7 +2,7 @@ package g20;
 
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class b0 implements aa.a {
@@ -83,7 +83,7 @@ public abstract class b0 implements aa.a {
                     str3 = (String) aa.c.i.a(eVar, wVar);
                 case 6:
                     num = num2;
-                    dVar = (d) aa.c.b(aa.c.c(x.a, false)).a(eVar, wVar);
+                    dVar = (d) aa.c.b(aa.c.c(xShadow.a, false)).a(eVar, wVar);
                     num2 = num;
                 case 7:
                     num = num2;
@@ -109,7 +109,7 @@ public abstract class b0 implements aa.a {
                     num2 = num;
                 case 13:
                     num = num2;
-                    gVar = (g) aa.c.b(aa.c.c(a0.a, false)).a(eVar, wVar);
+                    gVar = (g) aa.c.b(aa.c.c(a0Shadow.a, false)).a(eVar, wVar);
                     num2 = num;
                 case 14:
                     num = num2;
@@ -192,7 +192,7 @@ public abstract class b0 implements aa.a {
         fVar.z0("event");
         aa.c.i.b(fVar, wVar, vVar.f);
         fVar.z0("artifacts");
-        aa.c.b(aa.c.c(x.a, false)).b(fVar, wVar, vVar.g);
+        aa.c.b(aa.c.c(xShadow.a, false)).b(fVar, wVar, vVar.g);
         fVar.z0("repository");
         aa.c.c(m0.a, false).b(fVar, wVar, vVar.h);
         fVar.z0("push");
@@ -205,7 +205,7 @@ public abstract class b0 implements aa.a {
         f4.C(vVar.l, aa.c.f, fVar, wVar, "app");
         aa.c.b(aa.c.c(w.a, false)).b(fVar, wVar, vVar.m);
         fVar.z0("checkRuns");
-        aa.c.b(aa.c.c(a0.a, false)).b(fVar, wVar, vVar.n);
+        aa.c.b(aa.c.c(a0Shadow.a, false)).b(fVar, wVar, vVar.n);
         fVar.z0("failedCheckRuns");
         aa.c.b(aa.c.c(d0.a, false)).b(fVar, wVar, vVar.o);
         fVar.z0("runningCheckRuns");

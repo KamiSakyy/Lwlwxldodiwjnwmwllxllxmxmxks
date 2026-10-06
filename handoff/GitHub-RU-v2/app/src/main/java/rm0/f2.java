@@ -143,7 +143,7 @@ public final class f2 implements y71.j {
                                 wc wcVar = xcVar2.b;
                                 Iterable iterable = wcVar.a;
                                 if (iterable == null) {
-                                    iterable = x61.r.r;
+                                    iterable = x61.rShadow.r;
                                 }
                                 xcVar = new xc(xcVar2.a, new wc(x61.m.l0(this.t, iterable), wcVar.b), xcVar2.c);
                             } else {
@@ -311,7 +311,7 @@ public final class f2 implements y71.j {
                                 ne neVar = oeVar2.b;
                                 Iterable iterable2 = neVar.a;
                                 if (iterable2 == null) {
-                                    iterable2 = x61.r.r;
+                                    iterable2 = x61.rShadow.r;
                                 }
                                 oeVar = new oe(oeVar2.a, new ne(x61.m.l0(this.t, iterable2), neVar.b), oeVar2.c);
                             } else {
@@ -485,7 +485,7 @@ public final class f2 implements y71.j {
                                     List list2 = cVar2.a;
                                     Iterable S = list2 != null ? x61.m.S(list2) : null;
                                     if (S == null) {
-                                        S = x61.r.r;
+                                        S = x61.rShadow.r;
                                     }
                                     vVar2 = new rz.v(vVar5.a, new rz.w(wVar.a, new tz.c(x61.m.l0(this.t, S), cVar2.b)));
                                 } else {
@@ -495,7 +495,7 @@ public final class f2 implements y71.j {
                                 String str2 = xVar3.b;
                                 cq.u2 u2Var2 = xVar3.d;
                                 k71.k.g(str, "__typename");
-                                xVar = new rz.x(str, str2, vVar2, u2Var2);
+                                xVar = new rz.xShadow(str, str2, vVar2, u2Var2);
                             } else {
                                 xVar = null;
                             }
@@ -535,7 +535,7 @@ public final class f2 implements y71.j {
                         i13 = i5Var.v;
                         if (i13 != 0) {
                             sy.y.j(obj13);
-                            rz.s0 s0Var = (rz.s0) obj;
+                            rz.s0Shadow s0Var = (rz.s0) obj;
                             k71.k.g(s0Var, "<this>");
                             rz.u0 u0Var3 = s0Var.a;
                             if (u0Var3 != null) {
@@ -544,13 +544,13 @@ public final class f2 implements y71.j {
                                 List list3 = cVar3.a;
                                 Iterable S2 = list3 != null ? x61.m.S(list3) : null;
                                 if (S2 == null) {
-                                    S2 = x61.r.r;
+                                    S2 = x61.rShadow.r;
                                 }
                                 u0Var = new rz.u0(u0Var3.a, new rz.t0(t0Var.a, new tz.c(x61.m.l0(this.t, S2), cVar3.b)), u0Var3.c);
                             } else {
                                 u0Var = null;
                             }
-                            rz.s0 s0Var2 = new rz.s0(u0Var, s0Var.b, s0Var.c);
+                            rz.s0Shadow s0Var2 = new rz.s0(u0Var, s0Var.b, s0Var.c);
                             List list4 = u0Var3 != null ? u0Var3.b.b.a : null;
                             w61.k kVar2 = new w61.k(s0Var2, Boolean.valueOf(!(list4 == null || list4.isEmpty())));
                             i5Var.v = 1;
@@ -683,7 +683,7 @@ public final class f2 implements y71.j {
                                 qd qdVar = rdVar2.b;
                                 Iterable iterable3 = qdVar.a;
                                 if (iterable3 == null) {
-                                    iterable3 = x61.r.r;
+                                    iterable3 = x61.rShadow.r;
                                 }
                                 rdVar = new rd(rdVar2.a, new qd(x61.m.l0(this.t, iterable3), qdVar.b), rdVar2.c);
                             } else {
@@ -857,7 +857,7 @@ public final class f2 implements y71.j {
                                     List list6 = cVar4.a;
                                     Iterable S3 = list6 != null ? x61.m.S(list6) : null;
                                     if (S3 == null) {
-                                        S3 = x61.r.r;
+                                        S3 = x61.rShadow.r;
                                     }
                                     vVar4 = new ux0.v(vVar6.a, new ux0.w(wVar2.a, new wx0.c(x61.m.l0(this.t, S3), cVar4.b)));
                                 } else {
@@ -867,7 +867,7 @@ public final class f2 implements y71.j {
                                 String str4 = xVar4.b;
                                 ap0.e2 e2Var2 = xVar4.d;
                                 k71.k.g(str3, "__typename");
-                                xVar2 = new ux0.x(str3, str4, vVar4, e2Var2);
+                                xVar2 = new ux0.xShadow(str3, str4, vVar4, e2Var2);
                             } else {
                                 xVar2 = null;
                             }
@@ -907,7 +907,7 @@ public final class f2 implements y71.j {
                         i24 = q4Var.v;
                         if (i24 != 0) {
                             sy.y.j(obj24);
-                            ux0.s0 s0Var3 = (ux0.s0) obj;
+                            ux0.s0Shadow s0Var3 = (ux0.s0) obj;
                             k71.k.g(s0Var3, "<this>");
                             ux0.u0 u0Var4 = s0Var3.a;
                             if (u0Var4 != null) {
@@ -916,13 +916,13 @@ public final class f2 implements y71.j {
                                 List list7 = cVar5.a;
                                 Iterable S4 = list7 != null ? x61.m.S(list7) : null;
                                 if (S4 == null) {
-                                    S4 = x61.r.r;
+                                    S4 = x61.rShadow.r;
                                 }
                                 u0Var2 = new ux0.u0(u0Var4.a, new ux0.t0(t0Var2.a, new wx0.c(x61.m.l0(this.t, S4), cVar5.b)), u0Var4.c);
                             } else {
                                 u0Var2 = null;
                             }
-                            ux0.s0 s0Var4 = new ux0.s0(u0Var2, s0Var3.b, s0Var3.c);
+                            ux0.s0Shadow s0Var4 = new ux0.s0(u0Var2, s0Var3.b, s0Var3.c);
                             List list8 = u0Var4 != null ? u0Var4.b.b.a : null;
                             w61.k kVar4 = new w61.k(s0Var4, Boolean.valueOf(!(list8 == null || list8.isEmpty())));
                             q4Var.v = 1;

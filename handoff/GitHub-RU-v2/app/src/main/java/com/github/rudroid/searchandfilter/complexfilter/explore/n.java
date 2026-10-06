@@ -11,7 +11,7 @@ public final class n extends com.github.rudroid.searchandfilter.complexfilter.b<
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(am.b bVar, com.github.rudroid.activities.util.c cVar, a1 a1Var) {
-        super(cVar, a1Var, new com.github.rudroid.searchandfilter.complexfilter.i0(new com.github.rudroid.profile.ui.h(24, (byte) 0)));
+        super(cVar, a1Var, new com.github.rudroid.searchandfilter.complexfilter.i0(new com.github.rudroid.profile.ui.hShadow(24, (byte) 0)));
         k71.k.g(bVar, "fetchLanguageFiltersUseCase");
         k71.k.g(cVar, "accountHolder");
         k71.k.g(a1Var, "savedStateHandle");

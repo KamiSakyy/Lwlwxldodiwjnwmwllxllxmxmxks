@@ -19,7 +19,7 @@ public abstract class a {
     static {
         g8.Companion.getClass();
         r b = l0.b(g8.s);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("type", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar = fb.a;

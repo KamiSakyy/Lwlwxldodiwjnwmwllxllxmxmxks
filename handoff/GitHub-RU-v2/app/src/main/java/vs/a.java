@@ -15,7 +15,7 @@ public abstract class a {
     static {
         eh.Companion.getClass();
         r b = l0.b(eh.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("html", b, (String) null, rVar, rVar, rVar);
         ch.Companion.getClass();
         a = l.r(new m[]{mVar, new m("number", l0.b(ch.a), (String) null, rVar, rVar, rVar)});

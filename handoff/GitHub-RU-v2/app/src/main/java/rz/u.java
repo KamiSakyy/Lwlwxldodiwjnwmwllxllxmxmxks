@@ -2,11 +2,11 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements aa.v0 {
-    public x a;
+    public xShadow a;
     public String b;
     public String c;
 
-    public u(x xVar, String str, String str2) {
+    public u(xShadow xVar, String str, String str2) {
         this.a = xVar;
         this.b = str;
         this.c = str2;
@@ -24,7 +24,7 @@ public final class u implements aa.v0 {
     }
 
     public final int hashCode() {
-        x xVar = this.a;
+        xShadow xVar = this.a;
         return this.c.hashCode() + com.github.rudroid.copilot.h1.i((xVar == null ? 0 : xVar.hashCode()) * 31, this.b, 31);
     }
 

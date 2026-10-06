@@ -2,7 +2,7 @@ package b7;
 
 import android.os.Bundle;
 import java.io.Serializable;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import t71.w;
 import x6.l0;
@@ -74,7 +74,7 @@ public final class b extends l0 {
         if (r12 != null) {
             return r12;
         }
-        StringBuilder v4 = f4.v("Enum value ", str, " not found for type ");
+        StringBuilder v4 = f4Shadow.v("Enum value ", str, " not found for type ");
         v4.append(cls.getName());
         v4.append('.');
         throw new IllegalArgumentException(v4.toString());

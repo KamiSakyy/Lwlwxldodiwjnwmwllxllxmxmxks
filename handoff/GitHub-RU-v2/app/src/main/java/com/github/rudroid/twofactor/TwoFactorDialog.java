@@ -264,7 +264,7 @@ public final class TwoFactorDialog extends w2.a {
                 if (a2 == null) {
                     throw new IllegalStateException("No ViewModelStoreOwner was provided via LocalViewModelStoreOwner");
                 }
-                h hVar4 = (h) t.e.v(k71.x.a(h.class), a2, a2 instanceof androidx.lifecycle.r ? a2.g0() : t6.a.b, sVar);
+                h hVar4 = (h) t.e.v(k71.xShadow.a(h.class), a2, a2 instanceof androidx.lifecycle.r ? a2.g0() : t6.a.b, sVar);
                 rVar3 = w1.o.a;
                 hVar3 = hVar4;
             } else {
@@ -299,7 +299,7 @@ public final class TwoFactorDialog extends w2.a {
                                 int i5 = TwoFactorDialog.B;
                                 b bVar = (b) ((fl.f) hVar5.x.getValue()).b;
                                 if (bVar != null && (aVar2 = bVar.a) != null && ((q1Var = hVar5.y) == null || !q1Var.f())) {
-                                    hVar5.y = v71.b0.z(d1.k(hVar5), (a71.h) null, (v71.a0) null, new s(hVar5, aVar2, new b(aVar2, a.u, ""), null), 3);
+                                    hVar5.y = v71.b0.z(d1.k(hVar5), (a71.h) null, (v71.a0Shadow) null, new s(hVar5, aVar2, new b(aVar2, a.u, ""), null), 3);
                                     break;
                                 }
                                 break;
@@ -334,7 +334,7 @@ public final class TwoFactorDialog extends w2.a {
                                 int i5 = TwoFactorDialog.B;
                                 b bVar = (b) ((fl.f) hVar5.x.getValue()).b;
                                 if (bVar != null && (aVar22 = bVar.a) != null && ((q1Var = hVar5.y) == null || !q1Var.f())) {
-                                    hVar5.y = v71.b0.z(d1.k(hVar5), (a71.h) null, (v71.a0) null, new s(hVar5, aVar22, new b(aVar22, a.u, ""), null), 3);
+                                    hVar5.y = v71.b0.z(d1.k(hVar5), (a71.h) null, (v71.a0Shadow) null, new s(hVar5, aVar22, new b(aVar22, a.u, ""), null), 3);
                                     break;
                                 }
                                 break;

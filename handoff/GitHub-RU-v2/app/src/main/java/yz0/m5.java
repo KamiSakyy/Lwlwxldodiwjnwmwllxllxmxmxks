@@ -6,7 +6,7 @@ public final class m5 {
     public static final l5 b;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         b = new l5(rVar, rVar, null, false, false, "", rVar);
     }
 }

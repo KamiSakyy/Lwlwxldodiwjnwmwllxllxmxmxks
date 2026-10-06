@@ -6,6 +6,6 @@ public abstract class uh {
 
     static {
         ac.Companion.getClass();
-        new aa.q0("MemberAddToRepositoryFeedItem", x61.r.r, sy.d0.n(ac.a));
+        new aa.q0("MemberAddToRepositoryFeedItem", x61.rShadow.r, sy.d0Shadow.n(ac.a));
     }
 }

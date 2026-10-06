@@ -4,9 +4,9 @@ package u10;
 public final class y30 {
     public String a;
     public String b;
-    public e50.x c;
+    public e50.xShadow c;
 
-    public y30(String str, String str2, e50.x xVar) {
+    public y30(String str, String str2, e50.xShadow xVar) {
         this.a = str;
         this.b = str2;
         this.c = xVar;

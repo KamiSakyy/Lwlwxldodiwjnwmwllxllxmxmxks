@@ -550,7 +550,7 @@ public final class a implements z01.a, yb0, mi0, y90, yf0 {
             }
             arrayList.add(new hg(wfVar2, yfVar2, u0Var, parse, bVar3));
         }
-        return y71.n1.y(in.r.l(in.r.h(this.s.d(new mk(arrayList)))), this.t);
+        return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new mk(arrayList)))), this.t);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:214:0x0475, code lost:
@@ -1056,7 +1056,7 @@ public final class a implements z01.a, yb0, mi0, y90, yf0 {
                     rhVar = null;
                     arrayList.add(new hh(wgVar2, ygVar2, u0Var, parse, rhVar == null ? bVar : new aa.u0(rhVar)));
                 }
-                return y71.n1.y(in.r.l(in.r.h(jVar.d(new ql(arrayList)))), vVar);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(jVar.d(new ql(arrayList)))), vVar);
             case 1:
                 ArrayList arrayList2 = new ArrayList(x61.n.F(list, 10));
                 Iterator it2 = list.iterator();
@@ -1652,7 +1652,7 @@ public final class a implements z01.a, yb0, mi0, y90, yf0 {
                     opVar = null;
                     arrayList2.add(new ep(onVar2, qnVar2, u0Var2, parse2, opVar == null ? bVar : new aa.u0(opVar)));
                 }
-                return y71.n1.y(in.r.l(in.r.h(jVar.d(new ap(arrayList2)))), vVar);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(jVar.d(new ap(arrayList2)))), vVar);
             case 2:
                 return b(list);
             default:
@@ -2150,7 +2150,7 @@ public final class a implements z01.a, yb0, mi0, y90, yf0 {
                     nkVar = null;
                     arrayList3.add(new dk(kjVar2, mjVar2, u0Var3, parse3, nkVar == null ? bVar : new aa.u0(nkVar)));
                 }
-                return y71.n1.y(in.r.l(in.r.h(jVar.d(new hn(arrayList3)))), vVar);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(jVar.d(new hn(arrayList3)))), vVar);
         }
     }
 

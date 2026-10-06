@@ -44,7 +44,7 @@ import ri0.s7;
 import rm0.b0;
 import rm0.d0;
 import rm0.g0;
-import rm0.t;
+import rm0.tShadow;
 import rm0.v;
 import rm0.w;
 import rm0.xShadow;
@@ -240,7 +240,7 @@ public final class f implements y71.j {
         yd0.b bVar4;
         yd0.a aVar4;
         j00 j00Var;
-        t tVar;
+        tShadow tVar;
         int i25;
         o6 p;
         kc0.b bVar5;
@@ -263,7 +263,7 @@ public final class f implements y71.j {
         o7 o7Var2;
         xShadow xVar;
         int i28;
-        rm0.a0 a0Var;
+        rm0.a0Shadow a0Var;
         int i29;
         b0 b0Var;
         int i31;
@@ -1000,9 +1000,9 @@ public final class f implements y71.j {
                             if (fVar5 != null) {
                                 int i57 = fVar5.b;
                                 ld0.a aVar30 = fVar5.c;
-                                x61.r rVar2 = aVar30.c;
+                                x61.rShadow rVar2 = aVar30.c;
                                 if (rVar2 == null) {
-                                    rVar2 = x61.r.r;
+                                    rVar2 = x61.rShadow.r;
                                 }
                                 ArrayList S = m.S(rVar2);
                                 ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -1063,7 +1063,7 @@ public final class f implements y71.j {
                             y.j(obj25);
                             m00 m00Var = ((l00) obj).a;
                             yd0.c cVar5 = (m00Var == null || (j00Var = m00Var.a) == null) ? null : j00Var.b;
-                            ArrayList a = (cVar5 == null || (aVar4 = cVar5.b) == null) ? (cVar5 == null || (bVar4 = cVar5.c) == null) ? x61.r.r : a.a.a(bVar4.c) : a.a.a(aVar4.c);
+                            ArrayList a = (cVar5 == null || (aVar4 = cVar5.b) == null) ? (cVar5 == null || (bVar4 = cVar5.c) == null) ? x61.rShadow.r : a.a.a(bVar4.c) : a.a.a(aVar4.c);
                             eVar3.v = 1;
                             if (this.s.c(a, eVar3) == aVar31) {
                                 return aVar31;
@@ -1086,7 +1086,7 @@ public final class f implements y71.j {
                 return a0.a;
             case 22:
                 if (cVar instanceof t) {
-                    tVar = (t) cVar;
+                    tVar = (tShadow) cVar;
                     int i61 = tVar.v;
                     if ((i61 & Integer.MIN_VALUE) != 0) {
                         tVar.v = i61 - Integer.MIN_VALUE;
@@ -1118,7 +1118,7 @@ public final class f implements y71.j {
                         return a0.a;
                     }
                 }
-                tVar = new t(this, cVar);
+                tVar = new tShadow(this, cVar);
                 Object obj262 = tVar.u;
                 b71.a aVar322 = b71.a.r;
                 i25 = tVar.v;
@@ -1186,7 +1186,7 @@ public final class f implements y71.j {
                                 String str18 = str17;
                                 qh0.a aVar37 = s7Var.m;
                                 String str19 = s7Var.f;
-                                PullRequestReviewCommentState t = t.e.t(s7Var.g);
+                                PullRequestReviewCommentState t = tShadow.e.t(s7Var.g);
                                 if (r7Var == null || (list2 = r7Var.g) == null || (o7Var2 = (o7) m.f0(list2)) == null) {
                                     str = null;
                                 } else {
@@ -1286,8 +1286,8 @@ public final class f implements y71.j {
                 }
                 return a0.a;
             case 26:
-                if (cVar instanceof rm0.a0) {
-                    a0Var = (rm0.a0) cVar;
+                if (cVar instanceof rm0.a0Shadow) {
+                    a0Var = (rm0.a0Shadow) cVar;
                     int i65 = a0Var.v;
                     if ((i65 & Integer.MIN_VALUE) != 0) {
                         a0Var.v = i65 - Integer.MIN_VALUE;
@@ -1310,7 +1310,7 @@ public final class f implements y71.j {
                         return a0Var6;
                     }
                 }
-                a0Var = new rm0.a0(this, cVar);
+                a0Var = new rm0.a0Shadow(this, cVar);
                 Object obj302 = a0Var.u;
                 b71.a aVar402 = b71.a.r;
                 i29 = a0Var.v;

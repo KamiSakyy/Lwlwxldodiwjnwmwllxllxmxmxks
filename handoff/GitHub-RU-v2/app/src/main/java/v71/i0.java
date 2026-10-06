@@ -23,7 +23,7 @@ public final class i0 extends a81.q {
                 if (i != 1) {
                     throw new IllegalStateException("Already resumed");
                 }
-                a81.b.h(b4.T(this.u), b0.B(obj));
+                a81.bShadow.h(b4.T(this.u), b0.B(obj));
                 return;
             }
         } while (!atomicIntegerFieldUpdater.compareAndSet(this, 0, 2));

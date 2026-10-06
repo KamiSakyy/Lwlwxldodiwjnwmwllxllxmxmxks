@@ -6,9 +6,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class o implements aa.a {
-    public static final List a = sy.d0.n("__typename");
+    public static final List a = sy.d0Shadow.n("__typename");
 
-    public static zx.x c(ea.e eVar, aa.w wVar) {
+    public static zx.xShadow c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
@@ -24,13 +24,13 @@ public abstract class o implements aa.a {
         eVar.s0();
         dw.c c3 = dw.d.c(eVar, wVar);
         if (str != null) {
-            return new zx.x(str, c, c2, c3);
+            return new zx.xShadow(str, c, c2, c3);
         }
         k41.b.B(eVar, "__typename");
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, zx.x xVar) {
+    public static void d(ea.f fVar, aa.w wVar, zx.xShadow xVar) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

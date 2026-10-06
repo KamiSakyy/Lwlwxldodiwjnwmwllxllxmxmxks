@@ -7,10 +7,10 @@ import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.w0;
 import java.util.Map;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -34,7 +34,7 @@ public final class l extends k1 {
         k71.k.g(a1Var, "savedStateHandle");
         this.s = bVar;
         this.t = cVar;
-        y1 c = n1.c(g1.a.c(g1.Companion));
+        y1 c = n1Shadow.c(g1.a.c(g1.Companion));
         this.u = c;
         this.v = w0.f(new i1(c), d1.k(this), new k(this, 0));
         this.w = (String) h2.a(a1Var, "EXTRA_REPO_OWNER");
@@ -45,6 +45,6 @@ public final class l extends k1 {
     }
 
     public final void P() {
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new o(this, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new o(this, null), 3);
     }
 }

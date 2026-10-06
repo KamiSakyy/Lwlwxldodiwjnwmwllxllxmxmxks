@@ -4,14 +4,14 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements aa.a {
     public static final c a = new c();
-    public static final List b = d0.o("id", "isInOrganization", "__typename");
+    public static final List b = d0Shadow.o("id", "isInOrganization", "__typename");
 
     public static a c(e eVar, w wVar) {
         k.g(eVar, "reader");
@@ -56,7 +56,7 @@ public final class c implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, aVar.a);
         fVar.z0("isInOrganization");
-        f4.C(aVar.b, aa.c.f, fVar, wVar, "__typename");
+        f4Shadow.C(aVar.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, aVar.c);
     }
 

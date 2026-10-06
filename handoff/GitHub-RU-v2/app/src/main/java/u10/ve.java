@@ -30,6 +30,6 @@ public final class ve {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Issues(issueCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Issues(issueCount=", ", nodes=", ")", this.b);
     }
 }

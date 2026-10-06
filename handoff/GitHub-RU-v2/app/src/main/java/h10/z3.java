@@ -14,9 +14,9 @@ public abstract class z3 {
     static {
         eh.Companion.getClass();
         aa.r b = v8.l0.b(eh.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Issue");
+        List n = sy.d0Shadow.n("Issue");
         List list = dt.f.a;
         aa.s c = no.a.c(list, "selections", "Issue", n, list);
         ah.Companion.getClass();
@@ -24,11 +24,11 @@ public abstract class z3 {
         wh.Companion.getClass();
         aa.q0 q0Var = wh.B;
         k71.k.g(q0Var, "type");
-        List n2 = sy.d0.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, r));
+        List n2 = sy.d0Shadow.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, r));
         a30.Companion.getClass();
         aa.q0 q0Var2 = a30.a;
         k71.k.g(q0Var2, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("reopenIssue", q0Var2, (String) null, rVar, no.a.s(vp.H0, new aa.u0(a0.s0.p("issueId", new aa.t("id")))), n2));
+        a = sy.d0Shadow.n(new aa.m("reopenIssue", q0Var2, (String) null, rVar, no.a.s(vp.H0, new aa.u0(a0.s0.p("issueId", new aa.t("id")))), n2));
     }
 }

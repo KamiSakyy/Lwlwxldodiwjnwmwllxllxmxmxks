@@ -12,7 +12,7 @@ import pz0.la;
 import pz0.td;
 import pz0.vd;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -24,9 +24,9 @@ public abstract class c {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("DiscussionComment");
+        List n = d0Shadow.n("DiscussionComment");
         List list = d.a;
         s c = no.a.c(list, "selections", "DiscussionComment", n, list);
         td.Companion.getClass();

@@ -48,7 +48,7 @@ public final class f0 extends c71.j implements j71.g {
         boolean booleanValue2 = bool2 != null ? bool2.booleanValue() : g4Var.c;
         Boolean bool3 = dVar.d;
         boolean booleanValue3 = bool3 != null ? bool3.booleanValue() : g4Var.d;
-        xn.f1 f1Var = dVar.e;
+        xn.f1Shadow f1Var = dVar.e;
         if (f1Var == null) {
             f1Var = g4Var.h;
         }

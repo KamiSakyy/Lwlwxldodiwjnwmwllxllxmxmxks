@@ -18,7 +18,7 @@ public final class z implements KSerializer {
     public z(Object obj, String str) {
         k71.k.g(obj, "objectInstance");
         this.b = obj;
-        this.c = x61.r.r;
+        this.c = x61.rShadow.r;
         this.d = sy.w.s(w61.i.r, new d1.i1(24, str, this));
     }
 

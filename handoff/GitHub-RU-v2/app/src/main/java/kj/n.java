@@ -45,7 +45,7 @@ public final class n {
                                 charSequence = "";
                                 break;
                             }
-                            if (!sy.r.s(str.charAt(i3))) {
+                            if (!sy.rShadow.s(str.charAt(i3))) {
                                 charSequence = str.subSequence(i3, str.length());
                                 break;
                             }

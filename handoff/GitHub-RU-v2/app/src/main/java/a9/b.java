@@ -3,7 +3,7 @@ package a9;
 import a61.n0;
 import b9.g;
 import k71.k;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class b implements d {
@@ -19,7 +19,7 @@ public abstract class b implements d {
     @Override // a9.d
     public final y71.c a(v8.f fVar) {
         k.g(fVar, "constraints");
-        return n1.h(new n0(this, (a71.c) null, 2));
+        return n1Shadow.h(new n0(this, (a71.c) null, 2));
     }
 
     public abstract int c();

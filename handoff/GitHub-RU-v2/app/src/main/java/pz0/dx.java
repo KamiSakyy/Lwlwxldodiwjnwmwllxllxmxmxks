@@ -7,8 +7,8 @@ public abstract class dx {
     public static final cx Companion = new cx();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("ReopenedEvent", n, sy.d0.n(wk.a));
+        new aa.q0("ReopenedEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

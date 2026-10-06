@@ -24,7 +24,7 @@ import gn0.x2;
 import gn0.zl;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -36,7 +36,7 @@ public abstract class j {
         pb.Companion.getClass();
         x xVar = pb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         x xVar2 = tb.a;
@@ -60,7 +60,7 @@ public abstract class j {
         x xVar3 = rb.a;
         List r5 = l.r(new m[]{mVar6, new m("number", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         ll.Companion.getClass();
-        List n = d0.n(new m("nodes", l0.a(ll.K), (String) null, rVar, rVar, r5));
+        List n = d0Shadow.n(new m("nodes", l0.a(ll.K), (String) null, rVar, rVar, r5));
         List r6 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r7 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         m mVar7 = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);

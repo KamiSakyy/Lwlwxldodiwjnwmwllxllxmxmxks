@@ -3,11 +3,11 @@ package hy0;
 import gy0.a0;
 import gy0.g0;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class z implements aa.a {
-    public static final List a = d0.n("groups");
+    public static final List a = d0Shadow.n("groups");
 
     public static g0 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

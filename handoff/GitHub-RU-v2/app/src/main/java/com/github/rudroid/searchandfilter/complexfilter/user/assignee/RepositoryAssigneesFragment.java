@@ -6,7 +6,7 @@ import androidx.lifecycle.r;
 import androidx.lifecycle.u1;
 import com.github.rudroid.searchandfilter.complexfilter.d0;
 import com.github.rudroid.searchandfilter.complexfilter.e0;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -84,7 +84,7 @@ public final class RepositoryAssigneesFragment extends Hilt_RepositoryAssigneesF
 
     public RepositoryAssigneesFragment() {
         w61.h s = w.s(w61.i.s, new b(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(10, this)));
-        this.H0 = new l1(x.a(f.class), new c(s), new e(s), new d(s));
+        this.H0 = new l1(xShadow.a(f.class), new c(s), new e(s), new d(s));
         this.I0 = new com.github.rudroid.searchandfilter.complexfilter.user.k(this);
     }
 

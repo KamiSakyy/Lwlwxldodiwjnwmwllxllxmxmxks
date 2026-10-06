@@ -164,7 +164,7 @@ public final class w implements y71.j {
                     ra raVar = naVar.a;
                     List list = raVar != null ? raVar.b.b : null;
                     if (list == null) {
-                        list = x61.r.r;
+                        list = x61.rShadow.r;
                     }
                     ArrayList S = x61.m.S(list);
                     ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -381,7 +381,7 @@ public final class w implements y71.j {
                     ep epVar = ((ap) obj).a;
                     List list = epVar != null ? epVar.b.a : null;
                     if (list == null) {
-                        list = x61.r.r;
+                        list = x61.rShadow.r;
                     }
                     ArrayList S = x61.m.S(list);
                     ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -622,7 +622,7 @@ public final class w implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     lo0.f fVar = ((lo0.c) obj).a;
-                    Object j = in.r.j(fVar != null ? fVar.c : null, "Invalid draft issue Id", n1.s);
+                    Object j = in.rShadow.j(fVar != null ? fVar.c : null, "Invalid draft issue Id", n1.s);
                     m1Var.v = 1;
                     if (this.s.c(j, m1Var) == aVar) {
                         return aVar;
@@ -866,7 +866,7 @@ public final class w implements y71.j {
         y9 y9Var;
         int i16;
         String str;
-        x61.r rVar;
+        x61.rShadow rVar;
         String str2;
         up0.b bVar2;
         String str3;
@@ -890,7 +890,7 @@ public final class w implements y71.j {
         int i22;
         String str5;
         int i23;
-        x61.r rVar2;
+        x61.rShadow rVar2;
         switch (this.r) {
             case 0:
                 if (cVar instanceof v) {
@@ -1262,7 +1262,7 @@ public final class w implements y71.j {
                             jn0.f6 f6Var2 = a6Var.a;
                             String str6 = null;
                             jn0.h6 h6Var = f6Var2 != null ? f6Var2.c : null;
-                            x61.r<jn0.e6> rVar3 = x61.r.r;
+                            x61.rShadow<jn0.e6> rVar3 = x61.rShadow.r;
                             if (h6Var != null) {
                                 java.util.ArrayList r2 = (java.util.ArrayList) (f6Var2.c.a.b);
                                 if (r2 != 0) {
@@ -1278,7 +1278,7 @@ public final class w implements y71.j {
                             } else {
                                 if ((f6Var2 != null ? f6Var2.d : null) != null) {
                                     jn0.b6 b6Var = f6Var2.d.a;
-                                    x61.r rVar4 = (b6Var == null || (g6Var = b6Var.b) == null) ? null : g6Var.a.b;
+                                    x61.rShadow rVar4 = (b6Var == null || (g6Var = b6Var.b) == null) ? null : g6Var.a.b;
                                     if (rVar4 != null) {
                                         rVar3 = rVar4;
                                     }
@@ -1350,7 +1350,7 @@ public final class w implements y71.j {
                             String str7 = null;
                             List<yf> list2 = (bgVar == null || (wfVar3 = bgVar.b) == null || (zfVar3 = wfVar3.b) == null) ? null : zfVar3.b.b;
                             if (list2 == null) {
-                                list2 = x61.r.r;
+                                list2 = x61.rShadow.r;
                             }
                             ArrayList arrayList2 = new ArrayList();
                             for (yf yfVar : list2) {
@@ -1451,7 +1451,7 @@ public final class w implements y71.j {
                                 int i39 = daVar.c;
                                 String str14 = daVar.d.a;
                                 List list3 = daVar.e.a;
-                                x61.r rVar5 = x61.r.r;
+                                x61.rShadow rVar5 = x61.rShadow.r;
                                 if (list3 == null) {
                                     list3 = rVar5;
                                 }
@@ -1834,7 +1834,7 @@ public final class w implements y71.j {
                             k71.k.g(ndVar, "<this>");
                             rd rdVar = ndVar.a;
                             List list8 = rdVar != null ? rdVar.b.a : null;
-                            x61.r rVar6 = x61.r.r;
+                            x61.rShadow rVar6 = x61.rShadow.r;
                             if (list8 == null) {
                                 list8 = rVar6;
                             }

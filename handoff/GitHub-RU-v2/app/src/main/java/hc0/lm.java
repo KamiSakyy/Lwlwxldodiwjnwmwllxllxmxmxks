@@ -23,7 +23,7 @@ public final class lm {
         v = lmVarArr;
         w = v8.l0.t(lmVarArr);
         Companion = new km();
-        sy.d0.o(new String[]{"CLOSED", "OPEN"});
+        sy.d0Shadow.o(new String[]{"CLOSED", "OPEN"});
     }
 
     public lm(String str, int i, String str2) {

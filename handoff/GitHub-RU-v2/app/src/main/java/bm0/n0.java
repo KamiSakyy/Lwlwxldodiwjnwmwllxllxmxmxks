@@ -8,7 +8,7 @@ import wk0.l2;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 implements aa.a {
     public static final n0 a = new n0();
-    public static final List b = sy.d0.o(new String[]{"__typename", "notificationThreads", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "notificationThreads", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

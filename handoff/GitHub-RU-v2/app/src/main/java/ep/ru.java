@@ -7,7 +7,7 @@ import jo.z70;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ru implements aaShadow.a {
     public static final ru a = new ru();
-    public static final List b = sy.d0.o("node", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("node", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

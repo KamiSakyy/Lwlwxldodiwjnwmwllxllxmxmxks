@@ -7,8 +7,8 @@ public abstract class t2 {
     public static final s2 Companion = new s2();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("BaseRefForcePushedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("BaseRefForcePushedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

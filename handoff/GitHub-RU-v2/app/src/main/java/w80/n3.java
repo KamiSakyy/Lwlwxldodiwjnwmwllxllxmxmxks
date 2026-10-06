@@ -44,7 +44,7 @@ public final class n3 implements aa.i0, bm.k, com.google.android.gms.measurement
         List list = x80.k.a;
         List list2 = x80.k.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -64,7 +64,7 @@ public final class n3 implements aa.i0, bm.k, com.google.android.gms.measurement
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(n3.class).hashCode();
+                return k71.xShadow.a(n3.class).hashCode();
             default:
                 return super.hashCode();
         }

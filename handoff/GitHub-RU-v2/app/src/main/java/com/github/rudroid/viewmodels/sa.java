@@ -30,7 +30,7 @@ public final class sa extends w3 {
         List list = fVar != null ? (List) fVar.b : null;
         eVar.getClass();
         p0Var.j(fl.e.b(list));
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new ra(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new ra(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.w3
@@ -47,7 +47,7 @@ public final class sa extends w3 {
         List list = fVar != null ? (List) fVar.b : null;
         eVar.getClass();
         p0Var.j(fl.e.b(list));
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new pa(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new pa(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.x3

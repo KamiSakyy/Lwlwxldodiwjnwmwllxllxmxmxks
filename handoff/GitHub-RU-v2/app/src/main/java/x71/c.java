@@ -10,9 +10,9 @@ import v71.b0;
 public final class c implements a2 {
     public Object r = j.p;
     public v71.l s;
-    public final /* synthetic */ h t;
+    public final /* synthetic */ hShadow t;
 
-    public c(h hVar) {
+    public c(hShadow hVar) {
         this.t = hVar;
     }
 
@@ -30,7 +30,7 @@ public final class c implements a2 {
         boolean z = true;
         if (obj == j.p || obj == j.l) {
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = h.x;
-            h hVar = this.t;
+            hShadow hVar = this.t;
             p pVar2 = (p) atomicReferenceFieldUpdater.get(hVar);
             while (true) {
                 if (hVar.y()) {
@@ -43,7 +43,7 @@ public final class c implements a2 {
                     z = false;
                 } else {
                     long andIncrement = h.t.getAndIncrement(hVar);
-                    long j = j.b;
+                    long j = jShadow.b;
                     long j2 = andIncrement / j;
                     int i2 = (int) (andIncrement % j);
                     if (pVar2.t != j2) {
@@ -67,7 +67,7 @@ public final class c implements a2 {
                         pVar2 = pVar;
                     } else {
                         if (J == j.n) {
-                            h hVar2 = this.t;
+                            hShadow hVar2 = this.t;
                             v71.l s2 = b0.s(b4.T(cVar));
                             try {
                                 this.s = s2;
@@ -94,7 +94,7 @@ public final class c implements a2 {
                                                 }
                                             } else {
                                                 long andIncrement2 = h.t.getAndIncrement(hVar2);
-                                                long j3 = j.b;
+                                                long j3 = jShadow.b;
                                                 long j4 = andIncrement2 / j3;
                                                 int i3 = (int) (andIncrement2 % j3);
                                                 if (pVar3.t != j4) {

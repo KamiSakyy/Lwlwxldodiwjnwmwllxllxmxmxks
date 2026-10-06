@@ -7,7 +7,7 @@ import jo.kh0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z00 implements aaShadow.a {
     public static final z00 a = new z00();
-    public static final List b = sy.d0.o("viewer", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("viewer", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

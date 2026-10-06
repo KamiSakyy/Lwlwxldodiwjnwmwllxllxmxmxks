@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class o0 implements aa.a {
-    public static final List a = sy.d0.n("nameWithOwner");
+    public static final List a = sy.d0Shadow.n("nameWithOwner");
 
     public static f0 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

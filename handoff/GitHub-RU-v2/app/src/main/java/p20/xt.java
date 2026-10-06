@@ -8,7 +8,7 @@ import u10.l70;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xt implements aaShadow.a {
     public static final xt a = new xt();
-    public static final List b = sy.d0.o("__typename", "subjectType", "pullRequest", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "subjectType", "pullRequest", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

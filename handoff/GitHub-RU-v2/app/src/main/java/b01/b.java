@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import com.github.service.models.response.type.CommentAuthorAssociation;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import yz0.b8;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -82,7 +82,7 @@ public final class b {
     }
 
     public final int hashCode() {
-        int e = x.i.e(m0.a(this.o, m0.a(this.n, (this.m.hashCode() + x.i.e(x.i.e(x.i.e(x.i.e(x.i.e(h1.i(h1.i(h1.i(h1.i(f4.b(this.c, h1.i(this.a.hashCode() * 31, this.b, 31), 31), this.d, 31), this.e, 31), this.f, 31), this.g, 31), 31, this.h), 31, this.i), 31, this.j), 31, this.k), 31, this.l)) * 31, 31), 31), 31, this.p);
+        int e = x.i.e(m0.a(this.o, m0.a(this.n, (this.m.hashCode() + x.i.e(x.i.e(x.i.e(x.i.e(x.i.e(h1.i(h1.i(h1.i(h1.i(f4Shadow.b(this.c, h1.i(this.a.hashCode() * 31, this.b, 31), 31), this.d, 31), this.e, 31), this.f, 31), this.g, 31), 31, this.h), 31, this.i), 31, this.j), 31, this.k), 31, this.l)) * 31, 31), 31), 31, this.p);
         ZonedDateTime zonedDateTime = this.q;
         int b = s0.b(this.r, (e + (zonedDateTime == null ? 0 : zonedDateTime.hashCode())) * 31, 31);
         c cVar = this.s;

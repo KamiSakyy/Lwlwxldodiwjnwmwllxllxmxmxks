@@ -7,8 +7,8 @@ public abstract class m6 {
     public static final l6 Companion = new l6();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("ConnectedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("ConnectedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

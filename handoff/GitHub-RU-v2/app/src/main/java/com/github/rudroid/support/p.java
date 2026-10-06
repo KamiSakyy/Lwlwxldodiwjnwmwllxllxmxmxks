@@ -1,6 +1,6 @@
 package com.github.rudroid.support;
 
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.support.SupportViewModel$2", f = "SupportViewModel.kt", l = {102}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -28,7 +28,7 @@ final class p extends c71.j implements j71.e {
         if (i == 0) {
             sy.y.j(obj);
             s sVar = this.w;
-            y71.i o = n1.o(sVar.w, 300L);
+            y71.i o = n1Shadow.o(sVar.w, 300L);
             o oVar = new o(sVar);
             this.v = 1;
             if (o.b(oVar, this) == aVar) {

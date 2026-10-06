@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 import k5.f;
-import v41.t;
+import v41.tShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class b implements ThreadFactory {
@@ -29,7 +29,7 @@ public final class b implements ThreadFactory {
                 thread.setName("arch_disk_io_" + ((AtomicInteger) this.f31058b).getAndIncrement());
                 return thread;
             default:
-                Thread newThread = Executors.defaultThreadFactory().newThread(new t(runnable));
+                Thread newThread = Executors.defaultThreadFactory().newThread(new tShadow(runnable));
                 newThread.setName("awaitEvenIfOnMainThread task continuation executor" + ((AtomicLong) this.f31058b).getAndIncrement());
                 return newThread;
         }

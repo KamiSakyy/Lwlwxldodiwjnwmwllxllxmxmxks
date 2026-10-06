@@ -13,7 +13,7 @@ import u10.bn;
 import u10.dn;
 import u10.gn;
 import u10.xm;
-import x61.r;
+import x61.rShadow;
 import yz0.b1;
 import yz0.k3;
 import yz0.y2;
@@ -28,7 +28,7 @@ public final class h {
         k71.k.g(commentLevelType, "commentType");
         ArrayList arrayList3 = new ArrayList();
         ArrayList arrayList4 = new ArrayList();
-        Collection collection = r.r;
+        Collection collection = rShadow.r;
         Collection collection2 = arrayList2 == null ? collection : arrayList2;
         ArrayList arrayList5 = new ArrayList(x61.n.F(collection2, 10));
         Iterator it = collection2.iterator();

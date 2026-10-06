@@ -54,7 +54,7 @@ public final class u2 extends androidx.lifecycle.a {
         String string2 = application.getResources().getString(2131952674);
         k71.k.f(string2, "getString(...)");
         this.E = string2;
-        this.F = y71.n1.c(com.github.rudroid.auth.g.a);
+        this.F = y71.n1Shadow.c(com.github.rudroid.auth.g.a);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x00eb  */
@@ -215,7 +215,7 @@ public final class u2 extends androidx.lifecycle.a {
         y71.y1 y1Var = this.F;
         k71.k.g(y1Var, "<this>");
         y1Var.k((Object) null, com.github.rudroid.auth.h.a);
-        v71.b0.z(androidx.lifecycle.d1.k(this), this.C, (v71.a0) null, new e3(this, str, str2, str3, str4, null), 2);
+        v71.b0.z(androidx.lifecycle.d1.k(this), this.C, (v71.a0Shadow) null, new e3(this, str, str2, str3, str4, null), 2);
     }
 
     public final oa.j T() {
@@ -245,7 +245,7 @@ public final class u2 extends androidx.lifecycle.a {
         y71.y1 y1Var = this.F;
         k71.k.g(y1Var, "<this>");
         y1Var.k((Object) null, com.github.rudroid.auth.h.a);
-        v71.b0.z(androidx.lifecycle.d1.k(this), this.C, (v71.a0) null, new v2(this, str, null), 2);
+        v71.b0.z(androidx.lifecycle.d1.k(this), this.C, (v71.a0Shadow) null, new v2(this, str, null), 2);
         return true;
     }
 }

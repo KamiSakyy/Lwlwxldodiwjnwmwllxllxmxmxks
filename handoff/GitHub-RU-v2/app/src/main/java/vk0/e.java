@@ -4,14 +4,14 @@ import aa.w;
 import ea.f;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import uk0.g;
 import uk0.h;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements aa.a {
     public static final e a = new e();
-    public static final List b = d0.o(new String[]{"id", "starredRepositories", "__typename"});
+    public static final List b = d0Shadow.o(new String[]{"id", "starredRepositories", "__typename"});
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

@@ -8,7 +8,7 @@ public abstract class c0 implements Closeable {
     public static final b0 r;
 
     static {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         k71.k.g(kVar, "<this>");
         h91.h hVar = new h91.h();
         hVar.E0(kVar);

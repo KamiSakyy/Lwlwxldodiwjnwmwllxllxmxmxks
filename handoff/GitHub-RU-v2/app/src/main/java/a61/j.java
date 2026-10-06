@@ -1,7 +1,7 @@
 package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public enum j implements k51.f {
+public enum jShadow implements k51.f {
     /* JADX INFO: Fake field, exist only in values array */
     EF0(0),
     s(1),

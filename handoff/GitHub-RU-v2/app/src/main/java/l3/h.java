@@ -13,7 +13,7 @@ public final class h implements g {
     }
 
     public final int hashCode() {
-        return k71.x.a(h.class).hashCode();
+        return k71.xShadow.a(h.class).hashCode();
     }
 
     public final String toString() {

@@ -1,7 +1,7 @@
 package com.github.rudroid.widget.agenttasks;
 
 import android.content.Context;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
@@ -57,7 +57,7 @@ public final class e {
                     y71.i data = this.a.getData();
                     gVar.u = Q;
                     gVar.x = 1;
-                    obj = n1.v(data, gVar);
+                    obj = n1Shadow.v(data, gVar);
                     if (obj == aVar) {
                         return aVar;
                     }
@@ -111,7 +111,7 @@ public final class e {
                     y71.i data = this.a.getData();
                     hVar.u = Q;
                     hVar.x = 1;
-                    obj = n1.v(data, hVar);
+                    obj = n1Shadow.v(data, hVar);
                     if (obj == aVar) {
                         return aVar;
                     }

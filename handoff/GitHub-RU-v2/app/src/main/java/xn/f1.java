@@ -3,7 +3,7 @@ package xn;
 import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class f1 {
+public final class f1Shadow {
     public LocalDate a;
     public Boolean b;
     public Double c;
@@ -18,7 +18,7 @@ public final class f1 {
         this.e = d2;
     }
 
-    public static f1 a(f1 f1Var, Boolean bool, Double d, boolean z, double d2, int i) {
+    public static f1 a(f1Shadow f1Var, Boolean bool, Double d, boolean z, double d2, int i) {
         Boolean bool2 = bool;
         LocalDate localDate = f1Var.a;
         if ((i & 2) != 0) {
@@ -36,17 +36,17 @@ public final class f1 {
         double d3 = d2;
         f1Var.getClass();
         boolean z2 = z;
-        return new f1(localDate, bool2, d, z2, d3);
+        return new f1Shadow(localDate, bool2, d, z2, d3);
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof f1)) {
+        if (!(obj instanceof f1Shadow)) {
             return false;
         }
-        f1 f1Var = (f1) obj;
+        f1Shadow f1Var = (f1Shadow) obj;
         return k71.k.b(this.a, f1Var.a) && k71.k.b(this.b, f1Var.b) && k71.k.b(this.c, f1Var.c) && this.d == f1Var.d && Double.compare(this.e, f1Var.e) == 0;
     }
 

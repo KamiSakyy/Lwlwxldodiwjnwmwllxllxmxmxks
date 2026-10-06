@@ -28,7 +28,7 @@ import com.github.service.models.response.type.MobileSubjectType;
 import e6.w;
 import java.util.ArrayList;
 import k5.f;
-import k81.c1;
+import k81.c1Shadow;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -41,19 +41,19 @@ public final /* synthetic */ class b implements j71.a {
         switch (this.f4167r) {
             case f.J:
                 AgentPullRequestsEntryPointRoute.Companion companion = AgentPullRequestsEntryPointRoute.Companion;
-                return c1.f("com.github.service.models.response.type.MobileSubjectType", MobileSubjectType.values());
+                return c1Shadow.f("com.github.service.models.response.type.MobileSubjectType", MobileSubjectType.values());
             case 1:
                 AgentPullRequestsEntryPointRoute.Companion companion2 = AgentPullRequestsEntryPointRoute.Companion;
-                return c1.f("com.github.service.models.response.type.MobileEventContext", MobileEventContext.values());
+                return c1Shadow.f("com.github.service.models.response.type.MobileEventContext", MobileEventContext.values());
             case 2:
                 AgentPullRequestsNavRoute.Companion companion3 = AgentPullRequestsNavRoute.Companion;
-                return c1.f("com.github.service.models.response.type.MobileSubjectType", MobileSubjectType.values());
+                return c1Shadow.f("com.github.service.models.response.type.MobileSubjectType", MobileSubjectType.values());
             case 3:
                 AgentPullRequestsNavRoute.Companion companion4 = AgentPullRequestsNavRoute.Companion;
-                return c1.f("com.github.service.models.response.type.MobileEventContext", MobileEventContext.values());
+                return c1Shadow.f("com.github.service.models.response.type.MobileEventContext", MobileEventContext.values());
             case 4:
                 AgentTasksNavRoute.Companion companion5 = AgentTasksNavRoute.Companion;
-                return c1.f("com.github.service.models.response.type.MobileEventContext", MobileEventContext.values());
+                return c1Shadow.f("com.github.service.models.response.type.MobileEventContext", MobileEventContext.values());
             case 5:
                 TriageAssigneesFragmentHostBottomSheetDialog.a aVar = TriageAssigneesFragmentHostBottomSheetDialog.Companion;
                 return null;

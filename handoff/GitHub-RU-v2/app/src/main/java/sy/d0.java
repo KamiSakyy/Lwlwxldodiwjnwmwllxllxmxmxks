@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import jo.f4;
+import jo.f4Shadow;
 import kotlin.NoWhenBranchMatchedException;
 import m10.ka;
 import qx.z0;
@@ -26,7 +26,7 @@ import yz0.p0;
 import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class d0 {
+public abstract class d0Shadow {
     public static final MilestoneState A(og ogVar) {
         int ordinal = ogVar.ordinal();
         if (ordinal == 0) {
@@ -125,8 +125,8 @@ public abstract class d0 {
         return new b01.g(bVar, h, z9, num, z, z2, z3, z4, str2, z5, x2Var, list, new b8(i1Var.d, str3, z8, i1Var.c), z6, z7);
     }
 
-    public static final b01.g d(ar.c cVar, String str, pv.c cVar2, ju.a aVar, ms.o oVar, boolean z, boolean z2, boolean z3, boolean z4, String str2, boolean z5, i1 i1Var, boolean z6, boolean z7, boolean z8) {
-        ms.t tVar;
+    public static final b01.g d(ar.c cVar, String str, pv.c cVar2, ju.a aVar, ms.oShadow oVar, boolean z, boolean z2, boolean z3, boolean z4, String str2, boolean z5, i1 i1Var, boolean z6, boolean z7, boolean z8) {
+        ms.tShadow tVar;
         ms.n nVar = oVar.b;
         fz.b bVar = new fz.b(cVar, str, p0.s);
         String str3 = cVar.b;
@@ -134,9 +134,9 @@ public abstract class d0 {
         boolean z9 = cVar2.c;
         Integer valueOf = Integer.valueOf(nVar.a);
         x2 f = k41.b.f(aVar);
-        x61.r rVar = nVar.b;
+        x61.rShadow rVar = nVar.b;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(rVar);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -230,7 +230,7 @@ public abstract class d0 {
     }
 
     public static List o(Object... objArr) {
-        return objArr.length > 0 ? x61.l.r(objArr) : x61.r.r;
+        return objArr.length > 0 ? x61.l.r(objArr) : x61.rShadow.r;
     }
 
     public static final void p(Context context) {
@@ -285,7 +285,7 @@ public abstract class d0 {
 
     public static final List t(List list) {
         int size = list.size();
-        return size != 0 ? size != 1 ? list : n(list.get(0)) : x61.r.r;
+        return size != 0 ? size != 1 ? list : n(list.get(0)) : x61.rShadow.r;
     }
 
     public static final boolean u(String str) {
@@ -344,7 +344,7 @@ public abstract class d0 {
 
     public abstract void r(Throwable th2);
 
-    public abstract void s(w51.r rVar);
+    public abstract void s(w51.rShadow rVar);
     public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12, Object p13, Object p14) { return null; }
     public static final Object c = null;
 }

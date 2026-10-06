@@ -139,7 +139,7 @@ public final class d0 implements i {
     }
 
     @Override // h91.i
-    public final i p(k kVar) {
+    public final i p(kShadow kVar) {
         k71.k.g(kVar, "byteString");
         if (this.t) {
             throw new IllegalStateException("closed");

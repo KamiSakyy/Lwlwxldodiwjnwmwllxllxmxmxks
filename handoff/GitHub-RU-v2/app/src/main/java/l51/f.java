@@ -11,13 +11,13 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements i51.d {
     public static final Charset f = Charset.forName("UTF-8");
-    public static final i51.b g = new i51.b("key", f4.x(f4.w(e.class, new a(1))));
-    public static final i51.b h = new i51.b("value", f4.x(f4.w(e.class, new a(2))));
+    public static final i51.b g = new i51.b("key", f4Shadow.x(f4Shadow.w(e.class, new a(1))));
+    public static final i51.b h = new i51.b("value", f4Shadow.x(f4Shadow.w(e.class, new a(2))));
     public static final k51.a i = new k51.a(1);
     public OutputStream a;
     public HashMap b;

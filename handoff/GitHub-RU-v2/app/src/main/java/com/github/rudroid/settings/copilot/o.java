@@ -10,7 +10,7 @@ import v71.q1;
 import xn.e1;
 import xn.g4;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -53,26 +53,26 @@ public final class o extends k1 {
         this.x = r0Var;
         this.y = cVar;
         this.z = aVar;
-        y71.i c = n1.c(new com.github.rudroid.copilot.preferences.f((String) null, true));
+        y71.i c = n1Shadow.c(new com.github.rudroid.copilot.preferences.f((String) null, true));
         this.A = c;
-        y71.i c2 = n1.c(new g4(255, false, false));
+        y71.i c2 = n1Shadow.c(new g4(255, false, false));
         this.B = c2;
-        y71.i c3 = n1.c(new eg.a());
+        y71.i c3 = n1Shadow.c(new eg.a());
         this.C = c3;
         g1.a aVar2 = g1.Companion;
         Boolean bool = Boolean.FALSE;
         aVar2.getClass();
-        y71.i c4 = n1.c(new t1(bool));
+        y71.i c4 = n1Shadow.c(new t1(bool));
         this.D = c4;
-        y71.i c5 = n1.c(x61.r.r);
+        y71.i c5 = n1Shadow.c(x61.rShadow.r);
         this.E = c5;
         y71.d1 d1Var2 = new y71.d1(new y71.i[]{c, c2, c3, c4, c5}, new p(this, null));
         v6.a k = androidx.lifecycle.d1.k(this);
         g1.a aVar3 = g1.Companion;
         Boolean bool2 = Boolean.FALSE;
         aVar3.getClass();
-        this.F = n1.G(d1Var2, k, y71.q1.a, new eg.c(new t1(bool2), (2 & 1023) != 0 ? e1.s : null, x61.r.r, (1023 & 8) == 0, false, (1023 & 32) == 0, (1023 & 64) != 0 ? "" : "octocat", null, new eg.a(), false));
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new x(this, null), 3);
+        this.F = n1Shadow.G(d1Var2, k, y71.q1.a, new eg.c(new t1(bool2), (2 & 1023) != 0 ? e1.s : null, x61.rShadow.r, (1023 & 8) == 0, false, (1023 & 32) == 0, (1023 & 64) != 0 ? "" : "octocat", null, new eg.a(), false));
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new x(this, null), 3);
     }
 
     public final void P(oa.j jVar) {
@@ -82,7 +82,7 @@ public final class o extends k1 {
             q1Var.m((CancellationException) null);
         }
         if (jVar.f(com.github.rudroid.common.a.L)) {
-            this.H = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new a0(this, jVar, null), 3);
+            this.H = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new a0(this, jVar, null), 3);
         }
     }
 

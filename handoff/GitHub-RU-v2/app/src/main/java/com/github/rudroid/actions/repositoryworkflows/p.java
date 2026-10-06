@@ -15,7 +15,7 @@ final class p<T> implements y71.j {
     }
 
     public final Object c(Object obj, a71.c cVar) {
-        mn.x xVar = (mn.x) obj;
+        mn.xShadow xVar = (mn.xShadow) obj;
         y1 y1Var = this.f5165r.f5180y;
         if (xVar.a.isEmpty()) {
             w0.k(y1Var);

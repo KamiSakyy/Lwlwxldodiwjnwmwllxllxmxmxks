@@ -110,16 +110,16 @@ public final class g {
                 } else {
                     sVar2.q0();
                 }
-                v2.e eVar = v2.g.f;
+                v2.eShadow eVar = v2.g.f;
                 t.I(sVar2, eVar, a);
-                v2.e eVar2 = v2.g.e;
+                v2.eShadow eVar2 = v2.g.e;
                 t.I(sVar2, eVar2, l);
                 Integer valueOf = Integer.valueOf(hashCode);
-                v2.e eVar3 = v2.g.g;
+                v2.eShadow eVar3 = v2.g.g;
                 t.w(sVar2, valueOf, eVar3);
                 v2.d dVar = v2.g.h;
                 t.E(sVar2, dVar);
-                v2.e eVar4 = v2.g.d;
+                v2.eShadow eVar4 = v2.g.d;
                 t.I(sVar2, eVar4, c);
                 int i11 = i9 >> 6;
                 r rVar5 = rVar3;

@@ -44,11 +44,11 @@ final class e extends c71.j implements j71.e {
             AppLockSettingsActivity appLockSettingsActivity = this.x;
             if (z) {
                 AppLockSettingsActivity.a aVar2 = AppLockSettingsActivity.Companion;
-                b0.z(d1.i(appLockSettingsActivity), (a71.h) null, (v71.a0) null, new f(appLockSettingsActivity, null), 3);
+                b0.z(d1.i(appLockSettingsActivity), (a71.h) null, (v71.a0Shadow) null, new f(appLockSettingsActivity, null), 3);
             }
             AppLockSettingsActivity.a aVar3 = AppLockSettingsActivity.Companion;
             o oVar = (o) appLockSettingsActivity.u0.getValue();
-            b0.z(d1.k(oVar), (a71.h) null, (v71.a0) null, new m(oVar, null), 3);
+            b0.z(d1.k(oVar), (a71.h) null, (v71.a0Shadow) null, new m(oVar, null), 3);
         } else if (!(fVar instanceof f.a)) {
             throw new NoWhenBranchMatchedException();
         }

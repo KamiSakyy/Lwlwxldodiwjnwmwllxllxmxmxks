@@ -31,7 +31,7 @@ public abstract class rn {
     public static final aa.q0 z;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         z = new aa.q0("Query", rVar, rVar);
     }
 }

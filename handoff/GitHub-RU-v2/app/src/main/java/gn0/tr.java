@@ -22,7 +22,7 @@ public final class tr {
         v = trVarArr;
         v8.l0.t(trVarArr);
         Companion = new sr();
-        sy.d0.o(new String[]{"INTERNAL", "PRIVATE", "PUBLIC"});
+        sy.d0Shadow.o(new String[]{"INTERNAL", "PRIVATE", "PUBLIC"});
     }
 
     public tr(String str, int i, String str2) {

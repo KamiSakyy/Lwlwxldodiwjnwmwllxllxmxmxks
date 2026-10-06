@@ -7,8 +7,8 @@ public abstract class sv {
     public static final rv Companion = new rv();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("ReferencedEvent", n, sy.d0.n(wk.a));
+        new aa.q0("ReferencedEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

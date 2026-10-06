@@ -19,7 +19,7 @@ import v71.b0;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public class h implements l {
+public class hShadow implements l {
     private volatile /* synthetic */ Object _closeCause$volatile;
     private volatile /* synthetic */ long bufferEnd$volatile;
     private volatile /* synthetic */ Object bufferEndSegment$volatile;
@@ -30,29 +30,29 @@ public class h implements l {
     private volatile /* synthetic */ long receivers$volatile;
     private volatile /* synthetic */ Object sendSegment$volatile;
     private volatile /* synthetic */ long sendersAndCloseStatus$volatile;
-    public static final /* synthetic */ AtomicLongFieldUpdater s = AtomicLongFieldUpdater.newUpdater(h.class, "sendersAndCloseStatus$volatile");
-    public static final /* synthetic */ AtomicLongFieldUpdater t = AtomicLongFieldUpdater.newUpdater(h.class, "receivers$volatile");
-    public static final /* synthetic */ AtomicLongFieldUpdater u = AtomicLongFieldUpdater.newUpdater(h.class, "bufferEnd$volatile");
-    public static final /* synthetic */ AtomicLongFieldUpdater v = AtomicLongFieldUpdater.newUpdater(h.class, "completedExpandBuffersAndPauseFlag$volatile");
-    public static final /* synthetic */ AtomicReferenceFieldUpdater w = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "sendSegment$volatile");
-    public static final /* synthetic */ AtomicReferenceFieldUpdater x = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "receiveSegment$volatile");
-    public static final /* synthetic */ AtomicReferenceFieldUpdater y = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "bufferEndSegment$volatile");
-    public static final /* synthetic */ AtomicReferenceFieldUpdater z = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "_closeCause$volatile");
-    public static final /* synthetic */ AtomicReferenceFieldUpdater A = AtomicReferenceFieldUpdater.newUpdater(h.class, Object.class, "closeHandler$volatile");
+    public static final /* synthetic */ AtomicLongFieldUpdater s = AtomicLongFieldUpdater.newUpdater(hShadow.class, "sendersAndCloseStatus$volatile");
+    public static final /* synthetic */ AtomicLongFieldUpdater t = AtomicLongFieldUpdater.newUpdater(hShadow.class, "receivers$volatile");
+    public static final /* synthetic */ AtomicLongFieldUpdater u = AtomicLongFieldUpdater.newUpdater(hShadow.class, "bufferEnd$volatile");
+    public static final /* synthetic */ AtomicLongFieldUpdater v = AtomicLongFieldUpdater.newUpdater(hShadow.class, "completedExpandBuffersAndPauseFlag$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater w = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "sendSegment$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater x = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "receiveSegment$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater y = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "bufferEndSegment$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater z = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "_closeCause$volatile");
+    public static final /* synthetic */ AtomicReferenceFieldUpdater A = AtomicReferenceFieldUpdater.newUpdater(hShadow.class, Object.class, "closeHandler$volatile");
 
     public h(int i) {
         this.r = i;
         if (i < 0) {
             throw new IllegalArgumentException(s0.i("Invalid channel capacity: ", i, ", should be >=0").toString());
         }
-        p pVar = j.a;
+        p pVar = jShadow.a;
         this.bufferEnd$volatile = i != 0 ? i != Integer.MAX_VALUE ? i : Long.MAX_VALUE : 0L;
         this.completedExpandBuffersAndPauseFlag$volatile = u.get(this);
         p pVar2 = new p(0L, null, this, 3);
         this.sendSegment$volatile = pVar2;
         this.receiveSegment$volatile = pVar2;
         if (B()) {
-            pVar2 = j.a;
+            pVar2 = jShadow.a;
             k71.k.e(pVar2, "null cannot be cast to non-null type kotlinx.coroutines.channels.ChannelSegment<E of kotlinx.coroutines.channels.BufferedChannel>");
         }
         this.bufferEndSegment$volatile = pVar2;
@@ -64,7 +64,7 @@ public class h implements l {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static Object E(h hVar, c71.c cVar) {
+    public static Object E(hShadow hVar, c71.c cVar) {
         f fVar;
         int i;
         p pVar;
@@ -88,7 +88,7 @@ public class h implements l {
                 p pVar2 = (p) x.get(hVar);
                 while (!hVar.y()) {
                     long andIncrement = t.getAndIncrement(hVar);
-                    long j = j.b;
+                    long j = jShadow.b;
                     long j2 = andIncrement / j;
                     int i3 = (int) (andIncrement % j);
                     if (pVar2.t != j2) {
@@ -101,7 +101,7 @@ public class h implements l {
                     } else {
                         pVar = pVar2;
                     }
-                    h hVar2 = hVar;
+                    hShadow hVar2 = hVar;
                     Object J = hVar2.J(pVar, i3, andIncrement, null);
                     if (J == j.m) {
                         throw new IllegalStateException("unexpected");
@@ -133,15 +133,15 @@ public class h implements l {
         }
     }
 
-    public static final p f(h hVar, long j, p pVar) {
+    public static final p f(hShadow hVar, long j, p pVar) {
         Object b;
-        h hVar2;
-        p pVar2 = j.a;
+        hShadow hVar2;
+        p pVar2 = jShadow.a;
         i iVar = i.z;
         loop0: while (true) {
-            b = a81.b.b(pVar, j, iVar);
-            if (!a81.b.e(b)) {
-                a81.r c = a81.b.c(b);
+            b = a81.bShadow.b(pVar, j, iVar);
+            if (!a81.bShadow.e(b)) {
+                a81.r c = a81.bShadow.c(b);
                 while (true) {
                     AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = w;
                     a81.r rVar = (a81.r) atomicReferenceFieldUpdater.get(hVar);
@@ -166,7 +166,7 @@ public class h implements l {
                 break;
             }
         }
-        boolean e = a81.b.e(b);
+        boolean e = a81.bShadow.e(b);
         AtomicLongFieldUpdater atomicLongFieldUpdater = t;
         if (e) {
             hVar.z();
@@ -175,7 +175,7 @@ public class h implements l {
                 return null;
             }
         } else {
-            p pVar3 = (p) a81.b.c(b);
+            p pVar3 = (p) a81.bShadow.c(b);
             long j2 = pVar3.t;
             if (j2 <= j) {
                 return pVar3;
@@ -201,18 +201,18 @@ public class h implements l {
         return null;
     }
 
-    public static final void g(h hVar, Object obj, v71.l lVar) {
+    public static final void g(hShadow hVar, Object obj, v71.l lVar) {
         lVar.i(y.d(hVar.u()));
     }
 
-    public static final int h(h hVar, p pVar, int i, Object obj, long j, Object obj2, boolean z2) {
+    public static final int h(hShadow hVar, p pVar, int i, Object obj, long j, Object obj2, boolean z2) {
         pVar.n(i, obj);
         if (z2) {
             return hVar.K(pVar, i, obj, j, obj2, z2);
         }
         Object l = pVar.l(i);
         if (l == null) {
-            if (hVar.i(j)) {
+            if (hVar.i(jShadow)) {
                 if (pVar.k(i, null, j.d)) {
                     return 1;
                 }
@@ -240,7 +240,7 @@ public class h implements l {
         return hVar.K(pVar, i, obj, j, obj2, z2);
     }
 
-    public static void w(h hVar) {
+    public static void w(hShadow hVar) {
         AtomicLongFieldUpdater atomicLongFieldUpdater = v;
         if ((atomicLongFieldUpdater.addAndGet(hVar, 1L) & 4611686018427387904L) != 0) {
             while ((atomicLongFieldUpdater.get(hVar) & 4611686018427387904L) != 0) {
@@ -344,7 +344,7 @@ public class h implements l {
                                     break;
                                 }
                                 long andIncrement = t.getAndIncrement(this);
-                                long j2 = j.b;
+                                long j2 = jShadow.b;
                                 long j3 = andIncrement / j2;
                                 int i4 = (int) (andIncrement % j2);
                                 if (pVar3.t != j3) {
@@ -568,7 +568,7 @@ public class h implements l {
         while (true) {
             Object l = pVar.l(i);
             if (l == null) {
-                if (!i(j) || z2) {
+                if (!i(jShadow) || z2) {
                     if (z2) {
                         if (pVar.k(i, null, j.j)) {
                             pVar.i();
@@ -624,7 +624,7 @@ public class h implements l {
 
     public final void L(long j) {
         AtomicLongFieldUpdater atomicLongFieldUpdater;
-        h hVar = this;
+        hShadow hVar = this;
         if (hVar.B()) {
             return;
         }
@@ -684,7 +684,7 @@ public class h implements l {
     }
 
     @Override // x71.v
-    public final Object a(c71.j jVar) {
+    public final Object a(c71.jShadow jVar) {
         return E(this, jVar);
     }
 
@@ -713,7 +713,7 @@ public class h implements l {
         p pVar2 = (p) x.get(this);
         while (!y()) {
             long andIncrement = atomicLongFieldUpdater.getAndIncrement(this);
-            long j4 = j.b;
+            long j4 = jShadow.b;
             long j5 = andIncrement / j4;
             int i = (int) (andIncrement % j4);
             if (pVar2.t != j5) {
@@ -811,7 +811,7 @@ public class h implements l {
             long andIncrement = atomicLongFieldUpdater.getAndIncrement(this);
             long j2 = andIncrement & j;
             boolean x2 = x(z2, andIncrement);
-            int i = j.b;
+            int i = jShadow.b;
             long j3 = i;
             long j4 = j2 / j3;
             int i2 = (int) (j2 % j3);
@@ -875,7 +875,7 @@ public class h implements l {
         while (!y()) {
             AtomicLongFieldUpdater atomicLongFieldUpdater = t;
             long andIncrement = atomicLongFieldUpdater.getAndIncrement(this);
-            long j = j.b;
+            long j = jShadow.b;
             long j2 = andIncrement / j;
             int i = (int) (andIncrement % j);
             if (pVar3.t != j2) {
@@ -905,7 +905,7 @@ public class h implements l {
                     return J;
                 }
                 v71.l s2 = b0.s(b4.T(cVar));
-                h hVar = this;
+                hShadow hVar = this;
                 try {
                     Object J2 = hVar.J(pVar, i, andIncrement, s2);
                     if (J2 == tVar) {
@@ -924,7 +924,7 @@ public class h implements l {
                                 v71.l lVar = s2;
                                 try {
                                     long andIncrement2 = atomicLongFieldUpdater.getAndIncrement(this);
-                                    long j3 = j.b;
+                                    long j3 = jShadow.b;
                                     long j4 = andIncrement2 / j3;
                                     int i2 = (int) (andIncrement2 % j3);
                                     if (pVar4.t != j4) {
@@ -1007,12 +1007,12 @@ public class h implements l {
         Object s2;
         b71.a aVar;
         Object obj2;
-        h hVar;
+        hShadow hVar;
         p pVar;
         int i;
         int i2;
         boolean z2;
-        h hVar2 = this;
+        hShadow hVar2 = this;
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = w;
         p pVar2 = (p) atomicReferenceFieldUpdater.get(hVar2);
         while (true) {
@@ -1020,7 +1020,7 @@ public class h implements l {
             long andIncrement = atomicLongFieldUpdater.getAndIncrement(hVar2);
             long j = andIncrement & 1152921504606846975L;
             boolean x2 = hVar2.x(false, andIncrement);
-            int i3 = j.b;
+            int i3 = jShadow.b;
             long j2 = i3;
             long j3 = j / j2;
             int i4 = (int) (j % j2);
@@ -1068,7 +1068,7 @@ public class h implements l {
                                             long andIncrement2 = atomicLongFieldUpdater.getAndIncrement(hVar2);
                                             long j5 = andIncrement2 & 1152921504606846975L;
                                             boolean x3 = hVar2.x(false, andIncrement2);
-                                            int i5 = j.b;
+                                            int i5 = jShadow.b;
                                             AtomicLongFieldUpdater atomicLongFieldUpdater3 = atomicLongFieldUpdater;
                                             long j6 = i5;
                                             String str2 = str;
@@ -1207,7 +1207,7 @@ public class h implements l {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean n(Throwable th, boolean z2) {
-        h hVar;
+        hShadow hVar;
         a81.t tVar;
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
         boolean z3;
@@ -1222,7 +1222,7 @@ public class h implements l {
             do {
                 j5 = atomicLongFieldUpdater.get(this);
                 if (((int) (j5 >> 60)) == 0) {
-                    p pVar = j.a;
+                    p pVar = jShadow.a;
                     hVar = this;
                 }
             } while (!atomicLongFieldUpdater.compareAndSet(hVar, j5, (j5 & 1152921504606846975L) + (1 << 60)));
@@ -1317,7 +1317,7 @@ public class h implements l {
             cVar.getClass();
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = a81.c.r;
             Object obj3 = atomicReferenceFieldUpdater.get(cVar);
-            a81.t tVar = a81.b.a;
+            a81.t tVar = a81.bShadow.a;
             obj = null;
             if (obj3 == tVar) {
                 break;
@@ -1342,7 +1342,7 @@ public class h implements l {
                     if (-1 >= i) {
                         break;
                     }
-                    j2 = (pVar4.t * j.b) + i;
+                    j2 = (pVar4.t * jShadow.b) + i;
                     if (j2 < t.get(this)) {
                         break loop2;
                     }
@@ -1369,7 +1369,7 @@ public class h implements l {
         }
         loop5: for (p pVar5 = pVar3; pVar5 != null; pVar5 = (p) ((a81.c) a81.c.s.get(pVar5))) {
             for (int i2 = j.b - 1; -1 < i2; i2--) {
-                if ((pVar5.t * j.b) + i2 < j) {
+                if ((pVar5.t * jShadow.b) + i2 < j) {
                     break loop5;
                 }
                 while (true) {
@@ -1380,13 +1380,13 @@ public class h implements l {
                                 break;
                             }
                             if (pVar5.k(i2, l2, j.l)) {
-                                obj = a81.b.f(obj, l2);
+                                obj = a81.bShadow.f(obj, l2);
                                 pVar5.m(i2, true);
                                 break;
                             }
                         } else {
                             if (pVar5.k(i2, l2, j.l)) {
-                                obj = a81.b.f(obj, ((x) l2).a);
+                                obj = a81.bShadow.f(obj, ((x) l2).a);
                                 pVar5.m(i2, true);
                                 break;
                             }
@@ -1422,7 +1422,7 @@ public class h implements l {
                 return;
             }
             if (atomicLongFieldUpdater.compareAndSet(this, j2, 1 + j2)) {
-                long j3 = j.b;
+                long j3 = jShadow.b;
                 long j4 = j2 / j3;
                 int i = (int) (j2 % j3);
                 if (pVar.t != j4) {
@@ -1451,7 +1451,7 @@ public class h implements l {
         p pVar = (p) atomicReferenceFieldUpdater.get(this);
         loop0: while (true) {
             long andIncrement = u.getAndIncrement(this);
-            long j = andIncrement / j.b;
+            long j = andIncrement / jShadow.b;
             if (v() <= andIncrement) {
                 if (pVar.t < j && pVar.c() != null) {
                     C(j, pVar);
@@ -1462,9 +1462,9 @@ public class h implements l {
             if (pVar.t != j) {
                 i iVar = i.z;
                 while (true) {
-                    b = a81.b.b(pVar, j, iVar);
-                    if (!a81.b.e(b)) {
-                        a81.r c = a81.b.c(b);
+                    b = a81.bShadow.b(pVar, j, iVar);
+                    if (!a81.bShadow.e(b)) {
+                        a81.r c = a81.bShadow.c(b);
                         while (true) {
                             a81.r rVar = (a81.r) atomicReferenceFieldUpdater.get(this);
                             if (rVar.t >= c.t) {
@@ -1489,15 +1489,15 @@ public class h implements l {
                     }
                 }
                 p pVar2 = null;
-                if (a81.b.e(b)) {
+                if (a81.bShadow.e(b)) {
                     z();
                     C(j, pVar);
                     w(this);
                 } else {
-                    p pVar3 = (p) a81.b.c(b);
+                    p pVar3 = (p) a81.bShadow.c(b);
                     long j2 = pVar3.t;
                     if (j2 > j) {
-                        long j3 = j2 * j.b;
+                        long j3 = j2 * jShadow.b;
                         if (u.compareAndSet(this, 1 + andIncrement, j3)) {
                             AtomicLongFieldUpdater atomicLongFieldUpdater = v;
                             if ((atomicLongFieldUpdater.addAndGet(this, j3 - andIncrement) & 4611686018427387904L) != 0) {
@@ -1517,7 +1517,7 @@ public class h implements l {
                     pVar = pVar2;
                 }
             }
-            int i = (int) (andIncrement % j.b);
+            int i = (int) (andIncrement % jShadow.b);
             Object l = pVar.l(i);
             boolean z2 = l instanceof a2;
             AtomicLongFieldUpdater atomicLongFieldUpdater2 = t;
@@ -1568,12 +1568,12 @@ public class h implements l {
     public final p r(long j, p pVar) {
         Object b;
         long j2;
-        p pVar2 = j.a;
+        p pVar2 = jShadow.a;
         i iVar = i.z;
         loop0: while (true) {
-            b = a81.b.b(pVar, j, iVar);
-            if (!a81.b.e(b)) {
-                a81.r c = a81.b.c(b);
+            b = a81.bShadow.b(pVar, j, iVar);
+            if (!a81.bShadow.e(b)) {
+                a81.r c = a81.bShadow.c(b);
                 while (true) {
                     AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = x;
                     a81.r rVar = (a81.r) atomicReferenceFieldUpdater.get(this);
@@ -1598,16 +1598,16 @@ public class h implements l {
                 break;
             }
         }
-        if (a81.b.e(b)) {
+        if (a81.bShadow.e(b)) {
             z();
             if (pVar.t * j.b < v()) {
                 pVar.a();
                 return null;
             }
         } else {
-            p pVar3 = (p) a81.b.c(b);
+            p pVar3 = (p) a81.bShadow.c(b);
             long j3 = pVar3.t;
-            if (!B() && j <= u.get(this) / j.b) {
+            if (!B() && j <= u.get(this) / jShadow.b) {
                 while (true) {
                     AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = y;
                     a81.r rVar2 = (a81.r) atomicReferenceFieldUpdater2.get(this);
@@ -1629,7 +1629,7 @@ public class h implements l {
             if (j3 <= j) {
                 return pVar3;
             }
-            long j4 = j3 * j.b;
+            long j4 = j3 * jShadow.b;
             do {
                 j2 = t.get(this);
                 if (j2 >= j4) {
@@ -1682,7 +1682,7 @@ public class h implements l {
         List r = x61.l.r(new p[]{x.get(this), w.get(this), y.get(this)});
         ArrayList arrayList = new ArrayList();
         for (Object obj : r) {
-            if (((p) obj) != j.a) {
+            if (((p) obj) != jShadow.a) {
                 arrayList.add(obj);
             }
         }
@@ -1706,13 +1706,13 @@ public class h implements l {
         long j3 = t.get(this);
         long v2 = v();
         loop2: while (true) {
-            int i3 = j.b;
+            int i3 = jShadow.b;
             int i4 = i2;
             while (true) {
                 if (i4 >= i3) {
                     break;
                 }
-                long j4 = (pVar.t * j.b) + i4;
+                long j4 = (pVar.t * jShadow.b) + i4;
                 if (j4 >= v2 && j4 >= j3) {
                     break loop2;
                 }
@@ -1784,7 +1784,7 @@ public class h implements l {
                         if (v() <= j2) {
                             break;
                         }
-                        long j3 = j.b;
+                        long j3 = jShadow.b;
                         long j4 = j2 / j3;
                         if (pVar.t != j4 && (pVar = r(j4, pVar)) == null) {
                             if (((p) atomicReferenceFieldUpdater.get(this)).t < j4) {
@@ -1836,7 +1836,7 @@ public class h implements l {
                         if (-1 >= i3) {
                             break;
                         }
-                        long j5 = (o.t * j.b) + i3;
+                        long j5 = (o.t * jShadow.b) + i3;
                         while (true) {
                             Object l2 = o.l(i3);
                             if (l2 == j.i) {
@@ -1866,7 +1866,7 @@ public class h implements l {
                                     }
                                     a2 a2Var = l2 instanceof x ? ((x) l2).a : (a2) l2;
                                     if (o.k(i3, l2, j.l)) {
-                                        obj = a81.b.f(obj, a2Var);
+                                        obj = a81.bShadow.f(obj, a2Var);
                                         o.n(i3, null);
                                         o.i();
                                         break;

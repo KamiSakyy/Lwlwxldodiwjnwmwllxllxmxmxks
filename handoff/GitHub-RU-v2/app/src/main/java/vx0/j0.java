@@ -2,19 +2,19 @@ package vx0;
 
 import java.util.List;
 import ux0.d1;
-import ux0.f1;
+import ux0.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j0 implements aa.a {
     public static final j0 a = new j0();
-    public static final List b = sy.d0.n("updateProjectV2ItemFieldValue");
+    public static final List b = sy.d0Shadow.n("updateProjectV2ItemFieldValue");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        f1 f1Var = null;
+        f1Shadow f1Var = null;
         while (eVar.r0(b) == 0) {
-            f1Var = (f1) aa.c.b(aa.c.c(l0.a, false)).a(eVar, wVar);
+            f1Var = (f1Shadow) aa.c.b(aa.c.c(l0.a, false)).a(eVar, wVar);
         }
         return new d1(f1Var);
     }

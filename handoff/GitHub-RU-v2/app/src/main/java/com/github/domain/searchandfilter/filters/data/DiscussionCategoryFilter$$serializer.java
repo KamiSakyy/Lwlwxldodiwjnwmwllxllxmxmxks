@@ -5,7 +5,7 @@ import com.github.domain.searchandfilter.filters.data.DiscussionCategoryFilter;
 import com.google.android.gms.internal.measurement.d5;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import k81.q1;
@@ -14,7 +14,7 @@ import kotlinx.serialization.UnknownFieldException;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import x61.r;
+import x61.rShadow;
 
 @w61.c
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -87,13 +87,13 @@ public final /* synthetic */ class DiscussionCategoryFilter$$serializer implemen
         DiscussionCategoryFilter.Companion companion = DiscussionCategoryFilter.Companion;
         d.y(discussionCategoryFilter, b, serialDescriptor);
         w61.h[] hVarArr = DiscussionCategoryFilter.w;
-        if (b.X(serialDescriptor) || !k.b(list, r.r)) {
+        if (b.X(serialDescriptor) || !k.b(list, rShadow.r)) {
             b.I(serialDescriptor, 2, (KSerializer) hVarArr[2].getValue(), list);
         }
         b.L(serialDescriptor);
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

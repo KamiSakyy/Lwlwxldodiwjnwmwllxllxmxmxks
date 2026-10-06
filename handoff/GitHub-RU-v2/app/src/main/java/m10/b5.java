@@ -7,6 +7,6 @@ public abstract class b5 {
 
     static {
         ar.Companion.getClass();
-        a = new aa.q0("CodeSearchConnection", x61.r.r, sy.d0.n(ar.a));
+        a = new aa.q0("CodeSearchConnection", x61.rShadow.r, sy.d0Shadow.n(ar.a));
     }
 }

@@ -1,6 +1,6 @@
 package pi;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements e {
@@ -40,6 +40,6 @@ public final class a implements e {
         sb.append(", color=");
         sb.append(this.b);
         sb.append(", bright=");
-        return f4.s(sb, this.c, ")");
+        return f4Shadow.s(sb, this.c, ")");
     }
 }

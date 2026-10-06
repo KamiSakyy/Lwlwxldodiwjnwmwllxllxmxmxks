@@ -23,8 +23,8 @@ public abstract class sc implements aaShadow.a {
             }
         }
         eVar.s0();
-        ct.a0 a0Var = ct.a0.a;
-        ct.u c = ct.a0.c(eVar, wVar);
+        ct.a0Shadow a0Var = ct.a0Shadow.a;
+        ct.u c = ct.a0Shadow.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -45,7 +45,7 @@ public abstract class sc implements aaShadow.a {
         bVar.b(fVar, wVar, riVar.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, riVar.b);
-        ct.a0 a0Var = ct.a0.a;
-        ct.a0.d(fVar, wVar, riVar.c);
+        ct.a0Shadow a0Var = ct.a0Shadow.a;
+        ct.a0Shadow.d(fVar, wVar, riVar.c);
     }
 }

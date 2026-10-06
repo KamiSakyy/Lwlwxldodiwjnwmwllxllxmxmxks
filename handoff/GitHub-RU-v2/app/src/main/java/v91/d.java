@@ -6,7 +6,7 @@ import h0.q1;
 import k71.k;
 import org.intellij.markdown.MarkdownParsingException;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import t71.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
@@ -54,7 +54,7 @@ public final class d extends u91.b {
             boolean e = this.f.e(a0.i(a, str));
             q1 q1Var = this.e;
             if (e) {
-                q1Var.a(d0.n(new x91.e(new q71.g(i2 + 1, cVar.d(), 1), j91.a.k0)));
+                q1Var.a(d0Shadow.n(new x91.e(new q71.g(i2 + 1, cVar.d(), 1), j91.a.k0)));
                 u91.a aVar = u91.a.f;
                 k.g(aVar, "result");
                 this.c = d;
@@ -63,7 +63,7 @@ public final class d extends u91.b {
                 int min = Math.min(a0.l(dVar2, str) + i2 + 1, d);
                 q71.g gVar = new q71.g(min, d, 1);
                 if (min < ((q71.e) gVar).s) {
-                    q1Var.a(d0.n(new x91.e(gVar, j91.a.j0)));
+                    q1Var.a(d0Shadow.n(new x91.e(gVar, j91.a.j0)));
                 }
             }
             return u91.a.e;

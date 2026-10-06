@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import com.github.rudroid.commits.CommitsType;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import ob.c;
 import sy.w;
@@ -47,7 +47,7 @@ public final class CommitsEntryPointRoute implements Parcelable, c {
         if (1 == (i & 1)) {
             this.f9212r = commitsType;
         } else {
-            c1.l(i, 1, CommitsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, CommitsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

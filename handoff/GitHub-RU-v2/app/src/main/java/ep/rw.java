@@ -9,7 +9,7 @@ import jo.ya0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rw implements aaShadow.a {
     public static final rw a = new rw();
-    public static final List b = sy.d0.o("id", "answerChosenAt", "answer", "answerChosenBy", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "answerChosenAt", "answer", "answerChosenBy", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -25,7 +25,7 @@ public final class rw implements aaShadow.a {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
                 m10.sa.Companion.getClass();
-                zonedDateTime = (ZonedDateTime) no.a.h(wVar, m10.sa.a, eVar, wVar);
+                zonedDateTime = (ZonedDateTime) noShadow.a.h(wVar, m10.sa.a, eVar, wVar);
             } else if (r0 == 2) {
                 ua0Var = (ua0) aa.c.b(aa.c.c(ow.a, true)).a(eVar, wVar);
             } else if (r0 == 3) {

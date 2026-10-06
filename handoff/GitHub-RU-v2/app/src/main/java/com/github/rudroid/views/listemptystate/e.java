@@ -8,7 +8,7 @@ import com.github.rudroid.views.listemptystate.a;
 import ic.v7;
 import k71.k;
 import k71.m;
-import k71.x;
+import k71.xShadow;
 import kotlin.NoWhenBranchMatchedException;
 import l7.m0;
 import l7.n1;
@@ -53,7 +53,7 @@ public final class e extends m0 {
 
     static {
         r71.e mVar = new m(e.class, "emptyState", "getEmptyState()Lcom/github/rudroid/views/listemptystate/LoadingStateAdapter$UiState;", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         f = new r71.e[]{mVar};
         Companion = new a();
     }

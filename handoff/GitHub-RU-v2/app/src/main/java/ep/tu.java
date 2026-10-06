@@ -7,7 +7,7 @@ import jo.f80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tuShadow implements aaShadow.a {
     public static final tuShadow a = new tuShadow();
-    public static final List b = sy.d0.n("submitPullRequestReview");
+    public static final List b = sy.d0Shadow.n("submitPullRequestReview");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -20,12 +20,12 @@ import com.github.service.models.response.shortcuts.ShortcutIcon;
 import com.github.service.models.response.shortcuts.ShortcutScope;
 import com.github.service.models.response.shortcuts.ShortcutType;
 import com.google.android.gms.internal.measurement.i4;
-import d2.a0;
+import d2.a0Shadow;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
-import sy.d0;
+import sy.d0Shadow;
 import w1.o;
 import w1.r;
 import w2.j0;
@@ -112,7 +112,7 @@ public final class g {
         if (sVar2.S(i8 & 1, ((i8 & 306783379) == 306783378 && (i9 & 74899) == 74898) ? false : true)) {
             r rVar4 = o.a;
             r rVar5 = i6 != 0 ? rVar4 : rVar2;
-            r w = f0.o.w(f0.o.f(rVar5, ih.d.b(sVar2).b, a0.b), f0.o.v(sVar2), true);
+            r w = f0.o.w(f0.o.f(rVar5, ih.d.b(sVar2).b, a0Shadow.b), f0.o.v(sVar2), true);
             e0 a = c0.a(l.c, w1.c.D, sVar2, 0);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();
@@ -153,7 +153,7 @@ public final class g {
                     N = new com.github.rudroid.uitoolkit.markdown.components.c(16, aVar4);
                     sVar2.n0(N);
                 }
-                p.d(y, 0L, list2, true, 0, d0.n(new com.github.rudroid.searchandfilter.filterbar.e(p0, (j71.a) N)), sVar2, ((i9 >> 6) & 896) | 3072, 18);
+                p.d(y, 0L, list2, true, 0, d0Shadow.n(new com.github.rudroid.searchandfilter.filterbar.e(p0, (j71.a) N)), sVar2, ((i9 >> 6) & 896) | 3072, 18);
                 z2 = false;
             }
             sVar2.q(z2);
@@ -236,7 +236,7 @@ public final class g {
             boolean f = ((i2 & 896) == 256 ? z : false) | sVar.f(obj) | ((i2 & 112) == 32 ? z : false) | sVar.h(aVar);
             Object N = sVar.N();
             if (f || N == n.a) {
-                a0.a aVar3 = new a0.a(aVar2, obj, cVar, aVar, 15);
+                a0Shadow.a aVar3 = new a0Shadow.a(aVar2, obj, cVar, aVar, 15);
                 sVar.n0(aVar3);
                 N = aVar3;
             }

@@ -1,14 +1,14 @@
 package z81;
 
 import c30.d;
-import h91.k;
+import h91.kShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class b {
-    public static final k a;
+    public static final kShadow a;
 
     static {
-        k kVar = k.u;
+        kShadow kVar = kShadow.u;
         a = d.b("xn--");
     }
 

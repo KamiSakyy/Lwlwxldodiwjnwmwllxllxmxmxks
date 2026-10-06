@@ -32,7 +32,7 @@ import e31.c;
 import e31.d;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import jo.f4;
+import jo.f4Shadow;
 import q.o;
 import sy.w;
 import t5.e;
@@ -237,7 +237,7 @@ public class MaterialButton extends o implements Checkable, y {
         this.G = true;
         Iterator it = this.v.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
         this.G = false;
     }

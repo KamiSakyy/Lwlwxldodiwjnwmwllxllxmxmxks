@@ -68,9 +68,9 @@ public abstract class q {
     public static final b01.i c(e50.p pVar) {
         i50.f fVar;
         e50.m mVar = pVar.c;
-        x61.r rVar = mVar.b;
+        x61.rShadow rVar = mVar.b;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(rVar);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -129,7 +129,7 @@ public abstract class q {
             }
             arrayList = arrayList2;
         }
-        return arrayList == null ? x61.r.r : arrayList;
+        return arrayList == null ? x61.rShadow.r : arrayList;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -187,7 +187,7 @@ public abstract class q {
         List list;
         k71.k.g(bVar, "<this>");
         vz.e eVar = bVar.a;
-        return (eVar == null || (fVar = eVar.c) == null || (cVar = fVar.b) == null || (list = cVar.c) == null) ? x61.r.r : list;
+        return (eVar == null || (fVar = eVar.c) == null || (cVar = fVar.b) == null || (list = cVar.c) == null) ? x61.rShadow.r : list;
     }
 
     public static final ArrayList j(vz.d dVar) {
@@ -215,7 +215,7 @@ public abstract class q {
         if ((h0Var != null ? h0Var.a : null) != null) {
             return h0Var.a;
         }
-        xz.d0 d0Var = i0Var.e;
+        xz.d0Shadow d0Var = i0Var.e;
         if ((d0Var != null ? d0Var.a : null) != null) {
             return d0Var.a;
         }

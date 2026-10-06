@@ -7,7 +7,7 @@ import jo.uf0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yz implements aaShadow.a {
     public static final yz a = new yz();
-    public static final List b = sy.d0.n("updateMobilePushNotificationSchedules");
+    public static final List b = sy.d0Shadow.n("updateMobilePushNotificationSchedules");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

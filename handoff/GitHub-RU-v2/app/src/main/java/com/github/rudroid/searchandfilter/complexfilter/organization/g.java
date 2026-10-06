@@ -7,6 +7,6 @@ import java.util.Comparator;
 public final class g<T> implements Comparator {
     @Override // java.util.Comparator
     public final int compare(Object obj, Object obj2) {
-        return sy.t.g(((Organization) obj).t, ((Organization) obj2).t);
+        return sy.tShadow.g(((Organization) obj).t, ((Organization) obj2).t);
     }
 }

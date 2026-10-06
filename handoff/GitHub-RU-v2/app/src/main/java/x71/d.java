@@ -5,7 +5,7 @@ import v71.a2;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final /* synthetic */ class d extends k71.i implements j71.f {
-    public static final d z = new d(3, h.class, "registerSelectForReceive", "registerSelectForReceive(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
+    public static final d z = new d(3, hShadow.class, "registerSelectForReceive", "registerSelectForReceive(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);
 
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0075, code lost:
     
@@ -16,7 +16,7 @@ public final /* synthetic */ class d extends k71.i implements j71.f {
     */
     public final Object f(Object obj, Object obj2, Object obj3) {
         p pVar;
-        h hVar = (h) obj;
+        hShadow hVar = (hShadow) obj;
         d81.f fVar = (d81.f) obj2;
         AtomicLongFieldUpdater atomicLongFieldUpdater = h.s;
         hVar.getClass();
@@ -27,7 +27,7 @@ public final /* synthetic */ class d extends k71.i implements j71.f {
                 break;
             }
             long andIncrement = h.t.getAndIncrement(hVar);
-            long j = j.b;
+            long j = jShadow.b;
             long j2 = andIncrement / j;
             int i = (int) (andIncrement % j);
             if (pVar2.t != j2) {

@@ -14,7 +14,7 @@ public final class a4 extends ContentObserver {
     public final /* synthetic */ Object b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a4(b51.d dVar) {
+    public a4(b51.dShadow dVar) {
         super(null);
         Objects.requireNonNull(dVar);
         this.b = dVar;
@@ -34,7 +34,7 @@ public final class a4 extends ContentObserver {
     public void onChange(boolean z, Uri uri) {
         switch (this.a) {
             case 3:
-                ((x71.h) this.b).j(w61.a0.a);
+                ((x71.hShadow) this.b).j(w61.a0.a);
                 break;
             default:
                 super.onChange(z, uri);
@@ -53,7 +53,7 @@ public final class a4 extends ContentObserver {
         Cursor cursor;
         switch (this.a) {
             case 0:
-                ((AtomicBoolean) ((b51.d) this.b).a).set(true);
+                ((AtomicBoolean) ((b51.dShadow) this.b).a).set(true);
                 return;
             case 1:
                 e4 e4Var = (e4) this.b;
@@ -89,7 +89,7 @@ public final class a4 extends ContentObserver {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public a4(x71.h hVar, Handler handler) {
+    public a4(x71.hShadow hVar, Handler handler) {
         super(handler);
         this.b = hVar;
     }

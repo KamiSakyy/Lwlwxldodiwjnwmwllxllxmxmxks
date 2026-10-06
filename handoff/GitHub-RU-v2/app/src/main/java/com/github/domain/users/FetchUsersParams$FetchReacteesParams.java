@@ -6,7 +6,7 @@ import g81.e;
 import gn.m;
 import gn.n;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -26,7 +26,7 @@ public final class FetchUsersParams$FetchReacteesParams implements n {
 
     public /* synthetic */ FetchUsersParams$FetchReacteesParams(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, FetchUsersParams$FetchReacteesParams$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, FetchUsersParams$FetchReacteesParams$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

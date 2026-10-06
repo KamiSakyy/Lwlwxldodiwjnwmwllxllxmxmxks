@@ -7,7 +7,7 @@ import kc0.h80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nu implements aaShadow.a {
     public static final nu a = new nu();
-    public static final List b = sy.d0.o(new String[]{"id", "name", "state", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "name", "state", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

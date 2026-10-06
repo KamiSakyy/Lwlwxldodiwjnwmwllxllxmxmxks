@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class f0 extends x0 {
+public final class f0 extends x0Shadow {
     public final /* synthetic */ int d = 1;
     public Method e;
     public int f;
@@ -21,7 +21,7 @@ public final class f0 extends x0 {
         this.h = str;
     }
 
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     public final void a(n0 n0Var, Object obj) {
         int i = this.d;
         n nVar = this.g;

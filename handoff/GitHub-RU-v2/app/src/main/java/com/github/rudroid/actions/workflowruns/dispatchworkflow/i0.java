@@ -7,7 +7,7 @@ import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -58,10 +58,10 @@ public final class i0 extends k1 implements com.github.rudroid.utilities.viewmod
         this.f5375y = (String) h2.a(a1Var, "EXTRA_WORKFLOW_ID");
         this.f5376z = (String) h2.a(a1Var, "EXTRA_REPO_OWNER");
         this.A = (String) h2.a(a1Var, "EXTRA_REPO_NAME");
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.B = c10;
         this.C = new i1(c10);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new f0(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f0(this, null), 3);
     }
 
     public final void P(y71.g1 g1Var, fl.b bVar, boolean z10) {

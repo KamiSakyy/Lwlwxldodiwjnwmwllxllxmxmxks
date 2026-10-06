@@ -3,11 +3,11 @@ package ox0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g1 {
     public d1 a;
-    public f1 b;
+    public f1Shadow b;
     public String c;
     public String d;
 
-    public g1(d1 d1Var, f1 f1Var, String str, String str2) {
+    public g1(d1 d1Var, f1Shadow f1Var, String str, String str2) {
         this.a = d1Var;
         this.b = f1Var;
         this.c = str;

@@ -1,6 +1,6 @@
 package xa;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class g extends d {
@@ -33,6 +33,6 @@ public final class g extends d {
     }
 
     public final String toString() {
-        return f4.h(this.f34078s, this.f34079t, "DiffLinesCollapsedIndicator(startLineNumber=", ", endLineNumber=", ")");
+        return f4Shadow.h(this.f34078s, this.f34079t, "DiffLinesCollapsedIndicator(startLineNumber=", ", endLineNumber=", ")");
     }
 }

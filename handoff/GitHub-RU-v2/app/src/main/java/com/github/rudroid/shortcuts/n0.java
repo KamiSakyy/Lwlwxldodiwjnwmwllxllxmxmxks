@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -37,13 +37,13 @@ public final class n0 extends androidx.lifecycle.a {
         this.w = cVar;
         this.x = kVar;
         this.y = cVar2;
-        x61.r rVar = x61.r.r;
-        this.z = n1.c(rVar);
+        x61.rShadow rVar = x61.rShadow.r;
+        this.z = n1Shadow.c(rVar);
         fl.f.Companion.getClass();
-        y1 c = n1.c(fl.e.b(rVar));
+        y1 c = n1Shadow.c(fl.e.b(rVar));
         this.A = c;
         this.B = new i1(c);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new i0(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new i0(this, null), 3);
     }
 
     public final void Q(wm.b bVar) {
@@ -70,8 +70,8 @@ public final class n0 extends androidx.lifecycle.a {
 
     public final y1 S() {
         fl.f.Companion.getClass();
-        y1 c = n1.c(fl.e.b(w61.a0.a));
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new m0(this, c, null), 3);
+        y1 c = n1Shadow.c(fl.e.b(w61.a0.a));
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m0(this, c, null), 3);
         return c;
     }
 }

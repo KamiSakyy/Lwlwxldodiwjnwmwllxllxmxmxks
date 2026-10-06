@@ -7,7 +7,7 @@ import ic.i9;
 import java.util.List;
 import l7.m0;
 import l7.n1;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j extends m0 {
@@ -20,7 +20,7 @@ public final class j extends m0 {
         this.d = sVar;
         this.f = com.github.rudroid.common.m0.r;
         D(true);
-        this.e = d0.o(new k(com.github.rudroid.common.m0.x, "👍"), new k(com.github.rudroid.common.m0.y, "👎"), new k(com.github.rudroid.common.m0.z, "😄"), new k(com.github.rudroid.common.m0.A, "🎉"), new k(com.github.rudroid.common.m0.B, "😕"), new k(com.github.rudroid.common.m0.C, "❤️"), new k(com.github.rudroid.common.m0.D, "🚀"), new k(com.github.rudroid.common.m0.E, "👀"));
+        this.e = d0Shadow.o(new k(com.github.rudroid.common.m0.x, "👍"), new k(com.github.rudroid.common.m0.y, "👎"), new k(com.github.rudroid.common.m0.z, "😄"), new k(com.github.rudroid.common.m0.A, "🎉"), new k(com.github.rudroid.common.m0.B, "😕"), new k(com.github.rudroid.common.m0.C, "❤️"), new k(com.github.rudroid.common.m0.D, "🚀"), new k(com.github.rudroid.common.m0.E, "👀"));
     }
 
     public final int k() {

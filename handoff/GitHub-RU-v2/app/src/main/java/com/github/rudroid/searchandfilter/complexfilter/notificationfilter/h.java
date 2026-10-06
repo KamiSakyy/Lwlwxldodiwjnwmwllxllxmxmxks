@@ -131,7 +131,7 @@ public final class h {
                             float f2 = ih.a.q;
                             long j = ih.d.b(sVar2).d;
                             w1.o oVar = w1.o.a;
-                            d2.l0 l0Var = d2.a0.b;
+                            d2.l0 l0Var = d2.a0Shadow.b;
                             w1.r c = p2.c(f0.o.f(oVar, j, l0Var), 1.0f);
                             w1.j jVar = w1.c.r;
                             androidx.compose.ui.layout.v0 d = androidx.compose.foundation.layout.t.d(jVar, false);
@@ -146,16 +146,16 @@ public final class h {
                             } else {
                                 sVar2.k(aVar6);
                             }
-                            v2.e eVar = v2.g.f;
+                            v2.eShadow eVar = v2.g.f;
                             androidx.compose.runtime.t.I(sVar2, eVar, d);
-                            v2.e eVar2 = v2.g.e;
+                            v2.eShadow eVar2 = v2.g.e;
                             androidx.compose.runtime.t.I(sVar2, eVar2, l);
                             Integer valueOf = Integer.valueOf(hashCode);
-                            v2.e eVar3 = v2.g.g;
+                            v2.eShadow eVar3 = v2.g.g;
                             androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
                             v2.d dVar = v2.g.h;
                             androidx.compose.runtime.t.E(sVar2, dVar);
-                            v2.e eVar4 = v2.g.d;
+                            v2.eShadow eVar4 = v2.g.d;
                             androidx.compose.runtime.t.I(sVar2, eVar4, c2);
                             w1.r B = androidx.compose.foundation.layout.b.B(f0.o.w(androidx.compose.foundation.layout.b.z(oVar, f2, 0.0f, 2), v, true), 0.0f, 0.0f, 0.0f, f, 7);
                             androidx.compose.foundation.layout.g gVar = androidx.compose.foundation.layout.l.c;
@@ -229,7 +229,7 @@ public final class h {
                             androidx.compose.runtime.t.I(sVar, eVar4, c5);
                             com.github.rudroid.uitoolkit.k0.a(yVar.a(oVar, w1.c.s), 0L, 0L, 0.0f, false, sVar, 0, 30);
                             aVar2 = aVar4;
-                            sg.k0.b(androidx.compose.foundation.layout.b.y(p2.e(oVar, 1.0f), f2, f3), false, aVar2, sg.v.d(0, sVar), i4.p0(2131952531, sVar), null, sVar, (i6 << 6) & 896, 34);
+                            sg.k0Shadow.b(androidx.compose.foundation.layout.b.y(p2.e(oVar, 1.0f), f2, f3), false, aVar2, sg.v.d(0, sVar), i4.p0(2131952531, sVar), null, sVar, (i6 << 6) & 896, 34);
                             sVar2 = sVar;
                             sVar2.q(true);
                             sVar2.q(true);
@@ -251,7 +251,7 @@ public final class h {
                     float f22 = ih.a.q;
                     long j2 = ih.d.b(sVar2).d;
                     w1.o oVar2 = w1.o.a;
-                    d2.l0 l0Var2 = d2.a0.b;
+                    d2.l0 l0Var2 = d2.a0Shadow.b;
                     w1.r c6 = p2.c(f0.o.f(oVar2, j2, l0Var2), 1.0f);
                     w1.j jVar3 = w1.c.r;
                     androidx.compose.ui.layout.v0 d3 = androidx.compose.foundation.layout.t.d(jVar3, false);
@@ -263,16 +263,16 @@ public final class h {
                     sVar2.g0();
                     if (sVar2.S) {
                     }
-                    v2.e eVar5 = v2.g.f;
+                    v2.eShadow eVar5 = v2.g.f;
                     androidx.compose.runtime.t.I(sVar2, eVar5, d3);
-                    v2.e eVar22 = v2.g.e;
+                    v2.eShadow eVar22 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar2, eVar22, l5);
                     Integer valueOf2 = Integer.valueOf(hashCode5);
-                    v2.e eVar32 = v2.g.g;
+                    v2.eShadow eVar32 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar2, valueOf2, eVar32);
                     v2.d dVar2 = v2.g.h;
                     androidx.compose.runtime.t.E(sVar2, dVar2);
-                    v2.e eVar42 = v2.g.d;
+                    v2.eShadow eVar42 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar2, eVar42, c22);
                     w1.r B2 = androidx.compose.foundation.layout.b.B(f0.o.w(androidx.compose.foundation.layout.b.z(oVar2, f22, 0.0f, 2), v, true), 0.0f, 0.0f, 0.0f, f4, 7);
                     androidx.compose.foundation.layout.g gVar2 = androidx.compose.foundation.layout.l.c;
@@ -333,7 +333,7 @@ public final class h {
                     androidx.compose.runtime.t.I(sVar, eVar42, c52);
                     com.github.rudroid.uitoolkit.k0.a(yVar2.a(oVar2, w1.c.s), 0L, 0L, 0.0f, false, sVar, 0, 30);
                     aVar2 = aVar4;
-                    sg.k0.b(androidx.compose.foundation.layout.b.y(p2.e(oVar2, 1.0f), f22, f32), false, aVar2, sg.v.d(0, sVar), i4.p0(2131952531, sVar), null, sVar, (i6 << 6) & 896, 34);
+                    sg.k0Shadow.b(androidx.compose.foundation.layout.b.y(p2.e(oVar2, 1.0f), f22, f32), false, aVar2, sg.v.d(0, sVar), i4.p0(2131952531, sVar), null, sVar, (i6 << 6) & 896, 34);
                     sVar2 = sVar;
                     sVar2.q(true);
                     sVar2.q(true);
@@ -386,16 +386,16 @@ public final class h {
             } else {
                 sVar.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar, eVar, a2);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar, eVar4, c);
             w1.r f2 = f0.o.f(p2.o(rVar2, 48), ih.d.a(sVar).c, ih.d.e(sVar).h);
             androidx.compose.ui.layout.v0 d = androidx.compose.foundation.layout.t.d(w1.c.v, false);

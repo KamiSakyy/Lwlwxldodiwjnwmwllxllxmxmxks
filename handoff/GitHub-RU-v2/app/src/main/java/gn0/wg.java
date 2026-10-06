@@ -24,7 +24,7 @@ public final class wg {
         t = wgVarArr;
         u = v8.l0.t(wgVarArr);
         Companion = new vg();
-        sy.d0.o(new String[]{"GESTURE", "KEY_COMMAND", "LEFT_SWIPE", "LONG_PRESS", "PRESS", "RIGHT_SWIPE", "SWIPE"});
+        sy.d0Shadow.o(new String[]{"GESTURE", "KEY_COMMAND", "LEFT_SWIPE", "LONG_PRESS", "PRESS", "RIGHT_SWIPE", "SWIPE"});
     }
 
     public wg(String str, int i, String str2) {

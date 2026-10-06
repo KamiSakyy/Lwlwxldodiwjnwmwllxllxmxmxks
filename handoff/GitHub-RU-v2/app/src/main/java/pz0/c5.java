@@ -11,8 +11,8 @@ public abstract class c5 {
     public static final aa.q0 d;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        d = new aa.q0("Comparison", n, sy.d0.n(wk.a));
+        d = new aa.q0("Comparison", n, sy.d0Shadow.n(wk.a));
     }
 }

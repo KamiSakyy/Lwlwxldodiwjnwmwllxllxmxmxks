@@ -7,8 +7,8 @@ public abstract class ed0 {
     public static final dd0 Companion = new dd0();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("UnmarkedAsDuplicateEvent", n, sy.d0.n(zp.a));
+        new aa.q0("UnmarkedAsDuplicateEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

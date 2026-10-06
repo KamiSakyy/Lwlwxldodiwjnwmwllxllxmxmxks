@@ -9,12 +9,12 @@ import androidx.lifecycle.u1;
 import com.github.domain.searchandfilter.filters.data.NotificationIsUnreadFilter;
 import java.util.ArrayList;
 import java.util.List;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableNotificationRepositoryFilterFragment extends Hilt_SelectableNotificationRepositoryFilterFragment<k> {
     public static final a Companion = new a();
-    public final l1 H0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.h0.class), new c(), new e(), new d());
+    public final l1 H0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.h0.class), new c(), new e(), new d());
     public l1 I0;
     public l J0;
 
@@ -144,7 +144,7 @@ public final class SelectableNotificationRepositoryFilterFragment extends Hilt_S
 
     public SelectableNotificationRepositoryFilterFragment() {
         w61.h s = sy.w.s(w61.i.s, new f(new o(this, 1)));
-        this.I0 = new l1(k71.x.a(s0.class), new g(s), new i(s), new h(s));
+        this.I0 = new l1(k71.xShadow.a(s0.class), new g(s), new i(s), new h(s));
         this.J0 = new l(this);
     }
 
@@ -164,7 +164,7 @@ public final class SelectableNotificationRepositoryFilterFragment extends Hilt_S
         super.c4(view, bundle);
         l1 l1Var = this.I0;
         s0 s0Var = (s0) l1Var.getValue();
-        d1.a(n1.y(new y00.l(s0Var.t.b, 10), s0Var.D)).e(F3(), new b(new n(this, 1)));
+        d1.a(n1Shadow.y(new y00.l(s0Var.t.b, 10), s0Var.D)).e(F3(), new b(new n(this, 1)));
         if (bundle == null) {
             s0 s0Var2 = (s0) l1Var.getValue();
             List R = ((com.github.rudroid.searchandfilter.h0) this.H0.getValue()).R();

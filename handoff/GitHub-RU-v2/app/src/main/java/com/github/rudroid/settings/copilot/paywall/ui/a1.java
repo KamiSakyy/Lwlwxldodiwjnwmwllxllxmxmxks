@@ -24,7 +24,7 @@ public final class a1 {
         int i7 = i5 | (sVar.d(i) ? 256 : 128) | (sVar.d(i2) ? 2048 : 1024);
         if (sVar.S(i7 & 1, (i7 & 1171) != 1170)) {
             w1.r rVar3 = i6 != 0 ? w1.o.a : rVar;
-            xg.t.b(rVar3, r1.i.d(-84704445, new d2(i, 3), sVar), r1.i.d(-969440252, new d2(i2, 4), sVar), r1.i.d(-1854176059, new com.github.rudroid.agents.copilothome.ui.f0(21, aVar), sVar), aVar, sVar, ((i7 << 9) & 57344) | (i7 & 14) | 3504, 0);
+            xg.tShadow.b(rVar3, r1.i.d(-84704445, new d2(i, 3), sVar), r1.i.d(-969440252, new d2(i2, 4), sVar), r1.i.d(-1854176059, new com.github.rudroid.agents.copilothome.ui.f0(21, aVar), sVar), aVar, sVar, ((i7 << 9) & 57344) | (i7 & 14) | 3504, 0);
             rVar2 = rVar3;
         } else {
             sVar.V();

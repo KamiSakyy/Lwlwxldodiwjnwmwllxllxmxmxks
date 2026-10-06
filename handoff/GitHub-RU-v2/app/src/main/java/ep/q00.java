@@ -6,7 +6,7 @@ import jo.ug0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q00 implements aaShadow.a {
     public static final q00 a = new q00();
-    public static final List b = sy.d0.o("mobileTimeZone", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("mobileTimeZone", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

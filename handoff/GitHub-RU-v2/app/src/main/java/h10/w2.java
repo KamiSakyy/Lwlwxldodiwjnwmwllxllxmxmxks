@@ -17,7 +17,7 @@ public abstract class w2 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("commitMessageBody", xVar, (String) null, rVar, rVar, rVar);
         aa.m mVar2 = new aa.m("commitMessageHeadline", xVar, (String) null, rVar, rVar, rVar);
         aa.m mVar3 = new aa.m("possibleCommitAuthorEmails", v8.l0.b(v8.l0.a(v8.l0.b(xVar))), (String) null, rVar, rVar, rVar);
@@ -30,7 +30,7 @@ public abstract class w2 {
         ty.Companion.getClass();
         aa.r b = v8.l0.b(ty.a);
         ux.Companion.getClass();
-        List r2 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0.n("PullRequest"), x61.l.r(new aa.m[]{mVar4, mVar5, new aa.m("mergeRequirements", b, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(ux.v, new aa.u0(new aa.t("bypassRequirements"))), new aa.k(ux.w, new aa.u0(new aa.t("mergeAction"))), new aa.k(ux.x, new aa.u0(new aa.t("mergeMethod")))}), r)})), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r2 = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("PullRequest", sy.d0Shadow.n("PullRequest"), x61.l.r(new aa.m[]{mVar4, mVar5, new aa.m("mergeRequirements", b, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(ux.v, new aa.u0(new aa.t("bypassRequirements"))), new aa.k(ux.w, new aa.u0(new aa.t("mergeAction"))), new aa.k(ux.x, new aa.u0(new aa.t("mergeMethod")))}), r)})), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         zp.Companion.getClass();
         aa.j0 j0Var = zp.a;
         k71.k.g(j0Var, "type");

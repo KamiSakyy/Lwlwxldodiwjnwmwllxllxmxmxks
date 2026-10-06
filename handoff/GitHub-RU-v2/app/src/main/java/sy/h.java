@@ -22,7 +22,7 @@ public final class h {
         k71.k.g(commentLevelType, "commentType");
         ArrayList arrayList3 = new ArrayList();
         ArrayList arrayList4 = new ArrayList();
-        Collection collection = x61.r.r;
+        Collection collection = x61.rShadow.r;
         Collection collection2 = arrayList2 == null ? collection : arrayList2;
         ArrayList arrayList5 = new ArrayList(x61.n.F(collection2, 10));
         Iterator it = collection2.iterator();

@@ -48,7 +48,7 @@ public final class CodeOptionsActivity extends h0 {
     public CodeOptionsActivity() {
         this.s0 = false;
         C(new g0(this));
-        this.u0 = new l1(k71.x.a(a0.class), new c(), new b(), new d());
+        this.u0 = new l1(k71.xShadow.a(a0.class), new c(), new b(), new d());
     }
 
     public final void onCreate(Bundle bundle) {

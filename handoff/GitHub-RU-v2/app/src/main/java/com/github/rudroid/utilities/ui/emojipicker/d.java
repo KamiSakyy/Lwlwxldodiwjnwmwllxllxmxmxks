@@ -89,7 +89,7 @@ public final /* synthetic */ class d implements j71.f {
                 androidx.compose.runtime.s sVar3 = (androidx.compose.runtime.s) obj2;
                 ((Integer) obj3).getClass();
                 k71.k.g((i6.g) obj, "$this$Column");
-                sy.r.a(new z5.a(2131231298), i21.a.D(k41.b.M(ih.a.N), 0.0f, 7), 0, null, sVar3, 48, 24);
+                sy.rShadow.a(new z5.a(2131231298), i21.a.D(k41.b.M(ih.a.N), 0.0f, 7), 0, null, sVar3, 48, 24);
                 m71.a.d(i4.p0(2131954645, sVar3), (z5.n) null, (m6.e) obj4, 0, sVar3, 0, 10);
                 break;
             case 3:
@@ -120,7 +120,7 @@ public final /* synthetic */ class d implements j71.f {
                 Object N3 = sVar4.N();
                 Object obj7 = N3;
                 if (f || N3 == iVar) {
-                    com.github.rudroid.utilities.ui.h hVar = new com.github.rudroid.utilities.ui.h(cVar, f1Var2, 2);
+                    com.github.rudroid.utilities.ui.hShadow hVar = new com.github.rudroid.utilities.ui.hShadow(cVar, f1Var2, 2);
                     sVar4.n0(hVar);
                     obj7 = hVar;
                 }
@@ -156,7 +156,7 @@ public final /* synthetic */ class d implements j71.f {
                 Object N6 = sVar5.N();
                 Object obj10 = N6;
                 if (f2 || N6 == iVar) {
-                    com.github.rudroid.utilities.ui.h hVar2 = new com.github.rudroid.utilities.ui.h(cVar2, f1Var3, 4);
+                    com.github.rudroid.utilities.ui.hShadow hVar2 = new com.github.rudroid.utilities.ui.hShadow(cVar2, f1Var3, 4);
                     sVar5.n0(hVar2);
                     obj10 = hVar2;
                 }

@@ -44,10 +44,10 @@ abstract class i0 {
                 sd.f fVar = (sd.f) characterStyle;
                 int i3 = fVar.r;
                 int style = fVar.getStyle();
-                g3.h0 a2 = g3.h0.a(style != 1 ? style != 2 ? style != 3 ? new g3.h0(d2.a0.c(i3), 0L, (k3.s) null, (k3.o) null, (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65534) : new g3.h0(d2.a0.c(i3), 0L, k3.s.z, new k3.o(1), (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65522) : new g3.h0(0L, 0L, (k3.s) null, new k3.o(1), (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65527) : new g3.h0(d2.a0.c(i3), 0L, k3.s.z, (k3.o) null, (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65530), d2.a0.c(i3), 0L, fVar.t ? r3.l.c : null, 61438);
+                g3.h0 a2 = g3.h0.a(style != 1 ? style != 2 ? style != 3 ? new g3.h0(d2.a0Shadow.c(i3), 0L, (k3.s) null, (k3.o) null, (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65534) : new g3.h0(d2.a0Shadow.c(i3), 0L, k3.s.z, new k3.o(1), (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65522) : new g3.h0(0L, 0L, (k3.s) null, new k3.o(1), (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65527) : new g3.h0(d2.a0Shadow.c(i3), 0L, k3.s.z, (k3.o) null, (k3.p) null, (k3.i) null, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65530), d2.a0Shadow.c(i3), 0L, fVar.t ? r3.l.c : null, 61438);
                 Integer num = fVar.s;
                 if (num != null) {
-                    dVar.b(g3.h0.a(a2, 0L, d2.a0.c(num.intValue()), (r3.l) null, 63487), i, i2);
+                    dVar.b(g3.h0.a(a2, 0L, d2.a0Shadow.c(num.intValue()), (r3.l) null, 63487), i, i2);
                 } else {
                     dVar.b(a2, i, i2);
                 }

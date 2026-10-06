@@ -6,12 +6,12 @@ import java.util.List;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public h f34023a;
+    public hShadow f34023a;
 
     /* renamed from: b, reason: collision with root package name */
     public List f34024b;
 
-    public m(h hVar, List list) {
+    public m(hShadow hVar, List list) {
         k71.k.g(hVar, "billingResult");
         this.f34023a = hVar;
         this.f34024b = list;

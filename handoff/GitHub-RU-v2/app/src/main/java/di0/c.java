@@ -19,7 +19,7 @@ public abstract class c {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         pb.Companion.getClass();
         s mVar2 = new m("id", l0.b(pb.a), (String) null, rVar, rVar, rVar);

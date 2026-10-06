@@ -31,7 +31,7 @@ public final class e9 implements z01.d1, yb0 {
         if (str3 != null) {
             bVar = new aa.u0(str3);
         }
-        return y71.n1.y(new f3(new y71.y(new c9(this, null, 1), com.github.service.wrapper.a.o(this.r, new xm(str, u0Var, bVar), null, false, null, null, 58)), 2), this.s);
+        return y71.n1Shadow.y(new f3(new y71.y(new c9(this, null, 1), com.github.service.wrapper.a.o(this.r, new xm(str, u0Var, bVar), null, false, null, null, 58)), 2), this.s);
     }
 
     @Override // z01.d1
@@ -48,7 +48,7 @@ public final class e9 implements z01.d1, yb0 {
         if (str4 != null) {
             bVar = new aa.u0(str4);
         }
-        return y71.n1.y(new cn.q(new f3(new y71.y(new c9(this, null, 0), com.github.service.wrapper.a.o(this.r, new yv(i, u0Var, bVar, str, str2), null, false, null, null, 58)), 1), 23), this.s);
+        return y71.n1Shadow.y(new cn.q(new f3(new y71.y(new c9(this, null, 0), com.github.service.wrapper.a.o(this.r, new yv(i, u0Var, bVar, str, str2), null, false, null, null, 58)), 1), 23), this.s);
     }
 
     @Override // z01.d1

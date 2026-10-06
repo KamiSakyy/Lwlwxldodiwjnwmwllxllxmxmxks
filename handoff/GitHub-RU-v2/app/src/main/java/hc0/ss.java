@@ -8,6 +8,6 @@ public abstract class ss {
         ms.Companion.getClass();
         aa.j0 j0Var = ms.a;
         ws.Companion.getClass();
-        new aa.q0("SearchShortcutQueryLoginRefTerm", x61.r.r, x61.l.r(new aa.j0[]{j0Var, ws.a}));
+        new aa.q0("SearchShortcutQueryLoginRefTerm", x61.rShadow.r, x61.l.r(new aa.j0[]{j0Var, ws.a}));
     }
 }

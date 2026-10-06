@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zi implements aaShadow.a {
     public static final zi a = new zi();
-    public static final List b = sy.d0.o("name", "type", "mode", "submodule");
+    public static final List b = sy.d0Shadow.o("name", "type", "mode", "submodule");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -24,7 +24,7 @@ public final class zi implements aaShadow.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

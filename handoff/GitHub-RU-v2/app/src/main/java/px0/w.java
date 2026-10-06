@@ -7,7 +7,7 @@ import pz0.f40;
 public abstract class w implements aa.a {
     public static final List a = x61.l.r(new String[]{"__typename", "viewerSubscription"});
 
-    public static ox0.x c(ea.e eVar, aa.w wVar) {
+    public static ox0.xShadow c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         kw0.a aVar = null;
@@ -31,10 +31,10 @@ public abstract class w implements aa.a {
             eVar.s0();
             aVar = kw0.b.c(eVar, wVar);
         }
-        return new ox0.x(str, f40Var, aVar);
+        return new ox0.xShadow(str, f40Var, aVar);
     }
 
-    public static void d(ea.f fVar, aa.w wVar, ox0.x xVar) {
+    public static void d(ea.f fVar, aa.w wVar, ox0.xShadow xVar) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

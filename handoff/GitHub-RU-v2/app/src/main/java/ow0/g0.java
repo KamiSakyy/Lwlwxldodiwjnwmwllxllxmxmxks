@@ -5,9 +5,9 @@ public final class g0 {
     public String a;
     public i0 b;
     public int c;
-    public x d;
+    public xShadow d;
 
-    public g0(String str, i0 i0Var, int i, x xVar) {
+    public g0(String str, i0 i0Var, int i, xShadow xVar) {
         this.a = str;
         this.b = i0Var;
         this.c = i;

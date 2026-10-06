@@ -7,7 +7,7 @@ import u10.ty;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tn implements aaShadow.a {
     public static final tn a = new tn();
-    public static final List b = sy.d0.n("setLabelsForLabelable");
+    public static final List b = sy.d0Shadow.n("setLabelsForLabelable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

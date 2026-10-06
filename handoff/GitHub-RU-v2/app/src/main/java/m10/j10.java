@@ -12,8 +12,8 @@ public abstract class j10 {
     public static final aa.q0 e;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        e = new aa.q0("Ref", n, sy.d0.n(zp.a));
+        e = new aa.q0("Ref", n, sy.d0Shadow.n(zp.a));
     }
 }

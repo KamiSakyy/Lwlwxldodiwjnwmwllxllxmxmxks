@@ -9,7 +9,7 @@ import jo.yi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z10 implements aaShadow.a {
     public static final z10 a = new z10();
-    public static final List b = sy.d0.o("copilotLicenseType", "isCopilotMobileChatEnabled", "viewerIsCopilotCodingAgentEnabled", "viewerCanSubscribeToCopilotIndividual", "viewerCanSubscribeToCopilotLimited", "copilotEndpoints", "copilotLimitedUser", "copilotConsumptiveUser", "copilotSubscriptionPlatform", "availableCopilotUpgradeSkus", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("copilotLicenseType", "isCopilotMobileChatEnabled", "viewerIsCopilotCodingAgentEnabled", "viewerCanSubscribeToCopilotIndividual", "viewerCanSubscribeToCopilotLimited", "copilotEndpoints", "copilotLimitedUser", "copilotConsumptiveUser", "copilotSubscriptionPlatform", "availableCopilotUpgradeSkus", "id", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003c, code lost:
     
@@ -186,10 +186,10 @@ public final class z10 implements aaShadow.a {
         aa.c.b(aVar).b(fVar, wVar, aj0Var.a);
         fVar.z0("isCopilotMobileChatEnabled");
         aa.b bVar = aa.c.f;
-        jo.f4.C(aj0Var.b, bVar, fVar, wVar, "viewerIsCopilotCodingAgentEnabled");
-        jo.f4.C(aj0Var.c, bVar, fVar, wVar, "viewerCanSubscribeToCopilotIndividual");
-        jo.f4.C(aj0Var.d, bVar, fVar, wVar, "viewerCanSubscribeToCopilotLimited");
-        jo.f4.C(aj0Var.e, bVar, fVar, wVar, "copilotEndpoints");
+        jo.f4Shadow.C(aj0Var.b, bVar, fVar, wVar, "viewerIsCopilotCodingAgentEnabled");
+        jo.f4Shadow.C(aj0Var.c, bVar, fVar, wVar, "viewerCanSubscribeToCopilotIndividual");
+        jo.f4Shadow.C(aj0Var.d, bVar, fVar, wVar, "viewerCanSubscribeToCopilotLimited");
+        jo.f4Shadow.C(aj0Var.e, bVar, fVar, wVar, "copilotEndpoints");
         aa.c.b(aa.c.c(w10.a, false)).b(fVar, wVar, aj0Var.f);
         fVar.z0("copilotLimitedUser");
         aa.c.b(aa.c.c(x10.a, true)).b(fVar, wVar, aj0Var.g);

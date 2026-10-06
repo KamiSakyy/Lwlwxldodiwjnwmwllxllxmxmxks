@@ -1,7 +1,7 @@
 package com.github.rudroid.settings.applock;
 
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,10 +25,10 @@ public final class k {
         this.c = gVar;
         this.d = aVar2;
         this.e = zVar;
-        y1 c = n1.c(Boolean.FALSE);
+        y1 c = n1Shadow.c(Boolean.FALSE);
         this.f = c;
         this.g = new i1(c);
-        v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new h(this, null), 3);
+        v71.b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new h(this, null), 3);
     }
 
 

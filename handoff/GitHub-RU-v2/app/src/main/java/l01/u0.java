@@ -6,7 +6,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class u0 implements x {
+public final class u0 implements xShadow {
     public String a;
     public String b;
     public String c;
@@ -52,12 +52,12 @@ public final class u0 implements x {
         this.t = str5;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean a() {
         return this.l;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final int b() {
         return this.d;
     }
@@ -67,12 +67,12 @@ public final class u0 implements x {
         return this.e;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean d() {
         return this.m;
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean e() {
         return this.n;
     }
@@ -88,7 +88,7 @@ public final class u0 implements x {
         return this.a.equals(u0Var.a) && this.b.equals(u0Var.b) && this.c.equals(u0Var.c) && this.d == u0Var.d && this.e.equals(u0Var.e) && this.f == u0Var.f && this.g == u0Var.g && this.h == u0Var.h && this.i == u0Var.i && this.j == u0Var.j && this.k == u0Var.k && this.l == u0Var.l && this.m == u0Var.m && this.n == u0Var.n && this.o.equals(u0Var.o) && this.p == u0Var.p && this.q == u0Var.q && this.r == u0Var.r && this.s.equals(u0Var.s) && this.t.equals(u0Var.t);
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean f() {
         return this.j;
     }
@@ -107,7 +107,7 @@ public final class u0 implements x {
         return this.t.hashCode() + h1.i(x.i.e(x.i.e((this.p.hashCode() + h1.h(x.i.e(x.i.e(x.i.e(x.i.e(x.i.e(x.i.e(a0.s0.b(this.h, a0.s0.b(this.g, a0.s0.b(this.f, com.github.rudroid.m0.a(this.e, a0.s0.b(this.d, h1.i(h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), 31), 31), 31), 31), 31, this.i), 31, this.j), 31, this.k), 31, this.l), 31, this.m), 31, this.n), this.o, 31)) * 31, 31, this.q), 31, this.r), this.s, 31);
     }
 
-    @Override // l01.x
+    @Override // l01.xShadow
     public final boolean m() {
         return this.k;
     }

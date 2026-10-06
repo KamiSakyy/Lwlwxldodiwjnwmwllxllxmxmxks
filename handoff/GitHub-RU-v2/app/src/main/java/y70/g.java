@@ -2,9 +2,9 @@ package y70;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import x70.j;
 import z70.c8;
 import z70.f8;
@@ -13,7 +13,7 @@ import z70.i8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class g implements aa.a {
-    public static final List a = d0.n("__typename");
+    public static final List a = d0Shadow.n("__typename");
 
     public static j c(ea.e eVar, w wVar) {
         k.g(eVar, "reader");
@@ -46,7 +46,7 @@ public abstract class g implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, c8Var.a);
         fVar.z0("viewerDidAuthor");
-        f4.C(c8Var.b, aa.c.f, fVar, wVar, "viewerLatestReviewRequest");
+        f4Shadow.C(c8Var.b, aa.c.f, fVar, wVar, "viewerLatestReviewRequest");
         aa.c.b(aa.c.c(h8.a, false)).b(fVar, wVar, c8Var.c);
         fVar.z0("pendingReviews");
         aa.c.b(aa.c.c(f8.a, false)).b(fVar, wVar, c8Var.d);

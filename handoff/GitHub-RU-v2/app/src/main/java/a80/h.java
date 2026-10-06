@@ -28,7 +28,7 @@ import hc0.vk;
 import hc0.xa;
 import hc0.z5;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -39,7 +39,7 @@ public abstract class h {
         fb.Companion.getClass();
         x xVar = fb.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("name", b, (String) null, rVar, rVar, rVar);
         bb.Companion.getClass();
         x xVar2 = bb.a;
@@ -78,8 +78,8 @@ public abstract class h {
         t3.Companion.getClass();
         List r11 = x61.l.r(new aa.m[]{mVar10, new aa.m("commit", l0.b(t3.j), (String) null, rVar, rVar, r9), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         rk.Companion.getClass();
-        List n = d0.n(new aa.m("nodes", l0.a(rk.a), (String) null, rVar, rVar, r11));
-        List n2 = d0.n(new aa.m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
+        List n = d0Shadow.n(new aa.m("nodes", l0.a(rk.a), (String) null, rVar, rVar, r11));
+        List n2 = d0Shadow.n(new aa.m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
         aa.s mVar11 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.s mVar12 = new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         xa.Companion.getClass();
@@ -121,7 +121,7 @@ public abstract class h {
         q0 q0Var3 = dc.a;
         k71.k.g(q0Var3, "type");
         aa.s mVar29 = new aa.m("closingIssuesReferences", q0Var3, (String) null, rVar, rVar, n2);
-        List n3 = d0.n("PullRequest");
+        List n3 = d0Shadow.n("PullRequest");
         List list3 = r.a;
         a = x61.l.r(new aa.s[]{mVar11, mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, mVar21, c, mVar22, mVar23, mVar24, mVar25, mVar26, mVar27, mVar28, mVar29, no.a.c(list3, "selections", "PullRequest", n3, list3)});
     }

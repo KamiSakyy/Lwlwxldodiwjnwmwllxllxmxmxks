@@ -7,7 +7,7 @@ import pz0.rm;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 implements aa.a {
     public static final k1 a = new k1();
-    public static final List b = sy.d0.o(new String[]{"linesAdded", "linesDeleted", "oldTreeEntry", "newTreeEntry", "diffLines", "isBinary", "isLargeDiff", "isSubmodule", "status", "id", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"linesAdded", "linesDeleted", "oldTreeEntry", "newTreeEntry", "diffLines", "isBinary", "isLargeDiff", "isSubmodule", "status", "id", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003a, code lost:
     
@@ -241,9 +241,9 @@ public final class k1 implements aa.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(a1.a, true)))).b(fVar, wVar, p0Var.e);
         fVar.z0("isBinary");
         aa.b bVar = aa.c.f;
-        jo.f4.C(p0Var.f, bVar, fVar, wVar, "isLargeDiff");
-        jo.f4.C(p0Var.g, bVar, fVar, wVar, "isSubmodule");
-        jo.f4.C(p0Var.h, bVar, fVar, wVar, "status");
+        jo.f4Shadow.C(p0Var.f, bVar, fVar, wVar, "isLargeDiff");
+        jo.f4Shadow.C(p0Var.g, bVar, fVar, wVar, "isSubmodule");
+        jo.f4Shadow.C(p0Var.h, bVar, fVar, wVar, "status");
         fVar.I(p0Var.i.r);
         fVar.z0("id");
         aa.b bVar2 = aa.c.a;

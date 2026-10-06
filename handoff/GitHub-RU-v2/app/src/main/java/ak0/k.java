@@ -4,7 +4,7 @@ import aa.w;
 import gn0.dn;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class k implements aa.a {
@@ -208,7 +208,7 @@ public abstract class k implements aa.a {
         k71.k.g(fVar2, "value");
         fVar.z0("isResolved");
         aa.b bVar = aa.c.f;
-        f4.C(fVar2.a, bVar, fVar, wVar, "resolvedBy");
+        f4Shadow.C(fVar2.a, bVar, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(j.a, false)).b(fVar, wVar, fVar2.b);
         fVar.z0("path");
         aa.b bVar2 = aa.c.a;
@@ -216,8 +216,8 @@ public abstract class k implements aa.a {
         fVar.z0("id");
         bVar2.b(fVar, wVar, fVar2.d);
         fVar.z0("viewerCanResolve");
-        f4.C(fVar2.e, bVar, fVar, wVar, "viewerCanUnresolve");
-        f4.C(fVar2.f, bVar, fVar, wVar, "subjectType");
+        f4Shadow.C(fVar2.e, bVar, fVar, wVar, "viewerCanUnresolve");
+        f4Shadow.C(fVar2.f, bVar, fVar, wVar, "subjectType");
         fVar.I(fVar2.g.r);
         fVar.z0("comments");
         aa.c.c(g.a, false).b(fVar, wVar, fVar2.h);

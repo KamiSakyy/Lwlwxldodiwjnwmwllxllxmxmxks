@@ -6,6 +6,6 @@ public abstract class wv {
 
     static {
         uv.Companion.getClass();
-        new aa.q0("TextFileType", x61.r.r, sy.d0.n(uv.a));
+        new aa.q0("TextFileType", x61.rShadow.r, sy.d0Shadow.n(uv.a));
     }
 }

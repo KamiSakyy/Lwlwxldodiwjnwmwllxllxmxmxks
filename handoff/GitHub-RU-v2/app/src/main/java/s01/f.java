@@ -80,7 +80,7 @@ import jo.z0;
 import jo.z30;
 import jo.z5;
 import m10.t3;
-import sy.d0;
+import sy.d0Shadow;
 import sy.f0;
 import sy.q;
 import sy.y;
@@ -105,7 +105,7 @@ import t00.z;
 import v8.l0;
 import w61.a0;
 import w8.s;
-import x61.r;
+import x61.rShadow;
 import y41.t1;
 import yz0.a7;
 import yz0.b2;
@@ -116,7 +116,7 @@ import yz0.o6;
 import yz0.w0;
 import zx.d1;
 import zx.e1;
-import zx.f1;
+import zx.f1Shadow;
 import zx.j1;
 import zx.k1;
 import zx.l1;
@@ -421,7 +421,7 @@ public final class f implements y71.j {
                         while (i15 < size4) {
                             Object obj6 = S4.get(i15);
                             i15++;
-                            gv.o oVar = ((ta) obj6).c;
+                            gv.oShadow oVar = ((ta) obj6).c;
                             z2 z2Var = oVar.e;
                             String str22 = z2Var.b;
                             x2 x2Var = z2Var.m;
@@ -720,7 +720,7 @@ public final class f implements y71.j {
         int i12;
         f01.g gVar4;
         w7 w7Var2;
-        t00.a0 a0Var;
+        t00.a0Shadow a0Var;
         int i13;
         c0 c0Var;
         int i14;
@@ -1218,8 +1218,8 @@ public final class f implements y71.j {
                 }
                 return a0.a;
             case 11:
-                if (cVar instanceof t00.a0) {
-                    a0Var = (t00.a0) cVar;
+                if (cVar instanceof t00.a0Shadow) {
+                    a0Var = (t00.a0Shadow) cVar;
                     int i42 = a0Var.v;
                     if ((i42 & Integer.MIN_VALUE) != 0) {
                         a0Var.v = i42 - Integer.MIN_VALUE;
@@ -1242,7 +1242,7 @@ public final class f implements y71.j {
                         return a0.a;
                     }
                 }
-                a0Var = new t00.a0(this, cVar);
+                a0Var = new t00.a0Shadow(this, cVar);
                 Object obj152 = a0Var.u;
                 b71.a aVar162 = b71.a.r;
                 i13 = a0Var.v;
@@ -1364,7 +1364,7 @@ public final class f implements y71.j {
                             if (y30Var == null || (z30Var = y30Var.a) == null) {
                                 throw new ApiFailure(ApiFailureType.RESPONSE_ERROR, "resolveReviewThread field null", null, null, null, null, null, 120);
                             }
-                            g4 a = sy.o.a(z30Var.c);
+                            g4 a = sy.oShadow.a(z30Var.c);
                             i0Var.v = 1;
                             if (this.s.c(a, i0Var) == aVar20) {
                                 return aVar20;
@@ -1400,7 +1400,7 @@ public final class f implements y71.j {
                             if (q90Var == null || (p90Var = q90Var.a) == null) {
                                 throw new ApiFailure(ApiFailureType.RESPONSE_ERROR, "unresolveReviewThread field null", null, null, null, null, null, 120);
                             }
-                            g4 a2 = sy.o.a(p90Var.c);
+                            g4 a2 = sy.oShadow.a(p90Var.c);
                             j0Var.v = 1;
                             if (this.s.c(a2, j0Var) == aVar21) {
                                 return aVar21;

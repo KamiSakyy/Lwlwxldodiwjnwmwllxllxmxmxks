@@ -6,7 +6,7 @@ import com.github.rudroid.searchandfilter.complexfilter.user.author.RepositoryAu
 import com.github.rudroid.searchandfilter.q;
 import k71.e;
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 import w51.r;
 import w61.h;
@@ -28,7 +28,7 @@ public final /* synthetic */ class a implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) repositoryAuthorBottomSheet.Z0.a(repositoryAuthorBottomSheet, RepositoryAuthorBottomSheet.d1[0])).booleanValue()) {
-                    e a = x.a(q.class);
+                    e a = xShadow.a(q.class);
                     RepositoryAuthorBottomSheet.b bVar = new RepositoryAuthorBottomSheet.b(repositoryAuthorBottomSheet);
                     RepositoryAuthorBottomSheet.c cVar = new RepositoryAuthorBottomSheet.c(repositoryAuthorBottomSheet);
                     RepositoryAuthorBottomSheet.d dVar = new RepositoryAuthorBottomSheet.d(repositoryAuthorBottomSheet);
@@ -46,7 +46,7 @@ public final /* synthetic */ class a implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 h s = w.s(i.s, new RepositoryAuthorBottomSheet.e(new a(repositoryAuthorBottomSheet, 1)));
-                e a2 = x.a(q.class);
+                e a2 = xShadow.a(q.class);
                 RepositoryAuthorBottomSheet.f fVar = new RepositoryAuthorBottomSheet.f(s);
                 RepositoryAuthorBottomSheet.g gVar = new RepositoryAuthorBottomSheet.g(s);
                 RepositoryAuthorBottomSheet.h hVar = new RepositoryAuthorBottomSheet.h(repositoryAuthorBottomSheet, s);

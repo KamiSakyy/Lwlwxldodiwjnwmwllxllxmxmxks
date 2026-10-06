@@ -8,7 +8,7 @@ public abstract class sw {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         mf.Companion.getClass();
         aa.j0 j0Var = mf.a;
         yh.Companion.getClass();

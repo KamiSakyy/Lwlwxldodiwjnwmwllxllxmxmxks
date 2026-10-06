@@ -18,7 +18,7 @@ public abstract class i0 {
         wg.Companion.getClass();
         aa.x xVar = wg.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("success", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         aa.x xVar2 = eh.a;
@@ -46,6 +46,6 @@ public abstract class i0 {
         aa.q0 q0Var3 = k9.a;
         k71.k.g(q0Var3, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("createGoogleIapSubscription", q0Var3, (String) null, rVar, no.a.s(vp.G, new aa.u0(x61.x.u(new w61.k[]{new w61.k("productId", new aa.t("productId")), new w61.k("purchaseToken", new aa.t("purchaseToken"))}))), r5));
+        a = sy.d0Shadow.n(new aa.m("createGoogleIapSubscription", q0Var3, (String) null, rVar, no.a.s(vp.G, new aa.u0(x61.x.u(new w61.k[]{new w61.k("productId", new aa.t("productId")), new w61.k("purchaseToken", new aa.t("purchaseToken"))}))), r5));
     }
 }

@@ -4,7 +4,7 @@ import sy.y;
 import t00.f8;
 import v71.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.viewmodels.tasklist.TaskListViewModel$checkDiscussionCommentTask$1", f = "TaskListViewModel.kt", l = {223}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -40,7 +40,7 @@ final class g extends c71.j implements j71.e {
         if (i == 0) {
             y.j(obj);
             n nVar = this.w;
-            an.e eVar = nVar.w;
+            an.eShadow eVar = nVar.w;
             oa.j d = nVar.x.d();
             String str = this.x;
             c cVar = new c(nVar, str, 1);
@@ -49,7 +49,7 @@ final class g extends c71.j implements j71.e {
             String str2 = this.y;
             k71.k.g(str2, "body");
             a71.c cVar2 = null;
-            y71.y J = b31.b.J(n1.x(new an.d(eVar, d, str, cVar, cVar2, 0), new f8(new an.a(eVar, str2, this.z, this.A, cVar2, 1))), d, cVar);
+            y71.y J = b31.b.J(n1Shadow.x(new an.d(eVar, d, str, cVar, cVar2, 0), new f8(new an.a(eVar, str2, this.z, this.A, cVar2, 1))), d, cVar);
             f fVar = new f(nVar, str);
             this.v = 1;
             if (J.b(fVar, this) == aVar) {

@@ -7,7 +7,7 @@ import com.github.service.models.response.Avatar;
 import com.github.service.models.response.CheckConclusionState;
 import com.github.service.models.response.CheckStatusState;
 import com.github.service.models.response.WorkflowRunEvent;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {

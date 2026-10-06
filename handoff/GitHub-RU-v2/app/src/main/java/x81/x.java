@@ -135,7 +135,7 @@ public final class x implements Closeable {
                         int i5 = eVar.h;
                         if (min < i5) {
                             if (min == 0) {
-                                c[] cVarArr = eVar.e;
+                                cShadow[] cVarArr = eVar.e;
                                 x61.l.G(0, cVarArr.length, (Object) null, cVarArr);
                                 eVar.f = eVar.e.length - 1;
                                 eVar.g = 0;

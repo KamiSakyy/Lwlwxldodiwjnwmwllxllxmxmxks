@@ -1,10 +1,10 @@
 package vb0;
 
-import rm0.y9;
+import rm0.y9Shadow;
 import u10.c80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class m7 extends c71.c {
+public final class m7Shadow extends c71.c {
     public com.github.service.wrapper.b u;
     public c80 v;
     public /* synthetic */ Object w;

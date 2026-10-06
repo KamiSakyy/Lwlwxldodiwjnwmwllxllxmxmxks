@@ -5,7 +5,7 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -62,7 +62,7 @@ public abstract class b implements aa.a {
         c.a.b(fVar, wVar, aVar.a);
         fVar.z0("viewerCanBlockFromOrg");
         aa.b bVar = c.f;
-        f4.C(aVar.b, bVar, fVar, wVar, "viewerCanUnblockFromOrg");
+        f4Shadow.C(aVar.b, bVar, fVar, wVar, "viewerCanUnblockFromOrg");
         bVar.b(fVar, wVar, Boolean.valueOf(aVar.c));
         ja0.a aVar2 = aVar.d;
         if (aVar2 != null) {

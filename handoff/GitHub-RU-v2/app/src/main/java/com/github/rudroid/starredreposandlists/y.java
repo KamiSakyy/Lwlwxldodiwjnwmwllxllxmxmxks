@@ -32,7 +32,7 @@ public final /* synthetic */ class y implements j71.c {
                 break;
             case 1:
                 w61.k kVar = (w61.k) obj;
-                y61.b bVar = x61.r.r;
+                y61.b bVar = x61.rShadow.r;
                 if (kVar == null) {
                     r71.e[] eVarArr2 = h0.C;
                     break;
@@ -47,7 +47,7 @@ public final /* synthetic */ class y implements j71.c {
                     if (list.isEmpty() && list2.isEmpty()) {
                         h = bVar;
                     } else {
-                        y61.b i2 = sy.d0.i();
+                        y61.b i2 = sy.d0Shadow.i();
                         if (r1 != 0) {
                             ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
                             Iterator it = list.iterator();
@@ -57,7 +57,7 @@ public final /* synthetic */ class y implements j71.c {
                             i2.addAll(arrayList);
                         } else {
                             if (!list2.isEmpty() || b) {
-                                y61.b i3 = sy.d0.i();
+                                y61.b i3 = sy.d0Shadow.i();
                                 i3.add(new h.c(2131231350, b ? 2131953019 : 2131953018, b));
                                 if (list2.isEmpty()) {
                                     i3.add(h.b.s);
@@ -69,7 +69,7 @@ public final /* synthetic */ class y implements j71.c {
                                     i3.addAll(arrayList2);
                                 }
                                 i3.add(h.f.s);
-                                i2.addAll(sy.d0.h(i3));
+                                i2.addAll(sy.d0Shadow.h(i3));
                                 if (!list.isEmpty()) {
                                     i2.add(new h.c(2131231456, 2131953524, false));
                                 }
@@ -84,7 +84,7 @@ public final /* synthetic */ class y implements j71.c {
                                 i2.add(new h.g(b));
                             }
                         }
-                        h = sy.d0.h(i2);
+                        h = sy.d0Shadow.h(i2);
                     }
                     if (h != null) {
                         break;

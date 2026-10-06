@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,7 +25,7 @@ public final class EventsResponse {
     }
 
     public /* synthetic */ EventsResponse(int i, List list, Integer num) {
-        this.a = (i & 1) == 0 ? r.r : list;
+        this.a = (i & 1) == 0 ? rShadow.r : list;
         if ((i & 2) == 0) {
             this.b = null;
         } else {

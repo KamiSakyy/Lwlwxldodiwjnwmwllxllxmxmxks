@@ -1,7 +1,7 @@
 package iy0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.o7;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -71,7 +71,7 @@ public abstract class i implements aa.a {
         f4.C(uVar.h, bVar3, fVar, wVar, "isInMergeQueue");
         f4.C(uVar.i, bVar3, fVar, wVar, "updatedAt");
         o7.Companion.getClass();
-        aa.x xVar = o7.a;
+        aa.xShadow xVar = o7.a;
         wVar.e(xVar).b(fVar, wVar, uVar.j);
         fVar.z0("createdAt");
         wVar.e(xVar).b(fVar, wVar, uVar.k);

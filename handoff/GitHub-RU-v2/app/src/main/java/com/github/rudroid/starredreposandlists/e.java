@@ -23,7 +23,7 @@ public final class e {
                 sVar2.n0(N);
             }
             w1.r rVar3 = w1.o.a;
-            w1.r z = androidx.compose.foundation.layout.b.z(f0.o.f(d3.q.b(rVar3, true, (j71.c) N), ih.d.b(sVar2).b, d2.a0.b), 0.0f, ih.a.p, 1);
+            w1.r z = androidx.compose.foundation.layout.b.z(f0.o.f(d3.q.b(rVar3, true, (j71.c) N), ih.d.b(sVar2).b, d2.a0Shadow.b), 0.0f, ih.a.p, 1);
             androidx.compose.foundation.layout.e0 a = androidx.compose.foundation.layout.c0.a(androidx.compose.foundation.layout.l.e, w1.c.E, sVar2, 54);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();
@@ -57,7 +57,7 @@ public final class e {
             } else {
                 aVar2 = aVar;
             }
-            sg.y.a(100663296, 250, null, sVar2, null, null, null, null, (j71.a) N2, a.a, e, false);
+            sg.yShadow.a(100663296, 250, null, sVar2, null, null, null, null, (j71.a) N2, a.a, e, false);
             sVar2.q(true);
         } else {
             aVar2 = aVar;

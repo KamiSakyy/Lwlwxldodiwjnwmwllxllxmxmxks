@@ -27,11 +27,11 @@ public final class b {
     public static final androidx.compose.foundation.lazy.layout.a h = new androidx.compose.foundation.lazy.layout.a(3);
     public static final a i = new a(0);
     public final AtomicInteger a = new AtomicInteger(0);
-    public d b;
-    public d51.d c;
+    public dShadow b;
+    public d51.dShadow c;
     public i d;
 
-    public b(d dVar, d51.d dVar2, i iVar) {
+    public b(dShadow dVar, d51.dShadow dVar2, i iVar) {
         this.b = dVar;
         this.c = dVar2;
         this.d = iVar;
@@ -85,7 +85,7 @@ public final class b {
 
     public final ArrayList b() {
         ArrayList arrayList = new ArrayList();
-        d dVar = this.b;
+        dShadow dVar = this.b;
         arrayList.addAll(d.k(((File) dVar.f).listFiles()));
         arrayList.addAll(d.k(((File) dVar.g).listFiles()));
         androidx.compose.foundation.lazy.layout.a aVar = h;
@@ -101,7 +101,7 @@ public final class b {
     }
 
     public final void d(j2 j2Var, String str, boolean z) {
-        d dVar = this.b;
+        dShadow dVar = this.b;
         int i2 = this.c.c().a.r;
         g.getClass();
         try {

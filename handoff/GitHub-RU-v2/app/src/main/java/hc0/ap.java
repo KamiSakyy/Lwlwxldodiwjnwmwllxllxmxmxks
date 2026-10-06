@@ -70,7 +70,7 @@ public abstract class ap {
     public static final a81.t j0 = new a81.t(1, "orderBy", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         yg.Companion.getClass();
         aa.j0 j0Var = yg.a;
         hi.Companion.getClass();

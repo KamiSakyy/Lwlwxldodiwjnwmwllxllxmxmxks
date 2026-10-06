@@ -1,6 +1,6 @@
 package com.github.rudroid.utilities.viewmodel.paging.model;
 
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.utilities.viewmodel.paging.model.StandardPagingSearchableModel$ensureObservingSearchFlow$1", f = "StandardPagingSearchableModel.kt", l = {44}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -29,7 +29,7 @@ final class j0 extends c71.j implements j71.e {
         int i = this.v;
         if (i == 0) {
             sy.y.j(obj);
-            y71.i o = n1.o((y71.i) null, 250L);
+            y71.i o = n1Shadow.o((y71.i) null, 250L);
             i0 i0Var = new i0(this.w, this.x);
             this.v = 1;
             if (o.b(i0Var, this) == aVar) {

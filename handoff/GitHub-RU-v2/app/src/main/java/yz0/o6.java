@@ -84,10 +84,10 @@ public final class o6 extends s7 {
         sb.append(this.d);
         sb.append(", createdAt=");
         com.github.rudroid.m0.v(", viewerCanBlockFromOrg=", ", viewerCanUnblockFromOrg=", sb, this.e, this.f);
-        return jo.f4.s(sb, this.g, ")");
+        return jo.f4Shadow.s(sb, this.g, ")");
     }
 
     public /* synthetic */ o6(s sVar) {
-        this(sVar, x61.r.r, true, x2.e, null, false, false);
+        this(sVar, x61.rShadow.r, true, x2.e, null, false, false);
     }
 }

@@ -182,7 +182,7 @@ public final class l {
                     androidx.compose.runtime.t.E(sVar, v2.g.h);
                     androidx.compose.runtime.t.I(sVar, v2.g.d, c);
                     dVar.s(sVar, Integer.valueOf((i13 >> 27) & 14));
-                    r f = f0.o.f(rVar5, j6, d2.a0.b);
+                    r f = f0.o.f(rVar5, j6, d2.a0Shadow.b);
                     Object N2 = sVar.N();
                     if (N2 == obj) {
                         N2 = new u(4, a0Var);

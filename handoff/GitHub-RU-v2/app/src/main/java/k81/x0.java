@@ -44,7 +44,7 @@ public final class x0 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List getAnnotations() {
-        return x61.r.r;
+        return x61.rShadow.r;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor

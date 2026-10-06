@@ -6,6 +6,6 @@ public abstract class nu {
 
     static {
         rt.Companion.getClass();
-        new aa.q0("SearchShortcutQueryText", x61.r.r, sy.d0.n(rt.a));
+        new aa.q0("SearchShortcutQueryText", x61.rShadow.r, sy.d0Shadow.n(rt.a));
     }
 }

@@ -6,7 +6,7 @@ import com.github.rudroid.searchandfilter.z0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class TopRepositoriesFilterBarFragment extends Hilt_TopRepositoriesFilterBarFragment {
     public static final a Companion = new a();
-    public final l1 O0 = new l1(k71.x.a(z0.class), new b(), new d(), new c());
+    public final l1 O0 = new l1(k71.xShadow.a(z0.class), new b(), new d(), new c());
 
     public static final class a {
     }

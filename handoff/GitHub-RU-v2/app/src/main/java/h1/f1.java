@@ -7,7 +7,7 @@ public final /* synthetic */ class f1 extends k71.n implements r71.c {
     }
 
     public final r71.a c() {
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         return this;
     }
 

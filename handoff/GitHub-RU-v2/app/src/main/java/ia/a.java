@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import x61.m;
 import x61.n;
 import x61.x;
@@ -32,7 +32,7 @@ public final class a {
             for (Object obj2 : iterable) {
                 int i10 = i + 1;
                 if (i < 0) {
-                    d0.x();
+                    d0Shadow.x();
                     throw null;
                 }
                 arrayList.add(a(obj2, m.m0(list, Integer.valueOf(i))));

@@ -13,13 +13,13 @@ public abstract class h6 {
     static {
         xa.Companion.getClass();
         aa.r b = v8.l0.b(xa.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasCreatedLists", b, (String) null, rVar, rVar, rVar);
         bb.Companion.getClass();
         aa.m mVar2 = new aa.m("id", v8.l0.b(bb.a), (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         List r = x61.l.r(new aa.m[]{mVar, mVar2, new aa.m("__typename", v8.l0.b(fb.a), (String) null, rVar, rVar, rVar)});
         kz.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r));
     }
 }

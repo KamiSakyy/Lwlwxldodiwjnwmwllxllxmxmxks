@@ -14,10 +14,10 @@ public final class p0 {
     public boolean h;
     public boolean i;
     public boolean j;
-    public x0[] k;
+    public x0Shadow[] k;
     public boolean l;
 
-    public p0(o0 o0Var) {
+    public p0(o0Shadow o0Var) {
         this.a = o0Var.b;
         this.b = o0Var.c;
         this.c = (q81.o) o0Var.a.t;

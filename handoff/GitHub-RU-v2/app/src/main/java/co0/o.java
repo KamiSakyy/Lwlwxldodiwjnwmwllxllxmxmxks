@@ -12,7 +12,7 @@ import pz0.jx;
 import pz0.su;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -23,9 +23,9 @@ public abstract class o {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("WorkflowConnection");
+        List n = d0Shadow.n("WorkflowConnection");
         List list = wn0.g.a;
         List r = x61.l.r(new s[]{mVar, no.a.c(list, "selections", "WorkflowConnection", n, list)});
         td.Companion.getClass();

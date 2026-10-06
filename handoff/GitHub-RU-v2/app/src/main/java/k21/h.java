@@ -5,7 +5,7 @@ import android.view.Choreographer;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Random;
-import sy.o;
+import sy.oShadow;
 import w2.o0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -34,7 +34,7 @@ public final class h extends ThreadLocal {
                 if (myLooper == null) {
                     throw new IllegalStateException("no Looper on this thread");
                 }
-                o0 o0Var = new o0(choreographer, o.d(myLooper));
+                o0 o0Var = new o0(choreographer, oShadow.d(myLooper));
                 return f.y(o0Var, o0Var.C);
         }
     }

@@ -4,7 +4,7 @@ import androidx.compose.foundation.lazy.layout.o1;
 import com.google.android.gms.internal.measurement.i4;
 import f0.o0;
 import java.util.ArrayList;
-import k81.x;
+import k81.xShadow;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.MissingFieldException;
 import kotlinx.serialization.SerializationException;
@@ -629,7 +629,7 @@ public final class q extends i4 implements l81.i {
         kotlinx.serialization.json.b k = k();
         String a = ((k81.b) kSerializer).getDescriptor().a();
         if (!(k instanceof kotlinx.serialization.json.c)) {
-            throw i.d(-1, k.toString(), "Expected " + k71.x.a(kotlinx.serialization.json.c.class).c() + ", but had " + k71.x.a(k.getClass()).c() + " as the serialized body of " + a + " at element: " + o1Var.i());
+            throw i.d(-1, k.toString(), "Expected " + k71.xShadow.a(kotlinx.serialization.json.c.class).c() + ", but had " + k71.xShadow.a(k.getClass()).c() + " as the serialized body of " + a + " at element: " + o1Var.i());
         }
         kotlinx.serialization.json.c cVar2 = (kotlinx.serialization.json.c) k;
         kotlinx.serialization.json.b bVar = (kotlinx.serialization.json.b) cVar2.get(h2);

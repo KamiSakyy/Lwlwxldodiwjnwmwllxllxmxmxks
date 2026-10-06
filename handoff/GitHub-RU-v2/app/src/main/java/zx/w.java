@@ -4,9 +4,9 @@ package zx;
 public final class w {
     public String a;
     public String b;
-    public x c;
+    public xShadow c;
 
-    public w(String str, String str2, x xVar) {
+    public w(String str, String str2, xShadow xVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;
@@ -26,7 +26,7 @@ public final class w {
 
     public final int hashCode() {
         int i = com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31);
-        x xVar = this.c;
+        xShadow xVar = this.c;
         return i + (xVar == null ? 0 : xVar.hashCode());
     }
 

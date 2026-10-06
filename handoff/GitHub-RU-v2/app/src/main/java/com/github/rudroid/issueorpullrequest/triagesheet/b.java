@@ -7,7 +7,7 @@ import com.github.service.models.response.issueorpullrequest.IssueType;
 import com.github.service.models.response.projects.ProjectFieldType;
 import java.util.ArrayList;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import le.z;
 import yz0.o2;
 import yz0.v2;
@@ -167,12 +167,12 @@ public abstract class b implements z {
                 public boolean f16251f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public l01.x f16252g;
+                public l01.xShadow f16252g;
 
                 /* renamed from: h, reason: collision with root package name */
                 public l01.q f16253h;
 
-                public C0046a(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.q qVar) {
+                public C0046a(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.xShadow xVar, l01.q qVar) {
                     k71.k.g(str, "fieldId");
                     k71.k.g(str2, "fieldName");
                     k71.k.g(projectFieldType, "dataType");
@@ -349,7 +349,7 @@ public abstract class b implements z {
                     o5.append(", viewId=");
                     o5.append(this.f16259f);
                     o5.append(", viewerCanUpdate=");
-                    return f4.s(o5, this.f16260g, ")");
+                    return f4Shadow.s(o5, this.f16260g, ")");
                 }
             }
 
@@ -478,12 +478,12 @@ public abstract class b implements z {
                 public boolean f16274f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public l01.x f16275g;
+                public l01.xShadow f16275g;
 
                 /* renamed from: h, reason: collision with root package name */
                 public l01.f f16276h;
 
-                public d(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.f fVar) {
+                public d(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.xShadow xVar, l01.f fVar) {
                     k71.k.g(str, "fieldId");
                     k71.k.g(str2, "fieldName");
                     k71.k.g(projectFieldType, "dataType");
@@ -584,12 +584,12 @@ public abstract class b implements z {
                 public boolean f16282f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public l01.x f16283g;
+                public l01.xShadow f16283g;
 
                 /* renamed from: h, reason: collision with root package name */
                 public l01.j f16284h;
 
-                public e(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.j jVar) {
+                public e(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.xShadow xVar, l01.j jVar) {
                     k71.k.g(str, "fieldId");
                     k71.k.g(str2, "fieldName");
                     k71.k.g(projectFieldType, "dataType");
@@ -691,12 +691,12 @@ public abstract class b implements z {
                 public boolean f16290f;
 
                 /* renamed from: g, reason: collision with root package name */
-                public l01.x f16291g;
+                public l01.xShadow f16291g;
 
                 /* renamed from: h, reason: collision with root package name */
                 public l01.g f16292h;
 
-                public C0048f(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.x xVar, l01.g gVar) {
+                public C0048f(String str, String str2, ProjectFieldType projectFieldType, List list, String str3, boolean z10, l01.xShadow xVar, l01.g gVar) {
                     k71.k.g(str, "fieldId");
                     k71.k.g(str2, "fieldName");
                     k71.k.g(projectFieldType, "dataType");
@@ -872,7 +872,7 @@ public abstract class b implements z {
                     o5.append(", viewId=");
                     o5.append(this.f16298f);
                     o5.append(", viewerCanUpdate=");
-                    return f4.s(o5, this.f16299g, ")");
+                    return f4Shadow.s(o5, this.f16299g, ")");
                 }
             }
 
@@ -1077,7 +1077,7 @@ public abstract class b implements z {
                     o5.append(", viewId=");
                     o5.append(this.f16313f);
                     o5.append(", viewerCanUpdate=");
-                    return f4.s(o5, this.f16314g, ")");
+                    return f4Shadow.s(o5, this.f16314g, ")");
                 }
             }
 
@@ -1090,7 +1090,7 @@ public abstract class b implements z {
                 public static final ProjectFieldType f16316b = ProjectFieldType.UNKNOWN;
 
                 /* renamed from: c, reason: collision with root package name */
-                public static final x61.r f16317c = x61.r.r;
+                public static final x61.rShadow f16317c = x61.rShadow.r;
 
                 @Override // com.github.rudroid.issueorpullrequest.triagesheet.b.f.a
                 public final ProjectFieldType l() {

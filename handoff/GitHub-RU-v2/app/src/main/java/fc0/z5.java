@@ -13,7 +13,7 @@ public abstract class z5 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = f30.a.a;
@@ -22,6 +22,6 @@ public abstract class z5 {
         bb.Companion.getClass();
         List r2 = x61.l.r(new aa.s[]{mVar, c, mVar2, new aa.m("id", v8.l0.b(bb.a), (String) null, rVar, rVar, rVar)});
         kz.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r2));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r2));
     }
 }

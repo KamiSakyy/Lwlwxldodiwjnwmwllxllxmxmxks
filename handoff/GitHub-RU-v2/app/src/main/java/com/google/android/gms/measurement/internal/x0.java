@@ -54,8 +54,8 @@ public final class x0 {
     public Long z;
 
     public x0(o1 o1Var, String str) {
-        c21.u.g(o1Var);
-        c21.u.d(str);
+        c21.uShadow.g(o1Var);
+        c21.uShadow.d(str);
         this.a = o1Var;
         this.b = str;
         m1 m1Var = o1Var.x;
@@ -243,7 +243,7 @@ public final class x0 {
     }
 
     public final void e(long j) {
-        c21.u.b(j >= 0);
+        c21.uShadow.b(j >= 0);
         m1 m1Var = this.a.x;
         o1.m(m1Var);
         m1Var.z();

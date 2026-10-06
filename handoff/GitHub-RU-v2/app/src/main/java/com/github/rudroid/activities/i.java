@@ -16,9 +16,9 @@ public final class i extends androidx.lifecycle.k1 {
     public i(com.github.rudroid.activities.util.c cVar) {
         k71.k.g(cVar, "accountHolder");
         this.f5824s = cVar;
-        y71.y1 c10 = y71.n1.c((Object) null);
+        y71.y1 c10 = y71.n1Shadow.c((Object) null);
         this.f5825t = c10;
         this.f5826u = new y71.y(new y00.l(c10, 10), new h(this, null), 6);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new g(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new g(this, null), 3);
     }
 }

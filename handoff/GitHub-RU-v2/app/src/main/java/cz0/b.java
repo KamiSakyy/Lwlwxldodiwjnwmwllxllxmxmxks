@@ -13,8 +13,8 @@ import v71.v;
 import w51.r;
 import xn.q1;
 import y71.i;
-import y71.n1;
-import z01.f1;
+import y71.n1Shadow;
+import z01.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements f1, yf0, mi0 {
@@ -50,17 +50,17 @@ public final class b implements f1, yf0, mi0 {
         }
     }
 
-    @Override // z01.f1
+    @Override // z01.f1Shadow
     public final i a(String str, String str2, String str3, boolean z) {
         switch (this.r) {
             case 0:
                 k.g(str, "parentRepositoryOwner");
                 k.g(str2, "parentRepositoryName");
-                return n1.y(in.r.l(d11.b.b(d11.a.t, new a(this, str, str2, str3, z, null, 0))), this.s);
+                return n1Shadow.y(in.rShadow.l(d11.b.b(d11.a.t, new a(this, str, str2, str3, z, null, 0))), this.s);
             default:
                 k.g(str, "parentRepositoryOwner");
                 k.g(str2, "parentRepositoryName");
-                return n1.y(in.r.l(d11.b.b(d11.a.t, new a(this, str, str2, str3, z, null, 1))), this.s);
+                return n1Shadow.y(in.rShadow.l(d11.b.b(d11.a.t, new a(this, str, str2, str3, z, null, 1))), this.s);
         }
     }
 

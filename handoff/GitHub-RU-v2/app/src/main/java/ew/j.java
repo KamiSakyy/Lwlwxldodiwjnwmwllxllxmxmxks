@@ -15,7 +15,7 @@ import m10.hg0;
 import m10.i30;
 import m10.l40;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -26,7 +26,7 @@ public abstract class j {
         eh.Companion.getClass();
         x xVar = eh.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
@@ -43,7 +43,7 @@ public abstract class j {
         List r5 = x61.l.r(new aa.m[]{mVar4, new aa.m("owner", l0.b(j0Var), (String) null, rVar, rVar, r4), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         List r6 = x61.l.r(new aa.m[]{new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         fg0.Companion.getClass();
-        List n = d0.n(new aa.m("nodes", l0.a(fg0.c), (String) null, rVar, rVar, r6));
+        List n = d0Shadow.n(new aa.m("nodes", l0.a(fg0.c), (String) null, rVar, rVar, r6));
         aa.s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         gh.Companion.getClass();
         aa.s mVar6 = new aa.m("shortDescriptionHTML", l0.b(gh.a), (String) null, rVar, rVar, rVar);
@@ -71,7 +71,7 @@ public abstract class j {
         q0 q0Var2 = i30.w0;
         k71.k.g(q0Var2, "type");
         aa.s mVar20 = new aa.m("parent", q0Var2, (String) null, rVar, rVar, r5);
-        List n2 = d0.n("Repository");
+        List n2 = d0Shadow.n("Repository");
         List list2 = p.a;
         aa.s c = no.a.c(list2, "selections", "Repository", n2, list2);
         hg0.Companion.getClass();

@@ -99,7 +99,7 @@ public final class FirebaseSessionsRegistrar implements ComponentRegistrar {
         a2.a(p41.i.b(firebaseInstallationsApi));
         a2.a(new p41.i(transportFactory, 1, 1));
         a2.f = new a5.i(7);
-        return l.r(new p41.a[]{b, a2.b(), sy.o.c(LIBRARY_NAME, "2.1.2")});
+        return l.r(new p41.a[]{b, a2.b(), sy.oShadow.c(LIBRARY_NAME, "2.1.2")});
     }
 
     public static Object b(Object... a) {

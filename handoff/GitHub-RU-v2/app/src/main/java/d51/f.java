@@ -37,7 +37,7 @@ public final class f {
         this.f = new d0(1, this);
         this.g = new s91.f(cVar, cVar, arrayList);
         this.h = l.r(new u91.c[]{new p91.b(3), new p91.b(4), new w91.b(), new w91.e(), new p91.b(2), new p91.b(6), new p91.b(1), new w91.d(), new p91.b(5)});
-        this.i = m.l0((List) this.h, sy.d0.n(new p91.b(0)));
+        this.i = m.l0((List) this.h, sy.d0Shadow.n(new p91.b(0)));
     }
 
     public void a(int i, int i2) {
@@ -62,7 +62,7 @@ public final class f {
         int i = cVar.c;
         int min = Math.min(a0.l(dVar, cVar.d) + (i - cVar.b), cVar.d());
         Character S = l.S(cVar2.b);
-        q1Var.a(sy.d0.n(new x91.e(new g(i, min, 1), (S != null && S.charValue() == '>') ? j91.a.G : ((S != null && S.charValue() == '.') || (S != null && S.charValue() == ')')) ? j91.a.g0 : j91.a.d0)));
+        q1Var.a(sy.d0Shadow.n(new x91.e(new g(i, min, 1), (S != null && S.charValue() == '>') ? j91.a.G : ((S != null && S.charValue() == '.') || (S != null && S.charValue() == ')')) ? j91.a.g0 : j91.a.d0)));
     }
 
     public void c() {

@@ -7,7 +7,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.a {
     public static final q a = new q();
-    public static final List b = sy.d0.o("id", "context", "state", "description", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "context", "state", "description", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;
@@ -63,14 +63,14 @@ public final class q implements aa.a {
             throw null;
         }
         if (str4 != null) {
-            return new na0.x(str, str2, uuVar, str3, str4);
+            return new na0.xShadow(str, str2, uuVar, str3, str4);
         }
         k41.b.B(eVar, "__typename");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        na0.x xVar = (na0.x) obj;
+        na0.xShadow xVar = (na0.xShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

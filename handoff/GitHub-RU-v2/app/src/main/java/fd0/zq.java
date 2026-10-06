@@ -6,7 +6,7 @@ import kc0.c30;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zq implements aaShadow.a {
     public static final zq a = new zq();
-    public static final List b = sy.d0.o(new String[]{"__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "hasIssuesEnabled", "isDiscussionsEnabled", "isArchived", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -82,9 +82,9 @@ public final class zq implements aaShadow.a {
         bVar.b(fVar, wVar, c30Var.a);
         fVar.z0("hasIssuesEnabled");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(c30Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
-        jo.f4.C(c30Var.c, bVar2, fVar, wVar, "isArchived");
-        jo.f4.C(c30Var.d, bVar2, fVar, wVar, "id");
+        jo.f4Shadow.C(c30Var.b, bVar2, fVar, wVar, "isDiscussionsEnabled");
+        jo.f4Shadow.C(c30Var.c, bVar2, fVar, wVar, "isArchived");
+        jo.f4Shadow.C(c30Var.d, bVar2, fVar, wVar, "id");
         bVar.b(fVar, wVar, c30Var.e);
         List list = oj0.x3.a;
         oj0.x3.d(fVar, wVar, c30Var.f);

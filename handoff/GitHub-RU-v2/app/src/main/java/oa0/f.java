@@ -1,7 +1,7 @@
 package oa0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import w80.l2;
 import w80.o2;
 import w80.p2;
@@ -13,7 +13,7 @@ import w80.v2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -80,24 +80,24 @@ public final class f implements aa.a {
         bVar3.b(fVar, wVar, o2Var.c);
         fVar.z0("isInOrganization");
         aa.b bVar4 = aa.c.f;
-        f4.C(o2Var.d, bVar4, fVar, wVar, "owner");
+        f4Shadow.C(o2Var.d, bVar4, fVar, wVar, "owner");
         aa.c.c(q2.a, true).b(fVar, wVar, o2Var.e);
         fVar.z0("id");
         bVar3.b(fVar, wVar, o2Var.f);
         fVar.z0("viewerPermission");
         aa.c.b(ic0.b.h).b(fVar, wVar, o2Var.g);
         fVar.z0("squashMergeAllowed");
-        f4.C(o2Var.h, bVar4, fVar, wVar, "rebaseMergeAllowed");
-        f4.C(o2Var.i, bVar4, fVar, wVar, "mergeCommitAllowed");
-        f4.C(o2Var.j, bVar4, fVar, wVar, "viewerDefaultCommitEmail");
+        f4Shadow.C(o2Var.h, bVar4, fVar, wVar, "rebaseMergeAllowed");
+        f4Shadow.C(o2Var.i, bVar4, fVar, wVar, "mergeCommitAllowed");
+        f4Shadow.C(o2Var.j, bVar4, fVar, wVar, "viewerDefaultCommitEmail");
         aa.c.i.b(fVar, wVar, o2Var.k);
         fVar.z0("viewerDefaultMergeMethod");
         fVar.I(o2Var.l.r);
         fVar.z0("viewerPossibleCommitEmails");
         aa.c.b(aa.c.a(bVar3)).b(fVar, wVar, o2Var.m);
         fVar.z0("planSupports");
-        f4.C(o2Var.n, bVar4, fVar, wVar, "allowUpdateBranch");
-        f4.C(o2Var.o, bVar4, fVar, wVar, "defaultBranchRef");
+        f4Shadow.C(o2Var.n, bVar4, fVar, wVar, "allowUpdateBranch");
+        f4Shadow.C(o2Var.o, bVar4, fVar, wVar, "defaultBranchRef");
         aa.c.b(aa.c.c(p2.a, false)).b(fVar, wVar, o2Var.p);
         m90.e eVar = m90.e.a;
         m90.e.d(fVar, wVar, l2Var.e);

@@ -1,12 +1,12 @@
 package hy0;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements aa.a {
     public static final h a = new h();
-    public static final List b = d0.o(new String[]{"__typename", "id"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         gy0.g gVar;

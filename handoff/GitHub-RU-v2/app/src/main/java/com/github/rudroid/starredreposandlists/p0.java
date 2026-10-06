@@ -81,7 +81,7 @@ public final /* synthetic */ class p0 implements j71.f {
                         k71.k.m("htmlStyler");
                         throw null;
                     }
-                    com.github.rudroid.starredreposandlists.ui.h.a(w, g1Var, sVar, b, d, aVar, eVar, aVar2, eVar2, cVar, bVar, sVar2, 24576);
+                    com.github.rudroid.starredreposandlists.ui.hShadow.a(w, g1Var, sVar, b, d, aVar, eVar, aVar2, eVar2, cVar, bVar, sVar2, 24576);
                 } else {
                     sVar2.V();
                 }
@@ -97,7 +97,7 @@ public final /* synthetic */ class p0 implements j71.f {
                     } else {
                         sVar3.c0(736532979);
                         boolean z = !com.github.rudroid.utilities.ui.h1.c((com.github.rudroid.utilities.ui.g1) this.s.getValue());
-                        List n = sy.d0.n(com.github.rudroid.uitoolkit.menu.m.b(sVar3));
+                        List n = sy.d0Shadow.n(com.github.rudroid.uitoolkit.menu.m.b(sVar3));
                         StarredRepositoriesAndListsFragment starredRepositoriesAndListsFragment2 = this.t;
                         boolean h6 = sVar3.h(starredRepositoriesAndListsFragment2);
                         Object N6 = sVar3.N();

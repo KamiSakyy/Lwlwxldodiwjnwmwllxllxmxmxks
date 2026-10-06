@@ -5,7 +5,7 @@ import com.google.firebase.components.ComponentRegistrar;
 import f51.a;
 import java.util.List;
 import w61.c;
-import x61.r;
+import x61.rShadow;
 
 @Keep
 @c
@@ -15,6 +15,6 @@ public final class FirebaseCrashlyticsKtxRegistrar implements ComponentRegistrar
 
     @Override // com.google.firebase.components.ComponentRegistrar
     public List<p41.a> getComponents() {
-        return r.r;
+        return rShadow.r;
     }
 }

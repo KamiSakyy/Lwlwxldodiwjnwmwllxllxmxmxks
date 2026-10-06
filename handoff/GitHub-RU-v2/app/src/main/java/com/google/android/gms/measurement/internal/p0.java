@@ -132,7 +132,7 @@ public final class p0 implements Runnable {
     }
 
     public /* synthetic */ p0(String str, u0 u0Var, int i, IOException iOException, byte[] bArr, Map map) {
-        c21.u.g(u0Var);
+        c21.uShadow.g(u0Var);
         this.u = u0Var;
         this.s = i;
         this.v = iOException;

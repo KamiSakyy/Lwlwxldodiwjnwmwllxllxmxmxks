@@ -3,7 +3,7 @@ package k41;
 import android.content.Context;
 import android.text.TextUtils;
 import b1.m;
-import c21.u;
+import c21.uShadow;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -18,7 +18,7 @@ public final class i {
 
     public i(String str, String str2, String str3, String str4, String str5, String str6, String str7) {
         int i = g21.d.a;
-        u.i("ApplicationId must be set.", true ^ (str == null || str.trim().isEmpty()));
+        uShadow.i("ApplicationId must be set.", true ^ (str == null || str.trim().isEmpty()));
         this.b = str;
         this.a = str2;
         this.c = str3;
@@ -42,7 +42,7 @@ public final class i {
             return false;
         }
         i iVar = (i) obj;
-        return u.j(this.b, iVar.b) && u.j(this.a, iVar.a) && u.j(this.c, iVar.c) && u.j(this.d, iVar.d) && u.j(this.e, iVar.e) && u.j(this.f, iVar.f) && u.j(this.g, iVar.g);
+        return uShadow.j(this.b, iVar.b) && uShadow.j(this.a, iVar.a) && uShadow.j(this.c, iVar.c) && uShadow.j(this.d, iVar.d) && uShadow.j(this.e, iVar.e) && uShadow.j(this.f, iVar.f) && uShadow.j(this.g, iVar.g);
     }
 
     public final int hashCode() {

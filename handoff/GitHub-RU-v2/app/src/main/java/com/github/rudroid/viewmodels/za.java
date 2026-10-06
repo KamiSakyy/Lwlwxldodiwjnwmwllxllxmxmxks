@@ -74,7 +74,7 @@ public abstract class za<T extends gn.n> extends androidx.lifecycle.k1 implement
     /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Object, java.util.Map] */
     public za(androidx.lifecycle.a1 a1Var) {
         k71.k.g(a1Var, "savedStateHandle");
-        UsersRoute usersRoute = (UsersRoute) sy.y.m(a1Var, k71.x.a(UsersRoute.class), ze.e.a);
+        UsersRoute usersRoute = (UsersRoute) sy.y.m(a1Var, k71.xShadow.a(UsersRoute.class), ze.e.a);
         this.s = usersRoute;
         this.t = usersRoute.c;
         gn.n nVar = usersRoute.a;
@@ -83,7 +83,7 @@ public abstract class za<T extends gn.n> extends androidx.lifecycle.k1 implement
             throw new IllegalStateException("User params needs to be of type ".concat(gn.n.class.getSimpleName()).toString());
         }
         this.u = nVar;
-        y71.y1 c = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y71.y1 c = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.v = c;
         this.w = com.github.rudroid.utilities.w0.f(c, androidx.lifecycle.d1.k(this), new ya(this, 0));
         x01.i.Companion.getClass();
@@ -92,13 +92,13 @@ public abstract class za<T extends gn.n> extends androidx.lifecycle.k1 implement
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new eb(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new eb(this, null), 3);
     }
 
     public abstract Object P(gn.n nVar, String str, j71.c cVar, c71.j jVar);
 
     public final void Q() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new bb(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new bb(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.v3

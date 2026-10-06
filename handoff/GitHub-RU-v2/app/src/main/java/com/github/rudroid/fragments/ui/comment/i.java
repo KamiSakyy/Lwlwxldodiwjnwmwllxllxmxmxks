@@ -4,10 +4,10 @@ import androidx.lifecycle.a1;
 import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.ui.g1;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -47,7 +47,7 @@ public final class i extends k1 {
         this.f14477u = (String) a1Var.a("EXTRA_REPOSITORY_NAME");
         this.f14478v = (String) a1Var.a("EXTRA_REPOSITORY_OWNER");
         g1.Companion.getClass();
-        y1 c10 = n1.c(g1.a.a());
+        y1 c10 = n1Shadow.c(g1.a.a());
         this.f14479w = c10;
         this.f14480x = new i1(c10);
         this.f14481y = "";
@@ -59,6 +59,6 @@ public final class i extends k1 {
             return;
         }
         this.f14481y = str;
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new l(this, str, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new l(this, str, null), 3);
     }
 }

@@ -289,7 +289,7 @@ public class j1 implements d1, p1 {
     @Override // v71.d1
     public final Object O(c71.c cVar) {
         Object obj;
-        w61.a0 a0Var;
+        w61.a0Shadow a0Var;
         do {
             obj = r.get(this);
             boolean z = obj instanceof a1;

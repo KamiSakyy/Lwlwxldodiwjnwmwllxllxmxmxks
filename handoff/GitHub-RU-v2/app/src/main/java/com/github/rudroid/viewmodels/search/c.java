@@ -4,7 +4,7 @@ import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import k71.k;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y;
 import y71.y1;
 
@@ -15,12 +15,12 @@ public final class c extends k1 {
     public i1 u;
 
     public c() {
-        y1 c = n1.c(new a("", false));
+        y1 c = n1Shadow.c(new a("", false));
         this.s = c;
-        y1 c2 = n1.c("");
+        y1 c2 = n1Shadow.c("");
         this.t = c2;
         this.u = new i1(c);
-        n1.A(new y(n1.o(c2, 250L), new b(this, null), 6), d1.k(this));
+        n1Shadow.A(new y(n1Shadow.o(c2, 250L), new b(this, null), 6), d1.k(this));
     }
 
     public final void P() {

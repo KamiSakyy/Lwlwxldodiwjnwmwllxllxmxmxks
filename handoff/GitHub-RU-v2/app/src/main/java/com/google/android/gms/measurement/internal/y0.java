@@ -66,13 +66,13 @@ public final class y0 extends BroadcastReceiver {
         }
     }
 
-    public void d(Bundle bundle, x9.h hVar, int i, com.google.android.gms.internal.play_billing.g3 g3Var, long j, boolean z) {
+    public void d(Bundle bundle, x9.hShadow hVar, int i, com.google.android.gms.internal.play_billing.g3 g3Var, long j, boolean z) {
         b21.l lVar = (b21.l) this.d;
         try {
             if (bundle.getByteArray("FAILURE_LOGGING_PAYLOAD") != null) {
                 ((x9.y) lVar.u).s(com.google.android.gms.internal.play_billing.y2.t(bundle.getByteArray("FAILURE_LOGGING_PAYLOAD")), j, z);
             } else {
-                ((x9.y) lVar.u).s(x9.x.b(23, i, hVar, (String) null, g3Var), j, z);
+                ((x9.y) lVar.u).s(x9.xShadow.b(23, i, hVar, (String) null, g3Var), j, z);
             }
         } catch (Throwable unused) {
             int i2 = com.google.android.gms.internal.play_billing.t.a;
@@ -88,7 +88,7 @@ public final class y0 extends BroadcastReceiver {
     */
     public final void onReceive(Context context, Intent intent) {
         com.google.android.gms.internal.play_billing.g3 g3Var;
-        x9.h e;
+        x9.hShadow e;
         long j;
         com.google.android.gms.internal.play_billing.j3 j3Var;
         int intValue;
@@ -144,8 +144,8 @@ public final class y0 extends BroadcastReceiver {
                     int i3 = com.google.android.gms.internal.play_billing.t.a;
                     Log.isLoggable("BillingBroadcastManager", 5);
                     v2.t tVar = (x9.y) lVar.u;
-                    x9.h hVar = x9.z.h;
-                    tVar.q(x9.x.b(11, i2, hVar, (String) null, g3Var));
+                    x9.hShadow hVar = x9.z.h;
+                    tVar.q(x9.xShadow.b(11, i2, hVar, (String) null, g3Var));
                     com.github.rudroid.copilot.inapppurchase.billingclient.g gVar = (x9.o) lVar.t;
                     if (gVar != null) {
                         gVar.a(hVar, (List) null);
@@ -154,7 +154,7 @@ public final class y0 extends BroadcastReceiver {
                 } else {
                     if (i2 == 2) {
                         int i4 = com.google.android.gms.internal.play_billing.t.a;
-                        androidx.compose.runtime.i1 a = x9.h.a();
+                        androidx.compose.runtime.i1 a = x9.hShadow.a();
                         a.r = com.google.android.gms.internal.play_billing.t.a("BillingBroadcastManager", intent.getExtras());
                         Bundle extras2 = intent.getExtras();
                         if (extras2 == null) {
@@ -183,7 +183,7 @@ public final class y0 extends BroadcastReceiver {
                     long j2 = extras.getLong("billingClientTransactionId", 0L);
                     boolean z = extras.getBoolean("wasServiceAutoReconnected", false);
                     if (g3Var.equals(g3Var3) || g3Var.equals(g3Var2)) {
-                        x9.h hVar2 = e;
+                        x9.hShadow hVar2 = e;
                         int i5 = i2;
                         com.google.android.gms.internal.play_billing.g3 g3Var5 = g3Var;
                         ArrayList<String> stringArrayList = extras.getStringArrayList("INAPP_PURCHASE_DATA_LIST");
@@ -196,7 +196,7 @@ public final class y0 extends BroadcastReceiver {
                                 com.google.android.gms.internal.play_billing.t.g("BillingHelper", "Couldn't find single purchase data as well.");
                                 if (hVar2.a != 0) {
                                     v2.t tVar2 = (x9.y) lVar.u;
-                                    com.google.android.gms.internal.play_billing.b3 c = x9.x.c(i5, g3Var5);
+                                    com.google.android.gms.internal.play_billing.b3 c = x9.xShadow.c(i5, g3Var5);
                                     v2.t tVar3 = tVar2;
                                     tVar3.getClass();
                                     try {
@@ -243,7 +243,7 @@ public final class y0 extends BroadcastReceiver {
                         ((x9.o) lVar.t).a(hVar2, arrayList);
                     } else if (g3Var.equals(g3Var4)) {
                         if (e.a != 0) {
-                            x9.h hVar3 = e;
+                            x9.hShadow hVar3 = e;
                             d(extras, hVar3, i2, g3Var, j2, z);
                             com.github.rudroid.copilot.inapppurchase.billingclient.g gVar2 = (x9.o) lVar.t;
                             com.google.android.gms.internal.play_billing.p pVar = com.google.android.gms.internal.play_billing.r.s;
@@ -253,8 +253,8 @@ public final class y0 extends BroadcastReceiver {
                             lVar.getClass();
                             Log.isLoggable("BillingBroadcastManager", 5);
                             v2.t tVar4 = (x9.y) lVar.u;
-                            x9.h hVar4 = x9.z.h;
-                            tVar4.s(x9.x.b(141, i2, hVar4, (String) null, g3Var6), j2, z);
+                            x9.hShadow hVar4 = x9.z.h;
+                            tVar4.s(x9.xShadow.b(141, i2, hVar4, (String) null, g3Var6), j2, z);
                             com.github.rudroid.copilot.inapppurchase.billingclient.g gVar3 = (x9.o) lVar.t;
                             com.google.android.gms.internal.play_billing.p pVar2 = com.google.android.gms.internal.play_billing.r.s;
                             gVar3.a(hVar4, com.google.android.gms.internal.play_billing.v.v);
@@ -266,7 +266,7 @@ public final class y0 extends BroadcastReceiver {
     }
 
     public y0(o4 o4Var) {
-        c21.u.g(o4Var);
+        c21.uShadow.g(o4Var);
         this.d = o4Var;
     }
 }

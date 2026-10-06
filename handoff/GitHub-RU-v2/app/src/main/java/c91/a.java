@@ -6,7 +6,7 @@ import java.net.ProxySelector;
 import java.net.SocketAddress;
 import java.net.URI;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends ProxySelector {
@@ -19,7 +19,7 @@ public final class a extends ProxySelector {
     @Override // java.net.ProxySelector
     public final List select(URI uri) {
         if (uri != null) {
-            return d0.n(Proxy.NO_PROXY);
+            return d0Shadow.n(Proxy.NO_PROXY);
         }
         throw new IllegalArgumentException("uri must not be null");
     }

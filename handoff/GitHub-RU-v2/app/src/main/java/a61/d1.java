@@ -29,7 +29,7 @@ public final class d1Shadow extends Handler {
         }
         w0 w0Var = (w0) t0Var;
         w0Var.getClass();
-        v71.b0.z(v71.b0.c(w0Var.e), (a71.h) null, (v71.a0) null, new u0(w0Var, q0Var, null), 3);
+        v71.b0.z(v71.b0.c(w0Var.e), (a71.h) null, (v71.a0Shadow) null, new u0(w0Var, q0Var, null), 3);
         ArrayList arrayList = new ArrayList(this.c);
         int size = arrayList.size();
         int i = 0;
@@ -84,7 +84,7 @@ public final class d1Shadow extends Handler {
             String str2 = q0Var.a;
             o0Var.getClass();
             k71.k.g(str2, "sessionId");
-            v71.b0.z(v71.b0.c(o0Var.a), (a71.h) null, (v71.a0) null, new n0(o0Var, str2, cVar, 0), 3);
+            v71.b0.z(v71.b0.c(o0Var.a), (a71.h) null, (v71.a0Shadow) null, new n0(o0Var, str2, cVar, 0), 3);
         } catch (IllegalStateException unused) {
         }
     }

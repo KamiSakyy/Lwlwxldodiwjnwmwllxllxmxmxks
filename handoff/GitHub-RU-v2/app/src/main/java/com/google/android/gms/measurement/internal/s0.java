@@ -162,7 +162,7 @@ public final class s0 extends w1 {
         if (z2 || i < 5) {
             return;
         }
-        c21.u.g(str);
+        c21.uShadow.g(str);
         m1 m1Var = ((o1) ((androidx.compose.foundation.lazy.layout.s0) this).s).x;
         if (m1Var == null) {
             Log.println(6, J(), "Scheduler not set. Not logging error/warn");
@@ -186,7 +186,7 @@ public final class s0 extends w1 {
                     ((o1) ((androidx.compose.foundation.lazy.layout.s0) ((o1) ((androidx.compose.foundation.lazy.layout.s0) this).s).u).s).getClass();
                     this.w = "FA";
                 }
-                c21.u.g(this.w);
+                c21.uShadow.g(this.w);
                 str = this.w;
             } catch (Throwable th) {
                 throw th;

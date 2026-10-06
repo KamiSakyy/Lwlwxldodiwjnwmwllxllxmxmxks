@@ -48,7 +48,7 @@ public final class z {
 
     /* JADX WARN: Multi-variable type inference failed */
     public static final void a(ArrayList arrayList, LinkedHashMap linkedHashMap, ArrayList arrayList2) {
-        x61.r arrayList3;
+        x61.rShadow arrayList3;
         Integer num;
         if (arrayList.isEmpty()) {
             return;
@@ -89,17 +89,17 @@ public final class z {
         }
         if (!arrayList4.isEmpty()) {
             if (arrayList4.isEmpty()) {
-                arrayList3 = x61.r.r;
+                arrayList3 = x61.rShadow.r;
             } else {
                 arrayList3 = new ArrayList();
-                ArrayList q10 = sy.d0.q(new s4[]{x61.m.U(arrayList4)});
+                ArrayList q10 = sy.d0Shadow.q(new s4[]{x61.m.U(arrayList4)});
                 int size2 = arrayList4.size();
                 for (int i10 = 1; i10 < size2; i10++) {
                     if (((s4) arrayList4.get(i10)).f7822b.equals(((s4) x61.m.e0(q10)).f7822b)) {
                         q10.add(arrayList4.get(i10));
                     } else {
                         arrayList3.add(q10);
-                        q10 = sy.d0.q(new s4[]{arrayList4.get(i10)});
+                        q10 = sy.d0Shadow.q(new s4[]{arrayList4.get(i10)});
                     }
                 }
                 arrayList3.add(q10);

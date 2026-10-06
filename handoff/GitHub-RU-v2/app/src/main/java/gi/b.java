@@ -302,7 +302,7 @@ public final class b extends j implements j71.e {
                 try {
                     if (d1Var == 0) {
                         sy.y.j(obj);
-                        q1 z = b0.z((z) this.x, (h) null, (v71.a0) null, new cn.e(i3, r8, i4), 3);
+                        q1 z = b0.z((z) this.x, (h) null, (v71.a0Shadow) null, new cn.e(i3, r8, i4), 3);
                         this.x = z;
                         this.w = 1;
                         k = ((x71.l) obj4).k(this);
@@ -357,7 +357,7 @@ public final class b extends j implements j71.e {
                     if (!b0.v(zVar.K())) {
                         return a0Var;
                     }
-                    x71.h hVar = (x71.h) eVar2.f;
+                    x71.hShadow hVar = (x71.hShadow) eVar2.f;
                     this.x = zVar;
                     this.w = 1;
                     obj2 = hVar.k(this);
@@ -680,7 +680,7 @@ public final class b extends j implements j71.e {
                     return a0Var;
                 }
                 sy.y.j(obj);
-                x71.h hVar3 = ((k) this.x).g;
+                x71.hShadow hVar3 = ((k) this.x).g;
                 na.l lVar4 = new na.l((aa.d) obj4);
                 this.w = 1;
                 return hVar3.l(this, lVar4) == aVar20 ? aVar20 : a0Var;
@@ -776,7 +776,7 @@ public final class b extends j implements j71.e {
                     }
                     b0.m(((z) rVar2.s).K());
                     bVar = (b) rVar2.t;
-                    x71.h hVar6 = (x71.h) rVar2.u;
+                    x71.hShadow hVar6 = (x71.hShadow) rVar2.u;
                     this.x = bVar;
                     this.w = 1;
                     obj3 = hVar6.k(this);
@@ -797,7 +797,7 @@ public final class b extends j implements j71.e {
                     }
                     b0.m(((z) rVar2.s).K());
                     bVar = (b) rVar2.t;
-                    x71.h hVar62 = (x71.h) rVar2.u;
+                    x71.hShadow hVar62 = (x71.hShadow) rVar2.u;
                     this.x = bVar;
                     this.w = 1;
                     obj3 = hVar62.k(this);

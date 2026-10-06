@@ -10,19 +10,19 @@ import android.util.Log;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
     public SharedPreferences a;
-    public k41.g b;
+    public k41.gShadow b;
     public Object c;
-    public w21.g d;
+    public w21.gShadow d;
     public boolean e;
     public Boolean f;
-    public w21.g g;
+    public w21.gShadow g;
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x006c  */
     /* JADX WARN: Removed duplicated region for block: B:18:0x006e  */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public s(k41.g gVar) {
+    public s(k41.gShadow gVar) {
         Boolean bool;
         PackageManager packageManager;
         ApplicationInfo applicationInfo;

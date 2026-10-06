@@ -17,7 +17,7 @@ import hc0.su;
 import hc0.uu;
 import hc0.yg;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -28,9 +28,9 @@ public abstract class i {
         fb.Companion.getClass();
         x xVar = fb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("StatusContext");
+        List n = d0Shadow.n("StatusContext");
         List list = h20.e.a;
         s c = no.a.c(list, "selections", "StatusContext", n, list);
         bb.Companion.getClass();
@@ -46,13 +46,13 @@ public abstract class i {
         q0 q0Var = ku.a;
         k71.k.g(q0Var, "type");
         s mVar5 = new m("status", q0Var, (String) null, rVar, rVar, r2);
-        List n2 = d0.n("Commit");
+        List n2 = d0Shadow.n("Commit");
         List list2 = h20.d.a;
-        List r3 = x61.l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Commit", d0.n("Commit"), x61.l.r(new s[]{mVar3, mVar4, mVar5, no.a.c(list2, "selections", "Commit", n2, list2)})), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
+        List r3 = x61.l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("Commit", d0Shadow.n("Commit"), x61.l.r(new s[]{mVar3, mVar4, mVar5, no.a.c(list2, "selections", "Commit", n2, list2)})), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         yg.Companion.getClass();
         j0 j0Var = yg.a;
         k71.k.g(j0Var, "type");
         pm.Companion.getClass();
-        a = d0.n(new m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new u0(new t("id"))), r3));
+        a = d0Shadow.n(new m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new u0(new t("id"))), r3));
     }
 }

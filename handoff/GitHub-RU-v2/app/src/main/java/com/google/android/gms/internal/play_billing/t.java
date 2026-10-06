@@ -38,7 +38,7 @@ public abstract class t {
         bundle.putLong("billingClientSessionId", j);
     }
 
-    public static Bundle c(x9.h hVar, int i) {
+    public static Bundle c(x9.hShadow hVar, int i) {
         Bundle bundle = new Bundle();
         bundle.putInt("RESPONSE_CODE", hVar.a);
         bundle.putString("DEBUG_MESSAGE", hVar.c);
@@ -91,15 +91,15 @@ public abstract class t {
         return bundle;
     }
 
-    public static x9.h e(Intent intent, String str) {
+    public static x9.hShadow e(Intent intent, String str) {
         if (intent != null) {
-            androidx.compose.runtime.i1 a2 = x9.h.a();
+            androidx.compose.runtime.i1 a2 = x9.hShadow.a();
             a2.r = a(str, intent.getExtras());
             a2.t = f(str, intent.getExtras());
             return a2.l();
         }
         Log.isLoggable("BillingHelper", 5);
-        androidx.compose.runtime.i1 a3 = x9.h.a();
+        androidx.compose.runtime.i1 a3 = x9.hShadow.a();
         a3.r = 6;
         a3.t = "An internal error occurred.";
         return a3.l();

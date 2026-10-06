@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 implements aaShadow.a {
     public static final z0 a = new z0();
-    public static final List b = sy.d0.o("__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "pullRequest", "diffLines", "comments");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "pullRequest", "diffLines", "comments");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0038, code lost:
     
@@ -185,11 +185,11 @@ public final class z0 implements aaShadow.a {
         bVar.b(fVar, wVar, u1Var.b);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(u1Var.c, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(u1Var.c, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(y0.a, false)).b(fVar, wVar, u1Var.d);
         fVar.z0("viewerCanResolve");
-        jo.f4.C(u1Var.e, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(u1Var.f, bVar2, fVar, wVar, "pullRequest");
+        jo.f4Shadow.C(u1Var.e, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(u1Var.f, bVar2, fVar, wVar, "pullRequest");
         aa.c.c(w0.a, true).b(fVar, wVar, u1Var.g);
         fVar.z0("diffLines");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(s0.a, true)))).b(fVar, wVar, u1Var.h);

@@ -1,6 +1,6 @@
 package x7;
 
-import sy.r;
+import sy.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class f implements v7.c {
@@ -21,7 +21,7 @@ public abstract class f implements v7.c {
 
     public final void f() {
         if (this.f33952t) {
-            r.w("statement is closed", 21);
+            rShadow.w("statement is closed", 21);
             throw null;
         }
     }

@@ -1,7 +1,7 @@
 package hp;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 implements aa.a {
@@ -23,11 +23,11 @@ public final class a0 implements aa.a {
             eVar.s0();
             wVar2 = z.c(eVar, wVar);
         }
-        return new x(str, wVar2);
+        return new xShadow(str, wVar2);
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

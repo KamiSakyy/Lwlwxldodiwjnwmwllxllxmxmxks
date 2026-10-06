@@ -6,7 +6,7 @@ import jo.td0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ny implements aaShadow.a {
     public static final ny a = new ny();
-    public static final List b = sy.d0.n("success");
+    public static final List b = sy.d0Shadow.n("success");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

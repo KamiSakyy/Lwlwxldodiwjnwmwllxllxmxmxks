@@ -6,7 +6,7 @@ import com.github.service.models.response.CheckStatusState;
 public final class t0 {
     public static final boolean a(mn.a aVar) {
         if ((aVar != null ? aVar.e : null) != CheckStatusState.COMPLETED || aVar.f == null) {
-            return x61.m.N(sy.d0.o(new CheckStatusState[]{CheckStatusState.REQUESTED, CheckStatusState.UNKNOWN__}), aVar != null ? aVar.e : null);
+            return x61.m.N(sy.d0Shadow.o(new CheckStatusState[]{CheckStatusState.REQUESTED, CheckStatusState.UNKNOWN__}), aVar != null ? aVar.e : null);
         }
         return true;
     }

@@ -3,7 +3,7 @@ package mz;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.jq;
 import m10.sa;
 import m10.uq;
@@ -11,7 +11,7 @@ import m10.uq;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = sy.d0.o("id", "threadType", "title", "isUnread", "unreadItemsCount", "lastUpdatedAt", "subscriptionStatus", "summaryItemAuthor", "summaryItemBody", "isArchived", "isSaved", "url", "optionalList", "reason", "optionalSubject", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "threadType", "title", "isUnread", "unreadItemsCount", "lastUpdatedAt", "subscriptionStatus", "summaryItemAuthor", "summaryItemBody", "isArchived", "isSaved", "url", "optionalList", "reason", "optionalSubject", "__typename");
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x002b. Please report as an issue. */
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -34,7 +34,7 @@ public final class d implements aa.a {
         String str4 = null;
         Boolean bool6 = null;
         String str5 = null;
-        lz.a0 a0Var = null;
+        lz.a0Shadow a0Var = null;
         jq jqVar = null;
         lz.b0 b0Var = null;
         String str6 = null;
@@ -55,7 +55,7 @@ public final class d implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -106,7 +106,7 @@ public final class d implements aa.a {
                     str5 = (String) aa.c.a.a(eVar, wVar);
                 case 12:
                     bool3 = bool4;
-                    a0Var = (lz.a0) aa.c.b(aa.c.c(z.a, true)).a(eVar, wVar);
+                    a0Var = (lz.a0Shadow) aa.c.b(aa.c.c(z.a, true)).a(eVar, wVar);
                     bool4 = bool3;
                 case 13:
                     jqVar = (jq) aa.c.b(n10.b.m).a(eVar, wVar);
@@ -187,7 +187,7 @@ public final class d implements aa.a {
         bVar.b(fVar, wVar, eVar.c);
         fVar.z0("isUnread");
         aa.b bVar2 = aa.c.f;
-        f4.C(eVar.d, bVar2, fVar, wVar, "unreadItemsCount");
+        f4Shadow.C(eVar.d, bVar2, fVar, wVar, "unreadItemsCount");
         fVar.z(eVar.e);
         fVar.z0("lastUpdatedAt");
         sa.Companion.getClass();
@@ -199,8 +199,8 @@ public final class d implements aa.a {
         fVar.z0("summaryItemBody");
         aa.c.i.b(fVar, wVar, eVar.i);
         fVar.z0("isArchived");
-        f4.C(eVar.j, bVar2, fVar, wVar, "isSaved");
-        f4.C(eVar.k, bVar2, fVar, wVar, "url");
+        f4Shadow.C(eVar.j, bVar2, fVar, wVar, "isSaved");
+        f4Shadow.C(eVar.k, bVar2, fVar, wVar, "url");
         bVar.b(fVar, wVar, eVar.l);
         fVar.z0("optionalList");
         aa.c.b(aa.c.c(z.a, true)).b(fVar, wVar, eVar.m);

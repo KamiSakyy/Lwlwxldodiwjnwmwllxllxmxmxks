@@ -7,7 +7,7 @@ import kc0.f70;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qt implements aaShadow.a {
     public static final qt a = new qt();
-    public static final List b = sy.d0.n("updateUserDashboardPins");
+    public static final List b = sy.d0Shadow.n("updateUserDashboardPins");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

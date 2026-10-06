@@ -1,7 +1,7 @@
 package ix0;
 
 import com.github.service.models.response.projects.ProjectFieldType;
-import pz0.jo;
+import pz0.joShadow;
 import pz0.ko;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -11,92 +11,92 @@ public abstract /* synthetic */ class a {
     static {
         int[] iArr = new int[ko.values().length];
         try {
-            jo joVar = ko.Companion;
+            joShadow joVar = ko.Companion;
             iArr[0] = 1;
         } catch (NoSuchFieldError unused) {
         }
         try {
-            jo joVar2 = ko.Companion;
+            joShadow joVar2 = ko.Companion;
             iArr[1] = 2;
         } catch (NoSuchFieldError unused2) {
         }
         try {
-            jo joVar3 = ko.Companion;
+            joShadow joVar3 = ko.Companion;
             iArr[3] = 3;
         } catch (NoSuchFieldError unused3) {
         }
         try {
-            jo joVar4 = ko.Companion;
+            joShadow joVar4 = ko.Companion;
             iArr[4] = 4;
         } catch (NoSuchFieldError unused4) {
         }
         try {
-            jo joVar5 = ko.Companion;
+            joShadow joVar5 = ko.Companion;
             iArr[5] = 5;
         } catch (NoSuchFieldError unused5) {
         }
         try {
-            jo joVar6 = ko.Companion;
+            joShadow joVar6 = ko.Companion;
             iArr[6] = 6;
         } catch (NoSuchFieldError unused6) {
         }
         try {
-            jo joVar7 = ko.Companion;
+            joShadow joVar7 = ko.Companion;
             iArr[7] = 7;
         } catch (NoSuchFieldError unused7) {
         }
         try {
-            jo joVar8 = ko.Companion;
+            joShadow joVar8 = ko.Companion;
             iArr[9] = 8;
         } catch (NoSuchFieldError unused8) {
         }
         try {
-            jo joVar9 = ko.Companion;
+            joShadow joVar9 = ko.Companion;
             iArr[10] = 9;
         } catch (NoSuchFieldError unused9) {
         }
         try {
-            jo joVar10 = ko.Companion;
+            joShadow joVar10 = ko.Companion;
             iArr[11] = 10;
         } catch (NoSuchFieldError unused10) {
         }
         try {
-            jo joVar11 = ko.Companion;
+            joShadow joVar11 = ko.Companion;
             iArr[13] = 11;
         } catch (NoSuchFieldError unused11) {
         }
         try {
-            jo joVar12 = ko.Companion;
+            joShadow joVar12 = ko.Companion;
             iArr[14] = 12;
         } catch (NoSuchFieldError unused12) {
         }
         try {
-            jo joVar13 = ko.Companion;
+            joShadow joVar13 = ko.Companion;
             iArr[16] = 13;
         } catch (NoSuchFieldError unused13) {
         }
         try {
-            jo joVar14 = ko.Companion;
+            joShadow joVar14 = ko.Companion;
             iArr[15] = 14;
         } catch (NoSuchFieldError unused14) {
         }
         try {
-            jo joVar15 = ko.Companion;
+            joShadow joVar15 = ko.Companion;
             iArr[2] = 15;
         } catch (NoSuchFieldError unused15) {
         }
         try {
-            jo joVar16 = ko.Companion;
+            joShadow joVar16 = ko.Companion;
             iArr[8] = 16;
         } catch (NoSuchFieldError unused16) {
         }
         try {
-            jo joVar17 = ko.Companion;
+            joShadow joVar17 = ko.Companion;
             iArr[12] = 17;
         } catch (NoSuchFieldError unused17) {
         }
         try {
-            jo joVar18 = ko.Companion;
+            joShadow joVar18 = ko.Companion;
             iArr[17] = 18;
         } catch (NoSuchFieldError unused18) {
         }

@@ -1,11 +1,11 @@
 package a40;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x implements aa.a {
-    public static final x a = new x();
+public final class xShadow implements aa.a {
+    public static final xShadow a = new xShadow();
     public static final List b = d0.o("id", "name", "owner", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {

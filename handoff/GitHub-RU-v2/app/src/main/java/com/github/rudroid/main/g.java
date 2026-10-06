@@ -1,6 +1,6 @@
 package com.github.rudroid.main;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class g {
@@ -38,6 +38,6 @@ public final class g {
     }
 
     public final String toString() {
-        return f4.s(a0.s0.o("LoggedAccountInfo(avatarUrl=", this.f16846a, ", login=", this.f16847b, ", isDotcomUser="), this.f16848c, ")");
+        return f4Shadow.s(a0.s0.o("LoggedAccountInfo(avatarUrl=", this.f16846a, ", login=", this.f16847b, ", isDotcomUser="), this.f16848c, ")");
     }
 }

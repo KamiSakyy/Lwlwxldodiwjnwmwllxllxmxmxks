@@ -16,10 +16,10 @@ import m10.mr;
 import m10.oj;
 import m10.p00;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class d {
@@ -29,13 +29,13 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("endCursor", xVar, (String) null, rVar, rVar, rVar);
         wg.Companion.getClass();
         x xVar2 = wg.a;
         List r = l.r(new m[]{mVar, new m("hasNextPage", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("hasPreviousPage", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("IssueType");
+        List n = d0Shadow.n("IssueType");
         List list = ht.a.a;
         s c = no.a.c(list, "selections", "IssueType", n, list);
         ah.Companion.getClass();

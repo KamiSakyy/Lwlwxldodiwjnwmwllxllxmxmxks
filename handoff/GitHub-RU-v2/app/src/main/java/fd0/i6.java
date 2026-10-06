@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i6 implements aaShadow.a {
     public static final i6 a = new i6();
-    public static final List b = sy.d0.n("mergeMethod");
+    public static final List b = sy.d0Shadow.n("mergeMethod");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

@@ -12,7 +12,7 @@ import kotlin.NoWhenBranchMatchedException;
 import m7.y;
 import ur0.j0;
 import ur0.k0;
-import x61.r;
+import x61.rShadow;
 import xt0.t1;
 import xt0.u1;
 import yz0.b2;
@@ -51,7 +51,7 @@ public abstract class c {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.List, x61.r] */
+    /* JADX WARN: Type inference failed for: r0v1, types: [java.util.List, x61.rShadow] */
     public static final List c(is0.e eVar) {
         ArrayList arrayList;
         List<is0.b> list;
@@ -70,7 +70,7 @@ public abstract class c {
                 }
             }
         }
-        x61.r r0 = (x61.r) (r.r);
+        x61.rShadow r0 = (x61.rShadow) (rShadow.r);
         if (arrayList == null) {
             arrayList = r0;
         }
@@ -154,7 +154,7 @@ public abstract class c {
         String str = lVar.b;
         Iterable iterable = lVar.f.a;
         if (iterable == null) {
-            iterable = r.r;
+            iterable = rShadow.r;
         }
         ArrayList S = x61.m.S(iterable);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));

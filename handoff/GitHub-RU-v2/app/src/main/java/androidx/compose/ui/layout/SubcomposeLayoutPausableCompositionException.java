@@ -4,7 +4,7 @@ package androidx.compose.ui.layout;
 final class SubcomposeLayoutPausableCompositionException extends IllegalStateException {
     @Override // java.lang.Throwable
     public final String getMessage() {
-        sy.d0.i();
+        sy.d0Shadow.i();
         throw null;
     }
 }

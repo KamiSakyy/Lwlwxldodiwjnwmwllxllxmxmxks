@@ -7,7 +7,7 @@ public abstract class za {
     public static final aa.q0 b;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         b = new aa.q0("GistFile", rVar, rVar);
     }
 }

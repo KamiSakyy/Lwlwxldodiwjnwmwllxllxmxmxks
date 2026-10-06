@@ -19,7 +19,7 @@ public final class hc {
         t = hcVarArr;
         v8.l0.t(hcVarArr);
         Companion = new gc();
-        sy.d0.o(new String[]{"CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED"});
+        sy.d0Shadow.o(new String[]{"CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED"});
     }
 
     public hc(String str, int i, String str2) {

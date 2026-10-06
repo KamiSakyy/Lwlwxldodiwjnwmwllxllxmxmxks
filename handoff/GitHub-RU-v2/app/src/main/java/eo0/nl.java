@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nl implements aaShadow.a {
     public static final nl a = new nl();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -60,12 +60,12 @@ public final class nl implements aaShadow.a {
         aa.c.b(aa.c.c(ap0.c4.a, true)).b(fVar, wVar, z3Var.c);
         fVar.z0("viewerCanPush");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(z3Var.d, bVar3, fVar, wVar, "ref");
+        jo.f4Shadow.C(z3Var.d, bVar3, fVar, wVar, "ref");
         aa.c.b(aa.c.c(ap0.k4.a, false)).b(fVar, wVar, z3Var.e);
         fVar.z0("owner");
         aa.c.c(ap0.j4.a, false).b(fVar, wVar, z3Var.f);
         fVar.z0("isInOrganization");
-        jo.f4.C(z3Var.g, bVar3, fVar, wVar, "__typename");
+        jo.f4Shadow.C(z3Var.g, bVar3, fVar, wVar, "__typename");
         bVar2.b(fVar, wVar, z3Var.h);
     }
 }

@@ -133,6 +133,6 @@ public final class a6 {
     public /* synthetic */ a6(List list, PullRequestMergeMethod pullRequestMergeMethod, yz0.s2 s2Var, List list2, int i) {
         this(r1 != 0 ? r2 : list, (i & 2) != 0 ? PullRequestMergeMethod.UNKNOWN__ : pullRequestMergeMethod, (i & 4) != 0 ? null : "email@github.com", (i & 8) != 0 ? null : s2Var, null, null, (i & 64) != 0 ? r2 : list2, (i & 128) != 0 ? 0 : 4);
         int i2 = i & 1;
-        List list3 = x61.r.r;
+        List list3 = x61.rShadow.r;
     }
 }

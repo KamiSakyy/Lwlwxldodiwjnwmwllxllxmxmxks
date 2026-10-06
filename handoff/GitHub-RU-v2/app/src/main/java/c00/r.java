@@ -35,7 +35,7 @@ import sy.y;
 import vz.z;
 import w61.a0;
 import xn.s0;
-import xn.x;
+import xn.xShadow;
 import z01.z0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -168,8 +168,8 @@ public final class r implements y71.j {
                 if (i != 0) {
                     y.j(obj2);
                     y71.j jVar = (y71.j) this.s;
-                    x xVar = (x) obj;
-                    x a = x.a(xVar, ((s0) this.t).a, xVar.c, null, null, xVar.j, 15865);
+                    xShadow xVar = (xShadow) obj;
+                    xShadow a = xShadow.a(xVar, ((s0) this.t).a, xVar.c, null, null, xVar.j, 15865);
                     gVar.v = 1;
                     if (jVar.c(a, gVar) == aVar) {
                         return aVar;
@@ -410,14 +410,14 @@ public final class r implements y71.j {
                             vz.y yVar = ((vz.v) obj).a;
                             vz.a0 a0Var = (yVar == null || (zVar2 = yVar.c) == null) ? null : zVar2.b.b;
                             ArrayList S = (yVar == null || (zVar = yVar.c) == null || (list = zVar.b.c) == null) ? null : x61.m.S(list);
-                            x61.r rVar = x61.r.r;
+                            x61.rShadow rVar = x61.rShadow.r;
                             if (a0Var == null || S == null) {
                                 jVar = jVar5;
                                 aVar = aVar6;
                                 kVar = new w61.k(bVar, rVar);
                             } else {
                                 ArrayList S2 = x61.m.S(sy.q.i(bVar));
-                                int s = x61.x.s(x61.n.F(S2, 10));
+                                int s = x61.xShadow.s(x61.n.F(S2, 10));
                                 if (s < 16) {
                                     s = 16;
                                 }
@@ -438,7 +438,7 @@ public final class r implements y71.j {
                                 while (i29 < size2) {
                                     Object obj4 = S.get(i29);
                                     int i31 = i29 + 1;
-                                    vz.x xVar = (vz.x) obj4;
+                                    vz.xShadow xVar = (vz.x) obj4;
                                     String str2 = xVar.b;
                                     xz.f fVar4 = xVar.c;
                                     if (str2 == null) {
@@ -546,7 +546,7 @@ public final class r implements y71.j {
                     Object f = eVar5.f(cVar, new c2.b(j));
                     return f == b71.a.r ? f : a0Var2;
                 }
-                v71.b0.z((v71.z) this.t, (a71.h) null, (v71.a0) null, new y0(eVar5, j, (a71.c) null, 0), 3);
+                v71.b0.z((v71.z) this.t, (a71.h) null, (v71.a0Shadow) null, new y0(eVar5, j, (a71.c) null, 0), 3);
                 return a0Var2;
             case 2:
                 if (cVar instanceof do0.k) {
@@ -661,14 +661,14 @@ public final class r implements y71.j {
                                     g2Var = new g2(45, 0, c0.d);
                                 }
                             }
-                            v71.b0.z(zVar5, (a71.h) null, (v71.a0) null, new y1(gVar4, f2, g2Var, (a71.c) null), 3);
+                            v71.b0.z(zVar5, (a71.h) null, (v71.a0Shadow) null, new y1(gVar4, f2, g2Var, (a71.c) null), 3);
                         } else {
                             j0.h hVar2 = (j0.h) gVar4.e;
                             g2 g2Var2 = e1.f.a;
                             if (!(hVar2 instanceof j0.f) && !(hVar2 instanceof j0.d) && (hVar2 instanceof j0.b)) {
                                 g2Var2 = new g2(150, 0, c0.d);
                             }
-                            v71.b0.z(zVar5, (a71.h) null, (v71.a0) null, new a61.n0(gVar4, g2Var2, (a71.c) null, 20), 3);
+                            v71.b0.z(zVar5, (a71.h) null, (v71.a0Shadow) null, new a61.n0(gVar4, g2Var2, (a71.c) null, 20), 3);
                         }
                         gVar4.e = hVar;
                     }
@@ -759,14 +759,14 @@ public final class r implements y71.j {
                             yx0.y yVar2 = ((yx0.v) obj).a;
                             yx0.a0 a0Var3 = (yVar2 == null || (zVar4 = yVar2.c) == null) ? null : zVar4.b.b;
                             ArrayList S3 = (yVar2 == null || (zVar3 = yVar2.c) == null || (list2 = zVar3.b.c) == null) ? null : x61.m.S(list2);
-                            x61.r rVar2 = x61.r.r;
+                            x61.rShadow rVar2 = x61.rShadow.r;
                             if (a0Var3 == null || S3 == null) {
                                 jVar3 = jVar9;
                                 aVar3 = aVar12;
                                 kVar3 = new w61.k(bVar2, rVar2);
                             } else {
                                 ArrayList S4 = x61.m.S(t.e.k(bVar2));
-                                int s2 = x61.x.s(x61.n.F(S4, 10));
+                                int s2 = x61.xShadow.s(x61.n.F(S4, 10));
                                 if (s2 < 16) {
                                     s2 = 16;
                                 }
@@ -787,7 +787,7 @@ public final class r implements y71.j {
                                 while (i37 < size4) {
                                     Object obj10 = S3.get(i37);
                                     int i38 = i37 + 1;
-                                    yx0.x xVar2 = (yx0.x) obj10;
+                                    yx0.xShadow xVar2 = (yx0.x) obj10;
                                     String str6 = xVar2.b;
                                     ay0.f fVar6 = xVar2.c;
                                     if (str6 == null) {
@@ -1211,7 +1211,7 @@ public final class r implements y71.j {
                                 i52++;
                                 arrayList14.add(((kk.g) aVar23.s).a((b01.b) obj23));
                             }
-                            jk.h hVar4 = new jk.h(str9, arrayList14, aVar23.E(x61.r.r), oVar2.c);
+                            jk.h hVar4 = new jk.h(str9, arrayList14, aVar23.E(x61.rShadow.r), oVar2.c);
                             f0Var.v = 1;
                             if (jVar18.c(hVar4, f0Var) == aVar22) {
                                 return aVar22;

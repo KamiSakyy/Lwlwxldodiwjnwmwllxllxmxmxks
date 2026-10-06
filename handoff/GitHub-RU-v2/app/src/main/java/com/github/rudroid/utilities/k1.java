@@ -40,7 +40,7 @@ public final /* synthetic */ class k1 implements j71.e {
             case 2:
                 androidx.compose.runtime.s sVar3 = (androidx.compose.runtime.s) obj;
                 int intValue3 = ((Integer) obj2).intValue();
-                float f = qg.p.a;
+                float f = qg.pShadow.a;
                 if (sVar3.S(intValue3 & 1, (intValue3 & 3) != 2)) {
                     androidx.compose.runtime.t.a(f1.e.f(((f1.y1) sVar3.j(f1.z1.a)).q, f1.g2.a), eVar2, sVar3, 8);
                 } else {

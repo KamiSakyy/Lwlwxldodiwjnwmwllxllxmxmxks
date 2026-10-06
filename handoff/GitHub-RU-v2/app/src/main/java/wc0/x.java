@@ -1,12 +1,12 @@
 package wc0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class x implements aa.a {
-    public static final x a = new x();
-    public static final List b = sy.d0.n("totalCount");
+public final class xShadow implements aa.a {
+    public static final xShadow a = new xShadow();
+    public static final List b = sy.d0Shadow.n("totalCount");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

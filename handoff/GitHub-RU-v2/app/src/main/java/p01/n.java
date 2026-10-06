@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 import l7.c0;
 import yz0.n5;
 
@@ -67,7 +67,7 @@ public final class n implements Parcelable {
     }
 
     public final int hashCode() {
-        int b = s0.b(this.v, h1.i(x.i.e(f4.b(this.s, this.r.hashCode() * 31, 31), 31, this.t), this.u, 31), 31);
+        int b = s0.b(this.v, h1.i(x.i.e(f4Shadow.b(this.s, this.r.hashCode() * 31, 31), 31, this.t), this.u, 31), 31);
         String str = this.w;
         int e = x.i.e((this.z.hashCode() + s0.b(this.y, h1.i((b + (str == null ? 0 : str.hashCode())) * 31, this.x, 31), 31)) * 31, 31, this.A);
         String str2 = this.B;

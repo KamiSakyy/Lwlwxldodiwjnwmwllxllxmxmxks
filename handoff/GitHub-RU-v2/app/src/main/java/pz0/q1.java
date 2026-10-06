@@ -7,8 +7,8 @@ public abstract class q1 {
     public static final p1 Companion = new p1();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("AutoMergeEnabledEvent", n, sy.d0.n(wk.a));
+        new aa.q0("AutoMergeEnabledEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.viewmodel.g;
 import java.util.concurrent.CancellationException;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.w1;
 import y71.y1;
 
@@ -49,10 +49,10 @@ public final class z extends k1 implements com.github.rudroid.utilities.viewmode
         this.f12622t = cVar;
         this.f12623u = bVar;
         this.f12624v = hVar;
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f12625w = c10;
         this.f12626x = new i1(c10);
-        y1 c11 = n1.c(new u0((Object) null));
+        y1 c11 = n1Shadow.c(new u0((Object) null));
         this.f12627y = c11;
         this.f12628z = new i1(c11);
         q1 q1Var = this.A;
@@ -61,7 +61,7 @@ public final class z extends k1 implements com.github.rudroid.utilities.viewmode
             if (q1Var2 != null) {
                 q1Var2.m((CancellationException) null);
             }
-            this.A = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new u(this, null), 3);
+            this.A = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u(this, null), 3);
         }
     }
 

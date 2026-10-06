@@ -1,6 +1,6 @@
 package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 {
+public final class a0Shadow {
     public Object c(Object p1) { return null; }
 }

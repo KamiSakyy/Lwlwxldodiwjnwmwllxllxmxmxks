@@ -26,7 +26,7 @@ public abstract class a {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("color", b, (String) null, rVar, rVar, rVar);
         ch.Companion.getClass();
         x xVar2 = ch.a;

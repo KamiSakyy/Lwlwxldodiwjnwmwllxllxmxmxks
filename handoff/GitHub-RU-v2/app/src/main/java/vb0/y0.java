@@ -117,7 +117,7 @@ public final class y0 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     u10.q4 q4Var = ((u10.s4) obj).a;
-                    yz0.x7 n = (q4Var == null || (t4Var = q4Var.a) == null) ? null : sy.o.n(t4Var.c);
+                    yz0.x7 n = (q4Var == null || (t4Var = q4Var.a) == null) ? null : sy.oShadow.n(t4Var.c);
                     if (n != null) {
                         h2Var.v = 1;
                         if (this.s.c(n, h2Var) == aVar) {
@@ -219,7 +219,7 @@ public final class y0 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     dr drVar = ((br) obj).a;
-                    yz0.x7 n = (drVar == null || (crVar = drVar.a) == null) ? null : sy.o.n(crVar.c);
+                    yz0.x7 n = (drVar == null || (crVar = drVar.a) == null) ? null : sy.oShadow.n(crVar.c);
                     if (n != null) {
                         k2Var.v = 1;
                         if (this.s.c(n, k2Var) == aVar) {
@@ -389,7 +389,7 @@ public final class y0 implements y71.j {
                     na0.o0 o0Var = ((na0.k0) obj).a;
                     na0.n0 n0Var = null;
                     if (((o0Var == null || (l0Var2 = o0Var.b) == null) ? null : l0Var2.b) != null) {
-                        w50.x xVar = o0Var.b.b.c;
+                        w50.xShadow xVar = o0Var.b.b.c;
                         String str = xVar.b;
                         w50.w wVar = xVar.c;
                         int i3 = wVar.b;
@@ -562,7 +562,7 @@ public final class y0 implements y71.j {
     /* JADX WARN: Type inference failed for: r1v180 */
     /* JADX WARN: Type inference failed for: r1v181 */
     /* JADX WARN: Type inference failed for: r1v182, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v184, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r1v184, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r1v187, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r5v11, types: [b01.h] */
     /* JADX WARN: Type inference failed for: r5v8, types: [b01.h] */
@@ -663,7 +663,7 @@ public final class y0 implements y71.j {
                             p9 p9Var = l9Var.a;
                             List list2 = p9Var != null ? p9Var.b.b : null;
                             if (list2 == null) {
-                                list2 = x61.r.r;
+                                list2 = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(list2);
                             ArrayList arrayList2 = new ArrayList(x61.n.F(S, 10));
@@ -672,7 +672,7 @@ public final class y0 implements y71.j {
                             while (i29 < size) {
                                 Object obj5 = S.get(i29);
                                 i29++;
-                                arrayList2.add(sy.p.b(((n9) obj5).c));
+                                arrayList2.add(sy.pShadow.b(((n9) obj5).c));
                             }
                             p9 p9Var2 = l9Var.a;
                             b01.d dVar = new b01.d(p9Var2 != null ? p9Var2.a : null, arrayList2, new x01.i(p9Var2 != null ? p9Var2.b.a.b : null, p9Var2 != null ? p9Var2.b.a.a : false, false));
@@ -708,7 +708,7 @@ public final class y0 implements y71.j {
                         if (i2 != 0) {
                             sy.y.j(obj6);
                             t9 t9Var = ((s9) obj).a;
-                            b01.e b = t9Var != null ? sy.p.b(t9Var.c) : null;
+                            b01.e b = t9Var != null ? sy.pShadow.b(t9Var.c) : null;
                             z0Var.v = 1;
                             if (this.s.c(b, z0Var) == aVar3) {
                                 return aVar3;
@@ -822,7 +822,7 @@ public final class y0 implements y71.j {
                             im imVar = ((em) obj).a;
                             List list3 = imVar != null ? imVar.b.a : null;
                             if (list3 == null) {
-                                list3 = x61.r.r;
+                                list3 = x61.rShadow.r;
                             }
                             ArrayList S2 = x61.m.S(list3);
                             ArrayList arrayList3 = new ArrayList(x61.n.F(S2, 10));
@@ -942,7 +942,7 @@ public final class y0 implements y71.j {
                         if (i9 != 0) {
                             sy.y.j(obj11);
                             s20.l lVar = ((s20.j) obj).a;
-                            b01.f c2 = (lVar == null || (kVar = lVar.a) == null) ? null : sy.t.c(kVar.c);
+                            b01.f c2 = (lVar == null || (kVar = lVar.a) == null) ? null : sy.tShadow.c(kVar.c);
                             if (c2 != null) {
                                 g1Var.v = 1;
                                 if (this.s.c(c2, g1Var) == aVar7) {
@@ -999,7 +999,7 @@ public final class y0 implements y71.j {
                             String str8 = str6;
                             e50.d1 d1Var = hVar.m;
                             g70.a aVar10 = hVar.k;
-                            b01.g c3 = sy.r.c(cVar2, str7, cVar3, aVar9, nVar, z, z2, z3, z4, str8, false, d1Var, aVar10.b, aVar10.c, sy.r.A(hVar));
+                            b01.g c3 = sy.rShadow.c(cVar2, str7, cVar3, aVar9, nVar, z, z2, z3, z4, str8, false, d1Var, aVar10.b, aVar10.c, sy.rShadow.A(hVar));
                             j1Var.v = 1;
                             if (this.s.c(c3, j1Var) == aVar8) {
                                 return aVar8;
@@ -1126,7 +1126,7 @@ public final class y0 implements y71.j {
                             h50 h50Var = ((g50) obj).a;
                             List<ea0.h> list4 = (h50Var == null || (i50Var = h50Var.a) == null) ? null : i50Var.c.a.a;
                             if (list4 == null) {
-                                list4 = x61.r.r;
+                                list4 = x61.rShadow.r;
                             }
                             ArrayList arrayList10 = new ArrayList();
                             for (ea0.h hVar2 : list4) {
@@ -1283,7 +1283,7 @@ public final class y0 implements y71.j {
                             sy.y.j(obj21);
                             Iterable<tr> iterable = ((vr) obj).a;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList arrayList11 = new ArrayList(x61.n.F(iterable, 10));
                             for (tr trVar : iterable) {
@@ -1291,14 +1291,14 @@ public final class y0 implements y71.j {
                                 String str12 = trVar.b;
                                 int i50 = trVar.c;
                                 xr xrVar = trVar.d;
-                                arrayList11.add(new yz0.f1(i50, str11, str12, xrVar != null ? xrVar.a : ""));
+                                arrayList11.add(new yz0.f1Shadow(i50, str11, str12, xrVar != null ? xrVar.a : ""));
                             }
                             List v0 = x61.m.v0(arrayList11, new v1(0));
                             ArrayList arrayList12 = new ArrayList();
                             ArrayList arrayList13 = new ArrayList();
                             ArrayList arrayList14 = new ArrayList();
                             for (Object obj22 : v0) {
-                                Entry$EntryType entry$EntryType = ((yz0.f1) obj22).e;
+                                Entry$EntryType entry$EntryType = ((yz0.f1Shadow) obj22).e;
                                 if (entry$EntryType == Entry$EntryType.TREE) {
                                     arrayList12.add(obj22);
                                 } else if (entry$EntryType == Entry$EntryType.COMMIT) {
@@ -1339,7 +1339,7 @@ public final class y0 implements y71.j {
                         i19 = x1Var.v;
                         if (i19 != 0) {
                             sy.y.j(obj23);
-                            u10.t tVar = ((u10.v) obj).a;
+                            u10.tShadow tVar = ((u10.v) obj).a;
                             Boolean valueOf2 = Boolean.valueOf((tVar == null || (bool = tVar.a) == null) ? false : bool.booleanValue());
                             x1Var.v = 1;
                             if (this.s.c(valueOf2, x1Var) == aVar18) {
@@ -1465,7 +1465,7 @@ public final class y0 implements y71.j {
                             sy.y.j(obj28);
                             Iterable<ea0.h> iterable2 = ((lm) obj).a.c.a.a;
                             if (iterable2 == null) {
-                                iterable2 = x61.r.r;
+                                iterable2 = x61.rShadow.r;
                             }
                             ArrayList arrayList17 = new ArrayList();
                             for (ea0.h hVar3 : iterable2) {
@@ -1591,7 +1591,7 @@ public final class y0 implements y71.j {
                                 }
                             }
                             if (r1 == 0) {
-                                r1 = x61.r.r;
+                                r1 = x61.rShadow.r;
                             }
                             g2Var.v = 1;
                             if (this.s.c((Object) r1, g2Var) == aVar25) {
@@ -1648,7 +1648,7 @@ public final class y0 implements y71.j {
                                 if (o0Var != null && (l0Var = o0Var.b) != null) {
                                     n0Var = l0Var.c;
                                 }
-                                obj3 = n0Var != null ? com.google.android.gms.internal.measurement.d5.x(o0Var.b.c.c).c : x61.r.r;
+                                obj3 = n0Var != null ? com.google.android.gms.internal.measurement.d5.x(o0Var.b.c.c).c : x61.rShadow.r;
                             }
                             t2Var.v = 1;
                             if (this.s.c(obj3, t2Var) == aVar26) {

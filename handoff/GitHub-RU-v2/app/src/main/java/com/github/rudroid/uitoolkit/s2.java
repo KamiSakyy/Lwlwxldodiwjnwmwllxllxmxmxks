@@ -1,6 +1,6 @@
 package com.github.rudroid.uitoolkit;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s2 {
@@ -37,7 +37,7 @@ public final class s2 {
     public final String toString() {
         StringBuilder n = a0.s0.n(this.b, "SimpleReaction(emoji=", this.a, ", count=", ", subjectId=");
         f1.e.x(n, this.c, ", contentType=", this.d, ", viewerHasReacted=");
-        return f4.s(n, this.e, ")");
+        return f4Shadow.s(n, this.e, ")");
     }
     public Object a() { return null; }
 }

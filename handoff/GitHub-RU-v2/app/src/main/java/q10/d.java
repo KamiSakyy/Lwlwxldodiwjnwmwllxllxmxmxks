@@ -39,7 +39,7 @@ import sy.f0;
 import v00.i;
 import x61.l;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements p {
@@ -178,7 +178,7 @@ public final class d implements p {
             case 4:
                 androidx.lifecycle.b bVar6 = (androidx.lifecycle.b) wVar.i;
                 u81.m mVar = (u81.m) wVar.g;
-                ArrayList arrayList2 = r.r;
+                ArrayList arrayList2 = rShadow.r;
                 a0 a0Var = null;
                 int i = 0;
                 androidx.lifecycle.b bVar7 = bVar6;
@@ -226,7 +226,7 @@ public final class d implements p {
                             }
                             arrayList = arrayList3;
                             androidx.lifecycle.b bVar8 = bVar7;
-                            u81.o oVar3 = new u81.o(eVar, t0Var, i2, i3, i4, i5, i6, z4, z5, new q81.a(oVar2.d, oVar2.e, uVar.k, uVar.n, sSLSocketFactory, hostnameVerifier, fVar, uVar.m, uVar.r, uVar.q, uVar.l), mVar.r.B, mVar, bVar8);
+                            u81.o oVar3 = new u81.o(eVar, t0Var, i2, i3, i4, i5, i6, z4, z5, new q81.a(oVar2.d, oVar2.e, uVar.k, uVar.n, sSLSocketFactory, hostnameVerifier, fVar, uVar.m, uVar.r, uVar.q, uVar.l), mVar.rShadow.B, mVar, bVar8);
                             bVar7 = bVar8;
                             u uVar2 = mVar.r;
                             mVar.y = uVar2.f ? new com.google.android.gms.measurement.internal.s(oVar3, uVar2.C) : new s21.a(11, oVar3);
@@ -351,7 +351,7 @@ public final class d implements p {
                 o c = f != null ? f.c() : null;
                 if (c != null && (k.b(c.a, ((o) bVar2.b).a) || uVar.i)) {
                     l1 s = bVar2.s();
-                    if (sy.d0.u(str)) {
+                    if (sy.d0Shadow.u(str)) {
                         int i2 = a0Var.u;
                         boolean z = str.equals("PROPFIND") || i2 == 308 || i2 == 307;
                         if (str.equals("PROPFIND") || i2 == 308 || i2 == 307) {

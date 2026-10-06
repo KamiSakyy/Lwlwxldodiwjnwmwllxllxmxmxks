@@ -4,7 +4,7 @@ import a0.s0;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @g81.e
@@ -54,7 +54,7 @@ public abstract class CommitsType implements Parcelable {
 
         public /* synthetic */ Commits(String str, int i, String str2) {
             if (1 != (i & 1)) {
-                c1.l(i, 1, CommitsType$Commits$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 1, CommitsType$Commits$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
             this.f9155s = str;
@@ -140,7 +140,7 @@ public abstract class CommitsType implements Parcelable {
 
         public /* synthetic */ Deeplink(int i, int i10, String str, String str2) {
             if (7 != (i & 7)) {
-                c1.l(i, 7, CommitsType$Deeplink$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 7, CommitsType$Deeplink$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
             this.f9157s = str;
@@ -227,7 +227,7 @@ public abstract class CommitsType implements Parcelable {
 
         public /* synthetic */ History(int i, String str, String str2, String str3, String str4) {
             if (15 != (i & 15)) {
-                c1.l(i, 15, CommitsType$History$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 15, CommitsType$History$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
             this.f9160s = str;
@@ -319,7 +319,7 @@ public abstract class CommitsType implements Parcelable {
 
         public /* synthetic */ RefComparison(int i, String str, String str2, String str3, String str4) {
             if (15 != (i & 15)) {
-                c1.l(i, 15, CommitsType$RefComparison$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 15, CommitsType$RefComparison$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
             this.f9164s = str;

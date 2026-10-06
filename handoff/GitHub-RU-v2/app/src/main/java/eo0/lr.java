@@ -7,7 +7,7 @@ import jn0.i30;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lr implements aaShadow.a {
     public static final lr a = new lr();
-    public static final List b = sy.d0.o(new String[]{"userCount", "pageInfo", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"userCount", "pageInfo", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class lr implements aaShadow.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

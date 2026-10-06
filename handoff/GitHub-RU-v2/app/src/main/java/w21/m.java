@@ -99,13 +99,13 @@ public final class m implements Runnable {
             case 6:
                 x9.c cVar = (x9.c) this.s;
                 c5.b bVar2 = (c5.b) this.t;
-                x9.h hVar = z.k;
+                x9.hShadow hVar = z.k;
                 cVar.A(24, 3, hVar);
                 bVar2.n(hVar);
                 return;
             case 7:
                 x9.c cVar2 = (x9.c) this.s;
-                x9.h hVar2 = (x9.h) this.t;
+                x9.hShadow hVar2 = (x9.hShadow) this.t;
                 if (((x9.o) cVar2.f.t) != null) {
                     ((x9.o) cVar2.f.t).a(hVar2, (List) null);
                     return;
@@ -131,7 +131,7 @@ public final class m implements Runnable {
             case 9:
                 x9.c cVar3 = (x9.c) this.s;
                 x9.d dVar = (x9.d) this.t;
-                x9.h hVar3 = z.k;
+                x9.hShadow hVar3 = z.k;
                 cVar3.A(24, 7, hVar3);
                 p pVar = r.s;
                 v vVar = v.v;
@@ -142,7 +142,7 @@ public final class m implements Runnable {
             case 10:
                 x9.c cVar4 = (x9.c) this.s;
                 x9.d dVar2 = (x9.d) this.t;
-                x9.h hVar4 = z.k;
+                x9.hShadow hVar4 = z.k;
                 cVar4.A(24, 9, hVar4);
                 p pVar2 = r.s;
                 dVar2.a(hVar4, v.v);
@@ -150,7 +150,7 @@ public final class m implements Runnable {
             case 11:
                 v2.t tVar = (v2.t) this.s;
                 try {
-                    ((x9.c) tVar.t).A.a((x9.h) this.t);
+                    ((x9.c) tVar.t).A.a((x9.hShadow) this.t);
                     return;
                 } catch (Throwable unused2) {
                     t.h("BillingClient");

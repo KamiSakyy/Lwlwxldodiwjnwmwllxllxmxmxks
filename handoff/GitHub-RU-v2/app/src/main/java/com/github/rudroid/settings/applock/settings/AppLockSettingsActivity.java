@@ -7,8 +7,8 @@ import androidx.fragment.app.t0;
 import androidx.lifecycle.d1;
 import androidx.lifecycle.l1;
 import com.github.rudroid.settings.preferences.SingleChoiceBottomSheet;
-import k71.x;
-import v71.a0;
+import k71.xShadow;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 
@@ -73,7 +73,7 @@ public final class AppLockSettingsActivity extends w {
     public AppLockSettingsActivity() {
         this.s0 = false;
         C(new v(this));
-        this.u0 = new l1(x.a(o.class), new d(), new c(), new e());
+        this.u0 = new l1(xShadow.a(o.class), new d(), new c(), new e());
         this.v0 = E(new com.github.rudroid.settings.applock.settings.a(this), new t0(3));
     }
 
@@ -91,7 +91,7 @@ public final class AppLockSettingsActivity extends w {
         }
         SingleChoiceBottomSheet.b bVar = (SingleChoiceBottomSheet.b) parcelable;
         o oVar = (o) appLockSettingsActivity.u0.getValue();
-        b0.z(d1.k(oVar), (a71.h) null, (a0) null, new n(oVar, (bVar == null || (str2 = bVar.r) == null) ? 0 : Integer.parseInt(str2), null), 3);
+        b0.z(d1.k(oVar), (a71.h) null, (a0Shadow) null, new n(oVar, (bVar == null || (str2 = bVar.r) == null) ? 0 : Integer.parseInt(str2), null), 3);
     }
 
     public final void onCreate(Bundle bundle) {

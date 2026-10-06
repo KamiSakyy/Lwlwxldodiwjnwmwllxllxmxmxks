@@ -141,8 +141,8 @@ public abstract class y {
     }
 
     public static final t10.h c(o0 o0Var) {
-        ap0.o oVar = o0Var.b;
-        x61.r rVar = x61.r.r;
+        ap0.oShadow oVar = o0Var.b;
+        x61.rShadow rVar = x61.rShadow.r;
         if (oVar != null) {
             return new t10.b(oVar.b, oVar.c, oVar.d, k41.b.e(oVar.a.c), vo0.a.a(oVar.f.c), oVar.e, rVar);
         }
@@ -241,7 +241,7 @@ public abstract class y {
 
     public static final mn.m h(vo.v vVar) {
         vo.s sVar = vVar.p;
-        vo.t tVar = vVar.q;
+        vo.tShadow tVar = vVar.q;
         vo.j jVar = vVar.r;
         vo.i iVar = vVar.o;
         vo.u uVar = vVar.s;
@@ -256,7 +256,7 @@ public abstract class y {
 
     public static final mn.m i(wc0.v vVar) {
         wc0.s sVar = vVar.p;
-        wc0.t tVar = vVar.q;
+        wc0.tShadow tVar = vVar.q;
         wc0.j jVar = vVar.r;
         wc0.i iVar = vVar.o;
         wc0.u uVar = vVar.s;
@@ -296,7 +296,7 @@ public abstract class y {
         String str;
         boolean z2;
         boolean z3;
-        x61.r rVar;
+        x61.rShadow rVar;
         ReviewDecision reviewDecision;
         List list;
         q7 q7Var;
@@ -346,8 +346,8 @@ public abstract class y {
         SubscriptionState subscriptionState6 = SubscriptionState.SUBSCRIBED;
         SubscriptionState subscriptionState7 = (D5 == subscriptionState6 && D6 == null) ? null : subscriptionState6;
         List c = p.c(l2Var.t);
-        x61.r rVar2 = l2Var.r.a;
-        x61.r rVar3 = x61.r.r;
+        x61.rShadow rVar2 = l2Var.r.a;
+        x61.rShadow rVar3 = x61.rShadow.r;
         if (rVar2 == null) {
             rVar2 = rVar3;
         }
@@ -474,12 +474,12 @@ public abstract class y {
         } else {
             ar.c a = ar.c.a(cVar, kd0Var.b.e, null, 4031);
             id0 id0Var8 = kd0Var.b;
-            bVar = new fz.b(a, id0Var8.c, new yz0.a0(id0Var8.b));
+            bVar = new fz.b(a, id0Var8.c, new yz0.a0Shadow(id0Var8.b));
         }
         if (kd0Var != null && (fd0Var = kd0Var.a) != null) {
             str = fd0Var.b;
         }
-        return new w7(str2, issueOrPullRequestState, f, P, x61.r.r, g, bVar, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (kd0Var == null || (id0Var = kd0Var.b) == null || !id0Var.g) ? false : true);
+        return new w7(str2, issueOrPullRequestState, f, P, x61.rShadow.r, g, bVar, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (kd0Var == null || (id0Var = kd0Var.b) == null || !id0Var.g) ? false : true);
     }
     public Object a() { return null; }
     public static Object t(Object p1, Object p2) { return null; }

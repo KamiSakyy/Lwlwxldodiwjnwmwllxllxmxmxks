@@ -1,6 +1,6 @@
 package com.github.rudroid.settings.copilot.debug;
 
-import xn.f1;
+import xn.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final /* synthetic */ class o extends k71.i implements j71.c {
@@ -10,9 +10,9 @@ final /* synthetic */ class o extends k71.i implements j71.c {
         vVar.getClass();
         vVar.P(new j71.c() { // from class: com.github.rudroid.settings.copilot.debug.u
             public final Object k(Object obj2) {
-                f1 f1Var = (f1) obj2;
+                f1Shadow f1Var = (f1Shadow) obj2;
                 k71.k.g(f1Var, "$this$updateLimits");
-                return f1.a(f1Var, null, Double.valueOf(doubleValue), false, 0.0d, 27);
+                return f1Shadow.a(f1Var, null, Double.valueOf(doubleValue), false, 0.0d, 27);
             }
         });
         return w61.a0.a;

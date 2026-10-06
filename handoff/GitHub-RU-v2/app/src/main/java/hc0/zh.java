@@ -23,7 +23,7 @@ public final class zh {
         v = zhVarArr;
         w = v8.l0.t(zhVarArr);
         Companion = new yh();
-        sy.d0.o(new String[]{"ASC", "DESC"});
+        sy.d0Shadow.o(new String[]{"ASC", "DESC"});
     }
 
     public zh(String str, int i, String str2) {

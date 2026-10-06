@@ -7,7 +7,7 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.Iterator;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import m10.a8;
 import m10.e9;
@@ -496,7 +496,7 @@ public final class a implements aa.a {
                 k.g(f6Var, "value");
                 u0 u0Var16 = f6Var.a;
                 fVar.z0("body");
-                f4.y(aa.c.i, fVar, wVar, u0Var16, "headline");
+                f4Shadow.y(aa.c.i, fVar, wVar, u0Var16, "headline");
                 aa.c.a.b(fVar, wVar, f6Var.b);
                 break;
             case 7:
@@ -671,7 +671,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var39 instanceof u0) {
                     fVar.z0("assigneeIds");
-                    f4.d(aa.c.a).d(fVar, wVar, u0Var39);
+                    f4Shadow.d(aa.c.a).d(fVar, wVar, u0Var39);
                 }
                 if (u0Var38 instanceof u0) {
                     fVar.z0("body");
@@ -695,7 +695,7 @@ public final class a implements aa.a {
                 }
                 if (u0Var33 instanceof u0) {
                     fVar.z0("labelIds");
-                    f4.d(aa.c.a).d(fVar, wVar, u0Var33);
+                    f4Shadow.d(aa.c.a).d(fVar, wVar, u0Var33);
                 }
                 if (u0Var32 instanceof u0) {
                     fVar.z0("milestoneId");
@@ -707,11 +707,11 @@ public final class a implements aa.a {
                 }
                 if (u0Var30 instanceof u0) {
                     fVar.z0("projectIds");
-                    f4.d(aa.c.a).d(fVar, wVar, u0Var30);
+                    f4Shadow.d(aa.c.a).d(fVar, wVar, u0Var30);
                 }
                 if (u0Var29 instanceof u0) {
                     fVar.z0("projectV2Ids");
-                    f4.d(aa.c.a).d(fVar, wVar, u0Var29);
+                    f4Shadow.d(aa.c.a).d(fVar, wVar, u0Var29);
                 }
                 fVar.z0("repositoryId");
                 aa.b bVar4 = aa.c.a;

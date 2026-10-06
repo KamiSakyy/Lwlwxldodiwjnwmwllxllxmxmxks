@@ -9,7 +9,7 @@ import android.content.IntentSender;
 import android.os.Build;
 import android.os.Bundle;
 import b21.d;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.android.gms.internal.measurement.h0;
 import z11.b;
@@ -71,7 +71,7 @@ public class GoogleApiActivity extends Activity implements DialogInterface.OnCan
                 return;
             }
             if (pendingIntent == null) {
-                u.g(num);
+                uShadow.g(num);
                 e.d.c(this, num.intValue(), this);
                 this.r = 1;
                 return;

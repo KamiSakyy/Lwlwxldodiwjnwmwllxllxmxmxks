@@ -7,7 +7,7 @@ public abstract class ui {
     public static final ti Companion = new ti();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
         aa.j0 j0Var = wk.a;
         v50.Companion.getClass();

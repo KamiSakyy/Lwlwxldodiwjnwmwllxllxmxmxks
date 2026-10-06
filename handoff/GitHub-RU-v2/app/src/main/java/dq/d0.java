@@ -19,9 +19,9 @@ public abstract class d0 {
         ch.Companion.getClass();
         aa.x xVar = ch.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
-        List n2 = sy.d0.n(new aa.m("totalCount", v8.l0.b(xVar), (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
+        List n2 = sy.d0Shadow.n(new aa.m("totalCount", v8.l0.b(xVar), (String) null, rVar, rVar, rVar));
         eh.Companion.getClass();
         aa.x xVar2 = eh.a;
         aa.s mVar = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -35,7 +35,7 @@ public abstract class d0 {
         q30.Companion.getClass();
         aa.r b2 = v8.l0.b(q30.a);
         rf0.Companion.getClass();
-        aa.s mVar7 = new aa.m("repositories", b2, (String) null, rVar, no.a.s(rf0.I, new u0(sy.d0.n("OWNER"))), n);
+        aa.s mVar7 = new aa.m("repositories", b2, (String) null, rVar, no.a.s(rf0.I, new u0(sy.d0Shadow.n("OWNER"))), n);
         cg.Companion.getClass();
         aa.s mVar8 = new aa.m("followers", v8.l0.b(cg.a), (String) null, rVar, rVar, n2);
         wg.Companion.getClass();

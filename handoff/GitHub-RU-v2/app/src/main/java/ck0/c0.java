@@ -1,7 +1,7 @@
 package ck0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class c0 implements aa.a {
@@ -51,7 +51,7 @@ public abstract class c0 implements aa.a {
         fVar.z0("descriptionHTML");
         o0Var.b(fVar, wVar, gVar.b);
         fVar.z0("viewerIsFollowing");
-        f4.C(gVar.c, aa.c.f, fVar, wVar, "id");
+        f4Shadow.C(gVar.c, aa.c.f, fVar, wVar, "id");
         aa.c.a.b(fVar, wVar, gVar.d);
     }
 }

@@ -32,7 +32,7 @@ public final class ly {
         y = lyVarArr;
         z = v8.l0.t(lyVarArr);
         Companion = new ky();
-        sy.d0.o(new String[]{"CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT"});
+        sy.d0Shadow.o(new String[]{"CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT"});
     }
 
     public ly(String str, int i, String str2) {

@@ -6,7 +6,7 @@ import jo.xi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w10 implements aaShadow.a {
     public static final w10 a = new w10();
-    public static final List b = sy.d0.n("api");
+    public static final List b = sy.d0Shadow.n("api");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -26,7 +26,7 @@ public abstract class z0 implements aa.a {
             }
         }
         eVar.s0();
-        iy0.e1 c = iy0.f1.c(eVar, wVar);
+        iy0.e1 c = iy0.f1Shadow.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -53,7 +53,7 @@ public abstract class z0 implements aa.a {
         aa.c.c(y0.a, true).b(fVar, wVar, x0Var.b);
         fVar.z0("id");
         bVar.b(fVar, wVar, x0Var.c);
-        List list = iy0.f1.a;
-        iy0.f1.d(fVar, wVar, x0Var.d);
+        List list = iy0.f1Shadow.a;
+        iy0.f1Shadow.d(fVar, wVar, x0Var.d);
     }
 }

@@ -216,7 +216,7 @@ public abstract class n {
             str = str6;
             i = i3;
             str2 = str3;
-            arrayList = x61.r.r;
+            arrayList = x61.rShadow.r;
         }
         com.github.rudroid.common.b0 b0Var = new com.github.rudroid.common.b0(fVar.a, arrayList);
         w50.g gVar = lVar.n;
@@ -311,7 +311,7 @@ public abstract class n {
         List c = p.c((u40Var == null || (p40Var5 = u40Var.b) == null) ? null : p40Var5.j);
         List list = (u40Var == null || (p40Var4 = u40Var.b) == null) ? null : p40Var4.g.a;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(list);
         ArrayList arrayList2 = new ArrayList(x61.n.F(S, 10));
@@ -336,7 +336,7 @@ public abstract class n {
         } else {
             c40.c a = c40.c.a(cVar, u40Var.b.e, null, 4031);
             p40 p40Var9 = u40Var.b;
-            bVar = new bb0.b(a, p40Var9.c, new yz0.a0(p40Var9.b));
+            bVar = new bb0.b(a, p40Var9.c, new yz0.a0Shadow(p40Var9.b));
         }
         com.github.service.models.response.a aVar = new com.github.service.models.response.a((u40Var == null || (l40Var = u40Var.a) == null) ? str4 : l40Var.b, (Avatar) null, (String) null, false, (String) null, 62);
         ArrayList arrayList3 = new ArrayList();

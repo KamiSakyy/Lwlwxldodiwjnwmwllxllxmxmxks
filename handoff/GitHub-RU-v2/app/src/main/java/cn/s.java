@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import sy.d0;
+import sy.d0Shadow;
 import v71.v;
 import v71.z;
 import y71.m1;
@@ -55,9 +55,9 @@ public final class s {
         String str2 = (String) this.f.get(str);
         if (str2 != null) {
             ConcurrentHashMap concurrentHashMap = this.e;
-            h hVar = (h) concurrentHashMap.get(str2);
+            hShadow hVar = (hShadow) concurrentHashMap.get(str2);
             if (hVar != null) {
-                concurrentHashMap.put(str2, new h(hVar.a, x61.m.l0((Collection) hVar.b, list)));
+                concurrentHashMap.put(str2, new hShadow(hVar.a, x61.m.l0((Collection) hVar.b, list)));
             }
             c(str2);
         }
@@ -72,7 +72,7 @@ public final class s {
         String d = d(str, i, str2);
         if (this.g.contains(d)) {
             this.f.put(qVar.a, d);
-            this.e.put(d, new h(qVar, x61.r.r));
+            this.e.put(d, new hShadow(qVar, x61.rShadow.r));
             c(d);
         }
     }
@@ -89,7 +89,7 @@ public final class s {
                 break;
             }
             obj = it.next();
-            h hVar = (h) ((Map.Entry) obj).getValue();
+            hShadow hVar = (hShadow) ((Map.Entry) obj).getValue();
             Iterator it2 = hVar.a.c.iterator();
             while (true) {
                 if (!it2.hasNext()) {
@@ -141,7 +141,7 @@ public final class s {
     public final k h(j71.c cVar, String str) {
         k kVar;
         ConcurrentHashMap concurrentHashMap = this.e;
-        h hVar = (h) concurrentHashMap.get(str);
+        hShadow hVar = (hShadow) concurrentHashMap.get(str);
         if (hVar != null) {
             h01.q qVar = hVar.a;
             java.util.List r1 = (java.util.List) (hVar.b);
@@ -163,7 +163,7 @@ public final class s {
                     arrayList2.add(k2);
                 }
             }
-            concurrentHashMap.put(str, new h(a, arrayList2));
+            concurrentHashMap.put(str, new hShadow(a, arrayList2));
             kVar = new k(this, str, qVar, r1);
         } else {
             kVar = null;

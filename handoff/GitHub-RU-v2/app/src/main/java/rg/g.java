@@ -7,7 +7,7 @@ import androidx.compose.runtime.b2;
 import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
-import d2.a0;
+import d2.a0Shadow;
 import d2.p0;
 import f0.v;
 import f1.fa;

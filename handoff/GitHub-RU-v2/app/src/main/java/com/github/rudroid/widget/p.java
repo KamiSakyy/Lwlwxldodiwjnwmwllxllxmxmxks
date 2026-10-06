@@ -23,7 +23,7 @@ import f1.h4;
 import f1.j4;
 import f1.y1;
 import java.lang.annotation.Annotation;
-import k81.c1;
+import k81.c1Shadow;
 import k81.f0;
 import k81.q1;
 import k81.z;
@@ -47,7 +47,7 @@ public final /* synthetic */ class p implements j71.a {
                 return new z("com.github.rudroid.widget.WidgetUIState.Waiting", WidgetUIState.Waiting.INSTANCE, new Annotation[0]);
             case 2:
                 ContributionWidgetModel.Companion companion = ContributionWidgetModel.Companion;
-                return new f0(q1.a, new k81.d(new k81.d(c1.f("com.github.service.models.response.ContributionLevel", ContributionLevel.values()), 0), 0), 1);
+                return new f0(q1.a, new k81.d(new k81.d(c1Shadow.f("com.github.service.models.response.ContributionLevel", ContributionLevel.values()), 0), 0), 1);
             case 3:
                 ContributionWidgetModel.Companion companion2 = ContributionWidgetModel.Companion;
                 return WidgetUIState.Companion.serializer();

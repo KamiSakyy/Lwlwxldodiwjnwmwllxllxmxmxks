@@ -1,13 +1,13 @@
 package is;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.n40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 implements aa.a {
     public static final z0 a = new z0();
-    public static final List b = sy.d0.o("id", "name", "owner", "viewerPermission", "isOrganizationDiscussionRepository", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "owner", "viewerPermission", "isOrganizationDiscussionRepository", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;

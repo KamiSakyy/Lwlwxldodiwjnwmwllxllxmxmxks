@@ -2,12 +2,12 @@ package n00;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.a {
     public static final q a = new q();
-    public static final List b = d0.o("id", "description", "descriptionHTML", "shortDescriptionHTML", "__typename");
+    public static final List b = d0Shadow.o("id", "description", "descriptionHTML", "shortDescriptionHTML", "__typename");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -54,7 +54,7 @@ public final class q implements aa.a {
     }
 
     public final void b(ea.f fVar, w wVar, Object obj) {
-        m00.d0 d0Var = (m00.d0) obj;
+        m00.d0Shadow d0Var = (m00.d0) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(d0Var, "value");

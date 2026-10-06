@@ -13,7 +13,7 @@ public abstract class o7 {
     static {
         wg.Companion.getClass();
         aa.r b = v8.l0.b(wg.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("isEmployee", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         aa.x xVar = ah.a;

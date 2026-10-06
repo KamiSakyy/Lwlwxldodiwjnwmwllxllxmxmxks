@@ -24,7 +24,7 @@ public abstract class d0 implements aa.a {
             }
         }
         eVar.s0();
-        w50.x c = w50.y.c(eVar, wVar);
+        w50.xShadow c = w50.y.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -46,7 +46,7 @@ public abstract class d0 implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, m0Var.b);
         List list = w50.y.a;
-        w50.x xVar = m0Var.c;
+        w50.xShadow xVar = m0Var.c;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

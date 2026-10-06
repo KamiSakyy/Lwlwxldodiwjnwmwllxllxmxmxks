@@ -203,8 +203,8 @@ public final class o1 implements x1 {
             Bundle bundle2 = u0Var.u;
             u0Var = new com.google.android.gms.internal.measurement.u0(u0Var.r, u0Var.s, u0Var.t, bundle2, null);
         }
-        c21.u.g(context);
-        c21.u.g(context.getApplicationContext());
+        c21.uShadow.g(context);
+        c21.uShadow.g(context.getApplicationContext());
         if (V == null) {
             synchronized (o1.class) {
                 try {
@@ -215,10 +215,10 @@ public final class o1 implements x1 {
                 }
             }
         } else if (u0Var != null && (bundle = u0Var.u) != null && bundle.containsKey("dataCollectionDefaultEnabled")) {
-            c21.u.g(V);
+            c21.uShadow.g(V);
             V.P = Boolean.valueOf(bundle.getBoolean("dataCollectionDefaultEnabled"));
         }
-        c21.u.g(V);
+        c21.uShadow.g(V);
         return V;
     }
 

@@ -9,7 +9,7 @@ import m10.eh;
 import m10.rf0;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class a {
@@ -19,7 +19,7 @@ public abstract class a {
         eh.Companion.getClass();
         x xVar = eh.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("viewerCopilotAgentCreatesChannel", xVar, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("viewerCopilotAgentUpdatesChannel", xVar, (String) null, rVar, rVar, rVar);
         m mVar3 = new m("viewerCopilotAgentLogUpdatesChannel", xVar, (String) null, rVar, rVar, rVar);

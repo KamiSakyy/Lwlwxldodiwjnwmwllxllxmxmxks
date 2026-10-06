@@ -12,7 +12,7 @@ public final class l1 extends Thread {
 
     public l1(m1 m1Var, String str, BlockingQueue blockingQueue) {
         this.u = m1Var;
-        c21.u.g(blockingQueue);
+        c21.uShadow.g(blockingQueue);
         this.r = new Object();
         this.s = blockingQueue;
         setName(str);

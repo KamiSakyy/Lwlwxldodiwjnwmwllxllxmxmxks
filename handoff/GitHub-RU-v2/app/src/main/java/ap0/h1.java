@@ -17,7 +17,7 @@ public abstract class h1 implements aa.a {
         ZonedDateTime zonedDateTime = null;
         String str2 = null;
         e1 e1Var = null;
-        f1 f1Var = null;
+        f1Shadow f1Var = null;
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
@@ -40,7 +40,7 @@ public abstract class h1 implements aa.a {
                     break;
                 }
                 bool = bool2;
-                f1Var = (f1) aa.c.c(j1.a, true).a(eVar, wVar);
+                f1Var = (f1Shadow) aa.c.c(j1.a, true).a(eVar, wVar);
             }
             bool2 = bool;
         }
@@ -84,7 +84,7 @@ public abstract class h1 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, g1Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(g1Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(g1Var.c, aa.c.f, fVar, wVar, "identifier");
         bVar.b(fVar, wVar, g1Var.d);
         fVar.z0("followee");
         aa.c.c(i1.a, true).b(fVar, wVar, g1Var.e);

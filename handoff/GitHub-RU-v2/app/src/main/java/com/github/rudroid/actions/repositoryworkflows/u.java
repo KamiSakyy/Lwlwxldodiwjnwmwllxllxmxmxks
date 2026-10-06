@@ -7,11 +7,11 @@ import com.github.rudroid.actions.navigation.WorkflowsRoute;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.w0;
 import java.util.concurrent.CancellationException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -54,17 +54,17 @@ public final class u extends k1 implements com.github.rudroid.utilities.viewmode
         this.f5175t = fVar;
         this.f5176u = hVar;
         this.f5177v = cVar;
-        WorkflowsRoute workflowsRoute = (WorkflowsRoute) sy.y.m(a1Var, k71.x.a(WorkflowsRoute.class), x61.s.r);
+        WorkflowsRoute workflowsRoute = (WorkflowsRoute) sy.y.m(a1Var, k71.xShadow.a(WorkflowsRoute.class), x61.s.r);
         this.f5178w = workflowsRoute.f5125s;
         this.f5179x = workflowsRoute.f5124r;
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f5180y = c10;
         this.f5181z = w0.f(c10, d1.k(this), new com.github.rudroid.actions.checklog.t(6));
         q1 q1Var = this.A;
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.A = b0.z(d1.k(this), (a71.h) null, (a0) null, new q(this, null), 3);
+        this.A = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new q(this, null), 3);
     }
 
     public final void P(y71.g1 g1Var, fl.b bVar, boolean z10) {

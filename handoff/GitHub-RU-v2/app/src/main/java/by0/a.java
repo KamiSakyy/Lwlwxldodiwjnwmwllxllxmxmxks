@@ -12,7 +12,7 @@ import pz0.go;
 import pz0.jp;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -24,13 +24,13 @@ public abstract class a {
         td.Companion.getClass();
         x xVar = td.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("id", b, (String) null, rVar, rVar, rVar));
-        List n2 = d0.n(new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar));
-        List n3 = d0.n(new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("id", b, (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n3 = d0Shadow.n(new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar));
         xd.Companion.getClass();
         x xVar2 = xd.a;
-        List r = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2Field", d0.n("ProjectV2Field"), n), new n("ProjectV2SingleSelectField", d0.n("ProjectV2SingleSelectField"), n2), new n("ProjectV2IterationField", d0.n("ProjectV2IterationField"), n3)});
+        List r = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2Field", d0Shadow.n("ProjectV2Field"), n), new n("ProjectV2SingleSelectField", d0Shadow.n("ProjectV2SingleSelectField"), n2), new n("ProjectV2IterationField", d0Shadow.n("ProjectV2IterationField"), n3)});
         s mVar = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         List r2 = l.r(new String[]{"ProjectV2GroupAssigneeValue", "ProjectV2GroupDateValue", "ProjectV2GroupIssueTypeValue", "ProjectV2GroupIterationValue", "ProjectV2GroupMilestoneValue", "ProjectV2GroupNumberValue", "ProjectV2GroupRepositoryValue", "ProjectV2GroupSingleSelectValue", "ProjectV2GroupTextValue"});
         List list = d.a;

@@ -75,7 +75,7 @@ public abstract class v5 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, s5Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(s5Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(s5Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, s5Var.d);
         fVar.z0("repository");
         aa.c.c(u5.a, true).b(fVar, wVar, s5Var.e);

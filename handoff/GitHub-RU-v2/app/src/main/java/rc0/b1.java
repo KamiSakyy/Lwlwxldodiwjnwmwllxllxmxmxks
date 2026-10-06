@@ -8,14 +8,14 @@ public final class b1 {
     public int d;
     public boolean e;
     public u0 f;
-    public f1 g;
+    public f1Shadow g;
     public x0 h;
     public c1 i;
     public d1 j;
     public y0 k;
     public e1 l;
 
-    public b1(String str, gn0.r2 r2Var, gn0.l2 l2Var, int i, boolean z, u0 u0Var, f1 f1Var, x0 x0Var, c1 c1Var, d1 d1Var, y0 y0Var, e1 e1Var) {
+    public b1(String str, gn0.r2 r2Var, gn0.l2 l2Var, int i, boolean z, u0 u0Var, f1Shadow f1Var, x0 x0Var, c1 c1Var, d1 d1Var, y0 y0Var, e1 e1Var) {
         this.a = str;
         this.b = r2Var;
         this.c = l2Var;
@@ -47,7 +47,7 @@ public final class b1 {
         int e = x.i.e(a0.s0.b(this.d, (hashCode + (l2Var == null ? 0 : l2Var.hashCode())) * 31, 31), 31, this.e);
         u0 u0Var = this.f;
         int hashCode2 = (e + (u0Var == null ? 0 : Integer.hashCode(u0Var.a))) * 31;
-        f1 f1Var = this.g;
+        f1Shadow f1Var = this.g;
         int hashCode3 = (hashCode2 + (f1Var == null ? 0 : f1Var.hashCode())) * 31;
         x0 x0Var = this.h;
         int hashCode4 = (hashCode3 + (x0Var == null ? 0 : x0Var.hashCode())) * 31;

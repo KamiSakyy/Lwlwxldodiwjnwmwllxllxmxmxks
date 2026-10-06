@@ -20,12 +20,12 @@ public abstract class h1Shadow extends s {
 
     @Override // k81.a
     public final Object a() {
-        return (f1) g(j());
+        return (f1Shadow) g(j());
     }
 
     @Override // k81.a
     public final int b(Object obj) {
-        f1 f1Var = (f1) obj;
+        f1Shadow f1Var = (f1Shadow) obj;
         k71.k.g(f1Var, "<this>");
         return f1Var.d();
     }
@@ -47,14 +47,14 @@ public abstract class h1Shadow extends s {
 
     @Override // k81.a
     public final Object h(Object obj) {
-        f1 f1Var = (f1) obj;
+        f1Shadow f1Var = (f1Shadow) obj;
         k71.k.g(f1Var, "<this>");
         return f1Var.a();
     }
 
     @Override // k81.s
     public final void i(int i, Object obj, Object obj2) {
-        k71.k.g((f1) obj, "<this>");
+        k71.k.g((f1Shadow) obj, "<this>");
         throw new IllegalStateException("This method lead to boxing and must not be used, use Builder.append instead");
     }
 

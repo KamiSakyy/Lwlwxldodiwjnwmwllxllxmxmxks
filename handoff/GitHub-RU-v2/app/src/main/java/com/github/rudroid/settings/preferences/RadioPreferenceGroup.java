@@ -16,19 +16,19 @@ import java.util.Iterator;
 import java.util.List;
 import k71.k;
 import k71.m;
-import k71.x;
+import k71.xShadow;
 import l7.n1;
 import pc.a0;
 import pc.u;
 import pc.z;
-import x61.r;
+import x61.rShadow;
 import yz0.b8;
 import yz0.q2;
 import yz0.v7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RadioPreferenceGroup extends Preference {
-    public static final /* synthetic */ r71.e[] i0 = {new m(RadioPreferenceGroup.class, "radioTitles", "getRadioTitles()Ljava/util/List;", 0), h1.w(x.a, RadioPreferenceGroup.class, "checkedId", "getCheckedId()I", 0), new m(RadioPreferenceGroup.class, "onValueChangedListener", "getOnValueChangedListener()Lcom/github/rudroid/settings/preferences/RadioPreferenceGroup$OnValueChangedListener;", 0)};
+    public static final /* synthetic */ r71.e[] i0 = {new m(RadioPreferenceGroup.class, "radioTitles", "getRadioTitles()Ljava/util/List;", 0), h1.w(xShadow.a, RadioPreferenceGroup.class, "checkedId", "getCheckedId()I", 0), new m(RadioPreferenceGroup.class, "onValueChangedListener", "getOnValueChangedListener()Lcom/github/rudroid/settings/preferences/RadioPreferenceGroup$OnValueChangedListener;", 0)};
     public b f0;
     public c g0;
     public d h0;
@@ -39,7 +39,7 @@ public final class RadioPreferenceGroup extends Preference {
 
     public static final class b extends s0 {
         public b() {
-            super(7, r.r);
+            super(7, rShadow.r);
         }
 
         public final void i(r71.e eVar, Object obj, Object obj2) {

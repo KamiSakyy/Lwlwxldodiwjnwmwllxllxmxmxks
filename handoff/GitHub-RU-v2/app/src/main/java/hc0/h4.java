@@ -7,8 +7,8 @@ public abstract class h4 {
     public static final g4 Companion = new g4();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("ConnectedEvent", n, sy.d0.n(yg.a));
+        new aa.q0("ConnectedEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

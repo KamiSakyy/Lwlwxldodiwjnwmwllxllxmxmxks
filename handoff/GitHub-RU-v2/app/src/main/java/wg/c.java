@@ -4,7 +4,7 @@ import androidx.compose.runtime.b2;
 import androidx.compose.runtime.n;
 import androidx.compose.runtime.s;
 import com.github.rudroid.copilot.h1;
-import d2.a0;
+import d2.a0Shadow;
 import d3.k;
 import f1.e8;
 import f1.f8;
@@ -69,7 +69,7 @@ public final class c {
                 rVar4 = i6 != 0 ? o.a : rVar2;
                 if ((i2 & 4) != 0) {
                     z2 = false;
-                    uaVar2 = e8.v(d.b(sVar).F, a0.d(f0.o.u(sVar) ? 4279776612L : 4289974773L), a0.d(f0.o.u(sVar) ? 4290427578L : 4293717228L), d.b(sVar).R, sVar);
+                    uaVar2 = e8.v(d.b(sVar).F, a0Shadow.d(f0.o.u(sVar) ? 4279776612L : 4289974773L), a0Shadow.d(f0.o.u(sVar) ? 4290427578L : 4293717228L), d.b(sVar).R, sVar);
                     i3 &= -897;
                 } else {
                     z2 = false;
@@ -114,7 +114,7 @@ public final class c {
         }
         b2 t = sVar.t();
         if (t != null) {
-            t.d = new com.github.rudroid.actions.shared.ui.c(rVar3, z, uaVar3, cVar, i, i2);
+            t.d = new com.github.rudroid.actions.shared.ui.cShadow(rVar3, z, uaVar3, cVar, i, i2);
         }
     }
 }

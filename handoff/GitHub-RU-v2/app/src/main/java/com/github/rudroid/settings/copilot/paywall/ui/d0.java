@@ -193,7 +193,7 @@ public final class d0 {
         int i2 = i | 6 | (sVar.h(aVar) ? 32 : 16) | (sVar.f(str) ? 256 : 128);
         if (sVar.S(i2 & 1, (i2 & 147) != 146)) {
             rVar2 = w1.o.a;
-            sg.k0.a(((i2 << 3) & 896) | 12582912, 114, null, sVar, null, null, sg.v.l(0L, sVar, 7), aVar, r1.i.d(-1377238065, new ab.m(str, 6), sVar), p2.e(rVar2, 1.0f), false);
+            sg.k0Shadow.a(((i2 << 3) & 896) | 12582912, 114, null, sVar, null, null, sg.v.l(0L, sVar, 7), aVar, r1.i.d(-1377238065, new ab.m(str, 6), sVar), p2.e(rVar2, 1.0f), false);
         } else {
             sVar.V();
             rVar2 = rVar;
@@ -335,16 +335,16 @@ public final class d0 {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar2, eVar, a2);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar2, eVar4, c);
             n2 n2Var = n2.a;
             w1.r a3 = n2Var.a(rVar3, 0.7f, true);

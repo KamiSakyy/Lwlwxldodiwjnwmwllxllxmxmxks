@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pg implements aaShadow.a {
     public static final pg a = new pg();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -30,14 +30,14 @@ public final class pg implements aaShadow.a {
             throw null;
         }
         if (str2 != null) {
-            return new u10.no(str, str2, c);
+            return new u10.noShadow(str, str2, c);
         }
         k41.b.B(eVar, "id");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        u10.no noVar = (u10.no) obj;
+        u10.noShadow noVar = (u10.noShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(noVar, "value");

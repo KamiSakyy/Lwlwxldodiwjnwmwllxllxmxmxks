@@ -9,7 +9,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -34,7 +34,7 @@ public final class ChatThreadResponse {
         this.b = "";
         this.c = "";
         this.d = "";
-        this.e = r.r;
+        this.e = rShadow.r;
     }
 
     public final boolean equals(Object obj) {
@@ -80,7 +80,7 @@ public final class ChatThreadResponse {
             this.d = str4;
         }
         if ((i & 16) == 0) {
-            this.e = r.r;
+            this.e = rShadow.r;
         } else {
             this.e = list;
         }

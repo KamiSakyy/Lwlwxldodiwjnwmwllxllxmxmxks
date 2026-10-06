@@ -7,7 +7,7 @@ import aa.q0;
 import aa.u0;
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.vp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -30,7 +30,7 @@ public final class r implements n0 {
         List list = ap.d.a;
         List list2 = ap.d.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -50,7 +50,7 @@ public final class r implements n0 {
     }
 
     public final int hashCode() {
-        return this.t.hashCode() + f4.a(this.s, this.r.hashCode() * 31, 31);
+        return this.t.hashCode() + f4Shadow.a(this.s, this.r.hashCode() * 31, 31);
     }
 
     public final String i() {
@@ -72,11 +72,11 @@ public final class r implements n0 {
         aa.c.a.b(fVar, wVar, this.r);
         fVar.z0("enableDebugLogging");
         o0 o0Var = aa.c.k;
-        f4.y(o0Var, fVar, wVar, this.s, "onlyFailedCheckRuns");
+        f4Shadow.y(o0Var, fVar, wVar, this.s, "onlyFailedCheckRuns");
         aa.c.d(o0Var).d(fVar, wVar, this.t);
     }
 
     public final String toString() {
-        return f1.e.j(f4.t(this.s, "ReRunCheckSuiteMutation(checkSuiteId=", this.r, ", enableDebugLogging=", ", onlyFailedCheckRuns="), this.t, ")");
+        return f1.e.j(f4Shadow.t(this.s, "ReRunCheckSuiteMutation(checkSuiteId=", this.r, ", enableDebugLogging=", ", onlyFailedCheckRuns="), this.t, ")");
     }
 }

@@ -19,27 +19,27 @@ public final class c1 extends g1 {
         switch (this.v) {
             case 0:
                 l0 l0Var = this.x.f;
-                c21.u.g(l0Var);
+                c21.uShadow.g(l0Var);
                 l0Var.getGmpAppId(this.w);
                 break;
             case 1:
                 l0 l0Var2 = this.x.f;
-                c21.u.g(l0Var2);
+                c21.uShadow.g(l0Var2);
                 l0Var2.getCachedAppInstanceId(this.w);
                 break;
             case 2:
                 l0 l0Var3 = this.x.f;
-                c21.u.g(l0Var3);
+                c21.uShadow.g(l0Var3);
                 l0Var3.generateEventId(this.w);
                 break;
             case 3:
                 l0 l0Var4 = this.x.f;
-                c21.u.g(l0Var4);
+                c21.uShadow.g(l0Var4);
                 l0Var4.getCurrentScreenName(this.w);
                 break;
             default:
                 l0 l0Var5 = this.x.f;
-                c21.u.g(l0Var5);
+                c21.uShadow.g(l0Var5);
                 l0Var5.getCurrentScreenClass(this.w);
                 break;
         }

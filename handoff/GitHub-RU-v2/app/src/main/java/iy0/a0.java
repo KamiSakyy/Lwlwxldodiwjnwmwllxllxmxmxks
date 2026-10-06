@@ -3,8 +3,8 @@ package iy0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class a0 implements aa.a {
-    public static final List a = sy.d0.n("sortValues");
+public abstract class a0Shadow implements aa.a {
+    public static final List a = sy.d0Shadow.n("sortValues");
 
     public static z c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

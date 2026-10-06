@@ -1,6 +1,6 @@
 package com.github.rudroid.uitoolkit.utils.lists;
 
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.uitoolkit.utils.lists.PagerStateExtensionsKt$ObservePaging$1$1", f = "PagerStateExtensions.kt", l = {31}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -31,7 +31,7 @@ final class h0 extends c71.j implements j71.e {
         int i = this.v;
         if (i == 0) {
             sy.y.j(obj);
-            d0 d0Var = new d0(n1.p(new g0(new a0(new x(androidx.compose.runtime.t.J(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(22, this.w)))), this.x)));
+            d0 d0Var = new d0(n1Shadow.p(new g0(new a0(new x(androidx.compose.runtime.t.J(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(22, this.w)))), this.x)));
             u uVar = new u(this.y);
             this.v = 1;
             if (d0Var.b(uVar, this) == aVar) {

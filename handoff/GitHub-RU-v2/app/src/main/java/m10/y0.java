@@ -7,7 +7,7 @@ public abstract class y0 {
     public static final x0 Companion = new x0();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
         aa.j0 j0Var = zp.a;
         et.Companion.getClass();

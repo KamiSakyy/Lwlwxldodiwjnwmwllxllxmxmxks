@@ -28,7 +28,7 @@ public final class ChooseShortcutRepositoryActivity extends f0<ic.d0> {
         k71.k.e(E, "null cannot be cast to non-null type androidx.navigation.fragment.NavHostFragment");
         x6.a0 s4 = E.s4();
         x6.y yVar = new x6.y(s4.b.s, ChooseShortcutRepositoryRoute.INSTANCE, (k71.e) null);
-        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ChooseShortcutRepositoryRoute.class), x61.s.r, k71.x.a(ChooseShortcutRepositoryFragment.class)), yVar.j, yVar, s4);
+        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.xShadow.a(ChooseShortcutRepositoryRoute.class), x61.s.r, k71.xShadow.a(ChooseShortcutRepositoryFragment.class)), yVar.j, yVar, s4);
     }
 
     public static Object C(Object... a) {

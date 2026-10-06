@@ -17,7 +17,7 @@ public abstract class v3 {
     static {
         xa.Companion.getClass();
         aa.r b = v8.l0.b(xa.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         aa.x xVar = fb.a;
@@ -39,6 +39,6 @@ public abstract class v3 {
         aa.q0 q0Var2 = ap.k0;
         k71.k.g(q0Var2, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("repo"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r4));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("repo"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r4));
     }
 }

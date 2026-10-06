@@ -90,7 +90,7 @@ public abstract class kg implements aaShadow.a {
         fVar.z0("mergeStateStatus");
         fVar.I(hoVar.c.r);
         fVar.z0("isInMergeQueue");
-        jo.f4.C(hoVar.d, aa.c.f, fVar, wVar, "mergeQueue");
+        jo.f4Shadow.C(hoVar.d, aa.c.f, fVar, wVar, "mergeQueue");
         aa.c.b(aa.c.c(ig.a, true)).b(fVar, wVar, hoVar.e);
         fVar.z0("mergeQueueEntry");
         aa.c.b(aa.c.c(jg.a, true)).b(fVar, wVar, hoVar.f);

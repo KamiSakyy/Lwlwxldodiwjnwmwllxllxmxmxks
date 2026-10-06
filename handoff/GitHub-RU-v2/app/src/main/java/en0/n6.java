@@ -14,7 +14,7 @@ public abstract class n6 {
     static {
         pb.Companion.getClass();
         aa.r b = v8.l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         lb.Companion.getClass();
         aa.m mVar2 = new aa.m("viewerCanPush", v8.l0.b(lb.a), (String) null, rVar, rVar, rVar);
@@ -24,6 +24,6 @@ public abstract class n6 {
         aa.q0 q0Var = eq.m0;
         k71.k.g(q0Var, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(rn.l, new aa.u0(new aa.t("name"))), new aa.k(rn.m, new aa.u0(new aa.t("owner")))}), r));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(rn.l, new aa.u0(new aa.t("name"))), new aa.k(rn.m, new aa.u0(new aa.t("owner")))}), r));
     }
 }

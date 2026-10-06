@@ -89,9 +89,9 @@ public final class x9 implements y71.j {
                 i = dVar.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    x61.r<am0.u0> rVar = ((am0.s0) obj).a.a.a;
+                    x61.rShadow<am0.u0> rVar = ((am0.s0) obj).a.a.a;
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (am0.u0 u0Var : rVar) {
@@ -153,9 +153,9 @@ public final class x9 implements y71.j {
                     k71.k.g(b1Var, "<this>");
                     am0.f1Shadow f1Var = b1Var.a;
                     int i3 = f1Var.a.a;
-                    x61.r<am0.d1> rVar = f1Var.b.a;
+                    x61.rShadow<am0.d1> rVar = f1Var.b.a;
                     if (rVar == null) {
-                        rVar = x61.r.r;
+                        rVar = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (am0.d1 d1Var : rVar) {
@@ -410,7 +410,7 @@ public final class x9 implements y71.j {
                     } else {
                         arrayList = null;
                     }
-                    ArrayList arrayList17 = x61.r.r;
+                    ArrayList arrayList17 = x61.rShadow.r;
                     if (arrayList == null) {
                         arrayList = arrayList17;
                     }
@@ -751,7 +751,7 @@ public final class x9 implements y71.j {
                 i = oVar.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    xn.s0 b = t.q.b((ChatThreadResponse) obj, x61.r.r);
+                    xn.s0 b = t.q.b((ChatThreadResponse) obj, x61.rShadow.r);
                     oVar.v = 1;
                     if (this.s.c(b, oVar) == aVar) {
                         return aVar;
@@ -847,10 +847,10 @@ public final class x9 implements y71.j {
         boolean z2;
         ArrayList arrayList;
         boolean z3;
-        x61.r rVar;
+        x61.rShadow rVar;
         boolean z4;
         int i8;
-        x61.r rVar2;
+        x61.rShadow rVar2;
         qx.l1 l1Var;
         qa qaVar;
         int i9;
@@ -889,7 +889,7 @@ public final class x9 implements y71.j {
         int i22;
         um0.c cVar3;
         int i23;
-        v00.r rVar3;
+        v00.rShadow rVar3;
         int i24;
         switch (this.r) {
             case 0:
@@ -1004,7 +1004,7 @@ public final class x9 implements y71.j {
                             l30 l30Var = h30Var.a;
                             List list = (l30Var == null || (i30Var3 = l30Var.a) == null) ? null : i30Var3.b;
                             if (list == null) {
-                                list = x61.r.r;
+                                list = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(list);
                             ArrayList arrayList3 = new ArrayList(x61.n.F(S, 10));
@@ -1117,7 +1117,7 @@ public final class x9 implements y71.j {
                             sy.y.j(obj9);
                             zh0 zh0Var = (zh0) obj;
                             bi0 bi0Var = zh0Var.a;
-                            x61.r rVar4 = x61.r.r;
+                            x61.rShadow rVar4 = x61.rShadow.r;
                             if (bi0Var != null) {
                                 qx.t1 t1Var = bi0Var.c;
                                 String str2 = t1Var.b;
@@ -1168,7 +1168,7 @@ public final class x9 implements y71.j {
                                 }
                                 cv.f fVar = t1Var.m.b;
                                 boolean z14 = fVar.a;
-                                x61.r rVar5 = fVar.b.a;
+                                x61.rShadow rVar5 = fVar.b.a;
                                 if (rVar5 == null) {
                                     rVar5 = rVar4;
                                 }
@@ -1221,7 +1221,7 @@ public final class x9 implements y71.j {
                                     rVar = null;
                                 }
                                 String str24 = str3;
-                                x61.r rVar6 = rVar == null ? rVar4 : rVar;
+                                x61.rShadow rVar6 = rVar == null ? rVar4 : rVar;
                                 boolean z19 = t1Var.D;
                                 int i45 = t1Var.E.a;
                                 List list3 = t1Var.G.a;
@@ -1299,7 +1299,7 @@ public final class x9 implements y71.j {
                                 String str40 = str39 == null ? "" : str39;
                                 cv.f fVar2 = jVar2.g.b;
                                 boolean z23 = fVar2.a;
-                                x61.r<cv.e> rVar7 = fVar2.b.a;
+                                x61.rShadow<cv.e> rVar7 = fVar2.b.a;
                                 if (rVar7 == null) {
                                     rVar7 = rVar4;
                                 }
@@ -1575,7 +1575,7 @@ public final class x9 implements y71.j {
                             if (g7Var != null && (i7Var = g7Var.a) != null) {
                                 num2 = Integer.valueOf(i7Var.d);
                             }
-                            yz0.y0 y0Var = new yz0.y0(num2, str47, str49);
+                            yz0.y0Shadow y0Var = new yz0.y0(num2, str47, str49);
                             cVar2.v = 1;
                             if (this.s.c(y0Var, cVar2) == aVar18) {
                                 return aVar18;
@@ -1636,7 +1636,7 @@ public final class x9 implements y71.j {
                                 arrayList9 = arrayList10;
                             }
                             if (arrayList9 == null) {
-                                arrayList9 = x61.r.r;
+                                arrayList9 = x61.rShadow.r;
                             }
                             g20 g20Var = h20Var.a;
                             boolean z24 = g20Var.a;
@@ -1674,7 +1674,7 @@ public final class x9 implements y71.j {
                         if (i17 != 0) {
                             sy.y.j(obj23);
                             q50 q50Var = ((p50) obj).a;
-                            List g3 = (q50Var == null || (v5Var = q50Var.c) == null) ? x61.r.r : b91.g.g(v5Var);
+                            List g3 = (q50Var == null || (v5Var = q50Var.c) == null) ? x61.rShadow.r : b91.g.g(v5Var);
                             eVar.v = 1;
                             if (this.s.c(g3, eVar) == aVar20) {
                                 return aVar20;

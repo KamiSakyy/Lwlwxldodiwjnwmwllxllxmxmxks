@@ -7,7 +7,7 @@ public abstract class io {
     public static final ho Companion = new ho();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
         aa.j0 j0Var = yh.a;
         yx.Companion.getClass();

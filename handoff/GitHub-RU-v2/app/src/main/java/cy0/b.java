@@ -18,7 +18,7 @@ import pz0.td;
 import pz0.wk;
 import pz0.xd;
 import pz0.xr;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -30,9 +30,9 @@ public abstract class b {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2ViewItemConnection");
+        List n = d0Shadow.n("ProjectV2ViewItemConnection");
         List list = by0.b.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2ViewItemConnection", n, list)});
         m mVar2 = new m("viewGroupId", xVar, (String) null, rVar, rVar, rVar);
@@ -46,7 +46,7 @@ public abstract class b {
         q0 q0Var = no.c;
         k71.k.g(q0Var, "type");
         rr.Companion.getClass();
-        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2View", d0.n("ProjectV2View"), l.r(new m[]{mVar3, new m("group", q0Var, (String) null, rVar, l.r(new k[]{new k(rr.d, new u0(new t("query"))), new k(rr.e, new u0(new t("groupId")))}), r2)}))});
+        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ProjectV2View", d0Shadow.n("ProjectV2View"), l.r(new m[]{mVar3, new m("group", q0Var, (String) null, rVar, l.r(new k[]{new k(rr.d, new u0(new t("query"))), new k(rr.e, new u0(new t("groupId")))}), r2)}))});
         wk.Companion.getClass();
         j0 j0Var = wk.a;
         k71.k.g(j0Var, "type");

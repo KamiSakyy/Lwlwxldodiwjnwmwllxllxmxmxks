@@ -184,11 +184,11 @@ public final class StarredRepositoriesAndListsFragment extends Hilt_StarredRepos
         kc.f fVar = new kc.f(this, new Bundle());
         w61.i iVar = w61.i.s;
         w61.h s = sy.w.s(iVar, new kc.a(eVar));
-        this.E0 = new l1(k71.x.a(h0.class), new kc.b(s), new kc.d(this, s), new kc.c(fVar, s));
+        this.E0 = new l1(k71.xShadow.a(h0.class), new kc.b(s), new kc.d(this, s), new kc.c(fVar, s));
         w61.h s2 = sy.w.s(iVar, new c(new b()));
-        this.G0 = new l1(k71.x.a(com.github.rudroid.starredreposandlists.bottomsheet.g0.class), new d(s2), new f(s2), new e(s2));
+        this.G0 = new l1(k71.xShadow.a(com.github.rudroid.starredreposandlists.bottomsheet.g0.class), new d(s2), new f(s2), new e(s2));
         w61.h s3 = sy.w.s(iVar, new h(new g()));
-        this.H0 = new l1(k71.x.a(com.github.rudroid.viewmodels.search.c.class), new i(s3), new a(s3), new j(s3));
+        this.H0 = new l1(k71.xShadow.a(com.github.rudroid.viewmodels.search.c.class), new i(s3), new a(s3), new j(s3));
         this.I0 = androidx.compose.runtime.t.B(Boolean.FALSE);
         this.L0 = sy.w.t(new o0(this, 0));
     }
@@ -196,7 +196,7 @@ public final class StarredRepositoriesAndListsFragment extends Hilt_StarredRepos
     public static void F4(StarredRepositoriesAndListsFragment starredRepositoriesAndListsFragment, MobileAppElement mobileAppElement, MobileAppAction mobileAppAction) {
         MobileSubjectType mobileSubjectType = MobileSubjectType.REPOSITORIES;
         starredRepositoriesAndListsFragment.getClass();
-        v71.b0.z(androidx.lifecycle.d1.i(starredRepositoriesAndListsFragment), (a71.h) null, (v71.a0) null, new i1(starredRepositoriesAndListsFragment, mobileAppElement, mobileAppAction, mobileSubjectType, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.i(starredRepositoriesAndListsFragment), (a71.h) null, (v71.a0Shadow) null, new i1(starredRepositoriesAndListsFragment, mobileAppElement, mobileAppAction, mobileSubjectType, null), 3);
     }
 
     public final com.github.rudroid.viewmodels.search.c C4() {

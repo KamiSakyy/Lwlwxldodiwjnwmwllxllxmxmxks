@@ -6,7 +6,7 @@ import kc0.mb0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qw implements aaShadow.a {
     public static final qw a = new qw();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -66,7 +66,7 @@ public final class qw implements aaShadow.a {
         o0Var.b(fVar, wVar, iVar.e);
         fVar.z0("isVerified");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(iVar.f, bVar3, fVar, wVar, "organizationItemShowcase");
+        jo.f4Shadow.C(iVar.f, bVar3, fVar, wVar, "organizationItemShowcase");
         aa.c.c(ci0.m.a, true).b(fVar, wVar, iVar.g);
         fVar.z0("location");
         o0Var.b(fVar, wVar, iVar.h);
@@ -75,7 +75,7 @@ public final class qw implements aaShadow.a {
         fVar.z0("name");
         o0Var.b(fVar, wVar, iVar.j);
         fVar.z0("viewerIsFollowing");
-        jo.f4.C(iVar.k, bVar3, fVar, wVar, "organizationRepositories");
+        jo.f4Shadow.C(iVar.k, bVar3, fVar, wVar, "organizationRepositories");
         aa.c.c(ci0.n.a, false).b(fVar, wVar, iVar.l);
         fVar.z0("readme");
         aa.c.b(aa.c.c(ci0.p.a, true)).b(fVar, wVar, iVar.m);

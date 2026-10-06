@@ -8,7 +8,7 @@ import jo.zh0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j10 implements aaShadow.a {
     public static final j10 a = new j10();
-    public static final List b = sy.d0.o("user", "organization", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("user", "organization", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

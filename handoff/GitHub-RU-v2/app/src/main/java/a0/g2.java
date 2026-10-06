@@ -1,7 +1,7 @@
 package a0;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class g2 implements z {
+public final class g2 implements zShadow {
 
     /* renamed from: a, reason: collision with root package name */
     public int f89a;
@@ -37,7 +37,7 @@ public final class g2 implements z {
         return ((this.f91c.hashCode() + (this.f89a * 31)) * 31) + this.f90b;
     }
 
-    @Override // a0.z, a0.d0, a0.o
+    @Override // a0.zShadow, a0.d0, a0.o
     public final k2 a_dup(h2 h2Var) {
         return new u2(this.f89a, this.f90b, this.f91c);
     }

@@ -8,6 +8,6 @@ public final class m {
     public m(oa.g gVar) {
         k71.k.g(gVar, "service");
         this.a = gVar;
-        this.b = new l01.w(x61.r.r);
+        this.b = new l01.w(x61.rShadow.r);
     }
 }

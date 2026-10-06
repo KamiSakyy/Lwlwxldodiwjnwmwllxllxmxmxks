@@ -6,7 +6,7 @@ public abstract class h80 {
     public static final aa.q0 a;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         a = new aa.q0("SetLabelsForLabelablePayload", rVar, rVar);
     }
 }

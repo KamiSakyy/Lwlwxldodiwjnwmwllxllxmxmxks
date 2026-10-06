@@ -6,7 +6,7 @@ import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.ui.t1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import yz0.c2;
 
@@ -70,11 +70,11 @@ public final class r0 extends k1 implements com.github.rudroid.utilities.viewmod
         g1.a aVar = g1.Companion;
         q0 q0Var = new q0(new c2(str, str2), str8, str6, null, str6.length() > 0);
         aVar.getClass();
-        y1 c10 = n1.c(new t1(q0Var));
+        y1 c10 = n1Shadow.c(new t1(q0Var));
         this.B = c10;
         this.C = new i1(c10);
         if (str8.length() == 0) {
-            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new x0(this, str3, str4, null), 3);
+            v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new x0(this, str3, str4, null), 3);
         }
     }
 

@@ -40,7 +40,7 @@ public final class i implements y71.j {
                         i = hVar.v;
                         if (i != 0) {
                             y.j(obj2);
-                            Object k = this.t.k.k((v0) obj);
+                            Object k = this.t.k.kShadow((v0) obj);
                             if (k != null) {
                                 hVar.v = 1;
                                 if (this.s.c(k, hVar) == aVar) {
@@ -74,7 +74,7 @@ public final class i implements y71.j {
                         i2 = kVar.v;
                         if (i2 != 0) {
                             y.j(obj3);
-                            Object k2 = this.t.k.k((v0) obj);
+                            Object k2 = this.t.k.kShadow((v0) obj);
                             if (k2 != null) {
                                 kVar.v = 1;
                                 if (this.s.c(k2, kVar) == aVar3) {

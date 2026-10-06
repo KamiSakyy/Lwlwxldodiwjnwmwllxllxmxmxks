@@ -2,7 +2,7 @@ package com.github.rudroid.uitoolkit.extensions;
 
 import android.graphics.BlurMaskFilter;
 import android.graphics.Paint;
-import d2.a0;
+import d2.a0Shadow;
 import d2.r;
 import k71.k;
 import s3.f;
@@ -26,16 +26,16 @@ public final /* synthetic */ class a implements j71.c {
         f2.d dVar = (f2.d) obj;
         k.g(dVar, "$this$drawBehind");
         r t = dVar.c0().t();
-        l g = a0.g();
+        l g = a0Shadow.g();
         Paint paint = (Paint) g.b;
         float f = this.r;
         if (!f.b(f, 0)) {
             paint.setMaskFilter(new BlurMaskFilter(dVar.W(f), BlurMaskFilter.Blur.NORMAL));
         }
-        paint.setColor(a0.y(this.s));
+        paint.setColor(a0Shadow.y(this.s));
         float W = dVar.W(this.t);
         float W2 = dVar.W(this.u);
         t.m(W, W2, Float.intBitsToFloat((int) (dVar.a() >> 32)) + W, Float.intBitsToFloat((int) (dVar.a() & 4294967295L)) + W2, g);
-        return w61.a0.a;
+        return w61.a0Shadow.a;
     }
 }

@@ -674,9 +674,9 @@ public final class i0 {
                 b = new g0(str2, str2, str);
                 b.u = 0;
                 b.d(1);
-                a(b);
+                a(bShadow);
             }
-            consumer.accept(b);
+            consumer.accept(bShadow);
         }
     }
 

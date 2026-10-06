@@ -11,7 +11,7 @@ import com.github.rudroid.copilot.h1;
 import hc0.pm;
 import java.util.List;
 import k71.k;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements w0 {
@@ -37,7 +37,7 @@ public final class g implements w0 {
         List list = x20.a.a;
         List list2 = x20.a.a;
         k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -57,7 +57,7 @@ public final class g implements w0 {
     }
 
     public final int hashCode() {
-        return this.u.hashCode() + f1.e.a(this.t, h1.i(this.r.hashCode() * 31, this.s, 31), 31);
+        return this.u.hashCode() + f1.e.a(this.t, h1.i(this.rShadow.hashCode() * 31, this.s, 31), 31);
     }
 
     public final String i() {

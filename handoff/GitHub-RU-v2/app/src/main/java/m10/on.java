@@ -24,7 +24,7 @@ public final class on {
         t = onVarArr;
         u = v8.l0.t(onVarArr);
         Companion = new nn();
-        sy.d0.o("GESTURE", "KEY_COMMAND", "LEFT_SWIPE", "LONG_PRESS", "PRESS", "RIGHT_SWIPE", "SWIPE");
+        sy.d0Shadow.o("GESTURE", "KEY_COMMAND", "LEFT_SWIPE", "LONG_PRESS", "PRESS", "RIGHT_SWIPE", "SWIPE");
     }
 
     public on(String str, int i, String str2) {

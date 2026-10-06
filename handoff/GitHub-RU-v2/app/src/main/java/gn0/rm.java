@@ -29,7 +29,7 @@ public final class rm {
         x = rmVarArr;
         y = v8.l0.t(rmVarArr);
         Companion = new qm();
-        sy.d0.o(new String[]{"APPROVE", "COMMENT", "DISMISS", "REQUEST_CHANGES"});
+        sy.d0Shadow.o(new String[]{"APPROVE", "COMMENT", "DISMISS", "REQUEST_CHANGES"});
     }
 
     public rm(String str, int i, String str2) {

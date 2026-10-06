@@ -6,7 +6,7 @@ import com.github.service.models.response.projects.ProjectFieldType;
 import com.github.service.models.response.projects.ProjectViewItemSortableValueType;
 import com.github.service.models.response.projects.ProjectsMetaInfo;
 import d1.j1;
-import f00.a0;
+import f00.a0Shadow;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,7 +26,7 @@ import m10.ou;
 import m10.st;
 import m10.ut;
 import m10.yt;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import xz.b0;
 import xz.e0;
@@ -152,7 +152,7 @@ public final class u {
                 Object obj3 = tVar.C;
                 b71.a aVar2 = b71.a.r;
                 i = tVar.E;
-                x61.r rVar = x61.r.r;
+                x61.rShadow rVar = x61.rShadow.r;
                 if (i != 0) {
                     y.j(obj3);
                     j0 j0Var3 = projectsMetaInfo.u;
@@ -318,7 +318,7 @@ public final class u {
                                         }
                                         mxVar = mx.v;
                                     }
-                                    arrayList3.add(new a0(mxVar, str9));
+                                    arrayList3.add(new a0Shadow(mxVar, str9));
                                     it3 = it4;
                                     aVar2 = aVar5;
                                 } else {
@@ -433,7 +433,7 @@ public final class u {
                                             switch (r.a[j0Var2.l().ordinal()]) {
                                                 case 1:
                                                     ut.Companion.getClass();
-                                                    i0Var = new i0(((aa.q) ut.a).a, new xz.a0(str13 != null ? d0.n(str13) : t71.p.g0(str3, new String[]{", "}, 6)), null, null, null, null, null, null, null);
+                                                    i0Var = new i0(((aa.q) ut.a).a, new xz.a0(str13 != null ? d0Shadow.n(str13) : t71.p.g0(str3, new String[]{", "}, 6)), null, null, null, null, null, null, null);
                                                     i0Var2 = i0Var;
                                                     if (i0Var2 != null) {
                                                         eVar2 = new xz.e(i0Var2.a, i0Var2);
@@ -654,7 +654,7 @@ public final class u {
         Object obj32 = tVar.C;
         b71.a aVar22 = b71.a.r;
         i = tVar.E;
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         if (i != 0) {
         }
         bVar3 = (vz.b) obj32;

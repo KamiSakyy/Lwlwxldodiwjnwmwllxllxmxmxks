@@ -49,7 +49,7 @@ final class i<T> implements y71.j {
                     obj = hVar.u;
                     sy.y.j(obj2);
                 }
-                v71.a0 a0Var = v71.a0.u;
+                v71.a0Shadow a0Var = v71.a0Shadow.u;
                 j71.e eVar = this.t;
                 v71.z zVar = this.s;
                 wVar.r = v71.b0.z(zVar, (a71.h) null, a0Var, new g(eVar, obj, zVar, null), 1);
@@ -63,7 +63,7 @@ final class i<T> implements y71.j {
         k71.w wVar2 = this.r;
         if (i != 0) {
         }
-        v71.a0 a0Var2 = v71.a0.u;
+        v71.a0Shadow a0Var2 = v71.a0Shadow.u;
         j71.e eVar2 = this.t;
         v71.z zVar2 = this.s;
         wVar2.r = v71.b0.z(zVar2, (a71.h) null, a0Var2, new g(eVar2, obj, zVar2, null), 1);

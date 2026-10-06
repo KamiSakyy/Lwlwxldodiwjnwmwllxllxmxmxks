@@ -1,7 +1,7 @@
 package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x {
+public final class xShadow {
     public String a;
     public y0 b;
     public vx.a c;
@@ -17,10 +17,10 @@ public final class x {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return k71.k.b(this.a, xVar.a) && k71.k.b(this.b, xVar.b) && k71.k.b(this.c, xVar.c);
     }
 
@@ -36,6 +36,6 @@ public final class x {
         sb.append(", onProjectV2FieldConfiguration=");
         sb.append(this.b);
         sb.append(", nodeIdFragment=");
-        return jo.f4.r(sb, this.c, ")");
+        return jo.f4Shadow.r(sb, this.c, ")");
     }
 }

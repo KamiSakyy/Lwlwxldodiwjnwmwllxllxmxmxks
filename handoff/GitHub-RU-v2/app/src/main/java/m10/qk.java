@@ -7,7 +7,7 @@ public abstract class qk {
     public static final pk Companion = new pk();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         l.Companion.getClass();
         aa.j0 j0Var = l.a;
         zp.Companion.getClass();

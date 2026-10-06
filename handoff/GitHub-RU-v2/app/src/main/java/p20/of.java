@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class of implements aaShadow.a {
     public static final of a = new of();
-    public static final List b = sy.d0.o("__typename", "url", "state", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "url", "state", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

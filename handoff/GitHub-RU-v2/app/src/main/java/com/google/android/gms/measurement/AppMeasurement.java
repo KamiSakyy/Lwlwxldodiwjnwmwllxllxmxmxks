@@ -3,7 +3,7 @@ package com.google.android.gms.measurement;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.u0;
 import com.google.android.gms.measurement.internal.c2;
 import com.google.android.gms.measurement.internal.o1;
@@ -127,7 +127,7 @@ public class AppMeasurement {
         ArrayList arrayList = new ArrayList(i == null ? 0 : i.size());
         for (Bundle bundle : i) {
             ConditionalUserProperty conditionalUserProperty = new ConditionalUserProperty();
-            u.g(bundle);
+            uShadow.g(bundle);
             conditionalUserProperty.mAppId = (String) c2.e(bundle, "app_id", String.class, null);
             conditionalUserProperty.mOrigin = (String) c2.e(bundle, "origin", String.class, null);
             conditionalUserProperty.mName = (String) c2.e(bundle, "name", String.class, null);
@@ -181,7 +181,7 @@ public class AppMeasurement {
 
     @Keep
     public void setConditionalUserProperty(ConditionalUserProperty conditionalUserProperty) {
-        u.g(conditionalUserProperty);
+        uShadow.g(conditionalUserProperty);
         Bundle bundle = new Bundle();
         String str = conditionalUserProperty.mAppId;
         if (str != null) {

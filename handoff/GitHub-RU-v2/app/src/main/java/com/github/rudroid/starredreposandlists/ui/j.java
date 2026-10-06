@@ -25,14 +25,14 @@ import com.github.rudroid.utilities.ui.l0;
 import com.github.service.models.response.Avatar;
 import com.google.android.gms.internal.measurement.i4;
 import com.google.android.gms.internal.measurement.z3;
-import d2.a0;
+import d2.a0Shadow;
 import d3.q;
 import f1.f8;
 import f1.g8;
 import f1.p5;
 import f1.ub;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import w1.o;
 import w1.r;
 
@@ -56,7 +56,7 @@ public final class j {
                 N = new i(cVar, kVar, 0);
                 sVar2.n0(N);
             }
-            List n = d0.n(new d3.f(p0, (j71.a) N));
+            List n = d0Shadow.n(new d3.f(p0, (j71.a) N));
             String p02 = i4.p0(2131953851, sVar2);
             o oVar = o.a;
             r m = f0.o.m(oVar, false, p02, (d3.k) null, aVar, 13);
@@ -106,7 +106,7 @@ public final class j {
                 sVar2.c0(2065087872);
             }
             sVar2.q(z2);
-            c(androidx.compose.foundation.layout.b.B(oVar, 0.0f, ih.a.l, 0.0f, 0.0f, 13), kVar2.i(), kVar2.b(), a0.c(kVar2.c()), sVar2, 0);
+            c(androidx.compose.foundation.layout.b.B(oVar, 0.0f, ih.a.l, 0.0f, 0.0f, 13), kVar2.i(), kVar2.b(), a0Shadow.c(kVar2.c()), sVar2, 0);
             sVar2.q(true);
         } else {
             kVar2 = kVar;
@@ -151,16 +151,16 @@ public final class j {
             } else {
                 sVar.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             t.I(sVar, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             t.I(sVar, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             t.w(sVar, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             t.E(sVar, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             t.I(sVar, eVar4, c);
             if (!(((double) 1.0f) > 0.0d)) {
                 l0.a.a("invalid weight; must be greater than zero");

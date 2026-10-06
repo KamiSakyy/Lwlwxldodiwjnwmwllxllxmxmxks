@@ -70,7 +70,7 @@ final class fa extends c71.j implements j71.e {
             String str4 = this.x;
             k71.k.g(str4, "id");
             k71.k.g(linkedHashSet2, "originalListOfReviewers");
-            y71.y yVar2 = new y71.y(new da(t9Var, null), in.r.l(new y71.y(b31.b.J(o1Var.a.a(d, str4, arrayList, arrayList2, arrayList3, false, yVar), d, yVar), new zk.n1(linkedHashSet2, o1Var, d, str4, arrayList, arrayList2, null), 6)));
+            y71.y yVar2 = new y71.y(new da(t9Var, null), in.rShadow.l(new y71.y(b31.b.J(o1Var.a.a(d, str4, arrayList, arrayList2, arrayList3, false, yVar), d, yVar), new zk.n1(linkedHashSet2, o1Var, d, str4, arrayList, arrayList2, null), 6)));
             ea eaVar = new ea(p0Var);
             this.v = 1;
             if (yVar2.b(eaVar, this) == aVar) {

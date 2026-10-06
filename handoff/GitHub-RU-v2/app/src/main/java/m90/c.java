@@ -20,7 +20,7 @@ import hc0.av;
 import java.util.List;
 import k81.u0;
 import k81.z;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements i0, k, x {
@@ -82,7 +82,7 @@ public final class c implements i0, k, x {
         List list = n90.a.a;
         List list2 = n90.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", j0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -102,7 +102,7 @@ public final class c implements i0, k, x {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(c.class).hashCode();
+                return k71.xShadow.a(c.class).hashCode();
             default:
                 return super.hashCode();
         }

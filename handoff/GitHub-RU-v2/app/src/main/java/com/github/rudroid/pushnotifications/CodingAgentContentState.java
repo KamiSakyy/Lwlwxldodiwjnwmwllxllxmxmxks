@@ -1,6 +1,6 @@
 package com.github.rudroid.pushnotifications;
 
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @g81.e
@@ -24,7 +24,7 @@ public final class CodingAgentContentState {
         if (1 == (i & 1)) {
             this.f18511a = sessionState;
         } else {
-            c1.l(i, 1, CodingAgentContentState$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, CodingAgentContentState$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

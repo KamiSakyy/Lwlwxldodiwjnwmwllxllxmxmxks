@@ -1,7 +1,7 @@
 package tw0;
 
 import t00.x9;
-import v00.t;
+import v00.tShadow;
 import vb0.p4;
 import vb0.r7;
 import vb0.v2;
@@ -32,19 +32,19 @@ public final class i implements y71.i {
                 }
                 break;
             case 1:
-                Object b2 = this.s.b(new t(jVar, 7), cVar);
+                Object b2 = this.s.b(new tShadow(jVar, 7), cVar);
                 if (b2 != b71.a.r) {
                     break;
                 }
                 break;
             case 2:
-                Object b3 = this.s.b(new t(jVar, 11), cVar);
+                Object b3 = this.s.b(new tShadow(jVar, 11), cVar);
                 if (b3 != b71.a.r) {
                     break;
                 }
                 break;
             case 3:
-                Object b4 = this.s.b(new t(jVar, 26), cVar);
+                Object b4 = this.s.b(new tShadow(jVar, 26), cVar);
                 if (b4 != b71.a.r) {
                     break;
                 }

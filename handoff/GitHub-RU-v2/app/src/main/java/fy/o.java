@@ -3,12 +3,12 @@ package fy;
 import aa.w;
 import ey.r;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements aa.a {
     public static final o a = new o();
-    public static final List b = d0.o("pageInfo", "nodes");
+    public static final List b = d0Shadow.o("pageInfo", "nodes");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

@@ -6,6 +6,6 @@ public abstract class i2 {
 
     static {
         ac.Companion.getClass();
-        new aa.q0("BecameSponsorableFeedItem", x61.r.r, sy.d0.n(ac.a));
+        new aa.q0("BecameSponsorableFeedItem", x61.rShadow.r, sy.d0Shadow.n(ac.a));
     }
 }

@@ -17,14 +17,14 @@ public abstract class q4 {
     static {
         pd.Companion.getClass();
         aa.r b = v8.l0.b(pd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         k71.k.g(xVar, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Milestone");
+        List n = sy.d0Shadow.n("Milestone");
         List list = xs0.a.a;
         aa.s c = no.a.c(list, "selections", "Milestone", n, list);
         td.Companion.getClass();
@@ -38,7 +38,7 @@ public abstract class q4 {
         aa.q0 q0Var = aj.a;
         k71.k.g(q0Var, "type");
         jx.Companion.getClass();
-        List r4 = x61.l.r(new aa.m[]{new aa.m("milestones", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(jx.E, new aa.u0(new aa.t("after"))), new aa.k(jx.F, new aa.u0(50)), new aa.k(jx.G, new aa.u0(x61.x.u(new w61.k("direction", "ASC"), new w61.k("field", "DUE_DATE")))), new aa.k(jx.H, new aa.u0(new aa.t("query"))), new aa.k(jx.I, new aa.u0(sy.d0.n("OPEN")))}), r3), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
+        List r4 = x61.l.r(new aa.m[]{new aa.m("milestones", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(jx.E, new aa.u0(new aa.t("after"))), new aa.k(jx.F, new aa.u0(50)), new aa.k(jx.G, new aa.u0(x61.x.u(new w61.k("direction", "ASC"), new w61.k("field", "DUE_DATE")))), new aa.k(jx.H, new aa.u0(new aa.t("query"))), new aa.k(jx.I, new aa.u0(sy.d0Shadow.n("OPEN")))}), r3), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.q0 q0Var2 = jx.t0;
         k71.k.g(q0Var2, "type");
         su.Companion.getClass();

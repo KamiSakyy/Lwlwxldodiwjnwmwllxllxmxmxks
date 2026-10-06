@@ -2,7 +2,7 @@ package w80;
 
 import hc0.fq;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class q1 implements aa.a {
@@ -223,7 +223,7 @@ public abstract class q1 implements aa.a {
                     num3 = num;
                 case 16:
                     num = num7;
-                    o0Var = (o0) aa.c.c(f1.a, false).a(eVar, wVar);
+                    o0Var = (o0) aa.c.c(f1Shadow.a, false).a(eVar, wVar);
                     num3 = num;
                 case 17:
                     num = num7;

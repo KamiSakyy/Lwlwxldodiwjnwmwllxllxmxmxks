@@ -11,8 +11,8 @@ import k71.k;
 import m10.eh;
 import m10.v10;
 import m10.vp;
-import sy.d0;
-import x61.r;
+import sy.d0Shadow;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class f {
@@ -22,12 +22,12 @@ public abstract class f {
         eh.Companion.getClass();
         x xVar = eh.a;
         k.g(xVar, "type");
-        r rVar = r.r;
-        List n = d0.n(new m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        rShadow rVar = rShadow.r;
+        List n = d0Shadow.n(new m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         v10.Companion.getClass();
         q0 q0Var = v10.a;
         k.g(q0Var, "type");
         vp.Companion.getClass();
-        a = d0.n(new m("rejectMobileAuthDeviceRequest", q0Var, (String) null, rVar, no.a.s(vp.A0, new u0(s0.p("requestId", new t("requestId")))), n));
+        a = d0Shadow.n(new m("rejectMobileAuthDeviceRequest", q0Var, (String) null, rVar, no.a.s(vp.A0, new u0(s0.p("requestId", new t("requestId")))), n));
     }
 }

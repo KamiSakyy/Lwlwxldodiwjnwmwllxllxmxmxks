@@ -4,32 +4,32 @@ package i9;
 public abstract class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final h91.k f26120a;
+    public static final h91.kShadow f26120a;
 
     /* renamed from: b, reason: collision with root package name */
-    public static final h91.k f26121b;
+    public static final h91.kShadow f26121b;
 
     /* renamed from: c, reason: collision with root package name */
-    public static final h91.k f26122c;
+    public static final h91.kShadow f26122c;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final h91.k f26123d;
+    public static final h91.kShadow f26123d;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final h91.k f26124e;
+    public static final h91.kShadow f26124e;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final h91.k f26125f;
+    public static final h91.kShadow f26125f;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final h91.k f26126g;
+    public static final h91.kShadow f26126g;
 
     /* renamed from: h, reason: collision with root package name */
-    public static final h91.k f26127h;
-    public static final h91.k i;
+    public static final h91.kShadow f26127h;
+    public static final h91.kShadow i;
 
     static {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         f26120a = c30.d.b("GIF87a");
         f26121b = c30.d.b("GIF89a");
         f26122c = c30.d.b("RIFF");

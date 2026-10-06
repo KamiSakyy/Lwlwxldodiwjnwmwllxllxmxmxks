@@ -2,14 +2,14 @@ package wz;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import vz.y;
 import vz.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r implements aa.a {
     public static final r a = new r();
-    public static final List b = d0.o("__typename", "id");
+    public static final List b = d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, w wVar) {
         z zVar;

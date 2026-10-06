@@ -3,7 +3,7 @@ package on;
 import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.service.models.response.PullRequestState;
-import jo.f4;
+import jo.f4Shadow;
 import yz0.d3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -62,6 +62,6 @@ public final class i {
         o.append(", isDraft=");
         o.append(this.j);
         o.append(", isInMergeQueue=");
-        return f4.s(o, this.k, ")");
+        return f4Shadow.s(o, this.k, ")");
     }
 }

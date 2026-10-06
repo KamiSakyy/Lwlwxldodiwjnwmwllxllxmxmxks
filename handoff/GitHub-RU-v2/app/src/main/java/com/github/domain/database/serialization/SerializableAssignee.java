@@ -6,9 +6,9 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import com.github.service.models.response.Avatar;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 import yz0.f;
@@ -34,7 +34,7 @@ public final class SerializableAssignee implements f {
 
     public /* synthetic */ SerializableAssignee(int i, String str, Avatar avatar, String str2, String str3, boolean z, boolean z2, boolean z3) {
         if (127 != (i & 127)) {
-            c1.l(i, 127, SerializableAssignee$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 127, SerializableAssignee$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;
@@ -97,7 +97,7 @@ public final class SerializableAssignee implements f {
         sb.append(", id=");
         f1.e.x(sb, this.t, ", name=", this.u, ", isBot=");
         m0.A(sb, this.v, ", isCopilot=", this.w, ", isAgent=");
-        return f4.s(sb, this.x, ")");
+        return f4Shadow.s(sb, this.x, ")");
     }
 
     public final boolean u() {

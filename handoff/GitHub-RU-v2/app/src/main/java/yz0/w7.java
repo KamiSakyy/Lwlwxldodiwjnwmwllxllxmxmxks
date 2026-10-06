@@ -46,7 +46,7 @@ public final class w7 {
     public final int hashCode() {
         int h = com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h((this.b.hashCode() + (this.a.hashCode() * 31)) * 31, this.c, 31), this.d, 31), this.e, 31);
         v2 v2Var = this.f;
-        return Boolean.hashCode(this.j) + no.a.b(this.i, jo.f4.b(this.h, (this.g.hashCode() + ((h + (v2Var == null ? 0 : v2Var.hashCode())) * 31)) * 31, 31), 31);
+        return Boolean.hashCode(this.j) + no.a.b(this.i, jo.f4Shadow.b(this.h, (this.g.hashCode() + ((h + (v2Var == null ? 0 : v2Var.hashCode())) * 31)) * 31, 31), 31);
     }
 
     public final String toString() {

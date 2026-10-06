@@ -28,7 +28,7 @@ public final class AgentTasksWidgetSettingsActivity extends d0 {
     public final void u0(Context context, oa.j jVar, b6.c cVar) {
         k71.k.g(context, "context");
         k71.k.g(jVar, "user");
-        v71.b0.z(d1.i(this), (a71.h) null, (v71.a0) null, new t(this, cVar, jVar, context, null), 3).o0(new com.github.rudroid.support.u(12, this));
+        v71.b0.z(d1.i(this), (a71.h) null, (v71.a0Shadow) null, new t(this, cVar, jVar, context, null), 3).o0(new com.github.rudroid.support.u(12, this));
         AgentTasksWidgetWorker.Companion.getClass();
         AgentTasksWidgetWorker.a.a(context);
     }

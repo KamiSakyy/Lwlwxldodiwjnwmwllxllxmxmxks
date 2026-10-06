@@ -12,6 +12,6 @@ public final class f implements Comparator {
     public final int compare(Object obj, Object obj2) {
         switch (this.f24581a) {
         }
-        return sy.t.g(Integer.valueOf(((e) obj).f24576b), Integer.valueOf(((e) obj2).f24576b));
+        return sy.tShadow.g(Integer.valueOf(((e) obj).f24576b), Integer.valueOf(((e) obj2).f24576b));
     }
 }

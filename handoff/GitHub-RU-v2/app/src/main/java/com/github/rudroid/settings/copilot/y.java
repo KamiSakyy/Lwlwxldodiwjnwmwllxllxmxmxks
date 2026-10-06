@@ -41,7 +41,7 @@ public final /* synthetic */ class y implements j71.c {
                 CopilotChatSettingsActivity.a aVar3 = CopilotChatSettingsActivity.Companion;
                 CopilotChatSettingsActivity.L0(copilotChatSettingsActivity, MobileAppElement.COPILOT_SETTINGS_ENABLE);
                 o oVar = (o) copilotChatSettingsActivity.u0.getValue();
-                v71.b0.z(d1.k(oVar), (a71.h) null, (v71.a0) null, new b0(oVar, booleanValue, null), 3);
+                v71.b0.z(d1.k(oVar), (a71.h) null, (v71.a0Shadow) null, new b0(oVar, booleanValue, null), 3);
                 break;
         }
         return a0Var;

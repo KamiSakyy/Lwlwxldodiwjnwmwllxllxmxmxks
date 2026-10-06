@@ -12,12 +12,12 @@ public abstract class q0 {
     static {
         eh.Companion.getClass();
         aa.r b = v8.l0.b(eh.a);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("__typename", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("__typename", b, (String) null, rVar, rVar, rVar));
         cb.Companion.getClass();
         aa.q0 q0Var = cb.a;
         k71.k.g(q0Var, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("deleteIssueComment", q0Var, (String) null, rVar, no.a.s(vp.Q, new aa.u0(a0.s0.p("id", new aa.t("commentId")))), n));
+        a = sy.d0Shadow.n(new aa.m("deleteIssueComment", q0Var, (String) null, rVar, no.a.s(vp.Q, new aa.u0(a0.s0.p("id", new aa.t("commentId")))), n));
     }
 }

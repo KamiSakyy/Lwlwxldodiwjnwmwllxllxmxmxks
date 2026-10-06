@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.search.SearchBar$ScrollingViewBehavior;
-import sy.o;
+import sy.oShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class h extends i {
@@ -98,7 +98,7 @@ public abstract class h extends i {
             }
         }
         int i2 = this.f;
-        return o.b((int) (f * i2), 0, i2);
+        return oShadow.b((int) (f * i2), 0, i2);
     }
 
     public h(int i) {

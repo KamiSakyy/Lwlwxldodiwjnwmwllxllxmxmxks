@@ -1,7 +1,7 @@
 package rm0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class b1 extends c71.c {
+public final class b1Shadow extends c71.c {
     public int A;
     public int B;
     public /* synthetic */ Object u;

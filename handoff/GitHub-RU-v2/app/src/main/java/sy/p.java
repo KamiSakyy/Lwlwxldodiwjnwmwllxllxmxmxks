@@ -67,7 +67,7 @@ import yz0.y7;
 import yz0.z5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class p {
+public abstract class pShadow {
     public static final String a(Object[] objArr, int i, int i2, x61.g gVar) {
         StringBuilder sb = new StringBuilder((i2 * 3) + 2);
         sb.append("[");
@@ -148,7 +148,7 @@ public abstract class p {
                 arrayList.add(o.l(((c60.d) obj3).c));
             }
         }
-        return arrayList == null ? x61.r.r : arrayList;
+        return arrayList == null ? x61.rShadow.r : arrayList;
     }
 
     public static final h01.q d(b4 b4Var) {
@@ -158,7 +158,7 @@ public abstract class p {
         o6 r6Var;
         o6 o6Var;
         ye0.e eVar2;
-        ih0.r rVar;
+        ih0.rShadow rVar;
         ih0.b bVar;
         zk0.c cVar;
         ge0.b bVar2;
@@ -214,9 +214,9 @@ public abstract class p {
         String str6 = b4Var.b;
         a4 a4Var = b4Var.c;
         int i = a4Var.b;
-        x61.r<y3> rVar2 = a4Var.d;
+        x61.rShadow<y3> rVar2 = a4Var.d;
         if (rVar2 == null) {
-            rVar2 = x61.r.r;
+            rVar2 = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         for (y3 y3Var : rVar2) {
@@ -526,9 +526,9 @@ public abstract class p {
         ae0.c cVar10;
         ij0.b bVar8;
         og0.a aVar;
-        x61.r<mg0.w> rVar = yVar.d;
+        x61.rShadow<mg0.w> rVar = yVar.d;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         for (mg0.w wVar : rVar) {
@@ -687,7 +687,7 @@ public abstract class p {
         List c = c((k60Var == null || (j60Var6 = k60Var.b) == null) ? null : j60Var6.j);
         List list = (k60Var == null || (j60Var5 = k60Var.b) == null) ? null : j60Var5.f.a;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(list);
         ArrayList arrayList2 = new ArrayList(x61.n.F(S, 10));

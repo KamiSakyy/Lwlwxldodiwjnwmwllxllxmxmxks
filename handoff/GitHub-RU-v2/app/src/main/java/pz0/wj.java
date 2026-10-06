@@ -19,7 +19,7 @@ public final class wj {
         u = wjVarArr;
         v8.l0.t(wjVarArr);
         Companion = new vj();
-        sy.d0.o(new String[]{"AUTH", "RECOVERY"});
+        sy.d0Shadow.o(new String[]{"AUTH", "RECOVERY"});
     }
 
     public wj(String str, int i, String str2) {

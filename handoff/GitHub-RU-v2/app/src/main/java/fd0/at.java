@@ -7,7 +7,7 @@ import kc0.h60;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class at implements aaShadow.a {
     public static final at a = new at();
-    public static final List b = sy.d0.n("issueComment");
+    public static final List b = sy.d0Shadow.n("issueComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

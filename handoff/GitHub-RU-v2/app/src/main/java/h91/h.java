@@ -25,7 +25,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
     }
 
     @Override // h91.j
-    public final boolean A0(long j, k kVar) {
+    public final boolean A0(long j, kShadow kVar) {
         k71.k.g(kVar, "bytes");
         return N(kVar.d(), j, kVar);
     }
@@ -79,7 +79,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
         }
     }
 
-    public final void E0(k kVar) {
+    public final void E0(kShadow kVar) {
         k71.k.g(kVar, "byteString");
         kVar.s(this, kVar.d());
     }
@@ -377,7 +377,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
         this.s += i;
     }
 
-    public final long M(long j, k kVar) {
+    public final long M(long j, kShadow kVar) {
         k71.k.g(kVar, "targetBytes");
         long j2 = 0;
         if (j < 0) {
@@ -492,7 +492,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
         this.s += 4;
     }
 
-    public final boolean N(int i, long j, k kVar) {
+    public final boolean N(int i, long j, kShadow kVar) {
         k71.k.g(kVar, "bytes");
         if (i >= 0 && j >= 0 && i + j <= this.s && i <= kVar.d()) {
             return i == 0 || i91.a.a(this, kVar, j, j + 1, i) != -1;
@@ -941,7 +941,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
     }
 
     @Override // h91.i
-    public final /* bridge */ /* synthetic */ i p(k kVar) {
+    public final /* bridge */ /* synthetic */ i p(kShadow kVar) {
         E0(kVar);
         return this;
     }
@@ -952,7 +952,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
     }
 
     @Override // h91.j
-    public final long q(k kVar) {
+    public final long q(kShadow kVar) {
         k71.k.g(kVar, "targetBytes");
         return M(0L, kVar);
     }
@@ -1157,9 +1157,9 @@ public final class h implements j, i, Cloneable, ByteChannel {
             throw new EOFException();
         }
         if (j < 4096) {
-            return new k(W(j));
+            return new kShadow(W(j));
         }
-        k w0 = w0((int) j);
+        kShadow w0 = w0((int) j);
         skip(j);
         return w0;
     }

@@ -40,7 +40,7 @@ public final /* synthetic */ class d2 implements j71.c {
                 Boolean bool = (Boolean) e2Var.t.a("EXTRA_REPO_SHOW_PINNED_ISSUES");
                 r3 = (!(bool != null ? bool.booleanValue() : false) || e2Var.C || e2Var.D) ? 0 : 1;
                 b2Var.getClass();
-                y61.b i3 = sy.d0.i();
+                y61.b i3 = sy.d0Shadow.i();
                 if (!arrayList.isEmpty() && r3 != 0) {
                     i3.add(new oe.e());
                     ArrayList arrayList3 = new ArrayList(x61.n.F(arrayList, 10));

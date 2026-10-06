@@ -3,7 +3,7 @@ package com.github.service.dotcom.models.response.copilot;
 import com.google.android.gms.internal.measurement.d5;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import k81.q1;
@@ -16,7 +16,7 @@ import m71.a;
 import w61.c;
 import w61.h;
 import xn.c4;
-import xn.d4;
+import xn.d4Shadow;
 
 @c
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -43,7 +43,7 @@ public final /* synthetic */ class SteerAgentTaskRequest$$serializer implements 
 
     public final KSerializer[] childSerializers() {
         h[] hVarArr = SteerAgentTaskRequest.h;
-        KSerializer z = a.z(d4.a);
+        KSerializer z = a.z(d4Shadow.a);
         KSerializer kSerializer = q1.a;
         return new KSerializer[]{z, a.z(kSerializer), kSerializer, a.z(kSerializer), a.z(kSerializer), a.z(kSerializer), a.z((KSerializer) hVarArr[6].getValue())};
     }
@@ -70,7 +70,7 @@ public final /* synthetic */ class SteerAgentTaskRequest$$serializer implements 
                     z = false;
                     break;
                 case 0:
-                    c4Var = (c4) b.x(serialDescriptor, 0, d4.a, c4Var);
+                    c4Var = (c4) b.x(serialDescriptor, 0, d4Shadow.a, c4Var);
                     i |= 1;
                     break;
                 case 1:
@@ -118,7 +118,7 @@ public final /* synthetic */ class SteerAgentTaskRequest$$serializer implements 
         d5 b = encoder.b(serialDescriptor);
         h[] hVarArr = SteerAgentTaskRequest.h;
         if (b.X(serialDescriptor) || c4Var != null) {
-            b.H(serialDescriptor, 0, d4.a, c4Var);
+            b.H(serialDescriptor, 0, d4Shadow.a, c4Var);
         }
         if (b.X(serialDescriptor) || str != null) {
             b.H(serialDescriptor, 1, q1.a, str);
@@ -145,6 +145,6 @@ public final /* synthetic */ class SteerAgentTaskRequest$$serializer implements 
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

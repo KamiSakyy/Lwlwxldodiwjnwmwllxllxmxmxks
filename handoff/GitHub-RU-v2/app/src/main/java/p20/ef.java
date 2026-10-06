@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ef implements aaShadow.a {
     public static final ef a = new ef();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -24,7 +24,7 @@ public final class ef implements aaShadow.a {
             }
         }
         eVar.s0();
-        g40.e1 c = g40.f1.c(eVar, wVar);
+        g40.e1 c = g40.f1Shadow.c(eVar, wVar);
         if (str == null) {
             k41.b.B(eVar, "__typename");
             throw null;
@@ -46,7 +46,7 @@ public final class ef implements aaShadow.a {
         bVar.b(fVar, wVar, smVar.a);
         fVar.z0("id");
         bVar.b(fVar, wVar, smVar.b);
-        List list = g40.f1.a;
-        g40.f1.d(fVar, wVar, smVar.c);
+        List list = g40.f1Shadow.a;
+        g40.f1Shadow.d(fVar, wVar, smVar.c);
     }
 }

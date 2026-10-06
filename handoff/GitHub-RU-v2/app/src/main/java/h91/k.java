@@ -6,8 +6,8 @@ import java.security.MessageDigest;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public class k implements Serializable, Comparable {
-    public static final k u = new k(new byte[0]);
+public class kShadow implements Serializable, Comparable {
+    public static final kShadow u = new kShadow(new byte[0]);
     public byte[] r;
     public transient int s;
     public transient String t;
@@ -17,19 +17,19 @@ public class k implements Serializable, Comparable {
         this.r = bArr;
     }
 
-    public static int g(k kVar, k kVar2) {
+    public static int g(kShadow kVar, kShadow kVar2) {
         kVar.getClass();
         k71.k.g(kVar2, "other");
         return kVar.f(0, kVar2.h());
     }
 
-    public static int k(k kVar, k kVar2) {
+    public static int k(kShadow kVar, kShadow kVar2) {
         kVar.getClass();
         k71.k.g(kVar2, "other");
         return kVar.j(kVar2.h());
     }
 
-    public static /* synthetic */ k p(k kVar, int i, int i2, int i3) {
+    public static /* synthetic */ k p(kShadow kVar, int i, int i2, int i3) {
         if ((i3 & 1) != 0) {
             i = 0;
         }
@@ -82,7 +82,7 @@ public class k implements Serializable, Comparable {
 
     @Override // java.lang.Comparable
     /* renamed from: b, reason: merged with bridge method [inline-methods] */
-    public final int compareTo(k kVar) {
+    public final int compareTo(kShadow kVar) {
         k71.k.g(kVar, "other");
         int d = d();
         int d2 = kVar.d();
@@ -105,7 +105,7 @@ public class k implements Serializable, Comparable {
         messageDigest.update(this.r, 0, d());
         byte[] digest = messageDigest.digest();
         k71.k.d(digest);
-        return new k(digest);
+        return new kShadow(digest);
     }
 
     public int d() {
@@ -130,8 +130,8 @@ public class k implements Serializable, Comparable {
         if (obj == this) {
             return true;
         }
-        if (obj instanceof k) {
-            k kVar = (k) obj;
+        if (obj instanceof kShadow) {
+            kShadow kVar = (kShadow) obj;
             int d = kVar.d();
             byte[] bArr = this.r;
             if (d == bArr.length && kVar.m(0, bArr, 0, bArr.length)) {
@@ -188,7 +188,7 @@ public class k implements Serializable, Comparable {
         return -1;
     }
 
-    public boolean l(int i, k kVar, int i2) {
+    public boolean l(int i, kShadow kVar, int i2) {
         k71.k.g(kVar, "other");
         return kVar.m(0, this.r, i, i2);
     }
@@ -219,7 +219,7 @@ public class k implements Serializable, Comparable {
             throw new IllegalArgumentException(x.i.j(new StringBuilder("endIndex > length("), bArr.length, ')').toString());
         }
         if (i2 - i >= 0) {
-            return (i == 0 && i2 == bArr.length) ? this : new k(x61.l.C(bArr, i, i2));
+            return (i == 0 && i2 == bArr.length) ? this : new kShadow(x61.l.C(bArr, i, i2));
         }
         throw new IllegalArgumentException("endIndex < beginIndex");
     }
@@ -242,7 +242,7 @@ public class k implements Serializable, Comparable {
                         copyOf[i2] = (byte) (b2 + 32);
                     }
                 }
-                return new k(copyOf);
+                return new kShadow(copyOf);
             }
             i++;
         }
@@ -464,7 +464,7 @@ public class k implements Serializable, Comparable {
         if (64 > bArr.length) {
             throw new IllegalArgumentException(x.i.j(new StringBuilder("endIndex > length("), bArr.length, ')').toString());
         }
-        sb.append((64 == bArr.length ? this : new k(x61.l.C(bArr, 0, 64))).e());
+        sb.append((64 == bArr.length ? this : new kShadow(x61.l.C(bArr, 0, 64))).e());
         sb.append("…]");
         return sb.toString();
     }

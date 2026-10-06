@@ -77,7 +77,7 @@ public final class eg {
         N = egVarArr;
         O = v8.l0.t(egVarArr);
         Companion = new dg();
-        sy.d0.o(new String[]{"ASSIGNED", "AWESOME", "CLOSED", "CREATED", "DISMISSED", "DISPLAYED", "DONE", "FEED", "MENTIONED", "OPEN", "OPENED", "READ", "REVIEW_REQUESTED", "SAVE", "SUBSCRIBE", "TRENDING", "UNDONE", "UNREAD", "UNSAVE", "UNSUBSCRIBE"});
+        sy.d0Shadow.o(new String[]{"ASSIGNED", "AWESOME", "CLOSED", "CREATED", "DISMISSED", "DISPLAYED", "DONE", "FEED", "MENTIONED", "OPEN", "OPENED", "READ", "REVIEW_REQUESTED", "SAVE", "SUBSCRIBE", "TRENDING", "UNDONE", "UNREAD", "UNSAVE", "UNSUBSCRIBE"});
     }
 
     public eg(String str, int i, String str2) {

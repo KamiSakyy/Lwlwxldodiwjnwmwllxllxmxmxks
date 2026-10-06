@@ -9,7 +9,7 @@ import kc0.t20;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nq implements aaShadow.a {
     public static final nq a = new nq();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         q20 q20Var;

@@ -10,7 +10,7 @@ import g3.q0;
 import g3.z;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import w61.a0;
 import y41.t1;
 
@@ -80,7 +80,7 @@ public final class m {
                             }
                             long j = ih.d.b(sVar2).b;
                             r0.d dVar = r0.e.a;
-                            y1.a(a2.i.b(androidx.compose.foundation.layout.b.x(f0.o.g(p2.o(com.github.rudroid.uitoolkit.extensions.d.a(a, false, (j71.c) N3), f7), i5, j, dVar), (float) 0.5d), dVar), hVar.b, null, d0.n(new u9.a()), false, null, null, null, null, true, sVar2, 0, 6, 1012);
+                            y1.a(a2.i.b(androidx.compose.foundation.layout.b.x(f0.o.g(p2.o(com.github.rudroid.uitoolkit.extensions.d.a(a, false, (j71.c) N3), f7), i5, j, dVar), (float) 0.5d), dVar), hVar.b, null, d0Shadow.n(new u9.a()), false, null, null, null, null, true, sVar2, 0, 6, 1012);
                             i5 = i5;
                             i6 = i6;
                             list2 = list2;

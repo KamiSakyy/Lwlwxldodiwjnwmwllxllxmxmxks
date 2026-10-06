@@ -7,7 +7,7 @@ final /* synthetic */ class d extends k71.i implements j71.a {
     public final Object a() {
         FocusedFilterExplainerBottomSheet focusedFilterExplainerBottomSheet = (FocusedFilterExplainerBottomSheet) ((k71.c) this).s;
         focusedFilterExplainerBottomSheet.getClass();
-        v71.b0.z(d1.i(focusedFilterExplainerBottomSheet), (a71.h) null, (v71.a0) null, new f(focusedFilterExplainerBottomSheet, null), 3);
+        v71.b0.z(d1.i(focusedFilterExplainerBottomSheet), (a71.h) null, (v71.a0Shadow) null, new f(focusedFilterExplainerBottomSheet, null), 3);
         return w61.a0.a;
     }
 }

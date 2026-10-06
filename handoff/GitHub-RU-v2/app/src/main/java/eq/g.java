@@ -3,7 +3,7 @@ package eq;
 import a0.s0;
 import aa.h0;
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -37,6 +37,6 @@ public final class g implements h0 {
     }
 
     public final String toString() {
-        return f4.r(s0.o("AvatarFragment(__typename=", this.a, ", avatarUrl=", this.b, ", nodeIdFragment="), this.c, ")");
+        return f4Shadow.r(s0.o("AvatarFragment(__typename=", this.a, ", avatarUrl=", this.b, ", nodeIdFragment="), this.c, ")");
     }
 }

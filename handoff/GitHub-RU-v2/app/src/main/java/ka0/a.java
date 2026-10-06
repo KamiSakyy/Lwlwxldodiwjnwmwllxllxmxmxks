@@ -15,7 +15,7 @@ public abstract class a {
     static {
         bb.Companion.getClass();
         r b = l0.b(bb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         a = l.r(new m[]{mVar, new m("__typename", l0.b(fb.a), (String) null, rVar, rVar, rVar)});

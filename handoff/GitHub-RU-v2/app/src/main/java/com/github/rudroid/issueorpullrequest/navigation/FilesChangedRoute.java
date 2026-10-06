@@ -6,9 +6,9 @@ import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -65,7 +65,7 @@ public final class FilesChangedRoute implements Parcelable {
 
     public /* synthetic */ FilesChangedRoute(int i, String str, String str2, int i10, boolean z10, boolean z11) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, FilesChangedRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, FilesChangedRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f15769r = str;
@@ -106,7 +106,7 @@ public final class FilesChangedRoute implements Parcelable {
     public final String toString() {
         StringBuilder o5 = s0.o("FilesChangedRoute(repositoryOwner=", this.f15769r, ", repositoryName=", this.f15770s, ", number=");
         m0.w(o5, this.f15771t, ", isAuthor=", this.f15772u, ", hasPendingReview=");
-        return f4.s(o5, this.f15773v, ")");
+        return f4Shadow.s(o5, this.f15773v, ")");
     }
 
     @Override // android.os.Parcelable

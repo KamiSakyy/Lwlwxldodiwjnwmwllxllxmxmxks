@@ -5,7 +5,7 @@ import g81.e;
 import gz.a;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -81,7 +81,7 @@ public final class SteerAgentTaskRequest {
 
     public /* synthetic */ SteerAgentTaskRequest(int i, c4 c4Var, String str, String str2, String str3, String str4, String str5, List list) {
         if (4 != (i & 4)) {
-            c1.l(i, 4, SteerAgentTaskRequest$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 4, SteerAgentTaskRequest$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 1) == 0) {

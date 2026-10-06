@@ -18,7 +18,7 @@ public abstract class d0 {
         ActivityManager activityManager = systemService instanceof ActivityManager ? (ActivityManager) systemService : null;
         List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = activityManager != null ? activityManager.getRunningAppProcesses() : null;
         if (runningAppProcesses == null) {
-            runningAppProcesses = x61.r.r;
+            runningAppProcesses = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(runningAppProcesses);
         ArrayList arrayList = new ArrayList();

@@ -3,9 +3,9 @@ package i81;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import kotlinx.serialization.descriptors.SerialDescriptor;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
@@ -20,7 +20,7 @@ public final class a {
     public a(String str) {
         k71.k.g(str, "serialName");
         this.a = str;
-        this.b = r.r;
+        this.b = rShadow.r;
         this.c = new ArrayList();
         this.d = new HashSet();
         this.e = new ArrayList();
@@ -33,13 +33,13 @@ public final class a {
         k71.k.g(str, "elementName");
         k71.k.g(serialDescriptor, "descriptor");
         if (!aVar.d.add(str)) {
-            StringBuilder v = f4.v("Element with name '", str, "' is already registered in ");
+            StringBuilder v = f4Shadow.v("Element with name '", str, "' is already registered in ");
             v.append(aVar.a);
             throw new IllegalArgumentException(v.toString().toString());
         }
         aVar.c.add(str);
         aVar.e.add(serialDescriptor);
-        aVar.f.add(r.r);
+        aVar.f.add(rShadow.r);
         aVar.g.add(false);
     }
     public Object b = null;

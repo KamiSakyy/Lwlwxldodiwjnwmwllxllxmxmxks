@@ -49,7 +49,7 @@ public abstract class z0 implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, y0Var.a);
         fVar.z0("viewerIsFollowing");
-        jo.f4.C(y0Var.b, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(y0Var.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, y0Var.c);
     }
 }

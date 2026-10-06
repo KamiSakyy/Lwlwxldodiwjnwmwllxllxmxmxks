@@ -10,7 +10,7 @@ import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
 import w61.i;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -92,7 +92,7 @@ public final class AgentTaskResponse {
         }
         this.j = (i & 512) == 0 ? 0 : i2;
         int i3 = i & 1024;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         if (i3 == 0) {
             this.k = rVar;
         } else {

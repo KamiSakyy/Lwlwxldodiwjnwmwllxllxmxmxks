@@ -111,7 +111,7 @@ import w51.r;
 import w8.s;
 import w9.l;
 import x.h0;
-import y71.n1;
+import y71.n1Shadow;
 import z70.w;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -229,7 +229,7 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         k.g(jVar, "user");
         qm.d dVar = (qm.d) this.s;
         dVar.getClass();
-        return n1.y(new sm.b(n1.y(dVar.a.a(jVar), (v) this.t), 0), (v) this.u);
+        return n1Shadow.y(new sm.b(n1Shadow.y(dVar.a.a(jVar), (v) this.t), 0), (v) this.u);
     }
 
     public y71.i B(j jVar) {
@@ -239,12 +239,12 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         nm.k kVar_r7 = iVar.a;
         kVar_r7.getClass();
         zj.b B = ((GitHubDatabase) kVar_r7.a.a(jVar)).B();
-        y71.i p = n1.p(d5.B(B.a, new String[]{"notification_schedules"}, new ze.a(B)));
+        y71.i p = n1Shadow.p(d5.B(B.a, new String[]{"notification_schedules"}, new ze.a(B)));
         h hVar = (h) this.t;
         ak.a aVar = ak.a.s;
         qm.d dVar = (qm.d) hVar.s;
         dVar.getClass();
-        return n1.y(new c00.g(p, n1.y(new sm.b(n1.y(dVar.a.a(jVar), (v) hVar.t)), (v) hVar.u), new rm.a(this, (a71.c) null), 27), (v) this.u);
+        return n1Shadow.y(new c00.g(p, n1Shadow.y(new sm.b(n1Shadow.y(dVar.a.a(jVar), (v) hVar.t)), (v) hVar.u), new rm.a(this, (a71.c) null), 27), (v) this.u);
     }
 
     public void D(Activity activity, p8.h hVar) {
@@ -1171,7 +1171,7 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
                                 if (nVar != null) {
                                     try {
                                         w21.o oVar = nVar.t;
-                                        c21.u.g(oVar);
+                                        c21.uShadow.g(oVar);
                                         Bitmap bitmap = (Bitmap) t.q.d(oVar, 5L, TimeUnit.SECONDS);
                                         pVar.d(bitmap);
                                         m mVar = new m(6, false);
@@ -1833,9 +1833,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
             case 10:
                 String uuid = UUID.randomUUID().toString();
                 k.f(uuid, "toString(...)");
-                h91.k kVar_r7 = h91.k.u;
+                h91.kShadow kVar_r7 = h91.kShadow.u;
                 this.s = c30.d.b(uuid);
-                this.t = q81.s.e;
+                this.t = q81.sShadow.e;
                 this.u = new ArrayList();
                 break;
             case 12:

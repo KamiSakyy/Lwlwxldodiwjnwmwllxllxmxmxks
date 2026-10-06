@@ -13,16 +13,16 @@ public abstract class q {
     static {
         ah.Companion.getClass();
         aa.r b = v8.l0.b(ah.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("__typename", v8.l0.b(eh.a), (String) null, rVar, rVar, rVar)});
         yb.Companion.getClass();
-        List n = sy.d0.n(new aa.m("deployments", v8.l0.a(v8.l0.b(yb.a)), (String) null, rVar, rVar, r));
+        List n = sy.d0Shadow.n(new aa.m("deployments", v8.l0.a(v8.l0.b(yb.a)), (String) null, rVar, rVar, r));
         m10.n1.Companion.getClass();
         aa.q0 q0Var = m10.n1.a;
         k71.k.g(q0Var, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("approveDeployments", q0Var, (String) null, rVar, no.a.s(vp.q, new aa.u0(x61.x.u(new w61.k[]{new w61.k("comment", new aa.t("comment")), new w61.k("environmentIds", new aa.t("environments")), new w61.k("workflowRunId", new aa.t("checkSuiteId"))}))), n));
+        a = sy.d0Shadow.n(new aa.m("approveDeployments", q0Var, (String) null, rVar, no.a.s(vp.q, new aa.u0(x61.x.u(new w61.k[]{new w61.k("comment", new aa.t("comment")), new w61.k("environmentIds", new aa.t("environments")), new w61.k("workflowRunId", new aa.t("checkSuiteId"))}))), n));
     }
 }

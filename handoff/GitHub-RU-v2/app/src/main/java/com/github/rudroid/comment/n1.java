@@ -52,7 +52,7 @@ public final class n1 extends b {
         this.f8973y = b2Var;
         this.f8974z = cVar2;
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
-        y1 c10 = y71.n1.c(g1.a.a());
+        y1 c10 = y71.n1Shadow.c(g1.a.a());
         this.A = c10;
         this.B = new y71.i1(c10);
     }
@@ -68,11 +68,11 @@ public final class n1 extends b {
         if (q0Var instanceof yz0.d0) {
             String str2 = ((yz0.d0) q0Var).s;
             k71.k.g(str2, "commentId");
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new g1(this, str2, str, q0Var, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new g1(this, str2, str, q0Var, null), 3);
             return;
         }
-        if (q0Var instanceof yz0.a0) {
-            S(((yz0.a0) q0Var).s, str, q0Var, false);
+        if (q0Var instanceof yz0.a0Shadow) {
+            S(((yz0.a0Shadow) q0Var).s, str, q0Var, false);
             return;
         }
         if (q0Var instanceof yz0.b0) {
@@ -90,7 +90,7 @@ public final class n1 extends b {
         if (q0Var instanceof yz0.k0) {
             String str3 = ((yz0.k0) q0Var).s;
             k71.k.g(str3, "commentId");
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new j1(this, str3, str, q0Var, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new j1(this, str3, str, q0Var, null), 3);
         } else {
             if (q0Var instanceof yz0.g0) {
                 T(((yz0.g0) q0Var).s, str, q0Var);
@@ -110,28 +110,28 @@ public final class n1 extends b {
         k71.k.g(q0Var, "commentType");
         k71.k.g(str, "issueOrPullRequestId");
         k71.k.g(str2, "body");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new v0(this, str, str2, q0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v0(this, str, str2, q0Var, null), 3);
     }
 
     public final void R(String str, String str2, yz0.q0 q0Var) {
         k71.k.g(q0Var, "commentType");
         k71.k.g(str, "threadId");
         k71.k.g(str2, "body");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new y0(this, str, str2, q0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new y0(this, str, str2, q0Var, null), 3);
     }
 
     public final void S(String str, String str2, yz0.q0 q0Var, boolean z10) {
         k71.k.g(q0Var, "commentType");
         k71.k.g(str, "issueOrPullRequestId");
         k71.k.g(str2, "body");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new d1(z10, this, str, str2, q0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d1(z10, this, str, str2, q0Var, null), 3);
     }
 
     public final void T(String str, String str2, yz0.q0 q0Var) {
         k71.k.g(q0Var, "commentType");
         k71.k.g(str, "commentId");
         k71.k.g(str2, "body");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new m1(this, str, str2, q0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m1(this, str, str2, q0Var, null), 3);
     }
 
     @Override // com.github.rudroid.comment.b

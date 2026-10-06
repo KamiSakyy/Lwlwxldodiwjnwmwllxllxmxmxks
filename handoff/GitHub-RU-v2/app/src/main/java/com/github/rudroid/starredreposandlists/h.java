@@ -1,6 +1,6 @@
 package com.github.rudroid.starredreposandlists;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h implements le.z {
@@ -42,7 +42,7 @@ public abstract class h implements le.z {
         }
 
         public final String toString() {
-            return f4.s(x.i.m(this.s, this.t, "Header(iconRes=", ", titleRes=", ", showNewButton="), this.u, ")");
+            return f4Shadow.s(x.i.m(this.s, this.t, "Header(iconRes=", ", titleRes=", ", showNewButton="), this.u, ")");
         }
     }
 
@@ -162,7 +162,7 @@ public abstract class h implements le.z {
         }
 
         public final int hashCode() {
-            int e = x.i.e(com.github.rudroid.copilot.h1.i(f4.b(this.t, this.s.hashCode() * 31, 31), this.u, 31), 31, this.v);
+            int e = x.i.e(com.github.rudroid.copilot.h1.i(f4Shadow.b(this.t, this.s.hashCode() * 31, 31), this.u, 31), 31, this.v);
             String str = this.w;
             int hashCode = (e + (str == null ? 0 : str.hashCode())) * 31;
             String str2 = this.x;

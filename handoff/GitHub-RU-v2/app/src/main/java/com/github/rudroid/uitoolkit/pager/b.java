@@ -4,7 +4,7 @@ import a71.h;
 import d3.c0;
 import k71.k;
 import o0.x;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.z;
 
@@ -23,7 +23,7 @@ public final /* synthetic */ class b implements j71.c {
     public final Object k(Object obj) {
         switch (this.r) {
             case 0:
-                b0.z((z) this.s, (h) null, (a0) null, new f(((Integer) obj).intValue(), null, (x) this.t), 3);
+                b0.z((z) this.s, (h) null, (a0Shadow) null, new f(((Integer) obj).intValue(), null, (x) this.t), 3);
                 break;
             default:
                 String str = (String) this.s;
@@ -34,6 +34,6 @@ public final /* synthetic */ class b implements j71.c {
                 d3.z.n(c0Var, str2);
                 break;
         }
-        return w61.a0.a;
+        return w61.a0Shadow.a;
     }
 }

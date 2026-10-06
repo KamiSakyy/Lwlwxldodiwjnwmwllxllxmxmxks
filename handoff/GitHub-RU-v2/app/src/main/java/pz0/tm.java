@@ -6,6 +6,6 @@ public abstract class tm {
 
     static {
         uu.Companion.getClass();
-        new aa.q0("PdfFileType", x61.r.r, sy.d0.n(uu.a));
+        new aa.q0("PdfFileType", x61.rShadow.r, sy.d0Shadow.n(uu.a));
     }
 }

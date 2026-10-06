@@ -22,7 +22,7 @@ import m10.wg;
 import m10.wh;
 import m10.wi;
 import m10.yi;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -34,9 +34,9 @@ public abstract class c {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("IssueType");
+        List n = d0Shadow.n("IssueType");
         List list = ht.a.a;
         s c = no.a.c(list, "selections", "IssueType", n, list);
         ah.Companion.getClass();
@@ -52,7 +52,7 @@ public abstract class c {
         l40.Companion.getClass();
         List r4 = l.r(new s[]{mVar3, c2, mVar4, new m("owner", l0.b(l40.e), (String) null, rVar, rVar, r3), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar5 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("Issue");
+        List n2 = d0Shadow.n("Issue");
         List list3 = dt.a.a;
         List r5 = l.r(new s[]{mVar5, no.a.c(list3, "selections", "Issue", n2, list3), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar6 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -80,7 +80,7 @@ public abstract class c {
         r b2 = l0.b(xVar3);
         wh.Companion.getClass();
         t tVar = wh.s;
-        s mVar16 = new m("taskListItemCount", b2, "completedTasksCount", rVar, no.a.s(tVar, new u0(d0.n("COMPLETE"))), rVar);
+        s mVar16 = new m("taskListItemCount", b2, "completedTasksCount", rVar, no.a.s(tVar, new u0(d0Shadow.n("COMPLETE"))), rVar);
         s mVar17 = new m("taskListItemCount", l0.b(xVar3), "totalTaskCount", rVar, no.a.s(tVar, new u0(l.r(new String[]{"COMPLETE", "INCOMPLETE"}))), rVar);
         s mVar18 = new m("viewerCanReopen", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         s mVar19 = new m("viewerCanUpdate", l0.b(xVar4), (String) null, rVar, rVar, rVar);
@@ -88,10 +88,10 @@ public abstract class c {
         s mVar21 = new m("createdAt", l0.b(xVar5), (String) null, rVar, rVar, rVar);
         s mVar22 = new m("viewerCanAssign", l0.b(xVar4), (String) null, rVar, rVar, rVar);
         s mVar23 = new m("viewerCanLabel", l0.b(xVar4), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("Issue");
+        List n3 = d0Shadow.n("Issue");
         List list4 = ew.t.a;
         s c3 = no.a.c(list4, "selections", "Issue", n3, list4);
-        List n4 = d0.n("Issue");
+        List n4 = d0Shadow.n("Issue");
         List list5 = ew.e.a;
         s c4 = no.a.c(list5, "selections", "Issue", n4, list5);
         gj.Companion.getClass();

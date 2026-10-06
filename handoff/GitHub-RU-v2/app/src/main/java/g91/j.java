@@ -45,7 +45,7 @@ public final class j implements Closeable {
         r81.e.b(this.r);
     }
 
-    public final void f(int i, h91.k kVar) {
+    public final void f(int i, h91.kShadow kVar) {
         if (this.y) {
             throw new IOException("closed");
         }
@@ -77,7 +77,7 @@ public final class j implements Closeable {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void m(int i, h91.k kVar) {
+    public final void m(int i, h91.kShadow kVar) {
         long j;
         if (this.y) {
             throw new IOException("closed");

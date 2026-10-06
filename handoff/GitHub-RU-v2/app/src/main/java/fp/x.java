@@ -1,11 +1,11 @@
 package fp;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.p00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x implements aa.w0 {
+public final class xShadow implements aa.w0 {
     public static final s Companion = new s();
     public String r;
     public String s;
@@ -32,7 +32,7 @@ public final class x implements aa.w0 {
         List list = jp.b.a;
         List list2 = jp.b.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -40,10 +40,10 @@ public final class x implements aa.w0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof x)) {
+        if (!(obj instanceof xShadow)) {
             return false;
         }
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         return k71.k.b(this.r, xVar.r) && k71.k.b(this.s, xVar.s) && this.t == xVar.t && this.u.equals(xVar.u) && this.v.equals(xVar.v) && this.w.equals(xVar.w);
     }
 

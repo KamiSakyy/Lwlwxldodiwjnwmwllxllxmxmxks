@@ -8,7 +8,7 @@ public final class i {
     public s a;
     public h b;
 
-    public i(s sVar, b51.d dVar) {
+    public i(s sVar, b51.dShadow dVar) {
         this.a = sVar;
         this.b = new h(dVar);
     }
@@ -17,7 +17,7 @@ public final class i {
         h hVar = this.b;
         synchronized (hVar) {
             if (!Objects.equals(hVar.b, str)) {
-                b51.d dVar = hVar.a;
+                b51.dShadow dVar = hVar.a;
                 String str2 = hVar.c;
                 if (str != null && str2 != null) {
                     try {

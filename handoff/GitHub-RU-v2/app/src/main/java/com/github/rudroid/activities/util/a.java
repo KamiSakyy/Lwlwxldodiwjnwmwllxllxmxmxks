@@ -1,6 +1,6 @@
 package com.github.rudroid.activities.util;
 
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public interface a {
@@ -32,7 +32,7 @@ public interface a {
                     sy.y.j(obj);
                     y00.l b10 = aVar.b();
                     bVar.f5917w = 1;
-                    obj = n1.v(b10, bVar);
+                    obj = n1Shadow.v(b10, bVar);
                     if (obj == aVar2) {
                         return aVar2;
                     }

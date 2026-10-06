@@ -23,7 +23,7 @@ import java.util.List;
 import k71.k;
 import mn.d;
 import x01.i;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class a {
@@ -67,7 +67,7 @@ public abstract class a {
         mn.a b = b(hVar.d, str);
         m mVar = hVar.c;
         if (mVar == null || (list = mVar.c) == null) {
-            arrayList = r.r;
+            arrayList = rShadow.r;
         } else {
             arrayList = new ArrayList();
             for (f fVar : list) {

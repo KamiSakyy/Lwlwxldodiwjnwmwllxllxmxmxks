@@ -4,7 +4,7 @@ import sy.y;
 import t00.f8;
 import v71.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.viewmodels.tasklist.TaskListViewModel$checkIssueBodyTask$1", f = "TaskListViewModel.kt", l = {115}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -49,7 +49,7 @@ final class i extends c71.j implements j71.e {
             String str2 = this.y;
             k71.k.g(str2, "body");
             a71.c cVar2 = null;
-            y71.y J = b31.b.J(n1.x(new an.d(fVar, d, str, cVar, cVar2, 1), new f8(new an.a(fVar, str2, this.z, this.A, cVar2, 2))), d, cVar);
+            y71.y J = b31.b.J(n1Shadow.x(new an.d(fVar, d, str, cVar, cVar2, 1), new f8(new an.a(fVar, str2, this.z, this.A, cVar2, 2))), d, cVar);
             h hVar = new h(nVar, str);
             this.v = 1;
             if (J.b(hVar, this) == aVar) {

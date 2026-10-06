@@ -50,7 +50,7 @@ public final class i5 {
         o.append(this.d);
         o.append(", description=");
         f1.e.x(o, this.e, ", targetUrl=", this.f, ", isRequired=");
-        return jo.f4.s(o, this.g, ")");
+        return jo.f4Shadow.s(o, this.g, ")");
     }
 
     public Object e;

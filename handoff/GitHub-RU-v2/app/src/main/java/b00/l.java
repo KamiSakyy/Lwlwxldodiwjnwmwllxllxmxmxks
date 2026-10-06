@@ -10,7 +10,7 @@ import m10.ah;
 import m10.ct;
 import m10.eh;
 import m10.rf0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -21,9 +21,9 @@ public abstract class l {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2Connection");
+        List n = d0Shadow.n("ProjectV2Connection");
         List list = uz.a.a;
         List r = x61.l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2Connection", n, list)});
         ct.Companion.getClass();

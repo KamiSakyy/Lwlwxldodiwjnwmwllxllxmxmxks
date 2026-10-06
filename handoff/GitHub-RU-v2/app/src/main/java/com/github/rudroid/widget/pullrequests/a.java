@@ -5,7 +5,7 @@ import com.github.rudroid.widget.WidgetUIState;
 import java.io.File;
 import java.io.InputStream;
 import java.io.OutputStream;
-import k71.x;
+import k71.xShadow;
 import kotlinx.serialization.SerializationException;
 import m7.y;
 import n5.l0;
@@ -45,7 +45,7 @@ public final class a implements l6.g {
 
     static {
         r71.e qVar = new k71.q(a.class, "datastore", "getDatastore(Landroid/content/Context;)Landroidx/datastore/core/DataStore;");
-        x.a.getClass();
+        xShadow.a.getClass();
         b = new r71.e[]{qVar};
         a = new a();
         c = k41.b.r("pulLRequestsWidgetState", C0022a.a);

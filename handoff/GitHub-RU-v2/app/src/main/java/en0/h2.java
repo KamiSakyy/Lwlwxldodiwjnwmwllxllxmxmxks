@@ -16,7 +16,7 @@ public abstract class h2 {
     static {
         pb.Companion.getClass();
         aa.r b = v8.l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         hn.Companion.getClass();
         aa.m mVar2 = new aa.m("state", v8.l0.b(hn.s), "pullRequestState", rVar, rVar, rVar);
@@ -27,11 +27,11 @@ public abstract class h2 {
         ll.Companion.getClass();
         aa.q0 q0Var = ll.K;
         k71.k.g(q0Var, "type");
-        List n = sy.d0.n(new aa.m("pullRequest", q0Var, (String) null, rVar, rVar, r));
+        List n = sy.d0Shadow.n(new aa.m("pullRequest", q0Var, (String) null, rVar, rVar, r));
         bf.Companion.getClass();
         aa.q0 q0Var2 = bf.a;
         k71.k.g(q0Var2, "type");
         wh.Companion.getClass();
-        a = sy.d0.n(new aa.m("markPullRequestReadyForReview", q0Var2, (String) null, rVar, no.a.s(wh.i0, new aa.u0(a0.s0.p("pullRequestId", new aa.t("pullRequestId")))), n));
+        a = sy.d0Shadow.n(new aa.m("markPullRequestReadyForReview", q0Var2, (String) null, rVar, no.a.s(wh.i0, new aa.u0(a0.s0.p("pullRequestId", new aa.t("pullRequestId")))), n));
     }
 }

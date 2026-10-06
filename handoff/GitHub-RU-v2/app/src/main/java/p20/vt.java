@@ -7,7 +7,7 @@ import u10.m70;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vt implements aaShadow.a {
     public static final vt a = new vt();
-    public static final List b = sy.d0.n("updatePullRequestReviewComment");
+    public static final List b = sy.d0Shadow.n("updatePullRequestReviewComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

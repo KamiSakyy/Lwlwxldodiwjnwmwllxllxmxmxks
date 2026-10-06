@@ -34,6 +34,6 @@ public final class t8 {
     public final String toString() {
         StringBuilder o = a0.s0.o("OnUser(id=", this.a, ", login=", this.b, ", displayName=");
         f1.e.x(o, this.c, ", avatarUrl=", this.d, ", isViewer=");
-        return jo.f4.s(o, this.e, ")");
+        return jo.f4Shadow.s(o, this.e, ")");
     }
 }

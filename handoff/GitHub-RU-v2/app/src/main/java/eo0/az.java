@@ -6,7 +6,7 @@ import jn0.pe0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class az implements aaShadow.a {
     public static final az a = new az();
-    public static final List b = sy.d0.o(new String[]{"__typename", "name", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "name", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

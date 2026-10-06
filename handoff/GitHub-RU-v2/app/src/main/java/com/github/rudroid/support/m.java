@@ -19,7 +19,7 @@ final class m<T> implements y71.j {
         gVar.getClass();
         k71.k.g(jVar, "user");
         sVar.A = new a1((q81.u) gVar.a.a(jVar), jVar, gVar.c, gVar.b);
-        b0.z(d1.k(sVar), (a71.h) null, (v71.a0) null, new t(sVar, null), 3);
+        b0.z(d1.k(sVar), (a71.h) null, (v71.a0Shadow) null, new t(sVar, null), 3);
         return w61.a0.a;
     }
 }

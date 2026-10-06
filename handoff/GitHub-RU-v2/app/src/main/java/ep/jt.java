@@ -7,7 +7,7 @@ import jo.b60;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jt implements aaShadow.a {
     public static final jt a = new jt();
-    public static final List b = sy.d0.n("replaceActorsForAssignable");
+    public static final List b = sy.d0Shadow.n("replaceActorsForAssignable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

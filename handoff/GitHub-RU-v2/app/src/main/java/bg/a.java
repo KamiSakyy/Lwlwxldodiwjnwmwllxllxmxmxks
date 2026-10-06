@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.p2;
 import androidx.compose.runtime.s;
 import androidx.compose.runtime.v1;
 import com.github.rudroid.copilot.ui.n;
-import com.github.rudroid.discussions.ui.h;
+import com.github.rudroid.discussions.ui.hShadow;
 import com.github.rudroid.fragments.onboarding.notifications.ui.v;
 import com.github.rudroid.m0;
 import com.google.android.gms.internal.measurement.i4;
@@ -183,16 +183,16 @@ public final /* synthetic */ class a implements j71.f {
                     } else {
                         sVar6.q0();
                     }
-                    v2.e eVar = v2.g.f;
+                    v2.eShadow eVar = v2.g.f;
                     androidx.compose.runtime.t.I(sVar6, eVar, a3);
-                    v2.e eVar2 = v2.g.e;
+                    v2.eShadow eVar2 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar6, eVar2, l2);
                     Integer valueOf = Integer.valueOf(hashCode2);
-                    v2.e eVar3 = v2.g.g;
+                    v2.eShadow eVar3 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar6, valueOf, eVar3);
                     v2.d dVar = v2.g.h;
                     androidx.compose.runtime.t.E(sVar6, dVar);
-                    v2.e eVar4 = v2.g.d;
+                    v2.eShadow eVar4 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar6, eVar4, c2);
                     v.a(p2.e(oVar, 1.0f), i4.p0(2131953337, sVar6), i4.p0(2131953336, sVar6), sVar6, 6);
                     sVar6.q(true);
@@ -274,7 +274,7 @@ public final /* synthetic */ class a implements j71.f {
                 } else {
                     if (z2) {
                         sVar9.c0(-1176328895);
-                        yg.t.b(i4.p0(2131954562, sVar9), sVar9, 0);
+                        yg.tShadow.b(i4.p0(2131954562, sVar9), sVar9, 0);
                     } else {
                         sVar9.c0(-1177930355);
                     }

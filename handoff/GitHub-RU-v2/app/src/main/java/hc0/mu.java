@@ -10,8 +10,8 @@ public abstract class mu {
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        c = new aa.q0("StatusCheckRollup", n, sy.d0.n(yg.a));
+        c = new aa.q0("StatusCheckRollup", n, sy.d0Shadow.n(yg.a));
     }
 }

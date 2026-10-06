@@ -38,7 +38,7 @@ public final class n implements Closeable {
         }
         InputStream inputStream = openConnection.getInputStream();
         try {
-            byte[] y = sy.r.y(new d(inputStream));
+            byte[] y = sy.rShadow.y(new d(inputStream));
             if (inputStream != null) {
                 inputStream.close();
             }

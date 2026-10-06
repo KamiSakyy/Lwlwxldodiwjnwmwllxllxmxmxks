@@ -35,7 +35,7 @@ public final class sq {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("NotificationThreadFilters(listIds=", this.a, ", reasons=", this.b, ", savedOnly=");
+        StringBuilder u = jo.f4Shadow.u("NotificationThreadFilters(listIds=", this.a, ", reasons=", this.b, ", savedOnly=");
         f1.e.w(u, this.c, ", starredOnly=", this.d, ", statuses=");
         return f1.e.l(u, this.e, ", threadTypes=", this.f, ")");
     }

@@ -25,7 +25,7 @@ public abstract class a {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         da0.Companion.getClass();
         m mVar2 = new m("state", l0.b(da0.s), (String) null, rVar, rVar, rVar);

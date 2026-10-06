@@ -18,7 +18,7 @@ public final /* synthetic */ class g0 implements j71.e {
     public final Object s(Object obj, Object obj2) {
         int i = this.r;
         f1 f1Var = this.s;
-        d2.l0 l0Var = d2.a0.b;
+        d2.l0 l0Var = d2.a0Shadow.b;
         w1.o oVar = w1.o.a;
         Object obj3 = androidx.compose.runtime.n.a;
         w61.a0 a0Var = w61.a0.a;

@@ -743,7 +743,7 @@ public final class y5 implements y71.j {
                             jz jzVar = (jz) obj;
                             Iterable iterable = jzVar.a.a.b;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList S = x61.m.S(iterable);
                             ArrayList arrayList4 = new ArrayList(x61.n.F(S, 10));
@@ -792,7 +792,7 @@ public final class y5 implements y71.j {
                             String str6 = null;
                             List list2 = (yzVar == null || (wzVar3 = yzVar.b) == null) ? null : wzVar3.a.b;
                             if (list2 == null) {
-                                list2 = x61.r.r;
+                                list2 = x61.rShadow.r;
                             }
                             ArrayList S2 = x61.m.S(list2);
                             ArrayList arrayList5 = new ArrayList(x61.n.F(S2, 10));
@@ -981,7 +981,7 @@ public final class y5 implements y71.j {
                             int i42 = jyVar.a;
                             Iterable iterable2 = jyVar.c;
                             if (iterable2 == null) {
-                                iterable2 = x61.r.r;
+                                iterable2 = x61.rShadow.r;
                             }
                             ArrayList S3 = x61.m.S(iterable2);
                             ArrayList arrayList6 = new ArrayList();
@@ -1099,7 +1099,7 @@ public final class y5 implements y71.j {
                             Integer num = new Integer(i47);
                             List list3 = duVar != null ? duVar.c : null;
                             if (list3 == null) {
-                                list3 = x61.r.r;
+                                list3 = x61.rShadow.r;
                             }
                             ArrayList S4 = x61.m.S(list3);
                             ArrayList arrayList7 = new ArrayList();
@@ -1194,7 +1194,7 @@ public final class y5 implements y71.j {
                             ql qlVar = olVar.a;
                             List list4 = qlVar != null ? qlVar.a.b : null;
                             if (list4 == null) {
-                                list4 = x61.r.r;
+                                list4 = x61.rShadow.r;
                             }
                             ArrayList S5 = x61.m.S(list4);
                             ArrayList arrayList9 = new ArrayList(x61.n.F(S5, 10));
@@ -1299,7 +1299,7 @@ public final class y5 implements y71.j {
                             String str14 = inVar.b;
                             List<cn> list5 = nnVar != null ? nnVar.a : null;
                             if (list5 == null) {
-                                list5 = x61.r.r;
+                                list5 = x61.rShadow.r;
                             }
                             ArrayList arrayList10 = new ArrayList();
                             for (cn cnVar : list5) {
@@ -1618,7 +1618,7 @@ public final class y5 implements y71.j {
                             String str24 = null;
                             List list7 = (fvVar == null || (cvVar3 = fvVar.b) == null) ? null : cvVar3.b;
                             if (list7 == null) {
-                                list7 = x61.r.r;
+                                list7 = x61.rShadow.r;
                             }
                             ArrayList S8 = x61.m.S(list7);
                             ArrayList arrayList12 = new ArrayList(x61.n.F(S8, 10));

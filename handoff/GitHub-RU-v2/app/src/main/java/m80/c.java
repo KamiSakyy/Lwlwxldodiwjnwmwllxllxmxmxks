@@ -2,7 +2,7 @@ package m80;
 
 import a0.s0;
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
@@ -41,7 +41,7 @@ public final class c {
         o.append(", owner=");
         o.append(this.d);
         o.append(", isPrivate=");
-        return f4.s(o, this.e, ")");
+        return f4Shadow.s(o, this.e, ")");
     }
     public Object c(Object p1, Object p2) { return null; }
     public static final Object a = null;

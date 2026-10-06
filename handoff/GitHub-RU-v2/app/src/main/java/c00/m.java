@@ -42,7 +42,7 @@ import vb0.a4;
 import vb0.e2;
 import w61.a0;
 import wy0.d6;
-import y71.n1;
+import y71.n1Shadow;
 import z01.p0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -193,7 +193,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar, m, this) == aVar ? aVar : a0Var;
+                return n1Shadow.q(jVar, m, this) == aVar ? aVar : a0Var;
             case 1:
                 b71.a aVar2 = b71.a.r;
                 int i3 = this.w;
@@ -210,7 +210,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar2, m2, this) == aVar2 ? aVar2 : a0Var;
+                return n1Shadow.q(jVar2, m2, this) == aVar2 ? aVar2 : a0Var;
             case 2:
                 b71.a aVar3 = b71.a.r;
                 int i4 = this.w;
@@ -227,7 +227,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar3, k, this) == aVar3 ? aVar3 : a0Var;
+                return n1Shadow.q(jVar3, k, this) == aVar3 ? aVar3 : a0Var;
             case 3:
                 Throwable th2 = (Throwable) this.x;
                 b71.a aVar4 = b71.a.r;
@@ -269,7 +269,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar5, n, this) == aVar5 ? aVar5 : a0Var;
+                return n1Shadow.q(jVar5, n, this) == aVar5 ? aVar5 : a0Var;
             case 5:
                 b71.a aVar6 = b71.a.r;
                 int i7 = this.w;
@@ -286,7 +286,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar6, n2, this) == aVar6 ? aVar6 : a0Var;
+                return n1Shadow.q(jVar6, n2, this) == aVar6 ? aVar6 : a0Var;
             case 6:
                 oa.j jVar7 = (oa.j) obj6;
                 il.m mVar = (il.m) obj7;
@@ -317,7 +317,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar8, yVar, this) == aVar7 ? aVar7 : a0Var;
+                return n1Shadow.q(jVar8, yVar, this) == aVar7 ? aVar7 : a0Var;
             case 7:
                 in.t tVar = (in.t) obj6;
                 String str = tVar.d;
@@ -410,7 +410,7 @@ public final class m extends c71.j implements j71.f {
                 Integer num = (Integer) this.y;
                 if (num != null) {
                     obj2 = null;
-                    f8Var2 = in.r.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var.s, new dl0.i0(str3, num.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, o5.r, 7), new x(b6Var, str3, num, (a71.c) null, 6), 6));
+                    f8Var2 = in.rShadow.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var.s, new dl0.i0(str3, num.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, o5.r, 7), new x(b6Var, str3, num, (a71.c) null, 6), 6));
                 } else {
                     obj2 = null;
                     f8Var2 = new f8(21, a0Var);
@@ -418,7 +418,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = obj2;
                 this.y = obj2;
                 this.w = 1;
-                return n1.q(jVar11, f8Var2, this) == aVar14 ? aVar14 : a0Var;
+                return n1Shadow.q(jVar11, f8Var2, this) == aVar14 ? aVar14 : a0Var;
             case 10:
                 b71.a aVar15 = b71.a.r;
                 int i13 = this.w;
@@ -436,7 +436,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar12, f8Var6, this) == aVar15 ? aVar15 : a0Var;
+                return n1Shadow.q(jVar12, f8Var6, this) == aVar15 ? aVar15 : a0Var;
             case 11:
                 String str4 = (String) obj6;
                 b6 b6Var2 = (b6) obj7;
@@ -454,7 +454,7 @@ public final class m extends c71.j implements j71.f {
                 Integer num2 = (Integer) this.y;
                 if (num2 != null) {
                     obj3 = null;
-                    f8Var3 = in.r.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var2.s, new zx.b1(str4, num2.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, u1.D, 7), new x(b6Var2, str4, num2, (a71.c) null, 12), 6));
+                    f8Var3 = in.rShadow.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var2.s, new zx.b1(str4, num2.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, u1.D, 7), new x(b6Var2, str4, num2, (a71.c) null, 12), 6));
                 } else {
                     obj3 = null;
                     f8Var3 = new f8(21, a0Var);
@@ -462,7 +462,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = obj3;
                 this.y = obj3;
                 this.w = 1;
-                return n1.q(jVar13, f8Var3, this) == aVar17 ? aVar17 : a0Var;
+                return n1Shadow.q(jVar13, f8Var3, this) == aVar17 ? aVar17 : a0Var;
             case 12:
                 b71.a aVar18 = b71.a.r;
                 int i15 = this.w;
@@ -480,7 +480,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar14, f8Var7, this) == aVar18 ? aVar18 : a0Var;
+                return n1Shadow.q(jVar14, f8Var7, this) == aVar18 ? aVar18 : a0Var;
             case 13:
                 b71.a aVar19 = b71.a.r;
                 int i16 = this.w;
@@ -498,7 +498,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                n1.s(jVar15);
+                n1Shadow.s(jVar15);
                 Object b = A.b(new u7(6, jVar15, e60Var), this);
                 if (b != aVar19) {
                     b = a0Var;
@@ -524,7 +524,7 @@ public final class m extends c71.j implements j71.f {
                 Integer num3 = (Integer) this.y;
                 if (num3 != null) {
                     obj4 = null;
-                    f8Var4 = in.r.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var3.s, new na0.i0(str5, num3.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, a4.r, 7), new x(b6Var3, str5, num3, (a71.c) null, 14), 6));
+                    f8Var4 = in.rShadow.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var3.s, new na0.i0(str5, num3.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, a4.r, 7), new x(b6Var3, str5, num3, (a71.c) null, 14), 6));
                 } else {
                     obj4 = null;
                     f8Var4 = new f8(21, a0Var);
@@ -532,7 +532,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = obj4;
                 this.y = obj4;
                 this.w = 1;
-                return n1.q(jVar16, f8Var4, this) == aVar20 ? aVar20 : a0Var;
+                return n1Shadow.q(jVar16, f8Var4, this) == aVar20 ? aVar20 : a0Var;
             case 15:
                 b71.a aVar21 = b71.a.r;
                 int i18 = this.w;
@@ -550,7 +550,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar17, f8Var8, this) == aVar21 ? aVar21 : a0Var;
+                return n1Shadow.q(jVar17, f8Var8, this) == aVar21 ? aVar21 : a0Var;
             case 16:
                 String str6 = (String) obj6;
                 b6 b6Var4 = (b6) obj7;
@@ -568,7 +568,7 @@ public final class m extends c71.j implements j71.f {
                 Integer num4 = (Integer) this.y;
                 if (num4 != null) {
                     obj5 = null;
-                    f8Var5 = in.r.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var4.s, new ow0.m0(str6, num4.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, wy0.n1.D, 7), new x(b6Var4, str6, num4, (a71.c) null, 20), 6));
+                    f8Var5 = in.rShadow.l(new y71.y(com.github.rudroid.common.flow.f.b(com.github.service.wrapper.a.o(b6Var4.s, new ow0.m0(str6, num4.intValue()), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), 0, (j71.e) null, wy0.n1Shadow.D, 7), new x(b6Var4, str6, num4, (a71.c) null, 20), 6));
                 } else {
                     obj5 = null;
                     f8Var5 = new f8(21, a0Var);
@@ -576,7 +576,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = obj5;
                 this.y = obj5;
                 this.w = 1;
-                return n1.q(jVar18, f8Var5, this) == aVar23 ? aVar23 : a0Var;
+                return n1Shadow.q(jVar18, f8Var5, this) == aVar23 ? aVar23 : a0Var;
             case 17:
                 b71.a aVar24 = b71.a.r;
                 int i21 = this.w;
@@ -594,7 +594,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                return n1.q(jVar19, f8Var9, this) == aVar24 ? aVar24 : a0Var;
+                return n1Shadow.q(jVar19, f8Var9, this) == aVar24 ? aVar24 : a0Var;
             default:
                 b71.a aVar25 = b71.a.r;
                 int i22 = this.w;
@@ -612,7 +612,7 @@ public final class m extends c71.j implements j71.f {
                 this.x = null;
                 this.y = null;
                 this.w = 1;
-                n1.s(jVar20);
+                n1Shadow.s(jVar20);
                 Object b2 = R.b(new u7(14, jVar20, e40Var), this);
                 if (b2 != aVar25) {
                     b2 = a0Var;

@@ -1,17 +1,17 @@
 package l81;
 
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import k81.g0;
 import k81.q1;
 import kotlinx.serialization.json.internal.JsonDecodingException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class j {
-    public static final g0 a = c1.a("kotlinx.serialization.json.JsonUnquotedLiteral", q1.a);
+    public static final g0 a = c1Shadow.a("kotlinx.serialization.json.JsonUnquotedLiteral", q1.a);
 
     public static final void a(kotlinx.serialization.json.b bVar, String str) {
-        throw new IllegalArgumentException("Element " + x.a(bVar.getClass()) + " is not a " + str);
+        throw new IllegalArgumentException("Element " + xShadow.a(bVar.getClass()) + " is not a " + str);
     }
 
     public static final Boolean b(kotlinx.serialization.json.d dVar) {

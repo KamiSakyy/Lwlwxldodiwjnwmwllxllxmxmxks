@@ -5,7 +5,7 @@ import kotlin.KotlinNothingValueException;
 import kotlin.NoWhenBranchMatchedException;
 import n5.p0;
 import n5.s0;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -15,7 +15,7 @@ public final class m {
     public y1 f29027a;
 
     public m() {
-        this.f29027a = n1.c(s0.f29596b);
+        this.f29027a = n1Shadow.c(s0.f29596b);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:14:0x0034  */
@@ -110,6 +110,6 @@ public final class m {
     }
 
     public m(int i) {
-        this.f29027a = n1.c(new int[i]);
+        this.f29027a = n1Shadow.c(new int[i]);
     }
 }

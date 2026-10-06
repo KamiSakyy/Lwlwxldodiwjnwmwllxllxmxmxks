@@ -77,7 +77,7 @@ public final class eh {
         N = ehVarArr;
         O = v8.l0.t(ehVarArr);
         Companion = new dh();
-        sy.d0.o(new String[]{"ASSIGNED", "AWESOME", "CLOSED", "CREATED", "DISMISSED", "DISPLAYED", "DONE", "FEED", "MENTIONED", "OPEN", "OPENED", "READ", "REVIEW_REQUESTED", "SAVE", "SUBSCRIBE", "TRENDING", "UNDONE", "UNREAD", "UNSAVE", "UNSUBSCRIBE"});
+        sy.d0Shadow.o(new String[]{"ASSIGNED", "AWESOME", "CLOSED", "CREATED", "DISMISSED", "DISPLAYED", "DONE", "FEED", "MENTIONED", "OPEN", "OPENED", "READ", "REVIEW_REQUESTED", "SAVE", "SUBSCRIBE", "TRENDING", "UNDONE", "UNREAD", "UNSAVE", "UNSUBSCRIBE"});
     }
 
     public eh(String str, int i, String str2) {

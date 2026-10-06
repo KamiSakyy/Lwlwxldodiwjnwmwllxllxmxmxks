@@ -2,10 +2,10 @@ package q81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class y {
-    public static final x Companion = new x();
+    public static final xShadow Companion = new xShadow();
 
     static {
-        k71.k.g(h91.k.u, "<this>");
+        k71.k.g(h91.kShadow.u, "<this>");
     }
 
     public long a() {

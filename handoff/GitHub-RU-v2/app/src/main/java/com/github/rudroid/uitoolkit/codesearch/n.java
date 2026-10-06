@@ -4,7 +4,7 @@ import androidx.compose.foundation.layout.p2;
 import androidx.compose.runtime.b2;
 import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
-import d2.a0;
+import d2.a0Shadow;
 import java.util.ArrayList;
 import w1.o;
 import w1.r;
@@ -76,7 +76,7 @@ public final class n {
                     j3 = j;
                 }
                 sVar.r();
-                r y = androidx.compose.foundation.layout.b.y(f0.o.f(p2.e(rVar2, 1.0f), j3, a0.b), ih.a.m, ih.a.k);
+                r y = androidx.compose.foundation.layout.b.y(f0.o.f(p2.e(rVar2, 1.0f), j3, a0Shadow.b), ih.a.m, ih.a.k);
                 androidx.compose.foundation.layout.f fVar = androidx.compose.foundation.layout.l.a;
                 androidx.compose.foundation.layout.j g = androidx.compose.foundation.layout.l.g(ih.a.n);
                 boolean h = sVar.h(arrayList) | ((i3 & 7168) == 2048 ? z3 : false);
@@ -98,7 +98,7 @@ public final class n {
                     public final Object s(Object obj2, Object obj3) {
                         ((Integer) obj3).getClass();
                         n.a(rVar2, j2, arrayList, cVar, z2, (s) obj2, t.L(i | 1), i2);
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 };
                 return;

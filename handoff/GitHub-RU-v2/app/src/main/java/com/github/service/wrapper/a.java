@@ -2,7 +2,7 @@ package com.github.service.wrapper;
 
 import aa.n0;
 import aa.w0;
-import in.r;
+import in.rShadow;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -18,11 +18,11 @@ public interface a {
         }
         boolean z2 = z;
         if ((i & 8) != 0) {
-            set = r.a;
+            set = rShadow.a;
         }
         Set set3 = set;
         if ((i & 16) != 0) {
-            set2 = r.b;
+            set2 = rShadow.b;
         }
         Set set4 = set2;
         if ((i & 32) != 0) {
@@ -42,11 +42,11 @@ public interface a {
         boolean z2 = z;
         Set set2 = linkedHashSet;
         if ((i & 8) != 0) {
-            set2 = r.a;
+            set2 = rShadow.a;
         }
         Set set3 = set2;
         if ((i & 16) != 0) {
-            set = r.b;
+            set = rShadow.b;
         }
         return aVar.l(w0Var, hVar2, z2, set3, set, new com.github.rudroid.utilities.ui.emojipicker.e(14));
     }

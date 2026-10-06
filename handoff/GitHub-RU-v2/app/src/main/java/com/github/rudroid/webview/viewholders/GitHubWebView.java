@@ -14,7 +14,7 @@ import com.github.rudroid.utilities.y2;
 import com.github.rudroid.w;
 import java.util.ArrayList;
 import java.util.Objects;
-import k71.x;
+import k71.xShadow;
 import org.json.JSONException;
 import org.json.JSONObject;
 import sy.y;
@@ -396,7 +396,7 @@ public class GitHubWebView extends j {
     @JavascriptInterface
     public final void sendMessage(String str) {
         k71.k.g(str, "payload");
-        b0.z(this.v, (a71.h) null, (v71.a0) null, new h(str, this, null), 3);
+        b0.z(this.v, (a71.h) null, (v71.a0Shadow) null, new h(str, this, null), 3);
     }
 
     public final void setAccountHolder(com.github.rudroid.activities.util.c cVar) {

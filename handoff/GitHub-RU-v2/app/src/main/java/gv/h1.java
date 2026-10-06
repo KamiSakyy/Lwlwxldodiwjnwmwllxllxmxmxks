@@ -12,13 +12,13 @@ public final class h1 implements aa.h0 {
     public int h;
     public u0 i;
     public v0 j;
-    public f1 k;
+    public f1Shadow k;
     public p0 l;
     public e1 m;
     public t0 n;
     public f0 o;
 
-    public h1(String str, String str2, String str3, boolean z, String str4, String str5, int i, int i2, u0 u0Var, v0 v0Var, f1 f1Var, p0 p0Var, e1 e1Var, t0 t0Var, f0 f0Var) {
+    public h1(String str, String str2, String str3, boolean z, String str4, String str5, int i, int i2, u0 u0Var, v0 v0Var, f1Shadow f1Var, p0 p0Var, e1 e1Var, t0 t0Var, f0 f0Var) {
         this.a = str;
         this.b = str2;
         this.c = str3;

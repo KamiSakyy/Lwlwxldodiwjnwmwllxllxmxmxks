@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import jo.bj0;
 import t00.ua;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
@@ -77,7 +77,7 @@ public final class i {
                     w51.r rVar = new w51.r(11);
                     rVar.l(xb.b.a(str));
                     rVar.e(aVar);
-                    q81.t a = this.a.a();
+                    q81.tShadow a = this.a.a();
                     a.c.add(new q10.d(2, this));
                     rVar.s = new q81.u(a);
                     this.f = rVar.m().l(cls);

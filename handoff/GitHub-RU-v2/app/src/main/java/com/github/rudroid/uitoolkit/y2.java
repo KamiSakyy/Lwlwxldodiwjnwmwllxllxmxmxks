@@ -154,7 +154,7 @@ public final /* synthetic */ class y2 implements j71.e {
                                     case 0:
                                         androidx.lifecycle.c0 c0Var2 = (ShortcutWidgetSettingsActivity) c0Var;
                                         ShortcutWidgetSettingsActivity.a aVar3 = ShortcutWidgetSettingsActivity.Companion;
-                                        v71.b0.z(d1.i(c0Var2), (a71.h) null, (v71.a0) null, new k0(c0Var2, null), 3).o0(new c0(1, c0Var2));
+                                        v71.b0.z(d1.i(c0Var2), (a71.h) null, (v71.a0Shadow) null, new k0(c0Var2, null), 3).o0(new c0(1, c0Var2));
                                         ShortcutWidgetWorker.Companion.getClass();
                                         ShortcutWidgetWorker.a.a(c0Var2);
                                         break;
@@ -172,7 +172,7 @@ public final /* synthetic */ class y2 implements j71.e {
                         };
                         sVar2.n0(N9);
                     }
-                    qg.p.c(null, p02, p0, j, (j71.a) N9, 0, a, 0.0f, 0, 0, r1.i.d(1937530825, new com.github.rudroid.actions.workflowruns.f(jVar, storedShortcutModel, m0Var, 29), sVar2), sVar2, 0, 6, 929);
+                    qg.pShadow.c(null, p02, p0, j, (j71.a) N9, 0, a, 0.0f, 0, 0, r1.i.d(1937530825, new com.github.rudroid.actions.workflowruns.f(jVar, storedShortcutModel, m0Var, 29), sVar2), sVar2, 0, 6, 929);
                     break;
                 }
             case 3:

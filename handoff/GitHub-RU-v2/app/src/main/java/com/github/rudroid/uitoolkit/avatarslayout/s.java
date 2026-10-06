@@ -10,7 +10,7 @@ import androidx.compose.ui.layout.x0;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -49,7 +49,7 @@ final class s implements v0 {
                             i4++;
                             int i5 = i3 + 1;
                             if (i3 < 0) {
-                                d0.x();
+                                d0Shadow.x();
                                 throw null;
                             }
                             l1 l1Var2 = (l1) obj2;

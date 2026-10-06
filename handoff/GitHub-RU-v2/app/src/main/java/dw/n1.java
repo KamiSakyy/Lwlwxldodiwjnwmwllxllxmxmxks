@@ -68,7 +68,7 @@ public abstract class n1 implements aa.a {
         fVar.z0("name");
         bVar.b(fVar, wVar, l1Var.b);
         fVar.z0("viewerCanCommitToBranch");
-        jo.f4.C(l1Var.c, aa.c.f, fVar, wVar, "target");
+        jo.f4Shadow.C(l1Var.c, aa.c.f, fVar, wVar, "target");
         aa.c.b(aa.c.c(p1.a, true)).b(fVar, wVar, l1Var.d);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, l1Var.e);

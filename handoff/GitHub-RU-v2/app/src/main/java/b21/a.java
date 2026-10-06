@@ -27,7 +27,7 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        return c21.u.j(this.b, aVar.b) && c21.u.j(this.c, aVar.c) && c21.u.j(this.d, aVar.d);
+        return c21.uShadow.j(this.b, aVar.b) && c21.uShadow.j(this.c, aVar.c) && c21.uShadow.j(this.d, aVar.d);
     }
 
     public final int hashCode() {

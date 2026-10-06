@@ -51,9 +51,9 @@ public abstract class j0 extends c81.i {
             c71.c cVar = fVar.v;
             Object obj = fVar.x;
             a71.h q = cVar.q();
-            Object n = a81.b.n(q, obj);
+            Object n = a81.bShadow.n(q, obj);
             d1 d1Var = null;
-            y1 K = n != a81.b.d ? b0.K(cVar, q, n) : null;
+            y1 K = n != a81.bShadow.d ? b0.K(cVar, q, n) : null;
             try {
                 a71.h q2 = cVar.q();
                 Object j = j();
@@ -75,11 +75,11 @@ public abstract class j0 extends c81.i {
                     cVar.i(e(j));
                 }
                 if (K == null || K.s0()) {
-                    a81.b.g(q, n);
+                    a81.bShadow.g(q, n);
                 }
             } catch (Throwable th) {
                 if (K == null || K.s0()) {
-                    a81.b.g(q, n);
+                    a81.bShadow.g(q, n);
                 }
                 throw th;
             }

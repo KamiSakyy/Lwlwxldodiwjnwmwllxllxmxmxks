@@ -15,7 +15,7 @@ public final class u extends h1Shadow {
 
     @Override // k81.s, k81.a
     public final void f(j81.a aVar, int i, Object obj) {
-        t tVar = (t) obj;
+        tShadow tVar = (tShadow) obj;
         k71.k.g(tVar, "builder");
         double z = aVar.z(this.b, i);
         tVar.b(tVar.d() + 1);
@@ -29,7 +29,7 @@ public final class u extends h1Shadow {
     public final Object g(Object obj) {
         double[] dArr = (double[]) obj;
         k71.k.g(dArr, "<this>");
-        t tVar = new t();
+        tShadow tVar = new tShadow();
         tVar.a = dArr;
         tVar.b = dArr.length;
         tVar.b(10);

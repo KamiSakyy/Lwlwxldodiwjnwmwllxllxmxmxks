@@ -8,7 +8,7 @@ public final class c0 extends androidx.compose.foundation.lazy.layout.s0 {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c0(d0 d0Var) {
-        super(7, x61.r.r);
+        super(7, x61.rShadow.r);
         this.t = d0Var;
     }
 

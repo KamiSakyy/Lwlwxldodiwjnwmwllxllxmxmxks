@@ -17,7 +17,7 @@ import com.github.service.dotcom.models.response.copilot.serialization.ChatServe
 import com.github.service.dotcom.models.response.copilot.serialization.SkillExecutionResponse$$serializer;
 import com.github.service.dotcom.models.response.copilot.serialization.WebSearchReferenceResultResponse$$serializer;
 import java.lang.annotation.Annotation;
-import k81.c1;
+import k81.c1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final /* synthetic */ class e implements j71.a {
@@ -51,9 +51,9 @@ public final /* synthetic */ class e implements j71.a {
                 ChatMessageReferenceResponse$WebSearchReferenceResponse.Companion companion7 = ChatMessageReferenceResponse$WebSearchReferenceResponse.Companion;
                 return f.Companion.serializer();
             case 7:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageReferenceTypeResponse", f.values(), new String[]{"repository", "file", "web-search", "snippet", "github.agent", "unknown"}, new Annotation[][]{null, null, null, null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageReferenceTypeResponse", f.values(), new String[]{"repository", "file", "web-search", "snippet", "github.agent", "unknown"}, new Annotation[][]{null, null, null, null, null, null});
             case 8:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageReferenceVisibilityResponse", g.values(), new String[]{"public", "private", "unknown"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageReferenceVisibilityResponse", g.values(), new String[]{"public", "private", "unknown"}, new Annotation[][]{null, null, null});
             case 9:
                 ChatMessageResponse.Companion companion8 = ChatMessageResponse.Companion;
                 return h.Companion.serializer();
@@ -70,7 +70,7 @@ public final /* synthetic */ class e implements j71.a {
                 ChatMessageResponse.Companion companion12 = ChatMessageResponse.Companion;
                 return new k81.d(SkillExecutionResponse$$serializer.INSTANCE, 0);
             case 14:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageRoleResponse", h.values(), new String[]{"assistant", "user"}, new Annotation[][]{null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatMessageRoleResponse", h.values(), new String[]{"assistant", "user"}, new Annotation[][]{null, null});
             case 15:
                 ChatServerSentEventDataResponse$AgentConfirmation.Companion companion13 = ChatServerSentEventDataResponse$AgentConfirmation.Companion;
                 return i.Companion.serializer();
@@ -111,9 +111,9 @@ public final /* synthetic */ class e implements j71.a {
                 ChatServerSentEventDataResponse$Unknown.Companion companion25 = ChatServerSentEventDataResponse$Unknown.Companion;
                 return i.Companion.serializer();
             case 28:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventDataTypeResponse", i.values(), new String[]{"debug", "confirmation", "functionCall", "content", "complete", "error", "unknown"}, new Annotation[][]{null, null, null, null, null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventDataTypeResponse", i.values(), new String[]{"debug", "confirmation", "functionCall", "content", "complete", "error", "unknown"}, new Annotation[][]{null, null, null, null, null, null, null});
             default:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventErrorTypeResponse", j.values(), new String[]{"exception", "rateLimit", "unknown"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventErrorTypeResponse", j.values(), new String[]{"exception", "rateLimit", "unknown"}, new Annotation[][]{null, null, null});
         }
     }
     public Object a(Object p1) { return null; }

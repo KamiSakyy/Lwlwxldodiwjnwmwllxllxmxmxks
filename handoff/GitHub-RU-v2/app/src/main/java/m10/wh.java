@@ -35,7 +35,7 @@ public abstract class wh {
     public static final a81.t A = new a81.t(1, "name", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         t1.Companion.getClass();
         aa.j0 j0Var = t1.e;
         p4.Companion.getClass();

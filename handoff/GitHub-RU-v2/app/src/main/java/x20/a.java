@@ -19,7 +19,7 @@ import hc0.qz;
 import hc0.xa;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -30,14 +30,14 @@ public abstract class a {
     static {
         xa.Companion.getClass();
         r b = l0.b(xa.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar = fb.a;
         k.g(xVar, "type");
         List r = l.r(new m[]{mVar, new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("User");
+        List n = d0Shadow.n("User");
         List list = h.a;
         s c = no.a.c(list, "selections", "User", n, list);
         bb.Companion.getClass();
@@ -59,6 +59,6 @@ public abstract class a {
         q0 q0Var = ap.k0;
         k.g(q0Var, "type");
         pm.Companion.getClass();
-        a = d0.n(new m("repository", q0Var, (String) null, rVar, l.r(new aa.k[]{new aa.k(pm.i, new u0(new t("repo"))), new aa.k(pm.j, new u0(new t("owner")))}), r4));
+        a = d0Shadow.n(new m("repository", q0Var, (String) null, rVar, l.r(new aa.k[]{new aa.k(pm.i, new u0(new t("repo"))), new aa.k(pm.j, new u0(new t("owner")))}), r4));
     }
 }

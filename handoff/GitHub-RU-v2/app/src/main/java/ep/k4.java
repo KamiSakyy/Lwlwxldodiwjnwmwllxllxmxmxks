@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class k4 implements aaShadow.a {
-    public static final List a = sy.d0.n("gitObject");
+    public static final List a = sy.d0Shadow.n("gitObject");
 
     public static jo.s6 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -109,7 +109,7 @@ public abstract class u1 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -161,7 +161,7 @@ public abstract class u1 implements aa.a {
                     long nextLong2 = eVar.nextLong();
                     if (nextLong2 > 2147483647L) {
                         while (nextLong2 > 2147483647L) {
-                            nextLong2 = jo.f4.c(1, nextLong2, "substring(...)");
+                            nextLong2 = jo.f4Shadow.c(1, nextLong2, "substring(...)");
                         }
                         valueOf2 = Integer.valueOf((int) nextLong2);
                     } else {
@@ -313,7 +313,7 @@ public abstract class u1 implements aa.a {
                     long nextLong3 = eVar.nextLong();
                     if (nextLong3 > 2147483647L) {
                         while (nextLong3 > 2147483647L) {
-                            nextLong3 = jo.f4.c(1, nextLong3, "substring(...)");
+                            nextLong3 = jo.f4Shadow.c(1, nextLong3, "substring(...)");
                         }
                         valueOf3 = Integer.valueOf((int) nextLong3);
                     } else {
@@ -530,7 +530,7 @@ public abstract class u1 implements aa.a {
             Boolean bool57 = bool30;
             boolean booleanValue14 = bool56.booleanValue();
             if (bool57 != null) {
-                return new f1(str, str2, num4, intValue, p0Var, o0Var, intValue2, booleanValue, booleanValue2, str3, booleanValue3, booleanValue4, booleanValue5, booleanValue6, booleanValue7, booleanValue8, q0Var, str4, w0Var, y0Var, a1Var, z0Var, c1Var, str5, str6, str7, str8, booleanValue9, booleanValue10, booleanValue11, jrVar, e1Var, s0Var, booleanValue12, intValue3, x0Var, b1Var, r0Var, booleanValue13, booleanValue14, bool57.booleanValue(), t0Var, c, c2, c3, c4, c5);
+                return new f1Shadow(str, str2, num4, intValue, p0Var, o0Var, intValue2, booleanValue, booleanValue2, str3, booleanValue3, booleanValue4, booleanValue5, booleanValue6, booleanValue7, booleanValue8, q0Var, str4, w0Var, y0Var, a1Var, z0Var, c1Var, str5, str6, str7, str8, booleanValue9, booleanValue10, booleanValue11, jrVar, e1Var, s0Var, booleanValue12, intValue3, x0Var, b1Var, r0Var, booleanValue13, booleanValue14, bool57.booleanValue(), t0Var, c, c2, c3, c4, c5);
             }
             k41.b.B(eVar, "viewerBlockedByOwner");
             throw null;

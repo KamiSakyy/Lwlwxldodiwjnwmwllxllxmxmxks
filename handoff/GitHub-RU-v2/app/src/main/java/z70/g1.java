@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 implements aa.a {
     public static final g1 a = new g1();
-    public static final List b = sy.d0.o("path", "isGenerated", "submodule", "lineCount", "fileType");
+    public static final List b = sy.d0Shadow.o("path", "isGenerated", "submodule", "lineCount", "fileType");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -54,7 +54,7 @@ public final class g1 implements aa.a {
         fVar.z0("path");
         aa.c.i.b(fVar, wVar, l0Var.a);
         fVar.z0("isGenerated");
-        jo.f4.C(l0Var.b, aa.c.f, fVar, wVar, "submodule");
+        jo.f4Shadow.C(l0Var.b, aa.c.f, fVar, wVar, "submodule");
         aa.c.b(aa.c.c(q1.a, false)).b(fVar, wVar, l0Var.c);
         fVar.z0("lineCount");
         aa.c.b(y20.a.a).b(fVar, wVar, l0Var.d);

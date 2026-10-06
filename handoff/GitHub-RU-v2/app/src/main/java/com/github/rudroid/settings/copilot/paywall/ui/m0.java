@@ -1,7 +1,7 @@
 package com.github.rudroid.settings.copilot.paywall.ui;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
@@ -29,7 +29,7 @@ public final class m0 {
     }
 
     public final String toString() {
-        return f4.i(this.a, "CopilotLicenseFeatureSet(title=", ", features=", ")", this.b);
+        return f4Shadow.i(this.a, "CopilotLicenseFeatureSet(title=", ", features=", ")", this.b);
     }
     public static Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
     public static Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }

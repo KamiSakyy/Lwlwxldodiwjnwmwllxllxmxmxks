@@ -50,7 +50,7 @@ import yz0.b8;
 import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class t {
+public abstract class tShadow {
     public static final t71.l a(Matcher matcher, int i, CharSequence charSequence) {
         if (matcher.find(i)) {
             return new t71.l(matcher, charSequence);
@@ -91,7 +91,7 @@ public abstract class t {
         Enum r3 = k0Var.d;
         String str6 = l0Var.b;
         String str7 = l0Var.c;
-        e50.d0 d0Var = l0Var.q;
+        e50.d0Shadow d0Var = l0Var.q;
         com.github.service.models.response.a c = t.e.c(d0Var != null ? d0Var.c : null);
         String str8 = k0Var.a;
         String str9 = k0Var.b;
@@ -144,7 +144,7 @@ public abstract class t {
             String str14 = (gVar == null || (fVar = gVar.c) == null) ? null : fVar.b;
             d1 d1Var = hVar.m;
             g70.a aVar3 = hVar.k;
-            d = r.d(cVar2, str13, cVar3, (r32 & 4) != 0 ? null : aVar2, null, z11, z12, z13, (r32 & 128) != 0 ? false : z14, (r32 & 256) != 0 ? null : str14, false, x61.r.r, d1Var, (r32 & 4096) != 0 ? false : aVar3.b, (r32 & 8192) != 0 ? false : aVar3.c, r.A(hVar));
+            d = r.d(cVar2, str13, cVar3, (r32 & 4) != 0 ? null : aVar2, null, z11, z12, z13, (r32 & 128) != 0 ? false : z14, (r32 & 256) != 0 ? null : str14, false, x61.rShadow.r, d1Var, (r32 & 4096) != 0 ? false : aVar3.b, (r32 & 8192) != 0 ? false : aVar3.c, r.A(hVar));
             j0 j0Var = c0Var.c;
             cVar = new b01.c(str12, d, j0Var != null ? j0Var.a : null);
         } else {
@@ -176,7 +176,7 @@ public abstract class t {
                 i3 = i7;
                 str2 = str6;
                 str3 = str16;
-                arrayList = x61.r.r;
+                arrayList = x61.rShadow.r;
             } else {
                 z4 = z16;
                 arrayList = new ArrayList();
@@ -249,7 +249,7 @@ public abstract class t {
         ArrayList arrayList;
         k71.k.g(r6Var, "<this>");
         List<o6> list = r6Var.b.b;
-        ArrayList arrayList2 = x61.r.r;
+        ArrayList arrayList2 = x61.rShadow.r;
         if (list == null) {
             return arrayList2;
         }
@@ -280,7 +280,7 @@ public abstract class t {
                 d6 d6Var = e6Var.j;
                 String str3 = d6Var.c.b;
                 String str4 = d6Var.b;
-                h01.p e = u.e(e6Var.m);
+                h01.pShadow e = u.e(e6Var.m);
                 c6 c6Var = e6Var.k;
                 r4 = new h01.n(str, str2, i, f, w, b0Var, i2, O, str3, str4, e, c6Var != null ? c6Var.a : null);
             }
@@ -543,7 +543,7 @@ public abstract class t {
             int i4 = c0Var.h;
             int i5 = c0Var.i;
             int i6 = x6.w.w;
-            x6.d0 d0Var = new x6.d0(z, z2, "android-app://androidx.navigation/".concat(str2).hashCode(), z9, z11, i2, i3, i4, i5);
+            x6.d0Shadow d0Var = new x6.d0(z, z2, "android-app://androidx.navigation/".concat(str2).hashCode(), z9, z11, i2, i3, i4, i5);
             d0Var.j = str2;
             return d0Var;
         }
@@ -551,7 +551,7 @@ public abstract class t {
         if (bVar == null) {
             return new x6.d0(z, z2, c0Var.a, c0Var.d, c0Var.e, c0Var.f, c0Var.g, c0Var.h, c0Var.i);
         }
-        x6.d0 d0Var2 = new x6.d0(z, z2, b7.i.b(b91.g.J(bVar)), c0Var.d, c0Var.e, c0Var.f, c0Var.g, c0Var.h, c0Var.i);
+        x6.d0Shadow d0Var2 = new x6.d0(z, z2, b7.i.b(b91.g.J(bVar)), c0Var.d, c0Var.e, c0Var.f, c0Var.g, c0Var.h, c0Var.i);
         d0Var2.k = bVar;
         return d0Var2;
     }
@@ -601,7 +601,7 @@ public abstract class t {
 
     public static final mn.m q(vn0.v vVar) {
         vn0.s sVar = vVar.p;
-        vn0.t tVar = vVar.q;
+        vn0.tShadow tVar = vVar.q;
         vn0.j jVar = vVar.r;
         vn0.i iVar = vVar.o;
         vn0.u uVar = vVar.s;
@@ -671,25 +671,25 @@ public abstract class t {
             dataOutputStream.writeUTF((String) obj);
         } else {
             if (!(obj instanceof Object[])) {
-                throw new IllegalArgumentException("Unsupported value type " + k71.x.a(obj.getClass()).c());
+                throw new IllegalArgumentException("Unsupported value type " + k71.xShadow.a(obj.getClass()).c());
             }
             Object[] objArr = (Object[]) obj;
-            k71.e a = k71.x.a(objArr.getClass());
-            if (a.equals(k71.x.a(Boolean[].class))) {
+            k71.e a = k71.xShadow.a(objArr.getClass());
+            if (a.equals(k71.xShadow.a(Boolean[].class))) {
                 i = 8;
-            } else if (a.equals(k71.x.a(Byte[].class))) {
+            } else if (a.equals(k71.xShadow.a(Byte[].class))) {
                 i = 9;
-            } else if (a.equals(k71.x.a(Integer[].class))) {
+            } else if (a.equals(k71.xShadow.a(Integer[].class))) {
                 i = 10;
-            } else if (a.equals(k71.x.a(Long[].class))) {
+            } else if (a.equals(k71.xShadow.a(Long[].class))) {
                 i = 11;
-            } else if (a.equals(k71.x.a(Float[].class))) {
+            } else if (a.equals(k71.xShadow.a(Float[].class))) {
                 i = 12;
-            } else if (a.equals(k71.x.a(Double[].class))) {
+            } else if (a.equals(k71.xShadow.a(Double[].class))) {
                 i = 13;
             } else {
-                if (!a.equals(k71.x.a(String[].class))) {
-                    throw new IllegalArgumentException("Unsupported value type " + k71.x.a(objArr.getClass()).b());
+                if (!a.equals(k71.xShadow.a(String[].class))) {
+                    throw new IllegalArgumentException("Unsupported value type " + k71.xShadow.a(objArr.getClass()).b());
                 }
                 i = 14;
             }

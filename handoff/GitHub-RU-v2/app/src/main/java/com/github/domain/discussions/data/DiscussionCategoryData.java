@@ -8,7 +8,7 @@ import com.github.rudroid.m0;
 import g81.e;
 import gn.m;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -33,7 +33,7 @@ public final class DiscussionCategoryData implements Parcelable {
 
     public /* synthetic */ DiscussionCategoryData(int i, String str, String str2, String str3, boolean z, boolean z2, String str4, String str5) {
         if (127 != (i & 127)) {
-            c1.l(i, 127, DiscussionCategoryData$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 127, DiscussionCategoryData$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

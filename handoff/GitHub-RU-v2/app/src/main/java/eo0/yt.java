@@ -6,7 +6,7 @@ import jn0.w60;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yt implements aaShadow.a {
     public static final yt a = new yt();
-    public static final List b = sy.d0.o(new String[]{"hasNextPage", "endCursor", "hasPreviousPage"});
+    public static final List b = sy.d0Shadow.o(new String[]{"hasNextPage", "endCursor", "hasPreviousPage"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -46,7 +46,7 @@ public final class yt implements aaShadow.a {
         k71.k.g(w60Var, "value");
         fVar.z0("hasNextPage");
         aa.b bVar = aa.c.f;
-        jo.f4.C(w60Var.a, bVar, fVar, wVar, "endCursor");
+        jo.f4Shadow.C(w60Var.a, bVar, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, w60Var.b);
         fVar.z0("hasPreviousPage");
         bVar.b(fVar, wVar, Boolean.valueOf(w60Var.c));

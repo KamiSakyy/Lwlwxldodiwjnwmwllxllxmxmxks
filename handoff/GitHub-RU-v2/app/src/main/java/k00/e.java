@@ -1,12 +1,12 @@
 package k00;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements aa.a {
     public static final e a = new e();
-    public static final List b = sy.d0.o("scheduledNotifications", "getsDirectMentions", "getsAssignments", "getsReviewRequests", "getsDeploymentRequests", "getsPullRequestReviews", "getsCiActivity", "getsCiFailedOnly", "getsReleases", "getsLiveActivityCopilotCodingAgentV2");
+    public static final List b = sy.d0Shadow.o("scheduledNotifications", "getsDirectMentions", "getsAssignments", "getsReviewRequests", "getsDeploymentRequests", "getsPullRequestReviews", "getsCiActivity", "getsCiFailedOnly", "getsReleases", "getsLiveActivityCopilotCodingAgentV2");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0031, code lost:
     
@@ -211,15 +211,15 @@ public final class e implements aa.a {
         k71.k.g(hVar, "value");
         fVar.z0("scheduledNotifications");
         aa.b bVar = aa.c.f;
-        f4.C(hVar.a, bVar, fVar, wVar, "getsDirectMentions");
-        f4.C(hVar.b, bVar, fVar, wVar, "getsAssignments");
-        f4.C(hVar.c, bVar, fVar, wVar, "getsReviewRequests");
-        f4.C(hVar.d, bVar, fVar, wVar, "getsDeploymentRequests");
-        f4.C(hVar.e, bVar, fVar, wVar, "getsPullRequestReviews");
-        f4.C(hVar.f, bVar, fVar, wVar, "getsCiActivity");
-        f4.C(hVar.g, bVar, fVar, wVar, "getsCiFailedOnly");
-        f4.C(hVar.h, bVar, fVar, wVar, "getsReleases");
-        f4.C(hVar.i, bVar, fVar, wVar, "getsLiveActivityCopilotCodingAgentV2");
+        f4Shadow.C(hVar.a, bVar, fVar, wVar, "getsDirectMentions");
+        f4Shadow.C(hVar.b, bVar, fVar, wVar, "getsAssignments");
+        f4Shadow.C(hVar.c, bVar, fVar, wVar, "getsReviewRequests");
+        f4Shadow.C(hVar.d, bVar, fVar, wVar, "getsDeploymentRequests");
+        f4Shadow.C(hVar.e, bVar, fVar, wVar, "getsPullRequestReviews");
+        f4Shadow.C(hVar.f, bVar, fVar, wVar, "getsCiActivity");
+        f4Shadow.C(hVar.g, bVar, fVar, wVar, "getsCiFailedOnly");
+        f4Shadow.C(hVar.h, bVar, fVar, wVar, "getsReleases");
+        f4Shadow.C(hVar.i, bVar, fVar, wVar, "getsLiveActivityCopilotCodingAgentV2");
         aa.c.k.b(fVar, wVar, hVar.j);
     }
 }

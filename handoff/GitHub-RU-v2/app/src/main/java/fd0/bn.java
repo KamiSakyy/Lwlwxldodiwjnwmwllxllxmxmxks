@@ -6,7 +6,7 @@ import kc0.ox;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bn implements aaShadow.a {
     public static final bn a = new bn();
-    public static final List b = sy.d0.n("repository");
+    public static final List b = sy.d0Shadow.n("repository");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

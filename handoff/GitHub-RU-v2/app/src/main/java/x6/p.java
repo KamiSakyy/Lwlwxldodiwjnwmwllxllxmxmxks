@@ -24,7 +24,7 @@ public final class p extends k1 {
     public final String toString() {
         StringBuilder sb2 = new StringBuilder("NavControllerViewModel{");
         int identityHashCode = System.identityHashCode(this);
-        sy.r.m(16);
+        sy.rShadow.m(16);
         sb2.append(sy.c0.q(16, identityHashCode & 4294967295L));
         sb2.append("} ViewModelStores (");
         Iterator it = this.f33882s.keySet().iterator();

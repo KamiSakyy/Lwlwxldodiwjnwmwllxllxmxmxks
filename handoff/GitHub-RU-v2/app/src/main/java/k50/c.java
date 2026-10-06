@@ -13,11 +13,11 @@ import com.google.android.gms.measurement.internal.c0;
 import com.google.android.gms.measurement.internal.x;
 import hc0.o8;
 import java.util.List;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.SerializationException;
 import l01.w0;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements i0, t6.b, bm.k, x, j7.b {
@@ -60,7 +60,7 @@ public final class c implements i0, t6.b, bm.k, x, j7.b {
         List list = l50.a.a;
         List list2 = l50.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -80,7 +80,7 @@ public final class c implements i0, t6.b, bm.k, x, j7.b {
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(c.class).hashCode();
+                return k71.xShadow.a(c.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -88,15 +88,15 @@ public final class c implements i0, t6.b, bm.k, x, j7.b {
 
     @Override // bm.k
     public com.github.domain.searchandfilter.filters.data.d l(String str) {
-        List list = r.r;
+        List list = rShadow.r;
         if (str != null) {
             l81.b bVar = l81.c.d;
             l lVar = ((l81.c) bVar).b;
-            k71.e a = k71.x.a(w0.class);
+            k71.e a = k71.xShadow.a(w0.class);
             k71.k.g(lVar, "module");
             KSerializer a2 = lVar.a(a, list);
             if (a2 == null) {
-                throw new SerializationException(c1.k(a));
+                throw new SerializationException(c1Shadow.k(a));
             }
             List list2 = (List) bVar.a(str, new k81.d(a2, 0));
             if (list2 != null) {

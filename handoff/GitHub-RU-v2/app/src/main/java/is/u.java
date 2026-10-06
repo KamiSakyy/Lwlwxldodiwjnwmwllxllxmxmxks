@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements aa.a {
     public static final u a = new u();
-    public static final List b = sy.d0.o("pageInfo", "nodes");
+    public static final List b = sy.d0Shadow.o("pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -15,7 +15,7 @@ public final class u implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                qVar = (q) aa.c.c(x.a, true).a(eVar, wVar);
+                qVar = (q) aa.c.c(xShadow.a, true).a(eVar, wVar);
             } else {
                 if (r0 != 1) {
                     break;
@@ -36,7 +36,7 @@ public final class u implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(oVar, "value");
         fVar.z0("pageInfo");
-        aa.c.c(x.a, true).b(fVar, wVar, oVar.a);
+        aa.c.c(xShadow.a, true).b(fVar, wVar, oVar.a);
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(w.a, true)))).b(fVar, wVar, oVar.b);
     }

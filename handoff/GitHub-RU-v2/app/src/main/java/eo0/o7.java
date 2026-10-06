@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o7 implements aaShadow.a {
     public static final o7 a = new o7();
-    public static final List b = sy.d0.o(new String[]{"id", "locked", "author", "repository", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "locked", "author", "repository", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -68,7 +68,7 @@ public final class o7 implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, hbVar.a);
         fVar.z0("locked");
-        jo.f4.C(hbVar.b, aa.c.f, fVar, wVar, "author");
+        jo.f4Shadow.C(hbVar.b, aa.c.f, fVar, wVar, "author");
         aa.c.b(aa.c.c(m7.a, true)).b(fVar, wVar, hbVar.c);
         fVar.z0("repository");
         aa.c.c(s7.a, false).b(fVar, wVar, hbVar.d);

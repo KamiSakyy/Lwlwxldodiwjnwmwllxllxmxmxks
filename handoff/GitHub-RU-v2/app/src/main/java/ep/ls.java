@@ -8,7 +8,7 @@ import jo.t40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ls implements aaShadow.a {
     public static final ls a = new ls();
-    public static final List b = sy.d0.o("__typename", "name", "id", "issueTypes", "pinnedIssues");
+    public static final List b = sy.d0Shadow.o("__typename", "name", "id", "issueTypes", "pinnedIssues");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

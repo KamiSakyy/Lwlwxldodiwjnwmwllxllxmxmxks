@@ -37,12 +37,12 @@ import yz0.z4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class c0 {
-    public static final b01.i b(is.r rVar) {
+    public static final b01.i b(is.rShadow rVar) {
         ms.g gVar;
-        is.o oVar = rVar.c;
-        x61.r rVar2 = oVar.b;
+        is.oShadow oVar = rVar.c;
+        x61.rShadow rVar2 = oVar.b;
         if (rVar2 == null) {
-            rVar2 = x61.r.r;
+            rVar2 = x61.rShadow.r;
         }
         ArrayList S = x61.m.S(rVar2);
         ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -51,13 +51,13 @@ public abstract class c0 {
         while (i < size) {
             Object obj = S.get(i);
             i++;
-            is.p pVar = (is.p) obj;
+            is.pShadow pVar = (is.p) obj;
             ms.i iVar = pVar.c;
             ar.c cVar = iVar.j;
             String str = iVar.c;
             pv.c cVar2 = pVar.d;
             ju.a aVar = iVar.l;
-            ms.o oVar2 = pVar.e;
+            ms.oShadow oVar2 = pVar.e;
             boolean z = iVar.d;
             boolean z2 = iVar.e;
             boolean z3 = iVar.f;
@@ -138,8 +138,8 @@ public abstract class c0 {
             wk0.w wVar = (wk0.w) obj;
             com.github.service.models.response.a aVar3 = new com.github.service.models.response.a(qgVar2.c, b41.b.O(qgVar2.e), (String) null, false, (String) null, 60);
             k71.k.g(wVar, "<this>");
-            wk0.p pVar = wVar.d;
-            wk0.r rVar = pVar.c;
+            wk0.pShadow pVar = wVar.d;
+            wk0.rShadow rVar = pVar.c;
             wk0.s sVar = pVar.b;
             String str11 = "";
             if (rVar != null) {
@@ -191,7 +191,7 @@ public abstract class c0 {
                                         String str13 = fcVar.r;
                                         x1Var.getClass();
                                         InteractionType a = x1.a(str13);
-                                        wk0.o oVar = wVar.c;
+                                        wk0.oShadow oVar = wVar.c;
                                         g01.c cVar = new g01.c(a, oVar != null ? oVar.b : null, b41.b.O(oVar != null ? oVar.d : null), wVar.b, aVar);
                                         String str14 = str5;
                                         com.github.service.models.response.a aVar4 = aVar;
@@ -243,7 +243,7 @@ public abstract class c0 {
                                     String str132 = fcVar2.r;
                                     x1Var2.getClass();
                                     InteractionType a2 = x1.a(str132);
-                                    wk0.o oVar2 = wVar.c;
+                                    wk0.oShadow oVar2 = wVar.c;
                                     g01.c cVar2 = new g01.c(a2, oVar2 != null ? oVar2.b : null, b41.b.O(oVar2 != null ? oVar2.d : null), wVar.b, aVar);
                                     String str142 = str5;
                                     com.github.service.models.response.a aVar42 = aVar;
@@ -268,7 +268,7 @@ public abstract class c0 {
                             String str1322 = fcVar22.r;
                             x1Var22.getClass();
                             InteractionType a22 = x1.a(str1322);
-                            wk0.o oVar22 = wVar.c;
+                            wk0.oShadow oVar22 = wVar.c;
                             g01.c cVar22 = new g01.c(a22, oVar22 != null ? oVar22.b : null, b41.b.O(oVar22 != null ? oVar22.d : null), wVar.b, aVar);
                             String str1422 = str5;
                             com.github.service.models.response.a aVar422 = aVar;
@@ -387,12 +387,12 @@ public abstract class c0 {
         if (ye0Var != null && (te0Var = ye0Var.a) != null) {
             str = te0Var.b;
         }
-        return new y7(str2, issueOrPullRequestState, f, P, x61.r.r, g, bVar, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (ye0Var == null || (xe0Var2 = ye0Var.b) == null || !xe0Var2.f) ? false : true, (ye0Var == null || (xe0Var = ye0Var.b) == null || !xe0Var.g) ? false : true);
+        return new y7(str2, issueOrPullRequestState, f, P, x61.rShadow.r, g, bVar, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (ye0Var == null || (xe0Var2 = ye0Var.b) == null || !xe0Var2.f) ? false : true, (ye0Var == null || (xe0Var = ye0Var.b) == null || !xe0Var.g) ? false : true);
     }
 
     public static final mn.p e(g2 g2Var) {
         k71.k.g(g2Var, "<this>");
-        mn.o oVar = mn.p.Companion;
+        mn.oShadow oVar = mn.p.Companion;
         List list = g2Var.a;
         String str = g2Var.e;
         String str2 = g2Var.b;
@@ -409,7 +409,7 @@ public abstract class c0 {
         ArrayList arrayList2 = new ArrayList();
         List<i80.a> list = cVar != null ? cVar.d : null;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         for (i80.a aVar : list) {
             zm zmVar = aVar.d;
@@ -451,7 +451,7 @@ public abstract class c0 {
 
     public static final void g(int i, int i2) {
         if (i > i2) {
-            throw new IndexOutOfBoundsException(jo.f4.h(i, i2, "toIndex (", ") is greater than size (", ")."));
+            throw new IndexOutOfBoundsException(jo.f4Shadow.h(i, i2, "toIndex (", ") is greater than size (", ")."));
         }
     }
 

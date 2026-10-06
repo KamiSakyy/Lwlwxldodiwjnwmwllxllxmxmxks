@@ -7,8 +7,8 @@ public abstract class gw {
     public static final fw Companion = new fw();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("UnassignedEvent", n, sy.d0.n(yg.a));
+        new aa.q0("UnassignedEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

@@ -79,7 +79,7 @@ public final class w {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final boolean e() {
-        t a;
+        tShadow a;
         u uVar;
         while (true) {
             synchronized (this) {

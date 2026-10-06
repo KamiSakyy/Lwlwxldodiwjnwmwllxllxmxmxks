@@ -1,7 +1,7 @@
 package tk;
 
 import com.github.rudroid.fileschanged.q0;
-import in.r;
+import in.rShadow;
 import java.util.List;
 import k71.k;
 import oa.j;
@@ -57,7 +57,7 @@ public final class b {
                     jVar = jVar2;
                     c = obj;
                 }
-                return b31.b.J(r.l((y71.i) c), jVar, q0Var2);
+                return b31.b.J(rShadow.l((y71.i) c), jVar, q0Var2);
             }
         }
         aVar = new a(this, cVar);
@@ -66,7 +66,7 @@ public final class b {
         i2 = aVar.y;
         if (i2 != 0) {
         }
-        return b31.b.J(r.l((y71.i) c), jVar, q0Var2);
+        return b31.b.J(rShadow.l((y71.i) c), jVar, q0Var2);
     }
 
 }

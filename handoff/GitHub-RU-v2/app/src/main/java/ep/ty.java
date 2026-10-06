@@ -7,14 +7,14 @@ import jo.de0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ty implements aaShadow.a {
     public static final ty a = new ty();
-    public static final List b = sy.d0.n("pullRequest");
+    public static final List b = sy.d0Shadow.n("pullRequest");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         ce0 ce0Var = null;
         while (eVar.r0(b) == 0) {
-            ce0Var = (ce0) aa.c.b(aa.c.c(sy.a, false)).a(eVar, wVar);
+            ce0Var = (ce0) aa.c.b(aa.c.c(syShadow.a, false)).a(eVar, wVar);
         }
         return new de0(ce0Var);
     }
@@ -25,6 +25,6 @@ public final class ty implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(de0Var, "value");
         fVar.z0("pullRequest");
-        aa.c.b(aa.c.c(sy.a, false)).b(fVar, wVar, de0Var.a);
+        aa.c.b(aa.c.c(syShadow.a, false)).b(fVar, wVar, de0Var.a);
     }
 }

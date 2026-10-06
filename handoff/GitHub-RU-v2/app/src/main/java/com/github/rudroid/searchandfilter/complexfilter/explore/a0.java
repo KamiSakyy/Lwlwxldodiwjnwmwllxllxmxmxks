@@ -224,7 +224,7 @@ public final /* synthetic */ class a0 implements j71.c {
             case 25:
                 a1 a1Var = (a1) obj;
                 k71.k.g(a1Var, "savedStateHandle");
-                q.b.b(com.github.rudroid.searchandfilter.q.Companion, a1Var, ((ConfigureShortcutRoute) sy.y.m(a1Var, k71.x.a(ConfigureShortcutRoute.class), ig.b.a)).v, 1);
+                q.b.b(com.github.rudroid.searchandfilter.q.Companion, a1Var, ((ConfigureShortcutRoute) sy.y.m(a1Var, k71.xShadow.a(ConfigureShortcutRoute.class), ig.b.a)).v, 1);
                 return a0Var;
             case 26:
                 a1 a1Var2 = (a1) obj;

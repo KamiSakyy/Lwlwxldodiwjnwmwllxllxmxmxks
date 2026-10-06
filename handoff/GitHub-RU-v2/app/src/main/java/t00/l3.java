@@ -160,15 +160,15 @@ public final class l3 implements y71.j {
         boolean z3;
         IssueOrPullRequestState issueOrPullRequestState;
         boolean z4;
-        x61.r<dw.a> rVar;
+        x61.rShadow<dw.a> rVar;
         ArrayList arrayList;
         rt.n nVar;
         boolean z5;
-        x61.r rVar2;
+        x61.rShadow rVar2;
         rt.k kVar;
         ArrayList arrayList2;
-        x61.r rVar3;
-        x61.r<dw.q4> rVar4;
+        x61.rShadow rVar3;
+        x61.rShadow<dw.q4> rVar4;
         boolean z6;
         boolean z7;
         boolean z8;
@@ -304,7 +304,7 @@ public final class l3 implements y71.j {
                                             dw.m4 m4Var = t4Var.i;
                                             com.github.service.models.response.a aVar6 = new com.github.service.models.response.a(m4Var == null ? m4Var.b : "", w8.s.A(m4Var == null ? m4Var.c : null), (String) null, false, (String) null, 60);
                                             boolean b = k71.k.b(t4Var.j, Boolean.TRUE);
-                                            fz.b bVar3 = new fz.b(t4Var.z, t4Var.l, new yz0.a0(str5));
+                                            fz.b bVar3 = new fz.b(t4Var.z, t4Var.l, new yz0.a0Shadow(str5));
                                             ArrayList h = w8.s.h(str5, cVar3);
                                             z4 = cVar3.c;
                                             dw.p4 p4Var = t4Var.o;
@@ -313,7 +313,7 @@ public final class l3 implements y71.j {
                                             List P = com.google.android.gms.internal.measurement.i4.P(t4Var.D);
                                             dw.b bVar4 = cVar2.b;
                                             rVar = bVar4 == null ? bVar4.a : null;
-                                            x61.r rVar5 = x61.r.r;
+                                            x61.rShadow rVar5 = x61.rShadow.r;
                                             if (rVar == null) {
                                                 rVar = rVar5;
                                             }
@@ -378,7 +378,7 @@ public final class l3 implements y71.j {
                                                 }
                                                 arrayList2 = arrayList;
                                             }
-                                            x61.r rVar6 = rVar3 != null ? rVar5 : rVar3;
+                                            x61.rShadow rVar6 = rVar3 != null ? rVar5 : rVar3;
                                             boolean z25 = t4Var.r;
                                             PullRequestReviewDecision pullRequestReviewDecision2 = PullRequestReviewDecision.UNKNOWN__;
                                             CloseReason w = sy.w.w(t4Var.s);
@@ -446,7 +446,7 @@ public final class l3 implements y71.j {
                                             dw.m4 m4Var2 = t4Var.i;
                                             com.github.service.models.response.a aVar62 = new com.github.service.models.response.a(m4Var2 == null ? m4Var2.b : "", w8.s.A(m4Var2 == null ? m4Var2.c : null), (String) null, false, (String) null, 60);
                                             boolean b2 = k71.k.b(t4Var.j, Boolean.TRUE);
-                                            fz.b bVar32 = new fz.b(t4Var.z, t4Var.l, new yz0.a0(str5));
+                                            fz.b bVar32 = new fz.b(t4Var.z, t4Var.l, new yz0.a0Shadow(str5));
                                             ArrayList h3 = w8.s.h(str5, cVar3);
                                             z4 = cVar3.c;
                                             dw.p4 p4Var2 = t4Var.o;
@@ -456,7 +456,7 @@ public final class l3 implements y71.j {
                                             dw.b bVar42 = cVar2.b;
                                             if (bVar42 == null) {
                                             }
-                                            x61.r rVar52 = x61.r.r;
+                                            x61.rShadow rVar52 = x61.rShadow.r;
                                             if (rVar == null) {
                                             }
                                             arrayList = new ArrayList();
@@ -529,7 +529,7 @@ public final class l3 implements y71.j {
                                         dw.m4 m4Var22 = t4Var.i;
                                         com.github.service.models.response.a aVar622 = new com.github.service.models.response.a(m4Var22 == null ? m4Var22.b : "", w8.s.A(m4Var22 == null ? m4Var22.c : null), (String) null, false, (String) null, 60);
                                         boolean b22 = k71.k.b(t4Var.j, Boolean.TRUE);
-                                        fz.b bVar322 = new fz.b(t4Var.z, t4Var.l, new yz0.a0(str5));
+                                        fz.b bVar322 = new fz.b(t4Var.z, t4Var.l, new yz0.a0Shadow(str5));
                                         ArrayList h32 = w8.s.h(str5, cVar3);
                                         z4 = cVar3.c;
                                         dw.p4 p4Var22 = t4Var.o;
@@ -539,7 +539,7 @@ public final class l3 implements y71.j {
                                         dw.b bVar422 = cVar2.b;
                                         if (bVar422 == null) {
                                         }
-                                        x61.r rVar522 = x61.r.r;
+                                        x61.rShadow rVar522 = x61.rShadow.r;
                                         if (rVar == null) {
                                         }
                                         arrayList = new ArrayList();
@@ -620,7 +620,7 @@ public final class l3 implements y71.j {
                                 dw.m4 m4Var222 = t4Var.i;
                                 com.github.service.models.response.a aVar6222 = new com.github.service.models.response.a(m4Var222 == null ? m4Var222.b : "", w8.s.A(m4Var222 == null ? m4Var222.c : null), (String) null, false, (String) null, 60);
                                 boolean b222 = k71.k.b(t4Var.j, Boolean.TRUE);
-                                fz.b bVar3222 = new fz.b(t4Var.z, t4Var.l, new yz0.a0(str5));
+                                fz.b bVar3222 = new fz.b(t4Var.z, t4Var.l, new yz0.a0Shadow(str5));
                                 ArrayList h322 = w8.s.h(str5, cVar3);
                                 z4 = cVar3.c;
                                 dw.p4 p4Var222 = t4Var.o;
@@ -630,7 +630,7 @@ public final class l3 implements y71.j {
                                 dw.b bVar4222 = cVar2.b;
                                 if (bVar4222 == null) {
                                 }
-                                x61.r rVar5222 = x61.r.r;
+                                x61.rShadow rVar5222 = x61.rShadow.r;
                                 if (rVar == null) {
                                 }
                                 arrayList = new ArrayList();
@@ -842,7 +842,7 @@ public final class l3 implements y71.j {
                                             List P3 = com.google.android.gms.internal.measurement.i4.P(g6Var.Y);
                                             dw.d1 d1Var = e1Var.b;
                                             List list7 = d1Var != null ? d1Var.a : null;
-                                            List list8 = x61.r.r;
+                                            List list8 = x61.rShadow.r;
                                             List<dw.c1> list9 = list7 == null ? list8 : list7;
                                             ArrayList arrayList4 = new ArrayList();
                                             for (dw.c1 c1Var : list9) {
@@ -1028,7 +1028,7 @@ public final class l3 implements y71.j {
                                                     }
                                                     i5++;
                                                     if (i5 < 0) {
-                                                        sy.d0.w();
+                                                        sy.d0Shadow.w();
                                                         throw null;
                                                     }
                                                     a = arrayList7;
@@ -1120,7 +1120,7 @@ public final class l3 implements y71.j {
                                         dw.d1 d1Var2 = e1Var.b;
                                         if (d1Var2 != null) {
                                         }
-                                        List list82 = x61.r.r;
+                                        List list82 = x61.rShadow.r;
                                         if (list7 == null) {
                                         }
                                         ArrayList arrayList42 = new ArrayList();
@@ -1268,7 +1268,7 @@ public final class l3 implements y71.j {
                                 dw.d1 d1Var22 = e1Var.b;
                                 if (d1Var22 != null) {
                                 }
-                                List list822 = x61.r.r;
+                                List list822 = x61.rShadow.r;
                                 if (list7 == null) {
                                 }
                                 ArrayList arrayList422 = new ArrayList();

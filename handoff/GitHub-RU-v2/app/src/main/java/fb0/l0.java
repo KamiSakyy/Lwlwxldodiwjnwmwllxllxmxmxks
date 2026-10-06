@@ -5,7 +5,7 @@ public final class l0 {
     public String a;
     public i b;
     public k c;
-    public x d;
+    public xShadow d;
     public h e;
     public z f;
     public l g;
@@ -18,7 +18,7 @@ public final class l0 {
     public r n;
     public u o;
 
-    public l0(String str, i iVar, k kVar, x xVar, h hVar, z zVar, l lVar, n nVar, o oVar, s sVar, t tVar, q qVar, j jVar, r rVar, u uVar) {
+    public l0(String str, i iVar, k kVar, xShadow xVar, h hVar, z zVar, l lVar, n nVar, o oVar, s sVar, t tVar, q qVar, j jVar, r rVar, u uVar) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = iVar;
@@ -54,7 +54,7 @@ public final class l0 {
         int hashCode2 = (hashCode + (iVar == null ? 0 : iVar.hashCode())) * 31;
         k kVar = this.c;
         int hashCode3 = (hashCode2 + (kVar == null ? 0 : kVar.hashCode())) * 31;
-        x xVar = this.d;
+        xShadow xVar = this.d;
         int hashCode4 = (hashCode3 + (xVar == null ? 0 : xVar.hashCode())) * 31;
         h hVar = this.e;
         int hashCode5 = (hashCode4 + (hVar == null ? 0 : hVar.hashCode())) * 31;

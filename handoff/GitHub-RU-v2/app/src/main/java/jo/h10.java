@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class h10 implements aaShadow.v0 {
+public final class h10Shadow implements aaShadow.v0 {
     public n10Shadow a;
     public String b;
     public String c;
@@ -16,10 +16,10 @@ public final class h10 implements aaShadow.v0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof h10)) {
+        if (!(obj instanceof h10Shadow)) {
             return false;
         }
-        h10 h10Var = (h10) obj;
+        h10Shadow h10Var = (h10Shadow) obj;
         return k71.k.b(this.a, h10Var.a) && k71.k.b(this.b, h10Var.b) && k71.k.b(this.c, h10Var.c);
     }
 

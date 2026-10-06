@@ -9,7 +9,7 @@ import jo.mi0;
 import jo.o7;
 import kotlin.NoWhenBranchMatchedException;
 import m10.i7;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements on.e, mi0 {
@@ -51,7 +51,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(bVar2, "cachedClient");
                         k71.k.g(vVar2, "ioDispatcher");
                         k71.k.g(kVar2, "featureManager");
-                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.o.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
+                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.oShadow.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
                     case 1:
                         o oVar2 = this.s;
                         com.github.service.wrapper.j jVar3 = oVar2.r;
@@ -60,7 +60,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar3, "client");
                         k71.k.g(bVar3, "cachedClient");
                         k71.k.g(vVar3, "ioDispatcher");
-                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.o.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
+                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.oShadow.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
                     case 2:
                         o oVar3 = this.s;
                         com.github.service.wrapper.j jVar4 = oVar3.r;
@@ -69,7 +69,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar4, "client");
                         k71.k.g(bVar4, "cachedClient");
                         k71.k.g(vVar4, "ioDispatcher");
-                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.o.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
+                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.oShadow.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
                     default:
                         o oVar4 = this.s;
                         com.github.service.wrapper.j jVar5 = oVar4.r;
@@ -78,7 +78,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar5, "client");
                         k71.k.g(bVar5, "cachedClient");
                         k71.k.g(vVar5, "ioDispatcher");
-                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.o.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
+                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.oShadow.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
                 }
             }
         });
@@ -102,7 +102,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(bVar2, "cachedClient");
                         k71.k.g(vVar2, "ioDispatcher");
                         k71.k.g(kVar2, "featureManager");
-                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.o.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
+                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.oShadow.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
                     case 1:
                         o oVar2 = this.s;
                         com.github.service.wrapper.j jVar3 = oVar2.r;
@@ -111,7 +111,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar3, "client");
                         k71.k.g(bVar3, "cachedClient");
                         k71.k.g(vVar3, "ioDispatcher");
-                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.o.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
+                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.oShadow.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
                     case 2:
                         o oVar3 = this.s;
                         com.github.service.wrapper.j jVar4 = oVar3.r;
@@ -120,7 +120,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar4, "client");
                         k71.k.g(bVar4, "cachedClient");
                         k71.k.g(vVar4, "ioDispatcher");
-                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.o.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
+                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.oShadow.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
                     default:
                         o oVar4 = this.s;
                         com.github.service.wrapper.j jVar5 = oVar4.r;
@@ -129,7 +129,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar5, "client");
                         k71.k.g(bVar5, "cachedClient");
                         k71.k.g(vVar5, "ioDispatcher");
-                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.o.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
+                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.oShadow.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
                 }
             }
         });
@@ -153,7 +153,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(bVar2, "cachedClient");
                         k71.k.g(vVar2, "ioDispatcher");
                         k71.k.g(kVar2, "featureManager");
-                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.o.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
+                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.oShadow.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
                     case 1:
                         o oVar2 = this.s;
                         com.github.service.wrapper.j jVar3 = oVar2.r;
@@ -162,7 +162,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar3, "client");
                         k71.k.g(bVar3, "cachedClient");
                         k71.k.g(vVar3, "ioDispatcher");
-                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.o.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
+                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.oShadow.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
                     case 2:
                         o oVar3 = this.s;
                         com.github.service.wrapper.j jVar4 = oVar3.r;
@@ -171,7 +171,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar4, "client");
                         k71.k.g(bVar4, "cachedClient");
                         k71.k.g(vVar4, "ioDispatcher");
-                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.o.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
+                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.oShadow.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
                     default:
                         o oVar4 = this.s;
                         com.github.service.wrapper.j jVar5 = oVar4.r;
@@ -180,7 +180,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar5, "client");
                         k71.k.g(bVar5, "cachedClient");
                         k71.k.g(vVar5, "ioDispatcher");
-                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.o.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
+                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.oShadow.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
                 }
             }
         });
@@ -204,7 +204,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(bVar2, "cachedClient");
                         k71.k.g(vVar2, "ioDispatcher");
                         k71.k.g(kVar2, "featureManager");
-                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.o.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
+                        return new g(jVar2, bVar2, vVar2, new com.github.rudroid.support.u(26, kVar2), new com.github.rudroid.issueorpullrequest.mergebox.ui.e0(23, kVar2), s01.oShadow.r, new qb(2), new q6(17), new q6(18), new q6(19), new q6(20), new qb(3), null, 120832);
                     case 1:
                         o oVar2 = this.s;
                         com.github.service.wrapper.j jVar3 = oVar2.r;
@@ -213,7 +213,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar3, "client");
                         k71.k.g(bVar3, "cachedClient");
                         k71.k.g(vVar3, "ioDispatcher");
-                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.o.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
+                        return new z0(jVar3, bVar3, vVar3, new y(1), new qb(10), s01.oShadow.r, new qb(11), new y(2), new y(3), new y(4), new y(5), new qb(12), null, 120832);
                     case 2:
                         o oVar3 = this.s;
                         com.github.service.wrapper.j jVar4 = oVar3.r;
@@ -222,7 +222,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar4, "client");
                         k71.k.g(bVar4, "cachedClient");
                         k71.k.g(vVar4, "ioDispatcher");
-                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.o.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
+                        return new z(jVar4, bVar4, vVar4, new q6(26), new qb(7), s01.oShadow.r, new qb(8), new q6(27), new q6(28), new q6(29), new y(0), new qb(9), null, 120832);
                     default:
                         o oVar4 = this.s;
                         com.github.service.wrapper.j jVar5 = oVar4.r;
@@ -231,7 +231,7 @@ public final class o implements on.e, mi0 {
                         k71.k.g(jVar5, "client");
                         k71.k.g(bVar5, "cachedClient");
                         k71.k.g(vVar5, "ioDispatcher");
-                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.o.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
+                        return new r(jVar5, bVar5, vVar5, new q6(21), new qb(4), s01.oShadow.r, new qb(5), new q6(22), new q6(23), new q6(24), new q6(25), new qb(6), null, 120832);
                 }
             }
         });
@@ -363,7 +363,7 @@ public final class o implements on.e, mi0 {
         if (str5 != null) {
             bVar = new aa.u0(str5);
         }
-        return n1.y(new bz0.t(in.r.h(this.r.d(new o7(str, u0Var, i7Var2, u0Var2, u0Var3, u0Var4, bVar, new aa.u0(Boolean.valueOf(!this.u.a()))))), 14), this.t);
+        return n1.y(new bz0.t(in.rShadow.h(this.r.d(new o7(str, u0Var, i7Var2, u0Var2, u0Var3, u0Var4, bVar, new aa.u0(Boolean.valueOf(!this.u.a()))))), 14), this.t);
     }
     public static final Object b = null;
     public static final Object c = null;

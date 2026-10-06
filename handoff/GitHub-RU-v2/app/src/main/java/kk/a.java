@@ -492,7 +492,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
         ma.b bVar;
         int i;
         g91.f c;
-        x71.h hVar;
+        x71.hShadow hVar;
         if (cVar instanceof ma.b) {
             bVar = (ma.b) cVar;
             int i2 = bVar.y;
@@ -503,7 +503,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
                 i = bVar.y;
                 if (i != 0) {
                     y.j(obj);
-                    x71.h a = t.e.a(Integer.MAX_VALUE, 6, (x71.a) null);
+                    x71.hShadow a = t.e.a(Integer.MAX_VALUE, 6, (x71.a) null);
                     v71.r b = b0.b();
                     l1 l1Var = new l1(11);
                     l1Var.I(str);
@@ -597,7 +597,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
             if (pVar != null) {
                 k71.u uVar = new k71.u();
                 uVar.r = 1;
-                List list = (List) pVar.k.k(Integer.valueOf(i));
+                List list = (List) pVar.k.kShadow(Integer.valueOf(i));
                 int size = list.size();
                 for (int i2 = 0; i2 < size; i2++) {
                     w61.k kVar = (w61.k) list.get(i2);

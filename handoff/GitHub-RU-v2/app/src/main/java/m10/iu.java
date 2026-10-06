@@ -5,7 +5,7 @@ public abstract class iu {
     public static final hu Companion = new hu();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("ProjectV2GroupParentIssueValue", rVar, rVar);
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e5 implements aaShadow.a {
     public static final e5 a = new e5();
-    public static final List b = sy.d0.o("success", "message");
+    public static final List b = sy.d0Shadow.o("success", "message");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -41,7 +41,7 @@ public final class e5 implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(w7Var, "value");
         fVar.z0("success");
-        jo.f4.C(w7Var.a, aa.c.f, fVar, wVar, "message");
+        jo.f4Shadow.C(w7Var.a, aa.c.f, fVar, wVar, "message");
         aa.c.a.b(fVar, wVar, w7Var.b);
     }
 }

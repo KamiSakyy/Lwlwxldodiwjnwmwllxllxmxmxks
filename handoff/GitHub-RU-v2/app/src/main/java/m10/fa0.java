@@ -7,8 +7,8 @@ public abstract class fa0 {
     public static final ea0 Companion = new ea0();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("SubIssueAddedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("SubIssueAddedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

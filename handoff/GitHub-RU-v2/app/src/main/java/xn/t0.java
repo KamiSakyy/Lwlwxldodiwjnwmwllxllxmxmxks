@@ -11,10 +11,10 @@ public final class t0 implements y {
     public String c;
     public ZonedDateTime d;
     public List e;
-    public a0 f;
+    public a0Shadow f;
     public List g;
 
-    public t0(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0 a0Var, List list2) {
+    public t0(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0Shadow a0Var, List list2) {
         k71.k.g(str, "id");
         k71.k.g(str2, "threadId");
         k71.k.g(str3, "content");
@@ -69,9 +69,9 @@ public final class t0 implements y {
         String str2 = (i & 4) != 0 ? "" : str;
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
-        a0 a0Var = new a0();
+        a0Shadow a0Var = new a0Shadow();
         int i2 = i & 64;
-        List list2 = x61.r.r;
+        List list2 = x61.rShadow.r;
     }
     public static final Object d = null;
 }

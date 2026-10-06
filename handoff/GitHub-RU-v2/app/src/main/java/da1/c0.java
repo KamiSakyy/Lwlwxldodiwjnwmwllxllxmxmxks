@@ -34,7 +34,7 @@ public final class c0 {
 
     public c0(l7.x1 x1Var) {
         Context context = (Context) x1Var.r;
-        int d = v41.g.d(context, "com.google.firebase.crashlytics.unity_version", "string");
+        int d = v41.gShadow.d(context, "com.google.firebase.crashlytics.unity_version", "string");
         if (d != 0) {
             this.b = "Unity";
             this.c = context.getResources().getString(d);

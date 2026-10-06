@@ -2,12 +2,12 @@ package e50;
 
 import hc0.ev;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z implements aa.a {
     public static final z a = new z();
-    public static final List b = sy.d0.o("__typename", "id", "repository", "bodyHTML", "body", "viewerSubscription", "locked", "viewerCanDelete", "viewerCanUpdate", "viewerCanUpvote");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "repository", "bodyHTML", "body", "viewerSubscription", "locked", "viewerCanDelete", "viewerCanUpdate", "viewerCanUpvote");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0044, code lost:
     
@@ -46,7 +46,7 @@ public final class z implements aa.a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0067, code lost:
     
-        return new e50.x(r4, r5, r6, r7, r8, r9, r10, r11, r12, r19.booleanValue(), r14, r15, r16);
+        return new e50.xShadow(r4, r5, r6, r7, r8, r9, r10, r11, r12, r19.booleanValue(), r14, r15, r16);
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0068, code lost:
     
@@ -210,7 +210,7 @@ public final class z implements aa.a {
         }
     }
 
-    public static void d(ea.f fVar, aa.w wVar, x xVar) {
+    public static void d(ea.f fVar, aa.w wVar, xShadow xVar) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");
@@ -246,6 +246,6 @@ public final class z implements aa.a {
     }
 
     public final /* bridge */ /* synthetic */ void b(ea.f fVar, aa.w wVar, Object obj) {
-        d(fVar, wVar, (x) obj);
+        d(fVar, wVar, (xShadow) obj);
     }
 }

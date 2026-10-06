@@ -3,17 +3,17 @@ package n00;
 import aa.w;
 import java.util.List;
 import m00.e0;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r implements aa.a {
     public static final r a = new r();
-    public static final List b = d0.n("repository");
+    public static final List b = d0Shadow.n("repository");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        m00.d0 d0Var = null;
+        m00.d0Shadow d0Var = null;
         while (eVar.r0(b) == 0) {
             d0Var = (m00.d0) aa.c.b(aa.c.c(q.a, false)).a(eVar, wVar);
         }

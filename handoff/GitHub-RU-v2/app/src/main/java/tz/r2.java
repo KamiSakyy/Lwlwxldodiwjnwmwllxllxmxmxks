@@ -6,13 +6,13 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r2 implements aa.a {
     public static final r2 a = new r2();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         e1 e1Var;
         i1 i1Var;
         n1 n1Var;
-        f1 f1Var;
+        f1Shadow f1Var;
         m1 m1Var;
         g1 g1Var;
         h1 h1Var;
@@ -129,7 +129,7 @@ public final class r2 implements aa.a {
         if (n1Var != null) {
             v3.d(fVar, wVar, n1Var);
         }
-        f1 f1Var = j0Var.e;
+        f1Shadow f1Var = j0Var.e;
         if (f1Var != null) {
             n3.d(fVar, wVar, f1Var);
         }

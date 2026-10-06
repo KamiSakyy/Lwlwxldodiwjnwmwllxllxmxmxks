@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e4 implements aaShadow.a {
     public static final e4 a = new e4();
-    public static final List b = sy.d0.n("createCommitOnBranch");
+    public static final List b = sy.d0Shadow.n("createCommitOnBranch");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

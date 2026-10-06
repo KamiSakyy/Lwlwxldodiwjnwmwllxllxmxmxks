@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class s3 implements aaShadow.a {
-    public static final List a = sy.d0.n("commits");
+    public static final List a = sy.d0Shadow.n("commits");
 
     public static u10.t5 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

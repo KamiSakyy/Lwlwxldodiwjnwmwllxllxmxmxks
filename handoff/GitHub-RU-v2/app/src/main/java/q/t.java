@@ -20,7 +20,7 @@ public final class t {
     }
 
     public final InputFilter[] a(InputFilter[] inputFilterArr) {
-        return ((sy.p) this.f30721b.s).l(inputFilterArr);
+        return ((sy.pShadow) this.f30721b.s).l(inputFilterArr);
     }
 
     public final void b(AttributeSet attributeSet, int i) {
@@ -36,10 +36,10 @@ public final class t {
     }
 
     public final void c(boolean z10) {
-        ((sy.p) this.f30721b.s).r(z10);
+        ((sy.pShadow) this.f30721b.s).r(z10);
     }
 
     public final void d(boolean z10) {
-        ((sy.p) this.f30721b.s).s(z10);
+        ((sy.pShadow) this.f30721b.s).s(z10);
     }
 }

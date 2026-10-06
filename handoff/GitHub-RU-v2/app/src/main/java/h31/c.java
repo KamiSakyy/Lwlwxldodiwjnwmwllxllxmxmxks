@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import jo.f4;
+import jo.f4Shadow;
 import l51.h;
 import o31.o;
 import q.pShadow;
@@ -445,7 +445,7 @@ public final class c extends p {
             if (linkedHashSet != null) {
                 Iterator it = linkedHashSet.iterator();
                 if (it.hasNext()) {
-                    throw f4.g(it);
+                    throw f4Shadow.g(it);
                 }
             }
             if (this.I != 2 && (onCheckedChangeListener = this.M) != null) {
@@ -477,7 +477,7 @@ public final class c extends p {
         refreshDrawableState();
         Iterator it = this.v.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
     }
 

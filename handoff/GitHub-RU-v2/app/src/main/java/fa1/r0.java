@@ -42,7 +42,7 @@ public final class r0 implements InvocationHandler {
             objArr = this.a;
         }
         Object[] objArr2 = objArr;
-        b bVar = k0.b;
+        bShadow bVar = k0.b;
         if (bVar.f(method)) {
             return bVar.e(method, cls, obj, objArr2);
         }

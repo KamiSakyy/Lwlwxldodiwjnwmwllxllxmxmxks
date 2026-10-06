@@ -48,11 +48,11 @@ public abstract class a0 {
 
     public static final mn.e b(vo.g gVar, String str) {
         s1 s1Var;
-        ArrayList arrayList = x61.r.r;
+        ArrayList arrayList = x61.rShadow.r;
         if (gVar == null) {
             return new mn.e(0, arrayList, new x01.i((String) null, false, true));
         }
-        vo.o oVar = gVar.b;
+        vo.oShadow oVar = gVar.b;
         x01.i iVar = new x01.i(oVar.c, oVar.a, true ^ oVar.b);
         List<vo.k> list = gVar.c;
         if (list != null) {
@@ -69,11 +69,11 @@ public abstract class a0 {
 
     public static final mn.e c(wc0.g gVar, String str) {
         wc0.s1 s1Var;
-        ArrayList arrayList = x61.r.r;
+        ArrayList arrayList = x61.rShadow.r;
         if (gVar == null) {
             return new mn.e(0, arrayList, new x01.i((String) null, false, true));
         }
-        wc0.o oVar = gVar.b;
+        wc0.oShadow oVar = gVar.b;
         x01.i iVar = new x01.i(oVar.c, oVar.a, true ^ oVar.b);
         List<wc0.k> list = gVar.c;
         if (list != null) {

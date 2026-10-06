@@ -5,7 +5,7 @@ import aa.h0;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import java.time.ZonedDateTime;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -41,7 +41,7 @@ public final class a implements h0 {
 
     public final String toString() {
         StringBuilder o = s0.o("AutomaticBaseChangedEventFields(__typename=", this.a, ", id=", this.b, ", createdAt=");
-        f4.A(", oldBase=", this.d, ", newBase=", o, this.c);
+        f4Shadow.A(", oldBase=", this.d, ", newBase=", o, this.c);
         return h1.p(o, this.e, ")");
     }
 }

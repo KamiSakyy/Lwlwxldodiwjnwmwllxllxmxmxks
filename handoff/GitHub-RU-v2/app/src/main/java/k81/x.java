@@ -3,7 +3,7 @@ package k81;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class x {
+public final class xShadow {
     public static final long[] e = new long[0];
     public SerialDescriptor a;
     public f0.o0 b;

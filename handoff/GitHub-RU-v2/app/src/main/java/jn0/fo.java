@@ -4,9 +4,9 @@ package jn0;
 public final class fo {
     public String a;
     public String b;
-    public ar0.a0 c;
+    public ar0.a0Shadow c;
 
-    public fo(String str, String str2, ar0.a0 a0Var) {
+    public fo(String str, String str2, ar0.a0Shadow a0Var) {
         this.a = str;
         this.b = str2;
         this.c = a0Var;

@@ -10,7 +10,7 @@ import d2.p0;
 import f1.e8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b {
+public final class bShadow {
     public static final void a(w1.r rVar, j71.a aVar, d2 d2Var, f1.o0 o0Var, androidx.compose.runtime.s sVar, int i, int i2) {
         int i3;
         w1.r rVar2;
@@ -66,7 +66,7 @@ public final class b {
             }
             w1.r rVar3 = rVar;
             sVar.r();
-            e(rVar3, aVar, a, null, null, false, d2Var4, 0.0f, c.b, sVar, (i4 & 14) | 100663296 | (i4 & 112) | ((i4 << 12) & 3670016), 184);
+            e(rVar3, aVar, a, null, null, false, d2Var4, 0.0f, cShadow.b, sVar, (i4 & 14) | 100663296 | (i4 & 112) | ((i4 << 12) & 3670016), 184);
             rVar2 = rVar3;
             o0Var2 = a;
             d2Var2 = d2Var4;
@@ -118,7 +118,7 @@ public final class b {
             sVar.r();
             float f = 18;
             float f2 = ih.a.n;
-            e(rVar3, aVar, a, null, null, false, new f2(f, f2, f, f2), 0.0f, c.a, sVar, (i4 & 14) | 102236160 | (i4 & 112), 184);
+            e(rVar3, aVar, a, null, null, false, new f2(f, f2, f, f2), 0.0f, cShadow.a, sVar, (i4 & 14) | 102236160 | (i4 & 112), 184);
             rVar2 = rVar3;
             o0Var2 = a;
         } else {

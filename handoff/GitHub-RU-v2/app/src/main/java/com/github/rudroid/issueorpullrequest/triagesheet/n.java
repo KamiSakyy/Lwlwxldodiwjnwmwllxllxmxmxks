@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import l01.t0;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class n {
@@ -25,7 +25,7 @@ public final class n {
         List list2;
         b.i iVar = new b.i(2131954875, z10, p.f16517u);
         if (list.isEmpty()) {
-            list2 = d0.n(new b.h(2131954854));
+            list2 = d0Shadow.n(new b.h(2131954854));
         } else {
             ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
             Iterator it = list.iterator();
@@ -36,10 +36,10 @@ public final class n {
                 Map map = sVar.r.v;
                 boolean z11 = t0Var.x;
                 this.f16513a.getClass();
-                arrayList.add(new b.f(sVar, j0.a(r42, map, x61.r.r, null, z11, null)));
+                arrayList.add(new b.f(sVar, j0.a(r42, map, x61.rShadow.r, null, z11, null)));
             }
             list2 = arrayList;
         }
-        return x61.m.m0(x61.m.l0(d0.n(iVar), list2), new b.l(2131954875));
+        return x61.m.m0(x61.m.l0(d0Shadow.n(iVar), list2), new b.l(2131954875));
     }
 }

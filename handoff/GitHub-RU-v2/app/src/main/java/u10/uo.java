@@ -30,6 +30,6 @@ public final class uo {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Comments(totalCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Comments(totalCount=", ", nodes=", ")", this.b);
     }
 }

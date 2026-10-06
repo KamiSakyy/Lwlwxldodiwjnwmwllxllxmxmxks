@@ -4,7 +4,7 @@ import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import java.time.ZonedDateTime;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import yz0.x2;
 
@@ -37,7 +37,7 @@ public final class e {
     }
 
     public final int hashCode() {
-        return this.e.hashCode() + m0.a(this.d, f4.b(this.c, h1.i(this.a.hashCode() * 31, this.b, 31), 31), 31);
+        return this.e.hashCode() + m0.a(this.d, f4Shadow.b(this.c, h1.i(this.a.hashCode() * 31, this.b, 31), 31), 31);
     }
 
     public final String toString() {

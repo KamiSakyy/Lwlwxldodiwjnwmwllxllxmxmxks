@@ -5,11 +5,11 @@ import com.github.rudroid.activities.util.o;
 import com.github.rudroid.utilities.w0;
 import k71.k;
 import oa.m;
-import rh.c;
+import rh.cShadow;
 import rh.d;
 import rh.e;
 import t71.p;
-import x61.r;
+import x61.rShadow;
 import y71.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -44,32 +44,32 @@ public final class c implements b {
         new o(str, str2, booleanValue, bool2 != null ? bool2.booleanValue() : false);
         m mVar = this.s;
         k.g(mVar, "userManager");
-        fl.c cVar = bVar.a;
-        if (cVar == fl.c.x) {
+        fl.cShadow cVar = bVar.a;
+        if (cVar == fl.cShadow.x) {
             aVar = new e.b(bVar);
-        } else if (cVar == fl.c.E) {
+        } else if (cVar == fl.cShadow.E) {
             aVar = new e.a(bVar);
-        } else if (cVar == fl.c.y) {
+        } else if (cVar == fl.cShadow.y) {
             aVar = new d.a(bVar);
-        } else if (cVar != fl.c.B || ((p.T(str) || booleanValue) && bVar.h == null)) {
-            if (cVar == fl.c.A && !p.T(str) && !booleanValue) {
-                if ((!p.T(str) ? mVar.j(str) : r.r).size() > 1) {
+        } else if (cVar != fl.cShadow.B || ((p.T(str) || booleanValue) && bVar.h == null)) {
+            if (cVar == fl.cShadow.A && !p.T(str) && !booleanValue) {
+                if ((!p.T(str) ? mVar.j(str) : rShadow.r).size() > 1) {
                     aVar = new d.c(bVar);
                 }
             }
-            if (cVar == fl.c.r) {
-                bVar3 = new c.C0030c(bVar, z);
+            if (cVar == fl.cShadow.r) {
+                bVar3 = new cShadow.C0030c(bVar, z);
             } else {
-                if (cVar == fl.c.u) {
-                    bVar2 = new c.d(bVar, bVar.a(), z);
-                } else if (cVar == fl.c.L) {
-                    bVar3 = new c.b(bVar, 2131952514, bVar.a(), z);
+                if (cVar == fl.cShadow.u) {
+                    bVar2 = new cShadow.d(bVar, bVar.a(), z);
+                } else if (cVar == fl.cShadow.L) {
+                    bVar3 = new cShadow.b(bVar, 2131952514, bVar.a(), z);
                 } else {
                     String str3 = bVar.b;
                     if (str3 != null) {
-                        aVar = new c.a(bVar, str3, bVar.a(), z);
+                        aVar = new cShadow.a(bVar, str3, bVar.a(), z);
                     } else {
-                        bVar2 = new c.b(bVar, 2131952512, bVar.a(), z);
+                        bVar2 = new cShadow.b(bVar, 2131952512, bVar.a(), z);
                     }
                 }
                 aVar = bVar2;

@@ -7,8 +7,8 @@ public abstract class gi {
     public static final fi Companion = new fi();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("IssueCommentPinnedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("IssueCommentPinnedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

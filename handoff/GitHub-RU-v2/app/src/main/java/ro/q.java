@@ -10,7 +10,7 @@ import m10.t3;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.a {
     public static final q a = new q();
-    public static final List b = sy.d0.o("id", "startedAt", "status", "conclusion", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "startedAt", "status", "conclusion", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

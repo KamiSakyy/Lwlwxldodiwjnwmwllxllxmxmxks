@@ -21,7 +21,7 @@ import qn0.o;
 import vn0.m1;
 import vn0.s1;
 import x01.i;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
@@ -54,7 +54,7 @@ public abstract class a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r4v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r4v1 */
     /* JADX WARN: Type inference failed for: r4v7, types: [java.util.ArrayList] */
     public static final d d(h hVar, String str) {
@@ -69,7 +69,7 @@ public abstract class a {
         mn.a b = b(hVar.d, str);
         m mVar = hVar.c;
         if (mVar == null || (list = mVar.c) == null) {
-            r4 = r.r;
+            r4 = rShadow.r;
         } else {
             r4 = new ArrayList();
             for (qn0.f fVar : list) {

@@ -17,7 +17,7 @@ public final class s extends SpannableStringBuilder {
     public s(Class cls, CharSequence charSequence) {
         super(charSequence);
         this.f32245s = new ArrayList();
-        sy.p.i(cls, "watcherClass cannot be null");
+        sy.pShadow.i(cls, "watcherClass cannot be null");
         this.f32244r = cls;
     }
 
@@ -243,7 +243,7 @@ public final class s extends SpannableStringBuilder {
     public s(Class cls, s sVar, int i, int i10) {
         super(sVar, i, i10);
         this.f32245s = new ArrayList();
-        sy.p.i(cls, "watcherClass cannot be null");
+        sy.pShadow.i(cls, "watcherClass cannot be null");
         this.f32244r = cls;
     }
 

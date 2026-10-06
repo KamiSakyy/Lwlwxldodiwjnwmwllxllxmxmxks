@@ -62,7 +62,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar);
+                    y71.n1Shadow.s(jVar);
                     Object b = A.b(new rm0.u7(2, jVar, dVar), this);
                     if (b != aVar) {
                         b = a0Var;
@@ -88,11 +88,11 @@ public final class a extends c71.j implements j71.f {
                     y71.j jVar2 = this.x;
                     List list = (List) this.y;
                     ProjectsMetaInfo projectsMetaInfo = this.z;
-                    y71.i f = projectsMetaInfo != null ? sy.o.f(list, this.A.t, projectsMetaInfo.r, projectsMetaInfo.t) : new f8(21, new w61.k(list, x61.r.r));
+                    y71.i f = projectsMetaInfo != null ? sy.oShadow.f(list, this.A.t, projectsMetaInfo.r, projectsMetaInfo.t) : new f8(21, new w61.k(list, x61.rShadow.r));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, f, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, f, this) == aVar2) {
                         return aVar2;
                     }
                 } else {
@@ -114,7 +114,7 @@ public final class a extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar3);
+                    y71.n1Shadow.s(jVar3);
                     Object b2 = A2.b(new rm0.u7(3, jVar3, a60Var), this);
                     if (b2 != aVar3) {
                         b2 = a0Var2;
@@ -140,11 +140,11 @@ public final class a extends c71.j implements j71.f {
                     y71.j jVar4 = this.x;
                     List list2 = (List) this.y;
                     ProjectsMetaInfo projectsMetaInfo2 = this.z;
-                    y71.i f2 = projectsMetaInfo2 != null ? sy.o.f(list2, this.A.t, projectsMetaInfo2.r, projectsMetaInfo2.t) : new f8(21, new w61.k(list2, x61.r.r));
+                    y71.i f2 = projectsMetaInfo2 != null ? sy.oShadow.f(list2, this.A.t, projectsMetaInfo2.r, projectsMetaInfo2.t) : new f8(21, new w61.k(list2, x61.rShadow.r));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar4, f2, this) == aVar4) {
+                    if (y71.n1Shadow.q(jVar4, f2, this) == aVar4) {
                         return aVar4;
                     }
                 } else {

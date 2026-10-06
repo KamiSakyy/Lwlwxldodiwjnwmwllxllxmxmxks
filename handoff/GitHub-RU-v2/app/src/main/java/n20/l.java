@@ -13,7 +13,7 @@ import hc0.fb;
 import hc0.o00;
 import hc0.pm;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -24,9 +24,9 @@ public abstract class l {
         fb.Companion.getClass();
         x xVar = fb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("WorkflowConnection");
+        List n = d0Shadow.n("WorkflowConnection");
         List list = h20.g.a;
         List r = x61.l.r(new s[]{mVar, no.a.c(list, "selections", "WorkflowConnection", n, list)});
         bb.Companion.getClass();
@@ -38,6 +38,6 @@ public abstract class l {
         q0 q0Var = ap.k0;
         k71.k.g(q0Var, "type");
         pm.Companion.getClass();
-        a = d0.n(new m("repository", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new u0(new t("repositoryName"))), new aa.k(pm.j, new u0(new t("repositoryOwner")))}), r2));
+        a = d0Shadow.n(new m("repository", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new u0(new t("repositoryName"))), new aa.k(pm.j, new u0(new t("repositoryOwner")))}), r2));
     }
 }

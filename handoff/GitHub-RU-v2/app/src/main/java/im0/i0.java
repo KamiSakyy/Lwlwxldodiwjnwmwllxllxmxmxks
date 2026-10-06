@@ -2,7 +2,7 @@ package im0;
 
 import gn0.wh;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i0 implements aa.n0 {
@@ -20,7 +20,7 @@ public final class i0 implements aa.n0 {
         List list = km0.f.a;
         List list2 = km0.f.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -59,6 +59,6 @@ public final class i0 implements aa.n0 {
     }
 
     public final String toString() {
-        return f4.j(this.r, "UpdateDeploymentReviewRequestedPushNotificationSettingsMutation(enabled=", ")");
+        return f4Shadow.j(this.r, "UpdateDeploymentReviewRequestedPushNotificationSettingsMutation(enabled=", ")");
     }
 }

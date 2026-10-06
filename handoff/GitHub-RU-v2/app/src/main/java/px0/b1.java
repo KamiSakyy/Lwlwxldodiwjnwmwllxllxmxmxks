@@ -2,19 +2,19 @@ package px0;
 
 import java.util.List;
 import ox0.d1;
-import ox0.f1;
+import ox0.f1Shadow;
 import ox0.g1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b1 implements aa.a {
     public static final b1 a = new b1();
-    public static final List b = sy.d0.o(new String[]{"inbox", "notificationFilters", "id", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"inbox", "notificationFilters", "id", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         d1 d1Var = null;
-        f1 f1Var = null;
+        f1Shadow f1Var = null;
         String str = null;
         String str2 = null;
         while (true) {
@@ -22,7 +22,7 @@ public final class b1 implements aa.a {
             if (r0 == 0) {
                 d1Var = (d1) aa.c.c(y0.a, false).a(eVar, wVar);
             } else if (r0 == 1) {
-                f1Var = (f1) aa.c.c(a1.a, false).a(eVar, wVar);
+                f1Var = (f1Shadow) aa.c.c(a1.a, false).a(eVar, wVar);
             } else if (r0 == 2) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {

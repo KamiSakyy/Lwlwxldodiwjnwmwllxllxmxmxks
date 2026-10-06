@@ -47,7 +47,7 @@ public final class h6 {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("CreateIssueInput(assigneeIds=", this.a, ", body=", this.b, ", clientMutationId=");
+        StringBuilder u = jo.f4Shadow.u("CreateIssueInput(assigneeIds=", this.a, ", body=", this.b, ", clientMutationId=");
         f1.e.w(u, this.c, ", issueTemplate=", this.d, ", issueTypeId=");
         f1.e.w(u, this.e, ", labelIds=", this.f, ", milestoneId=");
         f1.e.w(u, this.g, ", parentIssueId=", this.h, ", projectIds=");

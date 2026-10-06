@@ -12,7 +12,7 @@ import com.google.android.material.switchmaterial.SwitchMaterial;
 import e7.v;
 import k71.k;
 import k71.m;
-import k71.x;
+import k71.xShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class BadgeSwitchPreference extends SwitchPreference {
@@ -58,7 +58,7 @@ public final class BadgeSwitchPreference extends SwitchPreference {
 
     static {
         r71.e mVar = new m(BadgeSwitchPreference.class, "showBadge", "getShowBadge()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         p0 = new r71.e[]{mVar};
     }
 

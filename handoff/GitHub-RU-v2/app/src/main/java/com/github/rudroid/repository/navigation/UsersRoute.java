@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import g81.e;
 import gn.n;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import q01.p;
 import sy.w;
@@ -41,7 +41,7 @@ public final class UsersRoute {
 
     public /* synthetic */ UsersRoute(int i, n nVar, com.github.domain.users.a aVar, String str) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, UsersRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, UsersRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f20042a = nVar;

@@ -29,7 +29,7 @@ public final class hx {
         x = hxVarArr;
         y = v8.l0.t(hxVarArr);
         Companion = new gx();
-        sy.d0.o(new String[]{"DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED"});
+        sy.d0Shadow.o(new String[]{"DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED"});
     }
 
     public hx(String str, int i, String str2) {

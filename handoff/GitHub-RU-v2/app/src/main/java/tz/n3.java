@@ -26,7 +26,7 @@ public abstract class n3 implements aa.a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0034, code lost:
     
-        return new tz.f1(r2, r3, r4, r5, r6, r7, r8);
+        return new tz.f1Shadow(r2, r3, r4, r5, r6, r7, r8);
      */
     /* JADX WARN: Code restructure failed: missing block: B:17:0x0035, code lost:
     
@@ -140,7 +140,7 @@ public abstract class n3 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {
@@ -161,7 +161,7 @@ public abstract class n3 implements aa.a {
         }
     }
 
-    public static void d(ea.f fVar, aa.w wVar, f1 f1Var) {
+    public static void d(ea.f fVar, aa.w wVar, f1Shadow f1Var) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(f1Var, "value");

@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ek implements aaShadow.a {
     public static final ek a = new ek();
-    public static final List b = sy.d0.o(new String[]{"id", "name", "tagName", "author", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "url", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "name", "tagName", "author", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "url", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0034, code lost:
     
@@ -214,13 +214,13 @@ public final class ek implements aaShadow.a {
         aa.c.b(aa.c.c(ak.a, true)).b(fVar, wVar, ctVar.d);
         fVar.z0("isPrerelease");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(ctVar.e, bVar2, fVar, wVar, "isDraft");
-        jo.f4.C(ctVar.f, bVar2, fVar, wVar, "isLatest");
-        jo.f4.C(ctVar.g, bVar2, fVar, wVar, "createdAt");
+        jo.f4Shadow.C(ctVar.e, bVar2, fVar, wVar, "isDraft");
+        jo.f4Shadow.C(ctVar.f, bVar2, fVar, wVar, "isLatest");
+        jo.f4Shadow.C(ctVar.g, bVar2, fVar, wVar, "createdAt");
         pz0.o7.Companion.getClass();
         aa.x xVar = pz0.o7.a;
         wVar.e(xVar).b(fVar, wVar, ctVar.h);
-        no.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, ctVar.i);
+        noShadow.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, ctVar.i);
         fVar.z0("url");
         bVar.b(fVar, wVar, ctVar.j);
         fVar.z0("__typename");

@@ -43,7 +43,7 @@ public final class a extends com.github.rudroid.comment.b {
         this.f11150v = t0Var;
         this.f11151w = p0Var;
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
-        y71.y1 c10 = y71.n1.c(g1.a.a());
+        y71.y1 c10 = y71.n1Shadow.c(g1.a.a());
         this.f11152x = c10;
         this.f11153y = new y71.i1(c10);
     }
@@ -52,10 +52,10 @@ public final class a extends com.github.rudroid.comment.b {
     public final void P(String str, yz0.q0 q0Var) {
         k71.k.g(q0Var, "commentType");
         k71.k.g(str, "body");
-        if (q0Var instanceof yz0.x) {
-            String str2 = ((yz0.x) q0Var).s;
+        if (q0Var instanceof yz0.xShadow) {
+            String str2 = ((yz0.xShadow) q0Var).s;
             k71.k.g(str2, "discussionId");
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new e(this, str2, str, q0Var, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new e(this, str2, str, q0Var, null), 3);
             return;
         }
         if (q0Var instanceof yz0.y) {
@@ -64,7 +64,7 @@ public final class a extends com.github.rudroid.comment.b {
             String str4 = yVar.t;
             k71.k.g(str3, "discussionId");
             k71.k.g(str4, "parentCommentId");
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new h(this, str3, str, str4, q0Var, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new h(this, str3, str, str4, q0Var, null), 3);
             return;
         }
         if (q0Var instanceof yz0.u) {
@@ -74,7 +74,7 @@ public final class a extends com.github.rudroid.comment.b {
         if (q0Var instanceof yz0.t) {
             String str5 = ((yz0.t) q0Var).s;
             k71.k.g(str5, "discussionId");
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new n(this, str5, str, q0Var, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new n(this, str5, str, q0Var, null), 3);
         } else if (q0Var instanceof yz0.w) {
             Q(((yz0.w) q0Var).u, str, q0Var);
         } else if (q0Var instanceof yz0.v) {
@@ -88,7 +88,7 @@ public final class a extends com.github.rudroid.comment.b {
         k71.k.g(str, "commentId");
         k71.k.g(str2, "commentBody");
         k71.k.g(q0Var, "commentType");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new k(this, str, str2, q0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new k(this, str, str2, q0Var, null), 3);
     }
 
     @Override // com.github.rudroid.comment.b

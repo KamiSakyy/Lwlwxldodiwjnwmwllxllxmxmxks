@@ -26,7 +26,7 @@ public final class f50 {
         w = f50VarArr;
         x = v8.l0.t(f50VarArr);
         Companion = new e50();
-        sy.d0.o(new String[]{"DAILY", "MONTHLY", "WEEKLY"});
+        sy.d0Shadow.o(new String[]{"DAILY", "MONTHLY", "WEEKLY"});
     }
 
     public f50(String str, int i, String str2) {

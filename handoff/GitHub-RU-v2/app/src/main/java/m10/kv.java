@@ -5,7 +5,7 @@ public abstract class kv {
     public static final jv Companion = new jv();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("ProjectV2ItemFieldRepositoryValue", rVar, rVar);
     }
 }

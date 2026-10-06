@@ -31,7 +31,7 @@ public final class mw {
         y = mwVarArr;
         v8.l0.t(mwVarArr);
         Companion = new lw();
-        sy.d0.o("CREATED_AT", "NUMBER", "RECENTLY_VIEWED", "RELEVANCE", "TITLE", "UPDATED_AT");
+        sy.d0Shadow.o("CREATED_AT", "NUMBER", "RECENTLY_VIEWED", "RELEVANCE", "TITLE", "UPDATED_AT");
     }
 
     public mw(String str, int i, String str2) {

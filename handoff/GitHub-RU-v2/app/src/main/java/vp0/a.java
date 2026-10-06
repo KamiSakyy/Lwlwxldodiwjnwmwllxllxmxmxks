@@ -21,10 +21,10 @@ import pz0.u8;
 import pz0.vd;
 import pz0.xd;
 import pz0.y2;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
@@ -34,7 +34,7 @@ public abstract class a {
         h50.Companion.getClass();
         x xVar = h50.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("environmentUrl", xVar, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("logUrl", xVar, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
@@ -49,7 +49,7 @@ public abstract class a {
         List r2 = l.r(new m[]{new m("latestStatus", q0Var, (String) null, rVar, rVar, r), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
         e3.Companion.getClass();
         a0 a0Var = e3.s;
-        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("CheckStep", d0.n("CheckStep"), d0.n(new m("status", l0.b(a0Var), (String) null, rVar, rVar, rVar)))});
+        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new n("CheckStep", d0Shadow.n("CheckStep"), d0Shadow.n(new m("status", l0.b(a0Var), (String) null, rVar, rVar, rVar)))});
         vd.Companion.getClass();
         m mVar4 = new m("totalCount", l0.b(vd.a), (String) null, rVar, rVar, rVar);
         g3.Companion.getClass();

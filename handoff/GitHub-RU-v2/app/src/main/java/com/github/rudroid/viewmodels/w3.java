@@ -9,7 +9,7 @@ public abstract class w3 extends androidx.lifecycle.k1 implements x3 {
 
     public w3(androidx.lifecycle.a1 a1Var) {
         k71.k.g(a1Var, "savedStateHandle");
-        SearchResultsRoute searchResultsRoute = (SearchResultsRoute) sy.y.m(a1Var, k71.x.a(SearchResultsRoute.class), x61.s.r);
+        SearchResultsRoute searchResultsRoute = (SearchResultsRoute) sy.y.m(a1Var, k71.xShadow.a(SearchResultsRoute.class), x61.s.r);
         this.s = searchResultsRoute.s;
         this.t = searchResultsRoute.t;
     }

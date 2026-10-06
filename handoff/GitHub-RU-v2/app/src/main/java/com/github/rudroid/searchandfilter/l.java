@@ -27,10 +27,10 @@ final class l<T> implements y71.j {
                 if (!(fVar instanceof com.github.domain.database.serialization.b)) {
                     throw new NoWhenBranchMatchedException();
                 }
-                v71.b0.z(aVar.b, (a71.h) null, (v71.a0) null, new z1(aVar, d, fVar, null, 29), 3);
+                v71.b0.z(aVar.b, (a71.h) null, (v71.a0Shadow) null, new z1(aVar, d, fVar, null, 29), 3);
             }
         } else {
-            yl.d dVar = cVar2.b;
+            yl.dShadow dVar = cVar2.b;
             oa.j d2 = cVar2.a.d();
             fk.f fVar2 = cVar2.e;
             dVar.getClass();
@@ -39,7 +39,7 @@ final class l<T> implements y71.j {
                 if (!(fVar2 instanceof com.github.domain.database.serialization.b)) {
                     throw new NoWhenBranchMatchedException();
                 }
-                v71.b0.z(dVar.c, (a71.h) null, (v71.a0) null, new m7.x(dVar, d2, fVar2, list, (a71.c) null, 25), 3);
+                v71.b0.z(dVar.c, (a71.h) null, (v71.a0Shadow) null, new m7.x(dVar, d2, fVar2, list, (a71.c) null, 25), 3);
             }
         }
         qVar.X(list);

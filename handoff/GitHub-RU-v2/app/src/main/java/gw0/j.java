@@ -21,7 +21,7 @@ public abstract class j {
         pd.Companion.getClass();
         x xVar = pd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         List r = l.r(new m[]{new m("getsParticipatingWeb", b, (String) null, rVar, rVar, rVar), new m("getsWatchingWeb", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         il.Companion.getClass();
         q0 q0Var = il.a;

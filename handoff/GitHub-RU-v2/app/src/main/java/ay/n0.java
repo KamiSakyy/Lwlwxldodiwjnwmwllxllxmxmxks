@@ -9,10 +9,10 @@ import zx.i1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0 implements aa.a {
     public static final n0 a = new n0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
-        zx.f1 f1Var;
+        zx.f1Shadow f1Var;
         h1 h1Var;
         i1 i1Var;
         g1 g1Var;
@@ -66,7 +66,7 @@ public final class n0 implements aa.a {
         k71.k.g(e1Var, "value");
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, e1Var.a);
-        zx.f1 f1Var = e1Var.b;
+        zx.f1Shadow f1Var = e1Var.b;
         if (f1Var != null) {
             o0.d(fVar, wVar, f1Var);
         }

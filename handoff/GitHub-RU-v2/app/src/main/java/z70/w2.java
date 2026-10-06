@@ -10,7 +10,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w2 implements aa.a {
     public static final w2 a = new w2();
-    public static final List b = sy.d0.o("__typename", "id", "isDraft", "title", "titleHTMLString", "number", "createdAt", "headRepository", "headRepositoryOwner", "isReadByViewer", "totalCommentsCount", "pullRequestState", "repository", "url", "viewerSubscription", "reviewDecision", "assignees", "commits", "closingIssuesReferences");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "isDraft", "title", "titleHTMLString", "number", "createdAt", "headRepository", "headRepositoryOwner", "isReadByViewer", "totalCommentsCount", "pullRequestState", "repository", "url", "viewerSubscription", "reviewDecision", "assignees", "commits", "closingIssuesReferences");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0051, code lost:
     
@@ -228,7 +228,7 @@ public final class w2 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                             str2 = str2;
                         }
                         str = str2;
@@ -320,7 +320,7 @@ public final class w2 implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, l2Var.b);
         fVar.z0("isDraft");
-        jo.f4.C(l2Var.c, aa.c.f, fVar, wVar, "title");
+        jo.f4Shadow.C(l2Var.c, aa.c.f, fVar, wVar, "title");
         bVar.b(fVar, wVar, l2Var.d);
         fVar.z0("titleHTMLString");
         bVar.b(fVar, wVar, l2Var.e);

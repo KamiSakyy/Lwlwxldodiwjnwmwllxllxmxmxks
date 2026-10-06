@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -39,7 +39,7 @@ public abstract class b<T> extends k1 implements f0, x3 {
 
     static {
         r71.e mVar = new k71.m(b.class, "queryValue", "getQueryValue()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         B = new r71.e[]{mVar};
         Companion = new a();
     }
@@ -60,17 +60,17 @@ public abstract class b<T> extends k1 implements f0, x3 {
                 }
             }
         } else {
-            arrayList = x61.r.r;
+            arrayList = x61.rShadow.r;
         }
         this.u = arrayList;
         this.v = new p0();
         this.w = new x01.i((String) null, false, true);
         this.x = new ArrayList();
         this.y = new j(this);
-        y1 c = n1.c("");
+        y1 c = n1Shadow.c("");
         this.z = c;
         this.t.d(arrayList);
-        n1.A(new y71.y(new y00.l(c, 10), new com.github.rudroid.searchandfilter.complexfilter.a(this, null), 6), d1.k(this));
+        n1Shadow.A(new y71.y(new y00.l(c, 10), new com.github.rudroid.searchandfilter.complexfilter.a(this, null), 6), d1.k(this));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0033  */
@@ -107,7 +107,7 @@ public abstract class b<T> extends k1 implements f0, x3 {
                     jVar = fVar.u;
                     sy.y.j(obj);
                 }
-                return n1.I((y71.i) obj, new e(null, bVar, jVar, cVar));
+                return n1Shadow.I((y71.i) obj, new e(null, bVar, jVar, cVar));
             }
         }
         fVar = new f(bVar, cVar2);
@@ -116,7 +116,7 @@ public abstract class b<T> extends k1 implements f0, x3 {
         i = fVar.y;
         if (i != 0) {
         }
-        return n1.I((y71.i) obj2, new e(null, bVar, jVar, cVar));
+        return n1Shadow.I((y71.i) obj2, new e(null, bVar, jVar, cVar));
     }
 
     @Override // com.github.rudroid.viewmodels.v3
@@ -133,13 +133,13 @@ public abstract class b<T> extends k1 implements f0, x3 {
 
     public final void S() {
         fl.f.Companion.getClass();
-        this.v.j(fl.e.b(x61.r.r));
+        this.v.j(fl.e.b(x61.rShadow.r));
         y yVar = new y(1, this);
         q1 q1Var = this.A;
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.A = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new d(this, yVar, null), 3);
+        this.A = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d(this, yVar, null), 3);
     }
 
     public abstract boolean T(Object obj, String str);
@@ -156,7 +156,7 @@ public abstract class b<T> extends k1 implements f0, x3 {
                 arrayList.add(obj);
             }
         }
-        return this.t.c(arrayList, x61.r.r);
+        return this.t.c(arrayList, x61.rShadow.r);
     }
 
     public final void V(String str) {

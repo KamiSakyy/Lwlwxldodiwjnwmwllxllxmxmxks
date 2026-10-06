@@ -41,7 +41,7 @@ public final class i1 {
     public static boolean b(String str) {
         List r0 = str != null ? x61.m.r0(t71.p.g0(str, new String[]{"."}, 6)) : null;
         if (r0 == null) {
-            r0 = x61.r.r;
+            r0 = x61.rShadow.r;
         }
         return r0.size() > 1 && k71.k.b(r0.get(0), "com") && k71.k.b(r0.get(1), "github");
     }

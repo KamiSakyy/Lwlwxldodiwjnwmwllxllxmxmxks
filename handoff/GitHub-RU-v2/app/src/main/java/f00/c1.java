@@ -7,7 +7,7 @@ import m10.cr;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 implements aa.a {
     public static final c1 a = new c1();
-    public static final List b = sy.d0.o("direction", "field");
+    public static final List b = sy.d0Shadow.o("direction", "field");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

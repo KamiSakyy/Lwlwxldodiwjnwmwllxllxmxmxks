@@ -21,7 +21,7 @@ public final class vl implements aaShadow.w0 {
         List list = kz0.o2.a;
         List list2 = kz0.o2.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -60,7 +60,7 @@ public final class vl implements aaShadow.w0 {
     public final void o(ea.f fVar, aa.w wVar, boolean z) {
         k71.k.g(wVar, "customScalarAdapters");
         fVar.z0("query");
-        jo.f4.y(aa.c.i, fVar, wVar, this.r, "nodeID");
+        jo.f4Shadow.y(aa.c.i, fVar, wVar, this.r, "nodeID");
         aa.c.a.b(fVar, wVar, this.s);
         fVar.z0("first");
         fVar.z(30);

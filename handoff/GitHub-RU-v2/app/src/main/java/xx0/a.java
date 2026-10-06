@@ -10,7 +10,7 @@ import pz0.pd;
 import pz0.td;
 import pz0.xd;
 import pz0.xn;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,9 +22,9 @@ public abstract class a {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2");
+        List n = d0Shadow.n("ProjectV2");
         List list = j.a;
         s c = no.a.c(list, "selections", "ProjectV2", n, list);
         td.Companion.getClass();

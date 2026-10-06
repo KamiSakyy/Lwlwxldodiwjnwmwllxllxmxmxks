@@ -15,7 +15,7 @@ import pz0.su;
 import pz0.td;
 import pz0.xd;
 import pz0.xn;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -26,7 +26,7 @@ public abstract class i {
         td.Companion.getClass();
         x xVar = td.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar2 = xd.a;
@@ -41,7 +41,7 @@ public abstract class i {
         dr.Companion.getClass();
         List r3 = x61.l.r(new s[]{mVar2, c, new aa.m("projectV2", q0Var, (String) null, rVar, no.a.s(dr.a, new u0(new t("number"))), r)});
         s mVar3 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Organization");
+        List n = d0Shadow.n("Organization");
         List list2 = bp0.r.a;
         List r4 = x61.l.r(new s[]{mVar3, no.a.c(list2, "selections", "Organization", n, list2), new n("ProjectV2Owner", x61.l.r(new String[]{"Issue", "Organization", "PullRequest", "User"}), r3)});
         ny.Companion.getClass();

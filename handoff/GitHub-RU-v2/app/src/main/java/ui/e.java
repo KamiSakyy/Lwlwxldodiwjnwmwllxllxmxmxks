@@ -11,7 +11,7 @@ public final class e {
         this.a = gVar;
     }
 
-    public final y a(oa.j jVar, String str, j71.c cVar) {
+    public final y a(oa.j jVar, String str, j71.cShadow cVar) {
         k71.k.g(jVar, "user");
         return b31.b.J(((on.e) this.a.a(jVar)).i(str), jVar, cVar);
     }

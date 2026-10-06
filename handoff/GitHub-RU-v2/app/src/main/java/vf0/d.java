@@ -17,7 +17,7 @@ import gn0.pb;
 import gn0.tb;
 import gn0.vb;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -29,7 +29,7 @@ public abstract class d {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = vd0.a.a;
@@ -43,7 +43,7 @@ public abstract class d {
         s mVar4 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         eq.Companion.getClass();
         s mVar5 = new m("repository", l0.b(eq.m0), (String) null, rVar, rVar, r3);
-        List n = d0.n("Discussion");
+        List n = d0Shadow.n("Discussion");
         List list2 = e.a;
         s c = no.a.c(list2, "selections", "Discussion", n, list2);
         vb.Companion.getClass();

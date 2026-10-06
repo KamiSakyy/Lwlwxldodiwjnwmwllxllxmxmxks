@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n10Shadow {
     public String a;
-    public m10 b;
+    public m10Shadow b;
     public g10 c;
     public List d;
     public String e;
 
-    public n10(String str, m10 m10Var, g10 g10Var, List list, String str2) {
+    public n10(String str, m10Shadow m10Var, g10 g10Var, List list, String str2) {
         this.a = str;
         this.b = m10Var;
         this.c = g10Var;
@@ -31,7 +31,7 @@ public final class n10Shadow {
 
     public final int hashCode() {
         int hashCode = this.a.hashCode() * 31;
-        m10 m10Var = this.b;
+        m10Shadow m10Var = this.b;
         int hashCode2 = (hashCode + (m10Var == null ? 0 : m10Var.hashCode())) * 31;
         g10 g10Var = this.c;
         int hashCode3 = (hashCode2 + (g10Var == null ? 0 : g10Var.hashCode())) * 31;

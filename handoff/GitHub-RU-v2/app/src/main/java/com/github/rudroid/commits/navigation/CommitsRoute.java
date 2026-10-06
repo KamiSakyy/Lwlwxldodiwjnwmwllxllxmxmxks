@@ -3,7 +3,7 @@ package com.github.rudroid.commits.navigation;
 import com.github.rudroid.commits.CommitsType;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kh.a;
 import kotlinx.serialization.KSerializer;
 import ob.c;
@@ -32,7 +32,7 @@ public final class CommitsRoute implements c {
         if (1 == (i & 1)) {
             this.f9214r = commitsType;
         } else {
-            c1.l(i, 1, CommitsRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, CommitsRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

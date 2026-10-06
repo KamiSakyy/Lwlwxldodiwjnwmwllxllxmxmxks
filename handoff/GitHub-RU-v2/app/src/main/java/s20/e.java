@@ -7,8 +7,8 @@ import aa.u0;
 import aa.w;
 import hc0.wg;
 import java.util.List;
-import jo.f4;
-import x61.r;
+import jo.f4Shadow;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements n0 {
@@ -28,7 +28,7 @@ public final class e implements n0 {
         List list = u20.a.a;
         List list2 = u20.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -40,7 +40,7 @@ public final class e implements n0 {
             return false;
         }
         e eVar = (e) obj;
-        return this.r.equals(eVar.r) && this.s.equals(eVar.s);
+        return this.rShadow.equals(eVar.r) && this.s.equals(eVar.s);
     }
 
     public final p0 g() {
@@ -48,7 +48,7 @@ public final class e implements n0 {
     }
 
     public final int hashCode() {
-        return this.s.hashCode() + (this.r.hashCode() * 31);
+        return this.s.hashCode() + (this.rShadow.hashCode() * 31);
     }
 
     public final String i() {
@@ -73,7 +73,7 @@ public final class e implements n0 {
     }
 
     public final String toString() {
-        return f4.k(this.s, "CloseDiscussionMutation(discussionId=", this.r, ", reason=", ")");
+        return f4Shadow.k(this.s, "CloseDiscussionMutation(discussionId=", this.r, ", reason=", ")");
     }
     public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

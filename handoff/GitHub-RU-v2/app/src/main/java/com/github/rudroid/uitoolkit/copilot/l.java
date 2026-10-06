@@ -50,7 +50,7 @@ public final class l {
         }
         b2 t = sVar.t();
         if (t != null) {
-            t.d = new com.github.rudroid.actions.shared.ui.c(rVar2, list, cVar, z2, i, i2);
+            t.d = new com.github.rudroid.actions.shared.ui.cShadow(rVar2, list, cVar, z2, i, i2);
         }
     }
 

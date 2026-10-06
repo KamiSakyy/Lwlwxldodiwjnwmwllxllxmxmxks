@@ -13,9 +13,9 @@ public final class d extends com.google.common.util.concurrent.a {
     public final /* synthetic */ r f29140a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final /* synthetic */ x71.h f29141b;
+    public final /* synthetic */ x71.hShadow f29141b;
 
-    public d(r rVar, x71.h hVar) {
+    public d(r rVar, x71.hShadow hVar) {
         this.f29140a = rVar;
         this.f29141b = hVar;
     }
@@ -37,7 +37,7 @@ public final class d extends com.google.common.util.concurrent.a {
         this.f29141b.n(new ApolloNetworkException(exc, "Web socket communication error"), false);
     }
 
-    public final void J(h0 h0Var, h91.k kVar) {
+    public final void J(h0 h0Var, h91.kShadow kVar) {
         this.f29141b.j(kVar.r());
     }
 

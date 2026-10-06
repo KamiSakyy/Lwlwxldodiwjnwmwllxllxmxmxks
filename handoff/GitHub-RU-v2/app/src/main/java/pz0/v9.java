@@ -23,7 +23,7 @@ public final class v9 {
         v = v9VarArr;
         w = v8.l0.t(v9VarArr);
         Companion = new u9();
-        sy.d0.o(new String[]{"LEFT", "RIGHT"});
+        sy.d0Shadow.o(new String[]{"LEFT", "RIGHT"});
     }
 
     public v9(String str, int i, String str2) {

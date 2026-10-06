@@ -32,9 +32,9 @@ final class p<T> implements y71.j {
             c10 = fl.e.c(arrayList);
         } else {
             fl.e eVar = fl.f.Companion;
-            x61.r rVar = (List) ((fl.f) y1Var.getValue()).b;
+            x61.rShadow rVar = (List) ((fl.f) y1Var.getValue()).b;
             if (rVar == null) {
-                rVar = x61.r.r;
+                rVar = x61.rShadow.r;
             }
             ArrayList l02 = x61.m.l0(rVar, arrayList);
             eVar.getClass();

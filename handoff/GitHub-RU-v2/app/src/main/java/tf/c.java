@@ -7,7 +7,7 @@ import p01.e;
 import p01.g;
 import p01.j;
 import ub.a;
-import x61.r;
+import x61.rShadow;
 import yz0.l2;
 import yz0.t7;
 
@@ -22,7 +22,7 @@ public final class c {
         g.Companion.getClass();
         g gVar = g.e;
         a.d dVar = a.d.f32287a;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         new j("name", "shortDescriptionHtml", "description", "readmeHtml", "readmePath", "ownerLogin", avatar, 15, 0, 0, 0, 0, 10, 0, true, true, true, "homepageUrl", "url", 0, "id", 1738, true, dVar, false, t7Var, l2Var, false, false, true, 0, true, true, eVar, 0, (d) null, false, true, rVar, false, false, true, (i01.a) null, rVar, false, true, gVar, gVar, (String) null, false);
     }
 }

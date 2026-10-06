@@ -5,14 +5,14 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 implements aa.a {
     public static final d0 a = new d0();
-    public static final List b = sy.d0.o("__typename", "id", "author");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "author");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
         String str2 = null;
-        x xVar = null;
+        xShadow xVar = null;
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
@@ -23,7 +23,7 @@ public final class d0 implements aa.a {
                 if (r0 != 2) {
                     break;
                 }
-                xVar = (x) aa.c.b(aa.c.c(b0.a, true)).a(eVar, wVar);
+                xVar = (xShadow) aa.c.b(aa.c.c(b0.a, true)).a(eVar, wVar);
             }
         }
         eVar.s0();

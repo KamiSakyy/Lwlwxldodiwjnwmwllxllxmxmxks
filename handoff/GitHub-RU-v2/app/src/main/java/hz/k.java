@@ -28,7 +28,7 @@ import com.github.service.dotcom.models.response.copilot.serialization.PostMessa
 import com.github.service.models.response.SimpleRepository$;
 import i1.p;
 import java.lang.annotation.Annotation;
-import k81.c1;
+import k81.c1Shadow;
 import k81.z;
 import q81.t;
 import v71.b0;
@@ -44,9 +44,9 @@ public final /* synthetic */ class k implements j71.a {
     public final Object a() {
         switch (this.r) {
             case 0:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventFunctionCallStatus", l.values(), new String[]{"started", "error", "completed", "unknown"}, new Annotation[][]{null, null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventFunctionCallStatus", l.values(), new String[]{"started", "error", "completed", "unknown"}, new Annotation[][]{null, null, null, null});
             case 1:
-                return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventFunctionCallType", m.values(), new String[]{"bing-search", "codesearch", "unknown"}, new Annotation[][]{null, null, null});
+                return c1Shadow.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventFunctionCallType", m.values(), new String[]{"bing-search", "codesearch", "unknown"}, new Annotation[][]{null, null, null});
             case 2:
                 ChatThreadResponse.Companion companion = ChatThreadResponse.Companion;
                 return new k81.d(com.github.service.dotcom.models.response.copilot.serialization.b.d, 0);
@@ -130,7 +130,7 @@ public final /* synthetic */ class k implements j71.a {
                 return new z("com.github.rudroid.home.search.navigation.GlobalSearchRoute", GlobalSearchRoute.INSTANCE, new Annotation[0]);
             default:
                 SearchResultsRoute.Companion companion10 = SearchResultsRoute.Companion;
-                return c1.f("com.github.rudroid.home.search.navigation.SearchViewModelType", SearchViewModelType.values());
+                return c1Shadow.f("com.github.rudroid.home.search.navigation.SearchViewModelType", SearchViewModelType.values());
         }
     }
 

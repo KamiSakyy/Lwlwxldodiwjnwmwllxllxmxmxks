@@ -37,7 +37,7 @@ final class l extends c71.j implements j71.e {
         int i = this.f18149v;
         if (i == 0) {
             y.j(obj);
-            x71.h hVar = this.f18150w.f18152s;
+            x71.hShadow hVar = this.f18150w.f18152s;
             this.f18149v = 1;
             if (hVar.l(this, this.f18151x) == aVar) {
                 return aVar;

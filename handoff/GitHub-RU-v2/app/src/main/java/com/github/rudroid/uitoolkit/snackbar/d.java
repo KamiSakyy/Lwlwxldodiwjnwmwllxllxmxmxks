@@ -75,7 +75,7 @@ public final class d {
         }
         b2 t = sVar.t();
         if (t != null) {
-            t.d = new com.github.rudroid.actions.checkdetail.ui.c(obj2, caVar, cVar, cVar2, cVar6, cVar7, cVar8, i);
+            t.d = new com.github.rudroid.actions.checkdetail.ui.cShadow(obj2, caVar, cVar, cVar2, cVar6, cVar7, cVar8, i);
         }
     }
 

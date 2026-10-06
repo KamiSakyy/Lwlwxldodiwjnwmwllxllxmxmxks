@@ -5,9 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 implements aa.a {
-    public static final a0 a = new a0();
-    public static final List b = sy.d0.o("__typename", "subjectType", "id", "isResolved", "isOutdated", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "comments");
+public final class a0Shadow implements aa.a {
+    public static final a0Shadow a = new a0Shadow();
+    public static final List b = sy.d0Shadow.o("__typename", "subjectType", "id", "isResolved", "isOutdated", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "comments");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0035, code lost:
     
@@ -231,7 +231,7 @@ public final class a0 implements aa.a {
                     break;
                 case 9:
                     bool = bool2;
-                    qVar = (q) aa.c.c(x.a, false).a(eVar, wVar);
+                    qVar = (q) aa.c.c(xShadow.a, false).a(eVar, wVar);
                     break;
             }
             bool2 = bool;
@@ -252,14 +252,14 @@ public final class a0 implements aa.a {
         bVar.b(fVar, wVar, sVar.c);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(sVar.d, bVar2, fVar, wVar, "isOutdated");
-        jo.f4.C(sVar.e, bVar2, fVar, wVar, "viewerCanResolve");
-        jo.f4.C(sVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(sVar.g, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(sVar.d, bVar2, fVar, wVar, "isOutdated");
+        jo.f4Shadow.C(sVar.e, bVar2, fVar, wVar, "viewerCanResolve");
+        jo.f4Shadow.C(sVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(sVar.g, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(b0.a, false)).b(fVar, wVar, sVar.h);
         fVar.z0("viewerCanReply");
-        jo.f4.C(sVar.i, bVar2, fVar, wVar, "comments");
-        aa.c.c(x.a, false).b(fVar, wVar, sVar.j);
+        jo.f4Shadow.C(sVar.i, bVar2, fVar, wVar, "comments");
+        aa.c.c(xShadow.a, false).b(fVar, wVar, sVar.j);
         List list = g80.b.a;
         g80.b.d(fVar, wVar, sVar.k);
     }

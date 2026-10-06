@@ -1,7 +1,7 @@
 package com.github.rudroid.searchandfilter.complexfilter.user.assignee;
 
 import java.util.List;
-import sy.t;
+import sy.tShadow;
 import sy.y;
 import w61.a0;
 
@@ -33,7 +33,7 @@ public final class d<T> implements y71.j {
                 i = cVar2.v;
                 if (i != 0) {
                     y.j(obj2);
-                    List v0 = x61.m.v0((List) obj, t.f(new a(this.s), b.r));
+                    List v0 = x61.m.v0((List) obj, tShadow.f(new a(this.s), b.r));
                     cVar2.v = 1;
                     if (this.r.c(v0, cVar2) == aVar) {
                         return aVar;

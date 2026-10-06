@@ -25,7 +25,7 @@ public final class e0 extends b {
         this.f8909s = cVar;
         this.f8910t = oVar;
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
-        y1 c10 = y71.n1.c(g1.a.a());
+        y1 c10 = y71.n1Shadow.c(g1.a.a());
         this.f8911u = c10;
         this.f8912v = new y71.i1(c10);
     }
@@ -40,7 +40,7 @@ public final class e0 extends b {
         yz0.o0 o0Var = (yz0.o0) q0Var;
         String str2 = o0Var.s;
         k71.k.g(str2, "reviewId");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new d0(this, str2, str, o0Var, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d0(this, str2, str, o0Var, null), 3);
     }
 
     @Override // com.github.rudroid.comment.b

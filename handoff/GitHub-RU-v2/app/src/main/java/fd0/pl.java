@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pl implements aaShadow.a {
     public static final pl a = new pl();
-    public static final List b = sy.d0.o(new String[]{"id", "viewerCanPush", "branchInfo", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "viewerCanPush", "branchInfo", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -54,7 +54,7 @@ public final class pl implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, gvVar.a);
         fVar.z0("viewerCanPush");
-        jo.f4.C(gvVar.b, aa.c.f, fVar, wVar, "branchInfo");
+        jo.f4Shadow.C(gvVar.b, aa.c.f, fVar, wVar, "branchInfo");
         aa.c.b(aa.c.c(nl.a, true)).b(fVar, wVar, gvVar.c);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, gvVar.d);

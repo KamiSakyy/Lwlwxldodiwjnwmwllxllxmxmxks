@@ -5,13 +5,13 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class s extends y {
+public final class sShadow extends y {
     public static final q e;
     public static final q f;
     public static final byte[] g;
     public static final byte[] h;
     public static final byte[] i;
-    public h91.k a;
+    public h91.kShadow a;
     public List b;
     public q c;
     public long d;
@@ -28,7 +28,7 @@ public final class s extends y {
         i = new byte[]{45, 45};
     }
 
-    public s(h91.k kVar, q qVar, List list) {
+    public s(h91.kShadow kVar, q qVar, List list) {
         k71.k.g(kVar, "boundaryByteString");
         k71.k.g(qVar, "type");
         this.a = kVar;
@@ -90,7 +90,7 @@ public final class s extends y {
         long j = 0;
         int i2 = 0;
         while (true) {
-            h91.k kVar = this.a;
+            h91.kShadow kVar = this.a;
             byte[] bArr = i;
             byte[] bArr2 = h;
             if (i2 >= size) {

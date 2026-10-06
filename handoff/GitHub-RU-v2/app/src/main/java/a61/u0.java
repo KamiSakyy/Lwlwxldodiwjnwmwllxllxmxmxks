@@ -30,7 +30,7 @@ import xn.d3;
 import xn.e3;
 import xn.f3;
 import xn.h4;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -145,10 +145,10 @@ public final class u0 extends c71.j implements j71.e {
         e61.g gVar2;
         v41.i iVar;
         e61.g gVar3;
-        j jVar;
+        jShadow jVar;
         v41.i iVar2;
         k41.g gVar4;
-        j jVar2;
+        jShadow jVar2;
         Object a3;
         w61.a0Shadow a0Var2;
         Object f;
@@ -224,9 +224,9 @@ public final class u0 extends c71.j implements j71.e {
                                 int i4 = q0Var.c;
                                 long j = q0Var.d;
                                 iVar = (v41.i) map.get(b61.d.s);
-                                j jVar3 = j.u;
-                                j jVar4 = j.t;
-                                j jVar5 = j.s;
+                                jShadow jVar3 = j.u;
+                                jShadow jVar4 = j.t;
+                                jShadow jVar5 = j.s;
                                 if (iVar != null) {
                                 }
                                 iVar2 = (v41.i) map.get(b61.d.r);
@@ -269,9 +269,9 @@ public final class u0 extends c71.j implements j71.e {
                         int i42 = q0Var.c;
                         long j2 = q0Var.d;
                         iVar = (v41.i) map2.get(b61.d.s);
-                        j jVar32 = j.u;
-                        j jVar42 = j.t;
-                        j jVar52 = j.s;
+                        jShadow jVar32 = j.u;
+                        jShadow jVar42 = j.t;
+                        jShadow jVar52 = j.s;
                         if (iVar != null) {
                             gVar3 = gVar2;
                             jVar = jVar52;

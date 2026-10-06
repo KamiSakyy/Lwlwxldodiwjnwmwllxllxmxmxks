@@ -21,7 +21,7 @@ import f1.ub;
 import g3.q0;
 import g3.z;
 import k71.k;
-import sg.y;
+import sg.yShadow;
 import v2.g;
 import w1.r;
 import y41.t1;
@@ -59,16 +59,16 @@ public final class c {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = g.f;
+            v2.eShadow eVar = g.f;
             t.I(sVar2, eVar, a);
-            v2.e eVar2 = g.e;
+            v2.eShadow eVar2 = g.e;
             t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = g.g;
+            v2.eShadow eVar3 = g.g;
             t.w(sVar2, valueOf, eVar3);
             v2.d dVar = g.h;
             t.E(sVar2, dVar);
-            v2.e eVar4 = g.d;
+            v2.eShadow eVar4 = g.d;
             t.I(sVar2, eVar4, c);
             int i3 = i2;
             if (1.0f <= 0.0d) {
@@ -103,7 +103,7 @@ public final class c {
             r y = androidx.compose.foundation.layout.b.y(p2.e(oVar, 1.0f), ih.a.n, ih.a.q);
             long j = ih.d.b(sVar).j;
             long j2 = ih.d.b(sVar).y;
-            y.a(100663296 | ((i3 << 3) & 896), 234, null, sVar, null, null, p0.a(j, j2, j, d2.t.b(0.38f, j2), sVar, 0), null, aVar, r1.i.d(114345622, new a(z, 0), sVar), y, false);
+            yShadow.a(100663296 | ((i3 << 3) & 896), 234, null, sVar, null, null, p0.a(j, j2, j, d2.t.b(0.38f, j2), sVar, 0), null, aVar, r1.i.d(114345622, new a(z, 0), sVar), y, false);
             sVar2 = sVar;
             sVar2.q(true);
         } else {

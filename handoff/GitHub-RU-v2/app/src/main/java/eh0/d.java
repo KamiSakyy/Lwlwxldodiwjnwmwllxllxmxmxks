@@ -3,7 +3,7 @@ package eh0;
 import a0.s0;
 import com.github.rudroid.copilot.h1;
 import gn0.hn;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -48,6 +48,6 @@ public final class d {
         o.append(", isInMergeQueue=");
         o.append(this.f);
         o.append(", isDraft=");
-        return f4.s(o, this.g, ")");
+        return f4Shadow.s(o, this.g, ")");
     }
 }

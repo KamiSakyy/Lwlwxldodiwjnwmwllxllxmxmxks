@@ -8,8 +8,8 @@ public abstract class x80 {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        a = new aa.q0("Sponsorship", n, sy.d0.n(zp.a));
+        a = new aa.q0("Sponsorship", n, sy.d0Shadow.n(zp.a));
     }
 }

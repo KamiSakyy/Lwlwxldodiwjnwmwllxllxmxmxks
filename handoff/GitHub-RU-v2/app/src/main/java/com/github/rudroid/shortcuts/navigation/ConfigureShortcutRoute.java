@@ -5,8 +5,8 @@ import android.os.Parcelable;
 import com.github.rudroid.m0;
 import g81.e;
 import hz.k;
-import jo.f4;
-import k81.c1;
+import jo.f4Shadow;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -73,7 +73,7 @@ public final class ConfigureShortcutRoute implements Parcelable {
 
     public /* synthetic */ ConfigureShortcutRoute(int i, b bVar, boolean z, boolean z2, boolean z3, boolean z4) {
         if (30 != (i & 30)) {
-            c1.l(i, 30, ConfigureShortcutRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 30, ConfigureShortcutRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 1) == 0) {
@@ -115,7 +115,7 @@ public final class ConfigureShortcutRoute implements Parcelable {
         sb.append(this.s);
         sb.append(", synchronousUpdates=");
         m0.A(sb, this.t, ", useLightweightCreationUi=", this.u, ", isFilterBarVisibleByDefault=");
-        return f4.s(sb, this.v, ")");
+        return f4Shadow.s(sb, this.v, ")");
     }
 
     @Override // android.os.Parcelable

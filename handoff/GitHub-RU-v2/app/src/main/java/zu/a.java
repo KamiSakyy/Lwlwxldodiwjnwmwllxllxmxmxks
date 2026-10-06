@@ -19,10 +19,10 @@ import m10.uc;
 import m10.wg;
 import m10.wr;
 import m10.yb0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class a {
@@ -32,17 +32,17 @@ public abstract class a {
         cc0.Companion.getClass();
         x xVar = cc0.a;
         k.g(xVar, "type");
-        r rVar = r.r;
-        List n = d0.n(new m("url", xVar, (String) null, rVar, rVar, rVar));
+        rShadow rVar = rShadow.r;
+        List n = d0Shadow.n(new m("url", xVar, (String) null, rVar, rVar, rVar));
         eh.Companion.getClass();
         x xVar2 = eh.a;
-        List r = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ImageFileType", d0.n("ImageFileType"), n)});
+        List r = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("ImageFileType", d0Shadow.n("ImageFileType"), n)});
         m mVar = new m("path", xVar2, (String) null, rVar, rVar, rVar);
         gf.Companion.getClass();
         x0 x0Var = gf.a;
         k.g(x0Var, "type");
         List r2 = l.r(new m[]{mVar, new m("fileType", x0Var, (String) null, rVar, rVar, r)});
-        List n2 = d0.n(new m("gitUrl", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("gitUrl", l0.b(xVar), (String) null, rVar, rVar, rVar));
         s mVar2 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         List r3 = l.r(new String[]{"ImageFileType", "MarkdownFileType", "PdfFileType", "TextFileType"});
         List list = d.a;
@@ -60,7 +60,7 @@ public abstract class a {
         k.g(xVar4, "type");
         List r5 = l.r(new m[]{mVar3, mVar4, mVar5, new m("lineCount", xVar4, (String) null, rVar, rVar, rVar), new m("fileType", x0Var, (String) null, rVar, rVar, r4)});
         s mVar6 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("DiffLine");
+        List n3 = d0Shadow.n("DiffLine");
         List list2 = fs.a.a;
         List r6 = l.r(new s[]{mVar6, no.a.c(list2, "selections", "DiffLine", n3, list2)});
         ah.Companion.getClass();

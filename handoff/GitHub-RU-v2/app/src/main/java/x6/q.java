@@ -10,7 +10,7 @@ public abstract class q {
 
     static {
         aa.u uVar = new aa.u(4);
-        uVar.a(k71.x.a(p.class), new p4(16));
+        uVar.a(k71.xShadow.a(p.class), new p4(16));
         f33885a = uVar.d();
     }
 

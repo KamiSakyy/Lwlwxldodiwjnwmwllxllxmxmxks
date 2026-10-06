@@ -1,6 +1,6 @@
 package com.github.rudroid.uitoolkit.utils.lists;
 
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.uitoolkit.utils.lists.LazyListStateExtensionsKt$ObservePaging$1$1", f = "LazyListStateExtensions.kt", l = {42}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -31,7 +31,7 @@ final class n extends c71.j implements j71.e {
         int i = this.v;
         if (i == 0) {
             sy.y.j(obj);
-            j jVar = new j(n1.p(new m(new g(new d(androidx.compose.runtime.t.J(new ah.f(this.w, 11)))), this.x)));
+            j jVar = new j(n1Shadow.p(new m(new g(new d(androidx.compose.runtime.t.J(new ah.f(this.w, 11)))), this.x)));
             a aVar2 = new a(this.y);
             this.v = 1;
             if (jVar.b(aVar2, this) == aVar) {

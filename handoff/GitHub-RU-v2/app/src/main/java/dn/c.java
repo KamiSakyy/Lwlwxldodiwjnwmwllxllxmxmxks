@@ -37,7 +37,7 @@ public final class c extends c71.j implements j71.e {
             case 3:
                 return new c((TestingSettingsFragment) this.y, cVar);
             default:
-                return new c((y71.i[]) this.x, this.z, (AtomicInteger) this.A, (x71.h) this.y, cVar, 4);
+                return new c((y71.i[]) this.x, this.z, (AtomicInteger) this.A, (x71.hShadow) this.y, cVar, 4);
         }
     }
 
@@ -175,7 +175,7 @@ public final class c extends c71.j implements j71.e {
                 return w61.a0.a;
             default:
                 AtomicInteger atomicInteger = (AtomicInteger) this.A;
-                x71.h hVar = (x71.h) this.y;
+                x71.hShadow hVar = (x71.hShadow) this.y;
                 b71.a aVar7 = b71.a.r;
                 int i11 = this.w;
                 try {

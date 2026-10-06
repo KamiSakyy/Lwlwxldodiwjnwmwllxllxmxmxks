@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 implements aaShadow.a {
     public static final i0 a = new i0();
-    public static final List b = sy.d0.o("subjectType", "pullRequest", "comments", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("subjectType", "pullRequest", "comments", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

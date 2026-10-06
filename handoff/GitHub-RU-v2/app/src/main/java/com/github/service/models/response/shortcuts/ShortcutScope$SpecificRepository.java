@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l7.c0;
 import x.i;
@@ -25,7 +25,7 @@ public final class ShortcutScope$SpecificRepository extends a {
 
     public /* synthetic */ ShortcutScope$SpecificRepository(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, ShortcutScope$SpecificRepository$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, ShortcutScope$SpecificRepository$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.s = str;

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -24,7 +24,7 @@ public final class UserOrOrgRepositoriesFilterPersistenceKey extends b {
     public /* synthetic */ UserOrOrgRepositoriesFilterPersistenceKey(String str, int i, String str2) {
         super(str);
         if (3 != (i & 3)) {
-            c1.l(i, 3, UserOrOrgRepositoriesFilterPersistenceKey$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, UserOrOrgRepositoriesFilterPersistenceKey$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.t = str2;

@@ -67,7 +67,7 @@ public final class o0<T> implements y71.j {
                         if (!(a4Var instanceof x3) && !(a4Var instanceof w3) && !(a4Var instanceof y3)) {
                             throw new NoWhenBranchMatchedException();
                         }
-                        arrayList = x61.r.r;
+                        arrayList = x61.rShadow.r;
                         i10 = 1;
                         n0Var.f13207v = i10;
                         if (this.f13209r.c(arrayList, n0Var) == aVar) {

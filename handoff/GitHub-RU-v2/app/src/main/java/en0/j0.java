@@ -12,12 +12,12 @@ public abstract class j0 {
     static {
         tb.Companion.getClass();
         aa.r b = v8.l0.b(tb.a);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("__typename", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("__typename", b, (String) null, rVar, rVar, rVar));
         z6.Companion.getClass();
         aa.q0 q0Var = z6.a;
         k71.k.g(q0Var, "type");
         wh.Companion.getClass();
-        a = sy.d0.n(new aa.m("deleteDiscussion", q0Var, (String) null, rVar, no.a.s(wh.F, new aa.u0(a0.s0.p("id", new aa.t("discussionId")))), n));
+        a = sy.d0Shadow.n(new aa.m("deleteDiscussion", q0Var, (String) null, rVar, no.a.s(wh.F, new aa.u0(a0.s0.p("id", new aa.t("discussionId")))), n));
     }
 }

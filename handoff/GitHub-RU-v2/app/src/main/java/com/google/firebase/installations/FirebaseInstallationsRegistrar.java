@@ -43,6 +43,6 @@ public class FirebaseInstallationsRegistrar implements ComponentRegistrar {
         u a2 = p41.a.a(e.class);
         a2.b = 1;
         a2.f = new c5.b(17, eVar);
-        return Arrays.asList(b, a2.b(), sy.o.c(LIBRARY_NAME, "18.0.0"));
+        return Arrays.asList(b, a2.b(), sy.oShadow.c(LIBRARY_NAME, "18.0.0"));
     }
 }

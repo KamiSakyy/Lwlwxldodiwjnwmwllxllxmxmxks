@@ -9,7 +9,7 @@ import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.time.chrono.ChronoZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -54,7 +54,7 @@ public final class a implements aa.a {
                     return Integer.valueOf((int) nextLong);
                 }
                 while (nextLong > 2147483647L) {
-                    nextLong = f4.c(1, nextLong, "substring(...)");
+                    nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                 }
                 return Integer.valueOf((int) nextLong);
             case 4:
@@ -65,7 +65,7 @@ public final class a implements aa.a {
                     return Integer.valueOf((int) nextLong2);
                 }
                 while (nextLong2 > 2147483647L) {
-                    nextLong2 = f4.c(1, nextLong2, "substring(...)");
+                    nextLong2 = f4Shadow.c(1, nextLong2, "substring(...)");
                 }
                 return Integer.valueOf((int) nextLong2);
             case 5:
@@ -76,7 +76,7 @@ public final class a implements aa.a {
                     return Integer.valueOf((int) nextLong3);
                 }
                 while (nextLong3 > 2147483647L) {
-                    nextLong3 = f4.c(1, nextLong3, "substring(...)");
+                    nextLong3 = f4Shadow.c(1, nextLong3, "substring(...)");
                 }
                 return Integer.valueOf((int) nextLong3);
             default:
@@ -87,7 +87,7 @@ public final class a implements aa.a {
                     return Integer.valueOf((int) nextLong4);
                 }
                 while (nextLong4 > 2147483647L) {
-                    nextLong4 = f4.c(1, nextLong4, "substring(...)");
+                    nextLong4 = f4Shadow.c(1, nextLong4, "substring(...)");
                 }
                 return Integer.valueOf((int) nextLong4);
         }

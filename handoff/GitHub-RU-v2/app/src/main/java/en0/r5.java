@@ -14,7 +14,7 @@ public abstract class r5 {
     static {
         pb.Companion.getClass();
         aa.r b = v8.l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar = tb.a;
@@ -22,11 +22,11 @@ public abstract class r5 {
         hc.Companion.getClass();
         aa.q0 q0Var = hc.x;
         k71.k.g(q0Var, "type");
-        List n = sy.d0.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, r));
+        List n = sy.d0Shadow.n(new aa.m("issue", q0Var, (String) null, rVar, rVar, r));
         mz.Companion.getClass();
         aa.q0 q0Var2 = mz.a;
         k71.k.g(q0Var2, "type");
         wh.Companion.getClass();
-        a = sy.d0.n(new aa.m("updateIssue", q0Var2, (String) null, rVar, no.a.s(wh.O0, new aa.u0(x61.x.u(new w61.k("id", new aa.t("id")), new w61.k("title", new aa.t("title"))))), n));
+        a = sy.d0Shadow.n(new aa.m("updateIssue", q0Var2, (String) null, rVar, no.a.s(wh.O0, new aa.u0(x61.x.u(new w61.k("id", new aa.t("id")), new w61.k("title", new aa.t("title"))))), n));
     }
 }

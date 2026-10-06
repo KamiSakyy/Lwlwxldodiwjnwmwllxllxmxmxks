@@ -48,7 +48,7 @@ final class e extends c71.j implements j71.e {
         y.j(obj);
         IssueTemplatesActivity.a aVar2 = IssueTemplatesActivity.Companion;
         u uVar = (u) g1Var.getData();
-        ArrayList arrayList = uVar != null ? uVar.a : x61.r.r;
+        ArrayList arrayList = uVar != null ? uVar.a : x61.rShadow.r;
         p2 p2Var = this.w;
         g gVar = p2Var.w0;
         if (gVar == null) {

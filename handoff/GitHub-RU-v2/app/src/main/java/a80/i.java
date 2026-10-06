@@ -13,7 +13,7 @@ public abstract class i {
     static {
         bb.Companion.getClass();
         aa.r b = l0.b(bb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         db.Companion.getClass();
         aa.m mVar2 = new aa.m("number", l0.b(db.a), (String) null, rVar, rVar, rVar);

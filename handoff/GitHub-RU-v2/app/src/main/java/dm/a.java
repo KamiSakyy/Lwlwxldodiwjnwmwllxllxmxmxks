@@ -7,7 +7,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import com.github.service.models.response.Avatar;
 import f1.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 import yz0.f;
@@ -88,7 +88,7 @@ public final class a implements f {
         sb.append(", id=");
         e.x(sb, this.t, ", name=", this.u, ", isBot=");
         m0.A(sb, this.v, ", isCopilot=", this.w, ", isAgent=");
-        return f4.s(sb, this.x, ")");
+        return f4Shadow.s(sb, this.x, ")");
     }
 
     public final boolean u() {

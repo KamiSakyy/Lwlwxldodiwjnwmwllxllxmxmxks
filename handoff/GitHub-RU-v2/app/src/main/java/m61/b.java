@@ -2,7 +2,7 @@ package m61;
 
 import android.app.Application;
 import com.google.android.gms.internal.measurement.n4;
-import k71.x;
+import k71.xShadow;
 import w51.r;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -50,7 +50,7 @@ public final class b implements o61.b {
         b bVar = (b) this.u;
         k.i iVar = bVar.s;
         r rVar = new r(iVar.K0(), new l61.d(1, (k.i) bVar.u), iVar.g0());
-        k71.e a = x.a(d.class);
+        k71.e a = xShadow.a(d.class);
         String b = a.b();
         if (b != null) {
             return ((d) rVar.E(a, "androidx.lifecycle.ViewModelProvider.DefaultKey:".concat(b))).t;
@@ -80,7 +80,7 @@ public final class b implements o61.b {
                             if (((i61.a) this.v) == null) {
                                 k.i iVar = this.s;
                                 r rVar = new r(iVar.K0(), new l61.d(1, (k.i) this.u), iVar.g0());
-                                k71.e a = x.a(d.class);
+                                k71.e a = xShadow.a(d.class);
                                 String b = a.b();
                                 if (b == null) {
                                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");

@@ -40,11 +40,11 @@ public final class v extends androidx.lifecycle.k1 implements com.github.rudroid
     public final void P(String str, ReportedContentClassifier reportedContentClassifier) {
         k71.k.g(str, "subjectId");
         k71.k.g(reportedContentClassifier, "reportedContentClassifier");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new s(this, str, reportedContentClassifier, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new s(this, str, reportedContentClassifier, null), 3);
     }
 
     public final void Q(String str) {
         k71.k.g(str, "subjectId");
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u(this, str, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u(this, str, null), 3);
     }
 }

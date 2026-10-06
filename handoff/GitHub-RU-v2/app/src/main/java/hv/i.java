@@ -30,7 +30,7 @@ import m10.x1;
 import m10.y5;
 import m10.ya0;
 import m10.z1;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -41,7 +41,7 @@ public abstract class i {
         eh.Companion.getClass();
         x xVar = eh.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("name", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
@@ -80,11 +80,11 @@ public abstract class i {
         y5.Companion.getClass();
         List r11 = x61.l.r(new aa.m[]{mVar10, new aa.m("commit", l0.b(y5.j), (String) null, rVar, rVar, r9), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         dy.Companion.getClass();
-        List n = d0.n(new aa.m("nodes", l0.a(dy.a), (String) null, rVar, rVar, r11));
-        List n2 = d0.n(new aa.m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
+        List n = d0Shadow.n(new aa.m("nodes", l0.a(dy.a), (String) null, rVar, rVar, r11));
+        List n2 = d0Shadow.n(new aa.m("totalCount", l0.b(xVar3), (String) null, rVar, rVar, rVar));
         List r12 = x61.l.r(new aa.m[]{new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("position", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.s mVar11 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("MergeQueue");
+        List n3 = d0Shadow.n("MergeQueue");
         List list2 = cu.c.a;
         List r13 = x61.l.r(new aa.s[]{mVar11, no.a.c(list2, "selections", "MergeQueue", n3, list2), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.s mVar12 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -137,7 +137,7 @@ public abstract class i {
         q0 q0Var5 = om.d;
         k71.k.g(q0Var5, "type");
         aa.s mVar33 = new aa.m("mergeQueue", q0Var5, (String) null, rVar, rVar, r13);
-        List n4 = d0.n("PullRequest");
+        List n4 = d0Shadow.n("PullRequest");
         List list4 = s.a;
         a = x61.l.r(new aa.s[]{mVar12, mVar13, mVar14, mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, mVar21, mVar22, c, mVar23, mVar24, mVar25, mVar26, mVar27, mVar28, mVar29, mVar30, mVar31, mVar32, mVar33, no.a.c(list4, "selections", "PullRequest", n4, list4)});
     }

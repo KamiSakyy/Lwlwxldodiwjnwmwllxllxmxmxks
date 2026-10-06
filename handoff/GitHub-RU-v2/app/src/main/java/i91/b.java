@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 import k71.s;
 import k71.v;
 import k71.w;
-import sy.r;
+import sy.rShadow;
 import t71.p;
 import x61.m;
 import x61.x;
@@ -126,7 +126,7 @@ public abstract class b {
     }
 
     public static final String d(int i) {
-        r.m(16);
+        rShadow.m(16);
         String num = Integer.toString(i, 16);
         k71.k.f(num, "toString(...)");
         return "0x".concat(num);

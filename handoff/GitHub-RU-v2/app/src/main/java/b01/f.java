@@ -3,7 +3,7 @@ package b01;
 import com.github.rudroid.copilot.h1;
 import com.github.service.models.response.discussions.type.DiscussionStateReason;
 import java.time.ZonedDateTime;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
@@ -42,7 +42,7 @@ public final class f {
 
     public final String toString() {
         StringBuilder u = h1.u("DiscussionClosedState(isClosed=", this.a, ", viewerCanClose=", this.b, ", viewerCanReopen=");
-        f4.B(", closedAt=", ", stateReason=", u, this.d, this.c);
+        f4Shadow.B(", closedAt=", ", stateReason=", u, this.d, this.c);
         u.append(this.e);
         u.append(")");
         return u.toString();

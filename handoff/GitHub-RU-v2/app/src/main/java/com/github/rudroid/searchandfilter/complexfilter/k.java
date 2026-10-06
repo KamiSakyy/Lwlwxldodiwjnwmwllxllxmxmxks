@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.concurrent.CancellationException;
 import t00.f8;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -39,7 +39,7 @@ public abstract class k<T> extends k1 implements f0, x3 {
 
     static {
         r71.e mVar = new k71.m(k.class, "queryValue", "getQueryValue()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         D = new r71.e[]{mVar};
         Companion = new a();
     }
@@ -49,7 +49,7 @@ public abstract class k<T> extends k1 implements f0, x3 {
         k71.k.g(a1Var, "savedStateHandle");
         this.s = aVar;
         this.t = h0Var;
-        ArrayList arrayList = x61.r.r;
+        ArrayList arrayList = x61.rShadow.r;
         this.v = arrayList;
         Object[] objArr = (Object[]) a1Var.a("BaseSearchViewModel_key_preselected");
         if (objArr != null) {
@@ -63,16 +63,16 @@ public abstract class k<T> extends k1 implements f0, x3 {
             arrayList = arrayList2;
         }
         this.w = arrayList;
-        y1 c = n1.c((Object) null);
+        y1 c = n1Shadow.c((Object) null);
         this.x = c;
         this.y = d1.a(new f8(23, new y71.p(new com.github.rudroid.repository.branches.y(26), new y00.l(c, 10), (a71.c) null)));
         this.z = new x01.i((String) null, false, true);
         this.A = new ArrayList();
         this.B = new r(this);
-        y1 c2 = n1.c("");
+        y1 c2 = n1Shadow.c("");
         this.C = c2;
         this.t.d(arrayList);
-        n1.A(new y71.y(new y00.l(n1.o(c2, 250L), 10), new q(this, null), 6), d1.k(this));
+        n1Shadow.A(new y71.y(new y00.l(n1Shadow.o(c2, 250L), 10), new q(this, null), 6), d1.k(this));
     }
 
     @Override // com.github.rudroid.viewmodels.v3
@@ -82,7 +82,7 @@ public abstract class k<T> extends k1 implements f0, x3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.u = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new p(this, str, null), 3);
+        this.u = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p(this, str, null), 3);
     }
 
     public final void P(String str) {

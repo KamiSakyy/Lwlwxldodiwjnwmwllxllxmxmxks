@@ -13,8 +13,8 @@ public abstract class b {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("title", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("title", b, (String) null, rVar, rVar, rVar));
         m8.Companion.getClass();
         aa.m mVar = new aa.m("copilotLicenseType", v8.l0.b(m8.s), (String) null, rVar, rVar, rVar);
         aa.m mVar2 = new aa.m("title", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);

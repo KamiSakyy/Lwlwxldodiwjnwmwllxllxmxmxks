@@ -62,6 +62,6 @@ public final class j4 {
         sb2.append(", hasMoreFiles=");
         sb2.append(this.f7674f);
         sb2.append(", canLoadNextPage=");
-        return jo.f4.s(sb2, this.f7675g, ")");
+        return jo.f4Shadow.s(sb2, this.f7675g, ")");
     }
 }

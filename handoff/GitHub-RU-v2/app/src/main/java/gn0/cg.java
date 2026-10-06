@@ -8,8 +8,8 @@ public abstract class cg {
     public static final aa.q0 a;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        a = new aa.q0("MergeQueueEntry", n, sy.d0.n(yh.a));
+        a = new aa.q0("MergeQueueEntry", n, sy.d0Shadow.n(yh.a));
     }
 }

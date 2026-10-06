@@ -2,7 +2,7 @@ package s71;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import sy.d0;
+import sy.d0Shadow;
 import x61.u;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -63,7 +63,7 @@ public final class b implements Iterator, l71.a {
                 if (i10 >= 0) {
                     return new u(i10, this.f31726t.next());
                 }
-                d0.x();
+                d0Shadow.x();
                 throw null;
         }
         while (true) {

@@ -6,9 +6,9 @@ public final class d {
     public Boolean b;
     public Boolean c;
     public Boolean d;
-    public xn.f1 e;
+    public xn.f1Shadow e;
 
-    public d(xn.e1 e1Var, Boolean bool, Boolean bool2, Boolean bool3, xn.f1 f1Var) {
+    public d(xn.e1 e1Var, Boolean bool, Boolean bool2, Boolean bool3, xn.f1Shadow f1Var) {
         this.a = e1Var;
         this.b = bool;
         this.c = bool2;
@@ -16,7 +16,7 @@ public final class d {
         this.e = f1Var;
     }
 
-    public static d a(d dVar, xn.e1 e1Var, Boolean bool, Boolean bool2, Boolean bool3, xn.f1 f1Var, int i) {
+    public static d a(d dVar, xn.e1 e1Var, Boolean bool, Boolean bool2, Boolean bool3, xn.f1Shadow f1Var, int i) {
         if ((i & 1) != 0) {
             e1Var = dVar.a;
         }
@@ -60,7 +60,7 @@ public final class d {
         int hashCode3 = (hashCode2 + (bool2 == null ? 0 : bool2.hashCode())) * 31;
         Boolean bool3 = this.d;
         int hashCode4 = (hashCode3 + (bool3 == null ? 0 : bool3.hashCode())) * 31;
-        xn.f1 f1Var = this.e;
+        xn.f1Shadow f1Var = this.e;
         return hashCode4 + (f1Var != null ? f1Var.hashCode() : 0);
     }
 
@@ -68,7 +68,7 @@ public final class d {
         return "CopilotPermissionsFieldOverrides(licenseType=" + this.a + ", isCopilotMobileChatEnabled=" + this.b + ", viewerIsCopilotCodingAgentEnabled=" + this.c + ", viewerCanSubscribeToCopilotLimited=" + this.d + ", copilotUserLimits=" + this.e + ")";
     }
 
-    public /* synthetic */ d(xn.f1 f1Var, int i) {
+    public /* synthetic */ d(xn.f1Shadow f1Var, int i) {
         this((i & 1) != 0 ? null : xn.e1.y, (i & 2) != 0 ? null : Boolean.TRUE, null, null, (i & 16) != 0 ? null : f1Var);
     }
 }

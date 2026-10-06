@@ -142,7 +142,7 @@ public final /* synthetic */ class m implements j71.a {
                 k71.k.g(str10, "repository");
                 RepositoryAuthorBottomSheet repositoryAuthorBottomSheet = new RepositoryAuthorBottomSheet();
                 o.a aVar9 = com.github.rudroid.searchandfilter.complexfilter.user.o.Companion;
-                List n = fVar != null ? sy.d0.n(fVar) : x61.r.r;
+                List n = fVar != null ? sy.d0Shadow.n(fVar) : x61.rShadow.r;
                 aVar9.getClass();
                 Bundle a2 = o.a.a(str9, str10, n);
                 a2.putBoolean("EXTRA_IS_ACTIVITY_HOSTED", this.u);

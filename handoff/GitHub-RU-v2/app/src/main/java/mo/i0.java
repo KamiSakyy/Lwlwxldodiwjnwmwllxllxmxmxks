@@ -1,18 +1,18 @@
 package mo;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 implements aa.a {
     public static final i0 a = new i0();
-    public static final List b = sy.d0.o("number", "repository", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("number", "repository", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         Integer num = null;
-        x xVar = null;
+        xShadow xVar = null;
         String str = null;
         String str2 = null;
         while (true) {
@@ -28,7 +28,7 @@ public final class i0 implements aa.a {
                     num = Integer.valueOf((int) nextLong);
                 }
             } else if (r0 == 1) {
-                xVar = (x) aa.c.c(f1.a, false).a(eVar, wVar);
+                xVar = (xShadow) aa.c.c(f1.a, false).a(eVar, wVar);
             } else if (r0 == 2) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {

@@ -2,13 +2,13 @@ package gr0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
-import sy.d0;
+import jo.f4Shadow;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements aa.a {
     public static final k a = new k();
-    public static final List b = d0.o(new String[]{"__typename", "id"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");
@@ -60,7 +60,7 @@ public final class k implements aa.a {
         fVar.z0("option");
         bVar2.b(fVar, wVar, aVar.b);
         fVar.z0("viewerHasVoted");
-        f4.C(aVar.c, aa.c.f, fVar, wVar, "totalVoteCount");
+        f4Shadow.C(aVar.c, aa.c.f, fVar, wVar, "totalVoteCount");
         fVar.z(aVar.d);
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, aVar.e);

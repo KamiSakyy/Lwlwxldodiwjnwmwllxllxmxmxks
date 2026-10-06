@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tf implements aaShadow.a {
     public static final tf a = new tf();
-    public static final List b = sy.d0.o("id", "headRefOid", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "headRefOid", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

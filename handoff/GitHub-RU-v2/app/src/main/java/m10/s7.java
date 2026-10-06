@@ -7,6 +7,6 @@ public abstract class s7 {
 
     static {
         ar.Companion.getClass();
-        a = new aa.q0("CopilotAgentTaskConnection", x61.r.r, sy.d0.n(ar.a));
+        a = new aa.q0("CopilotAgentTaskConnection", x61.rShadow.r, sy.d0Shadow.n(ar.a));
     }
 }

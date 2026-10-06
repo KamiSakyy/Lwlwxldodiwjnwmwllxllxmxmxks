@@ -19,7 +19,7 @@ public final class ui {
         t = uiVarArr;
         v8.l0.t(uiVarArr);
         Companion = new ti();
-        sy.d0.o("CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED");
+        sy.d0Shadow.o("CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED");
     }
 
     public ui(String str, int i, String str2) {

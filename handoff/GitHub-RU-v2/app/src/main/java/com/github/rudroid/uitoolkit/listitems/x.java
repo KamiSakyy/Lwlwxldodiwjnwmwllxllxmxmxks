@@ -65,16 +65,16 @@ public final class x extends k71.l implements j71.e {
         } else {
             sVar.q0();
         }
-        v2.e eVar = v2.g.f;
+        v2.eShadow eVar = v2.g.f;
         androidx.compose.runtime.t.I(sVar, eVar, d);
-        v2.e eVar2 = v2.g.e;
+        v2.eShadow eVar2 = v2.g.e;
         androidx.compose.runtime.t.I(sVar, eVar2, l);
         Integer valueOf = Integer.valueOf(hashCode);
-        v2.e eVar3 = v2.g.g;
+        v2.eShadow eVar3 = v2.g.g;
         androidx.compose.runtime.t.w(sVar, valueOf, eVar3);
         v2.d dVar = v2.g.h;
         androidx.compose.runtime.t.E(sVar, dVar);
-        v2.e eVar4 = v2.g.d;
+        v2.eShadow eVar4 = v2.g.d;
         androidx.compose.runtime.t.I(sVar, eVar4, c);
         androidx.compose.foundation.layout.y yVar = androidx.compose.foundation.layout.y.a;
         if (fVar == null) {

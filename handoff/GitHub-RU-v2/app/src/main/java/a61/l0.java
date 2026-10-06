@@ -12,7 +12,7 @@ public final class l0 implements y71.i {
         this.t = obj;
     }
 
-    public final Object b(y71.j jVar, a71.c cVar) {
+    public final Object b(y71.jShadow jVar, a71.c cVar) {
         switch (this.r) {
             case 0:
                 Object b = this.s.b(new k0(jVar, (o0) this.t), cVar);

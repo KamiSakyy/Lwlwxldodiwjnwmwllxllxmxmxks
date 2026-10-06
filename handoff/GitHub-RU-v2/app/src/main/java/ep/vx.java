@@ -6,7 +6,7 @@ import jo.sc0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vxShadow implements aaShadow.a {
     public static final vxShadow a = new vxShadow();
-    public static final List b = sy.d0.n("filters");
+    public static final List b = sy.d0Shadow.n("filters");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -4,16 +4,16 @@ import dw.c7;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 import m10.wi;
 import m10.ya0;
 import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 implements aa.a {
-    public static final a0 a = new a0();
-    public static final List b = sy.d0.o("__typename", "id", "title", "titleHTML", "number", "createdAt", "isReadByViewer", "comments", "issueState", "repository", "viewerSubscription", "url", "assignedActors", "closedByPullRequestsReferences", "stateReason", "issueType", "parent");
+public final class a0Shadow implements aa.a {
+    public static final a0Shadow a = new a0Shadow();
+    public static final List b = sy.d0Shadow.o("__typename", "id", "title", "titleHTML", "number", "createdAt", "isReadByViewer", "comments", "issueState", "repository", "viewerSubscription", "url", "assignedActors", "closedByPullRequestsReferences", "stateReason", "issueType", "parent");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0052, code lost:
     
@@ -269,7 +269,7 @@ public final class a0 implements aa.a {
                     continue;
                 case 12:
                     num = num2;
-                    mVar = (m) aa.c.c(x.a, false).a(eVar, wVar);
+                    mVar = (m) aa.c.c(xShadow.a, false).a(eVar, wVar);
                     break;
                 case 13:
                     num = num2;
@@ -322,7 +322,7 @@ public final class a0 implements aa.a {
         fVar.z0("url");
         bVar.b(fVar, wVar, uVar.l);
         fVar.z0("assignedActors");
-        aa.c.c(x.a, false).b(fVar, wVar, uVar.m);
+        aa.c.c(xShadow.a, false).b(fVar, wVar, uVar.m);
         fVar.z0("closedByPullRequestsReferences");
         aa.c.b(aa.c.c(y.a, false)).b(fVar, wVar, uVar.n);
         fVar.z0("stateReason");

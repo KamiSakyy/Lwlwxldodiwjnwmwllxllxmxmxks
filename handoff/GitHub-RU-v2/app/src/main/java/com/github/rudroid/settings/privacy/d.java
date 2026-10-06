@@ -7,7 +7,7 @@ import androidx.lifecycle.d1;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreferenceCompat;
 import com.github.rudroid.activities.WebViewActivity;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -36,7 +36,7 @@ public final /* synthetic */ class d implements e7.j, e7.k {
                 return;
             }
             h hVar = (h) this.r.H0.getValue();
-            b0.z(d1.k(hVar), (a71.h) null, (a0) null, new g(hVar, null), 3);
+            b0.z(d1.k(hVar), (a71.h) null, (a0Shadow) null, new g(hVar, null), 3);
         }
     }
 

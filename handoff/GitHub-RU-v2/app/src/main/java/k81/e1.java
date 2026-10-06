@@ -207,7 +207,7 @@ public class e1 implements SerialDescriptor, l {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List getAnnotations() {
-        return x61.r.r;
+        return x61.rShadow.r;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -223,7 +223,7 @@ public class e1 implements SerialDescriptor, l {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List i(int i) {
         List list = this.f[i];
-        return list == null ? x61.r.r : list;
+        return list == null ? x61.rShadow.r : list;
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, w61.h] */

@@ -49,7 +49,7 @@ public final class y implements aa.i0, bm.k, com.google.android.gms.measurement.
         List list = f50.d.a;
         List list2 = f50.d.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -69,7 +69,7 @@ public final class y implements aa.i0, bm.k, com.google.android.gms.measurement.
     public int hashCode() {
         switch (this.r) {
             case 0:
-                return k71.x.a(y.class).hashCode();
+                return k71.xShadow.a(y.class).hashCode();
             default:
                 return super.hashCode();
         }
@@ -90,7 +90,7 @@ public final class y implements aa.i0, bm.k, com.google.android.gms.measurement.
             bVar.getClass();
             list = (List) bVar.a(str, new k81.d(LegacyProjectWithNumber.Companion.serializer(), 0));
         }
-        list = x61.r.r;
+        list = x61.rShadow.r;
         return new ProjectFilter(list);
     }
 

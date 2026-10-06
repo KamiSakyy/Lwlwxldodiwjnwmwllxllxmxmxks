@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.concurrent.Executor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public class b implements n {
-    public static final b s = new b(0);
-    public static final b t = new b(1);
-    public static final b u = new b(2);
-    public static final b v = new b(3);
-    public static final b w = new b(4);
-    public static final b x = new b(5);
+public class bShadow implements n {
+    public static final bShadow s = new bShadow(0);
+    public static final bShadow t = new bShadow(1);
+    public static final bShadow u = new bShadow(2);
+    public static final bShadow v = new bShadow(3);
+    public static final bShadow w = new bShadow(4);
+    public static final bShadow x = new bShadow(5);
     public final /* synthetic */ int r;
 
     public /* synthetic */ b(int i) {

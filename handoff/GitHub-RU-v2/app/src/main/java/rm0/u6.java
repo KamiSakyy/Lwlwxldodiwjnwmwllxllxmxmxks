@@ -91,7 +91,7 @@ public final class u6 implements z01.v0, yb0, mi0, y90, yf0 {
                     default:
                         throw new NoWhenBranchMatchedException();
                 }
-                return y71.n1.y(new j3(com.github.service.wrapper.a.o(this.s, new ip(str, boVar, new aa.u0(str2)), null, false, null, null, 58), 10), this.t);
+                return y71.n1Shadow.y(new j3(com.github.service.wrapper.a.o(this.s, new ip(str, boVar, new aa.u0(str2)), null, false, null, null, 58), 10), this.t);
             case 1:
                 k71.k.g(reactionContent, "<this>");
                 switch (dz.n.a[reactionContent.ordinal()]) {
@@ -125,7 +125,7 @@ public final class u6 implements z01.v0, yb0, mi0, y90, yf0 {
                     default:
                         throw new NoWhenBranchMatchedException();
                 }
-                return y71.n1.y(new sm.b(com.github.service.wrapper.a.o(this.s, new ht(str, z00Var, new aa.u0(str2)), null, false, null, null, 58), 25), this.t);
+                return y71.n1Shadow.y(new sm.b(com.github.service.wrapper.a.o(this.s, new ht(str, z00Var, new aa.u0(str2)), null, false, null, null, 58), 25), this.t);
             case 2:
                 k71.k.g(reactionContent, "<this>");
                 switch (ab0.k.a[reactionContent.ordinal()]) {
@@ -159,7 +159,7 @@ public final class u6 implements z01.v0, yb0, mi0, y90, yf0 {
                     default:
                         throw new NoWhenBranchMatchedException();
                 }
-                return y71.n1.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new eo(str, zmVar, new aa.u0(str2)), null, false, null, null, 58), 8), this.t);
+                return y71.n1Shadow.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new eo(str, zmVar, new aa.u0(str2)), null, false, null, null, 58), 8), this.t);
             default:
                 k71.k.g(reactionContent, "<this>");
                 switch (jx0.m.a[reactionContent.ordinal()]) {
@@ -193,7 +193,7 @@ public final class u6 implements z01.v0, yb0, mi0, y90, yf0 {
                     default:
                         throw new NoWhenBranchMatchedException();
                 }
-                return y71.n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new kr(str, cvVar, new aa.u0(str2)), null, false, null, null, 58), 28), this.t);
+                return y71.n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new kr(str, cvVar, new aa.u0(str2)), null, false, null, null, 58), 28), this.t);
         }
     }
 

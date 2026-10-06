@@ -36,11 +36,11 @@ public final /* synthetic */ class f0 implements j71.c {
                 List list = (List) obj;
                 p2 p2Var = (p2) g1Var.getData();
                 if (p2Var == null) {
-                    return x61.r.r;
+                    return x61.rShadow.r;
                 }
                 s0Var.v.getClass();
                 k71.k.g(list, "repos");
-                y61.b i = sy.d0.i();
+                y61.b i = sy.d0Shadow.i();
                 i.add(new b0.a(new y0(p2Var.e, p2Var.b, p2Var.c, p2Var.d)));
                 ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
                 Iterator it = list.iterator();
@@ -48,7 +48,7 @@ public final /* synthetic */ class f0 implements j71.c {
                     arrayList.add(new b0.b((p01.n) it.next()));
                 }
                 i.addAll(arrayList);
-                return sy.d0.h(i);
+                return sy.d0Shadow.h(i);
         }
     }
 }

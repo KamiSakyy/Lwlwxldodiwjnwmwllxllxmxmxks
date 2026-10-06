@@ -4,7 +4,7 @@ import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import com.github.service.models.response.Avatar;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
@@ -62,6 +62,6 @@ public final class s {
         o.append(this.h);
         o.append(", viewerIsFollowing=");
         m0.A(o, this.i, ", isViewer=", this.j, ", isPrivate=");
-        return f4.s(o, this.k, ")");
+        return f4Shadow.s(o, this.k, ")");
     }
 }

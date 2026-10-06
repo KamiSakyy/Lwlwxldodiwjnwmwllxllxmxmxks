@@ -15,9 +15,9 @@ public abstract class d {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("DiscussionPoll");
+        List n = sy.d0Shadow.n("DiscussionPoll");
         List list = ps.b.a;
         aa.s c = no.a.c(list, "selections", "DiscussionPoll", n, list);
         ah.Companion.getClass();
@@ -31,11 +31,11 @@ public abstract class d {
         vd.Companion.getClass();
         aa.q0 q0Var2 = vd.a;
         k71.k.g(q0Var2, "type");
-        List n2 = sy.d0.n(new aa.m("pollOption", q0Var2, (String) null, rVar, rVar, r2));
+        List n2 = sy.d0Shadow.n(new aa.m("pollOption", q0Var2, (String) null, rVar, rVar, r2));
         m10.v.Companion.getClass();
         aa.q0 q0Var3 = m10.v.a;
         k71.k.g(q0Var3, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("addDiscussionPollVote", q0Var3, (String) null, rVar, no.a.s(vp.d, new aa.u0(a0.s0.p("pollOptionId", new aa.t("option_id")))), n2));
+        a = sy.d0Shadow.n(new aa.m("addDiscussionPollVote", q0Var3, (String) null, rVar, no.a.s(vp.d, new aa.u0(a0.s0.p("pollOptionId", new aa.t("option_id")))), n2));
     }
 }

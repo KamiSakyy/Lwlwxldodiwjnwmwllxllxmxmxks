@@ -169,7 +169,7 @@ public final class m implements y71.j {
         int i12;
         go0.w wVar;
         int i13;
-        go0.x xVar;
+        go0.xShadow xVar;
         int i14;
         h9.h hVar;
         int i15;
@@ -209,10 +209,10 @@ public final class m implements y71.j {
         in.q qVar2;
         int i32;
         int i33 = this.r;
-        x7<gy0.s> x7Var = x61.r.r;
+        x7<gy0.s> x7Var = x61.rShadow.r;
         x7 x7Var2 = null;
         y71.j jVar3 = this.s;
-        w61.a0 a0Var = w61.a0.a;
+        w61.a0Shadow a0Var = w61.a0.a;
         switch (i33) {
             case 0:
                 if (cVar instanceof l) {
@@ -275,7 +275,7 @@ public final class m implements y71.j {
                             ZonedDateTime zonedDateTime = yVar.d;
                             ZonedDateTime zonedDateTime2 = yVar.e;
                             ZonedDateTime zonedDateTime3 = yVar.f;
-                            hp.x xVar2 = yVar.g;
+                            hp.xShadow xVar2 = yVar.g;
                             if (xVar2 != null) {
                                 hp.w wVar2 = xVar2.b;
                                 if ((wVar2 != null ? wVar2.c : null) != null) {
@@ -413,9 +413,9 @@ public final class m implements y71.j {
                         gy0.q qVar3 = (gy0.q) obj;
                         k71.k.g(qVar3, "<this>");
                         gy0.v vVar2 = qVar3.a;
-                        gy0.u uVar = (gy0.u) in.r.j((vVar2 == null || (tVar = vVar2.c) == null) ? null : tVar.a, "Project is null", new io0.f(20));
+                        gy0.u uVar = (gy0.u) in.rShadow.j((vVar2 == null || (tVar = vVar2.c) == null) ? null : tVar.a, "Project is null", new io0.f(20));
                         gy0.r rVar2 = uVar.b;
-                        l01.l0 l0Var2 = (l01.l0) in.r.j(rVar2 != null ? rVar2.c : null, "Default view is null", new io0.f(21));
+                        l01.l0 l0Var2 = (l01.l0) in.rShadow.j(rVar2 != null ? rVar2.c : null, "Default view is null", new io0.f(21));
                         x7 x7Var3 = uVar.c.a;
                         if (x7Var3 != null) {
                             x7Var = x7Var3;

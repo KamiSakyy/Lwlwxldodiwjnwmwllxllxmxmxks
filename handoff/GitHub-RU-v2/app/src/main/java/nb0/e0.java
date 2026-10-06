@@ -7,7 +7,7 @@ import mb0.t0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 implements aa.a {
     public static final e0 a = new e0();
-    public static final List b = sy.d0.o("__typename", "mobilePushNotificationSettings", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "mobilePushNotificationSettings", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -4,7 +4,7 @@ import com.google.android.gms.internal.measurement.i4;
 import java.lang.reflect.Method;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class e0 extends x0 {
+public final class e0 extends x0Shadow {
     public final /* synthetic */ int d;
     public Method e;
     public int f;
@@ -15,7 +15,7 @@ public final class e0 extends x0 {
         this.f = i;
     }
 
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     public final void a(n0 n0Var, Object obj) {
         switch (this.d) {
             case 0:

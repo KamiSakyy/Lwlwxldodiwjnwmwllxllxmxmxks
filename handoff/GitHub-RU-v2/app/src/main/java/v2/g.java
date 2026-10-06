@@ -13,16 +13,16 @@ public final class g {
     public static final f f32486c = f.f32477t;
 
     /* renamed from: d, reason: collision with root package name */
-    public static final e f32487d = e.f32469v;
+    public static final eShadow f32487d = e.f32469v;
 
     /* renamed from: e, reason: collision with root package name */
-    public static final e f32488e = e.f32470w;
+    public static final eShadow f32488e = e.f32470w;
 
     /* renamed from: f, reason: collision with root package name */
-    public static final e f32489f = e.f32468u;
+    public static final eShadow f32489f = e.f32468u;
 
     /* renamed from: g, reason: collision with root package name */
-    public static final e f32490g = e.f32467t;
+    public static final eShadow f32490g = e.f32467t;
 
     /* renamed from: h, reason: collision with root package name */
     public static final d f32491h = d.f32449t;
@@ -41,18 +41,18 @@ public final class g {
 
     public static Object d;
 
-    public static v2.e f;
+    public static v2.eShadow f;
 
-    public static v2.e e;
+    public static v2.eShadow e;
 
-    public static v2.e g;
+    public static v2.eShadow g;
 
     public static v2.d h;
 
-    public static v2.e d;
+    public static v2.eShadow d;
 
     public static j71.a b;
 
-    public static j71.e e;
+    public static j71.eShadow e;
     public static final Object b = null;
 }

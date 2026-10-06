@@ -15,7 +15,7 @@ import gn0.s9;
 import gn0.tb;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,16 +27,16 @@ public abstract class b {
         tb.Companion.getClass();
         x xVar = tb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("DiscussionPollOption");
+        List n = d0Shadow.n("DiscussionPollOption");
         List list = dg0.a.a;
         s c = no.a.c(list, "selections", "DiscussionPollOption", n, list);
         pb.Companion.getClass();
         x xVar2 = pb.a;
         List r = l.r(new s[]{mVar, c, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         q9.Companion.getClass();
-        List n2 = d0.n(new m("nodes", l0.a(q9.a), (String) null, rVar, rVar, r));
+        List n2 = d0Shadow.n(new m("nodes", l0.a(q9.a), (String) null, rVar, rVar, r));
         m mVar2 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         m mVar3 = new m("question", l0.b(xVar), (String) null, rVar, rVar, rVar);
         lb.Companion.getClass();

@@ -7,7 +7,7 @@ import kc0.tz;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qo implements aaShadow.a {
     public static final qo a = new qo();
-    public static final List b = sy.d0.o(new String[]{"userCount", "pageInfo", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"userCount", "pageInfo", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -21,7 +21,7 @@ public final class qo implements aaShadow.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {
@@ -33,7 +33,7 @@ public final class qo implements aaShadow.a {
                 if (r0 != 2) {
                     break;
                 }
-                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(no.a, true)))).a(eVar, wVar);
+                list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(noShadow.a, true)))).a(eVar, wVar);
             }
         }
         if (num == null) {
@@ -58,6 +58,6 @@ public final class qo implements aaShadow.a {
         fVar.z0("pageInfo");
         aa.c.c(po.a, false).b(fVar, wVar, tzVar.b);
         fVar.z0("nodes");
-        aa.c.b(aa.c.a(aa.c.b(aa.c.c(no.a, true)))).b(fVar, wVar, tzVar.c);
+        aa.c.b(aa.c.a(aa.c.b(aa.c.c(noShadow.a, true)))).b(fVar, wVar, tzVar.c);
     }
 }

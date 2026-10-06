@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import ze.d;
 
@@ -42,7 +42,7 @@ public final class UserOrOgProfileScreenRoute implements Parcelable, d {
 
     public /* synthetic */ UserOrOgProfileScreenRoute(int i, String str, boolean z10) {
         if (1 != (i & 1)) {
-            c1.l(i, 1, UserOrOgProfileScreenRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, UserOrOgProfileScreenRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f17332r = str;

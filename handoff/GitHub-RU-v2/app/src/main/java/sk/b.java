@@ -4,9 +4,9 @@ import java.util.List;
 import k71.k;
 import nl.g;
 import oa.j;
-import sy.d0;
-import x61.r;
-import y71.n1;
+import sy.d0Shadow;
+import x61.rShadow;
+import y71.n1Shadow;
 import y71.y;
 import z01.s;
 
@@ -31,12 +31,12 @@ public final class b {
         k.g(str9, "baseBranch");
         c cVar2 = this.a;
         cVar2.getClass();
-        List list = r.r;
-        List n = str7 != null ? d0.n(new e01.b(str8, str7)) : list;
+        List list = rShadow.r;
+        List n = str7 != null ? d0Shadow.n(new e01.b(str8, str7)) : list;
         if (z) {
-            list = d0.n(new e01.c(str8));
+            list = d0Shadow.n(new e01.c(str8));
         }
-        return b31.b.J(in.r.l(n1.I(b31.b.J(((s) cVar2.a.a(jVar)).b(str, str2, str3, str4, str5, str6, new e01.a(n, list)), jVar, cVar), new a(null, this, jVar, str, str2, str9, str3, cVar))), jVar, cVar);
+        return b31.b.J(in.rShadow.l(n1Shadow.I(b31.b.J(((s) cVar2.a.a(jVar)).b(str, str2, str3, str4, str5, str6, new e01.a(n, list)), jVar, cVar), new a(null, this, jVar, str, str2, str9, str3, cVar))), jVar, cVar);
     }
 
 }

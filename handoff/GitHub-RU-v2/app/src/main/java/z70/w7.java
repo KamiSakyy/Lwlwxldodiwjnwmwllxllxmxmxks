@@ -61,7 +61,7 @@ public abstract class w7 implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, s7Var.b);
         fVar.z0("viewerDidAuthor");
-        jo.f4.C(s7Var.c, aa.c.f, fVar, wVar, "pendingReviews");
+        jo.f4Shadow.C(s7Var.c, aa.c.f, fVar, wVar, "pendingReviews");
         aa.c.b(aa.c.c(v7.a, false)).b(fVar, wVar, s7Var.d);
         List list = o7.a;
         o7.d(fVar, wVar, s7Var.e);

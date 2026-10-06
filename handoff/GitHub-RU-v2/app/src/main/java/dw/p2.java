@@ -7,7 +7,7 @@ import m10.sa;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p2 implements aa.a {
     public static final p2 a = new p2();
-    public static final List b = sy.d0.o("id", "name", "tagName", "publishedAt", "createdAt", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "tagName", "publishedAt", "createdAt", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -25,7 +25,7 @@ public final class p2 implements aa.a {
             } else if (r0 == 1) {
                 str2 = (String) aa.c.i.a(eVar, wVar);
             } else if (r0 != 2) {
-                aa.x xVar = sa.a;
+                aa.xShadow xVar = sa.a;
                 if (r0 == 3) {
                     sa.Companion.getClass();
                     zonedDateTime = (ZonedDateTime) aa.c.b(wVar.e(xVar)).a(eVar, wVar);
@@ -75,7 +75,7 @@ public final class p2 implements aa.a {
         bVar.b(fVar, wVar, u1Var.c);
         fVar.z0("publishedAt");
         sa.Companion.getClass();
-        aa.x xVar = sa.a;
+        aa.xShadow xVar = sa.a;
         aa.c.b(wVar.e(xVar)).b(fVar, wVar, u1Var.d);
         fVar.z0("createdAt");
         wVar.e(xVar).b(fVar, wVar, u1Var.e);

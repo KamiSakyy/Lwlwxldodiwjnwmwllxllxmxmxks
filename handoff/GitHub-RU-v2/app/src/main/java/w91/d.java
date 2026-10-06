@@ -6,14 +6,14 @@ import java.util.List;
 import org.intellij.markdown.MarkdownParsingException;
 import s91.f;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import t71.n;
 import t71.o;
 import t71.w;
 import w61.k;
 import x61.l;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d implements u91.c {
@@ -75,6 +75,6 @@ public final class d implements u91.c {
         k71.k.g(fVar, "stateInfo");
         t91.d dVar = fVar.a;
         int c = c(cVar, dVar);
-        return c != -1 ? d0.n(new v91.e(dVar, q1Var, (n) ((k) a.get(c)).s, cVar)) : r.r;
+        return c != -1 ? d0Shadow.n(new v91.e(dVar, q1Var, (n) ((k) a.get(c)).s, cVar)) : rShadow.r;
     }
 }

@@ -5,7 +5,7 @@ public abstract class ek {
     public static final dk Companion = new dk();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("LineComment", rVar, rVar);
     }
 }

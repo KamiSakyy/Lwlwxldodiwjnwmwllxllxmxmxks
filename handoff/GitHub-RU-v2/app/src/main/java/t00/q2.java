@@ -22,7 +22,7 @@ public final class q2 implements z01.z, mi0 {
     }
 
     public final y71.i a(String str, String str2) {
-        return y71.n1.y(new rm0.v9(new y00.l(com.github.service.wrapper.a.o(this.r, new gi(str, str2 == null ? aa.t0.d : new aa.u0(str2)), (ga.h) null, true, (LinkedHashSet) null, (Set) null, 58), 10), 27), this.s);
+        return y71.n1Shadow.y(new rm0.v9(new y00.l(com.github.service.wrapper.a.o(this.r, new gi(str, str2 == null ? aa.t0.d : new aa.u0(str2)), (ga.h) null, true, (LinkedHashSet) null, (Set) null, 58), 10), 27), this.s);
     }
 
     public final y71.i b(String str, boolean z) {
@@ -32,7 +32,7 @@ public final class q2 implements z01.z, mi0 {
             d1Var.m((CancellationException) null);
         }
         this.t = null;
-        return y71.n1.y(new rm0.f3(new y71.y(new com.github.rudroid.d0(this, (a71.c) null, 8), com.github.service.wrapper.a.o(this.r, new bj("type:issue ".concat(str), "type:pr ".concat(str), str, "type:user ".concat(str), "type:org ".concat(str), str, z), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62)), 3), this.s);
+        return y71.n1Shadow.y(new rm0.f3(new y71.y(new com.github.rudroid.d0(this, (a71.c) null, 8), com.github.service.wrapper.a.o(this.r, new bj("type:issue ".concat(str), "type:pr ".concat(str), str, "type:user ".concat(str), "type:org ".concat(str), str, z), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62)), 3), this.s);
     }
 
     public final Object h() {

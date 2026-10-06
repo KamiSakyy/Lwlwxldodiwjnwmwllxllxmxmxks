@@ -9,11 +9,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import kj.c0;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import v71.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.settings.privacy.SettingsPrivacyViewModel$analyticsDisabled$1", f = "SettingsPrivacyViewModel.kt", l = {28, 41}, m = "invokeSuspend", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -87,7 +87,7 @@ final class g extends c71.j implements j71.e {
                 this.x = i3;
                 this.y = i2;
                 this.z = 2;
-                if (n1.j((y71.i) obj2, this) != aVar) {
+                if (n1Shadow.j((y71.i) obj2, this) != aVar) {
                     it = it2;
                     i = i3;
                     hVar = hVar2;
@@ -113,7 +113,7 @@ final class g extends c71.j implements j71.e {
         String rawValue2 = MobileAppAction.PRESS.getRawValue();
         String zonedDateTime = ZonedDateTime.now(ZoneOffset.UTC).toString();
         k71.k.f(zonedDateTime, "toString(...)");
-        List n = d0.n(new yz0.d(rawValue, rawValue2, zonedDateTime, (String) null, (String) null));
+        List n = d0Shadow.n(new yz0.d(rawValue, rawValue2, zonedDateTime, (String) null, (String) null));
         t tVar = new t(4);
         this.v = hVar;
         this.w = it;
@@ -131,7 +131,7 @@ final class g extends c71.j implements j71.e {
             this.x = i3;
             this.y = i2;
             this.z = 2;
-            if (n1.j((y71.i) obj2, this) != aVar) {
+            if (n1Shadow.j((y71.i) obj2, this) != aVar) {
             }
         }
         return aVar;

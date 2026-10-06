@@ -4,7 +4,7 @@ import aa.x;
 import gn0.tb;
 import gn0.vb;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class j {
@@ -14,7 +14,7 @@ public abstract class j {
         vb.Companion.getClass();
         x xVar = vb.a;
         k71.k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         aa.m mVar = new aa.m("contentHTML", xVar, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         x xVar2 = tb.a;

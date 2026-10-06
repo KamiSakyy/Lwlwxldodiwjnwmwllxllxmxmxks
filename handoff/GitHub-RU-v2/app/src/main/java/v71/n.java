@@ -34,7 +34,7 @@ public final class n extends f1 {
                     AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = a81.f.y;
                     while (true) {
                         Object obj = atomicReferenceFieldUpdater.get(fVar);
-                        a81.t tVar = a81.b.c;
+                        a81.t tVar = a81.bShadow.c;
                         if (k71.k.b(obj, tVar)) {
                             while (!atomicReferenceFieldUpdater.compareAndSet(fVar, tVar, r)) {
                                 if (atomicReferenceFieldUpdater.get(fVar) != tVar) {

@@ -66,7 +66,7 @@ public final class w6 extends c71.j implements j71.e {
                     String str2 = cVar.a;
                     m0Var = new kc0.d0(new kc0.b0(new kc0.g0(cVar, str2), new kc0.f0(new kc0.e0(cVar, str2), cVar.b, str2)));
                 }
-                return y71.n1.y(bVar.k(h0Var, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar.k(h0Var, m0Var), y6Var.t);
             default:
                 aj0.c cVar2 = (aj0.c) this.w;
                 b71.a aVar2 = b71.a.r;
@@ -77,7 +77,7 @@ public final class w6 extends c71.j implements j71.e {
                     String str3 = cVar2.a;
                     m0Var = new kr(new nr(new or(cVar2, str3), new mr(new lr(cVar2, str3), cVar2.b, str3)));
                 }
-                return y71.n1.y(bVar2.k(prVar, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar2.k(prVar, m0Var), y6Var.t);
         }
     }
 }

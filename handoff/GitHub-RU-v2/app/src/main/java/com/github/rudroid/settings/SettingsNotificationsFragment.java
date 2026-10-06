@@ -257,7 +257,7 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
 
     static {
         r71.e pVar = new k71.p(SettingsNotificationsFragment.class, "showToolbar", "getShowToolbar()Z", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         L0 = new r71.e[]{pVar};
         Companion = new a();
     }
@@ -266,11 +266,11 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
         h hVar = new h();
         w61.i iVar = w61.i.s;
         w61.h s = sy.w.s(iVar, new i(hVar));
-        this.I0 = new androidx.lifecycle.l1(k71.x.a(com.github.rudroid.settings.h.class), new j(s), new l(s), new k(s));
+        this.I0 = new androidx.lifecycle.l1(k71.xShadow.a(com.github.rudroid.settings.h.class), new j(s), new l(s), new k(s));
         w61.h s2 = sy.w.s(iVar, new n(new m()));
-        this.J0 = new androidx.lifecycle.l1(k71.x.a(i1.class), new o(s2), new b(s2), new p(s2));
+        this.J0 = new androidx.lifecycle.l1(k71.xShadow.a(i1.class), new o(s2), new b(s2), new p(s2));
         w61.h s3 = sy.w.s(iVar, new d(new c()));
-        this.K0 = new androidx.lifecycle.l1(k71.x.a(j3.class), new e(s3), new g(s3), new f(s3));
+        this.K0 = new androidx.lifecycle.l1(k71.xShadow.a(j3.class), new e(s3), new g(s3), new f(s3));
         f4(new c2(this, 2), new androidx.fragment.app.t0(2));
     }
 
@@ -427,7 +427,7 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
                         com.github.rudroid.projects.triagesheet.triagebottomsheets.compose.e eVar = new com.github.rudroid.projects.triagesheet.triagebottomsheets.compose.e(18, settingsNotificationsFragment, t4);
                         ak.a aVar3 = aVar;
                         k71.k.g(aVar3, "settingType");
-                        v71.b0.z(androidx.lifecycle.d1.k(D4), (a71.h) null, (v71.a0) null, new u1(D4, booleanValue, aVar3, eVar, null), 3);
+                        v71.b0.z(androidx.lifecycle.d1.k(D4), (a71.h) null, (v71.a0Shadow) null, new u1(D4, booleanValue, aVar3, eVar, null), 3);
                     }
                 }
             };
@@ -773,11 +773,11 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
         com.github.rudroid.utilities.w0.a(D4().J, F3(), androidx.lifecycle.w.u, new i2(this, null));
         if (D4().K) {
             i1 D4 = D4();
-            v71.b0.z(androidx.lifecycle.d1.k(D4), (a71.h) null, (v71.a0) null, new r1(D4, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(D4), (a71.h) null, (v71.a0Shadow) null, new r1(D4, null), 3);
         }
         if (D4().L) {
             i1 D42 = D4();
-            v71.b0.z(androidx.lifecycle.d1.k(D42), (a71.h) null, (v71.a0) null, new q1(D42, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(D42), (a71.h) null, (v71.a0Shadow) null, new q1(D42, null), 3);
         }
         if (((Boolean) this.G0.a(this, L0[0])).booleanValue()) {
             ToolBarPreferenceFragmentCompat.w4(this, C3(2131954556));

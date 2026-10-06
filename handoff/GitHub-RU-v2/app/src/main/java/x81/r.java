@@ -40,7 +40,7 @@ public final class r implements k0 {
                     this.t = jVar.readByte() & 255;
                     Logger logger = s.u;
                     if (logger.isLoggable(Level.FINE)) {
-                        h91.k kVar = g.a;
+                        h91.kShadow kVar = g.a;
                         logger.fine(g.b(true, this.u, this.s, readByte, this.t));
                     }
                     readInt = jVar.readInt() & Integer.MAX_VALUE;

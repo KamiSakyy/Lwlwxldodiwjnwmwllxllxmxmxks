@@ -38,7 +38,7 @@ import java.lang.ref.WeakReference;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.WeakHashMap;
-import jo.f4;
+import jo.f4Shadow;
 import l4.b;
 import l4.e;
 import p31.g;
@@ -461,7 +461,7 @@ public class SideSheetBehavior<V extends View> extends b implements p31.b {
         }
         Iterator it = this.v.iterator();
         if (it.hasNext()) {
-            throw f4.g(it);
+            throw f4Shadow.g(it);
         }
         A();
     }

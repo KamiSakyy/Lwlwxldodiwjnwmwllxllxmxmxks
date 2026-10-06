@@ -54,7 +54,7 @@ public abstract class o0 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List getAnnotations() {
-        return x61.r.r;
+        return x61.rShadow.r;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -69,7 +69,7 @@ public abstract class o0 implements SerialDescriptor {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public final List i(int i) {
         if (i >= 0) {
-            return x61.r.r;
+            return x61.rShadow.r;
         }
         StringBuilder o = x.i.o("Illegal index ", i, ", ");
         o.append(a());

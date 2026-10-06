@@ -179,7 +179,7 @@ public final class v2 implements y71.j {
                     sy.y.j(obj2);
                     yi yiVar = ((ri) obj).a;
                     bj bjVar = yiVar != null ? yiVar.d : null;
-                    Collection<xi> collection = x61.r.r;
+                    Collection<xi> collection = x61.rShadow.r;
                     if (bjVar != null) {
                         si siVar = yiVar.d.a;
                         Collection collection2 = siVar != null ? siVar.a : null;
@@ -269,7 +269,7 @@ public final class v2 implements y71.j {
                     sy.y.j(obj2);
                     hj hjVar = ((ej) obj).a;
                     ij ijVar = hjVar != null ? hjVar.c : null;
-                    Collection<gj> collection = x61.r.r;
+                    Collection<gj> collection = x61.rShadow.r;
                     if (ijVar != null) {
                         Collection collection2 = hjVar.c.a.a;
                         if (collection2 != null) {
@@ -619,7 +619,7 @@ public final class v2 implements y71.j {
                     zl zlVar = vlVar.a;
                     List<wl> list = zlVar != null ? zlVar.a.b : null;
                     if (list == null) {
-                        list = x61.r.r;
+                        list = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (wl wlVar : list) {
@@ -681,7 +681,7 @@ public final class v2 implements y71.j {
                     ma0 ma0Var = (ma0) obj;
                     Iterable<na0> iterable = ma0Var.a.a.b;
                     if (iterable == null) {
-                        iterable = x61.r.r;
+                        iterable = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (na0 na0Var : iterable) {
@@ -744,7 +744,7 @@ public final class v2 implements y71.j {
                     jx jxVar = (jx) obj;
                     Iterable<kx> iterable = jxVar.a.c;
                     if (iterable == null) {
-                        iterable = x61.r.r;
+                        iterable = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (kx kxVar : iterable) {
@@ -1066,7 +1066,7 @@ public final class v2 implements y71.j {
                     u10.h4 h4Var = (b4Var == null || (d4Var2 = b4Var.c) == null || (list2 = d4Var2.b.a) == null || (z3Var = (u10.z3) x61.m.f0(list2)) == null) ? null : z3Var.a.b;
                     u10.b4 b4Var2 = x3Var.a;
                     List<u10.y3> S = (b4Var2 == null || (d4Var = b4Var2.c) == null || (list = d4Var.a.b) == null) ? null : x61.m.S(list);
-                    List<u10.a4> list3 = x61.r.r;
+                    List<u10.a4> list3 = x61.rShadow.r;
                     if (S == null) {
                         S = list3;
                     }
@@ -1075,7 +1075,7 @@ public final class v2 implements y71.j {
                         k71.k.g(y3Var, "requiredStatusCheck");
                         String str = y3Var.a;
                         String str2 = y3Var.b;
-                        MergeCheckStatus g = sy.r.g(y9.a.K(y3Var.c));
+                        MergeCheckStatus g = sy.rShadow.g(y9.a.K(y3Var.c));
                         String str3 = y3Var.d;
                         arrayList.add(new bb0.a(str, str2, (String) null, g, "", "", str3 == null ? "" : str3, Boolean.TRUE, (Integer) null));
                     }
@@ -1098,7 +1098,7 @@ public final class v2 implements y71.j {
                                 if (j2Var == null) {
                                     j2Var = hc0.j2.t;
                                 }
-                                MergeCheckStatus h = sy.r.h(j2Var);
+                                MergeCheckStatus h = sy.rShadow.h(j2Var);
                                 String str7 = c4Var.e;
                                 u10.r3 r3Var = s3Var.b;
                                 String str8 = r3Var != null ? r3Var.a : "";
@@ -1109,7 +1109,7 @@ public final class v2 implements y71.j {
                                 if (e4Var != null) {
                                     String str10 = e4Var.a;
                                     String str11 = e4Var.b;
-                                    MergeCheckStatus g2 = sy.r.g(y9.a.K(e4Var.c));
+                                    MergeCheckStatus g2 = sy.rShadow.g(y9.a.K(e4Var.c));
                                     String str12 = e4Var.f;
                                     String str13 = str12 == null ? "" : str12;
                                     String str14 = e4Var.d;
@@ -1333,7 +1333,7 @@ public final class v2 implements y71.j {
                 i = k4Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    yz0.y7 f = sy.p.f((e60) obj);
+                    yz0.y7 f = sy.pShadow.f((e60) obj);
                     k4Var.v = 1;
                     if (this.s.c(f, k4Var) == aVar) {
                         return aVar;
@@ -1374,7 +1374,7 @@ public final class v2 implements y71.j {
                 i = l4Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    yz0.y7 f = sy.p.f((e60) obj);
+                    yz0.y7 f = sy.pShadow.f((e60) obj);
                     l4Var.v = 1;
                     if (this.s.c(f, l4Var) == aVar) {
                         return aVar;
@@ -1429,7 +1429,7 @@ public final class v2 implements y71.j {
                     w60 w60Var = (v60Var == null || (t60Var3 = v60Var.b) == null) ? null : t60Var3.c;
                     p60 p60Var = (v60Var == null || (t60Var2 = v60Var.b) == null) ? null : t60Var2.d;
                     List<r60> list = w60Var != null ? w60Var.a : null;
-                    List<q60> list2 = x61.r.r;
+                    List<q60> list2 = x61.rShadow.r;
                     if (list == null) {
                         list = list2;
                     }
@@ -1632,11 +1632,11 @@ public final class v2 implements y71.j {
     /* JADX WARN: Type inference failed for: r13v18 */
     /* JADX WARN: Type inference failed for: r13v19 */
     /* JADX WARN: Type inference failed for: r13v20, types: [java.util.List] */
-    /* JADX WARN: Type inference failed for: r13v21, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r13v21, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r13v22, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r14v10, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r2v29, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r2v48, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r2v48, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r2v49, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r2v50, types: [java.util.ArrayList] */
     /* JADX WARN: Type inference failed for: r5v36, types: [java.util.ArrayList] */
@@ -1665,7 +1665,7 @@ public final class v2 implements y71.j {
         boolean z3;
         i60.d dVar;
         boolean z4;
-        x61.r rVar;
+        x61.rShadow rVar;
         i60.a aVar2;
         List list2;
         z70.i5 i5Var;
@@ -1722,10 +1722,10 @@ public final class v2 implements y71.j {
         boolean z15;
         i60.n nVar;
         ArrayList arrayList4;
-        x61.r rVar2;
+        x61.rShadow rVar2;
         i60.k kVar;
         boolean z16;
-        x61.r rVar3;
+        x61.rShadow rVar3;
         List list6;
         boolean z17;
         yz0.n2 n2Var;
@@ -1786,7 +1786,7 @@ public final class v2 implements y71.j {
                                 w80.k2 k2Var = i2Var != null ? i2Var.c : null;
                                 boolean z18 = false;
                                 j2Var = null;
-                                x61.r rVar4 = x61.r.r;
+                                x61.rShadow rVar4 = x61.rShadow.r;
                                 if (j2Var4 != null) {
                                     va0.a aVar5 = va0.b.Companion;
                                     SubscriptionState D = a.a.D(evVar);
@@ -1853,13 +1853,13 @@ public final class v2 implements y71.j {
                                             IssueOrPullRequestState issueOrPullRequestState3 = issueOrPullRequestState2;
                                             com.github.service.models.response.a aVar7 = new com.github.service.models.response.a(w2Var != null ? w2Var.b : "", t.q.q(w2Var != null ? w2Var.c : null), (String) null, false, (String) null, 60);
                                             boolean b = k71.k.b(c3Var.j, Boolean.TRUE);
-                                            bb0.b bVar2 = new bb0.b(c3Var.x, c3Var.l, new yz0.a0(str13));
+                                            bb0.b bVar2 = new bb0.b(c3Var.x, c3Var.l, new yz0.a0Shadow(str13));
                                             ArrayList f = sy.c0.f(cVar2, str13);
                                             boolean z24 = cVar2.c;
                                             w80.y2 y2Var = c3Var.o;
                                             bb0.g e = sy.s.e(y2Var != null ? y2Var.c : null);
                                             ArrayList b2 = sy.f0.b(c3Var.A);
-                                            List c = sy.p.c(c3Var.B);
+                                            List c = sy.pShadow.c(c3Var.B);
                                             list5 = c3Var.p.a;
                                             if (list5 == null) {
                                                 list5 = rVar4;
@@ -1980,13 +1980,13 @@ public final class v2 implements y71.j {
                                         IssueOrPullRequestState issueOrPullRequestState32 = issueOrPullRequestState2;
                                         com.github.service.models.response.a aVar72 = new com.github.service.models.response.a(w2Var2 != null ? w2Var2.b : "", t.q.q(w2Var2 != null ? w2Var2.c : null), (String) null, false, (String) null, 60);
                                         boolean b3 = k71.k.b(c3Var.j, Boolean.TRUE);
-                                        bb0.b bVar22 = new bb0.b(c3Var.x, c3Var.l, new yz0.a0(str13));
+                                        bb0.b bVar22 = new bb0.b(c3Var.x, c3Var.l, new yz0.a0Shadow(str13));
                                         ArrayList f2 = sy.c0.f(cVar2, str13);
                                         boolean z242 = cVar2.c;
                                         w80.y2 y2Var2 = c3Var.o;
                                         bb0.g e2 = sy.s.e(y2Var2 != null ? y2Var2.c : null);
                                         ArrayList b22 = sy.f0.b(c3Var.A);
-                                        List c2 = sy.p.c(c3Var.B);
+                                        List c2 = sy.pShadow.c(c3Var.B);
                                         list5 = c3Var.p.a;
                                         if (list5 == null) {
                                         }
@@ -2044,13 +2044,13 @@ public final class v2 implements y71.j {
                                     IssueOrPullRequestState issueOrPullRequestState322 = issueOrPullRequestState2;
                                     com.github.service.models.response.a aVar722 = new com.github.service.models.response.a(w2Var22 != null ? w2Var22.b : "", t.q.q(w2Var22 != null ? w2Var22.c : null), (String) null, false, (String) null, 60);
                                     boolean b32 = k71.k.b(c3Var.j, Boolean.TRUE);
-                                    bb0.b bVar222 = new bb0.b(c3Var.x, c3Var.l, new yz0.a0(str13));
+                                    bb0.b bVar222 = new bb0.b(c3Var.x, c3Var.l, new yz0.a0Shadow(str13));
                                     ArrayList f22 = sy.c0.f(cVar2, str13);
                                     boolean z2422 = cVar2.c;
                                     w80.y2 y2Var22 = c3Var.o;
                                     bb0.g e22 = sy.s.e(y2Var22 != null ? y2Var22.c : null);
                                     ArrayList b222 = sy.f0.b(c3Var.A);
-                                    List c22 = sy.p.c(c3Var.B);
+                                    List c22 = sy.pShadow.c(c3Var.B);
                                     list5 = c3Var.p.a;
                                     if (list5 == null) {
                                     }
@@ -2186,7 +2186,7 @@ public final class v2 implements y71.j {
                                                 z70.o4 o4Var = l5Var.E;
                                                 bb0.g e3 = sy.s.e(o4Var != null ? o4Var.c : null);
                                                 ArrayList b5 = sy.f0.b(l5Var.U);
-                                                List c3 = sy.p.c(l5Var.V);
+                                                List c3 = sy.pShadow.c(l5Var.V);
                                                 list = l5Var.F.a;
                                                 if (list == null) {
                                                     list = rVar4;
@@ -2426,7 +2426,7 @@ public final class v2 implements y71.j {
                                                         }
                                                         i5++;
                                                         if (i5 < 0) {
-                                                            sy.d0.w();
+                                                            sy.d0Shadow.w();
                                                             throw null;
                                                         }
                                                         a = arrayList13;
@@ -2517,7 +2517,7 @@ public final class v2 implements y71.j {
                                             z70.o4 o4Var2 = l5Var.E;
                                             bb0.g e32 = sy.s.e(o4Var2 != null ? o4Var2.c : null);
                                             ArrayList b52 = sy.f0.b(l5Var.U);
-                                            List c32 = sy.p.c(l5Var.V);
+                                            List c32 = sy.pShadow.c(l5Var.V);
                                             list = l5Var.F.a;
                                             if (list == null) {
                                             }
@@ -2662,7 +2662,7 @@ public final class v2 implements y71.j {
                                     z70.o4 o4Var22 = l5Var.E;
                                     bb0.g e322 = sy.s.e(o4Var22 != null ? o4Var22.c : null);
                                     ArrayList b522 = sy.f0.b(l5Var.U);
-                                    List c322 = sy.p.c(l5Var.V);
+                                    List c322 = sy.pShadow.c(l5Var.V);
                                     list = l5Var.F.a;
                                     if (list == null) {
                                     }
@@ -2846,7 +2846,7 @@ public final class v2 implements y71.j {
                                 }
                             }
                             if (r13 == 0) {
-                                r13 = x61.r.r;
+                                r13 = x61.rShadow.r;
                             }
                             yz0.g1 g1Var = new yz0.g1(new yz0.p2(str38, str39, str40, i40, c4), new yz0.c4(r13, new x01.i(qVar != null ? qVar.e.a.b : null, qVar != null ? qVar.e.a.a : false, false)));
                             z2Var.v = 1;
@@ -2922,7 +2922,7 @@ public final class v2 implements y71.j {
                             sy.y.j(obj9);
                             ad adVar = ((zc) obj).a;
                             if (adVar == null || (list9 = adVar.c.b.a) == null) {
-                                r2 = x61.r.r;
+                                r2 = x61.rShadow.r;
                             } else {
                                 r2 = new ArrayList();
                                 for (w80.u3 u3Var : list9) {

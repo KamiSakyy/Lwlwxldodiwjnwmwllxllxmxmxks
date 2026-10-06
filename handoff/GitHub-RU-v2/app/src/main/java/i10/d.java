@@ -5,7 +5,7 @@ import aa.p0;
 import aa.q0;
 import com.github.rudroid.copilot.h1;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.vp;
 import m10.xo;
 
@@ -39,7 +39,7 @@ public final class d implements n0 {
         List list = k10.a.a;
         List list2 = k10.a.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

@@ -7,7 +7,7 @@ import jo.dc0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lx implements aaShadow.a {
     public static final lx a = new lx();
-    public static final List b = sy.d0.n("updateDiscussionComment");
+    public static final List b = sy.d0Shadow.n("updateDiscussionComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

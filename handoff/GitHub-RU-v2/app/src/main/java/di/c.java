@@ -12,7 +12,7 @@ import com.github.rudroid.activities.p2;
 import java.util.WeakHashMap;
 import k.i;
 import k71.k;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -53,7 +53,7 @@ public abstract class c {
             WeakHashMap weakHashMap = c1.a;
             t0.m(findViewById, q1Var);
         }
-        b0.z(d1.i(iVar), (h) null, (a0) null, new b(i4, i5, null, iVar), 3);
+        b0.z(d1.i(iVar), (h) null, (a0Shadow) null, new b(i4, i5, null, iVar), 3);
     }
 
 

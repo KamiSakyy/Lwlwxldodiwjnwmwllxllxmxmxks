@@ -3,7 +3,7 @@ package uu0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class f1 implements aa.a {
+public abstract class f1Shadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"id", "projectItems", "__typename"});
 
     public static c1 c(ea.e eVar, aa.w wVar) {

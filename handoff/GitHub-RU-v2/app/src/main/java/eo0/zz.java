@@ -6,7 +6,7 @@ import jn0.fg0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zz implements aaShadow.a {
     public static final zz a = new zz();
-    public static final List b = sy.d0.o(new String[]{"hasCreatedLists", "id", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"hasCreatedLists", "id", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -49,7 +49,7 @@ public final class zz implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(fg0Var, "value");
         fVar.z0("hasCreatedLists");
-        jo.f4.C(fg0Var.a, aa.c.f, fVar, wVar, "id");
+        jo.f4Shadow.C(fg0Var.a, aa.c.f, fVar, wVar, "id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, fg0Var.b);
         fVar.z0("__typename");

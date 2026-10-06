@@ -18,8 +18,8 @@ public abstract class c1 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List r = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("MarkdownFileType", sy.d0.n("MarkdownFileType"), sy.d0.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar))), new aa.n("TextFileType", sy.d0.n("TextFileType"), sy.d0.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar)))});
+        x61.rShadow rVar = x61.rShadow.r;
+        List r = x61.l.r(new aa.s[]{new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.n("MarkdownFileType", sy.d0Shadow.n("MarkdownFileType"), sy.d0Shadow.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar))), new aa.n("TextFileType", sy.d0Shadow.n("TextFileType"), sy.d0Shadow.n(new aa.m("contentRaw", xVar, (String) null, rVar, rVar, rVar)))});
         aa.m mVar = new aa.m("extension", xVar, (String) null, rVar, rVar, rVar);
         s9.Companion.getClass();
         aa.x0 x0Var = s9.a;
@@ -38,7 +38,7 @@ public abstract class c1 {
         List list = ka0.a.a;
         aa.s c = no.a.c(list, "selections", "Node", r4, list);
         ta.Companion.getClass();
-        List r5 = x61.l.r(new aa.s[]{mVar3, c, new aa.m("oid", v8.l0.b(ta.a), (String) null, rVar, rVar, rVar), new aa.n("Commit", sy.d0.n("Commit"), r3)});
+        List r5 = x61.l.r(new aa.s[]{mVar3, c, new aa.m("oid", v8.l0.b(ta.a), (String) null, rVar, rVar, rVar), new aa.n("Commit", sy.d0Shadow.n("Commit"), r3)});
         aa.m mVar4 = new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
         ra.Companion.getClass();
         aa.j0 j0Var = ra.a;
@@ -48,6 +48,6 @@ public abstract class c1 {
         aa.q0 q0Var2 = ap.k0;
         k71.k.g(q0Var2, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("name"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r6));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("name"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r6));
     }
 }

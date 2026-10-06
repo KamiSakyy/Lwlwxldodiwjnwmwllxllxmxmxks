@@ -7,7 +7,7 @@ import ow0.c1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 implements aa.a {
     public static final n0 a = new n0();
-    public static final List b = sy.d0.n("issue");
+    public static final List b = sy.d0Shadow.n("issue");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

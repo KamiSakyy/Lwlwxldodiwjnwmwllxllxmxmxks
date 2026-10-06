@@ -86,7 +86,7 @@ public abstract class v1 implements aaShadow.a {
         bVar.b(fVar, wVar, e3Var.c);
         fVar.z0("isCopilot");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(e3Var.d, bVar2, fVar, wVar, "login");
+        jo.f4Shadow.C(e3Var.d, bVar2, fVar, wVar, "login");
         bVar.b(fVar, wVar, e3Var.e);
         fVar.z0("isAgent");
         bVar2.b(fVar, wVar, Boolean.valueOf(e3Var.f));

@@ -9,10 +9,10 @@ import com.github.rudroid.utilities.ui.g1;
 import java.util.List;
 import k71.k;
 import oa.m;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.w1;
 import y71.y1;
 
@@ -52,7 +52,7 @@ public final class a extends k1 implements com.github.rudroid.utilities.viewmode
         this.f15270u = cVar;
         this.f15271v = (String) h2.a(a1Var, "CloseIssueAsDuplicateViewModelEXTRA_ISSUE_ID_TO_MODIFY");
         g1.Companion.getClass();
-        y1 c10 = n1.c(g1.a.a());
+        y1 c10 = n1Shadow.c(g1.a.a());
         this.f15272w = c10;
         this.f15273x = new i1(c10);
     }
@@ -62,7 +62,7 @@ public final class a extends k1 implements com.github.rudroid.utilities.viewmode
         if (list.isEmpty()) {
             return;
         }
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new d(this, list, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new d(this, list, null), 3);
     }
 
     @Override // com.github.rudroid.issueorpullrequest.selectissue.n0

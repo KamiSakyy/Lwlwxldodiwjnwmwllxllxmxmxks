@@ -28,7 +28,7 @@ import k71.k;
 import m11.s;
 import v2.t;
 import v41.i;
-import v41.q;
+import v41.qShadow;
 import v41.u;
 import v41.v;
 import v8.x;
@@ -39,7 +39,7 @@ import x41.e;
 import x41.f;
 import x41.h;
 import x41.n;
-import y41.a0;
+import y41.a0Shadow;
 import y41.b0;
 import y41.c1;
 import y41.c2;
@@ -58,7 +58,7 @@ import y41.v0;
 import y41.z0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class d {
+public final class dShadow {
     public Object a;
     public Object b;
     public Object c;
@@ -77,7 +77,7 @@ public final class d {
         this.g = null;
     }
 
-    public static p0 a(p0 p0Var, f fVar, d dVar, Map map) {
+    public static p0 a(p0 p0Var, f fVar, dShadow dVar, Map map) {
         Map unmodifiableMap;
         Map unmodifiableMap2;
         Map unmodifiableMap3;
@@ -121,7 +121,7 @@ public final class d {
         return a.a();
     }
 
-    public static j2 b(p0 p0Var, d dVar) {
+    public static j2 b(p0 p0Var, dShadow dVar) {
         List unmodifiableList;
         q1 q1Var = (q1) dVar.f;
         synchronized (q1Var) {
@@ -192,12 +192,12 @@ public final class d {
         }
     }
 
-    public static d e(Context context, v vVar, d dVar, v41.a aVar, f fVar, d dVar2, e51.a aVar2, d51.d dVar3, t tVar, i iVar, w41.c cVar) {
+    public static d e(Context context, v vVar, dShadow dVar, v41.a aVar, f fVar, dShadow dVar2, e51.a aVar2, d51.dShadow dVar3, t tVar, i iVar, w41.c cVar) {
         q qVar = new q(context, vVar, aVar, aVar2, dVar3);
         b bVar = new b(dVar, dVar3, iVar);
         z41.c cVar2 = c51.a.b;
         s.b(context);
-        return new d(qVar, bVar, new c51.a(new c51.d(s.a().c(new k11.a(c51.a.c, c51.a.d)).a("FIREBASE_CRASHLYTICS_REPORT", new j11.c("json"), c51.a.e), dVar3.c(), tVar)), fVar, dVar2, vVar, cVar);
+        return new dShadow(qVar, bVar, new c51.a(new c51.d(s.a().c(new k11.a(c51.a.c, c51.a.d)).a("FIREBASE_CRASHLYTICS_REPORT", new j11.c("json"), c51.a.e), dVar3.c(), tVar)), fVar, dVar2, vVar, cVar);
     }
 
     public static List g(Map map) {
@@ -219,7 +219,7 @@ public final class d {
     }
 
     public static synchronized void i(File file) {
-        synchronized (d.class) {
+        synchronized (dShadow.class) {
             try {
                 if (file.exists()) {
                     if (file.isDirectory()) {
@@ -366,7 +366,7 @@ public final class d {
         p0 a3 = o0Var.a();
         Map map = cVar.c;
         f fVar = (f) this.d;
-        d dVar = (d) this.e;
+        dShadow dVar = (dShadow) this.e;
         final j2 b4 = b(a(a3, fVar, dVar, map), dVar);
         if (z) {
             ((b) this.b).d(b4, cVar.a, equals);
@@ -374,7 +374,7 @@ public final class d {
             ((w41.c) this.g).b.a(new Runnable() { // from class: v41.w
                 @Override // java.lang.Runnable
                 public final void run() {
-                    b51.d dVar2 = b51.d.this;
+                    b51.dShadow dVar2 = b51.dShadow.this;
                     dVar2.getClass();
                     Log.isLoggable("FirebaseCrashlytics", 3);
                     ((b51.b) dVar2.b).d(b4, cVar.a, equals);
@@ -426,7 +426,7 @@ public final class d {
                     bVar = new v41.b(a3.a(), bVar.b, bVar.c);
                 }
                 boolean z = str != null;
-                c51.d dVar = aVar.a;
+                c51.dShadow dVar = aVar.a;
                 synchronized (dVar.f) {
                     try {
                         gVar = new g();
@@ -468,7 +468,7 @@ public final class d {
             StringBuilder sb = new StringBuilder(".crashlytics.v3");
             sb.append(File.separator);
             if (str2.length() > 40) {
-                replaceAll = v41.g.h(str2);
+                replaceAll = v41.gShadow.h(str2);
             } else {
                 replaceAll = str2.replaceAll("[^a-zA-Z0-9.]", "_");
             }
@@ -494,7 +494,7 @@ public final class d {
         this.g = file5;
     }
 
-    public d(String str, d dVar, w41.c cVar) {
+    public d(String str, dShadow dVar, w41.c cVar) {
         this.d = new t1(this, false);
         this.e = new t1(this, true);
         this.f = new q1(5);
@@ -504,7 +504,7 @@ public final class d {
         this.c = cVar;
     }
 
-    public d(q qVar, b bVar, c51.a aVar, f fVar, d dVar, v vVar, w41.c cVar) {
+    public d(q qVar, b bVar, c51.a aVar, f fVar, dShadow dVar, v vVar, w41.c cVar) {
         this.a = qVar;
         this.b = bVar;
         this.c = aVar;

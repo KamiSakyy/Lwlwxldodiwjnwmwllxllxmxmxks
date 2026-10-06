@@ -27,7 +27,7 @@ public final /* synthetic */ class o implements j71.e {
                 N = new k(configureShortcutFragment, 3);
                 sVar.n0(N);
             }
-            qg.p.c(null, p0, null, 0L, (j71.a) N, 0, 0.0f, 0.0f, 0, 0, r1.i.d(-1214205444, new p(configureShortcutFragment, this.s, this.t), sVar), sVar, 0, 6, 1005);
+            qg.pShadow.c(null, p0, null, 0L, (j71.a) N, 0, 0.0f, 0.0f, 0, 0, r1.i.d(-1214205444, new p(configureShortcutFragment, this.s, this.t), sVar), sVar, 0, 6, 1005);
         } else {
             sVar.V();
         }

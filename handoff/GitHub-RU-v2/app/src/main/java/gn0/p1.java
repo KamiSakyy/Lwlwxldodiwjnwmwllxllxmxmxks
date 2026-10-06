@@ -7,8 +7,8 @@ public abstract class p1 {
     public static final o1 Companion = new o1();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("AutomaticBaseChangeSucceededEvent", n, sy.d0.n(yh.a));
+        new aa.q0("AutomaticBaseChangeSucceededEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

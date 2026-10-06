@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.repositories.RepositoriesViewType;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import q01.p;
 import rf.d;
@@ -43,7 +43,7 @@ public final class RepositoriesEntryPointRoute implements d {
 
     public /* synthetic */ RepositoriesEntryPointRoute(int i, RepositoriesViewType repositoriesViewType, String str, String str2, Boolean bool, Boolean bool2) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, RepositoriesEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, RepositoriesEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f20017a = repositoriesViewType;

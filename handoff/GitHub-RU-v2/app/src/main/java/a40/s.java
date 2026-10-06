@@ -28,7 +28,7 @@ public abstract class s implements aa.a {
                 if (r0 != 4) {
                     break;
                 }
-                jVar = (j) aa.c.c(x.a, false).a(eVar, wVar);
+                jVar = (j) aa.c.c(xShadow.a, false).a(eVar, wVar);
             }
         }
         if (str == null) {
@@ -64,6 +64,6 @@ public abstract class s implements aa.a {
         fVar.z0("author");
         aa.c.b(aa.c.c(o.a, false)).b(fVar, wVar, eVar.d);
         fVar.z0("repository");
-        aa.c.c(x.a, false).b(fVar, wVar, eVar.e);
+        aa.c.c(xShadow.a, false).b(fVar, wVar, eVar.e);
     }
 }

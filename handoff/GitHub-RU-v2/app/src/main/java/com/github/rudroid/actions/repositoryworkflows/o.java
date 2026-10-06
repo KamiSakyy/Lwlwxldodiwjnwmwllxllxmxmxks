@@ -26,7 +26,7 @@ public final /* synthetic */ class o implements j71.c {
                 u uVar = this.f5164s;
                 y1 y1Var = uVar.f5180y;
                 fl.b b10 = fl.a.b(fl.b.Companion, bVar, uVar.f5178w);
-                mn.x xVar = (mn.x) ((g1) y1Var.getValue()).getData();
+                mn.xShadow xVar = (mn.xShadow) ((g1) y1Var.getValue()).getData();
                 ArrayList arrayList = xVar != null ? xVar.a : null;
                 uVar.P(y1Var, b10, arrayList == null || arrayList.isEmpty());
                 break;
@@ -34,7 +34,7 @@ public final /* synthetic */ class o implements j71.c {
                 u uVar2 = this.f5164s;
                 y1 y1Var2 = uVar2.f5180y;
                 fl.b b11 = fl.a.b(fl.b.Companion, bVar, uVar2.f5178w);
-                mn.x xVar2 = (mn.x) ((g1) y1Var2.getValue()).getData();
+                mn.xShadow xVar2 = (mn.xShadow) ((g1) y1Var2.getValue()).getData();
                 ArrayList arrayList2 = xVar2 != null ? xVar2.a : null;
                 uVar2.P(y1Var2, b11, arrayList2 == null || arrayList2.isEmpty());
                 break;

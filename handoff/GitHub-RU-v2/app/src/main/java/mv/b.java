@@ -19,7 +19,7 @@ import m10.kb0;
 import m10.rz;
 import m10.wg;
 import m10.zy;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -31,8 +31,8 @@ public abstract class b {
         ah.Companion.getClass();
         x xVar = ah.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("id", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("id", b, (String) null, rVar, rVar, rVar));
         m mVar = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
@@ -46,12 +46,12 @@ public abstract class b {
         s mVar5 = new m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         List r2 = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = fq.b.a;
-        List r3 = l.r(new s[]{mVar4, mVar5, no.a.c(list, "selections", "Actor", r2, list), new n("User", d0.n("User"), n), new n("Bot", d0.n("Bot"), r)});
+        List r3 = l.r(new s[]{mVar4, mVar5, no.a.c(list, "selections", "Actor", r2, list), new n("User", d0Shadow.n("User"), n), new n("Bot", d0Shadow.n("Bot"), r)});
         List r4 = l.r(new m[]{new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         ib0.Companion.getClass();
-        List n2 = d0.n(new m("nodes", l0.a(ib0.a), (String) null, rVar, rVar, r4));
+        List n2 = d0Shadow.n(new m("nodes", l0.a(ib0.a), (String) null, rVar, rVar, r4));
         ch.Companion.getClass();
-        List n3 = d0.n(new m("totalCount", l0.b(ch.a), (String) null, rVar, rVar, rVar));
+        List n3 = d0Shadow.n(new m("totalCount", l0.b(ch.a), (String) null, rVar, rVar, rVar));
         m mVar6 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         m mVar7 = new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar);
         m mVar8 = new m("authorCanPushToRepository", l0.b(xVar3), (String) null, rVar, rVar, rVar);

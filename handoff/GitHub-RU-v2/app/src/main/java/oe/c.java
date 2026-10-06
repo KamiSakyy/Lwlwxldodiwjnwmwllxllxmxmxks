@@ -15,7 +15,7 @@ import yz0.d3;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class c implements l, v {
-    public lg.b A;
+    public lg.bShadow A;
     public int B;
     public StatusState C;
     public PullRequestState D;
@@ -57,7 +57,7 @@ public final class c implements l, v {
     /* renamed from: z, reason: collision with root package name */
     public List f30173z;
 
-    public /* synthetic */ c(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, String str3, String str4, List list, lg.b bVar, int i10, StatusState statusState, PullRequestState pullRequestState, boolean z11, b0 b0Var, ReviewDecision reviewDecision, int i11, Integer num, boolean z12, q qVar, String str5) {
+    public /* synthetic */ c(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, String str3, String str4, List list, lg.bShadow bVar, int i10, StatusState statusState, PullRequestState pullRequestState, boolean z11, b0 b0Var, ReviewDecision reviewDecision, int i11, Integer num, boolean z12, q qVar, String str5) {
         this(str, str2, i, z10, zonedDateTime, d3Var, str3, str4, list, bVar, i10, statusState, pullRequestState, z11, b0Var, reviewDecision, i11, num, z12, qVar, str5, 5, 5);
     }
 
@@ -69,7 +69,7 @@ public final class c implements l, v {
         String str3 = cVar.f30171x;
         String str4 = cVar.f30172y;
         List list = cVar.f30173z;
-        lg.b bVar = cVar.A;
+        lg.bShadow bVar = cVar.A;
         int i10 = cVar.B;
         StatusState statusState = cVar.C;
         PullRequestState pullRequestState = cVar.D;
@@ -173,7 +173,7 @@ public final class c implements l, v {
         return s0.l(o5, this.N, ")");
     }
 
-    public c(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, String str3, String str4, List list, lg.b bVar, int i10, StatusState statusState, PullRequestState pullRequestState, boolean z11, b0 b0Var, ReviewDecision reviewDecision, int i11, Integer num, boolean z12, q qVar, String str5, int i12, int i13) {
+    public c(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, String str3, String str4, List list, lg.bShadow bVar, int i10, StatusState statusState, PullRequestState pullRequestState, boolean z11, b0 b0Var, ReviewDecision reviewDecision, int i11, Integer num, boolean z12, q qVar, String str5, int i12, int i13) {
         k71.k.g(pullRequestState, "pullRequestStatus");
         k71.k.g(str5, "stableId");
         this.f30165r = str;

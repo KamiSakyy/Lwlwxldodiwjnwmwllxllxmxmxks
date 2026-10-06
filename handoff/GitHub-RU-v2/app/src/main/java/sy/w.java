@@ -458,7 +458,7 @@ public abstract class w {
         xt.b bVar3 = kVar.f;
         String str8 = kVar.b;
         xt.a aVar2 = kVar.c;
-        z01.p pVar = null;
+        z01.pShadow pVar = null;
         String q = l0.q(aVar2 != null ? aVar2.b : null);
         if (bVar3 == null || (cVar4 = bVar3.d) == null || (bVar2 = cVar4.b) == null || (str = bVar2.c) == null) {
             str = "";
@@ -656,7 +656,7 @@ public abstract class w {
 
     public static final mn.p p(g2 g2Var) {
         k71.k.g(g2Var, "<this>");
-        mn.o oVar = mn.p.Companion;
+        mn.oShadow oVar = mn.p.Companion;
         List list = g2Var.a;
         String str = g2Var.e;
         String str2 = g2Var.b;
@@ -696,7 +696,7 @@ public abstract class w {
             return new w61.p(aVar);
         }
         if (ordinal == 1) {
-            w61.o oVar = new w61.o();
+            w61.oShadow oVar = new w61.o();
             oVar.r = aVar;
             oVar.s = xVar;
             return oVar;

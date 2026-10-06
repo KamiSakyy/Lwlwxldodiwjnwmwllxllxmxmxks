@@ -12,7 +12,7 @@ import vz.w;
 import vz.y;
 import vz.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends c71.j implements j71.e {
@@ -109,7 +109,7 @@ public final class c extends c71.j implements j71.e {
                         this.B = vVar;
                         this.w = i;
                         this.x = 1;
-                        v = n1.v(com.github.service.wrapper.a.o(uVar.s, new b0(new u0(new Integer(min)), str == null ? t0.d : new u0(str), this.A), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), this);
+                        v = n1Shadow.v(com.github.service.wrapper.a.o(uVar.s, new b0(new u0(new Integer(min)), str == null ? t0.d : new u0(str), this.A), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), this);
                         if (v == aVar) {
                             return aVar;
                         }
@@ -146,7 +146,7 @@ public final class c extends c71.j implements j71.e {
                             w wVar = zVar2.b;
                             vz.a0 a0Var = wVar.b;
                             List list = wVar.c;
-                            List list2 = x61.r.r;
+                            List list2 = x61.rShadow.r;
                             if (list == null) {
                                 list = list2;
                             }
@@ -206,7 +206,7 @@ public final class c extends c71.j implements j71.e {
                         this.B = vVar3;
                         this.w = i2;
                         this.x = 1;
-                        v2 = n1.v(com.github.service.wrapper.a.o(uVar2.s, new yx0.b0(new u0(new Integer(min2)), str4 == null ? t0.d : new u0(str4), this.A), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), this);
+                        v2 = n1Shadow.v(com.github.service.wrapper.a.o(uVar2.s, new yx0.b0(new u0(new Integer(min2)), str4 == null ? t0.d : new u0(str4), this.A), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 62), this);
                         if (v2 == aVar2) {
                             return aVar2;
                         }
@@ -243,7 +243,7 @@ public final class c extends c71.j implements j71.e {
                             yx0.w wVar3 = zVar5.b;
                             yx0.a0 a0Var2 = wVar3.b;
                             List list4 = wVar3.c;
-                            List list5 = x61.r.r;
+                            List list5 = x61.rShadow.r;
                             if (list4 == null) {
                                 list4 = list5;
                             }

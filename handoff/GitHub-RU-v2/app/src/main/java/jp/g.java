@@ -23,7 +23,7 @@ import m10.mr;
 import m10.p00;
 import m10.rf0;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -35,9 +35,9 @@ public abstract class g {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Ref");
+        List n = d0Shadow.n("Ref");
         List list = aw.a.a;
         s c = no.a.c(list, "selections", "Ref", n, list);
         ah.Companion.getClass();
@@ -48,7 +48,7 @@ public abstract class g {
         List list2 = fq.b.a;
         List r3 = l.r(new s[]{mVar2, no.a.c(list2, "selections", "Actor", r2, list2)});
         s mVar3 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("CodingAgent");
+        List n2 = d0Shadow.n("CodingAgent");
         List list3 = ip.b.a;
         List r4 = l.r(new s[]{mVar3, no.a.c(list3, "selections", "CodingAgent", n2, list3)});
         ch.Companion.getClass();
@@ -73,7 +73,7 @@ public abstract class g {
         i30.Companion.getClass();
         List r6 = l.r(new m[]{mVar5, mVar6, mVar7, mVar8, new m("viewerCodingAgents", q0Var2, (String) null, rVar, no.a.s(i30.q0, new u0(1)), r5), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         s mVar9 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n3 = d0.n("CopilotCustomAgent");
+        List n3 = d0Shadow.n("CopilotCustomAgent");
         List list4 = ip.d.a;
         List r7 = l.r(new s[]{mVar9, no.a.c(list4, "selections", "CopilotCustomAgent", n3, list4)});
         List r8 = l.r(new m[]{new m("hasNextPage", l0.b(xVar4), (String) null, rVar, rVar, rVar), new m("hasPreviousPage", l0.b(xVar4), (String) null, rVar, rVar, rVar), new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});

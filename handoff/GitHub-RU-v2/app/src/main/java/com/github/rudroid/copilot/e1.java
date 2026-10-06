@@ -4,10 +4,10 @@ package com.github.rudroid.copilot;
 public final class e1 {
     public static final boolean a(xn.y yVar) {
         k71.k.g(yVar, "<this>");
-        if (!(yVar instanceof xn.x)) {
+        if (!(yVar instanceof xn.xShadow)) {
             return false;
         }
-        xn.x xVar = (xn.x) yVar;
-        return xVar.j == xn.w.v && xVar.k == xn.r0.s;
+        xn.xShadow xVar = (xn.xShadow) yVar;
+        return xVar.j == xn.wShadow.v && xVar.k == xn.r0.s;
     }
 }

@@ -12,7 +12,7 @@ import ic.qc;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
@@ -71,7 +71,7 @@ public final class n {
         }
 
         public final String toString() {
-            return f4.h(this.a, this.b, "CountAndLineWidth(countWidth=", ", lineWidth=", ")");
+            return f4Shadow.h(this.a, this.b, "CountAndLineWidth(countWidth=", ", lineWidth=", ")");
         }
     }
 

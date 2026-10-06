@@ -1,6 +1,6 @@
 package com.github.rudroid.viewmodels.notifications;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class a {
@@ -36,6 +36,6 @@ final class a {
         sb.append(", filtered=");
         sb.append(this.b);
         sb.append(", scrollToTop=");
-        return f4.s(sb, this.c, ")");
+        return f4Shadow.s(sb, this.c, ")");
     }
 }

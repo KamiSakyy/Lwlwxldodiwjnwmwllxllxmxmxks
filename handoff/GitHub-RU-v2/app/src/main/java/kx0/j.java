@@ -11,7 +11,7 @@ import java.util.List;
 import m7.y;
 import uu0.o;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.b2;
 import yz0.g5;
 import yz0.h5;
@@ -202,7 +202,7 @@ public final class j implements n5 {
                 }
             }
             r14 = r14 == 0 ? list4 : r14;
-            uu0.k kVar = jVar.g;
+            uu0.kShadow kVar = jVar.g;
             if (kVar == null || (list = kVar.a) == null) {
                 arrayList = null;
             } else {

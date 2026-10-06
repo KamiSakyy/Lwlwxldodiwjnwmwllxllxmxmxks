@@ -10,7 +10,7 @@ import k71.k;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
-import x61.r;
+import x61.rShadow;
 
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -52,7 +52,7 @@ public final class ChatServerSentEventDataResponse$FunctionCall extends c {
             this.d = str;
         }
         if ((i & 16) == 0) {
-            this.e = r.r;
+            this.e = rShadow.r;
         } else {
             this.e = list;
         }

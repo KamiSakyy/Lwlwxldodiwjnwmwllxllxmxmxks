@@ -13,7 +13,7 @@ import m10.eh;
 import m10.k7;
 import m10.o7;
 import m10.sa;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,13 +25,13 @@ public abstract class e {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = a.a;
         s c = no.a.c(list, "selections", "PullRequest", n, list);
         ah.Companion.getClass();
-        List r = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0.n("PullRequest"), l.r(new s[]{mVar, c, new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar)}))});
+        List r = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("PullRequest", d0Shadow.n("PullRequest"), l.r(new s[]{mVar, c, new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar)}))});
         m mVar2 = new m("sessionId", l0.b(xVar), (String) null, rVar, rVar, rVar);
         m mVar3 = new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
         o7.Companion.getClass();

@@ -7,11 +7,11 @@ import aa.q0;
 import aa.u0;
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import pz0.o7;
 import pz0.sk;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements n0 {
@@ -42,7 +42,7 @@ public final class g implements n0 {
         List list = tx0.a.a;
         List list2 = tx0.a.a;
         k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -62,7 +62,7 @@ public final class g implements n0 {
     }
 
     public final int hashCode() {
-        return this.v.hashCode() + f1.e.a(this.u, f1.e.a(this.t, f1.e.a(this.s, this.r.hashCode() * 31, 31), 31), 31);
+        return this.v.hashCode() + f1.e.a(this.u, f1.e.a(this.t, f1.e.a(this.s, this.rShadow.hashCode() * 31, 31), 31), 31);
     }
 
     public final String i() {
@@ -109,7 +109,7 @@ public final class g implements n0 {
     }
 
     public final String toString() {
-        StringBuilder u = f4.u("UpdateUserStatusMutation(message=", this.r, ", emoji=", this.s, ", organizationId=");
+        StringBuilder u = f4Shadow.u("UpdateUserStatusMutation(message=", this.r, ", emoji=", this.s, ", organizationId=");
         f1.e.w(u, this.t, ", indicatesLimitedAvailability=", this.u, ", expiresAt=");
         return f1.e.k(u, this.v, ")");
     }

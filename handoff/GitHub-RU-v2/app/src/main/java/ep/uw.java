@@ -7,7 +7,7 @@ import jo.hb0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uw implements aaShadow.a {
     public static final uw a = new uw();
-    public static final List b = sy.d0.n("unmarkFileAsViewed");
+    public static final List b = sy.d0Shadow.n("unmarkFileAsViewed");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

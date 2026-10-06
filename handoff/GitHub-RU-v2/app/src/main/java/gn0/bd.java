@@ -8,7 +8,7 @@ public abstract class bd {
     public static final aa.q0 c;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         c = new aa.q0("IssueTemplate", rVar, rVar);
     }
 }

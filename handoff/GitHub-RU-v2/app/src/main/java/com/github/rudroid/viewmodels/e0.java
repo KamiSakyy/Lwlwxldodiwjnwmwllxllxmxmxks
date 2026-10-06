@@ -19,7 +19,7 @@ public final class e0 extends androidx.lifecycle.k1 implements u0 {
         this.s = pVar;
         this.t = qVar;
         this.u = cVar;
-        EditIssueOrPullTitleRoute editIssueOrPullTitleRoute = (EditIssueOrPullTitleRoute) sy.y.m(a1Var, k71.x.a(EditIssueOrPullTitleRoute.class), x61.s.r);
+        EditIssueOrPullTitleRoute editIssueOrPullTitleRoute = (EditIssueOrPullTitleRoute) sy.y.m(a1Var, k71.xShadow.a(EditIssueOrPullTitleRoute.class), x61.s.r);
         this.v = editIssueOrPullTitleRoute.r;
         this.w = editIssueOrPullTitleRoute.t;
         this.x = editIssueOrPullTitleRoute.s;
@@ -34,7 +34,7 @@ public final class e0 extends androidx.lifecycle.k1 implements u0 {
     public final y71.i1 q(String str) {
         k71.k.g(str, "titleText");
         y71.y1 s = com.github.rudroid.m0.s(fl.f.Companion, (Object) null);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new d0(this, str, s, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d0(this, str, s, null), 3);
         return new y71.i1(s);
     }
 

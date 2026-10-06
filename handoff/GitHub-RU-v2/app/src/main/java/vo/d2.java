@@ -7,7 +7,7 @@ import m10.sa;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d2 implements aa.a {
     public static final d2 a = new d2();
-    public static final List b = sy.d0.o("createdAt", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("createdAt", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

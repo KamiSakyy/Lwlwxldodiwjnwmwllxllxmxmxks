@@ -4,7 +4,7 @@ import aa.w;
 import gn0.xm;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class r implements aa.a {
@@ -189,7 +189,7 @@ public abstract class r implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, lVar.b);
         fVar.z0("authorCanPushToRepository");
-        f4.C(lVar.c, aa.c.f, fVar, wVar, "author");
+        f4Shadow.C(lVar.c, aa.c.f, fVar, wVar, "author");
         aa.c.b(aa.c.c(m.a, true)).b(fVar, wVar, lVar.d);
         fVar.z0("state");
         fVar.I(lVar.e.r);

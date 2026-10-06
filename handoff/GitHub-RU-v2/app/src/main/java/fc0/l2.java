@@ -14,8 +14,8 @@ public abstract class l2 {
     static {
         xa.Companion.getClass();
         aa.r b = v8.l0.b(xa.a);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("getsDirectMentionMobilePush", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("getsDirectMentionMobilePush", b, (String) null, rVar, rVar, rVar));
         kh.Companion.getClass();
         aa.q0 q0Var = kh.a;
         k71.k.g(q0Var, "type");
@@ -25,6 +25,6 @@ public abstract class l2 {
         fb.Companion.getClass();
         List r = x61.l.r(new aa.m[]{mVar, mVar2, new aa.m("__typename", v8.l0.b(fb.a), (String) null, rVar, rVar, rVar)});
         kz.Companion.getClass();
-        a = sy.d0.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r));
+        a = sy.d0Shadow.n(new aa.m("viewer", v8.l0.b(kz.O), (String) null, rVar, rVar, r));
     }
 }

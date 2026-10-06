@@ -7,7 +7,7 @@ import rc0.j2;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 implements aa.a {
     public static final n1 a = new n1();
-    public static final List b = sy.d0.n("node");
+    public static final List b = sy.d0Shadow.n("node");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

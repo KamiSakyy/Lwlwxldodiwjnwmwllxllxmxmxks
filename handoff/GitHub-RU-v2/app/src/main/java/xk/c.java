@@ -2,7 +2,7 @@ package xk;
 
 import com.github.domain.database.GitHubDatabase;
 import com.google.android.gms.internal.measurement.d5;
-import in.r;
+import in.rShadow;
 import rm0.r3Shadow;
 import t00.ua;
 import t00.z1;
@@ -30,6 +30,6 @@ public final class c {
 
     public final gl.f b(oa.j jVar) {
         k71.k.g(jVar, "user");
-        return r.l(new y(((a0) this.b.a(jVar)).e(), new z1(this, jVar, null, 25), 6));
+        return rShadow.l(new y(((a0) this.b.a(jVar)).e(), new z1(this, jVar, null, 25), 6));
     }
 }

@@ -6,7 +6,7 @@ import h91.j0;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class z {
     public androidx.lifecycle.b a;
-    public v b;
+    public vShadow b;
     public String d;
     public m e;
     public j0 h;
@@ -44,7 +44,7 @@ public final class z {
         if (bVar == null) {
             throw new IllegalStateException("request == null");
         }
-        v vVar = this.b;
+        vShadow vVar = this.b;
         if (vVar == null) {
             throw new IllegalStateException("protocol == null");
         }

@@ -6,7 +6,7 @@ import jn0.pc0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rx implements aaShadow.a {
     public static final rx a = new rx();
-    public static final List b = sy.d0.n("nodes");
+    public static final List b = sy.d0Shadow.n("nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

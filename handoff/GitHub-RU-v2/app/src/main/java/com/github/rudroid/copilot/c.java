@@ -188,7 +188,7 @@ public abstract class c {
         public k91.a f9497c;
 
         /* renamed from: d, reason: collision with root package name */
-        public xn.w f9498d;
+        public xn.wShadow f9498d;
 
         /* renamed from: e, reason: collision with root package name */
         public ZonedDateTime f9499e;
@@ -206,7 +206,7 @@ public abstract class c {
         /* renamed from: j, reason: collision with root package name */
         public List f9503j;
 
-        public f(String str, String str2, k91.a aVar, xn.w wVar, ZonedDateTime zonedDateTime, boolean z10, boolean z11, List list, List list2, List list3) {
+        public f(String str, String str2, k91.a aVar, xn.wShadow wVar, ZonedDateTime zonedDateTime, boolean z10, boolean z11, List list, List list2, List list3) {
             k71.k.g(str, "id");
             k71.k.g(str2, "content");
             k71.k.g(aVar, "rootNode");

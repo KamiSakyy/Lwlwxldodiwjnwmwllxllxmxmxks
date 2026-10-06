@@ -5,7 +5,7 @@ import m10.p00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j0 implements aa.w0 {
-    public static final a0 Companion = new a0();
+    public static final a0Shadow Companion = new a0Shadow();
     public String r;
     public String s;
 
@@ -23,7 +23,7 @@ public final class j0 implements aa.w0 {
         List list = b00.f.a;
         List list2 = b00.f.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

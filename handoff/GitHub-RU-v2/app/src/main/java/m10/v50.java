@@ -7,7 +7,7 @@ public abstract class v50 {
     public static final u50 Companion = new u50();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
         aa.j0 j0Var = zp.a;
         qc0.Companion.getClass();

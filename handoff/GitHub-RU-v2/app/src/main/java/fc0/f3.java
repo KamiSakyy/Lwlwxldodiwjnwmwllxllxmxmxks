@@ -13,7 +13,7 @@ public abstract class f3 {
     static {
         fb.Companion.getClass();
         aa.r b = v8.l0.b(fb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"Discussion", "DiscussionComment"});
         List list = ma0.a.a;
@@ -21,11 +21,11 @@ public abstract class f3 {
         k00.Companion.getClass();
         aa.j0 j0Var = k00.a;
         k71.k.g(j0Var, "type");
-        List n = sy.d0.n(new aa.m("subject", j0Var, (String) null, rVar, rVar, r2));
+        List n = sy.d0Shadow.n(new aa.m("subject", j0Var, (String) null, rVar, rVar, r2));
         ko.Companion.getClass();
         aa.q0 q0Var = ko.a;
         k71.k.g(q0Var, "type");
         wg.Companion.getClass();
-        a = sy.d0.n(new aa.m("removeUpvote", q0Var, (String) null, rVar, no.a.s(wg.o0, new aa.u0(a0.s0.p("subjectId", new aa.t("subject_id")))), n));
+        a = sy.d0Shadow.n(new aa.m("removeUpvote", q0Var, (String) null, rVar, no.a.s(wg.o0, new aa.u0(a0.s0.p("subjectId", new aa.t("subject_id")))), n));
     }
 }

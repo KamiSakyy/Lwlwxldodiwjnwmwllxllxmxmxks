@@ -19,7 +19,7 @@ public final class m implements d {
 
     @Override // x41.d
     public final void a() {
-        v41.g.b(this.s);
+        v41.gShadow.b(this.s);
         this.s = null;
     }
 

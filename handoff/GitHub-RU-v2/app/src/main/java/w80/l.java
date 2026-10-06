@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.a {
     public static final l a = new l();
-    public static final List b = sy.d0.o("name", "about", "title", "body", "filename", "assignees", "labels");
+    public static final List b = sy.d0Shadow.o("name", "about", "title", "body", "filename", "assignees", "labels");
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0026, code lost:
     

@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class o0 {
+public final class o0Shadow {
     public static final Pattern y = Pattern.compile("\\{([a-zA-Z][a-zA-Z0-9_-]*)\\}");
     public static final Pattern z = Pattern.compile("[a-zA-Z][a-zA-Z0-9_-]*");
     public l1 a;
@@ -34,7 +34,7 @@ public final class o0 {
     public q81.n t;
     public q81.q u;
     public LinkedHashSet v;
-    public x0[] w;
+    public x0Shadow[] w;
     public boolean x;
 
     public o0(l1 l1Var, Class cls, Method method) {

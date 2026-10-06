@@ -19,7 +19,7 @@ public final class xo {
         u = xoVarArr;
         v8.l0.t(xoVarArr);
         Companion = new wo();
-        sy.d0.o("AUTH", "RECOVERY");
+        sy.d0Shadow.o("AUTH", "RECOVERY");
     }
 
     public xo(String str, int i, String str2) {

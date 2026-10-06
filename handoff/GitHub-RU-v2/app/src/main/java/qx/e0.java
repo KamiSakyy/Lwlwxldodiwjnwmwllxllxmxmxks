@@ -3,7 +3,7 @@ package qx;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 import m10.wi;
 import m10.yi;
@@ -136,7 +136,7 @@ public abstract class e0 implements aa.a {
         q qVar = null;
         Boolean bool = null;
         ZonedDateTime zonedDateTime = null;
-        x xVar = null;
+        xShadow xVar = null;
         yi yiVar = null;
         while (true) {
             switch (eVar.r0(a)) {
@@ -201,7 +201,7 @@ public abstract class e0 implements aa.a {
                     break;
                 case 8:
                     num = num2;
-                    xVar = (x) aa.c.c(k0.a, false).a(eVar, wVar);
+                    xVar = (xShadow) aa.c.c(k0.a, false).a(eVar, wVar);
                     break;
                 case 9:
                     num = num2;

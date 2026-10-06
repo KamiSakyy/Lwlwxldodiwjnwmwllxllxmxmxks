@@ -77,16 +77,16 @@ public final class r4 implements z01.m0, yb0, mi0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new ek(new aa.u0(str), str2), null, false, null, null, 58), 10), 23), this.t);
+                return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new ek(new aa.u0(str), str2), null, false, null, null, 58), 10), 23), this.t);
             case 1:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new an(new aa.u0(str), str2), null, false, null, null, 58), 10), 3), this.t);
+                return y71.n1Shadow.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new an(new aa.u0(str), str2), null, false, null, null, 58), 10), 3), this.t);
             case 2:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new cj(new aa.u0(str), str2), null, false, null, null, 58), 10), 22), this.t);
+                return y71.n1Shadow.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new cj(new aa.u0(str), str2), null, false, null, null, 58), 10), 22), this.t);
             default:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new vl(new aa.u0(str), str2), null, false, null, null, 58), 10), 29), this.t);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new vl(new aa.u0(str), str2), null, false, null, null, 58), 10), 29), this.t);
         }
     }
 
@@ -95,16 +95,16 @@ public final class r4 implements z01.m0, yb0, mi0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new lk(new aa.u0(str), str2), null, false, null, null, 58), 10), 24), this.t);
+                return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new lk(new aa.u0(str), str2), null, false, null, null, 58), 10), 24), this.t);
             case 1:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new hn(new aa.u0(str), str2), null, false, null, null, 58), 10), 4), this.t);
+                return y71.n1Shadow.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new hn(new aa.u0(str), str2), null, false, null, null, 58), 10), 4), this.t);
             case 2:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new jj(new aa.u0(str), str2), null, false, null, null, 58), 10), 23), this.t);
+                return y71.n1Shadow.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new jj(new aa.u0(str), str2), null, false, null, null, 58), 10), 23), this.t);
             default:
                 k71.k.g(str2, "nodeId");
-                return y71.n1.y(new wy0.q3(new y00.l(com.github.service.wrapper.a.o(this.s, new cm(new aa.u0(str), str2), null, false, null, null, 58), 10), 0), this.t);
+                return y71.n1Shadow.y(new wy0.q3(new y00.l(com.github.service.wrapper.a.o(this.s, new cm(new aa.u0(str), str2), null, false, null, null, 58), 10), 0), this.t);
         }
     }
 

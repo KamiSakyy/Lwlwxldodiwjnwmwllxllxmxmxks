@@ -7,8 +7,8 @@ public abstract class f5 {
     public static final e5 Companion = new e5();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("ConvertedNoteToIssueEvent", n, sy.d0.n(yh.a));
+        new aa.q0("ConvertedNoteToIssueEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a0 extends c0 {
-    public static final Parcelable.Creator<a0> CREATOR = new h(7);
+public final class a0Shadow extends c0 {
+    public static final Parcelable.Creator<a0Shadow> CREATOR = new h(7);
     public String s;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -24,7 +24,7 @@ public final class a0 extends c0 {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof a0) && k71.k.b(this.s, ((a0) obj).s);
+        return (obj instanceof a0Shadow) && k71.k.b(this.s, ((a0Shadow) obj).s);
     }
 
     public final int hashCode() {

@@ -221,17 +221,17 @@ public final class k {
             } else {
                 sVar.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             t.I(sVar, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             t.I(sVar, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             t.w(sVar, valueOf, eVar3);
             v2.d dVar2 = v2.g.h;
             t.E(sVar, dVar2);
             int i8 = i4;
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             t.I(sVar, eVar4, c);
             if (z2) {
                 i7 = i;

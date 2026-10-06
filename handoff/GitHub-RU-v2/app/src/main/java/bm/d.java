@@ -3,7 +3,7 @@ package bm;
 import com.github.service.models.response.shortcuts.ShortcutType;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract /* synthetic */ class d {
+public abstract /* synthetic */ class dShadow {
     public static final /* synthetic */ int[] a;
 
     static {

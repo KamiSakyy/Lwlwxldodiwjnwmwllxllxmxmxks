@@ -6,14 +6,14 @@ import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class c {
-    public static final h91.k a;
-    public static final h91.k b;
-    public static final h91.k c;
-    public static final h91.k d;
-    public static final h91.k e;
+    public static final h91.kShadow a;
+    public static final h91.kShadow b;
+    public static final h91.kShadow c;
+    public static final h91.kShadow d;
+    public static final h91.kShadow e;
 
     static {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         a = c30.d.b("/");
         b = c30.d.b("\\");
         c = c30.d.b("/\\");
@@ -22,12 +22,12 @@ public abstract class c {
     }
 
     public static final int a(a0 a0Var) {
-        h91.k kVar = a0Var.r;
+        h91.kShadow kVar = a0Var.r;
         if (kVar.d() != 0) {
             if (kVar.i(0) != 47) {
                 if (kVar.i(0) == 92) {
                     if (kVar.d() > 2 && kVar.i(1) == 92) {
-                        h91.k kVar2 = b;
+                        h91.kShadow kVar2 = b;
                         k71.k.g(kVar2, "other");
                         int f = kVar.f(2, kVar2.h());
                         return f == -1 ? kVar.d() : f;
@@ -52,7 +52,7 @@ public abstract class c {
         if (a(a0Var2) != -1 || a0Var2.g() != null) {
             return a0Var2;
         }
-        h91.k c2 = c(a0Var);
+        h91.kShadow c2 = c(a0Var);
         if (c2 == null && (c2 = c(a0Var2)) == null) {
             c2 = f(a0.s);
         }
@@ -65,15 +65,15 @@ public abstract class c {
         return d(hVar, z);
     }
 
-    public static final h91.k c(a0 a0Var) {
-        h91.k kVar = a0Var.r;
-        h91.k kVar2 = a;
-        if (h91.k.g(kVar, kVar2) != -1) {
+    public static final h91.kShadow c(a0 a0Var) {
+        h91.kShadow kVar = a0Var.r;
+        h91.kShadow kVar2 = a;
+        if (h91.kShadow.g(kVar, kVar2) != -1) {
             return kVar2;
         }
-        h91.k kVar3 = a0Var.r;
-        h91.k kVar4 = b;
-        if (h91.k.g(kVar3, kVar4) != -1) {
+        h91.kShadow kVar3 = a0Var.r;
+        h91.kShadow kVar4 = b;
+        if (h91.kShadow.g(kVar3, kVar4) != -1) {
             return kVar4;
         }
         return null;
@@ -89,16 +89,16 @@ public abstract class c {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public static final a0 d(h91.h hVar, boolean z) {
-        h91.k kVar;
+        h91.kShadow kVar;
         long j;
         char F;
         boolean L;
-        h91.k kVar2;
+        h91.kShadow kVar2;
         int size;
         int i;
-        h91.k v;
+        h91.kShadow v;
         h91.h hVar2 = new h91.h();
-        h91.k kVar3 = null;
+        h91.kShadow kVar3 = null;
         int i2 = 0;
         while (true) {
             if (!hVar.A0(0L, a)) {
@@ -114,7 +114,7 @@ public abstract class c {
             i2++;
         }
         boolean z2 = i2 >= 2 && k71.k.b(kVar3, kVar);
-        h91.k kVar4 = c;
+        h91.kShadow kVar4 = c;
         if (z2) {
             k71.k.d(kVar3);
             hVar2.E0(kVar3);
@@ -151,7 +151,7 @@ public abstract class c {
                         v = hVar.v(q2);
                         hVar.readByte();
                     }
-                    h91.k kVar5 = e;
+                    h91.kShadow kVar5 = e;
                     if (k71.k.b(v, kVar5)) {
                         if (!z3 || !arrayList.isEmpty()) {
                             if (!z || (!z3 && (arrayList.isEmpty() || k71.k.b(m.e0(arrayList), kVar5)))) {
@@ -160,7 +160,7 @@ public abstract class c {
                                 m.q0(arrayList);
                             }
                         }
-                    } else if (!k71.k.b(v, kVar2) && !k71.k.b(v, h91.k.u)) {
+                    } else if (!k71.k.b(v, kVar2) && !k71.k.b(v, h91.kShadow.u)) {
                         arrayList.add(v);
                     }
                 }
@@ -169,7 +169,7 @@ public abstract class c {
                     if (i > 0) {
                         hVar2.E0(kVar3);
                     }
-                    hVar2.E0((h91.k) arrayList.get(i));
+                    hVar2.E0((h91.kShadow) arrayList.get(i));
                 }
                 if (hVar2.s == 0) {
                     hVar2.E0(kVar2);
@@ -195,7 +195,7 @@ public abstract class c {
         return new a0(hVar2.v(hVar2.s));
     }
 
-    public static final h91.k e(byte b2) {
+    public static final h91.kShadow e(byte b2) {
         if (b2 == 47) {
             return a;
         }
@@ -205,7 +205,7 @@ public abstract class c {
         throw new IllegalArgumentException(no.a.k("not a directory separator: ", b2));
     }
 
-    public static final h91.k f(String str) {
+    public static final h91.kShadow f(String str) {
         if (k71.k.b(str, "/")) {
             return a;
         }

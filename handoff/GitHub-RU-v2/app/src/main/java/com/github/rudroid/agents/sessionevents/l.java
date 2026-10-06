@@ -263,7 +263,7 @@ public interface l {
         }
 
         public final String toString() {
-            return jo.f4.s(a0.s0.o("PlanApproveTagOption(messageId=", this.f7702a, ", planBody=", this.f7703b, ", approved="), this.f7704c, ")");
+            return jo.f4Shadow.s(a0.s0.o("PlanApproveTagOption(messageId=", this.f7702a, ", planBody=", this.f7703b, ", approved="), this.f7704c, ")");
         }
     }
 
@@ -358,7 +358,7 @@ public interface l {
         }
 
         public final String toString() {
-            return jo.f4.s(a0.s0.o("UserAskOption(promptId=", this.f7708a, ", answer=", this.f7709b, ", wasFreeform="), this.f7710c, ")");
+            return jo.f4Shadow.s(a0.s0.o("UserAskOption(promptId=", this.f7708a, ", answer=", this.f7709b, ", wasFreeform="), this.f7710c, ")");
         }
     }
 

@@ -86,6 +86,6 @@ public final class j0 {
     }
 
     public /* synthetic */ j0() {
-        this(null, null, null, k0.f18389r, false, x61.r.r);
+        this(null, null, null, k0.f18389r, false, x61.rShadow.r);
     }
 }

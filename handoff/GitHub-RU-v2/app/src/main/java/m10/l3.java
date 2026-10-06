@@ -7,8 +7,8 @@ public abstract class l3 {
     public static final k3 Companion = new k3();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("BlockingRemovedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("BlockingRemovedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

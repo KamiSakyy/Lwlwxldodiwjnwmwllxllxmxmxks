@@ -5,7 +5,7 @@ public abstract class mb0 {
     public static final lb0 Companion = new lb0();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("TeamDiscussion", rVar, rVar);
     }
 }

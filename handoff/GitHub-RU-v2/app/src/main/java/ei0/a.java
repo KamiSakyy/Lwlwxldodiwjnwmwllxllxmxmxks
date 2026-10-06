@@ -14,7 +14,7 @@ import gn0.tb;
 import gn0.wh;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,9 +25,9 @@ public abstract class a {
     static {
         tb.Companion.getClass();
         r b = l0.b(tb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("Organization");
+        List n = d0Shadow.n("Organization");
         List list = di0.a.a;
         s c = no.a.c(list, "selections", "Organization", n, list);
         pb.Companion.getClass();
@@ -35,11 +35,11 @@ public abstract class a {
         dj.Companion.getClass();
         q0 q0Var = dj.m;
         k.g(q0Var, "type");
-        List n2 = d0.n(new m("organization", q0Var, (String) null, rVar, rVar, r));
+        List n2 = d0Shadow.n(new m("organization", q0Var, (String) null, rVar, rVar, r));
         pa.Companion.getClass();
         q0 q0Var2 = pa.a;
         k.g(q0Var2, "type");
         wh.Companion.getClass();
-        a = d0.n(new m("followOrganization", q0Var2, (String) null, rVar, no.a.s(wh.T, new u0(s0.p("organizationId", new t("organizationId")))), n2));
+        a = d0Shadow.n(new m("followOrganization", q0Var2, (String) null, rVar, no.a.s(wh.T, new u0(s0.p("organizationId", new t("organizationId")))), n2));
     }
 }

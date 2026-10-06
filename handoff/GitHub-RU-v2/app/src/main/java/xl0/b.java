@@ -15,13 +15,13 @@ import ri0.q5;
 import ri0.s4;
 import ri0.t5;
 import ri0.y5;
-import sy.d0;
+import sy.d0Shadow;
 import sy.q;
-import sy.t;
+import sy.tShadow;
 import wy0.p4;
 import x61.m;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements h01.c {
@@ -52,7 +52,7 @@ public final class b implements h01.c {
         s4 s4Var = (list == null || (g5Var3 = (g5) m.f0(list)) == null || (t5Var3 = g5Var3.b.c) == null) ? null : t5Var3.c;
         aVar.getClass();
         List<h5> list2 = s4Var != null ? s4Var.b : null;
-        List<h5> list3 = r.r;
+        List<h5> list3 = rShadow.r;
         list2 = list2 == null ? list3 : list2;
         ArrayList arrayList = new ArrayList();
         for (h5 h5Var : list2) {
@@ -72,7 +72,7 @@ public final class b implements h01.c {
                 Object obj = arrayList.get(i3);
                 i3++;
                 if (k.b(((wl0.a) obj).h, Boolean.TRUE) && (i = i + 1) < 0) {
-                    d0.w();
+                    d0Shadow.w();
                     throw null;
                 }
             }
@@ -118,7 +118,7 @@ public final class b implements h01.c {
                 arrayList4.add(obj2);
             }
         }
-        List v0 = m.v0(arrayList4, t.f(new j71.c[]{new p4(28), new p4(29)}));
+        List v0 = m.v0(arrayList4, tShadow.f(new j71.c[]{new p4(28), new p4(29)}));
         if (y5Var.N > 0) {
             checksOverviewState = ChecksOverviewState.ACTION_REQUIRED;
         } else {

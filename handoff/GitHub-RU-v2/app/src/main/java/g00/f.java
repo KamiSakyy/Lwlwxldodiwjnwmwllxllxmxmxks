@@ -8,7 +8,7 @@ import k71.k;
 import m10.eh;
 import m10.kx;
 import m10.mx;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -19,13 +19,13 @@ public abstract class f {
     static {
         mx.Companion.getClass();
         r b = l0.b(mx.s);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("type", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar = eh.a;
         k.g(xVar, "type");
         List r = l.r(new m[]{mVar, new m("value", xVar, (String) null, rVar, rVar, rVar)});
         kx.Companion.getClass();
-        a = d0.n(new m("sortValues", l0.a(l0.b(kx.a)), (String) null, rVar, rVar, r));
+        a = d0Shadow.n(new m("sortValues", l0.a(l0.b(kx.a)), (String) null, rVar, rVar, r));
     }
 }

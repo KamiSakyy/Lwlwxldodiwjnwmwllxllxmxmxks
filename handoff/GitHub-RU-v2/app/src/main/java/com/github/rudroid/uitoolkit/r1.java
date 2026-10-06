@@ -66,7 +66,7 @@ public final /* synthetic */ class r1 implements j71.e {
                 return w61.a0.a;
             default:
                 ((Integer) obj2).getClass();
-                rh.k.b(this.s, this.t, this.u, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(1));
+                rh.kShadow.b(this.s, this.t, this.u, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(1));
                 return w61.a0.a;
         }
     }

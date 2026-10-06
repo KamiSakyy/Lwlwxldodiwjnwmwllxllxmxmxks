@@ -1,14 +1,14 @@
 package e00;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import tz.u4;
 import tz.v4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p implements aa.a {
     public static final p a = new p();
-    public static final List b = d0.o("__typename", "defaultView", "views", "id");
+    public static final List b = d0Shadow.o("__typename", "defaultView", "views", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

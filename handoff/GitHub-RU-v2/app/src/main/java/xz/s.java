@@ -1,12 +1,12 @@
 package xz;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s implements aa.a {
     public static final s a = new s();
-    public static final List b = sy.d0.o("hasNextPage", "endCursor", "hasPreviousPage");
+    public static final List b = sy.d0Shadow.o("hasNextPage", "endCursor", "hasPreviousPage");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -46,7 +46,7 @@ public final class s implements aa.a {
         k71.k.g(oVar, "value");
         fVar.z0("hasNextPage");
         aa.b bVar = aa.c.f;
-        f4.C(oVar.a, bVar, fVar, wVar, "endCursor");
+        f4Shadow.C(oVar.a, bVar, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, oVar.b);
         fVar.z0("hasPreviousPage");
         bVar.b(fVar, wVar, Boolean.valueOf(oVar.c));

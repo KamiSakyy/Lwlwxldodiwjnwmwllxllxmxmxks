@@ -16,7 +16,7 @@ public abstract class a {
         b = new long[]{-1, 9, 99, 999, 9999, 99999, 999999, 9999999, 99999999, 999999999, 9999999999L, 99999999999L, 999999999999L, 9999999999999L, 99999999999999L, 999999999999999L, 9999999999999999L, 99999999999999999L, 999999999999999999L, Long.MAX_VALUE};
     }
 
-    public static final long a(h91.h hVar, h91.k kVar, long j, long j2, int i) {
+    public static final long a(h91.h hVar, h91.kShadow kVar, long j, long j2, int i) {
         f0 f0Var;
         byte[] bArr;
         long j3 = j;

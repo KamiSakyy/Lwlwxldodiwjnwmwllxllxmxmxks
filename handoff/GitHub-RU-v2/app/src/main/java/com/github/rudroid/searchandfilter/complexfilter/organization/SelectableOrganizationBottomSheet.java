@@ -9,9 +9,9 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.q0;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.z;
-import k71.x;
+import k71.xShadow;
 import sy.w;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableOrganizationBottomSheet extends Hilt_SelectableOrganizationBottomSheet {
@@ -237,14 +237,14 @@ public final class SelectableOrganizationBottomSheet extends Hilt_SelectableOrga
 
     static {
         r71.e pVar = new k71.p(SelectableOrganizationBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public SelectableOrganizationBottomSheet() {
         w61.h s = w.s(w61.i.s, new k(new j()));
-        this.Y0 = new l1(x.a(o.class), new l(s), new n(s), new m(s));
+        this.Y0 = new l1(xShadow.a(o.class), new l(s), new n(s), new m(s));
         this.Z0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(27));
         this.a1 = w.t(new com.github.rudroid.searchandfilter.complexfilter.organization.c(this, 0));
         this.b1 = 2131954227;
@@ -290,7 +290,7 @@ public final class SelectableOrganizationBottomSheet extends Hilt_SelectableOrga
         k71.k.g(view, "view");
         super.c4(view, bundle);
         o oVar = (o) this.Y0.getValue();
-        d1.a(n1.y(new com.github.rudroid.searchandfilter.complexfilter.organization.n(new y00.l(oVar.t.b, 10)), oVar.D)).e(F3(), new i(new z(20, this)));
+        d1.a(n1Shadow.y(new com.github.rudroid.searchandfilter.complexfilter.organization.n(new y00.l(oVar.t.b, 10)), oVar.D)).e(F3(), new i(new z(20, this)));
     }
 
 

@@ -49,13 +49,13 @@ public final class aaShadow implements z01.l1, yb0, mi0, y90, yf0 {
     public final Object a(String str, String str2) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new vg(str, str2), null, false, null, null, 58), 10), 1), this.t);
+                return y71.n1Shadow.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new vg(str, str2), null, false, null, null, 58), 10), 1), this.t);
             case 1:
-                return y71.n1.y(new t00.q6(new y00.l(com.github.service.wrapper.a.o(this.s, new jj(str, str2), null, false, null, null, 58), 10), 17), this.t);
+                return y71.n1Shadow.y(new t00.q6(new y00.l(com.github.service.wrapper.a.o(this.s, new jj(str, str2), null, false, null, null, 58), 10), 17), this.t);
             case 2:
-                return y71.n1.y(new vb0.t3(new y00.l(com.github.service.wrapper.a.o(this.s, new tf(str, str2), null, false, null, null, 58), 10), 28), this.t);
+                return y71.n1Shadow.y(new vb0.t3(new y00.l(com.github.service.wrapper.a.o(this.s, new tf(str, str2), null, false, null, null, 58), 10), 28), this.t);
             default:
-                return y71.n1.y(new wy0.s6(new y00.l(com.github.service.wrapper.a.o(this.s, new mi(str, str2), null, false, null, null, 58), 10), 11), this.t);
+                return y71.n1Shadow.y(new wy0.s6(new y00.l(com.github.service.wrapper.a.o(this.s, new mi(str, str2), null, false, null, null, 58), 10), 11), this.t);
         }
     }
 

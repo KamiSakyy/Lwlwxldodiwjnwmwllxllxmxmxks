@@ -37,7 +37,7 @@ public final class e2 extends androidx.lifecycle.k1 implements v3, com.github.ru
 
     static {
         r71.e mVar = new k71.m(e2.class, "query", "getQuery()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         H = new r71.e[]{mVar};
         Companion = new a();
     }
@@ -56,7 +56,7 @@ public final class e2 extends androidx.lifecycle.k1 implements v3, com.github.ru
         this.w = f0Var;
         this.x = cVar;
         this.y = b2Var;
-        y71.y1 c = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y71.y1 c = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.z = c;
         this.A = com.github.rudroid.utilities.w0.f(c, androidx.lifecycle.d1.k(this), new d2(this, 0));
         this.B = new n2(this);
@@ -81,7 +81,7 @@ public final class e2 extends androidx.lifecycle.k1 implements v3, com.github.ru
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.G = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new j2(this, null), 3);
+        this.G = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new j2(this, null), 3);
     }
 
     public final String Q() {
@@ -122,7 +122,7 @@ public final class e2 extends androidx.lifecycle.k1 implements v3, com.github.ru
             if (q1Var3 != null) {
                 q1Var3.m((CancellationException) null);
             }
-            this.F = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new g2(this, null), 3);
+            this.F = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new g2(this, null), 3);
             this.E = R();
         }
     }
@@ -136,7 +136,7 @@ public final class e2 extends androidx.lifecycle.k1 implements v3, com.github.ru
         if (q1Var2 == null || !q1Var2.f()) {
             U();
         } else {
-            this.G = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new m2(this, null), 3);
+            this.G = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m2(this, null), 3);
         }
     }
 

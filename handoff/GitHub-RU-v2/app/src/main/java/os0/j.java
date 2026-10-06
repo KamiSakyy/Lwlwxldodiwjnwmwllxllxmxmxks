@@ -3,7 +3,7 @@ package os0;
 import aa.w;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import pz0.gu;
 import x61.l;
@@ -43,7 +43,7 @@ public abstract class j implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {
@@ -142,7 +142,7 @@ public abstract class j implements aa.a {
         fVar.I(dVar.e.r);
         fVar.z0("isInMergeQueue");
         aa.b bVar2 = aa.c.f;
-        f4.C(dVar.f, bVar2, fVar, wVar, "isDraft");
+        f4Shadow.C(dVar.f, bVar2, fVar, wVar, "isDraft");
         bVar2.b(fVar, wVar, Boolean.valueOf(dVar.g));
     }
 }

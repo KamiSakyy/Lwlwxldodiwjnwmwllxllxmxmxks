@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import k71.k;
 import m10.sa;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = d0.o("id", "localizedDescription", "unlockedAt", "url", "achievable", "tier", "tiers", "__typename");
+    public static final List b = d0Shadow.o("id", "localizedDescription", "unlockedAt", "url", "achievable", "tier", "tiers", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0027, code lost:
     

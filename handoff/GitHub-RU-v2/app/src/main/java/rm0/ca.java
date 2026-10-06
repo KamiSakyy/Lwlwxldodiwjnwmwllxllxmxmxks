@@ -49,13 +49,13 @@ public final class ca implements z01.m1, yb0, mi0, y90, yf0 {
     public final Object a(String str) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new o3(in.r.h(this.s.d(new ha0(str))), 17), this.t);
+                return y71.n1Shadow.y(new o3(in.rShadow.h(this.s.d(new ha0(str))), 17), this.t);
             case 1:
-                return y71.n1.y(new t00.g3(in.r.h(this.s.d(new vg0(str))), 20), this.t);
+                return y71.n1Shadow.y(new t00.g3(in.rShadow.h(this.s.d(new vg0(str))), 20), this.t);
             case 2:
-                return y71.n1.y(new vb0.p1(in.r.h(this.s.d(new h80(str))), 21), this.t);
+                return y71.n1Shadow.y(new vb0.p1(in.rShadow.h(this.s.d(new h80(str))), 21), this.t);
             default:
-                return y71.n1.y(new wy0.h1(in.r.h(this.s.d(new he0(str))), 25), this.t);
+                return y71.n1Shadow.y(new wy0.h1(in.rShadow.h(this.s.d(new he0(str))), 25), this.t);
         }
     }
 

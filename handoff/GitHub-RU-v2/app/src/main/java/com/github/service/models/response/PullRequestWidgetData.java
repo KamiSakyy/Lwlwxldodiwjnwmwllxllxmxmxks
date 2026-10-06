@@ -4,7 +4,7 @@ import a0.s0;
 import g81.e;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -32,7 +32,7 @@ public final class PullRequestWidgetData {
 
     public /* synthetic */ PullRequestWidgetData(int i, PullsWidgetFilter pullsWidgetFilter, int i2, List list) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, PullRequestWidgetData$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, PullRequestWidgetData$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = pullsWidgetFilter;

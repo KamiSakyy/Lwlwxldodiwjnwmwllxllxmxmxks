@@ -3,7 +3,7 @@ package a21;
 import android.content.Context;
 import android.os.Build;
 import b1.m;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.h0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -18,11 +18,11 @@ public abstract class c {
     public b21.d h;
 
     public c(Context context, m mVar, c21.m mVar2, b bVar) {
-        u.h(context, "Null context is not permitted.");
-        u.h(mVar, "Api must not be null.");
-        u.h(bVar, "Settings must not be null; use Settings.DEFAULT_SETTINGS instead.");
+        uShadow.h(context, "Null context is not permitted.");
+        uShadow.h(mVar, "Api must not be null.");
+        uShadow.h(bVar, "Settings must not be null; use Settings.DEFAULT_SETTINGS instead.");
         Context applicationContext = context.getApplicationContext();
-        u.h(applicationContext, "The provided context did not have an application context.");
+        uShadow.h(applicationContext, "The provided context did not have an application context.");
         this.a = applicationContext;
         String attributionTag = Build.VERSION.SDK_INT >= 30 ? context.getAttributionTag() : null;
         this.b = attributionTag;

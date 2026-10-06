@@ -21,7 +21,7 @@ public abstract class d {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("login", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         x xVar2 = td.a;

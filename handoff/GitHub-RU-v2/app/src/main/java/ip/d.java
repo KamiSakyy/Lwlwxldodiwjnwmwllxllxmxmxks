@@ -16,7 +16,7 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         a = l.r(new m[]{new m("name", b, (String) null, rVar, rVar, rVar), new m("displayName", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("description", xVar, (String) null, rVar, rVar, rVar)});
     }
 }

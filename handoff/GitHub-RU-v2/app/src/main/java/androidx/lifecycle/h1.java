@@ -10,10 +10,10 @@ import java.util.List;
 public abstract class h1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final List f2871a = sy.d0.o(new Class[]{Application.class, a1.class});
+    public static final List f2871a = sy.d0Shadow.o(new Class[]{Application.class, a1.class});
 
     /* renamed from: b, reason: collision with root package name */
-    public static final List f2872b = sy.d0.n(a1.class);
+    public static final List f2872b = sy.d0Shadow.n(a1.class);
 
     public static final Constructor a(Class cls, List list) {
         k71.k.g(list, "signature");

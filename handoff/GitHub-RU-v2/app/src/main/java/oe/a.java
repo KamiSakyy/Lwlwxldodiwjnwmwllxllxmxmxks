@@ -16,7 +16,7 @@ import yz0.d3;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class a implements v, k {
     public List A;
-    public lg.b B;
+    public lg.bShadow B;
     public int C;
     public IssueState D;
     public b0 E;
@@ -57,7 +57,7 @@ public final class a implements v, k {
     /* renamed from: z, reason: collision with root package name */
     public String f30164z;
 
-    public /* synthetic */ a(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, boolean z11, String str3, String str4, List list, lg.b bVar, int i10, IssueState issueState, b0 b0Var, int i11, CloseReason closeReason, IssueType issueType, p pVar, String str5, z01.p pVar2, String str6, int i12) {
+    public /* synthetic */ a(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, boolean z11, String str3, String str4, List list, lg.bShadow bVar, int i10, IssueState issueState, b0 b0Var, int i11, CloseReason closeReason, IssueType issueType, p pVar, String str5, z01.p pVar2, String str6, int i12) {
         this(str, str2, i, z10, zonedDateTime, d3Var, z11, str3, str4, list, bVar, i10, issueState, b0Var, i11, closeReason, (i12 & 65536) != 0 ? null : issueType, (i12 & 131072) != 0 ? null : pVar, (i12 & 262144) != 0 ? null : str5, (i12 & 524288) != 0 ? null : pVar2, str6, 4, 4);
     }
 
@@ -141,7 +141,7 @@ public final class a implements v, k {
         return s0.l(o5, this.N, ")");
     }
 
-    public a(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, boolean z11, String str3, String str4, List list, lg.b bVar, int i10, IssueState issueState, b0 b0Var, int i11, CloseReason closeReason, IssueType issueType, p pVar, String str5, z01.p pVar2, String str6, int i12, int i13) {
+    public a(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, boolean z11, String str3, String str4, List list, lg.bShadow bVar, int i10, IssueState issueState, b0 b0Var, int i11, CloseReason closeReason, IssueType issueType, p pVar, String str5, z01.p pVar2, String str6, int i12, int i13) {
         k71.k.g(issueState, "state");
         k71.k.g(str6, "stableId");
         this.f30156r = str;

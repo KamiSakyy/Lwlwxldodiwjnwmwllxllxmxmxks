@@ -53,7 +53,7 @@ public final class l9 {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("CreateIssueInput(agentAssignment=", this.a, ", assigneeIds=", this.b, ", body=");
+        StringBuilder u = jo.f4Shadow.u("CreateIssueInput(agentAssignment=", this.a, ", assigneeIds=", this.b, ", body=");
         f1.e.w(u, this.c, ", clientMutationId=", this.d, ", issueFields=");
         f1.e.w(u, this.e, ", issueTemplate=", this.f, ", issueTypeId=");
         f1.e.w(u, this.g, ", labelIds=", this.h, ", milestoneId=");

@@ -3,7 +3,7 @@ package com.google.android.gms.common.api;
 import a21.g;
 import android.os.Parcel;
 import android.os.Parcelable;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import d21.a;
 import m7.y;
@@ -15,7 +15,7 @@ public final class Scope extends a implements ReflectedParcelable {
     public String s;
 
     public Scope(String str, int i) {
-        u.e(str, "scopeUri must not be null or empty");
+        uShadow.e(str, "scopeUri must not be null or empty");
         this.r = i;
         this.s = str;
     }

@@ -7,7 +7,7 @@ import jn0.ea0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yv implements aaShadow.a {
     public static final yv a = new yv();
-    public static final List b = sy.d0.n("setDashboardFeedFilters");
+    public static final List b = sy.d0Shadow.n("setDashboardFeedFilters");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

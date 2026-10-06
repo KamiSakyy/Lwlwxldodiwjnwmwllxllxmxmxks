@@ -3,7 +3,7 @@ package va0;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 import yz0.e2;
 import z70.e5;
 import z70.k4;
@@ -18,7 +18,7 @@ public final class a {
         e2 e2Var;
         Object obj;
         List<r4> list = l4Var != null ? l4Var.a : null;
-        List list2 = r.r;
+        List list2 = rShadow.r;
         if (list == null) {
             list = list2;
         }

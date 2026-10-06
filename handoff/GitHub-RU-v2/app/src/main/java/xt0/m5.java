@@ -30,6 +30,6 @@ public final class m5 {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "RequiredStatusChecks(totalCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "RequiredStatusChecks(totalCount=", ", nodes=", ")", this.b);
     }
 }

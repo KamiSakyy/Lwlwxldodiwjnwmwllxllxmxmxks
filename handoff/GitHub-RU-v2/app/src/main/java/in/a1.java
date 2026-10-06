@@ -170,7 +170,7 @@ public final class a1 {
                 if (!list2.isEmpty()) {
                     jSONObject.put("uploads", new JSONArray((Collection) list2));
                 }
-                q81.x xVar = q81.y.Companion;
+                q81.xShadow xVar = q81.y.Companion;
                 JSONObject jSONObject2 = new JSONObject();
                 jSONObject2.put("contact", jSONObject);
                 jSONObject2.put("mobile_metadata", str7);
@@ -179,7 +179,7 @@ public final class a1 {
                 t71.n nVar = q81.q.d;
                 q81.q g0 = i4.g0("application/json; charset=utf-8");
                 xVar.getClass();
-                q81.w a = q81.x.a(jSONObject3, g0);
+                q81.w a = q81.xShadow.a(jSONObject3, g0);
                 l1 l1Var = new l1(11);
                 l1Var.I("https://support.github.com/api/contact/mobile");
                 l1Var.G(j0.class, new j0(true, true));

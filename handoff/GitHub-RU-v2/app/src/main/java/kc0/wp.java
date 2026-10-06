@@ -26,6 +26,6 @@ public final class wp {
     }
 
     public final String toString() {
-        return jo.f4.p("Author1(__typename=", this.a, ", actorFields=", this.b, ")");
+        return jo.f4Shadow.p("Author1(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

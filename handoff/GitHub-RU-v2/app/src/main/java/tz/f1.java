@@ -3,7 +3,7 @@ package tz;
 import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class f1 {
+public final class f1Shadow {
     public String a;
     public String b;
     public String c;
@@ -26,10 +26,10 @@ public final class f1 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof f1)) {
+        if (!(obj instanceof f1Shadow)) {
             return false;
         }
-        f1 f1Var = (f1) obj;
+        f1Shadow f1Var = (f1Shadow) obj;
         return k71.k.b(this.a, f1Var.a) && k71.k.b(this.b, f1Var.b) && k71.k.b(this.c, f1Var.c) && k71.k.b(this.d, f1Var.d) && this.e == f1Var.e && k71.k.b(this.f, f1Var.f) && k71.k.b(this.g, f1Var.g);
     }
 

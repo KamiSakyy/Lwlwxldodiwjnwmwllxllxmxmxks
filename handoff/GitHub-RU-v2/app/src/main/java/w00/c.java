@@ -13,7 +13,7 @@ import q81.u;
 import v71.v;
 import w51.r;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 import z01.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -39,7 +39,7 @@ public final class c implements l0, mi0 {
 
     public final i a(String str, String str2, String str3) {
         k.g(str, "text");
-        return n1.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (a71.c) null, 6)), 15), this.r);
+        return n1Shadow.y(new g(d11.b.b(d11.a.t, new n5.v(str2, str3, this, str, (a71.c) null, 6)), 15), this.r);
     }
 
     public final Object h() {

@@ -61,7 +61,7 @@ public final class j {
 
     public final String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(k71.x.a(j.class).c());
+        sb2.append(k71.xShadow.a(j.class).c());
         sb2.append(" Type: " + this.f33839a);
         sb2.append(" Nullable: " + this.f33840b);
         if (this.f33841c) {

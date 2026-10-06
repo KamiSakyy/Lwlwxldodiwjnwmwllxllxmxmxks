@@ -40,7 +40,7 @@ public final class p1 implements Callable {
         v2.t z;
         List list;
         com.google.android.gms.internal.play_billing.c cVar;
-        x9.h l;
+        x9.hShadow l;
         int i;
         Exception exc2 = null;
         switch (this.a) {
@@ -57,7 +57,7 @@ public final class p1 implements Callable {
             case 2:
                 v4 v4Var = (v4) this.c;
                 String str = v4Var.r;
-                c21.u.g(str);
+                c21.uShadow.g(str);
                 o4 o4Var = (o4) this.b;
                 b2 e = o4Var.e(str);
                 a2 a2Var = a2.ANALYTICS_STORAGE;
@@ -70,7 +70,7 @@ public final class p1 implements Callable {
                 x9.c cVar2 = (x9.c) this.b;
                 int i2 = 9;
                 if (!cVar2.w()) {
-                    x9.h hVar = x9.z.j;
+                    x9.hShadow hVar = x9.z.j;
                     cVar2.A(2, 9, hVar);
                     x9.d dVar = (x9.d) this.c;
                     com.google.android.gms.internal.play_billing.p pVar = com.google.android.gms.internal.play_billing.r.s;
@@ -126,14 +126,14 @@ public final class p1 implements Callable {
                                     break;
                                 } else {
                                     Bundle U = cVar2.n ? ((com.google.android.gms.internal.play_billing.a) cVar).U(cVar2.w ? 26 : cVar2.v ? 24 : cVar2.s ? 19 : i2, cVar2.g.getPackageName(), str2, bundle) : ((com.google.android.gms.internal.play_billing.a) cVar).T(cVar2.g.getPackageName(), str2);
-                                    x9.h hVar2 = x9.z.h;
+                                    x9.hShadow hVar2 = x9.z.h;
                                     if (U == null) {
                                         Log.isLoggable("BillingClient", 5);
                                         i = 54;
                                     } else {
                                         int a = com.google.android.gms.internal.play_billing.t.a("BillingClient", U);
                                         String f = com.google.android.gms.internal.play_billing.t.f("BillingClient", U);
-                                        androidx.compose.runtime.i1 a2 = x9.h.a();
+                                        androidx.compose.runtime.i1 a2 = x9.hShadow.a();
                                         a2.r = a;
                                         a2.t = f;
                                         l = a2.l();
@@ -215,18 +215,18 @@ public final class p1 implements Callable {
                         }
                         list = (List) z.s;
                         if (list != null) {
-                            ((x9.d) this.c).a((x9.h) z.t, list);
+                            ((x9.d) this.c).a((x9.hShadow) z.t, list);
                             return exc;
                         }
                         x9.d dVar2 = (x9.d) this.c;
-                        x9.h hVar3 = (x9.h) z.t;
+                        x9.hShadow hVar3 = (x9.hShadow) z.t;
                         com.google.android.gms.internal.play_billing.p pVar2 = com.google.android.gms.internal.play_billing.r.s;
                         dVar2.a(hVar3, com.google.android.gms.internal.play_billing.v.v);
                         return exc;
                     }
                     int i5 = com.google.android.gms.internal.play_billing.t.a;
                     Log.isLoggable("BillingClient", 5);
-                    x9.h hVar4 = x9.z.e;
+                    x9.hShadow hVar4 = x9.z.e;
                     cVar2.A(50, 9, hVar4);
                     x9.d dVar3 = (x9.d) this.c;
                     com.google.android.gms.internal.play_billing.p pVar3 = com.google.android.gms.internal.play_billing.r.s;

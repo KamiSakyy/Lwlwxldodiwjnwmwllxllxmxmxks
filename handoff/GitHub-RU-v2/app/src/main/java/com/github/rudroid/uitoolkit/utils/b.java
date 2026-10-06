@@ -10,7 +10,7 @@ public final class b {
             return j;
         }
         try {
-            return d2.a0.c(Color.parseColor(str));
+            return d2.a0Shadow.c(Color.parseColor(str));
         } catch (Exception unused) {
             return j;
         }

@@ -26,7 +26,7 @@ import gn0.zc;
 import gn0.zl;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -38,8 +38,8 @@ public abstract class b {
         rb.Companion.getClass();
         x xVar = rb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         pb.Companion.getClass();
         x xVar2 = pb.a;
         m mVar = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -66,7 +66,7 @@ public abstract class b {
         m mVar8 = new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar);
         s00.Companion.getClass();
         List r5 = l.r(new m[]{mVar8, new m("nodes", l0.a(s00.P), (String) null, rVar, rVar, r4)});
-        List n2 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
         s mVar9 = new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar);
         s mVar10 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         s mVar11 = new m("title", l0.b(xVar3), (String) null, rVar, rVar, rVar);

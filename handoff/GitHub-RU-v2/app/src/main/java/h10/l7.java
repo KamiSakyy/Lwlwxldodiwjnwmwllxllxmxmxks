@@ -14,7 +14,7 @@ public abstract class l7 {
         m8.Companion.getClass();
         aa.a0 a0Var = m8.s;
         k71.k.g(a0Var, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("copilotLicenseType", a0Var, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         aa.x xVar = ah.a;

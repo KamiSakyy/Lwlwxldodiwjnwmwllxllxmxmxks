@@ -7,7 +7,7 @@ import jn0.t80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dv implements aaShadow.a {
     public static final dv a = new dv();
-    public static final List b = sy.d0.o(new String[]{"clientMutationId", "pullRequest"});
+    public static final List b = sy.d0Shadow.o(new String[]{"clientMutationId", "pullRequest"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

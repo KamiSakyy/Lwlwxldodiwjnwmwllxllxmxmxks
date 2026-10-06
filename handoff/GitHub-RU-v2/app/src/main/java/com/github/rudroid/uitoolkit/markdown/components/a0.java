@@ -343,7 +343,7 @@ public final class a0 {
                                                 }
                                             }
                                             dVar = dVar2;
-                                            arrayList3 = x61.r.r;
+                                            arrayList3 = x61.rShadow.r;
                                             while (r16.hasNext()) {
                                             }
                                             dVar2 = dVar;

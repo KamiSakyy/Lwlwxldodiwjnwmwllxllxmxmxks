@@ -3,12 +3,12 @@ package pw0;
 import java.util.List;
 import java.util.Set;
 import uu0.c1;
-import uu0.f1;
+import uu0.f1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements aa.a {
     public static final f a = new f();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         c1 c1Var;
@@ -35,7 +35,7 @@ public final class f implements aa.a {
         }
         if (m71.a.v(m71.a.O(new String[]{"PullRequest"}), set2, str, set)) {
             eVar.s0();
-            c1Var = f1.c(eVar, wVar);
+            c1Var = f1Shadow.c(eVar, wVar);
         } else {
             c1Var = null;
         }
@@ -64,7 +64,7 @@ public final class f implements aa.a {
         bVar.b(fVar, wVar, iVar.b);
         c1 c1Var = iVar.c;
         if (c1Var != null) {
-            f1.d(fVar, wVar, c1Var);
+            f1Shadow.d(fVar, wVar, c1Var);
         }
         uu0.c cVar = iVar.d;
         if (cVar != null) {

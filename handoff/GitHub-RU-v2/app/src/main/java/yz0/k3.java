@@ -68,6 +68,6 @@ public final class k3 {
         sb.append(", isAReply=");
         sb.append(this.j);
         sb.append(", viewerCanReply=");
-        return jo.f4.s(sb, this.k, ")");
+        return jo.f4Shadow.s(sb, this.k, ")");
     }
 }

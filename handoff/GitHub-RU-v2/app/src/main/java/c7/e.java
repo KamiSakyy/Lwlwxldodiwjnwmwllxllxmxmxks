@@ -1,8 +1,8 @@
 package c7;
 
 import java.util.List;
-import sy.d0;
-import x61.r;
+import sy.d0Shadow;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class e {
@@ -26,7 +26,7 @@ public final class e {
             }
         }
         StringBuilder o5 = x.i.o("Invalid 'NavigationEventHistory' state:  'currentIndex' must be within the bounds of 'mergedHistory' (or -1 if empty). Received: currentIndex = '", i, "', bounds = '");
-        o5.append(d0.l(list));
+        o5.append(d0Shadow.l(list));
         o5.append("'.");
         throw new IllegalArgumentException(o5.toString().toString());
     }
@@ -51,6 +51,6 @@ public final class e {
     }
 
     public e() {
-        this(-1, r.r);
+        this(-1, rShadow.r);
     }
 }

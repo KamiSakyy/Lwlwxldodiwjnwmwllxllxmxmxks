@@ -11,7 +11,7 @@ public abstract class w2 {
             }
         } catch (SecurityException unused) {
         }
-        if (v2.e && v2.d) {
+        if (v2.eShadow && v2.d) {
             int i = i1.a;
         }
     }

@@ -6,6 +6,6 @@ public abstract class dc {
 
     static {
         tn.Companion.getClass();
-        new aa.q0("ImageFileType", x61.r.r, sy.d0.n(tn.a));
+        new aa.q0("ImageFileType", x61.rShadow.r, sy.d0Shadow.n(tn.a));
     }
 }

@@ -267,7 +267,7 @@ public final class t {
         }
     }
 
-    public static final void d(xn.f1 f1Var, j71.c cVar, j71.c cVar2, j71.c cVar3, j71.c cVar4, androidx.compose.runtime.s sVar, int i) {
+    public static final void d(xn.f1Shadow f1Var, j71.c cVar, j71.c cVar2, j71.c cVar3, j71.c cVar4, androidx.compose.runtime.s sVar, int i) {
         androidx.compose.runtime.s sVar2 = sVar;
         sVar2.e0(-454387174);
         int i2 = i | (sVar2.h(f1Var) ? 4 : 2) | (sVar2.h(cVar) ? 32 : 16) | (sVar2.h(cVar2) ? 256 : 128) | (sVar2.h(cVar3) ? 2048 : 1024) | (sVar2.h(cVar4) ? 16384 : 8192);

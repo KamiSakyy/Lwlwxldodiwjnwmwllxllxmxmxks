@@ -12,7 +12,7 @@ import kc0.fo;
 import kc0.go;
 import kc0.io;
 import kc0.lo;
-import x61.r;
+import x61.rShadow;
 import yz0.b1;
 import yz0.k3;
 import yz0.y2;
@@ -27,7 +27,7 @@ public final class h {
         k71.k.g(commentLevelType, "commentType");
         ArrayList arrayList3 = new ArrayList();
         ArrayList arrayList4 = new ArrayList();
-        List list = r.r;
+        List list = rShadow.r;
         List list2 = arrayList2 == null ? list : arrayList2;
         ArrayList arrayList5 = new ArrayList(x61.n.F(list2, 10));
         Iterator it = list2.iterator();

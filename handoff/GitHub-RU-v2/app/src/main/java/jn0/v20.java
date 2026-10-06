@@ -27,7 +27,7 @@ public final class v20 implements aaShadow.w0 {
         List list = kz0.v4.a;
         List list2 = kz0.v4.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -47,7 +47,7 @@ public final class v20 implements aaShadow.w0 {
     }
 
     public final int hashCode() {
-        return this.v.hashCode() + f1.e.a(this.u, f1.e.a(this.t, jo.f4.a(this.s, a0.s0.b(30, this.r.hashCode() * 31, 31), 31), 31), 31);
+        return this.v.hashCode() + f1.e.a(this.u, f1.e.a(this.t, jo.f4Shadow.a(this.s, a0.s0.b(30, this.r.hashCode() * 31, 31), 31), 31), 31);
     }
 
     public final String i() {
@@ -93,7 +93,7 @@ public final class v20 implements aaShadow.w0 {
     }
 
     public final String toString() {
-        StringBuilder t = jo.f4.t(this.s, "SearchIssueQuery(query=", this.r, ", first=30, after=", ", owner=");
+        StringBuilder t = jo.f4Shadow.t(this.s, "SearchIssueQuery(query=", this.r, ", first=30, after=", ", owner=");
         f1.e.w(t, this.t, ", name=", this.u, ", include=");
         return f1.e.j(t, this.v, ")");
     }

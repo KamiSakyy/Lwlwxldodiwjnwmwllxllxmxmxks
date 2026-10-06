@@ -63,7 +63,7 @@ public final class x6 extends c71.j implements j71.e {
                     String str2 = cVar.a;
                     m0Var = new jo.i0(new jo.g0(new jo.l0(str2, cVar), new jo.k0(new jo.j0(str2, cVar), cVar.b, str2)));
                 }
-                return y71.n1.y(bVar.k(m0Var2, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar.k(m0Var2, m0Var), y6Var.t);
             default:
                 pv.c cVar2 = (pv.c) this.w;
                 b71.a aVar2 = b71.a.r;
@@ -74,7 +74,7 @@ public final class x6 extends c71.j implements j71.e {
                     String str3 = cVar2.a;
                     m0Var = new kv(new nv(new ov(str3, cVar2), new mv(new lv(str3, cVar2), cVar2.b, str3)));
                 }
-                return y71.n1.y(bVar2.k(pvVar, m0Var), y6Var.t);
+                return y71.n1Shadow.y(bVar2.k(pvVar, m0Var), y6Var.t);
         }
     }
 }

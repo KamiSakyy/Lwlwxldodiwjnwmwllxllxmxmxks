@@ -177,10 +177,10 @@ public final /* synthetic */ class d implements j71.c {
                 }
                 return a0.a;
             case 9:
-                b0.z((z) this.s, (a71.h) null, (v71.a0) null, new gi.b((b2.e0) obj, (ic) this.t, null, 7), 3);
+                b0.z((z) this.s, (a71.h) null, (v71.a0Shadow) null, new gi.b((b2.e0) obj, (ic) this.t, null, 7), 3);
                 return a0.a;
             case 10:
-                d2.a0.l((f2.d) obj, (d2.a0) this.s, ((ib) this.t).a());
+                d2.a0Shadow.l((f2.d) obj, (d2.a0Shadow) this.s, ((ib) this.t).a());
                 return a0.a;
             case 11:
                 i3 i3Var = (i3) this.s;
@@ -452,7 +452,7 @@ public final /* synthetic */ class d implements j71.c {
                         d0Var = new e0(obj9, true);
                     } else {
                         k3.c cVar4 = new k3.c(list2, obj9, c0Var, nVar2.a, cVar3, dVar);
-                        b0.z(nVar2.b, (a71.h) null, v71.a0.u, new g0(cVar4, (a71.c) null, 22), 1);
+                        b0.z(nVar2.b, (a71.h) null, v71.a0Shadow.u, new g0(cVar4, (a71.c) null, 22), 1);
                         d0Var = new d0(cVar4);
                     }
                 } else {
@@ -495,7 +495,7 @@ public final /* synthetic */ class d implements j71.c {
                 return a0.a;
             case 17:
                 AtomicBoolean atomicBoolean = (AtomicBoolean) this.s;
-                x71.h hVar = (x71.h) this.t;
+                x71.hShadow hVar = (x71.hShadow) this.t;
                 a0 a0Var = a0.a;
                 if (atomicBoolean.compareAndSet(false, true)) {
                     hVar.j(a0Var);

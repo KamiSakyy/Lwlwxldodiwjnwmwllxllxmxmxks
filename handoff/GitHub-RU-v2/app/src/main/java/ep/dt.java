@@ -8,7 +8,7 @@ import jo.u50;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dt implements aaShadow.a {
     public static final dt a = new dt();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         u50 u50Var;

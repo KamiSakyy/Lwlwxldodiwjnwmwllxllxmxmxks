@@ -1,6 +1,6 @@
 package v81;
 
-import h91.k;
+import h91.kShadow;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -11,18 +11,18 @@ import q81.n;
 import q81.o;
 import t71.p;
 import t71.w;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class f {
     static {
-        k kVar = k.u;
+        kShadow kVar = kShadow.u;
         c30.d.b("\"\\");
         c30.d.b("\t ,=");
     }
 
     public static final boolean a(a0 a0Var) {
-        if (k71.k.b((String) a0Var.r.c, "HEAD")) {
+        if (k71.kShadow.b((String) a0Var.rShadow.c, "HEAD")) {
             return false;
         }
         int i = a0Var.u;
@@ -51,9 +51,9 @@ public abstract class f {
         j jVar;
         int i2;
         j jVar2;
-        k71.k.g(bVar, "<this>");
-        k71.k.g(oVar, "url");
-        k71.k.g(nVar, "headers");
+        k71.kShadow.g(bVar, "<this>");
+        k71.kShadow.g(oVar, "url");
+        k71.kShadow.g(nVar, "headers");
         if (bVar == q81.b.c) {
             return;
         }
@@ -77,18 +77,18 @@ public abstract class f {
         }
         if (arrayList != null) {
             list = Collections.unmodifiableList(arrayList);
-            k71.k.f(list, "unmodifiableList(...)");
+            k71.kShadow.f(list, "unmodifiableList(...)");
         } else {
             list = null;
         }
-        List list4 = r.r;
+        List list4 = rShadow.r;
         List list5 = list == null ? list4 : list;
         int size2 = list5.size();
         int i5 = 0;
         ArrayList arrayList2 = null;
         while (i5 < size2) {
             String str = (String) list5.get(i5);
-            k71.k.g(str, "setCookie");
+            k71.kShadow.g(str, "setCookie");
             long currentTimeMillis = System.currentTimeMillis();
             char c = ';';
             int e = r81.e.e(str, ';', i3, i3, 6);
@@ -136,7 +136,7 @@ public abstract class f {
                                         }
                                     } catch (NumberFormatException e3) {
                                         Pattern compile = Pattern.compile("-?\\d+");
-                                        k71.k.f(compile, "compile(...)");
+                                        k71.kShadow.f(compile, "compile(...)");
                                         if (!compile.matcher(o4).matches()) {
                                             throw e3;
                                         }
@@ -187,7 +187,7 @@ public abstract class f {
                                 String str5 = oVar.d;
                                 if (str2 == null) {
                                     str2 = str5;
-                                } else if (!k71.k.b(str5, str2)) {
+                                } else if (!k71.kShadow.b(str5, str2)) {
                                     if (w.x(str5, str2, false) && str5.charAt((str5.length() - str2.length()) - 1) == '.') {
                                         t71.n nVar2 = r81.d.a;
                                     }
@@ -203,7 +203,7 @@ public abstract class f {
                                         int W = p.W(b2, '/', 0, 6);
                                         if (W != 0) {
                                             str6 = b2.substring(0, W);
-                                            k71.k.f(str6, "substring(...)");
+                                            k71.kShadow.f(str6, "substring(...)");
                                         }
                                         str3 = str6;
                                     }
@@ -235,7 +235,7 @@ public abstract class f {
         List list7 = list4;
         if (arrayList2 != null) {
             list2 = Collections.unmodifiableList(arrayList2);
-            k71.k.f(list2, "unmodifiableList(...)");
+            k71.kShadow.f(list2, "unmodifiableList(...)");
         } else {
             list2 = null;
         }

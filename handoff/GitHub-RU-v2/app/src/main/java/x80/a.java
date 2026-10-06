@@ -16,7 +16,7 @@ import hc0.tc;
 import hc0.vc;
 import hc0.xa;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -27,7 +27,7 @@ public abstract class a {
         fb.Companion.getClass();
         x xVar = fb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         bb.Companion.getClass();
         x xVar2 = bb.a;
@@ -38,13 +38,13 @@ public abstract class a {
         List list = f30.b.a;
         List r2 = x61.l.r(new s[]{mVar, mVar2, mVar3, mVar4, no.a.c(list, "selections", "Actor", r, list)});
         kz.Companion.getClass();
-        List n = d0.n(new aa.m("nodes", l0.a(kz.O), (String) null, rVar, rVar, r2));
+        List n = d0Shadow.n(new aa.m("nodes", l0.a(kz.O), (String) null, rVar, rVar, r2));
         s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("Label");
+        List n2 = d0Shadow.n("Label");
         List list2 = b60.a.a;
         List r3 = x61.l.r(new s[]{mVar5, no.a.c(list2, "selections", "Label", n2, list2), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         tc.Companion.getClass();
-        List n3 = d0.n(new aa.m("nodes", l0.a(tc.a), (String) null, rVar, rVar, r3));
+        List n3 = d0Shadow.n(new aa.m("nodes", l0.a(tc.a), (String) null, rVar, rVar, r3));
         aa.m mVar6 = new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.m mVar7 = new aa.m("about", xVar, (String) null, rVar, rVar, rVar);
         aa.m mVar8 = new aa.m("title", xVar, (String) null, rVar, rVar, rVar);
@@ -58,7 +58,7 @@ public abstract class a {
         vc.Companion.getClass();
         q0 q0Var = vc.a;
         k71.k.g(q0Var, "type");
-        List r4 = x61.l.r(new aa.m[]{mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, new aa.m("labels", q0Var, (String) null, d0.n(new aa.l("includeIssueTemplateProperties", false)), no.a.s(nc.b, new u0(30)), n3)});
+        List r4 = x61.l.r(new aa.m[]{mVar6, mVar7, mVar8, mVar9, mVar10, mVar11, new aa.m("labels", q0Var, (String) null, d0Shadow.n(new aa.l("includeIssueTemplateProperties", false)), no.a.s(nc.b, new u0(30)), n3)});
         aa.m mVar12 = new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.m mVar13 = new aa.m("about", l0.b(xVar), (String) null, rVar, rVar, rVar);
         ew.Companion.getClass();

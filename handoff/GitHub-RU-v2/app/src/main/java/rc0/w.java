@@ -2,7 +2,7 @@ package rc0;
 
 import gn0.rn;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w implements aa.w0 {
@@ -25,7 +25,7 @@ public final class w implements aa.w0 {
         List list = dd0.b.a;
         List list2 = dd0.b.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

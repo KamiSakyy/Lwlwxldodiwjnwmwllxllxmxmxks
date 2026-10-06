@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements aa.a {
     public static final a a = new a();
-    public static final List b = sy.d0.n("item");
+    public static final List b = sy.d0Shadow.n("item");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

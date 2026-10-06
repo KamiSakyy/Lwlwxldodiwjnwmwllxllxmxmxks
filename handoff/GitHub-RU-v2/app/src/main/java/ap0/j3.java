@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j3 implements aa.a {
     public static final j3 a = new j3();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "url"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "url"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

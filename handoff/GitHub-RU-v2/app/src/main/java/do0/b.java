@@ -241,19 +241,19 @@ public final class b implements y71.j {
     /* JADX WARN: Removed duplicated region for block: B:693:0x09b2  */
     /* JADX WARN: Removed duplicated region for block: B:704:0x09eb  */
     /* JADX WARN: Removed duplicated region for block: B:710:0x09f9  */
-    /* JADX WARN: Type inference failed for: r14v12, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r14v12, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r14v13, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r14v14, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r14v51, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r14v51, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r14v52, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r14v53, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r2v15, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r2v15, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r2v16, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r2v17, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r2v46, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r2v46, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r2v47, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r2v48, types: [java.util.ArrayList] */
-    /* JADX WARN: Type inference failed for: r6v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r6v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r6v1, types: [java.util.List] */
     /* JADX WARN: Type inference failed for: r6v2, types: [java.util.ArrayList] */
     /*
@@ -469,7 +469,7 @@ public final class b implements y71.j {
                             y.j(obj6);
                             d2 d2Var = ((c2) obj).a;
                             if (d2Var == null || (e2Var = d2Var.c) == null || (list = e2Var.c.a) == null) {
-                                r14 = x61.r.r;
+                                r14 = x61.rShadow.r;
                             } else {
                                 r14 = new ArrayList(x61.n.F(list, 10));
                                 Iterator it = list.iterator();
@@ -512,7 +512,7 @@ public final class b implements y71.j {
                             n2 n2Var = m2Var != null ? m2Var.c : null;
                             boolean z = n2Var != null ? n2Var.c : false;
                             if (n2Var == null || (list2 = n2Var.d.a) == null) {
-                                r2 = x61.r.r;
+                                r2 = x61.rShadow.r;
                             } else {
                                 r2 = new ArrayList(x61.n.F(list2, 10));
                                 Iterator it2 = list2.iterator();
@@ -794,7 +794,7 @@ public final class b implements y71.j {
                             y.j(obj15);
                             qo.d2 d2Var2 = ((qo.c2) obj).a;
                             if (d2Var2 == null || (e2Var2 = d2Var2.c) == null || (list3 = e2Var2.c.a) == null) {
-                                r142 = x61.r.r;
+                                r142 = x61.rShadow.r;
                             } else {
                                 r142 = new ArrayList(x61.n.F(list3, 10));
                                 Iterator it3 = list3.iterator();
@@ -837,7 +837,7 @@ public final class b implements y71.j {
                             qo.n2 n2Var2 = m2Var2 != null ? m2Var2.c : null;
                             boolean z2 = n2Var2 != null ? n2Var2.c : false;
                             if (n2Var2 == null || (list4 = n2Var2.d.a) == null) {
-                                r22 = x61.r.r;
+                                r22 = x61.rShadow.r;
                             } else {
                                 r22 = new ArrayList(x61.n.F(list4, 10));
                                 Iterator it4 = list4.iterator();
@@ -1278,7 +1278,7 @@ public final class b implements y71.j {
                                     String str15 = aVar34.a;
                                     fz0.f fVar6 = aVar34.b;
                                     if (fVar6 == null || (list5 = fVar6.a) == null) {
-                                        r6 = x61.r.r;
+                                        r6 = x61.rShadow.r;
                                     } else {
                                         r6 = new ArrayList();
                                         for (fz0.h hVar6 : list5) {

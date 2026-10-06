@@ -5,18 +5,18 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.a {
     public static final l a = new l();
-    public static final List b = sy.d0.o("repositoryOwner", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("repositoryOwner", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        rz.x xVar = null;
+        rz.xShadow xVar = null;
         String str = null;
         String str2 = null;
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                xVar = (rz.x) aa.c.b(aa.c.c(o.a, true)).a(eVar, wVar);
+                xVar = (rz.xShadow) aa.c.b(aa.c.c(o.a, true)).a(eVar, wVar);
             } else if (r0 == 1) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else {

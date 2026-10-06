@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import kc0.yb0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class s0 implements z01.j, yb0 {
+public final class s0Shadow implements z01.j, yb0 {
     @Override // z01.j
     public final y71.i a(String str, CopilotCodeReviewFeedbackType copilotCodeReviewFeedbackType, ArrayList arrayList, String str2) {
         k71.k.g(str, "commentId");

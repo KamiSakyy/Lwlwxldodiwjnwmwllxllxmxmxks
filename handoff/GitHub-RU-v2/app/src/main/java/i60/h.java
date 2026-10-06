@@ -2,14 +2,14 @@ package i60;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import w50.e0;
 import w50.f0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements aa.a {
     public static final h a = new h();
-    public static final List b = d0.o("__typename", "id");
+    public static final List b = d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

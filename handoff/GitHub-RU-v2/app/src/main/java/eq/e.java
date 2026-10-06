@@ -2,7 +2,7 @@ package eq;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -63,7 +63,7 @@ public abstract class e implements aa.a {
         bVar.b(fVar, wVar, aVar.b);
         fVar.z0("isCopilot");
         aa.b bVar2 = aa.c.f;
-        f4.C(aVar.c, bVar2, fVar, wVar, "isAgent");
+        f4Shadow.C(aVar.c, bVar2, fVar, wVar, "isAgent");
         bVar2.b(fVar, wVar, Boolean.valueOf(aVar.d));
     }
 

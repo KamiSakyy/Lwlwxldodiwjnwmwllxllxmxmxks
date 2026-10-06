@@ -23,11 +23,11 @@ public final /* synthetic */ class t implements j71.f {
             case 0:
                 k71.k.g(qVar, "$this$Row");
                 k21.f.a(new i6.s(n6.c.a), 0, 1, r1.i.d(-1961278886, new t(this.s, this.t, 1), sVar), sVar, 3072, 2);
-                sy.r.a(new z5.a(2131231298), k41.b.M(ih.a.N), 0, null, sVar, 48, 24);
+                sy.rShadow.a(new z5.a(2131231298), k41.b.M(ih.a.N), 0, null, sVar, 48, 24);
                 break;
             default:
                 k71.k.g(qVar, "$this$Row");
-                sy.r.a(new z5.a(2131231290), k41.b.M(ih.a.M), 0, new z5.d(new z5.q(com.github.rudroid.widget.k.i)), sVar, 32816, 8);
+                sy.rShadow.a(new z5.a(2131231290), k41.b.M(ih.a.M), 0, new z5.d(new z5.q(com.github.rudroid.widget.k.i)), sVar, 32816, 8);
                 m71.a.d(this.s, i21.a.D(z5.l.a, 0.0f, 14), this.t, 1, sVar, 3072, 0);
                 break;
         }

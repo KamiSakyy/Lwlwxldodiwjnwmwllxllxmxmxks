@@ -2,7 +2,7 @@ package com.github.rudroid.widget.shortcuts;
 
 import com.github.domain.shortcuts.model.StoredShortcutModel;
 import rm0.r3Shadow;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
@@ -68,7 +68,7 @@ public final class g {
                     jVar.v = Q;
                     jVar.w = q;
                     jVar.B = 1;
-                    Object v = n1.v(data, jVar);
+                    Object v = n1Shadow.v(data, jVar);
                     if (v != aVar) {
                         eVar = Q2;
                         obj = v;
@@ -104,7 +104,7 @@ public final class g {
                         jVar.x = h;
                         jVar.y = floatValue;
                         jVar.B = 2;
-                        obj = n1.v(b2, jVar);
+                        obj = n1Shadow.v(b2, jVar);
                         if (obj != aVar) {
                             jVar2 = h;
                             return new r(jVar2, (StoredShortcutModel) obj, floatValue);

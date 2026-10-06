@@ -24,7 +24,7 @@ public final /* synthetic */ class m implements w21.e {
                 synchronized (wVar) {
                     z = wVar.g;
                 }
-                if (z) {
+                if (zShadow) {
                     return;
                 }
                 wVar.f(0L);

@@ -13,7 +13,7 @@ import gn0.tb;
 import gn0.wh;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -24,7 +24,7 @@ public abstract class e {
     static {
         pb.Companion.getClass();
         r b = l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         x xVar = tb.a;
@@ -32,11 +32,11 @@ public abstract class e {
         g10.Companion.getClass();
         q0 q0Var = g10.c;
         k.g(q0Var, "type");
-        List n = d0.n(new m("list", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("list", q0Var, (String) null, rVar, rVar, r));
         l00.Companion.getClass();
         q0 q0Var2 = l00.a;
         k.g(q0Var2, "type");
         wh.Companion.getClass();
-        a = d0.n(new m("updateUserList", q0Var2, (String) null, rVar, no.a.s(wh.b1, new u0(new t("input"))), n));
+        a = d0Shadow.n(new m("updateUserList", q0Var2, (String) null, rVar, no.a.s(wh.b1, new u0(new t("input"))), n));
     }
 }

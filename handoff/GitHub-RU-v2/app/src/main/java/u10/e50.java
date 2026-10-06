@@ -22,7 +22,7 @@ public final class e50 implements aaShadow.n0 {
         List list = fc0.l5.a;
         List list2 = fc0.l5.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -78,7 +78,7 @@ public final class e50 implements aaShadow.n0 {
     }
 
     public final String toString() {
-        return f1.e.k(jo.f4.u("UpdateNotificationSettingsMutation(getsDirectMentionMobilePush=", this.r, ", getsParticipatingWeb=", this.s, ", getsWatchingWeb="), this.t, ")");
+        return f1.e.k(jo.f4Shadow.u("UpdateNotificationSettingsMutation(getsDirectMentionMobilePush=", this.r, ", getsParticipatingWeb=", this.s, ", getsWatchingWeb="), this.t, ")");
     }
 
 
@@ -115,7 +115,7 @@ public final class e50 implements aaShadow.n0 {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x {
+    public static class xShadow {
         public x() {
         }
     }

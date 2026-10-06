@@ -20,7 +20,7 @@ import q81.o;
 import q81.u;
 import t71.p;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class g {
@@ -168,7 +168,7 @@ public abstract class g {
         ia.d dVar = new ia.d(4);
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            x81.c cVar = (x81.c) it.next();
+            x81.cShadow cVar = (x81.cShadow) it.next();
             dVar.b(cVar.a.r(), cVar.b.r());
         }
         return dVar.e();
@@ -194,7 +194,7 @@ public abstract class g {
     public static final List j(List list) {
         k.g(list, "<this>");
         if (list.isEmpty()) {
-            return r.r;
+            return rShadow.r;
         }
         if (list.size() == 1) {
             List singletonList = Collections.singletonList(list.get(0));
@@ -210,7 +210,7 @@ public abstract class g {
 
     public static final List k(Object[] objArr) {
         if (objArr == null || objArr.length == 0) {
-            return r.r;
+            return rShadow.r;
         }
         if (objArr.length == 1) {
             List singletonList = Collections.singletonList(objArr[0]);

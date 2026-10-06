@@ -72,7 +72,7 @@ public final /* synthetic */ class u implements j71.c {
     /* JADX WARN: Removed duplicated region for block: B:267:0x090b  */
     /* JADX WARN: Removed duplicated region for block: B:270:0x0912  */
     /* JADX WARN: Removed duplicated region for block: B:271:0x08fe  */
-    /* JADX WARN: Type inference failed for: r11v0, types: [java.util.List, x61.r] */
+    /* JADX WARN: Type inference failed for: r11v0, types: [java.util.List, x61.rShadow] */
     /* JADX WARN: Type inference failed for: r11v1 */
     /* JADX WARN: Type inference failed for: r11v2, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r1v9, types: [com.github.rudroid.searchandfilter.complexfilter.i0] */
@@ -96,7 +96,7 @@ public final /* synthetic */ class u implements j71.c {
         float intBitsToFloat;
         Bitmap bitmap;
         int i2 = this.r;
-        List list = x61.r.r;
+        List list = x61.rShadow.r;
         w61.a0 a0Var = w61.a0.a;
         Object obj2 = this.s;
         switch (i2) {
@@ -477,9 +477,9 @@ public final /* synthetic */ class u implements j71.c {
                                         return eVar3.c(new f0.s(d, wVar, ceil, lVar, 0));
                                     }
                                 }
-                                f = d2.a0.f((int) (ceil >> 32), (int) (ceil & 4294967295L), i);
+                                f = d2.a0Shadow.f((int) (ceil >> 32), (int) (ceil & 4294967295L), i);
                                 qVar3.a = f;
-                                a = d2.a0.a(f);
+                                a = d2.a0Shadow.a(f);
                                 qVar3.b = a;
                                 bVar = qVar3.c;
                                 if (bVar == null) {
@@ -602,9 +602,9 @@ public final /* synthetic */ class u implements j71.c {
                     throw th2;
                 }
                 z = true;
-                f = d2.a0.f((int) (ceil >> 32), (int) (ceil & 4294967295L), i);
+                f = d2.a0Shadow.f((int) (ceil >> 32), (int) (ceil & 4294967295L), i);
                 qVar3.a = f;
-                a = d2.a0.a(f);
+                a = d2.a0Shadow.a(f);
                 qVar3.b = a;
                 bVar = qVar3.c;
                 if (bVar == null) {
@@ -638,7 +638,7 @@ public final /* synthetic */ class u implements j71.c {
                 d2.i a7 = d2.k.a();
                 d2.p0 p0Var2 = s5Var.Q;
                 if (p0Var2 == null) {
-                    p0Var2 = r8.a((q8) v2.l.h(s5Var, r8.a), j1.a0.d);
+                    p0Var2 = r8.a((q8) v2.l.h(s5Var, r8.a), j1.a0Shadow.d);
                 }
                 h0 a8 = p0Var2.a(eVar4.r.a(), eVar4.r.getLayoutDirection(), eVar4);
                 if (a8 instanceof h0) {

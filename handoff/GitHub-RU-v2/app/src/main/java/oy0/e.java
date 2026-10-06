@@ -16,7 +16,7 @@ import pz0.sk;
 import pz0.td;
 import pz0.w80;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,8 +27,8 @@ public abstract class e {
     static {
         pd.Companion.getClass();
         r b = l0.b(pd.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("getsReviewRequests", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("getsReviewRequests", b, (String) null, rVar, rVar, rVar));
         jk.Companion.getClass();
         q0 q0Var = jk.a;
         k.g(q0Var, "type");
@@ -47,6 +47,6 @@ public abstract class e {
         q0 q0Var3 = o70.a;
         k.g(q0Var3, "type");
         sk.Companion.getClass();
-        a = d0.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(sk.f1, new u0(s0.p("getReviewRequests", new t("enabled")))), r2));
+        a = d0Shadow.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(sk.f1, new u0(s0.p("getReviewRequests", new t("enabled")))), r2));
     }
 }

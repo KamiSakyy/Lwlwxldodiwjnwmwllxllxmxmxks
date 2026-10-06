@@ -1,7 +1,7 @@
 package pw0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import uu0.a4;
 import uu0.b4;
 import uu0.c4;
@@ -14,7 +14,7 @@ import uu0.z3;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements aa.a {
     public static final h a = new h();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -81,24 +81,24 @@ public final class h implements aa.a {
         bVar3.b(fVar, wVar, z3Var.c);
         fVar.z0("isInOrganization");
         aa.b bVar4 = aa.c.f;
-        f4.C(z3Var.d, bVar4, fVar, wVar, "owner");
+        f4Shadow.C(z3Var.d, bVar4, fVar, wVar, "owner");
         aa.c.c(c4.a, true).b(fVar, wVar, z3Var.e);
         fVar.z0("id");
         bVar3.b(fVar, wVar, z3Var.f);
         fVar.z0("viewerPermission");
         aa.c.b(qz0.b.o).b(fVar, wVar, z3Var.g);
         fVar.z0("squashMergeAllowed");
-        f4.C(z3Var.h, bVar4, fVar, wVar, "rebaseMergeAllowed");
-        f4.C(z3Var.i, bVar4, fVar, wVar, "mergeCommitAllowed");
-        f4.C(z3Var.j, bVar4, fVar, wVar, "viewerDefaultCommitEmail");
+        f4Shadow.C(z3Var.h, bVar4, fVar, wVar, "rebaseMergeAllowed");
+        f4Shadow.C(z3Var.i, bVar4, fVar, wVar, "mergeCommitAllowed");
+        f4Shadow.C(z3Var.j, bVar4, fVar, wVar, "viewerDefaultCommitEmail");
         aa.c.i.b(fVar, wVar, z3Var.k);
         fVar.z0("viewerDefaultMergeMethod");
         fVar.I(z3Var.l.r);
         fVar.z0("viewerPossibleCommitEmails");
         aa.c.b(aa.c.a(bVar3)).b(fVar, wVar, z3Var.m);
         fVar.z0("planSupports");
-        f4.C(z3Var.n, bVar4, fVar, wVar, "allowUpdateBranch");
-        f4.C(z3Var.o, bVar4, fVar, wVar, "issueTypes");
+        f4Shadow.C(z3Var.n, bVar4, fVar, wVar, "allowUpdateBranch");
+        f4Shadow.C(z3Var.o, bVar4, fVar, wVar, "issueTypes");
         aa.c.b(aa.c.c(b4.a, false)).b(fVar, wVar, z3Var.p);
         fVar.z0("defaultBranchRef");
         aa.c.b(aa.c.c(a4.a, false)).b(fVar, wVar, z3Var.q);

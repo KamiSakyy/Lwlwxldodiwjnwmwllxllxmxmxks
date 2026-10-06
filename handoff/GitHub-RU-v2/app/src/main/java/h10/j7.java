@@ -14,14 +14,14 @@ public abstract class j7 {
     static {
         ch.Companion.getClass();
         aa.r b = v8.l0.b(ch.a);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
         rq.Companion.getClass();
         aa.r b2 = v8.l0.b(rq.a);
         rf0.Companion.getClass();
         a81.t tVar = rf0.v;
         Boolean bool = Boolean.FALSE;
-        aa.m mVar = new aa.m("notificationThreads", b2, (String) null, rVar, no.a.s(tVar, new aa.u0(x61.x.u(new w61.k[]{new w61.k("savedOnly", bool), new w61.k("starredOnly", bool), new w61.k("statuses", sy.d0.n("UNREAD"))}))), n);
+        aa.m mVar = new aa.m("notificationThreads", b2, (String) null, rVar, no.a.s(tVar, new aa.u0(x61.x.u(new w61.k[]{new w61.k("savedOnly", bool), new w61.k("starredOnly", bool), new w61.k("statuses", sy.d0Shadow.n("UNREAD"))}))), n);
         ah.Companion.getClass();
         aa.x xVar = ah.a;
         aa.m mVar2 = new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);

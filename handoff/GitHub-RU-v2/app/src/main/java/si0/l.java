@@ -13,7 +13,7 @@ public abstract class l {
     static {
         pb.Companion.getClass();
         aa.r b = l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         hn.Companion.getClass();
         aa.m mVar2 = new aa.m("state", l0.b(hn.s), (String) null, rVar, rVar, rVar);

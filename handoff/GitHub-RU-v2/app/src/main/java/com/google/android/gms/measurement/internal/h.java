@@ -37,7 +37,7 @@ public final class h extends androidx.compose.foundation.lazy.layout.s0 {
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         try {
             String str2 = (String) Class.forName("android.os.SystemProperties").getMethod("get", String.class, String.class).invoke(null, str, "");
-            c21.u.g(str2);
+            c21.uShadow.g(str2);
             return str2;
         } catch (ClassNotFoundException e) {
             s0 s0Var = o1Var.w;
@@ -150,7 +150,7 @@ public final class h extends androidx.compose.foundation.lazy.layout.s0 {
     }
 
     public final Boolean L(String str) {
-        c21.u.d(str);
+        c21.uShadow.d(str);
         Bundle K = K();
         if (K != null) {
             if (K.containsKey(str)) {
@@ -177,7 +177,7 @@ public final class h extends androidx.compose.foundation.lazy.layout.s0 {
 
     public final y1 O(String str, boolean z) {
         Object obj;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         Bundle K = K();
         if (K == null) {

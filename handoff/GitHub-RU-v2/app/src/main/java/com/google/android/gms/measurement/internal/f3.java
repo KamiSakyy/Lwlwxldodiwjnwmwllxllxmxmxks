@@ -45,7 +45,7 @@ public final class f3 extends e0 {
     }
 
     public final b3 E(com.google.android.gms.internal.measurement.w0 w0Var) {
-        c21.u.g(w0Var);
+        c21.uShadow.g(w0Var);
         Integer valueOf = Integer.valueOf(w0Var.r);
         ConcurrentHashMap concurrentHashMap = this.x;
         b3 b3Var = (b3) concurrentHashMap.get(valueOf);

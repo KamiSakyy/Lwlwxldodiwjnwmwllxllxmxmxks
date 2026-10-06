@@ -32,7 +32,7 @@ public final class t {
         Context context = (Context) h4Var.b;
         context.getClass();
         ContentResolver contentResolver = context.getContentResolver();
-        b51.d dVar = x3.a;
+        b51.dShadow dVar = x3.a;
         if (contentResolver == null) {
             dVar.getClass();
             throw new IllegalStateException("ContentResolver needed with GservicesDelegateSupplier.init()");

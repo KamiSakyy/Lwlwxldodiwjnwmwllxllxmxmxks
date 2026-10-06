@@ -36,6 +36,6 @@ public final class d0 {
     }
 
     public /* synthetic */ d0() {
-        this(false, x61.r.r, null);
+        this(false, x61.rShadow.r, null);
     }
 }

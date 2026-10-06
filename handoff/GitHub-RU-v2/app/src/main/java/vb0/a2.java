@@ -31,7 +31,7 @@ public final class a2 implements z01.z, y90 {
             d1Var.m((CancellationException) null);
         }
         this.t = null;
-        return y71.n1.y(new rm0.f3(new y71.y(new com.github.rudroid.d0(this, (a71.c) null, 9), com.github.service.wrapper.a.o(this.r, new lf("type:issue ".concat(str), "type:pr ".concat(str), str, "type:user ".concat(str), "type:org ".concat(str)), null, false, null, null, 62)), 6), this.s);
+        return y71.n1Shadow.y(new rm0.f3(new y71.y(new com.github.rudroid.d0(this, (a71.c) null, 9), com.github.service.wrapper.a.o(this.r, new lf("type:issue ".concat(str), "type:pr ".concat(str), str, "type:user ".concat(str), "type:org ".concat(str)), null, false, null, null, 62)), 6), this.s);
     }
 
     public final Object h() {

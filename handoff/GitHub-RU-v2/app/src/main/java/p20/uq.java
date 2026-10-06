@@ -7,7 +7,7 @@ import u10.d30;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uq implements aaShadow.a {
     public static final uq a = new uq();
-    public static final List b = sy.d0.n("unminimizeComment");
+    public static final List b = sy.d0Shadow.n("unminimizeComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -1,6 +1,6 @@
 package u91;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
@@ -12,9 +12,9 @@ public final class a {
     public int c;
 
     public a(int i, int i2, int i3) {
-        f4.z("childrenAction", i);
-        f4.z("selfAction", i2);
-        f4.z("eventAction", i3);
+        f4Shadow.z("childrenAction", i);
+        f4Shadow.z("selfAction", i2);
+        f4Shadow.z("eventAction", i3);
         this.a = i;
         this.b = i2;
         this.c = i3;

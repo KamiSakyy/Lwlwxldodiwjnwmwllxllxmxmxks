@@ -13,12 +13,12 @@ public abstract class y4 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         ow.Companion.getClass();
         aa.q0 q0Var = ow.a;
         k71.k.g(q0Var, "type");
         wg.Companion.getClass();
-        a = sy.d0.n(new aa.m("unfollowUser", q0Var, (String) null, rVar, no.a.s(wg.C0, new aa.u0(a0.s0.p("userId", new aa.t("userId")))), n));
+        a = sy.d0Shadow.n(new aa.m("unfollowUser", q0Var, (String) null, rVar, no.a.s(wg.C0, new aa.u0(a0.s0.p("userId", new aa.t("userId")))), n));
     }
 }

@@ -41,6 +41,6 @@ public final class f4 {
         o.append(", choices=");
         o.append(this.d);
         o.append(", allowFreeform=");
-        return jo.f4.s(o, this.e, ")");
+        return jo.f4Shadow.s(o, this.e, ")");
     }
 }

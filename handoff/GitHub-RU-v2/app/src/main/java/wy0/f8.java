@@ -31,7 +31,7 @@ public final class f8 implements z01.d1, yf0 {
         if (str3 != null) {
             bVar = new aa.u0(str3);
         }
-        return y71.n1.y(new rm0.f3(new y71.y(new c8(this, null, 1), com.github.service.wrapper.a.o(this.r, new po(str, u0Var, bVar), null, false, null, null, 58)), 11), this.s);
+        return y71.n1Shadow.y(new rm0.f3(new y71.y(new c8(this, null, 1), com.github.service.wrapper.a.o(this.r, new po(str, u0Var, bVar), null, false, null, null, 58)), 11), this.s);
     }
 
     @Override // z01.d1
@@ -48,7 +48,7 @@ public final class f8 implements z01.d1, yf0 {
         if (str4 != null) {
             bVar = new aa.u0(str4);
         }
-        return y71.n1.y(new t00.f8(16, new rm0.f3(new y71.y(new c8(this, null, 0), com.github.service.wrapper.a.o(this.r, new jy(i, u0Var, bVar, str, str2), null, false, null, null, 58)), 10)), this.s);
+        return y71.n1Shadow.y(new t00.f8(16, new rm0.f3(new y71.y(new c8(this, null, 0), com.github.service.wrapper.a.o(this.r, new jy(i, u0Var, bVar, str, str2), null, false, null, null, 58)), 10)), this.s);
     }
 
     @Override // z01.d1

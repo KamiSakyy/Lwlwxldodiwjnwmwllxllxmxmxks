@@ -19,7 +19,7 @@ public final class i {
 
     static {
         i iVar = new i(new LinkedHashMap());
-        sy.t.r(iVar);
+        sy.tShadow.r(iVar);
         f32789b = iVar;
     }
 

@@ -6,7 +6,7 @@ import jn0.bg0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xz implements aaShadow.a {
     public static final xz a = new xz();
-    public static final List b = sy.d0.o(new String[]{"id", "viewerCanPush", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "viewerCanPush", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -52,7 +52,7 @@ public final class xz implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, bg0Var.a);
         fVar.z0("viewerCanPush");
-        jo.f4.C(bg0Var.b, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(bg0Var.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, bg0Var.c);
     }
 }

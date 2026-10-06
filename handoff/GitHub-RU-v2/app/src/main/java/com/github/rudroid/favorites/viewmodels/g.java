@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import java.util.ArrayList;
 import java.util.List;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import zk.v1;
 
@@ -38,21 +38,21 @@ public final class g extends k1 {
         y1 s2 = m0.s(fl.f.Companion, null);
         this.f12368v = s2;
         this.f12369w = new i1(s2);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new c(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c(this, null), 3);
     }
 
     public final i1 P() {
         fl.f.Companion.getClass();
-        y1 c10 = n1.c(fl.e.b(w61.a0.a));
-        x61.r<uc.b> rVar = (List) ((fl.f) this.f12368v.getValue()).b;
+        y1 c10 = n1Shadow.c(fl.e.b(w61.a0.a));
+        x61.rShadow<uc.b> rVar = (List) ((fl.f) this.f12368v.getValue()).b;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList(x61.n.F(rVar, 10));
         for (uc.b bVar : rVar) {
             arrayList.add(new g01.d(bVar.f32294r, bVar.f32295s));
         }
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new f(this, arrayList, c10, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f(this, arrayList, c10, null), 3);
         return new i1(c10);
     }
 }

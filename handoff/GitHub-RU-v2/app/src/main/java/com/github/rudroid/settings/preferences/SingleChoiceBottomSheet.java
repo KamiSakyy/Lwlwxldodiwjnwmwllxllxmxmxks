@@ -16,7 +16,7 @@ import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
 import com.github.rudroid.fragments.BaseComposeBottomSheetDialog;
 import com.github.rudroid.fragments.g0;
-import d2.a0;
+import d2.a0Shadow;
 import d2.l0;
 import java.util.ArrayList;
 import k71.k;
@@ -109,7 +109,7 @@ public final class SingleChoiceBottomSheet extends BaseComposeBottomSheetDialog 
         }
         long j = ih.d.b(sVar).d;
         o oVar = o.a;
-        l0 l0Var = a0.b;
+        l0 l0Var = a0Shadow.b;
         r a2 = p2.f.a(f0.o.w(f0.o.f(oVar, j, l0Var), f0.o.v(sVar), true), w2.f0.A(sVar), (p2.d) null);
         e0 a3 = c0.a(l.c, w1.c.D, sVar, 0);
         int hashCode = Long.hashCode(sVar.T);
@@ -130,7 +130,7 @@ public final class SingleChoiceBottomSheet extends BaseComposeBottomSheetDialog 
         t.I(sVar, v2.g.d, c);
         sVar.c0(-2145274130);
         int i2 = Build.VERSION.SDK_INT;
-        ArrayList<b> arrayList = x61.r.r;
+        ArrayList<b> arrayList = x61.rShadow.r;
         if (i2 < 33 ? !((bundle = ((androidx.fragment.app.a0) singleChoiceBottomSheet).x) == null || (parcelableArrayList = bundle.getParcelableArrayList("key_items")) == null) : !((bundle2 = ((androidx.fragment.app.a0) singleChoiceBottomSheet).x) == null || (parcelableArrayList = bundle2.getParcelableArrayList("key_items", b.class)) == null)) {
             arrayList = parcelableArrayList;
         }

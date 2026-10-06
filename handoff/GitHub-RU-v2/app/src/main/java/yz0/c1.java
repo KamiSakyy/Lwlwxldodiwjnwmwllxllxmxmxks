@@ -33,6 +33,6 @@ public final class c1 {
         sb.append(", viewerCanEnableAutoMerge=");
         sb.append(this.b);
         sb.append(", viewerCanDisableAutoMerge=");
-        return jo.f4.s(sb, this.c, ")");
+        return jo.f4Shadow.s(sb, this.c, ")");
     }
 }

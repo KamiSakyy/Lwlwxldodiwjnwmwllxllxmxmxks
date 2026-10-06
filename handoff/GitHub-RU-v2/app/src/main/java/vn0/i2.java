@@ -2,13 +2,13 @@ package vn0;
 
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.fa0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i2 implements aa.a {
     public static final i2 a = new i2();
-    public static final List b = sy.d0.o(new String[]{"choices", "description", "required", "type", "defaultValue", "titleId"});
+    public static final List b = sy.d0Shadow.o(new String[]{"choices", "description", "required", "type", "defaultValue", "titleId"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;

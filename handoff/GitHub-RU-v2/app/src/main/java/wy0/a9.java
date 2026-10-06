@@ -66,7 +66,7 @@ public final class a9 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar);
+                    y71.n1Shadow.s(jVar);
                     Object b = R.b(new rm0.u7(15, jVar, ta0Var), this);
                     if (b != aVar) {
                         b = a0Var;
@@ -92,11 +92,11 @@ public final class a9 extends c71.j implements j71.f {
                     y71.j jVar2 = this.x;
                     yz0.w7 w7Var = (yz0.w7) this.y;
                     ProjectsMetaInfo projectsMetaInfo = this.z;
-                    xa k = projectsMetaInfo != null ? sy.a0.k(w7Var, this.A.s, projectsMetaInfo.r, projectsMetaInfo.t) : new t00.f8(21, new w61.k(w7Var, x61.r.r));
+                    xa k = projectsMetaInfo != null ? sy.a0.k(w7Var, this.A.s, projectsMetaInfo.r, projectsMetaInfo.t) : new t00.f8(21, new w61.k(w7Var, x61.rShadow.r));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, k, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, k, this) == aVar2) {
                         return aVar2;
                     }
                 } else {
@@ -118,7 +118,7 @@ public final class a9 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar3);
+                    y71.n1Shadow.s(jVar3);
                     Object b2 = R2.b(new rm0.u7(16, jVar3, hc0Var), this);
                     if (b2 != aVar3) {
                         b2 = a0Var2;
@@ -144,11 +144,11 @@ public final class a9 extends c71.j implements j71.f {
                     y71.j jVar4 = this.x;
                     yz0.y7 y7Var = (yz0.y7) this.y;
                     ProjectsMetaInfo projectsMetaInfo2 = this.z;
-                    xa k2 = projectsMetaInfo2 != null ? sy.a0.k(y7Var, this.A.s, projectsMetaInfo2.r, projectsMetaInfo2.t) : new t00.f8(21, new w61.k(y7Var, x61.r.r));
+                    xa k2 = projectsMetaInfo2 != null ? sy.a0.k(y7Var, this.A.s, projectsMetaInfo2.r, projectsMetaInfo2.t) : new t00.f8(21, new w61.k(y7Var, x61.rShadow.r));
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar4, k2, this) == aVar4) {
+                    if (y71.n1Shadow.q(jVar4, k2, this) == aVar4) {
                         return aVar4;
                     }
                 } else {

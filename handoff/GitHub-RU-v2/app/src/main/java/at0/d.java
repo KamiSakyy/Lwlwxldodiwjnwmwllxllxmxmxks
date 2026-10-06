@@ -4,14 +4,14 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements aa.a {
     public static final d a = new d();
-    public static final List b = d0.o(new String[]{"__typename", "isMinimized", "minimizedReason", "viewerCanMinimize"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "isMinimized", "minimizedReason", "viewerCanMinimize"});
 
     public static a c(e eVar, w wVar) {
         Boolean bool;
@@ -72,7 +72,7 @@ public final class d implements aa.a {
         aa.c.a.b(fVar, wVar, aVar.a);
         fVar.z0("isMinimized");
         aa.b bVar = aa.c.f;
-        f4.C(aVar.b, bVar, fVar, wVar, "minimizedReason");
+        f4Shadow.C(aVar.b, bVar, fVar, wVar, "minimizedReason");
         aa.c.i.b(fVar, wVar, aVar.c);
         fVar.z0("viewerCanMinimize");
         bVar.b(fVar, wVar, Boolean.valueOf(aVar.d));

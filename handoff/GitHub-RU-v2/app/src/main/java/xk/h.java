@@ -1,7 +1,7 @@
 package xk;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
@@ -48,6 +48,6 @@ public final class h {
         sb.append(", recentActivities=");
         sb.append(this.d);
         sb.append(", isEmployee=");
-        return f4.s(sb, this.e, ")");
+        return f4Shadow.s(sb, this.e, ")");
     }
 }

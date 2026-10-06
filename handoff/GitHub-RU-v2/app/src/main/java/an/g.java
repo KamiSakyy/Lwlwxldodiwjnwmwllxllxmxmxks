@@ -13,7 +13,7 @@ import kj.z;
 import q2.x;
 import rm0.v4;
 import s0.u0;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import t.e;
 import v71.b0;
@@ -249,7 +249,7 @@ public final class g extends c71.j implements j71.e {
                 ((s) ((bj.f) this.y).b.a((oa.j) obj3)).g(new ab.o((String) obj4, 2), (String) obj2);
                 break;
             case 2:
-                s5.e eVar = (s5.e) obj3;
+                s5.eShadow eVar = (s5.e) obj3;
                 b71.a aVar3 = b71.a.r;
                 y.j(obj);
                 s5.b bVar = (s5.b) this.y;
@@ -346,7 +346,7 @@ public final class g extends c71.j implements j71.e {
                 b71.a aVar12 = b71.a.r;
                 y.j(obj);
                 v71.z zVar = (v71.z) this.y;
-                v71.a0 a0Var2 = v71.a0.u;
+                v71.a0Shadow a0Var2 = v71.a0Shadow.u;
                 x xVar = (x) obj4;
                 b0.z(zVar, (a71.h) null, a0Var2, new s0.a0(xVar, (u0) obj3, (a71.c) null, 0), 1);
                 b0.z(zVar, (a71.h) null, a0Var2, new v4(xVar, (z1) obj2, (a71.c) null, 4), 1);

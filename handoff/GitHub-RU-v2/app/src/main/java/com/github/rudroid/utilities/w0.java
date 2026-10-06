@@ -9,13 +9,13 @@ public final class w0 {
         k71.k.g(iVar, "<this>");
         k71.k.g(c0Var, "lifecycleOwner");
         k71.k.g(eVar, "action");
-        return v71.b0.z(androidx.lifecycle.d1.i(c0Var), (a71.h) null, (v71.a0) null, new n0(c0Var, wVar, iVar, eVar, null), 3);
+        return v71.b0.z(androidx.lifecycle.d1.i(c0Var), (a71.h) null, (v71.a0Shadow) null, new n0(c0Var, wVar, iVar, eVar, null), 3);
     }
 
     public static final y71.i1 c(y71.y1 y1Var, v6.a aVar, y71.y1 y1Var2, com.github.rudroid.issueorpullrequest.mergebox.ui.e0 e0Var) {
         k71.k.g(y1Var, "<this>");
         k71.k.g(y1Var2, "combineWith");
-        return y71.n1.G(new c00.g(y1Var, y1Var2, new s0(3, e0Var, k71.j.class, "suspendConversion0", "combineStateFlow$suspendConversion0(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", 0, 0), 27), aVar, y71.q1.b, e0Var.s(y1Var.getValue(), y1Var2.getValue()));
+        return y71.n1Shadow.G(new c00.g(y1Var, y1Var2, new s0(3, e0Var, k71.j.class, "suspendConversion0", "combineStateFlow$suspendConversion0(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", 0, 0), 27), aVar, y71.q1.b, e0Var.s(y1Var.getValue(), y1Var2.getValue()));
     }
 
     public static final void d(y71.y1 y1Var, fl.b bVar) {
@@ -45,7 +45,7 @@ public final class w0 {
 
     public static y71.i1 f(y71.w1 w1Var, v71.z zVar, j71.c cVar) {
         k71.k.g(w1Var, "<this>");
-        return y71.n1.G(y71.n1.B(new u0(cVar, null), w1Var), zVar, y71.q1.a, cVar.k(w1Var.getValue()));
+        return y71.n1Shadow.G(y71.n1Shadow.B(new u0(cVar, null), w1Var), zVar, y71.q1.a, cVar.k(w1Var.getValue()));
     }
 
     public static final void g(y71.g1 g1Var) {

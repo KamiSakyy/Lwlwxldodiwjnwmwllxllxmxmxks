@@ -94,14 +94,14 @@ public final /* synthetic */ class p4 implements j71.c {
                 k71.k.g(o3Var3, "data");
                 jn0.r3Shadow r3Var3 = o3Var3.a.b;
                 List list2 = r3Var3 != null ? r3Var3.b : null;
-                return list2 == null ? x61.r.r : list2;
+                return list2 == null ? x61.rShadow.r : list2;
             case 13:
                 jn0.o3 o3Var4 = (jn0.o3) obj;
                 k71.k.g(o3Var4, "data");
                 jn0.r3Shadow r3Var4 = o3Var4.a.b;
                 List list3 = r3Var4 != null ? r3Var4.b : null;
                 if (list3 == null) {
-                    list3 = x61.r.r;
+                    list3 = x61.rShadow.r;
                 }
                 ArrayList S = x61.m.S(list3);
                 ArrayList arrayList = new ArrayList(x61.n.F(S, 10));
@@ -193,21 +193,21 @@ public final /* synthetic */ class p4 implements j71.c {
                 k71.k.g(yVar, "$this$navigation");
                 x6.p0 p0Var = yVar.g;
                 z6.e r = com.github.rudroid.m0.r(p0Var, z6.e.class);
-                k71.e a = k71.x.a(ExploreScreenRoute.class);
-                k71.e a2 = k71.x.a(FeedFragment.class);
+                k71.e a = k71.xShadow.a(ExploreScreenRoute.class);
+                k71.e a2 = k71.xShadow.a(FeedFragment.class);
                 x61.s sVar = x61.s.r;
                 z6.i iVar = new z6.i(r, a, sVar, a2);
                 ArrayList arrayList2 = yVar.j;
                 arrayList2.add(iVar.a());
-                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.x.a(ExploreAwesomeListsRoute.class), sVar, k71.x.a(AwesomeListsFragment.class)).a());
-                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.x.a(ExploreTrendingReposRoute.class), sVar, k71.x.a(ExploreTrendingFragment.class)).a());
-                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.x.a(FeedFilterRoute.class), sVar, k71.x.a(FeedFilterFragment.class)).a());
+                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.xShadow.a(ExploreAwesomeListsRoute.class), sVar, k71.xShadow.a(AwesomeListsFragment.class)).a());
+                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.xShadow.a(ExploreTrendingReposRoute.class), sVar, k71.xShadow.a(ExploreTrendingFragment.class)).a());
+                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.xShadow.a(FeedFilterRoute.class), sVar, k71.xShadow.a(FeedFilterFragment.class)).a());
                 gf.a.a(yVar);
                 ze.b.a(yVar);
                 rf.g.a(yVar);
                 oc.b.a(yVar);
                 ee.b.a(yVar);
-                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.x.a(SessionEventsRoute.class), sVar, k71.x.a(SessionEventsFragment.class)).a());
+                arrayList2.add(new z6.i(p0Var.b(sy.w.r(z6.e.class)), k71.xShadow.a(SessionEventsRoute.class), sVar, k71.xShadow.a(SessionEventsFragment.class)).a());
                 return w61.a0.a;
             case 26:
                 k71.k.g((String) obj, "it");

@@ -15,7 +15,7 @@ import com.github.service.models.response.Avatar;
 import com.github.service.models.response.CheckStatusState;
 import com.google.android.gms.internal.measurement.i4;
 import com.google.android.gms.internal.measurement.z3;
-import d2.a0;
+import d2.a0Shadow;
 import d3.q;
 import f1.p3;
 import f1.p5;
@@ -100,7 +100,7 @@ import w1.o;
 import w1.r;
 import wc0.h2;
 import wc0.i2;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -649,7 +649,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                         }
                     }
                 };
-                s01.o oVar = s01.o.r;
+                s01.oShadow oVar = s01.oShadow.r;
                 final int i3 = 4;
                 this.v = new a00.b(jVar, bVar, vVar, aVar, eVar, oVar, new j71.e() { // from class: bo0.e
                     @Override // j71.e
@@ -7452,7 +7452,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                         }
                     }
                 };
-                s01.o oVar2 = s01.o.r;
+                s01.oShadow oVar2 = s01.oShadow.r;
                 final int i17 = 21;
                 this.v = new a00.b(jVar, bVar, vVar, aVar10, eVar7, oVar2, new j71.e() { // from class: bo0.e
                     @Override // j71.e
@@ -11276,7 +11276,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar8 = (s) obj;
                                 int intValue9 = ((Integer) obj2).intValue();
                                 if (sVar8.S(intValue9 & 1, (intValue9 & 3) != 2)) {
-                                    r z = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar8).b, a0.b), ih.a.n, 0.0f, 2);
+                                    r z = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar8).b, a0Shadow.b), ih.a.n, 0.0f, 2);
                                     yz0.g2 g2Var = new yz0.g2(false, false, "id1", yz0.f2.a, new com.github.service.models.response.a("login2", (Avatar) null, "Copilot", true, (String) null, 50));
                                     Object N2 = sVar8.N();
                                     Object obj3 = N2;
@@ -11294,7 +11294,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar9 = (s) obj;
                                 int intValue10 = ((Integer) obj2).intValue();
                                 if (sVar9.S(intValue10 & 1, (intValue10 & 3) != 2)) {
-                                    r z2 = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar9).b, a0.b), ih.a.n, 0.0f, 2);
+                                    r z2 = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar9).b, a0Shadow.b), ih.a.n, 0.0f, 2);
                                     yz0.g2 g2Var2 = new yz0.g2(false, false, "id1", yz0.f2.a, new com.github.service.models.response.a("login2", (Avatar) null, "Copilot", true, (String) null, 50));
                                     Object N3 = sVar9.N();
                                     Object obj4 = N3;
@@ -11367,7 +11367,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar16 = (s) obj;
                                 int intValue17 = ((Integer) obj2).intValue();
                                 if (sVar16.S(intValue17 & 1, (intValue17 & 3) != 2)) {
-                                    n4.c(z3.C(2131231100, 0, sVar16), ih.d.b(sVar16).E0, ih.d.b(sVar16).F0, sVar16, 8);
+                                    n4.cShadow(z3.C(2131231100, 0, sVar16), ih.d.b(sVar16).E0, ih.d.b(sVar16).F0, sVar16, 8);
                                 } else {
                                     sVar16.V();
                                 }
@@ -11385,9 +11385,9 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar18 = (s) obj;
                                 int intValue19 = ((Integer) obj2).intValue();
                                 if (sVar18.S(intValue19 & 1, (intValue19 & 3) != 2)) {
-                                    n4.c(z3.C(2131231100, 0, sVar18), ih.d.b(sVar18).E0, ih.d.b(sVar18).F0, sVar18, 8);
-                                    n4.c(z3.C(2131231327, 0, sVar18), ih.d.b(sVar18).B0, ih.d.b(sVar18).C0, sVar18, 8);
-                                    n4.c(z3.C(2131231290, 0, sVar18), ih.d.b(sVar18).H0, ih.d.b(sVar18).I0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231100, 0, sVar18), ih.d.b(sVar18).E0, ih.d.b(sVar18).F0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231327, 0, sVar18), ih.d.b(sVar18).B0, ih.d.b(sVar18).C0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231290, 0, sVar18), ih.d.b(sVar18).H0, ih.d.b(sVar18).I0, sVar18, 8);
                                 } else {
                                     sVar18.V();
                                 }
@@ -11444,7 +11444,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 }
                                 break;
                         }
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 };
                 final int i26 = 1;
@@ -11611,7 +11611,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar8 = (s) obj;
                                 int intValue9 = ((Integer) obj2).intValue();
                                 if (sVar8.S(intValue9 & 1, (intValue9 & 3) != 2)) {
-                                    r z = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar8).b, a0.b), ih.a.n, 0.0f, 2);
+                                    r z = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar8).b, a0Shadow.b), ih.a.n, 0.0f, 2);
                                     yz0.g2 g2Var = new yz0.g2(false, false, "id1", yz0.f2.a, new com.github.service.models.response.a("login2", (Avatar) null, "Copilot", true, (String) null, 50));
                                     Object N2 = sVar8.N();
                                     Object obj3 = N2;
@@ -11629,7 +11629,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar9 = (s) obj;
                                 int intValue10 = ((Integer) obj2).intValue();
                                 if (sVar9.S(intValue10 & 1, (intValue10 & 3) != 2)) {
-                                    r z2 = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar9).b, a0.b), ih.a.n, 0.0f, 2);
+                                    r z2 = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar9).b, a0Shadow.b), ih.a.n, 0.0f, 2);
                                     yz0.g2 g2Var2 = new yz0.g2(false, false, "id1", yz0.f2.a, new com.github.service.models.response.a("login2", (Avatar) null, "Copilot", true, (String) null, 50));
                                     Object N3 = sVar9.N();
                                     Object obj4 = N3;
@@ -11702,7 +11702,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar16 = (s) obj;
                                 int intValue17 = ((Integer) obj2).intValue();
                                 if (sVar16.S(intValue17 & 1, (intValue17 & 3) != 2)) {
-                                    n4.c(z3.C(2131231100, 0, sVar16), ih.d.b(sVar16).E0, ih.d.b(sVar16).F0, sVar16, 8);
+                                    n4.cShadow(z3.C(2131231100, 0, sVar16), ih.d.b(sVar16).E0, ih.d.b(sVar16).F0, sVar16, 8);
                                 } else {
                                     sVar16.V();
                                 }
@@ -11720,9 +11720,9 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar18 = (s) obj;
                                 int intValue19 = ((Integer) obj2).intValue();
                                 if (sVar18.S(intValue19 & 1, (intValue19 & 3) != 2)) {
-                                    n4.c(z3.C(2131231100, 0, sVar18), ih.d.b(sVar18).E0, ih.d.b(sVar18).F0, sVar18, 8);
-                                    n4.c(z3.C(2131231327, 0, sVar18), ih.d.b(sVar18).B0, ih.d.b(sVar18).C0, sVar18, 8);
-                                    n4.c(z3.C(2131231290, 0, sVar18), ih.d.b(sVar18).H0, ih.d.b(sVar18).I0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231100, 0, sVar18), ih.d.b(sVar18).E0, ih.d.b(sVar18).F0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231327, 0, sVar18), ih.d.b(sVar18).B0, ih.d.b(sVar18).C0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231290, 0, sVar18), ih.d.b(sVar18).H0, ih.d.b(sVar18).I0, sVar18, 8);
                                 } else {
                                     sVar18.V();
                                 }
@@ -11779,7 +11779,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 }
                                 break;
                         }
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 }, new cd0.a(15), new cd0.a(16), new cd0.a(17), new cd0.a(18), new j71.e() { // from class: cd0.d
                     /* JADX WARN: Type inference failed for: r1v45, types: [java.lang.Object, java.util.List] */
@@ -11943,7 +11943,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar8 = (s) obj;
                                 int intValue9 = ((Integer) obj2).intValue();
                                 if (sVar8.S(intValue9 & 1, (intValue9 & 3) != 2)) {
-                                    r z = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar8).b, a0.b), ih.a.n, 0.0f, 2);
+                                    r z = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar8).b, a0Shadow.b), ih.a.n, 0.0f, 2);
                                     yz0.g2 g2Var = new yz0.g2(false, false, "id1", yz0.f2.a, new com.github.service.models.response.a("login2", (Avatar) null, "Copilot", true, (String) null, 50));
                                     Object N2 = sVar8.N();
                                     Object obj3 = N2;
@@ -11961,7 +11961,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar9 = (s) obj;
                                 int intValue10 = ((Integer) obj2).intValue();
                                 if (sVar9.S(intValue10 & 1, (intValue10 & 3) != 2)) {
-                                    r z2 = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar9).b, a0.b), ih.a.n, 0.0f, 2);
+                                    r z2 = androidx.compose.foundation.layout.b.z(f0.o.f(o.a, ih.d.b(sVar9).b, a0Shadow.b), ih.a.n, 0.0f, 2);
                                     yz0.g2 g2Var2 = new yz0.g2(false, false, "id1", yz0.f2.a, new com.github.service.models.response.a("login2", (Avatar) null, "Copilot", true, (String) null, 50));
                                     Object N3 = sVar9.N();
                                     Object obj4 = N3;
@@ -12034,7 +12034,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar16 = (s) obj;
                                 int intValue17 = ((Integer) obj2).intValue();
                                 if (sVar16.S(intValue17 & 1, (intValue17 & 3) != 2)) {
-                                    n4.c(z3.C(2131231100, 0, sVar16), ih.d.b(sVar16).E0, ih.d.b(sVar16).F0, sVar16, 8);
+                                    n4.cShadow(z3.C(2131231100, 0, sVar16), ih.d.b(sVar16).E0, ih.d.b(sVar16).F0, sVar16, 8);
                                 } else {
                                     sVar16.V();
                                 }
@@ -12052,9 +12052,9 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 s sVar18 = (s) obj;
                                 int intValue19 = ((Integer) obj2).intValue();
                                 if (sVar18.S(intValue19 & 1, (intValue19 & 3) != 2)) {
-                                    n4.c(z3.C(2131231100, 0, sVar18), ih.d.b(sVar18).E0, ih.d.b(sVar18).F0, sVar18, 8);
-                                    n4.c(z3.C(2131231327, 0, sVar18), ih.d.b(sVar18).B0, ih.d.b(sVar18).C0, sVar18, 8);
-                                    n4.c(z3.C(2131231290, 0, sVar18), ih.d.b(sVar18).H0, ih.d.b(sVar18).I0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231100, 0, sVar18), ih.d.b(sVar18).E0, ih.d.b(sVar18).F0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231327, 0, sVar18), ih.d.b(sVar18).B0, ih.d.b(sVar18).C0, sVar18, 8);
+                                    n4.cShadow(z3.C(2131231290, 0, sVar18), ih.d.b(sVar18).H0, ih.d.b(sVar18).I0, sVar18, 8);
                                 } else {
                                     sVar18.V();
                                 }
@@ -12111,7 +12111,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                                 }
                                 break;
                         }
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 }, null, 120832);
                 cd0.a aVar17 = new cd0.a(7);
@@ -13170,7 +13170,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                 this.u = vVar;
                 lm0.g gVar = new lm0.g(24);
                 lb0.a aVar19 = new lb0.a(12);
-                s01.o oVar3 = s01.o.r;
+                s01.oShadow oVar3 = s01.oShadow.r;
                 this.v = new jy.d(jVar, bVar, vVar, gVar, aVar19, oVar3, new lb0.a(13), new lm0.g(25), new lm0.g(26), new lm0.g(27), new lm0.g(28), null, null, 129024);
                 this.w = new bo0.b(jVar, bVar, vVar, new m20.a(10), new m20.a(11), new lb0.a(18), new lb0.a(19), new m20.a(12), new m20.a(13), new m20.a(14), new m20.a(15));
                 this.x = new bo0.b(jVar, bVar, vVar, new m20.a(4), new m20.a(5), new lb0.a(16), new lb0.a(17), new m20.a(6), new m20.a(7), new m20.a(8), new m20.a(9));
@@ -13187,7 +13187,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                 this.u = vVar;
                 bf.c cVar = new bf.c(19);
                 a00.a aVar20 = new a00.a(20, (byte) 0);
-                s01.o oVar4 = s01.o.r;
+                s01.oShadow oVar4 = s01.oShadow.r;
                 this.v = new a00.b(jVar, bVar, vVar, cVar, aVar20, oVar4, new a00.a(21, (byte) 0), new bf.c(20), new bf.c(21), new bf.c(22), new bf.c(23), null, null, 129024);
                 this.w = new bo0.b(jVar, bVar, vVar, new bo0.a(5), new bo0.a(6), new a00.a(26, (byte) 0), new a00.a(27, (byte) 0), new bo0.a(7), new bo0.a(8), new bo0.a(9), new bo0.a(10));
                 this.x = new bo0.b(jVar, bVar, vVar, new bf.c(29), new bo0.a(0), new a00.a(24, (byte) 0), new a00.a(25, (byte) 0), new bo0.a(1), new bo0.a(2), new bo0.a(3), new bo0.a(4));
@@ -14776,7 +14776,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                         arrayList.add(ba0Var);
                     }
                 }
-                return n1.y(in.r.l(in.r.h(this.t.d(new qn0.j2(new ab(new u0(arrayList), str2, str))))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(this.t.d(new qn0.j2(new ab(new u0(arrayList), str2, str))))), this.u);
             case 1:
                 k71.k.g(str, "workflowId");
                 ArrayList arrayList2 = new ArrayList();
@@ -14788,7 +14788,7 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                         arrayList2.add(wg0Var);
                     }
                 }
-                return n1.y(in.r.l(in.r.h(this.t.d(new qo.j2(new ee(new u0(arrayList2), str2, str))))), this.u);
+                return n1Shadow.y(in.rShadow.l(in.rShadow.h(this.t.d(new qo.j2(new ee(new u0(arrayList2), str2, str))))), this.u);
             case 2:
                 k71.k.g(str, "workflowId");
                 return y41.t1.S("dispatchWorkflowRun", "3.12");
@@ -14801,13 +14801,13 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
     public final y71.i a(String str, boolean z, boolean z2) {
         switch (this.r) {
             case 0:
-                return n1.y(new bz0.t(in.r.h(this.s.d(new yn0.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 5), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new yn0.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 5), this.u);
             case 1:
-                return n1.y(new bz0.t(in.r.h(this.s.d(new yo.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 9), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new yo.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 9), this.u);
             case 2:
-                return n1.y(new bz0.t(in.r.h(this.s.d(new zc0.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 13), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new zc0.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 13), this.u);
             default:
-                return n1.y(new bz0.t(in.r.h(this.s.d(new j20.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 20), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new j20.r(new u0(Boolean.valueOf(z2)), new u0(Boolean.valueOf(z)), str))), 20), this.u);
         }
     }
 
@@ -14896,13 +14896,13 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
     public final y71.i g(String str, boolean z) {
         switch (this.r) {
             case 0:
-                return n1.y(new bz0.t(in.r.k(this.s.d(new yn0.m(new u0(Boolean.valueOf(z)), str))), 4), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.k(this.s.d(new yn0.m(new u0(Boolean.valueOf(z)), str))), 4), this.u);
             case 1:
-                return n1.y(new bz0.t(in.r.k(this.s.d(new yo.m(new u0(Boolean.valueOf(z)), str))), 8), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.k(this.s.d(new yo.m(new u0(Boolean.valueOf(z)), str))), 8), this.u);
             case 2:
-                return n1.y(new bz0.t(in.r.k(this.s.d(new zc0.m(new u0(Boolean.valueOf(z)), str))), 12), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.k(this.s.d(new zc0.m(new u0(Boolean.valueOf(z)), str))), 12), this.u);
             default:
-                return n1.y(new bz0.t(in.r.k(this.s.d(new j20.m(new u0(Boolean.valueOf(z)), str))), 19), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.k(this.s.d(new j20.m(new u0(Boolean.valueOf(z)), str))), 19), this.u);
         }
     }
 
@@ -14966,10 +14966,10 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "workflowId");
-                return n1.y(new bz0.e(com.github.service.wrapper.a.o(this.t, new qn0.f2(str), null, false, null, null, 62), 17), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.a.o(this.t, new qn0.f2(str), null, false, null, null, 62), 17), this.u);
             case 1:
                 k71.k.g(str, "workflowId");
-                return n1.y(new bz0.e(com.github.service.wrapper.a.o(this.t, new qo.f2(str), null, false, null, null, 62), 19), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.a.o(this.t, new qo.f2(str), null, false, null, null, 62), 19), this.u);
             case 2:
                 k71.k.g(str, "workflowId");
                 return y41.t1.S("fetchWorkflowInputs", "3.12");
@@ -15019,16 +15019,16 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "checkRunId");
-                return n1.y(new h(com.github.service.wrapper.a.o(this.t, new g0(str, i), null, false, null, null, 62), str, i, 0), this.u);
+                return n1Shadow.y(new h(com.github.service.wrapper.a.o(this.t, new g0(str, i), null, false, null, null, 62), str, i, 0), this.u);
             case 1:
                 k71.k.g(str, "checkRunId");
-                return n1.y(new h(com.github.service.wrapper.a.o(this.t, new qo.g0(str, i), null, false, null, null, 62), str, i, 1), this.u);
+                return n1Shadow.y(new h(com.github.service.wrapper.a.o(this.t, new qo.g0(str, i), null, false, null, null, 62), str, i, 1), this.u);
             case 2:
                 k71.k.g(str, "checkRunId");
-                return n1.y(new h(com.github.service.wrapper.a.o(this.t, new rc0.g0(str, i), null, false, null, null, 62), str, i, 2), this.u);
+                return n1Shadow.y(new h(com.github.service.wrapper.a.o(this.t, new rc0.g0(str, i), null, false, null, null, 62), str, i, 2), this.u);
             default:
                 k71.k.g(str, "checkRunId");
-                return n1.y(new h(com.github.service.wrapper.a.o(this.t, new b20.g0(str, i), null, false, null, null, 62), str, i, 3), this.u);
+                return n1Shadow.y(new h(com.github.service.wrapper.a.o(this.t, new b20.g0(str, i), null, false, null, null, 62), str, i, 3), this.u);
         }
     }
 
@@ -15103,13 +15103,13 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
     public final y71.i u(String str, String str2) {
         switch (this.r) {
             case 0:
-                return n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
+                return n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
             case 1:
-                return n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new qo.g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
+                return n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new qo.g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
             case 2:
-                return n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new rc0.g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
+                return n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new rc0.g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
             default:
-                return n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new b20.g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
+                return n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new b20.g1(new u0(Boolean.valueOf(str2 != null)), str2 == null ? t0.d : new u0(str2), str), null, false, null, null, 62)), this.u);
         }
     }
 
@@ -15134,10 +15134,10 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "workflowId");
-                return n1.y(new bz0.e(com.github.service.wrapper.a.o(this.s, new qn0.o2(str, str2), null, false, null, null, 62), 18), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.a.o(this.s, new qn0.o2(str, str2), null, false, null, null, 62), 18), this.u);
             case 1:
                 k71.k.g(str, "workflowId");
-                return n1.y(new bz0.e(com.github.service.wrapper.a.o(this.s, new qo.o2(str, str2), null, false, null, null, 62), 20), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.a.o(this.s, new qo.o2(str, str2), null, false, null, null, 62), 20), this.u);
             case 2:
                 k71.k.g(str, "workflowId");
                 return y41.t1.S("fetchHasWorkflowDispatchTriggerUseCase", "3.12");
@@ -15151,16 +15151,16 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "checkSuiteId");
-                return n1.y(new bz0.t(in.r.h(this.s.d(new yn0.d(str))), 3), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new yn0.d(str))), 3), this.u);
             case 1:
                 k71.k.g(str, "checkSuiteId");
-                return n1.y(new bz0.t(in.r.h(this.s.d(new yo.d(str))), 7), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new yo.d(str))), 7), this.u);
             case 2:
                 k71.k.g(str, "checkSuiteId");
-                return n1.y(new bz0.t(in.r.h(this.s.d(new zc0.d(str))), 11), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new zc0.d(str))), 11), this.u);
             default:
                 k71.k.g(str, "checkSuiteId");
-                return n1.y(new bz0.t(in.r.h(this.s.d(new j20.d(str))), 18), this.u);
+                return n1Shadow.y(new bz0.t(in.rShadow.h(this.s.d(new j20.d(str))), 18), this.u);
         }
     }
 
@@ -15170,22 +15170,22 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                 k71.k.g(str, "checkRunId");
                 qn0.p pVar = new qn0.p(str, new u0(100), null, 28);
                 u uVar = new u();
-                return n1.y(new cn.q(new r(new y(new a61.o(this, pVar, uVar, null, 10), com.github.service.wrapper.a.o(this.s, new qn0.p(str, new u0(100), null, 28), null, false, null, null, 62)), uVar, this, pVar, 0), 1), this.u);
+                return n1Shadow.y(new cn.q(new r(new y(new a61.o(this, pVar, uVar, null, 10), com.github.service.wrapper.a.o(this.s, new qn0.p(str, new u0(100), null, 28), null, false, null, null, 62)), uVar, this, pVar, 0), 1), this.u);
             case 1:
                 k71.k.g(str, "checkRunId");
                 qo.p pVar2 = new qo.p(str, new u0(100), (u0) null, 28);
                 u uVar2 = new u();
-                return n1.y(new cn.q(new r(new y(new a61.o(this, pVar2, uVar2, null, 11), com.github.service.wrapper.a.o(this.s, new qo.p(str, new u0(100), (u0) null, 28), null, false, null, null, 62)), uVar2, this, pVar2, 1), 2), this.u);
+                return n1Shadow.y(new cn.q(new r(new y(new a61.o(this, pVar2, uVar2, null, 11), com.github.service.wrapper.a.o(this.s, new qo.p(str, new u0(100), (u0) null, 28), null, false, null, null, 62)), uVar2, this, pVar2, 1), 2), this.u);
             case 2:
                 k71.k.g(str, "checkRunId");
                 rc0.p pVar3 = new rc0.p(str, new u0(100), null, 28);
                 u uVar3 = new u();
-                return n1.y(new cn.q(new r(new y(new a61.o(this, pVar3, uVar3, null, 12), com.github.service.wrapper.a.o(this.s, new rc0.p(str, new u0(100), null, 28), null, false, null, null, 62)), uVar3, this, pVar3, 2), 3), this.u);
+                return n1Shadow.y(new cn.q(new r(new y(new a61.o(this, pVar3, uVar3, null, 12), com.github.service.wrapper.a.o(this.s, new rc0.p(str, new u0(100), null, 28), null, false, null, null, 62)), uVar3, this, pVar3, 2), 3), this.u);
             default:
                 k71.k.g(str, "checkRunId");
                 b20.p pVar4 = new b20.p(str, new u0(100), (u0) null, 28);
                 u uVar4 = new u();
-                return n1.y(new cn.q(new r(new y(new h1.u(this, pVar4, uVar4, (a71.c) null, 15), com.github.service.wrapper.a.o(this.s, new b20.p(str, new u0(100), (u0) null, 28), null, false, null, null, 62)), uVar4, this, pVar4, 5), 15), this.u);
+                return n1Shadow.y(new cn.q(new r(new y(new h1.u(this, pVar4, uVar4, (a71.c) null, 15), com.github.service.wrapper.a.o(this.s, new b20.p(str, new u0(100), (u0) null, 28), null, false, null, null, 62)), uVar4, this, pVar4, 5), 15), this.u);
         }
     }
 
@@ -15195,22 +15195,22 @@ public final class t implements kn.b, yf0, mi0, yb0, y90 {
                 k71.k.g(str, "checkSuiteId");
                 k71.k.g(str2, "checkRunName");
                 d9.l lVar = new d9.l(18);
-                return n1.y(new y71.u(new m(2, null, 0), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new w(new u0(100), new u0(str2), str), null, false, null, null, 62), lVar, 3), 30, new com.github.rudroid.widget.contribution.a(13), new d9.m(str3, 16)), 10), 4)), this.u);
+                return n1Shadow.y(new y71.u(new m(2, null, 0), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new w(new u0(100), new u0(str2), str), null, false, null, null, 62), lVar, 3), 30, new com.github.rudroid.widget.contribution.a(13), new d9.m(str3, 16)), 10), 4)), this.u);
             case 1:
                 k71.k.g(str, "checkSuiteId");
                 k71.k.g(str2, "checkRunName");
                 d9.l lVar2 = new d9.l(19);
-                return n1.y(new y71.u(new m(2, null, 1), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new qo.w(new u0(100), new u0(str2), str), null, false, null, null, 62), lVar2, 4), 30, new com.github.rudroid.widget.contribution.a(14), new d9.m(str3, 17)), 10), 5)), this.u);
+                return n1Shadow.y(new y71.u(new m(2, null, 1), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new qo.w(new u0(100), new u0(str2), str), null, false, null, null, 62), lVar2, 4), 30, new com.github.rudroid.widget.contribution.a(14), new d9.m(str3, 17)), 10), 5)), this.u);
             case 2:
                 k71.k.g(str, "checkSuiteId");
                 k71.k.g(str2, "checkRunName");
                 d9.l lVar3 = new d9.l(26);
-                return n1.y(new y71.u(new m(2, null, 2), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new rc0.w(new u0(100), new u0(str2), str), null, false, null, null, 62), lVar3, 5), 30, new com.github.rudroid.widget.contribution.a(18), new d9.m(str3, 19)), 10), 6)), this.u);
+                return n1Shadow.y(new y71.u(new m(2, null, 2), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new rc0.w(new u0(100), new u0(str2), str), null, false, null, null, 62), lVar3, 5), 30, new com.github.rudroid.widget.contribution.a(18), new d9.m(str3, 19)), 10), 6)), this.u);
             default:
                 k71.k.g(str, "checkSuiteId");
                 k71.k.g(str2, "checkRunName");
                 np.h hVar = new np.h(12);
-                return n1.y(new y71.u(new m(2, null, 8), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new b20.w(new u0(100), new u0(str2), str), null, false, null, null, 62), hVar, 27), 30, new x(17), new p3(str3, 19)), 10), 20)), this.u);
+                return n1Shadow.y(new y71.u(new m(2, null, 8), new az0.c(new y00.l(com.github.rudroid.common.flow.f.a(new a61.l0(com.github.service.wrapper.a.o(this.s, new b20.w(new u0(100), new u0(str2), str), null, false, null, null, 62), hVar, 27), 30, new x(17), new p3(str3, 19)), 10), 20)), this.u);
         }
     }
 }

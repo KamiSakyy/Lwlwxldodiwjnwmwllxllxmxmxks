@@ -16,7 +16,7 @@ public abstract class z4 {
         gh.Companion.getClass();
         aa.x xVar = gh.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("contentHTML", xVar, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         aa.x xVar2 = eh.a;

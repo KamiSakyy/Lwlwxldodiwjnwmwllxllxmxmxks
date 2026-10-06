@@ -1,6 +1,6 @@
 package xk;
 
-import in.r;
+import in.rShadow;
 import t00.z1;
 import y71.y;
 import z01.a0;
@@ -22,6 +22,6 @@ public final class j {
 
     public final gl.f a(oa.j jVar) {
         k71.k.g(jVar, "user");
-        return r.l(new y(((a0) this.b.a(jVar)).d(), new z1(this, jVar, null, 26), 6));
+        return rShadow.l(new y(((a0) this.b.a(jVar)).d(), new z1(this, jVar, null, 26), 6));
     }
 }

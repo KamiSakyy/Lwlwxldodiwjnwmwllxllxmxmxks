@@ -43,7 +43,7 @@ public final class h extends c71.j implements j71.c {
                     y.j(obj);
                     ma maVar = this.x;
                     if (maVar != null) {
-                        a00.b bVar = this.y.c;
+                        a00.bShadow bVar = this.y.c;
                         this.w = 1;
                         if (bVar.j(this.z, maVar, this) == aVar) {
                             return aVar;
@@ -63,7 +63,7 @@ public final class h extends c71.j implements j71.c {
                     y.j(obj);
                     ma maVar2 = this.x;
                     if (maVar2 != null) {
-                        a00.b bVar2 = this.y.c;
+                        a00.bShadow bVar2 = this.y.c;
                         this.w = 1;
                         if (bVar2.j(this.z, maVar2, this) == aVar2) {
                             return aVar2;

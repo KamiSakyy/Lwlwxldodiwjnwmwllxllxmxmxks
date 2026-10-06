@@ -30,6 +30,6 @@ public final class m2 {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "AssignedActors(totalCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "AssignedActors(totalCount=", ", nodes=", ")", this.b);
     }
 }

@@ -44,9 +44,9 @@ public final class d1<T> implements y71.j {
                         if (sVar.a()) {
                             sVar.D();
                             g1.a aVar4 = com.github.rudroid.utilities.ui.g1.Companion;
-                            x61.r rVar = (List) g1Var.getData();
+                            x61.rShadow rVar = (List) g1Var.getData();
                             if (rVar == null) {
-                                rVar = x61.r.r;
+                                rVar = x61.rShadow.r;
                             }
                             i iVar = new i(aVar3, rVar, false, false);
                             aVar4.getClass();

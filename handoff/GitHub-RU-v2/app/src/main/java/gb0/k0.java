@@ -6,12 +6,12 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k0 implements aa.a {
     public static final k0 a = new k0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         fb0.i iVar;
         fb0.k kVar;
-        fb0.x xVar;
+        fb0.xShadow xVar;
         fb0.h hVar;
         fb0.z zVar;
         fb0.l lVar;
@@ -134,7 +134,7 @@ public final class k0 implements aa.a {
         if (kVar != null) {
             j.d(fVar, wVar, kVar);
         }
-        fb0.x xVar = l0Var.d;
+        fb0.xShadow xVar = l0Var.d;
         if (xVar != null) {
             w.d(fVar, wVar, xVar);
         }

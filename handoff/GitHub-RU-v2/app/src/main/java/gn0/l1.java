@@ -7,8 +7,8 @@ public abstract class l1 {
     public static final k1 Companion = new k1();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("AutoSquashEnabledEvent", n, sy.d0.n(yh.a));
+        new aa.q0("AutoSquashEnabledEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

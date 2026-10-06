@@ -1,6 +1,6 @@
 package zg;
 
-import a0.d2;
+import a0.d2Shadow;
 import androidx.compose.foundation.layout.f2;
 import androidx.compose.runtime.b2;
 import androidx.compose.runtime.v1;
@@ -160,7 +160,7 @@ public final class a {
                     N4 = new bd.c(14, cVar3, str3);
                     sVar2.n0(N4);
                 }
-                sg.k0.b(b2, false, (j71.a) N4, null, upperCase, f2Var, sVar2, 196608, 10);
+                sg.k0Shadow.b(b2, false, (j71.a) N4, null, upperCase, f2Var, sVar2, 196608, 10);
                 sVar2.q(false);
                 rVar3 = rVar4;
             } else {

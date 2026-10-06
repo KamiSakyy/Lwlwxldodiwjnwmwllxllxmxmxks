@@ -4,7 +4,7 @@ import a0.s0;
 import com.github.rudroid.m0;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -27,7 +27,7 @@ public final class CreateRepositoryInput {
 
     public /* synthetic */ CreateRepositoryInput(int i, String str, String str2, boolean z, boolean z2, String str3, String str4) {
         if (1 != (i & 1)) {
-            c1.l(i, 1, CreateRepositoryInput$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, CreateRepositoryInput$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;

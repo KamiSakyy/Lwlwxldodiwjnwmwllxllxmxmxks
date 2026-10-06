@@ -7,7 +7,7 @@ import jn0.b40;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xr implements aaShadow.a {
     public static final xr a = new xr();
-    public static final List b = sy.d0.n("replaceAssigneesForAssignable");
+    public static final List b = sy.d0Shadow.n("replaceAssigneesForAssignable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

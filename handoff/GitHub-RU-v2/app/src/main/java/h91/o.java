@@ -14,7 +14,7 @@ public abstract class o implements Closeable {
         w wVar;
         try {
             Class.forName("java.nio.file.Files");
-            wVar = new x();
+            wVar = new xShadow();
         } catch (ClassNotFoundException unused) {
             wVar = new w();
         }
@@ -70,7 +70,7 @@ public abstract class o implements Closeable {
     public abstract void m(a0 a0Var, a0 a0Var2);
 
     public final void r(a0 a0Var) {
-        x61.k kVar = new x61.k();
+        x61.kShadow kVar = new x61.k();
         while (a0Var != null && !F(a0Var)) {
             kVar.addFirst(a0Var);
             a0Var = a0Var.c();

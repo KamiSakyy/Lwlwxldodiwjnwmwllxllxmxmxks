@@ -204,14 +204,14 @@ public final class SelectableLanguageBottomSheet extends Hilt_SelectableLanguage
 
     static {
         r71.e pVar = new k71.p(SelectableLanguageBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public SelectableLanguageBottomSheet() {
         w61.h s = sy.w.s(w61.i.s, new j(new i()));
-        this.Y0 = new l1(k71.x.a(n.class), new k(s), new m(s), new l(s));
+        this.Y0 = new l1(k71.xShadow.a(n.class), new k(s), new m(s), new l(s));
         this.Z0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(24));
         this.a1 = sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.explore.c(this, 0));
         this.b1 = 2131954224;

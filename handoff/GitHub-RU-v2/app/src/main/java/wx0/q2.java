@@ -6,7 +6,7 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q2 implements aa.a {
     public static final q2 a = new q2();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         d1 d1Var;
@@ -14,7 +14,7 @@ public final class q2 implements aa.a {
         m1 m1Var;
         e1 e1Var;
         l1 l1Var;
-        f1 f1Var;
+        f1Shadow f1Var;
         g1 g1Var;
         n1 n1Var;
         j1 j1Var;
@@ -137,7 +137,7 @@ public final class q2 implements aa.a {
         if (l1Var != null) {
             t3.d(fVar, wVar, l1Var);
         }
-        f1 f1Var = i0Var.g;
+        f1Shadow f1Var = i0Var.g;
         if (f1Var != null) {
             n3.d(fVar, wVar, f1Var);
         }

@@ -81,7 +81,7 @@ public final class SelectableRepositoryFragment extends Hilt_SelectableRepositor
 
     public SelectableRepositoryFragment() {
         w61.h s = sy.w.s(w61.i.s, new b(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(9, this)));
-        this.H0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.complexfilter.repository.a.class), new c(s), new e(s), new d(s));
+        this.H0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.complexfilter.repository.a.class), new c(s), new e(s), new d(s));
         this.I0 = new s(this);
     }
 

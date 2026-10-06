@@ -6,7 +6,7 @@ import u10.ba0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mv implements aaShadow.a {
     public static final mv a = new mv();
-    public static final List b = sy.d0.o("id", "viewerCanPush", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "viewerCanPush", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -52,7 +52,7 @@ public final class mv implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, ba0Var.a);
         fVar.z0("viewerCanPush");
-        jo.f4.C(ba0Var.b, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(ba0Var.b, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, ba0Var.c);
     }
 }

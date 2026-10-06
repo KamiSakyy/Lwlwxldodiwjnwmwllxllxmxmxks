@@ -8,11 +8,11 @@ import com.github.rudroid.utilities.ui.u0;
 import java.util.concurrent.CancellationException;
 import nj.d0;
 import nj.y;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -52,13 +52,13 @@ public final class m extends k1 implements com.github.rudroid.utilities.viewmode
         this.f6737t = yVar;
         this.f6738u = d0Var;
         this.f6739v = cVar;
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f6741x = c10;
-        y1 c11 = n1.c(new u0((Object) null));
+        y1 c11 = n1Shadow.c(new u0((Object) null));
         this.f6742y = c11;
-        this.f6743z = n1.G(new c00.g(c10, c11, new e(3, null), 27), d1.k(this), y71.q1.a, new u0((Object) null));
-        this.f6740w = b0.z(d1.k(this), (a71.h) null, (a0) null, new d(this, null), 3);
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new i(this, null), 3);
+        this.f6743z = n1Shadow.G(new c00.g(c10, c11, new e(3, null), 27), d1.k(this), y71.q1.a, new u0((Object) null));
+        this.f6740w = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new d(this, null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new i(this, null), 3);
     }
 
     public final void P(boolean z10) {
@@ -66,7 +66,7 @@ public final class m extends k1 implements com.github.rudroid.utilities.viewmode
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.f6740w = b0.z(d1.k(this), (a71.h) null, (a0) null, new l(null, this, z10), 3);
+        this.f6740w = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new l(null, this, z10), 3);
     }
 
     public final void Q(y71.g1 g1Var, fl.b bVar, boolean z10) {

@@ -32,7 +32,7 @@ public final class o7 implements z01.d1, mi0 {
         if (str3 != null) {
             bVar = new aa.u0(str3);
         }
-        return y71.n1.y(new rm0.f3(new y71.y(new m7Shadow(this, null, 1), com.github.service.wrapper.a.o(this.r, new hq(str, u0Var, bVar), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), 5), this.s);
+        return y71.n1Shadow.y(new rm0.f3(new y71.y(new m7Shadow(this, null, 1), com.github.service.wrapper.a.o(this.r, new hq(str, u0Var, bVar), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), 5), this.s);
     }
 
     public final y71.i b(int i, String str, String str2, String str3, String str4) {
@@ -48,7 +48,7 @@ public final class o7 implements z01.d1, mi0 {
         if (str4 != null) {
             bVar = new aa.u0(str4);
         }
-        return y71.n1.y(new cn.q(new rm0.f3(new y71.y(new m7Shadow(this, null, 0), com.github.service.wrapper.a.o(this.r, new j00(i, u0Var, bVar, str, str2), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), 4), 29), this.s);
+        return y71.n1Shadow.y(new cn.q(new rm0.f3(new y71.y(new m7Shadow(this, null, 0), com.github.service.wrapper.a.o(this.r, new j00(i, u0Var, bVar, str, str2), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), 4), 29), this.s);
     }
 
     public final void c() {

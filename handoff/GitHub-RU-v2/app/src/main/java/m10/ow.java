@@ -9,5 +9,5 @@ public abstract class ow {
     public static final a81.t d = new a81.t(1, "minPermissionLevel", false);
     public static final a81.t e = new a81.t(1, "orderBy", false);
     public static final a81.t f = new a81.t(1, "query", false);
-    public static final aa.j0 g = new aa.j0("ProjectV2Owner", x61.r.r);
+    public static final aa.j0 g = new aa.j0("ProjectV2Owner", x61.rShadow.r);
 }

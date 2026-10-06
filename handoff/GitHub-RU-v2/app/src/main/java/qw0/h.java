@@ -15,7 +15,7 @@ import pz0.pd;
 import pz0.sk;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -26,7 +26,7 @@ public abstract class h {
     static {
         td.Companion.getClass();
         r b = l0.b(td.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         x xVar = pd.a;
@@ -37,11 +37,11 @@ public abstract class h {
         le.Companion.getClass();
         q0 q0Var = le.A;
         k.g(q0Var, "type");
-        List n = d0.n(new m("issue", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("issue", q0Var, (String) null, rVar, rVar, r));
         n60.Companion.getClass();
         q0 q0Var2 = n60.a;
         k.g(q0Var2, "type");
         sk.Companion.getClass();
-        a = d0.n(new m("unpinIssue", q0Var2, (String) null, rVar, no.a.s(sk.W0, new u0(s0.p("issueId", new t("issueId")))), n));
+        a = d0Shadow.n(new m("unpinIssue", q0Var2, (String) null, rVar, no.a.s(sk.W0, new u0(s0.p("issueId", new t("issueId")))), n));
     }
 }

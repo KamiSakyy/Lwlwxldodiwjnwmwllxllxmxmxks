@@ -7,7 +7,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.service.models.response.Avatar;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -29,7 +29,7 @@ public final class RepositoryNotificationFilter extends a {
 
     public /* synthetic */ RepositoryNotificationFilter(int i, int i2, Avatar avatar, String str, String str2, String str3) {
         if (31 != (i & 31)) {
-            c1.l(i, 31, RepositoryNotificationFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 31, RepositoryNotificationFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.s = str;

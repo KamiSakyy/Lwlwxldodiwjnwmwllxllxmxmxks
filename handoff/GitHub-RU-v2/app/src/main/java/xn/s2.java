@@ -9,7 +9,7 @@ public final class s2 implements y {
     public String b;
     public ZonedDateTime c;
     public List d;
-    public a0 e;
+    public a0Shadow e;
     public String f;
     public double g;
     public String h;
@@ -17,12 +17,12 @@ public final class s2 implements y {
     public s2(String str, double d) {
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
-        a0 a0Var = new a0();
+        a0Shadow a0Var = new a0Shadow();
         k71.k.g(str, "modelName");
         this.a = "";
         this.b = "";
         this.c = now;
-        this.d = x61.r.r;
+        this.d = x61.rShadow.r;
         this.e = a0Var;
         this.f = str;
         this.g = d;

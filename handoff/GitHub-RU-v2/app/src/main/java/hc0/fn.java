@@ -7,7 +7,7 @@ public abstract class fn {
     public static final en Companion = new en();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
         aa.j0 j0Var = yg.a;
         qw.Companion.getClass();

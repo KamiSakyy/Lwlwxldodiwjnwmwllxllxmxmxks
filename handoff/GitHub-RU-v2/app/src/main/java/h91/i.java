@@ -15,7 +15,7 @@ public interface i extends i0Shadow, WritableByteChannel {
     @Override // h91.i0Shadow, java.io.Flushable
     void flush();
 
-    i p(k kVar);
+    i p(kShadow kVar);
 
     i write(byte[] bArr);
 

@@ -72,7 +72,7 @@ public abstract class rf0 {
         new a81.t(1, "includeForks", false);
         new a81.t(1, "owner", false);
         new a81.t(1, "query", false);
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         l.Companion.getClass();
         aa.j0 j0Var = l.a;
         b1.Companion.getClass();

@@ -167,7 +167,7 @@ public final class m0 {
             i2 |= sVar2.f(str2) ? 2048 : 1024;
         }
         if (sVar2.S(i2 & 1, (i2 & 1171) != 1170)) {
-            w1.r f = f0.o.f(f0.o.w(p2.d(rVar, 1.0f), f0.o.v(sVar2), true), ih.d.b(sVar2).a, d2.a0.b);
+            w1.r f = f0.o.f(f0.o.w(p2.d(rVar, 1.0f), f0.o.v(sVar2), true), ih.d.b(sVar2).a, d2.a0Shadow.b);
             float f2 = ih.a.n;
             w1.r x = androidx.compose.foundation.layout.b.x(f, f2);
             boolean z = (i2 & 896) == 256;

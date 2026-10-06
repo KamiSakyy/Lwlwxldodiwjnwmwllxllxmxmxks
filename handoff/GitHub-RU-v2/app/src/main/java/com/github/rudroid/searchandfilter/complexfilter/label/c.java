@@ -3,7 +3,7 @@ package com.github.rudroid.searchandfilter.complexfilter.label;
 import androidx.lifecycle.o1;
 import androidx.lifecycle.t1;
 import com.github.rudroid.searchandfilter.complexfilter.label.SelectableLabelBottomSheet;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -22,7 +22,7 @@ public final /* synthetic */ class c implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) selectableLabelBottomSheet.Z0.a(selectableLabelBottomSheet, SelectableLabelBottomSheet.d1[0])).booleanValue()) {
-                    k71.e a = x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     SelectableLabelBottomSheet.b bVar = new SelectableLabelBottomSheet.b(selectableLabelBottomSheet);
                     SelectableLabelBottomSheet.c cVar = new SelectableLabelBottomSheet.c(selectableLabelBottomSheet);
                     SelectableLabelBottomSheet.d dVar = new SelectableLabelBottomSheet.d(selectableLabelBottomSheet);
@@ -40,7 +40,7 @@ public final /* synthetic */ class c implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = w.s(w61.i.s, new SelectableLabelBottomSheet.e(new c(selectableLabelBottomSheet, 1)));
-                k71.e a2 = x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 SelectableLabelBottomSheet.f fVar = new SelectableLabelBottomSheet.f(s);
                 SelectableLabelBottomSheet.g gVar = new SelectableLabelBottomSheet.g(s);
                 SelectableLabelBottomSheet.h hVar = new SelectableLabelBottomSheet.h(selectableLabelBottomSheet, s);

@@ -47,7 +47,7 @@ public final class fs {
         o.append(", createdAt=");
         o.append(this.d);
         o.append(", lastEditedAt=");
-        jo.f4.A(", body=", this.f, ", minimizableCommentFragment=", o, this.e);
+        jo.f4Shadow.A(", body=", this.f, ", minimizableCommentFragment=", o, this.e);
         o.append(this.g);
         o.append(")");
         return o.toString();

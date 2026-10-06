@@ -1,6 +1,6 @@
 package zg;
 
-import a0.d2;
+import a0.d2Shadow;
 import androidx.compose.foundation.layout.e1;
 import androidx.compose.foundation.layout.j2;
 import androidx.compose.foundation.layout.l2;
@@ -90,7 +90,7 @@ public final class k0 {
                 rVar2 = rVar;
                 list3 = list2;
             } else {
-                List list4 = i8 != 0 ? x61.r.r : list2;
+                List list4 = i8 != 0 ? x61.rShadow.r : list2;
                 String q0 = i4.q0(2131953412, new Object[]{str3, str4, Integer.valueOf(i5)}, sVar2);
                 w1.r rVar3 = w1.o.a;
                 w1.r b = p2.b(androidx.compose.foundation.layout.b.z(p2.e(rVar3, 1.0f), ih.a.n, 0.0f, 2), 0.0f, ih.a.K, 1);

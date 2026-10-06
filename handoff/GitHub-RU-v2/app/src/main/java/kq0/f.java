@@ -2,7 +2,7 @@ package kq0;
 
 import a0.s0;
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
@@ -41,6 +41,6 @@ public final class f {
         o.append(", owner=");
         o.append(this.d);
         o.append(", isPrivate=");
-        return f4.s(o, this.e, ")");
+        return f4Shadow.s(o, this.e, ")");
     }
 }

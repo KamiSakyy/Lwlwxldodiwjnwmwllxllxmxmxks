@@ -106,9 +106,9 @@ public abstract class n0 implements KSerializer {
                 k71.e eVar = (k71.e) this.b;
                 KSerializer b2 = a.b(eVar, obj);
                 if (b2 == null) {
-                    KSerializer L = b91.g.L(k71.x.a(obj.getClass()));
+                    KSerializer L = b91.g.L(k71.xShadow.a(obj.getClass()));
                     if (L == null) {
-                        k71.e a2 = k71.x.a(obj.getClass());
+                        k71.e a2 = k71.xShadow.a(obj.getClass());
                         String c = a2.c();
                         if (c == null) {
                             c = String.valueOf(a2);

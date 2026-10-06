@@ -27,9 +27,9 @@ public final class n2 implements Runnable {
                 Bundle bundle2 = this.s;
                 String string = bundle2.getString("name");
                 String string2 = bundle2.getString("origin");
-                c21.u.d(string);
-                c21.u.d(string2);
-                c21.u.g(bundle2.get("value"));
+                c21.uShadow.d(string);
+                c21.uShadow.d(string2);
+                c21.uShadow.g(bundle2.get("value"));
                 o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) t2Var).s;
                 if (!o1Var.e()) {
                     s0 s0Var = o1Var.w;
@@ -59,7 +59,7 @@ public final class n2 implements Runnable {
                 t2Var2.A();
                 Bundle bundle3 = this.s;
                 String string3 = bundle3.getString("name");
-                c21.u.d(string3);
+                c21.uShadow.d(string3);
                 o1 o1Var2 = (o1) ((androidx.compose.foundation.lazy.layout.s0) t2Var2).s;
                 if (!o1Var2.e()) {
                     s0 s0Var2 = o1Var2.w;

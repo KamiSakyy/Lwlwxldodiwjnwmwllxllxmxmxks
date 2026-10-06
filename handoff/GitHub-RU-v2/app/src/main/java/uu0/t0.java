@@ -8,7 +8,7 @@ import pz0.df;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 implements aa.a {
     public static final t0 a = new t0();
-    public static final List b = sy.d0.o(new String[]{"id", "title", "titleHTML", "number", "repository", "stateReason", "state", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "title", "titleHTML", "number", "repository", "stateReason", "state", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002b, code lost:
     
@@ -140,7 +140,7 @@ public final class t0 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {

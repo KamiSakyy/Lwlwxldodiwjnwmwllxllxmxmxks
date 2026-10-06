@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m5 implements aaShadow.a {
     public static final m5 a = new m5();
-    public static final List b = sy.d0.n("createUserDisinterest");
+    public static final List b = sy.d0Shadow.n("createUserDisinterest");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

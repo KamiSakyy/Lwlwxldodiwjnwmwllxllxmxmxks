@@ -53,7 +53,7 @@ final class r0 extends c71.j implements j71.e {
             ShortcutType shortcutType = storedShortcutModel.y;
             ShortcutScope.SpecificRepository specificRepository = storedShortcutModel.x;
             ShortcutViewFragment shortcutViewFragment = this.w;
-            ((com.github.rudroid.searchandfilter.q) shortcutViewFragment.I0.getValue()).W(storedShortcutModel.u, x61.r.r);
+            ((com.github.rudroid.searchandfilter.q) shortcutViewFragment.I0.getValue()).W(storedShortcutModel.u, x61.rShadow.r);
             BindingFragment.D4(shortcutViewFragment, shortcutViewFragment.M0, storedShortcutModel.t, com.github.rudroid.shortcuts.r.i(specificRepository, shortcutViewFragment.i4(), shortcutType), 8);
             if (sy.u.i(storedShortcutModel)) {
                 AdvancedSearchPageFragment.a aVar2 = AdvancedSearchPageFragment.Companion;

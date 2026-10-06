@@ -60,7 +60,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import jo.f4;
+import jo.f4Shadow;
 import jx0.s;
 import k71.k;
 import kotlin.NoWhenBranchMatchedException;
@@ -83,7 +83,7 @@ import v71.b0;
 import v71.s1;
 import wk0.z0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 import y71.w1;
 import yz0.d3;
 import yz0.e8;
@@ -99,7 +99,7 @@ public abstract class b {
 
     public static final void B(ea.e eVar, String str) {
         k.g(eVar, "jsonReader");
-        StringBuilder v = f4.v("Field '", str, "' is missing or null at path ");
+        StringBuilder v = f4Shadow.v("Field '", str, "' is missing or null at path ");
         v.append(eVar.h());
         String sb = v.toString();
         k.g(sb, "message");
@@ -665,7 +665,7 @@ public abstract class b {
     public static final List g(z zVar) {
         List<iy0.y> list;
         if (zVar == null || (list = zVar.a) == null) {
-            return r.r;
+            return rShadow.r;
         }
         ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
         for (iy0.y yVar : list) {

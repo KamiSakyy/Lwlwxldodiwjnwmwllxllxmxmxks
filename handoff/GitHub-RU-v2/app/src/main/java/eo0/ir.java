@@ -8,7 +8,7 @@ import jn0.g30;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ir implements aaShadow.a {
     public static final ir a = new ir();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         g30 g30Var;

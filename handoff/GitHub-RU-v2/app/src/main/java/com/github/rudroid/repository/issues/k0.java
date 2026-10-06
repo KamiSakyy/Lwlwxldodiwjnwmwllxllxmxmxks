@@ -6,7 +6,7 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -42,9 +42,9 @@ public final class k0 extends k1 {
         this.f19898t = cVar;
         this.f19899u = (String) h2.a(a1Var, "EXTRA_REPOSITORY_OWNER");
         this.f19900v = (String) h2.a(a1Var, "EXTRA_REPOSITORY_NAME");
-        y1 c10 = n1.c(g1.a.c(g1.Companion));
+        y1 c10 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f19901w = c10;
         this.f19902x = new i1(c10);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new m0(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new m0(this, null), 3);
     }
 }

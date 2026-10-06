@@ -15,7 +15,7 @@ public abstract class w0 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("name", b, (String) null, rVar, rVar, rVar);
         bb.Companion.getClass();
         aa.x xVar2 = bb.a;
@@ -28,6 +28,6 @@ public abstract class w0 {
         aa.q0 q0Var2 = di.m;
         k71.k.g(q0Var2, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("organization", q0Var2, (String) null, rVar, no.a.s(pm.g, new aa.u0(new aa.t("ownerName"))), r2));
+        a = sy.d0Shadow.n(new aa.m("organization", q0Var2, (String) null, rVar, no.a.s(pm.g, new aa.u0(new aa.t("ownerName"))), r2));
     }
 }

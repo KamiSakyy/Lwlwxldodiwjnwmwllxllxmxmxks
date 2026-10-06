@@ -1,7 +1,7 @@
 package x;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class y {
+public final class yShadow {
 
     /* renamed from: a, reason: collision with root package name */
     public long[] f33642a = o0.f33603a;

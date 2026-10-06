@@ -13,7 +13,7 @@ import m10.dq;
 import m10.eh;
 import m10.rf0;
 import m10.rq;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -24,19 +24,19 @@ public abstract class c {
     static {
         ch.Companion.getClass();
         r b = l0.b(ch.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         eh.Companion.getClass();
         x xVar = eh.a;
         s mVar = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("NotificationFilter");
+        List n2 = d0Shadow.n("NotificationFilter");
         List list = ou.a.a;
         s c = no.a.c(list, "selections", "NotificationFilter", n2, list);
         ah.Companion.getClass();
         x xVar2 = ah.a;
         List r = l.r(new s[]{mVar, c, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         bq.Companion.getClass();
-        List n3 = d0.n(new m("nodes", l0.a(bq.a), (String) null, rVar, rVar, r));
+        List n3 = d0Shadow.n(new m("nodes", l0.a(bq.a), (String) null, rVar, rVar, r));
         rq.Companion.getClass();
         r b2 = l0.b(rq.a);
         rf0.Companion.getClass();

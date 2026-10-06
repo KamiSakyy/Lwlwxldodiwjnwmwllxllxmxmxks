@@ -3,7 +3,7 @@ package com.github.rudroid.actions.navigation;
 import com.google.android.gms.internal.measurement.d5;
 import j81.a;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import k81.q1;
@@ -82,6 +82,6 @@ public final /* synthetic */ class WorkflowsEntryPointRoute$$serializer implemen
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

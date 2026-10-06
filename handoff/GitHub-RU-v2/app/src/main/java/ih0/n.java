@@ -3,12 +3,12 @@ package ih0;
 import aa.w;
 import gn0.bm;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n implements aa.a {
     public static final n a = new n();
-    public static final List b = d0.n("mergeMethod");
+    public static final List b = d0Shadow.n("mergeMethod");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

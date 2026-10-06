@@ -33,7 +33,7 @@ public final class c1 implements ServiceConnection {
                 rVar.t = new Messenger(iBinder);
                 ArrayList arrayList = new ArrayList();
                 linkedBlockingDeque.drainTo(arrayList);
-                v71.b0.z(v71.b0.c((a71.h) rVar.s), (a71.h) null, (v71.a0) null, new n0(rVar, arrayList, objArr == true ? 1 : 0, i), 3);
+                v71.b0.z(v71.b0.c((a71.h) rVar.s), (a71.h) null, (v71.a0Shadow) null, new n0(rVar, arrayList, objArr == true ? 1 : 0, i), 3);
                 break;
             case 1:
                 c41.o oVar = (c41.o) this.s;

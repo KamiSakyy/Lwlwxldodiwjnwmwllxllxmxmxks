@@ -12,7 +12,7 @@ public final class m {
         this.a = gVar;
     }
 
-    public final y a(oa.j jVar, List list, on.g gVar, Integer num, j71.c cVar) {
+    public final y a(oa.j jVar, List list, on.g gVar, Integer num, j71.cShadow cVar) {
         k71.k.g(jVar, "user");
         k71.k.g(list, "filters");
         k71.k.g(gVar, "order");

@@ -7,7 +7,7 @@ import jo.nc0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qxShadow implements aaShadow.a {
     public static final qxShadow a = new qxShadow();
-    public static final List b = sy.d0.n("updateDiscussion");
+    public static final List b = sy.d0Shadow.n("updateDiscussion");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

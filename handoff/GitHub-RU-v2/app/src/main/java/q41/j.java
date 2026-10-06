@@ -1,6 +1,6 @@
 package q41;
 
-import c21.u;
+import c21.uShadow;
 import java.util.ArrayDeque;
 import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
@@ -16,13 +16,13 @@ public final class j implements Executor {
     public final com.google.common.util.concurrent.b v = new com.google.common.util.concurrent.b(this);
 
     public j(Executor executor) {
-        u.g(executor);
+        uShadow.g(executor);
         this.r = executor;
     }
 
     @Override // java.util.concurrent.Executor
     public final void execute(Runnable runnable) {
-        u.g(runnable);
+        uShadow.g(runnable);
         synchronized (this.s) {
             int i = this.t;
             if (i != 4 && i != 3) {

@@ -16,7 +16,7 @@ public abstract class s {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = x61.l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = fq.a.a;
@@ -25,7 +25,7 @@ public abstract class s {
         aa.x xVar2 = ah.a;
         List r2 = x61.l.r(new aa.s[]{mVar, c, new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("PullRequest");
+        List n = sy.d0Shadow.n("PullRequest");
         List list2 = b0.a;
         List r3 = x61.l.r(new aa.s[]{mVar2, no.a.c(list2, "selections", "PullRequest", n, list2), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         rf0.Companion.getClass();

@@ -19,7 +19,7 @@ public final class qa implements z01.s1, yb0, y90 {
                 k71.k.g(vVar, "ioDispatcher");
                 this.s = bVar;
                 this.t = vVar;
-                this.u = new a00.b(jVar, bVar, vVar, new io0.f(24), new ie.d(17), s01.o.r, new ie.d(18), new io0.f(25), new io0.f(26), new io0.f(27), new io0.f(28), null, null, 126976);
+                this.u = new a00.b(jVar, bVar, vVar, new io0.f(24), new ie.d(17), s01.oShadow.r, new ie.d(18), new io0.f(25), new io0.f(26), new io0.f(27), new io0.f(28), null, null, 126976);
                 break;
             default:
                 k71.k.g(jVar, "unCachedClient");
@@ -27,7 +27,7 @@ public final class qa implements z01.s1, yb0, y90 {
                 k71.k.g(vVar, "ioDispatcher");
                 this.s = bVar;
                 this.t = vVar;
-                this.u = new a00.b(jVar, bVar, vVar, new id.a(25), new ie.d(4), s01.o.r, new ie.d(5), new id.a(26), new id.a(27), new id.a(28), new id.a(29), null, null, 126976);
+                this.u = new a00.b(jVar, bVar, vVar, new id.a(25), new ie.d(4), s01.oShadow.r, new ie.d(5), new id.a(26), new id.a(27), new id.a(28), new id.a(29), null, null, 126976);
                 break;
         }
     }
@@ -56,9 +56,9 @@ public final class qa implements z01.s1, yb0, y90 {
     public final y71.i c() {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new j3(com.github.service.wrapper.a.o(this.s, new uk0.d(), ga.h.r, false, null, null, 60), 29), this.t);
+                return y71.n1Shadow.y(new j3(com.github.service.wrapper.a.o(this.s, new uk0.d(), ga.h.r, false, null, null, 60), 29), this.t);
             default:
-                return y71.n1.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new ca0.d(), ga.h.r, false, null, null, 60), 24), this.t);
+                return y71.n1Shadow.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new ca0.d(), ga.h.r, false, null, null, 60), 24), this.t);
         }
     }
 

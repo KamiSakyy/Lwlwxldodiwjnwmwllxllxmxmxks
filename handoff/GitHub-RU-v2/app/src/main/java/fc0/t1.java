@@ -13,12 +13,12 @@ public abstract class t1 {
         xa.Companion.getClass();
         aa.x xVar = xa.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("success", xVar, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("success", xVar, (String) null, rVar, rVar, rVar));
         xd.Companion.getClass();
         aa.q0 q0Var = xd.a;
         k71.k.g(q0Var, "type");
         wg.Companion.getClass();
-        a = sy.d0.n(new aa.m("markNotificationAsRead", q0Var, (String) null, rVar, no.a.s(wg.Y, new aa.u0(a0.s0.p("id", new aa.t("id")))), n));
+        a = sy.d0Shadow.n(new aa.m("markNotificationAsRead", q0Var, (String) null, rVar, no.a.s(wg.Y, new aa.u0(a0.s0.p("id", new aa.t("id")))), n));
     }
 }

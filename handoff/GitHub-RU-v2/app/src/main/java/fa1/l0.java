@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class l0 extends b {
+public final class l0 extends bShadow {
     public final /* synthetic */ int y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -13,7 +13,7 @@ public final class l0 extends b {
         this.y = i;
     }
 
-    @Override // fa1.b
+    @Override // fa1.bShadow
     public String c(Method method, int i) {
         switch (this.y) {
             case 1:
@@ -27,14 +27,14 @@ public final class l0 extends b {
         return super.c(method, i);
     }
 
-    @Override // fa1.b
+    @Override // fa1.bShadow
     public final Object e(Method method, Class cls, Object obj, Object[] objArr) {
         switch (this.y) {
         }
         return x0.k(method, cls, obj, objArr);
     }
 
-    @Override // fa1.b
+    @Override // fa1.bShadow
     public final boolean f(Method method) {
         switch (this.y) {
         }

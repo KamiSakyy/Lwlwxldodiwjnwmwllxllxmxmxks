@@ -6,7 +6,7 @@ import ea.e;
 import ea.f;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import m10.ka;
 import x61.l;
@@ -73,7 +73,7 @@ public abstract class b implements aa.a {
         fVar.z0("name");
         c.a.b(fVar, wVar, aVar.a);
         fVar.z0("isEnabled");
-        f4.C(aVar.b, c.f, fVar, wVar, "filterGroup");
+        f4Shadow.C(aVar.b, c.f, fVar, wVar, "filterGroup");
         fVar.I(aVar.c.r);
     }
 }

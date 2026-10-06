@@ -5,10 +5,10 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.webview.viewholders.GitHubWebView;
 import java.util.LinkedHashMap;
 import kotlin.NoWhenBranchMatchedException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import y71.h1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import yz0.d0;
 import yz0.e0;
@@ -24,7 +24,7 @@ import yz0.q0;
 import yz0.u;
 import yz0.v;
 import yz0.w;
-import yz0.x;
+import yz0.xShadow;
 import yz0.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -34,12 +34,12 @@ public final class n extends k1 {
     public an.k t;
     public an.j u;
     public an.c v;
-    public an.e w;
+    public an.eShadow w;
     public com.github.rudroid.activities.util.c x;
     public y1 y;
     public LinkedHashMap z;
 
-    public n(an.f fVar, an.k kVar, an.j jVar, an.c cVar, an.e eVar, com.github.rudroid.activities.util.c cVar2) {
+    public n(an.f fVar, an.k kVar, an.j jVar, an.c cVar, an.eShadow eVar, com.github.rudroid.activities.util.c cVar2) {
         k71.k.g(fVar, "checkIssueBodyTaskUseCase");
         k71.k.g(kVar, "checkPullRequestBodyTaskUseCase");
         k71.k.g(jVar, "checkIssueOrPullRequestCommentTaskUseCase");
@@ -52,7 +52,7 @@ public final class n extends k1 {
         this.v = cVar;
         this.w = eVar;
         this.x = cVar2;
-        y1 c = n1.c((Object) null);
+        y1 c = n1Shadow.c((Object) null);
         this.y = c;
         this.z = new LinkedHashMap();
         this.A = new y00.l(new h1(c), 10);
@@ -73,7 +73,7 @@ public final class n extends k1 {
             fl.f b = fl.e.b(bVar);
             y1Var.getClass();
             y1Var.k((Object) null, b);
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new e(this, str, str2, i, z, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new e(this, str, str2, i, z, null), 3);
             return;
         }
         if (q0Var instanceof u) {
@@ -85,10 +85,10 @@ public final class n extends k1 {
             fl.f b2 = fl.e.b(bVar2);
             y1Var.getClass();
             y1Var.k((Object) null, b2);
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new g(this, str, str3, i, z, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new g(this, str, str3, i, z, null), 3);
             return;
         }
-        if (q0Var instanceof yz0.a0) {
+        if (q0Var instanceof yz0.a0Shadow) {
             String str4 = aVar.c;
             linkedHashMap.put(str, new GitHubWebView.f(i, z));
             fl.e eVar3 = fl.f.Companion;
@@ -97,7 +97,7 @@ public final class n extends k1 {
             fl.f b3 = fl.e.b(bVar3);
             y1Var.getClass();
             y1Var.k((Object) null, b3);
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new i(this, str, str4, i, z, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new i(this, str, str4, i, z, null), 3);
             return;
         }
         if (q0Var instanceof yz0.b0) {
@@ -109,7 +109,7 @@ public final class n extends k1 {
             fl.f b4 = fl.e.b(bVar4);
             y1Var.getClass();
             y1Var.k((Object) null, b4);
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new m(this, str, str5, i, z, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new m(this, str, str5, i, z, null), 3);
             return;
         }
         if (q0Var instanceof d0) {
@@ -121,7 +121,7 @@ public final class n extends k1 {
             fl.f b5 = fl.e.b(bVar5);
             y1Var.getClass();
             y1Var.k((Object) null, b5);
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new k(this, str, str6, i, z, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new k(this, str, str6, i, z, null), 3);
             return;
         }
         if (!(q0Var instanceof v) && !(q0Var instanceof w) && !(q0Var instanceof x) && !(q0Var instanceof y) && !(q0Var instanceof k0) && !(q0Var instanceof e0) && !(q0Var instanceof g0) && !(q0Var instanceof h0) && !(q0Var instanceof i0) && !(q0Var instanceof l0) && !(q0Var instanceof m0) && !(q0Var instanceof o0) && !k71.k.b(q0Var, p0.s)) {
@@ -135,6 +135,6 @@ public final class n extends k1 {
         if (this.z.keySet().contains(str)) {
             return false;
         }
-        return (q0Var instanceof yz0.a0) || (q0Var instanceof yz0.b0) || (q0Var instanceof d0) || (q0Var instanceof yz0.t) || (q0Var instanceof u);
+        return (q0Var instanceof yz0.a0Shadow) || (q0Var instanceof yz0.b0) || (q0Var instanceof d0) || (q0Var instanceof yz0.t) || (q0Var instanceof u);
     }
 }

@@ -47,7 +47,7 @@ final class z0 extends c71.j implements j71.e {
         dVar.getClass();
         k71.k.g(Q, "startTime");
         k71.k.g(P, "endTime");
-        v71.b0.z(dVar.b, (a71.h) null, (v71.a0) null, new a0.i(dVar, d, arrayList, Q, P, this.w, (a71.c) null), 3);
+        v71.b0.z(dVar.b, (a71.h) null, (v71.a0Shadow) null, new a0.i(dVar, d, arrayList, Q, P, this.w, (a71.c) null), 3);
         return w61.a0.a;
     }
 }

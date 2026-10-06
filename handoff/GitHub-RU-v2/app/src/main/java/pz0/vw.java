@@ -7,8 +7,8 @@ public abstract class vw {
     public static final uw Companion = new uw();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("RemovedFromProjectEvent", n, sy.d0.n(wk.a));
+        new aa.q0("RemovedFromProjectEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

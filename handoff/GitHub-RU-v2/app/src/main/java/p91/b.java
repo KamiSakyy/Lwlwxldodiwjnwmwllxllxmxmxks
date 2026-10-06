@@ -10,15 +10,15 @@ import q71.e;
 import q71.g;
 import s91.f;
 import sy.a0;
-import sy.d0;
+import sy.d0Shadow;
 import sy.n;
-import sy.o;
+import sy.oShadow;
 import t71.p;
 import t91.d;
 import u91.c;
 import x61.l;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 import y41.t1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
@@ -155,11 +155,11 @@ public final class b implements c {
                                 i11++;
                                 int i12 = i10 + 1;
                                 if (i10 < 0) {
-                                    d0.x();
+                                    d0Shadow.x();
                                     throw null;
                                 }
                                 String str = (String) obj;
-                                if ((i10 <= 0 || i10 >= d0.m(K)) && p.T(str)) {
+                                if ((i10 <= 0 || i10 >= d0Shadow.m(K)) && p.T(str)) {
                                     z = false;
                                 }
                                 arrayList2.add(Boolean.valueOf(z));
@@ -175,7 +175,7 @@ public final class b implements c {
                                         Object obj2 = arrayList2.get(i13);
                                         i13++;
                                         if (((Boolean) obj2).booleanValue() && (i = i + 1) < 0) {
-                                            d0.w();
+                                            d0Shadow.w();
                                             throw null;
                                         }
                                     }
@@ -222,7 +222,7 @@ public final class b implements c {
                                                 if (i9 == i) {
                                                 }
                                             } else if (i9 == i) {
-                                                return d0.n(new a(cVar, dVar, q1Var, i));
+                                                return d0Shadow.n(new a(cVar, dVar, q1Var, i));
                                             }
                                         }
                                         if (z2 == charSequence.length()) {
@@ -235,37 +235,37 @@ public final class b implements c {
                         }
                     }
                 }
-                return r.r;
+                return rShadow.r;
             case 1:
                 k.g(fVar, "stateInfo");
                 g c2 = c(cVar);
                 if (c2 == null) {
-                    return r.r;
+                    return rShadow.r;
                 }
                 d dVar2 = fVar.a;
                 int i17 = ((e) c2).s;
                 String b3 = cVar.b();
                 int i18 = cVar.c;
                 int length = b3.length() - 1;
-                while (length > i17 && sy.r.s(b3.charAt(length))) {
+                while (length > i17 && sy.rShadow.s(b3.charAt(length))) {
                     length--;
                 }
                 while (length > i17 && b3.charAt(length) == '#' && b3.charAt(length - 1) != '\\') {
                     length--;
                 }
                 int i19 = length + 1;
-                return d0.n(new v91.a(dVar2, q1Var, c2, (i19 < b3.length() && sy.r.s(b3.charAt(length)) && b3.charAt(i19) == '#') ? i18 + length + 1 : i18 + b3.length(), cVar.d()));
+                return d0Shadow.n(new v91.a(dVar2, q1Var, c2, (i19 < b3.length() && sy.rShadow.s(b3.charAt(length)) && b3.charAt(i19) == '#') ? i18 + length + 1 : i18 + b3.length(), cVar.d()));
             case 2:
                 k.g(fVar, "stateInfo");
                 d dVar3 = fVar.a;
                 d dVar4 = fVar.b;
-                return (cVar.b == a0.l(dVar3, cVar.d) && !k.b(dVar4, dVar3) && (S = l.S(((t91.c) dVar4).b)) != null && S.charValue() == '>') ? d0.n(new v91.b(dVar4, new v(q1Var), 0)) : r.r;
+                return (cVar.b == a0.l(dVar3, cVar.d) && !k.b(dVar4, dVar3) && (S = l.S(((t91.c) dVar4).b)) != null && S.charValue() == '>') ? d0Shadow.n(new v91.b(dVar4, new v(q1Var), 0)) : rShadow.r;
             case 3:
                 k.g(fVar, "stateInfo");
                 d dVar5 = fVar.a;
                 int l = a0.l(fVar.b, cVar.d);
                 int i20 = cVar.b;
-                r rVar = r.r;
+                rShadow rVar = rShadow.r;
                 if (l > i20 || (a = cVar.a()) == null || (f = cVar.f(a.intValue())) == null) {
                     return rVar;
                 }
@@ -284,11 +284,11 @@ public final class b implements c {
                         l2++;
                     }
                 }
-                return d0.n(new v91.c(q1Var, cVar, dVar5));
+                return d0Shadow.n(new v91.c(q1Var, cVar, dVar5));
             case 4:
                 k.g(fVar, "stateInfo");
                 d dVar6 = fVar.a;
-                return d(cVar, dVar6) ? d0.n(new v91.b(dVar6, new v(q1Var), 1)) : r.r;
+                return d(cVar, dVar6) ? d0Shadow.n(new v91.b(dVar6, new v(q1Var), 1)) : rShadow.r;
             case 5:
                 int i22 = cVar.c;
                 k.g(fVar, "stateInfo");
@@ -321,7 +321,7 @@ public final class b implements c {
                                                     charAt6 = charSequence2.charAt(i26);
                                                 }
                                             }
-                                            if (!sy.r.s(charAt6)) {
+                                            if (!sy.rShadow.s(charAt6)) {
                                                 z4 = true;
                                             }
                                             i26++;
@@ -329,7 +329,7 @@ public final class b implements c {
                                         if (z4 && i26 < charSequence2.length() && charSequence2.charAt(i26) == ']') {
                                             gVar = new g(i23, i26, 1);
                                             if (gVar != null && (i3 = (i2 = ((e) gVar).s) + 1) < charSequence2.length() && charSequence2.charAt(i3) == ':') {
-                                                j = o.j(i2 + 2, charSequence2);
+                                                j = oShadow.j(i2 + 2, charSequence2);
                                                 if (j < charSequence2.length()) {
                                                     if (charSequence2.charAt(j) == '<') {
                                                         int i28 = j + 1;
@@ -338,7 +338,7 @@ public final class b implements c {
                                                             if (charAt7 == '>') {
                                                                 gVar2 = new g(j, i28, 1);
                                                                 if (gVar2 != null) {
-                                                                    int j2 = o.j(gVar2.s + 1, charSequence2);
+                                                                    int j2 = oShadow.j(gVar2.s + 1, charSequence2);
                                                                     if (j2 < charSequence2.length()) {
                                                                         char charAt8 = charSequence2.charAt(j2);
                                                                         char c4 = '\'';
@@ -389,14 +389,14 @@ public final class b implements c {
                                                                                             }
                                                                                             h0Var = j91.a.p;
                                                                                         }
-                                                                                        q1Var.a(d0.n(new x91.e(gVar5, h0Var)));
+                                                                                        q1Var.a(d0Shadow.n(new x91.e(gVar5, h0Var)));
                                                                                         i32 = i33;
                                                                                         i6 = 1;
                                                                                     }
                                                                                     int i35 = (((e) ((g) m.e0(arrayList))).s - i22) + 1;
                                                                                     s91.c f2 = cVar.f(i35);
                                                                                     if (f2 == null || f2.b == -1 || f2.a() == null) {
-                                                                                        return d0.n(new v91.f(dVar7, new v(q1Var), i22 + i35));
+                                                                                        return d0Shadow.n(new v91.f(dVar7, new v(q1Var), i22 + i35));
                                                                                     }
                                                                                 }
                                                                             } else {
@@ -485,7 +485,7 @@ public final class b implements c {
                                 if (z4) {
                                     gVar = new g(i23, i26, 1);
                                     if (gVar != null) {
-                                        j = o.j(i2 + 2, charSequence2);
+                                        j = oShadow.j(i2 + 2, charSequence2);
                                         if (j < charSequence2.length()) {
                                         }
                                         gVar2 = null;
@@ -508,7 +508,7 @@ public final class b implements c {
                         }
                     }
                 }
-                return r.r;
+                return rShadow.r;
             default:
                 k.g(fVar, "stateInfo");
                 d dVar8 = fVar.a;
@@ -516,7 +516,7 @@ public final class b implements c {
                 k.g(dVar8, "constraints");
                 int i37 = cVar.b;
                 int l3 = a0.l(dVar8, cVar.d);
-                ArrayList arrayList4 = r.r;
+                ArrayList arrayList4 = rShadow.r;
                 if (i37 == l3 && !k.b(dVar9, dVar8)) {
                     t91.c cVar3 = (t91.c) dVar9;
                     Character S2 = l.S(cVar3.b);

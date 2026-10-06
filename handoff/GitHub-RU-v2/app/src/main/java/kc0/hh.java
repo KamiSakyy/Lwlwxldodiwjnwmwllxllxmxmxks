@@ -31,6 +31,6 @@ public final class hh {
     }
 
     public final String toString() {
-        return jo.f4.q(a0.s0.o("AnswerChosenBy(__typename=", this.a, ", login=", this.b, ", nodeIdFragment="), this.c, ")");
+        return jo.f4Shadow.q(a0.s0.o("AnswerChosenBy(__typename=", this.a, ", login=", this.b, ", nodeIdFragment="), this.c, ")");
     }
 }

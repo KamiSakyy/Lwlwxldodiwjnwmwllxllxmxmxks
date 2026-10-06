@@ -2,7 +2,7 @@ package com.github.rudroid.issueorpullrequest.subissues.editsubissues;
 
 import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.ui.g1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import zk.h1;
 
@@ -32,7 +32,7 @@ public final class v extends k1 {
         this.f16138t = eVar;
         this.f16139u = cVar;
         g1.Companion.getClass();
-        y1 c10 = n1.c(g1.a.a());
+        y1 c10 = n1Shadow.c(g1.a.a());
         this.f16140v = c10;
         this.f16141w = c10;
     }

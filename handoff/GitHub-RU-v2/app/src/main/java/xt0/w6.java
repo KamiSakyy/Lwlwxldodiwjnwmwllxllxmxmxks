@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w6 implements aa.a {
     public static final w6 a = new w6();
-    public static final List b = sy.d0.o(new String[]{"recommendedApprovingReviewCount", "requiresCodeOwnerReviews", "viewerAllowedToDismissReviews"});
+    public static final List b = sy.d0Shadow.o(new String[]{"recommendedApprovingReviewCount", "requiresCodeOwnerReviews", "viewerAllowedToDismissReviews"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -47,7 +47,7 @@ public final class w6 implements aa.a {
         aa.c.b(ro0.a.a).b(fVar, wVar, l5Var.a);
         fVar.z0("requiresCodeOwnerReviews");
         aa.b bVar = aa.c.f;
-        jo.f4.C(l5Var.b, bVar, fVar, wVar, "viewerAllowedToDismissReviews");
+        jo.f4Shadow.C(l5Var.b, bVar, fVar, wVar, "viewerAllowedToDismissReviews");
         bVar.b(fVar, wVar, Boolean.valueOf(l5Var.c));
     }
 }

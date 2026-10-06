@@ -1,7 +1,7 @@
 package pw0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class x implements aa.a {
@@ -13,7 +13,7 @@ public abstract class x implements aa.a {
         String str = null;
         ow0.i0 i0Var = null;
         Integer num = null;
-        ow0.x xVar = null;
+        ow0.xShadow xVar = null;
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
@@ -24,7 +24,7 @@ public abstract class x implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = f4.c(1, nextLong, "substring(...)");
+                        nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {
@@ -34,7 +34,7 @@ public abstract class x implements aa.a {
                 if (r0 != 3) {
                     break;
                 }
-                xVar = (ow0.x) aa.c.c(p.a, false).a(eVar, wVar);
+                xVar = (ow0.xShadow) aa.c.c(p.a, false).a(eVar, wVar);
             }
         }
         if (str == null) {

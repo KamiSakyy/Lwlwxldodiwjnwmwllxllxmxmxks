@@ -19,7 +19,7 @@ public final class vc {
         t = vcVarArr;
         v8.l0.t(vcVarArr);
         Companion = new uc();
-        sy.d0.o(new String[]{"CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED"});
+        sy.d0Shadow.o(new String[]{"CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED"});
     }
 
     public vc(String str, int i, String str2) {

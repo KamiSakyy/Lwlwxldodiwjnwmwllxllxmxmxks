@@ -11,12 +11,12 @@ import com.github.rudroid.copilot.ui.v0;
 import com.github.rudroid.searchandfilter.filterbar.d;
 import com.github.rudroid.searchandfilter.filterbar.f;
 import com.github.rudroid.uitoolkit.menu.d;
-import d2.a0;
+import d2.a0Shadow;
 import d2.l0;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
-import sy.d0;
+import sy.d0Shadow;
 import w1.r;
 import yg.q;
 import z.n0;
@@ -243,7 +243,7 @@ public final class p {
                                 i16++;
                                 int i17 = i15;
                                 if (((f.b) obj2).c && (i7 = i7 + 1) < 0) {
-                                    d0.w();
+                                    d0Shadow.w();
                                     throw null;
                                 }
                                 i15 = i17;
@@ -257,12 +257,12 @@ public final class p {
                         i8 = i4;
                         i5 = i7;
                         long j5 = j2;
-                        list5 = x61.r.r;
+                        list5 = x61.rShadow.r;
                         rVar3 = rVar2;
                         j4 = j5;
                         sVar.r();
                         long j6 = j4;
-                        x.e(z, f0.o.f(rVar4, j4, a0.b), n0.m(), n0.o(), (String) null, r1.i.d(-1828480246, new j71.f() { // from class: com.github.rudroid.searchandfilter.filterbar.h
+                        x.e(z, f0.o.f(rVar4, j4, a0Shadow.b), n0.m(), n0.o(), (String) null, r1.i.d(-1828480246, new j71.f() { // from class: com.github.rudroid.searchandfilter.filterbar.h
                             /* JADX WARN: Type inference failed for: r1v13 */
                             /* JADX WARN: Type inference failed for: r1v7 */
                             /* JADX WARN: Type inference failed for: r1v8, types: [boolean, int] */
@@ -277,7 +277,7 @@ public final class p {
                                 ((Integer) obj5).getClass();
                                 k71.k.g((y) obj3, "$this$AnimatedVisibility");
                                 w1.o oVar = w1.o.a;
-                                l0 l0Var = a0.b;
+                                l0 l0Var = a0Shadow.b;
                                 long j11 = j4;
                                 r f = f0.o.f(oVar, j11, l0Var).f(rVar3);
                                 androidx.compose.foundation.layout.f fVar = androidx.compose.foundation.layout.l.a;
@@ -366,7 +366,7 @@ public final class p {
                                 }
                                 ah.h.a(null, j7, 0.0f, z, g, null, (j71.c) N4, sVar2, 0, 37);
                                 sVar2.q(true);
-                                return w61.a0.a;
+                                return w61.a0Shadow.a;
                             }
                         }, sVar), sVar, ((i8 >> 9) & 14) | 200064, 16);
                         rVar2 = rVar3;
@@ -393,7 +393,7 @@ public final class p {
                 list5 = list3;
                 sVar.r();
                 long j62 = j4;
-                x.e(z, f0.o.f(rVar4, j4, a0.b), n0.m(), n0.o(), (String) null, r1.i.d(-1828480246, new j71.f() { // from class: com.github.rudroid.searchandfilter.filterbar.h
+                x.e(z, f0.o.f(rVar4, j4, a0Shadow.b), n0.m(), n0.o(), (String) null, r1.i.d(-1828480246, new j71.f() { // from class: com.github.rudroid.searchandfilter.filterbar.h
                     /* JADX WARN: Type inference failed for: r1v13 */
                     /* JADX WARN: Type inference failed for: r1v7 */
                     /* JADX WARN: Type inference failed for: r1v8, types: [boolean, int] */
@@ -408,7 +408,7 @@ public final class p {
                         ((Integer) obj5).getClass();
                         k71.k.g((y) obj3, "$this$AnimatedVisibility");
                         w1.o oVar = w1.o.a;
-                        l0 l0Var = a0.b;
+                        l0 l0Var = a0Shadow.b;
                         long j11 = j4;
                         r f = f0.o.f(oVar, j11, l0Var).f(rVar3);
                         androidx.compose.foundation.layout.f fVar = androidx.compose.foundation.layout.l.a;
@@ -497,7 +497,7 @@ public final class p {
                         }
                         ah.h.a(null, j72, 0.0f, z, g, null, (j71.c) N4, sVar2, 0, 37);
                         sVar2.q(true);
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 }, sVar), sVar, ((i8 >> 9) & 14) | 200064, 16);
                 rVar2 = rVar3;
@@ -511,7 +511,7 @@ public final class p {
                     public final Object s(Object obj3, Object obj4) {
                         ((Integer) obj4).getClass();
                         p.d(rVar2, j3, list, z, i6, list4, (s) obj3, t.L(i2 | 1), i3);
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 };
                 return;
@@ -568,7 +568,7 @@ public final class p {
         if (sVar.S(i2 & 1, (i2 & 19) != 18)) {
             rVar2 = rVar;
             sVar2 = sVar;
-            yg.t.a(rVar2, eVar.b, eVar.c, eVar.d, eVar.g, eVar.e, sVar2, i2 & 14, 0);
+            yg.tShadow.a(rVar2, eVar.b, eVar.c, eVar.d, eVar.g, eVar.e, sVar2, i2 & 14, 0);
         } else {
             rVar2 = rVar;
             sVar2 = sVar;

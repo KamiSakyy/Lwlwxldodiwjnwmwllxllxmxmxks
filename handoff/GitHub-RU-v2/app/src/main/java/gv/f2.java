@@ -67,7 +67,7 @@ public abstract class f2 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {
@@ -155,10 +155,10 @@ public abstract class f2 implements aa.a {
         fVar.z(e2Var.e);
         fVar.z0("isDraft");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(e2Var.f, bVar2, fVar, wVar, "repository");
+        jo.f4Shadow.C(e2Var.f, bVar2, fVar, wVar, "repository");
         aa.c.c(h2.a, false).b(fVar, wVar, e2Var.g);
         fVar.z0("isInMergeQueue");
-        jo.f4.C(e2Var.h, bVar2, fVar, wVar, "__typename");
+        jo.f4Shadow.C(e2Var.h, bVar2, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, e2Var.i);
     }
 }

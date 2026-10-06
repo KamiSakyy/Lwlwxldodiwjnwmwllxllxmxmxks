@@ -36,6 +36,6 @@ public final class t6 {
         sb.append(", issues=");
         sb.append(this.b);
         sb.append(", areIssueTypesAvailable=");
-        return jo.f4.s(sb, this.c, ")");
+        return jo.f4Shadow.s(sb, this.c, ")");
     }
 }

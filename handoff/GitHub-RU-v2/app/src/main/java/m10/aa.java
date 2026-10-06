@@ -6,7 +6,7 @@ public abstract class aaShadow {
     public static final aa.q0 a;
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         a = new aa.q0("CreateUserListPayload", rVar, rVar);
     }
 
@@ -77,7 +77,7 @@ public abstract class aaShadow {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x {
+    public static class xShadow {
         public x() {
         }
     }

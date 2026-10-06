@@ -2,7 +2,7 @@ package com.github.rudroid.widget.contribution;
 
 import com.github.rudroid.widget.WidgetUIState;
 import java.util.Map;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @g81.e
@@ -26,7 +26,7 @@ public final class ContributionWidgetModel {
 
     public /* synthetic */ ContributionWidgetModel(int i, Map map, WidgetUIState widgetUIState) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, ContributionWidgetModel$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, ContributionWidgetModel$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = map;

@@ -12,7 +12,7 @@ import gn0.rn;
 import gn0.tb;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -23,7 +23,7 @@ public abstract class c {
     static {
         pb.Companion.getClass();
         r b = l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         x xVar = tb.a;
@@ -32,6 +32,6 @@ public abstract class c {
         q0 q0Var = g10.c;
         k.g(q0Var, "type");
         rn.Companion.getClass();
-        a = d0.n(new m("list", q0Var, (String) null, rVar, l.r(new aa.k[]{new aa.k(rn.g, new u0(new t("login"))), new aa.k(rn.h, new u0(new t("slug")))}), r));
+        a = d0Shadow.n(new m("list", q0Var, (String) null, rVar, l.r(new aa.k[]{new aa.k(rn.g, new u0(new t("login"))), new aa.k(rn.h, new u0(new t("slug")))}), r));
     }
 }

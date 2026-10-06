@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import bf.f;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -42,7 +42,7 @@ public final class RepositoryProjectsRoute implements Parcelable, f {
 
     public /* synthetic */ RepositoryProjectsRoute(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, RepositoryProjectsRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, RepositoryProjectsRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f17769r = str;

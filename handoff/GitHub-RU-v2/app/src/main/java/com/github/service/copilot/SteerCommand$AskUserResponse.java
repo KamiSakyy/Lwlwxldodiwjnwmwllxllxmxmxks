@@ -3,9 +3,9 @@ package com.github.service.copilot;
 import a0.s0;
 import com.github.rudroid.copilot.h1;
 import g81.e;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import xn.c4;
 
@@ -25,7 +25,7 @@ public final class SteerCommand$AskUserResponse implements c4 {
 
     public /* synthetic */ SteerCommand$AskUserResponse(int i, String str, String str2, boolean z) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, SteerCommand$AskUserResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, SteerCommand$AskUserResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;
@@ -54,7 +54,7 @@ public final class SteerCommand$AskUserResponse implements c4 {
     }
 
     public final String toString() {
-        return f4.s(s0.o("AskUserResponse(promptId=", this.a, ", answer=", this.b, ", wasFreeform="), this.c, ")");
+        return f4Shadow.s(s0.o("AskUserResponse(promptId=", this.a, ", answer=", this.b, ", wasFreeform="), this.c, ")");
     }
 
     public SteerCommand$AskUserResponse(String str, String str2, boolean z) {

@@ -4,10 +4,10 @@ package v00;
 public final class x extends c71.c {
     public /* synthetic */ Object u;
     public int v;
-    public final /* synthetic */ t w;
+    public final /* synthetic */ tShadow w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public x(t tVar, a71.c cVar) {
+    public x(tShadow tVar, a71.c cVar) {
         super(cVar);
         this.w = tVar;
     }

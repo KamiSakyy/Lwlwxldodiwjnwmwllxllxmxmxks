@@ -2,9 +2,9 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d1 implements aa.m0 {
-    public f1 a;
+    public f1Shadow a;
 
-    public d1(f1 f1Var) {
+    public d1(f1Shadow f1Var) {
         this.a = f1Var;
     }
 
@@ -16,7 +16,7 @@ public final class d1 implements aa.m0 {
     }
 
     public final int hashCode() {
-        f1 f1Var = this.a;
+        f1Shadow f1Var = this.a;
         if (f1Var == null) {
             return 0;
         }

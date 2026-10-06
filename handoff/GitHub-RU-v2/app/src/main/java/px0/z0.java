@@ -1,13 +1,13 @@
 package px0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import ox0.e1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z0 implements aa.a {
     public static final z0 a = new z0();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -63,7 +63,7 @@ public final class z0 implements aa.a {
         fVar.z0("queryString");
         bVar2.b(fVar, wVar, aVar.d);
         fVar.z0("isDefaultFilter");
-        f4.C(aVar.e, aa.c.f, fVar, wVar, "__typename");
+        f4Shadow.C(aVar.e, aa.c.f, fVar, wVar, "__typename");
         bVar2.b(fVar, wVar, aVar.f);
     }
 }

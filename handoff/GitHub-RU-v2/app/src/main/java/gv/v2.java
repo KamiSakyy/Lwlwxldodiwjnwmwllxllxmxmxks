@@ -29,6 +29,6 @@ public final class v2 {
     }
 
     public final String toString() {
-        return jo.f4.n("Node(__typename=", this.a, ", actorFields=", this.b, ")");
+        return jo.f4Shadow.n("Node(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

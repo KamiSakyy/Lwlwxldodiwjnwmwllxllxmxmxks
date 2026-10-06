@@ -4,9 +4,9 @@ import java.util.List;
 import jo.ce0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class sy implements aaShadow.a {
-    public static final sy a = new sy();
-    public static final List b = sy.d0.o("id", "__typename");
+public final class syShadow implements aaShadow.a {
+    public static final syShadow a = new syShadow();
+    public static final List b = sy.d0Shadow.o("id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

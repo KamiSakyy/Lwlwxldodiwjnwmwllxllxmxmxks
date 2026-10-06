@@ -7,7 +7,7 @@ import jo.fi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m10Shadow implements aaShadow.a {
     public static final m10Shadow a = new m10Shadow();
-    public static final List b = sy.d0.o("user", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("user", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

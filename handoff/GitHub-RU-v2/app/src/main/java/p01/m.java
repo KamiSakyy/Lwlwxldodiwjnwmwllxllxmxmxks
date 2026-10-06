@@ -1,7 +1,7 @@
 package p01;
 
 import java.util.ArrayList;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
@@ -36,6 +36,6 @@ public final class m {
         sb.append(", issues=");
         sb.append(this.b);
         sb.append(", areIssueTypesAvailable=");
-        return f4.s(sb, this.c, ")");
+        return f4Shadow.s(sb, this.c, ")");
     }
 }

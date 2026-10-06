@@ -27,7 +27,7 @@ public final class xa0 implements aaShadow.n0 {
         List list = kz0.e6.a;
         List list2 = kz0.e6.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -75,7 +75,7 @@ public final class xa0 implements aaShadow.n0 {
         }
         aa.u0 u0Var2 = this.t;
         if (u0Var2 instanceof aaShadow.u0) {
-            jo.f4.e(fVar, "assigneeIds", bVar).d(fVar, wVar, u0Var2);
+            jo.f4Shadow.e(fVar, "assigneeIds", bVar).d(fVar, wVar, u0Var2);
         }
         aa.u0 u0Var3 = this.u;
         if (u0Var3 instanceof aaShadow.u0) {

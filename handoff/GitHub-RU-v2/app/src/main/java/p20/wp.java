@@ -7,7 +7,7 @@ import u10.q10;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wp implements aaShadow.a {
     public static final wp a = new wp();
-    public static final List b = sy.d0.n("unblockUserFromOrganization");
+    public static final List b = sy.d0Shadow.n("unblockUserFromOrganization");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

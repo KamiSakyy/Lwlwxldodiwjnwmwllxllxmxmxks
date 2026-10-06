@@ -97,7 +97,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object i(j4 j4Var, ea0.z0 z0Var, String str, c71.c cVar) {
         vb0.y2 y2Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         e90 e90Var;
         i90 i90Var;
         com.github.service.wrapper.bShadow bVar = j4Var.t;
@@ -111,7 +111,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = y2Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 j90Var = new j90(new aa.u0(new Integer(100)), str);
+                    aa.s0Shadow j90Var = new j90(new aa.u0(new Integer(100)), str);
                     y2Var.u = z0Var;
                     y2Var.v = j90Var;
                     y2Var.y = 1;
@@ -129,7 +129,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = y2Var.v;
+                aa.s0Shadow s0Var2 = y2Var.v;
                 ea0.z0 z0Var2 = y2Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -139,14 +139,14 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     i90 i90Var2 = e90Var.a;
                     if (i90Var2 != null) {
                         f90 f90Var = i90Var2.d;
-                        y61.bShadow i3 = sy.d0.i();
+                        y61.bShadow i3 = sy.d0Shadow.i();
                         i3.add(new g90(z0Var.g, z0Var.a, z0Var));
                         Collection collection = f90Var.a;
                         if (collection == null) {
-                            collection = x61.r.r;
+                            collection = x61.rShadow.r;
                         }
                         i3.addAll(collection);
-                        i90Var = i90.a(i90Var2, new f90(sy.d0.h(i3)));
+                        i90Var = i90.a(i90Var2, new f90(sy.d0Shadow.h(i3)));
                     } else {
                         i90Var = null;
                     }
@@ -183,7 +183,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object j(j4 j4Var, fw0.z0 z0Var, String str, c71.c cVar) {
         wy0.d3 d3Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         ef0 ef0Var;
         if0 if0Var;
         com.github.service.wrapper.bShadow bVar = j4Var.t;
@@ -197,7 +197,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = d3Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 jf0Var = new jf0(new aa.u0(new Integer(100)), str);
+                    aa.s0Shadow jf0Var = new jf0(new aa.u0(new Integer(100)), str);
                     d3Var.u = z0Var;
                     d3Var.v = jf0Var;
                     d3Var.y = 1;
@@ -215,7 +215,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = d3Var.v;
+                aa.s0Shadow s0Var2 = d3Var.v;
                 fw0.z0 z0Var2 = d3Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -225,14 +225,14 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     if0 if0Var2 = ef0Var.a;
                     if (if0Var2 != null) {
                         ff0 ff0Var = if0Var2.d;
-                        y61.bShadow i3 = sy.d0.i();
+                        y61.bShadow i3 = sy.d0Shadow.i();
                         i3.add(new gf0(z0Var.g, z0Var.a, z0Var));
                         Collection collection = ff0Var.a;
                         if (collection == null) {
-                            collection = x61.r.r;
+                            collection = x61.rShadow.r;
                         }
                         i3.addAll(collection);
-                        if0Var = if0.a(if0Var2, new ff0(sy.d0.h(i3)));
+                        if0Var = if0.a(if0Var2, new ff0(sy.d0Shadow.h(i3)));
                     } else {
                         if0Var = null;
                     }
@@ -269,7 +269,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object k(j4 j4Var, qx.z0 z0Var, String str, c71.c cVar) {
         t00.s3 s3Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         sh0 sh0Var;
         wh0 wh0Var;
         com.github.service.wrapper.bShadow bVar = j4Var.t;
@@ -283,7 +283,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = s3Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 xh0Var = new xh0(new aa.u0(new Integer(100)), str);
+                    aa.s0Shadow xh0Var = new xh0(new aa.u0(new Integer(100)), str);
                     s3Var.u = z0Var;
                     s3Var.v = xh0Var;
                     s3Var.y = 1;
@@ -301,7 +301,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = s3Var.v;
+                aa.s0Shadow s0Var2 = s3Var.v;
                 qx.z0 z0Var2 = s3Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -311,14 +311,14 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     wh0 wh0Var2 = sh0Var.a;
                     if (wh0Var2 != null) {
                         th0 th0Var = wh0Var2.d;
-                        y61.bShadow i3 = sy.d0.i();
+                        y61.bShadow i3 = sy.d0Shadow.i();
                         i3.add(new uh0(z0Var.g, z0Var.a, z0Var));
                         Collection collection = th0Var.a;
                         if (collection == null) {
-                            collection = x61.r.r;
+                            collection = x61.rShadow.r;
                         }
                         i3.addAll(collection);
-                        wh0Var = wh0.a(wh0Var2, new th0(sy.d0.h(i3)));
+                        wh0Var = wh0.a(wh0Var2, new th0(sy.d0Shadow.h(i3)));
                     } else {
                         wh0Var = null;
                     }
@@ -355,7 +355,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object l(j4 j4Var, wk0.z0 z0Var, String str, c71.c cVar) {
         d4 d4Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         eb0 eb0Var;
         ib0 ib0Var;
         com.github.service.wrapper.bShadow bVar = j4Var.t;
@@ -369,7 +369,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = d4Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 jb0Var = new jb0(new aa.u0(new Integer(100)), str);
+                    aa.s0Shadow jb0Var = new jb0(new aa.u0(new Integer(100)), str);
                     d4Var.u = z0Var;
                     d4Var.v = jb0Var;
                     d4Var.y = 1;
@@ -387,7 +387,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = d4Var.v;
+                aa.s0Shadow s0Var2 = d4Var.v;
                 wk0.z0 z0Var2 = d4Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -397,14 +397,14 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     ib0 ib0Var2 = eb0Var.a;
                     if (ib0Var2 != null) {
                         fb0 fb0Var = ib0Var2.d;
-                        y61.bShadow i3 = sy.d0.i();
+                        y61.bShadow i3 = sy.d0Shadow.i();
                         i3.add(new gb0(z0Var.g, z0Var.a, z0Var));
                         Collection collection = fb0Var.a;
                         if (collection == null) {
-                            collection = x61.r.r;
+                            collection = x61.rShadow.r;
                         }
                         i3.addAll(collection);
-                        ib0Var = ib0.a(ib0Var2, new fb0(sy.d0.h(i3)));
+                        ib0Var = ib0.a(ib0Var2, new fb0(sy.d0Shadow.h(i3)));
                     } else {
                         ib0Var = null;
                     }
@@ -441,7 +441,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object m(j4 j4Var, String str, String str2, c71.c cVar) {
         h4 h4Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         eb0 eb0Var;
         ib0 ib0Var;
         ArrayList arrayList;
@@ -456,7 +456,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = h4Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 jb0Var = new jb0(new aa.u0(new Integer(100)), str2);
+                    aa.s0Shadow jb0Var = new jb0(new aa.u0(new Integer(100)), str2);
                     h4Var.u = str;
                     h4Var.v = jb0Var;
                     h4Var.y = 1;
@@ -474,7 +474,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = h4Var.v;
+                aa.s0Shadow s0Var2 = h4Var.v;
                 String str3 = h4Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -532,7 +532,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object n(j4 j4Var, String str, String str2, c71.c cVar) {
         t00.x3Shadow x3Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         sh0 sh0Var;
         wh0 wh0Var;
         ArrayList arrayList;
@@ -547,7 +547,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = x3Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 xh0Var = new xh0(new aa.u0(new Integer(100)), str2);
+                    aa.s0Shadow xh0Var = new xh0(new aa.u0(new Integer(100)), str2);
                     x3Var.u = str;
                     x3Var.v = xh0Var;
                     x3Var.y = 1;
@@ -565,7 +565,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = x3Var.v;
+                aa.s0Shadow s0Var2 = x3Var.v;
                 String str3 = x3Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -623,7 +623,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object o(j4 j4Var, String str, String str2, c71.c cVar) {
         vb0.c3 c3Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         e90 e90Var;
         i90 i90Var;
         ArrayList arrayList;
@@ -638,7 +638,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = c3Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 j90Var = new j90(new aa.u0(new Integer(100)), str2);
+                    aa.s0Shadow j90Var = new j90(new aa.u0(new Integer(100)), str2);
                     c3Var.u = str;
                     c3Var.v = j90Var;
                     c3Var.y = 1;
@@ -656,7 +656,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = c3Var.v;
+                aa.s0Shadow s0Var2 = c3Var.v;
                 String str3 = c3Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -714,7 +714,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public static final Object p(j4 j4Var, String str, String str2, c71.c cVar) {
         wy0.h3 h3Var;
         int i;
-        aa.s0 s0Var;
+        aa.s0Shadow s0Var;
         ef0 ef0Var;
         if0 if0Var;
         ArrayList arrayList;
@@ -729,7 +729,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 i = h3Var.y;
                 if (i != 0) {
                     sy.y.j(obj);
-                    aa.s0 jf0Var = new jf0(new aa.u0(new Integer(100)), str2);
+                    aa.s0Shadow jf0Var = new jf0(new aa.u0(new Integer(100)), str2);
                     h3Var.u = str;
                     h3Var.v = jf0Var;
                     h3Var.y = 1;
@@ -747,7 +747,7 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                     sy.y.j(obj);
                     return w61.a0.a;
                 }
-                aa.s0 s0Var2 = h3Var.v;
+                aa.s0Shadow s0Var2 = h3Var.v;
                 String str3 = h3Var.u;
                 sy.y.j(obj);
                 s0Var = s0Var2;
@@ -798,19 +798,19 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
-                return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new ud(str, str2), null, false, null, null, 62), 10), 20), this.u);
+                return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new ud(str, str2), null, false, null, null, 62), 10), 20), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
-                return y71.n1.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new jg(str, str2), null, false, null, null, 62), 10), 0), this.u);
+                return y71.n1Shadow.y(new t00.w3(new y00.l(com.github.service.wrapper.a.o(this.s, new jg(str, str2), null, false, null, null, 62), 10), 0), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
-                return y71.n1.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new bd(str, str2), null, false, null, null, 62), 10), 19), this.u);
+                return y71.n1Shadow.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new bd(str, str2), null, false, null, null, 62), 10), 19), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new mf(str, str2), null, false, null, null, 62), 10), 26), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new mf(str, str2), null, false, null, null, 62), 10), 26), this.u);
         }
     }
 
@@ -821,22 +821,22 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
                 k71.k.g(str, "listId");
                 k71.k.g(str2, "title");
                 k71.k.g(str3, "description");
-                return y71.n1.y(new o3(in.r.h(this.s.d(new il0.z(new j00(new aa.u0(str3), new aa.u0(str2), str)))), 3), this.u);
+                return y71.n1Shadow.y(new o3(in.rShadow.h(this.s.d(new il0.z(new j00(new aa.u0(str3), new aa.u0(str2), str)))), 3), this.u);
             case 1:
                 k71.k.g(str, "listId");
                 k71.k.g(str2, "title");
                 k71.k.g(str3, "description");
-                return y71.n1.y(new t00.g3(in.r.h(this.s.d(new ly.z(new m10.if0(new aa.u0(str3), new aa.u0(str2), str)))), 1), this.u);
+                return y71.n1Shadow.y(new t00.g3(in.rShadow.h(this.s.d(new ly.z(new m10.if0(new aa.u0(str3), new aa.u0(str2), str)))), 1), this.u);
             case 2:
                 k71.k.g(str, "listId");
                 k71.k.g(str2, "title");
                 k71.k.g(str3, "description");
-                return y71.n1.y(new vb0.p1(in.r.h(this.s.d(new ra0.z(new bz(new aa.u0(str3), new aa.u0(str2), str)))), 7), this.u);
+                return y71.n1Shadow.y(new vb0.p1(in.rShadow.h(this.s.d(new ra0.z(new bz(new aa.u0(str3), new aa.u0(str2), str)))), 7), this.u);
             default:
                 k71.k.g(str, "listId");
                 k71.k.g(str2, "title");
                 k71.k.g(str3, "description");
-                return y71.n1.y(new wy0.h1(in.r.h(this.s.d(new uw0.z(new n80(new aa.u0(str3), new aa.u0(str2), str)))), 6), this.u);
+                return y71.n1Shadow.y(new wy0.h1(in.rShadow.h(this.s.d(new uw0.z(new n80(new aa.u0(str3), new aa.u0(str2), str)))), 6), this.u);
         }
     }
 
@@ -844,13 +844,13 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
     public final y71.i c(String str, List list, List list2) {
         switch (this.r) {
             case 0:
-                return y71.n1.y(in.r.l(in.r.k(this.t.d(new il0.h0(new m00(str, list, new aa.u0(list2)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.k(this.t.d(new il0.h0(new m00(str, list, new aa.u0(list2)))))), this.u);
             case 1:
-                return y71.n1.y(in.r.l(in.r.k(this.t.d(new ly.h0(new lf0(str, list, new aa.u0(list2)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.k(this.t.d(new ly.h0(new lf0(str, list, new aa.u0(list2)))))), this.u);
             case 2:
-                return y71.n1.y(in.r.l(in.r.k(this.t.d(new ra0.h0(new ez(str, list, new aa.u0(list2)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.k(this.t.d(new ra0.h0(new ez(str, list, new aa.u0(list2)))))), this.u);
             default:
-                return y71.n1.y(in.r.l(in.r.k(this.t.d(new uw0.h0(new q80(str, list, new aa.u0(list2)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.k(this.t.d(new uw0.h0(new q80(str, list, new aa.u0(list2)))))), this.u);
         }
     }
 
@@ -859,16 +859,16 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str2, "login");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new il0.i(str))), new h1.u(this, str, str2, (a71.c) null, 26), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new il0.i(str))), new h1.u(this, str, str2, (a71.c) null, 26), 6)), this.u);
             case 1:
                 k71.k.g(str2, "login");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new ly.i(str))), new t00.z1(this, str, str2, (a71.c) null, 2), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new ly.i(str))), new t00.z1(this, str, str2, (a71.c) null, 2), 6)), this.u);
             case 2:
                 k71.k.g(str2, "login");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new ra0.i(str))), new t00.z1(this, str, str2, (a71.c) null, 14), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new ra0.i(str))), new t00.z1(this, str, str2, (a71.c) null, 14), 6)), this.u);
             default:
                 k71.k.g(str2, "login");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new uw0.i(str))), new t00.z1(this, str, str2, (a71.c) null, 20), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new uw0.i(str))), new t00.z1(this, str, str2, (a71.c) null, 20), 6)), this.u);
         }
     }
 
@@ -878,19 +878,19 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str, "title");
                 k71.k.g(str2, "description");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new il0.e(new gn0.d6(new aa.u0(str2), str)))), new h1.u(this, str3, (a71.c) null, 25), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new il0.e(new gn0.d6(new aa.u0(str2), str)))), new h1.u(this, str3, (a71.c) null, 25), 6)), this.u);
             case 1:
                 k71.k.g(str, "title");
                 k71.k.g(str2, "description");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new ly.e(new m10.y9(new aa.u0(str2), str)))), new t00.z1(this, str3, (a71.c) null, 1), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new ly.e(new m10.y9(new aa.u0(str2), str)))), new t00.z1(this, str3, (a71.c) null, 1), 6)), this.u);
             case 2:
                 k71.k.g(str, "title");
                 k71.k.g(str2, "description");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new ra0.e(new hc0.t5(new aa.u0(str2), str)))), new t00.z1(this, str3, (a71.c) null, 13), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new ra0.e(new hc0.t5(new aa.u0(str2), str)))), new t00.z1(this, str3, (a71.c) null, 13), 6)), this.u);
             default:
                 k71.k.g(str, "title");
                 k71.k.g(str2, "description");
-                return y71.n1.y(in.r.l(new y71.y(in.r.h(this.s.d(new uw0.e(new pz0.u6(new aa.u0(str2), str)))), new t00.z1(this, str3, (a71.c) null, 19), 6)), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(new y71.y(in.rShadow.h(this.s.d(new uw0.e(new pz0.u6(new aa.u0(str2), str)))), new t00.z1(this, str3, (a71.c) null, 19), 6)), this.u);
         }
     }
 
@@ -900,19 +900,19 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str, "login");
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new il0.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 19), this.u);
+                return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new il0.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 19), this.u);
             case 1:
                 k71.k.g(str, "login");
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new ly.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 29), this.u);
+                return y71.n1Shadow.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new ly.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 29), this.u);
             case 2:
                 k71.k.g(str, "login");
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new ra0.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 18), this.u);
+                return y71.n1Shadow.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new ra0.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 18), this.u);
             default:
                 k71.k.g(str, "login");
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new uw0.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 25), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new uw0.u(new aa.u0(str3), str, str2), null, false, null, null, 62), 10), 25), this.u);
         }
     }
 
@@ -921,16 +921,16 @@ public final class j4 implements z01.j0, yb0, mi0, y90, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new j3(com.github.service.wrapper.a.o(this.s, new il0.m(str, str2), null, false, null, null, 62), 6), this.u);
+                return y71.n1Shadow.y(new j3(com.github.service.wrapper.a.o(this.s, new il0.m(str, str2), null, false, null, null, 62), 6), this.u);
             case 1:
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new sm.b(com.github.service.wrapper.a.o(this.s, new ly.m(str, str2), null, false, null, null, 62), 19), this.u);
+                return y71.n1Shadow.y(new sm.b(com.github.service.wrapper.a.o(this.s, new ly.m(str, str2), null, false, null, null, 62), 19), this.u);
             case 2:
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new ra0.m(str, str2), null, false, null, null, 62), 4), this.u);
+                return y71.n1Shadow.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new ra0.m(str, str2), null, false, null, null, 62), 4), this.u);
             default:
                 k71.k.g(str2, "slug");
-                return y71.n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new uw0.m(str, str2), null, false, null, null, 62), 24), this.u);
+                return y71.n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new uw0.m(str, str2), null, false, null, null, 62), 24), this.u);
         }
     }
 

@@ -1,6 +1,6 @@
 package h01;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
@@ -28,6 +28,6 @@ public final class p {
     }
 
     public final String toString() {
-        return f4.h(this.a, this.b, "SubIssueProgress(totalIssues=", ", completedIssues=", ")");
+        return f4Shadow.h(this.a, this.b, "SubIssueProgress(totalIssues=", ", completedIssues=", ")");
     }
 }

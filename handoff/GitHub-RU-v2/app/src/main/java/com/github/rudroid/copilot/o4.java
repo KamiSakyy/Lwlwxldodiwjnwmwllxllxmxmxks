@@ -29,13 +29,13 @@ public final class o4 extends androidx.lifecycle.a {
         this.f9940t = yVar;
         this.f9941u = cVar;
         this.f9942v = lVar;
-        y71.y1 c10 = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y71.y1 c10 = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.f9943w = c10;
         this.f9944x = com.github.rudroid.utilities.w0.f(c10, androidx.lifecycle.d1.k(this), new k4(this, 0));
         Q();
     }
 
     public final void Q() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new n4(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new n4(this, null), 3);
     }
 }

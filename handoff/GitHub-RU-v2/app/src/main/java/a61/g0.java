@@ -47,7 +47,7 @@ public final class g0 extends c71.j implements j71.e {
             case 10:
                 return new g0((f0.g0) this.x, cVar, 10);
             case 11:
-                return new g0((f0.h0) this.x, cVar, 11);
+                return new g0((f0.h0Shadow) this.x, cVar, 11);
             case 12:
                 return new g0((f0.p0) this.x, cVar, 12);
             case 13:

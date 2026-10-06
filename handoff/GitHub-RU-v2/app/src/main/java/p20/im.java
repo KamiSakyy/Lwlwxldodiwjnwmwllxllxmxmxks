@@ -7,7 +7,7 @@ import u10.pw;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class im implements aaShadow.a {
     public static final im a = new im();
-    public static final List b = sy.d0.o("readme", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("readme", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

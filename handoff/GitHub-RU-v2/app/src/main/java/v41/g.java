@@ -14,12 +14,12 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class g {
+public abstract class gShadow {
     public static final char[] a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
     public static synchronized long a(Context context) {
         long j;
-        synchronized (g.class) {
+        synchronized (gShadow.class) {
             ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
             ((ActivityManager) context.getSystemService("activity")).getMemoryInfo(memoryInfo);
             j = memoryInfo.totalMem;

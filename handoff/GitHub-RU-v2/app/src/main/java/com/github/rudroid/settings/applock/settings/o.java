@@ -9,7 +9,7 @@ import v71.b0;
 import v71.q1;
 import w61.a0;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import yf.c;
 
@@ -31,7 +31,7 @@ public final class o extends k1 {
         this.t = dVar;
         this.u = jVar;
         this.v = iVar;
-        y1 c = n1.c(new yf.b(false, 0, false, null));
+        y1 c = n1Shadow.c(new yf.b(false, 0, false, null));
         this.w = c;
         final int i = 1;
         this.x = w0.f(c, d1.k(this), new j71.c() { // from class: com.github.rudroid.settings.applock.settings.d
@@ -83,6 +83,6 @@ public final class o extends k1 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.y = b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new l(this, null), 3);
+        this.y = b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new l(this, null), 3);
     }
 }

@@ -79,7 +79,7 @@ public final class SelectableLanguageFragment extends Hilt_SelectableLanguageFra
 
     public SelectableLanguageFragment() {
         w61.h s = sy.w.s(w61.i.s, new b(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(2, this)));
-        this.H0 = new l1(k71.x.a(n.class), new c(s), new e(s), new d(s));
+        this.H0 = new l1(k71.xShadow.a(n.class), new c(s), new e(s), new d(s));
         this.I0 = new com.github.rudroid.searchandfilter.complexfilter.explore.b(this);
     }
 

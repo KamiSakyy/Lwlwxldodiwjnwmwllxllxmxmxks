@@ -25,7 +25,7 @@ public final class l0 implements Parcelable {
 
     static {
         ProjectViewLayoutType projectViewLayoutType = ProjectViewLayoutType.TABLE;
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         x61.t tVar = x61.t.r;
         z = new l0("", 0, "", projectViewLayoutType, 1, rVar, tVar, tVar);
     }

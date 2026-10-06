@@ -9,8 +9,8 @@ import com.google.android.material.sidesheet.SideSheetBehavior;
 import java.lang.ref.WeakReference;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import jo.f4;
-import sy.o;
+import jo.f4Shadow;
+import sy.oShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c extends z3 {
@@ -44,7 +44,7 @@ public final class c extends z3 {
                 sideSheetBehavior.a.f(i);
                 Iterator it = linkedHashSet.iterator();
                 if (it.hasNext()) {
-                    throw f4.g(it);
+                    throw f4Shadow.g(it);
                 }
                 return;
         }
@@ -203,7 +203,7 @@ public final class c extends z3 {
                 return view.getLeft();
             default:
                 SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) this.c;
-                return o.b(i, sideSheetBehavior.a.m(), sideSheetBehavior.a.l());
+                return oShadow.b(i, sideSheetBehavior.a.m(), sideSheetBehavior.a.l());
         }
     }
 
@@ -211,7 +211,7 @@ public final class c extends z3 {
     public final int k(View view, int i) {
         switch (this.b) {
             case 0:
-                return o.b(i, ((BottomSheetBehavior) this.c).C(), v());
+                return oShadow.b(i, ((BottomSheetBehavior) this.c).C(), v());
             default:
                 return view.getTop();
         }

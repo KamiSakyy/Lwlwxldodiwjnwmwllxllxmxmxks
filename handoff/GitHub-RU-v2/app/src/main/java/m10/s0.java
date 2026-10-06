@@ -6,6 +6,6 @@ public abstract class s0 {
 
     static {
         ef.Companion.getClass();
-        new aa.q0("AddedToListFeedItem", x61.r.r, sy.d0.n(ef.a));
+        new aa.q0("AddedToListFeedItem", x61.rShadow.r, sy.d0Shadow.n(ef.a));
     }
 }

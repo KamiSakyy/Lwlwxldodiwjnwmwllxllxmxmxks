@@ -86,7 +86,7 @@ public final class j0Shadow extends c71.c {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j {
+    public static class jShadow {
         public j() {
         }
     }

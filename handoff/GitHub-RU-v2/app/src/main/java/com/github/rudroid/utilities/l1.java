@@ -45,7 +45,7 @@ public final /* synthetic */ class l1 implements j71.e {
                 break;
             case 3:
                 ((Integer) obj2).getClass();
-                sg.k0.b(this.t, this.u, (j71.a) this.x, (f1.o0) this.s, (String) this.y, (androidx.compose.foundation.layout.d2) this.z, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(this.v | 1), this.w);
+                sg.k0Shadow.b(this.t, this.u, (j71.a) this.x, (f1.o0) this.s, (String) this.y, (androidx.compose.foundation.layout.d2) this.z, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(this.v | 1), this.w);
                 break;
             default:
                 ((Integer) obj2).getClass();

@@ -75,7 +75,7 @@ public abstract class s1 implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, q1Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(q1Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(q1Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, q1Var.d);
         fVar.z0("repository");
         aa.c.c(t1.a, true).b(fVar, wVar, q1Var.e);

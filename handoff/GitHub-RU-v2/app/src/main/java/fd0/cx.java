@@ -6,7 +6,7 @@ import kc0.jc0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cx implements aaShadow.a {
     public static final cx a = new cx();
-    public static final List b = sy.d0.o(new String[]{"isEmployee", "id", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"isEmployee", "id", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -49,7 +49,7 @@ public final class cx implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(jc0Var, "value");
         fVar.z0("isEmployee");
-        jo.f4.C(jc0Var.a, aa.c.f, fVar, wVar, "id");
+        jo.f4Shadow.C(jc0Var.a, aa.c.f, fVar, wVar, "id");
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, jc0Var.b);
         fVar.z0("__typename");

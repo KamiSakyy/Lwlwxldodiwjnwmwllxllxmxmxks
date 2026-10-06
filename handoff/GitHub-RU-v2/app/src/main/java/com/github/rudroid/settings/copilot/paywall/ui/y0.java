@@ -42,9 +42,9 @@ public final class y0 {
             androidx.compose.runtime.t.E(sVar2, v2.g.h);
             androidx.compose.runtime.t.I(sVar2, v2.g.d, c);
             w1.o oVar = w1.o.a;
-            sg.k0.a(((i2 << 6) & 896) | 12582918, 122, null, sVar2, null, null, null, aVar, j.b, p2.e(oVar, 1.0f), false);
+            sg.k0Shadow.a(((i2 << 6) & 896) | 12582918, 122, null, sVar2, null, null, null, aVar, j.b, p2.e(oVar, 1.0f), false);
             sVar2 = sVar;
-            sg.k0.a(((i2 << 3) & 896) | 12582918, 122, null, sVar2, null, null, null, aVar2, j.d, p2.e(oVar, 1.0f), false);
+            sg.k0Shadow.a(((i2 << 3) & 896) | 12582918, 122, null, sVar2, null, null, null, aVar2, j.d, p2.e(oVar, 1.0f), false);
             sVar2.q(true);
         } else {
             sVar2.V();

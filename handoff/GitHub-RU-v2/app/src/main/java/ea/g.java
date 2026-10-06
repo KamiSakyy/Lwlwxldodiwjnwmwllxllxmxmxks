@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class g implements e {
@@ -429,6 +429,6 @@ public final class g implements e {
     }
 
     public /* synthetic */ g(Map map) {
-        this(map, r.r);
+        this(map, rShadow.r);
     }
 }

@@ -38,7 +38,7 @@ public final /* synthetic */ class y implements j71.c {
                     H4.getClass();
                     ArrayList arrayList = H4.d;
                     arrayList.clear();
-                    arrayList.addAll(x61.r.r);
+                    arrayList.addAll(x61.rShadow.r);
                     H4.n();
                     ProgressBar progressBar = searchAndFilterBaseFragment.B4().P;
                     k71.k.f(progressBar, "progressBar");
@@ -70,7 +70,7 @@ public final /* synthetic */ class y implements j71.c {
                     if (q1Var != null) {
                         q1Var.m((CancellationException) null);
                     }
-                    searchAndFilterBaseFragment.D0 = v71.b0.z(d1.i(searchAndFilterBaseFragment.F3()), (a71.h) null, (v71.a0) null, new b0(searchAndFilterBaseFragment, fVar, null), 3);
+                    searchAndFilterBaseFragment.D0 = v71.b0.z(d1.i(searchAndFilterBaseFragment.F3()), (a71.h) null, (v71.a0Shadow) null, new b0(searchAndFilterBaseFragment, fVar, null), 3);
                     break;
                 }
                 break;

@@ -6,7 +6,7 @@ import mb0.l0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y implements aa.a {
     public static final y a = new y();
-    public static final List b = sy.d0.n("getsDirectMentions");
+    public static final List b = sy.d0Shadow.n("getsDirectMentions");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

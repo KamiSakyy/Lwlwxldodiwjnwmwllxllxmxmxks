@@ -38,7 +38,7 @@ public final class w0 implements WildcardType {
     @Override // java.lang.reflect.WildcardType
     public final Type[] getLowerBounds() {
         Type type = this.s;
-        return type != null ? new Type[]{type} : x0.a;
+        return type != null ? new Type[]{type} : x0Shadow.a;
     }
 
     @Override // java.lang.reflect.WildcardType

@@ -49,7 +49,7 @@ final class d extends c71.j implements j71.e {
         String C32 = filterBarFragmentBase.C3(2131954253);
         k71.k.f(C32, "getString(...)");
         com.github.rudroid.searchandfilter.filterbar.e eVar2 = new com.github.rudroid.searchandfilter.filterbar.e(C32, new a(0, filterBarFragmentBase, FilterBarFragmentBase.class, "reset", "reset()V", 0, 0));
-        List r = eVar != null ? x61.l.r(new com.github.rudroid.searchandfilter.filterbar.e[]{eVar, eVar2}) : sy.d0.n(eVar2);
+        List r = eVar != null ? x61.l.r(new com.github.rudroid.searchandfilter.filterbar.e[]{eVar, eVar2}) : sy.d0Shadow.n(eVar2);
         y1Var.getClass();
         y1Var.k((Object) null, r);
         return w61.a0.a;

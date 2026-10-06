@@ -6,7 +6,7 @@ import java.util.List;
 public abstract class w implements aa.a {
     public static final List a = x61.l.r(new String[]{"organization", "slug", "id"});
 
-    public static am0.x c(ea.e eVar, aa.w wVar) {
+    public static am0.xShadow c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         am0.b0 b0Var = null;
@@ -34,13 +34,13 @@ public abstract class w implements aa.a {
             throw null;
         }
         if (str2 != null) {
-            return new am0.x(b0Var, str, str2);
+            return new am0.xShadow(b0Var, str, str2);
         }
         k41.b.B(eVar, "id");
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, am0.x xVar) {
+    public static void d(ea.f fVar, aa.w wVar, am0.xShadow xVar) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

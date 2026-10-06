@@ -15,7 +15,7 @@ public final class sn {
         s = snVarArr;
         v8.l0.t(snVarArr);
         Companion = new rn();
-        sy.d0.o("ANDROID", "IOS");
+        sy.d0Shadow.o("ANDROID", "IOS");
     }
 
     public sn(String str, int i, String str2) {

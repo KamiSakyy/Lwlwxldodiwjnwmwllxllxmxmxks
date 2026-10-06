@@ -4,7 +4,7 @@ import f1.p3;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class q extends sy.u {
@@ -38,7 +38,7 @@ public abstract class q extends sy.u {
                     i11 = -1;
                     break;
                 }
-                if (!sy.r.s(str2.charAt(i11))) {
+                if (!sy.rShadow.s(str2.charAt(i11))) {
                     break;
                 }
                 i11++;
@@ -64,12 +64,12 @@ public abstract class q extends sy.u {
         int intValue = num != null ? num.intValue() : 0;
         int length2 = str.length();
         X.size();
-        int m = d0.m(X);
+        int m = d0Shadow.m(X);
         ArrayList arrayList3 = new ArrayList();
         for (Object obj3 : X) {
             int i12 = i + 1;
             if (i < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
             String str3 = (String) obj3;
@@ -97,7 +97,7 @@ public abstract class q extends sy.u {
         List X = p.X(str);
         int length = str.length();
         X.size();
-        int m = d0.m(X);
+        int m = d0Shadow.m(X);
         ArrayList arrayList = new ArrayList();
         Iterator it = X.iterator();
         int i = 0;
@@ -111,7 +111,7 @@ public abstract class q extends sy.u {
             Object next = it.next();
             int i10 = i + 1;
             if (i < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
             String str3 = (String) next;
@@ -123,7 +123,7 @@ public abstract class q extends sy.u {
                         i11 = -1;
                         break;
                     }
-                    if (!sy.r.s(str3.charAt(i11))) {
+                    if (!sy.rShadow.s(str3.charAt(i11))) {
                         break;
                     }
                     i11++;

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x7 implements aa.a {
     public static final x7 a = new x7();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "diffLines"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "isResolved", "resolvedBy", "viewerCanResolve", "viewerCanUnresolve", "diffLines"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0018. Please report as an issue. */
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -97,11 +97,11 @@ public final class x7 implements aa.a {
         bVar.b(fVar, wVar, r7Var.b);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(r7Var.c, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(r7Var.c, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(v7.a, false)).b(fVar, wVar, r7Var.d);
         fVar.z0("viewerCanResolve");
-        jo.f4.C(r7Var.e, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(r7Var.f, bVar2, fVar, wVar, "diffLines");
+        jo.f4Shadow.C(r7Var.e, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(r7Var.f, bVar2, fVar, wVar, "diffLines");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(t7.a, true)))).b(fVar, wVar, r7Var.g);
         List list = yi0.b.a;
         yi0.b.d(fVar, wVar, r7Var.h);

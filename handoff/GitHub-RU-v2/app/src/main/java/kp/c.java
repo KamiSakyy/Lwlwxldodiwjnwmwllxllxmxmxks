@@ -4,7 +4,7 @@ import a61.f0Shadow;
 import go0.z;
 import sy.y;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -62,7 +62,7 @@ public final class c extends c71.j implements j71.e {
                 if (i2 == 0) {
                     y.j(obj);
                     z zVar2 = this.x;
-                    y71.i o = n1.o(zVar2.B.h(), 2000L);
+                    y71.i o = n1Shadow.o(zVar2.B.h(), 2000L);
                     f0Shadow f0Var = new f0Shadow(5, zVar2);
                     this.w = 1;
                     if (o.b(f0Var, this) == aVar2) {

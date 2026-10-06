@@ -53,13 +53,13 @@ public final class ma implements z01.p1, yb0, mi0, y90, yf0 {
     public final Object a() {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new j3(com.github.service.wrapper.a.o(this.s, new qa0(), null, false, null, null, 58), 27), this.t);
+                return y71.n1Shadow.y(new j3(com.github.service.wrapper.a.o(this.s, new qa0(), null, false, null, null, 58), 27), this.t);
             case 1:
-                return y71.n1.y(new t00.h7(com.github.service.wrapper.a.o(this.s, new eh0(), null, false, null, null, 58), 14), this.t);
+                return y71.n1Shadow.y(new t00.h7(com.github.service.wrapper.a.o(this.s, new eh0(), null, false, null, null, 58), 14), this.t);
             case 2:
-                return y71.n1.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new q80(), null, false, null, null, 58), 22), this.t);
+                return y71.n1Shadow.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new q80(), null, false, null, null, 58), 22), this.t);
             default:
-                return y71.n1.y(new wy0.d6(com.github.service.wrapper.a.o(this.s, new qe0(), null, false, null, null, 58), 17), this.t);
+                return y71.n1Shadow.y(new wy0.d6(com.github.service.wrapper.a.o(this.s, new qe0(), null, false, null, null, 58), 17), this.t);
         }
     }
 
@@ -67,13 +67,13 @@ public final class ma implements z01.p1, yb0, mi0, y90, yf0 {
     public final Object b() {
         switch (this.r) {
             case 0:
-                return y71.n1.y(new j3(com.github.service.wrapper.a.o(this.s, new xb0(), null, false, null, null, 58), 26), this.t);
+                return y71.n1Shadow.y(new j3(com.github.service.wrapper.a.o(this.s, new xb0(), null, false, null, null, 58), 26), this.t);
             case 1:
-                return y71.n1.y(new t00.h7(com.github.service.wrapper.a.o(this.s, new li0(), null, false, null, null, 58), 13), this.t);
+                return y71.n1Shadow.y(new t00.h7(com.github.service.wrapper.a.o(this.s, new li0(), null, false, null, null, 58), 13), this.t);
             case 2:
-                return y71.n1.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new x90(), null, false, null, null, 58), 21), this.t);
+                return y71.n1Shadow.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, new x90(), null, false, null, null, 58), 21), this.t);
             default:
-                return y71.n1.y(new wy0.d6(com.github.service.wrapper.a.o(this.s, new xf0(), null, false, null, null, 58), 16), this.t);
+                return y71.n1Shadow.y(new wy0.d6(com.github.service.wrapper.a.o(this.s, new xf0(), null, false, null, null, 58), 16), this.t);
         }
     }
 

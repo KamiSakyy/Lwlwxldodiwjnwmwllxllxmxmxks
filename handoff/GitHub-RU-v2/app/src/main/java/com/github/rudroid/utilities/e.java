@@ -14,7 +14,7 @@ public final class e {
 
     public final void a(oa.j jVar, wj.e eVar) {
         k71.k.g(jVar, "user");
-        v71.b0.z(this.b, (a71.h) null, (v71.a0) null, new d(this, jVar, eVar, null), 3);
+        v71.b0.z(this.b, (a71.h) null, (v71.a0Shadow) null, new d(this, jVar, eVar, null), 3);
     }
     public static Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

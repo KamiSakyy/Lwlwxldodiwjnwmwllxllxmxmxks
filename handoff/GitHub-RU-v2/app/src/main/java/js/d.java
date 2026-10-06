@@ -17,7 +17,7 @@ import m10.i30;
 import m10.l40;
 import m10.wg;
 import m10.ya0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -29,7 +29,7 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = fq.a.a;
@@ -43,7 +43,7 @@ public abstract class d {
         s mVar4 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         i30.Companion.getClass();
         s mVar5 = new m("repository", l0.b(i30.w0), (String) null, rVar, rVar, r3);
-        List n = d0.n("Discussion");
+        List n = d0Shadow.n("Discussion");
         List list2 = e.a;
         s c = no.a.c(list2, "selections", "Discussion", n, list2);
         gh.Companion.getClass();

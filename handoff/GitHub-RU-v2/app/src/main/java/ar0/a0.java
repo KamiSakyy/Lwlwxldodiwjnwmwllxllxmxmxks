@@ -3,7 +3,7 @@ package ar0;
 import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a0 implements aa.h0 {
+public final class a0Shadow implements aa.h0 {
     public String a;
     public String b;
     public z c;
@@ -34,7 +34,7 @@ public final class a0 implements aa.h0 {
         this.m = aVar;
     }
 
-    public static a0 a(a0 a0Var, p0 p0Var, gt0.a aVar, int i) {
+    public static a0 a(a0Shadow a0Var, p0 p0Var, gt0.a aVar, int i) {
         String str = a0Var.a;
         String str2 = a0Var.b;
         z zVar = a0Var.c;
@@ -49,17 +49,17 @@ public final class a0 implements aa.h0 {
         gu0.c cVar = a0Var.l;
         gt0.a aVar2 = (i & 4096) != 0 ? a0Var.m : aVar;
         a0Var.getClass();
-        return new a0(str, str2, zVar, str3, str4, f40Var, z, z2, z3, z4, p0Var2, cVar, aVar2);
+        return new a0Shadow(str, str2, zVar, str3, str4, f40Var, z, z2, z3, z4, p0Var2, cVar, aVar2);
     }
 
     public final boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof a0)) {
+        if (!(obj instanceof a0Shadow)) {
             return false;
         }
-        a0 a0Var = (a0) obj;
+        a0Shadow a0Var = (a0Shadow) obj;
         return k71.k.b(this.a, a0Var.a) && k71.k.b(this.b, a0Var.b) && k71.k.b(this.c, a0Var.c) && k71.k.b(this.d, a0Var.d) && k71.k.b(this.e, a0Var.e) && this.f == a0Var.f && this.g == a0Var.g && this.h == a0Var.h && this.i == a0Var.i && this.j == a0Var.j && k71.k.b(this.k, a0Var.k) && k71.k.b(this.l, a0Var.l) && k71.k.b(this.m, a0Var.m);
     }
 

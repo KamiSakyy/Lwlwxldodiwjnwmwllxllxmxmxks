@@ -13,10 +13,10 @@ final class p7<T> implements y71.j {
     public final Object c(Object obj, a71.c cVar) {
         boolean booleanValue = ((Boolean) obj).booleanValue();
         y71.y1 y1Var = this.r.v;
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         if (booleanValue) {
             fl.e eVar = fl.f.Companion;
-            x61.r rVar2 = (List) ((fl.f) y1Var.getValue()).b;
+            x61.rShadow rVar2 = (List) ((fl.f) y1Var.getValue()).b;
             if (rVar2 != null) {
                 rVar = rVar2;
             }

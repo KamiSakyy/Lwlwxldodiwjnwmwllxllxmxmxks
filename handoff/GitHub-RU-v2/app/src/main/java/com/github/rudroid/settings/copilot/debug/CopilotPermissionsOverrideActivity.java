@@ -41,7 +41,7 @@ public final class CopilotPermissionsOverrideActivity extends c0 {
     public CopilotPermissionsOverrideActivity() {
         this.s0 = false;
         C(new b0(this));
-        this.t0 = new l1(k71.x.a(v.class), new c(), new b(), new d());
+        this.t0 = new l1(k71.xShadow.a(v.class), new c(), new b(), new d());
     }
 
     public final v J0() {

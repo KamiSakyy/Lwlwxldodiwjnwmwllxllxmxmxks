@@ -1,6 +1,6 @@
 package sr;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
@@ -31,6 +31,6 @@ public final class e {
     }
 
     public final String toString() {
-        return f4.n("Owner1(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.n("Owner1(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

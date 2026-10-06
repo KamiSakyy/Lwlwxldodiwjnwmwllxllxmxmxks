@@ -17,7 +17,7 @@ import pz0.pd;
 import pz0.sk;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import ts0.c;
 import v8.l0;
 import x61.l;
@@ -30,16 +30,16 @@ public abstract class b {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("MergeQueue");
+        List n = d0Shadow.n("MergeQueue");
         List list = c.a;
         s c = no.a.c(list, "selections", "MergeQueue", n, list);
         td.Companion.getClass();
         x xVar2 = td.a;
         List r = l.r(new s[]{mVar, c, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("MergeQueueEntry");
+        List n2 = d0Shadow.n("MergeQueueEntry");
         List list2 = ts0.b.a;
         List r2 = l.r(new s[]{mVar2, no.a.c(list2, "selections", "MergeQueueEntry", n2, list2), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         m mVar3 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -57,11 +57,11 @@ public abstract class b {
         hs.Companion.getClass();
         q0 q0Var3 = hs.N;
         k.g(q0Var3, "type");
-        List n3 = d0.n(new m("mergeQueueEntry", q0Var2, (String) null, rVar, rVar, l.r(new m[]{mVar6, new m("pullRequest", q0Var3, (String) null, rVar, rVar, r3), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)})));
+        List n3 = d0Shadow.n(new m("mergeQueueEntry", q0Var2, (String) null, rVar, rVar, l.r(new m[]{mVar6, new m("pullRequest", q0Var3, (String) null, rVar, rVar, r3), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)})));
         ib.Companion.getClass();
         q0 q0Var4 = ib.a;
         k.g(q0Var4, "type");
         sk.Companion.getClass();
-        a = d0.n(new m("enqueuePullRequest", q0Var4, (String) null, rVar, no.a.s(sk.b0, new u0(x61.x.u(new w61.k("expectedHeadOid", new t("expectedHeadOid")), new w61.k("pullRequestId", new t("id"))))), n3));
+        a = d0Shadow.n(new m("enqueuePullRequest", q0Var4, (String) null, rVar, no.a.s(sk.b0, new u0(x61.x.u(new w61.k("expectedHeadOid", new t("expectedHeadOid")), new w61.k("pullRequestId", new t("id"))))), n3));
     }
 }

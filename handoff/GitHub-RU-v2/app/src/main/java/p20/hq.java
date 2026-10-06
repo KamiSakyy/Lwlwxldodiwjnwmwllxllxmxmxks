@@ -8,7 +8,7 @@ import u10.j20;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hq implements aaShadow.a {
     public static final hq a = new hq();
-    public static final List b = sy.d0.o("actor", "unlockedRecord");
+    public static final List b = sy.d0Shadow.o("actor", "unlockedRecord");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

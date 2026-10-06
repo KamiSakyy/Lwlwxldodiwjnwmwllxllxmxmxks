@@ -21,7 +21,7 @@ final class y5<T> implements y71.j {
             y1Var.getClass();
             y1Var.k((Object) null, bool);
         } else {
-            v71.b0.z(androidx.lifecycle.d1.k(a6Var), (a71.h) null, (v71.a0) null, new c6(a6Var, jVar, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(a6Var), (a71.h) null, (v71.a0Shadow) null, new c6(a6Var, jVar, null), 3);
         }
         return w61.a0.a;
     }

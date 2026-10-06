@@ -18,7 +18,7 @@ public final class a {
         Object obj;
         Object obj2;
         List<m5> list = f5Var != null ? f5Var.a : null;
-        List list2 = x61.r.r;
+        List list2 = x61.rShadow.r;
         if (list == null) {
             list = list2;
         }

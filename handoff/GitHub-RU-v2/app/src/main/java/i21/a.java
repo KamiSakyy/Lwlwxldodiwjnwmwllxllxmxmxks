@@ -1098,7 +1098,7 @@ public abstract class a {
             }
             arrayList = arrayList2;
         }
-        return arrayList == null ? x61.r.r : arrayList;
+        return arrayList == null ? x61.rShadow.r : arrayList;
     }
 
     public static void f0(w51.r rVar) {

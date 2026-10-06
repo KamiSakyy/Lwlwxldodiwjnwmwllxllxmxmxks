@@ -14,9 +14,9 @@ public abstract class p1 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Organization");
+        List n = sy.d0Shadow.n("Organization");
         List list = dq.w.a;
         aa.s c = no.a.c(list, "selections", "Organization", n, list);
         ah.Companion.getClass();

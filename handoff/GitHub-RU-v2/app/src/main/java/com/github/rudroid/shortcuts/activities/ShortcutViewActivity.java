@@ -25,7 +25,7 @@ public final class ShortcutViewActivity extends j0<ic.d0> {
 
     static {
         r71.e mVar = new k71.m(ShortcutViewActivity.class, "shortcutId", "getShortcutId()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         x0 = new r71.e[]{mVar};
         Companion = new a();
     }
@@ -48,7 +48,7 @@ public final class ShortcutViewActivity extends j0<ic.d0> {
         k71.k.e(E, "null cannot be cast to non-null type androidx.navigation.fragment.NavHostFragment");
         x6.a0 s4 = E.s4();
         x6.y yVar = new x6.y(s4.b.s, new ShortcutViewRoute((String) this.w0.c(this, x0[0])), (k71.e) null);
-        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ShortcutViewRoute.class), x61.s.r, k71.x.a(ShortcutViewFragment.class)), yVar.j, yVar, s4);
+        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.xShadow.a(ShortcutViewRoute.class), x61.s.r, k71.xShadow.a(ShortcutViewFragment.class)), yVar.j, yVar, s4);
     }
 
     public static Object C(Object... a) {

@@ -7,8 +7,8 @@ public abstract class wc0 {
     public static final vc0 Companion = new vc0();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("UnlockedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("UnlockedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

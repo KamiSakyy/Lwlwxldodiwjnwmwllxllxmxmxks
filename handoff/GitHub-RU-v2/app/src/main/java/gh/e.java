@@ -10,7 +10,7 @@ import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
 import com.github.rudroid.agents.copilothome.ui.b0;
-import d2.a0;
+import d2.a0Shadow;
 import d2.l0;
 import k71.k;
 import w1.o;
@@ -81,7 +81,7 @@ public final class e {
             }
             sVar.r();
             o oVar = o.a;
-            l0 l0Var = a0.b;
+            l0 l0Var = a0Shadow.b;
             r f = f0.o.f(oVar, j3, l0Var);
             d3.k kVar = new d3.k(1);
             boolean z2 = ((i3 & 7168) == 2048) | ((i3 & 896) == 256);
@@ -122,7 +122,7 @@ public final class e {
                 public final Object s(Object obj, Object obj2) {
                     ((Integer) obj2).getClass();
                     e.b(rVar, j2, z, cVar, dVar, (s) obj, t.L(i | 1));
-                    return w61.a0.a;
+                    return w61.a0Shadow.a;
                 }
             };
         }

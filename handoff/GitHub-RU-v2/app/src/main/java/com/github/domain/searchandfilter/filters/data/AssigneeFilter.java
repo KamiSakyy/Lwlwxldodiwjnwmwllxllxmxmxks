@@ -12,15 +12,15 @@ import java.util.Iterator;
 import java.util.List;
 import k71.k;
 import k71.s;
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l81.n;
-import sy.d0;
+import sy.d0Shadow;
 import sy.w;
 import w80.t;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -47,11 +47,11 @@ public final class AssigneeFilter extends d {
     public /* synthetic */ AssigneeFilter(int i, l lVar, String str, List list) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, AssigneeFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, AssigneeFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {
-            this.v = r.r;
+            this.v = rShadow.r;
         } else {
             this.v = list;
         }
@@ -85,7 +85,7 @@ public final class AssigneeFilter extends d {
         m.n0(arrayList, new bm.b(sVar, arrayList2, 0));
         if (sVar.r) {
             NoAssignee.Companion.getClass();
-            return new AssigneeFilter(d0.n(NoAssignee.y));
+            return new AssigneeFilter(d0Shadow.n(NoAssignee.y));
         }
         if (arrayList2.isEmpty()) {
             return null;
@@ -104,7 +104,7 @@ public final class AssigneeFilter extends d {
         while (it.hasNext()) {
             arrayList.add(d5.U((yz0.f) it.next()));
         }
-        return nVar.b(new k81.d(b91.g.C(((l81.c) nVar).b, x.a(yz0.f.class)), 0), arrayList);
+        return nVar.b(new k81.d(b91.g.C(((l81.c) nVar).b, xShadow.a(yz0.f.class)), 0), arrayList);
     }
 
     @Override // com.github.domain.searchandfilter.filters.data.d
@@ -127,7 +127,7 @@ public final class AssigneeFilter extends d {
     }
 
     public /* synthetic */ AssigneeFilter() {
-        this(r.r);
+        this(rShadow.r);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

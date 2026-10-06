@@ -1,6 +1,6 @@
 package com.github.rudroid.widget.shortcuts;
 
-import y71.n1;
+import y71.n1Shadow;
 
 @c71.e(c = "com.github.rudroid.widget.shortcuts.ShortcutPreferences", f = "ShortcutPreferences.kt", l = {123}, m = "getAccountName", v = 1)
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -39,7 +39,7 @@ final class i extends c71.c {
             y71.i data = gVar.a.getData();
             iVar.u = Q;
             iVar.x = 1;
-            Object v = n1.v(data, iVar);
+            Object v = n1Shadow.v(data, iVar);
             if (v == aVar) {
                 return aVar;
             }

@@ -7,5 +7,5 @@ import java.util.List;
 public final class w4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public static final List f13609a = sy.d0.o(new PullRequestReviewEvent[]{PullRequestReviewEvent.COMMENT, PullRequestReviewEvent.APPROVE, PullRequestReviewEvent.REQUEST_CHANGES});
+    public static final List f13609a = sy.d0Shadow.o(new PullRequestReviewEvent[]{PullRequestReviewEvent.COMMENT, PullRequestReviewEvent.APPROVE, PullRequestReviewEvent.REQUEST_CHANGES});
 }

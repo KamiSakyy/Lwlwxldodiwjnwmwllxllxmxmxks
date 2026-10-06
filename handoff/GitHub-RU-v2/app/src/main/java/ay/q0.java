@@ -5,7 +5,7 @@ import zx.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class q0 implements aa.a {
-    public static final List a = sy.d0.n("id");
+    public static final List a = sy.d0Shadow.n("id");
 
     public static h1 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

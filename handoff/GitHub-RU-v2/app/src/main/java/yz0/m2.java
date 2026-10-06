@@ -97,7 +97,7 @@ public final class m2 implements o2 {
         f1.e.x(sb, this.t, ", title=", this.u, ", url=");
         a0.s0.w(this.w, this.v, ", number=", ", repoName=", sb);
         f1.e.x(sb, this.x, ", owner=", this.y, ", isLinkedByUser=");
-        return jo.f4.s(sb, this.z, ")");
+        return jo.f4Shadow.s(sb, this.z, ")");
     }
 
     @Override // android.os.Parcelable

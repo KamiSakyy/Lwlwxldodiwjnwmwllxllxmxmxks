@@ -8,6 +8,6 @@ public abstract class du {
         rt.Companion.getClass();
         aa.j0 j0Var = rt.a;
         bu.Companion.getClass();
-        new aa.q0("SearchShortcutQueryProjectTerm", x61.r.r, x61.l.r(new aa.j0[]{j0Var, bu.a}));
+        new aa.q0("SearchShortcutQueryProjectTerm", x61.rShadow.r, x61.l.r(new aa.j0[]{j0Var, bu.a}));
     }
 }

@@ -1,7 +1,7 @@
 package p01;
 
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
@@ -31,6 +31,6 @@ public final class l {
     }
 
     public final String toString() {
-        return f4.s(m0.o("RepositoryEmptyAndArchivedStatus(id=", this.a, ", isArchived=", ", isEmpty=", this.b), this.c, ")");
+        return f4Shadow.s(m0.o("RepositoryEmptyAndArchivedStatus(id=", this.a, ", isArchived=", ", isEmpty=", this.b), this.c, ")");
     }
 }

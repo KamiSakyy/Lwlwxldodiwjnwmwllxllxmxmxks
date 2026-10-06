@@ -7,8 +7,8 @@ public abstract class a80 {
     public static final z70 Companion = new z70();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("SecurityAdvisory", n, sy.d0.n(zp.a));
+        new aa.q0("SecurityAdvisory", n, sy.d0Shadow.n(zp.a));
     }
 }

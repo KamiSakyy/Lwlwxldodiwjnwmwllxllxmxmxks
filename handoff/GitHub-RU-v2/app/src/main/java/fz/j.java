@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.List;
 import w8.s;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.b2;
 import yz0.g5;
 import yz0.h5;
@@ -189,7 +189,7 @@ public final class j implements n5 {
                 }
             }
             rVar = rVar == null ? rVar4 : rVar;
-            dw.k kVar = jVar.g;
+            dw.kShadow kVar = jVar.g;
             if (kVar == null || (list = kVar.a) == null) {
                 rVar2 = null;
             } else {

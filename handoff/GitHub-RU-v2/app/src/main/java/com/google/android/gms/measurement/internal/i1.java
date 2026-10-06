@@ -116,7 +116,7 @@ public final class i1 extends i4 implements g {
     public final void F(String str) {
         A();
         z();
-        c21.u.d(str);
+        c21.uShadow.d(str);
         x.e eVar = this.z;
         if (eVar.get(str) == null) {
             o oVar = this.t.t;
@@ -258,7 +258,7 @@ public final class i1 extends i4 implements g {
     public final com.google.android.gms.internal.measurement.f2 L(String str) {
         A();
         z();
-        c21.u.d(str);
+        c21.uShadow.d(str);
         F(str);
         return (com.google.android.gms.internal.measurement.f2) this.z.get(str);
     }
@@ -326,8 +326,8 @@ public final class i1 extends i4 implements g {
         r6 = (com.google.android.gms.internal.measurement.v1) r5.next();
         r8.A();
         r8.z();
-        c21.u.d(r30);
-        c21.u.g(r6);
+        c21.uShadow.d(r30);
+        c21.uShadow.g(r6);
      */
     /* JADX WARN: Code restructure failed: missing block: B:120:0x03b0, code lost:
     
@@ -470,8 +470,8 @@ public final class i1 extends i4 implements g {
         r14 = (com.google.android.gms.internal.measurement.o1) r23.next();
         r8.A();
         r8.z();
-        c21.u.d(r30);
-        c21.u.g(r14);
+        c21.uShadow.d(r30);
+        c21.uShadow.g(r14);
      */
     /* JADX WARN: Code restructure failed: missing block: B:81:0x02cb, code lost:
     
@@ -544,7 +544,7 @@ public final class i1 extends i4 implements g {
     
         r8.A();
         r8.z();
-        c21.u.d(r30);
+        c21.uShadow.d(r30);
         r0 = r8.o0();
         r0.delete("property_filters", "app_id=? and audience_id=?", new java.lang.String[]{r30, java.lang.String.valueOf(r7)});
         r0.delete("event_filters", "app_id=? and audience_id=?", new java.lang.String[]{r30, java.lang.String.valueOf(r7)});
@@ -562,7 +562,7 @@ public final class i1 extends i4 implements g {
         boolean z;
         A();
         z();
-        c21.u.d(str);
+        c21.uShadow.d(str);
         com.google.android.gms.internal.measurement.e2 e2Var2 = (com.google.android.gms.internal.measurement.e2) I(str, bArr).i();
         G(str, e2Var2);
         H(str, (com.google.android.gms.internal.measurement.f2) e2Var2.e());
@@ -653,13 +653,13 @@ public final class i1 extends i4 implements g {
         o4 o4Var4 = o4Var;
         oVar2.A();
         oVar2.z();
-        c21.u.d(str);
+        c21.uShadow.d(str);
         SQLiteDatabase o0 = oVar2.o0();
         o0.beginTransaction();
         try {
             oVar2.A();
             oVar2.z();
-            c21.u.d(str);
+            c21.uShadow.d(str);
             SQLiteDatabase o02 = oVar2.o0();
             o02.delete("property_filters", "app_id=?", new String[]{str});
             o02.delete("event_filters", "app_id=?", new String[]{str});
@@ -671,8 +671,8 @@ public final class i1 extends i4 implements g {
                     com.google.android.gms.internal.measurement.m1 m1Var = (com.google.android.gms.internal.measurement.m1) arrayList.get(i5);
                     oVar2.A();
                     oVar2.z();
-                    c21.u.d(str);
-                    c21.u.g(m1Var);
+                    c21.uShadow.d(str);
+                    c21.uShadow.g(m1Var);
                     if (m1Var.p()) {
                         int q = m1Var.q();
                         Iterator it = m1Var.u().iterator();
@@ -710,7 +710,7 @@ public final class i1 extends i4 implements g {
                 com.google.android.gms.internal.measurement.m1 m1Var2 = (com.google.android.gms.internal.measurement.m1) obj;
                 arrayList2.add(m1Var2.p() ? Integer.valueOf(m1Var2.q()) : null);
             }
-            c21.u.d(str);
+            c21.uShadow.d(str);
             oVar2.A();
             oVar2.z();
             SQLiteDatabase o03 = oVar2.o0();
@@ -769,7 +769,7 @@ public final class i1 extends i4 implements g {
                 oVar = o4Var4.t;
                 o4.U(oVar);
                 o1 o1Var2 = (o1) ((androidx.compose.foundation.lazy.layout.s0) oVar).s;
-                c21.u.d(str);
+                c21.uShadow.d(str);
                 oVar.z();
                 oVar.A();
                 contentValues = new ContentValues();
@@ -785,7 +785,7 @@ public final class i1 extends i4 implements g {
             oVar = o4Var4.t;
             o4.U(oVar);
             o1 o1Var22 = (o1) ((androidx.compose.foundation.lazy.layout.s0) oVar).s;
-            c21.u.d(str);
+            c21.uShadow.d(str);
             oVar.z();
             oVar.A();
             contentValues = new ContentValues();

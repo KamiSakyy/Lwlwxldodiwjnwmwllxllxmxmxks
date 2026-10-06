@@ -3,7 +3,7 @@ package t10;
 import a0.s0;
 import com.github.rudroid.copilot.h1;
 import com.github.service.models.response.Avatar;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
@@ -51,6 +51,6 @@ public final class r {
         o.append(", avatar=");
         o.append(this.f);
         o.append(", viewerIsFollowing=");
-        return f4.s(o, this.g, ")");
+        return f4Shadow.s(o, this.g, ")");
     }
 }

@@ -10,7 +10,7 @@ import ux0.y0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i0 implements aa.a {
     public static final i0 a = new i0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         y0 y0Var;

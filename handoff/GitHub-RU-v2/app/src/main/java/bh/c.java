@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v2.f;
 import v2.g;
 import v2.h;
@@ -92,7 +92,7 @@ public final class c {
                 i5 = i3;
                 if (sVar.S(i5 & 1, (74899 & i5) != 74898)) {
                     r rVar4 = i6 != 0 ? o.a : rVar2;
-                    List list4 = i7 != 0 ? x61.r.r : list2;
+                    List list4 = i7 != 0 ? x61.rShadow.r : list2;
                     Map map4 = i4 != 0 ? x61.s.r : map2;
                     e0 a = c0.a(l.c, w1.c.D, sVar, 0);
                     int hashCode = Long.hashCode(sVar.T);
@@ -118,11 +118,11 @@ public final class c {
                     for (Object obj : a2) {
                         int i9 = i8 + 1;
                         if (i8 < 0) {
-                            d0.x();
+                            d0Shadow.x();
                             throw null;
                         }
                         k91.a aVar3 = (k91.a) obj;
-                        if (i8 == d0.m(aVar.a())) {
+                        if (i8 == d0Shadow.m(aVar.a())) {
                             aVar2 = aVar3;
                             z = true;
                         } else {

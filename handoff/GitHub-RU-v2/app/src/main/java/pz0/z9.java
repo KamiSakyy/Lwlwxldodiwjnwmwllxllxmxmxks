@@ -7,8 +7,8 @@ public abstract class z9 {
     public static final y9 Companion = new y9();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("DisconnectedEvent", n, sy.d0.n(wk.a));
+        new aa.q0("DisconnectedEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

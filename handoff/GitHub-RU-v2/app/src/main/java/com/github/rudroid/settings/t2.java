@@ -45,10 +45,10 @@ public final class t2 extends androidx.lifecycle.k1 {
         this.D = new androidx.lifecycle.p0();
         this.E = new androidx.lifecycle.p0();
         this.F = new androidx.lifecycle.p0();
-        y71.y1 c = y71.n1.c(new g4(255, false, false));
+        y71.y1 c = y71.n1Shadow.c(new g4(255, false, false));
         this.G = c;
         this.H = com.github.rudroid.utilities.w0.f(c, androidx.lifecycle.d1.k(this), new o0(2, this));
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new s2(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new s2(this, null), 3);
     }
 
     public final void O() {
@@ -61,7 +61,7 @@ public final class t2 extends androidx.lifecycle.k1 {
             q1Var.m((CancellationException) null);
         }
         if (this.z.d().f(com.github.rudroid.common.a.L)) {
-            this.C = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new v2(this, null), 3);
+            this.C = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v2(this, null), 3);
         }
     }
 }

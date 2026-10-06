@@ -10,7 +10,7 @@ import androidx.lifecycle.u1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableNotificationFilterFragment extends Hilt_SelectableNotificationFilterFragment<k> {
     public static final a Companion = new a();
-    public final l1 H0 = new l1(k71.x.a(com.github.rudroid.searchandfilter.h0.class), new c(), new e(), new d());
+    public final l1 H0 = new l1(k71.xShadow.a(com.github.rudroid.searchandfilter.h0.class), new c(), new e(), new d());
     public l1 I0;
     public l J0;
 
@@ -140,7 +140,7 @@ public final class SelectableNotificationFilterFragment extends Hilt_SelectableN
 
     public SelectableNotificationFilterFragment() {
         w61.h s = sy.w.s(w61.i.s, new f(new o(this, 0)));
-        this.I0 = new l1(k71.x.a(a0.class), new g(s), new i(s), new h(s));
+        this.I0 = new l1(k71.xShadow.a(a0.class), new g(s), new i(s), new h(s));
         this.J0 = new l(this);
     }
 

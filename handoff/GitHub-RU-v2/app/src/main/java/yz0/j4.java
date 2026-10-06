@@ -44,7 +44,7 @@ public final class j4 {
     public final String toString() {
         String a = qb.b.a(this.d);
         StringBuilder o = a0.s0.o("SimpleCommit(id=", this.a, ", messageHeadline=", this.b, ", committedAt=");
-        jo.f4.A(", abbreviatedOid=", a, ", checksState=", o, this.c);
+        jo.f4Shadow.A(", abbreviatedOid=", a, ", checksState=", o, this.c);
         o.append(this.e);
         o.append(", committer=");
         o.append(this.f);

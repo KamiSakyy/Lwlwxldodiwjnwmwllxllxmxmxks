@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import k71.k;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class a implements Parcelable {
@@ -182,6 +182,6 @@ public final class a implements Parcelable {
         uri = (i & 64) != 0 ? null : uri;
         str7 = (i & 128) != 0 ? null : str7;
         int i10 = i & 256;
-        List list3 = r.r;
+        List list3 = rShadow.r;
     }
 }

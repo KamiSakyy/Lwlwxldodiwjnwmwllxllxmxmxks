@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.CancellationException;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.w1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -28,7 +28,7 @@ public class p<T> implements r<x<T>>, w<T> {
         String str = jVar.z;
         q1 q1Var = jVar.y;
         if ((q1Var == null || !q1Var.f()) && str != null) {
-            jVar.y = v71.b0.z(aVar, (a71.h) null, (v71.a0) null, new c(jVar, str, null), 3);
+            jVar.y = v71.b0.z(aVar, (a71.h) null, (v71.a0Shadow) null, new c(jVar, str, null), 3);
         }
     }
 
@@ -38,10 +38,10 @@ public class p<T> implements r<x<T>>, w<T> {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        jVar.y = v71.b0.z(aVar, (a71.h) null, (v71.a0) null, new f(jVar, null), 3);
+        jVar.y = v71.b0.z(aVar, (a71.h) null, (v71.a0Shadow) null, new f(jVar, null), 3);
     }
 
     public final w1 c(v6.a aVar) {
-        return n1.G(new c00.g(new i1(this.r.w), this.s.b, new q(this, null), 27), aVar, y71.q1.b, g1.a.c(g1.Companion));
+        return n1Shadow.G(new c00.g(new i1(this.r.w), this.s.b, new q(this, null), 27), aVar, y71.q1.b, g1.a.c(g1.Companion));
     }
 }

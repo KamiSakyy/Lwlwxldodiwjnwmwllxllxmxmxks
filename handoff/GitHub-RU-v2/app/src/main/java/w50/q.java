@@ -7,12 +7,12 @@ import hc0.lc;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.a {
     public static final q a = new q();
-    public static final List b = sy.d0.o("__typename", "id", "title", "titleHTML", "number", "createdAt", "isReadByViewer", "comments", "issueState", "repository", "viewerSubscription", "url", "assignees", "closedByPullRequestsReferences", "stateReason");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "title", "titleHTML", "number", "createdAt", "isReadByViewer", "comments", "issueState", "repository", "viewerSubscription", "url", "assignees", "closedByPullRequestsReferences", "stateReason");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003e, code lost:
     

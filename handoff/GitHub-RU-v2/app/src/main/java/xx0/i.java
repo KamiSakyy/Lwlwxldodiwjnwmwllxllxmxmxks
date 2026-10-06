@@ -11,7 +11,7 @@ import pz0.pd;
 import pz0.td;
 import pz0.vd;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -23,7 +23,7 @@ public abstract class i {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         s mVar2 = new m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);
@@ -40,7 +40,7 @@ public abstract class i {
         s mVar9 = new m("useElasticsearch", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         h50.Companion.getClass();
         s mVar10 = new m("url", l0.b(h50.a), (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2");
+        List n = d0Shadow.n("ProjectV2");
         List list = c.a;
         a = l.r(new s[]{mVar, mVar2, mVar3, mVar4, mVar5, mVar6, mVar7, mVar8, mVar9, mVar10, no.a.c(list, "selections", "ProjectV2", n, list)});
     }

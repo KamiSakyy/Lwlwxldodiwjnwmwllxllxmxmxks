@@ -6,7 +6,7 @@ import go0.z;
 import sy.y;
 import tc0.r;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j extends c71.j implements j71.e {
@@ -106,7 +106,7 @@ public final class j extends c71.j implements j71.e {
                     y.j(obj);
                     this.x = jVar;
                     this.w = 1;
-                    v = n1.v(n1.y(new go0.i(com.github.service.wrapper.a.o(zVar.s, new tc0.e(str), null, false, null, null, 58), str, i2), zVar.u), this);
+                    v = n1Shadow.v(n1Shadow.y(new go0.i(com.github.service.wrapper.a.o(zVar.s, new tc0.e(str), null, false, null, null, 58), str, i2), zVar.u), this);
                     break;
                 } else {
                     if (i3 != 1) {
@@ -138,7 +138,7 @@ public final class j extends c71.j implements j71.e {
                     sn.a[] aVarArr = sn.a.r;
                     this.x = jVar2;
                     this.w = 1;
-                    v2 = n1.v(n1.y(new go0.i(com.github.service.wrapper.a.o(zVar.s, new tc0.j(str, vc.s), null, false, null, null, 58), str, 4), zVar.u), this);
+                    v2 = n1Shadow.v(n1Shadow.y(new go0.i(com.github.service.wrapper.a.o(zVar.s, new tc0.j(str, vc.s), null, false, null, null, 58), str, 4), zVar.u), this);
                     break;
                 } else {
                     if (i4 != 1) {
@@ -170,7 +170,7 @@ public final class j extends c71.j implements j71.e {
                     sn.b[] bVarArr = sn.b.r;
                     this.x = jVar3;
                     this.w = 1;
-                    v3 = n1.v(n1.y(new go0.n(new y71.y(com.github.service.wrapper.a.o(zVar.s, new r(str, dm.s), null, false, null, null, 58), new go0.o(3, null, 5)), str, 1), zVar.u), this);
+                    v3 = n1Shadow.v(n1Shadow.y(new go0.n(new y71.y(com.github.service.wrapper.a.o(zVar.s, new r(str, dm.s), null, false, null, null, 58), new go0.o(3, null, 5)), str, 1), zVar.u), this);
                     break;
                 } else {
                     if (i5 != 1) {

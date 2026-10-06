@@ -5,12 +5,12 @@ import j20.n;
 import j20.q;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements aa.a {
     public static final j a = new j();
-    public static final List b = d0.n("checkSuite");
+    public static final List b = d0Shadow.n("checkSuite");
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

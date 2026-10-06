@@ -7,7 +7,7 @@ import u10.oy;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rn implements aaShadow.a {
     public static final rn a = new rn();
-    public static final List b = sy.d0.n("replaceAssigneesForAssignable");
+    public static final List b = sy.d0Shadow.n("replaceAssigneesForAssignable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -95,7 +95,7 @@ public final class b0 {
                             androidx.compose.runtime.t.E(sVar2, v2.g.h);
                             androidx.compose.runtime.t.I(sVar2, v2.g.d, c);
                             int i9 = i6 >> 3;
-                            y1.a(f0.o.g(p2.o(androidx.compose.foundation.layout.b.B(rVar5, 0.0f, 0.0f, ih.a.k, 0.0f, 11), f), 0.0f, ih.d.a(sVar2).E0, r0.e.a(f)), str2, null, sy.d0.n(new u9.a()), false, null, null, null, 2131231396, true, sVar2, i9 & 112, 6, 500);
+                            y1.a(f0.o.g(p2.o(androidx.compose.foundation.layout.b.B(rVar5, 0.0f, 0.0f, ih.a.k, 0.0f, 11), f), 0.0f, ih.d.a(sVar2).E0, r0.e.a(f)), str2, null, sy.d0Shadow.n(new u9.a()), false, null, null, null, 2131231396, true, sVar2, i9 & 112, 6, 500);
                             q0 q0Var4 = a;
                             ub.b(str, (w1.r) null, 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, q0Var4, sVar, i9 & 14, (i6 << 9) & 29360128, 131070);
                             sVar2 = sVar;
@@ -128,7 +128,7 @@ public final class b0 {
                     androidx.compose.runtime.t.E(sVar2, v2.g.h);
                     androidx.compose.runtime.t.I(sVar2, v2.g.d, c2);
                     int i92 = i6 >> 3;
-                    y1.a(f0.o.g(p2.o(androidx.compose.foundation.layout.b.B(rVar5, 0.0f, 0.0f, ih.a.k, 0.0f, 11), f), 0.0f, ih.d.a(sVar2).E0, r0.e.a(f)), str2, null, sy.d0.n(new u9.a()), false, null, null, null, 2131231396, true, sVar2, i92 & 112, 6, 500);
+                    y1.a(f0.o.g(p2.o(androidx.compose.foundation.layout.b.B(rVar5, 0.0f, 0.0f, ih.a.k, 0.0f, 11), f), 0.0f, ih.d.a(sVar2).E0, r0.e.a(f)), str2, null, sy.d0Shadow.n(new u9.a()), false, null, null, null, 2131231396, true, sVar2, i92 & 112, 6, 500);
                     q0 q0Var42 = a;
                     ub.b(str, (w1.r) null, 0L, 0L, (k3.s) null, 0L, (r3.k) null, 0L, 0, false, 0, 0, (j71.c) null, q0Var42, sVar, i92 & 14, (i6 << 9) & 29360128, 131070);
                     sVar2 = sVar;

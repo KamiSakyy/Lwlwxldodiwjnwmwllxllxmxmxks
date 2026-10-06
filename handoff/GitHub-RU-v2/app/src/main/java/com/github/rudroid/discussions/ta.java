@@ -44,7 +44,7 @@ public final class ta extends androidx.lifecycle.k1 implements com.github.rudroi
         this.f11831u = g0Var;
         this.f11832v = zVar;
         this.f11833w = i0Var;
-        this.f11834x = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        this.f11834x = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         x01.i.Companion.getClass();
         this.f11835y = x01.i.d;
     }
@@ -53,7 +53,7 @@ public final class ta extends androidx.lifecycle.k1 implements com.github.rudroi
         v71.q1 q1Var = this.B;
         if (q1Var == null || !q1Var.f()) {
             String str = this.f11836z;
-            this.B = str != null ? v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new ma(this, str, null), 3) : null;
+            this.B = str != null ? v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new ma(this, str, null), 3) : null;
         }
     }
 
@@ -63,7 +63,7 @@ public final class ta extends androidx.lifecycle.k1 implements com.github.rudroi
             q1Var.m((CancellationException) null);
         }
         String str = this.f11836z;
-        this.A = str != null ? v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new sa(this, str, null), 3) : null;
+        this.A = str != null ? v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new sa(this, str, null), 3) : null;
     }
 
     public final void Q(String str) {

@@ -30,7 +30,7 @@ public final class p4 implements aaShadow.n0 {
         List list = fc0.v.a;
         List list2 = fc0.v.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 

@@ -4,7 +4,7 @@ import androidx.window.sidecar.SidecarDeviceState;
 import androidx.window.sidecar.SidecarWindowLayoutInfo;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class f {
@@ -34,7 +34,7 @@ public abstract class f {
 
     public static List c(SidecarWindowLayoutInfo sidecarWindowLayoutInfo) {
         List list;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         k71.k.g(sidecarWindowLayoutInfo, "info");
         try {
             try {

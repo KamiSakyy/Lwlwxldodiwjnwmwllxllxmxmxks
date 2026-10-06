@@ -5,12 +5,12 @@ import ea.e;
 import ea.f;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements aa.a {
     public static final b a = new b();
-    public static final List b = d0.o("name", "enabled");
+    public static final List b = d0Shadow.o("name", "enabled");
 
     public final Object a(e eVar, w wVar) {
         k.g(eVar, "reader");

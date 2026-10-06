@@ -7,8 +7,8 @@ public abstract class wb {
     public static final vb Companion = new vb();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("DeployedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("DeployedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

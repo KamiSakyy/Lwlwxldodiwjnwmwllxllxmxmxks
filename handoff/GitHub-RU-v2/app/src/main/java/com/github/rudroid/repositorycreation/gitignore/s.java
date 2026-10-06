@@ -6,7 +6,7 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.utilities.ui.g1;
 import rm0.r3Shadow;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.q1;
 import y71.y1;
 
@@ -41,16 +41,16 @@ public final class s extends k1 {
         k71.k.g(a1Var, "savedStateHandle");
         this.f20375s = dVar;
         this.f20376t = cVar;
-        y1 c10 = n1.c(a1Var.a("EXTRA_SELECTED_TEMPLATE"));
+        y1 c10 = n1Shadow.c(a1Var.a("EXTRA_SELECTED_TEMPLATE"));
         this.f20377u = c10;
-        y1 c11 = n1.c(g1.a.c(g1.Companion));
+        y1 c11 = n1Shadow.c(g1.a.c(g1.Companion));
         this.f20378v = c11;
-        y1 c12 = n1.c("");
+        y1 c12 = n1Shadow.c("");
         this.f20379w = c12;
-        r3Shadow l = n1.l(c11, c12, c10, new x(4, null));
+        r3Shadow l = n1Shadow.l(c11, c12, c10, new x(4, null));
         v6.a k10 = d1.k(this);
         r.Companion.getClass();
-        this.f20380x = n1.G(l, k10, q1.b, r.f20371d);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new w(this, null), 3);
+        this.f20380x = n1Shadow.G(l, k10, q1.b, r.f20371d);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new w(this, null), 3);
     }
 }

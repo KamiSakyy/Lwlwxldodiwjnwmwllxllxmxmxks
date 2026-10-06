@@ -75,7 +75,7 @@ public abstract class k2 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, i2Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(i2Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(i2Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, i2Var.d);
         fVar.z0("pullRequest");
         aa.c.c(l2.a, true).b(fVar, wVar, i2Var.e);

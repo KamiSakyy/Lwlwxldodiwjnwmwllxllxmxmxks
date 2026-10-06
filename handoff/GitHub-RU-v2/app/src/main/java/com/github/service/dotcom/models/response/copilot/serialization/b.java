@@ -1,14 +1,14 @@
 package com.github.service.dotcom.models.response.copilot.serialization;
 
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import k81.n0;
 import kotlinx.serialization.KSerializer;
 import l81.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends n0 {
-    public static final b d = new b(x.a(a.class));
+    public static final b d = new b(xShadow.a(a.class));
 
     public final KSerializer c(kotlinx.serialization.json.b bVar) {
         k.g(bVar, "element");

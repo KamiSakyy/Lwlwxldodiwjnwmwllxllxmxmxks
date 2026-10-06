@@ -3,7 +3,7 @@ package wf;
 import androidx.lifecycle.o1;
 import androidx.lifecycle.t1;
 import com.github.rudroid.searchandfilter.filter.sort.RepositoryFilterSortBottomSheetDialog;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -23,7 +23,7 @@ public final /* synthetic */ class p implements j71.a {
             case 0:
                 int i2 = 1;
                 if (((Boolean) repositoryFilterSortBottomSheetDialog.W0.a(repositoryFilterSortBottomSheetDialog, RepositoryFilterSortBottomSheetDialog.Y0[1])).booleanValue()) {
-                    k71.e a = x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     RepositoryFilterSortBottomSheetDialog.b bVar = new RepositoryFilterSortBottomSheetDialog.b(repositoryFilterSortBottomSheetDialog);
                     RepositoryFilterSortBottomSheetDialog.c cVar = new RepositoryFilterSortBottomSheetDialog.c(repositoryFilterSortBottomSheetDialog);
                     RepositoryFilterSortBottomSheetDialog.d dVar = new RepositoryFilterSortBottomSheetDialog.d(repositoryFilterSortBottomSheetDialog);
@@ -41,7 +41,7 @@ public final /* synthetic */ class p implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = w.s(w61.i.s, new RepositoryFilterSortBottomSheetDialog.e(new p(repositoryFilterSortBottomSheetDialog, i2)));
-                k71.e a2 = x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 RepositoryFilterSortBottomSheetDialog.f fVar = new RepositoryFilterSortBottomSheetDialog.f(s);
                 RepositoryFilterSortBottomSheetDialog.g gVar = new RepositoryFilterSortBottomSheetDialog.g(s);
                 RepositoryFilterSortBottomSheetDialog.h hVar = new RepositoryFilterSortBottomSheetDialog.h(repositoryFilterSortBottomSheetDialog, s);

@@ -115,7 +115,7 @@ public final class y0 extends c71.j implements j71.e {
                 if (i0Var != null) {
                     cVar.k(i0Var);
                 }
-                x71.h hVar = this.A.L;
+                x71.hShadow hVar = this.A.L;
                 if (hVar == null) {
                     wVar5 = wVar4;
                     wVar5.r = l0Var2;
@@ -148,7 +148,7 @@ public final class y0 extends c71.j implements j71.e {
                         zVar = (v71.z) this.f25247z;
                         if (!v71.b0.w(zVar)) {
                             wVar = new k71.w();
-                            x71.h hVar2 = z0Var.L;
+                            x71.hShadow hVar2 = z0Var.L;
                             if (hVar2 != null) {
                                 this.f25247z = zVar;
                                 this.f25244w = wVar;

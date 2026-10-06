@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.os.Trace;
 import android.util.Base64;
 import b1.m;
-import c21.u;
+import c21.uShadow;
 import com.google.firebase.FirebaseCommonRegistrar;
 import com.google.firebase.components.ComponentDiscoveryService;
 import com.google.firebase.concurrent.ExecutorsRegistrar;
@@ -25,7 +25,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import p41.k;
-import sy.p;
+import sy.pShadow;
 import z70.y1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -51,7 +51,7 @@ public final class g {
         ArrayList arrayList;
         int i = 0;
         this.a = context;
-        u.d(str);
+        uShadow.d(str);
         this.b = str;
         this.c = iVar;
         a aVar = FirebaseInitProvider.r;
@@ -98,7 +98,7 @@ public final class g {
         arrayList4.add(p41.a.c(this, g.class, new Class[0]));
         arrayList4.add(p41.a.c(iVar, i.class, new Class[0]));
         y1 y1Var = new y1(6);
-        if (p.p(context) && FirebaseInitProvider.s.get()) {
+        if (pShadow.p(context) && FirebaseInitProvider.s.get()) {
             arrayList4.add(p41.a.c(aVar, a.class, new Class[0]));
         }
         p41.f fVar = new p41.f(arrayList3, arrayList4, y1Var);
@@ -160,8 +160,8 @@ public final class g {
         }
         synchronized (k) {
             x.e eVar2 = l;
-            u.i("FirebaseApp name [DEFAULT] already exists!", !eVar2.containsKey("[DEFAULT]"));
-            u.h(context, "Application context cannot be null.");
+            uShadow.i("FirebaseApp name [DEFAULT] already exists!", !eVar2.containsKey("[DEFAULT]"));
+            uShadow.h(context, "Application context cannot be null.");
             gVar = new g(context, "[DEFAULT]", iVar);
             eVar2.put("[DEFAULT]", gVar);
         }
@@ -170,7 +170,7 @@ public final class g {
     }
 
     public final void a() {
-        u.i("FirebaseApp was deleted", !this.f.get());
+        uShadow.i("FirebaseApp was deleted", !this.f.get());
     }
 
     public final Object b(Class cls) {
@@ -192,7 +192,7 @@ public final class g {
 
     public final void e() {
         HashMap hashMap;
-        if (!p.p(this.a)) {
+        if (!pShadow.p(this.a)) {
             a();
             Context context = this.a;
             AtomicReference atomicReference = f.b;

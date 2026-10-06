@@ -11,7 +11,7 @@ public final class g0 extends k1 implements androidx.lifecycle.i {
     public dn.z t;
     public com.github.rudroid.twofactor.missed.d u;
     public com.github.rudroid.twofactor.missed.g v;
-    public x71.h w;
+    public x71.hShadow w;
     public y71.d x;
     public q1 y;
     public q1 z;
@@ -25,7 +25,7 @@ public final class g0 extends k1 implements androidx.lifecycle.i {
         this.t = zVar;
         this.u = dVar;
         this.v = gVar;
-        x71.h a = t.e.a(1, 4, x71.a.s);
+        x71.hShadow a = t.e.a(1, 4, x71.a.s);
         this.w = a;
         this.x = new y71.d(a);
     }
@@ -35,14 +35,14 @@ public final class g0 extends k1 implements androidx.lifecycle.i {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.y = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new c0(this, null), 3);
+        this.y = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c0(this, null), 3);
     }
 
     public final void f(androidx.lifecycle.c0 c0Var) {
         k71.k.g(c0Var, "owner");
         q1 q1Var = this.z;
         if (q1Var == null || !q1Var.f()) {
-            this.z = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new f0(this, null), 3);
+            this.z = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f0(this, null), 3);
         }
         P();
     }

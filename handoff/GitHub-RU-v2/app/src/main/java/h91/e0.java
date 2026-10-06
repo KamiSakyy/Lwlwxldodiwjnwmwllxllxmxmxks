@@ -26,7 +26,7 @@ public final class e0 implements j {
     }
 
     @Override // h91.j
-    public final boolean A0(long j, k kVar) {
+    public final boolean A0(long j, kShadow kVar) {
         long a;
         long j2;
         long j3;
@@ -257,7 +257,7 @@ public final class e0 implements j {
     }
 
     @Override // h91.j
-    public final long q(k kVar) {
+    public final long q(kShadow kVar) {
         k71.k.g(kVar, "targetBytes");
         if (this.t) {
             throw new IllegalStateException("closed");

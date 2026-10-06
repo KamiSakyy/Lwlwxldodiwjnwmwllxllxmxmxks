@@ -48,7 +48,7 @@ public final class z0 extends g1 {
             case 0:
                 try {
                     Context context = (Context) this.x;
-                    c21.u.g(context);
+                    c21.uShadow.g(context);
                     String a = com.google.android.gms.measurement.internal.c2.a(context);
                     Resources resources = context.getResources();
                     if (TextUtils.isEmpty(a)) {
@@ -70,7 +70,7 @@ public final class z0 extends g1 {
                             int a2 = k21.e.a(context, ModuleDescriptor.MODULE_ID);
                             u0 u0Var = new u0(133005L, Math.max(a2, r6), Boolean.TRUE.equals(valueOf) || k21.e.d(context, ModuleDescriptor.MODULE_ID, false) < a2, (Bundle) this.y, com.google.android.gms.measurement.internal.c2.a(context));
                             l0 l0Var2 = k1Var.f;
-                            c21.u.g(l0Var2);
+                            c21.uShadow.g(l0Var2);
                             l0Var2.initialize(new j21.b(context), u0Var, this.r);
                             break;
                         } else {
@@ -92,7 +92,7 @@ public final class z0 extends g1 {
                 }
             case 1:
                 l0 l0Var3 = ((k1) this.w).f;
-                c21.u.g(l0Var3);
+                c21.uShadow.g(l0Var3);
                 l0Var3.getMaxUserProperties((String) this.x, (i0) this.y);
                 break;
             case 2:
@@ -109,12 +109,12 @@ public final class z0 extends g1 {
                     bundle = null;
                 }
                 l0 l0Var4 = ((j1) this.w).r.f;
-                c21.u.g(l0Var4);
+                c21.uShadow.g(l0Var4);
                 l0Var4.onActivityCreatedByScionActivityInfo(w0.j((Activity) this.x), bundle, this.s);
                 break;
             default:
                 l0 l0Var5 = ((j1) this.w).r.f;
-                c21.u.g(l0Var5);
+                c21.uShadow.g(l0Var5);
                 l0Var5.onActivitySaveInstanceStateByScionActivityInfo(w0.j((Activity) this.x), (i0) this.y, this.s);
                 break;
         }

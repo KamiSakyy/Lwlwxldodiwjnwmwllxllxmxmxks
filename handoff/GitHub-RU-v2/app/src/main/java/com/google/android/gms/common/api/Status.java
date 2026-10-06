@@ -5,7 +5,7 @@ import android.app.PendingIntent;
 import android.os.Parcel;
 import android.os.Parcelable;
 import b1.m;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.common.internal.ReflectedParcelable;
 import d21.a;
 import java.util.Arrays;
@@ -32,7 +32,7 @@ public final class Status extends a implements ReflectedParcelable {
             return false;
         }
         Status status = (Status) obj;
-        return this.r == status.r && u.j(this.s, status.s) && u.j(this.t, status.t) && u.j(this.u, status.u);
+        return this.r == status.r && uShadow.j(this.s, status.s) && uShadow.j(this.t, status.t) && uShadow.j(this.u, status.u);
     }
 
     public final int hashCode() {

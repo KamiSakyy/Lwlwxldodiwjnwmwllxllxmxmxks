@@ -107,7 +107,7 @@ public final class d8 implements y71.j {
                     if (v8Var != null && (w8Var = v8Var.a) != null && (list = w8Var.a.a) != null) {
                         ArrayList arrayList2 = new ArrayList();
                         for (jo.y8 y8Var : list) {
-                            q01.r v = (y8Var == null || (z8Var = y8Var.a) == null) ? null : sy.p.v(z8Var.c);
+                            q01.rShadow v = (y8Var == null || (z8Var = y8Var.a) == null) ? null : sy.pShadow.v(z8Var.c);
                             if (v != null) {
                                 arrayList2.add(v);
                             }
@@ -163,7 +163,7 @@ public final class d8 implements y71.j {
                     if (o60Var != null && (list = o60Var.a.a) != null) {
                         ArrayList arrayList2 = new ArrayList();
                         for (q60 q60Var : list) {
-                            q01.r v = (q60Var == null || (r60Var = q60Var.a) == null) ? null : sy.p.v(r60Var.c);
+                            q01.rShadow v = (q60Var == null || (r60Var = q60Var.a) == null) ? null : sy.pShadow.v(r60Var.c);
                             if (v != null) {
                                 arrayList2.add(v);
                             }
@@ -221,7 +221,7 @@ public final class d8 implements y71.j {
                         arrayList = new ArrayList(x61.n.F(list, 10));
                         Iterator it = list.iterator();
                         while (it.hasNext()) {
-                            arrayList.add(sy.p.v(((l60) it.next()).c));
+                            arrayList.add(sy.pShadow.v(((l60) it.next()).c));
                         }
                     }
                     if (arrayList != null) {
@@ -268,7 +268,7 @@ public final class d8 implements y71.j {
                 if (i != 0) {
                     sy.y.j(obj2);
                     kg0 kg0Var = ((ig0) obj).a;
-                    q01.r v = (kg0Var == null || (jg0Var = kg0Var.a) == null) ? null : sy.p.v(jg0Var.c);
+                    q01.rShadow v = (kg0Var == null || (jg0Var = kg0Var.a) == null) ? null : sy.pShadow.v(jg0Var.c);
                     if (v != null) {
                         m9Var.v = 1;
                         if (this.s.c(v, m9Var) == aVar) {
@@ -556,7 +556,7 @@ public final class d8 implements y71.j {
         int i17;
         b9 b9Var;
         int i18;
-        e9 e9Var;
+        e9Shadow e9Var;
         int i19;
         yz0.a7 k;
         jo.f1Shadow f1Var;
@@ -607,9 +607,9 @@ public final class d8 implements y71.j {
                             hz hzVar = yyVar.a;
                             String str6 = null;
                             cz czVar3 = hzVar != null ? hzVar.b : null;
-                            x61.r rVar = x61.r.r;
+                            x61.rShadow rVar = x61.rShadow.r;
                             if (czVar3 != null) {
-                                x61.r rVar2 = hzVar.b.a.b;
+                                x61.rShadow rVar2 = hzVar.b.a.b;
                                 if (rVar2 != null) {
                                     rVar = rVar2;
                                 }
@@ -624,7 +624,7 @@ public final class d8 implements y71.j {
                                     rVar.add(sy.n.G(new w61.k(azVar.c, azVar.d)));
                                 }
                             } else if ((hzVar != null ? hzVar.c : null) != null) {
-                                x61.r rVar3 = hzVar.c.a.b;
+                                x61.rShadow rVar3 = hzVar.c.a.b;
                                 if (rVar3 != null) {
                                     rVar = rVar3;
                                 }
@@ -888,11 +888,11 @@ public final class d8 implements y71.j {
                         i8 = l8Var.v;
                         if (i8 != 0) {
                             sy.y.j(obj11);
-                            m00.xShadow xVar = (m00.x) obj;
+                            m00.xShadow xVar = (m00.xShadow) obj;
                             k71.k.g(xVar, "<this>");
                             m00.z zVar = xVar.a;
                             if (zVar == null || (list = zVar.b) == null) {
-                                arrayList = x61.r.r;
+                                arrayList = x61.rShadow.r;
                             } else {
                                 arrayList = new ArrayList(x61.n.F(list, 10));
                                 for (m00.y yVar : list) {
@@ -941,9 +941,9 @@ public final class d8 implements y71.j {
                         if (i9 != 0) {
                             sy.y.j(obj12);
                             w60 w60Var = (w60) obj;
-                            x61.r rVar4 = w60Var.a.a.b;
+                            x61.rShadow rVar4 = w60Var.a.a.b;
                             if (rVar4 == null) {
-                                rVar4 = x61.r.r;
+                                rVar4 = x61.rShadow.r;
                             }
                             ArrayList S3 = x61.m.S(rVar4);
                             ArrayList arrayList5 = new ArrayList(x61.n.F(S3, 10));
@@ -992,7 +992,7 @@ public final class d8 implements y71.j {
                             String str11 = null;
                             List list3 = (u70Var == null || (s70Var3 = u70Var.b) == null) ? null : s70Var3.a.b;
                             if (list3 == null) {
-                                list3 = x61.r.r;
+                                list3 = x61.rShadow.r;
                             }
                             ArrayList S4 = x61.m.S(list3);
                             ArrayList arrayList6 = new ArrayList(x61.n.F(S4, 10));
@@ -1179,9 +1179,9 @@ public final class d8 implements y71.j {
                             s50 s50Var = (s50) obj;
                             w50 w50Var = s50Var.a;
                             int i46 = w50Var.a;
-                            x61.r rVar5 = w50Var.c;
+                            x61.rShadow rVar5 = w50Var.c;
                             if (rVar5 == null) {
-                                rVar5 = x61.r.r;
+                                rVar5 = x61.rShadow.r;
                             }
                             ArrayList S5 = x61.m.S(rVar5);
                             ArrayList arrayList7 = new ArrayList();
@@ -1283,8 +1283,8 @@ public final class d8 implements y71.j {
                 }
                 return w61.a0.a;
             case 17:
-                if (cVar instanceof e9) {
-                    e9Var = (e9) cVar;
+                if (cVar instanceof e9Shadow) {
+                    e9Var = (e9Shadow) cVar;
                     int i51 = e9Var.v;
                     if ((i51 & Integer.MIN_VALUE) != 0) {
                         e9Var.v = i51 - Integer.MIN_VALUE;
@@ -1318,7 +1318,7 @@ public final class d8 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                e9Var = new e9(this, cVar);
+                e9Var = new e9Shadow(this, cVar);
                 Object obj252 = e9Var.u;
                 b71.a aVar202 = b71.a.r;
                 i19 = e9Var.v;
@@ -1348,7 +1348,7 @@ public final class d8 implements y71.j {
                             String str16 = bsVar.b;
                             List<vr> list4 = gsVar != null ? gsVar.a : null;
                             if (list4 == null) {
-                                list4 = x61.r.r;
+                                list4 = x61.rShadow.r;
                             }
                             ArrayList arrayList8 = new ArrayList();
                             for (vr vrVar : list4) {
@@ -1636,7 +1636,7 @@ public final class d8 implements y71.j {
                             String str26 = null;
                             List list6 = (j20Var == null || (g20Var3 = j20Var.b) == null) ? null : g20Var3.b;
                             if (list6 == null) {
-                                list6 = x61.r.r;
+                                list6 = x61.rShadow.r;
                             }
                             ArrayList S8 = x61.m.S(list6);
                             ArrayList arrayList10 = new ArrayList(x61.n.F(S8, 10));

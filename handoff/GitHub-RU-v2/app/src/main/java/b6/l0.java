@@ -12,7 +12,7 @@ public final class l0 {
 
     static {
         r71.e qVar = new k71.q(l0.class, "appManagerDataStore", "getAppManagerDataStore(Landroid/content/Context;)Landroidx/datastore/core/DataStore;");
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         f3609a = new r71.e[]{qVar};
     }
 

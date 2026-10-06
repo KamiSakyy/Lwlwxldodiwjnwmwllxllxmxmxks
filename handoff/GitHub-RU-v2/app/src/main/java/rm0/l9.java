@@ -17,25 +17,25 @@ public final class l9 implements z01.i1, yb0, mi0, y90, yf0 {
                 k71.k.g(jVar, "client");
                 k71.k.g(bVar, "cachedClient");
                 k71.k.g(vVar, "ioDispatcher");
-                this.s = new sw0.c(jVar, bVar, vVar, new sw0.e(27), new sw0.b(6), s01.o.r, new sw0.b(7), new sw0.e(28), new sw0.e(29), new t00.ua(0), new t00.ua(1), null, null, 129024);
+                this.s = new sw0.c(jVar, bVar, vVar, new sw0.e(27), new sw0.b(6), s01.oShadow.r, new sw0.b(7), new sw0.e(28), new sw0.e(29), new t00.ua(0), new t00.ua(1), null, null, 129024);
                 break;
             case 2:
                 k71.k.g(jVar, "client");
                 k71.k.g(bVar, "cachedClient");
                 k71.k.g(vVar, "ioDispatcher");
-                this.s = new sw0.c(jVar, bVar, vVar, new v00.n(23), new sw0.b(26), s01.o.r, new sw0.b(27), new v00.n(24), new v00.n(25), new v00.n(26), new v00.n(27), null, null, 129024);
+                this.s = new sw0.c(jVar, bVar, vVar, new v00.n(23), new sw0.b(26), s01.oShadow.r, new sw0.b(27), new v00.n(24), new v00.n(25), new v00.n(26), new v00.n(27), null, null, 129024);
                 break;
             case 3:
                 k71.k.g(jVar, "client");
                 k71.k.g(bVar, "cachedClient");
                 k71.k.g(vVar, "ioDispatcher");
-                this.s = new sw0.c(jVar, bVar, vVar, new wy0.p4(9), new wy0.n6(1), s01.o.r, new wy0.n6(2), new wy0.p4(10), new wy0.p4(11), new wy0.p4(12), new wy0.p4(13), null, null, 129024);
+                this.s = new sw0.c(jVar, bVar, vVar, new wy0.p4(9), new wy0.n6(1), s01.oShadow.r, new wy0.n6(2), new wy0.p4(10), new wy0.p4(11), new wy0.p4(12), new wy0.p4(13), null, null, 129024);
                 break;
             default:
                 k71.k.g(jVar, "client");
                 k71.k.g(bVar, "cachedClient");
                 k71.k.g(vVar, "ioDispatcher");
-                this.s = new jy.d(jVar, bVar, vVar, new s(12), new py0.o(29), s01.o.r, new ya(0), new s(13), new s(14), new s(15), new s(16), null, null, 129024);
+                this.s = new jy.d(jVar, bVar, vVar, new s(12), new py0.o(29), s01.oShadow.r, new ya(0), new s(13), new s(14), new s(15), new s(16), null, null, 129024);
                 break;
         }
     }

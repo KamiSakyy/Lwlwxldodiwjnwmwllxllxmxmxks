@@ -29,7 +29,7 @@ public final class lz {
         x = lzVarArr;
         y = v8.l0.t(lzVarArr);
         Companion = new kz();
-        sy.d0.o("APPROVE", "COMMENT", "DISMISS", "REQUEST_CHANGES");
+        sy.d0Shadow.o("APPROVE", "COMMENT", "DISMISS", "REQUEST_CHANGES");
     }
 
     public lz(String str, int i, String str2) {

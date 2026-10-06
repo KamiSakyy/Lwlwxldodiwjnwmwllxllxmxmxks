@@ -15,7 +15,7 @@ public final class a0 implements Closeable {
     public c G;
     public boolean H;
     public androidx.lifecycle.b r;
-    public v s;
+    public vShadow s;
     public String t;
     public int u;
     public m v;
@@ -24,7 +24,7 @@ public final class a0 implements Closeable {
     public j0 y;
     public a0 z;
 
-    public a0(androidx.lifecycle.b bVar, v vVar, String str, int i, m mVar, n nVar, c0 c0Var, j0 j0Var, a0 a0Var, a0 a0Var2, a0 a0Var3, long j, long j2, t1 t1Var, f0 f0Var) {
+    public a0(androidx.lifecycle.b bVar, vShadow vVar, String str, int i, m mVar, n nVar, c0 c0Var, j0 j0Var, a0 a0Var, a0 a0Var2, a0 a0Var3, long j, long j2, t1 t1Var, f0 f0Var) {
         k71.k.g(bVar, "request");
         k71.k.g(vVar, "protocol");
         k71.k.g(str, "message");

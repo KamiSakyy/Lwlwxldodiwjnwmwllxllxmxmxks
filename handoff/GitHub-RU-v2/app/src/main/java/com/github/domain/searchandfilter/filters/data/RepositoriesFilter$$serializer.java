@@ -6,7 +6,7 @@ import com.github.rudroid.common.i0;
 import com.google.android.gms.internal.measurement.d5;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import k81.q1;
@@ -15,7 +15,7 @@ import kotlinx.serialization.UnknownFieldException;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
-import x61.r;
+import x61.rShadow;
 
 @w61.c
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -94,7 +94,7 @@ public final /* synthetic */ class RepositoriesFilter$$serializer implements d0 
         RepositoriesFilter.Companion companion = RepositoriesFilter.Companion;
         d.y(repositoriesFilter, b, serialDescriptor);
         w61.h[] hVarArr = RepositoriesFilter.x;
-        if (b.X(serialDescriptor) || !k.b(list, r.r)) {
+        if (b.X(serialDescriptor) || !k.b(list, rShadow.r)) {
             b.I(serialDescriptor, 2, (KSerializer) hVarArr[2].getValue(), list);
         }
         if (b.X(serialDescriptor) || i0Var != i0.r) {
@@ -104,6 +104,6 @@ public final /* synthetic */ class RepositoriesFilter$$serializer implements d0 
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

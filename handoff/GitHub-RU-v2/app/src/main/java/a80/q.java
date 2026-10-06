@@ -18,7 +18,7 @@ public abstract class q {
     static {
         xa.Companion.getClass();
         aa.r b = l0.b(xa.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("isViewer", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar = fb.a;

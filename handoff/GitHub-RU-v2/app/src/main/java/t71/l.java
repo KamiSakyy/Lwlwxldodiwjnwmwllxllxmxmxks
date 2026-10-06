@@ -54,7 +54,7 @@ public final class l {
         }
         Matcher matcher2 = matcher.pattern().matcher(charSequence);
         k71.k.f(matcher2, "matcher(...)");
-        return sy.t.a(matcher2, end, charSequence);
+        return sy.tShadow.a(matcher2, end, charSequence);
     }
 
     public l(Object... a) {

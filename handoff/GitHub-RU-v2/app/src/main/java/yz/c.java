@@ -10,7 +10,7 @@ import java.util.List;
 import m10.eh;
 import m10.ix;
 import m10.st;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,14 +22,14 @@ public abstract class c {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2ViewItemConnection");
+        List n = d0Shadow.n("ProjectV2ViewItemConnection");
         List list = b.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2ViewItemConnection", n, list)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         s mVar3 = new m("viewGroupId", xVar, (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("ProjectV2Group");
+        List n2 = d0Shadow.n("ProjectV2Group");
         List list2 = a.a;
         s c = no.a.c(list2, "selections", "ProjectV2Group", n2, list2);
         ix.Companion.getClass();

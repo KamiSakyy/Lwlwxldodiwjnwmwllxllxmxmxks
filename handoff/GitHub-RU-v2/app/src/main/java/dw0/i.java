@@ -7,9 +7,9 @@ import aa.w;
 import aa.w0;
 import java.util.List;
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import pz0.su;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements w0 {
@@ -22,7 +22,7 @@ public final class i implements w0 {
         List list = hw0.b.a;
         List list2 = hw0.b.a;
         k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -35,7 +35,7 @@ public final class i implements w0 {
     }
 
     public final int hashCode() {
-        return x.a(i.class).hashCode();
+        return xShadow.a(i.class).hashCode();
     }
 
     public final String i() {

@@ -31,7 +31,7 @@ public final class b0 extends n2 {
     }
 
     public final a0 a() {
-        a0 a0Var = new a0();
+        a0Shadow a0Var = new a0Shadow();
         a0Var.a = this.b;
         a0Var.b = this.c;
         a0Var.c = this.d;

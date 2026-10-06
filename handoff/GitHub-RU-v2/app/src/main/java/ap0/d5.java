@@ -181,7 +181,7 @@ public abstract class d5 implements aa.a {
         fVar.z0("owner");
         aa.c.c(c5.a, true).b(fVar, wVar, x4Var.d);
         fVar.z0("usesCustomOpenGraphImage");
-        jo.f4.C(x4Var.e, aa.c.f, fVar, wVar, "openGraphImageUrl");
+        jo.f4Shadow.C(x4Var.e, aa.c.f, fVar, wVar, "openGraphImageUrl");
         bVar.b(fVar, wVar, x4Var.f);
         fVar.z0("lists");
         aa.c.c(y4.a, false).b(fVar, wVar, x4Var.g);

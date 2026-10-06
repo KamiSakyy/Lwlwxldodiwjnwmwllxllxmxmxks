@@ -16,9 +16,9 @@ public abstract class t2 {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Commit");
+        List n = sy.d0Shadow.n("Commit");
         List list = h40.b.a;
         aa.s c = no.a.c(list, "selections", "Commit", n, list);
         bb.Companion.getClass();
@@ -48,6 +48,6 @@ public abstract class t2 {
         aa.q0 q0Var3 = ap.k0;
         k71.k.g(q0Var3, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var3, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("name"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r5));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var3, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("name"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r5));
     }
 }

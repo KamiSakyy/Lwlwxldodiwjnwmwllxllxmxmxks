@@ -6,41 +6,41 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import androidx.appcompat.widget.AppCompatTextView;
 import com.github.rudroid.p0;
-import lg.b;
+import lg.bShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class TransparentLabelView extends AppCompatTextView {
-    public lg.b y;
+    public lg.bShadow y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public TransparentLabelView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
         k71.k.g(context, "context");
-        lg.b bVar = lg.b.r;
+        lg.bShadow bVar = lg.bShadow.r;
         this.y = bVar;
         TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, p0.d, 0, 0);
         try {
             switch (obtainStyledAttributes.getInt(0, 0)) {
                 case 1:
-                    bVar = lg.b.y;
+                    bVar = lg.bShadow.y;
                     break;
                 case 2:
-                    bVar = lg.b.s;
+                    bVar = lg.bShadow.s;
                     break;
                 case 3:
-                    bVar = lg.b.t;
+                    bVar = lg.bShadow.t;
                     break;
                 case 4:
-                    bVar = lg.b.u;
+                    bVar = lg.bShadow.u;
                     break;
                 case 5:
-                    bVar = lg.b.v;
+                    bVar = lg.bShadow.v;
                     break;
                 case 6:
-                    bVar = lg.b.w;
+                    bVar = lg.bShadow.w;
                     break;
                 case 7:
-                    bVar = lg.b.x;
+                    bVar = lg.bShadow.x;
                     break;
             }
             this.y = bVar;
@@ -55,18 +55,18 @@ public final class TransparentLabelView extends AppCompatTextView {
     /* JADX WARN: Multi-variable type inference failed */
     public final void g() {
         Drawable mutate;
-        b.a aVar = lg.b.Companion;
+        bShadow.a aVar = lg.bShadow.Companion;
         Context context = getContext();
         k71.k.f(context, "getContext(...)");
-        lg.b bVar = this.y;
+        lg.bShadow bVar = this.y;
         aVar.getClass();
-        setBackground(b.a.b(context, bVar));
+        setBackground(bShadow.a.b(context, bVar));
         int dimensionPixelSize = getResources().getDimensionPixelSize(2131165322);
         int i = dimensionPixelSize / 3;
         setPadding(dimensionPixelSize, i, dimensionPixelSize, i);
         Context context2 = getContext();
         k71.k.f(context2, "getContext(...)");
-        int d = b.a.d(context2, this.y);
+        int d = bShadow.a.d(context2, this.y);
         setTextColor(d);
         setCompoundDrawablePadding(dimensionPixelSize / 2);
         Drawable[] compoundDrawablesRelative = getCompoundDrawablesRelative();
@@ -78,7 +78,7 @@ public final class TransparentLabelView extends AppCompatTextView {
         }
     }
 
-    public final void setLabelColor(lg.b bVar) {
+    public final void setLabelColor(lg.bShadow bVar) {
         k71.k.g(bVar, "newColor");
         this.y = bVar;
         g();

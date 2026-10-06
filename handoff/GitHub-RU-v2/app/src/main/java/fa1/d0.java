@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class d0 extends x0 {
+public final class d0 extends x0Shadow {
     public final /* synthetic */ int d;
     public Method e;
     public int f;
@@ -17,7 +17,7 @@ public final class d0 extends x0 {
         this.g = z;
     }
 
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     public final void a(n0 n0Var, Object obj) {
         switch (this.d) {
             case 0:
@@ -38,7 +38,7 @@ public final class d0 extends x0 {
                     }
                     String obj2 = value.toString();
                     if (obj2 == null) {
-                        throw x0.n(method, i, "Field map value '" + value + "' converted to null by " + b.class.getName() + " for key '" + str + "'.", new Object[0]);
+                        throw x0.n(method, i, "Field map value '" + value + "' converted to null by " + bShadow.class.getName() + " for key '" + str + "'.", new Object[0]);
                     }
                     n0Var.a(str, obj2, this.g);
                 }
@@ -80,7 +80,7 @@ public final class d0 extends x0 {
                     }
                     String obj3 = value3.toString();
                     if (obj3 == null) {
-                        throw x0.n(method3, i3, "Query map value '" + value3 + "' converted to null by " + b.class.getName() + " for key '" + str3 + "'.", new Object[0]);
+                        throw x0.n(method3, i3, "Query map value '" + value3 + "' converted to null by " + bShadow.class.getName() + " for key '" + str3 + "'.", new Object[0]);
                     }
                     n0Var.d(str3, obj3, this.g);
                 }

@@ -21,13 +21,13 @@ final class w<T> implements y71.j {
             if (q1Var != null) {
                 q1Var.m((CancellationException) null);
             }
-            oVar.G = v71.b0.z(d1.k(oVar), (a71.h) null, (v71.a0) null, new t(oVar, jVar, null), 3);
+            oVar.G = v71.b0.z(d1.k(oVar), (a71.h) null, (v71.a0Shadow) null, new t(oVar, jVar, null), 3);
             oVar.P(jVar);
             q1 q1Var2 = oVar.I;
             if (q1Var2 != null) {
                 q1Var2.m((CancellationException) null);
             }
-            oVar.I = v71.b0.z(d1.k(oVar), (a71.h) null, (v71.a0) null, new v(oVar, jVar, null), 3);
+            oVar.I = v71.b0.z(d1.k(oVar), (a71.h) null, (v71.a0Shadow) null, new v(oVar, jVar, null), 3);
         } else {
             q1 q1Var3 = oVar.G;
             if (q1Var3 != null) {

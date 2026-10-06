@@ -75,7 +75,7 @@ public final class b extends c71.j implements j71.e {
                 k71.k.g(list, "timelineItems");
                 String d = s.d(str2, i2, str);
                 ConcurrentHashMap concurrentHashMap = sVar.e;
-                h hVar = (h) concurrentHashMap.get(d);
+                hShadow hVar = (hShadow) concurrentHashMap.get(d);
                 if (hVar != null) {
                     h01.q qVar = hVar.a;
                     List<o6> list2 = qVar.c;
@@ -95,7 +95,7 @@ public final class b extends c71.j implements j71.e {
                             arrayList.add(obj2);
                         }
                     }
-                    concurrentHashMap.put(d, new h(new h01.q(qVar.a, qVar.b, x61.m.l0(list2, arrayList), qVar.d, qVar.e, qVar.f, qVar.g), x61.r.r));
+                    concurrentHashMap.put(d, new hShadow(new h01.q(qVar.a, qVar.b, x61.m.l0(list2, arrayList), qVar.d, qVar.e, qVar.f, qVar.g), x61.rShadow.r));
                     sVar.c(d);
                     break;
                 }

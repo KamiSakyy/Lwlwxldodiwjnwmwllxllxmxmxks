@@ -8,7 +8,7 @@ import u10.s40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wr implements aaShadow.a {
     public static final wr a = new wr();
-    public static final List b = sy.d0.o("column", "project", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("column", "project", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

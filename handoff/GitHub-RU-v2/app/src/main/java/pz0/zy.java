@@ -39,7 +39,7 @@ public final class zy {
         A = zyVarArr;
         B = v8.l0.t(zyVarArr);
         Companion = new yy();
-        sy.d0.o(new String[]{"ARCHIVED", "FORK", "MIRROR", "PRIVATE", "PUBLIC", "SOURCE", "SPONSORABLE", "TEMPLATE"});
+        sy.d0Shadow.o(new String[]{"ARCHIVED", "FORK", "MIRROR", "PRIVATE", "PUBLIC", "SOURCE", "SPONSORABLE", "TEMPLATE"});
     }
 
     public zy(String str, int i, String str2) {

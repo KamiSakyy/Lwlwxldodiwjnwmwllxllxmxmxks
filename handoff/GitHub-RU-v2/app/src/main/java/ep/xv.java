@@ -7,7 +7,7 @@ import jo.q90;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xv implements aaShadow.a {
     public static final xv a = new xv();
-    public static final List b = sy.d0.n("thread");
+    public static final List b = sy.d0Shadow.n("thread");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

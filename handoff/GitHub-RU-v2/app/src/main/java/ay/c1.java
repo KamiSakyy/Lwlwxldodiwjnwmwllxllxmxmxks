@@ -7,7 +7,7 @@ import zx.x1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 implements aa.a {
     public static final c1 a = new c1();
-    public static final List b = sy.d0.o("id", "issueOrPullRequest", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "issueOrPullRequest", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

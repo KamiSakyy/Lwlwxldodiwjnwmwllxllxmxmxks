@@ -7,8 +7,8 @@ public abstract class qi {
     public static final pi Companion = new pi();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("IssueFieldRemovedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("IssueFieldRemovedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

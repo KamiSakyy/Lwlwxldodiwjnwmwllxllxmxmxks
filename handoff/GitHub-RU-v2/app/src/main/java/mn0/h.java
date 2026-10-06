@@ -3,11 +3,11 @@ package mn0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
     public String a;
-    public x b;
+    public xShadow b;
     public int c;
     public String d;
 
-    public h(String str, x xVar, int i, String str2) {
+    public h(String str, xShadow xVar, int i, String str2) {
         this.a = str;
         this.b = xVar;
         this.c = i;

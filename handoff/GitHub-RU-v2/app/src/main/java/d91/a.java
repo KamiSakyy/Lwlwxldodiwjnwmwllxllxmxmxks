@@ -2,7 +2,7 @@ package d91;
 
 import androidx.lifecycle.b;
 import c30.d;
-import h91.k;
+import h91.kShadow;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.net.IDN;
@@ -10,23 +10,23 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
-import sy.d0;
+import sy.d0Shadow;
 import t71.p;
 import w80.t;
 import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
-    public static final k b;
+    public static final kShadow b;
     public static final List c;
     public static final a d;
     public b a;
 
     static {
         byte[] copyOf = Arrays.copyOf(new byte[]{42}, 1);
-        k71.k.f(copyOf, "copyOf(...)");
-        b = new k(copyOf);
-        c = d0.n("*");
+        k71.kShadow.f(copyOf, "copyOf(...)");
+        b = new kShadow(copyOf);
+        c = d0Shadow.n("*");
         d = new a(new b(1));
     }
 
@@ -36,7 +36,7 @@ public final class a {
 
     public static List b(String str) {
         List f0 = p.f0(str, new char[]{'.'}, 6);
-        return k71.k.b(m.e0(f0), "") ? m.Q(1, f0) : f0;
+        return k71.kShadow.b(m.e0(f0), "") ? m.Q(1, f0) : f0;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:27:0x008e, code lost:
@@ -45,7 +45,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0090, code lost:
     
-        r6 = (h91.k[]) r3.clone();
+        r6 = (h91.kShadow[]) r3.clone();
         r10 = r6.length - 1;
         r11 = 0;
      */
@@ -56,7 +56,7 @@ public final class a {
     /* JADX WARN: Code restructure failed: missing block: B:30:0x009b, code lost:
     
         r6[r11] = d91.a.b;
-        r12 = (h91.k) r1.d;
+        r12 = (h91.kShadow) r1.d;
      */
     /* JADX WARN: Code restructure failed: missing block: B:31:0x00a3, code lost:
     
@@ -89,7 +89,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:39:0x00ba, code lost:
     
-        r7 = (h91.k) r1.e;
+        r7 = (h91.kShadow) r1.e;
      */
     /* JADX WARN: Code restructure failed: missing block: B:40:0x00be, code lost:
     
@@ -191,7 +191,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:73:0x00ec, code lost:
     
-        r3 = x61.r.r;
+        r3 = x61.rShadow.r;
      */
     /* JADX WARN: Code restructure failed: missing block: B:74:0x00ee, code lost:
     
@@ -227,7 +227,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:84:0x00ca, code lost:
     
-        k71.k.m("exceptionBytes");
+        k71.kShadow.m("exceptionBytes");
      */
     /* JADX WARN: Code restructure failed: missing block: B:85:0x00cf, code lost:
     
@@ -239,7 +239,7 @@ public final class a {
      */
     /* JADX WARN: Code restructure failed: missing block: B:89:0x00af, code lost:
     
-        k71.k.m("bytes");
+        k71.kShadow.m("bytes");
      */
     /* JADX WARN: Code restructure failed: missing block: B:90:0x00b2, code lost:
     
@@ -255,7 +255,7 @@ public final class a {
     public final String a(String str) {
         String str2;
         String unicode = IDN.toUnicode(str);
-        k71.k.d(unicode);
+        k71.kShadow.d(unicode);
         List b2 = b(unicode);
         b bVar = this.a;
         AtomicBoolean atomicBoolean = (AtomicBoolean) bVar.b;
@@ -287,7 +287,7 @@ public final class a {
                 }
             }
         }
-        if (((k) bVar.d) == null) {
+        if (((kShadow) bVar.d) == null) {
             StringBuilder sb = new StringBuilder("Unable to load ");
             sb.append(bVar.g);
             sb.append(" resource.");
@@ -296,9 +296,9 @@ public final class a {
             throw illegalStateException;
         }
         int size = b2.size();
-        k[] kVarArr = new k[size];
+        k[] kVarArr = new kShadow[size];
         for (int i = 0; i < size; i++) {
-            k kVar = k.u;
+            kShadow kVar = kShadow.u;
             kVarArr[i] = d.b((String) b2.get(i));
         }
         int i2 = 0;
@@ -307,9 +307,9 @@ public final class a {
                 str2 = null;
                 break;
             }
-            k kVar2 = (k) bVar.d;
+            kShadow kVar2 = (kShadow) bVar.d;
             if (kVar2 == null) {
-                k71.k.m("bytes");
+                k71.kShadow.m("bytes");
                 throw null;
             }
             str2 = t.e(kVar2, kVarArr, i2);

@@ -87,7 +87,7 @@ public abstract class b4 implements i3.d {
     /* JADX WARN: Type inference failed for: r11v1, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r11v2, types: [java.util.ArrayList] */
     public static final LinkedHashMap C(ri0.v vVar, dn dnVar) {
-        x61.r rVar;
+        x61.rShadow rVar;
         ArrayList r112;
         DiffLineType diffLineType;
         List list;
@@ -96,7 +96,7 @@ public abstract class b4 implements i3.d {
         ri0.o7 o7Var2;
         ri0.v vVar2 = vVar;
         List list3 = vVar2.c.a;
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         if (list3 == null) {
             list3 = rVar2;
         }
@@ -138,7 +138,7 @@ public abstract class b4 implements i3.d {
                     String str2 = p7Var != null ? p7Var.a : null;
                     se0.c cVar = s7Var.i;
                     String str3 = sVar.c;
-                    x61.r rVar3 = rVar2;
+                    x61.rShadow rVar3 = rVar2;
                     aj0.c cVar2 = s7Var.j;
                     qh0.a aVar = s7Var.m;
                     String str4 = s7Var.f;
@@ -301,7 +301,7 @@ public abstract class b4 implements i3.d {
 
     public static final ArrayList O(String str, Bundle bundle) {
         k71.k.g(str, "key");
-        ArrayList b = Build.VERSION.SDK_INT >= 34 ? b5.c.b(bundle, str, v8.l0.x(k71.x.a(Bundle.class))) : bundle.getParcelableArrayList(str);
+        ArrayList b = Build.VERSION.SDK_INT >= 34 ? b5.c.b(bundle, str, v8.l0.x(k71.xShadow.a(Bundle.class))) : bundle.getParcelableArrayList(str);
         if (b != null) {
             return b;
         }
@@ -451,7 +451,7 @@ public abstract class b4 implements i3.d {
     public static yz0.b1 c(qf0.a aVar, List list) {
         LinkedHashMap linkedHashMap;
         String str;
-        x61.r rVar;
+        x61.rShadow rVar;
         int intValue;
         String str2;
         java.util.List r0;
@@ -489,7 +489,7 @@ public abstract class b4 implements i3.d {
         String a0 = a0(aVar);
         gn0.s8 s8Var2 = aVar.a;
         int i2 = pl0.e.b[sy.w.z(s8Var2).ordinal()];
-        x61.r rVar2 = x61.r.r;
+        x61.rShadow rVar2 = x61.rShadow.r;
         int i3 = 0;
         switch (i2) {
             case 1:
@@ -651,7 +651,7 @@ public abstract class b4 implements i3.d {
         KSerializer kSerializer;
         KSerializer kSerializer2;
         KSerializer bVar;
-        r71.b j = k81.c1.j(fVar);
+        r71.b j = k81.c1Shadow.j(fVar);
         boolean a = fVar.a();
         List b = fVar.b();
         ArrayList arrayList = new ArrayList(x61.n.F(b, 10));
@@ -664,9 +664,9 @@ public abstract class b4 implements i3.d {
             throw null;
         }
         boolean isEmpty = arrayList.isEmpty();
-        List list = x61.r.r;
+        List list = x61.rShadow.r;
         if (isEmpty) {
-            if (!k81.c1.i(j) || lVar.a(j, list) == null) {
+            if (!k81.c1Shadow.i(j) || lVar.a(j, list) == null) {
                 k81.m1 m1Var = g81.g.a;
                 kSerializer = !a ? g81.g.a.h(j) : g81.g.b.h(j);
                 if (kSerializer == null) {
@@ -675,7 +675,7 @@ public abstract class b4 implements i3.d {
                 if (arrayList.isEmpty()) {
                     kSerializer2 = b91.g.L(j);
                     if (kSerializer2 == null && (kSerializer2 = lVar.a(j, list)) == null) {
-                        if (k81.c1.i(j)) {
+                        if (k81.c1Shadow.i(j)) {
                             bVar = new g81.b(j);
                             kSerializer2 = bVar;
                         }
@@ -691,7 +691,7 @@ public abstract class b4 implements i3.d {
                         if (E == null) {
                             kSerializer2 = lVar.a(j, M);
                             if (kSerializer2 == null) {
-                                if (k81.c1.i(j)) {
+                                if (k81.c1Shadow.i(j)) {
                                     bVar = new g81.b(j);
                                     kSerializer2 = bVar;
                                 }

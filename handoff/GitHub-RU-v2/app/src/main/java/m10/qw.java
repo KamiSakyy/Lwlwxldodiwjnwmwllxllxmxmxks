@@ -22,7 +22,7 @@ public final class qw {
         u = qwVarArr;
         v = v8.l0.t(qwVarArr);
         Companion = new pw();
-        sy.d0.o("ADMIN", "READ", "WRITE");
+        sy.d0Shadow.o("ADMIN", "READ", "WRITE");
     }
 
     public qw(String str, int i, String str2) {

@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import l01.c;
 import l01.j0;
@@ -33,7 +33,7 @@ public final class ProjectV2Field$ProjectV2TextField implements j0 {
 
     public /* synthetic */ ProjectV2Field$ProjectV2TextField(int i, String str, int i2, String str2, ProjectFieldType projectFieldType) {
         if (15 != (i & 15)) {
-            c1.l(i, 15, ProjectV2Field$ProjectV2TextField$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 15, ProjectV2Field$ProjectV2TextField$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

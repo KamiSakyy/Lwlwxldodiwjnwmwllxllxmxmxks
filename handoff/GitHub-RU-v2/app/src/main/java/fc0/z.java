@@ -13,9 +13,9 @@ public abstract class z {
     static {
         fb.Companion.getClass();
         aa.r b = v8.l0.b(fb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Commit");
+        List n = sy.d0Shadow.n("Commit");
         List list = h40.a.a;
         aa.s c = no.a.c(list, "selections", "Commit", n, list);
         bb.Companion.getClass();
@@ -24,6 +24,6 @@ public abstract class z {
         aa.j0 j0Var = yg.a;
         k71.k.g(j0Var, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new aa.u0(new aa.t("id"))), r));
+        a = sy.d0Shadow.n(new aa.m("node", j0Var, (String) null, rVar, no.a.s(pm.f, new aa.u0(new aa.t("id"))), r));
     }
 }

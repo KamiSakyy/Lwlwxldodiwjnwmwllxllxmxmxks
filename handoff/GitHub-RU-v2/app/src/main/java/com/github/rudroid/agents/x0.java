@@ -50,7 +50,7 @@ public final class x0 {
         g1.a aVar = com.github.rudroid.utilities.ui.g1.Companion;
         h5 h5Var = new h5(null, null, null);
         aVar.getClass();
-        f8449n = new x0(new com.github.rudroid.utilities.ui.u0(h5Var), null, null, null, null, g1.a.a(), "", false, 0, null, x61.r.r, g1.a.a());
+        f8449n = new x0(new com.github.rudroid.utilities.ui.u0(h5Var), null, null, null, null, g1.a.a(), "", false, 0, null, x61.rShadow.r, g1.a.a());
     }
 
     public x0(com.github.rudroid.utilities.ui.g1 g1Var, String str, String str2, String str3, com.github.rudroid.agents.a aVar, com.github.rudroid.utilities.ui.g1 g1Var2, String str4, boolean z10, int i, xn.v0 v0Var, List list, com.github.rudroid.utilities.ui.g1 g1Var3) {

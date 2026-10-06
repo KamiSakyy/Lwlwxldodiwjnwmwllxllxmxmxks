@@ -7,11 +7,11 @@ import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.ui.u0;
 import java.util.concurrent.CancellationException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -62,19 +62,19 @@ public final class j extends k1 implements com.github.rudroid.utilities.viewmode
         this.f19731w = str;
         String str2 = (String) h2.a(a1Var, "EXTRA_PARENT_REPOSITORY_OWNER");
         this.f19732x = str2;
-        y1 c10 = n1.c(new of.a(str2, str, (String) h2.a(a1Var, "EXTRA_REPOSITORY_DEFAULT_BRANCH_NAME"), str, (String) h2.a(a1Var, "EXTRA_REPOSITORY_DESCRIPTION"), true));
+        y1 c10 = n1Shadow.c(new of.a(str2, str, (String) h2.a(a1Var, "EXTRA_REPOSITORY_DEFAULT_BRANCH_NAME"), str, (String) h2.a(a1Var, "EXTRA_REPOSITORY_DESCRIPTION"), true));
         this.f19733y = c10;
         g1.Companion.getClass();
-        y1 c11 = n1.c(g1.a.a());
+        y1 c11 = n1Shadow.c(g1.a.a());
         this.f19734z = c11;
-        y1 c12 = n1.c(new u0((Object) null));
+        y1 c12 = n1Shadow.c(new u0((Object) null));
         this.A = c12;
-        this.B = n1.G(n1.l(c10, c11, c12, new r(4, null)), d1.k(this), y71.q1.a(3), new of.b((of.a) c10.getValue(), g1.a.a(), new u0((Object) null)));
+        this.B = n1Shadow.G(n1Shadow.l(c10, c11, c12, new r(4, null)), d1.k(this), y71.q1.a(3), new of.b((of.a) c10.getValue(), g1.a.a(), new u0((Object) null)));
         q1 q1Var = this.C;
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.C = b0.z(d1.k(this), (a71.h) null, (a0) null, new n(this, null), 3);
+        this.C = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new n(this, null), 3);
     }
 
     public final void P(y71.g1 g1Var, fl.b bVar, boolean z10) {

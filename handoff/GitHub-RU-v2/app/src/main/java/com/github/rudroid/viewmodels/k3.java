@@ -39,7 +39,7 @@ public final class k3 extends w3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.y = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new p3(this, null), 3);
+        this.y = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p3(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.w3
@@ -59,7 +59,7 @@ public final class k3 extends w3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.y = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new n3(this, null), 3);
+        this.y = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new n3(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.x3

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class j1 extends sy.r {
+public final class j1 extends sy.rShadow {
     public ArrayList a;
     public Integer b;
     public Integer c;

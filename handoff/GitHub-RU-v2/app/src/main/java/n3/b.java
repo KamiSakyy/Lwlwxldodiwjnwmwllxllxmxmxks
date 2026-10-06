@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.function.Predicate;
 import k71.j;
 import k71.k;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class b implements Collection, l71.a {
 
     /* renamed from: t, reason: collision with root package name */
-    public static final b f29408t = new b(r.r);
+    public static final b f29408t = new b(rShadow.r);
 
     /* renamed from: r, reason: collision with root package name */
     public List f29409r;

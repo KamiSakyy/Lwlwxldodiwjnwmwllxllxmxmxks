@@ -2,7 +2,7 @@ package com.github.rudroid.searchandfilter.complexfilter.user;
 
 import java.util.ArrayList;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import w61.a0;
 
@@ -43,7 +43,7 @@ public final class r<T> implements y71.j {
                     String str = this.s;
                     if ((str == null || t71.p.T(str)) && t71.p.T(this.t)) {
                         oa.j jVar = this.u;
-                        List n = d0.n(new dm.b(jVar.c));
+                        List n = d0Shadow.n(new dm.b(jVar.c));
                         List c = eVar.c();
                         ArrayList arrayList = new ArrayList();
                         for (T t : c) {

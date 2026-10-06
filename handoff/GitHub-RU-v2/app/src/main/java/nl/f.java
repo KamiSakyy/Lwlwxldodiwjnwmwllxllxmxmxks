@@ -1,6 +1,6 @@
 package nl;
 
-import y71.n1;
+import y71.n1Shadow;
 import y71.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -22,6 +22,6 @@ public final class f {
         k71.k.g(str4, "body");
         k71.k.g(str5, "baseRefName");
         k71.k.g(str6, "headRefName");
-        return b31.b.J(n1.I(this.a.a(jVar, str, str2, cVar), new e(null, this, jVar, str3, str4, str5, str6)), jVar, cVar);
+        return b31.b.J(n1Shadow.I(this.a.a(jVar, str, str2, cVar), new e(null, this, jVar, str3, str4, str5, str6)), jVar, cVar);
     }
 }

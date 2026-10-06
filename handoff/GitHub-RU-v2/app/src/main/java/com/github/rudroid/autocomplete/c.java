@@ -5,11 +5,11 @@ import androidx.lifecycle.k1;
 import com.github.rudroid.m0;
 import java.util.concurrent.CancellationException;
 import kotlin.NoWhenBranchMatchedException;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import v71.q1;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y;
 import y71.y1;
 
@@ -77,15 +77,15 @@ public final class c extends k1 {
         y1 s2 = m0.s(fl.f.Companion, null);
         this.f8625x = s2;
         this.f8626y = new i1(s2);
-        y1 c10 = n1.c((Object) null);
+        y1 c10 = n1Shadow.c((Object) null);
         this.f8627z = c10;
-        n1.A(new y(n1.o(c10, 250L), new o(this, null), 6), d1.k(this));
+        n1Shadow.A(new y(n1Shadow.o(c10, 250L), new o(this, null), 6), d1.k(this));
     }
 
     public final void P(String str) {
         int ordinal = this.f8621t.ordinal();
         if (ordinal == 0) {
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new g(this, str, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new g(this, str, null), 3);
             return;
         }
         if (ordinal == 1) {
@@ -93,7 +93,7 @@ public final class c extends k1 {
             if (q1Var != null) {
                 q1Var.m((CancellationException) null);
             }
-            this.B = b0.z(d1.k(this), (a71.h) null, (a0) null, new k(this, str, null), 3);
+            this.B = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new k(this, str, null), 3);
             return;
         }
         if (ordinal != 2) {
@@ -103,6 +103,6 @@ public final class c extends k1 {
         if (q1Var2 != null) {
             q1Var2.m((CancellationException) null);
         }
-        this.A = b0.z(d1.k(this), (a71.h) null, (a0) null, new n(this, str, null), 3);
+        this.A = b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new n(this, str, null), 3);
     }
 }

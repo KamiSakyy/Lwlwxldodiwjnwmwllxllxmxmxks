@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.concurrent.Executor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class d extends b {
-    @Override // fa1.b
+public final class d extends bShadow {
+    @Override // fa1.bShadow
     public final List a(Executor executor) {
         return Arrays.asList(new l(), new p(executor));
     }
 
-    @Override // fa1.b
+    @Override // fa1.bShadow
     public final List b() {
         return Collections.singletonList(new c(1));
     }

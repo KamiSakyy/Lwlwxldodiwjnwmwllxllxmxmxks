@@ -42,7 +42,7 @@ public final class c1 extends w1 {
         this.F = new w51.r(this, "last_received_uri_timestamps_by_source");
         this.G = new z0(this, "allow_remote_dynamite", false);
         this.x = new a1(this, "first_open_time", 0L);
-        c21.u.d("app_install_time");
+        c21.uShadow.d("app_install_time");
         this.y = new androidx.compose.foundation.lazy.layout.t1(this, "app_instance_id");
         this.K = new z0(this, "app_backgrounded", false);
         this.L = new z0(this, "deep_link_retrieval_complete", false);
@@ -61,7 +61,7 @@ public final class c1 extends w1 {
     public final SharedPreferences D() {
         z();
         B();
-        c21.u.g(this.u);
+        c21.uShadow.g(this.u);
         return this.u;
     }
 

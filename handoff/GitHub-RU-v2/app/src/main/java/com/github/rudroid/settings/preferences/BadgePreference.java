@@ -9,7 +9,7 @@ import androidx.preference.Preference;
 import e7.v;
 import k71.k;
 import k71.m;
-import k71.x;
+import k71.xShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class BadgePreference extends Preference {
@@ -40,7 +40,7 @@ public final class BadgePreference extends Preference {
 
     static {
         r71.e mVar = new m(BadgePreference.class, "showBadge", "getShowBadge()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         g0 = new r71.e[]{mVar};
     }
 

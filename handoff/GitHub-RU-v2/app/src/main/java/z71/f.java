@@ -24,7 +24,7 @@ public final class f extends d {
 
     @Override // z71.d
     public final Object d(x71.t tVar, a71.c cVar) {
-        int i = e81.j.a;
+        int i = e81.jShadow.a;
         e81.i iVar = new e81.i(this.v, 0);
         x xVar = new x(tVar);
         a71.h hVar = ((c71.c) cVar).s;
@@ -42,7 +42,7 @@ public final class f extends d {
     public final x71.v g(v71.z zVar) {
         j71.e v4Var = new v4(this, (a71.c) null, 25);
         x71.a aVar = x71.a.r;
-        v71.a0 a0Var = v71.a0.r;
+        v71.a0Shadow a0Var = v71.a0Shadow.r;
         x71.s sVar = new x71.s(b0.A(zVar, this.r), t.e.a(this.s, 4, aVar));
         sVar.q0(a0Var, sVar, v4Var);
         return sVar;

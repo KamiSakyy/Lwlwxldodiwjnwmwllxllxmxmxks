@@ -7,8 +7,8 @@ public abstract class xb {
     public static final wb Companion = new wb();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("HeadRefDeletedEvent", n, sy.d0.n(yh.a));
+        new aa.q0("HeadRefDeletedEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

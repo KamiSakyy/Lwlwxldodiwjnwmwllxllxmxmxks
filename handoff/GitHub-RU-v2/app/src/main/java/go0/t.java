@@ -79,7 +79,7 @@ public final class t implements y71.j {
                         k71.k.g("- sending: ".concat(jSONObject), "message");
                         g91.f fVar = (h0) obj;
                         fVar.getClass();
-                        h91.k kVar = h91.k.u;
+                        h91.kShadow kVar = h91.kShadow.u;
                         Boolean valueOf = Boolean.valueOf(fVar.f(1, c30.d.b(jSONObject)));
                         sVar.v = 1;
                         return jVar.c(valueOf, sVar) == aVar ? aVar : a0Var;
@@ -143,7 +143,7 @@ public final class t implements y71.j {
                         k71.k.g("- sending: ".concat(jSONObject2), "message");
                         g91.f fVar2 = (h0) obj;
                         fVar2.getClass();
-                        h91.k kVar2 = h91.k.u;
+                        h91.kShadow kVar2 = h91.kShadow.u;
                         Boolean valueOf2 = Boolean.valueOf(fVar2.f(1, c30.d.b(jSONObject2)));
                         mVar.v = 1;
                         return jVar.c(valueOf2, mVar) == aVar4 ? aVar4 : a0Var;
@@ -207,7 +207,7 @@ public final class t implements y71.j {
                         k71.k.g("- sending: ".concat(jSONObject3), "message");
                         g91.f fVar3 = (h0) obj;
                         fVar3.getClass();
-                        h91.k kVar3 = h91.k.u;
+                        h91.kShadow kVar3 = h91.kShadow.u;
                         Boolean valueOf3 = Boolean.valueOf(fVar3.f(1, c30.d.b(jSONObject3)));
                         qVar.v = 1;
                         return jVar.c(valueOf3, qVar) == aVar6 ? aVar6 : a0Var;
@@ -271,7 +271,7 @@ public final class t implements y71.j {
                         k71.k.g("- sending: ".concat(jSONObject4), "message");
                         g91.f fVar4 = (h0) obj;
                         fVar4.getClass();
-                        h91.k kVar4 = h91.k.u;
+                        h91.kShadow kVar4 = h91.kShadow.u;
                         Boolean valueOf4 = Boolean.valueOf(fVar4.f(1, c30.d.b(jSONObject4)));
                         mVar2.v = 1;
                         return jVar.c(valueOf4, mVar2) == aVar8 ? aVar8 : a0Var;

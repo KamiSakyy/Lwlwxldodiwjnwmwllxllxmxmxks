@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class og implements aaShadow.a {
     public static final og a = new og();
-    public static final List b = sy.d0.o(new String[]{"pageInfo", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"pageInfo", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jn0.no noVar = null;
+        jn0.noShadow noVar = null;
         List list = null;
         while (true) {
             int r0 = eVar.r0(b);

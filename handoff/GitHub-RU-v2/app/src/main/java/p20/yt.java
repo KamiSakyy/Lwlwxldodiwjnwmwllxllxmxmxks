@@ -7,7 +7,7 @@ import u10.m70;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yt implements aaShadow.a {
     public static final yt a = new yt();
-    public static final List b = sy.d0.n("pullRequestReviewComment");
+    public static final List b = sy.d0Shadow.n("pullRequestReviewComment");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

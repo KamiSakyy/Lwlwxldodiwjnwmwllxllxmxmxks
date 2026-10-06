@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements aa.a {
     public static final r a = new r();
-    public static final List b = sy.d0.o(new String[]{"__typename", "item"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "item"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -24,7 +24,7 @@ public final class r implements aa.a {
             }
         }
         eVar.s0();
-        iy0.z c = iy0.a0.c(eVar, wVar);
+        iy0.z c = iy0.a0Shadow.c(eVar, wVar);
         if (str != null) {
             return new n(str, mVar, c);
         }
@@ -41,7 +41,7 @@ public final class r implements aa.a {
         aa.c.a.b(fVar, wVar, nVar.a);
         fVar.z0("item");
         aa.c.b(aa.c.c(q.a, true)).b(fVar, wVar, nVar.b);
-        List list = iy0.a0.a;
-        iy0.a0.d(fVar, wVar, nVar.c);
+        List list = iy0.a0Shadow.a;
+        iy0.a0Shadow.d(fVar, wVar, nVar.c);
     }
 }

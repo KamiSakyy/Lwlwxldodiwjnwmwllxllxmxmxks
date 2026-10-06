@@ -79,9 +79,9 @@ public final /* synthetic */ class e implements j71.e {
                             int intValue2 = ((Integer) obj5).intValue();
                             ListSelectionBottomSheet.a aVar3 = ListSelectionBottomSheet.Companion;
                             if (sVar2.S(intValue2 & 1, (intValue2 & 3) != 2)) {
-                                x61.r rVar = (List) ((fl.f) m.getValue()).b;
+                                x61.rShadow rVar = (List) ((fl.f) m.getValue()).b;
                                 if (rVar == null) {
-                                    rVar = x61.r.r;
+                                    rVar = x61.rShadow.r;
                                 }
                                 ListSelectionBottomSheet listSelectionBottomSheet2 = listSelectionBottomSheet;
                                 boolean h2 = sVar2.h(listSelectionBottomSheet2);

@@ -25,7 +25,7 @@ final class e<T> implements y71.j {
         g gVar = this.f8831s;
         y1 y1Var = gVar.f8841y;
         boolean z10 = this.f8830r;
-        List list2 = x61.r.r;
+        List list2 = x61.rShadow.r;
         if (!z10 && (list = (List) ((g1) y1Var.getValue()).getData()) != null) {
             list2 = list;
         }

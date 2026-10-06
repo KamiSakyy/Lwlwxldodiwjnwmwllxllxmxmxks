@@ -5,7 +5,7 @@ public abstract class tp {
     public static final sp Companion = new sp();
 
     static {
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         new aa.q0("MultilineComment", rVar, rVar);
     }
 }

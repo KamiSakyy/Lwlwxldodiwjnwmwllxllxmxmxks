@@ -39,7 +39,7 @@ public final class x40 {
         A = x40VarArr;
         B = v8.l0.t(x40VarArr);
         Companion = new w40();
-        sy.d0.o("ARCHIVED", "FORK", "MIRROR", "PRIVATE", "PUBLIC", "SOURCE", "SPONSORABLE", "TEMPLATE");
+        sy.d0Shadow.o("ARCHIVED", "FORK", "MIRROR", "PRIVATE", "PUBLIC", "SOURCE", "SPONSORABLE", "TEMPLATE");
     }
 
     public x40(String str, int i, String str2) {

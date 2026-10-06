@@ -5,7 +5,7 @@ import com.github.rudroid.m0;
 import f1.u5;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import w61.h;
@@ -37,7 +37,7 @@ public final class AgentAiModelResponse {
 
     public /* synthetic */ AgentAiModelResponse(int i, AiModelBillingResponse aiModelBillingResponse, AiModelCapabilitiesResponse aiModelCapabilitiesResponse, AiModelPolicyResponse aiModelPolicyResponse, AiModelSupportsResponse aiModelSupportsResponse, gz.e eVar, String str, String str2, String str3, boolean z, boolean z2, boolean z3, boolean z4) {
         if (1088 != (i & 1088)) {
-            c1.l(i, 1088, AgentAiModelResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1088, AgentAiModelResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 1) == 0) {

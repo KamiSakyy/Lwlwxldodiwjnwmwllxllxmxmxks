@@ -2,7 +2,7 @@ package ih0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class i implements aa.a {
@@ -145,7 +145,7 @@ public abstract class i implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -182,8 +182,8 @@ public abstract class i implements aa.a {
         aa.c.b(aVar).b(fVar, wVar, gVar.c);
         fVar.z0("jump");
         aa.b bVar2 = aa.c.f;
-        f4.C(gVar.d, bVar2, fVar, wVar, "solo");
-        f4.C(gVar.e, bVar2, fVar, wVar, "position");
+        f4Shadow.C(gVar.d, bVar2, fVar, wVar, "solo");
+        f4Shadow.C(gVar.e, bVar2, fVar, wVar, "position");
         aVar.b(fVar, wVar, Integer.valueOf(gVar.f));
         fVar.z0("pullRequest");
         aa.c.b(aa.c.c(j.a, true)).b(fVar, wVar, gVar.g);

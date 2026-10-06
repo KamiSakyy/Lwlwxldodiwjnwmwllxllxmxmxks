@@ -47,7 +47,7 @@ public final class j extends c71.j implements j71.c {
                     y.j(obj);
                     ua uaVar = this.x;
                     if (uaVar != null) {
-                        a00.b bVar = this.y.d;
+                        a00.bShadow bVar = this.y.d;
                         id0.g gVar = new id0.g(this.z, this.B, this.A);
                         this.w = 1;
                         if (bVar.j(gVar, uaVar, this) == aVar) {
@@ -68,7 +68,7 @@ public final class j extends c71.j implements j71.c {
                     y.j(obj);
                     ua uaVar2 = this.x;
                     if (uaVar2 != null) {
-                        a00.b bVar2 = this.y.d;
+                        a00.bShadow bVar2 = this.y.d;
                         id0.g gVar2 = new id0.g(this.z, this.B, this.A);
                         this.w = 1;
                         if (bVar2.j(gVar2, uaVar2, this) == aVar2) {

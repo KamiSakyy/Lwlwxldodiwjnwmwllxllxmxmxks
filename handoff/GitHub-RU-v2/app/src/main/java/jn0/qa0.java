@@ -21,7 +21,7 @@ public final class qa0 implements aaShadow.n0 {
         List list = kz0.d6.a;
         List list2 = kz0.d6.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -69,6 +69,6 @@ public final class qa0 implements aaShadow.n0 {
     }
 
     public final String toString() {
-        return jo.f4.l(this.s, "UpdateIssueIssueTypeMutation(issueId=", this.r, ", issueTypeId=", ")");
+        return jo.f4Shadow.l(this.s, "UpdateIssueIssueTypeMutation(issueId=", this.r, ", issueTypeId=", ")");
     }
 }

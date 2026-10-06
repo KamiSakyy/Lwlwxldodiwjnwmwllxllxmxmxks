@@ -7,7 +7,7 @@ import ux0.j1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 implements aa.a {
     public static final m0 a = new m0();
-    public static final List b = sy.d0.n("updateProjectV2LastViewed");
+    public static final List b = sy.d0Shadow.n("updateProjectV2LastViewed");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

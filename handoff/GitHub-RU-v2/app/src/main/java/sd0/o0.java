@@ -17,14 +17,14 @@ public abstract class o0 implements aa.a {
                 str = (String) aa.c.i.a(eVar, wVar);
             } else {
                 if (r0 != 1) {
-                    return new a0(str, list);
+                    return new a0Shadow(str, list);
                 }
                 list = (List) aa.c.b(aa.c.a(aa.c.b(aa.c.c(l0.a, true)))).a(eVar, wVar);
             }
         }
     }
 
-    public static void d(ea.f fVar, aa.w wVar, a0 a0Var) {
+    public static void d(ea.f fVar, aa.w wVar, a0Shadow a0Var) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(a0Var, "value");

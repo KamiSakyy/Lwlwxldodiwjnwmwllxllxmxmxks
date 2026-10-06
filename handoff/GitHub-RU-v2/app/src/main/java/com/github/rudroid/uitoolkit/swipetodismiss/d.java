@@ -28,7 +28,7 @@ final class d extends c71.j implements j71.f {
         float f = this.w;
         b71.a aVar = b71.a.r;
         sy.y.j(obj);
-        v71.b0.z(zVar, (a71.h) null, (v71.a0) null, new c(this.x, f, null), 3);
+        v71.b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new c(this.x, f, null), 3);
         return w61.a0.a;
     }
 }

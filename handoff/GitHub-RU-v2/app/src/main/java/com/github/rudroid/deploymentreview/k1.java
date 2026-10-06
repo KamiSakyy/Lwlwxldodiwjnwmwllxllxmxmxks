@@ -36,10 +36,10 @@ public final class k1 extends androidx.lifecycle.k1 {
         this.f10882s = bVar;
         this.f10883t = fVar;
         this.f10884u = cVar;
-        y1 c10 = y71.n1.c((Object) null);
+        y1 c10 = y71.n1Shadow.c((Object) null);
         this.f10886w = c10;
         this.f10887x = new y71.i1(c10);
-        y1 c11 = y71.n1.c(x61.t.r);
+        y1 c11 = y71.n1Shadow.c(x61.t.r);
         this.f10888y = c11;
         this.f10889z = new y71.i1(c11);
     }

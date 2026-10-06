@@ -7,7 +7,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import kotlin.NoWhenBranchMatchedException;
-import sy.d0;
+import sy.d0Shadow;
 import sy.f0;
 import x61.m;
 import x61.n;
@@ -40,7 +40,7 @@ public final class k implements f {
                 if (list.size() != list2.size()) {
                     throw new IllegalStateException(("Cannot merge " + obj + " with " + obj2).toString());
                 }
-                q71.g l = d0.l((Collection) obj);
+                q71.g l = d0Shadow.l((Collection) obj);
                 ArrayList arrayList = new ArrayList(n.F(l, 10));
                 v it = l.iterator();
                 while (((q71.f) it).f31001t) {

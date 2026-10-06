@@ -3,7 +3,7 @@ package xt;
 import aa.w;
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -130,7 +130,7 @@ public abstract class q implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, kVar.d);
         fVar.z0("isCrossRepository");
-        f4.C(kVar.e, aa.c.f, fVar, wVar, "canonical");
+        f4Shadow.C(kVar.e, aa.c.f, fVar, wVar, "canonical");
         aa.c.b(aa.c.c(m.a, true)).b(fVar, wVar, kVar.f);
         fVar.z0("duplicate");
         aa.c.b(aa.c.c(n.a, true)).b(fVar, wVar, kVar.g);

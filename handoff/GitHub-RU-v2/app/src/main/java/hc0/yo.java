@@ -29,7 +29,7 @@ public final class yo {
         x = yoVarArr;
         y = v8.l0.t(yoVarArr);
         Companion = new xo();
-        sy.d0.o(new String[]{"DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED"});
+        sy.d0Shadow.o(new String[]{"DUPLICATE", "OFF_TOPIC", "OUTDATED", "RESOLVED"});
     }
 
     public yo(String str, int i, String str2) {

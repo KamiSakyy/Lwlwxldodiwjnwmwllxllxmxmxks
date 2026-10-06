@@ -16,7 +16,7 @@ public abstract class c {
         qa.Companion.getClass();
         aa.x xVar = qa.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("resetDate", xVar, (String) null, rVar, rVar, rVar);
         yg.Companion.getClass();
         aa.x xVar2 = yg.a;

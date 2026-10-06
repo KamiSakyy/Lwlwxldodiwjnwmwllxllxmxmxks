@@ -14,7 +14,7 @@ import pz0.xd;
 import pz0.y90;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class i {
@@ -24,7 +24,7 @@ public abstract class i {
         xd.Companion.getClass();
         x xVar = xd.a;
         p a2 = l0.a(l0.b(xVar));
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("choices", a2, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("description", xVar, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();

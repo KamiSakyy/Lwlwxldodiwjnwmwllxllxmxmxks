@@ -26,6 +26,6 @@ public final class fn {
     }
 
     public final String toString() {
-        return jo.f4.p("Author(__typename=", this.a, ", actorFields=", this.b, ")");
+        return jo.f4Shadow.p("Author(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

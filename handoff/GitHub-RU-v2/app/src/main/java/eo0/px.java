@@ -6,7 +6,7 @@ import jn0.mc0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class px implements aaShadow.a {
     public static final px a = new px();
-    public static final List b = sy.d0.o(new String[]{"__typename", "login"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "login"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         kw0.a aVar;

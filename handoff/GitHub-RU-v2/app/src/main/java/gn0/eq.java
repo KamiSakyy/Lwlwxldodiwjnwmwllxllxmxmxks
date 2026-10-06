@@ -72,7 +72,7 @@ public abstract class eq {
     public static final a81.t l0 = new a81.t(1, "orderBy", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         ff.Companion.getClass();
         aa.j0 j0Var = ff.a;
         yh.Companion.getClass();

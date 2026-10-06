@@ -10,8 +10,8 @@ public abstract class e90 {
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        c = new aa.q0("UserDashboard", n, sy.d0.n(wk.a));
+        c = new aa.q0("UserDashboard", n, sy.d0Shadow.n(wk.a));
     }
 }

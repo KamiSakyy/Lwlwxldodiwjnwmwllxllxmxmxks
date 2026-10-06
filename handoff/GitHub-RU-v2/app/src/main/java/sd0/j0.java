@@ -6,10 +6,10 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j0 implements aa.a {
     public static final j0 a = new j0();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
-        a0 a0Var;
+        a0Shadow a0Var;
         z zVar;
         b0 b0Var;
         k71.k.g(eVar, "reader");
@@ -56,7 +56,7 @@ public final class j0 implements aa.a {
         k71.k.g(vVar, "value");
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, vVar.a);
-        a0 a0Var = vVar.b;
+        a0Shadow a0Var = vVar.b;
         if (a0Var != null) {
             o0.d(fVar, wVar, a0Var);
         }

@@ -1,6 +1,6 @@
 package t21;
 
-import c21.u;
+import c21.uShadow;
 import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -11,7 +11,7 @@ public final class a {
         if (obj == this) {
             return true;
         }
-        return (obj instanceof a) && u.j(null, null) && u.j(null, null) && u.j(null, null) && u.j(null, null) && u.j(null, null);
+        return (obj instanceof a) && uShadow.j(null, null) && uShadow.j(null, null) && uShadow.j(null, null) && uShadow.j(null, null) && uShadow.j(null, null);
     }
 
     public final int hashCode() {

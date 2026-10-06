@@ -12,11 +12,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 import x61.m;
-import x61.r;
+import x61.rShadow;
 
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -43,11 +43,11 @@ public final class ProjectFilter extends d {
     public /* synthetic */ ProjectFilter(int i, l lVar, String str, List list) {
         super(i, lVar, str);
         if (1 != (i & 1)) {
-            c1.l(i, 1, ProjectFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, ProjectFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         if ((i & 4) == 0) {
-            this.v = r.r;
+            this.v = rShadow.r;
         } else {
             this.v = list;
         }
@@ -117,7 +117,7 @@ public final class ProjectFilter extends d {
     }
 
     public /* synthetic */ ProjectFilter() {
-        this(r.r);
+        this(rShadow.r);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

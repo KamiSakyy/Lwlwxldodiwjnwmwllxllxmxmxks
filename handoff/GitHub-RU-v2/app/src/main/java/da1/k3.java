@@ -10,7 +10,7 @@ final class k3 extends l3 {
     public final void d(u0 u0Var, a aVar) {
         boolean b0 = aVar.b0();
         f1 f1Var = l3.r;
-        if (b0) {
+        if (b0Shadow) {
             u0Var.l(this);
             u0Var.h("</");
             u0Var.o(f1Var);

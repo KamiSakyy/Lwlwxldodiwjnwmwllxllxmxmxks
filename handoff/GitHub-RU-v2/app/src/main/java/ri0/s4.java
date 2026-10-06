@@ -30,6 +30,6 @@ public final class s4 {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Contexts(totalCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Contexts(totalCount=", ", nodes=", ")", this.b);
     }
 }

@@ -46,12 +46,12 @@ public final class ja implements z01.o1, yb0, y90 {
                 k71.k.g(str, "id");
                 aa.u0 u0Var = new aa.u0(str2);
                 aa.t0 t0Var = aa.t0.d;
-                return y71.n1.y(new v9(new y00.l(in.r.h(this.t.d(new t60(str, t0Var, t0Var, t0Var, t0Var, u0Var))), 10), 4), this.u);
+                return y71.n1Shadow.y(new v9(new y00.l(in.rShadow.h(this.t.d(new t60(str, t0Var, t0Var, t0Var, t0Var, u0Var))), 10), 4), this.u);
             default:
                 k71.k.g(str, "id");
                 aa.u0 u0Var2 = new aa.u0(str2);
                 aa.t0 t0Var2 = aa.t0.d;
-                return y71.n1.y(new vb0.s7(new y00.l(in.r.h(this.t.d(new v40(str, t0Var2, t0Var2, t0Var2, t0Var2, u0Var2))), 10), 1), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(in.rShadow.h(this.t.d(new v40(str, t0Var2, t0Var2, t0Var2, t0Var2, u0Var2))), 10), 1), this.u);
         }
     }
 
@@ -62,12 +62,12 @@ public final class ja implements z01.o1, yb0, y90 {
                 k71.k.g(str, "id");
                 aa.u0 u0Var = new aa.u0(str2);
                 aa.t0 t0Var = aa.t0.d;
-                return y71.n1.y(new v9(new y00.l(in.r.h(this.t.d(new l80(str, t0Var, t0Var, t0Var, t0Var, t0Var, u0Var))), 10), 5), this.u);
+                return y71.n1Shadow.y(new v9(new y00.l(in.rShadow.h(this.t.d(new l80(str, t0Var, t0Var, t0Var, t0Var, t0Var, u0Var))), 10), 5), this.u);
             default:
                 k71.k.g(str, "id");
                 aa.u0 u0Var2 = new aa.u0(str2);
                 aa.t0 t0Var2 = aa.t0.d;
-                return y71.n1.y(new vb0.s7(new y00.l(in.r.h(this.t.d(new l60(str, t0Var2, t0Var2, t0Var2, t0Var2, t0Var2, u0Var2))), 10), 2), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(in.rShadow.h(this.t.d(new l60(str, t0Var2, t0Var2, t0Var2, t0Var2, t0Var2, u0Var2))), 10), 2), this.u);
         }
     }
 
@@ -77,11 +77,11 @@ public final class ja implements z01.o1, yb0, y90 {
             case 0:
                 k71.k.g(str, "ownerName");
                 k71.k.g(str2, "repoName");
-                return y71.n1.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new wx(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), null, false, null, null, 58), 10), 6), this.u);
+                return y71.n1Shadow.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new wx(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), null, false, null, null, 58), 10), 6), this.u);
             default:
                 k71.k.g(str, "ownerName");
                 k71.k.g(str2, "repoName");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new yv(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), null, false, null, null, 58), 10), 3), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new yv(new aa.u0(str4), str3 == null ? aa.t0.d : new aa.u0(str3), str, str2), null, false, null, null, 58), 10), 3), this.u);
         }
     }
 

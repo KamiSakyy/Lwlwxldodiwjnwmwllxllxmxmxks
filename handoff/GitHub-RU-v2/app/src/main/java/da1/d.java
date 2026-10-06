@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class d extends b0 {
+final class d extends b0Shadow {
     public d() {
         super("InCaption", 10);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         boolean d = s0Var.d();
         z zVar = b0.z;
         if (d && ((o0) s0Var).l().equals("caption")) {

@@ -19,12 +19,12 @@ public final class a1 extends g1 {
         switch (this.v) {
             case 0:
                 l0 l0Var = this.x.f;
-                c21.u.g(l0Var);
+                c21.uShadow.g(l0Var);
                 l0Var.beginAdUnitExposure(this.w, this.s);
                 break;
             default:
                 l0 l0Var2 = this.x.f;
-                c21.u.g(l0Var2);
+                c21.uShadow.g(l0Var2);
                 l0Var2.endAdUnitExposure(this.w, this.s);
                 break;
         }

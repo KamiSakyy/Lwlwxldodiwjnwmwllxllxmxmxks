@@ -2,7 +2,7 @@ package com.github.rudroid.actions.navigation;
 
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -25,7 +25,7 @@ public final class WorkflowsEntryPointRoute implements sa.e {
 
     public /* synthetic */ WorkflowsEntryPointRoute(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, WorkflowsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, WorkflowsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f5122r = str;

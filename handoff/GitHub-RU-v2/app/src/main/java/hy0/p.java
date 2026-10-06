@@ -1,14 +1,14 @@
 package hy0;
 
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import wx0.u4;
 import wx0.v4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements aa.a {
     public static final p a = new p();
-    public static final List b = d0.o(new String[]{"__typename", "defaultView", "views", "id"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "defaultView", "views", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

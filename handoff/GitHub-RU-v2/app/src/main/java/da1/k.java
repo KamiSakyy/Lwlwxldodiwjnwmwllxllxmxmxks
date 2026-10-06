@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class k extends b0 {
+final class k extends b0Shadow {
     public k() {
         super("InTemplate", 17);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         int b = y3.a.b(s0Var.a);
         x xVar = b0.x;
         if (b != 0) {

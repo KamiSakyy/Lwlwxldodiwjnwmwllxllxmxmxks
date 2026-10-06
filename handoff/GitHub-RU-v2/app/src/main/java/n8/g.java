@@ -5,9 +5,9 @@ import androidx.window.core.WindowStrictModeException;
 import java.util.ArrayList;
 import k71.k;
 import kotlin.NoWhenBranchMatchedException;
-import sy.d0;
+import sy.d0Shadow;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class g extends k21.f {
@@ -25,7 +25,7 @@ public final class g extends k21.f {
     public WindowStrictModeException f29661f;
 
     public g(Object obj, String str, a aVar, i iVar) {
-        r rVar;
+        rShadow rVar;
         k.g(obj, "value");
         k.g(iVar, "verificationMode");
         this.f29658c = obj;
@@ -42,15 +42,15 @@ public final class g extends k21.f {
             throw new IllegalArgumentException(s0.i("Requested element count ", length, " is less than zero.").toString());
         }
         if (length == 0) {
-            rVar = r.r;
+            rVar = rShadow.r;
         } else {
             int length2 = stackTrace.length;
             if (length >= length2) {
                 rVar = l.g0(stackTrace);
             } else if (length == 1) {
-                rVar = d0.n(stackTrace[length2 - 1]);
+                rVar = d0Shadow.n(stackTrace[length2 - 1]);
             } else {
-                r arrayList = new ArrayList(length);
+                rShadow arrayList = new ArrayList(length);
                 for (int i = length2 - length; i < length2; i++) {
                     arrayList.add(stackTrace[i]);
                 }

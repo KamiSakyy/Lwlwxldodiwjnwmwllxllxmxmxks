@@ -2,7 +2,7 @@ package ag;
 
 import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
-import com.github.rudroid.copilot.ui.d;
+import com.github.rudroid.copilot.ui.dShadow;
 import com.github.rudroid.issueorpullrequest.mergebox.ui.f0;
 import f1.o0;
 import j71.e;
@@ -11,7 +11,7 @@ import le.b0;
 import qg.f;
 import w1.r;
 import w61.a0;
-import xn.w;
+import xn.wShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final /* synthetic */ class a implements e {
@@ -45,7 +45,7 @@ public final /* synthetic */ class a implements e {
                 break;
             case 1:
                 ((Integer) obj2).getClass();
-                d.a(this.s, (w) this.y, (ZonedDateTime) this.z, this.t, this.u, (j71.c) this.v, (s) obj, t.L(this.w | 1), this.x);
+                d.a(this.s, (wShadow) this.y, (ZonedDateTime) this.z, this.t, this.u, (j71.c) this.v, (s) obj, t.L(this.w | 1), this.x);
                 break;
             case 2:
                 ((Integer) obj2).getClass();
@@ -61,7 +61,7 @@ public final /* synthetic */ class a implements e {
                 break;
             default:
                 ((Integer) obj2).getClass();
-                yg.t.a(this.s, (String) this.v, this.t, this.u, (j71.a) this.y, (String) this.z, (s) obj, t.L(this.w | 1), this.x);
+                yg.tShadow.a(this.s, (String) this.v, this.t, this.u, (j71.a) this.y, (String) this.z, (s) obj, t.L(this.w | 1), this.x);
                 break;
         }
         return a0.a;
@@ -91,7 +91,7 @@ public final /* synthetic */ class a implements e {
         this.x = i2;
     }
 
-    public /* synthetic */ a(r rVar, w wVar, ZonedDateTime zonedDateTime, boolean z, boolean z2, j71.c cVar, int i, int i2) {
+    public /* synthetic */ a(r rVar, wShadow wVar, ZonedDateTime zonedDateTime, boolean z, boolean z2, j71.c cVar, int i, int i2) {
         this.r = 1;
         this.s = rVar;
         this.y = wVar;

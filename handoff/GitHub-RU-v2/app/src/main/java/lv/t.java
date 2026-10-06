@@ -3,7 +3,7 @@ package lv;
 import aa.w;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -189,7 +189,7 @@ public abstract class t implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, mVar.b);
         fVar.z0("authorCanPushToRepository");
-        f4.C(mVar.c, aa.c.f, fVar, wVar, "author");
+        f4Shadow.C(mVar.c, aa.c.f, fVar, wVar, "author");
         aa.c.b(aa.c.c(n.a, true)).b(fVar, wVar, mVar.d);
         fVar.z0("state");
         fVar.I(mVar.e.r);

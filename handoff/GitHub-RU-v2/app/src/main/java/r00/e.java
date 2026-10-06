@@ -14,7 +14,7 @@ import m10.i30;
 import m10.p00;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class e {
@@ -24,7 +24,7 @@ public abstract class e {
         eh.Companion.getClass();
         x xVar = eh.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         List r = l.r(new m[]{new m("filename", xVar, (String) null, rVar, rVar, rVar), new m("body", xVar, (String) null, rVar, rVar, rVar)});
         ah.Companion.getClass();
         x xVar2 = ah.a;

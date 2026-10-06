@@ -22,7 +22,7 @@ public final class r0 extends q0 {
         boolean z = this.k;
         String str = z ? "<!" : "<?";
         String str2 = z ? ">" : "?>";
-        ca1.b bVar = this.g;
+        ca1.bShadow bVar = this.g;
         if (bVar == null || bVar.size() <= 0) {
             StringBuilder p = f1.e.p(str);
             p.append(n());

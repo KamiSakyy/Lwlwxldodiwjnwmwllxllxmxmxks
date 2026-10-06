@@ -29,7 +29,7 @@ public abstract class c extends a {
             k.d(w0);
             a81.f fVar2 = fVar;
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = a81.f.y;
-            while (atomicReferenceFieldUpdater.get(fVar2) == a81.b.c) {
+            while (atomicReferenceFieldUpdater.get(fVar2) == a81.bShadow.c) {
             }
             Object obj = atomicReferenceFieldUpdater.get(fVar2);
             l lVar = obj instanceof l ? (l) obj : null;

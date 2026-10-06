@@ -73,7 +73,7 @@ public abstract class b implements aa.a {
         Integer num3 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar = sa.a;
+            aa.xShadow xVar = sa.a;
             nn.a aVar = tp.a.a;
             switch (r0) {
                 case 0:
@@ -147,7 +147,7 @@ public abstract class b implements aa.a {
         fVar.I(aVar.d.r);
         fVar.z0("startedAt");
         sa.Companion.getClass();
-        aa.x xVar = sa.a;
+        aa.xShadow xVar = sa.a;
         aa.c.b(wVar.e(xVar)).b(fVar, wVar, aVar.e);
         no.a.e(fVar, "completedAt", wVar, xVar).b(fVar, wVar, aVar.f);
         fVar.z0("secondsToCompletion");

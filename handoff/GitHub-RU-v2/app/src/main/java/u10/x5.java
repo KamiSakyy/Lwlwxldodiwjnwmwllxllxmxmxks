@@ -23,7 +23,7 @@ public final class x5 implements aaShadow.w0 {
         List list = fc0.a0.a;
         List list2 = fc0.a0.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -43,7 +43,7 @@ public final class x5 implements aaShadow.w0 {
     }
 
     public final int hashCode() {
-        return this.t.hashCode() + jo.f4.a(this.s, this.r.hashCode() * 31, 31);
+        return this.t.hashCode() + jo.f4Shadow.a(this.s, this.r.hashCode() * 31, 31);
     }
 
     public final String i() {
@@ -65,11 +65,11 @@ public final class x5 implements aaShadow.w0 {
         aa.c.a.b(fVar, wVar, this.r);
         fVar.z0("after");
         aa.o0 o0Var = aa.c.i;
-        jo.f4.y(o0Var, fVar, wVar, this.s, "branch");
+        jo.f4Shadow.y(o0Var, fVar, wVar, this.s, "branch");
         aa.c.d(o0Var).d(fVar, wVar, this.t);
     }
 
     public final String toString() {
-        return f1.e.j(jo.f4.t(this.s, "CommitsQuery(id=", this.r, ", after=", ", branch="), this.t, ")");
+        return f1.e.j(jo.f4Shadow.t(this.s, "CommitsQuery(id=", this.r, ", after=", ", branch="), this.t, ")");
     }
 }

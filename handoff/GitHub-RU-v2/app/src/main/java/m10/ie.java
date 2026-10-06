@@ -10,8 +10,8 @@ public abstract class ie {
     public static final aa.q0 c;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        c = new aa.q0("DraftIssue", n, sy.d0.n(zp.a));
+        c = new aa.q0("DraftIssue", n, sy.d0Shadow.n(zp.a));
     }
 }

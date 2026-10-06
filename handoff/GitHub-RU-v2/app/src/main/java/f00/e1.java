@@ -145,7 +145,7 @@ public abstract class e1 implements aa.a {
                     break;
                 case 6:
                     num = num2;
-                    w0Var = (w0) aa.c.b(aa.c.c(f1.a, false)).a(eVar, wVar);
+                    w0Var = (w0) aa.c.b(aa.c.c(f1Shadow.a, false)).a(eVar, wVar);
                     break;
                 case 7:
                     num = num2;
@@ -178,7 +178,7 @@ public abstract class e1 implements aa.a {
         f1.e.A(x0Var.e, aVar, fVar, wVar, "groupByFields");
         aa.c.b(aa.c.c(a1.a, true)).b(fVar, wVar, x0Var.f);
         fVar.z0("sortByFields");
-        aa.c.b(aa.c.c(f1.a, false)).b(fVar, wVar, x0Var.g);
+        aa.c.b(aa.c.c(f1Shadow.a, false)).b(fVar, wVar, x0Var.g);
         fVar.z0("fields");
         aa.c.b(aa.c.c(z0.a, false)).b(fVar, wVar, x0Var.h);
         fVar.z0("__typename");

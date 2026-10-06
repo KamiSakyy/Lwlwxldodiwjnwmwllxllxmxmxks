@@ -1,6 +1,6 @@
 package w21;
 
-import c21.u;
+import c21.uShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
@@ -16,7 +16,7 @@ public final class g {
     public final void b(Exception exc) {
         o oVar = this.a;
         oVar.getClass();
-        u.h(exc, "Exception must not be null");
+        uShadow.h(exc, "Exception must not be null");
         synchronized (oVar.a) {
             try {
                 if (oVar.c) {

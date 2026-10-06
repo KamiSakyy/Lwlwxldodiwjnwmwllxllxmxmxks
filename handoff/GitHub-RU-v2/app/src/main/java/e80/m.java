@@ -2,12 +2,12 @@ package e80;
 
 import aa.w;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements aa.a {
     public static final m a = new m();
-    public static final List b = d0.o("__typename", "login");
+    public static final List b = d0Shadow.o("__typename", "login");
 
     public final Object a(ea.e eVar, w wVar) {
         k kVar;

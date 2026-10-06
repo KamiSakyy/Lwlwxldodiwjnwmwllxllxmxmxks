@@ -29,7 +29,7 @@ public final class a0 {
         }
         if (sVar2.S(i3 & 1, (i3 & 9363) != 9362)) {
             w1.r rVar3 = w1.o.a;
-            w1.r f = f0.o.f(p2.e(rVar3, 1.0f), ih.d.b(sVar2).o, d2.a0.b);
+            w1.r f = f0.o.f(p2.e(rVar3, 1.0f), ih.d.b(sVar2).o, d2.a0Shadow.b);
             androidx.compose.foundation.layout.e0 a = androidx.compose.foundation.layout.c0.a(androidx.compose.foundation.layout.l.c, w1.c.D, sVar2, 0);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();
@@ -42,16 +42,16 @@ public final class a0 {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             androidx.compose.runtime.t.I(sVar2, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             androidx.compose.runtime.t.I(sVar2, eVar4, c);
             float f2 = 16;
             int a2 = com.github.rudroid.uitoolkit.utils.h.a(f2, sVar2);

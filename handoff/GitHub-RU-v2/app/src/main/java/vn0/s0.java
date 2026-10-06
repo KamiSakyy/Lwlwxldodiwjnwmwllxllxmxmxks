@@ -3,7 +3,7 @@ package vn0;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.la0;
 import pz0.o7;
 
@@ -151,7 +151,7 @@ public abstract class s0 implements aa.a {
         String str4 = null;
         while (true) {
             int r0 = eVar.r0(a);
-            aa.x xVar = o7.a;
+            aa.xShadow xVar = o7.a;
             switch (r0) {
                 case 0:
                     num = num2;
@@ -239,7 +239,7 @@ public abstract class s0 implements aa.a {
         fVar.z0("runNumber");
         f1.e.v(r0Var.c, aVar, fVar, wVar, "createdAt");
         o7.Companion.getClass();
-        aa.x xVar = o7.a;
+        aa.xShadow xVar = o7.a;
         wVar.e(xVar).b(fVar, wVar, r0Var.d);
         fVar.z0("updatedAt");
         wVar.e(xVar).b(fVar, wVar, r0Var.e);

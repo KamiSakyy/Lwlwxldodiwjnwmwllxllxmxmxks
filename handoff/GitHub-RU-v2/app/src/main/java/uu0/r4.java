@@ -10,7 +10,7 @@ import pz0.o7;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r4 implements aa.a {
     public static final r4 a = new r4();
-    public static final List b = sy.d0.o(new String[]{"__typename", "url", "id", "title", "titleHTMLString", "createdAt", "viewerDidAuthor", "locked", "author", "isReadByViewer", "bodyHtml", "bodyUrl", "number", "issueState", "milestone", "completeTaskListItemCount", "incompleteTaskListItemCount", "viewerCanReopen", "stateReason", "viewerCanAssign", "viewerCanLabel", "isPinned", "issueType"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "url", "id", "title", "titleHTMLString", "createdAt", "viewerDidAuthor", "locked", "author", "isReadByViewer", "bodyHtml", "bodyUrl", "number", "issueState", "milestone", "completeTaskListItemCount", "incompleteTaskListItemCount", "viewerCanReopen", "stateReason", "viewerCanAssign", "viewerCanLabel", "isPinned", "issueType"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x0041. Please report as an issue. */
     public static l4 c(ea.e eVar, aa.w wVar) {
@@ -109,7 +109,7 @@ public final class r4 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -168,7 +168,7 @@ public final class r4 implements aa.a {
                     long nextLong2 = eVar.nextLong();
                     if (nextLong2 > 2147483647L) {
                         while (nextLong2 > 2147483647L) {
-                            nextLong2 = jo.f4.c(1, nextLong2, "substring(...)");
+                            nextLong2 = jo.f4Shadow.c(1, nextLong2, "substring(...)");
                         }
                         valueOf2 = Integer.valueOf((int) nextLong2);
                     } else {
@@ -192,7 +192,7 @@ public final class r4 implements aa.a {
                     long nextLong3 = eVar.nextLong();
                     if (nextLong3 > 2147483647L) {
                         while (nextLong3 > 2147483647L) {
-                            nextLong3 = jo.f4.c(1, nextLong3, "substring(...)");
+                            nextLong3 = jo.f4Shadow.c(1, nextLong3, "substring(...)");
                         }
                         valueOf3 = Integer.valueOf((int) nextLong3);
                     } else {
@@ -354,8 +354,8 @@ public final class r4 implements aa.a {
         wVar.e(o7.a).b(fVar, wVar, l4Var.f);
         fVar.z0("viewerDidAuthor");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(l4Var.g, bVar2, fVar, wVar, "locked");
-        jo.f4.C(l4Var.h, bVar2, fVar, wVar, "author");
+        jo.f4Shadow.C(l4Var.g, bVar2, fVar, wVar, "locked");
+        jo.f4Shadow.C(l4Var.h, bVar2, fVar, wVar, "author");
         aa.c.b(aa.c.c(o4.a, true)).b(fVar, wVar, l4Var.i);
         fVar.z0("isReadByViewer");
         aa.o0 o0Var = aa.c.k;
@@ -375,11 +375,11 @@ public final class r4 implements aa.a {
         fVar.z0("incompleteTaskListItemCount");
         fVar.z(l4Var.q);
         fVar.z0("viewerCanReopen");
-        jo.f4.C(l4Var.r, bVar2, fVar, wVar, "stateReason");
+        jo.f4Shadow.C(l4Var.r, bVar2, fVar, wVar, "stateReason");
         aa.c.b(qz0.a.x).b(fVar, wVar, l4Var.s);
         fVar.z0("viewerCanAssign");
-        jo.f4.C(l4Var.t, bVar2, fVar, wVar, "viewerCanLabel");
-        jo.f4.C(l4Var.u, bVar2, fVar, wVar, "isPinned");
+        jo.f4Shadow.C(l4Var.t, bVar2, fVar, wVar, "viewerCanLabel");
+        jo.f4Shadow.C(l4Var.u, bVar2, fVar, wVar, "isPinned");
         o0Var.b(fVar, wVar, l4Var.v);
         fVar.z0("issueType");
         aa.c.b(aa.c.c(p4.a, true)).b(fVar, wVar, l4Var.w);

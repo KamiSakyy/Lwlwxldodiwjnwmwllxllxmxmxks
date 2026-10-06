@@ -1,7 +1,7 @@
 package m41;
 
 import android.os.Bundle;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.e1;
 import com.google.android.gms.internal.measurement.k1;
 import com.google.common.collect.h;
@@ -17,7 +17,7 @@ public final class b implements a {
     public ConcurrentHashMap b;
 
     public b(s21.a aVar) {
-        u.g(aVar);
+        uShadow.g(aVar);
         this.a = aVar;
         this.b = new ConcurrentHashMap();
     }

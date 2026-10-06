@@ -29,7 +29,7 @@ public abstract class s6 {
         ah.Companion.getClass();
         aa.x xVar = ah.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         wg.Companion.getClass();
         aa.x xVar2 = wg.a;
@@ -47,7 +47,7 @@ public abstract class s6 {
         aa.a0 a0Var = n40.s;
         k71.k.g(a0Var, "type");
         List r = x61.l.r(new aa.m[]{mVar, mVar2, mVar3, mVar4, mVar5, mVar6, mVar7, new aa.m("viewerPermission", a0Var, (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar)});
-        List n = sy.d0.n(new aa.m("viewerCanPush", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar));
+        List n = sy.d0Shadow.n(new aa.m("viewerCanPush", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar));
         aa.m mVar8 = new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
         n10.Companion.getClass();
         aa.q0 q0Var = n10.a;
@@ -62,20 +62,20 @@ public abstract class s6 {
         sa.Companion.getClass();
         List r5 = x61.l.r(new aa.m[]{mVar10, mVar11, new aa.m("committedDate", v8.l0.b(sa.a), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar)});
         aa.s mVar12 = new aa.m("__typename", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n2 = sy.d0.n("MergeQueueEntry");
+        List n2 = sy.d0Shadow.n("MergeQueueEntry");
         List list2 = cu.b.a;
         List r6 = x61.l.r(new aa.s[]{mVar12, no.a.c(list2, "selections", "MergeQueueEntry", n2, list2), new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.s mVar13 = new aa.m("__typename", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n3 = sy.d0.n("MergeQueue");
+        List n3 = sy.d0Shadow.n("MergeQueue");
         List list3 = cu.c.a;
         List r7 = x61.l.r(new aa.s[]{mVar13, no.a.c(list3, "selections", "MergeQueue", n3, list3), new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.s mVar14 = new aa.m("__typename", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar);
         aa.s c = no.a.c(list, "selections", "Node", x61.l.r(new String[]{"Achievement", "AchievementTier", "AddedToMergeQueueEvent", "AddedToProjectEvent", "AddedToProjectV2Event", "App", "AssignedEvent", "AutoMergeDisabledEvent", "AutoMergeEnabledEvent", "AutoRebaseEnabledEvent", "AutoSquashEnabledEvent", "AutomaticBaseChangeFailedEvent", "AutomaticBaseChangeSucceededEvent", "BaseRefChangedEvent", "BaseRefDeletedEvent", "BaseRefForcePushedEvent", "Blob", "BlockedByAddedEvent", "BlockedByRemovedEvent", "BlockingAddedEvent", "BlockingRemovedEvent", "Bot", "BranchProtectionRule", "BypassForcePushAllowance", "BypassPullRequestAllowance", "CWE", "CheckRun", "CheckSuite", "ClosedEvent", "CodeOfConduct", "CommentDeletedEvent", "Commit", "CommitComment", "CommitCommentThread", "Comparison", "ConnectedEvent", "ConvertToDraftEvent", "ConvertedFromDraftEvent", "ConvertedNoteToIssueEvent", "ConvertedToDiscussionEvent", "CopilotWorkFinishedEvent", "CopilotWorkFinishedFailureEvent", "CopilotWorkStartedEvent", "CrossReferencedEvent", "DemilestonedEvent", "DependencyGraphManifest", "DeployKey", "DeployedEvent", "Deployment", "DeploymentEnvironmentChangedEvent", "DeploymentReview", "DeploymentStatus", "DisconnectedEvent", "Discussion", "DiscussionCategory", "DiscussionComment", "DiscussionPoll", "DiscussionPollOption", "DraftIssue", "Enterprise", "EnterpriseAdministratorInvitation", "EnterpriseIdentityProvider", "EnterpriseMemberInvitation", "EnterpriseRepositoryInfo", "EnterpriseServerInstallation", "EnterpriseServerUserAccount", "EnterpriseServerUserAccountEmail", "EnterpriseServerUserAccountsUpload", "EnterpriseUserAccount", "Environment", "ExternalIdentity", "Gist", "GistComment", "HeadRefDeletedEvent", "HeadRefForcePushedEvent", "HeadRefRestoredEvent", "IpAllowListEntry", "Issue", "IssueComment", "IssueCommentPinnedEvent", "IssueCommentUnpinnedEvent", "IssueFieldAddedEvent", "IssueFieldChangedEvent", "IssueFieldDate", "IssueFieldDateValue", "IssueFieldNumber", "IssueFieldNumberValue", "IssueFieldRemovedEvent", "IssueFieldSingleSelect", "IssueFieldSingleSelectOption", "IssueFieldSingleSelectValue", "IssueFieldText", "IssueFieldTextValue", "IssueType", "IssueTypeAddedEvent", "IssueTypeChangedEvent", "IssueTypeRemovedEvent", "Label", "LabeledEvent", "Language", "License", "LinkedBranch", "LockedEvent", "Mannequin", "MarkedAsDuplicateEvent", "MarketplaceCategory", "MarketplaceListing", "MemberFeatureRequestNotification", "MembersCanDeleteReposClearAuditEntry", "MembersCanDeleteReposDisableAuditEntry", "MembersCanDeleteReposEnableAuditEntry", "MentionedEvent", "MergeQueue", "MergeQueueEntry", "MergedEvent", "MigrationSource", "Milestone", "MilestonedEvent", "MobilePushNotificationSchedule", "MovedColumnsInProjectEvent", "NotificationFilter", "NotificationThread", "OIDCProvider", "OauthApplicationCreateAuditEntry", "OrgAddBillingManagerAuditEntry", "OrgAddMemberAuditEntry", "OrgBlockUserAuditEntry", "OrgConfigDisableCollaboratorsOnlyAuditEntry", "OrgConfigEnableCollaboratorsOnlyAuditEntry", "OrgCreateAuditEntry", "OrgDisableOauthAppRestrictionsAuditEntry", "OrgDisableSamlAuditEntry", "OrgDisableTwoFactorRequirementAuditEntry", "OrgEnableOauthAppRestrictionsAuditEntry", "OrgEnableSamlAuditEntry", "OrgEnableTwoFactorRequirementAuditEntry", "OrgInviteMemberAuditEntry", "OrgInviteToBusinessAuditEntry", "OrgOauthAppAccessApprovedAuditEntry", "OrgOauthAppAccessBlockedAuditEntry", "OrgOauthAppAccessDeniedAuditEntry", "OrgOauthAppAccessRequestedAuditEntry", "OrgOauthAppAccessUnblockedAuditEntry", "OrgRemoveBillingManagerAuditEntry", "OrgRemoveMemberAuditEntry", "OrgRemoveOutsideCollaboratorAuditEntry", "OrgRestoreMemberAuditEntry", "OrgUnblockUserAuditEntry", "OrgUpdateDefaultRepositoryPermissionAuditEntry", "OrgUpdateMemberAuditEntry", "OrgUpdateMemberRepositoryCreationPermissionAuditEntry", "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry", "Organization", "OrganizationIdentityProvider", "OrganizationInvitation", "OrganizationMigration", "Package", "PackageFile", "PackageTag", "PackageVersion", "ParentIssueAddedEvent", "ParentIssueRemovedEvent", "Patch", "PinnedDiscussion", "PinnedEnvironment", "PinnedEvent", "PinnedIssue", "PinnedIssueComment", "PrivateRepositoryForkingDisableAuditEntry", "PrivateRepositoryForkingEnableAuditEntry", "Project", "ProjectCard", "ProjectColumn", "ProjectV2", "ProjectV2Field", "ProjectV2Item", "ProjectV2ItemFieldDateValue", "ProjectV2ItemFieldIterationValue", "ProjectV2ItemFieldNumberValue", "ProjectV2ItemFieldSingleSelectValue", "ProjectV2ItemFieldTextValue", "ProjectV2ItemStatusChangedEvent", "ProjectV2IterationField", "ProjectV2SingleSelectField", "ProjectV2StatusUpdate", "ProjectV2View", "ProjectV2Workflow", "PublicKey", "PullRequest", "PullRequestCommit", "PullRequestCommitCommentThread", "PullRequestReview", "PullRequestReviewComment", "PullRequestReviewThread", "PullRequestThread", "Push", "PushAllowance", "Query", "Reaction", "ReadyForReviewEvent", "Ref", "ReferencedEvent", "Release", "ReleaseAsset", "RemovedFromMergeQueueEvent", "RemovedFromProjectEvent", "RemovedFromProjectV2Event", "RenamedTitleEvent", "ReopenedEvent", "RepoAccessAuditEntry", "RepoAddMemberAuditEntry", "RepoAddTopicAuditEntry", "RepoArchivedAuditEntry", "RepoChangeMergeSettingAuditEntry", "RepoConfigDisableAnonymousGitAccessAuditEntry", "RepoConfigDisableCollaboratorsOnlyAuditEntry", "RepoConfigDisableContributorsOnlyAuditEntry", "RepoConfigDisableSockpuppetDisallowedAuditEntry", "RepoConfigEnableAnonymousGitAccessAuditEntry", "RepoConfigEnableCollaboratorsOnlyAuditEntry", "RepoConfigEnableContributorsOnlyAuditEntry", "RepoConfigEnableSockpuppetDisallowedAuditEntry", "RepoConfigLockAnonymousGitAccessAuditEntry", "RepoConfigUnlockAnonymousGitAccessAuditEntry", "RepoCreateAuditEntry", "RepoDestroyAuditEntry", "RepoRemoveMemberAuditEntry", "RepoRemoveTopicAuditEntry", "Repository", "RepositoryAdvisory", "RepositoryAdvisoryComment", "RepositoryCustomProperty", "RepositoryDependabotAlertsThread", "RepositoryInvitation", "RepositoryMigration", "RepositoryRule", "RepositoryRuleset", "RepositoryRulesetBypassActor", "RepositoryTopic", "RepositoryVisibilityChangeDisableAuditEntry", "RepositoryVisibilityChangeEnableAuditEntry", "RepositoryVulnerabilityAlert", "RequiredStatusCheck", "ReviewDismissalAllowance", "ReviewDismissedEvent", "ReviewRequest", "ReviewRequestRemovedEvent", "ReviewRequestedEvent", "SavedReply", "SearchShortcut", "SecurityAdvisory", "SponsorsActivity", "SponsorsListing", "SponsorsListingFeaturedItem", "SponsorsTier", "Sponsorship", "SponsorshipNewsletter", "Status", "StatusCheck", "StatusCheckRollup", "StatusContext", "SubIssueAddedEvent", "SubIssueRemovedEvent", "SubscribedEvent", "Tag", "Team", "TeamAddMemberAuditEntry", "TeamAddRepositoryAuditEntry", "TeamChangeParentTeamAuditEntry", "TeamDashboard", "TeamRemoveMemberAuditEntry", "TeamRemoveRepositoryAuditEntry", "TeamSearchShortcut", "Topic", "TransferredEvent", "Tree", "UnassignedEvent", "UnlabeledEvent", "UnlockedEvent", "UnmarkedAsDuplicateEvent", "UnpinnedEvent", "UnsubscribedEvent", "User", "UserBlockedEvent", "UserContentEdit", "UserDashboard", "UserList", "UserNamespaceRepository", "UserStatus", "VerifiableDomain", "Workflow", "WorkflowRun", "WorkflowRunFile"}), list);
-        List n4 = sy.d0.n("PullRequestCommit");
+        List n4 = sy.d0Shadow.n("PullRequestCommit");
         List list4 = kv.a.a;
         List r8 = x61.l.r(new aa.s[]{mVar14, c, no.a.c(list4, "selections", "PullRequestCommit", n4, list4)});
         h00.Companion.getClass();
-        List n5 = sy.d0.n(new aa.m("nodes", v8.l0.a(h00.a), (String) null, rVar, rVar, r8));
+        List n5 = sy.d0Shadow.n(new aa.m("nodes", v8.l0.a(h00.a), (String) null, rVar, rVar, r8));
         aa.s mVar15 = new aa.m("__typename", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar);
         aa.s mVar16 = new aa.m("id", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
         sg.Companion.getClass();
@@ -91,7 +91,7 @@ public abstract class s6 {
         k71.k.g(q0Var2, "type");
         aa.s mVar21 = new aa.m("headRef", q0Var2, (String) null, rVar, rVar, r2);
         aa.s mVar22 = new aa.m("baseRefName", v8.l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        List n6 = sy.d0.n("PullRequest");
+        List n6 = sy.d0Shadow.n("PullRequest");
         List list5 = hv.a.a;
         aa.s c2 = no.a.c(list5, "selections", "PullRequest", n6, list5);
         aa.s mVar23 = new aa.m("viewerCanMergeAsAdmin", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -115,7 +115,7 @@ public abstract class s6 {
         j00.Companion.getClass();
         aa.r b2 = v8.l0.b(j00.a);
         ux.Companion.getClass();
-        List r9 = x61.l.r(new aa.s[]{mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, mVar21, mVar22, c2, mVar23, mVar24, mVar25, mVar26, mVar27, mVar28, new aa.m("timelineItems", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(ux.O, new aa.u0(sy.d0.n("PULL_REQUEST_COMMIT"))), new aa.k(ux.P, new aa.u0(1))}), n5)});
+        List r9 = x61.l.r(new aa.s[]{mVar15, mVar16, mVar17, mVar18, mVar19, mVar20, mVar21, mVar22, c2, mVar23, mVar24, mVar25, mVar26, mVar27, mVar28, new aa.m("timelineItems", b2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(ux.O, new aa.u0(sy.d0Shadow.n("PULL_REQUEST_COMMIT"))), new aa.k(ux.P, new aa.u0(1))}), n5)});
         aa.q0 q0Var6 = ux.T;
         k71.k.g(q0Var6, "type");
         aa.m mVar29 = new aa.m("pullRequest", q0Var6, (String) null, rVar, rVar, r9);
@@ -125,6 +125,6 @@ public abstract class s6 {
         aa.q0 q0Var7 = te0.a;
         k71.k.g(q0Var7, "type");
         vp.Companion.getClass();
-        a = sy.d0.n(new aa.m("updatePullRequestBranch", q0Var7, (String) null, rVar, no.a.s(vp.q1, new aa.u0(x61.x.u(new w61.k[]{new w61.k("pullRequestId", new aa.t("id")), new w61.k("updateMethod", new aa.t("updateMethod"))}))), r11));
+        a = sy.d0Shadow.n(new aa.m("updatePullRequestBranch", q0Var7, (String) null, rVar, no.a.s(vp.q1, new aa.u0(x61.x.u(new w61.k[]{new w61.k("pullRequestId", new aa.t("id")), new w61.k("updateMethod", new aa.t("updateMethod"))}))), r11));
     }
 }

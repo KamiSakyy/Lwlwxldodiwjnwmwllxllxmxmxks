@@ -7,7 +7,7 @@ import android.content.pm.Signature;
 import android.text.TextUtils;
 import android.util.JsonReader;
 import androidx.compose.foundation.lazy.layout.o1;
-import c21.u;
+import c21.uShadow;
 import com.google.firebase.installations.FirebaseInstallationsException;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -85,7 +85,7 @@ public final class c {
     }
 
     public static long d(String str) {
-        u.a("Invalid Expiration Timestamp.", d.matcher(str).matches());
+        uShadow.a("Invalid Expiration Timestamp.", d.matcher(str).matches());
         if (str == null || str.length() == 0) {
             return 0L;
         }

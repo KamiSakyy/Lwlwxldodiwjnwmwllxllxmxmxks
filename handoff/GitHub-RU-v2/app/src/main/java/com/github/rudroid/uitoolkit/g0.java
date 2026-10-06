@@ -60,7 +60,7 @@ public final class g0 {
             float f2 = ih.a.n;
             ub.b(i4.p0(2131954911, sVar2), f0.o.r(b2.d.k(androidx.compose.foundation.layout.b.B(rVar3, f2, ih.a.l, f2, 0.0f, 8), a0Var), false, 3), 0L, 0L, (k3.s) null, 0L, new r3.k(3), 0L, 0, false, 0, 0, (j71.c) null, ih.d.f(sVar2).o, sVar, 0, 0, 130044);
             sVar2 = sVar;
-            sg.k0.b(androidx.compose.foundation.layout.b.B(rVar3, 0.0f, f2, 0.0f, 0.0f, 13), false, aVar, null, i4.p0(2131951861, sVar2), null, sVar2, ((i2 << 3) & 896) | 6, 42);
+            sg.k0Shadow.b(androidx.compose.foundation.layout.b.B(rVar3, 0.0f, f2, 0.0f, 0.0f, 13), false, aVar, null, i4.p0(2131951861, sVar2), null, sVar2, ((i2 << 3) & 896) | 6, 42);
             sVar2.q(true);
             rVar2 = rVar3;
         } else {

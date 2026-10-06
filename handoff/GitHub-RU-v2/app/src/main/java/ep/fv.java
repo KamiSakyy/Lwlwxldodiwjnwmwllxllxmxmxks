@@ -9,7 +9,7 @@ import jo.z80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fv implements aaShadow.a {
     public static final fv a = new fv();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         w80 w80Var;

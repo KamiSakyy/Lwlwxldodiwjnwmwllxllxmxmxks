@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 import xn.c4;
@@ -27,7 +27,7 @@ public final class SteerCommand$PlanApprovalResponse implements c4 {
 
     public /* synthetic */ SteerCommand$PlanApprovalResponse(int i, String str, boolean z, String str2, Boolean bool, String str3) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, SteerCommand$PlanApprovalResponse$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, SteerCommand$PlanApprovalResponse$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;

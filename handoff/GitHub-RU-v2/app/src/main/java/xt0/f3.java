@@ -7,7 +7,7 @@ import pz0.n30;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f3 implements aa.a {
     public static final f3 a = new f3();
-    public static final List b = sy.d0.o(new String[]{"id", "state", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "state", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

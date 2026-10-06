@@ -7,7 +7,7 @@ import u10.g80;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ju implements aaShadow.a {
     public static final ju a = new ju();
-    public static final List b = sy.d0.n("user");
+    public static final List b = sy.d0Shadow.n("user");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

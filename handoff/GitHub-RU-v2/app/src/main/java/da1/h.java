@@ -1,13 +1,13 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class h extends b0 {
+final class h extends b0Shadow {
     public h() {
         super("InCell", 14);
     }
 
-    @Override // da1.b0
-    public final boolean d(s0 s0Var, b bVar) {
+    @Override // da1.b0Shadow
+    public final boolean d(s0 s0Var, bShadow bVar) {
         boolean d = s0Var.d();
         x xVar = b0.x;
         if (!d) {

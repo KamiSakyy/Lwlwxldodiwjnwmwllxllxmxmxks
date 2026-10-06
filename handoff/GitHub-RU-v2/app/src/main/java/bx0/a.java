@@ -3,7 +3,7 @@ package bx0;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 import xt0.b5;
 import xt0.c5;
 import xt0.d5;
@@ -18,7 +18,7 @@ public final class a {
         e2 e2Var;
         Object obj;
         List<c5> list = v4Var != null ? v4Var.a : null;
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         if (list == null) {
             list = rVar;
         }

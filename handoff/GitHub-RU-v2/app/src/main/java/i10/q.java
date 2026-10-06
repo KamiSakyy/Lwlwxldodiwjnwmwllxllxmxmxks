@@ -17,7 +17,7 @@ public final class q implements w0 {
         List list = k10.d.a;
         List list2 = k10.d.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -30,7 +30,7 @@ public final class q implements w0 {
     }
 
     public final int hashCode() {
-        return k71.x.a(q.class).hashCode();
+        return k71.xShadow.a(q.class).hashCode();
     }
 
     public final String i() {

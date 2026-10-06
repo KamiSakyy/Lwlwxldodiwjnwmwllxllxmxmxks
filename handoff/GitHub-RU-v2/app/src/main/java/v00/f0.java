@@ -65,7 +65,7 @@ public final class f0 extends c71.j implements j71.c {
             }
             sy.y.j(obj);
         }
-        SteerAgentTaskRequest w = sy.p.w(new SteerCommand$PlanApprovalResponse(this.y, this.z, this.A, this.B, this.C));
+        SteerAgentTaskRequest w = sy.pShadow.w(new SteerCommand$PlanApprovalResponse(this.y, this.z, this.A, this.B, this.C));
         this.v = 2;
     }
 }

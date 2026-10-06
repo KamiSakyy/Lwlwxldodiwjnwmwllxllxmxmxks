@@ -68,7 +68,7 @@ public final class a5 extends androidx.lifecycle.k1 {
         String str2 = (String) a1Var.a("EXTRA_DRAFT_MESSAGE");
         p4 Q = Q(str2 != null ? str2 : "", z4Var.f13643b);
         aVar.getClass();
-        y71.y1 c10 = y71.n1.c(z4.a(z4Var, new com.github.rudroid.utilities.ui.h0(Q), null, str, 2));
+        y71.y1 c10 = y71.n1Shadow.c(z4.a(z4Var, new com.github.rudroid.utilities.ui.h0(Q), null, str, 2));
         this.f13087w = c10;
         this.f13088x = new y71.i1(c10);
         Boolean bool = (Boolean) a1Var.a("EXTRA_HAS_PENDING_REVIEW");

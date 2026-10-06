@@ -8,7 +8,7 @@ import aa.w;
 import java.util.List;
 import k71.k;
 import m10.vp;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements n0 {
@@ -27,7 +27,7 @@ public final class e implements n0 {
         List list = vu.a.a;
         List list2 = vu.a.a;
         k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -43,7 +43,7 @@ public final class e implements n0 {
     }
 
     public final int hashCode() {
-        return this.r.hashCode();
+        return this.rShadow.hashCode();
     }
 
     public final String i() {

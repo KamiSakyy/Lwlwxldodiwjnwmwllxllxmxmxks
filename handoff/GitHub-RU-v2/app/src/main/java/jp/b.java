@@ -16,7 +16,7 @@ import m10.p00;
 import m10.q7;
 import m10.s7;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,14 +27,14 @@ public abstract class b {
     static {
         wg.Companion.getClass();
         r b = l0.b(wg.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar = eh.a;
         k.g(xVar, "type");
         List r = l.r(new m[]{mVar, new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("CopilotAgentTask");
+        List n = d0Shadow.n("CopilotAgentTask");
         List list = ip.c.a;
         List r2 = l.r(new s[]{mVar2, no.a.c(list, "selections", "CopilotAgentTask", n, list), new m("taskId", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         mr.Companion.getClass();

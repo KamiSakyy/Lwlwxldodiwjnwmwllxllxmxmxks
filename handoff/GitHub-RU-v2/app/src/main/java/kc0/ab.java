@@ -4,9 +4,9 @@ package kc0;
 public final class ab {
     public String a;
     public String b;
-    public uf0.a0 c;
+    public uf0.a0Shadow c;
 
-    public ab(String str, String str2, uf0.a0 a0Var) {
+    public ab(String str, String str2, uf0.a0Shadow a0Var) {
         this.a = str;
         this.b = str2;
         this.c = a0Var;

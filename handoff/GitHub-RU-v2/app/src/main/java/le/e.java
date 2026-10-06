@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import com.github.service.models.response.TrendingPeriod;
 import com.github.service.models.response.type.RepositoryRecommendationReason;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public abstract class e implements z {

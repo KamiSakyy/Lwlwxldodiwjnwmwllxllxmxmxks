@@ -24,7 +24,7 @@ final class b7<T> implements y71.j {
         fl.f fVar = (fl.f) p0Var.d();
         List list2 = fVar != null ? (List) fVar.b : null;
         if (list2 == null) {
-            list2 = x61.r.r;
+            list2 = x61.rShadow.r;
         }
         ArrayList arrayList = new ArrayList(x61.n.F(list, 10));
         Iterator<T> it = list.iterator();

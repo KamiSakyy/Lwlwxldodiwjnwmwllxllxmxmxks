@@ -3,7 +3,7 @@ package rm0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class v3 extends c71.j implements j71.e {
+public final class v3Shadow extends c71.j implements j71.e {
     public final /* synthetic */ int v;
     public int w;
     public /* synthetic */ Object x;
@@ -22,11 +22,11 @@ public final class v3 extends c71.j implements j71.e {
     public final a71.c r(a71.c cVar, Object obj) {
         switch (this.v) {
             case 0:
-                v3 v3Var = new v3(this.y, this.z, cVar, 0);
+                v3Shadow v3Var = new v3Shadow(this.y, this.z, cVar, 0);
                 v3Var.x = obj;
                 return v3Var;
             default:
-                v3 v3Var2 = new v3(this.y, this.z, cVar, 1);
+                v3Shadow v3Var2 = new v3Shadow(this.y, this.z, cVar, 1);
                 v3Var2.x = obj;
                 return v3Var2;
         }
@@ -38,7 +38,7 @@ public final class v3 extends c71.j implements j71.e {
         a71.c cVar = (a71.c) obj2;
         switch (this.v) {
         }
-        return ((v3) r(cVar, list)).v(w61.a0.a);
+        return ((v3Shadow) r(cVar, list)).v(w61.a0.a);
     }
 
     @Override // c71.a

@@ -21,13 +21,13 @@ final class g1<T> implements y71.j {
         i1Var.M = f2;
         if (f2 || z) {
             if (i1Var.K) {
-                i1Var.C = v71.b0.z(androidx.lifecycle.d1.k(i1Var), (a71.h) null, (v71.a0) null, new o1(i1Var, null), 3);
+                i1Var.C = v71.b0.z(androidx.lifecycle.d1.k(i1Var), (a71.h) null, (v71.a0Shadow) null, new o1(i1Var, null), 3);
             } else {
                 v71.q1 q1Var = i1Var.C;
                 if (q1Var != null) {
                     q1Var.m((CancellationException) null);
                 }
-                i1Var.C = v71.b0.z(androidx.lifecycle.d1.k(i1Var), (a71.h) null, (v71.a0) null, new k1(i1Var, null), 3);
+                i1Var.C = v71.b0.z(androidx.lifecycle.d1.k(i1Var), (a71.h) null, (v71.a0Shadow) null, new k1(i1Var, null), 3);
             }
         }
         if (i1Var.L) {
@@ -35,7 +35,7 @@ final class g1<T> implements y71.j {
             if (q1Var2 != null) {
                 q1Var2.m((CancellationException) null);
             }
-            i1Var.D = v71.b0.z(androidx.lifecycle.d1.k(i1Var), (a71.h) null, (v71.a0) null, new m1(i1Var, null), 3);
+            i1Var.D = v71.b0.z(androidx.lifecycle.d1.k(i1Var), (a71.h) null, (v71.a0Shadow) null, new m1(i1Var, null), 3);
         }
         y71.y1 y1Var = i1Var.I;
         Boolean valueOf = Boolean.valueOf(z);

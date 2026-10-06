@@ -74,16 +74,16 @@ public final class f {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar2 = v2.g.f;
+            v2.eShadow eVar2 = v2.g.f;
             androidx.compose.runtime.t.I(sVar2, eVar2, d2);
-            v2.e eVar3 = v2.g.e;
+            v2.eShadow eVar3 = v2.g.e;
             androidx.compose.runtime.t.I(sVar2, eVar3, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar4 = v2.g.g;
+            v2.eShadow eVar4 = v2.g.g;
             androidx.compose.runtime.t.w(sVar2, valueOf, eVar4);
             v2.d dVar = v2.g.h;
             androidx.compose.runtime.t.E(sVar2, dVar);
-            v2.e eVar5 = v2.g.d;
+            v2.eShadow eVar5 = v2.g.d;
             androidx.compose.runtime.t.I(sVar2, eVar5, c);
             w1.o oVar2 = w1.o.a;
             w1.r w = f0.o.w(p2.e(p2.u(oVar2), 1.0f), f0.o.v(sVar2), true);
@@ -141,7 +141,7 @@ public final class f {
                 sVar2.c0(1445353125);
             } else {
                 sVar2.c0(1445353126);
-                sg.y.a(100663296 | ((i5 >> 9) & 896), 251, null, sVar2, null, null, null, null, aVar, r1.i.d(142111019, new d2(i4, 8), sVar2), null, false);
+                sg.yShadow.a(100663296 | ((i5 >> 9) & 896), 251, null, sVar2, null, null, null, null, aVar, r1.i.d(142111019, new d2(i4, 8), sVar2), null, false);
             }
             sVar2.q(z2);
             sVar2.q(true);

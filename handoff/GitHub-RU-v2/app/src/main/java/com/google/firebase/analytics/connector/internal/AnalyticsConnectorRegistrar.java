@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.measurement.k1;
 import com.google.firebase.components.ComponentRegistrar;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import m51.c;
 import p41.b;
 import p41.i;
 import p41.j;
-import sy.o;
+import sy.oShadow;
 import z70.j3;
 import z70.y1;
 
@@ -28,10 +28,10 @@ public class AnalyticsConnectorRegistrar implements ComponentRegistrar {
         g gVar = (g) bVar.a(g.class);
         Context context = (Context) bVar.a(Context.class);
         c cVar = (c) bVar.a(c.class);
-        u.g(gVar);
-        u.g(context);
-        u.g(cVar);
-        u.g(context.getApplicationContext());
+        uShadow.g(gVar);
+        uShadow.g(context);
+        uShadow.g(cVar);
+        uShadow.g(context.getApplicationContext());
         if (m41.b.c == null) {
             synchronized (m41.b.class) {
                 try {
@@ -55,13 +55,13 @@ public class AnalyticsConnectorRegistrar implements ComponentRegistrar {
     @Keep
     @SuppressLint({"MissingPermission"})
     public List<p41.a> getComponents() {
-        i4.u a = p41.a.a(a.class);
+        i4.uShadow a = p41.a.a(a.class);
         a.a(i.a(g.class));
         a.a(i.a(Context.class));
         a.a(i.a(c.class));
         a.f = j3.w;
         a.i(2);
-        return Arrays.asList(a.b(), o.c("fire-analytics", "23.0.0"));
+        return Arrays.asList(a.b(), oShadow.c("fire-analytics", "23.0.0"));
     }
 
     public static Object zza(Object... a) {

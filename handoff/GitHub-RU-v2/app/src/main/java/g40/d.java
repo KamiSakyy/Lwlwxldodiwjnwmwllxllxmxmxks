@@ -5,9 +5,9 @@ public final class d {
     public String a;
     public String b;
     public String c;
-    public a0 d;
+    public a0Shadow d;
 
-    public d(String str, String str2, String str3, a0 a0Var) {
+    public d(String str, String str2, String str3, a0Shadow a0Var) {
         this.a = str;
         this.b = str2;
         this.c = str3;
@@ -29,7 +29,7 @@ public final class d {
         int i = com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31);
         String str = this.c;
         int hashCode = (i + (str == null ? 0 : str.hashCode())) * 31;
-        a0 a0Var = this.d;
+        a0Shadow a0Var = this.d;
         return hashCode + (a0Var != null ? a0Var.hashCode() : 0);
     }
 

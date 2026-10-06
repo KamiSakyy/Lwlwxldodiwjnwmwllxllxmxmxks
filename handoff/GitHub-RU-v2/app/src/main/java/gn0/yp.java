@@ -7,8 +7,8 @@ public abstract class yp {
     public static final xp Companion = new xp();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("ReopenedEvent", n, sy.d0.n(yh.a));
+        new aa.q0("ReopenedEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

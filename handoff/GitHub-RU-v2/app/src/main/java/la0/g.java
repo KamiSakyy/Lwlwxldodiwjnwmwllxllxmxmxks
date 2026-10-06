@@ -2,7 +2,7 @@ package la0;
 
 import aa.w;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -25,7 +25,7 @@ public abstract class g implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = f4.c(1, nextLong, "substring(...)");
+                        nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {
@@ -71,7 +71,7 @@ public abstract class g implements aa.a {
         fVar.z(bVar.b);
         fVar.z0("viewerCanUpvote");
         aa.b bVar2 = aa.c.f;
-        f4.C(bVar.c, bVar2, fVar, wVar, "viewerHasUpvoted");
+        f4Shadow.C(bVar.c, bVar2, fVar, wVar, "viewerHasUpvoted");
         bVar2.b(fVar, wVar, Boolean.valueOf(bVar.d));
     }
 }

@@ -1,11 +1,11 @@
 package com.github.service.copilot;
 
 import kotlinx.serialization.KSerializer;
-import xn.x1;
+import xn.x1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ElicitationFieldValue$Companion {
     public final KSerializer serializer() {
-        return x1.a;
+        return x1Shadow.a;
     }
 }

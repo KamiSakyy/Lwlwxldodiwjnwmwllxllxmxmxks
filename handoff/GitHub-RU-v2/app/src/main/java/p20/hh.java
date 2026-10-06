@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hh implements aaShadow.a {
     public static final hh a = new hh();
-    public static final List b = sy.d0.o("__typename", "id", "url", "name", "tagName", "tagCommit", "author", "descriptionHTML", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "releaseAssets", "discussion", "mentions");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "url", "name", "tagName", "tagCommit", "author", "descriptionHTML", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "releaseAssets", "discussion", "mentions");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0047, code lost:
     
@@ -263,13 +263,13 @@ public final class hh implements aaShadow.a {
         o0Var.b(fVar, wVar, hpVar.h);
         fVar.z0("isPrerelease");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(hpVar.i, bVar2, fVar, wVar, "isDraft");
-        jo.f4.C(hpVar.j, bVar2, fVar, wVar, "isLatest");
-        jo.f4.C(hpVar.k, bVar2, fVar, wVar, "createdAt");
+        jo.f4Shadow.C(hpVar.i, bVar2, fVar, wVar, "isDraft");
+        jo.f4Shadow.C(hpVar.j, bVar2, fVar, wVar, "isLatest");
+        jo.f4Shadow.C(hpVar.k, bVar2, fVar, wVar, "createdAt");
         hc0.h6.Companion.getClass();
         aa.x xVar = hc0.h6.a;
         wVar.e(xVar).b(fVar, wVar, hpVar.l);
-        no.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, hpVar.m);
+        noShadow.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, hpVar.m);
         fVar.z0("releaseAssets");
         aa.c.c(ih.a, false).b(fVar, wVar, hpVar.n);
         fVar.z0("discussion");

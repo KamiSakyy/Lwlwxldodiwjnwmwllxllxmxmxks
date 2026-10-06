@@ -73,7 +73,7 @@ public final class g0 implements Parcelable {
     }
 
     public final String toString() {
-        return jo.f4.s(com.github.rudroid.copilot.h1.u("BottomSheetDialogConfiguration(fullscreen=", this.f13907r, ", ensureExpanded=", this.f13908s, ", showDimOverlay="), this.f13909t, ")");
+        return jo.f4Shadow.s(com.github.rudroid.copilot.h1.u("BottomSheetDialogConfiguration(fullscreen=", this.f13907r, ", ensureExpanded=", this.f13908s, ", showDimOverlay="), this.f13909t, ")");
     }
 
     @Override // android.os.Parcelable

@@ -20,7 +20,7 @@ public final /* synthetic */ class t implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) selectableRepositoryBottomSheet.Z0.a(selectableRepositoryBottomSheet, SelectableRepositoryBottomSheet.d1[0])).booleanValue()) {
-                    k71.e a = k71.x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     SelectableRepositoryBottomSheet.b bVar = new SelectableRepositoryBottomSheet.b(selectableRepositoryBottomSheet);
                     SelectableRepositoryBottomSheet.c cVar = new SelectableRepositoryBottomSheet.c(selectableRepositoryBottomSheet);
                     SelectableRepositoryBottomSheet.d dVar = new SelectableRepositoryBottomSheet.d(selectableRepositoryBottomSheet);
@@ -38,7 +38,7 @@ public final /* synthetic */ class t implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = sy.w.s(w61.i.s, new SelectableRepositoryBottomSheet.e(new t(selectableRepositoryBottomSheet, 1)));
-                k71.e a2 = k71.x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 SelectableRepositoryBottomSheet.f fVar = new SelectableRepositoryBottomSheet.f(s);
                 SelectableRepositoryBottomSheet.g gVar = new SelectableRepositoryBottomSheet.g(s);
                 SelectableRepositoryBottomSheet.h hVar = new SelectableRepositoryBottomSheet.h(selectableRepositoryBottomSheet, s);

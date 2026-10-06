@@ -6,7 +6,7 @@ import pz0.gu;
 import pz0.o7;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -16,9 +16,9 @@ public abstract class b {
     static {
         xd.Companion.getClass();
         aa.r b = l0.b(xd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = h.a;
         aa.s c = no.a.c(list, "selections", "PullRequest", n, list);
         o7.Companion.getClass();

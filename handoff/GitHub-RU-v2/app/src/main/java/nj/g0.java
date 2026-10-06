@@ -2,7 +2,7 @@ package nj;
 
 import com.github.service.models.response.PullsWidgetFilter;
 import java.time.ZonedDateTime;
-import y71.n1;
+import y71.n1Shadow;
 import z01.r1;
 
 /* loaded from: /home/user/work/p/classes3.dex */

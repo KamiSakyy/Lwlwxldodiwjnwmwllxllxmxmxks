@@ -1,7 +1,7 @@
 package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a0 implements aa.m0 {
+public final class a0Shadow implements aa.m0 {
     public b0 a;
 
     public a0(b0 b0Var) {
@@ -12,7 +12,7 @@ public final class a0 implements aa.m0 {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof a0) && k71.k.b(this.a, ((a0) obj).a);
+        return (obj instanceof a0Shadow) && k71.k.b(this.a, ((a0Shadow) obj).a);
     }
 
     public final int hashCode() {

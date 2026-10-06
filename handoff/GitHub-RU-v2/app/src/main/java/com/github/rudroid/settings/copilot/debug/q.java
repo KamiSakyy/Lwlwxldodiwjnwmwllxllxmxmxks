@@ -146,7 +146,7 @@ public final /* synthetic */ class q implements j71.e {
                 return a0Var;
             case 6:
                 ((Integer) obj2).getClass();
-                com.github.rudroid.templates.ui.h.a((w1.r) obj5, (k5) obj4, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(1));
+                com.github.rudroid.templates.ui.hShadow.a((w1.r) obj5, (k5) obj4, (androidx.compose.runtime.s) obj, androidx.compose.runtime.t.L(1));
                 return a0Var;
             case 7:
                 w2.a aVar2 = (TwoFactorDialog) obj5;
@@ -293,16 +293,16 @@ public final /* synthetic */ class q implements j71.e {
                 } else {
                     sVar4.q0();
                 }
-                v2.e eVar = v2.g.f;
+                v2.eShadow eVar = v2.g.f;
                 androidx.compose.runtime.t.I(sVar4, eVar, a2);
-                v2.e eVar2 = v2.g.e;
+                v2.eShadow eVar2 = v2.g.e;
                 androidx.compose.runtime.t.I(sVar4, eVar2, l2);
                 Integer valueOf = Integer.valueOf(hashCode2);
-                v2.e eVar3 = v2.g.g;
+                v2.eShadow eVar3 = v2.g.g;
                 androidx.compose.runtime.t.w(sVar4, valueOf, eVar3);
                 v2.d dVar2 = v2.g.h;
                 androidx.compose.runtime.t.E(sVar4, dVar2);
-                v2.e eVar4 = v2.g.d;
+                v2.eShadow eVar4 = v2.g.d;
                 androidx.compose.runtime.t.I(sVar4, eVar4, c2);
                 w1.r w = androidx.compose.foundation.layout.b.w(oVar, f2);
                 boolean z6 = c0009d.k != null;
@@ -395,7 +395,7 @@ public final /* synthetic */ class q implements j71.e {
                         N3 = new com.github.rudroid.users.g(usersFragment, 1);
                         sVar6.n0(N3);
                     }
-                    qg.p.c(null, str6, p0, 0L, (j71.a) N3, 0, e, 0.0f, 0, 0, null, sVar6, 0, 0, 1961);
+                    qg.pShadow.c(null, str6, p0, 0L, (j71.a) N3, 0, e, 0.0f, 0, 0, null, sVar6, 0, 0, 1961);
                 } else {
                     sVar6.V();
                 }
@@ -438,7 +438,7 @@ public final /* synthetic */ class q implements j71.e {
                         N4 = new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(25, fVar6);
                         sVar8.n0(N4);
                     }
-                    qg.p.c(null, p03, p02, j7, (j71.a) N4, 0, a5, 0.0f, 0, 0, null, sVar8, 0, 0, 1953);
+                    qg.pShadow.c(null, p03, p02, j7, (j71.a) N4, 0, a5, 0.0f, 0, 0, null, sVar8, 0, 0, 1953);
                 } else {
                     sVar8.V();
                 }
@@ -486,7 +486,7 @@ public final /* synthetic */ class q implements j71.e {
                         i8++;
                         int i9 = i7 + 1;
                         if (i7 < 0) {
-                            sy.d0.x();
+                            sy.d0Shadow.x();
                             throw null;
                         }
                         w61.k kVar2 = (w61.k) obj6;
@@ -525,16 +525,16 @@ public final /* synthetic */ class q implements j71.e {
                     } else {
                         sVar10.q0();
                     }
-                    v2.e eVar5 = v2.g.f;
+                    v2.eShadow eVar5 = v2.g.f;
                     androidx.compose.runtime.t.I(sVar10, eVar5, d);
-                    v2.e eVar6 = v2.g.e;
+                    v2.eShadow eVar6 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar10, eVar6, l5);
                     Integer valueOf2 = Integer.valueOf(hashCode4);
-                    v2.e eVar7 = v2.g.g;
+                    v2.eShadow eVar7 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar10, valueOf2, eVar7);
                     v2.d dVar4 = v2.g.h;
                     androidx.compose.runtime.t.E(sVar10, dVar4);
-                    v2.e eVar8 = v2.g.d;
+                    v2.eShadow eVar8 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar10, eVar8, c4);
                     l2 a6 = j2.a(androidx.compose.foundation.layout.l.a, w1.c.A, sVar10, 0);
                     int hashCode5 = Long.hashCode(sVar10.T);
@@ -626,16 +626,16 @@ public final /* synthetic */ class q implements j71.e {
                     } else {
                         sVar12.q0();
                     }
-                    v2.e eVar10 = v2.g.f;
+                    v2.eShadow eVar10 = v2.g.f;
                     androidx.compose.runtime.t.I(sVar12, eVar10, a7);
-                    v2.e eVar11 = v2.g.e;
+                    v2.eShadow eVar11 = v2.g.e;
                     androidx.compose.runtime.t.I(sVar12, eVar11, l7);
                     Integer valueOf3 = Integer.valueOf(hashCode6);
-                    v2.e eVar12 = v2.g.g;
+                    v2.eShadow eVar12 = v2.g.g;
                     androidx.compose.runtime.t.w(sVar12, valueOf3, eVar12);
                     v2.d dVar5 = v2.g.h;
                     androidx.compose.runtime.t.E(sVar12, dVar5);
-                    v2.e eVar13 = v2.g.d;
+                    v2.eShadow eVar13 = v2.g.d;
                     androidx.compose.runtime.t.I(sVar12, eVar13, c6);
                     de.j.a(2131954798, 0, sVar12, (w1.r) null);
                     w1.r e3 = p2.e(oVar3, 1.0f);
@@ -686,7 +686,7 @@ public final /* synthetic */ class q implements j71.e {
                         N8 = new i1(3, cVar2, x3Var);
                         sVar13.n0(N8);
                     }
-                    sg.k0.a(12582912, 123, null, sVar13, null, null, null, (j71.a) N8, dh.a.a, null, false);
+                    sg.k0Shadow.a(12582912, 123, null, sVar13, null, null, null, (j71.a) N8, dh.a.a, null, false);
                 } else {
                     sVar13.V();
                 }

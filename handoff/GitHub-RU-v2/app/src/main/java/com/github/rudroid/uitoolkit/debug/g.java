@@ -1,7 +1,7 @@
 package com.github.rudroid.uitoolkit.debug;
 
 import androidx.compose.runtime.n1;
-import d2.a0;
+import d2.a0Shadow;
 import d2.r0;
 import d2.t;
 import k71.k;
@@ -37,7 +37,7 @@ public final /* synthetic */ class g implements j71.c {
                 long longValue = lArr[0].longValue() - n1Var.y();
                 f2.b bVar = i0Var.r;
                 if (c2.e.d(bVar.a()) > 0.0f && longValue > 0) {
-                    w61.k kVar = longValue == 1 ? new w61.k(new t(t.g), Float.valueOf(1.0f)) : longValue == 2 ? new w61.k(new t(t.f), Float.valueOf(i0Var.W(2))) : new w61.k(new t(a0.s(Math.min(1.0f, (longValue - 1) / 100.0f), t.b(0.8f, t.h), t.b(0.5f, t.e))), Float.valueOf(i0Var.W((int) longValue)));
+                    w61.k kVar = longValue == 1 ? new w61.k(new t(t.g), Float.valueOf(1.0f)) : longValue == 2 ? new w61.k(new t(t.f), Float.valueOf(i0Var.W(2))) : new w61.k(new t(a0Shadow.s(Math.min(1.0f, (longValue - 1) / 100.0f), t.b(0.8f, t.h), t.b(0.5f, t.e))), Float.valueOf(i0Var.W((int) longValue)));
                     long j = ((t) kVar.r).a;
                     float floatValue = ((Number) kVar.s).floatValue();
                     float f = 2;
@@ -51,7 +51,7 @@ public final /* synthetic */ class g implements j71.c {
                     }
                     f2.d.u(i0Var, new r0(j), j2, floatToRawIntBits2, 0.0f, r2 != 0 ? f2.g.a : new f2.h(floatValue, 0.0f, 0, 0, 30), 0, 104);
                 }
-                return w61.a0.a;
+                return w61.a0Shadow.a;
         }
     }
 

@@ -16,7 +16,7 @@ public final class m {
 
     public m(o oVar, String str) {
         this.c = oVar;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         this.a = str;
         this.b = -1L;
     }
@@ -83,7 +83,7 @@ public final class m {
 
     public m(o oVar, String str, long j) {
         this.c = oVar;
-        c21.u.d(str);
+        c21.uShadow.d(str);
         this.a = str;
         this.b = oVar.k0("select rowid from raw_events where app_id = ? and timestamp < ? order by rowid desc limit 1", new String[]{str, String.valueOf(j)}, -1L);
     }

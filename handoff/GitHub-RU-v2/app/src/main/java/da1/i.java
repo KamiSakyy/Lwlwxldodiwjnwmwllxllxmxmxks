@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class i extends b0 {
+final class i extends b0Shadow {
     public i() {
         super("InSelect", 15);
     }
@@ -11,11 +11,11 @@ final class i extends b0 {
     
         if (r0.equals("optgroup") == false) goto L29;
      */
-    @Override // da1.b0
+    @Override // da1.b0Shadow
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean d(s0 s0Var, b bVar) {
+    public final boolean d(s0 s0Var, bShadow bVar) {
         int b = y3.a.b(s0Var.a);
         if (b == 0) {
             bVar.k(this);

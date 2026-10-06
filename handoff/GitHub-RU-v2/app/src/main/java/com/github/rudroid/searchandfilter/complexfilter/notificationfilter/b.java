@@ -31,12 +31,12 @@ public final /* synthetic */ class b implements j71.e {
                                 switch (i) {
                                     case 0:
                                         FocusedFilterExplainerBottomSheet focusedFilterExplainerBottomSheet2 = focusedFilterExplainerBottomSheet;
-                                        v71.b0.z(d1.i(focusedFilterExplainerBottomSheet2), (a71.h) null, (v71.a0) null, new f(focusedFilterExplainerBottomSheet2, null), 3);
+                                        v71.b0.z(d1.i(focusedFilterExplainerBottomSheet2), (a71.h) null, (v71.a0Shadow) null, new f(focusedFilterExplainerBottomSheet2, null), 3);
                                         break;
                                     default:
                                         FocusedFilterExplainerBottomSheet focusedFilterExplainerBottomSheet3 = focusedFilterExplainerBottomSheet;
                                         ((com.github.rudroid.searchandfilter.h0) focusedFilterExplainerBottomSheet3.T0.getValue()).Y(new NotificationImportantFilter(2, true, false), null);
-                                        v71.b0.z(d1.i(focusedFilterExplainerBottomSheet3), (a71.h) null, (v71.a0) null, new g(focusedFilterExplainerBottomSheet3, null), 3);
+                                        v71.b0.z(d1.i(focusedFilterExplainerBottomSheet3), (a71.h) null, (v71.a0Shadow) null, new g(focusedFilterExplainerBottomSheet3, null), 3);
                                         break;
                                 }
                                 return w61.a0.a;

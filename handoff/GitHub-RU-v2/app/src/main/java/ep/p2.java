@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p2 implements aaShadow.a {
     public static final p2 a = new p2();
-    public static final List b = sy.d0.o("pushedDate", "statusCheckRollup", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("pushedDate", "statusCheckRollup", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -19,7 +19,7 @@ public final class p2 implements aaShadow.a {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
                 m10.sa.Companion.getClass();
-                zonedDateTime = (ZonedDateTime) no.a.h(wVar, m10.sa.a, eVar, wVar);
+                zonedDateTime = (ZonedDateTime) noShadow.a.h(wVar, m10.sa.a, eVar, wVar);
             } else if (r0 == 1) {
                 w4Var = (jo.w4) aa.c.b(aa.c.c(c3.a, false)).a(eVar, wVar);
             } else if (r0 == 2) {

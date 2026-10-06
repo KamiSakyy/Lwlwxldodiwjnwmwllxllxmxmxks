@@ -14,7 +14,7 @@ import jn0.zb0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fx implements aaShadow.a {
     public static final fx a = new fx();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "mergeQueueEntry", "mergeQueue", "viewerCanUpdate", "timelineItems"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "headRefOid", "state", "mergeStateStatus", "repository", "headRef", "baseRefName", "viewerCanMergeAsAdmin", "mergedBy", "mergeCommit", "mergeQueueEntry", "mergeQueue", "viewerCanUpdate", "timelineItems"});
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x002a. Please report as an issue. */
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -201,7 +201,7 @@ public final class fx implements aaShadow.a {
         bVar.b(fVar, wVar, zb0Var.h);
         fVar.z0("viewerCanMergeAsAdmin");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(zb0Var.i, bVar2, fVar, wVar, "mergedBy");
+        jo.f4Shadow.C(zb0Var.i, bVar2, fVar, wVar, "mergedBy");
         aa.c.b(aa.c.c(dx.a, true)).b(fVar, wVar, zb0Var.j);
         fVar.z0("mergeCommit");
         aa.c.b(aa.c.c(ax.a, false)).b(fVar, wVar, zb0Var.k);
@@ -210,7 +210,7 @@ public final class fx implements aaShadow.a {
         fVar.z0("mergeQueue");
         aa.c.b(aa.c.c(bx.a, true)).b(fVar, wVar, zb0Var.m);
         fVar.z0("viewerCanUpdate");
-        jo.f4.C(zb0Var.n, bVar2, fVar, wVar, "timelineItems");
+        jo.f4Shadow.C(zb0Var.n, bVar2, fVar, wVar, "timelineItems");
         aa.c.c(ix.a, false).b(fVar, wVar, zb0Var.o);
         List list = xt0.d.a;
         xt0.d.d(fVar, wVar, zb0Var.p);

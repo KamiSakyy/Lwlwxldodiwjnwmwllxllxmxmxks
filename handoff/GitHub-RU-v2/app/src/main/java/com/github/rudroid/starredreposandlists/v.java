@@ -43,7 +43,7 @@ public final class v {
                 N = new com.github.rudroid.searchandfilter.complexfilter.explore.a0(28);
                 sVar.n0(N);
             }
-            w1.r f = f0.o.f(p2.e(d3.q.b(p, true, (j71.c) N), 1.0f), ih.d.b(sVar).b, d2.a0.b);
+            w1.r f = f0.o.f(p2.e(d3.q.b(p, true, (j71.c) N), 1.0f), ih.d.b(sVar).b, d2.a0Shadow.b);
             float f2 = ih.a.n;
             float f3 = ih.a.l;
             w1.r B = androidx.compose.foundation.layout.b.B(f, f2, 0.0f, f3, 0.0f, 10);

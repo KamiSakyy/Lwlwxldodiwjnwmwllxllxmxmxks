@@ -15,12 +15,12 @@ public abstract class i {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list = w.a;
         aa.s c = no.a.c(list, "selections", "User", n, list);
-        List n2 = sy.d0.n("Organization");
+        List n2 = sy.d0Shadow.n("Organization");
         List list2 = v.a;
         List r = x61.l.r(new aa.s[]{mVar, c, no.a.c(list2, "selections", "Organization", n2, list2)});
         aa.m mVar2 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);

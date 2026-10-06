@@ -3,7 +3,7 @@ package com.github.service.dotcom.repository.model;
 import com.github.rudroid.copilot.h1;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -21,7 +21,7 @@ public final class ForkRepositoryInput {
 
     public /* synthetic */ ForkRepositoryInput(int i, String str, boolean z) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, ForkRepositoryInput$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, ForkRepositoryInput$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.a = str;

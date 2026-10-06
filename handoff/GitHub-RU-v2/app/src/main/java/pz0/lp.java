@@ -9,8 +9,8 @@ public abstract class lp {
     public static final aa.q0 b;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        b = new aa.q0("ProjectV2Item", n, sy.d0.n(wk.a));
+        b = new aa.q0("ProjectV2Item", n, sy.d0Shadow.n(wk.a));
     }
 }

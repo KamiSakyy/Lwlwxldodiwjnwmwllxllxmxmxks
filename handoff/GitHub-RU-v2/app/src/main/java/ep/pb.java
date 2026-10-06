@@ -57,7 +57,7 @@ public abstract class pb implements aaShadow.a {
         fVar.z0("headRefOid");
         bVar2.b(fVar, wVar, h1Var.c);
         fVar.z0("viewerCanEditFiles");
-        jo.f4.C(h1Var.d, aa.c.f, fVar, wVar, "baseRefName");
+        jo.f4Shadow.C(h1Var.d, aa.c.f, fVar, wVar, "baseRefName");
         bVar2.b(fVar, wVar, h1Var.e);
         fVar.z0("headRefName");
         bVar2.b(fVar, wVar, h1Var.f);

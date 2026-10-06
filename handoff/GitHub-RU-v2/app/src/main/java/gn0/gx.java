@@ -7,8 +7,8 @@ public abstract class gx {
     public static final fx Companion = new fx();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("TransferredEvent", n, sy.d0.n(yh.a));
+        new aa.q0("TransferredEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

@@ -67,7 +67,7 @@ public abstract class d implements r {
         if (i == -3) {
             i = -2;
         }
-        v71.a0 a0Var = v71.a0.t;
+        v71.a0Shadow a0Var = v71.a0Shadow.t;
         j71.e v4Var = new v4(this, (a71.c) null, 25);
         x71.s sVar = new x71.s(b0.A(zVar, this.r), t.e.a(i, 4, this.t));
         sVar.q0(a0Var, sVar, v4Var);

@@ -1,7 +1,7 @@
 package im0;
 
 import com.github.rudroid.copilot.h1;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
@@ -47,7 +47,7 @@ public final class c {
         com.github.rudroid.m0.A(u, this.c, ", getsReviewRequests=", this.d, ", getsDeploymentRequests=");
         com.github.rudroid.m0.A(u, this.e, ", getsPullRequestReviews=", this.f, ", getsCiActivity=");
         com.github.rudroid.m0.A(u, this.g, ", getsCiFailedOnly=", this.h, ", getsReleases=");
-        return f4.s(u, this.i, ")");
+        return f4Shadow.s(u, this.i, ")");
     }
 
     public Object i;

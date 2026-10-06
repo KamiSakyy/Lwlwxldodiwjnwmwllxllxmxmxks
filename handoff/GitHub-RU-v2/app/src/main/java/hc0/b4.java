@@ -27,6 +27,6 @@ public final class b4 {
     }
 
     public final String toString() {
-        return f1.e.k(jo.f4.u("CommittableBranch(branchName=", this.a, ", id=", this.b, ", repositoryNameWithOwner="), this.c, ")");
+        return f1.e.k(jo.f4Shadow.u("CommittableBranch(branchName=", this.a, ", id=", this.b, ", repositoryNameWithOwner="), this.c, ")");
     }
 }

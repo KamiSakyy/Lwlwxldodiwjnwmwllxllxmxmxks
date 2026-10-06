@@ -9,7 +9,7 @@ import m10.cc0;
 import m10.eh;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class d {
@@ -19,7 +19,7 @@ public abstract class d {
         cc0.Companion.getClass();
         x xVar = cc0.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("mobileUpdatesUrl", xVar, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         m mVar2 = new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar);

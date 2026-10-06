@@ -5,10 +5,10 @@ import v71.a2;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p extends a81.r {
-    public h v;
+    public hShadow v;
     public final /* synthetic */ AtomicReferenceArray w;
 
-    public p(long j, p pVar, h hVar, int i) {
+    public p(long j, p pVar, hShadow hVar, int i) {
         super(j, pVar, i);
         this.v = hVar;
         this.w = new AtomicReferenceArray(j.b * 2);
@@ -16,7 +16,7 @@ public final class p extends a81.r {
 
     @Override // a81.r
     public final int g() {
-        return j.b;
+        return jShadow.b;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:51:0x0059, code lost:
@@ -43,8 +43,8 @@ public final class p extends a81.r {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final void h(int i, a71.h hVar) {
-        int i2 = j.b;
+    public final void h(int i, a71.hShadow hVar) {
+        int i2 = jShadow.b;
         boolean z = i >= i2;
         if (z) {
             i -= i2;
@@ -53,7 +53,7 @@ public final class p extends a81.r {
         while (true) {
             Object l = l(i);
             boolean z2 = l instanceof a2;
-            h hVar2 = this.v;
+            hShadow hVar2 = this.v;
             if (z2 || (l instanceof x)) {
                 if (k(i, l, z ? j.j : j.k)) {
                     n(i, null);
@@ -96,9 +96,9 @@ public final class p extends a81.r {
 
     public final void m(int i, boolean z) {
         if (z) {
-            h hVar = this.v;
+            hShadow hVar = this.v;
             k71.k.d(hVar);
-            hVar.L((this.t * j.b) + i);
+            hVar.L((this.t * jShadow.b) + i);
         }
         i();
     }

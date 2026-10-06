@@ -21,7 +21,7 @@ public final class p {
             applicationContext.getClass().toString();
         } else {
             ((Application) applicationContext).registerActivityLifecycleCallbacks(f1.r);
-            v71.b0.z(v71.b0.c(hVar), (a71.h) null, (v71.a0) null, new o(this, hVar, e1Var, null, 0), 3);
+            v71.b0.z(v71.b0.c(hVar), (a71.h) null, (v71.a0Shadow) null, new o(this, hVar, e1Var, null, 0), 3);
         }
     }
 }

@@ -54,7 +54,7 @@ public abstract class i {
         }
         r71.b n = w8.s.n(serialDescriptor);
         SerialDescriptor serialDescriptor2 = null;
-        if (n != null && (a2 = lVar.a(n, x61.r.r)) != null) {
+        if (n != null && (a2 = lVar.a(n, x61.rShadow.r)) != null) {
             serialDescriptor2 = a2.getDescriptor();
         }
         return (serialDescriptor2 == null || (f = f(serialDescriptor2, lVar)) == null) ? serialDescriptor : f;

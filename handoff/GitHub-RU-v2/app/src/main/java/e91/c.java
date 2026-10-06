@@ -17,7 +17,7 @@ import t71.n;
 import t71.p;
 import t71.w;
 import x.i;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c implements HostnameVerifier {
@@ -31,7 +31,7 @@ public final class c implements HostnameVerifier {
         } catch (CertificateParsingException unused) {
         }
         if (subjectAlternativeNames == null) {
-            return r.r;
+            return rShadow.r;
         }
         ArrayList arrayList = new ArrayList();
         for (List<?> list : subjectAlternativeNames) {

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import k71.k;
 import r3.j;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
@@ -14,7 +14,7 @@ public final class e {
         k.g(m0Var, "<this>");
         p pVar = m0Var.b;
         if (i == i2) {
-            return r.r;
+            return rShadow.r;
         }
         int d = pVar.d(i);
         int d2 = pVar.d(i2);

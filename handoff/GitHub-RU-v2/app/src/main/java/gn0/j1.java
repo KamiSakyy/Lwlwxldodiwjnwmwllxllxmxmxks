@@ -7,8 +7,8 @@ public abstract class j1 {
     public static final i1 Companion = new i1();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("AutoRebaseEnabledEvent", n, sy.d0.n(yh.a));
+        new aa.q0("AutoRebaseEnabledEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

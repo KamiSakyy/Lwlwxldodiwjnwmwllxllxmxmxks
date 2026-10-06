@@ -19,7 +19,7 @@ import gv.c1;
 import gv.d1;
 import gv.e1;
 import gv.f0;
-import gv.f1;
+import gv.f1Shadow;
 import gv.g1;
 import gv.h1;
 import gv.p0;
@@ -51,7 +51,7 @@ import jo.w00;
 import jo.x00;
 import jo.y00Shadow;
 import jo.z00;
-import k71.x;
+import k71.xShadow;
 import k71.z;
 import m10.qf;
 import m10.xz;
@@ -76,7 +76,7 @@ import wc0.m1;
 import wc0.o;
 import wc0.v;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import y41.t1;
 import yu.d;
 import yu.f;
@@ -241,7 +241,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(bhVar3, "data");
                 fh fhVar3 = bhVar3.a;
                 List list8 = (fhVar3 == null || (chVar3 = fhVar3.b) == null || (ehVar3 = chVar3.c) == null || (h1Var3 = ehVar3.c) == null || (p0Var3 = h1Var3.l) == null || (d1Var3 = p0Var3.c) == null) ? null : d1Var3.b;
-                return list8 == null ? r.r : list8;
+                return list8 == null ? rShadow.r : list8;
             case 3:
                 bh bhVar4 = (bh) obj;
                 k71.k.g(bhVar4, "data");
@@ -252,7 +252,7 @@ public final /* synthetic */ class a implements j71.c {
                 }
                 p0 p0Var4 = h1Var4.l;
                 x01.i iVar2 = new x01.i(p0Var4 != null ? p0Var4.c.a.a : null, p0Var4 != null ? p0Var4.c.a.b : false, false);
-                f1 f1Var = h1Var4.k;
+                f1Shadow f1Var = h1Var4.k;
                 f0 f0Var = h1Var4.o;
                 LinkedHashMap z2 = aa1.b.z(f0Var, xz.u);
                 LinkedHashMap z3 = aa1.b.z(f0Var, xz.t);
@@ -260,7 +260,7 @@ public final /* synthetic */ class a implements j71.c {
                 x0 x0Var = (e1Var == null || (list3 = e1Var.a) == null) ? null : (x0) x61.m.W(list3);
                 t0 t0Var = h1Var4.n;
                 List list9 = t0Var != null ? t0Var.a : null;
-                List list10 = r.r;
+                List list10 = rShadow.r;
                 if (list9 == null) {
                     list9 = list10;
                 }
@@ -463,7 +463,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(w00Var3, "data");
                 b10 b10Var3 = w00Var3.a;
                 List list19 = (b10Var3 == null || (v00Var3 = b10Var3.b) == null || (u00Var3 = v00Var3.b) == null || (x00Var3 = u00Var3.b) == null || (a10Var3 = x00Var3.d) == null) ? null : a10Var3.b;
-                return list19 == null ? r.r : list19;
+                return list19 == null ? rShadow.r : list19;
             case 8:
                 w00 w00Var4 = (w00) obj;
                 k71.k.g(w00Var4, "data");
@@ -476,7 +476,7 @@ public final /* synthetic */ class a implements j71.c {
                 z00 z00Var2 = a10Var4.a;
                 x01.i iVar3 = new x01.i(z00Var2.a, z00Var2.b, false);
                 List list20 = a10Var4.b;
-                List list21 = r.r;
+                List list21 = rShadow.r;
                 if (list20 == null) {
                     list20 = list21;
                 }
@@ -580,7 +580,7 @@ public final /* synthetic */ class a implements j71.c {
             case 12:
                 x6.y yVar = (x6.y) obj;
                 k71.k.g(yVar, "$this$navigation");
-                yVar.j.add(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), x.a(AgentPullRequestsNavRoute.class), x61.s.r, x.a(AgentPullRequestsPageFragment.class)).a());
+                yVar.j.add(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), xShadow.a(AgentPullRequestsNavRoute.class), x61.s.r, xShadow.a(AgentPullRequestsPageFragment.class)).a());
                 return a0.a;
             case 13:
                 bb0.a aVar = (bb0.a) obj;
@@ -612,7 +612,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(eVar5, "data");
                 rc0.g gVar10 = eVar5.a;
                 List list23 = (gVar10 == null || (hVar3 = gVar10.c) == null || (mVar3 = hVar3.c) == null) ? null : mVar3.c;
-                return list23 == null ? r.r : list23;
+                return list23 == null ? rShadow.r : list23;
             case 19:
                 rc0.e eVar6 = (rc0.e) obj;
                 k71.k.g(eVar6, "data");
@@ -654,7 +654,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(j0Var3, "data");
                 k0 k0Var3 = j0Var3.a;
                 List list24 = (k0Var3 == null || (l0Var3 = k0Var3.c) == null || (vVar3 = l0Var3.d) == null || (gVar4 = vVar3.n) == null) ? null : gVar4.c;
-                return list24 == null ? r.r : list24;
+                return list24 == null ? rShadow.r : list24;
             case 24:
                 j0 j0Var4 = (j0) obj;
                 k71.k.g(j0Var4, "data");
@@ -671,7 +671,7 @@ public final /* synthetic */ class a implements j71.c {
                 }
                 String str38 = h0Var != null ? h0Var.c : null;
                 CheckStatusState n = u.n(vVar9.b);
-                CheckConclusionState u = sy.t.u(vVar9.c);
+                CheckConclusionState u = sy.tShadow.u(vVar9.c);
                 e c = sy.a0.c(vVar9.n, (n0Var == null || (m0Var = n0Var.b) == null) ? null : m0Var.a);
                 String str39 = n0Var != null ? n0Var.a : null;
                 if (str39 == null) {
@@ -725,7 +725,7 @@ public final /* synthetic */ class a implements j71.c {
                 k71.k.g(q0Var3, "data");
                 rc0.r0 r0Var5 = q0Var3.a;
                 List list25 = (r0Var5 == null || (s0Var4 = r0Var5.c) == null || (vVar6 = s0Var4.c) == null || (gVar7 = vVar6.n) == null) ? null : gVar7.c;
-                return list25 == null ? r.r : list25;
+                return list25 == null ? rShadow.r : list25;
         }
     }
 }

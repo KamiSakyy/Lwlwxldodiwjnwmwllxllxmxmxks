@@ -21,7 +21,7 @@ final class b<T> implements y71.j {
         o oVar2 = (o) ((g1) y1Var.getValue()).getData();
         List list = oVar2 != null ? oVar2.a : null;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         w0.p(y1Var, new o(x61.m.l0(list, oVar.a), oVar.b));
         return w61.a0.a;

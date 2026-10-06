@@ -7,7 +7,7 @@ import jn0.sb0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yw implements aaShadow.a {
     public static final yw a = new yw();
-    public static final List b = sy.d0.n("updatePullRequestBranch");
+    public static final List b = sy.d0Shadow.n("updatePullRequestBranch");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

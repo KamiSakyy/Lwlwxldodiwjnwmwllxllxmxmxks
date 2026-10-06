@@ -22,7 +22,7 @@ import m7.y;
 import qx.c1;
 import tu.s;
 import x61.n;
-import x61.r;
+import x61.rShadow;
 import yz0.t1;
 import yz0.w1;
 
@@ -59,7 +59,7 @@ public final class e implements w1 {
             for (pi piVar : list) {
                 t1 k = piVar != null ? b41.b.k(piVar.b) : null;
                 if (k != null) {
-                    rVar.add(k);
+                    rVar.add(kShadow);
                 }
             }
         }

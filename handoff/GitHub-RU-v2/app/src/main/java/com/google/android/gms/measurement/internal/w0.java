@@ -630,7 +630,7 @@ public final class w0 extends i4 {
     }
 
     public void X(com.google.android.gms.internal.measurement.r3 r3Var, Object obj) {
-        c21.u.g(obj);
+        c21.uShadow.g(obj);
         r3Var.b();
         ((com.google.android.gms.internal.measurement.s3) r3Var.s).E();
         r3Var.b();
@@ -898,7 +898,7 @@ public final class w0 extends i4 {
             com.google.android.gms.internal.measurement.d3 B = com.google.android.gms.internal.measurement.e3.B();
             B.i(str);
             Object obj = bundle.get(str);
-            c21.u.g(obj);
+            c21.uShadow.g(obj);
             Z(B, obj);
             z.n(B);
         }
@@ -1244,7 +1244,7 @@ public final class w0 extends i4 {
     }
 
     public long k0(byte[] bArr) {
-        c21.u.g(bArr);
+        c21.uShadow.g(bArr);
         o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) this).s;
         t4 t4Var = o1Var.z;
         o1.k(t4Var);

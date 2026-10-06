@@ -2,7 +2,7 @@ package rn0;
 
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.na0;
 import qn0.y2;
 import qn0.z2;
@@ -105,7 +105,7 @@ public abstract class x1 implements aa.a {
         fVar.z0("state");
         fVar.I(y2Var.d.r);
         fVar.z0("hasWorkflowDispatchTriggerForBranch");
-        f4.C(y2Var.e, aa.c.f, fVar, wVar, "runs");
+        f4Shadow.C(y2Var.e, aa.c.f, fVar, wVar, "runs");
         aa.c.c(y1.a, true).b(fVar, wVar, y2Var.f);
     }
 }

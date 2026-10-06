@@ -30,6 +30,6 @@ public final class ig {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Organizations(userCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Organizations(userCount=", ", nodes=", ")", this.b);
     }
 }

@@ -8,7 +8,7 @@ import kc0.ib0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ow implements aaShadow.a {
     public static final ow a = new ow();
-    public static final List b = sy.d0.o(new String[]{"id", "hasCreatedLists", "suggestedListNames", "lists", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "hasCreatedLists", "suggestedListNames", "lists", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -75,7 +75,7 @@ public final class ow implements aaShadow.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, ib0Var.a);
         fVar.z0("hasCreatedLists");
-        jo.f4.C(ib0Var.b, aa.c.f, fVar, wVar, "suggestedListNames");
+        jo.f4Shadow.C(ib0Var.b, aa.c.f, fVar, wVar, "suggestedListNames");
         aa.c.a(aa.c.c(nw.a, false)).e(fVar, wVar, ib0Var.c);
         fVar.z0("lists");
         aa.c.c(lw.a, false).b(fVar, wVar, ib0Var.d);

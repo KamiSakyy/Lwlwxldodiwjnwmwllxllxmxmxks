@@ -9,7 +9,7 @@ import u10.w60;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lt implements aaShadow.a {
     public static final lt a = new lt();
-    public static final List b = sy.d0.o("id", "repository", "reviewRequests", "latestReviews", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "repository", "reviewRequests", "latestReviews", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

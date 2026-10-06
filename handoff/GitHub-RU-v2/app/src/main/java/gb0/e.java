@@ -6,12 +6,12 @@ import hc0.th;
 import java.time.ZonedDateTime;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements aa.a {
     public static final e a = new e();
-    public static final List b = sy.d0.o("id", "threadType", "title", "isUnread", "unreadItemsCount", "lastUpdatedAt", "subscriptionStatus", "summaryItemAuthor", "summaryItemBody", "isArchived", "isSaved", "url", "list", "reason", "subject", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "threadType", "title", "isUnread", "unreadItemsCount", "lastUpdatedAt", "subscriptionStatus", "summaryItemAuthor", "summaryItemBody", "isArchived", "isSaved", "url", "list", "reason", "subject", "__typename");
 
     /* JADX WARN: Failed to find 'out' block for switch in B:3:0x002b. Please report as an issue. */
     public final Object a(ea.e eVar, aa.w wVar) {
@@ -55,7 +55,7 @@ public final class e implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -195,7 +195,7 @@ public final class e implements aa.a {
         bVar.b(fVar, wVar, fVar2.c);
         fVar.z0("isUnread");
         aa.b bVar2 = aa.c.f;
-        f4.C(fVar2.d, bVar2, fVar, wVar, "unreadItemsCount");
+        f4Shadow.C(fVar2.d, bVar2, fVar, wVar, "unreadItemsCount");
         fVar.z(fVar2.e);
         fVar.z0("lastUpdatedAt");
         h6.Companion.getClass();
@@ -207,8 +207,8 @@ public final class e implements aa.a {
         fVar.z0("summaryItemBody");
         aa.c.i.b(fVar, wVar, fVar2.i);
         fVar.z0("isArchived");
-        f4.C(fVar2.j, bVar2, fVar, wVar, "isSaved");
-        f4.C(fVar2.k, bVar2, fVar, wVar, "url");
+        f4Shadow.C(fVar2.j, bVar2, fVar, wVar, "isSaved");
+        f4Shadow.C(fVar2.k, bVar2, fVar, wVar, "url");
         bVar.b(fVar, wVar, fVar2.l);
         fVar.z0("list");
         aa.c.c(d.a, true).b(fVar, wVar, fVar2.m);

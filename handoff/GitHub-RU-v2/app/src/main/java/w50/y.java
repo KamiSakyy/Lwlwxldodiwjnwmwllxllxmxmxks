@@ -34,7 +34,7 @@ public abstract class y implements aa.a {
             throw null;
         }
         if (wVar2 != null) {
-            return new x(str, str2, wVar2);
+            return new xShadow(str, str2, wVar2);
         }
         k41.b.B(eVar, "timelineItems");
         throw null;

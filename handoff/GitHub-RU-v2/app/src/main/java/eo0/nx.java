@@ -8,7 +8,7 @@ import jn0.jc0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nx implements aaShadow.a {
     public static final nx a = new nx();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "url", "state", "milestone", "viewerCanDeleteHeadRef", "viewerCanReopen"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "url", "state", "milestone", "viewerCanDeleteHeadRef", "viewerCanReopen"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003b, code lost:
     
@@ -185,7 +185,7 @@ public final class nx implements aaShadow.a {
         aa.c.b(aa.c.c(mx.a, true)).b(fVar, wVar, jc0Var.e);
         fVar.z0("viewerCanDeleteHeadRef");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(jc0Var.f, bVar2, fVar, wVar, "viewerCanReopen");
+        jo.f4Shadow.C(jc0Var.f, bVar2, fVar, wVar, "viewerCanReopen");
         bVar2.b(fVar, wVar, Boolean.valueOf(jc0Var.g));
         List list = ep0.j.a;
         ep0.j.d(fVar, wVar, jc0Var.h);

@@ -45,27 +45,27 @@ public final class i1 extends g1 {
         switch (this.v) {
             case 0:
                 l0 l0Var = this.x.r.f;
-                c21.u.g(l0Var);
+                c21.uShadow.g(l0Var);
                 l0Var.onActivityStartedByScionActivityInfo(w0.j(this.w), this.s);
                 break;
             case 1:
                 l0 l0Var2 = this.x.r.f;
-                c21.u.g(l0Var2);
+                c21.uShadow.g(l0Var2);
                 l0Var2.onActivityResumedByScionActivityInfo(w0.j(this.w), this.s);
                 break;
             case 2:
                 l0 l0Var3 = this.x.r.f;
-                c21.u.g(l0Var3);
+                c21.uShadow.g(l0Var3);
                 l0Var3.onActivityPausedByScionActivityInfo(w0.j(this.w), this.s);
                 break;
             case 3:
                 l0 l0Var4 = this.x.r.f;
-                c21.u.g(l0Var4);
+                c21.uShadow.g(l0Var4);
                 l0Var4.onActivityStoppedByScionActivityInfo(w0.j(this.w), this.s);
                 break;
             default:
                 l0 l0Var5 = this.x.r.f;
-                c21.u.g(l0Var5);
+                c21.uShadow.g(l0Var5);
                 l0Var5.onActivityDestroyedByScionActivityInfo(w0.j(this.w), this.s);
                 break;
         }

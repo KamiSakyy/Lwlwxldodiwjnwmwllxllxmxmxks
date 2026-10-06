@@ -7,7 +7,7 @@ import pz0.cu;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 implements aa.a {
     public static final b0 a = new b0();
-    public static final List b = sy.d0.o(new String[]{"__typename", "subjectType", "id", "isResolved", "isOutdated", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "comments"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "subjectType", "id", "isResolved", "isOutdated", "viewerCanResolve", "viewerCanUnresolve", "resolvedBy", "viewerCanReply", "comments"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0035, code lost:
     
@@ -252,13 +252,13 @@ public final class b0 implements aa.a {
         bVar.b(fVar, wVar, sVar.c);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(sVar.d, bVar2, fVar, wVar, "isOutdated");
-        jo.f4.C(sVar.e, bVar2, fVar, wVar, "viewerCanResolve");
-        jo.f4.C(sVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(sVar.g, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(sVar.d, bVar2, fVar, wVar, "isOutdated");
+        jo.f4Shadow.C(sVar.e, bVar2, fVar, wVar, "viewerCanResolve");
+        jo.f4Shadow.C(sVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(sVar.g, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(c0.a, false)).b(fVar, wVar, sVar.h);
         fVar.z0("viewerCanReply");
-        jo.f4.C(sVar.i, bVar2, fVar, wVar, "comments");
+        jo.f4Shadow.C(sVar.i, bVar2, fVar, wVar, "comments");
         aa.c.c(y.a, false).b(fVar, wVar, sVar.j);
         List list = eu0.b.a;
         eu0.b.d(fVar, wVar, sVar.k);

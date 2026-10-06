@@ -4,7 +4,7 @@ package a61;
 public final class i0 extends c71.j implements j71.f {
     public final /* synthetic */ int v;
     public int w;
-    public /* synthetic */ y71.j x;
+    public /* synthetic */ y71.jShadow x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ i0(int i, a71.c cVar, int i2) {
@@ -14,7 +14,7 @@ public final class i0 extends c71.j implements j71.f {
 
     @Override // j71.f
     public final Object f(Object obj, Object obj2, Object obj3) {
-        y71.j jVar = (y71.j) obj;
+        y71.jShadow jVar = (y71.j) obj;
         a71.c cVar = (a71.c) obj3;
         switch (this.v) {
             case 0:
@@ -36,7 +36,7 @@ public final class i0 extends c71.j implements j71.f {
                 int i = this.w;
                 if (i == 0) {
                     sy.y.j(obj);
-                    y71.j jVar = this.x;
+                    y71.jShadow jVar = this.x;
                     s5.b n = b41.b.n();
                     this.x = null;
                     this.w = 1;
@@ -51,7 +51,7 @@ public final class i0 extends c71.j implements j71.f {
                 }
                 return w61.a0.a;
             default:
-                y71.j jVar2 = this.x;
+                y71.jShadow jVar2 = this.x;
                 b71.a aVar2 = b71.a.r;
                 int i2 = this.w;
                 if (i2 == 0) {

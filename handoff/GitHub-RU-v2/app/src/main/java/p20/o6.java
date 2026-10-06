@@ -5,14 +5,14 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o6 implements aaShadow.a {
     public static final o6 a = new o6();
-    public static final List b = sy.d0.n("repository");
+    public static final List b = sy.d0Shadow.n("repository");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         u10.aaShadow aaVar = null;
         while (eVar.r0(b) == 0) {
-            aaVar = (u10.aa) aa.c.b(aa.c.c(r6.a, false)).a(eVar, wVar);
+            aaVar = (u10.aaShadow) aa.c.b(aa.c.c(r6.a, false)).a(eVar, wVar);
         }
         return new u10.x9(aaVar);
     }

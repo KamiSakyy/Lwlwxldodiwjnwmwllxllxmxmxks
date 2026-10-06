@@ -34,7 +34,7 @@ public abstract class c2 {
     }
 
     public static String b(Context context, String str) {
-        c21.u.g(context);
+        c21.uShadow.g(context);
         Resources resources = context.getResources();
         if (TextUtils.isEmpty(str)) {
             str = a(context);

@@ -8,8 +8,8 @@ import jn0.b3;
 import jn0.c3;
 import jn0.v2;
 import jn0.w2;
-import sy.d0;
-import x61.r;
+import sy.d0Shadow;
+import x61.rShadow;
 import yz0.b2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -20,7 +20,7 @@ public final class m implements yz0.e {
     public x01.i c;
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r1v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Iterable] */
     /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r1v4, types: [java.util.ArrayList] */

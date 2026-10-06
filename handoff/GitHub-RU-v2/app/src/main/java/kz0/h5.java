@@ -14,9 +14,9 @@ public abstract class h5 {
         xd.Companion.getClass();
         aa.x xVar = xd.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("Issue");
+        List n = sy.d0Shadow.n("Issue");
         List list = vu0.r.a;
         aa.s c = no.a.c(list, "selections", "Issue", n, list);
         td.Companion.getClass();

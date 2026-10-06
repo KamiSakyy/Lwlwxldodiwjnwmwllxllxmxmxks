@@ -11,8 +11,8 @@ import w61.a0;
 import xn.f0;
 import xn.f3;
 import xn.r0;
-import xn.w;
-import xn.x;
+import xn.wShadow;
+import xn.xShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e extends c71.j implements j71.e {
@@ -117,7 +117,7 @@ public final class e extends c71.j implements j71.e {
                     ef.b bVar = new ef.b(13);
                     this.x = zVar;
                     this.w = 1;
-                    a71.h hVar = ((c71.c) this).s;
+                    a71.hShadow hVar = ((c71.c) this).s;
                     k71.k.d(hVar);
                     if (t.v(hVar).t(bVar, this) == aVar2) {
                         return aVar2;
@@ -148,7 +148,7 @@ public final class e extends c71.j implements j71.e {
                 int i4 = this.w;
                 if (i4 == 0) {
                     y.j(obj);
-                    x xVar = new x("", (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0) null, (List) null, (List) null, (ArrayList) null, w.r, (r0) null, (f0) null, (f3) null, 15870);
+                    x xVar = new x("", (String) null, (String) null, (ZonedDateTime) null, (ArrayList) null, (xn.a0Shadow) null, (List) null, (List) null, (ArrayList) null, w.r, (r0) null, (f0) null, (f3) null, 15870);
                     this.x = null;
                     this.w = 1;
                     if (jVar3.c(xVar, this) == aVar4) {

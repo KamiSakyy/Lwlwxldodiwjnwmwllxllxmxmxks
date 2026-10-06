@@ -9,7 +9,7 @@ import android.text.TextPaint;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.LineHeightSpan;
 import k71.k;
-import lg.b;
+import lg.bShadow;
 import u31.l;
 import u31.n;
 
@@ -187,7 +187,7 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
         }
     }
 
-    public static final class b extends gShadow {
+    public static final class bShadow extends gShadow {
         public static final a Companion = new a();
         public GradientDrawable r;
         public GradientDrawable s;
@@ -214,8 +214,8 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
         public b(Context context) {
             super(b.a.d(context, r1));
             k.g(context, "context");
-            b.a aVar = lg.b.Companion;
-            lg.b bVar = lg.b.z;
+            b.a aVar = lg.bShadow.Companion;
+            lg.bShadow bVar = lg.bShadow.z;
             aVar.getClass();
             float dimensionPixelSize = context.getResources().getDimensionPixelSize(2131165307);
             a aVar2 = Companion;
@@ -274,10 +274,10 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
         public int v;
 
         public static final class a {
-            public static final GradientDrawable a(a aVar, Context context, lg.b bVar, float[] fArr) {
+            public static final GradientDrawable a(a aVar, Context context, lg.bShadow bVar, float[] fArr) {
                 aVar.getClass();
                 GradientDrawable gradientDrawable = new GradientDrawable();
-                lg.b.Companion.getClass();
+                lg.bShadow.Companion.getClass();
                 gradientDrawable.setColor(b.a.a(context, bVar));
                 gradientDrawable.setShape(0);
                 gradientDrawable.setStroke(context.getResources().getDimensionPixelSize(2131166310), b.a.c(context, bVar));
@@ -287,10 +287,10 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public c(Context context, lg.b bVar) {
+        public c(Context context, lg.bShadow bVar) {
             super(b.a.d(context, bVar));
             k.g(context, "context");
-            lg.b.Companion.getClass();
+            lg.bShadow.Companion.getClass();
             float dimensionPixelSize = context.getResources().getDimensionPixelSize(2131165312);
             a aVar = Companion;
             this.r = a.a(aVar, context, bVar, new float[]{dimensionPixelSize, dimensionPixelSize, 0.0f, 0.0f, 0.0f, 0.0f, dimensionPixelSize, dimensionPixelSize});

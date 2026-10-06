@@ -9,8 +9,8 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.q0;
 import androidx.lifecycle.u1;
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.z;
-import k71.x;
-import y71.n1;
+import k71.xShadow;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableDiscussionCategoryBottomSheet extends Hilt_SelectableDiscussionCategoryBottomSheet {
@@ -236,14 +236,14 @@ public final class SelectableDiscussionCategoryBottomSheet extends Hilt_Selectab
 
     static {
         r71.e pVar = new k71.p(SelectableDiscussionCategoryBottomSheet.class, "isActivityHosted", "isActivityHosted()Z", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         d1 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public SelectableDiscussionCategoryBottomSheet() {
         w61.h s = sy.w.s(w61.i.s, new k(new j()));
-        this.Y0 = new l1(x.a(com.github.rudroid.searchandfilter.complexfilter.category.i.class), new l(s), new n(s), new m(s));
+        this.Y0 = new l1(xShadow.a(com.github.rudroid.searchandfilter.complexfilter.category.i.class), new l(s), new n(s), new m(s));
         this.Z0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(23));
         this.a1 = sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.category.c(this, 0));
         this.b1 = 2131954209;
@@ -289,7 +289,7 @@ public final class SelectableDiscussionCategoryBottomSheet extends Hilt_Selectab
         k71.k.g(view, "view");
         super.c4(view, bundle);
         com.github.rudroid.searchandfilter.complexfilter.category.i iVar = (com.github.rudroid.searchandfilter.complexfilter.category.i) this.Y0.getValue();
-        d1.a(n1.y(new q(new y00.l(iVar.t.b, 10)), iVar.D)).e(F3(), new i(new z(17, this)));
+        d1.a(n1Shadow.y(new q(new y00.l(iVar.t.b, 10)), iVar.D)).e(F3(), new i(new z(17, this)));
     }
 
 

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class up implements aaShadow.a {
     public static final up a = new up();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -66,9 +66,9 @@ public final class up implements aaShadow.a {
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(yu.i.a, true)))).b(fVar, wVar, hVar.f);
         fVar.z0("isBinary");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(hVar.g, bVar3, fVar, wVar, "isLargeDiff");
-        jo.f4.C(hVar.h, bVar3, fVar, wVar, "isSubmodule");
-        jo.f4.C(hVar.i, bVar3, fVar, wVar, "status");
+        jo.f4Shadow.C(hVar.g, bVar3, fVar, wVar, "isLargeDiff");
+        jo.f4Shadow.C(hVar.h, bVar3, fVar, wVar, "isSubmodule");
+        jo.f4Shadow.C(hVar.i, bVar3, fVar, wVar, "status");
         fVar.I(hVar.j.r);
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, hVar.k);

@@ -16,7 +16,7 @@ import hc0.wg;
 import hc0.xa;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,8 +27,8 @@ public abstract class i {
     static {
         xa.Companion.getClass();
         r b = l0.b(xa.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("scheduledNotifications", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("scheduledNotifications", b, (String) null, rVar, rVar, rVar));
         ng.Companion.getClass();
         q0 q0Var = ng.a;
         k.g(q0Var, "type");
@@ -47,6 +47,6 @@ public abstract class i {
         q0 q0Var3 = iy.a;
         k.g(q0Var3, "type");
         wg.Companion.getClass();
-        a = d0.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(wg.P0, new u0(s0.p("scheduledNotifications", new t("enabled")))), r2));
+        a = d0Shadow.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(wg.P0, new u0(s0.p("scheduledNotifications", new t("enabled")))), r2));
     }
 }

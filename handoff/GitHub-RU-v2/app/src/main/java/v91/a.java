@@ -4,7 +4,7 @@ import b21.v;
 import c21.h0;
 import h0.q1;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends u91.b {
@@ -16,7 +16,7 @@ public final class a extends u91.b {
         h0 h0Var = j91.a.D;
         k.g(dVar, "myConstraints");
         int i3 = q1Var.a;
-        y61.b i4 = d0.i();
+        y61.b i4 = d0Shadow.i();
         int i5 = ((q71.e) gVar).r;
         int i6 = i3 + i5;
         int i7 = ((q71.e) gVar).s;
@@ -30,7 +30,7 @@ public final class a extends u91.b {
         if (i != i2) {
             i4.add(new x91.e(new q71.g(i, i2, 1), h0Var2));
         }
-        q1Var.a(d0.h(i4));
+        q1Var.a(d0Shadow.h(i4));
         switch ((i7 - i5) + 1) {
             case 1:
                 h0Var = j91.a.y;

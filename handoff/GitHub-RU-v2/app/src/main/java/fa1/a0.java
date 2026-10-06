@@ -4,16 +4,16 @@ import java.lang.reflect.Array;
 import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class a0 extends x0 {
+public final class a0 extends x0Shadow {
     public final /* synthetic */ int d;
-    public final /* synthetic */ x0 e;
+    public final /* synthetic */ x0Shadow e;
 
-    public /* synthetic */ a0(x0 x0Var, int i) {
+    public /* synthetic */ a0(x0Shadow x0Var, int i) {
         this.d = i;
         this.e = x0Var;
     }
 
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     public final void a(n0 n0Var, Object obj) {
         switch (this.d) {
             case 0:

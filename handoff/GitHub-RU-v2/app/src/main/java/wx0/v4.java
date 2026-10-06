@@ -196,7 +196,7 @@ public abstract class v4 implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                            nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         valueOf = Integer.valueOf((int) nextLong);
                     } else {
@@ -242,11 +242,11 @@ public abstract class v4 implements aa.a {
         aa.c.i.b(fVar, wVar, u4Var.e);
         fVar.z0("public");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(u4Var.f, bVar2, fVar, wVar, "number");
+        jo.f4Shadow.C(u4Var.f, bVar2, fVar, wVar, "number");
         fVar.z(u4Var.g);
         fVar.z0("viewerCanUpdate");
-        jo.f4.C(u4Var.h, bVar2, fVar, wVar, "useElasticsearch");
-        jo.f4.C(u4Var.i, bVar2, fVar, wVar, "url");
+        jo.f4Shadow.C(u4Var.h, bVar2, fVar, wVar, "useElasticsearch");
+        jo.f4Shadow.C(u4Var.i, bVar2, fVar, wVar, "url");
         bVar.b(fVar, wVar, u4Var.j);
         List list = n.a;
         n.d(fVar, wVar, u4Var.k);

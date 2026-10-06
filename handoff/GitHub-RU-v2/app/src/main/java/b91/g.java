@@ -41,7 +41,7 @@ import com.google.android.gms.internal.measurement.b4;
 import com.google.android.gms.internal.measurement.i4;
 import com.google.android.gms.internal.measurement.z3;
 import com.google.android.gms.internal.play_billing.w0;
-import d2.a0;
+import d2.a0Shadow;
 import g20.t;
 import g20.u;
 import g20.v;
@@ -65,8 +65,8 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import k81.f0;
 import k81.j1;
 import k81.k1;
@@ -83,7 +83,7 @@ import oj0.b2;
 import oj0.c2;
 import oj0.d2;
 import oj0.e2;
-import oj0.f1;
+import oj0.f1Shadow;
 import oj0.g0;
 import oj0.h0;
 import oj0.i0;
@@ -94,7 +94,7 @@ import oj0.u3;
 import oj0.v3;
 import pz0.qt;
 import pz0.va;
-import sy.d0;
+import sy.d0Shadow;
 import t71.p;
 import uu0.c5;
 import uu0.d5;
@@ -107,7 +107,7 @@ import uu0.s5;
 import uu0.v5;
 import v8.l0;
 import w61.q;
-import x61.r;
+import x61.rShadow;
 import x61.s;
 import y41.t1;
 import yz0.b8;
@@ -155,7 +155,7 @@ public abstract class g {
 
     public static final KSerializer C(b21.l lVar, k71.e eVar) {
         k71.k.g(lVar, "module");
-        KSerializer a = lVar.a(eVar, r.r);
+        KSerializer a = lVar.a(eVar, rShadow.r);
         return a == null ? new g81.b(eVar) : a;
     }
 
@@ -171,30 +171,30 @@ public abstract class g {
         KSerializer dVar;
         KSerializer k1Var;
         k71.k.g(bVar, "<this>");
-        if (bVar.equals(x.a(Collection.class)) || bVar.equals(x.a(List.class)) || bVar.equals(x.a(List.class)) || bVar.equals(x.a(ArrayList.class))) {
+        if (bVar.equals(xShadow.a(Collection.class)) || bVar.equals(xShadow.a(List.class)) || bVar.equals(xShadow.a(List.class)) || bVar.equals(xShadow.a(ArrayList.class))) {
             dVar = new k81.d((KSerializer) arrayList.get(0), 0);
-        } else if (bVar.equals(x.a(HashSet.class))) {
+        } else if (bVar.equals(xShadow.a(HashSet.class))) {
             dVar = new k81.d((KSerializer) arrayList.get(0), 1);
-        } else if (bVar.equals(x.a(Set.class)) || bVar.equals(x.a(Set.class)) || bVar.equals(x.a(LinkedHashSet.class))) {
+        } else if (bVar.equals(xShadow.a(Set.class)) || bVar.equals(xShadow.a(Set.class)) || bVar.equals(xShadow.a(LinkedHashSet.class))) {
             dVar = new k81.d((KSerializer) arrayList.get(0), 2);
-        } else if (bVar.equals(x.a(HashMap.class))) {
+        } else if (bVar.equals(xShadow.a(HashMap.class))) {
             dVar = new f0((KSerializer) arrayList.get(0), (KSerializer) arrayList.get(1), 0);
-        } else if (bVar.equals(x.a(Map.class)) || bVar.equals(x.a(Map.class)) || bVar.equals(x.a(LinkedHashMap.class))) {
+        } else if (bVar.equals(xShadow.a(Map.class)) || bVar.equals(xShadow.a(Map.class)) || bVar.equals(xShadow.a(LinkedHashMap.class))) {
             dVar = new f0((KSerializer) arrayList.get(0), (KSerializer) arrayList.get(1), 1);
         } else {
-            if (bVar.equals(x.a(Map.Entry.class))) {
+            if (bVar.equals(xShadow.a(Map.Entry.class))) {
                 KSerializer kSerializer = (KSerializer) arrayList.get(0);
                 KSerializer kSerializer2 = (KSerializer) arrayList.get(1);
                 k71.k.g(kSerializer, "keySerializer");
                 k71.k.g(kSerializer2, "valueSerializer");
                 k1Var = new u0(kSerializer, kSerializer2, 0);
-            } else if (bVar.equals(x.a(w61.k.class))) {
+            } else if (bVar.equals(xShadow.a(w61.k.class))) {
                 KSerializer kSerializer3 = (KSerializer) arrayList.get(0);
                 KSerializer kSerializer4 = (KSerializer) arrayList.get(1);
                 k71.k.g(kSerializer3, "keySerializer");
                 k71.k.g(kSerializer4, "valueSerializer");
                 k1Var = new u0(kSerializer3, kSerializer4, 1);
-            } else if (bVar.equals(x.a(q.class))) {
+            } else if (bVar.equals(xShadow.a(q.class))) {
                 KSerializer kSerializer5 = (KSerializer) arrayList.get(0);
                 KSerializer kSerializer6 = (KSerializer) arrayList.get(1);
                 KSerializer kSerializer7 = (KSerializer) arrayList.get(2);
@@ -219,7 +219,7 @@ public abstract class g {
         KSerializer[] kSerializerArr = (KSerializer[]) arrayList.toArray(new KSerializer[0]);
         KSerializer[] kSerializerArr2 = (KSerializer[]) Arrays.copyOf(kSerializerArr, kSerializerArr.length);
         k71.k.g(kSerializerArr2, "args");
-        return c1.d(l0.x(bVar), (KSerializer[]) Arrays.copyOf(kSerializerArr2, kSerializerArr2.length));
+        return c1Shadow.d(l0.x(bVar), (KSerializer[]) Arrays.copyOf(kSerializerArr2, kSerializerArr2.length));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:78:0x01bc  */
@@ -234,7 +234,7 @@ public abstract class g {
         k71.k.g(s0Var, "operation");
         eVar.j();
         r0 r0Var = null;
-        r rVar = null;
+        rShadow rVar = null;
         s sVar = null;
         while (eVar.hasNext()) {
             String c0 = eVar.c0();
@@ -245,7 +245,7 @@ public abstract class g {
                     if (c0.equals("errors")) {
                         if (eVar2.peek() == ea.d.A) {
                             eVar2.g0();
-                            rVar = r.r;
+                            rVar = rShadow.r;
                         } else {
                             eVar2.n();
                             rVar = new ArrayList();
@@ -572,7 +572,7 @@ public abstract class g {
         }
         Class E = z3.E(type);
         k71.k.g(E, "<this>");
-        throw new SerializationException(c1.k(x.a(E)));
+        throw new SerializationException(c1Shadow.k(xShadow.a(E)));
     }
 
     public static final KSerializer J(r71.b bVar) {
@@ -581,7 +581,7 @@ public abstract class g {
         if (L != null) {
             return L;
         }
-        throw new SerializationException(c1.k(bVar));
+        throw new SerializationException(c1Shadow.k(bVar));
     }
 
     public static final KSerializer K(b21.l lVar, r71.f fVar) {
@@ -592,7 +592,7 @@ public abstract class g {
 
     public static final KSerializer L(r71.b bVar) {
         k71.k.g(bVar, "<this>");
-        KSerializer d = c1.d(l0.x(bVar), (KSerializer[]) Arrays.copyOf(new KSerializer[0], 0));
+        KSerializer d = c1Shadow.d(l0.x(bVar), (KSerializer[]) Arrays.copyOf(new KSerializer[0], 0));
         if (d != null) {
             return d;
         }
@@ -622,7 +622,7 @@ public abstract class g {
             k71.k.g(fVar, "type");
             KSerializer f0 = b4.f0(lVar, fVar, true);
             if (f0 == null) {
-                throw new SerializationException(c1.k(c1.j(fVar)));
+                throw new SerializationException(c1Shadow.k(c1Shadow.j(fVar)));
             }
             arrayList2.add(f0);
         }
@@ -900,7 +900,7 @@ public abstract class g {
             str = str5;
             i = i3;
             subscriptionState = subscriptionState7;
-            arrayList = r.r;
+            arrayList = rShadow.r;
         }
         com.github.rudroid.common.b0 b0Var = new com.github.rudroid.common.b0(mVar.a, arrayList);
         ct.n nVar = uVar.n;
@@ -932,14 +932,14 @@ public abstract class g {
         d2 d2Var2 = e2Var.i;
         String str3 = d2Var2 != null ? d2Var2.b : null;
         String str4 = e2Var.b;
-        int i3 = e2Var.r.c;
+        int i3 = e2Var.rShadow.c;
         wl0.j jVar = new wl0.j((oj0.h) kVar.s);
-        boolean z2 = e2Var.r.d;
+        boolean z2 = e2Var.rShadow.d;
         String str5 = (e2Var.j || e2Var.l) ? e2Var.k : null;
         String str6 = e2Var.e;
         boolean z3 = e2Var.o;
         c2 c2Var = e2Var.p;
-        return new p01.n(str, aVar, z, str2, i2, str3, str4, i3, jVar, z2, str5, str6, z3, c2Var != null ? f1.e.h(c2Var.b.b, "/", c2Var.a) : null);
+        return new p01.n(str, aVar, z, str2, i2, str3, str4, i3, jVar, z2, str5, str6, z3, c2Var != null ? f1Shadow.e.h(c2Var.b.b, "/", c2Var.a) : null);
     }
 
     public static final CheckStatusState Y(p2 p2Var) {
@@ -980,7 +980,7 @@ public abstract class g {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final p01.g a(f1 f1Var) {
+    public static final p01.g a(f1Shadow f1Var) {
         String str;
         j0 j0Var;
         String str2;
@@ -1075,9 +1075,9 @@ public abstract class g {
             mVar.b = 0L;
         }
         if (!q2.t.d(uVar)) {
-            r rVar = uVar.k;
+            rShadow rVar = uVar.k;
             if (rVar == null) {
-                rVar = r.r;
+                rVar = rShadow.r;
             }
             int i = 0;
             for (int size = rVar.size(); i < size; size = size) {
@@ -1116,7 +1116,7 @@ public abstract class g {
             i2++;
             int i3 = i + 1;
             if (i < 0) {
-                d0.x();
+                d0Shadow.x();
                 throw null;
             }
             wz0.e c = wz0.d.c((String) obj, 2);
@@ -1212,7 +1212,7 @@ public abstract class g {
             String str14 = (hVar == null || (gVar = hVar.c) == null) ? null : gVar.b;
             i1 i1Var = iVar.m;
             gt0.a aVar3 = iVar.k;
-            h = aa1.b.h(cVar2, str13, cVar3, (r32 & 4) != 0 ? null : aVar2, null, z10, z11, z12, (r32 & 128) != 0 ? false : z13, (r32 & 256) != 0 ? null : str14, false, r.r, i1Var, (r32 & 4096) != 0 ? false : aVar3.b, (r32 & 8192) != 0 ? false : aVar3.c, aa1.b.c0(iVar));
+            h = aa1.b.h(cVar2, str13, cVar3, (r32 & 4) != 0 ? null : aVar2, null, z10, z11, z12, (r32 & 128) != 0 ? false : z13, (r32 & 256) != 0 ? null : str14, false, rShadow.r, i1Var, (r32 & 4096) != 0 ? false : aVar3.b, (r32 & 8192) != 0 ? false : aVar3.c, aa1.b.c0(iVar));
             n0 n0Var = g0Var.c;
             cVar = new b01.c(str12, h, n0Var != null ? n0Var.a : null);
         } else {
@@ -1223,7 +1223,7 @@ public abstract class g {
             cVar = null;
         }
         String str15 = p0Var.l;
-        int i7 = p0Var.r.a;
+        int i7 = p0Var.rShadow.a;
         i1 i1Var2 = p0Var.u;
         b01.c cVar4 = cVar;
         b8 b8Var2 = new b8(i1Var2.d, str6, p0Var.j, i1Var2.c);
@@ -1244,7 +1244,7 @@ public abstract class g {
                 i3 = i7;
                 str2 = str6;
                 str3 = str16;
-                arrayList = r.r;
+                arrayList = rShadow.r;
             } else {
                 z4 = z15;
                 arrayList = new ArrayList();
@@ -1360,14 +1360,14 @@ public abstract class g {
                 arrayList.add(b41.b.V(((cs0.d) obj3).c));
             }
         }
-        return arrayList == null ? r.r : arrayList;
+        return arrayList == null ? rShadow.r : arrayList;
     }
 
     public static final List g(v5 v5Var) {
         ArrayList arrayList;
         k71.k.g(v5Var, "<this>");
         List<s5> list = v5Var.b.b;
-        ArrayList arrayList2 = r.r;
+        ArrayList arrayList2 = rShadow.r;
         if (list == null) {
             return arrayList2;
         }
@@ -1527,9 +1527,9 @@ public abstract class g {
     public static final List k(v2 v2Var, Integer num, int i, Integer num2) {
         int i2;
         int s;
-        x.d0 d0Var;
+        xShadow.d0Shadow d0Var;
         if (v2Var.w || v2Var.p() == 0) {
-            return r.r;
+            return rShadow.r;
         }
         androidx.compose.runtime.tooling.i iVar = new androidx.compose.runtime.tooling.i(v2Var);
         if (num2 != null) {
@@ -1542,8 +1542,8 @@ public abstract class g {
         }
         if (num == null) {
             int P = v2Var.i - v2Var.P(v2Var.b, v2Var.r(i));
-            x.w wVar = v2Var.s;
-            num = Integer.valueOf(P + ((wVar == null || (d0Var = (x.d0) wVar.b(i)) == null) ? 0 : d0Var.b));
+            xShadow.w wVar = v2Var.s;
+            num = Integer.valueOf(P + ((wVar == null || (d0Var = (xShadow.d0) wVar.b(i)) == null) ? 0 : d0Var.b));
         }
         int r = v2Var.r(i) * 5;
         int[] iArr = v2Var.b;
@@ -1577,7 +1577,7 @@ public abstract class g {
         Resources resources = (Resources) sVar.j(w2.j0.c);
         Resources.Theme theme = context.getTheme();
         ThreadLocal threadLocal = q4.l.a;
-        return a0.c(resources.getColor(i, theme));
+        return a0Shadow.c(resources.getColor(i, theme));
     }
 
     public static int m(String str, int i, int i2, boolean z) {
@@ -1633,7 +1633,7 @@ public abstract class g {
         return f;
     }
 
-    public static final Integer p(r2 r2Var, androidx.compose.runtime.x xVar, int i, int i2) {
+    public static final Integer p(r2 r2Var, androidx.compose.runtime.xShadow xVar, int i, int i2) {
         Integer p;
         int[] iArr = r2Var.b;
         while (true) {
@@ -1646,7 +1646,7 @@ public abstract class g {
                 m2 m2Var = h instanceof m2 ? (m2) h : null;
                 l2 l2Var = m2Var != null ? m2Var.a : null;
                 androidx.compose.runtime.p pVar = l2Var instanceof androidx.compose.runtime.p ? (androidx.compose.runtime.p) l2Var : null;
-                if (pVar != null && pVar.r.equals(xVar)) {
+                if (pVar != null && pVar.rShadow.equals(xVar)) {
                     return Integer.valueOf(i);
                 }
             }

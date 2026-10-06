@@ -48,7 +48,7 @@ public final class y7 {
     public final int hashCode() {
         int h = com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h((this.b.hashCode() + (this.a.hashCode() * 31)) * 31, this.c, 31), this.d, 31), this.e, 31);
         v2 v2Var = this.f;
-        return Boolean.hashCode(this.k) + x.i.e(no.a.b(this.i, jo.f4.b(this.h, (this.g.hashCode() + ((h + (v2Var == null ? 0 : v2Var.hashCode())) * 31)) * 31, 31), 31), 31, this.j);
+        return Boolean.hashCode(this.k) + x.i.e(no.a.b(this.i, jo.f4Shadow.b(this.h, (this.g.hashCode() + ((h + (v2Var == null ? 0 : v2Var.hashCode())) * 31)) * 31, 31), 31), 31, this.j);
     }
 
     public final String toString() {
@@ -73,7 +73,7 @@ public final class y7 {
         sb.append(", viewerCanDeleteHeadRef=");
         sb.append(this.j);
         sb.append(", viewerCanReopen=");
-        return jo.f4.s(sb, this.k, ")");
+        return jo.f4Shadow.s(sb, this.k, ")");
     }
 
     public Object i;

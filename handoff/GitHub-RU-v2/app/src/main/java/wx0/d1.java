@@ -6,9 +6,9 @@ import java.time.LocalDate;
 public final class d1 {
     public String a;
     public LocalDate b;
-    public a0 c;
+    public a0Shadow c;
 
-    public d1(String str, LocalDate localDate, a0 a0Var) {
+    public d1(String str, LocalDate localDate, a0Shadow a0Var) {
         this.a = str;
         this.b = localDate;
         this.c = a0Var;

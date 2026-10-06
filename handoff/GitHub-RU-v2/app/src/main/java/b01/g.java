@@ -3,7 +3,7 @@ package b01;
 import com.github.rudroid.m0;
 import java.util.ArrayList;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import yz0.b8;
 import yz0.s;
 import yz0.x2;
@@ -88,6 +88,6 @@ public final class g {
         sb.append(", viewerCanBlockFromOrg=");
         sb.append(this.n);
         sb.append(", viewerCanUnblockFromOrg=");
-        return f4.s(sb, this.o, ")");
+        return f4Shadow.s(sb, this.o, ")");
     }
 }

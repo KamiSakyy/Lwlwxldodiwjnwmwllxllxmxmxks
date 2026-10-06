@@ -7,7 +7,7 @@ import jo.tg0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o00 implements aaShadow.a {
     public static final o00 a = new o00();
-    public static final List b = sy.d0.n("updateUserMobileTimeZone");
+    public static final List b = sy.d0Shadow.n("updateUserMobileTimeZone");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

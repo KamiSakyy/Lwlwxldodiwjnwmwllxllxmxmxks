@@ -27,8 +27,8 @@ import com.github.rudroid.common.m0;
 import com.github.service.models.response.SimpleRepository$;
 import com.github.service.models.response.TrendingPeriod;
 import java.lang.annotation.Annotation;
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import k81.z;
 import kotlinx.serialization.KSerializer;
 

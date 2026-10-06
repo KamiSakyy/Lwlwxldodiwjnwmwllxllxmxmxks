@@ -1,7 +1,7 @@
 package r81;
 
 import h91.j;
-import h91.k;
+import h91.kShadow;
 import h91.y;
 import java.io.Closeable;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public abstract class e {
     public static final y b;
 
     static {
-        k kVar = k.u;
+        kShadow kVar = kShadow.u;
         b = h91.b.f(c30.d.a("efbbbf"), c30.d.a("feff"), c30.d.a("fffe0000"), c30.d.a("fffe"), c30.d.a("0000feff"));
     }
 
@@ -25,7 +25,7 @@ public abstract class e {
     }
 
     public static final void b(Closeable closeable) {
-        k71.k.g(closeable, "<this>");
+        k71.kShadow.g(closeable, "<this>");
         try {
             closeable.close();
         } catch (RuntimeException e) {
@@ -35,7 +35,7 @@ public abstract class e {
     }
 
     public static final int c(int i, int i2, String str, String str2) {
-        k71.k.g(str, "<this>");
+        k71.kShadow.g(str, "<this>");
         while (i < i2) {
             if (p.J(str2, str.charAt(i))) {
                 return i;
@@ -46,7 +46,7 @@ public abstract class e {
     }
 
     public static final int d(String str, char c, int i, int i2) {
-        k71.k.g(str, "<this>");
+        k71.kShadow.g(str, "<this>");
         while (i < i2) {
             if (str.charAt(i) == c) {
                 return i;
@@ -67,7 +67,7 @@ public abstract class e {
     }
 
     public static final boolean f(String[] strArr, String[] strArr2, Comparator comparator) {
-        k71.k.g(strArr, "<this>");
+        k71.kShadow.g(strArr, "<this>");
         if (strArr.length != 0 && strArr2 != null && strArr2.length != 0) {
             for (String str : strArr) {
                 for (String str2 : strArr2) {
@@ -84,7 +84,7 @@ public abstract class e {
         int length = str.length();
         for (int i = 0; i < length; i++) {
             char charAt = str.charAt(i);
-            if (k71.k.h(charAt, 31) <= 0 || k71.k.h(charAt, 127) >= 0) {
+            if (k71.kShadow.h(charAt, 31) <= 0 || k71.kShadow.h(charAt, 127) >= 0) {
                 return i;
             }
         }
@@ -92,7 +92,7 @@ public abstract class e {
     }
 
     public static final int h(int i, String str, int i2) {
-        k71.k.g(str, "<this>");
+        k71.kShadow.g(str, "<this>");
         while (i < i2) {
             char charAt = str.charAt(i);
             if (charAt != '\t' && charAt != '\n' && charAt != '\f' && charAt != '\r' && charAt != ' ') {
@@ -104,7 +104,7 @@ public abstract class e {
     }
 
     public static final int i(int i, String str, int i2) {
-        k71.k.g(str, "<this>");
+        k71.kShadow.g(str, "<this>");
         int i3 = i2 - 1;
         if (i <= i3) {
             while (true) {
@@ -122,8 +122,8 @@ public abstract class e {
     }
 
     public static final String[] j(String[] strArr, String[] strArr2, Comparator comparator) {
-        k71.k.g(strArr, "<this>");
-        k71.k.g(strArr2, "other");
+        k71.kShadow.g(strArr, "<this>");
+        k71.kShadow.g(strArr2, "other");
         ArrayList arrayList = new ArrayList();
         for (String str : strArr) {
             int length = strArr2.length;
@@ -143,7 +143,7 @@ public abstract class e {
     }
 
     public static final boolean k(String str) {
-        k71.k.g(str, "name");
+        k71.kShadow.g(str, "name");
         return str.equalsIgnoreCase("Authorization") || str.equalsIgnoreCase("Cookie") || str.equalsIgnoreCase("Proxy-Authorization") || str.equalsIgnoreCase("Set-Cookie");
     }
 
@@ -161,7 +161,7 @@ public abstract class e {
     }
 
     public static final int m(j jVar) {
-        k71.k.g(jVar, "<this>");
+        k71.kShadow.g(jVar, "<this>");
         return (jVar.readByte() & 255) | ((jVar.readByte() & 255) << 16) | ((jVar.readByte() & 255) << 8);
     }
 
@@ -185,7 +185,7 @@ public abstract class e {
     public static final String o(int i, String str, int i2) {
         int h = h(i, str, i2);
         String substring = str.substring(h, i(h, str, i2));
-        k71.k.f(substring, "substring(...)");
+        k71.kShadow.f(substring, "substring(...)");
         return substring;
     }
 }

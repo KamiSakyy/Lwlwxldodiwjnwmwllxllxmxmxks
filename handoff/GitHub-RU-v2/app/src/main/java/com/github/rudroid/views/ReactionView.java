@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import androidx.appcompat.widget.AppCompatTextView;
 import com.github.rudroid.utilities.u2;
 import kotlin.NoWhenBranchMatchedException;
-import lg.b;
+import lg.bShadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -87,16 +87,16 @@ public final class ReactionView extends AppCompatTextView {
         Resources resources = context.getResources();
         k71.k.f(resources, "getResources(...)");
         boolean a2 = rc.c.a(resources);
-        b.a aVar = lg.b.Companion;
-        lg.b bVar = lg.b.r;
+        bShadow.a aVar = lg.bShadow.Companion;
+        lg.bShadow bVar = lg.bShadow.r;
         aVar.getClass();
-        this.y = b.a.a(context, bVar);
-        this.z = b.a.c(context, bVar);
-        this.A = b.a.d(context, bVar);
-        lg.b bVar2 = lg.b.y;
-        this.B = b.a.a(context, bVar2);
-        this.C = b.a.c(context, bVar2);
-        this.D = b.a.d(context, bVar2);
+        this.y = bShadow.a.a(context, bVar);
+        this.z = bShadow.a.c(context, bVar);
+        this.A = bShadow.a.d(context, bVar);
+        lg.bShadow bVar2 = lg.bShadow.y;
+        this.B = bShadow.a.a(context, bVar2);
+        this.C = bShadow.a.c(context, bVar2);
+        this.D = bShadow.a.d(context, bVar2);
         this.E = a2 ? 81 : 40;
         Resources resources2 = context.getResources();
         Resources.Theme theme = context.getTheme();

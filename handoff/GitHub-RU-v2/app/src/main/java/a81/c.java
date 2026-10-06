@@ -19,7 +19,7 @@ public abstract class c {
 
     public final c c() {
         Object obj = r.get(this);
-        if (obj == b.a) {
+        if (obj == bShadow.a) {
             return null;
         }
         return (c) obj;

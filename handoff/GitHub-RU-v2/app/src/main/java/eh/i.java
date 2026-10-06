@@ -1,6 +1,6 @@
 package eh;
 
-import a0.n1;
+import a0Shadow.n1;
 import androidx.compose.foundation.layout.c0;
 import androidx.compose.foundation.layout.d2;
 import androidx.compose.foundation.layout.f2;
@@ -15,7 +15,7 @@ import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
 import d1.e0;
-import d2.a0;
+import d2.a0Shadow;
 import d3.q;
 import d9.m;
 import f0.o;
@@ -100,7 +100,7 @@ public final class i {
                 N3 = new e0(14, str3, gVar);
                 sVar.n0(N3);
             }
-            r e2 = p2.e(androidx.compose.foundation.layout.b.w(o.f(q.a(e, (j71.c) N3), j, a0.b), d2Var), 1.0f);
+            r e2 = p2.e(androidx.compose.foundation.layout.b.w(o.f(q.a(e, (j71.c) N3), j, a0Shadow.b), d2Var), 1.0f);
             l2 a = j2.a(l.g, w1.c.B, sVar, 54);
             int hashCode = Long.hashCode(sVar.T);
             v1 l = sVar.l();
@@ -113,16 +113,16 @@ public final class i {
             } else {
                 sVar.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             t.I(sVar, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             t.I(sVar, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             t.w(sVar, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             t.E(sVar, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             t.I(sVar, eVar4, c);
             if (1.0f <= 0.0d) {
                 l0.a.a("invalid weight; must be greater than zero");
@@ -382,7 +382,7 @@ public final class i {
                                     int L = t.L(i | 1);
                                     int L2 = t.L(i2);
                                     i.b(rVar5, str, str13, str9, str14, q0Var5, q0Var7, z, cVar, d2Var2, j2, (s) obj, L, L2, i3);
-                                    return w61.a0.a;
+                                    return w61.a0Shadow.a;
                                 }
                             };
                             return;

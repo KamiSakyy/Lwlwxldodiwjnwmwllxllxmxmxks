@@ -7,7 +7,7 @@ import kc0.o40;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tr implements aaShadow.a {
     public static final tr a = new tr();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "replyTo"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "replyTo"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

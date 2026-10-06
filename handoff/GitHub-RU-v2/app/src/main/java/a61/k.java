@@ -2,11 +2,11 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k {
-    public j a;
-    public j b;
+    public jShadow a;
+    public jShadow b;
     public double c;
 
-    public k(j jVar, j jVar2, double d) {
+    public k(jShadow jVar, jShadow jVar2, double d) {
         this.a = jVar;
         this.b = jVar2;
         this.c = d;

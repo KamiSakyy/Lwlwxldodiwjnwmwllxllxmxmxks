@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ob implements aaShadow.a {
     public static final ob a = new ob();
-    public static final List b = sy.d0.n("clientMutationId");
+    public static final List b = sy.d0Shadow.n("clientMutationId");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

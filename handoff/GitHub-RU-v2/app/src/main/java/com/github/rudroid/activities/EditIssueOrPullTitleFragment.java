@@ -88,7 +88,7 @@ public final class EditIssueOrPullTitleFragment extends Hilt_EditIssueOrPullTitl
 
     public EditIssueOrPullTitleFragment() {
         w61.h s2 = sy.w.s(w61.i.s, new b(new a()));
-        this.I0 = new androidx.lifecycle.l1(k71.x.a(com.github.rudroid.viewmodels.e0.class), new c(s2), new e(s2), new d(s2));
+        this.I0 = new androidx.lifecycle.l1(k71.xShadow.a(com.github.rudroid.viewmodels.e0.class), new c(s2), new e(s2), new d(s2));
     }
 
     @Override // com.github.rudroid.activities.BaseEditTitleFragment

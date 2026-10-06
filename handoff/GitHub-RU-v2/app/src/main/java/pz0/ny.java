@@ -7,5 +7,5 @@ public abstract class ny {
     public static final a81.t b = new a81.t(1, "first", false);
     public static final a81.t c = new a81.t(1, "orderBy", false);
     public static final a81.t d = new a81.t(1, "query", false);
-    public static final aa.j0 e = new aa.j0("RepositoryOwner", x61.r.r);
+    public static final aa.j0 e = new aa.j0("RepositoryOwner", x61.rShadow.r);
 }

@@ -1,7 +1,7 @@
 package jd;
 
 import com.github.rudroid.fragments.onboarding.notifications.viewmodel.k;
-import jo.f4;
+import jo.f4Shadow;
 import x.i;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -51,7 +51,7 @@ public final class a {
         sb2.append(", hasSeenOnboarding=");
         sb2.append(this.f27394b);
         sb2.append(", shouldShowBanner=");
-        return f4.s(sb2, this.f27395c, ")");
+        return f4Shadow.s(sb2, this.f27395c, ")");
     }
 
     public /* synthetic */ a(boolean z10) {

@@ -6,7 +6,7 @@ import kc0.d30;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ar implements aaShadow.a {
     public static final ar a = new ar();
-    public static final List b = sy.d0.o(new String[]{"hasNextPage", "endCursor", "hasPreviousPage"});
+    public static final List b = sy.d0Shadow.o(new String[]{"hasNextPage", "endCursor", "hasPreviousPage"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -46,7 +46,7 @@ public final class ar implements aaShadow.a {
         k71.k.g(d30Var, "value");
         fVar.z0("hasNextPage");
         aa.b bVar = aa.c.f;
-        jo.f4.C(d30Var.a, bVar, fVar, wVar, "endCursor");
+        jo.f4Shadow.C(d30Var.a, bVar, fVar, wVar, "endCursor");
         aa.c.i.b(fVar, wVar, d30Var.b);
         fVar.z0("hasPreviousPage");
         bVar.b(fVar, wVar, Boolean.valueOf(d30Var.c));

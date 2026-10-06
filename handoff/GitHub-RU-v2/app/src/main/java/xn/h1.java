@@ -5,9 +5,9 @@ public final class h1 {
     public String a;
     public String b;
     public String c;
-    public sy.r d;
+    public sy.rShadow d;
 
-    public h1(String str, String str2, String str3, sy.r rVar) {
+    public h1(String str, String str2, String str3, sy.rShadow rVar) {
         k71.k.g(str, "key");
         this.a = str;
         this.b = str2;

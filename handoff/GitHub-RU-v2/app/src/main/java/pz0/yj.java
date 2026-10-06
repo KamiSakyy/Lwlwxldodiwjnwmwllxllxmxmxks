@@ -15,7 +15,7 @@ public final class yj {
         s = yjVarArr;
         v8.l0.t(yjVarArr);
         Companion = new xj();
-        sy.d0.o(new String[]{"PHONE", "TABLET"});
+        sy.d0Shadow.o(new String[]{"PHONE", "TABLET"});
     }
 
     public yj(String str, int i, String str2) {

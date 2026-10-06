@@ -560,7 +560,7 @@ public final class s1 {
                                     u1 u1Var = (u1) g1Var;
                                     rh.f fVar12 = u1Var.b;
                                     Object obj4 = u1Var.a;
-                                    d0Var = (!(fVar12 instanceof rh.c) || ((rh.c) fVar12).b() || obj4 == null) ? new v1(fVar12) : new d0(obj4);
+                                    d0Var = (!(fVar12 instanceof rh.cShadow) || ((rh.cShadow) fVar12).b() || obj4 == null) ? new v1(fVar12) : new d0(obj4);
                                 } else if (g1Var instanceof u0) {
                                     d0Var = new v0();
                                 } else if (g1Var instanceof h0) {

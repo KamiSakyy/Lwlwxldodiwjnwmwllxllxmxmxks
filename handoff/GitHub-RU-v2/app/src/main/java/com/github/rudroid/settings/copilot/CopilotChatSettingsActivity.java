@@ -49,14 +49,14 @@ public final class CopilotChatSettingsActivity extends l0 {
     public CopilotChatSettingsActivity() {
         this.s0 = false;
         C(new k0(this));
-        this.u0 = new l1(k71.x.a(o.class), new c(), new b(), new d());
+        this.u0 = new l1(k71.xShadow.a(o.class), new c(), new b(), new d());
     }
 
     public static void L0(CopilotChatSettingsActivity copilotChatSettingsActivity, MobileAppElement mobileAppElement) {
         MobileAppAction mobileAppAction = MobileAppAction.PRESS;
         MobileSubjectType mobileSubjectType = MobileSubjectType.COPILOT_SETTINGS;
         copilotChatSettingsActivity.getClass();
-        v71.b0.z(d1.i(copilotChatSettingsActivity), (a71.h) null, (v71.a0) null, new m(copilotChatSettingsActivity, mobileAppElement, mobileAppAction, mobileSubjectType, null), 3);
+        v71.b0.z(d1.i(copilotChatSettingsActivity), (a71.h) null, (v71.a0Shadow) null, new m(copilotChatSettingsActivity, mobileAppElement, mobileAppAction, mobileSubjectType, null), 3);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -78,7 +78,7 @@ public final class CopilotChatSettingsActivity extends l0 {
                 k71.k.g(bVar, "result");
                 if (bVar.a) {
                     CopilotChatSettingsActivity copilotChatSettingsActivity = CopilotChatSettingsActivity.this;
-                    v71.b0.z(d1.i(copilotChatSettingsActivity), (a71.h) null, (v71.a0) null, new l(copilotChatSettingsActivity, null), 3);
+                    v71.b0.z(d1.i(copilotChatSettingsActivity), (a71.h) null, (v71.a0Shadow) null, new l(copilotChatSettingsActivity, null), 3);
                 }
             }
         }, new com.github.rudroid.settings.copilot.paywall.j(w0()));

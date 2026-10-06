@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r6 implements aaShadow.a {
     public static final r6 a = new r6();
-    public static final List b = sy.d0.n("discussionCategory");
+    public static final List b = sy.d0Shadow.n("discussionCategory");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -14,11 +14,11 @@ public final class r6 implements aaShadow.a {
         while (eVar.r0(b) == 0) {
             baVar = (kc0.ba) aa.c.b(aa.c.c(s6.a, true)).a(eVar, wVar);
         }
-        return new kc0.aa(baVar);
+        return new kc0.aaShadow(baVar);
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        kc0.aaShadow aaVar = (kc0.aa) obj;
+        kc0.aaShadow aaVar = (kc0.aaShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(aaVar, "value");

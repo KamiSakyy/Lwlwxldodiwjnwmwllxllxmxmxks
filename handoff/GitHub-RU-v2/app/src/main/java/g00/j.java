@@ -12,7 +12,7 @@ import m10.ew;
 import m10.sa;
 import m10.wg;
 import m10.x2;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -23,7 +23,7 @@ public abstract class j {
     static {
         eh.Companion.getClass();
         r b = l0.b(eh.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         s mVar2 = new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar);
@@ -37,7 +37,7 @@ public abstract class j {
         s mVar5 = new m("isArchived", l0.b(wg.a), (String) null, rVar, rVar, rVar);
         ew.Companion.getClass();
         s mVar6 = new m("type", l0.b(ew.s), (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2Item");
+        List n = d0Shadow.n("ProjectV2Item");
         List list = uz.e.a;
         a = l.r(new s[]{mVar, mVar2, mVar3, mVar4, mVar5, mVar6, no.a.c(list, "selections", "ProjectV2Item", n, list)});
     }

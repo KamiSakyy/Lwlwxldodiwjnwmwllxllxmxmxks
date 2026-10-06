@@ -1,7 +1,7 @@
 package sg0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
@@ -31,7 +31,7 @@ public final class b {
     }
 
     public final String toString() {
-        return f4.o("Labels2(__typename=", this.a, ", nodes=", ")", this.b);
+        return f4Shadow.o("Labels2(__typename=", this.a, ", nodes=", ")", this.b);
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
 }

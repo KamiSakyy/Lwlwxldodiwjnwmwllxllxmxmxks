@@ -15,7 +15,7 @@ import com.google.android.gms.measurement.internal.c0;
 import com.google.android.gms.measurement.internal.x;
 import java.util.Iterator;
 import java.util.List;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements w7.b, k, x, k21.b {
@@ -91,7 +91,7 @@ public final class e implements w7.b, k, x, k21.b {
                 return new RepositoryOwnerRepositoriesFilter(repositoryOwnerRepositoriesFilter.v);
             }
         }
-        return new RepositoryOwnerRepositoriesFilter(r.r);
+        return new RepositoryOwnerRepositoriesFilter(rShadow.r);
     }
 
     public e(o0 o0Var) {

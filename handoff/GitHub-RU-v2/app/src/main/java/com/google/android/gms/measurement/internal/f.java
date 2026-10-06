@@ -19,7 +19,7 @@ public final class f extends d21.a {
     public w z;
 
     public f(f fVar) {
-        c21.u.g(fVar);
+        c21.uShadow.g(fVar);
         this.r = fVar.r;
         this.s = fVar.s;
         this.t = fVar.t;

@@ -4,7 +4,7 @@ import cn.s;
 import com.github.service.models.response.TimelineItem;
 import java.util.ArrayList;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import w61.a0;
 import y71.j;
@@ -59,11 +59,11 @@ public final class b implements j {
                             List list2 = this.t;
                             ArrayList Q = b31.b.Q(list2, list);
                             ArrayList Q2 = b31.b.Q(list, list2);
-                            y61.b i4 = d0.i();
+                            y61.b i4 = d0Shadow.i();
                             w50.c cVar2 = dVar.c;
                             i4.addAll(w50.c.a(Q, TimelineItem.LinkedItemConnectorType.UNLINKED, str));
                             i4.addAll(w50.c.a(Q2, TimelineItem.LinkedItemConnectorType.LINKED, str));
-                            ((s) dVar.b.a(jVar)).b(this.v, d0.h(i4));
+                            ((s) dVar.b.a(jVar)).b(this.v, d0Shadow.h(i4));
                             aVar.v = 1;
                             if (this.s.c(a0Var, aVar) == aVar2) {
                                 return aVar2;
@@ -104,11 +104,11 @@ public final class b implements j {
                             List list4 = this.t;
                             ArrayList Q3 = b31.b.Q(list4, list3);
                             ArrayList Q4 = b31.b.Q(list3, list4);
-                            y61.b i6 = d0.i();
+                            y61.b i6 = d0Shadow.i();
                             w50.c cVar3 = fVar.c;
                             i6.addAll(w50.c.a(Q3, TimelineItem.LinkedItemConnectorType.UNLINKED, str2));
                             i6.addAll(w50.c.a(Q4, TimelineItem.LinkedItemConnectorType.LINKED, str2));
-                            ((s) fVar.b.a(jVar2)).b(this.v, d0.h(i6));
+                            ((s) fVar.b.a(jVar2)).b(this.v, d0Shadow.h(i6));
                             eVar.v = 1;
                             if (this.s.c(a0Var3, eVar) == aVar3) {
                                 return aVar3;

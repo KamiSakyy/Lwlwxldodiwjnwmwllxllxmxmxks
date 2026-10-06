@@ -8,7 +8,7 @@ import c30.o0;
 import com.github.domain.searchandfilter.filters.data.notification.StatusNotificationFilter;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import sy.w;
 
@@ -37,7 +37,7 @@ public final class NotificationFilterFilter extends d {
     public /* synthetic */ NotificationFilterFilter(int i, l lVar, String str, com.github.domain.searchandfilter.filters.data.notification.a aVar) {
         super(i, lVar, str);
         if (5 != (i & 5)) {
-            c1.l(i, 5, NotificationFilterFilter$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 5, NotificationFilterFilter$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.v = aVar;

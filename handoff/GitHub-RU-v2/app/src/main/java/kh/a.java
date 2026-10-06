@@ -20,8 +20,8 @@ import com.github.service.models.response.shortcuts.ShortcutScope$SpecificReposi
 import java.lang.annotation.Annotation;
 import jk.j;
 import k3.l;
-import k71.x;
-import k81.c1;
+import k71.xShadow;
+import k81.c1Shadow;
 import k81.z;
 import kotlinx.serialization.KSerializer;
 import l01.j0;

@@ -10,7 +10,7 @@ public abstract class p {
     public volatile long c;
 
     public p(x1 x1Var) {
-        c21.u.g(x1Var);
+        c21.uShadow.g(x1Var);
         this.a = x1Var;
         this.b = new com.google.common.util.concurrent.b(this, x1Var, false, 4);
     }

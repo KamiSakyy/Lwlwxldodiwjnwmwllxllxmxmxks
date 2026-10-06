@@ -6,7 +6,7 @@ import java.util.List;
 import org.jsoup.helper.ValidationException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b {
+public final class bShadow {
     public f0 a;
     public a b;
     public u0 c;
@@ -17,8 +17,8 @@ public final class b {
     public e0 h;
     public i0 i;
     public p0 j;
-    public b0 l;
-    public b0 m;
+    public b0Shadow l;
+    public b0Shadow m;
     public boolean n;
     public ca1.j o;
     public ca1.m p;
@@ -129,7 +129,7 @@ public final class b {
      */
     /* JADX WARN: Code restructure failed: missing block: B:41:0x00be, code lost:
     
-        if (ba1.h.b(r0.u.s, da1.b.J) != false) goto L44;
+        if (ba1.h.b(r0.u.s, da1.bShadow.J) != false) goto L44;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -190,7 +190,7 @@ public final class b {
         }
     }
 
-    public final void K(b0 b0Var) {
+    public final void K(b0Shadow b0Var) {
         this.r.add(b0Var);
     }
 
@@ -264,7 +264,7 @@ public final class b {
         int size = this.e.size();
         int i = size - 1;
         int i2 = i >= 256 ? size - 257 : 0;
-        b0 b0Var = this.l;
+        b0Shadow b0Var = this.l;
         if (this.e.size() == 0) {
             this.l = b0.x;
         }
@@ -283,7 +283,7 @@ public final class b {
                             this.l = b0.K;
                             break;
                         case "template":
-                            b0 b0Var2 = this.r.size() > 0 ? (b0) no.a.g(1, this.r) : null;
+                            b0Shadow b0Var2 = this.r.size() > 0 ? (b0Shadow) no.a.g(1, this.r) : null;
                             if (b0Var2 == null) {
                                 throw new ValidationException("Bug: no template insertion mode on stack!");
                             }
@@ -413,7 +413,7 @@ public final class b {
     }
 
     public final ca1.j g(p0 p0Var, String str, boolean z2) {
-        ca1.b bVar = p0Var.g;
+        ca1.bShadow bVar = p0Var.g;
         if (bVar != null && bVar.size() != 0) {
             int i = 0;
             if (!z2 && !this.h.b) {
@@ -484,7 +484,7 @@ public final class b {
                 d0Var.add(new c0(this.b, "Invalid xmlns attribute [%s] on tag [%s]", objArr));
             }
         }
-        if (this.v && ba1.h.c(h().u.t, a0.z)) {
+        if (this.v && ba1.h.c(h().u.t, a0.zShadow)) {
             ca1.j n = n("table");
             int i = 1;
             if (n != null) {
@@ -561,7 +561,7 @@ public final class b {
         this.e.add(jVar);
     }
 
-    public final void k(b0 b0Var) {
+    public final void k(b0Shadow b0Var) {
         if (this.a.s.a()) {
             this.a.s.add(new c0(this.b, "Unexpected %s token [%s] when in state [%s]", new Object[]{this.g.getClass().getSimpleName(), this.g, b0Var}));
         }

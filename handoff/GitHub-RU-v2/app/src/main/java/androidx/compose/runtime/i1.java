@@ -85,8 +85,8 @@ public final class i1 implements d, l3.p {
         return ((d) this.f1677t).k();
     }
 
-    public x9.h l() {
-        x9.h hVar = new x9.h();
+    public x9.hShadow l() {
+        x9.hShadow hVar = new x9.hShadow();
         hVar.f34005a = this.f1675r;
         hVar.f34006b = this.f1676s;
         hVar.f34007c = (String) this.f1677t;

@@ -7,8 +7,8 @@ public abstract class op {
     public static final np Companion = new np();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("RemovedFromMergeQueueEvent", n, sy.d0.n(yh.a));
+        new aa.q0("RemovedFromMergeQueueEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

@@ -6,7 +6,7 @@ import jo.p30;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pr implements aaShadow.a {
     public static final pr a = new pr();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -68,18 +68,18 @@ public final class pr implements aaShadow.a {
         fVar.z0("forkCount");
         f1.e.A(k2Var.g, aVar, fVar, wVar, "hasIssuesEnabled");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(k2Var.h, bVar3, fVar, wVar, "showActions");
-        jo.f4.C(k2Var.i, bVar3, fVar, wVar, "homepageUrl");
+        jo.f4Shadow.C(k2Var.h, bVar3, fVar, wVar, "showActions");
+        jo.f4Shadow.C(k2Var.i, bVar3, fVar, wVar, "homepageUrl");
         aa.o0 o0Var = aa.c.i;
         o0Var.b(fVar, wVar, k2Var.j);
         fVar.z0("isPrivate");
-        jo.f4.C(k2Var.k, bVar3, fVar, wVar, "isArchived");
-        jo.f4.C(k2Var.l, bVar3, fVar, wVar, "isTemplate");
-        jo.f4.C(k2Var.m, bVar3, fVar, wVar, "isFork");
-        jo.f4.C(k2Var.n, bVar3, fVar, wVar, "forkingAllowed");
-        jo.f4.C(k2Var.o, bVar3, fVar, wVar, "isEmpty");
-        jo.f4.C(k2Var.p, bVar3, fVar, wVar, "isInOrganization");
-        jo.f4.C(k2Var.q, bVar3, fVar, wVar, "issues");
+        jo.f4Shadow.C(k2Var.k, bVar3, fVar, wVar, "isArchived");
+        jo.f4Shadow.C(k2Var.l, bVar3, fVar, wVar, "isTemplate");
+        jo.f4Shadow.C(k2Var.m, bVar3, fVar, wVar, "isFork");
+        jo.f4Shadow.C(k2Var.n, bVar3, fVar, wVar, "forkingAllowed");
+        jo.f4Shadow.C(k2Var.o, bVar3, fVar, wVar, "isEmpty");
+        jo.f4Shadow.C(k2Var.p, bVar3, fVar, wVar, "isInOrganization");
+        jo.f4Shadow.C(k2Var.q, bVar3, fVar, wVar, "issues");
         aa.c.c(dw.o2.a, false).b(fVar, wVar, k2Var.r);
         fVar.z0("name");
         bVar2.b(fVar, wVar, k2Var.s);
@@ -102,16 +102,16 @@ public final class pr implements aaShadow.a {
         fVar.z0("description");
         o0Var.b(fVar, wVar, k2Var.B);
         fVar.z0("viewerCanAdminister");
-        jo.f4.C(k2Var.C, bVar3, fVar, wVar, "viewerCanPush");
-        jo.f4.C(k2Var.D, bVar3, fVar, wVar, "viewerCanSubscribe");
-        jo.f4.C(k2Var.E, bVar3, fVar, wVar, "viewerPermission");
+        jo.f4Shadow.C(k2Var.C, bVar3, fVar, wVar, "viewerCanPush");
+        jo.f4Shadow.C(k2Var.D, bVar3, fVar, wVar, "viewerCanSubscribe");
+        jo.f4Shadow.C(k2Var.E, bVar3, fVar, wVar, "viewerPermission");
         aa.c.b(n10Shadow.b.A).b(fVar, wVar, k2Var.F);
         fVar.z0("watchers");
         aa.c.c(dw.f3.a, false).b(fVar, wVar, k2Var.G);
         fVar.z0("licenseInfo");
         aa.c.b(aa.c.c(dw.q2.a, true)).b(fVar, wVar, k2Var.H);
         fVar.z0("isDiscussionsEnabled");
-        jo.f4.C(k2Var.I, bVar3, fVar, wVar, "discussionsCount");
+        jo.f4Shadow.C(k2Var.I, bVar3, fVar, wVar, "discussionsCount");
         f1.e.A(k2Var.J, aVar, fVar, wVar, "parent");
         aa.c.b(aa.c.c(dw.w2.a, false)).b(fVar, wVar, k2Var.K);
         fVar.z0("releases");
@@ -119,9 +119,9 @@ public final class pr implements aaShadow.a {
         fVar.z0("latestRelease");
         aa.c.b(aa.c.c(dw.p2.a, false)).b(fVar, wVar, k2Var.M);
         fVar.z0("isViewersFavorite");
-        jo.f4.C(k2Var.N, bVar3, fVar, wVar, "viewerHasBlockedContributors");
-        jo.f4.C(k2Var.O, bVar3, fVar, wVar, "viewerBlockedByOwner");
-        jo.f4.C(k2Var.P, bVar3, fVar, wVar, "mergeQueue");
+        jo.f4Shadow.C(k2Var.N, bVar3, fVar, wVar, "viewerHasBlockedContributors");
+        jo.f4Shadow.C(k2Var.O, bVar3, fVar, wVar, "viewerBlockedByOwner");
+        jo.f4Shadow.C(k2Var.P, bVar3, fVar, wVar, "mergeQueue");
         aa.c.b(aa.c.c(dw.r2.a, true)).b(fVar, wVar, k2Var.Q);
         fVar.z0("projectsV2");
         aa.c.c(dw.x2.a, false).b(fVar, wVar, k2Var.R);

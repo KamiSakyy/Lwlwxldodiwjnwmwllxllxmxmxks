@@ -1,12 +1,12 @@
 package w80;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o3 implements aa.a {
     public static final o3 a = new o3();
-    public static final List b = sy.d0.o("__typename", "id", "stargazerCount", "viewerHasStarred");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "stargazerCount", "viewerHasStarred");
 
     public static m3 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

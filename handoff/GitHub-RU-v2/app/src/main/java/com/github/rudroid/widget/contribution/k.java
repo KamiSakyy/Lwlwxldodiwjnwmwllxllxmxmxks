@@ -5,7 +5,7 @@ import com.github.rudroid.uitoolkit.q2;
 import com.github.service.models.response.ContributionLevel;
 import java.util.ArrayList;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -91,7 +91,7 @@ public final class k {
             ArrayList arrayList = new ArrayList();
             ArrayList H0 = x61.m.H0(list);
             while (W > 0 && !H0.isEmpty()) {
-                arrayList.add(0, H0.remove(d0.m(H0)));
+                arrayList.add(0, H0.remove(d0Shadow.m(H0)));
                 W--;
             }
             sVar2 = sVar;

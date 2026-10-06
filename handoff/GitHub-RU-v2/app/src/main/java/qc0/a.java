@@ -24,10 +24,10 @@ import gn0.s00;
 import gn0.tb;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
@@ -37,7 +37,7 @@ public abstract class a {
         tb.Companion.getClass();
         x xVar = tb.a;
         k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("endCursor", xVar, (String) null, rVar, rVar, rVar);
         lb.Companion.getClass();
         x xVar2 = lb.a;
@@ -57,11 +57,11 @@ public abstract class a {
         x0 x0Var = hy.a;
         k.g(x0Var, "type");
         m mVar4 = new m("unlockingModel", x0Var, (String) null, rVar, rVar, r5);
-        aa.r b = l0.b(xVar);
+        aa.rShadow b = l0.b(xVar);
         j.Companion.getClass();
         List r6 = l.r(new m[]{mVar4, new m("localizedUnlockingExplanation", b, (String) null, rVar, no.a.s(j.a, new u0("EN")), rVar), new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         m mVar5 = new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar);
-        aa.r b2 = l0.b(xVar);
+        aa.rShadow b2 = l0.b(xVar);
         d.Companion.getClass();
         m mVar6 = new m("localizedDescription", b2, (String) null, rVar, no.a.s(d.a, new u0("EN")), rVar);
         r6.Companion.getClass();
@@ -77,12 +77,12 @@ public abstract class a {
         jj.Companion.getClass();
         List r8 = l.r(new m[]{mVar10, new m("pageInfo", l0.b(jj.a), (String) null, rVar, rVar, r), new m("nodes", l0.a(d.c), (String) null, rVar, rVar, r7)});
         f.Companion.getClass();
-        aa.r b3 = l0.b(f.a);
+        aa.rShadow b3 = l0.b(f.a);
         s00.Companion.getClass();
-        List r9 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("User", d0.n("User"), d0.n(new m("achievements", b3, (String) null, rVar, l.r(new aa.k[]{new aa.k(s00.a, new u0(new t("after"))), new aa.k(s00.b, new u0(new t("first")))}), r8))), new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
+        List r9 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("User", d0Shadow.n("User"), d0Shadow.n(new m("achievements", b3, (String) null, rVar, l.r(new aa.k[]{new aa.k(s00.a, new u0(new t("after"))), new aa.k(s00.b, new u0(new t("first")))}), r8))), new m("id", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
         q0 q0Var2 = s00.P;
         k.g(q0Var2, "type");
         rn.Companion.getClass();
-        a = d0.n(new m("user", q0Var2, (String) null, rVar, no.a.s(rn.y, new u0(new t("login"))), r9));
+        a = d0Shadow.n(new m("user", q0Var2, (String) null, rVar, no.a.s(rn.y, new u0(new t("login"))), r9));
     }
 }

@@ -10,7 +10,7 @@ import hc0.fb;
 import hc0.ha;
 import hc0.xa;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,9 +22,9 @@ public abstract class a {
         db.Companion.getClass();
         x xVar = db.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
-        List n2 = d0.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        List n2 = d0Shadow.n(new m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
         bb.Companion.getClass();
         m mVar = new m("id", l0.b(bb.a), (String) null, rVar, rVar, rVar);
         xa.Companion.getClass();

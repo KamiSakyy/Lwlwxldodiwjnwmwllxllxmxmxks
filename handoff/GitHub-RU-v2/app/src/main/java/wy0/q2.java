@@ -53,7 +53,7 @@ public final class q2 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar);
+                    y71.n1Shadow.s(jVar);
                     Object b = R.b(new rm0.f2(jVar, list, 17), this);
                     if (b != aVar) {
                         b = a0Var;
@@ -83,7 +83,7 @@ public final class q2 extends c71.j implements j71.f {
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    y71.n1.s(jVar2);
+                    y71.n1Shadow.s(jVar2);
                     Object b2 = R2.b(new rm0.f2(jVar2, list2, 19), this);
                     if (b2 != aVar2) {
                         b2 = a0Var2;

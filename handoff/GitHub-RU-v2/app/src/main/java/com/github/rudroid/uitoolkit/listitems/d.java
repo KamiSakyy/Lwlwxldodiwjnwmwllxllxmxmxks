@@ -458,7 +458,7 @@ public final /* synthetic */ class d implements j71.f {
                     intValue26 |= sVar27.f(cVar) ? 4 : 2;
                 }
                 if (sVar27.S(intValue26 & 1, (intValue26 & 19) != 18)) {
-                    androidx.compose.foundation.layout.t.a(f0.o.f(p2.f(p2.e(androidx.compose.foundation.layout.b.z(w1.o.a, 0.0f, g0.e.l, 1), 1.0f), g0.e.k), cVar.c, d2.a0.b), sVar27, 0);
+                    androidx.compose.foundation.layout.t.a(f0.o.f(p2.f(p2.e(androidx.compose.foundation.layout.b.z(w1.o.a, 0.0f, g0.e.l, 1), 1.0f), g0.e.k), cVar.c, d2.a0Shadow.b), sVar27, 0);
                 } else {
                     sVar27.V();
                 }

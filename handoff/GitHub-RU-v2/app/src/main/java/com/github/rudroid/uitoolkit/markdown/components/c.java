@@ -116,7 +116,7 @@ public final /* synthetic */ class c implements j71.a {
                 try {
                     return (List) aVar.a();
                 } catch (SSLPeerUnverifiedException unused) {
-                    return x61.r.r;
+                    return x61.rShadow.r;
                 }
         }
         return Boolean.TRUE;

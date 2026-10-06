@@ -9,7 +9,7 @@ import jn0.q20;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class uq implements aaShadow.a {
     public static final uq a = new uq();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         p20 p20Var;

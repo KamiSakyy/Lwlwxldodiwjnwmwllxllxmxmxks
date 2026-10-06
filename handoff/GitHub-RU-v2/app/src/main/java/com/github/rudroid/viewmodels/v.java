@@ -39,11 +39,11 @@ public final class v extends androidx.lifecycle.k1 implements com.github.rudroid
             i++;
             arrayList2.add(new com.github.rudroid.issueorpullrequest.ui.copilot.codereview.p((CopilotCodeReviewFeedbackOption) obj2, false));
         }
-        y71.y1 c = y71.n1.c(new com.github.rudroid.issueorpullrequest.ui.copilot.codereview.n(arrayList2, (String) null));
+        y71.y1 c = y71.n1Shadow.c(new com.github.rudroid.issueorpullrequest.ui.copilot.codereview.n(arrayList2, (String) null));
         this.w = c;
         this.x = new y71.i1(c);
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
-        y71.y1 c2 = y71.n1.c(g1.a.a());
+        y71.y1 c2 = y71.n1Shadow.c(g1.a.a());
         this.y = c2;
         this.z = new y71.i1(c2);
     }
@@ -52,6 +52,6 @@ public final class v extends androidx.lifecycle.k1 implements com.github.rudroid
         k71.k.g(str, "commentId");
         k71.k.g(copilotCodeReviewFeedbackType, "feedbackType");
         com.github.rudroid.utilities.w0.n(this.y);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u(this, str, copilotCodeReviewFeedbackType, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u(this, str, copilotCodeReviewFeedbackType, null), 3);
     }
 }

@@ -70,7 +70,7 @@ public final /* synthetic */ class b implements j71.e {
                                     CopilotManageSubscriptionActivity.a aVar5 = CopilotManageSubscriptionActivity.Companion;
                                     cg.a aVar6 = cVar.b;
                                     CopilotManageSubscriptionActivity copilotManageSubscriptionActivity2 = CopilotManageSubscriptionActivity.this;
-                                    v71.b0.z(d1.i(copilotManageSubscriptionActivity2), (a71.h) null, (v71.a0) null, new q(copilotManageSubscriptionActivity2, aVar6, null), 3);
+                                    v71.b0.z(d1.i(copilotManageSubscriptionActivity2), (a71.h) null, (v71.a0Shadow) null, new q(copilotManageSubscriptionActivity2, aVar6, null), 3);
                                     copilotManageSubscriptionActivity2.J0().P();
                                     return w61.a0.a;
                                 }

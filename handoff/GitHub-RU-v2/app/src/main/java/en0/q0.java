@@ -17,14 +17,14 @@ public abstract class q0 {
     static {
         lb.Companion.getClass();
         aa.r b = v8.l0.b(lb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         tb.Companion.getClass();
         aa.x xVar = tb.a;
         k71.k.g(xVar, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("DiscussionCategory");
+        List n = sy.d0Shadow.n("DiscussionCategory");
         List list = xf0.a.a;
         aa.s c = no.a.c(list, "selections", "DiscussionCategory", n, list);
         pb.Companion.getClass();
@@ -42,6 +42,6 @@ public abstract class q0 {
         aa.q0 q0Var = eq.m0;
         k71.k.g(q0Var, "type");
         rn.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(rn.l, new aa.u0(new aa.t("repositoryName"))), new aa.k(rn.m, new aa.u0(new aa.t("repositoryOwner")))}), r4));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(rn.l, new aa.u0(new aa.t("repositoryName"))), new aa.k(rn.m, new aa.u0(new aa.t("repositoryOwner")))}), r4));
     }
 }

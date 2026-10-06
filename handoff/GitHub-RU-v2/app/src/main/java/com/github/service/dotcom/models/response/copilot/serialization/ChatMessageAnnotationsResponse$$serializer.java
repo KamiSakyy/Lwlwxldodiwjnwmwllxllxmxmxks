@@ -3,7 +3,7 @@ package com.github.service.dotcom.models.response.copilot.serialization;
 import com.google.android.gms.internal.measurement.d5;
 import java.util.List;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import k81.d0;
 import k81.e1;
 import kotlinx.serialization.KSerializer;
@@ -12,7 +12,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.Decoder;
 import kotlinx.serialization.encoding.Encoder;
 import w61.h;
-import x61.r;
+import x61.rShadow;
 
 @w61.c
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -72,13 +72,13 @@ public final /* synthetic */ class ChatMessageAnnotationsResponse$$serializer im
         SerialDescriptor serialDescriptor = descriptor;
         d5 b = encoder.b(serialDescriptor);
         h[] hVarArr = ChatMessageAnnotationsResponse.b;
-        if (b.X(serialDescriptor) || !k.b(list, r.r)) {
+        if (b.X(serialDescriptor) || !k.b(list, rShadow.r)) {
             b.I(serialDescriptor, 0, (KSerializer) hVarArr[0].getValue(), list);
         }
         b.L(serialDescriptor);
     }
 
     public /* bridge */ KSerializer[] typeParametersSerializers() {
-        return c1.b;
+        return c1Shadow.b;
     }
 }

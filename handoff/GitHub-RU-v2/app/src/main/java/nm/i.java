@@ -8,7 +8,7 @@ import sy.y;
 import v71.v;
 import w61.a0;
 import x61.n;
-import y71.n1;
+import y71.n1Shadow;
 import z01.u0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -62,7 +62,7 @@ public final class i {
                     jVar = cVar2.u;
                     y.j(obj);
                 }
-                return n1.y(new aq.c(new y71.y((y71.i) obj, new d(this, jVar, null, 0), 6), 6), this.c);
+                return n1Shadow.y(new aq.c(new y71.y((y71.i) obj, new d(this, jVar, null, 0), 6), 6), this.c);
             }
         }
         cVar2 = new c(this, cVar);
@@ -71,7 +71,7 @@ public final class i {
         i = cVar2.x;
         if (i != 0) {
         }
-        return n1.y(new aq.c(new y71.y((y71.i) obj2, new d(this, jVar, null, 0), 6), 6), this.c);
+        return n1Shadow.y(new aq.c(new y71.y((y71.i) obj2, new d(this, jVar, null, 0), 6), 6), this.c);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:21:0x00c5  */
@@ -135,7 +135,7 @@ public final class i {
                     }
                     jVar3 = hVar2.u;
                     y.j(obj);
-                    return n1.y(new g(new y71.y(new y71.y((y71.i) obj, new d(this, jVar3, cVar2, 1), 6), new r(this, cVar2, 7)), 0), this.c);
+                    return n1Shadow.y(new g(new y71.y(new y71.y((y71.i) obj, new d(this, jVar3, cVar2, 1), 6), new r(this, cVar2, 7)), 0), this.c);
                 }
                 localTime4 = hVar2.x;
                 localTime3 = hVar2.w;
@@ -151,7 +151,7 @@ public final class i {
                 obj = u0Var.e(arrayList2, localTime3, localTime4);
                 if (obj != aVar) {
                     jVar3 = jVar2;
-                    return n1.y(new g(new y71.y(new y71.y((y71.i) obj, new d(this, jVar3, cVar2, 1), 6), new r(this, cVar2, 7)), 0), this.c);
+                    return n1Shadow.y(new g(new y71.y(new y71.y((y71.i) obj, new d(this, jVar3, cVar2, 1), 6), new r(this, cVar2, 7)), 0), this.c);
                 }
                 return aVar;
             }

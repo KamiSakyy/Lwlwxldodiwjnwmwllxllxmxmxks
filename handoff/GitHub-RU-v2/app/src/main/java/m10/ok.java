@@ -7,8 +7,8 @@ public abstract class ok {
     public static final nk Companion = new nk();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("LockedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("LockedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

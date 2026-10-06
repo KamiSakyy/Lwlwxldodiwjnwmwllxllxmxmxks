@@ -33,19 +33,19 @@ public abstract class s {
         boolean z;
         boolean z2;
         boolean z3;
-        x0 x0Var;
+        x0Shadow x0Var;
         int i;
         int i2;
-        x0[] x0VarArr;
+        x0Shadow[] x0VarArr;
         int i3;
         int i4;
         String str;
-        x0 x0Var2;
-        x0 f0Var;
+        x0Shadow x0Var2;
+        x0Shadow f0Var;
         a0 a0Var;
         a0 a0Var2;
         String str2;
-        o0 o0Var = new o0(l1Var, cls, method);
+        o0Shadow o0Var = new o0Shadow(l1Var, cls, method);
         Annotation[] annotationArr = o0Var.d;
         int length = annotationArr.length;
         int i5 = 0;
@@ -53,7 +53,7 @@ public abstract class s {
         loop0: while (true) {
             String str3 = "HEAD";
             boolean z4 = true;
-            x0 x0Var3 = null;
+            x0Shadow x0Var3 = null;
             if (i6 >= length) {
                 if (o0Var.o == null) {
                     throw x0.m(method, null, "HTTP method annotation is required (e.g., @GET, @POST, etc.).", new Object[0]);
@@ -68,11 +68,11 @@ public abstract class s {
                 }
                 Annotation[][] annotationArr2 = o0Var.e;
                 int length2 = annotationArr2.length;
-                o0Var.w = new x0[length2];
+                o0Var.w = new x0Shadow[length2];
                 int i7 = length2 - 1;
                 int i8 = 0;
                 while (i8 < length2) {
-                    x0[] x0VarArr2 = o0Var.w;
+                    x0Shadow[] x0VarArr2 = o0Var.w;
                     Type type = o0Var.f[i8];
                     Annotation[] annotationArr3 = annotationArr2[i8];
                     int i9 = i8 == i7 ? 1 : i5;
@@ -401,7 +401,7 @@ public abstract class s {
                                                 o0Var.c(i8, type);
                                                 Class a2 = o0.a(x0.h(type));
                                                 for (int i16 = i8 - 1; i16 >= 0; i16--) {
-                                                    x0 x0Var4 = o0Var.w[i16];
+                                                    x0Shadow x0Var4 = o0Var.w[i16];
                                                     if ((x0Var4 instanceof j0) && ((j0) x0Var4).d.equals(a2)) {
                                                         throw x0.n(method, i8, "@Tag type " + a2.getName() + " is duplicate of " + k0.b.c(method, i16) + " and would always overwrite its value.", new Object[0]);
                                                     }
@@ -451,7 +451,7 @@ public abstract class s {
                     int i17 = length2;
                     String str4 = str3;
                     int i18 = i7;
-                    x0[] x0VarArr3 = x0VarArr2;
+                    x0Shadow[] x0VarArr3 = x0VarArr2;
                     int i19 = i9;
                     if (x0Var == null) {
                         if (i19 != 0) {

@@ -16,7 +16,7 @@ public abstract class c4 {
         hb.Companion.getClass();
         aa.x xVar = hb.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("contentHTML", xVar, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         aa.x xVar2 = fb.a;
@@ -32,6 +32,6 @@ public abstract class c4 {
         aa.q0 q0Var2 = ap.k0;
         k71.k.g(q0Var2, "type");
         pm.Companion.getClass();
-        a = sy.d0.n(new aa.m("repository", q0Var2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("name"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r2));
+        a = sy.d0Shadow.n(new aa.m("repository", q0Var2, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(pm.i, new aa.u0(new aa.t("name"))), new aa.k(pm.j, new aa.u0(new aa.t("owner")))}), r2));
     }
 }

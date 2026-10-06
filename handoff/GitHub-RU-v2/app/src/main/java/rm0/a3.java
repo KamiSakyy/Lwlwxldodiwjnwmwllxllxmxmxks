@@ -89,25 +89,25 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "ref");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new us(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 0), this.u);
+                return y71.n1Shadow.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new us(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 0), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "ref");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new cx(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 1), this.u);
+                return y71.n1Shadow.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new cx(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 1), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "ref");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new qr(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 2), this.u);
+                return y71.n1Shadow.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new qr(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 2), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "ref");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new fv(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 3), this.u);
+                return y71.n1Shadow.y(new p2(new y00.l(com.github.service.wrapper.a.o(this.s, new fv(str, str2, str3, str4), null, false, null, null, 58), 10), this, file, str4, z, 3), this.u);
         }
     }
 
@@ -134,7 +134,7 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 gn0.ia iaVar = new gn0.ia(u0Var, new aa.u0(arrayList2));
                 aa.u0 u0Var2 = new aa.u0(str3);
                 String h = f1.e.h(str, "/", str2);
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new kc0.k6(new gn0.i5(new gn0.l4(u0Var2, h == null ? aa.t0.d : new aa.u0(h)), str6, new aa.u0(iaVar), new gn0.k4(new aa.u0(str4), str5)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new kc0.k6(new gn0.i5(new gn0.l4(u0Var2, h == null ? aa.t0.d : new aa.u0(h)), str6, new aa.u0(iaVar), new gn0.k4(new aa.u0(str4), str5)))))), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repoName");
@@ -155,7 +155,7 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 jf jfVar = new jf(u0Var3, new aa.u0(arrayList4));
                 aa.u0 u0Var4 = new aa.u0(str3);
                 String h2 = f1.e.h(str, "/", str2);
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new jo.j7(new m10.x8(new m10.g6(u0Var4, h2 == null ? aa.t0.d : new aa.u0(h2)), str6, new aa.u0(jfVar), new m10.f6(new aa.u0(str4), str5)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new jo.j7(new m10.x8(new m10.g6(u0Var4, h2 == null ? aa.t0.d : new aa.u0(h2)), str6, new aa.u0(jfVar), new m10.f6(new aa.u0(str4), str5)))))), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repoName");
@@ -176,7 +176,7 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 hc0.u9 u9Var = new hc0.u9(u0Var5, new aa.u0(arrayList6));
                 aa.u0 u0Var6 = new aa.u0(str3);
                 String h3 = f1.e.h(str, "/", str2);
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new u10.c6(new hc0.y4(new hc0.b4(u0Var6, h3 == null ? aa.t0.d : new aa.u0(h3)), str6, new aa.u0(u9Var), new hc0.a4(new aa.u0(str4), str5)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new u10.c6(new hc0.y4(new hc0.b4(u0Var6, h3 == null ? aa.t0.d : new aa.u0(h3)), str6, new aa.u0(u9Var), new hc0.a4(new aa.u0(str4), str5)))))), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repoName");
@@ -197,7 +197,7 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 ec ecVar = new ec(u0Var7, new aa.u0(arrayList8));
                 aa.u0 u0Var8 = new aa.u0(str3);
                 String h4 = f1.e.h(str, "/", str2);
-                return y71.n1.y(in.r.l(in.r.h(this.s.d(new jn0.z6(new pz0.x5(new pz0.a5(u0Var8, h4 == null ? aa.t0.d : new aa.u0(h4)), str6, new aa.u0(ecVar), new pz0.z4(new aa.u0(str4), str5)))))), this.u);
+                return y71.n1Shadow.y(in.rShadow.l(in.rShadow.h(this.s.d(new jn0.z6(new pz0.x5(new pz0.a5(u0Var8, h4 == null ? aa.t0.d : new aa.u0(h4)), str6, new aa.u0(ecVar), new pz0.z4(new aa.u0(str4), str5)))))), this.u);
         }
     }
 
@@ -208,22 +208,22 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new cn.q(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new ct(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 16), 19), this.u);
+                return y71.n1Shadow.y(new cn.q(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new ct(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 16), 19), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new cn.q(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new kx(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 25), 27), this.u);
+                return y71.n1Shadow.y(new cn.q(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new kx(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 25), 27), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new t00.f8(5, new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new yr(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 15)), this.u);
+                return y71.n1Shadow.y(new t00.f8(5, new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new yr(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 15)), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new t00.f8(12, new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new nv(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 22)), this.u);
+                return y71.n1Shadow.y(new t00.f8(12, new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new nv(str, str2, f1.e.h(str3, ":", str4)), null, false, null, null, 58), 10), 22)), this.u);
         }
     }
 
@@ -234,22 +234,22 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new gl.f(com.github.service.wrapper.a.o(this.s, new be(str, str2, str3, str4), null, true, sy.f0.n(in.r.a, ApiFailureType.NOT_FOUND), null, 50), 29), this.u);
+                return y71.n1Shadow.y(new gl.f(com.github.service.wrapper.a.o(this.s, new be(str, str2, str3, str4), null, true, sy.f0.n(in.rShadow.a, ApiFailureType.NOT_FOUND), null, 50), 29), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new sm.b(com.github.service.wrapper.a.o(this.s, new qg(str, str2, str3, str4), null, true, sy.f0.n(in.r.a, ApiFailureType.NOT_FOUND), null, 50), 11), this.u);
+                return y71.n1Shadow.y(new sm.b(com.github.service.wrapper.a.o(this.s, new qg(str, str2, str3, str4), null, true, sy.f0.n(in.rShadow.a, ApiFailureType.NOT_FOUND), null, 50), 11), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new t00.h7(com.github.service.wrapper.a.o(this.s, new id(str, str2, str3, str4), null, true, sy.f0.n(in.r.a, ApiFailureType.NOT_FOUND), null, 50), 27), this.u);
+                return y71.n1Shadow.y(new t00.h7(com.github.service.wrapper.a.o(this.s, new id(str, str2, str3, str4), null, true, sy.f0.n(in.rShadow.a, ApiFailureType.NOT_FOUND), null, 50), 27), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new tf(str, str2, str3, str4), null, true, sy.f0.n(in.r.a, ApiFailureType.NOT_FOUND), null, 50), 16), this.u);
+                return y71.n1Shadow.y(new vm0.h(com.github.service.wrapper.a.o(this.s, new tf(str, str2, str3, str4), null, true, sy.f0.n(in.rShadow.a, ApiFailureType.NOT_FOUND), null, 50), 16), this.u);
         }
     }
 
@@ -261,25 +261,25 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "branch");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new y2(com.github.service.wrapper.a.o(this.s, new jw(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 0), this.u);
+                return y71.n1Shadow.y(new y2(com.github.service.wrapper.a.o(this.s, new jw(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 0), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "branch");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new y2(com.github.service.wrapper.a.o(this.s, new z10(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 1), this.u);
+                return y71.n1Shadow.y(new y2(com.github.service.wrapper.a.o(this.s, new z10(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 1), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "branch");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new y2(com.github.service.wrapper.a.o(this.s, new vu(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 2), this.u);
+                return y71.n1Shadow.y(new y2(com.github.service.wrapper.a.o(this.s, new vu(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 2), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "repo");
                 k71.k.g(str3, "branch");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new y2(com.github.service.wrapper.a.o(this.s, new zz(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 3), this.u);
+                return y71.n1Shadow.y(new y2(com.github.service.wrapper.a.o(this.s, new zz(str, str2, str4.length() == 0 ? str3 : f1.e.h(str3, ":", str4), str3), null, false, null, null, 58), str3, str4, 3), this.u);
         }
     }
 
@@ -291,13 +291,13 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str2, "repoName");
                 StringBuilder sb = new StringBuilder("repo:");
                 f1.e.x(sb, str, "/", str2, " AND (");
-                return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new kc0.h5(com.github.rudroid.copilot.h1.p(sb, str3, ")"), str4 == null ? aa.t0.d : new aa.u0(str4)), null, false, null, null, 58), 10), 17), this.u);
+                return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new kc0.h5(com.github.rudroid.copilot.h1.p(sb, str3, ")"), str4 == null ? aa.t0.d : new aa.u0(str4)), null, false, null, null, 58), 10), 17), this.u);
             case 1:
                 k71.k.g(str, "repoOwner");
                 k71.k.g(str2, "repoName");
                 StringBuilder sb2 = new StringBuilder("repo:");
                 f1.e.x(sb2, str, "/", str2, " AND (");
-                return y71.n1.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new jo.x5(com.github.rudroid.copilot.h1.p(sb2, str3, ")"), str4 == null ? aa.t0.d : new aa.u0(str4)), null, false, null, null, 58), 10), 26), this.u);
+                return y71.n1Shadow.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new jo.x5(com.github.rudroid.copilot.h1.p(sb2, str3, ")"), str4 == null ? aa.t0.d : new aa.u0(str4)), null, false, null, null, 58), 10), 26), this.u);
             case 2:
                 k71.k.g(str, "repoOwner");
                 k71.k.g(str2, "repoName");
@@ -307,7 +307,7 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str2, "repoName");
                 StringBuilder sb3 = new StringBuilder("repo:");
                 f1.e.x(sb3, str, "/", str2, " AND (");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new jn0.n5(com.github.rudroid.copilot.h1.p(sb3, str3, ")"), str4 == null ? aa.t0.d : new aa.u0(str4)), null, false, null, null, 58), 10), 23), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new jn0.n5(com.github.rudroid.copilot.h1.p(sb3, str3, ")"), str4 == null ? aa.t0.d : new aa.u0(str4)), null, false, null, null, 58), 10), 23), this.u);
         }
     }
 
@@ -319,25 +319,25 @@ public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
                 k71.k.g(str2, "name");
                 k71.k.g(str3, "$v$c$com-github-android-common-datatypes-CommitOid$-oid$0");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new md(str, str2, str3, str4), null, false, null, null, 58), 10), 15), this.u);
+                return y71.n1Shadow.y(new y(new y00.l(com.github.service.wrapper.a.o(this.s, new md(str, str2, str3, str4), null, false, null, null, 58), 10), 15), this.u);
             case 1:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
                 k71.k.g(str3, "$v$c$com-github-android-common-datatypes-CommitOid$-oid$0");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new bg(str, str2, str3, str4), null, false, null, null, 58), 10), 24), this.u);
+                return y71.n1Shadow.y(new v9(new y00.l(com.github.service.wrapper.a.o(this.s, new bg(str, str2, str3, str4), null, false, null, null, 58), 10), 24), this.u);
             case 2:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
                 k71.k.g(str3, "$v$c$com-github-android-common-datatypes-CommitOid$-oid$0");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new tc(str, str2, str3, str4), null, false, null, null, 58), 10), 14), this.u);
+                return y71.n1Shadow.y(new vb0.u(new y00.l(com.github.service.wrapper.a.o(this.s, new tc(str, str2, str3, str4), null, false, null, null, 58), 10), 14), this.u);
             default:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
                 k71.k.g(str3, "$v$c$com-github-android-common-datatypes-CommitOid$-oid$0");
                 k71.k.g(str4, "path");
-                return y71.n1.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new df(str, str2, str3, str4), null, false, null, null, 58), 10), 21), this.u);
+                return y71.n1Shadow.y(new vb0.s7(new y00.l(com.github.service.wrapper.a.o(this.s, new df(str, str2, str3, str4), null, false, null, null, 58), 10), 21), this.u);
         }
     }
 

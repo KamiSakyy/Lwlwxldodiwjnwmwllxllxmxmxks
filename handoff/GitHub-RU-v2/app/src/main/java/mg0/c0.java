@@ -2,12 +2,12 @@ package mg0;
 
 import aa.o0;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c0 implements aa.a {
     public static final c0 a = new c0();
-    public static final List b = sy.d0.o(new String[]{"hasPreviousPage", "startCursor", "hasNextPage", "endCursor"});
+    public static final List b = sy.d0Shadow.o(new String[]{"hasPreviousPage", "startCursor", "hasNextPage", "endCursor"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -37,14 +37,14 @@ public final class c0 implements aa.a {
         }
         boolean booleanValue = bool.booleanValue();
         if (bool2 != null) {
-            return new x(str, str2, booleanValue, bool2.booleanValue());
+            return new xShadow(str, str2, booleanValue, bool2.booleanValue());
         }
         k41.b.B(eVar, "hasNextPage");
         throw null;
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        x xVar = (x) obj;
+        xShadow xVar = (xShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(xVar, "value");

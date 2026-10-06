@@ -4,12 +4,12 @@ import aa.w;
 import java.util.List;
 import lz0.y;
 import lz0.z;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n implements aa.a {
     public static final n a = new n();
-    public static final List b = d0.n("rejectMobileAuthDeviceRequest");
+    public static final List b = d0Shadow.n("rejectMobileAuthDeviceRequest");
 
     public final Object a(ea.e eVar, w wVar) {
         k71.k.g(eVar, "reader");

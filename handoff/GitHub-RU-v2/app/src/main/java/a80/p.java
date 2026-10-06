@@ -14,7 +14,7 @@ import hc0.kz;
 import hc0.xa;
 import hc0.xl;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,14 +25,14 @@ public abstract class p {
         bb.Companion.getClass();
         x xVar = bb.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar2 = fb.a;
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r2 = x61.l.r(new aa.m[]{new aa.m("login", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("DiffLine");
+        List n = d0Shadow.n("DiffLine");
         List list = b50.a.a;
         List r3 = x61.l.r(new aa.s[]{mVar2, no.a.c(list, "selections", "DiffLine", n, list)});
         aa.s mVar3 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -50,7 +50,7 @@ public abstract class p {
         aa.p a2 = l0.a(d8.a);
         xl.Companion.getClass();
         aa.s mVar9 = new aa.m("diffLines", a2, (String) null, rVar, no.a.s(xl.c, new u0(1)), r3);
-        List n2 = d0.n("PullRequestReviewThread");
+        List n2 = d0Shadow.n("PullRequestReviewThread");
         List list2 = h80.a.a;
         List r4 = x61.l.r(new aa.s[]{mVar3, mVar4, mVar5, mVar6, mVar7, mVar8, mVar9, no.a.c(list2, "selections", "PullRequestReviewThread", n2, list2)});
         aa.s mVar10 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);

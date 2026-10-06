@@ -2,7 +2,7 @@ package com.github.rudroid.discussions.navigation;
 
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 import x.i;
 
@@ -25,7 +25,7 @@ public final class DiscussionCategoryChooserRoute {
 
     public /* synthetic */ DiscussionCategoryChooserRoute(String str, int i, String str2) {
         if (3 != (i & 3)) {
-            c1.l(i, 3, DiscussionCategoryChooserRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 3, DiscussionCategoryChooserRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.f11560a = str;

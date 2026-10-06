@@ -23,7 +23,7 @@ public abstract class l implements aa.a {
             } else if (r0 == 1) {
                 str2 = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 != 2) {
-                aa.x xVar = sa.a;
+                aa.xShadow xVar = sa.a;
                 if (r0 == 3) {
                     sa.Companion.getClass();
                     zonedDateTime = (ZonedDateTime) wVar.e(xVar).a(eVar, wVar);

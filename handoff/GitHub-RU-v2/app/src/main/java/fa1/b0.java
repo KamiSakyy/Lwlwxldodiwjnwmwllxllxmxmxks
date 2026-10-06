@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class b0 extends x0 {
+public final class b0 extends x0Shadow {
     public Method d;
     public int e;
     public n f;
@@ -16,7 +16,7 @@ public final class b0 extends x0 {
         this.f = nVar;
     }
 
-    @Override // fa1.x0
+    @Override // fa1.x0Shadow
     public final void a(n0 n0Var, Object obj) {
         int i = this.e;
         Method method = this.d;

@@ -5,7 +5,7 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.u1;
 import com.github.rudroid.searchandfilter.complexfilter.d0;
 import com.github.rudroid.searchandfilter.complexfilter.e0;
-import k71.x;
+import k71.xShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableDiscussionCategoryFragment extends Hilt_SelectableDiscussionCategoryFragment<com.github.rudroid.searchandfilter.complexfilter.category.a> {
@@ -83,7 +83,7 @@ public final class SelectableDiscussionCategoryFragment extends Hilt_SelectableD
 
     public SelectableDiscussionCategoryFragment() {
         w61.h s = sy.w.s(w61.i.s, new b(new com.github.rudroid.searchandfilter.complexfilter.category.e(this, 0)));
-        this.I0 = new l1(x.a(i.class), new c(s), new e(s), new d(s));
+        this.I0 = new l1(xShadow.a(i.class), new c(s), new e(s), new d(s));
         this.J0 = sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.category.e(this, 1));
     }
 

@@ -12,8 +12,8 @@ import kotlinx.serialization.json.JsonNull;
 import kotlinx.serialization.json.internal.JsonEncodingException;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class x1 implements KSerializer {
-    public static final x1 a = new x1();
+public final class x1Shadow implements KSerializer {
+    public static final x1Shadow a = new x1Shadow();
     public static final SerialDescriptor b = kotlinx.serialization.json.b.Companion.serializer().getDescriptor();
 
     public final Object deserialize(Decoder decoder) {
@@ -102,8 +102,8 @@ public final class x1 implements KSerializer {
             rVar.n(l81.k.a, aVar);
             return;
         }
-        StringBuilder v = jo.f4.v("Class with serial name ", rVar.i, " cannot be serialized polymorphically because it is represented as ");
-        v.append(k71.x.a(aVar.getClass()).c());
+        StringBuilder v = jo.f4Shadow.v("Class with serial name ", rVar.i, " cannot be serialized polymorphically because it is represented as ");
+        v.append(k71.xShadow.a(aVar.getClass()).c());
         v.append(". Make sure that its JsonTransformingSerializer returns JsonObject, so class discriminator can be added to it.");
         throw new JsonEncodingException(v.toString());
     }

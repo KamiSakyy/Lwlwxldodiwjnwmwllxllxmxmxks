@@ -15,7 +15,7 @@ import m10.sj;
 import m10.uj;
 import m10.wg;
 import m10.xf0;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -26,7 +26,7 @@ public abstract class b {
         eh.Companion.getClass();
         x xVar = eh.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
@@ -37,15 +37,15 @@ public abstract class b {
         List list = fq.b.a;
         List r2 = x61.l.r(new aa.s[]{mVar, mVar2, mVar3, mVar4, no.a.c(list, "selections", "Actor", r, list)});
         rf0.Companion.getClass();
-        List n = d0.n(new aa.m("nodes", l0.a(rf0.g0), (String) null, rVar, rVar, r2));
+        List n = d0Shadow.n(new aa.m("nodes", l0.a(rf0.g0), (String) null, rVar, rVar, r2));
         aa.s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n2 = d0.n("Label");
+        List n2 = d0Shadow.n("Label");
         List list2 = kt.a.a;
         List r3 = x61.l.r(new aa.s[]{mVar5, no.a.c(list2, "selections", "Label", n2, list2), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         sj.Companion.getClass();
-        List n3 = d0.n(new aa.m("nodes", l0.a(sj.a), (String) null, rVar, rVar, r3));
+        List n3 = d0Shadow.n(new aa.m("nodes", l0.a(sj.a), (String) null, rVar, rVar, r3));
         aa.s mVar6 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n4 = d0.n("IssueType");
+        List n4 = d0Shadow.n("IssueType");
         List list3 = ht.a.a;
         List r4 = x61.l.r(new aa.s[]{mVar6, no.a.c(list3, "selections", "IssueType", n4, list3), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         aa.m mVar7 = new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
@@ -61,7 +61,7 @@ public abstract class b {
         uj.Companion.getClass();
         q0 q0Var = uj.a;
         k71.k.g(q0Var, "type");
-        aa.m mVar13 = new aa.m("labels", q0Var, (String) null, d0.n(new aa.l("includeIssueTemplateProperties", false)), no.a.s(aj.b, new u0(30)), n3);
+        aa.m mVar13 = new aa.m("labels", q0Var, (String) null, d0Shadow.n(new aa.l("includeIssueTemplateProperties", false)), no.a.s(aj.b, new u0(30)), n3);
         gj.Companion.getClass();
         q0 q0Var2 = gj.a;
         k71.k.g(q0Var2, "type");

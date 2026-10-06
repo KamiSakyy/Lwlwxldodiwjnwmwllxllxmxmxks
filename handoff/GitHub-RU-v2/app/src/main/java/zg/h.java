@@ -1,6 +1,6 @@
 package zg;
 
-import a0.d2;
+import a0.d2Shadow;
 import androidx.compose.foundation.layout.j2;
 import androidx.compose.foundation.layout.l2;
 import androidx.compose.foundation.layout.p2;

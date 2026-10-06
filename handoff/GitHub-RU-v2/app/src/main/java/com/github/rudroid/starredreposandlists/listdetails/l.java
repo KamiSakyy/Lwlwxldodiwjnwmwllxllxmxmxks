@@ -19,7 +19,7 @@ public final /* synthetic */ class l implements j71.a {
             case 0:
                 ListDetailFragment listDetailFragment = this.s;
                 s0 C4 = listDetailFragment.C4();
-                v71.b0.z(d1.k(C4), (a71.h) null, (v71.a0) null, new o0(null, C4, true), 3);
+                v71.b0.z(d1.k(C4), (a71.h) null, (v71.a0Shadow) null, new o0(null, C4, true), 3);
                 com.github.rudroid.utilities.e eVar = listDetailFragment.F0;
                 if (eVar == null) {
                     k71.k.m("analytics");

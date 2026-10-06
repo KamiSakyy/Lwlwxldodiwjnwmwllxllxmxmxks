@@ -6,7 +6,7 @@ public final class f implements k {
     public Object r;
     public Object s;
 
-    public f(b51.d dVar) {
+    public f(b51.dShadow dVar) {
         this.r = dVar;
         this.s = t;
     }

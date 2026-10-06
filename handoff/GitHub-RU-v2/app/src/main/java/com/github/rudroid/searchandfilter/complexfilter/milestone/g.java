@@ -24,7 +24,7 @@ public final class g extends com.github.rudroid.searchandfilter.complexfilter.k<
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g(im.g gVar, com.github.rudroid.activities.util.c cVar, a1 a1Var, v vVar) {
-        super(cVar, a1Var, new k0(NoMilestone.w, new com.github.rudroid.profile.ui.h(27, (byte) 0)), new y(27));
+        super(cVar, a1Var, new k0(NoMilestone.w, new com.github.rudroid.profile.ui.hShadow(27, (byte) 0)), new y(27));
         k71.k.g(gVar, "searchUseCase");
         k71.k.g(cVar, "accountHolder");
         k71.k.g(a1Var, "savedStateHandle");

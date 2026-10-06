@@ -44,7 +44,7 @@ public final class r<T> implements y71.j {
                     for (T t10 : list2) {
                         int i12 = i11 + 1;
                         if (i11 < 0) {
-                            sy.d0.x();
+                            sy.d0Shadow.x();
                             throw null;
                         }
                         a01.a aVar2 = (a01.a) t10;

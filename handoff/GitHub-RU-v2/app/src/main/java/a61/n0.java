@@ -38,7 +38,7 @@ import kotlin.NoWhenBranchMatchedException;
 import t00.f8;
 import v71.m1;
 import w2.f2;
-import y71.n1;
+import y71.n1Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 extends c71.j implements j71.e {
@@ -296,7 +296,7 @@ public final class n0 extends c71.j implements j71.e {
                         while (true) {
                             if (it.hasNext()) {
                                 if (((v41.i) it.next()).a.a()) {
-                                    for (Message message : x61.m.v0(x61.m.S(sy.d0.q(new Message[]{w51.r.d(rVar, arrayList, 2), w51.r.d(rVar, arrayList, 1)})), new b1Shadow())) {
+                                    for (Message message : x61.m.v0(x61.m.S(sy.d0Shadow.q(new Message[]{w51.r.d(rVar, arrayList, 2), w51.r.d(rVar, arrayList, 1)})), new b1Shadow())) {
                                         Messenger messenger = (Messenger) rVar.t;
                                         if (messenger != null) {
                                             try {
@@ -481,7 +481,7 @@ public final class n0 extends c71.j implements j71.e {
                 y71.m1.k(c, f0Var, this);
                 return aVar8;
             case 7:
-                b1.j jVar = (b1.j) this.y;
+                b1.jShadow jVar = (b1.j) this.y;
                 Object obj2 = b71.a.r;
                 int i15 = this.w;
                 try {
@@ -863,7 +863,7 @@ public final class n0 extends c71.j implements j71.e {
                 if (i27 == 0) {
                     sy.y.j(obj);
                     dn.z zVar2 = uVar.a;
-                    oa.j jVar2 = (oa.j) this.y;
+                    oa.jShadow jVar2 = (oa.j) this.y;
                     this.w = 1;
                     if (zVar2.b(jVar2, this) == aVar19) {
                         return aVar19;
@@ -875,7 +875,7 @@ public final class n0 extends c71.j implements j71.e {
                     sy.y.j(obj);
                 }
                 dn.z zVar3 = uVar.a;
-                v71.b0.z(zVar3.g, (a71.h) null, (v71.a0) null, new g0(zVar3, cVar, 9), 3);
+                v71.b0.z(zVar3.g, (a71.h) null, (v71.a0Shadow) null, new g0(zVar3, cVar, 9), 3);
                 return w61.a0.a;
             case 19:
                 e1.a aVar20 = (e1.a) this.y;
@@ -945,7 +945,7 @@ public final class n0 extends c71.j implements j71.e {
                 int i32 = this.w;
                 if (i32 == 0) {
                     sy.y.j(obj);
-                    j0.j jVar3 = (j0.j) this.x;
+                    j0.jShadow jVar3 = (j0.j) this.x;
                     j0.f fVar4 = (j0.f) this.y;
                     this.w = 1;
                     if (jVar3.b(fVar4, this) == aVar24) {
@@ -963,7 +963,7 @@ public final class n0 extends c71.j implements j71.e {
                 int i33 = this.w;
                 if (i33 == 0) {
                     sy.y.j(obj);
-                    j0.j jVar4 = (j0.j) this.x;
+                    j0.jShadow jVar4 = (j0.j) this.x;
                     j0.g gVar4 = (j0.g) this.y;
                     this.w = 1;
                     if (jVar4.b(gVar4, this) == aVar25) {

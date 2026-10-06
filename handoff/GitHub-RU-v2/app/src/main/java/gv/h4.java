@@ -7,7 +7,7 @@ import m10.b00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h4 implements aa.a {
     public static final h4 a = new h4();
-    public static final List b = sy.d0.o("id", "state", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "state", "__typename");
 
     public static e4 c(ea.e eVar, aa.w wVar) {
         Object obj;

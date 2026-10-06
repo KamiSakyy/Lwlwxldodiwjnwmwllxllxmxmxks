@@ -23,9 +23,9 @@ public final class q0 extends androidx.lifecycle.k1 {
         this.t = dVar;
         this.u = (String) a1Var.a("EXTRA_VM_REPO_OWNER");
         this.v = (String) a1Var.a("EXTRA_VM_REPO_NAME");
-        y1 c = y71.n1.c((Object) null);
+        y1 c = y71.n1Shadow.c((Object) null);
         this.w = c;
         this.x = new t0(new y00.l(c, 10));
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new p0(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p0(this, null), 3);
     }
 }

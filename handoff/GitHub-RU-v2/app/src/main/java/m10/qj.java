@@ -7,8 +7,8 @@ public abstract class qj {
     public static final pj Companion = new pj();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        new aa.q0("IssueTypeRemovedEvent", n, sy.d0.n(zp.a));
+        new aa.q0("IssueTypeRemovedEvent", n, sy.d0Shadow.n(zp.a));
     }
 }

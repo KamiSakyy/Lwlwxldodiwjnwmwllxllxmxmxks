@@ -343,7 +343,7 @@ public final class b extends c71.j implements j71.e {
                     b1.m mVar = new b1.m(view);
                     t tVar = new t(l0Var.r, new b1.a((o) this.B), mVar);
                     if (a1.f.a) {
-                        b0.z(zVar, (a71.h) null, (v71.a0) null, new n0(bVar5, mVar, (a71.c) null, 6), 3);
+                        b0.z(zVar, (a71.h) null, (v71.a0Shadow) null, new n0(bVar5, mVar, (a71.c) null, 6), 3);
                     }
                     j71.c cVar3 = (j71.c) this.z;
                     if (cVar3 != null) {
@@ -491,7 +491,7 @@ public final class b extends c71.j implements j71.e {
                 }
                 y.j(obj);
                 k6.v vVar = new k6.v((z) this.x, (d8.m) this.z, (z) this.A, (j71.e) this.y, (AtomicReference) this.B);
-                j71.e eVar = (j71.e) this.y;
+                j71.eShadow eVar = (j71.e) this.y;
                 this.w = 1;
                 Object s = eVar.s(vVar, this);
                 return s == aVar9 ? aVar9 : s;

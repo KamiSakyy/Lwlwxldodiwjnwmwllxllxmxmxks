@@ -29,7 +29,7 @@ public abstract class wb {
         fs.Companion.getClass();
         es esVar = fs.Companion;
         ty.Companion.getClass();
-        sy syVar = ty.Companion;
+        syShadow syVar = ty.Companion;
         t20.Companion.getClass();
         s20 s20Var = t20.Companion;
         b30.Companion.getClass();

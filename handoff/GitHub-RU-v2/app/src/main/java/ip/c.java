@@ -16,7 +16,7 @@ import m10.l40;
 import m10.o7;
 import m10.sa;
 import m10.y7;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -28,7 +28,7 @@ public abstract class c {
         ah.Companion.getClass();
         x xVar = ah.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
@@ -38,9 +38,9 @@ public abstract class c {
         l40.Companion.getClass();
         List r2 = l.r(new m[]{mVar2, mVar3, new m("owner", l0.b(l40.e), (String) null, rVar, rVar, r), new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         s mVar4 = new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("PullRequest");
+        List n = d0Shadow.n("PullRequest");
         List list = a.a;
-        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("PullRequest", d0.n("PullRequest"), l.r(new s[]{mVar4, no.a.c(list, "selections", "PullRequest", n, list), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)}))});
+        List r3 = l.r(new s[]{new m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar), new n("PullRequest", d0Shadow.n("PullRequest"), l.r(new s[]{mVar4, no.a.c(list, "selections", "PullRequest", n, list), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar)}))});
         m mVar5 = new m("taskId", l0.b(xVar2), (String) null, rVar, rVar, rVar);
         m mVar6 = new m("title", xVar2, (String) null, rVar, rVar, rVar);
         o7.Companion.getClass();

@@ -30,6 +30,6 @@ public final class jf {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Repos(repositoryCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Repos(repositoryCount=", ", nodes=", ")", this.b);
     }
 }

@@ -1,12 +1,12 @@
 package vo;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 implements aa.a {
     public static final c1 a = new c1();
-    public static final List b = sy.d0.o("totalCount", "pageInfo", "nodes");
+    public static final List b = sy.d0Shadow.o("totalCount", "pageInfo", "nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -27,7 +27,7 @@ public final class c1 implements aa.a {
                     num = Integer.valueOf((int) nextLong);
                 }
             } else if (r0 == 1) {
-                x0Var = (x0) aa.c.c(f1.a, false).a(eVar, wVar);
+                x0Var = (x0) aa.c.c(f1Shadow.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 2) {
                     break;
@@ -55,7 +55,7 @@ public final class c1 implements aa.a {
         fVar.z0("totalCount");
         fVar.z(v0Var.a);
         fVar.z0("pageInfo");
-        aa.c.c(f1.a, false).b(fVar, wVar, v0Var.b);
+        aa.c.c(f1Shadow.a, false).b(fVar, wVar, v0Var.b);
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(e1.a, true)))).b(fVar, wVar, v0Var.c);
     }

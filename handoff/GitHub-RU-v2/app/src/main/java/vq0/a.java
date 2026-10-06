@@ -15,7 +15,7 @@ import pz0.pd;
 import pz0.td;
 import pz0.xd;
 import pz0.y8;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,14 +27,14 @@ public abstract class a {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("name", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         x xVar2 = td.a;
         List r = l.r(new m[]{mVar, new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
-        List r2 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("User", d0.n("User"), l.r(new m[]{new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)})), new n("Team", d0.n("Team"), l.r(new m[]{new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)}))});
+        List r2 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("User", d0Shadow.n("User"), l.r(new m[]{new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)})), new n("Team", d0Shadow.n("Team"), l.r(new m[]{new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)}))});
         c9.Companion.getClass();
-        List n = d0.n(new m("nodes", l0.a(c9.a), (String) null, rVar, rVar, r2));
+        List n = d0Shadow.n(new m("nodes", l0.a(c9.a), (String) null, rVar, rVar, r2));
         pd.Companion.getClass();
         m mVar2 = new m("currentUserCanApprove", l0.b(pd.a), (String) null, rVar, rVar, rVar);
         mb.Companion.getClass();

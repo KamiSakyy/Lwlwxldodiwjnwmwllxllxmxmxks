@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ml implements aaShadow.a {
     public static final ml a = new ml();
-    public static final List b = sy.d0.o("id", "name", "tagName", "author", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "url", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "tagName", "author", "isPrerelease", "isDraft", "isLatest", "createdAt", "publishedAt", "url", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0034, code lost:
     
@@ -214,13 +214,13 @@ public final class ml implements aaShadow.a {
         aa.c.b(aa.c.c(il.a, true)).b(fVar, wVar, avVar.d);
         fVar.z0("isPrerelease");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(avVar.e, bVar2, fVar, wVar, "isDraft");
-        jo.f4.C(avVar.f, bVar2, fVar, wVar, "isLatest");
-        jo.f4.C(avVar.g, bVar2, fVar, wVar, "createdAt");
+        jo.f4Shadow.C(avVar.e, bVar2, fVar, wVar, "isDraft");
+        jo.f4Shadow.C(avVar.f, bVar2, fVar, wVar, "isLatest");
+        jo.f4Shadow.C(avVar.g, bVar2, fVar, wVar, "createdAt");
         m10.sa.Companion.getClass();
         aa.x xVar = m10.sa.a;
         wVar.e(xVar).b(fVar, wVar, avVar.h);
-        no.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, avVar.i);
+        noShadow.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, avVar.i);
         fVar.z0("url");
         bVar.b(fVar, wVar, avVar.j);
         fVar.z0("__typename");

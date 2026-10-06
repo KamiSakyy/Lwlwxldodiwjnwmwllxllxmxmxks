@@ -6,13 +6,13 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.utilities.ui.g1;
 import ic.wc;
 import java.util.List;
-import k71.x;
+import k71.xShadow;
 import l7.m0;
 import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i extends m0 {
-    public static final /* synthetic */ r71.e[] e = {new k71.m(i.class, "state", "getState()Lcom/github/domain/model/ResultModel;", 0), h1.w(x.a, i.class, "stateEvent", "getStateEvent()Lcom/github/rudroid/utilities/ui/StateEvent;", 0)};
+    public static final /* synthetic */ r71.e[] e = {new k71.m(i.class, "state", "getState()Lcom/github/domain/model/ResultModel;", 0), h1.w(xShadow.a, i.class, "stateEvent", "getStateEvent()Lcom/github/rudroid/utilities/ui/StateEvent;", 0)};
     public final g d = new g(new fl.f(fl.g.s, null, null), this);
 
     public i() {

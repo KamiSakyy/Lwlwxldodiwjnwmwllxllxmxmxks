@@ -4,14 +4,14 @@ import aa.w;
 import gn0.ao;
 import gn0.bo;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements aa.a {
     public static final g a = new g();
-    public static final List b = d0.o(new String[]{"__typename", "viewerHasReacted", "reactors", "content"});
+    public static final List b = d0Shadow.o(new String[]{"__typename", "viewerHasReacted", "reactors", "content"});
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");
@@ -66,7 +66,7 @@ public final class g implements aa.a {
         fVar.z0("__typename");
         aa.c.a.b(fVar, wVar, aVar.a);
         fVar.z0("viewerHasReacted");
-        f4.C(aVar.b, aa.c.f, fVar, wVar, "reactors");
+        f4Shadow.C(aVar.b, aa.c.f, fVar, wVar, "reactors");
         aa.c.c(h.a, false).b(fVar, wVar, aVar.c);
         fVar.z0("content");
         fVar.I(aVar.d.r);

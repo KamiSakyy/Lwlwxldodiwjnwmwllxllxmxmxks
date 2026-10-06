@@ -3,7 +3,7 @@ package com.github.rudroid.commit;
 import android.os.Parcel;
 import android.os.Parcelable;
 import com.github.rudroid.copilot.h1;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @g81.e
@@ -83,7 +83,7 @@ public abstract class CommitDataContainer implements Parcelable {
             if (1 == (i & 1)) {
                 this.f9044s = str;
             } else {
-                c1.l(i, 1, CommitDataContainer$CommitFromId$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 1, CommitDataContainer$CommitFromId$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
         }
@@ -173,7 +173,7 @@ public abstract class CommitDataContainer implements Parcelable {
 
         public /* synthetic */ CommitFromRepoData(int i, String str, String str2, String str3) {
             if (7 != (i & 7)) {
-                c1.l(i, 7, CommitDataContainer$CommitFromRepoData$$serializer.INSTANCE.getDescriptor());
+                c1Shadow.l(i, 7, CommitDataContainer$CommitFromRepoData$$serializer.INSTANCE.getDescriptor());
                 throw null;
             }
             this.f9045s = str;

@@ -3,7 +3,7 @@ package com.github.rudroid.repository.file;
 import android.app.Application;
 import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.viewmodel.d;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 import yz0.b4;
 
@@ -67,7 +67,7 @@ public final class u0 extends androidx.lifecycle.a implements com.github.rudroid
         this.F = (w61.k) a1Var.a("SELECTION");
         Integer num = (Integer) a1Var.a("JUMP_TO_LINE_NUMBER");
         this.G = num;
-        this.H = n1.c(Boolean.FALSE);
+        this.H = n1Shadow.c(Boolean.FALSE);
         boolean z10 = false;
         if (num != null && num.intValue() > 0) {
             z10 = true;

@@ -7,7 +7,7 @@ import oj0.p3;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a2 implements aa.a {
     public static final a2 a = new a2();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

@@ -9,7 +9,7 @@ import u10.t40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ur implements aaShadow.a {
     public static final ur a = new ur();
-    public static final List b = sy.d0.o("__typename", "id", "url", "state", "bodyHtml", "milestone", "projectCards", "viewerCanReopen");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "url", "state", "bodyHtml", "milestone", "projectCards", "viewerCanReopen");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003c, code lost:
     

@@ -1,13 +1,13 @@
 package ur0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z implements aa.a {
     public static final z a = new z();
-    public static final List b = sy.d0.o(new String[]{"id", "name", "isPrivate", "viewerSubscription", "viewerSubscriptionTypes", "owner", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "name", "isPrivate", "viewerSubscription", "viewerSubscriptionTypes", "owner", "__typename"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0028, code lost:
     
@@ -118,7 +118,7 @@ public final class z implements aa.a {
                     break;
                 case 5:
                     bool = bool2;
-                    lVar = (l) aa.c.c(x.a, false).a(eVar, wVar);
+                    lVar = (l) aa.c.c(xShadow.a, false).a(eVar, wVar);
                     break;
                 case 6:
                     bool = bool2;
@@ -145,7 +145,7 @@ public final class z implements aa.a {
         fVar.z0("viewerSubscriptionTypes");
         aa.c.b(aa.c.a(qz0.a.j)).b(fVar, wVar, nVar.e);
         fVar.z0("owner");
-        aa.c.c(x.a, false).b(fVar, wVar, nVar.f);
+        aa.c.c(xShadow.a, false).b(fVar, wVar, nVar.f);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, nVar.g);
     }

@@ -17,11 +17,11 @@ import com.github.rudroid.searchandfilter.filter.sort.RepositoryFilterSortBottom
 import com.github.service.models.response.shortcuts.ShortcutColor;
 import com.github.service.models.response.shortcuts.ShortcutIcon;
 import com.github.service.models.response.shortcuts.ShortcutScope$AllRepositories;
-import d2.a0;
+import d2.a0Shadow;
 import d2.r0;
 import java.lang.annotation.Annotation;
 import java.util.LinkedHashMap;
-import k81.c1;
+import k81.c1Shadow;
 import k81.z;
 import l01.j0;
 import sf.u;
@@ -60,7 +60,7 @@ public final /* synthetic */ class p implements j71.a {
             case 9:
                 return new fk.g();
             case 10:
-                return new r0(a0.c(1308617531));
+                return new r0(a0Shadow.c(1308617531));
             case 11:
                 j3 j3Var = s0.p.a;
                 return null;
@@ -105,10 +105,10 @@ public final /* synthetic */ class p implements j71.a {
                 throw new IllegalStateException("EXTRA_IS_ACTIVITY_HOSTED not set.");
             case 28:
                 ShortcutConfigurationModel.Companion companion7 = ShortcutConfigurationModel.Companion;
-                return c1.f("com.github.service.models.response.shortcuts.ShortcutColor", ShortcutColor.values());
+                return c1Shadow.f("com.github.service.models.response.shortcuts.ShortcutColor", ShortcutColor.values());
             default:
                 ShortcutConfigurationModel.Companion companion8 = ShortcutConfigurationModel.Companion;
-                return c1.f("com.github.service.models.response.shortcuts.ShortcutIcon", ShortcutIcon.values());
+                return c1Shadow.f("com.github.service.models.response.shortcuts.ShortcutIcon", ShortcutIcon.values());
         }
     }
 }

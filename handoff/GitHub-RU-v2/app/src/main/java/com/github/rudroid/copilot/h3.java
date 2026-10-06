@@ -51,11 +51,11 @@ final class h3<T> implements y71.j {
                     sy.y.j(obj);
                 }
                 y71.y1 y1Var2 = g2Var.f9577o0;
-                Iterable<xn.x> iterable = (Iterable) y1Var2.getValue();
+                Iterable<xn.xShadow> iterable = (Iterable) y1Var2.getValue();
                 ArrayList arrayList = new ArrayList(x61.n.F(iterable, 10));
-                for (xn.x xVar : iterable) {
-                    if (k71.k.b(xVar.getId(), str) && (xVar instanceof xn.x)) {
-                        xVar = xn.x.a(xVar, (String) null, (String) null, (ArrayList) null, (ArrayList) null, (xn.w) null, 12287);
+                for (xn.xShadow xVar : iterable) {
+                    if (k71.k.b(xVar.getId(), str) && (xVar instanceof xn.xShadow)) {
+                        xVar = xn.xShadow.a(xVar, (String) null, (String) null, (ArrayList) null, (ArrayList) null, (xn.wShadow) null, 12287);
                     }
                     arrayList.add(xVar);
                 }
@@ -75,7 +75,7 @@ final class h3<T> implements y71.j {
         if (i != 0) {
         }
         y71.y1 y1Var22 = g2Var2.f9577o0;
-        Iterable<xn.x> iterable2 = (Iterable) y1Var22.getValue();
+        Iterable<xn.xShadow> iterable2 = (Iterable) y1Var22.getValue();
         ArrayList arrayList2 = new ArrayList(x61.n.F(iterable2, 10));
         while (r0.hasNext()) {
         }

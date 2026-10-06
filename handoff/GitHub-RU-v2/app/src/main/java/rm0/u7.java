@@ -106,13 +106,13 @@ public final class u7 implements y71.j {
     /* JADX WARN: Removed duplicated region for block: B:79:0x0176  */
     /* JADX WARN: Removed duplicated region for block: B:85:0x0184  */
     /* JADX WARN: Removed duplicated region for block: B:96:0x01be  */
-    /* JADX WARN: Type inference failed for: r8v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r8v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r8v1, types: [java.lang.Iterable] */
     /* JADX WARN: Type inference failed for: r8v5 */
-    /* JADX WARN: Type inference failed for: r8v50, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r8v50, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r8v51, types: [java.lang.Iterable] */
     /* JADX WARN: Type inference failed for: r8v55 */
-    /* JADX WARN: Type inference failed for: r9v10, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r9v10, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r9v11, types: [java.lang.Iterable] */
     /* JADX WARN: Type inference failed for: r9v14 */
     /*
@@ -130,7 +130,7 @@ public final class u7 implements y71.j {
         int i2;
         t00.i iVar;
         int i3;
-        t00.t tVar;
+        t00.tShadow tVar;
         int i4;
         t00.y7 y7Var;
         int i5;
@@ -144,7 +144,7 @@ public final class u7 implements y71.j {
         List list5;
         vx vxVar2;
         List list6;
-        t00.y9 y9Var;
+        t00.y9Shadow y9Var;
         int i6;
         t00.ca caVar;
         int i7;
@@ -202,7 +202,7 @@ public final class u7 implements y71.j {
                             ut utVar = null;
                             qt qtVar3 = null;
                             ArrayList S = (qtVar2 == null || (otVar2 = qtVar2.c) == null || (list2 = otVar2.c) == null) ? null : x61.m.S(list2);
-                            java.util.List r8 = (java.util.List) (x61.r.r);
+                            java.util.List r8 = (java.util.List) (x61.rShadow.r);
                             if (S == null) {
                                 S = r8;
                             }
@@ -392,7 +392,7 @@ public final class u7 implements y71.j {
                             y71.j jVar5 = (y71.j) this.s;
                             ux uxVar = (ux) obj;
                             ArrayList S3 = (xxVar3 == null || (vxVar2 = xxVar3.d) == null || (list6 = vxVar2.c) == null) ? null : x61.m.S(list6);
-                            java.util.List r9 = (java.util.List) (x61.r.r);
+                            java.util.List r9 = (java.util.List) (x61.rShadow.r);
                             if (S3 == null) {
                                 S3 = r9;
                             }
@@ -441,8 +441,8 @@ public final class u7 implements y71.j {
                 }
                 return w61.a0.a;
             case 6:
-                if (cVar instanceof t00.y9) {
-                    y9Var = (t00.y9) cVar;
+                if (cVar instanceof t00.y9Shadow) {
+                    y9Var = (t00.y9Shadow) cVar;
                     int i30 = y9Var.v;
                     if ((i30 & Integer.MIN_VALUE) != 0) {
                         y9Var.v = i30 - Integer.MIN_VALUE;
@@ -466,7 +466,7 @@ public final class u7 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                y9Var = new t00.y9(this, cVar);
+                y9Var = new t00.y9Shadow(this, cVar);
                 Object obj72 = y9Var.u;
                 b71.a aVar72 = b71.a.r;
                 i6 = y9Var.v;
@@ -563,7 +563,7 @@ public final class u7 implements y71.j {
                                     list7 = fk.c.a(str2);
                                     break;
                                 }
-                                list7 = x61.r.r;
+                                list7 = x61.rShadow.r;
                                 List list11 = list7;
                                 gVar2.c.getClass();
                                 List v0 = x61.m.v0(list11, new bm.m(0, list11));
@@ -838,7 +838,7 @@ public final class u7 implements y71.j {
                             ew ewVar = null;
                             aw awVar3 = null;
                             ArrayList S7 = (awVar2 == null || (yvVar2 = awVar2.c) == null || (list9 = yvVar2.c) == null) ? null : x61.m.S(list9);
-                            java.util.List r82 = (java.util.List) (x61.r.r);
+                            java.util.List r82 = (java.util.List) (x61.rShadow.r);
                             if (S7 == null) {
                                 S7 = r82;
                             }
@@ -1024,7 +1024,7 @@ public final class u7 implements y71.j {
                         Object obj20 = d0Var.u;
                         b71.a aVar20 = b71.a.r;
                         i19 = d0Var.w;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i19 != 0) {
                             sy.y.j(obj20);
                             k71.u uVar = (k71.u) this.t;
@@ -1051,7 +1051,7 @@ public final class u7 implements y71.j {
                 Object obj202 = d0Var.u;
                 b71.a aVar202 = b71.a.r;
                 i19 = d0Var.w;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i19 != 0) {
                 }
                 return a0Var2;

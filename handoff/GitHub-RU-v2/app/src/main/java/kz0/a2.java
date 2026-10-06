@@ -17,7 +17,7 @@ public abstract class a2 {
         td.Companion.getClass();
         aa.x xVar = td.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         aa.x xVar2 = xd.a;
@@ -28,7 +28,7 @@ public abstract class a2 {
         aa.q0 q0Var = ja.c;
         k71.k.g(q0Var, "type");
         aa.s mVar4 = new aa.m("replyTo", q0Var, (String) null, rVar, rVar, r);
-        List n = sy.d0.n("DiscussionComment");
+        List n = sy.d0Shadow.n("DiscussionComment");
         List list = fr0.b.a;
         List r2 = x61.l.r(new aa.s[]{mVar2, mVar3, mVar4, no.a.c(list, "selections", "DiscussionComment", n, list)});
         aa.s mVar5 = new aa.m("__typename", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar);
@@ -48,11 +48,11 @@ public abstract class a2 {
         ba.Companion.getClass();
         aa.q0 q0Var2 = ba.l;
         k71.k.g(q0Var2, "type");
-        List n2 = sy.d0.n(new aa.m("discussion", q0Var2, (String) null, rVar, rVar, r5));
+        List n2 = sy.d0Shadow.n(new aa.m("discussion", q0Var2, (String) null, rVar, rVar, r5));
         qg.Companion.getClass();
         aa.q0 q0Var3 = qg.a;
         k71.k.g(q0Var3, "type");
         sk.Companion.getClass();
-        a = sy.d0.n(new aa.m("markDiscussionCommentAsAnswer", q0Var3, (String) null, rVar, no.a.s(sk.g0, new aa.u0(a0.s0.p("id", new aa.t("id")))), n2));
+        a = sy.d0Shadow.n(new aa.m("markDiscussionCommentAsAnswer", q0Var3, (String) null, rVar, no.a.s(sk.g0, new aa.u0(a0.s0.p("id", new aa.t("id")))), n2));
     }
 }

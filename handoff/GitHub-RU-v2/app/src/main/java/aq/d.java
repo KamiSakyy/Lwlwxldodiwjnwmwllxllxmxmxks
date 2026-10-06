@@ -6,7 +6,7 @@ import com.github.service.models.ApiFailureType;
 import com.github.service.wrapper.j;
 import f01.f;
 import ga.h;
-import in.r;
+import in.rShadow;
 import j71.e;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,13 +20,13 @@ import jo.mi0;
 import k71.k;
 import m10.vc;
 import pz0.r9;
-import s01.o;
+import s01.oShadow;
 import s01.p;
 import sy.f0;
 import v71.v;
 import x61.n;
 import y71.i;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y;
 import z01.x0;
 import zg.m;
@@ -47,7 +47,7 @@ public final class d implements x0, mi0, yf0 {
                 k.g(vVar, "ioDispatcher");
                 this.s = bVar;
                 this.t = vVar;
-                this.u = new sw0.c(jVar, bVar, vVar, new ze.a(13), new m(5), o.r, new m(6), new ze.a(14), new ze.a(15), new ze.a(16), new ze.a(17), (e) null, f0.n(r.b, ApiFailureType.NO_ROOT_COMMIT), 110592);
+                this.u = new sw0.c(jVar, bVar, vVar, new ze.a(13), new m(5), oShadow.r, new m(6), new ze.a(14), new ze.a(15), new ze.a(16), new ze.a(17), (e) null, f0.n(rShadow.b, ApiFailureType.NO_ROOT_COMMIT), 110592);
                 break;
             default:
                 k.g(jVar, "client");
@@ -55,7 +55,7 @@ public final class d implements x0, mi0, yf0 {
                 k.g(vVar, "ioDispatcher");
                 this.s = bVar;
                 this.t = vVar;
-                this.u = new a00.b(jVar, bVar, vVar, new bq.a(4), new bo0.e(18), o.r, new bo0.e(19), new bq.a(5), new bq.a(6), new bq.a(7), new bq.a(8), null, f0.n(r.b, ApiFailureType.NO_ROOT_COMMIT), 110592);
+                this.u = new a00.b(jVar, bVar, vVar, new bq.a(4), new bo0.e(18), oShadow.r, new bo0.e(19), new bq.a(5), new bq.a(6), new bq.a(7), new bq.a(8), null, f0.n(rShadow.b, ApiFailureType.NO_ROOT_COMMIT), 110592);
                 break;
         }
     }
@@ -104,7 +104,7 @@ public final class d implements x0, mi0, yf0 {
                     k.g(fVar, "<this>");
                     arrayList.add(new vc(fVar.b, fVar.a));
                 }
-                return n1.y(new c(new y(com.github.service.wrapper.a.o(this.s, new e7(str, str2, str3, str4, str5, new u0(arrayList)), (h) null, false, (LinkedHashSet) null, (Set) null, 58), new f3(this, str, str2, str3, str4, str5, (a71.c) null, 1), 6), 0), this.t);
+                return n1Shadow.y(new c(new y(com.github.service.wrapper.a.o(this.s, new e7(str, str2, str3, str4, str5, new u0(arrayList)), (h) null, false, (LinkedHashSet) null, (Set) null, 58), new f3(this, str, str2, str3, str4, str5, (a71.c) null, 1), 6), 0), this.t);
             default:
                 ArrayList arrayList2 = new ArrayList(n.F(list, 10));
                 Iterator it2 = list.iterator();
@@ -113,7 +113,7 @@ public final class d implements x0, mi0, yf0 {
                     k.g(fVar2, "<this>");
                     arrayList2.add(new r9(fVar2.b, fVar2.a));
                 }
-                return n1.y(new tw0.i(new y(com.github.service.wrapper.a.o(this.s, new u6(str, str2, str3, str4, str5, new u0(arrayList2)), (h) null, false, (LinkedHashSet) null, (Set) null, 58), new f3(this, str, str2, str3, str4, str5, (a71.c) null, 11), 6), 21), this.t);
+                return n1Shadow.y(new tw0.i(new y(com.github.service.wrapper.a.o(this.s, new u6(str, str2, str3, str4, str5, new u0(arrayList2)), (h) null, false, (LinkedHashSet) null, (Set) null, 58), new f3(this, str, str2, str3, str4, str5, (a71.c) null, 11), 6), 21), this.t);
         }
     }
 

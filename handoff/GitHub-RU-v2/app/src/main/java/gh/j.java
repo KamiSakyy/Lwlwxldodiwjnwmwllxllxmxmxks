@@ -12,7 +12,7 @@ import androidx.compose.runtime.v1;
 import com.github.rudroid.agents.copilothome.ui.u;
 import com.github.rudroid.uitoolkit.k0;
 import d1.i1;
-import d2.a0;
+import d2.a0Shadow;
 import g3.q0;
 import g3.z;
 import java.util.List;
@@ -126,7 +126,7 @@ public final class j {
             t.I(sVar2, v2.g.d, c2);
             sVar2.c0(1385542922);
             for (f fVar2 : list2) {
-                r x = androidx.compose.foundation.layout.b.x(f0.o.f(rVar3, ih.d.b(sVar2).d, a0.b), ih.a.n);
+                r x = androidx.compose.foundation.layout.b.x(f0.o.f(rVar3, ih.d.b(sVar2).d, a0Shadow.b), ih.a.n);
                 boolean equals = str.equals(fVar2.a);
                 boolean f = ((i4 & 896) == 256) | sVar2.f(fVar2);
                 j71.a N = sVar2.N();

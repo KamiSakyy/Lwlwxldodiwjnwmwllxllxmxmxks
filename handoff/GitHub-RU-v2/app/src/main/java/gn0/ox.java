@@ -7,8 +7,8 @@ public abstract class ox {
     public static final nx Companion = new nx();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("UnassignedEvent", n, sy.d0.n(yh.a));
+        new aa.q0("UnassignedEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

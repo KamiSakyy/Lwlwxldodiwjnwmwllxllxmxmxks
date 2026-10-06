@@ -63,7 +63,7 @@ public final class s implements me.d {
     public String m;
 
     /* renamed from: n, reason: collision with root package name */
-    public lg.b f28738n;
+    public lg.bShadow f28738n;
 
     /* renamed from: o, reason: collision with root package name */
     public Integer f28739o;
@@ -77,7 +77,7 @@ public final class s implements me.d {
     public static final class a {
     }
 
-    public s(String str, String str2, int i, boolean z10, boolean z11, boolean z12, ZonedDateTime zonedDateTime, i3 i3Var, c5 c5Var, o.b bVar, NotificationReasonState notificationReasonState, String str3, String str4, lg.b bVar2, Integer num, a0 a0Var) {
+    public s(String str, String str2, int i, boolean z10, boolean z11, boolean z12, ZonedDateTime zonedDateTime, i3 i3Var, c5 c5Var, o.b bVar, NotificationReasonState notificationReasonState, String str3, String str4, lg.bShadow bVar2, Integer num, a0 a0Var) {
         k71.k.g(str, "title");
         k71.k.g(zonedDateTime, "lastUpdatedAt");
         k71.k.g(i3Var, "owner");
@@ -118,7 +118,7 @@ public final class s implements me.d {
         NotificationReasonState notificationReasonState = sVar.f28737k;
         String str3 = sVar.l;
         String str4 = sVar.m;
-        lg.b bVar2 = sVar.f28738n;
+        lg.bShadow bVar2 = sVar.f28738n;
         Integer num = sVar.f28739o;
         a0 a0Var2 = (i & 32768) != 0 ? sVar.f28740p : a0Var;
         k71.k.g(str, "title");
@@ -189,7 +189,7 @@ public final class s implements me.d {
     public s(z2 z2Var, a0 a0Var, boolean z10) {
         this(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r0, a0Var);
         String str;
-        lg.b bVar;
+        lg.bShadow bVar;
         String title = z2Var.getTitle();
         String d10 = z2Var.d();
         int b10 = z2Var.b();
@@ -241,12 +241,12 @@ public final class s implements me.d {
         o4 h12 = z2Var.h();
         if (h12 instanceof o4) {
             if (h12.v) {
-                bVar = lg.b.s;
+                bVar = lg.bShadow.s;
             } else {
-                bVar = lg.b.r;
+                bVar = lg.bShadow.r;
             }
         } else {
-            bVar = lg.b.r;
+            bVar = lg.bShadow.r;
         }
         if (h10 instanceof q4) {
             num = Integer.valueOf(h10.v);

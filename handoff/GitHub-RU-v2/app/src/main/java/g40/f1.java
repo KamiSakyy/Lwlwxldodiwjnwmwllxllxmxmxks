@@ -3,7 +3,7 @@ package g40;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class f1 implements aa.a {
+public abstract class f1Shadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"id", "abbreviatedOid", "oid", "messageHeadline", "messageBody", "__typename"});
 
     public static e1 c(ea.e eVar, aa.w wVar) {

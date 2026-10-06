@@ -44,11 +44,11 @@ public final class r4 extends c71.j implements j71.f {
                 if (i == 0) {
                     sy.y.j(obj);
                     y71.j jVar = this.x;
-                    xa f = sy.o.f((l01.p0) this.y, this.z.s, this.A, this.B);
+                    xa f = sy.oShadow.f((l01.p0) this.y, this.z.s, this.A, this.B);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar, f, this) == aVar) {
+                    if (y71.n1Shadow.q(jVar, f, this) == aVar) {
                         return aVar;
                     }
                 } else {
@@ -64,11 +64,11 @@ public final class r4 extends c71.j implements j71.f {
                 if (i2 == 0) {
                     sy.y.j(obj);
                     y71.j jVar2 = this.x;
-                    xa f2 = sy.o.f((l01.p0) this.y, this.z.s, this.A, this.B);
+                    xa f2 = sy.oShadow.f((l01.p0) this.y, this.z.s, this.A, this.B);
                     this.x = null;
                     this.y = null;
                     this.w = 1;
-                    if (y71.n1.q(jVar2, f2, this) == aVar2) {
+                    if (y71.n1Shadow.q(jVar2, f2, this) == aVar2) {
                         return aVar2;
                     }
                 } else {

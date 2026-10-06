@@ -70,8 +70,8 @@ public abstract class d implements aa.a {
         bVar2.b(fVar, wVar, bVar.a);
         fVar.z0("viewerCanDisableAutoMerge");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(bVar.b, bVar3, fVar, wVar, "viewerCanEnableAutoMerge");
-        jo.f4.C(bVar.c, bVar3, fVar, wVar, "autoMergeRequest");
+        jo.f4Shadow.C(bVar.b, bVar3, fVar, wVar, "viewerCanEnableAutoMerge");
+        jo.f4Shadow.C(bVar.c, bVar3, fVar, wVar, "autoMergeRequest");
         aa.c.b(aa.c.c(c.a, false)).b(fVar, wVar, bVar.d);
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, bVar.e);

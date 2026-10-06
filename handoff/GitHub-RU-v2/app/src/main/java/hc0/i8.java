@@ -23,7 +23,7 @@ public final class i8 {
         v = i8VarArr;
         w = v8.l0.t(i8VarArr);
         Companion = new h8();
-        sy.d0.o(new String[]{"LEFT", "RIGHT"});
+        sy.d0Shadow.o(new String[]{"LEFT", "RIGHT"});
     }
 
     public i8(String str, int i, String str2) {

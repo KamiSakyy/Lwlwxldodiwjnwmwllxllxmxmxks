@@ -18,14 +18,14 @@ public abstract class q3 {
     static {
         wg.Companion.getClass();
         aa.r b = v8.l0.b(wg.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         k71.k.g(xVar, "type");
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         aa.s mVar2 = new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = sy.d0.n("User");
+        List n = sy.d0Shadow.n("User");
         List list = rx.h.a;
         aa.s c = no.a.c(list, "selections", "User", n, list);
         ah.Companion.getClass();

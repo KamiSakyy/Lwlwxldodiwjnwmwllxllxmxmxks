@@ -39,7 +39,7 @@ import jo.id;
 import jo.jd;
 import jo.kd;
 import jo.pp;
-import k71.x;
+import k71.xShadow;
 import mn0.g0;
 import p01.p;
 import sy.c0;
@@ -119,16 +119,16 @@ public final /* synthetic */ class h implements j71.c {
                 fd fdVar3 = (fd) obj;
                 k71.k.g(fdVar3, "data");
                 List list4 = fdVar3.b.c;
-                return list4 == null ? x61.r.r : list4;
+                return list4 == null ? x61.rShadow.r : list4;
             case 5:
                 fd fdVar4 = (fd) obj;
                 k71.k.g(fdVar4, "data");
                 jd jdVar = fdVar4.b;
                 id idVar = fdVar4.a;
                 String str6 = idVar != null ? idVar.b : null;
-                x61.r rVar = jdVar.c;
+                x61.rShadow rVar = jdVar.c;
                 if (rVar == null) {
-                    rVar = x61.r.r;
+                    rVar = x61.rShadow.r;
                 }
                 ArrayList S = x61.m.S(rVar);
                 ArrayList arrayList2 = new ArrayList(x61.n.F(S, 10));
@@ -170,14 +170,14 @@ public final /* synthetic */ class h implements j71.c {
                 bk0 bk0Var3 = (bk0) obj;
                 k71.k.g(bk0Var3, "data");
                 List list6 = bk0Var3.a.a.b;
-                return list6 == null ? x61.r.r : list6;
+                return list6 == null ? x61.rShadow.r : list6;
             case 11:
                 bk0 bk0Var4 = (bk0) obj;
                 k71.k.g(bk0Var4, "data");
                 ek0 ek0Var = bk0Var4.a.a;
-                x61.r rVar2 = ek0Var.b;
+                x61.rShadow rVar2 = ek0Var.b;
                 if (rVar2 == null) {
-                    rVar2 = x61.r.r;
+                    rVar2 = x61.rShadow.r;
                 }
                 ArrayList S2 = x61.m.S(rVar2);
                 ArrayList arrayList3 = new ArrayList(x61.n.F(S2, 10));
@@ -206,15 +206,15 @@ public final /* synthetic */ class h implements j71.c {
                 k71.k.g(yVar, "$this$navigation");
                 Map map = ob.d.a;
                 x6.p0 p0Var2 = yVar.g;
-                z6.i iVar = new z6.i(m0.r(p0Var2, z6.e.class), x.a(CommitsRoute.class), map, x.a(CommitsFragment.class));
+                z6.i iVar = new z6.i(m0.r(p0Var2, z6.e.class), xShadow.a(CommitsRoute.class), map, xShadow.a(CommitsFragment.class));
                 ArrayList arrayList4 = yVar.j;
                 arrayList4.add(iVar.a());
-                arrayList4.add(new z6.i(p0Var2.b(w.r(z6.e.class)), x.a(CommitRoute.class), nb.a.a, x.a(CommitFragment.class)).a());
+                arrayList4.add(new z6.i(p0Var2.b(w.r(z6.e.class)), xShadow.a(CommitRoute.class), nb.a.a, xShadow.a(CommitFragment.class)).a());
                 return a0.a;
             case 15:
                 y yVar2 = (y) obj;
                 k71.k.g(yVar2, "$this$navigation");
-                yVar2.j.add(new z6.i(m0.r(yVar2.g, z6.e.class), x.a(RepositoryDiscussionsRoute.class), (Map) oc.d.a, x.a(RepositoryDiscussionsFragment.class)).a());
+                yVar2.j.add(new z6.i(m0.r(yVar2.g, z6.e.class), xShadow.a(RepositoryDiscussionsRoute.class), (Map) oc.d.a, xShadow.a(RepositoryDiscussionsFragment.class)).a());
                 oc.b.a(yVar2);
                 return a0.a;
             case 16:
@@ -222,13 +222,13 @@ public final /* synthetic */ class h implements j71.c {
                 k71.k.g(yVar3, "$this$navigation");
                 x6.p0 p0Var3 = yVar3.g;
                 z6.e r = m0.r(p0Var3, z6.e.class);
-                k71.e a = x.a(DiscussionDetailRoute.class);
-                k71.e a2 = x.a(DiscussionDetailFragment.class);
+                k71.e a = xShadow.a(DiscussionDetailRoute.class);
+                k71.e a2 = xShadow.a(DiscussionDetailFragment.class);
                 x61.s sVar2 = x61.s.r;
                 z6.i iVar2 = new z6.i(r, a, sVar2, a2);
                 ArrayList arrayList5 = yVar3.j;
                 arrayList5.add(iVar2.a());
-                arrayList5.add(new z6.i(p0Var3.b(w.r(z6.e.class)), x.a(DiscussionCommentReplyThreadRoute.class), sVar2, x.a(DiscussionCommentReplyThreadFragment.class)).a());
+                arrayList5.add(new z6.i(p0Var3.b(w.r(z6.e.class)), xShadow.a(DiscussionCommentReplyThreadRoute.class), sVar2, xShadow.a(DiscussionCommentReplyThreadFragment.class)).a());
                 return a0.a;
             case 17:
                 k71.k.g((d3.c0) obj, "$this$clearAndSetSemantics");
@@ -270,7 +270,7 @@ public final /* synthetic */ class h implements j71.c {
                 k71.k.g(dVar3, "data");
                 kn0.k kVar3 = dVar3.a;
                 List list7 = (kVar3 == null || (fVar3 = kVar3.c) == null || (bVar3 = fVar3.a) == null) ? null : bVar3.c;
-                return list7 == null ? x61.r.r : list7;
+                return list7 == null ? x61.rShadow.r : list7;
             case 27:
                 kn0.d dVar4 = (kn0.d) obj;
                 k71.k.g(dVar4, "data");
@@ -447,7 +447,7 @@ public final /* synthetic */ class h implements j71.c {
                     arrayList = null;
                 }
                 if (arrayList == null) {
-                    arrayList = x61.r.r;
+                    arrayList = x61.rShadow.r;
                 }
                 kn0.g gVar3 = bVar6.b;
                 return new jn.i(arrayList.size(), arrayList, new x01.i(gVar3.a, gVar3.b, gVar3.c));

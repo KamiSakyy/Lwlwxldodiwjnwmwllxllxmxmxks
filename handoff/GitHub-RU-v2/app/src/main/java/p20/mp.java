@@ -9,7 +9,7 @@ import u10.z00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mp implements aaShadow.a {
     public static final mp a = new mp();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         t00 t00Var;

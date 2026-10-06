@@ -6,9 +6,9 @@ import com.github.rudroid.copilot.h1;
 public final class m0 {
     public String a;
     public String b;
-    public w50.x c;
+    public w50.xShadow c;
 
-    public m0(String str, String str2, w50.x xVar) {
+    public m0(String str, String str2, w50.xShadow xVar) {
         this.a = str;
         this.b = str2;
         this.c = xVar;

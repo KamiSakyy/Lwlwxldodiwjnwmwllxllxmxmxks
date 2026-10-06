@@ -111,10 +111,10 @@ public final /* synthetic */ class p implements j71.a {
                 return a0Var;
             case 26:
                 CommitDataContainer.Companion companion = CommitDataContainer.Companion;
-                return new g81.d("com.github.rudroid.commit.CommitDataContainer", k71.x.a(CommitDataContainer.class), new r71.b[]{k71.x.a(CommitDataContainer.CommitFromId.class), k71.x.a(CommitDataContainer.CommitFromRepoData.class)}, new KSerializer[]{CommitDataContainer$CommitFromId$$serializer.INSTANCE, CommitDataContainer$CommitFromRepoData$$serializer.INSTANCE}, new Annotation[0]);
+                return new g81.d("com.github.rudroid.commit.CommitDataContainer", k71.xShadow.a(CommitDataContainer.class), new r71.b[]{k71.xShadow.a(CommitDataContainer.CommitFromId.class), k71.xShadow.a(CommitDataContainer.CommitFromRepoData.class)}, new KSerializer[]{CommitDataContainer$CommitFromId$$serializer.INSTANCE, CommitDataContainer$CommitFromRepoData$$serializer.INSTANCE}, new Annotation[0]);
             case 27:
                 CommitsType.Companion companion2 = CommitsType.Companion;
-                return new g81.d("com.github.rudroid.commits.CommitsType", k71.x.a(CommitsType.class), new r71.b[]{k71.x.a(CommitsType.Commits.class), k71.x.a(CommitsType.Deeplink.class), k71.x.a(CommitsType.History.class), k71.x.a(CommitsType.RefComparison.class)}, new KSerializer[]{CommitsType$Commits$$serializer.INSTANCE, CommitsType$Deeplink$$serializer.INSTANCE, CommitsType$History$$serializer.INSTANCE, CommitsType$RefComparison$$serializer.INSTANCE}, new Annotation[0]);
+                return new g81.d("com.github.rudroid.commits.CommitsType", k71.xShadow.a(CommitsType.class), new r71.b[]{k71.xShadow.a(CommitsType.Commits.class), k71.xShadow.a(CommitsType.Deeplink.class), k71.xShadow.a(CommitsType.History.class), k71.xShadow.a(CommitsType.RefComparison.class)}, new KSerializer[]{CommitsType$Commits$$serializer.INSTANCE, CommitsType$Deeplink$$serializer.INSTANCE, CommitsType$History$$serializer.INSTANCE, CommitsType$RefComparison$$serializer.INSTANCE}, new Annotation[0]);
             case 28:
                 CopilotChatActivity.a aVar16 = CopilotChatActivity.Companion;
                 return null;

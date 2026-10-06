@@ -20,7 +20,7 @@ public final class n implements KSerializer {
         String n = decoder.n();
         d.getClass();
         ArrayList a2 = fk.c.a(n);
-        return a2 == null ? x61.r.r : a2;
+        return a2 == null ? x61.rShadow.r : a2;
     }
 
     public final SerialDescriptor getDescriptor() {

@@ -61,7 +61,7 @@ public final /* synthetic */ class e implements j71.c {
         uw.a aVar;
         c0 c0Var;
         int i = this.r;
-        ArrayList arrayList2 = x61.r.r;
+        ArrayList arrayList2 = x61.rShadow.r;
         boolean z3 = true;
         a0 a0Var = a0.a;
         switch (i) {

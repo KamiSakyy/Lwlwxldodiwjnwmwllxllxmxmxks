@@ -3,9 +3,9 @@ package wx0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 {
     public w1 a;
-    public x b;
+    public xShadow b;
 
-    public n1(w1 w1Var, x xVar) {
+    public n1(w1 w1Var, xShadow xVar) {
         this.a = w1Var;
         this.b = xVar;
     }

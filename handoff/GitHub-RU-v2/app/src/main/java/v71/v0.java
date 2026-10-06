@@ -9,7 +9,7 @@ public abstract class v0 extends v {
 
     @Override // v71.v
     public final v M0(int i) {
-        a81.b.a(i);
+        a81.bShadow.a(i);
         return this;
     }
 

@@ -96,7 +96,7 @@ public final class a5Shadow implements y71.j {
                     w80 w80Var = (v80Var == null || (t80Var3 = v80Var.b) == null) ? null : t80Var3.c;
                     p80 p80Var = (v80Var == null || (t80Var2 = v80Var.b) == null) ? null : t80Var2.d;
                     List<r80> list = w80Var != null ? w80Var.a : null;
-                    List<q80> list2 = x61.r.r;
+                    List<q80> list2 = x61.rShadow.r;
                     if (list == null) {
                         list = list2;
                     }
@@ -255,7 +255,7 @@ public final class a5Shadow implements y71.j {
                     sy.y.j(obj2);
                     Iterable<xo> iterable = ((vo) obj).a.a.a;
                     if (iterable == null) {
-                        iterable = x61.r.r;
+                        iterable = x61.rShadow.r;
                     }
                     ArrayList arrayList = new ArrayList();
                     for (xo xoVar : iterable) {
@@ -358,7 +358,7 @@ public final class a5Shadow implements y71.j {
                 i = i6Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    im0.a0 a0Var = ((im0.y) obj).a;
+                    im0.a0Shadow a0Var = ((im0.y) obj).a;
                     Boolean valueOf = Boolean.valueOf((a0Var == null || (b0Var = a0Var.b) == null || (zVar = b0Var.a) == null) ? false : zVar.a);
                     i6Var.v = 1;
                     if (this.s.c(valueOf, i6Var) == aVar) {
@@ -490,7 +490,7 @@ public final class a5Shadow implements y71.j {
                 i = l6Var.v;
                 if (i != 0) {
                     sy.y.j(obj2);
-                    im0.s0 s0Var = ((im0.q0) obj).a;
+                    im0.s0Shadow s0Var = ((im0.q0) obj).a;
                     Boolean valueOf = Boolean.valueOf((s0Var == null || (t0Var = s0Var.b) == null || (r0Var = t0Var.b) == null) ? false : r0Var.a);
                     l6Var.v = 1;
                     if (this.s.c(valueOf, l6Var) == aVar) {
@@ -523,7 +523,7 @@ public final class a5Shadow implements y71.j {
         m6 m6Var;
         int i;
         im0.v vVar;
-        im0.t tVar;
+        im0.tShadow tVar;
         if (cVar instanceof m6) {
             m6Var = (m6) cVar;
             int i2 = m6Var.v;
@@ -818,7 +818,7 @@ public final class a5Shadow implements y71.j {
                             dn dnVar = zmVar.a;
                             List<an> list4 = dnVar != null ? dnVar.a.b : null;
                             if (list4 == null) {
-                                list4 = x61.r.r;
+                                list4 = x61.rShadow.r;
                             }
                             ArrayList arrayList = new ArrayList();
                             for (an anVar : list4) {
@@ -871,7 +871,7 @@ public final class a5Shadow implements y71.j {
                             mc0 mc0Var = (mc0) obj;
                             Iterable<nc0> iterable = mc0Var.a.a.b;
                             if (iterable == null) {
-                                iterable = x61.r.r;
+                                iterable = x61.rShadow.r;
                             }
                             ArrayList arrayList3 = new ArrayList();
                             for (nc0 nc0Var : iterable) {
@@ -924,7 +924,7 @@ public final class a5Shadow implements y71.j {
                             iz izVar = (iz) obj;
                             Iterable<jz> iterable2 = izVar.a.c;
                             if (iterable2 == null) {
-                                iterable2 = x61.r.r;
+                                iterable2 = x61.rShadow.r;
                             }
                             ArrayList arrayList5 = new ArrayList();
                             for (jz jzVar : iterable2) {
@@ -1214,7 +1214,7 @@ public final class a5Shadow implements y71.j {
                             kc0.h4 h4Var = (b4Var == null || (d4Var2 = b4Var.c) == null || (list2 = d4Var2.b.a) == null || (z3Var = (kc0.z3) x61.m.f0(list2)) == null) ? null : z3Var.a.b;
                             kc0.b4 b4Var2 = x3Var.a;
                             List<kc0.y3> S = (b4Var2 == null || (d4Var = b4Var2.c) == null || (list = d4Var.a.b) == null) ? null : x61.m.S(list);
-                            List<kc0.a4> list5 = x61.r.r;
+                            List<kc0.a4> list5 = x61.rShadow.r;
                             if (S == null) {
                                 S = list5;
                             }
@@ -1498,7 +1498,7 @@ public final class a5Shadow implements y71.j {
                         Object obj21 = c6Var.u;
                         b71.a aVar21 = b71.a.r;
                         i17 = c6Var.v;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i17 != 0) {
                             sy.y.j(obj21);
                             c6Var.v = 1;
@@ -1518,7 +1518,7 @@ public final class a5Shadow implements y71.j {
                 Object obj212 = c6Var.u;
                 b71.a aVar212 = b71.a.r;
                 i17 = c6Var.v;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i17 != 0) {
                 }
                 return a0Var2;
@@ -1531,7 +1531,7 @@ public final class a5Shadow implements y71.j {
                         Object obj23 = d6Var.u;
                         b71.a aVar22 = b71.a.r;
                         i18 = d6Var.v;
-                        w61.a0 a0Var3 = w61.a0.a;
+                        w61.a0Shadow a0Var3 = w61.a0.a;
                         if (i18 != 0) {
                             sy.y.j(obj23);
                             d6Var.v = 1;
@@ -1551,7 +1551,7 @@ public final class a5Shadow implements y71.j {
                 Object obj232 = d6Var.u;
                 b71.a aVar222 = b71.a.r;
                 i18 = d6Var.v;
-                w61.a0 a0Var32 = w61.a0.a;
+                w61.a0Shadow a0Var32 = w61.a0.a;
                 if (i18 != 0) {
                 }
                 return a0Var32;
@@ -1622,7 +1622,7 @@ public final class a5Shadow implements y71.j {
                             g90 g90Var = ((e90) obj).a;
                             List list7 = g90Var != null ? g90Var.a : null;
                             if (list7 == null) {
-                                list7 = x61.r.r;
+                                list7 = x61.rShadow.r;
                             }
                             ArrayList arrayList10 = new ArrayList(x61.n.F(list7, 10));
                             Iterator it = list7.iterator();

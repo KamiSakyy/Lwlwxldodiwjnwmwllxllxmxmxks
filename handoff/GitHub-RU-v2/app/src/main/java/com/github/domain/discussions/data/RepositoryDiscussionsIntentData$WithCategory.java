@@ -8,7 +8,7 @@ import g81.e;
 import gn.m;
 import jk.j;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -28,7 +28,7 @@ public final class RepositoryDiscussionsIntentData$WithCategory implements j {
 
     public /* synthetic */ RepositoryDiscussionsIntentData$WithCategory(int i, String str, String str2, DiscussionCategoryData discussionCategoryData) {
         if (7 != (i & 7)) {
-            c1.l(i, 7, RepositoryDiscussionsIntentData$WithCategory$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 7, RepositoryDiscussionsIntentData$WithCategory$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
         this.r = str;

@@ -55,7 +55,7 @@ public final class w extends k1 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.B = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new z(this, null), 3);
+        this.B = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new z(this, null), 3);
     }
 
     /* JADX WARN: Type inference failed for: r0v5, types: [java.lang.Iterable, java.lang.Object] */
@@ -64,16 +64,16 @@ public final class w extends k1 {
         f8 f8Var = this.A;
         if (f8Var != null) {
             fl.e eVar = fl.f.Companion;
-            x61.r rVar = this.x;
+            x61.rShadow rVar = this.x;
             if (rVar == null) {
-                rVar = x61.r.r;
+                rVar = x61.rShadow.r;
             }
             this.t.getClass();
             boolean z = f8Var.a;
             i.a aVar = i.a.a;
             if (z) {
                 java.lang.Object r0 = (java.lang.Object) (f8Var.c);
-                y61.b i = sy.d0.i();
+                y61.b i = sy.d0Shadow.i();
                 ArrayList arrayList = new ArrayList(x61.n.F((Iterable) r0, 10));
                 for (e8 e8Var : r0) {
                     String str = e8Var.r;
@@ -81,10 +81,10 @@ public final class w extends k1 {
                 }
                 i.addAll(arrayList);
                 i.add(aVar);
-                h = sy.d0.h(i);
+                h = sy.d0Shadow.h(i);
             } else {
                 ArrayList arrayList2 = f8Var.b;
-                y61.b i2 = sy.d0.i();
+                y61.b i2 = sy.d0Shadow.i();
                 i2.add(i.c.a);
                 ArrayList arrayList3 = new ArrayList(x61.n.F(arrayList2, 10));
                 int size = arrayList2.size();
@@ -98,7 +98,7 @@ public final class w extends k1 {
                 }
                 i2.addAll(arrayList3);
                 i2.add(aVar);
-                h = sy.d0.h(i2);
+                h = sy.d0Shadow.h(i2);
             }
             eVar.getClass();
             fl.f c = fl.e.c(h);

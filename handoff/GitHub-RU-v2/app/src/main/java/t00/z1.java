@@ -97,7 +97,7 @@ public final class z1 extends c71.j implements j71.e {
             case 14:
                 return new z1((rm0.j4) this.x, (String) this.y, (String) this.z, cVar, 14);
             case 15:
-                return new z1((x71.h) this.z, cVar);
+                return new z1((x71.hShadow) this.z, cVar);
             case 16:
                 return new z1((w8.a0) this.x, (v8.w) this.y, (e9.r) this.z, cVar, 16);
             case 17:
@@ -228,7 +228,7 @@ public final class z1 extends c71.j implements j71.e {
     /* JADX WARN: Type inference failed for: r3v108 */
     /* JADX WARN: Type inference failed for: r3v109 */
     /* JADX WARN: Type inference failed for: r3v48, types: [x71.v] */
-    /* JADX WARN: Type inference failed for: r3v50, types: [x71.h] */
+    /* JADX WARN: Type inference failed for: r3v50, types: [x71.hShadow] */
     /* JADX WARN: Type inference failed for: r3v51, types: [java.lang.Object] */
     /* JADX WARN: Type inference failed for: r3v52, types: [x71.v] */
     /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:225:0x0447 -> B:212:0x044a). Please report as a decompilation issue!!! */
@@ -490,7 +490,7 @@ public final class z1 extends c71.j implements j71.e {
                 int i14 = this.w;
                 if (i14 == 0) {
                     sy.y.j(obj);
-                    um.r rVar = (um.r) this.y;
+                    um.rShadow rVar = (um.r) this.y;
                     um.s sVar = rVar.a;
                     oa.j jVar = (oa.j) this.z;
                     ArrayList c = rVar.c.c(list2);
@@ -674,8 +674,8 @@ public final class z1 extends c71.j implements j71.e {
                 try {
                     if (i21 == 0) {
                         sy.y.j(obj);
-                        r3 = (x71.h) this.z;
-                        cVar = new x71.c((x71.h) r3);
+                        r3 = (x71.hShadow) this.z;
+                        cVar = new x71.c((x71.hShadow) r3);
                         this.x = r3;
                         this.y = cVar;
                         this.w = 1;
@@ -735,7 +735,7 @@ public final class z1 extends c71.j implements j71.e {
                     sy.y.j(obj);
                     Context context = a0Var.b;
                     d9.q qVar2 = a0Var.a;
-                    e9.r rVar2 = (e9.r) this.z;
+                    e9.rShadow rVar2 = (e9.r) this.z;
                     f9.a aVar17 = a0Var.d;
                     this.w = 1;
                     int i23 = e9.q.a;
@@ -1066,7 +1066,7 @@ public final class z1 extends c71.j implements j71.e {
                     return a0Var6;
                 }
                 sy.y.j(obj);
-                y71.p pVar = new y71.p(new androidx.compose.foundation.lazy.layout.p1(wVar5, 6), new rm0.r3(18, new y71.y((nm.g) this.y, new rm0.v4(tVar, (a71.c) null, 24), 6), k71.x.a(yi.l.class)), (a71.c) null);
+                y71.p pVar = new y71.p(new androidx.compose.foundation.lazy.layout.p1(wVar5, 6), new rm0.r3(18, new y71.y((nm.g) this.y, new rm0.v4(tVar, (a71.c) null, 24), 6), k71.xShadow.a(yi.l.class)), (a71.c) null);
                 rm0.u7 u7Var = new rm0.u7(20, wVar5, tVar);
                 this.x = null;
                 this.w = 1;
@@ -1139,7 +1139,7 @@ public final class z1 extends c71.j implements j71.e {
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public z1(x71.h hVar, a71.c cVar) {
+    public z1(x71.hShadow hVar, a71.c cVar) {
         super(2, cVar);
         this.v = 15;
         this.z = hVar;

@@ -21,8 +21,8 @@ public final class s implements u81.g {
 
     public s(o1 o1Var, String str, String str2, String str3, long j, long j2, Bundle bundle) {
         v vVar;
-        c21.u.d(str2);
-        c21.u.d(str3);
+        c21.uShadow.d(str2);
+        c21.uShadow.d(str3);
         this.u = str2;
         this.v = str3;
         this.w = true == TextUtils.isEmpty(str) ? null : str;
@@ -222,9 +222,9 @@ public final class s implements u81.g {
     }
 
     public s(o1 o1Var, String str, String str2, String str3, long j, long j2, v vVar) {
-        c21.u.d(str2);
-        c21.u.d(str3);
-        c21.u.g(vVar);
+        c21.uShadow.d(str2);
+        c21.uShadow.d(str3);
+        c21.uShadow.g(vVar);
         this.u = str2;
         this.v = str3;
         this.w = true == TextUtils.isEmpty(str) ? null : str;

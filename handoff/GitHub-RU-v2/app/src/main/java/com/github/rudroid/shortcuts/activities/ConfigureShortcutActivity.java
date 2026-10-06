@@ -38,7 +38,7 @@ public final class ConfigureShortcutActivity extends h0<ic.d0> {
 
     static {
         r71.e pVar = new k71.p(ConfigureShortcutActivity.class, "route", "getRoute()Lcom/github/rudroid/shortcuts/navigation/ConfigureShortcutRoute;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         x0 = new r71.e[]{pVar};
         Companion = new a();
     }
@@ -61,7 +61,7 @@ public final class ConfigureShortcutActivity extends h0<ic.d0> {
         k71.k.e(E, "null cannot be cast to non-null type androidx.navigation.fragment.NavHostFragment");
         x6.a0 s4 = E.s4();
         x6.y yVar = new x6.y(s4.b.s, (ConfigureShortcutRoute) this.w0.c(this, x0[0]), (k71.e) null);
-        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ConfigureShortcutRoute.class), ig.b.a, k71.x.a(ConfigureShortcutFragment.class)), yVar.j, yVar, s4);
+        com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.xShadow.a(ConfigureShortcutRoute.class), ig.b.a, k71.xShadow.a(ConfigureShortcutFragment.class)), yVar.j, yVar, s4);
     }
     public Object C(Object p1) { return null; }
 }

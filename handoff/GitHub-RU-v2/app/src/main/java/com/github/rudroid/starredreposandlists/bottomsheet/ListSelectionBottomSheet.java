@@ -145,15 +145,15 @@ public final class ListSelectionBottomSheet extends Hilt_ListSelectionBottomShee
 
     static {
         r71.e pVar = new k71.p(ListSelectionBottomSheet.class, "repoName", "getRepoName()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         X0 = new r71.e[]{pVar};
         Companion = new a();
     }
 
     public ListSelectionBottomSheet() {
         w61.h s = sy.w.s(w61.i.s, new f(new e()));
-        this.S0 = new l1(k71.x.a(w.class), new g(s), new i(s), new h(s));
-        this.T0 = new l1(k71.x.a(g0.class), new b(), new d(), new c());
+        this.S0 = new l1(k71.xShadow.a(w.class), new g(s), new i(s), new h(s));
+        this.T0 = new l1(k71.xShadow.a(g0.class), new b(), new d(), new c());
         this.U0 = sy.w.t(new com.github.rudroid.starredreposandlists.bottomsheet.c(0, this));
         this.W0 = new com.github.rudroid.fragments.util.c("repo_name", new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(7));
     }
@@ -190,7 +190,7 @@ public final class ListSelectionBottomSheet extends Hilt_ListSelectionBottomShee
                     if (q1Var != null) {
                         q1Var.m((CancellationException) null);
                     }
-                    I4.B = v71.b0.z(d1.k(I4), (a71.h) null, (v71.a0) null, new z(I4, null), 3);
+                    I4.B = v71.b0.z(d1.k(I4), (a71.h) null, (v71.a0Shadow) null, new z(I4, null), 3);
                 }
             }
         }, new com.github.rudroid.starredreposandlists.bottomsheet.b(cVar));
@@ -207,7 +207,7 @@ public final class ListSelectionBottomSheet extends Hilt_ListSelectionBottomShee
         k71.k.g(dialogInterface, "dialog");
         super/*androidx.fragment.app.DialogFragment*/.onDismiss(dialogInterface);
         ArrayList arrayList = I4().x;
-        ArrayList arrayList2 = x61.r.r;
+        ArrayList arrayList2 = x61.rShadow.r;
         if (arrayList == null) {
             arrayList = arrayList2;
         }

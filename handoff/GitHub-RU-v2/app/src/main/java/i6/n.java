@@ -49,6 +49,6 @@ public final class n {
     }
 
     public n(int i, float f6) {
-        this((i & 1) != 0 ? 0 : f6, (List) x61.r.r);
+        this((i & 1) != 0 ? 0 : f6, (List) x61.rShadow.r);
     }
 }

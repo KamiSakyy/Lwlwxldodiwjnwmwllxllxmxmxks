@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import sy.d0;
+import sy.d0Shadow;
 import w1.r;
 import w61.a0;
 import x61.t;
@@ -74,9 +74,9 @@ public final class h {
                 d dVar = (d) it.next();
                 if (dVar instanceof d.a) {
                     set3.getClass();
-                    n = d0.n(dVar);
+                    n = d0Shadow.n(dVar);
                 } else {
-                    n = d0.n(dVar);
+                    n = d0Shadow.n(dVar);
                 }
                 x61.m.J(arrayList2, n);
             }
@@ -88,7 +88,7 @@ public final class h {
                 int i7 = i6 + 1;
                 int i8 = i5 + 1;
                 if (i5 < 0) {
-                    d0.x();
+                    d0Shadow.x();
                     throw null;
                 }
                 d dVar2 = (d) obj3;
@@ -143,7 +143,7 @@ public final class h {
                                 boolean h = sVar.h(dVar2);
                                 Object N2 = sVar.N();
                                 if (h || N2 == obj) {
-                                    N2 = new com.github.rudroid.discussions.ui.c(cVar4, (d.a) dVar2);
+                                    N2 = new com.github.rudroid.discussions.ui.cShadow(cVar4, (d.a) dVar2);
                                     sVar.n0(N2);
                                 }
                                 r m = o.m(w1.o.a, false, (String) null, (d3.k) null, (j71.a) N2, 15);

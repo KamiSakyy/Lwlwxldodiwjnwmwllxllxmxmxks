@@ -29,7 +29,7 @@ final class t0 extends c71.j implements j71.e {
         int i = this.f18156v;
         if (i == 0) {
             sy.y.j(obj);
-            x71.h hVar = this.f18157w.f18090y;
+            x71.hShadow hVar = this.f18157w.f18090y;
             Boolean bool = Boolean.TRUE;
             this.f18156v = 1;
             if (hVar.l(this, bool) == aVar) {

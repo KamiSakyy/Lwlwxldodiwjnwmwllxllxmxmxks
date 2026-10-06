@@ -423,7 +423,7 @@ public abstract class h2 implements aa.a {
         Boolean bool12 = null;
         m1 m1Var = null;
         o1 o1Var = null;
-        f1 f1Var = null;
+        f1Shadow f1Var = null;
         while (true) {
             switch (eVar.r0(a)) {
                 case 0:
@@ -530,7 +530,7 @@ public abstract class h2 implements aa.a {
                     break;
                 case 31:
                     bool = bool2;
-                    f1Var = (f1) aa.c.c(u1.a, false).a(eVar, wVar);
+                    f1Var = (f1Shadow) aa.c.c(u1.a, false).a(eVar, wVar);
                     break;
             }
             bool2 = bool;

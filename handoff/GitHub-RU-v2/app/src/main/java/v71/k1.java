@@ -15,7 +15,7 @@ public final class k1 extends q1 {
     @Override // v71.j1
     public final void f0() {
         try {
-            a81.b.h(b4.T(this.u), w61.a0.a);
+            a81.bShadow.h(b4.T(this.u), w61.a0.a);
         } catch (Throwable th) {
             th = th;
             if (th instanceof DispatchException) {

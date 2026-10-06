@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ll implements aaShadow.a {
     public static final ll a = new ll();
-    public static final List b = sy.d0.o("id", "name", "tagName", "descriptionHTML", "author", "createdAt", "publishedAt", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "tagName", "descriptionHTML", "author", "createdAt", "publishedAt", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x002b, code lost:
     
@@ -129,7 +129,7 @@ public final class ll implements aaShadow.a {
         m10.sa.Companion.getClass();
         aa.x xVar = m10.sa.a;
         wVar.e(xVar).b(fVar, wVar, zuVar.f);
-        no.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, zuVar.g);
+        noShadow.a.e(fVar, "publishedAt", wVar, xVar).b(fVar, wVar, zuVar.g);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, zuVar.h);
     }

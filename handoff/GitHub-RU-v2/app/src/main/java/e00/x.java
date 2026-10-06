@@ -4,12 +4,12 @@ import d00.b0;
 import d00.e0;
 import f00.c0;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x implements aa.a {
     public static final x a = new x();
-    public static final List b = d0.o("__typename", "item");
+    public static final List b = d0Shadow.o("__typename", "item");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

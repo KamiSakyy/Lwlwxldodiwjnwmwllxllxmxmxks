@@ -21,7 +21,7 @@ public final /* synthetic */ class h0 implements e7.j {
                 if (bool != null) {
                     boolean booleanValue = bool.booleanValue();
                     r0 A4 = settingsNotificationSchedulesFragment.A4();
-                    v71.b0.z(androidx.lifecycle.d1.k(A4), (a71.h) null, (v71.a0) null, new s0(A4, booleanValue, new c0(settingsNotificationSchedulesFragment, 3), null), 3);
+                    v71.b0.z(androidx.lifecycle.d1.k(A4), (a71.h) null, (v71.a0Shadow) null, new s0(A4, booleanValue, new c0(settingsNotificationSchedulesFragment, 3), null), 3);
                     break;
                 }
                 break;

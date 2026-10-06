@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.a {
     public static final l a = new l();
-    public static final List b = sy.d0.n("getsCiFailedOnly");
+    public static final List b = sy.d0Shadow.n("getsCiFailedOnly");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

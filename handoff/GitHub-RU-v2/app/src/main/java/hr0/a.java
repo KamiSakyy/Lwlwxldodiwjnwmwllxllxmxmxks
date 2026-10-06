@@ -10,7 +10,7 @@ import k71.k;
 import pz0.pa;
 import pz0.td;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -22,12 +22,12 @@ public abstract class a {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         x xVar2 = td.a;
         s mVar2 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);
-        List n = d0.n("DiscussionPoll");
+        List n = d0Shadow.n("DiscussionPoll");
         List list = b.a;
         List r = l.r(new s[]{mVar, mVar2, no.a.c(list, "selections", "DiscussionPoll", n, list)});
         m mVar3 = new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar);

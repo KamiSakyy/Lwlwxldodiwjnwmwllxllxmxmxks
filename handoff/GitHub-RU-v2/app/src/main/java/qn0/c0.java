@@ -3,11 +3,11 @@ package qn0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c0 {
     public String a;
-    public x b;
+    public xShadow b;
     public d0 c;
     public vn0.s1 d;
 
-    public c0(String str, x xVar, d0 d0Var, vn0.s1 s1Var) {
+    public c0(String str, xShadow xVar, d0 d0Var, vn0.s1 s1Var) {
         this.a = str;
         this.b = xVar;
         this.c = d0Var;

@@ -226,8 +226,8 @@ public abstract class w3 implements aa.a {
         aa.c.c(v3.a, false).b(fVar, wVar, u3Var.h);
         fVar.z0("viewerIsFollowing");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(u3Var.i, bVar2, fVar, wVar, "isViewer");
-        jo.f4.C(u3Var.j, bVar2, fVar, wVar, "privateProfile");
+        jo.f4Shadow.C(u3Var.i, bVar2, fVar, wVar, "isViewer");
+        jo.f4Shadow.C(u3Var.j, bVar2, fVar, wVar, "privateProfile");
         bVar2.b(fVar, wVar, Boolean.valueOf(u3Var.k));
         List list = eq.h.a;
         eq.h.d(fVar, wVar, u3Var.l);

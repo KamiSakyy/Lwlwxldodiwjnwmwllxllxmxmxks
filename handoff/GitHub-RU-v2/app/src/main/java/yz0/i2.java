@@ -184,11 +184,11 @@ public final class i2 {
     }
 
     public final int hashCode() {
-        int e = x.i.e(com.github.rudroid.copilot.h1.i(x.i.e(x.i.e(com.github.rudroid.copilot.h1.i(jo.f4.b(this.d, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), this.e, 31), 31, this.f), 31, this.g), this.h, 31), 31, this.i);
+        int e = x.i.e(com.github.rudroid.copilot.h1.i(x.i.e(x.i.e(com.github.rudroid.copilot.h1.i(jo.f4Shadow.b(this.d, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i(this.a.hashCode() * 31, this.b, 31), this.c, 31), 31), this.e, 31), 31, this.f), 31, this.g), this.h, 31), 31, this.i);
         SubscriptionState subscriptionState = this.j;
         int hashCode = (e + (subscriptionState == null ? 0 : subscriptionState.hashCode())) * 31;
         SubscriptionState subscriptionState2 = this.k;
-        int hashCode2 = (this.v.hashCode() + x.i.e(no.a.b(this.t, (this.s.hashCode() + x.i.e(jo.f4.b(this.q, (this.p.hashCode() + x.i.e(a0.s0.b(this.n, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i((hashCode + (subscriptionState2 == null ? 0 : subscriptionState2.hashCode())) * 31, this.l, 31), this.m, 31), 31), 31, this.o)) * 31, 31), 31, this.r)) * 31, 31), 31, this.u)) * 31;
+        int hashCode2 = (this.v.hashCode() + x.i.e(no.a.b(this.t, (this.s.hashCode() + x.i.e(jo.f4Shadow.b(this.q, (this.p.hashCode() + x.i.e(a0.s0.b(this.n, com.github.rudroid.copilot.h1.i(com.github.rudroid.copilot.h1.i((hashCode + (subscriptionState2 == null ? 0 : subscriptionState2.hashCode())) * 31, this.l, 31), this.m, 31), 31), 31, this.o)) * 31, 31), 31, this.r)) * 31, 31), 31, this.u)) * 31;
         v2 v2Var = this.w;
         int e2 = x.i.e(x.i.e(x.i.e(com.github.rudroid.copilot.h1.h(x.i.e(x.i.e(a0.s0.b(this.H, a0.s0.b(this.G, x.i.e(x.i.e(com.github.rudroid.copilot.h1.i(x.i.e(x.i.e(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h(com.github.rudroid.copilot.h1.h((hashCode2 + (v2Var == null ? 0 : v2Var.hashCode())) * 31, this.x, 31), this.y, 31), this.z, 31), this.A, 31), 31, this.B), 31, this.C), this.D, 31), 31, this.E), 31, this.F), 31), 31), 31, this.I), 31, this.J), this.K, 31), 31, this.L), 31, this.M), 31, this.N);
         String str = this.O;
@@ -320,7 +320,7 @@ public final class i2 {
         o.append(", duplicateOf=");
         o.append(this.t0);
         o.append(", copilotSuggestedAsAssignee=");
-        return jo.f4.s(o, this.u0, ")");
+        return jo.f4Shadow.s(o, this.u0, ")");
     }
 
     public i2(Object... a) {

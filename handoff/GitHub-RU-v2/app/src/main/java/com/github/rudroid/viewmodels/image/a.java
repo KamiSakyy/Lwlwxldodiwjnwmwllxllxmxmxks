@@ -16,13 +16,13 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import k71.k;
 import k71.m;
-import k71.x;
-import v71.a0;
+import k71.xShadow;
+import v71.a0Shadow;
 import v71.b0;
 import v71.v;
-import x61.r;
+import x61.rShadow;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -47,7 +47,7 @@ public final class a extends k1 {
 
     static {
         r71.e mVar = new m(a.class, "subjectId", "getSubjectId()Ljava/lang/String;", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         z = new r71.e[]{mVar};
         Companion = new C0014a();
     }
@@ -62,7 +62,7 @@ public final class a extends k1 {
         this.u = cVar2;
         this.v = h2.b(a1Var, "EXTRA_SUBJECT_ID", new u0(17), new l(25));
         this.w = new AtomicInteger(0);
-        y1 c = n1.c(r.r);
+        y1 c = n1Shadow.c(rShadow.r);
         this.x = c;
         this.y = new i1(c);
     }
@@ -88,6 +88,6 @@ public final class a extends k1 {
     public final void S(ContentResolver contentResolver, Uri uri) {
         k.g(uri, "uri");
         this.w.incrementAndGet();
-        b0.z(d1.k(this), this.s, (a0) null, new c(this, contentResolver, uri, null), 2);
+        b0.z(d1.k(this), this.s, (a0Shadow) null, new c(this, contentResolver, uri, null), 2);
     }
 }

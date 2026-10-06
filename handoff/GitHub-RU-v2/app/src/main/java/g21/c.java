@@ -4,7 +4,7 @@ import android.app.Application;
 import android.os.Build;
 import android.os.Process;
 import android.os.StrictMode;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.internal.common.zzy;
 import com.google.android.gms.internal.measurement.b4;
 import java.io.BufferedReader;
@@ -59,7 +59,7 @@ public abstract class c {
                     }
                     try {
                         String readLine = bufferedReader.readLine();
-                        u.g(readLine);
+                        uShadow.g(readLine);
                         str = readLine.trim();
                     } catch (IOException unused2) {
                     } catch (Throwable th2) {

@@ -1,12 +1,12 @@
 package ny0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements aa.a {
     public static final b a = new b();
-    public static final List b = sy.d0.o(new String[]{"scheduledNotifications", "getsDirectMentions", "getsAssignments", "getsReviewRequests", "getsDeploymentRequests", "getsPullRequestReviews", "getsCiActivity", "getsCiFailedOnly", "getsReleases"});
+    public static final List b = sy.d0Shadow.o(new String[]{"scheduledNotifications", "getsDirectMentions", "getsAssignments", "getsReviewRequests", "getsDeploymentRequests", "getsPullRequestReviews", "getsCiActivity", "getsCiFailedOnly", "getsReleases"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x002f, code lost:
     
@@ -207,14 +207,14 @@ public final class b implements aa.a {
         k71.k.g(cVar, "value");
         fVar.z0("scheduledNotifications");
         aa.b bVar = aa.c.f;
-        f4.C(cVar.a, bVar, fVar, wVar, "getsDirectMentions");
-        f4.C(cVar.b, bVar, fVar, wVar, "getsAssignments");
-        f4.C(cVar.c, bVar, fVar, wVar, "getsReviewRequests");
-        f4.C(cVar.d, bVar, fVar, wVar, "getsDeploymentRequests");
-        f4.C(cVar.e, bVar, fVar, wVar, "getsPullRequestReviews");
-        f4.C(cVar.f, bVar, fVar, wVar, "getsCiActivity");
-        f4.C(cVar.g, bVar, fVar, wVar, "getsCiFailedOnly");
-        f4.C(cVar.h, bVar, fVar, wVar, "getsReleases");
+        f4Shadow.C(cVar.a, bVar, fVar, wVar, "getsDirectMentions");
+        f4Shadow.C(cVar.b, bVar, fVar, wVar, "getsAssignments");
+        f4Shadow.C(cVar.c, bVar, fVar, wVar, "getsReviewRequests");
+        f4Shadow.C(cVar.d, bVar, fVar, wVar, "getsDeploymentRequests");
+        f4Shadow.C(cVar.e, bVar, fVar, wVar, "getsPullRequestReviews");
+        f4Shadow.C(cVar.f, bVar, fVar, wVar, "getsCiActivity");
+        f4Shadow.C(cVar.g, bVar, fVar, wVar, "getsCiFailedOnly");
+        f4Shadow.C(cVar.h, bVar, fVar, wVar, "getsReleases");
         bVar.b(fVar, wVar, Boolean.valueOf(cVar.i));
     }
 }

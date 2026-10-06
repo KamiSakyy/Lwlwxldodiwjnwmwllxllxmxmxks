@@ -3,16 +3,16 @@ package q51;
 import android.text.TextUtils;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
-import w80.a0;
+import w80.a0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
     public static final long b = TimeUnit.HOURS.toSeconds(1);
     public static final Pattern c = Pattern.compile("\\AA[\\w-]{38}\\z");
     public static i d;
-    public a0 a;
+    public a0Shadow a;
 
-    public i(a0 a0Var) {
+    public i(a0Shadow a0Var) {
         this.a = a0Var;
     }
 

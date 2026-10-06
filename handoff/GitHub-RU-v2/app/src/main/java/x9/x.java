@@ -10,7 +10,7 @@ import com.google.android.gms.internal.play_billing.y2;
 import com.google.android.gms.internal.play_billing.z2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public abstract /* synthetic */ class x {
+public abstract /* synthetic */ class xShadow {
 
     /* renamed from: a, reason: collision with root package name */
     public static final /* synthetic */ int f34048a = 0;
@@ -38,7 +38,7 @@ public abstract /* synthetic */ class x {
         }
     }
 
-    public static y2 b(int i, int i10, h hVar, String str, g3 g3Var) {
+    public static y2 b(int i, int i10, hShadow hVar, String str, g3 g3Var) {
         try {
             c3 q10 = d3.q();
             int i11 = hVar.f34005a;

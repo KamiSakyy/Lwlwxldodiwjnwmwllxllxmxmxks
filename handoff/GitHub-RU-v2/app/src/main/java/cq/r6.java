@@ -75,7 +75,7 @@ public abstract class r6 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, o6Var.b);
         fVar.z0("dismissable");
-        jo.f4.C(o6Var.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(o6Var.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, o6Var.d);
         fVar.z0("repository");
         aa.c.c(q6.a, true).b(fVar, wVar, o6Var.e);

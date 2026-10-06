@@ -7,7 +7,7 @@ import qo.x2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v1 implements aa.a {
     public static final v1 a = new v1();
-    public static final List b = sy.d0.o("node", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("node", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

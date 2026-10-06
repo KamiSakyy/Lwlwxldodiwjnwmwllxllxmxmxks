@@ -14,7 +14,7 @@ import androidx.compose.runtime.n;
 import androidx.compose.runtime.s;
 import androidx.compose.runtime.t;
 import androidx.compose.runtime.v1;
-import d2.a0;
+import d2.a0Shadow;
 import f0.o;
 import f1.ub;
 import g3.q0;
@@ -84,7 +84,7 @@ public final class k {
                 N = new com.github.rudroid.uitoolkit.markdown.components.c(9, aVar);
                 sVar2.n0(N);
             }
-            r e = p2.e(androidx.compose.foundation.layout.b.w(o.f(o.m(b, false, str2, kVar, (j71.a) N, 9), j, a0.b), d2Var), 1.0f);
+            r e = p2.e(androidx.compose.foundation.layout.b.w(o.f(o.m(b, false, str2, kVar, (j71.a) N, 9), j, a0Shadow.b), d2Var), 1.0f);
             l2 a = j2.a(l.g, w1.c.B, sVar2, 54);
             int hashCode = Long.hashCode(sVar2.T);
             v1 l = sVar2.l();
@@ -97,16 +97,16 @@ public final class k {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar = v2.g.f;
+            v2.eShadow eVar = v2.g.f;
             t.I(sVar2, eVar, a);
-            v2.e eVar2 = v2.g.e;
+            v2.eShadow eVar2 = v2.g.e;
             t.I(sVar2, eVar2, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar3 = v2.g.g;
+            v2.eShadow eVar3 = v2.g.g;
             t.w(sVar2, valueOf, eVar3);
             v2.d dVar = v2.g.h;
             t.E(sVar2, dVar);
-            v2.e eVar4 = v2.g.d;
+            v2.eShadow eVar4 = v2.g.d;
             t.I(sVar2, eVar4, c);
             if (2.0f <= 0.0d) {
                 l0.a.a("invalid weight; must be greater than zero");

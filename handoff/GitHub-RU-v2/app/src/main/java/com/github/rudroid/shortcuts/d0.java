@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import kotlin.NoWhenBranchMatchedException;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -36,13 +36,13 @@ public final class d0 extends l7.m0 implements jf.c {
     public ShortcutsOverviewFragment g;
     public Context h;
     public final w61.p i = sy.w.t(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(19, this));
-    public final y1 j = n1.c(Boolean.FALSE);
+    public final y1 j = n1Shadow.c(Boolean.FALSE);
     public final c0 k = new c0(this);
     public final m2 l = new m2();
 
     static {
         r71.e mVar = new k71.m(d0.class, "data", "getData()Ljava/util/List;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         m = new r71.e[]{mVar};
     }
 
@@ -117,7 +117,7 @@ public final class d0 extends l7.m0 implements jf.c {
         return ((q) getData().get(i)).r;
     }
 
-    public final void v(l7.n1 n1Var, int i) {
+    public final void v(l7.n1Shadow n1Var, int i) {
         jg.f fVar = (jg.f) n1Var;
         q qVar = (q) getData().get(i);
         if (qVar instanceof q.d) {

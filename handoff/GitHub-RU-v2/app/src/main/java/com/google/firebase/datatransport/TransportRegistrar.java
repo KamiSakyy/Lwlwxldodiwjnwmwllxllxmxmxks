@@ -51,7 +51,7 @@ public class TransportRegistrar implements ComponentRegistrar {
         u b4 = p41.a.b(new o(g51.b.class, f.class));
         b4.a(i.a(Context.class));
         b4.f = new m(17);
-        return Arrays.asList(b, b3, b4.b(), sy.o.c(LIBRARY_NAME, "19.0.0"));
+        return Arrays.asList(b, b3, b4.b(), sy.oShadow.c(LIBRARY_NAME, "19.0.0"));
     }
 
     public static Object c(Object... a) {

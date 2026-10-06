@@ -21,13 +21,13 @@ import m10.st;
 import pz0.no;
 import rm0.ya;
 import rz.z;
-import sy.d0;
+import sy.d0Shadow;
 import sy.y;
 import t00.f8;
 import t00.ua;
 import v71.v;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 import z01.a1;
 import z01.p0;
 import z01.y0;
@@ -51,7 +51,7 @@ public final class u implements p0, mi0, yf0 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                this.v = new sw0.c(jVar, bVar, vVar, new ua(23), new sw0.b(20), s01.o.r, new sw0.b(21), new ua(24), new ua(25), new ua(26), new ua(27), (j71.e) null, (LinkedHashSet) null, 129024);
+                this.v = new sw0.c(jVar, bVar, vVar, new ua(23), new sw0.b(20), s01.oShadow.r, new sw0.b(21), new ua(24), new ua(25), new ua(26), new ua(27), (j71.e) null, (LinkedHashSet) null, 129024);
                 break;
             default:
                 k71.k.g(jVar, "client");
@@ -60,7 +60,7 @@ public final class u implements p0, mi0, yf0 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                this.v = new jy.d(jVar, bVar, vVar, new rm0.s(17), new ya(1), s01.o.r, new ya(2), new rm0.s(18), new rm0.s(19), new rm0.s(20), new rm0.s(21), null, null, 129024);
+                this.v = new jy.d(jVar, bVar, vVar, new rm0.s(17), new ya(1), s01.oShadow.r, new ya(2), new rm0.s(18), new rm0.s(19), new rm0.s(20), new rm0.s(21), null, null, 129024);
                 break;
         }
     }
@@ -81,20 +81,20 @@ public final class u implements p0, mi0, yf0 {
                 w0 w0Var = (w0) ((s01.l) dVar).d.k(new z(str, ""));
                 uVar2 = uVar;
                 str2 = str;
-                l = n1.I(new f8(new a0.h(uVar, w0Var, (a71.c) null, 8)), new a((a71.c) null, uVar2, str2, w0Var, 1));
+                l = n1Shadow.I(new f8(new a0.h(uVar, w0Var, (a71.c) null, 8)), new a((a71.c) null, uVar2, str2, w0Var, 1));
             } else {
                 uVar2 = uVar;
                 str2 = str;
                 if (!(z0Var instanceof z0)) {
                     throw new NoWhenBranchMatchedException();
                 }
-                l = in.r.l(uVar2.k(str2, z0Var.a, ""));
+                l = in.rShadow.l(uVar2.k(str2, z0Var.a, ""));
             }
             arrayList.add(l);
             uVar = uVar2;
             str = str2;
         }
-        return n1.y(in.r.l(new p((y71.i[]) x61.m.F0(arrayList).toArray(new y71.i[0]), 0)), uVar.u);
+        return n1Shadow.y(in.rShadow.l(new p((y71.i[]) x61.m.F0(arrayList).toArray(new y71.i[0]), 0)), uVar.u);
     }
 
     public static final y71.i n(u uVar, String str, List list) {
@@ -113,20 +113,20 @@ public final class u implements p0, mi0, yf0 {
                 w0 w0Var = (w0) ((s01.l) cVar).d.k(new ux0.z(str, ""));
                 uVar2 = uVar;
                 str2 = str;
-                l = n1.I(new f8(new a0.h(uVar, w0Var, (a71.c) null, 18)), new a((a71.c) null, uVar2, str2, w0Var, 3));
+                l = n1Shadow.I(new f8(new a0.h(uVar, w0Var, (a71.c) null, 18)), new a((a71.c) null, uVar2, str2, w0Var, 3));
             } else {
                 uVar2 = uVar;
                 str2 = str;
                 if (!(z0Var instanceof z0)) {
                     throw new NoWhenBranchMatchedException();
                 }
-                l = in.r.l(uVar2.k(str2, z0Var.a, ""));
+                l = in.rShadow.l(uVar2.k(str2, z0Var.a, ""));
             }
             arrayList.add(l);
             uVar = uVar2;
             str = str2;
         }
-        return n1.y(in.r.l(new p((y71.i[]) x61.m.F0(arrayList).toArray(new y71.i[0]), 1)), uVar.u);
+        return n1Shadow.y(in.rShadow.l(new p((y71.i[]) x61.m.F0(arrayList).toArray(new y71.i[0]), 1)), uVar.u);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:121:0x01dc, code lost:
@@ -243,13 +243,13 @@ public final class u implements p0, mi0, yf0 {
                     dVar = null;
                 }
                 boolean z = dVar == null && dVar.c.c.b.a == 1;
-                List list2 = x61.r.r;
+                List list2 = x61.rShadow.r;
                 if (dVar != null) {
                     String str6 = dVar.b;
                     if (z) {
-                        list2 = d0.n(new y0(""));
+                        list2 = d0Shadow.n(new y0(""));
                     } else if (str6 != null && dVar.c.c.b.b.a) {
-                        list2 = d0.n(new z0(str6));
+                        list2 = d0Shadow.n(new z0(str6));
                     }
                 }
                 if (bVar == null) {
@@ -405,7 +405,7 @@ public final class u implements p0, mi0, yf0 {
         }
         if (dVar == null) {
         }
-        List list22 = x61.r.r;
+        List list22 = x61.rShadow.r;
         if (dVar != null) {
         }
         if (bVar == null) {
@@ -529,13 +529,13 @@ public final class u implements p0, mi0, yf0 {
                     dVar = null;
                 }
                 boolean z = dVar == null && dVar.c.c.b.a == 1;
-                List list2 = x61.r.r;
+                List list2 = x61.rShadow.r;
                 if (dVar != null) {
                     String str6 = dVar.b;
                     if (z) {
-                        list2 = d0.n(new y0(""));
+                        list2 = d0Shadow.n(new y0(""));
                     } else if (str6 != null && dVar.c.c.b.b.a) {
-                        list2 = d0.n(new z0(str6));
+                        list2 = d0Shadow.n(new z0(str6));
                     }
                 }
                 if (bVar == null) {
@@ -691,7 +691,7 @@ public final class u implements p0, mi0, yf0 {
         }
         if (dVar == null) {
         }
-        List list22 = x61.r.r;
+        List list22 = x61.rShadow.r;
         if (dVar != null) {
         }
         if (bVar == null) {
@@ -723,10 +723,10 @@ public final class u implements p0, mi0, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "viewId");
-                return n1.y(((jy.d) this.v).b(new z(str, str2)), this.u);
+                return n1Shadow.y(((jy.d) this.v).b(new z(str, str2)), this.u);
             default:
                 k71.k.g(str, "viewId");
-                return n1.y(this.v.b(new ux0.z(str, str2)), this.u);
+                return n1Shadow.y(this.v.b(new ux0.z(str, str2)), this.u);
         }
     }
 
@@ -744,9 +744,9 @@ public final class u implements p0, mi0, yf0 {
     public final y71.i c(String str) {
         switch (this.r) {
             case 0:
-                return n1.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new d00.o(str), ga.h.t, false, (LinkedHashSet) null, 56), 13), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new d00.o(str), ga.h.t, false, (LinkedHashSet) null, 56), 13), this.u);
             default:
-                return n1.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new gy0.o(str), ga.h.t, false, (LinkedHashSet) null, 56), 27), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new gy0.o(str), ga.h.t, false, (LinkedHashSet) null, 56), 27), this.u);
         }
     }
 
@@ -754,10 +754,10 @@ public final class u implements p0, mi0, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "viewId");
-                return n1.y(((jy.d) this.v).e(new z(str, str2)), this.u);
+                return n1Shadow.y(((jy.d) this.v).e(new z(str, str2)), this.u);
             default:
                 k71.k.g(str, "viewId");
-                return n1.y(this.v.e(new ux0.z(str, str2)), this.u);
+                return n1Shadow.y(this.v.e(new ux0.z(str, str2)), this.u);
         }
     }
 
@@ -766,11 +766,11 @@ public final class u implements p0, mi0, yf0 {
             case 0:
                 k71.k.g(projectsMetaInfo, "projectsMetaInfo");
                 k71.k.g(list, "newSortValues");
-                return n1.I(new f8(new f3(projectsMetaInfo, this, str, c0Var, list, (a71.c) null, 2)), new m((a71.c) null, this, projectsMetaInfo, 0));
+                return n1Shadow.I(new f8(new f3(projectsMetaInfo, this, str, c0Var, list, (a71.c) null, 2)), new m((a71.c) null, this, projectsMetaInfo, 0));
             default:
                 k71.k.g(projectsMetaInfo, "projectsMetaInfo");
                 k71.k.g(list, "newSortValues");
-                return n1.I(new f8(new f3(projectsMetaInfo, this, str, c0Var, list, (a71.c) null, 4)), new m((a71.c) null, this, projectsMetaInfo, 4));
+                return n1Shadow.I(new f8(new f3(projectsMetaInfo, this, str, c0Var, list, (a71.c) null, 4)), new m((a71.c) null, this, projectsMetaInfo, 4));
         }
     }
 
@@ -781,20 +781,20 @@ public final class u implements p0, mi0, yf0 {
                 k71.k.g(str2, "viewId");
                 k71.k.g(str3, "itemId");
                 w wVar = new w();
-                wVar.r = x61.r.r;
-                y71.y k = in.r.k(new y71.y(new an.b(wVar, this, str2, str3, null, 3), this.s.d(new rz.n(str, str3))));
+                wVar.r = x61.rShadow.r;
+                y71.y k = in.rShadow.k(new y71.y(new an.b(wVar, this, str2, str3, null, 3), this.s.d(new rz.n(str, str3))));
                 int i = 0;
                 a71.c cVar = null;
-                return n1.y(in.r.l(n1.I(new y71.s(k, new b(this, str2, str3, cVar, i)), new a(cVar, this, str2, wVar, i))), this.u);
+                return n1Shadow.y(in.rShadow.l(n1Shadow.I(new y71.s(k, new b(this, str2, str3, cVar, i)), new a(cVar, this, str2, wVar, i))), this.u);
             default:
                 k71.k.g(str, "projectId");
                 k71.k.g(str2, "viewId");
                 k71.k.g(str3, "itemId");
                 w wVar2 = new w();
-                wVar2.r = x61.r.r;
-                y71.y k2 = in.r.k(new y71.y(new an.b(wVar2, this, str2, str3, null, 5), this.s.d(new ux0.n(str, str3))));
+                wVar2.r = x61.rShadow.r;
+                y71.y k2 = in.rShadow.k(new y71.y(new an.b(wVar2, this, str2, str3, null, 5), this.s.d(new ux0.n(str, str3))));
                 a71.c cVar2 = null;
-                return n1.y(in.r.l(n1.I(new y71.s(k2, new b(this, str2, str3, cVar2, 1)), new a(cVar2, this, str2, wVar2, 2))), this.u);
+                return n1Shadow.y(in.rShadow.l(n1Shadow.I(new y71.s(k2, new b(this, str2, str3, cVar2, 1)), new a(cVar2, this, str2, wVar2, 2))), this.u);
         }
     }
 
@@ -802,10 +802,10 @@ public final class u implements p0, mi0, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "projectOwnerLogin");
-                return n1.y(new b10.b(d5.R(com.github.service.wrapper.b.q(this.t, new x(str, i), ga.h.t, false, (Set) null, (Set) null, new l3(1, new bq.a(9)), new bq.a(10), 24)), 2), this.u);
+                return n1Shadow.y(new b10.b(d5.R(com.github.service.wrapper.b.q(this.t, new x(str, i), ga.h.t, false, (Set) null, (Set) null, new l3(1, new bq.a(9)), new bq.a(10), 24)), 2), this.u);
             default:
                 k71.k.g(str, "projectOwnerLogin");
-                return n1.y(new b10.b(d5.R(com.github.service.wrapper.b.q(this.t, new gy0.x(str, i), ga.h.t, false, (Set) null, (Set) null, new l3(1, new fp.y(6)), new fp.y(7), 24)), 4), this.u);
+                return n1Shadow.y(new b10.b(d5.R(com.github.service.wrapper.b.q(this.t, new gy0.x(str, i), ga.h.t, false, (Set) null, (Set) null, new l3(1, new fp.y(6)), new fp.y(7), 24)), 4), this.u);
         }
     }
 
@@ -818,10 +818,10 @@ public final class u implements p0, mi0, yf0 {
         switch (this.r) {
             case 0:
                 k71.k.g(str, "projectOwnerLogin");
-                return n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new d00.k(str, i), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), this.u);
+                return n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new d00.k(str, i), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), this.u);
             default:
                 k71.k.g(str, "projectOwnerLogin");
-                return n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new gy0.k(str, i), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), this.u);
+                return n1Shadow.y(in.rShadow.l(com.github.service.wrapper.a.o(this.t, new gy0.k(str, i), (ga.h) null, false, (LinkedHashSet) null, (Set) null, 58)), this.u);
         }
     }
 
@@ -831,12 +831,12 @@ public final class u implements p0, mi0, yf0 {
                 k71.k.g(str, "viewId");
                 st.Companion.getClass();
                 ha.b i = y9.a.i(((aa.q) st.c).a, str2 == null ? "null" : str2, str3);
-                return n1.y(n1.I(new f8(new a0.h(this, i, (a71.c) null, 7)), new d(null, this, str, str2, str3, i, 0)), this.u);
+                return n1Shadow.y(n1Shadow.I(new f8(new a0.h(this, i, (a71.c) null, 7)), new d(null, this, str, str2, str3, i, 0)), this.u);
             default:
                 k71.k.g(str, "viewId");
                 no.Companion.getClass();
                 ha.b i2 = y9.a.i(((aa.q) no.c).a, str2 == null ? "null" : str2, str3);
-                return n1.y(n1.I(new f8(new a0.h(this, i2, (a71.c) null, 17)), new d(null, this, str, str2, str3, i2, 1)), this.u);
+                return n1Shadow.y(n1Shadow.I(new f8(new a0.h(this, i2, (a71.c) null, 17)), new d(null, this, str, str2, str3, i2, 1)), this.u);
         }
     }
 
@@ -845,11 +845,11 @@ public final class u implements p0, mi0, yf0 {
             case 0:
                 k71.k.g(str, "fullDatabaseId");
                 k71.k.g(str2, "selectedViewId");
-                return n1.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new h0(str, str2), ga.h.t, false, (LinkedHashSet) null, 56), 14), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new h0(str, str2), ga.h.t, false, (LinkedHashSet) null, 56), 14), this.u);
             default:
                 k71.k.g(str, "fullDatabaseId");
                 k71.k.g(str2, "selectedViewId");
-                return n1.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new gy0.h0(str, str2), ga.h.t, false, (LinkedHashSet) null, 56), 28), this.u);
+                return n1Shadow.y(new bz0.e(com.github.service.wrapper.b.a(this.t, new gy0.h0(str, str2), ga.h.t, false, (LinkedHashSet) null, 56), 28), this.u);
         }
     }
 }

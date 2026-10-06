@@ -6,6 +6,6 @@ public abstract class fs {
 
     static {
         ac.Companion.getClass();
-        new aa.q0("PublishedReleaseFeedItem", x61.r.r, sy.d0.n(ac.a));
+        new aa.q0("PublishedReleaseFeedItem", x61.rShadow.r, sy.d0Shadow.n(ac.a));
     }
 }

@@ -15,7 +15,7 @@ public abstract class g {
         td.Companion.getClass();
         aa.x xVar = td.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         vd.Companion.getClass();
         aa.x xVar2 = vd.a;
@@ -25,6 +25,6 @@ public abstract class g {
         List r = x61.l.r(new aa.m[]{mVar, mVar2, new aa.m("viewerCanUpvote", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("viewerHasUpvoted", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
         List r2 = x61.l.r(new aa.m[]{new aa.m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("upvoteCount", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("viewerCanUpvote", l0.b(xVar3), (String) null, rVar, rVar, rVar), new aa.m("viewerHasUpvoted", l0.b(xVar3), (String) null, rVar, rVar, rVar)});
         xd.Companion.getClass();
-        a = x61.l.r(new aa.s[]{new aa.m("__typename", l0.b(xd.a), (String) null, rVar, rVar, rVar), new aa.n("Discussion", sy.d0.n("Discussion"), r), new aa.n("DiscussionComment", sy.d0.n("DiscussionComment"), r2)});
+        a = x61.l.r(new aa.s[]{new aa.m("__typename", l0.b(xd.a), (String) null, rVar, rVar, rVar), new aa.n("Discussion", sy.d0Shadow.n("Discussion"), r), new aa.n("DiscussionComment", sy.d0Shadow.n("DiscussionComment"), r2)});
     }
 }

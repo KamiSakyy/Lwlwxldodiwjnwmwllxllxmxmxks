@@ -2,14 +2,14 @@ package is;
 
 import java.time.ZonedDateTime;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 import m10.zd;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n implements aa.a {
     public static final n a = new n();
-    public static final List b = sy.d0.o("id", "closed", "viewerCanClose", "viewerCanReopen", "closedAt", "stateReason", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "closed", "viewerCanClose", "viewerCanReopen", "closedAt", "stateReason", "__typename");
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x0029, code lost:
     

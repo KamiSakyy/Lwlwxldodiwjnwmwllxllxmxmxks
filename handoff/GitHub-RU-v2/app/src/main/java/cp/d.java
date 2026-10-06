@@ -16,7 +16,7 @@ import m10.h1;
 import m10.p00;
 import m10.tg0;
 import m10.zp;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -27,7 +27,7 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("name", b, (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
         x xVar2 = ah.a;
@@ -40,7 +40,7 @@ public abstract class d {
         cc0.Companion.getClass();
         List r3 = x61.l.r(new aa.m[]{mVar3, mVar4, new aa.m("logoUrl", l0.b(cc0.a), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         s mVar5 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("CheckSuite");
+        List n = d0Shadow.n("CheckSuite");
         List list = wo.b.a;
         s c = no.a.c(list, "selections", "CheckSuite", n, list);
         ch0.Companion.getClass();
@@ -50,7 +50,7 @@ public abstract class d {
         h1.Companion.getClass();
         q0 q0Var2 = h1.a;
         k71.k.g(q0Var2, "type");
-        List r4 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("CheckSuite", d0.n("CheckSuite"), x61.l.r(new s[]{mVar5, c, mVar6, new aa.m("app", q0Var2, (String) null, rVar, rVar, r3)}))});
+        List r4 = x61.l.r(new s[]{new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.n("CheckSuite", d0Shadow.n("CheckSuite"), x61.l.r(new s[]{mVar5, c, mVar6, new aa.m("app", q0Var2, (String) null, rVar, rVar, r3)}))});
         zp.Companion.getClass();
         j0 j0Var = zp.a;
         k71.k.g(j0Var, "type");

@@ -22,7 +22,7 @@ public final class c8 {
         v = c8VarArr;
         v8.l0.t(c8VarArr);
         Companion = new b8();
-        sy.d0.o("NEGATIVE", "POSITIVE");
+        sy.d0Shadow.o("NEGATIVE", "POSITIVE");
     }
 
     public c8(String str, int i, String str2) {

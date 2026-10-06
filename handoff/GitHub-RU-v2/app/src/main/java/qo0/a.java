@@ -19,7 +19,7 @@ import pz0.td;
 import pz0.vd;
 import pz0.w80;
 import pz0.xd;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -30,14 +30,14 @@ public abstract class a {
     static {
         pd.Companion.getClass();
         r b = l0.b(pd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar = xd.a;
         k.g(xVar, "type");
         List r = l.r(new m[]{mVar, new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("User");
+        List n = d0Shadow.n("User");
         List list = h.a;
         s c = no.a.c(list, "selections", "User", n, list);
         td.Companion.getClass();

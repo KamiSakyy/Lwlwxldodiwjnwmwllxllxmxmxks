@@ -17,9 +17,9 @@ public abstract class a {
         vd.Companion.getClass();
         aa.x xVar = vd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
-        List n2 = sy.d0.n(new aa.m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("totalCount", b, (String) null, rVar, rVar, rVar));
+        List n2 = sy.d0Shadow.n(new aa.m("totalCount", l0.b(xVar), (String) null, rVar, rVar, rVar));
         td.Companion.getClass();
         aa.m mVar = new aa.m("id", l0.b(td.a), (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();

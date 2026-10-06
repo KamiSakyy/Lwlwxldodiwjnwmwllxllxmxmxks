@@ -12,7 +12,7 @@ public final class d {
     public int g;
     public int a = 4096;
     public final ArrayList b = new ArrayList();
-    public c[] d = new c[8];
+    public cShadow[] d = new cShadow[8];
     public int e = 7;
 
     public d(r rVar) {
@@ -30,7 +30,7 @@ public final class d {
                 if (length < i2 || i <= 0) {
                     break;
                 }
-                c cVar = this.d[length];
+                cShadow cVar = this.d[length];
                 k71.k.d(cVar);
                 int i4 = cVar.c;
                 i -= i4;
@@ -38,25 +38,25 @@ public final class d {
                 this.f--;
                 i3++;
             }
-            c[] cVarArr = this.d;
+            cShadow[] cVarArr = this.d;
             System.arraycopy(cVarArr, i2 + 1, cVarArr, i2 + 1 + i3, this.f);
             this.e += i3;
         }
         return i3;
     }
 
-    public final h91.k b(int i) {
+    public final h91.kShadow b(int i) {
         if (i >= 0) {
-            c[] cVarArr = f.a;
+            cShadow[] cVarArr = f.a;
             if (i <= cVarArr.length - 1) {
                 return cVarArr[i].a;
             }
         }
         int length = this.e + 1 + (i - f.a.length);
         if (length >= 0) {
-            c[] cVarArr2 = this.d;
+            cShadow[] cVarArr2 = this.d;
             if (length < cVarArr2.length) {
-                c cVar = cVarArr2[length];
+                cShadow cVar = cVarArr2[length];
                 k71.k.d(cVar);
                 return cVar.a;
             }
@@ -64,7 +64,7 @@ public final class d {
         throw new IOException("Header index too large " + (i + 1));
     }
 
-    public final void c(c cVar) {
+    public final void c(cShadow cVar) {
         this.b.add(cVar);
         int i = cVar.c;
         int i2 = this.a;
@@ -77,9 +77,9 @@ public final class d {
         }
         a((this.g + i) - i2);
         int i3 = this.f + 1;
-        c[] cVarArr = this.d;
+        cShadow[] cVarArr = this.d;
         if (i3 > cVarArr.length) {
-            c[] cVarArr2 = new c[cVarArr.length * 2];
+            cShadow[] cVarArr2 = new cShadow[cVarArr.length * 2];
             System.arraycopy(cVarArr, 0, cVarArr2, cVarArr.length, cVarArr.length);
             this.e = this.d.length - 1;
             this.d = cVarArr2;
@@ -91,7 +91,7 @@ public final class d {
         this.g += i;
     }
 
-    public final h91.k d() {
+    public final h91.kShadow d() {
         e0 e0Var = this.c;
         byte readByte = e0Var.readByte();
         byte[] bArr = r81.e.a;

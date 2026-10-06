@@ -31,7 +31,7 @@ public final class u1 implements j71.c {
         zx.v0 v0Var;
         zx.m0 m0Var;
         List list;
-        zx.r0 r0Var;
+        zx.r0Shadow r0Var;
         zx.l0 l0Var;
         switch (this.r) {
             case 0:
@@ -74,7 +74,7 @@ public final class u1 implements j71.c {
                 k71.k.g(iVar2, "$this$mapOrApiFailure");
                 return com.google.common.util.concurrent.a.i(iVar2.c);
             case 6:
-                rz.r rVar = (rz.r) obj;
+                rz.rShadow rVar = (rz.r) obj;
                 k71.k.g(rVar, "$this$mapOrApiFailure");
                 return com.google.common.util.concurrent.a.S(rVar.b);
             case 7:

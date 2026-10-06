@@ -8,7 +8,7 @@ import jo.kd0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class iy implements aaShadow.a {
     public static final iy a = new iy();
-    public static final List b = sy.d0.o("actor", "issue");
+    public static final List b = sy.d0Shadow.o("actor", "issue");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

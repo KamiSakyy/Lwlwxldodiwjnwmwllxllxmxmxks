@@ -21,7 +21,7 @@ public final class a implements Runnable {
                 z zVar = this.u;
                 zVar.z();
                 String str = this.s;
-                c21.u.d(str);
+                c21.uShadow.d(str);
                 x.e eVar = zVar.u;
                 boolean isEmpty = eVar.isEmpty();
                 long j = this.t;
@@ -49,7 +49,7 @@ public final class a implements Runnable {
                 o1 o1Var = (o1) ((androidx.compose.foundation.lazy.layout.s0) zVar2).s;
                 zVar2.z();
                 String str2 = this.s;
-                c21.u.d(str2);
+                c21.uShadow.d(str2);
                 x.e eVar2 = zVar2.u;
                 Integer num2 = (Integer) eVar2.get(str2);
                 if (num2 == null) {

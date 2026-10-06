@@ -3,7 +3,7 @@ package com.github.rudroid.agents.viewmodel;
 import androidx.lifecycle.d1;
 import androidx.lifecycle.k1;
 import com.github.rudroid.common.logging.LogTag;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 @LogTag(tag = "ObserveAgentTasksAliveViewModel")
@@ -38,8 +38,8 @@ public final class j0 extends k1 {
         this.f8372t = aVar;
         this.f8373u = cVar2;
         this.f8374v = eVar;
-        this.f8375w = n1.c((Object) null);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new g0(this, null), 3);
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new i0(this, null), 3);
+        this.f8375w = n1Shadow.c((Object) null);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new g0(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new i0(this, null), 3);
     }
 }

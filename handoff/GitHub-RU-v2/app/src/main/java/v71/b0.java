@@ -50,16 +50,16 @@ public abstract class b0 {
         c71.c cVar2 = fVar.v;
         Object obj2 = fVar.x;
         a71.h q = cVar2.q();
-        Object n = a81.b.n(q, obj2);
-        y1 K = n != a81.b.d ? K(cVar2, q, n) : null;
+        Object n = a81.bShadow.n(q, obj2);
+        y1 K = n != a81.bShadow.d ? K(cVar2, q, n) : null;
         try {
             cVar2.i(d3);
             if (K == null || K.s0()) {
-                a81.b.g(q, n);
+                a81.bShadow.g(q, n);
             }
         } catch (Throwable th) {
             if (K == null || K.s0()) {
-                a81.b.g(q, n);
+                a81.bShadow.g(q, n);
             }
             throw th;
         }
@@ -207,19 +207,19 @@ public abstract class b0 {
             if (k71.k.b(A.w0(dVar), q.w0(dVar))) {
                 y1 y1Var = new y1(cVar, A);
                 a71.h hVar2 = y1Var.t;
-                Object n = a81.b.n(hVar2, null);
+                Object n = a81.bShadow.n(hVar2, null);
                 try {
                     Object o0 = i4.o0(y1Var, true, y1Var, eVar);
-                    a81.b.g(hVar2, n);
+                    a81.bShadow.g(hVar2, n);
                     J = o0;
                 } catch (Throwable th) {
-                    a81.b.g(hVar2, n);
+                    a81.bShadow.g(hVar2, n);
                     throw th;
                 }
             } else {
                 i0 i0Var = new i0(cVar, A);
                 try {
-                    a81.b.h(b4.T(b4.G(i0Var, i0Var, eVar)), w61.a0.a);
+                    a81.bShadow.h(b4.T(b4.G(i0Var, i0Var, eVar)), w61.a0.a);
                     AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = i0.v;
                     while (true) {
                         int i2 = atomicIntegerFieldUpdater.get(i0Var);
@@ -337,7 +337,7 @@ public abstract class b0 {
         b71.a aVar2 = w61.a0.a;
         if (fVar != null) {
             v vVar = fVar.u;
-            if (a81.b.j(vVar, q)) {
+            if (a81.bShadow.j(vVar, q)) {
                 fVar.w = aVar2;
                 fVar.t = 1;
                 vVar.K0(q, fVar);
@@ -411,9 +411,9 @@ public abstract class b0 {
         if ((i2 & 1) != 0) {
             dVar = a71.i.r;
         }
-        a0 a0Var = a0.r;
+        a0Shadow a0Var = a0.r;
         a71.h A = A(zVar, dVar);
-        a0 a0Var2 = a0.r;
+        a0Shadow a0Var2 = a0.r;
         f0 f0Var = new f0(A, true);
         f0Var.q0(a0Var, f0Var, eVar);
         return f0Var;
@@ -562,7 +562,7 @@ public abstract class b0 {
             return new l(1, cVar);
         }
         a81.f fVar = (a81.f) cVar;
-        a81.t tVar = a81.b.c;
+        a81.t tVar = a81.bShadow.c;
         AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = a81.f.y;
         loop0: while (true) {
             Object obj = atomicReferenceFieldUpdater.get(fVar);
@@ -611,7 +611,7 @@ public abstract class b0 {
             if (xVar != null) {
                 xVar.i0(hVar, th);
             } else {
-                a81.b.d(hVar, th);
+                a81.bShadow.d(hVar, th);
             }
         } catch (Throwable th2) {
             if (th != th2) {
@@ -619,7 +619,7 @@ public abstract class b0 {
                 sy.u.a(runtimeException, th);
                 th = runtimeException;
             }
-            a81.b.d(hVar, th);
+            a81.bShadow.d(hVar, th);
         }
     }
 
@@ -693,7 +693,7 @@ public abstract class b0 {
         return w61.a0.a;
     }
 
-    public static final q1 y(z zVar, a71.h hVar, a0 a0Var, j71.e eVar) {
+    public static final q1 y(z zVar, a71.h hVar, a0Shadow a0Var, j71.e eVar) {
         a71.h A = A(zVar, hVar);
         a0Var.getClass();
         q1 k1Var = a0Var == a0.s ? new k1(A, eVar) : new q1(A, true);
@@ -701,7 +701,7 @@ public abstract class b0 {
         return k1Var;
     }
 
-    public static /* synthetic */ q1 z(z zVar, a71.h hVar, a0 a0Var, j71.e eVar, int i2) {
+    public static /* synthetic */ q1 z(z zVar, a71.h hVar, a0Shadow a0Var, j71.e eVar, int i2) {
         if ((i2 & 1) != 0) {
             hVar = a71.i.r;
         }

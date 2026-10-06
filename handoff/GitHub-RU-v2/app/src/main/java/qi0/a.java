@@ -3,12 +3,12 @@ package qi0;
 import aa.w;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements aa.a {
     public static final a a = new a();
-    public static final List b = d0.n("repository");
+    public static final List b = d0Shadow.n("repository");
 
     public final Object a(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

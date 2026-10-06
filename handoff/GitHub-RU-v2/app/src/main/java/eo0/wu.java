@@ -9,7 +9,7 @@ import jn0.k80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wu implements aaShadow.a {
     public static final wu a = new wu();
-    public static final List b = sy.d0.o(new String[]{"id", "answerChosenAt", "answer", "answerChosenBy", "__typename"});
+    public static final List b = sy.d0Shadow.o(new String[]{"id", "answerChosenAt", "answer", "answerChosenBy", "__typename"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -25,7 +25,7 @@ public final class wu implements aaShadow.a {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
                 pz0.o7.Companion.getClass();
-                zonedDateTime = (ZonedDateTime) no.a.h(wVar, pz0.o7.a, eVar, wVar);
+                zonedDateTime = (ZonedDateTime) noShadow.a.h(wVar, pz0.o7.a, eVar, wVar);
             } else if (r0 == 2) {
                 g80Var = (g80) aa.c.b(aa.c.c(tu.a, true)).a(eVar, wVar);
             } else if (r0 == 3) {

@@ -107,7 +107,7 @@ public abstract class a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r12v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r12v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r12v1 */
     /* JADX WARN: Type inference failed for: r12v3, types: [java.util.ArrayList] */
     public static final j f(g3 g3Var) {
@@ -130,7 +130,7 @@ public abstract class a {
         String obj = p.t0(fromHtml).toString();
         String str5 = g3Var.f;
         if (d3Var == null || (list = d3Var.b) == null) {
-            r12 = x61.r.r;
+            r12 = x61.rShadow.r;
         } else {
             r12 = new ArrayList();
             for (e3 e3Var : list) {
@@ -175,7 +175,7 @@ public abstract class a {
                 }
             }
         } else {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         return new t10.k(str, i, str3, str2, str4, z, i2, z2, b, list);
     }

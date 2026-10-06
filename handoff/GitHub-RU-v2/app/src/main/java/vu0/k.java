@@ -16,7 +16,7 @@ import pz0.td;
 import pz0.vd;
 import pz0.xd;
 import pz0.zs;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -27,7 +27,7 @@ public abstract class k {
         xd.Companion.getClass();
         x xVar = xd.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.s mVar = new aa.m("__typename", b, (String) null, rVar, rVar, rVar);
         td.Companion.getClass();
         x xVar2 = td.a;
@@ -37,7 +37,7 @@ public abstract class k {
         List list = dp0.b.a;
         List r2 = x61.l.r(new aa.s[]{mVar, mVar2, mVar3, no.a.c(list, "selections", "Actor", r, list)});
         vd.Companion.getClass();
-        List n = d0.n(new aa.m("totalCount", l0.b(vd.a), (String) null, rVar, rVar, rVar));
+        List n = d0Shadow.n(new aa.m("totalCount", l0.b(vd.a), (String) null, rVar, rVar, rVar));
         List r3 = x61.l.r(new aa.m[]{new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new aa.m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         aa.m mVar4 = new aa.m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
         aa.m mVar5 = new aa.m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);

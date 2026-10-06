@@ -5,7 +5,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.rudroid.m0;
 import java.util.ArrayList;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -75,7 +75,7 @@ public final class a {
     }
 
     public final int hashCode() {
-        return Boolean.hashCode(this.k) + f4.b(this.j, x.i.e(x.i.e(h1.i(h1.i(h1.i(s0.b(this.d, (this.c.hashCode() + f1.e.c(this.b, this.a.hashCode() * 31, 31)) * 31, 31), this.e, 31), this.f, 31), this.g, 31), 31, this.h), 31, this.i), 31);
+        return Boolean.hashCode(this.k) + f4Shadow.b(this.j, x.i.e(x.i.e(h1.i(h1.i(h1.i(s0.b(this.d, (this.c.hashCode() + f1.e.c(this.b, this.a.hashCode() * 31, 31)) * 31, 31), this.e, 31), this.f, 31), this.g, 31), 31, this.h), 31, this.i), 31);
     }
 
     public final String toString() {
@@ -94,6 +94,6 @@ public final class a {
         sb.append(", discussionAuthor=");
         sb.append(this.j);
         sb.append(", hasNestedDiscussionAnswersEnabled=");
-        return f4.s(sb, this.k, ")");
+        return f4Shadow.s(sb, this.k, ")");
     }
 }

@@ -30,6 +30,6 @@ public final class mg {
     }
 
     public final String toString() {
-        return jo.f4.i(this.a, "Users(userCount=", ", nodes=", ")", this.b);
+        return jo.f4Shadow.i(this.a, "Users(userCount=", ", nodes=", ")", this.b);
     }
 }

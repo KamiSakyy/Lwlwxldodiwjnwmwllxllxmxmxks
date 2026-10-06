@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y6 implements aaShadow.a {
     public static final y6 a = new y6();
-    public static final List b = sy.d0.o("id", "viewerPermission", "owner", "hasNestedDiscussionAnswersEnabled", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "viewerPermission", "owner", "hasNestedDiscussionAnswersEnabled", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -72,7 +72,7 @@ public final class y6 implements aaShadow.a {
         fVar.z0("owner");
         aa.c.c(x6.a, false).b(fVar, wVar, jaVar.c);
         fVar.z0("hasNestedDiscussionAnswersEnabled");
-        jo.f4.C(jaVar.d, aa.c.f, fVar, wVar, "__typename");
+        jo.f4Shadow.C(jaVar.d, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, jaVar.e);
     }
 }

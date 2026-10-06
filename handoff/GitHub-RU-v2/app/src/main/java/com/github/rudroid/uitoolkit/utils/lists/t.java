@@ -89,7 +89,7 @@ public final class t {
         boolean z2 = (i & 1) != 0 ? false : z;
         sVar2.c0(435904140);
         s3.c cVar = (s3.c) sVar2.j(g1.h);
-        float f = qg.p.a;
+        float f = qg.pShadow.a;
         int i0 = cVar.i0(f);
         int i02 = cVar.i0(f);
         int i03 = cVar.i0(ih.a.f);

@@ -96,9 +96,9 @@ public final class SelectableOwnerLegacyProjectsFragment extends Hilt_Selectable
     }
 
     public SelectableOwnerLegacyProjectsFragment() {
-        k71.x.a(com.github.rudroid.searchandfilter.q.class);
+        k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
         w61.h s = sy.w.s(w61.i.s, new e(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(7, this)));
-        this.H0 = new l1(k71.x.a(i.class), new f(s), new h(s), new g(s));
+        this.H0 = new l1(k71.xShadow.a(i.class), new f(s), new h(s), new g(s));
         this.I0 = new com.github.rudroid.searchandfilter.complexfilter.project.b(this);
     }
 

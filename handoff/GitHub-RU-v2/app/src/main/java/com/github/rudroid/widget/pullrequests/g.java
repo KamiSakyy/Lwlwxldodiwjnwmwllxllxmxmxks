@@ -10,7 +10,7 @@ import com.github.rudroid.widget.pullrequests.PullRequestsWidgetSettingsActivity
 import com.github.rudroid.widget.pullrequests.PullRequestsWidgetWorker;
 import com.github.service.models.response.PullsWidgetFilter;
 import com.google.android.gms.internal.measurement.i4;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -74,11 +74,11 @@ public final /* synthetic */ class g implements j71.f {
                             PullRequestsWidgetSettingsActivity pullRequestsWidgetSettingsActivity2 = pullRequestsWidgetSettingsActivity;
                             x i = d1.i(pullRequestsWidgetSettingsActivity2);
                             Context context2 = context;
-                            b0.z(i, (a71.h) null, (a0) null, new h(pullRequestsWidgetSettingsActivity2, context2, null), 3).o0(new com.github.rudroid.support.u(14, pullRequestsWidgetSettingsActivity2));
+                            b0.z(i, (a71.h) null, (a0Shadow) null, new h(pullRequestsWidgetSettingsActivity2, context2, null), 3).o0(new com.github.rudroid.support.u(14, pullRequestsWidgetSettingsActivity2));
                             PullRequestsWidgetWorker.Companion.getClass();
                             PullRequestsWidgetWorker.a.a(context2);
                         }
-                        return w61.a0.a;
+                        return w61.a0Shadow.a;
                     }
                 };
                 sVar.n0(aVar2);
@@ -88,6 +88,6 @@ public final /* synthetic */ class g implements j71.f {
         } else {
             sVar.V();
         }
-        return w61.a0.a;
+        return w61.a0Shadow.a;
     }
 }

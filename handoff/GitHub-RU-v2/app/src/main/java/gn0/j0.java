@@ -7,8 +7,8 @@ public abstract class j0 {
     public static final i0 Companion = new i0();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yh.Companion.getClass();
-        new aa.q0("AddedToProjectEvent", n, sy.d0.n(yh.a));
+        new aa.q0("AddedToProjectEvent", n, sy.d0Shadow.n(yh.a));
     }
 }

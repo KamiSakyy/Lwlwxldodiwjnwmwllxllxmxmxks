@@ -7,7 +7,7 @@ import qo.n2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p1 implements aa.a {
     public static final p1 a = new p1();
-    public static final List b = sy.d0.o("__typename", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         n2 n2Var;

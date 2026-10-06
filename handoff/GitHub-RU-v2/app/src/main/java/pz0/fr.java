@@ -22,7 +22,7 @@ public final class fr {
         u = frVarArr;
         v = v8.l0.t(frVarArr);
         Companion = new er();
-        sy.d0.o(new String[]{"ADMIN", "READ", "WRITE"});
+        sy.d0Shadow.o(new String[]{"ADMIN", "READ", "WRITE"});
     }
 
     public fr(String str, int i, String str2) {

@@ -6,6 +6,6 @@ public abstract class uf {
 
     static {
         ef.Companion.getClass();
-        new aa.q0("FollowRecommendationFeedItem", x61.r.r, sy.d0.n(ef.a));
+        new aa.q0("FollowRecommendationFeedItem", x61.rShadow.r, sy.d0Shadow.n(ef.a));
     }
 }

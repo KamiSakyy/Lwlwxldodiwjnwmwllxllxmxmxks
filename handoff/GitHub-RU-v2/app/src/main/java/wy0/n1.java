@@ -28,7 +28,7 @@ public final class n1 implements j71.c {
         lo0.d dVar;
         lo0.e eVar;
         ow0.g0 g0Var;
-        ow0.x xVar;
+        ow0.xShadow xVar;
         List list;
         ow0.c0 c0Var;
         ow0.w wVar;
@@ -93,7 +93,7 @@ public final class n1 implements j71.c {
                 k71.k.g(t0Var, "$this$mapOrApiFailure");
                 return m71.a.g0(t0Var.b);
             default:
-                ow0.a0 a0Var = (ow0.a0) obj;
+                ow0.a0Shadow a0Var = (ow0.a0Shadow) obj;
                 k71.k.g(a0Var, "data");
                 ow0.e0 e0Var = a0Var.a;
                 return Boolean.valueOf(((e0Var == null || (g0Var = e0Var.c) == null || (xVar = g0Var.d) == null || (list = xVar.c) == null || (c0Var = (ow0.c0) x61.m.W(list)) == null || (wVar = c0Var.b) == null) ? null : wVar.c) != null);

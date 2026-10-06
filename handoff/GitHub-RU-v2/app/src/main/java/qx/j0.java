@@ -9,7 +9,7 @@ import m10.uh;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j0 implements aa.a {
     public static final j0 a = new j0();
-    public static final List b = sy.d0.o("interaction", "occurredAt", "commenter", "interactable");
+    public static final List b = sy.d0Shadow.o("interaction", "occurredAt", "commenter", "interactable");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;
@@ -42,7 +42,7 @@ public final class j0 implements aa.a {
                 sa.Companion.getClass();
                 zonedDateTime = (ZonedDateTime) wVar.e(sa.a).a(eVar, wVar);
             } else if (r0 == 2) {
-                oVar = (o) aa.c.b(aa.c.c(a0.a, true)).a(eVar, wVar);
+                oVar = (o) aa.c.b(aa.c.c(a0Shadow.a, true)).a(eVar, wVar);
             } else {
                 if (r0 != 3) {
                     break;
@@ -76,7 +76,7 @@ public final class j0 implements aa.a {
         sa.Companion.getClass();
         wVar.e(sa.a).b(fVar, wVar, wVar2.b);
         fVar.z0("commenter");
-        aa.c.b(aa.c.c(a0.a, true)).b(fVar, wVar, wVar2.c);
+        aa.c.b(aa.c.c(a0Shadow.a, true)).b(fVar, wVar, wVar2.c);
         fVar.z0("interactable");
         aa.c.c(c0.a, true).b(fVar, wVar, wVar2.d);
     }

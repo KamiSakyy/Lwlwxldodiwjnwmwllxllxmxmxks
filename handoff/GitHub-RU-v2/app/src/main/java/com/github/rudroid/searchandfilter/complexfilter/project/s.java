@@ -20,7 +20,7 @@ public final /* synthetic */ class s implements j71.a {
         switch (i) {
             case 0:
                 if (((Boolean) selectableProjectsBottomSheet.a1.a(selectableProjectsBottomSheet, SelectableProjectsBottomSheet.e1[0])).booleanValue()) {
-                    k71.e a = k71.x.a(com.github.rudroid.searchandfilter.q.class);
+                    k71.e a = k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
                     SelectableProjectsBottomSheet.b bVar = new SelectableProjectsBottomSheet.b(selectableProjectsBottomSheet);
                     SelectableProjectsBottomSheet.c cVar = new SelectableProjectsBottomSheet.c(selectableProjectsBottomSheet);
                     SelectableProjectsBottomSheet.d dVar = new SelectableProjectsBottomSheet.d(selectableProjectsBottomSheet);
@@ -38,7 +38,7 @@ public final /* synthetic */ class s implements j71.a {
                     throw new IllegalArgumentException("Local and anonymous classes can not be ViewModels");
                 }
                 w61.h s = sy.w.s(w61.i.s, new SelectableProjectsBottomSheet.e(new s(selectableProjectsBottomSheet, 1)));
-                k71.e a2 = k71.x.a(com.github.rudroid.searchandfilter.q.class);
+                k71.e a2 = k71.xShadow.a(com.github.rudroid.searchandfilter.q.class);
                 SelectableProjectsBottomSheet.f fVar = new SelectableProjectsBottomSheet.f(s);
                 SelectableProjectsBottomSheet.g gVar = new SelectableProjectsBottomSheet.g(s);
                 SelectableProjectsBottomSheet.h hVar = new SelectableProjectsBottomSheet.h(selectableProjectsBottomSheet, s);

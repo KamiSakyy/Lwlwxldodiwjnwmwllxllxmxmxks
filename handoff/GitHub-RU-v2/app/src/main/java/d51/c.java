@@ -55,13 +55,13 @@ public final /* synthetic */ class c implements Callable {
                 lVar.getClass();
                 w41.c.a();
                 v2.t tVar2 = lVar.c;
-                b51.d dVar2 = (b51.d) tVar2.t;
+                b51.dShadow dVar2 = (b51.dShadow) tVar2.t;
                 String str = (String) tVar2.s;
                 dVar2.getClass();
                 boolean z = true;
                 if (new File((File) dVar2.c, str).exists()) {
                     Log.isLoggable("FirebaseCrashlytics", 2);
-                    b51.d dVar3 = (b51.d) tVar2.t;
+                    b51.dShadow dVar3 = (b51.dShadow) tVar2.t;
                     dVar3.getClass();
                     new File((File) dVar3.c, str).delete();
                 } else {

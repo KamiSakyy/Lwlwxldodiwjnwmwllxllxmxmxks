@@ -8,7 +8,7 @@ import com.google.android.gms.internal.measurement.i4;
 import in.j0;
 import q81.a0;
 import q81.q;
-import q81.x;
+import q81.xShadow;
 import q81.y;
 import sy.c0;
 import t71.n;
@@ -43,12 +43,12 @@ public final class b extends c0 implements g {
         sb.append(this.u);
         l1Var.g("Authorization", sb.toString());
         l1Var.G(j0.class, new j0());
-        x xVar = y.Companion;
+        xShadow xVar = y.Companion;
         String z = f1.e.z("{ \"access_token\": \"", this.t, "\" }");
         n nVar = q.d;
         q g0 = i4.g0("application/json; charset=utf-8");
         xVar.getClass();
-        l1Var.z("DELETE", x.a(z, g0));
+        l1Var.z("DELETE", xShadow.a(z, g0));
         return new androidx.lifecycle.b(l1Var);
     }
 

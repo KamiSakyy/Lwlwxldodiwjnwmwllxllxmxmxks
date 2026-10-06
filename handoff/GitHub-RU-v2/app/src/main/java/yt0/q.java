@@ -18,7 +18,7 @@ public abstract class q {
     static {
         pd.Companion.getClass();
         aa.r b = l0.b(pd.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("isViewer", b, (String) null, rVar, rVar, rVar);
         xd.Companion.getClass();
         x xVar = xd.a;

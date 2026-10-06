@@ -8,7 +8,7 @@ import jo.zf0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d00 implements aaShadow.a {
     public static final d00 a = new d00();
-    public static final List b = sy.d0.o("__typename", "subjectType", "pullRequest", "id");
+    public static final List b = sy.d0Shadow.o("__typename", "subjectType", "pullRequest", "id");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

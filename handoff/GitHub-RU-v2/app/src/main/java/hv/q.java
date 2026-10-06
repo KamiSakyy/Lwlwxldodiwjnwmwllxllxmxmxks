@@ -13,7 +13,7 @@ import m10.t5;
 import m10.tz;
 import m10.wg;
 import m10.zy;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -24,7 +24,7 @@ public abstract class q {
         ah.Companion.getClass();
         x xVar = ah.a;
         aa.r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         eh.Companion.getClass();
         x xVar2 = eh.a;
@@ -47,7 +47,7 @@ public abstract class q {
         aa.s mVar8 = new aa.m("viewerCanUnresolve", l0.b(xVar3), (String) null, rVar, rVar, rVar);
         t5.Companion.getClass();
         aa.s mVar9 = new aa.m("positioning", l0.b(t5.a), (String) null, rVar, rVar, r4);
-        List n = d0.n("PullRequestReviewThread");
+        List n = d0Shadow.n("PullRequestReviewThread");
         List list2 = ov.a.a;
         List r5 = x61.l.r(new aa.s[]{mVar3, mVar4, mVar5, mVar6, mVar7, mVar8, mVar9, no.a.c(list2, "selections", "PullRequestReviewThread", n, list2)});
         aa.s mVar10 = new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar);

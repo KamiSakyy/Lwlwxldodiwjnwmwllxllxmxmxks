@@ -6,6 +6,6 @@ public abstract class ri {
 
     static {
         rm.Companion.getClass();
-        new aa.q0("PdfFileType", x61.r.r, sy.d0.n(rm.a));
+        new aa.q0("PdfFileType", x61.rShadow.r, sy.d0Shadow.n(rm.a));
     }
 }

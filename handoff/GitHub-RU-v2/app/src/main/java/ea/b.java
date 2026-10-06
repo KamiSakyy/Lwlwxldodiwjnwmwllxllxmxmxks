@@ -11,9 +11,9 @@ import x61.m;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class b implements e {
-    public static final h91.k D;
-    public static final h91.k E;
-    public static final h91.k F;
+    public static final h91.kShadow D;
+    public static final h91.kShadow E;
+    public static final h91.kShadow F;
     public int[] A;
     public int[] B;
     public int C;
@@ -46,7 +46,7 @@ public final class b implements e {
     public String[] f22179z;
 
     static {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         D = c30.d.b("'\\");
         E = c30.d.b("\"\\");
         F = c30.d.b("{}[]:, \n\t\r/\\;#=");
@@ -68,7 +68,7 @@ public final class b implements e {
         this.C = 1;
     }
 
-    public final String A(h91.k kVar) {
+    public final String A(h91.kShadow kVar) {
         StringBuilder sb2 = null;
         while (true) {
             long q10 = this.f22171r.q(kVar);
@@ -245,7 +245,7 @@ public final class b implements e {
         return c10;
     }
 
-    public final void M(h91.k kVar) {
+    public final void M(h91.kShadow kVar) {
         while (true) {
             long q10 = this.f22171r.q(kVar);
             if (q10 == -1) {

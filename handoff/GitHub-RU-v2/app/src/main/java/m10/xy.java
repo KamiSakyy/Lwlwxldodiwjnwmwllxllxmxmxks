@@ -27,7 +27,7 @@ public final class xy {
         t = xyVarArr;
         v8.l0.t(xyVarArr);
         Companion = new wy();
-        sy.d0.o("BASE_REF", "COMMIT_HEAD_SHA", "DEPLOYED", "GIT_MERGE_STATE", "HEAD_REF", "MERGEABILITY", "MERGE_QUEUE", "PRESENCE", "REVIEW_STATE", "STATE", "TIMELINE", "UPDATED", "WORKFLOWS");
+        sy.d0Shadow.o("BASE_REF", "COMMIT_HEAD_SHA", "DEPLOYED", "GIT_MERGE_STATE", "HEAD_REF", "MERGEABILITY", "MERGE_QUEUE", "PRESENCE", "REVIEW_STATE", "STATE", "TIMELINE", "UPDATED", "WORKFLOWS");
     }
 
     public xy(String str, int i, String str2) {

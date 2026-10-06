@@ -91,7 +91,7 @@ public final class k0 {
                     }
                     sVar.r();
                     int a = (int) (((w2.s2) sVar.j(w2.g1.t)).a() >> 32);
-                    w1.r f3 = f0.o.f(rVar3, j3, d2.a0.b);
+                    w1.r f3 = f0.o.f(rVar3, j3, d2.a0Shadow.b);
                     boolean d = sVar.d(a);
                     Object N = sVar.N();
                     if (d || N == androidx.compose.runtime.n.a) {
@@ -269,7 +269,7 @@ public final class k0 {
                     sVar.q(false);
                     f11 = f4;
                 }
-                androidx.compose.foundation.layout.t.a(f0.o.f(androidx.compose.foundation.layout.p2.s(c, f11), j3, d2.a0.b), sVar, 0);
+                androidx.compose.foundation.layout.t.a(f0.o.f(androidx.compose.foundation.layout.p2.s(c, f11), j3, d2.a0Shadow.b), sVar, 0);
                 f7 = f9;
                 f8 = f4;
                 j2 = j3;

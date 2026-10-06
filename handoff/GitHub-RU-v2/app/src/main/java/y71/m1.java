@@ -84,7 +84,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
                             m1Var = m1Var2;
                             while (true) {
                                 u = m1Var.u(o1Var);
-                                if (u == n1.a) {
+                                if (u == n1Shadow.a) {
                                     l1Var.u = m1Var;
                                     l1Var.v = jVar2;
                                     l1Var.w = o1Var;
@@ -150,7 +150,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
                 d1Var = (v71.d1) hVar.w0(v71.w.s);
                 while (true) {
                     u = m1Var.u(o1Var);
-                    if (u == n1.a) {
+                    if (u == n1Shadow.a) {
                     }
                 }
             }
@@ -166,7 +166,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
         d1Var = (v71.d1) hVar2.w0(v71.w.s);
         while (true) {
             u = m1Var.u(o1Var);
-            if (u == n1.a) {
+            if (u == n1Shadow.a) {
             }
         }
     }
@@ -278,7 +278,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
                 long q = q();
                 int i = this.B;
                 int i2 = this.C;
-                if (objArr[((int) ((q + (i + i2)) - 1)) & (objArr.length - 1)] != n1.a) {
+                if (objArr[((int) ((q + (i + i2)) - 1)) & (objArr.length - 1)] != n1Shadow.a) {
                     return;
                 }
                 this.C = i2 - 1;
@@ -472,7 +472,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
             try {
                 long t = t(o1Var);
                 if (t < 0) {
-                    obj = n1.a;
+                    obj = n1Shadow.a;
                 } else {
                     long j = o1Var.a;
                     Object[] objArr = this.y;
@@ -518,7 +518,7 @@ public class m1 extends z71.a implements f1, i, z71.r {
         a71.c[] cVarArr;
         a71.c[] cVarArr2;
         z71.c[] cVarArr3;
-        a81.t tVar = n1.a;
+        a81.t tVar = n1Shadow.a;
         a71.c[] cVarArr4 = z71.b.a;
         if (j <= this.A) {
             long q = q();

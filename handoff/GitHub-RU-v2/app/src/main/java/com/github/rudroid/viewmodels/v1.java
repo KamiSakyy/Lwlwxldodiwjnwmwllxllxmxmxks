@@ -31,7 +31,7 @@ public final class v1 extends w3 {
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new r1(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new r1(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.w3
@@ -43,7 +43,7 @@ public final class v1 extends w3 {
     public final void Q() {
         v71.q1 q1Var = this.A;
         if (q1Var != null && q1Var.f()) {
-            this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u1(this, null), 3);
+            this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u1(this, null), 3);
             return;
         }
         v71.q1 q1Var2 = this.A;
@@ -56,7 +56,7 @@ public final class v1 extends w3 {
         List list = fVar != null ? (List) fVar.b : null;
         eVar.getClass();
         p0Var.j(fl.e.b(list));
-        this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new o1(this, null), 3);
+        this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new o1(this, null), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.x3

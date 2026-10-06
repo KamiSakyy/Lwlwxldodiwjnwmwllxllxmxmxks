@@ -47,7 +47,7 @@ public final class CopilotManageSubscriptionActivity extends i0 {
     public CopilotManageSubscriptionActivity() {
         this.s0 = false;
         C(new h0(this));
-        this.v0 = new l1(k71.x.a(b0.class), new c(), new b(), new d());
+        this.v0 = new l1(k71.xShadow.a(b0.class), new c(), new b(), new d());
     }
 
     public final b0 J0() {
@@ -63,7 +63,7 @@ public final class CopilotManageSubscriptionActivity extends i0 {
                 k71.k.g(bVar, "result");
                 if (bVar.a) {
                     CopilotManageSubscriptionActivity copilotManageSubscriptionActivity = CopilotManageSubscriptionActivity.this;
-                    v71.b0.z(d1.i(copilotManageSubscriptionActivity), (a71.h) null, (v71.a0) null, new r(copilotManageSubscriptionActivity, null), 3);
+                    v71.b0.z(d1.i(copilotManageSubscriptionActivity), (a71.h) null, (v71.a0Shadow) null, new r(copilotManageSubscriptionActivity, null), 3);
                 }
             }
         }, new com.github.rudroid.settings.copilot.paywall.j(w0()));

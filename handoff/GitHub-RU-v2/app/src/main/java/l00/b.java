@@ -20,7 +20,7 @@ public abstract class b {
         wg.Companion.getClass();
         x xVar = wg.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         List r = x61.l.r(new m[]{new m("scheduledNotifications", b, (String) null, rVar, rVar, rVar), new m("getsDirectMentions", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsAssignments", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsReviewRequests", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsDeploymentRequests", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsPullRequestReviews", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsCiActivity", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsCiFailedOnly", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsReleases", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("getsLiveActivityCopilotCodingAgentV2", xVar, (String) null, rVar, rVar, rVar)});
         kp.Companion.getClass();
         q0 q0Var = kp.a;

@@ -34,7 +34,7 @@ public final class g8 extends androidx.lifecycle.k1 implements com.github.rudroi
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
         com.github.rudroid.utilities.ui.h0 a = g1.a.a();
         x61.t tVar = x61.t.r;
-        y71.y1 c = y71.n1.c(new y7(a, false, tVar, tVar));
+        y71.y1 c = y71.n1Shadow.c(new y7(a, false, tVar, tVar));
         this.x = c;
         this.y = c;
         this.z = com.github.rudroid.utilities.w0.f(c, androidx.lifecycle.d1.k(this), new z7(this, 0));
@@ -66,7 +66,7 @@ public final class g8 extends androidx.lifecycle.k1 implements com.github.rudroi
             if (d1Var != null) {
                 d1Var.m((CancellationException) null);
             }
-            linkedHashMap.put(str, v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new c8(this, str, null), 3));
+            linkedHashMap.put(str, v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c8(this, str, null), 3));
         }
     }
 
@@ -95,7 +95,7 @@ public final class g8 extends androidx.lifecycle.k1 implements com.github.rudroi
                 h01.o oVar2 = (h01.o) ((y7) y1Var.getValue()).a.getData();
                 List list = oVar2 != null ? oVar2.b : null;
                 if (list == null) {
-                    list = x61.r.r;
+                    list = x61.rShadow.r;
                 }
                 LinkedHashSet n = sy.f0.n(P(str, list), str);
                 do {
@@ -112,7 +112,7 @@ public final class g8 extends androidx.lifecycle.k1 implements com.github.rudroi
             }
             v71.d1 d1Var = (v71.d1) linkedHashMap.get(str);
             if (d1Var == null || !d1Var.f()) {
-                linkedHashMap.put(str, v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new f8(this, str, set, i2, null), 3));
+                linkedHashMap.put(str, v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f8(this, str, set, i2, null), 3));
             }
         }
     }

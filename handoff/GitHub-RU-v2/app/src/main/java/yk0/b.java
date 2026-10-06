@@ -8,7 +8,7 @@ import gn0.rb;
 import gn0.s00;
 import gn0.tb;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -19,8 +19,8 @@ public abstract class b {
     static {
         rb.Companion.getClass();
         r b = l0.b(rb.a);
-        x61.r rVar = x61.r.r;
-        List n = d0.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = d0Shadow.n(new m("totalCount", b, (String) null, rVar, rVar, rVar));
         pb.Companion.getClass();
         m mVar = new m("id", l0.b(pb.a), (String) null, rVar, rVar, rVar);
         mv.Companion.getClass();
@@ -28,6 +28,6 @@ public abstract class b {
         tb.Companion.getClass();
         List r = l.r(new m[]{mVar, mVar2, new m("__typename", l0.b(tb.a), (String) null, rVar, rVar, rVar)});
         s00.Companion.getClass();
-        a = d0.n(new m("viewer", l0.b(s00.P), (String) null, rVar, rVar, r));
+        a = d0Shadow.n(new m("viewer", l0.b(s00.P), (String) null, rVar, rVar, r));
     }
 }

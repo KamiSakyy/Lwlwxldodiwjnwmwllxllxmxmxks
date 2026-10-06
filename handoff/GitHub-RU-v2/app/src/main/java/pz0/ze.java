@@ -19,7 +19,7 @@ public final class ze {
         t = zeVarArr;
         v8.l0.t(zeVarArr);
         Companion = new ye();
-        sy.d0.o(new String[]{"CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED"});
+        sy.d0Shadow.o(new String[]{"CLOSE_REFERENCES", "STATE", "TIMELINE", "UPDATED"});
     }
 
     public ze(String str, int i, String str2) {

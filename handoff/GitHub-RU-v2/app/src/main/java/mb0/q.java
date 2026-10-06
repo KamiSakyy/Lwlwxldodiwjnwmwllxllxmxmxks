@@ -2,7 +2,7 @@ package mb0;
 
 import hc0.wg;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.n0 {
@@ -20,7 +20,7 @@ public final class q implements aa.n0 {
         List list = ob0.c.a;
         List list2 = ob0.c.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -59,6 +59,6 @@ public final class q implements aa.n0 {
     }
 
     public final String toString() {
-        return f4.j(this.r, "UpdateCIActivityFailedOnlyNotificationSettingsMutation(enabled=", ")");
+        return f4Shadow.j(this.r, "UpdateCIActivityFailedOnlyNotificationSettingsMutation(enabled=", ")");
     }
 }

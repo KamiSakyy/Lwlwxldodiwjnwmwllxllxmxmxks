@@ -15,7 +15,7 @@ import gn0.tb;
 import gn0.wh;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -26,7 +26,7 @@ public abstract class f {
     static {
         pb.Companion.getClass();
         r b = l0.b(pb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         lb.Companion.getClass();
         x xVar = lb.a;
@@ -37,11 +37,11 @@ public abstract class f {
         hc.Companion.getClass();
         q0 q0Var = hc.x;
         k.g(q0Var, "type");
-        List n = d0.n(new m("issue", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("issue", q0Var, (String) null, rVar, rVar, r));
         ry.Companion.getClass();
         q0 q0Var2 = ry.a;
         k.g(q0Var2, "type");
         wh.Companion.getClass();
-        a = d0.n(new m("unpinIssue", q0Var2, (String) null, rVar, no.a.s(wh.J0, new u0(s0.p("issueId", new t("issueId")))), n));
+        a = d0Shadow.n(new m("unpinIssue", q0Var2, (String) null, rVar, no.a.s(wh.J0, new u0(s0.p("issueId", new t("issueId")))), n));
     }
 }

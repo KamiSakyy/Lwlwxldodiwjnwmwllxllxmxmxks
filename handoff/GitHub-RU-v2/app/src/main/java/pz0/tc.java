@@ -6,6 +6,6 @@ public abstract class tc {
 
     static {
         ac.Companion.getClass();
-        new aa.q0("FollowedUserFeedItem", x61.r.r, sy.d0.n(ac.a));
+        new aa.q0("FollowedUserFeedItem", x61.rShadow.r, sy.d0Shadow.n(ac.a));
     }
 }

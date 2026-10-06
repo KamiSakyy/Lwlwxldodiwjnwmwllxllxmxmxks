@@ -16,7 +16,7 @@ import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import java.util.RandomAccess;
 import java.util.Set;
-import sy.d0;
+import sy.d0Shadow;
 import sy.f0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -395,7 +395,7 @@ public abstract class m extends p {
         sb.append(charSequence3);
     }
 
-    public static /* synthetic */ void b0(List list, StringBuilder sb, h1.r rVar, int i) {
+    public static /* synthetic */ void b0(List list, StringBuilder sb, h1.rShadow rVar, int i) {
         if ((i & 64) != 0) {
             rVar = null;
         }

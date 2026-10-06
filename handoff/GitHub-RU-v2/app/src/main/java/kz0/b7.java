@@ -15,7 +15,7 @@ public abstract class b7 {
         td.Companion.getClass();
         aa.x xVar = td.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("id", b, (String) null, rVar, rVar, rVar);
         pd.Companion.getClass();
         aa.m mVar2 = new aa.m("viewerCanPush", v8.l0.b(pd.a), (String) null, rVar, rVar, rVar);

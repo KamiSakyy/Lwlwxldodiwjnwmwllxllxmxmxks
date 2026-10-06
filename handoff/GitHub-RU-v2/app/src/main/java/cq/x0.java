@@ -5,7 +5,7 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class x0 implements aa.a {
-    public static final List a = sy.d0.n("__typename");
+    public static final List a = sy.d0Shadow.n("__typename");
 
     public static w0 c(ea.e eVar, aa.w wVar) {
         w wVar2;

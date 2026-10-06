@@ -4,11 +4,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w {
-    public a0 a;
+    public a0Shadow a;
     public String b;
     public String c;
 
-    public w(a0 a0Var, String str, String str2) {
+    public w(a0Shadow a0Var, String str, String str2) {
         this.a = a0Var;
         this.b = str;
         this.c = str2;

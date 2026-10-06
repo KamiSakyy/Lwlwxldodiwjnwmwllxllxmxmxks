@@ -15,7 +15,7 @@ import gn0.tb;
 import gn0.wh;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -27,7 +27,7 @@ public abstract class d {
         lb.Companion.getClass();
         x xVar = lb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         List r = l.r(new m[]{new m("getsCiFailedOnly", b, (String) null, rVar, rVar, rVar), new m("getsCiActivity", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         nh.Companion.getClass();
         q0 q0Var = nh.a;
@@ -47,6 +47,6 @@ public abstract class d {
         q0 q0Var3 = qz.a;
         k.g(q0Var3, "type");
         wh.Companion.getClass();
-        a = d0.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(wh.R0, new u0(x61.x.u(new w61.k("getCiActivity", new t("enabled")), new w61.k("getCiFailedOnly", new t("enabled"))))), r3));
+        a = d0Shadow.n(new m("updateMobilePushNotificationSettings", q0Var3, (String) null, rVar, no.a.s(wh.R0, new u0(x61.x.u(new w61.k("getCiActivity", new t("enabled")), new w61.k("getCiFailedOnly", new t("enabled"))))), r3));
     }
 }

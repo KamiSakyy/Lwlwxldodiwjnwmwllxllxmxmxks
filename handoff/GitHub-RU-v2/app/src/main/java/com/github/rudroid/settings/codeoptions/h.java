@@ -35,7 +35,7 @@ public final /* synthetic */ class h implements j71.e {
                 CodeOptionsActivity.a aVar = CodeOptionsActivity.Companion;
                 k71.k.g(eVar, "value");
                 a0 a0Var2 = (a0) codeOptionsActivity.u0.getValue();
-                v71.b0.z(d1.k(a0Var2), (a71.h) null, (v71.a0) null, new z(a0Var2, bool, eVar, null), 3);
+                v71.b0.z(d1.k(a0Var2), (a71.h) null, (v71.a0Shadow) null, new z(a0Var2, bool, eVar, null), 3);
                 return a0Var;
             case 1:
                 Integer num = (Integer) obj;
@@ -44,7 +44,7 @@ public final /* synthetic */ class h implements j71.e {
                 CodeOptionsActivity.a aVar2 = CodeOptionsActivity.Companion;
                 k71.k.g(eVar2, "value");
                 a0 a0Var3 = (a0) codeOptionsActivity.u0.getValue();
-                v71.b0.z(d1.k(a0Var3), (a71.h) null, (v71.a0) null, new z(a0Var3, num, eVar2, null), 3);
+                v71.b0.z(d1.k(a0Var3), (a71.h) null, (v71.a0Shadow) null, new z(a0Var3, num, eVar2, null), 3);
                 return a0Var;
             case 2:
                 androidx.compose.runtime.s sVar = (androidx.compose.runtime.s) obj;
@@ -84,7 +84,7 @@ public final /* synthetic */ class h implements j71.e {
                     };
                     sVar2.n0(aVar6);
                     obj3 = aVar6;
-                    qg.p.c(null, p0, null, 0L, (j71.a) obj3, 0, 0.0f, 0.0f, 0, 0, null, sVar2, 0, 0, 2029);
+                    qg.pShadow.c(null, p0, null, 0L, (j71.a) obj3, 0, 0.0f, 0.0f, 0, 0, null, sVar2, 0, 0, 2029);
                 } else {
                     sVar2.V();
                 }

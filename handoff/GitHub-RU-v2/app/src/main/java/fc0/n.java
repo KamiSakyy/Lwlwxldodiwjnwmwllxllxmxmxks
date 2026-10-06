@@ -12,12 +12,12 @@ public abstract class n {
         fb.Companion.getClass();
         aa.x xVar = fb.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
-        List n = sy.d0.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
+        x61.rShadow rVar = x61.rShadow.r;
+        List n = sy.d0Shadow.n(new aa.m("clientMutationId", xVar, (String) null, rVar, rVar, rVar));
         hc0.p0.Companion.getClass();
         aa.q0 q0Var = hc0.p0.a;
         k71.k.g(q0Var, "type");
         wg.Companion.getClass();
-        a = sy.d0.n(new aa.m("approveActionRequiredWorkflowRuns", q0Var, (String) null, rVar, no.a.s(wg.l, new aa.u0(a0.s0.p("pullRequestId", new aa.t("pull_id")))), n));
+        a = sy.d0Shadow.n(new aa.m("approveActionRequiredWorkflowRuns", q0Var, (String) null, rVar, no.a.s(wg.l, new aa.u0(a0.s0.p("pullRequestId", new aa.t("pull_id")))), n));
     }
 }

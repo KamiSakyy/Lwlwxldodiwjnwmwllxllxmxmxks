@@ -11,8 +11,8 @@ public abstract class xl {
     public static final aa.q0 d;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        d = new aa.q0("PullRequestReviewThread", n, sy.d0.n(yg.a));
+        d = new aa.q0("PullRequestReviewThread", n, sy.d0Shadow.n(yg.a));
     }
 }

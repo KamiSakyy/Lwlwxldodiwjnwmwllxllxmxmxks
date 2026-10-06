@@ -1,7 +1,7 @@
 package mn0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class o0 implements aa.a {
@@ -11,7 +11,7 @@ public abstract class o0 implements aa.a {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
-        x xVar = null;
+        xShadow xVar = null;
         Integer num = null;
         String str2 = null;
         while (true) {
@@ -19,7 +19,7 @@ public abstract class o0 implements aa.a {
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                xVar = (x) aa.c.c(e1.a, false).a(eVar, wVar);
+                xVar = (xShadow) aa.c.c(e1.a, false).a(eVar, wVar);
             } else if (r0 == 2) {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {

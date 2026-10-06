@@ -7,6 +7,6 @@ public abstract class o {
     public static final /* synthetic */ int f33602a = 0;
 
     static {
-        new y(0);
+        new yShadow(0);
     }
 }

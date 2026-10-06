@@ -7,7 +7,7 @@ public abstract class rq {
     public static final qq Companion = new qq();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
         aa.j0 j0Var = yg.a;
         zp.Companion.getClass();

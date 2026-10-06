@@ -6,6 +6,6 @@ public abstract class cx {
 
     static {
         ax.Companion.getClass();
-        new aa.q0("TextFileType", x61.r.r, sy.d0.n(ax.a));
+        new aa.q0("TextFileType", x61.rShadow.r, sy.d0Shadow.n(ax.a));
     }
 }

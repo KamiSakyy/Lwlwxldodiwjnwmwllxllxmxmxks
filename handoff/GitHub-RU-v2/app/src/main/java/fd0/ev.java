@@ -7,7 +7,7 @@ import kc0.g90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ev implements aaShadow.a {
     public static final ev a = new ev();
-    public static final List b = sy.d0.n("updateMobilePushNotificationSchedules");
+    public static final List b = sy.d0Shadow.n("updateMobilePushNotificationSchedules");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

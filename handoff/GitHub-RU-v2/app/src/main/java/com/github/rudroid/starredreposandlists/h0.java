@@ -5,7 +5,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.viewmodels.v3;
 import java.util.concurrent.CancellationException;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -24,7 +24,7 @@ public final class h0 extends androidx.lifecycle.k1 implements v3 {
 
     static {
         r71.e mVar = new k71.m(h0.class, "searchQuery", "getSearchQuery()Ljava/lang/String;", 0);
-        k71.x.a.getClass();
+        k71.xShadow.a.getClass();
         C = new r71.e[]{mVar};
     }
 
@@ -37,18 +37,18 @@ public final class h0 extends androidx.lifecycle.k1 implements v3 {
         this.t = mVar;
         this.u = cVar;
         this.v = wVar;
-        this.w = (StarredReposAndListsRoute) sy.y.m(a1Var, k71.x.a(StarredReposAndListsRoute.class), x61.s.r);
+        this.w = (StarredReposAndListsRoute) sy.y.m(a1Var, k71.xShadow.a(StarredReposAndListsRoute.class), x61.s.r);
         x01.i.Companion.getClass();
         this.x = x01.i.d;
         this.y = new g0(this);
-        y1 c = n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y1 c = n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.A = c;
         this.B = com.github.rudroid.utilities.w0.f(c, androidx.lifecycle.d1.k(this), new y(this, 0));
     }
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new f0(this, null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new f0(this, null), 3);
     }
 
     public final void P(com.github.rudroid.utilities.ui.s0 s0Var) {
@@ -56,7 +56,7 @@ public final class h0 extends androidx.lifecycle.k1 implements v3 {
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.z = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new c0(this, s0Var, null), 3);
+        this.z = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new c0(this, s0Var, null), 3);
     }
 
     public final void Q(xz0.h hVar) {

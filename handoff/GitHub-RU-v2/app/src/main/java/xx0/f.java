@@ -13,7 +13,7 @@ import pz0.vd;
 import pz0.xd;
 import pz0.xq;
 import pz0.zq;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,12 +25,12 @@ public abstract class f {
         xd.Companion.getClass();
         x xVar = xd.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
-        List n = d0.n("ProjectV2IterationFieldIteration");
+        List n = d0Shadow.n("ProjectV2IterationFieldIteration");
         List list = g.a;
         List r = l.r(new s[]{mVar, no.a.c(list, "selections", "ProjectV2IterationFieldIteration", n, list)});
-        List r2 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("ProjectV2IterationFieldIteration", d0.n("ProjectV2IterationFieldIteration"), list)});
+        List r2 = l.r(new s[]{new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("ProjectV2IterationFieldIteration", d0Shadow.n("ProjectV2IterationFieldIteration"), list)});
         vd.Companion.getClass();
         x xVar2 = vd.a;
         m mVar2 = new m("duration", l0.b(xVar2), (String) null, rVar, rVar, rVar);

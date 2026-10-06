@@ -65,15 +65,15 @@ public final class c1 extends androidx.lifecycle.a implements com.github.rudroid
             throw new IllegalStateException("Invalid initialization. Call applyProjectViewModelParameters please.");
         }
         this.A = str2;
-        y71.y1 c10 = y71.n1.c("");
+        y71.y1 c10 = y71.n1Shadow.c("");
         this.B = c10;
         this.C = new y71.i1(c10);
-        y71.y1 c11 = y71.n1.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
+        y71.y1 c11 = y71.n1Shadow.c(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
         this.D = c11;
         this.E = com.github.rudroid.utilities.w0.f(c11, androidx.lifecycle.d1.k(this), new b1(this, 0));
         this.F = new b1(this, 1);
         Q();
-        y71.n1.A(new y71.y(y71.n1.o(c10, 250L), new i1(this, null), 6), androidx.lifecycle.d1.k(this));
+        y71.n1Shadow.A(new y71.y(y71.n1Shadow.o(c10, 250L), new i1(this, null), 6), androidx.lifecycle.d1.k(this));
     }
 
     public final void Q() {
@@ -81,7 +81,7 @@ public final class c1 extends androidx.lifecycle.a implements com.github.rudroid
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.G = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new h1(this, null), 3);
+        this.G = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new h1(this, null), 3);
     }
 
     public final void R(String str) {

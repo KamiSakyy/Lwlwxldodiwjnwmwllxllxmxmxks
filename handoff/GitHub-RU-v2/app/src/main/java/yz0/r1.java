@@ -43,6 +43,6 @@ public final class r1 {
         sb.append(this.b);
         sb.append(", branchOrCommitName=");
         f1.e.x(sb, this.c, ", path=", this.d, ", isInRef=");
-        return jo.f4.s(sb, this.e, ")");
+        return jo.f4Shadow.s(sb, this.e, ")");
     }
 }

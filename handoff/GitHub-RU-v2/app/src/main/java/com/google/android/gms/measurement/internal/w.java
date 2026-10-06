@@ -12,7 +12,7 @@ public final class w extends d21.a {
     public long u;
 
     public w(w wVar, long j) {
-        c21.u.g(wVar);
+        c21.uShadow.g(wVar);
         this.r = wVar.r;
         this.s = wVar.s;
         this.t = wVar.t;

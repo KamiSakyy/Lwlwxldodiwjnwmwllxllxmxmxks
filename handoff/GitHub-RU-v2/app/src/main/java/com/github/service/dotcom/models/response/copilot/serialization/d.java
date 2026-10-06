@@ -1,14 +1,14 @@
 package com.github.service.dotcom.models.response.copilot.serialization;
 
 import k71.k;
-import k71.x;
+import k71.xShadow;
 import k81.n0;
 import kotlinx.serialization.KSerializer;
 import l81.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d extends n0 {
-    public static final d d = new d(x.a(c.class));
+    public static final d d = new d(xShadow.a(c.class));
 
     /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue
     java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because the return value of "jadx.core.dex.visitors.regions.SwitchOverStringVisitor$SwitchData.getNewCases()" is null

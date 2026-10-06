@@ -10,7 +10,7 @@ import com.github.rudroid.utilities.ui.t1;
 import com.github.rudroid.viewmodels.v3;
 import java.util.List;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -35,21 +35,21 @@ public final class s0 extends k1 implements v3 {
         this.t = bVar2;
         this.u = cVar;
         this.v = c0Var;
-        ListDetailRoute listDetailRoute = (ListDetailRoute) sy.y.m(a1Var, k71.x.a(ListDetailRoute.class), x61.s.r);
+        ListDetailRoute listDetailRoute = (ListDetailRoute) sy.y.m(a1Var, k71.xShadow.a(ListDetailRoute.class), x61.s.r);
         this.w = listDetailRoute;
         x01.i.Companion.getClass();
         this.x = x01.i.d;
-        y1 c = n1.c(listDetailRoute.b);
+        y1 c = n1Shadow.c(listDetailRoute.b);
         this.y = c;
         this.z = new i1(c);
-        this.A = n1.c(g1.a.c(g1.Companion));
-        this.B = n1.c(new com.github.rudroid.utilities.ui.u0(null));
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new o0(null, this, false), 3);
+        this.A = n1Shadow.c(g1.a.c(g1.Companion));
+        this.B = n1Shadow.c(new com.github.rudroid.utilities.ui.u0(null));
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new o0(null, this, false), 3);
     }
 
     @Override // com.github.rudroid.viewmodels.v3
     public final void D() {
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new r0(this, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new r0(this, null), 3);
     }
 
     public final void P(boolean z) {

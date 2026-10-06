@@ -7,10 +7,10 @@ import com.github.rudroid.issueorpullrequest.selectissue.n0;
 import com.github.rudroid.utilities.h2;
 import com.github.rudroid.utilities.ui.g1;
 import java.util.List;
-import v71.a0;
+import v71.a0Shadow;
 import v71.b0;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.w1;
 import y71.y1;
 import zk.h1;
@@ -60,7 +60,7 @@ public final class a extends k1 implements com.github.rudroid.utilities.viewmode
         this.f16057w = a1Var.b("EXTRA_PARENT_ISSUE");
         this.f16058x = (String) h2.a(a1Var, "EXTRA_ISSUE_ID_TO_CHANGE_PARENT_OF");
         g1.Companion.getClass();
-        y1 c10 = n1.c(g1.a.a());
+        y1 c10 = n1Shadow.c(g1.a.a());
         this.f16059y = c10;
         this.f16060z = new i1(c10);
     }
@@ -74,12 +74,12 @@ public final class a extends k1 implements com.github.rudroid.utilities.viewmode
     @Override // com.github.rudroid.issueorpullrequest.selectissue.n0
     public final void v(List list) {
         if (list.isEmpty()) {
-            b0.z(d1.k(this), (a71.h) null, (a0) null, new h(this, null), 3);
+            b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new h(this, null), 3);
             return;
         }
         oe.m mVar = (oe.m) x61.m.U(list);
         k71.k.g(mVar, "<this>");
-        b0.z(d1.k(this), (a71.h) null, (a0) null, new e(this, new h01.j(mVar.f30182r, mVar.f30183s, mVar.f30184t, mVar.f30185u, mVar.f30186v, mVar.f30187w, mVar.f30188x, mVar.f30189y), null), 3);
+        b0.z(d1.k(this), (a71.h) null, (a0Shadow) null, new e(this, new h01.j(mVar.f30182r, mVar.f30183s, mVar.f30184t, mVar.f30185u, mVar.f30186v, mVar.f30187w, mVar.f30188x, mVar.f30189y), null), 3);
     }
 
     @Override // com.github.rudroid.issueorpullrequest.selectissue.n0

@@ -7,7 +7,7 @@ import kc0.i50;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ls implements aaShadow.a {
     public static final ls a = new ls();
-    public static final List b = sy.d0.o(new String[]{"__typename", "subscribable"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "subscribable"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

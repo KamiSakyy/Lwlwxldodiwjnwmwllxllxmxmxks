@@ -97,9 +97,9 @@ public final class u {
         sb2.append(", type=");
         sb2.append((Object) d0.a(this.i));
         sb2.append(", historical=");
-        x61.r rVar = this.f30899k;
+        x61.rShadow rVar = this.f30899k;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         sb2.append(rVar);
         sb2.append(",scrollDelta=");

@@ -5,7 +5,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import androidx.fragment.app.DialogFragment;
-import c21.u;
+import c21.uShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class SupportErrorDialogFragment extends DialogFragment {
@@ -28,7 +28,7 @@ public class SupportErrorDialogFragment extends DialogFragment {
         ((DialogFragment) this).A0 = false;
         if (this.L0 == null) {
             Context y3 = y3();
-            u.g(y3);
+            uShadow.g(y3);
             this.L0 = new AlertDialog.Builder(y3).create();
         }
         return this.L0;

@@ -205,8 +205,8 @@ public final class g2 extends p {
                                         String sb2 = sb.toString();
                                         o1 o1Var6 = (o1) ((androidx.compose.foundation.lazy.layout.s0) t4Var2).s;
                                         try {
-                                            c21.u.d(str5);
-                                            c21.u.d(F);
+                                            c21.uShadow.d(str5);
+                                            c21.uShadow.d(F);
                                             String str6 = "https://www.googleadservices.com/pagead/conversion/app/deeplink?id_type=adid&sdk_version=" + ("v133005." + t4Var2.g0()) + "&rdid=" + str5 + "&bundleid=" + F + "&retry=" + a2;
                                             if (F.equals(o1Var6.u.D("debug.deferred.deeplink"))) {
                                                 str6 = str6.concat("&ddl_test=1");

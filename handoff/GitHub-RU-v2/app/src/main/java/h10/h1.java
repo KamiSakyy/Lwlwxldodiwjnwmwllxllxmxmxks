@@ -14,7 +14,7 @@ public abstract class h1 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         aa.r b = v8.l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("link", b, (String) null, rVar, rVar, rVar);
         gb0.Companion.getClass();
         List r = x61.l.r(new aa.m[]{mVar, new aa.m("linkType", v8.l0.b(gb0.s), (String) null, rVar, rVar, rVar)});

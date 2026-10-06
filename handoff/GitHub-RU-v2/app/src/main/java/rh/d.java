@@ -61,7 +61,7 @@ public final class d extends f {
         }
     }
 
-    public static final class c implements d {
+    public static final class cShadow implements d {
         public fl.b a;
 
         public c(fl.b bVar) {
@@ -78,7 +78,7 @@ public final class d extends f {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof c) && k71.k.b(this.a, ((c) obj).a);
+            return (obj instanceof cShadow) && k71.k.b(this.a, ((cShadow) obj).a);
         }
 
         public final int hashCode() {

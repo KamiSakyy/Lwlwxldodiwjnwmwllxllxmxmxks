@@ -32,7 +32,7 @@ public final class fr {
         y = frVarArr;
         z = v8.l0.t(frVarArr);
         Companion = new er();
-        sy.d0.o(new String[]{"CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT"});
+        sy.d0Shadow.o(new String[]{"CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT"});
     }
 
     public fr(String str, int i, String str2) {

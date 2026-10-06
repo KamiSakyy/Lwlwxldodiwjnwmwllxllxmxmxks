@@ -20,7 +20,7 @@ import m10.mr;
 import m10.p00;
 import m10.rf0;
 import m10.wg;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -32,7 +32,7 @@ public abstract class d {
         eh.Companion.getClass();
         x xVar = eh.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = fq.a.a;
@@ -43,10 +43,10 @@ public abstract class d {
         wg.Companion.getClass();
         List r3 = l.r(new m[]{new m("hasNextPage", l0.b(wg.a), (String) null, rVar, rVar, rVar), new m("endCursor", xVar, (String) null, rVar, rVar, rVar)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Repository");
+        List n = d0Shadow.n("Repository");
         List list2 = j.a;
         s c2 = no.a.c(list2, "selections", "Repository", n, list2);
-        List n2 = d0.n("Repository");
+        List n2 = d0Shadow.n("Repository");
         List list3 = ew.b.a;
         List r4 = l.r(new s[]{mVar2, c2, no.a.c(list3, "selections", "Repository", n2, list3)});
         mr.Companion.getClass();

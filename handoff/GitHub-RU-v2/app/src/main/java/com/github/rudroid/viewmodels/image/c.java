@@ -16,7 +16,7 @@ import q81.u;
 import t00.f8;
 import v71.z;
 import w61.a0;
-import y71.n1;
+import y71.n1Shadow;
 import y71.s;
 import y71.y;
 
@@ -72,7 +72,7 @@ final class c extends j implements j71.e {
             a71.c cVar2 = null;
             try {
                 t H = i4.H(contentResolver, uri);
-                f8Var = new y(n1.y(new s(new f8(new m0(null, H, n0Var, str)), new cn.f(n0Var, cVar2, 3)), n0Var.b), new m(n0Var, H, cVar2, 7));
+                f8Var = new y(n1Shadow.y(new s(new f8(new m0(null, H, n0Var, str)), new cn.f(n0Var, cVar2, 3)), n0Var.b), new m(n0Var, H, cVar2, 7));
             } catch (Throwable th2) {
                 aVar4.b("MediaFileUpload", th2, true);
                 k.g("failure : " + th2, "errorMessage");

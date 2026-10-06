@@ -22,7 +22,7 @@ public final class wx {
         v = wxVarArr;
         v8.l0.t(wxVarArr);
         Companion = new vx();
-        sy.d0.o("MERGE", "REBASE");
+        sy.d0Shadow.o("MERGE", "REBASE");
     }
 
     public wx(String str, int i, String str2) {

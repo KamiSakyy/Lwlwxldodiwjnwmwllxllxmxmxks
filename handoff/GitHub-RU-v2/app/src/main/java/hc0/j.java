@@ -9,8 +9,8 @@ public abstract class j {
     public static final aa.q0 b;
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        b = new aa.q0("AchievementTier", n, sy.d0.n(yg.a));
+        b = new aa.q0("AchievementTier", n, sy.d0Shadow.n(yg.a));
     }
 }

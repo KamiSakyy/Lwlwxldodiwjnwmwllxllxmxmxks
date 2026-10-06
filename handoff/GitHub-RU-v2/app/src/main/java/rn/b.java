@@ -65,7 +65,7 @@ public final class b extends com.google.common.util.concurrent.a {
         ((z) obj).q().m("APOLLO_ALIVE_SERVICE_IO");
     }
 
-    public final void J(h0 h0Var, h91.k kVar) {
+    public final void J(h0 h0Var, h91.kShadow kVar) {
         k.g("onMessage bytes (skipping because not supported for now) " + kVar, "message");
     }
 

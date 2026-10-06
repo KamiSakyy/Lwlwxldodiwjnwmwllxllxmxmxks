@@ -18,7 +18,7 @@ import q81.a0;
 import q81.n;
 import q81.o;
 import q81.u;
-import q81.v;
+import q81.vShadow;
 import q81.z;
 import r81.g;
 
@@ -119,7 +119,7 @@ public final class f implements v81.e {
             o1 l = sy.e0.l(P);
             int i2 = l.b;
             z zVar = new z();
-            zVar.b = (v) l.c;
+            zVar.b = (vShadow) l.c;
             zVar.c = i2;
             zVar.d = (String) l.d;
             zVar.f = cVar.l().d();

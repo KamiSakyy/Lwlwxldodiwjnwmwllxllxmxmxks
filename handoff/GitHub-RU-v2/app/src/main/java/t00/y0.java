@@ -3,7 +3,7 @@ package t00;
 import jo.jc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class y0 extends c71.c {
+public final class y0Shadow extends c71.c {
     public int A;
     public int B;
     public /* synthetic */ Object u;

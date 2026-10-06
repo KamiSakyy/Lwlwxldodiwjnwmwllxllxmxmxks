@@ -32,7 +32,7 @@ public final class j40 {
         y = j40VarArr;
         z = v8.l0.t(j40VarArr);
         Companion = new i40();
-        sy.d0.o("CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT");
+        sy.d0Shadow.o("CREATED_AT", "NAME", "PUSHED_AT", "STARGAZERS", "UPDATED_AT");
     }
 
     public j40(String str, int i, String str2) {

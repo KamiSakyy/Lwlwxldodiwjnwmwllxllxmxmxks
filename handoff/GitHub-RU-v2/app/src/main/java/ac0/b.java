@@ -16,7 +16,7 @@ import u10.y90;
 import v71.v;
 import w51.r;
 import wa.g;
-import y71.n1;
+import y71.n1Shadow;
 import z01.e1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -67,11 +67,11 @@ public final class b implements e1, y90, yf0, yb0 {
     public final y71.i a() {
         switch (this.r) {
             case 0:
-                return n1.y(d11.b.b(d11.a.t, new a(this, null, 0)), this.s);
+                return n1Shadow.y(d11.b.b(d11.a.t, new a(this, null, 0)), this.s);
             case 1:
-                return n1.y(d11.b.b(d11.a.t, new dz0.a(this, null, 0)), this.s);
+                return n1Shadow.y(d11.b.b(d11.a.t, new dz0.a(this, null, 0)), this.s);
             default:
-                return n1.y(d11.b.b(d11.a.t, new wm0.a(this, null, 0)), this.s);
+                return n1Shadow.y(d11.b.b(d11.a.t, new wm0.a(this, null, 0)), this.s);
         }
     }
 
@@ -79,11 +79,11 @@ public final class b implements e1, y90, yf0, yb0 {
     public final y71.i b(CreateRepositoryInput createRepositoryInput) {
         switch (this.r) {
             case 0:
-                return n1.y(d11.b.b(d11.b.a, new a10.b(this, createRepositoryInput, (c) null, 1)), this.s);
+                return n1Shadow.y(d11.b.b(d11.b.a, new a10.b(this, createRepositoryInput, (c) null, 1)), this.s);
             case 1:
-                return n1.y(d11.b.b(d11.b.a, new a10.b(this, createRepositoryInput, (c) null, 4)), this.s);
+                return n1Shadow.y(d11.b.b(d11.b.a, new a10.b(this, createRepositoryInput, (c) null, 4)), this.s);
             default:
-                return n1.y(d11.b.b(d11.b.a, new a10.b(this, createRepositoryInput, (c) null, 13)), this.s);
+                return n1Shadow.y(d11.b.b(d11.b.a, new a10.b(this, createRepositoryInput, (c) null, 13)), this.s);
         }
     }
 
@@ -91,11 +91,11 @@ public final class b implements e1, y90, yf0, yb0 {
     public final y71.i c() {
         switch (this.r) {
             case 0:
-                return n1.y(d11.b.b(d11.a.t, new a(this, null, 1)), this.s);
+                return n1Shadow.y(d11.b.b(d11.a.t, new a(this, null, 1)), this.s);
             case 1:
-                return n1.y(d11.b.b(d11.a.t, new dz0.a(this, null, 1)), this.s);
+                return n1Shadow.y(d11.b.b(d11.a.t, new dz0.a(this, null, 1)), this.s);
             default:
-                return n1.y(d11.b.b(d11.a.t, new wm0.a(this, null, 1)), this.s);
+                return n1Shadow.y(d11.b.b(d11.a.t, new wm0.a(this, null, 1)), this.s);
         }
     }
 

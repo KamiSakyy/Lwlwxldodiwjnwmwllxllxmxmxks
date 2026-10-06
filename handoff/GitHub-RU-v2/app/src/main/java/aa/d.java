@@ -53,9 +53,9 @@ public final class d implements l0 {
 
     public void a(String str, String str2) {
         k71.k.g(str2, "value");
-        x61.r rVar = this.f629e;
+        x61.rShadow rVar = this.f629e;
         if (rVar == null) {
-            rVar = x61.r.r;
+            rVar = x61.rShadow.r;
         }
         this.f629e = x61.m.m0(rVar, new ba.e(str, str2));
     }

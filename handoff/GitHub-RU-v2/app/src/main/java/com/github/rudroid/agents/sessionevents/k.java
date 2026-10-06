@@ -42,7 +42,7 @@ public interface k {
             sb2.append(", canStop=");
             sb2.append(this.f7677b);
             sb2.append(", canInput=");
-            return jo.f4.s(sb2, this.f7678c, ")");
+            return jo.f4Shadow.s(sb2, this.f7678c, ")");
         }
     }
 

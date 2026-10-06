@@ -283,7 +283,7 @@ public abstract class d {
                 String normalize = Normalizer.normalize(hVar4.o0(), Normalizer.Form.NFC);
                 k.f(normalize, "normalize(...)");
                 hVar3.P0(normalize);
-                h91.k kVar = z81.b.a;
+                h91.kShadow kVar = z81.b.a;
                 String o02 = hVar3.o0();
                 int length = o02.length();
                 h hVar5 = new h();
@@ -421,7 +421,7 @@ public abstract class d {
                     String normalize2 = Normalizer.normalize(str3, Normalizer.Form.NFC);
                     k.f(normalize2, "normalize(...)");
                     if (str3.equals(normalize2)) {
-                        h91.k kVar2 = z81.b.a;
+                        h91.kShadow kVar2 = z81.b.a;
                         int length2 = str3.length();
                         h hVar6 = new h();
                         int i49 = i2;

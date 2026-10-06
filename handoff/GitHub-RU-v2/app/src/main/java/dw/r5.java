@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r5 implements aa.a {
     public static final r5 a = new r5();
-    public static final List b = sy.d0.o("__typename", "id", "stargazerCount", "viewerHasStarred");
+    public static final List b = sy.d0Shadow.o("__typename", "id", "stargazerCount", "viewerHasStarred");
 
     public static o5 c(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
@@ -24,7 +24,7 @@ public final class r5 implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = jo.f4.c(1, nextLong, "substring(...)");
+                        nextLong = jo.f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num = Integer.valueOf((int) nextLong);
                 } else {

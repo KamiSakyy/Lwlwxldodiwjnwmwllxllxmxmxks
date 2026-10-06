@@ -1,6 +1,6 @@
 package yi;
 
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements k, l {
@@ -28,6 +28,6 @@ public final class c implements k, l {
     }
 
     public final String toString() {
-        return f4.h(this.a, this.b, "AliveProjectColumnValueUpdate(columnId=", ", itemId=", ")");
+        return f4Shadow.h(this.a, this.b, "AliveProjectColumnValueUpdate(columnId=", ", itemId=", ")");
     }
 }

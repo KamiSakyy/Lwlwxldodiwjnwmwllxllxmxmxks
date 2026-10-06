@@ -9,7 +9,7 @@ import u10.zw;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class om implements aaShadow.a {
     public static final om a = new om();
-    public static final List b = sy.d0.n("__typename");
+    public static final List b = sy.d0Shadow.n("__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         bx bxVar;

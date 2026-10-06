@@ -19,7 +19,7 @@ public final class h extends o0 {
             if (((v71.q1) bVar.f2827f) != null) {
                 return;
             }
-            bVar.f2827f = v71.b0.z((a81.d) bVar.f2825d, (a71.h) null, (v71.a0) null, new a61.n0(bVar, (a71.c) null, 3), 3);
+            bVar.f2827f = v71.b0.z((a81.d) bVar.f2825d, (a71.h) null, (v71.a0Shadow) null, new a61.n0(bVar, (a71.c) null, 3), 3);
         }
     }
 
@@ -33,7 +33,7 @@ public final class h extends o0 {
             }
             a81.d dVar = (a81.d) bVar.f2825d;
             c81.e eVar = v71.l0.a;
-            bVar.f2828g = v71.b0.z(dVar, a81.n.a.w, (v71.a0) null, new a61.g0(bVar, (a71.c) null, 4), 2);
+            bVar.f2828g = v71.b0.z(dVar, a81.n.a.w, (v71.a0Shadow) null, new a61.g0(bVar, (a71.c) null, 4), 2);
         }
     }
 

@@ -1,6 +1,6 @@
 package nl;
 
-import y71.n1;
+import y71.n1Shadow;
 import z01.c1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -25,7 +25,7 @@ public final class c {
         k71.k.g(str10, "path");
         d dVar = this.a;
         dVar.getClass();
-        return n1.I(b31.b.J(((c1) dVar.a.a(jVar)).a(str, "refs/heads/".concat(str4), str6), jVar, cVar), new a(null, this, jVar, str2, str3, str8, str7, str9, z, str10, str5, cVar));
+        return n1Shadow.I(b31.b.J(((c1) dVar.a.a(jVar)).a(str, "refs/heads/".concat(str4), str6), jVar, cVar), new a(null, this, jVar, str2, str3, str8, str7, str9, z, str10, str5, cVar));
     }
     public Object j(Object p1) { return null; }
 }

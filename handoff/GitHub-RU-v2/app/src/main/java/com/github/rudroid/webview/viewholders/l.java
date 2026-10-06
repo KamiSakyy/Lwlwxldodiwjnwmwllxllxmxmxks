@@ -7,7 +7,7 @@ import com.github.rudroid.interfaces.u0;
 import com.github.rudroid.utilities.b3;
 import com.github.rudroid.webview.viewholders.GitHubWebView;
 import ic.xg;
-import k71.x;
+import k71.xShadow;
 import zh.c;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -58,7 +58,7 @@ public final class l extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
         if (xgVar2 != null) {
             ConstraintLayout constraintLayout = xgVar2.O;
             GitHubWebView gitHubWebView = xgVar2.N;
-            gitHubWebView.setWebViewLoadedListener((GitHubWebView.c) this.x.t(this, y[0]));
+            gitHubWebView.setWebViewLoadedListener((GitHubWebView.c) this.xShadow.t(this, y[0]));
             gitHubWebView.d(gVar);
             int dimensionPixelSize = ((k5.f) xgVar).A.getResources().getDimensionPixelSize(gVar.r());
             int i = this.w;

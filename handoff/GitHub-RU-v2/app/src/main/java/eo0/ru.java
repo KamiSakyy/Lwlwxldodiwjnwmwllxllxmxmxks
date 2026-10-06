@@ -8,7 +8,7 @@ import jn0.e80;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ru implements aaShadow.a {
     public static final ru a = new ru();
-    public static final List b = sy.d0.o(new String[]{"actor", "unlockedRecord"});
+    public static final List b = sy.d0Shadow.o(new String[]{"actor", "unlockedRecord"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

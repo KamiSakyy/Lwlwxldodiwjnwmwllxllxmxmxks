@@ -6,7 +6,7 @@ import com.github.rudroid.fragments.onboarding.notifications.viewmodel.i0;
 import com.github.rudroid.settings.g3;
 import java.util.Set;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.w1;
 import y71.y1;
 
@@ -30,7 +30,7 @@ public final class k0 extends androidx.lifecycle.a implements l0 {
         i0.a aVar = i0.Companion;
         Application P = P();
         aVar.getClass();
-        y1 c10 = n1.c(i0.a.a(P));
+        y1 c10 = n1Shadow.c(i0.a.a(P));
         this.f14294u = c10;
         this.f14295v = new i1(c10);
         SharedPreferences.OnSharedPreferenceChangeListener onSharedPreferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() { // from class: com.github.rudroid.fragments.onboarding.notifications.viewmodel.j0

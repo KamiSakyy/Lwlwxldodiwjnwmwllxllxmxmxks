@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qh implements aaShadow.a {
     public static final qh a = new qh();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         jn0.bq bqVar;
@@ -29,7 +29,7 @@ public final class qh implements aaShadow.a {
         }
         if (m71.a.v(m71.a.O(new String[]{"PullRequestReview"}), wVar.a, str, wVar.b)) {
             eVar.s0();
-            bqVar = rh.c(eVar, wVar);
+            bqVar = rh.cShadow(eVar, wVar);
         } else {
             bqVar = null;
         }

@@ -39,7 +39,7 @@ public final class lo {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("ProjectV2FieldValue(date=", this.a, ", iterationId=", this.b, ", number=");
+        StringBuilder u = jo.f4Shadow.u("ProjectV2FieldValue(date=", this.a, ", iterationId=", this.b, ", number=");
         f1.e.w(u, this.c, ", singleSelectOptionId=", this.d, ", text=");
         return f1.e.k(u, this.e, ")");
     }

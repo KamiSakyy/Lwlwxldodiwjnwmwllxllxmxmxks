@@ -11,7 +11,7 @@ import pz0.xd;
 import pz0.y2;
 import v8.l0;
 import x61.l;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
@@ -21,7 +21,7 @@ public abstract class a {
         xd.Companion.getClass();
         x xVar = xd.a;
         k71.k.g(xVar, "type");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         m mVar = new m("externalId", xVar, (String) null, rVar, rVar, rVar);
         m mVar2 = new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar);
         y2.Companion.getClass();

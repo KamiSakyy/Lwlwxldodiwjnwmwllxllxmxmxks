@@ -126,7 +126,7 @@ public abstract class a {
         String obj = p.t0(fromHtml).toString();
         String str5 = c4Var.f;
         if (z3Var == null || (list = z3Var.b) == null) {
-            arrayList = x61.r.r;
+            arrayList = x61.rShadow.r;
         } else {
             arrayList = new ArrayList();
             for (a4 a4Var : list) {
@@ -171,7 +171,7 @@ public abstract class a {
                 }
             }
         } else {
-            arrayList = x61.r.r;
+            arrayList = x61.rShadow.r;
         }
         return new t10.k(str, i, str3, str2, str4, z, i2, z2, b, arrayList);
     }

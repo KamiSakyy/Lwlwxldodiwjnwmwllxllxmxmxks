@@ -3,7 +3,7 @@ package com.github.rudroid.projects.navigation;
 import bf.a;
 import g81.e;
 import k71.k;
-import k81.c1;
+import k81.c1Shadow;
 import kotlinx.serialization.KSerializer;
 
 @e
@@ -24,7 +24,7 @@ public final class OwnerProjectsEntryPointRoute implements a {
         if (1 == (i & 1)) {
             this.f17753r = str;
         } else {
-            c1.l(i, 1, OwnerProjectsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
+            c1Shadow.l(i, 1, OwnerProjectsEntryPointRoute$$serializer.INSTANCE.getDescriptor());
             throw null;
         }
     }

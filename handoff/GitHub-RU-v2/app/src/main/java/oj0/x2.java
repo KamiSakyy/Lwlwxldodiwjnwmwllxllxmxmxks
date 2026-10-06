@@ -71,8 +71,8 @@ public abstract class x2 implements aa.a {
         wVar.e(r6.a).b(fVar, wVar, g3Var.f);
         fVar.z0("viewerDidAuthor");
         aa.b bVar3 = aa.c.f;
-        jo.f4.C(g3Var.g, bVar3, fVar, wVar, "locked");
-        jo.f4.C(g3Var.h, bVar3, fVar, wVar, "author");
+        jo.f4Shadow.C(g3Var.g, bVar3, fVar, wVar, "locked");
+        jo.f4Shadow.C(g3Var.h, bVar3, fVar, wVar, "author");
         aa.c.b(aa.c.c(h3.a, true)).b(fVar, wVar, g3Var.i);
         fVar.z0("isReadByViewer");
         aa.o0 o0Var = aa.c.k;
@@ -94,11 +94,11 @@ public abstract class x2 implements aa.a {
         fVar.z0("incompleteTaskListItemCount");
         fVar.z(g3Var.r);
         fVar.z0("viewerCanReopen");
-        jo.f4.C(g3Var.s, bVar3, fVar, wVar, "stateReason");
+        jo.f4Shadow.C(g3Var.s, bVar3, fVar, wVar, "stateReason");
         aa.c.b(hn0.a.t).b(fVar, wVar, g3Var.t);
         fVar.z0("viewerCanAssign");
-        jo.f4.C(g3Var.u, bVar3, fVar, wVar, "viewerCanLabel");
-        jo.f4.C(g3Var.v, bVar3, fVar, wVar, "isPinned");
+        jo.f4Shadow.C(g3Var.u, bVar3, fVar, wVar, "viewerCanLabel");
+        jo.f4Shadow.C(g3Var.v, bVar3, fVar, wVar, "isPinned");
         o0Var.b(fVar, wVar, g3Var.w);
         List list2 = se0.e.a;
         se0.e.d(fVar, wVar, g3Var.x);

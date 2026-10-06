@@ -6,7 +6,7 @@ import com.github.rudroid.copilot.h1;
 import com.github.service.models.response.Avatar;
 import java.util.ArrayList;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import kotlin.NoWhenBranchMatchedException;
 import yz0.o8;
 import yz0.p8;
@@ -145,7 +145,7 @@ public abstract class d {
             sb2.append(this.O);
             sb2.append(", multiAccountAvailable=");
             com.github.rudroid.m0.A(sb2, this.P, ", isViewer=", this.Q, ", hasOrganizations=");
-            return f4.s(sb2, this.R, ")");
+            return f4Shadow.s(sb2, this.R, ")");
         }
     }
 
@@ -428,7 +428,7 @@ public abstract class d {
             sb2.append(this.f17284s);
             sb2.append(", fileName=");
             com.github.rudroid.m0.x(sb2, this.f17285t, ", isReadMoreExpanded=", this.f17286u, ", isOrganization=");
-            return f4.s(sb2, this.f17287v, ")");
+            return f4Shadow.s(sb2, this.f17287v, ")");
         }
     }
 

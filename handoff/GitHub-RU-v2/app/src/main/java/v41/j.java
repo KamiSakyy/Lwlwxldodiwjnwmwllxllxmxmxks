@@ -24,7 +24,7 @@ public final class j implements Callable {
 
     @Override // java.util.concurrent.Callable
     public final Object call() {
-        b51.d dVar;
+        b51.dShadow dVar;
         String str;
         long j = this.a;
         long j2 = j / 1000;
@@ -33,16 +33,16 @@ public final class j implements Callable {
         if (d == null) {
             return t.q.k((Object) null);
         }
-        v2.t tVar = lVar.c;
+        v2.tShadow tVar = lVar.c;
         tVar.getClass();
         try {
-            b51.d dVar2 = (b51.d) tVar.t;
+            b51.dShadow dVar2 = (b51.dShadow) tVar.t;
             String str2 = (String) tVar.s;
             dVar2.getClass();
             new File((File) dVar2.c, str2).createNewFile();
         } catch (IOException unused) {
         }
-        b51.d dVar3 = lVar.m;
+        b51.dShadow dVar3 = lVar.m;
         dVar3.getClass();
         Log.isLoggable("FirebaseCrashlytics", 2);
         dVar3.h(this.b, this.c, "crash", new x41.c(d, j2, x61.s.r), true);

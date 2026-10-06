@@ -3,9 +3,9 @@ package f00;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class f1 implements aa.a {
-    public static final f1 a = new f1();
-    public static final List b = sy.d0.n("nodes");
+public final class f1Shadow implements aa.a {
+    public static final f1Shadow a = new f1Shadow();
+    public static final List b = sy.d0Shadow.n("nodes");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

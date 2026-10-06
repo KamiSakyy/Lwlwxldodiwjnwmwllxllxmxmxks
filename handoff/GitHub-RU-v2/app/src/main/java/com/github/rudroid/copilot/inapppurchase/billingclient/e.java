@@ -13,7 +13,7 @@ public final class e implements x9.e {
     }
 
     @Override // x9.e
-    public final void a(x9.h hVar) {
+    public final void a(x9.hShadow hVar) {
         k71.k.g(hVar, "billingResult");
         this.f9663r.k((Object) null, Integer.valueOf(hVar.f34005a));
     }

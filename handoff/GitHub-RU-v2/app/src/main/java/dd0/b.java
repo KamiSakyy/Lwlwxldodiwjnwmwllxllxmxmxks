@@ -23,7 +23,7 @@ import gn0.tb;
 import gn0.x2;
 import gn0.yh;
 import java.util.List;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -34,7 +34,7 @@ public abstract class b {
         pb.Companion.getClass();
         x xVar = pb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         r6.Companion.getClass();
         x xVar2 = r6.a;
@@ -58,11 +58,11 @@ public abstract class b {
         q0 q0Var = p2.a;
         k71.k.g(q0Var, "type");
         x2.Companion.getClass();
-        List r3 = x61.l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("CheckSuite", d0.n("CheckSuite"), x61.l.r(new m[]{mVar6, new m("checkRuns", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(x2.a, new u0((Object) null)), new aa.k(x2.b, new u0(s0.p("checkName", new t("checkRunName")))), new aa.k(x2.c, new u0(new t("first")))}), r2)}))});
+        List r3 = x61.l.r(new s[]{new m("__typename", l0.b(xVar3), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar), (String) null, rVar, rVar, rVar), new n("CheckSuite", d0Shadow.n("CheckSuite"), x61.l.r(new m[]{mVar6, new m("checkRuns", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(x2.a, new u0((Object) null)), new aa.k(x2.b, new u0(s0.p("checkName", new t("checkRunName")))), new aa.k(x2.c, new u0(new t("first")))}), r2)}))});
         yh.Companion.getClass();
         j0 j0Var = yh.a;
         k71.k.g(j0Var, "type");
         rn.Companion.getClass();
-        a = d0.n(new m("node", j0Var, (String) null, rVar, no.a.s(rn.i, new u0(new t("checkSuiteId"))), r3));
+        a = d0Shadow.n(new m("node", j0Var, (String) null, rVar, no.a.s(rn.i, new u0(new t("checkSuiteId"))), r3));
     }
 }

@@ -27,6 +27,6 @@ public final class t7 {
     }
 
     public final String toString() {
-        return f1.e.k(jo.f4.u("CopilotAgentTaskFilter(archived=", this.a, ", artifactType=", this.b, ", states="), this.c, ")");
+        return f1.e.k(jo.f4Shadow.u("CopilotAgentTaskFilter(archived=", this.a, ", artifactType=", this.b, ", states="), this.c, ")");
     }
 }

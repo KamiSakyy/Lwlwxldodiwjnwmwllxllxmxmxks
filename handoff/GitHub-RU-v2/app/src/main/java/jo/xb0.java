@@ -4,9 +4,9 @@ package jo;
 public final class xb0 {
     public String a;
     public String b;
-    public is.a0 c;
+    public is.a0Shadow c;
 
-    public xb0(String str, String str2, is.a0 a0Var) {
+    public xb0(String str, String str2, is.a0Shadow a0Var) {
         k71.k.g(str, "__typename");
         this.a = str;
         this.b = str2;

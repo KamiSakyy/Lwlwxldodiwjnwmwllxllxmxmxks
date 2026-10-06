@@ -13,7 +13,7 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
 import android.os.SystemClock;
-import c21.u;
+import c21.uShadow;
 import com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader;
 import com.google.android.gms.dynamite.DynamiteModule$LoadingException;
 import java.lang.reflect.Field;
@@ -56,7 +56,7 @@ public final class e {
             Class<?> loadClass = classLoader.loadClass(sb.toString());
             Field declaredField = loadClass.getDeclaredField("MODULE_ID");
             Field declaredField2 = loadClass.getDeclaredField("MODULE_VERSION");
-            if (u.j(declaredField.get(null), str)) {
+            if (uShadow.j(declaredField.get(null), str)) {
                 return declaredField2.getInt(null);
             }
             new StringBuilder(String.valueOf(declaredField.get(null)).length() + 50 + str.length() + 1);
@@ -294,11 +294,11 @@ public final class e {
                                                 if (Build.VERSION.SDK_INT >= 29) {
                                                     a.b();
                                                     String str3 = f;
-                                                    u.g(str3);
+                                                    uShadow.g(str3);
                                                     P = a.a(ClassLoader.getSystemClassLoader(), str3);
                                                 } else {
                                                     String str4 = f;
-                                                    u.g(str4);
+                                                    uShadow.g(str4);
                                                     P = new g(str4, ClassLoader.getSystemClassLoader());
                                                 }
                                             }

@@ -8,7 +8,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w6 implements aa.a {
     public static final w6 a = new w6();
-    public static final List b = sy.d0.o("state", "submittedAt", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("state", "submittedAt", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

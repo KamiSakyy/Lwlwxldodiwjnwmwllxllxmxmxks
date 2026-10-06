@@ -27,7 +27,7 @@ public final class CopilotWebSearchReferenceBottomSheet extends Hilt_CopilotWebS
     public final List I4() {
         ArrayList parcelableArrayList;
         int i = Build.VERSION.SDK_INT;
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         if (i > 33) {
             Bundle bundle = this.f2466x;
             parcelableArrayList = bundle != null ? bundle.getParcelableArrayList("key_results", xn.h4.class) : null;

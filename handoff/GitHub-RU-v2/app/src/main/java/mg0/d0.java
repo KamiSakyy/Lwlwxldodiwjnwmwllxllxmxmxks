@@ -1,19 +1,19 @@
 package mg0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d0 implements aa.a {
     public static final d0 a = new d0();
-    public static final List b = sy.d0.o(new String[]{"__typename", "beforeFocusCount", "pageInfo", "nodes"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "beforeFocusCount", "pageInfo", "nodes"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
         Integer num = null;
-        x xVar = null;
+        xShadow xVar = null;
         List list = null;
         while (true) {
             int r0 = eVar.r0(b);
@@ -30,7 +30,7 @@ public final class d0 implements aa.a {
                     num = Integer.valueOf((int) nextLong);
                 }
             } else if (r0 == 2) {
-                xVar = (x) aa.c.c(c0.a, false).a(eVar, wVar);
+                xVar = (xShadow) aa.c.c(c0.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 3) {
                     break;

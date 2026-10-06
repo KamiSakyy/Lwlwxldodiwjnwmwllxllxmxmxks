@@ -9,7 +9,7 @@ import m10.sa;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r7 implements aa.a {
     public static final r7 a = new r7();
-    public static final List b = sy.d0.o("state", "submittedAt", "id", "__typename");
+    public static final List b = sy.d0Shadow.o("state", "submittedAt", "id", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

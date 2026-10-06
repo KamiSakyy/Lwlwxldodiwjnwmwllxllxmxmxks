@@ -2,7 +2,7 @@ package sk0;
 
 import aa.h0;
 import com.github.rudroid.m0;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x.i;
 
@@ -37,7 +37,7 @@ public final class c implements h0 {
     }
 
     public final String toString() {
-        return f4.q(m0.o("UpdatableFragment(__typename=", this.a, ", viewerCanUpdate=", ", nodeIdFragment=", this.b), this.c, ")");
+        return f4Shadow.q(m0.o("UpdatableFragment(__typename=", this.a, ", viewerCanUpdate=", ", nodeIdFragment=", this.b), this.c, ")");
     }
     public static final Object a = null;
     public static final Object f = null;

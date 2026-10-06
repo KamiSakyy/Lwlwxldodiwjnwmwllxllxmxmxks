@@ -4,13 +4,13 @@ package i9;
 public final class p extends h91.q {
 
     /* renamed from: t, reason: collision with root package name */
-    public static final h91.k f26118t;
+    public static final h91.kShadow f26118t;
 
     /* renamed from: s, reason: collision with root package name */
     public h91.h f26119s;
 
     static {
-        h91.k kVar = h91.k.u;
+        h91.kShadow kVar = h91.kShadow.u;
         f26118t = c30.d.a("0021F904");
     }
 
@@ -32,7 +32,7 @@ public final class p extends h91.q {
         while (true) {
             long j15 = -1;
             while (true) {
-                h91.k kVar = f26118t;
+                h91.kShadow kVar = f26118t;
                 j15 = this.f26119s.K(kVar.r[0], j15 + 1, Long.MAX_VALUE);
                 if (j15 == -1) {
                     j11 = j13;

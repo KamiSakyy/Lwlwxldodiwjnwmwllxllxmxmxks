@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
 import java.util.Set;
 import k71.k;
 import o1.i;
-import sy.p;
+import sy.pShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements Map, Serializable, l71.e {
@@ -120,10 +120,10 @@ public final class e implements Map, Serializable, l71.e {
                 }
             }
         }
-        p.q(this.r, 0, this.w);
+        pShadow.q(this.r, 0, this.w);
         Object[] objArr = this.s;
         if (objArr != null) {
-            p.q(objArr, 0, this.w);
+            pShadow.q(objArr, 0, this.w);
         }
         this.z = 0;
         this.w = 0;
@@ -166,9 +166,9 @@ public final class e implements Map, Serializable, l71.e {
             }
             i2++;
         }
-        p.q(this.r, i3, i);
+        pShadow.q(this.r, i3, i);
         if (objArr != null) {
-            p.q(objArr, i3, this.w);
+            pShadow.q(objArr, i3, this.w);
         }
         this.w = i3;
     }

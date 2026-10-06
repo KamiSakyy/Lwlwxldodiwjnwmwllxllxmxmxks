@@ -8,7 +8,7 @@ import jn0.va0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kw implements aaShadow.a {
     public static final kw a = new kw();
-    public static final List b = sy.d0.o(new String[]{"__typename", "id", "url", "state", "bodyHtml", "milestone", "viewerCanReopen"});
+    public static final List b = sy.d0Shadow.o(new String[]{"__typename", "id", "url", "state", "bodyHtml", "milestone", "viewerCanReopen"});
 
     /* JADX WARN: Code restructure failed: missing block: B:10:0x003b, code lost:
     

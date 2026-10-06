@@ -13,10 +13,10 @@ public final class c0 {
     public boolean g;
     public d0 h;
     public boolean i;
-    public a0 j;
+    public a0Shadow j;
     public nv.a k;
 
-    public c0(String str, xz xzVar, String str2, boolean z, boolean z2, boolean z3, boolean z4, d0 d0Var, boolean z5, a0 a0Var, nv.a aVar) {
+    public c0(String str, xz xzVar, String str2, boolean z, boolean z2, boolean z3, boolean z4, d0 d0Var, boolean z5, a0Shadow a0Var, nv.a aVar) {
         this.a = str;
         this.b = xzVar;
         this.c = str2;

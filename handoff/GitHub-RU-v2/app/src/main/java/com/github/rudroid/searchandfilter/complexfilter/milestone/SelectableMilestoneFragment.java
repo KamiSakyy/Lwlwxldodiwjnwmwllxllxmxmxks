@@ -5,7 +5,7 @@ import androidx.lifecycle.o1;
 import androidx.lifecycle.u1;
 import com.github.rudroid.searchandfilter.complexfilter.d0;
 import com.github.rudroid.searchandfilter.complexfilter.e0;
-import k71.x;
+import k71.xShadow;
 import sy.w;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -83,7 +83,7 @@ public final class SelectableMilestoneFragment extends Hilt_SelectableMilestoneF
 
     public SelectableMilestoneFragment() {
         w61.h s = w.s(w61.i.s, new b(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(5, this)));
-        this.H0 = new l1(x.a(g.class), new c(s), new e(s), new d(s));
+        this.H0 = new l1(xShadow.a(g.class), new c(s), new e(s), new d(s));
         this.I0 = new com.github.rudroid.searchandfilter.complexfilter.milestone.b(this);
     }
 

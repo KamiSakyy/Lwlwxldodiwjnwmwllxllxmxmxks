@@ -2,7 +2,7 @@ package nk;
 
 import com.github.rudroid.explore.y;
 import com.github.service.models.response.TrendingPeriod;
-import in.r;
+import in.rShadow;
 import k71.k;
 import oa.g;
 import oa.j;
@@ -52,7 +52,7 @@ public final class d {
                     jVar = cVar2.u;
                     sy.y.j(obj);
                 }
-                return r.l(b31.b.J((i) obj, jVar, yVar));
+                return rShadow.l(b31.b.J((i) obj, jVar, yVar));
             }
         }
         cVar2 = new c(this, cVar);
@@ -61,7 +61,7 @@ public final class d {
         i = cVar2.y;
         if (i != 0) {
         }
-        return r.l(b31.b.J((i) obj2, jVar, yVar));
+        return rShadow.l(b31.b.J((i) obj2, jVar, yVar));
     }
 
 }

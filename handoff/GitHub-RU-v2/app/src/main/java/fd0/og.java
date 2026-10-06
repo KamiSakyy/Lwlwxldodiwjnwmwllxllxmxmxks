@@ -250,12 +250,12 @@ public abstract class og implements aaShadow.a {
         fVar.I(moVar.d.r);
         fVar.z0("isResolved");
         aa.b bVar2 = aa.c.f;
-        jo.f4.C(moVar.e, bVar2, fVar, wVar, "viewerCanResolve");
-        jo.f4.C(moVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
-        jo.f4.C(moVar.g, bVar2, fVar, wVar, "resolvedBy");
+        jo.f4Shadow.C(moVar.e, bVar2, fVar, wVar, "viewerCanResolve");
+        jo.f4Shadow.C(moVar.f, bVar2, fVar, wVar, "viewerCanUnresolve");
+        jo.f4Shadow.C(moVar.g, bVar2, fVar, wVar, "resolvedBy");
         aa.c.b(aa.c.c(sg.a, false)).b(fVar, wVar, moVar.h);
         fVar.z0("viewerCanReply");
-        jo.f4.C(moVar.i, bVar2, fVar, wVar, "diffLines");
+        jo.f4Shadow.C(moVar.i, bVar2, fVar, wVar, "diffLines");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(ig.a, true)))).b(fVar, wVar, moVar.j);
         fVar.z0("comments");
         aa.c.c(fg.a, false).b(fVar, wVar, moVar.k);

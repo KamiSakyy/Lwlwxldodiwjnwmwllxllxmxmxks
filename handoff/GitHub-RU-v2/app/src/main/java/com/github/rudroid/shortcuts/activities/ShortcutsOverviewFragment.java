@@ -152,7 +152,7 @@ public final class ShortcutsOverviewFragment extends Hilt_ShortcutsOverviewFragm
 
     public ShortcutsOverviewFragment() {
         w61.h s = sy.w.s(w61.i.s, new c(new b()));
-        this.H0 = new l1(k71.x.a(com.github.rudroid.shortcuts.n0.class), new d(s), new f(s), new e(s));
+        this.H0 = new l1(k71.xShadow.a(com.github.rudroid.shortcuts.n0.class), new d(s), new f(s), new e(s));
     }
 
     public static final void I4(ShortcutsOverviewFragment shortcutsOverviewFragment, boolean z) {
@@ -240,7 +240,7 @@ public final class ShortcutsOverviewFragment extends Hilt_ShortcutsOverviewFragm
             k71.k.m("dataAdapter");
             throw null;
         }
-        UiStateRecyclerView.w0(recyclerView, sy.d0.n(d0Var2), true, 4);
+        UiStateRecyclerView.w0(recyclerView, sy.d0Shadow.n(d0Var2), true, 4);
         l7.x xVar = this.J0;
         if (xVar == null) {
             k71.k.m("itemTouchHelper");

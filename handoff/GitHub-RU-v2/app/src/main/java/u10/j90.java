@@ -21,7 +21,7 @@ public final class j90 implements aaShadow.w0 {
         List list = fc0.c6.a;
         List list2 = fc0.c6.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -45,7 +45,7 @@ public final class j90 implements aaShadow.w0 {
     }
 
     public final int hashCode() {
-        return aa.t0.d.hashCode() + jo.f4.a(this.s, this.r.hashCode() * 31, 31);
+        return aa.t0.d.hashCode() + jo.f4Shadow.a(this.s, this.r.hashCode() * 31, 31);
     }
 
     public final String i() {
@@ -70,7 +70,7 @@ public final class j90 implements aaShadow.w0 {
     }
 
     public final String toString() {
-        StringBuilder t = jo.f4.t(this.s, "UserListsQuery(login=", this.r, ", first=", ", after=");
+        StringBuilder t = jo.f4Shadow.t(this.s, "UserListsQuery(login=", this.r, ", first=", ", after=");
         t.append(aa.t0.d);
         t.append(")");
         return t.toString();

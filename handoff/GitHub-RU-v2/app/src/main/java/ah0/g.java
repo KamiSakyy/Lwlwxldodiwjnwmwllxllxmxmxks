@@ -7,8 +7,8 @@ import aa.p0;
 import aa.w;
 import gn0.zd;
 import java.util.List;
-import k71.x;
-import x61.r;
+import k71.xShadow;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements i0 {
@@ -21,7 +21,7 @@ public final class g implements i0 {
         List list = bh0.a.a;
         List list2 = bh0.a.a;
         k71.k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", j0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -34,7 +34,7 @@ public final class g implements i0 {
     }
 
     public final int hashCode() {
-        return x.a(g.class).hashCode();
+        return xShadow.a(g.class).hashCode();
     }
 
     public final void o(ea.f fVar, w wVar, boolean z) {

@@ -4,7 +4,7 @@ import aa.w;
 import ea.e;
 import ea.f;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 import x61.l;
 
@@ -168,8 +168,8 @@ public abstract class c implements aa.a {
         bVar2.b(fVar, wVar, bVar.c);
         fVar.z0("isAnswerable");
         aa.b bVar3 = aa.c.f;
-        f4.C(bVar.d, bVar3, fVar, wVar, "isPollable");
-        f4.C(bVar.e, bVar3, fVar, wVar, "description");
+        f4Shadow.C(bVar.d, bVar3, fVar, wVar, "isPollable");
+        f4Shadow.C(bVar.e, bVar3, fVar, wVar, "description");
         aa.c.i.b(fVar, wVar, bVar.f);
         fVar.z0("template");
         aa.c.b(aa.c.c(d.a, false)).b(fVar, wVar, bVar.g);

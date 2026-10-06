@@ -15,7 +15,7 @@ import com.github.rudroid.uitoolkit.f3;
 import com.github.rudroid.viewmodels.za;
 import com.github.service.models.response.Avatar;
 import com.google.android.gms.internal.measurement.i4;
-import d2.a0;
+import d2.a0Shadow;
 import f1.ub;
 import java.util.Map;
 import k3.i;
@@ -77,7 +77,7 @@ public final class b {
             sVar2.n0(jVar);
             obj = jVar;
             r rVar6 = rVar5;
-            r f = f0.o.f(p2.e(f0.o.m(rVar5, false, p0, kVar, (j71.a) obj, 9), 1.0f), ih.d.b(sVar2).b, a0.b);
+            r f = f0.o.f(p2.e(f0.o.m(rVar5, false, p0, kVar, (j71.a) obj, 9), 1.0f), ih.d.b(sVar2).b, a0Shadow.b);
             float f2 = ih.a.n;
             r x = androidx.compose.foundation.layout.b.x(f, f2);
             l2 a2 = j2.a(l.a, w1.c.A, sVar2, 0);
@@ -92,16 +92,16 @@ public final class b {
             } else {
                 sVar2.q0();
             }
-            v2.e eVar2 = v2.g.f;
+            v2.eShadow eVar2 = v2.g.f;
             t.I(sVar2, eVar2, a2);
             j71.e eVar3 = v2.g.e;
             t.I(sVar2, eVar3, l);
             Integer valueOf = Integer.valueOf(hashCode);
-            v2.e eVar4 = v2.g.g;
+            v2.eShadow eVar4 = v2.g.g;
             t.w(sVar2, valueOf, eVar4);
             v2.d dVar = v2.g.h;
             t.E(sVar2, dVar);
-            v2.e eVar5 = v2.g.d;
+            v2.eShadow eVar5 = v2.g.d;
             t.I(sVar2, eVar5, c);
             r B = androidx.compose.foundation.layout.b.B(rVar4, 0.0f, 0.0f, f2, 0.0f, 11);
             Avatar avatar = l4Var.e;

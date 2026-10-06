@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import k71.k;
 import m10.p00;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements w0 {
@@ -29,7 +29,7 @@ public final class e implements w0 {
         List list = wp.a.a;
         List list2 = wp.a.a;
         k.g(list2, "selections");
-        r rVar = r.r;
+        rShadow rVar = rShadow.r;
         return new m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -37,7 +37,7 @@ public final class e implements w0 {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof e) && this.r.equals(((e) obj).r);
+        return (obj instanceof e) && this.rShadow.equals(((e) obj).r);
     }
 
     public final p0 g() {
@@ -45,7 +45,7 @@ public final class e implements w0 {
     }
 
     public final int hashCode() {
-        return this.r.hashCode();
+        return this.rShadow.hashCode();
     }
 
     public final String i() {

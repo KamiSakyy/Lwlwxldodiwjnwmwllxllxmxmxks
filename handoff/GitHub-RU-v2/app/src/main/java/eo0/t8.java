@@ -7,7 +7,7 @@ import pz0.l40;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t8 implements aaShadow.a {
     public static final t8 a = new t8();
-    public static final List b = sy.d0.o(new String[]{"link", "linkType"});
+    public static final List b = sy.d0Shadow.o(new String[]{"link", "linkType"});
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

@@ -39,8 +39,8 @@ public abstract class p00 {
     public static final a81.t E = new a81.t(1, "login", false);
 
     static {
-        List n2 = sy.d0.n("id");
+        List n2 = sy.d0Shadow.n("id");
         zp.Companion.getClass();
-        F = new aa.q0("Query", n2, sy.d0.n(zp.a));
+        F = new aa.q0("Query", n2, sy.d0Shadow.n(zp.a));
     }
 }

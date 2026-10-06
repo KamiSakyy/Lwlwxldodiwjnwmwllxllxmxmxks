@@ -17,8 +17,8 @@ import com.github.service.models.response.type.MobileAppElement;
 import com.github.service.models.response.type.MobileEventContext;
 import com.github.service.models.response.type.MobileSubjectType;
 import java.util.ArrayList;
-import k71.x;
-import v71.a0;
+import k71.xShadow;
+import v71.a0Shadow;
 import v71.b0;
 import w3.u;
 import xn.e1;
@@ -83,7 +83,7 @@ public final class CopilotChatProPaywallActivity extends o {
 
     static {
         r71.e mVar = new k71.m(CopilotChatProPaywallActivity.class, "telemetryContext", "getTelemetryContext()Lcom/github/service/models/response/type/MobileEventContext;", 0);
-        x.a.getClass();
+        xShadow.a.getClass();
         w0 = new r71.e[]{mVar};
         Companion = new a();
     }
@@ -91,7 +91,7 @@ public final class CopilotChatProPaywallActivity extends o {
     public CopilotChatProPaywallActivity() {
         this.s0 = false;
         C(new n(this));
-        this.u0 = new l1(x.a(com.github.rudroid.copilot.inapppurchase.b.class), new d(), new c(), new e());
+        this.u0 = new l1(xShadow.a(com.github.rudroid.copilot.inapppurchase.b.class), new d(), new c(), new e());
         this.v0 = new com.github.rudroid.activities.util.g("TELEMETRY_CONTEXT_KEY", new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(4));
     }
 
@@ -99,7 +99,7 @@ public final class CopilotChatProPaywallActivity extends o {
         MobileAppAction mobileAppAction = MobileAppAction.PRESS;
         MobileSubjectType mobileSubjectType = MobileSubjectType.COPILOT_PAYWALL;
         copilotChatProPaywallActivity.getClass();
-        b0.z(d1.i(copilotChatProPaywallActivity), (a71.h) null, (a0) null, new i(copilotChatProPaywallActivity, mobileAppElement, mobileAppAction, mobileSubjectType, mobileEventContext, null), 3);
+        b0.z(d1.i(copilotChatProPaywallActivity), (a71.h) null, (a0Shadow) null, new i(copilotChatProPaywallActivity, mobileAppElement, mobileAppAction, mobileSubjectType, mobileEventContext, null), 3);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -127,13 +127,13 @@ public final class CopilotChatProPaywallActivity extends o {
         runtimeFeatureFlag.getClass();
         e1 e1Var = RuntimeFeatureFlag.a(cVar) ? m0Var.e : L0().B;
         if (str != null) {
-            b0.z(d1.i(this), (a71.h) null, (a0) null, new f(this, e1Var, lVar, str, null), 3);
+            b0.z(d1.i(this), (a71.h) null, (a0Shadow) null, new f(this, e1Var, lVar, str, null), 3);
             return;
         }
         com.github.rudroid.common.e a0 = a0();
         Exception exc = new Exception("Offer token not found");
         e.a aVar = com.github.rudroid.common.e.Companion;
-        a0.b("CopilotChatProPaywallActivity", exc, true);
+        a0Shadow.b("CopilotChatProPaywallActivity", exc, true);
         y1 y1Var = L0().F;
         do {
             value = y1Var.getValue();

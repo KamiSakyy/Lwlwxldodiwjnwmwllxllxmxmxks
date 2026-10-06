@@ -27,17 +27,17 @@ public final class p<T, V> {
     public p(List list, fl.f fVar, j71.e eVar, v6.a aVar) {
         k71.k.g(list, "initialSelectedItems");
         this.f18071a = eVar;
-        y1 c10 = y71.n1.c(list);
+        y1 c10 = y71.n1Shadow.c(list);
         this.f18072b = c10;
         this.f18073c = c10;
-        y1 c11 = y71.n1.c(fVar);
+        y1 c11 = y71.n1Shadow.c(fVar);
         this.f18074d = c11;
         c00.g gVar = new c00.g(c11, c10, new o(this, null), 27);
         fl.f.Companion.getClass();
         fl.f b10 = fl.e.b((Object) null);
         y71.s1 s1Var = y71.q1.a;
-        this.f18075e = y71.n1.G(gVar, aVar, s1Var, b10);
-        this.f18076f = y71.n1.G(new c00.g(c11, c10, new n(this, null), 27), aVar, s1Var, fl.e.b((Object) null));
+        this.f18075e = y71.n1Shadow.G(gVar, aVar, s1Var, b10);
+        this.f18076f = y71.n1Shadow.G(new c00.g(c11, c10, new n(this, null), 27), aVar, s1Var, fl.e.b((Object) null));
     }
 
     public final List a() {
@@ -46,7 +46,7 @@ public final class p<T, V> {
 
     public final void b() {
         fl.f.Companion.getClass();
-        fl.f b10 = fl.e.b(x61.r.r);
+        fl.f b10 = fl.e.b(x61.rShadow.r);
         y1 y1Var = this.f18074d;
         y1Var.getClass();
         y1Var.k((Object) null, b10);
@@ -71,7 +71,7 @@ public final class p<T, V> {
     */
     public /* synthetic */ p(List list, j71.e eVar, v6.a aVar, int i) {
         this(list, fl.e.b((Object) null), eVar, aVar);
-        list = (i & 1) != 0 ? x61.r.r : list;
+        list = (i & 1) != 0 ? x61.rShadow.r : list;
         fl.f.Companion.getClass();
     }
 }

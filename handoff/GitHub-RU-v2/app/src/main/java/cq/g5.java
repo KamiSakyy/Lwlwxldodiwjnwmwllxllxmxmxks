@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g5 implements aa.a {
     public static final g5 a = new g5();
-    public static final List b = sy.d0.o("id", "name", "viewerCanCommitToBranch", "target", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "viewerCanCommitToBranch", "target", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
@@ -70,7 +70,7 @@ public final class g5 implements aa.a {
         fVar.z0("name");
         bVar.b(fVar, wVar, s4Var.b);
         fVar.z0("viewerCanCommitToBranch");
-        jo.f4.C(s4Var.c, aa.c.f, fVar, wVar, "target");
+        jo.f4Shadow.C(s4Var.c, aa.c.f, fVar, wVar, "target");
         aa.c.b(aa.c.c(i5.a, false)).b(fVar, wVar, s4Var.d);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, s4Var.e);

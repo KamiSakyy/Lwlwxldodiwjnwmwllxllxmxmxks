@@ -4,11 +4,11 @@ import aa.w;
 import ea.f;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class d implements aa.a {
-    public static final List a = d0.n("viewerSubscriptionTypes");
+    public static final List a = d0Shadow.n("viewerSubscriptionTypes");
 
     public static a c(ea.e eVar, w wVar) {
         k.g(eVar, "reader");

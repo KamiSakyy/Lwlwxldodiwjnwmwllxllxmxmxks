@@ -23,13 +23,13 @@ public abstract class n3 implements aa.a {
             }
         }
         if (vVar != null) {
-            return new f1(c0Var, vVar);
+            return new f1Shadow(c0Var, vVar);
         }
         k41.b.B(eVar, "field");
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, f1 f1Var) {
+    public static void d(ea.f fVar, aa.w wVar, f1Shadow f1Var) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(f1Var, "value");

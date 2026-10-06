@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.ui.t1;
 import com.github.rudroid.utilities.viewmodel.d;
 import y71.i1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -64,7 +64,7 @@ public final class z extends k1 implements com.github.rudroid.utilities.viewmode
         g1.a aVar = g1.Companion;
         com.github.rudroid.repository.pullrequestcreation.a aVar2 = new com.github.rudroid.repository.pullrequestcreation.a(null, null, null, 7);
         aVar.getClass();
-        y1 c10 = n1.c(new t1(aVar2));
+        y1 c10 = n1Shadow.c(new t1(aVar2));
         this.f20150w = c10;
         this.f20151x = new i1(c10);
         this.f20152y = (String) h2.a(a1Var, "EXTRA_BASE_REF_BRANCH");
@@ -76,6 +76,6 @@ public final class z extends k1 implements com.github.rudroid.utilities.viewmode
         k71.k.g(str, "title");
         k71.k.g(str2, "body");
         k71.k.g(str3, "headRefName");
-        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new d0(this, str, str2, str3, null), 3);
+        v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new d0(this, str, str2, str3, null), 3);
     }
 }

@@ -4,7 +4,7 @@ import aa.w;
 import gn0.hn;
 import java.util.Iterator;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class m implements aa.a {
@@ -38,7 +38,7 @@ public abstract class m implements aa.a {
                     long nextLong = eVar.nextLong();
                     if (nextLong > 2147483647L) {
                         while (nextLong > 2147483647L) {
-                            nextLong = f4.c(1, nextLong, "substring(...)");
+                            nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                         }
                         num2 = Integer.valueOf((int) nextLong);
                     } else {
@@ -150,8 +150,8 @@ public abstract class m implements aa.a {
         aa.c.c(p.a, false).b(fVar, wVar, cVar.e);
         fVar.z0("isInMergeQueue");
         aa.b bVar2 = aa.c.f;
-        f4.C(cVar.f, bVar2, fVar, wVar, "isDraft");
-        f4.C(cVar.g, bVar2, fVar, wVar, "id");
+        f4Shadow.C(cVar.f, bVar2, fVar, wVar, "isDraft");
+        f4Shadow.C(cVar.g, bVar2, fVar, wVar, "id");
         bVar.b(fVar, wVar, cVar.h);
     }
 

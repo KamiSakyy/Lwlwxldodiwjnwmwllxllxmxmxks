@@ -7,7 +7,7 @@ import u10.s40;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xr implements aaShadow.a {
     public static final xr a = new xr();
-    public static final List b = sy.d0.o("id", "name", "state", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "name", "state", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         Object obj;

@@ -6,7 +6,7 @@ import android.content.Intent;
 import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class z {
+public abstract class zShadow {
     public static final long a = TimeUnit.MINUTES.toMillis(1);
     public static final Object b = new Object();
     public static v21.a c;

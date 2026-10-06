@@ -34,7 +34,7 @@ public final class j00 {
     }
 
     public final String toString() {
-        StringBuilder u = jo.f4.u("UpdateUserListInput(clientMutationId=", this.a, ", description=", this.b, ", isPrivate=");
+        StringBuilder u = jo.f4Shadow.u("UpdateUserListInput(clientMutationId=", this.a, ", description=", this.b, ", isPrivate=");
         u.append(this.c);
         u.append(", listId=");
         u.append(this.d);

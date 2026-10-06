@@ -15,6 +15,6 @@ public final class c {
         k71.k.g(str, "projectId");
         k71.k.g(str2, "viewId");
         k71.k.g(str3, "itemId");
-        return b31.b.J(in.r.l(((p0) this.a.a(jVar)).f(str, str2, str3)), jVar, cVar);
+        return b31.b.J(in.rShadow.l(((p0) this.a.a(jVar)).f(str, str2, str3)), jVar, cVar);
     }
 }

@@ -8,7 +8,7 @@ import com.github.rudroid.utilities.ui.g1;
 import com.github.rudroid.utilities.ui.u0;
 import java.util.concurrent.CancellationException;
 import v71.q1;
-import y71.n1;
+import y71.n1Shadow;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
@@ -62,7 +62,7 @@ public final class h0 extends k1 implements com.github.rudroid.utilities.viewmod
         this.f5437w = iVar;
         this.f5438x = aVar;
         this.f5439y = cVar;
-        WorkflowRunsRoute workflowRunsRoute = (WorkflowRunsRoute) sy.y.m(a1Var, k71.x.a(WorkflowRunsRoute.class), x61.s.r);
+        WorkflowRunsRoute workflowRunsRoute = (WorkflowRunsRoute) sy.y.m(a1Var, k71.xShadow.a(WorkflowRunsRoute.class), x61.s.r);
         this.f5440z = workflowRunsRoute.f5117r;
         this.A = workflowRunsRoute.f5118s;
         this.B = workflowRunsRoute.f5119t;
@@ -70,7 +70,7 @@ public final class h0 extends k1 implements com.github.rudroid.utilities.viewmod
         mn.w.Companion.getClass();
         mn.w wVar = mn.w.g;
         aVar2.getClass();
-        this.C = n1.c(new u0(wVar));
+        this.C = n1Shadow.c(new u0(wVar));
         this.D = x61.t.r;
         this.F = sy.w.t(new a0.m0(17, this));
         P();
@@ -81,7 +81,7 @@ public final class h0 extends k1 implements com.github.rudroid.utilities.viewmod
         if (q1Var != null) {
             q1Var.m((CancellationException) null);
         }
-        this.G = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new b0(this, null), 3);
+        this.G = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new b0(this, null), 3);
     }
 
     public final void Q() {
@@ -94,7 +94,7 @@ public final class h0 extends k1 implements com.github.rudroid.utilities.viewmod
         if (q1Var2 != null) {
             q1Var2.m((CancellationException) null);
         }
-        this.H = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0) null, new e0(this, null), 3);
+        this.H = v71.b0.z(d1.k(this), (a71.h) null, (v71.a0Shadow) null, new e0(this, null), 3);
     }
 
     public final void R(y71.g1 g1Var, fl.b bVar, boolean z10) {

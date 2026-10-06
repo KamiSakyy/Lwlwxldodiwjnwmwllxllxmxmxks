@@ -7,7 +7,7 @@ import aa.q0;
 import aa.u0;
 import aa.w0;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import pz0.su;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -35,7 +35,7 @@ public final class o implements w0 {
         List list = cy0.b.a;
         List list2 = cy0.b.a;
         k71.k.g(list2, "selections");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         return new aa.m("data", q0Var, (String) null, rVar, rVar, list2);
     }
 
@@ -55,7 +55,7 @@ public final class o implements w0 {
     }
 
     public final int hashCode() {
-        return this.v.hashCode() + f1.e.a(this.u, s0.b(this.t, f4.a(this.s, this.r.hashCode() * 31, 31), 31), 31);
+        return this.v.hashCode() + f1.e.a(this.u, s0.b(this.t, f4Shadow.a(this.s, this.r.hashCode() * 31, 31), 31), 31);
     }
 
     public final String i() {
@@ -77,7 +77,7 @@ public final class o implements w0 {
         aa.c.a.b(fVar, wVar, this.r);
         fVar.z0("groupId");
         o0 o0Var = aa.c.i;
-        f4.y(o0Var, fVar, wVar, this.s, "first");
+        f4Shadow.y(o0Var, fVar, wVar, this.s, "first");
         fVar.z(this.t);
         u0 u0Var = this.u;
         if (u0Var instanceof u0) {
@@ -95,7 +95,7 @@ public final class o implements w0 {
     }
 
     public final String toString() {
-        StringBuilder t = f4.t(this.s, "FetchProjectV2GroupPageQuery(viewId=", this.r, ", groupId=", ", first=");
+        StringBuilder t = f4Shadow.t(this.s, "FetchProjectV2GroupPageQuery(viewId=", this.r, ", groupId=", ", first=");
         t.append(this.t);
         t.append(", after=");
         t.append(this.u);

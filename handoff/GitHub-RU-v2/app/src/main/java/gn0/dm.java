@@ -27,7 +27,7 @@ public final class dm {
         t = dmVarArr;
         v8.l0.t(dmVarArr);
         Companion = new cm();
-        sy.d0.o(new String[]{"BASE_REF", "COMMIT_HEAD_SHA", "DEPLOYED", "GIT_MERGE_STATE", "HEAD_REF", "MERGEABILITY", "MERGE_QUEUE", "PRESENCE", "REVIEW_STATE", "STATE", "TIMELINE", "UPDATED", "WORKFLOWS"});
+        sy.d0Shadow.o(new String[]{"BASE_REF", "COMMIT_HEAD_SHA", "DEPLOYED", "GIT_MERGE_STATE", "HEAD_REF", "MERGEABILITY", "MERGE_QUEUE", "PRESENCE", "REVIEW_STATE", "STATE", "TIMELINE", "UPDATED", "WORKFLOWS"});
     }
 
     public dm(String str, int i, String str2) {

@@ -49,7 +49,7 @@ import hc0.xh;
 import hc0.zo;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -60,7 +60,7 @@ public abstract class a {
     static {
         xa.Companion.getClass();
         r b = l0.b(xa.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("hasNextPage", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar = fb.a;
@@ -91,13 +91,13 @@ public abstract class a {
         List r8 = l.r(new m[]{mVar6, new m("name", xVar, "userName", rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
         List r9 = l.r(new m[]{new m("login", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar)});
         di.Companion.getClass();
-        List o = d0.o(new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new n("Subscribable", d0.o("Commit", "Discussion", "Issue", "PullRequest", "Repository", "Team", "TeamDiscussion"), r5), new n("Repository", d0.n("Repository"), r7), new n("User", d0.n("User"), r8), new n("Team", d0.n("Team"), d0.o(new m("organization", l0.b(di.m), (String) null, rVar, rVar, r9), new m("slug", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar))), new n("Organization", d0.n("Organization"), d0.o(new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar))));
+        List o = d0Shadow.o(new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new n("Subscribable", d0Shadow.o("Commit", "Discussion", "Issue", "PullRequest", "Repository", "Team", "TeamDiscussion"), r5), new n("Repository", d0Shadow.n("Repository"), r7), new n("User", d0Shadow.n("User"), r8), new n("Team", d0Shadow.n("Team"), d0Shadow.o(new m("organization", l0.b(di.m), (String) null, rVar, rVar, r9), new m("slug", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("id", l0.b(xVar2), (String) null, rVar, rVar, rVar))), new n("Organization", d0Shadow.n("Organization"), d0Shadow.o(new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar))));
         m mVar7 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar8 = new m("abbreviatedOid", l0.b(eb.a()), (String) null, rVar, rVar, rVar);
         ew.Companion.getClass();
-        List o2 = d0.o(mVar7, mVar8, new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
-        List o3 = d0.o(new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar));
-        List o4 = d0.o(new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar));
+        List o2 = d0Shadow.o(mVar7, mVar8, new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
+        List o3 = d0Shadow.o(new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar));
+        List o4 = d0Shadow.o(new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar));
         m mVar9 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar10 = new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar);
         j2.Companion.getClass();
@@ -105,9 +105,9 @@ public abstract class a {
         k.g(a0Var2, "type");
         m mVar11 = new m("conclusion", a0Var2, (String) null, rVar, rVar, rVar);
         p2.Companion.getClass();
-        List o5 = d0.o(mVar9, mVar10, mVar11, new m("status", l0.b(p2.s), (String) null, rVar, rVar, rVar));
-        List o6 = d0.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
-        List o7 = d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o5 = d0Shadow.o(mVar9, mVar10, mVar11, new m("status", l0.b(p2.s), (String) null, rVar, rVar, rVar));
+        List o6 = d0Shadow.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o7 = d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
         m mVar12 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar13 = new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar);
         db.Companion.getClass();
@@ -115,8 +115,8 @@ public abstract class a {
         m00.Companion.getClass();
         m mVar15 = new m("workflow", l0.b(m00.c), (String) null, rVar, rVar, o6);
         v2.Companion.getClass();
-        List o8 = d0.o(mVar12, mVar13, mVar14, mVar15, new m("checkSuite", l0.b(v2.f), (String) null, rVar, rVar, o7));
-        List o9 = d0.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o8 = d0Shadow.o(mVar12, mVar13, mVar14, mVar15, new m("checkSuite", l0.b(v2.f), (String) null, rVar, rVar, o7));
+        List o9 = d0Shadow.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
         m mVar16 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar17 = new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar);
         m mVar18 = new m("number", l0.b(cb.a()), (String) null, rVar, rVar, rVar);
@@ -127,8 +127,8 @@ public abstract class a {
         lc.Companion.getClass();
         a0 a0Var3 = lc.s;
         k.g(a0Var3, "type");
-        List o11 = d0.o(mVar16, mVar17, mVar18, mVar19, mVar20, new m("stateReason", a0Var3, (String) null, rVar, rVar, rVar), new m("titleHTML", l0.b(eb.a()), "titleHTMLString", rVar, rVar, rVar));
-        List o12 = d0.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o11 = d0Shadow.o(mVar16, mVar17, mVar18, mVar19, mVar20, new m("stateReason", a0Var3, (String) null, rVar, rVar, rVar), new m("titleHTML", l0.b(eb.a()), "titleHTMLString", rVar, rVar, rVar));
+        List o12 = d0Shadow.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
         m mVar21 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar22 = new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar);
         m mVar23 = new m("isDraft", l0.b(wa.a()), (String) null, rVar, rVar, rVar);
@@ -137,13 +137,13 @@ public abstract class a {
         m mVar25 = new m("state", l0.b(fm.s), "pullRequestState", rVar, rVar, rVar);
         m mVar26 = new m("repository", l0.b(zo.a()), (String) null, rVar, rVar, o12);
         hb.Companion.getClass();
-        List o13 = d0.o(mVar21, mVar22, mVar23, mVar24, mVar25, mVar26, new m("titleHTML", l0.b(hb.a), (String) null, rVar, rVar, rVar));
-        List o14 = d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("tagName", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar), new m("repository", l0.b(zo.a()), (String) null, rVar, rVar, d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar))));
-        List o15 = d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("permalink", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
-        List o16 = d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("permalink", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
-        List o17 = d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
-        List o18 = d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
-        List o19 = d0.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o13 = d0Shadow.o(mVar21, mVar22, mVar23, mVar24, mVar25, mVar26, new m("titleHTML", l0.b(hb.a), (String) null, rVar, rVar, rVar));
+        List o14 = d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("tagName", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar), new m("repository", l0.b(zo.a()), (String) null, rVar, rVar, d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar))));
+        List o15 = d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("permalink", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
+        List o16 = d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("permalink", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
+        List o17 = d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar));
+        List o18 = d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o19 = d0Shadow.o(new m("name", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("owner", l0.b(cq.a()), (String) null, rVar, rVar, d0Shadow.o(new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("login", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new m("avatarUrl", l0.b(dw.a()), (String) null, rVar, rVar, rVar))), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
         m mVar27 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar28 = new m("url", l0.b(dw.a()), (String) null, rVar, rVar, rVar);
         m mVar29 = new m("number", l0.b(cb.a()), (String) null, rVar, rVar, rVar);
@@ -154,15 +154,15 @@ public abstract class a {
         w8.Companion.getClass();
         q0 q0Var = w8.c;
         k.g(q0Var, "type");
-        List o21 = d0.o(mVar27, mVar28, mVar29, mVar30, new m("answer", q0Var, (String) null, rVar, rVar, o18), new m("repository", l0.b(zo.a()), (String) null, rVar, rVar, o19));
+        List o21 = d0Shadow.o(mVar27, mVar28, mVar29, mVar30, new m("answer", q0Var, (String) null, rVar, rVar, o18), new m("repository", l0.b(zo.a()), (String) null, rVar, rVar, o19));
         m mVar31 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         x a2 = dw.a();
         k.g(a2, "type");
-        List o22 = d0.o(mVar31, new m("notificationsPermalink", a2, (String) null, rVar, rVar, rVar));
+        List o22 = d0Shadow.o(mVar31, new m("notificationsPermalink", a2, (String) null, rVar, rVar, rVar));
         m mVar32 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         x a3 = dw.a();
         k.g(a3, "type");
-        List o23 = d0.o(new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new n("Commit", d0.n("Commit"), o2), new n("Gist", d0.n("Gist"), o3), new n("TeamDiscussion", d0.n("TeamDiscussion"), o4), new n("CheckSuite", d0.n("CheckSuite"), o5), new n("WorkflowRun", d0.n("WorkflowRun"), o8), new n("Issue", d0.n("Issue"), o11), new n("PullRequest", d0.n("PullRequest"), o13), new n("Release", d0.n("Release"), o14), new n("RepositoryInvitation", d0.n("RepositoryInvitation"), o15), new n("RepositoryVulnerabilityAlert", d0.n("RepositoryVulnerabilityAlert"), o16), new n("RepositoryAdvisory", d0.n("RepositoryAdvisory"), o17), new n("Discussion", d0.n("Discussion"), o21), new n("RepositoryDependabotAlertsThread", d0.n("RepositoryDependabotAlertsThread"), o22), new n("SecurityAdvisory", d0.n("SecurityAdvisory"), d0.o(mVar32, new m("notificationsPermalink", a3, (String) null, rVar, rVar, rVar))));
+        List o23 = d0Shadow.o(new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar), new n("Commit", d0Shadow.n("Commit"), o2), new n("Gist", d0Shadow.n("Gist"), o3), new n("TeamDiscussion", d0Shadow.n("TeamDiscussion"), o4), new n("CheckSuite", d0Shadow.n("CheckSuite"), o5), new n("WorkflowRun", d0Shadow.n("WorkflowRun"), o8), new n("Issue", d0Shadow.n("Issue"), o11), new n("PullRequest", d0Shadow.n("PullRequest"), o13), new n("Release", d0Shadow.n("Release"), o14), new n("RepositoryInvitation", d0Shadow.n("RepositoryInvitation"), o15), new n("RepositoryVulnerabilityAlert", d0Shadow.n("RepositoryVulnerabilityAlert"), o16), new n("RepositoryAdvisory", d0Shadow.n("RepositoryAdvisory"), o17), new n("Discussion", d0Shadow.n("Discussion"), o21), new n("RepositoryDependabotAlertsThread", d0Shadow.n("RepositoryDependabotAlertsThread"), o22), new n("SecurityAdvisory", d0Shadow.n("SecurityAdvisory"), d0Shadow.o(mVar32, new m("notificationsPermalink", a3, (String) null, rVar, rVar, rVar))));
         m mVar33 = new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar);
         m mVar34 = new m("threadType", l0.b(eb.a()), (String) null, rVar, rVar, rVar);
         m mVar35 = new m("title", l0.b(eb.a()), (String) null, rVar, rVar, rVar);
@@ -189,13 +189,13 @@ public abstract class a {
         k.g(a0Var5, "type");
         m mVar46 = new m("reason", a0Var5, (String) null, rVar, rVar, rVar);
         xh.Companion.getClass();
-        List o24 = d0.o(mVar33, mVar34, mVar35, mVar36, mVar37, mVar38, mVar39, mVar40, mVar41, mVar42, mVar43, mVar44, mVar45, mVar46, new m("subject", l0.b(xh.a), (String) null, rVar, rVar, o23), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
+        List o24 = d0Shadow.o(mVar33, mVar34, mVar35, mVar36, mVar37, mVar38, mVar39, mVar40, mVar41, mVar42, mVar43, mVar44, mVar45, mVar46, new m("subject", l0.b(xh.a), (String) null, rVar, rVar, o23), new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar));
         ji.Companion.getClass();
         m mVar47 = new m("pageInfo", l0.b(ji.a), (String) null, rVar, rVar, r);
         oh.Companion.getClass();
-        List o25 = d0.o(mVar47, new m("nodes", l0.a(oh.a), (String) null, rVar, rVar, o24));
+        List o25 = d0Shadow.o(mVar47, new m("nodes", l0.a(oh.a), (String) null, rVar, rVar, o24));
         s mVar48 = new m("__typename", l0.b(eb.a()), (String) null, rVar, rVar, rVar);
-        List n = d0.n("User");
+        List n = d0Shadow.n("User");
         List a5 = j.a();
         s c3 = no.a.c(a5, "selections", "User", n, a5);
         qh.Companion.getClass();
@@ -207,6 +207,6 @@ public abstract class a {
         jz jzVar3 = kz.Companion;
         aa.k kVar3 = new aa.k(kz.r, new u0(new t("first")));
         jz jzVar4 = kz.Companion;
-        a = d0.n(new m("viewer", l0.b(q0Var2), (String) null, rVar, rVar, d0.o(mVar48, c3, new m("notificationThreads", b2, (String) null, rVar, d0.o(kVar, kVar2, kVar3, new aa.k(kz.s, new u0(new t("query")))), o25), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar))));
+        a = d0Shadow.n(new m("viewer", l0.b(q0Var2), (String) null, rVar, rVar, d0Shadow.o(mVar48, c3, new m("notificationThreads", b2, (String) null, rVar, d0Shadow.o(kVar, kVar2, kVar3, new aa.k(kz.s, new u0(new t("query")))), o25), new m("id", l0.b(ab.a()), (String) null, rVar, rVar, rVar))));
     }
 }

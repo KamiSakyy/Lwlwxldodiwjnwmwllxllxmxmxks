@@ -79,7 +79,7 @@ public abstract class q implements aa.a {
         o7.Companion.getClass();
         wVar.e(o7.a).b(fVar, wVar, oVar.b);
         fVar.z0("dismissable");
-        jo.f4.C(oVar.c, aa.c.f, fVar, wVar, "identifier");
+        jo.f4Shadow.C(oVar.c, aa.c.f, fVar, wVar, "identifier");
         aa.c.a.b(fVar, wVar, oVar.d);
         fVar.z0("previewImageUrl");
         aa.c.i.b(fVar, wVar, oVar.e);

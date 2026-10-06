@@ -115,7 +115,7 @@ public final class y1 {
         k71.k.g(qVar, "comment");
         k71.k.g(pullRequestReviewDecision, "reviewDecision");
         new he.i("url", "monalisa", Avatar.Type.Organization, "github", 4733, "A longer title that could be nice", new he.l(he.m.b(issueOrPullRequestState), he.m.c(issueOrPullRequestState, (CloseReason) null), le.j.b(issueOrPullRequestState, false, false), d2.t.e, d2.t.g, d2.t.i), issueType, new h01.p(71, 24), (h01.j) null, false, false, 6, 12, false, false, (String) null, (String) null, (z01.p) null, 1835520);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         com.github.rudroid.common.b0 b0Var = new com.github.rudroid.common.b0(0, rVar);
         IssueState issueState = IssueState.OPEN;
         new h01.n("id", "title", 0, (IssueType) null, (CloseReason) null, b0Var, 0, issueState, "repoOwner", "repoName", (h01.p) null, (String) null);
@@ -125,8 +125,8 @@ public final class y1 {
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
         d3 d3Var = new d3("test", "test");
-        List n = sy.d0.n(aVar2);
-        lg.b bVar = lg.b.r;
+        List n = sy.d0Shadow.n(aVar2);
+        lg.bShadow bVar = lg.bShadow.r;
         oe.a aVar3 = new oe.a("Add a new feature", "Add a new <code>feature</code>", 3, true, now, d3Var, false, "123", (String) null, n, bVar, 34, issueState, new com.github.rudroid.common.b0(0, rVar), 3, (CloseReason) null, (IssueType) null, (h01.p) null, (String) null, (z01.p) null, "search:123", 7274496);
         String str = (8388604 & 1) != 0 ? aVar3.r : "Add a new feature with an extremely long title that should overflow to test behavior and avoid breaking the layout in any way.";
         k71.k.g(str, "title");
@@ -136,7 +136,7 @@ public final class y1 {
         k71.k.g(d3Var2, "owner");
         String str2 = aVar3.y;
         k71.k.g(str2, "id");
-        lg.b bVar2 = aVar3.B;
+        lg.bShadow bVar2 = aVar3.B;
         k71.k.g(bVar2, "itemCountColor");
         IssueState issueState2 = aVar3.D;
         k71.k.g(issueState2, "state");
@@ -145,13 +145,13 @@ public final class y1 {
         String str3 = aVar3.L;
         k71.k.g(str3, "stableId");
         new oe.a(str, "Add a new <code>feature</code> with an extremely long title that should overflow to test behavior and avoid breaking the layout in any way.", aVar3.t, aVar3.u, zonedDateTime, d3Var2, aVar3.x, str2, aVar3.z, aVar3.A, bVar2, aVar3.C, issueState2, b0Var2, aVar3.F, aVar3.G, aVar3.H, aVar3.I, aVar3.J, aVar3.K, str3, aVar3.M, aVar3.N);
-        new oe.c("Add a new feature", "Add a new <code>feature</code>", 5, true, ZonedDateTime.now(), new d3("test", "test"), "123", (String) null, sy.d0.n(aVar2), bVar, 34, (StatusState) null, PullRequestState.OPEN, false, new com.github.rudroid.common.b0(0, rVar), ReviewDecision.APPROVED, 2, (Integer) null, false, (he.q) null, "search:456");
+        new oe.c("Add a new feature", "Add a new <code>feature</code>", 5, true, ZonedDateTime.now(), new d3("test", "test"), "123", (String) null, sy.d0Shadow.n(aVar2), bVar, 34, (StatusState) null, PullRequestState.OPEN, false, new com.github.rudroid.common.b0(0, rVar), ReviewDecision.APPROVED, 2, (Integer) null, false, (he.q) null, "search:456");
         new oe.m("123", "Add a new feature", "Add a new <code>feature</code>", 34, (CloseReason) null, issueState, "test", "test", false, "search:123", 4, 4);
         l01.p0 p0Var = new l01.p0(new l01.e0("", "", new Avatar("", ""), false));
         ZonedDateTime now2 = ZonedDateTime.now();
         k71.k.f(now2, "now(...)");
         l01.t0 t0Var = new l01.t0("projectId", "Project Title", now2, "Project Description", false, x61.s.r, true, 1, "url/url", true);
-        b.f fVar = new b.f(new l01.s(p0Var, t0Var), sy.d0.n(new b.f.a.i("", "Field", ProjectFieldType.TEXT, new l01.o("id", "Value", "Title"), rVar, "viewId", true)));
+        b.f fVar = new b.f(new l01.s(p0Var, t0Var), sy.d0Shadow.n(new b.f.a.i("", "Field", ProjectFieldType.TEXT, new l01.o("id", "Value", "Title"), rVar, "viewId", true)));
         ZonedDateTime now3 = ZonedDateTime.now();
         k71.k.f(now3, "now(...)");
         com.github.rudroid.draft.ui.j jVar = new com.github.rudroid.draft.ui.j(new c01.b("draftIssueId", p0Var, t0Var, aVar, "Draft Issue Title", "Draft Issue Body", now3), fVar);
@@ -172,10 +172,10 @@ public final class y1 {
         tz0.d dVar3 = tz0.d.z;
         new tz0.c("3", "Waiting for approval", (Integer) null, (ZonedDateTime) null, false, "Deploy Preview", dVar3, "https://github.com", (String) null, (String) null, (String) null);
         new tz0.c("4", "External status check", 30, (ZonedDateTime) null, false, "External Check", dVar, (String) null, (String) null, (String) null, (String) null);
-        new tz0.f(tz0.g.s, sy.d0.n(new tz0.a(dVar, 5)));
+        new tz0.f(tz0.g.s, sy.d0Shadow.n(new tz0.a(dVar, 5)));
         new tz0.f(tz0.g.t, x61.l.r(new tz0.a[]{new tz0.a(dVar, 3), new tz0.a(dVar3, 2)}));
         new tz0.f(tz0.g.w, x61.l.r(new tz0.a[]{new tz0.a(dVar, 3), new tz0.a(dVar2, 2)}));
-        new tz0.f(tz0.g.r, sy.d0.n(new tz0.a(dVar2, 5)));
+        new tz0.f(tz0.g.r, sy.d0Shadow.n(new tz0.a(dVar2, 5)));
         new tz0.f(tz0.g.v, x61.l.r(new tz0.a[]{new tz0.a(dVar, 2), new tz0.a(dVar3, 2), new tz0.a(dVar2, 1)}));
         new ud.a(5, 0, 0, 0);
         new ud.a(3, 0, 2, 0);
@@ -194,7 +194,7 @@ public final class y1 {
         b0.k kVar2 = new b0.k("tool-2", "edit", "Edit LoginService.kt", 2131231265, w4Var2, t4Var, "File updated", parse2, (String) null, "src/main/java/com/github/rudroid/login/LoginService.kt");
         Instant parse3 = Instant.parse("2026-03-01T12:00:05Z");
         k71.k.f(parse3, "parse(...)");
-        sy.d0.o(kVar, kVar2, new b0.k("tool-3", "view", "View Config.kt", 2131231261, w4Var, t4Var, (String) null, parse3, (String) null, "src/main/java/com/github/rudroid/Config.kt"));
+        sy.d0Shadow.o(kVar, kVar2, new b0.k("tool-3", "view", "View Config.kt", 2131231261, w4Var, t4Var, (String) null, parse3, (String) null, "src/main/java/com/github/rudroid/Config.kt"));
         sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(19));
         sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(20));
         sy.w.t(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(21));

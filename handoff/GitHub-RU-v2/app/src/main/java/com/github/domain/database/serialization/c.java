@@ -6,7 +6,7 @@ import com.github.domain.searchandfilter.filters.data.label.NoLabel;
 import com.google.android.gms.internal.measurement.d5;
 import f1.q6;
 import fk.h;
-import k71.x;
+import k71.xShadow;
 import l81.n;
 import yz0.k2;
 
@@ -18,9 +18,9 @@ public abstract class c {
 
     static {
         kotlinx.serialization.modules.d dVar = new kotlinx.serialization.modules.d();
-        s sVar = new s(x.a(k2.class));
-        sVar.H(x.a(NoLabel.class), NoLabel.Companion.serializer());
-        sVar.H(x.a(SerializableLabel.class), SerializableLabel.Companion.serializer());
+        s sVar = new s(xShadow.a(k2.class));
+        sVar.H(xShadow.a(NoLabel.class), NoLabel.Companion.serializer());
+        sVar.H(xShadow.a(SerializableLabel.class), SerializableLabel.Companion.serializer());
         sVar.q(new q6(13));
         sVar.n(dVar);
         a = dVar.a();

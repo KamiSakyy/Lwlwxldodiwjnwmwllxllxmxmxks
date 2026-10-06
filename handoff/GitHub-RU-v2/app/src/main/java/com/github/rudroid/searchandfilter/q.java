@@ -94,12 +94,12 @@ public class q extends androidx.lifecycle.k1 {
 
     public static final class c {
         public com.github.rudroid.activities.util.a a;
-        public yl.d b;
+        public yl.dShadow b;
         public yl.a c;
         public yl.c d;
         public fk.f e;
 
-        public c(com.github.rudroid.activities.util.a aVar, yl.d dVar, yl.a aVar2, yl.c cVar, fk.f fVar) {
+        public c(com.github.rudroid.activities.util.a aVar, yl.dShadow dVar, yl.a aVar2, yl.c cVar, fk.f fVar) {
             k71.k.g(aVar, "accountHolder");
             k71.k.g(dVar, "persistFiltersUseCase");
             k71.k.g(aVar2, "deletePersistedFilterUseCase");
@@ -163,26 +163,26 @@ public class q extends androidx.lifecycle.k1 {
         this.A = cVar2;
         this.B = iVar;
         this.C = kVar;
-        y1 c2 = y71.n1.c(Boolean.valueOf(z));
+        y1 c2 = y71.n1Shadow.c(Boolean.valueOf(z));
         this.D = c2;
-        y1 c3 = y71.n1.c(this.t);
+        y1 c3 = y71.n1Shadow.c(this.t);
         this.E = c3;
-        y1 c4 = y71.n1.c(x61.r.r);
+        y1 c4 = y71.n1Shadow.c(x61.rShadow.r);
         this.F = c4;
-        this.G = y71.n1.l(c2, c3, c4, new s(null, this));
-        y1 c5 = y71.n1.c((Object) null);
+        this.G = y71.n1Shadow.l(c2, c3, c4, new s(null, this));
+        y1 c5 = y71.n1Shadow.c((Object) null);
         this.H = c5;
         this.I = new y00.l(new y71.i1(c5), 10);
-        y1 c6 = y71.n1.c((Object) null);
+        y1 c6 = y71.n1Shadow.c((Object) null);
         this.J = c6;
         this.K = new y00.l(new y71.i1(c6), 10);
-        y1 c7 = y71.n1.c((Object) null);
+        y1 c7 = y71.n1Shadow.c((Object) null);
         this.L = c7;
         this.M = new y71.i1(c7);
-        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new i(null, this), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new i(null, this), 3);
         if (cVar != null) {
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new k(null, this), 3);
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new p(null, this), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new k(null, this), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new p(null, this), 3);
             return;
         }
         if (a1Var.a("deeplink_filter_set") == null) {
@@ -317,12 +317,12 @@ public class q extends androidx.lifecycle.k1 {
         if (dVar == null || (aVar = dVar.a) == null) {
             return;
         }
-        this.N = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new u(this, aVar.d(), list, dVar.c, dVar.b, null), 3);
+        this.N = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new u(this, aVar.d(), list, dVar.c, dVar.b, null), 3);
     }
 
     public final void Y(com.github.domain.searchandfilter.filters.data.d dVar, MobileSubjectType mobileSubjectType) {
         if (((List) this.F.getValue()).contains(dVar.r)) {
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new v(this, dVar, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new v(this, dVar, null), 3);
         }
         y1 y1Var = this.E;
         Iterable<com.github.domain.searchandfilter.filters.data.d> iterable = (Iterable) y1Var.getValue();
@@ -337,7 +337,7 @@ public class q extends androidx.lifecycle.k1 {
         y1Var.k((Object) null, arrayList);
         Z(e0.b.r);
         if (this.w != null) {
-            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new w(this, mobileSubjectType, null), 3);
+            v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new w(this, mobileSubjectType, null), 3);
         }
     }
 
@@ -455,7 +455,7 @@ public class q extends androidx.lifecycle.k1 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public q(bm.u uVar, androidx.lifecycle.a1 a1Var, ArrayList arrayList, com.github.rudroid.activities.util.c cVar, yl.d dVar, yl.a aVar, yl.c cVar2, tm.e eVar, fk.f fVar, kj.j jVar, MobileAppElement mobileAppElement, MobileEventContext mobileEventContext, com.github.rudroid.searchandfilter.newflags.i iVar, com.github.rudroid.searchandfilter.newflags.k kVar, int i) {
+    public q(bm.u uVar, androidx.lifecycle.a1 a1Var, ArrayList arrayList, com.github.rudroid.activities.util.c cVar, yl.dShadow dVar, yl.a aVar, yl.c cVar2, tm.e eVar, fk.f fVar, kj.j jVar, MobileAppElement mobileAppElement, MobileEventContext mobileEventContext, com.github.rudroid.searchandfilter.newflags.i iVar, com.github.rudroid.searchandfilter.newflags.k kVar, int i) {
         this(uVar, arrayList, r2 != null ? r2.booleanValue() : false, r0, r5, cVar, eVar, null, r9, iVar, kVar, a1Var);
         com.github.rudroid.repository.branches.y yVar;
         MobileEventContext mobileEventContext2 = (i & 2048) != 0 ? null : mobileEventContext;

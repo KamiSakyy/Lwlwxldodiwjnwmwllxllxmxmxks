@@ -1,6 +1,6 @@
 package se0;
 
-import jo.f4;
+import jo.f4Shadow;
 import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
@@ -29,6 +29,6 @@ public final class a {
     }
 
     public final String toString() {
-        return f4.p("Author(__typename=", this.a, ", actorFields=", this.b, ")");
+        return f4Shadow.p("Author(__typename=", this.a, ", actorFields=", this.b, ")");
     }
 }

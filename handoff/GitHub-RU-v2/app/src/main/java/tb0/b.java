@@ -14,7 +14,7 @@ import hc0.uy;
 import hc0.wg;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -25,7 +25,7 @@ public abstract class b {
     static {
         bb.Companion.getClass();
         r b = l0.b(bb.a);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         m mVar = new m("id", b, (String) null, rVar, rVar, rVar);
         fb.Companion.getClass();
         x xVar = fb.a;
@@ -37,11 +37,11 @@ public abstract class b {
         ap.Companion.getClass();
         q0 q0Var = ap.k0;
         k.g(q0Var, "type");
-        List n = d0.n(new m("repository", q0Var, (String) null, rVar, rVar, r));
+        List n = d0Shadow.n(new m("repository", q0Var, (String) null, rVar, rVar, r));
         uy.Companion.getClass();
         q0 q0Var2 = uy.a;
         k.g(q0Var2, "type");
         wg.Companion.getClass();
-        a = d0.n(new m("updateRepository", q0Var2, (String) null, rVar, no.a.s(wg.V0, new u0(x61.x.u(new w61.k[]{new w61.k("description", new t("description")), new w61.k("repositoryId", new t("repositoryId"))}))), n));
+        a = d0Shadow.n(new m("updateRepository", q0Var2, (String) null, rVar, no.a.s(wg.V0, new u0(x61.x.u(new w61.k[]{new w61.k("description", new t("description")), new w61.k("repositoryId", new t("repositoryId"))}))), n));
     }
 }

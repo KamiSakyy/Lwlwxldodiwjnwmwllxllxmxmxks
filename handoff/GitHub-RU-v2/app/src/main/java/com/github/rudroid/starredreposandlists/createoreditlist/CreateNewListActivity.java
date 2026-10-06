@@ -42,7 +42,7 @@ public final class CreateNewListActivity extends b1 {
     public CreateNewListActivity() {
         this.s0 = false;
         C(new a1(this));
-        this.t0 = new l1(k71.x.a(r.class), new c(), new b(), new d());
+        this.t0 = new l1(k71.xShadow.a(r.class), new c(), new b(), new d());
         this.u0 = sy.w.t(new com.github.rudroid.starredreposandlists.createoreditlist.c(this, 0));
     }
 

@@ -11,7 +11,7 @@ public final class e {
     public int h;
     public int b = Integer.MAX_VALUE;
     public int d = 4096;
-    public c[] e = new c[8];
+    public cShadow[] e = new cShadow[8];
     public int f = 7;
 
     public e(h91.h hVar) {
@@ -28,32 +28,32 @@ public final class e {
                 if (length < i2 || i <= 0) {
                     break;
                 }
-                c cVar = this.e[length];
+                cShadow cVar = this.e[length];
                 k71.k.d(cVar);
                 i -= cVar.c;
                 int i4 = this.h;
-                c cVar2 = this.e[length];
+                cShadow cVar2 = this.e[length];
                 k71.k.d(cVar2);
                 this.h = i4 - cVar2.c;
                 this.g--;
                 i3++;
                 length--;
             }
-            c[] cVarArr = this.e;
+            cShadow[] cVarArr = this.e;
             int i5 = i2 + 1;
             System.arraycopy(cVarArr, i5, cVarArr, i5 + i3, this.g);
-            c[] cVarArr2 = this.e;
+            cShadow[] cVarArr2 = this.e;
             int i6 = this.f + 1;
             Arrays.fill(cVarArr2, i6, i6 + i3, (Object) null);
             this.f += i3;
         }
     }
 
-    public final void b(c cVar) {
+    public final void b(cShadow cVar) {
         int i = cVar.c;
         int i2 = this.d;
         if (i > i2) {
-            c[] cVarArr = this.e;
+            cShadow[] cVarArr = this.e;
             x61.l.G(0, cVarArr.length, (Object) null, cVarArr);
             this.f = this.e.length - 1;
             this.g = 0;
@@ -62,9 +62,9 @@ public final class e {
         }
         a((this.h + i) - i2);
         int i3 = this.g + 1;
-        c[] cVarArr2 = this.e;
+        cShadow[] cVarArr2 = this.e;
         if (i3 > cVarArr2.length) {
-            c[] cVarArr3 = new c[cVarArr2.length * 2];
+            cShadow[] cVarArr3 = new cShadow[cVarArr2.length * 2];
             System.arraycopy(cVarArr2, 0, cVarArr3, cVarArr2.length, cVarArr2.length);
             this.f = this.e.length - 1;
             this.e = cVarArr3;
@@ -76,7 +76,7 @@ public final class e {
         this.h += i;
     }
 
-    public final void c(h91.k kVar) {
+    public final void c(h91.kShadow kVar) {
         k71.k.g(kVar, "data");
         int[] iArr = y.a;
         int d = kVar.d();
@@ -115,7 +115,7 @@ public final class e {
         if (i4 > 0) {
             hVar2.J0((int) ((j << (8 - i4)) | (255 >>> i4)));
         }
-        h91.k v = hVar2.v(hVar2.s);
+        h91.kShadow v = hVar2.v(hVar2.s);
         e(v.d(), 127, 128);
         hVar.E0(v);
     }
@@ -134,15 +134,15 @@ public final class e {
         }
         int size = arrayList.size();
         for (int i4 = 0; i4 < size; i4++) {
-            c cVar = (c) arrayList.get(i4);
-            h91.k q = cVar.a.q();
-            h91.k kVar = cVar.b;
+            cShadow cVar = (cShadow) arrayList.get(i4);
+            h91.kShadow q = cVar.a.q();
+            h91.kShadow kVar = cVar.b;
             Integer num = (Integer) f.b.get(q);
             if (num != null) {
                 int intValue = num.intValue();
                 i2 = intValue + 1;
                 if (2 <= i2 && i2 < 8) {
-                    c[] cVarArr = f.a;
+                    cShadow[] cVarArr = f.a;
                     if (k71.k.b(cVarArr[intValue].b, kVar)) {
                         i = i2;
                     } else if (k71.k.b(cVarArr[i2].b, kVar)) {
@@ -163,10 +163,10 @@ public final class e {
                     if (i5 >= length) {
                         break;
                     }
-                    c cVar2 = this.e[i5];
+                    cShadow cVar2 = this.e[i5];
                     k71.k.d(cVar2);
                     if (k71.k.b(cVar2.a, q)) {
-                        c cVar3 = this.e[i5];
+                        cShadow cVar3 = this.e[i5];
                         k71.k.d(cVar3);
                         if (k71.k.b(cVar3.b, kVar)) {
                             i2 = f.a.length + (i5 - this.f);
@@ -186,7 +186,7 @@ public final class e {
                 c(kVar);
                 b(cVar);
             } else {
-                h91.k kVar2 = c.d;
+                h91.kShadow kVar2 = c.d;
                 q.getClass();
                 k71.k.g(kVar2, "prefix");
                 if (!q.l(0, kVar2, kVar2.d()) || k71.k.b(c.i, q)) {

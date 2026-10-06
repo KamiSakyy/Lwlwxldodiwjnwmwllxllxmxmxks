@@ -192,7 +192,7 @@ public final class s implements AutoCloseable {
                 if (c != '~') {
                     throw new Selector$SelectorParseException("Unknown combinator '%s'", Character.valueOf(c));
                 }
-                eVar_r7 = f(new x(eVar_r7), b0);
+                eVar_r7 = f(new xShadow(eVar_r7), b0);
             }
         }
         return eVar_r7;
@@ -587,7 +587,7 @@ public final class s implements AutoCloseable {
                             Object obj = arrayList.get(i2);
                             i2++;
                             n nVar = (n) obj;
-                            if (!(nVar instanceof x) && !(nVar instanceof w)) {
+                            if (!(nVar instanceof xShadow) && !(nVar instanceof w)) {
                             }
                         }
                     }

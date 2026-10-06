@@ -196,9 +196,9 @@ public final class SettingsNotificationSchedulesFragment extends Hilt_SettingsNo
         d dVar = new d();
         w61.i iVar = w61.i.s;
         w61.h s = sy.w.s(iVar, new e(dVar));
-        this.H0 = new androidx.lifecycle.l1(k71.x.a(r0.class), new f(s), new h(s), new g(s));
+        this.H0 = new androidx.lifecycle.l1(k71.xShadow.a(r0.class), new f(s), new h(s), new g(s));
         w61.h s2 = sy.w.s(iVar, new j(new i()));
-        this.I0 = new androidx.lifecycle.l1(k71.x.a(com.github.rudroid.settings.h.class), new k(s2), new c(s2), new l(s2));
+        this.I0 = new androidx.lifecycle.l1(k71.xShadow.a(com.github.rudroid.settings.h.class), new k(s2), new c(s2), new l(s2));
     }
 
     public final r0 A4() {
@@ -247,7 +247,7 @@ public final class SettingsNotificationSchedulesFragment extends Hilt_SettingsNo
 
     public final void X3() {
         r0 A4 = A4();
-        v71.b0.z(androidx.lifecycle.d1.k(A4), (a71.h) null, (v71.a0) null, new z0(A4, new c0(this, 0), null), 3);
+        v71.b0.z(androidx.lifecycle.d1.k(A4), (a71.h) null, (v71.a0Shadow) null, new z0(A4, new c0(this, 0), null), 3);
         ((androidx.fragment.app.a0) this).Y = true;
     }
 

@@ -37,7 +37,7 @@ public abstract class c {
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public static Boolean f(String str, com.google.android.gms.internal.measurement.w1 w1Var, s0 s0Var) {
         List u;
-        c21.u.g(w1Var);
+        c21.uShadow.g(w1Var);
         if (str != null && w1Var.p() && w1Var.x() != 1 && (w1Var.x() != 7 ? w1Var.q() : w1Var.v() != 0)) {
             int x = w1Var.x();
             boolean t = w1Var.t();
@@ -96,7 +96,7 @@ public abstract class c {
         BigDecimal bigDecimal2;
         BigDecimal bigDecimal3;
         BigDecimal bigDecimal4;
-        c21.u.g(t1Var);
+        c21.uShadow.g(t1Var);
         if (t1Var.p()) {
             if (t1Var.z() != 1 && (t1Var.z() != 5 ? t1Var.s() : t1Var.u() && t1Var.w())) {
                 int z = t1Var.z();

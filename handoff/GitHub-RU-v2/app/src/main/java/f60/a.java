@@ -11,7 +11,7 @@ import hc0.h6;
 import hc0.tc;
 import java.util.List;
 import k71.k;
-import sy.d0;
+import sy.d0Shadow;
 import v8.l0;
 import x61.l;
 
@@ -23,13 +23,13 @@ public abstract class a {
         fb.Companion.getClass();
         x xVar = fb.a;
         r b = l0.b(xVar);
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         s mVar = new m("__typename", b, (String) null, rVar, rVar, rVar);
         List r = l.r(new String[]{"Bot", "EnterpriseUserAccount", "Mannequin", "Organization", "User"});
         List list = f30.a.a;
         List r2 = l.r(new s[]{mVar, no.a.c(list, "selections", "Actor", r, list)});
         s mVar2 = new m("__typename", l0.b(xVar), (String) null, rVar, rVar, rVar);
-        List n = d0.n("Label");
+        List n = d0Shadow.n("Label");
         List list2 = b60.a.a;
         s c = no.a.c(list2, "selections", "Label", n, list2);
         bb.Companion.getClass();

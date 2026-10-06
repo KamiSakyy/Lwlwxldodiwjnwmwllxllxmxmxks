@@ -7,7 +7,7 @@ import na0.o0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f0 implements aa.a {
     public static final f0 a = new f0();
-    public static final List b = sy.d0.o("id", "issueOrPullRequest", "__typename");
+    public static final List b = sy.d0Shadow.o("id", "issueOrPullRequest", "__typename");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

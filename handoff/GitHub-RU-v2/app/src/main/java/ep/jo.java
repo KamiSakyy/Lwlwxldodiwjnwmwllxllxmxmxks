@@ -14,7 +14,7 @@ public abstract class joShadow implements aaShadow.a {
         while (true) {
             int r0 = eVar.r0(a);
             if (r0 == 0) {
-                fzVar = (jo.fz) aa.c.c(no.a, false).a(eVar, wVar);
+                fzVar = (jo.fz) aa.c.c(noShadow.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 1) {
                     break;
@@ -38,7 +38,7 @@ public abstract class joShadow implements aaShadow.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(bzVar, "value");
         fVar.z0("repositories");
-        aa.c.c(no.a, false).b(fVar, wVar, bzVar.a);
+        aa.c.c(noShadow.a, false).b(fVar, wVar, bzVar.a);
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, bzVar.b);
     }

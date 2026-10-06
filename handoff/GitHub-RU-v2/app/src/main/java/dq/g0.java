@@ -16,7 +16,7 @@ public abstract class g0 {
         eh.Companion.getClass();
         aa.x xVar = eh.a;
         k71.k.g(xVar, "type");
-        x61.r rVar = x61.r.r;
+        x61.rShadow rVar = x61.rShadow.r;
         aa.m mVar = new aa.m("color", xVar, (String) null, rVar, rVar, rVar);
         aa.m mVar2 = new aa.m("name", v8.l0.b(xVar), (String) null, rVar, rVar, rVar);
         ah.Companion.getClass();
@@ -32,10 +32,10 @@ public abstract class g0 {
         q0 q0Var = ak.a;
         k71.k.g(q0Var, "type");
         aa.s mVar7 = new aa.m("primaryLanguage", q0Var, (String) null, rVar, rVar, r);
-        List n = sy.d0.n("Repository");
+        List n = sy.d0Shadow.n("Repository");
         List list = ew.p.a;
         aa.s c = no.a.c(list, "selections", "Repository", n, list);
-        List n2 = sy.d0.n("Repository");
+        List n2 = sy.d0Shadow.n("Repository");
         List list2 = h0.a;
         a = x61.l.r(new aa.s[]{mVar3, mVar4, mVar5, mVar6, mVar7, c, no.a.c(list2, "selections", "Repository", n2, list2)});
     }

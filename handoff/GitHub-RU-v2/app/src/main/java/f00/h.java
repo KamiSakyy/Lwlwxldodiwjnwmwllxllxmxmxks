@@ -2,7 +2,7 @@ package f00;
 
 import dw.c7;
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 import m10.sa;
 
 /* loaded from: /home/user/work/p/classes3.dex */
@@ -70,7 +70,7 @@ public abstract class h implements aa.a {
         fVar.I(qVar.g.r);
         fVar.z0("updatedAt");
         sa.Companion.getClass();
-        aa.x xVar = sa.a;
+        aa.xShadow xVar = sa.a;
         wVar.e(xVar).b(fVar, wVar, qVar.h);
         fVar.z0("totalCommentsCount");
         aa.c.b(aVar).b(fVar, wVar, qVar.i);

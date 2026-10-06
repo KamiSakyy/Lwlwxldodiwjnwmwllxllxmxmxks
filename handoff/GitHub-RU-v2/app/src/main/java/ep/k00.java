@@ -7,7 +7,7 @@ import jo.kg0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k00 implements aaShadow.a {
     public static final k00 a = new k00();
-    public static final List b = sy.d0.n("shortcut");
+    public static final List b = sy.d0Shadow.n("shortcut");
 
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");

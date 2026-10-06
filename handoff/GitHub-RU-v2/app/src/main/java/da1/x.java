@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class x extends b0 {
+final class x extends b0Shadow {
     public x() {
         super("InBody", 6);
     }
@@ -41,11 +41,11 @@ final class x extends b0 {
     /* JADX WARN: Removed duplicated region for block: B:595:0x0bfc  */
     /* JADX WARN: Removed duplicated region for block: B:66:0x0202  */
     /* JADX WARN: Removed duplicated region for block: B:81:0x025c  */
-    @Override // da1.b0
+    @Override // da1.b0Shadow
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public final boolean d(s0 s0Var, b bVar) {
+    public final boolean d(s0 s0Var, bShadow bVar) {
         char c;
         char c2;
         ca1.j jVar;
@@ -502,8 +502,8 @@ final class x extends b0 {
                                                             }
                                                             a.D(oVar);
                                                             ca1.j jVar8 = new ca1.j(jVar3.u, bVar.f, null);
-                                                            ca1.b d = jVar8.d();
-                                                            ca1.b d2 = jVar3.d();
+                                                            ca1.bShadow d = jVar8.d();
+                                                            ca1.bShadow d2 = jVar3.d();
                                                             d.getClass();
                                                             size = d2.size();
                                                             if (size != 0) {
@@ -551,8 +551,8 @@ final class x extends b0 {
                                                         int i7 = i2;
                                                         a.D(oVar);
                                                         ca1.j jVar82 = new ca1.j(jVar3.u, bVar.f, null);
-                                                        ca1.b d3 = jVar82.d();
-                                                        ca1.b d22 = jVar3.d();
+                                                        ca1.bShadow d3 = jVar82.d();
+                                                        ca1.bShadow d22 = jVar3.d();
                                                         d3.getClass();
                                                         size = d22.size();
                                                         if (size != 0) {
@@ -1129,7 +1129,7 @@ final class x extends b0 {
                     if (p0Var.f) {
                         return true;
                     }
-                    b0 b0Var = bVar.l;
+                    b0Shadow b0Var = bVar.l;
                     if (b0Var.equals(zVar) || b0Var.equals(b0.B) || b0Var.equals(b0.D) || b0Var.equals(b0.E) || b0Var.equals(b0.F)) {
                         bVar.l = b0.H;
                         return true;
@@ -1422,7 +1422,7 @@ final class x extends b0 {
         return true;
     }
 
-    public final boolean e(s0 s0Var, b bVar) {
+    public final boolean e(s0 s0Var, bShadow bVar) {
         s0Var.getClass();
         String str = ((o0) s0Var).e;
         ArrayList arrayList = bVar.e;

@@ -18,12 +18,12 @@ import rc0.h;
 import rc0.l;
 import rc0.m;
 import rc0.o;
-import sy.t;
+import sy.tShadow;
 import sy.u;
 import wc0.m1;
 import wc0.s1;
 import x01.i;
-import x61.r;
+import x61.rShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
@@ -33,17 +33,17 @@ public abstract class a {
         String str = m1Var.a;
         String str2 = m1Var.b;
         yv yvVar = m1Var.h;
-        return new mn.a(kVar, str, (String) null, str2, u.l(yvVar), t.t(yvVar), m1Var.b, (String) null, 0, m1Var.f, (ZonedDateTime) null, (ZonedDateTime) null, m1Var.d, m1Var.i);
+        return new mn.a(kVar, str, (String) null, str2, u.l(yvVar), tShadow.t(yvVar), m1Var.b, (String) null, 0, m1Var.f, (ZonedDateTime) null, (ZonedDateTime) null, m1Var.d, m1Var.i);
     }
 
     public static final mn.a b(s1 s1Var, String str) {
-        return new mn.a(str != null ? mn.k.s : mn.k.t, s1Var.a, s1Var.b, s1Var.c, u.n(s1Var.d), t.u(s1Var.e), s1Var.g, str, s1Var.f, s1Var.h, s1Var.i, s1Var.j, s1Var.k, s1Var.l);
+        return new mn.a(str != null ? mn.k.s : mn.k.t, s1Var.a, s1Var.b, s1Var.c, u.n(s1Var.d), tShadow.u(s1Var.e), s1Var.g, str, s1Var.f, s1Var.h, s1Var.i, s1Var.j, s1Var.k, s1Var.l);
     }
 
     public static final b c(wc0.a aVar) {
         int seconds;
         String str = aVar.b;
-        CheckConclusionState u = t.u(aVar.c);
+        CheckConclusionState u = tShadow.u(aVar.c);
         CheckStatusState n = u.n(aVar.d);
         ZonedDateTime zonedDateTime = aVar.e;
         ZonedDateTime zonedDateTime2 = aVar.f;
@@ -56,7 +56,7 @@ public abstract class a {
     }
 
     /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v0, types: [x61.r] */
+    /* JADX WARN: Type inference failed for: r4v0, types: [x61.rShadow] */
     /* JADX WARN: Type inference failed for: r4v1 */
     /* JADX WARN: Type inference failed for: r4v7, types: [java.util.ArrayList] */
     public static final d d(h hVar, String str) {
@@ -71,7 +71,7 @@ public abstract class a {
         mn.a b = b(hVar.d, str);
         m mVar = hVar.c;
         if (mVar == null || (list = mVar.c) == null) {
-            r4 = r.r;
+            r4 = rShadow.r;
         } else {
             r4 = new ArrayList();
             for (f fVar : list) {
@@ -105,7 +105,7 @@ public abstract class a {
         String str = iVar.a;
         String str2 = iVar.b;
         yv yvVar = iVar.e;
-        return new d(new mn.a(kVar, str, (String) null, str2, u.l(yvVar), t.t(yvVar), str2, (String) null, 0, iVar.c, iVar.d, (ZonedDateTime) null, (String) null, Boolean.TRUE), new i(null, false, true), (String) null, (String) null, 1792);
+        return new d(new mn.a(kVar, str, (String) null, str2, u.l(yvVar), tShadow.t(yvVar), str2, (String) null, 0, iVar.c, iVar.d, (ZonedDateTime) null, (String) null, Boolean.TRUE), new i(null, false, true), (String) null, (String) null, 1792);
     }
 
     public static final d f(m1 m1Var) {

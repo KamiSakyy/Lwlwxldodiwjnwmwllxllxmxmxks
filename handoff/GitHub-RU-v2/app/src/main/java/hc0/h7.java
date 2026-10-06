@@ -7,8 +7,8 @@ public abstract class h7 {
     public static final g7 Companion = new g7();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         yg.Companion.getClass();
-        new aa.q0("DeployedEvent", n, sy.d0.n(yg.a));
+        new aa.q0("DeployedEvent", n, sy.d0Shadow.n(yg.a));
     }
 }

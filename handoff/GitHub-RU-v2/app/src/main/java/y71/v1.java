@@ -36,6 +36,6 @@ public final class v1 implements r1 {
         if (j > 0) {
             bVar.add("stopTimeout=" + j + "ms");
         }
-        return a0.s0.m(new StringBuilder("SharingStarted.WhileSubscribed("), x61.m.c0(sy.d0.h(bVar), (String) null, (String) null, (String) null, 0, (j71.c) null, 63), ')');
+        return a0.s0.m(new StringBuilder("SharingStarted.WhileSubscribed("), x61.m.c0(sy.d0Shadow.h(bVar), (String) null, (String) null, (String) null, 0, (j71.c) null, 63), ')');
     }
 }

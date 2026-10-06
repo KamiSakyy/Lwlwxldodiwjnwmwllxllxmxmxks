@@ -57,7 +57,7 @@ final class v extends c71.j implements j71.e {
             String str2 = sVar.z;
             String str3 = sVar.B;
             h hVar2 = (h) ((g1) y1Var.getValue()).getData();
-            List list = hVar2 != null ? hVar2.a : x61.r.r;
+            List list = hVar2 != null ? hVar2.a : x61.rShadow.r;
             u uVar = new u(0, sVar);
             this.v = 1;
             obj = a1Var.c(str, str2, str3, this.x, list, uVar, this);

@@ -1,13 +1,13 @@
 package bm0;
 
 import java.util.List;
-import jo.f4;
+import jo.f4Shadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class z implements aa.a {
     public static final List a = x61.l.r(new String[]{"id", "url", "runNumber", "workflow", "checkSuite"});
 
-    public static am0.a0 c(ea.e eVar, aa.w wVar) {
+    public static am0.a0Shadow c(ea.e eVar, aa.w wVar) {
         Integer num;
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
@@ -28,7 +28,7 @@ public abstract class z implements aa.a {
                 long nextLong = eVar.nextLong();
                 if (nextLong > 2147483647L) {
                     while (nextLong > 2147483647L) {
-                        nextLong = f4.c(1, nextLong, "substring(...)");
+                        nextLong = f4Shadow.c(1, nextLong, "substring(...)");
                     }
                     num2 = Integer.valueOf((int) nextLong);
                 } else {
@@ -65,13 +65,13 @@ public abstract class z implements aa.a {
             throw null;
         }
         if (bVar != null) {
-            return new am0.a0(str, str2, intValue, p0Var, bVar);
+            return new am0.a0Shadow(str, str2, intValue, p0Var, bVar);
         }
         k41.b.B(eVar, "checkSuite");
         throw null;
     }
 
-    public static void d(ea.f fVar, aa.w wVar, am0.a0 a0Var) {
+    public static void d(ea.f fVar, aa.w wVar, am0.a0Shadow a0Var) {
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(a0Var, "value");

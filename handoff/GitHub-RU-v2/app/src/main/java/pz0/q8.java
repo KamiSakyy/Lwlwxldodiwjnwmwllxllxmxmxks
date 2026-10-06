@@ -7,8 +7,8 @@ public abstract class q8 {
     public static final p8 Companion = new p8();
 
     static {
-        List n = sy.d0.n("id");
+        List n = sy.d0Shadow.n("id");
         wk.Companion.getClass();
-        new aa.q0("DemilestonedEvent", n, sy.d0.n(wk.a));
+        new aa.q0("DemilestonedEvent", n, sy.d0Shadow.n(wk.a));
     }
 }

@@ -46,7 +46,7 @@ import com.google.android.gms.internal.measurement.z3;
 import d.y;
 import gn0.hn;
 import hc0.jl;
-import in.r;
+import in.rShadow;
 import java.io.File;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
@@ -78,7 +78,7 @@ import pz0.n30;
 import pz0.ot;
 import s3.o;
 import s3.p;
-import sy.d0;
+import sy.d0Shadow;
 import t00.f8;
 import vz.t;
 import w3.u;
@@ -116,7 +116,7 @@ public abstract class f {
 
     public static final y71.i A(ProjectsMetaInfo projectsMetaInfo, com.github.service.wrapper.b bVar) {
         k71.k.g(bVar, "cachedClient");
-        return projectsMetaInfo != null ? r.l(com.github.service.wrapper.a.o(bVar, new t(projectsMetaInfo.s), null, false, null, null, 62)) : new f8(21, a0.a);
+        return projectsMetaInfo != null ? rShadow.l(com.github.service.wrapper.a.o(bVar, new t(projectsMetaInfo.s), null, false, null, null, 62)) : new f8(21, a0.a);
     }
 
     public static final float C(long j, float f, s3.c cVar) {
@@ -138,7 +138,7 @@ public abstract class f {
 
     public static final void D(Spannable spannable, long j, int i, int i2) {
         if (j != 16) {
-            spannable.setSpan(new ForegroundColorSpan(d2.a0.y(j)), i, i2, 33);
+            spannable.setSpan(new ForegroundColorSpan(d2.a0Shadow.y(j)), i, i2, 33);
         }
     }
 
@@ -154,7 +154,7 @@ public abstract class f {
     public static final void F(Spannable spannable, n3.b bVar, int i, int i2) {
         if (bVar != null) {
             ArrayList arrayList = new ArrayList(n.F(bVar, 10));
-            Iterator it = bVar.r.iterator();
+            Iterator it = bVar.rShadow.iterator();
             while (it.hasNext()) {
                 arrayList.add(((n3.a) it.next()).a);
             }
@@ -171,7 +171,7 @@ public abstract class f {
     }
 
     public static final f50 H(TrendingPeriod trendingPeriod) {
-        int i = trendingPeriod == null ? -1 : jx0.r.a[trendingPeriod.ordinal()];
+        int i = trendingPeriod == null ? -1 : jx0.rShadow.a[trendingPeriod.ordinal()];
         if (i == -1) {
             return f50.v;
         }
@@ -273,8 +273,8 @@ public abstract class f {
         SubscriptionState subscriptionState6 = SubscriptionState.SUBSCRIBED;
         SubscriptionState subscriptionState7 = (Q5 == subscriptionState6 && Q6 == null) ? null : subscriptionState6;
         List f = b91.g.f(p2Var.w);
-        List list3 = p2Var.r.a;
-        x61.r rVar = x61.r.r;
+        List list3 = p2Var.rShadow.a;
+        x61.rShadow rVar = x61.rShadow.r;
         if (list3 == null) {
             list3 = rVar;
         }
@@ -721,7 +721,7 @@ public abstract class f {
     public static final ArrayList d(ep0.i iVar) {
         List list = iVar != null ? iVar.b.c : null;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         ArrayList S = m.S(list);
         ArrayList arrayList = new ArrayList(n.F(S, 10));
@@ -799,7 +799,7 @@ public abstract class f {
         w61.k kVar2;
         Iterable iterable = hVar.a;
         if (iterable == null) {
-            iterable = x61.r.r;
+            iterable = x61.rShadow.r;
         }
         ArrayList S = m.S(iterable);
         int i2 = 10;
@@ -841,7 +841,7 @@ public abstract class f {
                         i5++;
                         int i6 = i4 + 1;
                         if (i4 < 0) {
-                            d0.x();
+                            d0Shadow.x();
                             throw null;
                         }
                         i5 i5Var = ((q4) obj2).b;
@@ -945,7 +945,7 @@ public abstract class f {
         List f = com.google.common.util.concurrent.a.f((k80Var == null || (j80Var6 = k80Var.b) == null) ? null : j80Var6.j);
         List list = (k80Var == null || (j80Var5 = k80Var.b) == null) ? null : j80Var5.f.a;
         if (list == null) {
-            list = x61.r.r;
+            list = x61.rShadow.r;
         }
         ArrayList S = m.S(list);
         ArrayList arrayList2 = new ArrayList(n.F(S, 10));
@@ -966,7 +966,7 @@ public abstract class f {
         se0.c cVar = (k80Var == null || (j80Var3 = k80Var.b) == null) ? null : j80Var3.k;
         if (cVar == null) {
             yz0.s.Companion.getClass();
-            bVar = yz0.r.b;
+            bVar = yz0.rShadow.b;
         } else {
             j80 j80Var10 = k80Var.b;
             bVar = new wl0.b(cVar, j80Var10.c, new yz0.b0(j80Var10.b));
@@ -1002,7 +1002,7 @@ public abstract class f {
         s71.i z = i21.a.z(new h1(view, (a71.c) null, 0));
         while (z.hasNext()) {
             ArrayList arrayList = s((View) z.next()).a;
-            for (int m = d0.m(arrayList); -1 < m; m--) {
+            for (int m = d0Shadow.m(arrayList); -1 < m; m--) {
                 ((w2.n2) arrayList.get(m)).a.d();
             }
         }

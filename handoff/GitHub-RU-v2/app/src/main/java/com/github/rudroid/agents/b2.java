@@ -11,7 +11,7 @@ public final class b2 extends androidx.lifecycle.k1 implements com.github.rudroi
     public ui.l f6598s;
 
     /* renamed from: t, reason: collision with root package name */
-    public ui.h f6599t;
+    public ui.hShadow f6599t;
 
     /* renamed from: u, reason: collision with root package name */
     public androidx.lifecycle.a1 f6600u;
@@ -34,7 +34,7 @@ public final class b2 extends androidx.lifecycle.k1 implements com.github.rudroi
     public static final class a {
     }
 
-    public b2(ui.l lVar, ui.h hVar, androidx.lifecycle.a1 a1Var, com.github.rudroid.activities.util.c cVar) {
+    public b2(ui.l lVar, ui.hShadow hVar, androidx.lifecycle.a1 a1Var, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(lVar, "observeRepositorySubagentsUseCase");
         k71.k.g(hVar, "loadRepositorySubagentsUseCase");
         k71.k.g(a1Var, "savedStateHandle");
@@ -44,7 +44,7 @@ public final class b2 extends androidx.lifecycle.k1 implements com.github.rudroi
         this.f6600u = a1Var;
         this.f6601v = cVar;
         com.github.rudroid.utilities.ui.g1.Companion.getClass();
-        y71.y1 c10 = y71.n1.c(new com.github.rudroid.utilities.ui.u0(x61.r.r));
+        y71.y1 c10 = y71.n1Shadow.c(new com.github.rudroid.utilities.ui.u0(x61.rShadow.r));
         this.f6602w = c10;
         this.f6603x = com.github.rudroid.utilities.w0.f(c10, androidx.lifecycle.d1.k(this), new a2(this, 0));
         this.f6604y = new x01.i((String) null, false, true);
@@ -56,13 +56,13 @@ public final class b2 extends androidx.lifecycle.k1 implements com.github.rudroi
         if (q1Var2 != null) {
             q1Var2.m((CancellationException) null);
         }
-        this.f6605z = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new e2(this, null), 3);
+        this.f6605z = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new e2(this, null), 3);
     }
 
     public final void D() {
         v71.q1 q1Var = this.A;
         if (q1Var == null || !q1Var.f()) {
-            this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0) null, new h2(this, null), 3);
+            this.A = v71.b0.z(androidx.lifecycle.d1.k(this), (a71.h) null, (v71.a0Shadow) null, new h2(this, null), 3);
         }
     }
 
