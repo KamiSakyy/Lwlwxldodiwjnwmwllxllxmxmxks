@@ -262,7 +262,11 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         Row row = rows.get(position);
         if (row.kind == TYPE_DAY || row.kind == TYPE_UNREAD) {
-            ((DayHolder) holder).label.setText(row.label);
+            DayHolder day = (DayHolder) holder;
+            day.label.setText(row.label);
+            // «Непрочитанные сообщения» подсвечиваем акцентом, как в Telegram
+            day.label.setTextColor(holder.itemView.getContext().getResources().getColor(
+                    row.kind == TYPE_UNREAD ? R.color.brand : R.color.text_primary));
             return;
         }
         bindMessage((MessageHolder) holder, row.msg);
@@ -373,7 +377,8 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             h.text.setVisibility(View.VISIBLE);
             h.text.setText(R.string.message_deleted);
             h.text.setTypeface(null, android.graphics.Typeface.ITALIC);
-            h.text.setTextColor(0x99FFFFFF & (m.outgoing ? 0xFFFFFFFF : 0xFF8E8E93));
+            h.text.setTextColor(m.outgoing
+                    ? 0x99FFFFFF : ctx.getResources().getColor(R.color.text_muted));
         } else if (text.isEmpty() && !m.hasMedia() && !"invite".equals(m.type)) {
             h.text.setVisibility(View.VISIBLE);
             h.text.setText(R.string.undecryptable);
@@ -564,7 +569,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private int resolveSecondary(Context ctx) {
         android.util.TypedValue value = new android.util.TypedValue();
         if (!ctx.getTheme().resolveAttribute(com.google.android.material.R.attr.colorOnSurfaceVariant, value, true)) {
-            return 0xFF8E8E93;
+            return ctx.getResources().getColor(R.color.text_secondary);
         }
         return value.data;
     }

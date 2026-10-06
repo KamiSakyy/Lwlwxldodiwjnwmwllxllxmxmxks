@@ -184,7 +184,8 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         h.state.setVisibility(!chat.lastOutgoing && hasKey ? View.VISIBLE : View.GONE);
         h.state.setImageResource(hasKey ? R.drawable.ic_lock : R.drawable.ic_lock_open);
         h.state.setImageTintList(android.content.res.ColorStateList.valueOf(
-                hasKey ? 0xFF31C48D : 0xFF9AA6B2));
+                hasKey ? h.itemView.getContext().getResources().getColor(R.color.lock_green)
+                        : h.itemView.getContext().getResources().getColor(R.color.text_tertiary)));
         h.state.setContentDescription(h.itemView.getContext().getString(
                 hasKey ? R.string.encryption_on : R.string.encryption_waiting));
 
@@ -227,7 +228,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         android.util.TypedValue value = new android.util.TypedValue();
         if (!ctx.getTheme().resolveAttribute(com.google.android.material.R.attr.colorOnSurface,
                 value, true)) {
-            return 0xFFFFFFFF;
+            return ctx.getResources().getColor(R.color.text_primary);
         }
         return value.data;
     }
