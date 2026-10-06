@@ -93,6 +93,24 @@ jobs:
           ls "$SRC"/k71/ | head -5 | tee -a "$R"
           head -3 "$SRC/k71/k.java" | tee -a "$R"
 
+          echo "===== ЭКСП 14: FULL БЕЗ стаб-файлов =====" | tee -a "$R"
+          grep -v -Z -e "" /dev/null 2>/dev/null || true
+          while IFS= read -r f; do if ! grep -q "СТАБ-\|\[restore\]" "$f" 2>/dev/null; then echo "$f"; fi; done < /tmp/sources_all.txt > /tmp/s_nostubs.txt
+          echo "файлов без стабов: $(wc -l < /tmp/s_nostubs.txt) (вырезано: $(( $(wc -l < /tmp/sources_all.txt) - $(wc -l < /tmp/s_nostubs.txt) )))" | tee -a "$R"
+          javac -J-Xmx10g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l14 @/tmp/s_nostubs.txt > /tmp/l14.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l14.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l14.log)" | tee -a "$R"
+          echo "===== ЭКСП 15: half2 верхняя половина (11k) =====" | tee -a "$R"
+          H2=$(( $(wc -l < /tmp/sources_all.txt) / 2 ))
+          TOT=$(wc -l < /tmp/sources_all.txt)
+          sed -n "$((H2+1)),$(( (H2+TOT)/2 ))p" /tmp/sources_all.txt > /tmp/s_h2a.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l15 @/tmp/s_h2a.txt > /tmp/l15.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l15.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l15.log)" | tee -a "$R"
+          echo "===== ЭКСП 16: half2 нижняя половина (11k) =====" | tee -a "$R"
+          sed -n "$(( (H2+TOT)/2 + 1 )),${TOT}p" /tmp/sources_all.txt > /tmp/s_h2b.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l16 @/tmp/s_h2b.txt > /tmp/l16.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l16.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l16.log)" | tee -a "$R"
+
+
 
       - name: "Коммит отчёта лабы"
         if: always()
