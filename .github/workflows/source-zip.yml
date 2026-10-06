@@ -6,6 +6,9 @@ on:
     branches:
       - arena/8437a850-lwlwxldodiwjnwmwllxllxmxmxks
 
+permissions:
+  contents: write
+
 jobs:
   zip:
     runs-on: ubuntu-latest
