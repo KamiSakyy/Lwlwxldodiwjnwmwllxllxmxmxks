@@ -1,4 +1,4 @@
-package com.mailgram.app.media;
+package com.mailgram.app.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,9 +23,9 @@ import androidx.core.content.FileProvider;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.mailgram.app.R;
+import com.mailgram.app.media.MediaUtil;
 import com.mailgram.app.store.Msg;
 import com.mailgram.app.store.Store;
-import com.mailgram.app.ui.PhotoUtil;
 
 import java.io.File;
 import java.io.FileOutputStream;

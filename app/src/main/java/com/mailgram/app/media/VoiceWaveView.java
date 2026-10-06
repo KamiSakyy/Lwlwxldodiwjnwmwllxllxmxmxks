@@ -67,7 +67,7 @@ public class VoiceWaveView extends View {
         int width = getWidth();
         if (height <= 0 || width <= 0) return;
 
-        int bars = amplitudes.length > 1 ? amplitudes.length : Math.max(12, width / dp(4f));
+        int bars = amplitudes.length > 1 ? amplitudes.length : Math.max(12, (int) (width / dp(4f)));
         float step = (float) width / (float) bars;
         float barWidth = Math.max(dp(1.6f), step * 0.55f);
         paint.setStrokeCap(Paint.Cap.ROUND);
