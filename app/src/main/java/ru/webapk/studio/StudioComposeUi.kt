@@ -35,22 +35,27 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.asImageBitmap
@@ -67,28 +72,33 @@ import androidx.compose.ui.unit.sp
 
 /** State bridge keeps the existing Java import/build pipeline independent from Compose UI. */
 class StudioComposeUi(private val activity: MainActivity) {
-    private var appName by mutableStateOf("Мой сайт")
-    private var packageId by mutableStateOf("com.example.mysite")
+    private val preferences = activity.getPreferences(Context.MODE_PRIVATE)
+    private val initialPackageId = preferences.getString("draft_package_id", "com.example.mysite")
+        ?: "com.example.mysite"
+    private var appName by mutableStateOf(preferences.getString("draft_app_name", "Мой сайт") ?: "Мой сайт")
+    private var packageId by mutableStateOf(initialPackageId)
     private var versionCode by mutableStateOf(
-        nextVersion(activity.getPreferences(Context.MODE_PRIVATE)
-            .getInt("target_version_com.example.mysite", 0))
+        preferences.getString("draft_version_code", null)
+            ?: nextVersion(preferences.getInt("target_version_$initialPackageId", 0))
     )
-    private var autoRotate by mutableStateOf(
-        activity.getPreferences(Context.MODE_PRIVATE).getBoolean("auto_rotate", false)
+    private var autoRotate by mutableStateOf(preferences.getBoolean("auto_rotate", false))
+    private var fullscreen by mutableStateOf(preferences.getBoolean("fullscreen", false))
+    private var projectSummaryState by mutableStateOf(
+        preferences.getString("draft_project_summary", "Файл ещё не выбран") ?: "Файл ещё не выбран"
     )
-    private var fullscreen by mutableStateOf(
-        activity.getPreferences(Context.MODE_PRIVATE).getBoolean("fullscreen", false)
-    )
-    private var projectSummaryState by mutableStateOf("Файл ещё не выбран")
     private var iconSummary by mutableStateOf("Иконка по умолчанию")
     private var iconBitmap by mutableStateOf<Bitmap?>(
-        BitmapFactory.decodeResource(activity.resources, R.mipmap.ic_launcher)
+        BitmapFactory.decodeResource(activity.resources, R.drawable.site_default_icon)
     )
     private var statusMessage by mutableStateOf("")
     private var isBusy by mutableStateOf(false)
     private var canSave by mutableStateOf(false)
+    private var buildProgress by mutableStateOf(0f)
+    private var buildProgressMessage by mutableStateOf("")
     private var packageErrorState by mutableStateOf<String?>(null)
     private var versionErrorState by mutableStateOf<String?>(null)
+    private val projectReady: Boolean
+        get() = projectSummaryState != "Файл ещё не выбран"
 
     fun install(view: ComposeView) {
         view.setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
@@ -104,31 +114,36 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun getVersionCodeValue(): String = versionCode
     fun getAutoRotateValue(): Boolean = autoRotate
     fun getFullscreenValue(): Boolean = fullscreen
+    fun getProjectSummaryValue(): String = projectSummaryState
 
     fun setAppNameValue(value: String) {
         appName = value.take(40)
+        preferences.edit().putString("draft_app_name", appName).apply()
     }
 
     fun setPackageIdValue(value: String) {
         packageId = value.take(127)
+        preferences.edit().putString("draft_package_id", packageId).apply()
     }
 
     fun setVersionCodeValue(value: String) {
         versionCode = value.take(10)
+        preferences.edit().putString("draft_version_code", versionCode).apply()
     }
 
     fun setAutoRotateValue(value: Boolean) {
         autoRotate = value
-        activity.getPreferences(Context.MODE_PRIVATE).edit().putBoolean("auto_rotate", value).apply()
+        preferences.edit().putBoolean("auto_rotate", value).apply()
     }
 
     fun setFullscreenValue(value: Boolean) {
         fullscreen = value
-        activity.getPreferences(Context.MODE_PRIVATE).edit().putBoolean("fullscreen", value).apply()
+        preferences.edit().putBoolean("fullscreen", value).apply()
     }
 
     fun setProjectSummary(value: String) {
         projectSummaryState = value
+        preferences.edit().putString("draft_project_summary", value).apply()
     }
 
     fun setIcon(bitmap: Bitmap?, summary: String) {
@@ -139,6 +154,14 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun setStatus(message: String, busy: Boolean) {
         statusMessage = message
         isBusy = busy
+        if (busy && !message.startsWith("Создаю и подписываю APK")) {
+            buildProgressMessage = ""
+        }
+    }
+
+    fun setBuildProgress(progress: Float, message: String) {
+        buildProgress = progress.coerceIn(0f, 1f)
+        buildProgressMessage = message
     }
 
     fun setSaveAvailable(available: Boolean) {
@@ -155,6 +178,7 @@ class StudioComposeUi(private val activity: MainActivity) {
 
     @Composable
     private fun StudioScreen() {
+        var showClearProjectDialog by remember { mutableStateOf(false) }
         Surface(modifier = Modifier.fillMaxSize(), color = Background) {
             Column(modifier = Modifier.fillMaxSize()) {
                 Column(
@@ -170,13 +194,28 @@ class StudioComposeUi(private val activity: MainActivity) {
                         .padding(horizontal = 16.dp, vertical = 8.dp),
                     verticalArrangement = Arrangement.spacedBy(0.dp)
                 ) {
-                    SectionCard(title = "Проект", subtitle = "Выберите HTML-файл или ZIP-архив сайта.") {
-                        androidx.compose.material3.Text(
-                            text = projectSummaryState,
-                            color = Muted,
-                            fontSize = 13.sp,
-                            lineHeight = 18.sp
-                        )
+                    StudioHeader()
+                    SectionCard(title = "01 · ПРОЕКТ", subtitle = "Выберите HTML-файл или ZIP-проект.") {
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            androidx.compose.material3.Text(
+                                text = projectSummaryState,
+                                color = if (projectReady) Mint else Muted,
+                                fontSize = 13.sp,
+                                lineHeight = 18.sp,
+                                modifier = Modifier.weight(1f)
+                            )
+                            if (projectReady) {
+                                TextButton(
+                                    onClick = { showClearProjectDialog = true },
+                                    enabled = !isBusy
+                                ) {
+                                    androidx.compose.material3.Text("Сбросить", color = Error, fontSize = 12.sp)
+                                }
+                            }
+                        }
                         Spacer(Modifier.height(10.dp))
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             OutlinedButton(
@@ -200,31 +239,55 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 androidx.compose.material3.Text("ZIP-проект", fontSize = 13.sp)
                             }
                         }
+                        Surface(
+                            modifier = Modifier.fillMaxWidth().padding(top = 10.dp),
+                            shape = RoundedCornerShape(13.dp),
+                            color = Raised
+                        ) {
+                            Row(
+                                modifier = Modifier.padding(horizontal = 11.dp, vertical = 9.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                androidx.compose.material3.Text(
+                                    text = "ЗАЩИТА",
+                                    color = Mint,
+                                    fontSize = 9.sp,
+                                    fontWeight = FontWeight.Bold
+                                )
+                                Spacer(Modifier.size(9.dp))
+                                androidx.compose.material3.Text(
+                                    text = "Сайт шифруется и обрабатывается на устройстве.",
+                                    color = Muted,
+                                    fontSize = 11.sp,
+                                    lineHeight = 15.sp
+                                )
+                            }
+                        }
                     }
 
-                    SectionCard(title = "Приложение") {
+                    SectionCard(title = "02 · ОБРАЗ ПРИЛОЖЕНИЯ") {
                         StudioTextField(
                             label = "Название приложения",
                             value = appName,
-                            onValueChange = {
-                                appName = it.take(40)
-                            },
+                            onValueChange = { setAppNameValue(it) },
                             placeholder = "Например, Мой сайт",
                             keyboardType = KeyboardType.Text,
-                            isError = false
+                            isError = false,
+                            enabled = !isBusy
                         )
                         Spacer(Modifier.height(8.dp))
                         StudioTextField(
                             label = "Package ID",
                             value = packageId,
                             onValueChange = {
-                                packageId = it.take(127)
+                                setPackageIdValue(it)
                                 packageErrorState = null
                             },
                             placeholder = "com.company.mysite",
                             keyboardType = KeyboardType.Ascii,
                             isError = packageErrorState != null,
-                            monospace = true
+                            monospace = true,
+                            enabled = !isBusy
                         )
                         if (packageErrorState != null) {
                             androidx.compose.material3.Text(
@@ -244,8 +307,9 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 CompactVersionField(
                                     value = versionCode,
                                     isError = versionErrorState != null,
+                                    enabled = !isBusy,
                                     onValueChange = {
-                                        versionCode = it.take(10).filter(Char::isDigit)
+                                        setVersionCodeValue(it.filter(Char::isDigit))
                                         versionErrorState = null
                                     }
                                 )
@@ -270,7 +334,8 @@ class StudioComposeUi(private val activity: MainActivity) {
                                     )
                                     Switch(
                                         checked = autoRotate,
-                                        onCheckedChange = { setAutoRotateValue(it) }
+                                        onCheckedChange = { setAutoRotateValue(it) },
+                                        enabled = !isBusy
                                     )
                                 }
                             }
@@ -287,13 +352,13 @@ class StudioComposeUi(private val activity: MainActivity) {
                             ) {
                                 Column(modifier = Modifier.weight(1f)) {
                                     androidx.compose.material3.Text(
-                                        text = "Полный экран",
+                                        text = "Полноэкранный режим",
                                         color = Ink,
                                         fontSize = 12.sp,
                                         fontWeight = FontWeight.Medium
                                     )
                                     androidx.compose.material3.Text(
-                                        text = "Скрыть системные панели в APK",
+                                        text = "Контент на весь экран",
                                         color = Muted,
                                         fontSize = 10.sp,
                                         lineHeight = 13.sp
@@ -301,7 +366,8 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 }
                                 Switch(
                                     checked = fullscreen,
-                                    onCheckedChange = { setFullscreenValue(it) }
+                                    onCheckedChange = { setFullscreenValue(it) },
+                                    enabled = !isBusy
                                 )
                             }
                         }
@@ -371,6 +437,102 @@ class StudioComposeUi(private val activity: MainActivity) {
 
                 BottomActions()
             }
+            if (showClearProjectDialog) {
+                AlertDialog(
+                    onDismissRequest = { showClearProjectDialog = false },
+                    title = { androidx.compose.material3.Text("Очистить проект?") },
+                    text = { androidx.compose.material3.Text("Исходные файлы сайта и временная копия APK будут удалены. Настройки приложения и иконка сохранятся.") },
+                    confirmButton = {
+                        TextButton(onClick = {
+                            showClearProjectDialog = false
+                            activity.clearProject()
+                        }) {
+                            androidx.compose.material3.Text("Очистить", color = Error)
+                        }
+                    },
+                    dismissButton = {
+                        TextButton(onClick = { showClearProjectDialog = false }) {
+                            androidx.compose.material3.Text("Отмена")
+                        }
+                    }
+                )
+            }
+        }
+    }
+
+    @Composable
+    private fun StudioHeader() {
+        Column(modifier = Modifier.fillMaxWidth().padding(bottom = 14.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Box(
+                    modifier = Modifier
+                        .size(54.dp)
+                        .clip(RoundedCornerShape(18.dp))
+                        .background(Brush.linearGradient(listOf(Mint, Primary, Color(0xFF86A8FF)))),
+                    contentAlignment = Alignment.Center
+                ) {
+                    androidx.compose.material3.Text(
+                        text = "S",
+                        color = Color(0xFF07120F),
+                        fontSize = 28.sp,
+                        fontWeight = FontWeight.Black
+                    )
+                }
+                Spacer(Modifier.size(12.dp))
+                Column(modifier = Modifier.weight(1f)) {
+                    androidx.compose.material3.Text(
+                        text = "СТУДИЯ · ОФЛАЙН",
+                        color = Mint,
+                        fontSize = 10.sp,
+                        letterSpacing = 1.6.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Spacer(Modifier.height(2.dp))
+                    androidx.compose.material3.Text(
+                        text = "Соберите приложение",
+                        color = Ink,
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+                Surface(shape = RoundedCornerShape(50.dp), color = Raised) {
+                    androidx.compose.material3.Text(
+                        text = "ЛОКАЛЬНО",
+                        color = Mint,
+                        fontSize = 9.sp,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(horizontal = 9.dp, vertical = 6.dp)
+                    )
+                }
+            }
+            Spacer(Modifier.height(12.dp))
+            androidx.compose.material3.Text(
+                text = "Сайт, оформление и параметры установки — в одном готовом APK.",
+                color = Muted,
+                fontSize = 14.sp,
+                lineHeight = 20.sp
+            )
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(top = 12.dp),
+                horizontalArrangement = Arrangement.spacedBy(6.dp)
+            ) {
+                StepBadge("01  САЙТ", Modifier.weight(1f))
+                StepBadge("02  ОБРАЗ", Modifier.weight(1f))
+                StepBadge("03  APK", Modifier.weight(1f))
+            }
+        }
+    }
+
+    @Composable
+    private fun StepBadge(label: String, modifier: Modifier = Modifier) {
+        Surface(modifier = modifier, shape = RoundedCornerShape(11.dp), color = Raised) {
+            androidx.compose.material3.Text(
+                text = label,
+                color = Muted,
+                fontSize = 9.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(horizontal = 8.dp, vertical = 8.dp)
+            )
         }
     }
 
@@ -388,7 +550,33 @@ class StudioComposeUi(private val activity: MainActivity) {
                 .padding(horizontal = 16.dp, vertical = 8.dp)
         ) {
             HorizontalDivider(color = Outline, thickness = 1.dp)
-            if (statusMessage.isNotEmpty()) {
+            if (isBusy && buildProgressMessage.isNotEmpty()) {
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(top = 9.dp, bottom = 5.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    androidx.compose.material3.Text(
+                        text = buildProgressMessage,
+                        color = Ink,
+                        fontSize = 11.sp,
+                        lineHeight = 15.sp,
+                        modifier = Modifier.weight(1f)
+                    )
+                    androidx.compose.material3.Text(
+                        text = "${(buildProgress * 100f).toInt()}%",
+                        color = Mint,
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+                LinearProgressIndicator(
+                    progress = { buildProgress },
+                    modifier = Modifier.fillMaxWidth().height(5.dp),
+                    color = Mint,
+                    trackColor = Raised
+                )
+            }
+            if (statusMessage.isNotEmpty() && !(isBusy && buildProgressMessage.isNotEmpty())) {
                 androidx.compose.material3.Text(
                     text = statusMessage,
                     color = if (isBusy) Primary else Muted,
@@ -420,7 +608,7 @@ class StudioComposeUi(private val activity: MainActivity) {
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Button(
                     onClick = { activity.buildApk() },
-                    enabled = !isBusy,
+                    enabled = !isBusy && projectReady,
                     modifier = Modifier.weight(1f).height(50.dp),
                     shape = RoundedCornerShape(15.dp),
                     colors = ButtonDefaults.buttonColors(
@@ -431,7 +619,11 @@ class StudioComposeUi(private val activity: MainActivity) {
                     )
                 ) {
                     androidx.compose.material3.Text(
-                        text = if (isBusy) "Подождите…" else "Собрать APK",
+                        text = when {
+                            isBusy -> "Собираем…"
+                            projectReady -> "Собрать приложение"
+                            else -> "Выберите сайт"
+                        },
                         fontSize = 14.sp,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -463,17 +655,18 @@ class StudioComposeUi(private val activity: MainActivity) {
         content: @Composable ColumnScope.() -> Unit
     ) {
         Card(
-            modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
-            shape = RoundedCornerShape(17.dp),
+            modifier = Modifier.fillMaxWidth().padding(bottom = 11.dp),
+            shape = RoundedCornerShape(21.dp),
             colors = CardDefaults.cardColors(containerColor = CardSurface),
             border = BorderStroke(1.dp, Outline)
         ) {
-            Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 13.dp, vertical = 12.dp)) {
+            Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 15.dp)) {
                 androidx.compose.material3.Text(
                     text = title,
                     color = Ink,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.SemiBold
+                    fontSize = 14.sp,
+                    letterSpacing = 0.4.sp,
+                    fontWeight = FontWeight.Bold
                 )
                 if (subtitle != null) {
                     Spacer(Modifier.height(2.dp))
@@ -511,13 +704,15 @@ class StudioComposeUi(private val activity: MainActivity) {
         placeholder: String,
         keyboardType: KeyboardType,
         isError: Boolean,
-        monospace: Boolean = false
+        monospace: Boolean = false,
+        enabled: Boolean = true
     ) {
         Column {
             FieldLabel(label)
             OutlinedTextField(
                 value = value,
                 onValueChange = onValueChange,
+                enabled = enabled,
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 isError = isError,
@@ -562,6 +757,7 @@ class StudioComposeUi(private val activity: MainActivity) {
     private fun CompactVersionField(
         value: String,
         isError: Boolean,
+        enabled: Boolean,
         onValueChange: (String) -> Unit
     ) {
         Surface(
@@ -580,6 +776,7 @@ class StudioComposeUi(private val activity: MainActivity) {
                 BasicTextField(
                     value = value,
                     onValueChange = onValueChange,
+                    enabled = enabled,
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true,
                     textStyle = TextStyle(fontSize = 14.sp, color = Ink),
@@ -594,15 +791,16 @@ class StudioComposeUi(private val activity: MainActivity) {
     }
 
     private companion object {
-        val Background = Color(0xFF101114)
-        val CardSurface = Color(0xFF191B1F)
-        val Raised = Color(0xFF212429)
-        val Field = Color(0xFF131519)
-        val Outline = Color(0xFF3B3F46)
-        val Ink = Color(0xFFF1F2F4)
-        val Muted = Color(0xFFB2B6BE)
-        val Primary = Color(0xFF8AB4F8)
-        val PrimaryText = Color(0xFF101317)
+        val Background = Color(0xFF09131B)
+        val CardSurface = Color(0xFF111E29)
+        val Raised = Color(0xFF1B2D39)
+        val Field = Color(0xFF0D1821)
+        val Outline = Color(0xFF2D4351)
+        val Ink = Color(0xFFF2F7F8)
+        val Muted = Color(0xFFA7BAC5)
+        val Primary = Color(0xFF67E4C1)
+        val Mint = Color(0xFF67E4C1)
+        val PrimaryText = Color(0xFF061710)
         val Error = Color(0xFFFFB4AB)
         val studioColorScheme = darkColorScheme(
             primary = Primary,

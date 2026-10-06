@@ -70,6 +70,13 @@ public final class MainActivity extends ComponentActivity {
             composeUi.setVersionCodeValue(savedInstanceState.getString("versionCode", composeUi.getVersionCodeValue()));
             composeUi.setAutoRotateValue(savedInstanceState.getBoolean("autoRotate", composeUi.getAutoRotateValue()));
             composeUi.setFullscreenValue(savedInstanceState.getBoolean("fullscreen", composeUi.getFullscreenValue()));
+        } else {
+            siteRoot = restoreSiteRoot();
+            iconFile = existing(new File(getFilesDir(), "workspace/custom-icon.png").getAbsolutePath());
+        }
+        if (siteRoot == null) siteRoot = restoreSiteRoot();
+        if (iconFile == null) {
+            iconFile = existing(new File(getFilesDir(), "workspace/custom-icon.png").getAbsolutePath());
         }
 
         ComposeView composeView = new ComposeView(this);
@@ -144,6 +151,40 @@ public final class MainActivity extends ComponentActivity {
         }
     }
 
+    void clearProject() {
+        hideKeyboard();
+        siteRoot = null;
+        generatedApk = null;
+        getPreferences(MODE_PRIVATE).edit().remove("siteRoot").apply();
+        composeUi.setProjectSummary("Файл ещё не выбран");
+        composeUi.setSaveAvailable(false);
+        setStatus("Очищаю выбранный проект…", true);
+        IO.execute(() -> {
+            try {
+                clearDirectory(new File(getFilesDir(), "workspace/site"));
+                clearDirectory(new File(getCacheDir(), "webapk-build"));
+                siteRoot = null;
+                getPreferences(MODE_PRIVATE).edit().remove("siteRoot").apply();
+                generatedApk = null;
+                runOnUiThread(() -> {
+                    composeUi.setProjectSummary("Файл ещё не выбран");
+                    composeUi.setBuildProgress(0f, "");
+                    setStatus("Проект удалён с устройства", false);
+                });
+            } catch (Exception error) {
+                showFailure("Не удалось очистить проект: " + error.getMessage());
+            }
+        });
+    }
+
+    private void beginProjectImport() {
+        siteRoot = null;
+        generatedApk = null;
+        getPreferences(MODE_PRIVATE).edit().remove("siteRoot").apply();
+        composeUi.setProjectSummary("Файл ещё не выбран");
+        composeUi.setSaveAvailable(false);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -179,10 +220,11 @@ public final class MainActivity extends ComponentActivity {
     }
 
     private void importHtml(Uri uri) {
+        beginProjectImport();
         setStatus("Копирую HTML…", true);
-        composeUi.setSaveAvailable(false);
         IO.execute(() -> {
             try {
+                clearDirectory(new File(getCacheDir(), "webapk-build"));
                 File root = new File(getFilesDir(), "workspace/site");
                 clearDirectory(root);
                 if (!root.exists() && !root.mkdirs()) throw new IOException("Не удалось создать папку сайта.");
@@ -196,6 +238,7 @@ public final class MainActivity extends ComponentActivity {
                 }
                 if (size == 0) throw new IOException("Выбранный HTML-файл пуст.");
                 siteRoot = root;
+                getPreferences(MODE_PRIVATE).edit().putString("siteRoot", root.getAbsolutePath()).apply();
                 generatedApk = null;
                 runOnUiThread(() -> {
                     composeUi.setProjectSummary("HTML · index.html · " + ApkBuilder.formatBytes(size));
@@ -208,10 +251,11 @@ public final class MainActivity extends ComponentActivity {
     }
 
     private void importZip(Uri uri) {
+        beginProjectImport();
         setStatus("Безопасно распаковываю ZIP…", true);
-        composeUi.setSaveAvailable(false);
         IO.execute(() -> {
             try {
+                clearDirectory(new File(getCacheDir(), "webapk-build"));
                 File root = new File(getFilesDir(), "workspace/site");
                 clearDirectory(root);
                 if (!root.exists() && !root.mkdirs()) throw new IOException("Не удалось создать папку сайта.");
@@ -283,6 +327,7 @@ public final class MainActivity extends ComponentActivity {
                     }
                 }
                 siteRoot = actualRoot;
+                getPreferences(MODE_PRIVATE).edit().putString("siteRoot", actualRoot.getAbsolutePath()).apply();
                 generatedApk = null;
                 int fileCount = files;
                 long unpacked = total;
@@ -421,11 +466,14 @@ public final class MainActivity extends ComponentActivity {
         boolean fullscreen = composeUi.getFullscreenValue();
         generatedApk = null;
         composeUi.setSaveAvailable(false);
+        composeUi.setBuildProgress(0.03f, "Проверяем исходные файлы");
         setStatus("Создаю и подписываю APK…", true);
         IO.execute(() -> {
             try {
                 File apk = ApkBuilder.build(this, selectedSite, packageName, appName, selectedIcon,
-                        autoRotate, fullscreen, versionCode);
+                        autoRotate, fullscreen, versionCode,
+                        (percent, message) -> runOnUiThread(() ->
+                                composeUi.setBuildProgress(percent / 100f, message)));
                 generatedApk = apk;
                 runOnUiThread(() -> {
                     getPreferences(MODE_PRIVATE).edit().putInt(versionPreference, versionCode).apply();
@@ -516,9 +564,19 @@ public final class MainActivity extends ComponentActivity {
         });
     }
 
+    private File restoreSiteRoot() {
+        String savedPath = getPreferences(MODE_PRIVATE).getString("siteRoot", null);
+        File restored = existing(savedPath);
+        if (restored == null) restored = existing(new File(getFilesDir(), "workspace/site").getAbsolutePath());
+        return restored != null && new File(restored, "index.html").isFile() ? restored : null;
+    }
+
     private void refreshImportedFiles() {
         if (siteRoot != null && new File(siteRoot, "index.html").isFile()) {
-            composeUi.setProjectSummary("Проект готов · index.html");
+            composeUi.setProjectSummary("Проект восстановлен · index.html");
+        } else {
+            siteRoot = null;
+            composeUi.setProjectSummary("Файл ещё не выбран");
         }
         if (iconFile != null && iconFile.isFile()) {
             Bitmap preview = BitmapFactory.decodeFile(iconFile.getAbsolutePath());

@@ -47,6 +47,11 @@ public final class EncryptedSiteArchive implements Closeable {
     private final Map<String, Integer> pathToId;
     private boolean closed;
 
+    /** Reports streaming encryption progress without exposing website contents or paths. */
+    public interface ProgressListener {
+        void onProgress(int completedFiles, int totalFiles, long processedBytes, long totalBytes);
+    }
+
     private EncryptedSiteArchive(ZipFile zip, byte[] siteKey, Map<String, Integer> pathToId) {
         this.zip = zip;
         this.siteKey = siteKey;
@@ -55,6 +60,12 @@ public final class EncryptedSiteArchive implements Closeable {
 
     /** Encrypts every source file before adding it to an opaque ZIP container. */
     public static void create(File root, List<File> files, File output, byte[] masterKey) throws IOException {
+        create(root, files, output, masterKey, null);
+    }
+
+    /** Encrypts the site while optionally reporting aggregate byte/file progress. */
+    public static void create(File root, List<File> files, File output, byte[] masterKey,
+                              ProgressListener progressListener) throws IOException {
         if (root == null || !root.isDirectory() || files == null || files.isEmpty()) {
             throw new IOException("Site archive needs a root directory and at least one file.");
         }
@@ -62,6 +73,7 @@ public final class EncryptedSiteArchive implements Closeable {
         requireKey(masterKey);
         String rootPath = root.getCanonicalPath();
         String[] relativePaths = new String[files.size()];
+        long totalBytes = 0L;
         for (int i = 0; i < files.size(); i++) {
             File file = files.get(i);
             String canonical = file.getCanonicalPath();
@@ -72,8 +84,11 @@ public final class EncryptedSiteArchive implements Closeable {
             String relative = canonical.substring(prefix.length()).replace(File.separatorChar, '/');
             validateRelativePath(relative);
             relativePaths[i] = relative;
+            long fileBytes = file.length();
+            totalBytes = fileBytes > Long.MAX_VALUE - totalBytes ? Long.MAX_VALUE : totalBytes + fileBytes;
         }
         if (!containsIndex(relativePaths)) throw new IOException("The site archive does not contain index.html.");
+        if (progressListener != null) progressListener.onProgress(0, files.size(), 0L, totalBytes);
 
         byte[] salt = new byte[SALT_BYTES];
         new SecureRandom().nextBytes(salt);
@@ -101,6 +116,8 @@ public final class EncryptedSiteArchive implements Closeable {
 
                 byte[] buffer = new byte[64 * 1024];
                 SecureRandom random = new SecureRandom();
+                long processedBytes = 0L;
+                long lastReportedBytes = 0L;
                 for (int i = 0; i < files.size(); i++) {
                     String id = entryId(i);
                     byte[] nonce = new byte[NONCE_BYTES];
@@ -113,11 +130,22 @@ public final class EncryptedSiteArchive implements Closeable {
                         while ((count = source.read(buffer)) != -1) {
                             byte[] encrypted = cipher.update(buffer, 0, count);
                             if (encrypted != null && encrypted.length > 0) archive.write(encrypted);
+                            processedBytes = count > Long.MAX_VALUE - processedBytes
+                                    ? Long.MAX_VALUE : processedBytes + count;
+                            if (progressListener != null
+                                    && processedBytes - lastReportedBytes >= 8L * 1024L * 1024L) {
+                                progressListener.onProgress(i, files.size(), processedBytes, totalBytes);
+                                lastReportedBytes = processedBytes;
+                            }
                         }
                     }
                     byte[] tail = cipher.doFinal();
                     if (tail.length > 0) archive.write(tail);
                     archive.closeEntry();
+                    if (progressListener != null && ((i + 1) % 50 == 0 || i + 1 == files.size())) {
+                        progressListener.onProgress(i + 1, files.size(), processedBytes, totalBytes);
+                        lastReportedBytes = processedBytes;
+                    }
                 }
             }
             complete = true;

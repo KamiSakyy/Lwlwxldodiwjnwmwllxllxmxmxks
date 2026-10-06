@@ -46,6 +46,10 @@ final class ApkBuilder {
     private static final String SITE_SIGNING_PASSWORD = "webapk-studio-public-handoff";
     private static final int[] ICON_SIZES = {48, 72, 96, 144, 192};
 
+    interface ProgressListener {
+        void onProgress(int percent, String message);
+    }
+
     private ApkBuilder() { }
 
     static boolean isValidPackageName(String packageName) {
@@ -74,6 +78,14 @@ final class ApkBuilder {
 
     static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
                       boolean autoRotate, boolean fullscreen, int versionCode) throws Exception {
+        return build(context, siteRoot, packageName, appLabel, iconFile, autoRotate, fullscreen,
+                versionCode, null);
+    }
+
+    static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
+                      boolean autoRotate, boolean fullscreen, int versionCode,
+                      ProgressListener progressListener) throws Exception {
+        reportProgress(progressListener, 3, "Проверка проекта");
         if (!isValidPackageName(packageName)) {
             throw new IOException("Пакет должен выглядеть как com.example.app (строчные латинские буквы).");
         }
@@ -88,6 +100,7 @@ final class ApkBuilder {
 
         List<File> siteFiles = collectSiteFiles(siteRoot);
         if (siteFiles.isEmpty()) throw new IOException("Сайт пустой.");
+        reportProgress(progressListener, 12, "Найдено файлов: " + siteFiles.size());
         if (iconFile != null && !iconFile.isFile()) {
             throw new IOException("Файл иконки больше недоступен. Выберите его ещё раз.");
         }
@@ -111,6 +124,7 @@ final class ApkBuilder {
              CountingOutputStream countingOut = new CountingOutputStream(new BufferedOutputStream(fileOut));
              ZipOutputStream apk = new ZipOutputStream(countingOut)) {
             apk.setLevel(Deflater.DEFAULT_COMPRESSION);
+            reportProgress(progressListener, 18, "Подготовка шаблона приложения");
             ZipEntry entry;
             while ((entry = source.getNextEntry()) != null) {
                 String name = entry.getName();
@@ -174,8 +188,19 @@ final class ApkBuilder {
             }
             File encryptedArchive = new File(cache, "website-assets-a.c.tmp");
             byte[] masterKey = N.k();
+            reportProgress(progressListener, 30, "Шифрование файлов проекта");
             try {
-                EncryptedSiteArchive.create(siteRoot, siteFiles, encryptedArchive, masterKey);
+                EncryptedSiteArchive.create(siteRoot, siteFiles, encryptedArchive, masterKey,
+                        (completedFiles, totalFiles, processedBytes, totalBytes) -> {
+                            double fraction = totalBytes > 0
+                                    ? Math.min(1d, (double) processedBytes / (double) totalBytes)
+                                    : (double) completedFiles / Math.max(1, totalFiles);
+                            int percent = 30 + (int) Math.round(48d * fraction);
+                            String detail = totalBytes > 0
+                                    ? "Шифрование · " + formatBytes(processedBytes) + " / " + formatBytes(totalBytes)
+                                    : "Шифрование · " + completedFiles + " / " + totalFiles + " файлов";
+                            reportProgress(progressListener, Math.min(78, percent), detail);
+                        });
                 ZipEntry archiveEntry = new ZipEntry("assets/" + EncryptedSiteArchive.ASSET_NAME);
                 archiveEntry.setTime(0L);
                 apk.putNextEntry(archiveEntry);
@@ -188,12 +213,14 @@ final class ApkBuilder {
                 if (encryptedArchive.exists()) encryptedArchive.delete();
             }
             apk.finish();
+            reportProgress(progressListener, 82, "Формирование APK завершено");
         } catch (Exception error) {
             unsigned.delete();
             signed.delete();
             throw error;
         }
 
+        reportProgress(progressListener, 90, "Подпись и проверка APK");
         try (InputStream signingKey = new BufferedInputStream(
                 context.getAssets().open(SITE_SIGNING_ASSET))) {
             JarV1Signer.signWithKeyStore(unsigned, signed, signingKey,
@@ -201,6 +228,7 @@ final class ApkBuilder {
             if (!signed.isFile() || signed.length() == 0) {
                 throw new IOException("Не удалось подписать APK.");
             }
+            reportProgress(progressListener, 100, "Готово");
             return signed;
         } finally {
             unsigned.delete();
@@ -416,6 +444,10 @@ final class ApkBuilder {
     private static int checkedInt(long value, String description) throws IOException {
         if (value < 0 || value > Integer.MAX_VALUE) throw new IOException("Слишком большое значение: " + description);
         return (int) value;
+    }
+
+    private static void reportProgress(ProgressListener listener, int percent, String message) {
+        if (listener != null) listener.onProgress(Math.max(0, Math.min(100, percent)), message);
     }
 
     static String formatBytes(long bytes) {
