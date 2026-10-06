@@ -160,8 +160,10 @@ for b in blocks:
                 break
         if tgt is None:
             fq = fq_of(fp, sp[0])
-            if fq:
+            if fq and "." in fq:
                 tgt, cls = fq.rsplit(".", 1)
+            elif fq:
+                tgt, cls = os.path.relpath(os.path.dirname(fp), ROOT), fq
         if not tgt or not cls: continue
         tfp = os.path.join(ROOT, tgt.replace(".", "/"), cls + ".java")
         if not os.path.exists(tfp): continue
