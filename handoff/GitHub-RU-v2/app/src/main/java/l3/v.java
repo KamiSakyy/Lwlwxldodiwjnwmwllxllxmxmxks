@@ -14,4 +14,10 @@ public class v {
     public static Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object a = null;
     public Object b = null;
+    public v(Object p1, Object p2, Object p3) {
+    }
+    public v(int p1, Object p2, String p3) {
+    }
+    public v(int p1, long p2, String p3) {
+    }
 }

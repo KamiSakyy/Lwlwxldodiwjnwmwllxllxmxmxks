@@ -485,4 +485,10 @@ public abstract class y {
     }
     public Object a() { return null; }
     public static Object t(Object p1, Object p2) { return null; }
+    public y(Object p1, Object p2) {
+    }
+    public y(Object p1, Object p2, int p3) {
+    }
+    public y(int p1) {
+    }
 }

@@ -46,4 +46,6 @@ public final class v70 {
         public d() {
         }
     }
+    public v70(String p1, String p2, Object p3) {
+    }
 }

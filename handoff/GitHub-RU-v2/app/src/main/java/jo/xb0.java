@@ -34,4 +34,6 @@ public final class xb0 {
         o.append(")");
         return o.toString();
     }
+    public xb0(String p1, String p2, Object p3) {
+    }
 }

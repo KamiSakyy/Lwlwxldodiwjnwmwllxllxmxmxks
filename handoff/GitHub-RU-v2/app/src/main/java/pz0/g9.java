@@ -44,4 +44,6 @@ public final class g9 {
     public static g9[] values() {
         return (g9[]) u.clone();
     }
+    public int ordinal() { return 0; }
+    public String name() { return "g9"; }
 }

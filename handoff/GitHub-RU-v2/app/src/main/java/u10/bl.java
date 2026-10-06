@@ -26,4 +26,6 @@ public final class bl implements aaShadow.v0 {
     public final String toString() {
         return "Data(organization=" + this.a + ")";
     }
+    public bl(Object p1) {
+    }
 }

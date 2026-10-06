@@ -6,4 +6,6 @@ package r7;
  */
 public class i {
     public i() {}
+    public i(String p1, Object p2, Object p3, boolean p4) {
+    }
 }

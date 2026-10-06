@@ -33,4 +33,6 @@ public final class hy {
         o.append(")");
         return o.toString();
     }
+    public hy(String p1, String p2, Object p3) {
+    }
 }

@@ -33,4 +33,6 @@ public final class ez {
         o.append(")");
         return o.toString();
     }
+    public ez(String p1, String p2, Object p3) {
+    }
 }

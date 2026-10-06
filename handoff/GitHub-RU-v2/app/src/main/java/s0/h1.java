@@ -7,4 +7,6 @@ package s0;
 public class h1 {
     public h1() {
     }
+    public h1(Object p1, Object p2, Object p3, int p4, int p5) {
+    }
 }

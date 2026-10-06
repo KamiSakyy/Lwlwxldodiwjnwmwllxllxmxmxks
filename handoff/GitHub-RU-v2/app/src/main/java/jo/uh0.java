@@ -33,4 +33,6 @@ public final class uh0 {
         o.append(")");
         return o.toString();
     }
+    public uh0(String p1, String p2, Object p3) {
+    }
 }

@@ -38,4 +38,6 @@ public final class h6 extends ViewOutlineProvider {
                 return;
         }
     }
+    public h6(int p1) {
+    }
 }

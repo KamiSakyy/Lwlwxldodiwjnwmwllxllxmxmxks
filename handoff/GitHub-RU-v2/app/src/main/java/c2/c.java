@@ -110,4 +110,6 @@ public final class c {
     public Object a = null;
     public Object b = null;
     public Object d = null;
+    public c(float p1, float p2, float p3, float p4) {
+    }
 }

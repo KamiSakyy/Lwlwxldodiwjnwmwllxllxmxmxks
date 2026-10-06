@@ -13,4 +13,6 @@ public final class z7 extends c71.c {
         this.x |= Integer.MIN_VALUE;
         return sy.y.b((com.github.service.wrapper.b) null, (j71.c) null, this);
     }
+    public z7(Object p1) {
+    }
 }

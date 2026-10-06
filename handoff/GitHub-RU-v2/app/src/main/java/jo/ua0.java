@@ -39,4 +39,6 @@ public final class ua0 {
         o.append(")");
         return o.toString();
     }
+    public ua0(String p1, String p2, Object p3, Object p4) {
+    }
 }

@@ -396,4 +396,6 @@ public final class f extends h0 {
         this.e = gitHubDatabase_Impl;
     }
 
+    public f(GitHubDatabase_Impl p1) {
+    }
 }

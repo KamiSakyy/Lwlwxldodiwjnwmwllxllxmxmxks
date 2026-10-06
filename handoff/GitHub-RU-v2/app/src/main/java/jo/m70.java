@@ -35,4 +35,6 @@ public final class m70 {
     public final String toString() {
         return "Sponsorable(__typename=" + this.a + ", userListItemFragment=" + this.b + ", organizationListItemFragment=" + this.c + ")";
     }
+    public m70(String p1, Object p2, Object p3) {
+    }
 }

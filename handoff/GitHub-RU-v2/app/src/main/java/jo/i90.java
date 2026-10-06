@@ -46,4 +46,6 @@ public final class i90 {
         o.append(")");
         return o.toString();
     }
+    public i90(String p1, boolean p2, boolean p3, boolean p4, String p5, Object p6, Object p7) {
+    }
 }

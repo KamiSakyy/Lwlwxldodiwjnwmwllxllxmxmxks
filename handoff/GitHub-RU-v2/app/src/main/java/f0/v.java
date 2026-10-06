@@ -36,4 +36,6 @@ public final class v {
         sb2.append(')');
         return sb2.toString();
     }
+    public v(int p1, Object p2) {
+    }
 }

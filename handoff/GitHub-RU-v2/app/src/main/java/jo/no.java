@@ -33,4 +33,6 @@ public final class no {
     public final String toString() {
         return "MinimizedComment(__typename=" + this.a + ", onNode=" + this.b + ", minimizableCommentFragment=" + this.c + ")";
     }
+    public no(String p1, Object p2, Object p3) {
+    }
 }

@@ -34,4 +34,6 @@ public final class c3 {
     public static c3[] values() {
         return (c3[]) t.clone();
     }
+    public int ordinal() { return 0; }
+    public String name() { return "c3"; }
 }

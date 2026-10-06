@@ -39,4 +39,6 @@ public final class d40 {
     public final String toString() {
         return "Node(__typename=" + this.a + ", onIssue=" + this.b + ", onPullRequest=" + this.c + ", nodeIdFragment=" + this.d + ")";
     }
+    public d40(String p1, Object p2, Object p3, Object p4) {
+    }
 }

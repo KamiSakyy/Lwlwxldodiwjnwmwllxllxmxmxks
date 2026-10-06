@@ -35,4 +35,6 @@ public final class t4 {
         o.append(")");
         return o.toString();
     }
+    public t4(String p1, String p2, Object p3) {
+    }
 }

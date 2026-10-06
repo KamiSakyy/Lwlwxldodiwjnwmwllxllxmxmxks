@@ -343,4 +343,6 @@ public abstract /* synthetic */ class s {
     public Object h(Object p1) { return null; }
     public Object n0(Object p1) { return null; }
     public Object d(Object p1) { return null; }
+    public s(Object p1) {
+    }
 }

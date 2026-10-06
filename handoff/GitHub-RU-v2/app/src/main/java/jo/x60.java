@@ -37,4 +37,6 @@ public final class x60 {
         o.append(")");
         return o.toString();
     }
+    public x60(String p1, boolean p2, String p3, Object p4) {
+    }
 }

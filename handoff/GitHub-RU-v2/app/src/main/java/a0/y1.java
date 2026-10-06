@@ -7,4 +7,6 @@ package a0;
 public class y1 {
     public y1() {
     }
+    public y1(Object p1, float p2, Object p3, Object p4) {
+    }
 }

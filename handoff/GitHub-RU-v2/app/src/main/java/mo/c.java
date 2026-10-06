@@ -35,4 +35,6 @@ public final class c {
     public Object c(Object p1, Object p2) { return null; }
     public static final Object a = null;
     public static final Object i = null;
+    public c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12, java.util.LinkedHashSet p13, int p14) {
+    }
 }

@@ -29,4 +29,6 @@ public final class a80 {
     public final String toString() {
         return "Subscribable(__typename=" + this.a + ", subscribableFragment=" + this.b + ")";
     }
+    public a80(String p1, Object p2) {
+    }
 }

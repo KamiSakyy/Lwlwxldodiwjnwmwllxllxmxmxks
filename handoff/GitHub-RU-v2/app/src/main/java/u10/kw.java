@@ -33,4 +33,6 @@ public final class kw {
         o.append(")");
         return o.toString();
     }
+    public kw(String p1, String p2, Object p3) {
+    }
 }

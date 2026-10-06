@@ -46,4 +46,6 @@ public final class q60 {
         public d() {
         }
     }
+    public q60(String p1, String p2, Object p3) {
+    }
 }

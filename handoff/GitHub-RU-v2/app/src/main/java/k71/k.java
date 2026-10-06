@@ -114,4 +114,6 @@ public abstract class k {
     }
 
     public static Object b;
+    public k(int p1) {
+    }
 }

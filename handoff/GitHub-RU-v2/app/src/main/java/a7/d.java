@@ -34,4 +34,6 @@ public final class d {
     }
     public Object ordinal() { return null; }
     public Object a = null;
+    public int ordinal() { return 0; }
+    public String name() { return "d"; }
 }

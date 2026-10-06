@@ -227,4 +227,6 @@ public final class j implements n5 {
             arrayList3.add(new h5(iVar.b, iVar.a, iVar.c));
         }
     }
+    public j(Object p1) {
+    }
 }

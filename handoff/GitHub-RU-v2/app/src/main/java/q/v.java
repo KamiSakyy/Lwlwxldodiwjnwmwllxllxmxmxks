@@ -18,4 +18,6 @@ public class v {
     public Object onSizeChanged(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object setPadding(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object setPaddingRelative(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public v(android.content.Context p1, android.util.AttributeSet p2, int p3) {
+    }
 }

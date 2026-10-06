@@ -267,4 +267,8 @@ public final class t {
     public static Object L(Object p1) { return null; }
     public static Object w(Object p1, Object p2, Object p3) { return null; }
     public Object a = null;
+    public t(Object p1) {
+    }
+    public t(long p1) {
+    }
 }

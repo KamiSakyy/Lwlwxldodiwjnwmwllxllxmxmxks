@@ -27,4 +27,6 @@ public final class r implements Comparable {
     public final String toString() {
         return a(this.r);
     }
+    public r(byte p1) {
+    }
 }

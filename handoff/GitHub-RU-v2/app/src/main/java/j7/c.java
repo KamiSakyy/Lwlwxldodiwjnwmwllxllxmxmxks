@@ -1311,4 +1311,6 @@ public abstract class c {
     public static void v(ByteArrayOutputStream byteArrayOutputStream, int i10) {
         u(byteArrayOutputStream, i10, 2);
     }
+    public c(int p1) {
+    }
 }

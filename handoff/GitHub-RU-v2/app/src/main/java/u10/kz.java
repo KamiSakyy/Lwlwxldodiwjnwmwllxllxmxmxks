@@ -37,4 +37,6 @@ public final class kz {
         o.append(")");
         return o.toString();
     }
+    public kz(String p1, boolean p2, String p3, Object p4) {
+    }
 }

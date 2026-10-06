@@ -38,4 +38,6 @@ public final class d implements m {
     public final String toString() {
         return i.g("WorkflowsByRepositoryInfoParameters(owner=", this.a, ", repositoryName=", this.b, ")");
     }
+    public d(long p1) {
+    }
 }

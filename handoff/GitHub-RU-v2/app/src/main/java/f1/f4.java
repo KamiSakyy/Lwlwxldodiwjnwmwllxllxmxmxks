@@ -7,4 +7,8 @@ package f1;
 public class f4 {
     public f4() {
     }
+    public f4(Object p1, Object p2, int p3, int p4) {
+    }
+    public f4(int p1, Object p2, Object p3) {
+    }
 }

@@ -40,4 +40,8 @@ public final class a extends z {
     }
     public Object getContext() { return null; }
     public Object setButtonTintList(Object p1) { return null; }
+    public a(android.content.Context p1, android.util.AttributeSet p2) {
+    }
+    public a(android.content.Context p1, android.util.AttributeSet p2, int p3) {
+    }
 }

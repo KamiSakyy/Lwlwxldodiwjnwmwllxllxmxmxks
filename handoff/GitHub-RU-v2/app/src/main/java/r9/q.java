@@ -21,4 +21,6 @@ public class q {
         }
     }
     public Object a = null;
+    public q(android.graphics.drawable.BitmapDrawable p1, Object p2, Object p3, Object p4, String p5, boolean p6, boolean p7) {
+    }
 }

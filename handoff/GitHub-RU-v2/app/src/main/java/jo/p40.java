@@ -33,4 +33,6 @@ public final class p40 {
         o.append(")");
         return o.toString();
     }
+    public p40(String p1, String p2, Object p3) {
+    }
 }

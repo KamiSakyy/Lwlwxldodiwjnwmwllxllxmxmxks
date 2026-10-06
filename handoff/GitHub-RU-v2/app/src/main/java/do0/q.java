@@ -1049,4 +1049,6 @@ public final class q implements y71.j {
         this.u = wVar;
         this.v = wVar2;
     }
+    public q(Object p1, Object p2, Object p3, Object p4, java.io.Serializable p5) {
+    }
 }

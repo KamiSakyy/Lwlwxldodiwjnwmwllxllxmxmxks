@@ -7,4 +7,6 @@ package f1;
 public class q6 {
     public q6() {
     }
+    public q6(int p1) {
+    }
 }

@@ -87,4 +87,10 @@ public final class n1 {
         o.append(")");
         return o.toString();
     }
+    public n1(String p1, Object p2, int p3, int p4, boolean p5, java.util.ArrayList p6, boolean p7, boolean p8, boolean p9, Object p10, boolean p11, String p12, Object p13, String p14, Object p15, java.util.List p16) {
+    }
+    public n1(String p1, String p2, int p3, int p4, boolean p5, java.util.ArrayList p6, boolean p7, boolean p8, boolean p9, Object p10, boolean p11, Object p12, Object p13, String p14, Object p15, java.util.List p16) {
+    }
+    public n1(String p1, String p2, int p3, int p4, boolean p5, java.util.ArrayList p6, boolean p7, boolean p8, boolean p9, Object p10, boolean p11, String p12, Object p13, String p14, Object p15, java.util.List p16) {
+    }
 }

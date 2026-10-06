@@ -7,4 +7,6 @@ package f1;
 public class t0 {
     public t0() {
     }
+    public t0(Object p1, boolean p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, int p9, int p10) {
+    }
 }

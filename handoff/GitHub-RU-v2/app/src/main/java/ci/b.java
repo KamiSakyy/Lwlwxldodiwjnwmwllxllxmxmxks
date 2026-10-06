@@ -47,4 +47,6 @@ public class b extends a {
         this.O.M0(c0Var);
     }
 
+    public b(Object p1, android.view.View p2, Object p3, Object p4) {
+    }
 }

@@ -33,4 +33,6 @@ public final class nb0 {
     public final String toString() {
         return "UnminimizedComment(__typename=" + this.a + ", onNode=" + this.b + ", minimizableCommentFragment=" + this.c + ")";
     }
+    public nb0(String p1, Object p2, Object p3) {
+    }
 }

@@ -35,4 +35,6 @@ public final class cr {
         o.append(")");
         return o.toString();
     }
+    public cr(String p1, String p2, Object p3) {
+    }
 }

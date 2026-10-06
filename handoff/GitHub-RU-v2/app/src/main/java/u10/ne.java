@@ -34,4 +34,6 @@ public final class ne {
         o.append(")");
         return o.toString();
     }
+    public ne(String p1, String p2, Object p3) {
+    }
 }

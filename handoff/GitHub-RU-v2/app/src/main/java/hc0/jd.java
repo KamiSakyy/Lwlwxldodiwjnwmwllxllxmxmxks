@@ -37,4 +37,6 @@ public final class jd {
     public static jd[] values() {
         return (jd[]) u.clone();
     }
+    public int ordinal() { return 0; }
+    public String name() { return "jd"; }
 }

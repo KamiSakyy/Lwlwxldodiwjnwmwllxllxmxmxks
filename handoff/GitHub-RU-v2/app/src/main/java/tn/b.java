@@ -43,4 +43,6 @@ public class b extends AbstractAccountAuthenticator {
     public final Bundle updateCredentials(AccountAuthenticatorResponse accountAuthenticatorResponse, Account account, String str, Bundle bundle) {
         return new Bundle();
     }
+    public b(AuthenticatorService p1) {
+    }
 }

@@ -7,4 +7,6 @@ package a5;
 public class h1 {
     public h1() {
     }
+    public h1(android.view.View p1, Object p2, int p3) {
+    }
 }

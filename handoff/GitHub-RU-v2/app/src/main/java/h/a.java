@@ -46,4 +46,6 @@ public final class a implements Parcelable {
             intent.writeToParcel(parcel, i);
         }
     }
+    public a(android.content.Intent p1, int p2) {
+    }
 }

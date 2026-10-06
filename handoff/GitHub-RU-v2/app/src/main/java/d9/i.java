@@ -37,4 +37,6 @@ public final class i {
         return x.i.j(sb2, this.f21697b, ')');
     }
     public Object a = null;
+    public i(Object p1, Object p2) {
+    }
 }

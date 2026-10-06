@@ -61,4 +61,6 @@ public final class w {
         o.append(")");
         return o.toString();
     }
+    public w(String p1, String p2, Object p3, java.util.ArrayList p4, Object p5, boolean p6) {
+    }
 }

@@ -62,4 +62,6 @@ public final class q4 extends o.b {
         o.append(")");
         return o.toString();
     }
+    public q4(String p1, String p2, int p3, Object p4, String p5, String p6, Object p7) {
+    }
 }

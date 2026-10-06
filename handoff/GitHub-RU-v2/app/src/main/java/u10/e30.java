@@ -59,4 +59,6 @@ public final class e30 {
         public c() {
         }
     }
+    public e30(String p1, Object p2, Object p3) {
+    }
 }

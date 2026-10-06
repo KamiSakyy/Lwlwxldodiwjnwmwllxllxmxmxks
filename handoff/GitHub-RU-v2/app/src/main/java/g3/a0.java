@@ -7,4 +7,6 @@ package g3;
 public class a0 {
     public a0() {
     }
+    public a0(int p1) {
+    }
 }

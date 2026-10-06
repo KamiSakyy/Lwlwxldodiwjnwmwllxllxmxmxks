@@ -7,4 +7,8 @@ package a0;
 public class q0 {
     public q0() {
     }
+    public q0(int p1, Object p2, Object p3) {
+    }
+    public q0(int p1, String p2, Object p3) {
+    }
 }

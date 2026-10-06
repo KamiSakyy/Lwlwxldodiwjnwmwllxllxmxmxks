@@ -84,4 +84,6 @@ public final class n {
         return this.f31322o.hashCode() + ((this.f31321n.hashCode() + ((this.m.hashCode() + ((this.l.f31324r.hashCode() + ((this.f31320k.f31333a.hashCode() + ((((e5 + (str != null ? str.hashCode() : 0)) * 31) + Arrays.hashCode(this.f31319j.r)) * 31)) * 31)) * 31)) * 31)) * 31);
     }
 
+    public n(int p1) {
+    }
 }

@@ -6,4 +6,6 @@ public final class t2 extends s2 {
     public final boolean P() {
         return (this.f480a.getSystemBarsAppearance() & 8) != 0;
     }
+    public t2(android.view.Window p1, Object p2) {
+    }
 }

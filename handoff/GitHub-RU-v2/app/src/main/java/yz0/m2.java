@@ -119,4 +119,6 @@ public final class m2 implements o2 {
         parcel.writeString(this.y);
         parcel.writeInt(this.z ? 1 : 0);
     }
+    public m2(Object p1, Object p2, String p3, String p4, String p5, int p6, String p7, String p8, boolean p9) {
+    }
 }

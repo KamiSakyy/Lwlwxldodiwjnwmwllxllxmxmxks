@@ -41,4 +41,6 @@ public final class r30 {
         o.append(")");
         return o.toString();
     }
+    public r30(String p1, String p2, Object p3, Object p4, Object p5) {
+    }
 }

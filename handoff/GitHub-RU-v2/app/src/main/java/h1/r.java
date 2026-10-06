@@ -8,4 +8,6 @@ public class r {
     public r() {
     }
     public Object k(Object p1) { return null; }
+    public r(int p1, Object p2) {
+    }
 }

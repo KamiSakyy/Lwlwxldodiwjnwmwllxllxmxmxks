@@ -86,4 +86,6 @@ public class b {
         this(cVar, str, num, (i & 8) != 0 ? s.r : map, jVar, (Throwable) ((i & 32) != 0 ? new Throwable(str) : apiFailure), System.currentTimeMillis());
     }
 
+    public b(Object p1, String p2, Object p3, Object p4, Object p5, Object p6, int p7) {
+    }
 }

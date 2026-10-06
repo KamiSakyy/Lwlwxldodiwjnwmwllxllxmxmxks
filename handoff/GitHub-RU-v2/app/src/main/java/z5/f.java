@@ -29,4 +29,6 @@ public final /* synthetic */ class f implements j71.a {
         }
     }
     public static final Object J = null;
+    public f(int p1) {
+    }
 }

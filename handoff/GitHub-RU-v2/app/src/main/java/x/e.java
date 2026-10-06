@@ -129,4 +129,6 @@ public class e extends q0 implements Map {
     public static Object keySet(Object... a) {
         return null;
     }
+    public e(int p1) {
+    }
 }

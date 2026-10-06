@@ -40,4 +40,6 @@ public final class u70 {
         sb.append(", nodeIdFragment=");
         return f4.r(sb, this.c, ")");
     }
+    public u70(String p1, Object p2, Object p3) {
+    }
 }

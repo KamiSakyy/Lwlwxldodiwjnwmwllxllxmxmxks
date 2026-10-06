@@ -25,4 +25,6 @@ public class s extends c71.j implements j71.e {
         sy.y.j(obj);
         return Boolean.valueOf(this.f27790v);
     }
+    public s(int p1, Object p2) {
+    }
 }

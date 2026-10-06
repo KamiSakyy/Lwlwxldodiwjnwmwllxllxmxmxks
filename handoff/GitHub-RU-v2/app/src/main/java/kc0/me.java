@@ -26,4 +26,6 @@ public final class me implements aaShadow.v0 {
     public final String toString() {
         return "Data(repository=" + this.a + ")";
     }
+    public me(Object p1) {
+    }
 }

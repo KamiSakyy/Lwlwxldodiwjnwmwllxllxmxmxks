@@ -12,4 +12,6 @@ public final class a {
     public a(int i) {
         this.f3313a = i;
     }
+    public a(String p1, int p2) {
+    }
 }

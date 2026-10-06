@@ -52,4 +52,6 @@ public final class o implements z5.m {
     public /* synthetic */ o(n nVar, n nVar2, n nVar3, n nVar4) {
         this(new n(3, 0.0f), nVar, nVar2, new n(3, 0.0f), nVar3, nVar4);
     }
+    public o(Object p1, boolean p2) {
+    }
 }

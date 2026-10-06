@@ -19,4 +19,6 @@ public interface j {
     }
     public Object invalidateOptionsMenu() { return null; }
     public static Object z(Object p1) { return null; }
+    public j(int p1, Object p2, Object p3, String p4, String p5, int p6, int p7) {
+    }
 }

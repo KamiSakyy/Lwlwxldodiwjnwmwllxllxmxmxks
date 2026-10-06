@@ -39,4 +39,6 @@ public final class dh0 {
         o.append(")");
         return o.toString();
     }
+    public dh0(String p1, String p2, String p3, Object p4) {
+    }
 }

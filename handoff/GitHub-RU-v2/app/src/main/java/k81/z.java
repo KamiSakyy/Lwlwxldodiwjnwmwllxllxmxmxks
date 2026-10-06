@@ -104,4 +104,6 @@ public final class z implements KSerializer {
         this.b = enumArr;
         this.d = sy.w.t(new d1.i1(23, this, str));
     }
+    public z(String p1, Object p2) {
+    }
 }

@@ -6,4 +6,6 @@ package m0;
  */
 public interface b {
     public static final Object a = null;
+    public b(int p1, int p2, int p3, Object p4, Object p5) {
+    }
 }

@@ -33,4 +33,6 @@ public final class q70 {
         o.append(")");
         return o.toString();
     }
+    public q70(String p1, String p2, Object p3) {
+    }
 }

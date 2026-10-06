@@ -36,4 +36,6 @@ public final class xv implements aaShadow.v0 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+    public xv(String p1, Object p2, Object p3) {
+    }
 }

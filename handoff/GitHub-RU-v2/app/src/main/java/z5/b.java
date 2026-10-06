@@ -6,4 +6,6 @@ package z5;
  */
 public interface b {
     public static final Object B = null;
+    public b(Object p1) {
+    }
 }

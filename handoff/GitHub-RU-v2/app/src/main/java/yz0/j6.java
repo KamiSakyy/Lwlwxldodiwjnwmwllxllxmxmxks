@@ -45,4 +45,6 @@ public final class j6 extends s7 {
         o.append(")");
         return o.toString();
     }
+    public j6(String p1, String p2, Object p3, Object p4) {
+    }
 }

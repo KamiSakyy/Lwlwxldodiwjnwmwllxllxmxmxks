@@ -7,4 +7,6 @@ package f1;
 public class hc {
     public hc() {
     }
+    public hc(Object p1, String p2, String p3, Object p4, int p5) {
+    }
 }

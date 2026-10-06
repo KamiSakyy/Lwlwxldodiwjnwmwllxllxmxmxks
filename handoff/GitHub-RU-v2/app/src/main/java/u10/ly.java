@@ -28,4 +28,6 @@ public final class ly {
     public final String toString() {
         return "Assignable(__typename=" + this.a + ", assignableFragment=" + this.b + ")";
     }
+    public ly(String p1, Object p2) {
+    }
 }

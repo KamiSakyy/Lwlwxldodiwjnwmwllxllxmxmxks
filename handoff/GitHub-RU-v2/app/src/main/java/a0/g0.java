@@ -64,4 +64,6 @@ public final class g0 implements f0 {
     }
     public Object r = null;
     public Object s = null;
+    public g0() {
+    }
 }

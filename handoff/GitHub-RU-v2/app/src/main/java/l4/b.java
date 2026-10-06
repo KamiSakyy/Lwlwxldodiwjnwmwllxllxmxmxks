@@ -89,4 +89,6 @@ public abstract class b {
         }
     }
     public Object a() { return null; }
+    public b(int p1) {
+    }
 }

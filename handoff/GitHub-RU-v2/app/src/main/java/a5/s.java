@@ -41,4 +41,6 @@ public class s {
     public a5.s s = null;
     public a5.s t = null;
     public a5.s u = null;
+    public s(int p1, byte p2) {
+    }
 }

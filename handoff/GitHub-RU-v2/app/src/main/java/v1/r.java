@@ -20,4 +20,6 @@ public class r {
         return null;
     }
     public static Object c(Object p1, Object p2) { return null; }
+    public r(int p1, Object p2) {
+    }
 }

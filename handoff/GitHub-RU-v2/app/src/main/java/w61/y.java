@@ -23,4 +23,6 @@ public final class y implements Comparable {
     public final String toString() {
         return String.valueOf(this.r & 65535);
     }
+    public y(short p1) {
+    }
 }

@@ -7,4 +7,6 @@ package f1;
 public class p3 {
     public p3() {
     }
+    public p3(String p1, int p2) {
+    }
 }

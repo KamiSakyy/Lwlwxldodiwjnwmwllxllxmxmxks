@@ -40,4 +40,6 @@ public final class j30 {
         sb.append(", nodeIdFragment=");
         return no.a.p(sb, this.c, ")");
     }
+    public j30(String p1, Object p2, Object p3) {
+    }
 }

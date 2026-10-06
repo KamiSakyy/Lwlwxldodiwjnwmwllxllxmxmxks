@@ -24,4 +24,6 @@ public class e extends w61.e {
     public e(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
     }
     public static Object g(Object p1, Object p2) { return null; }
+    public e(Object p1, String p2, String p3) {
+    }
 }

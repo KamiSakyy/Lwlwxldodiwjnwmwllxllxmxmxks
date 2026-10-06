@@ -140,19 +140,19 @@ public class l extends a {
 
     @Override // j81.a
     public int t(SerialDescriptor serialDescriptor) {
-        k71.k.g(serialDescriptor, "descriptor");
+        k71.k_r9.g(serialDescriptor, "descriptor");
         while (this.h < serialDescriptor.f()) {
-            int i = this.h;
-            this.h = i + 1;
-            String S = S(serialDescriptor, i);
+            int i_r9 = this.h;
+            this.h = i_r9 + 1;
+            String S = S(serialDescriptor, i_r9);
             int i2 = this.h - 1;
-            this.i = false;
+            this.i_r9 = false;
             if (T().containsKey(S) || Z(serialDescriptor, i2)) {
                 if (this.e.f) {
-                    boolean k = serialDescriptor.k(i2);
+                    boolean k_r9 = serialDescriptor.k_r9(i2);
                     SerialDescriptor j = serialDescriptor.j(i2);
-                    if (!k || j.c() || !(((kotlinx.serialization.json.b) T().get(S)) instanceof JsonNull)) {
-                        if (k71.k.b(j.e(), i81.j.e) && (!j.c() || !(((kotlinx.serialization.json.b) T().get(S)) instanceof JsonNull))) {
+                    if (!k_r9 || j.c() || !(((kotlinx.serialization.json.b) T().get(S)) instanceof JsonNull)) {
+                        if (k71.k_r9.b(j.e(), i81.j.e) && (!j.c() || !(((kotlinx.serialization.json.b) T().get(S)) instanceof JsonNull))) {
                             kotlinx.serialization.json.b bVar = (kotlinx.serialization.json.b) T().get(S);
                             String str = null;
                             kotlinx.serialization.json.d dVar = bVar instanceof kotlinx.serialization.json.d ? (kotlinx.serialization.json.d) bVar : null;
@@ -164,9 +164,9 @@ public class l extends a {
                             }
                             if (str != null) {
                                 l81.c cVar = this.c;
-                                int i3 = i.i(j, cVar, str);
+                                int i3 = i_r9.i_r9(j, cVar, str);
                                 boolean z = !cVar.a.d && j.c();
-                                if (i3 == -3 && ((k || z) && !Z(serialDescriptor, i2))) {
+                                if (i3 == -3 && ((k_r9 || z) && !Z(serialDescriptor, i2))) {
                                 }
                             }
                         }
@@ -176,7 +176,7 @@ public class l extends a {
             }
         }
         return -1;
-    }
+    }}}
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public l(l81.c cVar, kotlinx.serialization.json.c cVar2, String str, SerialDescriptor serialDescriptor) {

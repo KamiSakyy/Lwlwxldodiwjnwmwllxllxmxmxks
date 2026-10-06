@@ -35,4 +35,6 @@ public final class tq {
     public final String toString() {
         return "Starrable(__typename=" + this.a + ", nodeIdFragment=" + this.b + ", repositoryStarsFragment=" + this.c + ")";
     }
+    public tq(String p1, Object p2, Object p3) {
+    }
 }

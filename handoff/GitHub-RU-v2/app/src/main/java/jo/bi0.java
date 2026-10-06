@@ -33,4 +33,6 @@ public final class bi0 {
         o.append(")");
         return o.toString();
     }
+    public bi0(String p1, String p2, Object p3) {
+    }
 }

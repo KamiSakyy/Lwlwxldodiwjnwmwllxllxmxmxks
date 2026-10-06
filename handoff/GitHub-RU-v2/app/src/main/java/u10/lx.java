@@ -33,4 +33,6 @@ public final class lx {
         o.append(")");
         return o.toString();
     }
+    public lx(String p1, String p2, Object p3) {
+    }
 }

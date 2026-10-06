@@ -40,4 +40,6 @@ public final class yz {
         sb.append(", nodeIdFragment=");
         return no.a.p(sb, this.c, ")");
     }
+    public yz(String p1, Object p2, Object p3) {
+    }
 }

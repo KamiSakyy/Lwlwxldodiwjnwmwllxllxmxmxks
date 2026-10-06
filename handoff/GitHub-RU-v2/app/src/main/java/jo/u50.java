@@ -33,4 +33,6 @@ public final class u50 {
         o.append(")");
         return o.toString();
     }
+    public u50(String p1, String p2, Object p3) {
+    }
 }

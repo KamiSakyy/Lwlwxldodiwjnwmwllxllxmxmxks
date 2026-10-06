@@ -229,4 +229,6 @@ public final class d0 extends ArrayList {
         public E() {
         }
     }
+    public d0() {
+    }
 }

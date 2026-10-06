@@ -33,4 +33,6 @@ public final class cx {
         o.append(")");
         return o.toString();
     }
+    public cx(String p1, String p2, Object p3) {
+    }
 }

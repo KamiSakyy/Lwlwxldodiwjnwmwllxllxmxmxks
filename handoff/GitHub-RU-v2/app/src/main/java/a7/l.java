@@ -7,4 +7,8 @@ package a7;
 public class l {
     public l() {
     }
+    public l(String p1, int p2) {
+    }
+    public l(int p1, long p2) {
+    }
 }

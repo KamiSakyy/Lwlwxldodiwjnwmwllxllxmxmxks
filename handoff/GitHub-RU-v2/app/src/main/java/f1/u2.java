@@ -7,4 +7,6 @@ package f1;
 public class u2 {
     public u2() {
     }
+    public u2(Object p1, Object p2, Object p3, int p4, Object p5, java.util.Locale p6) {
+    }
 }

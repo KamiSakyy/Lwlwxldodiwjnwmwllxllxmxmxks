@@ -6,4 +6,6 @@ package h1;
  */
 public class o {
     public o() {}
+    public o(Object p1, Object p2, Object p3) {
+    }
 }

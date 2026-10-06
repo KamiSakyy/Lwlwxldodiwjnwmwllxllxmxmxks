@@ -33,4 +33,6 @@ public final class b90 {
         o.append(")");
         return o.toString();
     }
+    public b90(String p1, String p2, Object p3) {
+    }
 }

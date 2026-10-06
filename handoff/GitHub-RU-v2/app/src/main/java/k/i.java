@@ -65,4 +65,6 @@ public class i {
     public Object B(Object p1, Object p2) { return null; }
     public Object getWindow() { return null; }
     public Object u = null;
+    public i(java.util.Iterator p1) {
+    }
 }

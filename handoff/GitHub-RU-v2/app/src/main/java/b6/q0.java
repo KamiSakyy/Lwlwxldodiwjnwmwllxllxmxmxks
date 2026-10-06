@@ -9,4 +9,8 @@ public class q0 {
     }
     public Object b(Object p1) { return null; }
     public Object c(Object p1, Object p2) { return null; }
+    public q0(android.app.Application p1) {
+    }
+    public q0(android.content.Context p1) {
+    }
 }

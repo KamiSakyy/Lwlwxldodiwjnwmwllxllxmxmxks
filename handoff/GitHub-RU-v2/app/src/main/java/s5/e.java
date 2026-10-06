@@ -27,4 +27,6 @@ public class e {
     public final String toString() {
         return this.f31718a;
     }
+    public e(String p1) {
+    }
 }

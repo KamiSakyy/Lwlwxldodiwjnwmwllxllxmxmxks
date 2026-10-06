@@ -33,4 +33,6 @@ public final class ai0 {
         o.append(")");
         return o.toString();
     }
+    public ai0(String p1, String p2, Object p3) {
+    }
 }

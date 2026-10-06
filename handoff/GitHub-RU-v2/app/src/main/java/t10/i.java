@@ -65,4 +65,6 @@ public final class i {
         o.append(")");
         return o.toString();
     }
+    public i(String p1, String p2, String p3, String p4, int p5, Object p6, Object p7, Object p8, boolean p9, Object p10) {
+    }
 }

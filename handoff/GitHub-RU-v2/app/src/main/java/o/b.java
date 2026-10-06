@@ -52,4 +52,8 @@ public abstract class b {
     public static Object f(Object... a) {
         return null;
     }
+    public b(String p1, boolean p2) {
+    }
+    public b(int p1, int p2) {
+    }
 }

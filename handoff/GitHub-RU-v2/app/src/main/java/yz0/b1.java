@@ -74,4 +74,6 @@ public final class b1 {
         public m() {
         }
     }
+    public b1(String p1, int p2, Object p3, String p4, int p5, Object p6, String p7, java.util.List p8, String p9, boolean p10) {
+    }
 }

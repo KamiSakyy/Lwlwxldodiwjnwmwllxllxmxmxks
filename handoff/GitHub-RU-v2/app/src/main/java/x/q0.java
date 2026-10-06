@@ -436,4 +436,6 @@ public class q0 {
         return null;
     }
     public Object t = null;
+    public q0(int p1) {
+    }
 }

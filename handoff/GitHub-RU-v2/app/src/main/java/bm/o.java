@@ -351,4 +351,6 @@ public final class o implements Parcelable.Creator {
                 return new b0[i];
         }
     }
+    public o(int p1) {
+    }
 }

@@ -6,4 +6,6 @@ package d1;
  */
 public class x0 {
     public x0() {}
+    public x0(Object p1, int p2) {
+    }
 }

@@ -385,4 +385,6 @@ public final /* synthetic */ class ua implements j71.c {
                 return w61.a0.a;
         }
     }
+    public ua(int p1) {
+    }
 }

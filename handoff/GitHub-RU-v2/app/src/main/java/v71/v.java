@@ -76,4 +76,6 @@ public abstract class v extends a71.a implements a71.e {
         return null;
     }
     public i b(Object p1, Object p2) { return null; }
+    public v(String p1, String p2, Object p3, String p4, Object p5, int p6) {
+    }
 }

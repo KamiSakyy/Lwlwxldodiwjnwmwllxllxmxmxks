@@ -65,4 +65,6 @@ public class g0 implements r9.e {
             }
         });
     }
+    public g0(android.view.View p1) {
+    }
 }

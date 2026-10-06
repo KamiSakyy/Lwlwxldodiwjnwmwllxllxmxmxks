@@ -7,4 +7,6 @@ package d3;
 public class r {
     public r() {
     }
+    public r(String p1, int p2) {
+    }
 }

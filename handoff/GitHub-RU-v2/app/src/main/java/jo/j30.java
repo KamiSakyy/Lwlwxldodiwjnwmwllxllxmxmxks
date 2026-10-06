@@ -33,4 +33,6 @@ public final class j30 {
         o.append(")");
         return o.toString();
     }
+    public j30(String p1, String p2, Object p3) {
+    }
 }

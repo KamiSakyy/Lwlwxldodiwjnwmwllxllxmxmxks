@@ -24,4 +24,6 @@ public final class k {
     public final String toString() {
         return a(this.f31128a);
     }
+    public k(int p1) {
+    }
 }

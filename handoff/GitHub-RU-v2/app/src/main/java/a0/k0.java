@@ -7,4 +7,6 @@ package a0;
 public class k0 {
     public k0() {
     }
+    public k0(int p1, Object p2) {
+    }
 }

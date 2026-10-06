@@ -34,4 +34,6 @@ public final class d {
         return null;
     }
     public Object a0 = null;
+    public d(Object p1, boolean p2, int p3) {
+    }
 }

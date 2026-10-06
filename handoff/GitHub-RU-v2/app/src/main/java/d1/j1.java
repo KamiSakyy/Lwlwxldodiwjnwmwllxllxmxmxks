@@ -7,4 +7,6 @@ package d1;
 public class j1 {
     public j1() {
     }
+    public j1(int p1, Object p2) {
+    }
 }

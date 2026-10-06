@@ -85,4 +85,6 @@ public final class i50 {
         public u() {
         }
     }
+    public i50(String p1, String p2, Object p3) {
+    }
 }

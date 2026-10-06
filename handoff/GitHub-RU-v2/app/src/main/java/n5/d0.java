@@ -20,4 +20,6 @@ public final class d0 extends c71.c {
         return com.google.common.util.concurrent.a.d((File) null, (j71.c) null, this);
     }
     public Object w = null;
+    public d0(Object p1) {
+    }
 }

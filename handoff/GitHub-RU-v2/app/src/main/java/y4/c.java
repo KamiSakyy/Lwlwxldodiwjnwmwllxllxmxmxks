@@ -90,4 +90,6 @@ public final class c {
         this.f34264c = params.getBreakStrategy();
         this.f34265d = params.getHyphenationFrequency();
     }
+    public c(android.text.TextPaint p1, android.text.TextDirectionHeuristic p2, int p3, int p4) {
+    }
 }

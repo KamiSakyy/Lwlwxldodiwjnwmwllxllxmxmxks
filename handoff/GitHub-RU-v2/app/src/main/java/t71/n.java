@@ -120,4 +120,6 @@ public final class n implements Serializable {
     }
 
     public Object C0000a = null;
+    public n(Object p1) {
+    }
 }

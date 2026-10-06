@@ -5,4 +5,6 @@ package z8;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface g {
+    public g(int p1, Object p2) {
+    }
 }

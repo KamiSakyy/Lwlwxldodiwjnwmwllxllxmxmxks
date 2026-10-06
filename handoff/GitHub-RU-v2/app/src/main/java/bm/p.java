@@ -125,4 +125,6 @@ public final /* synthetic */ class p implements j71.a {
                 return TrendingPeriod.Companion.serializer();
         }
     }
+    public p(int p1) {
+    }
 }

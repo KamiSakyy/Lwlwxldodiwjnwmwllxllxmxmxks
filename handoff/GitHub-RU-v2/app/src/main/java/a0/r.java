@@ -69,4 +69,6 @@ public final class r extends u {
         return "AnimationVector2D: v1 = " + this.f225a + ", v2 = " + this.f226b;
     }
     public Object a = null;
+    public r(float p1, float p2) {
+    }
 }

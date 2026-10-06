@@ -5,4 +5,6 @@ package p0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f {
+    public f(int p1, int p2) {
+    }
 }

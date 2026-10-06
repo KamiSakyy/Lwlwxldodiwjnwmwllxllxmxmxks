@@ -28,4 +28,6 @@ public final class f60 {
     public final String toString() {
         return "LabelableRecord(__typename=" + this.a + ", labelsFragment=" + this.b + ")";
     }
+    public f60(String p1, Object p2) {
+    }
 }

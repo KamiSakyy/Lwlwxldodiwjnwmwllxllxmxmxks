@@ -46,4 +46,6 @@ public final class y30 {
         public f() {
         }
     }
+    public y30(String p1, String p2, Object p3) {
+    }
 }

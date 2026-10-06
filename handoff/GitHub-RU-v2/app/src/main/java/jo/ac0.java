@@ -41,4 +41,6 @@ public final class ac0 {
         o.append(")");
         return o.toString();
     }
+    public ac0(String p1, String p2, Object p3, Object p4, Object p5) {
+    }
 }

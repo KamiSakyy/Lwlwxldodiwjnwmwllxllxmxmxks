@@ -70,4 +70,6 @@ public final class r6 extends s7 {
         public TimelineItem$LinkedItemConnectorType() {
         }
     }
+    public r6(Object p1, String p2, int p3, String p4, String p5, java.time.ZonedDateTime p6, Object p7, Object p8) {
+    }
 }

@@ -31,4 +31,6 @@ public final class bw {
     public final String toString() {
         return "Owner(__typename=" + this.a + ", projectOwnerFragment=" + this.b + ")";
     }
+    public bw(String p1, Object p2) {
+    }
 }

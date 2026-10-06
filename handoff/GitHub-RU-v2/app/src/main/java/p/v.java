@@ -128,4 +128,6 @@ public class v {
     public Object i = null;
     public p.v g = null;
     public p.v h = null;
+    public v(android.content.Context p1, Object p2, android.view.View p3, boolean p4, int p5, int p6) {
+    }
 }

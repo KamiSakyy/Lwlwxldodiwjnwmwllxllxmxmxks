@@ -26,4 +26,6 @@ public abstract class f {
             return 0;
         }
     }
+    public f(Object p1, Object p2) {
+    }
 }

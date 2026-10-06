@@ -33,4 +33,6 @@ public final class m20 {
     public final String toString() {
         return no.a.p(a0.s0.o("AnswerChosenBy(__typename=", this.a, ", login=", this.b, ", nodeIdFragment="), this.c, ")");
     }
+    public m20(String p1, String p2, Object p3) {
+    }
 }

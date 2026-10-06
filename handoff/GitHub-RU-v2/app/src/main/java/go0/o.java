@@ -117,4 +117,6 @@ public final class o extends c71.j implements j71.f {
                 return a0Var;
         }
     }
+    public o(Object p1) {
+    }
 }

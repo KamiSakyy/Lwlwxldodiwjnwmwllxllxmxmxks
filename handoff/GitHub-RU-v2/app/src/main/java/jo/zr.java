@@ -71,4 +71,6 @@ public final class zr {
         o.append(")");
         return o.toString();
     }
+    public zr(String p1, String p2, String p3, Object p4, Object p5, String p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12) {
+    }
 }

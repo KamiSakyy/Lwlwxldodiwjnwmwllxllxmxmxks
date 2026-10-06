@@ -29,4 +29,6 @@ public final class kq {
     public final String toString() {
         return "Subject(__typename=" + this.a + ", reactionFragment=" + this.b + ")";
     }
+    public kq(Object p1, String p2) {
+    }
 }

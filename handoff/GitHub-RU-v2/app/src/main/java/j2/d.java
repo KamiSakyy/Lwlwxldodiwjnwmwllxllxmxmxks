@@ -66,4 +66,6 @@ public final class d {
     public Object h = null;
     public Object i = null;
     public Object j = null;
+    public d(String p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, Object p9, int p10) {
+    }
 }

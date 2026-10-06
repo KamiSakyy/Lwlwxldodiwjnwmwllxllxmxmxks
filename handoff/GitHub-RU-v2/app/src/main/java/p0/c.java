@@ -84,4 +84,6 @@ public final class c {
     public static Object a(Object... a) {
         return null;
     }
+    public c(int p1, int p2) {
+    }
 }

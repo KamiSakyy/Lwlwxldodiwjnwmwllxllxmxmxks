@@ -391,4 +391,8 @@ public final class y implements i {
         this.s = iVar;
         this.t = (c71.j) gVar;
     }
+    public y(Object p1, Object p2) {
+    }
+    public y(Object p1, Object p2, int p3) {
+    }
 }

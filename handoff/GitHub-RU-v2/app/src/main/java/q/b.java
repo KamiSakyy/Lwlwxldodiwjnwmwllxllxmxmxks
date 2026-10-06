@@ -32,4 +32,6 @@ public class b implements Runnable {
         }
     }
     public static final Object f1079h = null;
+    public b(String p1, int p2) {
+    }
 }

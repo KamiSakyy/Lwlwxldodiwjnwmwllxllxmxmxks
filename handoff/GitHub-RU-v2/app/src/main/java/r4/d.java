@@ -496,4 +496,8 @@ public final class d {
     public static Object b(Object... a) {
         return null;
     }
+    public d(Object p1) {
+    }
+    public d(char p1, Object p2) {
+    }
 }

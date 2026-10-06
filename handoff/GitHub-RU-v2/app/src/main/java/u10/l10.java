@@ -33,4 +33,6 @@ public final class l10 {
         o.append(")");
         return o.toString();
     }
+    public l10(String p1, String p2, Object p3) {
+    }
 }

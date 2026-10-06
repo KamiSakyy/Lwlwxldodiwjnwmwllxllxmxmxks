@@ -28,4 +28,6 @@ public final class rc0 {
     public final String toString() {
         return "Filter(__typename=" + this.a + ", feedFiltersFragment=" + this.b + ")";
     }
+    public rc0(String p1, Object p2) {
+    }
 }

@@ -49,4 +49,16 @@ public final class j extends ContextWrapper {
         a0Var.j0.h(aVar);
     }
 
+    public j(Object p1, Hilt_RepositoryAuthorBottomSheet p2) {
+    }
+    public j(Object p1, Hilt_SettingsFeaturePreviewFragment p2) {
+    }
+    public j(Object p1, Object p2) {
+    }
+    public j(android.view.LayoutInflater p1, Hilt_RepositoryAuthorBottomSheet p2) {
+    }
+    public j(android.view.LayoutInflater p1, Hilt_SettingsFeaturePreviewFragment p2) {
+    }
+    public j(android.view.LayoutInflater p1, Object p2) {
+    }
 }

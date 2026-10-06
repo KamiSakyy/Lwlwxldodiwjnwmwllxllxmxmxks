@@ -36,4 +36,6 @@ public final class q2 implements aa.v0 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+    public q2(Object p1, String p2, String p3) {
+    }
 }

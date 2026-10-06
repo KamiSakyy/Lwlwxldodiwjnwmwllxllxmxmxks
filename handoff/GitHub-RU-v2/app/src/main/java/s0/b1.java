@@ -6,4 +6,6 @@ package s0;
  */
 public class b1 {
     public b1() {}
+    public b1(Object p1, Object p2, Object p3, Object p4) {
+    }
 }

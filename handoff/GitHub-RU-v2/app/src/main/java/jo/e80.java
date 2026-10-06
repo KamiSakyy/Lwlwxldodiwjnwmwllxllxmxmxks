@@ -32,4 +32,6 @@ public final class e80 {
     public final String toString() {
         return "PullRequestReview(__typename=" + this.a + ", pullRequest=" + this.b + ", id=" + this.c + ", pullRequestReviewFields=" + this.d + ")";
     }
+    public e80(String p1, Object p2, String p3, Object p4) {
+    }
 }

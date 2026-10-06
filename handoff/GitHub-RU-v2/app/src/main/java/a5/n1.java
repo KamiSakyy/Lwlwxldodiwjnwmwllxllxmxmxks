@@ -7,4 +7,6 @@ package a5;
 public class n1 {
     public n1() {
     }
+    public n1(int p1) {
+    }
 }

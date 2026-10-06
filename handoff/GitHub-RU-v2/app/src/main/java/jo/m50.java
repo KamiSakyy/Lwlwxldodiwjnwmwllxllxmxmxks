@@ -40,4 +40,6 @@ public final class m50 {
         sb.append(", nodeIdFragment=");
         return f4.r(sb, this.c, ")");
     }
+    public m50(String p1, Object p2, Object p3) {
+    }
 }

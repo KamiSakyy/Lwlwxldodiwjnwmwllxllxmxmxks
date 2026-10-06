@@ -128,4 +128,8 @@ public final class i3 {
         f1.e.x(sb, this.s, ", parentToolCallId=", this.t, ", source=");
         return com.github.rudroid.copilot.h1.p(sb, this.u, ")");
     }
+    public i3(String p1, java.time.Instant p2, String p3, boolean p4, Object p5, String p6, String p7, Object p8, String p9, Object p10, java.util.LinkedHashMap p11, Object p12, String p13, String p14, Object p15, Object p16, Object p17, Object p18, String p19, String p20, String p21) {
+    }
+    public i3(String p1, java.time.Instant p2, String p3, boolean p4, Object p5, String p6, String p7, String p8, String p9, Object p10, java.util.LinkedHashMap p11, Object p12, String p13, String p14, Object p15, Object p16, Object p17, Object p18, String p19, String p20, String p21) {
+    }
 }

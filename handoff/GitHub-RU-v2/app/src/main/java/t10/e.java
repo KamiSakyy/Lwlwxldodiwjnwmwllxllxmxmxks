@@ -53,4 +53,6 @@ public class e {
         return o.toString();
     }
     public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public e(String p1, String p2, String p3, String p4, String p5, int p6, Object p7, boolean p8, Object p9) {
+    }
 }

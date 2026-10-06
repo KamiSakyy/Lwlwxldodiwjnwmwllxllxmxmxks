@@ -28,4 +28,6 @@ public final class dk0 {
     public final String toString() {
         return "PageInfo(__typename=" + this.a + ", pageInfoFragment=" + this.b + ")";
     }
+    public dk0(String p1, Object p2) {
+    }
 }

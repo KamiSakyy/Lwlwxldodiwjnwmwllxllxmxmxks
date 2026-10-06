@@ -856,4 +856,8 @@ public class l implements Menu {
     public Object x = null;
     public p.l e = null;
     public p.l x = null;
+    public l(String p1, String p2, Object p3) {
+    }
+    public l(android.content.Context p1) {
+    }
 }

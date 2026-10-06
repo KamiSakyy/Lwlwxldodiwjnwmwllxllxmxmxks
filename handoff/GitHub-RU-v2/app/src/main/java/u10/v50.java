@@ -83,4 +83,6 @@ public final class v50 {
         o.append(")");
         return o.toString();
     }
+    public v50(String p1, String p2, String p3, Object p4, Object p5, Object p6, Object p7, String p8, boolean p9, Object p10, Object p11, boolean p12, Object p13, Object p14) {
+    }
 }

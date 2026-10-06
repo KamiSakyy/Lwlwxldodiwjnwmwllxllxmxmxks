@@ -8,4 +8,6 @@ public class r0 {
     public r0() {
     }
     public Object a = null;
+    public r0(long p1) {
+    }
 }

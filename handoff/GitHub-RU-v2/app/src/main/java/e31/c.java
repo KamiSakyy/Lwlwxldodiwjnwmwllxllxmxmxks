@@ -21,4 +21,6 @@ public final class c extends i5.b {
         super.writeToParcel(parcel, i);
         parcel.writeInt(this.t ? 1 : 0);
     }
+    public c(Object p1) {
+    }
 }

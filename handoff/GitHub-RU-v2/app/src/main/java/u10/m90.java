@@ -46,4 +46,6 @@ public final class m90 {
         public b() {
         }
     }
+    public m90(String p1, String p2, Object p3) {
+    }
 }

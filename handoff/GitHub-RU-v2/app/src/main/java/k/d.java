@@ -94,4 +94,6 @@ public final class d {
     public k.d g = null;
     public k.d h = null;
     public k.d j = null;
+    public d(int p1, int p2) {
+    }
 }

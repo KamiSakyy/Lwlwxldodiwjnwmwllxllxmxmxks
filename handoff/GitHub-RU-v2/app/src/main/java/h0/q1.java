@@ -35,4 +35,6 @@ public final class q1 {
     }
     public Object a = null;
     public Object b = null;
+    public q1() {
+    }
 }

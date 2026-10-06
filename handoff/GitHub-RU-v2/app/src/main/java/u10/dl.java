@@ -28,4 +28,6 @@ public final class dl {
     public final String toString() {
         return "OnDiscussion(__typename=" + this.a + ", discussionCommentsFragment=" + this.b + ")";
     }
+    public dl(String p1, Object p2) {
+    }
 }

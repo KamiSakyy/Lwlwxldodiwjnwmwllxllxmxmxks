@@ -33,4 +33,6 @@ public class b extends c71.c {
         this.A |= Integer.MIN_VALUE;
         return this.f30325z.a(null, this);
     }
+    public b(int p1, int p2) {
+    }
 }

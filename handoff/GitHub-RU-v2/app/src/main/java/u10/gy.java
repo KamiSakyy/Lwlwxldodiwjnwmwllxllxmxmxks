@@ -40,4 +40,6 @@ public final class gy {
         sb.append(", nodeIdFragment=");
         return no.a.p(sb, this.c, ")");
     }
+    public gy(String p1, Object p2, Object p3) {
+    }
 }

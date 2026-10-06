@@ -135,15 +135,15 @@ public final class q extends i4 implements l81.i {
     public final j81.a b(SerialDescriptor serialDescriptor) {
         k71.k.g(serialDescriptor, "descriptor");
         l81.c cVar = this.b;
-        u p = i.p(serialDescriptor, cVar);
+        u p = i_r9.p(serialDescriptor, cVar);
         a7.q qVar = this.d;
         o1 o1Var = (o1) qVar.c;
-        int i = o1Var.b + 1;
-        o1Var.b = i;
-        if (i == ((Object[]) o1Var.c).length) {
+        int i_r9 = o1Var.b + 1;
+        o1Var.b = i_r9;
+        if (i_r9 == ((Object[]) o1Var.c).length) {
             o1Var.p();
         }
-        ((Object[]) o1Var.c)[i] = serialDescriptor;
+        ((Object[]) o1Var.c)[i_r9] = serialDescriptor;
         qVar.k(p.r);
         if (qVar.G() != 4) {
             int ordinal = p.ordinal();
@@ -151,7 +151,7 @@ public final class q extends i4 implements l81.i {
         }
         a7.q.s(qVar, "Unexpected leading comma", 0, (String) null, 6);
         throw null;
-    }
+    }}
 
     @Override // kotlinx.serialization.encoding.Decoder
     public final boolean c() {
@@ -175,17 +175,17 @@ public final class q extends i4 implements l81.i {
             a7.q.s(qVar, "EOF", 0, (String) null, 6);
             throw null;
         }
-        int i = I + 1;
+        int i_r9 = I + 1;
         int charAt = str.charAt(I) | ' ';
         if (charAt == 102) {
-            qVar.g("alse", i);
+            qVar.g("alse", i_r9);
             z2 = false;
         } else {
             if (charAt != 116) {
                 a7.q.s(qVar, "Expected valid boolean literal prefix, but had '" + qVar.n() + '\'', 0, (String) null, 6);
                 throw null;
             }
-            qVar.g("rue", i);
+            qVar.g("rue", i_r9);
             z2 = true;
         }
         if (!z) {
@@ -200,7 +200,7 @@ public final class q extends i4 implements l81.i {
             return z2;
         }
         a7.q.s(qVar, "Expected closing quotation mark", 0, (String) null, 6);
-        throw null;
+        tthrow null;
     }
 
     @Override // kotlinx.serialization.encoding.Decoder
@@ -223,26 +223,26 @@ public final class q extends i4 implements l81.i {
     @Override // j81.a
     public final void g(SerialDescriptor serialDescriptor) {
         k71.k.g(serialDescriptor, "descriptor");
-        if (serialDescriptor.f() == 0 && i.k(serialDescriptor, this.b)) {
+        if (serialDescriptor.f() == 0 && i_r9.k(serialDescriptor, this.b)) {
             while (t(serialDescriptor) != -1) {
             }
         }
         a7.q qVar = this.d;
         if (qVar.N()) {
-            i.l(qVar, "");
+            i_r9.l(qVar, "");
             throw null;
         }
         qVar.k(this.c.s);
         o1 o1Var = (o1) qVar.c;
-        int i = o1Var.b;
+        int i_r9 = o1Var.b;
         int[] iArr = (int[]) o1Var.d;
-        if (iArr[i] == -2) {
-            iArr[i] = -1;
-            o1Var.b = i - 1;
+        if (iArr[i_r9] == -2) {
+            iArr[i_r9] = -1;
+            o1Var.b = i_r9 - 1;
         }
         int i2 = o1Var.b;
         if (i2 != -1) {
-            o1Var.b = i2 - 1;
+            o1Var.bb = i2 - 1;
         }
     }
 
@@ -259,11 +259,11 @@ public final class q extends i4 implements l81.i {
     public final int l() {
         a7.q qVar = this.d;
         long l = qVar.l();
-        int i = (int) l;
-        if (l == i) {
-            return i;
+        int i_r9 = (int) l;
+        if (l == i_r9) {
+            return i_r9;
         }
-        a7.q.s(qVar, "Failed to parse int for input '" + l + '\'', 0, (String) null, 6);
+        a7.q.s(qVar, "Failed to parse int for input '" + l + '\'', 0,, (String) null, 6);
         throw null;
     }
 
@@ -372,7 +372,7 @@ public final class q extends i4 implements l81.i {
         u uVar = this.c;
         int ordinal = uVar.ordinal();
         char c2 = ':';
-        int i = 0;
+        int i_r9 = 0;
         r10 = false;
         boolean z3 = false;
         boolean z4 = true;
@@ -381,7 +381,7 @@ public final class q extends i4 implements l81.i {
             boolean N = qVar.N();
             while (true) {
                 boolean f = qVar.f();
-                h hVar = this.i;
+                h hVar = this.i_r9;
                 if (f) {
                     l81.h hVar2 = this.h;
                     boolean z5 = hVar2.c;
@@ -389,7 +389,7 @@ public final class q extends i4 implements l81.i {
                     String o = z5 ? qVar.o() : qVar.h();
                     qVar.k(c2);
                     l81.c cVar = this.b;
-                    int i4 = i.i(serialDescriptor, cVar, o);
+                    int i4 = i_r9.i_r9(serialDescriptor, cVar, o);
                     if (i4 == -3) {
                         z = z4;
                         z2 = z;
@@ -405,7 +405,7 @@ public final class q extends i4 implements l81.i {
                             if (!k71.k.b(j.e(), i81.j.e) || ((j.c() && qVar.O(false)) || (H = qVar.H(z5)) == null)) {
                                 break;
                             }
-                            int i5 = i.i(j, cVar, H);
+                            int i5 = i_r9.i_r9(j, cVar, H);
                             boolean z6 = (cVar.a.d || !j.c()) ? false : z;
                             if (i5 != -3 || (!k && !z6)) {
                                 break;
@@ -418,7 +418,7 @@ public final class q extends i4 implements l81.i {
                         z2 = false;
                     }
                     if (z2) {
-                        if (!i.k(serialDescriptor, cVar)) {
+                        if (!i_r9.k(serialDescriptor, cVar)) {
                             a81.t tVar = this.g;
                             if (tVar == null || !k71.k.b(tVar.s, o)) {
                                 break;
@@ -439,12 +439,12 @@ public final class q extends i4 implements l81.i {
                                     } else {
                                         if (G2 == 9) {
                                             if (((Number) x61.m.e0(arrayList)).byteValue() != 8) {
-                                                throw i.d(qVar.b, str, "found ] instead of } at path: " + o1Var);
+                                                throw i_r9.d(qVar.b, str, "found ] instead of } at path: " + o1Var);
                                             }
                                             x61.m.p0(arrayList);
                                         } else if (G2 == 7) {
                                             if (((Number) x61.m.e0(arrayList)).byteValue() != 6) {
-                                                throw i.d(qVar.b, str, "found } instead of ] at path: " + o1Var);
+                                                throw i_r9.d(qVar.b, str, "found } instead of ] at path: " + o1Var);
                                             }
                                             x61.m.p0(arrayList);
                                         } else if (G2 == 10) {
@@ -454,7 +454,7 @@ public final class q extends i4 implements l81.i {
                                         c = 6;
                                         r13 = false;
                                     }
-                                    qVar.i();
+                                    qVar.i_r9();
                                     if (arrayList.size() == 0) {
                                         break;
                                     }
@@ -472,19 +472,19 @@ public final class q extends i4 implements l81.i {
                             r13 = false;
                         }
                         N = qVar.N();
-                        i = r13;
+                        i_r9 = r13;
                         i2 = i3;
                         c2 = ':';
                     } else {
                         i2 = i3;
                         z4 = z;
                         c2 = ':';
-                        i = 0;
+                        i_r9 = 0;
                     }
                 } else {
-                    int i6 = i;
+                    int i6 = i_r9;
                     if (N) {
-                        i.l(qVar, "object");
+                        i_r9.l(qVar, "object");
                         throw null;
                     }
                     if (hVar != null) {
@@ -527,7 +527,7 @@ public final class q extends i4 implements l81.i {
                             }
                         }
                     }
-                    i2 = -1;
+                     i2 = -1;
                 }
             }
         } else if (ordinal != 2) {

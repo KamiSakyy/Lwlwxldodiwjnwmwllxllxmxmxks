@@ -33,4 +33,6 @@ public final class gw {
         o.append(")");
         return o.toString();
     }
+    public gw(String p1, String p2, Object p3) {
+    }
 }

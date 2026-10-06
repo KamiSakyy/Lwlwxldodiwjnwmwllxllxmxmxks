@@ -69,4 +69,8 @@ public final class p0 {
 
     public static Object c;
     public Object a = null;
+    public p0(Object p1) {
+    }
+    public p0(long p1) {
+    }
 }

@@ -17,4 +17,8 @@ public class q0 {
     public Object d(Object p1) { return null; }
     public Object g(Object p1, Object p2) { return null; }
     public Object a = null;
+    public q0(int p1) {
+    }
+    public q0(long p1, long p2, Object p3, Object p4, Object p5, long p6, int p7, long p8, Object p9, int p10) {
+    }
 }

@@ -5,4 +5,6 @@ package m5;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface a {
+    public a(String p1, Object p2, Object p3, Object p4) {
+    }
 }

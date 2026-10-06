@@ -8,4 +8,6 @@ public class s0 {
     public s0() {
     }
     public Object a(Object p1) { return null; }
+    public s0(Object p1) {
+    }
 }

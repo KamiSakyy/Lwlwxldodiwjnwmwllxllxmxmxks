@@ -7,4 +7,6 @@ package w2;
 public class o1 {
     public o1() {
     }
+    public o1(Object p1) {
+    }
 }

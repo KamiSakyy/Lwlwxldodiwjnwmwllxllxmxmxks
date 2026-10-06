@@ -5,4 +5,6 @@ public final class q {
 
     /* renamed from: a, reason: collision with root package name */
     public String f34028a;
+    public q(Object p1) {
+    }
 }

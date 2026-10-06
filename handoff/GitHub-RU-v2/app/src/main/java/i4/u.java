@@ -13,4 +13,6 @@ public class u {
     public Object b = null;
     public Object c = null;
     public Object f = null;
+    public u(Object p1, Object p2) {
+    }
 }

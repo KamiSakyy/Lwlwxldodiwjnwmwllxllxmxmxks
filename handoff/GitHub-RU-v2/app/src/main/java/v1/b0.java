@@ -16,4 +16,6 @@ public abstract class b0 {
     public abstract void a(b0 b0Var);
 
     public abstract b0 b(long j10);
+    public b0(long p1) {
+    }
 }

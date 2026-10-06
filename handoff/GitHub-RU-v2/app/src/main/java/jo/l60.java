@@ -33,4 +33,6 @@ public final class l60 {
         o.append(")");
         return o.toString();
     }
+    public l60(String p1, String p2, Object p3) {
+    }
 }

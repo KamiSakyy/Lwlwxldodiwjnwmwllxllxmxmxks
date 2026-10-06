@@ -99,4 +99,6 @@ public abstract class w {
     public w(z zVar) {
         this.f27536b = zVar;
     }
+    public w(String p1, String p2) {
+    }
 }

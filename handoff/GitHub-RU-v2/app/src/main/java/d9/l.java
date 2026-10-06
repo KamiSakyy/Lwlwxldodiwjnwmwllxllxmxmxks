@@ -7,4 +7,6 @@ package d9;
 public class l {
     public l() {
     }
+    public l(int p1) {
+    }
 }

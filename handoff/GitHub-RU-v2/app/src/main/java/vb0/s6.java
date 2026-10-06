@@ -13,4 +13,6 @@ public final class s6 extends c71.c {
         this.x |= Integer.MIN_VALUE;
         return sy.s.c((com.github.service.wrapper.b) null, (j71.c) null, this);
     }
+    public s6(Object p1) {
+    }
 }

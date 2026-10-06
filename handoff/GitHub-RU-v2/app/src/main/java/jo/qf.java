@@ -35,4 +35,6 @@ public final class qf {
         o.append(")");
         return o.toString();
     }
+    public qf(String p1, String p2, Object p3) {
+    }
 }

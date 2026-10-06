@@ -26,4 +26,8 @@ public interface n {
     }
     public Object d = null;
     public z5.n d = null;
+    public n(Object p1, Object p2) {
+    }
+    public n(Object p1, Object p2, Object p3, int p4) {
+    }
 }

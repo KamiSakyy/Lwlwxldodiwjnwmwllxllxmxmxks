@@ -10,4 +10,6 @@ public final class u implements Serializable {
         return String.valueOf(this.r);
     }
     public Object r = null;
+    public u(Object p1, Object p2) {
+    }
 }

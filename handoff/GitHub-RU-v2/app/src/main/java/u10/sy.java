@@ -28,4 +28,6 @@ public final class sy {
     public final String toString() {
         return "LabelableRecord(__typename=" + this.a + ", labelsFragment=" + this.b + ")";
     }
+    public sy(String p1, Object p2) {
+    }
 }

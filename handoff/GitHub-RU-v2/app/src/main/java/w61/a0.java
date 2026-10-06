@@ -36,4 +36,6 @@ public final class a0 {
     public Object s(Object p1, Object p2) { return null; }
     public Object x() { return null; }
     public Object l(Object p1, Object p2, Object p3) { return null; }
+    public a0(int p1) {
+    }
 }

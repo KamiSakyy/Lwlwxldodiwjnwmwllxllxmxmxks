@@ -15,4 +15,6 @@ public abstract class a {
     }
 
     public static Object a;
+    public a(String p1, int p2) {
+    }
 }

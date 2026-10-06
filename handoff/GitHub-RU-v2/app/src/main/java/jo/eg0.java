@@ -33,4 +33,6 @@ public final class eg0 {
         o.append(")");
         return o.toString();
     }
+    public eg0(String p1, String p2, Object p3) {
+    }
 }

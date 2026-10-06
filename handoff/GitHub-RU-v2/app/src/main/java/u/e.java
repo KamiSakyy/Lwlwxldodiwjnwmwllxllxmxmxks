@@ -15,4 +15,6 @@ public class e {
         this.f32176a = dVar;
         this.f32177b = componentName;
     }
+    public e(Object p1, android.content.ComponentName p2) {
+    }
 }

@@ -7,4 +7,6 @@ package d1;
 public class k1 {
     public k1() {
     }
+    public k1(long p1) {
+    }
 }

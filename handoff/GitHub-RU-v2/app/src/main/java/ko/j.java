@@ -30,4 +30,6 @@ public final class j {
     public final String toString() {
         return "UnlockingModel(__typename=" + this.a + ", unlockingModelFragment=" + this.b + ")";
     }
+    public j(Object p1) {
+    }
 }

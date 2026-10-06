@@ -7,4 +7,6 @@ package v1;
 public class v {
     public v() {
     }
+    public v(Object p1, int p2) {
+    }
 }

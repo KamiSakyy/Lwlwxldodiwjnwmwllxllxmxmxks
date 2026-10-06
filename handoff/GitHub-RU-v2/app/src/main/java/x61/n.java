@@ -24,4 +24,6 @@ public abstract class n extends d0 {
 
     public n(Object... a) {
     }
+    public n(String p1, String p2, java.time.ZonedDateTime p3, int p4, Object p5) {
+    }
 }

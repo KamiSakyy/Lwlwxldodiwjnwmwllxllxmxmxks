@@ -37,4 +37,6 @@ public final class vz {
         o.append(")");
         return o.toString();
     }
+    public vz(String p1, String p2, Object p3, Object p4) {
+    }
 }

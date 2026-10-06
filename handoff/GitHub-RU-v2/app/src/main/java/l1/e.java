@@ -219,4 +219,6 @@ public class e implements RandomAccess {
     public Object f27901r = null;
     public Object f27903t = null;
     public Object t = null;
+    public e(Object p1) {
+    }
 }

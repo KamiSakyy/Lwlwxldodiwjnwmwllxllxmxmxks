@@ -161,4 +161,6 @@ public final class w {
         this.f.schedule(new y(this, this.a, this.b, Math.min(Math.max(30L, 2 * j2), i)), j2, TimeUnit.SECONDS);
         d(true);
     }
+    public w(FirebaseMessaging p1, Object p2, Object p3, Object p4, android.content.Context p5, java.util.concurrent.ScheduledThreadPoolExecutor p6) {
+    }
 }

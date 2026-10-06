@@ -53,4 +53,6 @@ public final class k implements d {
     public Object getCurrentItem() { return null; }
     public Object l0 = null;
     public Object n0 = null;
+    public k(Object p1, int p2) {
+    }
 }

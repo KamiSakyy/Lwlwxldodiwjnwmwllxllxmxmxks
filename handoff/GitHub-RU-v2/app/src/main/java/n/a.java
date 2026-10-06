@@ -22,4 +22,6 @@ public final class a implements TransformationMethod {
     @Override // android.text.method.TransformationMethod
     public final void onFocusChanged(View view, CharSequence charSequence, boolean z10, int i, Rect rect) {
     }
+    public a(Object p1, Object p2) {
+    }
 }

@@ -280,4 +280,6 @@ public final /* synthetic */ class n6 implements j71.e {
         }
         return a0Var;
     }
+    public n6(int p1) {
+    }
 }

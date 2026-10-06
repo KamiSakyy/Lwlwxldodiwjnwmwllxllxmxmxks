@@ -42,4 +42,6 @@ public final class kw {
         public e() {
         }
     }
+    public kw(String p1, Object p2) {
+    }
 }

@@ -45,4 +45,6 @@ public final class a {
         k71.k.g(bVar, "navigationEvent");
     }
     public Object c = null;
+    public a(android.window.BackEvent p1) {
+    }
 }

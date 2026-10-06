@@ -127,4 +127,6 @@ public final /* synthetic */ class m implements j71.e {
                 return wy.a(wyVar, r4);
         }
     }
+    public m(int p1) {
+    }
 }

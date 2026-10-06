@@ -33,4 +33,6 @@ public final class yw {
         o.append(")");
         return o.toString();
     }
+    public yw(String p1, String p2, Object p3) {
+    }
 }

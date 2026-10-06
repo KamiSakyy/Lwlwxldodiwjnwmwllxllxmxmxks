@@ -12,4 +12,6 @@ public class n {
         return null;
     }
     public static b d(Object p1) { return null; }
+    public n(Object p1, Object p2, int p3) {
+    }
 }

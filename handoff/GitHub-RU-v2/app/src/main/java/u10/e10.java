@@ -46,4 +46,6 @@ public final class e10 {
         o.append(")");
         return o.toString();
     }
+    public e10(String p1, boolean p2, boolean p3, boolean p4, String p5, Object p6, Object p7) {
+    }
 }

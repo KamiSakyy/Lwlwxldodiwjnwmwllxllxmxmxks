@@ -35,4 +35,6 @@ public final class u50 {
     public final String toString() {
         return "Node(__typename=" + this.a + ", nodeIdFragment=" + this.b + ", pullRequestCommitFields=" + this.c + ")";
     }
+    public u50(String p1, Object p2, Object p3) {
+    }
 }

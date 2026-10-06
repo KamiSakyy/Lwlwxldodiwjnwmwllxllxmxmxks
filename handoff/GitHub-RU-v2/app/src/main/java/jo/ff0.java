@@ -33,4 +33,6 @@ public final class ff0 {
         o.append(")");
         return o.toString();
     }
+    public ff0(String p1, String p2, Object p3) {
+    }
 }

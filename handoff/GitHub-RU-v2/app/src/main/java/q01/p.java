@@ -111,4 +111,6 @@ public final /* synthetic */ class p implements j71.a {
                 return c1Shadow.f("com.github.service.models.response.shortcuts.ShortcutIcon", ShortcutIcon.values());
         }
     }
+    public p(int p1) {
+    }
 }

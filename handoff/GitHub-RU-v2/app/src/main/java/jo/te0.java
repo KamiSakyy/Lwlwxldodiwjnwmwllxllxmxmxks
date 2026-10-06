@@ -33,4 +33,6 @@ public final class te0 {
     public final String toString() {
         return f4.r(a0.s0.o("Actor(__typename=", this.a, ", login=", this.b, ", nodeIdFragment="), this.c, ")");
     }
+    public te0(String p1, String p2, Object p3) {
+    }
 }

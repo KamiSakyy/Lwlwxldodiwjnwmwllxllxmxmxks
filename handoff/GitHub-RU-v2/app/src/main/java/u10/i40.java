@@ -37,4 +37,6 @@ public final class i40 {
         o.append(")");
         return o.toString();
     }
+    public i40(String p1, String p2, String p3, Object p4) {
+    }
 }

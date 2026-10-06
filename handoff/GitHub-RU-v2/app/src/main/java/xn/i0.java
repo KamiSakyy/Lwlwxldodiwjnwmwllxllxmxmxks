@@ -183,4 +183,6 @@ public final class i0 implements Parcelable.Creator {
                 return new z11.p[i];
         }
     }
+    public i0(int p1) {
+    }
 }

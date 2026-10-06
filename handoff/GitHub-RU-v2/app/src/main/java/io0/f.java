@@ -358,4 +358,6 @@ public final /* synthetic */ class f implements j71.c {
                 return new i40(aVar11.b, 30, new u0((Object) null));
         }
     }
+    public f(int p1) {
+    }
 }

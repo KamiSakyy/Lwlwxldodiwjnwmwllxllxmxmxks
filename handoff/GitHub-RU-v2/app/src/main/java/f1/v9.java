@@ -36,4 +36,6 @@ public final class v9 {
     public static v9[] values() {
         return (v9[]) f23932u.clone();
     }
+    public int ordinal() { return 0; }
+    public String name() { return "v9"; }
 }

@@ -331,4 +331,6 @@ public final class c0 implements Parcelable.Creator {
                 return new xn.h0[i];
         }
     }
+    public c0(int p1) {
+    }
 }

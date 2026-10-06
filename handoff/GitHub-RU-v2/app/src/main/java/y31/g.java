@@ -35,4 +35,8 @@ public final class g extends u31.j {
         rectF.set(f, f2, f3, f4);
         invalidateSelf();
     }
+    public g(Object p1) {
+    }
+    public g(int p1) {
+    }
 }

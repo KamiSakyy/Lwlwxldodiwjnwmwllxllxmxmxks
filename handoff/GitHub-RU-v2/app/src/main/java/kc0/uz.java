@@ -70,4 +70,6 @@ public final class uz implements aaShadow.w0 {
     public final String toString() {
         return jo.f4Shadow.k(this.s, "SearchPeopleQuery(query=", this.r, ", first=30, after=", ")");
     }
+    public uz(Object p1, Object p2) {
+    }
 }

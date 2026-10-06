@@ -25,4 +25,6 @@ public class e {
 
     public e(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
     }
+    public e(Object p1, int p2, int p3, Object p4, int p5, int p6, int p7) {
+    }
 }

@@ -28,4 +28,6 @@ public final class yi0 {
     public final String toString() {
         return "CopilotLimitedUser(__typename=" + this.a + ", copilotLimitedUser=" + this.b + ")";
     }
+    public yi0(String p1, Object p2) {
+    }
 }

@@ -7,4 +7,6 @@ package f1;
 public class fa {
     public fa() {
     }
+    public fa(long p1, long p2, Object p3, Object p4, Object p5, Object p6) {
+    }
 }

@@ -13,4 +13,6 @@ public final class r {
         this.f32033a = rVar;
         this.f32034b = i;
     }
+    public r(Object p1) {
+    }
 }

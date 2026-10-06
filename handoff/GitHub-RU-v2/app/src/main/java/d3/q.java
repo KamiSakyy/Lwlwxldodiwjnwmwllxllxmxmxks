@@ -21,4 +21,6 @@ public class q {
     }
     public static Object a(Object p1, Object p2) { return null; }
     public static Object b(Object p1, Object p2, Object p3) { return null; }
+    public q(Object p1, int p2) {
+    }
 }

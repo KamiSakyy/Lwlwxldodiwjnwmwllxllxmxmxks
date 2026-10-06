@@ -29,4 +29,6 @@ public final class og0 {
     public final String toString() {
         return "Subscribable(__typename=" + this.a + ", subscribableFragment=" + this.b + ")";
     }
+    public og0(String p1, Object p2) {
+    }
 }

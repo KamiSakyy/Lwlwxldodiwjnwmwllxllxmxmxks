@@ -34,4 +34,6 @@ public final class h {
     public final String toString() {
         return "OnCheckRun(__typename=" + this.a + ", checkSuite=" + this.b + ", steps=" + this.c + ", workFlowCheckRunFragment=" + this.d + ")";
     }
+    public h(Object p1, String p2, int p3, int p4) {
+    }
 }

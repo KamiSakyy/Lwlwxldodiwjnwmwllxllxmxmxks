@@ -12,4 +12,6 @@ public class b {
         this.a = wVar;
     }
 
+    public b(GitHubDatabase_Impl p1) {
+    }
 }

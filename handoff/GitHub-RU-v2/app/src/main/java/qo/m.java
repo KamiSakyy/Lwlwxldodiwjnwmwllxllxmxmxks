@@ -39,4 +39,6 @@ public final class m {
         sb.append(", nodes=");
         return x.i.l(sb, this.c, ")");
     }
+    public m(int p1, Object p2, int p3) {
+    }
 }

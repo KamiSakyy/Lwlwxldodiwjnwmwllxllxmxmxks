@@ -29,4 +29,6 @@ public final class k2 {
     public final String toString() {
         return "Subject(__typename=" + this.a + ", discussionVotableFragment=" + this.b + ")";
     }
+    public k2(String p1, Object p2) {
+    }
 }

@@ -261,4 +261,6 @@ public final class m implements Parcelable.Creator {
                 return new kx0.j[i];
         }
     }
+    public m(int p1) {
+    }
 }

@@ -37,4 +37,6 @@ public final class t {
     public Object m(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object f32599s = null;
     public Object s = null;
+    public t(Object p1, java.util.ArrayList p2, boolean p3, int p4) {
+    }
 }

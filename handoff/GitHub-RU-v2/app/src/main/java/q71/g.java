@@ -42,4 +42,6 @@ public final class g extends e {
 
     public g(Object... a) {
     }
+    public g(Object p1, Object p2, boolean p3, Object p4, boolean p5, boolean p6, boolean p7, boolean p8, String p9, boolean p10, Object p11, java.util.List p12, Object p13, boolean p14, boolean p15) {
+    }
 }

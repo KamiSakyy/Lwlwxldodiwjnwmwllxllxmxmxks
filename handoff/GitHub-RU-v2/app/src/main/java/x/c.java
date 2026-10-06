@@ -104,4 +104,6 @@ public final class c implements Iterator, Map.Entry {
     public final String toString() {
         return getKey() + "=" + getValue();
     }
+    public c(Object p1) {
+    }
 }

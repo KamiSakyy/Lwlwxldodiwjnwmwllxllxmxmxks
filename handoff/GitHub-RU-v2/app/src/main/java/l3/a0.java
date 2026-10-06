@@ -41,4 +41,6 @@ public final /* synthetic */ class a0 implements Choreographer.FrameCallback {
         this.f27916r = i;
         this.f27917s = runnable;
     }
+    public a0(Object p1, int p2) {
+    }
 }

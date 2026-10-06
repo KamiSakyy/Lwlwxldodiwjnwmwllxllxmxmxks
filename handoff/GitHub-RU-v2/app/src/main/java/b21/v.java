@@ -592,4 +592,6 @@ public class v implements b5.o {
         this.t = new k.d(new ContextThemeWrapper(context, k.g.g(context, i)));
         this.s = i;
     }
+    public v(int p1, byte p2) {
+    }
 }

@@ -12,4 +12,6 @@ public interface f {
     public Object N0(Object p1) { return null; }
     public Object O(Object p1) { return null; }
     public Object s0(Object p1) { return null; }
+    public f(Object p1, android.view.View p2, Object p3) {
+    }
 }

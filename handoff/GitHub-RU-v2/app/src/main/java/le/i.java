@@ -19,4 +19,8 @@ public class i {
         public w() {
         }
     }
+    public i(Object p1, Object p2) {
+    }
+    public i(Object p1, Object p2, Object p3, int p4) {
+    }
 }

@@ -29,4 +29,6 @@ public final class hq {
     public final String toString() {
         return "Reactable(__typename=" + this.a + ", reactionFragment=" + this.b + ")";
     }
+    public hq(Object p1, String p2) {
+    }
 }

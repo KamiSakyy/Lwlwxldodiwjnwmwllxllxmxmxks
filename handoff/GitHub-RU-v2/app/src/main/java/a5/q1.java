@@ -7,4 +7,6 @@ package a5;
 public class q1 {
     public q1() {
     }
+    public q1(Object p1, java.util.concurrent.atomic.AtomicReference p2, String p3, String p4) {
+    }
 }

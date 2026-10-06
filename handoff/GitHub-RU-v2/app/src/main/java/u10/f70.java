@@ -33,4 +33,6 @@ public final class f70 {
         o.append(")");
         return o.toString();
     }
+    public f70(String p1, String p2, Object p3) {
+    }
 }

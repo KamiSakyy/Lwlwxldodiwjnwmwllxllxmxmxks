@@ -40,4 +40,12 @@ public final class m {
     public Object s = null;
     public Object t = null;
     public b1.m s = null;
+    public m(AppMeasurementDynamiteService p1, Object p2, boolean p3, int p4) {
+    }
+    public m(Object p1) {
+    }
+    public m(Object p1, Object p2, boolean p3, int p4) {
+    }
+    public m(Object p1, String p2, boolean p3, int p4) {
+    }
 }

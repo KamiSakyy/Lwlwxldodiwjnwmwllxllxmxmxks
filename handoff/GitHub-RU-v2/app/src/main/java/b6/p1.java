@@ -47,4 +47,6 @@ public final class p1 extends z5.j {
     public final String toString() {
         return "RemoteViewsRoot(modifier=" + this.f3660e + ", children=[\n" + d() + "\n])";
     }
+    public p1(int p1) {
+    }
 }

@@ -39,4 +39,6 @@ public final class l20 {
         o.append(")");
         return o.toString();
     }
+    public l20(String p1, String p2, Object p3, Object p4) {
+    }
 }

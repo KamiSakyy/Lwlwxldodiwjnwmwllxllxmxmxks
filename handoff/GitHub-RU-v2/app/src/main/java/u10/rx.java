@@ -40,4 +40,6 @@ public final class rx {
         sb.append(", nodeIdFragment=");
         return no.a.p(sb, this.c, ")");
     }
+    public rx(String p1, Object p2, Object p3) {
+    }
 }

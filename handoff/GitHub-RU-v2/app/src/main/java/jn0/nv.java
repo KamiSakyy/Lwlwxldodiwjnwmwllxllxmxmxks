@@ -75,4 +75,6 @@ public final class nv implements aaShadow.w0 {
     public final String toString() {
         return com.github.rudroid.copilot.h1.p(a0.s0.o("RepoFilesQuery(owner=", this.r, ", name=", this.s, ", branchAndPath="), this.t, ")");
     }
+    public nv(String p1, String p2, Object p3) {
+    }
 }

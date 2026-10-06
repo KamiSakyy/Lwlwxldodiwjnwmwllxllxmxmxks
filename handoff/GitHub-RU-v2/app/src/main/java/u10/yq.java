@@ -29,4 +29,6 @@ public final class yq {
     public final String toString() {
         return "Subject(__typename=" + this.a + ", discussionVotableFragment=" + this.b + ")";
     }
+    public yq(String p1, Object p2) {
+    }
 }

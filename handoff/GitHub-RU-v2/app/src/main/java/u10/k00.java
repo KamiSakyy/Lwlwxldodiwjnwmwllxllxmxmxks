@@ -40,4 +40,6 @@ public final class k00 {
         sb.append(", nodeIdFragment=");
         return no.a.p(sb, this.c, ")");
     }
+    public k00(String p1, Object p2, Object p3) {
+    }
 }

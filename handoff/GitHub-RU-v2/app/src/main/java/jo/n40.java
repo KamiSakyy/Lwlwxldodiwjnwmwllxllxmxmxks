@@ -39,4 +39,6 @@ public final class n40 {
     public final String toString() {
         return "Node1(__typename=" + this.a + ", onIssue=" + this.b + ", onPullRequest=" + this.c + ", nodeIdFragment=" + this.d + ")";
     }
+    public n40(String p1, Object p2, Object p3, Object p4) {
+    }
 }

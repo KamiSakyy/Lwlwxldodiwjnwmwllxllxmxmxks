@@ -57,4 +57,6 @@ public final class wr {
         o.append(")");
         return o.toString();
     }
+    public wr(String p1, String p2, Object p3, String p4, Object p5, Object p6, Object p7, Object p8, Object p9) {
+    }
 }

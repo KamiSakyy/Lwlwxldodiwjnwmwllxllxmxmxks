@@ -29,4 +29,6 @@ public final class z0 {
     public Object d = null;
     public Object e = null;
     public Object f = null;
+    public z0(Object p1, Object p2, int p3, Object p4, Object p5, boolean p6) {
+    }
 }

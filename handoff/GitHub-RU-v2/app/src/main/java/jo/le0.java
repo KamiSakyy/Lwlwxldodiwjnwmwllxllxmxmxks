@@ -33,4 +33,6 @@ public final class le0 {
     public final String toString() {
         return f4.r(a0.s0.o("MergedBy(__typename=", this.a, ", login=", this.b, ", nodeIdFragment="), this.c, ")");
     }
+    public le0(String p1, String p2, Object p3) {
+    }
 }

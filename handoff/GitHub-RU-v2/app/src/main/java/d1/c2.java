@@ -20,4 +20,6 @@ public class c2Shadow {
         public c() {
         }
     }
+    public c2(Object p1, Object p2, Object p3, Object p4) {
+    }
 }

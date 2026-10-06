@@ -23,4 +23,6 @@ public final class o {
     }
     public Object c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10) { return null; }
     public Object a = null;
+    public o(int p1) {
+    }
 }

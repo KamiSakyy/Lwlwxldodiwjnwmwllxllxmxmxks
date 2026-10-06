@@ -28,4 +28,6 @@ public final class wi0 {
     public final String toString() {
         return "CopilotConsumptiveUser(__typename=" + this.a + ", copilotConsumptiveUser=" + this.b + ")";
     }
+    public wi0(String p1, Object p2) {
+    }
 }

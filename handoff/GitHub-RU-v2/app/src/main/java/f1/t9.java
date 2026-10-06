@@ -7,4 +7,6 @@ package f1;
 public class t9 {
     public t9() {
     }
+    public t9(int p1, Object p2) {
+    }
 }

@@ -7,4 +7,6 @@ package g3;
 public class r0 {
     public r0() {
     }
+    public r0(String p1) {
+    }
 }

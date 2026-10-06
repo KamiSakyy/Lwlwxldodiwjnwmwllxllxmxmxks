@@ -16,4 +16,6 @@ public final class q extends n0 {
     public final Shader b(long j10) {
         return this.f21377c;
     }
+    public q(android.graphics.Shader p1) {
+    }
 }

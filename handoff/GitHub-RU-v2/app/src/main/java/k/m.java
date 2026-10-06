@@ -31,4 +31,6 @@ public final class m implements Executor {
     }
     public Object s = null;
     public Object t = null;
+    public m(int p1) {
+    }
 }

@@ -37,4 +37,6 @@ public final class wc0 {
         o.append(")");
         return o.toString();
     }
+    public wc0(String p1, String p2, String p3, Object p4) {
+    }
 }

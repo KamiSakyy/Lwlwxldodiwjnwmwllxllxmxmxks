@@ -28,4 +28,6 @@ public final class y50 {
     public final String toString() {
         return "Assignable(__typename=" + this.a + ", assignableFragment=" + this.b + ")";
     }
+    public y50(String p1, Object p2) {
+    }
 }

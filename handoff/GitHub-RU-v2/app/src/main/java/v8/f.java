@@ -113,4 +113,6 @@ public final class f {
     public Object e = null;
     public Object g = null;
     public Object h = null;
+    public f(Object p1, Object p2, boolean p3, boolean p4, boolean p5, boolean p6, long p7, long p8, Object p9) {
+    }
 }

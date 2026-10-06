@@ -33,4 +33,6 @@ public final class ef0 {
         o.append(")");
         return o.toString();
     }
+    public ef0(String p1, String p2, Object p3) {
+    }
 }

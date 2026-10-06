@@ -172,4 +172,6 @@ public abstract class g extends i {
         public CoordinatorLayout() {
         }
     }
+    public g(int p1) {
+    }
 }

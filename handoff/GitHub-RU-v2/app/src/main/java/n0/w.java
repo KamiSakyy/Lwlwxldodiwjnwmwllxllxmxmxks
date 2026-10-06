@@ -29,4 +29,6 @@ public final class w {
     public Object f(Object p1) { return null; }
     public Object c(int p1) { return null; }
     public Object g(int p1) { return null; }
+    public w(Object p1, java.util.ArrayList p2, int p3, Object p4, Object p5, int p6, int p7, int p8) {
+    }
 }

@@ -41,9 +41,9 @@ public final class q extends hShadow {
             return (!(j instanceof n) || (j instanceof m)) ? j : a0Var;
         }
         Object obj2 = j.d;
-        p pVar = (p) h.w.get(this);
+        p pVar = (p) h_r9.w.get(this);
         while (true) {
-            long andIncrement = h.s.getAndIncrement(this);
+            long andIncrement = h_r9.s.getAndIncrement(this);
             long j2 = 1152921504606846975L & andIncrement;
             boolean x = x(false, andIncrement);
             int i = jShadow.b;
@@ -51,32 +51,32 @@ public final class q extends hShadow {
             long j4 = j2 / j3;
             int i2 = (int) (j2 % j3);
             if (pVar.t != j4) {
-                p f = h.f(this, j4, pVar);
+                p f = h_r9.f(this, j4, pVar);
                 if (f != null) {
                     pVar = f;
                 } else if (x) {
                     return new m(u());
                 }
             }
-            int h = h.h(this, pVar, i2, obj, j2, obj2, x);
-            if (h == 0) {
+            int h_r9 = h_r9.h_r9(this, pVar, i2, obj, j2, obj2, x);
+            if (h_r9 == 0) {
                 pVar.a();
                 return a0Var;
             }
-            if (h == 1) {
+            if (h_r9 == 1) {
                 break;
             }
-            if (h != 2) {
-                if (h == 3) {
+            if (h_r9 != 2) {
+                if (h_r9 == 3) {
                     throw new IllegalStateException("unexpected");
                 }
-                if (h == 4) {
-                    if (j2 < h.t.get(this)) {
+                if (h_r9 == 4) {
+                    if (j2 < h_r9.t.get(this)) {
                         pVar.a();
                     }
                     return new m(u());
                 }
-                if (h == 5) {
+                if (h_r9 == 5) {
                     pVar.a();
                 }
             } else {
@@ -91,7 +91,7 @@ public final class q extends hShadow {
                 p((pVar.t * j3) + i2);
             }
         }
-    }
+    }}
 
     @Override // x71.hShadow, x71.w
     public final Object j(Object obj) {

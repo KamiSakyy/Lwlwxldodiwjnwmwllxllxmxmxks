@@ -8,4 +8,6 @@ public class u {
     public u() {
     }
     public Object ordinal() { return null; }
+    public int ordinal() { return 0; }
+    public String name() { return "u"; }
 }

@@ -6,4 +6,6 @@ package o1;
  */
 public class i {
     public i() {}
+    public i(int p1, Object p2) {
+    }
 }

@@ -7,4 +7,6 @@ package ab;
 public class n {
     public n() {
     }
+    public n(Object p1, Object p2, int p3, int p4, int p5) {
+    }
 }

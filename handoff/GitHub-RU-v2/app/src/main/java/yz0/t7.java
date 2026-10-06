@@ -80,4 +80,6 @@ public final class t7 implements Parcelable {
     public /* synthetic */ t7(String str, String str2, String str3, Avatar avatar, n5 n5Var, String str4) {
         this(str, str2, str3, avatar, n5Var, str4, f1.e.h(str3, " / ", str));
     }
+    public t7(String p1, String p2, String p3, Object p4, Object p5, String p6) {
+    }
 }

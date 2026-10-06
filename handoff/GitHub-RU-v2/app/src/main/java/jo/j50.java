@@ -70,4 +70,6 @@ public final class j50 implements aaShadow.w0 {
     public final String toString() {
         return f4.k(this.s, "SearchPeopleQuery(query=", this.r, ", first=30, after=", ")");
     }
+    public j50(Object p1, Object p2) {
+    }
 }

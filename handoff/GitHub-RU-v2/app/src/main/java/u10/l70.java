@@ -34,4 +34,6 @@ public final class l70 {
     public final String toString() {
         return "PullRequestReviewComment(__typename=" + this.a + ", subjectType=" + this.b + ", pullRequest=" + this.c + ", id=" + this.d + ", reviewThreadCommentFragment=" + this.e + ")";
     }
+    public l70(String p1, Object p2, Object p3, String p4, Object p5) {
+    }
 }

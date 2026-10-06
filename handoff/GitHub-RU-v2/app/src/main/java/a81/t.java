@@ -171,4 +171,6 @@ public final class t implements u5.l {
     }
     public Object Companion = null;
     public Object a = null;
+    public t(int p1) {
+    }
 }

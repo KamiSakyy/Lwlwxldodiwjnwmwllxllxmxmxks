@@ -53,4 +53,6 @@ public final class b2 {
     public Object d = null;
     public Object q = null;
     public Object b(Object p1, int p2) { return null; }
+    public b2(android.content.Context p1, int p2, boolean p3, Object p4, int p5, boolean p6, java.util.concurrent.atomic.AtomicInteger p7, Object p8, java.util.concurrent.atomic.AtomicBoolean p9, long p10, int p11, boolean p12, Object p13, android.content.ComponentName p14, Object p15) {
+    }
 }

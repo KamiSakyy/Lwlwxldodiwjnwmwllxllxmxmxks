@@ -33,4 +33,6 @@ public final class va0 {
     public final String toString() {
         return f4.r(a0.s0.o("AnswerChosenBy(__typename=", this.a, ", login=", this.b, ", nodeIdFragment="), this.c, ")");
     }
+    public va0(String p1, String p2, Object p3) {
+    }
 }

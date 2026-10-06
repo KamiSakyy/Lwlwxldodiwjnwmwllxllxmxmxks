@@ -38,4 +38,6 @@ public final class d extends c {
         }
         L0();
     }
+    public d(Object p1, android.view.View p2, Object p3) {
+    }
 }

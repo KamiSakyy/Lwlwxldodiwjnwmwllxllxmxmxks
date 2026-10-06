@@ -209,4 +209,6 @@ public final class f8 implements y71.i {
         this.r = 22;
         this.s = (c71.j) eVar;
     }
+    public f8(Object p1) {
+    }
 }

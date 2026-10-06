@@ -37,4 +37,6 @@ public final class n7 extends s7 {
         sb.append(", createdAt=");
         return com.github.rudroid.copilot.h1.q(sb, this.c, ")");
     }
+    public n7(Object p1, Object p2, java.time.ZonedDateTime p3) {
+    }
 }

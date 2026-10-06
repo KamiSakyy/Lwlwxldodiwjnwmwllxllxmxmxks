@@ -60,4 +60,6 @@ public final class q {
     public final String toString() {
         return g(this.f31712a);
     }
+    public q(long p1) {
+    }
 }

@@ -19,4 +19,14 @@ public class x1 {
     public Object y(Object p1, Object p2, Object p3) { return null; }
     public Object r = null;
     public Object s = null;
+    public x1(Object p1, Object p2) {
+    }
+    public x1(String p1, Object p2) {
+    }
+    public x1(String p1, String p2) {
+    }
+    public x1(android.content.Context p1) {
+    }
+    public x1(int p1) {
+    }
 }

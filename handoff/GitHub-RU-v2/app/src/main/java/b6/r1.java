@@ -9,4 +9,6 @@ public final /* synthetic */ class r1 implements j71.a {
     public final Object a() {
         return new s3.h(this.f3686r);
     }
+    public r1(long p1) {
+    }
 }

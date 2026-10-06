@@ -216,4 +216,6 @@ public final class j extends b0 {
         }
     }
     public Object c() { return null; }
+    public j(android.content.Context p1, int p2) {
+    }
 }

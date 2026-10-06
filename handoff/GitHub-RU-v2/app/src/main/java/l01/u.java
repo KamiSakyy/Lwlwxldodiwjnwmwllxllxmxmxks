@@ -9,4 +9,6 @@ public interface u {
     String getId();
 
     String getTitle();
+    public u(Object p1, Object p2, Object p3, int p4) {
+    }
 }

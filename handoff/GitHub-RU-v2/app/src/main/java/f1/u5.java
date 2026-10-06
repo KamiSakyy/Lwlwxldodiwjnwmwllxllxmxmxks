@@ -7,4 +7,6 @@ package f1;
 public class u5 {
     public u5() {
     }
+    public u5(int p1) {
+    }
 }

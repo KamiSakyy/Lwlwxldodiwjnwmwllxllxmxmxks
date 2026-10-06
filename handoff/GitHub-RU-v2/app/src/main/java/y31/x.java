@@ -25,4 +25,6 @@ public final class x extends i5.b {
         TextUtils.writeToParcel(this.t, parcel, i);
         parcel.writeInt(this.u ? 1 : 0);
     }
+    public x(android.os.Parcelable p1) {
+    }
 }

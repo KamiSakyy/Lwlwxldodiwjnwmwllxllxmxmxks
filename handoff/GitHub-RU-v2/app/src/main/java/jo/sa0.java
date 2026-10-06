@@ -32,4 +32,6 @@ public final class sa0 {
     public final String toString() {
         return "UnlockedRecord(__typename=" + this.a + ", activeLockReason=" + this.b + ", lockableFragment=" + this.c + ")";
     }
+    public sa0(String p1, Object p2, Object p3) {
+    }
 }

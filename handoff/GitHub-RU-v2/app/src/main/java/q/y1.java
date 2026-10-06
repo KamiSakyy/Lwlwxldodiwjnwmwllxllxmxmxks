@@ -18,4 +18,6 @@ public class y1 {
     public Object f30765t = null;
     public Object t = null;
     public q.y1 H = null;
+    public y1(android.content.Context p1, android.util.AttributeSet p2, int p3, int p4) {
+    }
 }

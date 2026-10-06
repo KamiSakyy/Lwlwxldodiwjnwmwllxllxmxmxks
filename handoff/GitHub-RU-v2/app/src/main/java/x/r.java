@@ -291,4 +291,6 @@ public final class r implements Cloneable {
     }
     public Object h = null;
     public Object i = null;
+    public r(int p1, Object p2, Object p3) {
+    }
 }
