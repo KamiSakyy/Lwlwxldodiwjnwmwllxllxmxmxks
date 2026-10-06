@@ -218,7 +218,7 @@ class StudioComposeUi(private val activity: MainActivity) {
                     StudioHeader()
                     SectionCard(
                         title = if (pythonRuntimeSelected) "01 · PYTHON ENGINE" else "01 · ПРОЕКТ",
-                        subtitle = if (pythonRuntimeSelected) "Локальный сервер Flask внутри APK." else "Выберите HTML-файл или ZIP-проект."
+                        subtitle = if (pythonRuntimeSelected) "Локальный сервер Flask внутри APK." else "HTML или ZIP с готовой web-сборкой (например, dist/)."
                     ) {
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
                             OutlinedButton(
@@ -348,7 +348,7 @@ class StudioComposeUi(private val activity: MainActivity) {
                                     )
                                     Spacer(Modifier.size(9.dp))
                                     androidx.compose.material3.Text(
-                                        text = "Сайт шифруется и обрабатывается на устройстве.",
+                                        text = "Сайт шифруется на устройстве. Web APK имеет INTERNET для HTTPS; работу API/CORS проверьте отдельно.",
                                         color = Muted,
                                         fontSize = 11.sp,
                                         lineHeight = 15.sp

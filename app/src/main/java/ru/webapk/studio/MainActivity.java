@@ -297,13 +297,14 @@ public final class MainActivity extends ComponentActivity {
         beginProjectImport();
         setStatus("Безопасно распаковываю ZIP…", true);
         IO.execute(() -> {
+            File root = new File(getFilesDir(), "workspace/site");
             try {
                 clearDirectory(new File(getCacheDir(), "webapk-build"));
-                File root = new File(getFilesDir(), "workspace/site");
                 clearDirectory(root);
                 if (!root.exists() && !root.mkdirs()) throw new IOException("Не удалось создать папку сайта.");
                 List<String> indexPaths = new ArrayList<>();
                 int files = 0;
+                int entries = 0;
                 long total = 0;
                 InputStream opened = getContentResolver().openInputStream(uri);
                 if (opened == null) throw new IOException("Не удалось открыть ZIP-файл.");
@@ -311,6 +312,9 @@ public final class MainActivity extends ComponentActivity {
                     ZipEntry entry;
                     byte[] buffer = new byte[8192];
                     while ((entry = zip.getNextEntry()) != null) {
+                        if (++entries > MAX_IMPORT_FILES * 2) {
+                            throw new IOException("В ZIP слишком много файловых и папочных записей.");
+                        }
                         String relative = normalizeZipPath(entry.getName());
                         if (relative.isEmpty()) {
                             zip.closeEntry();
@@ -346,41 +350,23 @@ public final class MainActivity extends ComponentActivity {
                         zip.closeEntry();
                     }
                 }
-                if (indexPaths.isEmpty()) throw new IOException("В ZIP не найден index.html.");
-                String selectedIndex = null;
-                for (String candidate : indexPaths) {
-                    if (candidate.equals("index.html")) {
-                        selectedIndex = candidate;
-                        break;
-                    }
-                }
-                if (selectedIndex == null) {
-                    if (indexPaths.size() != 1) {
-                        throw new IOException("В ZIP несколько index.html. Оставьте один в корне сайта.");
-                    }
-                    selectedIndex = indexPaths.get(0);
-                }
-                int slash = selectedIndex.lastIndexOf('/');
-                File actualRoot = slash < 0 ? root : new File(root, selectedIndex.substring(0, slash));
-                File originalIndex = new File(root, selectedIndex);
-                File normalizedIndex = new File(actualRoot, "index.html");
-                if (!originalIndex.equals(normalizedIndex)) {
-                    if (normalizedIndex.exists() || !originalIndex.renameTo(normalizedIndex)) {
-                        throw new IOException("Не удалось привести имя стартового файла к index.html.");
-                    }
-                }
+                WebProjectSelector.Selection selection = WebProjectSelector.select(root, indexPaths);
+                File actualRoot = selection.siteRoot;
                 siteRoot = actualRoot;
                 getPreferences(MODE_PRIVATE).edit().putString("siteRoot", actualRoot.getAbsolutePath()).apply();
                 generatedApk = null;
                 int fileCount = files;
                 long unpacked = total;
                 runOnUiThread(() -> {
-                    composeUi.setProjectSummary("ZIP · " + fileCount + " файлов · "
+                    composeUi.setProjectSummary("ZIP · " + selection.outputLabel + " · " + fileCount + " файлов · "
                             + ApkBuilder.formatBytes(unpacked));
-                    setStatus("Проект распакован офлайн", false);
+                    setStatus("Готовая web-сборка импортирована", false);
                 });
             } catch (Exception error) {
-                showFailure("Не удалось распаковать ZIP: " + error.getMessage());
+                try { clearDirectory(root); } catch (IOException cleanupError) { error.addSuppressed(cleanupError); }
+                siteRoot = null;
+                getPreferences(MODE_PRIVATE).edit().remove("siteRoot").apply();
+                showFailure("Не удалось импортировать ZIP: " + error.getMessage());
             }
         });
     }

@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -31,6 +32,7 @@ public final class RuntimeApkSmoke {
     public static void main(String[] args) throws Exception {
         if (args.length != 6) throw new IllegalArgumentException(
                 "template.apk unsigned.apk signed.apk signing-key.p12 password alias");
+        testWebProjectSelector();
         File template = new File(args[0]);
         File unsigned = new File(args[1]);
         File signed = new File(args[2]);
@@ -160,6 +162,67 @@ public final class RuntimeApkSmoke {
                 + " bytes; encrypted site round-trip, wrong-key rejection, path traversal, "
                 + "five icon densities, API 33/36 target patching and both fullscreen settings verified; "
                 + "stable handoff key reused for successive APKs");
+    }
+
+    private static void testWebProjectSelector() throws IOException {
+        File testRoot = new File(System.getProperty("java.io.tmpdir"),
+                "webapk-selector-smoke-" + System.nanoTime());
+        if (!testRoot.mkdirs()) throw new IOException("Cannot create web project selector smoke directory");
+        try {
+            File built = new File(testRoot, "built");
+            File builtDist = new File(built, "dist");
+            File source = new File(built, "src");
+            if (!builtDist.mkdirs() || !source.mkdirs()) throw new IOException("Cannot create Vite smoke directories");
+            writeFile(new File(built, "package.json"), "{}".getBytes(StandardCharsets.UTF_8));
+            writeFile(new File(built, "index.html"),
+                    "<script type=\"module\" src=\"/src/main.tsx\"></script>".getBytes(StandardCharsets.UTF_8));
+            writeFile(new File(source, "main.tsx"), "export {};".getBytes(StandardCharsets.UTF_8));
+            writeFile(new File(builtDist, "index.html"),
+                    "<script type=\"module\" src=\"/assets/app.js\"></script>".getBytes(StandardCharsets.UTF_8));
+            WebProjectSelector.Selection buildSelection = WebProjectSelector.select(built,
+                    Arrays.asList("index.html", "dist/index.html"));
+            if (!buildSelection.siteRoot.getCanonicalFile().equals(builtDist.getCanonicalFile())
+                    || !"dist".equals(buildSelection.outputLabel)) {
+                throw new IOException("ZIP selector did not prefer the built dist/ output");
+            }
+
+            File unbuilt = new File(testRoot, "unbuilt");
+            File unbuiltSource = new File(unbuilt, "src");
+            if (!unbuiltSource.mkdirs()) throw new IOException("Cannot create unbuilt Vite smoke directory");
+            writeFile(new File(unbuilt, "package.json"), "{}".getBytes(StandardCharsets.UTF_8));
+            writeFile(new File(unbuilt, "index.html"),
+                    "<script type=\"module\" src=\"/src/main.tsx\"></script>".getBytes(StandardCharsets.UTF_8));
+            writeFile(new File(unbuiltSource, "main.tsx"), "export {};".getBytes(StandardCharsets.UTF_8));
+            boolean sourceProjectRejected = false;
+            try {
+                WebProjectSelector.select(unbuilt, Arrays.asList("index.html"));
+            } catch (IOException expected) {
+                sourceProjectRejected = expected.getMessage().contains("npm ci && npm run build");
+            }
+            if (!sourceProjectRejected) {
+                throw new IOException("ZIP selector did not explain how to build an uncompiled React/Vite project");
+            }
+
+            File plain = new File(testRoot, "plain");
+            if (!plain.mkdirs()) throw new IOException("Cannot create static-site selector smoke directory");
+            writeFile(new File(plain, "index.html"), "<h1>Static site</h1>".getBytes(StandardCharsets.UTF_8));
+            WebProjectSelector.Selection plainSelection = WebProjectSelector.select(plain,
+                    Arrays.asList("index.html"));
+            if (!plainSelection.siteRoot.getCanonicalFile().equals(plain.getCanonicalFile())) {
+                throw new IOException("ZIP selector did not preserve a regular static-site root");
+            }
+        } finally {
+            deleteSmokeTree(testRoot);
+        }
+        System.out.println("Web project ZIP selection smoke test passed: dist/ priority, unbuilt Vite guidance, and plain static site");
+    }
+
+    private static void deleteSmokeTree(File file) throws IOException {
+        File[] children = file.listFiles();
+        if (children != null) {
+            for (File child : children) deleteSmokeTree(child);
+        }
+        if (file.exists() && !file.delete()) throw new IOException("Cannot remove smoke file: " + file);
     }
 
     private static void writeFile(File file, byte[] contents) throws IOException {

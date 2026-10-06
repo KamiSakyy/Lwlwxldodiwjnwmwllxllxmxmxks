@@ -49,6 +49,7 @@ javac -encoding UTF-8 -source 8 -target 8 -d "$CLASSES" \
   "$ROOT/scripts/jvm-stubs/android/util/Base64.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/BinaryXmlPatcher.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/IconResourceLocator.java" \
+  "$ROOT/app/src/main/java/ru/webapk/studio/WebProjectSelector.java" \
   "$ROOT/shared/src/main/java/com/webapk/security/EncryptedSiteArchive.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/ApkV2Signer.java" \
   "$ROOT/app/src/main/java/ru/webapk/studio/JarV1Signer.java" \
@@ -175,10 +176,10 @@ fi
 stage "verify final manifest and launcher metadata"
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
 TEMPLATE_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$TEMPLATE_APK" AndroidManifest.xml)"
-if "$BUILD_TOOLS/aapt" dump permissions "$TEMPLATE_APK" | grep -F "android.permission.INTERNET"; then
-  echo "Static site template unexpectedly requests INTERNET permission" >&2
-  exit 1
-fi
+STATIC_PERMISSIONS="$("$BUILD_TOOLS/aapt" dump permissions "$TEMPLATE_APK")"
+grep -F "android.permission.INTERNET" <<< "$STATIC_PERMISSIONS"
+GENERATED_STATIC_PERMISSIONS="$("$BUILD_TOOLS/aapt" dump permissions "$SIGNED")"
+grep -F "android.permission.INTERNET" <<< "$GENERATED_STATIC_PERMISSIONS"
 grep -F "android:roundIcon" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "android:extractNativeLibs" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"

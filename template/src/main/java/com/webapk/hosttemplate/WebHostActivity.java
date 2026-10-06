@@ -42,7 +42,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collections;
 
-/** Minimal offline WebView shell embedded in the compiler as a reusable APK template. */
+/** Static-site WebView shell embedded in the compiler as a reusable APK template. */
 public final class WebHostActivity extends Activity {
     private static final String FULLSCREEN_META = "com.webapk.studio.FULLSCREEN";
     private WebView webView;
@@ -309,8 +309,11 @@ public final class WebHostActivity extends Activity {
 
     private WebResourceResponse interceptSiteRequest(String rawUrl) {
         Uri uri = Uri.parse(rawUrl);
-        if (!"https".equals(uri.getScheme())
-                || !"appassets.androidplatform.net".equals(uri.getHost())) return null;
+        if ("http".equalsIgnoreCase(uri.getScheme())) {
+            return errorResponse(403, "Forbidden", "Cleartext network requests are disabled");
+        }
+        if (!"https".equalsIgnoreCase(uri.getScheme())
+                || !"appassets.androidplatform.net".equalsIgnoreCase(uri.getHost())) return null;
         String path = uri.getPath();
         if (path == null) return errorResponse(404, "Not Found", "Missing path");
         String relative = path.startsWith("/site/") ? path.substring("/site/".length())
