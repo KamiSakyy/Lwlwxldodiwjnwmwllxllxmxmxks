@@ -7,7 +7,7 @@ import com.github.rudroid.uitoolkit.text.o;
 import d2.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public interface d {
+public final class d {
 
     public static final class a implements d {
         public final boolean equals(Object obj) {
@@ -358,5 +358,25 @@ public interface d {
     public static class ReRunJobBottomSheet {
         public ReRunJobBottomSheet() {
         }
+    }
+    public d() {
+    }
+
+    public d(Object p1) {
+    }
+
+    public d(Object p1, Object p2) {
+    }
+
+    public d(Object p1, Object p2, Object p3) {
+    }
+
+    public d(Object p1, Object p2, Object p3, Object p4) {
+    }
+
+    public d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
+    }
+
+    public d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10) {
     }
 }

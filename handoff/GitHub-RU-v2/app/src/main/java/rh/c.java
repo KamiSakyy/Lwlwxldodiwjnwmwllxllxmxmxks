@@ -6,7 +6,7 @@ import com.github.rudroid.m0;
 import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public interface c extends f {
+public final class c extends f {
 
     public static final class a implements c {
         public final fl.b a;
@@ -202,6 +202,26 @@ public interface c extends f {
         }
     }
 
-    boolean b();
+    boolean b() { return false; }
 
+    public c() {
+    }
+
+    public c(Object p1) {
+    }
+
+    public c(Object p1, Object p2) {
+    }
+
+    public c(Object p1, Object p2, Object p3) {
+    }
+
+    public c(Object p1, Object p2, Object p3, Object p4) {
+    }
+
+    public c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
+    }
+
+    public c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12, Object p13, Object p14) {
+    }
 }

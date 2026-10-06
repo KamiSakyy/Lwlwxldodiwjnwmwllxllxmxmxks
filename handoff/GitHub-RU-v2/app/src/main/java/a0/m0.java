@@ -4,5 +4,16 @@ package a0;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public interface m0 {
+public final class m0 {
+    public m0() {
+    }
+
+    public m0(Object p1) {
+    }
+
+    public m0(Object p1, Object p2) {
+    }
+
+    public m0(Object p1, Object p2, Object p3) {
+    }
 }

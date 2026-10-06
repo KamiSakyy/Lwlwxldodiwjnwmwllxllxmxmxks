@@ -1,5 +1,16 @@
 package aa;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public interface i0 extends d0 {
+public final class i0 extends d0 {
+    public i0() {
+    }
+
+    public i0(Object p1) {
+    }
+
+    public i0(Object p1, Object p2) {
+    }
+
+    public i0(Object p1, Object p2, Object p3) {
+    }
 }
