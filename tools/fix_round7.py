@@ -111,7 +111,9 @@ for b in blocks:
             for k in range(len(sp), 1, -1):
                 cand = ".".join(sp[:k])
                 if cand in pkg_classes:
-                    tgt = cand; rest = sp[k:]; break
+                    tgt = cand; break
+        if tgt is None and len(sp) == 2 and sp[0] in pkg_classes and sp[1] in pkg_classes[sp[0]]:
+            tgt = sp[0]
         if tgt is None and len(sp) == 1:
             fq = resolve_fp(fp, q)
             if fq and "." in fq:
