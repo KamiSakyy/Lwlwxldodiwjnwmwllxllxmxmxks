@@ -135,12 +135,6 @@ public final class Identity {
         }
     }
 
-    /** Общий секрет с произвольным открытым ключом (65 байт). */
-    public static byte[] agreeWith(Context ctx, byte[] peerRaw) throws Exception {
-        return agree(ctx, peerRaw);
-    }
-
-
     /** Публичное производное открытого ключа — «seed» стороны для расписания ключей. */
     public static byte[] peerSeed(byte[] publicRaw) throws Exception {
         return java.security.MessageDigest.getInstance("SHA-256")

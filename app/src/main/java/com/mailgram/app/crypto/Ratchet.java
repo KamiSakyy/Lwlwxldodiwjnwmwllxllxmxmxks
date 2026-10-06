@@ -47,7 +47,7 @@ import javax.crypto.KeyAgreement;
  *   CK(turn) = HKDF-SHA256(ikm = turn, salt = SK ‖ seed_me ‖ seed_peer, info = "MailGram/DR/chain", 32)
  *   MK(turn, n) = HKDF-SHA256(ikm = n, salt = CK(turn), info = "MailGram/DR/message", 32)
  * </pre>
- * {@code seed} — публичное производное открытого ключа идентичности (см. {@link Identity#seed}),
+ * {@code seed} — публичное производное открытого ключа идентичности (см. {@link Identity#peerSeed}),
  * {@code turn} — сколько писем в этом направлении уже отправлено (поле "pn"), {@code n} — номер
  * письма внутри оборота (поле "n"). Оба поля аутентифицируются тегом как часть AD, поэтому
  * подменить их и получить чужой ключ нельзя.
@@ -124,7 +124,7 @@ public final class Ratchet {
 
         Ratchet r = new Ratchet();
         r.sk = NativeCrypto.hkdfSha256(concat(dh1, dh2, dh3, salt), B64.utf8(chatUid), INFO_X3DH, 32);
-        r.seedSelf = Identity.seed(ctx);
+        r.seedSelf = Identity.peerSeed(Identity.publicKeyRaw(ctx));
         r.seedPeer = Identity.peerSeed(peerIdentityRaw);
         r.salt = salt;
         r.dhSelfPub = Identity.rawFromPublicKey(ek.getPublic());
@@ -164,7 +164,7 @@ public final class Ratchet {
 
         Ratchet r = new Ratchet();
         r.sk = NativeCrypto.hkdfSha256(concat(dh1, dh2, dh3, salt), B64.utf8(chatUid), INFO_X3DH, 32);
-        r.seedSelf = Identity.seed(ctx);
+        r.seedSelf = Identity.peerSeed(Identity.publicKeyRaw(ctx));
         r.seedPeer = Identity.peerSeed(peerIdentityRaw);
         r.salt = salt;
         r.dhSelfPub = myPrePubRaw;
@@ -187,7 +187,7 @@ public final class Ratchet {
     /** Шифрует одно сообщение ключом его собственного номера (счётчик только у отправителя). */
     public synchronized Sealed encrypt(Context ctx, byte[] aadPrefix, byte[] plaintext) throws Exception {
         if (!ready) throw new IllegalStateException("сессия не установлена");
-        byte[] mk = messageKey(seedSelf, seedPeer, turnSend, nSend);
+        byte[] mk = messageKey(turnSend, nSend);
         byte[] aad = concat(aadPrefix, B64.utf8(header(dhSelfPub, turnSend, nSend)));
         byte[] nonce = NativeCrypto.random(12);
         byte[] ct = NativeCrypto.aeadEncrypt(mk, nonce, aad, plaintext);
@@ -235,7 +235,7 @@ public final class Ratchet {
             throw new SecurityException("такое письмо уже обработано");
         }
         byte[] aad = concat(aadPrefix, B64.utf8(header(dhPub, pnIn, nIn)));
-        byte[] mk = messageKey(seedPeer, seedSelf, pnIn, nIn);
+        byte[] mk = messageKey(pnIn, nIn);
         byte[] pt = NativeCrypto.aeadDecrypt(mk, nonce, aad, ciphertext);
         wipe(mk);
         if (pt == null) {
@@ -276,11 +276,18 @@ public final class Ratchet {
     // ---------------- KDF ----------------
 
     /**
-     * Ключ сообщения. Цепочка выводится из общего секрета и seed'ов обеих сторон, поэтому
-     * любая сторона получает ровно тот же ключ, глядя только на заголовок письма.
+     * Ключ сообщения. Порядок материалов фиксирован (SK, seed по возрастанию id сторон, номер
+     * письма), поэтому обе стороны получают ровно тот же ключ, глядя только на заголовок письма:
+     * ни порядок доставки, ни потеря письма на него не влияют.
      */
-    private static byte[] messageKey(byte[] mySeed, byte[] peerSeed, long turn, long n) throws Exception {
-        byte[] salt = concat(zeros32(), mySeed, peerSeed);
+    private byte[] messageKey(long turn, long n) throws Exception {
+        // seed'ы упорядочиваем байтово, чтобы «self/peer» не влияли на результат
+        byte[] a = seedSelf == null ? new byte[32] : seedSelf;
+        byte[] b = seedPeer == null ? new byte[32] : seedPeer;
+        byte[] low = lexicographicMin(a, b);
+        byte[] high = lexicographicMax(a, b);
+        // SK обязательно входит в обе ступени: иначе ключ письма не зависел бы от сессии
+        byte[] salt = concat(zeros32(), sk == null ? new byte[32] : sk, low, high);
         byte[] ck = NativeCrypto.hkdfSha256(B64.utf8("turn:" + turn), salt, INFO_CHAIN, 32);
         byte[] mk = NativeCrypto.hkdfSha256(B64.utf8("msg:" + n), ck, INFO_MESSAGE, 32);
         wipe(ck);
@@ -289,6 +296,23 @@ public final class Ratchet {
 
     private static byte[] zeros32() {
         return new byte[32];
+    }
+
+    private static byte[] lexicographicMin(byte[] a, byte[] b) {
+        return compare(a, b) <= 0 ? a : b;
+    }
+
+    private static byte[] lexicographicMax(byte[] a, byte[] b) {
+        return compare(a, b) <= 0 ? b : a;
+    }
+
+    private static int compare(byte[] a, byte[] b) {
+        int n = Math.min(a.length, b.length);
+        for (int i = 0; i < n; i++) {
+            int x = a[i] & 0xFF, y = b[i] & 0xFF;
+            if (x != y) return x < y ? -1 : 1;
+        }
+        return a.length - b.length;
     }
 
     // ---------------- ключи и DH ----------------

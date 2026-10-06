@@ -232,6 +232,8 @@ public final class MailCrypto {
             throw new IllegalStateException("нативная библиотека не загружена: " + NativeCrypto.loadError());
         }
         Ratchet.Sealed sealed;
+        // «предключ» собеседника берём строго из сохранённой сессии: то же значение уйдёт в
+        // поля "pre"/"dh" письма, поэтому обе стороны считают DH3 по одним и тем же байтам
         synchronized (RatchetStore.chatLock(chatUid)) {
             Ratchet r = RatchetStore.load(ctx, chatUid, true);
             if (r == null || !r.ready) {
@@ -241,6 +243,8 @@ public final class MailCrypto {
                 }
                 r = Ratchet.initiator(ctx, chatUid, peerIdentityRaw, peerPre);
                 RatchetStore.save(ctx, chatUid, r);
+            } else if (r.peerPre != null && !r.peerPre.isEmpty()) {
+                RatchetStore.setPeerPre(ctx, chatUid, B64.bytes(r.peerPre));
             }
             sealed = r.encrypt(ctx, aadRatchet(id, ts, from, to, chatUid), B64.utf8(payloadJson));
             RatchetStore.save(ctx, chatUid, r);
