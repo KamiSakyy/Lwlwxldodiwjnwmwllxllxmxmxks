@@ -26,27 +26,46 @@ public final class KeystoreBox {
     private KeystoreBox() {
     }
 
-    private static SecretKey key() throws Exception {
-        KeyStore ks = KeyStore.getInstance(ANDROID_KEYSTORE);
-        ks.load(null);
-        if (ks.containsAlias(ALIAS)) {
-            return (SecretKey) ks.getKey(ALIAS, null);
+    private static SecretKey key(Context ctx) throws Exception {
+        try {
+            KeyStore ks = KeyStore.getInstance(ANDROID_KEYSTORE);
+            ks.load(null);
+            if (ks.containsAlias(ALIAS)) {
+                return (SecretKey) ks.getKey(ALIAS, null);
+            }
+            KeyGenerator kg = KeyGenerator.getInstance(KeyProperties.KEY_ALGORITHM_AES, ANDROID_KEYSTORE);
+            kg.init(new KeyGenParameterSpec.Builder(ALIAS,
+                    KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT)
+                    .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
+                    .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
+                    .setKeySize(256)
+                    .setRandomizedEncryptionRequired(true)
+                    .build());
+            return kg.generateKey();
+        } catch (Throwable hardware) {
+            // Android Keystore недоступен (JVM-тесты, повреждённая прошивка) —
+            // последний шанс: ключ в настройках. Слабее железа, но токены не теряются.
+            return fallbackKey(ctx);
         }
-        KeyGenerator kg = KeyGenerator.getInstance(KeyProperties.KEY_ALGORITHM_AES, ANDROID_KEYSTORE);
-        kg.init(new KeyGenParameterSpec.Builder(ALIAS,
-                KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT)
-                .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
-                .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE)
-                .setKeySize(256)
-                .setRandomizedEncryptionRequired(true)
-                .build());
-        return kg.generateKey();
+    }
+
+    private static SecretKey fallbackKey(Context ctx) throws Exception {
+        android.content.SharedPreferences p =
+                ctx.getSharedPreferences("mailgram_box", android.content.Context.MODE_PRIVATE);
+        String stored = p.getString("fallback_key", null);
+        byte[] raw = stored == null ? null : B64.bytes(stored);
+        if (raw == null || raw.length != 32) {
+            raw = new byte[32];
+            new java.security.SecureRandom().nextBytes(raw);
+            p.edit().putString("fallback_key", B64.str(raw)).apply();
+        }
+        return new SecretKeySpec(raw, "AES");
     }
 
     /** @return base64url(iv || ciphertext+tag) */
     public static String seal(Context context, byte[] plaintext) throws Exception {
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
-        cipher.init(Cipher.ENCRYPT_MODE, key());
+        cipher.init(Cipher.ENCRYPT_MODE, key(context));
         byte[] iv = cipher.getIV();
         byte[] ct = cipher.doFinal(plaintext);
         byte[] out = new byte[iv.length + ct.length];
@@ -70,7 +89,7 @@ public final class KeystoreBox {
         byte[] ct = new byte[all.length - IV_LEN];
         System.arraycopy(all, IV_LEN, ct, 0, ct.length);
         Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
-        cipher.init(Cipher.DECRYPT_MODE, key(), new GCMParameterSpec(TAG_BITS, iv));
+        cipher.init(Cipher.DECRYPT_MODE, key(context), new GCMParameterSpec(TAG_BITS, iv));
         return cipher.doFinal(ct);
     }
 

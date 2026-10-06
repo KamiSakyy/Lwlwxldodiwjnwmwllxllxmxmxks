@@ -11,6 +11,13 @@ import java.nio.charset.StandardCharsets;
 /** Минимальный HTTP-клиент на HttpURLConnection (без сторонних библиотек). */
 public final class Http {
 
+    /** Подменной транспорт для JVM-тестов (в релизе не используется). */
+    public interface TestTransport {
+        Response handle(String method, String url, String bearer, byte[] body) throws IOException;
+    }
+
+    public static volatile TestTransport testTransport;
+
     private static final int CONNECT_TIMEOUT = 15000;
     private static final int READ_TIMEOUT = 45000;
     public static final String USER_AGENT = "MailGram-Android/1.0 (gmail-api)";
@@ -38,7 +45,7 @@ public final class Http {
         public final int code;
         public final String body;
 
-        Response(int code, String body) {
+        public Response(int code, String body) {
             this.code = code;
             this.body = body;
         }
@@ -46,6 +53,10 @@ public final class Http {
 
     public static Response request(String method, String url, String bearer,
                                    byte[] body, String contentType) throws IOException {
+        // JVM-тесты (только отладочная сборка): подменной транспорт вместо сети.
+        if (com.mailgram.app.BuildConfig.DEBUG && testTransport != null) {
+            return testTransport.handle(method, url, bearer, body);
+        }
         IOException last = null;
         for (int attempt = 0; attempt < 3; attempt++) {
             HttpURLConnection conn = null;
@@ -94,7 +105,6 @@ public final class Http {
     public static String get(String url, String bearer) throws IOException {
         return request("GET", url, bearer, null, null).body;
     }
-
     public static String postJson(String url, String bearer, String json) throws IOException {
         return request("POST", url, bearer, json.getBytes(StandardCharsets.UTF_8),
                 "application/json; charset=UTF-8").body;

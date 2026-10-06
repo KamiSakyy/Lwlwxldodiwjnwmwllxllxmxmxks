@@ -75,7 +75,7 @@ jbyteArray toByteArray(JNIEnv *env, const uint8_t *data, size_t len) {
 extern "C" {
 
 JNIEXPORT jbyteArray JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_random(JNIEnv *env, jclass, jint n) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeRandom(JNIEnv *env, jclass, jint n) {
     if (n <= 0 || n > (1 << 20)) {
         throwIllegal(env, "random: неверный размер");
         return NULL;
@@ -97,7 +97,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_random(JNIEnv *env, jclass, jint n) {
 }
 
 JNIEXPORT jbyteArray JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_sha256(JNIEnv *env, jclass, jbyteArray data) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeSha256(JNIEnv *env, jclass, jbyteArray data) {
     const uint8_t *ptr;
     jsize len;
     uint8_t *owned;
@@ -113,7 +113,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_sha256(JNIEnv *env, jclass, jbyteArray
 }
 
 JNIEXPORT jbyteArray JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_hkdfSha256(JNIEnv *env, jclass,
+Java_com_mailgram_app_crypto_NativeCrypto_nativeHkdfSha256(JNIEnv *env, jclass,
                                                      jbyteArray ikm, jbyteArray salt,
                                                      jbyteArray info, jint outLen) {
     if (outLen <= 0 || outLen > 4096) {
@@ -142,7 +142,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_hkdfSha256(JNIEnv *env, jclass,
 }
 
 JNIEXPORT jbyteArray JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_aeadEncrypt(JNIEnv *env, jclass,
+Java_com_mailgram_app_crypto_NativeCrypto_nativeAeadEncrypt(JNIEnv *env, jclass,
                                                       jbyteArray key, jbyteArray nonce,
                                                       jbyteArray aad, jbyteArray plaintext) {
     Bytes bKey, bNonce, bAad, bPt;
@@ -183,7 +183,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_aeadEncrypt(JNIEnv *env, jclass,
 }
 
 JNIEXPORT jbyteArray JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_aeadDecrypt(JNIEnv *env, jclass,
+Java_com_mailgram_app_crypto_NativeCrypto_nativeAeadDecrypt(JNIEnv *env, jclass,
                                                       jbyteArray key, jbyteArray nonce,
                                                       jbyteArray aad, jbyteArray ciphertext) {
     Bytes bKey, bNonce, bAad, bCt;
@@ -220,7 +220,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_aeadDecrypt(JNIEnv *env, jclass,
 }
 
 JNIEXPORT jbyteArray JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_sha256Utf8(JNIEnv *env, jclass, jstring text) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeSha256Utf8(JNIEnv *env, jclass, jstring text) {
     if (text == NULL) {
         uint8_t out[32];
         mg_sha256(NULL, 0, out);
@@ -237,7 +237,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_sha256Utf8(JNIEnv *env, jclass, jstrin
 // Идентификатор чата: SHA-256(min(emailA,emailB) "\n" max(...)) -> 8 hex-символов.
 // Одинаков у обоих участников и не зависит от порядка.
 JNIEXPORT jstring JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_chatUid(JNIEnv *env, jclass, jstring emailA, jstring emailB) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeChatUid(JNIEnv *env, jclass, jstring emailA, jstring emailB) {
     if (emailA == NULL || emailB == NULL) {
         throwIllegal(env, "chatUid: пустой адрес");
         return NULL;
@@ -278,7 +278,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_chatUid(JNIEnv *env, jclass, jstring e
 
 // «Отпечаток безопасности» — 12 групп по 5 цифр из SHA-256 над парой открытых ключей.
 JNIEXPORT jstring JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_safetyNumber(JNIEnv *env, jclass, jbyteArray pubA, jbyteArray pubB) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeSafetyNumber(JNIEnv *env, jclass, jbyteArray pubA, jbyteArray pubB) {
     Bytes bA, bB;
     if (!getBytes(env, pubA, &bA) || !getBytes(env, pubB, &bB)) {
         throwIllegal(env, "safetyNumber: нет памяти");
@@ -321,7 +321,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_safetyNumber(JNIEnv *env, jclass, jbyt
 }
 
 JNIEXPORT jstring JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_selfTest(JNIEnv *env, jclass) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeSelfTest(JNIEnv *env, jclass) {
     char report[4096];
     int failures = mg_selftest(report, sizeof(report));
     char head[128];
@@ -337,7 +337,7 @@ Java_com_mailgram_app_crypto_NativeCrypto_selfTest(JNIEnv *env, jclass) {
 }
 
 JNIEXPORT jstring JNICALL
-Java_com_mailgram_app_crypto_NativeCrypto_version(JNIEnv *env, jclass) {
+Java_com_mailgram_app_crypto_NativeCrypto_nativeVersion(JNIEnv *env, jclass) {
     return env->NewStringUTF(mg_version());
 }
 
