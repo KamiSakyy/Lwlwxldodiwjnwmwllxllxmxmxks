@@ -343,4 +343,58 @@ public class SyncReceiveTest {
             fail("MailCrypto.open(v2) упало: " + e);
         }
     }
+    /** Диагностика второго сообщения: точная ошибка на готовой сессии. */
+    @Test
+    public void v2SecondMessageRootCause() throws Exception {
+        KeyPair peerId = Ratchet.generateKeyPair();
+        byte[] peerRaw = Identity.rawFromPublicKey(peerId.getPublic());
+        KeyPair peerPre = Ratchet.generateKeyPair();
+        byte[] peerPreRaw = Identity.rawFromPublicKey(peerPre.getPublic());
+        byte[] ourPub = Identity.publicKeyRaw(ctx);
+        byte[] ourPre = RatchetStore.myPreKeyPublic(ctx);
+
+        KeyPair ek = Ratchet.generateKeyPair();
+        byte[] ekRaw = Identity.rawFromPublicKey(ek.getPublic());
+        byte[] dh1 = ecdh(peerId.getPrivate(), ourPub);
+        byte[] dh2 = ecdh(ek.getPrivate(), ourPub);
+        byte[] dh3 = ecdh(ek.getPrivate(), ourPre);
+        byte[] sk = NativeCrypto.hkdfSha256(concat(concat(dh1, dh2), dh3),
+                B64.utf8(chatUid), B64.utf8("MailGram/DR/x3dh"), 32);
+        byte[] rkCk = NativeCrypto.hkdfSha256(dh3, sk, B64.utf8("MailGram/DR/root"), 64);
+        byte[] ck = new byte[32];
+        System.arraycopy(rkCk, 32, ck, 0, 32);
+
+        // два сообщения одной цепочкой, как у отправителя
+        for (int i = 0; i < 2; i++) {
+            String mid = UUID.randomUUID().toString();
+            long ts = System.currentTimeMillis() + i;
+            byte[] mk = NativeCrypto.hkdfSha256(ck, new byte[32], B64.utf8("MailGram/DR/message"), 32);
+            String aadPrefix = "MailGram/DR|2|" + mid + "|" + ts + "|" + PEER + "|" + ME + "|" + chatUid;
+            byte[] aad = B64.utf8(aadPrefix + B64.str(ekRaw) + "|0|" + i);
+            byte[] nonce = NativeCrypto.random(12);
+            byte[] ct = NativeCrypto.aeadEncrypt(mk, nonce, aad, B64.utf8("{\"t\":\"text\",\"b\":\"m" + i + "\"}"));
+            JSONObject env = new JSONObject();
+            env.put("v", MailCrypto.VERSION_RATCHET);
+            env.put("alg", MailCrypto.ALG_RATCHET);
+            env.put("id", mid);
+            env.put("ts", ts);
+            env.put("chat", chatUid);
+            env.put("from", PEER);
+            env.put("to", ME);
+            env.put("pk", B64.str(peerRaw));
+            env.put("pre", B64.str(peerPreRaw));
+            env.put("dh", B64.str(ekRaw));
+            env.put("pn", 0L);
+            env.put("n", (long) i);
+            env.put("nc", B64.str(nonce));
+            env.put("c", B64.str(ct));
+            try {
+                MailCrypto.Envelope opened = MailCrypto.open(ctx, MailCrypto.toMailBody(env.toString()), ME);
+                assertNotNull("open вернул null (msg " + i + ")", opened);
+            } catch (Exception e) {
+                fail("MailCrypto.open(v2 msg " + i + ") упало: " + e);
+            }
+            ck = NativeCrypto.hkdfSha256(ck, new byte[32], B64.utf8("MailGram/DR/chain"), 32);
+        }
+    }
 }
