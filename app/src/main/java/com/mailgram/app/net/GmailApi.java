@@ -86,7 +86,8 @@ public final class GmailApi {
     * позволяет достать до 50 писем ОДНИМ запросом — так приложение не упирается в лимит
     * «Units per minute per user» и не спамит API.
     */
-    public static java.util.Map<String, Mail> getBatch(String token, List<String> ids) {
+    public static java.util.Map<String, Mail> getBatch(String token, List<String> ids)
+            throws Http.RateLimited {
         java.util.Map<String, Mail> out = new java.util.LinkedHashMap<>();
         if (ids == null || ids.isEmpty()) return out;
         int i = 0;
@@ -119,7 +120,7 @@ public final class GmailApi {
     }
 
     private static void sendBatch(String token, List<String> ids,
-                                  java.util.Map<String, Mail> out) throws Exception {
+                                  java.util.Map<String, Mail> out) throws Exception, Http.RateLimited {
         StringBuilder body = new StringBuilder();
         for (int k = 0; k < ids.size(); k++) {
             String id = ids.get(k);
