@@ -12,7 +12,12 @@ import sys
 import zipfile
 
 apk = sys.argv[1]
-base = sys.argv[2] if len(sys.argv) > 2 else None
+args = [a for a in sys.argv[2:] if not a.startswith('--')]
+base = args[0] if args else None
+pkg = 'com.github.android'
+if '--package' in sys.argv:
+    pkg = sys.argv[sys.argv.index('--package') + 1]
+pkgpath = pkg.replace('.', '/')
 ok = []
 bad = []
 
@@ -36,7 +41,9 @@ check('resources.arsc' in names, 'resources.arsc на месте')
 check('AndroidManifest.xml' in names, 'AndroidManifest.xml на месте')
 
 man = z.read('AndroidManifest.xml')
-check('com.github.rudroid'.encode('utf-16-le') in man, 'в манифесте пакет com.github.rudroid')
+check(pkg.encode('utf-16-le') in man, 'в манифесте пакет %s (официальный)' % pkg)
+if pkg == 'com.github.android':
+    check('com.github.rudroid'.encode('utf-16-le') not in man, 'пакет НЕ переименован (нет com.github.rudroid)')
 check('com.github.android'.encode('utf-16-le') in man, 'в манифесте сохранён host com.github.android (oauth)')
 check('requiredSplitTypes'.encode('utf-16-le') not in man, 'атрибуты сплитов убраны (одиночный APK)')
 check('extractNativeLibs'.encode('utf-16-le') in man, 'extractNativeLibs присутствует')
@@ -45,7 +52,7 @@ check('DeepLinkAliasActivity'.encode('utf-16-le') in man, 'классическ�
 check('android.permission.POST_NOTIFICATIONS'.encode('utf-16-le') in man, 'разрешение POST_NOTIFICATIONS добавлено')
 
 blob = b''.join(z.read(n) for n in dexes)
-check(b'Lcom/github/rudroid/webview/GHRDownloadListener;' in blob, 'класс GHRDownloadListener внутри dex')
+check(('L%s/webview/GHRDownloadListener;' % pkgpath).encode() in blob, 'класс GHRDownloadListener внутри dex')
 check(b'setDownloadListener' in blob, 'вызов setDownloadListener внутри dex')
 check(b'github://com.github.android/oauth' in blob, 'oauth-редирект не переименован')
 
@@ -59,6 +66,8 @@ z.fp.seek(it.header_offset)
 sig, ver, flg, comp, t, d, crc, csz, usz, nlen, elen = struct.unpack('<IHHHHHIIIHH', z.fp.read(30))
 off = it.header_offset + 30 + nlen + elen
 check(comp == 0 and off % 4 == 0, 'resources.arsc без сжатия и выровнен (метод=%d, смещение=%d)' % (comp, off))
+check('res/drawable/ic_launcher_background.xml' not in names, 'иконка официальная (нет подмены фона)')
+check(any(n.startswith('res/mipmap') and 'ic_launcher' in n for n in names), 'иконка приложения на месте')
 for n in sorted(x for x in names if x.startswith('lib/') and x.endswith('.so')):
     it = z.getinfo(n)
     z.fp.seek(it.header_offset)

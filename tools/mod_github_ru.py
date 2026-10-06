@@ -5,8 +5,9 @@ GitHub RU MOD — правки дерева, распакованного apktoo
 
 Что делает:
   1) манифест: убирает android:allow (не понимает aapt2), глушит Firebase/аналитику, убирает AD_ID/ADSERVICES;
-  2) переименование пакета com.github.android -> com.github.rudroid (smali+res+assets+манифест),
-     с защитой OAuth-редиректов github://com.github.android/...;
+  2) (необязательно, флаг --rename-package) переименование пакета в com.github.rudroid
+     с защитой OAuth-редиректов github://com.github.android/...; по умолчанию приложение
+     остаётся официальным com.github.android;
   3) скачивание файлов: класс GHRDownloadListener (DownloadManager) + внедрение в WebView'ы;
   4) редактор: крупнее шрифт (dimens) + межстрочный интервал (smali);
   5) дизайн: новая иконка (градиент GitHub-зелёный + белый кот) и светлый фон;
@@ -22,6 +23,8 @@ import subprocess
 
 DEC = sys.argv[1] if len(sys.argv) > 1 else 'work/dec'
 RENAME_ONLY = '--rename-only' in sys.argv
+RENAME_PKG = '--rename-package' in sys.argv        # по умолчанию приложение остаётся официальным
+GRADIENT_ICON = '--gradient-icon' in sys.argv      # по умолчанию иконка официальная
 SPLITS = None
 for _i, _a in enumerate(sys.argv):
     if _a == '--splits' and _i + 1 < len(sys.argv):
@@ -33,7 +36,7 @@ for i, a in enumerate(sys.argv):
         RU_DIR = sys.argv[i + 1]
 
 DEF = "com.github.android"
-NEW = "com.github.rudroid"
+NEW = "com.github.rudroid" if RENAME_PKG else DEF
 PROT = ["github://com.github.android"]  # oauth/appauth — НЕ трогать (зашито на сервере)
 
 STATS = {}
@@ -105,7 +108,7 @@ STATS['групп путей (API35) убрано'] = n_allow
 log('манифест: убран API35-алиас с группами путей, блоков:', n_allow)
 
 yml = os.path.join(DEC, 'apktool.yml')
-if os.path.exists(yml):
+if os.path.exists(yml) and RENAME_PKG:
     t = read(yml)
     t2 = re.sub(r'(versionName:\s*)(\S+)', r'\g<1>\2-rudroid', t, count=1)
     if t2 != t:
@@ -113,51 +116,57 @@ if os.path.exists(yml):
         log('apktool.yml: versionName -> с суффиксом -rudroid')
 
 # ------------------------------------------------- 2. переименование пакета
-for sm in glob.glob(os.path.join(DEC, 'smali*')):
-    old = os.path.join(sm, 'com', 'github', 'android')
-    if os.path.isdir(old):
-        shutil.move(old, os.path.join(sm, 'com', 'github', 'rudroid'))
-        log('каталог:', os.path.relpath(old, DEC), '-> com/github/rudroid')
-
-try:
-    out = subprocess.run(['grep', '-rls', '--include=*.smali', '-e', 'com/github/android', '-e', DEF, DEC],
-                         capture_output=True, text=True)
-    files = [f for f in out.stdout.split('\n') if f]
-except Exception:
-    files = []
+# По умолчанию НЕ выполняется: приложение остаётся официальным com.github.android.
+# Флаг --rename-package переименовывает код/манифест в com.github.rudroid (как в исходнике
+# пользователя), но при этом oauth-хост всё равно остаётся com.github.android.
+def rename_package():
     for sm in glob.glob(os.path.join(DEC, 'smali*')):
-        for root, _d, fs in os.walk(sm):
+        old = os.path.join(sm, 'com', 'github', 'android')
+        if os.path.isdir(old):
+            shutil.move(old, os.path.join(sm, 'com', 'github', 'rudroid'))
+            log('каталог:', os.path.relpath(old, DEC), '-> com/github/rudroid')
+    try:
+        out = subprocess.run(['grep', '-rls', '--include=*.smali', '-e', 'com/github/android', '-e', DEF, DEC],
+                             capture_output=True, text=True)
+        files = [f for f in out.stdout.split('\n') if f]
+    except Exception:
+        files = []
+        for sm in glob.glob(os.path.join(DEC, 'smali*')):
+            for root, _d, fs in os.walk(sm):
+                for fn in fs:
+                    if fn.endswith('.smali'):
+                        p = os.path.join(root, fn)
+                        t = read(p)
+                        if 'com/github/android' in t or DEF in t:
+                            files.append(p)
+    changed = 0
+    for p in files:
+        t = read(p)
+        t2 = rename_text(t)
+        if t2 != t:
+            write(p, t2)
+            changed += 1
+    STATS['smali изменено'] = changed
+    log('переименовано smali-файлов:', changed)
+    for base in (os.path.join(DEC, 'res'), os.path.join(DEC, 'assets')):
+        for root, _d, fs in os.walk(base):
             for fn in fs:
-                if fn.endswith('.smali'):
-                    p = os.path.join(root, fn)
+                p = os.path.join(root, fn)
+                try:
+                    if os.path.getsize(p) > 2 * 1024 * 1024:
+                        continue
                     t = read(p)
-                    if 'com/github/android' in t or DEF in t:
-                        files.append(p)
-changed = 0
-for p in files:
-    t = read(p)
-    t2 = rename_text(t)
-    if t2 != t:
-        write(p, t2)
-        changed += 1
-STATS['smali изменено'] = changed
-log('переименовано smali-файлов:', changed)
-
-for base in (os.path.join(DEC, 'res'), os.path.join(DEC, 'assets')):
-    for root, _d, fs in os.walk(base):
-        for fn in fs:
-            p = os.path.join(root, fn)
-            try:
-                if os.path.getsize(p) > 2 * 1024 * 1024:
+                except Exception:
                     continue
-                t = read(p)
-            except Exception:
-                continue
-            if '\x00' in t[:400]:
-                continue
-            if 'com/github/android' in t or DEF in t:
-                write(p, rename_text(t))
-log('res/assets переименованы')
+                if '\x00' in t[:400]:
+                    continue
+                if 'com/github/android' in t or DEF in t:
+                    write(p, rename_text(t))
+    log('res/assets переименованы')
+
+
+if RENAME_PKG:
+    rename_package()
 
 if RENAME_ONLY:
     log('ИТОГ (только переименование):', STATS)
@@ -267,8 +276,11 @@ LISTENER = '''.class public Lcom/github/rudroid/webview/GHRDownloadListener;
 # ВАЖНО: dex #1 (smali/) забит под завязку — ровно 65536 ссылок на методы.
 # Любая НОВАЯ ссылка на метод в нём = ошибка сборки. Класс слушателя кладём
 # в smali_classes5 (там ~49k свободных слотов), вызовы — только из dex3.
-target_dir = os.path.join(DEC, 'smali_classes5', 'com', 'github', 'rudroid', 'webview')
+PKGPATH = NEW.replace('.', '/')                       # com/github/android (или rudroid)
+target_dir = os.path.join(DEC, 'smali_classes5', *PKGPATH.split('/'), 'webview')
 os.makedirs(target_dir, exist_ok=True)
+LISTENER = LISTENER.replace('com/github/rudroid', PKGPATH)
+LISCLASS = 'L%s/webview/GHRDownloadListener;' % PKGPATH
 write(os.path.join(target_dir, 'GHRDownloadListener.smali'), LISTENER)
 log('создан GHRDownloadListener.smali в', os.path.relpath(target_dir, DEC))
 
@@ -300,13 +312,13 @@ def inject_webview(path):
         lines[loc_line] = lines[loc_line].replace('.locals %d' % nloc, '.locals %d' % (nloc + 2))
         t1, t2 = 'v%d' % nloc, 'v%d' % (nloc + 1)
         ins = [
-            '    new-instance %s, Lcom/github/rudroid/webview/GHRDownloadListener;' % t1,
+            '    new-instance %s, %s' % (t1, LISCLASS),
             '',
             '    invoke-virtual {%s}, Landroid/view/View;->getContext()Landroid/content/Context;' % recv,
             '',
             '    move-result-object %s' % t2,
             '',
-            '    invoke-direct {%s, %s}, Lcom/github/rudroid/webview/GHRDownloadListener;-><init>(Landroid/content/Context;)V' % (t1, t2),
+            '    invoke-direct {%s, %s}, %s-><init>(Landroid/content/Context;)V' % (t1, t2, LISCLASS),
             '',
             '    invoke-virtual {%s, %s}, Landroid/webkit/WebView;->setDownloadListener(Landroid/webkit/DownloadListener;)V' % (recv, t1),
             '',
@@ -319,8 +331,8 @@ def inject_webview(path):
 
 
 cnt = 0
-for rel in ('smali_classes3/com/github/rudroid/webview/viewholders/f.smali',
-            'smali_classes3/com/github/rudroid/webview/viewholders/LegacyGitHubWebView.smali'):
+for rel in ('smali_classes3/%s/webview/viewholders/f.smali' % PKGPATH,
+            'smali_classes3/%s/webview/viewholders/LegacyGitHubWebView.smali' % PKGPATH):
     if inject_webview(os.path.join(DEC, rel)):
         cnt += 1
 STATS['DownloadListener внедрён в'] = cnt
@@ -418,25 +430,34 @@ if os.path.exists(vqi):
 
 # -------------------------------------------------------------- 5. дизайн
 bg = os.path.join(DEC, 'res', 'drawable', 'ic_launcher_background.xml')
-write(bg, '''<?xml version="1.0" encoding="utf-8"?>
-<vector android:height="108.0dip" android:width="108.0dip" android:viewportWidth="108" android:viewportHeight="108"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:pathData="M0,0h108v108h-108z">
-        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
-            <gradient android:startX="0" android:startY="0" android:endX="108" android:endY="108" android:type="linear">
-                <item android:offset="0" android:color="#FF2EA44F"/>
-                <item android:offset="1" android:color="#FF136B2E"/>
-            </gradient>
-        </aapt:attr>
-    </path>
-</vector>
-''')
-ic = os.path.join(DEC, 'res', 'mipmap-anydpi', 'ic_launcher.xml')
-t = read(ic)
-t2 = t.replace('@color/ic_launcher_background', '@drawable/ic_launcher_background')
-if t2 != t:
-    write(ic, t2)
-    log('иконка: фон теперь градиент GitHub-зелёный')
+def mod_icon():
+    bg = os.path.join(DEC, 'res', 'drawable', 'ic_launcher_background.xml')
+    write(bg, '''<?xml version="1.0" encoding="utf-8"?>
+    <vector android:height="108.0dip" android:width="108.0dip" android:viewportWidth="108" android:viewportHeight="108"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <path android:pathData="M0,0h108v108h-108z">
+            <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+                <gradient android:startX="0" android:startY="0" android:endX="108" android:endY="108" android:type="linear">
+                    <item android:offset="0" android:color="#FF2EA44F"/>
+                    <item android:offset="1" android:color="#FF136B2E"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+    </vector>
+    ''')
+    ic = os.path.join(DEC, 'res', 'mipmap-anydpi', 'ic_launcher.xml')
+    t = read(ic)
+    t2 = t.replace('@color/ic_launcher_background', '@drawable/ic_launcher_background')
+    if t2 != t:
+        write(ic, t2)
+        log('иконка: фон теперь градиент GitHub-зелёный')
+
+
+if GRADIENT_ICON:
+    mod_icon()
+else:
+    log('иконка: официальная, не меняем')
+
 colors = os.path.join(DEC, 'res', 'values', 'colors.xml')
 t = read(colors)
 t2 = t.replace('<color name="backgroundPrimary">#ffeff0f5</color>',

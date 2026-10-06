@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      APKNAME: GitHub-RU-rudroid-mod-1.279.0.apk
+      APKNAME: GitHub-1.279.0-mod.apk
     steps:
       - name: Checkout
         uses: actions/checkout@v4
