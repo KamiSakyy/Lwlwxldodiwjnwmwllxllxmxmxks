@@ -160,6 +160,11 @@ public final class Anim {
     }
 
     /** Пульсация (точка записи, индикатор ожидания). */
+    /** Короткая пульсация — «обрати на меня внимание» (по умолчанию 700 мс). */
+    public static void pulse(final View view) {
+        pulse(view, 700L);
+    }
+
     public static void pulse(final View view, final long periodMs) {
         if (!enabled(view.getContext())) return;
         final ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);

@@ -155,6 +155,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         pinnedRow = findViewById(R.id.chat_pinned);
         pinnedText = findViewById(R.id.chat_pinned_text);
         scrollDown = findViewById(R.id.btn_scroll_down);
+        scrollBadge = findViewById(R.id.scroll_unread_badge);
 
         String sharedAvatar = getIntent().getStringExtra(EXTRA_SHARED_AVATAR);
         if (sharedAvatar != null && !sharedAvatar.isEmpty()) {
@@ -247,6 +248,9 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         findViewById(R.id.chat_reply_close).setOnClickListener(v -> setReplyTarget(null));
         findViewById(R.id.chat_search_close).setOnClickListener(v -> closeSearch());
         scrollDown.setOnClickListener(v -> scrollToBottom());
+        View.OnClickListener info = v -> showChatInfo();
+        findViewById(R.id.chat_title).setOnClickListener(info);
+        avatar.setOnClickListener(info);
         setUpVoiceButton();
 
         input.setOnEditorActionListener((v, actionId, event) -> {
@@ -413,6 +417,43 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         super.onDestroy();
     }
 
+    /** Карточка чата: собеседник, статистика, состояние шифрования и номер безопасности. */
+    private void showChatInfo() {
+        chat = Store.get(this).chat(uid);
+        if (chat == null) return;
+        int[] counts = Store.get(this).mediaCounts(uid);
+        final String me = com.mailgram.app.net.Auth.account(this);
+        final String number = Ui.safetyNumber(chat.peerPublic,
+                com.mailgram.app.crypto.Identity.publicKey(this));
+        boolean session = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
+
+        StringBuilder body = new StringBuilder();
+        body.append(chat.peer).append("\n")
+                .append(getString(R.string.media_count, counts[0], counts[1], counts[2])).append("\n")
+                .append(session ? getString(R.string.ratchet_on) : getString(R.string.ratchet_wait));
+        if (!number.isEmpty()) {
+            body.append("\n\n").append(getString(R.string.safety_number)).append(":\n")
+                    .append(number).append("\n\n").append(getString(R.string.safety_hint));
+        }
+
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.chat_info)
+                .setMessage(body.toString())
+                .setNeutralButton(chat.verified ? R.string.unverify_chat : R.string.verify_chat,
+                        (d, w) -> {
+                            Store.get(this).setVerified(uid, !chat.verified);
+                            Ui.toast(this, getString(chat.verified
+                                    ? R.string.chat_unverified : R.string.chat_verified));
+                            refresh();
+                        })
+                .setNegativeButton(R.string.done, null)
+                .setPositiveButton(R.string.copy, (d, w) -> {
+                    Ui.copy(this, getString(R.string.safety_number),
+                            number.isEmpty() ? chat.peer : number);
+                })
+                .show();
+    }
+
     /** Плавный переход к сообщению по его mid с короткой вспышкой подсветки. */
     private void jumpTo(final String mid) {
         if (mid == null || mid.isEmpty()) return;
@@ -420,13 +461,16 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         for (int i = 0; i < all.size(); i++) {
             if (mid.equals(all.get(i).mid)) {
                 final int position = i;
-                layout.scrollToPositionWithOffset(position, Ui.dp(this, 90));
-                recycler.postDelayed(() -> {
-                    View row = layout.findViewByPosition(position);
+                final LinearLayoutManager manager = (LinearLayoutManager) list.getLayoutManager();
+                if (manager != null) {
+                    manager.scrollToPositionWithOffset(position, Ui.dp(this, 90));
+                }
+                list.postDelayed(() -> {
+                    View row = manager == null ? null : manager.findViewByPosition(position);
                     if (row != null) {
-                        Anim.pulse(row);
+                        Anim.pop(row);
                     }
-                }, 260L);
+                }, 280L);
                 return;
             }
         }
@@ -517,7 +561,21 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         LinearLayoutManager manager = (LinearLayoutManager) list.getLayoutManager();
         if (manager == null) return;
         boolean away = manager.findLastVisibleItemPosition() < adapter.getItemCount() - 3;
-        scrollDown.setVisibility(away ? View.VISIBLE : View.GONE);
+        View wrap = findViewById(R.id.scroll_down_wrap);
+        wrap.setVisibility(away ? View.VISIBLE : View.GONE);
+        if (away && scrollBadge != null) {
+            int unread = 0;
+            for (Msg m : Store.get(this).messages(uid)) {
+                if (m.unread) unread++;
+            }
+            if (unread > 0) {
+                scrollBadge.setText(unread > 99 ? "99+" : String.valueOf(unread));
+                scrollBadge.setVisibility(View.VISIBLE);
+                Anim.pop(scrollBadge);
+            } else {
+                scrollBadge.setVisibility(View.GONE);
+            }
+        }
     }
 
     // ---------------- отправка текста и вложений ----------------

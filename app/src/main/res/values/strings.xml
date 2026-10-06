@@ -240,4 +240,8 @@
     <string name="export_done">Переписка сохранена</string>
     <string name="export_share">Поделиться файлом</string>
     <string name="original_not_found">Исходное сообщение не найдено</string>
+    <string name="chat_verified">Ключ собеседника отмечен как проверенный</string>
+    <string name="chat_unverified">Отметка проверки снята</string>
+    <string name="unverify_chat">Снять проверку</string>
+    <string name="safety_hint">Сравните номер с собеседником лично или по другому каналу: если он совпадает, посредника в переписке нет.</string>
 </resources>

@@ -199,19 +199,40 @@
             android:paddingTop="8dp"
             android:paddingBottom="8dp" />
 
-        <ImageView
-            android:id="@+id/btn_scroll_down"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
+        <FrameLayout
+            android:id="@+id/scroll_down_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_marginEnd="14dp"
             android:layout_marginBottom="14dp"
-            android:background="@drawable/bg_badge"
-            android:contentDescription="@string/scroll_down"
-            android:padding="9dp"
-            android:src="@drawable/ic_scroll_down"
-            android:visibility="gone"
-            app:tint="#FFFFFFFF" />
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btn_scroll_down"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_badge"
+                android:contentDescription="@string/scroll_down"
+                android:padding="10dp"
+                android:src="@drawable/ic_scroll_down"
+                app:tint="#FFFFFFFF" />
+
+            <TextView
+                android:id="@+id/scroll_unread_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="top|end"
+                android:background="@drawable/bg_badge"
+                android:gravity="center"
+                android:minWidth="22dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="#FFFFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </FrameLayout>
 
         <LinearLayout
             android:id="@+id/voice_record_bar"

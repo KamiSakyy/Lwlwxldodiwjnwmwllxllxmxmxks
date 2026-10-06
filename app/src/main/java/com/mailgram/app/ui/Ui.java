@@ -180,6 +180,33 @@ public final class Ui {
         }
     }
 
+    /**
+     * Номер безопасности двух открытых ключей (как в Signal): 60 цифр, разбитых на группы.
+     * Сверяется голосом или глазами — если совпал, посредника в канале нет.
+     */
+    public static String safetyNumber(String keyA, String keyB) {
+        try {
+            if (keyA == null || keyB == null || keyA.isEmpty() || keyB.isEmpty()) return "";
+            String raw = com.mailgram.app.crypto.NativeCrypto.safetyNumber(
+                    com.mailgram.app.crypto.B64.bytes(keyA),
+                    com.mailgram.app.crypto.B64.bytes(keyB));
+            return formatSafetyNumber(raw);
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    /** Разбивает строку цифр на читаемые группы по пять знаков. */
+    public static String formatSafetyNumber(String raw) {
+        if (raw == null || raw.isEmpty()) return "";
+        StringBuilder out = new StringBuilder();
+        for (int i = 0; i < raw.length(); i++) {
+            if (i > 0 && i % 5 == 0) out.append(' ');
+            out.append(raw.charAt(i));
+        }
+        return out.toString();
+    }
+
     public static int color(String hex, int fallback) {
         try {
             return Color.parseColor(hex);
