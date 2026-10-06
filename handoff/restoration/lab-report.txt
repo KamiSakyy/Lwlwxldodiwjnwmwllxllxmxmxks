@@ -57,3 +57,16 @@ import com.github.domain.searchandfilter.filters.data.CustomInstructionsFilter;
 ===== ЭКСП 5: весь пакет i80 =====
 171
 0
+===== ЭКСП 6: FULL, -Xmx3g =====
+файлов: 44532
+exit=0 errors=58948 Object=48782
+===== ЭКСП 7: FULL, -Xmx10g =====
+exit=0 errors=58948 Object=48782
+===== ЭКСП 8: половина 1 =====
+errors=42778 Object=9504
+===== ЭКСП 9: половина 2 =====
+errors=88572 Object=21335
+===== ЭКСП 10: 3000 файлов случайных =====
+errors=17934 Object=0
+===== ЭКСП 10b: топ Object-шума ЭКСП 7 (пакеты) =====
+  48723 java
