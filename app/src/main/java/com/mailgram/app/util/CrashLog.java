@@ -87,8 +87,26 @@ public final class CrashLog {
                 text = text.substring(0, MAX);
             }
             text = hide(text);
-            try (FileOutputStream out = new FileOutputStream(new File(context.getFilesDir(), FILE))) {
-                out.write(text.getBytes("UTF-8"));
+            // добавляем к прежним ошибкам: видна вся цепочка сбоев за запуск,
+            // а не только последний; размер держим в пределах лимита
+            File file = new File(context.getFilesDir(), FILE);
+            String old = "";
+            if (file.exists()) {
+                try (FileInputStream in = new FileInputStream(file)) {
+                    byte[] buf = new byte[8192];
+                    StringBuilder sb = new StringBuilder();
+                    int n;
+                    while ((n = in.read(buf)) > 0) sb.append(new String(buf, 0, n, "UTF-8"));
+                    old = sb.toString();
+                } catch (Exception ignored) {
+                }
+            }
+            String all = old.isEmpty() ? text : old + "\n----\n" + text;
+            if (all.length() > 2 * MAX) {
+                all = all.substring(all.length() - 2 * MAX);
+            }
+            try (FileOutputStream out = new FileOutputStream(file)) {
+                out.write(all.getBytes("UTF-8"));
             }
         } catch (Throwable ignored) {
         }

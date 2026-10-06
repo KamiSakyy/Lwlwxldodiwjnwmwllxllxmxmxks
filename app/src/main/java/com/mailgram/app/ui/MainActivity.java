@@ -342,6 +342,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void refresh() {
+        if (adapter == null) return; // экран не настроен (например, нет входа)
         adapter.submit(Store.get(this).sortedChats());
         updateEmpty();
         int unread = Store.get(this).totalUnread();
@@ -351,6 +352,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void updateEmpty() {
+        if (adapter == null || emptyView == null || list == null) return;
         boolean empty = adapter.isEmpty();
         boolean wasHidden = emptyView.getVisibility() != View.VISIBLE;
         emptyView.setVisibility(empty ? View.VISIBLE : View.GONE);

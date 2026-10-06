@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<drawable xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <corners android:radius="4dp" />
-        <solid android:color="@color/quote_bg" />
-    </shape>
-</drawable>
+<!-- Фон цитаты-ответа: radius 4dp, rgba(255,255,255,.08). Корень — shape
+     (корневой тег <drawable> ломал инфляцию строки сообщения на устройстве). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="4dp" />
+    <solid android:color="@color/quote_bg" />
+</shape>
