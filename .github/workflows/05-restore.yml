@@ -97,12 +97,19 @@ jobs:
               tail -5 /tmp/javac-full-diag.log | tee -a "$CYCLE" || true
               ls javac.*.args 2>/dev/null | head -2 | tee -a "$CYCLE" || true
             fi
-            rm -rf /tmp/classes
-            javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 \
-              -source 8 -target 8 -encoding UTF-8 \
-              -bootclasspath "$ANDROID_JAR" \
-              -d /tmp/classes @/tmp/sources.txt \
-              > /tmp/javac-iter.log 2>&1 || true
+            # --- конвейер: 5 частей по ~9k (javac слепнет на >20k классах) ---
+            rm -rf /tmp/chunk_* /tmp/classes_*
+            split -l 9000 -d /tmp/sources.txt /tmp/chunk_
+            : > /tmp/javac-iter.log
+            for CH in /tmp/chunk_*; do
+              N="${CH##*chunk_}"
+              CP="$ANDROID_JAR"
+              for P in /tmp/classes_*; do [ -d "$P" ] && CP="$CP:$P"; done
+              javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 \
+                -source 8 -target 8 -encoding UTF-8 \
+                -bootclasspath "$ANDROID_JAR" -classpath "$CP" \
+                -d "/tmp/classes_$N" @"$CH" >> /tmp/javac-iter.log 2>&1 || true
+            done
             ERRS=$(grep -c "error:" /tmp/javac-iter.log || echo 0)
             echo "Раунд $R: ошибок $ERRS" | tee -a "$CYCLE"
             cp -f /tmp/javac-iter.log "handoff/restoration/javac-round$R.log"
