@@ -810,13 +810,17 @@ public final class SyncEngine {
      */
     private void sendPayload(final Chat chat, final Msg local, final String payloadJson,
                              final SendCallback callback) {
-        if (!NativeCrypto.isLoaded()) {
-            fail(callback, "нативная библиотека не загружена: " + NativeCrypto.loadError());
-            return;
-        }
-        if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
-            fail(callback, "нет открытого ключа собеседника — отправьте приглашение или дождитесь его письма");
-            return;
+        // Ключ нужен ТОЛЬКО когда включено шифрование. В открытом режиме письмо уходит текстом —
+        // требовать «обменяться ключами» до первой отправки бессмысленно (это и ломало отправку).
+        if (Prefs.mailEncryption(app)) {
+            if (!NativeCrypto.isLoaded()) {
+                fail(callback, "нативная библиотека не загружена: " + NativeCrypto.loadError());
+                return;
+            }
+            if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
+                fail(callback, "нет открытого ключа собеседника — отправьте приглашение или дождитесь его письма");
+                return;
+            }
         }
         final Store store = Store.get(app);
         final String me = Auth.account(app);
@@ -834,6 +838,12 @@ public final class SyncEngine {
                 String gmailId = sendLetter(me, chat.peer, chat.uid, local.mid, chat.peerPublic,
                         payloadJson, local.text, local.mediaB64, local.type, null);
                 store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
+                notifyDirty();
+            } catch (Http.RateLimited rl) {
+                // квота исчерпана: ставим паузу, сообщение остаётся в статусе «не отправлено»
+                setQuotaPauseAndNotify(rl.retryAfterMs);
+                store.updateState(chat.uid, local.mid, Msg.STATE_FAILED, null, rl.getMessage());
+                if (callback != null) callback.onError(rl.getMessage());
                 notifyDirty();
             } catch (Throwable e) {
                 Log.w(TAG, "отправка не удалась: " + e);

@@ -363,7 +363,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         });
 
         Ui.safely(this, this::buildEmojiPanel);
-        bannerAction.setOnClickListener(Ui.tap(v -> inviteDialog()));
+        bannerAction.setOnClickListener(Ui.tap(v -> {
+            // в открытом режиме баннер не про «ключ», а про режим: показываем пояснение
+            if (encryptionOn()) inviteDialog();
+            else Ui.toast(this, R.string.chat_mode_plain);
+        }));
         Ui.safely(this, this::restoreDraft);
         SyncEngine.get(this).addListener(this);
         Ui.safely(this, this::refresh);
@@ -945,6 +949,23 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     /** Вложение в обычное письмо: у почты нет наших лимитов, но размер всё равно ограничиваем. */
     private void sendGenericMedia(String type, byte[] data, String mime, long durationMs,
                                   String fileName, boolean round, String caption) {
+        if (!chat.generic && !encryptionOn()) {
+            // открытый чат с собеседником: вложение уходит письмом через общий конвейер
+            // (своей темой и base64 внутри письма) — так оно вернётся в этот чат, а не «в почту»
+            long limit = "image".equals(type) ? MediaUtil.MAX_PHOTO_BYTES
+                    : "video".equals(type) ? MediaUtil.MAX_VIDEO_BYTES : MediaUtil.MAX_FILE_BYTES;
+            if (data.length > limit) {
+                Ui.toast(this, "image".equals(type) ? getString(R.string.photo_too_big)
+                        : "video".equals(type) ? getString(R.string.video_too_big)
+                        : getString(R.string.file_too_big));
+                return;
+            }
+            String t = "image".equals(type) || "video".equals(type) ? type : "file";
+            SyncEngine.get(this).sendMedia(chat, t, data, mime, durationMs, fileName,
+                    caption, round, null, null, null);
+            refresh();
+            return;
+        }
         if (data == null || data.length == 0) {
             Ui.toast(this, getString(R.string.error_generic, "пустое вложение"));
             return;
@@ -1220,7 +1241,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             sendGenericMedia(type, data, mime, durationMs, fileName, round, caption);
             return;
         }
-        if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
+        if (encryptionOn() && (chat.peerPublic == null || chat.peerPublic.isEmpty())) {
             inviteDialog();
             return;
         }
