@@ -114,6 +114,28 @@ jobs:
           python3 tools/lab_no_generics.py "$SRC" /tmp/s_var /tmp/sources_all.txt /tmp/s_var.txt | tee -a "$R"
           echo "errors=$(grep -c 'error:' /tmp/l17.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l17.log)" | tee -a "$R"
 
+          echo "===== ЭКСП 20: 10k файлов =====" | tee -a "$R"
+          head -n 10000 /tmp/sources_all.txt > /tmp/s10k.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l20 @/tmp/s10k.txt > /tmp/l20.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l20.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l20.log)" | tee -a "$R"
+          echo "===== ЭКСП 21: 20k файлов =====" | tee -a "$R"
+          head -n 20000 /tmp/sources_all.txt > /tmp/s20k.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l21 @/tmp/s20k.txt > /tmp/l21.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l21.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l21.log)" | tee -a "$R"
+          echo "===== ЭКСП 22: 30k файлов =====" | tee -a "$R"
+          head -n 30000 /tmp/sources_all.txt > /tmp/s30k.txt
+          javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l22 @/tmp/s30k.txt > /tmp/l22.log 2>&1 || true
+          echo "errors=$(grep -c 'error:' /tmp/l22.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l22.log)" | tee -a "$R"
+          echo "===== ЭКСП 23: ДВУХЧАСТНАЯ full =====" | tee -a "$R"
+          TOT=$(wc -l < /tmp/sources_all.txt); H=$(( TOT / 2 ))
+          head -n $H /tmp/sources_all.txt > /tmp/s_p1.txt
+          tail -n +$((H+1)) /tmp/sources_all.txt > /tmp/s_p2.txt
+          rm -rf /tmp/cp1; javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/cp1 @/tmp/s_p1.txt > /tmp/l23a.log 2>&1 || true
+          echo "part1: errors=$(grep -c 'error:' /tmp/l23a.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l23a.log)" | tee -a "$R"
+          javac -J-Xmx8g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -classpath /tmp/cp1 -d /tmp/cp2 @/tmp/s_p2.txt > /tmp/l23b.log 2>&1 || true
+          echo "part2: errors=$(grep -c 'error:' /tmp/l23b.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l23b.log)" | tee -a "$R"
+
+
 
 
 
