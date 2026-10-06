@@ -67,6 +67,43 @@ errors=42778 Object=9504
 ===== ЭКСП 9: половина 2 =====
 errors=88572 Object=21335
 ===== ЭКСП 10: 3000 файлов случайных =====
-errors=17934 Object=0
+errors=48080 Object=0
 ===== ЭКСП 10b: топ Object-шума ЭКСП 7 (пакеты) =====
   48723 java
+===== ЭКСП 11: k71/*.java изолированно =====
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/a.java:3: error: package com.github.rudroid.copilot does not exist
+import com.github.rudroid.copilot.h1;
+                                 ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/h.java:4: error: package w61 does not exist
+public interface h extends w61.e {
+                              ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/a0.java:5: error: package v8 does not exist
+import v8.l0;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/a0.java:8: error: package r71 does not exist
+public final class a0 implements r71.f {
+                                    ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/e.java:8: error: package sy does not exist
+import sy.d0;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/e.java:9: error: package v8 does not exist
+import v8.l0;
+         ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/k71/e.java:12: error: package r71 does not exist
+public final class e implements r71.b, d {
+k71_errors=117
+===== ЭКСП 12: v1 + u1 + k71/*.java (настоящий) =====
+50
+      1   symbol:   class g1
+      1   symbol:   class s0
+      2   symbol:   variable h1
+      1   symbol:   variable l0
+===== ЭКСП 13: v1 + u1 + k71 + зависимости k71 =====
+a.java
+a0.java
+b.java
+c.java
+d.java
+package k71;
+
+import a0.s0;
