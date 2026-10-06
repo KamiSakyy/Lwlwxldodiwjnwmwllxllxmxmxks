@@ -136,9 +136,17 @@ public final class GmailApi {
         return null;
     }
 
+    /**
+     * Gmail отдаёт тело в base64url без «=» и с переносами строк — приводим к каноническому
+     * виду, иначе декодер Android бросает IllegalArgumentException.
+     */
     private static String decode(String data) {
+        if (data == null) return "";
         try {
-            byte[] raw = android.util.Base64.decode(data.replace('-', '+').replace('_', '/'), android.util.Base64.DEFAULT);
+            String s = data.replaceAll("\\s+", "");
+            int pad = (4 - s.length() % 4) % 4;
+            if (pad > 0) s = s + "====".substring(0, pad);
+            byte[] raw = android.util.Base64.decode(s, android.util.Base64.URL_SAFE | android.util.Base64.NO_WRAP);
             return new String(raw, java.nio.charset.StandardCharsets.UTF_8);
         } catch (Exception e) {
             return "";

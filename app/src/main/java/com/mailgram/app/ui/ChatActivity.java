@@ -195,10 +195,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             @Override
             public void run() {
                 SyncEngine.get(ChatActivity.this).syncNow();
-                handler.postDelayed(this, 7000);
+                handler.postDelayed(this, 4000);
             }
         };
-        handler.postDelayed(poller, 7000);
+        handler.postDelayed(poller, 4000);
         if (com.mailgram.app.store.Prefs.backgroundSync(this)) SyncService.start(this);
     }
 

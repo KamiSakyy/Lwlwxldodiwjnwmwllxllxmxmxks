@@ -48,7 +48,7 @@ fi
     echo
     echo "### Данные для Google Cloud Console"
     echo
-    echo "- package name: \`$(aapt2 dump badging "$apk" 2>/dev/null | head -1 | sed -E "s/.*name='([^']+)'.*/\1/" || echo com.mailgram.app)\`"
+    echo "- package name: \`$(aapt2 dump badging "$apk" 2>/dev/null | head -1 | sed -E "s/^package: name='([^']+)'.*/\1/" || echo com.mailgram.app)\`"
     echo "- SHA-1: \`${sha1:-see above}\`"
     echo "- scopes: \`openid email https://www.googleapis.com/auth/gmail.modify\`"
     echo "- redirect (Android-клиент): \`com.googleusercontent.apps.<client-id>:/oauth2redirect\`"

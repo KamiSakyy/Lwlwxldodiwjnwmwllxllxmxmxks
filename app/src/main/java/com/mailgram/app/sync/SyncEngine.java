@@ -185,6 +185,24 @@ public final class SyncEngine {
         }
     }
 
+    /**
+     * Тело письма приходит как base64(текст). Возвращаем исходный текст и, если он
+     * действительно base64, ещё и расшифрованный — искать нужно по обоим.
+     */
+    private static String bodyWithDecoded(String body) {
+        if (body == null) return "";
+        String joined = body.replaceAll("\\s+", "");
+        if (joined.length() >= 24 && joined.matches("[A-Za-z0-9_\\-+/=]+")) {
+            try {
+                String text = B64.fromUtf8(B64.bytes(joined));
+                if (!text.isEmpty()) return body + "\n" + text;
+            } catch (Exception ignored) {
+                // не base64 — оставляем как есть
+            }
+        }
+        return body;
+    }
+
     private Msg parseMail(Store store, GmailApi.Mail mail, String me) throws Exception {
         String subject = mail.subject == null ? "" : mail.subject.trim();
         MailCrypto.Envelope env = null;
@@ -224,8 +242,9 @@ public final class SyncEngine {
         }
 
         if (env == null) {
-            // возможно это приглашение (открытый ключ без шифротекста)
-            Matcher m = KEY_LINE.matcher(mail.body == null ? "" : mail.body);
+            // возможно это приглашение (открытый ключ без шифротекста).
+            // Тело письма у нас завёрнуто в base64, поэтому смотрим оба варианта.
+            Matcher m = KEY_LINE.matcher(bodyWithDecoded(mail.body));
             if (m.find()) {
                 String keyB64 = m.group(1);
                 byte[] key = B64.bytes(keyB64);
