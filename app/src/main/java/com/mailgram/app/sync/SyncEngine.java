@@ -233,14 +233,14 @@ public final class SyncEngine {
         // защита квоты: не больше 40 писем за цикл, остальные — следующим
         if (unknown.size() > 40) unknown = new ArrayList<>(unknown.subList(0, 40));
 
-        // batchGet: вся пачка писем одним запросом
-        List<GmailApi.Mail> mails = GmailApi.batchGet(token, unknown);
+        // по письму за запрос (messages.get — проверенный эндпоинт), параллельно, не более 40
         List<Future<?>> futures = new ArrayList<>();
-        for (GmailApi.Mail mailItem : mails) {
-            final GmailApi.Mail mail = mailItem;
+        for (String id : unknown) {
+            final String messageId = id;
             final String myEmail = me;
             futures.add(pool.submit(() -> {
                 try {
+                    GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
                     Msg parsed = parseMail(store, mail, myEmail);
                     if (parsed == null) return;
                     boolean isNew = store.byMid(parsed.chat, parsed.mid) == null;
@@ -252,12 +252,12 @@ public final class SyncEngine {
                         }
                     }
                 } catch (SecurityException se) {
-                    Log.w(TAG, "не удалось расшифровать письмо " + mail.id + ": " + se.getMessage());
+                    Log.w(TAG, "не удалось расшифровать письмо " + messageId + ": " + se.getMessage());
                     synchronized (result) {
                         result.undecryptable++;
                     }
                 } catch (Exception e) {
-                    Log.w(TAG, "ошибка обработки письма " + mail.id + ": " + e);
+                    Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
                 }
             }));
         }
