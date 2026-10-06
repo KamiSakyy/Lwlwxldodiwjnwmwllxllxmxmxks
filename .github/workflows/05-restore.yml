@@ -103,7 +103,7 @@ jobs:
                 "$SRC/i80/c.java" 2>&1 | head -25 | tee -a "$CYCLE" || true
               echo "--- ДИАГНОСТИКА: полная компиляция (память/краш javac) ---" | tee -a "$CYCLE"
               rm -rf /tmp/diagfull
-              if javac -J-Xmx10g -nowarn -proc:none -Xmaxerrs 100 \
+              if javac -J-Xmx3g -nowarn -proc:none -Xmaxerrs 100 \
                   -source 8 -target 8 -encoding UTF-8 \
                   -bootclasspath "$ANDROID_JAR" -d /tmp/diagfull @/tmp/sources.txt \
                   > /tmp/javac-full-diag.log 2>&1; then
@@ -124,7 +124,7 @@ jobs:
               N="${CH##*chunk_}"
               CP="$ANDROID_JAR"
               for P in /tmp/classes_*; do if [ -d "$P" ]; then CP="$CP:$P"; fi; done
-              javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 \
+              javac -J-Xmx3g -nowarn -proc:none -Xmaxerrs 200000 \
                 -source 8 -target 8 -encoding UTF-8 \
                 -bootclasspath "$ANDROID_JAR" -classpath "$CP" \
                 -d "/tmp/classes_$N" @"$CH" > "/tmp/javac-chunk-$N.log" 2>&1 || true
