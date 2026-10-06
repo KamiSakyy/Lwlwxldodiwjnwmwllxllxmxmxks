@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Архив исходников
-        run: git archive --format=zip --prefix=MailGram-source/ -o "ИСХОДНИК.zip" HEAD
+        run: git archive --format=zip --prefix=MailGram-source/ -o MailGram-source.zip HEAD
 
       - name: Публикация в релиз
         env:
@@ -24,5 +24,6 @@ jobs:
         run: |
           gh release view apk-latest > /dev/null 2>&1 || \
             gh release create apk-latest --title "MailGram — APK (последняя сборка)" --prerelease
-          gh release upload apk-latest "ИСХОДНИК.zip" --clobber
-          echo "::notice title=Исходники::https://github.com/${GITHUB_REPOSITORY}/releases/download/apk-latest/ИСХОДНИК.zip"
+          gh release upload apk-latest MailGram-source.zip --clobber
+          gh release delete-asset apk-latest default.zip --yes 2>/dev/null || true
+          echo "::notice title=Исходники::https://github.com/${GITHUB_REPOSITORY}/releases/download/apk-latest/MailGram-source.zip"
