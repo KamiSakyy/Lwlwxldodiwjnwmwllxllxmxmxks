@@ -150,18 +150,20 @@ for b in blocks:
         if not cm: continue
         q, meth = cm.group(1), cm.group(2)
         sp = q.split(".")
-        tgt = None
+        tgt = cls = None
         for k in range(len(sp), 0, -1):
             cand = ".".join(sp[:k])
-            if cand in pkg_classes: tgt = cand; break
-        if tgt is None and len(sp) >= 2 and sp[0] in pkg_classes and sp[1] in pkg_classes[sp[0]]:
-            tgt = sp[0]
+            if cand in pkg_classes:
+                tgt = cand
+                if k < len(sp):
+                    cls = sp[k]
+                break
         if tgt is None:
-            # может это fq-of?
             fq = fq_of(fp, sp[0])
-            if fq: tgt = fq.rsplit(".", 1)[0]
-        if not tgt: continue
-        tfp = os.path.join(ROOT, tgt.replace(".", "/") + ".java")
+            if fq:
+                tgt, cls = fq.rsplit(".", 1)
+        if not tgt or not cls: continue
+        tfp = os.path.join(ROOT, tgt.replace(".", "/"), cls + ".java")
         if not os.path.exists(tfp): continue
         ptypes = arg_types(fp, code, meth)
         if not ptypes: continue
