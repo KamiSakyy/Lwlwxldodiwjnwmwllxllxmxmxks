@@ -1,15 +1,15 @@
 # ОТЧЁТ О ВОССТАНОВЛЕНИИ ИСХОДНИКА (Этап 5 v3, итеративный цикл)
 
-_Сгенерировано: 2026-10-06T02:11:35.813716Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
+_Сгенерировано: 2026-10-06T02:32:15.266107Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
 
-**Осталось ошибок: 58922** в 26557 файлах.
+**Осталось ошибок: 58952** в 26581 файлах.
 
 - Стабов-заглушек в дереве: 1228
 
 ## Типы ошибок (топ-20)
 - 55525 × `cannot find symbol`
 - 1330 × `interface expected here`
-- 632 × `incompatible types`
+- 630 × `incompatible types`
 - 132 × `method valueOf in class Enum<E> cannot be applied to given t`
 - 105 × `int cannot be dereferenced`
 - 85 × `boolean cannot be dereferenced`
@@ -63,8 +63,8 @@ _Сгенерировано: 2026-10-06T02:11:35.813716Z, проверка javac
 ## Ход цикла (ошибок по раундам)
 - javac-round1.log: 58952
 - javac-round10.log: 64533
-- javac-round2.log: 58922
-- javac-round3.log: 58922
+- javac-round2.log: 58952
+- javac-round3.log: 58952
 - javac-round4.log: 58922
 - javac-round5.log: 58948
 - javac-round6.log: 59181
