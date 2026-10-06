@@ -8,7 +8,7 @@ public class e {
     public static Object e() {
     }
 
-    public e(Object p1) {
+    public static Object e(Object p1) {
     }
 
     public e(Object p1, Object p2) {

@@ -14,7 +14,6 @@ public @interface e {
 
     String f() default "";
 
-    int[] l() default {};
 
     String m() default "";
 

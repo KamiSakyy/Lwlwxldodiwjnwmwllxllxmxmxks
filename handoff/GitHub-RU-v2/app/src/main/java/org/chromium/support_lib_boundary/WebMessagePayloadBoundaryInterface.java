@@ -8,8 +8,6 @@ public interface WebMessagePayloadBoundaryInterface extends FeatureFlagHolderBou
 
     @Retention(RetentionPolicy.SOURCE)
     public @interface WebMessagePayloadType {
-        public static final int TYPE_ARRAY_BUFFER = 1;
-        public static final int TYPE_STRING = 0;
     }
 
     byte[] getAsArrayBuffer();

@@ -8,5 +8,4 @@ import java.lang.annotation.RetentionPolicy;
 public @interface k {
     boolean allowUnsafeNonAsciiValues() default false;
 
-    String[] value();
 }

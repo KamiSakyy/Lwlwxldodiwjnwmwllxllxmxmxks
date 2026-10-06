@@ -18,7 +18,6 @@ public interface WebViewBuilderBoundaryInterface {
 
     @Retention(RetentionPolicy.SOURCE)
     public @interface Baseline {
-        public static final int DEFAULT = 0;
     }
 
     public static class Config implements Consumer<BiConsumer<Integer, Object>> {
