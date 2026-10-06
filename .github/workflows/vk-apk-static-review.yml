@@ -180,7 +180,8 @@ jobs:
       - name: Build ARM-focused size-optimized APK
         shell: bash
         run: |
-          set -euo pipefail
+          set -Eeuo pipefail
+          trap 'status=$?; echo "::error title=ARM APK build::Command failed at shell line $LINENO (exit $status)"; exit "$status"' ERR
           raw_apk="$RUNNER_TEMP/vk-mod-arm-unaligned.apk"
           aligned_apk="$RUNNER_TEMP/vk-mod-arm-aligned.apk"
           signed_apk="$RUNNER_TEMP/$MOD_APK_NAME"

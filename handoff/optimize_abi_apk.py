@@ -179,8 +179,16 @@ def main() -> int:
 
     try:
         result = optimize(args.input_apk, args.output_apk, set(args.keep_abis))
-    except (OSError, ValueError, zipfile.BadZipFile, RuntimeError) as exc:
-        print(f"APK optimization failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+    except Exception as exc:
+        message = f"APK optimization failed: {type(exc).__name__}: {exc}"
+        print(message, file=sys.stderr)
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::error title=APK size optimization::{escaped}")
+            summary = os.environ.get("GITHUB_STEP_SUMMARY")
+            if summary:
+                with Path(summary).open("a", encoding="utf-8") as stream:
+                    stream.write(f"## APK size optimization failed\n\n- {message}\n")
         return 1
 
     reduction = result["input_bytes"] - result["output_bytes"]
