@@ -989,6 +989,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             items.add(getString(R.string.copy));
             ids.add(2);
         }
+        items.add(getString(R.string.forward));
+        ids.add(9);
         if (msg.state == Msg.STATE_FAILED) {
             items.add(getString(R.string.retry));
             ids.add(3);
@@ -1027,6 +1029,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                     } else if (id == 6) {
                         Store.get(this).setMsgPinned(uid, msg.mid, !msg.pinned);
                         refresh();
+                    } else if (id == 9) {
+                        forwardDialog(msg);
                     } else if (id == 7) {
                         SyncEngine.get(this).sendDelete(chat, msg, null);
                         refresh();
@@ -1034,6 +1038,42 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                         Store.get(this).deleteMessage(uid, msg.mid);
                         refresh();
                     }
+                })
+                .show();
+    }
+
+    /** Выбор чата для пересылки: список диалогов с аватарами. */
+    private void forwardDialog(final Msg msg) {
+        final List<Chat> chats = new ArrayList<>(Store.get(this).chats());
+        if (chats.isEmpty()) {
+            Ui.toast(this, getString(R.string.nothing_here));
+            return;
+        }
+        final String[] names = new String[chats.size()];
+        for (int i = 0; i < chats.size(); i++) {
+            Chat c = chats.get(i);
+            names[i] = (c.name != null && !c.name.isEmpty() ? c.name : Store.displayName(this, c.peer));
+        }
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.forward_to_chat)
+                .setItems(names, (d, which) -> {
+                    final Chat target = chats.get(which);
+                    chat = Store.get(this).chat(uid);
+                    SyncEngine.get(this).sendForward(target, msg, new SyncEngine.SendCallback() {
+                        @Override
+                        public void onSent(Msg message) {
+                            handler.post(() -> {
+                                Ui.toast(ChatActivity.this, getString(R.string.forwarded));
+                                refresh();
+                            });
+                        }
+
+                        @Override
+                        public void onError(final String error) {
+                            handler.post(() -> Ui.toast(ChatActivity.this,
+                                    getString(R.string.send_failed, error)));
+                        }
+                    });
                 })
                 .show();
     }

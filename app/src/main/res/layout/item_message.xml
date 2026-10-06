@@ -31,6 +31,17 @@
         android:paddingEnd="13dp"
         android:paddingBottom="6dp">
 
+        <!-- отметка пересылки -->
+        <TextView
+            android:id="@+id/msg_forwarded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/forwarded"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
         <!-- цитата, если это ответ -->
         <LinearLayout
             android:id="@+id/msg_reply_quote"

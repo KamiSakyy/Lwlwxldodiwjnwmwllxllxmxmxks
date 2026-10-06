@@ -96,6 +96,19 @@ public class SettingsActivity extends AppCompatActivity {
         notifications.setOnCheckedChangeListener((buttonView, isChecked) ->
                 Prefs.setNotifications(this, isChecked));
 
+        // криптография
+        TextView ratchetState = findViewById(R.id.settings_ratchet_state);
+        boolean anySession = false;
+        for (Chat chat : Store.get(this).chats()) {
+            if (com.mailgram.app.crypto.RatchetStore.hasSession(this, chat.uid)) {
+                anySession = true;
+                break;
+            }
+        }
+        ratchetState.setText(anySession ? getString(R.string.ratchet_state_on)
+                : getString(R.string.ratchet_state_wait));
+        findViewById(R.id.row_ratchet).setOnClickListener(v -> showRatchetInfo());
+
         // безопасность
         selfTestResult = findViewById(R.id.settings_selftest_result);
         findViewById(R.id.row_selftest).setOnClickListener(v -> runSelfTest());
@@ -240,6 +253,85 @@ public class SettingsActivity extends AppCompatActivity {
                     Ui.toast(this, getString(R.string.setup_saved));
                 })
                 .show();
+    }
+
+    /** Что именно делает шифрование — простыми словами, но без прикрас. */
+    private void showRatchetInfo() {
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.settings_ratchet)
+                .setMessage(getString(R.string.settings_security_desc)
+                        + "\n\n• X3DH: DH(свой ключ, ключ собеседника) + эфемерный ключ + предключ\n"
+                        + "• Корневой ключ: HKDF-SHA256, соль — идентификатор пары\n"
+                        + "• Цепочки: KDF_CK выдаёт отдельный ключ на каждое сообщение\n"
+                        + "• DH-шаг: при каждом ответе собеседника — новый эфемерный ключ\n"
+                        + "• AEAD: ChaCha20-Poly1305, заголовок сообщения в AAD\n"
+                        + "• Пропущенные сообщения: до 500 ключей на цепочку\n"
+                        + "• Сессии хранятся запечатанными ключом Android Keystore")
+                .setPositiveButton(R.string.done, null)
+                .show();
+    }
+
+    private void setUpAppLock() {
+        final com.google.android.material.materialswitch.MaterialSwitch lock =
+                findViewById(R.id.switch_app_lock);
+        if (lock == null) return;
+        lock.setChecked(Prefs.pinHash(this).length() > 0);
+        lock.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                askNewPin();
+            } else {
+                Prefs.clearPin(this);
+                Ui.toast(this, getString(R.string.pin_remove));
+            }
+        });
+    }
+
+    private void askNewPin() {
+        final EditText first = pinField();
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.pin_title)
+                .setView(first)
+                .setCancelable(false)
+                .setNegativeButton(R.string.cancel, (d, w) -> setUpAppLock())
+                .setPositiveButton(R.string.continue_label, (d, w) -> {
+                    String pin = first.getText().toString().trim();
+                    if (pin.length() < 4) {
+                        Ui.toast(this, getString(R.string.pin_4_digits));
+                        setUpAppLock();
+                        return;
+                    }
+                    askRepeatPin(pin);
+                })
+                .show();
+    }
+
+    private void askRepeatPin(final String pin) {
+        final EditText second = pinField();
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.pin_repeat)
+                .setView(second)
+                .setCancelable(false)
+                .setNegativeButton(R.string.cancel, (d, w) -> setUpAppLock())
+                .setPositiveButton(R.string.save, (d, w) -> {
+                    String again = second.getText().toString().trim();
+                    if (!pin.equals(again)) {
+                        Ui.toast(this, getString(R.string.pin_mismatch));
+                        askNewPin();
+                        return;
+                    }
+                    Prefs.setPinHash(this, Prefs.hashPin(this, pin));
+                    Ui.toast(this, getString(R.string.app_lock));
+                })
+                .show();
+    }
+
+    private EditText pinField() {
+        EditText edit = new EditText(this);
+        edit.setInputType(android.text.InputType.TYPE_CLASS_NUMBER
+                | android.text.InputType.TYPE_NUMBER_VARIATION_PASSWORD);
+        edit.setHint(R.string.pin_enter);
+        edit.setFilters(new android.text.InputFilter[]{new android.text.InputFilter.LengthFilter(8)});
+        return edit;
     }
 
     private String fontScaleLabel(int scale) {

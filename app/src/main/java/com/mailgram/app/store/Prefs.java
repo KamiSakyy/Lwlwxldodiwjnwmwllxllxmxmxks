@@ -103,6 +103,43 @@ public final class Prefs {
         p(ctx).edit().putInt("bubble_style", style).apply();
     }
 
+    /** Хеш PIN-кода (соль + SHA-256), пустая строка — блокировка выключена. */
+    public static String pinHash(Context ctx) {
+        return p(ctx).getString("pin_hash", "");
+    }
+
+    public static void setPinHash(Context ctx, String value) {
+        p(ctx).edit().putString("pin_hash", value == null ? "" : value).apply();
+    }
+
+    /** Считает хеш PIN-кода с постоянной солью устройства (соль хранится в настройках). */
+    public static String hashPin(Context ctx, String pin) {
+        try {
+            String salt = p(ctx).getString("pin_salt", "");
+            if (salt.isEmpty()) {
+                salt = com.mailgram.app.crypto.B64.str(
+                        com.mailgram.app.crypto.NativeCrypto.random(16));
+                p(ctx).edit().putString("pin_salt", salt).apply();
+            }
+            byte[] hash = com.mailgram.app.crypto.NativeCrypto.sha256Utf8(salt + "|" + pin);
+            return salt + ":" + com.mailgram.app.crypto.B64.str(hash);
+        } catch (Throwable t) {
+            return "";
+        }
+    }
+
+    /** Проверка PIN-кода; если блокировка выключена — всегда «верно». */
+    public static boolean checkPin(Context ctx, String pin) {
+        String stored = pinHash(ctx);
+        if (stored.isEmpty()) return true;
+        return stored.equals(hashPin(ctx, pin));
+    }
+
+    /** Выключение блокировки вместе с солью. */
+    public static void clearPin(Context ctx) {
+        p(ctx).edit().remove("pin_hash").remove("pin_salt").apply();
+    }
+
     public static long lastSyncAt(Context ctx) {
         return p(ctx).getLong("last_sync", 0L);
     }

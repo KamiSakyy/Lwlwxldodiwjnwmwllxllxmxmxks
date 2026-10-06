@@ -143,6 +143,10 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     @Override
     protected void onResume() {
         super.onResume();
+        if (needsPin(this)) {
+            startActivity(new Intent(this, LockActivity.class));
+            return;
+        }
         refresh();
         SyncEngine.get(this).syncNow();
         startPolling();
@@ -237,6 +241,63 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         updateEmpty();
     }
 
+    /** Долгое нажатие по чату: закрепить, без звука, переименовать, сведения, очистить, удалить. */
+    private void showChatMenu(final Chat chat) {
+        android.widget.PopupMenu popup = new android.widget.PopupMenu(this, list);
+        popup.getMenu().add(0, 1, 0, chat.pinned ? R.string.unpin_chat : R.string.pin_chat);
+        popup.getMenu().add(0, 2, 1, chat.muted ? R.string.unmute_chat : R.string.mute_chat);
+        popup.getMenu().add(0, 3, 2, R.string.chat_menu_rename);
+        popup.getMenu().add(0, 4, 3, R.string.chat_info);
+        popup.getMenu().add(0, 5, 4, R.string.chat_menu_clear);
+        popup.getMenu().add(0, 6, 5, R.string.chat_menu_delete);
+        popup.setOnMenuItemClickListener(item -> {
+            switch (item.getItemId()) {
+                case 1:
+                    Store.get(this).setPinned(chat.uid, !chat.pinned);
+                    refresh();
+                    return true;
+                case 2:
+                    Store.get(this).setMuted(chat.uid, !chat.muted);
+                    refresh();
+                    return true;
+                case 3:
+                    renameChat(chat);
+                    return true;
+                case 4:
+                    showChatInfo(chat);
+                    return true;
+                case 5:
+                    confirmClear(chat);
+                    return true;
+                case 6:
+                    confirmDelete(chat);
+                    return true;
+                default:
+                    return false;
+            }
+        });
+        popup.show();
+    }
+
+    /** Карточка чата: участник, количество медиа, состояние шифрования и отметка «проверен». */
+    private void showChatInfo(final Chat chat) {
+        int[] counts = Store.get(this).mediaCounts(chat.uid);
+        boolean ratchet = com.mailgram.app.crypto.RatchetStore.hasSession(this, chat.uid);
+        String body = chat.peer + "\n"
+                + getString(R.string.media_count, counts[0], counts[1], counts[2]) + "\n"
+                + (ratchet ? getString(R.string.ratchet_on) : getString(R.string.ratchet_wait));
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.chat_info)
+                .setMessage(body)
+                .setNeutralButton(chat.verified ? R.string.chat_menu_safety : R.string.verify_chat,
+                        (d, w) -> {
+                            Store.get(this).setVerified(chat.uid, !chat.verified);
+                            refresh();
+                        })
+                .setPositiveButton(R.string.done, null)
+                .show();
+    }
+
     private void renameChat(final Chat chat) {
         final EditText input = new EditText(this);
         input.setText(chat.name == null ? "" : chat.name);
@@ -299,6 +360,12 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
                             .putExtra(ChatActivity.EXTRA_CHAT_UID, uid));
                 })
                 .show();
+    }
+
+    /** Нужно ли спросить PIN-код перед показом экрана. */
+    private static boolean needsPin(android.content.Context ctx) {
+        return Prefs.pinHash(ctx).length() > 0
+                && (!com.mailgram.app.App.isUnlocked() || com.mailgram.app.App.shouldLock());
     }
 
     /** Последняя показанная ошибка Google — чтобы не открывать один и тот же диалог по кругу. */

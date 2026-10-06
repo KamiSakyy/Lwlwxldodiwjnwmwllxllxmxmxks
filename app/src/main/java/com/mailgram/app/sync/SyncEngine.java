@@ -353,6 +353,7 @@ public final class SyncEngine {
             msg.round = payload.optBoolean("rnd", false);
             msg.replyMid = payload.optString("r", "");
             msg.replyPreview = payload.optString("rp", "");
+            msg.forwarded = payload.optBoolean("fwd", false);
             org.json.JSONArray wave = payload.optJSONArray("w");
             if (wave != null) {
                 StringBuilder sb = new StringBuilder();
@@ -473,6 +474,45 @@ public final class SyncEngine {
             sb.append(amplitudes[i]);
         }
         return sb.toString();
+    }
+
+    /**
+     * Пересылка сообщения в другой чат: содержимое переносится как есть (медиа не перекодируется),
+     * в конверт добавляется отметка fwd, чтобы в пузыре было видно «Переслано».
+     */
+    public void sendForward(final Chat chat, final Msg src, final SendCallback callback) {
+        JSONObject payload = new JSONObject();
+        String type = src.type == null || src.type.isEmpty() ? "text" : src.type;
+        try {
+            payload.put("t", type);
+            payload.put("b", src.mediaB64 != null && !src.mediaB64.isEmpty() ? src.mediaB64
+                    : (src.text == null ? "" : src.text));
+            if (src.mediaMime != null && !src.mediaMime.isEmpty()) payload.put("m", src.mediaMime);
+            if (src.durationMs > 0) payload.put("d", src.durationMs);
+            if (src.fileName != null && !src.fileName.isEmpty()) {
+                payload.put("n", src.fileName);
+                payload.put("s", src.fileSize);
+            }
+            if (!"text".equals(type) && src.text != null && !src.text.isEmpty()) payload.put("c", src.text);
+            if (src.round) payload.put("rnd", true);
+            if (src.wave != null && !src.wave.isEmpty()) {
+                org.json.JSONArray arr = new org.json.JSONArray();
+                for (String piece : src.wave.split(",")) {
+                    try {
+                        arr.put(Integer.parseInt(piece.trim()));
+                    } catch (Exception ignored) {
+                    }
+                }
+                if (arr.length() > 0) payload.put("w", arr);
+            }
+            payload.put("fwd", true);
+        } catch (Exception ignored) {
+        }
+        Msg local = newLocal(chat, type, src.text, null, src.mediaMime, src.durationMs,
+                src.fileName, src.fileSize, src.round, src.wave, "", "");
+        local.mediaB64 = src.mediaB64 == null ? "" : src.mediaB64;
+        local.forwarded = true;
+        sendPayload(chat, local, payload.toString(), callback);
     }
 
     /** Реакция на сообщение (уходит письмом-«реакцией», в ленте не отображается). */

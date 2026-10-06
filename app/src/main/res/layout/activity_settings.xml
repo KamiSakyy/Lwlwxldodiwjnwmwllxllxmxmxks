@@ -170,6 +170,21 @@
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:background="@drawable/bg_card" android:orientation="vertical" android:padding="16dp">
 
+                <LinearLayout android:id="@+id/row_ratchet" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical" android:orientation="horizontal">
+
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="@string/settings_ratchet"
+                        android:textAppearance="?attr/textAppearanceBodyLarge"
+                        android:textColor="?attr/colorOnSurface" />
+
+                    <TextView android:id="@+id/settings_ratchet_state" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="?attr/colorPrimary" />
+                </LinearLayout>
+
                 <LinearLayout android:id="@+id/row_selftest" android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:background="?attr/selectableItemBackground"
                     android:gravity="center_vertical" android:orientation="horizontal">
@@ -187,6 +202,17 @@
                     android:layout_height="wrap_content" android:layout_marginTop="6dp"
                     android:textAppearance="?attr/textAppearanceBodySmall"
                     android:textColor="?attr/colorOnSurfaceVariant" android:visibility="gone" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switch_app_lock"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="@string/app_lock"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/app_lock_desc"
+                    android:textAppearance="?attr/textAppearanceBodySmall"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
 
                 <LinearLayout android:id="@+id/row_mykey" android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:layout_marginTop="12dp"

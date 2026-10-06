@@ -16,6 +16,25 @@ public class App extends Application {
 
     private static final String TAG = "MailGram";
     private static volatile boolean foreground;
+    /** Разблокировано ли приложение в этом запуске (PIN-код). */
+    private static volatile boolean unlocked;
+    /** Когда приложение ушло в фон — для авто-блокировки. */
+    private static volatile long backgroundedAt;
+
+    public static boolean isUnlocked() {
+        return unlocked;
+    }
+
+    public static void setUnlocked(boolean value) {
+        unlocked = value;
+        if (value) backgroundedAt = 0L;
+    }
+
+    /** Пора ли снова спрашивать PIN (по умолчанию — через 60 секунд в фоне). */
+    public static boolean shouldLock() {
+        return !unlocked && backgroundedAt > 0L
+                && System.currentTimeMillis() - backgroundedAt > 60_000L;
+    }
 
     @Override
     public void onCreate() {
@@ -37,6 +56,11 @@ public class App extends Application {
             public void onActivityStopped(Activity activity) {
                 started = Math.max(0, started - 1);
                 foreground = started > 0;
+                if (!foreground) {
+                    if (backgroundedAt == 0L) backgroundedAt = System.currentTimeMillis();
+                } else {
+                    backgroundedAt = 0L;
+                }
             }
 
             @Override

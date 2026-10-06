@@ -277,6 +277,14 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 ? ctx.getResources().getColor(R.color.bubble_out_text_dark)
                 : resolveOnSurface(ctx);
 
+        // ---- отметка «Переслано» ----
+        if (m.forwarded && !m.deleted) {
+            h.forwarded.setVisibility(View.VISIBLE);
+            h.forwarded.setTextColor(m.outgoing ? 0xCCFFFFFF : ctx.getResources().getColor(R.color.accent));
+        } else {
+            h.forwarded.setVisibility(View.GONE);
+        }
+
         // ---- цитата ответа ----
         if (m.replyMid != null && !m.replyMid.isEmpty()) {
             h.replyQuote.setVisibility(View.VISIBLE);
@@ -596,6 +604,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     static class MessageHolder extends RecyclerView.ViewHolder {
         final LinearLayout container;
+        final TextView forwarded;
         final LinearLayout replyQuote;
         final View replyStrip;
         final TextView replyName;
@@ -624,6 +633,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         MessageHolder(View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.msg_container);
+            forwarded = itemView.findViewById(R.id.msg_forwarded);
             replyQuote = itemView.findViewById(R.id.msg_reply_quote);
             replyStrip = itemView.findViewById(R.id.msg_reply_strip);
             replyName = itemView.findViewById(R.id.msg_reply_name);
