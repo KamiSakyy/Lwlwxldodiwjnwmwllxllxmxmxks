@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build an ARM-only VK APK by removing non-ARM JNI libraries.
+"""Repack an APK, optionally pruning ABI libraries and compressing DEX entries.
 
-The app's manifest, DEX, resources, assets, and retained native-library
-payloads are copied without content changes. APK signing files are omitted
-because repackaging invalidates the original signature; the workflow aligns and
-signs the result with an ephemeral key.
+The app's manifest, DEX payloads, resources, assets, and retained native
+libraries are copied without content changes. The optional DEX mode changes
+only ZIP compression, not bytecode. Original signing files are omitted because
+repackaging invalidates the signature; the workflow aligns and signs the result
+with an ephemeral key.
 """
 
 from __future__ import annotations
@@ -46,14 +47,17 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[str, object]:
+def optimize(
+    source_path: Path,
+    output_path: Path,
+    keep_abis: set[str],
+    compress_dex: bool = False,
+    allow_no_dex: bool = False,
+) -> dict[str, object]:
     if source_path.resolve() == output_path.resolve():
         raise ValueError("input and output APK paths must be different")
     if not source_path.is_file():
         raise ValueError(f"input APK does not exist: {source_path}")
-    if not keep_abis or "arm64-v8a" not in keep_abis:
-        raise ValueError("the keep list must include arm64-v8a")
-
     output_path.parent.mkdir(parents=True, exist_ok=True)
     temp_fd, temp_name = tempfile.mkstemp(prefix=f".{output_path.name}.", suffix=".tmp", dir=output_path.parent)
     os.close(temp_fd)
@@ -70,17 +74,21 @@ def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[
             dex_names = sorted(
                 name for name in names if DEX_NAME.fullmatch(Path(name).name)
             )
-            if "AndroidManifest.xml" not in names or not dex_names:
-                raise ValueError("input is not a recognizable Android APK (manifest or DEX missing)")
+            if "AndroidManifest.xml" not in names or (not dex_names and not allow_no_dex):
+                raise ValueError("input is not a recognizable APK (manifest or required DEX files missing)")
 
             libraries_by_abi: dict[str, list[zipfile.ZipInfo]] = defaultdict(list)
             for entry in entries:
                 abi = native_abi(entry.filename)
                 if abi is not None:
                     libraries_by_abi[abi].append(entry)
-            if "arm64-v8a" not in libraries_by_abi:
-                found = ", ".join(sorted(libraries_by_abi)) or "none"
-                raise ValueError(f"APK has no arm64-v8a native libraries (found: {found})")
+            if libraries_by_abi and not (set(libraries_by_abi) & keep_abis):
+                found = ", ".join(sorted(libraries_by_abi))
+                requested = ", ".join(sorted(keep_abis)) or "none"
+                raise ValueError(
+                    f"APK contains native libraries for {found}, "
+                    f"but none of the retained ABIs are available ({requested})"
+                )
 
             dropped_libraries = [
                 entry
@@ -88,13 +96,6 @@ def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[
                 if abi not in keep_abis
                 for entry in abi_entries
             ]
-            if not dropped_libraries:
-                found = ", ".join(sorted(libraries_by_abi))
-                raise ValueError(
-                    "no non-ARM native libraries are available to remove; "
-                    f"refusing to claim a size reduction (input ABIs: {found})"
-                )
-
             signing_entries = [entry for entry in entries if is_v1_signature_metadata(entry.filename)]
             dropped_names = {entry.filename for entry in dropped_libraries}
             dropped_names.update(entry.filename for entry in signing_entries)
@@ -110,8 +111,11 @@ def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[
                     # ZipInfo, and the source archive must retain original offsets
                     # for the integrity checks below.
                     output_entry = copy.copy(entry)
-                    # Deflate existing compressed entries at level 9; keep stored
-                    # entries stored, which is required for some aligned JNI libs.
+                    # Deflate existing compressed entries at level 9; optionally
+                    # deflate DEX payloads that were stored uncompressed.
+                    is_dex = DEX_NAME.fullmatch(Path(entry.filename).name) is not None
+                    if compress_dex and is_dex:
+                        output_entry.compress_type = zipfile.ZIP_DEFLATED
                     if output_entry.compress_type == zipfile.ZIP_DEFLATED:
                         output_entry._compresslevel = 9
                     with source.open(entry, "r") as reader, output.open(output_entry, "w") as writer:
@@ -129,6 +133,8 @@ def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[
                 for name in dex_names:
                     if digest(optimized.read(name)) != digest(source.read(name)):
                         raise ValueError(f"DEX payload changed during repackaging: {name}")
+                    if compress_dex and optimized.getinfo(name).compress_type != zipfile.ZIP_DEFLATED:
+                        raise ValueError(f"DEX entry was not deflated as requested: {name}")
                 if "resources.arsc" in names and digest(optimized.read("resources.arsc")) != digest(source.read("resources.arsc")):
                     raise ValueError("Android resource table changed during repackaging")
                 output_abis = sorted({abi for name in output_names if (abi := native_abi(name)) is not None})
@@ -143,7 +149,7 @@ def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[
 
     input_bytes = source_path.stat().st_size
     output_bytes = output_path.stat().st_size
-    if output_bytes >= input_bytes:
+    if (compress_dex or dropped_libraries) and output_bytes >= input_bytes:
         output_path.unlink(missing_ok=True)
         raise ValueError(
             f"repacked APK is not smaller than the source ({output_bytes} >= {input_bytes} bytes)"
@@ -151,9 +157,19 @@ def optimize(source_path: Path, output_path: Path, keep_abis: set[str]) -> dict[
 
     removed_compressed = sum(entry.compress_size for entry in dropped_libraries)
     removed_uncompressed = sum(entry.file_size for entry in dropped_libraries)
+    dex_input_compressed = sum(
+        entry.compress_size for entry in entries
+        if DEX_NAME.fullmatch(Path(entry.filename).name)
+    )
+    with zipfile.ZipFile(output_path, "r") as optimized:
+        dex_output_compressed = sum(
+            optimized.getinfo(name).compress_size for name in dex_names
+        )
     return {
         "input_bytes": input_bytes,
         "output_bytes": output_bytes,
+        "dex_input_compressed_bytes": dex_input_compressed,
+        "dex_output_compressed_bytes": dex_output_compressed,
         "removed_native_libraries": len(dropped_libraries),
         "removed_native_compressed_bytes": removed_compressed,
         "removed_native_uncompressed_bytes": removed_uncompressed,
@@ -173,12 +189,28 @@ def main() -> int:
         action="append",
         dest="keep_abis",
         default=[],
-        help="native ABI to retain (repeatable; arm64-v8a is mandatory)",
+        help="native ABI to retain (repeatable; applied when the APK has native libs)",
+    )
+    parser.add_argument(
+        "--compress-dex",
+        action="store_true",
+        help="deflate stored DEX ZIP entries without changing their payload bytes",
+    )
+    parser.add_argument(
+        "--allow-no-dex",
+        action="store_true",
+        help="allow resource/ABI split APKs that do not contain DEX files",
     )
     args = parser.parse_args()
 
     try:
-        result = optimize(args.input_apk, args.output_apk, set(args.keep_abis))
+        result = optimize(
+            args.input_apk,
+            args.output_apk,
+            set(args.keep_abis),
+            compress_dex=args.compress_dex,
+            allow_no_dex=args.allow_no_dex,
+        )
     except Exception as exc:
         message = f"APK optimization failed: {type(exc).__name__}: {exc}"
         print(message, file=sys.stderr)
@@ -196,6 +228,11 @@ def main() -> int:
     print(f"Input size: {result['input_bytes']} bytes")
     print(f"Repacked size before signing/alignment: {result['output_bytes']} bytes")
     print(f"Size reduction before signing/alignment: {reduction} bytes ({reduction_pct:.2f}%)")
+    dex_saved = result["dex_input_compressed_bytes"] - result["dex_output_compressed_bytes"]
+    print(
+        f"DEX ZIP bytes: {result['dex_input_compressed_bytes']} -> "
+        f"{result['dex_output_compressed_bytes']} (saved {dex_saved})"
+    )
     print(
         "Removed native libraries: "
         f"{result['removed_native_libraries']} files, "
