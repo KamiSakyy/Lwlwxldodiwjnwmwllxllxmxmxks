@@ -40,9 +40,11 @@ import java.util.regex.Pattern;
 public final class SyncEngine {
 
     private static final String TAG = "MailGramSync";
-    // вся почта без исключения: без фильтра по теме, со спамом и корзиной (includeSpamTrash)
-    private static final String QUERY = "";
-    private static final int MAX_MESSAGES = 1000;
+    // только наши письма + почта известных собеседников; спам тоже смотрим (includeSpamTrash)
+    private static final String QUERY_BASE = "subject:MailGram";
+    private static final int MAX_MESSAGES = 200;
+    /** Пауза после ошибки квоты Google, чтобы не добивать лимит запросами. */
+    private volatile long throttleUntil;
     public static final String SUBJECT_INVITE_MARKER = "X-MailGram-PublicKey:";
     public static final String PREKEY_MARKER = "X-MailGram-PreKey:";
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
@@ -108,6 +110,10 @@ public final class SyncEngine {
     public void syncNow() {
         if (disabled) return;
         if (!Auth.isSignedIn(app)) return;
+        if (System.currentTimeMillis() < throttleUntil) {
+            Log.d(TAG, "пауза после лимита Google, ждём");
+            return;
+        }
         if (!running.compareAndSet(false, true)) {
             Log.d(TAG, "синхронизация уже идёт");
             return;
@@ -119,6 +125,11 @@ public final class SyncEngine {
             } catch (Throwable e) {
                 // Ловим и ошибки: необработанный сбой в фоновом потоке закрывает всё приложение
                 Log.w(TAG, "синхронизация не удалась: " + e);
+                String em = String.valueOf(e.getMessage()).toLowerCase(Locale.US);
+                if (em.contains("quota") || em.contains("rate limit") || em.contains("ratelimit")
+                        || em.contains("429")) {
+                    throttleUntil = System.currentTimeMillis() + 60_000L;
+                }
                 com.mailgram.app.util.CrashLog.record(app, e);
                 r.ok = false;
                 r.error = describe(e);
@@ -150,6 +161,23 @@ public final class SyncEngine {
 
     // ---------------- синхронизация ----------------
 
+    /** Запрос Gmail: наши письма + вся почта известных собеседников (не более 8). */
+    private static String buildQuery(Store store) {
+        StringBuilder q = new StringBuilder(QUERY_BASE);
+        int peers = 0;
+        try {
+            for (Chat c : store.chats()) {
+                if (peers >= 8) break;
+                String p = c.peer == null ? "" : c.peer.trim();
+                if (p.isEmpty() || !p.contains("@")) continue;
+                q.append(" OR from:").append(p).append(" OR to:").append(p);
+                peers++;
+            }
+        } catch (Exception ignored) {
+        }
+        return q.toString();
+    }
+
     private void doSync(Result result) throws Exception {
         Store store = Store.get(app);
         String token = Auth.accessTokenFresh(app);
@@ -159,7 +187,7 @@ public final class SyncEngine {
             if (!me.isEmpty()) Auth.setAccount(app, me);
         }
 
-        List<String> ids = GmailApi.listMessageIds(token, QUERY, MAX_MESSAGES);
+        List<String> ids = GmailApi.listMessageIds(token, buildQuery(store), MAX_MESSAGES);
         List<String> unknown = new ArrayList<>();
         for (String id : ids) {
             if (!store.hasGmailId(id)) unknown.add(id);
@@ -222,15 +250,22 @@ public final class SyncEngine {
         return body;
     }
 
-    /** Обычное (не MailGram) письмо → чат «mail:<адрес>»: тема + начало текста. */
+    /** Обычное письмо: показываем только от известных собеседников — в их чате. */
     private Msg parseForeignMail(Store store, GmailApi.Mail mail, String me) {
         String from = Store.normalizeEmail(mail.from);
         String to = Store.normalizeEmail(mail.to);
         boolean outgoing = me != null && (from.isEmpty() || me.equalsIgnoreCase(from));
         String peer = outgoing ? to : from;
         if (peer.isEmpty()) return null;
-        String uid = "mail:" + peer.toLowerCase(Locale.US);
-        Chat chat = store.ensureChat(uid, peer, null);
+        // только существующие чаты: почта незнакомых адресов не показывается
+        Chat chat = null;
+        for (Chat c : store.chats()) {
+            if (c.peer != null && c.peer.equalsIgnoreCase(peer)) {
+                chat = c;
+                break;
+            }
+        }
+        if (chat == null) return null;
         Msg msg = new Msg();
         msg.mid = mail.id;
         msg.chat = chat.uid;
@@ -294,12 +329,28 @@ public final class SyncEngine {
                     Log.i(TAG, "пропускаю собственное письмо без известного ключа: " + mail.id);
                     return null;
                 }
-                // письмо с нашей темой, но не для нас / повреждено — отмечаем, но не падаем
+                // письмо с нашей темой, но не расшифровалось — показываем это в чате,
+                // а не теряем молча: пользователь должен видеть причину
                 String peer = Store.normalizeEmail(mail.from);
                 if (peer.isEmpty() || peer.equalsIgnoreCase(me)) peer = Store.normalizeEmail(mail.to);
                 Chat chat = store.ensureChat(chatUid, peer, null);
                 store.markDamaged(chat.uid);
-                throw se;
+                Msg bad = new Msg();
+                bad.mid = mail.id;
+                bad.chat = chat.uid;
+                bad.peer = peer;
+                bad.from = Store.normalizeEmail(mail.from);
+                bad.to = Store.normalizeEmail(mail.to);
+                bad.ts = mail.internalDate > 0 ? mail.internalDate : System.currentTimeMillis();
+                bad.outgoing = false;
+                bad.gmailId = mail.id;
+                bad.state = Msg.STATE_SENT;
+                bad.unread = mail.unread;
+                bad.type = "mail";
+                bad.text = "⚠️ Письмо MailGram не расшифровалось: ключи не совпадают "
+                        + "(собеседник переустановил приложение или версия устарела). "
+                        + "Попросите собеседника обновить MailGram и отправить сообщение заново.";
+                return bad;
             }
         } else {
             // не MailGram-письмо: показываем как обычную почту — «вся почта» в чатах
