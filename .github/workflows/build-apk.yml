@@ -82,9 +82,9 @@ jobs:
               --data-urlencode "code=$FAKE_CODE" \
               --data-urlencode "code_verifier=$VERIFIER" \
               --data-urlencode "grant_type=authorization_code" \
-              --data-urlencode "redirect_uri=$uri")
-            local short="${body:0:240}"
-            echo "::notice title=OAuth-проба [$label]::$short"
+              --data-urlencode "redirect_uri=$uri" | tr -d '\r\n')
+            local short="${body:0:400}"
+            echo "::notice title=OAuth-проба::[$label] $short"
             echo "[$label] $body"
           }
           : > oauth-check.log
