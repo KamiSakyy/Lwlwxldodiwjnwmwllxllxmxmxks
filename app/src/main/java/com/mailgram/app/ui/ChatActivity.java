@@ -1595,12 +1595,13 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         } catch (Exception ignored) {
         }
         final String number = Ui.safetyNumber(chat.peerPublic, myKey);
+        final String keyValue = myKey;
         final View modal = findViewById(R.id.encrypt_modal);
         if (modal == null) {
             showSafetyDialog();
             return;
         }
-        ((TextView) findViewById(R.id.encrypt_key_box)).setText(myKey);
+        ((TextView) findViewById(R.id.encrypt_key_box)).setText(keyValue);
         ((TextView) findViewById(R.id.encrypt_safety_box))
                 .setText(number.isEmpty() ? getString(R.string.peer_no_key) : number);
         ((TextView) findViewById(R.id.encrypt_delfan_box)).setText(chat.peer);
@@ -1610,7 +1611,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         modal.setOnClickListener(v -> modal.setVisibility(View.GONE));
         findViewById(R.id.encrypt_close).setOnClickListener(v -> modal.setVisibility(View.GONE));
         findViewById(R.id.encrypt_copy).setOnClickListener(v -> Ui.copy(this,
-                getString(R.string.safety_number), number.isEmpty() ? myKey : number));
+                getString(R.string.safety_number), number.isEmpty() ? keyValue : number));
     }
 
     /** Запасной вариант: тот же номер безопасности обычным диалогом. */

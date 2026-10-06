@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MailGram</string>
-    <string name="tagline">Мессенджер прямо в вашей почте Gmail</string>
-    <string name="login_subtitle">Сообщения шифруются на устройстве. Почта видит только шифротекст: ни серверов MailGram, ни ключей в коде.</string>
-    <string name="sign_in_google">Войти через Google</string>
+    <string name="tagline">Мессенджер в вашей почте</string>
+    <string name="login_subtitle">Сообщения шифруются на вашем устройстве. Переписку не читает никто, кроме вас.</string>
+    <string name="sign_in_google">Войти</string>
     <string name="login_setup">Настройка подключения</string>
-    <string name="login_footer">Сквозное шифрование · ECDH P-256 + ChaCha20-Poly1305 · открытый исходный код</string>
+    <string name="login_footer">Сквозное шифрование переписки</string>
     <string name="signing_in">Выполняется вход…</string>
     <string name="please_wait">Подождите…</string>
 
@@ -118,9 +118,9 @@
     <string name="setup_mode_loopback">Desktop + локальный порт (client ID можно менять без пересборки)</string>
     <string name="setup_baked_note">Client ID уже вшит в эту сборку (%1$s…), поэтому вход работает в один тап и ничего настраивать не нужно. Другой client ID — только через пересборку APK (параметр oauth_client_id).</string>
     <string name="setup_baked_saved">Client ID вшит в сборку — менять нечего</string>
-    <string name="login_check">Проверить подключение к Google</string>
+    <string name="login_check">Проверить вход</string>
     <string name="login_check_running">Проверяю настройки входа…</string>
-    <string name="login_fix_title">Нужна одна настройка в Google Cloud</string>
+    <string name="login_fix_title">Остался один шаг</string>
     <string name="login_fix_message">Google проверяет каждый клиент отдельно, и приложение опросило оба, чтобы выбрать рабочий.
 
 Путь 1 (без пересборки, 1 клик): у Android-клиента включите схему — Console → ваш Android-клиент → Advanced Settings → «Enable custom URI scheme» → Save. Google выключает её у новых Android-клиентов по умолчанию, пока она выключена, страница входа отвечает «Error 400: invalid_request».
@@ -128,7 +128,7 @@
 Путь 2 (тоже без пересборки): вставьте client_secret вашего Desktop-клиента в «Настройке подключения» — приложение уйдёт на локальный порт, который Google принимает без всяких переключателей.
 
 После изменения нажмите «Проверить снова».</string>
-    <string name="login_fix_open">Открыть настройки клиента</string>
+    <string name="login_fix_open">Открыть панель доступа</string>
     <string name="login_fix_recheck">Проверить снова</string>
     <string name="setup_probe_hint">Для клиента типа «Android» обязательно включите «Advanced Settings → Enable custom URI scheme» — по умолчанию Google её выключает и возвращает ошибку 400 invalid_request.</string>
     <string name="setup_probe_result">Проверка Google</string>
@@ -137,7 +137,7 @@
     <string name="setup_secret_saved">client_secret сохранён (зашифрован на устройстве)</string>
     <string name="setup_secret_cleared">client_secret удалён</string>
     <string name="setup_secret_needed">Для этого режима Google требует client_secret — вставьте его в поле выше (он останется только на устройстве).</string>
-    <string name="login_fix_own">Ввести client_secret</string>
+    <string name="login_fix_own">Ввести данные доступа</string>
     <string name="setup_save">Сохранить</string>
     <string name="setup_saved">Сохранено</string>
     <string name="setup_loopback_note">В режиме «Desktop» добавьте в Google Cloud Console redirect URI:\n%1$s</string>
@@ -145,8 +145,8 @@
     <string name="setup_scheme_mismatch">Внимание: client ID из настроек не совпадает со схемой, вшитой в сборку (%1$s). Google отклонит редирект — используйте тип клиента «Desktop + локальный порт» или пересоберите APK с этим client ID.</string>
     <string name="setup_open_console">Открыть консоль Google Cloud</string>
 
-    <string name="login_client_mismatch">Client ID не совпадает с тем, что «вшит» в этот APK (%1$s). Google отклонит вход: пересоберите APK в GitHub Actions с параметром oauth_client_id или вставьте тот ID, с которым собирали.</string>
-    <string name="error_no_client_id">Сначала укажите OAuth client ID в настройке подключения</string>
+    <string name="login_client_mismatch">Данные доступа не совпадают с этой сборкой приложения. Откройте «Настройка подключения» и укажите те же данные, с которыми приложение собирали.</string>
+    <string name="error_no_client_id">Сначала заполните «Настройка подключения»</string>
     <string name="error_open_console">Открыть консоль Google</string>
     <string name="error_reauth">Войти заново</string>
     <string name="error_copy">Скопировать ответ Google</string>
@@ -277,4 +277,5 @@
     <string name="invite_share">Мой публичный ключ MailGram: %1$s</string>
     <string name="verified_short">Ключ отмечен как проверенный</string>
     <string name="unverified_short">Ключ ещё не проверен</string>
+    <string name="login_ready">Подключение готово — можно входить</string>
 </resources>

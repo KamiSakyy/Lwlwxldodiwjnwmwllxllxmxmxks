@@ -5,7 +5,7 @@
     android:id="@+id/circle_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF000000">
+    android:background="@color/bg">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -37,31 +37,33 @@
         android:paddingEnd="14dp"
         android:paddingBottom="6dp"
         android:text="0:00"
-        android:textColor="#FFFFFFFF"
-        android:textSize="15sp"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/circle_cancel"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
         android:layout_gravity="bottom|start"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="56dp"
-        android:background="@drawable/bg_play_circle"
+        android:background="@drawable/bg_circle_btn_cancel"
         android:contentDescription="@string/cancel"
-        android:padding="15dp"
+        android:padding="14dp"
         android:src="@drawable/ic_close"
-        app:tint="#FFFFFFFF" />
+        app:tint="@color/text_primary" />
 
     <ImageView
         android:id="@+id/circle_stop"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="28dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/bg_circle_btn_stop"
         android:contentDescription="@string/attach_circle"
         android:padding="12dp"
-        android:src="@drawable/ic_stop_circle" />
+        android:src="@drawable/ic_stop_circle"
+        app:tint="@color/text_primary" />
 </FrameLayout>

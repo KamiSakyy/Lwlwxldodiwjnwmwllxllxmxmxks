@@ -64,11 +64,9 @@
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="26dp"
-            android:backgroundTint="@color/google_btn"
+            android:backgroundTint="@color/text_primary"
             android:text="@string/sign_in_google"
-            android:textColor="@color/google_btn_text"
-            app:icon="@drawable/ic_google"
-            app:iconTint="@null" />
+            android:textColor="@color/text_on_light" />
 
         <com.google.android.material.progressindicator.LinearProgressIndicator
             android:id="@+id/login_progress"
