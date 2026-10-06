@@ -54,8 +54,7 @@ public class SyncReceiveTest {
 
     private Context ctx;
     private String chatUid;
-    private volatile String servedId;
-    private volatile String servedBody;
+    private final java.util.Map<String, String> served = new java.util.LinkedHashMap<>();
 
     @Before
     public void setUp() throws Exception {
@@ -81,12 +80,18 @@ public class SyncReceiveTest {
 
         Http.testTransport = (method, url, bearer, body) -> {
             if (url.contains("/messages?")) {
-                return new Http.Response(200,
-                        "{\"messages\":[{\"id\":\"" + servedId + "\",\"threadId\":\"t1\"}]}");
+                StringBuilder ids = new StringBuilder();
+                for (String id : served.keySet()) {
+                    if (ids.length() > 0) ids.append(',');
+                    ids.append("{\"id\":\"").append(id).append("\",\"threadId\":\"t1\"}");
+                }
+                return new Http.Response(200, "{\"messages\":[" + ids + "]}");
             }
-            if (url.contains("/messages/" + servedId)) {
-                String data = b64url(servedBody.getBytes(StandardCharsets.UTF_8));
-                return new Http.Response(200, "{\"id\":\"" + servedId + "\",\"internalDate\":"
+            for (String id : served.keySet()) {
+                if (!url.contains("/messages/" + id)) continue;
+                String mailBody = served.get(id);
+                String data = b64url(mailBody.getBytes(StandardCharsets.UTF_8));
+                return new Http.Response(200, "{\"id\":\"" + id + "\",\"internalDate\":"
                         + System.currentTimeMillis() + ",\"labelIds\":[\"INBOX\",\"UNREAD\"],"
                         + "\"payload\":{\"mimeType\":\"text/plain\","
                         + "\"headers\":[{\"name\":\"Subject\",\"value\":\"MailGram " + chatUid + "\"},"
@@ -123,7 +128,13 @@ public class SyncReceiveTest {
         KeyAgreement ka = KeyAgreement.getInstance("ECDH");
         ka.init(priv);
         ka.doPhase(Identity.publicKeyFromRaw(peerRaw), true);
-        return ka.generateSecret();
+        // как в ядре: общий секрет нормируется до 32 байт (ведущие нули/лишний байт)
+        byte[] s = ka.generateSecret();
+        if (s.length == 32) return s;
+        byte[] out = new byte[32];
+        System.arraycopy(s, Math.max(0, s.length - 32), out, Math.max(0, 32 - s.length),
+                Math.min(32, s.length));
+        return out;
     }
 
     private static byte[] concat(byte[] a, byte[] b) {
@@ -176,8 +187,7 @@ public class SyncReceiveTest {
         env.put("n", B64.str(nonce));
         env.put("c", B64.str(ct));
 
-        servedId = "gm-v1";
-        servedBody = MailCrypto.toMailBody(env.toString());
+        served.put("gm-v1", MailCrypto.toMailBody(env.toString()));
 
         Msg m = awaitMessage(mid);
         assertNotNull("входящее v1 должно появиться в мессенджере", m);
@@ -237,12 +247,47 @@ public class SyncReceiveTest {
         env.put("nc", B64.str(nonce));
         env.put("c", B64.str(ct));
 
-        servedId = "gm-v2";
-        servedBody = MailCrypto.toMailBody(env.toString());
+        served.put("gm-v2", MailCrypto.toMailBody(env.toString()));
 
         Msg m = awaitMessage(mid);
         assertNotNull("входящее v2 (Double Ratchet) должно появиться в мессенджере", m);
         assertEquals("Привет от собеседника (v2 ratchet)", m.text);
         assertTrue(!m.outgoing);
+
+        // ---- второе сообщение в установленной сессии: следующий ключ цепочки ----
+        byte[] ckNext = NativeCrypto.hkdfSha256(ckSend, new byte[32],
+                B64.utf8("MailGram/DR/chain"), 32);
+        byte[] mk2 = NativeCrypto.hkdfSha256(ckNext, new byte[32],
+                B64.utf8("MailGram/DR/message"), 32);
+        String mid2 = UUID.randomUUID().toString();
+        long ts2 = ts + 5000;
+        JSONObject payload2 = new JSONObject();
+        payload2.put("t", "text");
+        payload2.put("b", "Второе сообщение (сессия установлена)");
+        String aadPrefix2 = "MailGram/DR|2|" + mid2 + "|" + ts2 + "|" + PEER + "|" + ME + "|" + chatUid;
+        String header2 = B64.str(ekRaw) + "|0|1";
+        byte[] aad2 = B64.utf8(aadPrefix2 + header2);
+        byte[] nonce2 = NativeCrypto.random(12);
+        byte[] ct2 = NativeCrypto.aeadEncrypt(mk2, nonce2, aad2, B64.utf8(payload2.toString()));
+        JSONObject env2 = new JSONObject();
+        env2.put("v", MailCrypto.VERSION_RATCHET);
+        env2.put("alg", MailCrypto.ALG_RATCHET);
+        env2.put("id", mid2);
+        env2.put("ts", ts2);
+        env2.put("chat", chatUid);
+        env2.put("from", PEER);
+        env2.put("to", ME);
+        env2.put("pk", B64.str(peerRaw));
+        env2.put("pre", B64.str(peerPreRaw));
+        env2.put("dh", B64.str(ekRaw));
+        env2.put("pn", 0L);
+        env2.put("n", 1L);
+        env2.put("nc", B64.str(nonce2));
+        env2.put("c", B64.str(ct2));
+        served.put("gm-v2b", MailCrypto.toMailBody(env2.toString()));
+
+        Msg m2 = awaitMessage(mid2);
+        assertNotNull("второе входящее v2 должно расшифроваться в готовой сессии", m2);
+        assertEquals("Второе сообщение (сессия установлена)", m2.text);
     }
 }
