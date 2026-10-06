@@ -307,11 +307,27 @@ public final class SyncEngine {
         MailCrypto.Envelope env = null;
         String chatUid = null;
 
-        if (subject.startsWith(MailCrypto.SUBJECT_PREFIX)) {
-            chatUid = subject.substring(MailCrypto.SUBJECT_PREFIX.length()).trim();
-            chatUid = chatUid.split("\\s+")[0];
+        if (MailCrypto.isMailGramSubject(subject)) {
+            // старая тема «MailGram <uid>»: uid берём, только если он похож на hex
+            chatUid = "";
+            try {
+                int idx = subject.toLowerCase(Locale.US).indexOf("mailgram");
+                String tail = subject.substring(idx + "mailgram".length()).trim();
+                if (!tail.isEmpty()) {
+                    String token = tail.split("\\s+")[0];
+                    if (token.matches("[0-9a-fA-F]{4,16}")) chatUid = token.toLowerCase(Locale.US);
+                }
+            } catch (Exception ignored) {
+            }
             String fromHeader = Store.normalizeEmail(mail.from);
             boolean headerOutgoing = (me != null && me.equalsIgnoreCase(fromHeader)) || fromHeader.isEmpty();
+            if (chatUid.isEmpty()) {
+                // тема без uid — идентификатор чата вычисляем из адресов
+                String peerForUid = headerOutgoing ? Store.normalizeEmail(mail.to) : fromHeader;
+                if (!peerForUid.isEmpty() && me != null && !me.isEmpty()) {
+                    chatUid = NativeCrypto.chatUid(me, peerForUid);
+                }
+            }
             byte[] peerKeyForOwnMessage = null;
             if (headerOutgoing) {
                 Chat known = store.chat(chatUid);
@@ -333,6 +349,7 @@ public final class SyncEngine {
                 // а не теряем молча: пользователь должен видеть причину
                 String peer = Store.normalizeEmail(mail.from);
                 if (peer.isEmpty() || peer.equalsIgnoreCase(me)) peer = Store.normalizeEmail(mail.to);
+                if (chatUid == null || chatUid.isEmpty()) return parseForeignMail(store, mail, me);
                 Chat chat = store.ensureChat(chatUid, peer, null);
                 store.markDamaged(chat.uid);
                 Msg bad = new Msg();
@@ -358,6 +375,10 @@ public final class SyncEngine {
         }
 
         if (env == null) {
+            if (chatUid == null || chatUid.isEmpty()) {
+                // тема похожа на нашу, но ни конверта, ни uid — покажем как обычное письмо
+                return parseForeignMail(store, mail, me);
+            }
             // возможно это приглашение (открытый ключ без шифротекста).
             // Тело письма у нас завёрнуто в base64, поэтому смотрим оба варианта.
             Matcher m = KEY_LINE.matcher(bodyWithDecoded(mail.body));
@@ -737,7 +758,7 @@ public final class SyncEngine {
                 String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid,
                         UUID.randomUUID().toString(), System.currentTimeMillis(),
                         B64.bytes(chat.peerPublic), payload.toString());
-                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
+                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT,
                         MailCrypto.toMailBody(envelope), null, null);
                 GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 notifyDirty();
@@ -789,16 +810,23 @@ public final class SyncEngine {
 
         pool.execute(() -> {
             try {
-                // отправка без ключей и шифрования: простой конверт v0 + свой открытый
-                // ключ в приложении (собеседник получит его автоматически)
                 byte[] myPub = null;
                 try {
                     myPub = com.mailgram.app.crypto.Identity.publicKeyRaw(app);
                 } catch (Exception ignored) {
                 }
-                String envelope = MailCrypto.sealPlain(me, chat.peer, chat.uid,
-                        local.mid, local.ts, myPub, payloadJson);
-                String subject = MailCrypto.SUBJECT_PREFIX + chat.uid;
+                String envelope;
+                if (chat.peerPublic != null && !chat.peerPublic.isEmpty()) {
+                    // ключ собеседника известен — шифруем, как раньше
+                    byte[] peerKey = B64.bytes(chat.peerPublic);
+                    if (peerKey.length != 65) throw new IllegalStateException("ключ собеседника повреждён");
+                    envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, local.mid, local.ts, peerKey, payloadJson);
+                } else {
+                    // ключа ещё нет — простой конверт, отправка не блокируется
+                    envelope = MailCrypto.sealPlain(me, chat.peer, chat.uid,
+                            local.mid, local.ts, myPub, payloadJson);
+                }
+                String subject = MailCrypto.SUBJECT;
                 String mime = Mime.build(me, chat.peer, subject, MailCrypto.toMailBody(envelope), local.mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
@@ -843,7 +871,7 @@ public final class SyncEngine {
                 JSONObject payload = retryPayload(msg);
                 String envelope = MailCrypto.sealMessage(app, me, chat.peer, chat.uid, msg.mid, msg.ts,
                         B64.bytes(chat.peerPublic), payload.toString());
-                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT_PREFIX + chat.uid,
+                String mime = Mime.build(me, chat.peer, MailCrypto.SUBJECT,
                         MailCrypto.toMailBody(envelope), msg.mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chat.uid, msg.mid, Msg.STATE_SENT, gmailId, null);
@@ -931,7 +959,7 @@ public final class SyncEngine {
                     body.append("(предключ для двойного крысиного шага — прямой секретности каждого сообщения)\r\n");
                 } catch (Exception ignored) {
                 }
-                String mime = Mime.build(me, peer, MailCrypto.SUBJECT_PREFIX + chatUid,
+                String mime = Mime.build(me, peer, MailCrypto.SUBJECT,
                         Mime.wrap(B64ToBody(body.toString())), mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chatUid, mid, Msg.STATE_SENT, gmailId, null);

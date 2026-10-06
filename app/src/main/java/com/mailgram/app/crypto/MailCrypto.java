@@ -32,6 +32,16 @@ import org.json.JSONObject;
 public final class MailCrypto {
 
     public static final String SUBJECT_PREFIX = "MailGram ";
+
+    /** Тема наших писем — ровно «MailGram», без идентификаторов. */
+    public static final String SUBJECT = "MailGram";
+
+    /** Умное распознавание темы: регистр, пробелы и мусор вокруг «mailgram» не важны. */
+    public static boolean isMailGramSubject(String subject) {
+        if (subject == null) return false;
+        String s = subject.toLowerCase(java.util.Locale.US).replaceAll("[^a-z0-9]", "");
+        return s.contains("mailgram");
+    }
     private static final String TAG = "MailGramCrypto";
     /** Статический конверт: ECDH(P-256) + HKDF + ChaCha20-Poly1305 (нужен только для старта сессии). */
     public static final int VERSION = 1;
