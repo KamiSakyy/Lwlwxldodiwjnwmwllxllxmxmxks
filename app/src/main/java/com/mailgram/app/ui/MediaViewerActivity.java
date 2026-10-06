@@ -63,7 +63,15 @@ public class MediaViewerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_media_viewer);
         Ui.applySystemBars(this, findViewById(R.id.viewer_toolbar), findViewById(R.id.viewer_bottom));
         handler = new android.os.Handler(getMainLooper());
+        try {
+            setUpScreen();
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
 
+    /** Настройка просмотрщика: заголовок, кнопки, показ изображения, видео или голосового. */
+    private void setUpScreen() {
         String chatUid = getIntent().getStringExtra(EXTRA_CHAT);
         String mid = getIntent().getStringExtra(EXTRA_MID);
         msg = Store.get(this).byMid(chatUid, mid);

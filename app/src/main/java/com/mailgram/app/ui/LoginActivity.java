@@ -47,7 +47,15 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Anim.springIn(findViewById(R.id.login_logo), 0.86f, 16f);
         Ui.applySystemBars(this, findViewById(R.id.login_root), findViewById(R.id.login_root));
+        try {
+            setUpScreen();
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
 
+    /** Настройка экрана входа: кнопка входа, состояние, сохранённый результат проверки. */
+    private void setUpScreen() {
         googleButton = findViewById(R.id.btn_google);
         progress = findViewById(R.id.login_progress);
         status = findViewById(R.id.login_status);

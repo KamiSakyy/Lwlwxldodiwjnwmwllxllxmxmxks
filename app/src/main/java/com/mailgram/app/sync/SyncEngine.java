@@ -110,8 +110,10 @@ public final class SyncEngine {
             Result r = new Result();
             try {
                 doSync(r);
-            } catch (Exception e) {
+            } catch (Throwable e) {
+                // Ловим и ошибки: необработанный сбой в фоновом потоке закрывает всё приложение
                 Log.w(TAG, "синхронизация не удалась: " + e);
+                com.mailgram.app.util.CrashLog.record(app, e);
                 r.ok = false;
                 r.error = describe(e);
                 r.cause = e;
@@ -122,13 +124,18 @@ public final class SyncEngine {
                 for (Listener l : listeners) {
                     try {
                         l.onSyncDone(r);
-                    } catch (Exception ignored) {
+                    } catch (Throwable ignored) {
+                        com.mailgram.app.util.CrashLog.record(app, ignored);
                     }
                 }
                 if (!r.incoming.isEmpty() && !App.isForeground()) {
                     for (Msg m : r.incoming) {
-                        Chat chat = Store.get(app).chat(m.chat);
-                        Notifier.showMessage(app, chat, m);
+                        try {
+                            Chat chat = Store.get(app).chat(m.chat);
+                            if (chat != null) Notifier.showMessage(app, chat, m);
+                        } catch (Throwable ignored) {
+                            com.mailgram.app.util.CrashLog.record(app, ignored);
+                        }
                     }
                 }
             }
@@ -824,7 +831,8 @@ public final class SyncEngine {
         for (Listener l : listeners) {
             try {
                 l.onSyncDone(new Result());
-            } catch (Exception ignored) {
+            } catch (Throwable ignored) {
+                com.mailgram.app.util.CrashLog.record(app, ignored);
             }
         }
     }

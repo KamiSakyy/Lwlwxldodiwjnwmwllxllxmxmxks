@@ -61,6 +61,16 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         Ui.applySystemBars(this, findViewById(R.id.main_header), findViewById(R.id.bottom_nav));
         Ui.padBottomForBars(findViewById(R.id.recycler_chats));
 
+        try {
+            setUpChatsList();
+        } catch (Throwable error) {
+            // Сбой настройки списка не должен закрывать приложение.
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
+
+    /** Настройка списка диалогов: шапка, поиск, фильтры, список, нижняя панель. */
+    private void setUpChatsList() {
         list = findViewById(R.id.recycler_chats);
         emptyView = findViewById(R.id.empty_view);
         syncBar = findViewById(R.id.sync_bar);
@@ -126,8 +136,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             }
         });
 
-        SyncEngine.get(this).addListener(this);
-        askNotificationPermission();
+        Ui.safely(this, () -> SyncEngine.get(this).addListener(this));
+        Ui.safely(this, this::askNotificationPermission);
         if (Prefs.backgroundSync(this)) {
             SyncService.start(this);
         }
@@ -299,9 +309,9 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             startActivity(new Intent(this, LockActivity.class));
             return;
         }
-        refresh();
-        SyncEngine.get(this).syncNow();
-        startPolling();
+        Ui.safely(this, this::refresh);
+        Ui.safely(this, () -> SyncEngine.get(this).syncNow());
+        Ui.safely(this, this::startPolling);
     }
 
     @Override
@@ -321,7 +331,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         poller = new Runnable() {
             @Override
             public void run() {
-                SyncEngine.get(MainActivity.this).syncNow();
+                Ui.safely(MainActivity.this, () -> SyncEngine.get(MainActivity.this).syncNow());
                 handler.postDelayed(this, 10000);
             }
         };
@@ -602,7 +612,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     @Override
     public void onSyncDone(final SyncEngine.Result result) {
-        handler.post(() -> {
+        handler.post(() -> Ui.safely(this, () -> {
             syncBar.setVisibility(View.GONE);
             refresh();
             if (result.ok) return;
@@ -613,7 +623,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
                 lastErrorShown = info.title;
                 showGoogleError(info);
             }
-        });
+        }));
     }
 
     /** Показывает, что именно ответил Google, и даёт кнопку для решения. */

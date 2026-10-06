@@ -37,6 +37,15 @@ public class LockActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lock);
         Ui.applyWallpaper(this, R.id.lock_root);
         Ui.applySystemBars(this, findViewById(R.id.lock_root), findViewById(R.id.lock_root));
+        try {
+            setUpScreen();
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
+
+    /** Настройка экрана блокировки: точки, заголовок, клавиатура. */
+    private void setUpScreen() {
         dots = findViewById(R.id.lock_dots);
         title = findViewById(R.id.lock_title);
         com.mailgram.app.ui.AvatarView avatar = findViewById(R.id.lock_avatar);

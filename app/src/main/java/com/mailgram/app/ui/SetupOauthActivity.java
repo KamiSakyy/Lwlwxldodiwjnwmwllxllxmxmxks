@@ -39,7 +39,15 @@ public class SetupOauthActivity extends AppCompatActivity {
         Ui.applySystemBars(this, findViewById(R.id.setup_toolbar),
                 findViewById(R.id.setup_root));
         Ui.padBottomForBars(findViewById(R.id.setup_root));
+        try {
+            setUpScreen();
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
 
+    /** Настройка экрана подключения: поля клиента, подсказки, копирование. */
+    private void setUpScreen() {
         MaterialToolbar toolbar = findViewById(R.id.setup_toolbar);
         toolbar.setNavigationOnClickListener(v -> finish());
 

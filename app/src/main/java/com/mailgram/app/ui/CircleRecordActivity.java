@@ -66,6 +66,15 @@ public class CircleRecordActivity extends Activity implements SurfaceHolder.Call
         Ui.applySystemBars(this, null, null);
         Ui.marginTopForBars(findViewById(R.id.circle_timer), 0);
         Ui.liftBottomForBars(findViewById(R.id.circle_controls), 0);
+        try {
+            setUpScreen();
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
+
+    /** Настройка экрана кружка: кадр, кнопки, файл записи. */
+    private void setUpScreen() {
         preview = findViewById(R.id.circle_preview);
         mask = findViewById(R.id.circle_mask);
         timer = findViewById(R.id.circle_timer);

@@ -56,16 +56,16 @@ jobs:
           path: |
             /usr/local/lib/android/sdk/ndk/28.2.13676358
             /usr/local/lib/android/sdk/cmake/3.22.1
-            /usr/local/lib/android/sdk/platforms/android-37
+            /usr/local/lib/android/sdk/platforms/android-36
             /usr/local/lib/android/sdk/build-tools/36.0.0
-          key: android-37-ndk-28.2.13676358-cmake-3.22.1-v1
+          key: android-36-ndk-28.2.13676358-cmake-3.22.1-v2
 
       - name: Установка недостающего (только первый раз)
         if: steps.sdk.outputs.cache-hit != 'true'
         run: |
           yes | sdkmanager --sdk_root="$ANDROID_HOME" --licenses > /dev/null 2>&1 || true
           sdkmanager --sdk_root="$ANDROID_HOME" --install \
-            "platforms;android-37" "build-tools;36.0.0" "ndk;28.2.13676358" "cmake;3.22.1" | tail -3
+            "platforms;android-36" "build-tools;36.0.0" "ndk;28.2.13676358" "cmake;3.22.1" | tail -3
 
       - name: Сборка APK
         env:
@@ -106,15 +106,42 @@ jobs:
             exit 1
           fi
 
-      - name: Отчёт и публикация в релиз
+      - name: Диагностика сборки (что упаковщик вырезал)
+        if: always()
+        run: |
+          if [ -f build.log ]; then
+            grep -E "R8|Missing class|Warning|warning: |shrink" build.log | head -30 | while IFS= read -r line; do
+              echo "::warning title=Упаковщик::$line"
+            done
+          fi
+          M=app/build/outputs/mapping/release
+          if [ -d "$M" ]; then
+            echo "::warning title=Отчёты::$(( ls $M ) | tr '\n' ' ')"
+            if [ -f "$M/resources.txt" ]; then
+              echo "::warning title=Вырезанные ресурсы::$(grep -c . "$M/resources.txt") строк"
+            fi
+          fi
+          AAPT2=$(ls "$ANDROID_HOME"/build-tools/*/aapt2 2>/dev/null | head -1)
+          APK=app/build/outputs/apk/release/app-release.apk
+          if [ -n "$AAPT2" ] && [ -f "$APK" ]; then
+            "$AAPT2" dump resources "$APK" > res.txt 2>/dev/null || true
+            for name in bg_wallpaper_black bg_wallpaper_indigo bg_chat_wallpaper bg_bubble_out bg_bubble_in \
+                        bg_send bg_nav_bar bg_search_bar bg_drawer bg_icon_circle_soft bg_context_menu \
+                        ic_lock ic_send ic_attach ic_mic ic_emoji ic_menu ic_nav_chats; do
+              grep -q "drawable/$name\b" res.txt || echo "::error title=Пропал ресурс::$name"
+            done
+            echo "::warning title=Ресурсов в APK::$(grep -c '^  resource' res.txt)"
+          fi
+        continue-on-error: true
+
+      - name: Публикация в релиз
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          bash tools/ci-report.sh app/build/outputs/apk/release/app-release.apk build-report.md || true
           gh release view apk-latest > /dev/null 2>&1 || \
             gh release create apk-latest --title "MailGram — APK (последняя сборка)" \
               --notes "Автоматическая сборка" --prerelease
-          gh release edit apk-latest --notes-file build-report.md
+          gh release edit apk-latest --notes "MailGram $(date -u +%Y-%m-%d)"
           gh release upload apk-latest app/build/outputs/apk/release/app-release.apk --clobber
           echo "::notice title=Готово::https://github.com/${GITHUB_REPOSITORY}/releases/tag/apk-latest"
 

@@ -130,14 +130,33 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         uid = getIntent().getStringExtra(EXTRA_CHAT_UID);
+        if (uid == null) uid = "";
         chat = Store.get(this).chat(uid);
-        if (chat == null || Auth.account(this).isEmpty()) {
+        if (chat == null) {
+            // Диалога нет в хранилище: не закрываем экран, а показываем пустой диалог.
+            // Мгновенное закрытие окна человек воспринимает как сбой приложения.
+            chat = new Chat();
+            chat.uid = uid;
+        }
+        if (Auth.account(this).isEmpty()) {
+            startActivity(new Intent(this, LoginActivity.class));
             finish();
             return;
         }
         setContentView(R.layout.activity_chat);
         Ui.applyWallpaper(this, R.id.chat_root);
         Ui.applySystemBars(this, findViewById(R.id.chat_header), findViewById(R.id.input_bar));
+        try {
+            setUpScreen();
+        } catch (Throwable error) {
+            // Экран диалога не должен закрываться из-за неожиданного сбоя:
+            // причина сохраняется в закрытый файл, окно остаётся открытым.
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
+
+    /** Вся настройка экрана диалога: список сообщений, панели, поле ввода. */
+    private void setUpScreen() {
         Ui.padTopForBars(findViewById(R.id.profile_header));
         Ui.padBottomForBars(findViewById(R.id.profile_scroll));
         Ui.padBottomForBars(findViewById(R.id.chat_sheet_panel));
@@ -430,14 +449,14 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     @Override
     protected void onResume() {
         super.onResume();
-        markRead();
-        refresh();
-        SyncEngine.get(this).syncNow();
+        Ui.safely(this, this::markRead);
+        Ui.safely(this, this::refresh);
+        Ui.safely(this, () -> SyncEngine.get(this).syncNow());
         if (poller != null) handler.removeCallbacks(poller);
         poller = new Runnable() {
             @Override
             public void run() {
-                SyncEngine.get(ChatActivity.this).syncNow();
+                Ui.safely(ChatActivity.this, () -> SyncEngine.get(ChatActivity.this).syncNow());
                 handler.postDelayed(this, 4000);
             }
         };
@@ -449,8 +468,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     protected void onPause() {
         super.onPause();
         if (poller != null) handler.removeCallbacks(poller);
-        saveDraft();
-        stopPlayback();
+        Ui.safely(this, this::saveDraft);
+        Ui.safely(this, this::stopPlayback);
     }
 
     @Override
@@ -785,7 +804,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     @Override
     public void onSyncDone(SyncEngine.Result result) {
-        handler.post(this::refresh);
+        handler.post(() -> Ui.safely(this, this::refresh));
     }
 
     /** Шапка уезжает вверх при листании вниз и возвращается при листании вверх — как в Telegram. */

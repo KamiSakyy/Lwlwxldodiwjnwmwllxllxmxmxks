@@ -54,8 +54,13 @@ public final class Alarms {
     public static class SyncAlarmReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (!Auth.isSignedIn(context) || !Prefs.backgroundSync(context)) return;
-            SyncEngine.get(context).syncNow();
+            try {
+                if (!Auth.isSignedIn(context) || !Prefs.backgroundSync(context)) return;
+                SyncEngine.get(context).syncNow();
+            } catch (Throwable error) {
+                // Сбой в приёмнике будильника закрывает всё приложение — не допускаем этого
+                com.mailgram.app.util.CrashLog.record(context, error);
+            }
         }
     }
 
@@ -63,13 +68,18 @@ public final class Alarms {
     public static class BootReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent == null) return;
-            String action = intent.getAction();
-            if (Intent.ACTION_BOOT_COMPLETED.equals(action) || Intent.ACTION_MY_PACKAGE_REPLACED.equals(action)) {
-                if (Auth.isSignedIn(context) && Prefs.backgroundSync(context)) {
-                    SyncService.start(context);
-                    schedule(context, 15);
+            try {
+                if (intent == null) return;
+                String action = intent.getAction();
+                if (Intent.ACTION_BOOT_COMPLETED.equals(action)
+                        || Intent.ACTION_MY_PACKAGE_REPLACED.equals(action)) {
+                    if (Auth.isSignedIn(context) && Prefs.backgroundSync(context)) {
+                        SyncService.start(context);
+                        schedule(context, 15);
+                    }
                 }
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(context, error);
             }
         }
     }

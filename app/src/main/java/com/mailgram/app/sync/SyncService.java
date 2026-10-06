@@ -51,22 +51,29 @@ public class SyncService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null && ACTION_STOP.equals(intent.getAction())) {
+        try {
+            if (intent != null && ACTION_STOP.equals(intent.getAction())) {
+                stopSelf();
+                return START_NOT_STICKY;
+            }
+            if (!Auth.isSignedIn(this)) {
+                stopSelf();
+                return START_NOT_STICKY;
+            }
+            Notifier.ensureChannels(this);
+            if (!goForeground()) {
+                stopSelf();
+                return START_NOT_STICKY;
+            }
+            SyncEngine.get(this).addListener(listener);
+            schedule();
+            return START_STICKY;
+        } catch (Throwable error) {
+            // Служба не должна ронять приложение: пишем причину и тихо останавливаемся.
+            com.mailgram.app.util.CrashLog.record(this, error);
             stopSelf();
             return START_NOT_STICKY;
         }
-        if (!Auth.isSignedIn(this)) {
-            stopSelf();
-            return START_NOT_STICKY;
-        }
-        Notifier.ensureChannels(this);
-        if (!goForeground()) {
-            stopSelf();
-            return START_NOT_STICKY;
-        }
-        SyncEngine.get(this).addListener(listener);
-        schedule();
-        return START_STICKY;
     }
 
     private boolean goForeground() {

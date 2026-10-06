@@ -40,6 +40,17 @@ public class SettingsActivity extends AppCompatActivity {
         Ui.applySystemBars(this, findViewById(R.id.settings_toolbar),
                 findViewById(R.id.settings_content));
 
+        try {
+            setUpRows();
+        } catch (Throwable error) {
+            // Любая неожиданность на экране настроек не должна закрывать приложение:
+            // причина сохраняется в закрытый файл, экран остаётся открытым.
+            com.mailgram.app.util.CrashLog.record(this, error);
+        }
+    }
+
+    /** Наполнение экрана настроек: строки, переключатели, разделы. */
+    private void setUpRows() {
         MaterialToolbar toolbar = findViewById(R.id.settings_toolbar);
         toolbar.setNavigationOnClickListener(v -> finish());
 
