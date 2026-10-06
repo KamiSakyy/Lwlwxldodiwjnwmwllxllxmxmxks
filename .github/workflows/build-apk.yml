@@ -119,8 +119,8 @@ jobs:
             echo "::notice title=Token endpoint [$label]::$(printf '%s' "$body" | head -c 220)"
           }
 
-          PRIMARY_ID=$(grep -oP "def androidClientId = .*?defaultAndroidClientId" app/build.gradle > /dev/null 2>&1 && \
-            grep -oP "def defaultAndroidClientId = '\\K[^']+" app/build.gradle || true)
+          PRIMARY_ID=$(grep -oP "def default(A|D)ndroidClientId = '\\K[^']+" app/build.gradle | head -1 || true)
+          MAIN_URI=$([ "$PRIMARY_ID" = "$ANDROID_ID" ] && echo "com.googleusercontent.apps.${ANDROID_ID%%%.apps.googleusercontent.com}:/oauth2redirect" || echo "http://127.0.0.1:7717/oauth2redirect")
           MAIN_URI=$([ "$PRIMARY_ID" = "$ANDROID_ID" ] && echo "com.googleusercontent.apps.${ANDROID_ID%%%.apps.googleusercontent.com}:/oauth2redirect" || echo "http://127.0.0.1:7717/oauth2redirect")
           page "ПУТЬ ПРИЛОЖЕНИЯ (основной клиент)" "$PRIMARY_ID" "$MAIN_URI"
           page "A. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
