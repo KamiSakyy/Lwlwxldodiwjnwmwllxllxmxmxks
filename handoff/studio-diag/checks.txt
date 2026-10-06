@@ -1,4 +1,4 @@
---- full (22700742 байт)
+--- full (22700782 байт)
 OK    full: подпись
 OK    full: minSdk 28
 OK    full: targetSdk 36
@@ -20,7 +20,7 @@ OK    fast: Vue-фронт
 OK    fast: server.js
 OK    fast: нативный мост
 OK    fast: libnode.so на месте
---- lite (198628 байт)
+--- lite (198668 байт)
 OK    lite: подпись
 OK    lite: minSdk 28
 OK    lite: targetSdk 36

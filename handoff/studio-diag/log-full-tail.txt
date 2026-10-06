@@ -25,20 +25,20 @@ bundleWebAssets: Vue — копирую /home/runner/work/Lwlwxldodiwjnwmwllxllx
 > Task :studio:mergeReleaseJniLibFolders
 > Task :studio:checkReleaseDuplicateClasses
 > Task :studio:generateReleaseResources
-> Task :studio:mergeReleaseNativeLibs
 > Task :studio:packageReleaseResources
 > Task :studio:processReleaseNavigationResources
-> Task :studio:stripReleaseDebugSymbols
+> Task :studio:mergeReleaseNativeLibs
 > Task :studio:javaPreCompileRelease
 > Task :studio:mergeReleaseArtProfile
 > Task :studio:checkReleaseAarMetadata
 > Task :studio:mapReleaseSourceSetPaths
-> Task :studio:extractReleaseNativeSymbolTables
 > Task :studio:parseReleaseLocalResources
+> Task :studio:stripReleaseDebugSymbols
 > Task :studio:compileReleaseNavigationResources
-> Task :studio:mergeReleaseNativeDebugMetadata
 > Task :studio:generateReleaseRFile
+> Task :studio:extractReleaseNativeSymbolTables
 > Task :studio:compileReleaseKotlin NO-SOURCE
+> Task :studio:mergeReleaseNativeDebugMetadata
 > Task :studio:mergeReleaseResources
 
 > Task :studio:compileReleaseJavaWithJavac
@@ -51,6 +51,7 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :studio:processReleaseManifest
 > Task :studio:extractProguardFiles
 > Task :studio:processReleaseJavaRes NO-SOURCE
+> Task :studio:processReleaseManifestForPackage
 > Task :studio:mergeReleaseStartupProfile
 > Task :studio:generateReleaseAssets UP-TO-DATE
 > Task :studio:mergeReleaseAssets
@@ -58,14 +59,13 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :studio:extractReleaseVersionControlInfo
 > Task :studio:collectReleaseDependencies
 > Task :studio:mergeReleaseJavaResource
+> Task :studio:processReleaseResources
 > Task :studio:sdkReleaseDependencyData
+> Task :studio:expandReleaseArtProfileWildcards
+> Task :studio:mergeReleaseGeneratedProguardFiles
 > Task :studio:validateSigningRelease
 > Task :studio:writeReleaseAppMetadata
 > Task :studio:writeReleaseSigningConfigVersions
-> Task :studio:processReleaseManifestForPackage
-> Task :studio:processReleaseResources
-> Task :studio:expandReleaseArtProfileWildcards
-> Task :studio:mergeReleaseGeneratedProguardFiles
 > Task :studio:minifyReleaseWithR8
 > Task :studio:compileReleaseArtProfile
 > Task :studio:convertShrunkResourcesToBinaryRelease
@@ -82,6 +82,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 45s
+BUILD SUCCESSFUL in 59s
 46 actionable tasks: 46 executed
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html
