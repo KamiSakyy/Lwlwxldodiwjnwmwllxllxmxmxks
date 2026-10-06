@@ -1,0 +1,127 @@
+name: VK APK static review
+
+on:
+  push:
+    branches:
+      - arena/3f6a741b-lwlwxldodiwjnwmwllxllxmxmxks
+    paths:
+      - .github/workflows/vk-apk-static-review.yml
+      - handoff/analyze_decompiled.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  decompile-and-review:
+    name: Download, verify, and inspect VK 8.197
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      APK_PATH: ${{ runner.temp }}/com.vkontakte.android_58503_rs.apk
+      JADX_OUT: ${{ runner.temp }}/vk-jadx
+      TRASHBOX_APK_URL: https://trashbox.ru/files30/2659901/com.vkontakte.android_58503_rs.apk/
+      EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
+
+    steps:
+      - name: Checkout analyzer only
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: handoff/analyze_decompiled.py
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Set up Java for JADX
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Download APK from Trashbox
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --retry-delay 2 --max-time 900 \
+            --user-agent 'Mozilla/5.0 (compatible; GitHubActions APK static review)' \
+            "$TRASHBOX_APK_URL" \
+            --output "$APK_PATH"
+          size_bytes="$(stat -c '%s' "$APK_PATH")"
+          if (( size_bytes < 100000000 || size_bytes > 500000000 )); then
+            echo "Unexpected APK size: $size_bytes bytes" >&2
+            exit 1
+          fi
+          python3 - "$APK_PATH" <<'PY'
+          import sys
+          from pathlib import Path
+          path = Path(sys.argv[1])
+          with path.open('rb') as stream:
+              if stream.read(4) != b'PK\x03\x04':
+                  raise SystemExit('Downloaded file is not an APK/ZIP container')
+          print(f"Downloaded {path.stat().st_size} bytes")
+          PY
+          sha256sum "$APK_PATH"
+
+      - name: Verify APK signature
+        shell: bash
+        run: |
+          set -euo pipefail
+          sdk_root="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
+          if [[ -z "$sdk_root" || ! -d "$sdk_root/build-tools" ]]; then
+            echo 'Android build-tools are unavailable on this runner; refusing to skip signature verification.' >&2
+            exit 1
+          fi
+          apksigner="$(find "$sdk_root/build-tools" -type f -name apksigner -print | sort -V | tail -n 1)"
+          if [[ -z "$apksigner" ]]; then
+            echo 'apksigner was not found in Android build-tools.' >&2
+            exit 1
+          fi
+          "$apksigner" verify --verbose --print-certs "$APK_PATH" > "$RUNNER_TEMP/apk-signature.txt"
+          grep -E 'Verified using|Signer #1 certificate (DN|SHA-1 digest|SHA-256 digest)' "$RUNNER_TEMP/apk-signature.txt" || true
+          actual_sha1="$(awk -F ': ' '/Signer #1 certificate SHA-1 digest:/ { print tolower($2); exit }' "$RUNNER_TEMP/apk-signature.txt" | tr -d ':[:space:]')"
+          if [[ "$actual_sha1" != "$EXPECTED_SIGNER_SHA1" ]]; then
+            echo "Signer mismatch; expected VK certificate SHA-1 $EXPECTED_SIGNER_SHA1, received ${actual_sha1:-none}." >&2
+            exit 1
+          fi
+
+      - name: Download JADX
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --max-time 180 \
+            'https://github.com/skylot/jadx/releases/download/v1.5.1/jadx-1.5.1.zip' \
+            --output "$RUNNER_TEMP/jadx.zip"
+          mkdir -p "$RUNNER_TEMP/jadx"
+          unzip -q "$RUNNER_TEMP/jadx.zip" -d "$RUNNER_TEMP/jadx"
+          test -x "$RUNNER_TEMP/jadx/bin/jadx"
+          "$RUNNER_TEMP/jadx/bin/jadx" --version
+
+      - name: Decompile to temporary runner storage
+        shell: bash
+        env:
+          JAVA_OPTS: -Xmx5g
+        run: |
+          set -euo pipefail
+          mkdir -p "$JADX_OUT"
+          if ! "$RUNNER_TEMP/jadx/bin/jadx" \
+            --threads-count 2 \
+            --output-dir "$JADX_OUT" \
+            "$APK_PATH" > "$RUNNER_TEMP/jadx.log" 2>&1; then
+            tail -n 80 "$RUNNER_TEMP/jadx.log" >&2
+            exit 1
+          fi
+          echo 'JADX completed; source remains only in the ephemeral runner.'
+          find "$JADX_OUT" -type f -name '*.java' | wc -l | awk '{print "Decompiled Java files: " $1}'
+
+      - name: Generate metadata-only handoff summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 handoff/analyze_decompiled.py "$JADX_OUT" "$APK_PATH"
+
+      - name: Remove temporary APK and decompiled tree
+        if: always()
+        shell: bash
+        run: |
+          rm -rf "$APK_PATH" "$JADX_OUT" "$RUNNER_TEMP/jadx" "$RUNNER_TEMP/jadx.zip" \
+            "$RUNNER_TEMP/jadx.log" "$RUNNER_TEMP/apk-signature.txt"
