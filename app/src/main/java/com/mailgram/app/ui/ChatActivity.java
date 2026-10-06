@@ -366,7 +366,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         bannerAction.setOnClickListener(Ui.tap(v -> {
             // в открытом режиме баннер не про «ключ», а про режим: показываем пояснение
             if (encryptionOn()) inviteDialog();
-            else Ui.toast(this, R.string.chat_mode_plain);
+            else Ui.toast(this, getString(R.string.chat_mode_plain));
         }));
         Ui.safely(this, this::restoreDraft);
         SyncEngine.get(this).addListener(this);
