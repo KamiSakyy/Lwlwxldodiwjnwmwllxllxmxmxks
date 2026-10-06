@@ -163,11 +163,16 @@ jobs:
           import re, pathlib
           p = pathlib.Path('AndroidManifest.xml')
           s = p.read_text()
-          add = '''        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false" />
-          <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
-          <meta-data android:name="firebase_analytics_collection_enabled" android:value="false" />
-          <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
-'''
+          flags = [
+              ('firebase_messaging_auto_init_enabled', 'false'),
+              ('firebase_analytics_collection_deactivated', 'true'),
+              ('firebase_analytics_collection_enabled', 'false'),
+              ('google_analytics_adid_collection_enabled', 'false'),
+          ]
+          add = "\n".join(
+              '        <meta-data android:name="%s" android:value="%s" />' % (n, v)
+              for n, v in flags
+          ) + "\n"
           if 'firebase_messaging_auto_init_enabled' not in s:
               # кладём в <application ...> сразу после открывающего тега
               m = re.search(r'<application\b[^>]*>', s)
