@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dr {
-    public final String a;
-    public final zq b;
-    public final cr c;
-    public final String d;
+    public String a;
+    public zq b;
+    public cr c;
+    public String d;
 
     public dr(String str, zq zqVar, cr crVar, String str2) {
         this.a = str;

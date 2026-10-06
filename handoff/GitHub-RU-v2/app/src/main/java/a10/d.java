@@ -144,4 +144,5 @@ public final class d implements p {
         }
     }
 
+    public Object b(Object, Object) { return null; }
 }

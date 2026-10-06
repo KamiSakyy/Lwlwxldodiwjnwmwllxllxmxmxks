@@ -2,9 +2,9 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 extends y1 {
-    public final String a;
-    public final String b;
-    public final long c;
+    public String a;
+    public String b;
+    public long c;
 
     public u0(long j, String str, String str2) {
         this.a = str;

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q8 implements aaShadow.v0 {
-    public final v8 a;
+    public v8 a;
 
     public q8(v8 v8Var) {
         this.a = v8Var;

@@ -6,19 +6,19 @@ import java.util.ArrayList;
 public final class s0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayList f7308a;
+    public ArrayList f7308a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f7309b;
+    public boolean f7309b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final ArrayList f7310c;
+    public ArrayList f7310c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ArrayList f7311d;
+    public ArrayList f7311d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f7312e;
+    public boolean f7312e;
 
     public s0(ArrayList arrayList, boolean z10, ArrayList arrayList2, ArrayList arrayList3, boolean z11) {
         this.f7308a = arrayList;

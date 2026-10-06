@@ -21,19 +21,19 @@ import zj.b;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class GitHubDatabase_Impl extends GitHubDatabase {
-    public final p A;
-    public final p B;
-    public final p p;
-    public final p q;
-    public final p r;
-    public final p s;
-    public final p t;
-    public final p u;
-    public final p v;
-    public final p w;
-    public final p x;
-    public final p y;
-    public final p z;
+    public p A;
+    public p B;
+    public p p;
+    public p q;
+    public p r;
+    public p s;
+    public p t;
+    public p u;
+    public p v;
+    public p w;
+    public p x;
+    public p y;
+    public p z;
 
     public GitHubDatabase_Impl() {
         final int i = 0;

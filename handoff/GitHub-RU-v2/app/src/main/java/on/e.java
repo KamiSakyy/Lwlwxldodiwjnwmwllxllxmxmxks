@@ -33,5 +33,5 @@ public interface e {
     y71.i o(List list, g gVar, Integer num);
 
     y71.i p(String str, String str2, com.github.rudroid.common.d dVar, String str3, String str4, Integer num, String str5);
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

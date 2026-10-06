@@ -7,9 +7,9 @@ import x61.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n extends l {
-    public final kotlinx.serialization.json.c j;
-    public final List k;
-    public final int l;
+    public kotlinx.serialization.json.c j;
+    public List k;
+    public int l;
     public int m;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

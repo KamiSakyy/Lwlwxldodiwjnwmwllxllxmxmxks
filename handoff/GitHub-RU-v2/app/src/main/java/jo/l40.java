@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l40 {
-    public final String a;
-    public final String b;
-    public final ct.u c;
+    public String a;
+    public String b;
+    public ct.u c;
 
     public l40(String str, String str2, ct.u uVar) {
         this.a = str;

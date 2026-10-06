@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class un implements aaShadow.n0 {
     public static final on Companion = new on();
-    public final String r;
-    public final m10.py s;
-    public final aa1.b t;
-    public final aa1.b u;
-    public final aa1.b v;
-    public final String w;
+    public String r;
+    public m10.py s;
+    public aa1.b t;
+    public aa1.b u;
+    public aa1.b v;
+    public String w;
 
     public un(String str, m10.py pyVar, aa1.b bVar, aa1.b bVar2, aa1.b bVar3, String str2) {
         this.r = str;

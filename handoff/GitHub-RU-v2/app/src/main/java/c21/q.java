@@ -6,7 +6,7 @@ import android.os.Parcel;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements IInterface {
-    public final IBinder f;
+    public IBinder f;
 
     public q(IBinder iBinder) {
         this.f = iBinder;

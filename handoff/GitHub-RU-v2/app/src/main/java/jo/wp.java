@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wp implements aaShadow.v0 {
-    public final yp a;
-    public final String b;
-    public final String c;
+    public yp a;
+    public String b;
+    public String c;
 
     public wp(yp ypVar, String str, String str2) {
         this.a = ypVar;

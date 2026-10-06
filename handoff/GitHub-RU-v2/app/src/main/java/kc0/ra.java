@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ra {
-    public final String a;
-    public final gn0.jr b;
-    public final qa c;
-    public final boolean d;
-    public final String e;
+    public String a;
+    public gn0.jr b;
+    public qa c;
+    public boolean d;
+    public String e;
 
     public ra(String str, gn0.jr jrVar, qa qaVar, boolean z, String str2) {
         this.a = str;

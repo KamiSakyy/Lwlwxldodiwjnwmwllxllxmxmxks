@@ -4,21 +4,21 @@ import m10.fz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y7 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final Integer c;
-    public final Integer d;
-    public final Integer e;
-    public final v7 f;
-    public final x7 g;
-    public final String h;
-    public final fz i;
-    public final String j;
-    public final ar.c k;
-    public final pv.c l;
-    public final mx.c m;
-    public final pu.a n;
-    public final ju.a o;
+    public String a;
+    public String b;
+    public Integer c;
+    public Integer d;
+    public Integer e;
+    public v7 f;
+    public x7 g;
+    public String h;
+    public fz i;
+    public String j;
+    public ar.c k;
+    public pv.c l;
+    public mx.c m;
+    public pu.a n;
+    public ju.a o;
 
     public y7(String str, String str2, Integer num, Integer num2, Integer num3, v7 v7Var, x7 x7Var, String str3, fz fzVar, String str4, ar.c cVar, pv.c cVar2, mx.c cVar3, pu.a aVar, ju.a aVar2) {
         this.a = str;

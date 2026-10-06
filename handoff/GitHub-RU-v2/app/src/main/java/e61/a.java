@@ -7,7 +7,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements j {
-    public final Bundle a;
+    public Bundle a;
 
     public a(Context context) {
         k.g(context, "appContext");

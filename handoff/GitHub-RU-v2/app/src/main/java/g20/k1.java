@@ -2,8 +2,8 @@ package g20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k1 {
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public k1(String str, String str2) {
         this.a = str;

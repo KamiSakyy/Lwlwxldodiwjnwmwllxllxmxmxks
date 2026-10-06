@@ -34,9 +34,9 @@ import zg.m;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements x0, mi0, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
-    public final v t;
-    public final p u;
+    public com.github.service.wrapper.b s;
+    public v t;
+    public p u;
 
     public d(j jVar, com.github.service.wrapper.b bVar, v vVar, int i) {
         this.r = i;

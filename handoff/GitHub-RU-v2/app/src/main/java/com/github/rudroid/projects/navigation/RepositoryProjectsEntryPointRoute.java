@@ -13,10 +13,10 @@ public final class RepositoryProjectsEntryPointRoute implements f {
     public static final Companion Companion = new Companion();
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f17767r;
+    public String f17767r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f17768s;
+    public String f17768s;
 
     public static final class Companion {
         public final KSerializer serializer() {

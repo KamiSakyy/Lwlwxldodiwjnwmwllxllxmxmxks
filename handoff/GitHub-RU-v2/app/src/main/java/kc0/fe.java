@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fe {
-    public final ie a;
-    public final List b;
+    public ie a;
+    public List b;
 
     public fe(ie ieVar, List list) {
         this.a = ieVar;

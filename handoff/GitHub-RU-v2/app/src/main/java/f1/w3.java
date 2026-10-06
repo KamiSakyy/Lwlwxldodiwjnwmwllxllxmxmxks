@@ -33,5 +33,6 @@ public class w3 {
         public z() {
         }
     }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object b(Object, Object, Object, Object, Object, Object, boolean, Object, Object, int) { return null; }
 }

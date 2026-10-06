@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v70 {
-    public final t70 a;
-    public final List b;
+    public t70 a;
+    public List b;
 
     public v70(t70 t70Var, List list) {
         this.a = t70Var;

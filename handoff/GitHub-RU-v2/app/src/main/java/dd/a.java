@@ -12,7 +12,7 @@ public abstract class a {
     public static final class C0064a extends f {
 
         /* renamed from: d, reason: collision with root package name */
-        public final j f21765d;
+        public j f21765d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public C0064a(j jVar, n nVar, n nVar2) {
@@ -33,19 +33,19 @@ public abstract class a {
     public static abstract class c extends a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f21766a;
+        public int f21766a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final int f21767b;
+        public int f21767b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final MobileAppElement f21768c;
+        public MobileAppElement f21768c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final int f21769d;
+        public int f21769d;
 
         /* renamed from: e, reason: collision with root package name */
-        public final j71.a f21770e;
+        public j71.a f21770e;
 
         public c(int i, int i10, MobileAppElement mobileAppElement, int i11, j71.a aVar) {
             this.f21766a = i;
@@ -80,13 +80,13 @@ public abstract class a {
     public static abstract class f extends a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final MobileAppElement f21772a;
+        public MobileAppElement f21772a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final j71.a f21773b;
+        public j71.a f21773b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final j71.a f21774c;
+        public j71.a f21774c;
 
         public f(MobileAppElement mobileAppElement, j71.a aVar, j71.a aVar2) {
             this.f21772a = mobileAppElement;

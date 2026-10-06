@@ -2,9 +2,9 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 implements aa.h0 {
-    public final String a;
-    public final o0 b;
-    public final p0 c;
+    public String a;
+    public o0 b;
+    public p0 c;
 
     public q0(String str, o0 o0Var, p0 p0Var) {
         k71.k.g(str, "__typename");

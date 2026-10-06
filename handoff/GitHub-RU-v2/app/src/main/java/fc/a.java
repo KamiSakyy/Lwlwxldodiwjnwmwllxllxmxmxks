@@ -16,35 +16,35 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0067a();
-    public final List A;
-    public final IssueType B;
+    public List A;
+    public IssueType B;
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f24384r;
+    public String f24384r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f24385s;
+    public String f24385s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f24386t;
+    public String f24386t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f24387u;
+    public String f24387u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f24388v;
+    public String f24388v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final String f24389w;
+    public String f24389w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final Uri f24390x;
+    public Uri f24390x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f24391y;
+    public String f24391y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final List f24392z;
+    public List f24392z;
 
     /* renamed from: fc.a$a, reason: collision with other inner class name */
     public static final class C0067a implements Parcelable.Creator<a> {

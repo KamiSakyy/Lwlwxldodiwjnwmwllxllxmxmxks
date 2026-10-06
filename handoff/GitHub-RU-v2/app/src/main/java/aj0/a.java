@@ -7,10 +7,10 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final String a;
-    public final boolean b;
-    public final b c;
-    public final bo d;
+    public String a;
+    public boolean b;
+    public b c;
+    public bo d;
 
     public a(String str, boolean z, b bVar, bo boVar) {
         this.a = str;

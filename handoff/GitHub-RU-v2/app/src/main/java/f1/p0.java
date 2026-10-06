@@ -15,6 +15,6 @@ public class p0 {
     }
 
     public static Object b;
-    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public Object d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static o0 a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static o0 d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

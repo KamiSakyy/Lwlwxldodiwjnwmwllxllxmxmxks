@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z7 {
-    public final ArrayList a;
-    public final ArrayList b;
-    public final com.github.service.models.response.a c;
-    public final String d;
+    public ArrayList a;
+    public ArrayList b;
+    public com.github.service.models.response.a c;
+    public String d;
 
     public z7(ArrayList arrayList, ArrayList arrayList2, com.github.service.models.response.a aVar, String str) {
         this.a = arrayList;

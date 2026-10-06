@@ -2,7 +2,7 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c1 extends f2 {
-    public final String a;
+    public String a;
 
     public c1(String str) {
         this.a = str;

@@ -7,9 +7,9 @@ public final class a {
     public static final a d = new a(4, 4, 1);
     public static final a e = new a(4, 4, 2);
     public static final a f = new a(3, 1, 1);
-    public final int a;
-    public final int b;
-    public final int c;
+    public int a;
+    public int b;
+    public int c;
 
     public a(int i, int i2, int i3) {
         f4.z("childrenAction", i);

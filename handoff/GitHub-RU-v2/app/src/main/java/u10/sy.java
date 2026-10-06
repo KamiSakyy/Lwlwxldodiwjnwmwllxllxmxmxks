@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sy {
-    public final String a;
-    public final c60.j b;
+    public String a;
+    public c60.j b;
 
     public sy(String str, c60.j jVar) {
         this.a = str;

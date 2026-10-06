@@ -4,10 +4,10 @@ package d3;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f21421a;
+    public String f21421a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j71.a f21422b;
+    public j71.a f21422b;
 
     public f(String str, j71.a aVar) {
         this.f21421a = str;

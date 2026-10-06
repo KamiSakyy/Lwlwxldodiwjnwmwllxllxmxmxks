@@ -4,8 +4,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final int a;
-    public final int b;
+    public int a;
+    public int b;
 
     public f(int i, int i2) {
         this.a = i;

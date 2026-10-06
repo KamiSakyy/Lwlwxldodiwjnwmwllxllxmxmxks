@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xt {
-    public final String a;
-    public final String b;
-    public final u80.c c;
+    public String a;
+    public String b;
+    public u80.c c;
 
     public xt(String str, String str2, u80.c cVar) {
         this.a = str;

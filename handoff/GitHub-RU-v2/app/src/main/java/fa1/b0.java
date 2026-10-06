@@ -6,9 +6,9 @@ import java.lang.reflect.Method;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b0 extends x0 {
-    public final Method d;
-    public final int e;
-    public final n f;
+    public Method d;
+    public int e;
+    public n f;
 
     public b0(Method method, int i, n nVar) {
         this.d = method;

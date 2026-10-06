@@ -2,15 +2,15 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d0 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final int g;
-    public final c0 h;
-    public final gu0.c i;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public int g;
+    public c0 h;
+    public gu0.c i;
 
     public d0(String str, String str2, String str3, String str4, String str5, String str6, int i, c0 c0Var, gu0.c cVar) {
         this.a = str;

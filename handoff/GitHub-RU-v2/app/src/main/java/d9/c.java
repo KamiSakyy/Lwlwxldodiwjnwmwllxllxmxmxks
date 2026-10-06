@@ -4,10 +4,10 @@ package d9;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f21679a;
+    public String f21679a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Long f21680b;
+    public Long f21680b;
 
     public c(String str, Long l) {
         this.f21679a = str;

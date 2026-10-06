@@ -10,13 +10,13 @@ import java.util.ArrayList;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f27197a;
+    public int f27197a;
 
     /* renamed from: b, reason: collision with root package name */
     public final ArrayList f27198b = new ArrayList();
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f27199c;
+    public int f27199c;
 
     public u(Context context, XmlResourceParser xmlResourceParser) {
         this.f27199c = -1;

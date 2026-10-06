@@ -7,13 +7,13 @@ import java.util.ArrayList;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f3869a;
+    public int f3869a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f3870b;
+    public ArrayList f3870b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final j f3871c;
+    public j f3871c;
 
     public g(int i, ArrayList arrayList, j jVar) {
         this.f3869a = i;

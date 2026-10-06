@@ -21,10 +21,10 @@ import com.google.android.material.textfield.TextInputLayout;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t extends LinearLayout {
     public boolean A;
-    public final TextInputLayout r;
-    public final AppCompatTextView s;
+    public TextInputLayout r;
+    public AppCompatTextView s;
     public CharSequence t;
-    public final CheckableImageButton u;
+    public CheckableImageButton u;
     public ColorStateList v;
     public PorterDuff.Mode w;
     public int x;

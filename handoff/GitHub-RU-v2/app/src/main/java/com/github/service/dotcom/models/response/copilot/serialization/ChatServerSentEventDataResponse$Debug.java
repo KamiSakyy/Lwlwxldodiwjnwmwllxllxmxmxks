@@ -12,8 +12,8 @@ import w61.i;
 public final class ChatServerSentEventDataResponse$Debug extends c {
     public static final Companion Companion = new Companion();
     public static final h[] c = {w.s(i.r, new hz.e(20)), null};
-    public final hz.i a;
-    public final String b;
+    public hz.i a;
+    public String b;
 
     public static final class Companion {
         public final KSerializer serializer() {

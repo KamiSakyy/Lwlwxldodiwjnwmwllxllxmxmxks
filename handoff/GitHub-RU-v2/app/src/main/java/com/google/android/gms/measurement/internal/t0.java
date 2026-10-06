@@ -19,7 +19,7 @@ public final class t0 {
     public long b;
     public Object c;
     public Object d;
-    public final Object e;
+    public Object e;
 
     public t0(long j, Bundle bundle, String str, String str2) {
         this.c = str;

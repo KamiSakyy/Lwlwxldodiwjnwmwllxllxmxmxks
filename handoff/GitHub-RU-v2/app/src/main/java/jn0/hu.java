@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hu {
-    public final eu a;
-    public final iu b;
+    public eu a;
+    public iu b;
 
     public hu(eu euVar, iu iuVar) {
         this.a = euVar;

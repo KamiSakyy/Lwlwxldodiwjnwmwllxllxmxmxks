@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yn {
-    public final String a;
-    public final xn b;
-    public final String c;
+    public String a;
+    public xn b;
+    public String c;
 
     public yn(String str, xn xnVar, String str2) {
         this.a = str;

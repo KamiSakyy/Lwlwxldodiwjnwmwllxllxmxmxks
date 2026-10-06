@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fv {
-    public final String a;
-    public final cv b;
-    public final String c;
+    public String a;
+    public cv b;
+    public String c;
 
     public fv(String str, cv cvVar, String str2) {
         this.a = str;

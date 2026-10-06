@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nt {
-    public final String a;
-    public final kt b;
-    public final String c;
+    public String a;
+    public kt b;
+    public String c;
 
     public nt(String str, kt ktVar, String str2) {
         this.a = str;

@@ -15,8 +15,8 @@ import x61.r;
 public final class AgentTasksResponse {
     public static final Companion Companion = new Companion();
     public static final h[] c = {null, w.s(i.r, new a(9))};
-    public final boolean a;
-    public final List b;
+    public boolean a;
+    public List b;
 
     public static final class Companion {
         public final KSerializer serializer() {

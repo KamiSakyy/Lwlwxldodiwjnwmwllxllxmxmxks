@@ -10,10 +10,10 @@ public final class g extends v71.v implements g0 {
     public static final /* synthetic */ AtomicIntegerFieldUpdater y = AtomicIntegerFieldUpdater.newUpdater(g.class, "runningWorkers$volatile");
     private volatile /* synthetic */ int runningWorkers$volatile;
     public final /* synthetic */ g0 t;
-    public final v71.v u;
-    public final int v;
-    public final k w;
-    public final Object x;
+    public v71.v u;
+    public int v;
+    public k w;
+    public Object x;
 
     /* JADX WARN: Multi-variable type inference failed */
     public g(v71.v vVar, int i) {

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l6 {
-    public final String a;
-    public final q6 b;
-    public final vx.a c;
+    public String a;
+    public q6 b;
+    public vx.a c;
 
     public l6(String str, q6 q6Var, vx.a aVar) {
         k71.k.g(str, "__typename");

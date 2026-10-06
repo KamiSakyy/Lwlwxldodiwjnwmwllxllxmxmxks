@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qx {
-    public final nx a;
+    public nx a;
 
     public qx(nx nxVar) {
         this.a = nxVar;

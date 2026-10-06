@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k40 implements aaShadow.v0 {
-    public final t40 a;
-    public final u40 b;
-    public final String c;
-    public final String d;
+    public t40 a;
+    public u40 b;
+    public String c;
+    public String d;
 
     public k40(t40 t40Var, u40 u40Var, String str, String str2) {
         this.a = t40Var;

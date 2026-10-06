@@ -12,7 +12,7 @@ public final class c {
     public static final c t;
     public static final c u;
     public static final /* synthetic */ c[] v;
-    public final List r;
+    public List r;
 
     static {
         c cVar = new c(0, "ISSUE", x61.l.r(new String[]{"is:issue", "type:issue"}));

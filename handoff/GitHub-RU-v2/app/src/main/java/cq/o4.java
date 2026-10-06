@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o4 {
-    public final String a;
-    public final List b;
+    public String a;
+    public List b;
 
     public o4(String str, List list) {
         this.a = str;

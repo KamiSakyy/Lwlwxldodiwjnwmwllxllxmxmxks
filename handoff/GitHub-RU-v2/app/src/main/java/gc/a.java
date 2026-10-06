@@ -7,10 +7,10 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f24869a;
+    public List f24869a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f24870b;
+    public boolean f24870b;
 
     public a(List list, boolean z10) {
         k.g(list, "selectedProjects");

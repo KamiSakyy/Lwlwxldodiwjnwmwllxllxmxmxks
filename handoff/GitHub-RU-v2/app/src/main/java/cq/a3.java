@@ -5,10 +5,10 @@ import m10.ro;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a3 implements aa.h0 {
-    public final m8 a;
-    public final ro b;
-    public final String c;
-    public final String d;
+    public m8 a;
+    public ro b;
+    public String c;
+    public String d;
 
     public a3(m8 m8Var, ro roVar, String str, String str2) {
         this.a = m8Var;

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wn implements aaShadow.v0 {
-    public final yn a;
+    public yn a;
 
     public wn(yn ynVar) {
         this.a = ynVar;

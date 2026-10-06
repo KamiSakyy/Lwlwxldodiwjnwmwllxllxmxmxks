@@ -9,10 +9,10 @@ import com.google.android.gms.internal.measurement.d5;
 public class r2 extends d5 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final WindowInsetsController f480a;
+    public WindowInsetsController f480a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Window f481b;
+    public Window f481b;
 
     public r2(Window window, y51.c cVar) {
         this.f480a = window.getInsetsController();

@@ -12,7 +12,7 @@ public final class mw {
     public static final mw w;
     public static final mw x;
     public static final /* synthetic */ mw[] y;
-    public final String r;
+    public String r;
 
     static {
         mw mwVar = new mw("CREATED_AT", 0, "CREATED_AT");

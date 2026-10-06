@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wg {
-    public final String a;
-    public final ug b;
+    public String a;
+    public ug b;
 
     public wg(String str, ug ugVar) {
         this.a = str;

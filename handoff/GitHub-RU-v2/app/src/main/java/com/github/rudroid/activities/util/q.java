@@ -7,10 +7,10 @@ import android.os.Parcelable;
 public final class q implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f5930r;
+    public int f5930r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f5931s;
+    public int f5931s;
     public static final a Companion = new a();
     public static final Parcelable.Creator<q> CREATOR = new b();
 

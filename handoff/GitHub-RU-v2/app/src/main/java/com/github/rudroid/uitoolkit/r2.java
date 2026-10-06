@@ -25,5 +25,5 @@ public final class r2 {
             t.d = new q2(list, i, 0);
         }
     }
-    public Object getValue() { return null; }
+    public static Object getValue() { return null; }
 }

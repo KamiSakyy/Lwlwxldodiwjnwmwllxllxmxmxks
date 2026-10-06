@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oy {
-    public final ny a;
-    public final String b;
-    public final String c;
+    public ny a;
+    public String b;
+    public String c;
 
     public oy(ny nyVar, String str, String str2) {
         this.a = nyVar;

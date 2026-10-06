@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wh0 {
-    public final String a;
-    public final boolean b;
-    public final List c;
-    public final th0 d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public List c;
+    public th0 d;
+    public String e;
 
     public wh0(String str, boolean z, List list, th0 th0Var, String str2) {
         this.a = str;

@@ -2,9 +2,9 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final String b;
-    public final rt.e c;
+    public String a;
+    public String b;
+    public rt.e c;
 
     public e(String str, String str2, rt.e eVar) {
         this.a = str;

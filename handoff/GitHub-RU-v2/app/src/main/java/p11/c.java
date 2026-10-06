@@ -10,7 +10,7 @@ public enum c implements l51.c {
     x(5),
     y(6);
 
-    public final int r;
+    public int r;
 
     c(int i) {
         this.r = i;

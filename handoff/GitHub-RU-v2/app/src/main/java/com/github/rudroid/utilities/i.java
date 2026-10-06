@@ -25,4 +25,9 @@ final class i extends c71.c {
     }
     public Object a() { return null; }
     public Object d(Object p1) { return null; }
+    public Object d(int) { return null; }
+    public Object findViewById(int) { return null; }
+    public Object getColor(int) { return null; }
+    public Object getResources() { return null; }
+    public Object getString(int, Object, Object) { return null; }
 }

@@ -2,7 +2,7 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a2 implements aa.m0 {
-    public final c2 a;
+    public c2 a;
 
     public a2(c2 c2Var) {
         this.a = c2Var;

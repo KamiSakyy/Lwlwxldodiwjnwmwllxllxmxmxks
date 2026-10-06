@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 public final class c extends f1 {
     public static final /* synthetic */ AtomicReferenceFieldUpdater y = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_disposer$volatile");
     private volatile /* synthetic */ Object _disposer$volatile;
-    public final l v;
+    public l v;
     public n0 w;
     public final /* synthetic */ e x;
 
@@ -54,4 +54,5 @@ public final class c extends f1 {
     public c(Object... a) {
     }
     public static final Object s = null;
+    public Object k(Object) { return null; }
 }

@@ -8,14 +8,14 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final String a;
-    public final ZonedDateTime b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final ArrayList g;
-    public final String h;
+    public String a;
+    public ZonedDateTime b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public ArrayList g;
+    public String h;
 
     public h(String str, ZonedDateTime zonedDateTime, String str2, String str3, String str4, String str5, ArrayList arrayList, String str6) {
         k.g(str2, "achievableName");

@@ -2,8 +2,8 @@ package m80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final String a;
-    public final e30.a b;
+    public String a;
+    public e30.a b;
 
     public d(String str, e30.a aVar) {
         k71.k.g(str, "__typename");

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k {
-    public final ArrayList a;
-    public final ArrayList b;
+    public ArrayList a;
+    public ArrayList b;
 
     public k(int i) {
         switch (i) {

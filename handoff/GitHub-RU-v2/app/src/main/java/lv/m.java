@@ -7,14 +7,14 @@ import m10.rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements h0 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final g d;
-    public final rz e;
-    public final j f;
-    public final String g;
-    public final h h;
+    public String a;
+    public String b;
+    public boolean c;
+    public g d;
+    public rz e;
+    public j f;
+    public String g;
+    public h h;
 
     public m(String str, String str2, boolean z, g gVar, rz rzVar, j jVar, String str3, h hVar) {
         this.a = str;

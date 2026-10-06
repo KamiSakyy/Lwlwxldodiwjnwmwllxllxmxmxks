@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wa0 {
-    public final ua0 a;
-    public final String b;
-    public final String c;
+    public ua0 a;
+    public String b;
+    public String c;
 
     public wa0(ua0 ua0Var, String str, String str2) {
         this.a = ua0Var;

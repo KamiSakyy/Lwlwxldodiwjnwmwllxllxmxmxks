@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k70 {
-    public final n70 a;
+    public n70 a;
 
     public k70(n70 n70Var) {
         this.a = n70Var;

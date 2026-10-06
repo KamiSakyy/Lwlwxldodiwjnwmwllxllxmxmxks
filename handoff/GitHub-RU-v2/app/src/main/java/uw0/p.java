@@ -5,9 +5,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public final s a;
-    public final List b;
-    public final int c;
+    public s a;
+    public List b;
+    public int c;
 
     public p(s sVar, List list, int i) {
         this.a = sVar;

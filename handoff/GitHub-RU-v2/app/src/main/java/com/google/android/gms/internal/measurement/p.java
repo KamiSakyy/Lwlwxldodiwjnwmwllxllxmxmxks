@@ -81,4 +81,6 @@ public final class p implements Iterator {
     public p(Object... a) {
     }
     public Object b = null;
+    public Object b(Object) { return null; }
+    public Object b(int) { return null; }
 }

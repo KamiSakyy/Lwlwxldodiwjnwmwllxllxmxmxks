@@ -4,10 +4,10 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z0 extends c2 {
-    public final String a;
-    public final int b;
-    public final int c;
-    public final boolean d;
+    public String a;
+    public int b;
+    public int c;
+    public boolean d;
 
     public z0(String str, int i, int i2, boolean z) {
         this.a = str;

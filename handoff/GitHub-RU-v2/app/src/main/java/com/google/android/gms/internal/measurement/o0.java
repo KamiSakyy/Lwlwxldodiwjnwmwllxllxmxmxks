@@ -6,4 +6,5 @@ public final class o0 extends x implements p0 {
     public final void a() {
         M(g());
     }
+    public Object d() { return null; }
 }

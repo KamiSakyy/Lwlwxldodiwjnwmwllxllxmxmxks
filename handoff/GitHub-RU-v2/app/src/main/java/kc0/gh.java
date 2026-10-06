@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gh {
-    public final String a;
-    public final String b;
-    public final mh c;
-    public final yf0.i d;
+    public String a;
+    public String b;
+    public mh c;
+    public yf0.i d;
 
     public gh(String str, String str2, mh mhVar, yf0.i iVar) {
         this.a = str;

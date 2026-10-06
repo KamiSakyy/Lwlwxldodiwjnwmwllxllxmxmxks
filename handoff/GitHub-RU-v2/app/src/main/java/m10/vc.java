@@ -2,8 +2,8 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vc {
-    public final int a;
-    public final int b;
+    public int a;
+    public int b;
 
     public vc(int i, int i2) {
         this.a = i;

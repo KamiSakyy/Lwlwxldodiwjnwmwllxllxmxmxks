@@ -45,4 +45,5 @@ public final class h {
 
     public Object j(Object p1, Object p2, Object p3) { return null; }
     public static final Object o = null;
+    public Object j(Object, int, Object) { return null; }
 }

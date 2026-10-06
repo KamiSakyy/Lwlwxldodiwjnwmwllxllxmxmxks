@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d8 {
-    public final ArrayList a;
+    public ArrayList a;
 
     public d8(ArrayList arrayList) {
         this.a = arrayList;

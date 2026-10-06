@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ib {
-    public final String a;
-    public final String b;
-    public final jb c;
-    public final er0.d0 d;
+    public String a;
+    public String b;
+    public jb c;
+    public er0.d0 d;
 
     public ib(String str, String str2, jb jbVar, er0.d0 d0Var) {
         k71.k.g(str, "__typename");

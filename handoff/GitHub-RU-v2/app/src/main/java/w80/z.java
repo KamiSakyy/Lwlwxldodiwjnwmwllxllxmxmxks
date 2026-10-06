@@ -2,10 +2,10 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final x c;
-    public final g70.a d;
+    public String a;
+    public String b;
+    public x c;
+    public g70.a d;
 
     public z(String str, String str2, x xVar, g70.a aVar) {
         this.a = str;

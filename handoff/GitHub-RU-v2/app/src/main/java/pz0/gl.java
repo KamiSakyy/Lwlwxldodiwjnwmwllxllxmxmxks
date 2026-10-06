@@ -25,7 +25,7 @@ public final class gl {
     public static final gl x;
     public static final gl y;
     public static final gl z;
-    public final String r;
+    public String r;
 
     static {
         gl glVar = new gl("APPROVAL_REQUESTED", 0, "APPROVAL_REQUESTED");

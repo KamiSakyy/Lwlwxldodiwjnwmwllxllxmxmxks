@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lf0 implements aaShadow.n0 {
     public static final bf0 Companion = new bf0();
-    public final String r;
-    public final aa.u0 s;
-    public final aa.u0 t;
-    public final aa.u0 u;
-    public final aa.u0 v;
+    public String r;
+    public aa.u0 s;
+    public aa.u0 t;
+    public aa.u0 u;
+    public aa.u0 v;
 
     public lf0(String str, aa.u0 u0Var, aa.u0 u0Var2, aa.u0 u0Var3, aa.u0 u0Var4) {
         k71.k.g(str, "id");

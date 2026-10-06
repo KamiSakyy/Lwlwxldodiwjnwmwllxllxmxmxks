@@ -9,7 +9,7 @@ public final class kl {
     public static final kl t;
     public static final /* synthetic */ kl[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         kl klVar = new kl("ARCHIVED", 0, "ARCHIVED");

@@ -8,9 +8,9 @@ import java.util.UUID;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements d0 {
     public static final o u;
-    public final String r;
-    public final String s;
-    public final String t;
+    public String r;
+    public String s;
+    public String t;
     public static final n Companion = new n();
     public static final Parcelable.Creator<o> CREATOR = new c(9);
 

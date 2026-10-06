@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ue implements aaShadow.v0 {
-    public final ve a;
-    public final hf b;
-    public final jf c;
-    public final kf d;
-    public final gf e;
+    public ve a;
+    public hf b;
+    public jf c;
+    public kf d;
+    public gf e;
 
     public ue(ve veVar, hf hfVar, jf jfVar, kf kfVar, gf gfVar) {
         this.a = veVar;

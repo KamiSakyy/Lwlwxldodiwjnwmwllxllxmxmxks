@@ -2,9 +2,9 @@ package vn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
-    public final boolean a;
-    public final boolean b;
-    public final String c;
+    public boolean a;
+    public boolean b;
+    public String c;
 
     public o(String str, boolean z, boolean z2) {
         this.a = z;

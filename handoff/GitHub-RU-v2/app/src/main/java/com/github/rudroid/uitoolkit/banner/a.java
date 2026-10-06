@@ -21,5 +21,5 @@ final class a implements j71.c {
         m0.B((s3.f) null, "spread", cVar);
         return w61.a0.a;
     }
-    public Object c(Object p1, Object p2) { return null; }
+    public static Object c(Object p1, Object p2) { return null; }
 }

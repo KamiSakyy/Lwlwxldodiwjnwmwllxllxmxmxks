@@ -5,9 +5,9 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements j11.f {
-    public final Set a;
-    public final j b;
-    public final s c;
+    public Set a;
+    public j b;
+    public s c;
 
     public q(Set set, j jVar, s sVar) {
         this.a = set;
@@ -30,4 +30,8 @@ public final class q implements j11.f {
     public Object w = null;
     public Object y = null;
     public Object z = null;
+    public Object F0() { return null; }
+    public Object K0() { return null; }
+    public Object L0() { return null; }
+    public Object N0(Object) { return null; }
 }

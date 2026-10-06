@@ -2,10 +2,10 @@ package mn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public final b0 a;
-    public final int b;
-    public final String c;
-    public final String d;
+    public b0 a;
+    public int b;
+    public String c;
+    public String d;
 
     public s(b0 b0Var, int i, String str, String str2) {
         this.a = b0Var;

@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pd {
-    public final String a;
-    public final od b;
-    public final String c;
-    public final lv.c d;
+    public String a;
+    public od b;
+    public String c;
+    public lv.c d;
 
     public pd(String str, od odVar, String str2, lv.c cVar) {
         this.a = str;

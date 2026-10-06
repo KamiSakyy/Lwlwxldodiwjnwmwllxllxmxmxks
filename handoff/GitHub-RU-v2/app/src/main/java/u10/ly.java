@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ly {
-    public final String a;
-    public final i30.c b;
+    public String a;
+    public i30.c b;
 
     public ly(String str, i30.c cVar) {
         this.a = str;

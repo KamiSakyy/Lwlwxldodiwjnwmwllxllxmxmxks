@@ -7,9 +7,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hd0 implements aaShadow.n0 {
     public static final dd0 Companion = new dd0();
-    public final ArrayList r;
-    public final LocalTime s;
-    public final LocalTime t;
+    public ArrayList r;
+    public LocalTime s;
+    public LocalTime t;
 
     public hd0(ArrayList arrayList, LocalTime localTime, LocalTime localTime2) {
         k71.k.g(localTime, "startTime");

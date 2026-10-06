@@ -9,7 +9,7 @@ public final class mj {
     public static final mj t;
     public static final /* synthetic */ mj[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         mj mjVar = new mj("BLUE", 0, "BLUE");

@@ -10,7 +10,7 @@ public final class gb0 {
     public static final gb0 u;
     public static final /* synthetic */ gb0[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         gb0 gb0Var = new gb0("EMAIL", 0, "EMAIL");

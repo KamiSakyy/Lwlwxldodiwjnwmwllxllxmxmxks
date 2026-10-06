@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sn {
-    public final String a;
-    public final qn b;
-    public final String c;
+    public String a;
+    public qn b;
+    public String c;
 
     public sn(String str, qn qnVar, String str2) {
         this.a = str;

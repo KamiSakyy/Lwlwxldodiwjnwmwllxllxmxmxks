@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public final String a;
-    public final g b;
-    public final String c;
+    public String a;
+    public g b;
+    public String c;
 
     public h(String str, g gVar, String str2) {
         this.a = str;

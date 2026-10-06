@@ -2,9 +2,9 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g6 {
-    public final aa1.b a;
+    public aa1.b a;
     public final aa1.b b = aa.t0.d;
-    public final aa1.b c;
+    public aa1.b c;
 
     public g6(aa.u0 u0Var, aa1.b bVar) {
         this.a = u0Var;

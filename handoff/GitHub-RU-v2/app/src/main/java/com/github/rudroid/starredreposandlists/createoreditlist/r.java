@@ -9,13 +9,13 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r extends k1 implements com.github.rudroid.utilities.viewmodel.d {
     public final /* synthetic */ d.a s;
-    public final ym.a t;
-    public final i1 u;
-    public final com.github.rudroid.activities.util.c v;
-    public final m1 w;
-    public final m1 x;
-    public final y1 y;
-    public final y1 z;
+    public ym.a t;
+    public i1 u;
+    public com.github.rudroid.activities.util.c v;
+    public m1 w;
+    public m1 x;
+    public y1 y;
+    public y1 z;
 
     public r(ym.a aVar, i1 i1Var, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(aVar, "createNewListUseCase");

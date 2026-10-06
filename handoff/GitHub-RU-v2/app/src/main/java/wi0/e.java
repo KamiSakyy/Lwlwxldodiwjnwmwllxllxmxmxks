@@ -47,5 +47,5 @@ public final class e implements aa.a {
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, bVar.b);
     }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

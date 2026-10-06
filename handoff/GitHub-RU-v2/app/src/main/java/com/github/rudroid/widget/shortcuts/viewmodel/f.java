@@ -14,13 +14,13 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f extends androidx.lifecycle.a {
     public q1 A;
-    public final com.github.rudroid.widget.shortcuts.g t;
-    public final tm.c u;
-    public final qe.a v;
-    public final ArrayList w;
-    public final z5.k x;
-    public final y1 y;
-    public final y1 z;
+    public com.github.rudroid.widget.shortcuts.g t;
+    public tm.c u;
+    public qe.a v;
+    public ArrayList w;
+    public z5.k x;
+    public y1 y;
+    public y1 z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(Application application, m mVar, a1 a1Var, com.github.rudroid.widget.shortcuts.g gVar, tm.c cVar, qe.a aVar) {

@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wz {
-    public final String a;
-    public final kw0.a b;
+    public String a;
+    public kw0.a b;
 
     public wz(String str, kw0.a aVar) {
         k71.k.g(str, "__typename");

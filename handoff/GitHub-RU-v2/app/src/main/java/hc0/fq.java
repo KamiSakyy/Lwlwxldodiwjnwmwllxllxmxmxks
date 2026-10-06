@@ -9,7 +9,7 @@ public final class fq {
     public static final fq t;
     public static final /* synthetic */ fq[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         fq fqVar = new fq("ADMIN", 0, "ADMIN");

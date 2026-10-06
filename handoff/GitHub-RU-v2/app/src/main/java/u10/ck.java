@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ck implements aaShadow.w0 {
     public static final xj Companion = new xj();
-    public final String r;
-    public final String s;
-    public final int t;
+    public String r;
+    public String s;
+    public int t;
 
     public ck(String str, int i, String str2) {
         this.r = str;

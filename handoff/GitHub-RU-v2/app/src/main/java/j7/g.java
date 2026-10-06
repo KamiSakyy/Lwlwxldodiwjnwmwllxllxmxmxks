@@ -11,16 +11,16 @@ import java.util.Objects;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f27260a;
+    public int f27260a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f27261b;
+    public int f27261b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final long f27262c;
+    public long f27262c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final long f27263d;
+    public long f27263d;
 
     public g(int i, int i10, long j10, long j11) {
         this.f27260a = i;

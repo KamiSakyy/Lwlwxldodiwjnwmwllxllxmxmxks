@@ -2,7 +2,7 @@ package io0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public final l a;
+    public l a;
 
     public m(l lVar) {
         this.a = lVar;

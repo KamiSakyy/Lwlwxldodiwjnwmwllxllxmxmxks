@@ -6,16 +6,16 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final wi e;
-    public final q f;
-    public final Boolean g;
-    public final ZonedDateTime h;
-    public final x i;
-    public final yi j;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public wi e;
+    public q f;
+    public Boolean g;
+    public ZonedDateTime h;
+    public x i;
+    public yi j;
 
     public r(String str, String str2, String str3, int i, wi wiVar, q qVar, Boolean bool, ZonedDateTime zonedDateTime, x xVar, yi yiVar) {
         this.a = str;

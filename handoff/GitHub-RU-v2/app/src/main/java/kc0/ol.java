@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ol implements aaShadow.m0 {
-    public final pl a;
+    public pl a;
 
     public ol(pl plVar) {
         this.a = plVar;

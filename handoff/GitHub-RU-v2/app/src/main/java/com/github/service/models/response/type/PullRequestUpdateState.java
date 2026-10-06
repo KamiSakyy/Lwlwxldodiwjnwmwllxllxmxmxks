@@ -11,7 +11,7 @@ public final class PullRequestUpdateState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PullRequestUpdateState[] $VALUES;
     public static final s Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PullRequestUpdateState OPEN = new PullRequestUpdateState("OPEN", 0, "OPEN");
     public static final PullRequestUpdateState CLOSED = new PullRequestUpdateState("CLOSED", 1, "CLOSED");
     public static final PullRequestUpdateState UNKNOWN__ = new PullRequestUpdateState("UNKNOWN__", 2, "UNKNOWN__");

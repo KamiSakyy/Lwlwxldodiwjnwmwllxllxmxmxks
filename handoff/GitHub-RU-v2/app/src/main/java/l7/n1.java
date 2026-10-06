@@ -15,7 +15,7 @@ public abstract class n1 {
     public static final List f28208t = Collections.EMPTY_LIST;
 
     /* renamed from: a, reason: collision with root package name */
-    public final View f28209a;
+    public View f28209a;
 
     /* renamed from: b, reason: collision with root package name */
     public WeakReference f28210b;
@@ -261,4 +261,5 @@ public abstract class n1 {
     }
     public Object k(Object p1) { return null; }
     public Object a = null;
+    public Object k(Object) { return null; }
 }

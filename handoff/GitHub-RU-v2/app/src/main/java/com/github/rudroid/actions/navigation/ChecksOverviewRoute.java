@@ -14,10 +14,10 @@ import x.i;
 public final class ChecksOverviewRoute implements Parcelable, d {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f5115r;
+    public String f5115r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f5116s;
+    public String f5116s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ChecksOverviewRoute> CREATOR = new a();
 

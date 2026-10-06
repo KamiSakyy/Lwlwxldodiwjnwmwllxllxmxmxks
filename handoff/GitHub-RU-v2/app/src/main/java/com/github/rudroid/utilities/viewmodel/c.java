@@ -14,8 +14,8 @@ import y71.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements b {
-    public final a1 r;
-    public final m s;
+    public a1 r;
+    public m s;
 
     public c(a1 a1Var, m mVar) {
         k.g(a1Var, "savedStateHandle");

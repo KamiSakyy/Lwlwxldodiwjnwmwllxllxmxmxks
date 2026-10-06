@@ -16,10 +16,10 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements w0 {
     public static final b Companion = new b();
-    public final String r;
-    public final String s;
-    public final aa1.b t;
-    public final u0 u;
+    public String r;
+    public String s;
+    public aa1.b t;
+    public u0 u;
 
     public g(u0 u0Var, aa1.b bVar, String str, String str2) {
         k.g(str, "owner");

@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final v11.a a;
-    public final HashMap b;
+    public v11.a a;
+    public HashMap b;
 
     public b(v11.a aVar, HashMap hashMap) {
         this.a = aVar;

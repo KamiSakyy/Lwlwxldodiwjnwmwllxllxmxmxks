@@ -2,7 +2,7 @@ package np;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final d a;
+    public d a;
 
     public a(d dVar) {
         this.a = dVar;
@@ -26,5 +26,5 @@ public final class a {
     public final String toString() {
         return "CloseDiscussion(discussion=" + this.a + ")";
     }
-    public Object s(Object p1) { return null; }
+    public static Object s(Object p1) { return null; }
 }

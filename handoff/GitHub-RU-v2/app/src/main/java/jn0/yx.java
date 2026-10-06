@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yx {
-    public final ux a;
-    public final xx b;
-    public final String c;
-    public final String d;
+    public ux a;
+    public xx b;
+    public String c;
+    public String d;
 
     public yx(ux uxVar, xx xxVar, String str, String str2) {
         this.a = uxVar;

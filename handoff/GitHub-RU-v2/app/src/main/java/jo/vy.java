@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vy {
-    public final uy a;
-    public final List b;
+    public uy a;
+    public List b;
 
     public vy(uy uyVar, List list) {
         this.a = uyVar;

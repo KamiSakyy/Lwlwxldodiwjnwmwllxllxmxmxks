@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ir {
-    public final hr a;
-    public final List b;
+    public hr a;
+    public List b;
 
     public ir(hr hrVar, List list) {
         this.a = hrVar;

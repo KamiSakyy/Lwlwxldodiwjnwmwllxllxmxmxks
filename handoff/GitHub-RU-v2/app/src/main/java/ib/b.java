@@ -9,16 +9,16 @@ import x.i;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final BlockDuration f26162a;
+    public BlockDuration f26162a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f26163b;
+    public boolean f26163b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f26164c;
+    public boolean f26164c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final HideCommentReason f26165d;
+    public HideCommentReason f26165d;
 
     public b(BlockDuration blockDuration, boolean z10, boolean z11, HideCommentReason hideCommentReason) {
         k.g(blockDuration, "duration");

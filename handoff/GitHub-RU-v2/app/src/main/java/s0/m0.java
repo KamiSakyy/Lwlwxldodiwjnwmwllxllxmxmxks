@@ -5,6 +5,6 @@ package s0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m0 {
-    public Object a(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public m0 a(Object p1, Object p2, Object p3, Object p4) { return null; }
     public static final Object e = null;
 }

@@ -52,4 +52,5 @@ public final class b2 {
     public Object b(Object p1, Object p2) { return null; }
     public Object d = null;
     public Object q = null;
+    public Object b(Object, int) { return null; }
 }

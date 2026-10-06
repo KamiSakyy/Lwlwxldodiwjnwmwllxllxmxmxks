@@ -15,7 +15,7 @@ public final class rr {
     public static final rr x;
     public static final rr y;
     public static final rr z;
-    public final String r;
+    public String r;
 
     static {
         rr rrVar = new rr("ARCHIVED", 0, "ARCHIVED");

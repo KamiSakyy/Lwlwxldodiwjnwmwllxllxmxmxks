@@ -16,7 +16,7 @@ public final class ua {
     public static final ua x;
     public static final ua y;
     public static final ua z;
-    public final String r;
+    public String r;
 
     static {
         ua uaVar = new ua("FRIDAY", 0, "FRIDAY");

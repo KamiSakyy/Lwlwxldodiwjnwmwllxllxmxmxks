@@ -4,13 +4,13 @@ package androidx.compose.foundation.lazy.layout;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f1412a;
+    public int f1412a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f1413b;
+    public int f1413b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final v f1414c;
+    public v f1414c;
 
     public j(int i, int i10, v vVar) {
         this.f1412a = i;

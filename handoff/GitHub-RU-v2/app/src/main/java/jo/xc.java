@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xc {
-    public final String a;
-    public final is.p0 b;
+    public String a;
+    public is.p0 b;
 
     public xc(String str, is.p0 p0Var) {
         this.a = str;

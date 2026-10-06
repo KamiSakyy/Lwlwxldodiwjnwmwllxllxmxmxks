@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hb {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final db d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public db d;
+    public String e;
 
     public hb(String str, boolean z, boolean z2, db dbVar, String str2) {
         this.a = str;

@@ -5,11 +5,11 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final List a;
-    public final List b;
-    public final List c;
-    public final List d;
-    public final boolean e;
+    public List a;
+    public List b;
+    public List c;
+    public List d;
+    public boolean e;
 
     public h(List list, List list2, List list3, List list4, boolean z) {
         k71.k.g(list, "navLinks");

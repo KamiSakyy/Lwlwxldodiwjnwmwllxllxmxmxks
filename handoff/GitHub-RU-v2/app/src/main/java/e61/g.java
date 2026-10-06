@@ -6,8 +6,8 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
-    public final j a;
-    public final j b;
+    public j a;
+    public j b;
 
     public g(j jVar, j jVar2) {
         k.g(jVar, "localOverrideSettings");

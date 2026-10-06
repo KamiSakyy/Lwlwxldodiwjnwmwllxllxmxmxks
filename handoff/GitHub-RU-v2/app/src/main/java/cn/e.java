@@ -220,5 +220,5 @@ public final class e extends c71.j implements j71.e {
                 return a0Var5;
         }
     }
-    public Object g(Object p1, Object p2) { return null; }
+    public static Object g(Object p1, Object p2) { return null; }
 }

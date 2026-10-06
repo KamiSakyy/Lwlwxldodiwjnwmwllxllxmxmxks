@@ -6,9 +6,9 @@ import ri0.p2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final String a;
-    public final String b;
-    public final p2 c;
+    public String a;
+    public String b;
+    public p2 c;
 
     public f(String str, String str2, p2 p2Var) {
         this.a = str;

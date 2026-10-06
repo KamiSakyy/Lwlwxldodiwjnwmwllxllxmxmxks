@@ -2,22 +2,22 @@ package am0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 {
-    public final String a;
-    public final i b;
-    public final k c;
-    public final y d;
-    public final h e;
-    public final a0 f;
-    public final l g;
-    public final o h;
-    public final p i;
-    public final t j;
-    public final u k;
-    public final r l;
-    public final j m;
-    public final s n;
-    public final v o;
-    public final m p;
+    public String a;
+    public i b;
+    public k c;
+    public y d;
+    public h e;
+    public a0 f;
+    public l g;
+    public o h;
+    public p i;
+    public t j;
+    public u k;
+    public r l;
+    public j m;
+    public s n;
+    public v o;
+    public m p;
 
     public m0(String str, i iVar, k kVar, y yVar, h hVar, a0 a0Var, l lVar, o oVar, p pVar, t tVar, u uVar, r rVar, j jVar, s sVar, v vVar, m mVar) {
         k71.k.g(str, "__typename");
@@ -87,10 +87,10 @@ public final class m0 {
     public final String toString() {
         return "Subject(__typename=" + this.a + ", onCommit=" + this.b + ", onGist=" + this.c + ", onTeamDiscussion=" + this.d + ", onCheckSuite=" + this.e + ", onWorkflowRun=" + this.f + ", onIssue=" + this.g + ", onPullRequest=" + this.h + ", onRelease=" + this.i + ", onRepositoryInvitation=" + this.j + ", onRepositoryVulnerabilityAlert=" + this.k + ", onRepositoryAdvisory=" + this.l + ", onDiscussion=" + this.m + ", onRepositoryDependabotAlertsThread=" + this.n + ", onSecurityAdvisory=" + this.o + ", onMemberFeatureRequestNotification=" + this.p + ")";
     }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public static Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

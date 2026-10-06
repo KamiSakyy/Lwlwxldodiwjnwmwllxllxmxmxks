@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m90 {
-    public final String a;
-    public final String b;
-    public final k70.i c;
+    public String a;
+    public String b;
+    public k70.i c;
 
     public m90(String str, String str2, k70.i iVar) {
         this.a = str;

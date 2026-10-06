@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final oa.e a;
-    public final c b;
+    public oa.e a;
+    public c b;
 
     public e(oa.e eVar, c cVar) {
         k.g(eVar, "cachedUserDataStorePreferencesFactory");
@@ -16,4 +16,7 @@ public final class e {
     public Object j(Object p1) { return null; }
     public Object u(Object p1) { return null; }
     public Object z(Object p1) { return null; }
+    public Object j(Object) { return null; }
+    public Object u(Object) { return null; }
+    public Object z(Object) { return null; }
 }

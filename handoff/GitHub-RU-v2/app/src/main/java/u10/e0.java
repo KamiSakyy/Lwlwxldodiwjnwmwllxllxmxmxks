@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 {
-    public final String a;
-    public final i80.c b;
+    public String a;
+    public i80.c b;
 
     public e0(i80.c cVar, String str) {
         k71.k.g(cVar, "reactionFragment");

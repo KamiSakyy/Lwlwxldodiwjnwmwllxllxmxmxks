@@ -6,10 +6,10 @@ import yz0.z1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final j3 a;
-    public final z1 b;
-    public final String c;
-    public final a2 d;
+    public j3 a;
+    public z1 b;
+    public String c;
+    public a2 d;
 
     public c(j3 j3Var, z1 z1Var, String str, a2 a2Var) {
         this.a = j3Var;

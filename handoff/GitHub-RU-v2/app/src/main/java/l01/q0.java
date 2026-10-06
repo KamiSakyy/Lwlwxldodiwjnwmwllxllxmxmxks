@@ -4,8 +4,8 @@ import com.github.service.models.response.projects.ProjectViewItemSortableValueT
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q0 {
-    public final String a;
-    public final ProjectViewItemSortableValueType b;
+    public String a;
+    public ProjectViewItemSortableValueType b;
 
     public q0(String str, ProjectViewItemSortableValueType projectViewItemSortableValueType) {
         k71.k.g(projectViewItemSortableValueType, "type");

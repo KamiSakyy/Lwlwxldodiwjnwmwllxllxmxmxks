@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yq {
-    public final String a;
-    public final la0.c b;
+    public String a;
+    public la0.c b;
 
     public yq(String str, la0.c cVar) {
         k71.k.g(str, "__typename");

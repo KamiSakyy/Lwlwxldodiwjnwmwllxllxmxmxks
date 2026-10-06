@@ -6,10 +6,10 @@ import android.view.View;
 public final class a implements View.OnClickListener {
 
     /* renamed from: r, reason: collision with root package name */
-    public final InterfaceC0070a f24871r;
+    public InterfaceC0070a f24871r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f24872s;
+    public int f24872s;
 
     /* renamed from: gd.a$a, reason: collision with other inner class name */
     public interface InterfaceC0070a {

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ss implements aaShadow.v0 {
-    public final ts a;
+    public ts a;
 
     public ss(ts tsVar) {
         this.a = tsVar;

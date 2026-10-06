@@ -4,11 +4,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final Boolean a;
-    public final Double b;
-    public final Integer c;
-    public final Integer d;
-    public final Long e;
+    public Boolean a;
+    public Double b;
+    public Integer c;
+    public Integer d;
+    public Long e;
 
     public e(Boolean bool, Double d, Integer num, Integer num2, Long l) {
         this.a = bool;

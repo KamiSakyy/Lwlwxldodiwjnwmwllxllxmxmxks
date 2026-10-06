@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 {
-    public final LocalDate a;
+    public LocalDate a;
 
     public b0(LocalDate localDate) {
         this.a = localDate;

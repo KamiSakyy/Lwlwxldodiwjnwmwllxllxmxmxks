@@ -7,16 +7,16 @@ import android.text.style.CharacterStyle;
 public final class j extends CharacterStyle {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f26997a;
+    public int f26997a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f26998b;
+    public float f26998b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f26999c;
+    public float f26999c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f27000d;
+    public float f27000d;
 
     public j(int i, float f6, float f10, float f11) {
         this.f26997a = i;

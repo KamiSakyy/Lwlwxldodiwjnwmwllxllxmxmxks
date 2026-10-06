@@ -6,9 +6,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements aaShadow.n0 {
     public static final c Companion = new c();
-    public final String r;
-    public final ArrayList s;
-    public final aa1.b t;
+    public String r;
+    public ArrayList s;
+    public aa1.b t;
 
     public e(String str, ArrayList arrayList, aa1.b bVar) {
         k71.k.g(str, "assignableId");

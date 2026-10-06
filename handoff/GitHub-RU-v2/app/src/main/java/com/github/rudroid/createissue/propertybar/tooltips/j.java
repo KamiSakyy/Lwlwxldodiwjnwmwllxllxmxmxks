@@ -6,7 +6,7 @@ import java.time.ZonedDateTime;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ZonedDateTime f10509a;
+    public ZonedDateTime f10509a;
 
     public j(ZonedDateTime zonedDateTime) {
         this.f10509a = zonedDateTime;

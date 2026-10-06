@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ge {
-    public final de a;
-    public final String b;
-    public final String c;
+    public de a;
+    public String b;
+    public String c;
 
     public ge(de deVar, String str, String str2) {
         this.a = deVar;

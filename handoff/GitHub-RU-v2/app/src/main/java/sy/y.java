@@ -482,5 +482,5 @@ public abstract class y {
         return new w7(str2, issueOrPullRequestState, f, P, x61.r.r, g, bVar, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (kd0Var == null || (id0Var = kd0Var.b) == null || !id0Var.g) ? false : true);
     }
     public Object a() { return null; }
-    public Object t(Object p1, Object p2) { return null; }
+    public static Object t(Object p1, Object p2) { return null; }
 }

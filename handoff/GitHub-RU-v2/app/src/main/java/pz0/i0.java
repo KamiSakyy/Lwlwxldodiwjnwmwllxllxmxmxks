@@ -2,11 +2,11 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i0 {
-    public final aa1.b a;
-    public final String b;
-    public final aa1.b c;
-    public final aa1.b d;
-    public final aa1.b e;
+    public aa1.b a;
+    public String b;
+    public aa1.b c;
+    public aa1.b d;
+    public aa1.b e;
 
     public i0(aa.u0 u0Var, aa1.b bVar, String str) {
         k71.k.g(str, "issueId");

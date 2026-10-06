@@ -9,7 +9,7 @@ public final class ot {
     public static final ot t;
     public static final /* synthetic */ ot[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         ot otVar = new ot("APPROVED", 0, "APPROVED");

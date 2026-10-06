@@ -11,10 +11,10 @@ import android.view.ViewConfiguration;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements View.OnTouchListener {
-    public final Dialog r;
-    public final int s;
-    public final int t;
-    public final int u;
+    public Dialog r;
+    public int s;
+    public int t;
+    public int u;
 
     public a(Dialog dialog, Rect rect) {
         this.r = dialog;

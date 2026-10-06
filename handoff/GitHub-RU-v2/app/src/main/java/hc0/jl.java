@@ -9,7 +9,7 @@ public final class jl {
     public static final jl t;
     public static final /* synthetic */ jl[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         jl jlVar = new jl("PENDING", 0, "PENDING");

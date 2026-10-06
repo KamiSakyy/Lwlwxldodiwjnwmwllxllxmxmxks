@@ -14,7 +14,7 @@ public final class PullRequestReviewCommentState {
     public static final PullRequestReviewCommentState PENDING = new PullRequestReviewCommentState("PENDING", 0, "PENDING");
     public static final PullRequestReviewCommentState SUBMITTED = new PullRequestReviewCommentState("SUBMITTED", 1, "SUBMITTED");
     public static final PullRequestReviewCommentState UNKNOWN__ = new PullRequestReviewCommentState("UNKNOWN__", 2, "UNKNOWN__");
-    private final String rawValue;
+    private String rawValue;
 
     private static final /* synthetic */ PullRequestReviewCommentState[] $values() {
         return new PullRequestReviewCommentState[]{PENDING, SUBMITTED, UNKNOWN__};

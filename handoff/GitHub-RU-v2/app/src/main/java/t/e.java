@@ -17,4 +17,5 @@ public interface e {
     default <T0> T0 t(Object... a) {
         return null;
     }
+    public Object o(Object, Object) { return null; }
 }

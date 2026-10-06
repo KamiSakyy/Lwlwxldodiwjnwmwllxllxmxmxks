@@ -9,8 +9,8 @@ import jo.mi0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o7 implements z01.d1, mi0 {
-    public final com.github.service.wrapper.j r;
-    public final v71.v s;
+    public com.github.service.wrapper.j r;
+    public v71.v s;
     public v71.d1 t;
 
     public o7(com.github.service.wrapper.j jVar, v71.v vVar) {

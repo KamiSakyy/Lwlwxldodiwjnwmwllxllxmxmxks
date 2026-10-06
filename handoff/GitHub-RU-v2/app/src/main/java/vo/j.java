@@ -2,7 +2,7 @@ package vo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final int a;
+    public int a;
 
     public j(int i) {
         this.a = i;

@@ -7,11 +7,11 @@ import java.time.LocalDate;
 public final class c0 {
     public static final b0 Companion = new b0();
     public static final c0 f = new c0(null, null, null, null, null);
-    public final LocalDate a;
-    public final String b;
-    public final Double c;
-    public final String d;
-    public final String e;
+    public LocalDate a;
+    public String b;
+    public Double c;
+    public String d;
+    public String e;
 
     public c0(LocalDate localDate, String str, Double d, String str2, String str3) {
         this.a = localDate;

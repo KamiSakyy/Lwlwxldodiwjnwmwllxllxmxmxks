@@ -7,7 +7,7 @@ import java.util.UUID;
 public final class d implements l0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final s0 f625a;
+    public s0 f625a;
 
     /* renamed from: b, reason: collision with root package name */
     public UUID f626b;

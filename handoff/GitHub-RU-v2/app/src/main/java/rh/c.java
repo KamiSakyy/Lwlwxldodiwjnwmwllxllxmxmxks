@@ -9,10 +9,10 @@ import jo.f4;
 public final class c extends f {
 
     public static final class a implements c {
-        public final fl.b a;
-        public final String b;
-        public final boolean c;
-        public final boolean d;
+        public fl.b a;
+        public String b;
+        public boolean c;
+        public boolean d;
 
         public a(fl.b bVar, String str, boolean z, boolean z2) {
             k71.k.g(bVar, "executionError");
@@ -59,10 +59,10 @@ public final class c extends f {
     }
 
     public static final class b implements c {
-        public final fl.b a;
-        public final int b;
-        public final boolean c;
-        public final boolean d;
+        public fl.b a;
+        public int b;
+        public boolean c;
+        public boolean d;
 
         public b(fl.b bVar, int i, boolean z, boolean z2) {
             k71.k.g(bVar, "executionError");
@@ -109,9 +109,9 @@ public final class c extends f {
 
     /* renamed from: rh.c$c, reason: collision with other inner class name */
     public static final class C0030c implements c {
-        public final fl.b a;
-        public final boolean b;
-        public final boolean c;
+        public fl.b a;
+        public boolean b;
+        public boolean c;
 
         public C0030c(fl.b bVar, boolean z) {
             k71.k.g(bVar, "executionError");
@@ -156,9 +156,9 @@ public final class c extends f {
     }
 
     public static final class d implements c {
-        public final fl.b a;
-        public final boolean b;
-        public final boolean c;
+        public fl.b a;
+        public boolean b;
+        public boolean c;
 
         public d(fl.b bVar, boolean z, boolean z2) {
             k71.k.g(bVar, "executionError");

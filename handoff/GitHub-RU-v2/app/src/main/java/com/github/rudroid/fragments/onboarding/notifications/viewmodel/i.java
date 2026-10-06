@@ -4,19 +4,19 @@ package com.github.rudroid.fragments.onboarding.notifications.viewmodel;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j f14273a;
+    public j f14273a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final k f14274b;
+    public k f14274b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final a f14275c;
+    public a f14275c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f14276d;
+    public int f14276d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f14277e;
+    public int f14277e;
 
     public i(j jVar, k kVar, a aVar, int i, int i10) {
         this.f14273a = jVar;

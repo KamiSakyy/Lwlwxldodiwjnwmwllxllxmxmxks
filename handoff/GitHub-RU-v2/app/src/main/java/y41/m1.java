@@ -4,12 +4,12 @@ import android.os.Build;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m1 {
-    public final int a;
-    public final int b;
-    public final long c;
-    public final long d;
-    public final boolean e;
-    public final int f;
+    public int a;
+    public int b;
+    public long c;
+    public long d;
+    public boolean e;
+    public int f;
 
     public m1(int i, int i2, long j, long j2, boolean z, int i3) {
         String str = Build.MODEL;

@@ -2,10 +2,10 @@ package wk0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x {
-    public final String a;
-    public final String b;
-    public final t c;
-    public final String d;
+    public String a;
+    public String b;
+    public t c;
+    public String d;
 
     public x(String str, String str2, t tVar, String str3) {
         this.a = str;

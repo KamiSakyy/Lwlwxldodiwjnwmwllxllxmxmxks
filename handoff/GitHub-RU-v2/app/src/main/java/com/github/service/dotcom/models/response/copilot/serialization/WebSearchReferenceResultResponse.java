@@ -11,9 +11,9 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class WebSearchReferenceResultResponse {
     public static final Companion Companion = new Companion();
-    public final String a;
-    public final String b;
-    public final String c;
+    public String a;
+    public String b;
+    public String c;
 
     public static final class Companion {
         public final KSerializer serializer() {

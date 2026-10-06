@@ -16,7 +16,7 @@ public final class t6 {
     public static final t6 x;
     public static final t6 y;
     public static final t6 z;
-    public final String r;
+    public String r;
 
     static {
         t6 t6Var = new t6("FRIDAY", 0, "FRIDAY");

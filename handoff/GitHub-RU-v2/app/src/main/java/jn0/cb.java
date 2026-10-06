@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cb {
-    public final String a;
-    public final ab b;
-    public final String c;
+    public String a;
+    public ab b;
+    public String c;
 
     public cb(String str, ab abVar, String str2) {
         this.a = str;

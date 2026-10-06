@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f6 {
-    public final String a;
-    public final String b;
-    public final h6 c;
-    public final i6 d;
-    public final kw0.a e;
+    public String a;
+    public String b;
+    public h6 c;
+    public i6 d;
+    public kw0.a e;
 
     public f6(String str, String str2, h6 h6Var, i6 i6Var, kw0.a aVar) {
         k71.k.g(str, "__typename");

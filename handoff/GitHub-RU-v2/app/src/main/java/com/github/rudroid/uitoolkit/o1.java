@@ -2,8 +2,8 @@ package com.github.rudroid.uitoolkit;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o1 {
-    public final int a;
-    public final long b;
+    public int a;
+    public long b;
 
     public o1(int i, long j) {
         this.a = i;

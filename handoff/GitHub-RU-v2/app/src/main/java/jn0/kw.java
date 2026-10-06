@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kw {
-    public final mw a;
+    public mw a;
 
     public kw(mw mwVar) {
         this.a = mwVar;

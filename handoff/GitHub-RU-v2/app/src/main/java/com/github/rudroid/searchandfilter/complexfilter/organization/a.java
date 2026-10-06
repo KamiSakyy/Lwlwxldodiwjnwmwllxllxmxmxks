@@ -4,8 +4,8 @@ import com.github.service.models.response.organizations.Organization;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final Organization a;
-    public final boolean b;
+    public Organization a;
+    public boolean b;
 
     public a(Organization organization, boolean z) {
         k71.k.g(organization, "organization");

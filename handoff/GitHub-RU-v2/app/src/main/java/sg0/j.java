@@ -4,10 +4,10 @@ import aa.h0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements h0 {
-    public final String a;
-    public final h b;
-    public final g c;
-    public final i d;
+    public String a;
+    public h b;
+    public g c;
+    public i d;
 
     public j(String str, h hVar, g gVar, i iVar) {
         k71.k.g(str, "__typename");

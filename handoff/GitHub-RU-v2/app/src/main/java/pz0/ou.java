@@ -10,7 +10,7 @@ public final class ou {
     public static final ou u;
     public static final /* synthetic */ ou[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         ou ouVar = new ou("CLOSED", 0, "CLOSED");

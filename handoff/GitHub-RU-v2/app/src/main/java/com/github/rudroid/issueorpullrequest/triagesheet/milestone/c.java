@@ -6,10 +6,10 @@ import java.util.ArrayList;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f16470a;
+    public boolean f16470a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f16471b;
+    public ArrayList f16471b;
 
     public c(ArrayList arrayList, boolean z10) {
         this.f16470a = z10;

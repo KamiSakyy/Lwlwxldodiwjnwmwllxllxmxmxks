@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t80 implements aaShadow.v0 {
-    public final c90 a;
-    public final String b;
-    public final String c;
+    public c90 a;
+    public String b;
+    public String c;
 
     public t80(c90 c90Var, String str, String str2) {
         this.a = c90Var;

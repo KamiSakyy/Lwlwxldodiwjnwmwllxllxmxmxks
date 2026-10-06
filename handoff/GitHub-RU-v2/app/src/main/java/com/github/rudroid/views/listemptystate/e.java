@@ -18,8 +18,8 @@ import le.z;
 public final class e extends m0 {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] f;
-    public final f d;
-    public final m2 e;
+    public f d;
+    public m2 e;
 
     public static final class a {
     }
@@ -36,9 +36,9 @@ public final class e extends m0 {
     }
 
     public static abstract class d implements z {
-        public final com.github.rudroid.views.listemptystate.a r;
-        public final int s;
-        public final String t;
+        public com.github.rudroid.views.listemptystate.a r;
+        public int s;
+        public String t;
 
         public d(com.github.rudroid.views.listemptystate.a aVar, int i, String str) {
             this.r = aVar;
@@ -120,4 +120,5 @@ public final class e extends m0 {
     }
     public Object o(Object p1) { return null; }
     public Object t(Object p1) { return null; }
+    public Object D(boolean) { return null; }
 }

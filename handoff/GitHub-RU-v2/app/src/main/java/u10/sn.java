@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sn {
-    public final String a;
-    public final String b;
-    public final a70.a c;
+    public String a;
+    public String b;
+    public a70.a c;
 
     public sn(String str, String str2, a70.a aVar) {
         this.a = str;

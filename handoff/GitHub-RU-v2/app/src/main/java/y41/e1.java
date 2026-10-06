@@ -2,10 +2,10 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e1 extends h2 {
-    public final g2 a;
-    public final String b;
-    public final String c;
-    public final long d;
+    public g2 a;
+    public String b;
+    public String c;
+    public long d;
 
     public e1(f1 f1Var, String str, String str2, long j) {
         this.a = f1Var;

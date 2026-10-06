@@ -7,7 +7,7 @@ public abstract class a {
     public static final class C0030a extends a {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f12887a;
+        public String f12887a;
 
         public C0030a(String str) {
             k71.k.g(str, "targetBranch");

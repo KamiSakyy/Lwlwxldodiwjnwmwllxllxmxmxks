@@ -2,11 +2,11 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w3 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final x3 d;
-    public final String e;
+    public String a;
+    public String b;
+    public boolean c;
+    public x3 d;
+    public String e;
 
     public w3(String str, String str2, boolean z, x3 x3Var, String str3) {
         this.a = str;

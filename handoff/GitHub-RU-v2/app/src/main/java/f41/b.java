@@ -24,4 +24,5 @@ public final class b implements d41.a {
         }
     }
     public Object C(Object p1) { return null; }
+    public Object C(Object) { return null; }
 }

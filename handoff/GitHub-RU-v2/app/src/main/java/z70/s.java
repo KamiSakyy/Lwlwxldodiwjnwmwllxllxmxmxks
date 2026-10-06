@@ -4,17 +4,17 @@ import hc0.bm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public final String a;
-    public final bm b;
-    public final String c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final t h;
-    public final boolean i;
-    public final q j;
-    public final g80.a k;
+    public String a;
+    public bm b;
+    public String c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public t h;
+    public boolean i;
+    public q j;
+    public g80.a k;
 
     public s(String str, bm bmVar, String str2, boolean z, boolean z2, boolean z3, boolean z4, t tVar, boolean z5, q qVar, g80.a aVar) {
         this.a = str;

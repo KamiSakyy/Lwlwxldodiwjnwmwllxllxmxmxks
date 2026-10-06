@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bu {
-    public final String a;
-    public final int b;
-    public final yt c;
-    public final String d;
+    public String a;
+    public int b;
+    public yt c;
+    public String d;
 
     public bu(String str, int i, yt ytVar, String str2) {
         this.a = str;

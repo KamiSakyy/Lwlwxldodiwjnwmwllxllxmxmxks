@@ -2,8 +2,8 @@ package pi0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final String a;
-    public final d b;
+    public String a;
+    public d b;
 
     public c(String str, d dVar) {
         k71.k.g(str, "__typename");

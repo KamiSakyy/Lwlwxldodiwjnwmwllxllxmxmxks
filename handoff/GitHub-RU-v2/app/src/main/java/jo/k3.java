@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k3 {
-    public final i3 a;
-    public final int b;
-    public final List c;
+    public i3 a;
+    public int b;
+    public List c;
 
     public k3(i3 i3Var, int i, List list) {
         this.a = i3Var;

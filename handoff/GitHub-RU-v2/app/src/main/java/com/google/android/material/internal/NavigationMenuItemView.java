@@ -31,14 +31,14 @@ public class NavigationMenuItemView extends g implements y {
     public int M;
     public boolean N;
     public boolean O;
-    public final boolean P;
-    public final CheckedTextView Q;
+    public boolean P;
+    public CheckedTextView Q;
     public FrameLayout R;
     public n S;
     public ColorStateList T;
     public boolean U;
     public Drawable V;
-    public final f W;
+    public f W;
 
     /* JADX WARN: Multi-variable type inference failed */
     public NavigationMenuItemView(Context context, AttributeSet attributeSet) {
@@ -266,4 +266,6 @@ public class NavigationMenuItemView extends g implements y {
     public static Object getResources(Object... a) {
         return null;
     }
+    public Object setContentDescription(Object) { return null; }
+    public Object setPadding(int, Object, int, Object) { return null; }
 }

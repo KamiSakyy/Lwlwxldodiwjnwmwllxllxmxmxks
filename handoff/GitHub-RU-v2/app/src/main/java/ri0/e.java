@@ -5,11 +5,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements aa.h0 {
-    public final String a;
-    public final ZonedDateTime b;
-    public final hn c;
-    public final String d;
-    public final p2 e;
+    public String a;
+    public ZonedDateTime b;
+    public hn c;
+    public String d;
+    public p2 e;
 
     public e(String str, ZonedDateTime zonedDateTime, hn hnVar, String str2, p2 p2Var) {
         this.a = str;

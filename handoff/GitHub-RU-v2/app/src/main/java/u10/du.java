@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class du {
-    public final hu a;
-    public final int b;
-    public final List c;
+    public hu a;
+    public int b;
+    public List c;
 
     public du(hu huVar, int i, List list) {
         this.a = huVar;

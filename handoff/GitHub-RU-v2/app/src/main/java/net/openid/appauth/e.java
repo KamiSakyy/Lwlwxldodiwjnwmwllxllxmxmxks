@@ -13,24 +13,24 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e implements d {
     public static final Set s = Collections.unmodifiableSet(new HashSet(Arrays.asList("client_id", "code_challenge", "code_challenge_method", "display", "login_hint", "prompt", "ui_locales", "redirect_uri", "response_mode", "response_type", "scope", "state", "claims", "claims_locales")));
-    public final l1 a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final Uri h;
-    public final String i;
-    public final String j;
-    public final String k;
-    public final String l;
-    public final String m;
-    public final String n;
-    public final String o;
-    public final JSONObject p;
-    public final String q;
-    public final Map r;
+    public l1 a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public String g;
+    public Uri h;
+    public String i;
+    public String j;
+    public String k;
+    public String l;
+    public String m;
+    public String n;
+    public String o;
+    public JSONObject p;
+    public String q;
+    public Map r;
 
     public e(l1 l1Var, String str, String str2, Uri uri, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, String str11, String str12, String str13, JSONObject jSONObject, String str14, Map map) {
         this.a = l1Var;
@@ -121,5 +121,5 @@ public final class e implements d {
     public final String getState() {
         return this.j;
     }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

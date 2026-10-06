@@ -8,13 +8,13 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final String a;
-    public final Set b;
-    public final Set c;
-    public final int d;
-    public final int e;
-    public final d f;
-    public final Set g;
+    public String a;
+    public Set b;
+    public Set c;
+    public int d;
+    public int e;
+    public d f;
+    public Set g;
 
     public a(String str, Set set, Set set2, int i, int i2, d dVar, Set set3) {
         this.a = str;

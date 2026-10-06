@@ -2,19 +2,19 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d1 {
-    public final String a;
-    public final n1 b;
-    public final hc0.bm c;
-    public final Integer d;
-    public final p1 e;
-    public final String f;
-    public final hc0.jl g;
-    public final String h;
-    public final String i;
-    public final i80.c j;
-    public final c40.c k;
-    public final aa0.c l;
-    public final y60.a m;
+    public String a;
+    public n1 b;
+    public hc0.bm c;
+    public Integer d;
+    public p1 e;
+    public String f;
+    public hc0.jl g;
+    public String h;
+    public String i;
+    public i80.c j;
+    public c40.c k;
+    public aa0.c l;
+    public y60.a m;
 
     public d1(String str, n1 n1Var, hc0.bm bmVar, Integer num, p1 p1Var, String str2, hc0.jl jlVar, String str3, String str4, i80.c cVar, c40.c cVar2, aa0.c cVar3, y60.a aVar) {
         this.a = str;

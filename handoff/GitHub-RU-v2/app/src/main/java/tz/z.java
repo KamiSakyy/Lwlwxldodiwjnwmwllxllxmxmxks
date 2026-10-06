@@ -2,9 +2,9 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z {
-    public final String a;
-    public final a1 b;
-    public final vx.a c;
+    public String a;
+    public a1 b;
+    public vx.a c;
 
     public z(String str, a1 a1Var, vx.a aVar) {
         k71.k.g(str, "__typename");

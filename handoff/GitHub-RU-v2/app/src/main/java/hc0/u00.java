@@ -9,7 +9,7 @@ public final class u00 {
     public static final u00 t;
     public static final /* synthetic */ u00[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         u00 u00Var = new u00("BRANCH_PROTECTION_RULE", 0, "BRANCH_PROTECTION_RULE");

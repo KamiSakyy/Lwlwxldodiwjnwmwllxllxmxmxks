@@ -13,14 +13,14 @@ import k71.k;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i implements Closeable {
     public boolean A;
-    public final h91.h B;
-    public final h91.h C;
+    public h91.h B;
+    public h91.h C;
     public a D;
-    public final byte[] E;
-    public final h91.j r;
-    public final h s;
-    public final boolean t;
-    public final boolean u;
+    public byte[] E;
+    public h91.j r;
+    public h s;
+    public boolean t;
+    public boolean u;
     public boolean v;
     public int w;
     public long x;

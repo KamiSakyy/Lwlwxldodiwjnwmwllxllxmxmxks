@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q00 {
-    public final n00 a;
-    public final p00 b;
-    public final String c;
-    public final String d;
+    public n00 a;
+    public p00 b;
+    public String c;
+    public String d;
 
     public q00(n00 n00Var, p00 p00Var, String str, String str2) {
         this.a = n00Var;

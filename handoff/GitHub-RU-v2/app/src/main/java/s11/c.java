@@ -4,9 +4,9 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final long a;
-    public final long b;
-    public final Set c;
+    public long a;
+    public long b;
+    public Set c;
 
     public c(long j, long j2, Set set) {
         this.a = j;

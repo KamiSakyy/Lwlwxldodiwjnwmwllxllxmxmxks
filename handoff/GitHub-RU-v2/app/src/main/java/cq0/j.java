@@ -5,17 +5,17 @@ import pz0.rm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public final int a;
-    public final int b;
-    public final n c;
-    public final i d;
-    public final List e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final rm i;
-    public final String j;
-    public final String k;
+    public int a;
+    public int b;
+    public n c;
+    public i d;
+    public List e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public rm i;
+    public String j;
+    public String k;
 
     public j(int i, int i2, n nVar, i iVar, List list, boolean z, boolean z2, boolean z3, rm rmVar, String str, String str2) {
         this.a = i;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nc {
-    public final String a;
-    public final mc b;
-    public final String c;
+    public String a;
+    public mc b;
+    public String c;
 
     public nc(String str, mc mcVar, String str2) {
         this.a = str;

@@ -28,23 +28,23 @@ import q81.y;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o {
-    public final t81.e a;
-    public final t0 b;
-    public final int c;
-    public final int d;
-    public final int e;
-    public final int f;
-    public final int g;
-    public final boolean h;
-    public final boolean i;
-    public final q81.a j;
-    public final s21.a k;
-    public final m l;
-    public final boolean m;
+    public t81.e a;
+    public t0 b;
+    public int c;
+    public int d;
+    public int e;
+    public int f;
+    public int g;
+    public boolean h;
+    public boolean i;
+    public q81.a j;
+    public s21.a k;
+    public m l;
+    public boolean m;
     public q1 n;
     public m9.i o;
     public d0 p;
-    public final x61.k q;
+    public x61.k q;
 
     public o(t81.e eVar, t0 t0Var, int i, int i2, int i3, int i4, int i5, boolean z, boolean z2, q81.a aVar, s21.a aVar2, m mVar, androidx.lifecycle.b bVar) {
         k71.k.g(eVar, "taskRunner");

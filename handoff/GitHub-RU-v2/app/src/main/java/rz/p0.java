@@ -2,9 +2,9 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p0 {
-    public final String a;
-    public final n0 b;
-    public final String c;
+    public String a;
+    public n0 b;
+    public String c;
 
     public p0(String str, n0 n0Var, String str2) {
         this.a = str;

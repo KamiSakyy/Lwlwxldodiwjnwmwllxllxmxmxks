@@ -15,9 +15,9 @@ import java.util.logging.Logger;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class s implements Closeable {
     public static final Logger u;
-    public final h91.j r;
-    public final r s;
-    public final d t;
+    public h91.j r;
+    public r s;
+    public d t;
 
     static {
         Logger logger = Logger.getLogger(g.class.getName());

@@ -9,7 +9,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i implements n0 {
     public static final f Companion = new f();
-    public final String r;
+    public String r;
 
     public i(String str) {
         this.r = str;

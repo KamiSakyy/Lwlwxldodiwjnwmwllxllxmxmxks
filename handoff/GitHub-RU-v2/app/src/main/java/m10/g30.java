@@ -14,7 +14,7 @@ public final class g30 {
     public static final g30 x;
     public static final g30 y;
     public static final /* synthetic */ g30[] z;
-    public final String r;
+    public String r;
 
     static {
         g30 g30Var = new g30("ABUSE", 0, "ABUSE");

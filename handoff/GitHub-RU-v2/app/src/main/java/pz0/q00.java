@@ -2,12 +2,12 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q00 {
-    public final s00 a;
-    public final y00 b;
-    public final String c;
-    public final aa1.b d;
-    public final aa1.b e;
-    public final y10 f;
+    public s00 a;
+    public y00 b;
+    public String c;
+    public aa1.b d;
+    public aa1.b e;
+    public y10 f;
 
     public q00(s00 s00Var, y00 y00Var, String str, aa1.b bVar, aa1.b bVar2, y10 y10Var) {
         k71.k.g(str, "name");

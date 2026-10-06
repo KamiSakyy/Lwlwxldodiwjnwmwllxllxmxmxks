@@ -2,12 +2,12 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 extends j2 {
-    public final long a;
-    public final String b;
-    public final d2 c;
-    public final e2 d;
-    public final f2 e;
-    public final i2 f;
+    public long a;
+    public String b;
+    public d2 c;
+    public e2 d;
+    public f2 e;
+    public i2 f;
 
     public p0(long j, String str, d2 d2Var, e2 e2Var, f2 f2Var, i2 i2Var) {
         this.a = j;

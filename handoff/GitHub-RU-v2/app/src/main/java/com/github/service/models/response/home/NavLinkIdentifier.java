@@ -19,7 +19,7 @@ public final class NavLinkIdentifier {
     public static final NavLinkIdentifier REPOSITORIES = new NavLinkIdentifier("REPOSITORIES", 5, "REPOSITORIES");
     public static final NavLinkIdentifier STARRED = new NavLinkIdentifier("STARRED", 6, "STARRED");
     public static final NavLinkIdentifier UNKNOWN__ = new NavLinkIdentifier("UNKNOWN__", 7, "UNKNOWN__");
-    private final String rawValue;
+    private String rawValue;
 
     private static final /* synthetic */ NavLinkIdentifier[] $values() {
         return new NavLinkIdentifier[]{DISCUSSIONS, ISSUES, ORGANIZATIONS, PROJECTS, PULL_REQUESTS, REPOSITORIES, STARRED, UNKNOWN__};

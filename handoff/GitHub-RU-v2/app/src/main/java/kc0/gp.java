@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gp {
-    public final fp a;
-    public final List b;
+    public fp a;
+    public List b;
 
     public gp(fp fpVar, List list) {
         this.a = fpVar;

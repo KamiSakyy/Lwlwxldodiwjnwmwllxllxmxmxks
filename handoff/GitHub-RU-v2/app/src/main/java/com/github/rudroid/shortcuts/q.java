@@ -3,8 +3,8 @@ package com.github.rudroid.shortcuts;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class q implements le.z {
     public static final a Companion = new a();
-    public final int r;
-    public final String s;
+    public int r;
+    public String s;
 
     public static final class a {
     }
@@ -18,7 +18,7 @@ public abstract class q implements le.z {
     }
 
     public static final class d extends q {
-        public final int t;
+        public int t;
 
         public d(int i) {
             super(no.a.k("Header", i), 2);
@@ -42,7 +42,7 @@ public abstract class q implements le.z {
     }
 
     public static final class e extends q {
-        public final wm.b t;
+        public wm.b t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(wm.b bVar) {
@@ -68,7 +68,7 @@ public abstract class q implements le.z {
     }
 
     public static final class f extends q {
-        public final wm.b t;
+        public wm.b t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public f(wm.b bVar) {

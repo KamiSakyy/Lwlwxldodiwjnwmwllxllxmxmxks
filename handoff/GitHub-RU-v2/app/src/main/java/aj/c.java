@@ -4,9 +4,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final b a;
-    public final d b;
-    public final e c;
+    public b a;
+    public d b;
+    public e c;
 
     public c(b bVar, d dVar, e eVar) {
         k.g(bVar, "fetchDiscussionMentionableItemsUseCase");

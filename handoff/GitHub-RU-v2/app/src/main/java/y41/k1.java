@@ -2,9 +2,9 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 {
-    public final l1 a;
-    public final n1 b;
-    public final m1 c;
+    public l1 a;
+    public n1 b;
+    public m1 c;
 
     public k1(l1 l1Var, n1 n1Var, m1 m1Var) {
         this.a = l1Var;

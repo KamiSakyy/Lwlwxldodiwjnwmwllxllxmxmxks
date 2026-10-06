@@ -7,7 +7,7 @@ import java.util.Map;
 public final class e {
     public final HashMap a = new HashMap();
     public final int b = 64;
-    public final int c;
+    public int c;
 
     public e(int i) {
         this.c = i;

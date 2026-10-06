@@ -789,4 +789,13 @@ public final class a implements aa.a {
         }
     }
 
+    public Object c(Object, boolean) { return null; }
+    public Object d(Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
 }

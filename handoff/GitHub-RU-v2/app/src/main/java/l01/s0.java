@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 {
-    public final l0 a;
-    public final ArrayList b;
-    public final t0 c;
+    public l0 a;
+    public ArrayList b;
+    public t0 c;
 
     public s0(l0 l0Var, ArrayList arrayList, t0 t0Var) {
         k71.k.g(l0Var, "defaultView");

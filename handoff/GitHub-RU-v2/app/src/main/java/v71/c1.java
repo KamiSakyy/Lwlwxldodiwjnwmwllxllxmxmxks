@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 public final class c1 extends f1 {
     public static final /* synthetic */ AtomicIntegerFieldUpdater w = AtomicIntegerFieldUpdater.newUpdater(c1.class, "_invoked$volatile");
     private volatile /* synthetic */ int _invoked$volatile;
-    public final f0.c v;
+    public f0.c v;
 
     public c1(f0.c cVar) {
         this.v = cVar;

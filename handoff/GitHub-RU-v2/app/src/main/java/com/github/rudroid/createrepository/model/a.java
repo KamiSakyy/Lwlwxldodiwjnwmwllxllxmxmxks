@@ -12,32 +12,32 @@ import x.i;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f10576a;
+    public String f10576a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f10577b;
+    public String f10577b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f10578c;
+    public String f10578c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f10579d;
+    public String f10579d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f10580e;
+    public boolean f10580e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final SimpleRepository f10581f;
+    public SimpleRepository f10581f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final boolean f10582g;
+    public boolean f10582g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final String f10583h;
-    public final LicenseTemplate i;
+    public String f10583h;
+    public LicenseTemplate i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final boolean f10584j;
+    public boolean f10584j;
 
     public a(String str, String str2, String str3, String str4, boolean z10, SimpleRepository simpleRepository, boolean z11, String str5, LicenseTemplate licenseTemplate, boolean z12) {
         k.g(str, "ownerLogin");

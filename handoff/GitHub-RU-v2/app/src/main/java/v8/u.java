@@ -4,7 +4,7 @@ package v8;
 public final class u extends v {
 
     /* renamed from: a, reason: collision with root package name */
-    public final i f32841a;
+    public i f32841a;
 
     public u(i iVar) {
         this.f32841a = iVar;

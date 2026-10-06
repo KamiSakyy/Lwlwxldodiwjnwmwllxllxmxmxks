@@ -4,8 +4,8 @@ import yz0.k2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final k2 a;
-    public final boolean b;
+    public k2 a;
+    public boolean b;
 
     public a(k2 k2Var, boolean z) {
         k71.k.g(k2Var, "label");

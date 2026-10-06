@@ -192,5 +192,5 @@ public final class t {
             t.d = new d(rVar, f, dVar, i, 1);
         }
     }
-    public Object L(Object p1) { return null; }
+    public static Object L(Object p1) { return null; }
 }

@@ -2,11 +2,11 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lo {
-    public final aa1.b a;
-    public final aa1.b b;
-    public final aa1.b c;
-    public final aa1.b d;
-    public final aa1.b e;
+    public aa1.b a;
+    public aa1.b b;
+    public aa1.b c;
+    public aa1.b d;
+    public aa1.b e;
 
     public lo(aa1.b bVar, aa1.b bVar2, aa1.b bVar3, aa1.b bVar4, aa1.b bVar5, int i) {
         int i2 = i & 1;

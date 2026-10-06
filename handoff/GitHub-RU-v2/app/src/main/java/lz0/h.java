@@ -9,8 +9,8 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements n0 {
     public static final f Companion = new f();
-    public final int r;
-    public final String s;
+    public int r;
+    public String s;
 
     public h(String str, int i) {
         this.r = i;

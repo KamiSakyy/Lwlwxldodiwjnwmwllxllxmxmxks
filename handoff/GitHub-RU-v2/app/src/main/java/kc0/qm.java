@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qm implements aaShadow.w0 {
     public static final lm Companion = new lm();
-    public final String r;
-    public final int s;
+    public String r;
+    public int s;
 
     public qm(String str, int i) {
         k71.k.g(str, "repositoryOwner");

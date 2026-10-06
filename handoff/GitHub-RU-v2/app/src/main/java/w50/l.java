@@ -10,22 +10,22 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final ZonedDateTime f;
-    public final Boolean g;
-    public final h h;
-    public final jc i;
-    public final k j;
-    public final ev k;
-    public final String l;
-    public final f m;
-    public final g n;
-    public final lc o;
-    public final c60.j p;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public int e;
+    public ZonedDateTime f;
+    public Boolean g;
+    public h h;
+    public jc i;
+    public k j;
+    public ev k;
+    public String l;
+    public f m;
+    public g n;
+    public lc o;
+    public c60.j p;
 
     public l(String str, String str2, String str3, String str4, int i, ZonedDateTime zonedDateTime, Boolean bool, h hVar, jc jcVar, k kVar, ev evVar, String str5, f fVar, g gVar, lc lcVar, c60.j jVar) {
         this.a = str;

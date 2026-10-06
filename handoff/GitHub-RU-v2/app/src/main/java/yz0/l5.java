@@ -8,13 +8,13 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l5 implements n5 {
     public static final Parcelable.Creator<l5> CREATOR = new e5(5);
-    public final List r;
-    public final List s;
-    public final i5 t;
-    public final boolean u;
-    public final boolean v;
-    public final String w;
-    public final List x;
+    public List r;
+    public List s;
+    public i5 t;
+    public boolean u;
+    public boolean v;
+    public String w;
+    public List x;
 
     public l5(List list, List list2, i5 i5Var, boolean z, boolean z2, String str, List list3) {
         k71.k.g(list, "templates");

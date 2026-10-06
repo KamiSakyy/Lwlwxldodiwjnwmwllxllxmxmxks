@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class de0 {
-    public final ce0 a;
+    public ce0 a;
 
     public de0(ce0 ce0Var) {
         this.a = ce0Var;

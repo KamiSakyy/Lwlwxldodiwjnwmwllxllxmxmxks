@@ -8,10 +8,10 @@ public final class y0 implements Parcelable {
     public static final Parcelable.Creator<y0> CREATOR = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public final x0 f14751r;
+    public x0 f14751r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f14752s;
+    public int f14752s;
 
     public static final class a implements Parcelable.Creator<y0> {
         @Override // android.os.Parcelable.Creator

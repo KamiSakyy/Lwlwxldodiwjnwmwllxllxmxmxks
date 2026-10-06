@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gb {
-    public final cb a;
-    public final hb b;
+    public cb a;
+    public hb b;
 
     public gb(cb cbVar, hb hbVar) {
         this.a = cbVar;

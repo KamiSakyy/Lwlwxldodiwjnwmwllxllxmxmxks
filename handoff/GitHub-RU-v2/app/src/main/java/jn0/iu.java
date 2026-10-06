@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iu {
-    public final String a;
-    public final fu b;
-    public final String c;
+    public String a;
+    public fu b;
+    public String c;
 
     public iu(String str, fu fuVar, String str2) {
         this.a = str;

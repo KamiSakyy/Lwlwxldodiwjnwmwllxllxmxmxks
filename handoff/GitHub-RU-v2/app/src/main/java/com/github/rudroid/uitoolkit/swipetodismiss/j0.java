@@ -4,9 +4,9 @@ import v2.x0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class j0 extends x0 {
-    public final g0 a;
-    public final boolean b;
-    public final boolean c;
+    public g0 a;
+    public boolean b;
+    public boolean c;
 
     public j0(g0 g0Var, boolean z, boolean z2) {
         k71.k.g(g0Var, "state");

@@ -18,11 +18,11 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
 
     public static final class a extends gShadow {
         public static final C0026a Companion = new C0026a();
-        public final u31.j r;
-        public final u31.j s;
-        public final u31.j t;
-        public final u31.j u;
-        public final int v;
+        public u31.j r;
+        public u31.j s;
+        public u31.j t;
+        public u31.j u;
+        public int v;
 
         /* renamed from: lg.g$a$a, reason: collision with other inner class name */
         public static final class C0026a {
@@ -189,11 +189,11 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
 
     public static final class b extends gShadow {
         public static final a Companion = new a();
-        public final GradientDrawable r;
-        public final GradientDrawable s;
-        public final GradientDrawable t;
-        public final GradientDrawable u;
-        public final int v;
+        public GradientDrawable r;
+        public GradientDrawable s;
+        public GradientDrawable t;
+        public GradientDrawable u;
+        public int v;
 
         public static final class a {
             public static final GradientDrawable a(a aVar, Context context, float[] fArr) {
@@ -267,11 +267,11 @@ public abstract class gShadow extends ForegroundColorSpan implements LineHeightS
 
     public static final class c extends gShadow {
         public static final a Companion = new a();
-        public final GradientDrawable r;
-        public final GradientDrawable s;
-        public final GradientDrawable t;
-        public final GradientDrawable u;
-        public final int v;
+        public GradientDrawable r;
+        public GradientDrawable s;
+        public GradientDrawable t;
+        public GradientDrawable u;
+        public int v;
 
         public static final class a {
             public static final GradientDrawable a(a aVar, Context context, lg.b bVar, float[] fArr) {

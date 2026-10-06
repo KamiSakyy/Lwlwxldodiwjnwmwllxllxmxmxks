@@ -6,16 +6,16 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final boolean e;
-    public final boolean f;
-    public final String g;
-    public final String h;
-    public final String i;
-    public final int j;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public boolean e;
+    public boolean f;
+    public String g;
+    public String h;
+    public String i;
+    public int j;
 
     public a(int i, String str, String str2, String str3, String str4, String str5, String str6, String str7, boolean z, boolean z2) {
         k71.k.g(str, "name");
@@ -65,4 +65,5 @@ public final class a {
     }
     public Object M(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object a(Object p1) { return null; }
+    public Object a(Object) { return null; }
 }

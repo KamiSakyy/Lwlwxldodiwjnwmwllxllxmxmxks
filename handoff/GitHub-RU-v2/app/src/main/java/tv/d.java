@@ -4,8 +4,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final String a;
-    public final eq.c b;
+    public String a;
+    public eq.c b;
 
     public d(String str, eq.c cVar) {
         k71.k.g(str, "__typename");

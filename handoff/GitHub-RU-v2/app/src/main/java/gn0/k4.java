@@ -2,8 +2,8 @@ package gn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k4 {
-    public final aa.u0 a;
-    public final String b;
+    public aa.u0 a;
+    public String b;
 
     public k4(aa.u0 u0Var, String str) {
         this.a = u0Var;

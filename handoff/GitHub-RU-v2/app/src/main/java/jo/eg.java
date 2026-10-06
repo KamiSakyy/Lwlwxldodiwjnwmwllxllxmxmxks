@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class eg {
-    public final String a;
-    public final String b;
-    public final cq.u2 c;
+    public String a;
+    public String b;
+    public cq.u2 c;
 
     public eg(String str, String str2, cq.u2 u2Var) {
         this.a = str;

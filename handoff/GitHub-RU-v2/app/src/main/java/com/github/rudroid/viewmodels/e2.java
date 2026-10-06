@@ -9,21 +9,21 @@ import java.util.concurrent.CancellationException;
 public final class e2 extends androidx.lifecycle.k1 implements v3, com.github.rudroid.utilities.viewmodel.b {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] H;
-    public final y71.i1 A;
-    public final n2 B;
+    public y71.i1 A;
+    public n2 B;
     public boolean C;
     public boolean D;
     public String E;
     public v71.q1 F;
     public v71.q1 G;
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c s;
-    public final androidx.lifecycle.a1 t;
-    public final zk.g0 u;
-    public final zk.h0 v;
-    public final zk.f0 w;
-    public final com.github.rudroid.activities.util.c x;
-    public final b2 y;
-    public final y71.y1 z;
+    public androidx.lifecycle.a1 t;
+    public zk.g0 u;
+    public zk.h0 v;
+    public zk.f0 w;
+    public com.github.rudroid.activities.util.c x;
+    public b2 y;
+    public y71.y1 z;
 
     public static final class a {
         public static void a(String str, String str2, Bundle bundle) {

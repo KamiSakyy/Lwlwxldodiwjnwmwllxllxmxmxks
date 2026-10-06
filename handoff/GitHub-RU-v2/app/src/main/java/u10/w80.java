@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w80 {
-    public final u80 a;
-    public final String b;
-    public final String c;
+    public u80 a;
+    public String b;
+    public String c;
 
     public w80(u80 u80Var, String str, String str2) {
         this.a = u80Var;

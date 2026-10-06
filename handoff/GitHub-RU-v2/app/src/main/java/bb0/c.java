@@ -9,17 +9,17 @@ import yz0.u1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements u1 {
-    public final a2 a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final com.github.service.models.response.a e;
-    public final String f;
-    public final String g;
-    public final String h;
-    public final int i;
-    public final boolean j;
-    public final String k;
+    public a2 a;
+    public String b;
+    public String c;
+    public boolean d;
+    public com.github.service.models.response.a e;
+    public String f;
+    public String g;
+    public String h;
+    public int i;
+    public boolean j;
+    public String k;
 
     public c(a2 a2Var) {
         k71.k.g(a2Var, "fragment");

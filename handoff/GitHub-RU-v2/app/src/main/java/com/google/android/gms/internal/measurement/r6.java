@@ -15,8 +15,8 @@ public final class r6 {
     public static final r6 t;
     public static final r6 u;
     public static final /* synthetic */ r6[] v;
-    public final s6 r;
-    public final int s;
+    public s6 r;
+    public int s;
 
     /* JADX INFO: Fake field, exist only in values array */
     r6 EF1;

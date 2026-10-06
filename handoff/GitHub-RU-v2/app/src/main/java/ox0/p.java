@@ -4,14 +4,14 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final int d;
-    public final gu e;
-    public final j0 f;
-    public final boolean g;
-    public final String h;
+    public String a;
+    public String b;
+    public boolean c;
+    public int d;
+    public gu e;
+    public j0 f;
+    public boolean g;
+    public String h;
 
     public p(String str, String str2, boolean z, int i, gu guVar, j0 j0Var, boolean z2, String str3) {
         this.a = str;

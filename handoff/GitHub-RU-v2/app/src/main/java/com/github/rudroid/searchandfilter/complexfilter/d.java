@@ -60,4 +60,5 @@ final class d extends c71.j implements j71.e {
         this.v = 2;
     }
     public Object k(Object p1) { return null; }
+    public Object k(Object) { return null; }
 }

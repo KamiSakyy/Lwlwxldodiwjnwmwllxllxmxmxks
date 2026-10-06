@@ -8,9 +8,9 @@ import l7.x1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final x1 a;
-    public final h b;
-    public final HashMap c;
+    public x1 a;
+    public h b;
+    public HashMap c;
 
     public e(Context context, h hVar) {
         x1 x1Var = new x1(context);

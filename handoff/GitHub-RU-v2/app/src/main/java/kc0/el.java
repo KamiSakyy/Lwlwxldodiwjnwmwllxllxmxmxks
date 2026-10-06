@@ -2,12 +2,12 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class el {
-    public final String a;
-    public final String b;
-    public final gn0.gg c;
-    public final boolean d;
-    public final cl e;
-    public final dl f;
+    public String a;
+    public String b;
+    public gn0.gg c;
+    public boolean d;
+    public cl e;
+    public dl f;
 
     public el(String str, String str2, gn0.gg ggVar, boolean z, cl clVar, dl dlVar) {
         this.a = str;

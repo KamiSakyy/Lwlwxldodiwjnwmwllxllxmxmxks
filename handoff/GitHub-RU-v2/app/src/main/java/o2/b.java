@@ -7,7 +7,7 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final KeyEvent f29963a;
+    public KeyEvent f29963a;
 
     public final boolean equals(Object obj) {
         if (obj instanceof b) {

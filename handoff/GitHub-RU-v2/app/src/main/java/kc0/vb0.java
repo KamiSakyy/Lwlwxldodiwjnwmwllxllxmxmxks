@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vb0 {
-    public final int a;
+    public int a;
 
     public vb0(int i) {
         this.a = i;

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r8 {
-    public final String a;
-    public final String b;
-    public final er0.o c;
+    public String a;
+    public String b;
+    public er0.o c;
 
     public r8(String str, String str2, er0.o oVar) {
         this.a = str;

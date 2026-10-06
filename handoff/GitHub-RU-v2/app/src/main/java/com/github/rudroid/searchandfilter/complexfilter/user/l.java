@@ -6,7 +6,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l extends n1 {
-    public final ce u;
+    public ce u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public l(ce ceVar, SearchAndFilterBaseFragment searchAndFilterBaseFragment) {

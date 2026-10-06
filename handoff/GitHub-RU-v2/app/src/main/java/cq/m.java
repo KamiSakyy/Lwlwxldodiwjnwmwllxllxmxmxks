@@ -4,14 +4,14 @@ import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements aa.h0 {
-    public final LocalDate a;
-    public final double b;
-    public final double c;
-    public final double d;
-    public final boolean e;
-    public final Double f;
-    public final Double g;
-    public final String h;
+    public LocalDate a;
+    public double b;
+    public double c;
+    public double d;
+    public boolean e;
+    public Double f;
+    public Double g;
+    public String h;
 
     public m(LocalDate localDate, double d, double d2, double d3, boolean z, Double d4, Double d5, String str) {
         this.a = localDate;

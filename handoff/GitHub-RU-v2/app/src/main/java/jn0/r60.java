@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r60 {
-    public final String a;
-    public final l60 b;
+    public String a;
+    public l60 b;
 
     public r60(String str, l60 l60Var) {
         k71.k.g(str, "__typename");

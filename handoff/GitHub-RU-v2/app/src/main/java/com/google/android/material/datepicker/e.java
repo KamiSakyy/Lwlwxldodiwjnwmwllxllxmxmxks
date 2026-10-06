@@ -10,9 +10,9 @@ import java.util.Locale;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e extends BaseAdapter {
-    public final Calendar r;
-    public final int s;
-    public final int t;
+    public Calendar r;
+    public int s;
+    public int t;
 
     public e() {
         Calendar c = t.c(null);

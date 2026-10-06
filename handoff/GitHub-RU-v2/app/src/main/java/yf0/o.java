@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements aa.h0 {
-    public final String a;
-    public final n b;
-    public final String c;
+    public String a;
+    public n b;
+    public String c;
 
     public o(String str, n nVar, String str2) {
         k71.k.g(str2, "__typename");

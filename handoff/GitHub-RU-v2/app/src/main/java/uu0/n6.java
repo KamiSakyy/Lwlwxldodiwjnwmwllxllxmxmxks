@@ -2,9 +2,9 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n6 {
-    public final String a;
-    public final String b;
-    public final fw0.z0 c;
+    public String a;
+    public String b;
+    public fw0.z0 c;
 
     public n6(String str, String str2, fw0.z0 z0Var) {
         this.a = str;

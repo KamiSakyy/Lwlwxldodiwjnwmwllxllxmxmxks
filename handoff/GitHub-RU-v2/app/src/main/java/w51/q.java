@@ -7,7 +7,7 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q extends d21.a {
     public static final Parcelable.Creator<q> CREATOR = new l7.c0(12);
-    public final Bundle r;
+    public Bundle r;
     public x.e s;
 
     public q(Bundle bundle) {

@@ -4,7 +4,7 @@ import m10.py;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final py a;
+    public py a;
 
     public a(py pyVar) {
         this.a = pyVar;

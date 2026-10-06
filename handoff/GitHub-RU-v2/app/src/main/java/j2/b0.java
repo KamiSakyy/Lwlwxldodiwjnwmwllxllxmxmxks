@@ -4,10 +4,10 @@ package j2;
 public abstract class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f26765a;
+    public boolean f26765a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f26766b;
+    public boolean f26766b;
 
     public b0(int i) {
         boolean z10 = (i & 1) == 0;

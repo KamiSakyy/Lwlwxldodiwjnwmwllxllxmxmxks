@@ -5,8 +5,8 @@ import z01.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public final oa.g a;
-    public final mj.c b;
+    public oa.g a;
+    public mj.c b;
 
     public n(oa.g gVar, mj.c cVar) {
         k71.k.g(gVar, "service");

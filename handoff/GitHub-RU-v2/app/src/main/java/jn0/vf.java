@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vf implements aaShadow.v0 {
-    public final bg a;
-    public final String b;
-    public final String c;
+    public bg a;
+    public String b;
+    public String c;
 
     public vf(bg bgVar, String str, String str2) {
         this.a = bgVar;

@@ -4,9 +4,9 @@ import ap0.e2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a1 {
-    public final String a;
-    public final y0 b;
-    public final e2 c;
+    public String a;
+    public y0 b;
+    public e2 c;
 
     public a1(String str, y0 y0Var, e2 e2Var) {
         k71.k.g(str, "__typename");

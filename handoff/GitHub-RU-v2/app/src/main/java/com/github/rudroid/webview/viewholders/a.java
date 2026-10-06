@@ -18,11 +18,11 @@ import x61.x;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends com.github.rudroid.adapters.viewholders.e<k5.f> implements GitHubWebView.g, o3 {
     public static final /* synthetic */ int A = 0;
-    public final int v;
-    public final float w;
-    public final s0 x;
+    public int v;
+    public float w;
+    public s0 x;
     public a.d y;
-    public final zh.h z;
+    public zh.h z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(vg vgVar, int i, float f, s0 s0Var) {
@@ -107,5 +107,5 @@ public final class a extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
 
 
     public Object y;
-    public Object W(Object p1) { return null; }
+    public static Object W(Object p1) { return null; }
 }

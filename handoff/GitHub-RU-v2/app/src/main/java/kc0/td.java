@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class td {
-    public final String a;
-    public final String b;
-    public final oj0.a4 c;
+    public String a;
+    public String b;
+    public oj0.a4 c;
 
     public td(String str, String str2, oj0.a4 a4Var) {
         this.a = str;

@@ -12,7 +12,7 @@ public final class zk {
     public static final zk w;
     public static final /* synthetic */ zk[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         zk zkVar = new zk("MERGE", 0, "MERGE");

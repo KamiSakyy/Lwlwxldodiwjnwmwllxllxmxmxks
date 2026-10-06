@@ -2,9 +2,9 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final String a;
-    public final String b;
-    public final b c;
+    public String a;
+    public String b;
+    public b c;
 
     public a(String str, String str2, b bVar) {
         k71.k.g(str, "provider");
@@ -35,5 +35,5 @@ public final class a {
         o.append(")");
         return o.toString();
     }
-    public Object o(Object p1, Object p2) { return null; }
+    public static Object o(Object p1, Object p2) { return null; }
 }

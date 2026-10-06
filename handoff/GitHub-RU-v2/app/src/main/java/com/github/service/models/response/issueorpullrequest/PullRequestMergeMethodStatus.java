@@ -11,7 +11,7 @@ public final class PullRequestMergeMethodStatus {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PullRequestMergeMethodStatus[] $VALUES;
     public static final l Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PullRequestMergeMethodStatus ALLOWED = new PullRequestMergeMethodStatus("ALLOWED", 0, "ALLOWED");
     public static final PullRequestMergeMethodStatus BLOCKED = new PullRequestMergeMethodStatus("BLOCKED", 1, "BLOCKED");
     public static final PullRequestMergeMethodStatus ALLOWED_WITH_BYPASS = new PullRequestMergeMethodStatus("ALLOWED_WITH_BYPASS", 2, "ALLOWED_WITH_BYPASS");

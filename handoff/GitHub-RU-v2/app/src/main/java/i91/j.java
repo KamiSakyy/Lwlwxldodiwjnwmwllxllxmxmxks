@@ -5,23 +5,23 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class j {
-    public final a0 a;
-    public final boolean b;
-    public final String c;
-    public final long d;
-    public final long e;
-    public final long f;
-    public final int g;
-    public final long h;
-    public final int i;
-    public final int j;
-    public final Long k;
-    public final Long l;
-    public final Long m;
-    public final Integer n;
-    public final Integer o;
-    public final Integer p;
-    public final ArrayList q;
+    public a0 a;
+    public boolean b;
+    public String c;
+    public long d;
+    public long e;
+    public long f;
+    public int g;
+    public long h;
+    public int i;
+    public int j;
+    public Long k;
+    public Long l;
+    public Long m;
+    public Integer n;
+    public Integer o;
+    public Integer p;
+    public ArrayList q;
 
     public j(a0 a0Var, boolean z, String str, long j, long j2, long j3, int i, long j4, int i2, int i3, Long l, Long l2, Long l3, Integer num, Integer num2, Integer num3) {
         k71.k.g(a0Var, "canonicalPath");

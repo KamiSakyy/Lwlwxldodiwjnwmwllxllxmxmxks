@@ -2,17 +2,17 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j80 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final gn0.hn d;
-    public final f80 e;
-    public final i80 f;
-    public final boolean g;
-    public final boolean h;
-    public final yd0.i i;
-    public final sg0.j j;
-    public final se0.c k;
+    public String a;
+    public String b;
+    public String c;
+    public gn0.hn d;
+    public f80 e;
+    public i80 f;
+    public boolean g;
+    public boolean h;
+    public yd0.i i;
+    public sg0.j j;
+    public se0.c k;
 
     public j80(String str, String str2, String str3, gn0.hn hnVar, f80 f80Var, i80 i80Var, boolean z, boolean z2, yd0.i iVar, sg0.j jVar, se0.c cVar) {
         this.a = str;

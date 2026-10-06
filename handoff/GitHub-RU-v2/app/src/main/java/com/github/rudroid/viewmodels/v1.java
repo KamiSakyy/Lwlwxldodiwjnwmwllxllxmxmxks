@@ -6,11 +6,11 @@ import java.util.concurrent.CancellationException;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v1 extends w3 {
     public v71.q1 A;
-    public final zk.g0 u;
-    public final zk.h0 v;
-    public final zk.f0 w;
-    public final com.github.rudroid.activities.util.c x;
-    public final androidx.lifecycle.p0 y;
+    public zk.g0 u;
+    public zk.h0 v;
+    public zk.f0 w;
+    public com.github.rudroid.activities.util.c x;
+    public androidx.lifecycle.p0 y;
     public x01.i z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

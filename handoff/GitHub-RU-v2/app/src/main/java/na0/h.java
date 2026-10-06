@@ -4,8 +4,8 @@ import aa.v0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements v0 {
-    public final j a;
-    public final i b;
+    public j a;
+    public i b;
 
     public h(j jVar, i iVar) {
         this.a = jVar;

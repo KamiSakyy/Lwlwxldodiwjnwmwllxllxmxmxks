@@ -6,17 +6,17 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 implements l0, Parcelable {
     public static final Parcelable.Creator<h0> CREATOR = new l7.c0(29);
-    public final String A;
-    public final Boolean B;
-    public final int r;
-    public final String s;
-    public final String t;
-    public final String u;
-    public final String v;
-    public final String w;
-    public final String x;
-    public final String y;
-    public final String z;
+    public String A;
+    public Boolean B;
+    public int r;
+    public String s;
+    public String t;
+    public String u;
+    public String v;
+    public String w;
+    public String x;
+    public String y;
+    public String z;
 
     public h0(int i, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, Boolean bool) {
         k71.k.g(str, "repoOwner");

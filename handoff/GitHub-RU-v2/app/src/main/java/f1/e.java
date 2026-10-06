@@ -30,7 +30,7 @@ public final class e {
         return null;
     }
 
-    public static Object b(Object... a) {
+    public static int b(Object... a) {
         return null;
     }
 
@@ -78,7 +78,7 @@ public final class e {
         return null;
     }
 
-    public static Object q(Object... a) {
+    public static Iterator q(Object... a) {
         return null;
     }
 
@@ -111,12 +111,13 @@ public final class e {
     public static Object v(Object... a) {
         return null;
     }
-    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object c(Object p1, Object p2, Object p3) { return null; }
-    public Object g(Object p1, Object p2) { return null; }
-    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object q(Object p1, Object p2) { return null; }
-    public Object r(Object p1, Object p2, Object p3) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object c(Object p1, Object p2, Object p3) { return null; }
+    public static Object g(Object p1, Object p2) { return null; }
+    public static Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object q(Object p1, Object p2) { return null; }
+    public static Object r(Object p1, Object p2, Object p3) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object) { return null; }
 }

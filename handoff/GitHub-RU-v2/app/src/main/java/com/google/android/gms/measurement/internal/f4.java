@@ -7,12 +7,12 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f4 extends d21.a {
     public static final Parcelable.Creator<f4> CREATOR = new c21.c0(8);
-    public final long r;
+    public long r;
     public byte[] s;
-    public final String t;
-    public final Bundle u;
-    public final int v;
-    public final long w;
+    public String t;
+    public Bundle u;
+    public int v;
+    public long w;
     public String x;
 
     public f4(long j, byte[] bArr, String str, Bundle bundle, int i, long j2, String str2) {

@@ -10,7 +10,7 @@ public final class jc {
     public static final jc u;
     public static final /* synthetic */ jc[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         jc jcVar = new jc("COMPLETED", 0, "COMPLETED");

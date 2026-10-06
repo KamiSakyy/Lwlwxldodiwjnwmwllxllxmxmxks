@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kl implements aaShadow.v0 {
-    public final rl a;
-    public final String b;
-    public final String c;
+    public rl a;
+    public String b;
+    public String c;
 
     public kl(rl rlVar, String str, String str2) {
         this.a = rlVar;

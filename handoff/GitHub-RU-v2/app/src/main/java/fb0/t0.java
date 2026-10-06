@@ -2,9 +2,9 @@ package fb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t0 {
-    public final int a;
-    public final int b;
-    public final s0 c;
+    public int a;
+    public int b;
+    public s0 c;
 
     public t0(int i, int i2, s0 s0Var) {
         this.a = i;

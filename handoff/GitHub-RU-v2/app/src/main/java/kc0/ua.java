@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ua implements aaShadow.v0 {
-    public final wa a;
+    public wa a;
 
     public ua(wa waVar) {
         this.a = waVar;

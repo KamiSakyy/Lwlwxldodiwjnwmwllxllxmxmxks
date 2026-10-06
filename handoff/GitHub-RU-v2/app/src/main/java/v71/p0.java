@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p0 implements a1 {
-    public final boolean r;
+    public boolean r;
 
     public p0(boolean z) {
         this.r = z;

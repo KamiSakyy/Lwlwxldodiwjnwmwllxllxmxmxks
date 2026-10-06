@@ -2,11 +2,11 @@ package sd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v {
-    public final String a;
-    public final a0 b;
-    public final z c;
-    public final b0 d;
-    public final c0 e;
+    public String a;
+    public a0 b;
+    public z c;
+    public b0 d;
+    public c0 e;
 
     public v(String str, a0 a0Var, z zVar, b0 b0Var, c0 c0Var) {
         k71.k.g(str, "__typename");

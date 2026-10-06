@@ -11,10 +11,10 @@ import x1.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c implements x1.g {
-    public final Object a;
-    public final Object b;
-    public final Object c;
-    public final Object d;
+    public Object a;
+    public Object b;
+    public Object c;
+    public Object d;
 
     public c(r91.a aVar) {
         ArrayList arrayList = new ArrayList();

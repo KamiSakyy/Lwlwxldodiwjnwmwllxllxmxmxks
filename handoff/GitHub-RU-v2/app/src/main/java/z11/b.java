@@ -10,11 +10,11 @@ import xn.i0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends d21.a {
-    public final int r;
-    public final int s;
-    public final PendingIntent t;
-    public final String u;
-    public final Integer v;
+    public int r;
+    public int s;
+    public PendingIntent t;
+    public String u;
+    public Integer v;
     public static final b w = new b(0, null, null);
     public static final Parcelable.Creator<b> CREATOR = new i0(6);
 

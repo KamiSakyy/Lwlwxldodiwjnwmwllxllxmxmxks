@@ -5,7 +5,8 @@ package m7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m0 {
-    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public static Object a(Object p1, Object p2, Object p3) { return null; }
     public Object c = null;
     public Object f = null;
+    public Object b(Object, Object) { return null; }
 }

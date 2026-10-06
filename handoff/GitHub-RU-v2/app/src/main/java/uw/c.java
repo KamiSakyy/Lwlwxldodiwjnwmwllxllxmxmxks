@@ -4,9 +4,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final String a;
-    public final a b;
-    public final b c;
+    public String a;
+    public a b;
+    public b c;
 
     public c(String str, a aVar, b bVar) {
         k.g(str, "__typename");
@@ -41,4 +41,7 @@ public final class c {
     public static final Object a = null;
     public static final Object f = null;
     public static final Object i = null;
+    public Object b(Object, Object) { return null; }
+    public Object b(Object, Object) { return null; }
+    public Object b(Object, Object) { return null; }
 }

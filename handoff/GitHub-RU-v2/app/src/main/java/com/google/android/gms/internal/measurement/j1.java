@@ -51,4 +51,5 @@ public final class j1 implements Application.ActivityLifecycleCallbacks {
     public final void onActivityStopped(Activity activity) {
         this.r.a(new i1(this, activity, 3));
     }
+    public Object b() { return null; }
 }

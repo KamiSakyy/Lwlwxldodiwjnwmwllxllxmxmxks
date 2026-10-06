@@ -4,9 +4,9 @@ import uu0.z4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public final String a;
-    public final i b;
-    public final z4 c;
+    public String a;
+    public i b;
+    public z4 c;
 
     public h(String str, i iVar, z4 z4Var) {
         k71.k.g(str, "__typename");

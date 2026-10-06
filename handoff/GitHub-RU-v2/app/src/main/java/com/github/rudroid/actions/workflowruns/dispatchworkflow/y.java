@@ -8,19 +8,19 @@ import jo.f4;
 public final class y {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f5410a;
+    public List f5410a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f5411b;
+    public String f5411b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f5412c;
+    public boolean f5412c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f5413d;
+    public boolean f5413d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f5414e;
+    public boolean f5414e;
 
     public y(List list, String str, boolean z10, boolean z11, boolean z12) {
         k71.k.g(list, "workflowInputs");

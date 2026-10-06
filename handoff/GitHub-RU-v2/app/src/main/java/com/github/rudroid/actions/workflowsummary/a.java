@@ -4,10 +4,10 @@ package com.github.rudroid.actions.workflowsummary;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f5520a;
+    public String f5520a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f5521b;
+    public String f5521b;
 
     public a(String str, String str2) {
         k71.k.g(str, "checkSuiteId");

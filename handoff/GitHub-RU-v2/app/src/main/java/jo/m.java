@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public final String a;
-    public final q b;
-    public final String c;
-    public final ms.i d;
+    public String a;
+    public q b;
+    public String c;
+    public ms.i d;
 
     public m(String str, q qVar, String str2, ms.i iVar) {
         this.a = str;

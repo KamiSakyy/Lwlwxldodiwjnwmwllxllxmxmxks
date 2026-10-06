@@ -6,10 +6,10 @@ import a0.p;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Float f25652a;
+    public Float f25652a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final p f25653b;
+    public p f25653b;
 
     public a(Float f6, p pVar) {
         this.f25652a = f6;

@@ -36,4 +36,5 @@ public final class a extends a5.b {
 
     public a(Object... a) {
     }
+    public Object ordinal() { return null; }
 }

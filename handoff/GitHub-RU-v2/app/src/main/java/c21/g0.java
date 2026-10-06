@@ -13,11 +13,11 @@ public final class g0 {
     public static g0 h;
     public static HandlerThread i;
     public final HashMap a = new HashMap();
-    public final Context b;
+    public Context b;
     public volatile com.google.android.gms.internal.measurement.h0 c;
-    public final f21.a d;
-    public final long e;
-    public final long f;
+    public f21.a d;
+    public long e;
+    public long f;
 
     public g0(Context context, Looper looper) {
         f0 f0Var = new f0(0, this);

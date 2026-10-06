@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oo {
-    public final no a;
-    public final List b;
+    public no a;
+    public List b;
 
     public oo(no noVar, List list) {
         this.a = noVar;

@@ -6,18 +6,18 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v0 extends b1 implements Parcelable {
     public static final Parcelable.Creator<v0> CREATOR = new i0(3);
-    public final g A;
-    public final boolean B;
-    public final boolean C;
-    public final boolean r;
-    public final String s;
-    public final String t;
-    public final v u;
-    public final boolean v;
-    public final j w;
-    public final h x;
-    public final m y;
-    public final k z;
+    public g A;
+    public boolean B;
+    public boolean C;
+    public boolean r;
+    public String s;
+    public String t;
+    public v u;
+    public boolean v;
+    public j w;
+    public h x;
+    public m y;
+    public k z;
 
     public v0(String str, String str2, g gVar, h hVar, j jVar, k kVar, m mVar, v vVar, boolean z, boolean z2, boolean z3, boolean z4) {
         k71.k.g(str, "name");

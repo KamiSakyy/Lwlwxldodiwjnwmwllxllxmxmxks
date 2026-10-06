@@ -6,4 +6,5 @@ public abstract class c {
 
     public abstract a71.c[] b(a aVar);
     public Object v(Object p1) { return null; }
+    public Object v(Object) { return null; }
 }

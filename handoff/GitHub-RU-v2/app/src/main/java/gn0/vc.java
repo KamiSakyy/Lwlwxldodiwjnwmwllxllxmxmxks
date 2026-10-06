@@ -7,7 +7,7 @@ public final class vc {
     public static final uc Companion;
     public static final vc s;
     public static final /* synthetic */ vc[] t;
-    public final String r;
+    public String r;
 
     static {
         vc vcVar = new vc("CLOSE_REFERENCES", 0, "CLOSE_REFERENCES");

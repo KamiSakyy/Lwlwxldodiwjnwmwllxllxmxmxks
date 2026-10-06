@@ -16,7 +16,7 @@ import w61.i;
 public final class SerializableSimpleRepositoryList implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final ArrayList f15003r;
+    public ArrayList f15003r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SerializableSimpleRepositoryList> CREATOR = new a();
 

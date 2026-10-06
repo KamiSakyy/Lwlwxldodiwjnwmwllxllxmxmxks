@@ -7,12 +7,12 @@ import v71.q1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 extends k1 implements androidx.lifecycle.i {
-    public final dn.p s;
-    public final dn.z t;
-    public final com.github.rudroid.twofactor.missed.d u;
-    public final com.github.rudroid.twofactor.missed.g v;
-    public final x71.h w;
-    public final y71.d x;
+    public dn.p s;
+    public dn.z t;
+    public com.github.rudroid.twofactor.missed.d u;
+    public com.github.rudroid.twofactor.missed.g v;
+    public x71.h w;
+    public y71.d x;
     public q1 y;
     public q1 z;
 

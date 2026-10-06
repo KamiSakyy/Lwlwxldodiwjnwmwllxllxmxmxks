@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d {
-    public final e0 c;
+    public e0 c;
     public int f;
     public int g;
     public int a = 4096;
@@ -162,4 +162,5 @@ public final class d {
     }
     public Object b(Object p1, Object p2) { return null; }
     public Object e() { return null; }
+    public Object b(Object, Object) { return null; }
 }

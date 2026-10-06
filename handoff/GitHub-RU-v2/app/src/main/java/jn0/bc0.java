@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bc0 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final pz0.zs e;
-    public final String f;
-    public final List g;
-    public final pz0.py h;
-    public final String i;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public pz0.zs e;
+    public String f;
+    public List g;
+    public pz0.py h;
+    public String i;
 
     public bc0(String str, boolean z, boolean z2, boolean z3, pz0.zs zsVar, String str2, List list, pz0.py pyVar, String str3) {
         this.a = str;

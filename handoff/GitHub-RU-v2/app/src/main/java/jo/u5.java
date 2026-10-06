@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u5 {
-    public final t5 a;
-    public final String b;
-    public final int c;
-    public final ArrayList d;
+    public t5 a;
+    public String b;
+    public int c;
+    public ArrayList d;
 
     public u5(t5 t5Var, String str, int i, ArrayList arrayList) {
         this.a = t5Var;

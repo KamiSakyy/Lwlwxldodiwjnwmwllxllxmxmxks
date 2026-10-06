@@ -9,7 +9,7 @@ public final class o4 {
     public static final o4 t;
     public static final /* synthetic */ o4[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         o4 o4Var = new o4("COLLABORATOR", 0, "COLLABORATOR");

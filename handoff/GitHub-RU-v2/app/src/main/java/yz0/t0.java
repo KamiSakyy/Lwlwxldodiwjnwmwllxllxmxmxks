@@ -4,14 +4,14 @@ import com.github.service.models.response.IssueOrPullRequestState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 {
-    public final String a;
-    public final IssueOrPullRequestState b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final com.github.service.models.response.a g;
-    public final boolean h;
+    public String a;
+    public IssueOrPullRequestState b;
+    public String c;
+    public int d;
+    public String e;
+    public String f;
+    public com.github.service.models.response.a g;
+    public boolean h;
 
     public t0(String str, IssueOrPullRequestState issueOrPullRequestState, String str2, int i, String str3, String str4, com.github.service.models.response.a aVar, boolean z) {
         k71.k.g(issueOrPullRequestState, "state");

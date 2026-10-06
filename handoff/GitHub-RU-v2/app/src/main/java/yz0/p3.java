@@ -4,10 +4,10 @@ import java.time.LocalTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p3 {
-    public final com.github.rudroid.common.f a;
-    public final LocalTime b;
-    public final LocalTime c;
-    public final String d;
+    public com.github.rudroid.common.f a;
+    public LocalTime b;
+    public LocalTime c;
+    public String d;
 
     public p3(com.github.rudroid.common.f fVar, String str, LocalTime localTime, LocalTime localTime2) {
         k71.k.g(fVar, "day");

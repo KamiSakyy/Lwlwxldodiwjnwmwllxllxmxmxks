@@ -179,4 +179,5 @@ public final class o {
         }
     }
     public Object z() { return null; }
+    public Object a(Object, Object) { return null; }
 }

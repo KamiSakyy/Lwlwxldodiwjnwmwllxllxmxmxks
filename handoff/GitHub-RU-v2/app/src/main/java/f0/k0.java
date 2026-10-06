@@ -8,10 +8,10 @@ import android.widget.EdgeEffect;
 public final class k0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f22316a;
+    public Context f22316a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f22317b;
+    public int f22317b;
 
     /* renamed from: c, reason: collision with root package name */
     public long f22318c = 0;

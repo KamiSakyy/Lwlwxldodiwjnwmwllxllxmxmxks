@@ -5,8 +5,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public final int a;
-    public final List b;
+    public int a;
+    public List b;
 
     public m0(int i, List list) {
         this.a = i;
@@ -31,6 +31,6 @@ public final class m0 {
     public final String toString() {
         return f4.i(this.a, "CopilotLicenseFeatureSet(title=", ", features=", ")", this.b);
     }
-    public Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

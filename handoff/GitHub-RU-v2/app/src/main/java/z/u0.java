@@ -4,10 +4,10 @@ package z;
 public final class u0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f34480a;
+    public float f34480a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final a0.d0 f34481b;
+    public a0.d0 f34481b;
 
     public u0(float f6, a0.d0 d0Var) {
         this.f34480a = f6;

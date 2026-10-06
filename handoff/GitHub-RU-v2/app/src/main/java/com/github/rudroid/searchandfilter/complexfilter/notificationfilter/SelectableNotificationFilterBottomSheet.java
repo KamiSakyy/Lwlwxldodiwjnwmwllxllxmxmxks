@@ -9,9 +9,9 @@ import com.github.commonandroid.views.ScrollableTitleToolbar;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableNotificationFilterBottomSheet extends Hilt_SelectableNotificationFilterBottomSheet {
     public static final a Companion = new a();
-    public final l1 Y0;
-    public final int Z0;
-    public final int a1;
+    public l1 Y0;
+    public int Z0;
+    public int a1;
 
     public static final class a {
     }

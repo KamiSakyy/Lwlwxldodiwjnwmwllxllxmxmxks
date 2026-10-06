@@ -2,15 +2,15 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class io {
-    public final String a;
-    public final String b;
-    public final gn0.lm c;
-    public final String d;
-    public final se0.c e;
-    public final aj0.c f;
-    public final sk0.c g;
-    public final yh0.a h;
-    public final qh0.a i;
+    public String a;
+    public String b;
+    public gn0.lm c;
+    public String d;
+    public se0.c e;
+    public aj0.c f;
+    public sk0.c g;
+    public yh0.a h;
+    public qh0.a i;
 
     public io(String str, String str2, gn0.lm lmVar, String str3, se0.c cVar, aj0.c cVar2, sk0.c cVar3, yh0.a aVar, qh0.a aVar2) {
         this.a = str;

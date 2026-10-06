@@ -14,35 +14,35 @@ import y71.y1;
 @LogTag(tag = "AwesomeListsViewModel")
 /* loaded from: /home/user/work/p/classes.dex */
 public final class k0 extends k1 implements v3 {
-    public final y1 A;
-    public final i1 B;
-    public final u C;
+    public y1 A;
+    public i1 B;
+    public u C;
     public q1 D;
     public q1 E;
 
     /* renamed from: s, reason: collision with root package name */
-    public final rk.b f12505s;
+    public rk.b f12505s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final rk.a f12506t;
+    public rk.a f12506t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final rk.c f12507u;
+    public rk.c f12507u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final kj.i f12508v;
+    public kj.i f12508v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final kj.i0 f12509w;
+    public kj.i0 f12509w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final com.github.rudroid.explore.d f12510x;
+    public com.github.rudroid.explore.d f12510x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f12511y;
+    public com.github.rudroid.activities.util.c f12511y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final qe.a f12512z;
+    public qe.a f12512z;
 
     public k0(rk.b bVar, rk.a aVar, rk.c cVar, kj.i iVar, kj.i0 i0Var, com.github.rudroid.explore.d dVar, com.github.rudroid.activities.util.c cVar2, qe.a aVar2) {
         k71.k.g(bVar, "observeAwesomeTopicsUseCase");

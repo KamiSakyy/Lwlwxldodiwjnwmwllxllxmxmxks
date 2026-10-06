@@ -2,10 +2,10 @@ package e50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y0 implements aa.h0 {
-    public final String a;
-    public final int b;
-    public final x0 c;
-    public final String d;
+    public String a;
+    public int b;
+    public x0 c;
+    public String d;
 
     public y0(String str, int i, x0 x0Var, String str2) {
         this.a = str;

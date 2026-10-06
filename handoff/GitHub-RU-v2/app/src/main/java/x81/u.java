@@ -11,7 +11,7 @@ import okhttp3.internal.http2.StreamResetException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u implements k0 {
-    public final long r;
+    public long r;
     public boolean s;
     public final h91.h t = new h91.h();
     public final h91.h u = new h91.h();

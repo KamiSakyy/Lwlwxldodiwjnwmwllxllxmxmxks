@@ -36,10 +36,10 @@ import z01.z0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements p0, mi0, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
-    public final v u;
-    public final s01.p v;
+    public com.github.service.wrapper.j s;
+    public com.github.service.wrapper.b t;
+    public v u;
+    public s01.p v;
 
     public u(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v vVar, int i) {
         this.r = i;

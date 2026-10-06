@@ -8,21 +8,21 @@ public abstract class f3 implements zh.b {
     public static final b Companion = new b();
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f19308r;
+    public int f19308r;
 
     public static final class a extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f19309s;
+        public String f19309s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final int f19310t;
+        public int f19310t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final StatusState f19311u;
+        public StatusState f19311u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final boolean f19312v;
+        public boolean f19312v;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(String str, int i, StatusState statusState, boolean z10) {
@@ -70,19 +70,19 @@ public abstract class f3 implements zh.b {
     public static final class c extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final p01.j f19313s;
+        public p01.j f19313s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19314t;
+        public String f19314t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final boolean f19315u;
+        public boolean f19315u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f19316v;
+        public String f19316v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final String f19317w;
+        public String f19317w;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(p01.j jVar, String str, boolean z10, String str2) {
@@ -128,28 +128,28 @@ public abstract class f3 implements zh.b {
     public static final class d extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f19318s;
+        public int f19318s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19319t;
+        public String f19319t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final a f19320u;
+        public a f19320u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final Integer f19321v;
+        public Integer f19321v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final Integer f19322w;
+        public Integer f19322w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final int f19323x;
+        public int f19323x;
 
         /* renamed from: y, reason: collision with root package name */
-        public final Integer f19324y;
+        public Integer f19324y;
 
         /* renamed from: z, reason: collision with root package name */
-        public final String f19325z;
+        public String f19325z;
 
         /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
         /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -291,22 +291,22 @@ public abstract class f3 implements zh.b {
     public static final class e extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final int f19335s;
+        public int f19335s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19336t;
+        public String f19336t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final Integer f19337u;
+        public Integer f19337u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final Integer f19338v;
+        public Integer f19338v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final p01.d f19339w;
+        public p01.d f19339w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final String f19340x;
+        public String f19340x;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(int i, String str, Integer num, Integer num2, p01.d dVar) {
@@ -360,10 +360,10 @@ public abstract class f3 implements zh.b {
     public static final class f extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f19341s;
+        public String f19341s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final boolean f19342t;
+        public boolean f19342t;
 
         public f(String str, boolean z10) {
             super(7);
@@ -416,7 +416,7 @@ public abstract class f3 implements zh.b {
     public static final class h extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f19343s;
+        public String f19343s;
 
         public h() {
             super(3);
@@ -443,10 +443,10 @@ public abstract class f3 implements zh.b {
     public static final class i extends f3 {
 
         /* renamed from: s, reason: collision with root package name */
-        public final ArrayList f19344s;
+        public ArrayList f19344s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final boolean f19345t;
+        public boolean f19345t;
 
         public i(ArrayList arrayList, boolean z10) {
             super(6);

@@ -11,15 +11,15 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 extends androidx.lifecycle.k1 implements v3 {
     public static final /* synthetic */ r71.e[] C;
-    public final y1 A;
-    public final y71.i1 B;
-    public final ll.d s;
-    public final lm.m t;
-    public final com.github.rudroid.activities.util.c u;
-    public final w v;
-    public final StarredReposAndListsRoute w;
+    public y1 A;
+    public y71.i1 B;
+    public ll.d s;
+    public lm.m t;
+    public com.github.rudroid.activities.util.c u;
+    public w v;
+    public StarredReposAndListsRoute w;
     public x01.i x;
-    public final g0 y;
+    public g0 y;
     public q1 z;
 
     static {

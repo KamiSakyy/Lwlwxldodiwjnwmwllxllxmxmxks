@@ -9,14 +9,14 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j5 extends k5 {
     public static final Parcelable.Creator<j5> CREATOR = new e5(4);
-    public final String s;
-    public final String t;
-    public final String u;
-    public final String v;
-    public final String w;
-    public final Object x;
-    public final Object y;
-    public final IssueType z;
+    public String s;
+    public String t;
+    public String u;
+    public String v;
+    public String w;
+    public Object x;
+    public Object y;
+    public IssueType z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j5(String str, String str2, String str3, String str4, String str5, List list, List list2, IssueType issueType) {

@@ -16,14 +16,14 @@ import y71.y1;
 public final class s extends k1 {
     public static final a Companion = new a();
     public a1 A;
-    public final String B;
-    public final com.github.rudroid.activities.util.c s;
-    public final q10.g t;
-    public final y1 u;
-    public final i1 v;
-    public final y1 w;
+    public String B;
+    public com.github.rudroid.activities.util.c s;
+    public q10.g t;
+    public y1 u;
+    public i1 v;
+    public y1 w;
     public String x;
-    public final y1 y;
+    public y1 y;
     public String z;
 
     public static final class a {
@@ -139,7 +139,7 @@ public final class s extends k1 {
         h hVar2 = (h) ((g1) y1Var.getValue()).getData();
         return (hVar2 != null ? hVar2.e : null) != null;
     }
-    public Object I(Object p1) { return null; }
+    public static Object I(Object p1) { return null; }
     public Object t() { return null; }
     public Object u() { return null; }
 }

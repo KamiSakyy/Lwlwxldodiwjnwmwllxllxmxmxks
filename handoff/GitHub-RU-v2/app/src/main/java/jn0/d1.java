@@ -2,19 +2,19 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d1 {
-    public final String a;
-    public final n1 b;
-    public final pz0.cu c;
-    public final Integer d;
-    public final p1 e;
-    public final String f;
-    public final pz0.kt g;
-    public final String h;
-    public final String i;
-    public final gu0.c j;
-    public final yp0.c k;
-    public final bw0.c l;
-    public final at0.a m;
+    public String a;
+    public n1 b;
+    public pz0.cu c;
+    public Integer d;
+    public p1 e;
+    public String f;
+    public pz0.kt g;
+    public String h;
+    public String i;
+    public gu0.c j;
+    public yp0.c k;
+    public bw0.c l;
+    public at0.a m;
 
     public d1(String str, n1 n1Var, pz0.cu cuVar, Integer num, p1 p1Var, String str2, pz0.kt ktVar, String str3, String str4, gu0.c cVar, yp0.c cVar2, bw0.c cVar3, at0.a aVar) {
         this.a = str;

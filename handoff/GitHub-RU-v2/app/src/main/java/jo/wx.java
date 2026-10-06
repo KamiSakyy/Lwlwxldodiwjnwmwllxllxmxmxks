@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wx {
-    public final int a;
+    public int a;
 
     public wx(int i) {
         this.a = i;

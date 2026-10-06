@@ -8,8 +8,8 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends d {
-    public final f8 u;
-    public final int v;
+    public f8 u;
+    public int v;
 
     public f(f8 f8Var, int i, a71.h hVar, int i2, x71.a aVar) {
         super(hVar, i2, aVar);

@@ -13,7 +13,7 @@ import yz0.v2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends e0<com.github.rudroid.searchandfilter.complexfilter.milestone.a> {
     public static final a Companion = new a();
-    public final SelectableMilestoneFragment f;
+    public SelectableMilestoneFragment f;
 
     public static final class a {
     }

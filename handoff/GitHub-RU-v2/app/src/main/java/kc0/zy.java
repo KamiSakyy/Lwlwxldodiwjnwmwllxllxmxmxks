@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zy {
-    public final xy a;
-    public final String b;
-    public final String c;
+    public xy a;
+    public String b;
+    public String c;
 
     public zy(xy xyVar, String str, String str2) {
         this.a = xyVar;

@@ -5,8 +5,8 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class r {
     public static final /* synthetic */ int c = 0;
-    public final t a;
-    public final t b;
+    public t a;
+    public t b;
 
     public r(t tVar, t tVar2) {
         this.a = tVar;

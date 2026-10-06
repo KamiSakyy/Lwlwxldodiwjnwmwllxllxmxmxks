@@ -2,9 +2,9 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d1 implements aa.v0 {
-    public final k1 a;
-    public final String b;
-    public final String c;
+    public k1 a;
+    public String b;
+    public String c;
 
     public d1(k1 k1Var, String str, String str2) {
         this.a = k1Var;

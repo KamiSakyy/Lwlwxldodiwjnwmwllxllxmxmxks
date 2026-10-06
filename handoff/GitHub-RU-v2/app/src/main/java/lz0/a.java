@@ -4,7 +4,7 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final ZonedDateTime a;
+    public ZonedDateTime a;
 
     public a(ZonedDateTime zonedDateTime) {
         this.a = zonedDateTime;

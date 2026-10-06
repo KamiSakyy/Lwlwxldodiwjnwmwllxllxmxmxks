@@ -12,7 +12,7 @@ public final class OwnerProjectsEntryPointRoute implements a {
     public static final Companion Companion = new Companion();
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f17753r;
+    public String f17753r;
 
     public static final class Companion {
         public final KSerializer serializer() {

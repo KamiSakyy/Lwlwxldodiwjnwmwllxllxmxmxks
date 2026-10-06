@@ -2,13 +2,13 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z0 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final long d;
-    public final k e;
-    public final String f;
-    public final String g;
+    public String a;
+    public String b;
+    public int c;
+    public long d;
+    public k e;
+    public String f;
+    public String g;
 
     public z0(String str, String str2, int i, long j, k kVar, String str3, String str4) {
         k71.k.g(str, "sessionId");

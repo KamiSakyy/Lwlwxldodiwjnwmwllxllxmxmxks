@@ -7,10 +7,10 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final int a;
-    public final int b;
-    public final String c;
-    public final String d;
+    public int a;
+    public int b;
+    public String c;
+    public String d;
 
     public a(int i, int i2, String str, String str2) {
         k.g(str, "type");
@@ -39,5 +39,5 @@ public final class a {
     public final String toString() {
         return i.k(i.m(this.a, this.b, "CodeBlockVulnerability(startOffset=", ", endOffset=", ", type="), this.c, ", description=", this.d, ")");
     }
-    public Object c(Object p1, Object p2) { return null; }
+    public static Object c(Object p1, Object p2) { return null; }
 }

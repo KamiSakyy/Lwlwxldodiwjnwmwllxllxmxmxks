@@ -7,13 +7,13 @@ import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final f40 d;
-    public final List e;
-    public final l f;
-    public final String g;
+    public String a;
+    public String b;
+    public boolean c;
+    public f40 d;
+    public List e;
+    public l f;
+    public String g;
 
     public n(String str, String str2, boolean z, f40 f40Var, List list, l lVar, String str3) {
         this.a = str;

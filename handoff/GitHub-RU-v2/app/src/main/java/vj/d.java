@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final String a;
-    public final long b;
+    public String a;
+    public long b;
 
     public d(String str) {
         long currentTimeMillis = System.currentTimeMillis();

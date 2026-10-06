@@ -2,7 +2,7 @@ package e50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f0 {
-    public final int a;
+    public int a;
 
     public f0(int i) {
         this.a = i;

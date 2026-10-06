@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o1 {
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public o1(String str, String str2) {
         this.a = str;

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fa implements aaShadow.v0 {
-    public final ia a;
+    public ia a;
 
     public fa(ia iaVar) {
         this.a = iaVar;

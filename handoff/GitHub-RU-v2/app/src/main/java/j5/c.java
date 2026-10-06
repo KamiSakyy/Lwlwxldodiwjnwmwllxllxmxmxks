@@ -15,10 +15,10 @@ public final class c implements Comparator {
     public final Rect f27218b = new Rect();
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f27219c;
+    public boolean f27219c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final z0 f27220d;
+    public z0 f27220d;
 
     public c(boolean z10, z0 z0Var) {
         this.f27219c = z10;

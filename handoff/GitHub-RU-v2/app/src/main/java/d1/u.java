@@ -4,22 +4,22 @@ package d1;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f21230a;
+    public long f21230a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f21231b;
+    public int f21231b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f21232c;
+    public int f21232c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f21233d;
+    public int f21233d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final int f21234e;
+    public int f21234e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final g3.m0 f21235f;
+    public g3.m0 f21235f;
 
     public u(long j10, int i, int i10, int i11, int i12, g3.m0 m0Var) {
         this.f21230a = j10;

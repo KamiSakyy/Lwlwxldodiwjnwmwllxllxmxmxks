@@ -10,19 +10,19 @@ import com.github.rudroid.profile.navigation.ProfileEntryPointRoute;
 public abstract class m0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f16907a;
+    public int f16907a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f16908b;
+    public int f16908b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f16909c;
+    public int f16909c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Integer f16910d;
+    public Integer f16910d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Object f16911e;
+    public Object f16911e;
 
     public static final class a extends m0 {
 

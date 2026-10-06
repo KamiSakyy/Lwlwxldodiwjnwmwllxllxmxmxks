@@ -13,8 +13,8 @@ import x.i;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class FetchUsersParams$FetchReacteesParams implements n {
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<FetchUsersParams$FetchReacteesParams> CREATOR = new m(1);
 

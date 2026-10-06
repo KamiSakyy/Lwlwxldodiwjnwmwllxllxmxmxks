@@ -2,8 +2,8 @@ package j00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y {
-    public final boolean a;
-    public final boolean b;
+    public boolean a;
+    public boolean b;
 
     public y(boolean z, boolean z2) {
         this.a = z;

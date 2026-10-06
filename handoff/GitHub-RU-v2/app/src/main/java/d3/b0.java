@@ -4,13 +4,13 @@ package d3;
 public final class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f21413a;
+    public String f21413a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j71.e f21414b;
+    public j71.e f21414b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f21415c;
+    public boolean f21415c;
 
     public b0(String str, j71.e eVar) {
         this.f21413a = str;

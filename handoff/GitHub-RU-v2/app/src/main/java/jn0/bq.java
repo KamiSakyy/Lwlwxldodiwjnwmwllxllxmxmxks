@@ -4,20 +4,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bq {
-    public final String a;
-    public final String b;
-    public final pz0.wt c;
-    public final String d;
-    public final boolean e;
-    public final ZonedDateTime f;
-    public final eq g;
-    public final sp h;
-    public final fq i;
-    public final jq j;
-    public final yp0.c k;
-    public final gu0.c l;
-    public final bw0.c m;
-    public final gt0.a n;
+    public String a;
+    public String b;
+    public pz0.wt c;
+    public String d;
+    public boolean e;
+    public ZonedDateTime f;
+    public eq g;
+    public sp h;
+    public fq i;
+    public jq j;
+    public yp0.c k;
+    public gu0.c l;
+    public bw0.c m;
+    public gt0.a n;
 
     public bq(String str, String str2, pz0.wt wtVar, String str3, boolean z, ZonedDateTime zonedDateTime, eq eqVar, sp spVar, fq fqVar, jq jqVar, yp0.c cVar, gu0.c cVar2, bw0.c cVar3, gt0.a aVar) {
         this.a = str;

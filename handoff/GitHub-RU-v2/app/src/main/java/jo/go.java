@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class go {
-    public final String a;
-    public final String b;
-    public final bu.g c;
+    public String a;
+    public String b;
+    public bu.g c;
 
     public go(String str, String str2, bu.g gVar) {
         this.a = str;

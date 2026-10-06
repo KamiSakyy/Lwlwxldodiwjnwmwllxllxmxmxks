@@ -10,7 +10,7 @@ import mg.c;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class StarredReposAndListsEntryPointRoute implements c {
     public static final Companion Companion = new Companion();
-    public final String a;
+    public String a;
 
     public static final class Companion {
         public final KSerializer serializer() {

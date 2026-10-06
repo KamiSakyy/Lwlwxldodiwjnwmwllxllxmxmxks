@@ -6,16 +6,16 @@ import x.i;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f34623a;
+    public boolean f34623a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f34624b;
+    public boolean f34624b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final boolean f34625c;
+    public boolean f34625c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f34626d;
+    public boolean f34626d;
 
     public e(boolean z10, boolean z11, boolean z12, boolean z13) {
         this.f34623a = z10;

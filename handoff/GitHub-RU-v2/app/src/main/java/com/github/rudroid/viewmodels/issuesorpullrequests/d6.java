@@ -5,19 +5,19 @@ import zd.b;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d6 {
-    public final boolean a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final com.github.rudroid.utilities.ui.g1 e;
-    public final zd.b f;
-    public final boolean g;
-    public final boolean h;
-    public final boolean i;
-    public final boolean j;
-    public final boolean k;
-    public final boolean l;
-    public final com.github.rudroid.utilities.ui.g1 m;
+    public boolean a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public com.github.rudroid.utilities.ui.g1 e;
+    public zd.b f;
+    public boolean g;
+    public boolean h;
+    public boolean i;
+    public boolean j;
+    public boolean k;
+    public boolean l;
+    public com.github.rudroid.utilities.ui.g1 m;
 
     public d6(boolean z, boolean z2, boolean z3, boolean z4, com.github.rudroid.utilities.ui.g1 g1Var, zd.b bVar, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9, boolean z11, com.github.rudroid.utilities.ui.g1 g1Var2) {
         this.a = z;

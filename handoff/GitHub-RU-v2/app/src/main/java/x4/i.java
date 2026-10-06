@@ -6,7 +6,7 @@ import android.os.Process;
 public final class i extends Thread {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f33781r;
+    public int f33781r;
 
     public i(Runnable runnable) {
         super(runnable, "fonts-androidx");

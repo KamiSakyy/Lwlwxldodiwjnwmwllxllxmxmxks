@@ -5,5 +5,5 @@ public final class b {
     static {
         new r1.d(new ge.a(22), false, 94822167);
     }
-    public Object d(Object p1, Object p2) { return null; }
+    public static Object d(Object p1, Object p2) { return null; }
 }

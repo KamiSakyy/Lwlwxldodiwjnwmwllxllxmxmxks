@@ -7,10 +7,10 @@ import java.util.List;
 public final class g2 implements v2.n1 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f33041r;
+    public int f33041r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final List f33042s;
+    public List f33042s;
 
     /* renamed from: t, reason: collision with root package name */
     public Float f33043t = null;

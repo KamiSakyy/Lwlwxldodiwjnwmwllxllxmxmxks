@@ -14,7 +14,7 @@ public final class b extends com.github.rudroid.activities.util.e<w61.a0, C0006b
 
     /* renamed from: com.github.rudroid.starredreposandlists.bottomsheet.b$b, reason: collision with other inner class name */
     public static final class C0006b {
-        public final boolean a;
+        public boolean a;
 
         public C0006b(boolean z) {
             this.a = z;
@@ -41,9 +41,9 @@ public final class b extends com.github.rudroid.activities.util.e<w61.a0, C0006b
         return new Intent(context, (Class<?>) CreateNewListActivity.class);
     }
 
-    public final Object y(Intent intent, int i) {
+    public static final Object y(Intent intent, int i) {
         return (intent == null || i != -1) ? new C0006b(false) : new C0006b(intent.getBooleanExtra("EXTRA_REFRESH_NEEDED", false));
     }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

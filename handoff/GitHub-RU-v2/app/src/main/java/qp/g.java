@@ -7,13 +7,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final ZonedDateTime d;
-    public final b e;
-    public final i f;
-    public final h g;
+    public String a;
+    public String b;
+    public String c;
+    public ZonedDateTime d;
+    public b e;
+    public i f;
+    public h g;
 
     public g(String str, String str2, String str3, ZonedDateTime zonedDateTime, b bVar, i iVar, h hVar) {
         this.a = str;

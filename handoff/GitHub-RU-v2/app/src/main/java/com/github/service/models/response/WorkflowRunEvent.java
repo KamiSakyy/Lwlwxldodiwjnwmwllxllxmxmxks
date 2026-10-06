@@ -10,7 +10,7 @@ public final class WorkflowRunEvent {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ WorkflowRunEvent[] $VALUES;
     public static final r8 Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final WorkflowRunEvent BRANCH_PROTECTION_RULE = new WorkflowRunEvent("BRANCH_PROTECTION_RULE", 0, "BRANCH_PROTECTION_RULE");
     public static final WorkflowRunEvent CHECK_RUN = new WorkflowRunEvent("CHECK_RUN", 1, "CHECK_RUN");
     public static final WorkflowRunEvent CHECK_SUITE = new WorkflowRunEvent("CHECK_SUITE", 2, "CHECK_SUITE");

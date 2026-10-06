@@ -18,10 +18,10 @@ import x61.l;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends x61.g implements RandomAccess, Serializable {
     public Object[] r;
-    public final int s;
+    public int s;
     public int t;
-    public final a u;
-    public final b v;
+    public a u;
+    public b v;
 
     public a(Object[] objArr, int i, int i2, a aVar, b bVar) {
         int i3;

@@ -5,7 +5,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g0 extends e1 {
-    public final boolean l;
+    public boolean l;
 
     public g0(String str, h0 h0Var) {
         super(str, h0Var, 1);

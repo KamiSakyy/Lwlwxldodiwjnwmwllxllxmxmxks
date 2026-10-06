@@ -2,9 +2,9 @@ package u81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q {
-    public final r a;
-    public final r b;
-    public final Throwable c;
+    public r a;
+    public r b;
+    public Throwable c;
 
     public /* synthetic */ q(r rVar, Throwable th, int i) {
         this(rVar, (c) null, (i & 4) != 0 ? null : th);

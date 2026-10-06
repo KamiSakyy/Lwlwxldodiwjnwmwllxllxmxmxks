@@ -9,8 +9,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements e91.d {
-    public final X509TrustManager a;
-    public final Method b;
+    public X509TrustManager a;
+    public Method b;
 
     public b(X509TrustManager x509TrustManager, Method method) {
         this.a = x509TrustManager;

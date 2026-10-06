@@ -10,7 +10,7 @@ import v71.v;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f extends com.github.rudroid.searchandfilter.complexfilter.user.o implements x3 {
     public static final /* synthetic */ int J = 0;
-    public final v I;
+    public v I;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(lm.f fVar, lm.b bVar, com.github.rudroid.activities.util.c cVar, a1 a1Var, v vVar) {

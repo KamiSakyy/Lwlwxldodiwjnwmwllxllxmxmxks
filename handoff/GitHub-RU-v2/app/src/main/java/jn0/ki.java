@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ki implements aaShadow.v0 {
-    public final li a;
-    public final String b;
-    public final String c;
+    public li a;
+    public String b;
+    public String c;
 
     public ki(li liVar, String str, String str2) {
         this.a = liVar;

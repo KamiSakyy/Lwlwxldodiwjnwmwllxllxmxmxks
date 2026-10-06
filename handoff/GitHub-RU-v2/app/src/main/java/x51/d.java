@@ -2,17 +2,17 @@ package x51;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public final long a;
-    public final String b;
-    public final String c;
-    public final b d;
-    public final String e;
-    public final String f;
-    public final int g;
-    public final int h;
-    public final String i;
-    public final String j;
-    public final String k;
+    public long a;
+    public String b;
+    public String c;
+    public b d;
+    public String e;
+    public String f;
+    public int g;
+    public int h;
+    public String i;
+    public String j;
+    public String k;
 
     public d(long j, String str, String str2, b bVar, String str3, String str4, int i, int i2, String str5, String str6, String str7) {
         this.a = j;

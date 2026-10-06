@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ks {
-    public final ps a;
-    public final List b;
+    public ps a;
+    public List b;
 
     public ks(ps psVar, List list) {
         this.a = psVar;

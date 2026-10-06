@@ -5,17 +5,17 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k3 {
-    public final String a;
-    public final CommentLevelType b;
-    public final String c;
-    public final y2 d;
-    public final String e;
-    public final String f;
-    public final boolean g;
-    public final ArrayList h;
-    public final ArrayList i;
-    public final boolean j;
-    public final boolean k;
+    public String a;
+    public CommentLevelType b;
+    public String c;
+    public y2 d;
+    public String e;
+    public String f;
+    public boolean g;
+    public ArrayList h;
+    public ArrayList i;
+    public boolean j;
+    public boolean k;
 
     public k3(String str, CommentLevelType commentLevelType, String str2, y2 y2Var, String str3, String str4, boolean z, ArrayList arrayList, ArrayList arrayList2, boolean z2, boolean z3) {
         k71.k.g(commentLevelType, "commentType");

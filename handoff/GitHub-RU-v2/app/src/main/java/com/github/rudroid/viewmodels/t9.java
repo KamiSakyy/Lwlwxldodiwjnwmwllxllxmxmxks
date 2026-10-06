@@ -14,32 +14,32 @@ public final class t9 extends androidx.lifecycle.k1 implements x3 {
     public x01.i A;
     public x01.i B;
     public x01.i C;
-    public final LinkedHashSet D;
-    public final LinkedHashSet E;
-    public final LinkedHashSet F;
-    public final LinkedHashSet G;
-    public final LinkedHashSet H;
-    public final LinkedHashSet I;
+    public LinkedHashSet D;
+    public LinkedHashSet E;
+    public LinkedHashSet F;
+    public LinkedHashSet G;
+    public LinkedHashSet H;
+    public LinkedHashSet I;
     public String J;
     public String K;
     public String L;
     public int M;
     public int N;
-    public final y71.y1 O;
-    public final zk.o1 s;
-    public final oa.g t;
-    public final zk.a0 u;
-    public final zk.z v;
-    public final com.github.rudroid.activities.util.c w;
-    public final com.github.rudroid.utilities.e x;
+    public y71.y1 O;
+    public zk.o1 s;
+    public oa.g t;
+    public zk.a0 u;
+    public zk.z v;
+    public com.github.rudroid.activities.util.c w;
+    public com.github.rudroid.utilities.e x;
     public b y;
-    public final androidx.lifecycle.p0 z;
+    public androidx.lifecycle.p0 z;
 
     public static final class a {
     }
 
     public static abstract class b {
-        public final int a;
+        public int a;
 
         public static final class a extends b {
             public static final a b = new a(2131954895);

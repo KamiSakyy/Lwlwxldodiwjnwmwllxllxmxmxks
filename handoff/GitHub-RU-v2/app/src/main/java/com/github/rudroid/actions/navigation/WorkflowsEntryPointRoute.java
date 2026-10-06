@@ -12,10 +12,10 @@ public final class WorkflowsEntryPointRoute implements sa.e {
     public static final Companion Companion = new Companion();
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f5122r;
+    public String f5122r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f5123s;
+    public String f5123s;
 
     public static final class Companion {
         public final KSerializer serializer() {

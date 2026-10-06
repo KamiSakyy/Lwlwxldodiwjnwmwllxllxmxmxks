@@ -9,9 +9,9 @@ import android.graphics.Shader;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s extends w {
-    public final u c;
-    public final float d;
-    public final float e;
+    public u c;
+    public float d;
+    public float e;
 
     public s(u uVar, float f, float f2) {
         this.c = uVar;

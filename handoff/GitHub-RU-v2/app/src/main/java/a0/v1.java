@@ -4,10 +4,10 @@ package a0;
 public final class v1 implements u1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Object f278a;
+    public Object f278a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Object f279b;
+    public Object f279b;
 
     public v1(Object obj, Object obj2) {
         this.f278a = obj;

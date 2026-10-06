@@ -13,7 +13,7 @@ public final class y70 {
     public static final y70 x;
     public static final /* synthetic */ y70[] y;
     public static final /* synthetic */ d71.b z;
-    public final String r;
+    public String r;
 
     static {
         y70 y70Var = new y70("DISCUSSIONS", 0, "DISCUSSIONS");

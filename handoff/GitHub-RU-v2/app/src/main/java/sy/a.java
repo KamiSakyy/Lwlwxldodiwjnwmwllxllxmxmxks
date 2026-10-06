@@ -136,7 +136,7 @@ public final class a {
         }
         return arrayList7;
     }
-    public Object K(Object p1) { return null; }
+    public static Object K(Object p1) { return null; }
     public static final Object b = null;
     public static final Object r = null;
     public static final Object s = null;

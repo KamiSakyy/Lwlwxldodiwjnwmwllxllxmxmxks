@@ -10,19 +10,19 @@ import zk.h1;
 public final class v extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final h1 f16137s;
+    public h1 f16137s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final zk.e f16138t;
+    public zk.e f16138t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f16139u;
+    public com.github.rudroid.activities.util.c f16139u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final y1 f16140v;
+    public y1 f16140v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y1 f16141w;
+    public y1 f16141w;
 
     public v(h1 h1Var, zk.e eVar, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(h1Var, "removeSubIssueUseCase");

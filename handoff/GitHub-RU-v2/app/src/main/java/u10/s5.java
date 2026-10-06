@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s5 {
-    public final o5 a;
-    public final String b;
+    public o5 a;
+    public String b;
 
     public s5(o5 o5Var, String str) {
         this.a = o5Var;

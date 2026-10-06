@@ -23,25 +23,25 @@ public final class u extends k1 implements com.github.rudroid.utilities.viewmode
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f5174s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final si.f f5175t;
+    public si.f f5175t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final si.h f5176u;
+    public si.h f5176u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f5177v;
+    public com.github.rudroid.activities.util.c f5177v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final String f5178w;
+    public String f5178w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f5179x;
+    public String f5179x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final y1 f5180y;
+    public y1 f5180y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final i1 f5181z;
+    public i1 f5181z;
 
     public u(a1 a1Var, si.f fVar, si.d dVar, si.h hVar, com.github.rudroid.activities.util.c cVar, oa.m mVar) {
         k71.k.g(a1Var, "savedStateHandle");

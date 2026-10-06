@@ -25,5 +25,5 @@ final class t extends c71.c {
         ContributionWidgetWorker.a aVar = ContributionWidgetWorker.Companion;
         return this.y.e(null, null, this);
     }
-    public Object L(Object p1) { return null; }
+    public static Object L(Object p1) { return null; }
 }

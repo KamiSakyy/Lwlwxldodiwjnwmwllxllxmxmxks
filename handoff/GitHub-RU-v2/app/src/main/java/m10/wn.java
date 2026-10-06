@@ -9,7 +9,7 @@ public final class wn {
     public static final wn t;
     public static final /* synthetic */ wn[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         wn wnVar = new wn("DEVICE_VERIFICATION", 0, "DEVICE_VERIFICATION");

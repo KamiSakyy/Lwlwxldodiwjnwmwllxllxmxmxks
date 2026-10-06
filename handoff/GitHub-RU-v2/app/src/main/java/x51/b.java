@@ -9,7 +9,7 @@ public enum b implements l51.c {
     EF2(2),
     t(3);
 
-    public final int r;
+    public int r;
 
     b(int i) {
         this.r = i;

@@ -5,9 +5,9 @@ import m10.m8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements aa.h0 {
-    public final m8 a;
-    public final String b;
-    public final ArrayList c;
+    public m8 a;
+    public String b;
+    public ArrayList c;
 
     public j(m8 m8Var, String str, ArrayList arrayList) {
         this.a = m8Var;

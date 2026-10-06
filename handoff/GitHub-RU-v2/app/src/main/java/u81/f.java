@@ -7,8 +7,8 @@ import java.net.ProtocolException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends h91.q {
-    public final long s;
-    public final boolean t;
+    public long s;
+    public boolean t;
     public long u;
     public boolean v;
     public boolean w;

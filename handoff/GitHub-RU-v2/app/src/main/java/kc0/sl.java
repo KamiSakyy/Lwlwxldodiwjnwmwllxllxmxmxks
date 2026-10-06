@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sl implements aaShadow.v0 {
-    public final ul a;
+    public ul a;
 
     public sl(ul ulVar) {
         this.a = ulVar;

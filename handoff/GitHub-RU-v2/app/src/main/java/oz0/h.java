@@ -19,9 +19,9 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements e11.a, yf0 {
-    public final j r;
-    public final com.github.service.wrapper.b s;
-    public final v t;
+    public j r;
+    public com.github.service.wrapper.b s;
+    public v t;
 
     public h(j jVar, com.github.service.wrapper.b bVar, v vVar) {
         k.g(jVar, "client");

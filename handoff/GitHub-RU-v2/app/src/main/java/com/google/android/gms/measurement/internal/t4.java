@@ -44,7 +44,7 @@ public final class t4 extends w1 {
     public static final String[] A = {"firebase_", "google_", "ga_"};
     public static final String[] B = {"_err"};
     public SecureRandom u;
-    public final AtomicLong v;
+    public AtomicLong v;
     public int w;
     public h7.a x;
     public Boolean y;

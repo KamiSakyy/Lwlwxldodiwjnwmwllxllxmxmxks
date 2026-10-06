@@ -14,7 +14,7 @@ import sy.w;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class NotificationIsUnreadFilter extends d {
-    public final boolean v;
+    public boolean v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<NotificationIsUnreadFilter> CREATOR = new o(2);
     public static final w61.h[] w = {w.s(w61.i.r, new bm.i(18)), null, null};

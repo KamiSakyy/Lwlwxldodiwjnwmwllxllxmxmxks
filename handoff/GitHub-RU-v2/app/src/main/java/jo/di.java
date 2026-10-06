@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class di implements aaShadow.v0 {
-    public final bi a;
-    public final String b;
-    public final String c;
+    public bi a;
+    public String b;
+    public String c;
 
     public di(bi biVar, String str, String str2) {
         this.a = biVar;

@@ -64,4 +64,5 @@ public final class e implements y71.j {
     }
     public Object k(Object p1) { return null; }
     public static final Object b = null;
+    public Object k(Object) { return null; }
 }

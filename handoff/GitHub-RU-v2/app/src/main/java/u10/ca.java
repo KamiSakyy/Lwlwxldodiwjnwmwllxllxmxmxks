@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ca {
-    public final String a;
-    public final e30.a b;
+    public String a;
+    public e30.a b;
 
     public ca(String str, e30.a aVar) {
         this.a = str;

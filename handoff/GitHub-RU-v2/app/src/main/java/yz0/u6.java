@@ -6,20 +6,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u6 extends s7 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final IssueOrPullRequestState f;
-    public final CloseReason g;
-    public final String h;
-    public final boolean i;
-    public final String j;
-    public final boolean k;
-    public final boolean l;
-    public final ZonedDateTime m;
-    public final z01.p n;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public int e;
+    public IssueOrPullRequestState f;
+    public CloseReason g;
+    public String h;
+    public boolean i;
+    public String j;
+    public boolean k;
+    public boolean l;
+    public ZonedDateTime m;
+    public z01.p n;
 
     public u6(String str, String str2, String str3, String str4, int i, IssueOrPullRequestState issueOrPullRequestState, CloseReason closeReason, String str5, boolean z, String str6, boolean z2, boolean z3, ZonedDateTime zonedDateTime, z01.p pVar) {
         k71.k.g(str2, "actorDisplayName");

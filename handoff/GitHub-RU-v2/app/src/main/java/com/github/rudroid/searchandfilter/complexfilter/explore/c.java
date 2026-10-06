@@ -62,4 +62,5 @@ public final /* synthetic */ class c implements j71.a {
                 return w61.a0.a;
         }
     }
+    public Object a(Object, Object) { return null; }
 }

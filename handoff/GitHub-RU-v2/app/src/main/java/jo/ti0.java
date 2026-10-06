@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ti0 {
-    public final m10.m8 a;
-    public final String b;
-    public final String c;
+    public m10.m8 a;
+    public String b;
+    public String c;
 
     public ti0(String str, String str2, m10.m8 m8Var) {
         this.a = m8Var;

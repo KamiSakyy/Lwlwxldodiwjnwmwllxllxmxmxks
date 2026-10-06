@@ -2,8 +2,8 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r0 {
-    public final z0 a;
-    public final b b;
+    public z0 a;
+    public b b;
 
     public r0(z0 z0Var, b bVar) {
         this.a = z0Var;

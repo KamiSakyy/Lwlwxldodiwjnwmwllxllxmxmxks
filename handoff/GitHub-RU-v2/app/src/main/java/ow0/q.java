@@ -2,7 +2,7 @@ package ow0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements aa.m0 {
-    public final r a;
+    public r a;
 
     public q(r rVar) {
         this.a = rVar;

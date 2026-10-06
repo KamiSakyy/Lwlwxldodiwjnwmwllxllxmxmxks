@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hp {
-    public final String a;
-    public final String b;
-    public final wk0.q0 c;
+    public String a;
+    public String b;
+    public wk0.q0 c;
 
     public hp(String str, String str2, wk0.q0 q0Var) {
         this.a = str;

@@ -9,7 +9,7 @@ public final class k9 {
     public static final k9 t;
     public static final /* synthetic */ k9[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         k9 k9Var = new k9("ERROR", 0, "ERROR");

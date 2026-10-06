@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ct {
-    public final String a;
-    public final String b;
-    public final dt c;
+    public String a;
+    public String b;
+    public dt c;
 
     public ct(String str, String str2, dt dtVar) {
         k71.k.g(str, "__typename");

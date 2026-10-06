@@ -28,18 +28,18 @@ import yz0.w1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements w1 {
-    public final ji a;
-    public final Object b;
-    public final ArrayList c;
-    public final int d;
-    public final ArrayList e;
-    public final int f;
-    public final ArrayList g;
-    public final int h;
-    public final ArrayList i;
-    public final int j;
-    public final ArrayList k;
-    public final int l;
+    public ji a;
+    public Object b;
+    public ArrayList c;
+    public int d;
+    public ArrayList e;
+    public int f;
+    public ArrayList g;
+    public int h;
+    public ArrayList i;
+    public int j;
+    public ArrayList k;
+    public int l;
 
     public e(ji jiVar) {
         r rVar;
@@ -230,5 +230,5 @@ public final class e implements w1 {
         return "ApolloGlobalSearch(data=" + this.a + ")";
     }
     public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

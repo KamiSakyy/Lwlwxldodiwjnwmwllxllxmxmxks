@@ -12,7 +12,7 @@ public final class pl {
     public static final pl w;
     public static final /* synthetic */ pl[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         pl plVar = new pl("APPROVE", 0, "APPROVE");

@@ -5,9 +5,9 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c0 extends x0 {
     public final /* synthetic */ int d;
-    public final String e;
-    public final b f;
-    public final boolean g;
+    public String e;
+    public b f;
+    public boolean g;
 
     public c0(int i, String str, boolean z) {
         this.d = i;

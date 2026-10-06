@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CreateChatThreadResponse {
     public static final Companion Companion = new Companion();
-    public final ChatThreadResponse a;
+    public ChatThreadResponse a;
 
     public static final class Companion {
         public final KSerializer serializer() {

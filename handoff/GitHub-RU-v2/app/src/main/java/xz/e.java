@@ -2,8 +2,8 @@ package xz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final i0 b;
+    public String a;
+    public i0 b;
 
     public e(String str, i0 i0Var) {
         k71.k.g(str, "__typename");
@@ -29,5 +29,5 @@ public final class e {
     public final String toString() {
         return "Value(__typename=" + this.a + ", projectV2GroupValueFragment=" + this.b + ")";
     }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

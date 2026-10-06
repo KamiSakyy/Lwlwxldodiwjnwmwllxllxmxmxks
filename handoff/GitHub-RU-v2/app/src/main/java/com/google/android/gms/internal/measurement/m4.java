@@ -10,9 +10,9 @@ public final class m4 {
     public static final Object g = new Object();
     public static volatile c4 h;
     public static final AtomicInteger i;
-    public final n4 a;
-    public final String b;
-    public final Object c;
+    public n4 a;
+    public String b;
+    public Object c;
     public volatile int d = -1;
     public volatile Object e;
     public final /* synthetic */ int f;

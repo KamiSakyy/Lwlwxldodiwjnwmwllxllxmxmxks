@@ -5,8 +5,8 @@ import org.json.JSONObject;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class j extends k {
-    public final i a;
-    public final String b;
+    public i a;
+    public String b;
 
     public j(i iVar, String str) {
         this.a = iVar;

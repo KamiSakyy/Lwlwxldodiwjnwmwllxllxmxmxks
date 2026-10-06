@@ -8,10 +8,10 @@ import k71.k;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final SharedPreferences f30983a;
+    public SharedPreferences f30983a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Set f30984b;
+    public Set f30984b;
 
     public d(SharedPreferences sharedPreferences, Set set) {
         k.g(sharedPreferences, "prefs");

@@ -11,7 +11,7 @@ public final class DiffLineType {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ DiffLineType[] $VALUES;
     public static final b Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final DiffLineType HUNK = new DiffLineType("HUNK", 0, "HUNK");
     public static final DiffLineType CONTEXT = new DiffLineType("CONTEXT", 1, "CONTEXT");
     public static final DiffLineType ADDITION = new DiffLineType("ADDITION", 2, "ADDITION");

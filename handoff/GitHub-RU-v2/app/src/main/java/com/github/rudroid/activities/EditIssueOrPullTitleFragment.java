@@ -2,7 +2,7 @@ package com.github.rudroid.activities;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class EditIssueOrPullTitleFragment extends Hilt_EditIssueOrPullTitleFragment {
-    public final androidx.lifecycle.l1 I0;
+    public androidx.lifecycle.l1 I0;
 
     public static final class a extends k71.l implements j71.a {
         public a() {

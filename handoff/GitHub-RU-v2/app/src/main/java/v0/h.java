@@ -7,10 +7,10 @@ import x.i;
 public final class h extends b {
 
     /* renamed from: b, reason: collision with root package name */
-    public final TextClassification f32334b;
+    public TextClassification f32334b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f32335c;
+    public int f32335c;
 
     public h(Object obj, TextClassification textClassification, int i) {
         super(obj);

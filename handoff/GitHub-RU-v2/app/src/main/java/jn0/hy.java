@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hy {
-    public final ay a;
-    public final String b;
-    public final String c;
+    public ay a;
+    public String b;
+    public String c;
 
     public hy(ay ayVar, String str, String str2) {
         this.a = ayVar;

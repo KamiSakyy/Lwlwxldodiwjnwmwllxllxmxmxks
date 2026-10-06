@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l90 implements aaShadow.v0 {
-    public final n90 a;
-    public final m90 b;
+    public n90 a;
+    public m90 b;
 
     public l90(n90 n90Var, m90 m90Var) {
         this.a = n90Var;

@@ -4,22 +4,22 @@ package w3;
 public final class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f33298a;
+    public boolean f33298a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f33299b;
+    public boolean f33299b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final b0 f33300c;
+    public b0 f33300c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f33301d;
+    public boolean f33301d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f33302e;
+    public boolean f33302e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final String f33303f;
+    public String f33303f;
 
     public t(int i) {
         boolean z10 = (i & 2) != 0;

@@ -11,7 +11,7 @@ public final class t implements e0 {
     public static final b f24852b = new b();
 
     /* renamed from: a, reason: collision with root package name */
-    public final v0 f24853a;
+    public v0 f24853a;
 
     public t(v0 v0Var) {
         this.f24853a = v0Var;

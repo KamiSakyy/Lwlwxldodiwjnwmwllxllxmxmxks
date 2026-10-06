@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class na implements aaShadow.v0 {
-    public final ra a;
-    public final String b;
-    public final String c;
+    public ra a;
+    public String b;
+    public String c;
 
     public na(ra raVar, String str, String str2) {
         this.a = raVar;

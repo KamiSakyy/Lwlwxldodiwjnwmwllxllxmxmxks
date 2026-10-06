@@ -5,7 +5,7 @@ import retrofit2.HttpException;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i implements h {
     public final /* synthetic */ int r;
-    public final k s;
+    public k s;
 
     public /* synthetic */ i(k kVar, int i) {
         this.r = i;

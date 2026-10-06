@@ -4,8 +4,8 @@ import kotlin.KotlinNothingValueException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d2 implements j1 {
-    public final j1 r;
-    public final c71.j s;
+    public j1 r;
+    public c71.j s;
 
     public d2(j1 j1Var, j71.e eVar) {
         this.r = j1Var;

@@ -8,9 +8,9 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements z01.e, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final v71.v t;
-    public final wn.bShadow u;
+    public com.github.service.wrapper.j s;
+    public v71.v t;
+    public wn.bShadow u;
 
     public q(com.github.service.wrapper.j jVar, v71.v vVar, wn.bShadow bVar, int i) {
         this.r = i;

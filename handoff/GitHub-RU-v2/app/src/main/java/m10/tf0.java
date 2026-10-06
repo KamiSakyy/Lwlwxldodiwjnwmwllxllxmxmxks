@@ -10,7 +10,7 @@ public final class tf0 {
     public static final tf0 u;
     public static final /* synthetic */ tf0[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         tf0 tf0Var = new tf0("ONE_DAY", 0, "ONE_DAY");

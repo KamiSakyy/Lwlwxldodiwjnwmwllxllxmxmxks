@@ -134,5 +134,5 @@ public final class a extends j implements e {
                 return a0Var2;
         }
     }
-    public Object h(Object p1) { return null; }
+    public static Object h(Object p1) { return null; }
 }

@@ -8,18 +8,18 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements h0 {
-    public final String a;
-    public final b00 b;
-    public final boolean c;
-    public final boolean d;
-    public final String e;
-    public final String f;
-    public final int g;
-    public final b h;
-    public final String i;
-    public final int j;
-    public final int k;
-    public final String l;
+    public String a;
+    public b00 b;
+    public boolean c;
+    public boolean d;
+    public String e;
+    public String f;
+    public int g;
+    public b h;
+    public String i;
+    public int j;
+    public int k;
+    public String l;
 
     public c(String str, b00 b00Var, boolean z, boolean z2, String str2, String str3, int i, b bVar, String str4, int i2, int i3, String str5) {
         this.a = str;

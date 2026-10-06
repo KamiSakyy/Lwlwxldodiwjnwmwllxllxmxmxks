@@ -11,10 +11,10 @@ public final class h implements Runnable {
     public final /* synthetic */ int f33399r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final com.google.common.util.concurrent.c f33400s;
+    public com.google.common.util.concurrent.c f33400s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final v71.l f33401t;
+    public v71.l f33401t;
 
     public /* synthetic */ h(com.google.common.util.concurrent.c cVar, v71.l lVar, int i) {
         this.f33399r = i;

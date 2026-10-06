@@ -2,9 +2,9 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q1 {
-    public final String a;
-    public final String b;
-    public final l1 c;
+    public String a;
+    public String b;
+    public l1 c;
 
     public q1(String str, String str2, l1 l1Var) {
         this.a = str;

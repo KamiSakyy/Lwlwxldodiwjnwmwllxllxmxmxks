@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iw {
-    public final String a;
-    public final gw b;
-    public final hw c;
-    public final String d;
+    public String a;
+    public gw b;
+    public hw c;
+    public String d;
 
     public iw(String str, gw gwVar, hw hwVar, String str2) {
         this.a = str;

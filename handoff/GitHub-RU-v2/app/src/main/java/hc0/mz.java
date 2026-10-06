@@ -10,7 +10,7 @@ public final class mz {
     public static final mz u;
     public static final /* synthetic */ mz[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         mz mzVar = new mz("ONE_DAY", 0, "ONE_DAY");

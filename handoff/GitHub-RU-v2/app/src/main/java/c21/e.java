@@ -19,18 +19,18 @@ import java.util.concurrent.atomic.AtomicInteger;
 public abstract class e {
     public static final z11.d[] x = new z11.d[0];
     public h0 b;
-    public final Context c;
-    public final g0 d;
-    public final z11.f e;
-    public final w f;
+    public Context c;
+    public g0 d;
+    public z11.f e;
+    public w f;
     public q i;
     public d j;
     public IInterface k;
     public y m;
-    public final b o;
-    public final c p;
-    public final int q;
-    public final String r;
+    public b o;
+    public c p;
+    public int q;
+    public String r;
     public volatile String s;
     public volatile String a = null;
     public final Object g = new Object();
@@ -245,7 +245,7 @@ public abstract class e {
 
     public abstract String w();
 
-    public boolean x() {
+    public static boolean x() {
         return h() >= 211700000;
     }
 

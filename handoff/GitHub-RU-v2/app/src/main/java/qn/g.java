@@ -8,9 +8,9 @@ import t71.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
-    public final List b;
-    public final String c;
+    public String a;
+    public List b;
+    public String c;
 
     public g(String str, List list) {
         String concat;

@@ -10,7 +10,7 @@ public final class y80 {
     public static final y80 u;
     public static final /* synthetic */ y80[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         y80 y80Var = new y80("ONE_DAY", 0, "ONE_DAY");

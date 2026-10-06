@@ -7,13 +7,13 @@ import com.github.service.models.response.type.DiffLineType;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f13545a;
+    public String f13545a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final DiffLineType f13546b;
+    public DiffLineType f13546b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f13547c;
+    public int f13547c;
 
     public m(int i, DiffLineType diffLineType, String str) {
         k71.k.g(str, "content");

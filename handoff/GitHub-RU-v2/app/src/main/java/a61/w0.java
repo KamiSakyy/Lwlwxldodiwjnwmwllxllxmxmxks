@@ -4,11 +4,11 @@ package a61;
 public final class w0 implements t0 {
     public static final double f = Math.random();
     public static final /* synthetic */ int g = 0;
-    public final k41.g a;
-    public final q51.d b;
-    public final e61.g c;
-    public final l d;
-    public final a71.h e;
+    public k41.g a;
+    public q51.d b;
+    public e61.g c;
+    public l d;
+    public a71.h e;
 
     public w0(k41.g gVar, q51.d dVar, e61.g gVar2, l lVar, a71.h hVar) {
         k71.k.g(gVar, "firebaseApp");

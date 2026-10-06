@@ -4,5 +4,5 @@ package com.github.rudroid.searchandfilter.ui;
 public interface f0 {
     void y1(NotificationsFilterBarFragment notificationsFilterBarFragment);
     public Object ordinal() { return null; }
-    public Object values() { return null; }
+    public static Object values() { return null; }
 }

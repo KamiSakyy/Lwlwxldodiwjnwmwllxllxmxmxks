@@ -9,7 +9,7 @@ public final class y7 {
     public static final y7 t;
     public static final /* synthetic */ y7[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         y7 y7Var = new y7("CLI", 0, "CLI");

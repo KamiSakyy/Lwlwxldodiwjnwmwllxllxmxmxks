@@ -31,5 +31,5 @@ public final class t implements KSerializer {
         i4.K(encoder);
         m71.a.c(q1.a, k.a).serialize(encoder, cVar);
     }
-    public Object B(Object p1) { return null; }
+    public static Object B(Object p1) { return null; }
 }

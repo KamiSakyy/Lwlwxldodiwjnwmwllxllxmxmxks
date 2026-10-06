@@ -5,14 +5,14 @@ import gn0.l2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 {
-    public final String a;
-    public final l2 b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final String f;
-    public final r g;
-    public final boolean h;
+    public String a;
+    public l2 b;
+    public String c;
+    public int d;
+    public String e;
+    public String f;
+    public r g;
+    public boolean h;
 
     public b0(String str, l2 l2Var, String str2, int i, String str3, String str4, r rVar, boolean z) {
         this.a = str;

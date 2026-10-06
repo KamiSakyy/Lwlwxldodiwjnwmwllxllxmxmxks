@@ -8,7 +8,7 @@ public class q {
     public q() {
     }
 
-    public static Object b(Object... a) {
+    public static r b(Object... a) {
         return null;
     }
 
@@ -16,9 +16,9 @@ public class q {
 
     public static Object a;
 
-    public static Object a(Object... a) {
+    public static r a(Object... a) {
         return null;
     }
-    public Object a(Object p1, Object p2) { return null; }
-    public Object b(Object p1, Object p2, Object p3) { return null; }
+    public static Object a(Object p1, Object p2) { return null; }
+    public static Object b(Object p1, Object p2, Object p3) { return null; }
 }

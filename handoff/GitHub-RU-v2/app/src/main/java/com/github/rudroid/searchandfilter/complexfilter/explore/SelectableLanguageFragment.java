@@ -7,8 +7,8 @@ import androidx.lifecycle.u1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableLanguageFragment extends Hilt_SelectableLanguageFragment<com.github.rudroid.searchandfilter.complexfilter.explore.a> {
     public static final a Companion = new a();
-    public final l1 H0;
-    public final com.github.rudroid.searchandfilter.complexfilter.explore.b I0;
+    public l1 H0;
+    public com.github.rudroid.searchandfilter.complexfilter.explore.b I0;
 
     public static final class a {
     }

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sy {
-    public final ty a;
+    public ty a;
 
     public sy(ty tyVar) {
         this.a = tyVar;

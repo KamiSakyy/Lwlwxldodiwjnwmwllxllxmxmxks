@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r80 {
-    public final String a;
-    public final String b;
-    public final uj0.d c;
+    public String a;
+    public String b;
+    public uj0.d c;
 
     public r80(String str, String str2, uj0.d dVar) {
         this.a = str;

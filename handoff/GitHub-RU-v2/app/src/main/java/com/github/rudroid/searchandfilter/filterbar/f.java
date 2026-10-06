@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class f {
     public static final a Companion = new a();
-    public final int a;
+    public int a;
 
     public static final class a {
     }
@@ -19,14 +19,14 @@ public abstract class f {
     }
 
     public static abstract class b extends f {
-        public final String b;
-        public final boolean c;
-        public final boolean d;
-        public final String e;
-        public final com.github.rudroid.uitoolkit.tooltip.h f;
+        public String b;
+        public boolean c;
+        public boolean d;
+        public String e;
+        public com.github.rudroid.uitoolkit.tooltip.h f;
 
         public static final class a extends b {
-            public final j71.a g;
+            public j71.a g;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(String str, String str2, boolean z, String str3, j71.a aVar) {
@@ -39,7 +39,7 @@ public abstract class f {
         }
 
         public static final class e extends b {
-            public final j71.a g;
+            public j71.a g;
 
             /* JADX WARN: Illegal instructions before constructor call */
             /*
@@ -64,8 +64,8 @@ public abstract class f {
         }
 
         public static final class c extends b {
-            public final j71.a g;
-            public final com.github.rudroid.searchandfilter.filterbar.d h;
+            public j71.a g;
+            public com.github.rudroid.searchandfilter.filterbar.d h;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public c(String str, String str2, boolean z, String str3, boolean z2, com.github.rudroid.uitoolkit.tooltip.h hVar, j71.a aVar, com.github.rudroid.searchandfilter.filterbar.d dVar) {
@@ -83,9 +83,9 @@ public abstract class f {
         }
 
         public static final class d extends b {
-            public final yg.j g;
-            public final d.b h;
-            public final j71.a i;
+            public yg.j g;
+            public d.b h;
+            public j71.a i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public d(String str, String str2, boolean z, String str3, yg.j jVar, d.b bVar, com.github.rudroid.uitoolkit.tooltip.h hVar, j71.a aVar) {
@@ -104,17 +104,17 @@ public abstract class f {
 
         /* renamed from: com.github.rudroid.searchandfilter.filterbar.f$b$b, reason: collision with other inner class name */
         public static final class C0002b<T> extends b {
-            public final List g;
-            public final a.C0003a h;
-            public final j71.c i;
+            public List g;
+            public a.C0003a h;
+            public j71.c i;
 
             /* renamed from: com.github.rudroid.searchandfilter.filterbar.f$b$b$a */
             public interface a {
 
                 /* renamed from: com.github.rudroid.searchandfilter.filterbar.f$b$b$a$a, reason: collision with other inner class name */
                 public static final class C0003a<T> implements a {
-                    public final Object a;
-                    public final String b;
+                    public Object a;
+                    public String b;
 
                     public C0003a(Object obj, String str) {
                         this.a = obj;

@@ -22,25 +22,25 @@ public final class m extends k1 implements com.github.rudroid.utilities.viewmode
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f6736s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final y f6737t;
+    public y f6737t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final d0 f6738u;
+    public d0 f6738u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f6739v;
+    public com.github.rudroid.activities.util.c f6739v;
 
     /* renamed from: w, reason: collision with root package name */
     public q1 f6740w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y1 f6741x;
+    public y1 f6741x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final y1 f6742y;
+    public y1 f6742y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final i1 f6743z;
+    public i1 f6743z;
 
     public m(y yVar, d0 d0Var, com.github.rudroid.activities.util.c cVar, oa.m mVar, a1 a1Var) {
         k71.k.g(yVar, "fetchThreadsAndPruneStaleOnesUseCase");

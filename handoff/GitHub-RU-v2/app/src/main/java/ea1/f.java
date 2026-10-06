@@ -3,7 +3,7 @@ package ea1;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends n {
     public final /* synthetic */ int a;
-    public final String b;
+    public String b;
 
     public /* synthetic */ f(int i, String str, boolean z) {
         this.a = i;

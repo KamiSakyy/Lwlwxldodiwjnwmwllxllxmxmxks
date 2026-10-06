@@ -6,11 +6,11 @@ import gn0.zc;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 implements aa.h0 {
-    public final String a;
-    public final xc b;
-    public final zc c;
-    public final boolean d;
-    public final String e;
+    public String a;
+    public xc b;
+    public zc c;
+    public boolean d;
+    public String e;
 
     public k0(String str, xc xcVar, zc zcVar, boolean z, String str2) {
         k71.k.g(str, "id");

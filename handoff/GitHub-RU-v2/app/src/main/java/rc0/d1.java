@@ -2,7 +2,7 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d1 {
-    public final int a;
+    public int a;
 
     public d1(int i) {
         this.a = i;

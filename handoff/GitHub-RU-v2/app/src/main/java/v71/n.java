@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n extends f1 {
     public final /* synthetic */ int v;
-    public final l w;
+    public l w;
 
     public /* synthetic */ n(l lVar, int i) {
         this.v = i;

@@ -2,7 +2,7 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y {
-    public final String a;
+    public String a;
 
     public y(String str) {
         this.a = str;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nh {
-    public final String a;
-    public final String b;
-    public final oh c;
+    public String a;
+    public String b;
+    public oh c;
 
     public nh(String str, String str2, oh ohVar) {
         k71.k.g(str, "__typename");

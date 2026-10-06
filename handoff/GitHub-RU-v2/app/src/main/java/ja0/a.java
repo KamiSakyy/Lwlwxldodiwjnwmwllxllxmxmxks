@@ -6,8 +6,8 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public final String a;
-    public final String b;
+    public String a;
+    public String b;
 
     public a(String str, String str2) {
         k.g(str2, "__typename");

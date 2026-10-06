@@ -7,10 +7,10 @@ import com.github.service.models.response.type.StatusState;
 public final class g {
     public static final f Companion = new f();
     public static final g e = new g("main", false, null, StatusState.UNKNOWN__);
-    public final String a;
-    public final boolean b;
-    public final String c;
-    public final StatusState d;
+    public String a;
+    public boolean b;
+    public String c;
+    public StatusState d;
 
     public g(String str, boolean z, String str2, StatusState statusState) {
         k71.k.g(str, "name");

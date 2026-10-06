@@ -5,9 +5,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w {
-    public final String a;
-    public final kw b;
-    public final bl0.a c;
+    public String a;
+    public kw b;
+    public bl0.a c;
 
     public w(String str, kw kwVar, bl0.a aVar) {
         k71.k.g(str, "__typename");

@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fa0 implements aaShadow.n0 {
     public static final ba0 Companion = new ba0();
-    public final ArrayList r;
+    public ArrayList r;
 
     public fa0(ArrayList arrayList) {
         this.r = arrayList;

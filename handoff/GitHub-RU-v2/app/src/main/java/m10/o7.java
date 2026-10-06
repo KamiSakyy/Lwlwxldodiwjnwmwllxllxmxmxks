@@ -17,7 +17,7 @@ public final class o7 {
     public static final o7 x;
     public static final o7 y;
     public static final o7 z;
-    public final String r;
+    public String r;
 
     static {
         o7 o7Var = new o7("CANCELLED", 0, "CANCELLED");

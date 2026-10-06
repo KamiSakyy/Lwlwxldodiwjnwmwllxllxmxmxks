@@ -6,12 +6,12 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final z5.k a;
-    public final oa.j b;
-    public final List c;
-    public final StoredShortcutModel d;
-    public final g1 e;
-    public final float f;
+    public z5.k a;
+    public oa.j b;
+    public List c;
+    public StoredShortcutModel d;
+    public g1 e;
+    public float f;
 
     public b(z5.k kVar, oa.j jVar, List list, StoredShortcutModel storedShortcutModel, g1 g1Var, float f) {
         k71.k.g(list, "users");

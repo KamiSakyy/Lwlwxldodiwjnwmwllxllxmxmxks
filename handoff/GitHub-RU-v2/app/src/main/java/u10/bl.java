@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bl implements aaShadow.v0 {
-    public final el a;
+    public el a;
 
     public bl(el elVar) {
         this.a = elVar;

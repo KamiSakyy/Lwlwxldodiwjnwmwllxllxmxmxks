@@ -5,15 +5,15 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final r0 e;
-    public final yi f;
-    public final wi g;
-    public final o0 h;
-    public final String i;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public r0 e;
+    public yi f;
+    public wi g;
+    public o0 h;
+    public String i;
 
     public q0(String str, String str2, String str3, int i, r0 r0Var, yi yiVar, wi wiVar, o0 o0Var, String str4) {
         this.a = str;

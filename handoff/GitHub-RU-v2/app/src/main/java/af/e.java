@@ -8,10 +8,10 @@ import l01.i0;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final i0 f896a;
+    public i0 f896a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final g1 f897b;
+    public g1 f897b;
 
     public e(i0 i0Var, g1 g1Var) {
         k.g(i0Var, "projectType");
@@ -37,5 +37,5 @@ public final class e {
     public final String toString() {
         return "SimplifiedTableState(projectType=" + this.f896a + ", projectBoardUiModel=" + this.f897b + ")";
     }
-    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public static Object c(Object p1, Object p2, Object p3) { return null; }
 }

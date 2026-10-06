@@ -30,4 +30,5 @@ public interface d {
     }
 
     Object k();
+    public Object f(Object, int) { return null; }
 }

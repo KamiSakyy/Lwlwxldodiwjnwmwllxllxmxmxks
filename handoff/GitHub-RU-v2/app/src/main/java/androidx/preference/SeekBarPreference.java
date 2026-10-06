@@ -39,19 +39,19 @@ public class SeekBarPreference extends Preference {
     public TextView f3016l0;
 
     /* renamed from: m0, reason: collision with root package name */
-    public final boolean f3017m0;
+    public boolean f3017m0;
 
     /* renamed from: n0, reason: collision with root package name */
-    public final boolean f3018n0;
+    public boolean f3018n0;
 
     /* renamed from: o0, reason: collision with root package name */
-    public final boolean f3019o0;
+    public boolean f3019o0;
 
     /* renamed from: p0, reason: collision with root package name */
-    public final x f3020p0;
+    public x f3020p0;
 
     /* renamed from: q0, reason: collision with root package name */
-    public final y f3021q0;
+    public y f3021q0;
 
     public SeekBarPreference(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 2130969716, 0);
@@ -203,4 +203,5 @@ public class SeekBarPreference extends Preference {
     public Object C;
 
     public Object J;
+    public Object c(Object) { return null; }
 }

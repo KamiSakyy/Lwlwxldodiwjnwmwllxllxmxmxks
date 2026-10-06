@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ig {
-    public final String a;
-    public final fg b;
-    public final String c;
+    public String a;
+    public fg b;
+    public String c;
 
     public ig(String str, fg fgVar, String str2) {
         this.a = str;

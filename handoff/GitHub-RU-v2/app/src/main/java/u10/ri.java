@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ri implements aaShadow.v0 {
-    public final yi a;
+    public yi a;
 
     public ri(yi yiVar) {
         this.a = yiVar;

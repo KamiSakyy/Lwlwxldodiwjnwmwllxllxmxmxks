@@ -8,13 +8,13 @@ public final class g3 {
     public static final a Companion;
     public static final g3 y;
     public static final /* synthetic */ g3[] z;
-    public final int r;
-    public final int s;
-    public final int t;
-    public final int u;
-    public final int v;
-    public final int w;
-    public final int x;
+    public int r;
+    public int s;
+    public int t;
+    public int u;
+    public int v;
+    public int w;
+    public int x;
 
     public static final class a {
         public static g3 a(int i) {

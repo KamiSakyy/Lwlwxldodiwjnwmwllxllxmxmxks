@@ -13,15 +13,15 @@ import v8.l0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ReactionView extends AppCompatTextView {
-    public final int A;
-    public final int B;
-    public final int C;
-    public final int D;
-    public final int E;
-    public final int F;
-    public final int G;
-    public final int y;
-    public final int z;
+    public int A;
+    public int B;
+    public int C;
+    public int D;
+    public int E;
+    public int F;
+    public int G;
+    public int y;
+    public int z;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */

@@ -33,32 +33,32 @@ public class l implements Menu {
     public static final int[] f30249z = {1, 4, 5, 3, 2, 0};
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f30250a;
+    public Context f30250a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Resources f30251b;
+    public Resources f30251b;
 
     /* renamed from: c, reason: collision with root package name */
     public boolean f30252c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final boolean f30253d;
+    public boolean f30253d;
 
     /* renamed from: e, reason: collision with root package name */
     public j f30254e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final ArrayList f30255f;
+    public ArrayList f30255f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final ArrayList f30256g;
+    public ArrayList f30256g;
 
     /* renamed from: h, reason: collision with root package name */
     public boolean f30257h;
-    public final ArrayList i;
+    public ArrayList i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final ArrayList f30258j;
+    public ArrayList f30258j;
 
     /* renamed from: k, reason: collision with root package name */
     public boolean f30259k;

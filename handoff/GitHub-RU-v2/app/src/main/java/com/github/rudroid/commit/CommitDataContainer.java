@@ -25,7 +25,7 @@ public abstract class CommitDataContainer implements Parcelable {
     public static final class CommitFromId extends CommitDataContainer {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f9044s;
+        public String f9044s;
         public static final Companion Companion = new Companion();
         public static final Parcelable.Creator<CommitFromId> CREATOR = new a();
 
@@ -93,13 +93,13 @@ public abstract class CommitDataContainer implements Parcelable {
     public static final class CommitFromRepoData extends CommitDataContainer {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f9045s;
+        public String f9045s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f9046t;
+        public String f9046t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final String f9047u;
+        public String f9047u;
         public static final Companion Companion = new Companion();
         public static final Parcelable.Creator<CommitFromRepoData> CREATOR = new a();
 

@@ -2,7 +2,7 @@ package zk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t1 {
-    public final oa.g a;
+    public oa.g a;
 
     public t1(oa.g gVar) {
         k71.k.g(gVar, "forUserCommentServiceFactory");

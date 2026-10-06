@@ -4,8 +4,8 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p7 extends s7 {
-    public final com.github.service.models.response.a a;
-    public final ZonedDateTime b;
+    public com.github.service.models.response.a a;
+    public ZonedDateTime b;
 
     public p7(com.github.service.models.response.a aVar, ZonedDateTime zonedDateTime) {
         this.a = aVar;

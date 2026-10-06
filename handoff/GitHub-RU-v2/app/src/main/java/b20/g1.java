@@ -6,9 +6,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 implements aa.w0 {
     public static final v0 Companion = new v0();
-    public final String r;
-    public final aa1.b s;
-    public final aa.u0 t;
+    public String r;
+    public aa1.b s;
+    public aa.u0 t;
 
     public g1(aa.u0 u0Var, aa1.b bVar, String str) {
         this.r = str;

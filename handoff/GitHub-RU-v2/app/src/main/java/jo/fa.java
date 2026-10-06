@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fa implements aaShadow.n0 {
     public static final ca Companion = new ca();
-    public final String r;
+    public String r;
 
     public fa(String str) {
         k71.k.g(str, "refId");

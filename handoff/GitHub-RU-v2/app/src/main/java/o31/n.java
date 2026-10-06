@@ -11,5 +11,5 @@ public abstract class n implements TextWatcher {
     @Override // android.text.TextWatcher
     public final void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
     }
-    public Object f(Object p1, Object p2) { return null; }
+    public Typeface f(Object p1, Object p2) { return null; }
 }

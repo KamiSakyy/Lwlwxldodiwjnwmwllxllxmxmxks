@@ -5,14 +5,14 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ei implements aaShadow.w0 {
     public static final lh Companion = new lh();
-    public final String r;
-    public final String s;
-    public final String t;
-    public final String u;
-    public final String v;
-    public final String w;
-    public final aa1.b x;
-    public final boolean y;
+    public String r;
+    public String s;
+    public String t;
+    public String u;
+    public String v;
+    public String w;
+    public aa1.b x;
+    public boolean y;
 
     public ei(String str, String str2, String str3, String str4, String str5, String str6, boolean z) {
         k71.k.g(str, "issueQuery");

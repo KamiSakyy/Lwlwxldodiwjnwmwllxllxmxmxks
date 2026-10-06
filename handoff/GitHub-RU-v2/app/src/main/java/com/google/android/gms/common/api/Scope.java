@@ -11,8 +11,8 @@ import m7.y;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class Scope extends a implements ReflectedParcelable {
     public static final Parcelable.Creator<Scope> CREATOR = new g(0);
-    public final int r;
-    public final String s;
+    public int r;
+    public String s;
 
     public Scope(String str, int i) {
         u.e(str, "scopeUri must not be null or empty");

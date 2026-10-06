@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class eu {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final gu d;
-    public final uu0.j5 e;
+    public String a;
+    public String b;
+    public String c;
+    public gu d;
+    public uu0.j5 e;
 
     public eu(String str, String str2, String str3, gu guVar, uu0.j5 j5Var) {
         this.a = str;

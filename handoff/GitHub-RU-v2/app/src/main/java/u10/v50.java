@@ -2,20 +2,20 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v50 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final hc0.fm d;
-    public final hc0.ff e;
-    public final x50 f;
-    public final r50 g;
-    public final String h;
-    public final boolean i;
-    public final t50 j;
-    public final s50 k;
-    public final boolean l;
-    public final y50 m;
-    public final z70.b n;
+    public String a;
+    public String b;
+    public String c;
+    public hc0.fm d;
+    public hc0.ff e;
+    public x50 f;
+    public r50 g;
+    public String h;
+    public boolean i;
+    public t50 j;
+    public s50 k;
+    public boolean l;
+    public y50 m;
+    public z70.b n;
 
     public v50(String str, String str2, String str3, hc0.fm fmVar, hc0.ff ffVar, x50 x50Var, r50 r50Var, String str4, boolean z, t50 t50Var, s50 s50Var, boolean z2, y50 y50Var, z70.b bVar) {
         this.a = str;

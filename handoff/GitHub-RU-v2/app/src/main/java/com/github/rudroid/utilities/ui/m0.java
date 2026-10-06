@@ -232,6 +232,6 @@ public final class m0 {
         public s() {
         }
     }
-    public Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public Object d(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object d(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

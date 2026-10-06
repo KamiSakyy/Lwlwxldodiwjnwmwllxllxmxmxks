@@ -6,13 +6,13 @@ import com.github.service.models.response.type.SubscriptionState;
 public final class a0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f28446a;
+    public boolean f28446a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final SubscriptionState f28447b;
+    public SubscriptionState f28447b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final SubscriptionState f28448c;
+    public SubscriptionState f28448c;
 
     public a0(boolean z10, SubscriptionState subscriptionState, SubscriptionState subscriptionState2) {
         k71.k.g(subscriptionState, "unsubscribeState");

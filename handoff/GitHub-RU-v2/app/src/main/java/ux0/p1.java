@@ -8,10 +8,10 @@ import pz0.xl;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p1 implements aa.w0 {
     public static final m1 Companion = new m1();
-    public final String r;
-    public final br s;
-    public final xl t;
-    public final aa1.b u;
+    public String r;
+    public br s;
+    public xl t;
+    public aa1.b u;
 
     public p1(String str, br brVar, xl xlVar, aa1.b bVar) {
         k71.k.g(str, "query");

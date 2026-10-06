@@ -4,13 +4,13 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q0 extends d2 {
-    public final r0 a;
-    public final List b;
-    public final List c;
-    public final Boolean d;
-    public final c2 e;
-    public final List f;
-    public final int g;
+    public r0 a;
+    public List b;
+    public List c;
+    public Boolean d;
+    public c2 e;
+    public List f;
+    public int g;
 
     public q0(r0 r0Var, List list, List list2, Boolean bool, c2 c2Var, List list3, int i) {
         this.a = r0Var;

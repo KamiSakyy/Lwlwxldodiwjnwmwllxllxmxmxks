@@ -7,7 +7,7 @@ public enum y1 {
     DENIED("denied"),
     GRANTED("granted");
 
-    public final String r;
+    public String r;
 
     y1(String str) {
         this.r = str;

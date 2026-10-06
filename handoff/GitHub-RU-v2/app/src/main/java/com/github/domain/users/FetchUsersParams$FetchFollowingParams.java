@@ -12,7 +12,7 @@ import kotlinx.serialization.KSerializer;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class FetchUsersParams$FetchFollowingParams implements n {
-    public final String r;
+    public String r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<FetchUsersParams$FetchFollowingParams> CREATOR = new m(0);
 

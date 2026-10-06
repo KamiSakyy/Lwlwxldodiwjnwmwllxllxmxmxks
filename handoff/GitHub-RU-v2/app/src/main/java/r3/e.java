@@ -7,7 +7,7 @@ public final class e {
     public static final int f31113b = 66305;
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f31114a;
+    public int f31114a;
 
     public static String a(int i) {
         StringBuilder sb2 = new StringBuilder("LineBreak(strategy=");

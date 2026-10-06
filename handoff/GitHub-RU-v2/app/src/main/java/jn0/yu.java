@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yu {
-    public final String a;
-    public final String b;
-    public final zu c;
+    public String a;
+    public String b;
+    public zu c;
 
     public yu(String str, String str2, zu zuVar) {
         k71.k.g(str, "__typename");

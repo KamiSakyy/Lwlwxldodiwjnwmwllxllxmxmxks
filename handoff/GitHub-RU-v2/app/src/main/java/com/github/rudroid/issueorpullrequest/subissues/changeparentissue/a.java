@@ -23,25 +23,25 @@ public final class a extends k1 implements com.github.rudroid.utilities.viewmode
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f16053s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final zk.e f16054t;
+    public zk.e f16054t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final h1 f16055u;
+    public h1 f16055u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f16056v;
+    public com.github.rudroid.activities.util.c f16056v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final i1 f16057w;
+    public i1 f16057w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f16058x;
+    public String f16058x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final y1 f16059y;
+    public y1 f16059y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final i1 f16060z;
+    public i1 f16060z;
 
     /* renamed from: com.github.rudroid.issueorpullrequest.subissues.changeparentissue.a$a, reason: collision with other inner class name */
     public static final class C0043a {

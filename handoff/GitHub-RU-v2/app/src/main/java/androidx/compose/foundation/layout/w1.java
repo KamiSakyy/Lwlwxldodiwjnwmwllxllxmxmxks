@@ -4,10 +4,10 @@ package androidx.compose.foundation.layout;
 public final class w1 extends v2.x0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f1283a;
+    public float f1283a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f1284b;
+    public boolean f1284b;
 
     public w1(float f6, boolean z10) {
         this.f1283a = f6;

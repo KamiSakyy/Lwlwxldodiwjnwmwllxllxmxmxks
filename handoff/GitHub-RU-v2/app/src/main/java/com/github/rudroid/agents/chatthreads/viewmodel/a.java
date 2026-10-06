@@ -6,10 +6,10 @@ import java.util.List;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f6714a;
+    public List f6714a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f6715b;
+    public boolean f6715b;
 
     public a(List list, boolean z10) {
         k71.k.g(list, "threads");

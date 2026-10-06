@@ -2,7 +2,7 @@ package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class s0 {
-    public final int a;
+    public int a;
     public int b;
     public int c = -1;
 

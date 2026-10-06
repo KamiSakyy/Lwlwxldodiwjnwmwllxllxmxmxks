@@ -9,22 +9,22 @@ public final class l implements d, Parcelable {
     public static final Parcelable.Creator<l> CREATOR = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public final l01.w0 f18044r;
+    public l01.w0 f18044r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f18045s;
+    public String f18045s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f18046t;
+    public String f18046t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final ZonedDateTime f18047u;
+    public ZonedDateTime f18047u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f18048v;
+    public String f18048v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final boolean f18049w;
+    public boolean f18049w;
 
     public static final class a implements Parcelable.Creator<l> {
         @Override // android.os.Parcelable.Creator

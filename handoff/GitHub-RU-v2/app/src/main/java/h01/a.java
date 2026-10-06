@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final PullRequestMergeAction a;
-    public final PullRequestMergeMethodStatus b;
-    public final ArrayList c;
+    public PullRequestMergeAction a;
+    public PullRequestMergeMethodStatus b;
+    public ArrayList c;
 
     public a(PullRequestMergeAction pullRequestMergeAction, PullRequestMergeMethodStatus pullRequestMergeMethodStatus, ArrayList arrayList) {
         k71.k.g(pullRequestMergeAction, "action");

@@ -2,8 +2,8 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 {
-    public final c0 a;
-    public final String b;
+    public c0 a;
+    public String b;
 
     public b0(c0 c0Var, String str) {
         k71.k.g(c0Var, "state");

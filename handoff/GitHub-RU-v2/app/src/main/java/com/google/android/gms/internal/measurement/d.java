@@ -10,8 +10,8 @@ import java.util.TreeMap;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements Iterable, n, j {
-    public final TreeMap r;
-    public final TreeMap s;
+    public TreeMap r;
+    public TreeMap s;
 
     public d() {
         this.r = new TreeMap();
@@ -791,7 +791,7 @@ public final class d implements Iterable, n, j {
 
     public d(Object... a) {
     }
-    public Object ordinal() { return null; }
+    public int ordinal() { return null; }
     public Object a = null;
     public Object b = null;
     public Object c = null;

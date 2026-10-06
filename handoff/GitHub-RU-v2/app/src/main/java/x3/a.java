@@ -10,10 +10,10 @@ public final class a {
     public static final a f33718d;
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f33719a;
+    public boolean f33719a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Throwable f33720b;
+    public Throwable f33720b;
 
     static {
         if (g.f33734u) {

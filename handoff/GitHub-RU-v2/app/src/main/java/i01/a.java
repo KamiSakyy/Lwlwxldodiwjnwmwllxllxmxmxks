@@ -6,10 +6,10 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final String a;
-    public final int b;
-    public final PullRequestMergeMethod c;
-    public final Integer d;
+    public String a;
+    public int b;
+    public PullRequestMergeMethod c;
+    public Integer d;
 
     public a(String str, int i, PullRequestMergeMethod pullRequestMergeMethod, Integer num) {
         k.g(pullRequestMergeMethod, "mergeMethod");

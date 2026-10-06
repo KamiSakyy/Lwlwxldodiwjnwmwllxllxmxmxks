@@ -5,9 +5,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e0 implements SerialDescriptor {
-    public final String a;
-    public final SerialDescriptor b;
-    public final SerialDescriptor c;
+    public String a;
+    public SerialDescriptor b;
+    public SerialDescriptor c;
 
     public e0(String str, SerialDescriptor serialDescriptor, SerialDescriptor serialDescriptor2) {
         this.a = str;

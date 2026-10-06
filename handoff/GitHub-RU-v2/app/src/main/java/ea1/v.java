@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class v extends y {
-    public final ArrayList c;
+    public ArrayList c;
     public int d;
 
     public v(n nVar) {

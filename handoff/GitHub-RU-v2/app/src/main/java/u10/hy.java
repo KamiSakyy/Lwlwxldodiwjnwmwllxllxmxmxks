@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hy {
-    public final String a;
-    public final String b;
-    public final w80.q3 c;
+    public String a;
+    public String b;
+    public w80.q3 c;
 
     public hy(String str, String str2, w80.q3 q3Var) {
         this.a = str;

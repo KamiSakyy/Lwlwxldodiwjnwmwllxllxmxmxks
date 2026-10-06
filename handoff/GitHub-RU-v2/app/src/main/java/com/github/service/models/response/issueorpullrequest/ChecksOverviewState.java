@@ -9,7 +9,7 @@ import v8.l0;
 public final class ChecksOverviewState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ ChecksOverviewState[] $VALUES;
-    private final String rawValue;
+    private String rawValue;
     public static final ChecksOverviewState EXPECTED = new ChecksOverviewState("EXPECTED", 0, "EXPECTED");
     public static final ChecksOverviewState ERROR = new ChecksOverviewState("ERROR", 1, "ERROR");
     public static final ChecksOverviewState FAILURE = new ChecksOverviewState("FAILURE", 2, "FAILURE");

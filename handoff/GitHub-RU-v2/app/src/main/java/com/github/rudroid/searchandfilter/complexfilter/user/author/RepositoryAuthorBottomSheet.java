@@ -18,11 +18,11 @@ import w61.p;
 public final class RepositoryAuthorBottomSheet extends Hilt_RepositoryAuthorBottomSheet {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] d1;
-    public final l1 Y0;
-    public final com.github.rudroid.fragments.util.c Z0;
-    public final p a1;
-    public final int b1;
-    public final int c1;
+    public l1 Y0;
+    public com.github.rudroid.fragments.util.c Z0;
+    public p a1;
+    public int b1;
+    public int c1;
 
     public static final class a {
     }

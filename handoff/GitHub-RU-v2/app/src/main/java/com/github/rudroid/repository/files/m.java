@@ -9,33 +9,33 @@ public abstract class m implements le.z {
     public static final b Companion = new b();
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f19613r;
+    public int f19613r;
 
     public static final class a extends m {
 
         /* renamed from: s, reason: collision with root package name */
-        public final yz0.o f19614s;
+        public yz0.o f19614s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19615t;
+        public String f19615t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final boolean f19616u;
+        public boolean f19616u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final boolean f19617v;
+        public boolean f19617v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final int f19618w;
+        public int f19618w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final boolean f19619x;
+        public boolean f19619x;
 
         /* renamed from: y, reason: collision with root package name */
-        public final int f19620y;
+        public int f19620y;
 
         /* renamed from: z, reason: collision with root package name */
-        public final boolean f19621z;
+        public boolean f19621z;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(yz0.o oVar) {
@@ -89,10 +89,10 @@ public abstract class m implements le.z {
     public static final class d extends m {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f19632s;
+        public String f19632s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19633t;
+        public String f19633t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(String str) {
@@ -132,10 +132,10 @@ public abstract class m implements le.z {
     public static final class e extends m {
 
         /* renamed from: s, reason: collision with root package name */
-        public final gj.a f19634s;
+        public gj.a f19634s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19635t;
+        public String f19635t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(gj.a aVar) {
@@ -179,22 +179,22 @@ public abstract class m implements le.z {
     public static final class c extends m {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f19622s;
+        public String f19622s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f19623t;
+        public String f19623t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final int f19624u;
+        public int f19624u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final int f19625v;
+        public int f19625v;
 
         /* renamed from: w, reason: collision with root package name */
-        public final a f19626w;
+        public a f19626w;
 
         /* renamed from: x, reason: collision with root package name */
-        public final String f19627x;
+        public String f19627x;
 
         /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
         /* JADX WARN: Unknown enum class pattern. Please report as an issue! */

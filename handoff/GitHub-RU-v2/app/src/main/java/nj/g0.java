@@ -7,8 +7,8 @@ import z01.r1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 implements r1 {
-    public final r1 r;
-    public final e s;
+    public r1 r;
+    public e s;
 
     public g0(r1 r1Var, e eVar) {
         k71.k.g(r1Var, "delegate");

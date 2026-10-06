@@ -12,7 +12,7 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements w0 {
     public static final g Companion = new g();
-    public final String r;
+    public String r;
 
     public k(String str) {
         k71.k.g(str, "id");

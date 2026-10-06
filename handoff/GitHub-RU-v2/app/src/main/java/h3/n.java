@@ -7,4 +7,5 @@ package h3;
 public class n {
     public n() {
     }
+    public Object d(Object, int, boolean) { return null; }
 }

@@ -6,12 +6,12 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f extends d21.a {
     public static final Parcelable.Creator<f> CREATOR = new c0(0);
-    public final k r;
-    public final boolean s;
-    public final boolean t;
-    public final int[] u;
-    public final int v;
-    public final int[] w;
+    public k r;
+    public boolean s;
+    public boolean t;
+    public int[] u;
+    public int v;
+    public int[] w;
 
     public f(k kVar, boolean z, boolean z2, int[] iArr, int i, int[] iArr2) {
         this.r = kVar;

@@ -26,4 +26,7 @@ public final /* synthetic */ class p0 implements j71.c {
     }
     public Object d() { return null; }
     public Object j(Object p1) { return null; }
+    public Object e(Object, Object) { return null; }
+    public Object e(Object, Object) { return null; }
+    public Object e(Object, Object) { return null; }
 }

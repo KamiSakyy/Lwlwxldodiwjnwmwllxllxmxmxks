@@ -16,7 +16,7 @@ import w61.i;
 public final class AgentAiModelsResponse {
     public static final Companion Companion = new Companion();
     public static final h[] b = {w.s(i.r, new a(0))};
-    public final List a;
+    public List a;
 
     public static final class Companion {
         public final KSerializer serializer() {

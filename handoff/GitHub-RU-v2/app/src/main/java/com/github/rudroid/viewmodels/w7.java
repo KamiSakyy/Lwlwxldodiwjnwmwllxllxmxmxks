@@ -4,8 +4,8 @@ import com.github.domain.users.FetchUsersParams$FetchSponsoringParams;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w7 extends za<FetchUsersParams$FetchSponsoringParams> {
-    public final gn.j y;
-    public final com.github.rudroid.activities.util.c z;
+    public gn.j y;
+    public com.github.rudroid.activities.util.c z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public w7(gn.j jVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {

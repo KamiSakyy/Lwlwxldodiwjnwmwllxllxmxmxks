@@ -135,5 +135,5 @@ public class j {
     public String toString() {
         return new i(1, 0, b0.class, this, "classSimpleName", "getClassSimpleName(Ljava/lang/Object;)Ljava/lang/String;") + '@' + b0.q(this);
     }
-    public Object g0(Object p1) { return null; }
+    public static Object g0(Object p1) { return null; }
 }

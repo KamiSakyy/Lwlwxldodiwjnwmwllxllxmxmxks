@@ -9,7 +9,7 @@ public final class pm {
     public static final pm t;
     public static final /* synthetic */ pm[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         pm pmVar = new pm("APPROVED", 0, "APPROVED");

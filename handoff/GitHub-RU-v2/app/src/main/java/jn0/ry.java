@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ry {
-    public final String a;
-    public final ny b;
-    public final String c;
+    public String a;
+    public ny b;
+    public String c;
 
     public ry(String str, ny nyVar, String str2) {
         this.a = str;

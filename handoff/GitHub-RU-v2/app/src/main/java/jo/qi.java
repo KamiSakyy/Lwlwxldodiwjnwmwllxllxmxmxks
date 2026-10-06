@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qi {
-    public final String a;
-    public final ri b;
-    public final vx.a c;
+    public String a;
+    public ri b;
+    public vx.a c;
 
     public qi(String str, ri riVar, vx.a aVar) {
         k71.k.g(str, "__typename");

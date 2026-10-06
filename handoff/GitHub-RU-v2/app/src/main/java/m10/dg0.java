@@ -16,7 +16,7 @@ public final class dg0 {
     public static final dg0 x;
     public static final dg0 y;
     public static final dg0 z;
-    public final String r;
+    public String r;
 
     static {
         dg0 dg0Var = new dg0("DISCUSSIONS", 0, "DISCUSSIONS");

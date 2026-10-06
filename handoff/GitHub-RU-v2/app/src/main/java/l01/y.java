@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y implements Parcelable {
     public static final Parcelable.Creator<y> CREATOR = new c(13);
-    public final String r;
+    public String r;
 
     public /* synthetic */ y(String str) {
         this.r = str;

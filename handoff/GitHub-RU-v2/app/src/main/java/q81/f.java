@@ -6,8 +6,8 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f {
     public static final f c = new f(x61.m.K0(new ArrayList()), null);
-    public final Set a;
-    public final m7.y b;
+    public Set a;
+    public m7.y b;
 
     public f(Set set, m7.y yVar) {
         this.a = set;

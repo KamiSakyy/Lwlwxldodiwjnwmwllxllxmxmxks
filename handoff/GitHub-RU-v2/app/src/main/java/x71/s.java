@@ -6,7 +6,7 @@ import v71.b0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class s extends v71.a implements t, l {
-    public final h u;
+    public h u;
 
     public s(a71.h hVar, h hVar2) {
         super(hVar, true);

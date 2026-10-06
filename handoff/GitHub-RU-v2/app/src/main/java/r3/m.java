@@ -4,7 +4,7 @@ package r3;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f31133a;
+    public int f31133a;
 
     public static String a(int i) {
         return i == 1 ? "Ltr" : i == 2 ? "Rtl" : i == 3 ? "Content" : i == 4 ? "ContentOrLtr" : i == 5 ? "ContentOrRtl" : i == 0 ? "Unspecified" : "Invalid";

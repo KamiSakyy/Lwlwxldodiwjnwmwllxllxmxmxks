@@ -2,9 +2,9 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 {
-    public final String a;
-    public final y2 b;
-    public final u2 c;
+    public String a;
+    public y2 b;
+    public u2 c;
 
     public u0(String str, y2 y2Var, u2 u2Var) {
         k71.k.g(str, "__typename");

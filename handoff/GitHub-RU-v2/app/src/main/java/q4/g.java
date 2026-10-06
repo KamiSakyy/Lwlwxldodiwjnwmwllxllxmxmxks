@@ -6,16 +6,16 @@ import java.util.ArrayList;
 public final class g implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayList f30949a;
+    public ArrayList f30949a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f30950b;
+    public int f30950b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f30951c;
+    public int f30951c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final String f30952d;
+    public String f30952d;
 
     public g(int i, int i10, String str, ArrayList arrayList) {
         this.f30949a = arrayList;

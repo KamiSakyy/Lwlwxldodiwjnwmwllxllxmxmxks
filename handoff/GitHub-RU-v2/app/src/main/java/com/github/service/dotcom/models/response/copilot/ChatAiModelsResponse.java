@@ -16,7 +16,7 @@ import w61.i;
 public final class ChatAiModelsResponse {
     public static final Companion Companion = new Companion();
     public static final h[] b = {w.s(i.r, new a(15))};
-    public final List a;
+    public List a;
 
     public static final class Companion {
         public final KSerializer serializer() {

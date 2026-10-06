@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f60 {
-    public final String a;
-    public final lt.j b;
+    public String a;
+    public lt.j b;
 
     public f60(String str, lt.j jVar) {
         this.a = str;

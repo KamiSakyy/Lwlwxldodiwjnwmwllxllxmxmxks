@@ -5,8 +5,8 @@ import lm.m;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final m a;
-    public final b b;
+    public m a;
+    public b b;
 
     public a(m mVar, b bVar) {
         k.g(mVar, "watchUserListsUseCase");

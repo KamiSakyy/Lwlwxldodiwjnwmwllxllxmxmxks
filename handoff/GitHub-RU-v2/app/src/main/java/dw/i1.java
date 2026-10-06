@@ -2,8 +2,8 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i1 {
-    public final String a;
-    public final j1 b;
+    public String a;
+    public j1 b;
 
     public i1(String str, j1 j1Var) {
         this.a = str;

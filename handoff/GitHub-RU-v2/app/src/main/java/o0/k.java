@@ -4,10 +4,10 @@ package o0;
 public final class k implements androidx.compose.foundation.lazy.layout.v {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j71.c f29821a;
+    public j71.c f29821a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j71.g f29822b;
+    public j71.g f29822b;
 
     public k(j71.c cVar, j71.g gVar) {
         this.f29821a = cVar;

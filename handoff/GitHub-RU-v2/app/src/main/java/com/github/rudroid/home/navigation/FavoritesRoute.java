@@ -12,7 +12,7 @@ import kotlinx.serialization.KSerializer;
 public final class FavoritesRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final SerializableSimpleRepositoryList f14994r;
+    public SerializableSimpleRepositoryList f14994r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<FavoritesRoute> CREATOR = new a();
 

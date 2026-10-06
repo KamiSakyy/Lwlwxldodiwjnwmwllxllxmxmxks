@@ -8,13 +8,13 @@ import java.util.UUID;
 public abstract class n0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final UUID f32824a;
+    public UUID f32824a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final d9.q f32825b;
+    public d9.q f32825b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Set f32826c;
+    public Set f32826c;
 
     public n0(UUID uuid, d9.q qVar, LinkedHashSet linkedHashSet) {
         k71.k.g(uuid, "id");

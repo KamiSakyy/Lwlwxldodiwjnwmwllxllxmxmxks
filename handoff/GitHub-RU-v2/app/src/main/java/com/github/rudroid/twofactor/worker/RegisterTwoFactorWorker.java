@@ -13,8 +13,8 @@ import v8.v;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RegisterTwoFactorWorker extends CoroutineWorker {
     public static final a Companion = new a();
-    public final z g;
-    public final e0 h;
+    public z g;
+    public e0 h;
 
     public static final class a {
     }

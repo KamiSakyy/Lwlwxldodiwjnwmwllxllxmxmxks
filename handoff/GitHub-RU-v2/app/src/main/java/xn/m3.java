@@ -2,14 +2,14 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m3 implements y3 {
-    public final long a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final Long g;
-    public final Long h;
+    public long a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public Long g;
+    public Long h;
 
     public m3(long j, String str, String str2, String str3, String str4, String str5, Long l, Long l2) {
         k71.k.g(str, "eventType");

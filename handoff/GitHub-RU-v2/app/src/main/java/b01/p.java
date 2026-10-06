@@ -6,12 +6,12 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public final String a;
-    public final int b;
-    public final com.github.service.models.response.a c;
-    public final String d;
-    public final String e;
-    public final n f;
+    public String a;
+    public int b;
+    public com.github.service.models.response.a c;
+    public String d;
+    public String e;
+    public n f;
 
     public p(String str, int i, com.github.service.models.response.a aVar, String str2, String str3, n nVar) {
         this.a = str;

@@ -10,7 +10,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z implements n0 {
     public static final v Companion = new v();
-    public final j00 r;
+    public j00 r;
 
     public z(j00 j00Var) {
         this.r = j00Var;

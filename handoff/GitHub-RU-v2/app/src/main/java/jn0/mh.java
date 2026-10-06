@@ -2,14 +2,14 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mh implements aaShadow.v0 {
-    public final nh a;
-    public final bi b;
-    public final ci c;
-    public final di d;
-    public final zh e;
-    public final kh f;
-    public final String g;
-    public final String h;
+    public nh a;
+    public bi b;
+    public ci c;
+    public di d;
+    public zh e;
+    public kh f;
+    public String g;
+    public String h;
 
     public mh(nh nhVar, bi biVar, ci ciVar, di diVar, zh zhVar, kh khVar, String str, String str2) {
         this.a = nhVar;

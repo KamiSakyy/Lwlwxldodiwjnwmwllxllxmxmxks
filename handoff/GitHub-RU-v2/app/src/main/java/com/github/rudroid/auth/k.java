@@ -6,13 +6,13 @@ import com.github.service.models.ApiFailure;
 public final class k implements o {
 
     /* renamed from: a, reason: collision with root package name */
-    public final i f8553a;
+    public i f8553a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ApiFailure f8554b;
+    public ApiFailure f8554b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Throwable f8555c;
+    public Throwable f8555c;
 
     public k(i iVar, ApiFailure apiFailure, Throwable th, int i) {
         apiFailure = (i & 2) != 0 ? null : apiFailure;

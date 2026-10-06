@@ -44,4 +44,6 @@ public final class d extends i4 {
     public Object h() { return null; }
     public Object a = null;
     public Object t = null;
+    public Object d(Object, int) { return null; }
+    public Object f(Object, int) { return null; }
 }

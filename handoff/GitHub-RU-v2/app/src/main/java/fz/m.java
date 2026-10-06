@@ -17,9 +17,9 @@ import yz0.b2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements yz0.e {
     public static final l Companion = new l();
-    public final int a;
-    public final Object b;
-    public final x01.i c;
+    public int a;
+    public Object b;
+    public x01.i c;
 
     public m(a3 a3Var, j3 j3Var, k3 k3Var, boolean z) {
         ArrayList arrayList;

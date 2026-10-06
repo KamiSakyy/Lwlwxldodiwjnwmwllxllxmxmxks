@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u40 {
-    public final l40 a;
-    public final p40 b;
+    public l40 a;
+    public p40 b;
 
     public u40(l40 l40Var, p40 p40Var) {
         this.a = l40Var;

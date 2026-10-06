@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gl implements aaShadow.w0 {
     public static final zk Companion = new zk();
-    public final String r;
-    public final String s;
-    public final int t;
+    public String r;
+    public String s;
+    public int t;
 
     public gl(String str, int i, String str2) {
         this.r = str;

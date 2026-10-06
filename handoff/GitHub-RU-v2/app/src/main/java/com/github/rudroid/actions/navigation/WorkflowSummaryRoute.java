@@ -13,10 +13,10 @@ import x.i;
 public final class WorkflowSummaryRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f5120r;
+    public String f5120r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f5121s;
+    public String f5121s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<WorkflowSummaryRoute> CREATOR = new a();
 

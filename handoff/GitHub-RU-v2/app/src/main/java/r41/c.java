@@ -8,7 +8,7 @@ import v41.p;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final p a;
+    public p a;
 
     public c(p pVar) {
         this.a = pVar;

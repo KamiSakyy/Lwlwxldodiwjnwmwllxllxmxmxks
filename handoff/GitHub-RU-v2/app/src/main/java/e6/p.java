@@ -14,7 +14,7 @@ public enum p implements b0 {
 
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f21969r;
+    public int f21969r;
 
     p(int i) {
         this.f21969r = i;

@@ -2,10 +2,10 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final cp0.g d;
+    public String a;
+    public String b;
+    public String c;
+    public cp0.g d;
 
     public t(String str, String str2, String str3, cp0.g gVar) {
         k71.k.g(str, "__typename");

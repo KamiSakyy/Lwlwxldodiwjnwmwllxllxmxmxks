@@ -5,8 +5,8 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements n {
-    public final n r;
-    public final String s;
+    public n r;
+    public String s;
 
     public f(String str) {
         this.r = n.b;
@@ -19,7 +19,7 @@ public final class f implements n {
     }
 
     @Override // com.google.android.gms.internal.measurement.n
-    public final Iterator b() {
+    public static final Iterator b() {
         return null;
     }
 

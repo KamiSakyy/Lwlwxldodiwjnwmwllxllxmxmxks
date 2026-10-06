@@ -9,10 +9,10 @@ import t71.q;
 public final class e {
     public static final d Companion = new d();
     public static final String e = q.r("\n            ALTER TABLE filter_bars ADD COLUMN timestamp INTEGER NOT NULL DEFAULT '" + System.currentTimeMillis() + "'\n        ");
-    public final String a;
-    public final String b;
-    public final String c;
-    public final long d;
+    public String a;
+    public String b;
+    public String c;
+    public long d;
 
     public e(long j, String str, String str2, String str3) {
         k.g(str, "id");

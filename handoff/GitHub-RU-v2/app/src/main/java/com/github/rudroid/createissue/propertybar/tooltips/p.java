@@ -6,10 +6,10 @@ import java.time.ZonedDateTime;
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ZonedDateTime f10517a;
+    public ZonedDateTime f10517a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ZonedDateTime f10518b;
+    public ZonedDateTime f10518b;
 
     public p(ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2) {
         this.f10517a = zonedDateTime;

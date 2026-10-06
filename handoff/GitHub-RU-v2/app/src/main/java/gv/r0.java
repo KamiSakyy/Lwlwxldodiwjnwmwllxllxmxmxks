@@ -2,8 +2,8 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r0 {
-    public final String a;
-    public final u b;
+    public String a;
+    public u b;
 
     public r0(String str, u uVar) {
         this.a = str;

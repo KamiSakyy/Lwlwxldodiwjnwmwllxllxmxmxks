@@ -13,7 +13,7 @@ public final class fr {
     public static final fr x;
     public static final /* synthetic */ fr[] y;
     public static final /* synthetic */ d71.b z;
-    public final String r;
+    public String r;
 
     static {
         fr frVar = new fr("CREATED_AT", 0, "CREATED_AT");

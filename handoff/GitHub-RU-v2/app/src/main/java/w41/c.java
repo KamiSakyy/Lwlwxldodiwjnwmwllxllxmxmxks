@@ -8,9 +8,9 @@ import t71.p;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final b a;
-    public final b b;
-    public final b c;
+    public b a;
+    public b b;
+    public b c;
 
     public c(ExecutorService executorService, ExecutorService executorService2) {
         k.g(executorService, "backgroundExecutorService");

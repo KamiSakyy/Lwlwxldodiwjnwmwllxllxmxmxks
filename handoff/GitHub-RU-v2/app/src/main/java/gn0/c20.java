@@ -9,7 +9,7 @@ public final class c20 {
     public static final c20 t;
     public static final /* synthetic */ c20[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         c20 c20Var = new c20("BRANCH_PROTECTION_RULE", 0, "BRANCH_PROTECTION_RULE");

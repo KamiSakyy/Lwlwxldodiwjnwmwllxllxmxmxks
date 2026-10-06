@@ -4,8 +4,8 @@ import com.github.rudroid.home.search.navigation.SearchResultsRoute;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class w3 extends androidx.lifecycle.k1 implements x3 {
-    public final String s;
-    public final String t;
+    public String s;
+    public String t;
 
     public w3(androidx.lifecycle.a1 a1Var) {
         k71.k.g(a1Var, "savedStateHandle");

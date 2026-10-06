@@ -315,4 +315,5 @@ public final class g {
             }
         }
     }
+    public Object b(int, Object, int) { return null; }
 }

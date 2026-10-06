@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fo {
-    public final String a;
-    public final String b;
-    public final bu.m c;
+    public String a;
+    public String b;
+    public bu.m c;
 
     public fo(String str, String str2, bu.m mVar) {
         this.a = str;

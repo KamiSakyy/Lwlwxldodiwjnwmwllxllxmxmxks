@@ -15,22 +15,22 @@ public final class r extends k1 {
     public static final a Companion = new a();
 
     /* renamed from: s, reason: collision with root package name */
-    public final vl.e f20420s;
+    public vl.e f20420s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f20421t;
+    public com.github.rudroid.activities.util.c f20421t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final y1 f20422u;
+    public y1 f20422u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final y1 f20423v;
+    public y1 f20423v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y1 f20424w;
+    public y1 f20424w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final i1 f20425x;
+    public i1 f20425x;
 
     public static final class a {
     }

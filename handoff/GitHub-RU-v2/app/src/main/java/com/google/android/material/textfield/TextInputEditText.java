@@ -18,7 +18,7 @@ import o31.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class TextInputEditText extends AppCompatEditText {
-    public final Rect x;
+    public Rect x;
     public boolean y;
 
     public TextInputEditText(Context context, AttributeSet attributeSet) {

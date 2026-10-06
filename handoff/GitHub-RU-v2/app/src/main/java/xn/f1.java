@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f1 {
-    public final LocalDate a;
-    public final Boolean b;
-    public final Double c;
-    public final boolean d;
-    public final double e;
+    public LocalDate a;
+    public Boolean b;
+    public Double c;
+    public boolean d;
+    public double e;
 
     public f1(LocalDate localDate, Boolean bool, Double d, boolean z, double d2) {
         this.a = localDate;

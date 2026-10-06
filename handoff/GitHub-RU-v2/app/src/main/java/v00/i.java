@@ -13,10 +13,10 @@ import y71.n1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
     public static final f Companion = new f();
-    public final q81.u a;
-    public final com.github.service.wrapper.b b;
-    public final oa.h c;
-    public final oa.j d;
+    public q81.u a;
+    public com.github.service.wrapper.b b;
+    public oa.h c;
+    public oa.j d;
     public String e;
     public Object f;
 

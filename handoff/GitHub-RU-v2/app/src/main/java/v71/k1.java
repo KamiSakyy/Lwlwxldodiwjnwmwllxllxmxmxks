@@ -5,7 +5,7 @@ import kotlinx.coroutines.DispatchException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k1 extends q1 {
-    public final a71.c u;
+    public a71.c u;
 
     public k1(a71.h hVar, j71.e eVar) {
         super(hVar, false);

@@ -13,8 +13,8 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i extends d {
-    public final Boolean a;
-    public final p2 b;
+    public Boolean a;
+    public p2 b;
     public Window c;
     public boolean d;
 

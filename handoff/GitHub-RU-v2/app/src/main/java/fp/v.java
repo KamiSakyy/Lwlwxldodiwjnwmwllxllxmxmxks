@@ -2,8 +2,8 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v {
-    public final boolean a;
-    public final String b;
+    public boolean a;
+    public String b;
 
     public v(String str, boolean z) {
         this.a = z;

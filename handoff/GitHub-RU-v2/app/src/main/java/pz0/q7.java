@@ -16,7 +16,7 @@ public final class q7 {
     public static final q7 x;
     public static final q7 y;
     public static final q7 z;
-    public final String r;
+    public String r;
 
     static {
         q7 q7Var = new q7("FRIDAY", 0, "FRIDAY");

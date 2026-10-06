@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d70 implements aaShadow.v0 {
-    public final ArrayList a;
-    public final String b;
-    public final String c;
+    public ArrayList a;
+    public String b;
+    public String c;
 
     public d70(String str, String str2, ArrayList arrayList) {
         this.a = arrayList;

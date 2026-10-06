@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fd implements aaShadow.v0 {
-    public final id a;
-    public final jd b;
-    public final String c;
-    public final String d;
+    public id a;
+    public jd b;
+    public String c;
+    public String d;
 
     public fd(id idVar, jd jdVar, String str, String str2) {
         this.a = idVar;

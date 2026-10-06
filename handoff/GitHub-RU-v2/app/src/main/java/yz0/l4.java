@@ -4,12 +4,12 @@ import com.github.service.models.response.Avatar;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l4 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final Avatar e;
-    public final boolean f;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public Avatar e;
+    public boolean f;
 
     public l4(Avatar avatar, String str, String str2, String str3, String str4) {
         boolean x = t71.w.x(str3, "[bot]", false);

@@ -7,5 +7,5 @@ package k;
 public class n {
     public n() {
     }
-    public Object b() { return null; }
+    public static Object b() { return null; }
 }

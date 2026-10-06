@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w1 implements aa.h0 {
-    public final List a;
-    public final v1 b;
+    public List a;
+    public v1 b;
 
     public w1(List list, v1 v1Var) {
         this.a = list;

@@ -4,10 +4,10 @@ package com.github.rudroid.actions.checklog;
 public final class x0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final q71.g f4907a;
+    public q71.g f4907a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final m0 f4908b;
+    public m0 f4908b;
 
     public x0(q71.g gVar, m0 m0Var) {
         k71.k.g(gVar, "range");

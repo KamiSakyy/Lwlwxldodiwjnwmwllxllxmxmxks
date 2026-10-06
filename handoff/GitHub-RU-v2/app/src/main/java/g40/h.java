@@ -2,8 +2,8 @@ package g40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final String a;
-    public final p b;
+    public String a;
+    public p b;
 
     public h(String str, p pVar) {
         k71.k.g(str, "__typename");

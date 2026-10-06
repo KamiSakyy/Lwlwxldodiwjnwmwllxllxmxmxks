@@ -14,10 +14,10 @@ import yz0.h;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class LegacyProjectWithNumber implements Parcelable {
-    public final SimpleLegacyProject r;
-    public final int s;
-    public final String t;
-    public final String u;
+    public SimpleLegacyProject r;
+    public int s;
+    public String t;
+    public String u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<LegacyProjectWithNumber> CREATOR = new h(21);
 

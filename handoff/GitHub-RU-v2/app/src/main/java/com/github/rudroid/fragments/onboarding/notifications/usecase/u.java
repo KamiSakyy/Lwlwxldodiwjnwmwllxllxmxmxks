@@ -4,7 +4,7 @@ package com.github.rudroid.fragments.onboarding.notifications.usecase;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public final gi.c f14242a;
+    public gi.c f14242a;
 
     public u(gi.c cVar) {
         k71.k.g(cVar, "systemPreferences");

@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fz {
-    public final String a;
-    public final int b;
-    public final int c;
-    public final int d;
-    public final iz e;
-    public final String f;
+    public String a;
+    public int b;
+    public int c;
+    public int d;
+    public iz e;
+    public String f;
 
     public fz(String str, int i, int i2, int i3, iz izVar, String str2) {
         this.a = str;

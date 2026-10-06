@@ -14,7 +14,7 @@ public final class g1 {
     public static final g1 u;
     public static final g1 v;
     public static final /* synthetic */ g1[] w;
-    public final String r;
+    public String r;
 
     static {
         g1 g1Var = new g1("ACCEPT", 0, "accept");

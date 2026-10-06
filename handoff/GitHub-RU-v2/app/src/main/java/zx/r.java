@@ -4,9 +4,9 @@ import dw.x3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public final String a;
-    public final String b;
-    public final x3 c;
+    public String a;
+    public String b;
+    public x3 c;
 
     public r(String str, String str2, x3 x3Var) {
         this.a = str;

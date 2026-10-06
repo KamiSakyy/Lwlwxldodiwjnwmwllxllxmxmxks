@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements e, d, b, c {
-    public final CountDownLatch r;
+    public CountDownLatch r;
 
     public /* synthetic */ i(CountDownLatch countDownLatch) {
         this.r = countDownLatch;

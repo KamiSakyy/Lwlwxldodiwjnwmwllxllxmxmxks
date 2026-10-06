@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ls implements aaShadow.v0 {
-    public final ns a;
+    public ns a;
 
     public ls(ns nsVar) {
         this.a = nsVar;

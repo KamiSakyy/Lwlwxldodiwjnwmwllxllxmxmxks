@@ -29,7 +29,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.widget.shortcuts.d {
     public static final a Companion = new a();
-    public final l1 i0;
+    public l1 i0;
 
     public static final class a {
     }
@@ -497,4 +497,5 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
     public static Object startActivity(Object... a) {
         return null;
     }
+    public Object setResult(int) { return null; }
 }

@@ -14,8 +14,8 @@ import w61.i;
 public final class AiModelCapabilitiesResponse {
     public static final Companion Companion = new Companion();
     public static final h[] c = {w.s(i.r, new a(10)), null};
-    public final b a;
-    public final String b;
+    public b a;
+    public String b;
 
     public static final class Companion {
         public final KSerializer serializer() {

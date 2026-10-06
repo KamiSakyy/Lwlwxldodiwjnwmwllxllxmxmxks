@@ -4,13 +4,13 @@ package p8;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final n8.b f30421a;
+    public n8.b f30421a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final b f30422b;
+    public b f30422b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final b f30423c;
+    public b f30423c;
 
     public c(n8.b bVar, b bVar2, b bVar3) {
         this.f30421a = bVar;

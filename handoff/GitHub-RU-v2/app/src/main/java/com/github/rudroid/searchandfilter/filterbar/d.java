@@ -6,7 +6,7 @@ import v8.l0;
 public abstract class d {
 
     public static final class a extends d {
-        public final int a;
+        public int a;
 
         public a(int i) {
             this.a = i;
@@ -14,7 +14,7 @@ public abstract class d {
     }
 
     public static final class b extends d {
-        public final a a;
+        public a a;
 
         /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
         /* JADX WARN: Unknown enum class pattern. Please report as an issue! */

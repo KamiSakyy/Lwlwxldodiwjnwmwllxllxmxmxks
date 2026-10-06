@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rx {
-    public final String a;
-    public final sx b;
-    public final ja0.a c;
+    public String a;
+    public sx b;
+    public ja0.a c;
 
     public rx(String str, sx sxVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

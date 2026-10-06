@@ -6,10 +6,10 @@ import android.graphics.drawable.Drawable;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Drawable f26101a;
+    public Drawable f26101a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f26102b;
+    public boolean f26102b;
 
     public g(Drawable drawable, boolean z10) {
         this.f26101a = drawable;

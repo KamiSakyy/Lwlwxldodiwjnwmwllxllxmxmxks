@@ -16,7 +16,7 @@ import w50.m;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class Separator extends d {
-    public final String v;
+    public String v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<Separator> CREATOR = new o(19);
     public static final w61.h[] w = {w.s(w61.i.r, new p(19)), null, null};

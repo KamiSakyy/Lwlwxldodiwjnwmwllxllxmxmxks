@@ -10,7 +10,7 @@ public final class qw {
     public static final qw u;
     public static final /* synthetic */ qw[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         qw qwVar = new qw("EMAIL", 0, "EMAIL");

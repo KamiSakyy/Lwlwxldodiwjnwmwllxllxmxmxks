@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cn implements aaShadow.v0 {
-    public final fn a;
-    public final String b;
-    public final String c;
+    public fn a;
+    public String b;
+    public String c;
 
     public cn(fn fnVar, String str, String str2) {
         this.a = fnVar;

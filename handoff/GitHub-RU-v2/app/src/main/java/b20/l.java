@@ -4,11 +4,11 @@ import hc0.fq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l {
-    public final String a;
-    public final String b;
-    public final j c;
-    public final fq d;
-    public final String e;
+    public String a;
+    public String b;
+    public j c;
+    public fq d;
+    public String e;
 
     public l(String str, String str2, j jVar, fq fqVar, String str3) {
         this.a = str;

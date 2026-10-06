@@ -5,7 +5,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class f5 implements Cloneable {
-    public final g5 r;
+    public g5 r;
     public g5 s;
 
     public f5(g5 g5Var) {

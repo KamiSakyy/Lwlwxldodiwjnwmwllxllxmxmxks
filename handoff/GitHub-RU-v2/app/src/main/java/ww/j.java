@@ -7,11 +7,11 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final wi a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final yi e;
+    public wi a;
+    public String b;
+    public String c;
+    public int d;
+    public yi e;
 
     public j(wi wiVar, String str, String str2, int i, yi yiVar) {
         this.a = wiVar;

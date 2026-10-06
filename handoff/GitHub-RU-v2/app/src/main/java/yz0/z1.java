@@ -4,8 +4,8 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z1 {
-    public final int a;
-    public final ZonedDateTime b;
+    public int a;
+    public ZonedDateTime b;
 
     public z1(int i, ZonedDateTime zonedDateTime) {
         k71.k.g(zonedDateTime, "lastCommitDate");

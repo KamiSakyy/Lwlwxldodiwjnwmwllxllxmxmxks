@@ -6,10 +6,10 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 implements aa.w0 {
     public static final a1 Companion = new a1();
-    public final String r;
-    public final String s;
-    public final aa1.b t;
-    public final int u;
+    public String r;
+    public String s;
+    public aa1.b t;
+    public int u;
 
     public l1(int i, aa1.b bVar, String str, String str2) {
         k71.k.g(str, "repoOwner");

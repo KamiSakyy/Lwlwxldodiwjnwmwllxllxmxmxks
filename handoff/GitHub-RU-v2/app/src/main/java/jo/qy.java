@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qy implements aaShadow.v0 {
-    public final sy a;
-    public final String b;
-    public final String c;
+    public sy a;
+    public String b;
+    public String c;
 
     public qy(sy syVar, String str, String str2) {
         this.a = syVar;

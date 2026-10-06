@@ -6,22 +6,22 @@ import com.github.rudroid.repository.navigation.LicenseContentsRoute;
 public final class v extends androidx.lifecycle.k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f20295s;
+    public com.github.rudroid.activities.util.c f20295s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final ml.e f20296t;
+    public ml.e f20296t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f20297u;
+    public String f20297u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final String f20298v;
+    public String f20298v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y71.y1 f20299w;
+    public y71.y1 f20299w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y71.i1 f20300x;
+    public y71.i1 f20300x;
 
     public v(com.github.rudroid.activities.util.c cVar, ml.e eVar, androidx.lifecycle.a1 a1Var) {
         k71.k.g(cVar, "accountHolder");

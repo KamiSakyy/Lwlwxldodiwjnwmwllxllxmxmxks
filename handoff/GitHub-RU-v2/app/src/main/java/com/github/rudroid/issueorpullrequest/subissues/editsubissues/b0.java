@@ -4,10 +4,10 @@ package com.github.rudroid.issueorpullrequest.subissues.editsubissues;
 public final class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f16094a;
+    public String f16094a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f16095b;
+    public String f16095b;
 
     public b0(String str, String str2) {
         k71.k.g(str, "subIssueIdToRemove");

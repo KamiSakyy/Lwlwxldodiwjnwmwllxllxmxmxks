@@ -14,41 +14,41 @@ import q.o1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class d implements View.OnTouchListener {
     public static final int I = ViewConfiguration.getTapTimeout();
-    public final float[] A;
-    public final float[] B;
+    public float[] A;
+    public float[] B;
     public boolean C;
     public boolean D;
     public boolean E;
     public boolean F;
     public boolean G;
-    public final o1 H;
+    public o1 H;
 
     /* renamed from: r, reason: collision with root package name */
-    public final a f24344r;
+    public a f24344r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final AccelerateInterpolator f24345s;
+    public AccelerateInterpolator f24345s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final o1 f24346t;
+    public o1 f24346t;
 
     /* renamed from: u, reason: collision with root package name */
     public o f24347u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final float[] f24348v;
+    public float[] f24348v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final float[] f24349w;
+    public float[] f24349w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final int f24350x;
+    public int f24350x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final int f24351y;
+    public int f24351y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final float[] f24352z;
+    public float[] f24352z;
 
     public d(o1 o1Var) {
         a aVar = new a();

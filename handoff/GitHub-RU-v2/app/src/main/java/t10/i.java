@@ -8,16 +8,16 @@ import yz0.c2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final c2 f;
-    public final IssueOrPullRequestState g;
-    public final List h;
-    public final boolean i;
-    public final l j;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public int e;
+    public c2 f;
+    public IssueOrPullRequestState g;
+    public List h;
+    public boolean i;
+    public l j;
 
     public i(String str, String str2, String str3, String str4, int i, c2 c2Var, IssueOrPullRequestState issueOrPullRequestState, List list, boolean z, l lVar) {
         k71.k.g(issueOrPullRequestState, "state");

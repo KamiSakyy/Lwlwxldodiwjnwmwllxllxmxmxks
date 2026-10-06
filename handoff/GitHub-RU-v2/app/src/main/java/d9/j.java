@@ -4,10 +4,10 @@ package d9;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f21698a;
+    public String f21698a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f21699b;
+    public String f21699b;
 
     public j(String str, String str2) {
         k71.k.g(str, "name");

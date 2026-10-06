@@ -19,5 +19,5 @@ public class r {
     public static Object k(Object... a) {
         return null;
     }
-    public Object c(Object p1, Object p2) { return null; }
+    public static Object c(Object p1, Object p2) { return null; }
 }

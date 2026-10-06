@@ -7,9 +7,9 @@ import yz0.e;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements e {
-    public final int a;
-    public final ArrayList b;
-    public final i c;
+    public int a;
+    public ArrayList b;
+    public i c;
 
     public a(int i, ArrayList arrayList, i iVar) {
         this.a = i;

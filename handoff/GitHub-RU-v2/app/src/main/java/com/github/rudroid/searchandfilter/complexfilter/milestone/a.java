@@ -4,8 +4,8 @@ import yz0.v2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final v2 a;
-    public final boolean b;
+    public v2 a;
+    public boolean b;
 
     public a(v2 v2Var, boolean z) {
         k71.k.g(v2Var, "milestone");

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o3 implements aaShadow.v0 {
-    public final s3 a;
-    public final String b;
-    public final String c;
+    public s3 a;
+    public String b;
+    public String c;
 
     public o3(s3 s3Var, String str, String str2) {
         this.a = s3Var;

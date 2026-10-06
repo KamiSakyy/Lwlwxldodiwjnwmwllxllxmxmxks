@@ -6,11 +6,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c0 implements h0 {
-    public final String a;
-    public final String b;
-    public final b0 c;
-    public final h d;
-    public final i80.c e;
+    public String a;
+    public String b;
+    public b0 c;
+    public h d;
+    public i80.c e;
 
     public c0(String str, String str2, b0 b0Var, h hVar, i80.c cVar) {
         this.a = str;

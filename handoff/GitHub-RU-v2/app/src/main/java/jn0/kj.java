@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kj {
-    public final ij a;
-    public final String b;
-    public final String c;
-    public final String d;
+    public ij a;
+    public String b;
+    public String c;
+    public String d;
 
     public kj(ij ijVar, String str, String str2, String str3) {
         this.a = ijVar;

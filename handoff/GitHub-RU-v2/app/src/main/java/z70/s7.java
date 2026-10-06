@@ -2,11 +2,11 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s7 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final r7 d;
-    public final l7 e;
+    public String a;
+    public String b;
+    public boolean c;
+    public r7 d;
+    public l7 e;
 
     public s7(String str, String str2, boolean z, r7 r7Var, l7 l7Var) {
         this.a = str;

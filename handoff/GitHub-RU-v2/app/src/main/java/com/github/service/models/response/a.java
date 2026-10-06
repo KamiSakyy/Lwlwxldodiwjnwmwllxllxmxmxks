@@ -15,15 +15,15 @@ import yz0.h;
 public final class a implements Parcelable {
     public static final Avatar A;
     public static final a B;
-    public final String r;
-    public final Avatar s;
-    public final String t;
-    public final boolean u;
-    public final boolean v;
-    public final String w;
-    public final String x;
-    public final Avatar y;
-    public final String z;
+    public String r;
+    public Avatar s;
+    public String t;
+    public boolean u;
+    public boolean v;
+    public String w;
+    public String x;
+    public Avatar y;
+    public String z;
     public static final g Companion = new g();
     public static final Parcelable.Creator<a> CREATOR = new h(0);
 
@@ -104,5 +104,5 @@ public final class a implements Parcelable {
             avatar = Avatar.u;
         }
     }
-    public Object z(Object p1) { return null; }
+    public static Object z(Object p1) { return null; }
 }

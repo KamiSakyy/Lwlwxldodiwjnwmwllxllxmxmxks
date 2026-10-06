@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xc0 implements aaShadow.n0 {
     public static final nc0 Companion = new nc0();
-    public final String r;
-    public final aa.u0 s;
-    public final aa.u0 t;
-    public final aa.u0 u;
+    public String r;
+    public aa.u0 s;
+    public aa.u0 t;
+    public aa.u0 u;
 
     public xc0(String str, aa.u0 u0Var, aa.u0 u0Var2, aa.u0 u0Var3) {
         k71.k.g(str, "id");

@@ -6,10 +6,10 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final boolean a;
-    public final String b;
-    public final String c;
-    public final List d;
+    public boolean a;
+    public String b;
+    public String c;
+    public List d;
 
     public c(String str, String str2, List list, boolean z) {
         k.g(str, "environmentName");

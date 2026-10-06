@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class z0 implements a1 {
-    public final l1 r;
+    public l1 r;
 
     public z0(l1 l1Var) {
         this.r = l1Var;

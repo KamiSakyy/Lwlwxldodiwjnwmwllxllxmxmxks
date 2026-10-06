@@ -5,7 +5,7 @@ import com.google.android.gms.internal.measurement.b4;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q extends s {
     public final /* synthetic */ int d;
-    public final g e;
+    public g e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public /* synthetic */ q(p0 p0Var, q81.d dVar, n nVar, g gVar, int i) {

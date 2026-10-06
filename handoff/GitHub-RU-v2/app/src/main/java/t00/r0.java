@@ -10,9 +10,9 @@ import jo.zg;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r0 implements z01.g, mi0, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final v71.v t;
-    public final s01.p u;
+    public com.github.service.wrapper.j s;
+    public v71.v t;
+    public s01.p u;
 
     public r0(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;
@@ -143,5 +143,5 @@ public final class r0 implements z01.g, mi0, yf0 {
         int i = this.r;
         return this;
     }
-    public Object isEmpty() { return null; }
+    public static Object isEmpty() { return null; }
 }

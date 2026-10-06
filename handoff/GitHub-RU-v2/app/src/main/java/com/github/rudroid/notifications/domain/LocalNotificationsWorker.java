@@ -12,10 +12,10 @@ public final class LocalNotificationsWorker extends CoroutineWorker {
     public static final a Companion = new a();
 
     /* renamed from: g, reason: collision with root package name */
-    public final k f17118g;
+    public k f17118g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final v f17119h;
+    public v f17119h;
 
     public static final class a {
     }

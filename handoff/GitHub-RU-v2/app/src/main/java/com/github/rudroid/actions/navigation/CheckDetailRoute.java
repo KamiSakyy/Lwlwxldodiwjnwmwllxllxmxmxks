@@ -13,10 +13,10 @@ public final class CheckDetailRoute implements c {
     public static final Companion Companion = new Companion();
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f5108a;
+    public String f5108a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f5109b;
+    public String f5109b;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -4,9 +4,9 @@ import oj0.v3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public final String a;
-    public final i b;
-    public final v3 c;
+    public String a;
+    public i b;
+    public v3 c;
 
     public h(String str, i iVar, v3 v3Var) {
         k71.k.g(str, "__typename");

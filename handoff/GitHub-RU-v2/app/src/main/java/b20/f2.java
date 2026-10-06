@@ -2,8 +2,8 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f2 {
-    public final String a;
-    public final g20.i2 b;
+    public String a;
+    public g20.i2 b;
 
     public f2(String str, g20.i2 i2Var) {
         this.a = str;

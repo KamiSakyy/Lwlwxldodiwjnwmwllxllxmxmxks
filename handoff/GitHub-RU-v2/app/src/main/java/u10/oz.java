@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class oz implements aaShadow.w0 {
     public static final iz Companion = new iz();
-    public final aa1.b r;
+    public aa1.b r;
 
     public oz(aa1.b bVar) {
         this.r = bVar;

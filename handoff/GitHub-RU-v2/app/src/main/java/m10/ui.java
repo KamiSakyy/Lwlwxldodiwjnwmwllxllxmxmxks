@@ -7,7 +7,7 @@ public final class ui {
     public static final ti Companion;
     public static final ui s;
     public static final /* synthetic */ ui[] t;
-    public final String r;
+    public String r;
 
     static {
         ui uiVar = new ui("CLOSE_REFERENCES", 0, "CLOSE_REFERENCES");

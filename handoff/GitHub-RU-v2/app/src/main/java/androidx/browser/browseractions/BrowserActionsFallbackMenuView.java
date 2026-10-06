@@ -10,10 +10,10 @@ import android.widget.LinearLayout;
 public class BrowserActionsFallbackMenuView extends LinearLayout {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f1059r;
+    public int f1059r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f1060s;
+    public int f1060s;
 
     public BrowserActionsFallbackMenuView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);

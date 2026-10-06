@@ -2,8 +2,8 @@ package com.github.rudroid.searchandfilter.complexfilter.user;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final yz0.f a;
-    public final boolean b;
+    public yz0.f a;
+    public boolean b;
 
     public j(yz0.f fVar, boolean z) {
         k71.k.g(fVar, "assignee");

@@ -2,9 +2,9 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 {
-    public final String a;
-    public final x0 b;
-    public final kw0.a c;
+    public String a;
+    public x0 b;
+    public kw0.a c;
 
     public u0(String str, x0 x0Var, kw0.a aVar) {
         k71.k.g(str, "__typename");

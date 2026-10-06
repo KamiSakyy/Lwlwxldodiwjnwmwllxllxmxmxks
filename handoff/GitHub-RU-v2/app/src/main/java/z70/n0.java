@@ -4,8 +4,8 @@ import hc0.z9;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0 {
-    public final z9 a;
-    public final String b;
+    public z9 a;
+    public String b;
 
     public n0(z9 z9Var, String str) {
         this.a = z9Var;

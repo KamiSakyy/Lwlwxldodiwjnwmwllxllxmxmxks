@@ -39,9 +39,9 @@ import u10.yr;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a3 implements z01.s, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final q81.u t;
-    public final v71.v u;
+    public com.github.service.wrapper.j s;
+    public q81.u t;
+    public v71.v u;
 
     public a3(com.github.service.wrapper.j jVar, q81.u uVar, v71.v vVar, int i) {
         this.r = i;

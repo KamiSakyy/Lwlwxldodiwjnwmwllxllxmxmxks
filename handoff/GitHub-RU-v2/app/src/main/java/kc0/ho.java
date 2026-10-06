@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ho {
-    public final String a;
-    public final mo b;
-    public final lo c;
+    public String a;
+    public mo b;
+    public lo c;
 
     public ho(String str, mo moVar, lo loVar) {
         k71.k.g(str, "__typename");

@@ -7,8 +7,8 @@ import k71.k;
 public interface f {
 
     public static final class a implements f {
-        public final String a;
-        public final int b;
+        public String a;
+        public int b;
 
         public a(String str, int i) {
             k.g(str, "message");

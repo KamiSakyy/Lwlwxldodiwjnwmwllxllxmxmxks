@@ -5,7 +5,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k extends g {
-    public final c71.j v;
+    public c71.j v;
 
     public k(j71.f fVar, y71.i iVar, a71.h hVar, int i, x71.a aVar) {
         super(i, hVar, aVar, iVar);

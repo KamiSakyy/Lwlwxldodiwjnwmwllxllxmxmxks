@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v2 {
     public static final u2 Companion = new u2();
-    public final Object a;
-    public final int b;
-    public final int c;
-    public final Integer d;
-    public final t2 e;
+    public Object a;
+    public int b;
+    public int c;
+    public Integer d;
+    public t2 e;
 
     public v2(List list, int i, int i2, Integer num, t2 t2Var) {
         this.a = list;

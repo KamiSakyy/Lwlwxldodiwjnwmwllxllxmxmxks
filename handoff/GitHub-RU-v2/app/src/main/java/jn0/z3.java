@@ -4,10 +4,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z3 {
-    public final ZonedDateTime a;
-    public final n4 b;
-    public final String c;
-    public final String d;
+    public ZonedDateTime a;
+    public n4 b;
+    public String c;
+    public String d;
 
     public z3(ZonedDateTime zonedDateTime, n4 n4Var, String str, String str2) {
         this.a = zonedDateTime;

@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qu {
-    public final tu a;
+    public tu a;
 
     public qu(tu tuVar) {
         this.a = tuVar;

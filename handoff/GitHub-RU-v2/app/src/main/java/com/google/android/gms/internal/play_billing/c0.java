@@ -4,8 +4,8 @@ package com.google.android.gms.internal.play_billing;
 public final class c0 {
     public static final c0 c;
     public static final c0 d;
-    public final boolean a;
-    public final Throwable b;
+    public boolean a;
+    public Throwable b;
 
     static {
         if (m0.w) {

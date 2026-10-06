@@ -2,10 +2,10 @@ package vo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final String a;
-    public final String b;
-    public final e c;
-    public final String d;
+    public String a;
+    public String b;
+    public e c;
+    public String d;
 
     public h(String str, String str2, e eVar, String str3) {
         this.a = str;

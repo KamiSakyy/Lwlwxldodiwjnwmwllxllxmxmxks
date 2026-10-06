@@ -19,7 +19,7 @@ public final class b {
     public static final b f34260e;
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f34261a;
+    public boolean f34261a;
 
     static {
         n4 n4Var = f.f34269c;

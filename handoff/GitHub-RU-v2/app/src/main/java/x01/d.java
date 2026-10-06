@@ -12,7 +12,7 @@ import sy.c0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends c0 implements g {
     public static final c Companion = new c();
-    public final String r;
+    public String r;
 
     public d(String str) {
         k71.k.g(str, "enterpriseServerUrl");

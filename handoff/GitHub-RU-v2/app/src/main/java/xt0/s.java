@@ -4,17 +4,17 @@ import pz0.cu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public final String a;
-    public final cu b;
-    public final String c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final t h;
-    public final boolean i;
-    public final q j;
-    public final eu0.a k;
+    public String a;
+    public cu b;
+    public String c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public t h;
+    public boolean i;
+    public q j;
+    public eu0.a k;
 
     public s(String str, cu cuVar, String str2, boolean z, boolean z2, boolean z3, boolean z4, t tVar, boolean z5, q qVar, eu0.a aVar) {
         this.a = str;

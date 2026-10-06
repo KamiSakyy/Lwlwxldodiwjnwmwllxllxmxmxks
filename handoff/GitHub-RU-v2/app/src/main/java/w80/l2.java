@@ -2,11 +2,11 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final i2 c;
-    public final o2 d;
-    public final m90.b e;
+    public String a;
+    public String b;
+    public i2 c;
+    public o2 d;
+    public m90.b e;
 
     public l2(String str, String str2, i2 i2Var, o2 o2Var, m90.b bVar) {
         this.a = str;

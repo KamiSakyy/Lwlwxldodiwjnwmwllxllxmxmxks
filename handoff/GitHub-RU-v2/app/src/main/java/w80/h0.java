@@ -2,11 +2,11 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final g0 d;
-    public final String e;
+    public String a;
+    public String b;
+    public boolean c;
+    public g0 d;
+    public String e;
 
     public h0(String str, String str2, boolean z, g0 g0Var, String str3) {
         this.a = str;

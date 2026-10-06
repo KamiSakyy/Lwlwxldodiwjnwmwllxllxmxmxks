@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements d {
-    public final float a;
+    public float a;
 
     public c(float f) {
         this.a = f;

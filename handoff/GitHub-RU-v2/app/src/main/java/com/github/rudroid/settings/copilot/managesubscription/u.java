@@ -22,5 +22,5 @@ final class u<T> implements y71.j {
         b0Var.x = v71.b0.z(d1.k(b0Var), (a71.h) null, (v71.a0) null, new a0(b0Var, jVar, null), 3);
         return w61.a0.a;
     }
-    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public static Object a(Object p1, Object p2, Object p3) { return null; }
 }

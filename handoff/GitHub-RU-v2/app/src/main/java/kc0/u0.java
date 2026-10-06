@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 {
-    public final gn0.dn a;
-    public final t0 b;
-    public final p0 c;
-    public final String d;
-    public final String e;
+    public gn0.dn a;
+    public t0 b;
+    public p0 c;
+    public String d;
+    public String e;
 
     public u0(gn0.dn dnVar, t0 t0Var, p0 p0Var, String str, String str2) {
         this.a = dnVar;

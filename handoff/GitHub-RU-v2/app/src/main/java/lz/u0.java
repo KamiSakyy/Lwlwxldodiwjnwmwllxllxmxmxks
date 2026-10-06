@@ -2,9 +2,9 @@ package lz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u0 {
-    public final int a;
-    public final int b;
-    public final t0 c;
+    public int a;
+    public int b;
+    public t0 c;
 
     public u0(int i, int i2, t0 t0Var) {
         this.a = i;

@@ -4,18 +4,18 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dq {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final pz0.cu d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final hq h;
-    public final boolean i;
-    public final List j;
-    public final tp k;
-    public final eu0.a l;
+    public String a;
+    public String b;
+    public String c;
+    public pz0.cu d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public hq h;
+    public boolean i;
+    public List j;
+    public tp k;
+    public eu0.a l;
 
     public dq(String str, String str2, String str3, pz0.cu cuVar, boolean z, boolean z2, boolean z3, hq hqVar, boolean z4, List list, tp tpVar, eu0.a aVar) {
         this.a = str;

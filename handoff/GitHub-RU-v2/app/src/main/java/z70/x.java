@@ -25,5 +25,5 @@ public final class x implements aa.a {
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(z.a, true)))).b(fVar, wVar, qVar.a);
     }
-    public Object values() { return null; }
+    public static Object values() { return null; }
 }

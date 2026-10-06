@@ -2,8 +2,8 @@ package kj;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r0 {
-    public final oa.j a;
-    public final int b;
+    public oa.j a;
+    public int b;
 
     public r0(oa.j jVar, int i) {
         k71.k.g(jVar, "user");

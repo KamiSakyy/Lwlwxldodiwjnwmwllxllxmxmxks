@@ -5,9 +5,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final x01.i a;
-    public final int b;
-    public final List c;
+    public x01.i a;
+    public int b;
+    public List c;
 
     public e(int i, List list, x01.i iVar) {
         this.a = iVar;
@@ -38,5 +38,5 @@ public final class e {
         sb.append(", checkRuns=");
         return x.i.l(sb, this.c, ")");
     }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -29,4 +29,6 @@ public abstract /* synthetic */ class d {
     public Object a(Object p1) { return null; }
     public Object startsWith(Object p1) { return null; }
     public static final Object a = null;
+    public Object a(Object) { return null; }
+    public Object startsWith(Object) { return null; }
 }

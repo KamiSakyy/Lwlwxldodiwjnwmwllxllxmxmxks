@@ -8,9 +8,9 @@ import q81.u;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements oa.g {
-    public final f a;
-    public final qe.a b;
-    public final h c;
+    public f a;
+    public qe.a b;
+    public h c;
 
     public g(f fVar, qe.a aVar, h hVar) {
         k.g(fVar, "okHttpFactory");

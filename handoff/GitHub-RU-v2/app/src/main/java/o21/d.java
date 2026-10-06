@@ -4,8 +4,8 @@ import com.google.android.gms.internal.measurement.z3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends e {
-    public final transient int t;
-    public final transient int u;
+    public transient int t;
+    public transient int u;
     public final /* synthetic */ e v;
 
     public d(e eVar, int i, int i2) {

@@ -10,25 +10,25 @@ import uu0.d6;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final ZonedDateTime f;
-    public final Boolean g;
-    public final i h;
-    public final bf i;
-    public final n j;
-    public final f40 k;
-    public final String l;
-    public final g m;
-    public final h n;
-    public final df o;
-    public final j p;
-    public final m q;
-    public final cs0.j r;
-    public final d6 s;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public int e;
+    public ZonedDateTime f;
+    public Boolean g;
+    public i h;
+    public bf i;
+    public n j;
+    public f40 k;
+    public String l;
+    public g m;
+    public h n;
+    public df o;
+    public j p;
+    public m q;
+    public cs0.j r;
+    public d6 s;
 
     public o(String str, String str2, String str3, String str4, int i, ZonedDateTime zonedDateTime, Boolean bool, i iVar, bf bfVar, n nVar, f40 f40Var, String str5, g gVar, h hVar, df dfVar, j jVar, m mVar, cs0.j jVar2, d6 d6Var) {
         this.a = str;

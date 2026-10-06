@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i00 {
-    public final int a;
-    public final h00 b;
-    public final c00 c;
-    public final String d;
-    public final String e;
+    public int a;
+    public h00 b;
+    public c00 c;
+    public String d;
+    public String e;
 
     public i00(int i, h00 h00Var, c00 c00Var, String str, String str2) {
         this.a = i;

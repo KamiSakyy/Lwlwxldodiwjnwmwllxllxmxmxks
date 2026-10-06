@@ -7,10 +7,10 @@ import com.google.android.gms.internal.measurement.b4;
 public final class b extends b4 {
 
     /* renamed from: x, reason: collision with root package name */
-    public final CharSequence f25771x;
+    public CharSequence f25771x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final TextPaint f25772y;
+    public TextPaint f25772y;
 
     public b(CharSequence charSequence, TextPaint textPaint) {
         this.f25771x = charSequence;

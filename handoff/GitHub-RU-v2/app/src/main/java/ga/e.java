@@ -11,7 +11,7 @@ public final class e implements e0 {
     public static final b f24816b = new b();
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f24817a;
+    public boolean f24817a;
 
     public e(long j10, long j11, long j12, long j13, boolean z10, ApolloException apolloException) {
         this.f24817a = z10;

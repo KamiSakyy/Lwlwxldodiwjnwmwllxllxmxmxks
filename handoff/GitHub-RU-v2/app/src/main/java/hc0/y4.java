@@ -2,11 +2,11 @@ package hc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y4 {
-    public final b4 a;
-    public final aa1.b b;
-    public final String c;
-    public final aa1.b d;
-    public final a4 e;
+    public b4 a;
+    public aa1.b b;
+    public String c;
+    public aa1.b d;
+    public a4 e;
 
     public y4(b4 b4Var, String str, aa.u0 u0Var, a4 a4Var) {
         k71.k.g(str, "expectedHeadOid");

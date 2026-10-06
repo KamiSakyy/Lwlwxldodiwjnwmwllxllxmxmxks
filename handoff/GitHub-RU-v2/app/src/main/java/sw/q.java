@@ -2,14 +2,14 @@ package sw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public final String a;
-    public final i b;
-    public final j c;
-    public final k d;
-    public final l e;
-    public final h f;
-    public final m g;
-    public final n h;
+    public String a;
+    public i b;
+    public j c;
+    public k d;
+    public l e;
+    public h f;
+    public m g;
+    public n h;
 
     public q(String str, i iVar, j jVar, k kVar, l lVar, h hVar, m mVar, n nVar) {
         k71.k.g(str, "__typename");

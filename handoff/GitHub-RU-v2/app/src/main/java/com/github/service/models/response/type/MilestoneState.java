@@ -11,7 +11,7 @@ public final class MilestoneState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MilestoneState[] $VALUES;
     public static final g Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final MilestoneState OPEN = new MilestoneState("OPEN", 0, "OPEN");
     public static final MilestoneState CLOSED = new MilestoneState("CLOSED", 1, "CLOSED");
     public static final MilestoneState UNKNOWN__ = new MilestoneState("UNKNOWN__", 2, "UNKNOWN__");

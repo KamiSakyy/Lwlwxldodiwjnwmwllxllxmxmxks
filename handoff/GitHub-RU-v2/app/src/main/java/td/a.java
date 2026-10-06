@@ -8,10 +8,10 @@ public final class a {
     public static final C0091a Companion = new C0091a();
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f32174a;
+    public String f32174a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f32175b;
+    public String f32175b;
 
     /* renamed from: td.a$a, reason: collision with other inner class name */
     public static final class C0091a {

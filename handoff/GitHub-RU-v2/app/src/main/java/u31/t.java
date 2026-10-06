@@ -7,10 +7,10 @@ import android.graphics.RectF;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t extends v {
     public static final RectF h = new RectF();
-    public final float b;
-    public final float c;
-    public final float d;
-    public final float e;
+    public float b;
+    public float c;
+    public float d;
+    public float e;
     public float f;
     public float g;
 

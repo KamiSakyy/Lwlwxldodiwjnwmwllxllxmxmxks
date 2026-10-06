@@ -5,14 +5,14 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final q0 e;
-    public final df f;
-    public final bf g;
-    public final String h;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public q0 e;
+    public df f;
+    public bf g;
+    public String h;
 
     public p0(String str, String str2, String str3, int i, q0 q0Var, df dfVar, bf bfVar, String str4) {
         this.a = str;

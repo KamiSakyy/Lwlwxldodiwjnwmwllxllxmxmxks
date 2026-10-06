@@ -2,22 +2,22 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zb0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final pz0.gu d;
-    public final pz0.si e;
-    public final bc0 f;
-    public final tb0 g;
-    public final String h;
-    public final boolean i;
-    public final xb0 j;
-    public final ub0 k;
-    public final wb0 l;
-    public final vb0 m;
-    public final boolean n;
-    public final cc0 o;
-    public final xt0.b p;
+    public String a;
+    public String b;
+    public String c;
+    public pz0.gu d;
+    public pz0.si e;
+    public bc0 f;
+    public tb0 g;
+    public String h;
+    public boolean i;
+    public xb0 j;
+    public ub0 k;
+    public wb0 l;
+    public vb0 m;
+    public boolean n;
+    public cc0 o;
+    public xt0.b p;
 
     public zb0(String str, String str2, String str3, pz0.gu guVar, pz0.si siVar, bc0 bc0Var, tb0 tb0Var, String str4, boolean z, xb0 xb0Var, ub0 ub0Var, wb0 wb0Var, vb0 vb0Var, boolean z2, cc0 cc0Var, xt0.b bVar) {
         this.a = str;

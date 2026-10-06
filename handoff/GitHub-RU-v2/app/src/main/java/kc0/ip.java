@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ip implements aaShadow.w0 {
     public static final ap Companion = new ap();
-    public final String r;
-    public final gn0.bo s;
-    public final aa.u0 t;
+    public String r;
+    public gn0.bo s;
+    public aa.u0 t;
 
     public ip(String str, gn0.bo boVar, aa.u0 u0Var) {
         k71.k.g(str, "id");

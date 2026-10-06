@@ -509,4 +509,5 @@ public final class r {
         }
         throw new NoWhenBranchMatchedException();
     }
+    public Object b(Object, Object) { return null; }
 }

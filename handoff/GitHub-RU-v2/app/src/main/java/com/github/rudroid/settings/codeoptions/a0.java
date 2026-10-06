@@ -8,9 +8,9 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 extends k1 {
-    public final r s;
-    public final y1 t;
-    public final i1 u;
+    public r s;
+    public y1 t;
+    public i1 u;
 
     public a0(r rVar) {
         k71.k.g(rVar, "codeOptionsDataStorePreferences");

@@ -9,11 +9,11 @@ import x01.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final a a;
-    public final Avatar b;
-    public final b0 c;
-    public final List d;
-    public final i e;
+    public a a;
+    public Avatar b;
+    public b0 c;
+    public List d;
+    public i e;
 
     public c(a aVar, Avatar avatar, b0 b0Var, List list, i iVar) {
         this.a = aVar;

@@ -4,7 +4,7 @@ package m6;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f28931a;
+    public int f28931a;
 
     public final boolean equals(Object obj) {
         if (obj instanceof b) {

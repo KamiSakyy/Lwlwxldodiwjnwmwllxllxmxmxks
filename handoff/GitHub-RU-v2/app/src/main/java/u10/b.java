@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final e a;
+    public e a;
 
     public b(e eVar) {
         this.a = eVar;
@@ -27,4 +27,6 @@ public final class b {
         return "CommentEdge(node=" + this.a + ")";
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object, Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
 }

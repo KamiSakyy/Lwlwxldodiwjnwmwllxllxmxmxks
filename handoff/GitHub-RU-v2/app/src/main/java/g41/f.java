@@ -17,8 +17,8 @@ import java.util.Iterator;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
     public static final t c = new t("ReviewService", 5);
-    public final h a;
-    public final String b;
+    public h a;
+    public String b;
 
     public f(Context context) {
         String str;

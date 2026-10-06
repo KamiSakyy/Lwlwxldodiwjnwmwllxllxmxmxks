@@ -10,11 +10,11 @@ public final class f3 extends e0 {
     public volatile b3 A;
     public b3 B;
     public boolean C;
-    public final Object D;
+    public Object D;
     public volatile b3 u;
     public volatile b3 v;
     public b3 w;
-    public final ConcurrentHashMap x;
+    public ConcurrentHashMap x;
     public com.google.android.gms.internal.measurement.w0 y;
     public volatile boolean z;
 

@@ -2,9 +2,9 @@ package a81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y {
-    public final a71.h a;
-    public final Object[] b;
-    public final v[] c;
+    public a71.h a;
+    public Object[] b;
+    public v[] c;
     public int d;
 
     public y(int i, a71.h hVar) {

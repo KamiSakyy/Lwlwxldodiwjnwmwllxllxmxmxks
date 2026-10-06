@@ -20,11 +20,11 @@ import w61.i;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ProjectsMetaInfo implements Parcelable {
     public static final h[] w;
-    public final String r;
-    public final String s;
-    public final String t;
-    public final j0 u;
-    public final List v;
+    public String r;
+    public String s;
+    public String t;
+    public j0 u;
+    public List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectsMetaInfo> CREATOR = new c(25);
 

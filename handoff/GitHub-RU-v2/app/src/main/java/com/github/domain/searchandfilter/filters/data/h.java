@@ -26,5 +26,6 @@ public abstract class h {
     public Object name() { return null; }
     public Object ordinal() { return null; }
     public Object s(Object p1) { return null; }
-    public Object values() { return null; }
+    public static Object values() { return null; }
+    public Object s(int) { return null; }
 }

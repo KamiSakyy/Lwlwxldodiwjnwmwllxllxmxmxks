@@ -6,7 +6,7 @@ import z3.d;
 public final class c extends d {
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f34564c;
+    public Object f34564c;
 
     public c(int i) {
         super(i);

@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class og {
-    public final String a;
-    public final mg b;
+    public String a;
+    public mg b;
 
     public og(String str, mg mgVar) {
         this.a = str;

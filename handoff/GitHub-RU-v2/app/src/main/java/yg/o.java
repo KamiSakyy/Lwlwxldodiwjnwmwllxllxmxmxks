@@ -38,6 +38,6 @@ public final class o {
             t.d = new com.github.rudroid.repository.file.d(str, str2, aVar, rVar, i);
         }
     }
-    public Object a(Object p1, Object p2) { return null; }
+    public static Object a(Object p1, Object p2) { return null; }
     public static final Object a = null;
 }

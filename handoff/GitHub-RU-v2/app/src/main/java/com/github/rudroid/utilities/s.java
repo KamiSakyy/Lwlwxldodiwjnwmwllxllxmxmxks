@@ -18,4 +18,18 @@ public final class s {
     public Object t() { return null; }
     public Object S = null;
     public Object T = null;
+    public Object S(int, boolean) { return null; }
+    public Object c0(int) { return null; }
+    public Object e0(int) { return null; }
+    public Object f(Object) { return null; }
+    public Object f(Object) { return null; }
+    public Object f(Object) { return null; }
+    public Object f(Object) { return null; }
+    public Object g(boolean) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object n0(Object) { return null; }
+    public Object q(boolean) { return null; }
 }

@@ -5,7 +5,7 @@ import x81.a;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class StreamResetException extends IOException {
-    public final a r;
+    public a r;
 
     public StreamResetException(a aVar) {
         super("stream was reset: " + aVar);

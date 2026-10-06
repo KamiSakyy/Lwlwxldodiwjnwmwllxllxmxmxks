@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ew {
-    public final String a;
-    public final aw b;
-    public final String c;
+    public String a;
+    public aw b;
+    public String c;
 
     public ew(String str, aw awVar, String str2) {
         this.a = str;

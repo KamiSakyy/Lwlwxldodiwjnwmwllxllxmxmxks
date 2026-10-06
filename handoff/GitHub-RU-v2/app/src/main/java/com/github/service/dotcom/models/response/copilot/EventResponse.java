@@ -18,14 +18,14 @@ import xn.j3;
 public final class EventResponse {
     public static final Companion Companion = new Companion();
     public static final h[] i = {null, null, null, null, w.s(i.r, new a(16)), null, null, null};
-    public final String a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final j3 e;
-    public final c f;
-    public final Boolean g;
-    public final Boolean h;
+    public String a;
+    public String b;
+    public String c;
+    public boolean d;
+    public j3 e;
+    public c f;
+    public Boolean g;
+    public Boolean h;
 
     public static final class Companion {
         public final KSerializer serializer() {

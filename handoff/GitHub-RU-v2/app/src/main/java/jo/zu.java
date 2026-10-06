@@ -4,14 +4,14 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zu {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final wu e;
-    public final ZonedDateTime f;
-    public final ZonedDateTime g;
-    public final String h;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public wu e;
+    public ZonedDateTime f;
+    public ZonedDateTime g;
+    public String h;
 
     public zu(String str, String str2, String str3, String str4, wu wuVar, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str5) {
         this.a = str;

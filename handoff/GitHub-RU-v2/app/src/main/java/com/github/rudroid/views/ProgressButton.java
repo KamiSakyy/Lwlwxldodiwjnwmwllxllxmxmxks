@@ -12,8 +12,8 @@ import com.github.rudroid.p0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ProgressButton extends FrameLayout {
-    public final ProgressBar r;
-    public final TextView s;
+    public ProgressBar r;
+    public TextView s;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ProgressButton(Context context, AttributeSet attributeSet) {

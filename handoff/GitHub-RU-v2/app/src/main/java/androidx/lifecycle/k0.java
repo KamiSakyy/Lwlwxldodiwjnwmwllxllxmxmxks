@@ -4,7 +4,7 @@ package androidx.lifecycle;
 public abstract class k0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final q0 f2884r;
+    public q0 f2884r;
 
     /* renamed from: s, reason: collision with root package name */
     public boolean f2885s;

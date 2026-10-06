@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v4 extends k {
-    public final a5.s s;
+    public a5.s s;
 
     public v4(a5.s sVar) {
         this.s = sVar;

@@ -4,13 +4,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p6 extends s7 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final ZonedDateTime g;
+    public String a;
+    public String b;
+    public int c;
+    public String d;
+    public String e;
+    public String f;
+    public ZonedDateTime g;
 
     public p6(String str, String str2, int i, String str3, String str4, String str5, ZonedDateTime zonedDateTime) {
         k71.k.g(str2, "actorDisplayName");

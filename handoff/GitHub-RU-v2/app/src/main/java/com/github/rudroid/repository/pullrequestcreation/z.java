@@ -14,31 +14,31 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class z extends k1 implements com.github.rudroid.utilities.viewmodel.d {
     public static final a Companion = new a();
-    public final String A;
+    public String A;
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ d.a f20146s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final nl.f f20147t;
+    public nl.f f20147t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f20148u;
+    public com.github.rudroid.activities.util.c f20148u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final nl.g f20149v;
+    public nl.g f20149v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y1 f20150w;
+    public y1 f20150w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final i1 f20151x;
+    public i1 f20151x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f20152y;
+    public String f20152y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final String f20153z;
+    public String f20153z;
 
     public static final class a {
         public static void a(a1 a1Var, String str, String str2, String str3) {

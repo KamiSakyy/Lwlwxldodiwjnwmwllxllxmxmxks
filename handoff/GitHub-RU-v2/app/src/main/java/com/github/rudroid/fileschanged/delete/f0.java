@@ -14,40 +14,40 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class f0 extends androidx.lifecycle.a implements com.github.rudroid.utilities.viewmodel.d {
     public static final a Companion = new a();
-    public final ql.b A;
-    public final w B;
-    public final String C;
-    public final String D;
-    public final String E;
-    public final String F;
-    public final String G;
-    public final com.github.rudroid.fileeditor.c H;
-    public final String I;
-    public final MobileEventContext J;
+    public ql.b A;
+    public w B;
+    public String C;
+    public String D;
+    public String E;
+    public String F;
+    public String G;
+    public com.github.rudroid.fileeditor.c H;
+    public String I;
+    public MobileEventContext J;
     public String K;
-    public final y1 L;
-    public final i1 M;
+    public y1 L;
+    public i1 M;
 
     /* renamed from: t, reason: collision with root package name */
     public final /* synthetic */ d.a f13173t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Application f13174u;
+    public Application f13174u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f13175v;
+    public com.github.rudroid.activities.util.c f13175v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final sk.b f13176w;
+    public sk.b f13176w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final ml.c f13177x;
+    public ml.c f13177x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final ml.j f13178y;
+    public ml.j f13178y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final nl.c f13179z;
+    public nl.c f13179z;
 
     public static final class a {
     }

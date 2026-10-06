@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cd implements aaShadow.w0 {
     public static final zc Companion = new zc();
-    public final aa.u0 r;
-    public final aa.u0 s;
-    public final aa.u0 t;
+    public aa.u0 r;
+    public aa.u0 s;
+    public aa.u0 t;
 
     public cd(aa.u0 u0Var, aa.u0 u0Var2, aa.u0 u0Var3) {
         this.r = u0Var;

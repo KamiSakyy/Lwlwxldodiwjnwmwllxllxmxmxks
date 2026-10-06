@@ -7,13 +7,13 @@ import java.util.regex.Matcher;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Matcher f32136a;
+    public Matcher f32136a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final CharSequence f32137b;
+    public CharSequence f32137b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final o1.l f32138c;
+    public o1.l f32138c;
 
     /* renamed from: d, reason: collision with root package name */
     public k f32139d;
@@ -61,4 +61,5 @@ public final class l {
     }
     public Object b(Object p1) { return null; }
     public Object c = null;
+    public Object b(int) { return null; }
 }

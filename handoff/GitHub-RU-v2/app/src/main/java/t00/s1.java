@@ -22,14 +22,14 @@ import jo.yc;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s1 implements z01.n, mi0 {
     public static final v0 Companion = new v0();
-    public final com.github.service.wrapper.j r;
-    public final com.github.service.wrapper.b s;
-    public final v71.v t;
-    public final jy.d u;
-    public final jy.d v;
-    public final jy.d w;
-    public final u00.q x;
-    public final jy.d y;
+    public com.github.service.wrapper.j r;
+    public com.github.service.wrapper.b s;
+    public v71.v t;
+    public jy.d u;
+    public jy.d v;
+    public jy.d w;
+    public u00.q x;
+    public jy.d y;
 
     public s1(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, String str) {
         k71.k.g(jVar, "client");

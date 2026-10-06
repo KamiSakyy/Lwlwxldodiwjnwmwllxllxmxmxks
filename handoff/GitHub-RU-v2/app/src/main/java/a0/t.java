@@ -90,6 +90,6 @@ public final class t extends u {
     public final String toString() {
         return "AnimationVector4D: v1 = " + this.f247a + ", v2 = " + this.f248b + ", v3 = " + this.f249c + ", v4 = " + this.f250d;
     }
-    public Object B(Object p1) { return null; }
+    public static Object B(Object p1) { return null; }
     public Object f() { return null; }
 }

@@ -18,18 +18,18 @@ import x61.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g implements SerialDescriptor, k81.l {
-    public final String a;
-    public final y9.a b;
-    public final int c;
-    public final List d;
-    public final HashSet e;
-    public final String[] f;
-    public final SerialDescriptor[] g;
-    public final List[] h;
-    public final boolean[] i;
-    public final Map j;
-    public final SerialDescriptor[] k;
-    public final p l;
+    public String a;
+    public y9.a b;
+    public int c;
+    public List d;
+    public HashSet e;
+    public String[] f;
+    public SerialDescriptor[] g;
+    public List[] h;
+    public boolean[] i;
+    public Map j;
+    public SerialDescriptor[] k;
+    public p l;
 
     public g(String str, y9.a aVar, int i, List list, a aVar2) {
         k71.k.g(str, "serialName");

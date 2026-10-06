@@ -4,10 +4,10 @@ package com.github.rudroid.projects.table;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f17853a;
+    public String f17853a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f17854b;
+    public boolean f17854b;
 
     public c(String str, boolean z10) {
         this.f17853a = str;

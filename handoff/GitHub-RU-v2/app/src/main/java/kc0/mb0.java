@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mb0 {
-    public final String a;
-    public final String b;
-    public final ci0.i c;
+    public String a;
+    public String b;
+    public ci0.i c;
 
     public mb0(String str, String str2, ci0.i iVar) {
         this.a = str;

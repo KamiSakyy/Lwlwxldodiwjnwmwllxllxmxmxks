@@ -4,10 +4,10 @@ package com.github.rudroid.pushnotifications.decryption;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f18545a;
+    public String f18545a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final byte[] f18546b;
+    public byte[] f18546b;
 
     public a(String str, byte[] bArr) {
         k71.k.g(str, "alias");

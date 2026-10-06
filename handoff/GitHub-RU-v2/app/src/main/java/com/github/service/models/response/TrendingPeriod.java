@@ -22,7 +22,7 @@ public final class TrendingPeriod implements Parcelable {
     private static final h $cachedSerializer$delegate;
     public static final Parcelable.Creator<TrendingPeriod> CREATOR;
     public static final Companion Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final TrendingPeriod DAILY = new TrendingPeriod("DAILY", 0, "DAILY");
     public static final TrendingPeriod MONTHLY = new TrendingPeriod("MONTHLY", 1, "MONTHLY");
     public static final TrendingPeriod WEEKLY = new TrendingPeriod("WEEKLY", 2, "WEEKLY");

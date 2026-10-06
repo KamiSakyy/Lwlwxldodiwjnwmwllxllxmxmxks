@@ -17,5 +17,5 @@ public final class j {
         d = new r1.d(new i(4), false, -897292344);
         new r1.d(new i(5), false, 806935198);
     }
-    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

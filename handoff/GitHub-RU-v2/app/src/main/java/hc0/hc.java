@@ -7,7 +7,7 @@ public final class hc {
     public static final gc Companion;
     public static final hc s;
     public static final /* synthetic */ hc[] t;
-    public final String r;
+    public String r;
 
     static {
         hc hcVar = new hc("CLOSE_REFERENCES", 0, "CLOSE_REFERENCES");

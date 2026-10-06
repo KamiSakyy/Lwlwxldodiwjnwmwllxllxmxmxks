@@ -2,10 +2,10 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y2 {
-    public final Integer a;
-    public final Integer b;
-    public final String c;
-    public final String d;
+    public Integer a;
+    public Integer b;
+    public String c;
+    public String d;
 
     public y2(Integer num, Integer num2, String str, String str2) {
         this.a = num;

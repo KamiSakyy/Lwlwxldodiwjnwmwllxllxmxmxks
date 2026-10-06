@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class eaShadow implements aaShadow.v0 {
-    public final ga a;
+    public ga a;
 
     public ea(ga gaVar) {
         this.a = gaVar;

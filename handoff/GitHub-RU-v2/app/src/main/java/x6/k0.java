@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class k0 extends l0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Class f33854r;
+    public Class f33854r;
 
     public k0(Class cls) {
         super(true);

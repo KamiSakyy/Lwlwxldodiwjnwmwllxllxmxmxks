@@ -18,5 +18,5 @@ public interface j {
         return null;
     }
     public Object invalidateOptionsMenu() { return null; }
-    public Object z(Object p1) { return null; }
+    public static Object z(Object p1) { return null; }
 }

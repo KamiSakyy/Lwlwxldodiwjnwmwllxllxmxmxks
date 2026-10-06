@@ -17,7 +17,7 @@ public final class zm {
     public static final zm x;
     public static final zm y;
     public static final zm z;
-    public final String r;
+    public String r;
 
     static {
         zm zmVar = new zm("CONFUSED", 0, "CONFUSED");

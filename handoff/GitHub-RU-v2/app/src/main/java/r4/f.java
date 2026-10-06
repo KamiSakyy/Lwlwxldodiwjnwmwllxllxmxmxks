@@ -33,25 +33,25 @@ public class f extends com.google.common.util.concurrent.a {
     public static boolean l = false;
 
     /* renamed from: a, reason: collision with root package name */
-    public final Class f31161a;
+    public Class f31161a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Constructor f31162b;
+    public Constructor f31162b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Method f31163c;
+    public Method f31163c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Method f31164d;
+    public Method f31164d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Method f31165e;
+    public Method f31165e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final Method f31166f;
+    public Method f31166f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final Method f31167g;
+    public Method f31167g;
 
     public f() {
         Method method;

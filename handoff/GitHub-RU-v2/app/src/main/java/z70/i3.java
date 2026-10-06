@@ -4,10 +4,10 @@ import hc0.nl;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i3 implements aa.h0 {
-    public final String a;
-    public final nl b;
-    public final Integer c;
-    public final String d;
+    public String a;
+    public nl b;
+    public Integer c;
+    public String d;
 
     public i3(String str, nl nlVar, Integer num, String str2) {
         this.a = str;

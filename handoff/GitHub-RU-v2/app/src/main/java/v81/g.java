@@ -9,9 +9,9 @@ import t71.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends c0 {
-    public final String s;
-    public final long t;
-    public final e0 u;
+    public String s;
+    public long t;
+    public e0 u;
 
     public g(String str, long j, e0 e0Var) {
         this.s = str;

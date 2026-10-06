@@ -4,8 +4,8 @@ import ik.p0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final p0 a;
-    public final m b;
+    public p0 a;
+    public m b;
 
     public c(p0 p0Var, m mVar) {
         k71.k.g(p0Var, "updateDiscussionBodyUseCase");
@@ -17,4 +17,9 @@ public final class c {
     public Object containsKey(Object p1) { return null; }
     public Object get(Object p1) { return null; }
     public Object v(Object p1) { return null; }
+    public Object b(Object, Object) { return null; }
+    public Object b(Object, Object) { return null; }
+    public Object containsKey(Object) { return null; }
+    public Object get(Object) { return null; }
+    public Object v(Object) { return null; }
 }

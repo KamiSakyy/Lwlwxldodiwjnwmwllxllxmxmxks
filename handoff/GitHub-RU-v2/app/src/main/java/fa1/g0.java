@@ -5,11 +5,11 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g0 extends x0 {
-    public final Method d;
-    public final int e;
-    public final String f;
-    public final b g;
-    public final boolean h;
+    public Method d;
+    public int e;
+    public String f;
+    public b g;
+    public boolean h;
 
     public g0(Method method, int i, String str, boolean z) {
         b bVar = b.s;

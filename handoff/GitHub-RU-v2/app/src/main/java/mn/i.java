@@ -6,11 +6,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public final String a;
-    public final StatusState b;
-    public final m c;
-    public final Object d;
-    public final h e;
+    public String a;
+    public StatusState b;
+    public m c;
+    public Object d;
+    public h e;
 
     public i(String str, StatusState statusState, m mVar, List list, h hVar) {
         k71.k.g(str, "commitId");

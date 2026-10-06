@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xx {
-    public final String a;
-    public final yx b;
-    public final wx c;
-    public final vx d;
-    public final String e;
+    public String a;
+    public yx b;
+    public wx c;
+    public vx d;
+    public String e;
 
     public xx(String str, yx yxVar, wx wxVar, vx vxVar, String str2) {
         this.a = str;

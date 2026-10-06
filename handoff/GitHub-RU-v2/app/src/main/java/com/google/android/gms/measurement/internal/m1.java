@@ -10,14 +10,14 @@ import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m1 extends w1 {
     public static final AtomicLong C = new AtomicLong(Long.MIN_VALUE);
-    public final Object A;
-    public final Semaphore B;
+    public Object A;
+    public Semaphore B;
     public l1 u;
     public l1 v;
-    public final PriorityBlockingQueue w;
-    public final LinkedBlockingQueue x;
-    public final j1 y;
-    public final j1 z;
+    public PriorityBlockingQueue w;
+    public LinkedBlockingQueue x;
+    public j1 y;
+    public j1 z;
 
     public m1(o1 o1Var) {
         super(o1Var);

@@ -4,9 +4,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final String a;
-    public final eq.c b;
-    public final ax.b c;
+    public String a;
+    public eq.c b;
+    public ax.b c;
 
     public b(String str, eq.c cVar, ax.b bVar) {
         k.g(str, "__typename");

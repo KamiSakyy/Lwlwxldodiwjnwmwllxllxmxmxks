@@ -8,16 +8,16 @@ import java.time.ZonedDateTime;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w0 implements Parcelable {
     public static final Parcelable.Creator<w0> CREATOR = new c(26);
-    public final String A;
-    public final String r;
-    public final int s;
-    public final String t;
-    public final ZonedDateTime u;
-    public final String v;
-    public final boolean w;
-    public final String x;
-    public final boolean y;
-    public final String z;
+    public String A;
+    public String r;
+    public int s;
+    public String t;
+    public ZonedDateTime u;
+    public String v;
+    public boolean w;
+    public String x;
+    public boolean y;
+    public String z;
 
     public w0(String str, int i, String str2, ZonedDateTime zonedDateTime, String str3, boolean z, String str4, boolean z2, String str5, String str6) {
         k71.k.g(str, "id");

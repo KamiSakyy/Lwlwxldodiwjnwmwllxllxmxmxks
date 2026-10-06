@@ -6,7 +6,7 @@ import android.util.Log;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements Runnable {
     public final /* synthetic */ int r;
-    public final Runnable s;
+    public Runnable s;
 
     public /* synthetic */ b(Runnable runnable, int i) {
         this.r = i;

@@ -12,8 +12,8 @@ import java.util.Locale;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 extends e0 {
-    public final long A;
-    public final long B;
+    public long A;
+    public long B;
     public List C;
     public String D;
     public int E;

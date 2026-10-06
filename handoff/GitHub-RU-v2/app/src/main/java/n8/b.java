@@ -8,16 +8,16 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f29648a;
+    public int f29648a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f29649b;
+    public int f29649b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f29650c;
+    public int f29650c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f29651d;
+    public int f29651d;
 
     static {
         new b(0, 0, 0, 0);

@@ -4,8 +4,8 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y extends u {
-    public final transient a0 t;
-    public final transient z u;
+    public transient a0 t;
+    public transient z u;
 
     public y(a0 a0Var, z zVar) {
         this.t = a0Var;

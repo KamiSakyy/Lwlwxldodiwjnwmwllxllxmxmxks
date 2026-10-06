@@ -70,5 +70,5 @@ public abstract class e implements aa.a {
         wVar.e(o7.a).b(fVar, wVar, cVar.e);
     }
 
-    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

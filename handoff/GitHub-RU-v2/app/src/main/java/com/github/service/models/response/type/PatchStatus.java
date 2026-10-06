@@ -16,7 +16,7 @@ public final class PatchStatus implements Parcelable {
     private static final /* synthetic */ PatchStatus[] $VALUES;
     public static final Parcelable.Creator<PatchStatus> CREATOR;
     public static final m Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PatchStatus ADDED = new PatchStatus("ADDED", 0, "ADDED");
     public static final PatchStatus DELETED = new PatchStatus("DELETED", 1, "DELETED");
     public static final PatchStatus RENAMED = new PatchStatus("RENAMED", 2, "RENAMED");

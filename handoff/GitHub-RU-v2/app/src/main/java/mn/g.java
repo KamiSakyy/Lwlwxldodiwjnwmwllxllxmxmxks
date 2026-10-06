@@ -11,28 +11,28 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
-    public final String b;
-    public final com.github.service.models.response.a c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final com.github.service.models.response.a h;
-    public final CheckStatusState i;
-    public final CheckConclusionState j;
-    public final int k;
-    public final m l;
-    public final e m;
-    public final e n;
-    public final j o;
-    public final String p;
-    public final boolean q;
-    public final boolean r;
-    public final int s;
-    public final Integer t;
-    public final Avatar u;
-    public final WorkflowRunEvent v;
+    public String a;
+    public String b;
+    public com.github.service.models.response.a c;
+    public String d;
+    public String e;
+    public String f;
+    public String g;
+    public com.github.service.models.response.a h;
+    public CheckStatusState i;
+    public CheckConclusionState j;
+    public int k;
+    public m l;
+    public e m;
+    public e n;
+    public j o;
+    public String p;
+    public boolean q;
+    public boolean r;
+    public int s;
+    public Integer t;
+    public Avatar u;
+    public WorkflowRunEvent v;
 
     public g(String str, String str2, com.github.service.models.response.a aVar, String str3, String str4, String str5, String str6, com.github.service.models.response.a aVar2, CheckStatusState checkStatusState, CheckConclusionState checkConclusionState, int i, m mVar, e eVar, e eVar2, j jVar, String str7, boolean z, boolean z2, int i2, Integer num, Avatar avatar, WorkflowRunEvent workflowRunEvent) {
         k71.k.g(str, "checkSuiteId");

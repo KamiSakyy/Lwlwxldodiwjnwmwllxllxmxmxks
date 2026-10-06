@@ -6,7 +6,7 @@ import java.util.Set;
 public final class e implements n {
 
     /* renamed from: b, reason: collision with root package name */
-    public final Set f33705b;
+    public Set f33705b;
 
     public e(Set set) {
         this.f33705b = set;

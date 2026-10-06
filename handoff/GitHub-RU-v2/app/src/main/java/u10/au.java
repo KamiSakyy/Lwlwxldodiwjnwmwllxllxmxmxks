@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class au {
-    public final wt a;
-    public final zt b;
-    public final String c;
-    public final String d;
+    public wt a;
+    public zt b;
+    public String c;
+    public String d;
 
     public au(wt wtVar, zt ztVar, String str, String str2) {
         this.a = wtVar;

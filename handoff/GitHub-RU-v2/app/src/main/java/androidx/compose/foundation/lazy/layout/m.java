@@ -4,10 +4,10 @@ package androidx.compose.foundation.lazy.layout;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f1434a;
+    public int f1434a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f1435b;
+    public int f1435b;
 
     public m(int i, int i10) {
         this.f1434a = i;

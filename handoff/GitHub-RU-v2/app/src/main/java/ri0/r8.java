@@ -2,11 +2,11 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r8 implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final q8 c;
-    public final o8 d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public q8 c;
+    public o8 d;
+    public String e;
 
     public r8(String str, boolean z, q8 q8Var, o8 o8Var, String str2) {
         this.a = str;

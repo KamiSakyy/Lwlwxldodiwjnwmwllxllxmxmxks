@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bp implements aaShadow.v0 {
-    public final dp a;
+    public dp a;
 
     public bp(dp dpVar) {
         this.a = dpVar;

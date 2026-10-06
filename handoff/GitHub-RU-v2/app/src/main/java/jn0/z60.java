@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z60 implements aaShadow.w0 {
     public static final t60 Companion = new t60();
-    public final aa1.b r;
-    public final aa1.b s;
-    public final aa1.b t;
+    public aa1.b r;
+    public aa1.b s;
+    public aa1.b t;
 
     public z60(aa1.b bVar, aa1.b bVar2, int i) {
         int i2 = i & 2;

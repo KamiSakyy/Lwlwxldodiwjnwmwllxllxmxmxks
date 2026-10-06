@@ -2,7 +2,7 @@ package h91;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class q implements k0 {
-    public final k0 r;
+    public k0 r;
 
     public q(k0 k0Var) {
         k71.k.g(k0Var, "delegate");

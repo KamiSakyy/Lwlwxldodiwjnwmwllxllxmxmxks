@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qb0 implements aaShadow.m0 {
-    public final tb0 a;
-    public final rb0 b;
+    public tb0 a;
+    public rb0 b;
 
     public qb0(tb0 tb0Var, rb0 rb0Var) {
         this.a = tb0Var;

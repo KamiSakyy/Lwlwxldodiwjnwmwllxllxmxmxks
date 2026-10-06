@@ -8,10 +8,10 @@ import y71.y1;
 public final class j implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final y1 f6839a;
+    public y1 f6839a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final i1 f6840b;
+    public i1 f6840b;
 
     public j() {
         y1 c10 = n1.c((Object) null);

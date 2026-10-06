@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jr {
-    public final int a;
-    public final int b;
-    public final hr c;
-    public final String d;
-    public final String e;
+    public int a;
+    public int b;
+    public hr c;
+    public String d;
+    public String e;
 
     public jr(int i, int i2, hr hrVar, String str, String str2) {
         this.a = i;

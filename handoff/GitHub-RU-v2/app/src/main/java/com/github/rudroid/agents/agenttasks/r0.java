@@ -5,5 +5,5 @@ public final class r0 implements j71.c {
     public final /* bridge */ /* synthetic */ Object k(Object obj) {
         return null;
     }
-    public Object getValue() { return null; }
+    public static Object getValue() { return null; }
 }

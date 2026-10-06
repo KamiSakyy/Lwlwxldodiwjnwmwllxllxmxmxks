@@ -5,10 +5,10 @@ import wx0.r4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public final String a;
-    public final wx0.o b;
-    public final r4 c;
-    public final j4 d;
+    public String a;
+    public wx0.o b;
+    public r4 c;
+    public j4 d;
 
     public o0(String str, wx0.o oVar, r4 r4Var, j4 j4Var) {
         k71.k.g(str, "__typename");

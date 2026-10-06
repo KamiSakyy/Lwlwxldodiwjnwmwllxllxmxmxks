@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g40 {
-    public final d40 a;
-    public final h40 b;
+    public d40 a;
+    public h40 b;
 
     public g40(d40 d40Var, h40 h40Var) {
         this.a = d40Var;

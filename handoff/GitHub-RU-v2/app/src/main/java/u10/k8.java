@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k8 {
-    public final String a;
-    public final String b;
-    public final z70.s7 c;
-    public final z70.v d;
+    public String a;
+    public String b;
+    public z70.s7 c;
+    public z70.v d;
 
     public k8(String str, String str2, z70.s7 s7Var, z70.v vVar) {
         this.a = str;

@@ -7,8 +7,8 @@ import jo.mi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v1Shadow implements z01.o, mi0, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
-    public final v71.v t;
+    public com.github.service.wrapper.b s;
+    public v71.v t;
 
     public v1(com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;

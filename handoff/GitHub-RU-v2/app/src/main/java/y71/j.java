@@ -11,4 +11,15 @@ public interface j {
     public Object w() { return null; }
     public Object Companion = null;
     public Object r = null;
+    public Object f(Object, Object, Object) { return null; }
+    public Object f(Object, Object, Object) { return null; }
+    public Object n(Object, Object, Object, Object) { return null; }
+    public Object o(Object, Object, Object, Object, Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object t(Object, Object, Object, Object, Object) { return null; }
 }

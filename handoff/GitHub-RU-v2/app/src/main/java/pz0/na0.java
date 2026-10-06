@@ -9,7 +9,7 @@ public final class na0 {
     public static final na0 t;
     public static final /* synthetic */ na0[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         na0 na0Var = new na0("ACTIVE", 0, "ACTIVE");

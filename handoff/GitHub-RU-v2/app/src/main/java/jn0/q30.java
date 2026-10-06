@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q30 implements aaShadow.w0 {
     public static final k30 Companion = new k30();
-    public final String r;
-    public final aa1.b s;
-    public final aa1.b t;
+    public String r;
+    public aa1.b s;
+    public aa1.b t;
 
     public q30(String str, aa1.b bVar) {
         k71.k.g(str, "query");

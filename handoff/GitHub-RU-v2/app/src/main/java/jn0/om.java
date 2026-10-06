@@ -2,15 +2,15 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class om {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final lm d;
-    public final nm e;
-    public final pz0.si f;
-    public final boolean g;
-    public final boolean h;
-    public final xt0.u3 i;
+    public String a;
+    public String b;
+    public String c;
+    public lm d;
+    public nm e;
+    public pz0.si f;
+    public boolean g;
+    public boolean h;
+    public xt0.u3 i;
 
     public om(String str, String str2, String str3, lm lmVar, nm nmVar, pz0.si siVar, boolean z, boolean z2, xt0.u3 u3Var) {
         this.a = str;

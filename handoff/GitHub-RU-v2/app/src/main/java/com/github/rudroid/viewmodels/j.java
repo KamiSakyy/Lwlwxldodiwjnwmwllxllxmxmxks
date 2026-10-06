@@ -4,4 +4,6 @@ package com.github.rudroid.viewmodels;
 public final class j {
     public static final /* synthetic */ int a = 0;
     public Object f(Object p1) { return null; }
+    public Object f(Object) { return null; }
+    public Object i(long) { return null; }
 }

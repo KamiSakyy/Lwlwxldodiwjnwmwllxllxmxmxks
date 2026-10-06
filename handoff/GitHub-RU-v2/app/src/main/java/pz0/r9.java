@@ -2,8 +2,8 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r9 {
-    public final int a;
-    public final int b;
+    public int a;
+    public int b;
 
     public r9(int i, int i2) {
         this.a = i;

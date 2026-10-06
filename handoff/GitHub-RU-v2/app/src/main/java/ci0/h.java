@@ -4,8 +4,8 @@ import oj0.o3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public final String a;
-    public final o3 b;
+    public String a;
+    public o3 b;
 
     public h(String str, o3 o3Var) {
         this.a = str;

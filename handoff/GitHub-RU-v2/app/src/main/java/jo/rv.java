@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rv implements aaShadow.m0 {
-    public final sv a;
+    public sv a;
 
     public rv(sv svVar) {
         this.a = svVar;

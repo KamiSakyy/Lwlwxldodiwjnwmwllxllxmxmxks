@@ -2,8 +2,8 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p4 extends o.b {
-    public final String t;
-    public final String u;
+    public String t;
+    public String u;
 
     public p4(String str, String str2) {
         super(str, false);

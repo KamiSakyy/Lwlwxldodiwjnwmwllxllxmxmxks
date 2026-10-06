@@ -2,7 +2,7 @@ package dl0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements aa.m0 {
-    public final n a;
+    public n a;
 
     public m(n nVar) {
         this.a = nVar;

@@ -7,7 +7,7 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 implements aa.n0 {
     public static final w Companion = new w();
-    public final aa.u0 r;
+    public aa.u0 r;
 
     public b0(aa.u0 u0Var) {
         this.r = u0Var;

@@ -4,9 +4,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements e {
-    public final d a;
-    public final i b;
-    public final boolean c;
+    public d a;
+    public i b;
+    public boolean c;
 
     public a(d dVar, i iVar, boolean z) {
         this.a = dVar;

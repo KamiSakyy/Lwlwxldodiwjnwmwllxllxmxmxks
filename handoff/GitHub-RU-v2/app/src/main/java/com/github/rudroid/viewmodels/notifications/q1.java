@@ -2,8 +2,8 @@ package com.github.rudroid.viewmodels.notifications;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q1 implements p1 {
-    public final h a;
-    public final j71.a b;
+    public h a;
+    public j71.a b;
 
     public q1(h hVar, j71.a aVar) {
         this.a = hVar;

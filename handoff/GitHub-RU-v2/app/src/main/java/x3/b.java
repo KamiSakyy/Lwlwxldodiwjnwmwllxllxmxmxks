@@ -6,7 +6,7 @@ import com.google.android.gms.internal.play_billing.n1;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Throwable f33721a;
+    public Throwable f33721a;
 
     static {
         new b(new n1("Failure occurred while trying to finish a future.", 2));

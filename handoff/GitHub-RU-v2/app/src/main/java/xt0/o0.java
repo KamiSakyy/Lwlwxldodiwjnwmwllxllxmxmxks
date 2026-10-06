@@ -4,8 +4,8 @@ import pz0.jc;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public final jc a;
-    public final String b;
+    public jc a;
+    public String b;
 
     public o0(jc jcVar, String str) {
         this.a = jcVar;

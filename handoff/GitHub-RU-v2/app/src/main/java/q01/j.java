@@ -2,7 +2,7 @@ package q01;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements a {
-    public final String a;
+    public String a;
 
     public j(String str) {
         k71.k.g(str, "term");

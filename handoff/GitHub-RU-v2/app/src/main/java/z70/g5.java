@@ -4,10 +4,10 @@ import hc0.uu;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g5 {
-    public final String a;
-    public final uu b;
-    public final h4 c;
-    public final String d;
+    public String a;
+    public uu b;
+    public h4 c;
+    public String d;
 
     public g5(String str, uu uuVar, h4 h4Var, String str2) {
         this.a = str;

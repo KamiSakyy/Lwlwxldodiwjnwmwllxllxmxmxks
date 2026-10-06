@@ -7,7 +7,7 @@ import java.util.logging.Level;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i extends h91.d {
-    public final Socket n;
+    public Socket n;
 
     public i(Socket socket) {
         this.n = socket;

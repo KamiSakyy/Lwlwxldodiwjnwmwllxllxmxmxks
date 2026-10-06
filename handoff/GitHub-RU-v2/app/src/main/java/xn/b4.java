@@ -2,7 +2,7 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b4 implements c4 {
-    public final String a;
+    public String a;
 
     public b4(String str) {
         k71.k.g(str, "message");

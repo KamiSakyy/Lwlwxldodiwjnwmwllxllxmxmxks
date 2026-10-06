@@ -12,7 +12,7 @@ import kotlinx.serialization.KSerializer;
 public final class HomeIssuesRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public final SerializableFilterList f14997r;
+    public SerializableFilterList f14997r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<HomeIssuesRoute> CREATOR = new a();
 

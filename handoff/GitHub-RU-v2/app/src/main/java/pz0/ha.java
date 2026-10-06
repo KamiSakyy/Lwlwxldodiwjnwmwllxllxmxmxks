@@ -11,7 +11,7 @@ public final class ha {
     public static final ha v;
     public static final /* synthetic */ ha[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         ha haVar = new ha("DUPLICATE", 0, "DUPLICATE");

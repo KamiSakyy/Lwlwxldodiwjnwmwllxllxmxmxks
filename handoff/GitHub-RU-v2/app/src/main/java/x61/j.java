@@ -6,8 +6,8 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements Collection, l71.a {
-    public final Object[] r;
-    public final boolean s;
+    public Object[] r;
+    public boolean s;
 
     public j(Object[] objArr, boolean z) {
         k71.k.g(objArr, "values");

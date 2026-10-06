@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yf {
-    public final String a;
-    public final String b;
-    public final cq0.l1 c;
+    public String a;
+    public String b;
+    public cq0.l1 c;
 
     public yf(String str, String str2, cq0.l1 l1Var) {
         this.a = str;

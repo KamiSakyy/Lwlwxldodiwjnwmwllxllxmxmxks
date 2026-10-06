@@ -6,8 +6,8 @@ import com.github.service.models.ApiRequestStatus;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x {
-    public final q81.u a;
-    public final q10.f b;
+    public q81.u a;
+    public q10.f b;
 
     public x(q81.u uVar, q10.f fVar) {
         k71.k.g(uVar, "okHttpClient");

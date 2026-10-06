@@ -8,10 +8,10 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final b f4168a;
+    public b f4168a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f4169b;
+    public List f4169b;
 
     public a(b bVar, List list) {
         k.g(list, "models");

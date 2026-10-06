@@ -2,7 +2,7 @@ package lz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final String a;
+    public String a;
 
     public e(String str) {
         this.a = str;
@@ -26,5 +26,5 @@ public final class e {
     public final String toString() {
         return f1.e.z("ApproveMobileAuthDeviceRequest(clientMutationId=", this.a, ")");
     }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

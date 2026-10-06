@@ -9,16 +9,16 @@ public final class k {
     public static final k f31698e = new k(0, 0, 0, 0);
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f31699a;
+    public int f31699a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f31700b;
+    public int f31700b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f31701c;
+    public int f31701c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f31702d;
+    public int f31702d;
 
     public k(int i, int i10, int i11, int i12) {
         this.f31699a = i;

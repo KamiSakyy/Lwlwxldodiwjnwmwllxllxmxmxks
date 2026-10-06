@@ -2,11 +2,11 @@ package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final m2 c;
-    public final s2 d;
-    public final ek0.b e;
+    public String a;
+    public String b;
+    public m2 c;
+    public s2 d;
+    public ek0.b e;
 
     public p2(String str, String str2, m2 m2Var, s2 s2Var, ek0.b bVar) {
         this.a = str;

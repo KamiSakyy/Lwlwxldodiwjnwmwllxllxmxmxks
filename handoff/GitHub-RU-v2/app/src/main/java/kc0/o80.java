@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o80 implements aaShadow.m0 {
-    public final v80 a;
+    public v80 a;
 
     public o80(v80 v80Var) {
         this.a = v80Var;

@@ -14,7 +14,7 @@ public final class a {
     public static final a x;
     public static final a y;
     public static final /* synthetic */ a[] z;
-    public final int r;
+    public int r;
 
     static {
         a aVar = new a(0, "NO_ERROR", 0);

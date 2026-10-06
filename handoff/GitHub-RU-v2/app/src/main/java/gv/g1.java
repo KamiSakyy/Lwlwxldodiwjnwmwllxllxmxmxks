@@ -2,7 +2,7 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 {
-    public final String a;
+    public String a;
 
     public g1(String str) {
         this.a = str;

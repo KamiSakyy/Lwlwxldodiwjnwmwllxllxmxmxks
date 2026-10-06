@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gq implements aaShadow.m0 {
-    public final jq a;
+    public jq a;
 
     public gq(jq jqVar) {
         this.a = jqVar;

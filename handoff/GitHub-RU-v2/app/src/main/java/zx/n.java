@@ -2,10 +2,10 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public final String a;
-    public final String b;
-    public final dw.e1 c;
-    public final dw.c d;
+    public String a;
+    public String b;
+    public dw.e1 c;
+    public dw.c d;
 
     public n(String str, String str2, dw.e1 e1Var, dw.c cVar) {
         k71.k.g(str, "__typename");

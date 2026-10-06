@@ -11,7 +11,7 @@ public final class IssueState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ IssueState[] $VALUES;
     public static final e Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final IssueState OPEN = new IssueState("OPEN", 0, "OPEN");
     public static final IssueState CLOSED = new IssueState("CLOSED", 1, "CLOSED");
     public static final IssueState UNKNOWN__ = new IssueState("UNKNOWN__", 2, "UNKNOWN__");

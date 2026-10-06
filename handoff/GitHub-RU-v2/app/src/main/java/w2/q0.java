@@ -9,7 +9,7 @@ import android.net.Uri;
 public final class q0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f33127a;
+    public Context f33127a;
 
     public q0(Context context) {
         this.f33127a = context;

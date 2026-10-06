@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ta {
-    public final String a;
-    public final sa b;
-    public final String c;
+    public String a;
+    public sa b;
+    public String c;
 
     public ta(String str, sa saVar, String str2) {
         this.a = str;

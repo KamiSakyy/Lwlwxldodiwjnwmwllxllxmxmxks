@@ -2,7 +2,7 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements aa.m0 {
-    public final a a;
+    public a a;
 
     public c(a aVar) {
         this.a = aVar;

@@ -27,4 +27,12 @@ public abstract class y extends Binder implements IInterface {
         }
         return e(i, parcel, parcel2);
     }
+    public Object L(Object) { return null; }
+    public Object S(Object, int, Object) { return null; }
+    public Object U(Object, int, Object, int) { return null; }
+    public Object V(Object, int, Object) { return null; }
+    public Object Y(Object, int, int) { return null; }
+    public Object Z(Object, int) { return null; }
+    public Object a0(Object, int) { return null; }
+    public Object o(Object, Object) { return null; }
 }

@@ -8,4 +8,5 @@ public final class r extends k71.l implements j71.a {
     public Object e() { return null; }
     public Object h(Object p1) { return null; }
     public Object k(Object p1, Object p2, Object p3) { return null; }
+    public Object f(Object) { return null; }
 }

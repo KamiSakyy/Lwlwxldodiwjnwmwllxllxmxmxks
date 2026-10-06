@@ -14,5 +14,5 @@ public final class y implements j71.c {
         this.r.get(((Number) obj).intValue());
         return Long.MIN_VALUE;
     }
-    public Object f(Object p1, Object p2, Object p3) { return null; }
+    public static Object f(Object p1, Object p2, Object p3) { return null; }
 }

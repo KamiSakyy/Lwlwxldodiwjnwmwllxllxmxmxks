@@ -31,7 +31,7 @@ public final class b implements g {
     public final /* synthetic */ int f30419b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object f30420c;
+    public Object f30420c;
 
     static {
         int i10 = 0;

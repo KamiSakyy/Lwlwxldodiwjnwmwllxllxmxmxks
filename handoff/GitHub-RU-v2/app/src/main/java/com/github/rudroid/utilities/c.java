@@ -10,4 +10,6 @@ public final class c implements p61.d {
     public Object v(Object p1) { return null; }
     public Object a = null;
     public Object b = null;
+    public Object d(Object, Object, Object) { return null; }
+    public Object v(Object) { return null; }
 }

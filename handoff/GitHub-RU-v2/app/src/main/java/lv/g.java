@@ -5,11 +5,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
-    public final String b;
-    public final l c;
-    public final k d;
-    public final eq.g e;
+    public String a;
+    public String b;
+    public l c;
+    public k d;
+    public eq.g e;
 
     public g(String str, String str2, l lVar, k kVar, eq.g gVar) {
         k71.k.g(str, "__typename");

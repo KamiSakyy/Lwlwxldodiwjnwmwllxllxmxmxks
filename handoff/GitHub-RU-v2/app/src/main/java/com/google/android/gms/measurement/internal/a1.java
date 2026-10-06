@@ -5,8 +5,8 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a1 {
-    public final String a;
-    public final long b;
+    public String a;
+    public long b;
     public boolean c;
     public long d;
     public final /* synthetic */ c1 e;

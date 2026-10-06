@@ -12,32 +12,32 @@ import zk.h1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class n0 extends k1 implements com.github.rudroid.utilities.viewmodel.b {
     public static final a Companion = new a();
-    public final y1 A;
-    public final i1 B;
+    public y1 A;
+    public i1 B;
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f15968s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final zk.e f15969t;
+    public zk.e f15969t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final h1 f15970u;
+    public h1 f15970u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f15971v;
+    public com.github.rudroid.activities.util.c f15971v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final String f15972w;
+    public String f15972w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final int f15973x;
+    public int f15973x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final y1 f15974y;
+    public y1 f15974y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final i1 f15975z;
+    public i1 f15975z;
 
     public static final class a {
     }

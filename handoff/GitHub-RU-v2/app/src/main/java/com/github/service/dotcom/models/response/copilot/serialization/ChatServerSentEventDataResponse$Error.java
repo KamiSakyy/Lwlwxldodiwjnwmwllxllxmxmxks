@@ -14,9 +14,9 @@ import w61.h;
 public final class ChatServerSentEventDataResponse$Error extends c {
     public static final Companion Companion = new Companion();
     public static final h[] d;
-    public final i a;
-    public final j b;
-    public final String c;
+    public i a;
+    public j b;
+    public String c;
 
     public static final class Companion {
         public final KSerializer serializer() {

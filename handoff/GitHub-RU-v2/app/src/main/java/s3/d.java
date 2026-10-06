@@ -4,10 +4,10 @@ package s3;
 public final class d implements c {
 
     /* renamed from: r, reason: collision with root package name */
-    public final float f31689r;
+    public float f31689r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final float f31690s;
+    public float f31690s;
 
     public d(float f6, float f10) {
         this.f31689r = f6;

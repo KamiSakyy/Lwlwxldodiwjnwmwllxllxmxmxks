@@ -45,4 +45,5 @@ public final class a extends c71.j implements j71.f {
         }
     }
     public Object a(Object p1) { return null; }
+    public Object a(Object) { return null; }
 }

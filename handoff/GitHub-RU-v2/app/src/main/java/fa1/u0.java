@@ -5,7 +5,7 @@ import java.lang.reflect.Type;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u0 implements GenericArrayType {
-    public final Type r;
+    public Type r;
 
     public u0(Type type) {
         this.r = type;

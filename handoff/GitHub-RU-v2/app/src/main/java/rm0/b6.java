@@ -70,10 +70,10 @@ import u10.z60;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.bShadow t;
-    public final v71.v u;
-    public final s01.p v;
+    public com.github.service.wrapper.j s;
+    public com.github.service.wrapper.bShadow t;
+    public v71.v u;
+    public s01.p v;
 
     public b6(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;

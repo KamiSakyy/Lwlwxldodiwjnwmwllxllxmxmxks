@@ -60,11 +60,11 @@ public class Chip extends p implements e, y, i {
     public int G;
     public int H;
     public CharSequence I;
-    public final d J;
+    public d J;
     public boolean K;
-    public final Rect L;
-    public final RectF M;
-    public final b N;
+    public Rect L;
+    public RectF M;
+    public b N;
     public f v;
     public InsetDrawable w;
     public RippleDrawable x;

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class x0 extends w0 implements g0 {
-    public final Executor t;
+    public Executor t;
 
     public x0(Executor executor) {
         Method method;

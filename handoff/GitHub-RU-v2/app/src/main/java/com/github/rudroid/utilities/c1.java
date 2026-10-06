@@ -44,5 +44,5 @@ public final class c1 {
         intent.putExtra("android.intent.extra.TEXT", str);
         context.startActivity(Intent.createChooser(intent, string));
     }
-    public Object p(Object p1, Object p2) { return null; }
+    public static Object p(Object p1, Object p2) { return null; }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l30 implements aaShadow.n0 {
     public static final h30 Companion = new h30();
-    public final String r;
+    public String r;
 
     public l30(String str) {
         k71.k.g(str, "nodeId");

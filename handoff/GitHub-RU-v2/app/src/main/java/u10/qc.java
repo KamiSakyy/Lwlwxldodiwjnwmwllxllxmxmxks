@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qc {
-    public final String a;
+    public String a;
 
     public qc(String str) {
         this.a = str;

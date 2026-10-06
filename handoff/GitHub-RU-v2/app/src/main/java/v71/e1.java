@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public class e1 extends j1 {
-    public final boolean t;
+    public boolean t;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e1(d1 d1Var) {

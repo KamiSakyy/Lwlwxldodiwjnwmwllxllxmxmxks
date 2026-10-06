@@ -2,8 +2,8 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public final String a;
-    public final wc0.a b;
+    public String a;
+    public wc0.a b;
 
     public f(String str, wc0.a aVar) {
         this.a = str;

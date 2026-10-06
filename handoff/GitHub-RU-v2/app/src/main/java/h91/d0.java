@@ -4,8 +4,8 @@ import java.nio.ByteBuffer;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d0 implements i {
-    public final i0Shadow r;
-    public final h s;
+    public i0Shadow r;
+    public h s;
     public boolean t;
 
     public d0(i0Shadow i0Var) {

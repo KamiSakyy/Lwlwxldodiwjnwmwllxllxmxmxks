@@ -9,8 +9,8 @@ import y71.m1;
 public interface d {
 
     public static final class a implements d {
-        public final m1 r;
-        public final h1 s;
+        public m1 r;
+        public h1 s;
 
         public a() {
             m1 j = s.j();

@@ -4,8 +4,8 @@ import com.github.service.models.response.IssueOrPullRequestState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a8 {
-    public final IssueOrPullRequestState a;
-    public final boolean b;
+    public IssueOrPullRequestState a;
+    public boolean b;
 
     public a8(IssueOrPullRequestState issueOrPullRequestState, boolean z) {
         k71.k.g(issueOrPullRequestState, "state");

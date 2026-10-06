@@ -14,5 +14,6 @@ public final class a {
     public final String toString() {
         return "AvailableInLicenseFeature(description=0, featureStatus=null)";
     }
-    public Object c(Object p1, Object p2) { return null; }
+    public static Object c(Object p1, Object p2) { return null; }
+    public Object a(Object) { return null; }
 }

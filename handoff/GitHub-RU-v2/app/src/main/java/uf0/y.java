@@ -4,8 +4,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y {
-    public final String a;
-    public final ud0.a b;
+    public String a;
+    public ud0.a b;
 
     public y(String str, ud0.a aVar) {
         k71.k.g(str, "__typename");

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sw {
-    public final boolean a;
-    public final String b;
+    public boolean a;
+    public String b;
 
     public sw(String str, boolean z) {
         this.a = z;

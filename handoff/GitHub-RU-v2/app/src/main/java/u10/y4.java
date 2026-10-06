@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y4 {
-    public final String a;
-    public final hc0.fm b;
-    public final boolean c;
-    public final boolean d;
-    public final String e;
+    public String a;
+    public hc0.fm b;
+    public boolean c;
+    public boolean d;
+    public String e;
 
     public y4(String str, hc0.fm fmVar, boolean z, boolean z2, String str2) {
         this.a = str;

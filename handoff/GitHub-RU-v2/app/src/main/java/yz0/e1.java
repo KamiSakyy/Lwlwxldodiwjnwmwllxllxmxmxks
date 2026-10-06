@@ -4,10 +4,10 @@ import com.github.service.models.response.type.PullRequestMergeMethod;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e1 {
-    public final s7 a;
-    public final boolean b;
-    public final boolean c;
-    public final PullRequestMergeMethod d;
+    public s7 a;
+    public boolean b;
+    public boolean c;
+    public PullRequestMergeMethod d;
 
     public e1(s7 s7Var, boolean z, boolean z2, PullRequestMergeMethod pullRequestMergeMethod) {
         k71.k.g(pullRequestMergeMethod, "mergeMethod");

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dd implements aaShadow.v0 {
-    public final hd a;
+    public hd a;
 
     public dd(hd hdVar) {
         this.a = hdVar;

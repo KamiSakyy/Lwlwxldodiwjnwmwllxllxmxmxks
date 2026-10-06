@@ -4,10 +4,10 @@ package n0;
 public final class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f29329a;
+    public int f29329a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f29330b;
+    public int f29330b;
 
     public t(int i, int i10) {
         this.f29329a = i;

@@ -6,8 +6,8 @@ import yz0.f8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final List a;
-    public final f8 b;
+    public List a;
+    public f8 b;
 
     public a(List list, f8 f8Var) {
         k.g(list, "selectedUserLists");

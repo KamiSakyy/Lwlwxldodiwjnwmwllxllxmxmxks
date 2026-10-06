@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 {
-    public final boolean a;
-    public final List b;
-    public final bm.l c;
+    public boolean a;
+    public List b;
+    public bm.l c;
 
     public d0(boolean z, List list, bm.l lVar) {
         this.a = z;

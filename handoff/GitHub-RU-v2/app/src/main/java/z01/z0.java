@@ -2,7 +2,7 @@ package z01;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z0 implements a1 {
-    public final String a;
+    public String a;
 
     public z0(String str) {
         k71.k.g(str, "groupId");

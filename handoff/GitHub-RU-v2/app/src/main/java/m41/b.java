@@ -13,8 +13,8 @@ import z70.w;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements a {
     public static volatile b c;
-    public final s21.a a;
-    public final ConcurrentHashMap b;
+    public s21.a a;
+    public ConcurrentHashMap b;
 
     public b(s21.a aVar) {
         u.g(aVar);

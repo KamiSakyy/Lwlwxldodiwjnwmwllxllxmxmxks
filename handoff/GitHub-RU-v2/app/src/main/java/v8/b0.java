@@ -4,7 +4,7 @@ package v8;
 public final class b0 extends sy.w {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Throwable f32748a;
+    public Throwable f32748a;
 
     public b0(Throwable th) {
         this.f32748a = th;

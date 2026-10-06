@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x5 implements aaShadow.w0 {
     public static final r5 Companion = new r5();
-    public final String r;
-    public final aa1.b s;
+    public String r;
+    public aa1.b s;
 
     public x5(String str, aa1.b bVar) {
         k71.k.g(str, "query");

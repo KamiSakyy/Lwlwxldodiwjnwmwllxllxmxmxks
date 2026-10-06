@@ -5,7 +5,7 @@ import jo.f4;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h implements le.z {
     public static final a Companion = new a();
-    public final String r;
+    public String r;
 
     public static final class a {
     }
@@ -15,9 +15,9 @@ public abstract class h implements le.z {
     }
 
     public static final class c extends h {
-        public final int s;
-        public final int t;
-        public final boolean u;
+        public int s;
+        public int t;
+        public boolean u;
 
         public c(int i, int i2, boolean z) {
             super(no.a.k("ITEM_TYPE_HEADER", i2));
@@ -47,10 +47,10 @@ public abstract class h implements le.z {
     }
 
     public static final class d extends h {
-        public final String s;
-        public final String t;
-        public final int u;
-        public final String v;
+        public String s;
+        public String t;
+        public int u;
+        public String v;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(int i, String str, String str2, String str3) {
@@ -85,16 +85,16 @@ public abstract class h implements le.z {
     }
 
     public static final class e extends h implements com.github.rudroid.repositories.k {
-        public final boolean A;
-        public final String B;
-        public final String s;
-        public final com.github.service.models.response.a t;
-        public final String u;
-        public final boolean v;
-        public final String w;
-        public final String x;
-        public final int y;
-        public final int z;
+        public boolean A;
+        public String B;
+        public String s;
+        public com.github.service.models.response.a t;
+        public String u;
+        public boolean v;
+        public String w;
+        public String x;
+        public int y;
+        public int z;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(String str, com.github.service.models.response.a aVar, String str2, boolean z, String str3, String str4, int i, int i2, boolean z2, String str5) {
@@ -193,7 +193,7 @@ public abstract class h implements le.z {
     }
 
     public static final class g extends h {
-        public final boolean s;
+        public boolean s;
 
         public g(boolean z) {
             super("ITEM_STAR_REPO_EMPTY_STATE");

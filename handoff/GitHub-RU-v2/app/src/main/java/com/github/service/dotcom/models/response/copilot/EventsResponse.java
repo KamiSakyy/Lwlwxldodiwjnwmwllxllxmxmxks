@@ -15,8 +15,8 @@ import x61.r;
 public final class EventsResponse {
     public static final Companion Companion = new Companion();
     public static final h[] c = {w.s(i.r, new a(17)), null};
-    public final List a;
-    public final Integer b;
+    public List a;
+    public Integer b;
 
     public static final class Companion {
         public final KSerializer serializer() {

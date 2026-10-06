@@ -21,4 +21,6 @@ public final class l extends c71.c {
     }
     public Object k(Object p1) { return null; }
     public Object l(Object p1) { return null; }
+    public Object k(Object) { return null; }
+    public Object l(Object) { return null; }
 }

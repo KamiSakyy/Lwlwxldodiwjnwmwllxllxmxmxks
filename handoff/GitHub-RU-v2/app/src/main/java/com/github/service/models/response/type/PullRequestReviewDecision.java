@@ -11,7 +11,7 @@ public final class PullRequestReviewDecision {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PullRequestReviewDecision[] $VALUES;
     public static final p Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PullRequestReviewDecision CHANGES_REQUESTED = new PullRequestReviewDecision("CHANGES_REQUESTED", 0, "CHANGES_REQUESTED");
     public static final PullRequestReviewDecision APPROVED = new PullRequestReviewDecision("APPROVED", 1, "APPROVED");
     public static final PullRequestReviewDecision REVIEW_REQUIRED = new PullRequestReviewDecision("REVIEW_REQUIRED", 2, "REVIEW_REQUIRED");

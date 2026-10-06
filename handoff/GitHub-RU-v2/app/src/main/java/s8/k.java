@@ -7,10 +7,10 @@ import com.github.rudroid.b0;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Activity f31758a;
+    public Activity f31758a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final b0 f31759b;
+    public b0 f31759b;
 
     /* renamed from: c, reason: collision with root package name */
     public p8.h f31760c;

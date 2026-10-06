@@ -2,8 +2,8 @@ package com.github.rudroid.utilities.viewmodel.paging.model;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x<T> {
-    public final Object a;
-    public final boolean b;
+    public Object a;
+    public boolean b;
 
     public x(Object obj, boolean z) {
         this.a = obj;

@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qx {
-    public final String a;
-    public final boolean b;
-    public final nx c;
-    public final String d;
+    public String a;
+    public boolean b;
+    public nx c;
+    public String d;
 
     public qx(String str, boolean z, nx nxVar, String str2) {
         this.a = str;

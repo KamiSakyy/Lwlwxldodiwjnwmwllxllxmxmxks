@@ -2,7 +2,7 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u7 {
-    public final cr a;
+    public cr a;
 
     public u7(cr crVar) {
         v7 v7Var = w7.Companion;

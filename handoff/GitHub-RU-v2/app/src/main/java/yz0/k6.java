@@ -5,10 +5,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k6 extends s7 {
-    public final String a;
-    public final String b;
-    public final DeploymentStatusState c;
-    public final ZonedDateTime d;
+    public String a;
+    public String b;
+    public DeploymentStatusState c;
+    public ZonedDateTime d;
 
     public k6(String str, String str2, DeploymentStatusState deploymentStatusState, ZonedDateTime zonedDateTime) {
         k71.k.g(str, "actorDisplayName");

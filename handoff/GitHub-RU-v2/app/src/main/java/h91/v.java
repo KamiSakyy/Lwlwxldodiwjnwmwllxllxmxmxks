@@ -6,11 +6,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class v implements Closeable {
-    public final boolean r;
+    public boolean r;
     public boolean s;
     public int t;
     public final ReentrantLock u = new ReentrantLock();
-    public final RandomAccessFile v;
+    public RandomAccessFile v;
 
     public v(boolean z, RandomAccessFile randomAccessFile) {
         this.r = z;

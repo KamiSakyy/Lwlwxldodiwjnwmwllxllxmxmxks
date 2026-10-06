@@ -2,10 +2,10 @@ package qx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i1 {
-    public final e1 a;
-    public final s1 b;
-    public final String c;
-    public final String d;
+    public e1 a;
+    public s1 b;
+    public String c;
+    public String d;
 
     public i1(e1 e1Var, s1 s1Var, String str, String str2) {
         this.a = e1Var;

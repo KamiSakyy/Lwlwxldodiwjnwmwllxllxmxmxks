@@ -2,15 +2,15 @@ package ck0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public final String a;
-    public final i b;
-    public final j c;
-    public final k d;
-    public final m e;
-    public final h f;
-    public final l g;
-    public final n h;
-    public final o i;
+    public String a;
+    public i b;
+    public j c;
+    public k d;
+    public m e;
+    public h f;
+    public l g;
+    public n h;
+    public o i;
 
     public s(String str, i iVar, j jVar, k kVar, m mVar, h hVar, l lVar, n nVar, o oVar) {
         k71.k.g(str, "__typename");

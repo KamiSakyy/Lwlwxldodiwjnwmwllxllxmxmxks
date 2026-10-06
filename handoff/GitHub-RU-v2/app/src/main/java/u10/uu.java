@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uu {
-    public final String a;
-    public final su b;
-    public final tu c;
-    public final String d;
+    public String a;
+    public su b;
+    public tu c;
+    public String d;
 
     public uu(String str, su suVar, tu tuVar, String str2) {
         this.a = str;

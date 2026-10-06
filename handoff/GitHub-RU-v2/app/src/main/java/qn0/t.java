@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
-    public final String a;
-    public final ZonedDateTime b;
-    public final pz0.e3 c;
-    public final pz0.y2 d;
-    public final String e;
+    public String a;
+    public ZonedDateTime b;
+    public pz0.e3 c;
+    public pz0.y2 d;
+    public String e;
 
     public t(String str, ZonedDateTime zonedDateTime, pz0.e3 e3Var, pz0.y2 y2Var, String str2) {
         this.a = str;

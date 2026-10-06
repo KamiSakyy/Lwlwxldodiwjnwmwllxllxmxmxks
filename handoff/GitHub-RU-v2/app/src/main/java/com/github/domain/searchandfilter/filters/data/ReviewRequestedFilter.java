@@ -15,7 +15,7 @@ import sy.w;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ReviewRequestedFilter extends d {
-    public final boolean v;
+    public boolean v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ReviewRequestedFilter> CREATOR = new o(17);
     public static final w61.h[] w = {w.s(w61.i.r, new p(16)), null, null};

@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ur {
-    public final String a;
-    public final es.a b;
+    public String a;
+    public es.a b;
 
     public ur(String str, es.a aVar) {
         this.a = str;

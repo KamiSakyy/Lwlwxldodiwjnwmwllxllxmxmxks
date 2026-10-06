@@ -10,7 +10,7 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements n0 {
     public static final b Companion = new b();
-    public final String r;
+    public String r;
 
     public d(String str) {
         k71.k.g(str, "checkSuiteId");

@@ -22,7 +22,7 @@ import x61.m;
 public final class AuthorFilter extends d {
     public static final w61.h[] w;
     public static final a0 x;
-    public final yz0.f v;
+    public yz0.f v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<AuthorFilter> CREATOR = new a21.g(15);
 

@@ -13,7 +13,7 @@ public abstract /* synthetic */ class a {
 
     public a(Object... a) {
     }
-    public Object W(Object p1) { return null; }
+    public static Object W(Object p1) { return null; }
     public static final Object c = null;
     public static final Object d = null;
 }

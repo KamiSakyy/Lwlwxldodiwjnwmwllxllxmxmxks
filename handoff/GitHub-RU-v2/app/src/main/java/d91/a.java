@@ -20,7 +20,7 @@ public final class a {
     public static final k b;
     public static final List c;
     public static final a d;
-    public final b a;
+    public b a;
 
     static {
         byte[] copyOf = Arrays.copyOf(new byte[]{42}, 1);

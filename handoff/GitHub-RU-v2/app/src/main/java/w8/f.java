@@ -6,4 +6,5 @@ package w8;
  */
 public interface f {
     public static final Object J = null;
+    public Object ordinal() { return null; }
 }

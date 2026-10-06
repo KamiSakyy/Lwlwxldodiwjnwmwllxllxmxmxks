@@ -9,7 +9,7 @@ public final class rb {
     public static final rb t;
     public static final /* synthetic */ rb[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         rb rbVar = new rb("ASSIGNED", 0, "ASSIGNED");

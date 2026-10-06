@@ -15,7 +15,7 @@ import x61.r;
 public final class ChatMessageAnnotationsResponse {
     public static final Companion Companion = new Companion();
     public static final h[] b = {w.s(i.r, new gz.a(26))};
-    public final List a;
+    public List a;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -8,7 +8,7 @@ import w61.a0;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public final gi.c f33511a;
+    public gi.c f33511a;
 
     public o(gi.c cVar) {
         k71.k.g(cVar, "systemPreferences");

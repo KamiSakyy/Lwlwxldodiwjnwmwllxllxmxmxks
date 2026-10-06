@@ -6,8 +6,8 @@ import java.lang.reflect.Method;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e0 extends x0 {
     public final /* synthetic */ int d;
-    public final Method e;
-    public final int f;
+    public Method e;
+    public int f;
 
     public /* synthetic */ e0(Method method, int i, int i2) {
         this.d = i2;

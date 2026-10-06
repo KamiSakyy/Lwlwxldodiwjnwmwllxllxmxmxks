@@ -7,16 +7,16 @@ import java.util.Map;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f30449a;
+    public int f30449a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final WeakReference f30450b;
+    public WeakReference f30450b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Map f30451c;
+    public Map f30451c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f30452d;
+    public int f30452d;
 
     public e(int i, WeakReference weakReference, Map map, int i10) {
         this.f30449a = i;

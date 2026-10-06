@@ -11,8 +11,8 @@ import w51.a0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
     public CharSequence a;
-    public final TextPaint b;
-    public final int c;
+    public TextPaint b;
+    public int c;
     public int d;
     public boolean k;
     public k m;

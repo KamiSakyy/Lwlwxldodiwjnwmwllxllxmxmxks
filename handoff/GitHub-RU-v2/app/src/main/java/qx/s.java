@@ -6,18 +6,18 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final Integer e;
-    public final b00 f;
-    public final v g;
-    public final Boolean h;
-    public final boolean i;
-    public final ZonedDateTime j;
-    public final y k;
-    public final boolean l;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public Integer e;
+    public b00 f;
+    public v g;
+    public Boolean h;
+    public boolean i;
+    public ZonedDateTime j;
+    public y k;
+    public boolean l;
 
     public s(String str, String str2, String str3, int i, Integer num, b00 b00Var, v vVar, Boolean bool, boolean z, ZonedDateTime zonedDateTime, y yVar, boolean z2) {
         this.a = str;

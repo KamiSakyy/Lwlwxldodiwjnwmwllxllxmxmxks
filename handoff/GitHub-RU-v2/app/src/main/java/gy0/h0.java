@@ -9,8 +9,8 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 implements w0 {
     public static final y Companion = new y();
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     public h0(String str, String str2) {
         k71.k.g(str, "fullDatabaseId");

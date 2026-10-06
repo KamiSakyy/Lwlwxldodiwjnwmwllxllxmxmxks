@@ -6,10 +6,10 @@ import com.github.rudroid.copilot.h1;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f9963a;
+    public String f9963a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f9964b;
+    public boolean f9964b;
 
     public f(String str, boolean z10) {
         this.f9963a = str;

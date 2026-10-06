@@ -8,7 +8,7 @@ import java.util.ListIterator;
 public final class x implements l2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayList f20987a;
+    public ArrayList f20987a;
 
     public x(ArrayList arrayList) {
         this.f20987a = arrayList;

@@ -12,7 +12,7 @@ public abstract class b extends kShadow.i implements o61.b {
     public final /* synthetic */ int S;
     public n4 T;
     public volatile m61.b U;
-    public final Object V;
+    public Object V;
     public boolean W;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -119,4 +119,5 @@ public abstract class b extends kShadow.i implements o61.b {
         }
         return Y().w();
     }
+    public Object C(Object) { return null; }
 }

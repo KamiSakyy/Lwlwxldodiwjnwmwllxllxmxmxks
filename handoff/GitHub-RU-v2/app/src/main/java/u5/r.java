@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class r implements TextWatcher, SpanWatcher {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Object f32242r;
+    public Object f32242r;
 
     /* renamed from: s, reason: collision with root package name */
     public final AtomicInteger f32243s = new AtomicInteger(0);

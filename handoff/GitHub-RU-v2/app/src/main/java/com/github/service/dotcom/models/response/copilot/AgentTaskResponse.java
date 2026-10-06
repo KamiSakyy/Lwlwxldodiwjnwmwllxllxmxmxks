@@ -17,21 +17,21 @@ import x61.r;
 public final class AgentTaskResponse {
     public static final Companion Companion = new Companion();
     public static final h[] p;
-    public final String a;
-    public final String b;
-    public final xn.e c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final long g;
-    public final long h;
-    public final long i;
-    public final int j;
-    public final List k;
-    public final List l;
-    public final List m;
-    public final Boolean n;
-    public final List o;
+    public String a;
+    public String b;
+    public xn.e c;
+    public String d;
+    public String e;
+    public String f;
+    public long g;
+    public long h;
+    public long i;
+    public int j;
+    public List k;
+    public List l;
+    public List m;
+    public Boolean n;
+    public List o;
 
     public static final class Companion {
         public final KSerializer serializer() {

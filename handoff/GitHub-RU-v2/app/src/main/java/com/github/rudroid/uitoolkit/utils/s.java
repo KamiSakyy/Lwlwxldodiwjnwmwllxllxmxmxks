@@ -4,9 +4,9 @@ import java.util.LinkedHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s implements j0.i {
-    public final long a;
+    public long a;
     public final LinkedHashMap b = new LinkedHashMap();
-    public final r c;
+    public r c;
 
     public s(j0.j jVar, long j) {
         this.a = j;
@@ -39,4 +39,23 @@ public final class s implements j0.i {
     public Object S = null;
     public Object T = null;
     public Object a = null;
+    public Object S(int, boolean) { return null; }
+    public Object c0(int) { return null; }
+    public Object d(int) { return null; }
+    public Object e(long) { return null; }
+    public Object e0(int) { return null; }
+    public Object f(Object) { return null; }
+    public Object f(Object) { return null; }
+    public Object f(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object j(Object) { return null; }
+    public Object j(Object) { return null; }
+    public Object k(Object) { return null; }
+    public Object n0(Object) { return null; }
+    public Object n0(Object) { return null; }
+    public Object q(boolean) { return null; }
 }

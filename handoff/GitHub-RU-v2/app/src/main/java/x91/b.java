@@ -12,7 +12,7 @@ import sy.n;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements f {
     public final /* synthetic */ int a;
-    public final Object b;
+    public Object b;
 
     public /* synthetic */ b(int i, Object obj) {
         this.a = i;

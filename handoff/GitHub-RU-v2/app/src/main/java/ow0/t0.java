@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 implements aa.v0 {
-    public final x0 a;
-    public final String b;
-    public final String c;
+    public x0 a;
+    public String b;
+    public String c;
 
     public t0(x0 x0Var, String str, String str2) {
         this.a = x0Var;

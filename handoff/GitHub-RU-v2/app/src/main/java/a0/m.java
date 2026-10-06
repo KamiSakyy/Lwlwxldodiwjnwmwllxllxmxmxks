@@ -4,10 +4,10 @@ package a0;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final p f149a;
+    public p f149a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final l f150b;
+    public l f150b;
 
     public m(p pVar, l lVar) {
         this.f149a = pVar;

@@ -2,8 +2,8 @@ package c30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p {
-    public final l a;
-    public final String b;
+    public l a;
+    public String b;
 
     public p(l lVar, String str) {
         this.a = lVar;

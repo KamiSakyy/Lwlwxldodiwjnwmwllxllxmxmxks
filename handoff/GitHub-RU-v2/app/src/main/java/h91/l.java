@@ -7,8 +7,8 @@ import java.util.zip.Deflater;
 public final class l implements i0Shadow {
     public final /* synthetic */ int r = 0;
     public boolean s;
-    public final Object t;
-    public final Object u;
+    public Object t;
+    public Object u;
 
     public l(h hVar, Deflater deflater) {
         this.t = b.b(hVar);

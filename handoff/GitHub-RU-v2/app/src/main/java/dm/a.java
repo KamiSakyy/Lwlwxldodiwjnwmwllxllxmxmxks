@@ -15,13 +15,13 @@ import yz0.f;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements f {
     public static final Parcelable.Creator<a> CREATOR = new c0(17);
-    public final String r;
-    public final Avatar s;
-    public final String t;
-    public final String u;
-    public final boolean v;
-    public final boolean w;
-    public final boolean x;
+    public String r;
+    public Avatar s;
+    public String t;
+    public String u;
+    public boolean v;
+    public boolean w;
+    public boolean x;
 
     public a(String str, Avatar avatar, String str2, String str3, boolean z, boolean z2, boolean z3) {
         k.g(str, "login");

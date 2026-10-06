@@ -10,7 +10,7 @@ public final class tq {
     public static final tq u;
     public static final /* synthetic */ tq[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         tq tqVar = new tq("DRAFT_ISSUE", 0, "DRAFT_ISSUE");

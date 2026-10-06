@@ -8,13 +8,13 @@ import java.time.ZonedDateTime;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o8 implements Parcelable {
     public static final Parcelable.Creator<o8> CREATOR = new e5(9);
-    public final String r;
-    public final String s;
-    public final boolean t;
-    public final String u;
-    public final OrganizationNameAndAvatarUrl v;
-    public final String w;
-    public final ZonedDateTime x;
+    public String r;
+    public String s;
+    public boolean t;
+    public String u;
+    public OrganizationNameAndAvatarUrl v;
+    public String w;
+    public ZonedDateTime x;
 
     public o8(String str, String str2, boolean z, String str3, OrganizationNameAndAvatarUrl organizationNameAndAvatarUrl, String str4, ZonedDateTime zonedDateTime) {
         k71.k.g(str, "emojiHtml");

@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements Serializable {
-    public final Object r;
-    public final Object s;
-    public final Object t;
+    public Object r;
+    public Object s;
+    public Object t;
 
     public q(Object obj, Object obj2, Object obj3) {
         this.r = obj;

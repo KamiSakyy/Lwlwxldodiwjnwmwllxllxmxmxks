@@ -2,9 +2,9 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i2 {
-    public final String a;
-    public final j2 b;
-    public final k2 c;
+    public String a;
+    public j2 b;
+    public k2 c;
 
     public i2(String str, j2 j2Var, k2 k2Var) {
         k71.k.g(str, "__typename");

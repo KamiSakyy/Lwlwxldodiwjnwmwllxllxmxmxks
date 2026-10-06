@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m40 {
-    public final int a;
+    public int a;
 
     public m40(int i) {
         this.a = i;

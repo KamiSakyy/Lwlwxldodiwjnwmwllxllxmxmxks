@@ -4,8 +4,8 @@ package p01;
 public final class i {
     public static final h Companion = new h();
     public static final i c;
-    public final g a;
-    public final boolean b;
+    public g a;
+    public boolean b;
 
     static {
         g.Companion.getClass();

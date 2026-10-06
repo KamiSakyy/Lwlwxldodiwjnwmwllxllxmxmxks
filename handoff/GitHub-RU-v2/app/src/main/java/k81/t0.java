@@ -4,8 +4,8 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class t0 implements Map.Entry, l71.a {
-    public final Object r;
-    public final Object s;
+    public Object r;
+    public Object s;
 
     public t0(Object obj, Object obj2) {
         this.r = obj;

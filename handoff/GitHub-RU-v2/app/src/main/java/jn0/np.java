@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class np implements aaShadow.v0 {
-    public final qp a;
-    public final String b;
-    public final String c;
+    public qp a;
+    public String b;
+    public String c;
 
     public np(qp qpVar, String str, String str2) {
         this.a = qpVar;

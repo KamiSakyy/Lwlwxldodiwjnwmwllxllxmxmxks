@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o10 implements aaShadow.v0 {
-    public final p10 a;
-    public final String b;
-    public final String c;
+    public p10 a;
+    public String b;
+    public String c;
 
     public o10(p10 p10Var, String str, String str2) {
         this.a = p10Var;

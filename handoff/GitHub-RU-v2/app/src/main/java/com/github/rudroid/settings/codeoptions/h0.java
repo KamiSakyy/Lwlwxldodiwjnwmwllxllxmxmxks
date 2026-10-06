@@ -14,4 +14,5 @@ public abstract class h0 extends p2 {
         ((o) w()).I((CodeOptionsActivity) this);
     }
     public Object onCreate(Object p1) { return null; }
+    public Object a(Object, long, Object, Object, int) { return null; }
 }

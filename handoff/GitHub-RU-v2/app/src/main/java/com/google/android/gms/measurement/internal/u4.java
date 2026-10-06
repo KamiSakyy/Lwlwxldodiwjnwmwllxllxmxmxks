@@ -5,7 +5,7 @@ import android.os.RemoteException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u4 implements d2 {
-    public final com.google.android.gms.internal.measurement.r0 a;
+    public com.google.android.gms.internal.measurement.r0 a;
     public final /* synthetic */ AppMeasurementDynamiteService b;
 
     public u4(AppMeasurementDynamiteService appMeasurementDynamiteService, com.google.android.gms.internal.measurement.r0 r0Var) {

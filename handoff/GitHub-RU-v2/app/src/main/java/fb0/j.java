@@ -5,12 +5,12 @@ import hc0.i9;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final i9 d;
-    public final a e;
-    public final j0 f;
+    public String a;
+    public String b;
+    public int c;
+    public i9 d;
+    public a e;
+    public j0 f;
 
     public j(String str, String str2, int i, i9 i9Var, a aVar, j0 j0Var) {
         this.a = str;

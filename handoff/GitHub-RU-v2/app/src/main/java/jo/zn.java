@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zn {
-    public final String a;
-    public final String b;
-    public final xn c;
+    public String a;
+    public String b;
+    public xn c;
 
     public zn(String str, String str2, xn xnVar) {
         this.a = str;

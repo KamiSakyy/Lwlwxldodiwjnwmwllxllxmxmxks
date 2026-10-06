@@ -15,8 +15,8 @@ import kotlinx.serialization.KSerializer;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class c {
-    public final int a;
-    public final String b;
+    public int a;
+    public String b;
     public Object c;
     public Serializable d;
     public Serializable e;
@@ -224,8 +224,16 @@ public abstract class c {
         }
     }
     public Object A(Object p1, Object p2, Object p3) { return null; }
-    public Object k(Object p1, Object p2) { return null; }
+    public static Object k(Object p1, Object p2) { return null; }
     public Object s(Object p1, Object p2, Object p3) { return null; }
     public Object t(Object p1) { return null; }
     public Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object A(int, int, Object) { return null; }
+    public Object r(Object) { return null; }
+    public Object s(int, int, Object) { return null; }
+    public Object t(int) { return null; }
+    public Object z(Object, int, Object) { return null; }
+    public Object z(Object, int, Object) { return null; }
+    public Object z(Object, int, Object) { return null; }
+    public Object z(Object, int, Object) { return null; }
 }

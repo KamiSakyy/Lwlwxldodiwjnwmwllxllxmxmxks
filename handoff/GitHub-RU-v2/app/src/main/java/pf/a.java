@@ -8,10 +8,10 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final ArrayList f30537a;
+    public ArrayList f30537a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final g1 f30538b;
+    public g1 f30538b;
 
     public a(ArrayList arrayList, g1 g1Var) {
         k.g(g1Var, "updateIssueIssueTypeStateEvent");

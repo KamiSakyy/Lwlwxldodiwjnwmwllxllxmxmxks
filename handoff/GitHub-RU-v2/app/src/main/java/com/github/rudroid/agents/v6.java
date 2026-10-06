@@ -4,10 +4,10 @@ package com.github.rudroid.agents;
 public final class v6 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final on.l f8344a;
+    public on.l f8344a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f8345b;
+    public boolean f8345b;
 
     public v6(on.l lVar, boolean z10) {
         this.f8344a = lVar;

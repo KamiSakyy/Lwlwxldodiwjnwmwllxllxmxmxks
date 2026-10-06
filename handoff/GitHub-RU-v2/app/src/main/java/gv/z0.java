@@ -5,17 +5,17 @@ import m10.wr;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 {
-    public final int a;
-    public final int b;
-    public final a1 c;
-    public final w0 d;
-    public final List e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final wr i;
-    public final String j;
-    public final String k;
+    public int a;
+    public int b;
+    public a1 c;
+    public w0 d;
+    public List e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public wr i;
+    public String j;
+    public String k;
 
     public z0(int i, int i2, a1 a1Var, w0 w0Var, List list, boolean z, boolean z2, boolean z3, wr wrVar, String str, String str2) {
         this.a = i;

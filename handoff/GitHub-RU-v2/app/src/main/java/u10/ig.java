@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ig {
-    public final String a;
-    public final ZonedDateTime b;
-    public final eg c;
-    public final fg d;
-    public final String e;
+    public String a;
+    public ZonedDateTime b;
+    public eg c;
+    public fg d;
+    public String e;
 
     public ig(String str, ZonedDateTime zonedDateTime, eg egVar, fg fgVar, String str2) {
         this.a = str;

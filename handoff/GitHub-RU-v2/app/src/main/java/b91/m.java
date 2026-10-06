@@ -5,7 +5,7 @@ import javax.net.ssl.SSLSocket;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m implements n {
-    public final l a;
+    public l a;
     public n b;
 
     public m(l lVar) {

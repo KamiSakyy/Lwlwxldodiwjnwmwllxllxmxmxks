@@ -75,4 +75,5 @@ final class c extends c71.j implements j71.e {
         this.w = 2;
         obj = gVar.n(obj, this.y, uVar, this);
     }
+    public Object v(Object) { return null; }
 }

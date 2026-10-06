@@ -6,10 +6,10 @@ import com.github.service.license.LicenseTemplate;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LicenseTemplate f20397a;
+    public LicenseTemplate f20397a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f20398b;
+    public boolean f20398b;
 
     public b(LicenseTemplate licenseTemplate, boolean z10) {
         this.f20397a = licenseTemplate;

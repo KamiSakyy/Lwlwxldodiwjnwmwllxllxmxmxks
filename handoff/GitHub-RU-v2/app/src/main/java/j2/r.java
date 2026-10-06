@@ -4,23 +4,23 @@ package j2;
 public final class r extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f26925c;
+    public float f26925c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f26926d;
+    public float f26926d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final float f26927e;
+    public float f26927e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final boolean f26928f;
+    public boolean f26928f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final boolean f26929g;
+    public boolean f26929g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final float f26930h;
-    public final float i;
+    public float f26930h;
+    public float i;
 
     public r(float f6, float f10, float f11, boolean z10, boolean z11, float f12, float f13) {
         super(3);

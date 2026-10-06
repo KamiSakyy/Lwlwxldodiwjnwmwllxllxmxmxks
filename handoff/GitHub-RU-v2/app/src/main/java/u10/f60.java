@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f60 {
-    public final String a;
-    public final String b;
-    public final u60.a c;
+    public String a;
+    public String b;
+    public u60.a c;
 
     public f60(String str, String str2, u60.a aVar) {
         this.a = str;

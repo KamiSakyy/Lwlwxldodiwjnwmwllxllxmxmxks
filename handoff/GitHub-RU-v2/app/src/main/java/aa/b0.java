@@ -8,19 +8,19 @@ import java.util.Map;
 public final class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f610a;
+    public String f610a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f611b;
+    public List f611b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f612c;
+    public List f612c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Map f613d;
+    public Map f613d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final Map f614e;
+    public Map f614e;
 
     public b0(String str, List list, List list2, Map map, LinkedHashMap linkedHashMap) {
         this.f610a = str;

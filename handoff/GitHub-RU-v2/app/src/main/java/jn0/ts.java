@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ts {
-    public final String a;
-    public final String b;
-    public final is c;
+    public String a;
+    public String b;
+    public is c;
 
     public ts(String str, String str2, is isVar) {
         k71.k.g(str, "__typename");

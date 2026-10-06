@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nj0 {
-    public final m10.ry a;
-    public final m10.py b;
-    public final boolean c;
+    public m10.ry a;
+    public m10.py b;
+    public boolean c;
 
     public nj0(m10.ry ryVar, m10.py pyVar, boolean z) {
         this.a = ryVar;

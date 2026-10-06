@@ -17,13 +17,13 @@ import x61.r;
 public final class PostMessageInput {
     public static final Companion Companion = new Companion();
     public static final h[] h;
-    public final String a;
-    public final String b;
-    public final List c;
-    public final boolean d;
-    public final String e;
-    public final String f;
-    public final List g;
+    public String a;
+    public String b;
+    public List c;
+    public boolean d;
+    public String e;
+    public String f;
+    public List g;
 
     public static final class Companion {
         public final KSerializer serializer() {

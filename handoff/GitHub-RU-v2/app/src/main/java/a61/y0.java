@@ -5,9 +5,9 @@ import java.util.UUID;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y0 {
-    public final g1 a;
-    public final h1 b;
-    public final String c;
+    public g1 a;
+    public h1 b;
+    public String c;
     public int d;
     public q0 e;
 

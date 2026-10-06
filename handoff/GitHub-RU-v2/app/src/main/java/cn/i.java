@@ -2,8 +2,8 @@ package cn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public final String a;
-    public final h b;
+    public String a;
+    public h b;
 
     public i(String str, h hVar) {
         k71.k.g(str, "cacheKey");

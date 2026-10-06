@@ -7,7 +7,7 @@ import sun.misc.Unsafe;
 public abstract class h1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Unsafe f2723a;
+    public Unsafe f2723a;
 
     public h1(Unsafe unsafe) {
         this.f2723a = unsafe;

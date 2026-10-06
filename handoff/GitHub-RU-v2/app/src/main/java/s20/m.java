@@ -11,7 +11,7 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m implements n0 {
     public static final i Companion = new i();
-    public final String r;
+    public String r;
 
     public m(String str) {
         this.r = str;

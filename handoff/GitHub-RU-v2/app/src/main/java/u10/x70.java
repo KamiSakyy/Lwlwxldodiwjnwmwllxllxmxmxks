@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x70 implements aaShadow.n0 {
     public static final t70 Companion = new t70();
-    public final hc0.tx r;
+    public hc0.tx r;
 
     public x70(hc0.tx txVar) {
         this.r = txVar;

@@ -5,9 +5,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final String a;
-    public final String b;
-    public final qg0.a c;
+    public String a;
+    public String b;
+    public qg0.a c;
 
     public b(String str, String str2, qg0.a aVar) {
         this.a = str;
@@ -36,4 +36,6 @@ public final class b {
         o.append(")");
         return o.toString();
     }
+    public Object c(Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
 }

@@ -4,8 +4,8 @@ import java.io.IOException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class x extends q81.c0 {
-    public final q81.c0 s;
-    public final h91.e0 t;
+    public q81.c0 s;
+    public h91.e0 t;
     public IOException u;
 
     public x(q81.c0 c0Var) {

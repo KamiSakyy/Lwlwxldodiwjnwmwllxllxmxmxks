@@ -2,10 +2,10 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l0 {
-    public final String a;
-    public final n0 b;
-    public final h0 c;
-    public final wc0.v d;
+    public String a;
+    public n0 b;
+    public h0 c;
+    public wc0.v d;
 
     public l0(String str, n0 n0Var, h0 h0Var, wc0.v vVar) {
         this.a = str;

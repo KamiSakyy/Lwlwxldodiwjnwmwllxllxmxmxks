@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kn {
-    public final String a;
-    public final jn b;
-    public final gn0.bk c;
-    public final ArrayList d;
-    public final String e;
+    public String a;
+    public jn b;
+    public gn0.bk c;
+    public ArrayList d;
+    public String e;
 
     public kn(String str, jn jnVar, gn0.bk bkVar, ArrayList arrayList, String str2) {
         this.a = str;

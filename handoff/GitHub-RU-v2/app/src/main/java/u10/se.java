@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class se implements aaShadow.n0 {
     public static final pe Companion = new pe();
-    public final String r;
+    public String r;
 
     public se(String str) {
         k71.k.g(str, "userId");

@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
-    public final j71.a b;
+    public String a;
+    public j71.a b;
 
     public g(String str, j71.a aVar) {
         k.g(str, "label");

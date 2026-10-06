@@ -2,11 +2,11 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e7 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final z6 c;
-    public final s0 d;
-    public final r6 e;
+    public String a;
+    public String b;
+    public z6 c;
+    public s0 d;
+    public r6 e;
 
     public e7(String str, String str2, z6 z6Var, s0 s0Var, r6 r6Var) {
         this.a = str;

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wd {
-    public final String a;
-    public final String b;
-    public final z70.w0 c;
+    public String a;
+    public String b;
+    public z70.w0 c;
 
     public wd(String str, String str2, z70.w0 w0Var) {
         this.a = str;

@@ -4,13 +4,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dq {
-    public final String a;
-    public final String b;
-    public final wp c;
-    public final ZonedDateTime d;
-    public final ZonedDateTime e;
-    public final String f;
-    public final qh0.a g;
+    public String a;
+    public String b;
+    public wp c;
+    public ZonedDateTime d;
+    public ZonedDateTime e;
+    public String f;
+    public qh0.a g;
 
     public dq(String str, String str2, wp wpVar, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str3, qh0.a aVar) {
         this.a = str;

@@ -4,8 +4,8 @@ import uu0.i6;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q0 {
-    public final String a;
-    public final i6 b;
+    public String a;
+    public i6 b;
 
     public q0(String str, i6 i6Var) {
         this.a = str;

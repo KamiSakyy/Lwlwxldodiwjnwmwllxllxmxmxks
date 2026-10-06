@@ -26,10 +26,10 @@ public abstract class CommitsType implements Parcelable {
     public static final class Commits extends CommitsType {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f9155s;
+        public String f9155s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f9156t;
+        public String f9156t;
         public static final Companion Companion = new Companion();
         public static final Parcelable.Creator<Commits> CREATOR = new a();
 
@@ -109,13 +109,13 @@ public abstract class CommitsType implements Parcelable {
     public static final class Deeplink extends CommitsType {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f9157s;
+        public String f9157s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f9158t;
+        public String f9158t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final int f9159u;
+        public int f9159u;
         public static final Companion Companion = new Companion();
         public static final Parcelable.Creator<Deeplink> CREATOR = new a();
 
@@ -193,16 +193,16 @@ public abstract class CommitsType implements Parcelable {
     public static final class History extends CommitsType {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f9160s;
+        public String f9160s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f9161t;
+        public String f9161t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final String f9162u;
+        public String f9162u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f9163v;
+        public String f9163v;
         public static final Companion Companion = new Companion();
         public static final Parcelable.Creator<History> CREATOR = new a();
 
@@ -285,16 +285,16 @@ public abstract class CommitsType implements Parcelable {
     public static final class RefComparison extends CommitsType {
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f9164s;
+        public String f9164s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f9165t;
+        public String f9165t;
 
         /* renamed from: u, reason: collision with root package name */
-        public final String f9166u;
+        public String f9166u;
 
         /* renamed from: v, reason: collision with root package name */
-        public final String f9167v;
+        public String f9167v;
         public static final Companion Companion = new Companion();
         public static final Parcelable.Creator<RefComparison> CREATOR = new a();
 

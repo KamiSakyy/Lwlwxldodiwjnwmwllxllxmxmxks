@@ -7,12 +7,12 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements h0 {
-    public final String a;
-    public final g b;
-    public final String c;
-    public final int d;
-    public final String e;
-    public final boolean f;
+    public String a;
+    public g b;
+    public String c;
+    public int d;
+    public String e;
+    public boolean f;
 
     public h(String str, g gVar, String str2, int i, String str3, boolean z) {
         this.a = str;

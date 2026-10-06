@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class am {
-    public final String a;
-    public final String b;
-    public final bm c;
+    public String a;
+    public String b;
+    public bm c;
 
     public am(String str, String str2, bm bmVar) {
         k71.k.g(str, "__typename");

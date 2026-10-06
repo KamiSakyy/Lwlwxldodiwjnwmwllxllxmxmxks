@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vs {
-    public final us a;
-    public final List b;
+    public us a;
+    public List b;
 
     public vs(us usVar, List list) {
         this.a = usVar;

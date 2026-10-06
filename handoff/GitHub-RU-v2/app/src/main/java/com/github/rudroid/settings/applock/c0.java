@@ -54,4 +54,5 @@ public abstract class c0 extends k.i implements o61.b {
     public final Object w() {
         return Y().w();
     }
+    public Object C(Object) { return null; }
 }

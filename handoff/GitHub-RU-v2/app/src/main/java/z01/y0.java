@@ -2,7 +2,7 @@ package z01;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y0 implements a1 {
-    public final String a;
+    public String a;
 
     public y0(String str) {
         this.a = str;

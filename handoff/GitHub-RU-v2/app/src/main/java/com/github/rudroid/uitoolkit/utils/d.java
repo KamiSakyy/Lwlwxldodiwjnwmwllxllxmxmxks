@@ -11,4 +11,7 @@ public final class d {
     public Object f(Object p1, Object p2, Object p3) { return null; }
     public Object g(Object p1) { return null; }
     public Object k() { return null; }
+    public Object a(int, int, Object, Object) { return null; }
+    public Object b(Object, int, int) { return null; }
+    public Object g(Object) { return null; }
 }

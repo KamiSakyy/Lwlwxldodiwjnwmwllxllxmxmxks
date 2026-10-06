@@ -2,14 +2,14 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x7 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final w7 d;
-    public final boolean e;
-    public final boolean f;
-    public final u7 g;
-    public final nv.a h;
+    public String a;
+    public String b;
+    public boolean c;
+    public w7 d;
+    public boolean e;
+    public boolean f;
+    public u7 g;
+    public nv.a h;
 
     public x7(String str, String str2, boolean z, w7 w7Var, boolean z2, boolean z3, u7 u7Var, nv.a aVar) {
         this.a = str;

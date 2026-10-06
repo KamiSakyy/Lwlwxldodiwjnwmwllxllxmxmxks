@@ -5,11 +5,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final int a;
-    public final String b;
-    public final d c;
-    public final String d;
-    public final String e;
+    public int a;
+    public String b;
+    public d c;
+    public String d;
+    public String e;
 
     public b(int i, String str, d dVar, String str2, String str3) {
         this.a = i;

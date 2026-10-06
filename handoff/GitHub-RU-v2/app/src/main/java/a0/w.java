@@ -4,22 +4,22 @@ package a0;
 public final class w implements a0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f281a;
+    public float f281a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f282b;
+    public float f282b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f283c;
+    public float f283c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f284d;
+    public float f284d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final float f285e;
+    public float f285e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final float f286f;
+    public float f286f;
 
     public w(float f6, float f10, float f11, float f12) {
         int i;

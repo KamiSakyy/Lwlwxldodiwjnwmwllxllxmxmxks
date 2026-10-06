@@ -2,7 +2,7 @@ package ay0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e0 {
-    public final Double a;
+    public Double a;
 
     public e0(Double d) {
         this.a = d;

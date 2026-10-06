@@ -14,9 +14,9 @@ import kotlinx.serialization.KSerializer;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RepositoryDiscussionsIntentData$OrganizationDeeplink implements j {
-    public final String r;
-    public final String s;
-    public final String t;
+    public String r;
+    public String s;
+    public String t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryDiscussionsIntentData$OrganizationDeeplink> CREATOR = new m(23);
 

@@ -7,17 +7,17 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final String a;
-    public final a b;
-    public final Avatar c;
-    public final Integer d;
-    public final Object e;
-    public final x01.i f;
-    public final boolean g;
-    public final boolean h;
-    public final String i;
-    public final String j;
-    public final String k;
+    public String a;
+    public a b;
+    public Avatar c;
+    public Integer d;
+    public Object e;
+    public x01.i f;
+    public boolean g;
+    public boolean h;
+    public String i;
+    public String j;
+    public String k;
 
     public d(String str, a aVar, Avatar avatar, Integer num, List list, x01.i iVar, boolean z, boolean z2, String str2, String str3, String str4) {
         this.a = str;

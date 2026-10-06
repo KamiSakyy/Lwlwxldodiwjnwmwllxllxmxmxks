@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ux {
-    public final int a;
-    public final tx b;
-    public final List c;
+    public int a;
+    public tx b;
+    public List c;
 
     public ux(int i, tx txVar, List list) {
         this.a = i;

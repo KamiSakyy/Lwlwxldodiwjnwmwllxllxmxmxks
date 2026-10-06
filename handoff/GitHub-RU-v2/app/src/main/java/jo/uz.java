@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uz implements aaShadow.v0 {
-    public final zz a;
-    public final String b;
-    public final String c;
+    public zz a;
+    public String b;
+    public String c;
 
     public uz(zz zzVar, String str, String str2) {
         this.a = zzVar;

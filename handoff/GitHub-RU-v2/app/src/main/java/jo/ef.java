@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ef {
-    public final String a;
-    public final ss.a b;
+    public String a;
+    public ss.a b;
 
     public ef(String str, ss.a aVar) {
         this.a = str;

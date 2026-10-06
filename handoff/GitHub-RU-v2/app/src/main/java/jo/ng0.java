@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ng0 implements aaShadow.m0 {
-    public final pg0 a;
+    public pg0 a;
 
     public ng0(pg0 pg0Var) {
         this.a = pg0Var;

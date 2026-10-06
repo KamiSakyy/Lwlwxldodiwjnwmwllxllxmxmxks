@@ -11,4 +11,6 @@ class b implements g.b {
     public final void a(d.j jVar) {
         this.a.Z();
     }
+    public Object y(Object, Object) { return null; }
+    public Object y(Object, Object) { return null; }
 }

@@ -13,7 +13,7 @@ import sy.d0;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j0 f16513a;
+    public j0 f16513a;
 
     public n(j0 j0Var) {
         k71.k.g(j0Var, "projectFieldValueParser");

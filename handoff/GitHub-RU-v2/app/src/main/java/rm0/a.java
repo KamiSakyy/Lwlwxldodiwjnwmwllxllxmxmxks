@@ -63,8 +63,8 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements z01.a, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final v71.v t;
+    public com.github.service.wrapper.j s;
+    public v71.v t;
 
     public a(com.github.service.wrapper.j jVar, v71.v vVar, int i) {
         this.r = i;
@@ -2158,6 +2158,10 @@ public final class a implements z01.a, yb0, mi0, y90, yf0 {
         int i = this.r;
         return this;
     }
-    public Object f0(Object p1) { return null; }
+    public static Object f0(Object p1) { return null; }
     public static final Object b = null;
+    public Object C(Object) { return null; }
+    public Object G(Object) { return null; }
+    public Object I(Object) { return null; }
+    public Object d(Object) { return null; }
 }

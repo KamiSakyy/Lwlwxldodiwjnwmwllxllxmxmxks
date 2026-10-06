@@ -7,16 +7,16 @@ import java.io.Closeable;
 public final class o extends y {
 
     /* renamed from: r, reason: collision with root package name */
-    public final h91.a0 f26112r;
+    public h91.a0 f26112r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final h91.o f26113s;
+    public h91.o f26113s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f26114t;
+    public String f26114t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final Closeable f26115u;
+    public Closeable f26115u;
 
     /* renamed from: v, reason: collision with root package name */
     public boolean f26116v;

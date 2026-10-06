@@ -6,9 +6,9 @@ import uu0.d6;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public final String a;
-    public final String b;
-    public final d6 c;
+    public String a;
+    public String b;
+    public d6 c;
 
     public o0(String str, String str2, d6 d6Var) {
         this.a = str;

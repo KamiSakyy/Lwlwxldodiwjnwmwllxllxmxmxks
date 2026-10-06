@@ -13,10 +13,10 @@ public final class s extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
     public static final /* synthetic */ int f4231x = 0;
 
     /* renamed from: v, reason: collision with root package name */
-    public final com.github.rudroid.interfaces.r f4232v;
+    public com.github.rudroid.interfaces.r f4232v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final a f4233w;
+    public a f4233w;
 
     public interface a {
         void D2(String str, String str2, String str3, String str4);
@@ -58,4 +58,24 @@ public final class s extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
         ((w5) fVar2).N.setContent(new r1.d(new r(this, gVar, fVar, 0), true, 1042615786));
     }
 
+    public Object N() { return null; }
+    public Object S(int, boolean) { return null; }
+    public Object V() { return null; }
+    public Object c0(int) { return null; }
+    public Object d(int) { return null; }
+    public Object e0(int) { return null; }
+    public Object f(Object) { return null; }
+    public Object f(Object) { return null; }
+    public Object g0() { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object h(Object) { return null; }
+    public Object k(Object) { return null; }
+    public Object l() { return null; }
+    public Object n0(Object) { return null; }
+    public Object q(boolean) { return null; }
+    public Object q0() { return null; }
+    public Object t() { return null; }
 }

@@ -204,6 +204,6 @@ public final class e implements aa.a {
         f4.C(cVar.g, bVar2, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, cVar.h);
     }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

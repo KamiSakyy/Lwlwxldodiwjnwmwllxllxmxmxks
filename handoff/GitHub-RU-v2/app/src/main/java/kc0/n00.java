@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n00 implements aaShadow.n0 {
     public static final k00 Companion = new k00();
-    public final String r;
-    public final ArrayList s;
+    public String r;
+    public ArrayList s;
 
     public n00(String str, ArrayList arrayList) {
         k71.k.g(str, "assignableId");

@@ -11,4 +11,5 @@ public final class j implements y71.j {
     public Object f(Object p1) { return null; }
     public Object h(Object p1) { return null; }
     public Object i(Object p1) { return null; }
+    public Object h(long) { return null; }
 }

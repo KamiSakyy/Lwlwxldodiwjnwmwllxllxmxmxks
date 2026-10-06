@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wm {
-    public final String a;
-    public final String b;
-    public final ym c;
-    public final zm d;
-    public final xm e;
+    public String a;
+    public String b;
+    public ym c;
+    public zm d;
+    public xm e;
 
     public wm(String str, String str2, ym ymVar, zm zmVar, xm xmVar) {
         k71.k.g(str, "__typename");

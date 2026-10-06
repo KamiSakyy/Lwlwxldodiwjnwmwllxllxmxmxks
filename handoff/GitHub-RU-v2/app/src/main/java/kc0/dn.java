@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dn {
-    public final bn a;
-    public final String b;
-    public final String c;
+    public bn a;
+    public String b;
+    public String c;
 
     public dn(bn bnVar, String str, String str2) {
         this.a = bnVar;

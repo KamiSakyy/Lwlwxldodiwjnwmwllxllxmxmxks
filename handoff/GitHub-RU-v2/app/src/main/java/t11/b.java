@@ -2,9 +2,9 @@ package t11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final long a;
-    public final m11.j b;
-    public final m11.i c;
+    public long a;
+    public m11.j b;
+    public m11.i c;
 
     public b(long j, m11.j jVar, m11.i iVar) {
         this.a = j;

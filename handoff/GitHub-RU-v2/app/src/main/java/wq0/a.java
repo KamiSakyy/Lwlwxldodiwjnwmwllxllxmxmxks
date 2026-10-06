@@ -8,12 +8,12 @@ import pz0.t9;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public final t9 a;
-    public final String b;
-    public final Integer c;
-    public final Integer d;
-    public final String e;
-    public final boolean f;
+    public t9 a;
+    public String b;
+    public Integer c;
+    public Integer d;
+    public String e;
+    public boolean f;
 
     public a(t9 t9Var, String str, Integer num, Integer num2, String str2, boolean z) {
         this.a = t9Var;

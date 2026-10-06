@@ -2,10 +2,10 @@ package er;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final j1 d;
+    public String a;
+    public String b;
+    public String c;
+    public j1 d;
 
     public g1(String str, String str2, String str3, j1 j1Var) {
         this.a = str;

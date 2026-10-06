@@ -4,11 +4,11 @@ import m10.da0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 {
-    public final String a;
-    public final String b;
-    public final da0 c;
-    public final String d;
-    public final String e;
+    public String a;
+    public String b;
+    public da0 c;
+    public String d;
+    public String e;
 
     public q0(String str, String str2, da0 da0Var, String str3, String str4) {
         this.a = str;

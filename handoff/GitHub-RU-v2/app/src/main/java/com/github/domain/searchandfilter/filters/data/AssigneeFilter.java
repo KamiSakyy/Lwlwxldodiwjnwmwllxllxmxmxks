@@ -27,7 +27,7 @@ import x61.r;
 public final class AssigneeFilter extends d {
     public static final w61.h[] w;
     public static final t x;
-    public final List v;
+    public List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<AssigneeFilter> CREATOR = new a21.g(14);
 

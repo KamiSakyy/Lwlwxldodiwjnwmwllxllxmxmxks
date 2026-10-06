@@ -4,7 +4,7 @@ package s9;
 public final class a extends k41.b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f31765a;
+    public int f31765a;
 
     public a(int i) {
         this.f31765a = i;

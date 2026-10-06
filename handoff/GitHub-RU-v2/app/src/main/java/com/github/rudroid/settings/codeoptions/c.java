@@ -32,4 +32,5 @@ public final class c implements f {
         return false;
     }
     public Object v(Object p1) { return null; }
+    public Object v(Object) { return null; }
 }

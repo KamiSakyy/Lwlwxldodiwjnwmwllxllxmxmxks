@@ -24,7 +24,7 @@ public final class b {
     public boolean h;
     public q91.a i;
     public int k;
-    public final a l;
+    public a l;
     public CharSequence c = "";
     public final l1.b j = new l1.b();
 
@@ -185,4 +185,5 @@ public final class b {
         }
         throw new Error(str);
     }
+    public Object add(Object) { return null; }
 }

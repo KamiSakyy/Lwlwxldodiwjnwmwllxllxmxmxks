@@ -2,7 +2,7 @@ package vn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u {
-    public final int a;
+    public int a;
 
     public u(int i) {
         this.a = i;

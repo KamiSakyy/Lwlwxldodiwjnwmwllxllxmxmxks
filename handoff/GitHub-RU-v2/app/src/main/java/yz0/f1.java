@@ -4,12 +4,12 @@ import com.github.service.models.response.Entry$EntryType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f1 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final String d;
+    public String a;
+    public String b;
+    public int c;
+    public String d;
     public final Entry$EntryType e;
-    public final boolean f;
+    public boolean f;
 
     public f1(int i, String str, String str2, String str3) {
         Entry$EntryType entry$EntryType;

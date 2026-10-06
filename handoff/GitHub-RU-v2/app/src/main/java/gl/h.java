@@ -8,8 +8,8 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final x1 a;
-    public final l51.h b;
+    public x1 a;
+    public l51.h b;
 
     public h(x1 x1Var, l51.h hVar) {
         this.a = x1Var;

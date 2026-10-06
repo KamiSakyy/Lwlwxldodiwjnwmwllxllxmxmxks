@@ -2,15 +2,15 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zp {
-    public final String a;
-    public final String b;
-    public final pz0.kt c;
-    public final String d;
-    public final yp0.c e;
-    public final gu0.c f;
-    public final bw0.c g;
-    public final gt0.a h;
-    public final at0.a i;
+    public String a;
+    public String b;
+    public pz0.kt c;
+    public String d;
+    public yp0.c e;
+    public gu0.c f;
+    public bw0.c g;
+    public gt0.a h;
+    public at0.a i;
 
     public zp(String str, String str2, pz0.kt ktVar, String str3, yp0.c cVar, gu0.c cVar2, bw0.c cVar3, gt0.a aVar, at0.a aVar2) {
         this.a = str;

@@ -2,11 +2,11 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s4 extends o.b {
-    public final String t;
-    public final String u;
-    public final String v;
-    public final String w;
-    public final String x;
+    public String t;
+    public String u;
+    public String v;
+    public String w;
+    public String x;
 
     public s4(String str, String str2, String str3, String str4, String str5) {
         super(str, false);

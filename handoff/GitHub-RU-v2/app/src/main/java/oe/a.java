@@ -15,47 +15,47 @@ import yz0.d3;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class a implements v, k {
-    public final List A;
-    public final lg.b B;
-    public final int C;
-    public final IssueState D;
-    public final b0 E;
-    public final int F;
-    public final CloseReason G;
-    public final IssueType H;
-    public final p I;
-    public final String J;
-    public final z01.p K;
-    public final String L;
-    public final int M;
-    public final int N;
+    public List A;
+    public lg.b B;
+    public int C;
+    public IssueState D;
+    public b0 E;
+    public int F;
+    public CloseReason G;
+    public IssueType H;
+    public p I;
+    public String J;
+    public z01.p K;
+    public String L;
+    public int M;
+    public int N;
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f30156r;
+    public String f30156r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f30157s;
+    public String f30157s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final int f30158t;
+    public int f30158t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final boolean f30159u;
+    public boolean f30159u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final ZonedDateTime f30160v;
+    public ZonedDateTime f30160v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final d3 f30161w;
+    public d3 f30161w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final boolean f30162x;
+    public boolean f30162x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f30163y;
+    public String f30163y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final String f30164z;
+    public String f30164z;
 
     public /* synthetic */ a(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, boolean z11, String str3, String str4, List list, lg.b bVar, int i10, IssueState issueState, b0 b0Var, int i11, CloseReason closeReason, IssueType issueType, p pVar, String str5, z01.p pVar2, String str6, int i12) {
         this(str, str2, i, z10, zonedDateTime, d3Var, z11, str3, str4, list, bVar, i10, issueState, b0Var, i11, closeReason, (i12 & 65536) != 0 ? null : issueType, (i12 & 131072) != 0 ? null : pVar, (i12 & 262144) != 0 ? null : str5, (i12 & 524288) != 0 ? null : pVar2, str6, 4, 4);

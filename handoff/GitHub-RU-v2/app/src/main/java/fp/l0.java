@@ -2,9 +2,9 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 {
-    public final String a;
-    public final String b;
-    public final hp.y c;
+    public String a;
+    public String b;
+    public hp.y c;
 
     public l0(String str, String str2, hp.y yVar) {
         this.a = str;
@@ -33,5 +33,5 @@ public final class l0 {
         o.append(")");
         return o.toString();
     }
-    public Object Q(Object p1) { return null; }
+    public w0 Q(Object p1) { return null; }
 }

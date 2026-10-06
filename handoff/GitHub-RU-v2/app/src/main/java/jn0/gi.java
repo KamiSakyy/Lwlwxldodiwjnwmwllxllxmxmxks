@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gi implements aaShadow.v0 {
-    public final hi a;
-    public final String b;
-    public final String c;
+    public hi a;
+    public String b;
+    public String c;
 
     public gi(hi hiVar, String str, String str2) {
         this.a = hiVar;

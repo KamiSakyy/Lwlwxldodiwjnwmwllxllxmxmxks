@@ -10,20 +10,20 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final ZonedDateTime h;
-    public final g i;
-    public final c40.c j;
-    public final g70.a k;
-    public final y60.a l;
-    public final d1 m;
-    public final i80.c n;
+    public String a;
+    public String b;
+    public String c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public ZonedDateTime h;
+    public g i;
+    public c40.c j;
+    public g70.a k;
+    public y60.a l;
+    public d1 m;
+    public i80.c n;
 
     public h(String str, String str2, String str3, boolean z, boolean z2, boolean z3, boolean z4, ZonedDateTime zonedDateTime, g gVar, c40.c cVar, g70.a aVar, y60.a aVar2, d1 d1Var, i80.c cVar2) {
         this.a = str;

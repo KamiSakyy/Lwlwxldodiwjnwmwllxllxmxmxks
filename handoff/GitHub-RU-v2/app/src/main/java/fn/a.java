@@ -6,8 +6,8 @@ import oa.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final j a;
-    public final b b;
+    public j a;
+    public b b;
 
     public a(j jVar, b bVar) {
         k.g(jVar, "user");

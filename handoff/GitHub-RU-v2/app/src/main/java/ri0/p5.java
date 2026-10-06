@@ -2,9 +2,9 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p5 {
-    public final Integer a;
-    public final boolean b;
-    public final boolean c;
+    public Integer a;
+    public boolean b;
+    public boolean c;
 
     public p5(Integer num, boolean z, boolean z2) {
         this.a = num;

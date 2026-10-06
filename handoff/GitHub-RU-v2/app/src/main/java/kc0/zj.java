@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zj {
-    public final String a;
-    public final gh0.d b;
+    public String a;
+    public gh0.d b;
 
     public zj(String str, gh0.d dVar) {
         this.a = str;

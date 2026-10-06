@@ -9,7 +9,7 @@ public final class je {
     public static final je t;
     public static final /* synthetic */ je[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         je jeVar = new je("ASSIGNED", 0, "ASSIGNED");

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sm implements aaShadow.v0 {
-    public final um a;
+    public um a;
 
     public sm(um umVar) {
         this.a = umVar;

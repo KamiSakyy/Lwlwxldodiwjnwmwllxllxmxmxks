@@ -94,10 +94,10 @@ import z01.r1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w implements r1, yf0, yb0, y90 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
-    public final v71.v u;
-    public final Object v;
+    public com.github.service.wrapper.j s;
+    public com.github.service.wrapper.b t;
+    public v71.v u;
+    public Object v;
 
     public w(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;

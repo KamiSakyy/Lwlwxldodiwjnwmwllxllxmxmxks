@@ -5,10 +5,10 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public final d a;
-    public final String b;
-    public final boolean c;
-    public final boolean d;
+    public d a;
+    public String b;
+    public boolean c;
+    public boolean d;
 
     public a(d dVar, String str, boolean z, boolean z2) {
         this.a = dVar;

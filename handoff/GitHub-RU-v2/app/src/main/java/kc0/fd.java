@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fd {
-    public final String a;
-    public final gd b;
+    public String a;
+    public gd b;
 
     public fd(String str, gd gdVar) {
         this.a = str;

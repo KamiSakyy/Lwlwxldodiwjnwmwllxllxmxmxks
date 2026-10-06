@@ -4,13 +4,13 @@ import com.github.service.models.response.fileschanged.CommentLevelType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g4 {
-    public final boolean a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final boolean e;
-    public final boolean f;
-    public final CommentLevelType g;
+    public boolean a;
+    public String b;
+    public String c;
+    public String d;
+    public boolean e;
+    public boolean f;
+    public CommentLevelType g;
 
     public g4(boolean z, String str, String str2, String str3, boolean z2, boolean z3, CommentLevelType commentLevelType) {
         k71.k.g(commentLevelType, "commentLevelType");

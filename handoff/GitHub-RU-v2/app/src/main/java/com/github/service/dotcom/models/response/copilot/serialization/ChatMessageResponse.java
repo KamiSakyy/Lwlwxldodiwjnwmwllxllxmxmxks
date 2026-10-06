@@ -16,16 +16,16 @@ import x61.r;
 public final class ChatMessageResponse {
     public static final Companion Companion = new Companion();
     public static final h[] k;
-    public final String a;
-    public final String b;
-    public final String c;
-    public final hz.h d;
-    public final List e;
-    public final ChatMessageAnnotationsResponse f;
-    public final String g;
-    public final List h;
-    public final List i;
-    public final List j;
+    public String a;
+    public String b;
+    public String c;
+    public hz.h d;
+    public List e;
+    public ChatMessageAnnotationsResponse f;
+    public String g;
+    public List h;
+    public List i;
+    public List j;
 
     public static final class Companion {
         public final KSerializer serializer() {

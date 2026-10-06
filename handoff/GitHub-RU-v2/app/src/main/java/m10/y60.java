@@ -54,7 +54,7 @@ public final class y60 {
     public static final y60 x;
     public static final y60 y;
     public static final y60 z;
-    public final String r;
+    public String r;
 
     static {
         y60 y60Var = new y60("ALERT", 0, "ALERT");

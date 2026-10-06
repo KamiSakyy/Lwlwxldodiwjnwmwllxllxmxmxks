@@ -7,7 +7,7 @@ import android.content.Context;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final d f27810a;
+    public d f27810a;
 
     public a(Context context) {
         this.f27810a = new d(context, (short) 0);

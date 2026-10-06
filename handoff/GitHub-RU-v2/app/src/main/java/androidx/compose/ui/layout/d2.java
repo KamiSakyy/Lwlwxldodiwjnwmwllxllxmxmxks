@@ -4,13 +4,13 @@ package androidx.compose.ui.layout;
 public final class d2 implements c2 {
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f1942b;
+    public String f1942b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final p f1943c;
+    public p f1943c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final p f1944d;
+    public p f1944d;
 
     public d2(String str) {
         this.f1942b = str;

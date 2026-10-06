@@ -9,7 +9,7 @@ import x61.h;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g extends h implements Serializable {
     public static final g s;
-    public final e r;
+    public e r;
 
     static {
         e eVar = e.E;

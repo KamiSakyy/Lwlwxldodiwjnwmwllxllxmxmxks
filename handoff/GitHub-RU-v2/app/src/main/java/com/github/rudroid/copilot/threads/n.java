@@ -7,10 +7,10 @@ import java.util.List;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public final l.a f10040a;
+    public l.a f10040a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f10041b;
+    public List f10041b;
 
     public n(l.a aVar, List list) {
         k71.k.g(aVar, "dateGroup");

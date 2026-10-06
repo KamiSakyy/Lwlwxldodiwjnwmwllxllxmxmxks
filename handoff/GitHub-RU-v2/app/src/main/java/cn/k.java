@@ -5,9 +5,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public final String a;
-    public final h01.q b;
-    public final Object c;
+    public String a;
+    public h01.q b;
+    public Object c;
     public final /* synthetic */ s d;
 
     public k(s sVar, String str, h01.q qVar, List list) {

@@ -7,36 +7,36 @@ import java.util.UUID;
 public final class k0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final UUID f32802a;
+    public UUID f32802a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j0 f32803b;
+    public j0 f32803b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final HashSet f32804c;
+    public HashSet f32804c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final i f32805d;
+    public i f32805d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final i f32806e;
+    public i f32806e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final int f32807f;
+    public int f32807f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final int f32808g;
+    public int f32808g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final f f32809h;
-    public final long i;
+    public f f32809h;
+    public long i;
 
     /* renamed from: j, reason: collision with root package name */
-    public final i0 f32810j;
+    public i0 f32810j;
 
     /* renamed from: k, reason: collision with root package name */
-    public final long f32811k;
-    public final int l;
+    public long f32811k;
+    public int l;
 
     public k0(UUID uuid, j0 j0Var, HashSet hashSet, i iVar, i iVar2, int i, int i10, f fVar, long j10, i0 i0Var, long j11, int i11) {
         k71.k.g(iVar, "outputData");

@@ -2,8 +2,8 @@ package ey;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p {
-    public final String a;
-    public final xx.a b;
+    public String a;
+    public xx.a b;
 
     public p(String str, xx.a aVar) {
         this.a = str;

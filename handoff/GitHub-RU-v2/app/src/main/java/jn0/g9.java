@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g9 implements aaShadow.m0 {
-    public final h9 a;
+    public h9 a;
 
     public g9(h9 h9Var) {
         this.a = h9Var;

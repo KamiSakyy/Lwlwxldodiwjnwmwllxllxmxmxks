@@ -10,10 +10,10 @@ import sy.d0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class UiStateRecyclerView extends RecyclerView {
     public vf.a c1;
-    public final com.github.rudroid.views.listemptystate.e d1;
+    public com.github.rudroid.views.listemptystate.e d1;
     public i e1;
-    public final p81.a f1;
-    public final p81.a g1;
+    public p81.a f1;
+    public p81.a g1;
     public l7.c h1;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

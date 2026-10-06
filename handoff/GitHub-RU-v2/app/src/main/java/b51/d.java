@@ -61,10 +61,10 @@ import y41.z0;
 public final class d {
     public Object a;
     public Object b;
-    public final Object c;
-    public final Object d;
-    public final Object e;
-    public final Object f;
+    public Object c;
+    public Object d;
+    public Object e;
+    public Object f;
     public Object g;
 
     public d() {

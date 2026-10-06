@@ -8,7 +8,7 @@ import sy.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a implements a71.c, d, Serializable {
-    public final a71.c r;
+    public a71.c r;
 
     public a(a71.c cVar) {
         this.r = cVar;

@@ -8,25 +8,25 @@ public final class zb extends androidx.lifecycle.k1 {
     public static final a Companion = new a();
 
     /* renamed from: s, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f12054s;
+    public com.github.rudroid.activities.util.c f12054s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final ik.r f12055t;
+    public ik.r f12055t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final ik.p f12056u;
+    public ik.p f12056u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final y71.y1 f12057v;
+    public y71.y1 f12057v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final y71.i1 f12058w;
+    public y71.i1 f12058w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final y71.y1 f12059x;
+    public y71.y1 f12059x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final y71.i1 f12060y;
+    public y71.i1 f12060y;
 
     public static final class a {
         public static void a(Bundle bundle, String str, String str2, String str3, String str4) {

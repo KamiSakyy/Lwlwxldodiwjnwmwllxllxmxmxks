@@ -6,16 +6,16 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final q0 a;
-    public final q0 b;
-    public final q0 c;
-    public final q0 d;
-    public final q0 e;
-    public final q0 f;
-    public final q0 g;
-    public final q0 h;
-    public final q0 i;
-    public final q0 j;
+    public q0 a;
+    public q0 b;
+    public q0 c;
+    public q0 d;
+    public q0 e;
+    public q0 f;
+    public q0 g;
+    public q0 h;
+    public q0 i;
+    public q0 j;
 
     public h(q0 q0Var, q0 q0Var2, q0 q0Var3, q0 q0Var4, q0 q0Var5, q0 q0Var6, q0 q0Var7, q0 q0Var8, q0 q0Var9, q0 q0Var10) {
         this.a = q0Var;

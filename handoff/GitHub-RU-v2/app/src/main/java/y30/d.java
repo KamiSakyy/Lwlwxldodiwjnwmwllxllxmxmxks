@@ -4,7 +4,7 @@ import hc0.p2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final p2 a;
+    public p2 a;
 
     public d(p2 p2Var) {
         this.a = p2Var;

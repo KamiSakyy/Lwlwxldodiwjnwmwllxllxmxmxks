@@ -9,18 +9,18 @@ import m10.rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements h0 {
-    public final String a;
-    public final String b;
-    public final ZonedDateTime c;
-    public final boolean d;
-    public final String e;
-    public final rz f;
-    public final a g;
-    public final ZonedDateTime h;
-    public final b i;
-    public final ar.c j;
-    public final pv.c k;
-    public final pu.a l;
+    public String a;
+    public String b;
+    public ZonedDateTime c;
+    public boolean d;
+    public String e;
+    public rz f;
+    public a g;
+    public ZonedDateTime h;
+    public b i;
+    public ar.c j;
+    public pv.c k;
+    public pu.a l;
 
     public c(String str, String str2, ZonedDateTime zonedDateTime, boolean z, String str3, rz rzVar, a aVar, ZonedDateTime zonedDateTime2, b bVar, ar.c cVar, pv.c cVar2, pu.a aVar2) {
         this.a = str;

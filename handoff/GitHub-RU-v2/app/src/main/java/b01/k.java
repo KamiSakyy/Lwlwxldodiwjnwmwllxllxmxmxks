@@ -7,12 +7,12 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final int d;
-    public final boolean e;
-    public final List f;
+    public String a;
+    public String b;
+    public boolean c;
+    public int d;
+    public boolean e;
+    public List f;
 
     public k(String str, String str2, boolean z, int i, boolean z2, List list) {
         k71.k.g(str, "id");

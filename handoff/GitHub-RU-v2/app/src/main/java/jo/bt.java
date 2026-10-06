@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bt {
-    public final gt a;
-    public final String b;
-    public final String c;
+    public gt a;
+    public String b;
+    public String c;
 
     public bt(gt gtVar, String str, String str2) {
         this.a = gtVar;

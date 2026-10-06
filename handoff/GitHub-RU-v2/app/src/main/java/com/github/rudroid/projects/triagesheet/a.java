@@ -16,13 +16,13 @@ public interface a extends Parcelable {
         public static final Parcelable.Creator<C0056a> CREATOR = new C0057a();
 
         /* renamed from: r, reason: collision with root package name */
-        public final int f17983r;
+        public int f17983r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f17984s;
+        public String f17984s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f17985t;
+        public String f17985t;
 
         /* renamed from: com.github.rudroid.projects.triagesheet.a$a$a, reason: collision with other inner class name */
         public static final class C0057a implements Parcelable.Creator<C0056a> {
@@ -102,13 +102,13 @@ public interface a extends Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new C0058a();
 
         /* renamed from: r, reason: collision with root package name */
-        public final int f17986r;
+        public int f17986r;
 
         /* renamed from: s, reason: collision with root package name */
-        public final String f17987s;
+        public String f17987s;
 
         /* renamed from: t, reason: collision with root package name */
-        public final String f17988t;
+        public String f17988t;
 
         /* renamed from: com.github.rudroid.projects.triagesheet.a$b$a, reason: collision with other inner class name */
         public static final class C0058a implements Parcelable.Creator<b> {

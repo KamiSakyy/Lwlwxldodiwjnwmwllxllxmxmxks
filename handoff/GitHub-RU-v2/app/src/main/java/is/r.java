@@ -2,10 +2,10 @@ package is;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final o c;
-    public final pv.c d;
+    public String a;
+    public String b;
+    public o c;
+    public pv.c d;
 
     public r(String str, String str2, o oVar, pv.c cVar) {
         this.a = str;

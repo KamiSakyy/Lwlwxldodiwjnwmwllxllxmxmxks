@@ -9,7 +9,7 @@ public final class xd {
     public static final xd t;
     public static final /* synthetic */ xd[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         xd xdVar = new xd("OFF_TOPIC", 0, "OFF_TOPIC");

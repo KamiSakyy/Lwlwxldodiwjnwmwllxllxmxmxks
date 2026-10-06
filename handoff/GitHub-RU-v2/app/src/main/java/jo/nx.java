@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nx {
-    public final rx a;
-    public final List b;
+    public rx a;
+    public List b;
 
     public nx(rx rxVar, List list) {
         this.a = rxVar;

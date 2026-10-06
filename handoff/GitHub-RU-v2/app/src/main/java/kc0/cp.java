@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cp {
-    public final hp a;
-    public final String b;
-    public final String c;
+    public hp a;
+    public String b;
+    public String c;
 
     public cp(hp hpVar, String str, String str2) {
         this.a = hpVar;

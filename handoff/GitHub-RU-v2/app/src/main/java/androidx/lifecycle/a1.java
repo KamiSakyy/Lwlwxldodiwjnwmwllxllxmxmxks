@@ -9,10 +9,10 @@ import y71.y1;
 public final class a1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final LinkedHashMap f2820a;
+    public LinkedHashMap f2820a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final l1 f2821b;
+    public l1 f2821b;
 
     public a1(y61.e eVar) {
         this.f2820a = new LinkedHashMap();

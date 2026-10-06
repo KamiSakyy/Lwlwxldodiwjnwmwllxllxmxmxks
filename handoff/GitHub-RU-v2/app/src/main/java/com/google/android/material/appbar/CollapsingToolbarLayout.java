@@ -39,21 +39,21 @@ import z21.f;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class CollapsingToolbarLayout extends FrameLayout {
     public int A;
-    public final Rect B;
-    public final o31.d C;
-    public final o31.d D;
-    public final m31.a E;
+    public Rect B;
+    public o31.d C;
+    public o31.d D;
+    public m31.a E;
     public boolean F;
     public boolean G;
-    public final int H;
+    public int H;
     public Drawable I;
     public Drawable J;
     public int K;
     public boolean L;
     public ValueAnimator M;
     public long N;
-    public final TimeInterpolator O;
-    public final TimeInterpolator P;
+    public TimeInterpolator O;
+    public TimeInterpolator P;
     public int Q;
     public e R;
     public int S;
@@ -67,7 +67,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
     public boolean d0;
     public int e0;
     public boolean r;
-    public final int s;
+    public int s;
     public ViewGroup t;
     public View u;
     public View v;

@@ -9,7 +9,7 @@ import x61.m;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements e {
-    public final j a;
+    public j a;
 
     public g(j jVar) {
         k71.k.g(jVar, "repositoryLastVisitedUseCase");

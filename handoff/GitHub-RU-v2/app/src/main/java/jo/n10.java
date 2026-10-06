@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n10Shadow {
-    public final String a;
-    public final m10 b;
-    public final g10 c;
-    public final List d;
-    public final String e;
+    public String a;
+    public m10 b;
+    public g10 c;
+    public List d;
+    public String e;
 
     public n10(String str, m10 m10Var, g10 g10Var, List list, String str2) {
         this.a = str;

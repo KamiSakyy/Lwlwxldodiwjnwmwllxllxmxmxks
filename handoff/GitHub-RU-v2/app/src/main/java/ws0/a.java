@@ -9,12 +9,12 @@ import pz0.cj;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final cj d;
-    public final double e;
-    public final ZonedDateTime f;
+    public String a;
+    public String b;
+    public String c;
+    public cj d;
+    public double e;
+    public ZonedDateTime f;
 
     public a(String str, String str2, String str3, cj cjVar, double d, ZonedDateTime zonedDateTime) {
         this.a = str;

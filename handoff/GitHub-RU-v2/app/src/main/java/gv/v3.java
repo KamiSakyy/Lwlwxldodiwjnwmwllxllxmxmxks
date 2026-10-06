@@ -2,10 +2,10 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v3 {
-    public final String a;
-    public final String b;
-    public final u3 c;
-    public final String d;
+    public String a;
+    public String b;
+    public u3 c;
+    public String d;
 
     public v3(String str, String str2, u3 u3Var, String str3) {
         this.a = str;

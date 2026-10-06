@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class re {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
+    public String a;
+    public boolean b;
+    public boolean c;
 
     public re(String str, boolean z, boolean z2) {
         this.a = str;

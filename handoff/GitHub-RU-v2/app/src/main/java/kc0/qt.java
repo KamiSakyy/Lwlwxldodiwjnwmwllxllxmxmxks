@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qt {
-    public final String a;
-    public final pt b;
-    public final ot c;
-    public final String d;
+    public String a;
+    public pt b;
+    public ot c;
+    public String d;
 
     public qt(String str, pt ptVar, ot otVar, String str2) {
         this.a = str;

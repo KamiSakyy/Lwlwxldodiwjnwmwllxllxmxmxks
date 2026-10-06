@@ -7,10 +7,10 @@ import java.util.Objects;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Resources f30958a;
+    public Resources f30958a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Resources.Theme f30959b;
+    public Resources.Theme f30959b;
 
     public j(Resources resources, Resources.Theme theme) {
         this.f30958a = resources;

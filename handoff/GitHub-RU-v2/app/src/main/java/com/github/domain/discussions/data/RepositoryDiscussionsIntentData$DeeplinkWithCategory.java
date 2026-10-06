@@ -14,10 +14,10 @@ import x.i;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RepositoryDiscussionsIntentData$DeeplinkWithCategory implements j {
-    public final String r;
-    public final String s;
-    public final String t;
-    public final String u;
+    public String r;
+    public String s;
+    public String t;
+    public String u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryDiscussionsIntentData$DeeplinkWithCategory> CREATOR = new m(22);
 

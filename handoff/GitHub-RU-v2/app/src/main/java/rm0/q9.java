@@ -48,8 +48,8 @@ import u10.zy;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q9 implements z01.j1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.j s;
-    public final v71.v t;
+    public com.github.service.wrapper.j s;
+    public v71.v t;
 
     public q9(com.github.service.wrapper.j jVar, v71.v vVar, int i) {
         this.r = i;

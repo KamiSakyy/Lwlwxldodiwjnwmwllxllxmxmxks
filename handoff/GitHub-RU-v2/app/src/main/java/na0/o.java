@@ -4,9 +4,9 @@ import z70.t1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public final String a;
-    public final w50.e0 b;
-    public final t1 c;
+    public String a;
+    public w50.e0 b;
+    public t1 c;
 
     public o(String str, w50.e0 e0Var, t1 t1Var) {
         k71.k.g(str, "__typename");

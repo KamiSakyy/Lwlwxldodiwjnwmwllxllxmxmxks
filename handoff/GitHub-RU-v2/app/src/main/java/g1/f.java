@@ -6,10 +6,10 @@ import k71.k;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final o8.a f24456a;
+    public o8.a f24456a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final e f24457b;
+    public e f24457b;
 
     public f(o8.a aVar, e eVar) {
         this.f24456a = aVar;

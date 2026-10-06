@@ -4,14 +4,14 @@ import hc0.fm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t1 implements aa.h0 {
-    public final String a;
-    public final fm b;
-    public final String c;
-    public final String d;
-    public final int e;
-    public final boolean f;
-    public final s1 g;
-    public final String h;
+    public String a;
+    public fm b;
+    public String c;
+    public String d;
+    public int e;
+    public boolean f;
+    public s1 g;
+    public String h;
 
     public t1(String str, fm fmVar, String str2, String str3, int i, boolean z, s1 s1Var, String str4) {
         this.a = str;

@@ -7,8 +7,8 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s implements aa.w0 {
     public static final o Companion = new o();
-    public final String r;
-    public final aa1.b s;
+    public String r;
+    public aa1.b s;
 
     public s(String str, aa1.b bVar) {
         k71.k.g(str, "orgLogin");

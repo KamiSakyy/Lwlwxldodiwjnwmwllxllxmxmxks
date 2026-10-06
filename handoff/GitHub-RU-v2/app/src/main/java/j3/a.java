@@ -10,7 +10,7 @@ public final class a extends MetricAffectingSpan {
     public final /* synthetic */ int f26971r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final float f26972s;
+    public float f26972s;
 
     public /* synthetic */ a(int i, float f6) {
         this.f26971r = i;

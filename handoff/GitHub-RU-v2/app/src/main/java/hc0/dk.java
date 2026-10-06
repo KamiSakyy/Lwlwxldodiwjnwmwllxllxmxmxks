@@ -9,7 +9,7 @@ public final class dk {
     public static final dk t;
     public static final /* synthetic */ dk[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         dk dkVar = new dk("CLOSED", 0, "CLOSED");

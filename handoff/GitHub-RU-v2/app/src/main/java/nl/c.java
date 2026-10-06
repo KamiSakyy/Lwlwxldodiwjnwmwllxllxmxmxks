@@ -5,8 +5,8 @@ import z01.c1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public final d a;
-    public final sk.b b;
+    public d a;
+    public sk.b b;
 
     public c(d dVar, sk.b bVar) {
         k71.k.g(dVar, "createBranchUseCase");

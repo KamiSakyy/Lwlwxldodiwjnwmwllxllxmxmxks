@@ -2,13 +2,13 @@ package ea0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final boolean c;
-    public final String d;
-    public final y0 e;
-    public final String f;
-    public final String g;
+    public String a;
+    public String b;
+    public boolean c;
+    public String d;
+    public y0 e;
+    public String f;
+    public String g;
 
     public z0(String str, String str2, boolean z, String str3, y0 y0Var, String str4, String str5) {
         this.a = str;

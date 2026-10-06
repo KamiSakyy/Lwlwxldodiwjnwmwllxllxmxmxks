@@ -2,9 +2,9 @@ package j11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final Object a;
-    public final d b;
-    public final b c;
+    public Object a;
+    public d b;
+    public b c;
 
     public a(Object obj, d dVar, b bVar) {
         this.a = obj;

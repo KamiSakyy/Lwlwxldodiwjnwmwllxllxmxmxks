@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ka {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final ga d;
-    public final String e;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public ga d;
+    public String e;
 
     public ka(String str, boolean z, boolean z2, ga gaVar, String str2) {
         this.a = str;

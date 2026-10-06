@@ -9,8 +9,8 @@ import x9.c;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements ThreadFactory {
     public final /* synthetic */ int a;
-    public final ThreadFactory b;
-    public final Serializable c;
+    public ThreadFactory b;
+    public Serializable c;
 
     public a(String str) {
         this.a = 0;

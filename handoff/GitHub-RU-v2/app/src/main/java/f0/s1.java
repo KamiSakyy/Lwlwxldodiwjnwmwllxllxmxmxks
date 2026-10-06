@@ -6,7 +6,7 @@ import android.widget.Magnifier;
 public class s1 implements q1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Magnifier f22366a;
+    public Magnifier f22366a;
 
     public s1(Magnifier magnifier) {
         this.f22366a = magnifier;

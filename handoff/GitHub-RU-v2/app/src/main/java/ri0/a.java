@@ -4,7 +4,7 @@ import gn0.bm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final bm a;
+    public bm a;
 
     public a(bm bmVar) {
         this.a = bmVar;

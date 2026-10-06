@@ -11,7 +11,7 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements w0 {
     public static final a Companion = new a();
-    public final String r;
+    public String r;
 
     public j(String str) {
         k71.k.g(str, "nodeId");

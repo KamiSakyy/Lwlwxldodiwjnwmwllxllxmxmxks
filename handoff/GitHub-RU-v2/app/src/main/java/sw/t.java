@@ -8,15 +8,15 @@ import m10.y70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t implements aa.h0 {
-    public final s60 a;
-    public final y60 b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final s f;
-    public final y70 g;
-    public final ArrayList h;
-    public final String i;
+    public s60 a;
+    public y60 b;
+    public String c;
+    public String d;
+    public String e;
+    public s f;
+    public y70 g;
+    public ArrayList h;
+    public String i;
 
     public t(s60 s60Var, y60 y60Var, String str, String str2, String str3, s sVar, y70 y70Var, ArrayList arrayList, String str4) {
         this.a = s60Var;

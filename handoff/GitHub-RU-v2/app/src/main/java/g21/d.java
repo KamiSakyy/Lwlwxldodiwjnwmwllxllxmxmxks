@@ -10,4 +10,5 @@ public abstract class d {
         Pattern.compile("\\$\\{(.*?)\\}");
     }
     public Object d(Object p1, Object p2) { return null; }
+    public Object d(Object, int) { return null; }
 }

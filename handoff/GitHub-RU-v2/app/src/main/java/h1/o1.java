@@ -4,10 +4,10 @@ package h1;
 public final class o1 implements x0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final w1.i f25398a;
+    public w1.i f25398a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f25399b;
+    public int f25399b;
 
     public o1(w1.i iVar, int i) {
         this.f25398a = iVar;

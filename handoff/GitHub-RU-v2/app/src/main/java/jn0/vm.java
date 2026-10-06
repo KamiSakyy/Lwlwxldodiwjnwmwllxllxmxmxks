@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vm {
-    public final String a;
-    public final String b;
-    public final pz0.si c;
-    public final boolean d;
-    public final tm e;
-    public final um f;
+    public String a;
+    public String b;
+    public pz0.si c;
+    public boolean d;
+    public tm e;
+    public um f;
 
     public vm(String str, String str2, pz0.si siVar, boolean z, tm tmVar, um umVar) {
         this.a = str;

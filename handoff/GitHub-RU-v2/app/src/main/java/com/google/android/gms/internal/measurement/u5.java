@@ -4,7 +4,7 @@ import java.nio.charset.Charset;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u5 {
-    public final t a;
+    public t a;
 
     public u5(r6 r6Var, r6 r6Var2) {
         this.a = new t(r6Var, r6Var2);

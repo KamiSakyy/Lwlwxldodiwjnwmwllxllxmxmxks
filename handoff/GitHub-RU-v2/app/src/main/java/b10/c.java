@@ -18,8 +18,8 @@ import y71.n1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements b11.a, mi0, y90, yf0, yb0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
-    public final v t;
+    public com.github.service.wrapper.b s;
+    public v t;
 
     public c(com.github.service.wrapper.b bVar, v vVar, int i) {
         this.r = i;

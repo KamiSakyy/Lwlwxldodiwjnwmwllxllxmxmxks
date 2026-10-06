@@ -8,19 +8,19 @@ import yz0.c2;
 public final class q0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final c2 f15363a;
+    public c2 f15363a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f15364b;
+    public String f15364b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f15365c;
+    public String f15365c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final p01.b f15366d;
+    public p01.b f15366d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final boolean f15367e;
+    public boolean f15367e;
 
     public q0(c2 c2Var, String str, String str2, p01.b bVar, boolean z10) {
         this.f15363a = c2Var;

@@ -11,7 +11,7 @@ import java.util.function.UnaryOperator;
 public final class l extends i implements List, l71.a {
 
     /* renamed from: u, reason: collision with root package name */
-    public final List f27683u;
+    public List f27683u;
 
     public l(List list) {
         this.f27683u = list;

@@ -6,4 +6,5 @@ package v8;
  */
 public interface c {
     public Object v(Object p1) { return null; }
+    public Object v(Object) { return null; }
 }

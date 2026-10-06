@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ny implements aaShadow.m0 {
-    public final oy a;
+    public oy a;
 
     public ny(oy oyVar) {
         this.a = oyVar;

@@ -5,8 +5,8 @@ import java.util.concurrent.ExecutionException;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements e, d, b {
     public final Object r = new Object();
-    public final int s;
-    public final o t;
+    public int s;
+    public o t;
     public int u;
     public int v;
     public int w;

@@ -9,10 +9,10 @@ import java.util.ArrayList;
 public final class s extends SpannableStringBuilder {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Class f32244r;
+    public Class f32244r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final ArrayList f32245s;
+    public ArrayList f32245s;
 
     public s(Class cls, CharSequence charSequence) {
         super(charSequence);

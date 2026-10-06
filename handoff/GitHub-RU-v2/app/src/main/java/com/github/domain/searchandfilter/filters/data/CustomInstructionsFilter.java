@@ -15,7 +15,7 @@ import w80.w3;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CustomInstructionsFilter extends d {
-    public final AgentAssignment v;
+    public AgentAssignment v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<CustomInstructionsFilter> CREATOR = new a21.g(17);
     public static final w61.h[] w = {w.s(w61.i.r, new c2(22)), null, null};

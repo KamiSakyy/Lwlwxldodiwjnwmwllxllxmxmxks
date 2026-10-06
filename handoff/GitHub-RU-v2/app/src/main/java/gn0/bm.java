@@ -12,7 +12,7 @@ public final class bm {
     public static final bm w;
     public static final /* synthetic */ bm[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         bm bmVar = new bm("MERGE", 0, "MERGE");

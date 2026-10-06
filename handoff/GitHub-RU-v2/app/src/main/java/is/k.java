@@ -5,13 +5,13 @@ import m10.zd;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements aa.h0 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final ZonedDateTime e;
-    public final zd f;
-    public final String g;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public ZonedDateTime e;
+    public zd f;
+    public String g;
 
     public k(String str, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, zd zdVar, String str2) {
         this.a = str;

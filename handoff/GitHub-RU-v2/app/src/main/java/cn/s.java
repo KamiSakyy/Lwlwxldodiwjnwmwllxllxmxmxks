@@ -17,13 +17,13 @@ import yz0.s7;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
     public static final j Companion = new j();
-    public final z a;
-    public final v b;
-    public final com.github.rudroid.common.e c;
-    public final m1 d;
-    public final ConcurrentHashMap e;
-    public final LinkedHashMap f;
-    public final CopyOnWriteArrayList g;
+    public z a;
+    public v b;
+    public com.github.rudroid.common.e c;
+    public m1 d;
+    public ConcurrentHashMap e;
+    public LinkedHashMap f;
+    public CopyOnWriteArrayList g;
 
     public s(z zVar, v vVar, qe.a aVar) {
         k71.k.g(zVar, "applicationScope");
@@ -171,5 +171,5 @@ public final class s {
         c(str);
         return kVar;
     }
-    public Object d(Object p1) { return null; }
+    public static Object d(Object p1) { return null; }
 }

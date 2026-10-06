@@ -2,10 +2,10 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e3 implements aa.h0 {
-    public final String a;
-    public final int b;
-    public final d3 c;
-    public final String d;
+    public String a;
+    public int b;
+    public d3 c;
+    public String d;
 
     public e3(String str, int i, d3 d3Var, String str2) {
         this.a = str;

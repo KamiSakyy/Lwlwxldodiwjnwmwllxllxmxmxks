@@ -18,11 +18,11 @@ import yz0.f8;
 public final class ListSelectionBottomSheet extends Hilt_ListSelectionBottomSheet implements com.github.rudroid.fragments.util.f {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] X0;
-    public final l1 S0;
-    public final l1 T0;
-    public final w61.p U0;
+    public l1 S0;
+    public l1 T0;
+    public w61.p U0;
     public androidx.fragment.app.t V0;
-    public final com.github.rudroid.fragments.util.c W0;
+    public com.github.rudroid.fragments.util.c W0;
 
     public static final class a {
         public static ListSelectionBottomSheet a(String str, String str2, String str3) {

@@ -11,7 +11,7 @@ public final class PullRequestReviewEvent {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PullRequestReviewEvent[] $VALUES;
     public static final q Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PullRequestReviewEvent COMMENT = new PullRequestReviewEvent("COMMENT", 0, "COMMENT");
     public static final PullRequestReviewEvent APPROVE = new PullRequestReviewEvent("APPROVE", 1, "APPROVE");
     public static final PullRequestReviewEvent REQUEST_CHANGES = new PullRequestReviewEvent("REQUEST_CHANGES", 2, "REQUEST_CHANGES");

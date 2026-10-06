@@ -5,10 +5,10 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y7 {
-    public final com.github.rudroid.utilities.ui.g1 a;
-    public final boolean b;
-    public final Set c;
-    public final Set d;
+    public com.github.rudroid.utilities.ui.g1 a;
+    public boolean b;
+    public Set c;
+    public Set d;
 
     public y7(com.github.rudroid.utilities.ui.g1 g1Var, boolean z, Set set, Set set2) {
         this.a = g1Var;

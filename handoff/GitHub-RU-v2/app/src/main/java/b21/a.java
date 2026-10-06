@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final int a;
-    public final b1.m b;
-    public final c21.m c;
-    public final String d;
+    public int a;
+    public b1.m b;
+    public c21.m c;
+    public String d;
 
     public a(b1.m mVar, c21.m mVar2, String str) {
         this.b = mVar;

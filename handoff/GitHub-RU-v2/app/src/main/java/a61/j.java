@@ -12,7 +12,7 @@ public enum j implements k51.f {
     /* JADX INFO: Fake field, exist only in values array */
     EF51(5);
 
-    public final int r;
+    public int r;
 
     j(int i) {
         this.r = i;
@@ -24,4 +24,5 @@ public enum j implements k51.f {
     }
     public Object k(Object p1) { return null; }
     public Object s(Object p1, Object p2) { return null; }
+    public Object s(Object, Object) { return null; }
 }

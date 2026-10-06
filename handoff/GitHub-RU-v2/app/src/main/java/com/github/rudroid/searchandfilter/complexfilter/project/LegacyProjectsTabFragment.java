@@ -54,7 +54,7 @@ public final class LegacyProjectsTabFragment extends Hilt_LegacyProjectsTabFragm
     }
 
     public static abstract class c {
-        public final int a;
+        public int a;
 
         public static final class a extends c {
             public static final a b = new a(2131954231);

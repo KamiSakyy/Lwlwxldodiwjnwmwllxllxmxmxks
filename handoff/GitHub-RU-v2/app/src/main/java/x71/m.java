@@ -2,7 +2,7 @@ package x71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m extends n {
-    public final Throwable a;
+    public Throwable a;
 
     public m(Throwable th) {
         this.a = th;

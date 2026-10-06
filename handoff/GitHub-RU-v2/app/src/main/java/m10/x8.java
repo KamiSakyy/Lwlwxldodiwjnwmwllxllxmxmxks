@@ -2,11 +2,11 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x8 {
-    public final g6 a;
-    public final aa1.b b;
-    public final String c;
-    public final aa1.b d;
-    public final f6 e;
+    public g6 a;
+    public aa1.b b;
+    public String c;
+    public aa1.b d;
+    public f6 e;
 
     public x8(g6 g6Var, String str, aa.u0 u0Var, f6 f6Var) {
         k71.k.g(str, "expectedHeadOid");

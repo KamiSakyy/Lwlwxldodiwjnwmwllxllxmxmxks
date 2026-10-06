@@ -2,11 +2,11 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j4 {
-    public final String a;
-    public final o4 b;
-    public final n4 c;
-    public final p4 d;
-    public final q4 e;
+    public String a;
+    public o4 b;
+    public n4 c;
+    public p4 d;
+    public q4 e;
 
     public j4(String str, o4 o4Var, n4 n4Var, p4 p4Var, q4 q4Var) {
         k71.k.g(str, "__typename");

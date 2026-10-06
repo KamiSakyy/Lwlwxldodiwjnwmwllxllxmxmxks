@@ -8,5 +8,5 @@ public final class m0 {
 
     public static final class b {
     }
-    public Object s(Object p1, Object p2) { return null; }
+    public static Object s(Object p1, Object p2) { return null; }
 }

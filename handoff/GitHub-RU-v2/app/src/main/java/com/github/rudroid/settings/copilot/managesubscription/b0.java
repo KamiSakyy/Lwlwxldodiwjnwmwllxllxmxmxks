@@ -11,11 +11,11 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 extends k1 {
-    public final com.github.rudroid.activities.util.c s;
-    public final nj.d0 t;
-    public final com.github.rudroid.copilot.inapppurchase.usecases.f0 u;
-    public final y1 v;
-    public final i1 w;
+    public com.github.rudroid.activities.util.c s;
+    public nj.d0 t;
+    public com.github.rudroid.copilot.inapppurchase.usecases.f0 u;
+    public y1 v;
+    public i1 w;
     public q1 x;
 
     public b0(com.github.rudroid.activities.util.c cVar, nj.d0 d0Var, com.github.rudroid.copilot.inapppurchase.usecases.f0 f0Var) {

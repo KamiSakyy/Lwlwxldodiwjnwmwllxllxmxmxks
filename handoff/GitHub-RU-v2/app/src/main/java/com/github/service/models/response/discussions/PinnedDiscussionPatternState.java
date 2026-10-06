@@ -11,7 +11,7 @@ public final class PinnedDiscussionPatternState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PinnedDiscussionPatternState[] $VALUES;
     public static final q Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final PinnedDiscussionPatternState DOT_FILL = new PinnedDiscussionPatternState("DOT_FILL", 0, "DOT_FILL");
     public static final PinnedDiscussionPatternState PLUS = new PinnedDiscussionPatternState("PLUS", 1, "PLUS");
     public static final PinnedDiscussionPatternState ZAP = new PinnedDiscussionPatternState("ZAP", 2, "ZAP");

@@ -2,18 +2,18 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lo {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final gn0.dn d;
-    public final ro e;
-    public final String f;
-    public final gn0.lm g;
-    public final se0.c h;
-    public final aj0.c i;
-    public final sk0.c j;
-    public final yh0.a k;
-    public final qh0.a l;
+    public String a;
+    public String b;
+    public String c;
+    public gn0.dn d;
+    public ro e;
+    public String f;
+    public gn0.lm g;
+    public se0.c h;
+    public aj0.c i;
+    public sk0.c j;
+    public yh0.a k;
+    public qh0.a l;
 
     public lo(String str, String str2, String str3, gn0.dn dnVar, ro roVar, String str4, gn0.lm lmVar, se0.c cVar, aj0.c cVar2, sk0.c cVar3, yh0.a aVar, qh0.a aVar2) {
         this.a = str;

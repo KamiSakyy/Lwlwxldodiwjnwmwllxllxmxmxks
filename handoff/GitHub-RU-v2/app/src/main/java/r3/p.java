@@ -7,10 +7,10 @@ public final class p {
     public static final p f31135c = new p(1.0f, 0.0f);
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f31136a;
+    public float f31136a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f31137b;
+    public float f31137b;
 
     public p(float f6, float f10) {
         this.f31136a = f6;

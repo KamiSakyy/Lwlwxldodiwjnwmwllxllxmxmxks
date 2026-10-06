@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dc {
-    public final ac a;
-    public final ec b;
+    public ac a;
+    public ec b;
 
     public dc(ac acVar, ec ecVar) {
         this.a = acVar;

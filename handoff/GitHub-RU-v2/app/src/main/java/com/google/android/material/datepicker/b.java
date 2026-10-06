@@ -9,13 +9,13 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new c0(13);
-    public final m r;
-    public final m s;
-    public final d t;
-    public final m u;
-    public final int v;
-    public final int w;
-    public final int x;
+    public m r;
+    public m s;
+    public d t;
+    public m u;
+    public int v;
+    public int w;
+    public int x;
 
     public b(m mVar, m mVar2, d dVar, m mVar3, int i) {
         Objects.requireNonNull(mVar, "start cannot be null");

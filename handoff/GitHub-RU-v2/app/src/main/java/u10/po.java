@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class po {
-    public final mo a;
-    public final String b;
-    public final String c;
+    public mo a;
+    public String b;
+    public String c;
 
     public po(mo moVar, String str, String str2) {
         this.a = moVar;

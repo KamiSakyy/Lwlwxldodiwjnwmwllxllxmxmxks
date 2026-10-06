@@ -2,9 +2,9 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v0 {
-    public final int a;
-    public final int b;
-    public final u0 c;
+    public int a;
+    public int b;
+    public u0 c;
 
     public v0(int i, int i2, u0 u0Var) {
         this.a = i;

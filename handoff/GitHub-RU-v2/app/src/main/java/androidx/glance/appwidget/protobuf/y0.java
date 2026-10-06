@@ -4,16 +4,16 @@ package androidx.glance.appwidget.protobuf;
 public final class y0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final a f2809a;
+    public a f2809a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f2810b;
+    public String f2810b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Object[] f2811c;
+    public Object[] f2811c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f2812d;
+    public int f2812d;
 
     public y0(a aVar, String str, Object[] objArr) {
         this.f2809a = aVar;

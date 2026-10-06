@@ -6,10 +6,10 @@ import java.util.List;
 public final class q<V> {
 
     /* renamed from: a, reason: collision with root package name */
-    public final List f18078a;
+    public List f18078a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f18079b;
+    public List f18079b;
 
     public q(List list, List list2) {
         k71.k.g(list, "selected");

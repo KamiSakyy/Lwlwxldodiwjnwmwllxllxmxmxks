@@ -71,4 +71,7 @@ public interface b extends a {
     Object p(i0 i0Var, h0 h0Var, String str, a71.c cVar);
     public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9) { return null; }
     public Object t(Object p1, Object p2) { return null; }
+    public Object b(Object, Object, Object, boolean, Object, Object, Object, Object, int) { return null; }
+    public Object t(Object, Object) { return null; }
+    public Object u(Object, Object, Object, Object) { return null; }
 }

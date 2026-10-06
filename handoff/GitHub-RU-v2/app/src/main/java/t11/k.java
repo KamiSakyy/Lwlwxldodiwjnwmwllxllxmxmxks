@@ -11,7 +11,7 @@ public final class k extends SQLiteOpenHelper {
     public static final String t = "INSERT INTO global_log_event_state VALUES (" + System.currentTimeMillis() + ")";
     public static final int u = 7;
     public static final List v = Arrays.asList(new j(0), new j(1), new j(2), new j(3), new j(4), new j(5), new j(6));
-    public final int r;
+    public int r;
     public boolean s;
 
     public k(int i, Context context, String str) {

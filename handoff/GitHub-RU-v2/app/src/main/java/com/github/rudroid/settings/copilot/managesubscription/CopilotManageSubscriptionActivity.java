@@ -12,7 +12,7 @@ public final class CopilotManageSubscriptionActivity extends i0 {
     public static final a Companion = new a();
     public x0 t0;
     public h.g u0;
-    public final l1 v0;
+    public l1 v0;
 
     public static final class a {
     }

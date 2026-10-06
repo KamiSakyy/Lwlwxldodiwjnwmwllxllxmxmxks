@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public final Context f29455a;
+    public Context f29455a;
 
     /* renamed from: e, reason: collision with root package name */
     public CharSequence f29459e;
@@ -49,13 +49,13 @@ public final class p {
     public String f29471t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final boolean f29472u;
+    public boolean f29472u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final Notification f29473v;
+    public Notification f29473v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final ArrayList f29474w;
+    public ArrayList f29474w;
 
     /* renamed from: b, reason: collision with root package name */
     public final ArrayList f29456b = new ArrayList();

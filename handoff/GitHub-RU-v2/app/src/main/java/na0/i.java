@@ -5,9 +5,9 @@ import w80.l2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public final String a;
-    public final String b;
-    public final l2 c;
+    public String a;
+    public String b;
+    public l2 c;
 
     public i(String str, String str2, l2 l2Var) {
         this.a = str;

@@ -15,7 +15,7 @@ public final class e1 {
     public static final e1 x;
     public static final e1 y;
     public static final e1 z;
-    public final String r;
+    public String r;
 
     static {
         e1 e1Var = new e1("NO_ACCESS", 0, "NO_ACCESS");

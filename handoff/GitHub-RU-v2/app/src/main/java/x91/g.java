@@ -8,8 +8,8 @@ import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends v {
-    public final List u;
-    public final int v;
+    public List u;
+    public int v;
     public final /* synthetic */ c w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

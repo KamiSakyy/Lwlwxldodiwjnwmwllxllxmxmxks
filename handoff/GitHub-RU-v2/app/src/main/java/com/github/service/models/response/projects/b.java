@@ -12,9 +12,9 @@ import l01.m;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements d0, Parcelable {
     public static final b u;
-    public final String r;
+    public String r;
     public final ProjectFieldOption$SingleOption s;
-    public final String t;
+    public String t;
     public static final m Companion = new m();
     public static final Parcelable.Creator<b> CREATOR = new c(8);
 

@@ -14,10 +14,10 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new c0(6);
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f30440r;
+    public String f30440r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Map f30441s;
+    public Map f30441s;
 
     public a(String str, Map map) {
         this.f30440r = str;

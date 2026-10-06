@@ -2,9 +2,9 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements aa.v0 {
-    public final c a;
-    public final String b;
-    public final String c;
+    public c a;
+    public String b;
+    public String c;
 
     public b(c cVar, String str, String str2) {
         this.a = cVar;
@@ -36,4 +36,5 @@ public final class b implements aa.v0 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+    public Object e(Object, Object, Object) { return null; }
 }

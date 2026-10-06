@@ -4,7 +4,7 @@ package w8;
 public final class w extends x {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f33437a;
+    public int f33437a;
 
     public w(int i) {
         this.f33437a = i;

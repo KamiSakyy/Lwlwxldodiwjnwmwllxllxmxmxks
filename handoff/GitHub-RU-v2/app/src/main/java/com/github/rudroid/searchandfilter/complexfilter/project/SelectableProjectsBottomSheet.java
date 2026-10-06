@@ -16,12 +16,12 @@ import y71.n1;
 public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjectsBottomSheet {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] e1;
-    public final l1 Y0;
-    public final l1 Z0;
-    public final com.github.rudroid.fragments.util.c a1;
-    public final w61.p b1;
-    public final int c1;
-    public final int d1;
+    public l1 Y0;
+    public l1 Z0;
+    public com.github.rudroid.fragments.util.c a1;
+    public w61.p b1;
+    public int c1;
+    public int d1;
 
     public static final class a {
     }

@@ -29,15 +29,15 @@ import yz0.y;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n extends k1 {
-    public final y00.l A;
-    public final an.f s;
-    public final an.k t;
-    public final an.j u;
-    public final an.c v;
-    public final an.e w;
-    public final com.github.rudroid.activities.util.c x;
-    public final y1 y;
-    public final LinkedHashMap z;
+    public y00.l A;
+    public an.f s;
+    public an.k t;
+    public an.j u;
+    public an.c v;
+    public an.e w;
+    public com.github.rudroid.activities.util.c x;
+    public y1 y;
+    public LinkedHashMap z;
 
     public n(an.f fVar, an.k kVar, an.j jVar, an.c cVar, an.e eVar, com.github.rudroid.activities.util.c cVar2) {
         k71.k.g(fVar, "checkIssueBodyTaskUseCase");

@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AtomicBoolean f30361a;
+    public AtomicBoolean f30361a;
 
     public a(boolean z10) {
         this.f30361a = new AtomicBoolean(z10);

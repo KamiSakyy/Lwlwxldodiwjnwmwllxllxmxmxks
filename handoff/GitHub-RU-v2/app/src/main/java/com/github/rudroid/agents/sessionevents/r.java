@@ -8,16 +8,16 @@ public abstract class r {
     public static final class a extends r {
 
         /* renamed from: a, reason: collision with root package name */
-        public final xn.i3 f7794a;
+        public xn.i3 f7794a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f7795b;
+        public boolean f7795b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final sy.s f7796c;
+        public sy.s f7796c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final boolean f7797d;
+        public boolean f7797d;
 
         public a(xn.i3 i3Var, boolean z10, sy.s sVar, boolean z11) {
             this.f7794a = i3Var;
@@ -51,7 +51,7 @@ public abstract class r {
     public static final class b extends r {
 
         /* renamed from: a, reason: collision with root package name */
-        public final xn.i3 f7798a;
+        public xn.i3 f7798a;
 
         public b(xn.i3 i3Var) {
             this.f7798a = i3Var;
@@ -76,19 +76,19 @@ public abstract class r {
     public static final class c extends r {
 
         /* renamed from: a, reason: collision with root package name */
-        public final xn.i3 f7799a;
+        public xn.i3 f7799a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final String f7800b;
+        public String f7800b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final String f7801c;
+        public String f7801c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final boolean f7802d;
+        public boolean f7802d;
 
         /* renamed from: e, reason: collision with root package name */
-        public final String f7803e;
+        public String f7803e;
 
         public c(xn.i3 i3Var, String str, String str2, boolean z10, String str3) {
             k71.k.g(str, "messageId");
@@ -130,7 +130,7 @@ public abstract class r {
     public static final class d extends r {
 
         /* renamed from: a, reason: collision with root package name */
-        public final xn.i3 f7804a;
+        public xn.i3 f7804a;
 
         public d(xn.i3 i3Var) {
             this.f7804a = i3Var;
@@ -155,7 +155,7 @@ public abstract class r {
     public static final class e extends r {
 
         /* renamed from: a, reason: collision with root package name */
-        public final List f7805a;
+        public List f7805a;
 
         public e(List list) {
             k71.k.g(list, "toolCalls");

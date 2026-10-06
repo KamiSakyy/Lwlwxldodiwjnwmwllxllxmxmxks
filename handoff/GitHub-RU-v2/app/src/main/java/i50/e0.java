@@ -49,5 +49,5 @@ public final class e0 implements aa.a {
         List list = y.a;
         y.d(fVar, wVar, zVar.c);
     }
-    public Object values() { return null; }
+    public static Object values() { return null; }
 }

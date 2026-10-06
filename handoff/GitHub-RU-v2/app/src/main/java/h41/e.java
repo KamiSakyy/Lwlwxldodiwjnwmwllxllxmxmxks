@@ -2,7 +2,7 @@ package h41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class e implements Runnable {
-    public final w21.g r;
+    public w21.g r;
 
     public e() {
         this.r = null;

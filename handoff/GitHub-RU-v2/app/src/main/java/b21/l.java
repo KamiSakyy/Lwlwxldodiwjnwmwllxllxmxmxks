@@ -14,11 +14,11 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements c21.d {
     public boolean r;
-    public final Object s;
-    public final Object t;
-    public final Object u;
+    public Object s;
+    public Object t;
+    public Object u;
     public Object v;
-    public final Object w;
+    public Object w;
 
     public l(d dVar, a21.a aVar, a aVar2) {
         this.w = dVar;

@@ -2,7 +2,7 @@ package e50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 {
-    public final String a;
+    public String a;
 
     public g0(String str) {
         this.a = str;

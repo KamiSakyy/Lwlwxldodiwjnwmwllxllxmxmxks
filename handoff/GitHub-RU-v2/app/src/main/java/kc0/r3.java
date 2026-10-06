@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r3 {
-    public final String a;
-    public final String b;
-    public final String c;
+    public String a;
+    public String b;
+    public String c;
 
     public r3(String str, String str2, String str3) {
         this.a = str;

@@ -8,7 +8,7 @@ import x61.r;
 public final class b implements OnAccountsUpdateListener {
 
     /* renamed from: a, reason: collision with root package name */
-    public final fg.d f30101a;
+    public fg.d f30101a;
 
     public b(fg.d dVar) {
         this.f30101a = dVar;

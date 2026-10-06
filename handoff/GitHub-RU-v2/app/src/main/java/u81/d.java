@@ -8,4 +8,5 @@ public final class d {
     }
     public Object e() { return null; }
     public Object l(Object p1) { return null; }
+    public Object l(Object) { return null; }
 }

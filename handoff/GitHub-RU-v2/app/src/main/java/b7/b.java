@@ -11,10 +11,10 @@ import x6.l0;
 public final class b extends l0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Class f3747r;
+    public Class f3747r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Class f3748s;
+    public Class f3748s;
 
     public b(Class cls) {
         super(true);

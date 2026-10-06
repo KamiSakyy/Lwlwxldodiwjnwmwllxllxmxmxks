@@ -5,7 +5,7 @@ import w8.s;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o extends f {
-    public final transient Object u;
+    public transient Object u;
 
     public o(Object obj) {
         this.u = obj;

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ao {
-    public final String a;
-    public final ud0.a b;
+    public String a;
+    public ud0.a b;
 
     public ao(String str, ud0.a aVar) {
         this.a = str;

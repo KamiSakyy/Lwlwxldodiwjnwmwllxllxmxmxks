@@ -9,7 +9,7 @@ public final class ds {
     public static final ds t;
     public static final /* synthetic */ ds[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         ds dsVar = new ds("BOARD_LAYOUT", 0, "BOARD_LAYOUT");

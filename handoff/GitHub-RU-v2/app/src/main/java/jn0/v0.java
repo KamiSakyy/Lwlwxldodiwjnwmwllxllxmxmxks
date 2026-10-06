@@ -5,14 +5,14 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v0 implements aaShadow.n0 {
     public static final q0 Companion = new q0();
-    public final String r;
-    public final String s;
-    public final int t;
-    public final String u;
-    public final aa.u0 v;
-    public final aa1.b w;
-    public final aa1.b x;
-    public final pz0.cu y;
+    public String r;
+    public String s;
+    public int t;
+    public String u;
+    public aa.u0 v;
+    public aa1.b w;
+    public aa1.b x;
+    public pz0.cu y;
 
     public v0(String str, String str2, int i, String str3, aa.u0 u0Var, aa1.b bVar, aa1.b bVar2, pz0.cu cuVar) {
         this.r = str;

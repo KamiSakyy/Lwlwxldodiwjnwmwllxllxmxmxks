@@ -6,8 +6,8 @@ import java.time.ZonedDateTime;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t6 extends s7 {
     public final TimelineItem$TimelineLockedEvent$Reason a;
-    public final com.github.service.models.response.a b;
-    public final ZonedDateTime c;
+    public com.github.service.models.response.a b;
+    public ZonedDateTime c;
 
     public t6(TimelineItem$TimelineLockedEvent$Reason timelineItem$TimelineLockedEvent$Reason, com.github.service.models.response.a aVar, ZonedDateTime zonedDateTime) {
         k71.k.g(timelineItem$TimelineLockedEvent$Reason, "lockReason");

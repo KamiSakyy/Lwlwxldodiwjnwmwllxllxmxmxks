@@ -9,7 +9,7 @@ public final class fr {
     public static final fr t;
     public static final /* synthetic */ fr[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         fr frVar = new fr("ADMIN", 0, "ADMIN");

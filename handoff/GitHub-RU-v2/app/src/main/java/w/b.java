@@ -18,13 +18,13 @@ public final class b extends Drawable {
     public float f32907a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Paint f32908b;
+    public Paint f32908b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final RectF f32909c;
+    public RectF f32909c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final Rect f32910d;
+    public Rect f32910d;
 
     /* renamed from: e, reason: collision with root package name */
     public float f32911e;

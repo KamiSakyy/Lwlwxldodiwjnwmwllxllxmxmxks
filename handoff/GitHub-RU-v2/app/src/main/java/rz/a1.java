@@ -4,9 +4,9 @@ import cq.u2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 {
-    public final String a;
-    public final y0 b;
-    public final u2 c;
+    public String a;
+    public y0 b;
+    public u2 c;
 
     public a1(String str, y0 y0Var, u2 u2Var) {
         k71.k.g(str, "__typename");

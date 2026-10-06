@@ -12,7 +12,7 @@ public final class df {
     public static final df w;
     public static final /* synthetic */ df[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         df dfVar = new df("COMPLETED", 0, "COMPLETED");

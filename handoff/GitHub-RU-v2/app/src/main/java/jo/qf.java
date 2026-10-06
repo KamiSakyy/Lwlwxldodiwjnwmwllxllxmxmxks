@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qf {
-    public final String a;
-    public final String b;
-    public final jf c;
+    public String a;
+    public String b;
+    public jf c;
 
     public qf(String str, String str2, jf jfVar) {
         this.a = str;

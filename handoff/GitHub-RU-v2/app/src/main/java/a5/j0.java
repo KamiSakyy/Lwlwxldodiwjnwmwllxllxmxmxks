@@ -15,7 +15,7 @@ public final class j0 implements Iterator, l71.a {
     public Iterator f431s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final Object f432t;
+    public Object f432t;
 
     public j0(g1 g1Var) {
         this.f430r = 0;

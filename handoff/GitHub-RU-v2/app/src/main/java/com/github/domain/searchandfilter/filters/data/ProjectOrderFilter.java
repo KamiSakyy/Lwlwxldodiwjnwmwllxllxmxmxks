@@ -20,7 +20,7 @@ public final class ProjectOrderFilter extends d {
     public static final w61.h[] w;
     public static final d0 x;
     public static final z0 y;
-    public final d0 v;
+    public d0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectOrderFilter> CREATOR = new o(6);
 

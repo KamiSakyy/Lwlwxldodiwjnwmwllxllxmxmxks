@@ -4,11 +4,11 @@ import gn0.e20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final e20 c;
-    public final b2 d;
-    public final String e;
+    public String a;
+    public String b;
+    public e20 c;
+    public b2 d;
+    public String e;
 
     public c2(String str, String str2, e20 e20Var, b2 b2Var, String str3) {
         this.a = str;

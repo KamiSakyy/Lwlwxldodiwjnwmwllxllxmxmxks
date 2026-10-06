@@ -16,10 +16,10 @@ import v71.b0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class o extends com.github.rudroid.searchandfilter.complexfilter.k<yz0.f> implements d0<j> {
     public static final a Companion = new a();
-    public final lm.f E;
-    public final lm.b F;
-    public final String G;
-    public final String H;
+    public lm.f E;
+    public lm.b F;
+    public String G;
+    public String H;
 
     public static final class a {
         public static Bundle a(String str, String str2, List list) {

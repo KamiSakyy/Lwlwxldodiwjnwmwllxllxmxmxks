@@ -7,11 +7,11 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 extends d21.a {
     public static final Parcelable.Creator<u0> CREATOR = new v0(0);
-    public final long r;
-    public final long s;
-    public final boolean t;
-    public final Bundle u;
-    public final String v;
+    public long r;
+    public long s;
+    public boolean t;
+    public Bundle u;
+    public String v;
 
     public u0(long j, long j2, boolean z, Bundle bundle, String str) {
         this.r = j;

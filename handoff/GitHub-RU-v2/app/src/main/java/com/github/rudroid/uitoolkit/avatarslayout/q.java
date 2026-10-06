@@ -2,8 +2,8 @@ package com.github.rudroid.uitoolkit.avatarslayout;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public final long a;
-    public final long b;
+    public long a;
+    public long b;
 
     public q(long j, long j2) {
         this.a = j;
@@ -29,5 +29,5 @@ public final class q {
     public final String toString() {
         return x.i.g("ThreeFaceStackColor(selectedColor=", d2.t.i(this.a), ", unselectedColor=", d2.t.i(this.b), ")");
     }
-    public Object b(Object p1, Object p2, Object p3) { return null; }
+    public static Object b(Object p1, Object p2, Object p3) { return null; }
 }

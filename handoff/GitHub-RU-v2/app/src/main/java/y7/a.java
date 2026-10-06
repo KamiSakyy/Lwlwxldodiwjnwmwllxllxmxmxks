@@ -15,13 +15,13 @@ public final class a {
     public static final HashMap f34278e = new HashMap();
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f34279a;
+    public boolean f34279a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final File f34280b;
+    public File f34280b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final Lock f34281c;
+    public Lock f34281c;
 
     /* renamed from: d, reason: collision with root package name */
     public FileChannel f34282d;

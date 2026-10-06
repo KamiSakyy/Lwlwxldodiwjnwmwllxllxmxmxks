@@ -4,10 +4,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i7 extends s7 {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final String c;
-    public final ZonedDateTime d;
+    public com.github.service.models.response.a a;
+    public String b;
+    public String c;
+    public ZonedDateTime d;
 
     public i7(com.github.service.models.response.a aVar, String str, String str2, ZonedDateTime zonedDateTime) {
         k71.k.g(str, "reviewerDisplayName");

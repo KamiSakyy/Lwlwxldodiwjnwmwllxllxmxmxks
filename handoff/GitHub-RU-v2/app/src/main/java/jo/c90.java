@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c90 {
-    public final String a;
-    public final u80 b;
-    public final String c;
+    public String a;
+    public u80 b;
+    public String c;
 
     public c90(String str, u80 u80Var, String str2) {
         this.a = str;

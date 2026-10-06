@@ -7,10 +7,10 @@ public final class x {
     public static final x f24715c = new x(0, false);
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f24716a;
+    public boolean f24716a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f24717b;
+    public int f24717b;
 
     public x(boolean z10) {
         this.f24716a = z10;

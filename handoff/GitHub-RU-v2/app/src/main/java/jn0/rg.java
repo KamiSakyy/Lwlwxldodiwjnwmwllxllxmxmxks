@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rg {
-    public final ng a;
-    public final mg b;
+    public ng a;
+    public mg b;
 
     public rg(ng ngVar, mg mgVar) {
         this.a = ngVar;

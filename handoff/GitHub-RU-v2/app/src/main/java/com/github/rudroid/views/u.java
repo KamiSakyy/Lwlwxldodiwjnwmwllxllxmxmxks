@@ -21,11 +21,11 @@ import yz0.r3;
 public final class u extends LinearLayout {
     public static final a Companion = new a();
     public b r;
-    public final int s;
-    public final int t;
-    public final int u;
-    public final int v;
-    public final int w;
+    public int s;
+    public int t;
+    public int u;
+    public int v;
+    public int w;
 
     public static final class a {
         public static k.g a(Context context, yz0.b bVar, b bVar2, List list) {

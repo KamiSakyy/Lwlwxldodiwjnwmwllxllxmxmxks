@@ -2,8 +2,8 @@ package im0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
-    public final boolean a;
-    public final boolean b;
+    public boolean a;
+    public boolean b;
 
     public t(boolean z, boolean z2) {
         this.a = z;

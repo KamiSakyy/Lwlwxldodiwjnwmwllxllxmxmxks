@@ -9,22 +9,22 @@ public final class h implements LineHeightSpan {
     public int C;
 
     /* renamed from: r, reason: collision with root package name */
-    public final float f26979r;
+    public float f26979r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f26980s;
+    public int f26980s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final boolean f26981t;
+    public boolean f26981t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final boolean f26982u;
+    public boolean f26982u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final float f26983v;
+    public float f26983v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final int f26984w;
+    public int f26984w;
 
     /* renamed from: x, reason: collision with root package name */
     public int f26985x = Integer.MIN_VALUE;

@@ -8,13 +8,13 @@ import le.v;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 extends androidx.lifecycle.k1 {
-    public final yk.b s;
-    public final qj.a t;
-    public final com.github.rudroid.activities.util.c u;
-    public final v71.v v;
+    public yk.b s;
+    public qj.a t;
+    public com.github.rudroid.activities.util.c u;
+    public v71.v v;
     public String w;
-    public final androidx.lifecycle.p0 x;
-    public final com.github.rudroid.utilities.j2 y;
+    public androidx.lifecycle.p0 x;
+    public com.github.rudroid.utilities.j2 y;
 
     public g1(yk.b bVar, qj.a aVar, com.github.rudroid.activities.util.c cVar, v71.v vVar) {
         k71.k.g(bVar, "globalSearchUseCase");

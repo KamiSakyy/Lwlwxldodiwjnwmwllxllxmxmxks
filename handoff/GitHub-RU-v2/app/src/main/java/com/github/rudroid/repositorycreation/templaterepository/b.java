@@ -6,10 +6,10 @@ import com.github.service.models.response.SimpleRepository;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final SimpleRepository f20444a;
+    public SimpleRepository f20444a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f20445b;
+    public boolean f20445b;
 
     public b(SimpleRepository simpleRepository, boolean z10) {
         this.f20444a = simpleRepository;

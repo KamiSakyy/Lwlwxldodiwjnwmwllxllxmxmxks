@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k2 {
-    public final String a;
-    public final cq.q0 b;
+    public String a;
+    public cq.q0 b;
 
     public k2(String str, cq.q0 q0Var) {
         k71.k.g(str, "__typename");

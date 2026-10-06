@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u70 {
-    public final String a;
-    public final String b;
-    public final ap0.y0 c;
+    public String a;
+    public String b;
+    public ap0.y0 c;
 
     public u70(String str, String str2, ap0.y0 y0Var) {
         k71.k.g(str2, "id");

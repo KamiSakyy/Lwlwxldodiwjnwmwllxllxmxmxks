@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q6 {
-    public final m6 a;
-    public final String b;
+    public m6 a;
+    public String b;
 
     public q6(m6 m6Var, String str) {
         this.a = m6Var;

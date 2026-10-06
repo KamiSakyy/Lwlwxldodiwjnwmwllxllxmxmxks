@@ -5,12 +5,12 @@ import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 {
-    public final String a;
-    public final String b;
-    public final f40 c;
-    public final List d;
-    public final m2 e;
-    public final String f;
+    public String a;
+    public String b;
+    public f40 c;
+    public List d;
+    public m2 e;
+    public String f;
 
     public n2(String str, String str2, f40 f40Var, List list, m2 m2Var, String str3) {
         this.a = str;

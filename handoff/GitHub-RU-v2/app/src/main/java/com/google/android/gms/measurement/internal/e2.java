@@ -5,13 +5,13 @@ import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e2 {
-    public final Context a;
-    public final Boolean b;
-    public final long c;
-    public final com.google.android.gms.internal.measurement.u0 d;
-    public final boolean e;
-    public final Long f;
-    public final String g;
+    public Context a;
+    public Boolean b;
+    public long c;
+    public com.google.android.gms.internal.measurement.u0 d;
+    public boolean e;
+    public Long f;
+    public String g;
 
     public e2(Context context, com.google.android.gms.internal.measurement.u0 u0Var, Long l) {
         this.e = true;

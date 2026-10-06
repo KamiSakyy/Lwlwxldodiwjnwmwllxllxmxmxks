@@ -16,18 +16,18 @@ import org.xmlpull.v1.XmlPullParserException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final b a;
+    public b a;
     public final b b = new b();
-    public final float c;
-    public final float d;
-    public final float e;
-    public final float f;
-    public final float g;
-    public final float h;
-    public final int i;
-    public final int j;
-    public final int k;
-    public final int l;
+    public float c;
+    public float d;
+    public float e;
+    public float f;
+    public float g;
+    public float h;
+    public int i;
+    public int j;
+    public int k;
+    public int l;
 
     public c(Context context) {
         AttributeSet attributeSet;

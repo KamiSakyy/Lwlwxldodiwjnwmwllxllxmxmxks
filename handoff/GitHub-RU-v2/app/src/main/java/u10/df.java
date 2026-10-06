@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class df {
-    public final String a;
-    public final String b;
-    public final z70.l2 c;
+    public String a;
+    public String b;
+    public z70.l2 c;
 
     public df(String str, String str2, z70.l2 l2Var) {
         this.a = str;

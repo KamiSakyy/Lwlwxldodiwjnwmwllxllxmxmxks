@@ -6,10 +6,10 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final y1 a;
-    public final i1 b;
-    public final y1 c;
-    public final i1 d;
+    public y1 a;
+    public i1 b;
+    public y1 c;
+    public i1 d;
 
     public e() {
         y1 c = n1.c(Boolean.FALSE);

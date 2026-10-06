@@ -12,36 +12,36 @@ import le.v;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class m implements v, k, Parcelable {
     public static final Parcelable.Creator<m> CREATOR = new a();
-    public final String A;
-    public final int B;
-    public final int C;
+    public String A;
+    public int B;
+    public int C;
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f30182r;
+    public String f30182r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f30183s;
+    public String f30183s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f30184t;
+    public String f30184t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final int f30185u;
+    public int f30185u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final CloseReason f30186v;
+    public CloseReason f30186v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final IssueState f30187w;
+    public IssueState f30187w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f30188x;
+    public String f30188x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f30189y;
+    public String f30189y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final boolean f30190z;
+    public boolean f30190z;
 
     public static final class a implements Parcelable.Creator<m> {
         @Override // android.os.Parcelable.Creator

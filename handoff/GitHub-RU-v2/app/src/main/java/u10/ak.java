@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ak {
-    public final String a;
-    public final String b;
-    public final hc0.ff c;
+    public String a;
+    public String b;
+    public hc0.ff c;
 
     public ak(String str, String str2, hc0.ff ffVar) {
         this.a = str;

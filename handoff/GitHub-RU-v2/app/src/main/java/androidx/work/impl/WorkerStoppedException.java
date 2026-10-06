@@ -6,7 +6,7 @@ import java.util.concurrent.CancellationException;
 public final class WorkerStoppedException extends CancellationException {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f3229r;
+    public int f3229r;
 
     public WorkerStoppedException(int i) {
         this.f3229r = i;

@@ -28,7 +28,7 @@ public final class PullRequestStatusFilter extends d {
     public static final w61.h[] w;
     public static final g0 x;
     public static final k60.f y;
-    public final g0 v;
+    public g0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<PullRequestStatusFilter> CREATOR = new o(10);
 

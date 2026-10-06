@@ -7,8 +7,8 @@ import k71.k;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0024a();
-    public final wm.b r;
-    public final wm.b s;
+    public wm.b r;
+    public wm.b s;
 
     /* renamed from: ig.a$a, reason: collision with other inner class name */
     public static final class C0024a implements Parcelable.Creator<a> {

@@ -10,7 +10,7 @@ public final class DeploymentState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ DeploymentState[] $VALUES;
     public static final z0 Companion;
-    private final String rawValue;
+    private String rawValue;
     public static final DeploymentState ABANDONED = new DeploymentState("ABANDONED", 0, "ABANDONED");
     public static final DeploymentState ACTIVE = new DeploymentState("ACTIVE", 1, "ACTIVE");
     public static final DeploymentState DESTROYED = new DeploymentState("DESTROYED", 2, "DESTROYED");

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p9 {
-    public final l9 a;
-    public final q9 b;
+    public l9 a;
+    public q9 b;
 
     public p9(l9 l9Var, q9 q9Var) {
         this.a = l9Var;

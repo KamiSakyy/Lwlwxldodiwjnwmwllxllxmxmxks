@@ -12,8 +12,8 @@ import x.i;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ShortcutScope$SpecificRepository extends a {
-    public final String s;
-    public final String t;
+    public String s;
+    public String t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ShortcutScope$SpecificRepository> CREATOR = new c0(9);
 

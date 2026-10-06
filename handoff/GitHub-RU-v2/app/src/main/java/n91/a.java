@@ -3,7 +3,7 @@ package n91;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends t91.c {
     public static final a g = new a(new int[0], new char[0], new boolean[0], 0, false);
-    public final boolean f;
+    public boolean f;
 
     public a(int[] iArr, char[] cArr, boolean[] zArr, int i, boolean z) {
         super(iArr, cArr, zArr, i);

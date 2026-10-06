@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public final a.a a;
+    public a.a a;
     public boolean b;
     public long c;
     public long d;

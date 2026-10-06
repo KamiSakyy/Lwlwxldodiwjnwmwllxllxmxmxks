@@ -4,23 +4,23 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ns {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final rs f;
-    public final zr g;
-    public final String h;
-    public final boolean i;
-    public final boolean j;
-    public final boolean k;
-    public final ZonedDateTime l;
-    public final ZonedDateTime m;
-    public final os n;
-    public final ds o;
-    public final es p;
-    public final gu0.c q;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public rs f;
+    public zr g;
+    public String h;
+    public boolean i;
+    public boolean j;
+    public boolean k;
+    public ZonedDateTime l;
+    public ZonedDateTime m;
+    public os n;
+    public ds o;
+    public es p;
+    public gu0.c q;
 
     public ns(String str, String str2, String str3, String str4, String str5, rs rsVar, zr zrVar, String str6, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, os osVar, ds dsVar, es esVar, gu0.c cVar) {
         this.a = str;

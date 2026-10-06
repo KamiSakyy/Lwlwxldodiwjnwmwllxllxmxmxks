@@ -9,7 +9,7 @@ public final class th {
     public static final th t;
     public static final /* synthetic */ th[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         th thVar = new th("LIST_IGNORED", 0, "LIST_IGNORED");

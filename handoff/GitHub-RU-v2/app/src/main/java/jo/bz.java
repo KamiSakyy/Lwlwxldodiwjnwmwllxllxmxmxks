@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bz {
-    public final fz a;
-    public final String b;
+    public fz a;
+    public String b;
 
     public bz(fz fzVar, String str) {
         this.a = fzVar;

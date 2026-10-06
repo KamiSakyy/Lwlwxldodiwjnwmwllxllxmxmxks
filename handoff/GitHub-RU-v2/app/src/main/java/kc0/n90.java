@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n90 implements aaShadow.n0 {
     public static final i90 Companion = new i90();
-    public final String r;
-    public final String s;
+    public String r;
+    public String s;
 
     public n90(String str, String str2) {
         k71.k.g(str, "commentId");

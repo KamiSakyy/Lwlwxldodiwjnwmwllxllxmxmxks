@@ -5,16 +5,16 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r2 {
-    public final String a;
-    public final b4 b;
-    public final t3 c;
-    public final String d;
-    public final x2 e;
-    public final u2 f;
-    public final int g;
-    public final q2 h;
-    public final s2 i;
-    public final String j;
+    public String a;
+    public b4 b;
+    public t3 c;
+    public String d;
+    public x2 e;
+    public u2 f;
+    public int g;
+    public q2 h;
+    public s2 i;
+    public String j;
 
     public r2(String str, b4 b4Var, t3 t3Var, String str2, x2 x2Var, u2 u2Var, int i, q2 q2Var, s2 s2Var, String str3) {
         this.a = str;

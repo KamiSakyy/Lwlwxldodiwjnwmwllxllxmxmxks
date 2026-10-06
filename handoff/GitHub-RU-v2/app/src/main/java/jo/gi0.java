@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gi0 implements aaShadow.w0 {
     public static final di0 Companion = new di0();
-    public final String r;
+    public String r;
 
     public gi0(String str) {
         k71.k.g(str, "login");

@@ -9,10 +9,10 @@ public final class t {
     public static final ThreadLocal f32246d = new ThreadLocal();
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f32247a;
+    public int f32247a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final w51.r f32248b;
+    public w51.r f32248b;
 
     /* renamed from: c, reason: collision with root package name */
     public volatile int f32249c = 0;

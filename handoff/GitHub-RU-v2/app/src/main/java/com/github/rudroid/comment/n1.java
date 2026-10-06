@@ -7,32 +7,32 @@ import zk.b2;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class n1 extends b {
-    public final y1 A;
-    public final y71.i1 B;
+    public y1 A;
+    public y71.i1 B;
 
     /* renamed from: s, reason: collision with root package name */
-    public final hj.a f8967s;
+    public hj.a f8967s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final hj.c f8968t;
+    public hj.c f8968t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final hj.h f8969u;
+    public hj.h f8969u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final hj.i f8970v;
+    public hj.i f8970v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final hj.g f8971w;
+    public hj.g f8971w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final zk.y1 f8972x;
+    public zk.y1 f8972x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final b2 f8973y;
+    public b2 f8973y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final com.github.rudroid.activities.util.c f8974z;
+    public com.github.rudroid.activities.util.c f8974z;
 
     public n1(hj.a aVar, hj.c cVar, hj.h hVar, hj.i iVar, hj.g gVar, zk.y1 y1Var, b2 b2Var, com.github.rudroid.activities.util.c cVar2) {
         k71.k.g(aVar, "addCommentUseCase");

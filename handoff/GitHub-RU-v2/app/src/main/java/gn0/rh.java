@@ -82,7 +82,7 @@ public final class rh {
     public static final rh y0;
     public static final rh z;
     public static final rh z0;
-    public final String r;
+    public String r;
 
     static {
         rh rhVar = new rh("CHECK_SUITE", 0, "CHECK_SUITE");

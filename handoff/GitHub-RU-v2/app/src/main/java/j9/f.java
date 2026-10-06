@@ -8,10 +8,10 @@ import v71.v;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public final o f27318a;
+    public o f27318a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final d f27319b;
+    public d f27319b;
 
     public f(long j10, o oVar, a0 a0Var, v vVar) {
         this.f27318a = oVar;

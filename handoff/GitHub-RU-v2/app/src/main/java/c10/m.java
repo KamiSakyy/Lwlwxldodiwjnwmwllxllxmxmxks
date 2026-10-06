@@ -4,11 +4,11 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public final String a;
-    public final j b;
-    public final k c;
-    public final i d;
-    public final vx.a e;
+    public String a;
+    public j b;
+    public k c;
+    public i d;
+    public vx.a e;
 
     public m(String str, j jVar, k kVar, i iVar, vx.a aVar) {
         k71.k.g(str, "__typename");

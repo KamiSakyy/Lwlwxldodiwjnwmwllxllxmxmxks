@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l9 {
-    public final String a;
-    public final h9 b;
+    public String a;
+    public h9 b;
 
     public l9(String str, h9 h9Var) {
         this.a = str;

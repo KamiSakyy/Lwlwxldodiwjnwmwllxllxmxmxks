@@ -6,9 +6,9 @@ import java.util.concurrent.FutureTask;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 extends FutureTask implements Comparable {
-    public final long r;
-    public final boolean s;
-    public final String t;
+    public long r;
+    public boolean s;
+    public String t;
     public final /* synthetic */ m1 u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

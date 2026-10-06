@@ -5,7 +5,7 @@ import v71.a2;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p extends a81.r {
-    public final h v;
+    public h v;
     public final /* synthetic */ AtomicReferenceArray w;
 
     public p(long j, p pVar, h hVar, int i) {

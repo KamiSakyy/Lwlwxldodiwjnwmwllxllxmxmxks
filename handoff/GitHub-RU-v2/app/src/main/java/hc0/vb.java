@@ -10,7 +10,7 @@ public final class vb {
     public static final vb u;
     public static final /* synthetic */ vb[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         vb vbVar = new vb("COMPLETED", 0, "COMPLETED");

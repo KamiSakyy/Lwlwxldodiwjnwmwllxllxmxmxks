@@ -11,8 +11,8 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f0 implements n0 {
     public static final b0 Companion = new b0();
-    public final String r;
-    public final u0 s;
+    public String r;
+    public u0 s;
 
     public f0(u0 u0Var, String str) {
         k71.k.g(str, "repositoryId");

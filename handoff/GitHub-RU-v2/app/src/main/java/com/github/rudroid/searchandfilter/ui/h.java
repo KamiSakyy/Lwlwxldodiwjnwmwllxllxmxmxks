@@ -61,6 +61,6 @@ public final /* synthetic */ class h implements j71.a {
         }
     }
     public Object ordinal() { return null; }
-    public Object values() { return null; }
+    public static Object values() { return null; }
     public static final Object r = null;
 }

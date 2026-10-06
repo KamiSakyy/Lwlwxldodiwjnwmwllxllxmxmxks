@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zx {
-    public final String a;
-    public final ni0.d b;
+    public String a;
+    public ni0.d b;
 
     public zx(String str, ni0.d dVar) {
         k71.k.g(str, "__typename");

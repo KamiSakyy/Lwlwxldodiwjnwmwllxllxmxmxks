@@ -135,7 +135,7 @@ public abstract class WidgetUIState {
     @g81.e
     public static final class Error extends WidgetUIState {
         public static final Companion Companion = new Companion();
-        public final String b;
+        public String b;
 
         public static final class Companion {
             public final KSerializer serializer() {

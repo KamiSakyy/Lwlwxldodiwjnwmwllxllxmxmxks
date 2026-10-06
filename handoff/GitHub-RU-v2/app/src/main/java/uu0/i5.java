@@ -2,10 +2,10 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i5 {
-    public final String a;
-    public final String b;
-    public final g5 c;
-    public final String d;
+    public String a;
+    public String b;
+    public g5 c;
+    public String d;
 
     public i5(String str, String str2, g5 g5Var, String str3) {
         this.a = str;

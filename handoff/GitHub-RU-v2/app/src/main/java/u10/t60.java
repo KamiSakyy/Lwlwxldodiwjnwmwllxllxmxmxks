@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t60 {
-    public final String a;
-    public final u60 b;
-    public final w60 c;
-    public final p60 d;
-    public final String e;
+    public String a;
+    public u60 b;
+    public w60 c;
+    public p60 d;
+    public String e;
 
     public t60(String str, u60 u60Var, w60 w60Var, p60 p60Var, String str2) {
         this.a = str;

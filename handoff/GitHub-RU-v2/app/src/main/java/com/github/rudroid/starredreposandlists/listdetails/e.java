@@ -15,6 +15,6 @@ public abstract class e<T extends k5.f> extends d3 {
         ((f) w()).O((ListDetailActivity) this);
     }
     public Object onCreate(Object p1) { return null; }
-    public Object r(Object p1, Object p2, Object p3) { return null; }
+    public static Object r(Object p1, Object p2, Object p3) { return null; }
     public Object t(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

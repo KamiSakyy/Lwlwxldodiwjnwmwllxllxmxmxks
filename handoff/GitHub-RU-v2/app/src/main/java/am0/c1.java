@@ -2,7 +2,7 @@ package am0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c1 {
-    public final int a;
+    public int a;
 
     public c1(int i) {
         this.a = i;

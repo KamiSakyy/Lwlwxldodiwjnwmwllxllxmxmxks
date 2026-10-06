@@ -8,11 +8,11 @@ import m10.ua;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public final ua a;
-    public final String b;
-    public final LocalTime c;
-    public final LocalTime d;
-    public final String e;
+    public ua a;
+    public String b;
+    public LocalTime c;
+    public LocalTime d;
+    public String e;
 
     public a(ua uaVar, String str, LocalTime localTime, LocalTime localTime2, String str2) {
         this.a = uaVar;

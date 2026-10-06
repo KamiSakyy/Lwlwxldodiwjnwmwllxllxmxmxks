@@ -12,11 +12,11 @@ import l7.c0;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class LicenseTemplate implements Parcelable {
-    public final String r;
-    public final String s;
-    public final String t;
-    public final String u;
-    public final String v;
+    public String r;
+    public String s;
+    public String t;
+    public String u;
+    public String v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<LicenseTemplate> CREATOR = new c0(11);
 

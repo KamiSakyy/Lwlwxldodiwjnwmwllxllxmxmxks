@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class te implements aaShadow.w0 {
     public static final ke Companion = new ke();
-    public final aa1.b r;
-    public final aa1.b s;
+    public aa1.b r;
+    public aa1.b s;
 
     public te(aa1.b bVar, aa1.b bVar2) {
         k71.k.g(bVar, "first");

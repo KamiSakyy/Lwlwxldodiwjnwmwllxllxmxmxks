@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lu implements aaShadow.m0 {
-    public final mu a;
+    public mu a;
 
     public lu(mu muVar) {
         this.a = muVar;

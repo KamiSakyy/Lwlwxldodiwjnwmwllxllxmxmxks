@@ -11,7 +11,7 @@ public final class xc {
     public static final xc v;
     public static final /* synthetic */ xc[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         xc xcVar = new xc("CLOSED", 0, "CLOSED");

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ku {
-    public final String a;
-    public final su b;
-    public final String c;
+    public String a;
+    public su b;
+    public String c;
 
     public ku(String str, su suVar, String str2) {
         this.a = str;

@@ -4,13 +4,13 @@ package a0;
 public final class g2 implements z {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f89a;
+    public int f89a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f90b;
+    public int f90b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final a0 f91c;
+    public a0 f91c;
 
     public g2(int i, int i10, a0 a0Var) {
         this.f89a = i;

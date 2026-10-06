@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lf {
-    public final List a;
-    public final nf b;
+    public List a;
+    public nf b;
 
     public lf(List list, nf nfVar) {
         this.a = list;

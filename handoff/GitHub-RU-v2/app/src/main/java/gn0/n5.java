@@ -2,14 +2,14 @@ package gn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n5 {
-    public final aa1.b a;
-    public final jt b;
-    public final aa1.b c;
-    public final pt d;
-    public final String e;
-    public final aa1.b f;
-    public final aa1.b g;
-    public final pu h;
+    public aa1.b a;
+    public jt b;
+    public aa1.b c;
+    public pt d;
+    public String e;
+    public aa1.b f;
+    public aa1.b g;
+    public pu h;
 
     public n5(jt jtVar, pt ptVar, String str, aa1.b bVar, aa1.b bVar2, pu puVar) {
         k71.k.g(str, "name");

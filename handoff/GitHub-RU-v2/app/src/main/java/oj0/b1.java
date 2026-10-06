@@ -2,7 +2,7 @@ package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b1 {
-    public final int a;
+    public int a;
 
     public b1(int i) {
         this.a = i;

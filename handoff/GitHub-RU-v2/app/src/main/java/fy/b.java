@@ -52,4 +52,6 @@ public final class b implements aa.a {
         uw.g.d(fVar, wVar, cVar.c);
     }
 
+    public Object c(Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
 }

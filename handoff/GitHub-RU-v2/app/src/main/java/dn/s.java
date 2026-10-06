@@ -2,8 +2,8 @@ package dn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public final oa.g a;
-    public final u b;
+    public oa.g a;
+    public u b;
 
     public s(oa.g gVar, u uVar) {
         k71.k.g(gVar, "service");

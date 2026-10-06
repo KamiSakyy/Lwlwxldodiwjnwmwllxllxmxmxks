@@ -4,15 +4,15 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c7 extends s7 {
-    public final com.github.service.models.response.a a;
-    public final String b;
-    public final String c;
-    public final boolean d;
-    public final String e;
-    public final String f;
-    public final String g;
-    public final boolean h;
-    public final ZonedDateTime i;
+    public com.github.service.models.response.a a;
+    public String b;
+    public String c;
+    public boolean d;
+    public String e;
+    public String f;
+    public String g;
+    public boolean h;
+    public ZonedDateTime i;
 
     public c7(com.github.service.models.response.a aVar, String str, String str2, boolean z, String str3, String str4, String str5, boolean z2, ZonedDateTime zonedDateTime) {
         this.a = aVar;

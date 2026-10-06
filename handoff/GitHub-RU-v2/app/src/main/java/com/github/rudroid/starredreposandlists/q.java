@@ -16,5 +16,5 @@ final class q implements j71.c {
         com.github.rudroid.m0.B((s3.f) null, "wrap", cVar);
         return w61.a0.a;
     }
-    public Object b(Object p1, Object p2, Object p3) { return null; }
+    public static Object b(Object p1, Object p2, Object p3) { return null; }
 }

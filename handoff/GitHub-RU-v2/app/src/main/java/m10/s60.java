@@ -16,7 +16,7 @@ public final class s60 {
     public static final s60 x;
     public static final s60 y;
     public static final s60 z;
-    public final String r;
+    public String r;
 
     static {
         s60 s60Var = new s60("BLUE", 0, "BLUE");

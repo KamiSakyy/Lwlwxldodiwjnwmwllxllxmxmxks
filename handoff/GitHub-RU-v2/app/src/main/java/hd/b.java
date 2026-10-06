@@ -7,13 +7,13 @@ import x.i;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public final b41.a f25595a;
+    public b41.a f25595a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final boolean f25596b;
+    public boolean f25596b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final a f25597c;
+    public a f25597c;
 
     public b(b41.a aVar, boolean z10, a aVar2) {
         this.f25595a = aVar;

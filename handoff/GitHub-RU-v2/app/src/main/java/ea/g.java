@@ -13,10 +13,10 @@ import x61.r;
 public final class g implements e {
 
     /* renamed from: r, reason: collision with root package name */
-    public final Object f22190r;
+    public Object f22190r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final List f22191s;
+    public List f22191s;
 
     /* renamed from: t, reason: collision with root package name */
     public d f22192t;

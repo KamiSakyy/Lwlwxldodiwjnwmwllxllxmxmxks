@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ke0 {
-    public final pz0.i90 a;
-    public final boolean b;
+    public pz0.i90 a;
+    public boolean b;
 
     public ke0(pz0.i90 i90Var, boolean z) {
         this.a = i90Var;

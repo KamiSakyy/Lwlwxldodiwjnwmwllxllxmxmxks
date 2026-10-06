@@ -10,17 +10,17 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public class e1 implements SerialDescriptor, l {
-    public final String a;
-    public final d0 b;
-    public final int c;
+    public String a;
+    public d0 b;
+    public int c;
     public int d = -1;
-    public final String[] e;
-    public final List[] f;
-    public final boolean[] g;
+    public String[] e;
+    public List[] f;
+    public boolean[] g;
     public Object h;
-    public final Object i;
-    public final Object j;
-    public final Object k;
+    public Object i;
+    public Object j;
+    public Object k;
 
     public e1(String str, d0 d0Var, int i) {
         this.a = str;

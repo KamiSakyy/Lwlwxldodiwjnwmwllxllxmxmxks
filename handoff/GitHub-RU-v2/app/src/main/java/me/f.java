@@ -11,10 +11,10 @@ public abstract class f {
     public static final class a extends f {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f29214a;
+        public int f29214a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final Object[] f29215b;
+        public Object[] f29215b;
 
         /* renamed from: c, reason: collision with root package name */
         public final List f29216c = r.r;
@@ -38,10 +38,10 @@ public abstract class f {
     public static final class b extends f {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f29217a;
+        public String f29217a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final List f29218b;
+        public List f29218b;
 
         public b(String str) {
             k.g(str, "value");
@@ -82,7 +82,7 @@ public abstract class f {
     public static final class c extends f {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f29219a;
+        public int f29219a;
 
         /* renamed from: b, reason: collision with root package name */
         public final List f29220b = r.r;
@@ -124,10 +124,10 @@ public abstract class f {
     public static final class e extends f {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f29225a;
+        public int f29225a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final int f29226b;
+        public int f29226b;
 
         /* renamed from: c, reason: collision with root package name */
         public final List f29227c = r.r;
@@ -152,13 +152,13 @@ public abstract class f {
     public static final class C0085f extends f {
 
         /* renamed from: a, reason: collision with root package name */
-        public final d f29228a;
+        public d f29228a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final List f29229b;
+        public List f29229b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final List f29230c;
+        public List f29230c;
 
         public C0085f(d dVar, List list, List list2, int i) {
             list2 = (i & 4) != 0 ? r.r : list2;
@@ -186,16 +186,16 @@ public abstract class f {
     public static final class d extends f {
 
         /* renamed from: a, reason: collision with root package name */
-        public final int f29221a;
+        public int f29221a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final Object[] f29222b;
+        public Object[] f29222b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final List f29223c;
+        public List f29223c;
 
         /* renamed from: d, reason: collision with root package name */
-        public final f f29224d;
+        public f f29224d;
 
         public d(int i, Object[] objArr, List list, d dVar) {
             k.g(list, "spansList");

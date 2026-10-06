@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public final class a implements c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f29239a;
+    public float f29239a;
 
     public a(float f6) {
         this.f29239a = f6;

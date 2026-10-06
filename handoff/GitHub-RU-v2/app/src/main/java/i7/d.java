@@ -13,7 +13,7 @@ import w61.a0;
 public abstract class d extends m71.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final MeasurementManager f26059a;
+    public MeasurementManager f26059a;
 
     public d(MeasurementManager measurementManager) {
         this.f26059a = measurementManager;

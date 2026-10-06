@@ -8,9 +8,9 @@ import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b extends z3 {
-    public final k71.e b;
-    public final Object c;
-    public final z3 d;
+    public k71.e b;
+    public Object c;
+    public z3 d;
 
     public b(k71.e eVar, Object obj, z3 z3Var) {
         k.g(obj, "value");

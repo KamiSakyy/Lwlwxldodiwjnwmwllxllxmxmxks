@@ -2,9 +2,9 @@ package j00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public final k0 a;
-    public final String b;
-    public final String c;
+    public k0 a;
+    public String b;
+    public String c;
 
     public m0(k0 k0Var, String str, String str2) {
         this.a = k0Var;
@@ -36,7 +36,7 @@ public final class m0 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
-    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object e(Object p1, Object p2, Object p3) { return null; }
-    public Object i(Object p1, Object p2, Object p3) { return null; }
+    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object e(Object p1, Object p2, Object p3) { return null; }
+    public static Object i(Object p1, Object p2, Object p3) { return null; }
 }

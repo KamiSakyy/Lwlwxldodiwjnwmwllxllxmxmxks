@@ -25,8 +25,8 @@ public final class a {
     public boolean c;
     public final Object d = new Object();
     public b e;
-    public final Context f;
-    public final long g;
+    public Context f;
+    public long g;
 
     public a(Context context) {
         u.g(context);

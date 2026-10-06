@@ -56,11 +56,11 @@ public class SubsamplingScaleImageView extends View {
     public int B;
     public RectF B0;
     public int C;
-    public final float[] C0;
+    public float[] C0;
     public int D;
-    public final float[] D0;
+    public float[] D0;
     public Executor E;
-    public final float E0;
+    public float E0;
     public boolean F;
     public boolean G;
     public boolean H;
@@ -86,12 +86,12 @@ public class SubsamplingScaleImageView extends View {
     public GestureDetector e0;
     public GestureDetector f0;
     public c g0;
-    public final ReentrantReadWriteLock h0;
+    public ReentrantReadWriteLock h0;
     public b i0;
     public b j0;
     public PointF k0;
     public float l0;
-    public final float m0;
+    public float m0;
     public float n0;
     public boolean o0;
     public PointF p0;
@@ -107,7 +107,7 @@ public class SubsamplingScaleImageView extends View {
     public LinkedHashMap v;
     public View.OnLongClickListener v0;
     public int w;
-    public final Handler w0;
+    public Handler w0;
     public float x;
     public Paint x0;
     public float y;

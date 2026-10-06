@@ -12,13 +12,13 @@ import l7.n1;
 public final class v extends n1 {
 
     /* renamed from: u, reason: collision with root package name */
-    public final Drawable f22037u;
+    public Drawable f22037u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final ColorStateList f22038v;
+    public ColorStateList f22038v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final SparseArray f22039w;
+    public SparseArray f22039w;
 
     /* renamed from: x, reason: collision with root package name */
     public boolean f22040x;

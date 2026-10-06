@@ -7,14 +7,14 @@ import gn0.hn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final String a;
-    public final int b;
-    public final String c;
-    public final hn d;
-    public final f e;
-    public final boolean f;
-    public final boolean g;
-    public final String h;
+    public String a;
+    public int b;
+    public String c;
+    public hn d;
+    public f e;
+    public boolean f;
+    public boolean g;
+    public String h;
 
     public c(String str, int i, String str2, hn hnVar, f fVar, boolean z, boolean z2, String str3) {
         this.a = str;

@@ -2,7 +2,7 @@ package j20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public final n a;
+    public n a;
 
     public q(n nVar) {
         this.a = nVar;

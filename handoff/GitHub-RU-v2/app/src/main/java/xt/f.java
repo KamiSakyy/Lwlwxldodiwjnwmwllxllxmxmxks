@@ -2,8 +2,8 @@ package xt;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public final d a;
-    public final String b;
+    public d a;
+    public String b;
 
     public f(d dVar, String str) {
         this.a = dVar;

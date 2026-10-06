@@ -7,5 +7,5 @@ public interface e extends b {
     boolean d();
 
     List e();
-    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public static int c(Object p1, Object p2, Object p3) { return null; }
 }

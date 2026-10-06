@@ -8,9 +8,9 @@ public final class j2 {
 
         /* renamed from: com.github.rudroid.utilities.j2$a$a, reason: collision with other inner class name */
         public static final class C0011a extends a {
-            public final String a;
-            public final String b;
-            public final int c;
+            public String a;
+            public String b;
+            public int c;
 
             public C0011a(String str, int i, String str2) {
                 k71.k.g(str, "owner");
@@ -40,8 +40,8 @@ public final class j2 {
         }
 
         public static final class b extends a {
-            public final String a;
-            public final String b;
+            public String a;
+            public String b;
 
             public b(String str, String str2) {
                 k71.k.g(str, "owner");
@@ -70,7 +70,7 @@ public final class j2 {
         }
 
         public static final class c extends a {
-            public final String a;
+            public String a;
 
             public c(String str) {
                 k71.k.g(str, "username");

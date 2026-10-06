@@ -2,18 +2,18 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y2 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final String f;
-    public final x2 g;
-    public final w2 h;
-    public final boolean i;
-    public final boolean j;
-    public final boolean k;
-    public final cp0.g l;
+    public String a;
+    public String b;
+    public String c;
+    public String d;
+    public String e;
+    public String f;
+    public x2 g;
+    public w2 h;
+    public boolean i;
+    public boolean j;
+    public boolean k;
+    public cp0.g l;
 
     public y2(String str, String str2, String str3, String str4, String str5, String str6, x2 x2Var, w2 w2Var, boolean z, boolean z2, boolean z3, cp0.g gVar) {
         this.a = str;

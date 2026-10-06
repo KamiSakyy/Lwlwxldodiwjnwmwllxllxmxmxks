@@ -11,7 +11,7 @@ public final class b extends MetricAffectingSpan {
     public final /* synthetic */ int f26973r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final Object f26974s;
+    public Object f26974s;
 
     public /* synthetic */ b(int i, Object obj) {
         this.f26973r = i;

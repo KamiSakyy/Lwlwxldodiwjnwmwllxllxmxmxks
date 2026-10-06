@@ -45,7 +45,7 @@ public interface j {
     public static final class c implements j {
 
         /* renamed from: a, reason: collision with root package name */
-        public final List f9669a;
+        public List f9669a;
 
         public c(List list) {
             this.f9669a = list;
@@ -85,4 +85,6 @@ public interface j {
         }
     }
     public Object s(Object p1, Object p2) { return null; }
+    public Object s(Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
 }

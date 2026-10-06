@@ -2,13 +2,13 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public final String a;
-    public final x b;
-    public final r c;
-    public final a0 d;
-    public final y e;
-    public final n f;
-    public final kw0.a g;
+    public String a;
+    public x b;
+    public r c;
+    public a0 d;
+    public y e;
+    public n f;
+    public kw0.a g;
 
     public e(String str, x xVar, r rVar, a0 a0Var, y yVar, n nVar, kw0.a aVar) {
         k71.k.g(str, "__typename");

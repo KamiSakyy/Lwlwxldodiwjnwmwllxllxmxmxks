@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sr implements aaShadow.v0 {
-    public final wr a;
+    public wr a;
 
     public sr(wr wrVar) {
         this.a = wrVar;

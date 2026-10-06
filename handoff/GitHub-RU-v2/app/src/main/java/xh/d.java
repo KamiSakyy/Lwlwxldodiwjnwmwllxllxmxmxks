@@ -55,4 +55,6 @@ public abstract class d<T extends f> extends SwipeRefreshLayout {
 
 
     public Object setOnRefreshListener(Object p1) { return null; }
+    public Object setColorSchemeResources(Object) { return null; }
+    public Object setProgressBackgroundColorSchemeResource(int) { return null; }
 }

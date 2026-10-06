@@ -11,10 +11,10 @@ import yz0.k2;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class NoLabel implements k2 {
-    public final String r;
-    public final String s;
-    public final String t;
-    public final int u;
+    public String r;
+    public String s;
+    public String t;
+    public int u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<NoLabel> CREATOR = new c0(26);
     public static final NoLabel v = new NoLabel();

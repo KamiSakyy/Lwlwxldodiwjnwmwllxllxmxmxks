@@ -2,7 +2,7 @@ package h91;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class p implements i0Shadow {
-    public final i0Shadow r;
+    public i0Shadow r;
 
     public p(i0Shadow i0Var) {
         k71.k.g(i0Var, "delegate");

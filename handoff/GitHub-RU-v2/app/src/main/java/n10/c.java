@@ -292,4 +292,16 @@ public final class c implements aa.a {
     public Object D = null;
     public Object E = null;
     public Object y = null;
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
+    public Object g(Object, Object) { return null; }
 }

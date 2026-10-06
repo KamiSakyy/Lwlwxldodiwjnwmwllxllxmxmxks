@@ -6,13 +6,13 @@ import java.util.List;
 public final class n extends s {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f670a;
+    public String f670a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final List f671b;
+    public List f671b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final List f672c;
+    public List f672c;
 
     public n(String str, List list, List list2) {
         k71.k.g(list2, "selections");

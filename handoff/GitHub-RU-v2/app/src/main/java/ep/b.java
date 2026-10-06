@@ -36,4 +36,7 @@ public final class b implements aaShadow.a {
     public static final Object A = null;
     public static final Object h = null;
     public static final Object r = null;
+    public Object c(Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
 }

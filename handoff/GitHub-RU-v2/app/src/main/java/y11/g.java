@@ -8,7 +8,7 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements Parcelable {
     public static final Parcelable.Creator<g> CREATOR = new c(1);
-    public final Messenger r;
+    public Messenger r;
 
     public g(IBinder iBinder) {
         this.r = new Messenger(iBinder);

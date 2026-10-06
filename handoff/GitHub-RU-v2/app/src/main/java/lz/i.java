@@ -5,12 +5,12 @@ import m10.zd;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final zd d;
-    public final a e;
-    public final l0 f;
+    public String a;
+    public String b;
+    public int c;
+    public zd d;
+    public a e;
+    public l0 f;
 
     public i(String str, String str2, int i, zd zdVar, a aVar, l0 l0Var) {
         this.a = str;

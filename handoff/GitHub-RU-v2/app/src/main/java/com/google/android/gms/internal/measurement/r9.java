@@ -6,8 +6,8 @@ import java.util.concurrent.Callable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r9 extends h {
-    public final t5 t;
-    public final HashMap u;
+    public t5 t;
+    public HashMap u;
 
     public r9(t5 t5Var) {
         super("require");

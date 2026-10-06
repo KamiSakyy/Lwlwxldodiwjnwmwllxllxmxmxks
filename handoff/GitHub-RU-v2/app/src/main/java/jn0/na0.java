@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class na0 {
-    public final String a;
-    public final oa0 b;
-    public final String c;
+    public String a;
+    public oa0 b;
+    public String c;
 
     public na0(String str, oa0 oa0Var, String str2) {
         this.a = str;

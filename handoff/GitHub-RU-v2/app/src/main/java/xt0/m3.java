@@ -2,10 +2,10 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m3 implements aa.h0 {
-    public final String a;
-    public final int b;
-    public final l3 c;
-    public final String d;
+    public String a;
+    public int b;
+    public l3 c;
+    public String d;
 
     public m3(String str, int i, l3 l3Var, String str2) {
         this.a = str;

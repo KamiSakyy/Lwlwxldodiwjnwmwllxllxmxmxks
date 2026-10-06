@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public final ArrayList a;
-    public final String b;
+    public ArrayList a;
+    public String b;
 
     public u(String str, ArrayList arrayList) {
         k71.k.g(str, "repoId");

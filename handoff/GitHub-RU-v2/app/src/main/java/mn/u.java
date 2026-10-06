@@ -8,16 +8,16 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final String d;
-    public final ZonedDateTime e;
-    public final WorkflowRunEvent f;
-    public final s g;
-    public final String h;
-    public final String i;
-    public final t j;
+    public String a;
+    public String b;
+    public int c;
+    public String d;
+    public ZonedDateTime e;
+    public WorkflowRunEvent f;
+    public s g;
+    public String h;
+    public String i;
+    public t j;
 
     public u(String str, String str2, int i, String str3, ZonedDateTime zonedDateTime, WorkflowRunEvent workflowRunEvent, s sVar, String str4, String str5, t tVar) {
         k71.k.g(str, "id");

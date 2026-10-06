@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements Executor {
     public static final Logger w = Logger.getLogger(j.class.getName());
-    public final Executor r;
+    public Executor r;
     public final ArrayDeque s = new ArrayDeque();
     public int t = 1;
     public long u = 0;

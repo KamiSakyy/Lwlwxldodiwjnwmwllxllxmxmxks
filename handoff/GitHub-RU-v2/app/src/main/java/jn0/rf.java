@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rf {
-    public final String a;
-    public final pf b;
+    public String a;
+    public pf b;
 
     public rf(String str, pf pfVar) {
         this.a = str;

@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xn {
-    public final String a;
-    public final un b;
-    public final String c;
+    public String a;
+    public un b;
+    public String c;
 
     public xn(String str, un unVar, String str2) {
         this.a = str;

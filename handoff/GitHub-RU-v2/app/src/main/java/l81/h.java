@@ -2,15 +2,15 @@ package l81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h {
-    public final boolean a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final String e;
-    public final boolean f;
-    public final String g;
-    public final boolean h;
-    public final a i;
+    public boolean a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public String e;
+    public boolean f;
+    public String g;
+    public boolean h;
+    public a i;
 
     public h(boolean z, boolean z2, boolean z3, boolean z4, String str, boolean z5, String str2, boolean z6, a aVar) {
         k71.k.g(str, "prettyPrintIndent");

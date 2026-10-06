@@ -9,19 +9,19 @@ import android.widget.TextView;
 public final class s2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final TextView f30715a;
+    public TextView f30715a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final TextView f30716b;
+    public TextView f30716b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final ImageView f30717c;
+    public ImageView f30717c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final ImageView f30718d;
+    public ImageView f30718d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final ImageView f30719e;
+    public ImageView f30719e;
 
     public s2(View view) {
         this.f30715a = (TextView) view.findViewById(R.id.text1);

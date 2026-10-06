@@ -17,10 +17,10 @@ import yz0.v2;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class NoMilestone implements v2 {
-    public final String r;
-    public final String s;
-    public final MilestoneState t;
-    public final int u;
+    public String r;
+    public String s;
+    public MilestoneState t;
+    public int u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<NoMilestone> CREATOR = new a(19);
     public static final h[] v = {null, null, w.s(i.r, new u5(15)), null};

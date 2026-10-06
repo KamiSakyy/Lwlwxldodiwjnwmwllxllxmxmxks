@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m9 {
-    public final gn0.bm a;
+    public gn0.bm a;
 
     public m9(gn0.bm bmVar) {
         this.a = bmVar;

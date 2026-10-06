@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pe0 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final m10.py e;
-    public final String f;
-    public final List g;
-    public final m10.n40 h;
-    public final String i;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public m10.py e;
+    public String f;
+    public List g;
+    public m10.n40 h;
+    public String i;
 
     public pe0(String str, boolean z, boolean z2, boolean z3, m10.py pyVar, String str2, List list, m10.n40 n40Var, String str3) {
         this.a = str;

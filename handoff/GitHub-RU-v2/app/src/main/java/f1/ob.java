@@ -4,10 +4,10 @@ package f1;
 public final class ob {
 
     /* renamed from: a, reason: collision with root package name */
-    public final w1.h f23493a;
+    public w1.h f23493a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final w1.h f23494b;
+    public w1.h f23494b;
 
     public ob() {
         w1.h hVar = w1.c.D;

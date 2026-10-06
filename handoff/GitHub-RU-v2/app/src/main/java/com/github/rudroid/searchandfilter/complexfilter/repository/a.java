@@ -13,10 +13,10 @@ import com.github.service.models.response.SimpleRepository;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends com.github.rudroid.searchandfilter.complexfilter.k<SimpleRepository> implements d0<r> {
     public static final C0001a Companion = new C0001a();
-    public final kj.n E;
-    public final kj.q F;
-    public final v71.v G;
-    public final i0 H;
+    public kj.n E;
+    public kj.q F;
+    public v71.v G;
+    public i0 H;
 
     /* renamed from: com.github.rudroid.searchandfilter.complexfilter.repository.a$a, reason: collision with other inner class name */
     public static final class C0001a {

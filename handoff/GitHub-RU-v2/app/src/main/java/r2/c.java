@@ -7,28 +7,28 @@ import kotlin.NoWhenBranchMatchedException;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public final boolean f31100a;
+    public boolean f31100a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final b f31101b;
+    public b f31101b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f31102c;
+    public int f31102c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final a[] f31103d;
+    public a[] f31103d;
 
     /* renamed from: e, reason: collision with root package name */
     public int f31104e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final float[] f31105f;
+    public float[] f31105f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final float[] f31106g;
+    public float[] f31106g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final float[] f31107h;
+    public float[] f31107h;
 
     public c(boolean z10, b bVar) {
         int i;

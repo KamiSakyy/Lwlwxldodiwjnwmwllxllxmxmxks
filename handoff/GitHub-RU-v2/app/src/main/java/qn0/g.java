@@ -2,11 +2,11 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
-    public final String a;
-    public final String b;
-    public final h c;
-    public final i d;
-    public final vn0.m1 e;
+    public String a;
+    public String b;
+    public h c;
+    public i d;
+    public vn0.m1 e;
 
     public g(String str, String str2, h hVar, i iVar, vn0.m1 m1Var) {
         k71.k.g(str, "__typename");

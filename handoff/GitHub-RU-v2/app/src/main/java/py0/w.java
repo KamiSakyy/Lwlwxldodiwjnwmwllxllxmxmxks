@@ -12,10 +12,10 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w implements w0 {
     public static final q Companion = new q();
-    public final String r;
-    public final String s;
-    public final aa1.b t;
-    public final aa1.b u;
+    public String r;
+    public String s;
+    public aa1.b t;
+    public aa1.b u;
 
     public w(aa1.b bVar, aa1.b bVar2, String str, String str2) {
         k71.k.g(str, "owner");

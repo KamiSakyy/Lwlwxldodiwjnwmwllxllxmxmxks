@@ -8,7 +8,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends com.github.rudroid.searchandfilter.complexfilter.e0<a> {
-    public final SelectableLanguageFragment f;
+    public SelectableLanguageFragment f;
 
     public b(SelectableLanguageFragment selectableLanguageFragment) {
         this.f = selectableLanguageFragment;

@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class j implements Runnable {
-    public final q81.e r;
+    public q81.e r;
     public volatile AtomicInteger s = new AtomicInteger(0);
     public final /* synthetic */ m t;
 

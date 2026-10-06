@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k30 {
-    public final String a;
-    public final j30 b;
+    public String a;
+    public j30 b;
 
     public k30(String str, j30 j30Var) {
         this.a = str;

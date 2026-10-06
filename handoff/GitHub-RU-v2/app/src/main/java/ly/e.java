@@ -10,7 +10,7 @@ import m10.y9;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements n0 {
     public static final a Companion = new a();
-    public final y9 r;
+    public y9 r;
 
     public e(y9 y9Var) {
         this.r = y9Var;
@@ -64,6 +64,6 @@ public final class e implements n0 {
     public final String toString() {
         return "CreateNewListMutation(input=" + this.r + ")";
     }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object z(Object p1, Object p2, Object p3) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3) { return null; }
 }

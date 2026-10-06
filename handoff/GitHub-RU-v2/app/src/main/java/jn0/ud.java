@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ud implements aaShadow.v0 {
-    public final List a;
-    public final String b;
-    public final String c;
+    public List a;
+    public String b;
+    public String c;
 
     public ud(String str, String str2, List list) {
         this.a = list;

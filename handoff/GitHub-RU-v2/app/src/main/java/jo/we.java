@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class we {
-    public final String a;
-    public final String b;
-    public final cq.l5 c;
+    public String a;
+    public String b;
+    public cq.l5 c;
 
     public we(String str, String str2, cq.l5 l5Var) {
         this.a = str;

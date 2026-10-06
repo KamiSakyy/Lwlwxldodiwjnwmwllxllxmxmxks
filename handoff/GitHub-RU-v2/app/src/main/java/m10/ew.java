@@ -10,7 +10,7 @@ public final class ew {
     public static final ew u;
     public static final /* synthetic */ ew[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         ew ewVar = new ew("DRAFT_ISSUE", 0, "DRAFT_ISSUE");

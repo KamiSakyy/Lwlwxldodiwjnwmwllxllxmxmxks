@@ -15,47 +15,47 @@ import yz0.d3;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class c implements l, v {
-    public final lg.b A;
-    public final int B;
-    public final StatusState C;
-    public final PullRequestState D;
-    public final boolean E;
-    public final b0 F;
-    public final ReviewDecision G;
-    public final int H;
-    public final Integer I;
-    public final boolean J;
-    public final q K;
-    public final String L;
-    public final int M;
-    public final int N;
+    public lg.b A;
+    public int B;
+    public StatusState C;
+    public PullRequestState D;
+    public boolean E;
+    public b0 F;
+    public ReviewDecision G;
+    public int H;
+    public Integer I;
+    public boolean J;
+    public q K;
+    public String L;
+    public int M;
+    public int N;
 
     /* renamed from: r, reason: collision with root package name */
-    public final String f30165r;
+    public String f30165r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final String f30166s;
+    public String f30166s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final int f30167t;
+    public int f30167t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final boolean f30168u;
+    public boolean f30168u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final ZonedDateTime f30169v;
+    public ZonedDateTime f30169v;
 
     /* renamed from: w, reason: collision with root package name */
-    public final d3 f30170w;
+    public d3 f30170w;
 
     /* renamed from: x, reason: collision with root package name */
-    public final String f30171x;
+    public String f30171x;
 
     /* renamed from: y, reason: collision with root package name */
-    public final String f30172y;
+    public String f30172y;
 
     /* renamed from: z, reason: collision with root package name */
-    public final List f30173z;
+    public List f30173z;
 
     public /* synthetic */ c(String str, String str2, int i, boolean z10, ZonedDateTime zonedDateTime, d3 d3Var, String str3, String str4, List list, lg.b bVar, int i10, StatusState statusState, PullRequestState pullRequestState, boolean z11, b0 b0Var, ReviewDecision reviewDecision, int i11, Integer num, boolean z12, q qVar, String str5) {
         this(str, str2, i, z10, zonedDateTime, d3Var, str3, str4, list, bVar, i10, statusState, pullRequestState, z11, b0Var, reviewDecision, i11, num, z12, qVar, str5, 5, 5);

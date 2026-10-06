@@ -4,10 +4,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 {
-    public final String a;
-    public final r0 b;
-    public final String c;
-    public final bl0.a d;
+    public String a;
+    public r0 b;
+    public String c;
+    public bl0.a d;
 
     public t0(String str, r0 r0Var, String str2, bl0.a aVar) {
         this.a = str;

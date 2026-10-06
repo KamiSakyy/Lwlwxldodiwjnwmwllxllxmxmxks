@@ -112,7 +112,7 @@ public final class op {
     public static final op y0;
     public static final op z;
     public static final op z0;
-    public final String r;
+    public String r;
 
     static {
         op opVar = new op("AGENT_ASSIGNMENT", 0, "AGENT_ASSIGNMENT");

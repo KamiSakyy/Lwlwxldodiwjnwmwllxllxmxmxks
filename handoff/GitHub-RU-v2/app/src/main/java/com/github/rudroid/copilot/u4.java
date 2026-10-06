@@ -6,13 +6,13 @@ public interface u4 {
     public static final class a implements u4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final f5 f10061a;
+        public f5 f10061a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final xn.b1 f10062b;
+        public xn.b1 f10062b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f10063c;
+        public boolean f10063c;
 
         public a(f5 f5Var, xn.b1 b1Var, boolean z10) {
             k71.k.g(b1Var, "model");
@@ -54,10 +54,10 @@ public interface u4 {
     public static final class b implements u4, b5 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final double f10064a;
+        public double f10064a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f10065b;
+        public boolean f10065b;
 
         public b(double d10, boolean z10) {
             this.f10064a = d10;
@@ -92,10 +92,10 @@ public interface u4 {
     public static final class c implements u4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f10066a;
+        public String f10066a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f10067b;
+        public boolean f10067b;
 
         public c(String str, boolean z10) {
             this.f10066a = str;
@@ -131,13 +131,13 @@ public interface u4 {
     public static final class d implements u4, b5 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final double f10068a;
+        public double f10068a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f10069b;
+        public boolean f10069b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f10070c;
+        public boolean f10070c;
 
         public d(double d10, boolean z10, boolean z11) {
             this.f10068a = d10;
@@ -173,13 +173,13 @@ public interface u4 {
     public static final class e implements u4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f10071a;
+        public String f10071a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f10072b;
+        public boolean f10072b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f10073c;
+        public boolean f10073c;
 
         public e(String str, boolean z10, boolean z11) {
             this.f10071a = str;
@@ -216,13 +216,13 @@ public interface u4 {
     public static final class f implements u4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f10074a;
+        public String f10074a;
 
         /* renamed from: b, reason: collision with root package name */
-        public final boolean f10075b;
+        public boolean f10075b;
 
         /* renamed from: c, reason: collision with root package name */
-        public final boolean f10076c;
+        public boolean f10076c;
 
         public f(String str, boolean z10, boolean z11) {
             this.f10074a = str;
@@ -259,7 +259,7 @@ public interface u4 {
     public static final class g implements u4, b5 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final String f10077a;
+        public String f10077a;
 
         public g(String str) {
             this.f10077a = str;
@@ -290,7 +290,7 @@ public interface u4 {
     public static final class h implements u4 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final xn.b1 f10078a;
+        public xn.b1 f10078a;
 
         public h(xn.b1 b1Var) {
             this.f10078a = b1Var;

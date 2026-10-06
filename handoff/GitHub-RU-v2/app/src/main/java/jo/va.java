@@ -2,14 +2,14 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class va {
-    public final String a;
-    public final String b;
-    public final m10.b4 c;
-    public final ya d;
-    public final oa e;
-    public final ab f;
-    public final ma g;
-    public final qa h;
+    public String a;
+    public String b;
+    public m10.b4 c;
+    public ya d;
+    public oa e;
+    public ab f;
+    public ma g;
+    public qa h;
 
     public va(String str, String str2, m10.b4 b4Var, ya yaVar, oa oaVar, ab abVar, ma maVar, qa qaVar) {
         this.a = str;

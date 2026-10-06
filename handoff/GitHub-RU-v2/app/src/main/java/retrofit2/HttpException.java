@@ -5,9 +5,9 @@ import q81.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public class HttpException extends RuntimeException {
-    public final int r;
-    public final String s;
-    public final transient q0 t;
+    public int r;
+    public String s;
+    public transient q0 t;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

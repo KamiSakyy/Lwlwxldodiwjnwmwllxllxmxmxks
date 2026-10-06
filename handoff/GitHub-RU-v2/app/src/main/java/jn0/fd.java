@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fd implements aaShadow.v0 {
-    public final kd a;
-    public final String b;
-    public final String c;
+    public kd a;
+    public String b;
+    public String c;
 
     public fd(kd kdVar, String str, String str2) {
         this.a = kdVar;

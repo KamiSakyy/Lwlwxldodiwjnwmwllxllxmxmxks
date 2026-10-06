@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class db {
-    public final m10.py a;
+    public m10.py a;
 
     public db(m10.py pyVar) {
         this.a = pyVar;

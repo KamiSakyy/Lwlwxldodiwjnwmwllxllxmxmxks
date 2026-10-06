@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ua implements aaShadow.w0 {
     public static final qa Companion = new qa();
-    public final String r;
-    public final String s;
-    public final int t;
+    public String r;
+    public String s;
+    public int t;
 
     public ua(String str, int i, String str2) {
         k71.k.g(str, "repositoryOwner");

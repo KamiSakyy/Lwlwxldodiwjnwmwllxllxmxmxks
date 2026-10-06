@@ -9,7 +9,7 @@ public final class ro {
     public static final ro t;
     public static final /* synthetic */ ro[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         ro roVar = new ro("CHECK", 0, "CHECK");

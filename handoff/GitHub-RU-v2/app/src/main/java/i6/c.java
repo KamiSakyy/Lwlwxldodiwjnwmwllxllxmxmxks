@@ -13,10 +13,10 @@ public final class c {
     public static final c f26024e = new c(1, 1);
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f26025a;
+    public int f26025a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f26026b;
+    public int f26026b;
 
     public c(int i, int i10) {
         this.f26025a = i;

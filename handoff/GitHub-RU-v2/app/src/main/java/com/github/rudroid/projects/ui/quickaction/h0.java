@@ -29,7 +29,7 @@ public interface h0 {
     public static final class d implements h0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final boolean f18350a;
+        public boolean f18350a;
 
         public d(boolean z10) {
             this.f18350a = z10;
@@ -90,7 +90,7 @@ public interface h0 {
     public static final class k implements h0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public final boolean f18357a;
+        public boolean f18357a;
 
         public k(boolean z10) {
             this.f18357a = z10;
@@ -129,10 +129,10 @@ public interface h0 {
         public static final class a implements n {
 
             /* renamed from: a, reason: collision with root package name */
-            public final int f18360a;
+            public int f18360a;
 
             /* renamed from: b, reason: collision with root package name */
-            public final String f18361b;
+            public String f18361b;
 
             public a(String str, int i) {
                 this.f18360a = i;
@@ -164,13 +164,13 @@ public interface h0 {
         public static final class b implements n {
 
             /* renamed from: a, reason: collision with root package name */
-            public final String f18362a;
+            public String f18362a;
 
             /* renamed from: b, reason: collision with root package name */
-            public final String f18363b;
+            public String f18363b;
 
             /* renamed from: c, reason: collision with root package name */
-            public final int f18364c;
+            public int f18364c;
 
             public b(String str, int i, String str2) {
                 k71.k.g(str, "ownerLogin");
@@ -203,10 +203,10 @@ public interface h0 {
         public static final class c implements n {
 
             /* renamed from: a, reason: collision with root package name */
-            public final String f18365a;
+            public String f18365a;
 
             /* renamed from: b, reason: collision with root package name */
-            public final String f18366b;
+            public String f18366b;
 
             public c(String str, String str2) {
                 k71.k.g(str, "ownerLogin");
@@ -238,7 +238,7 @@ public interface h0 {
         public static final class d implements n {
 
             /* renamed from: a, reason: collision with root package name */
-            public final String f18367a;
+            public String f18367a;
 
             public d(String str) {
                 k71.k.g(str, "userOrOrgLogin");
@@ -264,28 +264,28 @@ public interface h0 {
         public static final class e implements n {
 
             /* renamed from: a, reason: collision with root package name */
-            public final String f18368a;
+            public String f18368a;
 
             /* renamed from: b, reason: collision with root package name */
-            public final String f18369b;
+            public String f18369b;
 
             /* renamed from: c, reason: collision with root package name */
-            public final int f18370c;
+            public int f18370c;
 
             /* renamed from: d, reason: collision with root package name */
-            public final String f18371d;
+            public String f18371d;
 
             /* renamed from: e, reason: collision with root package name */
-            public final String f18372e;
+            public String f18372e;
 
             /* renamed from: f, reason: collision with root package name */
-            public final String f18373f;
+            public String f18373f;
 
             /* renamed from: g, reason: collision with root package name */
-            public final String f18374g;
+            public String f18374g;
 
             /* renamed from: h, reason: collision with root package name */
-            public final List f18375h;
+            public List f18375h;
 
             public e(String str, String str2, int i, String str3, String str4, String str5, String str6, List list) {
                 k71.k.g(str, "ownerLogin");

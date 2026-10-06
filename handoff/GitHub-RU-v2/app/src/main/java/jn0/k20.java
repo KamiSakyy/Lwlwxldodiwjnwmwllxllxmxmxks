@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k20 implements aaShadow.v0 {
-    public final t20 a;
-    public final u20 b;
-    public final String c;
-    public final String d;
+    public t20 a;
+    public u20 b;
+    public String c;
+    public String d;
 
     public k20(t20 t20Var, u20 u20Var, String str, String str2) {
         this.a = t20Var;

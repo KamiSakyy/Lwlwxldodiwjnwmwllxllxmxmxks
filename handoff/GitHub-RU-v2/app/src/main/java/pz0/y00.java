@@ -40,7 +40,7 @@ public final class y00 {
     public static final y00 x;
     public static final y00 y;
     public static final y00 z;
-    public final String r;
+    public String r;
 
     static {
         y00 y00Var = new y00("ALERT", 0, "ALERT");

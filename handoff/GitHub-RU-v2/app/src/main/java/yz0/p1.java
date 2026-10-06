@@ -6,20 +6,20 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p1 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final int d;
-    public final ArrayList e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final PatchStatus i;
-    public final boolean j;
-    public final String k;
-    public final int l;
-    public final String m;
-    public final RepoFileType n;
+    public String a;
+    public String b;
+    public int c;
+    public int d;
+    public ArrayList e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public PatchStatus i;
+    public boolean j;
+    public String k;
+    public int l;
+    public String m;
+    public RepoFileType n;
 
     public p1(String str, String str2, int i, int i2, ArrayList arrayList, boolean z, boolean z2, boolean z3, PatchStatus patchStatus, boolean z4, String str3, int i3, String str4, RepoFileType repoFileType) {
         k71.k.g(patchStatus, "status");

@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class a implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final AtomicReference f31723a;
+    public AtomicReference f31723a;
 
     public a(h hVar) {
         this.f31723a = new AtomicReference(hVar);

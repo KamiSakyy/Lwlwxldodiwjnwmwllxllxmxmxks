@@ -10,5 +10,5 @@ public final /* synthetic */ class r2 implements Function {
     public final /* synthetic */ Object apply(Object obj) {
         return Long.valueOf(((c4) obj).s);
     }
-    public Object x0() { return null; }
+    public static Object x0() { return null; }
 }

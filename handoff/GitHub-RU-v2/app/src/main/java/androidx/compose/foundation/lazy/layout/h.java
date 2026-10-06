@@ -8,7 +8,7 @@ public final class h implements Parcelable {
     public static final Parcelable.Creator<h> CREATOR = new g();
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f1399r;
+    public int f1399r;
 
     public h(int i) {
         this.f1399r = i;

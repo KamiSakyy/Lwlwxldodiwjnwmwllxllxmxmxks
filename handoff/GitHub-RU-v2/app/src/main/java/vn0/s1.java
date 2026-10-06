@@ -4,19 +4,19 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s1 implements aa.h0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final pz0.e3 d;
-    public final pz0.y2 e;
-    public final int f;
-    public final String g;
-    public final String h;
-    public final ZonedDateTime i;
-    public final ZonedDateTime j;
-    public final String k;
-    public final Boolean l;
-    public final String m;
+    public String a;
+    public String b;
+    public String c;
+    public pz0.e3 d;
+    public pz0.y2 e;
+    public int f;
+    public String g;
+    public String h;
+    public ZonedDateTime i;
+    public ZonedDateTime j;
+    public String k;
+    public Boolean l;
+    public String m;
 
     public s1(String str, String str2, String str3, pz0.e3 e3Var, pz0.y2 y2Var, int i, String str4, String str5, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str6, Boolean bool, String str7) {
         this.a = str;

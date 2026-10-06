@@ -2,8 +2,8 @@ package p41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
-    public final Class a;
-    public final Class b;
+    public Class a;
+    public Class b;
 
     public o(Class cls, Class cls2) {
         this.a = cls;

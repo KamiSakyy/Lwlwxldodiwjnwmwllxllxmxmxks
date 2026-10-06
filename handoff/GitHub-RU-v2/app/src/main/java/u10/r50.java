@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r50 {
-    public final String a;
-    public final w50 b;
-    public final String c;
+    public String a;
+    public w50 b;
+    public String c;
 
     public r50(String str, w50 w50Var, String str2) {
         this.a = str;

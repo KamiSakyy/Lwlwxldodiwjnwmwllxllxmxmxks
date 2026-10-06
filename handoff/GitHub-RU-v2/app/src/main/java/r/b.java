@@ -14,7 +14,7 @@ public final class b implements ThreadFactory {
     public final /* synthetic */ int f31057a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final Number f31058b;
+    public Number f31058b;
 
     public b() {
         this.f31057a = 0;

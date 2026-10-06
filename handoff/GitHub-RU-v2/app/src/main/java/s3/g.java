@@ -4,7 +4,7 @@ package s3;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f31695a;
+    public long f31695a;
 
     public static String a(long j10) {
         if (j10 == 9205357640488583168L) {

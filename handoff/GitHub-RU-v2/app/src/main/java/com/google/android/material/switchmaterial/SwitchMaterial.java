@@ -14,7 +14,7 @@ import o31.o;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class SwitchMaterial extends SwitchCompat {
     public static final int[][] r0 = {new int[]{R.attr.state_enabled, R.attr.state_checked}, new int[]{R.attr.state_enabled, -16842912}, new int[]{-16842910, R.attr.state_checked}, new int[]{-16842910, -16842912}};
-    public final a n0;
+    public a n0;
     public ColorStateList o0;
     public ColorStateList p0;
     public boolean q0;

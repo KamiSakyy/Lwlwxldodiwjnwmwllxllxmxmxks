@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qt {
-    public final rt a;
-    public final pt b;
+    public rt a;
+    public pt b;
 
     public qt(rt rtVar, pt ptVar) {
         this.a = rtVar;

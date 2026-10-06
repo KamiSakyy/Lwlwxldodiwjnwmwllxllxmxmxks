@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class os {
-    public final ls a;
-    public final List b;
+    public ls a;
+    public List b;
 
     public os(ls lsVar, List list) {
         this.a = lsVar;

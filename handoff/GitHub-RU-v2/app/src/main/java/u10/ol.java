@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ol implements aaShadow.v0 {
-    public final ql a;
+    public ql a;
 
     public ol(ql qlVar) {
         this.a = qlVar;

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nf implements aaShadow.v0 {
-    public final of a;
+    public of a;
 
     public nf(of ofVar) {
         this.a = ofVar;

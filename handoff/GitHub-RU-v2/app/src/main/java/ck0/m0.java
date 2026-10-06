@@ -45,5 +45,5 @@ public final class m0 implements aa.a {
         fVar.z0("login");
         bVar.b(fVar, wVar, qVar.b);
     }
-    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

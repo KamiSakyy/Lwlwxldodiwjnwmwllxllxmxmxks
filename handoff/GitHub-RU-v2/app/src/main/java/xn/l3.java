@@ -2,11 +2,11 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l3 {
-    public final String a;
-    public final Long b;
-    public final Integer c;
-    public final g3 d;
-    public final String e;
+    public String a;
+    public Long b;
+    public Integer c;
+    public g3 d;
+    public String e;
 
     public l3(String str, Long l, Integer num, g3 g3Var, String str2) {
         this.a = str;

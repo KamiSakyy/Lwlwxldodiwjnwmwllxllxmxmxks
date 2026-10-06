@@ -4,16 +4,16 @@ package w5;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f33333a;
+    public int f33333a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final String f33334b;
+    public String f33334b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f33335c;
+    public int f33335c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f33336d;
+    public int f33336d;
 
     public d(int i, String str, int i10) {
         this.f33334b = str;

@@ -8,11 +8,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i implements a {
-    public final String a;
-    public final String b;
-    public final Drawable c;
-    public final Integer d;
-    public final j71.a e;
+    public String a;
+    public String b;
+    public Drawable c;
+    public Integer d;
+    public j71.a e;
 
     public i(String str, String str2, BitmapDrawable bitmapDrawable, Integer num, j71.a aVar) {
         k.g(str, "title");

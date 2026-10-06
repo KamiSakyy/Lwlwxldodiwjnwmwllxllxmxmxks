@@ -11,10 +11,10 @@ import q.y2;
 public final class i {
     public static final i e;
     public static final i f;
-    public final boolean a;
-    public final boolean b;
-    public final String[] c;
-    public final String[] d;
+    public boolean a;
+    public boolean b;
+    public String[] c;
+    public String[] d;
 
     static {
         h hVar = h.r;

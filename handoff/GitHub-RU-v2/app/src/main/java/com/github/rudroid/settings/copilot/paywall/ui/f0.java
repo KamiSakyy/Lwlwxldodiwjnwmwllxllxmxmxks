@@ -2,8 +2,8 @@ package com.github.rudroid.settings.copilot.paywall.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f0 {
-    public final boolean a;
-    public final int b;
+    public boolean a;
+    public int b;
 
     public f0(boolean z, int i) {
         this.a = z;

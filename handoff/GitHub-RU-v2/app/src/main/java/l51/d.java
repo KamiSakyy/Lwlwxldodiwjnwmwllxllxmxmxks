@@ -21,5 +21,6 @@ public final class d {
         return (d[]) s.clone();
     }
     public Object a(Object p1) { return null; }
-    public Object b(Object p1, Object p2) { return null; }
+    public static Object b(Object p1, Object p2) { return null; }
+    public Object e(Object) { return null; }
 }

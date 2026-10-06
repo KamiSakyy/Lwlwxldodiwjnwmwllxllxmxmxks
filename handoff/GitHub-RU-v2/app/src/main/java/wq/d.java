@@ -4,7 +4,7 @@ import m10.b4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final b4 a;
+    public b4 a;
 
     public d(b4 b4Var) {
         this.a = b4Var;

@@ -6,9 +6,9 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d0 extends x0 {
     public final /* synthetic */ int d;
-    public final Method e;
-    public final int f;
-    public final boolean g;
+    public Method e;
+    public int f;
+    public boolean g;
 
     public /* synthetic */ d0(Method method, int i, boolean z, int i2) {
         this.d = i2;

@@ -4,8 +4,8 @@ import m10.dg0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final dg0 a;
-    public final boolean b;
+    public dg0 a;
+    public boolean b;
 
     public b(dg0 dg0Var, boolean z) {
         this.a = dg0Var;
@@ -31,4 +31,6 @@ public final class b {
         return "NavLink(identifier=" + this.a + ", hidden=" + this.b + ")";
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object c(Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
 }

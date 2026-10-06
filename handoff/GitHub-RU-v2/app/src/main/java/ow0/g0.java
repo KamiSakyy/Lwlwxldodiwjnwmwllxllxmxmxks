@@ -2,10 +2,10 @@ package ow0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 {
-    public final String a;
-    public final i0 b;
-    public final int c;
-    public final x d;
+    public String a;
+    public i0 b;
+    public int c;
+    public x d;
 
     public g0(String str, i0 i0Var, int i, x xVar) {
         this.a = str;

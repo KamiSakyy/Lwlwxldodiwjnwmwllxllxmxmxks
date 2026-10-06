@@ -2,9 +2,9 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j1 {
-    public final String a;
-    public final String b;
-    public final ud0.a c;
+    public String a;
+    public String b;
+    public ud0.a c;
 
     public j1(String str, String str2, ud0.a aVar) {
         this.a = str;

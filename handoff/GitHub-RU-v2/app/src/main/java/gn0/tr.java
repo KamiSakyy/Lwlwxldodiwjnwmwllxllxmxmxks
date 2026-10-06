@@ -9,7 +9,7 @@ public final class tr {
     public static final tr t;
     public static final tr u;
     public static final /* synthetic */ tr[] v;
-    public final String r;
+    public String r;
 
     static {
         tr trVar = new tr("INTERNAL", 0, "INTERNAL");

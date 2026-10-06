@@ -2,9 +2,9 @@ package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j1 extends k1 {
-    public final byte[] t;
-    public final int u;
-    public final int v;
+    public byte[] t;
+    public int u;
+    public int v;
 
     public j1(byte[] bArr, int i, int i2) {
         k1.j(i, i + i2, bArr.length);

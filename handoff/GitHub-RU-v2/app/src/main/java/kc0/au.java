@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class au {
-    public final cu a;
+    public cu a;
 
     public au(cu cuVar) {
         this.a = cuVar;

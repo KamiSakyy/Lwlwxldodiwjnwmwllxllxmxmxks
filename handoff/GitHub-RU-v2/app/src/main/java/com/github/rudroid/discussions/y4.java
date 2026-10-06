@@ -4,13 +4,13 @@ package com.github.rudroid.discussions;
 public final class y4 extends za implements le.a {
 
     /* renamed from: t, reason: collision with root package name */
-    public final String f12032t;
+    public String f12032t;
 
     /* renamed from: u, reason: collision with root package name */
-    public final String f12033u;
+    public String f12033u;
 
     /* renamed from: v, reason: collision with root package name */
-    public final boolean f12034v;
+    public boolean f12034v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public y4(String str, String str2, boolean z10) {

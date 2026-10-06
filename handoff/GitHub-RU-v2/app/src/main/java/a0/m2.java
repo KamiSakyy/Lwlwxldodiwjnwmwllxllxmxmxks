@@ -4,7 +4,7 @@ package a0;
 public final class m2 implements l2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final y51.c f154a;
+    public y51.c f154a;
 
     /* renamed from: b, reason: collision with root package name */
     public u f155b;

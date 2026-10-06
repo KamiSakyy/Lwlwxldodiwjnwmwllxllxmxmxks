@@ -2,8 +2,8 @@ package hp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x {
-    public final String a;
-    public final w b;
+    public String a;
+    public w b;
 
     public x(String str, w wVar) {
         k71.k.g(str, "__typename");

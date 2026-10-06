@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final String a;
-    public final l b;
-    public final String c;
-    public final i50.h d;
+    public String a;
+    public l b;
+    public String c;
+    public i50.h d;
 
     public h(String str, l lVar, String str2, i50.h hVar) {
         this.a = str;

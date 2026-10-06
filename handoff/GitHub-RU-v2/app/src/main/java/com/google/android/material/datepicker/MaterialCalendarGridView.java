@@ -13,7 +13,7 @@ import android.widget.ListAdapter;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 final class MaterialCalendarGridView extends GridView {
-    public final boolean r;
+    public boolean r;
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);

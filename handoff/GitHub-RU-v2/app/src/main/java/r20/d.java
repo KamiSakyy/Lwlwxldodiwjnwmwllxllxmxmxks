@@ -4,8 +4,8 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public final String a;
-    public final int b;
+    public String a;
+    public int b;
 
     public d(String str, int i) {
         this.a = str;

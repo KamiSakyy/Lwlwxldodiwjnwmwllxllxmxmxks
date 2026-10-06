@@ -7,14 +7,14 @@ import gn0.r2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements h0 {
-    public final String a;
-    public final r2 b;
-    public final String c;
-    public final l2 d;
-    public final String e;
-    public final a f;
-    public final e g;
-    public final String h;
+    public String a;
+    public r2 b;
+    public String c;
+    public l2 d;
+    public String e;
+    public a f;
+    public e g;
+    public String h;
 
     public f(String str, r2 r2Var, String str2, l2 l2Var, String str3, a aVar, e eVar, String str4) {
         this.a = str;

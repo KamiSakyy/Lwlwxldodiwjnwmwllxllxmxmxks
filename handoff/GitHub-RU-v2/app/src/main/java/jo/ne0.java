@@ -2,22 +2,22 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ne0 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final m10.b00 d;
-    public final m10.wm e;
-    public final pe0 f;
-    public final he0 g;
-    public final String h;
-    public final boolean i;
-    public final le0 j;
-    public final ie0 k;
-    public final ke0 l;
-    public final je0 m;
-    public final boolean n;
-    public final qe0 o;
-    public final gv.b p;
+    public String a;
+    public String b;
+    public String c;
+    public m10.b00 d;
+    public m10.wm e;
+    public pe0 f;
+    public he0 g;
+    public String h;
+    public boolean i;
+    public le0 j;
+    public ie0 k;
+    public ke0 l;
+    public je0 m;
+    public boolean n;
+    public qe0 o;
+    public gv.b p;
 
     public ne0(String str, String str2, String str3, m10.b00 b00Var, m10.wm wmVar, pe0 pe0Var, he0 he0Var, String str4, boolean z, le0 le0Var, ie0 ie0Var, ke0 ke0Var, je0 je0Var, boolean z2, qe0 qe0Var, gv.b bVar) {
         this.a = str;

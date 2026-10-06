@@ -5,11 +5,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final c0 d;
-    public final ArrayList e;
+    public String a;
+    public String b;
+    public String c;
+    public c0 d;
+    public ArrayList e;
 
     public a(String str, String str2, String str3, c0 c0Var, ArrayList arrayList) {
         String str4 = Build.MANUFACTURER;
@@ -46,7 +46,8 @@ public final class a {
         return "AndroidApplicationInfo(packageName=" + this.a + ", versionName=" + this.b + ", appBuildVersion=" + this.c + ", deviceManufacturer=" + Build.MANUFACTURER + ", currentProcessDetails=" + this.d + ", appProcessDetails=" + this.e + ')';
     }
     public Object P(Object p1, Object p2, Object p3) { return null; }
-    public Object d(Object p1) { return null; }
+    public static Object d(Object p1) { return null; }
     public static final Object u = null;
     public Object r = null;
+    public Object P(Object, Object, Object) { return null; }
 }

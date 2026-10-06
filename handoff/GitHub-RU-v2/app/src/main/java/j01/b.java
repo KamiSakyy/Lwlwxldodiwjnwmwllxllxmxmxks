@@ -9,12 +9,12 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public final int a;
-    public final int b;
-    public final String c;
-    public final String d;
-    public final String e;
-    public final Avatar f;
+    public int a;
+    public int b;
+    public String c;
+    public String d;
+    public String e;
+    public Avatar f;
 
     public b(int i, int i2, Avatar avatar, String str, String str2, String str3) {
         this.a = i;

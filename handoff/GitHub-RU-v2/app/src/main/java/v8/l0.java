@@ -19,7 +19,7 @@ public class l0 {
         return null;
     }
 
-    public static Object e(Object... a) {
+    public static a e(Object... a) {
         return null;
     }
 
@@ -31,11 +31,11 @@ public class l0 {
         return null;
     }
 
-    public static Object b(Object... a) {
+    public static r b(Object... a) {
         return null;
     }
 
-    public static Object a(Object... a) {
+    public static p a(Object... a) {
         return null;
     }
 
@@ -58,13 +58,13 @@ public class l0 {
     public static Object k(Object... a) {
         return null;
     }
-    public Object A(Object p1) { return null; }
-    public Object F(Object p1, Object p2) { return null; }
-    public Object I(Object p1, Object p2) { return null; }
-    public Object L(Object p1) { return null; }
-    public Object S(Object p1, Object p2, Object p3) { return null; }
-    public Object U(Object p1, Object p2) { return null; }
-    public Object o(Object p1) { return null; }
-    public Object w(Object p1, Object p2) { return null; }
-    public Object y(Object p1) { return null; }
+    public static Object A(Object p1) { return null; }
+    public static Object F(Object p1, Object p2) { return null; }
+    public static Object I(Object p1, Object p2) { return null; }
+    public static Object L(Object p1) { return null; }
+    public static Object S(Object p1, Object p2, Object p3) { return null; }
+    public static Object U(Object p1, Object p2) { return null; }
+    public static Object o(Object p1) { return null; }
+    public static Object w(Object p1, Object p2) { return null; }
+    public static Object y(Object p1) { return null; }
 }

@@ -11,13 +11,13 @@ public final class x {
     public static final x f10530d;
 
     /* renamed from: a, reason: collision with root package name */
-    public final g1 f10531a;
+    public g1 f10531a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final g1 f10532b;
+    public g1 f10532b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final com.github.rudroid.createissue.propertybar.tooltips.a f10533c;
+    public com.github.rudroid.createissue.propertybar.tooltips.a f10533c;
 
     public static final class a {
     }

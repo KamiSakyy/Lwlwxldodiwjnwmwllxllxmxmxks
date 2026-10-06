@@ -17,7 +17,7 @@ public final class SettingsSwipeFragment extends ToolBarPreferenceFragmentCompat
     public static final a Companion;
     public static final /* synthetic */ r71.e[] D0;
     public final com.github.rudroid.fragments.util.c B0 = new com.github.rudroid.fragments.util.c(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(3));
-    public final androidx.lifecycle.l1 C0;
+    public androidx.lifecycle.l1 C0;
 
     public static final class a {
     }
@@ -438,4 +438,5 @@ public final class SettingsSwipeFragment extends ToolBarPreferenceFragmentCompat
     public static Object C3(Object... a) {
         return null;
     }
+    public Object D3(int, Object) { return null; }
 }

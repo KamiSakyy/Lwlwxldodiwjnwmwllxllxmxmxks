@@ -10,7 +10,7 @@ public final class GitObjectType {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ GitObjectType[] $VALUES;
     public static final s1 Companion;
-    private final String rawTypeNameValue;
+    private String rawTypeNameValue;
     public static final GitObjectType BLOB = new GitObjectType("BLOB", 0, "blob");
     public static final GitObjectType TREE = new GitObjectType("TREE", 1, "tree");
     public static final GitObjectType COMMIT = new GitObjectType("COMMIT", 2, "commit");

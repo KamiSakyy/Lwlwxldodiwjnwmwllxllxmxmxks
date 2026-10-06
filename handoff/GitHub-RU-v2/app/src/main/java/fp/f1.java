@@ -2,8 +2,8 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f1 {
-    public final String a;
-    public final eq.g b;
+    public String a;
+    public eq.g b;
 
     public f1(String str, eq.g gVar) {
         k71.k.g(str, "__typename");

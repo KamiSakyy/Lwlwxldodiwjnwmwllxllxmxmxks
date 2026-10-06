@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cq implements aaShadow.v0 {
-    public final eq a;
-    public final String b;
-    public final String c;
+    public eq a;
+    public String b;
+    public String c;
 
     public cq(eq eqVar, String str, String str2) {
         this.a = eqVar;

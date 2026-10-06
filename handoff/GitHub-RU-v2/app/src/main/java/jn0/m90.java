@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m90 {
-    public final String a;
-    public final String b;
-    public final er0.i c;
-    public final gu0.c d;
-    public final er0.o e;
+    public String a;
+    public String b;
+    public er0.i c;
+    public gu0.c d;
+    public er0.o e;
 
     public m90(String str, String str2, er0.i iVar, gu0.c cVar, er0.o oVar) {
         this.a = str;

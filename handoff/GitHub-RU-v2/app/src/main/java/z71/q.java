@@ -3,7 +3,7 @@ package z71;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q implements a71.h {
     public final /* synthetic */ a71.h r;
-    public final Throwable s;
+    public Throwable s;
 
     public q(a71.h hVar, Throwable th) {
         this.r = hVar;

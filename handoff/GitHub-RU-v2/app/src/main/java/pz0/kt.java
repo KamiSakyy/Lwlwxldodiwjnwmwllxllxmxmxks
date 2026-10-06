@@ -9,7 +9,7 @@ public final class kt {
     public static final kt t;
     public static final /* synthetic */ kt[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         kt ktVar = new kt("PENDING", 0, "PENDING");

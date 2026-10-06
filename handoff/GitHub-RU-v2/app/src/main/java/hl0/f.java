@@ -73,10 +73,10 @@ import z01.h0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements h0, yb0, y90 {
     public final /* synthetic */ int r;
-    public final j s;
-    public final com.github.service.wrapper.b t;
-    public final v u;
-    public final p v;
+    public j s;
+    public com.github.service.wrapper.b t;
+    public v u;
+    public p v;
 
     public f(j jVar, com.github.service.wrapper.b bVar, v vVar, int i) {
         this.r = i;

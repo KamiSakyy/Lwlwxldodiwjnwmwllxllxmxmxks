@@ -8,4 +8,5 @@ public class a0 {
     public a0() {
     }
     public Object b = null;
+    public Object g(Object) { return null; }
 }

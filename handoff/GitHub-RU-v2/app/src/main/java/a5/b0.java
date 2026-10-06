@@ -7,13 +7,13 @@ import android.view.ViewTreeObserver;
 public final class b0 implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
     /* renamed from: r, reason: collision with root package name */
-    public final View f366r;
+    public View f366r;
 
     /* renamed from: s, reason: collision with root package name */
     public ViewTreeObserver f367s;
 
     /* renamed from: t, reason: collision with root package name */
-    public final Runnable f368t;
+    public Runnable f368t;
 
     public b0(View view, Runnable runnable) {
         this.f366r = view;

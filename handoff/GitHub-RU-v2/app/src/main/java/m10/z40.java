@@ -9,7 +9,7 @@ public final class z40 {
     public static final z40 t;
     public static final z40 u;
     public static final /* synthetic */ z40[] v;
-    public final String r;
+    public String r;
 
     static {
         z40 z40Var = new z40("INTERNAL", 0, "INTERNAL");

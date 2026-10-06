@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rt {
-    public final String a;
-    public final String b;
-    public final qx.c1 c;
+    public String a;
+    public String b;
+    public qx.c1 c;
 
     public rt(String str, String str2, qx.c1 c1Var) {
         this.a = str;

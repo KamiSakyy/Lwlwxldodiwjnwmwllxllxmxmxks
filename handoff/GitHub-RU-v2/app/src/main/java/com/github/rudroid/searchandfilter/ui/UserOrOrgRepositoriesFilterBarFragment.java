@@ -8,7 +8,7 @@ import androidx.lifecycle.u1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class UserOrOrgRepositoriesFilterBarFragment extends Hilt_UserOrOrgRepositoriesFilterBarFragment {
     public static final a Companion = new a();
-    public final l1 O0;
+    public l1 O0;
 
     public static final class a {
     }

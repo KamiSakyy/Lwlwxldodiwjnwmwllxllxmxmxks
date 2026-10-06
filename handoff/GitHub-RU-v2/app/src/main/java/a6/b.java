@@ -6,7 +6,7 @@ import z5.m;
 public final class b implements m {
 
     /* renamed from: a, reason: collision with root package name */
-    public final a f519a;
+    public a f519a;
 
     public b(a aVar) {
         this.f519a = aVar;

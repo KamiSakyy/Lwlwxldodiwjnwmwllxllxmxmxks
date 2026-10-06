@@ -4,10 +4,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qn {
-    public final String a;
-    public final ZonedDateTime b;
-    public final String c;
-    public final String d;
+    public String a;
+    public ZonedDateTime b;
+    public String c;
+    public String d;
 
     public qn(String str, String str2, String str3, ZonedDateTime zonedDateTime) {
         this.a = str;

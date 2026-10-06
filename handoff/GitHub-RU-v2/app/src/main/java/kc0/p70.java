@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p70 {
-    public final String a;
-    public final w70 b;
-    public final String c;
+    public String a;
+    public w70 b;
+    public String c;
 
     public p70(String str, w70 w70Var, String str2) {
         this.a = str;

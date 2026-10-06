@@ -5,7 +5,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x extends n1 {
-    public final xf u;
+    public xf u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public x(xf xfVar, SelectableRepositoryFragment selectableRepositoryFragment) {

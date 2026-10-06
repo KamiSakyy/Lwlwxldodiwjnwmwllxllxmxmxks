@@ -8,8 +8,8 @@ import t91.d;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class b {
-    public final d a;
-    public final v b;
+    public d a;
+    public v b;
     public int c;
     public a d;
 

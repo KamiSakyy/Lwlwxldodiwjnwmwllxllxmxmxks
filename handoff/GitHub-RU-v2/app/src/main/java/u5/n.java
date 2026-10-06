@@ -10,7 +10,7 @@ public final class n {
     public int f32225a = 1;
 
     /* renamed from: b, reason: collision with root package name */
-    public final q f32226b;
+    public q f32226b;
 
     /* renamed from: c, reason: collision with root package name */
     public q f32227c;

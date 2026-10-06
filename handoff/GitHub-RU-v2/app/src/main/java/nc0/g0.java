@@ -4,23 +4,23 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 implements aa.h0 {
-    public final String a;
-    public final d b;
-    public final e c;
-    public final f d;
-    public final g e;
-    public final h f;
-    public final i g;
-    public final j h;
-    public final k i;
-    public final l j;
-    public final m k;
-    public final n l;
-    public final o m;
-    public final p n;
-    public final q o;
-    public final r p;
-    public final bl0.a q;
+    public String a;
+    public d b;
+    public e c;
+    public f d;
+    public g e;
+    public h f;
+    public i g;
+    public j h;
+    public k i;
+    public l j;
+    public m k;
+    public n l;
+    public o m;
+    public p n;
+    public q o;
+    public r p;
+    public bl0.a q;
 
     public g0(String str, d dVar, e eVar, f fVar, g gVar, h hVar, i iVar, j jVar, k kVar, l lVar, m mVar, n nVar, o oVar, p pVar, q qVar, r rVar, bl0.a aVar) {
         k71.k.g(str, "__typename");

@@ -7,7 +7,7 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k0<T> extends h0<T> {
-    public final Object e;
+    public Object e;
 
     public k0(Object obj, com.github.rudroid.profile.ui.h hVar) {
         super(hVar);

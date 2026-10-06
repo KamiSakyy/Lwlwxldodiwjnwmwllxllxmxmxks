@@ -7,13 +7,13 @@ import sy.d0;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final j2.f f20935a;
+    public j2.f f20935a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final ArrayList f20936b;
+    public ArrayList f20936b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f20937c;
+    public int f20937c;
 
     public a(j2.f fVar, ArrayList arrayList) {
         Object obj;

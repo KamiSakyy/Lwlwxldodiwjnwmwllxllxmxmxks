@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w40 implements aaShadow.v0 {
-    public final a50 a;
-    public final String b;
-    public final String c;
+    public a50 a;
+    public String b;
+    public String c;
 
     public w40(a50 a50Var, String str, String str2) {
         this.a = a50Var;

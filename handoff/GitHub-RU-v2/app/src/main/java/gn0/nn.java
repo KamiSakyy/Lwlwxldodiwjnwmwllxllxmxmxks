@@ -10,7 +10,7 @@ public final class nn {
     public static final nn u;
     public static final /* synthetic */ nn[] v;
     public static final /* synthetic */ d71.b w;
-    public final String r;
+    public String r;
 
     static {
         nn nnVar = new nn("CLOSED", 0, "CLOSED");

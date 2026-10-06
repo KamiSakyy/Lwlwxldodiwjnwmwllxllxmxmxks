@@ -4,8 +4,8 @@ import hc0.wz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final wz a;
-    public final boolean b;
+    public wz a;
+    public boolean b;
 
     public b(wz wzVar, boolean z) {
         this.a = wzVar;
@@ -31,4 +31,6 @@ public final class b {
         return "NavLink(identifier=" + this.a + ", hidden=" + this.b + ")";
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object c(Object, Object) { return null; }
+    public Object e(Object, Object, Object) { return null; }
 }

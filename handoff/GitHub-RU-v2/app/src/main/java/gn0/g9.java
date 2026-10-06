@@ -11,7 +11,7 @@ public final class g9 {
     public static final g9 v;
     public static final /* synthetic */ g9[] w;
     public static final /* synthetic */ d71.b x;
-    public final String r;
+    public String r;
 
     static {
         g9 g9Var = new g9("DUPLICATE", 0, "DUPLICATE");

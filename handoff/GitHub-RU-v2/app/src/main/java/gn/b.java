@@ -5,7 +5,7 @@ import z01.r1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public final oa.g a;
+    public oa.g a;
 
     public b(oa.g gVar) {
         k71.k.g(gVar, "userService");

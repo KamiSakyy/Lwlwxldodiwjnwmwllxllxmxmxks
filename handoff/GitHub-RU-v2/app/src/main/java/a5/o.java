@@ -8,7 +8,7 @@ import java.util.Objects;
 public final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public final DisplayCutout f450a;
+    public DisplayCutout f450a;
 
     public o(DisplayCutout displayCutout) {
         this.f450a = displayCutout;

@@ -5,7 +5,7 @@ import com.google.android.gms.common.api.Status;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class o {
-    public final int a;
+    public int a;
 
     public o(int i) {
         this.a = i;

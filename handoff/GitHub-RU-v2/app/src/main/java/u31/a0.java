@@ -13,14 +13,14 @@ import org.xmlpull.v1.XmlPullParserException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a0 {
-    public final int a;
-    public final n b;
-    public final int[][] c;
-    public final n[] d;
-    public final z e;
-    public final z f;
-    public final z g;
-    public final z h;
+    public int a;
+    public n b;
+    public int[][] c;
+    public n[] d;
+    public z e;
+    public z f;
+    public z g;
+    public z h;
 
     public a0(l7.e eVar) {
         this.a = eVar.b;

@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 {
     public final n a = new n();
-    public final String b;
+    public String b;
     public volatile Logger c;
 
     public t0(Class cls) {

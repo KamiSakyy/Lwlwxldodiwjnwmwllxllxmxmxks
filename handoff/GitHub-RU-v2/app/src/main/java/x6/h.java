@@ -4,10 +4,10 @@ package x6;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public final String f33832a;
+    public String f33832a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final j f33833b;
+    public j f33833b;
 
     public h(String str, j jVar) {
         this.f33832a = str;

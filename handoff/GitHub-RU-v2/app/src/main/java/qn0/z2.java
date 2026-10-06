@@ -2,9 +2,9 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z2 {
-    public final String a;
-    public final int b;
-    public final vn0.m2 c;
+    public String a;
+    public int b;
+    public vn0.m2 c;
 
     public z2(String str, int i, vn0.m2 m2Var) {
         this.a = str;

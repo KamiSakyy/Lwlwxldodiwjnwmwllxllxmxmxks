@@ -10,7 +10,7 @@ public final class mj {
     public static final mj s;
     public static final /* synthetic */ mj[] t;
     public static final /* synthetic */ d71.b u;
-    public final String r;
+    public String r;
 
     static {
         mj mjVar = new mj("ACCOUNT_SWITCHER_ADD", 0, "ACCOUNT_SWITCHER_ADD");

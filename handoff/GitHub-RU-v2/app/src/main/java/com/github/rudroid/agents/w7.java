@@ -6,13 +6,13 @@ import kotlin.NoWhenBranchMatchedException;
 public final class w7 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final v01.d f8444a;
+    public v01.d f8444a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final com.github.rudroid.searchandfilter.e0 f8445b;
+    public com.github.rudroid.searchandfilter.e0 f8445b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final String f8446c;
+    public String f8446c;
 
     public w7(v01.d dVar, com.github.rudroid.searchandfilter.e0 e0Var) {
         String str;

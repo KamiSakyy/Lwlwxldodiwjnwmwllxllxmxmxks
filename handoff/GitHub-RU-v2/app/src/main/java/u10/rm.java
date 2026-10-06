@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rm implements aaShadow.v0 {
-    public final um a;
+    public um a;
 
     public rm(um umVar) {
         this.a = umVar;

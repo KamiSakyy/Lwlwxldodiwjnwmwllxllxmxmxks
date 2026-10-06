@@ -12,7 +12,7 @@ public final class zd {
     public static final zd w;
     public static final /* synthetic */ zd[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         zd zdVar = new zd("DUPLICATE", 0, "DUPLICATE");

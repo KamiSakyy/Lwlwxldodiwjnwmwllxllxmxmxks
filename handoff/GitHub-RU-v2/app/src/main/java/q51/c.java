@@ -28,18 +28,18 @@ import w80.a0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements d {
     public static final Object m = new Object();
-    public final k41.g a;
-    public final s51.c b;
-    public final x1 c;
-    public final i d;
-    public final k e;
-    public final g f;
-    public final Object g;
-    public final ExecutorService h;
-    public final j i;
+    public k41.g a;
+    public s51.c b;
+    public x1 c;
+    public i d;
+    public k e;
+    public g f;
+    public Object g;
+    public ExecutorService h;
+    public j i;
     public String j;
-    public final HashSet k;
-    public final ArrayList l;
+    public HashSet k;
+    public ArrayList l;
 
     static {
         new AtomicInteger(1);

@@ -4,7 +4,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public final e a;
+    public e a;
 
     public f(e eVar) {
         k.g(eVar, "discussionCommentDataMapper");

@@ -82,6 +82,6 @@ public final /* synthetic */ class b implements j71.e {
         this.r = 2;
         this.s = rVar;
     }
-    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public static Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public static Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 {
-    public final String a;
-    public final String b;
-    public final er0.o c;
+    public String a;
+    public String b;
+    public er0.o c;
 
     public m0(String str, String str2, er0.o oVar) {
         this.a = str;
@@ -33,17 +33,17 @@ public final class m0 {
         o.append(")");
         return o.toString();
     }
-    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object a(Object p1, Object p2, Object p3) { return null; }
-    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object e(Object p1, Object p2, Object p3) { return null; }
-    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object g(Object p1, Object p2, Object p3) { return null; }
-    public Object h(Object p1, Object p2, Object p3) { return null; }
-    public Object i(Object p1, Object p2, Object p3) { return null; }
-    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object n(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object a(Object p1, Object p2, Object p3) { return null; }
+    public static Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object e(Object p1, Object p2, Object p3) { return null; }
+    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object g(Object p1, Object p2, Object p3) { return null; }
+    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public static Object i(Object p1, Object p2, Object p3) { return null; }
+    public static Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object n(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

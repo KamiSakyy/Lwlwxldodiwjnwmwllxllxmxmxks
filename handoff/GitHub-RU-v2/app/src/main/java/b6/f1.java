@@ -4,7 +4,7 @@ package b6;
 public final class f1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f3545a;
+    public int f3545a;
 
     public f1(int i) {
         this.f3545a = i;

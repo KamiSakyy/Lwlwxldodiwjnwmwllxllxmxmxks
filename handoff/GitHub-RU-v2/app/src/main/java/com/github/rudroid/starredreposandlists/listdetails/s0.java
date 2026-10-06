@@ -15,16 +15,16 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s0 extends k1 implements v3 {
-    public final y1 A;
-    public final y1 B;
-    public final ll.b s;
-    public final ym.b t;
-    public final com.github.rudroid.activities.util.c u;
-    public final c0 v;
-    public final ListDetailRoute w;
+    public y1 A;
+    public y1 B;
+    public ll.b s;
+    public ym.b t;
+    public com.github.rudroid.activities.util.c u;
+    public c0 v;
+    public ListDetailRoute w;
     public x01.i x;
-    public final y1 y;
-    public final i1 z;
+    public y1 y;
+    public i1 z;
 
     public s0(ll.b bVar, ym.b bVar2, com.github.rudroid.activities.util.c cVar, c0 c0Var, a1 a1Var) {
         k71.k.g(bVar, "fetchListUseCase");

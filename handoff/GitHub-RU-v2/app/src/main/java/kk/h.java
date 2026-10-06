@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public final g a;
-    public final mj.a b;
+    public g a;
+    public mj.a b;
 
     public h(g gVar, mj.a aVar) {
         k.g(gVar, "discussionDataMapper");

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uo {
-    public final ArrayList a;
-    public final ArrayList b;
-    public final ArrayList c;
+    public ArrayList a;
+    public ArrayList b;
+    public ArrayList c;
 
     public uo(ArrayList arrayList, ArrayList arrayList2, ArrayList arrayList3) {
         this.a = arrayList;

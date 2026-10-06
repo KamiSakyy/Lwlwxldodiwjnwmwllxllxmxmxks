@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m extends w {
-    public final ArrayList a;
+    public ArrayList a;
 
     public m(ArrayList arrayList) {
         this.a = arrayList;

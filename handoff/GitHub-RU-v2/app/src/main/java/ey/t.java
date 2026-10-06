@@ -4,8 +4,8 @@ import m10.v90;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public final int a;
-    public final v90 b;
+    public int a;
+    public v90 b;
 
     public t(int i, v90 v90Var) {
         this.a = i;

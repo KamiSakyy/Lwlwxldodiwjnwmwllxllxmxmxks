@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ja {
-    public final fa a;
-    public final ka b;
+    public fa a;
+    public ka b;
 
     public ja(fa faVar, ka kaVar) {
         this.a = faVar;

@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n30 {
-    public final String a;
-    public final String b;
-    public final uu0.k3 c;
-    public final uu0.o d;
+    public String a;
+    public String b;
+    public uu0.k3 c;
+    public uu0.o d;
 
     public n30(String str, String str2, uu0.k3 k3Var, uu0.o oVar) {
         this.a = str;

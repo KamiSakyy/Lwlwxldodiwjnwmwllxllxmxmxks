@@ -7,19 +7,19 @@ import android.window.BackEvent;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public final float f20875a;
+    public float f20875a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final float f20876b;
+    public float f20876b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f20877c;
+    public float f20877c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f20878d;
+    public int f20878d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final long f20879e;
+    public long f20879e;
 
     public a(float f6, float f10, float f11, int i, long j10) {
         this.f20875a = f6;

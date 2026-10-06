@@ -9,10 +9,10 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class AgentTaskCollaboratorResponse {
     public static final Companion Companion = new Companion();
-    public final long a;
-    public final String b;
-    public final String c;
-    public final String d;
+    public long a;
+    public String b;
+    public String c;
+    public String d;
 
     public static final class Companion {
         public final KSerializer serializer() {

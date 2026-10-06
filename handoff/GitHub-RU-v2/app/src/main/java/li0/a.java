@@ -8,11 +8,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public final String a;
-    public final String b;
-    public final dl c;
-    public final int d;
-    public final String e;
+    public String a;
+    public String b;
+    public dl c;
+    public int d;
+    public String e;
 
     public a(String str, String str2, dl dlVar, int i, String str3) {
         this.a = str;

@@ -2,8 +2,8 @@ package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q extends r {
-    public final transient int t;
-    public final transient int u;
+    public transient int t;
+    public transient int u;
     public final /* synthetic */ r v;
 
     public q(r rVar, int i, int i2) {

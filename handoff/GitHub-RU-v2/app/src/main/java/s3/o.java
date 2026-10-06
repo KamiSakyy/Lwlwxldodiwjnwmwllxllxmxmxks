@@ -12,7 +12,7 @@ public final class o {
     public static final long f31709c = t1.E(Float.NaN, 0);
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f31710a;
+    public long f31710a;
 
     public static final boolean a(long j10, long j11) {
         return j10 == j11;

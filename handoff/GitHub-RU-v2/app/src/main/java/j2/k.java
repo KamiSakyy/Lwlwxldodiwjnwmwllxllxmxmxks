@@ -4,22 +4,22 @@ package j2;
 public final class k extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
-    public final float f26884c;
+    public float f26884c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final float f26885d;
+    public float f26885d;
 
     /* renamed from: e, reason: collision with root package name */
-    public final float f26886e;
+    public float f26886e;
 
     /* renamed from: f, reason: collision with root package name */
-    public final float f26887f;
+    public float f26887f;
 
     /* renamed from: g, reason: collision with root package name */
-    public final float f26888g;
+    public float f26888g;
 
     /* renamed from: h, reason: collision with root package name */
-    public final float f26889h;
+    public float f26889h;
 
     public k(float f6, float f10, float f11, float f12, float f13, float f14) {
         super(2);

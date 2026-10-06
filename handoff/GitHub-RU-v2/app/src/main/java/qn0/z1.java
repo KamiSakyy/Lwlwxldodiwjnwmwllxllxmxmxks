@@ -5,10 +5,10 @@ import pz0.n30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z1 {
-    public final n30 a;
-    public final ArrayList b;
-    public final String c;
-    public final String d;
+    public n30 a;
+    public ArrayList b;
+    public String c;
+    public String d;
 
     public z1(n30 n30Var, ArrayList arrayList, String str, String str2) {
         this.a = n30Var;

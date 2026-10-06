@@ -16,7 +16,7 @@ public final class s00 {
     public static final s00 x;
     public static final s00 y;
     public static final s00 z;
-    public final String r;
+    public String r;
 
     static {
         s00 s00Var = new s00("BLUE", 0, "BLUE");

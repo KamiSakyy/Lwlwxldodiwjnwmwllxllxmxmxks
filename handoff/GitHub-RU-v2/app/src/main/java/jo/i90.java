@@ -2,13 +2,13 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i90 {
-    public final String a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final String e;
-    public final dw.t5 f;
-    public final dw.o g;
+    public String a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public String e;
+    public dw.t5 f;
+    public dw.o g;
 
     public i90(String str, boolean z, boolean z2, boolean z3, String str2, dw.t5 t5Var, dw.o oVar) {
         this.a = str;

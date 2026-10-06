@@ -5,15 +5,15 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public final boolean a;
-    public final boolean b;
-    public final boolean c;
-    public final boolean d;
-    public final boolean e;
-    public final boolean f;
-    public final boolean g;
-    public final boolean h;
-    public final boolean i;
+    public boolean a;
+    public boolean b;
+    public boolean c;
+    public boolean d;
+    public boolean e;
+    public boolean f;
+    public boolean g;
+    public boolean h;
+    public boolean i;
 
     public c(boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9) {
         this.a = z;

@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ye0 {
-    public final te0 a;
-    public final xe0 b;
+    public te0 a;
+    public xe0 b;
 
     public ye0(te0 te0Var, xe0 xe0Var) {
         this.a = te0Var;

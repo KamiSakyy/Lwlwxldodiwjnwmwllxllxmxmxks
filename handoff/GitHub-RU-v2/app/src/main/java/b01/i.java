@@ -5,8 +5,8 @@ import yz0.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public final ArrayList a;
-    public final f4 b;
+    public ArrayList a;
+    public f4 b;
 
     public i(ArrayList arrayList, f4 f4Var) {
         this.a = arrayList;

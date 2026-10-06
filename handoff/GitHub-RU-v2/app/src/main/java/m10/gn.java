@@ -9,7 +9,7 @@ public final class gn {
     public static final gn t;
     public static final /* synthetic */ gn[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         gn gnVar = new gn("CLOSED", 0, "CLOSED");

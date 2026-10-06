@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pa implements aaShadow.v0 {
-    public final ua a;
-    public final String b;
-    public final String c;
+    public ua a;
+    public String b;
+    public String c;
 
     public pa(ua uaVar, String str, String str2) {
         this.a = uaVar;

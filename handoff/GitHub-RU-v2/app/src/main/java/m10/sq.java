@@ -2,12 +2,12 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sq {
-    public final aa1.b a;
-    public final aa1.b b;
-    public final aa1.b c;
-    public final aa1.b d;
-    public final aa1.b e;
-    public final aa1.b f;
+    public aa1.b a;
+    public aa1.b b;
+    public aa1.b c;
+    public aa1.b d;
+    public aa1.b e;
+    public aa1.b f;
 
     public sq(aa.u0 u0Var, aa.u0 u0Var2, aa1.b bVar) {
         aa.t0 t0Var = aa.t0.d;

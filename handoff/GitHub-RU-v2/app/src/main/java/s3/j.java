@@ -4,7 +4,7 @@ package s3;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public final long f31697a;
+    public long f31697a;
 
     public static long a(int i, int i10, int i11, long j10) {
         if ((i11 & 1) != 0) {

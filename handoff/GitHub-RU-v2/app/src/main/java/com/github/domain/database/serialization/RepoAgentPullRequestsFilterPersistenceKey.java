@@ -10,8 +10,8 @@ import kotlinx.serialization.KSerializer;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RepoAgentPullRequestsFilterPersistenceKey extends b {
-    public final String t;
-    public final String u;
+    public String t;
+    public String u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepoAgentPullRequestsFilterPersistenceKey> CREATOR = new f8.a(10);
 

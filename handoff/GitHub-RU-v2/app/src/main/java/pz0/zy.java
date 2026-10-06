@@ -15,7 +15,7 @@ public final class zy {
     public static final zy x;
     public static final zy y;
     public static final zy z;
-    public final String r;
+    public String r;
 
     static {
         zy zyVar = new zy("ARCHIVED", 0, "ARCHIVED");

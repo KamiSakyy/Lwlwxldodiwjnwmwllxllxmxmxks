@@ -30,7 +30,7 @@ public final class e {
     public static final n51.e l;
     public static j m;
     public static k n;
-    public final Context a;
+    public Context a;
     public static final ThreadLocal j = new ThreadLocal();
     public static final h k = new h(0);
     public static final rb0.b b = new rb0.b(7);

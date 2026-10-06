@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements q3 {
     public static final a Companion = new a();
-    public final ArrayList a;
+    public ArrayList a;
 
     public b(ArrayList arrayList) {
         this.a = arrayList;

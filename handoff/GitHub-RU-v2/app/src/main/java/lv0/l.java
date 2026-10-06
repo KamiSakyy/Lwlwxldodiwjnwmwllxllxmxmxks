@@ -7,11 +7,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements h0 {
-    public final String a;
-    public final String b;
-    public final i c;
-    public final k d;
-    public final ZonedDateTime e;
+    public String a;
+    public String b;
+    public i c;
+    public k d;
+    public ZonedDateTime e;
 
     public l(String str, String str2, i iVar, k kVar, ZonedDateTime zonedDateTime) {
         this.a = str;

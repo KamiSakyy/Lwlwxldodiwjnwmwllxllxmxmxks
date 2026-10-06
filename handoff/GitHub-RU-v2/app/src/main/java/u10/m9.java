@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m9 {
-    public final o9 a;
-    public final List b;
+    public o9 a;
+    public List b;
 
     public m9(o9 o9Var, List list) {
         this.a = o9Var;

@@ -2,10 +2,10 @@ package yg;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public final Integer a;
-    public final Integer b;
-    public final Integer c;
-    public final Integer d;
+    public Integer a;
+    public Integer b;
+    public Integer c;
+    public Integer d;
 
     public j(Integer num, Integer num2, Integer num3, Integer num4) {
         this.a = num;

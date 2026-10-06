@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zz {
-    public final vz a;
-    public final yz b;
-    public final String c;
-    public final String d;
+    public vz a;
+    public yz b;
+    public String c;
+    public String d;
 
     public zz(vz vzVar, yz yzVar, String str, String str2) {
         this.a = vzVar;

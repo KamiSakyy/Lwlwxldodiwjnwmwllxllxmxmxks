@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iq {
-    public final String a;
-    public final String b;
-    public final ud0.c c;
+    public String a;
+    public String b;
+    public ud0.c c;
 
     public iq(String str, String str2, ud0.c cVar) {
         k71.k.g(str, "__typename");

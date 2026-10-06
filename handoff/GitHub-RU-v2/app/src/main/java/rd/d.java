@@ -13,7 +13,7 @@ import v71.r;
 public final class d implements i {
 
     /* renamed from: r, reason: collision with root package name */
-    public final TextView f31367r;
+    public TextView f31367r;
 
     public d(TextView textView) {
         this.f31367r = textView;

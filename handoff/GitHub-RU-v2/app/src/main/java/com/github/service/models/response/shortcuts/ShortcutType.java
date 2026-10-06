@@ -10,7 +10,7 @@ public final class ShortcutType {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ ShortcutType[] $VALUES;
     public static final q Companion;
-    private final String value;
+    private String value;
     public static final ShortcutType ISSUE = new ShortcutType("ISSUE", 0, "ISSUE");
     public static final ShortcutType PULL_REQUEST = new ShortcutType("PULL_REQUEST", 1, "PULL_REQUEST");
     public static final ShortcutType DISCUSSION = new ShortcutType("DISCUSSION", 2, "DISCUSSION");

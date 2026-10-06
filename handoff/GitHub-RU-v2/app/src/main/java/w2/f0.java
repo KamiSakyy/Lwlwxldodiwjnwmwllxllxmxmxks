@@ -9,5 +9,5 @@ public interface f0 {
     default <T0> T0 A(Object... a) {
         return null;
     }
-    public Object u() { return null; }
+    public static Object u() { return null; }
 }

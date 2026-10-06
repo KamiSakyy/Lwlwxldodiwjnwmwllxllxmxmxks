@@ -2,7 +2,7 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h2 implements aa.m0 {
-    public final i2 a;
+    public i2 a;
 
     public h2(i2 i2Var) {
         this.a = i2Var;

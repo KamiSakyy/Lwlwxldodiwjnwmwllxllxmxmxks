@@ -5,7 +5,7 @@ package com.github.rudroid.copilot.inapppurchase;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b {
-    public Object P(Object p1, Object p2, Object p3) { return null; }
+    public static Object P(Object p1, Object p2, Object p3) { return null; }
     public Object F = null;
     public Object f9637u = null;
 }

@@ -4,12 +4,12 @@ import pz0.na0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y2 {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final na0 d;
-    public final boolean e;
-    public final z2 f;
+    public String a;
+    public String b;
+    public String c;
+    public na0 d;
+    public boolean e;
+    public z2 f;
 
     public y2(String str, String str2, String str3, na0 na0Var, boolean z, z2 z2Var) {
         this.a = str;

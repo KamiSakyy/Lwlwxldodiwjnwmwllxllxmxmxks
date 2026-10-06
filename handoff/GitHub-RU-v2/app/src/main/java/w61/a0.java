@@ -35,4 +35,6 @@ public final class a0 {
     }
     public Object s(Object p1, Object p2) { return null; }
     public Object x() { return null; }
+    public Object l(Object, Object, Object) { return null; }
+    public Object s(Object, Object) { return null; }
 }

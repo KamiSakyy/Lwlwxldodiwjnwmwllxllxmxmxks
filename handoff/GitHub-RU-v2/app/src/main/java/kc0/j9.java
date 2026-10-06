@@ -2,12 +2,12 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j9 {
-    public final String a;
-    public final String b;
-    public final int c;
-    public final i9 d;
-    public final g9 e;
-    public final String f;
+    public String a;
+    public String b;
+    public int c;
+    public i9 d;
+    public g9 e;
+    public String f;
 
     public j9(String str, String str2, int i, i9 i9Var, g9 g9Var, String str3) {
         this.a = str;

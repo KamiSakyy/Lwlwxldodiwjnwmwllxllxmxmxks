@@ -83,4 +83,6 @@ public final /* synthetic */ class d implements j71.e {
         this.v = i;
         this.w = i2;
     }
+    public Object f(Object, Object, int) { return null; }
+    public Object s(Object, Object) { return null; }
 }

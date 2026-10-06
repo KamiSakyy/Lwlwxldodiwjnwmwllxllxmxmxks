@@ -19,10 +19,10 @@ import w61.p;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends i2.b implements l2 {
-    public final Drawable w;
-    public final p1 x;
-    public final p1 y;
-    public final p z;
+    public Drawable w;
+    public p1 x;
+    public p1 y;
+    public p z;
 
     public a(Drawable drawable) {
         long j;

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ic {
-    public final String a;
-    public final hc b;
-    public final String c;
+    public String a;
+    public hc b;
+    public String c;
 
     public ic(String str, hc hcVar, String str2) {
         this.a = str;

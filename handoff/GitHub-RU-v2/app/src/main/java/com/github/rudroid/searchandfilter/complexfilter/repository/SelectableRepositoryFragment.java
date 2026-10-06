@@ -9,8 +9,8 @@ import com.github.rudroid.searchandfilter.complexfilter.e0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableRepositoryFragment extends Hilt_SelectableRepositoryFragment<r> {
     public static final a Companion = new a();
-    public final l1 H0;
-    public final s I0;
+    public l1 H0;
+    public s I0;
 
     public static final class a {
     }

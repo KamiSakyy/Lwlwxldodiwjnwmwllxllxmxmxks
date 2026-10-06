@@ -2,7 +2,7 @@ package yu;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public final String a;
+    public String a;
 
     public g(String str) {
         this.a = str;

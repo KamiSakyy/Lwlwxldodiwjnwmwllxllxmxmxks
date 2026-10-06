@@ -10,7 +10,7 @@ public final class c {
     public static final c f33317b = new c(new d(new LocaleList(new Locale[0])));
 
     /* renamed from: a, reason: collision with root package name */
-    public final d f33318a;
+    public d f33318a;
 
     public c(d dVar) {
         this.f33318a = dVar;

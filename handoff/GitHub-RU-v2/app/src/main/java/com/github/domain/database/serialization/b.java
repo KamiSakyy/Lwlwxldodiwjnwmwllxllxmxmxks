@@ -11,7 +11,7 @@ import w61.i;
 public abstract class b implements f {
     public static final FilterPersistedKey$Companion Companion = new FilterPersistedKey$Companion();
     public static final Object s = w.s(i.r, new u5(13));
-    public final String r;
+    public String r;
 
     @Override // fk.f
     public final String getKey() {

@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vr {
-    public final List a;
-    public final String b;
+    public List a;
+    public String b;
 
     public vr(List list, String str) {
         this.a = list;

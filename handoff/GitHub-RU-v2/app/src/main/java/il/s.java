@@ -2,8 +2,8 @@ package il;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public final l01.v a;
-    public final l01.w b;
+    public l01.v a;
+    public l01.w b;
 
     public s(l01.v vVar, l01.w wVar) {
         k71.k.g(vVar, "projectBoardItem");

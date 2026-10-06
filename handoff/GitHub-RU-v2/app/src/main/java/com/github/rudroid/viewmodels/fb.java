@@ -4,8 +4,8 @@ import com.github.domain.users.FetchUsersParams$FetchWatchersParams;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fb extends za<FetchUsersParams$FetchWatchersParams> {
-    public final gn.p y;
-    public final com.github.rudroid.activities.util.c z;
+    public gn.p y;
+    public com.github.rudroid.activities.util.c z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public fb(gn.p pVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {

@@ -2,7 +2,7 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g5 {
-    public final String a;
+    public String a;
 
     public g5(String str) {
         this.a = str;

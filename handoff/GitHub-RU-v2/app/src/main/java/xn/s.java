@@ -30,5 +30,5 @@ public final class s extends v {
         k71.k.g(parcel, "dest");
         parcel.writeInt(1);
     }
-    public Object A(Object p1) { return null; }
+    public static Object A(Object p1) { return null; }
 }

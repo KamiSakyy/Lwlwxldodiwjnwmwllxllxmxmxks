@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hf0 {
-    public final String a;
-    public final if0 b;
-    public final kf0 c;
-    public final df0 d;
-    public final String e;
+    public String a;
+    public if0 b;
+    public kf0 c;
+    public df0 d;
+    public String e;
 
     public hf0(String str, if0 if0Var, kf0 kf0Var, df0 df0Var, String str2) {
         this.a = str;

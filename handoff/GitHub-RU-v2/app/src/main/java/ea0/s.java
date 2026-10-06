@@ -6,17 +6,17 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final int d;
-    public final Integer e;
-    public final fm f;
-    public final v g;
-    public final Boolean h;
-    public final boolean i;
-    public final ZonedDateTime j;
-    public final y k;
+    public String a;
+    public String b;
+    public String c;
+    public int d;
+    public Integer e;
+    public fm f;
+    public v g;
+    public Boolean h;
+    public boolean i;
+    public ZonedDateTime j;
+    public y k;
 
     public s(String str, String str2, String str3, int i, Integer num, fm fmVar, v vVar, Boolean bool, boolean z, ZonedDateTime zonedDateTime, y yVar) {
         this.a = str;

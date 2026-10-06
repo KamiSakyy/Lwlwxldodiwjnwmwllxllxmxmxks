@@ -10,14 +10,14 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public final String a;
-    public final String b;
-    public final String c;
-    public final List d;
-    public final com.github.service.models.response.shortcuts.a e;
-    public final ShortcutType f;
-    public final ShortcutColor g;
-    public final ShortcutIcon h;
+    public String a;
+    public String b;
+    public String c;
+    public List d;
+    public com.github.service.models.response.shortcuts.a e;
+    public ShortcutType f;
+    public ShortcutColor g;
+    public ShortcutIcon h;
 
     public e(ShortcutColor shortcutColor, ShortcutIcon shortcutIcon, com.github.service.models.response.shortcuts.a aVar, ShortcutType shortcutType, String str, String str2, String str3, List list) {
         k.g(str, "id");
@@ -68,5 +68,5 @@ public final class e {
         o.append(")");
         return o.toString();
     }
-    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public static Object c(Object p1, Object p2, Object p3) { return null; }
 }

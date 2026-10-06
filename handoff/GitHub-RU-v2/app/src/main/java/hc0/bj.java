@@ -9,7 +9,7 @@ public final class bj {
     public static final bj t;
     public static final /* synthetic */ bj[] u;
     public static final /* synthetic */ d71.b v;
-    public final String r;
+    public String r;
 
     static {
         bj bjVar = new bj("CHEVRON_UP", 0, "CHEVRON_UP");

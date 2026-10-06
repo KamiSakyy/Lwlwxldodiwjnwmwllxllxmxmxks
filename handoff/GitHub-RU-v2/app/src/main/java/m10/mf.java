@@ -2,7 +2,7 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mf {
-    public final String a;
+    public String a;
 
     public mf(String str) {
         k71.k.g(str, "path");

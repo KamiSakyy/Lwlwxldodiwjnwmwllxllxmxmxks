@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class u {
-    public final boolean a;
-    public final ArrayList b;
+    public boolean a;
+    public ArrayList b;
 
     public u(ArrayList arrayList, boolean z) {
         this.a = z;

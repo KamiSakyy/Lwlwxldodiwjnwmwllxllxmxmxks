@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bi {
-    public final fi a;
-    public final List b;
+    public fi a;
+    public List b;
 
     public bi(fi fiVar, List list) {
         this.a = fiVar;

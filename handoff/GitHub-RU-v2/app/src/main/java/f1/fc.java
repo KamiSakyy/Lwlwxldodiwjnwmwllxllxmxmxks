@@ -4,10 +4,10 @@ package f1;
 public final class fc implements w3.z {
 
     /* renamed from: r, reason: collision with root package name */
-    public final int f22815r;
+    public int f22815r;
 
     /* renamed from: s, reason: collision with root package name */
-    public final int f22816s;
+    public int f22816s;
 
     public fc(int i, int i10) {
         this.f22815r = i;

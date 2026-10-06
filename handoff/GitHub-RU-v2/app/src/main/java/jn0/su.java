@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class su {
-    public final ru a;
+    public ru a;
 
     public su(ru ruVar) {
         this.a = ruVar;

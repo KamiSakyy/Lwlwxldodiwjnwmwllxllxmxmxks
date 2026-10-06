@@ -12,7 +12,7 @@ public final class va {
     public static final va w;
     public static final /* synthetic */ va[] x;
     public static final /* synthetic */ d71.b y;
-    public final String r;
+    public String r;
 
     static {
         va vaVar = new va("DUPLICATE", 0, "DUPLICATE");

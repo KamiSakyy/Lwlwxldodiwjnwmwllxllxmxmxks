@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tn {
-    public final rn a;
-    public final String b;
-    public final String c;
+    public rn a;
+    public String b;
+    public String c;
 
     public tn(rn rnVar, String str, String str2) {
         this.a = rnVar;

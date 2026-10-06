@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t3 implements aaShadow.w0 {
     public static final n3 Companion = new n3();
-    public final aa1.b r;
+    public aa1.b r;
 
     public t3(aa1.b bVar) {
         k71.k.g(bVar, "after");

@@ -2,9 +2,9 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q5 {
-    public final boolean a;
-    public final boolean b;
-    public final o5 c;
+    public boolean a;
+    public boolean b;
+    public o5 c;
 
     public q5(boolean z, boolean z2, o5 o5Var) {
         this.a = z;

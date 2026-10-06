@@ -11,16 +11,16 @@ public final class b {
     public static final b f31147e = new b(0, 0, 0, 0);
 
     /* renamed from: a, reason: collision with root package name */
-    public final int f31148a;
+    public int f31148a;
 
     /* renamed from: b, reason: collision with root package name */
-    public final int f31149b;
+    public int f31149b;
 
     /* renamed from: c, reason: collision with root package name */
-    public final int f31150c;
+    public int f31150c;
 
     /* renamed from: d, reason: collision with root package name */
-    public final int f31151d;
+    public int f31151d;
 
     public b(int i, int i10, int i11, int i12) {
         this.f31148a = i;
